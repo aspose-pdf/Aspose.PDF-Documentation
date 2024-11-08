@@ -3,7 +3,7 @@ title: PDF 图形注释
 linktitle: 图形注释
 type: docs
 weight: 30
-url: zh/java/figures-annotation/
+url: /zh/java/figures-annotation/
 description: 本文描述了如何使用 Aspose.PDF for Java 在 PDF 文档中添加、获取和删除图形注释
 lastmod: "2021-11-24"
 sitemap:

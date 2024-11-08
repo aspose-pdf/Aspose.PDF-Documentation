@@ -3,7 +3,7 @@ title: 设置权限，使用C++加密和解密PDF文件
 linktitle: 加密和解密PDF文件
 type: docs
 weight: 20
-url: zh/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /zh/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: 加密pdf,密码保护pdf,解密pdf,c++
 description: 使用C++通过不同的加密类型和算法加密PDF文件。此外，使用所有者密码解密PDF文件。
 lastmod: "2021-12-17"

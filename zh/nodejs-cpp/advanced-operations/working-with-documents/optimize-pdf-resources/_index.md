@@ -3,7 +3,7 @@ title: 在 Node.js 中优化 PDF 资源
 linktitle: 优化 PDF 资源
 type: docs
 weight: 15
-url: zh/nodejs-cpp/optimize-pdf-resources/
+url: /zh/nodejs-cpp/optimize-pdf-resources/
 description: 使用 Node.js 工具优化 PDF 文件的资源以实现快速网页浏览。
 lastmod: "2023-11-16"
 sitemap:

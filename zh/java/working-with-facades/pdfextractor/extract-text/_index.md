@@ -2,7 +2,7 @@
 title: 从PDF中提取图像 (facades)
 type: docs
 weight: 30
-url: zh/java/extract-images/
+url: /zh/java/extract-images/
 description: 本节介绍如何使用PdfExtractor类通过Aspose.PDF Facades提取图像。
 lastmod: "2021-06-05"
 sitemap:

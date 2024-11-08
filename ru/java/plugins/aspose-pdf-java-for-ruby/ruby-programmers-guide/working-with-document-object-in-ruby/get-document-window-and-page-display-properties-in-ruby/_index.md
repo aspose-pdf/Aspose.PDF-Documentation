@@ -2,7 +2,7 @@
 title: Получение свойств окна документа и отображения страницы в Ruby
 type: docs
 weight: 40
-url: ru/java/get-document-window-and-page-display-properties-in-ruby/
+url: /ru/java/get-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

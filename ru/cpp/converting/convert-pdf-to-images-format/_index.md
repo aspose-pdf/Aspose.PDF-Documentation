@@ -3,7 +3,7 @@ title: Convert PDF to Images formats
 linktitle: Convert PDF to Images
 type: docs
 weight: 70
-url: ru/cpp/convert-pdf-to-images-format/
+url: /ru/cpp/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как Aspose.PDF позволяет конвертировать PDF в различные форматы изображений. Конвертируйте страницы PDF в изображения PNG, JPEG, BMP с помощью нескольких строк кода.
 sitemap:

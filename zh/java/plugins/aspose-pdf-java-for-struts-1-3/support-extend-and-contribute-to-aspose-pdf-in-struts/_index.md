@@ -2,7 +2,7 @@
 title: 支持、扩展和贡献 Aspose.Pdf 在 Struts 中
 type: docs
 weight: 20
-url: zh/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
+url: /zh/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
 lastmod: "2021-06-05"
 ---
 

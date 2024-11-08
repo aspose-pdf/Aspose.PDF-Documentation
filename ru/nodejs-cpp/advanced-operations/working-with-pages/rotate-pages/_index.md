@@ -3,7 +3,7 @@ title: Поворот страниц PDF в Node.js
 linktitle: Поворот страниц PDF
 type: docs
 weight: 50
-url: ru/nodejs-cpp/rotate-pages/
+url: /ru/nodejs-cpp/rotate-pages/
 description: Эта тема описывает, как программно изменить ориентацию страниц в существующем PDF-файле в среде Node.js.
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с портфолио в PDF-документах
 linktitle: Портфолио
 type: docs
 weight: 40
-url: ru/java/portfolio/
+url: /ru/java/portfolio/
 description: Как создать PDF-портфолио с помощью Java. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF-портфолио.
 lastmod: "2021-06-05"
 sitemap:

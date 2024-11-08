@@ -2,7 +2,7 @@
 title: PdfFileEditor 类
 type: docs
 weight: 10
-url: zh/net/pdffileeditor-class/
+url: /zh/net/pdffileeditor-class/
 description: 本节解释如何使用 PdfFileEditor 类处理 Aspose.PDF Facades。
 lastmod: "2021-06-05"
 draft: false
@@ -23,26 +23,26 @@ PdfFileEditor 类包含帮助操作单个页面的方法；此类不编辑或操
 
 本节探讨了此类的功能并解释了其方法的用途。
 
-- [合并 PDF 文档](/pdf/net/concatenate-pdf-documents/)
-- [提取 PDF 页面](/pdf/net/extract-pdf-pages/)
-- [插入 PDF 页面](/pdf/net/insert-pdf-pages/)
-- [删除 PDF 页面](/pdf/net/delete-pdf-pages/)
+- [合并 PDF 文档](/pdf/zh/net/concatenate-pdf-documents/)
+- [提取 PDF 页面](/pdf/zh/net/extract-pdf-pages/)
+- [插入 PDF 页面](/pdf/zh/net/insert-pdf-pages/)
+- [删除 PDF 页面](/pdf/zh/net/delete-pdf-pages/)
 
 ## 使用分页符
 
 分页符是一个特殊功能，允许重新调整文档的流动。
 
-- [现有 PDF 中的分页符](/pdf/net/page-break-in-existing-pdf/)
+- [现有 PDF 中的分页符](/pdf/zh/net/page-break-in-existing-pdf/)
 
 ## PDF 拼版
 
 拼版是在打印之前正确排列页面的过程。 `PdfFileEditor` 提供了两个方法用于此目的，即 `MakeBooklet` 和 `MakeNUp`。MakeBooklet 方法有助于排列页面，以便在打印后容易折叠或装订，而 MakeNUp 方法允许在 PDF 文件的一页上打印多个页面。
 
-- [制作 PDF 小册子](/pdf/net/make-booklet-of-pdf/)
-- [制作 PDF 文件的 NUp](/pdf/net/make-nup-of-pdf-files/)
+- [制作 PDF 小册子](/pdf/zh/net/make-booklet-of-pdf/)
+- [制作 PDF 文件的 NUp](/pdf/zh/net/make-nup-of-pdf-files/)
 
 ## 拆分
 
 拆分功能允许您将现有的 PDF 文件分成不同的部分。您可以拆分 PDF 文件的前部或后部。由于 PdfFileEditor 提供了多种拆分方法，您还可以将文件拆分为单独的页面或多个页面集。
 
-- [拆分 PDF 页面](/pdf/net/split-pdf-pages/)
+- [拆分 PDF 页面](/pdf/zh/net/split-pdf-pages/)

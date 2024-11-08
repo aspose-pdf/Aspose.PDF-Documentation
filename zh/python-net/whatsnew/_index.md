@@ -3,7 +3,7 @@ title: 有什么新功能
 linktitle: 有什么新功能
 type: docs
 weight: 10
-url: zh/python-net/whatsnew/
+url: /zh/python-net/whatsnew/
 description: 本页介绍了Aspose.PDF for Python via .NET在最近发布版本中引入的最受欢迎的新功能。
 sitemap:
     changefreq: "monthly"

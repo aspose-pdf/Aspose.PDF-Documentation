@@ -2,7 +2,7 @@
 title: 使用 com.aspose.pdf.facades 将注释导入和导出为 XFDF 格式
 type: docs
 weight: 20
-url: zh/java/import-export-annotations/
+url: /zh/java/import-export-annotations/
 description: 本节解释如何使用 Aspose.PDF Facades 将 PDF 文件中的注释导出和导入到 XFDF。
 lastmod: "2021-06-05"
 sitemap:

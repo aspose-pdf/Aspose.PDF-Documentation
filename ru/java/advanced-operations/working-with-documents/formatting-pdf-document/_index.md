@@ -3,7 +3,7 @@ title: Форматирование PDF документа
 linktitle: Форматирование PDF документа
 type: docs
 weight: 20
-url: ru/java/formatting-pdf-document/
+url: /ru/java/formatting-pdf-document/
 description: Форматирование PDF документа с помощью Aspose.PDF для Java. Используйте следующий фрагмент кода для решения ваших задач.
 lastmod: "2021-06-05"
 ---

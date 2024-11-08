@@ -3,7 +3,7 @@ title: Получить, обновить и развернуть закладк
 linktitle: Получить, обновить и развернуть закладку
 type: docs
 weight: 20
-url: ru/python-net/get-update-and-expand-bookmark/
+url: /ru/python-net/get-update-and-expand-bookmark/
 description: В этой статье описывается, как использовать закладки в PDF-файле с нашей библиотекой Aspose.PDF для Python.
 lastmod: "2023-02-17"
 sitemap:

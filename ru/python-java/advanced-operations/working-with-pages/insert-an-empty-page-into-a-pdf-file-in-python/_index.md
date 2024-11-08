@@ -2,7 +2,7 @@
 title: Вставка пустой страницы в PDF файл на Python
 type: docs
 weight: 70
-url: ru/python-java/insert-an-empty-page-into-a-pdf-file-in-python/
+url: /ru/python-java/insert-an-empty-page-into-a-pdf-file-in-python/
 ---
 
 <ins>Чтобы вставить пустую страницу в PDF документ с использованием **Aspose.PDF Java for Python**, просто вызовите класс **InsertEmptyPage**.

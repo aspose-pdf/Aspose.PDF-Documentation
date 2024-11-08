@@ -2,7 +2,7 @@
 title: 在 Ruby 中添加 JavaScript
 type: docs
 weight: 10
-url: zh/java/adding-javascript-in-ruby/
+url: /zh/java/adding-javascript-in-ruby/
 lastmod: "2021-06-05"
 ---
 

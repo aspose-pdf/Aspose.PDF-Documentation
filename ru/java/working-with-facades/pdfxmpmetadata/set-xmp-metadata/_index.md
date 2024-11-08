@@ -2,7 +2,7 @@
 title: Установить XMP Метаданные существующего PDF - фасады
 type: docs
 weight: 20
-url: ru/java/set-xmp-metadata/
+url: /ru/java/set-xmp-metadata/
 description: Этот раздел объясняет, как установить XMP метаданные с использованием Aspose.PDF Facades через класс PdfXmpMetadata.
 lastmod: "2021-06-05"
 sitemap:

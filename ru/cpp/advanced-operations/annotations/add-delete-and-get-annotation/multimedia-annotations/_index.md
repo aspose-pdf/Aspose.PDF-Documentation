@@ -3,7 +3,7 @@ title: PDF Мультимедийная Аннотация с использов
 linktitle: Мультимедийная Аннотация
 type: docs
 weight: 40
-url: ru/cpp/multimedia-annotation/
+url: /ru/cpp/multimedia-annotation/
 description: Aspose.PDF для C++ позволяет добавлять, получать и удалять мультимедийные аннотации из вашего PDF документа.
 lastmod: "2021-11-24"
 sitemap:

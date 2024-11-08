@@ -2,7 +2,7 @@
 title: 创建所有页面的书签 (facades)
 type: docs
 weight: 10
-url: zh/java/create-bookmark/
+url: /zh/java/create-bookmark/
 description: 本节说明如何使用 PdfBookmarEditor 类通过 Aspose.PDF Facades 创建书签。
 lastmod: "2021-06-05"
 sitemap:

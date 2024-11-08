@@ -2,7 +2,7 @@
 title: Установить срок действия PDF в Ruby
 type: docs
 weight: 110
-url: ru/java/set-pdf-expiration-in-ruby/
+url: /ru/java/set-pdf-expiration-in-ruby/
 lastmod: "2021-06-05"
 ---
 

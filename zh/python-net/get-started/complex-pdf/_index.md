@@ -4,7 +4,7 @@ title: 创建一个复杂的PDF
 linktitle: 创建一个复杂的PDF  
 type: docs  
 weight: 30  
-url: zh/python-net/complex-pdf-example/  
+url: /zh/python-net/complex-pdf-example/  
 description: Aspose.PDF for Python via .NET 允许您创建包含图像、文本片段和表格的更复杂的文档。  
 lastmod: "2022-12-22"  
 sitemap:  
@@ -13,7 +13,7 @@ sitemap:
 
 ---
 
-[Hello, World](/pdf/python-net/hello-world-example/) 示例展示了使用 Python 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 Aspose.PDF for Python 创建一个更复杂的文档。作为一个例子，我们将从一家运营客运渡轮服务的虚构公司获取一份文档。我们的文档将包含一张图片、两个文本片段（标题和段落）和一个表格。
+[Hello, World](/pdf/zh/python-net/hello-world-example/) 示例展示了使用 Python 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 Aspose.PDF for Python 创建一个更复杂的文档。作为一个例子，我们将从一家运营客运渡轮服务的虚构公司获取一份文档。我们的文档将包含一张图片、两个文本片段（标题和段落）和一个表格。
 
 如果我们从头开始创建一个文档，我们需要遵循一定的步骤：
 

@@ -3,7 +3,7 @@ title: 在 Node.js 中添加 PDF 数字签名
 linktitle: 数字签署 PDF
 type: docs
 weight: 70
-url: zh/nodejs-cpp/sign-pdf/
+url: /zh/nodejs-cpp/sign-pdf/
 description: 在 Node.js 环境中对 PDF 文档进行数字签名。
 lastmod: "2023-11-16"
 sitemap:

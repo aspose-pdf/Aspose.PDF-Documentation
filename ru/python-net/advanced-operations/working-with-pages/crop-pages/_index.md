@@ -3,7 +3,7 @@ title: Обрезка страниц PDF программно на Python
 linktitle: Обрезка страниц
 type: docs
 weight: 70
-url: ru/python-net/crop-pages/
+url: /ru/python-net/crop-pages/
 description: Вы можете получить свойства страницы, такие как ширина, высота, bleed-, crop- и trimbox, используя Aspose.PDF для Python через .NET.
 lastmod: "2023-04-17"
 sitemap:

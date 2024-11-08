@@ -2,7 +2,7 @@
 title: Добавление HTML строки с использованием DOM в Python
 type: docs
 weight: 10
-url: ru/java/add-html-string-using-dom-in-python/
+url: /ru/java/add-html-string-using-dom-in-python/
 lastmod: "2021-06-05"
 keywords: html dom python, python html dom library
 description: Объясняет, как добавить HTML строку в DOM с использованием Python с библиотекой формата файла PDF

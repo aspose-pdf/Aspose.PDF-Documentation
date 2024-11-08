@@ -3,7 +3,7 @@ title: Очистить JavaScript код из PDF файла
 linktitle: Удалить JavaScripts
 type: docs
 weight: 50
-url: ru/javascript-cpp/delete-javascripts/
+url: /ru/javascript-cpp/delete-javascripts/
 description: Очистите JavaScript макросы из PDF файла напрямую в Интернете с помощью Aspose.PDF.
 lastmod: "2023-09-17"
 sitemap:

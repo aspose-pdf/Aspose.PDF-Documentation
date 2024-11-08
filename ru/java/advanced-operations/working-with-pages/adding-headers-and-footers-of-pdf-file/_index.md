@@ -3,7 +3,7 @@ title: Добавление заголовка и нижнего колонти�
 linktitle: Добавить заголовок и нижний колонтитул
 type: docs
 weight: 70
-url: ru/java/add-headers-and-footers-of-pdf-file/
+url: /ru/java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF для Java позволяет добавлять заголовки и нижние колонтитулы в ваш PDF файл с помощью класса TextStamp.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用PDF文件元数据
 linktitle: PDF文件元数据
 type: docs
 weight: 140
-url: zh/php-java/pdf-file-metadata/
+url: /zh/php-java/pdf-file-metadata/
 description: 本节解释如何获取PDF文件信息，如何从PDF文件获取XMP元数据，设置PDF文件信息。
 lastmod: "2024-06-05"
 sitemap:

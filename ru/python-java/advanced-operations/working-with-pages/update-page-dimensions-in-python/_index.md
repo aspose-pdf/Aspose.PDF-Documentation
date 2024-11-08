@@ -2,7 +2,7 @@
 title: Обновление размеров страницы в Python
 type: docs
 weight: 90
-url: ru/python-java/update-page-dimensions-in-python/
+url: /ru/python-java/update-page-dimensions-in-python/
 ---
 
 <ins>Чтобы обновить размеры страницы с помощью **Aspose.PDF Java для Python**, просто вызовите класс **UpdatePageDimensions**.

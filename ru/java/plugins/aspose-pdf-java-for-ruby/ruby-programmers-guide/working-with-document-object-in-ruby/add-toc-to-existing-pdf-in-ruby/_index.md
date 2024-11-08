@@ -2,7 +2,7 @@
 title: Добавить оглавление в существующий PDF в Ruby
 type: docs
 weight: 30
-url: ru/java/add-toc-to-existing-pdf-in-ruby/
+url: /ru/java/add-toc-to-existing-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

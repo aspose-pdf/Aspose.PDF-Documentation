@@ -2,7 +2,7 @@
 title: 在PDF文件中使用签名
 type: docs
 weight: 40
-url: zh/net/working-with-signature-in-a-pdf-file/
+url: /zh/net/working-with-signature-in-a-pdf-file/
 description: 本节解释如何使用PdfFileSignature类提取签名信息、从签名中提取图像、更改语言等。
 lastmod: "2021-06-05"
 draft: false

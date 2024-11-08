@@ -3,7 +3,7 @@ title: 在 PDF 文档中使用组合文件
 linktitle: 组合文件
 type: docs
 weight: 40
-url: zh/java/portfolio/
+url: /zh/java/portfolio/
 description: 如何使用 Java 创建 PDF 组合文件。您应该使用 Microsoft Excel 文件、Word 文档和图像文件来创建 PDF 组合文件。
 lastmod: "2021-06-05"
 sitemap:

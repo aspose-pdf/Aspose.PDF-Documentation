@@ -3,7 +3,7 @@ title: 系统要求
 linktitle: 系统要求
 type: docs
 weight: 30
-url: zh/androidjava/system-requirements/
+url: /zh/androidjava/system-requirements/
 description: 本节列出了开发人员需要使用 Aspose.PDF for Android via Java 成功工作的支持操作系统。
 lastmod: "2021-06-05"
 sitemap:

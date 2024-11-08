@@ -3,7 +3,7 @@ title: Форматирование PDF документа с использов
 linktitle: Форматирование PDF документа
 type: docs
 weight: 11
-url: ru/python-net/formatting-pdf-document/
+url: /ru/python-net/formatting-pdf-document/
 description: Создание и форматирование PDF документа с помощью Aspose.PDF для Python через .NET. Используйте следующий фрагмент кода для решения ваших задач.
 lastmod: "2023-04-12"
 sitemap:

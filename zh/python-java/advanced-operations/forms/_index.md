@@ -3,7 +3,7 @@ title: 使用 Python 处理表单
 linktitle: PDF 文档中的表单
 type: docs
 weight: 60
-url: zh/python-java/forms/
+url: /zh/python-java/forms/
 lastmod: "2023-05-19"
 description: 本节包含有关使用 Python API 处理 PDF 文档中的表单的文章。
 sitemap:

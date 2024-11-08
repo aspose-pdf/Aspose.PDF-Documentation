@@ -3,7 +3,7 @@ title: Get Started
 linktitle: Get Started
 type: docs
 weight: 30
-url: zh/python-net/get-started/
+url: /zh/python-net/get-started/
 description: 本节介绍了通过 .NET 使用 Aspose.PDF for Python 的基本工作原理。Python 库支持多种功能。
 is_node: true
 lastmod: "2022-12-20"   
@@ -38,13 +38,13 @@ PDF 是 Adobe 在 1990 年代创建的，目的是实现两件事。首先，你
 
 ## 转换功能
 
-- [将 PDF 转换为 Word、Excel 和 PowerPoint](/pdf/python-net/convert-pdf-to-word/)。
-- [将 PDF 转换为图像格式](/pdf/python-net/convert-pdf-to-images-format/)。
-- [将 PDF 文件转换为 HTML 格式，反之亦然](/pdf//python-net/convert-pdf-to-html/)。
-- [将 PDF 转换为 EPUB、文本、XPS 等](/pdf/python-net/convert-pdf-to-other-files/)。
+- [将 PDF 转换为 Word、Excel 和 PowerPoint](/pdf/zh/python-net/convert-pdf-to-word/)。
+- [将 PDF 转换为图像格式](/pdf/zh/python-net/convert-pdf-to-images-format/)。
+- [将 PDF 文件转换为 HTML 格式，反之亦然](/pdf/zh//python-net/convert-pdf-to-html/)。
+- [将 PDF 转换为 EPUB、文本、XPS 等](/pdf/zh/python-net/convert-pdf-to-other-files/)。
 - 将 EPUB、Markdown、文本、XPS、PostScript、XML、LaTex 转换为 PDF
 
 ### 了解更多关于：
 
-- ["Hello, World" Python 示例](/pdf/python-net/hello-world-example/)
-- [复杂 PDF](/pdf/python-net/complex-pdf-example/)
+- ["Hello, World" Python 示例](/pdf/zh/python-net/hello-world-example/)
+- [复杂 PDF](/pdf/zh/python-net/complex-pdf-example/)

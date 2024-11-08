@@ -3,7 +3,7 @@ title: 如何安装 Aspose.PDF for Python
 linktitle: 安装
 type: docs
 weight: 40
-url: zh/python-net/installation/
+url: /zh/python-net/installation/
 description: 本节展示产品描述和 Aspose.PDF for Python 的安装说明。
 lastmod: "2022-12-21"
 sitemap:
@@ -29,7 +29,7 @@ sitemap:
 
 您可以轻松下载用于评估的 Aspose.PDF for Python。评估下载与购买的下载相同。当您添加几行代码来应用许可证时，评估版本就会被授权。
 
-您可以下载 [Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/) 进行评估。评估下载与购买的下载相同。当您添加几行代码来[申请许可证](/pdf/python-net/licensing/)时，评估版本就会被授权。
+您可以下载 [Aspose.PDF for Python](https://releases.aspose.com/pdf/pythonnet/) 进行评估。评估下载与购买的下载相同。当您添加几行代码来[申请许可证](/pdf/zh/python-net/licensing/)时，评估版本就会被授权。
 
 Aspose.PDF 的评估版本（未指定许可证）提供完整的产品功能，但有两个限制：它插入一个评估水印，并且只能查看/编辑任何集合的四个元素。
 

@@ -2,7 +2,7 @@
 title: Удалить страницы PDF
 type: docs
 weight: 70
-url: ru/net/delete-pdf-pages/
+url: /ru/net/delete-pdf-pages/
 description: В этом разделе объясняется, как удалить страницы PDF с использованием Aspose.PDF Facades и класса PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

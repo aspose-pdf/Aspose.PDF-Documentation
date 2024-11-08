@@ -4,7 +4,7 @@ title: 从PDF中提取段落
 linktitle: 提取段落  
 type: docs  
 weight: 20  
-url: zh/php-java/extract-paragraph-from-pdf/  
+url: /zh/php-java/extract-paragraph-from-pdf/  
 description: 本文介绍如何使用ParagraphAbsorber——Aspose.PDF中的一个特殊工具来从PDF文档中提取文本。  
 lastmod: "2024-05-20"  
 sitemap:  

@@ -3,7 +3,7 @@ title: 确定 TextFragment 中的换行符
 linktitle: 确定换行符
 type: docs
 weight: 70
-url: zh/cpp/determine-line-break/
+url: /zh/cpp/determine-line-break/
 description: 了解如何使用 C++ 确定多行 TextFragment 的换行符
 lastmod: "2021-12-13"
 sitemap:

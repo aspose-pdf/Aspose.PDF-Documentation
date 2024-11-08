@@ -3,7 +3,7 @@ title: Закладки в PDF с использованием JavaScript
 linktitle: Закладки в PDF
 type: docs
 weight: 10
-url: ru/javascript-cpp/bookmark/
+url: /ru/javascript-cpp/bookmark/
 description: Вы можете добавлять или удалять закладки в PDF-документе с помощью JavaScript.
 lastmod: "2023-02-17"
 sitemap:

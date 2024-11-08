@@ -2,7 +2,7 @@
 title: 在 PHP 中添加 JavaScript
 type: docs
 weight: 10
-url: zh/java/adding-javascript-in-php/
+url: /zh/java/adding-javascript-in-php/
 lastmod: "2021-06-05"
 ---
 

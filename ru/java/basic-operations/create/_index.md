@@ -3,7 +3,7 @@ title: Создать PDF документ
 linktitle: Создать
 type: docs
 weight: 10
-url: ru/java/create-document/
+url: /ru/java/create-document/
 description: Узнайте, как создать PDF файл в Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

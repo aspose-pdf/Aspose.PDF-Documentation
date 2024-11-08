@@ -3,7 +3,7 @@ title: 从PDF中移除附件在Node.js中
 linktitle: 从现有PDF中移除附件
 type: docs
 weight: 10
-url: zh/nodejs-cpp/removing-attachment-from-an-existing-pdf/
+url: /zh/nodejs-cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF 可以从您的PDF文档中移除附件。使用Node.js环境通过Aspose.PDF移除PDF文件中的附件。
 lastmod: "2023-11-16"
 sitemap:

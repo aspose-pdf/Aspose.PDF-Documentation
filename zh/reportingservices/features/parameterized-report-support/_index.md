@@ -2,7 +2,7 @@
 title: 简单且轻量的部署
 type: docs
 weight: 40
-url: zh/reportingservices/easy-and-lightweight-deployment/
+url: /zh/reportingservices/easy-and-lightweight-deployment/
 lastmod: "2021-06-05"
 ---
 

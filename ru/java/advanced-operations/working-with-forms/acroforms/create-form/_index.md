@@ -3,7 +3,7 @@ title: Создание AcroForms - Создание заполняемых PDF 
 linktitle: Создание AcroForms
 type: docs
 weight: 10
-url: ru/java/create-forms/
+url: /ru/java/create-forms/
 description: Этот раздел объясняет, как с нуля создать AcroForms в ваших PDF-документах с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

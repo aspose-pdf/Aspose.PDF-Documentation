@@ -3,7 +3,7 @@ title: 确定换行符
 linktitle: 确定换行符
 type: docs
 weight: 70
-url: zh/java/determine-line-break/
+url: /zh/java/determine-line-break/
 description: 了解如何使用Java确定多行TextFragment的换行符
 lastmod: "2021-06-05"
 sitemap:

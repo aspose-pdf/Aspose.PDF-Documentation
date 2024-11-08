@@ -2,7 +2,7 @@
 title: 合并PDF文档
 type: docs
 weight: 10
-url: zh/java/concatenate-pdf-documents/
+url: /zh/java/concatenate-pdf-documents/
 description: 本节解释如何使用PdfFileEditor类通过com.aspose.pdf.facades合并PDF文档。
 lastmod: "2021-06-05"
 sitemap:

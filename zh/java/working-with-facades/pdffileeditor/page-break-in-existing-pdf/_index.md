@@ -2,7 +2,7 @@
 title: 在现有PDF中分页
 type: docs
 weight: 30
-url: zh/java/page-break-in-existing-pdf/
+url: /zh/java/page-break-in-existing-pdf/
 description: 本节说明如何使用PdfFileEditor类在现有PDF中分页。
 lastmod: "2021-06-05"
 draft: false

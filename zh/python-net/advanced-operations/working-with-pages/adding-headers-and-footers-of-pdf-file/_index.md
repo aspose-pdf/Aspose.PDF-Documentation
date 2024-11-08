@@ -3,7 +3,7 @@ title: 向 PDF 添加页眉和页脚使用 Python
 linktitle: 向 PDF 添加页眉和页脚
 type: docs
 weight: 50
-url: zh/python-net/add-headers-and-footers-of-pdf-file/
+url: /zh/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Python via .NET 允许您使用 TextStamp 类向 PDF 文件添加页眉和页脚。
 lastmod: "2023-04-17"
 sitemap:

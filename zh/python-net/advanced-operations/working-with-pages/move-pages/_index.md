@@ -3,7 +3,7 @@ title: 使用Python编程移动PDF页面
 linktitle: 移动PDF页面
 type: docs
 weight: 100
-url: zh/python-net/move-pages/
+url: /zh/python-net/move-pages/
 description: 尝试使用Aspose.PDF for Python via .NET在PDF文件中将页面移动到所需位置或文件末尾。
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 在 PDF 中使用 XFA 表单
 linktitle: XFA 表单
 type: docs
 weight: 20
-url: zh/java/xfa-forms/
+url: /zh/java/xfa-forms/
 description: 使用 Aspose.PDF for Java，您可以从头创建表单、填写 PDF 文档中的表单字段、从表单中提取数据、在现有表单中添加或删除字段。
 lastmod: "2021-06-05"
 sitemap:

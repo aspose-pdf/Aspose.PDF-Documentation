@@ -3,7 +3,7 @@ title: Расшифровать PDF в Node.js
 linktitle: Расшифровать PDF Файл
 type: docs
 weight: 40
-url: ru/nodejs-cpp/decrypt-pdf/
+url: /ru/nodejs-cpp/decrypt-pdf/
 description: Расшифровать PDF Файл с помощью Aspose.PDF для Node.js через C++.
 lastmod: "2023-11-16"
 sitemap:

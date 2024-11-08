@@ -2,7 +2,7 @@
 title: 使用配置工具安装
 type: docs
 weight: 30
-url: zh/reportingservices/install-with-configuring-tool/
+url: /zh/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

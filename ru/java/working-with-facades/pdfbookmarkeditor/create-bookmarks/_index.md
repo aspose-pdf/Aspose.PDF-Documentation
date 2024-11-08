@@ -2,7 +2,7 @@
 title: Create Bookmarks of All Pages (facades)
 type: docs
 weight: 10
-url: ru/java/create-bookmark/
+url: /ru/java/create-bookmark/
 description: Этот раздел объясняет, как создавать закладки с помощью Aspose.PDF Facades, используя класс PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

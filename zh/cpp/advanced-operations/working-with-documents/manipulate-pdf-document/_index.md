@@ -3,7 +3,7 @@ title: Manipulate PDF Document
 linktitle: Manipulate PDF Document
 type: docs
 weight: 30
-url: zh/cpp/manipulate-pdf-document/
+url: /zh/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: 本节解释了关于验证 PDF A 标准的 PDF 文档，如何使用目录，如何设置 PDF 到期日期，以及如何确定 PDF 文件生成的进度。
 lastmod: "2021-11-11"

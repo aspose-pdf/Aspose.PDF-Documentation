@@ -3,7 +3,7 @@ title: Добавление штампов изображений в PDF про�
 linktitle: Штампы изображений в PDF файле
 type: docs
 weight: 10
-url: ru/php-java/image-stamps-in-pdf-page/
+url: /ru/php-java/image-stamps-in-pdf-page/
 description: Добавьте штамп изображения в ваш PDF документ, используя класс ImageStamp с библиотекой Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 从 PDF 中提取标记内容
 linktitle: 提取标记内容
 type: docs
 weight: 20
-url: zh/java/extract-tagged-content-from-tagged-pdfs/
+url: /zh/java/extract-tagged-content-from-tagged-pdfs/
 description: 本文解释了如何使用 Aspose.PDF for Java 从 PDF 文档中提取标记内容
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 从 PDF 中提取图像在 Node.js 中
 linktitle: 从 PDF 中提取图像
 type: docs
 weight: 20
-url: zh/nodejs-cpp/extract-images-from-the-pdf-file/
+url: /zh/nodejs-cpp/extract-images-from-the-pdf-file/
 description: 如何使用 Aspose.PDF for Node.js via C++ 工具包从 PDF 中提取部分图像。
 lastmod: "2023-11-16"
 sitemap:

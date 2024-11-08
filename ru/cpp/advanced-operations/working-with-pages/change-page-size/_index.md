@@ -3,7 +3,7 @@ title: Изменение размера страницы PDF программн
 linktitle: Изменение размера страницы PDF
 type: docs
 weight: 40
-url: ru/cpp/change-page-size/
+url: /ru/cpp/change-page-size/
 description: Измените размер страницы в вашем PDF файле с помощью библиотеки C++.
 lastmod: "2021-12-08"
 sitemap:

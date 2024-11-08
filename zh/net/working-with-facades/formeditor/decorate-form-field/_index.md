@@ -2,7 +2,7 @@
 title: 在 PDF 中装饰表单字段
 type: docs
 weight: 20
-url: zh/net/decorate-form-field/
+url: /zh/net/decorate-form-field/
 description: 本节解释如何使用 FormEditor 类在 PDF 中装饰表单字段。
 lastmod: "2021-06-05"
 draft: false

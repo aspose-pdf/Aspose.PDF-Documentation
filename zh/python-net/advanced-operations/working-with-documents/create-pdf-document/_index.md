@@ -3,7 +3,7 @@ title: 如何使用 Python 创建 PDF
 linktitle: 创建 PDF 文档
 type: docs
 weight: 10
-url: zh/python-net/create-pdf-document/
+url: /zh/python-net/create-pdf-document/
 description: 使用 Aspose.PDF for Python via .NET 创建和格式化 PDF 文档。
 lastmod: "2023-04-12"
 sitemap:

@@ -2,7 +2,7 @@
 title: В чем разница между форматами FDF, XML и XFDF
 type: docs
 weight: 30
-url: ru/net/whats-the-difference-between-xml-fdf-and-xfdf/
+url: /ru/net/whats-the-difference-between-xml-fdf-and-xfdf/
 description: Этот раздел различает формы XML, FDF и XFDF с использованием класса Form из Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

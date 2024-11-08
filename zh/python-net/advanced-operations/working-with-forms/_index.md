@@ -3,7 +3,7 @@ title: 使用Python处理表单
 linktitle: 使用表单
 type: docs
 weight: 60
-url: zh/python-net/working-with-forms/
+url: /zh/python-net/working-with-forms/
 description: 本节介绍如何使用Aspose.PDF在PDF文档中处理AcroForms。适用于Python通过.NET。
 lastmod: "2023-02-17"
 sitemap:
@@ -81,4 +81,4 @@ sitemap:
 
 AcroForms允许用户填写、提交和存储表单，以电子方式进行，使其成为收集信息的一种方便高效的方式。
 
-- [AcroForms](/pdf/python-net/acroforms/) - 使用Python库创建表单、填写表单字段、从表单中提取数据、在PDF中添加和删除字段。
+- [AcroForms](/pdf/zh/python-net/acroforms/) - 使用Python库创建表单、填写表单字段、从表单中提取数据、在PDF中添加和删除字段。

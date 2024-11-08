@@ -2,7 +2,7 @@
 title: Извлечение объектов диаграмм из PDF-документа (фасады)
 type: docs
 weight: 20
-url: ru/java/extract-chart-objects/
+url: /ru/java/extract-chart-objects/
 description: В этом разделе объясняется, как извлекать объекты диаграмм из PDF с помощью Aspose.PDF Facades, используя класс PdfExtractor.
 lastmod: "2021-06-05"
 sitemap:

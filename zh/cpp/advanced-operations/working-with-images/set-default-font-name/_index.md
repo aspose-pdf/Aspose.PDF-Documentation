@@ -3,7 +3,7 @@ title: 使用C++设置默认字体名称
 linktitle: 设置默认字体名称
 type: docs
 weight: 90
-url: zh/cpp/set-default-font-name/
+url: /zh/cpp/set-default-font-name/
 description: 本节介绍如何使用C++库设置默认字体名称。
 lastmod: "2021-12-18"
 ---

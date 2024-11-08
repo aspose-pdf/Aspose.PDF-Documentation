@@ -3,7 +3,7 @@ title: Добавление штампов изображений в PDF с ис
 linktitle: Штампы изображений в PDF файле
 type: docs
 weight: 10
-url: ru/python-net/image-stamps-in-pdf-page/
+url: /ru/python-net/image-stamps-in-pdf-page/
 description: Добавьте штамп изображения в ваш PDF документ, используя класс ImageStamp с библиотекой Aspose.PDF для Python.
 lastmod: "2023-04-17"
 sitemap:

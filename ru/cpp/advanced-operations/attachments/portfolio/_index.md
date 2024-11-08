@@ -3,7 +3,7 @@ title: Работа с портфолио в PDF
 linktitle: Портфолио
 type: docs
 weight: 40
-url: ru/cpp/portfolio/
+url: /ru/cpp/portfolio/
 description: Создайте PDF-портфолио с помощью Aspose.PDF для C++. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF-портфолио.
 lastmod: "2022-02-07"
 sitemap:

@@ -2,7 +2,7 @@
 title: 安装到报表服务器
 type: docs
 weight: 10
-url: zh/reportingservices/install-to-report-server/
+url: /zh/reportingservices/install-to-report-server/
 lastmod: "2021-06-05"
 ---
 

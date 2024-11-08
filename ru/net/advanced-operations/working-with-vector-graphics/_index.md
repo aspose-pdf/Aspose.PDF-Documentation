@@ -3,7 +3,7 @@ title: Работа с векторной графикой
 linktitle: Работа с векторной графикой
 type: docs
 weight: 120
-url: ru/net/working-with-vector-graphics/
+url: /ru/net/working-with-vector-graphics/
 description: В этой статье описаны возможности работы с инструментом GraphicsAbsorber с использованием C#.
 lastmod: "2024-02-17"
 ---

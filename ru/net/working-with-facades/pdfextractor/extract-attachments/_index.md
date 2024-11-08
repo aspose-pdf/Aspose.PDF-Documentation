@@ -2,7 +2,7 @@
 title: Извлечение вложений из PDF файла
 type: docs
 weight: 10
-url: ru/net/extract-attachments/
+url: /ru/net/extract-attachments/
 description: В этом разделе объясняется извлечение вложений из pdf с помощью класса PdfExtractor.
 lastmod: "2021-06-05"
 ---

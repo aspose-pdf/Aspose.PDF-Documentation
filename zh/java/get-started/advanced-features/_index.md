@@ -3,7 +3,7 @@ title: 高级功能
 linktitle: 高级功能
 type: docs
 weight: 120
-url: zh/java/advanced-features/
+url: /zh/java/advanced-features/
 description: 本节展示如何使用 Aspose.PDF for Java 在 PDF 文档中使用 LaTeX 标签。
 lastmod: "2022-01-11"
 sitemap:

@@ -2,7 +2,7 @@
 title: Объединение изображений
 type: docs
 weight: 10
-url: ru/java/merge-images/
+url: /ru/java/merge-images/
 description: Этот раздел объясняет, как объединять изображения, и как сохранить их в формате Tiff.
 lastmod: "2021-07-01"
 draft: false

@@ -2,7 +2,7 @@
 title: Получение Свойств Страницы в Ruby
 type: docs
 weight: 50
-url: ru/java/get-page-properties-in-ruby/
+url: /ru/java/get-page-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: Быстрые советы
 type: docs
 weight: 50
-url: ru/java/quick-tips/
+url: /ru/java/quick-tips/
 lastmod: "2022-01-27"
 ---
 

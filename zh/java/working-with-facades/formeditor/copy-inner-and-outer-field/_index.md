@@ -2,7 +2,7 @@
 title: 复制内外字段
 type: docs
 weight: 40
-url: zh/java/copy-inner-and-outer-field/
+url: /zh/java/copy-inner-and-outer-field/
 description: 本节介绍如何使用 FormEditor 类通过 com.aspose.pdf.facades 复制内外字段。
 lastmod: "2021-06-05"
 draft: false

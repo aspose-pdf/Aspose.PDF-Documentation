@@ -2,7 +2,7 @@
 title: Извлечение Аннотаций (фасады)
 type: docs
 weight: 30
-url: ru/java/extract-annotation/
+url: /ru/java/extract-annotation/
 description: Этот раздел объясняет, как извлечь аннотации из PDF файла в XFDF с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

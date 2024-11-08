@@ -3,7 +3,7 @@ title: Извлечение XFA Формы
 linktitle: Извлечение XFA Формы
 type: docs
 weight: 30
-url: ru/php-java/extract-form/
+url: /ru/php-java/extract-form/
 description: В этом разделе объясняется, как извлечь формы из вашего PDF документа с помощью Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 sitemap:

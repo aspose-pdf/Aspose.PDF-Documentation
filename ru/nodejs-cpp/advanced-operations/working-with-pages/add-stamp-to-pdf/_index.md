@@ -3,7 +3,7 @@ title: Добавление изображений штампов в PDF на No
 linktitle: Изображения штампов в PDF файле  
 type: docs  
 weight: 60  
-url: ru/nodejs-cpp/stamping/  
+url: /ru/nodejs-cpp/stamping/  
 description: Добавьте штамп изображения в ваш PDF документ с помощью AsposePdfAddStamp с использованием инструмента Node.js.  
 lastmod: "2023-11-16"  
 sitemap:  

@@ -3,7 +3,7 @@ title: 将HTML、文本和图像转换为PDF在SharePoint
 linktitle: 转换为PDF
 type: docs
 weight: 30
-url: zh/sharepoint/convert-to-pdf/
+url: /zh/sharepoint/convert-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API允许将HTML文件、文本文件和图像（JPG、PNG、GIF、TIFF、BMP）转换为PDF格式。
 ---

@@ -5,7 +5,7 @@ type: docs
 
 weight: 10
 
-url: zh/jasperreports/product-information/
+url: /zh/jasperreports/product-information/
 
 lastmod: "2021-06-05"
 ```

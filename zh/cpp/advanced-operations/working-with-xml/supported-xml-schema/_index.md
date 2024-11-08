@@ -3,7 +3,7 @@ title: XML Schema of Aspose.PDF
 linktitle: Supported XML Schema
 type: docs
 weight: 10
-url: zh/cpp/supported-xml-schema/
+url: /zh/cpp/supported-xml-schema/
 description: 本文介绍了在 Aspose.PDF for C++ 中使用 XML 文档的 XML 架构。
 lastmod: "2022-01-31"
 sitemap:

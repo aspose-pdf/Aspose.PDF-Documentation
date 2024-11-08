@@ -3,7 +3,7 @@ title: Создание ссылок в PDF файле
 linktitle: Создание ссылок
 type: docs
 weight: 10
-url: ru/java/create-links/
+url: /ru/java/create-links/
 description: Этот раздел объясняет, как создавать ссылки в вашем PDF документе с помощью Java.
 lastmod: "2021-06-05"
 sitemap:

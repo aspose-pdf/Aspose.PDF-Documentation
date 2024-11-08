@@ -3,7 +3,7 @@ title: Преобразование HTML в PDF
 linktitle: Преобразование HTML в PDF
 type: docs
 weight: 40
-url: ru/php-java/convert-html-to-pdf/
+url: /ru/php-java/convert-html-to-pdf/
 lastmod: "2024-05-20"
 description: Эта тема показывает, как Aspose.PDF позволяет преобразовывать форматы HTML и MHTML в файл PDF.
 sitemap:

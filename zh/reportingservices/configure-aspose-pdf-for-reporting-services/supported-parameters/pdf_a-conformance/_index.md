@@ -2,7 +2,7 @@
 title: PDF_A 合规性
 type: docs
 weight: 100
-url: zh/reportingservices/pdf_a-conformance/
+url: /zh/reportingservices/pdf_a-conformance/
 lastmod: "2021-06-05"
 ---
 

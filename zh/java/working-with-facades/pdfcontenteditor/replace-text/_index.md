@@ -3,7 +3,7 @@
 title: 在PDF文件中替换文本  
 type: docs  
 weight: 40  
-url: zh/java/replace-text/  
+url: /zh/java/replace-text/  
 description: 本节说明如何使用Aspose.PDF Facades替换文本——一个用于PDF常见操作的工具集。  
 lastmod: "2021-06-24"  
 sitemap:  

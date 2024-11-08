@@ -3,7 +3,7 @@ title: 使用 Aspose.PDF for JavaScript via C++ 优化 PDF
 linktitle: 优化 PDF 文件
 type: docs
 weight: 10
-url: zh/javascript-cpp/optimize-pdf/
+url: /zh/javascript-cpp/optimize-pdf/
 description: 使用 JavaScript 工具优化和压缩 PDF 文件以实现快速网页浏览。
 lastmod: "2022-12-15"
 sitemap:

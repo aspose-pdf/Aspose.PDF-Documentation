@@ -3,7 +3,7 @@ title: 使用 C++ 以编程方式移动 PDF 页面
 linktitle: 移动 PDF 页面
 type: docs
 weight: 20
-url: zh/cpp/move-pages/
+url: /zh/cpp/move-pages/
 description: 尝试使用 Aspose.PDF for C++ 将页面移动到所需位置或 PDF 文件的末尾。
 lastmod: "2021-12-09"
 sitemap:

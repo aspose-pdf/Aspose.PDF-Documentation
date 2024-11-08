@@ -3,7 +3,7 @@ title: 向PDF文件添加椭圆对象
 linktitle: 添加椭圆
 type: docs
 weight: 60
-url: zh/cpp/add-ellipse/
+url: /zh/cpp/add-ellipse/
 description: 本文解释了如何使用Aspose.PDF for C++在PDF中创建椭圆对象。
 lastmod: "2021-12-21"
 sitemap:

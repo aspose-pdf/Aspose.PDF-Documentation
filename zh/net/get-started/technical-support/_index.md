@@ -3,7 +3,7 @@ title: Aspose.PDF for .NET 支持
 linktitle: 技术支持
 type: docs
 weight: 100
-url: zh/net/technical-support/
+url: /zh/net/technical-support/
 description: 本页面为您提供使用 Aspose.PDF for .NET 快速且高质量解决任务的建议。
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Изменение пароля PDF файла
 type: docs
 weight: 40
-url: ru/net/change-password/
+url: /ru/net/change-password/
 description: Эта тема объясняет, как изменить пароль в PDF файле с использованием класса PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Извлечение текста из штампов
 linktitle: Извлечение текста из штампов
 type: docs
 weight: 60
-url: ru/cpp/extract-text-from-stamps/
+url: /ru/cpp/extract-text-from-stamps/
 ---
 
 ## Извлечение текста из аннотаций штампов

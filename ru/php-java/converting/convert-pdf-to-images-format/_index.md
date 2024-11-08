@@ -3,7 +3,7 @@ title: Конвертировать PDF в форматы изображений
 linktitle: Конвертировать PDF в изображения
 type: docs
 weight: 70
-url: ru/php-java/convert-pdf-to-images-format/
+url: /ru/php-java/convert-pdf-to-images-format/
 lastmod: "2024-05-20"
 description: Эта тема показывает, как Aspose.PDF позволяет конвертировать PDF в различные форматы изображений. Конвертируйте страницы PDF в изображения PNG, JPEG, BMP с помощью нескольких строк кода.
 sitemap:

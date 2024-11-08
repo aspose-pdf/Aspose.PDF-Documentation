@@ -2,7 +2,7 @@
 title: 提取 PDF 页
 type: docs
 weight: 40
-url: zh/net/extract-pdf-pages/
+url: /zh/net/extract-pdf-pages/
 description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfFileEditor 类提取 PDF 页。
 lastmod: "2021-06-05"
 draft: false

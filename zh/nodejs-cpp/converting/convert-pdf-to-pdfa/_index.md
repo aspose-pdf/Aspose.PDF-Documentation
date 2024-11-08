@@ -3,7 +3,7 @@ title: 将PDF转换为PDF/A格式在Node.js中
 linktitle: 将PDF转换为PDF/A格式
 type: docs
 weight: 100
-url: zh/nodejs-cpp/convert-pdf-to-pdfa/
+url: /zh/nodejs-cpp/convert-pdf-to-pdfa/
 lastmod: "2023-11-16"
 description: 本主题向您展示如何在Node.js环境中使用Aspose.PDF将PDF文件转换为符合PDF/A标准的PDF文件。
 sitemap:

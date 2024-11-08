@@ -3,7 +3,7 @@ title: 将PDF转换为不同的图像格式在Python中
 linktitle: 将PDF转换为图像
 type: docs
 weight: 70
-url: zh/python-cpp/convert-pdf-to-images-format/
+url: /zh/python-cpp/convert-pdf-to-images-format/
 lastmod: "2023-06-23"
 description: 本主题向您展示如何使用Aspose.PDF for Python将PDF转换为各种图像格式，例如TIFF、BMP、EMF、JPEG、PNG、GIF、SVG，只需几行代码。
 sitemap:

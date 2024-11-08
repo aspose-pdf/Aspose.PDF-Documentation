@@ -3,7 +3,7 @@ title: 操作现有PDF中的表格
 linktitle: 操作表格
 type: docs
 weight: 40
-url: zh/python-net/manipulate-tables-in-existing-pdf/
+url: /zh/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

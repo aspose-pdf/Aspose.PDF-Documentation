@@ -2,7 +2,7 @@
 title: Импорт и экспорт закладок
 type: docs
 weight: 20
-url: ru/net/import-and-export-bookmarks/
+url: /ru/net/import-and-export-bookmarks/
 description: В этом разделе объясняется, как импортировать и экспортировать закладки с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

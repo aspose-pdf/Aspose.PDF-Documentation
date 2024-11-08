@@ -2,7 +2,7 @@
 title: Работа с печатью PDF
 type: docs
 weight: 10
-url: ru/java/print-pdf-file/
+url: /ru/java/print-pdf-file/
 description: Этот раздел объясняет, как печатать PDF-файл с использованием Aspose.PDF Facades и класса PdfViewer.
 lastmod: "2021-06-05"
 sitemap:

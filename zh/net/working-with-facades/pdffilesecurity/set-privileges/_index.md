@@ -2,7 +2,7 @@
 title: 设置 PDF 权限
 type: docs
 weight: 50
-url: zh/net/set-privileges/
+url: /zh/net/set-privileges/
 description: 本主题解释了如何使用 PdfFileSecurity 类设置现有 PDF 文件的权限。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Манипулировать PDF-документом
 linktitle: Манипулировать PDF-документом
 type: docs
 weight: 30
-url: ru/cpp/manipulate-pdf-document/
+url: /ru/cpp/manipulate-pdf-document/
 lastmod: "2021-11-11"
 description: Этот раздел объясняет проверку PDF-документа на соответствие стандарту PDF A, как работать с Оглавлением, как установить дату истечения срока действия PDF и как определить прогресс генерации PDF-файла.
 lastmod: "2021-11-11"

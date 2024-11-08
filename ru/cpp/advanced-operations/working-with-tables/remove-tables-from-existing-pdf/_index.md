@@ -3,7 +3,7 @@ title: Удалить таблицы из существующего PDF
 linktitle: Удалить таблицы
 type: docs
 weight: 50
-url: ru/cpp/remove-tables-from-existing-pdf/
+url: /ru/cpp/remove-tables-from-existing-pdf/
 description: Этот раздел описывает, как удалить таблицу из PDF документа.
 lastmod: "2021-11-11"
 sitemap:

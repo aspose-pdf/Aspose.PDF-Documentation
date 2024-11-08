@@ -2,7 +2,7 @@
 title: 获取 Jython 中的 PDF 文件信息
 type: docs
 weight: 30
-url: zh/java/get-pdf-file-information-in-jython/
+url: /zh/java/get-pdf-file-information-in-jython/
 lastmod: "2021-06-05"
 ---
 

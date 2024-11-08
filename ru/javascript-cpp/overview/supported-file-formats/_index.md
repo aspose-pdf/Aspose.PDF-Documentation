@@ -3,7 +3,7 @@ title: Поддерживаемые форматы файлов
 linktitle: Поддерживаемые форматы файлов
 type: docs
 weight: 10
-url: ru/javascript-cpp/supported-file-formats/
+url: /ru/javascript-cpp/supported-file-formats/
 description: Эта страница показывает, какие форматы файлов Aspose.PDF для JavaScript может загружать и сохранять.
 lastmod: "2021-06-05"
 sitemap:

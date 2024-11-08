@@ -3,7 +3,7 @@ title: 格式化 PDF 文档
 linktitle: 格式化 PDF 文档
 type: docs
 weight: 20
-url: zh/php-java/formatting-pdf-document/
+url: /zh/php-java/formatting-pdf-document/
 description: 使用 Aspose.PDF for PHP via Java 格式化 PDF 文档。使用下一个代码片段来解决您的任务。
 lastmod: "2024-06-05"
 ---

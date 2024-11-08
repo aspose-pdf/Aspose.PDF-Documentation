@@ -3,7 +3,7 @@ title: 将线对象添加到PDF文件
 linktitle: 添加线条
 type: docs
 weight: 40
-url: zh/java/add-line/
+url: /zh/java/add-line/
 description: 本文解释了如何使用Aspose.PDF for Java在PDF中创建线对象。
 lastmod: "2021-06-05"
 sitemap:

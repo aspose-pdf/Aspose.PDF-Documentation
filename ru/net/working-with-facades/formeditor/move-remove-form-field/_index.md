@@ -2,7 +2,7 @@
 title: Перемещение и Удаление Поля Формы
 type: docs
 weight: 50
-url: ru/net/move-remove-form-field/
+url: /ru/net/move-remove-form-field/
 description: Этот раздел объясняет, как вы можете перемещать и удалять поля формы с помощью класса FormEditor.
 lastmod: "2021-06-05"
 draft: false

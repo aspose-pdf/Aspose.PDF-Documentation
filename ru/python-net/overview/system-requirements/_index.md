@@ -3,7 +3,7 @@ title: System Requirements
 linktitle: System Requirements
 type: docs
 weight: 30
-url: ru/python-net/system-requirements/
+url: /ru/python-net/system-requirements/
 description: Этот раздел перечисляет поддерживаемые операционные системы, которые необходимы разработчику для успешной работы с Aspose.PDF для Python.
 lastmod: "2022-12-22"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用 JavaScript 加密 PDF
 linktitle: 加密 PDF 文件
 type: docs
 weight: 50
-url: zh/javascript-cpp/encrypt-pdf/
+url: /zh/javascript-cpp/encrypt-pdf/
 description: 使用 Aspose.PDF for JavaScript via C++ 加密 PDF 文件。
 lastmod: "2022-12-15"
 sitemap:

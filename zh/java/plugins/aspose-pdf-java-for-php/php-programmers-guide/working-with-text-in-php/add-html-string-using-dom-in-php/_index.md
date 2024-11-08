@@ -2,7 +2,7 @@
 title: 使用 DOM 在 PHP 中添加 HTML 字符串
 type: docs
 weight: 10
-url: zh/java/add-html-string-using-dom-in-php/
+url: /zh/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

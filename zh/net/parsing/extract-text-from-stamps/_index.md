@@ -2,7 +2,7 @@
 title: 使用 C# 从印章中提取文本
 type: docs
 weight: 60
-url: zh/net/extract-text-from-stamps/
+url: /zh/net/extract-text-from-stamps/
 description: 学习如何使用 Aspose.PDF for .NET 的特殊功能 - 从印章注释中提取文本
 lastmod: "2021-01-30"
 sitemap:
@@ -19,7 +19,7 @@ Aspose.PDF for NET 允许您从印章注释中提取文本。为了从 PDF 中�
 1. 定义一个新的 `TextAbsorber` 类对象
 1. 使用 TextAbsorber 的 visit 方法获取文本
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 public static void ExtractText()

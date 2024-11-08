@@ -3,7 +3,7 @@ title: 格式化 PDF 文档使用 C++
 linktitle: 格式化 PDF 文档
 type: docs
 weight: 20
-url: zh/cpp/formatting-pdf-document/
+url: /zh/cpp/formatting-pdf-document/
 description: 使用 Aspose.PDF for C++ 创建和格式化 PDF 文档。使用下面的代码片段来解决您的任务。
 lastmod: "2021-11-11"
 sitemap:

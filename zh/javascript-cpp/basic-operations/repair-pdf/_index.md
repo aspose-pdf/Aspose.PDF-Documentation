@@ -3,7 +3,7 @@ title: 通过 C++ 使用 JavaScript 修复 PDF
 linktitle: 修复 PDF
 type: docs
 weight: 10
-url: zh/javascript-cpp/repair-pdf/
+url: /zh/javascript-cpp/repair-pdf/
 description: 本主题描述了如何通过 JavaScript 和 C++ 修复 PDF
 lastmod: "2023-02-17"
 sitemap:

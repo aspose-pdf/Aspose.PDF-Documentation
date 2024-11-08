@@ -3,7 +3,7 @@ title: 使用 JavaScript 和 C++ 优化 PDF 资源
 linktitle: 优化 PDF 资源
 type: docs
 weight: 15
-url: zh/javascript-cpp/optimize-pdf-resources/
+url: /zh/javascript-cpp/optimize-pdf-resources/
 description: 使用 JavaScript 工具优化 PDF 文件的资源以实现快速网页视图。
 lastmod: "2022-12-15"
 sitemap:

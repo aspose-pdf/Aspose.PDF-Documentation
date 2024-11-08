@@ -2,7 +2,7 @@
 title: Вставка страниц PDF
 type: docs
 weight: 50
-url: ru/net/insert-pdf-pages/
+url: /ru/net/insert-pdf-pages/
 description: Этот раздел объясняет, как вставлять страницы PDF с использованием Aspose.PDF Facades с помощью класса PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

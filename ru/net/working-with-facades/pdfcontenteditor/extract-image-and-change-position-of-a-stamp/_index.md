@@ -2,7 +2,7 @@
 title: Извлечение изображения и изменение положения штампа
 type: docs
 weight: 30
-url: ru/net/extract-image-and-change-position-of-a-stamp/
+url: /ru/net/extract-image-and-change-position-of-a-stamp/
 description: Этот раздел объясняет, как извлечь изображение и изменить положение штампа с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

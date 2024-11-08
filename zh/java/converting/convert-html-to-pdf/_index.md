@@ -3,7 +3,7 @@ title: 将HTML转换为PDF文件在Java中
 linktitle: 将HTML转换为PDF文件
 type: docs
 weight: 40
-url: zh/java/convert-html-to-pdf/
+url: /zh/java/convert-html-to-pdf/
 lastmod: "2021-11-19"
 description: 本主题向您展示如何使用Aspose.PDF将HTML和MHTML格式转换为PDF文件。
 sitemap:

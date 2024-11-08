@@ -3,7 +3,7 @@ title: Открыть PDF документ
 linktitle: Открыть
 type: docs
 weight: 20
-url: ru/java/open-pdf-document/
+url: /ru/java/open-pdf-document/
 description: Узнайте, как открыть PDF файл с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

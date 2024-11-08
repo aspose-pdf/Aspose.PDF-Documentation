@@ -3,7 +3,7 @@ title: 在 Node.js 中修复 PDF
 linktitle: 修复 PDF
 type: docs
 weight: 10
-url: zh/nodejs-cpp/repair-pdf/
+url: /zh/nodejs-cpp/repair-pdf/
 description: 本主题介绍如何在 Node.js 环境中修复 PDF。
 lastmod: "2023-11-16"
 sitemap:

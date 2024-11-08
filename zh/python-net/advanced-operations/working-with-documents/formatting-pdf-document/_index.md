@@ -3,7 +3,7 @@ title: 使用Python格式化PDF文档
 linktitle: 格式化PDF文档
 type: docs
 weight: 11
-url: zh/python-net/formatting-pdf-document/
+url: /zh/python-net/formatting-pdf-document/
 description: 使用Aspose.PDF for Python via .NET创建和格式化PDF文档。使用下面的代码片段来解决您的任务。
 lastmod: "2023-04-12"
 sitemap:

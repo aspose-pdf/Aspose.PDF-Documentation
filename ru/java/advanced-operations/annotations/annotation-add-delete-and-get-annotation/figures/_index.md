@@ -3,7 +3,7 @@ title: Аннотации к PDF фигурам
 linktitle: Аннотации к фигурам
 type: docs
 weight: 30
-url: ru/java/figures-annotation/
+url: /ru/java/figures-annotation/
 description: В этой статье описывается, как добавлять, получать и удалять аннотации к фигурам в вашем PDF-документе с помощью Aspose.PDF для Java
 lastmod: "2021-11-24"
 sitemap:

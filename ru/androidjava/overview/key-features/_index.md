@@ -3,7 +3,7 @@ title: Ключевые особенности Aspose.PDF
 linktitle: Ключевые особенности
 type: docs
 weight: 20
-url: ru/androidjava/key-features/
+url: /ru/androidjava/key-features/
 description: Aspose.PDF for Android via Java демонстрирует основные функции работы с PDF-документами.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Извлечение аннотаций из PDF
 type: docs
 weight: 30
-url: ru/net/extract-annotation/
+url: /ru/net/extract-annotation/
 description: Этот раздел объясняет, как извлечь аннотации из PDF файла в XFDF с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 sitemap:

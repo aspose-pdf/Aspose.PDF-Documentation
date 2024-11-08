@@ -3,7 +3,7 @@ title: 将PDF转换为PPTX格式的JavaScript代码
 linktitle: 将PDF转换为PowerPoint
 type: docs
 weight: 30
-url: zh/javascript-cpp/convert-pdf-to-powerpoint/
+url: /zh/javascript-cpp/convert-pdf-to-powerpoint/
 lastmod: "2023-11-01"
 description: Aspose.PDF允许您使用JavaScript直接在网上将PDF转换为PPTX格式。
 sitemap:

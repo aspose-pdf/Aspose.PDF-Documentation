@@ -2,7 +2,7 @@
 title: 设置 PDF 到期时间在 PHP 中
 type: docs
 weight: 80
-url: zh/java/set-pdf-expiration-in-php/
+url: /zh/java/set-pdf-expiration-in-php/
 lastmod: "2021-06-05"
 ---
 

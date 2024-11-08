@@ -3,7 +3,7 @@ title: Системные требования для C++
 linktitle: Системные требования
 type: docs
 weight: 30
-url: ru/cpp/system-requirements/
+url: /ru/cpp/system-requirements/
 description: В этом разделе перечислены поддерживаемые операционные системы, которые необходимы разработчику для успешной работы с Aspose.PDF для C++.
 lastmod: "2021-11-08"
 sitemap:

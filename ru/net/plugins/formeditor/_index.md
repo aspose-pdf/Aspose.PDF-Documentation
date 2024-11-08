@@ -2,7 +2,7 @@
 title: Редактор Форм
 type: docs
 weight: 40
-url: ru/net/plugins/formeditor/
+url: /ru/net/plugins/formeditor/
 description: Как добавить, обновить и удалить поля форм в файлах PDF с помощью плагинов Aspose.PDF
 lastmod: "2024-01-24"
 draft: false

@@ -3,7 +3,7 @@ title: 使用 C++ 通过 JavaScript 为 PDF 添加背景
 linktitle: 添加背景
 type: docs
 weight: 10
-url: zh/javascript-cpp/add-backgrounds/
+url: /zh/javascript-cpp/add-backgrounds/
 description: 使用 C++ 通过 JavaScript 为您的 PDF 文件添加背景图像。
 lastmod: "2023-02-17"
 sitemap:

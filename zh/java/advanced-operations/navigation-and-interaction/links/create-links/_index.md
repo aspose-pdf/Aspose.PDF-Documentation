@@ -3,7 +3,7 @@ title: 在 PDF 文件中创建链接
 linktitle: 创建链接
 type: docs
 weight: 10
-url: zh/java/create-links/
+url: /zh/java/create-links/
 description: 本节解释如何使用 Java 在 PDF 文档中创建链接。
 lastmod: "2021-06-05"
 sitemap:

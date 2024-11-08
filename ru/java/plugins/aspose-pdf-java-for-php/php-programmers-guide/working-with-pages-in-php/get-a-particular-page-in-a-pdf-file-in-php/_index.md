@@ -2,7 +2,7 @@
 title: Получить определенную страницу в PDF файле на PHP
 type: docs
 weight: 30
-url: ru/java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /ru/java/get-a-particular-page-in-a-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

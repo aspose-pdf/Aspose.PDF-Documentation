@@ -1,7 +1,7 @@
 title: Работа с Заголовками в PDF
 type: docs
 weight: 70
-url: ru/php-java/working-with-headings/
+url: /ru/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: Создайте нумерацию в заголовке вашего PDF документа с использованием PHP. Aspose.PDF for PHP via Java предлагает различные стили нумерации.
 sitemap:

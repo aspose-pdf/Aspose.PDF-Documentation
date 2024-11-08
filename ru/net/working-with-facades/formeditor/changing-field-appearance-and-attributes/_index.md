@@ -2,7 +2,7 @@
 title: Внешний вид и атрибуты поля
 type: docs
 weight: 20
-url: ru/net/changing-field-appearance-and-attributes/
+url: /ru/net/changing-field-appearance-and-attributes/
 description: Этот раздел объясняет, как изменить внешний вид и атрибуты поля с помощью класса FormEditor.
 lastmod: "2021-06-05"
 draft: false

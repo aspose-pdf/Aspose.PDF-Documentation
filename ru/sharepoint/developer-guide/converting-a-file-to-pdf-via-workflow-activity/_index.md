@@ -2,7 +2,7 @@
 title: Конвертация файла в PDF через действие рабочего процесса
 type: docs
 weight: 50
-url: ru/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
+url: /ru/sharepoint/converting-a-file-to-pdf-via-workflow-activity/
 lastmod: "2020-12-16"
 description: PDF SharePoint API можно использовать в рабочем процессе SharePoint для конвертации документа в PDF.
 ---

@@ -3,7 +3,7 @@ title: Определить Перенос Строки
 linktitle: Определить Перенос Строки
 type: docs
 weight: 70
-url: ru/python-net/determine-line-break/
+url: /ru/python-net/determine-line-break/
 description: Узнайте больше о том, как определить перенос строки в многострочном TextFragment с использованием Python
 lastmod: "2024-02-17"
 sitemap:

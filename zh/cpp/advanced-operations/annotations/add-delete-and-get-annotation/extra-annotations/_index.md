@@ -3,7 +3,7 @@ title: 额外注释使用C++
 linktitle: 额外注释
 type: docs
 weight: 60
-url: zh/cpp/extra-annotations/
+url: /zh/cpp/extra-annotations/
 description: 本节描述如何从PDF文档中添加、获取和删除额外类型的注释。
 lastmod: "2021-11-24"
 sitemap:

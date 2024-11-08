@@ -3,7 +3,7 @@ title: Сохранение PDF документа с использование
 linktitle: Сохранить
 type: docs
 weight: 30
-url: ru/cpp/save-pdf-document/
+url: /ru/cpp/save-pdf-document/
 description: Узнайте, как сохранить PDF файл с библиотекой Aspose.PDF для C++.
 lastmod: "2021-11-01"
 sitemap:

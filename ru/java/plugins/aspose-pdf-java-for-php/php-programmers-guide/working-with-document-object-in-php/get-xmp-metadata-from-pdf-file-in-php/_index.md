@@ -2,7 +2,7 @@
 title: Получить XMP Метаданные из PDF Файла на PHP
 type: docs
 weight: 50
-url: ru/java/get-xmp-metadata-from-pdf-file-in-php/
+url: /ru/java/get-xmp-metadata-from-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

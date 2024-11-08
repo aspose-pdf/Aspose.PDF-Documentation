@@ -2,7 +2,7 @@
 title: 卸载 Aspose.Pdf for SharePoint License
 type: docs
 weight: 30
-url: zh/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
+url: /zh/sharepoint/uninstalling-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: 请按照本文中提到的步骤卸载 PDF SharePoint API 许可证。
 ---

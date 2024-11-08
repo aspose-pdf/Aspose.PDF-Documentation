@@ -3,7 +3,7 @@ title: PDF Мультимедийная Аннотация
 linktitle: Мультимедийная Аннотация
 type: docs
 weight: 40
-url: ru/java/multimedia-annotation/
+url: /ru/java/multimedia-annotation/
 description: Aspose.PDF for Java позволяет добавлять, получать и удалять мультимедийные аннотации из вашего PDF документа.
 lastmod: "2021-11-24"
 sitemap:

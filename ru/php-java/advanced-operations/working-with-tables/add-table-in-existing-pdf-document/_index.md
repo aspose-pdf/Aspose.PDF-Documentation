@@ -3,7 +3,7 @@ title: Создание или Добавление Таблицы в PDF
 linktitle: Создание или Добавление Таблицы
 type: docs
 weight: 10
-url: ru/php-java/add-table-in-existing-pdf-document/
+url: /ru/php-java/add-table-in-existing-pdf-document/
 description: Узнайте, как создать или добавить таблицу в PDF-документ, применить стиль ячеек, разделить таблицу на страницы и настроить строки и столбцы и т.д.
 lastmod: "2024-05-16"
 sitemap:

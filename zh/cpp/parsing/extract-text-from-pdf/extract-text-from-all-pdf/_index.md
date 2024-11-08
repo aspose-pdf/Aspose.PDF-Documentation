@@ -3,7 +3,7 @@ title: 使用C++从所有PDF页面提取文本
 linktitle: 从PDF提取文本
 type: docs
 weight: 10
-url: zh/cpp/extract-text-from-all-pdf/
+url: /zh/cpp/extract-text-from-all-pdf/
 description: 本文介绍了使用Aspose.PDF在C++中从PDF文档提取文本的各种方法。包括从整个页面、特定部分、基于列等。
 lastmod: "2021-12-13"
 sitemap:

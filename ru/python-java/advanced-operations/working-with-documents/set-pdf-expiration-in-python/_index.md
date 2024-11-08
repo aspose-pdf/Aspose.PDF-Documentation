@@ -2,7 +2,7 @@
 title: Установить срок действия PDF в Python
 type: docs
 weight: 80
-url: ru/python-java/set-pdf-expiration-in-python/
+url: /ru/python-java/set-pdf-expiration-in-python/
 ---
 
 <ins>Чтобы установить срок действия PDF документа с использованием **Aspose.PDF Java for Python**, просто вызовите класс **SetExpiration**.

@@ -2,7 +2,7 @@
 title: Обновление размеров страницы в Ruby
 type: docs
 weight: 90
-url: ru/java/update-page-dimensions-in-ruby/
+url: /ru/java/update-page-dimensions-in-ruby/
 lastmod: "2021-06-05"
 ---
 

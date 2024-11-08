@@ -3,7 +3,7 @@ title: Продвинутые функции
 linktitle: Продвинутые функции
 type: docs
 weight: 120
-url: ru/java/advanced-features/
+url: /ru/java/advanced-features/
 description: Этот раздел показывает, как можно использовать теги LaTeX в PDF-документе с помощью Aspose.PDF для Java.
 lastmod: "2022-01-11"
 sitemap:

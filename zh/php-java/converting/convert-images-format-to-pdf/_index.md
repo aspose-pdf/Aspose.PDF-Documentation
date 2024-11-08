@@ -3,7 +3,7 @@ title: 将各种图像格式转换为PDF
 linktitle: 将图像转换为PDF
 type: docs
 weight: 60
-url: zh/php-java/convert-images-format-to-pdf/
+url: /zh/php-java/convert-images-format-to-pdf/
 lastmod: "2024-05-20"
 description: 本主题展示了如何使用 Aspose.PDF for PHP 库将各种图像格式转换为PDF。
 sitemap:

@@ -2,7 +2,7 @@
 title: 将PDF转换为DOC或DOCX格式的PHP代码
 type: docs
 weight: 10
-url: zh/java/convert-pdf-to-doc-or-docx-format-in-php/
+url: /zh/java/convert-pdf-to-doc-or-docx-format-in-php/
 lastmod: "2021-06-05"
 ---
 

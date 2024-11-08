@@ -3,7 +3,7 @@ title: 在 PDF 中添加页面
 linktitle: 添加页面  
 type: docs  
 weight: 10  
-url: zh/java/add-pages/  
+url: /zh/java/add-pages/  
 description: 本文介绍如何在 PDF 文件的指定位置插入（添加）页面。了解如何使用 Java 库移动、删除（删除）PDF 文件中的页面。  
 lastmod: "2021-06-05"  
 sitemap:  

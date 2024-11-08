@@ -2,7 +2,7 @@
 title: Экспортер форм
 type: docs
 weight: 50
-url: ru/net/plugins/formexpoter/
+url: /ru/net/plugins/formexpoter/
 description: Как экспортировать значения полей формы в файлы CSV с помощью плагина Aspose.PDF Form Exporter
 lastmod: "2024-01-24"
 draft: false

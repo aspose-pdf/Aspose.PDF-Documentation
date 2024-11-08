@@ -2,7 +2,7 @@
 title: 添加、删除和获取注释 - Facades
 type: docs
 weight: 10
-url: zh/cpp/add-delete-and-get-annotation-facades/
+url: /zh/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**在现有的 PDF 文件中添加注释使用 PdfContentEditor**

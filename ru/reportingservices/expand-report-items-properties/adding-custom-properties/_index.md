@@ -2,7 +2,7 @@
 title: Добавление Пользовательских Свойств
 type: docs
 weight: 10
-url: ru/reportingservices/adding-custom-properties/
+url: /ru/reportingservices/adding-custom-properties/
 lastmod: "2021-06-05"
 ---
 

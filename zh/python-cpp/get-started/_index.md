@@ -3,7 +3,7 @@ title: 开始使用
 linktitle: 开始使用
 type: docs
 weight: 30
-url: zh/python-cpp/get-started/
+url: /zh/python-cpp/get-started/
 description: 本页面概述了如何通过 C++ 使用 Aspose.PDF for Python 来创建和编辑 PDF 文档
 lastmod: "2021-06-05"   
 sitemap: 
@@ -39,6 +39,6 @@ Aspose.PDF for Python via C++ 是快速、轻量且易于使用的。
 
 ### 了解更多关于：
 
-- ["你好，世界" Python 示例](/pdf/python-cpp/hello-world-example/)
-- [复杂 PDF](/pdf/python-cpp/complex-pdf-example/)
-- [如何运行其他示例](/pdf/python-cpp/how-to-run-other-examples/)
+- ["你好，世界" Python 示例](/pdf/zh/python-cpp/hello-world-example/)
+- [复杂 PDF](/pdf/zh/python-cpp/complex-pdf-example/)
+- [如何运行其他示例](/pdf/zh/python-cpp/how-to-run-other-examples/)

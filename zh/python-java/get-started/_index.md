@@ -3,7 +3,7 @@ title: 开始使用
 linktitle: 开始使用
 type: docs
 weight: 30
-url: zh/python-java/get-started/
+url: /zh/python-java/get-started/
 description: 本页概述了如何使用 Aspose.PDF for Python via Java 创建和编辑 PDF 文档
 lastmod: "2024-06-05"
 sitemap:
@@ -41,7 +41,7 @@ Aspose.PDF for Python via Java 是快速、轻量且易于使用的。 它可以
 
 ### 了解更多关于
 
-- [DOM API 基础](/pdf/python-java/basics-of-dom-api/)
-- ["Hello, World" Java 示例](/pdf/python-java/hello-world-example/)
-- [复杂 PDF](/pdf/python-java/complex-pdf-example/)
-- [如何运行其他示例](/pdf/python-java/how-to-run-other-examples/)
+- [DOM API 基础](/pdf/zh/python-java/basics-of-dom-api/)
+- ["Hello, World" Java 示例](/pdf/zh/python-java/hello-world-example/)
+- [复杂 PDF](/pdf/zh/python-java/complex-pdf-example/)
+- [如何运行其他示例](/pdf/zh/python-java/how-to-run-other-examples/)

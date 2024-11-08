@@ -2,7 +2,7 @@
 title: Шифрование, дешифрование и установка привилегий на PDF документы
 type: docs
 weight: 10
-url: ru/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /ru/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**Установка привилегий на существующий PDF файл**

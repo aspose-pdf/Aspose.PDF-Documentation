@@ -3,7 +3,7 @@ title: Установка свойств элементов структуры
 linktitle: Установка свойств элементов структуры
 type: docs
 weight: 30
-url: ru/net/setting-structure-elements-properties/
+url: /ru/net/setting-structure-elements-properties/
 description: Вы можете устанавливать различные свойства элементов структуры в документе PDF с помощью Aspose.PDF для .NET.
 lastmod: "2022-02-17"
 sitemap:

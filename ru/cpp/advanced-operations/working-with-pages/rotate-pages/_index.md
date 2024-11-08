@@ -3,7 +3,7 @@ title: Поворот страниц PDF с использованием C++
 linktitle: Поворот страниц PDF
 type: docs
 weight: 50
-url: ru/cpp/rotate-pages/
+url: /ru/cpp/rotate-pages/
 description: В этой теме описано, как программно изменить ориентацию страниц в существующем PDF-файле с помощью C++.
 lastmod: "2021-12-08"
 sitemap:

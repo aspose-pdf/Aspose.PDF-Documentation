@@ -3,7 +3,7 @@ title: Создание ссылок в PDF файле с C++
 linktitle: Создание ссылок
 type: docs
 weight: 10
-url: ru/cpp/create-links/
+url: /ru/cpp/create-links/
 description: Этот раздел объясняет, как создавать ссылки в вашем PDF документе с помощью C++.
 lastmod: "2021-06-05"
 sitemap:

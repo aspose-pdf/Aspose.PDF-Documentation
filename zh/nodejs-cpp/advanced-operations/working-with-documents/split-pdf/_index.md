@@ -3,7 +3,7 @@ title: 使用 Node.js 拆分 PDF
 linktitle: 拆分 PDF 文件
 type: docs
 weight: 30
-url: zh/nodejs-cpp/split-pdf/
+url: /zh/nodejs-cpp/split-pdf/
 description: 本主题展示如何使用 Aspose.PDF for Node.js via C++ 将 PDF 页面拆分为单个 PDF 文件。
 lastmod: "2023-11-16"
 sitemap:

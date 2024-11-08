@@ -2,7 +2,7 @@
 title: Вставка изображения в ячейку таблицы в PDF
 type: docs
 weight: 20
-url: ru/java/insert-an-image-into-a-table-cell-in-pdf/
+url: /ru/java/insert-an-image-into-a-table-cell-in-pdf/
 lastmod: "2022-01-27"
 ---
 

@@ -2,7 +2,7 @@
 title: 管理页眉和页脚
 type: docs
 weight: 40
-url: zh/java/manage-header-and-footer/
+url: /zh/java/manage-header-and-footer/
 description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfFileStamp 类管理页眉和页脚。
 lastmod: "2021-06-05"
 draft: false

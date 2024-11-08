@@ -3,7 +3,7 @@ title: Экспорт в PDF в SharePoint
 linktitle: Экспорт в PDF
 type: docs
 weight: 10
-url: ru/sharepoint/export-to-pdf/
+url: /ru/sharepoint/export-to-pdf/
 lastmod: "2020-12-16"
 description: PDF SharePoint API может экспортировать списки, элементы списков и страницы SharePoint Wiki из библиотек SharePoint в формат PDF.
 ---

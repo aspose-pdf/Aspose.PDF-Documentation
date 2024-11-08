@@ -2,7 +2,7 @@
 title: Получить свойства страницы в Jython
 type: docs
 weight: 50
-url: ru/java/get-page-properties-in-jython/
+url: /ru/java/get-page-properties-in-jython/
 lastmod: "2021-06-05"
 ---
 

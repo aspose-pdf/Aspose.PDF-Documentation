@@ -2,7 +2,7 @@
 title: Получить количество страниц PDF в Ruby
 type: docs
 weight: 40
-url: ru/java/get-page-count-of-pdf-in-ruby/
+url: /ru/java/get-page-count-of-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

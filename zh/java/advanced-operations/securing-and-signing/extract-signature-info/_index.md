@@ -3,7 +3,7 @@ title: 提取图像和签名信息
 linktitle: 提取图像和签名信息
 type: docs
 weight: 30
-url: zh/java/extract-image-and-signature-information/
+url: /zh/java/extract-image-and-signature-information/
 description: 您可以使用 Java 中的 SignatureField 类从签名字段中提取图像并提取签名信息。
 lastmod: "2021-06-05"
 sitemap:

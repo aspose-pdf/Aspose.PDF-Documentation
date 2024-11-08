@@ -2,7 +2,7 @@
 title: Импорт данных в PDF файл - фасады
 type: docs
 weight: 10
-url: ru/java/import-data-into-a-pdf-file-facades/
+url: /ru/java/import-data-into-a-pdf-file-facades/
 description: Этот раздел объясняет, как импортировать данные из XML в PDF файл с использованием Aspose.PDF Facades с помощью класса Form.
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: 支持的文件格式
 type: docs
 weight: 20
-url: zh/reportingservices/supported-file-formats/
+url: /zh/reportingservices/supported-file-formats/
 lastmod: "2021-06-05"
 ---
 

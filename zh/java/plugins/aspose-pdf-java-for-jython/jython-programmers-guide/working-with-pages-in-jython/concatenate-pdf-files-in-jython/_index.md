@@ -2,7 +2,7 @@
 title: 合并PDF文件在Jython中
 type: docs
 weight: 10
-url: zh/java/concatenate-pdf-files-in-jython/
+url: /zh/java/concatenate-pdf-files-in-jython/
 lastmod: "2021-06-05"
 ---
 

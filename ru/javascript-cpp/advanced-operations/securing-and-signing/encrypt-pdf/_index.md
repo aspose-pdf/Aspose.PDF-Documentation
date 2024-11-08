@@ -3,7 +3,7 @@ title:  Шифрование PDF с использованием JavaScript
 linktitle: Шифрование PDF файла
 type: docs
 weight: 50
-url: ru/javascript-cpp/encrypt-pdf/
+url: /ru/javascript-cpp/encrypt-pdf/
 description: Шифрование PDF файла с помощью Aspose.PDF для JavaScript через C++.
 lastmod: "2022-12-15"
 sitemap:

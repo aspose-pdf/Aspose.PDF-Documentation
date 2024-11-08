@@ -3,7 +3,7 @@ title: 使用 JavaScript 从 PDF 提取文本
 linktitle: 从 PDF 提取文本
 type: docs
 weight: 10
-url: zh/javascript-cpp/extract-text/
+url: /zh/javascript-cpp/extract-text/
 description: 本节介绍如何使用 JavaScript 工具包从 PDF 文档中提取文本。
 lastmod: "2022-12-14"
 sitemap:

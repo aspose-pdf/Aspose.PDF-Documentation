@@ -2,7 +2,7 @@
 title: 在 PDF 中处理标题
 type: docs
 weight: 40
-url: zh/python-net/working-with-headings/
+url: /zh/python-net/working-with-headings/
 description: 使用 Python 在 PDF 文档的标题中创建编号。Aspose.PDF for Python via .NET 提供不同类型的编号样式。
 lastmod: "2023-04-17"
 sitemap:
@@ -80,7 +80,7 @@ sitemap:
 
 标题是任何文档的重要部分。作者总是试图使标题对读者更显著和有意义。如果一个文档中有多个标题，作者有多种选择来组织这些标题。其中一种最常见的组织标题的方法是使用编号样式书写标题。
 
-[Aspose.PDF for Python via .NET](/pdf/python-net/) 提供了许多预定义的编号样式。这些预定义的编号样式存储在一个枚举中，[NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/)。NumberingStyle 枚举的预定义值及其描述如下：
+[Aspose.PDF for Python via .NET](/pdf/zh/python-net/) 提供了许多预定义的编号样式。这些预定义的编号样式存储在一个枚举中，[NumberingStyle](https://reference.aspose.com/pdf/python-net/aspose.pdf/numberingstyle/)。NumberingStyle 枚举的预定义值及其描述如下：
 
 |**标题类型**|**描述**|
 | :- | :- |

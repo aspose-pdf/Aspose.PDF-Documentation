@@ -2,7 +2,7 @@
 title: Обновление размеров страницы на Python
 type: docs
 weight: 90
-url: ru/java/update-page-dimensions-in-python/
+url: /ru/java/update-page-dimensions-in-python/
 lastmod: "2021-06-05"
 ---
 

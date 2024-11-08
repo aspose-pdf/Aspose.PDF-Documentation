@@ -3,7 +3,7 @@ title: 从 PDF 文档中提取表格
 linktitle: 提取表格
 type: docs
 weight: 20
-url: zh/python-net/extract-table-from-existing-pdf-document/
+url: /zh/python-net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for Python via .NET 可以对您的 PDF 文档中包含的表格进行各种操作。
 lastmod: "2023-02-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Лицензия Aspose PDF
 linktitle: Лицензирование и ограничения
 type: docs
 weight: 90
-url: ru/net/licensing/
+url: /ru/net/licensing/
 description: Aspose. PDF для .NET приглашает своих клиентов получить Классическую лицензию и Лицензию на измерение. Также использовать ограниченную лицензию для лучшего изучения продукта.
 lastmod: "2021-06-05"
 sitemap:

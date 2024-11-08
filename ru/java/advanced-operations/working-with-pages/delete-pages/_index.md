@@ -3,7 +3,7 @@ title: Удаление страниц PDF программно
 linktitle: Удаление страниц PDF
 type: docs
 weight: 40
-url: ru/java/delete-pages/
+url: /ru/java/delete-pages/
 description: Вы можете удалить страницы из вашего PDF-файла, используя Java-библиотеку.
 lastmod: "2021-06-05"
 sitemap:

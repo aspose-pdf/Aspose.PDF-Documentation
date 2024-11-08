@@ -2,7 +2,7 @@
 title: 使用 DOM 在 Jython 中添加 HTML 字符串
 type: docs
 weight: 10
-url: zh/java/add-html-string-using-dom-in-jython/
+url: /zh/java/add-html-string-using-dom-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Импорт и экспорт аннотаций в формате XFDF 
 linktitle: Импорт и экспорт аннотаций в формате XFDF
 type: docs
 weight: 40
-url: ru/cpp/import-export-xfdf/
+url: /ru/cpp/import-export-xfdf/
 description: Вы можете импортировать и экспортировать аннотации в формате XFDF с помощью C++ и библиотеки Aspose.PDF для C++.
 lastmod: "2021-12-02"
 sitemap:

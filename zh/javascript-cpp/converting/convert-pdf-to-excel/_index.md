@@ -3,7 +3,7 @@ title: 将PDF转换为Excel使用JavaScript
 linktitle: 将PDF转换为Excel
 type: docs
 weight: 20
-url: zh/javascript-cpp/convert-pdf-to-xlsx/
+url: /zh/javascript-cpp/convert-pdf-to-xlsx/
 lastmod: "2023-11-01"
 keywords: 使用javascript将PDF转换为Excel, 将PDF转换为XLSX, 将PDF转换为CSV。
 description: Aspose.PDF for JavaScript允许您将PDF转换为XLSX和CSV格式。

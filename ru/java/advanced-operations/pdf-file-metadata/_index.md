@@ -3,7 +3,7 @@ title: Работа с метаданными PDF файла
 linktitle: Метаданные PDF файла
 type: docs
 weight: 140
-url: ru/java/pdf-file-metadata/
+url: /ru/java/pdf-file-metadata/
 description: Этот раздел объясняет, как получить информацию о PDF файле, как получить XMP метаданные из PDF файла, установить информацию о PDF файле.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 将 PDF/A 转换为 PDF
 linktitle: 将 PDF/A 转换为 PDF
 type: docs
 weight: 350
-url: zh/androidjava/convert-pdfa-to-pdf/
+url: /zh/androidjava/convert-pdfa-to-pdf/
 lastmod: "2021-06-05"
 description: 要将 PDF/A 转换为 PDF，您需要从原始文档中移除限制。Aspose.PDF for Android via Java 可以轻松简单地解决这个问题。
 sitemap:

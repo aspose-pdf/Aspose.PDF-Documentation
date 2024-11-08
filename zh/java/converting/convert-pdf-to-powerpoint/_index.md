@@ -3,7 +3,7 @@ title: 将PDF转换为Microsoft PowerPoint
 linktitle: 将PDF转换为PowerPoint
 type: docs
 weight: 30
-url: zh/java/convert-pdf-to-powerpoint/
+url: /zh/java/convert-pdf-to-powerpoint/
 lastmod: "2021-11-19"
 description: Aspose.PDF允许您使用Java将PDF转换为PowerPoint格式。可以将PDF转换为带有图像幻灯片的PPTX。
 lastmod: "2021-10-18"

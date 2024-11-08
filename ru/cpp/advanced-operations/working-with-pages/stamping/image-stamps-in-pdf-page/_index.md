@@ -3,7 +3,7 @@ title: Добавление штампов изображений в PDF про�
 linktitle: Штампы изображений в PDF файле
 type: docs
 weight: 10
-url: ru/cpp/image-stamps-in-pdf-page/
+url: /ru/cpp/image-stamps-in-pdf-page/
 description: Добавьте штамп изображения в ваш PDF-документ с использованием класса ImageStamp с библиотекой Aspose.PDF для C++.
 lastmod: "2021-12-08"
 sitemap:

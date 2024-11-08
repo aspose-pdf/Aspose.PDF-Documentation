@@ -2,7 +2,7 @@
 title: Извлечение текста из штампов
 type: docs
 weight: 60
-url: ru/java/extract-text-from-stamps/
+url: /ru/java/extract-text-from-stamps/
 ---
 
 ## Извлечение текста из аннотаций штампа

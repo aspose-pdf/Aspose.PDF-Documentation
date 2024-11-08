@@ -3,7 +3,7 @@ title: Изменение размера страницы PDF программн
 linktitle: Изменение размера страницы PDF
 type: docs
 weight: 50
-url: ru/php-java/change-page-size/
+url: /ru/php-java/change-page-size/
 description: Измените размер страницы в вашем PDF-файле с помощью PHP.
 lastmod: "2024-06-05"
 sitemap:

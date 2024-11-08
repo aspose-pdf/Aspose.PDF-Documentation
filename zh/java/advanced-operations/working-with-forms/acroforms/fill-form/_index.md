@@ -3,7 +3,7 @@ title: 填写 AcroForms
 linktitle: 填写 AcroForms
 type: docs
 weight: 20
-url: zh/java/fill-form/
+url: /zh/java/fill-form/
 description: 本节说明如何使用 Aspose.PDF for Java 在 PDF 文档中填写表单字段。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Заполнение AcroForms
 linktitle: Заполнение AcroForms
 type: docs
 weight: 20
-url: ru/php-java/fill-form/
+url: /ru/php-java/fill-form/
 description: Этот раздел объясняет, как заполнить поле формы в PDF документе с помощью Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 sitemap:

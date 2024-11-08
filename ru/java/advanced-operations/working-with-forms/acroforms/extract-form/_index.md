@@ -3,7 +3,7 @@ title: Извлечь данные AcroForms
 linktitle: Извлечь данные AcroForms
 type: docs
 weight: 30
-url: ru/java/extract-form/
+url: /ru/java/extract-form/
 description: Этот раздел объясняет, как извлечь формы из вашего PDF-документа с помощью Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Создание Сборки-Оболочки
 type: docs
 weight: 80
-url: ru/net/creating-a-wrapper-assembly/
+url: /ru/net/creating-a-wrapper-assembly/
 ---
 
 {{% alert color="primary" %}}

@@ -3,7 +3,7 @@ title: Извлечение данных AcroForm с использование�
 linktitle: Извлечение данных AcroForm
 type: docs
 weight: 30
-url: ru/cpp/extract-form/
+url: /ru/cpp/extract-form/
 description: Этот раздел объясняет, как извлечь формы из вашего PDF-документа с помощью Aspose.PDF для C++.
 lastmod: "2021-12-01"
 sitemap:

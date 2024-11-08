@@ -3,7 +3,7 @@ title: 使用 C++ 操作 XFA 表单
 linktitle: XFA 表单
 type: docs
 weight: 20
-url: zh/cpp/xfa-forms/
+url: /zh/cpp/xfa-forms/
 description: Aspose.PDF for C++ API 允许您在 PDF 文档中使用 XFA 和 XFA Acroform 字段。Aspose.PDF.Facades。
 lastmod: "2021-12-01"
 sitemap:

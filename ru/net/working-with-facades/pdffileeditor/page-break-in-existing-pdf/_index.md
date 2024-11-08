@@ -2,7 +2,7 @@
 title: Разрыв страницы в существующем PDF
 type: docs
 weight: 30
-url: ru/net/page-break-in-existing-pdf/
+url: /ru/net/page-break-in-existing-pdf/
 description: В этом разделе объясняется, как разорвать страницы в существующем PDF с использованием класса PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

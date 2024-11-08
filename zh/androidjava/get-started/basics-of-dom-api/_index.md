@@ -3,7 +3,7 @@ title: Aspose.PDF DOM API 基础
 linktitle: DOM API 基础
 type: docs
 weight: 10
-url: zh/androidjava/basics-of-dom-api/
+url: /zh/androidjava/basics-of-dom-api/
 description: Aspose.PDF for Android via Java 也使用 DOM 的概念来表示 PDF 文档的结构。这里您可以阅读对此结构的描述。
 lastmod: "2021-06-05"
 sitemap:

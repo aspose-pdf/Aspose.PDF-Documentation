@@ -3,7 +3,7 @@ title: Основные функции Aspose.PDF
 linktitle: Основные функции
 type: docs
 weight: 80
-url: ru/cpp/key-features/
+url: /ru/cpp/key-features/
 description: Aspose.PDF для C++ демонстрирует свои общие функции. Эта страница описывает поддерживаемые версии PDF и все манипуляции, которые мы можем выполнять с текстом, изображениями, аннотациями, документами и т.д.
 lastmod: "2021-11-08"
 sitemap:

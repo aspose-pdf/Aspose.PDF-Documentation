@@ -3,7 +3,7 @@ title: 使用Python编程删除PDF页面
 linktitle: 删除PDF页面
 type: docs
 weight: 80
-url: zh/python-net/delete-pages/
+url: /zh/python-net/delete-pages/
 description: 您可以使用Aspose.PDF for Python通过.NET库从PDF文件中删除页面。
 lastmod: "2023-04-17"
 sitemap:

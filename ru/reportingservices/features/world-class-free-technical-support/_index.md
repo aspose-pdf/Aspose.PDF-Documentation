@@ -2,7 +2,7 @@
 title: World Class Free Technical Support
 type: docs
 weight: 50
-url: ru/reportingservices/world-class-free-technical-support/
+url: /ru/reportingservices/world-class-free-technical-support/
 lastmod: "2021-06-05"
 ---
 

@@ -6,7 +6,7 @@ type: docs
 
 weight: 30
 
-url: zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
+url: /zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/
 
 lastmod: "2020-12-16"
 
@@ -27,13 +27,13 @@ Aspose.PDF for SharePoint建立在我们屡获殊荣的Aspose.PDF for .NET组件
 逐步地，本文将引导您完成创建XML文件并将其转换为PDF的过程：
 
 
-1. [创建一个 XML 文件](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
-2. [创建一个 PDF 模板](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
-3. [加载 XML 模板](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
-4. [指定源路径](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
-5. [指定文件属性](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
-6. [导出文件为 PDF](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
-7. [保存 PDF 文件](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
+1. [创建一个 XML 文件](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-1-create-xml-file).
+2. [创建一个 PDF 模板](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-2-create-pdf-template).
+3. [加载 XML 模板](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-3-load-xml-template).
+4. [指定源路径](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-4-specify-source-file-path).
+5. [指定文件属性](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-5-specify-file-properties).
+6. [导出文件为 PDF](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-6-export-to-pdf).
+7. [保存 PDF 文件](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/#step-7-save-pdf-document).
 
 #### **步骤 1：创建 XML 文件**
 首先根据 Aspose.PDF for .NET 文档对象模型创建一个 XML 文件。
@@ -81,7 +81,7 @@ Aspose.PDF for SharePoint建立在我们屡获殊荣的Aspose.PDF for .NET组件
 ![todo:image_alt_text](how-to-create-and-convert-an-xml-file-to-pdf_1.png)
 #### **步骤 3: 加载 XML 模板**
 
-一旦模板创建完成，加载 [XML 文件](/pdf/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
+一旦模板创建完成，加载 [XML 文件](/pdf/zh/sharepoint/how-to-create-and-convert-an-xml-file-to-pdf/):
 1. 在 PDF 模板页面，选择 **添加新项目**。
 
 

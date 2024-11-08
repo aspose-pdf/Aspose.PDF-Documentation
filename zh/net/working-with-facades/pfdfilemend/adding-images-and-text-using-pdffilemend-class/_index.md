@@ -2,7 +2,7 @@
 title: 添加图像和文本 
 type: docs
 weight: 10
-url: zh/net/adding-images-and-text-using-pdffilemend-class/
+url: /zh/net/adding-images-and-text-using-pdffilemend-class/
 description: 本节解释如何使用 PdfFileMend 类添加图像和文本。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) 类可以帮助您在现有的 PDF 文档中，在指定位置添加图像和文本。 它提供了两个方法，名称为 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 和 [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)。 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) 方法允许您添加 JPG、GIF、PNG 和 BMP 类型的图像。 [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) 方法接受一个 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 类类型的参数，并将其添加到现有的 PDF 文件中。图像和文本可以添加到由左下角和右上角点的坐标指定的矩形区域中。在添加图像时，您可以指定图像文件路径或图像文件的流。为了指定需要添加图像或文本的页码，这两种方法都提供了页码参数。因此，您不仅可以在指定位置添加图像和文本，还可以在指定页面上添加。
 
-图像是 PDF 文档内容的重要组成部分。 操控现有 PDF 文件中的图像是处理 PDF 文件的常见需求。在本文中，我们将探讨如何借助 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在现有 PDF 文件中操控图像。[Aspose.PDF for .NET](/pdf/net/) 的所有与图像相关的操作都已在本文中整合。
+图像是 PDF 文档内容的重要组成部分。 操控现有 PDF 文件中的图像是处理 PDF 文件的常见需求。在本文中，我们将探讨如何借助 [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在现有 PDF 文件中操控图像。[Aspose.PDF for .NET](/pdf/zh/net/) 的所有与图像相关的操作都已在本文中整合。
 
 ## 实施细节
 
@@ -42,7 +42,7 @@ public static void AddImage01()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/zh/net/images/add_image1.png)
 
 借助于 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)，我们可以将一个图像叠加在另一个图像上：
 ```csharp
@@ -66,7 +66,7 @@ public static void AddImage02()
         }
 ```
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/zh/net/images/add_image2.png)
 
 有几种方法可以将图像存储在PDF文件中。我们将在下面的示例中演示其中一种方法：
 
@@ -132,7 +132,7 @@ public static void AddText01()
 
 检查它的外观：
 
-![添加文本](/pdf/net/images/add_text.png)
+![添加文本](/pdf/zh/net/images/add_text.png)
 
 添加 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 的第二种方式。此外，我们指明一个矩形以适应我们的文本。
 

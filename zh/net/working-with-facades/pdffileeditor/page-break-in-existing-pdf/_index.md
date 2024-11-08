@@ -2,7 +2,7 @@
 title: 在现有 PDF 中分页
 type: docs
 weight: 30
-url: zh/net/page-break-in-existing-pdf/
+url: /zh/net/page-break-in-existing-pdf/
 description: 本节解释如何使用 PdfFileEditor 类在现有 PDF 中分页。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: 使用 Python 添加和删除书签
 linktitle: 添加和删除书签
 type: docs
 weight: 10
-url: zh/python-net/add-and-delete-bookmark/
+url: /zh/python-net/add-and-delete-bookmark/
 description: 你可以使用 Python 向 PDF 文档添加书签。可以从 PDF 文档中删除所有或特定书签。
 lastmod: "2023-02-17"
 sitemap:

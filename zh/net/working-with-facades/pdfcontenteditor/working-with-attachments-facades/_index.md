@@ -2,7 +2,7 @@
 title: 附件操作 - Facades
 type: docs
 weight: 50
-url: zh/net/working-with-attachments-facades/
+url: /zh/net/working-with-attachments-facades/
 description: 本节解释如何使用 PdfContentEditor 类处理附件 - Facades。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: Установка размера PDF с использованием Pyt
 linktitle: Установка размера PDF
 type: docs
 weight: 30
-url: ru/python-cpp/get-and-set-page-properties/
+url: /ru/python-cpp/get-and-set-page-properties/
 description: Этот раздел показывает, как получить или установить свойства страницы PDF, такие как размер документа, с использованием Python через C++.
 lastmod: "2024-04-17"
 sitemap:

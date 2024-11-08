@@ -2,7 +2,7 @@
 title: 在 Python 中获取 PDF 文件信息
 type: docs
 weight: 40
-url: zh/python-java/get-pdf-file-information-in-python/
+url: /zh/python-java/get-pdf-file-information-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 获取 PDF 文档的文件信息，只需调用 **GetPdfFileInfo** 类。

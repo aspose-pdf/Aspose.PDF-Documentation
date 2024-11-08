@@ -3,7 +3,7 @@ title: 支持的文件格式
 linktitle: 支持的文件格式
 type: docs
 weight: 70
-url: zh/java/supported-file-formats/
+url: /zh/java/supported-file-formats/
 description: 本页显示了 Aspose.PDF for Java 可以加载和保存的文件格式。
 lastmod: "2021-06-05"
 sitemap:

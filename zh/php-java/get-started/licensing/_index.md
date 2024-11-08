@@ -3,7 +3,7 @@ title: 授权和限制
 linktitle: 授权和限制
 type: docs
 weight: 90
-url: zh/php-java/licensing/
+url: /zh/php-java/licensing/
 description: Aspose.PDF for PHP via Java 邀请客户获取经典许可证和计量许可证。也可以使用有限许可证更好地探索产品。
 lastmod: "2024-06-05"
 sitemap:

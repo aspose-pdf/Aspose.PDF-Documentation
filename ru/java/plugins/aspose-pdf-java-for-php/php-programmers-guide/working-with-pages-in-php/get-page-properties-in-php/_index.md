@@ -2,7 +2,7 @@
 title: Получение Свойств Страницы в PHP
 type: docs
 weight: 50
-url: ru/java/get-page-properties-in-php/
+url: /ru/java/get-page-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -2,7 +2,7 @@
 title: 在 PDF 中处理标题
 type: docs
 weight: 70
-url: zh/java/working-with-headings/
+url: /zh/java/working-with-headings/
 lastmod: "2021-06-05"
 description: 使用 Java 在 PDF 文档中创建标题编号。Aspose.PDF for Java 提供不同种类的编号样式。
 sitemap:

@@ -3,7 +3,7 @@ title: Добавление водяного знака в PDF
 linktitle: Добавление водяного знака
 type: docs
 weight: 90
-url: ru/java/add-watermarks/
+url: /ru/java/add-watermarks/
 description: Эта статья объясняет функции работы с артефактами и получения водяных знаков в PDF программно с использованием Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с портфолио в PDF с использованием
 linktitle: Portfolio
 type: docs
 weight: 20
-url: ru/python-net/portfolio/
+url: /ru/python-net/portfolio/
 description: Как создать PDF-портфолио с помощью Python. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF-портфолио.
 lastmod: "2023-02-17"
 sitemap:

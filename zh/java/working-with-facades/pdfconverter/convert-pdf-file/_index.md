@@ -2,7 +2,7 @@
 title: 转换PDF文件
 type: docs
 weight: 20
-url: zh/java/convert-pdf-file/
+url: /zh/java/convert-pdf-file/
 description: 本节解释如何使用PdfConverter类通过Aspose.PDF Facades转换PDF文件。
 lastmod: "2021-06-05"
 draft: false

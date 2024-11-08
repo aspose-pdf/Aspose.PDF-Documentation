@@ -2,7 +2,7 @@
 title: 获取和设置页面属性
 type: docs
 weight: 20
-url: zh/cpp/get-and-set-page-properties/
+url: /zh/cpp/get-and-set-page-properties/
 description: 您可以使用C++库从PDF文件中获取和设置页面属性。
 lastmod: "2021-12-09"
 sitemap:

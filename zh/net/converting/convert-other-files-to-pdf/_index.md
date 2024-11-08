@@ -3,7 +3,7 @@ title: 将其他文件格式转换为PDF
 linktitle: 将其他文件格式转换为PDF
 type: docs
 weight: 80
-url: zh/net/convert-other-files-to-pdf/
+url: /zh/net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"
 description: 本主题展示如何使用Aspose.PDF将其他文件格式如EPUB、MD、PCL、XPS、PS、XML和LaTeX转换为PDF文档。
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 本文解释了如何**使用C#将各种其他类型的文件格式转换为PDF**。它涵盖以下主题。
 
-以下代码片段也可以与[Aspose.PDF.Drawing](/pdf/net/drawing/)库一起使用。
+以下代码片段也可以与[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库一起使用。
 
 _格式_: **EPUB**
 - [C# EPUB转PDF](#csharp-convert-epub-to-pdf)

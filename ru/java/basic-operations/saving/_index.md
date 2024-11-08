@@ -3,7 +3,7 @@ title: Сохранить PDF документ
 linktitle: Сохранить
 type: docs
 weight: 30
-url: ru/java/save-pdf-document/
+url: /ru/java/save-pdf-document/
 description: Узнайте, как сохранить PDF файл с библиотекой Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Работа с Действиями
 linktitle: Действия
 type: docs
 weight: 20
-url: ru/java/actions/
+url: /ru/java/actions/
 description: Этот раздел объясняет, как программно добавлять действия в документ и поля формы с помощью Java. Узнайте, как добавить, создать и получить гиперссылку в PDF-файле.
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Добавление текстового и изображенного штампа  
 type: docs  
 weight: 20  
-url: ru/net/add-text-and-image-stamp/  
+url: /ru/net/add-text-and-image-stamp/  
 description: Этот раздел объясняет, как добавить текстовый и изображенный штамп с помощью Aspose.PDF Facades, используя класс PdfFileStamp.  
 lastmod: "2021-06-05"  
 draft: false  

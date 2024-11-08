@@ -3,7 +3,7 @@ title: 使用 PHP 裁剪 PDF 页面
 linktitle: 裁剪页面
 type: docs
 weight: 80
-url: zh/php-java/crop-pages/
+url: /zh/php-java/crop-pages/
 description: 您可以使用 Aspose.PDF for PHP via Java 获取页面属性，例如宽度、高度、出血框、裁剪框和修整框。
 lastmod: "2024-06-05"
 sitemap:

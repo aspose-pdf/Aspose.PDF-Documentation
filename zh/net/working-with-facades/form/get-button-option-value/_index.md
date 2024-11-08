@@ -2,7 +2,7 @@
 title: 获取按钮选项值
 type: docs
 weight: 40
-url: zh/net/get-button-option-value/
+url: /zh/net/get-button-option-value/
 description: 本节介绍如何使用 Form 类通过 Aspose.PDF Facades 获取按钮选项值。
 lastmod: "2021-06-05"
 draft: false

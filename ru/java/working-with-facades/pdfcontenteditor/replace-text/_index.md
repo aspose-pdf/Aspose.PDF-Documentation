@@ -2,7 +2,7 @@
 title: Замена текста в PDF файле
 type: docs
 weight: 40
-url: ru/java/replace-text/
+url: /ru/java/replace-text/
 description: Этот раздел объясняет, как заменить текст с помощью Aspose.PDF Facades - набора инструментов для популярных операций с PDF.
 lastmod: "2021-06-24"
 sitemap:

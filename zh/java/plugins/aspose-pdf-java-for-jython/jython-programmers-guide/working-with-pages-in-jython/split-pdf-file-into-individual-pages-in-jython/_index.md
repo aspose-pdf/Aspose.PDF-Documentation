@@ -2,7 +2,7 @@
 title: 将PDF文件拆分为单独的页面在Jython中
 type: docs
 weight: 80
-url: zh/java/split-pdf-file-into-individual-pages-in-jython/
+url: /zh/java/split-pdf-file-into-individual-pages-in-jython/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Aspose.PDF 的关键特性
 linktitle: 关键特性
 type: docs
 weight: 80
-url: zh/cpp/key-features/
+url: /zh/cpp/key-features/
 description: Aspose.PDF for C++ 展示其一般特性。本页描述支持的 PDF 版本，以及我们可以对文本、图像、注释、文档等进行的所有操作。
 lastmod: "2021-11-08"
 sitemap:

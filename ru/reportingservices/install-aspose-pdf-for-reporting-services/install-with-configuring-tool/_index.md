@@ -2,7 +2,7 @@
 title: Установка с помощью инструмента настройки
 type: docs
 weight: 30
-url: ru/reportingservices/install-with-configuring-tool/
+url: /ru/reportingservices/install-with-configuring-tool/
 lastmod: "2021-06-05"
 ---
 

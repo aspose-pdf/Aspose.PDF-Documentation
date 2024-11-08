@@ -2,7 +2,7 @@
 title: 快速提示
 type: docs
 weight: 50
-url: zh/java/quick-tips/
+url: /zh/java/quick-tips/
 lastmod: "2022-01-27"
 ---
 

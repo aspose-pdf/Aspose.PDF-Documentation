@@ -3,7 +3,7 @@ title:  Шифрование PDF в Node.js
 linktitle: Шифрование файла PDF
 type: docs
 weight: 50
-url: ru/nodejs-cpp/encrypt-pdf/
+url: /ru/nodejs-cpp/encrypt-pdf/
 description: Шифрование файла PDF с использованием Aspose.PDF для Node.js через C++.
 lastmod: "2023-11-16"
 sitemap:

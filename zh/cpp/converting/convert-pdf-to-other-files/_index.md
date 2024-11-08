@@ -3,7 +3,7 @@ title: 将PDF文件转换为其他格式
 linktitle: 将PDF转换为其他格式
 type: docs
 weight: 90
-url: zh/cpp/convert-pdf-to-other-files/
+url: /zh/cpp/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: 本主题向您展示如何使用Aspose.PDF将PDF文件转换为其他文件格式。
 sitemap:

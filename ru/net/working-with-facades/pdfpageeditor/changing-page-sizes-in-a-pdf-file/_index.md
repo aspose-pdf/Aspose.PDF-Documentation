@@ -2,7 +2,7 @@
 title: Изменение размеров страниц в PDF файле
 type: docs
 weight: 30
-url: ru/net/changing-page-sizes-in-a-pdf-file/
+url: /ru/net/changing-page-sizes-in-a-pdf-file/
 description: Попробуйте узнать, как изменить размеры страниц в PDF файле, используя класс PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

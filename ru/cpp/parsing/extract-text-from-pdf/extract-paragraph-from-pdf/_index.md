@@ -4,7 +4,7 @@ title: Извлечение параграфа из PDF
 linktitle: Извлечение параграфа из PDF
 type: docs
 weight: 20
-url: ru/cpp/extract-paragraph-from-pdf/
+url: /ru/cpp/extract-paragraph-from-pdf/
 description: В этой статье описывается, как использовать ParagraphAbsorber - специальный инструмент в Aspose.PDF для извлечения текста из PDF-документов.
 lastmod: "2021-12-13"
 sitemap:

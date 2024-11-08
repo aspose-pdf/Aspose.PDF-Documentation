@@ -3,7 +3,7 @@ title: 使用 Python 在 PDF 中处理图像
 linktitle: 处理图像
 type: docs
 weight: 40
-url: zh/python-net/working-with-images/
+url: /zh/python-net/working-with-images/
 description: 本节介绍使用 Python 库在 PDF 文件中处理图像的功能。
 lastmod: "2023-04-17"
 sitemap:
@@ -83,6 +83,6 @@ sitemap:
 
 您可以执行以下操作：
 
-- [添加图像到现有PDF文件](/pdf/python-net/add-image-to-existing-pdf-file/) - 在PDF文档中添加单个图像和引用，然后控制质量。
-- [从PDF文件中删除图像](/pdf/python-net/delete-images-from-pdf-file/) - 查看删除PDF文件中图像的代码片段。
-- [从PDF文件中提取图像](/pdf/python-net/extract-images-from-pdf-file/) - 下一篇文章展示如何使用Python库从PDF文件中提取图像。
+- [添加图像到现有PDF文件](/pdf/zh/python-net/add-image-to-existing-pdf-file/) - 在PDF文档中添加单个图像和引用，然后控制质量。
+- [从PDF文件中删除图像](/pdf/zh/python-net/delete-images-from-pdf-file/) - 查看删除PDF文件中图像的代码片段。
+- [从PDF文件中提取图像](/pdf/zh/python-net/extract-images-from-pdf-file/) - 下一篇文章展示如何使用Python库从PDF文件中提取图像。

@@ -3,7 +3,7 @@ title: Основы Aspose.PDF DOM API
 linktitle: Основы DOM API
 type: docs
 weight: 10
-url: ru/androidjava/basics-of-dom-api/
+url: /ru/androidjava/basics-of-dom-api/
 description: Aspose.PDF для Android через Java также использует идею DOM для представления структуры PDF-документа в терминах объектов. Здесь вы можете прочитать описание этой структуры.
 lastmod: "2021-06-05"
 sitemap:

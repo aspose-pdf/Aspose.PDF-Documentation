@@ -3,7 +3,7 @@ title: 有什么新功能
 linktitle: 有什么新功能
 type: docs
 weight: 10
-url: zh/java/whatsnew/
+url: /zh/java/whatsnew/
 description: 本页面介绍了Aspose.PDF for Java最近发布版本中引入的最受欢迎的新功能。
 sitemap:
     changefreq: "monthly"

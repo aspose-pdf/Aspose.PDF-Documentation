@@ -2,7 +2,7 @@
 title: 在 Jython 中设置 PDF 过期
 type: docs
 weight: 60
-url: zh/java/set-pdf-expiration-in-jython/
+url: /zh/java/set-pdf-expiration-in-jython/
 lastmod: "2021-06-05"
 ---
 

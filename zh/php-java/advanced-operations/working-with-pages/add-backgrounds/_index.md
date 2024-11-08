@@ -3,7 +3,7 @@ title: 为 PDF 添加背景
 linktitle: 添加背景
 type: docs
 weight: 110
-url: zh/php-java/add-backgrounds/
+url: /zh/php-java/add-backgrounds/
 descriptions: 使用 PHP 为您的 PDF 文件添加背景图像。使用 BackgroundArtifact 对象。
 lastmod: "2024-06-05"
 sitemap:

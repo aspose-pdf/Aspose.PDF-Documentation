@@ -2,7 +2,7 @@
 title: 向现有PDF文件添加注释
 type: docs
 weight: 80
-url: zh/net/adding-annotations-to-existing-pdf-file/
+url: /zh/net/adding-annotations-to-existing-pdf-file/
 description: 本节解释如何使用Aspose.PDF Facades向现有PDF文件添加注释。
 lastmod: "2021-06-30"
 sitemap:

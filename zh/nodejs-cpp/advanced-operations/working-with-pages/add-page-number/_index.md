@@ -3,7 +3,7 @@ title: 在 Node.js 中为 PDF 添加页码
 linktitle: 添加页码
 type: docs
 weight: 100
-url: zh/nodejs-cpp/add-page-number/
+url: /zh/nodejs-cpp/add-page-number/
 description: Aspose.PDF for Node.js via C++ 允许您使用 AsposePdfAddPageNum 向 PDF 文件添加页码印记。
 lastmod: "2023-11-16"
 sitemap:

@@ -2,7 +2,7 @@
 title: 制作 PDF 小册子
 type: docs
 weight: 80
-url: zh/net/make-booklet-of-pdf/
+url: /zh/net/make-booklet-of-pdf/
 description: 本节说明如何使用 Aspose.PDF Facades 通过 PdfFileEditor 类制作 PDF 小册子。
 lastmod: "2021-06-05"
 draft: false

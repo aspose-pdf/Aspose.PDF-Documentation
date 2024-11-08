@@ -2,7 +2,7 @@
 title: 如何为 Aspose.PDF 设置区域设置
 type: docs
 weight: 30
-url: zh/java/how-to-set-locale-for-aspose-pdf/
+url: /zh/java/how-to-set-locale-for-aspose-pdf/
 lastmod: "2022-01-27"
 ---
 

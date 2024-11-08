@@ -3,7 +3,7 @@ title: Aspose.PDF.Drawing for .NET 概述
 linktitle: PDF.Drawing 版本
 type: docs
 weight: 130
-url: zh/net/drawing/
+url: /zh/net/drawing/
 lastmod: "2023-12-21"
 description: Aspose.PDF.Drawing for .NET 库的主要特性和优势概述。
 sitemap:
@@ -67,7 +67,7 @@ Aspose.PDF.Drawing for .NET 支持多种功能，例如：
 
 ## Licensing
 
-Aspose.PDF.Drawing 没有额外的许可证，使用与 Aspose.PDF 相同的许可证。请查看 [Aspose PDF License](/pdf/net/licensing/) 部分。
+Aspose.PDF.Drawing 没有额外的许可证，使用与 Aspose.PDF 相同的许可证。请查看 [Aspose PDF License](/pdf/zh/net/licensing/) 部分。
 
 ## Installation
 
@@ -80,7 +80,7 @@ Aspose.PDF.Drawing 没有额外的许可证，使用与 Aspose.PDF 相同的许�
 
 了解更多关于：
 
-- [支持的文件格式](/pdf/net/supported-file-formats/)
-- [系统要求](/pdf/net/system-requirements/)
-- [许可](/pdf/net/licensing/)
-- [技术支持](/pdf/net/technical-support/)
+- [支持的文件格式](/pdf/zh/net/supported-file-formats/)
+- [系统要求](/pdf/zh/net/system-requirements/)
+- [许可](/pdf/zh/net/licensing/)
+- [技术支持](/pdf/zh/net/technical-support/)

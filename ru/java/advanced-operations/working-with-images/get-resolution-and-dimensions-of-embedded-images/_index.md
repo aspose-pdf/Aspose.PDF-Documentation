@@ -3,7 +3,7 @@ title: Получение разрешения и размеров встрое�
 linktitle: Получение разрешения и размеров
 type: docs
 weight: 40
-url: ru/java/get-resolution-and-dimensions-of-embedded-images/
+url: /ru/java/get-resolution-and-dimensions-of-embedded-images/
 description: Этот раздел показывает детали получения разрешения и размеров встроенных изображений
 lastmod: "2021-06-05"
 ---

@@ -4,7 +4,7 @@ linktitle: Создание Тегированного PDF
 type: docs
 weight: 10
 lastmod: "2021-06-05"
-url: ru/java/create-tagged-pdf-documents/
+url: /ru/java/create-tagged-pdf-documents/
 description: В этой статье объясняется, как программно создать элементы структуры для тегированного PDF-документа, используя Aspose.PDF для Java.
 sitemap:
     changefreq: "weekly"

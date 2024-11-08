@@ -3,7 +3,7 @@ title: 使用编程方式更改 PDF 页面大小
 linktitle: 更改 PDF 页面大小
 type: docs
 weight: 50
-url: zh/php-java/change-page-size/
+url: /zh/php-java/change-page-size/
 description: 使用 PHP 更改 PDF 文件的页面大小。
 lastmod: "2024-06-05"
 sitemap:

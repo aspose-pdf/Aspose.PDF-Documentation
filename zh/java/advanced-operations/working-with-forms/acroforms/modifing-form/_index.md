@@ -3,7 +3,7 @@ title: 修改 AcroForms
 linktitle: 修改 AcroForms
 type: docs
 weight: 40
-url: zh/java/modifing-form/
+url: /zh/java/modifing-form/
 description: 本节解释如何使用 Aspose.PDF for Java 修改 PDF 文档中的表单。
 lastmod: "2021-06-05"
 sitemap:

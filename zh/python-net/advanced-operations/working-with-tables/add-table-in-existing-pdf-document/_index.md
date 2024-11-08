@@ -3,7 +3,7 @@ title: 在 PDF 中创建或添加表格使用 Python
 linktitle: 创建或添加表格
 type: docs
 weight: 10
-url: zh/python-net/add-table-in-existing-pdf-document/
+url: /zh/python-net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for Python via .NET 是一个用于创建、读取和编辑 PDF 表格的库。在此主题中查看其他高级功能。
 lastmod: "2023-02-17"
 sitemap:

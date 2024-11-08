@@ -2,7 +2,7 @@
 title: OneClick PDF Document Generator
 type: docs
 weight: 10
-url: ru/net/oneclick-pdf-document-generator/
+url: /ru/net/oneclick-pdf-document-generator/
 description: Узнайте, как использовать Aspose.PDF OneClick PDF Document Generator
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Заполнение AcroForm
 linktitle: Заполнение AcroForm
 type: docs
 weight: 20
-url: ru/cpp/fill-form/
+url: /ru/cpp/fill-form/
 description: Этот раздел объясняет, как заполнить поле формы в PDF документе с помощью Aspose.PDF для C++.
 lastmod: "2021-12-01"
 sitemap:

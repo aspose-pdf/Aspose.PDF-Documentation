@@ -2,7 +2,7 @@
 title: 移动和移除表单字段
 type: docs
 weight: 50
-url: zh/net/move-remove-form-field/
+url: /zh/net/move-remove-form-field/
 description: 本节说明如何使用FormEditor类移动和移除表单字段。
 lastmod: "2021-06-05"
 draft: false

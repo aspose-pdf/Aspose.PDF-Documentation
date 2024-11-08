@@ -2,7 +2,7 @@
 title: Aspose.PDF Java for Python
 type: docs
 weight: 40
-url: zh/java/aspose-pdf-java-for-python/
+url: /zh/java/aspose-pdf-java-for-python/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

@@ -2,7 +2,7 @@
 title: 设置 Ruby 中的文档窗口和页面显示属性
 type: docs
 weight: 100
-url: zh/java/set-document-window-and-page-display-properties-in-ruby/
+url: /zh/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 从现有 PDF 中移除表格
 linktitle: 移除表格
 type: docs
 weight: 50
-url: zh/cpp/remove-tables-from-existing-pdf/
+url: /zh/cpp/remove-tables-from-existing-pdf/
 description: 本节介绍如何从 PDF 文档中移除表格。
 lastmod: "2021-11-11"
 sitemap:

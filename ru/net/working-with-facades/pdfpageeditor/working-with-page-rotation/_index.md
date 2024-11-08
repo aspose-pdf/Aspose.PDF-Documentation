@@ -2,7 +2,7 @@
 title: Работа с Поворотом Страницы
 type: docs
 weight: 10
-url: ru/net/working-with-page-rotation/
+url: /ru/net/working-with-page-rotation/
 description: Этот раздел объясняет, как работать с поворотом страниц, используя класс PdfPageEditor.
 lastmod: "2021-07-07"
 draft: false

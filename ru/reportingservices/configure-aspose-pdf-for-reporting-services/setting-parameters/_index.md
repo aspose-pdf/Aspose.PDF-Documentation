@@ -2,7 +2,7 @@
 title: Установка Параметров
 type: docs
 weight: 10
-url: ru/reportingservices/setting-parameters/
+url: /ru/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

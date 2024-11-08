@@ -3,7 +3,7 @@ title: Добавить номер страницы в PDF
 linktitle: Добавить номер страницы
 type: docs
 weight: 100
-url: ru/php-java/add-page-number/
+url: /ru/php-java/add-page-number/
 description: Aspose.PDF для PHP через Java позволяет добавить штамп номера страницы в ваш PDF файл, используя класс PageNumber Stamp.
 lastmod: "2024-06-05"
 sitemap:

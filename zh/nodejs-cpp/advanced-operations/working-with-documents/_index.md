@@ -3,7 +3,7 @@ title: 在 Node.js 中处理 PDF 文档
 linktitle: 处理文档
 type: docs
 weight: 10
-url: zh/nodejs-cpp/working-with-documents/
+url: /zh/nodejs-cpp/working-with-documents/
 description: 本文向您描述如何使用 Aspose.PDF for Node.js via C++ 工具包对 PDF 文档进行操作。
 lastmod: "2023-11-16"
 sitemap:
@@ -21,7 +21,7 @@ PDF 是一种开放标准，目前由国际标准化组织 (ISO) 维护。
 
 You are able to do the following:
 
-- [优化 PDF](/pdf/nodejs-cpp/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [优化 PDF 资源](/pdf/nodejs-cpp/optimize-pdf-resources/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
-- [合并 PDF](/pdf/nodejs-cpp/merge-pdf/) - 使用 Node.js 将多个 PDF 文件合并为一个 PDF 文档。
-- [拆分 PDF](/pdf/nodejs-cpp/split-pdf/) - 通过 C++ 在 Node.js 中将 PDF 页面拆分为单个 PDF 文件。
+- [优化 PDF](/pdf/zh/nodejs-cpp/optimize-pdf/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
+- [优化 PDF 资源](/pdf/zh/nodejs-cpp/optimize-pdf-resources/) - 优化页面内容，优化文件大小，移除未使用的对象，压缩所有图像以成功优化文档。
+- [合并 PDF](/pdf/zh/nodejs-cpp/merge-pdf/) - 使用 Node.js 将多个 PDF 文件合并为一个 PDF 文档。
+- [拆分 PDF](/pdf/zh/nodejs-cpp/split-pdf/) - 通过 C++ 在 Node.js 中将 PDF 页面拆分为单个 PDF 文件。

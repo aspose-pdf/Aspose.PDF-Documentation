@@ -2,7 +2,7 @@
 title: 处理列表项
 type: docs
 weight: 30
-url: zh/net/working-with-list-item/
+url: /zh/net/working-with-list-item/
 description: 本节介绍如何使用 FormEditor 类通过 Aspose.PDF Facades 处理列表项。
 lastmod: "2021-06-05"
 draft: false

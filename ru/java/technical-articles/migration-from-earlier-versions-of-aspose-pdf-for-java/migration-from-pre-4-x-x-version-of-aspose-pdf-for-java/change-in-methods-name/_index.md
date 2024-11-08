@@ -2,7 +2,7 @@
 title: Изменение названий методов
 type: docs
 weight: 10
-url: ru/java/change-in-methods-name/
+url: /ru/java/change-in-methods-name/
 lastmod: "2022-01-27"
 ---
 

@@ -2,7 +2,7 @@
 title: 添加多行水印
 type: docs
 weight: 10
-url: zh/net/adding-multi-line-watermark-to-existing-pdf/
+url: /zh/net/adding-multi-line-watermark-to-existing-pdf/
 description: 本节说明如何使用FormattedText类向现有PDF添加多行水印。
 lastmod: "2021-06-05"
 draft: false

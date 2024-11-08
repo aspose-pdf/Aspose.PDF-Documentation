@@ -3,7 +3,7 @@ title: 在 PDF 中使用操作
 linktitle: 操作
 type: docs
 weight: 20
-url: zh/cpp/actions/
+url: /zh/cpp/actions/
 description: 本节解释如何使用 C++ 以编程方式向文档和表单字段添加操作。
 lastmod: "2022-01-25"
 sitemap:

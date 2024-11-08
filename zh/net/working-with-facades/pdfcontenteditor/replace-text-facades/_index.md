@@ -2,7 +2,7 @@
 title: 替换文本 - Facades
 type: docs
 weight: 40
-url: zh/net/replace-text-facades/
+url: /zh/net/replace-text-facades/
 description: 本节解释如何使用PdfContentEditor类处理文本 - Facades。
 lastmod: "2021-06-24"
 draft: false

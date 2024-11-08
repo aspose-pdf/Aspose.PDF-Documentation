@@ -3,7 +3,7 @@ title: 使用 JavaScript 拆分 PDF
 linktitle: 拆分 PDF 文件
 type: docs
 weight: 30
-url: zh/javascript-cpp/split-pdf/
+url: /zh/javascript-cpp/split-pdf/
 description: 本主题展示如何使用 Aspose.PDF for JavaScript via C++ 将 PDF 页面拆分为单独的 PDF 文件。
 lastmod: "2022-12-15"
 sitemap:

@@ -2,7 +2,7 @@
 title: Расшифровать PDF файл
 type: docs
 weight: 20
-url: ru/java/decrypt-pdf-file/
+url: /ru/java/decrypt-pdf-file/
 description: Эта тема объясняет, как расшифровать PDF файл с использованием класса PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

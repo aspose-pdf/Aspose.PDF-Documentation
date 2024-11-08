@@ -2,7 +2,7 @@
 title: Работа с подписью в PDF файле
 type: docs
 weight: 40
-url: ru/net/working-with-signature-in-a-pdf-file/
+url: /ru/net/working-with-signature-in-a-pdf-file/
 description: Этот раздел объясняет, как извлечь информацию о подписи, извлечь изображение из подписи, изменить язык и т.д. с использованием класса PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false

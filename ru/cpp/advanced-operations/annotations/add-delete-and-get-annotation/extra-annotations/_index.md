@@ -3,7 +3,7 @@ title: Дополнительные аннотации с использован
 linktitle: Дополнительные аннотации
 type: docs
 weight: 60
-url: ru/cpp/extra-annotations/
+url: /ru/cpp/extra-annotations/
 description: Этот раздел описывает, как добавлять, получать и удалять различные виды аннотаций из вашего PDF-документа.
 lastmod: "2021-11-24"
 sitemap:

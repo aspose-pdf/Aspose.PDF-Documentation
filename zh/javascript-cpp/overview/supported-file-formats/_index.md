@@ -3,7 +3,7 @@ title: 支持的文件格式
 linktitle: 支持的文件格式
 type: docs
 weight: 10
-url: zh/javascript-cpp/supported-file-formats/
+url: /zh/javascript-cpp/supported-file-formats/
 description: 本页显示了Aspose.PDF for JavaScript可以加载和保存的文件格式。
 lastmod: "2021-06-05"
 sitemap:

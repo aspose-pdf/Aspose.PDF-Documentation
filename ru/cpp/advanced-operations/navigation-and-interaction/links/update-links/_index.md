@@ -3,7 +3,7 @@ title: Обновить ссылки в PDF
 linktitle: Обновить ссылки
 type: docs
 weight: 20
-url: ru/cpp/update-links/
+url: /ru/cpp/update-links/
 description: Обновление ссылок в PDF программным путем с помощью Aspose.PDF для C++. Это руководство о том, как обновить ссылки в PDF файле.
 lastmod: "2022-01-31"
 sitemap:

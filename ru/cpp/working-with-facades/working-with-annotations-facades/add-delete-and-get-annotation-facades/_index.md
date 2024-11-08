@@ -2,7 +2,7 @@
 title: Добавление, Удаление и Получение Аннотаций - Фасады
 type: docs
 weight: 10
-url: ru/cpp/add-delete-and-get-annotation-facades/
+url: /ru/cpp/add-delete-and-get-annotation-facades/
 ---
 
 ## <ins>**Добавление аннотации в существующий PDF файл с использованием PdfContentEditor**

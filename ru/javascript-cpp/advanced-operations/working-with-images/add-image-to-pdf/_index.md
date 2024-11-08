@@ -3,7 +3,7 @@ title: Добавить изображение в PDF с использован�
 linktitle: Добавить изображение
 type: docs
 weight: 10
-url: ru/javascript-cpp/add-image-to-pdf/
+url: /ru/javascript-cpp/add-image-to-pdf/
 description: Этот раздел описывает, как добавить изображение в существующий PDF файл с помощью Aspose.PDF для JavaScript через C++.
 lastmod: "2023-12-15"
 ---

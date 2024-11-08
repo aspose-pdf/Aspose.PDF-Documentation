@@ -3,7 +3,7 @@ title: 在PDF中以编程方式添加文本水印
 linktitle: PDF文件中的文本水印
 type: docs
 weight: 20
-url: zh/php-java/text-stamps-in-the-pdf-file/
+url: /zh/php-java/text-stamps-in-the-pdf-file/
 description: 使用TextStamp类通过PHP向PDF文件添加文本水印。
 lastmod: "2024-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Добавить Оглавление в Существующий PDF на PHP
 type: docs
 weight: 20
-url: ru/java/add-toc-to-existing-pdf-in-php/
+url: /ru/java/add-toc-to-existing-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

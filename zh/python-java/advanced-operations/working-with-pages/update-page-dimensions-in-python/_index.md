@@ -2,7 +2,7 @@
 title: 在 Python 中更新页面尺寸
 type: docs
 weight: 90
-url: zh/python-java/update-page-dimensions-in-python/
+url: /zh/python-java/update-page-dimensions-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 更新页面尺寸，只需调用 **UpdatePageDimensions** 类。

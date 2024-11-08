@@ -3,7 +3,7 @@ title: Добавить цифровую подпись в PDF в Node.js
 linktitle: Цифровая подпись PDF
 type: docs
 weight: 70
-url: ru/nodejs-cpp/sign-pdf/
+url: /ru/nodejs-cpp/sign-pdf/
 description: Подпись PDF документов в среде Node.js.
 lastmod: "2023-11-16"
 sitemap:

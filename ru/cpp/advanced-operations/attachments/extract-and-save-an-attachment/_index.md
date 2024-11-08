@@ -3,7 +3,7 @@ title: Извлечение и сохранение вложения
 linktitle: Извлечение и сохранение вложения
 type: docs
 weight: 20
-url: ru/cpp/extract-and-save-an-attachment/
+url: /ru/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF для C++ позволяет получить все вложения из PDF-документа. Также можно получить отдельное вложение из вашего документа.
 lastmod: "2022-02-07"
 sitemap:

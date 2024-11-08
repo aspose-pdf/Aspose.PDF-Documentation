@@ -3,7 +3,7 @@ title: FAQ
 linktitle: FAQ
 type: docs
 weight: 120
-url: ru/java/faq/
+url: /ru/java/faq/
 description: Пожалуйста, изучите часто задаваемые вопросы из библиотеки Aspose.PDF для Java.
 lastmod: "2021-06-17"
 sitemap:

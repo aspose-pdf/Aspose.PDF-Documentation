@@ -2,7 +2,7 @@
 title: 在 Python 中获取 PDF 文件信息
 type: docs
 weight: 40
-url: zh/java/get-pdf-file-information-in-python/
+url: /zh/java/get-pdf-file-information-in-python/
 lastmod: "2021-06-05"
 ---
 

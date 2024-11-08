@@ -2,7 +2,7 @@
 title: Получить количество страниц PDF в PHP
 type: docs
 weight: 40
-url: ru/java/get-page-count-of-pdf-in-php/
+url: /ru/java/get-page-count-of-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

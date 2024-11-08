@@ -3,7 +3,7 @@ title: 将各种图片格式转换为 .NET 中的 PDF
 linktitle: 将图片转换为 PDF
 type: docs
 weight: 60
-url: zh/net/convert-images-format-to-pdf/
+url: /zh/net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
 description: 使用 C# .NET 将各种图片格式（如 BMP、CGM、JPEG、DICOM、PNG、TIFF、EMF 和 SVG）转换为 PDF。
 sitemap:
@@ -15,7 +15,7 @@ sitemap:
 
 本文介绍了如何使用 C# 将各种图片格式转换为 PDF。它涵盖了以下主题。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 _格式_: **BMP**
 - [C# BMP 转 PDF](#csharp-bmp-to-pdf)

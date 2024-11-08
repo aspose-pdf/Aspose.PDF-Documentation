@@ -2,7 +2,7 @@
 title: 使用页面旋转
 type: docs
 weight: 10
-url: zh/net/working-with-page-rotation/
+url: /zh/net/working-with-page-rotation/
 description: 本节解释如何使用 PdfPageEditor 类进行页面旋转。
 lastmod: "2021-07-07"
 draft: false

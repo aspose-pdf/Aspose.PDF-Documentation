@@ -3,7 +3,7 @@ title: 使用 Python 在 PDF 中处理书签
 linktitle: 书签
 type: docs
 weight: 30
-url: zh/python-net/bookmarks/
+url: /zh/python-net/bookmarks/
 description: 本节解释如何使用 Aspose.PDF for Python via .NET 添加、删除和获取书签。
 lastmod: "2023-02-17"
 sitemap:
@@ -82,5 +82,5 @@ sitemap:
 当阅读 PDF 文件时，PDF 书签是一个方便且必要的工具。它们允许用户快速跳转到 PDF 文档中的其他位置，浏览页面，并快速查看 PDF 的内容，就像目录一样。
 在本节中，你将学习如何：
 
-- [添加和删除书签](/pdf/python-net/add-and-delete-bookmark/)
-- [获取、更新和展开书签](/pdf/python-net/get-update-and-expand-bookmark/)
+- [添加和删除书签](/pdf/zh/python-net/add-and-delete-bookmark/)
+- [获取、更新和展开书签](/pdf/zh/python-net/get-update-and-expand-bookmark/)

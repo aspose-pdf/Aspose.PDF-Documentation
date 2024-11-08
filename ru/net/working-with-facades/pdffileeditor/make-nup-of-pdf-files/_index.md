@@ -2,7 +2,7 @@
 title: Создание NUp из PDF файлов
 type: docs
 weight: 90
-url: ru/net/make-nup-of-pdf-files/
+url: /ru/net/make-nup-of-pdf-files/
 description: В этой статье показано, как создать NUp из PDF файлов с использованием Aspose.PDF Facades и класса PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false

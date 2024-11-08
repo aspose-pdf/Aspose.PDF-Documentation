@@ -3,7 +3,7 @@ title: Конвертация PDF в форматы PDF/A
 linktitle: Конвертация PDF в форматы PDF/A
 type: docs
 weight: 100
-url: ru/cpp/convert-pdf-to-pdfa/
+url: /ru/cpp/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: Эта тема показывает, как Aspose.PDF позволяет конвертировать PDF файл в PDF файл, соответствующий стандарту PDF/A.
 sitemap:

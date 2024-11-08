@@ -3,7 +3,7 @@ title: PDF 粘性注释
 linktitle: 粘性注释
 type: docs
 weight: 50
-url: zh/php-java/sticky-annotations/
+url: /zh/php-java/sticky-annotations/
 description: 本主题关于粘性注释，作为示例我们展示了文本中的水印注释。它用于表示页面上的图形。查看代码片段以解决此任务。
 lastmod: "2024-06-24"
 sitemap:

@@ -3,7 +3,7 @@ title: Как запустить другие примеры
 linktitle: Как запустить другие примеры
 type: docs
 weight: 50
-url: ru/java/how-to-run-other-examples/    
+url: /ru/java/how-to-run-other-examples/    
 description: Эта страница демонстрирует рекомендации, которые будут полезны для выполнения следующих требований перед загрузкой и запуском примеров.
 lastmod: "2021-06-05"
 ---

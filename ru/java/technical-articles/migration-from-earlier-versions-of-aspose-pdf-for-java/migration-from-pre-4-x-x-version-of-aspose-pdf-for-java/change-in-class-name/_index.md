@@ -2,7 +2,7 @@
 title: Изменение имени класса
 type: docs
 weight: 20
-url: ru/java/change-in-class-name/
+url: /ru/java/change-in-class-name/
 lastmod: "2022-01-27"
 ---
 

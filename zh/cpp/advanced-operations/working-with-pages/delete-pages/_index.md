@@ -3,7 +3,7 @@ title: 程序化删除PDF页面
 linktitle: 删除PDF页面
 type: docs
 weight: 30
-url: zh/cpp/delete-pages/
+url: /zh/cpp/delete-pages/
 description: 您可以使用C++库从PDF文件中删除页面。
 lastmod: "2021-12-09"
 sitemap:

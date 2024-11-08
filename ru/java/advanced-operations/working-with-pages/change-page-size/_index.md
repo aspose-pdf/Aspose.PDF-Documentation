@@ -3,7 +3,7 @@ title: Изменение размера страницы PDF программн
 linktitle: Изменить размер страницы
 type: docs
 weight: 50
-url: ru/java/change-page-size/
+url: /ru/java/change-page-size/
 description: Изменение размера страницы в PDF файле с использованием Java библиотеки.
 lastmod: "2021-06-05"
 sitemap:

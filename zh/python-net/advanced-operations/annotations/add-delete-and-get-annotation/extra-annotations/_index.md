@@ -3,7 +3,7 @@ title: 使用 Python 添加额外注释
 linktitle: 额外注释
 type: docs
 weight: 60
-url: zh/python-net/extra-annotations/
+url: /zh/python-net/extra-annotations/
 description: 本节描述如何从您的 PDF 文档中添加、获取和删除额外类型的注释。
 lastmod: "2023-02-17"
 sitemap:

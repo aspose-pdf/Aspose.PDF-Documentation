@@ -2,7 +2,7 @@
 title: 控制异常PDF文件
 type: docs
 weight: 30
-url: zh/java/control-exception/
+url: /zh/java/control-exception/
 description: 本主题解释如何使用 PdfFileSecurity 类控制 PDF 文件上的异常。
 lastmod: "2021-06-05"
 draft: false

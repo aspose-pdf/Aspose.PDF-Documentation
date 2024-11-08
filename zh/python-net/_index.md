@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for Python via .NET
 second_title: Aspose.PDF for Python via .NET
 type: docs
 weight: 40
-url: zh/python-net/
+url: /zh/python-net/
 is_root: true
 lastmod: "2022-10-24"
 description: 了解如何使用 Aspose.PDF Python via .NET 创建用于 PDF 文档处理的应用程序，适用于任何平台的 Python。浏览教程、示例代码等。
@@ -26,20 +26,20 @@ Aspose.PDF 是一个 .NET 组件，旨在允许开发人员以编程方式即时
 
 <h2>章节</h2>
 
-- [最新动态](/pdf/python-net/whatsnew/)
-- [概览](/pdf/python-net/overview/)
-- [快速入门](/pdf/python-net/get-started/)
-- [基本操作](/pdf/python-net/basic-operations/)
-- [文档转换](/pdf/python-net/converting/)
-- [解析 PDF 文档](/pdf/python-net/parsing/)
-- [高级操作](/pdf/python-net/advanced-operations/)
-- [展示案例](/pdf/python-net/showcases/)
+- [最新动态](/pdf/zh/python-net/whatsnew/)
+- [概览](/pdf/zh/python-net/overview/)
+- [快速入门](/pdf/zh/python-net/get-started/)
+- [基本操作](/pdf/zh/python-net/basic-operations/)
+- [文档转换](/pdf/zh/python-net/converting/)
+- [解析 PDF 文档](/pdf/zh/python-net/parsing/)
+- [高级操作](/pdf/zh/python-net/advanced-operations/)
+- [展示案例](/pdf/zh/python-net/showcases/)
 - [发行说明](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 
 <h2>Aspose.PDF for Python via .NET 资源</h2>
 
 以下是一些您可能需要用来完成任务的有用资源链接。
-- [Aspose.PDF for Python via .NET 特性](/pdf/python-net/key-features/)
+- [Aspose.PDF for Python via .NET 特性](/pdf/zh/python-net/key-features/)
 - [Aspose.PDF for Python via .NET 发行说明](https://releases.aspose.com/pdf/pythonnet/release-notes/)
 - [Aspose.PDF for Python via .NET 产品页面](https://products.aspose.com/pdf/python-net/)
 - [下载 Aspose.PDF for Python via .NET](https://releases.aspose.com/pdf/pythonnet/)

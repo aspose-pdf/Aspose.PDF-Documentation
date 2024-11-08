@@ -3,7 +3,7 @@ title: Supported File Formats
 linktitle: Supported File Formats
 type: docs
 weight: 70
-url: zh/net/supported-file-formats/
+url: /zh/net/supported-file-formats/
 description: 此页面显示 Aspose.PDF for .NET 可以加载和保存的文件格式。
 lastmod: "2021-06-05"
 sitemap:

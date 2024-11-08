@@ -2,7 +2,7 @@
 title: 从 PDF 中移除元数据在 PHP 中
 type: docs
 weight: 70
-url: zh/java/remove-metadata-from-pdf-in-php/
+url: /zh/java/remove-metadata-from-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

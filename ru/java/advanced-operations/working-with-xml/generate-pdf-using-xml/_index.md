@@ -3,7 +3,7 @@ title: Генерация PDF из XML
 linktitle: Генерация PDF из XML
 type: docs
 weight: 10
-url: ru/java/generate-pdf-from-xml
+url: /ru/java/generate-pdf-from-xml
 description: Aspose.PDF для Java предоставляет возможность конвертировать XML файл в PDF документ, при условии, что входной XML файл должен соответствовать схеме Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

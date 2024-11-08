@@ -3,7 +3,7 @@ title: 创建 AcroForms - 在 Java 中创建可填写的 PDF
 linktitle: 创建 AcroForms
 type: docs
 weight: 10
-url: zh/java/create-forms/
+url: /zh/java/create-forms/
 description: 本节解释如何在 PDF 文档中使用 Aspose.PDF for Java 从头创建 AcroForms。
 lastmod: "2021-06-05"
 sitemap:

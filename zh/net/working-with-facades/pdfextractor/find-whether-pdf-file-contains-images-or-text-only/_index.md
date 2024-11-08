@@ -3,7 +3,7 @@ title: 找出 PDF 是否包含图像或文本
 linktitle: 检查文本和图像的存在
 type: docs
 weight: 40
-url: zh/net/find-whether-pdf-file-contains-images-or-text-only/
+url: /zh/net/find-whether-pdf-file-contains-images-or-text-only/
 description: 本主题解释如何使用 PdfExtractor 类找出 PDF 文件是否仅包含图像或文本。
 lastmod: "2021-06-05"
 draft: false

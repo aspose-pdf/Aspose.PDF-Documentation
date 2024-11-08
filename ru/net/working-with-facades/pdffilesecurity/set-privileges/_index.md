@@ -2,7 +2,7 @@
 title: Установка Привилегий на PDF
 type: docs
 weight: 50
-url: ru/net/set-privileges/
+url: /ru/net/set-privileges/
 description: Эта тема объясняет, как установить привилегии на существующий PDF файл с использованием класса PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

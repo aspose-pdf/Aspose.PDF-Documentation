@@ -3,7 +3,7 @@
 title: 在 PDF 中装饰表单字段
 type: docs
 weight: 20
-url: zh/java/decorate-form-field/
+url: /zh/java/decorate-form-field/
 description: 本节介绍如何使用 FormEditor 类在 PDF 中装饰表单字段。
 lastmod: "2021-06-05"
 draft: false

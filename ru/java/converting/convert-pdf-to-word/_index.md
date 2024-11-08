@@ -3,7 +3,7 @@ title: Преобразование PDF в документы Microsoft Word н�
 linktitle: Преобразование PDF в Word
 type: docs
 weight: 10
-url: ru/java/convert-pdf-to-word/
+url: /ru/java/convert-pdf-to-word/
 lastmod: "2021-11-19"
 description: Преобразование PDF файла в формат DOC и DOCX с легкостью и полным контролем с помощью Aspose.PDF для Java. Узнайте больше о том, как настроить преобразование PDF в документы Microsoft Word.
 sitemap:

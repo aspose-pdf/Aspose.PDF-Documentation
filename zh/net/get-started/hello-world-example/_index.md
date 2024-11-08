@@ -3,7 +3,7 @@ title: 使用 C# 语言的 Hello World 示例
 linktitle: Hello World 示例
 type: docs
 weight: 40
-url: zh/net/hello-world-example/
+url: /zh/net/hello-world-example/
 description: 本示例演示如何使用 Aspose.PDF 创建一个简单的包含文本 Hello World 的 PDF 文档
 aliases:
     - /net/hello-world/
@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET 是一个功能丰富的 PDF API，允许开发者在他们的 .NET 应用程序中嵌入 PDF 文档创建、操作和转换功能。它支持处理许多流行的文件格式，包括 PDF、XFA、TXT、HTML、PCL、XML、XPS、EPUB、TEX 和图像文件格式。在本文中，我们将创建一个包含文本 "Hello World!" 的 PDF 文档。安装 Aspose.PDF for .NET 在您的环境后，您可以执行下面的代码示例来查看 Aspose.PDF API 的工作方式。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下代码片段遵循这些步骤：
 

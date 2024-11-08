@@ -3,7 +3,7 @@ title: Добавление заголовка и колонтитула в PDF 
 linktitle: Добавление заголовка и колонтитула в PDF
 type: docs
 weight: 50
-url: ru/python-net/add-headers-and-footers-of-pdf-file/
+url: /ru/python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF для Python через .NET позволяет добавлять заголовки и колонтитулы в ваш PDF файл с использованием класса TextStamp.
 lastmod: "2023-04-17"
 sitemap:

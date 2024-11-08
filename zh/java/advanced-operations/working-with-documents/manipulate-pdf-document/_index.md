@@ -3,7 +3,7 @@ title: 操作PDF文档
 linktitle: 操作PDF文档
 type: docs
 weight: 30
-url: zh/java/manipulate-pdf-document/
+url: /zh/java/manipulate-pdf-document/
 description: 本文包含有关如何验证PDF文档以符合PDF A标准，如何处理目录，如何设置PDF过期日期，以及如何确定PDF文件生成进度的信息。
 lastmod: "2021-06-05"
 ---

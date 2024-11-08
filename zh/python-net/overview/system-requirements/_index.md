@@ -3,7 +3,7 @@ title: 系统要求
 linktitle: 系统要求
 type: docs
 weight: 30
-url: zh/python-net/system-requirements/
+url: /zh/python-net/system-requirements/
 description: 本节列出了开发人员需要成功使用 Aspose.PDF for Python 的支持操作系统。
 lastmod: "2022-12-22"
 sitemap:

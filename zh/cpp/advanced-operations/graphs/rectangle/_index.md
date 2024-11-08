@@ -3,7 +3,7 @@ title: 添加矩形对象到PDF文件
 linktitle: 添加矩形
 type: docs
 weight: 50
-url: zh/cpp/add-rectangle/
+url: /zh/cpp/add-rectangle/
 description: 本文解释了如何使用Aspose.PDF for C++在PDF中创建一个矩形对象。
 lastmod: "2021-12-18"
 sitemap:

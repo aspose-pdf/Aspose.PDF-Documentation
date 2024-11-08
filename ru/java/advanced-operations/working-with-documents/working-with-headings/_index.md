@@ -2,7 +2,7 @@
 title: Работа с заголовками в PDF
 type: docs
 weight: 70
-url: ru/java/working-with-headings/
+url: /ru/java/working-with-headings/
 lastmod: "2021-06-05"
 description: Создавайте нумерацию в заголовках вашего PDF-документа с помощью Java. Aspose.PDF для Java предлагает различные стили нумерации.
 sitemap:

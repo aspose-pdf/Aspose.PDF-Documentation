@@ -2,7 +2,7 @@
 title: Supported Parameters
 type: docs
 weight: 20
-url: zh/reportingservices/supported-parameters/
+url: /zh/reportingservices/supported-parameters/
 lastmod: "2021-06-05"
 ---
 
@@ -12,13 +12,13 @@ lastmod: "2021-06-05"
 
 **本节包括以下主题：**
 
-- [页面方向](/pdf/reportingservices/page-orientation/)
-- [HTML 格式化](/pdf/reportingservices/html-formatting/)
-- [安全设置](/pdf/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [页面方向](/pdf/zh/reportingservices/page-orientation/)
+- [HTML 格式化](/pdf/zh/reportingservices/html-formatting/)
+- [安全设置](/pdf/zh/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/zh/reportingservices/isfontembedded/)
 
-- [页面大小](/pdf/reportingservices/pagesize/)
-- [页面边距大小](/pdf/reportingservices/page-margin-size/)
-- [XMP 元数据](/pdf/reportingservices/xmp-metadata/)
-- [调试信息](/pdf/reportingservices/debug-information/)
-- [PDF_A 合规性](/pdf/reportingservices/pdf_a-conformance/)
+- [页面大小](/pdf/zh/reportingservices/pagesize/)
+- [页面边距大小](/pdf/zh/reportingservices/page-margin-size/)
+- [XMP 元数据](/pdf/zh/reportingservices/xmp-metadata/)
+- [调试信息](/pdf/zh/reportingservices/debug-information/)
+- [PDF_A 合规性](/pdf/zh/reportingservices/pdf_a-conformance/)

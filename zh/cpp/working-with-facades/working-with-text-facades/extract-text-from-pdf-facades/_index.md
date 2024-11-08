@@ -2,7 +2,7 @@
 title: 从PDF提取文本 - Facades
 type: docs
 weight: 10
-url: zh/cpp/extract-text-from-pdf-facades/
+url: /zh/cpp/extract-text-from-pdf-facades/
 ---
 
 ## <ins>**从文档的所有页面提取文本**

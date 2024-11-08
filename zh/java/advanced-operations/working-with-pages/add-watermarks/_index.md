@@ -3,7 +3,7 @@ title: 在 PDF 中添加水印
 linktitle: 添加水印
 type: docs
 weight: 90
-url: zh/java/add-watermarks/
+url: /zh/java/add-watermarks/
 description: 本文通过 Java 编程解释了操作工件和在 PDF 中获取水印的功能。
 lastmod: "2021-06-05"
 sitemap:

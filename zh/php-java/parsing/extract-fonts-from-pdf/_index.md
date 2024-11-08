@@ -3,7 +3,7 @@ title: 从PDF提取字体
 linktitle: 提取字体
 type: docs
 weight: 30
-url: zh/php-java/extract-fonts-from-pdf/
+url: /zh/php-java/extract-fonts-from-pdf/
 description: 如何使用Aspose.PDF for PHP从PDF中提取字体
 lastmod: "2024-05-20"
 sitemap:

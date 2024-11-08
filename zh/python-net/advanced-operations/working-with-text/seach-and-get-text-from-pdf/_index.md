@@ -3,7 +3,7 @@ title: 从PDF页面中搜索并获取文本
 linktitle: 搜索并获取文本
 type: docs
 weight: 60
-url: zh/python-net/search-and-get-text-from-pdf/
+url: /zh/python-net/search-and-get-text-from-pdf/
 description: 本文解释了如何使用各种工具从Aspose.PDF for .NET中搜索和获取文本。
 lastmod: "2024-02-17"
 sitemap:

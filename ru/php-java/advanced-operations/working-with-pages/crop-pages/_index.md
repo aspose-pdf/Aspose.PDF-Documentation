@@ -3,7 +3,7 @@ title: Обрезка страниц PDF с использованием PHP
 linktitle: Обрезка страниц  
 type: docs  
 weight: 80  
-url: ru/php-java/crop-pages/  
+url: /ru/php-java/crop-pages/  
 description: Вы можете получить свойства страницы, такие как ширина, высота, области вылета, обрезки и подрезки, используя Aspose.PDF для PHP через Java.  
 lastmod: "2024-06-05"  
 sitemap:  

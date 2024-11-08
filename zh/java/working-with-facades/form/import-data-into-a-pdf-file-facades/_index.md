@@ -2,7 +2,7 @@
 title: 将数据导入到PDF文件 - 外观
 type: docs
 weight: 10
-url: zh/java/import-data-into-a-pdf-file-facades/
+url: /zh/java/import-data-into-a-pdf-file-facades/
 description: 本节解释了如何使用Aspose.PDF外观和Form类从PDF文件导入数据到XML。
 lastmod: "2021-06-05"
 ---

@@ -2,7 +2,7 @@
 title: Сноска Конечная сноска
 type: docs
 weight: 30
-url: ru/reportingservices/footnote-endnote/
+url: /ru/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

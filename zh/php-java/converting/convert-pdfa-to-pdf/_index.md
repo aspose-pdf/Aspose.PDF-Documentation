@@ -3,7 +3,7 @@ title: 将 PDF/A 转换为 PDF 格式
 linktitle: 将 PDF/A 转换为 PDF 格式
 type: docs
 weight: 110
-url: zh/php-java/convert-pdfa-to-pdf/
+url: /zh/php-java/convert-pdfa-to-pdf/
 lastmod: "2024-05-20"
 description: 本主题向您展示如何使用 PHP 库通过 Aspose.PDF 将 PDF/A 文件转换为 PDF 文档。
 sitemap:

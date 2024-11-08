@@ -3,7 +3,7 @@ title:  使用 C# 从 AcroForm 提取数据
 linktitle:  从 AcroForm 提取数据
 type: docs
 weight: 50
-url: zh/net/extract-data-from-acroform/
+url: /zh/net/extract-data-from-acroform/
 description: Aspose.PDF 可以轻松地从 PDF 文件中提取表单字段数据。了解如何从 AcroForms 提取数据并将其保存为 JSON、XML 或 FDF 格式。
 lastmod: "2021-06-05"
 sitemap:
@@ -17,7 +17,7 @@ Aspose.PDF for .NET 不仅可以帮助您生成表单字段和填充表单字段
 
 在下面的示例代码中，我们演示了如何遍历 PDF 中的每个页面以提取有关 PDF 中所有 AcroForm 的信息以及表单字段值。此示例代码假设您事先不知道表单字段的名称。
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ```csharp
 public static void ExtractFormFields()
@@ -39,7 +39,7 @@ public static void ExtractFormFields()
 
 ## 从 PDF 文档提取表单字段到 JSON
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ```csharp
 public static void ExtractFormFieldsToJson()
@@ -54,7 +54,7 @@ public static void ExtractFormFieldsToJson()
 
 Form 类允许您使用 ExportXml 方法从 PDF 文件导出数据到 XML 文件。为了导出数据到 XML，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportXml 方法。最后，您可以关闭 FileStream 对象并释放 Form 对象。以下代码片段展示了如何导出数据到 XML 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // 完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -78,7 +78,7 @@ form.Dispose();
 
 Form 类允许您使用 ExportFdf 方法从 PDF 文件导出数据到 FDF 文件。为了将数据导出到 FDF，您需要创建 Form 类的一个对象，然后使用 FileStream 对象调用 ExportFdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段向您展示了如何导出数据到 FDF 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // 完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
@@ -105,7 +105,7 @@ form.Save(dataDir + "ExportDataToPdf_out.pdf");
 
 Form 类允许您使用 ExportXfdf 方法从 PDF 文件导出数据到 XFDF 文件。为了导出数据到 XFDF，您需要创建 Form 类的一个对象，然后使用 FileStream 对象调用 ExportXfdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段展示了如何将数据导出到 XFDF 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // 完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

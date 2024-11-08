@@ -3,7 +3,7 @@ title: 将PDF转换为PDF/A格式
 linktitle: 将PDF转换为PDF/A格式
 type: docs
 weight: 100
-url: zh/cpp/convert-pdf-to-pdfa/
+url: /zh/cpp/convert-pdf-to-pdfa/
 lastmod: "2021-11-01"
 description: 本主题展示了如何使用Aspose.PDF将PDF文件转换为符合PDF/A标准的PDF文件。
 sitemap:

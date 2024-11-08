@@ -3,7 +3,7 @@ title: Удаление изображений из PDF файла с испол
 linktitle: Удаление изображений
 type: docs
 weight: 20
-url: ru/python-net/delete-images-from-pdf-file/
+url: /ru/python-net/delete-images-from-pdf-file/
 description: В этом разделе объясняется, как удалить изображения из PDF файла с использованием Aspose.PDF для Python через .NET.
 lastmod: "2023-04-17"
 ---

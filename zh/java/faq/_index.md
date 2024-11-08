@@ -3,7 +3,7 @@ title: 常见问题
 linktitle: 常见问题
 type: docs
 weight: 120
-url: zh/java/faq/
+url: /zh/java/faq/
 description: 请了解有关 Aspose.PDF for Java 库的常见问题。
 lastmod: "2021-06-17"
 sitemap:

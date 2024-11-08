@@ -3,7 +3,7 @@ title: Извлечение необработанного текста из PDF
 linktitle: Извлечение текста из PDF
 type: docs
 weight: 10
-url: ru/androidjava/extract-text-from-all-pdf/
+url: /ru/androidjava/extract-text-from-all-pdf/
 description: В этой статье описаны различные способы извлечения текста из PDF документов с использованием Aspose.PDF для Android через Java. Из целых страниц, из конкретной части, на основе столбцов и т.д.
 lastmod: "2021-06-05"
 sitemap:

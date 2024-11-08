@@ -3,7 +3,7 @@ title: PDF Highlights Annotation using C++
 linktitle: Highlights Annotation
 type: docs
 weight: 20
-url: zh/cpp/highlights-annotation/
+url: /zh/cpp/highlights-annotation/
 description: 标记注释在文档的文本中以高亮、下划线、删除线或波浪线的形式呈现。
 lastmod: "2021-11-24"
 sitemap:

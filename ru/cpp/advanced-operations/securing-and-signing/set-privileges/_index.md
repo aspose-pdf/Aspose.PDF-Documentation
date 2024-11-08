@@ -3,7 +3,7 @@ title: Установить Привилегии, Шифровать и Расш
 linktitle: Шифровать и Расшифровать PDF Файл
 type: docs
 weight: 20
-url: ru/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ru/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: шифровать pdf,защитить паролем pdf,расшифровать pdf,c++
 description: Шифровать PDF Файл с использованием C++ с различными типами и алгоритмами шифрования. Также, расшифровать PDF Файлы с использованием пароля владельца.
 lastmod: "2021-12-17"

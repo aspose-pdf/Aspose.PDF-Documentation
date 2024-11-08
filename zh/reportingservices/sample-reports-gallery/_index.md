@@ -2,7 +2,7 @@
 title: Sample Reports Gallery 
 type: docs
 weight: 40
-url: zh/reportingservices/sample-reports-gallery/
+url: /zh/reportingservices/sample-reports-gallery/
 lastmod: "2024-05-05"
 ---
 

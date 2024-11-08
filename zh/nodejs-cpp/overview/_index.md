@@ -3,7 +3,7 @@ title: Overview
 linktitle: Overview
 type: docs
 weight: 20
-url: zh/nodejs-cpp/overview/
+url: /zh/nodejs-cpp/overview/
 description: Aspose.PDF for Node.js via C++ 的关键功能和支持格式概述、安装和许可手册。
 lastmod: "2023-11-16"
 sitemap:
@@ -50,9 +50,9 @@ Aspose.PDF for Node.js 支持多种功能，例如：
 
 了解更多关于：
 
-- [支持的文件格式](/pdf/nodejs-cpp/supported-file-formats/)
-- [Aspose.PDF 的关键特性](/pdf/nodejs-cpp/key-features/)
-- [系统要求](/pdf/nodejs-cpp/system-requirements/)
-- [安装](/pdf/nodejs-cpp/installation/)
-- [授权](/pdf/nodejs-cpp/licensing/)
-- [技术支持](/pdf/nodejs-cpp/technical-support/)
+- [支持的文件格式](/pdf/zh/nodejs-cpp/supported-file-formats/)
+- [Aspose.PDF 的关键特性](/pdf/zh/nodejs-cpp/key-features/)
+- [系统要求](/pdf/zh/nodejs-cpp/system-requirements/)
+- [安装](/pdf/zh/nodejs-cpp/installation/)
+- [授权](/pdf/zh/nodejs-cpp/licensing/)
+- [技术支持](/pdf/zh/nodejs-cpp/technical-support/)

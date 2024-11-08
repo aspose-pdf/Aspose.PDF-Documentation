@@ -3,7 +3,7 @@ title: 将文本转换为PDF
 linktitle: 将文本转换为PDF  
 type: docs  
 weight: 300  
-url: zh/androidjava/convert-text-to-pdf/  
+url: /zh/androidjava/convert-text-to-pdf/  
 lastmod: "2021-06-05"  
 description: Aspose.PDF for Android via Java允许您将纯文本文件转换为PDF或将预格式化文本文件转换为PDF。  
 sitemap:  

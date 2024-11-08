@@ -3,7 +3,7 @@ title: 向PDF文档添加附件
 linktitle: 向PDF文档添加附件
 type: docs
 weight: 10
-url: zh/cpp/add-attachment-to-pdf-document/
+url: /zh/cpp/add-attachment-to-pdf-document/
 description: 本页描述如何使用Aspose.PDF for C++库向PDF文件添加附件
 lastmod: "2021-06-05"
 sitemap:

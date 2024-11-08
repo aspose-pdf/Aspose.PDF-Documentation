@@ -3,7 +3,7 @@ title: 替换现有PDF文件中的图像
 linktitle: 替换图像
 type: docs
 weight: 70
-url: zh/java/replace-image-in-existing-pdf-file/
+url: /zh/java/replace-image-in-existing-pdf-file/
 description: 本节介绍如何使用Java库替换现有PDF文件中的图像。
 lastmod: "2021-06-05"
 ---

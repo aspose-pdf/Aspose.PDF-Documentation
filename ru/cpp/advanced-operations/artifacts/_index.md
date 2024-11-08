@@ -3,7 +3,7 @@ title: Работа с артефактами в C++
 linktitle: Работа с артефактами
 type: docs
 weight: 110
-url: ru/cpp/artifacts/
+url: /ru/cpp/artifacts/
 description: На этой странице описывается, как работать с классом Artifact, используя Aspose.PDF для C++. Примеры кода показывают, как добавить фоновое изображение на страницы PDF и как получить каждый водяной знак на первой странице PDF-файла.
 lastmod: "2021-11-22"
 sitemap:

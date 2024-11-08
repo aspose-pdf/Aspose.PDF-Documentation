@@ -6,7 +6,7 @@ type: docs
 
 weight: 80
 
-url: ru/java/public-api-changes-in-aspose-pdf-for-java-9-7-1/
+url: /ru/java/public-api-changes-in-aspose-pdf-for-java-9-7-1/
 
 lastmod: "2022-01-27"
 

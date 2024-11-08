@@ -2,7 +2,7 @@
 title: Получение информации о PDF файле
 type: docs
 weight: 50
-url: ru/net/get-pdf-file-information/
+url: /ru/net/get-pdf-file-information/
 description: Этот раздел объясняет, как получить информацию о PDF файле с помощью Aspose.PDF Facades.
 lastmod: "2021-06-05"
 draft: false

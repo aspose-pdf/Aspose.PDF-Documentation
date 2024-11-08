@@ -3,7 +3,7 @@ title: 提取并保存附件
 linktitle: 提取并保存附件
 type: docs
 weight: 20
-url: zh/cpp/extract-and-save-an-attachment/
+url: /zh/cpp/extract-and-save-an-attachment/
 description: Aspose.PDF for C++ 允许您从 PDF 文档中获取所有附件。此外，您还可以从文档中获取单个附件。
 lastmod: "2022-02-07"
 sitemap:

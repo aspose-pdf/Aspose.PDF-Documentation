@@ -2,7 +2,7 @@
 title: 获取 Python 中的文档窗口和页面显示属性
 type: docs
 weight: 30
-url: zh/python-java/get-document-window-and-page-display-properties-in-python/
+url: /zh/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 获取 PDF 文档的窗口和页面显示属性，只需调用 **GetDocumentWindow** 类。

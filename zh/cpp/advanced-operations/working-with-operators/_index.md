@@ -3,7 +3,7 @@ title: 使用运算符与C++协作
 linktitle: 使用运算符
 type: docs
 weight: 170
-url: zh/cpp/operators/
+url: /zh/cpp/operators/
 description: 本主题解释如何在C++中使用Aspose.PDF的运算符。运算符类为PDF操作提供了强大的功能。
 lastmod: "2021-12-14"
 sitemap:

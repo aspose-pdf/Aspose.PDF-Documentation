@@ -3,7 +3,7 @@ title: Открыть PDF документ программно
 linktitle: Открыть PDF
 type: docs
 weight: 20
-url: ru/python-cpp/open-pdf-document/
+url: /ru/python-cpp/open-pdf-document/
 description: Узнайте, как открыть PDF файл в Python с помощью библиотеки Aspose.PDF для Python через C++. Вы можете открыть существующий PDF, документ из потока и зашифрованный PDF документ.
 lastmod: "2022-12-22"
 sitemap:

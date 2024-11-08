@@ -3,7 +3,7 @@ title: 如何为 PDF 进行数字签名
 linktitle: 为 PDF 进行数字签名
 type: docs
 weight: 10
-url: zh/cpp/digitally-sign-pdf-file/
+url: /zh/cpp/digitally-sign-pdf-file/
 description: 使用 C++ 为 PDF 文档进行数字签名。使用 C++ 验证或验证数字签名的 PDF。
 lastmod: "2021-12-15"
 sitemap:

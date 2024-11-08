@@ -3,7 +3,7 @@ title: Добавить объект Эллипс в PDF файл
 linktitle: Добавить Эллипс
 type: docs
 weight: 60
-url: ru/cpp/add-ellipse/
+url: /ru/cpp/add-ellipse/
 description: Эта статья объясняет, как создать объект Эллипс в вашем PDF с использованием Aspose.PDF для C++.
 lastmod: "2021-12-21"
 sitemap:

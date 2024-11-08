@@ -3,7 +3,7 @@ title: Работа с размещением изображений с испо
 linktitle: Работа с размещением изображений
 type: docs
 weight: 50
-url: ru/cpp/working-with-image-placement/
+url: /ru/cpp/working-with-image-placement/
 description: Этот раздел описывает функции работы с размещением изображений в PDF файле с использованием библиотеки C++.
 lastmod: "2021-12-18"
 ---

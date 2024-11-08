@@ -2,7 +2,7 @@
 title: 在 Qt 中处理 PDF 文档
 type: docs
 weight: 130
-url: zh/cpp/work-with-pdf-documents-in-qt/
+url: /zh/cpp/work-with-pdf-documents-in-qt/
 lastmod: "2021-11-01"
 ---
 

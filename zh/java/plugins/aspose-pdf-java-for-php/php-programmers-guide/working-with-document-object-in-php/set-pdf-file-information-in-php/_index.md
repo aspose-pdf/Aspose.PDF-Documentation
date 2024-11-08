@@ -2,7 +2,7 @@
 title: 设置PDF文件信息在PHP中
 type: docs
 weight: 90
-url: zh/java/set-pdf-file-information-in-php/
+url: /zh/java/set-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

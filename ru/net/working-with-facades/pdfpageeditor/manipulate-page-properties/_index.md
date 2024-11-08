@@ -2,7 +2,7 @@
 title: Манипуляция с Свойствами Страницы
 type: docs
 weight: 80
-url: ru/net/manipulate-page-properties/
+url: /ru/net/manipulate-page-properties/
 description: В этом разделе объясняется, как манипулировать свойствами страницы с помощью Aspose.PDF Facades, используя класс PdfPageEditor.
 lastmod: "2021-06-05"
 draft: false

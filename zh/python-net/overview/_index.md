@@ -3,7 +3,7 @@ title: 概述
 linktitle: 概述
 type: docs
 weight: 20
-url: zh/python-net/overview/
+url: /zh/python-net/overview/
 lastmod: "2022-12-20"
 description: Aspose.PDF for Python via .NET 的关键特性和支持格式的概述，库的安装和许可手册。
 sitemap:
@@ -31,9 +31,9 @@ Aspose.PDF for Python 支持多种功能，例如：
 
 了解更多关于：
 
-- [支持的文件格式](/pdf/python-net/supported-file-formats/)
-- [Aspose.PDF 的关键功能](/pdf/python-net/key-features/)
-- [系统要求](/pdf/python-net/system-requirements/)
-- [安装](/pdf/python-net/installation/)
-- [许可](/pdf/python-net/licensing/)
-- [技术支持](/pdf/python-net/technical-support/)
+- [支持的文件格式](/pdf/zh/python-net/supported-file-formats/)
+- [Aspose.PDF 的关键功能](/pdf/zh/python-net/key-features/)
+- [系统要求](/pdf/zh/python-net/system-requirements/)
+- [安装](/pdf/zh/python-net/installation/)
+- [许可](/pdf/zh/python-net/licensing/)
+- [技术支持](/pdf/zh/python-net/technical-support/)

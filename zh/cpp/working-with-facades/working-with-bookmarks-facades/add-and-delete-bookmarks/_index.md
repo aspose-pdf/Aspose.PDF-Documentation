@@ -2,7 +2,7 @@
 title: 添加和删除书签
 type: docs
 weight: 10
-url: zh/cpp/add-and-delete-bookmarks/
+url: /zh/cpp/add-and-delete-bookmarks/
 ---
 
 ## <ins>**添加书签**

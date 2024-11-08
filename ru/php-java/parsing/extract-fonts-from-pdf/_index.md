@@ -3,7 +3,7 @@ title: Извлечение шрифтов из PDF
 linktitle: Извлечение шрифтов
 type: docs
 weight: 30
-url: ru/php-java/extract-fonts-from-pdf/
+url: /ru/php-java/extract-fonts-from-pdf/
 description: Как извлечь шрифт из PDF с использованием Aspose.PDF для PHP
 lastmod: "2024-05-20"
 sitemap:

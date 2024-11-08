@@ -3,7 +3,7 @@ title: 如何运行其他 Aspose.PDF for Android via Java 示例
 linktitle: 如何运行其他示例
 type: docs
 weight: 40
-url: zh/androidjava/how-to-run-other-examples/    
+url: /zh/androidjava/how-to-run-other-examples/    
 description: 本页面展示了一些指南，这些指南将在下载和运行示例之前的以下需求中提供帮助。
 lastmod: "2021-06-05"
 ---

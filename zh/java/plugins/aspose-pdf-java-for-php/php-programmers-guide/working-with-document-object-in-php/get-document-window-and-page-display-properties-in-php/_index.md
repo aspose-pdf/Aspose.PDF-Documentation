@@ -2,7 +2,7 @@
 title: 获取 PHP 中的文档窗口和页面显示属性
 type: docs
 weight: 30
-url: zh/java/get-document-window-and-page-display-properties-in-php/
+url: /zh/java/get-document-window-and-page-display-properties-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 将图像转换为PDF在Python中
 linktitle: 将图像转换为PDF文件
 type: docs
 weight: 10
-url: zh/python-cpp/convert-image-to-pdf/
+url: /zh/python-cpp/convert-image-to-pdf/
 lastmod: "2024-04-22"
 description: 本主题向您展示如何使用Aspose.PDF for Python via C++库将图像转换为PDF。
 sitemap:

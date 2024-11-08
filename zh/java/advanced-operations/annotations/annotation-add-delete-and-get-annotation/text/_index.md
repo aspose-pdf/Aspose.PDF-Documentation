@@ -3,7 +3,7 @@ title: PDF文本注释
 Texttitle: 文本注释
 type: docs
 weight: 10
-url: zh/java/text-annotation/
+url: /zh/java/text-annotation/
 description: Aspose.PDF for Java 允许您添加、获取和删除PDF文档中的文本注释。
 lastmod: "2021-11-24"
 sitemap:

@@ -4,7 +4,7 @@ title: 产品概述
 
 weight: 10
 
-url: zh/sharepoint/product-overview/
+url: /zh/sharepoint/product-overview/
 
 lastmod: "2020-12-16"
 
@@ -36,7 +36,7 @@ Aspose.PDF for SharePoint旨在与Microsoft SharePoint Server 2010一起使用�
 
 
 
-本文档描述了Aspose.PDF for SharePoint的[功能](/pdf/sharepoint/features/)、[安装](/pdf/sharepoint/install-aspose-pdf-for-sharepoint/)、[评估限制](/pdf/sharepoint/evaluate-aspose-pdf/)、[许可](/pdf/sharepoint/license-aspose-pdf-for-sharepoint/)、常见用例和设置。
+本文档描述了Aspose.PDF for SharePoint的[功能](/pdf/zh/sharepoint/features/)、[安装](/pdf/zh/sharepoint/install-aspose-pdf-for-sharepoint/)、[评估限制](/pdf/zh/sharepoint/evaluate-aspose-pdf/)、[许可](/pdf/zh/sharepoint/license-aspose-pdf-for-sharepoint/)、常见用例和设置。
 
 
 {{% /alert %}}

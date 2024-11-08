@@ -3,7 +3,7 @@ title: Удаление Изображений из PDF Файла с испол
 linktitle: Удаление Изображений
 type: docs
 weight: 20
-url: ru/cpp/delete-images-from-pdf-file/
+url: /ru/cpp/delete-images-from-pdf-file/
 description: Этот раздел объясняет, как удалить изображения из PDF файла с использованием Aspose.PDF для C++.
 lastmod: "2021-12-18"
 ---

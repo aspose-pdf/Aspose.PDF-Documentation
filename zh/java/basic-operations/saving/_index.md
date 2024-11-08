@@ -3,7 +3,7 @@ title: 保存 PDF 文档
 linktitle: 保存
 type: docs
 weight: 30
-url: zh/java/save-pdf-document/
+url: /zh/java/save-pdf-document/
 description: 学习如何使用 Aspose.PDF for Java 库保存 PDF 文件。
 lastmod: "2021-06-05"
 sitemap:

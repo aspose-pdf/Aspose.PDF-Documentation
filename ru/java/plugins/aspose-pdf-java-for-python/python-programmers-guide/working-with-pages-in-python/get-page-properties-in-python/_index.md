@@ -2,7 +2,7 @@
 title: Получение свойств страницы на Python
 type: docs
 weight: 50
-url: ru/java/get-page-properties-in-python/
+url: /ru/java/get-page-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

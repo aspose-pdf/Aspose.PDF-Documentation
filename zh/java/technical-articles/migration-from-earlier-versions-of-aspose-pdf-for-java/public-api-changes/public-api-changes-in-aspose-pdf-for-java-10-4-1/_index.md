@@ -2,7 +2,7 @@
 title: Aspose.PDF for Java 10.4.1 中的公共 API 变化  
 type: docs  
 weight: 110  
-url: zh/java/public-api-changes-in-aspose-pdf-for-java-10-4-1/  
+url: /zh/java/public-api-changes-in-aspose-pdf-for-java-10-4-1/  
 lastmod: "2022-01-27"  
 ---  
 

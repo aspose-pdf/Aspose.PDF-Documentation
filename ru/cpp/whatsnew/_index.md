@@ -3,7 +3,7 @@ title: Новое в C++
 linktitle: Новое
 type: docs
 weight: 10
-url: ru/cpp/whatsnew/
+url: /ru/cpp/whatsnew/
 description: На этой странице представлены самые популярные новые функции в Aspose.PDF для C++, которые были введены в последних выпусках.
 sitemap:
     changefreq: "monthly"

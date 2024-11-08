@@ -3,7 +3,7 @@ title: 使用 Aspose.PDF for Python via Java
 linktitle: 概述
 type: docs
 weight: 20
-url: zh/python-java/overview/
+url: /zh/python-java/overview/
 description: 使用 Python via Java 创建和编辑 PDF 的关键功能和特性，包括转换、拆分、合并及其他操作
 lastmod: "2022-05-16"
 sitemap:
@@ -39,7 +39,7 @@ Aspose.PDF for Python via Java 支持多种功能：
 
 阅读更多关于：
 
-- [使用Python via Java进行文档转换](/pdf/python-java/conversion/)
-- [使用Python via Java处理文档对象](/pdf/python-java/working-with-documents/)
-- [使用Python via Java处理页面](/pdf/python-java/working-with-pages/)
-- [使用Python via Java处理文本](/pdf/python-java/working-with-text/)
+- [使用Python via Java进行文档转换](/pdf/zh/python-java/conversion/)
+- [使用Python via Java处理文档对象](/pdf/zh/python-java/working-with-documents/)
+- [使用Python via Java处理页面](/pdf/zh/python-java/working-with-pages/)
+- [使用Python via Java处理文本](/pdf/zh/python-java/working-with-text/)

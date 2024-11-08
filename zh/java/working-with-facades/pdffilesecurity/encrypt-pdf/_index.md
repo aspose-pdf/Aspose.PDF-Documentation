@@ -2,7 +2,7 @@
 title: 加密 PDF 文件
 type: docs
 weight: 10
-url: zh/java/encrypt-pdf-file/
+url: /zh/java/encrypt-pdf-file/
 description: 本主题解释如何使用 PdfFileSecurity 类加密 PDF 文件。
 lastmod: "2021-06-05"
 draft: false

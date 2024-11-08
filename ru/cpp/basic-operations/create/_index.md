@@ -3,7 +3,7 @@ title: Создание PDF документа с использованием C
 linktitle: Создать
 type: docs
 weight: 10
-url: ru/cpp/create-document/
+url: /ru/cpp/create-document/
 description: Самая популярная и основная задача работы с PDF файлом - создание документа с нуля. Используйте библиотеку Aspose.PDF для C++.
 lastmod: "2021-06-05"
 sitemap:

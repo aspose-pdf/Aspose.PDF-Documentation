@@ -2,7 +2,7 @@
 title: 获取 PDF 页数的 Ruby
 type: docs
 weight: 40
-url: zh/java/get-page-count-of-pdf-in-ruby/
+url: /zh/java/get-page-count-of-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Извлечение изображений из PDF файла с исп
 linktitle: Извлечение изображений
 type: docs
 weight: 30
-url: ru/python-net/extract-images-from-pdf-file/
+url: /ru/python-net/extract-images-from-pdf-file/
 description: Этот раздел показывает, как извлечь изображения из PDF файла с использованием библиотеки Python.
 lastmod: "2023-02-17"
 ---

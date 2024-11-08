@@ -3,7 +3,7 @@ title: 使用 Python 转换 PDF 文档
 linktitle: 转换 PDF 文档
 type: docs
 weight: 70
-url: zh/python-java/converting/
+url: /zh/python-java/converting/
 lastmod: "2023-04-06"
 description: 本节包含有关使用 Python API 将 PDF 文档转换为不同格式及反向转换的文章。
 aliases:
@@ -33,32 +33,32 @@ Aspose.PDF for Python via .NET 允许将 PDF 文档转换为各种格式，也�
 Word 文档是最通用且可编辑的。
  将 PDF 手动转换为 Word 是一项非常耗时的任务。在本文中，您将学习如何使用 Python 编程将 PDF 转换为 Word。
 
-- [将 PDF 转换为 Microsoft Word](/pdf/python-java/convert-pdf-to-word/) - 您可以使用 Python 将 PDF 文档转换为 Word 格式
+- [将 PDF 转换为 Microsoft Word](/pdf/zh/python-java/convert-pdf-to-word/) - 您可以使用 Python 将 PDF 文档转换为 Word 格式
 
 数字格式不仅可以使表中的数据更易于阅读，还可以使表格更易于使用。当然，如果需要将此类数据从 PDF 文档转换为 Excel 格式，请使用我们的 Aspose.PDF 库。
 
-- [将 PDF 转换为 Microsoft Excel](/pdf/python-java/convert-pdf-to-excel/) - 本节介绍如何将 PDF 文档转换为 XLSX、ODS、CSV 和 SpreadSheetML
+- [将 PDF 转换为 Microsoft Excel](/pdf/zh/python-java/convert-pdf-to-excel/) - 本节介绍如何将 PDF 文档转换为 XLSX、ODS、CSV 和 SpreadSheetML
 
 PowerPoint 格式用于创建各种演示文稿。PPT 文件包含大量幻灯片或页面，其中包含各种信息。
 
-- [将 PDF 转换为 Microsoft PowerPoint](/pdf/python-java/convert-pdf-to-powerpoint/) - 在这里我们讨论通过跟踪转换过程将 PDF 转换为 PowerPoint
+- [将 PDF 转换为 Microsoft PowerPoint](/pdf/zh/python-java/convert-pdf-to-powerpoint/) - 在这里我们讨论通过跟踪转换过程将 PDF 转换为 PowerPoint
 
 超文本标记语言是一种超文本文档描述语言，是创建网页的标准语言。 使用 Aspose.PDF for Python，您可以轻松地将 HTML 文档转换为 PDF，反之亦然。
 
-- [将 HTML 格式转换为 PDF 文件](/pdf/python-java/convert-html-to-pdf/) - 关于 HTML 到 PDF 转换的不同方面的文章
-- [将 PDF 文件转换为 HTML 格式](/pdf/python-java/convert-pdf-to-html/) - 将您的 PDF 文档转换为 HTML 文件，可以是单独的页面，也可以是单个页面
+- [将 HTML 格式转换为 PDF 文件](/pdf/zh/python-java/convert-html-to-pdf/) - 关于 HTML 到 PDF 转换的不同方面的文章
+- [将 PDF 文件转换为 HTML 格式](/pdf/zh/python-java/convert-pdf-to-html/) - 将您的 PDF 文档转换为 HTML 文件，可以是单独的页面，也可以是单个页面
 
 有许多图像格式需要出于不同目的转换为 PDF。Aspose.PDF 支持最流行的图像格式及其反向转换。
 
-- [将 PDF 转换为各种图像格式](/pdf/python-java/convert-pdf-to-images-format/) - 将 PDF 页面转换为 JPEG、PNG 和其他格式的图像
+- [将 PDF 转换为各种图像格式](/pdf/zh/python-java/convert-pdf-to-images-format/) - 将 PDF 页面转换为 JPEG、PNG 和其他格式的图像
 
 本节包括以下格式：EPUB、Markdown、PCL、XPS、LATex/TeX、文本和 PostScript。
 
-- [将 PDF 文件转换为其他格式](/pdf/python-java/convert-pdf-to-other-files/) - 本主题描述了将 PDF 文档转换为各种格式的方法
+- [将 PDF 文件转换为其他格式](/pdf/zh/python-java/convert-pdf-to-other-files/) - 本主题描述了将 PDF 文档转换为各种格式的方法
 
 PDF/A 是 PDF 的一个版本，旨在用于电子文档的长期归档。如果说实话，从外部很难确定它是 PDF 还是 PDF/A。要检查此文件，使用了验证器。查看以下文章以获取高质量的 PDF 到 PDF/A 以及反向转换。
 
-- [将 PDF 转换为 PDF/A 格式](/pdf/python-java/convert-pdf-to-pdfa/) - Aspose.PDF 的 Python 库提供了简单的方法来将 PDF 转换为 PDF/A
+- [将 PDF 转换为 PDF/A 格式](/pdf/zh/python-java/convert-pdf-to-pdfa/) - Aspose.PDF 的 Python 库提供了简单的方法来将 PDF 转换为 PDF/A
 
 ## 尝试在线转换 PDF 文件
 

@@ -3,7 +3,7 @@ title: 从XML生成PDF
 linktitle: 从XML生成PDF
 type: docs
 weight: 10
-url: zh/java/generate-pdf-from-xml
+url: /zh/java/generate-pdf-from-xml
 description: Aspose.PDF for Java提供了将XML文件转换为PDF文档的机会，要求输入的XML文件必须遵循Aspose.PDF for Java Schema。
 lastmod: "2021-06-05"
 sitemap:

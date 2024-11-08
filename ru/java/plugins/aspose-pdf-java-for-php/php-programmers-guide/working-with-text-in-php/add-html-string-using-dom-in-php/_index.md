@@ -2,7 +2,7 @@
 title: Добавить строку HTML с использованием DOM в PHP
 type: docs
 weight: 10
-url: ru/java/add-html-string-using-dom-in-php/
+url: /ru/java/add-html-string-using-dom-in-php/
 lastmod: "2021-06-05"
 ---
 

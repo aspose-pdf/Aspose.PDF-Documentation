@@ -2,7 +2,7 @@
 title: 从 PDF 文件中移除签名
 type: docs
 weight: 20
-url: zh/net/remove-signature-from-pdf/
+url: /zh/net/remove-signature-from-pdf/
 description: 本节介绍如何使用 PdfFileSignature 类从 PDF 文件中移除签名。
 lastmod: "2021-06-05"
 draft: false

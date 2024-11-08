@@ -3,7 +3,7 @@ title: PDF 高亮注释使用 Python
 linktitle: 高亮注释
 type: docs
 weight: 20
-url: zh/python-net/highlights-annotation/
+url: /zh/python-net/highlights-annotation/
 description: 标记注释以高亮、下划线、删除线或锯齿下划线的形式呈现在文档的文本中。
 lastmod: "2023-02-17"
 sitemap:

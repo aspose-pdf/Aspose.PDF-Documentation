@@ -2,7 +2,7 @@
 title: Удалить определенную страницу из PDF файла на PHP
 type: docs
 weight: 20
-url: ru/java/delete-a-particular-page-from-the-pdf-file-in-php/
+url: /ru/java/delete-a-particular-page-from-the-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

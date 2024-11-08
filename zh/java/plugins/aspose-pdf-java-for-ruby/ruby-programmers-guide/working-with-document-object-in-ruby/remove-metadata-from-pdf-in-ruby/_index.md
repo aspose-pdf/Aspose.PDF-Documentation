@@ -2,7 +2,7 @@
 title: 从 PDF 中删除元数据（使用 Ruby）
 type: docs
 weight: 90
-url: zh/java/remove-metadata-from-pdf-in-ruby/
+url: /zh/java/remove-metadata-from-pdf-in-ruby/
 lastmod: "2021-06-05"
 ---
 

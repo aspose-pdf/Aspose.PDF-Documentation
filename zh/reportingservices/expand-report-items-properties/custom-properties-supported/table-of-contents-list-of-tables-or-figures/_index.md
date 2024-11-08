@@ -2,7 +2,7 @@
 title: 目录 表格或图形列表
 type: docs
 weight: 10
-url: zh/reportingservices/table-of-contents-list-of-tables-or-figures/
+url: /zh/reportingservices/table-of-contents-list-of-tables-or-figures/
 lastmod: "2021-06-05"
 ---
 

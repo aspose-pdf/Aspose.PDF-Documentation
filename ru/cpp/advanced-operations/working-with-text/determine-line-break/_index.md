@@ -3,7 +3,7 @@ title: Определение Разрыва Строки в TextFragment
 linktitle: Определение Разрыва Строки
 type: docs
 weight: 70
-url: ru/cpp/determine-line-break/
+url: /ru/cpp/determine-line-break/
 description: Узнайте больше о том, как определить разрыв строки в многострочном TextFragment с помощью C++
 lastmod: "2021-12-13"
 sitemap:

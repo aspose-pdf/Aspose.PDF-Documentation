@@ -3,7 +3,7 @@ title: 使用Python将PDF转换为Excel
 linktitle: 将PDF转换为Excel
 type: docs
 weight: 20
-url: zh/python-net/convert-pdf-to-excel/
+url: /zh/python-net/convert-pdf-to-excel/
 lastmod: "2022-12-23"
 keywords: 使用python将PDF转换为Excel, 使用python将PDF转换为XLS, 使用python将PDF转换为XLSX, 在python中从PDF导出表格到Excel。
 description: Aspose.PDF for Python库允许您使用Python将PDF格式转换为Excel格式。这些格式包括XLS, XLSX, XML 2003电子表格, CSV, ODS。

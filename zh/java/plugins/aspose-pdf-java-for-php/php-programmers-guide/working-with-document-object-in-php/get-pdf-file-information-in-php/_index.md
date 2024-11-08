@@ -2,7 +2,7 @@
 title: 获取 PDF 文件信息在 PHP 中
 type: docs
 weight: 40
-url: zh/java/get-pdf-file-information-in-php/
+url: /zh/java/get-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

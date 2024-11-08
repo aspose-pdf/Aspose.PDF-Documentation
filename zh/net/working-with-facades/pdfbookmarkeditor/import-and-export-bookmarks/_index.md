@@ -2,7 +2,7 @@
 title: 导入和导出书签
 type: docs
 weight: 20
-url: zh/net/import-and-export-bookmarks/
+url: /zh/net/import-and-export-bookmarks/
 description: 本节解释如何使用 Aspose.PDF Facades 导入和导出书签。
 lastmod: "2021-06-05"
 draft: false

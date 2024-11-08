@@ -3,7 +3,7 @@ title: Aspose.PDF 支持的文件格式
 linktitle: 支持的文件格式
 type: docs
 weight: 10
-url: zh/androidjava/supported-file-formats/
+url: /zh/androidjava/supported-file-formats/
 description: 本页显示了 Aspose.PDF for Android via Java 可以加载和保存的文件格式。
 lastmod: "2021-06-05"
 sitemap:

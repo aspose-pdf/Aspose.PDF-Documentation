@@ -3,7 +3,7 @@ title: Добавить страницы в PDF с помощью Python
 linktitle: Добавить страницы
 type: docs
 weight: 10
-url: ru/python-net/add-pages/
+url: /ru/python-net/add-pages/
 description: Эта статья учит, как вставить (добавить) страницу в нужное место в PDF-файле. Узнайте, как перемещать, удалять (удалять) страницы из PDF-файла с использованием C#.
 lastmod: "2022-02-17"
 sitemap:

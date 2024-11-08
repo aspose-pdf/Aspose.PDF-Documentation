@@ -3,7 +3,7 @@ title: Добавление объекта кривой в PDF файл
 linktitle: Добавить кривую
 type: docs
 weight: 30
-url: ru/cpp/add-curve/
+url: /ru/cpp/add-curve/
 description: В этой статье объясняется, как создать объект кривой в вашем PDF с использованием Aspose.PDF для C++.
 lastmod: "2021-12-18"
 sitemap:

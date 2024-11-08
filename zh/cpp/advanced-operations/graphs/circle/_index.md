@@ -3,7 +3,7 @@ title: 向PDF文件添加圆形对象
 linktitle: 添加圆形
 type: docs
 weight: 20
-url: zh/cpp/add-circle/
+url: /zh/cpp/add-circle/
 description: 本文解释了如何使用Aspose.PDF for C++在您的PDF中创建一个圆形对象。
 lastmod: "2021-12-18"
 sitemap:

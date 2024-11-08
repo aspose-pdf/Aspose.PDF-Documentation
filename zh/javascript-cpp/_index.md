@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for JavaScript
 second_title: Aspose.PDF for JavaScript via C++
 type: docs
 weight: 80
-url: zh/javascript-cpp/
+url: /zh/javascript-cpp/
 is_root: true
 lastmod: "2022-12-08"
 description: 学习使用 Aspose.PDF for JavaScript 在浏览器中创建用于处理 PDF 文档的应用程序。
@@ -26,17 +26,17 @@ Aspose.PDF for JavaScript via C++ 是一个可扩展且功能丰富的工具包�
 
 <h2>章节</h2>
 
-- [最新动态](/pdf/javascript-cpp/whatsnew/)
-- [概述](/pdf/javascript-cpp/overview/)
-- [入门](/pdf/javascript-cpp/get-started/)
-- [基本操作](/pdf/javascript-cpp/basic-operations/)
+- [最新动态](/pdf/zh/javascript-cpp/whatsnew/)
+- [概述](/pdf/zh/javascript-cpp/overview/)
+- [入门](/pdf/zh/javascript-cpp/get-started/)
+- [基本操作](/pdf/zh/javascript-cpp/basic-operations/)
 - [发行说明](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 
 <h2>Aspose.PDF for JavaScript 资源</h2>
 
 以下是一些您可能需要用来完成任务的有用资源链接。
 
-- [Aspose.PDF for JavaScript 功能](/pdf/javascript-cpp/key-features/)
+- [Aspose.PDF for JavaScript 功能](/pdf/zh/javascript-cpp/key-features/)
 - [Aspose.PDF for JavaScript 发行说明](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
 - [下载 Aspose.PDF for JavaScript](https://releases.aspose.com/pdf/javascriptcpp/)
 - [Aspose.PDF for JavaScript 产品页面](https://products.aspose.com/pdf/javascript-cpp/)

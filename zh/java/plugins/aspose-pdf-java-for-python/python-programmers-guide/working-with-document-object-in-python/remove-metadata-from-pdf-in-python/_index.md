@@ -2,7 +2,7 @@
 title: 从 PDF 中移除元数据（使用 Python）
 type: docs
 weight: 70
-url: zh/java/remove-metadata-from-pdf-in-python/
+url: /zh/java/remove-metadata-from-pdf-in-python/
 lastmod: "2021-06-05"
 ---
 

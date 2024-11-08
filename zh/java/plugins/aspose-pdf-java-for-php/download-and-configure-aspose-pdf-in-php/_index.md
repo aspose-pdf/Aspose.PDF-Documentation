@@ -2,7 +2,7 @@
 title: 下载和配置 Aspose.PDF 在 PHP 中
 type: docs
 weight: 10
-url: zh/java/download-and-configure-aspose-pdf-in-php/
+url: /zh/java/download-and-configure-aspose-pdf-in-php/
 lastmod: "2021-06-05"
 ---
 

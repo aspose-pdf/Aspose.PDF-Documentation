@@ -1,7 +1,7 @@
 title: 在PDF中处理标题
 type: docs
 weight: 70
-url: zh/php-java/working-with-headings/
+url: /zh/php-java/working-with-headings/
 lastmod: "2024-06-05"
 description: 使用PHP在PDF文档的标题中创建编号。Aspose.PDF for PHP via Java提供不同类型的编号样式。
 sitemap:

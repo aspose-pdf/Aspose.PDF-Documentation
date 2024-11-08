@@ -3,7 +3,7 @@ title: XML Schema
 linktitle: Поддерживаемая XML схема
 type: docs
 weight: 10
-url: ru/java/supported-xml-schema/
+url: /ru/java/supported-xml-schema/
 description: Эта статья описывает XML схему для работы с XML документами в Aspose.PDF для Java
 lastmod: "2021-06-05"
 sitemap:

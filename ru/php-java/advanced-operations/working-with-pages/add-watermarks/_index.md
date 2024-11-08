@@ -3,7 +3,7 @@ title: Добавить водяной знак в PDF
 linktitle: Добавить водяной знак
 type: docs
 weight: 90
-url: ru/php-java/add-watermarks/
+url: /ru/php-java/add-watermarks/
 description: В этой статье объясняются особенности работы с артефактами и получения водяных знаков в PDF с использованием PHP.
 lastmod: "2024-06-05"
 sitemap:

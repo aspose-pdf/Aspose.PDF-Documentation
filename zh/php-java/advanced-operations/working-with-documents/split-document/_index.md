@@ -3,7 +3,7 @@ title: 程序化拆分PDF
 linktitle: 拆分PDF文件
 type: docs
 weight: 60
-url: zh/php-java/split-document/
+url: /zh/php-java/split-document/
 description: 本主题展示如何在您的PHP应用程序中将PDF页面拆分为单独的PDF文件。
 lastmod: "2024-06-05"
 sitemap:

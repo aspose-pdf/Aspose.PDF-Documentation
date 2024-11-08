@@ -3,7 +3,7 @@ title: Программное обрезание страниц PDF на C++
 linktitle: Обрезание Страниц
 type: docs
 weight: 80
-url: ru/cpp/crop-pages/
+url: /ru/cpp/crop-pages/
 description: Вы можете получить свойства страницы, такие как ширина, высота, bleed-, crop- и trimbox, используя Aspose.PDF для C++.
 lastmod: "2021-12-09"
 sitemap:

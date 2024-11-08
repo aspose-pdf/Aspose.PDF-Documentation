@@ -3,7 +3,7 @@ title: 从PDF中移除附件使用Python
 linktitle: 从现有PDF中移除附件
 type: docs
 weight: 30
-url: zh/python-net/removing-attachment-from-an-existing-pdf/
+url: /zh/python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF可以从您的PDF文档中移除附件。使用Python PDF API通过Aspose.PDF for Python via .NET库移除PDF文件中的附件。
 lastmod: "2023-02-17"
 sitemap:

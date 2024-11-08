@@ -3,7 +3,7 @@ title: Конвертировать PDF в PPTX на JavaScript
 linktitle: Конвертировать PDF в PowerPoint
 type: docs
 weight: 30
-url: ru/javascript-cpp/convert-pdf-to-powerpoint/
+url: /ru/javascript-cpp/convert-pdf-to-powerpoint/
 lastmod: "2023-11-01"
 description: Aspose.PDF позволяет конвертировать PDF в формат PPTX с использованием JavaScript напрямую в вебе.
 sitemap:

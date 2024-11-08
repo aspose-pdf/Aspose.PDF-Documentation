@@ -3,7 +3,7 @@ title: Aspose.PDF的关键特性
 linktitle: 关键特性
 type: docs
 weight: 20
-url: zh/androidjava/key-features/
+url: /zh/androidjava/key-features/
 description: Aspose.PDF for Android via Java展示了处理PDF文档的主要功能。
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: Управление Исключениями в PDF Файле
 type: docs
 weight: 30
-url: ru/net/control-exception/
+url: /ru/net/control-exception/
 description: Эта тема объясняет, как управлять исключениями в PDF файле с использованием класса PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

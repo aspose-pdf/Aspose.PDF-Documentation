@@ -3,7 +3,7 @@ title: 使用 JavaScript 通过 C++ 旋转 PDF 页面
 linktitle: 旋转 PDF 页面
 type: docs
 weight: 50
-url: zh/javascript-cpp/rotate-pages/
+url: /zh/javascript-cpp/rotate-pages/
 description: 本主题描述如何通过 JavaScript 通过 C++ 以编程方式旋转现有 PDF 文件中的页面方向
 lastmod: "2023-02-17"
 sitemap:

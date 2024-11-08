@@ -3,7 +3,7 @@ title: Добавить фон в PDF с помощью JavaScript через C+
 linktitle: Добавить фоны
 type: docs
 weight: 10
-url: ru/javascript-cpp/add-backgrounds/
+url: /ru/javascript-cpp/add-backgrounds/
 description: Добавьте фоновое изображение в ваш PDF файл с помощью JavaScript через C++.
 lastmod: "2023-02-17"
 sitemap:

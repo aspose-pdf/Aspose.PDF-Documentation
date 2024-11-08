@@ -3,7 +3,7 @@ title: 将PDF转换为图像格式
 linktitle: 将PDF转换为图像
 type: docs
 weight: 70
-url: zh/php-java/convert-pdf-to-images-format/
+url: /zh/php-java/convert-pdf-to-images-format/
 lastmod: "2024-05-20"
 description: 本主题向您展示如何使用Aspose.PDF将PDF转换为各种图像格式。通过几行代码将PDF页面转换为PNG、JPEG、BMP图像。
 sitemap:

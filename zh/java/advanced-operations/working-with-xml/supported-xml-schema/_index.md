@@ -3,7 +3,7 @@ title: XML Schema
 linktitle: 支持的 XML 方案
 type: docs
 weight: 10
-url: zh/java/supported-xml-schema/
+url: /zh/java/supported-xml-schema/
 description: 本文描述了在 Aspose.PDF for Java 中处理 XML 文档的 XML 架构
 lastmod: "2021-06-05"
 sitemap:

@@ -2,7 +2,7 @@
 title: 向现有PDF文件添加文本在Jython中
 type: docs
 weight: 20
-url: zh/java/add-text-to-an-existing-pdf-file-in-jython/
+url: /zh/java/add-text-to-an-existing-pdf-file-in-jython/
 lastmod: "2021-06-05"
 ---
 

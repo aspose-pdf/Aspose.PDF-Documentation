@@ -3,7 +3,7 @@ title: 在PDF文件中添加文字印章
 linktitle: 在PDF文件中添加文字印章
 type: docs
 weight: 20
-url: zh/cpp/text-stamps-in-the-pdf-file/
+url: /zh/cpp/text-stamps-in-the-pdf-file/
 description: 使用C++的TextStamp类向PDF文件添加文字印章。
 lastmod: "2021-12-05"
 sitemap:

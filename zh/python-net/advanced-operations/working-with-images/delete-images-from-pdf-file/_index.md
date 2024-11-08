@@ -3,7 +3,7 @@ title: 从 PDF 文件中删除图像使用 Python
 linktitle: 删除图像
 type: docs
 weight: 20
-url: zh/python-net/delete-images-from-pdf-file/
+url: /zh/python-net/delete-images-from-pdf-file/
 description: 本节解释如何使用 Aspose.PDF for Python via .NET 从 PDF 文件中删除图像。
 lastmod: "2023-04-17"
 ---

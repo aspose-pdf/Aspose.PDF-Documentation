@@ -3,7 +3,7 @@ title: 使用 Aspose.PDF for C++ 提取图像和签名信息
 linktitle: 提取图像和签名信息
 type: docs
 weight: 30
-url: zh/cpp/extract-image-and-signature-information/
+url: /zh/cpp/extract-image-and-signature-information/
 description: 您可以使用 C++ 的 SignatureField 类从签名字段中提取图像和签名信息。
 lastmod: "2021-12-15"
 sitemap:

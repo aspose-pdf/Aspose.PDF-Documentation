@@ -2,7 +2,7 @@
 title: 将FDF转换为XML格式
 type: docs
 weight: 10
-url: zh/net/converting-an-fdf-to-xml-format/
+url: /zh/net/converting-an-fdf-to-xml-format/
 description: 本节解释如何使用FormDataConverter类将FDF转换为XML格式。
 lastmod: "2021-06-05"
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)命名空间在[Aspose.PDF for .NET](/pdf/net/)中很好地支持了AcroForms。它还支持将表单数据导入和导出为不同的文件格式，如FDF、XFDF和XML。然而，有时开发人员可能需要将一种格式转换为另一种格式。本文探讨了将FDF转换为XML的功能。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)命名空间在[Aspose.PDF for .NET](/pdf/zh/net/)中很好地支持了AcroForms。它还支持将表单数据导入和导出为不同的文件格式，如FDF、XFDF和XML。然而，有时开发人员可能需要将一种格式转换为另一种格式。本文探讨了将FDF转换为XML的功能。
 
 {{% /alert %}}
 

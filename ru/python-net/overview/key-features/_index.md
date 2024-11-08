@@ -3,7 +3,7 @@ title: Основные функции Aspose.PDF для Python
 linktitle: Основные функции
 type: docs
 weight: 20
-url: ru/python-net/key-features/
+url: /ru/python-net/key-features/
 description: Aspose.PDF для Python через .NET демонстрирует свои общие функции. Показывает поддерживаемые версии PDF и все манипуляции, которые мы можем делать с PDF.
 lastmod: "2022-12-21"
 sitemap:

@@ -3,7 +3,7 @@ title: 程序化删除 PDF 页面
 linktitle: 删除 PDF 页面
 type: docs
 weight: 40
-url: zh/php-java/delete-pages/
+url: /zh/php-java/delete-pages/
 description: 您可以使用 PHP 从 PDF 文件中删除页面。
 lastmod: "2024-06-05"
 sitemap:

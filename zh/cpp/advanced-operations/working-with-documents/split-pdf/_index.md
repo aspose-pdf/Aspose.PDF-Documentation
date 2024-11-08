@@ -3,7 +3,7 @@ title: 用编程方式拆分 PDF
 linktitle: 拆分 PDF 文件
 type: docs
 weight: 60
-url: zh/cpp/split-pdf-document/
+url: /zh/cpp/split-pdf-document/
 description: 本主题展示如何使用 C++ 将 PDF 页面拆分为单独的 PDF 文件。
 lastmod: "2022-09-01"
 sitemap:

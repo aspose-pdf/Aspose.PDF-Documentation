@@ -3,7 +3,7 @@ title: 从 PDF C# 中提取段落
 linktitle: 从 PDF 中提取段落
 type: docs
 weight: 20
-url: zh/net/extract-paragraph-from-pdf/
+url: /zh/net/extract-paragraph-from-pdf/
 description: 本文介绍了如何使用 Aspose.PDF 中的 ParagraphAbsorber - 一种特殊工具从 PDF 文档中提取文本。
 lastmod: "2021-06-05"
 sitemap:
@@ -18,7 +18,7 @@ sitemap:
 
 **1- 通过在PDF页面上绘制文本章节和段落的边框：**
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ```csharp
 // 有关完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -79,7 +79,7 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
 ```
 **2- 通过遍历段落集合并获取它们的文本：**
 
-以下代码片段同样适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段同样适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // 要获取完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET

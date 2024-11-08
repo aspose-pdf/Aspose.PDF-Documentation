@@ -2,7 +2,7 @@
 title: Извлечение текста со всех страниц PDF-документа на PHP
 type: docs
 weight: 30
-url: ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: 在C#中合并PDF文档
 linktitle: 合并PDF文档
 type: docs
 weight: 20
-url: zh/net/concatenate-pdf-documents/
+url: /zh/net/concatenate-pdf-documents/
 description: 本节解释如何使用PdfFileEditor类通过Aspose.PDF Facades合并PDF文档。
 aliases:
     - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/

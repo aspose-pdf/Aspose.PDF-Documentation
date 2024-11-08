@@ -4,7 +4,7 @@ linktitle: Aspose.PDF for PHP via Java
 second_title: Aspose.PDF for PHP via Java
 type: docs
 weight: 90
-url: zh/php-java/
+url: /zh/php-java/
 is_root: true
 lastmod: "2024-07-07"
 description: 学习如何使用 Aspose.PDF for PHP 创建用于处理 PDF 文档的应用程序。浏览教程、示例代码等。
@@ -30,25 +30,25 @@ Aspose.PDF for PHP via Java 提供出色的安全功能，以开发安全的 PDF
 
 ## 章节
 
-- [新功能](/pdf/php-java/whatsnew/)
-- [概述](/pdf/php-java/overview/)
-- [入门](/pdf/php-java/get-started/)
-- [基本操作](/pdf/php-java/basic-operations/)
-- [转换文档](/pdf/php-java/converting/)
-- [解析PDF文档](/pdf/php-java/parsing/)
-- [高级操作](/pdf/php-java/advanced-operations/)
+- [新功能](/pdf/zh/php-java/whatsnew/)
+- [概述](/pdf/zh/php-java/overview/)
+- [入门](/pdf/zh/php-java/get-started/)
+- [基本操作](/pdf/zh/php-java/basic-operations/)
+- [转换文档](/pdf/zh/php-java/converting/)
+- [解析PDF文档](/pdf/zh/php-java/parsing/)
+- [高级操作](/pdf/zh/php-java/advanced-operations/)
 - [发行说明]()
 
 ## Aspose.PDF for PHP通过Java资源
 
 以下是一些您可能需要完成任务的有用资源链接。
 
-- [Aspose.PDF for PHP通过Java在线文档](/pdf/php-java/)
-- [Aspose.PDF for PHP通过Java功能](/pdf/java/key-features/)
+- [Aspose.PDF for PHP通过Java在线文档](/pdf/zh/php-java/)
+- [Aspose.PDF for PHP通过Java功能](/pdf/zh/java/key-features/)
 - Aspose.PDF for PHP通过Java发行说明
 - [Aspose.PDF for PHP通过Java产品页面](https://products.aspose.com/pdf/php-java/)
 
-- [下载Aspose.PDF for PHP通过Java](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)- [从 Aspose 仓库安装 Aspose.PDF for PHP via Java](/pdf/php-java/installation/)
+- [下载Aspose.PDF for PHP通过Java](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)- [从 Aspose 仓库安装 Aspose.PDF for PHP via Java](/pdf/zh/php-java/installation/)
 - [Aspose.PDF for PHP via Java API 参考指南](https://reference.aspose.com/java/pdf)
 - [在 GitHub 仓库下载示例](https://github.com/aspose-pdf/Aspose.PDF-for-PHP-via-Java)
 - [Aspose.PDF for PHP via Java 免费支持论坛](https://forum.aspose.com/c/pdf)

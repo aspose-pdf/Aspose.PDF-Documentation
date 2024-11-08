@@ -2,7 +2,7 @@
 title: Добавить текстовый и графический штамп
 type: docs
 weight: 20
-url: ru/java/add-text-and-image-stamp/
+url: /ru/java/add-text-and-image-stamp/
 description: В этом разделе объясняется, как добавить текстовый и графический штамп с использованием com.aspose.pdf.facades через класс PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

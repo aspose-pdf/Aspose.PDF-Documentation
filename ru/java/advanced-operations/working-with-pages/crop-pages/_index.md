@@ -3,7 +3,7 @@ title: Программное обрезание страниц PDF
 linktitle: Обрезка страниц
 type: docs
 weight: 80
-url: ru/java/crop-pages/
+url: /ru/java/crop-pages/
 description: Вы можете получить свойства страницы, такие как ширина, высота, поля обрезки и обрезной блок, используя Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

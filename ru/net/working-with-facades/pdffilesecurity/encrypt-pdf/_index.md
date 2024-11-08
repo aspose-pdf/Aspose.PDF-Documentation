@@ -2,7 +2,7 @@
 title: Encrypt PDF File
 type: docs
 weight: 10
-url: ru/net/encrypt-pdf-file/
+url: /ru/net/encrypt-pdf-file/
 description: Эта тема объясняет, как зашифровать PDF файл с использованием класса PdfFileSecurity.
 lastmod: "2021-06-05"
 draft: false

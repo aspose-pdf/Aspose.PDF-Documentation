@@ -3,7 +3,7 @@ title: Установить Привилегии, Зашифровать и Ра
 linktitle: Зашифровать и Расшифровать PDF Файл
 type: docs
 weight: 20
-url: ru/java/set-privileges-encrypt-and-decrypt-pdf-file/
+url: /ru/java/set-privileges-encrypt-and-decrypt-pdf-file/
 keywords: зашифровать pdf, защита паролем pdf, расшифровать pdf, java
 description: Зашифровать PDF файл с использованием различных типов и алгоритмов шифрования на языке Java. Также, расшифровать PDF файлы с использованием пароля владельца.
 lastmod: "2021-12-17"

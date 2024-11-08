@@ -2,7 +2,7 @@
 title: 解密 PDF 文件
 type: docs
 weight: 20
-url: zh/net/decrypt-pdf-file/
+url: /zh/net/decrypt-pdf-file/
 description: 本主题解释如何使用 PdfFileSecurity 类解密 PDF 文件。
 lastmod: "2021-06-05"
 draft: false

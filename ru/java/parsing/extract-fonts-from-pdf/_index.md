@@ -3,7 +3,7 @@ title: Извлечение шрифтов из PDF
 linktitle: Извлечение шрифтов
 type: docs
 weight: 30
-url: ru/java/extract-fonts-from-pdf/
+url: /ru/java/extract-fonts-from-pdf/
 description: Как извлечь шрифт из PDF с использованием Aspose.PDF для Java
 lastmod: "2021-06-05"
 sitemap:

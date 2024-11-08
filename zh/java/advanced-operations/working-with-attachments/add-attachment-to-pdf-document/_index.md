@@ -3,7 +3,7 @@ title: 将附件添加到 PDF 文档
 linktitle: 将附件添加到 PDF 文档
 type: docs
 weight: 10
-url: zh/java/add-attachment-to-pdf-document/
+url: /zh/java/add-attachment-to-pdf-document/
 description: 本页面描述了如何使用 Java 将附件添加到 PDF 文件。
 lastmod: "2021-06-05"
 sitemap:

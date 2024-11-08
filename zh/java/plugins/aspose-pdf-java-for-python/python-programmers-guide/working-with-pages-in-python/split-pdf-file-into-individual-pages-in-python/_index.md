@@ -2,7 +2,7 @@
 title: 将 PDF 文件拆分为单独页面的 Python 实现
 type: docs
 weight: 80
-url: zh/java/split-pdf-file-into-individual-pages-in-python/
+url: /zh/java/split-pdf-file-into-individual-pages-in-python/
 lastmod: "2021-06-05"
 ---
 

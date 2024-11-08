@@ -3,7 +3,7 @@ title: Системные требования
 linktitle: Системные требования
 type: docs
 weight: 30
-url: ru/net/system-requirements/
+url: /ru/net/system-requirements/
 description: В этом разделе перечислены поддерживаемые операционные системы, необходимые разработчику для успешной работы с Aspose.PDF для .NET.
 lastmod: "2023-05-12"
 sitemap:

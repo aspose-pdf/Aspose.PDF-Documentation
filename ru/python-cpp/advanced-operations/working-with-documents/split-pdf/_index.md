@@ -3,7 +3,7 @@ title: Разделение PDF программно на языке Python
 linktitle: Разделение PDF файлов
 type: docs
 weight: 20
-url: ru/python-cpp/split-pdf-document/
+url: /ru/python-cpp/split-pdf-document/
 keywords: разделить pdf на несколько файлов, разделить pdf на отдельные pdf, разделить pdf python
 description: Эта тема показывает, как разделить страницы PDF на отдельные PDF файлы в ваших приложениях Python через C++.
 lastmod: "2024-04-17"

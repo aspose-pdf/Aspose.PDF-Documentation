@@ -2,7 +2,7 @@
 title: 在 Ruby 中向 PDF 文件添加图层
 type: docs
 weight: 20
-url: zh/java/add-layers-to-pdf-file-in-ruby/
+url: /zh/java/add-layers-to-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

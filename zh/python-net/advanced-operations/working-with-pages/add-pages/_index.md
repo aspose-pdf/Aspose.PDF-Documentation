@@ -3,7 +3,7 @@ title: 在 PDF 中添加页面与 Python
 linktitle: 添加页面
 type: docs
 weight: 10
-url: zh/python-net/add-pages/
+url: /zh/python-net/add-pages/
 description: 本文介绍如何在 PDF 文件的所需位置插入（添加）页面。了解如何使用 C# 移动、删除（删除）PDF 文件中的页面。
 lastmod: "2022-02-17"
 sitemap:

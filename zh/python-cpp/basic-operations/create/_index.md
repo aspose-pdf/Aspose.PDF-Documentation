@@ -3,7 +3,7 @@ title: 创建 PDF 文档
 linktitle: 创建 PDF
 type: docs
 weight: 10
-url: zh/python-cpp/create-document/
+url: /zh/python-cpp/create-document/
 description: 本页面描述如何使用 Aspose.PDF for Python 通过 C++ 库从头创建 PDF 文档。
 ---
 

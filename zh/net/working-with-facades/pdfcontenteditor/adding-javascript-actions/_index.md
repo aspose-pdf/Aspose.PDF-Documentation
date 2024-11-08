@@ -2,7 +2,7 @@
 title: 添加 Javascript 动作 PDF 
 type: docs
 weight: 10
-url: zh/net/adding-javascript-actions/
+url: /zh/net/adding-javascript-actions/
 description: 本节解释了如何使用 Aspose.PDF Facades 向现有 PDF 文件添加 Javascript 动作。
 lastmod: "2021-06-30"
 sitemap:

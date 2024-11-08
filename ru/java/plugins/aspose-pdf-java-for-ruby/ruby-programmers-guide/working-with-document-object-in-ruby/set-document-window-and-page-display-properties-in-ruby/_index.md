@@ -2,7 +2,7 @@
 title: Установка свойств окна документа и отображения страницы в Ruby
 type: docs
 weight: 100
-url: ru/java/set-document-window-and-page-display-properties-in-ruby/
+url: /ru/java/set-document-window-and-page-display-properties-in-ruby/
 lastmod: "2021-06-05"
 ---
 

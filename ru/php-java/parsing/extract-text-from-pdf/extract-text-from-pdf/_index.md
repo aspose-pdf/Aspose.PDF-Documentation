@@ -3,7 +3,7 @@ title: Извлечение сырого текста из PDF файла
 linktitle: Извлечь текст из PDF
 type: docs
 weight: 10
-url: ru/php-java/extract-text-from-all-pdf/
+url: /ru/php-java/extract-text-from-all-pdf/
 description: В этой статье описаны различные способы извлечения текста из PDF-документов с использованием Aspose.PDF для PHP. Извлечение с целых страниц, из конкретной части, на основе колонок и т.д.
 lastmod: "2024-05-20"
 sitemap:

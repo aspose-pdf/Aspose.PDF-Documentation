@@ -3,7 +3,7 @@ title: Convert BMP to PDF
 linktitle: Convert BMP to PDF
 type: docs
 weight: 220
-url: ru/androidjava/convert-bmp-to-pdf/
+url: /ru/androidjava/convert-bmp-to-pdf/
 lastmod: "2021-06-05"
 description: Вы можете легко конвертировать BMP-файлы в PDF, используемые для хранения цифровых растровых изображений отдельно от устройства отображения, используя Aspose.PDF. для Android через Java.
 sitemap:

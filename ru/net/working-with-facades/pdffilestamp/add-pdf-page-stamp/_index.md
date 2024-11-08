@@ -2,7 +2,7 @@
 title: Добавить штамп на страницу PDF
 type: docs
 weight: 10
-url: ru/net/add-pdf-page-stamp/
+url: /ru/net/add-pdf-page-stamp/
 description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false

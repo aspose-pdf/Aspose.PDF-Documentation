@@ -3,7 +3,7 @@ title: Удаление вложений из PDF
 linktitle: Удаление вложений из существующего PDF
 type: docs
 weight: 30
-url: ru/cpp/removing-attachment-from-an-existing-pdf/
+url: /ru/cpp/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF для C++ может удалять вложения из ваших PDF-документов. Используйте C++ PDF API для удаления вложений в PDF-файлах с помощью библиотеки Aspose.PDF.
 lastmod: "2022-02-07"
 sitemap:

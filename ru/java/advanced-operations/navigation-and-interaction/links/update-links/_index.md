@@ -3,7 +3,7 @@ title: Обновление ссылок в PDF
 linktitle: Обновление ссылок
 type: docs
 weight: 20
-url: ru/java/update-links/
+url: /ru/java/update-links/
 description: Обновление ссылок в PDF программным способом. Это руководство о том, как обновить ссылки в PDF на языке Java.
 lastmod: "2021-06-05"
 sitemap:

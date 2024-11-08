@@ -3,7 +3,7 @@ title: Манипуляция таблицами в существующем PDF
 linktitle: Манипуляция таблицами
 type: docs
 weight: 40
-url: ru/python-net/manipulate-tables-in-existing-pdf/
+url: /ru/python-net/manipulate-tables-in-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

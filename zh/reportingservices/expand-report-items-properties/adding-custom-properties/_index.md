@@ -2,7 +2,7 @@
 title: 添加自定义属性
 type: docs
 weight: 10
-url: zh/reportingservices/adding-custom-properties/
+url: /zh/reportingservices/adding-custom-properties/
 lastmod: "2021-06-05"
 ---
 

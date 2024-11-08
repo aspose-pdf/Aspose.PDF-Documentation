@@ -3,7 +3,7 @@ title: 优化、压缩或减少 PDF 大小在 Java 中
 linktitle: 优化 PDF 文档
 type: docs
 weight: 40
-url: zh/java/optimize-pdf/
+url: /zh/java/optimize-pdf/
 description: 优化 PDF 文件，缩小所有图像，减少 PDF 大小，取消嵌入字体，使用 Java 删除未使用的对象。
 lastmod: "2021-06-05"
 ---

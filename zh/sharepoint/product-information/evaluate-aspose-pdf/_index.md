@@ -4,7 +4,7 @@ title: 评估Aspose.Pdf for SharePoint
 
 linktitle: 评估
 
-url: zh/sharepoint/evaluate-aspose-pdf/
+url: /zh/sharepoint/evaluate-aspose-pdf/
 
 lastmod: "2020-12-16"
 

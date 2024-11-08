@@ -3,7 +3,7 @@ title: 打开 PDF 文档
 linktitle: 打开
 type: docs
 weight: 20
-url: zh/php-java/open-pdf-document/
+url: /zh/php-java/open-pdf-document/
 description: 了解如何使用 Aspose.PDF for PHP via Java 打开 PDF 文件。
 lastmod: "2024-06-05"
 sitemap:

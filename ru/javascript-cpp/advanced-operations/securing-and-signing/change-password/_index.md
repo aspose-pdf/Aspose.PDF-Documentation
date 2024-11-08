@@ -3,7 +3,7 @@ title: Изменение пароля PDF файла
 linktitle: Изменение пароля
 type: docs
 weight: 50
-url: ru/javascript-cpp/change-password-pdf/
+url: /ru/javascript-cpp/change-password-pdf/
 description: Изменение пароля PDF файла с помощью Aspose.PDF для JavaScript через C++.
 lastmod: "2023-09-13"
 sitemap:

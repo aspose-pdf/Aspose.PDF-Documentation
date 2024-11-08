@@ -3,7 +3,7 @@ title: Что нового
 linktitle: Что нового
 type: docs
 weight: 10
-url: ru/java/whatsnew/
+url: /ru/java/whatsnew/
 description: На этой странице представлены самые популярные новые функции в Aspose.PDF для Java, которые были добавлены в последних выпусках.
 sitemap:
     changefreq: "monthly"

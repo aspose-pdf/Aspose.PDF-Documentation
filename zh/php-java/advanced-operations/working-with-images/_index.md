@@ -3,7 +3,7 @@ title: Working with Images in PDF
 linktitle: Working with Images
 type: docs
 weight: 40
-url: zh/php-java/working-with-images/
+url: /zh/php-java/working-with-images/
 description: 本节介绍如何使用PHP在PDF文件中处理图像的功能。
 lastmod: "2024-06-05"
 sitemap:
@@ -22,4 +22,4 @@ sitemap:
 
 您可以执行以下操作：
 
-- [添加图像到现有PDF文件](/pdf/php-java/add-image-to-existing-pdf-file/) - 在PDF文档中添加图像和单个图像的引用，然后控制质量。
+- [添加图像到现有PDF文件](/pdf/zh/php-java/add-image-to-existing-pdf-file/) - 在PDF文档中添加图像和单个图像的引用，然后控制质量。

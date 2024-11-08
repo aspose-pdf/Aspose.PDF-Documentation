@@ -2,7 +2,7 @@
 title: 加密、解密和设置PDF文档的权限
 type: docs
 weight: 10
-url: zh/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+url: /zh/cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
 ---
 
 ## <ins>**在现有PDF文件上设置权限**

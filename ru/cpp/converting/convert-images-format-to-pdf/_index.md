@@ -3,7 +3,7 @@ title: Преобразование различных форматов изоб
 linktitle: Преобразование изображений в PDF
 type: docs
 weight: 60
-url: ru/cpp/convert-images-format-to-pdf/
+url: /ru/cpp/convert-images-format-to-pdf/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как библиотека Aspose.PDF for C++ позволяет конвертировать различные форматы изображений в PDF.
 sitemap:

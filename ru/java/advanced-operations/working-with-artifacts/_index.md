@@ -3,7 +3,7 @@ title: Работа с артефактами
 linktitle: Работа с артефактами
 type: docs
 weight: 110
-url: ru/java/artifacts/
+url: /ru/java/artifacts/
 description: Эта страница описывает, как работать с классом Artifact, используя Aspose.PDF для Java. Примеры кода показывают, как добавить фоновое изображение на страницы PDF и как получить каждый водяной знак на первой странице PDF-файла.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 如何数字签名PDF
 linktitle: 数字签名PDF
 type: docs
 weight: 10
-url: zh/java/digitally-sign-pdf-file/
+url: /zh/java/digitally-sign-pdf-file/
 description: 使用Java对PDF文档进行数字签名。使用基于Java的应用程序和PDF库验证或验证数字签名的PDF。您可以使用PKCS1证书来认证PDF文件。
 lastmod: "2021-06-05"
 sitemap:

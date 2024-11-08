@@ -2,7 +2,7 @@
 title: 添加PDF表单字段
 type: docs
 weight: 10
-url: zh/net/add-form-fields/
+url: /zh/net/add-form-fields/
 description: 本主题解释了如何使用Aspose.PDF Facades和FormEditor类处理表单字段。
 lastmod: "2021-06-05"
 draft: false

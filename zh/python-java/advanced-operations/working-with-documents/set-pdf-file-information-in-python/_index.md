@@ -2,7 +2,7 @@
 title: 在 Python 中设置 PDF 文件信息
 type: docs
 weight: 90
-url: zh/python-java/set-pdf-file-information-in-python/
+url: /zh/python-java/set-pdf-file-information-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 更新 Pdf 文档信息，只需调用 **SetPdfFileInfo** 类。

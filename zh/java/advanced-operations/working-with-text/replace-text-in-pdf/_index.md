@@ -3,7 +3,7 @@ title: 替换 PDF 中的文本
 linktitle: 替换 PDF 中的文本
 type: docs
 weight: 40
-url: zh/java/replace-text-in-a-pdf-document/
+url: /zh/java/replace-text-in-a-pdf-document/
 description: 了解更多关于替换和删除 PDF 文本的各种方法。Aspose.PDF 允许在特定区域或使用正则表达式替换文本。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Открытие PDF документа с использованием C
 linktitle: Открыть
 type: docs
 weight: 20
-url: ru/cpp/open-pdf-document/
+url: /ru/cpp/open-pdf-document/
 description: Используйте библиотеку C++ для открытия вашего PDF документа с помощью следующего фрагмента кода от Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:

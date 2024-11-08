@@ -3,7 +3,7 @@ title: Добавить страницы в PDF
 linktitle: Добавить страницы
 type: docs
 weight: 10
-url: ru/java/add-pages/
+url: /ru/java/add-pages/
 description: Эта статья учит, как вставить (добавить) страницу в нужное место PDF файла. Узнайте, как перемещать, удалять (удалять) страницы из PDF файла с помощью Java библиотеки.
 lastmod: "2021-06-05"
 sitemap:

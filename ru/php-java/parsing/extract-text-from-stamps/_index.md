@@ -2,7 +2,7 @@
 title: Извлечение Текста из Штампов
 type: docs
 weight: 60
-url: ru/php-java/extract-text-from-stamps/
+url: /ru/php-java/extract-text-from-stamps/
 ---
 
 ## Извлечение Текста из Аннотаций Штампов

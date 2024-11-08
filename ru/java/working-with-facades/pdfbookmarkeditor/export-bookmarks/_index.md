@@ -2,7 +2,7 @@
 title: Экспорт закладок в XML из существующего PDF файла (фасады)
 type: docs
 weight: 20
-url: ru/java/export-bookmark/
+url: /ru/java/export-bookmark/
 description: Этот раздел объясняет, как экспортировать закладки с помощью Aspose.PDF Facades, используя класс PdfBookmarEditor.
 lastmod: "2021-06-05"
 sitemap:

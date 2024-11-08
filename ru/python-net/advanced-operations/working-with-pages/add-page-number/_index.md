@@ -3,7 +3,7 @@ title: Добавить Номер Страницы в PDF с помощью Pyt
 linktitle: Добавить Номер Страницы
 type: docs
 weight: 30
-url: ru/python-net/add-page-number/
+url: /ru/python-net/add-page-number/
 description: Aspose.PDF для Python через .NET позволяет добавлять штамп номера страницы в ваш PDF файл, используя класс PageNumberStamp.
 lastmod: "2023-04-17"
 sitemap:

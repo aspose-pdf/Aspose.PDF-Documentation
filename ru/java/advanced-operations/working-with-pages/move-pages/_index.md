@@ -3,7 +3,7 @@ title: Перемещение страниц PDF
 linktitle: Перемещение страниц
 type: docs
 weight: 20
-url: ru/java/move-pages/
+url: /ru/java/move-pages/
 description: Попробуйте переместить страницы в нужное место или в конец PDF файла, используя Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

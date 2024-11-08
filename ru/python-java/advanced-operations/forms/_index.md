@@ -3,7 +3,7 @@ title: Работа с формами с использованием Python
 linktitle: Формы в PDF документе
 type: docs
 weight: 60
-url: ru/python-java/forms/
+url: /ru/python-java/forms/
 lastmod: "2023-05-19"
 description: Этот раздел содержит статьи, относящиеся к работе с формами в PDF документах с использованием Python API.
 sitemap:

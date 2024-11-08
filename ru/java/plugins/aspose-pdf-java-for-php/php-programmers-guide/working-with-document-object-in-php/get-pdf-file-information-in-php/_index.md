@@ -2,7 +2,7 @@
 title: Получить информацию о PDF-файле на PHP
 type: docs
 weight: 40
-url: ru/java/get-pdf-file-information-in-php/
+url: /ru/java/get-pdf-file-information-in-php/
 lastmod: "2021-06-05"
 ---
 

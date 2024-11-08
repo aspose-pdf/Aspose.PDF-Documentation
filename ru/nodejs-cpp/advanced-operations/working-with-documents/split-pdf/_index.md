@@ -3,7 +3,7 @@ title: Разделение PDF в Node.js
 linktitle: Разделение PDF файлов
 type: docs
 weight: 30
-url: ru/nodejs-cpp/split-pdf/
+url: /ru/nodejs-cpp/split-pdf/
 description: Эта тема показывает, как разделить страницы PDF на отдельные файлы PDF с помощью Aspose.PDF для Node.js через C++.
 lastmod: "2023-11-16"
 sitemap:

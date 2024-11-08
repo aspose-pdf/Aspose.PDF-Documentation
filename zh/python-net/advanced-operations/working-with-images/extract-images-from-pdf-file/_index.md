@@ -3,7 +3,7 @@ title: 从 PDF 文件中提取图像使用 Python
 linktitle: 提取图像
 type: docs
 weight: 30
-url: zh/python-net/extract-images-from-pdf-file/
+url: /zh/python-net/extract-images-from-pdf-file/
 description: 本节展示如何使用 Python 库从 PDF 文件中提取图像。
 lastmod: "2023-02-17"
 ---

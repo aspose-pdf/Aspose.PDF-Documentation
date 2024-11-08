@@ -2,7 +2,7 @@
 title: 在 Python 中向现有 PDF 文件添加文本
 type: docs
 weight: 20
-url: zh/python-java/add-text-to-an-existing-pdf-file-in-python/
+url: /zh/python-java/add-text-to-an-existing-pdf-file-in-python/
 ---
 
 要在 Pdf 文档中使用 **Aspose.PDF Java for Python** 添加文本字符串，只需调用 **AddText** 模块。

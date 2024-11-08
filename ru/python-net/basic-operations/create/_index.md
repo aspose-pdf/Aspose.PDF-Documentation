@@ -3,7 +3,7 @@ title: Создание PDF документа программно
 linktitle: Создание PDF
 type: docs
 weight: 10
-url: ru/python-net/create-document/
+url: /ru/python-net/create-document/
 description: Эта страница описывает, как создать PDF документ с нуля с помощью библиотеки Aspose.PDF для Python через .NET.
 ---
 

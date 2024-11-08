@@ -2,7 +2,7 @@
 title: 在 Python 中优化 PDF 文档以用于网络
 type: docs
 weight: 60
-url: zh/python-java/optimize-pdf-document-for-the-web-in-python/
+url: /zh/python-java/optimize-pdf-document-for-the-web-in-python/
 ---
 
 <ins>要使用 **Aspose.PDF Java for Python** 优化 PDF 文档以用于网络，只需调用 **Optimize** 类的 **optimize_web** 方法。

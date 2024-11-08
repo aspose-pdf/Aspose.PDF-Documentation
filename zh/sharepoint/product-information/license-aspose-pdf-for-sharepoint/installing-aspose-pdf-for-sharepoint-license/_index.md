@@ -2,7 +2,7 @@
 title: 安装 Aspose.Pdf for SharePoint 许可证
 type: docs
 weight: 10
-url: zh/sharepoint/installing-aspose-pdf-for-sharepoint-license/
+url: /zh/sharepoint/installing-aspose-pdf-for-sharepoint-license/
 lastmod: "2020-12-16"
 description: 一旦您对评估满意，您可以购买 PDF SharePoint API 的许可证并按照安装说明进行应用。
 ---

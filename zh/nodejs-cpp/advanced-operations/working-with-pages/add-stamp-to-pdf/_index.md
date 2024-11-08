@@ -3,7 +3,7 @@ title: 将图像印章添加到 PDF 中的 Node.js
 linktitle: PDF 文件中的图像印章
 type: docs
 weight: 60
-url: zh/nodejs-cpp/stamping/
+url: /zh/nodejs-cpp/stamping/
 description: 使用 AsposePdfAddStamp 和 Node.js 工具在您的 PDF 文档中添加图像印章。
 lastmod: "2023-11-16"
 sitemap:

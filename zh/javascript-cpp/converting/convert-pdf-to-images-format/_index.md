@@ -3,7 +3,7 @@ title: 将PDF转换为图像格式在JavaScript中
 linktitle: 将PDF转换为图像
 type: docs
 weight: 70
-url: zh/javascript-cpp/convert-pdf-to-images-format/
+url: /zh/javascript-cpp/convert-pdf-to-images-format/
 lastmod: "2023-11-01"
 description: 本主题向您展示如何使用Aspose.PDF将PDF转换为多种图像格式，例如TIFF、BMP、JPEG、PNG、SVG，仅需几行代码。
 sitemap:

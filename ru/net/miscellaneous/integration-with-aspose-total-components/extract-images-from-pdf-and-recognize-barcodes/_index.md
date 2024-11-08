@@ -2,7 +2,7 @@
 title: Извлечение изображений из PDF и распознавание штрих-кодов
 type: docs
 weight: 20
-url: ru/net/extract-images-from-pdf-and-recognize-barcodes/
+url: /ru/net/extract-images-from-pdf-and-recognize-barcodes/
 ---
 
 {{% alert color="primary" %}}

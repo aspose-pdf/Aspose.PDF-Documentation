@@ -3,7 +3,7 @@ title: 创建符合 PDF/3-A 的 PDF 并在 Java 中附加 ZUGFeRD 发票
 linktitle: 将 ZUGFeRD 附加到 PDF
 type: docs
 weight: 10
-url: zh/java/attach-zugferd/
+url: /zh/java/attach-zugferd/
 description: 了解如何在 Aspose.PDF for Java 中生成带有 ZUGFeRD 的 PDF 文档
 lastmod: "2024-01-18"
 sitemap:

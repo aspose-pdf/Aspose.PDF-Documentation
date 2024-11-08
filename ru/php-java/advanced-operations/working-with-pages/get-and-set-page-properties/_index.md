@@ -2,7 +2,7 @@
 title: Получение и Установка Свойств Страницы
 type: docs
 weight: 30
-url: ru/php-java/get-and-set-page-properties/
+url: /ru/php-java/get-and-set-page-properties/
 description: Эта тема объясняет, как получить номера в PDF-файле, получить свойства страницы и определить цвет страницы с использованием Aspose.PDF для PHP через Java.
 lastmod: "2024-06-05"
 ---

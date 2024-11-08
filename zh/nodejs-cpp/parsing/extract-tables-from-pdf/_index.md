@@ -3,7 +3,7 @@ title: 从 PDF 中提取表格在 Node.js 中
 linktitle: 从 PDF 中提取表格
 type: docs
 weight: 10
-url: zh/nodejs-cpp/extract-tables-from-the-pdf-file/
+url: /zh/nodejs-cpp/extract-tables-from-the-pdf-file/
 description: 如何使用 Aspose.PDF for Node.js via C++ 工具包将 PDF 转换为 CSV。
 lastmod: "2023-11-16"
 sitemap:

@@ -3,7 +3,7 @@ title: 使用 JavaScript 通过 C++ 删除 PDF 页面
 linktitle: 删除 PDF 页面
 type: docs
 weight: 30
-url: zh/javascript-cpp/delete-pages/
+url: /zh/javascript-cpp/delete-pages/
 description: 您可以使用 Aspose.PDF for JavaScript 通过 C++ 从 PDF 文件中删除页面。
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: Изменение размера страницы PDF с помощью 
 linktitle: Изменение размера страницы PDF
 type: docs
 weight: 60
-url: ru/python-net/change-page-size/
+url: /ru/python-net/change-page-size/
 description: Измените размер страницы в вашем PDF документе с использованием библиотеки Aspose.PDF для Python через .NET.
 lastmod: "2023-04-17"
 sitemap:

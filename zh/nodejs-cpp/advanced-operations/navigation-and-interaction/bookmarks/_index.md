@@ -3,7 +3,7 @@ title: 在 Node.js 中的 PDF 书签
 linktitle: PDF 中的书签
 type: docs
 weight: 10
-url: zh/nodejs-cpp/bookmark/
+url: /zh/nodejs-cpp/bookmark/
 description: 您可以在 Node.js 环境中添加或删除 PDF 文档中的书签。
 lastmod: "2023-11-16"
 sitemap:

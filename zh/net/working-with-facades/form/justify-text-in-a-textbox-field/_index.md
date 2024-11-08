@@ -2,7 +2,7 @@
 title: 在文本框字段中对齐文本
 type: docs
 weight: 20
-url: zh/net/justify-text-in-a-textbox-field/
+url: /zh/net/justify-text-in-a-textbox-field/
 description: 本文向您展示如何使用Form类在文本框字段中对齐文本。
 lastmod: "2021-06-05"
 draft: false

@@ -2,7 +2,7 @@
 title: Aspose.PDF Java for Jython
 type: docs
 weight: 60
-url: zh/java/aspose-pdf-java-for-jython/
+url: /zh/java/aspose-pdf-java-for-jython/
 lastmod: "2021-06-05"
 ---
 

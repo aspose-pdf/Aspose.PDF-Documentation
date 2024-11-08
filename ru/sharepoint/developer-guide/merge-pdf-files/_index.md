@@ -3,7 +3,7 @@ title: Объединение PDF файлов в SharePoint
 linktitle: Объединение PDF файлов
 type: docs
 weight: 90
-url: ru/sharepoint/merge-pdf-files/
+url: /ru/sharepoint/merge-pdf-files/
 lastmod: "2020-12-16"
 description: Используя PDF SharePoint API, вы можете объединить несколько PDF файлов из библиотеки документов SharePoint в один PDF.
 ---

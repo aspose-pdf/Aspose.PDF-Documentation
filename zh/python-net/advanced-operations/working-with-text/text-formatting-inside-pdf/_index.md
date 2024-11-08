@@ -3,7 +3,7 @@ title: 使用 Python 在 PDF 中格式化文本
 linktitle: 在 PDF 中格式化文本
 type: docs
 weight: 30
-url: zh/python-net/text-formatting-inside-pdf/
+url: /zh/python-net/text-formatting-inside-pdf/
 description: 本页面解释了如何在 PDF 文件中格式化文本。包括添加行缩进、添加文本边框、添加下划线文本等。
 lastmod: "2024-02-17"
 sitemap:

@@ -2,7 +2,7 @@
 title: 将 PDF 页面转换为 Ruby 中的图像
 type: docs
 weight: 20
-url: zh/java/convert-pdf-pages-to-images-in-ruby/
+url: /zh/java/convert-pdf-pages-to-images-in-ruby/
 lastmod: "2021-06-05"
 ---
 

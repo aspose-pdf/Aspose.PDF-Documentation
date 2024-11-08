@@ -2,7 +2,7 @@
 title: 脚注 尾注
 type: docs
 weight: 30
-url: zh/reportingservices/footnote-endnote/
+url: /zh/reportingservices/footnote-endnote/
 lastmod: "2021-06-05"
 ---
 

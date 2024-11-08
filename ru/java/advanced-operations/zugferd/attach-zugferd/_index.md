@@ -3,7 +3,7 @@ title: Создание PDF, соответствующего PDF/3-A, и доб
 linktitle: Присоединение ZUGFeRD к PDF
 type: docs
 weight: 10
-url: ru/java/attach-zugferd/
+url: /ru/java/attach-zugferd/
 description: Узнайте, как создать PDF-документ с ZUGFeRD в Aspose.PDF для Java
 lastmod: "2024-01-18"
 sitemap:

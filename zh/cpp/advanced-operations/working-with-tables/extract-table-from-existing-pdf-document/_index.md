@@ -3,7 +3,7 @@ title: 从PDF提取表格
 linktitle: 提取表格
 type: docs
 weight: 20
-url: zh/cpp/extract-table-from-existing-pdf-document/
+url: /zh/cpp/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for C++使您能够对PDF文档中包含的表格进行各种操作。您可以在现有PDF文档中添加和提取表格，在新页面上渲染表格等。
 lastmod: "2021-11-11"
 sitemap:

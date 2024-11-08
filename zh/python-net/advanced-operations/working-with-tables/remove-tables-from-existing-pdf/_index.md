@@ -3,7 +3,7 @@ title: 从现有 PDF 中移除表格
 linktitle: 移除表格
 type: docs
 weight: 50
-url: zh/python-net/remove-tables-from-existing-pdf/
+url: /zh/python-net/remove-tables-from-existing-pdf/
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

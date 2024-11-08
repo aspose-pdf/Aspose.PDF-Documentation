@@ -3,7 +3,7 @@ title: Форматирование PDF документа с использов
 linktitle: Форматирование PDF документа
 type: docs
 weight: 20
-url: ru/cpp/formatting-pdf-document/
+url: /ru/cpp/formatting-pdf-document/
 description: Создание и форматирование PDF документа с помощью Aspose.PDF для C++. Используйте следующий фрагмент кода для решения ваших задач.
 lastmod: "2021-11-11"
 sitemap:

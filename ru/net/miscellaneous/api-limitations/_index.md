@@ -2,7 +2,7 @@
 title: Ограничения API
 type: docs
 weight: 70
-url: ru/net/api-limitations/
+url: /ru/net/api-limitations/
 ---
 
 ## **Xsl Fo в Pdf**

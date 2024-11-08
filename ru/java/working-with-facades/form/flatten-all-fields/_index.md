@@ -2,7 +2,7 @@
 title: Объединение всех полей в существующем PDF-файле (фасады)
 type: docs
 weight: 30
-url: ru/java/flatten-all-fields/
+url: /ru/java/flatten-all-fields/
 description: Этот раздел объясняет, как объединить все поля с помощью Aspose.PDF Facades, используя класс Form.
 lastmod: "2021-06-05"
 sitemap:

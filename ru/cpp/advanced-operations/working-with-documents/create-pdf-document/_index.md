@@ -3,7 +3,7 @@ title: Создание PDF документа
 linktitle: Создать PDF
 type: docs
 weight: 10
-url: ru/cpp/create-pdf-document/
+url: /ru/cpp/create-pdf-document/
 description: Эта статья описывает, как создавать и форматировать PDF документ с использованием Aspose.PDF для C++.
 lastmod: "2021-11-11"
 sitemap:

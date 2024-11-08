@@ -2,7 +2,7 @@
 title: Извлечение текста со всех страниц PDF-документа на Python
 type: docs
 weight: 30
-url: ru/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
+url: /ru/python-java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 ---
 
 Чтобы извлечь текст со всех страниц PDF-документа с использованием **Aspose.PDF Java for Python**, просто вызовите модуль **ExtractTextFromAllPages**.

@@ -2,7 +2,7 @@
 title: HTML Converter
 type: docs
 weight: 70
-url: ru/net/plugins/html/
+url: /ru/net/plugins/html/
 description: Как конвертировать PDF файлы в HTML файлы и обратно с помощью плагина Aspose.PDF PdfHtml
 lastmod: "2024-01-24"
 draft: false

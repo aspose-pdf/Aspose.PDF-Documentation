@@ -3,7 +3,7 @@ title: Что нового
 linktitle: Что нового
 type: docs
 weight: 10
-url: ru/python-net/whatsnew/
+url: /ru/python-net/whatsnew/
 description: На этой странице представлены самые популярные новые функции в Aspose.PDF для Python через .NET, которые были представлены в последних выпусках.
 sitemap:
     changefreq: "monthly"

@@ -3,7 +3,7 @@ title: Сравнение документов PDF
 linktitle: Сравнить PDF
 type: docs
 weight: 180
-url: ru/net/compare-pdf-documents/
+url: /ru/net/compare-pdf-documents/
 description: С версии 24.7 стало возможным сравнивать содержимое документов PDF с пометками аннотаций и выводом бок о бок
 lastmod: "2024-08-17"
 sitemap:

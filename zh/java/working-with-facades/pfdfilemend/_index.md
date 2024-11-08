@@ -3,7 +3,7 @@
 title: PdfFileMend 类
 type: docs
 weight: 20
-url: zh/java/pdffilemend-class/
+url: /zh/java/pdffilemend-class/
 description: 本节介绍如何使用 PdfFileMend 类处理 Aspose.PDF Facades。
 lastmod: "2021-06-05"
 sitemap:
@@ -34,7 +34,7 @@ sitemap:
 
 检查它的外观：
 
-![Add Text](/pdf/net/images/add_text.png)
+![Add Text](/pdf/zh/net/images/add_text.png)
 
 第二种添加[FormattedText](https://reference.aspose.com/pdf//java/com.aspose.pdf.facades/formattedtext)的方法。此外，我们指明一个矩形，文本应该适合其中。
 
@@ -100,7 +100,7 @@ public static void AddImage01()
     }
 ```
 
-![Add Image](/pdf/net/images/add_image1.png)
+![Add Image](/pdf/zh/net/images/add_image1.png)
 
 让我们考虑第二个代码片段。通过使用 [CompositingParameters](https://reference.aspose.com/pdf/java/com.aspose.pdf/CompositingParameters) 类参数的变体，我们可以获得不同的设计效果。我们尝试了其中之一。
 
@@ -126,7 +126,7 @@ public static void AddImage01()
 ```
 
 
-![Add Image](/pdf/net/images/add_image2.png)
+![Add Image](/pdf/zh/net/images/add_image2.png)
 
 在以下代码片段中，我们使用 [ImageFilterType](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageFilterType)。ImageFilterType 指示将用于编码的流编解码器的类型，默认情况下为 Jpeg。如果您从 PNG 格式加载图像，那么它将在文档中保存为 JPEG（或我指定的其他格式）。
 

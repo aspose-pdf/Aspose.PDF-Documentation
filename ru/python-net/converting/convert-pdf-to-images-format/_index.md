@@ -3,7 +3,7 @@ title: Конвертация PDF в различные форматы изоб�
 linktitle: Конвертация PDF в изображения
 type: docs
 weight: 70
-url: ru/python-net/convert-pdf-to-images-format/
+url: /ru/python-net/convert-pdf-to-images-format/
 lastmod: "2022-12-23"
 description: Эта тема показывает, как использовать Aspose.PDF для Python для конвертации PDF в различные форматы изображений, такие как TIFF, BMP, EMF, JPEG, PNG, GIF, SVG, с помощью нескольких строк кода.
 sitemap:

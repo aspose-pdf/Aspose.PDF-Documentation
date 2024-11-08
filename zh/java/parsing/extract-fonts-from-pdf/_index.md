@@ -3,7 +3,7 @@ title: 从 PDF 中提取字体
 linktitle: 提取字体
 type: docs
 weight: 30
-url: zh/java/extract-fonts-from-pdf/
+url: /zh/java/extract-fonts-from-pdf/
 description: 如何使用 Aspose.PDF for Java 从 PDF 中提取字体
 lastmod: "2021-06-05"
 sitemap:

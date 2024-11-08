@@ -3,7 +3,7 @@ title: 使用 JavaScript 将 PDF 转换为 Word 文档
 linktitle: 将 PDF 转换为 Word
 type: docs
 weight: 10
-url: zh/javascript-cpp/convert-pdf-to-doc/
+url: /zh/javascript-cpp/convert-pdf-to-doc/
 lastmod: "2023-08-04"
 description: 学习如何编写 JavaScript 代码以直接在 Web 中将 PDF 转换为 DOC(DOCX)。
 sitemap:
@@ -22,7 +22,7 @@ sitemap:
 
 Aspose.PDF for JavaScript 向您展示了一个在线免费应用程序 ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)，您可以尝试调查其功能和工作质量。
 
-[![将 PDF 转换为 DOC](/pdf/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![将 PDF 转换为 DOC](/pdf/zh/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## 将 PDF 转换为 DOC
@@ -91,7 +91,7 @@ Aspose.PDF for JavaScript 向您展示了一个在线免费应用程序 ["PDF to
 
 Aspose.PDF for JavaScript 为您提供在线免费应用程序 ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)，您可以在其中尝试调查其功能和工作质量。
 
-[![Aspose.PDF Convertion PDF to Word Free App](/pdf/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF Convertion PDF to Word Free App](/pdf/zh/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

@@ -3,7 +3,7 @@ title: Оптимизация PDF с использованием Aspose.PDF д�
 linktitle: Оптимизация PDF файла
 type: docs
 weight: 10
-url: ru/nodejs-cpp/optimize-pdf/
+url: /ru/nodejs-cpp/optimize-pdf/
 description: Оптимизация и сжатие PDF файлов для быстрого просмотра в вебе с использованием среды Node.js.
 lastmod: "2023-11-16"
 sitemap:

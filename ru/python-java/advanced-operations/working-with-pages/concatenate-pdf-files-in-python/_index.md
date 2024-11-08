@@ -2,7 +2,7 @@
 title: Объединение PDF файлов на Python
 type: docs
 weight: 10
-url: ru/python-java/concatenate-pdf-files-in-python/
+url: /ru/python-java/concatenate-pdf-files-in-python/
 ---
 
 Чтобы объединить PDF файлы с использованием **Aspose.PDF Java for Python**, просто вызовите класс **ConcatenatePdfFiles**.

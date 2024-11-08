@@ -3,7 +3,7 @@ title: 使用 Python 更改 PDF 页面大小
 linktitle: 更改 PDF 页面大小
 type: docs
 weight: 60
-url: zh/python-net/change-page-size/
+url: /zh/python-net/change-page-size/
 description: 使用 Aspose.PDF for Python via .NET 库更改 PDF 文档的页面大小。
 lastmod: "2023-04-17"
 sitemap:

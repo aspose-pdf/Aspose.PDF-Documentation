@@ -3,7 +3,7 @@ title: Поворот страниц PDF с использованием Python
 linktitle: Поворот страниц PDF
 type: docs
 weight: 110
-url: ru/python-net/rotate-pages/
+url: /ru/python-net/rotate-pages/
 description: Эта тема описывает, как программно изменить ориентацию страниц в существующем PDF-файле с помощью Python.
 lastmod: "2023-04-17"
 sitemap:

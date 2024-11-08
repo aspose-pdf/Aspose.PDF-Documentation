@@ -3,7 +3,7 @@ title: 从 PDF 中提取表格数据使用 C#
 linktitle: 提取表格数据
 type: docs
 weight: 40
-url: zh/net/extract-data-from-table-in-pdf/
+url: /zh/net/extract-data-from-table-in-pdf/
 description: 学习如何使用 Aspose.PDF for .NET 在 C# 中提取 PDF 中的表格数据
 lastmod: "2021-06-05"
 sitemap:
@@ -22,7 +22,7 @@ Aspose.PDF for .NET 提供了一个工具来简化表格数据的检索。要提
 1. `TableList` 是一个 [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable) 的列表。要获取数据，遍历 `TableList` 并处理 [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) 和 [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
 2. 每个 [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) 包含一个 [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) 集合。您可以根据自己的需求处理它。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下示例显示了从所有页面提取表格的方法：
 
@@ -63,7 +63,7 @@ public static void Extract_Table()
 
 因此，如果您需要提取位于特定区域的表格，您必须处理特定的坐标。
 
-以下代码片段也使用[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也使用[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 以下示例展示如何提取标记为方形注释的表格：
 
@@ -116,9 +116,9 @@ public static void Extract_Marked_Table()
 ## 从 PDF 提取表格数据并存储到 CSV 文件
 
 以下示例展示了如何提取表格并将其存储为 CSV 文件。
-要了解如何将 PDF 转换为 Excel 电子表格，请参考 [将 PDF 转换为 Excel](/pdf/net/convert-pdf-to-excel/) 文章。
+要了解如何将 PDF 转换为 Excel 电子表格，请参考 [将 PDF 转换为 Excel](/pdf/zh/net/convert-pdf-to-excel/) 文章。
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ```csharp
 public static void Extract_Table_Save_CSV()

@@ -3,7 +3,7 @@ title: Системные требования
 linktitle: Системные требования
 type: docs
 weight: 30
-url: ru/java/system-requirements/
+url: /ru/java/system-requirements/
 description: В этом разделе перечислены поддерживаемые операционные системы, которые разработчик должен иметь для успешной работы с Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

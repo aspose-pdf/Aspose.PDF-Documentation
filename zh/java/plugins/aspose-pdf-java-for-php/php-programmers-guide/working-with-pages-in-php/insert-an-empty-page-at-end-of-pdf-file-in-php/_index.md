@@ -2,7 +2,7 @@
 title: 在 PHP 中在 PDF 文件末尾插入空白页
 type: docs
 weight: 60
-url: zh/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
+url: /zh/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Добавление нумерации страниц в PDF в Node.js
 linktitle: Добавить номер страницы
 type: docs
 weight: 100
-url: ru/nodejs-cpp/add-page-number/
+url: /ru/nodejs-cpp/add-page-number/
 description: Aspose.PDF для Node.js через C++ позволяет добавлять штамп с номером страницы в ваш PDF файл, используя AsposePdfAddPageNum.
 lastmod: "2023-11-16"
 sitemap:

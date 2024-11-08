@@ -3,7 +3,7 @@ title: 从PDF文档页面搜索并获取文本
 linktitle: 搜索并获取文本
 type: docs
 weight: 60
-url: zh/cpp/search-and-get-text-from-pdf/
+url: /zh/cpp/search-and-get-text-from-pdf/
 description: 本文解释了如何使用各种工具从PDF文档中搜索并获取文本。我们可以使用正则表达式从特定页面或整个页面进行搜索。
 lastmod: "2021-12-13"
 sitemap:

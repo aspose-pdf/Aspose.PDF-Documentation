@@ -3,7 +3,7 @@ title: Преобразование различных форматов файл
 linktitle: Преобразование других форматов файлов в PDF 
 type: docs
 weight: 80
-url: ru/php-java/convert-other-files-to-pdf/
+url: /ru/php-java/convert-other-files-to-pdf/
 lastmod: "2024-05-20"
 description: Эта тема показывает, как Aspose.PDF позволяет преобразовывать другие форматы файлов в PDF документ.
 sitemap:

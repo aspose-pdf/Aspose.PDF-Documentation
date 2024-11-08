@@ -6,7 +6,7 @@ linktitle: Оценка
 
 weight: 50
 
-url: ru/sharepoint/оцените-aspose-pdf/
+url: /ru/sharepoint/оцените-aspose-pdf/
 
 lastmod: "2020-12-16"
 

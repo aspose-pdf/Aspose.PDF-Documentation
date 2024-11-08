@@ -3,7 +3,7 @@ title: Заполнение AcroForms
 linktitle: Заполнение AcroForms
 type: docs
 weight: 20
-url: ru/java/fill-form/
+url: /ru/java/fill-form/
 description: В этом разделе объясняется, как заполнить поле формы в PDF-документе с помощью Aspose.PDF for Java.
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: 创建一个复杂的PDF
 linktitle: 创建一个复杂的PDF
 type: docs
 weight: 60
-url: zh/php-java/complex-pdf-example/
+url: /zh/php-java/complex-pdf-example/
 description: Aspose.PDF for PHP via Java 允许您创建包含图像、文本片段和表格的更复杂的文档。
 lastmod: "2024-06-05"
 sitemap:
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-[Hello, World](/pdf/php-java/hello-world-example/) 示例展示了使用 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将了解如何使用 Aspose.PDF for PHP via Java 创建更复杂的文档。作为一个示例，我们将使用一家虚构的提供客运渡轮服务的公司的文档。
+[Hello, World](/pdf/zh/php-java/hello-world-example/) 示例展示了使用 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将了解如何使用 Aspose.PDF for PHP via Java 创建更复杂的文档。作为一个示例，我们将使用一家虚构的提供客运渡轮服务的公司的文档。
 
 如果我们从头开始创建一个文档，我们需要遵循以下步骤：
 

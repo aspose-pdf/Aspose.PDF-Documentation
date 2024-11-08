@@ -2,7 +2,7 @@
 title: 从 PDF 文件中提取文本
 type: docs
 weight: 30
-url: zh/net/extract-text/
+url: /zh/net/extract-text/
 description: 本节说明如何使用 PdfExtractor 类从 pdf 中提取文本。
 lastmod: "2021-06-05"
 ---

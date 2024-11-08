@@ -2,7 +2,7 @@
 title: 添加文本和图像印章
 type: docs
 weight: 20
-url: zh/net/add-text-and-image-stamp/
+url: /zh/net/add-text-and-image-stamp/
 description: 本节介绍如何使用 Aspose.PDF Facades 中的 PdfFileStamp 类添加文本和图像印章。
 lastmod: "2021-06-05"
 draft: false

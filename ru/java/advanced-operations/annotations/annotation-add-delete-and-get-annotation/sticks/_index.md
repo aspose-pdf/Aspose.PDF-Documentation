@@ -3,7 +3,7 @@ title: PDF Sticky Annotations
 linktitle: Sticky Annotation
 type: docs
 weight: 50
-url: ru/java/sticky-annotations/
+url: /ru/java/sticky-annotations/
 description: Эта тема о липких аннотациях, в качестве примера мы показываем аннотацию водяного знака в тексте. Она используется для представления графики на странице. Ознакомьтесь с фрагментом кода для решения этой задачи.
 lastmod: "2021-11-24"
 sitemap:

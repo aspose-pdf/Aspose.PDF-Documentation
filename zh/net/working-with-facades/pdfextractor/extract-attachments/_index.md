@@ -2,7 +2,7 @@
 title: 从 PDF 文件中提取附件
 type: docs
 weight: 10
-url: zh/net/extract-attachments/
+url: /zh/net/extract-attachments/
 description: 本节介绍如何使用 PdfExtractor 类从 pdf 中提取附件。
 lastmod: "2021-06-05"
 ---

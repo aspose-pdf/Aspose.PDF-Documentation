@@ -2,7 +2,7 @@
 title: Получение Свойств Окна Документа и Отображения Страницы в Python
 type: docs
 weight: 30
-url: ru/java/get-document-window-and-page-display-properties-in-python/
+url: /ru/java/get-document-window-and-page-display-properties-in-python/
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PDF 注释在 Node.js 中
 linktitle: PDF 注释
 type: docs
 weight: 90
-url: zh/nodejs-cpp/annotations/
+url: /zh/nodejs-cpp/annotations/
 description: 本节展示如何通过 Aspose.PDF for Node.js via C++ 向您的 PDF 文件添加各种注释。
 lastmod: "2023-11-16"
 sitemap:
@@ -19,4 +19,4 @@ PDF 注释如高亮、下划线或添加评论允许用户突出显示 PDF 的�
 
 您可以执行以下操作：
 
-- [删除注释](/pdf/nodejs-cpp/delete-annotation/) - 本节解释如何在 Node.js 环境中从您的 PDF 中删除注释。
+- [删除注释](/pdf/zh/nodejs-cpp/delete-annotation/) - 本节解释如何在 Node.js 环境中从您的 PDF 中删除注释。

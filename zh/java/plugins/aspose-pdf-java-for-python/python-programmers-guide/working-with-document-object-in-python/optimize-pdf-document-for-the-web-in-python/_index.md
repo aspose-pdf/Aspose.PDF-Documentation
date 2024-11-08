@@ -2,7 +2,7 @@
 title: 优化 PDF 文档以适应网络在 Python 中
 type: docs
 weight: 60
-url: zh/java/optimize-pdf-document-for-the-web-in-python/
+url: /zh/java/optimize-pdf-document-for-the-web-in-python/
 lastmod: "2021-06-05"
 ---
 

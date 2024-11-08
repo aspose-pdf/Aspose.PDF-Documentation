@@ -2,7 +2,7 @@
 title: 使用MSI安装程序安装
 type: docs
 weight: 10
-url: zh/reportingservices/install-with-msi-installer/
+url: /zh/reportingservices/install-with-msi-installer/
 lastmod: "2021-06-05"
 ---
 

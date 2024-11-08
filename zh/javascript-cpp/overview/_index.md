@@ -3,7 +3,7 @@ title: 概述
 linktitle: 概述
 type: docs
 weight: 20
-url: zh/javascript-cpp/overview/
+url: /zh/javascript-cpp/overview/
 description: Aspose.PDF for JavaScript via C++ 的关键功能和支持格式概述、安装和许可手册。
 lastmod: "2022-12-13"
 sitemap:
@@ -34,9 +34,9 @@ Aspose.PDF for JavaScript 支持多种功能，如：
 
 了解更多关于：
 
-- [支持的文件格式](/pdf/javascript-cpp/supported-file-formats/)
-- [Aspose.PDF 的关键功能](/pdf/javascript-cpp/key-features/)
-- [系统要求](/pdf/javascript-cpp/system-requirements/)
-- [安装](/pdf/javascript-cpp/installation/)
-- [许可](/pdf/javascript-cpp/licensing/)
-- [技术支持](/pdf/javascript-cpp/technical-support/)
+- [支持的文件格式](/pdf/zh/javascript-cpp/supported-file-formats/)
+- [Aspose.PDF 的关键功能](/pdf/zh/javascript-cpp/key-features/)
+- [系统要求](/pdf/zh/javascript-cpp/system-requirements/)
+- [安装](/pdf/zh/javascript-cpp/installation/)
+- [许可](/pdf/zh/javascript-cpp/licensing/)
+- [技术支持](/pdf/zh/javascript-cpp/technical-support/)

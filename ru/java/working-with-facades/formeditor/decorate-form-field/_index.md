@@ -2,7 +2,7 @@
 title: Украшение Поля Формы в PDF
 type: docs
 weight: 20
-url: ru/java/decorate-form-field/
+url: /ru/java/decorate-form-field/
 description: В этом разделе объясняется, как украсить поле формы в PDF, используя класс FormEditor.
 lastmod: "2021-06-05"
 draft: false

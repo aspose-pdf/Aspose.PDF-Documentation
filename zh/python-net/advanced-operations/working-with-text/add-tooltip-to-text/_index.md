@@ -3,7 +3,7 @@ title: PDF 工具提示使用 Python
 linktitle: PDF 工具提示
 type: docs
 weight: 20
-url: zh/python-net/pdf-tooltip/
+url: /zh/python-net/pdf-tooltip/
 description: 学习如何使用 Python 和 Aspose.PDF 向 PDF 中的文本片段添加工具提示
 lastmod: "2024-02-17"
 sitemap:

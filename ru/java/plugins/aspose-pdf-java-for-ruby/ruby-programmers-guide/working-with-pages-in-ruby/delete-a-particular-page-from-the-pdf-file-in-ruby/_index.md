@@ -2,7 +2,7 @@
 title: Удаление Определенной Страницы из PDF Файла в Ruby
 type: docs
 weight: 20
-url: ru/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /ru/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 lastmod: "2021-06-05"
 ---
 

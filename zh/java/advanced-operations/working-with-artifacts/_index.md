@@ -3,7 +3,7 @@ title: 使用工件
 linktitle: 使用工件
 type: docs
 weight: 110
-url: zh/java/artifacts/
+url: /zh/java/artifacts/
 description: 本页介绍如何使用 Aspose.PDF for Java 处理 Artifact 类。代码示例展示了如何向 PDF 页面添加背景图像以及如何获取 PDF 文件第一页上的每个水印。
 lastmod: "2021-06-05"
 sitemap:

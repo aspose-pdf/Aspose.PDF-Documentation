@@ -2,7 +2,7 @@
 title: Удалить аннотации (фасады)
 type: docs
 weight: 10
-url: ru/net/delete-annotations/
+url: /ru/net/delete-annotations/
 description: Этот раздел объясняет, как удалить аннотации с использованием Aspose.PDF Facades и класса PdfAnnotationEditor.
 lastmod: "2021-06-05"
 sitemap:

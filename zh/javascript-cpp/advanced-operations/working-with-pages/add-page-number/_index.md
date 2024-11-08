@@ -3,7 +3,7 @@ title: 使用 JavaScript 通过 C++ 向 PDF 添加页码
 linktitle: 添加页码
 type: docs
 weight: 100
-url: zh/javascript-cpp/add-page-number/
+url: /zh/javascript-cpp/add-page-number/
 description: Aspose.PDF for JavaScript via C++ 允许您使用 AsposePdfAddPageNum 向 PDF 文件添加页码印章。
 lastmod: "2023-04-17"
 sitemap:

@@ -3,7 +3,7 @@ title: 从 PDF 中提取文本在 Node.js 中
 linktitle: 从 PDF 中提取文本
 type: docs
 weight: 30
-url: zh/nodejs-cpp/extract-text-from-pdf/
+url: /zh/nodejs-cpp/extract-text-from-pdf/
 description: 本文介绍了使用 Aspose.PDF for Node.js via C++ 从 PDF 文档中提取文本的各种方法。
 lastmod: "2023-11-16"
 sitemap:

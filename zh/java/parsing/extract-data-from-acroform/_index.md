@@ -3,7 +3,7 @@ title: 从AcroForm提取数据
 linktitle: 从AcroForm提取数据
 type: docs
 weight: 50
-url: zh/java/extract-data-from-acroform/
+url: /zh/java/extract-data-from-acroform/
 description: AcroForms存在于许多PDF文档中。本文旨在帮助您了解如何使用Java和Aspose.PDF从AcroForms中提取数据。
 lastmod: "2021-06-05"
 sitemap:

@@ -3,7 +3,7 @@ title: Конвертировать PDF файл в другие форматы
 linktitle: Конвертировать PDF в другие форматы 
 type: docs
 weight: 90
-url: ru/cpp/convert-pdf-to-other-files/
+url: /ru/cpp/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
 description: Эта тема показывает, как Aspose.PDF позволяет конвертировать PDF файл в другие форматы.
 sitemap:

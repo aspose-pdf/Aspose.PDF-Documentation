@@ -3,7 +3,7 @@ title: 将PDF转换为Excel
 linktitle: 将PDF转换为Excel 
 type: docs
 weight: 90
-url: zh/androidjava/convert-pdf-to-excel/
+url: /zh/androidjava/convert-pdf-to-excel/
 lastmod: "2021-06-05"
 description: Aspose.PDF for Android via Java允许您将PDF转换为Excel格式。在此过程中，PDF文件的各个页面将被转换为Excel工作表。
 sitemap:

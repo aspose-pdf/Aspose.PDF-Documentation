@@ -3,7 +3,7 @@ title: 将PDF文件转换为HTML格式
 linktitle: 将PDF文件转换为HTML格式
 type: docs
 weight: 50
-url: zh/cpp/convert-pdf-to-html/
+url: /zh/cpp/convert-pdf-to-html/
 lastmod: "2021-11-19"
 description: 本主题向您展示如何使用C++库的Aspose.PDF将PDF文件转换为HTML格式。
 sitemap:

@@ -3,7 +3,7 @@ title: 提取 AcroForm 数据使用 C++
 linktitle: 提取数据 AcroForm
 type: docs
 weight: 30
-url: zh/cpp/extract-form/
+url: /zh/cpp/extract-form/
 description: 本节解释如何使用 Aspose.PDF for C++ 从 PDF 文档中提取表单。
 lastmod: "2021-12-01"
 sitemap:

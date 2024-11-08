@@ -2,7 +2,7 @@
 title: Encrypt PDF File
 type: docs
 weight: 10
-url: zh/net/encrypt-pdf-file/
+url: /zh/net/encrypt-pdf-file/
 description: 本主题解释了如何使用 PdfFileSecurity 类加密 PDF 文件。
 lastmod: "2021-06-05"
 draft: false

@@ -3,7 +3,7 @@ title: 向 PDF 文件添加文本
 linktitle: 向 PDF 文件添加文本
 type: docs
 weight: 10
-url: zh/php-java/add-text-to-pdf-file/
+url: /zh/php-java/add-text-to-pdf-file/
 description: 本文介绍了在 Aspose.PDF 中处理文本的各个方面。了解如何向 PDF 添加文本、添加 HTML 片段或使用自定义 OTF 字体。
 lastmod: "2024-06-05"
 sitemap:

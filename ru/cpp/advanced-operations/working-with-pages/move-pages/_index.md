@@ -3,7 +3,7 @@ title: Перемещение страниц PDF программно на C++
 linktitle: Перемещение страниц PDF
 type: docs
 weight: 20
-url: ru/cpp/move-pages/
+url: /ru/cpp/move-pages/
 description: Попробуйте переместить страницы в нужное место или в конец PDF файла с помощью Aspose.PDF для C++.
 lastmod: "2021-12-09"
 sitemap:

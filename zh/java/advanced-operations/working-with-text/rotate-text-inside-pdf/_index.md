@@ -3,7 +3,7 @@ title: 在 PDF 中旋转文本
 linktitle: 在 PDF 中旋转文本
 type: docs
 weight: 50
-url: zh/java/rotate-text-inside-pdf/
+url: /zh/java/rotate-text-inside-pdf/
 description: 学习不同方式在 PDF 中旋转文本。Aspose.PDF 允许您以任意角度旋转文本，旋转文本片段或整个段落。
 lastmod: "2021-06-05"
 sitemap:

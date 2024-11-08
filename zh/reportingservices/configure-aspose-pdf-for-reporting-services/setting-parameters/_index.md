@@ -2,7 +2,7 @@
 title: 设置参数
 type: docs
 weight: 10
-url: zh/reportingservices/setting-parameters/
+url: /zh/reportingservices/setting-parameters/
 lastmod: "2021-06-05"
 ---
 

@@ -6,7 +6,7 @@ type: docs
 
 weight: 80
 
-url: zh/java/adding-annotations-to-existing-pdf-file/
+url: /zh/java/adding-annotations-to-existing-pdf-file/
 
 description: 本节解释如何使用 Aspose.PDF Facades 向现有 PDF 文件添加注释。
 

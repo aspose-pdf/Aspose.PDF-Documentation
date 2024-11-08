@@ -3,7 +3,7 @@ title: Добавление цифровой подписи или цифров�
 linktitle: Цифровая подпись PDF
 type: docs
 weight: 70
-url: ru/javascript-cpp/sign-pdf/
+url: /ru/javascript-cpp/sign-pdf/
 description: Цифровая подпись PDF документов с использованием JavaScript через C++.
 lastmod: "2023-02-17"
 sitemap:

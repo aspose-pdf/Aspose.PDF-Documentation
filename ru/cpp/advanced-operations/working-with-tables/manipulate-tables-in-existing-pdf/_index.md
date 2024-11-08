@@ -3,7 +3,7 @@ title: Манипуляции с таблицами в существующем 
 linktitle: Манипуляции с таблицами
 type: docs
 weight: 40
-url: ru/cpp/manipulate-tables-in-existing-pdf/
+url: /ru/cpp/manipulate-tables-in-existing-pdf/
 description: Этот раздел охватывает различные методы изменения таблиц с использованием Aspose.PDF для C++
 lastmod: "2021-11-11"
 sitemap:

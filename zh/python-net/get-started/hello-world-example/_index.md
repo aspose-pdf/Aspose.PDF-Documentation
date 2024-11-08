@@ -3,7 +3,7 @@ title: Python 中 Hello World 的示例
 linktitle: Hello World 示例
 type: docs
 weight: 20
-url: zh/python-net/hello-world-example/
+url: /zh/python-net/hello-world-example/
 description: 此示例演示如何使用 Aspose.PDF for Python via .NET 创建一个包含文本 Hello World 的简单 PDF 文档。
 lastmod: "2022-12-22"
 sitemap:

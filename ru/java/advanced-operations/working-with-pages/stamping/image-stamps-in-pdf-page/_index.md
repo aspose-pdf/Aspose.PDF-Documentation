@@ -3,7 +3,7 @@ title: Добавление изображений штампов в PDF про�
 linktitle: Изображения штампы в PDF файле
 type: docs
 weight: 10
-url: ru/java/image-stamps-in-pdf-page/
+url: /ru/java/image-stamps-in-pdf-page/
 description: Добавьте изображение штампа в свой PDF документ, используя класс ImageStamp с библиотекой Aspose.PDF для Java.
 lastmod: "2021-06-05"
 sitemap:

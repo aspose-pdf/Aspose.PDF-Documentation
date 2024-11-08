@@ -3,7 +3,7 @@ title: 支持的文件格式
 linktitle: 支持的文件格式
 type: docs
 weight: 10
-url: zh/nodejs-cpp/supported-file-formats/
+url: /zh/nodejs-cpp/supported-file-formats/
 description: 本页面展示了 Aspose.PDF for Node.js 可以加载和保存的文件格式。
 lastmod: "2023-11-16"
 sitemap:

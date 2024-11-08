@@ -3,7 +3,7 @@ title: Работа с Фасадами
 linktitle: Работа с Фасадами
 type: docs
 weight: 80
-url: ru/python-java/working-with-facades/
+url: /ru/python-java/working-with-facades/
 description: В этом разделе объясняется, как работать с Фасадами - набором инструментов для популярных операций с PDF.
 lastmod: "2023-06-15"
 sitemap:

@@ -2,7 +2,7 @@
 title: Получение свойств окна документа и отображения страницы в Python
 type: docs
 weight: 30
-url: ru/python-java/get-document-window-and-page-display-properties-in-python/
+url: /ru/python-java/get-document-window-and-page-display-properties-in-python/
 ---
 
 <ins>Чтобы получить свойства окна документа и отображения страницы PDF-документа с использованием **Aspose.PDF Java for Python**, просто вызовите класс **GetDocumentWindow**.

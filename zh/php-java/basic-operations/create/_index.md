@@ -3,7 +3,7 @@ title: 创建 PDF 文档
 linktitle: 创建
 type: docs
 weight: 10
-url: zh/php-java/create-document/
+url: /zh/php-java/create-document/
 description: 了解如何在 Aspose.PDF for PHP via Java 中创建 PDF 文件。
 lastmod: "2024-06-05"
 sitemap:

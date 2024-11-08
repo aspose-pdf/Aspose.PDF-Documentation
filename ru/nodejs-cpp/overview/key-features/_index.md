@@ -3,7 +3,7 @@ title: Ключевые особенности Aspose.PDF для Node.js
 linktitle: Ключевые особенности
 type: docs
 weight: 20
-url: ru/nodejs-cpp/key-features/
+url: /ru/nodejs-cpp/key-features/
 description: Aspose.PDF для Node.js через C++ демонстрирует свои общие функции. На этой странице описаны поддерживаемые версии PDF и все манипуляции, которые мы можем выполнять с текстом, изображениями, страницами и т.д.
 lastmod: "2023-11-16"
 sitemap:

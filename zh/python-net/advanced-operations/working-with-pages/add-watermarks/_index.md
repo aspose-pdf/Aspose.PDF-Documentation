@@ -3,7 +3,7 @@ title: 使用 Python 向 PDF 添加水印
 linktitle: 添加水印
 type: docs
 weight: 40
-url: zh/python-net/add-watermarks/
+url: /zh/python-net/add-watermarks/
 description: 本文解释了如何使用 Python 程序处理 PDF 中的工件和获取水印的功能。
 lastmod: "2023-04-17"
 sitemap:

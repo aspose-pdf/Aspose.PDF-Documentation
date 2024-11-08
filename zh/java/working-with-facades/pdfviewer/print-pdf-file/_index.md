@@ -2,7 +2,7 @@
 title: 使用PDF打印
 type: docs
 weight: 10
-url: zh/java/print-pdf-file/
+url: /zh/java/print-pdf-file/
 description: 本节说明如何使用Aspose.PDF Facades通过PdfViewer类打印PDF文件。
 lastmod: "2021-06-05"
 sitemap:

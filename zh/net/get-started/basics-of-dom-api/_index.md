@@ -3,7 +3,7 @@ title: Aspose.PDF DOM API 基础
 linktitle: DOM API 基础
 type: docs
 weight: 140
-url: zh/net/basics-of-dom-api/
+url: /zh/net/basics-of-dom-api/
 description: Aspose.PDF for .NET 也使用 DOM 的概念来表示 PDF 文档的结构。
 lastmod: "2021-06-05"
 sitemap:

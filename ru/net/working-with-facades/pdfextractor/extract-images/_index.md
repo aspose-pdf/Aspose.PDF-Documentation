@@ -2,7 +2,7 @@
 title: Извлечение изображений с использованием PdfExtractor
 type: docs
 weight: 20
-url: ru/net/extract-images/
+url: /ru/net/extract-images/
 description: Этот раздел объясняет, как извлекать изображения с помощью Aspose.PDF Facades, используя класс PdfExtractor.
 lastmod: "2021-07-15"
 ---

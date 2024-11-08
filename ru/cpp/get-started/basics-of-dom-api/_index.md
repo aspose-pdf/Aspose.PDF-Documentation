@@ -3,7 +3,7 @@ title: Основы Aspose.PDF DOM API
 linktitle: Основы DOM API
 type: docs
 weight: 120
-url: ru/cpp/basics-of-dom-api/
+url: /ru/cpp/basics-of-dom-api/
 description: Aspose.PDF для C++ также использует идею DOM для представления структуры PDF-документа в виде объектов. Здесь вы можете прочитать описание этой структуры.
 lastmod: "2021-06-05"
 sitemap:

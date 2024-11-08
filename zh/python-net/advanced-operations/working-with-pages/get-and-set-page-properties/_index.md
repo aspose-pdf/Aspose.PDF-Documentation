@@ -3,7 +3,7 @@ title: 使用 Python 获取和设置页面属性
 linktitle: 获取和设置页面属性
 type: docs
 weight: 90
-url: zh/python-net/get-and-set-page-properties/
+url: /zh/python-net/get-and-set-page-properties/
 description: 本节展示如何获取 PDF 文件中的页数，获取有关 PDF 页面属性（如颜色）的信息，并设置页面属性。
 lastmod: "2023-04-17"
 sitemap:
@@ -223,7 +223,7 @@ PDF 文件中的每个页面都有许多属性，例如宽度、高度、出血�
 
 ## 获取 PDF 文件的特定页面
 
-Aspose.PDF for Python 允许您[将 PDF 拆分为单独的页面](/pdf/python-net/split-pdf-document/)并将其另存为 PDF 文件。在 PDF 文件中获取指定页面并将其另存为新的 PDF 是一个非常类似的操作：打开源文档，访问页面，创建一个新文档并将页面添加到该文档中。
+Aspose.PDF for Python 允许您[将 PDF 拆分为单独的页面](/pdf/zh/python-net/split-pdf-document/)并将其另存为 PDF 文件。在 PDF 文件中获取指定页面并将其另存为新的 PDF 是一个非常类似的操作：打开源文档，访问页面，创建一个新文档并将页面添加到该文档中。
 
 [Document](https://reference.aspose.com/pdf/python-net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/pagecollection) 包含 PDF 文件中的页面。要从此集合中获取特定页面：
 

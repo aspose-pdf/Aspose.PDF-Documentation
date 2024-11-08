@@ -3,7 +3,7 @@ title: 设置图像大小
 linktitle: 设置图像大小
 type: docs
 weight: 80
-url: zh/java/set-image-size/
+url: /zh/java/set-image-size/
 description: 本节介绍如何使用 Java 库设置 PDF 文件中的图像大小。
 lastmod: "2021-06-05"
 ---

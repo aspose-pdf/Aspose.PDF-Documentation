@@ -2,7 +2,7 @@
 title: 删除 PDF 页面
 type: docs
 weight: 70
-url: zh/net/delete-pdf-pages/
+url: /zh/net/delete-pdf-pages/
 description: 本节介绍如何使用 PdfFileEditor 类通过 Aspose.PDF Facades 删除 PDF 页面。
 lastmod: "2021-06-05"
 draft: false

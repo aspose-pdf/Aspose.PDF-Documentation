@@ -3,7 +3,7 @@ title: 添加 PDF 页眉和页脚
 linktitle: 添加 PDF 页眉和页脚
 type: docs
 weight: 70
-url: zh/php-java/add-headers-and-footers-of-pdf-file/
+url: /zh/php-java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for PHP via Java 允许您使用 TextStamp 类为 PDF 文件添加页眉和页脚。
 lastmod: "2024-06-05"
 sitemap:

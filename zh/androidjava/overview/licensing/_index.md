@@ -3,7 +3,7 @@ title: 许可和限制
 linktitle: 许可和限制
 type: docs
 weight: 50
-url: zh/androidjava/licensing/
+url: /zh/androidjava/licensing/
 description: Aspose.PDF for Android via Java 邀请客户获取经典许可和计量许可。以及使用有限许可更好地探索产品。
 lastmod: "2021-06-05"
 sitemap:

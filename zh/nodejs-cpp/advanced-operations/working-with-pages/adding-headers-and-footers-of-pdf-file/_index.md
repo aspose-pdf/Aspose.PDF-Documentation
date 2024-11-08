@@ -3,7 +3,7 @@ title: 在 Node.js 中添加 PDF 页眉和页脚
 linktitle: 添加 PDF 页眉和页脚
 type: docs
 weight: 70
-url: zh/nodejs-cpp/add-headers-and-footers-of-pdf-file/
+url: /zh/nodejs-cpp/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Node.js via C++ 允许您使用 AsposePdfAddTextHeaderFooter 向 PDF 文件添加页眉和页脚。
 lastmod: "2023-11-16"
 sitemap:

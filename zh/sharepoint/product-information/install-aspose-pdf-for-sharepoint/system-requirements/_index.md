@@ -2,7 +2,7 @@
 title: 系统要求
 type: docs
 weight: 10
-url: zh/sharepoint/system-requirements/
+url: /zh/sharepoint/system-requirements/
 lastmod: "2020-12-16"
 description: PDF SharePoint API 具有服务器和客户端要求，以及运行 Microsoft SharePoint Server 的计算机的必要性。
 ---

@@ -3,7 +3,7 @@ title: Заполнение AcroForm - Заполните PDF-форму с ис
 linktitle: Заполнение AcroForm
 type: docs
 weight: 20
-url: ru/python-net/fill-form/
+url: /ru/python-net/fill-form/
 keywords: Заполнить PDF Форму Python
 description: Вы можете заполнять формы в вашем PDF-документе с помощью библиотеки Aspose.PDF для Python.
 lastmod: "2023-02-17"

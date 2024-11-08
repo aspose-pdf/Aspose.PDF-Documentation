@@ -3,7 +3,7 @@ title: Преобразование различных форматов изоб
 linktitle: Преобразование изображений в PDF
 type: docs
 weight: 60
-url: ru/php-java/convert-images-format-to-pdf/
+url: /ru/php-java/convert-images-format-to-pdf/
 lastmod: "2024-05-20"
 description: Эта тема покажет вам, как библиотека Aspose.PDF для PHP позволяет преобразовывать различные форматы изображений в PDF.
 sitemap:

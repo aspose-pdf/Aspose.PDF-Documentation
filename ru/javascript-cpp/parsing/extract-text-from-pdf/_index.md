@@ -3,7 +3,7 @@ title: Извлечение текста из PDF с использование�
 linktitle: Извлечение текста из PDF
 type: docs
 weight: 30
-url: ru/javascript-cpp/extract-text-from-pdf/
+url: /ru/javascript-cpp/extract-text-from-pdf/
 description: В этой статье описаны различные способы извлечения текста из PDF-документов с использованием Aspose.PDF для JavaScript.
 lastmod: "2023-06-05"
 sitemap:

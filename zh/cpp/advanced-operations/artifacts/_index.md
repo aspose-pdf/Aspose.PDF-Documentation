@@ -3,7 +3,7 @@ title: 在C++中使用Artifacts
 linktitle: 使用Artifacts
 type: docs
 weight: 110
-url: zh/cpp/artifacts/
+url: /zh/cpp/artifacts/
 description: 本页描述了如何使用Aspose.PDF for C++处理Artifact类。代码片段展示了如何向PDF页面添加背景图像以及如何获取PDF文件第一页的每个水印。
 lastmod: "2021-11-22"
 sitemap:

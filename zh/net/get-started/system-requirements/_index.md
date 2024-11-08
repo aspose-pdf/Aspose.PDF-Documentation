@@ -3,7 +3,7 @@ title: 系统要求
 linktitle: 系统要求
 type: docs
 weight: 30
-url: zh/net/system-requirements/
+url: /zh/net/system-requirements/
 description: 本节列出了开发人员为了成功使用 Aspose.PDF for .NET 需要支持的操作系统。
 lastmod: "2023-05-12"
 sitemap:

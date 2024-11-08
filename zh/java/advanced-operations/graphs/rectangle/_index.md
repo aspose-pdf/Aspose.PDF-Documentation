@@ -3,7 +3,7 @@ title: 将矩形对象添加到PDF文件
 linktitle: 添加矩形
 type: docs
 weight: 50
-url: zh/java/add-rectangle/
+url: /zh/java/add-rectangle/
 description: 本文解释了如何使用Aspose.PDF for Java在PDF中创建矩形对象。
 lastmod: "2021-06-05"
 sitemap:

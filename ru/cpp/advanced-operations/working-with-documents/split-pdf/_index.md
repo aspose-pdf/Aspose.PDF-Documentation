@@ -3,7 +3,7 @@ title: Программное разделение PDF
 linktitle: Разделение PDF файлов
 type: docs
 weight: 60
-url: ru/cpp/split-pdf-document/
+url: /ru/cpp/split-pdf-document/
 description: Эта тема показывает, как разделить страницы PDF на отдельные PDF файлы с помощью C++.
 lastmod: "2022-09-01"
 sitemap:

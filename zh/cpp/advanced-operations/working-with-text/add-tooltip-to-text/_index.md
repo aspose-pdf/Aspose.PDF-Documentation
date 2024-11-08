@@ -3,7 +3,7 @@ title: PDF Tooltip using using C++
 linktitle: PDF Tooltip
 type: docs
 weight: 20
-url: zh/cpp/pdf-tooltip/
+url: /zh/cpp/pdf-tooltip/
 description: 了解如何使用 C++ 和 Aspose.PDF 向 PDF 文档中的文本片段添加工具提示
 lastmod: "2021-12-13"
 sitemap:

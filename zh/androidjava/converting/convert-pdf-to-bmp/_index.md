@@ -3,7 +3,7 @@ title: 将 PDF 转换为 BMP
 linktitle: 将 PDF 转换为 BMP
 type: docs
 weight: 40
-url: zh/androidjava/convert-pdf-to-bmp/
+url: /zh/androidjava/convert-pdf-to-bmp/
 lastmod: "2021-06-05"
 description: 本文介绍如何使用 Java 将 PDF 页面转换为 BMP 图像，将所有页面转换为 BMP 图像以及将单个 PDF 页面转换为 BMP 图像。
 sitemap:

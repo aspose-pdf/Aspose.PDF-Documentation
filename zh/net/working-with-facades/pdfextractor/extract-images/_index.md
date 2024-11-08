@@ -2,7 +2,7 @@
 title: 提取图像使用 PdfExtractor
 type: docs
 weight: 20
-url: zh/net/extract-images/
+url: /zh/net/extract-images/
 description: 本节说明如何使用 Aspose.PDF Facades 中的 PdfExtractor 类提取图像。
 lastmod: "2021-07-15"
 ---

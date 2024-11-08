@@ -3,7 +3,7 @@ title: 将曲线对象添加到PDF文件
 linktitle: 添加曲线
 type: docs
 weight: 30
-url: zh/cpp/add-curve/
+url: /zh/cpp/add-curve/
 description: 本文解释了如何使用Aspose.PDF for C++在PDF中创建曲线对象。
 lastmod: "2021-12-18"
 sitemap:

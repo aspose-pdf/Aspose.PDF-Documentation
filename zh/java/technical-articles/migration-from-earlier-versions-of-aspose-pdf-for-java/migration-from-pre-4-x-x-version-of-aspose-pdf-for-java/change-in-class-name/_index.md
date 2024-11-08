@@ -2,7 +2,7 @@
 title: 类名更改
 type: docs
 weight: 20
-url: zh/java/change-in-class-name/
+url: /zh/java/change-in-class-name/
 lastmod: "2022-01-27"
 ---
 

@@ -2,7 +2,7 @@
 title: 在 Python 中合并 PDF 文件
 type: docs
 weight: 10
-url: zh/python-java/concatenate-pdf-files-in-python/
+url: /zh/python-java/concatenate-pdf-files-in-python/
 ---
 
 要使用 **Aspose.PDF Java for Python** 合并 PDF 文件，只需调用 **ConcatenatePdfFiles** 类。

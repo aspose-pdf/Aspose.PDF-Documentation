@@ -3,7 +3,7 @@ title: Licensing and limitations
 linktitle: Licensing and limitations
 type: docs
 weight: 50
-url: ru/androidjava/licensing/
+url: /ru/androidjava/licensing/
 description: Aspose.PDF for Android via Java приглашает своих клиентов приобрести Классическую лицензию и Лицензию с учетом использования. Также используйте ограниченную лицензию для более полного изучения продукта.
 lastmod: "2021-06-05"
 sitemap:

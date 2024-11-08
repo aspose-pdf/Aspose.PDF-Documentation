@@ -3,7 +3,7 @@ title: 在 PDF 中旋转文本使用 Python
 linktitle: 在 PDF 中旋转文本
 type: docs
 weight: 50
-url: zh/python-net/rotate-text-inside-pdf/
+url: /zh/python-net/rotate-text-inside-pdf/
 description: 学习不同的方法在 PDF 中旋转文本。Aspose.PDF 允许您旋转文本到任何角度，旋转文本片段或整个段落。
 lastmod: "2024-02-17"
 sitemap:

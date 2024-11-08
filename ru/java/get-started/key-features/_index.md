@@ -3,7 +3,7 @@ title: Основные возможности Aspose.PDF
 linktitle: Основные возможности
 type: docs
 weight: 80
-url: ru/java/key-features/
+url: /ru/java/key-features/
 description: Aspose.PDF для Java демонстрирует основные функции и описывает поддерживаемые версии PDF, а также все манипуляции, которые мы можем выполнять с документами.
 lastmod: "2021-06-05"
 sitemap:
