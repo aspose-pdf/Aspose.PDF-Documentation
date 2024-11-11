@@ -1,6 +1,6 @@
 ---
-title: PDF Annotations using C++
-linktitle: PDF Annotations
+title: PDF 注釈 using C++
+linktitle: PDF 注釈
 type: docs
 weight: 100
 url: /ja/cpp/annotations/
