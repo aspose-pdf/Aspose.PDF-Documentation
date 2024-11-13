@@ -13,6 +13,7 @@ sitemap:
 This article provides detailed step-by-step instructions for converting PDF documents in Microsoft Azure using Aspose.PDF for .NET and Azure function.
 
 ## Prerequisites
+
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
 * Azure Account: You need an Azure subscription, create a free account before beginning.
 * .NET 6 SDK.
@@ -21,6 +22,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ## Create Azure Resources
 
 ### Create Storage Account
+
 1. Go to Azure Portal (https://portal.azure.com).
 2. Click "Create a resource".
 3. Search for "Storage account".
@@ -36,6 +38,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 7. Click "Create".
 
 ### Create Container
+
 1. Open your storage account.
 2. Go to "Containers" under "Data storage".
 3. Click "+ Container".
@@ -46,6 +49,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ## Create Project
 
 ### Create Visual Studio Project
+
 1. Open Visual Studio 2022.
 2. Click "Create a new project".
 3. Select "Azure Functions".
@@ -56,6 +60,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ### Create Visual Studio Code Project
 
 #### Install Prerequisites
+
 1. Visual Code extensions:
 ```bash
 code --install-extension ms-dotnettools.csharp
@@ -74,6 +79,7 @@ npm install -g azure-functions-core-tools@4 --unsafe-perm true
 - Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
 
 #### Configure Project
+
 1. Open project in Visual Studio Code:
 ```bash
 code .
@@ -96,6 +102,7 @@ code .
 ```
 
 ## Install Required NuGet Packages
+
 In Visual Studio open Package Manager Console and run:
 ```powershell
 Install-Package Aspose.PDF
@@ -109,6 +116,7 @@ dotnet restore
 ```
 
 ## Configure Azure Storage Connection
+
 Get Access Keys for the storage account under Access keys in the Azure Portal. These keys will be used to authenticate your application.
 
 1. Open `local.settings.json`:
@@ -126,6 +134,7 @@ Get Access Keys for the storage account under Access keys in the Azure Portal. T
 2. Replace `YOUR_STORAGE_CONNECTION_STRING` with your actual storage connection string from Azure Portal.
 
 ## Configure Aspose License
+
 In Visual Studio:
 
 1. Copy your Aspose.PDF license file to the project.
@@ -138,6 +147,7 @@ license.SetLicense("Aspose.PDF.lic");
 ```
 
 ## Create code
+
 Create a new file `PdfConverter.cs`:
 
 ```csharp
@@ -299,6 +309,7 @@ namespace PdfConverterAzure.Functions
 ```
 
 ## Test Locally
+
 In Visual Studio:
 1. Start the Azure Storage Emulator.
 2. Run the project in Visual Studio.
@@ -333,6 +344,7 @@ curl -X POST http://localhost:7071/api/convert \
 ```
 
 ## Deploy to Azure
+
 In Visual Studio:
 1. Right-click the project in Visual Studio.
 2. Select "Publish".
@@ -349,6 +361,7 @@ In Visual Studio Code:
 5. Click "Deploy".
 
 ## Configure Azure Function App
+
 1. Go to Azure Portal.
 2. Open your Function App.
 3. Go to "Configuration".
@@ -358,6 +371,7 @@ In Visual Studio Code:
 5. Save changes.
 
 ## Test the Deployed Service
+
 Use Postman or curl to test:
 ```bash
 curl -X POST "https://your-function.azurewebsites.net/api/convert" \
@@ -367,10 +381,13 @@ curl -X POST "https://your-function.azurewebsites.net/api/convert" \
 ```
 
 ## Supported Formats
+
 The list of supported formats can be found [here](https://docs.aspose.com/pdf/net/supported-file-formats/).
 
 ## Trobleshooting
+
 ### Important Configuration Options
+
 1. Add authentication:
 ```csharp
 [FunctionName("ConvertPdf")]
