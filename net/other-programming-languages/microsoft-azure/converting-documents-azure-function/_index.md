@@ -14,7 +14,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 
 ## Prerequisites
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
-* Azure Account: You need an Azure subscription, create a free account before begin.
+* Azure Account: You need an Azure subscription, create a free account before beginning.
 * .NET 6 SDK.
 * Aspose.PDF for .NET.
 
@@ -29,7 +29,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
    - Subscription: Choose your subscription.
    - Resource group: Create new or select existing.
    - Storage account name: Enter a unique name.
-   - Region: Choose nearest region.
+   - Region: Choose the nearest region.
    - Performance: Standard.
    - Redundancy: LRS (Locally redundant storage).
 6. Click "Review + create".
@@ -54,6 +54,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 6. Click "Create".
 
 ### Create Visual Studio Code Project
+
 #### Install Prerequisites
 1. Visual Code extensions:
 ```bash
@@ -126,14 +127,15 @@ Get Access Keys for the storage account under Access keys in the Azure Portal. T
 
 ## Configure Aspose License
 In Visual Studio:
+
 1. Copy your Aspose.PDF license file to the project.
-2. Right-click on the license file.
+2. Right-click on the license file, and select "Properties".
 3. Set "Copy to Output Directory" to "Copy always".
-4. Add license initialization code in Startup.cs:
-   ```csharp
-   var license = new Aspose.Pdf.License();
-   license.SetLicense("Aspose.PDF.lic");
-   ```
+4. Add license initialization code in the Program.cs:
+```csharp
+var license = new Aspose.Pdf.License();
+license.SetLicense("Aspose.PDF.lic");
+```
 
 ## Create code
 Create a new file `PdfConverter.cs`:
@@ -386,7 +388,7 @@ public async Task<IActionResult> Run(
 
 2. For large files, consider:
    - Increasing function timeout.
-   - Using consumption plan with more memory.
+   - Using a consumption plan with more memory.
    - Implementing chunked upload/download.
    - Adding progress tracking.
 
