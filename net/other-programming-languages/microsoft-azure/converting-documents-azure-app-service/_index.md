@@ -14,7 +14,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 
 ## Prerequisites
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
-* Azure Account: You need an Azure subscription, create a free account before begin.
+* Azure Account: You need an Azure subscription, create a free account before beginning.
 * .NET 6 SDK.
 * Aspose.PDF for .NET.
 
@@ -22,11 +22,11 @@ This article provides detailed step-by-step instructions for converting PDF docu
 
 ### Create App Service
 1. Go to Azure Portal (https://portal.azure.com).
-2. Create new Resource Group
-3. Create new App Service:
+2. Create a new Resource Group
+3. Create a new App Service:
    - Choose .NET 6 (LTS) runtime
    - Select appropriate pricing tier
-4. Create Application Insights resource for logging.
+4. Create an Application Insights resource for logging.
 
 ## Create Project
 
@@ -39,6 +39,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 6. Click "Create".
 
 ### Create Visual Studio Code Project
+
 #### Install Prerequisites
 1. Visual Code extensions:
 ```bash
@@ -115,14 +116,15 @@ dotnet restore
 
 ## Configure Aspose License
 In Visual Studio:
+
 1. Copy your Aspose.PDF license file to the project.
-2. Right-click on the license file, select "Properties".
+2. Right-click on the license file, and select "Properties".
 3. Set "Copy to Output Directory" to "Copy always".
-4. Add license initialization code in Program.cs:
-   ```csharp
-   var license = new Aspose.Pdf.License();
-   license.SetLicense("Aspose.PDF.lic");
-   ```
+4. Add license initialization code in the Program.cs:
+```csharp
+var license = new Aspose.Pdf.License();
+license.SetLicense("Aspose.PDF.lic");
+```
 
 ### Create code
 In Visual Studio:
