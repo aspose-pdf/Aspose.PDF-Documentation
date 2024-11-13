@@ -21,7 +21,7 @@ sitemap:
         "name":"Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        
     },
     "genre": "pdf document generation",
     "keywords": "pdf, c#, advanced operations in pdf, create pdf, delete pdf, manipulate pdf",
