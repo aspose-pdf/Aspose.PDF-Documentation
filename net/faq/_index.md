@@ -17,11 +17,11 @@ sitemap:
         <h3 itemprop="name" class="faq-q">
 What formats does Aspose.PDF for .NET support?
         </h3>
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    </div>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <p itemprop="text" class="faq-a">
 Aspose.PDF for .NET supports popular file formats such as PDF, TXT, HTML, PCL, XML, XPS, EPUB, TEX, and image formats. For more details, please visit the page <a itemprop="url" href="https://docs.aspose.com/pdf/net/supported-file-formats/">Supported File Formats</a>.
-            </p>
-        </div>
+        </p>
     </div>
 
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
@@ -413,7 +413,7 @@ I see errors in PDF/A conversion log. Does it mean that the document wasn't conv
     </div>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <p itemprop="text" class="faq-a">
-No, Aspose.PDF logs all problems it encountered, including the ones that were automatically fixed. If all entries in the log are marked as Convertable="True", it means that all problems were fixed, and the document was successfully converted. Only the entries with Convertable=False indicate the conversion failure.
+No, Aspose.PDF logs all problems it encountered, including the ones that were automatically fixed. If all entries in the log are marked as Convertable=True, all problems were fixed, and the document was successfully converted. Only the entries with Convertable=False indicate the conversion failure.
         </p>
     </div>
 
@@ -440,7 +440,7 @@ Aspose.PDF for .NET does not support the following .NET frameworks:
 - .NET 2.0
 - .NET 3.5
 
-But you can use Aspose.PDF for .NET with any of these frameworks in your project. The library provides a consistent API across the different .NET versions, making it easy to migrate your code between frameworks as needed.
+However, you can use Aspose.PDF for .NET with any of these frameworks for your project. The library provides a consistent API across the different .NET versions, making it easy to migrate your code between frameworks as needed.
         </p>
     </div>
 
