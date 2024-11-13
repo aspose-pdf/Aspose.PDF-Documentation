@@ -13,6 +13,7 @@ sitemap:
 This article provides detailed step-by-step instructions for converting PDF documents in Microsoft Azure using Aspose.PDF for .NET and Azure App service.
 
 ## Prerequisites
+
 * Visual Studio 2022 Community Edition with installed Azure development or Visual Studio Code.
 * Azure Account: You need an Azure subscription, create a free account before beginning.
 * .NET 6 SDK.
@@ -21,6 +22,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ## Create Azure Resources
 
 ### Create App Service
+
 1. Go to Azure Portal (https://portal.azure.com).
 2. Create a new Resource Group
 3. Create a new App Service:
@@ -31,6 +33,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ## Create Project
 
 ### Create Visual Studio Project
+
 1. Open Visual Studio 2022.
 2. Click "Create a new project".
 3. Select "ASP.NET Core Web API".
@@ -41,6 +44,7 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ### Create Visual Studio Code Project
 
 #### Install Prerequisites
+
 1. Visual Code extensions:
 ```bash
 code --install-extension ms-dotnettools.csharp
@@ -53,6 +57,7 @@ code --install-extension ms-azuretools.vscode-azureappservice
 - Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
 
 #### Configure Project
+
 1. Open project in Visual Studio Code:
 ```bash
 code .
@@ -102,6 +107,7 @@ touch Controllers/PdfController.cs
 ```
 
 ## Install Required NuGet Packages
+
 In Visual Studio open Package Manager Console and run:
 ```powershell
 Install-Package Aspose.PDF
@@ -115,6 +121,7 @@ dotnet restore
 ```
 
 ## Configure Aspose License
+
 In Visual Studio:
 
 1. Copy your Aspose.PDF license file to the project.
@@ -127,6 +134,7 @@ license.SetLicense("Aspose.PDF.lic");
 ```
 
 ### Create code
+
 In Visual Studio:
 1. Right-click on Controllers folder
 2. Add → New Item → API Controller - Empty
@@ -245,6 +253,7 @@ app.Run();
 ```
 
 ## Configure application settings
+
 1. Open appsettings.json.
 2. Add configuration:
 ```json
@@ -264,6 +273,7 @@ app.Run();
 Replace `Your-Connection-StringG` with your actual connection string from Azure Portal.
 
 ## Test Locally
+
 In Visual Studio:
 1. Press F5 to run the application
 2. Swagger UI will open
@@ -283,6 +293,7 @@ curl -X POST "https://localhost:5001/api/pdf/convert?outputFormat=docx" \
 ```
 
 ## Deploy to Azure
+
 In Visual Studio:
 1. Right-click on the project
 2. Select "Publish"
@@ -308,6 +319,7 @@ az webapp deploy \
 ```
 
 ## Configure Azure App Service
+
 1. Go to Azure Portal
 2. Open your App Service
 3. Configure settings:
@@ -318,6 +330,7 @@ az webapp deploy \
    ```
 
 ## Test the Deployed Service
+
 Use Postman or curl to test:
 ```bash
 curl -X POST "https://your-app.azurewebsites.net/api/pdf/convert?outputFormat=docx" \
@@ -326,9 +339,11 @@ curl -X POST "https://your-app.azurewebsites.net/api/pdf/convert?outputFormat=do
 ```
 
 ## Supported Formats
+
 The list of supported formats can be found [here](https://docs.aspose.com/pdf/net/supported-file-formats/).
 
 ## Trobleshooting
+
 ### Important Configuration Options
 
 1. **File Size Limits**
