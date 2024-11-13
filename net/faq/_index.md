@@ -5,9 +5,10 @@ type: docs
 weight: 140
 url: /net/faq/
 description: Here you can find answers to Frequently Asked Questions for Aspose.PDF for .NET library.
+
 lastmod: "2024-11-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 
