@@ -12,7 +12,8 @@ jobs:
     runs-on: [self-hosted, linux, x64, dev4-pdf]
     steps:
       - name: hugo build
-        run: |          
+        run: |
+          mkdir aspose-pdf-docs
           cd aspose-pdf-docs
           git clone https://github.com/aspose-pdf/Aspose.PDF-Documentation.git || (cd Aspose.PDF-Documentation && git pull)
           git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
