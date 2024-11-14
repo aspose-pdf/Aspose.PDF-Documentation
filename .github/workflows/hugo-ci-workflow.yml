@@ -1,10 +1,12 @@
-name: Hugo-CI
+name: Hugo-CI-prod
 on:
   push:
     branches:
       - master
     paths-ignore:
         '.github/**'
+        
+  workflow_dispatch:
 
 jobs:
   job-one:
