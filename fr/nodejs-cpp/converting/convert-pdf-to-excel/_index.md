@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /fr/nodejs-cpp/convert-pdf-to-xlsx/
 lastmod: "2023-11-16"
-keywords: convertir PDF en Excel en utilisant node.js, convertir PDF en XLSX.
 description: Aspose.PDF pour Node.js vous permet de convertir PDF en PDF en format XLSX.
 sitemap:
     changefreq: "monthly"

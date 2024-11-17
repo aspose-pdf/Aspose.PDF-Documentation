@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /id/java/add-text-to-an-existing-pdf-file-in-python/
 lastmod: "2021-06-05"
-keywords: tambahkan teks pdf python, tulis teks pdf python
 description: Contoh kode bagaimana menambahkan atau menulis teks dalam dokumen Pdf menggunakan Python dengan pustaka PDF.
 ---
 

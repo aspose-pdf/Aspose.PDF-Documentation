@@ -4,7 +4,6 @@ type: docs
 weight: 30
 url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 lastmod: "2021-06-05"
-keywords: extract pdf text python
 description: Explains how to extract text from PDF pages in Python using PDF file format API.
 ---
 

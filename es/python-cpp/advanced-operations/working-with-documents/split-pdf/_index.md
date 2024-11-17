@@ -4,7 +4,6 @@ linktitle: Dividir archivos PDF
 type: docs
 weight: 20
 url: /es/python-cpp/split-pdf-document/
-keywords: dividir pdf en múltiples archivos, dividir pdf en pdfs separados, dividir pdf python
 description: Este tema muestra cómo dividir páginas de PDF en archivos PDF individuales en sus aplicaciones de Python a través de C++.
 lastmod: "2024-04-17"
 sitemap:

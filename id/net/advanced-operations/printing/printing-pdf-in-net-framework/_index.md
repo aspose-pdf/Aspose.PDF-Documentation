@@ -4,7 +4,6 @@ linktitle: Mencetak PDF di .NET Framework
 type: docs
 weight: 10
 url: /id/net/printing-pdf-in-net-framework/
-keywords: "print pdf file c#, c# print pdf"
 description: Anda dapat mencetak file PDF ke printer default menggunakan pengaturan printer dan halaman dengan C#.
 lastmod: "2022-02-17"
 sitemap:

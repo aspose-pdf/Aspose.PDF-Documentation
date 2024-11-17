@@ -4,7 +4,6 @@ linktitle: PDF 파일 분할
 type: docs
 weight: 60
 url: /ko/python-net/split-pdf-document/
-keywords: 여러 파일로 PDF 분할, 개별 PDF로 PDF 분할, 파이썬 PDF 분할
 description: 이 주제는 파이썬 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 lastmod: "2023-04-17"
 sitemap:

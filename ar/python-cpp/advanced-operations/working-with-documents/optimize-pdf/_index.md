@@ -4,7 +4,6 @@ linktitle: تحسين PDF
 type: docs
 weight: 30
 url: /ar/python-cpp/optimize-pdf/
-keywords: "تحسين PDF بايثون"
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة تضمين الخطوط، إزالة الكائنات غير المستخدمة باستخدام بايثون.
 lastmod: "2023-12-22"
 sitemap:

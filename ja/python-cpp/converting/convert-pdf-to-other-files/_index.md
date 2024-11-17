@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ja/python-cpp/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
-keywords: convert, PDF, EPUB, LaText, Text, XPS, Python
 description: このトピックでは、Pythonを使用してPDFファイルをテキストなどの他のファイル形式に変換する方法を示します。
 sitemap:
     changefreq: "monthly"

@@ -4,7 +4,6 @@ linktitle: PDF 최적화
 type: docs
 weight: 30
 url: /ko/python-cpp/optimize-pdf/
-keywords: "optimize pdf Python"
 description: PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 폰트 임베드 제거, 사용되지 않는 객체 제거를 Python으로 합니다.
 lastmod: "2023-12-22"
 sitemap:

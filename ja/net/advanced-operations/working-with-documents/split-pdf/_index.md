@@ -4,7 +4,6 @@ linktitle: PDFファイルを分割
 type: docs
 weight: 60
 url: /ja/net/split-pdf-document/
-keywords: split pdf into multiple files, split pdf into separate pdfs, split pdf c#
 description: このトピックでは、C#を使用して.NETアプリケーションでPDFページを個々のPDFファイルに分割する方法を示します。
 lastmod: "2022-02-17"
 sitemap:

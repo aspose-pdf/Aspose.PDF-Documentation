@@ -4,7 +4,6 @@ linktitle: .NET CoreでのPDF印刷
 type: docs
 weight: 40
 url: /ja/net/print-dotnetcore/
-keywords: "print pdf .net core"
 description: このページでは、.NET CoreでPDFドキュメントをXPSに変換し、ローカルプリンターのキューにジョブとして追加する方法について説明します。
 lastmod: "2022-02-17"
 sitemap:

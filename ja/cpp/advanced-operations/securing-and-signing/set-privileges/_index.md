@@ -4,7 +4,6 @@ linktitle: PDFファイルを暗号化および復号化する
 type: docs
 weight: 20
 url: /ja/cpp/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: PDFを暗号化, PDFにパスワード保護, PDFを復号化, C++
 description: C++を使用して異なる暗号化タイプとアルゴリズムでPDFファイルを暗号化します。また、オーナーパスワードを使用してPDFファイルを復号化します。
 lastmod: "2021-12-17"
 sitemap:

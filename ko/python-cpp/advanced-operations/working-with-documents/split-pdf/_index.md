@@ -4,7 +4,6 @@ linktitle: PDF 파일 분할
 type: docs
 weight: 20
 url: /ko/python-cpp/split-pdf-document/
-keywords: split pdf into multiple files, split pdf into separate pdfs, split pdf python
 description: 이 주제는 C++ 응용 프로그램을 통해 파이썬에서 PDF 페이지를 개별 PDF 파일로 나누는 방법을 보여줍니다.
 lastmod: "2024-04-17"
 sitemap:

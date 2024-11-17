@@ -4,7 +4,6 @@ linktitle: Chiffrer et Déchiffrer un Fichier PDF
 type: docs
 weight: 20
 url: /fr/java/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: chiffrer pdf,protéger par mot de passe pdf,déchiffrer pdf,java
 description: Chiffrer un Fichier PDF avec Java en utilisant Différents Types et Algorithmes de Chiffrement. Aussi, déchiffrer des Fichiers PDF en utilisant le Mot de Passe Propriétaire.
 lastmod: "2021-12-17"
 sitemap:

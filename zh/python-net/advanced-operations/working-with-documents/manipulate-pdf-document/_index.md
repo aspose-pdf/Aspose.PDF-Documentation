@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /zh/python-net/manipulate-pdf-document/
 description: 本文包含有关如何使用Python验证PDF A标准的PDF文档，如何处理目录，如何设置PDF到期日期等信息。
-keywords: "操作pdf python"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

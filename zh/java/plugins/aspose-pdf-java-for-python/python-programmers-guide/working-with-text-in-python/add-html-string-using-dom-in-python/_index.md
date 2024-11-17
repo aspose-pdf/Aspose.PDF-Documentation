@@ -4,7 +4,6 @@ type: docs
 weight: 10
 url: /zh/java/add-html-string-using-dom-in-python/
 lastmod: "2021-06-05"
-keywords: html dom python, python html dom library
 description: 解释如何使用 PDF 文件格式库在 Python 的 DOM 中添加 HTML 字符串
 ---
 

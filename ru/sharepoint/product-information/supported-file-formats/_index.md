@@ -10,8 +10,6 @@ url: /ru/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, Загрузка PDF SharePoint, Сохранение PDF SharePoint
-
 description: PDF SharePoint API может загружать и сохранять форматы файлов, включая PDF и PDF/A.
 
 ---

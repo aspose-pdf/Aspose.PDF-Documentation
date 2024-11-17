@@ -1,11 +1,9 @@
-```
 ---
 title: PDFをXPSプリンターに印刷する
 linktitle: PDFをXPSプリンターに印刷する（ファサード）
 type: docs
 weight: 20
 url: /ja/net/printing-pdf-to-an-xps-printer-facades/
-keywords: "print pdf to xps, print pdf to xps c#"
 description: このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示しています。
 lastmod: "2022-02-17"
 sitemap:
@@ -77,7 +75,7 @@ sitemap:
     "description": "このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示しています。"
 }
 </script>
-```
+
 以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ## **C#でPDFをXPSプリンタに印刷する**
@@ -120,6 +118,23 @@ public static void PrintToXpsPrinter()
 
     // 印刷後にPDFファイルを閉じる
     viewer.Close();
+}
+```
+
+## Choosing paper source by PDF page size
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
+
+This preference can be switched on and off using the 'PdfContentEditor' facade.
+
+```cs
+using (PdfContentEditor contentEditor = new PdfContentEditor())
+{
+    contentEditor.BindPdf("input.pdf");
+
+    // Set the flag to choose a paper tray using the PDF page size
+    contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+    contentEditor.Save("result.pdf");
 }
 ```
 

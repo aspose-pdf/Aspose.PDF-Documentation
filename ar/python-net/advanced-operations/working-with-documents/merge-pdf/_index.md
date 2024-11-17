@@ -4,7 +4,6 @@ linktitle: دمج ملفات PDF
 type: docs
 weight: 50
 url: /ar/python-net/merge-pdf-documents/
-keywords: "دمج ملفات pdf متعددة في ملف pdf واحد باستخدام بايثون، جمع ملفات pdf متعددة في ملف واحد بايثون، دمج ملفات pdf متعددة في واحد بايثون"
 description: تشرح هذه الصفحة كيفية دمج مستندات PDF في ملف PDF واحد باستخدام بايثون.
 lastmod: "2023-04-14"
 sitemap:

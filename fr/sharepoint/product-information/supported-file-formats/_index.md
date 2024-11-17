@@ -10,8 +10,6 @@ url: /fr/sharepoint/formats-de-fichier-pris-en-charge/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, Charger PDF SharePoint, Enregistrer PDF SharePoint
-
 description: L'API SharePoint PDF peut charger et enregistrer des formats de fichier qui incluent PDF et PDF/A.
 
 ---

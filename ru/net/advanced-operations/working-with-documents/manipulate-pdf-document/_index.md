@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ru/net/manipulate-pdf-document/
 description: Эта статья содержит информацию о том, как проверить документ PDF на соответствие стандарту PDF A, как работать с оглавлением, как установить срок действия PDF и т.д.
-keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

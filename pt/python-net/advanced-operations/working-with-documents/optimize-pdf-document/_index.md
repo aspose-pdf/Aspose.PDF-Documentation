@@ -4,7 +4,6 @@ linktitle: Otimizar PDF
 type: docs
 weight: 30
 url: /pt/python-net/optimize-pdf/
-keywords: "otimizar pdf python"
 description: Otimizar arquivo PDF, reduzir todas as imagens, diminuir tamanho do PDF, Desincorporar fontes, Remover objetos não utilizados com Python.
 lastmod: "2023-04-17"
 sitemap:

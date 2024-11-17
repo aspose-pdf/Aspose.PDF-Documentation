@@ -4,7 +4,6 @@ linktitle: 아크로폼 추출
 type: docs
 weight: 30
 url: /ko/python-net/extract-form/
-keywords: python에서 pdf 양식 데이터 추출
 description: Aspose.PDF for Python 라이브러리를 사용하여 PDF 문서에서 양식을 추출합니다. PDF 파일의 개별 필드에서 값을 가져옵니다.
 lastmod: "2023-02-17"
 sitemap:

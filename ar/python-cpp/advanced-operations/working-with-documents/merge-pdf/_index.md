@@ -4,7 +4,6 @@ linktitle: دمج ملفات PDF
 type: docs
 weight: 10
 url: /ar/python-cpp/merge-pdf-documents/
-keywords: "دمج ملفات pdf متعددة في pdf واحد باستخدام python، دمج ملفات pdf متعددة في ملف واحد باستخدام python، دمج عدة pdf في واحد باستخدام python"
 description: توضح هذه الصفحة كيفية دمج مستندات PDF في ملف PDF واحد باستخدام Python.
 lastmod: "2024-04-14"
 sitemap:

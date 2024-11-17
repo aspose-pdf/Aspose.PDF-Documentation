@@ -5,7 +5,6 @@ type: docs
 weight: 70
 url: /id/net/converting/
 lastmod: "2021-11-01"
-keywords: convert pdf c#
 description: Bagian ini berisi artikel terkait mengonversi dokumen PDF dalam berbagai format menggunakan C# atau .NET dengan menggunakan API format file PDF.
 sitemap:
     changefreq: "monthly"

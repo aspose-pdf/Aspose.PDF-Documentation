@@ -4,7 +4,6 @@ linktitle: Mesclar arquivos PDF
 type: docs
 weight: 50
 url: /pt/python-net/merge-pdf-documents/
-keywords: "mesclar vários pdf em um único pdf python, combinar vários pdf em um python, mesclar vários pdf em um python"
 description: Esta página explica como mesclar documentos PDF em um único arquivo PDF com Python.
 lastmod: "2023-04-14"
 sitemap:

@@ -4,7 +4,6 @@ linktitle: Optimalkan PDF
 type: docs
 weight: 30
 url: /id/net/optimize-pdf/
-keywords: "optimize pdf c#"
 description: Optimalkan file PDF, kecilkan semua gambar, kurangi ukuran PDF, lepaskan font yang tidak digunakan, hapus objek yang tidak digunakan dengan C#.
 lastmod: "2022-02-17"
 sitemap:

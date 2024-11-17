@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /ar/sharepoint/save-sharepoint-wiki-page-as-pdf/
 lastmod: "2020-12-16"
-keywords: sharepoint wiki pdf export
 description: يمكن استخدام مكتبة PDF الخاصة بـ SharePoint لتصدير صفحات ويكي SharePoint إلى PDF.
 ---
 

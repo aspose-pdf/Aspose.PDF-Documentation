@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ko/php-java/convert-pdf-to-excel/
 lastmod: "2024-05-20"
-keywords: PHP를 사용하여 PDF를 Excel로 변환, PHP를 사용하여 PDF를 XLS로 변환, PHP를 사용하여 PDF를 XLSX로 변환, PHP에서 PDF에서 Excel로 테이블 내보내기.
 description: Aspose.PDF for PHP를 사용하면 PHP를 통해 PDF를 Excel 형식으로 변환할 수 있습니다. 이 과정에서 PDF 파일의 개별 페이지가 Excel 워크시트로 변환됩니다.
 sitemap:
     changefreq: "monthly"

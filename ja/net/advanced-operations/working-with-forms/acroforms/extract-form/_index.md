@@ -4,7 +4,6 @@ linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /ja/net/extract-form/
-keywords: extract form data from pdf c#
 description: Aspose.PDF for .NETライブラリを使用して、PDFドキュメントからフォームを抽出します。PDFファイルの個々のフィールドから値を取得します。
 lastmod: "2022-02-17"
 sitemap:

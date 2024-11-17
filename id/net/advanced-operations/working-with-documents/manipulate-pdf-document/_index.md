@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /id/net/manipulate-pdf-document/
 description: Artikel ini berisi informasi tentang cara memvalidasi Dokumen PDF untuk Standar PDF A, cara bekerja dengan TOC, cara mengatur tanggal kedaluwarsa PDF, dan lainnya.
-keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

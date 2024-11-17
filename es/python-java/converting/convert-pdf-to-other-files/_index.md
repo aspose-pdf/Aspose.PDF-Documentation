@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /es/python-java/convert-pdf-to-other-files/
 lastmod: "2023-04-06"
-keywords: convertir, PDF, EPUB, LaText, Texto, XPS, Python
 description: Este tema te muestra cómo convertir un archivo PDF a otros formatos de archivo como EPUB, LaTeX, Texto, XPS, etc. usando Python.
 sitemap:
     changefreq: "monthly"

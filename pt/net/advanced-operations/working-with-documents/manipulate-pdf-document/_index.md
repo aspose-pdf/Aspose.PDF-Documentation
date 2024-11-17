@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /pt/net/manipulate-pdf-document/
 description: Este artigo contém informações sobre como validar um Documento PDF para o Padrão PDF A, como trabalhar com TOC, como definir a data de expiração do PDF, entre outros.
-keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

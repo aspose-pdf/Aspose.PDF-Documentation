@@ -4,7 +4,6 @@ linktitle: Mesclar arquivos PDF
 type: docs
 weight: 50
 url: /pt/net/merge-pdf-documents/
-keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: Esta página explica como mesclar documentos PDF em um único arquivo PDF com C# ou VB.NET.
 lastmod: "2022-02-17"
 sitemap:

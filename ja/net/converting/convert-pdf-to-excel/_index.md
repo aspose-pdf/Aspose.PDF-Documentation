@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ja/net/convert-pdf-to-excel/
 lastmod: "2021-11-01"
-keywords: C#を使用してPDFをExcelに変換, C#を使用してPDFをXLSに変換, C#を使用してPDFをXLSXに変換, C#でPDFからExcelにテーブルをエクスポート
 description: Aspose.PDF for .NET ライブラリを使用して、C#を使用してPDFをExcel形式に変換できます。これらの形式には、XLS、XLSX、XML 2003 スプレッドシート、CSV、ODSが含まれます。
 sitemap:
     changefreq: "monthly"

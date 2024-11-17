@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /es/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: convertir, PDF, EPUB, LaTeX, Texto, XPS, C#
 description: Este tema te muestra cómo convertir un archivo PDF a otros formatos de archivo como EPUB, LaTeX, Texto, XPS, etc. usando C# o .NET.
 sitemap:
     changefreq: "monthly"

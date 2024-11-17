@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ja/python-net/manipulate-pdf-document/
 description: この記事には、Pythonを使用してPDF A標準のPDFドキュメントを検証する方法、目次を操作する方法、PDFの有効期限を設定する方法などの情報が含まれています。
-keywords: "manipulate pdf python"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

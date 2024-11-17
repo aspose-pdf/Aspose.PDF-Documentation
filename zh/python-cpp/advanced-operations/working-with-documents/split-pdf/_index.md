@@ -5,7 +5,6 @@ linktitle: 拆分PDF文件
 type: docs
 weight: 20
 url: /zh/python-cpp/split-pdf-document/
-keywords: 将pdf拆分为多个文件, 将pdf拆分为单独的pdf, 拆分pdf python
 description: 本主题展示如何在Python中通过C++应用程序将PDF页面拆分为单个PDF文件。
 lastmod: "2024-04-17"
 sitemap:

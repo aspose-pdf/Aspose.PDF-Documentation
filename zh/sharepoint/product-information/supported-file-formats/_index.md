@@ -10,8 +10,6 @@ url: /zh/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, 加载 PDF SharePoint, 保存 PDF SharePoint
-
 description: PDF SharePoint API 可以加载和保存包括 PDF 和 PDF/A 在内的文件格式。
 
 ---

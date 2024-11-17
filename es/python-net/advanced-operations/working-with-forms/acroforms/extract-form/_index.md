@@ -4,7 +4,6 @@ linktitle: Extraer AcroForm
 type: docs
 weight: 30
 url: /es/python-net/extract-form/
-keywords: extraer datos de formularios de pdf python
 description: Extrae formularios de tu documento PDF con la biblioteca Aspose.PDF para Python. Obtén el valor de un campo individual de un archivo PDF.
 lastmod: "2023-02-17"
 sitemap:

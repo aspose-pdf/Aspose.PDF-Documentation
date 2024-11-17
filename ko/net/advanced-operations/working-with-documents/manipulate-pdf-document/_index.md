@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ko/net/manipulate-pdf-document/
 description: 이 글은 PDF A 표준에 대한 PDF 문서를 검증하는 방법, 목차(TOC) 작업 방법, PDF 만료 날짜 설정 방법 등에 대한 정보를 담고 있습니다.
-keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

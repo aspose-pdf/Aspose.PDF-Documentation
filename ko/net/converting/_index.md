@@ -5,7 +5,6 @@ type: docs
 weight: 70
 url: /ko/net/converting/
 lastmod: "2021-11-01"
-keywords: convert pdf c#
 description: 이 섹션에는 C# 또는 .NET을 사용하여 다양한 형식으로 PDF 문서를 변환하는 관련 기사가 포함되어 있습니다.
 sitemap:
     changefreq: "monthly"

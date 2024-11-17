@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /sharepoint/supported-file-formats/
 lastmod: "2020-12-16"
-keywords: PDF SharePoint, Load PDF SharePoint, Save PDF SharePoint
 description: PDF SharePoint API can load and save file formats that include PDF and PDF/A.
 ---
 

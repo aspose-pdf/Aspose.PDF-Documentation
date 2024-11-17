@@ -4,7 +4,6 @@ linktitle: Объединение файлов PDF
 type: docs
 weight: 50
 url: /ru/net/merge-pdf-documents/
-keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: Эта страница объясняет, как объединить PDF-документы в один PDF-файл с помощью C# или VB.NET.
 lastmod: "2022-02-17"
 sitemap:

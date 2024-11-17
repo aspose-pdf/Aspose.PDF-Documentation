@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ja/javascript-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-01"
-keywords: 変換, PDF, EPUB, TeX, Text, XPS, JavaScript
 description: このトピックでは、JavaScriptまたはJavaScriptを使用してPDFファイルをEPUB、LaTeX、Text、XPSなどの他のファイル形式に変換する方法を示します。
 sitemap:
     changefreq: "monthly"

@@ -4,7 +4,6 @@ linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /java/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: encrypt pdf,password protect pdf,decrypt pdf,java
 description: Encrypt PDF File with Java using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
 lastmod: "2021-12-17"
 sitemap:

@@ -5,7 +5,6 @@ type: docs
 weight: 70
 url: /ja/net/converting/
 lastmod: "2021-11-01"
-keywords: convert pdf c#
 description: このセクションには、C#または.NETを使用してPDFファイル形式APIを使用してPDFドキュメントをさまざまな形式に変換する方法に関する記事が含まれています。
 sitemap:
     changefreq: "monthly"

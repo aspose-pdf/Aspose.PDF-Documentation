@@ -4,7 +4,6 @@ linktitle: Printing PDF in .NET Core
 type: docs
 weight: 40
 url: /net/print-dotnetcore/
-keywords: "print pdf .net core"
 description: This page explains how to convert a PDF document into XPS in .NET Core and add it as a job to the queue of the local printer.
 lastmod: "2022-02-17"
 sitemap:

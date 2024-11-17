@@ -4,7 +4,6 @@ linktitle: Memisahkan file PDF
 type: docs
 weight: 60
 url: /id/net/split-pdf-document/
-keywords: memisahkan pdf menjadi beberapa file, memisahkan pdf menjadi pdf terpisah, memisahkan pdf c#
 description: Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda dengan C#.
 lastmod: "2022-02-17"
 sitemap:

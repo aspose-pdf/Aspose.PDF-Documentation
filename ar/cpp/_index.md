@@ -7,7 +7,6 @@ weight: 30
 url: /ar/cpp/
 is_root: true
 description: تعلم كيفية استخدام Aspose.PDF C++ لإنشاء تطبيقات لمعالجة مستندات PDF على أي منصة باستخدام C#، VB. تصفح الدروس، والكود النموذجي، والمزيد.
-keywords: cpp PDF API,pdf,convert PDF to Word,merge PDF,split PDF,convert PDF to Excel,PDF to PPT,PNG to PDF,PDF into JPEG
 lastmod: "2021-11-10"
 ---
 

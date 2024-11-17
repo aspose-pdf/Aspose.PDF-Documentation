@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ar/python-java/convert-pdf-to-excel/
 lastmod: "2022-12-23"
-keywords: تحويل PDF إلى Excel باستخدام بايثون، تحويل PDF إلى XLS باستخدام بايثون، تحويل PDF إلى XLSX باستخدام بايثون، تصدير جدول من PDF إلى Excel في بايثون.
 description: تتيح لك مكتبة Aspose.PDF for Python تحويل PDF إلى تنسيق Excel باستخدام بايثون. تشمل هذه التنسيقات XLS، XLSX، XML 2003 Spreadsheet، CSV، ODS.
 sitemap:
     changefreq: "monthly"
