@@ -4,7 +4,6 @@ linktitle: طباعة PDF في .NET Core
 type: docs
 weight: 40
 url: /ar/net/print-dotnetcore/
-keywords: "print pdf .net core"
 description: تشرح هذه الصفحة كيفية تحويل مستند PDF إلى XPS في .NET Core وإضافته كمهمة إلى قائمة الطابعة المحلية.
 lastmod: "2022-02-17"
 sitemap:

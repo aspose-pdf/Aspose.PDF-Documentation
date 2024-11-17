@@ -5,7 +5,6 @@ type: docs
 weight: 70
 url: /zh/net/converting/
 lastmod: "2021-11-01"
-keywords: 转换pdf c#
 description: 本节包含使用C#或.NET通过PDF文件格式API转换不同格式的PDF文档的文章。
 sitemap:
     changefreq: "monthly"

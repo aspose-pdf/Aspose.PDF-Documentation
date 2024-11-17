@@ -4,7 +4,6 @@ linktitle: 加密和解密 PDF 文件
 type: docs
 weight: 20
 url: /zh/java/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: 加密 pdf,密码保护 pdf,解密 pdf,java
 description: 使用不同的加密类型和算法通过 Java 加密 PDF 文件。同时，使用所有者密码解密 PDF 文件。
 lastmod: "2021-12-17"
 sitemap:

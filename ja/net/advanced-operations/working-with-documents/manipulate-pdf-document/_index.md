@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ja/net/manipulate-pdf-document/
 description: この記事には、PDF A標準に対するPDFドキュメントの検証方法、目次の操作方法、PDFの有効期限設定方法などが含まれています。
-keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

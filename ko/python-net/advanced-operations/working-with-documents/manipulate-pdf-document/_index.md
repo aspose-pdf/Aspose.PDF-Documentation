@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ko/python-net/manipulate-pdf-document/
 description: 이 기사는 Python을 사용하여 PDF A 표준에 대해 PDF 문서를 검증하는 방법, 목차 작업 방법, PDF 만료 날짜 설정 방법 등에 대한 정보를 포함하고 있습니다.
-keywords: "manipulate pdf python"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

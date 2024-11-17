@@ -10,8 +10,6 @@ url: /ja/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, PDF SharePointの読み込み、PDF SharePointの保存
-
 description: PDF SharePoint APIは、PDFおよびPDF/Aを含むファイル形式を読み込みおよび保存できます。
 
 ---

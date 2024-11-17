@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ko/python-java/convert-pdf-to-excel/
 lastmod: "2022-12-23"
-keywords: 파이썬을 사용하여 PDF를 Excel로 변환, 파이썬을 사용하여 PDF를 XLS로 변환, 파이썬을 사용하여 PDF를 XLSX로 변환, 파이썬에서 PDF의 테이블을 Excel로 내보내기.
 description: Aspose.PDF for Python 라이브러리를 사용하면 파이썬을 사용하여 PDF를 Excel 형식으로 변환할 수 있습니다. 이러한 형식에는 XLS, XLSX, XML 2003 스프레드시트, CSV, ODS가 포함됩니다.
 sitemap:
     changefreq: "monthly"

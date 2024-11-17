@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ar/python-cpp/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
-keywords: تحويل, PDF, EPUB, LaText, نص, XPS, بايثون
 description: يوضح هذا الموضوع كيفية تحويل ملف PDF إلى تنسيقات ملفات أخرى مثل النص باستخدام بايثون.
 sitemap:
     changefreq: "monthly"

@@ -4,7 +4,6 @@ linktitle: .NET Framework에서 PDF 인쇄
 type: docs
 weight: 10
 url: /ko/net/printing-pdf-in-net-framework/
-keywords: "print pdf file c#, c# print pdf"
 description: C#을 사용하여 프린터 및 페이지 설정으로 기본 프린터에 PDF 파일을 인쇄할 수 있습니다.
 lastmod: "2022-02-17"
 sitemap:

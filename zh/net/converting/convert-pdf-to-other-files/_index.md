@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /zh/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: 转换, PDF, EPUB, LaTeX, 文本, XPS, C#
 description: 本主题向您展示如何使用 C# 或 .NET 将 PDF 文件转换为其他文件格式，如 EPUB、LaTeX、文本、XPS 等。
 sitemap:
     changefreq: "monthly"

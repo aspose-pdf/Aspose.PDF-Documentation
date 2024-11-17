@@ -4,7 +4,6 @@ linktitle: Merge PDF files
 type: docs
 weight: 50
 url: /python-net/merge-pdf-documents/
-keywords: "merge multiple pdf into single pdf python, combine multiple pdf into one python, merge multiple pdf into one python"
 description: This page explain how to merge PDF documents into a single PDF file with Python.
 lastmod: "2023-04-14"
 sitemap:

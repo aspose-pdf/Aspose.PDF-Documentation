@@ -4,7 +4,6 @@ type: docs
 weight: 30
 url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 lastmod: "2021-06-05"
-keywords: استخراج نص pdf بايثون
 description: يشرح كيفية استخراج النص من صفحات PDF في بايثون باستخدام API تنسيق ملف PDF.
 ---
 

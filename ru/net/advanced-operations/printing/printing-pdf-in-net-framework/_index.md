@@ -4,7 +4,6 @@ linktitle: Печать PDF в .NET Framework
 type: docs
 weight: 10
 url: /ru/net/printing-pdf-in-net-framework/
-keywords: "print pdf file c#, c# print pdf"
 description: Вы можете печатать файлы PDF на принтере по умолчанию, используя настройки принтера и страницы с помощью C#.
 lastmod: "2022-02-17"
 sitemap:

@@ -4,7 +4,6 @@ linktitle: 拆分 PDF 文件
 type: docs
 weight: 60
 url: /zh/python-net/split-pdf-document/
-keywords: 拆分 pdf 为多个文件, 拆分 pdf 为独立的 pdf, 拆分 pdf python
 description: 本主题展示如何在您的 Python 应用程序中将 PDF 页面拆分为单个 PDF 文件。
 lastmod: "2023-04-17"
 sitemap:

@@ -4,7 +4,6 @@ linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /es/net/extract-form/
-keywords: extract form data from pdf c#
 description: Extraiga el formulario de su documento PDF con la biblioteca Aspose.PDF para .NET. Obtenga el valor de un campo individual del archivo PDF.
 lastmod: "2022-02-17"
 sitemap:

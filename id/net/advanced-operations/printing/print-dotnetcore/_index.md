@@ -4,7 +4,6 @@ linktitle: Mencetak PDF di .NET Core
 type: docs
 weight: 40
 url: /id/net/print-dotnetcore/
-keywords: "print pdf .net core"
 description: Halaman ini menjelaskan cara mengonversi dokumen PDF menjadi XPS di .NET Core dan menambahkannya sebagai pekerjaan ke antrian printer lokal.
 lastmod: "2022-02-17"
 sitemap:

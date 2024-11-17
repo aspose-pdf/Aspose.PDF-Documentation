@@ -4,7 +4,6 @@ linktitle: استخراج AcroForm
 type: docs
 weight: 30
 url: /ar/net/extract-form/
-keywords: استخراج بيانات النموذج من pdf c#
 description: استخرج النموذج من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET. احصل على قيمة من حقل فردي لملف PDF.
 lastmod: "2022-02-17"
 sitemap:

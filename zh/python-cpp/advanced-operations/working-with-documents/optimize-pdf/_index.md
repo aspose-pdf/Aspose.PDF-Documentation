@@ -4,7 +4,6 @@ linktitle: 优化PDF
 type: docs
 weight: 30
 url: /zh/python-cpp/optimize-pdf/
-keywords: "优化pdf Python"
 description: 优化PDF文件，缩小所有图像，减少PDF大小，取消嵌入字体，使用Python删除未使用的对象。
 lastmod: "2023-12-22"
 sitemap:

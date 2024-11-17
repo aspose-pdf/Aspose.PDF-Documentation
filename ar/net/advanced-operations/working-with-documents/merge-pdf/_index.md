@@ -4,7 +4,6 @@ linktitle: دمج ملفات PDF
 type: docs
 weight: 50
 url: /ar/net/merge-pdf-documents/
-keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: هذه الصفحة تشرح كيفية دمج مستندات PDF في ملف PDF واحد باستخدام C# أو VB.NET.
 lastmod: "2022-02-17"
 sitemap:

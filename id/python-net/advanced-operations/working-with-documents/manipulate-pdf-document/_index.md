@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /id/python-net/manipulate-pdf-document/
 description: Artikel ini berisi informasi tentang cara memvalidasi Dokumen PDF untuk Standar PDF A menggunakan Python, cara bekerja dengan TOC, cara mengatur tanggal kedaluwarsa PDF, dan lain-lain.
-keywords: "manipulasi pdf python"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

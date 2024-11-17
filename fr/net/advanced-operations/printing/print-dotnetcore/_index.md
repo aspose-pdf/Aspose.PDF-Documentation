@@ -4,7 +4,6 @@ linktitle: Impression de PDF en .NET Core
 type: docs
 weight: 40
 url: /fr/net/print-dotnetcore/
-keywords: "print pdf .net core"
 description: Cette page explique comment convertir un document PDF en XPS en .NET Core et l'ajouter comme tâche à la file d'attente de l'imprimante locale.
 lastmod: "2022-02-17"
 sitemap:

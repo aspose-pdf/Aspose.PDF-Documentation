@@ -4,7 +4,6 @@ linktitle: 优化 PDF
 type: docs
 weight: 30
 url: /zh/python-net/optimize-pdf/
-keywords: "优化 pdf python"
 description: 优化 PDF 文件，缩小所有图像，减少 PDF 大小，取消嵌入字体，使用 Python 删除未使用的对象。
 lastmod: "2023-04-17"
 sitemap:

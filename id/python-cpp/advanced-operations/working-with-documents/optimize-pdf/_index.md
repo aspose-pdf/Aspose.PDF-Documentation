@@ -4,7 +4,6 @@ linktitle: Optimalkan PDF
 type: docs
 weight: 30
 url: /id/python-cpp/optimize-pdf/
-keywords: "optimalkan pdf Python"
 description: Optimalkan file PDF, perkecil semua gambar, kurangi ukuran PDF, Lepaskan font, Hapus objek yang tidak digunakan dengan Python.
 lastmod: "2023-12-22"
 sitemap:

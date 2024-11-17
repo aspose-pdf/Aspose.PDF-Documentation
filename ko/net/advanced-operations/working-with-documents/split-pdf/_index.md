@@ -4,7 +4,6 @@ linktitle: PDF 파일 분할하기
 type: docs
 weight: 60
 url: /ko/net/split-pdf-document/
-keywords: 여러 파일로 PDF 분할하기, 별도의 PDF로 PDF 분할하기, split pdf c#
 description: 이 주제는 C#을 사용하여 .NET 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할하는 방법을 보여줍니다.
 lastmod: "2022-02-17"
 sitemap:

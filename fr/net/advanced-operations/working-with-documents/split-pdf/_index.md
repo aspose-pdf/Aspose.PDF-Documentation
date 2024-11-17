@@ -4,7 +4,6 @@ linktitle: Diviser des fichiers PDF
 type: docs
 weight: 60
 url: /fr/net/split-pdf-document/
-keywords: diviser pdf en plusieurs fichiers, diviser pdf en pdf séparés, diviser pdf c#
 description: Ce sujet montre comment diviser les pages PDF en fichiers PDF individuels dans vos applications .NET avec C#.
 lastmod: "2022-02-17"
 sitemap:

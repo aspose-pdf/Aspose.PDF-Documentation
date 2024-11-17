@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ru/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: конвертировать, PDF, EPUB, LaTeX, Текст, XPS, C#
 description: Эта тема показывает, как конвертировать PDF файл в другие форматы файлов, такие как EPUB, LaTeX, Text, XPS и другие, используя C# или .NET.
 sitemap:
     changefreq: "monthly"

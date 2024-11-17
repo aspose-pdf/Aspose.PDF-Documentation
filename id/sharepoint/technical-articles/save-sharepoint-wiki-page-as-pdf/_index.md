@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /id/sharepoint/save-sharepoint-wiki-page-as-pdf/
 lastmod: "2020-12-16"
-keywords: sharepoint wiki pdf ekspor
 description: Perpustakaan PDF SharePoint dapat digunakan untuk mengekspor halaman Wiki SharePoint ke PDF.
 ---
 

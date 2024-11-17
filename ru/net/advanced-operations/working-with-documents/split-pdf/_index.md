@@ -4,7 +4,6 @@ linktitle: Разделение файлов PDF
 type: docs
 weight: 60
 url: /ru/net/split-pdf-document/
-keywords: разделение pdf на несколько файлов, разделение pdf на отдельные pdf, разделение pdf c#
 description: Эта тема показывает, как разделить страницы PDF на отдельные файлы PDF в ваших .NET приложениях на C#.
 lastmod: "2022-02-17"
 sitemap:

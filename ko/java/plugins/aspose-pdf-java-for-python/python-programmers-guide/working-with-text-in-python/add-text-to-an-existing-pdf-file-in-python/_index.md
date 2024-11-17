@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /ko/java/add-text-to-an-existing-pdf-file-in-python/
 lastmod: "2021-06-05"
-keywords: 파이썬 pdf 텍스트 추가, 파이썬 pdf 텍스트 쓰기
 description: PDF 라이브러리를 사용하여 Pdf 문서에 텍스트를 추가하거나 쓰는 방법에 대한 코드 예제입니다.
 ---
 

@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /id/python-net/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
-keywords: convert, PDF, EPUB, LaText, Text, XPS, Python
 description: Topik ini menunjukkan cara mengonversi file PDF ke format file lain seperti EPUB, LaTeX, Teks, XPS, dll menggunakan Python.
 sitemap:
     changefreq: "monthly"

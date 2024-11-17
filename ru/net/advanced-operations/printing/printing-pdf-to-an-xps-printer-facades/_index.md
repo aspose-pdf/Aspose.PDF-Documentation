@@ -4,7 +4,6 @@ linktitle: Печать PDF на принтер XPS (Facades)
 type: docs
 weight: 20
 url: /ru/net/printing-pdf-to-an-xps-printer-facades/
-keywords: "print pdf to xps, print pdf to xps c#"
 description: Эта страница показывает, как печатать PDF на принтере XPS с использованием класса PdfViewer.
 lastmod: "2022-02-17"
 sitemap:

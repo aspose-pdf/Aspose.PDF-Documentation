@@ -4,7 +4,6 @@ linktitle: 合并 PDF 文件
 type: docs
 weight: 50
 url: /zh/python-net/merge-pdf-documents/
-keywords: "使用 python 将多个 pdf 合并为一个 pdf，使用 python 将多个 pdf 组合为一个，使用 python 合并多个 pdf 为一个"
 description: 本页面说明如何使用 Python 将 PDF 文档合并为一个单一的 PDF 文件。
 lastmod: "2023-04-14"
 sitemap:

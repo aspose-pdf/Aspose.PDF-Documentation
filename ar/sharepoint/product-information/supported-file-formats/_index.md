@@ -1,15 +1,8 @@
 ---
-
 title: تنسيقات الملفات المدعومة
-
 url: /ar/sharepoint/supported-file-formats/
-
 lastmod: "2020-12-16"
-
-keywords: PDF SharePoint, Load PDF SharePoint, Save PDF SharePoint
-
 description: يمكن لواجهة برمجة تطبيقات PDF SharePoint تحميل وحفظ تنسيقات الملفات التي تتضمن PDF و PDF/A.
-
 ---
 
 ## <ins>**تنسيقات التحميل المدعومة**

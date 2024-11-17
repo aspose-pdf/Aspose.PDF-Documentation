@@ -4,7 +4,6 @@ linktitle: Конвертация PDF в PostScript
 type: docs
 weight: 30
 url: /ru/net/pdf-to-postscript-conversion/
-keywords: "pdf to postscript c#"
 description: У нас есть решение для конвертации PDF в PostScript. Используйте для этой задачи печать и класс PdfViewer.
 lastmod: "2022-02-17"
 sitemap:

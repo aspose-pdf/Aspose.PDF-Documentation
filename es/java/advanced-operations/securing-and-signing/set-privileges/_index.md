@@ -4,7 +4,6 @@ linktitle: Cifrar y Descifrar Archivo PDF
 type: docs
 weight: 20
 url: /es/java/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: cifrar pdf,proteger con contraseña pdf,descifrar pdf,java
 description: Cifrar archivo PDF con Java utilizando diferentes tipos de cifrado y algoritmos. También, descifrar archivos PDF usando la contraseña del propietario.
 lastmod: "2021-12-17"
 sitemap:

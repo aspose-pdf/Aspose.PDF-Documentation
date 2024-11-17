@@ -4,7 +4,6 @@ linktitle: Enkripsi dan Dekripsi File PDF
 type: docs
 weight: 20
 url: /id/java/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: enkripsi pdf,melindungi pdf dengan kata sandi,dekripsi pdf,java
 description: Enkripsi File PDF dengan Java menggunakan Jenis dan Algoritma Enkripsi yang Berbeda. Juga, dekripsi File PDF menggunakan Kata Sandi Pemilik.
 lastmod: "2021-12-17"
 sitemap:

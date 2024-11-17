@@ -4,7 +4,6 @@ linktitle: PDF 최적화
 type: docs
 weight: 30
 url: /ko/net/optimize-pdf/
-keywords: "optimize pdf c#"
 description: PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 임베드되지 않은 글꼴 제거, C#을 사용하여 사용되지 않는 객체 제거.
 lastmod: "2022-02-17"
 sitemap:

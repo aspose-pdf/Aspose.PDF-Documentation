@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /id/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: mengonversi, PDF, EPUB, LaTeX, Teks, XPS, C#
 description: Topik ini menunjukkan cara mengonversi file PDF ke format file lain seperti EPUB, LaTeX, Teks, XPS dll menggunakan C# atau .NET.
 sitemap:
     changefreq: "monthly"

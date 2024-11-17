@@ -5,7 +5,6 @@ type: docs
 weight: 70
 url: /ar/net/converting/
 lastmod: "2021-11-01"
-keywords: تحويل pdf c#
 description: يحتوي هذا القسم على مقالات تتعلق بتحويل مستندات PDF إلى صيغ مختلفة باستخدام C# أو .NET باستخدام واجهة برمجة تطبيقات تنسيق ملف PDF.
 sitemap:
     changefreq: "monthly"

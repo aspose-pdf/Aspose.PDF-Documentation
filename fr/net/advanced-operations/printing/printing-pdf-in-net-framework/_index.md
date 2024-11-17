@@ -1,17 +1,16 @@
-```
 ---
 title: Impression de PDF dans .NET Framework
 linktitle: Impression de PDF dans .NET Framework
 type: docs
 weight: 10
 url: /fr/net/printing-pdf-in-net-framework/
-keywords: "imprimer fichier pdf c#, c# imprimer pdf"
 description: Vous pouvez imprimer des fichiers PDF sur l'imprimante par défaut en utilisant les paramètres d'imprimante et de page avec C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+ 
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -77,7 +76,7 @@ sitemap:
     "description": "Vous pouvez imprimer des fichiers PDF sur l'imprimante par défaut en utilisant les paramètres d'imprimante et de page avec C#."
 }
 </script>
-```
+
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## **Imprimer un fichier PDF en C# - Imprimer un fichier PDF sur l'imprimante par défaut en utilisant les paramètres d'imprimante et de page**
@@ -132,4 +131,85 @@ if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
     viewer.PrintDocumentWithSettings(pgs, ps);
 }
 ```
+## Choosing paper source by PDF page size
+ 
+Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
+
+This preference can be switched on and off using the 'Document.PickTrayByPdfSize' property.
+
+```cs
+using (Document document = new Document())
+{
+    Page page = document.Pages.Add();
+    page.Paragraphs.Add(new TextFragment("Hello world!"));
+
+    // Set the flag to choose a paper tray using the PDF page size
+    document.PickTrayByPdfSize = true;
+    document.Save("result.pdf");
+}
+```
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>
 

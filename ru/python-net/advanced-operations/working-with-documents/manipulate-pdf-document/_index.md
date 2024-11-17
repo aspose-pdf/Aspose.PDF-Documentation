@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ru/python-net/manipulate-pdf-document/
 description: Эта статья содержит информацию о том, как проверить PDF документ на соответствие стандарту PDF A с использованием Python, как работать с оглавлением, как установить срок действия PDF и т. д.
-keywords: "манипулировать pdf python"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

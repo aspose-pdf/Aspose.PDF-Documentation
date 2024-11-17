@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /id/javascript-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-01"
-keywords: konversi, PDF, EPUB, TeX, Teks, XPS, JavaScript
 description: Topik ini menunjukkan cara mengonversi file PDF ke format file lain seperti EPUB, LaTeX, Teks, XPS, dll menggunakan JavaScript atau JavaScript.
 sitemap:
     changefreq: "monthly"

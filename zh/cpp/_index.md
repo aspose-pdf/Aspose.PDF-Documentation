@@ -7,7 +7,6 @@ weight: 30
 url: /zh/cpp/
 is_root: true
 description: 学习使用 Aspose.PDF C++ 创建应用程序以在任何平台上使用 C#、VB 处理 PDF 文档。浏览教程、示例代码等。
-keywords: cpp PDF API,pdf,convert PDF to Word,merge PDF,split PDF,convert PDF to Excel,PDF to PPT,PNG to PDF,PDF into JPEG
 lastmod: "2021-11-10"
 ---
 

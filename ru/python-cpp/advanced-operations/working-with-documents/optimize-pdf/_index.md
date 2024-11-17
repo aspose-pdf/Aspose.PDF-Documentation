@@ -4,7 +4,6 @@ linktitle: Оптимизация PDF
 type: docs
 weight: 30
 url: /ru/python-cpp/optimize-pdf/
-keywords: "оптимизировать pdf Python"
 description: Оптимизация PDF файла, уменьшение всех изображений, снижение размера PDF, Удаление встроенных шрифтов, Удаление неиспользуемых объектов с помощью Python.
 lastmod: "2023-12-22"
 sitemap:

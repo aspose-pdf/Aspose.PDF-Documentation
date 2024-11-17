@@ -6,7 +6,6 @@ type: docs
 weight: 20  
 url: /ar/javascript-cpp/convert-pdf-to-xlsx/  
 lastmod: "2023-11-01"  
-keywords: تحويل PDF إلى Excel باستخدام javascript، تحويل PDF إلى XLSX، تحويل PDF إلى CSV.  
 description: Aspose.PDF لـ JavaScript يسمح لك بتحويل PDF إلى XLSX، وصيغ CSV.  
 sitemap:  
     changefreq: "monthly"  

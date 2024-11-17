@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /zh/python-java/convert-pdf-to-other-files/
 lastmod: "2023-04-06"
-keywords: convert, PDF, EPUB, LaText, Text, XPS, Python
 description: 本主题向您展示如何使用Python将PDF文件转换为其他文件格式，如EPUB、LaTeX、文本、XPS等。
 sitemap:
     changefreq: "monthly"

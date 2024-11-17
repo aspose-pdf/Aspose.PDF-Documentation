@@ -4,7 +4,6 @@ linktitle: استخراج AcroForm
 type: docs
 weight: 30
 url: /ar/python-net/extract-form/
-keywords: استخراج بيانات النماذج من pdf بايثون
 description: استخراج نموذج من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لبايثون. احصل على قيمة من حقل فردي من ملف PDF.
 lastmod: "2023-02-17"
 sitemap:

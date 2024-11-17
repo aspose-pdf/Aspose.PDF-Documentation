@@ -4,7 +4,6 @@ linktitle: طباعة PDF إلى طابعة XPS (واجهات)
 type: docs
 weight: 20
 url: /ar/net/printing-pdf-to-an-xps-printer-facades/
-keywords: "print pdf to xps, print pdf to xps c#"
 description: توضح هذه الصفحة كيفية طباعة PDF إلى طابعة XPS باستخدام فئة PdfViewer.
 lastmod: "2022-02-17"
 sitemap:

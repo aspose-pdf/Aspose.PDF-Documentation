@@ -4,7 +4,6 @@ linktitle: Fusionar archivos PDF
 type: docs
 weight: 50
 url: /es/net/merge-pdf-documents/
-keywords: "merge multiple pdf into single pdf c#, combine multiple pdf into one c#, merge multiple pdf into one c#"
 description: Esta página explica cómo fusionar documentos PDF en un único archivo PDF con C# o VB.NET.
 lastmod: "2022-02-17"
 sitemap:

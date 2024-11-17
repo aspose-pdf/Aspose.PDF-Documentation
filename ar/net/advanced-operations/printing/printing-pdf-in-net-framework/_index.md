@@ -4,7 +4,6 @@ linktitle: طباعة ملفات PDF في إطار .NET
 type: docs
 weight: 10
 url: /ar/net/printing-pdf-in-net-framework/
-keywords: "print pdf file c#, c# print pdf"
 description: يمكنك طباعة ملفات PDF إلى الطابعة الافتراضية باستخدام إعدادات الطابعة والصفحة مع C#.
 lastmod: "2022-02-17"
 sitemap:

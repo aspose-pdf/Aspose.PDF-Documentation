@@ -4,7 +4,6 @@ linktitle: Оптимизация PDF
 type: docs
 weight: 30
 url: /ru/net/optimize-pdf/
-keywords: "optimize pdf c#"
 description: Оптимизация файла PDF, сжатие всех изображений, уменьшение размера PDF, удаление встроенных шрифтов, удаление неиспользуемых объектов с помощью C#.
 lastmod: "2022-02-17"
 sitemap:

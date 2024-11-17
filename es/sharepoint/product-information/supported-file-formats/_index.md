@@ -10,8 +10,6 @@ url: /es/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, Cargar PDF SharePoint, Guardar PDF SharePoint
-
 description: La API de PDF SharePoint puede cargar y guardar formatos de archivo que incluyen PDF y PDF/A.
 
 ---

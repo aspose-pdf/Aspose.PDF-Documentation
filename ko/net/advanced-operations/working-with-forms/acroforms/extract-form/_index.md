@@ -4,7 +4,6 @@ linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /ko/net/extract-form/
-keywords: extract form data from pdf c#
 description: Aspose.PDF for .NET 라이브러리를 사용하여 PDF 문서에서 양식을 추출하세요. PDF 파일의 개별 필드에서 값을 가져옵니다.
 lastmod: "2022-02-17"
 sitemap:

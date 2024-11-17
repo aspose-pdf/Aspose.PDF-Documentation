@@ -9,8 +9,6 @@ url: /id/sharepoint/format-file-yang-didukung/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, Memuat PDF SharePoint, Menyimpan PDF SharePoint
-
 description: API PDF SharePoint dapat memuat dan menyimpan format file yang mencakup PDF dan PDF/A.
 
 ---

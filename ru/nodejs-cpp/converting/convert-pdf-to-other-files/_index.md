@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ru/nodejs-cpp/convert-pdf-to-other-files/
 lastmod: "2023-11-16"
-keywords: конвертировать, PDF, EPUB, TeX, текст, XPS, Node.js
 description: Эта тема показывает, как конвертировать PDF файл в другие форматы файлов, такие как EPUB, LaTeX, текст, XPS и т.д. в среде Node.js.
 sitemap:
     changefreq: "monthly"

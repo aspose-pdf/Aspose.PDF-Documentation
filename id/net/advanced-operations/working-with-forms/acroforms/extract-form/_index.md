@@ -4,7 +4,6 @@ linktitle: Ekstrak AcroForm
 type: docs
 weight: 30
 url: /id/net/extract-form/
-keywords: extract form data from pdf c#
 description: Ekstrak formulir dari dokumen PDF Anda dengan perpustakaan Aspose.PDF untuk .NET. Dapatkan nilai dari bidang individu file PDF.
 lastmod: "2022-02-17"
 sitemap:

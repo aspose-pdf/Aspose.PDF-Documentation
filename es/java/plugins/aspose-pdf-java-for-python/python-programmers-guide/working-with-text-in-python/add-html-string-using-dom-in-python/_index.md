@@ -4,7 +4,6 @@ type: docs
 weight: 10
 url: /es/java/add-html-string-using-dom-in-python/
 lastmod: "2021-06-05"
-keywords: html dom python, python html dom library
 description: Explica cómo agregar una cadena HTML en DOM usando Python con biblioteca de formato de archivo PDF
 ---
 

@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ru/python-net/convert-pdf-to-other-files/
 lastmod: "2022-12-23"
-keywords: преобразование, PDF, EPUB, LaTeX, Text, XPS, Python
 description: Эта тема показывает, как преобразовать PDF файл в другие форматы, такие как EPUB, LaTeX, Text, XPS и т.д., используя Python.
 sitemap:
     changefreq: "monthly"

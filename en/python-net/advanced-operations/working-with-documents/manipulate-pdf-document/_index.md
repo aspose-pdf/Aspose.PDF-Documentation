@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /python-net/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard using Python, how to work with TOC, how to set PDF expiry date, and etc.
-keywords: "manipulate pdf python"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

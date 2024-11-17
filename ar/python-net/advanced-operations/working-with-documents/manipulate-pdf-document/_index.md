@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /ar/python-net/manipulate-pdf-document/
 description: تحتوي هذه المقالة على معلومات حول كيفية التحقق من وثيقة PDF لمعيار PDF A باستخدام بايثون، كيفية العمل مع الفهرس، كيفية تحديد تاريخ انتهاء PDF، إلخ.
-keywords: "التلاعب بـ pdf بايثون"
 lastmod: "2023-04-13"
 sitemap:
     changefreq: "monthly"

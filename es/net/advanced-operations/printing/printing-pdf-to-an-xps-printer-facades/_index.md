@@ -4,7 +4,6 @@ linktitle: Impresión de PDF en una impresora XPS (Facades)
 type: docs
 weight: 20
 url: /es/net/printing-pdf-to-an-xps-printer-facades/
-keywords: "print pdf to xps, print pdf to xps c#"
 description: Esta página muestra cómo imprimir PDF en una impresora XPS utilizando la clase PdfViewer.
 lastmod: "2022-02-17"
 sitemap:

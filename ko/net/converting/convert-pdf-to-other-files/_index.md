@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /ko/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: 변환, PDF, EPUB, LaTeX, 텍스트, XPS, C#
 description: 이 주제에서는 C# 또는 .NET을 사용하여 PDF 파일을 EPUB, LaTeX, 텍스트, XPS 등의 다른 파일 형식으로 변환하는 방법을 보여줍니다.
 sitemap:
     changefreq: "monthly"

@@ -4,7 +4,6 @@ linktitle: تحسين PDF
 type: docs
 weight: 30
 url: /ar/net/optimize-pdf/
-keywords: "optimize pdf c#"
 description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة التضمين للخطوط، إزالة العناصر غير المستخدمة باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:

@@ -4,7 +4,6 @@ type: docs
 weight: 20
 url: /ko/sharepoint/save-sharepoint-wiki-page-as-pdf/
 lastmod: "2020-12-16"
-keywords: sharepoint wiki pdf export
 description: SharePoint PDF 라이브러리를 사용하여 SharePoint Wiki 페이지를 PDF로 내보낼 수 있습니다.
 ---
 

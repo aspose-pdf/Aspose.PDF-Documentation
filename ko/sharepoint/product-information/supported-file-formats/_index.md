@@ -10,8 +10,6 @@ url: /ko/sharepoint/supported-file-formats/
 
 lastmod: "2020-12-16"
 
-keywords: PDF SharePoint, PDF SharePoint로 로드, PDF SharePoint에 저장
-
 description: PDF SharePoint API는 PDF 및 PDF/A를 포함한 파일 형식을 로드하고 저장할 수 있습니다.
 ---
 

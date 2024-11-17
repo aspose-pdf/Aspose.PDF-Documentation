@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /fr/net/manipulate-pdf-document/
 description: Cet article contient des informations sur comment valider un document PDF pour la norme PDF A, comment travailler avec la table des matières, comment définir la date d'expiration d'un PDF, etc.
-keywords: "manipulate pdf c#"
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

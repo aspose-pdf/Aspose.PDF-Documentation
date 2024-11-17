@@ -4,7 +4,6 @@ linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
 url: /ar/net/split-pdf-document/
-keywords: تقسيم pdf إلى ملفات متعددة، تقسيم pdf إلى pdfs منفصلة، تقسيم pdf c#
 description: هذا الموضوع يوضح كيفية تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات .NET الخاصة بك باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:

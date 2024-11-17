@@ -4,7 +4,6 @@ linktitle: Optimiser PDF
 type: docs
 weight: 30
 url: /fr/net/optimize-pdf/
-keywords: "optimize pdf c#"
 description: Optimiser un fichier PDF, réduire toutes les images, diminuer la taille du PDF, désintégrer les polices, supprimer les objets inutilisés avec C#.
 lastmod: "2022-02-17"
 sitemap:

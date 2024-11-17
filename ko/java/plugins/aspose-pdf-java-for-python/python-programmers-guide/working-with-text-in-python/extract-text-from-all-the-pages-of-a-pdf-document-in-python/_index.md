@@ -4,7 +4,6 @@ type: docs
 weight: 30
 url: /ko/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 lastmod: "2021-06-05"
-keywords: extract pdf text python
 description: PDF 파일 형식 API를 사용하여 파이썬에서 PDF 페이지에서 텍스트를 추출하는 방법을 설명합니다.
 ---
 
