@@ -18,7 +18,3 @@ url: /net/vbscript-using-wrapper/
 We will use [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) to retrieve text from PDF document.
 
 {{% /alert %}}
-
-```cs
-// Example (to be announced)
-```
