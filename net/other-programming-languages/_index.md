@@ -17,3 +17,4 @@ url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
 - [Creating a Wrapper Assembly](/pdf/net/creating-a-wrapper-assembly/)
 - [VBScript using wrapper](/pdf/net/vbscript-using-wrapper/)
 - [Using Aspose.PDF for .NET with Python](/pdf/net/python-net/)
+- [Converting Documents in Microsoft Azure](/pdf/net/microsoft-azure/)

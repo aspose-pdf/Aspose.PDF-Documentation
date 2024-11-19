@@ -46,7 +46,11 @@ and many more.
 - [Converting documents](/pdf/net/converting/)
 - [Parsing PDF documents](/pdf/net/parsing/)
 - [Advanced operations](/pdf/net/advanced-operations/)
+- [Working with Facades](/pdf/net/working-with-facades)
+- [Using in other languages](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
 - [Showcases](/pdf/net/showcases/)
+- [Plugins](/pdf/net/plugins/)
+- [FAQ](/pdf/net/faq/)
 - [Release Notes](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Aspose.PDF for .NET Resources
