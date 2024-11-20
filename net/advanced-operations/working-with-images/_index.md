@@ -98,7 +98,7 @@ You are able to do the following:
 - [Set Default Font Name](/pdf/net/set-default-font-name/) - Setting Default Font Name for conversion process.
 - [Generate Thumbnail Images from PDF Documents](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - next article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
 - Support for DICOM Images - Aspose.PDF for .NET supports special medical graphic standard of images. Aspose.PDF for .NET allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) section.
-- [Working with Vector Graphics](/pdf/net/working-with-vector-graphics) This section describes the features of working with GraphicsAbsorber tool using C#.
+- [Working with Vector Graphics](/pdf/net/working-with-vector-graphics) - this section describes the features of working with GraphicsAbsorber tool using C#.
 
 <script type="application/ld+json">
 {
