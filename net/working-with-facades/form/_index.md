@@ -14,4 +14,6 @@ sitemap:
 - [Identifying form fields names](/pdf/net/identifying-form-fields-names/)
 - [Justify Text in a Textbox Field](/pdf/net/justify-text-in-a-textbox-field/)
 - [Whats the Difference Between XML, FDF and XFDF](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [Get Button Option Value](/pdf/net/get-button-option-value/)
+- [Import and Export Data](/pdf/net/import-and-export-data/)
 
