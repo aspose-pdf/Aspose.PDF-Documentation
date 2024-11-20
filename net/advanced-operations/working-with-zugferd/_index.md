@@ -28,7 +28,7 @@ ZUGFeRD offers users many benefits and cost savings, such as faster processing, 
 
 * [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in C#](/pdf/net/attach-zugferd/)
 
-See also:
+## See also
 
 * [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Java](/pdf/java/attach-zugferd/)
 * [Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in Python](/pdf/python-net/attach-zugferd/)
