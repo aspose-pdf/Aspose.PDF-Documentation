@@ -97,8 +97,8 @@ You are able to do the following:
 - [Split PDF](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications.
 - [Concatenate PDF files in folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
 - [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-pdf-documents/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
+- [Create Crash Reports](/pdf/net/generate-crash-reports/) - generate crash reports using C#.
 - [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
-- [Generate Crash Reports](/pdf/net/generate-crash-reports/) - generate crash reports using C#.
 
 <script type="application/ld+json">
 {
