@@ -30,6 +30,6 @@ Aspose.PDF allows you to use free technical support for all its products. If you
 If you need help with an issue with Aspose.PDF, follow the next reccomendations  to make sure it is resolved in the most efficient way:
 
 - Firstly, check that you use the latest Aspose.PDF version before reporting the issue, see [Aspose.PDF for .NET Downloads](https://www.nuget.org/packages/Aspose.PDF/) to find out about the latest version.
-- Perhaps the solution to your problem has already been discussed and has a solution, for this, study the forum and documentation, check API Reference before reporting the issue.
+- Perhaps the solution to your problem has already been discussed and has a solution, for this, study the forum and documentation, check [API Reference](http://www.aspose.com/docs/display/pdfnet/Aspose.PDF+for+.NET+API+Reference) before reporting the issue.
 - When you form your question, please include the original document and possibly a fragment of your code that causes the problem. You can zip these files into one document if there are several.
 - Don't worry, only you and the developers of Aspose have access to the sticky files.
