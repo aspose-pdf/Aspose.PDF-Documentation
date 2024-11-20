@@ -247,11 +247,11 @@ foreach (Aspose.Pdf.Page page in pdfDocument.Pages)
     {
         foreach (Aspose.Pdf.Text.Font pageFont in page.Resources.Fonts)
         {
-// Check if font is already embedded
-if (!pageFont.IsEmbedded)
-{
-    pageFont.IsEmbedded = true;
-}
+            // Check if font is already embedded
+            if (!pageFont.IsEmbedded)
+            {
+                pageFont.IsEmbedded = true;
+            }
         }
     }
 }

@@ -28,6 +28,7 @@ public static void SetViewerPreference()
     editor.ChangeViewerPreference(ViewerPreference.CenterWindow);
     editor.ChangeViewerPreference(ViewerPreference.HideMenubar);
     editor.ChangeViewerPreference(ViewerPreference.PageModeFullScreen);
+    
     // Saves the result PDF to file
     editor.Save(_dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
     GetViewerPreference();

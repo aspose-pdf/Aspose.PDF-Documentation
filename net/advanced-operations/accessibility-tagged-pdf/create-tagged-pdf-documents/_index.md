@@ -235,7 +235,6 @@ figure1.SetImage("image.png");
 
 // Save Tagged Pdf Document
 document.Save(dataDir + "IllustrationStructureElements.pdf");
-
 ```
 
 ## Validate Tagged PDF

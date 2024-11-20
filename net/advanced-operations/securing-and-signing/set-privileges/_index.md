@@ -210,7 +210,9 @@ for (int passwordcount = 0; passwordcount < passwords.Length; passwordcount++)
     {
         Document doc = new Document(dataDir + "IsPasswordProtected.pdf", passwords[passwordcount]);
         if (doc.Pages.Count > 0)
+        {
             Console.WriteLine("Number of Page in document are = " + doc.Pages.Count);
+        }
     }
     catch (InvalidPasswordException)
     {

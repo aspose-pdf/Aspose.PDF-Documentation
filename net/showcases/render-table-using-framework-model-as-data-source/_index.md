@@ -42,7 +42,6 @@ var pdfPage = document.Pages.Add();
 
 // Step 3
 var textFragment = new TextFragment(reportTitle);
-// ..........................................
 
 var table = new Table
 {

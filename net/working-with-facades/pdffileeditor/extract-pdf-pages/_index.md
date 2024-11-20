@@ -32,11 +32,16 @@ public static void Extract_PDFPages_Streams()
 {
     // Create PdfFileEditor object
     PdfFileEditor pdfEditor = new PdfFileEditor();
+
     // Create streams
     using (FileStream inputStream = new FileStream(_dataDir + "MultiplePages.pdf", FileMode.Open))
-    using (FileStream outputStream = new FileStream(_dataDir + "ExtractPagesBetweenTwoNumbers_out.pdf", FileMode.Create))
-        // Extract pages
-        pdfEditor.Extract(inputStream, 1, 3, outputStream);
+    {
+        using (FileStream outputStream = new FileStream(_dataDir + "ExtractPagesBetweenTwoNumbers_out.pdf", FileMode.Create))
+        {
+            // Extract pages
+            pdfEditor.Extract(inputStream, 1, 3, outputStream);
+        }
+    }
 }
 ```
 
@@ -67,11 +72,13 @@ public static void Extract_ArrayPDFPages_Streams()
     PdfFileEditor pdfEditor = new PdfFileEditor();
     // Create streams
     using (FileStream inputStream = new FileStream(_dataDir + "MultiplePages.pdf", FileMode.Open))
-    using (FileStream outputStream = new FileStream(_dataDir + "ExtractArrayOfPagesUsingStreams_out.pdf", FileMode.Create))
     {
-        int[] pagesToExtract = new int[] { 1, 2 };
-        // Extract pages
-        pdfEditor.Extract(inputStream, pagesToExtract, outputStream);
+        using (FileStream outputStream = new FileStream(_dataDir + "ExtractArrayOfPagesUsingStreams_out.pdf", FileMode.Create))
+        {
+            int[] pagesToExtract = new int[] { 1, 2 };
+            // Extract pages
+            pdfEditor.Extract(inputStream, pagesToExtract, outputStream);
+        }
     }
 }
 ```

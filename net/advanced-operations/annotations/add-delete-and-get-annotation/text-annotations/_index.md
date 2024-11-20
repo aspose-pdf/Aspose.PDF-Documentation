@@ -171,6 +171,8 @@ namespace Aspose.Pdf.Examples.Advanced
                 Console.WriteLine(ex.Message);
             }
         }
+    }
+}
 ```
 
 ## How to add (or Create) new Free Text Annotation
@@ -244,12 +246,7 @@ pdfDocument.Save(dataDir + "SetCalloutPropertyXFDF.pdf");
 The following method is being used to CreateXfdf:
 
 ```csharp
-/// <summary>
-/// Create XFDF
-/// </summary>
-/// <param name="pXfdf"></param>
-
-static void CreateXfdf(ref StringBuilder pXfdf)
+private static void CreateXfdf(ref StringBuilder pXfdf)
 {
     pXfdf.Append("<freetext");
     pXfdf.Append(" page=\"0\"");

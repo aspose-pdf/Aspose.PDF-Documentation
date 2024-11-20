@@ -177,9 +177,13 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
             finally
             {
                 if (System.IO.File.Exists(tmpFile))
+                {
                     System.IO.File.Delete(tmpFile);
+                }
                 if (System.IO.File.Exists(tmpFile + ".hocr"))
+                {
                     System.IO.File.Delete(tmpFile + ".hocr");
+                }
             }
         }
     }

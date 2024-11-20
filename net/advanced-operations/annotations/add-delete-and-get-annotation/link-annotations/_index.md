@@ -255,7 +255,9 @@ class ExampleLinkAnnotations
         var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
 
         foreach (var la in linkAnnotations)
+        {
             document.Pages[1].Annotations.Delete(la);
+        }
         // Save document with removed annotation
         document.Save(System.IO.Path.Combine(_dataDir, "SimpleResume_del.pdf"));
     }

@@ -137,7 +137,9 @@ absorber.TableList.CopyTo(tables, 0);
 
 // Loop through the copy of collection and removing tables
 foreach (AbsorbedTable table in tables)
+{
     absorber.Remove(table);
+}
 
 // Save document
 pdfDocument.Save(dataDir + "Table2_out.pdf");

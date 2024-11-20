@@ -893,10 +893,14 @@ ts.Font = font;
 ts.FontSize = 14;
 
 if (Math.Abs(font.MeasureString("A", 14) - 9.337) > 0.001)
+{
     Console.WriteLine("Unexpected font string measure!");
+}
 
 if (Math.Abs(ts.MeasureString("z") - 7.0) > 0.001)
+{
     Console.WriteLine("Unexpected font string measure!");
+}
 
 for (char c = 'A'; c <= 'z'; c++)
 {
@@ -904,7 +908,9 @@ for (char c = 'A'; c <= 'z'; c++)
     double tsMeasure = ts.MeasureString(c.ToString());
 
     if (Math.Abs(fnMeasure - tsMeasure) > 0.001)
+    {
         Console.WriteLine("Font and state string measuring doesn't match!");
+    }
 }
 ```
 

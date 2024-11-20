@@ -85,7 +85,6 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-
 // Load the source PDF document
 Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "ImagePlacement.pdf");
 ImagePlacementAbsorber abs = new ImagePlacementAbsorber();

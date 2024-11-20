@@ -28,10 +28,10 @@ public static void ExtractText()
    Annotation item = document.Pages[1].Annotations[1];
    if (item is StampAnnotation annot) 
    {
-         TextAbsorber ta = new TextAbsorber();
-         XForm ap = annot.Appearance["N"];
-         ta.Visit(ap);
-         Console.WriteLine(ta.Text);
+        TextAbsorber ta = new TextAbsorber();
+        XForm ap = annot.Appearance["N"];
+        ta.Visit(ap);
+        Console.WriteLine(ta.Text);
    }
 }
 ```

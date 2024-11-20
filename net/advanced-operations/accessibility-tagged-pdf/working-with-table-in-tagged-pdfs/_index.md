@@ -99,7 +99,6 @@ taggedContent.SetLanguage("en-US");
 // Get root structure element
 StructureElement rootElement = taggedContent.RootElement;
 
-
 TableElement tableElement = taggedContent.CreateTableElement();
 rootElement.AppendChild(tableElement);
 
@@ -198,12 +197,10 @@ for (colIndex = 0; colIndex < colCount; colIndex++)
     tdElement.StructureTextState.FontStyle = FontStyles.Bold;
 }
 
-
 StructureAttributes tableAttributes = tableElement.Attributes.GetAttributes(AttributeOwnerStandard.Table);
 StructureAttribute summaryAttribute = new StructureAttribute(AttributeKey.Summary);
 summaryAttribute.SetStringValue("The summary text for table");
 tableAttributes.SetAttribute(summaryAttribute);
-
 
 // Save Tagged Pdf Document
 document.Save(dataDir + "CreateTableElement.pdf");

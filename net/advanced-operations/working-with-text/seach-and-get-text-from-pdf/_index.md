@@ -163,10 +163,13 @@ Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
 
 // Create TextAbsorber object to find all instances of the input search phrase
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
+
 // Accept the absorber for all the pages
 pdfDocument.Pages.Accept(textFragmentAbsorber);
+
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+
 // Loop through the fragments
 foreach (TextFragment textFragment in textFragmentCollection)
 {
@@ -275,14 +278,19 @@ The following code snippet shows you how to search text inside a PDF file using 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
 // Create absorber object to find all instances of the input search phrase
 TextFragmentAbsorber absorber = new TextFragmentAbsorber("\\d{4}-\\d{4}");
+
 // Enable regular expression search
 absorber.TextSearchOptions = new TextSearchOptions(true);
+
 // Open document
 PdfContentEditor editor = new PdfContentEditor();
+
 // Bind source PDF file
 editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
+
 // Accept the absorber for the page
 editor.Document.Pages[1].Accept(absorber);
 
@@ -323,11 +331,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
 
 // Create TextAbsorber object to find all the phrases matching the regular expression
-
 TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(@"[\S]+");
 
 TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-
 textAbsorber.TextSearchOptions = textSearchOptions;
 
 document.Pages.Accept(textAbsorber);
@@ -340,7 +346,6 @@ foreach (TextFragment textFragment in textAbsorber.TextFragments)
     {
         DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
     }
-
 }
 dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
 document.Save(dataDir);
@@ -380,54 +385,51 @@ using (MemoryStream ms = new MemoryStream())
 
         for (int i = 0; i < pdfDocument.Pages.Count; i++)
         {
-Page page = pdfDocument.Pages[1];
-// Create TextAbsorber object to find all words
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-page.Accept(textFragmentAbsorber);
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    if (i == 0)
-    {
-        gr.DrawRectangle(
-        Pens.Yellow,
-        (float)textFragment.Position.XIndent,
-        (float)textFragment.Position.YIndent,
-        (float)textFragment.Rectangle.Width,
-        (float)textFragment.Rectangle.Height);
+            Page page = pdfDocument.Pages[1];
+            // Create TextAbsorber object to find all words
+            TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
+            textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
+            page.Accept(textFragmentAbsorber);
+            // Get the extracted text fragments
+            TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+            // Loop through the fragments
+            foreach (TextFragment textFragment in textFragmentCollection)
+            {
+                if (i == 0)
+                {
+                    gr.DrawRectangle(
+                    Pens.Yellow,
+                    (float)textFragment.Position.XIndent,
+                    (float)textFragment.Position.YIndent,
+                    (float)textFragment.Rectangle.Width,
+                    (float)textFragment.Rectangle.Height);
 
-        for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
-        {
-TextSegment segment = textFragment.Segments[segNum];
+                    for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
+                    {
+            TextSegment segment = textFragment.Segments[segNum];
 
-for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-{
-    CharInfo characterInfo = segment.Characters[charNum];
+            for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
+            {
+                CharInfo characterInfo = segment.Characters[charNum];
 
-    Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-    Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-          "   TextFragment URY = " + textFragment.Rectangle.URY);
+                Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
+                Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
+                    "   TextFragment URY = " + textFragment.Rectangle.URY);
 
-    gr.DrawRectangle(
-    Pens.Black,
-    (float)characterInfo.Rectangle.LLX,
-    (float)characterInfo.Rectangle.LLY,
-    (float)characterInfo.Rectangle.Width,
-    (float)characterInfo.Rectangle.Height);
-}
+                gr.DrawRectangle(
+                Pens.Black,
+                (float)characterInfo.Rectangle.LLX,
+                (float)characterInfo.Rectangle.LLY,
+                (float)characterInfo.Rectangle.Width,
+                (float)characterInfo.Rectangle.Height);
+            }
 
-gr.DrawRectangle(
-Pens.Green,
-(float)segment.Rectangle.LLX,
-(float)segment.Rectangle.LLY,
-(float)segment.Rectangle.Width,
-(float)segment.Rectangle.Height);
-        }
-    }
-}
+            gr.DrawRectangle(
+            Pens.Green,
+            (float)segment.Rectangle.LLX,
+            (float)segment.Rectangle.LLY,
+            (float)segment.Rectangle.Width,
+            (float)segment.Rectangle.Height);
         }
     }
     dataDir = dataDir + "HighlightCharacterInPDF_out.png";

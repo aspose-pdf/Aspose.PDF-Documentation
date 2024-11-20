@@ -23,10 +23,18 @@ public static void GetViewerPreference()
     // Change Viewer Preferences
     var preferences = editor.GetViewerPreference();
     if ((preferences & ViewerPreference.CenterWindow) != 0)
+    {
         Console.WriteLine("CenterWindow");
+    }
+
     if ((preferences & ViewerPreference.HideMenubar) != 0)
+    {
         Console.WriteLine("Menu bar hided");
+    }
+
     if ((preferences & ViewerPreference.PageModeFullScreen) != 0)
+    {
         Console.WriteLine("Page Mode Full Screen");
+    }
 }
 ```

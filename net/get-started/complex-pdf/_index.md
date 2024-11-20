@@ -48,12 +48,10 @@ namespace Aspose.Pdf.Examples
             // Add page
             Page page = document.Pages.Add();
 
-            // -------------------------------------------------------------
             // Add image
             var imageFileName = System.IO.Path.Combine(_dataDir, "logo.png");
             page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
 
-            // -------------------------------------------------------------
             // Add Header
             var header = new TextFragment("New ferry routes in Fall 2020");
             header.TextState.Font = FontRepository.FindFont("Arial");
@@ -110,7 +108,6 @@ namespace Aspose.Pdf.Examples
             page.Paragraphs.Add(table);
 
             document.Save(System.IO.Path.Combine(_dataDir, "Complex.pdf"));
-
         }
     }
 }

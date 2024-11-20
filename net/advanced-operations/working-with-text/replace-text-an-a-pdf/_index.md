@@ -190,6 +190,7 @@ foreach (TextFragment textFragment in textFragmentCollection)
     textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
     textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 }
+
 dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
 pdfDocument.Save(dataDir);
 ```
@@ -205,11 +206,13 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Load source PDF file
 Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
+
 // Search text fragments and set edit option as remove unused fonts
 TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
 
 // Accept the absorber for all the pages
 pdfDocument.Pages.Accept(absorber);
+
 // Traverse through all the TextFragments
 foreach (TextFragment textFragment in absorber.TextFragments)
 {
@@ -218,7 +221,6 @@ foreach (TextFragment textFragment in absorber.TextFragments)
     {
         textFragment.TextState.Font = FontRepository.FindFont("Arial");
     }
-
 }
 
 dataDir = dataDir + "ReplaceFonts_out.pdf";
@@ -239,9 +241,11 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Load source PDF file
 Document doc = new Document(dataDir + "ExtractTextPage.pdf");
+
 // Create TextFragment Absorber object with regular expression
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
 doc.Pages.Accept(textFragmentAbsorber);
+
 // Replace each TextFragment
 foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
 {
@@ -253,6 +257,7 @@ foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
     // Replace the text with larger string than placeholder
     textFragment.Text = "This is a Larger String for the Testing of this issue";
 }
+
 dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
 // Save resultant PDF
 doc.Save(dataDir);
@@ -295,6 +300,7 @@ par.Position = new Aspose.Pdf.Text.Position(100, 600);
 
 // Create TextBuilder object
 TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
+
 // Add the TextParagraph using TextBuilder
 textBuilder.AppendParagraph(par);
 
@@ -347,6 +353,7 @@ hfFirst.Paragraphs.Add(t2);
 
 // Create a HeaderFooter object for the section
 HeaderFooter hfFoot = new HeaderFooter();
+
 // Set the HeaderFooter object to odd & even footer
 page.Footer = hfFoot;
 hfFoot.Margin.Left = 50;
