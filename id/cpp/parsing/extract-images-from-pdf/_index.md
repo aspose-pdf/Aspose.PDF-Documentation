@@ -1,4 +1,3 @@
-```
 ---
 title: Ekstrak Gambar dari PDF 
 linktitle: Ekstrak Gambar dari PDF

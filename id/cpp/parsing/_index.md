@@ -1,4 +1,3 @@
-```
 ---
 title: Parse dokumen PDF C/C++
 linktitle: Parse dokumen PDF

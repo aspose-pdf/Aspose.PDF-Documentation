@@ -1,4 +1,3 @@
-```
 ---
 title: Mettre à jour, Supprimer et Obtenir des Signets
 type: docs

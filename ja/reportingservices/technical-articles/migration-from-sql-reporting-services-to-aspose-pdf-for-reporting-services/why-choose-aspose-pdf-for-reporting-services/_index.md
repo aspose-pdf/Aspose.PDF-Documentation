@@ -1,4 +1,3 @@
-```
 ---
 title: Aspose.Pdf for Reporting Services を選ぶ理由
 type: docs

@@ -1,4 +1,3 @@
-```
 ---
 title: Pourquoi choisir Aspose.Pdf pour les services de création de rapports
 type: docs

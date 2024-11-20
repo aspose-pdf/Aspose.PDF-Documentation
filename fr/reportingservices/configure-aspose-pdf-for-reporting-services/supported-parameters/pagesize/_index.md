@@ -1,4 +1,3 @@
-```
 ---
 title: PageSize
 type: docs

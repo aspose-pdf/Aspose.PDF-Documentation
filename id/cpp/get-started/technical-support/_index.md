@@ -1,4 +1,3 @@
-```
 ---
 title: Aspose.PDF untuk Dukungan C++
 linktitle: Dukungan Teknis

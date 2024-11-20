@@ -1,4 +1,3 @@
-```
 ---
 title: 从PDF文件中提取链接
 linktitle: 提取链接

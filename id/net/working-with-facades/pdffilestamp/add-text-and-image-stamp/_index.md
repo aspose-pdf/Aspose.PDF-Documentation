@@ -1,4 +1,3 @@
-```
 ---
 title: Tambahkan Cap Teks dan Gambar
 type: docs

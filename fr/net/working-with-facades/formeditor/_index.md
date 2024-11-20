@@ -1,4 +1,3 @@
-```
 ---
 title: FormEditor Class
 type: docs

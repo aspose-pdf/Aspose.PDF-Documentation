@@ -1,4 +1,3 @@
-```
 ---
 title: Ekstrak Lampiran dari File PDF
 type: docs

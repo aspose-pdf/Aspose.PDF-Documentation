@@ -1,4 +1,3 @@
-```
 ---
 title: PdfFileInfo Class
 type: docs

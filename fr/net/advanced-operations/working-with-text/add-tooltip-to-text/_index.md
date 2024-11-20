@@ -1,4 +1,3 @@
-```
 ---
 title: PDF Tooltip using C#
 linktitle: PDF Tooltip

@@ -1,4 +1,3 @@
-```
 ---
 title: PdfExtractorを使用して画像を抽出
 type: docs

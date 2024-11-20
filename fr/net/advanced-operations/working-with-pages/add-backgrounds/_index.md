@@ -1,4 +1,3 @@
-```
 ---
 title: Ajouter un arrière-plan à un PDF avec C#
 linktitle: Ajouter des arrière-plans

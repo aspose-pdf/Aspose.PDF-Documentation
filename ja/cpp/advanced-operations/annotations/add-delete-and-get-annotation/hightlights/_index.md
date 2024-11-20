@@ -1,4 +1,3 @@
-```
 ---
 title: PDF ハイライト注釈の使用 C++
 linktitle: ハイライト注釈

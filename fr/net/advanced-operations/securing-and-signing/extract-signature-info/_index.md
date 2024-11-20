@@ -1,4 +1,3 @@
-```
 ---
 title: Extraire les informations d'image et de signature
 linktitle: Extraire les informations d'image et de signature

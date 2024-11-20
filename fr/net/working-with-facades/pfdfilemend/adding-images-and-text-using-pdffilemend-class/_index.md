@@ -1,4 +1,3 @@
-```
 ---
 title: Ajout d'Images et de Texte
 type: docs

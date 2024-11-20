@@ -1,4 +1,3 @@
-```
 ---
 title: Создание PDF из XML с использованием XSLT
 linktitle: Создать PDF из XML с использованием XSLT

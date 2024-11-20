@@ -1,4 +1,3 @@
-```
 ---
 title: PDFから画像を抽出する
 linktitle: PDFから画像を抽出する

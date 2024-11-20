@@ -1,4 +1,3 @@
-```
 ---
 title: Travailler avec les Graphiques Vectoriels
 linktitle: Travailler avec les Graphiques Vectoriels

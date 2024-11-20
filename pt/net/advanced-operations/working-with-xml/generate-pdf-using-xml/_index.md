@@ -1263,7 +1263,6 @@ doc.Save(outFile);
     }
 }
 </script>
-```
 ---
 id: babel
 title: Babel

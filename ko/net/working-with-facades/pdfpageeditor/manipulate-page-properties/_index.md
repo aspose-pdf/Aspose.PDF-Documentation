@@ -1,4 +1,3 @@
-```
 ---
 title: 페이지 속성 조작
 type: docs

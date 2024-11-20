@@ -1,4 +1,3 @@
-```
 ---
 title: Ekstrak Tautan dari File PDF
 linktitle: Ekstrak Tautan

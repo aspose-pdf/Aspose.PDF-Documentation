@@ -1,4 +1,3 @@
-```
 ---
 title: Dasar-dasar Aspose.PDF DOM API
 linktitle: Dasar-dasar DOM API

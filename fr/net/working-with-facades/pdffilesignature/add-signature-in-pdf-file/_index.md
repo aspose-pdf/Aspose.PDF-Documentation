@@ -1,4 +1,3 @@
-```
 ---
 title: Ajouter une signature dans un fichier PDF
 type: docs

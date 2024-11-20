@@ -1,4 +1,3 @@
-```
 ---
 title: PdfExtractor를 사용하여 이미지 추출
 type: docs

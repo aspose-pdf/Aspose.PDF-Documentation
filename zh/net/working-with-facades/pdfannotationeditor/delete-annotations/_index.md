@@ -1,4 +1,3 @@
-```
 ---
 title: 删除注释（外观）
 type: docs

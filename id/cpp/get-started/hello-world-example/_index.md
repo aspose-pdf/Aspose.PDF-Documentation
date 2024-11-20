@@ -1,4 +1,3 @@
-```
 ---
 title: Aspose.PDF С++ Contoh
 linktitle: Contoh Hello World

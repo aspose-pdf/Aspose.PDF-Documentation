@@ -1,4 +1,3 @@
-```
 ---
 title: Trabalhando Com Texto - Fachadas
 type: docs

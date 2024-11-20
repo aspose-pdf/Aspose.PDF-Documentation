@@ -1,4 +1,3 @@
-```
 ---
 title: Menambahkan Gambar dan Teks 
 type: docs

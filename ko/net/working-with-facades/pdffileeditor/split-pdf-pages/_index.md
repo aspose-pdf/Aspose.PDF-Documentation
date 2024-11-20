@@ -1,4 +1,3 @@
-```
 ---
 title: PDF 페이지 분할
 type: docs

@@ -1,4 +1,3 @@
-```
 ---
 title: Extrair Imagens usando PdfExtractor
 type: docs

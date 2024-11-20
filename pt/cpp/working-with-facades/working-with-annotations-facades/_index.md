@@ -1,4 +1,3 @@
-```
 ---
 title: Trabalhando com Anotações - Fachadas
 type: docs

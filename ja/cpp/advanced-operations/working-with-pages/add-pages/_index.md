@@ -1,4 +1,3 @@
-```
 ---
 title: C++でPDFにページを追加
 linktitle: ページを追加

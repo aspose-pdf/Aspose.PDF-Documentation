@@ -1,4 +1,3 @@
-```
 ---
 title: Bekerja dengan Aspose.Pdf Facades
 type: docs

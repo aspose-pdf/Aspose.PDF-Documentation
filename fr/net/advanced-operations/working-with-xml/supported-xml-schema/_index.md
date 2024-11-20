@@ -1,4 +1,3 @@
-```
 ---
 title: XML Schema of Aspose.PDF
 linktitle: Schéma XML pris en charge

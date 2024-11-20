@@ -1,4 +1,3 @@
-```
 ---
 title: استخراج بيانات AcroForm باستخدام C++
 linktitle: استخراج بيانات AcroForm

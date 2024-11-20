@@ -1,4 +1,3 @@
-```
 ---
 title: XMP Metadata
 type: docs

@@ -1,4 +1,3 @@
-```
 ---
 title: Tambahkan Nomor Halaman ke PDF dengan C++
 linktitle: Tambahkan Nomor Halaman

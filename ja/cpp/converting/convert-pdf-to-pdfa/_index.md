@@ -1,4 +1,3 @@
-```
 ---
 title: PDFをPDF/A形式に変換
 linktitle: PDFをPDF/A形式に変換

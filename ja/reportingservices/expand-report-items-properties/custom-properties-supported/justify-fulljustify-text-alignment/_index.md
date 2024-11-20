@@ -1,4 +1,3 @@
-```
 ---
 title: 両端揃え（Justify FullJustify）テキスト配置
 type: docs

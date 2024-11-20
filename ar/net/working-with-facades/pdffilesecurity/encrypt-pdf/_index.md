@@ -1,4 +1,3 @@
-```
 ---
 title: تشفير ملف PDF
 type: docs

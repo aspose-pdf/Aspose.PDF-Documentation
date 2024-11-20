@@ -1,4 +1,3 @@
-```
 ---
 title: Enkripsi, Dekripsi, dan Atur Hak Istimewa pada Dokumen PDF
 type: docs

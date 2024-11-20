@@ -1,4 +1,3 @@
-```
 ---
 title: Añadiendo Imágenes y Texto
 type: docs

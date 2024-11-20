@@ -1,4 +1,3 @@
-```
 ---
 title: Aspose.PDF .NET pour DNN
 type: docs

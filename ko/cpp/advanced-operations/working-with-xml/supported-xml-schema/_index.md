@@ -1,4 +1,3 @@
-```
 ---
 title: Aspose.PDF의 XML 스키마
 linktitle: 지원되는 XML 스키마

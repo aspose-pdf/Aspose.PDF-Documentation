@@ -1,4 +1,3 @@
-```
 ---
 title: Ekstra Anotasi menggunakan C++
 linktitle: Ekstra Anotasi

@@ -1,4 +1,3 @@
-```
 ---
 title: Ekstrak teks dari semua halaman PDF menggunakan C++
 linktitle: Ekstrak teks dari PDF

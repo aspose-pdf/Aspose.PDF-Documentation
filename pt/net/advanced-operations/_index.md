@@ -1,4 +1,3 @@
-```
 ---
 title: Operações avançadas
 linktitle: Operações avançadas

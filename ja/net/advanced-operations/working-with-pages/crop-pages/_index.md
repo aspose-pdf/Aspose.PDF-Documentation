@@ -1,4 +1,3 @@
-```
 ---
 title: Crop PDF Pages programmatically C#
 linktitle: Crop Pages
