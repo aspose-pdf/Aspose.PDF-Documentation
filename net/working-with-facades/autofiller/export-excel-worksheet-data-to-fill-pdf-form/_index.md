@@ -15,7 +15,7 @@ We would be using [ExportDataTable](https://reference.aspose.com/cells/net/aspos
 
 {{% /alert %}}
 
-## Implementation Details
+## Implementation details
 
 In the following scenario we are going to using a PDF form, which contains three form fields named ID, Name and Gender.
 

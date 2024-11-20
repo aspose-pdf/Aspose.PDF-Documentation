@@ -18,7 +18,7 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 - dest is destination document/path where document will be saved/stream where document will be saved
 - PageBreak is array of page break objects. It have two properties: index of page where page break must be placed and vertical position of the page break on the page.
 
-## Example 1 (Add page break )
+## Example 1 (Add page break)
 
 ```csharp
 public static void PageBrakeExample01()

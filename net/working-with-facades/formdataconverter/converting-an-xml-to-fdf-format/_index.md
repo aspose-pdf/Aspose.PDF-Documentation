@@ -14,7 +14,7 @@ The [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades
 
 {{% /alert %}}
 
-## Details
+## Implementation details
 
 FDF stands for Forms Data Format, and an FDF file contains the form values in a key/value pair. We also know that XML file contains the values as tags. Where, mostly the key is represented as the tag name and value is represented as the value within that tag. Now, [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) provides the flexibility to convert an XML file format into FDF format.
 
