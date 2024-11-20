@@ -11,7 +11,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-This articles describes that how you can [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) multiple PDF Documents into a Single PDF Document with the help of [Aspose.PDF for .NET](/pdf/net/) Component. [Aspose.PDF for .NET](/pdf/net/) makes this job like a piece of cake.
+This article describes that how you can [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) multiple PDF Documents into a Single PDF Document with the help of [Aspose.PDF for .NET](/pdf/net/) Component. [Aspose.PDF for .NET](/pdf/net/) makes this job like a piece of cake.
 
 {{% /alert %}}
 
