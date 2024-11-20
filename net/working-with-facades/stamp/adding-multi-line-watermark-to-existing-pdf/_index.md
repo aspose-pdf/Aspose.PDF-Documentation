@@ -14,7 +14,7 @@ A lot of users want to stamp their PDF documents with multi-line text. They usua
 
 {{% /alert %}}
 
-## Implementation
+## Implementation details
 
 Please refer to the following code chunk to add multi-line watermark in existing PDF.
 

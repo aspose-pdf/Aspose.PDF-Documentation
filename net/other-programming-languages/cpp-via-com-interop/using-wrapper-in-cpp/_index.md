@@ -13,7 +13,7 @@ Please register Aspose.PDF for .NET with COM Interop, kindly check the article n
 
 {{% /alert %}}
 
-## Implementation
+## Implementation details
 
 {{% alert color="primary" %}}
 
