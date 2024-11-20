@@ -109,10 +109,10 @@ If you have any issues using the above methods which uses Visual Studio Toolbox,
 
 Common questions and issues you might face while using this Control
 
-<div class="schema-faq-code" itemscope="" itemtype="https://schema.org/FAQPage">
-    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+<div class="schema-faq-code" itemscope=""="" itemtype="https://schema.org/FAQPage">
+    <div itemscope=""="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
         <h3 itemprop="name" class="faq-q">1. I cannot see ExportGridViewToPdf control in Toolbox</h3>
-        <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemscope=""="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
              <div itemprop="text" class="faq-a">
                <p><strong>Visual Studio 2010 and higher</strong></p>
 <ol><li>Make sure that you have installed this control using VSIX extension file found in downloaded package. To verify go to Tools -&gt; Extension and Updates. Unders Installed you should see 'Aspose Export Export GridView To Pdf Control'. If don't see it please try re-installing it</li>
@@ -123,9 +123,9 @@ Older Versions of Visual Studio</li>
         </div>
     </div>
 
-    <div itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
+    <div itemscope=""="" itemprop="mainEntity" itemtype="https://schema.org/Question" class="faq-question">
         <h3 itemprop="name" class="faq-q">2. I am getting 'Access is denied' error when running the application</h3>
-        <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+        <div itemscope=""="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
              <div itemprop="text" class="faq-a">
                <ol>
                <li>If you are experiencing this problem on production then make sure that you copy both Aspose.PDF.dll and Aspose.PDF.GridViewExport.dll to your bin folder.</li>
