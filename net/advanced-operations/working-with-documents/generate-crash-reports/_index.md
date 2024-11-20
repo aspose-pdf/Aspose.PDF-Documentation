@@ -1,6 +1,6 @@
 ---
 title: Generate Crash Reports using C#
-linktitle: crash Reports
+linktitle: Create Crash Report
 type: docs
 weight: 100
 url: /net/generate-crash-reports/
