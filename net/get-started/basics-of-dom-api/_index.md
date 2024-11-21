@@ -82,6 +82,6 @@ This namespace contains classes that help you work with PDF forms and form field
 
 We can perform various operations on the PDF documents such as converting PDF document to various image formats. However, such operations do not belong to the Document object and we cannot extend the Document class for such operations. That's why we have introduced the concept of the Device in the new DOM API.
 
-##### Aspose.PDF.Facades
+#### Aspose.PDF.Facades
 
-Previous to Aspose.PDF for .NET t.o.o, you needed Aspose.PDF.Kit for .NET to manipulate existing PDF files. To execute old Aspose.PDF.Kit code, can use Aspose.PDF.Facades namespace.
+Previous to Aspose.PDF for .NET, you needed Aspose.PDF.Kit for .NET to manipulate existing PDF files. To execute old Aspose.PDF.Kit code, can use Aspose.PDF.Facades namespace.

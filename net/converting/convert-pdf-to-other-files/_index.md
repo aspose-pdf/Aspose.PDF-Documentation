@@ -198,8 +198,9 @@ The following code snippet shows the process of converting PDF file into MD form
             // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
             UseImageHtmlTag = false
         }
-            // Specify the directory name where resources (like images) will be stored.
-            saveOptions.ResourcesDirectoryName = "images";
+        
+        // Specify the directory name where resources (like images) will be stored.
+        saveOptions.ResourcesDirectoryName = "images";
 
         // Save the document in Markdown format to the specified output file path using the defined save options.    
         doc.Save(markdownOutputFilePath, saveOptions);

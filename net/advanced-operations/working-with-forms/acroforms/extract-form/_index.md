@@ -133,8 +133,10 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 // Open document
 Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
 SubmitFormAction act = pdfDocument.Form[1].OnActivated as SubmitFormAction;
-if(act != null)
-Console.WriteLine(act.Url.Name);
+if (act != null)
+{
+    Console.WriteLine(act.Url.Name);
+}
 ```
 
 ### Get Form Fields from a Specific Region of PDF File

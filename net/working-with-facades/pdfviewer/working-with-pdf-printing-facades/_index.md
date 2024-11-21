@@ -68,7 +68,6 @@ public static void PrintingPDFDisplayPrintDialog()
 
     System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings
     {
-
         // Set PageSize (if required)
         PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169),
 
@@ -151,8 +150,6 @@ public static void PrintingPDFHidePrintDialog()
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
     viewer.AutoRotate = true;         // Print the file with adjusted rotation
-
-
     viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
 
     // Create objects for printer and page settings and PrintDocument
@@ -192,8 +189,6 @@ public static void PrintingPDFasGrayscale()
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
     viewer.AutoRotate = true;         // Print the file with adjusted rotation
-
-
     viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
     viewer.PrintAsGrayscale = false;
 
@@ -237,7 +232,6 @@ public static void PrintingPDFToPostScript()
     viewer.AutoResize = true;         // Print the file with adjusted size
     viewer.AutoRotate = true;         // Print the file with adjusted rotation
     viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-
     viewer.PrintAsImage = false;
 
     // Create objects for printer and page settings and PrintDocument
@@ -281,7 +275,6 @@ public static void CheckingPrintJobStatus()
     viewer.AutoResize = true;         // Print the file with adjusted size
     viewer.AutoRotate = true;         // Print the file with adjusted rotation
     viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-
     viewer.PrintAsImage = false;
 
     // Create objects for printer and page settings and PrintDocument

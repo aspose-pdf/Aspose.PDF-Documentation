@@ -100,7 +100,7 @@ class Program
         // Start the printing thread. The method passed to the Thread
         // constructor will execute.
         printingThread.Start();
-    }//end Main
+    }
 
     private static void PrintPDF(string pdfFileName)
     {
@@ -127,7 +127,7 @@ class Program
             Console.WriteLine("\tContinuing with next XPS file.\n");
         }
     }
-}//end Program class
+}
 ```
 
 ## Choosing paper source by PDF page size

@@ -87,9 +87,9 @@ The Stamp in the PDF file gives the additional information for the PDF file, suc
 
 Check the following sections to learn how to add a stamp with C#:
 
-- [Add Image stamps in PDF page](/pdf/net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
+- [Add Image stamps in the PDF page](/pdf/net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
 - [Add Text stamps in the PDF File](/pdf/net/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
-
+- [Page stamps in the PDF File](/pdf/net/page-stamps-in-the-pdf-file/) - add a page stamp to PDF document using the PdfPageStamp class.
 
 
 <script type="application/ld+json">

@@ -192,10 +192,12 @@ Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\
 // + Table Top margin and table height from Page height and its less
 // Than 10 (an average row can be greater than 10)
 if ((PageHeight - TotalObjectsHeight) <= 10)
+{
     // If the value is less than 10, then display the message.
     // Which shows that another row can not be placed and if we add new
     // Row, table will break. It depends upon the row height value.
     Console.WriteLine("Page Height - Objects Height < 10, so table will break");
+}
 
 
 dataDir = dataDir + "DetermineTableBreak_out.pdf";
@@ -254,7 +256,6 @@ row.Cells.Add("header 16");
 row.Cells.Add("header 17");
 
 for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
-
 {
     // Create rows in the table and then cells in the rows
     Aspose.Pdf.Row row1 = mytable.Rows.Add();
@@ -273,6 +274,7 @@ for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
     row1.Cells.Add("col " + RowCounter.ToString() + ", 16");
     row1.Cells.Add("col " + RowCounter.ToString() + ", 17");
 }
+
 doc.Save(outFile);
 ```
 
@@ -328,6 +330,7 @@ public static class PdfHelper
             }
         }
     }
+    
     public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
     {
         var headRow = table.Rows.Add();           

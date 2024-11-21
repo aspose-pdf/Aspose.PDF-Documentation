@@ -609,8 +609,7 @@ public static MemoryStream TransformXSL(string inputXml, string xsltString)
     //Create own XsltArgumentList
     XsltArgumentList argsList = new XsltArgumentList();
     argsList.AddParam("isBoldName", "", "no");
-    //---------------------
-
+    
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);

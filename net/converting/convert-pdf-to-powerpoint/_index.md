@@ -118,7 +118,6 @@ switch (eventInfo.EventType)
         break;
     case ProgressEventType.SourcePageAnalysed:
         Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
-
         break;
     default:
         break;

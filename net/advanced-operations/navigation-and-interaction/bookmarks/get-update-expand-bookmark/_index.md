@@ -117,6 +117,7 @@ PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
 bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 // Extract bookmarks
 Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
 foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
 {
     string strLevelSeprator = string.Empty;

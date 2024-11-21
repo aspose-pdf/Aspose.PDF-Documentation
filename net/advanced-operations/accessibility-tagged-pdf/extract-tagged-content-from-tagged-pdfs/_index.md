@@ -97,9 +97,7 @@ Document document = new Document();
 // Get Content for work with TaggedPdf
 ITaggedContent taggedContent = document.TaggedContent;
 
-//
 // Work with Tagged Pdf content
-//
 
 // Set Title and Language for Document
 taggedContent.SetTitle("Simple Tagged Pdf Document");
@@ -234,11 +232,8 @@ ParagraphElement paragraph = firstTdElement.FindElements<ParagraphElement>(true)
 // Move Span Element into Paragraph
 spanElement.ChangeParentElement(paragraph);
 
-
 // Save document
 document.Save(outFile);
-
-
 
 // Checking PDF/UA Compliance for out document
 document = new Document(outFile);

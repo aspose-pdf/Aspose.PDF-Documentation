@@ -367,7 +367,6 @@ foreach (var page in pdfDocument.Pages)
     {
         annotation.Flatten();
     }
-
 }
 // Save updated document
 pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");

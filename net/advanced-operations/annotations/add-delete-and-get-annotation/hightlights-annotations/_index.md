@@ -161,6 +161,8 @@ namespace Aspose.Pdf.Examples.Advanced
                 Console.WriteLine(ex.Message);
             }
         }
+    }
+}
 ```
 
 If you want to highlight a multi-line fragment you should use advanced example:
@@ -257,10 +259,10 @@ public static void GetTextMarkupAnnotation()
         .Where(a => a.AnnotationType == AnnotationType.Highlight
         || a.AnnotationType == AnnotationType.Squiggly)
         .Cast<TextMarkupAnnotation>();
-        foreach (var ta in textMarkupAnnotations)
-        {
-            Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-        }
+    foreach (var ta in textMarkupAnnotations)
+    {
+        Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+    }
 }
 ```
 
@@ -277,11 +279,11 @@ public static void DeleteTextMarkupAnnotation()
         .Where(a => a.AnnotationType == AnnotationType.Highlight
         ||a.AnnotationType == AnnotationType.Squiggly)
         .Cast<TextMarkupAnnotation>();
-        foreach (var ta in textMarkupAnnotations)
-        {
+    foreach (var ta in textMarkupAnnotations)
+    {
         document.Pages[1].Annotations.Delete(ta);
-        }
-        document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
+    }
+    document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
 }
 ```
 

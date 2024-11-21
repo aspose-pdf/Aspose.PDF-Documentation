@@ -8,7 +8,7 @@ description: This section describes the basic principles of work and using DOM A
 is_node: true
 aliases:
     - /net/getting-started/
-lastmod: "2024-10-25"
+lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

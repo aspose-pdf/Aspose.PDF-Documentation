@@ -109,7 +109,6 @@ using System;
 using System.IO;
 using System.Linq;
 
-
 namespace Aspose.Pdf.Examples.Advanced
 {
     class ExampleMultimediaAnnotation
@@ -277,7 +276,7 @@ In this sample, we will learn how to add the push-buttons for navigation in the 
 ### Add Button to the Document
 
 ```csharp
-document = new Document();
+var document = new Document();
 var page = document.Pages.Add();
 var rect = new Rectangle(72, 748, 164, 768);
 var printButton = new ButtonField(page, rect)

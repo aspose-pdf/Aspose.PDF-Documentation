@@ -71,7 +71,6 @@ internal static void FillFromXLSX()
     // Call the method to import the data from DataTable object into Pdf form fields.
     autoFiller.ImportDataTable(dataTable);
 
-
     // The resultant pdf, that will contain the form fields filled with information from DataTable
     autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
 

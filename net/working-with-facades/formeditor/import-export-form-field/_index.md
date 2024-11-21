@@ -17,8 +17,6 @@ public static void ImportData()
     editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
     editor.ImportFdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.fdf"));
     editor.ImportXml(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xml"));
-
-    //TODO: Bug! Create issue
     editor.ImportXfdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xfdf"));
     editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
 }

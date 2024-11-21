@@ -16,22 +16,21 @@ According to Document Object Model of Aspose.PDF for .NET, a PDF file contains o
 **C#**
 
 ```csharp
-//open document
+// Open document
 Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document("source.pdf");
 
-// traverse through individual pages of PDF file
-
+// Traverse through individual pages of PDF file
 for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
 {
-    // traverse through each image extracted from PDF pages
+    // Traverse through each image extracted from PDF pages
     foreach (XImage xImage in pdfDocument.Pages[pageCount].Resources.Images)
     {
         using (MemoryStream imageStream = new MemoryStream())
         {
-            //save output image
+            // Save output image
             xImage.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
    
-            // set the stream position to the begining of Stream
+            // Set the stream position to the begining of Stream
             imageStream.Position = 0;
    
             // Instantiate BarCodeReader object
@@ -40,14 +39,14 @@ for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
    
             while (barcodeReader.Read())
             {
-                // get BarCode text from BarCode image
+                // Get BarCode text from BarCode image
                 string code = barcodeReader.GetCodeText();
    
-                // write the BarCode text to Console output
+                // Write the BarCode text to Console output
                 Console.WriteLine("BARCODE : " + code);
             }
    
-            // close BarCodeReader object to release the Image file
+            // Close BarCodeReader object to release the Image file
    
             barcodeReader.Close();
         }

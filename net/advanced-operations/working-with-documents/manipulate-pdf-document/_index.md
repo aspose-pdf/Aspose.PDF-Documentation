@@ -196,17 +196,16 @@ Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
 Page tocPage = doc.Pages.Add();
 TocInfo tocInfo = new TocInfo();
 
-//set LeaderType
+// Set LeaderType
 tocInfo.LineDash = TabLeaderType.Solid;
 TextFragment title = new TextFragment("Table Of Contents");
 title.TextState.FontSize = 30;
 tocInfo.Title = title;
 
-//Add the list section to the sections collection of the Pdf document
+// Add the list section to the sections collection of the Pdf document
 tocPage.TocInfo = tocInfo;
-//Define the format of the four levels list by setting the left margins
-//and
-//text format settings of each level
+// Define the format of the four levels list by setting the left margins
+// and text format settings of each level
 
 tocInfo.FormatArrayLength = 4;
 tocInfo.FormatArray[0].Margin.Left = 0;
@@ -225,10 +224,10 @@ tocInfo.FormatArray[3].Margin.Left = 30;
 tocInfo.FormatArray[3].Margin.Right = 30;
 tocInfo.FormatArray[3].TextState.FontStyle = FontStyles.Bold;
 
-//Create a section in the Pdf document
+// Create a section in the Pdf document
 Page page = doc.Pages.Add();
 
-//Add four headings in the section
+// Add four headings in the section
 for (int Level = 1; Level <= 4; Level++)
 {
 
@@ -240,13 +239,12 @@ for (int Level = 1; Level <= 4; Level++)
     segment2.Text = "Sample Heading" + Level;
     heading2.TextState.Font = FontRepository.FindFont("Arial Unicode MS");
 
-    //Add the heading into Table Of Contents.
+    // Add the heading into Table Of Contents.
     heading2.IsInList = true;
     page.Paragraphs.Add(heading2);
 }
 
-// save the Pdf
-
+// Save the Pdf
 doc.Save(outFile);
 ```
 
@@ -266,10 +264,10 @@ TextFragment title = new TextFragment("Table Of Contents");
 title.TextState.FontSize = 20;
 title.TextState.FontStyle = FontStyles.Bold;
 tocInfo.Title = title;
-//Add the list section to the sections collection of the Pdf document
+// Add the list section to the sections collection of the Pdf document
 tocPage.TocInfo = tocInfo;
-//Define the format of the four levels list by setting the left margins and
-//text format settings of each level
+// Define the format of the four levels list by setting the left margins and
+// text format settings of each level
 
 tocInfo.IsShowPageNumbers = false;
 tocInfo.FormatArrayLength = 4;
@@ -281,7 +279,7 @@ tocInfo.FormatArray[1].TextState.FontSize = 10;
 tocInfo.FormatArray[2].TextState.FontStyle = FontStyles.Bold;
 tocInfo.FormatArray[3].TextState.FontStyle = FontStyles.Bold;
 Page page = doc.Pages.Add();
-//Add four headings in the section
+// Add four headings in the section
 for (int Level = 1; Level != 5; Level++)
 
 { Heading heading2 = new Heading(Level); TextSegment segment2 = new TextSegment(); heading2.TocPage = tocPage; heading2.Segments.Add(segment2); heading2.IsAutoSequence = true; segment2.Text = "this is heading of level " + Level; heading2.IsInList = true; page.Paragraphs.Add(heading2); }
@@ -411,7 +409,6 @@ public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo
         default:
             break;
     }
-
 }
 ```
 

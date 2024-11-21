@@ -61,7 +61,6 @@ public static void ConvertPDFtoWord()
     Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
     // Save the file into MS document format
     pdfDocument.Save(_dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
-
 }
 ```
 
