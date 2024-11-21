@@ -36,9 +36,7 @@ namespace PdfText
 
     [Guid("3D59100F-3CC5-463D-B509-58FA0520B436")]
     [ClassInterface(ClassInterfaceType.None)]
-
     [ComSourceInterfaces(typeof(IPetriever))]
-
     public class Petriever : IPetriever
     {
         public void SetLicense(string file)
@@ -62,7 +60,6 @@ namespace PdfText
 
             string text = absorber.Text;
             return text;
-
         }
     }
 }

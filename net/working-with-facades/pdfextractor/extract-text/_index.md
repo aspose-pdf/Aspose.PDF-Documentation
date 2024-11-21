@@ -60,7 +60,6 @@ public static void ExtractTextExtractonMode()
     pdfExtractor.ExtractTextMode = 1; //raw mode
     pdfExtractor.ExtractText();
 
-
     if (!WholeText)
     {
         pdfExtractor.GetText(_dataDir + "sample.txt");

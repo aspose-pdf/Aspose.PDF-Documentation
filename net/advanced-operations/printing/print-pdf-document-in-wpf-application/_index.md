@@ -113,13 +113,16 @@ private void Print_OnClick(object sender, RoutedEventArgs e)
     if (printDialog.ShowDialog() == true)
     {
         if (fixedDocumentSequence != null)
+        {
             printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator, "A fixed document");
+        }
         else
+        {
             throw new NullReferenceException();
+        }
     }
     PackageStore.RemovePackage(packageUri);
     xpsDoc.Close();
-
 }
 ```
 

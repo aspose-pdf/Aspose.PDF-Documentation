@@ -148,6 +148,8 @@ namespace Aspose.Pdf.Examples.Advanced
 
             document.Save(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
         }
+    }
+}
 ```
 
 ### Get Caret Annotation

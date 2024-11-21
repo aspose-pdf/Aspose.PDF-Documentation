@@ -12,19 +12,21 @@ lastmod: "2021-07-15"
 [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class allows you to extract images from a PDF file. First off, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, call [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) method to extract all the images into memory. Once the images are extracted, you can get those images with the help of [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) methods. You need to loop through all the extracted images using a while loop. In order to save the images to disk, you can call the overload of the [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) method which takes file path as argument. The following code snippet shows you how to extract images from the whole PDF to files.
 
 ```csharp
-   public static void ExtractImagesWholePDF()
-        {
-            // Open input PDF
-            PdfExtractor pdfExtractor = new PdfExtractor();
-            pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+public static void ExtractImagesWholePDF()
+{
+    // Open input PDF
+    PdfExtractor pdfExtractor = new PdfExtractor();
+    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
 
-            // Extract all the images
-            pdfExtractor.ExtractImage();
+    // Extract all the images
+    pdfExtractor.ExtractImage();
 
-            // Get all the extracted images
-            while (pdfExtractor.HasNextImage())
-                pdfExtractor.GetNextImage(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
-        }
+    // Get all the extracted images
+    while (pdfExtractor.HasNextImage())
+    {
+        pdfExtractor.GetNextImage(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
+    }
+}
 ```
 
 ## Extract Images from the Whole PDF to Streams (Facades)
@@ -108,6 +110,7 @@ public static void ExtractImagesRangePages()
 
     // Extract images
     pdfExtractor.ExtractImage();
+
     // Get extracted images
     while (pdfExtractor.HasNextImage())
     {
@@ -181,12 +184,20 @@ public static void CheckIfPdfContainsTextOrImages()
     // Now find out whether this PDF is text only or image only
 
     if (containsText && !containsImage)
+    {
         Console.WriteLine("PDF contains text only");
+    }
     else if (!containsText && containsImage)
+    {
         Console.WriteLine("PDF contains image only");
+    }
     else if (containsText && containsImage)
+    {
         Console.WriteLine("PDF contains both text and image");
+    }
     else if (!containsText && !containsImage)
+    {
         Console.WriteLine("PDF contains neither text or nor image");
+    }
 }
 ```

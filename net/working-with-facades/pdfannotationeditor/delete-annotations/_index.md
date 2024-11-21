@@ -23,6 +23,7 @@ public static void DeleteAllAnnotations()
     // Delete all annoations
     annotationEditor.DeleteAnnotations();
     // Save updated PDF
+    annotationEditor.Save(_dataDir + "DeleteAllAnnotation.pdf");
 }   
 ```
 

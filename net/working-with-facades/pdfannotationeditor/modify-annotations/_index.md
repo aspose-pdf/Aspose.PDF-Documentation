@@ -42,7 +42,6 @@ public static void ModifyAnnotations()
         new Aspose.Pdf.Rectangle(1, 1, 1, 1),
         defaultAppearance)
     {
-
         // Set new annotation attributees
         Title = "Aspose.PDF Demo User",
         Subject = "Technical Article"

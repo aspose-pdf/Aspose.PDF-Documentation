@@ -26,7 +26,9 @@ public static void ConvertPdfPagesToImages01()
 
     // Check if pages exist and then convert to image one by one
     while (converter.HasNextImage())
+    {
         converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+    }
 
     // Close the PdfConverter object
     converter.Close();
@@ -50,10 +52,12 @@ public static void ConvertPdfPagesToImages02()
     converter.Resolution = new Devices.Resolution(600);
     converter.FormPresentationMode = Devices.FormPresentationMode.Production;
     converter.StartPage = 2;
-    // converter.EndPage = 3;
+
     // Check if pages exist and then convert to image one by one
     while (converter.HasNextImage())
+    {
         converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+    }
 
     // Close the PdfConverter object
     converter.Close();

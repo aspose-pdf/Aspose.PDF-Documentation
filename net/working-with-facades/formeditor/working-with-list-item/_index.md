@@ -35,9 +35,7 @@ public static void DelListItem()
 {
     var editor = new FormEditor();
     editor.BindPdf(_dataDir + "Sample-Form-04.pdf");
-    //-----
     editor.DelListItem("Country", "France");
-    //-----
     editor.Save(_dataDir + "Sample-Form-04-mod.pdf");
 }
 ```

@@ -259,8 +259,8 @@ public static void ConvertPDFtoImage(ImageDevice imageDevice,
     for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
     {
         using (FileStream imageStream = 
-        new FileStream($"{_dataDir}image{pageCount}_out.{ext}", 
-        FileMode.Create))
+            new FileStream($"{_dataDir}image{pageCount}_out.{ext}", 
+            FileMode.Create))
         {
             // Convert a particular page and save the image to stream
             imageDevice.Process(pdfDocument.Pages[pageCount], imageStream);

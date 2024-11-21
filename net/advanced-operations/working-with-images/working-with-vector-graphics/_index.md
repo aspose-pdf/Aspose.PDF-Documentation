@@ -165,6 +165,7 @@ public static void RemoveGraphicsMethod1()
     var rectangle = new Rectangle(70, 248, 170, 252);
 
     graphicsAbsorber.SuppressUpdate();
+
     foreach (var element in graphicsAbsorber.Elements)
     {
         // Check if the graphic's position falls within the rectangle.
@@ -173,6 +174,7 @@ public static void RemoveGraphicsMethod1()
             element.Remove(); // Remove the graphic element.
         }
     }
+
     graphicsAbsorber.ResumeUpdate();
     document.Save("test.pdf");
 }
@@ -223,10 +225,12 @@ public static void AddToAnotherPageMethod1()
 
     graphicsAbsorber.Visit(page1);
     page2.Contents.SuppressUpdate();
+
     foreach (var element in graphicsAbsorber.Elements)
     {
         element.AddOnPage(page2); // Add each graphic element to the second page.
     }
+    
     page2.Contents.ResumeUpdate();
     document.Save("test.pdf");
 }

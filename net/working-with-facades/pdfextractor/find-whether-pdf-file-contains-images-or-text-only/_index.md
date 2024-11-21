@@ -46,12 +46,20 @@ public static void CheckIfPdfContainsTextOrImages()
     // Now find out whether this PDF is text only or image only
 
     if (containsText && !containsImage)
+    {
         Console.WriteLine("PDF contains text only");
+    }
     else if (!containsText && containsImage)
+    {
         Console.WriteLine("PDF contains image only");
+    }
     else if (containsText && containsImage)
+    {
         Console.WriteLine("PDF contains both text and image");
+    }
     else if (!containsText && !containsImage)
+    {
         Console.WriteLine("PDF contains neither text or nor image");
+    }
 }
 ```
