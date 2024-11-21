@@ -81,14 +81,14 @@ aliases:
 
 A PDF document may sometimes contain additional data. Reducing the size of a PDF file will help you optimize network transfer and storage. This is especially handy for publishing on web pages, sharing on social networks, sending by e-mail, or archiving in storage. We can use several techniques to optimize PDF:
 
-- Optimize page content for online browsing
-- Shrink or compress all images
-- Enable reusing page content
-- Merge duplicate streams
-- Unembed fonts
-- Remove unused objects
-- Remove flattening form fields
-- Remove or flatten annotations
+- Optimize page content for online browsing.
+- Shrink or compress all images.
+- Enable reusing page content.
+- Merge duplicate streams.
+- Unembed fonts.
+- Remove unused objects.
+- Remove flattening form fields.
+- Remove or flatten annotations.
 
 {{% alert color="primary" %}}
 
@@ -129,9 +129,9 @@ pdfDocument.Save(dataDir);
 
 The [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
 
-- Resources that are not used on the document pages are removed
-- Equal resources are joined into one object
-- Unused objects are deleted
+- Resources that are not used on the document pages are removed.
+- Equal resources are joined into one object.
+- Unused objects are deleted.
 
 The snippet below is an example. Note, though, that this method cannot guarantee document shrinking.
 

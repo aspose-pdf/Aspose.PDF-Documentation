@@ -91,11 +91,11 @@ The following methods/properties of RichMediaAnnotation class can be used.
 
 - Stream CustomPlayer { set; }: Allows setting player used to play video.
 - string CustomFlashVariables { set; }: Allows to set variables that are passed to flash application. This line is set of “key=value” pairs which are separated with ‘&'.
-- void AddCustomData(strig name, Stream data):  Add additional data for the player. For example source=video.mp4&autoPlay=true&scale=100
-- ActivationEvent ActivateOn { get; set}:  Event activates player; possible values are Click, PageOpen, PageVisible
-- void SetContent(Stream stream, string name): Set video/audio data to be playedю
-- void Update():  Create a data structure of the annotation. This method should be called last
-- void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active
+- void AddCustomData(strig name, Stream data):  Add additional data for the player. For example source=video.mp4&autoPlay=true&scale=100.
+- ActivationEvent ActivateOn { get; set}:  Event activates player; possible values are Click, PageOpen, PageVisible.
+- void SetContent(Stream stream, string name): Set video/audio data to be played.
+- void Update():  Create a data structure of the annotation. This method should be called last.
+- void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -384,9 +384,9 @@ The main task of 3D modeling is the idea of a future object or object because, i
 
 3D annotation is added using a model created in the U3D format.
 
-1. Create a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)
-1. Create [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent
+1. Create a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
+1. Create [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent.
 1. Tune pdf3dArtWork object:
 
     - 3DLightingScheme - (we will set  `CAD` in example)
@@ -394,14 +394,14 @@ The main task of 3D modeling is the idea of a future object or object because, i
     - Fill `ViewArray`, create at least one [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) and add it to array.
 
 1. Set 3 basic parameters in annotation:
-    - the `page` on which the annotation will be placed,
-    - the `rectangle`, inside which the annotation,
+    - the `page` on which the annotation will be placed.
+    - the `rectangle`, inside which the annotation.
     - and the `3dArtWork` object.
-1. For a better presentation of the 3D object, set the Border frame
-1. Set the default view (for example - TOP)
+1. For a better presentation of the 3D object, set the Border frame.
+1. Set the default view (for example - TOP).
 1. Add some additional parameters: name, preview poster etc.
-1. Add Annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)
-1. Save the result
+1. Add Annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Save the result.
 
 ### Example
 

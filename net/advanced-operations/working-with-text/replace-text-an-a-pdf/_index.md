@@ -144,7 +144,7 @@ TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectang
 pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
 
 // iterate through individual TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
+foreach (Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
 {
     // update text to blank characters
     tf.Text = "";
@@ -267,10 +267,10 @@ doc.Save(dataDir);
 
 Replaceable symbols are special symbols in a text string that can be replaced with corresponding content at run time. Replaceable symbols currently support by new Document Object Model of Aspose.PDF namespace are `$P`, `$p,` `\n`, `\r`. The `$p` and `$P` are used to deal with the page numbering at run time. `$p` is replaced with the number of the page where the current Paragraph class is in. `$P` is replaced with the total number of pages in the document. When adding `TextFragment` to the paragraphs collection of PDF documents, it does not support line feed inside the text. However in order to add text with a line feed, please use `TextFragment` with `TextParagraph`:
 
-- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
-- create a TextParagraph object. It will add text with line splitting;
-- add the TextFragment with TextParagraph.AppendLine;
-- add the TextParagraph with TextBuilder.AppendParagraph.
+- Use "\r\n" or Environment.NewLine in TextFragment instead of single "\n".
+- Create a TextParagraph object. It will add text with line splitting.
+- Add the TextFragment with TextParagraph.AppendLine.
+- Add the TextParagraph with TextBuilder.AppendParagraph.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -423,9 +423,13 @@ for (int i = 0; i <= 10; i++)
     {
         Cell c1;
         if (c == 2)
+        {
             c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
+        }
         else
+        {
             c1 = row.Cells.Add("item1" + c);
+        }
         c1.Margin = new MarginInfo();
         c1.Margin.Left = 30;
         c1.Margin.Top = 10;

@@ -104,7 +104,6 @@ TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragmen
 // Loop through the fragments
 foreach (TextFragment textFragment in textFragmentCollection)
 {
-
     Console.WriteLine("Text : {0} ", textFragment.Text);
     Console.WriteLine("Position : {0} ", textFragment.Position);
     Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
@@ -398,40 +397,44 @@ using (MemoryStream ms = new MemoryStream())
                 if (i == 0)
                 {
                     gr.DrawRectangle(
-                    Pens.Yellow,
-                    (float)textFragment.Position.XIndent,
-                    (float)textFragment.Position.YIndent,
-                    (float)textFragment.Rectangle.Width,
-                    (float)textFragment.Rectangle.Height);
+                        Pens.Yellow,
+                        (float)textFragment.Position.XIndent,
+                        (float)textFragment.Position.YIndent,
+                        (float)textFragment.Rectangle.Width,
+                        (float)textFragment.Rectangle.Height);
 
                     for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
                     {
-            TextSegment segment = textFragment.Segments[segNum];
+                        TextSegment segment = textFragment.Segments[segNum];
 
-            for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-            {
-                CharInfo characterInfo = segment.Characters[charNum];
+                        for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
+                        {
+                            CharInfo characterInfo = segment.Characters[charNum];
 
-                Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-                Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-                    "   TextFragment URY = " + textFragment.Rectangle.URY);
+                            Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
+                            Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
+                                "   TextFragment URY = " + textFragment.Rectangle.URY);
 
-                gr.DrawRectangle(
-                Pens.Black,
-                (float)characterInfo.Rectangle.LLX,
-                (float)characterInfo.Rectangle.LLY,
-                (float)characterInfo.Rectangle.Width,
-                (float)characterInfo.Rectangle.Height);
+                            gr.DrawRectangle(
+                                Pens.Black,
+                                (float)characterInfo.Rectangle.LLX,
+                                (float)characterInfo.Rectangle.LLY,
+                                (float)characterInfo.Rectangle.Width,
+                                (float)characterInfo.Rectangle.Height);
+                        }
+
+                        gr.DrawRectangle(
+                            Pens.Green,
+                            (float)segment.Rectangle.LLX,
+                            (float)segment.Rectangle.LLY,
+                            (float)segment.Rectangle.Width,
+                            (float)segment.Rectangle.Height);
+                    }
+                }
             }
-
-            gr.DrawRectangle(
-            Pens.Green,
-            (float)segment.Rectangle.LLX,
-            (float)segment.Rectangle.LLY,
-            (float)segment.Rectangle.Width,
-            (float)segment.Rectangle.Height);
         }
     }
+    
     dataDir = dataDir + "HighlightCharacterInPDF_out.png";
     bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
 }

@@ -169,7 +169,6 @@ if (fileSpecification.Params != null)
     Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
 }
 
-
 // Get the attachment and write to file or stream
 byte[] fileContent = new byte[fileSpecification.Contents.Length];
 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);

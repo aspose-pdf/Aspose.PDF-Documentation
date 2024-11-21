@@ -33,12 +33,12 @@ As the structure of a PDF file is hierarchical, Aspose.PDF for .NET also accesse
 
 The Document object is at the root level of the object model. The Aspose.PDF for .NET DOM API allows you to create a Document object and then access all other objects in the hierarchy. You can either access any of the collections like Pages or individual element like Page etc. The DOM API provides single entry and exit points to manipulate the PDF document as shown below:
 
-- Open PDF document
-- Access PDF document structure in DOM style
-- Update data in the PDF document
-- Validate PDF document
-- Export PDF document into different formats
-- Finally, save the updated PDF document
+- Open PDF document.
+- Access PDF document structure in DOM style.
+- Update data in the PDF document.
+- Validate PDF document.
+- Export PDF document into different formats.
+- Finally, save the updated PDF document.
 
 ## How to Use New Aspose.PDF for .NET API
 
@@ -46,8 +46,9 @@ This topic will explain the new Aspose.PDF for .NET API and guide you to get sta
 
 The Aspose.PDF for .NET is composed of two parts:
 
-- Aspose.PDF for .NET DOM API
-- Aspose.PDF.Facades (old Aspose.PDF.Kit for .NET)
+- Aspose.PDF for .NET DOM API.
+- Aspose.PDF.Facades (old Aspose.PDF.Kit for .NET).
+
 You'll find the details of each of these areas below.
 
 ### Aspose.PDF for .NET DOM API

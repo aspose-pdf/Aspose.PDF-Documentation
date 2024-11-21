@@ -210,10 +210,11 @@ editor.Save(dataDir);
 
 TextFragment doesn’t support line feed inside the text. However in order to add text with line feed, please use TextFragment with TextParagraph:
 
-- use "\r\n" or Environment.NewLine in TextFragment instead of single "\n";
-- create TextParagraph object. It will add text with line splitting;
-- add the TextFragment with TextParagraph.AppendLine;
-- add the TextParagraph with TextBuilder.AppendParagraph.
+- Use "\r\n" or Environment.NewLine in TextFragment instead of single "\n".
+- Create TextParagraph object. It will add text with line splitting.
+- Add the TextFragment with TextParagraph.AppendLine.
+- Add the TextParagraph with TextBuilder.AppendParagraph.
+
 Please use below code snippet.
 
 ```csharp

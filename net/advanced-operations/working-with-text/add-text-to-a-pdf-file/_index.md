@@ -363,18 +363,18 @@ FootNotes indicate notes in the text of your paper by using consecutive superscr
 
 In a footnote referencing system, indicate a reference by:
 
-- putting a small number above the line of type directly following the source material. This number is called a note identifier. It sits slightly above the line of text.
-- putting the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on.
+- Put a small number above the line of type directly following the source material. This number is called a note identifier. It sits slightly above the line of text.
+- Put the same number, followed by a citation of your source, at the bottom of the page. Footnoting should be numerical and chronological: the first reference is 1, the second is 2, and so on.
 
 The advantage of footnoting is that the reader can simply cast their eyes down the page to discover the source of a reference that interests them.
 
 Please follow the steps specified below to create a FootNote:
 
-- Create a Document instance
-- Create a Page object
-- Create a TextFragment object
-- Create a Note instance and pass it's value to TextFragment.FootNote property
-- Add TextFragment to paragraphs collection of a page instance
+- Create a Document instance.
+- Create a Page object.
+- Create a TextFragment object.
+- Create a Note instance and pass it's value to TextFragment.FootNote property.
+- Add TextFragment to paragraphs collection of a page instance.
 
 ### Custom line style for FootNote
 

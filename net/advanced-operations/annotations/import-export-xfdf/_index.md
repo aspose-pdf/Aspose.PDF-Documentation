@@ -101,6 +101,7 @@ namespace Aspose.Pdf.Examples.Advanced
     {
         // The path to the documents directory.
         private const string _dataDir = "..\\..\\..\\..\\Samples";
+
         /// <summary>
         /// Importing annotations from XFDF file
         /// XML Forms Data Format (XFDF) file created by Adobe Acrobat, a PDF authoring application;
@@ -109,7 +110,6 @@ namespace Aspose.Pdf.Examples.Advanced
         /// You can import annotation data from the XFDF file to PDF using
         /// the ImportAnnotationsFromXfdf method in PdfAnnotationEditor class.
         /// </summary>       
-   
         public static void ExportAnnotationXFDF()
         {
             // Create PdfAnnotationEditor object
@@ -125,7 +125,6 @@ namespace Aspose.Pdf.Examples.Advanced
             fileStream.Flush();
             fileStream.Close();
         }
-        //...
     }
 }
 ```
@@ -144,7 +143,9 @@ public static void ImportAnnotationXFDF()
 
     var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
     if (!File.Exists(exportFileName))
+    {
         ExportAnnotationXFDF();
+    }
 
     // Import annotation
     AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
@@ -172,7 +173,9 @@ public static void ImportAnnotationFromPDF()
     AnnotationEditor.BindPdf(document);
     var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
     if (!File.Exists(exportFileName))
+    {
         ExportAnnotationXFDF();
+    }
 
     // Annotation Editor allows import annotations from several PDF documents,
     // but in this example, we use only one.

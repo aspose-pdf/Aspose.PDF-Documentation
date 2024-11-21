@@ -128,13 +128,13 @@ private void Print_OnClick(object sender, RoutedEventArgs e)
 
 In this case, we will follow these steps:
 
-1. Open PDF file using OpenFileDialog
-1. Convert PDF to XPS and store it in MemoryStream object
-1. Associate MemoryStream object with Xps Package
-1. Add the package to the Package Store
-1. Create an XpsDocument based on package
-1. Get an instance of the FixedDocumentSequence
-1. Send this sequence to the printer using PrintDialog
+1. Open PDF file using OpenFileDialog.
+1. Convert PDF to XPS and store it in MemoryStream object.
+1. Associate MemoryStream object with Xps Package.
+1. Add the package to the Package Store.
+1. Create an XpsDocument based on package.
+1. Get an instance of the FixedDocumentSequence.
+1. Send this sequence to the printer using PrintDialog.
 
 ## View and print document
 

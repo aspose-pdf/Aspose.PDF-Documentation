@@ -79,13 +79,13 @@ The following code snippet shows the process for converting PDF file into XLS or
 
 1. Create an instance of **Document** object with the source PDF document.
 2. Create an instance of **ExcelSaveOptions**.
-3. Save it to **XLS** format specifying **.xls extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
+3. Save it to **XLS** format specifying **.xls extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
 
 <a name="csharp-pdf-to-xlsx"><strong>Steps: Convert PDF to XLSX in C#</strong></a>
 
 1. Create an instance of **Document** object with the source PDF document.
 2. Create an instance of **ExcelSaveOptions**.
-3. Save it to **XLSX** format specifying **.xlsx extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**
+3. Save it to **XLSX** format specifying **.xlsx extension** by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -154,7 +154,7 @@ The following code snippet shows the process for converting PDF file into XLS Ex
 <a name="csharp-pdf-to-excel-xml-2003"><strong>Steps: Convert PDF to Excel 2003 XML Format in C#</strong></a>
 
 1. Create an instance of **Document** object with the source PDF document.
-2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003**
+2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003**.
 3. Save it to **XLS - Excel 2003 XML Format** format by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
 
 ```csharp
@@ -180,7 +180,7 @@ Conversion to CSV format performs in the same way as above. All is what you need
 <a name="csharp-pdf-to-csv"><strong>Steps: Convert PDF to CSV in C#</strong></a>
 
 1. Create an instance of **Document** object with the source PDF document.
-2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.CSV**
+2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.CSV**.
 3. Save it to **CSV** format by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
 
 
@@ -194,7 +194,7 @@ ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.Ex
 <a name="csharp-pdf-to-ods"><strong>Steps: Convert PDF to ODS in C#</strong></a>
 
 1. Create an instance of **Document** object with the source PDF document.
-2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.ODS**
+2. Create an instance of **ExcelSaveOptions** with **Format = ExcelSaveOptions.ExcelFormat.ODS**.
 3. Save it to **ODS** format by calling **Document.Save()** method and passing it **ExcelSaveOptions**.
 
 

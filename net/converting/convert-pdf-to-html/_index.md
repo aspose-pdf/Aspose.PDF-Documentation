@@ -28,13 +28,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 **Aspose.PDF for .NET** support the features  to convert a PDF file into HTML. The main tasks you can accomplish with the Aspose.PDF library are listed:
 
-- сonvert PDF to HTML;
-- splitting Output to Multi-page HTML;
-- specify Folder for Storing SVG Files;
-- compressing SVG Images During Conversion;
-- specifying the Images Folder;
-- create Subsequent Files with Body Contents Only;
-- transparent Text rendering;
+- Convert PDF to HTML.
+- Splitting Output to Multi-page HTML.
+- Specify Folder for Storing SVG Files.
+- Compressing SVG Images During Conversion.
+- Specifying the Images Folder.
+- Create Subsequent Files with Body Contents Only.
+- Transparent Text rendering.
 - PDF document layers rendering.
 
 {{% alert color="success" %}}

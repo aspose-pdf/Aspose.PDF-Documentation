@@ -167,7 +167,9 @@ public void PDFNET_111()
         document.Pages.Add();
         Object printScalingValue = printScalingValues[i];
         if (printScalingValue != null)
+        {
             document.PrintScaling = (PrintScaling)printScalingValue;
+        }
         String outputPdf = GetOutputPdf("PDFNET-111_" + i);
         document.Save(outputPdf);
         Document documentOutput = new Document(outputPdf);

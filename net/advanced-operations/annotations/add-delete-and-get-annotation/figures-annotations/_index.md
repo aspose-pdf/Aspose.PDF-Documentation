@@ -78,12 +78,12 @@ sitemap:
 
 PDF document management app provides various tools for annotating documents. From the perspective of the internal structure of PDF, these tools are annotations. We support the following kinds of drawing tools.
 
-* Line Annottaion - tool for drawing lines and arrows
-* Square Annotation - for drwaing squares and rectangles
-* Circle Annotation - for ovals and circles
-* FreeText Annotaion - for Callout comment
-* Polygon Annotation - for polygons and clouds
-* Polyline Annotation - for Connected Lines
+* Line Annottaion - tool for drawing lines and arrows.
+* Square Annotation - for drwaing squares and rectangles.
+* Circle Annotation - for ovals and circles.
+* FreeText Annotaion - for Callout comment.
+* Polygon Annotation - for polygons and clouds.
+* Polyline Annotation - for Connected Lines.
 
 ## Adding Shapes and Figures on Page
 
@@ -103,16 +103,16 @@ The purpose of line annotation is to display a straightforward line or arrow on 
 To create Line we need to new LineAnnotation object.  
 The constructor of the LineAnnotation class takes four parameters:
 
-* the page where the annotation will be added,
-* the rectangle that defines the boundary of the annotation,
-* and the two points that define the start and end of the line.
+* The page where the annotation will be added.
+* The rectangle that defines the boundary of the annotation.
+* The two points that define the start and end of the line.
 
 Also we need to initialize some properties:
 
-* `Title` - usually, it's the name of the user, who made this comment
-* `Subject` - can be any string, but in common cases it's a name of annotation
+* `Title` - usually, it's the name of the user, who made this comment.
+* `Subject` - can be any string, but in common cases it's a name of annotation.
 
-To style our line we need to set color, width, starting style, and ending style. These properties control how the annotation will look and behave in the PDF viewer. For example, the `StartingStyle` and `EndingStyle` properties determine what kind of shape will be drawn at the ends of the line, such as an open arrow, a closed arrow, a circle, etc
+To style our line we need to set color, width, starting style, and ending style. These properties control how the annotation will look and behave in the PDF viewer. For example, the `StartingStyle` and `EndingStyle` properties determine what kind of shape will be drawn at the ends of the line, such as an open arrow, a closed arrow, a circle, etc.
 
 The following code snippet shows how to add Line Annotation to a PDF file:
 
@@ -147,8 +147,8 @@ The [Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squarea
 
 To draw a new circle or ellipse annotation, we need to create a new CircleAnnotation object. The constructor of the `CircleAnnotation` class takes two parameters:
 
-* the page where the annotation will be added,
-* and the rectangle that defines the boundary of the annotation
+* The page where the annotation will be added.
+* The rectangle that defines the boundary of the annotation.
 
 Also we can sets some properties of the `CircleAnnotation` object, such as the title, color, interior color, opacity. These properties control how the annotation will look and behave in the PDF viewer. Here and further in the Square the `InteriorColor` color is the fill color and `Color` is border color.
 
@@ -204,9 +204,9 @@ The Poly- tool allows you to create shapes and outlines with an arbitrary number
 
 PolygonAnnotation is responsible for polygon annotations. The constructor of the PolygonAnnotation class takes three parameters:
 
-* the page where the annotation will be added,
-* the rectangle that defines the boundary of the annotation,
-* and an array of points that define the vertices of the polygon.
+* The page where the annotation will be added.
+* The rectangle that defines the boundary of the annotation.
+* The array of points that define the vertices of the polygon.
 
 `Color` and `InteriorColor` are used for the border and fill colors respectively.
 
@@ -214,9 +214,9 @@ PolygonAnnotation is responsible for polygon annotations. The constructor of the
 
 PolygonAnnotation is responsible for polygon annotations. The constructor of the PolygonAnnotation class takes three parameters:
 
-* the page where the annotation will be added,
-* the rectangle that defines the boundary of the annotation,
-* and an array of points that define the vertices of the polygon.
+* The page where the annotation will be added.
+* The rectangle that defines the boundary of the annotation.
+* The array of points that define the vertices of the polygon.
 
 Instead `PolygonAnnotation` we can't fill this shape, so we don't need to use `InteriorColor`.
 
@@ -353,7 +353,7 @@ foreach (var pa in polyAnnotations)
 
 The approach to removing annotation from PDF in pretty simple:
 
-* Select annotations to delete (make some collection)
+* Select annotations to delete (make some collection).
 * Iterate over collection using a foreach loop, and deletes each annotation from the annotations collection using the Delete method.
 
 ### Deleting Line Annotation

@@ -91,8 +91,8 @@ In order to get all artifacts on a particular page, the [Page](https://reference
 
 The [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) class contains following properties:
 
-**Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
-**Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
+- **Artifact.Type**: gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
+- **Artifact.Subtype**: gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
 
 {{% alert color="primary" %}}
 
@@ -100,13 +100,13 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 
 {{% /alert %}}
 
-**Artifact.Contents** – Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
-**Artifact.Form** – Gets an artifact's XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
-**Artifact.Image** – Gets an artifact's image (if an image is presents, else null).
-**Artifact.Text** – Gets an artifact's text.
-**Artifact.Rectangle** – Gets an position of an artifact on the page.
-**Artifact.Rotation** – Gets an artifact's rotation (in degrees, positive value indicates counter-clockwise rotation).
-**Artifact.Opacity** – Gets an artifact's opacity. Possible values are in the range 0…1, where 1 is completely opaque.
+- **Artifact.Contents**: Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
+- **Artifact.Form**: Gets an artifact's XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
+- **Artifact.Image**: Gets an artifact's image (if an image is presents, else null).
+- **Artifact.Text**: Gets an artifact's text.
+- **Artifact.Rectangle**: Gets an position of an artifact on the page.
+- **Artifact.Rotation**: Gets an artifact's rotation (in degrees, positive value indicates counter-clockwise rotation).
+- **Artifact.Opacity**: Gets an artifact's opacity. Possible values are in the range 0…1, where 1 is completely opaque.
 
 ## Programming Samples: How To Add Watermark On PDF Files
 

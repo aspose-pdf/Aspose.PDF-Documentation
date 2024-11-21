@@ -155,7 +155,6 @@ Since the 24.2 release, Aspose.PDF has implemented converting Searchable PDF to 
 The following code snippet shows the process of converting PDF file into XPS format.
 
 ```csharp
-
 using (var document = new Document("input.pdf"))
 {
     var xpsOptions = new XpsSaveOptions
@@ -185,24 +184,23 @@ The code opens a PDF document, configures the parameters for converting it to a 
 The following code snippet shows the process of converting PDF file into MD format.
 
 ```csharp
+string inputPdfPath = "";
+string markdownOutputFilePath = "";
 
-    string inputPdfPath = "";
-    string markdownOutputFilePath = "";
-
-    // Create a new Document object using the specified input PDF path.
-    using (Document doc = new Document(inputPdfPath))
+// Create a new Document object using the specified input PDF path.
+using (Document doc = new Document(inputPdfPath))
+{
+    // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
+    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
     {
-        // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
-        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
-        {
-            // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
-            UseImageHtmlTag = false
-        }
-        
-        // Specify the directory name where resources (like images) will be stored.
-        saveOptions.ResourcesDirectoryName = "images";
-
-        // Save the document in Markdown format to the specified output file path using the defined save options.    
-        doc.Save(markdownOutputFilePath, saveOptions);
+        // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
+        UseImageHtmlTag = false
     }
+    
+    // Specify the directory name where resources (like images) will be stored.
+    saveOptions.ResourcesDirectoryName = "images";
+
+    // Save the document in Markdown format to the specified output file path using the defined save options.    
+    doc.Save(markdownOutputFilePath, saveOptions);
+}
 ```
