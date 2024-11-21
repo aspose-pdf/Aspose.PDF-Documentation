@@ -68,7 +68,6 @@ namespace Aspose.Pdf.Examples
             description.HorizontalAlignment = HorizontalAlignment.Left;
             page.Paragraphs.Add(description);
 
-
             // Add table
             var table = new Table
             {

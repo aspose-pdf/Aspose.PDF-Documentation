@@ -98,11 +98,11 @@ Follow these steps to reference the component using the package manager GUI:
 
 - Click Install/Update next to the latest version of Aspose.PDF for .NET.
 
-![Installation_step2](../images/install_step2.png)
+![Installation_step2](../images/Install_step2.png)
 
 - And click Accept in the pop up window.
 
-![Installation_step3](../images/install_step3.png)
+![Installation_step3](../images/Install_step3.png)
 
 ![Installation](../images/install.gif)
 
