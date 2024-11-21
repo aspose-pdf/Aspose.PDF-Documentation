@@ -1,9 +1,10 @@
 ---
-title: Other .NET Programming Languages
+title: Using in other languages
 linktitle: Using in other languages
 type: docs
 weight: 110
 url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
+lastmod: "2024-11-21"
 ---
 
 
