@@ -19,50 +19,50 @@ HTML5 PDF Editor by Aspose.PDF for .NET is an open source web based PDF editor t
 
 ## Features
 
-Currently, it supports the following features:
+It supports the following features:
 
-- Create new PDF files
-- Loading and Viewing PDF files
-- Loading PDF and Image files from Dropbox
-- Exporting PDF file to different file formats
-- Appending or Merging PDF files
-- Inserting New Pages
-- Deleting Pages
-- Moving Pages in PDF file
-- Inserting Text in PDF
-- Highlight Text in PDF
-- Rotate Inserted Text in PDF
-- Searching Text in PDF
-- Replace Text in PDF
-- Inserting Images
-- Resizing Signature and Images
-- Dragging and Positioning inserted items
-- Loading PDF files with form fields
-- Fill Form fields using the Editor
-- Save and Export PDF with form fields data
-- Highlighting required form fields
-- Add Attachments to PDF Files
-- Load Attachments from input PDF file
-- Download the Attachment files
-- Remove the Attachment files
-- Signing PDF using Free-Hand Drawing
+- Create new PDF files.
+- Loading and Viewing PDF files.
+- Loading PDF and Image files from Dropbox.
+- Exporting PDF file to different file formats.
+- Appending or Merging PDF files.
+- Inserting New Pages.
+- Deleting Pages.
+- Moving Pages in PDF file.
+- Inserting Text in PDF.
+- Highlight Text in PDF.
+- Rotate Inserted Text in PDF.
+- Searching Text in PDF.
+- Replace Text in PDF.
+- Inserting Images.
+- Resizing Signature and Images.
+- Dragging and Positioning inserted items.
+- Loading PDF files with form fields.
+- Fill Form fields using the Editor.
+- Save and Export PDF with form fields data.
+- Highlighting required form fields.
+- Add Attachments to PDF Files.
+- Load Attachments from input PDF file.
+- Download the Attachment files.
+- Remove the Attachment files.
+- Signing PDF using Free-Hand Drawing.
 
 ## System Requirements
 
 As HTML5 PDF Editor is .NET Web application which is developed using ASP.NET, C#, HTML5, jQuery, Javascript. You will need the following system environment to setup HTML5 PDF Editor at your end.
 
-- Visual Studio 2010 (or above)
-- .NET Framework 3.5 (or above)
-- Aspose.PDF for .NET
-- jQuery 2.0.3
-- Bootstrap 3.2.0
+- Visual Studio 2010 (or above).
+- .NET Framework 3.5 (or above).
+- Aspose.PDF for .NET.
+- jQuery 2.0.3.
+- Bootstrap 3.2.0.
 
 You can use any of the following browsers to run the application at your end:
 
-- Mozilla Firefox (recommended)
-- Internet Explorer (version 9 or later)
-- Google Chrome
-- Apple Safari
+- Mozilla Firefox (recommended).
+- Internet Explorer (version 9 or later).
+- Google Chrome.
+- Apple Safari.
 
 ## Support
 

@@ -26,7 +26,7 @@ Umbraco PDF Import is an open source add-on from [Aspose](http://www.aspose.com/
 
 In order to setup Aspose .NET Pdf Import for Umbraco module you need to have the following requirements met:
 
-- Umbraco 6.0 +
+- Umbraco 6.0+
 
 Please feel free to contact us if you wish to install this module on other versions of Umbraco.
 
@@ -40,18 +40,18 @@ The module is supported on all versions of
 
 You can download Aspose .NET Pdf Import for Umbraco from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco/releases)
-- [Sourceforge](https://sourceforge.net/projects/asposeumbraco/files/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/downloads)
-- [Umbraco](https://our.umbraco.com/packages/developer-tools/import-from-pdf-using-asposepdf/)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco/releases).
+- [Sourceforge](https://sourceforge.net/projects/asposeumbraco/files/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/downloads).
+- [Umbraco](https://our.umbraco.com/packages/developer-tools/import-from-pdf-using-asposepdf/).
 
 ## Installing
 
 Once downloaded, please follow these steps to install this package into your Umbraco website:
 
-1. Log in to the Umbraco **Developer** section, for example <http://www.myblog.com/umbraco/>
+1. Log in to the Umbraco **Developer** section, for example <http://www.myblog.com/umbraco/>.
 1. From the tree, expand the **Packages** folder.
-   From here there are two ways to install a package: select **Install local package** or browse the **Umbraco Package Respository.**
+   From here there are two ways to install a package: select **Install local package** or browse the **Umbraco Package Respository.**.
 1. If you install **local package**, do not unzip the package but load the zip into Umbraco.
 1. Follow the instructions on screen.
 
@@ -65,7 +65,7 @@ Once downloaded, please follow these steps to install this package into your Umb
 
 After you have installed the macro it is really simple to start using it on your website:
 
-1. Make sure you are logged in to the Umbraco **Developer** section, for example <http://www.myblog.com/umbraco/>
+1. Make sure you are logged in to the Umbraco **Developer** section, for example <http://www.myblog.com/umbraco/>.
 1. Click **Settings** in the list of sections at the bottom left of the screen.
 1. Expand the **Templates** node and select the template that you want to add macro to, for example Blog post.
 1. Select the position in the selected template where you want to the button.
@@ -88,9 +88,9 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to Aspose.PDF .NET for Umbraco Modules using any of the following platforms:
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco/issues)
-- [Sourceforge](https://sourceforge.net/p/asposeumbraco/tickets/?source=navbar)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/issues?status=new&status=open)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco/issues).
+- [Sourceforge](https://sourceforge.net/p/asposeumbraco/tickets/?source=navbar).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/issues?status=new&status=open).
 
 
 ### Extend and Contribute
@@ -101,9 +101,9 @@ Aspose .NET PDF Import for Umbraco is open source and its source code is availab
 
 You can get the latest source code from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco)
-- [Sourceforge](https://sourceforge.net/p/asposeumbraco/code/ci/master/tree/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/src)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Umbraco).
+- [Sourceforge](https://sourceforge.net/p/asposeumbraco/code/ci/master/tree/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-umbraco/src).
 
 #### How to configure the source code
 

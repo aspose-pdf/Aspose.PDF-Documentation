@@ -138,9 +138,9 @@ public static void CustomizationFeaturesForDigitalSign()
 
 Using Aspose.PDF for .NET API, you can sign a PDF file using any of the following three types of signatures:
 
-- PKCS#1
-- PKCS#7
-- PKCS#7
+- PKCS#1.
+- PKCS#7.
+- PKCS#12.
 
 Each of provided signatures contains a set of configuration properties implemented for your convenience(localization, date time format, font family etc). Class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) provides corresponding functionality. The following code snippet demonstrates how to change language in digital sign text:
 

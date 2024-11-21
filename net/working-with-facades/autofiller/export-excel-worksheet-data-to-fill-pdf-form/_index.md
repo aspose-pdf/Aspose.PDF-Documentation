@@ -73,7 +73,6 @@ internal static void FillFromXLSX()
 
     // The resultant pdf, that will contain the form fields filled with information from DataTable
     autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
-
 }
 ```
 

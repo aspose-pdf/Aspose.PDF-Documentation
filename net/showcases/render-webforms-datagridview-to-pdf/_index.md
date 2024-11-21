@@ -38,15 +38,15 @@ void Render(HtmlTextWriter writer)
 
 There are two Aspose tools can be used for render HTML to PDF:
 
-- Aspose.PDF for .NET
-- Aspose Export GridView control (based on Aspose.PDF)
+- Aspose.PDF for .NET.
+- Aspose Export GridView control (based on Aspose.PDF).
 
 ## Source Files
 
 In this sample we have 2 demo reports.
 
-- _Default.aspx_ demonstrate export to PDF using Aspose.PDF
-- _Report2.aspx_ demonstrate export to PDF using Aspose Export GridView control (based on Aspose.PDF)
+- _Default.aspx_ demonstrate export to PDF using Aspose.PDF.
+- _Report2.aspx_ demonstrate export to PDF using Aspose Export GridView control (based on Aspose.PDF).
 
 ## Additional files
 

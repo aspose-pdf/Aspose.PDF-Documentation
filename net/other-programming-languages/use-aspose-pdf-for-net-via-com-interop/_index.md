@@ -108,7 +108,6 @@ To generate a TLB file:
 The creation of a COM object is similar to creation of a normal .NET object:
 
 ```vb
-
 'Instantiate Pdf instance by calling its empty constructor
 
 Dim pdf

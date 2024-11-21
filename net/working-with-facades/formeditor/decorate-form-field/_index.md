@@ -1,7 +1,7 @@
 ---
 title: Decorate Form Field in PDF
 type: docs
-weight: 20
+weight: 30
 url: /net/decorate-form-field/
 description: This section explains how to decorate Form Field in PDF using FormEditor Class.
 lastmod: "2021-06-05"

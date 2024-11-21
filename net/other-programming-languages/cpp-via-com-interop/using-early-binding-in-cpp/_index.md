@@ -36,7 +36,6 @@ For details please look at [this](http://www.drdobbs.com/writing-com-clients-wit
 C++ example
 
 ```cpp
-
 #include "stdafx.h"
 #import "C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.tlb"
 #import "C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.tlb" auto_rename

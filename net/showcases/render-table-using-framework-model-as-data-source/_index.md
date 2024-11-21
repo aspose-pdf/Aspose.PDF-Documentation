@@ -19,15 +19,15 @@ This article will show you how to generate a PDF document using the Aspose.PDF f
 
 One of the most important classes in Aspose.PDF is a [Document class](https://reference.aspose.com/pdf/net/aspose.pdf/document). This class is a PDF rendering engine. To present a PDF structure, the Aspose.PDF library uses the Document-Page model, where:
 
-* Document - contains the properties of the PDF document including page collection;
+* Document - contains the properties of the PDF document including page collection.
 * Page - contains the properties of a specific page and various collections of elements associated with this page.
 
 Therefore, to create a PDF document with Aspose.PDF, you should follow these steps:
 
-1. Create the Document object;
-1. Add the page (the Page object) for the Document object;
-1. Create objects that are placed on the page (e.g. text fragment, table, etc.)
-1. Add created items to the corresponding collection on the page (in our case it will be a paragraph collection);
+1. Create the Document object.
+1. Add the page (the Page object) for the Document object.
+1. Create objects that are placed on the page (e.g. text fragment, table, etc.).
+1. Add created items to the corresponding collection on the page (in our case it will be a paragraph collection).
 1. Save the document as PDF file.
 
 ```csharp
@@ -96,9 +96,9 @@ document.Pages[1].Paragraphs.Add(table);
 
 When initializing the Table object, the minimal skin settings were used:
 
-* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - width of columns (by default);
-* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - the default fields for the table cell;
-* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - table frame attributes (style, thickness, color);
+* [ColumnWidths](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnwidths) - width of columns (by default).
+* [DefaultCellPadding](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellpadding) - the default fields for the table cell.
+* [Border](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/border) - table frame attributes (style, thickness, color).
 * [DefaultCellBorder](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/defaultcellborder) - attributes of the cell frame (style, thickness, color).
 
 As a result, we get the table 4x10 with equal-width columns.
@@ -285,8 +285,8 @@ public static class PdfHelper
 
 The Data Annotations attributes are often used to describe models and help us to create the table. Therefore, the following table generation algorithm was chosen for ImportEntityList:
 
-* lines 12-18: build a header row and add header cells according to the rule "If the DisplayAttribute is present, then take its value otherwise take the property name"
-* lines 50-53: build the data rows and add row cells according to the rule "If the attribute DataTypeAttribute is defined, then we check whether we need to make additional design settings for it, and otherwise just convert data to string and add to the cell;"
+* lines 12-18: build a header row and add header cells according to the rule "If the DisplayAttribute is present, then take its value otherwise take the property name".
+* lines 50-53: build the data rows and add row cells according to the rule "If the attribute DataTypeAttribute is defined, then we check whether we need to make additional design settings for it, and otherwise just convert data to string and add to the cell;".
 
 In this example, additional customizations were made for DataType.Currency (lines 32-34) and DataType.Date (lines 35-43), but you can add others if necessary.
 The algorithm of the ImportGroupedData method is almost the same as the previous one. An additional GroupViewModel class is used, to store the grouped data.

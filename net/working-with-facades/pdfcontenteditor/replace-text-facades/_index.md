@@ -73,7 +73,10 @@ public static void ReplaceText04()
     PdfContentEditor editor = new PdfContentEditor();
     editor.BindPdf(_dataDir + "sample.pdf");
     int count = 0;
-    while (editor.ReplaceText("Value", "Label")) count++;
+    while (editor.ReplaceText("Value", "Label"))
+    { 
+        count++;
+    }
 
     Console.WriteLine($"{count} occurrences have been replaced.");
 
@@ -92,7 +95,11 @@ public static void ReplaceText05()
     PdfContentEditor editor = new PdfContentEditor();
     editor.BindPdf(_dataDir + "sample.pdf");
     int count = 0;
-    while (editor.ReplaceText("9999", 2, "ABCDE")) count++;
+    while (editor.ReplaceText("9999", 2, "ABCDE"))
+    {
+        count++;
+    }
+    
     Console.WriteLine($"{count} occurrences have been replaced.");
 
     // save the output file

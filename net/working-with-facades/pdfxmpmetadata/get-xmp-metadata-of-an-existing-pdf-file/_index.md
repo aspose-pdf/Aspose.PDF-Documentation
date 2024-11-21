@@ -19,7 +19,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
 PdfXmpMetadata xmpMetaData = new PdfXmpMetadata();
 
 // Bind pdf file to the object
-xmpMetaData.BindPdf( dataDir + "input.pdf");
+xmpMetaData.BindPdf(dataDir + "input.pdf");
 
 // Get XMP Meta Data properties
 Console.WriteLine(": {0}", xmpMetaData[DefaultMetadataProperties.CreateDate].ToString());
