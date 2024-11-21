@@ -1,11 +1,11 @@
 ---
-title: Plugins and integration with other languages
+title: Plugins
 linktitle: Plugins
 type: docs
 weight: 130
 url: /net/plugins/
 description: Learn how to use various plug-ins based on Aspose.PDF
-lastmod: "2024-10-22"
+lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
