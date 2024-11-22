@@ -293,7 +293,7 @@ tab1.Border = bInfo;
 
 When creating a table using a visual agent such as Microsoft Word, you will often find yourself using one of the AutoFit options to automatically size the table to the desired width. For instance you can use the AutoFit to Window option to fit the table to the width of the page and the AutoFit to Contents option to allow each cell to grow or shrink to accommodate its contents.
 
-By default Aspose.Pdf inserts a new table using `ColumnAdjustment` with `Customized` value. The table will size to the available width on the page. To change the sizing behavior on such a table or an existing table you can call Table.autoFit(int) method. This method accepts an AutoFitBehavior enumeration which defines what type of auto fitting is applied to the table.
+By default Aspose.PDF inserts a new table using `ColumnAdjustment` with `Customized` value. The table will size to the available width on the page. To change the sizing behavior on such a table or an existing table you can call Table.autoFit(int) method. This method accepts an AutoFitBehavior enumeration which defines what type of auto fitting is applied to the table.
 
 As in Microsoft Word, an autofit method is actually a shortcut which applies different properties to the table all at once. These properties are actually what give the table the observed behavior. We will discuss these properties for each autofit option. We will use the following table and apply the different auto fit settings as a demonstration:
 

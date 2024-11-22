@@ -91,7 +91,7 @@ Sometimes, it is necessary to crop an image before inserting it into a PDF. We h
 
 ## What's new in Aspose.PDF 24.9
 
-Since version 24.9, it has been possible to generate a crash report when the library throws an exception. A crash report includes information about the type of exception, application title, Aspose.Pdf version, OS version, error message, and stack trace.
+Since version 24.9, it has been possible to generate a crash report when the library throws an exception. A crash report includes information about the type of exception, application title, Aspose.PDF version, OS version, error message, and stack trace.
 
 The following code snippet demonstrates a common scenario for generating a crash report:
 

@@ -408,7 +408,7 @@ text.FootNote = new Note("foot note for test text 1");
 // Add TextFragment to paragraphs collection of first page of document
 page.Paragraphs.Add(text);
 // Create second TextFragment
-text = new TextFragment("Aspose.Pdf for .NET");
+text = new TextFragment("Aspose.PDF for .NET");
 // Set FootNote for second text fragment
 text.FootNote = new Note("foot note for test text 2");
 // Add second text fragment to paragraphs collection of PDF file
