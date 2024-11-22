@@ -93,7 +93,7 @@ You are able to do the following:
 - [Change Page size](/pdf/net/change-page-size/) - you can change PDF page size with code snippet using Aspose.PDF library.
 - [Rotate Pages](/pdf/net/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
 - [Split Pages](/pdf/net/split-document/) - you can split PDF files into one or multiple PDF.
-- [Add Headers and/or Footers](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file .
+- [Add Headers and/or Footers](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.
 - [Add Page Numbering in PDF File](/pdf/net/add-page-number/) - PageNumberStamp class will help you to add a Page Number in your PDF file.

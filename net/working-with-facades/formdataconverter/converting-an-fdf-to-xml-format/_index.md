@@ -23,5 +23,4 @@ We can use [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.f
 The following code snippet shows you how to convert an FDF file into an XML file:
 
 
-
 {{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConvertPdfToXML-ConvertPdfToXML.cs" >}}

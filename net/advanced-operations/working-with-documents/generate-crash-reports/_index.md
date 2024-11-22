@@ -31,7 +31,6 @@ Inside the catch block, the PdfException.GenerateCrashReport() method is called.
 ```cs
 try
 {
-
     throw new Exception("message", new Exception("inner message"));
 }
 catch (Exception ex)
@@ -45,7 +44,6 @@ PdfException.GenerateCrashReport(new CrashReportOptions(ex));
 ```cs
 try
 {
-    
     throw new Exception("message", new Exception("inner message"));
 }
 catch (Exception ex)
@@ -63,7 +61,6 @@ catch (Exception ex)
 ```cs
 try
 {
-
     throw new Exception("message", new Exception("inner message"));
 }
 catch (Exception ex)
@@ -83,7 +80,6 @@ catch (Exception ex)
 ```cs
 try
 {
-    
     throw new Exception("message", new Exception("inner message"));
 }
 catch (Exception ex)

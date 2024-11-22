@@ -97,7 +97,6 @@ private static void CreateTaggedPdfDocument01()
     taggedContent.SetTitle("Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
 
-    // 
     HeaderElement mainHeader = taggedContent.CreateHeaderElement();
     mainHeader.SetText("Main Header");
 
@@ -241,15 +240,15 @@ document.Save(dataDir + "IllustrationStructureElements.pdf");
 
 Aspose.PDF for .NET provides the ability to validate PDF/UA Tagged PDF Document. Validation of PDF/UA standard supports:
 
-- Checks for XObjects
-- Checks for Actions
-- Checks for Optional Content
-- Checks for Embedded Files
-- Checks for Acroform Fields(Validate Natural Language and Alternate Name and Digital Signatures)
-- Checks for XFA Form Fields
-- Checks for Security settings
-- Checks for Navigation
-- Checks for Annotations
+- Checks for XObjects.
+- Checks for Actions.
+- Checks for Optional Content.
+- Checks for Embedded Files.
+- Checks for Acroform Fields(Validate Natural Language and Alternate Name and Digital Signatures).
+- Checks for XFA Form Fields.
+- Checks for Security settings.
+- Checks for Navigation.
+- Checks for Annotations.
 
 The code snippet below shows how to validate the Tagged PDF Document. Corresponding problems will be displayed in the XML log report.
 

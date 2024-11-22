@@ -58,7 +58,7 @@ Developers can represent each PDF form field in the form of a field tag, `<field
  </fields>
 ```
 
-### ### What is XFDF format?  
+### What is XFDF format?  
 
 The representation of above data in XFDF form is similar to XML form except with few differences. In XFDF files, we add their XML Namespace, which is <http://ns.adpbe.com/xfdf/> and their is an additional tag, `<f>` that is used to point towards the PDF document containing these PDF form fields. Like XML, XFDF also contains fields in the form of field tags, `<field>` as shown below:
 

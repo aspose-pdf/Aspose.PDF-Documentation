@@ -74,9 +74,9 @@ npm install -g azure-functions-core-tools@4 --unsafe-perm true
 ```
 
 3. Install Azure CLI:
-- Windows: Download from Microsoft's website
-- macOS: `brew install azure-cli`
-- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+- Windows: Download from Microsoft's website.
+- macOS: `brew install azure-cli`.
+- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`.
 
 #### Configure Project
 

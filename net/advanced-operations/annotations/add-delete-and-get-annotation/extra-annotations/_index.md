@@ -154,7 +154,7 @@ namespace Aspose.Pdf.Examples.Advanced
 
 ### Get Caret Annotation
 
-Please try using the following code snippet to Get Caret Annotation in PDF document
+Please try using the following code snippet to Get Caret Annotation in PDF document:
 
 ```csharp
 public static void GetCaretAnnotation()

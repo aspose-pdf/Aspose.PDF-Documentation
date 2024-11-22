@@ -36,9 +36,7 @@ The attribute class in the above tag points to Aspose.PDF. Facades class, which 
 
 One important point which you’ll have to keep in mind while using the .NET component in Coldfusion is that, when you get or set any property of the class object, you have to follow a specific structure. To set a property you’ll use syntax like Set_propertyname, and to get a property value you’ll use Get_propertyname.
 
-For example
-
-Set a property value:
+For example, set a property value:
 
 ```html
 <cfset FilePath = ExpandPath("guide.pdf")>

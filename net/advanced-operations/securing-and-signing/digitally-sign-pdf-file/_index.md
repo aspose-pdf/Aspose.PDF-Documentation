@@ -88,9 +88,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 We can use follwing classed and method for PDF signing
 
-- Class [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature)
-- Enumeration [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions)
-- Property [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) in [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class
+- Class [DocMDPSignature](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpsignature).
+- Enumeration [DocMDPAccessPermissions](https://reference.aspose.com/pdf/net/aspose.pdf.forms/docmdpaccesspermissions).
+- Property [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) in [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class.
 
 ## Sign PDF with digital signatures
 
@@ -146,12 +146,12 @@ This code signs the PDF using an external certificate, possibly interacting with
 
 Steps to sign PDF:
 
-1. Create An instance of PdfFileSignature 
-1. Define the Custom Signature Hash
-1. Loading the certificate
-1. Signing the data
-1. Binding and Signing the PDF
-1. Saving the Signed PDF
+1. Create An instance of PdfFileSignature.
+1. Define the Custom Signature Hash.
+1. Loading the certificate.
+1. Signing the data.
+1. Binding and Signing the PDF.
+1. Saving the Signed PDF.
 
 ```cs
 var base64Str = "sign";
@@ -220,6 +220,7 @@ using (var sign = new PdfFileSignature())
     sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
     sign.Save(outputPdf);
 }
+
 // Custom hash signing function to generate a digital signature using SHA1 hashing algorithm.
 private byte[] CustomSignHash(byte[] signableHash)
 {
@@ -266,11 +267,8 @@ Available curve names for signature and verification in Aspose.Pdf (the list of 
 To sign a PDF document using ECDSA, the general steps in C# would be:
 
 1. You'll need an ECDSA certificate in PFX or P12 format. These certificates contain both the public and private keys needed for signing.
-
 1. Using an Aspose.PDF library, you bind the document to a signature handler.
-
 1. Use the ECDSA private key to sign the hash of the document content.
-
 1. Place the generated signature inside the PDF file along with metadata such as the reason for signing, location, and contact details.
 
 ```cs

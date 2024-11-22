@@ -1,7 +1,7 @@
 ---
 title: Move and Remove Form Field
 type: docs
-weight: 50
+weight: 70
 url: /net/move-remove-form-field/
 description: This section explains how you can move and remove Form Fields with FormEditor Class.
 lastmod: "2021-06-05"

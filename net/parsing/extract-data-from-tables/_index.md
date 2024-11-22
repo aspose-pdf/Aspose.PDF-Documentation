@@ -17,10 +17,10 @@ Extracting tables from PDFs is not a trivial task because table can be created i
 
 Aspose.PDF for .NET has a tool to make it easy to retrieve tables. To extract table data you shoud perform the following steps:
 
-1. Open document - instantiate a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object;
+1. Open document - instantiate a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
 1. Create a [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) object.
 1. Decide which pages to be analyzed and apply [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) to the desired pages. The tabular data will be scanned and the result will be stored in [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` is a List of [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). To get the date iterate throught `TableList` and handle [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) and [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
+1. `TableList` is a List of [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). To get the date iterate throught `TableList` and handle [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) and [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
 1. Each [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contains [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) collection. You can process it for your own purposes.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
@@ -63,7 +63,7 @@ public static void Extract_Table()
 
 Each abosorbed table has [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) property that describes position of the table on page.
 
-So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
+If you need to extract tables located in a specific region, you have to work with specific coordinates.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 

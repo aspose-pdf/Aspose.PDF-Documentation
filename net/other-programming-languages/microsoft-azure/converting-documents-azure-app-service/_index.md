@@ -24,10 +24,10 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ### Create App Service
 
 1. Go to Azure Portal (https://portal.azure.com).
-2. Create a new Resource Group
+2. Create a new Resource Group.
 3. Create a new App Service:
-   - Choose .NET 6 (LTS) runtime
-   - Select appropriate pricing tier
+   - Choose .NET 6 (LTS) runtime.
+   - Select appropriate pricing tier.
 4. Create an Application Insights resource for logging.
 
 ## Create Project
@@ -52,9 +52,9 @@ code --install-extension ms-azuretools.vscode-azureappservice
 ```
 
 2. Install Azure CLI:
-- Windows: Download from Microsoft's website
-- macOS: `brew install azure-cli`
-- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+- Windows: Download from Microsoft's website.
+- macOS: `brew install azure-cli`.
+- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`.
 
 #### Configure Project
 
@@ -136,9 +136,9 @@ license.SetLicense("Aspose.PDF.lic");
 ### Create code
 
 In Visual Studio:
-1. Right-click on Controllers folder
-2. Add → New Item → API Controller - Empty
-3. Name your file "PdfController.cs"
+1. Right-click on Controllers folder.
+2. Add → New Item → API Controller - Empty.
+3. Name your file "PdfController.cs".
 
 ```csharp
 // PdfController.cs
@@ -275,13 +275,13 @@ Replace `Your-Connection-StringG` with your actual connection string from Azure 
 ## Test Locally
 
 In Visual Studio:
-1. Press F5 to run the application
-2. Swagger UI will open
+1. Press F5 to run the application.
+2. Swagger UI will open.
 3. Test the /api/pdf/convert endpoint:
-   - Click "Try it out"
-   - Upload a PDF file
-   - Select output format
-   - Execute and verify the conversion
+   - Click "Try it out".
+   - Upload a PDF file.
+   - Select output format.
+   - Execute and verify the conversion.
 
 In Visual Studio Code:
 ```bash
@@ -295,12 +295,12 @@ curl -X POST "https://localhost:5001/api/pdf/convert?outputFormat=docx" \
 ## Deploy to Azure
 
 In Visual Studio:
-1. Right-click on the project
-2. Select "Publish"
-3. Choose "Azure" as target
-4. Select "Azure App Service (Windows)"
-5. Select your subscription and App Service
-6. Click "Publish"
+1. Right-click on the project.
+2. Select "Publish".
+3. Choose "Azure" as target.
+4. Select "Azure App Service (Windows)".
+5. Select your subscription and App Service.
+6. Click "Publish".
 
 In Visual Studio Code:
 ```bash
@@ -320,8 +320,8 @@ az webapp deploy \
 
 ## Configure Azure App Service
 
-1. Go to Azure Portal
-2. Open your App Service
+1. Go to Azure Portal.
+2. Open your App Service.
 3. Configure settings:
    ```
    App Settings:

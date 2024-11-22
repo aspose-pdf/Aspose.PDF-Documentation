@@ -22,7 +22,6 @@ We will use a [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assem
 {{% /alert %}}
 
 ```cpp
-
 #include "stdafx.h"
 #import "C:\\Temp\\PdfText.tlb"
 using namespace System;
@@ -68,5 +67,4 @@ int main(array<System::String ^> ^args)
     Console::WriteLine("---");
     return 0;
 }
-
 ```

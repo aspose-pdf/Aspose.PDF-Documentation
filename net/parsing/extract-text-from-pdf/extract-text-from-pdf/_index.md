@@ -79,11 +79,11 @@ You can use the **TextDevice** class to extract text from a PDF file. TextDev
 
 The following steps and code snippet shows you how to extract text from a PDF using the text device.
 
-1. Create an object of Document class with input PDF file specified
-1. Create an object of TextDevice class
-1. Use object of TextExtractOptions class to specify extraction options
-1. Use the Process method of TextDevice class to convert contents to the text
-1. Save the text to the output file
+1. Create an object of Document class with input PDF file specified.
+1. Create an object of TextDevice class.
+1. Use object of TextExtractOptions class to specify extraction options.
+1. Use the Process method of TextDevice class to convert contents to the text.
+1. Save the text to the output file.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 

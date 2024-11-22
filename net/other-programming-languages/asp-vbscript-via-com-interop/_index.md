@@ -34,7 +34,6 @@ This is a simple ASP application that shows you how to create a PDF file with sa
 <h3>creation of sample PDF document while using Aspose.PDF for .NET with classical ASP and VBScript</h3>
 
 <%
-
 'set license
 Dim lic
 Set lic = CreateObject("Aspose.PDF.License")
@@ -70,7 +69,6 @@ pdfsection.Paragraphs.Add(SampleText)
 
 ' Save the PDF document
 pdf.Save("d:\pdftest\HelloWorldinASP.pdf")
-
 %>
 
     </body>

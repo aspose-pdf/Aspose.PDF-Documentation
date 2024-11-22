@@ -110,7 +110,7 @@ namespace Aspose.Pdf.Examples
             page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
             // Save updated PDF
             var outputFileName = System.IO.Path.Combine(_dataDir, "HelloWorld_out.pdf");
-            document.Save( outputFileName );
+            document.Save(outputFileName);
         }
     }
 }

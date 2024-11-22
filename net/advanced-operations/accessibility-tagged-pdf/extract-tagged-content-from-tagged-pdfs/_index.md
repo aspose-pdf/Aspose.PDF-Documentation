@@ -214,7 +214,6 @@ foreach (FigureElement figureElement in rootElement.FindElements<FigureElement>(
     // Set Alternative Text  for Figure
     figureElement.AlternativeText = "Figure alternative text (technique 2)";
 
-
     // Create and Set BBox Attribute
     StructureAttribute bboxAttribute = new StructureAttribute(AttributeKey.BBox);
     bboxAttribute.SetRectangleValue(new Rectangle(0.0, 0.0, 100.0, 100.0));

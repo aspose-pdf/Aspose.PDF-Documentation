@@ -21,15 +21,15 @@ The comparison functionality in Aspose.PDF allows you to compare two PDF documen
 
 Here is a list of possible ways to compare PDF documents using Aspose.PDF for  .NET library:
 
-1. **Comparing Specific Pages** - compare the first pages of two PDF documents.
+1. **Comparing Specific Pages** - Compare the first pages of two PDF documents.
 
-1. **Comparing Entire Documents** - compare the entire content of two PDF documents.
+1. **Comparing Entire Documents** - Compare the entire content of two PDF documents.
 
 1. **Compare PDF documents graphically**:
 
-- compare PDF with GetDifference method - individual images where changes are marked.
+- Compare PDF with GetDifference method - individual images where changes are marked.
 
-- compare PDF with CompareDocumentsToPdf method - PDF document with images where changes are marked.
+- Compare PDF with CompareDocumentsToPdf method - PDF document with images where changes are marked.
 
 ## Comparing Specific Pages
 
@@ -55,7 +55,7 @@ The code starts by initializing two PDF documents using their respective file pa
 string documentPath1 = "";
 string documentPath2= "";
 
-string resultPdfPath ="";
+string resultPdfPath = "";
 
 using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
 {
@@ -88,7 +88,7 @@ Just like in the first example, two PDF documents are initialized with their fil
 string documentPath1 = "";
 string documentPath2 = "";
 
-string resultPdfPath ="";
+string resultPdfPath = "";
 
 using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
 {

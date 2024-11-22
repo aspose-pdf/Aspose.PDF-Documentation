@@ -23,7 +23,6 @@ This is a simple C++ code sample to extract text from PDF by means of COM Intero
 {{% /alert %}}
 
 ```cpp
-
 #include "stdafx.h"
 #include "comdef.h"
 
@@ -173,7 +172,6 @@ String ^lateBinding(String ^file)
     }
 
     return text;
-
 }
 
 int main(array<System::String ^> ^args)
@@ -191,7 +189,5 @@ int main(array<System::String ^> ^args)
     Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");
     Console::WriteLine("---");
     return 0;
-
 }
-
 ```

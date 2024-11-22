@@ -174,7 +174,7 @@ document.Save(dataDir);
 
 ## How to - determine if the source PDF is password protected
 
-**Aspose.PDF for .NET** provides great capabilities of dealing with PDF documents. When using Document class of Aspose.PDF namespace to open a PDF document that is password-protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact, when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorized access of document)
+**Aspose.PDF for .NET** provides great capabilities of dealing with PDF documents. When using Document class of Aspose.PDF namespace to open a PDF document that is password-protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact, when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorized access of document).
 
 When dealing with encrypted PDF files, you may come across the scenario where you would be interested to detect if a PDF has an open password and/or an edit password. Sometimes there are documents that do not require password information while opening them, but they require information in order to edit the contents of the file. So in order to fulfill the above requirements, PdfFileInfo class present under Aspose.PDF.Facades provides the properties which can help in determining the required information.
 
@@ -183,9 +183,9 @@ When dealing with encrypted PDF files, you may come across the scenario where yo
 PdfFileInfo contains three properties to get information about PDF document security.
 
 1. property PasswordType returns PasswordType enumeration value:
-    - PasswordType.None - the document is not password protected
-    - PasswordType.User - the document was opened with user (or document open) password
-    - PasswordType.Owner - the document was opened with owner (or permissions, edit) password
+    - PasswordType.None - the document is not password protected.
+    - PasswordType.User - the document was opened with user (or document open) password.
+    - PasswordType.Owner - the document was opened with owner (or permissions, edit) password.
     - PasswordType.Inaccessible - the document is password protected but the password is needed to open it while an invalid password (or no password) was supplied.
 2. boolean property HasOpenPassword - is used to determine if the input file requires a password, when opening it.
 3. boolean property HasEditPassword - its used to determine if the input file requires a password to edit its contents.

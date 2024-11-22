@@ -39,10 +39,10 @@ To produce and manipulate PDF documents, the machine that Aspose.PDF for .NET ru
 - Mac OS X x64 (10.12+)
 
 ### Linux
-- Linux x64 ( 6, 7 ,27, 9, 8.7+, 18.04, 16.04, 14.04, 18, 17, 42.3+, 12 SP2+)
+- Linux x64 (6, 7 ,27, 9, 8.7+, 18.04, 16.04, 14.04, 18, 17, 42.3+, 12 SP2+)
 
 ### Android
-- Android ( 8.0, 10, 11, 12, 13, 14, 15)
+- Android (8.0, 10, 11, 12, 13, 14, 15)
 
 ## Development Environments
 You can use Aspose.PDF for .NET to develop applications in any development environment that targets the .NET platform, but the following environments are explicitly supported:

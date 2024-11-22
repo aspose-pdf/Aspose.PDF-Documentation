@@ -87,8 +87,8 @@ The Aspose.PDF for .NET library allows merges either all PDF layers or a specifi
 
 Two methods were added to merge all layers on the page:
 
-- void MergeLayers(string newLayerName);
-- void MergeLayers(string newLayerName, string newOptionalContentGroupId); 
+- void MergeLayers(string newLayerName).
+- void MergeLayers(string newLayerName, string newOptionalContentGroupId).
 
 The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
 

@@ -20,7 +20,6 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
 {{% /alert %}}
 
 ```cs
-
 <%@ Page Language ="C#" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.IO" %>

@@ -449,7 +449,7 @@ public static void ConvertSVGtoPDF()
 
 ## Get SVG dimensions
 
-It is also possible to get the dimensions of the source SVG file. This information can be useful if we want the SVG to cover the entire page of the output PDF. The ScgLoadOption class' AdjustPageSize property fulfills this requirement. The default value of this property is false. If the value is set to true, the output PDF will have the same size (dimensions) as the source SVG.
+It is also possible to get the dimensions of the source SVG file. This information can be useful if we want the SVG to cover the entire page of the output PDF. The SvgLoadOption class' AdjustPageSize property fulfills this requirement. The default value of this property is false. If the value is set to true, the output PDF will have the same size (dimensions) as the source SVG.
 
 The following code snippet shows the process of getting the source SVG file's dimensions and generating a PDF file.
 

@@ -121,7 +121,7 @@ To create the annotation we have followed certain steps:
 1. Create `LinkAnnotation` and pass the page object and the rectangle of the text fragment which is corresponded with annotation.
 1. Set `Action` as `GoToAction` and pass `XYZExplicitDestination` as desired destination. We created `XYZExplicitDestination` based on page, left and top coordinates and zoom.
 1. Add annotation to page annotaion collection.
-1. Save the document
+1. Save the document.
 
 ### Using Link Annotation with named destination
 

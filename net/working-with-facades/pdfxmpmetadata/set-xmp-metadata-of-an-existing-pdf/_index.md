@@ -19,7 +19,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
 PdfXmpMetadata xmpMetaData = new PdfXmpMetadata();
 
 // Bind pdf file to the object
-xmpMetaData.BindPdf(dataDir+ "SetXMPMetadata.pdf");
+xmpMetaData.BindPdf(dataDir + "SetXMPMetadata.pdf");
 
 // Add create date
 xmpMetaData.Add(DefaultMetadataProperties.CreateDate, System.DateTime.Now.ToString());
@@ -43,7 +43,7 @@ xmpMetaData.Add("customNamespace:UserPropertyName", "UserPropertyValue");
 xmpMetaData["customNamespace:UserPropertyName"] = "UserPropertyValue2";
 
 // Save xmp meta data in the pdf file
-xmpMetaData.Save(dataDir+ "SetXMPMetadata_out.pdf");
+xmpMetaData.Save(dataDir + "SetXMPMetadata_out.pdf");
 
 // Close the object
 xmpMetaData.Close();
