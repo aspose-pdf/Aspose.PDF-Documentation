@@ -95,9 +95,10 @@ We can use follwing classed and method for PDF signing
 
 To create a digital signature based on PKCS12 certificates (file extensions .p12, pfx), you should create an instance of the PdfFileSignature class, passing the document object to it.
 Next, you should specify the desired digital signature method by creating an object of one of the classes:
-- PKCS1
-- PKCS7
-- PKCS7Detached
+
+- PKCS1.
+- PKCS7.
+- PKCS7Detached.
 
 _You can set the digest algorithm only for PKCS7Detached. For PKCS1 and PKCS7, the digest algorithm is always set to SHA-1._
 
