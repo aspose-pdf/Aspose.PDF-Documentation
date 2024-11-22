@@ -84,7 +84,7 @@ This article shows how to merge multiple PDF files into a single PDF document us
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-## Merge PDF Files using C# and DOM
+## Merge PDF Files
 
 To concatenate two PDF files:
 
@@ -100,16 +100,15 @@ The following code snippet shows how to concatenate PDF files.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Open first document
-Document pdfDocument1 = new Document(dataDir + "Concat1.pdf");
+Document document1 = new Document(dataDir + "Concat1.pdf");
 // Open second document
-Document pdfDocument2 = new Document(dataDir + "Concat2.pdf");
+Document document2 = new Document(dataDir + "Concat2.pdf");
 
 // Add pages of second document to the first
-pdfDocument1.Pages.Add(pdfDocument2.Pages);
+document1.Pages.Add(document2.Pages);
 
-dataDir = dataDir + "ConcatenatePdfFiles_out.pdf";
 // Save concatenated output file
-pdfDocument1.Save(dataDir);
+pdfDocument1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
 ```
 
 ## Live Example

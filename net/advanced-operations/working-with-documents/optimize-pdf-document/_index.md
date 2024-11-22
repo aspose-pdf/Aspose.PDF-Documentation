@@ -119,10 +119,8 @@ Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
 // Optimize for web
 pdfDocument.Optimize();
 
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-
 // Save output document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ## Reduce Size PDF
@@ -143,9 +141,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 Document pdfDocument = new Document(dataDir + "ShrinkDocument.pdf");
 // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
 pdfDocument.OptimizeResources();
-dataDir = dataDir + "ShrinkDocument_out.pdf";
+
 // Save updated document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "ShrinkDocument_out.pdf");
 ```
 
 ## Optimization Strategy Management
@@ -172,9 +170,9 @@ optimizeOptions.ImageCompressionOptions.CompressImages = true;
 optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 // Optimize PDF document using OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "Shrinkimage_out.pdf";
+
 // Save updated document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "Shrinkimage_out.pdf");
 ```
 
 Another way is to resize the images with a lower resolution. In this case, we should set ResizeImages to true and MaxResolution to the appropriate value.
@@ -247,9 +245,9 @@ var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 };
 // Optimize PDF document using OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
+
 // Save updated document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ### Removing Unused Streams
@@ -269,9 +267,9 @@ var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 };
 // Optimize PDF document using OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
+
 // Save updated document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ### Linking Duplicate Streams
@@ -359,9 +357,9 @@ Annotations can be deleted when they are unnecessary. When they are needed but d
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 // Flatten annotations
-foreach (var page in pdfDocument.Pages)
+foreach (var page in document.Pages)
 {
     foreach (var annotation in page.Annotations)
     {
@@ -369,7 +367,7 @@ foreach (var page in pdfDocument.Pages)
     }
 }
 // Save updated document
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ### Removing Form Fields
@@ -382,20 +380,19 @@ If the PDF document contains AcroForms, we can try to reduce the file size by fl
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load source PDF form
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Flatten Forms
-if (doc.Form.Fields.Count() > 0)
+if (document.Form.Fields.Count() > 0)
 {
-    foreach (var item in doc.Form.Fields)
+    foreach (var item in document.Form.Fields)
     {
         item.Flatten();
     }
 }
 
-dataDir = dataDir + "FlattenForms_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "FlattenForms_out.pdf");
 ```
 
 ### Convert a PDF from RGB colorspace to grayscale

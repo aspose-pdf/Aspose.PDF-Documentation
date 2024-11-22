@@ -94,7 +94,7 @@ This topic shows how to split PDF pages into individual PDF files in your .NET a
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-## Split PDF into multiple files or separate pdfs in C#
+## Split PDF into multiple files or separate pdfs
 
 The following C# code snippet shows you how to split PDF pages into individual PDF files.
 

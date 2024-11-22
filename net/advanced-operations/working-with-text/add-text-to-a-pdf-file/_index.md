@@ -476,8 +476,8 @@ In earlier release versions, the Footnote support was provided but it was only a
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 TextFragment text = new TextFragment("some text");
 page.Paragraphs.Add(text);
 
@@ -494,10 +494,8 @@ Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 table.Rows.Add().Cells.Add().Paragraphs.Add(new TextFragment("Row 1 Cell 1"));
 text.FootNote.Paragraphs.Add(table);
 
-dataDir = dataDir + "AddImageAndTable_out.pdf";
-
 // Save resulting PDF document.
-doc.Save(dataDir);
+document.Save(dataDir + "AddImageAndTable_out.pdf";);
 ```
 
 ## How to Create EndNotes
@@ -523,9 +521,8 @@ text.EndNote.Text = " Aspose(2015)";
 // Add TextFragment to paragraphs collection of first page of document
 page.Paragraphs.Add(text);
 
-dataDir = dataDir + "CreateEndNotes_out.pdf";
 // Save resulting PDF document.
-doc.Save(dataDir);
+doc.Save(dataDir + "CreateEndNotes_out.pdf");
 ```
 
 ## Text and Image as InLine Paragraph
@@ -539,9 +536,9 @@ The following code snippet shows you how to add text and Image as InLine paragra
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Instantiate Document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of Document instance
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create TextFragmnet
 TextFragment text = new TextFragment("Hello World.. ");
 // Add text fragment to paragraphs collection of Page object
@@ -566,8 +563,8 @@ text.IsInLineParagraph = true;
 // Add newly created TextFragment to paragraphs collection of page
 page.Paragraphs.Add(text);
 
-dataDir = dataDir + "TextAndImageAsParagraph_out.pdf";
-doc.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "TextAndImageAsParagraph_out.pdf");
 ```
 
 ## Specify character Spacing when adding Text
@@ -584,11 +581,11 @@ The following approaches show the steps to specify character spacing when adding
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of Document
-Page page = pdfDocument.Pages.Add();
+document.Pages.Add();
 // Create TextBuilder instance
-TextBuilder builder = new TextBuilder(pdfDocument.Pages[1]);
+TextBuilder builder = new TextBuilder(document.Pages[1]);
 // Create text fragment instance with sample contents
 TextFragment wideFragment = new TextFragment("Text with increased character spacing");
 wideFragment.TextState.ApplyChangesFrom(new TextState("Arial", 12));
@@ -598,9 +595,9 @@ wideFragment.TextState.CharacterSpacing = 2.0f;
 wideFragment.Position = new Position(100, 650);
 // Append TextFragment to TextBuilder instance
 builder.AppendText(wideFragment);
-dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf";
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+
+// Save resulting PDF document
+document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf");
 ```
 
 ### Using TextParagraph
@@ -679,12 +676,12 @@ An example is given below to demonstrate the creation of two columns with Graphs
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
+Document document = new Document();
 // Specify the left margin info for the PDF file
-doc.PageInfo.Margin.Left = 40;
+document.PageInfo.Margin.Left = 40;
 // Specify the Right margin info for the PDF file
-doc.PageInfo.Margin.Right = 40;
-Page page = doc.Pages.Add();
+document.PageInfo.Margin.Right = 40;
+Page page = document.Pages.Add();
 
 Aspose.Pdf.Drawing.Graph graph1 = new Aspose.Pdf.Drawing.Graph(500, 2);
 // Add the line to paraphraphs collection of section object
@@ -695,13 +692,11 @@ float[] posArr = new float[] { 1, 2, 500, 2 };
 Aspose.Pdf.Drawing.Line l1 = new Aspose.Pdf.Drawing.Line(posArr);
 graph1.Shapes.Add(l1);
 // Create string variables with text containing html tags
-
 string s = "<font face=\"Times New Roman\" size=4>" +
 
 "<strong> How to Steer Clear of money scams</<strong> "
 + "</font>";
 // Create text paragraphs containing HTML text
-
 HtmlFragment heading_text = new HtmlFragment(s);
 page.Paragraphs.Add(heading_text);
 
@@ -734,9 +729,8 @@ box.Paragraphs.Add(text2);
 
 page.Paragraphs.Add(box);
 
-dataDir = dataDir + "CreateMultiColumnPdf_out.pdf";
 // Save PDF file
-doc.Save(dataDir);
+document.Save(dataDir + "CreateMultiColumnPdf_out.pdf");
 ```
 
 ## Working with custom Tab Stops

@@ -123,9 +123,6 @@ floatBox.Margin = pdfPage.PageInfo.Margin;
 
 pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
-
 Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
 heading.IsInList = true;
 heading.StartNumber = 1;
@@ -152,8 +149,8 @@ heading3.Style = NumberingStyle.LettersLowercase;
 heading3.IsAutoSequence = true;
 
 floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+
+pdfDoc.Save(dataDir + "ApplyNumberStyle_out.pdf");
 ```
 
 <script type="application/ld+json">

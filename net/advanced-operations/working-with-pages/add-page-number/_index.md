@@ -1,5 +1,5 @@
 ---
-title: Add Page Number to PDF with C#
+title: Add Page Number to PDF
 linktitle: Add Page Number
 type: docs
 weight: 100
@@ -91,7 +91,7 @@ You can use [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pa
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "PageNumberStamp.pdf");
+Document pdfDocument = new Document(dataDir + "PageNumberStamp.pdf");
 
 // Create page number stamp
 PageNumberStamp pageNumberStamp = new PageNumberStamp();
@@ -111,9 +111,8 @@ pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
 // Add stamp to particular page
 pdfDocument.Pages[1].AddStamp(pageNumberStamp);
 
-dataDir = dataDir + "PageNumberStamp_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "PageNumberStamp_out.pdf";);
 ```
 
 ## Live Example
