@@ -173,6 +173,7 @@ using (Document document = new Document(inputFilePath))
     }
 }
 ```
+
 Sample output for the example above:
 ```
 Sha256
