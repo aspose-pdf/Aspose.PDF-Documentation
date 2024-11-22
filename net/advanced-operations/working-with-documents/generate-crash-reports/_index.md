@@ -2,7 +2,7 @@
 title: Generate Crash Reports using C#
 linktitle: Create Crash Report
 type: docs
-weight: 100
+weight: 60
 url: /net/generate-crash-reports/
 description: The main goal of the next code snippets is to handle an exception and generate a crash report that logs the details of the exception using Aspose.PDF for .NET. 
 lastmod: "2024-09-17"

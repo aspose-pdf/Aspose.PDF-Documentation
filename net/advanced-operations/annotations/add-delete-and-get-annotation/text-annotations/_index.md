@@ -131,47 +131,30 @@ It shall have no appearance stream or associated actions of its own and shall be
 The following code snippet shows you how to add [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) in a PDF page using an example of adding a parent's [Line annotation](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file).
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.Linq;
-
-namespace Aspose.Pdf.Examples.Advanced
+// The path to the documents directory.
+private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+public static void AddLineAnnotation()
 {
-    class ExampleLineAnnotation
+    // Load the PDF file
+    Document document = new Document(_dataDir + "Appartments.pdf"));
+
+    // Create Line Annotation
+    var lineAnnotation = new LineAnnotation(
+        document.Pages[1],
+        new Rectangle(550, 93, 562, 439),
+        new Point(556, 99), new Point(556, 443))
     {
-        // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddLineAnnotation()
-        {
-            try
-            {
-                // Load the PDF file
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments.pdf"));
+        Title = "John Smith",
+        Color = Color.Red,
+        Width = 3,
+        StartingStyle = LineEnding.OpenArrow,
+        EndingStyle = LineEnding.OpenArrow,
+        Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
+    };
 
-                // Create Line Annotation
-                var lineAnnotation = new LineAnnotation(
-                    document.Pages[1],
-                    new Rectangle(550, 93, 562, 439),
-                    new Point(556, 99), new Point(556, 443))
-                {
-                    Title = "John Smith",
-                    Color = Color.Red,
-                    Width = 3,
-                    StartingStyle = LineEnding.OpenArrow,
-                    EndingStyle = LineEnding.OpenArrow,
-                    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
-                };
-
-                // Add annotation to the page
-                document.Pages[1].Annotations.Add(lineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-    }
+    // Add annotation to the page
+    document.Pages[1].Annotations.Add(lineAnnotation);
+    document.Save(_dataDir + "Appartments_mod.pdf"));
 }
 ```
 
@@ -186,7 +169,10 @@ private static void AddFreeTextAnnotationDemo()
     var pdfContentEditor = new PdfContentEditor(_document);
 
     tfa.Visit(_document.Pages[1]);
-    if (tfa.TextFragments.Count <= 0) return;
+    if (tfa.TextFragments.Count <= 0) 
+    {
+        return;
+    }
     var rect = new System.Drawing.Rectangle
     {
         X = (int)tfa.TextFragments[1].Rectangle.LLX,
@@ -234,7 +220,7 @@ If you use import from XFDF file please use callout-line name instead just Callo
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document pdfDocument = new Document( dataDir + "AddAnnotation.pdf");
+Document pdfDocument = new Document(dataDir + "AddAnnotation.pdf");
 StringBuilder Xfdf = new StringBuilder();
 Xfdf.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xfdf xmlns=\"http://ns.adobe.com/xfdf/\" xml:space=\"preserve\"><annots>");
 CreateXfdf(ref Xfdf);
@@ -347,9 +333,8 @@ Document pdfDocument = new Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"
 // Delete particular annotation
 pdfDocument.Pages[1].Annotations.Delete();
 
-dataDir = dataDir + "DeleteAllAnnotationsFromPage_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf);
 ```
 
 ## Delete Particular Annotation from PDF File
@@ -376,9 +361,8 @@ Document pdfDocument = new Document(dataDir + "DeleteParticularAnnotation.pdf");
 // Delete particular annotation
 pdfDocument.Pages[1].Annotations.Delete(1);
 
-dataDir = dataDir + "DeleteParticularAnnotation_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "DeleteParticularAnnotation_out.pdf");
 ```
 
 ## Get All Annotations from Page of PDF Document
@@ -436,21 +420,21 @@ Aspose.PDF allows you to get a resource of annotation from an entire document, o
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
 // Open document
-Document doc = new Document(dataDir + "AddAnnotation.pdf");
+Document document = new Document(dataDir + "AddAnnotation.pdf");
 //Create annotation
-ScreenAnnotation sa = new ScreenAnnotation(doc.Pages[1], new Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
-doc.Pages[1].Annotations.Add(sa);
+ScreenAnnotation sa = new ScreenAnnotation(document.Pages[1], new Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
+document.Pages[1].Annotations.Add(sa);
 // Save Doucument
-doc.Save(dataDir + "GetResourceOfAnnotation_Out.pdf");
+document.Save(dataDir + "GetResourceOfAnnotation_Out.pdf");
 
 // Open document
-Document doc1 = new Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
+Document document1 = new Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
 
 //Get action of the annotation
-RenditionAction action = (doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction;
+RenditionAction action = (document1.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction;
 
 //Get rendition of the rendition action
-Rendition rendition = ((doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction).Rendition;
+Rendition rendition = ((document1.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction).Rendition;
 
 //Media Clip
 MediaClip clip = (rendition as MediaRendition).MediaClip;

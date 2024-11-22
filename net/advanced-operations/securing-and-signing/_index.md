@@ -81,7 +81,7 @@ aliases:
 This section describes how to securely digitally sign PDF documents using C#. The terms electronic signature and digital signature are used interchangeably, but essentially the two are different. More generally, a digital signature comes with a [certification authority](https://en.wikipedia.org/wiki/Certificate_authority) approved seal and is used to protect the signed document from tampering. Instead, an electronic signature is often used to demonstrate the intention to sign a document.
 
 - [Digitally sign PDF file](/pdf/net/digitally-sign-pdf-file/)
-- [Set Privileges, Encrypt and Decrypt PDF File](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Set Privileges, Encrypt and Decrypt PDF File](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/){:target="_blank"}
 - [Extract Image and Signature Information](/pdf/net/extract-image-and-signature-information/)
 - [Sign PDF Document From Smart Card](/pdf/net/sign-pdf-document-from-smart-card/)
 

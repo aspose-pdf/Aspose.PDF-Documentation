@@ -313,10 +313,10 @@ doc.Save(dataDir + "ImagetoPDF.pdf");
 
 Then you can see how to convert an image to PDF with the **same height and width of the page**. We will be getting the image dimensions and accordingly set the page dimensions of PDF document with the below steps:
 
-1. Load input image file
-1. Get the height and width of the image
-1. Set height, width, and margins of a page
-1. Save the output PDF file
+1. Load input image file.
+1. Get the height and width of the image.
+1. Set height, width, and margins of a page.
+1. Save the output PDF file.
 
 Following code snippet shows how to convert an Image to PDF with same page height and width using C#:
 
@@ -687,11 +687,11 @@ using (Document pdfDocument = new Document())
 
 In case you need to convert multi-page TIFF image to multi-page PDF document and control some params, i.g. width or aspect ratio, please follow these steps:
 
-1. Instantiate an instance of Document class
-1. Load input TIFF image
-1. Get FrameDimension of the frames
-1. Add new page for each frame
-1. Finally, save images to PDF pages
+1. Instantiate an instance of Document class.
+1. Load input TIFF image.
+1. Get FrameDimension of the frames.
+1. Add new page for each frame.
+1. Finally, save images to PDF pages.
 
 The following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF with C#:
 

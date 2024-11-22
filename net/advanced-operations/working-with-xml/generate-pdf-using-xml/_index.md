@@ -1118,7 +1118,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Instantiate Document object
 Document doc = new Document();
 // Bind source XML file
-doc.BindXml( dataDir + "log.xml");
+doc.BindXml(dataDir + "log.xml");
 // Get reference of page object from XML
 Page page = (Page)doc.GetObjectById("mainSection");
 // Get reference of first TextSegment with ID boldHtml

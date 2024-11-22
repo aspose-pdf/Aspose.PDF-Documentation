@@ -1,5 +1,5 @@
 ---
-title: Add background to PDF with C#
+title: Add background to PDF
 linktitle: Add backgrounds
 type: docs
 weight: 110
@@ -102,9 +102,8 @@ background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg")
 // Add backgroundartifact to artifacts collection of page
 page.Artifacts.Add(background);
 
-dataDir = dataDir + "ImageAsBackground_out.pdf";
 // Save the document
-doc.Save(dataDir);
+doc.Save(dataDir + "ImageAsBackground_out.pdf");
 ```
 
 <script type="application/ld+json">

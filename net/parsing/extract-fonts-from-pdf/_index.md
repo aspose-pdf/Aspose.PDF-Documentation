@@ -1,6 +1,6 @@
 ---
-title: Extract fonts from PDF C#
-linktitle: Extract fonts from PDF
+title: Extract Fonts from PDF C#
+linktitle: Extract Fonts from PDF
 type: docs
 weight: 30
 url: /net/extract-fonts-from-pdf/

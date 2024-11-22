@@ -109,9 +109,8 @@ imageStamp.Opacity = 0.5;
 // Add stamp to particular page
 pdfDocument.Pages[1].AddStamp(imageStamp);
 
-dataDir = dataDir + "AddImageStamp_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "AddImageStamp_out.pdf");
 ```
 
 ## Control Image Quality when Adding Stamp

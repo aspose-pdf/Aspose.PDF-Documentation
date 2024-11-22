@@ -2,7 +2,7 @@
 title: Manipulate PDF Document in C#
 linktitle: Manipulate PDF Document
 type: docs
-weight: 20
+weight: 30
 url: /net/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and etc.
 keywords: "manipulate pdf c#"
@@ -115,7 +115,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
 Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
 
-// Validate PDF for PDF/A-1a
+// Validate PDF for PDF/A-1b
 pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ```
 
@@ -180,9 +180,9 @@ for (int i = 0; i < 2; i++)
     // Add heading to page containing TOC
     tocPage.Paragraphs.Add(heading2);
 }
-dataDir = dataDir + "TOC_out.pdf";
+
 // Save the updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "TOC_out.pdf");
 ```
 
 ### Set different TabLeaderType for different TOC Levels
@@ -301,8 +301,8 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string inFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "42824.pdf";
-string outFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "42824_out.pdf";
+string inFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "CustomizePageNumbersAddingToC.pdf";
+string outFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "CustomizePageNumbersAddingToC_out.pdf";
 // Load an existing PDF files
 Document doc = new Document(inFile);
 // Get access to first page of PDF file
@@ -365,9 +365,8 @@ JavascriptAction javaScript = new JavascriptAction(
 // Set JavaScript as PDF open action
 doc.OpenAction = javaScript;
 
-dataDir = dataDir + "SetExpiryDate_out.pdf";
 // Save PDF Document
-doc.Save(dataDir);
+doc.Save(dataDir + "SetExpiryDate_out.pdf");
 ```
 
 ## Determine Progress of PDF File Generation
@@ -394,7 +393,6 @@ saveOptions.CustomProgressHandler = new UnifiedSaveOptions.ConversionProgressEve
 
 dataDir = dataDir + "DetermineProgress_out.pdf";
 pdfDocument.Save(dataDir, saveOptions);
-Console.ReadLine();
 ```
 
 ```csharp
@@ -406,7 +404,7 @@ public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo
         case DocSaveOptions.ProgressEventType.TotalProgress:
             Console.WriteLine(String.Format("{0}  - Conversion progress : {1}% .", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString()));
             break;
-        case DocSaveOptions.ProgressEventType.SourcePageAnalized:
+        case DocSaveOptions.ProgressEventType.SourcePageAnalised:
             Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
         case DocSaveOptions.ProgressEventType.ResultPageCreated:
@@ -421,27 +419,29 @@ public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo
 }
 ```
 
-## Flatten Fillable PDF in C#
+## Flatten Fillable PDF
 
 PDF documents often include forms with interactive fillable widgets such as radio buttons, checkboxes, text boxes, lists, etc. To make it uneditable for various application purposes, we need to flatten the PDF file.
 Aspose.PDF provides the function to flatten your PDF in C# with just few line of code:
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory.
+string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Load source PDF form
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Flatten Flatten Fillable PDF 
-if (doc.Form.Fields.Count() > 0)
+if (document.Form.Fields.Count() > 0)
 {
-    foreach (var item in doc.Form.Fields)
+    foreach (var item in document.Form.Fields)
     {
         item.Flatten();
     }
 }
 
-dataDir = dataDir + "FlattenForms_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+document.Save(dataDir + "FlattenForms_out.pdf");
 ```
 
 <script type="application/ld+json">

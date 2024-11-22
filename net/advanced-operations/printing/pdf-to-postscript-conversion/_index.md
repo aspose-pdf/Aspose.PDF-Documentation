@@ -208,7 +208,7 @@ Please note that there is no possibility to set owner value using Aspose.PDF pri
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 PdfViewer viewer = new PdfViewer();
-viewer.BindPdf( dataDir + "input.pdf");
+viewer.BindPdf(dataDir + "input.pdf");
 viewer.PrintPageDialog = false;
 // Do not produce the page number dialog when printing
 using (new Impersonator("OwnerUserName", "SomeDomain", "OwnerUserNamePassword"))

@@ -101,10 +101,10 @@ To Customize the solution download and install the unmanaged solution into CRM.
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010 or higher
-  Please follow these simple steps to get started
+- Visual Studio 2010 or higher.
+  Please follow these simple steps to get started.
 - Download/Clone the source code.
-- Open Visual Studio 2010 and Choose File > Open Project
+- Open Visual Studio 2010 and Choose File > Open Project.
 - Browse to the latest source code that you have downloaded and open the .sln file.
 
 **Note:** This Add-on is Open source. The Scenario we have created and resolved the issue may differ from the end user. You can download the latest source code and update it according to your business needs.

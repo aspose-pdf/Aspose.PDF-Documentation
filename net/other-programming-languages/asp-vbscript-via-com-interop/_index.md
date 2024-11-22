@@ -22,7 +22,6 @@ This is a simple ASP application that shows you how to create a PDF file with sa
 {{% /alert %}}
 
 ```vb
-
 <%@ LANGUAGE = VBScript %>
 <% Option Explicit %>
 <html>

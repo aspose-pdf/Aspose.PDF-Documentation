@@ -90,7 +90,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 // Adding Field with limit
 FormEditor form = new FormEditor();
 
-form.BindPdf( dataDir + "input.pdf");
+form.BindPdf(dataDir + "input.pdf");
 form.SetFieldLimit("textbox1", 15);
 dataDir = dataDir + "SetFieldLimit_out.pdf";
 form.Save(dataDir);

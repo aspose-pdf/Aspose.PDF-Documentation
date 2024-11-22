@@ -108,7 +108,7 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 - **Artifact.Rotation**: Gets an artifact's rotation (in degrees, positive value indicates counter-clockwise rotation).
 - **Artifact.Opacity**: Gets an artifact's opacity. Possible values are in the range 0…1, where 1 is completely opaque.
 
-## Programming Samples: How To Add Watermark On PDF Files
+## How To Add Watermark On PDF Files
 
 The following code snippet shows how to get each watermark on the first page of a PDF file with C#.
 

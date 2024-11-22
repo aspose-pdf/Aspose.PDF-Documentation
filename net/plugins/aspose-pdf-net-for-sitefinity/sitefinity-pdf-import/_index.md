@@ -67,21 +67,21 @@ Aspose .NET PDF Import for Sitefinity is open source and its source code is avai
 
 You can get the latest source code from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity)
-- [Sourceforge](https://sourceforge.net/p/asposesitefinity/code/ci/master/tree/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/src)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity).
+- [Sourceforge](https://sourceforge.net/p/asposesitefinity/code/ci/master/tree/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/src).
 
 #### How to configure the source code
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010 or higher
+- Visual Studio 2010 or higher.
 
 Please follow these simple steps to get started
 
 1. Download/Clone the source code.
-1. Open Visual Studio 2010 and Choose `File > Open Project`
-1. Browse to the latest source code that you have downloaded and open **Aspose.SiteFinity.PDFImport.sln**
+1. Open Visual Studio 2010 and Choose `File > Open Project`.
+1. Browse to the latest source code that you have downloaded and open **Aspose.SiteFinity.PDFImport.sln**.
 
 ## Installation and Usage
 
@@ -91,9 +91,9 @@ Please follow these simple steps to get started
 
 You can download Aspose .NET Pdf Import for Sitefinity from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity/releases)
-- [Sourceforge](https://sourceforge.net/projects/asposesitefinity/files/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/downloads)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity/releases).
+- [Sourceforge](https://sourceforge.net/projects/asposesitefinity/files/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/downloads).
 
 #### Installing
 
@@ -111,9 +111,9 @@ Please extract the downloaded ZIP file. You will need FTP or direct access to th
 1. Log into your Sitefinity CMS with an **Administrator** account. The login page can be reached by <http://www.mywebsite.com/sitefinity>
 1. Click **Administration** and then **Settings**.
    The Basic Settings page appears.
-1. **Click the Advanced link.**
+1. **Click the Advanced link.**.
    The Settings page appears.
-1. In the left pane, click **Toolboxes** followed by **Toolboxes**, then **PageControls**, **Sections** and **ContentToolboxSection**, then **Tools.**
+1. In the left pane, click **Toolboxes** followed by **Toolboxes**, then **PageControls**, **Sections** and **ContentToolboxSection**, then **Tools.**.
 1. Click **Create new**.
    The widget registration form appears.
 1. Fill the form fields as follows:
@@ -125,7 +125,7 @@ Please extract the downloaded ZIP file. You will need FTP or direct access to th
       Import PDF Documents to Sitefinity using Aspose .NET PDF Import for Sitefinity
    1. You may leave all other fields as they are.
 1. When finished, click **Save changes**.
-   The widget is registered in the toolbox and can be used in Sitefinity. The settings are also shown in the picture below
+   The widget is registered in the toolbox and can be used in Sitefinity. The settings are also shown in the picture below.
 
 ### Using and Video Demo
 

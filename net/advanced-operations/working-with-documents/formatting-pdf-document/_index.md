@@ -2,7 +2,7 @@
 title: Formatting PDF Document using C#
 linktitle: Formatting PDF Document
 type: docs
-weight: 11
+weight: 20
 url: /net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks.
 lastmod: "2022-02-17"
@@ -153,16 +153,16 @@ This topic explains how to set the properties of the document window, viewer app
 
 Properties available are:
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- CenterWindow.
+- Direction.
+- DisplayDocTitle.
+- FitWindow.
+- HideMenuBar.
+- HideToolBar.
+- HideWindowUI.
+- NonFullScreenPageMode.
+- PageLayout.
+- PageMode.
 
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
@@ -210,9 +210,8 @@ pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
 // I.e. show thumbnails, full-screen, show attachment panel
 pdfDocument.PageMode = PageMode.UseThumbs;
 
-dataDir = dataDir + "SetDocumentWindow_out.pdf";
 // Save updated PDF file
-pdfDocument.Save(dataDir);
+pdfDocument.Save(dataDir + "SetDocumentWindow_out.pdf");
 ```
 
 ### Embedding Fonts in an existing PDF file
@@ -287,9 +286,8 @@ segment.TextState = ts;
 fragment.Segments.Add(segment);
 page.Paragraphs.Add(fragment);
 
-dataDir = dataDir + "EmbedFontWhileDocCreation_out.pdf";
 // Save PDF Document
-doc.Save(dataDir);
+doc.Save(dataDir + "EmbedFontWhileDocCreation_out.pdf");
 ```
 
 ### Set Default Font Name while Saving PDF
@@ -304,12 +302,14 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 string documentName = dataDir + "input.pdf";
 string newName = "Arial";
 using (System.IO.FileStream fs = new System.IO.FileStream(documentName, System.IO.FileMode.Open))
-using (Document document = new Document(fs))
 {
-    PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-    // Specify Default Font Name
-    pdfSaveOptions.DefaultFontName = newName;
-    document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
+    using (Document document = new Document(fs))
+    {
+        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
+        // Specify Default Font Name
+        pdfSaveOptions.DefaultFontName = newName;
+        document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
+    }
 }
 ```
 
@@ -392,9 +392,9 @@ Document doc = new Document(dataDir + "SetZoomFactor.pdf");
 
 GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0, 0, .5));
 doc.OpenAction = action;
-dataDir = dataDir + "Zoomed_pdf_out.pdf";
+
 // Save the document
-doc.Save(dataDir);
+doc.Save(dataDir + "Zoomed_pdf_out.pdf");
 ```
 
 #### Get Zoom Factor
@@ -428,7 +428,7 @@ using (Document doc = new Document())
 {
     doc.Pages.Add();
     doc.Duplex = PrintDuplex.DuplexFlipLongEdge;
-    doc.Save(dataDir + "35297_out.pdf", SaveFormat.Pdf);
+    doc.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", SaveFormat.Pdf);
 }
 ```
 
@@ -438,10 +438,10 @@ using (Document doc = new Document())
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-string outputFile = dataDir + "input.pdf";
+string inputFile = dataDir + "input.pdf";
 using (PdfContentEditor ed = new PdfContentEditor())
 {
-    ed.BindPdf(outputFile);
+    ed.BindPdf(inputFile);
     if ((ed.GetViewerPreference() & ViewerPreference.DuplexFlipShortEdge) > 0)
     {
         Console.WriteLine("The file has duplex flip short edge");

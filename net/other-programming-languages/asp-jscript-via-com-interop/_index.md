@@ -12,8 +12,6 @@ This is a simple ASP application that shows you how to add simple text string to
 
 Example:
 
-{{% alert color="primary" %}}
-
 ```javascript
 <%@ LANGUAGE = JScript %>
 <html>
@@ -49,5 +47,3 @@ pdf.Save("d:\\pdftest\\HelloWorldinASP.pdf");
     </body>
 </html>
 ```
-
-{{% /alert %}}

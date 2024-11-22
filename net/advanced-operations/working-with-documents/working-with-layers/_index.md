@@ -2,7 +2,7 @@
 title: Work with PDF layers using C#
 linktitle: Work with PDF layers
 type: docs
-weight: 80
+weight: 50
 url: /net/work-with-pdf-layers/
 description: The next task explains how to lock a PDF layer, extract PDF layer elements, flatten a layered PDF, and merge all layers inside PDF into one.
 lastmod: "2024-09-17"

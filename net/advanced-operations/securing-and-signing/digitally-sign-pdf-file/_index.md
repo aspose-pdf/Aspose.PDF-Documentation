@@ -242,12 +242,12 @@ Signing PDF documents using ECDSA (Elliptic Curve Digital Signature Algorithm) i
 Aspose.Pdf supports ECDSA-based digital signature creation and verification.
 The following elliptic curves are supported for digital signature creation and verification:
 
-- P-256(secp256r1)
-- P-384(secp384r1)
-- P-521(secp521r1)
-- brainpoolP256r1
-- brainpoolP384r1
-- brainpoolP512r1
+- P-256(secp256r1).
+- P-384(secp384r1).
+- P-521(secp521r1).
+- brainpoolP256r1.
+- brainpoolP384r1.
+- brainpoolP512r1.
 
 The SHA-256 digest algorithm is used for the signature.
 

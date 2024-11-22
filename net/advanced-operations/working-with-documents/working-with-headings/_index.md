@@ -2,6 +2,7 @@
 title: Working with Headings in PDF
 type: docs
 url: /net/working-with-headings/
+weight: 70
 description: Create numbering in heading your PDF document with C#. Aspose.PDF for .NET offers different kinds of numbering styles.
 lastmod: "2022-02-17"
 sitemap:
@@ -122,9 +123,6 @@ floatBox.Margin = pdfPage.PageInfo.Margin;
 
 pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
-
 Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
 heading.IsInList = true;
 heading.StartNumber = 1;
@@ -151,8 +149,8 @@ heading3.Style = NumberingStyle.LettersLowercase;
 heading3.IsAutoSequence = true;
 
 floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+
+pdfDoc.Save(dataDir + "ApplyNumberStyle_out.pdf");
 ```
 
 <script type="application/ld+json">
