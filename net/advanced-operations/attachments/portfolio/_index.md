@@ -101,8 +101,8 @@ Document doc = new Document();
 doc.Collection = new Collection();
 
 // Get Files to add to Portfolio
-FileSpecification excel = new FileSpecification( dataDir + "HelloWorld.xlsx");
-FileSpecification word = new FileSpecification( dataDir + "HelloWorld.docx");
+FileSpecification excel = new FileSpecification(dataDir + "HelloWorld.xlsx");
+FileSpecification word = new FileSpecification(dataDir + "HelloWorld.docx");
 FileSpecification image = new FileSpecification(dataDir + "aspose-logo.jpg");
 
 // Provide description of the files

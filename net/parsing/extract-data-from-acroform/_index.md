@@ -1,6 +1,6 @@
 ---
-title:  Extract data from AcroForm using C#
-linktitle:  Extract data from AcroForm
+title:  Extract Data from AcroForm using C#
+linktitle:  Extract Data from AcroForm
 type: docs
 weight: 50
 url: /net/extract-data-from-acroform/
@@ -67,7 +67,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
 form.BindPdf(dataDir + "input.pdf");
 // Create xml file.
-System.IO.FileStream xmlOutputStream = new FileStream( dataDir + "input.xml", FileMode.Create);
+System.IO.FileStream xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create);
 // Export data
 form.ExportXml(xmlOutputStream);
 // Close file stream

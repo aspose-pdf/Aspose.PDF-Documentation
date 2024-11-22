@@ -2,7 +2,7 @@
 title: Formatting PDF Document using C#
 linktitle: Formatting PDF Document
 type: docs
-weight: 11
+weight: 20
 url: /net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks.
 lastmod: "2022-02-17"
@@ -153,16 +153,16 @@ This topic explains how to set the properties of the document window, viewer app
 
 Properties available are:
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- CenterWindow.
+- Direction.
+- DisplayDocTitle.
+- FitWindow.
+- HideMenuBar.
+- HideToolBar.
+- HideWindowUI.
+- NonFullScreenPageMode.
+- PageLayout.
+- PageMode.
 
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 

@@ -135,7 +135,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string fontFile = "";
 
 // Load input PDF file
-Document doc = new Document( dataDir + "input.pdf");
+Document doc = new Document(dataDir + "input.pdf");
 // Create text builder object for first page of document
 TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
 // Create text fragment with sample string

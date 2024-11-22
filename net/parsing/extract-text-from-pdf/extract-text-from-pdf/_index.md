@@ -1,6 +1,6 @@
 ---
-title: Extract text from PDF C#
-linktitle: Extract text from PDF
+title: Extract Text from PDF C#
+linktitle: Extract Text from PDF
 type: docs
 weight: 10
 url: /net/extract-text-from-all-pdf/
@@ -73,7 +73,7 @@ tw.Close();
 
 ## Extract Text from Pages using Text Device
 
-You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
+You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal.
 
 ### Extract text from all pages
 
@@ -93,7 +93,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document( dataDir + "input.pdf");
+Document pdfDocument = new Document(dataDir + "input.pdf");
 System.Text.StringBuilder builder = new System.Text.StringBuilder();
 // String to hold extracted text
 string extractedText = "";
@@ -223,7 +223,7 @@ textAbsorber.ExtractionOptions = new TextExtractionOptions(TextExtractionOptions
 textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
 pdfDocument.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
-System.IO.File.WriteAllText( dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
+System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
 ```
 
 {{% alert color="primary" %}}

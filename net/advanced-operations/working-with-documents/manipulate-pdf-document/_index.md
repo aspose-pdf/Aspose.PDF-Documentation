@@ -2,7 +2,7 @@
 title: Manipulate PDF Document in C#
 linktitle: Manipulate PDF Document
 type: docs
-weight: 20
+weight: 30
 url: /net/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and etc.
 keywords: "manipulate pdf c#"

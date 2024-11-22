@@ -70,7 +70,7 @@ NuGet is a free, open source developer-focused package management system for the
 - Open your .NET application in Visual Studio.
 - On the Tools menu, select **NuGet Package Manager** and then **Package Manager Console**.
 - Type the command `Install-Package Aspose.PDF` to install the latest full release, or type the command `Install-Package Aspose.PDF -prerelease` to install the latest release including hot fixes.
-- Press `Enter`
+- Press `Enter`.
 
 #### Update package using the Package Manager Console
 

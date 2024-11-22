@@ -444,11 +444,11 @@ In case of the plain text file, we can use the following technique:
 <a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong><em>Steps:</em> Convert TXT to PDF in C#</strong></a> |
 <a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Steps:</em> Convert Plain Text to PDF in C#</strong></a>
 
-1. Use a _TextReader_ to read the whole text;
-2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in Pages collection;
-3. Create a new object of [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/) and pass _TextReader_ object to its constructor;
-4. Add _TextFragment_ object as paragraph in _Paragraphs_ collection. If the amount of text is larger than the page, library algorithm automatically adds extra pages;
-5. Use **Save** method of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class;
+1. Use a _TextReader_ to read the whole text.
+2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in Pages collection.
+3. Create a new object of [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/) and pass _TextReader_ object to its constructor.
+4. Add _TextFragment_ object as paragraph in _Paragraphs_ collection. If the amount of text is larger than the page, library algorithm automatically adds extra pages.
+5. Use **Save** method of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -482,9 +482,9 @@ Follow these steps to convert pre-formatted text to PDF with C#:
 <a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong><em>Steps:</em> Convert Pre Text to PDF in C#</strong></a> |
 <a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Steps:</em> Convert Pre-formatted TXT to PDF in C#</strong></a>
 
-1. Read the whole text as an array of strings;
-2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) collection;
-3. Run loop through an array of strings and add each string as a paragraph in [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/) collection
+1. Read the whole text as an array of strings.
+2. Instantiate [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) object and add a new page in [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) collection.
+3. Run loop through an array of strings and add each string as a paragraph in [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/) collection.
 
 In this case, the library's algorithm also adds extra pages, but we can control this process ourselves.
 Following example shows how to convert pre-formatted text file (80x25) to PDF document with page size A4.
@@ -625,9 +625,9 @@ public static void ConvertPostscriptToPDFAvdanced()
 
 The XML format used to store structured data. There are several ways to convert <abbr title="Extensible Markup Language">XML</abbr> to PDF in Aspose.PDF:
 
-1. Transform any XML data to HTML using XSLT and convert HTML to PDF as described below
-1. Generate XML document using Aspose.PDF XSD Schema
-1. Use XML document based on XSL-FO standard
+1. Transform any XML data to HTML using XSLT and convert HTML to PDF as described below.
+1. Generate XML document using Aspose.PDF XSD Schema.
+1. Use XML document based on XSL-FO standard.
 
 {{% alert color="success" %}}
 **Try to convert XML to PDF online**

@@ -236,7 +236,7 @@ Aspose.Pdf.Facades.PdfAnnotationEditor editor = new Aspose.Pdf.Facades.PdfAnnota
 // Redact certain page region
 editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
 editor.BindPdf(dataDir + "input.pdf");
-editor.Save( dataDir + "FacadesApproach_out.pdf");
+editor.Save(dataDir + "FacadesApproach_out.pdf");
 ```
 
 <script type="application/ld+json">

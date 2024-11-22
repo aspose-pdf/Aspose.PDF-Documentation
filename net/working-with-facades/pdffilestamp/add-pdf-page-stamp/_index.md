@@ -117,11 +117,11 @@ public static void AddPageNumberInPdfFile()
 
 The PdfFileStamp class offers the feature to add Page Number information as stamp object inside PDF document. Prior to this release, the class only supported 1,2,3,4 as page numbering style. However, there has been a requirement from some customers to use custom numbering style when placing page number stamp inside PDF document. In order to accomplish this requirement, [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) property has been introduced, which accepts the values from [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) enumeration. Specified below are values offered in this enumeration.
 
-- LettersLowercase
-- LettersUppercase
-- NumeralsArabic
-- NumeralsRomanLowercase
-- NumeralsRomanUppercase
+- LettersLowercase.
+- LettersUppercase.
+- NumeralsArabic.
+- NumeralsRomanLowercase.
+- NumeralsRomanUppercase.
 
 ```csharp
 public static void AddCustomPageNumberInPdfFile()

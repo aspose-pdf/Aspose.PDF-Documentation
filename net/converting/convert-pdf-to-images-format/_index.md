@@ -219,11 +219,11 @@ The following steps and code snippet in C# shows this possibility
 
 1. Load the PDF file using **Document** class.
 2. Create an instance of subclass of **ImageDevice** i.e.
-   * **BmpDevice** (to convert PDF to BMP)
-   * **EmfDevice** (to convert PDF to Emf)
-   * **JpegDevice** (to convert PDF to JPG)
-   * **PngDevice** (to convert PDF to PNG)
-   * **GifDevice** (to convert PDF to GIF)
+   * **BmpDevice** (to convert PDF to BMP).
+   * **EmfDevice** (to convert PDF to Emf).
+   * **JpegDevice** (to convert PDF to JPG).
+   * **PngDevice** (to convert PDF to PNG).
+   * **GifDevice** (to convert PDF to GIF).
 3. Call the **ImageDevice.Process()** method to perform PDF to Image conversion.
 
 ```csharp

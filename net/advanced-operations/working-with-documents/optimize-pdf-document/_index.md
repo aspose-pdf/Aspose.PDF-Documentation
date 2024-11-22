@@ -2,7 +2,7 @@
 title: Optimize, Compress or Reduce PDF Size in C#
 linktitle: Optimize PDF
 type: docs
-weight: 30
+weight: 40
 url: /net/optimize-pdf/
 keywords: "optimize pdf c#"
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.

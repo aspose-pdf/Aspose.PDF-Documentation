@@ -2,7 +2,7 @@
 title: Overview of Aspose.PDF.Drawing for .NET
 linktitle: PDF.Drawing version
 type: docs
-weight: 130
+weight: 120
 url: /net/drawing/
 lastmod: "2023-12-21"
 description: Overview of key features and advantages of Aspose.PDF.Drawing for .NET library.
@@ -51,21 +51,21 @@ Aspose.Drawing presents several advantages over the System.Drawing.Common librar
 
 The Aspose.PDF.Drawing for .NET supports a wide variety of functions, such as:
 
-- document compression;
-- table creation and manipulation;
-- support for graph objects;
-- extensive hyperlink functionality;
-- extended security controls;
-- custom font handling;
-- integration with data sources;
-- add or remove bookmarks;
-- create a table of contents;
-- add, update, delete attachments and annotations;
-- import or export PDF form data;
-- add, replace or remove text and images;
-- split, concatenate, extract or inset pages;
-- transform pages to images;
-- print PDF documents and much more.
+- Document compression.
+- Table creation and manipulation.
+- Support for graph objects.
+- Extensive hyperlink functionality.
+- Extended security controls.
+- Custom font handling.
+- Integration with data sources.
+- Add or remove bookmarks.
+- Create a table of contents.
+- Add, update, delete attachments and annotations.
+- Import or export PDF form data.
+- Add, replace or remove text and images.
+- Split, concatenate, extract or inset pages.
+- Transform pages to images.
+- Print PDF documents and much more.
 
 For printing PDF documents, System.Drawing.Common is used, so it will only work on the Windows platform.
 

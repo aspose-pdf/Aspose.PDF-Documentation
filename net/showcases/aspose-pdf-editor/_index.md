@@ -74,8 +74,6 @@ We, at Aspose, make sure to provide best possible support to our customers / use
 
 Besides editing existing PDF documents, Html5 PDF Editor also supports creating new PDF files from scratch which you can do by using Create New File option from the menu bar. Using this feature, you may create a blank PDF in editor, add some text/images to it and save it in any desired format. In our next section, we will discuss the technical details behind this feature.
 
-#### How it works?
-
 **HTML - "Create New File" menu item is clicked on the page**
 
 When you click "Create New File" menu item, onNewFileClicked method is called in Editor.js file.
@@ -101,8 +99,6 @@ After file gets converted to image on server side, the control is returned back 
 
 HTML5 PDF Editor supports exporting PDF file to different file formats which you can do by using Export File option from the menu bar. Using this feature, you can export the PDF file to your desired format. In our next section, we will discuss the technical details behind this feature.
 
-#### How it works?
-
 **HTML - "Export File" menu item is clicked on the page.**
 
 When you click "Export File" menu item, you can choose the export format from the list. After selecting the export format, "ExportFile" method is called in Editor.js file.
@@ -122,8 +118,6 @@ After the file is generated on the server, the control is returned back to Expor
 ### Appending or Merging PDF Files
 
 Html5 PDF Editor supports appending or merging of PDF files which you can do by using Append File option from the menu bar. Using this feature, you can append the PDF file to your input file. In our next section, we will discuss the technical details behind this feature.
-
-#### How it works?
 
 **HTML - "Append File" menu item is clicked on the page.**
 
@@ -145,8 +139,6 @@ After the file is generated on the server, the control is returned back to "file
 
 HTML5 PDF Editor supports uploading PDF file from local machine using Open From Computer option from the menu bar. Using this feature, you can open an existing PDF file and perform editing on your PDF file. In our next section, we will discuss the technical details behind this feature.
 
-#### How it works?
-
 **HTML - "Open From Computer" menu item is clicked on the page.**
 
 When you click "Open From Computer" menu item, you can upload the input file using file upload dialog. After the file gets uploaded, "fileSelected" method is called in Editor.js file.
@@ -167,8 +159,6 @@ After the file is generated on the server, the control is returned back to "file
 
 Using Html5 PDF Editor, you can add new pages in PDF files using Add Page option from the menu bar. Using this feature, you may add a blank page to your PDF file. In our next section, we will discuss the technical details behind this feature.
 
-#### How it works?
-
 **HTML - "Add Page" menu item is clicked on the page**
 
 When you click "Add Page" menu item, "AddPage" method is called in Editor.js file.
@@ -184,8 +174,6 @@ See Canvas.aspx.cs tab below with source code of AddPage_Click method. It adds a
 ### Deleting Page from PDF File
 
 Using Html5 PDF Editor, you can delete a page from PDF files using Delete Page option from the menu bar. In our next section, we will discuss the technical details behind this feature.
-
-#### How it works?
 
 **HTML - "Delete Page" menu item is clicked on the page**
 
@@ -206,8 +194,6 @@ After deleting the page from PDF file, the control is then returned back to Dele
 ### Move Pages in PDF File
 
 Using Html5 PDF Editor, you can move pages in PDF files using Move Page option from the menu bar. Once you press the Move Page menu item, you are presented with an input dialog to specify the selected page's new location. In our next section, we will discuss the technical details behind this feature.
-
-#### How it works?
 
 **HTML - "Move Page" menu item is clicked on the page**
 
@@ -231,8 +217,6 @@ Using Html5 PDF Editor, you can insert text in PDF files using Text Mode option 
 
 In our next section, we will discuss the technical details behind this feature.
 
-#### How it works?
-
 **HTML - "Text Mode" menu item is selected on the page**
 
 When you select "Text Mode" menu item and click your desired location on the editor to insert text in PDF file, input dialog is shown to get the text you need to insert on the page. After providing the text and pressing "OK" button, "saveTextFromArea" method is called in Editor.js file.
@@ -248,8 +232,6 @@ As mentioned above, the text will actually get inserted into our source PDF file
 ### Highlight Text in PDF File
 
 Using Html5 PDF Editor, you can highlight text in PDF files using Highlight Mode option from the menu bar. Once you select the Highlight Mode menu item, you can highlight any text and area using the rectangular highlighting tool. In our next section, we will discuss the technical details behind this feature.
-
-#### How it works?
 
 **HTML - "Highlight Mode" menu item is selected on the page**
 
@@ -269,8 +251,6 @@ Using Html5 PDF Editor, you can search text in PDF files using Search Text optio
 
 On providing the text and pressing search, all the instances of the word searched will get highlighted as shown below:
 
-#### How it works?
-
 **HTML - "Search Text" menu item is clicked on the page**
 
 When you click "Search Text" menu item, you are presented with an input dialog to enter the text you want to search. After entering the text and pressing search button, "Move" method is called which checks whether the move page operation is performed or search operation is performed and then it calls performSearch method in Editor.js file.
@@ -287,8 +267,6 @@ See _Canvas.aspx.cs_ tab below. Using the input text passed from performSearch m
 
 Using Html5 PDF Editor, you can replace the existing text in PDF files using Replace Text option from the menu bar. Once you click the Replace Text menu item, you will be presented with a dialog box to input the text to be searched and replaced with.
 
-#### How it works?
-
 **HTML - "Replace Text" menu item is clicked on the page**
 
 When you click "Replace Text" menu item, you are presented with an input dialog to enter the text to search and replace. After entering the text and pressing Replace button, "ReplaceText" method is called in Editor.js file.
@@ -304,8 +282,6 @@ See Canvas.aspx.cs tab below. ReplaceText method uses Aspose.PDF.Text.TextFragme
 ### Loading PDF File with Form Fields
 
 Using Html5 PDF Editor, you can load and work with a PDF file containing form fields. Once the file with form fields is loaded in the editor, all the form fields are loaded for editing. In our next section, we will discuss the technical details behind this feature.
-
-#### How it works?
 
 **HTML - "Open From Computer" menu item is clicked on the page.**
 
@@ -326,8 +302,6 @@ See Editor.js tab below, manageFields method in Editor.js is used to generate al
 ### Highlighting Required Form Fields
 
 Using Html5 PDF Editor, you can highlight the required form fields in the editor. Once the file with form fields is loaded in the editor, all the required form fields are highlighted for the users to assist in editing. In our next section, we will discuss the technical details behind this feature.
-
-#### How it works?
 
 **HTML - "Open From Computer" menu item is clicked on the page.**
 
