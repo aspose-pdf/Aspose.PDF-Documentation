@@ -404,7 +404,7 @@ public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo
         case DocSaveOptions.ProgressEventType.TotalProgress:
             Console.WriteLine(String.Format("{0}  - Conversion progress : {1}% .", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString()));
             break;
-        case DocSaveOptions.ProgressEventType.SourcePageAnalized:
+        case DocSaveOptions.ProgressEventType.SourcePageAnalised:
             Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
         case DocSaveOptions.ProgressEventType.ResultPageCreated:
