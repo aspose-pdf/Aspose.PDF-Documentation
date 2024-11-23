@@ -271,7 +271,7 @@ We use the property IsEmbedded of Font class to embed the font information into 
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Instantiate Pdf object by calling its empty constructor
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+Document doc = new Document();
 
 // Create a section in the Pdf object
 Aspose.Pdf.Page page = doc.Pages.Add();

@@ -1910,7 +1910,7 @@ public static void Example_XSLFO_to_PDF()
         argsList.AddParam("isBoldName", "", "yes");
         //---------------------
 
-        var document = new Aspose.Pdf.Document(TransformXml(XmlContent, XsltContent, argsList), options);
+        var document = new Document(TransformXml(XmlContent, XsltContent, argsList), options);
         document.Save(_dataDir + "data_xml.pdf");
     }
 

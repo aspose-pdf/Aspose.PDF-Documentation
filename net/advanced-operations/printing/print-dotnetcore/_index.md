@@ -107,7 +107,7 @@ class Program
         // Create print server and print queue.
         PrintQueue defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
-        Aspose.Pdf.Document document = new Document(pdfFileName);
+        Document document = new Document(pdfFileName);
         var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
         document.Save(xpsFileName,SaveFormat.Xps);
 

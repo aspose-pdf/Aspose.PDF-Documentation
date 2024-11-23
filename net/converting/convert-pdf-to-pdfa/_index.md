@@ -138,7 +138,7 @@ PDF/A_3a is the format that provides the feature to attach any file format as an
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Instantiate Document instance to load existing file
-Aspose.Pdf.Document doc = new Document(dataDir + "input.pdf");
+Document doc = new Document(dataDir + "input.pdf");
 // Setup new file to be added as attachment
 FileSpecification fileSpecification = new FileSpecification(dataDir + "aspose-logo.jpg", "Large Image file");
 // Add attachment to document's attachment collection

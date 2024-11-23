@@ -124,8 +124,8 @@ The following code snippet shows you how to move a bunch of pages from one PDF d
 ```csharp
 var srcFileName = "<enter file name>";
 var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
-var dstDocument = new Aspose.Pdf.Document();
+var srcDocument = new Document(srcFileName);
+var dstDocument = new Document();
 var pages = new []{ 1, 3 };
 foreach (var pageIndex in pages)
 {
@@ -149,7 +149,7 @@ srcDocument.Save(srcFileName);
 ```csharp
 var srcFileName = "<enter file name>";
 var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
+var srcDocument = new Document(srcFileName);
 
 var page = srcDocument.Pages[2];
 srcDocument.Pages.Add(page);

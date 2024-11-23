@@ -84,7 +84,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 public static void Extract_Table()
 {
     // Load source PDF document
-    Aspose.Pdf.Document document = new Aspose.Pdf.Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");           
+    Document document = new Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");           
     foreach (var page in document.Pages)
     {
         Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();

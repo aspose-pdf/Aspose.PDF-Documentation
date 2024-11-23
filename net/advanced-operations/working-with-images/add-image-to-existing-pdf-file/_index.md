@@ -199,7 +199,7 @@ public static void AddingImageAndPreserveAspectRatioIntoPDF()
     width = bitmap.Width;
     height = bitmap.Height;
 
-    var document = new Aspose.Pdf.Document();
+    var document = new Document();
 
     var page = document.Pages.Add();
 

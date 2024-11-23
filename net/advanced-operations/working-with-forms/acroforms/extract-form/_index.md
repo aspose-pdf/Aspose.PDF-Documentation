@@ -156,7 +156,7 @@ The following C# code snippet shows how to get form fields in a specific rectang
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open pdf file
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf");
+Document doc = new Document(dataDir + "GetFieldsFromRegion.pdf");
 
 // Create rectangle object to get fields in that area
 Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);

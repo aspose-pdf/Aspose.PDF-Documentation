@@ -23,7 +23,7 @@ There are several ways to open a document. The easiest is to specify a file name
 public static void OpenDocument()
 {
     var fileName = @"C:\tmp\tourguidev2_gb_tags.pdf";
-    using (var document = new Aspose.Pdf.Document(fileName))
+    using (var document = new Document(fileName))
     {
         Console.WriteLine($"Pages {document.Pages.Count}");
     }
@@ -46,7 +46,7 @@ public static void OpenDocumentStream()
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    using (var document = new Aspose.Pdf.Document(stream))
+    using (var document = new Document(stream))
     {
         Console.WriteLine($"Pages {document.Pages.Count}");
     }
@@ -62,7 +62,7 @@ public static void OpenDocumentWithPassword()
     const string password = "Aspose2020";
     try
     {
-        using (var document = new Aspose.Pdf.Document(fileName, password))
+        using (var document = new Document(fileName, password))
         {
             Console.WriteLine($"Pages {document.Pages.Count}");
         }

@@ -229,7 +229,7 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open source document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "AddingDifferentHeaders.pdf");
+Document doc = new Document(dataDir+ "AddingDifferentHeaders.pdf");
 
 // Create three stamps
 Aspose.Pdf.TextStamp stamp1 = new Aspose.Pdf.TextStamp("Header 1");

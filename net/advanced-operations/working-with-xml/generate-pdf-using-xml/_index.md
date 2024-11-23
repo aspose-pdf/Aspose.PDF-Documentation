@@ -349,7 +349,7 @@ private static void ExampleXSLTtoPDF()
     // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var document = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
+    var document = new Document(TransformXmltoHtml(XmlContent, XsltContent), options);
     document.Save(_dataDir + "data_xml.pdf");
 }
 
@@ -469,7 +469,7 @@ public static void Example_XSLFO_to_PDF()
     // Instantiate XslFoLoadOption object
     var options = new Pdf.XslFoLoadOptions("employees.xslt");
     // Create Document object
-    var document = new Aspose.Pdf.Document("employees.xml", options);
+    var document = new Document("employees.xml", options);
     document.Save(_dataDir + "data_xml.pdf");
 }
 ```
@@ -598,7 +598,7 @@ public static void Example_XSLFO_to_PDF_Param_21_6()
     var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
 
     var options = new Aspose.Pdf.XslFoLoadOptions();
-    var document = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
+    var document = new Document(TransformXSL(XmlContent, XsltContent), options);
     document.Save(_dataDir + "data_xml.pdf");
 }
 
@@ -652,7 +652,7 @@ To generate PDF document we will use [BindXml](https://reference.aspose.com/pdf/
 private static void Example_XML_to_PDF()
 {
     var _dataDir = @"C:\tmp\";
-    var document = new Aspose.Pdf.Document();
+    var document = new Document();
     document.BindXml(_dataDir + "aspose_pdf_demo.xml");
     document.Save(_dataDir + "data_xml.pdf");
 }

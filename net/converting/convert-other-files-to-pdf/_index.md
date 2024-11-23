@@ -575,7 +575,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 Aspose.Pdf.LoadOptions options = new XpsLoadOptions();
 
 // Create document object
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options);
+Document document = new Document(dataDir + "XPSToPDF.xps", options);
 
 // Save the resultant PDF document
 document.Save(dataDir + "XPSToPDF_out.pdf");
@@ -652,7 +652,7 @@ public static void Convert_XSLFO_to_PDF()
     // Set error handling strategy
     options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
     // Create Document object
-    var document = new Aspose.Pdf.Document(".\\samples\\employees.xml", options);
+    var document = new Document(".\\samples\\employees.xml", options);
     document.Save(_dataDir + "data_xml.pdf");
 }
 ```
@@ -678,7 +678,7 @@ public static void ConvertTeXtoPDF()
     // Instantiate Latex Load option object
     TeXLoadOptions options = new TeXLoadOptions();
     // Create Document object
-    Aspose.Pdf.Document document= new Aspose.Pdf.Document(_dataDir + "samplefile.tex", options);
+    Document document= new Document(_dataDir + "samplefile.tex", options);
     // Save the output in PDF file
     document.Save(_dataDir + "TeXToPDF_out.pdf");
 }

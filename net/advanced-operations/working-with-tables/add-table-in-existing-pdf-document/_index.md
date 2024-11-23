@@ -109,7 +109,7 @@ The following code snippets show how to add text in an existing PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load source PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "AddTable.pdf");
+Document doc = new Document(dataDir+ "AddTable.pdf");
 // Initializes a new instance of the Table
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 // Set the table border color as LightGray
@@ -143,7 +143,7 @@ We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the ta
 public static void AddTable_RowColSpan()
 {
     // Load source PDF document
-    Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    Document document = new Document();
     document.Pages.Add();
 
     // Initializes a new instance of the Table

@@ -170,7 +170,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 ```csharp
 public static void AddRichMediaAnnotation()
 {
-    Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+    Document doc = new Document();
     var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
     Page page = doc.Pages.Add();
     //give name to video data. This data will be embedded into document with this name and referenced from flash variables by this name.

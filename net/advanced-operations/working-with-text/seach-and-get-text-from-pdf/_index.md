@@ -367,7 +367,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 int resolution = 150;
 
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 using (MemoryStream ms = new MemoryStream())
 {
@@ -449,7 +449,7 @@ Sometimes we want to add hidden text in a PDF document and then search hidden te
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 //Create document with hidden text
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+Document doc = new Document();
 Page page = doc.Pages.Add();
 TextFragment frag1 = new TextFragment("This is common text.");
 TextFragment frag2 = new TextFragment("This is invisible text.");
@@ -463,7 +463,7 @@ doc.Save(dataDir + "39400_out.pdf");
 doc.Dispose();
 
 //Search text in the document
-doc = new Aspose.Pdf.Document(dataDir + "39400_out.pdf");
+doc = new Document(dataDir + "39400_out.pdf");
 TextFragmentAbsorber absorber = new TextFragmentAbsorber();
 absorber.Visit(doc.Pages[1]);
 
@@ -488,7 +488,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
 
 // Open document
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf");
+Document document = new Document(dataDir + "SearchTextRegex.pdf");
 
 // Get a particular page
 Page page = document.Pages[1];

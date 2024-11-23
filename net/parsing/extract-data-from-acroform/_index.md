@@ -22,7 +22,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 public static void ExtractFormFields()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
+    var document = new Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
     // Get values from all fields
     foreach (Field formField in document.Form)
     {
@@ -45,7 +45,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 public static void ExtractFormFieldsToJson()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
+    var document = new Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
     var formData = document.Form.Cast<Field>().Select(f => new { Name = f.PartialName, f.Value });
     string jsonString = JsonSerializer.Serialize(formData);
     Console.WriteLine(jsonString);

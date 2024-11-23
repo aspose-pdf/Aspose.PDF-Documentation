@@ -133,7 +133,7 @@ The following code snippet shows you the steps to extract files from PDF portfol
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
 // Load source PDF Portfolio
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
+Document document = new Document(dataDir + "PDFPortfolio.pdf");
 // Get collection of embedded files
 EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 // Iterate through individual file of Portfolio
@@ -163,7 +163,7 @@ In order to delete/remove files from PDF portfolio, try using the following code
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
 // Load source PDF Portfolio
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
+Document document = new Document(dataDir + "PDFPortfolio.pdf");
 document.Collection.Delete();
 document.Save(dataDir + "No_PortFolio_out.pdf");
 ```

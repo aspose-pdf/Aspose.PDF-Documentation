@@ -273,7 +273,7 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
+Document pdfApplicationDoc = new Document();
 Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers

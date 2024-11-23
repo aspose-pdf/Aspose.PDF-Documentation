@@ -14,7 +14,7 @@ draft: false
 public static void CopyInnerField()
 {
     var editor = new FormEditor();
-    var document = new Aspose.Pdf.Document(_dataDir + "Sample-Form-01.pdf");
+    var document = new Document(_dataDir + "Sample-Form-01.pdf");
     document.Pages.Add();
     editor.BindPdf(document);
     editor.CopyInnerField("Last Name", "Last Name 2", 2);
@@ -30,7 +30,7 @@ public static void CopyInnerField()
 public static void CopyOuterField()
 {
     var editor = new FormEditor();
-    var document = new Aspose.Pdf.Document();
+    var document = new Document();
     document.Pages.Add();
     editor.BindPdf(document);
     editor.CopyOuterField(_dataDir + "Sample-Form-01.pdf", "First Name", 1);

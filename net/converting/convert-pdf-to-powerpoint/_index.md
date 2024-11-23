@@ -50,7 +50,7 @@ In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document doc = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 // Save the output in PPTX format
@@ -74,7 +74,7 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document doc = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 // Save the output in PPTX format
@@ -91,7 +91,7 @@ Aspose.PDF for .NET lets you track the progress of PDF to PPTX conversion. The [
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document doc = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 

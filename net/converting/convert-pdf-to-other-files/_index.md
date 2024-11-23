@@ -67,7 +67,7 @@ The following code snippet shows the process of converting PDF files into the TE
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Create Document object
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf");
+Document doc = new Document(dataDir + "PDFToTeX.pdf");
 
 // Instantiate LaTex save option          
 LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();

@@ -192,7 +192,7 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 ```csharp
 string outFile = "TOC.pdf";
 
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+Document doc = new Document();
 Page tocPage = doc.Pages.Add();
 TocInfo tocInfo = new TocInfo();
 
@@ -349,7 +349,7 @@ In order to accomplish the above stated requirement, we can use *JavascriptActio
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Instantiate Document object
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+Document doc = new Document();
 // Add page to pages collection of PDF file
 doc.Pages.Add();
 // Add text fragment to paragraphs collection of page object

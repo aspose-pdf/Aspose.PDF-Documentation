@@ -26,7 +26,7 @@ public static void SaveDocument()
     var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
     var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
 
-    var document = new Aspose.Pdf.Document(originalFileName);
+    var document = new Document(originalFileName);
     // make some manipation, i.g add new empty page
     document.Pages.Add();
     document.Save(modifiedFileName);
@@ -43,7 +43,7 @@ public static void SaveDocumentStream()
     var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
     var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
 
-    var document = new Aspose.Pdf.Document(originalFileName);
+    var document = new Document(originalFileName);
     // make some manipation, i.g add new empty page
     document.Pages.Add();
     document.Save(System.IO.File.OpenWrite(modifiedFileName));
@@ -56,7 +56,7 @@ To save documents in Web applications, you can use the ways proposed above. In a
 
 ```csharp
 var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-var document = new Aspose.Pdf.Document(originalFileName);
+var document = new Document(originalFileName);
 // make some manipulation, i.g add a new empty page
 document.Pages.Add();
 document.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
@@ -76,7 +76,7 @@ In both cases, the `Save` method is used to store the documents, while the docum
 ```csharp
 public static void SaveDocumentAsPDFx()
 {
-    var document = new Aspose.Pdf.Document("..\\..\\..\\Samples\\SimpleResume.pdf");
+    var document = new Document("..\\..\\..\\Samples\\SimpleResume.pdf");
     document.Pages.Add();
     document.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
     document.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");

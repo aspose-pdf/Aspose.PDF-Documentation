@@ -168,7 +168,7 @@ ts.StrokingColor = Color.Gray;
 // Set text rendering mode
 ts.RenderingMode = TextRenderingMode.StrokeText;
 // Load an input PDF document
-Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Aspose.Pdf.Document(dataDir + "input.pdf"));
+Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Document(dataDir + "input.pdf"));
 
 Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
 stamp.BindLogo(new Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Facades.EncodingType.Winansi, true, 78));

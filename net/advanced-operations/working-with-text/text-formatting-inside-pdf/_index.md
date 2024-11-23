@@ -90,7 +90,7 @@ Please use the following code snippet to use the property:
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create new document object
-Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+Document document = new Document();
 Aspose.Pdf.Page page = document.Pages.Add();
 
 string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
@@ -217,7 +217,7 @@ Please use below code snippet.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+Document document = new Document();
 Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)document.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers
@@ -323,7 +323,7 @@ Aspose.PDF supports setting text alignment for contents inside a Floating Box el
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Aspose.Pdf.Document doc = new Document();
+Document doc = new Document();
 doc.Pages.Add();
 
 Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
