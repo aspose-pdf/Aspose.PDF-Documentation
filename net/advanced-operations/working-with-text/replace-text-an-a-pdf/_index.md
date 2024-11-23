@@ -273,8 +273,8 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document pdfApplicationDoc = new Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+Document document = new Document();
+Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)document.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers
 Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
@@ -300,7 +300,7 @@ TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
 // Add the TextParagraph using TextBuilder
 textBuilder.AppendParagraph(par);
 
-pdfApplicationDoc.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
+document.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
 ```
 
 ## Replaceable symbols in Header/Footer area
