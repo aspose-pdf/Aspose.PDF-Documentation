@@ -92,7 +92,7 @@ public static void SimplePrint()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(System.IO.Path.Combine(_dataDir, "input.pdf"));
+    viewer.BindPdf(_dataDir + "input.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size

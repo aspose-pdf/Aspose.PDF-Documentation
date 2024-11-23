@@ -312,7 +312,7 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 public static void ConvertPDFtoSVG()
 {
     // Load PDF document
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "input.pdf"));
+    Document document = new Document(_dataDir + "input.pdf");
     // Instantiate an object of SvgSaveOptions
     SvgSaveOptions saveOptions = new SvgSaveOptions
     {
@@ -322,6 +322,6 @@ public static void ConvertPDFtoSVG()
     };
             
     // Save the output in SVG files
-    document.Save(System.IO.Path.Combine(_dataDir, "PDFToSVG_out.svg"), saveOptions);
+    document.Save(_dataDir + "PDFToSVG_out.svg", saveOptions);
 }
 ```

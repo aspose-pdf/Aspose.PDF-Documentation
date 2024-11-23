@@ -77,8 +77,8 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 ```csharp
 public static void ConvertPDFtoWordDocAdvanced()
 {
-    var pdfFile = Path.Combine(_dataDir, "PDF-to-DOC.pdf");
-    var docFile = Path.Combine(_dataDir, "PDF-to-DOC.doc");
+    var pdfFile = _dataDir + "PDF-to-DOC.pdf";
+    var docFile = _dataDir + "PDF-to-DOC.doc";
     Document document = new Document(pdfFile);
     DocSaveOptions saveOptions = new DocSaveOptions
     {

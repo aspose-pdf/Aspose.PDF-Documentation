@@ -128,7 +128,7 @@ public static void ImportAnnotationXFDF()
     document.Pages.Add();
     AnnotationEditor.BindPdf(document);
 
-    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
+    var exportFileName = _dataDir + "exportannotations.xfdf";
     if (!File.Exists(exportFileName))
     {
         ExportAnnotationXFDF();
@@ -138,7 +138,7 @@ public static void ImportAnnotationXFDF()
     AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
 
     // Save output PDF
-    document.Save(Path.Combine(_dataDir, "AnnotationDemo2.pdf"));
+    document.Save(_dataDir + "AnnotationDemo2.pdf");
 }
 ```
 
@@ -158,7 +158,7 @@ public static void ImportAnnotationFromPDF()
     var document = new Document();
     document.Pages.Add();
     AnnotationEditor.BindPdf(document);
-    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
+    var exportFileName = _dataDir + "exportannotations.xfdf";
     if (!File.Exists(exportFileName))
     {
         ExportAnnotationXFDF();
@@ -166,10 +166,10 @@ public static void ImportAnnotationFromPDF()
 
     // Annotation Editor allows import annotations from several PDF documents,
     // but in this example, we use only one.
-    AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
+    AnnotationEditor.ImportAnnotations(new[] { _dataDir + "AnnotationDemo1.pdf" });
 
     // Save output PDF
-    document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
+    document.Save(_dataDir + "AnnotationDemo3.pdf");
 }
 ```
 

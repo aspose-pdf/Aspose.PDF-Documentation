@@ -575,9 +575,9 @@ The following snippet shows how to use this class with the sample files describe
 ```csharp
 public static void Example_XSLFO_to_PDF_Param_21_7()
 {
-  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
-  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
-  string outputFile = Path.Combine(_dataDir, "out.pdf");
+  string xmlInputFile = _dataDir + "employees.xml";
+  string xsltInputFile = _dataDir + "employees.xslt";
+  string outputFile = _dataDir + "out.pdf";
 
   XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
 

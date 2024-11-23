@@ -143,7 +143,7 @@ There is also an alternative, easier way to add a Image to a PDF file. You can u
 
 ```csharp
 string imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-string outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");
+string outputPdfFileName = _dataDir + "Example-add-image-mender.pdf";
 Document document = new Document();
 Page page = document.Pages.Add();
 page.SetPageSize(PageSize.A3.Height, PageSize.A3.Width);
@@ -157,7 +157,7 @@ Sometimes, it is necessary to crop an image before inserting it into a PDF. Use 
 
 ```csharp
 var imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-var outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");;
+var outputPdfFileName = _dataDir + "Example-add-image-mender.pdf";
 
 using (Document document = new Document())
 {

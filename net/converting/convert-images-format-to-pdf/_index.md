@@ -171,11 +171,11 @@ public static void ConvertDICOMtoPDF()
     Image image = new Image
     {
         FileType = ImageFileType.Dicom,
-        File = System.IO.Path.Combine(_dataDir,"bmode.dcm")
+        File = _dataDir + "bmode.dcm"
     };
     document.Pages[1].Paragraphs.Add(image);
     // Save output as PDF format
-    document.Save(System.IO.Path.Combine(_dataDir,"PDFWithDicomImage_out.pdf"));
+    document.Save(_dataDir + "PDFWithDicomImage_out.pdf");
 }
 ```
 

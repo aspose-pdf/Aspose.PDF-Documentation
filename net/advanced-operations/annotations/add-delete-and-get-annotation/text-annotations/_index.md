@@ -136,7 +136,7 @@ private const string _dataDir = "..\\..\\..\\..\\Samples\\";
 public static void AddLineAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "Appartments.pdf"));
+    Document document = new Document(_dataDir + "Appartments.pdf");
 
     // Create Line Annotation
     var lineAnnotation = new LineAnnotation(
@@ -154,7 +154,7 @@ public static void AddLineAnnotation()
 
     // Add annotation to the page
     document.Pages[1].Annotations.Add(lineAnnotation);
-    document.Save(_dataDir + "Appartments_mod.pdf"));
+    document.Save(_dataDir + "Appartments_mod.pdf");
 }
 ```
 

@@ -49,7 +49,7 @@ namespace Aspose.Pdf.Examples
             Page page = document.Pages.Add();
 
             // Add image
-            var imageFileName = System.IO.Path.Combine(_dataDir, "logo.png");
+            var imageFileName = _dataDir + "logo.png";
             page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
 
             // Add Header
@@ -106,7 +106,7 @@ namespace Aspose.Pdf.Examples
 
             page.Paragraphs.Add(table);
 
-            document.Save(System.IO.Path.Combine(_dataDir, "Complex.pdf"));
+            document.Save(_dataDir + "Complex.pdf");
         }
     }
 }

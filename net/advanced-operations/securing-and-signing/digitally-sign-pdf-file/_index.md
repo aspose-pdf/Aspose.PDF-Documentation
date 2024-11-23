@@ -111,8 +111,8 @@ The example below creates a PKCS7 non-detached signature with the SHA-1 digest a
 ```csharp
 public static void SignDocument()
 {
-    string inFile = System.IO.Path.Combine(_dataDir,"DigitallySign.pdf");
-    string outFile = System.IO.Path.Combine(_dataDir,"DigitallySign_out.pdf");
+    string inFile = _dataDir + "DigitallySign.pdf";
+    string outFile = _dataDir + "DigitallySign_out.pdf";
     using (Document document = new Document(inFile))
     {
         using (PdfFileSignature signature = new PdfFileSignature(document))
@@ -131,8 +131,8 @@ The example below creates a detached signature in PKCS7 format with the SHA-1 di
 ```csharp
 public static void SignDocument()
 {
-    string inFile = System.IO.Path.Combine(_dataDir,"DigitallySign.pdf");
-    string outFile = System.IO.Path.Combine(_dataDir,"DigitallySign_out.pdf");
+    string inFile = _dataDir + "DigitallySign.pdf";
+    string outFile = _dataDir + "DigitallySign_out.pdf";
     using (Document document = new Document(inFile))
     {
         using (PdfFileSignature signature = new PdfFileSignature(document))
@@ -184,7 +184,7 @@ In order to accomplish this requirement, the [TimestampSettings](https://referen
 ```csharp
 public static void SignWithTimeStampServer()
 {
-    using (Document document = new Document(System.IO.Path.Combine(_dataDir,"SimpleResume.pdf")))
+    using (Document document = new Document(_dataDir + "SimpleResume.pdf"))
     {
         using (PdfFileSignature signature = new PdfFileSignature(document))
         {
@@ -195,7 +195,7 @@ public static void SignWithTimeStampServer()
             // Create any of the three signature types
             signature.Sign(1, "Signature Reason", "Contact", "Location", true, rect, pkcs);
             // Save output PDF file
-            signature.Save(System.IO.Path.Combine(_dataDir, "DigitallySignWithTimeStamp_out.pdf"));
+            signature.Save(_dataDir + "DigitallySignWithTimeStamp_out.pdf");
         }
     }
 }
