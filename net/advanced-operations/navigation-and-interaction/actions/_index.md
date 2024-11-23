@@ -150,9 +150,9 @@ Document doc = new Document();
 // Add page to pages collection of PDF file
 Page page = doc.Pages.Add();
 // Create Text Fragment instance
-Aspose.Pdf.Text.TextFragment text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
+TextFragment text = new TextFragment("link page number test to page 7");
 // Create local hyperlink instance
-Aspose.Pdf.LocalHyperlink link = new Aspose.Pdf.LocalHyperlink();
+LocalHyperlink link = new LocalHyperlink();
 // Set target page for link instance
 link.TargetPageNumber = 7;
 // Set TextFragment hyperlink
@@ -199,10 +199,10 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 Document document = new Document(dataDir + "input.pdf");
 
 // Traverse through all the page of PDF
-foreach (Aspose.Pdf.Page page in document.Pages)
+foreach (Page page in document.Pages)
 {
     // Get the link annotations from particular page
-    AnnotationSelector selector = new AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+    AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
 
     page.Accept(selector);
     // Create list holding all the links
@@ -211,7 +211,7 @@ foreach (Aspose.Pdf.Page page in document.Pages)
     foreach (LinkAnnotation a in list)
     {
         // Print the destination URL
-        Console.WriteLine("\nDestination: " + (a.Action as Aspose.Pdf.Annotations.GoToURIAction).URI + "\n");
+        Console.WriteLine("\nDestination: " + (a.Action as GoToURIAction).URI + "\n");
     }
 }
 ```
@@ -225,50 +225,50 @@ Text and annotations/actions in a PDF file are represented by different entities
 To find the URL content, you need to work with both annotation and text. The [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL's bounds, while the Text object gives the URL contents. Please see the following code snippet.
 
 ```csharp
-    public static void Run()
+public static void Run()
+{
+    try
     {
-        try
+        // ExStart:GetHyperlinkText
+        // The path to the documents directory.
+        string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+        // Load the PDF file
+        Document document = new Document(dataDir + "input.pdf");
+        // Iterate through each page of PDF
+        foreach (Page page in document.Pages)
         {
-            // ExStart:GetHyperlinkText
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-            // Load the PDF file
-            Document document = new Document(dataDir + "input.pdf");
-            // Iterate through each page of PDF
-            foreach (Page page in document.Pages)
-            {
-                // Show link annotation
-                ShowLinkAnnotations(page);
-            }
-            // ExEnd:GetHyperlinkText
+            // Show link annotation
+            ShowLinkAnnotations(page);
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
+        // ExEnd:GetHyperlinkText
     }
-    
-    // ExStart:ShowLinkAnnotations
-    public static void ShowLinkAnnotations(Page page)
+    catch (Exception ex)
     {
-        foreach (Aspose.Pdf.Annotations.Annotation annot in page.Annotations)
-        {
-            if (annot is LinkAnnotation)
-            {
-                // Print the URL of each Link Annotation
-                Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
-                TextAbsorber absorber = new TextAbsorber();
-                absorber.TextSearchOptions.LimitToPageBounds = true;
-                absorber.TextSearchOptions.Rectangle = annot.Rect;
-                page.Accept(absorber);
-                string extractedText = absorber.Text;
-                // Print the text associated with hyperlink
-                Console.WriteLine(extractedText);
-            }
+        Console.WriteLine(ex.Message);
+    }
+}
 
+// ExStart:ShowLinkAnnotations
+public static void ShowLinkAnnotations(Page page)
+{
+    foreach (Annotation annot in page.Annotations)
+    {
+        if (annot is LinkAnnotation)
+        {
+            // Print the URL of each Link Annotation
+            Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
+            TextAbsorber absorber = new TextAbsorber();
+            absorber.TextSearchOptions.LimitToPageBounds = true;
+            absorber.TextSearchOptions.Rectangle = annot.Rect;
+            page.Accept(absorber);
+            string extractedText = absorber.Text;
+            // Print the text associated with hyperlink
+            Console.WriteLine(extractedText);
         }
+
     }
-    // ExEnd:ShowLinkAnnotations
+}
+// ExEnd:ShowLinkAnnotations
 ```
 
 ## Remove Document Open Action from a PDF File

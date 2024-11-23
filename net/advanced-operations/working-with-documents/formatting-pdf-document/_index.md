@@ -240,11 +240,11 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 Document document = new Document(dataDir + "input.pdf");
 // Set EmbedStandardFonts property of document
 document.EmbedStandardFonts = true;
-foreach (Aspose.Pdf.Page page in document.Pages)
+foreach (Page page in document.Pages)
 {
     if (page.Resources.Fonts != null)
     {
-        foreach (Aspose.Pdf.Text.Font pageFont in page.Resources.Fonts)
+        foreach (Text.Font pageFont in page.Resources.Fonts)
         {
             // Check if font is already embedded
             if (!pageFont.IsEmbedded)
@@ -274,12 +274,12 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 Document doc = new Document();
 
 // Create a section in the Pdf object
-Aspose.Pdf.Page page = doc.Pages.Add();
+Page page = doc.Pages.Add();
 
-Aspose.Pdf.Text.TextFragment fragment = new Aspose.Pdf.Text.TextFragment("");
+Text.TextFragment fragment = new Text.TextFragment("");
 
-Aspose.Pdf.Text.TextSegment segment = new Aspose.Pdf.Text.TextSegment(" This is a sample text using Custom font.");
-Aspose.Pdf.Text.TextState ts = new Aspose.Pdf.Text.TextState();
+Text.TextSegment segment = new Text.TextSegment(" This is a sample text using Custom font.");
+Text.TextState ts = new Text.TextState();
 ts.Font = FontRepository.FindFont("Arial");
 ts.Font.IsEmbedded = true;
 segment.TextState = ts;
@@ -322,8 +322,8 @@ In case you want to get all fonts from a PDF document, you can use FontUtilities
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 Document doc = new Document(dataDir + "input.pdf");
-Aspose.Pdf.Text.Font[] fonts = doc.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+Text.Font[] fonts = doc.FontUtilities.GetAllFonts();
+foreach (Text.Font font in fonts)
 {
     Console.WriteLine(font.FontName);
 }

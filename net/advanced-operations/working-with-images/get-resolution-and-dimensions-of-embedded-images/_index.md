@@ -132,12 +132,12 @@ graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
 foreach (Operator op in doc.Pages[1].Contents)
 {
     // Use GSave/GRestore operators to revert the transformations back to previously set
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+    Operators.GSave opSaveState = op as Operators.GSave;
+    Operators.GRestore opRestoreState = op as Operators.GRestore;
     // Instantiate ConcatenateMatrix object as it defines current transformation matrix.
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+    Operators.ConcatenateMatrix opCtm = op as Operators.ConcatenateMatrix;
     // Create Do operator which draws objects from resources. It draws Form objects and Image objects
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    Operators.Do opDo = op as Operators.Do;
 
     if (opSaveState != null)
     {

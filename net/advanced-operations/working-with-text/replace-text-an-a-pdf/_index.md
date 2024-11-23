@@ -274,7 +274,7 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 Document document = new Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)document.Pages.Add();
+Page applicationFirstPage = (Page)document.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers
 Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
@@ -486,7 +486,7 @@ Document document = new Document(dataDir + "RemoveAllText.pdf");
 for (int i = 1; i <= document.Pages.Count; i++)
 {
     Page page = document.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
+    OperatorSelector operatorSelector = new OperatorSelector(new Operators.TextShowOperator());
     // Select all text on the page
     page.Contents.Accept(operatorSelector);
     // Delete all text

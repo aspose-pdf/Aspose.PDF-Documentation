@@ -148,7 +148,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 // Instantiate an object PDF class
 Document pdf = new Document();
 // Add the section to PDF document sections collection
-Aspose.Pdf.Page page = pdf.Pages.Add();
+Page page = pdf.Pages.Add();
 // Instantiate a table object
 Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
 table1.Margin.Top = 300;
@@ -215,7 +215,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 string outFile = dataDir + "AddRepeatingColumn_out.pdf";
 // Create a new document
 Document doc = new Document();
-Aspose.Pdf.Page page = doc.Pages.Add();
+Page page = doc.Pages.Add();
 
 // Instantiate an outer table that takes up the entire page
 Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();

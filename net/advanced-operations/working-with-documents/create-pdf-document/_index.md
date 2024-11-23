@@ -102,7 +102,7 @@ Document document = new Document();
 // Add page
 Page page = document.Pages.Add();
 // Add text to new page
-page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+page.Paragraphs.Add(new TextFragment("Hello World!"));
 // Save updated PDF
 document.Save(dataDir + "HelloWorld_out.pdf");
 ```

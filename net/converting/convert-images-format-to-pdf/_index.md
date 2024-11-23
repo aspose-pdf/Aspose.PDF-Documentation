@@ -780,7 +780,7 @@ using (var fs = new FileStream("iphone_photo.heic", FileMode.Open))
     var height = (int)image.Height;
 
     var document = new Document();
-    Aspose.Pdf.Page page = document.Pages.Add();
+    Page page = document.Pages.Add();
     Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
     asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
     page.PageInfo.Height = height;

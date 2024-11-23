@@ -91,7 +91,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create new document object
 Document document = new Document();
-Aspose.Pdf.Page page = document.Pages.Add();
+Page page = document.Pages.Add();
 
 string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
 
@@ -218,7 +218,7 @@ Please use below code snippet.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 Document document = new Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)document.Pages.Add();
+Page applicationFirstPage = (Page)document.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers
 Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");

@@ -243,7 +243,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create new document instance
 Document document = new Document();
 // Add page to pages collection of PDF file
-Aspose.Pdf.Page page = document.Pages.Add();
+Page page = document.Pages.Add();
 // Create TextFragment instnace with sample text
 TextFragment fragment = new TextFragment("Sample Text in OTF font");
 // Find font inside system font directory
@@ -783,7 +783,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create Document instance
 Document doc = new Document();
 // Create page to pages collection of PDF file
-Aspose.Pdf.Page page = doc.Pages.Add();
+Page page = doc.Pages.Add();
 
 // Create Graph object
 Aspose.Pdf.Drawing.Graph canvas = new Aspose.Pdf.Drawing.Graph(100, 400);

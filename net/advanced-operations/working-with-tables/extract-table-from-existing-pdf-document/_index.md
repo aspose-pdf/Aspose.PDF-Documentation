@@ -143,18 +143,18 @@ using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
     // Process all the contents commands
     foreach (Operator op in doc.Pages[1].Contents)
     {
-        Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-        Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-        Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-        Aspose.Pdf.Operators.MoveTo opMoveTo = op as Aspose.Pdf.Operators.MoveTo;
-        Aspose.Pdf.Operators.LineTo opLineTo = op as Aspose.Pdf.Operators.LineTo;
-        Aspose.Pdf.Operators.Re opRe = op as Aspose.Pdf.Operators.Re;
-        Aspose.Pdf.Operators.EndPath opEndPath = op as Aspose.Pdf.Operators.EndPath;
-        Aspose.Pdf.Operators.Stroke opStroke = op as Aspose.Pdf.Operators.Stroke;
-        Aspose.Pdf.Operators.Fill opFill = op as Aspose.Pdf.Operators.Fill;
-        Aspose.Pdf.Operators.EOFill opEOFill = op as Aspose.Pdf.Operators.EOFill;
-        Aspose.Pdf.Operators.SetRGBColor opRGBFillColor = op as Aspose.Pdf.Operators.SetRGBColor;
-        Aspose.Pdf.Operators.SetRGBColorStroke opRGBStrokeColor = op as Aspose.Pdf.Operators.SetRGBColorStroke;
+        Operators.GSave opSaveState = op as Operators.GSave;
+        Operators.GRestore opRestoreState = op as Operators.GRestore;
+        Operators.ConcatenateMatrix opCtm = op as Operators.ConcatenateMatrix;
+        Operators.MoveTo opMoveTo = op as Operators.MoveTo;
+        Operators.LineTo opLineTo = op as Operators.LineTo;
+        Operators.Re opRe = op as Operators.Re;
+        Operators.EndPath opEndPath = op as Operators.EndPath;
+        Operators.Stroke opStroke = op as Operators.Stroke;
+        Operators.Fill opFill = op as Operators.Fill;
+        Operators.EOFill opEOFill = op as Operators.EOFill;
+        Operators.SetRGBColor opRGBFillColor = op as Operators.SetRGBColor;
+        Operators.SetRGBColorStroke opRGBStrokeColor = op as Operators.SetRGBColorStroke;
 
         if (opSaveState != null)
         {

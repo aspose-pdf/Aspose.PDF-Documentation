@@ -84,7 +84,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Instantiate Document object
 Document doc = new Document();
 // add page to pages collection of PDF file
-Aspose.Pdf.Page page = doc.Pages.Add();
+Page page = doc.Pages.Add();
 // Create an image instance
 Aspose.Pdf.Image img = new Aspose.Pdf.Image();
 // Set Image Width and Height in Points

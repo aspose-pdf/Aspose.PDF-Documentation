@@ -102,7 +102,7 @@ using (FileStream fs = new FileStream(dataDir + "externalSignature1.pdf", FileMo
         // Manually chose the certificate in the store
         System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel = System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
 
-        Aspose.Pdf.Forms.ExternalSignature externalSignature = new Aspose.Pdf.Forms.ExternalSignature(sel[0])
+        ExternalSignature externalSignature = new ExternalSignature(sel[0])
         {
             Authority = "Me",
             Reason = "Reason",
@@ -112,6 +112,7 @@ using (FileStream fs = new FileStream(dataDir + "externalSignature1.pdf", FileMo
         field1.PartialName = "sig1";
         document.Form.Add(field1, 1);
         field1.Sign(externalSignature);
+        // Save result file
         document.Save();
     }
 }
@@ -151,9 +152,10 @@ using (Document document = new Document(dataDir + "blank.pdf"))
         // Manually chose the certificate in the store
         System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel = System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
 
-        Aspose.Pdf.Forms.ExternalSignature externalSignature = new Aspose.Pdf.Forms.ExternalSignature(sel[0]);
+        ExternalSignature externalSignature = new ExternalSignature(sel[0]);
         pdfSign.SignatureAppearance = dataDir + "demo.png";
         pdfSign.Sign(1, "Reason", "Contact", "Location", true, new System.Drawing.Rectangle(100, 100, 200, 200), externalSignature);
+        // Save result file
         pdfSign.Save(dataDir + "externalSignature2.pdf");
     }
 }
@@ -199,6 +201,7 @@ using (var sign = new PdfFileSignature())
     
     signature.CustomSignHash = customSignHash;
     sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), signature);
+    // Save result file
     sign.Save(outputPdf);
 }
 ```

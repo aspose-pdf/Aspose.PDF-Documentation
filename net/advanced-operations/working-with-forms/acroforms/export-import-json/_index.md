@@ -287,7 +287,7 @@ Let's break down this Aspose.PDF example step by step:
 var document = new Document(Path.Combine(_dataDir, "Forms", "Sample.pdf"));
 
 var options
-    = new Aspose.Pdf.Engine.IO.ConvertStrategies.ConvertHelpers.ExportFieldsToJsonOptions
+    = new ExportFieldsToJsonOptions
     {
         ExportPasswordValue = true,
         WriteIndented = true,
@@ -300,16 +300,16 @@ foreach (var result in exportResults)
     Console.Write($"{result.FieldFullName} ");
     switch (result.FieldSerializationStatus)
     {
-        case Aspose.Pdf.Engine.IO.ConvertStrategies.ConvertHelpers.FieldSerializationStatus.Success:
+        case FieldSerializationStatus.Success:
             Console.WriteLine("Success");
             break;
-        case Aspose.Pdf.Engine.IO.ConvertStrategies.ConvertHelpers.FieldSerializationStatus.Warning:
+        case FieldSerializationStatus.Warning:
             foreach (var messages in result.WarningMessages)
             {
                 Console.WriteLine(messages);
             }
             break;
-        case Aspose.Pdf.Engine.IO.ConvertStrategies.ConvertHelpers.FieldSerializationStatus.Error:
+        case FieldSerializationStatus.Error:
             foreach (var messages in result.ErrorMessages)
             {
                 Console.WriteLine(messages);

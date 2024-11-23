@@ -162,10 +162,10 @@ Document doc = new Document(dataDir + "GetFieldsFromRegion.pdf");
 Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
 
 // Get the PDF form
-Aspose.Pdf.Forms.Form form = doc.Form;
+Form form = doc.Form;
 
 // Get fields in the rectangular area
-Aspose.Pdf.Forms.Field[] fields = form.GetFieldsInRect(rectangle);
+Field[] fields = form.GetFieldsInRect(rectangle);
 
 // Display Field names and values
 foreach (Field field in fields)

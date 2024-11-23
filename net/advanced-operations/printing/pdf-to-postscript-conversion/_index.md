@@ -89,7 +89,7 @@ public static void PrintToPostscriptFile()
     // The path to the documents directory.
     // string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    Aspose.Pdf.Facades.PdfViewer viewer = new Aspose.Pdf.Facades.PdfViewer();
+    PdfViewer viewer = new PdfViewer();
     viewer.BindPdf(_dataDir + "input.pdf");
     // Set PrinterSettings and PageSettings
     System.Drawing.Printing.PrinterSettings printerSettings = new System.Drawing.Printing.PrinterSettings();

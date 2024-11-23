@@ -156,7 +156,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 Document doc = new Document();
 Page page = doc.Pages.Add();
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+Table table = new Table();
 table.ColumnWidths = "120 120 120";
 page.Paragraphs.Add(table);
 Row r1 = table.Rows.Add();
@@ -223,7 +223,7 @@ Following code snippet shows how to add caption which will be associated with Ra
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load source PDF form
-Aspose.Pdf.Facades.Form form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
+Form form1 = new Form(dataDir + "RadioButtonField.pdf");
 Document PDF_Template_PDF_HTML = new Document(dataDir + "RadioButtonField.pdf");
 foreach (var item in form1.FieldNames)
 {
@@ -231,12 +231,12 @@ foreach (var item in form1.FieldNames)
     Dictionary<string, string> radioOptions = form1.GetButtonOptionValues(item);
     if (item.Contains("radio1"))
     {
-        Aspose.Pdf.Forms.RadioButtonField field0 = PDF_Template_PDF_HTML.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
-        Aspose.Pdf.Forms.RadioButtonOptionField fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
+        RadioButtonField field0 = PDF_Template_PDF_HTML.Form[item] as RadioButtonField;
+        RadioButtonOptionField fieldoption = new RadioButtonOptionField();
         fieldoption.OptionName = "Yes";
         fieldoption.PartialName = "Yesname";
 
-        var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
+        var updatedFragment = new TextFragment("test123");
         updatedFragment.TextState.Font = FontRepository.FindFont("Arial");
         updatedFragment.TextState.FontSize = 10;
         updatedFragment.TextState.LineSpacing = 6.32f;

@@ -130,17 +130,17 @@ FileStream imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.O
 // Add image to Images collection of Page Resources
 page.Resources.Images.Add(imageStream);
 // Using GSave operator: this operator saves current graphics state
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+page.Contents.Add(new Operators.GSave());
 // Create Rectangle and Matrix objects
 Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
 Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
 // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+page.Contents.Add(new Operators.ConcatenateMatrix(matrix));
 XImage ximage = page.Resources.Images[page.Resources.Images.Count];
 // Using Do operator: this operator draws image
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+page.Contents.Add(new Operators.Do(ximage.Name));
 // Using GRestore operator: this operator restores graphics state
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+page.Contents.Add(new Operators.GRestore());
 // Save updated document
 document.Save(dataDir + "PDFOperators_out.pdf");
 ```
@@ -173,47 +173,47 @@ using (Document doc = new Document(inFile))
     // Wrap existing contents with GSave/GRestore operators pair
     //        this is to get initial graphics state at the and of existing contents
     //        otherwise there might remain some undesirable transformations at the end of existing operators chain
-    pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents.Insert(1, new Operators.GSave());
+    pageContents.Add(new Operators.GRestore());
 
     // Add save graphics state operator to properly clear graphics state after new commands
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+    pageContents.Add(new Operators.GSave());
 
     #region create xForm
 
     // Create xForm
     XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
     doc.Pages[1].Resources.Forms.Add(form);
-    form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+    form.Contents.Add(new Operators.GSave());
     // Define image width and heigh
-    form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
+    form.Contents.Add(new Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
     // Load image into stream
     Stream imageStream = new FileStream(imageFile, FileMode.Open);
     // Add image to Images collection of the XForm Resources
     form.Resources.Images.Add(imageStream);
     XImage ximage = form.Resources.Images[form.Resources.Images.Count];
     // Using Do operator: this operator draws image
-    form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-    form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+    form.Contents.Add(new Operators.Do(ximage.Name));
+    form.Contents.Add(new Operators.GRestore());
 
     #endregion
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+    pageContents.Add(new Operators.GSave());
     // Place form to the x=100 y=500 coordinates
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
+    pageContents.Add(new Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
     // Draw form with Do operator
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents.Add(new Operators.Do(form.Name));
+    pageContents.Add(new Operators.GRestore());
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+    pageContents.Add(new Operators.GSave());
     // Place form to the x=100 y=300 coordinates
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
+    pageContents.Add(new Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
     // Draw form with Do operator
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents.Add(new Operators.Do(form.Name));
+    pageContents.Add(new Operators.GRestore());
 
     // Restore grahics state with GRestore after the GSave
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+    pageContents.Add(new Operators.GRestore());
     doc.Save(outFile);
 }
 ```
@@ -235,9 +235,9 @@ OperatorCollection oc = page.Contents;
 
 // Used path-painting operators
 Operator[] operators = new Operator[] {
-        new Aspose.Pdf.Operators.Stroke(),
-        new Aspose.Pdf.Operators.ClosePathStroke(),
-        new Aspose.Pdf.Operators.Fill()
+        new Operators.Stroke(),
+        new Operators.ClosePathStroke(),
+        new Operators.Fill()
 };
 
 oc.Delete(operators);

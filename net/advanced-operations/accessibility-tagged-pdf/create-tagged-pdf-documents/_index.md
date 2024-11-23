@@ -261,8 +261,7 @@ string outputLogName = dataDir + "ua-20.xml";
 
 using (var document = new Document(inputFileName))
 {
-    bool isValid = document.Validate(outputLogName, Aspose.Pdf.PdfFormat.PDF_UA_1);
-
+    bool isValid = document.Validate(outputLogName, PdfFormat.PDF_UA_1);
 }
 ```
 

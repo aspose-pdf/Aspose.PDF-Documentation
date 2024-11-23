@@ -113,17 +113,17 @@ FileStream imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Op
 // Add image to Images collection of Page Resources
 page.Resources.Images.Add(imageStream);
 // Using GSave operator: this operator saves current graphics state
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+page.Contents.Add(new Operators.GSave());
 // Create Rectangle and Matrix objects
 Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
 Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
 // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+page.Contents.Add(new Operators.ConcatenateMatrix(matrix));
 XImage ximage = page.Resources.Images[page.Resources.Images.Count];
 // Using Do operator: this operator draws image
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+page.Contents.Add(new Operators.Do(ximage.Name));
 // Using GRestore operator: this operator restores graphics state
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+page.Contents.Add(new Operators.GRestore());
 // Save updated document
 document.Save(dataDir + "AddImage_out.pdf");
 ```
@@ -148,7 +148,7 @@ Document document = new Document();
 Page page = document.Pages.Add();
 page.SetPageSize(PageSize.A3.Height, PageSize.A3.Width);
 page = document.Pages.Add();
-Aspose.Pdf.Facades.PdfFileMend mender = new Aspose.Pdf.Facades.PdfFileMend(document);
+PdfFileMend mender = new PdfFileMend(document);
 mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
 document.Save(outputPdfFileName);
 ```

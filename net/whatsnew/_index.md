@@ -170,7 +170,7 @@ To convert HEIC images to PDF user should add the reference to `FileFormat.HEIC`
          var height = (int)image.Height;
 
          var document = new Document();
-         Aspose.Pdf.Page page = document.Pages.Add();
+         Page page = document.Pages.Add();
          Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
          asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
          page.PageInfo.Height = height;

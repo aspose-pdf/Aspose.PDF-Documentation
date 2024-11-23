@@ -47,33 +47,33 @@ private static void ExtractParagraph()
 
 private static void DrawRectangleOnPage(Rectangle rectangle, Page page)
 {
-    page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetRGBColorStroke(0, 1, 0));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetLineWidth(2));
+    page.Contents.Add(new Operators.GSave());
+    page.Contents.Add(new Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+    page.Contents.Add(new Operators.SetRGBColorStroke(0, 1, 0));
+    page.Contents.Add(new Operators.SetLineWidth(2));
     page.Contents.Add(
-        new Aspose.Pdf.Operators.Re(rectangle.LLX,
+        new Operators.Re(rectangle.LLX,
             rectangle.LLY,
             rectangle.Width,
             rectangle.Height));
-    page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
-    page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+    page.Contents.Add(new Operators.ClosePathStroke());
+    page.Contents.Add(new Operators.GRestore());
 }
 
 private static void DrawPolygonOnPage(Point[] polygon, Page page)
 {
-    page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetRGBColorStroke(0, 0, 1));
-    page.Contents.Add(new Aspose.Pdf.Operators.SetLineWidth(1));
-    page.Contents.Add(new Aspose.Pdf.Operators.MoveTo(polygon[0].X, polygon[0].Y));
+    page.Contents.Add(new Operators.GSave());
+    page.Contents.Add(new Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+    page.Contents.Add(new Operators.SetRGBColorStroke(0, 0, 1));
+    page.Contents.Add(new Operators.SetLineWidth(1));
+    page.Contents.Add(new Operators.MoveTo(polygon[0].X, polygon[0].Y));
     for (int i = 1; i < polygon.Length; i++)
     {
-        page.Contents.Add(new Aspose.Pdf.Operators.LineTo(polygon[i].X, polygon[i].Y));
+        page.Contents.Add(new Operators.LineTo(polygon[i].X, polygon[i].Y));
     }
-    page.Contents.Add(new Aspose.Pdf.Operators.LineTo(polygon[0].X, polygon[0].Y));
-    page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
-    page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+    page.Contents.Add(new Operators.LineTo(polygon[0].X, polygon[0].Y));
+    page.Contents.Add(new Operators.ClosePathStroke());
+    page.Contents.Add(new Operators.GRestore());
 }
 ```
 

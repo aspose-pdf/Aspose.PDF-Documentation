@@ -114,7 +114,7 @@ You can also get the same value using the *Aspose.Pdf.Facades* namespace using t
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 // Getting maximum field limit using Facades
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
+Form form = new Form();
 form.BindPdf(dataDir + "FieldLimit.pdf");
 Console.WriteLine("Limit: " + form.GetFieldLimit("textbox1"));
 ```
@@ -134,13 +134,13 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 Document document = new Document(dataDir + "FormFieldFont14.pdf");
 
 // Get particular form field from document
-Aspose.Pdf.Forms.Field field = document.Form["textbox1"] as Aspose.Pdf.Forms.Field;
+Field field = document.Form["textbox1"] as Field;
 
 // Create font object
-Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
+Font font = FontRepository.FindFont("ComicSansMS");
 
 // Set the font information for form field
-// Field.DefaultAppearance = new Aspose.Pdf.Forms.in.DefaultAppearance(font, 10, System.Drawing.Color.Black);
+// Field.DefaultAppearance = new DefaultAppearance(font, 10, System.Drawing.Color.Black);
 
 // Save updated document
 document.Save(dataDir + "FormFieldFont14_out.pdf");

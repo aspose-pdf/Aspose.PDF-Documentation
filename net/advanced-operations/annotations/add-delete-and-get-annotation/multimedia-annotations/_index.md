@@ -104,34 +104,20 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows how to add Screen Annotation to a PDF file:
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.IO;
-using System.Linq;
+// The path to the documents directory.
+private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+// Load the PDF file
+Document document = new Document(_dataDir + "sample.pdf"));
 
-namespace Aspose.Pdf.Examples.Advanced
-{
-    class ExampleMultimediaAnnotation
-    {
-        // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddScreenAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+var mediaFile = _dataDir + "input.swf";
+// Create Screen Annotation
+var screenAnnotation = new ScreenAnnotation(
+    document.Pages[1],
+    new Rectangle(170, 190, 470, 380),
+    mediaFile);
+document.Pages[1].Annotations.Add(screenAnnotation);
 
-            var mediaFile = System.IO.Path.Combine(_dataDir, "input.swf");
-            // Create Screen Annotation
-            var screenAnnotation = new ScreenAnnotation(
-                document.Pages[1],
-                new Rectangle(170, 190, 470, 380),
-                mediaFile);
-            document.Pages[1].Annotations.Add(screenAnnotation);
-
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_swf.pdf"));
-        }
-    }
-}
+document.Save(_dataDir + "sample_swf.pdf"));
 ```
 
 ## Add Sound Annotation

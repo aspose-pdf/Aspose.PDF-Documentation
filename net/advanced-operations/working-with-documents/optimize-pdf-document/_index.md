@@ -406,7 +406,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Load source PDF file
 using (Document document = new Document(dataDir + "input.pdf"))
 {
-    Aspose.Pdf.RgbToDeviceGrayConversionStrategy strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
+    RgbToDeviceGrayConversionStrategy strategy = new RgbToDeviceGrayConversionStrategy();
     for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
     {
         // Get instance of particular page inside PDF

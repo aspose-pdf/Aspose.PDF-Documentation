@@ -163,7 +163,7 @@ titles[3] = "Fourth page";
 for (int i = 0; i < 2; i++)
 {
     // Create Heading object
-    Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
+    Heading heading2 = new Heading(1);
     TextSegment segment2 = new TextSegment();
     heading2.TocPage = tocPage;
     heading2.Segments.Add(segment2);
@@ -230,8 +230,7 @@ Page page = doc.Pages.Add();
 // Add four headings in the section
 for (int Level = 1; Level <= 4; Level++)
 {
-
-    Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(Level);
+    Heading heading2 = new Heading(Level);
     TextSegment segment2 = new TextSegment();
     heading2.Segments.Add(segment2);
     heading2.IsAutoSequence = true;
@@ -306,7 +305,7 @@ string outFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "Customiz
 // Load an existing PDF files
 Document doc = new Document(inFile);
 // Get access to first page of PDF file
-Aspose.Pdf.Page tocPage = doc.Pages.Insert(1);
+Page tocPage = doc.Pages.Insert(1);
 // Create object to represent TOC information
 TocInfo tocInfo = new TocInfo();
 TextFragment title = new TextFragment("Table Of Contents");
@@ -319,7 +318,7 @@ tocPage.TocInfo = tocInfo;
 for (int i = 1; i<doc.Pages.Count; i++)
 {
     // Create Heading object
-    Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
+    Heading heading2 = new Heading(1);
     TextSegment segment2 = new TextSegment();
     heading2.TocPage = tocPage;
     heading2.Segments.Add(segment2);
