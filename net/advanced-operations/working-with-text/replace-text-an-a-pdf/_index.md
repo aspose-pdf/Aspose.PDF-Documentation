@@ -118,9 +118,8 @@ foreach (TextFragment textFragment in textFragmentCollection)
     textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 }
 
-dataDir = dataDir + "ReplaceTextAll_out.pdf";
-// Save resulting PDF document.
-document.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "ReplaceTextAll_out.pdf");
 ```
 
 ## Replace Text in particular page region
@@ -191,8 +190,7 @@ foreach (TextFragment textFragment in textFragmentCollection)
     textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 }
 
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-document.Save(dataDir);
+document.Save(dataDir + "ReplaceTextonRegularExpression_out.pdf");
 ```
 
 ## Replace fonts in existing PDF file
@@ -223,9 +221,8 @@ foreach (TextFragment textFragment in absorber.TextFragments)
     }
 }
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "ReplaceFonts_out.pdf");
 ```
 
 ## Text Replacement should automatically re-arrange Page Contents
@@ -258,9 +255,8 @@ foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
     textFragment.Text = "This is a Larger String for the Testing of this issue";
 }
 
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
 // Save resultant PDF
-doc.Save(dataDir);
+doc.Save(dataDir + "RearrangeContentsUsingTextReplacement_out.pdf");
 ```
 
 ## Rendering Replaceable Symbols during PDF creation
@@ -304,8 +300,7 @@ TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
 // Add the TextParagraph using TextBuilder
 textBuilder.AppendParagraph(par);
 
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
+pdfApplicationDoc.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
 ```
 
 ## Replaceable symbols in Header/Footer area
@@ -437,8 +432,7 @@ for (int i = 0; i <= 10; i++)
     }
 }
 
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
+doc.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
 ```
 
 ## Remove Unused Fonts from PDF File
@@ -469,9 +463,8 @@ foreach (TextFragment textFragment in absorber.TextFragments)
     textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
 }
 
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
 // Save updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "RemoveUnusedFonts_out.pdf");
 ```
 
 ## Remove All Text from PDF Document

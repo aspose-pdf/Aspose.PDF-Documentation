@@ -96,9 +96,8 @@ Document document = new Document(dataDir+ "DeleteImages.pdf");
 // Delete a particular image
 document.Pages[1].Resources.Images.Delete(1);
 
-dataDir = dataDir + "DeleteImages_out.pdf";
 // Save updated PDF file
-document.Save(dataDir);
+document.Save(dataDir + "DeleteImages_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -185,9 +185,8 @@ pdfOutline.Title = "Updated Outline";
 pdfOutline.Italic = true;
 pdfOutline.Bold = true;
 
-dataDir = dataDir + "UpdateBookmarks_out.pdf";
 // Save output
-document.Save(dataDir);
+document.Save(dataDir + "UpdateBookmarks_out.pdf");
 ```
 
 ## Update Child Bookmarks in a PDF Document
@@ -221,9 +220,9 @@ OutlineItemCollection childOutline = pdfOutline[1];
 childOutline.Title = "Updated Outline";
 childOutline.Italic = true;
 childOutline.Bold = true;
-dataDir = dataDir + "UpdateChildBookmarks_out.pdf";
-// Save output
-document.Save(dataDir);
+
+// Save output document
+document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
 ```
 
 ## Expanded Bookmarks when viewing document
@@ -249,9 +248,8 @@ foreach (OutlineItemCollection item in doc.Outlines)
     item.Open = true;
 }
 
-dataDir = dataDir + "ExpandBookmarks_out.pdf";
 // Save output
-doc.Save(dataDir);
+doc.Save(dataDir + + "ExpandBookmarks_out.pdf");
 ```
 
 <script type="application/ld+json">

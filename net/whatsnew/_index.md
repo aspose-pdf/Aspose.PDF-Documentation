@@ -1554,8 +1554,8 @@ Since 23.5 support to add RedactionAnnotation FontSize option. Use the next code
     // Flattens annotation and redacts page contents (i.e. removes text and image
     // Under redacted annotation)
     annot.Redact();
-    dataDir = dataDir + "47704_RedactPage_out_NETCORE.pdf";
-    doc.Save(dataDir);
+    // Save result document
+    doc.Save(dataDir + "47704_RedactPage_out_NETCORE.pdf");
 ```
 
 ## What's new in Aspose.PDF 23.4

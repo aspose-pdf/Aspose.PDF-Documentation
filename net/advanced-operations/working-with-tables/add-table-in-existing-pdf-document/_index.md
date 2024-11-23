@@ -128,9 +128,9 @@ for (int row_count = 1; row_count < 10; row_count++)
 }
 // Add table object to first page of input document
 doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "document_with_table_out.pdf";
+
 // Save updated document containing table object
-doc.Save(dataDir);
+doc.Save(dataDir + "document_with_table_out.pdf");
 ```
 
 ### ColSpan and RowSpan in Tables
@@ -264,9 +264,8 @@ Aspose.Pdf.Row row2 = tab1.Rows.Add();
 row2.Cells.Add("item1");
 row2.Cells.Add("item2");
 row2.Cells.Add("item3");
-dataDir = dataDir + "MarginsOrPadding_out.pdf";
 // Save the Pdf
-doc.Save(dataDir);
+doc.Save(dataDir + "MarginsOrPadding_out.pdf");
 ```
 
 To create table with rounded corner, use the BorderInfo class' `RoundedBorderRadius` value and set the table corner style to round.
@@ -341,9 +340,8 @@ row2.Cells.Add("item1");
 row2.Cells.Add("item2");
 row2.Cells.Add("item3");
 
-dataDir = dataDir + "AutoFitToWindow_out.pdf";
 // Save updated document containing table object
-doc.Save(dataDir);
+doc.Save(dataDir + "AutoFitToWindow_out.pdf");
 ```
 
 ### Get Table Width
@@ -412,9 +410,8 @@ Page page = doc.Pages.Add();
 // Add table to paragraphs collection of page object
 page.Paragraphs.Add(table);
 
-dataDir = dataDir + "AddSVGObject_out.pdf";
 // Save PDF file
-doc.Save(dataDir);
+doc.Save(dataDir + "AddSVGObject_out.pdf");
 ```
 
 ## Using HTML Tags inside Table
@@ -504,9 +501,8 @@ for (int counter = 0; counter <= 200; counter++)
 // Add table to paragraphs collection of PDF file
 doc.Pages[1].Paragraphs.Add(tab);
 
-dataDir = dataDir + "InsertPageBreak_out.pdf";
 // Save the PDF document
-doc.Save(dataDir);
+doc.Save(dataDir + "InsertPageBreak_out.pdf");
 ```
 
 ## Render a Table on New Page
@@ -562,8 +558,8 @@ for (int i = 1; i <= 10; i++)
 table1.IsInNewPage = true;
 // I want to keep table 1 to next page please...
 paragraphs.Add(table1);
-dataDir = dataDir + "IsNewPageProperty_Test_out.pdf";
-doc.Save(dataDir);
+
+doc.Save(dataDir + "IsNewPageProperty_Test_out.pdf");
 ```
 
 <script type="application/ld+json">

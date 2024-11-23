@@ -148,7 +148,7 @@ stamp.TopMargin = 20;
 doc.Pages[1].AddStamp(stamp);
 
 // Save the udpated document
-doc.Save(dataDir + "StampedPDF_out.pdf";);
+doc.Save(dataDir + "StampedPDF_out.pdf");
 ```
 
 ## Fill Stroke Text as Stamp in PDF File

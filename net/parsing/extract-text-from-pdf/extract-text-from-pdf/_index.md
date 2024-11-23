@@ -60,9 +60,8 @@ document.Pages[1].Accept(textAbsorber);
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 
-dataDir = dataDir + "extracted-text_out.txt";
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir);
+TextWriter tw = new StreamWriter(dataDir + "extracted-text_out.txt");
 
 // Write a line of text to the file
 tw.WriteLine(extractedText);
@@ -124,9 +123,8 @@ foreach (Page pdfPage in document.Pages)
     builder.Append(extractedText);
 }
 
-dataDir = dataDir + "input_Text_Extracted_out.txt";
 // Save the extracted text in text file
-File.WriteAllText(dataDir, builder.ToString());
+File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", builder.ToString());
 ```
 
 ## Extract Text from a particular page region
@@ -193,9 +191,7 @@ document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
 textAbsorber.Visit(document);
 
-dataDir = dataDir + "ExtractColumnsText_out.txt";
-
-System.IO.File.WriteAllText(dataDir, extractedText);
+System.IO.File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
 ```
 
 ### Second approach - Using ScaleFactor

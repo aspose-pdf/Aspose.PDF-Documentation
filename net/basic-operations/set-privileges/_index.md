@@ -122,9 +122,8 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 Document document = new Document(dataDir+ "Encrypt.pdf");
 // Encrypt PDF
 document.Encrypt("user", "owner", 0, CryptoAlgorithm.RC4x128);
-dataDir = dataDir + "Encrypt_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "Encrypt_out.pdf");
 ```
 
 ## Decrypt PDF File using Owner Password
@@ -144,9 +143,8 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 Document document = new Document(dataDir+ "Decrypt.pdf", "password");
 // Decrypt PDF
 document.Decrypt();
-dataDir = dataDir + "Decrypt_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "Decrypt_out.pdf");
 ```
 
 ## Change Password of a PDF File
@@ -167,9 +165,8 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 Document document = new Document(dataDir+ "ChangePassword.pdf", "owner");
 // Change password
 document.ChangePasswords("owner", "newuser", "newowner");
-dataDir = dataDir + "ChangePassword_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "ChangePassword_out.pdf");
 ```
 
 ## How to - determine if the source PDF is password protected

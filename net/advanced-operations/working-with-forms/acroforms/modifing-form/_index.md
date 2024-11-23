@@ -92,8 +92,8 @@ FormEditor form = new FormEditor();
 
 form.BindPdf(dataDir + "input.pdf");
 form.SetFieldLimit("textbox1", 15);
-dataDir = dataDir + "SetFieldLimit_out.pdf";
-form.Save(dataDir);
+
+form.Save(dataDir + "SetFieldLimit_out.pdf");
 ```
 
 Similarly, Aspose.PDF has a method that gets the field limit using the DOM approach. The following code snippet shows the steps.
@@ -142,9 +142,8 @@ Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
 // Set the font information for form field
 // Field.DefaultAppearance = new Aspose.Pdf.Forms.in.DefaultAppearance(font, 10, System.Drawing.Color.Black);
 
-dataDir = dataDir + "FormFieldFont14_out.pdf";
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "FormFieldFont14_out.pdf");
 ```
 
 ## Add/remove fields in existing form
@@ -161,9 +160,9 @@ Document document = new Document(dataDir + "DeleteFormField.pdf");
 
 // Delete a particular field by name
 document.Form.Delete("textbox1");
-dataDir = dataDir + "DeleteFormField_out.pdf";
+
 // Save modified document
-document.Save(dataDir);
+document.Save(dataDir + "DeleteFormField_out.pdf");
 ```
 
 <script type="application/ld+json">

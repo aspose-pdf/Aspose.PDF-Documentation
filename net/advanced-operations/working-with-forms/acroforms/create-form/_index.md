@@ -117,9 +117,8 @@ textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 // Add field to the document
 document.Form.Add(textBoxField, 1);
 
-dataDir = dataDir + "TextBox_out.pdf";
 // Save modified PDF
-document.Save(dataDir);
+document.Save(dataDir + "TextBox_out.pdf");
 ```
 
 ### Adding RadioButtonField
@@ -144,9 +143,8 @@ radio.AddOption("Test1", new Rectangle(20, 20, 40, 40));
 // Add radio button to form object of Document object
 document.Form.Add(radio);
 
-dataDir = dataDir + "RadioButton_out.pdf";
 // Save the PDF file
-document.Save(dataDir);
+document.Save(dataDir + "RadioButton_out.pdf");
 ```
 
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
@@ -211,9 +209,8 @@ c1.Paragraphs.Add(opt1);
 c2.Paragraphs.Add(opt2);
 c3.Paragraphs.Add(opt3);
 
-dataDir = dataDir + "RadioButtonWithOptions_out.pdf";
 // Save the PDF file
-doc.Save(dataDir);
+doc.Save(dataDir + "RadioButtonWithOptions_out.pdf");
 ```
 
 ### Adding Caption to RadioButtonField
@@ -291,9 +288,9 @@ combo.AddOption("Blue");
 
 // Add combo box object to form fields collection of document object
 doc.Form.Add(combo);
-dataDir = dataDir + "ComboBox_out.pdf";
+
 // Save the PDF document
-doc.Save(dataDir);
+doc.Save(dataDir + "ComboBox_out.pdf");
 ```
 
 ### Add Tooltip to Form Field
@@ -313,9 +310,8 @@ Document doc = new Document(dataDir + "AddTooltipToField.pdf");
 // Set the tooltip for textfield
 (doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
 
-dataDir = dataDir + "AddTooltipToField_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "AddTooltipToField_out.pdf");
 ```
 
 

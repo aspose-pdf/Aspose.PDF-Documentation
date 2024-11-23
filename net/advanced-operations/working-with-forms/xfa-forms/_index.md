@@ -104,9 +104,9 @@ string[] names = doc.Form.XFA.FieldNames;
 // Set field values
 doc.Form.XFA[names[0]] = "Field 0";
 doc.Form.XFA[names[1]] = "Field 1";
-dataDir = dataDir + "Filled_XFA_out.pdf";
+
 // Save the updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "Filled_XFA_out.pdf");
 ```
 
 ## Convert XFA-to-Acroform
@@ -138,9 +138,8 @@ Document document = new Document(dataDir + "DynamicXFAToAcroForm.pdf");
 // Set the form fields type as standard AcroForm
 document.Form.Type = FormType.Standard;
 
-dataDir = dataDir + "Standard_AcroForm_out.pdf";
 // Save the resultant PDF
-document.Save(dataDir);
+document.Save(dataDir + "Standard_AcroForm_out.pdf");
 ```
 
 ## Get XFA field properties
@@ -167,9 +166,8 @@ Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value)
 // Get field position
 Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
 
-dataDir = dataDir + "Filled_XFA_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "Filled_XFA_out.pdf");
 ```
 
 <script type="application/ld+json">

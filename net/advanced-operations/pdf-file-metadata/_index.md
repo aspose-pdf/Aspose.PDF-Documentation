@@ -134,9 +134,8 @@ docInfo.ModDate = DateTime.Now;
 docInfo.Subject = "PDF Information";
 docInfo.Title = "Setting PDF Document Information";
 
-dataDir = dataDir + "SetFileInfo_out.pdf";
 // Save output document
-document.Save(dataDir);
+document.Save(dataDir + "SetFileInfo_out.pdf");
 ```
 
 ## Get XMP Metadata from PDF File
@@ -185,9 +184,8 @@ document.Metadata["xmp:CreateDate"] = DateTime.Now;
 document.Metadata["xmp:Nickname"] = "Nickname";
 document.Metadata["xmp:CustomProperty"] = "Custom Value";
 
-dataDir = dataDir + "SetXMPMetadata_out.pdf";
 // Save document
-document.Save(dataDir);
+document.Save(dataDir + "SetXMPMetadata_out.pdf");
 ```
 
 ## Insert Metadata with Prefix
@@ -204,9 +202,8 @@ Document document = new Document(dataDir + "SetXMPMetadata.pdf");
 document.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
 document.Metadata["xmp:ModifyDate"] = DateTime.Now;
 
-dataDir = dataDir + "SetPrefixMetadata_out.pdf";
 // Save document
-document.Save(dataDir);
+document.Save(dataDir + "SetPrefixMetadata_out.pdf");
 ```
 
 <script type="application/ld+json">

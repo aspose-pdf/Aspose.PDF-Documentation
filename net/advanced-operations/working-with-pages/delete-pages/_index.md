@@ -99,9 +99,8 @@ Document document = new Document(dataDir + "DeleteParticularPage.pdf");
 // Delete a particular page
 document.Pages.Delete(2);
 
-dataDir = dataDir + "DeleteParticularPage_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "DeleteParticularPage_out.pdf");
 ```
 
 <script type="application/ld+json">

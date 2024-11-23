@@ -177,10 +177,8 @@ fragment.Position = new Position(10, 800);
 // Append TextFragment to PDF file
 tb.AppendText(fragment);
 
-dataDir = dataDir + "AddUnderlineText_out.pdf";
-
 // Save resulting PDF document.
-document.Save(dataDir);
+document.Save(dataDir + "AddUnderlineText_out.pdf");
 ```
 
 ## How to add Border Around Added Text
@@ -200,10 +198,8 @@ lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
 lineInfo.Visibility = true;
 editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
 
-dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
-
-// Save resulting PDF document.
-editor.Save(dataDir);
+// Save resulting PDF document
+editor.Save(dataDir + "AddingBorderAroundAddedText_out.pdf");
 ```
 
 ## How to add NewLine feed
@@ -221,8 +217,8 @@ Please use below code snippet.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)document.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers
 Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
@@ -247,11 +243,8 @@ TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
 // Add the TextParagraph using TextBuilder
 textBuilder.AppendParagraph(par);
 
-
-dataDir = dataDir + "AddNewLineFeed_out.pdf";
-
-// Save resulting PDF document.
-pdfApplicationDoc.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "AddNewLineFeed_out.pdf");
 ```
 
 ## How to add StrikeOut Text
@@ -288,11 +281,8 @@ TextBuilder textBuilder = new TextBuilder(pdfPage);
 // Append the text fragment to the PDF page
 textBuilder.AppendText(textFragment);
 
-
-dataDir = dataDir + "AddStrikeOutText_out.pdf";
-
 // Save resulting PDF document.
-document.Save(dataDir);
+document.Save(dataDir + "AddStrikeOutText_out.pdf");
 ```
 
 ## Apply Gradient Shading to the Text

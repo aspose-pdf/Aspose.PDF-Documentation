@@ -197,9 +197,8 @@ optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 // Optimize PDF document using OptimizationOptions
 document.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "ResizeImages_out.pdf";
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "ResizeImages_out.pdf");
 ```
 
 Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
@@ -222,9 +221,9 @@ optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 optimizeOptions.ImageCompressionOptions.Version = Pdf.Optimization.ImageCompressionVersion.Fast;
 // Optimize PDF document using OptimizationOptions
 document.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "FastShrinkImages_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "FastShrinkImages_out.pdf");
 Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
 ```
 
@@ -289,9 +288,9 @@ var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 };
 // Optimize PDF document using OptimizationOptions
 document.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.

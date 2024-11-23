@@ -98,9 +98,8 @@ page.Paragraphs.Add(img);
 //Set page properties
 page.PageInfo.Width = 800;
 page.PageInfo.Height = 800;
-dataDir = dataDir + "SetImageSize_out.pdf";
 // save resultant PDF file
-doc.Save(dataDir);
+doc.Save(dataDir + "SetImageSize_out.pdf");
 ```
 
 <script type="application/ld+json">

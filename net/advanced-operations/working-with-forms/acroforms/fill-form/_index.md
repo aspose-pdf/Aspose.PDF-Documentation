@@ -98,9 +98,9 @@ TextBoxField textBoxField = document.Form["textbox1"] as TextBoxField;
 
 // Modify field value
 textBoxField.Value = "Value to be filled in the field";
-dataDir = dataDir + "FillFormField_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "FillFormField_out.pdf");
 ```
 
 <script type="application/ld+json">

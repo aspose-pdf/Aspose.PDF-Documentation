@@ -483,9 +483,8 @@ border.Dash = new Dash(1, 1);
 border.Style = BorderStyle.Solid;
 doc.Pages[1].Annotations.Add(a1);
 
-dataDir = dataDir + "lnkAnnotationLineWidth_out.pdf";
 // Save output file
-doc.Save(dataDir);
+doc.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
 ```
 
 <script type="application/ld+json">

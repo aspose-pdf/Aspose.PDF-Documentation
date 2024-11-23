@@ -105,9 +105,9 @@ GoToAction goToAction = (GoToAction)linkAnnot.Action;
 // The first parameter is document object, second is destination page number.
 // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
 goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
-dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
+
 // Save the document with updated link
-doc.Save(dataDir);
+doc.Save(dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");
 ```
 
 ### Set Link Destination to a Web Address
@@ -126,9 +126,8 @@ LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
 // Modification link: change link action and set target as web address
 linkAnnot.Action = new GoToURIAction("www.aspose.com");
 
-dataDir = dataDir + "SetDestinationLink_out.pdf";
 // Save the document with updated link
-doc.Save(dataDir);
+doc.Save(dataDir + "SetDestinationLink_out.pdf");
 ```
 
 ### Set Link Target to Another PDF File
@@ -150,9 +149,8 @@ goToR.Destination = new XYZExplicitDestination(2, 0, 0, 1.5);
 // Next line update file
 goToR.File = new FileSpecification(dataDir +  "input.pdf");
 
-dataDir = dataDir + "SetTargetLink_out.pdf";
 // Save the document with updated link
-document.Save(dataDir);
+document.Save(dataDir + "SetTargetLink_out.pdf");
 ```
 
 ### Update LinkAnnotation Text Color
@@ -185,9 +183,9 @@ foreach (Annotation annotation in doc.Pages[1].Annotations)
         }
     }
 }
-dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
+
 // Save the document with updated link
-doc.Save(dataDir);
+doc.Save(dataDir + "UpdateLinkTextColor_out.pdf");
 ```
 
 

@@ -219,8 +219,8 @@ doc.Pages[1].Annotations.Add(annot);
 // Flattens annotation and redacts page contents (i.e. removes text and image
 // Under redacted annotation)
 annot.Redact();
-dataDir = dataDir + "RedactPage_out.pdf";
-doc.Save(dataDir);
+// Save result document
+doc.Save(dataDir + "RedactPage_out.pdf");
 ```
 
 ### Facades approach

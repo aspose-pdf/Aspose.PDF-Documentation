@@ -391,8 +391,7 @@ Document document = new Document(dataDir + "AddTOC.pdf");
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.CustomProgressHandler = new UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
 
-dataDir = dataDir + "DetermineProgress_out.pdf";
-document.Save(dataDir, saveOptions);
+document.Save(dataDir + "DetermineProgress_out.pdf", saveOptions);
 ```
 
 ```csharp

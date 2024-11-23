@@ -50,9 +50,8 @@ Document document = new Document(dataDir + "PDFToPDFA.pdf");
 // During conversion process, the validation is also performed
 document.Convert(dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-dataDir = dataDir + "PDFToPDFA_out.pdf";
 // Save output document
-document.Save(dataDir);
+document.Save(dataDir + "PDFToPDFA_out.pdf");
 ```
 
 To perform validation only, use the following line of code:
@@ -83,9 +82,8 @@ Document document = new Document(dataDir + "input.pdf");
            
 document.Convert(new MemoryStream(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
-dataDir = dataDir + "PDFToPDFA3b_out.pdf";
 // Save output document
-document.Save(dataDir);
+document.Save(dataDir + "PDFToPDFA3b_out.pdf");
 ```
 
 ## Convert PDF file to PDF/A-2u

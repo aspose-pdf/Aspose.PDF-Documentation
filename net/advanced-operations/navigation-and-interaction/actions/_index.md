@@ -129,9 +129,9 @@ textAnnotation.Contents = "Link to Aspose website";
 textAnnotation.Border = border;
 // Add FreeText annotation to annotations collection of first page of Document
 document.Pages[1].Annotations.Add(textAnnotation);
-dataDir = dataDir + "AddHyperlink_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "AddHyperlink_out.pdf");
 ```
 
 ## Create Hyperlink to pages in same PDF
@@ -172,9 +172,8 @@ text.Hyperlink = link;
 // Add text to paragraphs collection of page object
 page.Paragraphs.Add(text);
 
-dataDir = dataDir + "CreateLocalHyperlink_out.pdf";
 // Save updated document
-doc.Save(dataDir);
+doc.Save(dataDir + "CreateLocalHyperlink_out.pdf");
 ```
 
 ## Get PDF Hyperlink Destination (URL)
@@ -291,9 +290,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 Document document = new Document(dataDir + "RemoveOpenAction.pdf");
 // Remove document open action
 document.OpenAction = null;
-dataDir = dataDir + "RemoveOpenAction_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "RemoveOpenAction_out.pdf");
 ```
 
 ## How to Specify PDF Page when Viewing Document {#how-to-specify-pdf-page-when-viewing-document}

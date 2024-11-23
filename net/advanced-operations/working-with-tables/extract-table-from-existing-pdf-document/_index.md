@@ -235,8 +235,8 @@ using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
         }
     }
 }
-dataDir = dataDir + "ExtractBorder_out.png";
-bitmap.Save(dataDir, ImageFormat.Png);
+
+bitmap.Save(dataDir + "ExtractBorder_out.png", ImageFormat.Png);
 ```
 
 <script type="application/ld+json">

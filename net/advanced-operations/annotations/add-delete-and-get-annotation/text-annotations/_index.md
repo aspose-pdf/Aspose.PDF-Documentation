@@ -117,9 +117,9 @@ textAnnotation.Rect = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
 
 // Add annotation in the annotations collection of the page
 document.Pages[1].Annotations.Add(textAnnotation);
-dataDir = dataDir + "AddAnnotation_out.pdf";
+
 // Save output file
-document.Save(dataDir);
+document.Save(dataDir + "AddAnnotation_out.pdf");
 ```
 
 ## How to add Popup Annotation
@@ -268,9 +268,8 @@ annotation.Characteristics.Border = System.Drawing.Color.Red;
 annotation.Flags = AnnotationFlags.Print | AnnotationFlags.NoView;
 doc.Pages[1].Annotations.Add(annotation);
 
-dataDir = dataDir + "InvisibleAnnotation_out.pdf";
 // Save output file
-doc.Save(dataDir);
+doc.Save(dataDir + "InvisibleAnnotation_out.pdf");
 ```
 
 ### Set Formatting of FreeTextAnnotation

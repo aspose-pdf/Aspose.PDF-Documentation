@@ -102,9 +102,9 @@ AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, As
 page.Accept(selector);
 IList<Annotation> list = selector.Selected;
 Annotation annotation = (Annotation)list[0];
-dataDir = dataDir + "ExtractLinks_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "ExtractLinks_out.pdf");
 ```
 
 <script type="application/ld+json">

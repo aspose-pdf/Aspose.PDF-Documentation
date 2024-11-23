@@ -112,7 +112,7 @@ pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
 document.Pages[1].AddStamp(pageNumberStamp);
 
 // Save output document
-document.Save(dataDir + "PageNumberStamp_out.pdf";);
+document.Save(dataDir + "PageNumberStamp_out.pdf");
 ```
 
 ## Live Example

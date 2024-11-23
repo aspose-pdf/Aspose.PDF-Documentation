@@ -96,10 +96,8 @@ FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create)
 xImage.Save(outputImage, ImageFormat.Jpeg);
 outputImage.Close();
 
-dataDir = dataDir + "ExtractImages_out.pdf";
-
 // Save updated PDF file
-document.Save(dataDir);
+document.Save(dataDir + "ExtractImages_out.pdf");
 ```
 
 <script type="application/ld+json">

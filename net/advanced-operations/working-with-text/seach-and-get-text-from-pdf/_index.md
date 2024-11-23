@@ -310,8 +310,7 @@ foreach (TextFragment textFragment in absorber.TextFragments)
         (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
 }
 
-dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
-editor.Save(dataDir);
+editor.Save(dataDir + "SearchTextAndAddHyperlink_out.pdf");
 editor.Close();
 ```
 
@@ -346,8 +345,9 @@ foreach (TextFragment textFragment in textAbsorber.TextFragments)
         DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
     }
 }
-dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
-document.Save(dataDir);
+
+// Save result document
+document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
 ```
 
 ## Highlight each character in PDF document
@@ -435,8 +435,7 @@ using (MemoryStream ms = new MemoryStream())
         }
     }
     
-    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
-    bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
+    bmp.Save(dataDir + "HighlightCharacterInPDF_out.png";, System.Drawing.Imaging.ImageFormat.Png);
 }
 ```
 

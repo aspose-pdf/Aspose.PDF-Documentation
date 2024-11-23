@@ -110,9 +110,8 @@ pdfOutline.Action = new GoToAction(document.Pages[1]);
 // Add bookmark in the document's outline collection.
 document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddBookmark_out.pdf";
 // Save output
-document.Save(dataDir);
+document.Save(dataDir + "AddBookmark_out.pdf");
 ```
 
 ## Add a Child Bookmark to the PDF Document
@@ -154,9 +153,8 @@ pdfOutline.Add(pdfChildOutline);
 // Add parent bookmark in the document's outline collection.
 document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddChildBookmark_out.pdf";
 // Save output
-document.Save(dataDir);
+document.Save(dataDir + "AddChildBookmark_out.pdf");
 ```
 
 ## Delete all Bookmarks from a PDF Document
@@ -181,9 +179,8 @@ Document document = new Document(dataDir + "DeleteAllBookmarks.pdf");
 // Delete all bookmarks
 document.Outlines.Delete();
 
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
 // Save updated file
-document.Save(dataDir);
+document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
 ```
 
 ## Delete a Particular Bookmark from a PDF Document

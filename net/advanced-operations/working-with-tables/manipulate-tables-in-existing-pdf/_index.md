@@ -99,8 +99,9 @@ TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragmen
 
 // Change text of the first text fragment in the cell
 fragment.Text = "hi world";
-dataDir = dataDir + "ManipulateTable_out.pdf";
-document.Save(dataDir);
+
+// Save file
+document.Save(dataDir + "ManipulateTable_out.pdf");
 ```
 
 ## Replace old Table with a new one in PDF document

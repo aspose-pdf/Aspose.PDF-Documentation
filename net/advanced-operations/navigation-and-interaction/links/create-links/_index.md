@@ -108,9 +108,8 @@ link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 link.Action = new LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
 page.Annotations.Add(link);
 
-dataDir = dataDir + "CreateApplicationLink_out.pdf";
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "CreateApplicationLink_out.pdf");
 ```
 
 ### Create PDF Document Link in a PDF File
@@ -140,9 +139,9 @@ LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100
 link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
 page.Annotations.Add(link);
-dataDir = dataDir + "CreateDocumentLink_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "CreateDocumentLink_out.pdf");
 ```
 
 <script type="application/ld+json">

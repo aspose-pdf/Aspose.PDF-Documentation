@@ -141,9 +141,8 @@ XImage ximage = page.Resources.Images[page.Resources.Images.Count];
 page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
 // Using GRestore operator: this operator restores graphics state
 page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-dataDir = dataDir + "PDFOperators_out.pdf";
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "PDFOperators_out.pdf");
 ```
 
 ## Draw XForm on Page using Operators

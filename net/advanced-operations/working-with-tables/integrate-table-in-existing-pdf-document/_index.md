@@ -131,9 +131,9 @@ table.ImportDataTable(dt, true, 0, 1, 3, 3);
 
 // Add table object to first page of input document
 doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "DataIntegrated_out.pdf";
+
 // Save updated document containing table object
-doc.Save(dataDir);
+doc.Save(dataDir + "DataIntegrated_out.pdf");
 ```
 
 ## How to determine if table will break in the current page
@@ -199,10 +199,8 @@ if ((PageHeight - TotalObjectsHeight) <= 10)
     Console.WriteLine("Page Height - Objects Height < 10, so table will break");
 }
 
-
-dataDir = dataDir + "DetermineTableBreak_out.pdf";
 // Save the pdf document
-pdf.Save(dataDir);
+pdf.Save(dataDir + "DetermineTableBreak_out.pdf");
 ```
 
 ## Add Repeating Column in Table
