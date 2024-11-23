@@ -142,8 +142,8 @@ By default, the JPEG quality is set to 100%. To apply better compression and qua
 There is also an alternative, easier way to add a Image to a PDF file. You can use [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of the [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. The following code snippet shows you how to add image in an existing PDF file.
 
 ```csharp
-string imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-string outputPdfFileName = _dataDir + "Example-add-image-mender.pdf";
+string imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
+string outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 Document document = new Document();
 Page page = document.Pages.Add();
 page.SetPageSize(PageSize.A3.Height, PageSize.A3.Width);
@@ -156,8 +156,8 @@ document.Save(outputPdfFileName);
 Sometimes, it is necessary to crop an image before inserting it into a PDF. Use can use `AddImage()` method to support adding cropped images:
 
 ```csharp
-var imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-var outputPdfFileName = _dataDir + "Example-add-image-mender.pdf";
+var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
+var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 
 using (Document document = new Document())
 {
@@ -191,7 +191,7 @@ If we do not know the dimensions of the image there is every chance of getting a
 ```csharp
 public static void AddingImageAndPreserveAspectRatioIntoPDF()
 {
-    var bitmap = System.Drawing.Image.FromFile(_dataDir + "3410492.jpg");
+    var bitmap = System.Drawing.Image.FromFile(dataDir + "3410492.jpg");
 
     int width;
     int height;
@@ -206,8 +206,8 @@ public static void AddingImageAndPreserveAspectRatioIntoPDF()
     int scaledWidth = 400;
     int scaledHeight = scaledWidth * height / width;
 
-    page.AddImage(_dataDir + "3410492.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
-    document.Save(_dataDir + "sample_image.pdf");
+    page.AddImage(dataDir + "3410492.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
+    document.Save(dataDir + "sample_image.pdf");
 }
 ```
 

@@ -22,11 +22,11 @@ Class [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) has m
 public static void ConvertPDFAtoPDF()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    Document document = new Document(_dataDir + "PDFAToPDF.pdf");
+    Document document = new Document(dataDir + "PDFAToPDF.pdf");
     // Remove PDF/A compliance information
     document.RemovePdfaCompliance();
     // Save updated document
-    document.Save(_dataDir + "PDFAToPDF_out.pdf");
+    document.Save(dataDir + "PDFAToPDF_out.pdf");
 }
 ```
 
@@ -36,10 +36,10 @@ This info also removes if you make any changes in the document (e.g. add pages).
 public static void ConvertPDFAtoPDFAdvanced()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    Document document = new Document(_dataDir + "PDFAToPDF.pdf");
+    Document document = new Document(dataDir + "PDFAToPDF.pdf");
     // Adding a new (empty) page removes PDF/A compliance information.
     document.Pages.Add();
     // Save updated document
-    document.Save(_dataDir + "PDFAToPDF_out.pdf");
+    document.Save(dataDir + "PDFAToPDF_out.pdf");
 }
 ```

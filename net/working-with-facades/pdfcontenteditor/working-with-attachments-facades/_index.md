@@ -19,9 +19,9 @@ The following code snippet shows you how to add attachment from a file. For exam
 ```csharp
 public static void AttachmentDemo01()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
+    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
     editor.AddDocumentAttachment(@"C:\Samples\file_example_MP3_700KB.mp3","Demo MP3 file");
-    editor.Save(_dataDir + "PdfContentEditorDemo07.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo07.pdf");
 }
 ```
 
@@ -32,10 +32,10 @@ Attachment can be added in a PDF file from a stream – FileStream – using [Ad
 ```csharp
 public static void AttachmentDemo02()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
+    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
     var fileStream = System.IO.File.OpenRead(@"C:\Samples\file_example_MP3_700KB.mp3");
     editor.AddDocumentAttachment(fileStream, "file_example_MP3_700KB.mp3", "Demo MP3 file");
-    editor.Save(_dataDir + "PdfContentEditorDemo08.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo08.pdf");
 }
 ```
 
@@ -47,8 +47,8 @@ public static void AttachmentDemo02()
 public static void DeleteAllAttachments()
 {
     AttachmentDemo02();
-    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "PdfContentEditorDemo07.pdf"));
+    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "PdfContentEditorDemo07.pdf"));
     editor.DeleteAttachments();
-    editor.Save(_dataDir + "PdfContentEditorDemo09.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo09.pdf");
 }
 ```

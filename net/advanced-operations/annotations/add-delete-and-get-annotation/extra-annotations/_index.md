@@ -94,9 +94,9 @@ The following code snippet shows how to add Caret Annotation to a PDF file:
 
 ```csharp
 // The path to the documents directory.
-private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
 // Load the PDF file
-Document document = new Document(_dataDir + "sample.pdf");
+Document document = new Document(dataDir + "sample.pdf");
 // This annotation is used to indicate the insertion of text
 var caretAnnotation1 = new CaretAnnotation(document.Pages[1], new Rectangle(299.988, 713.664, 308.708, 720.769))
 {
@@ -134,7 +134,7 @@ document.Pages[1].Annotations.Add(caretAnnotation2);
 document.Pages[1].Annotations.Add(strikeOutAnnotation);
 
 // Save result file
-document.Save(_dataDir + "sample_caret.pdf");
+document.Save(dataDir + "sample_caret.pdf");
 ```
 
 ### Get Caret Annotation
@@ -145,7 +145,7 @@ Please try using the following code snippet to Get Caret Annotation in PDF docum
 public static void GetCaretAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "sample_caret.pdf");
+    Document document = new Document(dataDir + "sample_caret.pdf");
     var caretAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Caret)
         .Cast<CaretAnnotation>();
@@ -164,7 +164,7 @@ The following code snippet shows how Delete Caret Annotation from a PDF file.
 public static void DeleteCaretAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "sample_caret.pdf");
+    Document document = new Document(dataDir + "sample_caret.pdf");
     var caretAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Caret)
         .Cast<CaretAnnotation>();
@@ -173,7 +173,7 @@ public static void DeleteCaretAnnotation()
     {
         document.Pages[1].Annotations.Delete(ca);
     }
-    document.Save(_dataDir + "sample_caret_del.pdf");
+    document.Save(dataDir + "sample_caret_del.pdf");
 }
 ```
 

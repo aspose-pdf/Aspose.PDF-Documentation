@@ -15,7 +15,7 @@ The following code snippet shows you how to use PdfExtractor methods:
 public static void ExtractAttachments()
 {
     PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample-attach.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample-attach.pdf");
 
     // Extract attachments
     pdfExtractor.ExtractAttachment();
@@ -25,7 +25,7 @@ public static void ExtractAttachments()
     {
          Console.WriteLine("Extracting and storing...");
          // Get extracted attachments
-         pdfExtractor.GetAttachment(_dataDir);
+         pdfExtractor.GetAttachment(dataDir);
     }
 }
 ```

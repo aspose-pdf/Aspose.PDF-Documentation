@@ -16,9 +16,9 @@ The following code snippet shows you how to delete images from a particular page
 ```csharp
 public static void DeleteImage()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
+    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
     editor.DeleteImage(2, new[] { 2 });
-    editor.Save(_dataDir + "PdfContentEditorDemo10.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
 }
 ```
 
@@ -31,9 +31,9 @@ The following code snippet shows you how to delete all the images from a PDF fil
 ```csharp
 public static void DeleteImages()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample.pdf"));
+    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
     editor.DeleteImage();
-    editor.Save(_dataDir + "PdfContentEditorDemo11.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
 }
 ```
 
@@ -44,8 +44,8 @@ the [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/p
 ```csharp
 public static void ReplaceImage()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(_dataDir + "sample_cats_dogs.pdf"));
+    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample_cats_dogs.pdf"));
     editor.ReplaceImage(2, 4, @"C:\Samples\Facades\PdfContentEditor\cat04.jpg");
-    editor.Save(_dataDir + "PdfContentEditorDemo12.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
 }
 ```

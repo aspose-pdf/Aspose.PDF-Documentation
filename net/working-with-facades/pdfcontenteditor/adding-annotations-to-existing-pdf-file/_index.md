@@ -24,7 +24,7 @@ The following code snippet shows you how to add free text annotation in a PDF fi
 ```csharp
 public static void AddFreeTextAnnotation()
 {
-    var document = new Document(_dataDir + "sample.pdf");
+    var document = new Document(dataDir + "sample.pdf");
     PdfContentEditor editor = new PdfContentEditor(document);
     TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
     tfa.Visit(document.Pages[1]);
@@ -38,7 +38,7 @@ public static void AddFreeTextAnnotation()
     };
 
     editor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
-    editor.Save(_dataDir + "PdfContentEditorDemo_FreeTextAnnotation.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_FreeTextAnnotation.pdf");
 }
 ```
 
@@ -49,7 +49,7 @@ In this example also, you need to create an object of type [PdfContentEditor](ht
 ```csharp
 public static void AddTextAnnotation()
 {
-    var document = new Document(_dataDir + "sample.pdf");
+    var document = new Document(dataDir + "sample.pdf");
     PdfContentEditor editor = new PdfContentEditor(document);
     TextFragmentAbsorber tfa = new TextFragmentAbsorber("PDF");
     tfa.Visit(document.Pages[1]);
@@ -63,7 +63,7 @@ public static void AddTextAnnotation()
     };
 
     editor.CreateText(rect, "Aspose User", "PDF is a better format for modern documents", false, "Key", 1);
-    editor.Save(_dataDir + "PdfContentEditorDemo_TextAnnotation.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_TextAnnotation.pdf");
 }
 ```
 
@@ -74,7 +74,7 @@ We also specify the Rectangle, coordinates of the beginning and end of the line,
 ```csharp
 public static void AddLineAnnotation()
 {
-    var document = new Document(_dataDir + "Appartments.pdf");
+    var document = new Document(dataDir + "Appartments.pdf");
     PdfContentEditor editor = new PdfContentEditor(document);
     // Create Line Annotation
     editor.CreateLine(
@@ -85,6 +85,6 @@ public static void AddLineAnnotation()
         "dash",
         new int[] { 1, 0, 3 },
         new[] { "Open", "Open" });
-    editor.Save(_dataDir + "PdfContentEditorDemo_LineAnnotation.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_LineAnnotation.pdf");
 }
 ```

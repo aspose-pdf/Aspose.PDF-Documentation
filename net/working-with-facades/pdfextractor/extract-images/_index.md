@@ -16,7 +16,7 @@ public static void ExtractImagesWholePDF()
 {
     // Open input PDF
     PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
     // Extract all the images
     pdfExtractor.ExtractImage();
@@ -24,7 +24,7 @@ public static void ExtractImagesWholePDF()
     // Get all the extracted images
     while (pdfExtractor.HasNextImage())
     {
-        pdfExtractor.GetNextImage(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
+        pdfExtractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
     }
 }
 ```
@@ -38,7 +38,7 @@ public static void ExtractImagesWholePDFStreams()
 {
     // Open input PDF
     PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
     // Extract images
     pdfExtractor.ExtractImage();
@@ -51,7 +51,7 @@ public static void ExtractImagesWholePDFStreams()
 
         // Write to disk, if you like, or use it otherwise.
         FileStream fileStream = new
-        FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
+        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
         memoryStream.WriteTo(fileStream);
         fileStream.Close();
     }
@@ -67,7 +67,7 @@ public static void ExtractImagesParticularPage()
 {
     // Open input PDF
     PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
     // Set StartPage and EndPage properties to the page number to
     // You want to extract images from
@@ -85,7 +85,7 @@ public static void ExtractImagesParticularPage()
 
         // Write to disk, if you like, or use it otherwise.
         FileStream fileStream = new
-        FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
+        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
         memoryStream.WriteTo(fileStream);
         fileStream.Close();
     }
@@ -101,7 +101,7 @@ public static void ExtractImagesRangePages()
 {
     // Open input PDF
     PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
     // Set StartPage and EndPage properties to the page number to
     // You want to extract images from
@@ -120,7 +120,7 @@ public static void ExtractImagesRangePages()
 
         // Write to disk, if you like, or use it otherwise.
         FileStream fileStream = new
-        FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
+        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
         memoryStream.WriteTo(fileStream);
         fileStream.Close();
     }
@@ -138,7 +138,7 @@ public static void ExtractImagesImageExtractionMode()
 {
     // Open input PDF
     PdfExtractor extractor = new PdfExtractor();
-    extractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
     // Specify Image Extraction Mode
     //extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
@@ -150,7 +150,7 @@ public static void ExtractImagesImageExtractionMode()
     // Get all the extracted images
     while (extractor.HasNextImage())
     {
-        extractor.GetNextImage(_dataDir + DateTime.Now.Ticks.ToString() + "_out.png", System.Drawing.Imaging.ImageFormat.Png);
+        extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.png", System.Drawing.Imaging.ImageFormat.Png);
     }
 }
 ```
@@ -166,7 +166,7 @@ public static void CheckIfPdfContainsTextOrImages()
     PdfExtractor extractor = new PdfExtractor();
 
     // Bind the input PDF document to extractor
-    extractor.BindPdf(_dataDir + "FilledForm.pdf");
+    extractor.BindPdf(dataDir + "FilledForm.pdf");
     // Extract text from the input PDF document
     extractor.ExtractText();
     // Save the extracted text to a text file

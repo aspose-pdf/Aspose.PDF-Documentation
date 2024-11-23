@@ -135,8 +135,8 @@ Check next code snippet for converting CGM files to PDF format.
 public static void ConvertCGMtoPDF()
 {
     CgmLoadOptions option = new CgmLoadOptions();
-    Document document= new Document(_dataDir+"corvette.cgm", option);
-    document.Save(_dataDir+"CGMtoPDF.pdf");
+    Document document= new Document(dataDir+"corvette.cgm", option);
+    document.Save(dataDir+"CGMtoPDF.pdf");
 }
 ```
 
@@ -158,7 +158,7 @@ public static void ConvertCGMtoPDF()
 The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 
 ```csharp
-private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
 // Convert DICOM images to PDF using Image class
 public static void ConvertDICOMtoPDF()
 {
@@ -171,11 +171,11 @@ public static void ConvertDICOMtoPDF()
     Image image = new Image
     {
         FileType = ImageFileType.Dicom,
-        File = _dataDir + "bmode.dcm"
+        File = dataDir + "bmode.dcm"
     };
     document.Pages[1].Paragraphs.Add(image);
     // Save output as PDF format
-    document.Save(_dataDir + "PDFWithDicomImage_out.pdf");
+    document.Save(dataDir + "PDFWithDicomImage_out.pdf");
 }
 ```
 
@@ -442,8 +442,8 @@ The following code snippet shows the process of converting SVG file into PDF for
 public static void ConvertSVGtoPDF()
 {
     SvgLoadOptions option = new SvgLoadOptions();
-    Document document= new Document(_dataDir + "car.svg", option);
-    document.Save(_dataDir + "svgtest.pdf");
+    Document document= new Document(dataDir + "car.svg", option);
+    document.Save(dataDir + "svgtest.pdf");
 }
 ```
 
@@ -702,7 +702,7 @@ public static void TiffToPDF2()
     Document pdf = new Document();
 
     //Load TIFF image into stream
-    Bitmap bitmap = new Bitmap(File.OpenRead(_dataDir+"multipage.tif"));
+    Bitmap bitmap = new Bitmap(File.OpenRead(dataDir+"multipage.tif"));
     // Convert multi page or multi frame TIFF to PDF
     FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
     int frameCount = bitmap.GetFrameCount(dimension);
@@ -727,7 +727,7 @@ public static void TiffToPDF2()
     }
 
     // Save output PDF file
-    pdf.Save(_dataDir + "TifftoPDF.pdf");
+    pdf.Save(dataDir + "TifftoPDF.pdf");
 }
 ```
 

@@ -127,7 +127,7 @@ public static void Arc()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingArc_out.pdf");
+    document.Save(dataDir + "DrawingArc_out.pdf");
 }
 ```
 
@@ -162,7 +162,7 @@ public static void ArcFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "ExampleFilledArc_out.pdf");
+    document.Save(dataDir + "ExampleFilledArc_out.pdf");
 }
 ```
 

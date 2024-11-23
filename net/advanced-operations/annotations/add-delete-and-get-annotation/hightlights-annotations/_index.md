@@ -102,9 +102,9 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 
 ```csharp
 // The path to the documents directory.
-private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
 // Load the PDF file
-Document document = new Document(_dataDir + "sample.pdf");
+Document document = new Document(dataDir + "sample.pdf");
 var tfa = new TextFragmentAbsorber("PDF");
 tfa.Visit(document.Pages[1]);
 
@@ -141,7 +141,7 @@ document.Pages[1].Annotations.Add(squigglyAnnotation);
 document.Pages[1].Annotations.Add(strikeOutAnnotation);
 document.Pages[1].Annotations.Add(underlineAnnotation);
 // Save result file
-document.Save(_dataDir + "sample_mod.pdf");
+document.Save(dataDir + "sample_mod.pdf");
 ```
 
 If you want to highlight a multi-line fragment you should use advanced example:
@@ -152,7 +152,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
 /// </summary>
 public static void AddHighlightAnnotationAdvanced()
 {
-    var document = new Document(_dataDir + "sample_mod.pdf");
+    var document = new Document(dataDir + "sample_mod.pdf");
     var page = document.Pages[1];
     var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
     tfa.Visit(page);
@@ -161,7 +161,7 @@ public static void AddHighlightAnnotationAdvanced()
         var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
         page.Annotations.Add(highlightAnnotation);
     }
-    document.Save(_dataDir + "sample_mod.pdf");
+    document.Save(dataDir + "sample_mod.pdf");
 }
 
 private static HighlightAnnotation HighLightTextFragment(Page page,
@@ -214,7 +214,7 @@ private static HighlightAnnotation HighLightTextFragment(Page page,
 public static void GetHighlightedText()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "sample_mod.pdf");
+    Document document = new Document(dataDir + "sample_mod.pdf");
     var highlightAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Highlight)
         .Cast<HighlightAnnotation>();
@@ -233,7 +233,7 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 public static void GetTextMarkupAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "sample_mod.pdf");
+    Document document = new Document(dataDir + "sample_mod.pdf");
     var textMarkupAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Highlight
         || a.AnnotationType == AnnotationType.Squiggly)
@@ -253,7 +253,7 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
 public static void DeleteTextMarkupAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "sample_mod.pdf");
+    Document document = new Document(dataDir + "sample_mod.pdf");
     var textMarkupAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Highlight
         ||a.AnnotationType == AnnotationType.Squiggly)
@@ -262,7 +262,7 @@ public static void DeleteTextMarkupAnnotation()
     {
         document.Pages[1].Annotations.Delete(ta);
     }
-    document.Save(_dataDir + "sample_del.pdf");
+    document.Save(dataDir + "sample_del.pdf");
 }
 ```
 

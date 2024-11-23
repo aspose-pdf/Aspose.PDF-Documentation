@@ -128,7 +128,7 @@ public static void AddLineObjectToPDF()
     graph.Shapes.Add(line);
 
     // Save PDF file
-    document.Save(_dataDir + "AddLineObject_out.pdf");
+    document.Save(dataDir + "AddLineObject_out.pdf");
 }
 ```
 
@@ -161,7 +161,7 @@ public static void DashLengthInBlackAndDashLengthInWhite()
     // Add line to shapes collection of drawing object
     canvas.Shapes.Add(line);
     // Save PDF file
-    document.Save(_dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
+    document.Save(dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
 }
 ```
 
@@ -218,7 +218,7 @@ public static void ExampleLineAcrossPage()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "ExampleLineAcrossPage_out.pdf");
+    document.Save(dataDir + "ExampleLineAcrossPage_out.pdf");
 }
 ```
 

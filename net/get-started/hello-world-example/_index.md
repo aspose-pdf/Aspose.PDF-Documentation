@@ -95,23 +95,15 @@ Below code snippet follows these steps:
 Following code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API.
 
 ```csharp
-namespace Aspose.Pdf.Examples
-{
-    public static class ExampleGetStarted
-    {
-        private static readonly string _dataDir = "..\\..\\..\\Samples\\";
-        public static void HelloWorld()
-        {
-            // Initialize document object
-            Document document = new Document();
-            // Add page
-            Page page = document.Pages.Add();
-            // Add text to new page
-            page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-            // Save updated PDF
-            var outputFileName = _dataDir + "HelloWorld_out.pdf";
-            document.Save(outputFileName);
-        }
-    }
-}
+
+private static readonly string dataDir = "..\\..\\..\\Samples\\";
+// Initialize document object
+Document document = new Document();
+// Add page
+Page page = document.Pages.Add();
+// Add text to new page
+page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+// Save updated PDF
+var outputFileName = dataDir + "HelloWorld_out.pdf";
+document.Save(outputFileName);
 ```

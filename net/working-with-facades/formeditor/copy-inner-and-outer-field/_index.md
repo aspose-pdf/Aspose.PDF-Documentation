@@ -14,11 +14,11 @@ draft: false
 public static void CopyInnerField()
 {
     var editor = new FormEditor();
-    var document = new Document(_dataDir + "Sample-Form-01.pdf");
+    var document = new Document(dataDir + "Sample-Form-01.pdf");
     document.Pages.Add();
     editor.BindPdf(document);
     editor.CopyInnerField("Last Name", "Last Name 2", 2);
-    editor.Save(_dataDir + "Sample-Form-01-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
 }
 ```
 
@@ -33,9 +33,9 @@ public static void CopyOuterField()
     var document = new Document();
     document.Pages.Add();
     editor.BindPdf(document);
-    editor.CopyOuterField(_dataDir + "Sample-Form-01.pdf", "First Name", 1);
-    editor.CopyOuterField(_dataDir + "Sample-Form-01.pdf", "Last Name", 1);
-    editor.Save(_dataDir + "Sample-Form-02-mod.pdf");
+    editor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "First Name", 1);
+    editor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "Last Name", 1);
+    editor.Save(dataDir + "Sample-Form-02-mod.pdf");
 }
 ```
 

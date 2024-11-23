@@ -16,11 +16,11 @@ In order to replace text in an existing PDF file, you need to create an object o
 public static void ReplaceText01()
 {
     PdfContentEditor editor = new PdfContentEditor();
-    ditor.BindPdf(_dataDir + "sample.pdf");
+    ditor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("Value", "Label");
 
     // save the output file
-    editor.Save(_dataDir + "PdfContentEditorDemo01.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo01.pdf");
 }
 ```
 
@@ -38,11 +38,11 @@ In the second example, you will see how, in addition to replacing the text, you 
 public static void ReplaceText02()
 {
     PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("Value", "Label", 12);
 
     // save the output file
-    editor.Save(_dataDir + "PdfContentEditorDemo02.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo02.pdf");
 }
 ```
 
@@ -52,7 +52,7 @@ For more advanced possibilities for working with our text, we will use the [Text
 public static void ReplaceText03()
 {
     PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     TextState textState = new TextState
     {
         ForegroundColor = Color.Red,
@@ -61,7 +61,7 @@ public static void ReplaceText03()
     editor.ReplaceText("Value", "Label", textState);
 
     // save the output file
-    editor.Save(_dataDir + "PdfContentEditorDemo03.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo03.pdf");
 }
 ```
 
@@ -71,7 +71,7 @@ In case you need to replace all the specified text in the document, use the foll
 public static void ReplaceText04()
 {
     PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     int count = 0;
     while (editor.ReplaceText("Value", "Label"))
     { 
@@ -81,7 +81,7 @@ public static void ReplaceText04()
     Console.WriteLine($"{count} occurrences have been replaced.");
 
     // save the output file
-    editor.Save(_dataDir + "PdfContentEditorDemo04.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo04.pdf");
 }
 ```
 
@@ -93,7 +93,7 @@ The following code snippet shows how to make all the text replacements but on a 
 public static void ReplaceText05()
 {
     PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     int count = 0;
     while (editor.ReplaceText("9999", 2, "ABCDE"))
     {
@@ -103,7 +103,7 @@ public static void ReplaceText05()
     Console.WriteLine($"{count} occurrences have been replaced.");
 
     // save the output file
-    editor.Save(_dataDir + "PdfContentEditorDemo05.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo05.pdf");
 }
 ```
 
@@ -120,9 +120,9 @@ public static void ReplaceText06()
             ReplaceScope = ReplaceTextStrategy.Scope.ReplaceAll
         }
     };
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("\\d{4}", "ABCDE");
     // save the output file
-    editor.Save(_dataDir + "PdfContentEditorDemo06.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo06.pdf");
 }
 ```

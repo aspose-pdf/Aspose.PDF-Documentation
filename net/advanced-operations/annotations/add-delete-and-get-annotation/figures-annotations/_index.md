@@ -118,7 +118,7 @@ The following code snippet shows how to add Line Annotation to a PDF file:
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments.pdf");
+Document document = new Document(dataDir + "Appartments.pdf");
 
 // Create Line Annotation
 var lineAnnotation = new LineAnnotation(
@@ -136,7 +136,7 @@ var lineAnnotation = new LineAnnotation(
 
 // Add annotation to the page
 document.Pages[1].Annotations.Add(lineAnnotation);
-document.Save(_dataDir + "Appartments_mod.pdf");
+document.Save(dataDir + "Appartments_mod.pdf");
 ```
 
 ## Adding Square or Circle
@@ -276,7 +276,7 @@ The example below explains how to obtain all Line Annotations from the first pag
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var lineAnnotations = document.Pages[1].Annotations
     .Where(a => a.AnnotationType == AnnotationType.Line)
     .Cast<LineAnnotation>();
@@ -292,7 +292,7 @@ The example below explains how to obtain all Polyline Annotations from the first
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var circleAnnotations = document.Pages[1].Annotations
     .Where(a => a.AnnotationType == AnnotationType.Line)
     .Cast<CircleAnnotation>();
@@ -308,7 +308,7 @@ The example below explains how to obtain all Polyline Annotations from the first
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var squareAnnotations = document.Pages[1].Annotations
     .Where(a => a.AnnotationType == AnnotationType.Square)
     .Cast<SquareAnnotation>();
@@ -324,7 +324,7 @@ The example below explains how to obtain all Polyline Annotations from the first
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var polyAnnotations = document.Pages[1].Annotations
     .Where(a => a.AnnotationType == AnnotationType.PolyLine)
     .Cast<PolylineAnnotation>();
@@ -339,7 +339,7 @@ foreach (var pa in polyAnnotations)
 The example below explains how to obtain all Polygon Annotations from the first page of the PDF document.
 
 ```csharp
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var polyAnnotations = document.Pages[1].Annotations
     .Where(a => a.AnnotationType == AnnotationType.Polygon)
     .Cast<PolygonAnnotation>();
@@ -360,7 +360,7 @@ The approach to removing annotation from PDF in pretty simple:
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var lineAnnotations = document.Pages[1].Annotations
     .Where(a => a.AnnotationType == AnnotationType.Line)
     .Cast<LineAnnotation>();
@@ -375,7 +375,7 @@ foreach (var la in lineAnnotations)
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var figures = document.Pages[1].Annotations
     .Where(a =>
         a.AnnotationType == AnnotationType.Circle
@@ -385,7 +385,7 @@ foreach (var fig in figures)
 {
     document.Pages[1].Annotations.Delete(fig);
 }
-document.Save(_dataDir + "Appartments_del.pdf");
+document.Save(dataDir + "Appartments_del.pdf");
 ```
 
 ### Delete Polygon and Polyline Annotations
@@ -394,7 +394,7 @@ The following code snippet shows how Delete Polygon and Polyline Annotations fro
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "Appartments_mod.pdf");
+Document document = new Document(dataDir + "Appartments_mod.pdf");
 var polyAnnotations = document.Pages[1].Annotations
                 .Where(a => a.AnnotationType == AnnotationType.PolyLine
                 || a.AnnotationType == AnnotationType.Polygon);
@@ -405,7 +405,7 @@ foreach (var pa in polyAnnotations)
 }
 
 // Save result file
-document.Save(_dataDir + "Appartments_del.pdf");
+document.Save(dataDir + "Appartments_del.pdf");
 ```
 
 ## How to add Ink Annotation to PDF file
@@ -416,7 +416,7 @@ The [InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/
 
 ```csharp
 // Load the PDF file
-Document document = new Document(_dataDir + "appartments.pdf");
+Document document = new Document(dataDir + "appartments.pdf");
 Page page = document.Pages[1];
 
 Rectangle arect = new Rectangle(156.574, 521.316, 541.168, 575.703);
@@ -446,7 +446,7 @@ ia.Border = border;
 page.Annotations.Add(ia);
 
 // Save output file
-document.Save(_dataDir + "appartments_mod.pdf");
+document.Save(dataDir + "appartments_mod.pdf");
 ```
 
 ### Set Line width of InkAnnotation

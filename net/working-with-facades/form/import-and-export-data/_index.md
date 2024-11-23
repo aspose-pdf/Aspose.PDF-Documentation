@@ -49,7 +49,7 @@ Aspose.Pdf.Facades provides an alternative API for working with form fields. Thi
 ```cs
 Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
 // Open Document
-form.BindPdf(_dataDir + "Sample-Form-01.pdf");
+form.BindPdf(dataDir + "Sample-Form-01.pdf");
 
 // Create XFDF file.
 System.IO.FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Create);

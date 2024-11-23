@@ -111,7 +111,7 @@ public static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // Load PDF document
-    Document document = new Document(_dataDir + "input.pdf");
+    Document document = new Document(dataDir + "input.pdf");
     // Instantiate ExcelSave Option object
     Aspose.Pdf.ExcelSaveOptions excelsave = new ExcelSaveOptions {InsertBlankColumnAtFirst = false};
     // Save the output in XLS format
@@ -134,7 +134,7 @@ public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // Load PDF document
-    Document document = new Document(_dataDir + "input.pdf");
+    Document document = new Document(dataDir + "input.pdf");
 
     // Instantiate ExcelSave Option object
     Aspose.Pdf.ExcelSaveOptions excelsave = new ExcelSaveOptions {MinimizeTheNumberOfWorksheets = true};
@@ -163,7 +163,7 @@ public static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
     // Load PDF document
-    Document document = new Document(_dataDir + "input.pdf");
+    Document document = new Document(dataDir + "input.pdf");
 
     // Instantiate ExcelSave Option object
     ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003 };

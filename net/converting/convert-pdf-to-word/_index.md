@@ -58,9 +58,9 @@ The following C# code snippet shows converting a PDF file into DOC format.
 public static void ConvertPDFtoWord()
 {
     // Open the source PDF document
-    Document document = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
     // Save the file into MS document format
-    document.Save(_dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
+    document.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
 }
 ```
 
@@ -77,8 +77,8 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 ```csharp
 public static void ConvertPDFtoWordDocAdvanced()
 {
-    var pdfFile = _dataDir + "PDF-to-DOC.pdf";
-    var docFile = _dataDir + "PDF-to-DOC.doc";
+    var pdfFile = dataDir + "PDF-to-DOC.pdf";
+    var docFile = dataDir + "PDF-to-DOC.doc";
     Document document = new Document(pdfFile);
     DocSaveOptions saveOptions = new DocSaveOptions
     {
@@ -117,9 +117,9 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 public static void ConvertPDFtoWord_DOCX_Format()
 {
     // Open the source PDF document
-    Document document = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
     // Save the resultant DOC file
-    document.Save(_dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+    document.Save(dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
 }
 ```
 
@@ -133,7 +133,7 @@ There is also recognition of numbered lists and many other minor things.
 public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {    
     // Open the source PDF document
-    Document document = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
 
     // Instantiate DocSaveOptions object
     DocSaveOptions saveOptions = new DocSaveOptions

@@ -21,7 +21,7 @@ For example, we specify the parameter [CenterWindow](https://reference.aspose.co
 ```csharp
 public static void SetViewerPreference()
 {
-    var document = new Document(_dataDir + "Sample.pdf");
+    var document = new Document(dataDir + "Sample.pdf");
     PdfContentEditor editor = new PdfContentEditor(document);
 
     // Change Viewer Preferences
@@ -30,7 +30,7 @@ public static void SetViewerPreference()
     editor.ChangeViewerPreference(ViewerPreference.PageModeFullScreen);
     
     // Saves the result PDF to file
-    editor.Save(_dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
     GetViewerPreference();
 }
 ```

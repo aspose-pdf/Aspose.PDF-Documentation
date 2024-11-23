@@ -28,7 +28,7 @@ public static void CheckIfPdfContainsTextOrImages()
     PdfExtractor extractor = new PdfExtractor();
 
     // Bind the input PDF document to extractor
-    extractor.BindPdf(_dataDir + "FilledForm.pdf");
+    extractor.BindPdf(dataDir + "FilledForm.pdf");
     // Extract text from the input PDF document
     extractor.ExtractText();
     // Save the extracted text to a text file

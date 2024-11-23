@@ -1900,8 +1900,8 @@ To add XSL params we need to create own [XsltArgumentList](https://docs.microsof
 ```csharp
 public static void Example_XSLFO_to_PDF()
     {
-        var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-        var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+        var XmlContent = File.ReadAllText(dataDir + "employees.xml");
+        var XsltContent = File.ReadAllText(dataDir + "employees.xslt");
 
         var options = new Aspose.Pdf.XslFoLoadOptions();
 
@@ -1911,7 +1911,7 @@ public static void Example_XSLFO_to_PDF()
         //---------------------
 
         var document = new Document(TransformXml(XmlContent, XsltContent, argsList), options);
-        document.Save(_dataDir + "data_xml.pdf");
+        document.Save(dataDir + "data_xml.pdf");
     }
 
  public static MemoryStream TransformXml(string inputXml, string xsltString, XsltArgumentList argsList=null)

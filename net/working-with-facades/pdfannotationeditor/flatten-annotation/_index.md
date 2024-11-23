@@ -20,7 +20,7 @@ Check how the [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspos
 public static void Flattening()
 {
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
     FlattenSettings flattenSettings = new FlattenSettings
     {
         ApplyRedactions = true,
@@ -29,6 +29,6 @@ public static void Flattening()
         UpdateAppearances = true
     };
     annotationEditor.FlatteningAnnotations(flattenSettings);
-    annotationEditor.Save(_dataDir + "FlattenAnnotation.pdf");
+    annotationEditor.Save(dataDir + "FlattenAnnotation.pdf");
 }
 ```

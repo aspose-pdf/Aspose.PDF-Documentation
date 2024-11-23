@@ -16,13 +16,13 @@ draft: false
 public static void AddListItem()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
     editor.AddField(FieldType.ListBox, "Country", 1, 232.56f, 476.75f, 352.28f, 514.03f);
     editor.AddListItem("Country", "USA");
     editor.AddListItem("Country", "Canada");
     editor.AddListItem("Country", "France");
     editor.AddListItem("Country", "Spain");
-    editor.Save(_dataDir + "Sample-Form-01-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
 }
 ```
 
@@ -34,8 +34,8 @@ public static void AddListItem()
 public static void DelListItem()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-04.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-04.pdf");
     editor.DelListItem("Country", "France");
-    editor.Save(_dataDir + "Sample-Form-04-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-04-mod.pdf");
 }
 ```

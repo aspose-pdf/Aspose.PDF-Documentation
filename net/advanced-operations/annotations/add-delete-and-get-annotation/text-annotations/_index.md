@@ -132,11 +132,11 @@ The following code snippet shows you how to add [Popup Annotation](https://refer
 
 ```csharp
 // The path to the documents directory.
-private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
 public static void AddLineAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(_dataDir + "Appartments.pdf");
+    Document document = new Document(dataDir + "Appartments.pdf");
 
     // Create Line Annotation
     var lineAnnotation = new LineAnnotation(
@@ -154,7 +154,7 @@ public static void AddLineAnnotation()
 
     // Add annotation to the page
     document.Pages[1].Annotations.Add(lineAnnotation);
-    document.Save(_dataDir + "Appartments_mod.pdf");
+    document.Save(dataDir + "Appartments_mod.pdf");
 }
 ```
 

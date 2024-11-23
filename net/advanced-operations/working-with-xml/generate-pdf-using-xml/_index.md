@@ -342,7 +342,7 @@ So, we need to transform XML and load into PDF document. The following example s
 ```csharp
 private static void ExampleXSLTtoPDF()
 {
-    var _dataDir = @"C:\tmp\";
+    var dataDir = @"C:\tmp\";
     var XmlContent = File.ReadAllText(@"XMLFile1.xml");
     var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
@@ -350,7 +350,7 @@ private static void ExampleXSLTtoPDF()
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
     var document = new Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    document.Save(_dataDir + "data_xml.pdf");
+    document.Save(dataDir + "data_xml.pdf");
 }
 
 public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
@@ -465,12 +465,12 @@ The following snippet shows how to use this class with the sample files describe
 ```csharp
 public static void Example_XSLFO_to_PDF()
 {
-    var _dataDir = @"C:\tmp\";
+    var dataDir = @"C:\tmp\";
     // Instantiate XslFoLoadOption object
     var options = new Pdf.XslFoLoadOptions("employees.xslt");
     // Create Document object
     var document = new Document("employees.xml", options);
-    document.Save(_dataDir + "data_xml.pdf");
+    document.Save(dataDir + "data_xml.pdf");
 }
 ```
 
@@ -575,9 +575,9 @@ The following snippet shows how to use this class with the sample files describe
 ```csharp
 public static void Example_XSLFO_to_PDF_Param_21_7()
 {
-  string xmlInputFile = _dataDir + "employees.xml";
-  string xsltInputFile = _dataDir + "employees.xslt";
-  string outputFile = _dataDir + "out.pdf";
+  string xmlInputFile = dataDir + "employees.xml";
+  string xsltInputFile = dataDir + "employees.xslt";
+  string outputFile = dataDir + "out.pdf";
 
   XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
 
@@ -594,12 +594,12 @@ If you use version earlier than 21.7, please use following techinque:
 ```csharp
 public static void Example_XSLFO_to_PDF_Param_21_6()
 {
-    var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-    var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+    var XmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var XsltContent = File.ReadAllText(dataDir + "employees.xslt");
 
     var options = new Aspose.Pdf.XslFoLoadOptions();
     var document = new Document(TransformXSL(XmlContent, XsltContent), options);
-    document.Save(_dataDir + "data_xml.pdf");
+    document.Save(dataDir + "data_xml.pdf");
 }
 
 public static MemoryStream TransformXSL(string inputXml, string xsltString)
@@ -651,10 +651,10 @@ To generate PDF document we will use [BindXml](https://reference.aspose.com/pdf/
 ```csharp
 private static void Example_XML_to_PDF()
 {
-    var _dataDir = @"C:\tmp\";
+    var dataDir = @"C:\tmp\";
     var document = new Document();
-    document.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    document.Save(_dataDir + "data_xml.pdf");
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+    document.Save(dataDir + "data_xml.pdf");
 }
 ```
 

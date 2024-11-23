@@ -95,8 +95,8 @@ Next following code snippet show you how to convert EPUB files to PDF format wit
 public static void ConvertEPUBtoPDF()
 {
     EpubLoadOptions option = new EpubLoadOptions();
-    Document document= new Document(_dataDir + "WebAssembly.epub", option);
-    document.Save(_dataDir + "epub_test.pdf");
+    Document document= new Document(dataDir + "WebAssembly.epub", option);
+    document.Save(dataDir + "epub_test.pdf");
 }
 ```
 
@@ -106,8 +106,8 @@ You can also set page size for conversion. To define new page size you `SizeF` o
 public static void ConvertEPUBtoPDFAdv()
 {
     EpubLoadOptions option = new EpubLoadOptions(new SizeF(1190, 1684));
-    Document document= new Document(_dataDir + "WebAssembly.epub", option);
-    document.Save(_dataDir + "epub_test.pdf");
+    Document document= new Document(dataDir + "WebAssembly.epub", option);
+    document.Save(dataDir + "epub_test.pdf");
 }
 ```
 
@@ -393,8 +393,8 @@ The following code snippet shows the process of converting a PCL file into PDF f
 public static void ConvertPCLtoPDF()
 {
     PclLoadOptions options = new PclLoadOptions();
-    Document document= new Document(_dataDir + "demo.pcl", options);
-    document.Save(_dataDir + "pcl_test.pdf");
+    Document document= new Document(dataDir + "demo.pcl", options);
+    document.Save(dataDir + "pcl_test.pdf");
 }
 ```
 
@@ -404,7 +404,7 @@ You can also monitor the detection of errors during the conversion process. To d
 public static void ConvertPCLtoPDFAvdanced()
 {
     PclLoadOptions options = new PclLoadOptions { SupressErrors = true };
-    Document document= new Document(_dataDir + "demo.pcl", options);
+    Document document= new Document(dataDir + "demo.pcl", options);
     if (options.Exceptions!=null)
     {
         foreach (var ex in options.Exceptions)
@@ -412,7 +412,7 @@ public static void ConvertPCLtoPDFAvdanced()
             Console.WriteLine(ex.Message);
         }
     }
-    document.Save(_dataDir + "pcl_test.pdf");
+    document.Save(dataDir + "pcl_test.pdf");
 }
 ```
 
@@ -495,7 +495,7 @@ Following example shows how to convert pre-formatted text file (80x25) to PDF do
 public static void ConvertPreFormattedTextToPdf()
 {
     // Read the text file as array of string
-    var lines = System.IO.File.ReadAllLines(_dataDir + "rfc822.txt");
+    var lines = System.IO.File.ReadAllLines(dataDir + "rfc822.txt");
 
     // Instantiate a Document object by calling its empty constructor
     Document document= new Document();
@@ -534,7 +534,7 @@ public static void ConvertPreFormattedTextToPdf()
     }
 
     // Save resultant PDF file
-    document.Save(_dataDir + "TexttoPDF_out.pdf");
+    document.Save(dataDir + "TexttoPDF_out.pdf");
 }
 ```
 
@@ -600,11 +600,11 @@ Following code snippet can be used to convert a PostScript file into PDF format 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
-string _dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Create a new instance of PsLoadOptions
 PsLoadOptions options = new PsLoadOptions();
 // Open .ps document with created load options
-Document document = new Document(_dataDir + "input.ps", options);
+Document document = new Document(dataDir + "input.ps", options);
 // Save document
 document.Save(dataDir + "PSToPDF.pdf");
 ```
@@ -618,8 +618,8 @@ public static void ConvertPostscriptToPDFAvdanced()
     {
         FontsFolders = new [] { @"c:\tmp\fonts1", @"c:\tmp\fonts2"}
     };
-    Document document = new Document(_dataDir + "input.ps", options);
-    document.Save(_dataDir + "ps_test.pdf");
+    Document document = new Document(dataDir + "input.ps", options);
+    document.Save(dataDir + "ps_test.pdf");
 }
 ```
 
@@ -653,7 +653,7 @@ public static void Convert_XSLFO_to_PDF()
     options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
     // Create Document object
     var document = new Document(".\\samples\\employees.xml", options);
-    document.Save(_dataDir + "data_xml.pdf");
+    document.Save(dataDir + "data_xml.pdf");
 }
 ```
 
@@ -678,9 +678,9 @@ public static void ConvertTeXtoPDF()
     // Instantiate Latex Load option object
     TeXLoadOptions options = new TeXLoadOptions();
     // Create Document object
-    Document document= new Document(_dataDir + "samplefile.tex", options);
+    Document document= new Document(dataDir + "samplefile.tex", options);
     // Save the output in PDF file
-    document.Save(_dataDir + "TeXToPDF_out.pdf");
+    document.Save(dataDir + "TeXToPDF_out.pdf");
 }
 ```
 

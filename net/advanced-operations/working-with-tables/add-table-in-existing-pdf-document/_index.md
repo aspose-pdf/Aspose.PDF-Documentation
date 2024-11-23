@@ -196,7 +196,7 @@ public static void AddTable_RowColSpan()
     document.Pages[1].Paragraphs.Add(table);
 
     // Save updated document containing table object
-    doc.Save(_dataDir + "document_with_table_out.pdf");
+    doc.Save(dataDir + "document_with_table_out.pdf");
 }
 ```
 

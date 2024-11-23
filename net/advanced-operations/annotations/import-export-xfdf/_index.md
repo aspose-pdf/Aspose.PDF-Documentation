@@ -92,7 +92,7 @@ The following code snippet shows you how to export annotations to an XFDF file:
 
 ```csharp
 // The path to the documents directory.
-private const string _dataDir = "..\\..\\..\\..\\Samples\\";
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
 
 /// <summary>
 /// Importing annotations from XFDF file
@@ -106,10 +106,10 @@ private const string _dataDir = "..\\..\\..\\..\\Samples\\";
 PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
 
 // Bind PDF document to the Annotation Editor
-AnnotationEditor.BindPdf(_dataDir + "AnnotationDemo1.pdf");
+AnnotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
 
 // Export annotations
-var fileStream = File.OpenWrite(_dataDir + "exportannotations.xfdf");
+var fileStream = File.OpenWrite(dataDir + "exportannotations.xfdf");
 var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
 AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
 fileStream.Flush();
@@ -128,7 +128,7 @@ public static void ImportAnnotationXFDF()
     document.Pages.Add();
     AnnotationEditor.BindPdf(document);
 
-    var exportFileName = _dataDir + "exportannotations.xfdf";
+    var exportFileName = dataDir + "exportannotations.xfdf";
     if (!File.Exists(exportFileName))
     {
         ExportAnnotationXFDF();
@@ -138,7 +138,7 @@ public static void ImportAnnotationXFDF()
     AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
 
     // Save output PDF
-    document.Save(_dataDir + "AnnotationDemo2.pdf");
+    document.Save(dataDir + "AnnotationDemo2.pdf");
 }
 ```
 
@@ -158,7 +158,7 @@ public static void ImportAnnotationFromPDF()
     var document = new Document();
     document.Pages.Add();
     AnnotationEditor.BindPdf(document);
-    var exportFileName = _dataDir + "exportannotations.xfdf";
+    var exportFileName = dataDir + "exportannotations.xfdf";
     if (!File.Exists(exportFileName))
     {
         ExportAnnotationXFDF();
@@ -166,10 +166,10 @@ public static void ImportAnnotationFromPDF()
 
     // Annotation Editor allows import annotations from several PDF documents,
     // but in this example, we use only one.
-    AnnotationEditor.ImportAnnotations(new[] { _dataDir + "AnnotationDemo1.pdf" });
+    AnnotationEditor.ImportAnnotations(new[] { dataDir + "AnnotationDemo1.pdf" });
 
     // Save output PDF
-    document.Save(_dataDir + "AnnotationDemo3.pdf");
+    document.Save(dataDir + "AnnotationDemo3.pdf");
 }
 ```
 

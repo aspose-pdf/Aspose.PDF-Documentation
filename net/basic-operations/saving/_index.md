@@ -23,8 +23,8 @@ When you do not provide the format type (options), then the document is saved in
 ```csharp
 public static void SaveDocument()
 {
-    var originalFileName = _dataDir + "SimpleResume.pdf";
-    var modifiedFileName = _dataDir + "SimpleResumeModified.pdf";
+    var originalFileName = dataDir + "SimpleResume.pdf";
+    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
 
     var document = new Document(originalFileName);
     // make some manipation, i.g add new empty page
@@ -40,8 +40,8 @@ You can also save the created or manipulated PDF document to stream by using ove
 ```csharp
 public static void SaveDocumentStream()
 {
-    var originalFileName = _dataDir + "SimpleResume.pdf";
-    var modifiedFileName = _dataDir + "SimpleResumeModified.pdf";
+    var originalFileName = dataDir + "SimpleResume.pdf";
+    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
 
     var document = new Document(originalFileName);
     // make some manipation, i.g add new empty page
@@ -55,7 +55,7 @@ public static void SaveDocumentStream()
 To save documents in Web applications, you can use the ways proposed above. In addition, the `Document` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
 
 ```csharp
-var originalFileName = _dataDir + "SimpleResume.pdf";
+var originalFileName = dataDir + "SimpleResume.pdf";
 var document = new Document(originalFileName);
 // make some manipulation, i.g add a new empty page
 document.Pages.Add();

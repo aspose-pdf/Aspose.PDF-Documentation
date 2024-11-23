@@ -112,7 +112,7 @@ The following code snippet shows how to get all watermarks on the first page of 
 _Note:_ This code also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-var document = new Document(_dataDir + "sample-w.pdf");
+var document = new Document(dataDir + "sample-w.pdf");
 var watermarks = document.Pages[1].Artifacts
     .Where(artifact =>
     artifact.Type == Artifact.ArtifactType.Pagination
@@ -130,25 +130,25 @@ Background images can be used to add a watermark, or other subtle design, to doc
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
 
 ```csharp
-var document = new Document(_dataDir + "sample.pdf");
+var document = new Document(dataDir + "sample.pdf");
 var background = new BackgroundArtifact()
 {
-    BackgroundImage = System.IO.File.OpenRead(_dataDir + "background.jpg")
+    BackgroundImage = System.IO.File.OpenRead(dataDir + "background.jpg")
 };
 document.Pages[1].Artifacts.Add(background);
-document.Save(_dataDir + "sample_artifacts_background.pdf");
+document.Save(dataDir + "sample_artifacts_background.pdf");
 ```
 
 If you want, for some reason, to use a solid color background, please change the previous code in the following manner:
 
 ```csharp
-var document = new Document(_dataDir + "sample.pdf");
+var document = new Document(dataDir + "sample.pdf");
 var background = new BackgroundArtifact()
 {
     BackgroundColor = Color.DarkKhaki,
 };
 document.Pages[1].Artifacts.Add(background);
-document.Save(_dataDir + "sample_artifacts_background.pdf");
+document.Save(dataDir + "sample_artifacts_background.pdf");
 ```
 
 ## Counting Artifacts of a Particular Type
@@ -156,7 +156,7 @@ document.Save(_dataDir + "sample_artifacts_background.pdf");
 To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code:
 
 ```csharp
-var document = new Document(_dataDir + "sample.pdf");
+var document = new Document(dataDir + "sample.pdf");
 var paginationArtifacts = document.Pages[1].Artifacts.Where(artifact => artifact.Type == Artifact.ArtifactType.Pagination);
 Console.WriteLine("Watermarks: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Watermark));
 Console.WriteLine("Backgrounds: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Background));

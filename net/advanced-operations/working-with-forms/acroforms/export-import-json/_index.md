@@ -284,7 +284,7 @@ Let's break down this Aspose.PDF example step by step:
 
 
 ```cs
-var document = new Document(Path.Combine(_dataDir, "Forms", "Sample.pdf"));
+var document = new Document(Path.Combine(dataDir, "Forms", "Sample.pdf"));
 
 var options
     = new ExportFieldsToJsonOptions

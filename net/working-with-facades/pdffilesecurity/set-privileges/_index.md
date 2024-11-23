@@ -23,9 +23,9 @@ public static void SetPrivilege1()
 
     // Create PdfFileSecurity object
     PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample.pdf");
+    fileSecurity.BindPdf(dataDir + "sample.pdf");
     fileSecurity.SetPrivilege(privilege);
-    fileSecurity.Save(_dataDir + "sample_privileges.pdf");
+    fileSecurity.Save(dataDir + "sample_privileges.pdf");
 }
 ```
 
@@ -42,9 +42,9 @@ public static void SetPrivilege2()
 
     // Create PdfFileSecurity object
     PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample.pdf");
+    fileSecurity.BindPdf(dataDir + "sample.pdf");
     fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
-    fileSecurity.Save(_dataDir + "sample_privileges.pdf");
+    fileSecurity.Save(dataDir + "sample_privileges.pdf");
 }
 ```
 

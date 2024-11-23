@@ -143,7 +143,7 @@ Aspose.PDF for .NET also offers the feature to fill rectangle object with a cert
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
-private const string _dataDir = "C:\\Samples\\";
+private const string dataDir = "C:\\Samples\\";
 public static void RectangleFilled()
 {
     // Create Document instance
@@ -167,7 +167,7 @@ public static void RectangleFilled()
     graph.Shapes.Add(rect);
 
     // Save PDF file
-    doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
+    doc.Save(dataDir + "CreateFilledRectangle_out.pdf");
 }
 ```
 
@@ -209,7 +209,7 @@ public static void CreateFilledRectangletGradientFill()
     graph.Shapes.Add(rect);
 
     // Save PDF file
-    doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
+    doc.Save(dataDir + "CreateFilledRectangle_out.pdf");
 }
 ```
 
@@ -252,7 +252,7 @@ public static void RectangleFilled_AlphaChannel()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
+    doc.Save(dataDir + "CreateFilledRectangle_out.pdf");
 }
 ```
 
@@ -284,7 +284,7 @@ public static void AddRectangleZOrder()
     // Create a new rectangle with Color as Green, Z-Order as 0 and certain dimensions
     AddRectangle(page1, 40, 40, 60, 30, Color.Green, 0);
     // Save resultant PDF file
-    doc1.Save(_dataDir + "ControlRectangleZOrder_out.pdf");
+    doc1.Save(dataDir + "ControlRectangleZOrder_out.pdf");
 }
 ```
 

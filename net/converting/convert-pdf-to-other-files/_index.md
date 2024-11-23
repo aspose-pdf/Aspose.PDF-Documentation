@@ -96,11 +96,11 @@ The following code snippet explains how to extract the texts from the all pages.
 public static void ConvertPDFDocToTXT()
 {
     // Open document
-    Document document = new Document(_dataDir + "demo.pdf");
+    Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
     ta.Visit(document);
     // Save the extracted text in text file
-    File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
 }
 ```
 
@@ -121,7 +121,7 @@ The following code snippet explains how to extract the texts from the particular
 ```csharp
 public static void ConvertPDFPagestoTXT()
 {
-    Document document = new Document(_dataDir + "demo.pdf");
+    Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
     var pages = new [] {1, 3, 4};
     foreach (var page in pages)
@@ -130,7 +130,7 @@ public static void ConvertPDFPagestoTXT()
     }
    
     // Save the extracted text in text file
-    File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt", ta.Text);
+    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", ta.Text);
 }
 ```
 
