@@ -128,8 +128,8 @@ var options = OpenAIImageDescriptionCopilotOptions
     .WithTopP(1)
     .WithDocument(new PdfDocument // Attach documents.
         {
-        Name = "Another_Pdf_with_images",
-        Document = new Document(GetInputPath("Pdf_with_images_low_res_bw.pdf"))
+            Name = "Another_Pdf_with_images",
+            Document = new Document(GetInputPath("Pdf_with_images_low_res_bw.pdf"))
         })
     .WithDocument(GetInputPath("Mona_liza.jpg")) // Attach images
     .WithDocument(GetInputPath("Pdf_with_images.pdf")); // Attach document paths.
