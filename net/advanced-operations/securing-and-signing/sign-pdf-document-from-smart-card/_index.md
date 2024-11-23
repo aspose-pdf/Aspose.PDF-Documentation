@@ -124,7 +124,7 @@ using (Document document = new Document(dataDir + "externalSignature1.pdf"))
         IList<string> sigNames = pdfSign.GetSignNames();
         for (int index = 0; index <= sigNames.Count - 1; index++)
         {
-            if (!pdfSign.VerifySigned(sigNames[index]) || !pdfSign.VerifySignature(sigNames[index]))
+            if (!pdfSign.VerifySignature(sigNames[index]))
             {
                 throw new ApplicationException("Not verified");
             }
@@ -167,7 +167,7 @@ using (Document document = new Document(dataDir + "externalSignature1.pdf"))
         IList<string> sigNames = pdfSign.GetSignNames();
         for (int index = 0; index <= sigNames.Count - 1; index++)
         {
-            if (!pdfSign.VerifySigned(sigNames[index]) || !pdfSign.VerifySignature(sigNames[index]))
+            if (!pdfSign.VerifySignature(sigNames[index]))
             {
                 throw new ApplicationException("Not verified");
             }
