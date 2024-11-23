@@ -122,7 +122,6 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
 {
     class ExampleCreateDocument
     {
-        private const string _dataDir = "C:\\Samples";
         public static void CreateSearchableDocuments(string file)
         {
             Document doc = new Document(file);

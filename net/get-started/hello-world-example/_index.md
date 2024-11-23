@@ -99,7 +99,7 @@ namespace Aspose.Pdf.Examples
 {
     public static class ExampleGetStarted
     {
-        private static readonly string _dataDir = "..\\..\\..\\Samples";
+        private static readonly string _dataDir = "..\\..\\..\\Samples\\";
         public static void HelloWorld()
         {
             // Initialize document object

@@ -158,7 +158,7 @@ public static void ConvertCGMtoPDF()
 The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 
 ```csharp
-private const string _dataDir = "..\\..\\..\\..\\Samples";
+private const string _dataDir = "..\\..\\..\\..\\Samples\\";
 // Convert DICOM images to PDF using Image class
 public static void ConvertDICOMtoPDF()
 {
