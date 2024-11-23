@@ -95,7 +95,7 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u 
 ```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
-Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
+Document doc = new Document(inFile);
 doc.Convert(new MemoryStream(), PdfFormat.PDF_A_2U, ConvertErrorAction.Delete);
 doc.Save(outFile);
 ```
@@ -107,7 +107,7 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3u 
 ```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
-Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
+Document doc = new Document(inFile);
 doc.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
 doc.Save(outFile);
 ```

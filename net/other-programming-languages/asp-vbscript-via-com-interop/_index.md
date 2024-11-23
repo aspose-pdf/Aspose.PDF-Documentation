@@ -35,27 +35,27 @@ This is a simple ASP application that shows you how to create a PDF file with sa
 <%
 'set license
 Dim lic
-Set lic = CreateObject("Aspose.PDF.License")
+Set lic = CreateObject("Aspose.Pdf.License")
 lic.SetLicense("D:\ASPOSE\Licences\Aspose.Total licenses\Aspose.Total.lic")
 
 'Instantiate Pdf instance by calling its empty constructor
 Dim pdf
-Set pdf = CreateObject("Aspose.PDF.Generator.Pdf")
+Set pdf = CreateObject("Aspose.Pdf.Generator.Pdf")
 
 'Create a new section in the Pdf object
 Dim pdfsection
-Set pdfsection = CreateObject("Aspose.PDF.Generator.Section")
+Set pdfsection = CreateObject("Aspose.Pdf.Generator.Section")
 
 'Add section to Pdf object
 pdf.Sections.Add(pdfsection)
 
 ' Create Text object
 Dim SampleText
-Set SampleText = CreateObject("Aspose.PDF.Generator.Text")
+Set SampleText = CreateObject("Aspose.Pdf.Generator.Text")
 
 'Add Text Segment to text object
 Dim seg1
-Set seg1 = CreateObject("Aspose.PDF.Generator.Segment")
+Set seg1 = CreateObject("Aspose.Pdf.Generator.Segment")
 
 'Assign some content to the segment
 seg1.Content = "HelloWorld using ASP and VBScript"

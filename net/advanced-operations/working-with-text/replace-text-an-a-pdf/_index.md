@@ -129,22 +129,22 @@ In order to replace text in a particular page region, first, we need to instanti
 
 ```csharp
 // load PDF file
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
+Document pdf  = new Document("c:/pdftest/programaticallyproducedpdf.pdf");
 
 // instantiate TextFragment Absorber object
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
+Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Text.TextFragmentAbsorber();
 
 // search text within page bound
 TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
 
 // specify the page region for TextSearch Options
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
+TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 100, 200, 200);
 
 // search text from first page of PDF file
 pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
 
 // iterate through individual TextFragment
-foreach (Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
+foreach (Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
 {
     // update text to blank characters
     tf.Text = "";

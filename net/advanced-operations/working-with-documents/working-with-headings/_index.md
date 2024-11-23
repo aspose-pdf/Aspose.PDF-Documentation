@@ -88,7 +88,7 @@ Headings are the important parts of any document. Writers always try to make hea
 |NumeralsRomanLowercase|Roman lower type, for example, i,i.ii, ...|
 |LettersUppercase|English upper type, for example, A,A.B, ...|
 |LettersLowercase|English lower type, for example, a,a.b, ...|
-The **Style** property of **Aspose.PDF.Heading** class is used to set the numbering styles of the headings.
+The **Style** property of **Aspose.Pdf.Heading** class is used to set the numbering styles of the headings.
 
 |**Figure: Pre-defined numbering styles**|
 | :- |

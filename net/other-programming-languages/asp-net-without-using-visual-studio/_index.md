@@ -34,7 +34,7 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
         <h3>creation of simple PDF document while using Aspose.PDF for .NET with Inline ASP.NET</h3>
 <%
     // set license
-    Aspose.PDF.License lic = new Aspose.PDF.License();
+    Aspose.Pdf.License lic = new Aspose.Pdf.License();
     lic.SetLicense("D:\\ASPOSE\\Licences\\Aspose.Total licenses\\Aspose.Total.lic");
 
     // Initialize document object

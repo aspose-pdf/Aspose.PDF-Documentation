@@ -135,5 +135,5 @@ private static DataTable GenerateDataTable()
 ## Conclusion
 
 {{% alert color="primary" %}}
-[Aspose.PDF.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .NET version.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .NET version.
 {{% /alert %}}

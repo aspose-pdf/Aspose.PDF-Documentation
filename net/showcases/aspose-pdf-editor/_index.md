@@ -169,7 +169,7 @@ See Editor.js tab below for source code of AddPage method, it calls AddPage_Clic
 
 **ASP.NET web method handles server requests**
 
-See Canvas.aspx.cs tab below with source code of AddPage_Click method. It adds a new empty page in PDF file using Aspose.PDF.Document class. After adding the page to PDF file, it converts the page to image to be displayed in the editor.The control is then returned back to Editor.js file which updates the page numbering in AddPage method.
+See Canvas.aspx.cs tab below with source code of AddPage_Click method. It adds a new empty page in PDF file using Aspose.Pdf.Document class. After adding the page to PDF file, it converts the page to image to be displayed in the editor.The control is then returned back to Editor.js file which updates the page numbering in AddPage method.
 
 ### Deleting Page from PDF File
 
@@ -185,7 +185,7 @@ See Editor.js tab below for source code of DeletePage method, it calls DeletePag
 
 **ASP.NET web method handles server requests**
 
-See Canvas.aspx.cs tab below with source code of DeletePage_Click method. It deletes the selected page from PDF file using Delete method of Aspose.PDF.Document.Page collection.
+See Canvas.aspx.cs tab below with source code of DeletePage_Click method. It deletes the selected page from PDF file using Delete method of Aspose.Pdf.Document.Page collection.
 
 **Updating editing content**
 
@@ -205,7 +205,7 @@ See Editor.js tab below for source code of Move method, which calls MovePage met
 
 **ASP.NET web method handles server requests**
 
-See Canvas.aspx.cs tab below with source code of MovePages method. It uses Aspose.PDF.Document.Pages collection to move the pages.
+See Canvas.aspx.cs tab below with source code of MovePages method. It uses Aspose.Pdf.Document.Pages collection to move the pages.
 
 **Updating editing content**
 
@@ -227,7 +227,7 @@ See Editor.js tab below for source code of saveTextFromArea method, which gets t
 
 **ASP.NET web method handles server requests**
 
-As mentioned above, the text will actually get inserted into our source PDF file when we perform the save operation which uses GetTextStamp method to create the text stamp to insert in PDF file. See Canvas.aspx.cs tab below with source code of GetTextStamp method. It uses Aspose.PDF.TextStamp class to insert the text in the PDF file.
+As mentioned above, the text will actually get inserted into our source PDF file when we perform the save operation which uses GetTextStamp method to create the text stamp to insert in PDF file. See Canvas.aspx.cs tab below with source code of GetTextStamp method. It uses Aspose.Pdf.TextStamp class to insert the text in the PDF file.
 
 ### Highlight Text in PDF File
 
@@ -243,7 +243,7 @@ See Editor.js tab below for source code of tool.rect method, which allows the us
 
 **ASP.NET web method handles server requests**
 
-As mentioned above, the highlighting is actually inserted into our source PDF file when we perform the save operation which uses GetImageStamp method to insert the image stamp in source PDF file at the location specified on editor. See Canvas.aspx.cs tab below with source code of GetImageStamp method. It uses Aspose.PDF.ImageStamp class to insert the highlighting rectangle in the PDF file.
+As mentioned above, the highlighting is actually inserted into our source PDF file when we perform the save operation which uses GetImageStamp method to insert the image stamp in source PDF file at the location specified on editor. See Canvas.aspx.cs tab below with source code of GetImageStamp method. It uses Aspose.Pdf.ImageStamp class to insert the highlighting rectangle in the PDF file.
 
 ### Searching Text in PDF File
 
@@ -261,7 +261,7 @@ See Editor.js tab below for source code of performSearch method, which gets the 
 
 **ASP.NET web method handles server requests**
 
-See _Canvas.aspx.cs_ tab below. Using the input text passed from performSearch method, SearchData method uses Aspose.PDF.Text.TextFragmentAbsorber class to search for all the instances of the input text in our source PDF file and System.Drawing.Brush class to draw highlighting against the searched text. Once the data is searched, the resultant file is again converted to image and gets loaded in the editor.
+See _Canvas.aspx.cs_ tab below. Using the input text passed from performSearch method, SearchData method uses Aspose.Pdf.Text.TextFragmentAbsorber class to search for all the instances of the input text in our source PDF file and System.Drawing.Brush class to draw highlighting against the searched text. Once the data is searched, the resultant file is again converted to image and gets loaded in the editor.
 
 ### Replacing Text in PDF File
 
@@ -277,7 +277,7 @@ See Editor.js tab below for source code of ReplaceText method, which gets the in
 
 **ASP.NET web method handles server requests**
 
-See Canvas.aspx.cs tab below. ReplaceText method uses Aspose.PDF.Text.TextFragmentAbsorber class to search for all the instances of the text to be replaced in our source PDF file and replaces all the instances with the replaced text. Once the text is replaced, the resultant file is again converted to image and gets loaded in the editor.
+See Canvas.aspx.cs tab below. ReplaceText method uses Aspose.Pdf.Text.TextFragmentAbsorber class to search for all the instances of the text to be replaced in our source PDF file and replaces all the instances with the replaced text. Once the text is replaced, the resultant file is again converted to image and gets loaded in the editor.
 
 ### Loading PDF File with Form Fields
 
@@ -293,7 +293,7 @@ File gets posted to the server and method "ProcessRequest" is called in CanvasSa
 
 **ASP.NET web method handles server requests**
 
-See Canvas.aspx.cs tab below. Based on the form parameter passed, the file to be uploaded is saved on the server, ImageConverter method, converts the uploaded file to images and "CheckFields" method is called which uses Aspose.PDF.InteractiveFeatures.Forms class to check for all the form fields and collect the information regarding the fields i.e. FieldType, Location etc. and return the field's collection back to ImageConverter method. ImageConverter method returns the control back to "fileSelected" method in Editor.js
+See Canvas.aspx.cs tab below. Based on the form parameter passed, the file to be uploaded is saved on the server, ImageConverter method, converts the uploaded file to images and "CheckFields" method is called which uses Aspose.Pdf.InteractiveFeatures.Forms class to check for all the form fields and collect the information regarding the fields i.e. FieldType, Location etc. and return the field's collection back to ImageConverter method. ImageConverter method returns the control back to "fileSelected" method in Editor.js
 
 **Loading form fields on canvas**
 
@@ -313,7 +313,7 @@ File gets posted to the server and method "ProcessRequest" is called in CanvasSa
 
 **ASP.NET web method handles server requests**
 
-See Canvas.aspx.cs tab below. Based on the form parameter passed, the file to be uploaded is saved on the server, ImageConverter method, converts the uploaded file to images and "CheckFields" method is called which uses Aspose.PDF.InteractiveFeatures.Forms class to check for all the form fields and collect the information regarding the fields i.e. FieldType, Location etc.. After getting the details of all the form fields, we get the information whether a form field is required form fields using Aspose.PDF.Facades.IsRequiredField method and return the field's collection back to ImageConverter method. ImageConverter method returns the control back to "fileSelected" method in Editor.js
+See Canvas.aspx.cs tab below. Based on the form parameter passed, the file to be uploaded is saved on the server, ImageConverter method, converts the uploaded file to images and "CheckFields" method is called which uses Aspose.Pdf.InteractiveFeatures.Forms class to check for all the form fields and collect the information regarding the fields i.e. FieldType, Location etc.. After getting the details of all the form fields, we get the information whether a form field is required form fields using Aspose.Pdf.Facades.IsRequiredField method and return the field's collection back to ImageConverter method. ImageConverter method returns the control back to "fileSelected" method in Editor.js
 
 **Loading form fields on canvas**
 

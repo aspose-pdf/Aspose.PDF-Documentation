@@ -266,11 +266,11 @@ It is possible to control the quality of an image that's being added to a PDF fi
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 
 ```csharp
-Aspose.PDF.Document document = new Aspose.PDF.Document(inFile);
-foreach (Aspose.PDF.Page page in document.Pages)
+Document document = new Document(inFile);
+foreach (Page page in document.Pages)
 {
     int idx = 1;
-    foreach (Aspose.PDF.XImage image in page.Resources.Images)
+    foreach (XImage image in page.Resources.Images)
     {
         using (MemoryStream imageStream = new MemoryStream())
         {

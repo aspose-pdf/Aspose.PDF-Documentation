@@ -107,7 +107,7 @@ Document doc = new Document(dataDir + "FieldLimit.pdf");
 Console.WriteLine("Limit: " + (doc.Form["textbox1"] as TextBoxField).MaxLen);
 ```
 
-You can also get the same value using the *Aspose.PDF.Facades* namespace using the following code snippet.
+You can also get the same value using the *Aspose.Pdf.Facades* namespace using the following code snippet.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -121,7 +121,7 @@ Console.WriteLine("Limit: " + form.GetFieldLimit("textbox1"));
 
 ## Set Custom Font for the Form Field
 
-Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. To set and update the default font used for form fields, use the DefaultAppearance(Font font, double size, Color color) class. This class can be found under the Aspose.PDF.InteractiveFeatures namespace. To use this object, use the Field class DefaultAppearance property.
+Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. To set and update the default font used for form fields, use the DefaultAppearance(Font font, double size, Color color) class. This class can be found under the Aspose.Pdf.InteractiveFeatures namespace. To use this object, use the Field class DefaultAppearance property.
 
 The following code snippet shows how to set the default font for PDF form fields.
 

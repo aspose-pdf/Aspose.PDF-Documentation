@@ -17,7 +17,7 @@ According to Document Object Model of Aspose.PDF for .NET, a PDF file contains o
 
 ```csharp
 // Open document
-Aspose.PDF.Document document = new Aspose.PDF.Document("source.pdf");
+Document document = new Document("source.pdf");
 
 // Traverse through individual pages of PDF file
 for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)

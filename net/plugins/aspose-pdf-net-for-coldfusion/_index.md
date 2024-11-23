@@ -28,11 +28,11 @@ First of all, you h ave to copy the DLL (Aspose.PDF .dll) to a location from whe
 
 ```html
 <cfobject type = ".NET" name = "fileinfo" 
-        class = "Aspose.PDF.Facades.PdfFileInfo" 
+        class = "Aspose.Pdf.Facades.PdfFileInfo" 
         assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
 ```
 
-The attribute class in the above tag points to Aspose.PDF. Facades class, which in this case is PdfFileInfo. The name attribute is the instance name of the class and will be used later in the code to access class methods or properties. Type attribute specifies the type of the component - in our case it is .NET.
+The attribute class in the above tag points to Aspose.PDF Facades class, which in this case is PdfFileInfo. The name attribute is the instance name of the class and will be used later in the code to access class methods or properties. Type attribute specifies the type of the component - in our case it is .NET.
 
 One important point which you’ll have to keep in mind while using the .NET component in Coldfusion is that, when you get or set any property of the class object, you have to follow a specific structure. To set a property you’ll use syntax like Set_propertyname, and to get a property value you’ll use Get_propertyname.
 
@@ -55,7 +55,7 @@ A basic but complete example to help you understand the process of using Aspose.
 ```html
 <!--- create an instance of PdfFileInfo class --->
 
-<cfobject type = ".NET" name = "fileinfo" class = "Aspose.PDF.Facades.PdfFileInfo"
+<cfobject type = ".NET" name = "fileinfo" class = "Aspose.Pdf.Facades.PdfFileInfo"
 
 assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
 

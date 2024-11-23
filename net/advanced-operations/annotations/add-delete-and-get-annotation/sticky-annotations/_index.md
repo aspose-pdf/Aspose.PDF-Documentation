@@ -88,21 +88,21 @@ Please check the following code snippet to add WatermarkAnnotation.
 
 ```csharp
  //Load a Document
-Aspose.PDF.Document doc = new Aspose.PDF.Document("source.pdf");
+Document doc = new Document("source.pdf");
 
 //Load Page object to add Annotation
 Page page = doc.Pages[1];
 
 //Create Annotation
-WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.PDF.Rectangle(100, 500, 400, 600));
+WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
 
 //Add annotaiton into Annotation collection of Page
 page.Annotations.Add(wa);
 
 //Create TextState for Font settings
-Aspose.PDF.Text.TextState ts = new Aspose.PDF.Text.TextState();
+Text.TextState ts = new Text.TextState();
 
-ts.ForegroundColor = Aspose.PDF.Color.Blue;
+ts.ForegroundColor = Aspose.Pdf.Color.Blue;
 ts.Font = FontRepository.FindFont("Times New Roman");
 
 ts.FontSize = 32;
@@ -123,9 +123,9 @@ doc.Save("Output.pdf");
 Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
 
 ```csharp
-Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
+Aspose.Pdf.Rectangle imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
 
-using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+using (Document document = new Document("input.pdf"))
 {
     using (var imageStream = File.Open("icon.png", FileMode.Open))
     {
@@ -146,11 +146,11 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
                 name = form.Resources.Images.Add(image);
             }
             form.Contents.Add(new Operator.GSave());
-            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
             form.Contents.Add(new Operator.Do(name));
             form.Contents.Add(new Operator.GRestore());
             page.Annotations.Add(annotation, false);
-            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+            imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
         }
     }
     document.Save("output.pdf");
