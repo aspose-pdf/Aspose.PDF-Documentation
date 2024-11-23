@@ -98,7 +98,7 @@ The following code snippet shows how to add the image in a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddImage.pdf");
+Document document = new Document(dataDir+ "AddImage.pdf");
 
 // Set coordinates
 int lowerLeftX = 100;
@@ -107,7 +107,7 @@ int upperRightX = 200;
 int upperRightY = 200;
 
 // Get the page where image needs to be added
-Page page = pdfDocument.Pages[1];
+Page page = document.Pages[1];
 // Load image into stream
 FileStream imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open);
 // Add image to Images collection of Page Resources
@@ -126,7 +126,7 @@ page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
 page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 dataDir = dataDir + "AddImage_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 {{% alert color="primary" %}}
@@ -266,8 +266,8 @@ It is possible to control the quality of an image that's being added to a PDF fi
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 
 ```csharp
-Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document(inFile);
-foreach (Aspose.PDF.Page page in pdfDocument.Pages)
+Aspose.PDF.Document document = new Aspose.PDF.Document(inFile);
+foreach (Aspose.PDF.Page page in document.Pages)
 {
     int idx = 1;
     foreach (Aspose.PDF.XImage image in page.Resources.Images)
@@ -281,9 +281,9 @@ foreach (Aspose.PDF.Page page in pdfDocument.Pages)
     }
 }
 
-// pdfDocument.OptimizeResources();
+// document.OptimizeResources();
 
-pdfDocument.Save(outFile);
+document.Save(outFile);
 ```
 
 ## Support applying a Clipping Mask to Images

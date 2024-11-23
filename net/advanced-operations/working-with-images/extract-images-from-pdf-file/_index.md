@@ -85,10 +85,10 @@ The image's index returns an [XImage](https://reference.aspose.com/pdf/net/aspos
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "ExtractImages.pdf");
+Document document = new Document(dataDir+ "ExtractImages.pdf");
 
 // Extract a particular image
-XImage xImage = pdfDocument.Pages[1].Resources.Images[1];
+XImage xImage = document.Pages[1].Resources.Images[1];
 
 FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create);
 
@@ -99,7 +99,7 @@ outputImage.Close();
 dataDir = dataDir + "ExtractImages_out.pdf";
 
 // Save updated PDF file
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 <script type="application/ld+json">

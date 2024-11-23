@@ -99,10 +99,10 @@ Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "TextField.pdf");
+Document document = new Document(dataDir + "TextField.pdf");
 
 // Create a field
-TextBoxField textBoxField = new TextBoxField(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
+TextBoxField textBoxField = new TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
 textBoxField.PartialName = "textbox1";
 textBoxField.Value = "Text Box";
 
@@ -115,11 +115,11 @@ textBoxField.Border = border;
 textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
 // Add field to the document
-pdfDocument.Form.Add(textBoxField, 1);
+document.Form.Add(textBoxField, 1);
 
 dataDir = dataDir + "TextBox_out.pdf";
 // Save modified PDF
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ### Adding RadioButtonField
@@ -132,21 +132,21 @@ The following code snippets show how to add [RadioButtonField](https://reference
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Instantiate Document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add a page to PDF file
-pdfDocument.Pages.Add();
+document.Pages.Add();
 // Instatiate RadioButtonField object with page number as argument
-RadioButtonField radio = new RadioButtonField(pdfDocument.Pages[1]);
+RadioButtonField radio = new RadioButtonField(document.Pages[1]);
 // Add first radio button option and also specify its origin using Rectangle object
 radio.AddOption("Test", new Rectangle(0, 0, 20, 20));
 // Add second radio button option
 radio.AddOption("Test1", new Rectangle(20, 20, 40, 40));
 // Add radio button to form object of Document object
-pdfDocument.Form.Add(radio);
+document.Form.Add(radio);
 
 dataDir = dataDir + "RadioButton_out.pdf";
 // Save the PDF file
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.

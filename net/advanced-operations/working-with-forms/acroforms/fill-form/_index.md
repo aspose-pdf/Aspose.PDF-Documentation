@@ -91,16 +91,16 @@ This example selects a TextBoxField and sets its value using the Value property.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "FillFormField.pdf");
+Document document = new Document(dataDir + "FillFormField.pdf");
 
 // Get a field
-TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
+TextBoxField textBoxField = document.Form["textbox1"] as TextBoxField;
 
 // Modify field value
 textBoxField.Value = "Value to be filled in the field";
 dataDir = dataDir + "FillFormField_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 <script type="application/ld+json">

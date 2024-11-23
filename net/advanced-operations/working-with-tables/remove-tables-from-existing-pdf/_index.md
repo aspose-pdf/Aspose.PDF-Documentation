@@ -95,13 +95,13 @@ We have added new function i.e. Remove() to the existing TableAbsorber Class in 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
-Document pdfDocument = new Document(dataDir + "Table_input.pdf");
+Document document = new Document(dataDir + "Table_input.pdf");
 
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get first table on the page
 AbsorbedTable table = absorber.TableList[0];
@@ -110,7 +110,7 @@ AbsorbedTable table = absorber.TableList[0];
 absorber.Remove(table);
 
 // Save PDF
-pdfDocument.Save(dataDir + "Table_out.pdf");
+document.Save(dataDir + "Table_out.pdf");
 ```
 
 ## Remove Multiple Tables from PDF document
@@ -123,13 +123,13 @@ Sometimes a PDF document may contain more than one table and you may come up wit
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
-Document pdfDocument = new Document(dataDir + "Table_input2.pdf");
+Document document = new Document(dataDir + "Table_input2.pdf");
 
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit second page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get copy of table collection
 AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
@@ -142,7 +142,7 @@ foreach (AbsorbedTable table in tables)
 }
 
 // Save document
-pdfDocument.Save(dataDir + "Table2_out.pdf");
+document.Save(dataDir + "Table2_out.pdf");
 ```
 
 {{% alert color="primary" %}}

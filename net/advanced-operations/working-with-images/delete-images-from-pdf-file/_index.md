@@ -91,14 +91,14 @@ The following code snippet shows how to delete an image from a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "DeleteImages.pdf");
+Document document = new Document(dataDir+ "DeleteImages.pdf");
 
 // Delete a particular image
-pdfDocument.Pages[1].Resources.Images.Delete(1);
+document.Pages[1].Resources.Images.Delete(1);
 
 dataDir = dataDir + "DeleteImages_out.pdf";
 // Save updated PDF file
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 <script type="application/ld+json">

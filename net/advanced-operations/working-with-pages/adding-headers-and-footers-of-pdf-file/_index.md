@@ -97,7 +97,7 @@ The following code snippet shows you how to add text in the header of a PDF file
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "TextinHeader.pdf");
+Document document = new Document(dataDir+ "TextinHeader.pdf");
 
 // Create header
 TextStamp textStamp = new TextStamp("Header Text");
@@ -106,12 +106,12 @@ textStamp.TopMargin = 10;
 textStamp.HorizontalAlignment = HorizontalAlignment.Center;
 textStamp.VerticalAlignment = VerticalAlignment.Top;
 // Add header on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(textStamp);
 }
 // Save updated document
-pdfDocument.Save(dataDir+ "TextinHeader_out.pdf");
+document.Save(dataDir+ "TextinHeader_out.pdf");
 ```
 
 ## Adding Text in Footer of PDF File
@@ -132,7 +132,7 @@ The following code snippet shows you how to add text in the footer of a PDF file
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "TextinFooter.pdf");
+Document document = new Document(dataDir+ "TextinFooter.pdf");
 // Create footer
 TextStamp textStamp = new TextStamp("Footer Text");
 // Set properties of the stamp
@@ -140,7 +140,7 @@ textStamp.BottomMargin = 10;
 textStamp.HorizontalAlignment = HorizontalAlignment.Center;
 textStamp.VerticalAlignment = VerticalAlignment.Bottom;
 // Add footer on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(textStamp);
 }
@@ -166,7 +166,7 @@ The following code snippet shows you how to add image in the header of a PDF fil
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "ImageinHeader.pdf");
+Document document = new Document(dataDir+ "ImageinHeader.pdf");
 
 // Create header
 ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
@@ -175,7 +175,7 @@ imageStamp.TopMargin = 10;
 imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
 imageStamp.VerticalAlignment = VerticalAlignment.Top;
 // Add header on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(imageStamp);
 }
@@ -201,7 +201,7 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "ImageInFooter.pdf");
+Document document = new Document(dataDir+ "ImageInFooter.pdf");
 // Create footer
 ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
 // Set properties of the stamp
@@ -209,7 +209,7 @@ imageStamp.BottomMargin = 10;
 imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
 imageStamp.VerticalAlignment = VerticalAlignment.Bottom;
 // Add footer on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(imageStamp);
 }

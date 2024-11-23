@@ -349,8 +349,8 @@ private static void ExampleXSLTtoPDF()
     // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var pdfDocument = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
+    document.Save(_dataDir + "data_xml.pdf");
 }
 
 public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
@@ -469,8 +469,8 @@ public static void Example_XSLFO_to_PDF()
     // Instantiate XslFoLoadOption object
     var options = new Pdf.XslFoLoadOptions("employees.xslt");
     // Create Document object
-    var pdfDocument = new Aspose.Pdf.Document("employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Aspose.Pdf.Document("employees.xml", options);
+    document.Save(_dataDir + "data_xml.pdf");
 }
 ```
 
@@ -598,8 +598,8 @@ public static void Example_XSLFO_to_PDF_Param_21_6()
     var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
 
     var options = new Aspose.Pdf.XslFoLoadOptions();
-    var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
+    document.Save(_dataDir + "data_xml.pdf");
 }
 
 public static MemoryStream TransformXSL(string inputXml, string xsltString)
@@ -652,9 +652,9 @@ To generate PDF document we will use [BindXml](https://reference.aspose.com/pdf/
 private static void Example_XML_to_PDF()
 {
     var _dataDir = @"C:\tmp\";
-    var pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Aspose.Pdf.Document();
+    document.BindXml(_dataDir + "aspose_pdf_demo.xml");
+    document.Save(_dataDir + "data_xml.pdf");
 }
 ```
 

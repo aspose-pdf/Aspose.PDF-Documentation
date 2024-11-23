@@ -93,13 +93,13 @@ The following code snippet shows how to remove attachments from a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
+Document document = new Document(dataDir + "DeleteAllAttachments.pdf");
 
 // Delete all attachments
-pdfDocument.EmbeddedFiles.Delete();
+document.EmbeddedFiles.Delete();
 
 // Save updated document
-pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+document.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
 ```
 
 <script type="application/ld+json">

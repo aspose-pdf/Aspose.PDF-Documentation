@@ -91,13 +91,13 @@ You can use [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pa
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "PageNumberStamp.pdf");
+Document document = new Document(dataDir + "PageNumberStamp.pdf");
 
 // Create page number stamp
 PageNumberStamp pageNumberStamp = new PageNumberStamp();
 // Whether the stamp is background
 pageNumberStamp.Background = false;
-pageNumberStamp.Format = "Page # of " + pdfDocument.Pages.Count;
+pageNumberStamp.Format = "Page # of " + document.Pages.Count;
 pageNumberStamp.BottomMargin = 10;
 pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
 pageNumberStamp.StartingNumber = 1;
@@ -109,10 +109,10 @@ pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
 pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
 
 // Add stamp to particular page
-pdfDocument.Pages[1].AddStamp(pageNumberStamp);
+document.Pages[1].AddStamp(pageNumberStamp);
 
 // Save output document
-pdfDocument.Save(dataDir + "PageNumberStamp_out.pdf";);
+document.Save(dataDir + "PageNumberStamp_out.pdf";);
 ```
 
 ## Live Example

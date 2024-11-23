@@ -96,13 +96,13 @@ In order to replace text in all the pages of a PDF document, you first need to u
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ReplaceTextAll.pdf");
+Document document = new Document(dataDir + "ReplaceTextAll.pdf");
 
 // Create TextAbsorber object to find all instances of the input search phrase
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
 
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+document.Pages.Accept(textFragmentAbsorber);
 
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
@@ -120,7 +120,7 @@ foreach (TextFragment textFragment in textFragmentCollection)
 
 dataDir = dataDir + "ReplaceTextAll_out.pdf";
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Replace Text in particular page region
@@ -164,7 +164,7 @@ If you want to replace some phrases based on regular expression, you first need 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
+Document document = new Document(dataDir + "SearchRegularExpressionPage.pdf");
 
 // Create TextAbsorber object to find all the phrases matching the regular expression
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
@@ -174,7 +174,7 @@ TextSearchOptions textSearchOptions = new TextSearchOptions(true);
 textFragmentAbsorber.TextSearchOptions = textSearchOptions;
 
 // Accept the absorber for a single page
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
+document.Pages[1].Accept(textFragmentAbsorber);
 
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
@@ -192,7 +192,7 @@ foreach (TextFragment textFragment in textFragmentCollection)
 }
 
 dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Replace fonts in existing PDF file
@@ -205,13 +205,13 @@ Aspose.PDF for .NET supports the capability to replace text in PDF document. How
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Load source PDF file
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
+Document document = new Document(dataDir + "ReplaceTextPage.pdf");
 
 // Search text fragments and set edit option as remove unused fonts
 TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
 
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(absorber);
+document.Pages.Accept(absorber);
 
 // Traverse through all the TextFragments
 foreach (TextFragment textFragment in absorber.TextFragments)
@@ -225,7 +225,7 @@ foreach (TextFragment textFragment in absorber.TextFragments)
 
 dataDir = dataDir + "ReplaceFonts_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Text Replacement should automatically re-arrange Page Contents
@@ -488,11 +488,11 @@ Therefore, we recommend using another approach for the scenario of removing all 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
+Document document = new Document(dataDir + "RemoveAllText.pdf");
 // Loop through all pages of PDF Document
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
+for (int i = 1; i <= document.Pages.Count; i++)
 {
-    Page page = pdfDocument.Pages[i];
+    Page page = document.Pages[i];
     OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
     // Select all text on the page
     page.Contents.Accept(operatorSelector);
@@ -500,7 +500,7 @@ for (int i = 1; i <= pdfDocument.Pages.Count; i++)
     page.Contents.Delete(operatorSelector.Selected);
 }
 // Save the document
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+document.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
 
 <script type="application/ld+json">

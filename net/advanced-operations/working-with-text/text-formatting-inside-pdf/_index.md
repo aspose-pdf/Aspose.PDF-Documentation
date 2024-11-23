@@ -129,9 +129,9 @@ The following code snippet shows, how to add a border to a text using TextBuilde
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create new document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 // Create text fragment
 TextFragment textFragment = new TextFragment("main text");
 textFragment.Position = new Position(100, 600);
@@ -147,7 +147,7 @@ textFragment.TextState.DrawTextRectangleBorder = true;
 TextBuilder tb = new TextBuilder(pdfPage);
 tb.AppendText(textFragment);
 // Save the document
-pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
+document.Save(dataDir + "PDFWithTextBorder_out.pdf");
 ```
 
 ## How to add Underline Text
@@ -160,11 +160,11 @@ The following code snippet shows you how to add Underline text while creating a 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create documentation object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add age page to PDF document
-pdfDocument.Pages.Add();
+document.Pages.Add();
 // Create TextBuilder for first page
-TextBuilder tb = new TextBuilder(pdfDocument.Pages[1]);
+TextBuilder tb = new TextBuilder(document.Pages[1]);
 // TextFragment with sample text
 TextFragment fragment = new TextFragment("Test message");
 // Set the font for TextFragment
@@ -180,7 +180,7 @@ tb.AppendText(fragment);
 dataDir = dataDir + "AddUnderlineText_out.pdf";
 
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## How to add Border Around Added Text
@@ -265,9 +265,9 @@ Please use complete code snippet:
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Open document
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 
 // Create text fragment
 TextFragment textFragment = new TextFragment("main text");
@@ -292,7 +292,7 @@ textBuilder.AppendText(textFragment);
 dataDir = dataDir + "AddStrikeOutText_out.pdf";
 
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Apply Gradient Shading to the Text
@@ -304,10 +304,10 @@ Text formatting has been further enhanced in the API for text editing scenarios 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
+using (Document document = new Document(dataDir + "text_sample4.pdf"))
 {
     TextFragmentAbsorber absorber = new TextFragmentAbsorber("Lorem ipsum");
-    pdfDocument.Pages.Accept(absorber);
+    document.Pages.Accept(absorber);
 
     TextFragment textFragment = absorber.TextFragments[1];
 
@@ -318,7 +318,7 @@ using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
     };
     textFragment.TextState.Underline = true;
 
-    pdfDocument.Save(dataDir + "text_out.pdf");
+    document.Save(dataDir + "text_out.pdf");
 }
 ```
 

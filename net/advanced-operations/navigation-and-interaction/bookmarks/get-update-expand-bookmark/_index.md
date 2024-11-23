@@ -90,10 +90,10 @@ To get the bookmarks, loop through the [OutlineCollection](https://reference.asp
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetBookmarks.pdf");
+Document document = new Document(dataDir + "GetBookmarks.pdf");
 
 // Loop through all the bookmarks
-foreach (OutlineItemCollection outlineItem in pdfDocument.Outlines)
+foreach (OutlineItemCollection outlineItem in document.Outlines)
 {
     Console.WriteLine(outlineItem.Title);
     Console.WriteLine(outlineItem.Italic);
@@ -142,10 +142,10 @@ Bookmarks can be organized in a hierarchical structure, with parents and childre
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetChildBookmarks.pdf");
+Document document = new Document(dataDir + "GetChildBookmarks.pdf");
 
 // Loop through all the bookmarks
-foreach (OutlineItemCollection outlineItem in pdfDocument.Outlines)
+foreach (OutlineItemCollection outlineItem in document.Outlines)
 {
     Console.WriteLine(outlineItem.Title);
     Console.WriteLine(outlineItem.Italic);
@@ -177,17 +177,17 @@ To update a bookmark in a PDF file, first, get the particular bookmark from the 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "UpdateBookmarks.pdf");
+Document document = new Document(dataDir + "UpdateBookmarks.pdf");
 
 // Get a bookmark object
-OutlineItemCollection pdfOutline = pdfDocument.Outlines[1];
+OutlineItemCollection pdfOutline = document.Outlines[1];
 pdfOutline.Title = "Updated Outline";
 pdfOutline.Italic = true;
 pdfOutline.Bold = true;
 
 dataDir = dataDir + "UpdateBookmarks_out.pdf";
 // Save output
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Update Child Bookmarks in a PDF Document
@@ -211,10 +211,10 @@ The following code snippet shows you how to update child bookmarks in a PDF docu
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "UpdateChildBookmarks.pdf");
+Document document = new Document(dataDir + "UpdateChildBookmarks.pdf");
 
 // Get a bookmark object
-OutlineItemCollection pdfOutline = pdfDocument.Outlines[1];
+OutlineItemCollection pdfOutline = document.Outlines[1];
 
 // Get child bookmark object
 OutlineItemCollection childOutline = pdfOutline[1];
@@ -223,7 +223,7 @@ childOutline.Italic = true;
 childOutline.Bold = true;
 dataDir = dataDir + "UpdateChildBookmarks_out.pdf";
 // Save output
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Expanded Bookmarks when viewing document

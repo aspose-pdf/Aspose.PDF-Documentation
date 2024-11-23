@@ -95,7 +95,7 @@ The following code snippet shows how to add image stamp in the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
+Document document = new Document(dataDir+ "AddImageStamp.pdf");
 
 // Create image stamp
 ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
@@ -107,10 +107,10 @@ imageStamp.Width = 300;
 imageStamp.Rotate = Rotation.on270;
 imageStamp.Opacity = 0.5;
 // Add stamp to particular page
-pdfDocument.Pages[1].AddStamp(imageStamp);
+document.Pages[1].AddStamp(imageStamp);
 
 // Save output document
-pdfDocument.Save(dataDir + "AddImageStamp_out.pdf");
+document.Save(dataDir + "AddImageStamp_out.pdf");
 ```
 
 ## Control Image Quality when Adding Stamp
@@ -123,14 +123,14 @@ When adding an image as a stamp object, you can control the quality of the image
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
+Document document = new Document(dataDir+ "AddImageStamp.pdf");
 
 // Create image stamp
 ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
 
 imageStamp.Quality = 10;
-pdfDocument.Pages[1].AddStamp(imageStamp);
-pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
+document.Pages[1].AddStamp(imageStamp);
+document.Save(dataDir + "ControlImageQuality_out.pdf");
 ```
 
 ## Image Stamp as Background in Floating Box
@@ -178,7 +178,7 @@ Since version 24.6, it is possible to add alternative text to the image stamp.
 This code opens a PDF file, adds an image as a stamp at a specific position, and includes alternative text for accessibility. The updated PDF is then saved with a new filename.
 
 ```cs
-var pdfDocument = new Document(dataDir + "yourDoc.pdf");
+var document = new Document(dataDir + "yourDoc.pdf");
 var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
 {
     XIndent = 100,
@@ -187,9 +187,9 @@ var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
     AlternativeText = "Your alt text"  // This property added.
 };
 
-pdfDocument.Pages[1].AddStamp(imageStamp);
+document.Pages[1].AddStamp(imageStamp);
 
-pdfDocument.Save(dataDir + "yourDocWithImageStamp.pdf");
+document.Save(dataDir + "yourDocWithImageStamp.pdf");
 ```
 
 <script type="application/ld+json">

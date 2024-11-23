@@ -115,7 +115,7 @@ The following code snippet shows how to use PDF operators.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "PDFOperators.pdf");
+Document document = new Document(dataDir+ "PDFOperators.pdf");
 
 // Set coordinates
 int lowerLeftX = 100;
@@ -124,7 +124,7 @@ int upperRightX = 200;
 int upperRightY = 200;
 
 // Get the page where image needs to be added
-Page page = pdfDocument.Pages[1];
+Page page = document.Pages[1];
 // Load image into stream
 FileStream imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open);
 // Add image to Images collection of Page Resources
@@ -143,7 +143,7 @@ page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
 page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 dataDir = dataDir + "PDFOperators_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Draw XForm on Page using Operators

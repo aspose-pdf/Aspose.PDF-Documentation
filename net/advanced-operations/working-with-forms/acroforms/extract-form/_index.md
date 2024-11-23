@@ -93,10 +93,10 @@ The following C# code snippets show how to get the values of all the fields from
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetValuesFromAllFields.pdf");
+Document document = new Document(dataDir + "GetValuesFromAllFields.pdf");
 
 // Get values from all fields
-foreach (Field formField in pdfDocument.Form)
+foreach (Field formField in document.Form)
 {
     Console.WriteLine("Field Name : {0} ", formField.PartialName);
     Console.WriteLine("Value : {0} ", formField.Value);
@@ -113,10 +113,10 @@ The form field's Value property allows you to get the value of a particular fiel
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
+Document document = new Document(dataDir + "GetValueFromField.pdf");
 
 // Get a field
-TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
+TextBoxField textBoxField = document.Form["textbox1"] as TextBoxField;
 
 // Get field value
 Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
@@ -131,8 +131,8 @@ To get the submit button's URL, use the following lines of code.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-SubmitFormAction act = pdfDocument.Form[1].OnActivated as SubmitFormAction;
+Document document = new Document(dataDir + "GetValueFromField.pdf");
+SubmitFormAction act = document.Form[1].OnActivated as SubmitFormAction;
 if (act != null)
 {
     Console.WriteLine(act.Url.Name);

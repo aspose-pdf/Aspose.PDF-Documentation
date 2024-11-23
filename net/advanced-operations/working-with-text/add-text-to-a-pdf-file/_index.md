@@ -97,10 +97,10 @@ The following code snippet shows you how to add text in an existing PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages[1];
+Page pdfPage = (Page)document.Pages[1];
 
 // Create text fragment
 TextFragment textFragment = new TextFragment("main text");
@@ -121,7 +121,7 @@ textBuilder.AppendText(textFragment);
 dataDir = dataDir + "AddText_out.pdf";
 
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Loading Font from Stream
@@ -249,9 +249,9 @@ Aspose.PDF for .NET offers the feature to use Custom/TrueType fonts while creati
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create new document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF file
-Aspose.Pdf.Page page = pdfDocument.Pages.Add();
+Aspose.Pdf.Page page = document.Pages.Add();
 // Create TextFragment instnace with sample text
 TextFragment fragment = new TextFragment("Sample Text in OTF font");
 // Find font inside system font directory
@@ -267,7 +267,7 @@ page.Paragraphs.Add(fragment);
 dataDir = dataDir + "OTFFont_out.pdf";
 
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Add HTML String using DOM
@@ -608,11 +608,11 @@ document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf");
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of Document
-Page page = pdfDocument.Pages.Add();
+Page page = document.Pages.Add();
 // Create TextBuilder instance
-TextBuilder builder = new TextBuilder(pdfDocument.Pages[1]);
+TextBuilder builder = new TextBuilder(document.Pages[1]);
 // Instantiate TextParagraph instance
 TextParagraph paragraph = new TextParagraph();
 // Create TextState instance to specify font name and size
@@ -628,7 +628,7 @@ builder.AppendParagraph(paragraph);
 
 dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf";
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ### Using TextStamp
@@ -639,9 +639,9 @@ pdfDocument.Save(dataDir);
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of Document
-Page page = pdfDocument.Pages.Add();
+Page page = document.Pages.Add();
 // Instantiate TextStamp instance with sample text
 TextStamp stamp = new TextStamp("This is text stamp with character spacing");
 // Specify font name for Stamp object
@@ -658,7 +658,7 @@ stamp.YIndent = 500;
 stamp.Put(page);
 dataDir = dataDir + "CharacterSpacingUsingTextStamp_out.pdf";
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Create Multi-Column PDF document

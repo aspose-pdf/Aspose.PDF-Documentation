@@ -108,7 +108,7 @@ Document document2 = new Document(dataDir + "Concat2.pdf");
 document1.Pages.Add(document2.Pages);
 
 // Save concatenated output file
-pdfDocument1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
+document1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
 ```
 
 ## Live Example

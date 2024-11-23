@@ -84,15 +84,15 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-using (Document pdfDocument = new Document())
+using (Document document = new Document())
 {
-    pdfDocument.Pages.Add();
+    document.Pages.Add();
     Aspose.Pdf.Image image = new Aspose.Pdf.Image();
     image.FileType = ImageFileType.Dicom;
     image.ImageStream = new FileStream(dataDir + "0002.dcm", FileMode.Open, FileAccess.Read);
-    pdfDocument.Pages[1].Paragraphs.Add(image);
+    document.Pages[1].Paragraphs.Add(image);
     // Save output as PDF format
-    pdfDocument.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    document.Save(dataDir + "PdfWithDicomImage_out.pdf");
 }
 ```
 

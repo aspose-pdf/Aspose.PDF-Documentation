@@ -58,10 +58,10 @@ Aspose.PDF for .NET provides a two-line code for transforming a source PDF file 
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open the source PDF document
-Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 
 // Save the file into MS document format
-pdfDocument.Save(dataDir + "output_out.html", SaveFormat.Html);
+document.Save(dataDir + "output_out.html", SaveFormat.Html);
 ```
 
 ### Splitting Output to Multi-page HTML
@@ -74,7 +74,7 @@ When converting large PDF file with several pages to HTML format, the output app
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open the source PDF document
-Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 
 // Instantiate HTML SaveOptions object
 HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
@@ -83,7 +83,7 @@ HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 htmlOptions.SplitIntoPages = true;
 
 // Save the document
-pdfDocument.Save(@"MultiPageHTML_out.html", htmlOptions);
+document.Save(@"MultiPageHTML_out.html", htmlOptions);
 ```
 
 ### Specify Folder for Storing SVG Files

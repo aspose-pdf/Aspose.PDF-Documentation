@@ -88,9 +88,9 @@ In order to get file specific information of a PDF file, you first need to get t
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetFileInfo.pdf");
+Document document = new Document(dataDir + "GetFileInfo.pdf");
 // Get document information
-DocumentInfo docInfo = pdfDocument.Info;
+DocumentInfo docInfo = document.Info;
 // Show document information
 Console.WriteLine("Author: {0}", docInfo.Author);
 Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
@@ -122,10 +122,10 @@ The following code snippet shows you how to set PDF file information.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetFileInfo.pdf");
+Document document = new Document(dataDir + "SetFileInfo.pdf");
 
 // Specify document information
-DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+DocumentInfo docInfo = new DocumentInfo(document);
 
 docInfo.Author = "Aspose";
 docInfo.CreationDate = DateTime.Now;
@@ -136,7 +136,7 @@ docInfo.Title = "Setting PDF Document Information";
 
 dataDir = dataDir + "SetFileInfo_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Get XMP Metadata from PDF File
@@ -154,12 +154,12 @@ The following code snippet shows you how to get metadata from the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetXMPMetadata.pdf");
+Document document = new Document(dataDir + "GetXMPMetadata.pdf");
 
 // Get properties
-Console.WriteLine(pdfDocument.Metadata["xmp:CreateDate"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:Nickname"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:CustomProperty"]);
+Console.WriteLine(document.Metadata["xmp:CreateDate"]);
+Console.WriteLine(document.Metadata["xmp:Nickname"]);
+Console.WriteLine(document.Metadata["xmp:CustomProperty"]);
 ```
 
 ## Set XMP Metadata in a PDF File
@@ -178,16 +178,16 @@ The following code snippet shows you how to set metadata in a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
+Document document = new Document(dataDir + "SetXMPMetadata.pdf");
 
 // Set properties
-pdfDocument.Metadata["xmp:CreateDate"] = DateTime.Now;
-pdfDocument.Metadata["xmp:Nickname"] = "Nickname";
-pdfDocument.Metadata["xmp:CustomProperty"] = "Custom Value";
+document.Metadata["xmp:CreateDate"] = DateTime.Now;
+document.Metadata["xmp:Nickname"] = "Nickname";
+document.Metadata["xmp:CustomProperty"] = "Custom Value";
 
 dataDir = dataDir + "SetXMPMetadata_out.pdf";
 // Save document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Insert Metadata with Prefix
@@ -200,13 +200,13 @@ Some developers need to create a new metadata namespace with a prefix. The follo
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
-pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
-pdfDocument.Metadata["xmp:ModifyDate"] = DateTime.Now;
+Document document = new Document(dataDir + "SetXMPMetadata.pdf");
+document.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
+document.Metadata["xmp:ModifyDate"] = DateTime.Now;
 
 dataDir = dataDir + "SetPrefixMetadata_out.pdf";
 // Save document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 <script type="application/ld+json">

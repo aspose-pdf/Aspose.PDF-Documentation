@@ -143,8 +143,8 @@ We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the ta
 public static void AddTable_RowColSpan()
 {
     // Load source PDF document
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.Pages.Add();
+    Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    document.Pages.Add();
 
     // Initializes a new instance of the Table
     Aspose.Pdf.Table table = new Aspose.Pdf.Table
@@ -193,7 +193,7 @@ public static void AddTable_RowColSpan()
     row4.Cells.Add("Test 5 4");
 
     // Add table object to first page of input document
-    pdfDocument.Pages[1].Paragraphs.Add(table);
+    document.Pages[1].Paragraphs.Add(table);
 
     // Save updated document containing table object
     doc.Save(Path.Combine(_dataDir, "document_with_table_out.pdf"));

@@ -35,13 +35,13 @@ Please try using the following code snippet to accomplish this requirement with 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Document pdfDocument = new Document(dataDir + "PDFToEPUB.pdf");
+Document document = new Document(dataDir + "PDFToEPUB.pdf");
 // Instantiate Epub Save options
 EpubSaveOptions options = new EpubSaveOptions();
 // Specify the layout for contents
 options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
 // Save the ePUB document
-pdfDocument.Save(dataDir + "PDFToEPUB_out.epub", options);
+document.Save(dataDir + "PDFToEPUB_out.epub", options);
 ```
 
 ## Convert PDF to LaTeX/TeX
@@ -96,9 +96,9 @@ The following code snippet explains how to extract the texts from the all pages.
 public static void ConvertPDFDocToTXT()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "demo.pdf");
+    Document document = new Document(_dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
-    ta.Visit(pdfDocument);
+    ta.Visit(document);
     // Save the extracted text in text file
     File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
 }
@@ -121,12 +121,12 @@ The following code snippet explains how to extract the texts from the particular
 ```csharp
 public static void ConvertPDFPagestoTXT()
 {
-    Document pdfDocument = new Document(System.IO.Path.Combine(_dataDir, "demo.pdf"));
+    Document document = new Document(System.IO.Path.Combine(_dataDir, "demo.pdf"));
     TextAbsorber ta = new TextAbsorber();
     var pages = new [] {1, 3, 4};
     foreach (var page in pages)
     {
-        ta.Visit(pdfDocument.Pages[page]);
+        ta.Visit(document.Pages[page]);
     }
    
     // Save the extracted text in text file

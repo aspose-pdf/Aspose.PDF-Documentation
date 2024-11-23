@@ -143,11 +143,11 @@ The code samples given here traverses through the pages of the PDF document and 
 
  //Open the PDF document
 
-Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document("source.pdf");
+Aspose.PDF.Document document = new Aspose.PDF.Document("source.pdf");
 
 // Traverse through the individual pages of the PDF file
 
-for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
+for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
 
 {
 
@@ -165,7 +165,7 @@ for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
 
         //Convert a particular page and save the image to stream
 
-        pngDevice.Process(pdfDocument.Pages[pageCount], imageStream);
+        pngDevice.Process(document.Pages[pageCount], imageStream);
 
         // Set the stream position to the beginning of Stream
 

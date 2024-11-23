@@ -99,10 +99,10 @@ The following code snippet shows you how to validate PDF document for PDF/A-1A.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
+Document document = new Document(dataDir + "ValidatePDFAStandard.pdf");
 
 // Validate PDF for PDF/A-1a
-pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1A);
+document.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1A);
 ```
 
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
@@ -113,10 +113,10 @@ The following code snippet shows you how to validate PDF document for PDF/A-1b.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
+Document document = new Document(dataDir + "ValidatePDFAStandard.pdf");
 
 // Validate PDF for PDF/A-1b
-pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
+document.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ```
 
 {{% alert color="primary" %}}
@@ -387,12 +387,12 @@ The code snippets below shows how to use CustomerProgressHandler.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "AddTOC.pdf");
+Document document = new Document(dataDir + "AddTOC.pdf");
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.CustomProgressHandler = new UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
 
 dataDir = dataDir + "DetermineProgress_out.pdf";
-pdfDocument.Save(dataDir, saveOptions);
+document.Save(dataDir, saveOptions);
 ```
 
 ```csharp

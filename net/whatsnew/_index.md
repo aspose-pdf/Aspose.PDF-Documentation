@@ -1732,10 +1732,10 @@ This release includes information for Aspose.PDF for .NET:
 **example**
 
 ```cs
-Document pdfDocument = new Document("Superscript-Subscript.pdf");
+Document document = new Document("Superscript-Subscript.pdf");
 ExcelSaveOptions options = new ExcelSaveOptions();
 options.Format = ExcelSaveOptions.ExcelFormat.ODS;
-pdfDocument.Save("output.ods"), options);
+document.Save("output.ods"), options);
 ```
 
 - PDF to XMLSpreadSheet2003: Recognize text in subscript and superscript;
@@ -1910,8 +1910,8 @@ public static void Example_XSLFO_to_PDF()
         argsList.AddParam("isBoldName", "", "yes");
         //---------------------
 
-        var pdfDocument = new Aspose.Pdf.Document(TransformXml(XmlContent, XsltContent, argsList), options);
-        pdfDocument.Save(_dataDir + "data_xml.pdf");
+        var document = new Aspose.Pdf.Document(TransformXml(XmlContent, XsltContent, argsList), options);
+        document.Save(_dataDir + "data_xml.pdf");
     }
 
  public static MemoryStream TransformXml(string inputXml, string xsltString, XsltArgumentList argsList=null)
@@ -2067,7 +2067,7 @@ In this version of Aspose.PDF, the function became available to retrieve the bac
 Please consider the following code:
 
 ```csharp
-Document pdfDocument = new Document(dataDir + "TextColor.pdf");
+Document document = new Document(dataDir + "TextColor.pdf");
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber();
 
 TextSearchOptions searchOptions = new TextSearchOptions(false);
@@ -2076,7 +2076,7 @@ searchOptions.SearchForTextRelatedGraphics = true;
 textFragmentAbsorber.TextSearchOptions = searchOptions;
 
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+document.Pages.Accept(textFragmentAbsorber);
 
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;

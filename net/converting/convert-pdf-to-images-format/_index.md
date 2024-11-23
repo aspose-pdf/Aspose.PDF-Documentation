@@ -93,7 +93,7 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 public static void ConvertPDFtoTIFF()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "PageToTIFF.pdf");
+    Document document = new Document(_dataDir + "PageToTIFF.pdf");
 
     // Create Resolution object
     Resolution resolution = new Resolution(300);
@@ -111,7 +111,7 @@ public static void ConvertPDFtoTIFF()
     TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
     // Convert a particular page and save the image to stream
-    tiffDevice.Process(pdfDocument, _dataDir + "AllPagesToTIFF_out.tif");
+    tiffDevice.Process(document, _dataDir + "AllPagesToTIFF_out.tif");
 }
 ```
 
@@ -129,7 +129,7 @@ Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF 
 public static void ConvertPDFtoTiffSinglePage()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "PageToTIFF.pdf");
+    Document document = new Document(_dataDir + "PageToTIFF.pdf");
 
     // Create Resolution object
     Resolution resolution = new Resolution(300);
@@ -146,7 +146,7 @@ public static void ConvertPDFtoTiffSinglePage()
     TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
     // Convert a particular page and save the image to stream
-    tiffDevice.Process(pdfDocument, 1, 1, _dataDir + "PageToTIFF_out.tif");
+    tiffDevice.Process(document, 1, 1, _dataDir + "PageToTIFF_out.tif");
 }
 ```
 
@@ -157,8 +157,8 @@ Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using 
 ```csharp
 public static void ConvertPDFtoTiffBradleyBinarization()
 {
-     // Open document
-     Document pdfDocument = new Document(_dataDir + "PageToTIFF.pdf");
+    // Open document
+    Document document = new Document(_dataDir + "PageToTIFF.pdf");
 
     string outputImageFile = _dataDir + "resultant_out.tif";
     string outputBinImageFile = _dataDir + "37116-bin_out.tif";
@@ -174,7 +174,7 @@ public static void ConvertPDFtoTiffBradleyBinarization()
     // Create TIFF device
     TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
     // Convert a particular page and save the image to stream
-    tiffDevice.Process(pdfDocument, outputImageFile);
+    tiffDevice.Process(document, outputImageFile);
 
     using (FileStream inStream = new FileStream(outputImageFile, FileMode.Open))
     {
@@ -254,16 +254,16 @@ public static class ExampleConvertPdfToImage
 }
 
 public static void ConvertPDFtoImage(ImageDevice imageDevice, 
-        string ext, Document pdfDocument)
+        string ext, Document document)
 {
-    for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
+    for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
     {
         using (FileStream imageStream = 
             new FileStream($"{_dataDir}image{pageCount}_out.{ext}", 
             FileMode.Create))
         {
             // Convert a particular page and save the image to stream
-            imageDevice.Process(pdfDocument.Pages[pageCount], imageStream);
+            imageDevice.Process(document.Pages[pageCount], imageStream);
 
             // Close stream
             imageStream.Close();

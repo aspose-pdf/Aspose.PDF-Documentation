@@ -97,17 +97,17 @@ So the following code snippet follows these steps and shows how to convert BMP t
 
 ```csharp
 //Initialize empty PDF document
-using (Document pdfDocument = new Document())
+using (Document document = new Document())
 {
-    pdfDocument.Pages.Add();
+    document.Pages.Add();
     Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 
     // Load sample BMP image file
     image.File = dataDir + "Sample.bmp";
-    pdfDocument.Pages[1].Paragraphs.Add(image);
+    document.Pages[1].Paragraphs.Add(image);
 
     // Save output PDF document
-    pdfDocument.Save(dataDir + "BMPtoPDF.pdf");
+    document.Save(dataDir + "BMPtoPDF.pdf");
 }
 ```
 
@@ -135,8 +135,8 @@ Check next code snippet for converting CGM files to PDF format.
 public static void ConvertCGMtoPDF()
 {
     CgmLoadOptions option = new CgmLoadOptions();
-    Document pdfDocument= new Document(_dataDir+"corvette.cgm", option);
-    pdfDocument.Save(_dataDir+"CGMtoPDF.pdf");
+    Document document= new Document(_dataDir+"corvette.cgm", option);
+    document.Save(_dataDir+"CGMtoPDF.pdf");
 }
 ```
 
@@ -163,19 +163,19 @@ private const string _dataDir = "..\\..\\..\\..\\Samples";
 public static void ConvertDICOMtoPDF()
 {
     // Instantiate Document Object
-    Document pdfDocument = new Document();
+    Document document = new Document();
 
     // Add a page to pages collection of document
-    Page page = pdfDocument.Pages.Add();
+    Page page = document.Pages.Add();
 
     Image image = new Image
     {
         FileType = ImageFileType.Dicom,
         File = System.IO.Path.Combine(_dataDir,"bmode.dcm")
     };
-    pdfDocument.Pages[1].Paragraphs.Add(image);
+    document.Pages[1].Paragraphs.Add(image);
     // Save output as PDF format
-    pdfDocument.Save(System.IO.Path.Combine(_dataDir,"PDFWithDicomImage_out.pdf"));
+    document.Save(System.IO.Path.Combine(_dataDir,"PDFWithDicomImage_out.pdf"));
 }
 ```
 
@@ -255,17 +255,17 @@ So the following code snippet follows these steps and shows how to convert BMP t
 
 ```csharp
 //Initialize empty PDF document
-using (Document pdfDocument = new Document())
+using (Document document = new Document())
 {
-    pdfDocument.Pages.Add();
+    document.Pages.Add();
     Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 
     // Load sample GIF image file
     image.File = dataDir + "Sample.gif";
-    pdfDocument.Pages[1].Paragraphs.Add(image);
+    document.Pages[1].Paragraphs.Add(image);
 
     // Save output PDF document
-    pdfDocument.Save(dataDir + "GIFtoPDF.pdf");
+    document.Save(dataDir + "GIFtoPDF.pdf");
 }
 ```
 
@@ -442,8 +442,8 @@ The following code snippet shows the process of converting SVG file into PDF for
 public static void ConvertSVGtoPDF()
 {
     SvgLoadOptions option = new SvgLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "car.svg", option);
-    pdfDocument.Save(_dataDir + "svgtest.pdf");
+    Document document= new Document(_dataDir + "car.svg", option);
+    document.Save(_dataDir + "svgtest.pdf");
 }
 ```
 
@@ -671,17 +671,17 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ```csharp
 Initialize empty PDF document
-using (Document pdfDocument = new Document())
+using (Document document = new Document())
 {
-    pdfDocument.Pages.Add();
+    document.Pages.Add();
     Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 
     // Load sample Tiff image file
     image.File = dataDir + "sample.tiff";
-    pdfDocument.Pages[1].Paragraphs.Add(image);
+    document.Pages[1].Paragraphs.Add(image);
 
     // Save output PDF document
-    pdfDocument.Save(dataDir + "TIFFtoPDF.pdf");
+    document.Save(dataDir + "TIFFtoPDF.pdf");
 }
 ```
 

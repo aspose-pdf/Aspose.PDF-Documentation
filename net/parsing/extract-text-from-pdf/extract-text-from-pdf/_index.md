@@ -23,12 +23,12 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+Document document = new Document(dataDir + "ExtractTextAll.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 // Create a writer and open the file
@@ -49,13 +49,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
  
 // Accept the absorber for a particular page
-pdfDocument.Pages[1].Accept(textAbsorber);
+document.Pages[1].Accept(textAbsorber);
 
 // Get the extracted text
 string extractedText = textAbsorber.Text;
@@ -93,12 +93,12 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 System.Text.StringBuilder builder = new System.Text.StringBuilder();
 // String to hold extracted text
 string extractedText = "";
 
-foreach (Page pdfPage in pdfDocument.Pages)
+foreach (Page pdfPage in document.Pages)
 {
     using (MemoryStream textStream = new MemoryStream())
     {
@@ -113,7 +113,7 @@ foreach (Page pdfPage in pdfDocument.Pages)
         // Convert a particular page and save text to the stream
         textDevice.Process(pdfPage, textStream);
         // Convert a particular page and save text to the stream
-        textDevice.Process(pdfDocument.Pages[1], textStream);
+        textDevice.Process(document.Pages[1], textStream);
 
         // Close memory stream
         textStream.Close();
@@ -143,7 +143,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+Document document = new Document(dataDir + "ExtractTextAll.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber absorber = new TextAbsorber();
@@ -151,7 +151,7 @@ absorber.TextSearchOptions.LimitToPageBounds = true;
 absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 200, 250, 350);
 
 // Accept the absorber for first page
-pdfDocument.Pages[1].Accept(absorber);
+document.Pages[1].Accept(absorber);
 
 // Get the extracted text
 string extractedText = absorber.Text;
@@ -175,10 +175,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 TextFragmentAbsorber tfa = new TextFragmentAbsorber();
-pdfDocument.Pages.Accept(tfa);
+document.Pages.Accept(tfa);
 TextFragmentCollection tfc = tfa.TextFragments;
 foreach (TextFragment tf in tfc)
 {
@@ -186,12 +186,12 @@ foreach (TextFragment tf in tfc)
     tf.TextState.FontSize = tf.TextState.FontSize * 0.7f;
 }
 Stream st = new MemoryStream();
-pdfDocument.Save(st);
-pdfDocument = new Document(st);
+document.Save(st);
+document = new Document(st);
 TextAbsorber textAbsorber = new TextAbsorber();
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
-textAbsorber.Visit(pdfDocument);
+textAbsorber.Visit(document);
 
 dataDir = dataDir + "ExtractColumnsText_out.txt";
 
@@ -214,14 +214,14 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 TextAbsorber textAbsorber = new TextAbsorber();
 textAbsorber.ExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
 // Setting scale factor to 0.5 is enough to split columns in the majority of documents
 // Setting of zero allows to algorithm choose scale factor automatically
 textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
 System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
 ```

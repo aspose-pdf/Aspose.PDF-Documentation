@@ -104,43 +104,43 @@ The following code snippet shows you how to get the properties using [Document](
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetDocumentWindow.pdf");
+Document document = new Document(dataDir + "GetDocumentWindow.pdf");
 
 // Get different document properties
 // Position of document's window - Default: false
-Console.WriteLine("CenterWindow : {0}", pdfDocument.CenterWindow);
+Console.WriteLine("CenterWindow : {0}", document.CenterWindow);
   
 // Predominant reading order; determins the position of page
 // When displayed side by side - Default: L2R
-Console.WriteLine("Direction : {0}", pdfDocument.Direction);
+Console.WriteLine("Direction : {0}", document.Direction);
 
 // Whether window's title bar should display document title
 // If false, title bar displays PDF file name - Default: false
-Console.WriteLine("DisplayDocTitle : {0}", pdfDocument.DisplayDocTitle);
+Console.WriteLine("DisplayDocTitle : {0}", document.DisplayDocTitle);
 
 // Whether to resize the document's window to fit the size of
 // First displayed page - Default: false
-Console.WriteLine("FitWindow : {0}", pdfDocument.FitWindow);
+Console.WriteLine("FitWindow : {0}", document.FitWindow);
 
 // Whether to hide menu bar of the viewer application - Default: false
-Console.WriteLine("HideMenuBar : {0}", pdfDocument.HideMenubar);
+Console.WriteLine("HideMenuBar : {0}", document.HideMenubar);
 
 // Whether to hide tool bar of the viewer application - Default: false
-Console.WriteLine("HideToolBar : {0}", pdfDocument.HideToolBar);
+Console.WriteLine("HideToolBar : {0}", document.HideToolBar);
 
 // Whether to hide UI elements like scroll bars
 // And leaving only the page contents displayed - Default: false
-Console.WriteLine("HideWindowUI : {0}", pdfDocument.HideWindowUI);
+Console.WriteLine("HideWindowUI : {0}", document.HideWindowUI);
 
 // Document's page mode. How to display document on exiting full-screen mode.
-Console.WriteLine("NonFullScreenPageMode : {0}", pdfDocument.NonFullScreenPageMode);
+Console.WriteLine("NonFullScreenPageMode : {0}", document.NonFullScreenPageMode);
 
 // The page layout i.e. single page, one column
-Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout);
+Console.WriteLine("PageLayout : {0}", document.PageLayout);
 
 // How the document should display when opened
 // I.e. show thumbnails, full-screen, show attachment panel
-Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
+Console.WriteLine("pageMode : {0}", document.PageMode);
 ```
 
 ### Set Document Window and Page Display Properties
@@ -172,46 +172,46 @@ Each is used and described in the code below. The following - code snippet shows
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetDocumentWindow.pdf");
+Document document = new Document(dataDir + "SetDocumentWindow.pdf");
 
 // Set different document properties
 // Sepcify to position document's window - Default: false
-pdfDocument.CenterWindow = true;
+document.CenterWindow = true;
 
 // Predominant reading order; determins the position of page
 // When displayed side by side - Default: L2R
-pdfDocument.Direction = Direction.R2L;
+document.Direction = Direction.R2L;
 
 // Specify whether window's title bar should display document title
 // If false, title bar displays PDF file name - Default: false
-pdfDocument.DisplayDocTitle = true;
+document.DisplayDocTitle = true;
 
 // Specify whether to resize the document's window to fit the size of
 // First displayed page - Default: false
-pdfDocument.FitWindow = true;
+document.FitWindow = true;
 
 // Specify whether to hide menu bar of the viewer application - Default: false
-pdfDocument.HideMenubar = true;
+document.HideMenubar = true;
 
 // Specify whether to hide tool bar of the viewer application - Default: false
-pdfDocument.HideToolBar = true;
+document.HideToolBar = true;
 
 // Specify whether to hide UI elements like scroll bars
 // And leaving only the page contents displayed - Default: false
-pdfDocument.HideWindowUI = true;
+document.HideWindowUI = true;
 
 // Document's page mode. specify how to display document on exiting full-screen mode.
-pdfDocument.NonFullScreenPageMode = PageMode.UseOC;
+document.NonFullScreenPageMode = PageMode.UseOC;
 
 // Specify the page layout i.e. single page, one column
-pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
+document.PageLayout = PageLayout.TwoColumnLeft;
 
 // Specify how the document should display when opened
 // I.e. show thumbnails, full-screen, show attachment panel
-pdfDocument.PageMode = PageMode.UseThumbs;
+document.PageMode = PageMode.UseThumbs;
 
 // Save updated PDF file
-pdfDocument.Save(dataDir + "SetDocumentWindow_out.pdf");
+document.Save(dataDir + "SetDocumentWindow_out.pdf");
 ```
 
 ### Embedding Fonts in an existing PDF file
@@ -237,10 +237,10 @@ Some PDF documents have fonts from a special Adobe font set. Fonts from this set
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Load an existing PDF Document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Set EmbedStandardFonts property of document
-pdfDocument.EmbedStandardFonts = true;
-foreach (Aspose.Pdf.Page page in pdfDocument.Pages)
+document.EmbedStandardFonts = true;
+foreach (Aspose.Pdf.Page page in document.Pages)
 {
     if (page.Resources.Fonts != null)
     {
@@ -254,7 +254,7 @@ foreach (Aspose.Pdf.Page page in pdfDocument.Pages)
         }
     }
 }
-pdfDocument.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
+document.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
 ```
 
 ### Embedding Fonts while creating PDF

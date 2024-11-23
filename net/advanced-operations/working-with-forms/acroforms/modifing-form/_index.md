@@ -131,10 +131,10 @@ The following code snippet shows how to set the default font for PDF form fields
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "FormFieldFont14.pdf");
+Document document = new Document(dataDir + "FormFieldFont14.pdf");
 
 // Get particular form field from document
-Aspose.Pdf.Forms.Field field = pdfDocument.Form["textbox1"] as Aspose.Pdf.Forms.Field;
+Aspose.Pdf.Forms.Field field = document.Form["textbox1"] as Aspose.Pdf.Forms.Field;
 
 // Create font object
 Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
@@ -144,7 +144,7 @@ Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
 
 dataDir = dataDir + "FormFieldFont14_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Add/remove fields in existing form
@@ -157,13 +157,13 @@ All the form fields are contained in the Document object's Form collection. This
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteFormField.pdf");
+Document document = new Document(dataDir + "DeleteFormField.pdf");
 
 // Delete a particular field by name
-pdfDocument.Form.Delete("textbox1");
+document.Form.Delete("textbox1");
 dataDir = dataDir + "DeleteFormField_out.pdf";
 // Save modified document
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 <script type="application/ld+json">

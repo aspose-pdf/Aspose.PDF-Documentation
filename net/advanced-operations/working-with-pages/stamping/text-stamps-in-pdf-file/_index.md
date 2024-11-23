@@ -90,7 +90,7 @@ The following code snippet shows you how to add text stamp in the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddTextStamp.pdf");
+Document document = new Document(dataDir+ "AddTextStamp.pdf");
 
 // Create text stamp
 TextStamp textStamp = new TextStamp("Sample Stamp");
@@ -108,10 +108,10 @@ textStamp.TextState.FontStyle = FontStyles.Bold;
 textStamp.TextState.FontStyle = FontStyles.Italic;
 textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
 // Add stamp to particular page
-pdfDocument.Pages[1].AddStamp(textStamp);
+document.Pages[1].AddStamp(textStamp);
 
 // Save output document
-pdfDocument.Save(dataDir + "AddTextStamp_out.pdf");
+document.Save(dataDir + "AddTextStamp_out.pdf");
 ```
 
 ## Define alignment for TextStamp object

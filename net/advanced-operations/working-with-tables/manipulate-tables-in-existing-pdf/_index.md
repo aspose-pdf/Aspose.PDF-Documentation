@@ -87,12 +87,12 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF file
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get access to first table on page, their first cell and text fragments in it
 TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
@@ -100,7 +100,7 @@ TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragmen
 // Change text of the first text fragment in the cell
 fragment.Text = "hi world";
 dataDir = dataDir + "ManipulateTable_out.pdf";
-pdfDocument.Save(dataDir);
+document.Save(dataDir);
 ```
 
 ## Replace old Table with a new one in PDF document
@@ -113,13 +113,13 @@ In case you need to find a particular table and replace it with the desired one,
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
-Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+Document document = new Document(dataDir + @"Table_input2.pdf");
 
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get first table on the page
 AbsorbedTable table = absorber.TableList[0];
@@ -135,10 +135,10 @@ row.Cells.Add("Col 2");
 row.Cells.Add("Col 3");
 
 // Replace the table with new one
-absorber.Replace(pdfDocument.Pages[1], table, newTable);
+absorber.Replace(document.Pages[1], table, newTable);
 
 // Save document
-pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
+document.Save(dataDir + "TableReplaced_out.pdf");
 ```
 
 <script type="application/ld+json">
