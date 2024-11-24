@@ -1963,14 +1963,14 @@ public void PDFNET_49961()
 You can get a full font with the prefix with  BaseFont property for the Font class.
 
 ```csharp
-Document pdf = new Document(dataDir + @"testfont.pdf");
-
-Aspose.Pdf.Text.Font[] fonts = pdf.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+using (Document document = new Document(dataDir + @"testfont.pdf"))
 {
-    Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+    Font[] fonts = pdf.FontUtilities.GetAllFonts();
+    foreach (Font font in fonts)
+    {
+        Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+    }
 }
-pdf.Dispose();
 ```
 
 ## What's new in Aspose.PDF 21.4

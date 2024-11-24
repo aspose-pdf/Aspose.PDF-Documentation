@@ -116,18 +116,19 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-Document document = new Document(file);
-bool convertResult = false;
-try
+using (Document document = new Document(file))
 {
-    convertResult = document.Convert(CallBackGetHocr);
+    bool convertResult = false;
+    try
+    {
+        convertResult = document.Convert(CallBackGetHocr);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    document.Save(file);
 }
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
-document.Save(file);
-document.Dispose();
 
 static string CallBackGetHocr(System.Drawing.Image img)
 {

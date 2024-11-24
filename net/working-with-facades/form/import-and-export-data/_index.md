@@ -47,21 +47,18 @@ draft: false
 Aspose.Pdf.Facades provides an alternative API for working with form fields. This snippet demonstrates how to export and import field values using this API.
 
 ```cs
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// Open Document
-form.BindPdf(dataDir + "Sample-Form-01.pdf");
+using (Form form = new Form())
+{
+    // Open Document
+    form.BindPdf(dataDir + "Sample-Form-01.pdf");
 
-// Create XFDF file.
-System.IO.FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Create);
-
-// Export data
-form.ExportJson(jsonStream);
-
-// Close file stream
-jsonStream.Close();
-
-// Close the document
-form.Dispose();
+    // Create XFDF file.
+    using (FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Create))
+    {
+        // Export data
+        form.ExportJson(jsonStream);
+    }
+}
 ```
 
 ## Import values to fields from the JSON file
@@ -69,19 +66,16 @@ form.Dispose();
 This code snippet demonstrates how to import values into form fields of a PDF document from a JSON file using the Aspose.Pdf.Facades API. The FileStream is used to handle the JSON file.
 
 ```cs
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// Open Document
-form.BindPdf("Sample-Form-01.pdf");
+using (Form form = new Form())
+{
+    // Open Document
+    form.BindPdf("Sample-Form-01.pdf");
 
-// Create XFDF file.
-System.IO.FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Open);
-
-// Export data
-form.ImportJson(jsonStream);
-
-// Close file stream
-jsonStream.Close();
-
-// Close the document
-form.Dispose();
+    // Create XFDF file.
+    using (FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Open))
+    {
+        // Export data
+        form.ImportJson(jsonStream);
+    }
+}
 ```

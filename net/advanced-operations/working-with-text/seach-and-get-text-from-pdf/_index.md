@@ -448,32 +448,35 @@ Sometimes we want to add hidden text in a PDF document and then search hidden te
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-//Create document with hidden text
-Document document = new Document();
-Page page = document.Pages.Add();
-TextFragment frag1 = new TextFragment("This is common text.");
-TextFragment frag2 = new TextFragment("This is invisible text.");
-
-//Set text property - invisible
-frag2.TextState.Invisible = true;
-
-page.Paragraphs.Add(frag1);
-page.Paragraphs.Add(frag2);
-document.Save(dataDir + "39400_out.pdf");
-document.Dispose();
-
-//Search text in the document
-document = new Document(dataDir + "39400_out.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(document.Pages[1]);
-
-foreach (TextFragment fragment in absorber.TextFragments)
+// Create document with hidden text
+using (Document document = new Document())
 {
-    //Do something with fragments
-    Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
-    fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
+    Page page = document.Pages.Add();
+    TextFragment frag1 = new TextFragment("This is common text.");
+    TextFragment frag2 = new TextFragment("This is invisible text.");
+
+    //Set text property - invisible
+    frag2.TextState.Invisible = true;
+
+    page.Paragraphs.Add(frag1);
+    page.Paragraphs.Add(frag2);
+    // Save document
+    document.Save(dataDir + "39400_out.pdf");
 }
-document.Dispose();
+
+// Search text in the document
+using (Document document = new Document(dataDir + "39400_out.pdf"))
+{
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+    absorber.Visit(document.Pages[1]);
+
+    foreach (TextFragment fragment in absorber.TextFragments)
+    {
+        //Do something with fragments
+        Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
+        fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
+    }
+}
 ```
 
 ## Searching Text With .NET Regex
