@@ -264,9 +264,6 @@ public static void ConvertPDFtoImage(ImageDevice imageDevice,
         {
             // Convert a particular page and save the image to stream
             imageDevice.Process(document.Pages[pageCount], imageStream);
-
-            // Close stream
-            imageStream.Close();
         }
     }
 }

@@ -60,15 +60,17 @@ public static void PageBrakeExample02()
 ```csharp
 public static void PageBrakeExample03()
 {
-    Stream src = new FileStream(dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read);
-    Stream dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite);
-    PdfFileEditor fileEditor = new PdfFileEditor();
-    fileEditor.AddPageBreak(src, dest,
-        new PdfFileEditor.PageBreak[]
+    using (Stream src = new FileStream(dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read))
+    {
+        using (Stream dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite))
         {
-            new PdfFileEditor.PageBreak(1, 450)
-        });
-    dest.Close();
-    src.Close();
+            PdfFileEditor fileEditor = new PdfFileEditor();
+            fileEditor.AddPageBreak(src, dest,
+                new PdfFileEditor.PageBreak[]
+                {
+                    new PdfFileEditor.PageBreak(1, 450)
+                });
+        }
+    }
 }
 ```

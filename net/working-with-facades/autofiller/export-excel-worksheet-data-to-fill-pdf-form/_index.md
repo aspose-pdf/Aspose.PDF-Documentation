@@ -35,15 +35,15 @@ Once the method is called a new Pdf form file is generated, which contains five 
 ```csharp
 Workbook workbook = new Workbook();
 // Creating a file stream containing the Excel file to be opened
-FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open);
-// Opening the Excel file through the file stream
-workbook.Open(fstream);
-// Accessing the first worksheet in the Excel file
-Worksheet worksheet = workbook.Worksheets[0];
-// Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
-DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
-// Closing the file stream to free all resources
-fstream.Close();
+using (FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open))
+{
+    // Opening the Excel file through the file stream
+    workbook.Open(fstream);
+    // Accessing the first worksheet in the Excel file
+    Worksheet worksheet = workbook.Worksheets[0];
+    // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
+    DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
+}
 // Create an object of AutoFiller class
 AutoFiller autoFiller = new AutoFiller();
 // The input pdf file that contains form fields

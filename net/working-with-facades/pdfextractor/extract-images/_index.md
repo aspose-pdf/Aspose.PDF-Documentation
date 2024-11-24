@@ -50,10 +50,10 @@ public static void ExtractImagesWholePDFStreams()
         pdfExtractor.GetNextImage(memoryStream);
 
         // Write to disk, if you like, or use it otherwise.
-        FileStream fileStream = new
-        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
-        memoryStream.WriteTo(fileStream);
-        fileStream.Close();
+        using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+        {
+            memoryStream.WriteTo(fileStream);
+        }
     }
 }
 ```
@@ -83,11 +83,11 @@ public static void ExtractImagesParticularPage()
         MemoryStream memoryStream = new MemoryStream();
         pdfExtractor.GetNextImage(memoryStream);
 
-        // Write to disk, if you like, or use it otherwise.
-        FileStream fileStream = new
-        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
-        memoryStream.WriteTo(fileStream);
-        fileStream.Close();
+        // Write to disk, if you like, or use it otherwise
+        using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+        {
+            memoryStream.WriteTo(fileStream);
+        }
     }
 }
 ```
@@ -118,11 +118,12 @@ public static void ExtractImagesRangePages()
         MemoryStream memoryStream = new MemoryStream();
         pdfExtractor.GetNextImage(memoryStream);
 
-        // Write to disk, if you like, or use it otherwise.
-        FileStream fileStream = new
-        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
-        memoryStream.WriteTo(fileStream);
-        fileStream.Close();
+        // Write to disk, if you like, or use it otherwise
+        using (FileStream fileStream = new
+        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+        {
+            memoryStream.WriteTo(fileStream);
+        }
     }
 }
 ```

@@ -38,14 +38,18 @@ public static void ImportExportXFDF01()
 {
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
     annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
-    System.IO.FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "sample.xfdf");
-    annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
-    xmlOutputStream.Close();
-    var document = new Document();
-    document.Pages.Add();
-    annotationEditor.BindPdf(document);
-    annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "sample.xfdf"));
-    annotationEditor.Save(dataDir + "ImportedAnnotation.pdf");
+    using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "sample.xfdf"))
+    {
+        annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
+    }
+
+    using (var document = new Document())
+    {
+        document.Pages.Add();
+        annotationEditor.BindPdf(document);
+        annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "sample.xfdf"));
+        annotationEditor.Save(dataDir + "ImportedAnnotation.pdf");
+    }
 }
 ```
 
@@ -56,15 +60,18 @@ public static void ImportExportXFDF02()
 {
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
     annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
-    System.IO.FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "sample.xfdf");
-    var annotationTypes = new[] { AnnotationType.FreeText, AnnotationType.Text };
-    annotationEditor.ExportAnnotationsXfdf(xmlOutputStream, 2, 2, annotationTypes);
-    xmlOutputStream.Close();
+    using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "sample.xfdf"))
+    {
+        var annotationTypes = new[] { AnnotationType.FreeText, AnnotationType.Text };
+        annotationEditor.ExportAnnotationsXfdf(xmlOutputStream, 2, 2, annotationTypes);
+    }
 
-    var document = new Document(dataDir + "sample.pdf");
-    document.Pages.Add();
-    annotationEditor.BindPdf(document);
-    annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "sample.xfdf"));
-    annotationEditor.Save(dataDir + "ImportedAnnotation.pdf");
+    using (var document = new Document(dataDir + "sample.pdf"))
+    {
+        document.Pages.Add();
+        annotationEditor.BindPdf(document);
+        annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "sample.xfdf"));
+        annotationEditor.Save(dataDir + "ImportedAnnotation.pdf");
+    }
 }
 ```

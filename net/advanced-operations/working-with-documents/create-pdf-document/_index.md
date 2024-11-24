@@ -159,11 +159,11 @@ static string CallBackGetHocr(System.Drawing.Image img)
         p.Start();
         p.WaitForExit();
 
-        System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr");
-        string text = streamReader.ReadToEnd();
-        streamReader.Close();
-
-        return text;
+        using (System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+        {
+            string text = streamReader.ReadToEnd();
+            return text;
+        }
     }
     finally
     {

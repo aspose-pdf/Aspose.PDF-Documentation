@@ -34,7 +34,6 @@ for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
             imageStream.Position = 0;
    
             // Instantiate BarCodeReader object
-   
             Aspose.BarCodeRecognition.BarCodeReader barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
    
             while (barcodeReader.Read())
@@ -47,7 +46,6 @@ for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
             }
    
             // Close BarCodeReader object to release the Image file
-   
             barcodeReader.Close();
         }
     }

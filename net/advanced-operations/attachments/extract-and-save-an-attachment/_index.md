@@ -127,13 +127,12 @@ foreach (FileSpecification fileSpecification in embeddedFiles)
 
     // Get the attachment and write to file or stream
     byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+    using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+    {
+        fileStream.Write(fileContent, 0, fileContent.Length);
+    }
+    count += 1;
 }
 ```
 
@@ -173,9 +172,10 @@ if (fileSpecification.Params != null)
 byte[] fileContent = new byte[fileSpecification.Contents.Length];
 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
+using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+{
+    fileStream.Write(fileContent, 0, fileContent.Length);
+}
 ```
 
 <script type="application/ld+json">

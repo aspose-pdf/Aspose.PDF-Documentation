@@ -32,11 +32,11 @@ document.Pages.Accept(textAbsorber);
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 Call the **Accept** method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.
@@ -61,13 +61,11 @@ document.Pages[1].Accept(textAbsorber);
 string extractedText = textAbsorber.Text;
 
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text_out.txt");
-
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text_out.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 ## Extract Text from Pages using Text Device
@@ -105,17 +103,13 @@ foreach (Page pdfPage in document.Pages)
         TextDevice textDevice = new TextDevice();
 
         // Set text extraction options - set text extraction mode (Raw or Pure)
-        TextExtractionOptions textExtOptions = new
-        TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+        TextExtractionOptions textExtOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
         textDevice.ExtractionOptions = textExtOptions;
 
         // Convert a particular page and save text to the stream
         textDevice.Process(pdfPage, textStream);
         // Convert a particular page and save text to the stream
         textDevice.Process(document.Pages[1], textStream);
-
-        // Close memory stream
-        textStream.Close();
 
         // Get text from memory stream
         extractedText = Encoding.Unicode.GetString(textStream.ToArray());
@@ -154,11 +148,11 @@ document.Pages[1].Accept(absorber);
 // Get the extracted text
 string extractedText = absorber.Text;
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 ## Extract text based on columns
