@@ -1341,7 +1341,10 @@ Also, this release provides the Sign a PDF using a signed HASH:
         using (var sign = new PdfFileSignature())
         {
             sign.BindPdf(outputPdf);
-            Assert.IsTrue(sign.VerifySignature("Signature1"));
+            if (!sign.VerifySignature("Signature1"))
+            {
+                throw new Exception("Not verified");
+            }
         }
     }
 

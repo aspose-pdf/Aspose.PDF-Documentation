@@ -97,7 +97,6 @@ public static void Extract_Marked_Table()
             {
                 foreach (AbsorbedCell cell in row.CellList)
                 {
-
                     foreach (TextFragment fragment in cell.TextFragments)
                     {
                         var sb = new StringBuilder();

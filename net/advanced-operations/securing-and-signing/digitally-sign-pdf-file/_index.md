@@ -166,7 +166,10 @@ public void Verify(string fileName)
             foreach (var sigName in sigNames)
             {
                 // Verify that the signature with the given name is valid
-                Assert.IsTrue(signature.VerifySignature(sigName));
+                if (!signature.VerifySignature(sigName))
+                {
+                    throw new Exception("Not verified");
+                }
             }
         }
     }
@@ -353,7 +356,10 @@ public void Verify(string fileName)
         using (PdfFileSignature signature = new PdfFileSignature(document))
         {
             // Check if the document contains any digital signatures
-            Assert.IsTrue(signature.ContainsSignature());
+            if (!signature.ContainsSignature())
+            {
+                throw new Exception("Not contains signature");
+            }
 
             // Get a list of signature names in the document
             var sigNames = signature.GetSignNames();
@@ -362,7 +368,10 @@ public void Verify(string fileName)
             foreach (var sigName in sigNames)
             {
                 // Verify that the signature with the given name is valid
-                Assert.IsTrue(signature.VerifySignature(sigName));
+                if (!signature.VerifySignature(sigName))
+                {
+                    throw new Exception("Not verified");
+                }
             }
         }
     }

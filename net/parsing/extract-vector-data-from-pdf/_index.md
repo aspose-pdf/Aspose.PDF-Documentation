@@ -66,7 +66,6 @@ extractor.Extract(page, svgDirPath);
 ```csharp
 List<GraphicElement> elements = new List<GraphicElement>();
 // Fill elements list needed graphic elements.
-
 SvgExtractor svgExtractor = new SvgExtractor();
 svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "1.svg"));
 ```

@@ -97,11 +97,9 @@ foreach (PageMarkup markup in absorber.PageMarkups)
     foreach (MarkupSection section in markup.Sections)
     {
         int j = 1;
-
         foreach (MarkupParagraph paragraph in section.Paragraphs)
         {
             StringBuilder paragraphText = new StringBuilder();
-
             foreach (List<TextFragment> line in paragraph.Lines)
             {
                 foreach (TextFragment fragment in line)
