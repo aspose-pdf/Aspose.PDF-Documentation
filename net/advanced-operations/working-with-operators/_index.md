@@ -161,9 +161,9 @@ string imageFile = dataDir+ "aspose-logo.jpg";
 string inFile = dataDir + "DrawXFormOnPage.pdf";
 string outFile = dataDir + "blank-sample2_out.pdf";
 
-using (Document doc = new Document(inFile))
+using (Document document = new Document(inFile))
 {
-    OperatorCollection pageContents = doc.Pages[1].Contents;
+    OperatorCollection pageContents = document.Pages[1].Contents;
 
     // The sample demonstrates
     // GSave/GRestore operators usage
@@ -182,8 +182,8 @@ using (Document doc = new Document(inFile))
     #region create xForm
 
     // Create xForm
-    XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
-    doc.Pages[1].Resources.Forms.Add(form);
+    XForm form = XForm.CreateNewForm(document.Pages[1], document);
+    document.Pages[1].Resources.Forms.Add(form);
     form.Contents.Add(new Operators.GSave());
     // Define image width and heigh
     form.Contents.Add(new Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
@@ -214,7 +214,7 @@ using (Document doc = new Document(inFile))
 
     // Restore grahics state with GRestore after the GSave
     pageContents.Add(new Operators.GRestore());
-    doc.Save(outFile);
+    document.Save(outFile);
 }
 ```
 
@@ -229,8 +229,8 @@ The following code snippet shows how to remove graphics. Please note that if the
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
 
-Document doc = new Document(dataDir+ "RemoveGraphicsObjects.pdf");
-Page page = doc.Pages[2];
+Document document = new Document(dataDir+ "RemoveGraphicsObjects.pdf");
+Page page = document.Pages[2];
 OperatorCollection oc = page.Contents;
 
 // Used path-painting operators
@@ -241,7 +241,7 @@ Operator[] operators = new Operator[] {
 };
 
 oc.Delete(operators);
-doc.Save(dataDir+ "No_Graphics_out.pdf");
+document.Save(dataDir+ "No_Graphics_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -116,74 +116,63 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-using System;
-
-namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
+Document document = new Document(file);
+bool convertResult = false;
+try
 {
-    class ExampleCreateDocument
+    convertResult = document.Convert(CallBackGetHocr);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}
+document.Save(file);
+document.Dispose();
+
+static string CallBackGetHocr(System.Drawing.Image img)
+{
+    string tmpFile = System.IO.Path.GetTempFileName();
+    try
     {
-        public static void CreateSearchableDocuments(string file)
+        System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
+
+        bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
+        string inputFile = string.Concat('"', tmpFile, '"');
+        string outputFile = string.Concat('"', tmpFile, '"');
+        string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
+        string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
+
+        System.Diagnostics.ProcessStartInfo psi =
+            new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
+            {
+                UseShellExecute = true,
+                CreateNoWindow = true,
+                WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
+                WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
+            };
+
+        System.Diagnostics.Process p = new System.Diagnostics.Process
         {
-            Document doc = new Document(file);
-            bool convertResult = false;
-            try
-            {
-                convertResult = doc.Convert(CallBackGetHocr);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            doc.Save(file);
-            doc.Dispose();
+            StartInfo = psi
+        };
+        p.Start();
+        p.WaitForExit();
+
+        System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr");
+        string text = streamReader.ReadToEnd();
+        streamReader.Close();
+
+        return text;
+    }
+    finally
+    {
+        if (System.IO.File.Exists(tmpFile))
+        {
+            System.IO.File.Delete(tmpFile);
         }
-
-        static string CallBackGetHocr(System.Drawing.Image img)
+        if (System.IO.File.Exists(tmpFile + ".hocr"))
         {
-            string tmpFile = System.IO.Path.GetTempFileName();
-            try
-            {
-                System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
-
-                bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
-                string inputFile = string.Concat('"', tmpFile, '"');
-                string outputFile = string.Concat('"', tmpFile, '"');
-                string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
-                string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
-
-                System.Diagnostics.ProcessStartInfo psi =
-                    new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
-                    {
-                        UseShellExecute = true,
-                        CreateNoWindow = true,
-                        WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-                        WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
-                    };
-
-                System.Diagnostics.Process p = new System.Diagnostics.Process
-                {
-                    StartInfo = psi
-                };
-                p.Start();
-                p.WaitForExit();
-
-                System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr");
-                string text = streamReader.ReadToEnd();
-                streamReader.Close();
-
-                return text;
-            }
-            finally
-            {
-                if (System.IO.File.Exists(tmpFile))
-                {
-                    System.IO.File.Delete(tmpFile);
-                }
-                if (System.IO.File.Exists(tmpFile + ".hocr"))
-                {
-                    System.IO.File.Delete(tmpFile + ".hocr");
-                }
-            }
+            System.IO.File.Delete(tmpFile + ".hocr");
         }
     }
 }

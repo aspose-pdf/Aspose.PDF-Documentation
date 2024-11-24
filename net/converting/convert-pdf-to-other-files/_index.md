@@ -67,7 +67,7 @@ The following code snippet shows the process of converting PDF files into the TE
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Create Document object
-Document doc = new Document(dataDir + "PDFToTeX.pdf");
+Document document = new Document(dataDir + "PDFToTeX.pdf");
 
 // Instantiate LaTex save option          
 LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
@@ -79,7 +79,7 @@ string pathToOutputDirectory = dataDir;
 saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
 // Save PDF file into LaTex format           
-doc.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
 ```
 
 ## Convert PDF to Text
@@ -188,7 +188,7 @@ string inputPdfPath = "";
 string markdownOutputFilePath = "";
 
 // Create a new Document object using the specified input PDF path.
-using (Document doc = new Document(inputPdfPath))
+using (Document document = new Document(inputPdfPath))
 {
     // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
     MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
@@ -201,6 +201,6 @@ using (Document doc = new Document(inputPdfPath))
     saveOptions.ResourcesDirectoryName = "images";
 
     // Save the document in Markdown format to the specified output file path using the defined save options.    
-    doc.Save(markdownOutputFilePath, saveOptions);
+    document.Save(markdownOutputFilePath, saveOptions);
 }
 ```

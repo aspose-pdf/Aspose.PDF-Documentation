@@ -143,9 +143,9 @@ Aspose.PDF API lets you add image stamp as background in a floating box. The Bac
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Add page to PDF document
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create FloatingBox object
 FloatingBox aBox = new FloatingBox(200, 100);
 // Set left position for FloatingBox
@@ -168,7 +168,7 @@ aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
 // Add FloatingBox to paragraphs collection of page object
 page.Paragraphs.Add(aBox);
 // Save the PDF document
-doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
 ```
 
 ## Add alternative text to the image stamp

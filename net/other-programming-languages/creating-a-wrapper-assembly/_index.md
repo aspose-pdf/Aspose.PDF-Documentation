@@ -48,13 +48,13 @@ namespace PdfText
         public string GetText(string file)
         {
             // open document
-            Document doc = new Document(file);
+            Document document = new Document(file);
 
             // create TextAbsorber object to extract text
             TextAbsorber absorber = new TextAbsorber();
 
             // accept the absorber for all document's pages
-            doc.Pages.Accept(absorber);
+            document.Pages.Accept(absorber);
 
             // get the extracted text
 

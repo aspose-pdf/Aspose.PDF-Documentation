@@ -82,9 +82,9 @@ It is possible to set the size of an image that's being added to a PDF file. In 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // add page to pages collection of PDF file
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create an image instance
 Aspose.Pdf.Image img = new Aspose.Pdf.Image();
 // Set Image Width and Height in Points
@@ -99,7 +99,7 @@ page.Paragraphs.Add(img);
 page.PageInfo.Width = 800;
 page.PageInfo.Height = 800;
 // save resultant PDF file
-doc.Save(dataDir + "SetImageSize_out.pdf");
+document.Save(dataDir + "SetImageSize_out.pdf");
 ```
 
 <script type="application/ld+json">

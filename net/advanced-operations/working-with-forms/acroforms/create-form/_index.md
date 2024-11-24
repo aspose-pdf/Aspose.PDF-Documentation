@@ -154,8 +154,8 @@ The following code snippet shows the steps to add RadioButtonField with three op
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 Table table = new Table();
 table.ColumnWidths = "120 120 120";
 page.Paragraphs.Add(table);
@@ -166,7 +166,7 @@ Cell c3 = r1.Cells.Add();
 
 RadioButtonField rf = new RadioButtonField(page);
 rf.PartialName = "radio";
-doc.Form.Add(rf, 1);
+document.Form.Add(rf, 1);
 
 RadioButtonOptionField opt1 = new RadioButtonOptionField();
 RadioButtonOptionField opt2 = new RadioButtonOptionField();
@@ -210,7 +210,7 @@ c2.Paragraphs.Add(opt2);
 c3.Paragraphs.Add(opt3);
 
 // Save the PDF file
-doc.Save(dataDir + "RadioButtonWithOptions_out.pdf");
+document.Save(dataDir + "RadioButtonWithOptions_out.pdf");
 ```
 
 ### Adding Caption to RadioButtonField
@@ -272,13 +272,13 @@ The following code snippets show how to add ComboBox field in a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Create Document object
-Document doc = new Document();
+Document document = new Document();
 
 // Add page to document object
-doc.Pages.Add();
+document.Pages.Add();
 
 // Instantiate ComboBox Field object
-ComboBoxField combo = new ComboBoxField(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
+ComboBoxField combo = new ComboBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
 
 // Add option to ComboBox
 combo.AddOption("Red");
@@ -287,10 +287,10 @@ combo.AddOption("Green");
 combo.AddOption("Blue");
 
 // Add combo box object to form fields collection of document object
-doc.Form.Add(combo);
+document.Form.Add(combo);
 
 // Save the PDF document
-doc.Save(dataDir + "ComboBox_out.pdf");
+document.Save(dataDir + "ComboBox_out.pdf");
 ```
 
 ### Add Tooltip to Form Field
@@ -305,13 +305,13 @@ The code snippets that follow show how to add a tooltip to a form field, first u
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load source PDF form
-Document doc = new Document(dataDir + "AddTooltipToField.pdf");
+Document document = new Document(dataDir + "AddTooltipToField.pdf");
 
 // Set the tooltip for textfield
-(doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
+(document.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
 
 // Save the updated document
-doc.Save(dataDir + "AddTooltipToField_out.pdf");
+document.Save(dataDir + "AddTooltipToField_out.pdf");
 ```
 
 

@@ -132,13 +132,13 @@ Aspose.PDF has limited support for Bates Numbering for now. This functionality w
 ```csharp
 static void Demo03()
 {
-    Document doc = new Document(@"C:\Samples\Sample-Document03.pdf");
-    foreach (var page in doc.Pages)
+    Document document = new Document(@"C:\Samples\Sample-Document03.pdf");
+    foreach (var page in document.Pages)
     {
         var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
         page.Artifacts.Delete(batesNum);
     }
-    doc.Save(@"C:\Samples\Sample-Document04.pdf");
+    document.Save(@"C:\Samples\Sample-Document04.pdf");
 }
 ```
 

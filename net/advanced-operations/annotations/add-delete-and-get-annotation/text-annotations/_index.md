@@ -195,8 +195,8 @@ For a more flexible configuration of annotation in the PDF document, Aspose.PDF 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 DefaultAppearance da = new DefaultAppearance();
 da.TextColor = System.Drawing.Color.Red;
 da.FontSize = 10;
@@ -209,7 +209,7 @@ fta.Callout = new Point[]
 };
 page.Annotations.Add(fta);
 fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">This is a sample</span></p></body>";
-doc.Save(dataDir + "SetCalloutProperty.pdf");
+document.Save(dataDir + "SetCalloutProperty.pdf");
 ```
 
 ### Set Callout Property for XFDF File
@@ -260,16 +260,16 @@ Sometimes, it is necessary to create a watermark that isn’t visible in the doc
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
 // Open document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
-FreeTextAnnotation annotation = new FreeTextAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(50, 600, 250, 650), new DefaultAppearance("Helvetica", 16, System.Drawing.Color.Red));
+FreeTextAnnotation annotation = new FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(50, 600, 250, 650), new DefaultAppearance("Helvetica", 16, System.Drawing.Color.Red));
 annotation.Contents = "ABCDEFG";
 annotation.Characteristics.Border = System.Drawing.Color.Red;
 annotation.Flags = AnnotationFlags.Print | AnnotationFlags.NoView;
-doc.Pages[1].Annotations.Add(annotation);
+document.Pages[1].Annotations.Add(annotation);
 
 // Save output file
-doc.Save(dataDir + "InvisibleAnnotation_out.pdf");
+document.Save(dataDir + "InvisibleAnnotation_out.pdf");
 ```
 
 ### Set Formatting of FreeTextAnnotation

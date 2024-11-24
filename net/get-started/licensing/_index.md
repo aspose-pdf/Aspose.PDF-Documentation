@@ -90,9 +90,9 @@ public static void SetMeteredLicense()
         "<type private key here>");
 
     // Load the document from disk.
-    Document doc = new Document("input.pdf");
+    Document document = new Document("input.pdf");
     //Get the page count of document
-    Console.WriteLine(doc.Pages.Count);
+    Console.WriteLine(document.Pages.Count);
 }
 ```
 
@@ -104,41 +104,27 @@ Please note that the embedded resources are included in assembly the way they ar
 Therefore, in order to put an extra layer of security when embedding the license with the application, you can compress/encrypt license and after that, you can embed it into the assembly. Suppose we have Aspose.PDF.lic license file, so let's make Aspose.PDF.zip with password test and embed this zip file into solution. The following code snippet can be used to initialize the license:
 
 ```csharp
-using System;
-using System.IO;
-using System.IO.Compression;
-using System.Reflection;
+License license = new License();
+license.SetLicense(GetSecureLicenseFromStream());
+Document document = new Document("document.pdf");
+//Get the page count of document
+Console.WriteLine(document.Pages.Count);
 
-namespace Aspose.Pdf.Examples
+private static Stream GetSecureLicenseFromStream()
 {
-    class ExampleLicensing
+    var assembly = Assembly.GetExecutingAssembly();
+    var memoryStream = new MemoryStream();
+    using (var zipToOpen = assembly.GetManifestResourceStream("Aspose.Pdf.Examples.License.Aspose.PDF.zip"))
     {
-        public static void LicenseDemo()
+        using (ZipArchive archive = new ZipArchive(zipToOpen ?? throw new InvalidOperationException(), ZipArchiveMode.Read))
         {
-            License license = new License();
-            license.SetLicense(GetSecureLicenseFromStream());
-            Document doc = new Document("document.pdf");
-            //Get the page count of document
-            Console.WriteLine(doc.Pages.Count);
-        }
-
-        private static Stream GetSecureLicenseFromStream()
-        {
-            var assembly = Assembly.GetExecutingAssembly();
-            var memoryStream = new MemoryStream();
-            using (var zipToOpen = assembly.GetManifestResourceStream("Aspose.Pdf.Examples.License.Aspose.PDF.zip"))
-            {
-                using (ZipArchive archive = new ZipArchive(zipToOpen ?? throw new InvalidOperationException(), ZipArchiveMode.Read))
-                {
-                    var unpackedLicense  = archive.GetEntry("Aspose.PDF.lic");
-                    unpackedLicense?.Open().CopyTo(memoryStream);
-                }
-            }
-
-            memoryStream.Position = 0;
-            return memoryStream;
+            var unpackedLicense  = archive.GetEntry("Aspose.PDF.lic");
+            unpackedLicense?.Open().CopyTo(memoryStream);
         }
     }
+
+    memoryStream.Position = 0;
+    return memoryStream;
 }
 ```
 

@@ -238,9 +238,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document doc = new Document(dataDir + "ExtractHighlightedText.pdf");
+Document document = new Document(dataDir + "ExtractHighlightedText.pdf");
 // Loop through all the annotations
-foreach (Annotation annotation in doc.Pages[1].Annotations)
+foreach (Annotation annotation in document.Pages[1].Annotations)
 {
     // Filter TextMarkupAnnotation
     if (annotation is TextMarkupAnnotation)
@@ -271,12 +271,12 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string inXml = "40014.xml";
 string outFile = "40014_out.pdf";
 
-Document doc = new Document();
-doc.BindXml(dataDir + inXml);
+Document document = new Document();
+document.BindXml(dataDir + inXml);
 
-Page page = (Page)doc.GetObjectById("mainSection");
+Page page = (Page)document.GetObjectById("mainSection");
 
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-doc.Save(dataDir + outFile);
+TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
+segment = (TextSegment)document.GetObjectById("strongHtml");
+document.Save(dataDir + outFile);
 ```

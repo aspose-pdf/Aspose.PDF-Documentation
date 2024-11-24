@@ -117,8 +117,8 @@ dr[1] = "Mary Miller";
 dr[2] = "Female";
 dt.Rows.Add(dr);
 // Create Document instance
-Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 // Initializes a new instance of the Table
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 // Set column widths of the table
@@ -130,10 +130,10 @@ table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .
 table.ImportDataTable(dt, true, 0, 1, 3, 3);
 
 // Add table object to first page of input document
-doc.Pages[1].Paragraphs.Add(table);
+document.Pages[1].Paragraphs.Add(table);
 
 // Save updated document containing table object
-doc.Save(dataDir + "DataIntegrated_out.pdf");
+document.Save(dataDir + "DataIntegrated_out.pdf");
 ```
 
 ## How to determine if table will break in the current page
@@ -214,8 +214,8 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 string outFile = dataDir + "AddRepeatingColumn_out.pdf";
 // Create a new document
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 // Instantiate an outer table that takes up the entire page
 Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();
@@ -273,7 +273,7 @@ for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
     row1.Cells.Add("col " + RowCounter.ToString() + ", 17");
 }
 
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 ## Integrate Table with the Entity Framework source

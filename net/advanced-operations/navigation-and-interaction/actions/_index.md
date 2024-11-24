@@ -146,9 +146,9 @@ In order to add the local hyperlink, we need to create a TextFragment so that li
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
 // Create Document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF file
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create Text Fragment instance
 TextFragment text = new TextFragment("link page number test to page 7");
 // Create local hyperlink instance
@@ -173,7 +173,7 @@ text.Hyperlink = link;
 page.Paragraphs.Add(text);
 
 // Save updated document
-doc.Save(dataDir + "CreateLocalHyperlink_out.pdf");
+document.Save(dataDir + "CreateLocalHyperlink_out.pdf");
 ```
 
 ## Get PDF Hyperlink Destination (URL)
@@ -307,19 +307,19 @@ The [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.ann
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
 // Load the PDF file
-Document doc = new Document(dataDir + "SpecifyPageWhenViewing.pdf");
+Document document = new Document(dataDir + "SpecifyPageWhenViewing.pdf");
 // Get the instance of second page of document
-Page page2 = doc.Pages[2];
+Page page2 = document.Pages[2];
 // Create the variable to set the zoom factor of target page
 double zoom = 1;
 // Create GoToAction instance
-GoToAction action = new GoToAction(doc.Pages[2]);
+GoToAction action = new GoToAction(document.Pages[2]);
 // Go to 2 page
 action.Destination = new XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
 // Set the document open action
-doc.OpenAction = action;
+document.OpenAction = action;
 // Save updated document
-doc.Save(dataDir + "goto2page_out.pdf");
+document.Save(dataDir + "goto2page_out.pdf");
 ```
 
 <script type="application/ld+json">

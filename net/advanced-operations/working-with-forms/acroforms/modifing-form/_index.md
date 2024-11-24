@@ -103,8 +103,8 @@ Similarly, Aspose.PDF has a method that gets the field limit using the DOM appro
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 // Getting maximum field limit using DOM
-Document doc = new Document(dataDir + "FieldLimit.pdf");
-Console.WriteLine("Limit: " + (doc.Form["textbox1"] as TextBoxField).MaxLen);
+Document document = new Document(dataDir + "FieldLimit.pdf");
+Console.WriteLine("Limit: " + (document.Form["textbox1"] as TextBoxField).MaxLen);
 ```
 
 You can also get the same value using the *Aspose.Pdf.Facades* namespace using the following code snippet.

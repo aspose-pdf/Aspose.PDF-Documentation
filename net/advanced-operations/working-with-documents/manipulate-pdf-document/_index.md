@@ -139,10 +139,10 @@ To add a TOC to an existing PDF file, use the Heading class in the Aspose.PDF na
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Load an existing PDF files
-Document doc = new Document(dataDir + "AddTOC.pdf");
+Document document = new Document(dataDir + "AddTOC.pdf");
 
 // Get access to first page of PDF file
-Page tocPage = doc.Pages.Insert(1);
+Page tocPage = document.Pages.Insert(1);
 
 // Create object to represent TOC information
 TocInfo tocInfo = new TocInfo();
@@ -169,10 +169,10 @@ for (int i = 0; i < 2; i++)
     heading2.Segments.Add(segment2);
 
     // Specify the destination page for heading object
-    heading2.DestinationPage = doc.Pages[i + 2];
+    heading2.DestinationPage = document.Pages[i + 2];
 
     // Destination page
-    heading2.Top = doc.Pages[i + 2].Rect.Height;
+    heading2.Top = document.Pages[i + 2].Rect.Height;
 
     // Destination coordinate
     segment2.Text = titles[i];
@@ -182,7 +182,7 @@ for (int i = 0; i < 2; i++)
 }
 
 // Save the updated document
-doc.Save(dataDir + "TOC_out.pdf");
+document.Save(dataDir + "TOC_out.pdf");
 ```
 
 ### Set different TabLeaderType for different TOC Levels
@@ -192,8 +192,8 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 ```csharp
 string outFile = "TOC.pdf";
 
-Document doc = new Document();
-Page tocPage = doc.Pages.Add();
+Document document = new Document();
+Page tocPage = document.Pages.Add();
 TocInfo tocInfo = new TocInfo();
 
 // Set LeaderType
@@ -225,7 +225,7 @@ tocInfo.FormatArray[3].Margin.Right = 30;
 tocInfo.FormatArray[3].TextState.FontStyle = FontStyles.Bold;
 
 // Create a section in the Pdf document
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 
 // Add four headings in the section
 for (int Level = 1; Level <= 4; Level++)
@@ -244,7 +244,7 @@ for (int Level = 1; Level <= 4; Level++)
 }
 
 // Save the Pdf
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 ### Hide Page Numbers in TOC
@@ -256,8 +256,8 @@ In case if you do not want to display page numbers, along with the headings in T
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 string outFile = dataDir + "HiddenPageNumbers_out.pdf";
-Document doc = new Document();
-Page tocPage = doc.Pages.Add();
+Document document = new Document();
+Page tocPage = document.Pages.Add();
 TocInfo tocInfo = new TocInfo();
 TextFragment title = new TextFragment("Table Of Contents");
 title.TextState.FontSize = 20;
@@ -277,7 +277,7 @@ tocInfo.FormatArray[1].TextState.Underline = true;
 tocInfo.FormatArray[1].TextState.FontSize = 10;
 tocInfo.FormatArray[2].TextState.FontStyle = FontStyles.Bold;
 tocInfo.FormatArray[3].TextState.FontStyle = FontStyles.Bold;
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Add four headings in the section
 for (int Level = 1; Level != 5; Level++)
 { 
@@ -291,7 +291,7 @@ for (int Level = 1; Level != 5; Level++)
     page.Paragraphs.Add(heading2); 
 }
 
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 ### Customize Page Numbers while adding TOC
@@ -303,9 +303,9 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 string inFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "CustomizePageNumbersAddingToC.pdf";
 string outFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "CustomizePageNumbersAddingToC_out.pdf";
 // Load an existing PDF files
-Document doc = new Document(inFile);
+Document document = new Document(inFile);
 // Get access to first page of PDF file
-Page tocPage = doc.Pages.Insert(1);
+Page tocPage = document.Pages.Insert(1);
 // Create object to represent TOC information
 TocInfo tocInfo = new TocInfo();
 TextFragment title = new TextFragment("Table Of Contents");
@@ -315,7 +315,7 @@ title.TextState.FontStyle = FontStyles.Bold;
 tocInfo.Title = title;
 tocInfo.PageNumbersPrefix = "P";
 tocPage.TocInfo = tocInfo;
-for (int i = 1; i<doc.Pages.Count; i++)
+for (int i = 1; i < document.Pages.Count; i++)
 {
     // Create Heading object
     Heading heading2 = new Heading(1);
@@ -323,9 +323,9 @@ for (int i = 1; i<doc.Pages.Count; i++)
     heading2.TocPage = tocPage;
     heading2.Segments.Add(segment2);
     // Specify the destination page for heading object
-    heading2.DestinationPage = doc.Pages[i + 1];
+    heading2.DestinationPage = document.Pages[i + 1];
     // Destination page
-    heading2.Top = doc.Pages[i + 1].Rect.Height;
+    heading2.Top = document.Pages[i + 1].Rect.Height;
     // Destination coordinate
     segment2.Text = "Page " + i.ToString();
     // Add heading to page containing TOC
@@ -333,7 +333,7 @@ for (int i = 1; i<doc.Pages.Count; i++)
 }
 
 // Save the updated document
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 ## How to set PDF expiry date
@@ -348,11 +348,11 @@ In order to accomplish the above stated requirement, we can use *JavascriptActio
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF file
-doc.Pages.Add();
+document.Pages.Add();
 // Add text fragment to paragraphs collection of page object
-doc.Pages[1].Paragraphs.Add(new TextFragment("Hello World..."));
+document.Pages[1].Paragraphs.Add(new TextFragment("Hello World..."));
 // Create JavaScript object to set PDF expiry date
 JavascriptAction javaScript = new JavascriptAction(
 "var year=2017;"
@@ -362,10 +362,10 @@ JavascriptAction javaScript = new JavascriptAction(
 + "if (today.getTime() > expiry.getTime())"
 + "app.alert('The file is expired. You need a new one.');");
 // Set JavaScript as PDF open action
-doc.OpenAction = javaScript;
+document.OpenAction = javaScript;
 
 // Save PDF Document
-doc.Save(dataDir + "SetExpiryDate_out.pdf");
+document.Save(dataDir + "SetExpiryDate_out.pdf");
 ```
 
 ## Determine Progress of PDF File Generation

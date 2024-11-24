@@ -156,9 +156,9 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 ```csharp
 public static void AddRichMediaAnnotation()
 {
-    Document doc = new Document();
+    Document document = new Document();
     var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
-    Page page = doc.Pages.Add();
+    Page page = document.Pages.Add();
     //give name to video data. This data will be embedded into document with this name and referenced from flash variables by this name.
     //videoName should not contain path to the file; this is rather "key" to access data inside of the PDF document
     const string videoName = "file_example_MP4_480_1_5MG.mp4";
@@ -195,7 +195,7 @@ public static void AddRichMediaAnnotation()
     //add annotation on the page.
     page.Annotations.Add(rma);
 
-    doc.Save(dataDir +"RichMediaAnnotation.pdf");
+    document.Save(dataDir +"RichMediaAnnotation.pdf");
 }
 ```
 

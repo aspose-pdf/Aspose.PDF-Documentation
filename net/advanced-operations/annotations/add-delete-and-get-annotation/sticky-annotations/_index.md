@@ -88,10 +88,10 @@ Please check the following code snippet to add WatermarkAnnotation.
 
 ```csharp
  //Load a Document
-Document doc = new Document("source.pdf");
+Document document = new Document("source.pdf");
 
 //Load Page object to add Annotation
-Page page = doc.Pages[1];
+Page page = document.Pages[1];
 
 //Create Annotation
 WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
@@ -115,7 +115,7 @@ wa.Opacity = 0.5;
 wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
 //Save the Document
-doc.Save("Output.pdf");
+document.Save("Output.pdf");
 ```
 
 ## Add Reference of a single Image multiple times in a PDF Document

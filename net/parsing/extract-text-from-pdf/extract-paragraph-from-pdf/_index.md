@@ -25,8 +25,8 @@ private static void ExtractParagraph()
 {
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    Document doc = new Document(dataDir + "input.pdf");
-    Page page = doc.Pages[2];
+    Document document = new Document(dataDir + "input.pdf");
+    Page page = document.Pages[2];
 
     ParagraphAbsorber absorber = new ParagraphAbsorber();
     absorber.Visit(page);
@@ -42,7 +42,7 @@ private static void ExtractParagraph()
         }
     }
 
-    doc.Save(dataDir + "output_out.pdf");
+    document.Save(dataDir + "output_out.pdf");
 }
 
 private static void DrawRectangleOnPage(Rectangle rectangle, Page page)
@@ -86,10 +86,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Open an existing PDF file
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate ParagraphAbsorber
 ParagraphAbsorber absorber = new ParagraphAbsorber();
-absorber.Visit(doc);
+absorber.Visit(document);
 
 foreach (PageMarkup markup in absorber.PageMarkups)
 {

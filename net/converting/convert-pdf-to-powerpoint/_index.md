@@ -50,11 +50,11 @@ In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 // Save the output in PPTX format
-doc.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
+document.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
 ```
 
 ## Convert PDF to PPTX with Slides as Images
@@ -74,12 +74,12 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 // Save the output in PPTX format
 pptx_save.SlidesAsImages = true;
-doc.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
+document.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
 ```
 
 ## Progress Detail of PPTX Conversion
@@ -91,14 +91,14 @@ Aspose.PDF for .NET lets you track the progress of PDF to PPTX conversion. The [
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 
 //Specify Custom Progress Handler
 pptx_save.CustomProgressHandler = ShowProgressOnConsole;
 // Save the output in PPTX format
-doc.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", pptx_save);
+document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", pptx_save);
 ```
 
 Following is the custom method for displaying progress conversion.

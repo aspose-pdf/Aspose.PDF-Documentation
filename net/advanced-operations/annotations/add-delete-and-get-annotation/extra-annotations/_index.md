@@ -187,10 +187,10 @@ Aspose.PDF for .NET supports the feature to add as well as manipulate Annotation
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
 // Open document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Create RedactionAnnotation instance for specific page region
-RedactionAnnotation annot = new RedactionAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
+RedactionAnnotation annot = new RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
 annot.FillColor = Aspose.Pdf.Color.Green;
 annot.BorderColor = Aspose.Pdf.Color.Yellow;
 annot.Color = Aspose.Pdf.Color.Blue;
@@ -200,12 +200,12 @@ annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
 // Repat Overlay text over redact Annotation
 annot.Repeat = true;
 // Add annotation to annotations collection of first page
-doc.Pages[1].Annotations.Add(annot);
+document.Pages[1].Annotations.Add(annot);
 // Flattens annotation and redacts page contents (i.e. removes text and image
 // Under redacted annotation)
 annot.Redact();
 // Save result document
-doc.Save(dataDir + "RedactPage_out.pdf");
+document.Save(dataDir + "RedactPage_out.pdf");
 ```
 
 ### Facades approach

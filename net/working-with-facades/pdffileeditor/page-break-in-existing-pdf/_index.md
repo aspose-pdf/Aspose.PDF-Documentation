@@ -24,12 +24,12 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 public static void PageBrakeExample01()
 {
     // Instantiate Document instance
-    Document doc = new Document(dataDir + "Sample-Document-01.pdf");
+    Document document = new Document(dataDir + "Sample-Document-01.pdf");
     // Instantiate blank Document instance
     Document dest = new Document();
     // Create PdfFileEditor object
     PdfFileEditor fileEditor = new PdfFileEditor();
-    fileEditor.AddPageBreak(doc, dest, new PdfFileEditor.PageBreak[]
+    fileEditor.AddPageBreak(document, dest, new PdfFileEditor.PageBreak[]
     {
         new PdfFileEditor.PageBreak(1, 450)
     });

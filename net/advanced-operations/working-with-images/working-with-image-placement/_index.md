@@ -86,11 +86,11 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Load the source PDF document
-Document doc = new Document(dataDir+ "ImagePlacement.pdf");
+Document document = new Document(dataDir+ "ImagePlacement.pdf");
 ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
            
 // Load the contents of first page
-doc.Pages[1].Accept(abs);
+document.Pages[1].Accept(abs);
 foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
 {
     // Get image properties

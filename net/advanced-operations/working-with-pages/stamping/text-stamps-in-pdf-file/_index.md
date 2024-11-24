@@ -126,7 +126,7 @@ The following code snippets shows an example on how to load an existing PDF docu
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Instantiate Document object with input file
-Document doc = new Document(dataDir+ "DefineAlignment.pdf");
+Document document = new Document(dataDir+ "DefineAlignment.pdf");
 // Instantiate FormattedText object with sample string
 FormattedText text = new FormattedText("This");
 // Add new text line to FormattedText
@@ -145,10 +145,10 @@ stamp.TextAlignment = HorizontalAlignment.Center;
 // Set top margin for stamp object
 stamp.TopMargin = 20;
 // Add the stamp object over first page of document
-doc.Pages[1].AddStamp(stamp);
+document.Pages[1].AddStamp(stamp);
 
 // Save the udpated document
-doc.Save(dataDir + "StampedPDF_out.pdf");
+document.Save(dataDir + "StampedPDF_out.pdf");
 ```
 
 ## Fill Stroke Text as Stamp in PDF File

@@ -109,7 +109,7 @@ The following code snippets show how to add text in an existing PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load source PDF document
-Document doc = new Document(dataDir+ "AddTable.pdf");
+Document document = new Document(dataDir+ "AddTable.pdf");
 // Initializes a new instance of the Table
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 // Set the table border color as LightGray
@@ -127,10 +127,10 @@ for (int row_count = 1; row_count < 10; row_count++)
     row.Cells.Add("Column (" + row_count + ", 3)");
 }
 // Add table object to first page of input document
-doc.Pages[1].Paragraphs.Add(table);
+document.Pages[1].Paragraphs.Add(table);
 
 // Save updated document containing table object
-doc.Save(dataDir + "document_with_table_out.pdf");
+document.Save(dataDir + "document_with_table_out.pdf");
 ```
 
 ### ColSpan and RowSpan in Tables
@@ -196,7 +196,7 @@ public static void AddTable_RowColSpan()
     document.Pages[1].Paragraphs.Add(table);
 
     // Save updated document containing table object
-    doc.Save(dataDir + "document_with_table_out.pdf");
+    document.Save(dataDir + "document_with_table_out.pdf");
 }
 ```
 
@@ -230,8 +230,8 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instntiate the Document object by calling its empty constructor
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 // Instantiate a table object
 Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
 // Add the table in paragraphs collection of the desired section
@@ -265,7 +265,7 @@ row2.Cells.Add("item1");
 row2.Cells.Add("item2");
 row2.Cells.Add("item3");
 // Save the Pdf
-doc.Save(dataDir + "MarginsOrPadding_out.pdf");
+document.Save(dataDir + "MarginsOrPadding_out.pdf");
 ```
 
 To create table with rounded corner, use the BorderInfo class' `RoundedBorderRadius` value and set the table corner style to round.
@@ -302,9 +302,9 @@ As in Microsoft Word, an autofit method is actually a shortcut which applies dif
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instntiate the Pdf object by calling its empty constructor
-Document doc = new Document();
+Document document = new Document();
 // Create the section in the Pdf object
-Page sec1 = doc.Pages.Add();
+Page sec1 = document.Pages.Add();
 
 // Instantiate a table object
 Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
@@ -341,7 +341,7 @@ row2.Cells.Add("item2");
 row2.Cells.Add("item3");
 
 // Save updated document containing table object
-doc.Save(dataDir + "AutoFitToWindow_out.pdf");
+document.Save(dataDir + "AutoFitToWindow_out.pdf");
 ```
 
 ### Get Table Width
@@ -351,9 +351,9 @@ Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Create a new document
-Document doc = new Document();
+Document document = new Document();
 // Add page in document
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Initialize new table
 Table table = new Table
 {
@@ -380,7 +380,7 @@ The following code snippet shows the steps for creating a table instance and add
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Create an image instance
 Aspose.Pdf.Image img = new Aspose.Pdf.Image();
 // Set image type as SVG
@@ -406,12 +406,12 @@ cell = row.Cells.Add();
 // Add SVG image to paragraphs collection of recently added cell instance
 cell.Paragraphs.Add(img);
 // Create page object and add it to pages collection of document instance
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Add table to paragraphs collection of page object
 page.Paragraphs.Add(table);
 
 // Save PDF file
-doc.Save(dataDir + "AddSVGObject_out.pdf");
+document.Save(dataDir + "AddSVGObject_out.pdf");
 ```
 
 ## Using HTML Tags inside Table
@@ -442,8 +442,8 @@ dr = dt.NewRow();
 dr[0] = "<li>UPHS/Presbyterian - Dept. of Emergency Medicine: 51 N. 39th Street . Philadelphia PA 19104-2640</li>";
 dt.Rows.Add(dr);
 
-Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 // Initializes a new instance of the Table
 Aspose.Pdf.Table tableProvider = new Aspose.Pdf.Table();
 //Set column widths of the table
@@ -460,8 +460,8 @@ tableProvider.DefaultCellPadding = margin;
 
 tableProvider.ImportDataTable(dt, false, 0, 0, 3, 1, true);
 
-doc.Pages[1].Paragraphs.Add(tableProvider);
-doc.Save(dataDir + "HTMLInsideTableCell_out.pdf");
+document.Pages[1].Paragraphs.Add(tableProvider);
+document.Save(dataDir + "HTMLInsideTableCell_out.pdf");
 ```
 
 ## Insert a Page Break between rows of table
@@ -474,9 +474,9 @@ As a default behavior, when creating a table inside a PDF file, the table flows 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instantiate Document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF file
-doc.Pages.Add();
+document.Pages.Add();
 // Create table instance
 Aspose.Pdf.Table tab = new Aspose.Pdf.Table();
 // Set border style for table
@@ -499,10 +499,10 @@ for (int counter = 0; counter <= 200; counter++)
     if (counter % 10 == 0 && counter != 0) row.IsInNewPage = true;
 }
 // Add table to paragraphs collection of PDF file
-doc.Pages[1].Paragraphs.Add(tab);
+document.Pages[1].Paragraphs.Add(tab);
 
 // Save the PDF document
-doc.Save(dataDir + "InsertPageBreak_out.pdf");
+document.Save(dataDir + "InsertPageBreak_out.pdf");
 ```
 
 ## Render a Table on New Page
@@ -518,8 +518,8 @@ To render table on a new page, use the [IsInNewPage](https://reference.aspose.co
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-Document doc = new Document();
-PageInfo pageInfo = doc.PageInfo;
+Document document = new Document();
+PageInfo pageInfo = document.PageInfo;
 Aspose.Pdf.MarginInfo marginInfo = pageInfo.Margin;
 
 marginInfo.Left = 37;
@@ -532,7 +532,7 @@ pageInfo.IsLandscape = true;
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 table.ColumnWidths = "50 100";
 // Added page.
-Page curPage = doc.Pages.Add();
+Page curPage = document.Pages.Add();
 for (int i = 1; i <= 120; i++)
 {
     Aspose.Pdf.Row row = table.Rows.Add();
@@ -559,7 +559,7 @@ table1.IsInNewPage = true;
 // I want to keep table 1 to next page please...
 paragraphs.Add(table1);
 
-doc.Save(dataDir + "IsNewPageProperty_Test_out.pdf");
+document.Save(dataDir + "IsNewPageProperty_Test_out.pdf");
 ```
 
 <script type="application/ld+json">

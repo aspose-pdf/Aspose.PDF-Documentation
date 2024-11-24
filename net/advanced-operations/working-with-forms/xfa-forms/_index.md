@@ -96,17 +96,17 @@ The following code snippet shows you how to fill fields in XFA form.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load XFA form
-Document doc = new Document(dataDir + "FillXFAFields.pdf");
+Document document = new Document(dataDir + "FillXFAFields.pdf");
 
 // Get names of XFA form fields
-string[] names = doc.Form.XFA.FieldNames;
+string[] names = document.Form.XFA.FieldNames;
 
 // Set field values
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
+document.Form.XFA[names[0]] = "Field 0";
+document.Form.XFA[names[1]] = "Field 1";
 
 // Save the updated document
-doc.Save(dataDir + "Filled_XFA_out.pdf");
+document.Save(dataDir + "Filled_XFA_out.pdf");
 ```
 
 ## Convert XFA-to-Acroform
@@ -152,22 +152,22 @@ To access field properties, first use Document.Form.XFA.Teamplate to access the 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load XFA form
-Document doc = new Document(dataDir + "GetXFAProperties.pdf");
+Document document = new Document(dataDir + "GetXFAProperties.pdf");
 
-string[] names = doc.Form.XFA.FieldNames;
+string[] names = document.Form.XFA.FieldNames;
 
 // Set field values
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
+document.Form.XFA[names[0]] = "Field 0";
+document.Form.XFA[names[1]] = "Field 1";
 
 // Get field position
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
 
 // Get field position
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
 
 // Save the updated document
-doc.Save(dataDir + "Filled_XFA_out.pdf");
+document.Save(dataDir + "Filled_XFA_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -145,7 +145,7 @@ foreach (Page page in document.Pages)
     page.AddStamp(textStamp);
 }
 // Save output file
-doc.Save(dataDir + "TextinFooter_out.pdf");
+document.Save(dataDir + "TextinFooter_out.pdf");
 ```
 
 ## Adding Image in Header of PDF File
@@ -180,7 +180,7 @@ foreach (Page page in document.Pages)
     page.AddStamp(imageStamp);
 }
 // Save output file
-doc.Save(dataDir + "ImageinHeader_out.pdf");
+document.Save(dataDir + "ImageinHeader_out.pdf");
 ```
 
 ## Adding Image in Footer of PDF File
@@ -214,7 +214,7 @@ foreach (Page page in document.Pages)
     page.AddStamp(imageStamp);
 }
 // Save output file
-doc.Save(dataDir + "ImageInFooter_out.pdf");
+document.Save(dataDir + "ImageInFooter_out.pdf");
 ```
 
 ## Adding different Headers in one PDF File
@@ -229,7 +229,7 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open source document
-Document doc = new Document(dataDir+ "AddingDifferentHeaders.pdf");
+Document document = new Document(dataDir+ "AddingDifferentHeaders.pdf");
 
 // Create three stamps
 Aspose.Pdf.TextStamp stamp1 = new Aspose.Pdf.TextStamp("Header 1");
@@ -265,13 +265,13 @@ stamp3.TextState.BackgroundColor = Color.Pink;
 // Change the font face information for stamp to Verdana
 stamp3.TextState.Font = FontRepository.FindFont("Verdana");
 // First stamp is added on first page;
-doc.Pages[1].AddStamp(stamp1);
+document.Pages[1].AddStamp(stamp1);
 // Second stamp is added on second page;
-doc.Pages[2].AddStamp(stamp2);
+document.Pages[2].AddStamp(stamp2);
 // Third stamp is added on third page.
-doc.Pages[3].AddStamp(stamp3);
+document.Pages[3].AddStamp(stamp3);
 // Save the updated document
-doc.Save(dataDir + "MultiHeader_out.pdf");
+document.Save(dataDir + "MultiHeader_out.pdf");
 ```
 
 <script type="application/ld+json">

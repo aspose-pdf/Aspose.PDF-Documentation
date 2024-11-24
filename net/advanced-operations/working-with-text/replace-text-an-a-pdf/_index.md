@@ -237,11 +237,11 @@ In order to cater above-stated scenarios, Aspose.PDF for .NET has been enhanced 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Load source PDF file
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 // Create TextFragment Absorber object with regular expression
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
+document.Pages.Accept(textFragmentAbsorber);
 
 // Replace each TextFragment
 foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
@@ -256,7 +256,7 @@ foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
 }
 
 // Save resultant PDF
-doc.Save(dataDir + "RearrangeContentsUsingTextReplacement_out.pdf");
+document.Save(dataDir + "RearrangeContentsUsingTextReplacement_out.pdf");
 ```
 
 ## Rendering Replaceable Symbols during PDF creation
@@ -312,8 +312,8 @@ Replaceable symbols can also be placed inside the Header/Footer section of PDF f
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 MarginInfo marginInfo = new MarginInfo();
 marginInfo.Top = 90;
@@ -432,7 +432,7 @@ for (int i = 0; i <= 10; i++)
     }
 }
 
-doc.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
+document.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
 ```
 
 ## Remove Unused Fonts from PDF File
@@ -453,9 +453,9 @@ The following code snippet replaces font for all text fragments of all document 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Load source PDF file
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
+Document document = new Document(dataDir + "ReplaceTextPage.pdf");
 TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
+document.Pages.Accept(absorber);
 
 // Iterate through all the TextFragments
 foreach (TextFragment textFragment in absorber.TextFragments)
@@ -464,7 +464,7 @@ foreach (TextFragment textFragment in absorber.TextFragments)
 }
 
 // Save updated document
-doc.Save(dataDir + "RemoveUnusedFonts_out.pdf");
+document.Save(dataDir + "RemoveUnusedFonts_out.pdf");
 ```
 
 ## Remove All Text from PDF Document

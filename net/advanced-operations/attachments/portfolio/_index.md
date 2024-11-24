@@ -95,10 +95,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
 // Instantiate Document Object
-Document doc = new Document();
+Document document = new Document();
 
 // Instantiate document Collection object
-doc.Collection = new Collection();
+document.Collection = new Collection();
 
 // Get Files to add to Portfolio
 FileSpecification excel = new FileSpecification(dataDir + "HelloWorld.xlsx");
@@ -111,12 +111,12 @@ word.Description = "Word File";
 image.Description = "Image File";
 
 // Add files to document collection
-doc.Collection.Add(excel);
-doc.Collection.Add(word);
-doc.Collection.Add(image);
+document.Collection.Add(excel);
+document.Collection.Add(word);
+document.Collection.Add(image);
 
 // Save Portfolio document
-doc.Save(dataDir + "CreatePDFPortfolio_out.pdf");
+document.Save(dataDir + "CreatePDFPortfolio_out.pdf");
 ```
 
 ## Extract files from PDF Portfolio

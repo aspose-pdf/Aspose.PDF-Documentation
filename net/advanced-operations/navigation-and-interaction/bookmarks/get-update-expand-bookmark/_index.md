@@ -237,19 +237,19 @@ In order to accomplish this requirement, we can set open status for each outline
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
-doc.PageMode = PageMode.UseOutlines;
+document.PageMode = PageMode.UseOutlines;
 // Traverse through each Ouline item in outlines collection of PDF file
-foreach (OutlineItemCollection item in doc.Outlines)
+foreach (OutlineItemCollection item in document.Outlines)
 {
     // Set open status for outline item
     item.Open = true;
 }
 
 // Save output
-doc.Save(dataDir + + "ExpandBookmarks_out.pdf");
+document.Save(dataDir + + "ExpandBookmarks_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -23,9 +23,9 @@ Use the **TextFragmentAbsorber** class and you can already do anything with the 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-Document doc = new Document(GetInputPath("test1.pdf"));
+Document document = new Document(GetInputPath("test1.pdf"));
 TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-doc.Pages[1].Accept(absorber);
+document.Pages[1].Accept(absorber);
 using (StreamWriter writer = new StreamWriter(GetOutputPath("output.txt")))
 {
     writer.WriteLine(absorber.Text);
@@ -37,9 +37,9 @@ Or use **TextFragments** separately and do all sorts of manipulations with them,
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-Document doc = new Document(GetInputPath("test1.pdf"));
+Document document = new Document(GetInputPath("test1.pdf"));
 TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-doc.Pages[1].Accept(absorber);
+document.Pages[1].Accept(absorber);
 using (StreamWriter writer = new StreamWriter(GetOutputPath("output.txt")))
 {
     foreach (var textFragment in absorber.TextFragments)

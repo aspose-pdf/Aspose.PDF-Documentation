@@ -458,8 +458,8 @@ The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.anno
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 IList<Point[]> inkList = new List<Point[]>();
 LineInfo lineInfo = new LineInfo();
 lineInfo.VerticeCoordinate = new float[] { 55, 55, 70, 70, 70, 90, 150, 60 };
@@ -474,7 +474,7 @@ for (int i = 0; i < length; i++)
 }
 
 inkList.Add(gesture);
-InkAnnotation a1 = new InkAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList);
+InkAnnotation a1 = new InkAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList);
 a1.Subject = "Test";
 a1.Title = "Title";
 a1.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
@@ -483,10 +483,10 @@ border.Width = 3;
 border.Effect = BorderEffect.Cloudy;
 border.Dash = new Dash(1, 1);
 border.Style = BorderStyle.Solid;
-doc.Pages[1].Annotations.Add(a1);
+document.Pages[1].Annotations.Add(a1);
 
 // Save output file
-doc.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
+document.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -1116,17 +1116,17 @@ BindXML() method offers the feature to load XML file contents and Document.save(
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Bind source XML file
-doc.BindXml(dataDir + "log.xml");
+document.BindXml(dataDir + "log.xml");
 // Get reference of page object from XML
-Page page = (Page)doc.GetObjectById("mainSection");
+Page page = (Page)document.GetObjectById("mainSection");
 // Get reference of first TextSegment with ID boldHtml
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
+TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
 // Get reference of second TextSegment with ID strongHtml
-segment = (TextSegment)doc.GetObjectById("strongHtml");
+segment = (TextSegment)document.GetObjectById("strongHtml");
 // Save resultant PDF file
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+document.Save(dataDir + "XMLToPDF_out.pdf");
 ```
 
 ### Adding graphics elements to the page
@@ -1201,11 +1201,11 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 string inXml = dataDir + "input.xml";
 string inFile = dataDir + "aspose-logo.jpg";
 string outFile = dataDir + "output_out.pdf";
-Document doc = new Document();
-doc.BindXml(inXml);
-Image image = (Image)doc.GetObjectById("testImg");
+Document document = new Document();
+document.BindXml(inXml);
+Image image = (Image)document.GetObjectById("testImg");
 image.File = inFile;
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 <script type="application/ld+json">

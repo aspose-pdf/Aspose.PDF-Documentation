@@ -449,8 +449,8 @@ Sometimes we want to add hidden text in a PDF document and then search hidden te
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 //Create document with hidden text
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 TextFragment frag1 = new TextFragment("This is common text.");
 TextFragment frag2 = new TextFragment("This is invisible text.");
 
@@ -459,13 +459,13 @@ frag2.TextState.Invisible = true;
 
 page.Paragraphs.Add(frag1);
 page.Paragraphs.Add(frag2);
-doc.Save(dataDir + "39400_out.pdf");
-doc.Dispose();
+document.Save(dataDir + "39400_out.pdf");
+document.Dispose();
 
 //Search text in the document
-doc = new Document(dataDir + "39400_out.pdf");
+document = new Document(dataDir + "39400_out.pdf");
 TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(doc.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 foreach (TextFragment fragment in absorber.TextFragments)
 {
@@ -473,7 +473,7 @@ foreach (TextFragment fragment in absorber.TextFragments)
     Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
     fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
 }
-doc.Dispose();
+document.Dispose();
 ```
 
 ## Searching Text With .NET Regex

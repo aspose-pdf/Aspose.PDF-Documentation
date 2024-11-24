@@ -323,31 +323,31 @@ Aspose.PDF supports setting text alignment for contents inside a Floating Box el
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 
 Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
 floatBox.VerticalAlignment = VerticalAlignment.Bottom;
 floatBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 floatBox.Paragraphs.Add(new TextFragment("FloatingBox_bottom"));
 floatBox.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox);
+document.Pages[1].Paragraphs.Add(floatBox);
 
 Aspose.Pdf.FloatingBox floatBox1 = new Aspose.Pdf.FloatingBox(100, 100);
 floatBox1.VerticalAlignment = VerticalAlignment.Center;
 floatBox1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 floatBox1.Paragraphs.Add(new TextFragment("FloatingBox_center"));
 floatBox1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox1);
+document.Pages[1].Paragraphs.Add(floatBox1);
 
 Aspose.Pdf.FloatingBox floatBox2 = new Aspose.Pdf.FloatingBox(100, 100);
 floatBox2.VerticalAlignment = VerticalAlignment.Top;
 floatBox2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 floatBox2.Paragraphs.Add(new TextFragment("FloatingBox_top"));
 floatBox2.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox2);
+document.Pages[1].Paragraphs.Add(floatBox2);
 
-doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
+document.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
 ```
 
 ## How to remove hidden text from a PDF file
@@ -357,7 +357,6 @@ First, the code snippet creates a Document object from a file. Then, it adds a T
 This method keeps visible text intact and preserves the layout.
 
 ```cs
-
 var document = new Document(inputFile);
 var textAbsorber = new TextFragmentAbsorber();
 

@@ -93,9 +93,9 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u 
 ```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
-Document doc = new Document(inFile);
-doc.Convert(new MemoryStream(), PdfFormat.PDF_A_2U, ConvertErrorAction.Delete);
-doc.Save(outFile);
+Document document = new Document(inFile);
+document.Convert(new MemoryStream(), PdfFormat.PDF_A_2U, ConvertErrorAction.Delete);
+document.Save(outFile);
 ```
 
 ## Convert PDF file to PDF/A-3u
@@ -105,9 +105,9 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3u 
 ```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
-Document doc = new Document(inFile);
-doc.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
-doc.Save(outFile);
+Document document = new Document(inFile);
+document.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
+document.Save(outFile);
 ```
 
 ## Convert PDF file to PDF/A-4
@@ -138,15 +138,15 @@ PDF/A_3a is the format that provides the feature to attach any file format as an
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Instantiate Document instance to load existing file
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Setup new file to be added as attachment
 FileSpecification fileSpecification = new FileSpecification(dataDir + "aspose-logo.jpg", "Large Image file");
 // Add attachment to document's attachment collection
-doc.EmbeddedFiles.Add(fileSpecification);
+document.EmbeddedFiles.Add(fileSpecification);
 // Perform conversion to PDF/A_3a so attachment is included in resultnat file
-doc.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+document.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
 // Save resultant file
-doc.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
+document.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
 ```
 
 ## Replace missing fonts with alternative fonts
