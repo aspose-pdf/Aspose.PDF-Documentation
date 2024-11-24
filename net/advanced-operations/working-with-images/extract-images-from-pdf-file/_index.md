@@ -85,7 +85,7 @@ The image's index returns an [XImage](https://reference.aspose.com/pdf/net/aspos
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-using (Document document = new Document(dataDir+ "ExtractImages.pdf"))
+using (Document document = new Document(dataDir +  "ExtractImages.pdf"))
 {
     // Extract a particular image
     XImage xImage = document.Pages[1].Resources.Images[1];

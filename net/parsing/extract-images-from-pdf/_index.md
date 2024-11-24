@@ -23,7 +23,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-using (Document document = new Document(dataDir+ "ExtractImages.pdf"))
+using (Document document = new Document(dataDir +  "ExtractImages.pdf"))
 {
     // Extract a particular image
     XImage xImage = document.Pages[1].Resources.Images[1];

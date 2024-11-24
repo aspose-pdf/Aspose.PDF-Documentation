@@ -95,7 +95,7 @@ The following code snippet shows how to add image stamp in the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "AddImageStamp.pdf");
+Document document = new Document(dataDir +  "AddImageStamp.pdf");
 
 // Create image stamp
 ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
@@ -123,7 +123,7 @@ When adding an image as a stamp object, you can control the quality of the image
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "AddImageStamp.pdf");
+Document document = new Document(dataDir +  "AddImageStamp.pdf");
 
 // Create image stamp
 ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");

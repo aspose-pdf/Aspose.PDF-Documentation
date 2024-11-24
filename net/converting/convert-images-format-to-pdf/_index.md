@@ -135,8 +135,8 @@ Check next code snippet for converting CGM files to PDF format.
 public static void ConvertCGMtoPDF()
 {
     CgmLoadOptions option = new CgmLoadOptions();
-    Document document= new Document(dataDir+"corvette.cgm", option);
-    document.Save(dataDir+"CGMtoPDF.pdf");
+    Document document= new Document(dataDir + "corvette.cgm", option);
+    document.Save(dataDir + "CGMtoPDF.pdf");
 }
 ```
 
@@ -702,7 +702,7 @@ public static void TiffToPDF2()
     Document pdf = new Document();
 
     //Load TIFF image into stream
-    Bitmap bitmap = new Bitmap(File.OpenRead(dataDir+"multipage.tif"));
+    Bitmap bitmap = new Bitmap(File.OpenRead(dataDir + "multipage.tif"));
     // Convert multi page or multi frame TIFF to PDF
     FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
     int frameCount = bitmap.GetFrameCount(dimension);

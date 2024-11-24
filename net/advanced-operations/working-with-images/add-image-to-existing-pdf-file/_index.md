@@ -98,7 +98,7 @@ The following code snippet shows how to add the image in a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document document = new Document(dataDir+ "AddImage.pdf");
+Document document = new Document(dataDir +  "AddImage.pdf");
 
 // Set coordinates
 int lowerLeftX = 100;

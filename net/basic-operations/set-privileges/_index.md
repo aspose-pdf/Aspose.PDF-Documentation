@@ -119,7 +119,7 @@ The following code snippet shows you how to encrypt PDF files.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 // Open document
-Document document = new Document(dataDir+ "Encrypt.pdf");
+Document document = new Document(dataDir +  "Encrypt.pdf");
 // Encrypt PDF
 document.Encrypt("user", "owner", 0, CryptoAlgorithm.RC4x128);
 // Save updated PDF
@@ -140,7 +140,7 @@ In order to decrypt the PDF file, you first need to create a [Document](https://
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 // Open document
-Document document = new Document(dataDir+ "Decrypt.pdf", "password");
+Document document = new Document(dataDir +  "Decrypt.pdf", "password");
 // Decrypt PDF
 document.Decrypt();
 // Save updated PDF
@@ -162,7 +162,7 @@ The following code snippet shows you how to change the password of a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
 // Open document
-Document document = new Document(dataDir+ "ChangePassword.pdf", "owner");
+Document document = new Document(dataDir +  "ChangePassword.pdf", "owner");
 // Change password
 document.ChangePasswords("owner", "newuser", "newowner");
 // Save updated PDF

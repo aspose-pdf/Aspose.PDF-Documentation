@@ -86,7 +86,7 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Load the source PDF document
-Document document = new Document(dataDir+ "ImagePlacement.pdf");
+Document document = new Document(dataDir +  "ImagePlacement.pdf");
 ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
            
 // Load the contents of first page

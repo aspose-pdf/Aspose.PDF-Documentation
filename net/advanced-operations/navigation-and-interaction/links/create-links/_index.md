@@ -132,7 +132,7 @@ The following code snippet shows how to create PDF document link in a PDF file.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 // Open document
-Document document = new Document(dataDir+ "CreateDocumentLink.pdf");
+Document document = new Document(dataDir +  "CreateDocumentLink.pdf");
 // Create link
 Page page = document.Pages[1];
 LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));

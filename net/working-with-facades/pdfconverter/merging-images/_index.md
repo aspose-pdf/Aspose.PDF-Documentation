@@ -29,7 +29,7 @@ public static class ExamplePdfConverter
         using (Stream inputStream =
                 PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
         {
-            FileStream outputStream = new FileStream(dataDir+"merged_images.jpg", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
             inputStream.CopyTo(outputStream);
         }
     }

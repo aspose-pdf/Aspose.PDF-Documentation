@@ -118,7 +118,7 @@ The following code snippet shows you how to get an image's dimensions and resolu
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Load the source PDF file
-Document document = new Document(dataDir+ "ImageInformation.pdf");
+Document document = new Document(dataDir +  "ImageInformation.pdf");
 
 // Define the default resolution for image
 int defaultResolution = 72;

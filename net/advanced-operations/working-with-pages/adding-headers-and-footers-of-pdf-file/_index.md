@@ -97,7 +97,7 @@ The following code snippet shows you how to add text in the header of a PDF file
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "TextinHeader.pdf");
+Document document = new Document(dataDir +  "TextinHeader.pdf");
 
 // Create header
 TextStamp textStamp = new TextStamp("Header Text");
@@ -111,7 +111,7 @@ foreach (Page page in document.Pages)
     page.AddStamp(textStamp);
 }
 // Save updated document
-document.Save(dataDir+ "TextinHeader_out.pdf");
+document.Save(dataDir +  "TextinHeader_out.pdf");
 ```
 
 ## Adding Text in Footer of PDF File
@@ -132,7 +132,7 @@ The following code snippet shows you how to add text in the footer of a PDF file
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "TextinFooter.pdf");
+Document document = new Document(dataDir +  "TextinFooter.pdf");
 // Create footer
 TextStamp textStamp = new TextStamp("Footer Text");
 // Set properties of the stamp
@@ -166,10 +166,10 @@ The following code snippet shows you how to add image in the header of a PDF fil
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "ImageinHeader.pdf");
+Document document = new Document(dataDir +  "ImageinHeader.pdf");
 
 // Create header
-ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
+ImageStamp imageStamp = new ImageStamp(dataDir +  "aspose-logo.jpg");
 // Set properties of the stamp
 imageStamp.TopMargin = 10;
 imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
@@ -201,9 +201,9 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "ImageInFooter.pdf");
+Document document = new Document(dataDir +  "ImageInFooter.pdf");
 // Create footer
-ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
+ImageStamp imageStamp = new ImageStamp(dataDir +  "aspose-logo.jpg");
 // Set properties of the stamp
 imageStamp.BottomMargin = 10;
 imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
@@ -229,7 +229,7 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open source document
-Document document = new Document(dataDir+ "AddingDifferentHeaders.pdf");
+Document document = new Document(dataDir +  "AddingDifferentHeaders.pdf");
 
 // Create three stamps
 Aspose.Pdf.TextStamp stamp1 = new Aspose.Pdf.TextStamp("Header 1");

@@ -109,7 +109,7 @@ The following code snippets show how to add text in an existing PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load source PDF document
-Document document = new Document(dataDir+ "AddTable.pdf");
+Document document = new Document(dataDir +  "AddTable.pdf");
 // Initializes a new instance of the Table
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 // Set the table border color as LightGray

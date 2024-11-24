@@ -115,7 +115,7 @@ The following code snippet shows how to use PDF operators.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
 
 // Open document
-Document document = new Document(dataDir+ "PDFOperators.pdf");
+Document document = new Document(dataDir +  "PDFOperators.pdf");
 
 // Set coordinates
 int lowerLeftX = 100;
@@ -157,7 +157,7 @@ The code below wraps a PDF file's existing contents with the GSave/GRestore oper
 string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
 
 
-string imageFile = dataDir+ "aspose-logo.jpg";
+string imageFile = dataDir +  "aspose-logo.jpg";
 string inFile = dataDir + "DrawXFormOnPage.pdf";
 string outFile = dataDir + "blank-sample2_out.pdf";
 
@@ -229,7 +229,7 @@ The following code snippet shows how to remove graphics. Please note that if the
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
 
-Document document = new Document(dataDir+ "RemoveGraphicsObjects.pdf");
+Document document = new Document(dataDir +  "RemoveGraphicsObjects.pdf");
 Page page = document.Pages[2];
 OperatorCollection oc = page.Contents;
 
@@ -241,7 +241,7 @@ Operator[] operators = new Operator[] {
 };
 
 oc.Delete(operators);
-document.Save(dataDir+ "No_Graphics_out.pdf");
+document.Save(dataDir +  "No_Graphics_out.pdf");
 ```
 
 <script type="application/ld+json">

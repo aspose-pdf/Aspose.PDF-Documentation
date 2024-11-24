@@ -90,7 +90,7 @@ The following code snippet shows how to search a document for all its images.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document document = new Document(dataDir+ "SearchAndGetImages.pdf");
+Document document = new Document(dataDir +  "SearchAndGetImages.pdf");
 
 // Create ImagePlacementAbsorber object to perform image placement search
 ImagePlacementAbsorber abs = new ImagePlacementAbsorber();

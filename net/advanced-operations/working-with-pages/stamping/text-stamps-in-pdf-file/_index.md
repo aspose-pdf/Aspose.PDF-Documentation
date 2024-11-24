@@ -90,7 +90,7 @@ The following code snippet shows you how to add text stamp in the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document document = new Document(dataDir+ "AddTextStamp.pdf");
+Document document = new Document(dataDir +  "AddTextStamp.pdf");
 
 // Create text stamp
 TextStamp textStamp = new TextStamp("Sample Stamp");
@@ -126,7 +126,7 @@ The following code snippets shows an example on how to load an existing PDF docu
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Instantiate Document object with input file
-Document document = new Document(dataDir+ "DefineAlignment.pdf");
+Document document = new Document(dataDir +  "DefineAlignment.pdf");
 // Instantiate FormattedText object with sample string
 FormattedText text = new FormattedText("This");
 // Add new text line to FormattedText

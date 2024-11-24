@@ -89,7 +89,7 @@ In order to extract signature information, we have introduced the [ExtractImage]
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-string input = dataDir+ @"ExtractingImage.pdf";
+string input = dataDir +  @"ExtractingImage.pdf";
 using (Document document = new Document(input))
 {
     foreach (Field field in document.Form)
@@ -97,7 +97,7 @@ using (Document document = new Document(input))
         SignatureField sf = field as SignatureField;
         if (sf != null)
         {
-            string outFile = dataDir+ @"output_out.jpg";
+            string outFile = dataDir +  @"output_out.jpg";
             using (Stream imageStream = sf.ExtractImage())
             {
                 if (imageStream != null)
