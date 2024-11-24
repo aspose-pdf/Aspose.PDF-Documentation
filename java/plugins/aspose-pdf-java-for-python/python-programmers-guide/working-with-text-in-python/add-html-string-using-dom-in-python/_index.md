@@ -4,7 +4,6 @@ type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-python/
 lastmod: "2021-06-05"
-keywords: html dom python, python html dom library
 description: Explains how to add HTML string in DOM using Python with PDF file format library
 ---
 

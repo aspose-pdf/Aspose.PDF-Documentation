@@ -5,7 +5,6 @@ type: docs
 weight: 20
 url: /java/convert-pdf-to-excel/
 lastmod: "2021-11-19"
-keywords: convert PDF to Excel using Java, convert PDF to XLS using Java, convert PDF to XLSX using Java, export table from PDF to Excel in Java
 description: Aspose.PDF for Java allows you to convert PDF to Excel format using java. During this, the individual pages of the PDF file are converted to Excel worksheets.
 sitemap:
     changefreq: "monthly"

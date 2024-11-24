@@ -5,7 +5,6 @@ type: docs
 weight: 90
 url: /net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: convert, PDF, EPUB, LaText, Text, XPS, C#
 description: This topic shows you how to convert PDF file to other file formats like EPUB, LaTeX, Text, XPS etc using C# or .NET.
 sitemap:
     changefreq: "monthly"

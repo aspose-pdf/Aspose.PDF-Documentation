@@ -4,7 +4,6 @@ linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /python-net/extract-form/
-keywords: extract form data from pdf python
 description: Extract form from your PDF document with Aspose.PDF for Python library. Get value from an individual field of PDF file.
 lastmod: "2023-02-17"
 sitemap:

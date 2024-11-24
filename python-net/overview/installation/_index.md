@@ -23,7 +23,7 @@ sitemap:
 
 **Aspose.PDF for Python** can be used to develop 32-bit and 64-bit Python applications for different operating systems (such as Windows and Linux) where Python 3.5 or later is installed.
 
-# Installation
+## Installation
 
 ## Evaluate Aspose.PDF for Python via .NET
 
