@@ -180,7 +180,7 @@ You can use the ExternalSignature class for an external signing service. Externa
 You can pass the desired hashing algorithm to the ExternalSignature constructor. Note that non-detached signatures can only use SHA1.
 It will be chosen automatically if you do not explicitly specify the hashing algorithm. For non-detached signatures, it will be SHA1; for detached, it will be SHA-256 for an RSA key. For an ECDSA key, the hash size depends on the key size.
 
-The ExternalSignature constructor also accepts a key certificate (it can be in Base64 format). You can pass a certificate containing a private key and a certificate containing only a public key. In either case, the signature will be performed externally in the CustomSignHash delegate code, but the external algorithm must create a signature corresponding to the key of the passed certificate. The certificate is needed to correctly generate the signed document. ECDSA signature does not support SHA-1.
+The ExternalSignature constructor also accepts a key certificate (it can be in Base64 format). You can pass a certificate containing a private key and a certificate containing only a public key. In either case, the signature will be performed externally in the CustomSignHash delegate code, but the external algorithm must create a signature corresponding to the key of the passed certificate. The certificate is needed to generate the signed document correctly. ECDSA signature does not support SHA-1.
 
 ```csharp
 var inputPdf = "";

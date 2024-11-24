@@ -272,8 +272,7 @@ Let’s take a closer look at the DPF signing process:
 - The private key is used to sign the hash using the 'RSACryptoServiceProvider' and the SHA-1 algorithm.
 - The signed data (byte array) is returned to be applied to the PDF signature.
 
-You can specify the digest algorithm in the PKCS7Detached constructor. In the CustomSignHash delegate you can call a third-party service.
-The signature algorithm used in CustomSignHash must match the key algorithm in the certificate passed to PKCS7/PKCS7Detached.
+The digest algorithm can be specified in the PKCS7Detached constructor. A third-party service can be called in the CustomSignHash delegate. The signature algorithm used in CustomSignHash must match the key algorithm in the certificate passed to PKCS7/PKCS7Detached.
 
 The example below creates a non-detached signature with the RSA algorithm and the SHA-1 digest algorithm.
 If you use PKCS7Detached instead of PKCS7, you can use ECDCA and set the desired digest algorithm.
