@@ -684,12 +684,12 @@ This release supports applying a clipping mask to images:
 
 ```cs
 
-    Document doc = new Document("input.pdf");
+    Document document = new Document("input.pdf");
     using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
     using (var fs2 = new FileStream("mask2.png", FileMode.Open))
     {
-        doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
-        doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+        document.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+        document.Pages[1].Resources.Images[2].AddStencilMask(fs2);
     }
 ```
 
@@ -867,15 +867,15 @@ Since 24.3 possible to add an empty signature field on every page to the PDF/A f
         using (var fs = new FileStream(dest, FileMode.Open))
         {
             // The new suggested code, using SignatureField object (this code works fine)
-            var doc = new Document(fs);
-            var f = new SignatureField(doc.Pages[page], new Rectangle(10, 10, 100, 100));
+            var document = new Document(fs);
+            var f = new SignatureField(document.Pages[page], new Rectangle(10, 10, 100, 100));
             // Add the default appearance for the signature field
             f.DefaultAppearance = new DefaultAppearance("Helv", 12, System.Drawing.Color.Black);
-            var newAddedField = doc.Form.Add(f, fieldName, page);
+            var newAddedField = document.Form.Add(f, fieldName, page);
 
             // How can now get newAddedField visible in alla pages?
             Aspose.Pdf.Annotations.Annotation addedField = null;
-            foreach (Aspose.Pdf.Annotations.Annotation a in doc.Pages[1].Annotations)
+            foreach (Aspose.Pdf.Annotations.Annotation a in document.Pages[1].Annotations)
             {
             if (a.FullName == fieldName)
                 {
@@ -885,14 +885,14 @@ Since 24.3 possible to add an empty signature field on every page to the PDF/A f
             }
             if (addedField != null)
             {
-                for (int p = 1; p <= doc.Pages.Count; p++)
+                for (int p = 1; p <= document.Pages.Count; p++)
                 {
                     if (p == page) continue;
-                    doc.Pages[p].Annotations.Add(addedField);
+                    document.Pages[p].Annotations.Add(addedField);
                 }
             }
 
-            doc.Save();
+            document.Save();
         }
         System.Diagnostics.Process.Start(dest);
     }
@@ -906,9 +906,9 @@ It was implemented GraphicsAbsorber to get vector data from documents:
 
 ```cs
 
-var doc = new Document(input);
+var document = new Document(input);
 var grAbsorber = new GraphicsAbsorber();
-grAbsorber.Visit(doc.Pages[1]);
+grAbsorber.Visit(document.Pages[1]);
 var elements = grAbsorber.Elements;
 var operators = elements[1].Operators;
 var rectangle = elements[1].Rectangle;
@@ -951,9 +951,9 @@ Here are examples of code for DictionaryEditor:
     string KEY_NUMBER = "number";
 
     var outputPath = "page_dictionary_editor.pdf";
-    using (var doc = new Document())
+    using (var document = new Document())
     {
-        var page = doc.Pages.Add();
+        var page = document.Pages.Add();
         var dictionaryEditor = new DictionaryEditor(page);
 
         dictionaryEditor.Add(KEY_NAME, new CosPdfName("name data"));
@@ -961,7 +961,7 @@ Here are examples of code for DictionaryEditor:
         dictionaryEditor.Add(KEY_BOOL, new CosPdfBoolean(true));
         dictionaryEditor.Add(KEY_NUMBER, new CosPdfNumber(11.2));
 
-        doc.Save(outputPath);
+        document.Save(outputPath);
     }
 ```
 
@@ -969,9 +969,9 @@ Here are examples of code for DictionaryEditor:
 
 ```cs
 
-    using (var doc = new Document())
+    using (var document = new Document())
     {
-        var page = doc.Pages.Add();
+        var page = document.Pages.Add();
         var dictionaryEditor = new DictionaryEditor(page);
         dictionaryEditor.Add(KEY_NAME, new CosPdfName("Old name"));
         // or 
@@ -983,9 +983,9 @@ Here are examples of code for DictionaryEditor:
 
 ```cs
 
-    using (var doc = new Document())
+    using (var document = new Document())
     {
-        var page = doc.Pages.Add();
+        var page = document.Pages.Add();
         var dictionaryEditor = new DictionaryEditor(page);
         dictionaryEditor[KEY_NAME] = new CosPdfName("name");
         var value = dictionaryEditor[KEY_NAME];
@@ -999,9 +999,9 @@ Here are examples of code for DictionaryEditor:
 
 ```cs
 
-    using (var doc = new Document())
+    using (var document = new Document())
     {
-        var page = doc.Pages.Add();
+        var page = document.Pages.Add();
         var dictionaryEditor = new DictionaryEditor(page);
         dictionaryEditor.Add(KEY_NAME, new CosPdfName(EXPECTED_NAME));
         dictionaryEditor.Remove(KEY_NAME);
@@ -1089,11 +1089,11 @@ Another variant of removing the form:
 
     string markdownOutputFilePath = "output.md"
     string inputPdfPath = "input.pdf"
-    using (Document doc = new Document(inputPdfPath))
+    using (Document document = new Document(inputPdfPath))
     {
-    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
-    saveOptions.ResourcesDirectoryName = "images"; 
-    doc.Save(markdownOutputFilePath, saveOptions);
+        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+        saveOptions.ResourcesDirectoryName = "images"; 
+        document.Save(markdownOutputFilePath, saveOptions);
     }
 ```
 
@@ -1215,10 +1215,10 @@ Since 23.11 supports for thread interruption:
             public void Work()
             {
                 string text = InterruptMonitorTests.LongText;
-                using (var doc = new Document())
+                using (var document = new Document())
                 {
                     InterruptMonitor.ThreadLocalInstance = this.monitor;
-                    var page = doc.Pages.Add();
+                    var page = document.Pages.Add();
 
                     var table = new Aspose.Pdf.Table
                     {
@@ -1242,7 +1242,7 @@ Since 23.11 supports for thread interruption:
 
                     try
                     {
-                        doc.Save(this.outputPath);
+                        document.Save(this.outputPath);
                     }
                     catch (Exception ex)
                     {
@@ -1313,9 +1313,9 @@ The current update presents three versions of Removing tags from tagged PDFs.
 Since 23.10 was implemented a new feature to measure character height. Use the following code to measure the height of a character.
 
 ```cs
-    var doc = new Document(input);
+    var document = new Document(input);
     var absorber = new TextFragmentAbsorber();
-    absorber.Visit(doc.Pages[1]);
+    absorber.Visit(document.Pages[1]);
     var height = absorber.TextFragments[1].TextState.MeasureHeight('A')
 ```
 
@@ -1373,11 +1373,11 @@ Since 23.9 support to remove a child annotation from a fillable field.
 
 ```cs
 
-    doc = new Document("field-ref-add.pdf");
-    field = (Field)doc.Form[fieldName];
+    document = new Document("field-ref-add.pdf");
+    field = (Field)document.Form[fieldName];
     var annotation = field[1];
-    doc.Pages[annotation .PageIndex].Annotations.Remove(annotation);
-    doc.Save("field-ref-delete.pdf");
+    document.Pages[annotation .PageIndex].Annotations.Remove(annotation);
+    document.Save("field-ref-delete.pdf");
 ```
 
 ## What's new in Aspose.PDF 23.8
@@ -1389,8 +1389,8 @@ The function for detecting Incremental Updates in a PDF document has been added.
 ```cs
 
     var path = "C:\test.pdf";
-    var doc = new Document(path);
-    Console.WriteLine(doc.HasIncrementalUpdate());
+    var document = new Document(path);
+    Console.WriteLine(document.HasIncrementalUpdate());
 ```
 
 Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable PDF forms have checkbox fields that act as radio groups:
@@ -1401,24 +1401,24 @@ Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable 
 
     using (var document = new Document())
     {
-    var page = document.Pages.Add();
+        var page = document.Pages.Add();
 
-    var checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
+        var checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
 
-    // Set the first checkbox group option value
-    checkbox.ExportValue = "option 1";
+        // Set the first checkbox group option value
+        checkbox.ExportValue = "option 1";
 
-    // Add new option right under existing ones
-    checkbox.AddOption("option 2");
+        // Add new option right under existing ones
+        checkbox.AddOption("option 2");
 
-    // Add new option at the given rectangle
-    checkbox.AddOption("option 3", new Rectangle(100, 100, 120, 120));
+        // Add new option at the given rectangle
+        checkbox.AddOption("option 3", new Rectangle(100, 100, 120, 120));
 
-    document.Form.Add(checkbox);
+        document.Form.Add(checkbox);
 
-    // Select the added checkbox
-    checkbox.Value = "option 2";
-    document.Save("checkbox_group.pdf");
+        // Select the added checkbox
+        checkbox.Value = "option 2";
+        document.Save("checkbox_group.pdf");
     }
 ```
 
@@ -1426,25 +1426,25 @@ Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable 
 
 ```cs
 
-    using (Document doc = new Document("example.pdf"))
+    using (Document document = new Document("example.pdf"))
     {
-    Form form = doc.Form;
-    CheckboxField checkbox = form.Fields[0] as CheckboxField;
+        Form form = document.Form;
+        CheckboxField checkbox = form.Fields[0] as CheckboxField;
 
-    // Allowed values may be retrieved from the AllowedStates collection
-    // Set the checkbox value using Value property
-    checkbox.Value = checkbox.AllowedStates[0];
-    checkboxValue = checkbox.Value; // the previously set value, e.g. "option 1"
+        // Allowed values may be retrieved from the AllowedStates collection
+        // Set the checkbox value using Value property
+        checkbox.Value = checkbox.AllowedStates[0];
+        checkboxValue = checkbox.Value; // the previously set value, e.g. "option 1"
 
-    // The value should be any element of AllowedStates
-    checkbox.Value = "option 2";
-    checkboxValue = checkbox.Value; // option 2
+        // The value should be any element of AllowedStates
+        checkbox.Value = "option 2";
+        checkboxValue = checkbox.Value; // option 2
 
-    // Uncheck boxes by either setting Value to "Off" or setting Checked to false
-    checkbox.Value = "Off";
-    // or, alternately:
-    // checkbox.Checked = false;
-    checkboxValue = checkbox.Value; // Off
+        // Uncheck boxes by either setting Value to "Off" or setting Checked to false
+        checkbox.Value = "Off";
+        // or, alternately:
+        // checkbox.Checked = false;
+        checkboxValue = checkbox.Value; // Off
     }
 ```
 
@@ -1473,7 +1473,7 @@ Also supports the ability to detect Overflow when adding text:
 
 ```cs
 
-    var doc = new Document();
+    var document = new Document();
     var paragraphContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl tortor, efficitur sed cursus in, lobortis vitae nulla. Quisque rhoncus, felis sed dictum semper, est tellus finibus augue, ut feugiat enim risus eget tortor. Nulla finibus velit nec ante gravida sollicitudin. Morbi sollicitudin vehicula facilisis. Vestibulum ac convallis erat. Ut eget varius sem. Nam varius pharetra lorem, id ullamcorper justo auctor ac. Integer quis erat vitae lacus mollis volutpat eget et eros. Donec a efficitur dolor. Maecenas non dapibus nisi, ut pellentesque elit. Sed pellentesque rhoncus ante, a consectetur ligula viverra vel. Integer eget bibendum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elementum, sem a auctor vulputate, ante libero iaculis dolor, vitae facilisis dolor lorem at orci. Sed laoreet dui id nisi accumsan, id posuere diam accumsan.";
     var rectangle = new Rectangle(100, 600, 500, 700, false);
     var paragraph = new TextParagraph();
@@ -1488,9 +1488,9 @@ Also supports the ability to detect Overflow when adding text:
         isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
     }
     paragraph.AppendLine(fragment);
-    TextBuilder builder = new TextBuilder(doc.Pages.Add());
+    TextBuilder builder = new TextBuilder(document.Pages.Add());
     builder.AppendParagraph(paragraph);
-    doc.Save(output);
+    document.Save(output);
 ```
 
 ## What's new in Aspose.PDF 23.6
@@ -1534,10 +1534,10 @@ Since 23.5 support to add RedactionAnnotation FontSize option. Use the next code
 
 ```cs
 
-    Document doc = new Document(dataDir + "test_factuur.pdf");
+    Document document = new Document(dataDir + "test_factuur.pdf");
 
     // Create RedactionAnnotation instance for specific page region
-    RedactionAnnotation annot = new RedactionAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(367, 756.919982910156, 420, 823.919982910156));
+    RedactionAnnotation annot = new RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(367, 756.919982910156, 420, 823.919982910156));
     annot.FillColor = Aspose.Pdf.Color.Black;
 
     annot.BorderColor = Aspose.Pdf.Color.Yellow;
@@ -1550,12 +1550,12 @@ Since 23.5 support to add RedactionAnnotation FontSize option. Use the next code
     // New property there !
     annot.FontSize = 20;
     // Add annotation to annotations collection of first page
-    doc.Pages[1].Annotations.Add(annot);
+    document.Pages[1].Annotations.Add(annot);
     // Flattens annotation and redacts page contents (i.e. removes text and image
     // Under redacted annotation)
     annot.Redact();
     // Save result document
-    doc.Save(dataDir + "47704_RedactPage_out_NETCORE.pdf");
+    document.Save(dataDir + "47704_RedactPage_out_NETCORE.pdf");
 ```
 
 ## What's new in Aspose.PDF 23.4
@@ -1636,12 +1636,12 @@ We will show the example of the option with color bars for measuring colors and 
 
 var outFile = myDir + "ColorBarTest.pdf");
 
-using (var doc = new Document())
+using (var document = new Document())
 {
-    Page page = doc.Pages.Add();
+    Page page = document.Pages.Add();
     page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
     AddAnnotations(page);
-    doc.Save(outFile);
+    document.Save(outFile);
 }
 
 void AddAnnotations(Page page)
@@ -1666,9 +1666,10 @@ Also support the vector images extraction. Try using the following code to detec
 
 ```cs
 
-    var doc = new Document(input);
-    try{
-        doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+    var document = new Document(input);
+    try 
+    {
+        document.Pages[1].TrySaveVectorGraphics(outputSvg);
     }
     catch(Exception){
 
@@ -1681,10 +1682,10 @@ From this release support to convert PDF to DICOM Image
 
 ```cs
 
-    Document doc = new Document("source.pdf");
+    Document document = new Document("source.pdf");
     DicomDevice dicom = new DicomDevice();
     FileStream outStream = new FileStream("out.dicom", FileMode.Create, FileAccess.ReadWrite);
-    dicom.Process(doc.Pages[1], outStream);
+    dicom.Process(document.Pages[1], outStream);
 ```    
 
 ## What's new in Aspose.PDF 22.09
@@ -1718,9 +1719,9 @@ If the PDF document contains SubScript and SuperScript text such as H2O, then ex
 If the PDF contains text in italics, it must also be included in the extracted content.
 
 ```cs
-Document doc = new Document(input);
+Document document = new Document(input);
 TextFragmentAbsorber absorber = new TextFragmentAbsorber("TM");
-absorber.Visit(doc.Pages[1]);
+absorber.Visit(document.Pages[1]);
 ```
 
 ## What's new in Aspose.PDF 22.4
@@ -1773,9 +1774,9 @@ var inputPfx = "51168.pfx";
 var inputPfxPassword = "111111";
 var outputPdf = "51168.pdf";
 
-using (var doc = new Document(inputPdf))
+using (var document = new Document(inputPdf))
 {
-    using (PdfFileSignature signature = new PdfFileSignature(doc))
+    using (PdfFileSignature signature = new PdfFileSignature(document))
     {
         var pkcs = new PKCS7(inputPfx, inputPfxPassword)
         {
@@ -1843,8 +1844,8 @@ for (int i = 1; i <= textFragmentCollection.Count; i++)
 ```csharp
 Please use code snippet:
 var inFile = "1234.pdf";
-Document doc = new Document(inFile);
-List layers = doc.Pages[1].Layers;
+Document document = new Document(inFile);
+List layers = document.Pages[1].Layers;
 ```
 
 ## What's new in Aspose.PDF 21.9
@@ -1942,16 +1943,16 @@ With Aspose.PDF for .NET you can hide images using ImagePlacementAbsorber from t
 public void PDFNET_49961()
 {
    ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-   Document doc = new Document("test.pdf");
+   Document document = new Document("test.pdf");
    // Hide image on first page
-   doc.Pages[1].Accept(abs);
+   document.Pages[1].Accept(abs);
 
    foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
    {
        imagePlacement.Hide();
    }
 
-   doc.Save("test_out.pdf");
+   document.Save("test_out.pdf");
 }
 ```
 

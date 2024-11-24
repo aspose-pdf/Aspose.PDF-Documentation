@@ -19,13 +19,13 @@ It retrieves various properties of the second graphic element, such as its assoc
 
 ```csharp
 // Creates a new Document object using the provided input data.
-var doc = new Document(input);
+var document = new Document(input);
 
 // Instantiates a new GraphicsAbsorber object to process graphic elements. 
 var grAbsorber = new GraphicsAbsorber(); 
 
 // Visits the second page of the document to extract graphic elements. 
-grAbsorber.Visit(doc.Pages[1]); 
+grAbsorber.Visit(document.Pages[1]); 
 
 // Retrieves the list of graphic elements from the GraphicsAbsorber. 
 var elements = grAbsorber.Elements; 
@@ -45,8 +45,8 @@ var position = elements[1].Position;
 For extraction of Vector Data from PDF, we can use SVG extractor:
 
 ```csharp
-var doc = new Document(input);
-doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+var document = new Document(input);
+document.Pages[1].TrySaveVectorGraphics(outputSvg);
 ```
 
 ### Extract all subpaths to images separately

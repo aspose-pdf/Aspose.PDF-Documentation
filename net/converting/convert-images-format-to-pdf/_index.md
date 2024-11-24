@@ -202,11 +202,11 @@ Moreover, the following code snippet shows how to convert an EMF to PDF with C# 
 
 ```csharp
 // Initialize new PDF document
-var doc = new Document();
+var document = new Document();
 
 // Spcify path of input EMF image file
 var imageFile = dataDir + "drawing.emf";
-var page = doc.Pages.Add();
+var page = document.Pages.Add();
 string file = imageFile;
 FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
 BinaryReader reader = new BinaryReader(filestream);
@@ -227,7 +227,7 @@ image.File = imageFile;
 page.Paragraphs.Add(image);
 
 //Save output PDF document
-doc.Save(dataDir + "EMFtoPDF.pdf");
+document.Save(dataDir + "EMFtoPDF.pdf");
 ```
 
 {{% alert color="success" %}}
@@ -297,10 +297,10 @@ The code snippet below shows how to convert JPG Image to PDF using C#:
 String path = dataDir + "Aspose.jpg";
 
 // Initialize new PDF document
-Document doc = new Document();
+Document document = new Document();
 
 // Add empty page in empty document
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 image.File = (path);
 
@@ -308,7 +308,7 @@ image.File = (path);
 page.Paragraphs.Add(image);
 
 // Save output PDF file
-doc.Save(dataDir + "ImagetoPDF.pdf");
+document.Save(dataDir + "ImagetoPDF.pdf");
 ```
 
 Then you can see how to convert an image to PDF with the **same height and width of the page**. We will be getting the image dimensions and accordingly set the page dimensions of PDF document with the below steps:
@@ -332,10 +332,10 @@ int h = srcImage.Height;
 int w = srcImage.Width;
 
 // Initialize a new PDF document
-Document doc = new Document();
+Document document = new Document();
 
 // Add an empty page
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 image.File = (path);
 
@@ -349,7 +349,7 @@ page.PageInfo.Margin.Left = (0);
 page.Paragraphs.Add(image);
 
 // Save output PDF file
-doc.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
+document.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
 ```
 
 {{% alert color="success" %}}
@@ -386,8 +386,8 @@ int h = srcImage.Height;
 int w = srcImage.Width;
 
 // Initialize new Document
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 Aspose.Pdf.Image image = new Aspose.Pdf.Image();
 image.File = (path);
 
@@ -401,7 +401,7 @@ page.PageInfo.Margin.Left = (0);
 page.Paragraphs.Add(image);
 
 // Save output PDF
-doc.Save(dataDir + "ImagetoPDF.pdf");
+document.Save(dataDir + "ImagetoPDF.pdf");
 ```
 
 {{% alert color="success" %}}
@@ -744,8 +744,8 @@ Check next code snippet for converting CDR files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-var doc = new Document("input.cdr", new CdrLoadOptions());
-doc.Save("out.pdf");
+var document = new Document("input.cdr", new CdrLoadOptions());
+document.Save("out.pdf");
 ```
 
 ## Convert DJVU to PDF
@@ -761,8 +761,8 @@ Check next code snippet for converting DJVU files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-var doc = new Document("input.djvu", new DjvuLoadOptions());
-doc.Save("out.pdf");
+var document = new Document("input.djvu", new DjvuLoadOptions());
+document.Save("out.pdf");
 ```
 
 ## Convert HEIC to PDF
