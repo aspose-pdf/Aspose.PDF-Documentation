@@ -26,19 +26,18 @@ The SHA-256 hash algorithm is used for generating the signature. ECDSA signature
 You can use your usual code to sign documents with ECDSA and to verify signatures:
  
 ```cs
-    public void Sign(string cert, string inputPdfFile, string outFile)
+public void Sign(string cert, string inputPdfFile, string outFile)
+{
+    using (Document document = new Document(inputPdfFile))
     {
-
-        using (Document document = new Document(inputPdfFile))
+        using (PdfFileSignature signature = new PdfFileSignature(document))
         {
-            using (PdfFileSignature signature = new PdfFileSignature(document))
-            {
-                PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
-                signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
-                signature.Save(outFile);
-            }
+            PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
+            signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+            signature.Save(outFile);
         }
     }
+}
 
 public static void Verify(string fileName)
 {
