@@ -44,15 +44,14 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "PDFToPDFA.pdf");
+Document document = new Document(dataDir + "PDFToPDFA.pdf");
            
 // Convert to PDF/A compliant document
 // During conversion process, the validation is also performed
-pdfDocument.Convert(dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
+document.Convert(dataDir + "log.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-dataDir = dataDir + "PDFToPDFA_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "PDFToPDFA_out.pdf");
 ```
 
 To perform validation only, use the following line of code:
@@ -63,10 +62,10 @@ To perform validation only, use the following line of code:
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
+Document document = new Document(dataDir + "ValidatePDFAStandard.pdf");
 
 // Validate PDF for PDF/A-1a
-pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
+document.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
 ```
 
 ## Convert PDF file to PDF/A-3b
@@ -79,13 +78,12 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b 
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");           
+Document document = new Document(dataDir + "input.pdf");           
            
-pdfDocument.Convert(new MemoryStream(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
+document.Convert(new MemoryStream(), PdfFormat.PDF_A_3B, ConvertErrorAction.Delete);
 
-dataDir = dataDir + "PDFToPDFA3b_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "PDFToPDFA3b_out.pdf");
 ```
 
 ## Convert PDF file to PDF/A-2u
@@ -95,9 +93,9 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-2u 
 ```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
-Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
-doc.Convert(new MemoryStream(), PdfFormat.PDF_A_2U, ConvertErrorAction.Delete);
-doc.Save(outFile);
+Document document = new Document(inFile);
+document.Convert(new MemoryStream(), PdfFormat.PDF_A_2U, ConvertErrorAction.Delete);
+document.Save(outFile);
 ```
 
 ## Convert PDF file to PDF/A-3u
@@ -107,9 +105,9 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3u 
 ```csharp
 string inFile = "input.pdf";
 string outFile = "output.pdf";
-Aspose.PDF.Document doc = new Aspose.PDF.Document(inFile);
-doc.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
-doc.Save(outFile);
+Document document = new Document(inFile);
+document.Convert(new MemoryStream(), PdfFormat.PDF_A_3U, ConvertErrorAction.Delete);
+document.Save(outFile);
 ```
 
 ## Convert PDF file to PDF/A-4
@@ -140,15 +138,15 @@ PDF/A_3a is the format that provides the feature to attach any file format as an
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Instantiate Document instance to load existing file
-Aspose.Pdf.Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Setup new file to be added as attachment
 FileSpecification fileSpecification = new FileSpecification(dataDir + "aspose-logo.jpg", "Large Image file");
 // Add attachment to document's attachment collection
-doc.EmbeddedFiles.Add(fileSpecification);
+document.EmbeddedFiles.Add(fileSpecification);
 // Perform conversion to PDF/A_3a so attachment is included in resultnat file
-doc.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+document.Convert(dataDir + "log.txt", Aspose.Pdf.PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
 // Save resultant file
-doc.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
+document.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
 ```
 
 ## Replace missing fonts with alternative fonts

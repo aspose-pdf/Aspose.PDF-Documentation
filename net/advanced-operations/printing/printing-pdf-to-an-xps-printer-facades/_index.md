@@ -91,7 +91,7 @@ public static void PrintToXpsPrinter()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "input.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size

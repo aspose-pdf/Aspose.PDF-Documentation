@@ -19,11 +19,11 @@ public static void AddPageStampOnAllPages()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
+    stamp.BindPdf(dataDir + "pagestamp.pdf", 1);
     stamp.SetOrigin(20, 20);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -32,7 +32,7 @@ public static void AddPageStampOnAllPages()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+    fileStamp.Save(dataDir + "PageStampOnAllPages.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -50,11 +50,11 @@ public static void AddPageStampOnCertainPages()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
+    stamp.BindPdf(dataDir + "pagestamp.pdf", 1);
     stamp.SetOrigin(20, 20);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -63,7 +63,7 @@ public static void AddPageStampOnCertainPages()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+    fileStamp.Save(dataDir + "PageStampOnAllPages.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -87,10 +87,10 @@ public static void AddPageNumberInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Get total number of pages
-    int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+    int totalPages = new PdfFileInfo(dataDir + "sample.pdf").NumberOfPages;
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
@@ -106,7 +106,7 @@ public static void AddPageNumberInPdfFile()
     fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+    fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -130,10 +130,10 @@ public static void AddCustomPageNumberInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Get total number of pages
-    int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+    int totalPages = new PdfFileInfo(dataDir + "sample.pdf").NumberOfPages;
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
@@ -152,7 +152,7 @@ public static void AddCustomPageNumberInPdfFile()
     fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+    fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();

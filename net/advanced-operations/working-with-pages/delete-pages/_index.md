@@ -94,14 +94,13 @@ The following code snippet shows how to delete a particular page from the PDF fi
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteParticularPage.pdf");
+Document document = new Document(dataDir + "DeleteParticularPage.pdf");
 
 // Delete a particular page
-pdfDocument.Pages.Delete(2);
+document.Pages.Delete(2);
 
-dataDir = dataDir + "DeleteParticularPage_out.pdf";
 // Save updated PDF
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "DeleteParticularPage_out.pdf");
 ```
 
 <script type="application/ld+json">

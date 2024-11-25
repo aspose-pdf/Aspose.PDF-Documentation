@@ -93,7 +93,7 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 public static void ConvertPDFtoTIFF()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "PageToTIFF.pdf");
+    Document document = new Document(dataDir + "PageToTIFF.pdf");
 
     // Create Resolution object
     Resolution resolution = new Resolution(300);
@@ -111,7 +111,7 @@ public static void ConvertPDFtoTIFF()
     TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
     // Convert a particular page and save the image to stream
-    tiffDevice.Process(pdfDocument, _dataDir + "AllPagesToTIFF_out.tif");
+    tiffDevice.Process(document, dataDir + "AllPagesToTIFF_out.tif");
 }
 ```
 
@@ -129,7 +129,7 @@ Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF 
 public static void ConvertPDFtoTiffSinglePage()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "PageToTIFF.pdf");
+    Document document = new Document(dataDir + "PageToTIFF.pdf");
 
     // Create Resolution object
     Resolution resolution = new Resolution(300);
@@ -146,7 +146,7 @@ public static void ConvertPDFtoTiffSinglePage()
     TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
 
     // Convert a particular page and save the image to stream
-    tiffDevice.Process(pdfDocument, 1, 1, _dataDir + "PageToTIFF_out.tif");
+    tiffDevice.Process(document, 1, 1, dataDir + "PageToTIFF_out.tif");
 }
 ```
 
@@ -157,11 +157,11 @@ Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using 
 ```csharp
 public static void ConvertPDFtoTiffBradleyBinarization()
 {
-     // Open document
-     Document pdfDocument = new Document(_dataDir + "PageToTIFF.pdf");
+    // Open document
+    Document document = new Document(dataDir + "PageToTIFF.pdf");
 
-    string outputImageFile = _dataDir + "resultant_out.tif";
-    string outputBinImageFile = _dataDir + "37116-bin_out.tif";
+    string outputImageFile = dataDir + "resultant_out.tif";
+    string outputBinImageFile = dataDir + "37116-bin_out.tif";
 
     // Create Resolution object
     Resolution resolution = new Resolution(300);
@@ -174,7 +174,7 @@ public static void ConvertPDFtoTiffBradleyBinarization()
     // Create TIFF device
     TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
     // Convert a particular page and save the image to stream
-    tiffDevice.Process(pdfDocument, outputImageFile);
+    tiffDevice.Process(document, outputImageFile);
 
     using (FileStream inStream = new FileStream(outputImageFile, FileMode.Open))
     {
@@ -229,7 +229,7 @@ The following steps and code snippet in C# shows this possibility
 ```csharp
 public static class ExampleConvertPdfToImage
 {
-     private static readonly string _dataDir = @"C:\Samples\";
+     private static readonly string dataDir = @"C:\Samples\";
     // BMP, JPEG, GIF, PNG, EMF
     public static void ConvertPDFusingImageDevice()
     {
@@ -241,7 +241,7 @@ public static class ExampleConvertPdfToImage
         PngDevice pngDevice = new PngDevice(resolution);
         EmfDevice emfDevice = new EmfDevice(resolution);
 
-        Document document = new Document(_dataDir + 
+        Document document = new Document(dataDir + 
             "ConvertAllPagesToBmp.pdf");
             
         ConvertPDFtoImage(bmpDevice, "bmp", document);
@@ -254,19 +254,16 @@ public static class ExampleConvertPdfToImage
 }
 
 public static void ConvertPDFtoImage(ImageDevice imageDevice, 
-        string ext, Document pdfDocument)
+        string ext, Document document)
 {
-    for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
+    for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
     {
         using (FileStream imageStream = 
-            new FileStream($"{_dataDir}image{pageCount}_out.{ext}", 
+            new FileStream($"{dataDir}image{pageCount}_out.{ext}", 
             FileMode.Create))
         {
             // Convert a particular page and save the image to stream
-            imageDevice.Process(pdfDocument.Pages[pageCount], imageStream);
-
-            // Close stream
-            imageStream.Close();
+            imageDevice.Process(document.Pages[pageCount], imageStream);
         }
     }
 }
@@ -312,7 +309,7 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 public static void ConvertPDFtoSVG()
 {
     // Load PDF document
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "input.pdf"));
+    Document document = new Document(dataDir + "input.pdf");
     // Instantiate an object of SvgSaveOptions
     SvgSaveOptions saveOptions = new SvgSaveOptions
     {
@@ -322,6 +319,6 @@ public static void ConvertPDFtoSVG()
     };
             
     // Save the output in SVG files
-    document.Save(System.IO.Path.Combine(_dataDir, "PDFToSVG_out.svg"), saveOptions);
+    document.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
 }
 ```

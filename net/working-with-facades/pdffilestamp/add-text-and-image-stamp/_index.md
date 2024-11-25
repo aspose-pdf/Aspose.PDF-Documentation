@@ -19,7 +19,7 @@ public static void AddTextStampOnAllPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Stamp stamp = new Stamp();
@@ -32,7 +32,7 @@ public static void AddTextStampOnAllPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddTextStamp-All_out.pdf");
+    fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -50,7 +50,7 @@ public static void AddTextStampOnParticularPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
@@ -66,7 +66,7 @@ public static void AddTextStampOnParticularPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddTextStamp-Page_out.pdf");
+    fileStamp.Save(dataDir + "AddTextStamp-Page_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -84,11 +84,11 @@ public static void AddImageStampOnAllPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindImage(_dataDir + "aspose-logo.png");
+    stamp.BindImage(dataDir + "aspose-logo.png");
     stamp.SetOrigin(10, 200);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -100,7 +100,7 @@ public static void AddImageStampOnAllPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddImageStamp-Page_out.pdf");
+    fileStamp.Save(dataDir + "AddImageStamp-Page_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -122,11 +122,11 @@ public static void AddImageStampOnParticularPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindImage(_dataDir + "aspose-logo.png");
+    stamp.BindImage(dataDir + "aspose-logo.png");
     stamp.SetOrigin(10, 200);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -135,7 +135,7 @@ public static void AddImageStampOnParticularPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddImageStamp-All_out.pdf");
+    fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();

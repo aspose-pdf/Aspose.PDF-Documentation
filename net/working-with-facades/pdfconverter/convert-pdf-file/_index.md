@@ -19,7 +19,7 @@ public static void ConvertPdfPagesToImages01()
     PdfConverter converter = new PdfConverter();
 
     // Bind input pdf file
-    converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
+    converter.BindPdf(dataDir + "Sample-Document-01.pdf");
 
     // Initialize the converting process
     converter.DoConvert();
@@ -27,7 +27,7 @@ public static void ConvertPdfPagesToImages01()
     // Check if pages exist and then convert to image one by one
     while (converter.HasNextImage())
     {
-        converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+        converter.GetNextImage(dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
     }
 
     // Close the PdfConverter object
@@ -44,7 +44,7 @@ public static void ConvertPdfPagesToImages02()
     PdfConverter converter = new PdfConverter();
 
     // Bind input pdf file
-    converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
+    converter.BindPdf(dataDir + "Sample-Document-01.pdf");
 
     // Initialize the converting process
     converter.DoConvert();
@@ -56,7 +56,7 @@ public static void ConvertPdfPagesToImages02()
     // Check if pages exist and then convert to image one by one
     while (converter.HasNextImage())
     {
-        converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+        converter.GetNextImage(dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
     }
 
     // Close the PdfConverter object

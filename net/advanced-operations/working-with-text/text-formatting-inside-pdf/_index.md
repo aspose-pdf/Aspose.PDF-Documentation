@@ -90,8 +90,8 @@ Please use the following code snippet to use the property:
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create new document object
-Aspose.Pdf.Document document = new Aspose.Pdf.Document();
-Aspose.Pdf.Page page = document.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 string textFragment = string.Concat(Enumerable.Repeat("A quick brown fox jumped over the lazy dog. ", 10));
 
@@ -129,9 +129,9 @@ The following code snippet shows, how to add a border to a text using TextBuilde
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create new document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 // Create text fragment
 TextFragment textFragment = new TextFragment("main text");
 textFragment.Position = new Position(100, 600);
@@ -147,7 +147,7 @@ textFragment.TextState.DrawTextRectangleBorder = true;
 TextBuilder tb = new TextBuilder(pdfPage);
 tb.AppendText(textFragment);
 // Save the document
-pdfDocument.Save(dataDir + "PDFWithTextBorder_out.pdf");
+document.Save(dataDir + "PDFWithTextBorder_out.pdf");
 ```
 
 ## How to add Underline Text
@@ -160,11 +160,11 @@ The following code snippet shows you how to add Underline text while creating a 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create documentation object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add age page to PDF document
-pdfDocument.Pages.Add();
+document.Pages.Add();
 // Create TextBuilder for first page
-TextBuilder tb = new TextBuilder(pdfDocument.Pages[1]);
+TextBuilder tb = new TextBuilder(document.Pages[1]);
 // TextFragment with sample text
 TextFragment fragment = new TextFragment("Test message");
 // Set the font for TextFragment
@@ -177,10 +177,8 @@ fragment.Position = new Position(10, 800);
 // Append TextFragment to PDF file
 tb.AppendText(fragment);
 
-dataDir = dataDir + "AddUnderlineText_out.pdf";
-
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddUnderlineText_out.pdf");
 ```
 
 ## How to add Border Around Added Text
@@ -200,10 +198,8 @@ lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
 lineInfo.Visibility = true;
 editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
 
-dataDir = dataDir + "AddingBorderAroundAddedText_out.pdf";
-
-// Save resulting PDF document.
-editor.Save(dataDir);
+// Save resulting PDF document
+editor.Save(dataDir + "AddingBorderAroundAddedText_out.pdf");
 ```
 
 ## How to add NewLine feed
@@ -221,8 +217,8 @@ Please use below code snippet.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
+Document document = new Document();
+Page applicationFirstPage = (Page)document.Pages.Add();
 
 // Initialize new TextFragment with text containing required newline markers
 Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
@@ -247,11 +243,8 @@ TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
 // Add the TextParagraph using TextBuilder
 textBuilder.AppendParagraph(par);
 
-
-dataDir = dataDir + "AddNewLineFeed_out.pdf";
-
-// Save resulting PDF document.
-pdfApplicationDoc.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "AddNewLineFeed_out.pdf");
 ```
 
 ## How to add StrikeOut Text
@@ -265,9 +258,9 @@ Please use complete code snippet:
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Open document
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 
 // Create text fragment
 TextFragment textFragment = new TextFragment("main text");
@@ -288,11 +281,8 @@ TextBuilder textBuilder = new TextBuilder(pdfPage);
 // Append the text fragment to the PDF page
 textBuilder.AppendText(textFragment);
 
-
-dataDir = dataDir + "AddStrikeOutText_out.pdf";
-
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddStrikeOutText_out.pdf");
 ```
 
 ## Apply Gradient Shading to the Text
@@ -304,10 +294,10 @@ Text formatting has been further enhanced in the API for text editing scenarios 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
+using (Document document = new Document(dataDir + "text_sample4.pdf"))
 {
     TextFragmentAbsorber absorber = new TextFragmentAbsorber("Lorem ipsum");
-    pdfDocument.Pages.Accept(absorber);
+    document.Pages.Accept(absorber);
 
     TextFragment textFragment = absorber.TextFragments[1];
 
@@ -318,7 +308,7 @@ using (Document pdfDocument = new Document(dataDir + "text_sample4.pdf"))
     };
     textFragment.TextState.Underline = true;
 
-    pdfDocument.Save(dataDir + "text_out.pdf");
+    document.Save(dataDir + "text_out.pdf");
 }
 ```
 
@@ -333,31 +323,31 @@ Aspose.PDF supports setting text alignment for contents inside a Floating Box el
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Aspose.Pdf.Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 
 Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox(100, 100);
 floatBox.VerticalAlignment = VerticalAlignment.Bottom;
 floatBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 floatBox.Paragraphs.Add(new TextFragment("FloatingBox_bottom"));
 floatBox.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox);
+document.Pages[1].Paragraphs.Add(floatBox);
 
 Aspose.Pdf.FloatingBox floatBox1 = new Aspose.Pdf.FloatingBox(100, 100);
 floatBox1.VerticalAlignment = VerticalAlignment.Center;
 floatBox1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 floatBox1.Paragraphs.Add(new TextFragment("FloatingBox_center"));
 floatBox1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox1);
+document.Pages[1].Paragraphs.Add(floatBox1);
 
 Aspose.Pdf.FloatingBox floatBox2 = new Aspose.Pdf.FloatingBox(100, 100);
 floatBox2.VerticalAlignment = VerticalAlignment.Top;
 floatBox2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 floatBox2.Paragraphs.Add(new TextFragment("FloatingBox_top"));
 floatBox2.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Blue);
-doc.Pages[1].Paragraphs.Add(floatBox2);
+document.Pages[1].Paragraphs.Add(floatBox2);
 
-doc.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
+document.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
 ```
 
 ## How to remove hidden text from a PDF file
@@ -367,7 +357,6 @@ First, the code snippet creates a Document object from a file. Then, it adds a T
 This method keeps visible text intact and preserves the layout.
 
 ```cs
-
 var document = new Document(inputFile);
 var textAbsorber = new TextFragmentAbsorber();
 

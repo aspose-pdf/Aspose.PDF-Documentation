@@ -16,10 +16,10 @@ In order to add a form field in an existing PDF file, you need to use [AddField]
 public static void AddField()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir+"Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
     editor.AddField(FieldType.Text, "Country", 1, 232.56f, 496.75f, 352.28f, 514.03f);
     editor.SetFieldLimit("Country", 20);
-    editor.Save(_dataDir + "Sample-Form-01-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
 }
 ```
 
@@ -32,9 +32,9 @@ public static void AddField()
 public static void AddSubmitBtn()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
     editor.AddSubmitBtn("Submit", 1, "Submit", "http://localhost:3000", 232.56f, 466.75f, 352.28f, 484.03f);
-    editor.Save(_dataDir + "Sample-Form-01-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
 }
 ```
 
@@ -46,9 +46,9 @@ public static void AddSubmitBtn()
 public static void AddFieldScript()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
     editor.AddFieldScript("Last Name", "app.alert(\"Only one last name\",3);");
-    editor.Save(_dataDir + "Sample-Form-01-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
 }
 ```
 

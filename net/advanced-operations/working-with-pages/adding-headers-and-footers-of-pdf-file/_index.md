@@ -97,7 +97,7 @@ The following code snippet shows you how to add text in the header of a PDF file
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "TextinHeader.pdf");
+Document document = new Document(dataDir +  "TextinHeader.pdf");
 
 // Create header
 TextStamp textStamp = new TextStamp("Header Text");
@@ -106,12 +106,12 @@ textStamp.TopMargin = 10;
 textStamp.HorizontalAlignment = HorizontalAlignment.Center;
 textStamp.VerticalAlignment = VerticalAlignment.Top;
 // Add header on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(textStamp);
 }
 // Save updated document
-pdfDocument.Save(dataDir+ "TextinHeader_out.pdf");
+document.Save(dataDir +  "TextinHeader_out.pdf");
 ```
 
 ## Adding Text in Footer of PDF File
@@ -132,7 +132,7 @@ The following code snippet shows you how to add text in the footer of a PDF file
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "TextinFooter.pdf");
+Document document = new Document(dataDir +  "TextinFooter.pdf");
 // Create footer
 TextStamp textStamp = new TextStamp("Footer Text");
 // Set properties of the stamp
@@ -140,12 +140,12 @@ textStamp.BottomMargin = 10;
 textStamp.HorizontalAlignment = HorizontalAlignment.Center;
 textStamp.VerticalAlignment = VerticalAlignment.Bottom;
 // Add footer on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(textStamp);
 }
 // Save output file
-doc.Save(dataDir + "TextinFooter_out.pdf");
+document.Save(dataDir + "TextinFooter_out.pdf");
 ```
 
 ## Adding Image in Header of PDF File
@@ -166,21 +166,21 @@ The following code snippet shows you how to add image in the header of a PDF fil
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "ImageinHeader.pdf");
+Document document = new Document(dataDir +  "ImageinHeader.pdf");
 
 // Create header
-ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
+ImageStamp imageStamp = new ImageStamp(dataDir +  "aspose-logo.jpg");
 // Set properties of the stamp
 imageStamp.TopMargin = 10;
 imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
 imageStamp.VerticalAlignment = VerticalAlignment.Top;
 // Add header on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(imageStamp);
 }
 // Save output file
-doc.Save(dataDir + "ImageinHeader_out.pdf");
+document.Save(dataDir + "ImageinHeader_out.pdf");
 ```
 
 ## Adding Image in Footer of PDF File
@@ -201,20 +201,20 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "ImageInFooter.pdf");
+Document document = new Document(dataDir +  "ImageInFooter.pdf");
 // Create footer
-ImageStamp imageStamp = new ImageStamp(dataDir+ "aspose-logo.jpg");
+ImageStamp imageStamp = new ImageStamp(dataDir +  "aspose-logo.jpg");
 // Set properties of the stamp
 imageStamp.BottomMargin = 10;
 imageStamp.HorizontalAlignment = HorizontalAlignment.Center;
 imageStamp.VerticalAlignment = VerticalAlignment.Bottom;
 // Add footer on all pages
-foreach (Page page in pdfDocument.Pages)
+foreach (Page page in document.Pages)
 {
     page.AddStamp(imageStamp);
 }
 // Save output file
-doc.Save(dataDir + "ImageInFooter_out.pdf");
+document.Save(dataDir + "ImageInFooter_out.pdf");
 ```
 
 ## Adding different Headers in one PDF File
@@ -229,7 +229,7 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open source document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "AddingDifferentHeaders.pdf");
+Document document = new Document(dataDir +  "AddingDifferentHeaders.pdf");
 
 // Create three stamps
 Aspose.Pdf.TextStamp stamp1 = new Aspose.Pdf.TextStamp("Header 1");
@@ -265,13 +265,13 @@ stamp3.TextState.BackgroundColor = Color.Pink;
 // Change the font face information for stamp to Verdana
 stamp3.TextState.Font = FontRepository.FindFont("Verdana");
 // First stamp is added on first page;
-doc.Pages[1].AddStamp(stamp1);
+document.Pages[1].AddStamp(stamp1);
 // Second stamp is added on second page;
-doc.Pages[2].AddStamp(stamp2);
+document.Pages[2].AddStamp(stamp2);
 // Third stamp is added on third page.
-doc.Pages[3].AddStamp(stamp3);
+document.Pages[3].AddStamp(stamp3);
 // Save the updated document
-doc.Save(dataDir + "MultiHeader_out.pdf");
+document.Save(dataDir + "MultiHeader_out.pdf");
 ```
 
 <script type="application/ld+json">

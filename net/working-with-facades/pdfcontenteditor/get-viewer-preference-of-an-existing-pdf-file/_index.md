@@ -17,7 +17,7 @@ In order to read the settings we use [GetViewerPreference](https://reference.asp
 ```csharp
 public static void GetViewerPreference()
 {
-    var document = new Document(_dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+    var document = new Document(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
     PdfContentEditor editor = new PdfContentEditor(document);
 
     // Change Viewer Preferences

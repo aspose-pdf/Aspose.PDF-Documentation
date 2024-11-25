@@ -90,15 +90,11 @@ In this article, we will investigate  simply graph curves, and filled curves, th
 
 Follow the steps below:
 
-1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance
-
-1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions
-
-1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object
-
-1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page
-
-1. Save our PDF file
+1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance.
+1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions.
+1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object.
+1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page.
+1. Save our PDF file.
 
 ```csharp
  public static void ExampleCurve()
@@ -124,7 +120,7 @@ Follow the steps below:
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCurve1_out.pdf");
+    document.Save(dataDir + "DrawingCurve1_out.pdf");
 }
 ```
 
@@ -160,7 +156,7 @@ public static void CurveFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCurve2_out.pdf");
+    document.Save(dataDir + "DrawingCurve2_out.pdf");
 }
 ```
 

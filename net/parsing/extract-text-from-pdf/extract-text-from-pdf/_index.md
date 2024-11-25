@@ -23,20 +23,20 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+Document document = new Document(dataDir + "ExtractTextAll.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 Call the **Accept** method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.
@@ -49,26 +49,23 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
  
 // Accept the absorber for a particular page
-pdfDocument.Pages[1].Accept(textAbsorber);
+document.Pages[1].Accept(textAbsorber);
 
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 
-dataDir = dataDir + "extracted-text_out.txt";
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir);
-
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text_out.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 ## Extract Text from Pages using Text Device
@@ -93,12 +90,12 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 System.Text.StringBuilder builder = new System.Text.StringBuilder();
 // String to hold extracted text
 string extractedText = "";
 
-foreach (Page pdfPage in pdfDocument.Pages)
+foreach (Page pdfPage in document.Pages)
 {
     using (MemoryStream textStream = new MemoryStream())
     {
@@ -106,17 +103,13 @@ foreach (Page pdfPage in pdfDocument.Pages)
         TextDevice textDevice = new TextDevice();
 
         // Set text extraction options - set text extraction mode (Raw or Pure)
-        TextExtractionOptions textExtOptions = new
-        TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+        TextExtractionOptions textExtOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
         textDevice.ExtractionOptions = textExtOptions;
 
         // Convert a particular page and save text to the stream
         textDevice.Process(pdfPage, textStream);
         // Convert a particular page and save text to the stream
-        textDevice.Process(pdfDocument.Pages[1], textStream);
-
-        // Close memory stream
-        textStream.Close();
+        textDevice.Process(document.Pages[1], textStream);
 
         // Get text from memory stream
         extractedText = Encoding.Unicode.GetString(textStream.ToArray());
@@ -124,9 +117,8 @@ foreach (Page pdfPage in pdfDocument.Pages)
     builder.Append(extractedText);
 }
 
-dataDir = dataDir + "input_Text_Extracted_out.txt";
 // Save the extracted text in text file
-File.WriteAllText(dataDir, builder.ToString());
+File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", builder.ToString());
 ```
 
 ## Extract Text from a particular page region
@@ -143,7 +135,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+Document document = new Document(dataDir + "ExtractTextAll.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber absorber = new TextAbsorber();
@@ -151,16 +143,16 @@ absorber.TextSearchOptions.LimitToPageBounds = true;
 absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 200, 250, 350);
 
 // Accept the absorber for first page
-pdfDocument.Pages[1].Accept(absorber);
+document.Pages[1].Accept(absorber);
 
 // Get the extracted text
 string extractedText = absorber.Text;
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 ## Extract text based on columns
@@ -175,10 +167,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 TextFragmentAbsorber tfa = new TextFragmentAbsorber();
-pdfDocument.Pages.Accept(tfa);
+document.Pages.Accept(tfa);
 TextFragmentCollection tfc = tfa.TextFragments;
 foreach (TextFragment tf in tfc)
 {
@@ -186,16 +178,14 @@ foreach (TextFragment tf in tfc)
     tf.TextState.FontSize = tf.TextState.FontSize * 0.7f;
 }
 Stream st = new MemoryStream();
-pdfDocument.Save(st);
-pdfDocument = new Document(st);
+document.Save(st);
+document = new Document(st);
 TextAbsorber textAbsorber = new TextAbsorber();
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
-textAbsorber.Visit(pdfDocument);
+textAbsorber.Visit(document);
 
-dataDir = dataDir + "ExtractColumnsText_out.txt";
-
-System.IO.File.WriteAllText(dataDir, extractedText);
+System.IO.File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
 ```
 
 ### Second approach - Using ScaleFactor
@@ -204,7 +194,7 @@ In this new release, we also have introduced several improvements in TextAbsorbe
 
 Specifying the ScaleFactor values between 0.1 and -0.1 is treated as zero value, but it makes the algorithm to calculate scale factor needed during extracting text automatically. The calculation is based on average glyph width of the most popular font on the page, but we cannot guarantee that in extracted text no string of column reaches the start of the next column. Please note that if ScaleFactor value is not specified, the default value of 1.0 will be used. It means no scaling will be carried out. If the specified ScaleFactor value is more than 10 or less than -0.1, the default value of 1.0 will be used.
 
-We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large number of PDF files for text content extraction. Or manually set redundant reducing of grid width ( about ScaleFactor = 0.5). However, you must not determine whether scaling is necessary for concrete documents or not. If You set redundant reducing of grid width for the document (that doesn't need in it), the extracted text content will remain fully adequate. Please take a look at the following code snippet.
+We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large number of PDF files for text content extraction. Or manually set redundant reducing of grid width (about ScaleFactor = 0.5). However, you must not determine whether scaling is necessary for concrete documents or not. If You set redundant reducing of grid width for the document (that doesn't need in it), the extracted text content will remain fully adequate. Please take a look at the following code snippet.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -214,14 +204,14 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 TextAbsorber textAbsorber = new TextAbsorber();
 textAbsorber.ExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
 // Setting scale factor to 0.5 is enough to split columns in the majority of documents
 // Setting of zero allows to algorithm choose scale factor automatically
 textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
 System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
 ```
@@ -242,9 +232,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document doc = new Document(dataDir + "ExtractHighlightedText.pdf");
+Document document = new Document(dataDir + "ExtractHighlightedText.pdf");
 // Loop through all the annotations
-foreach (Annotation annotation in doc.Pages[1].Annotations)
+foreach (Annotation annotation in document.Pages[1].Annotations)
 {
     // Filter TextMarkupAnnotation
     if (annotation is TextMarkupAnnotation)
@@ -275,12 +265,12 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string inXml = "40014.xml";
 string outFile = "40014_out.pdf";
 
-Document doc = new Document();
-doc.BindXml(dataDir + inXml);
+Document document = new Document();
+document.BindXml(dataDir + inXml);
 
-Page page = (Page)doc.GetObjectById("mainSection");
+Page page = (Page)document.GetObjectById("mainSection");
 
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-doc.Save(dataDir + outFile);
+TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
+segment = (TextSegment)document.GetObjectById("strongHtml");
+document.Save(dataDir + outFile);
 ```

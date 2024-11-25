@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Generate a Crash Reports
+## Generate Crash Reports
 
 These code snippets are designed to handle an exception and generate a crash report when an error occurs. 
 

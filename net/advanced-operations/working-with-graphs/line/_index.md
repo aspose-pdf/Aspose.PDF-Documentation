@@ -84,18 +84,12 @@ Aspose.PDF for .NET supports the feature to add graph objects (for example graph
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-
-1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file
-
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file.
 1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance.
-
 1. Add Graph object to paragraphs collection of page instance.
-
 1. Create [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) instance.
-
 1. Set line width.
-
 1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object.
 
 1. Save your PDF file.
@@ -128,7 +122,7 @@ public static void AddLineObjectToPDF()
     graph.Shapes.Add(line);
 
     // Save PDF file
-    document.Save(_dataDir + "AddLineObject_out.pdf");
+    document.Save(dataDir + "AddLineObject_out.pdf");
 }
 ```
 
@@ -161,7 +155,7 @@ public static void DashLengthInBlackAndDashLengthInWhite()
     // Add line to shapes collection of drawing object
     canvas.Shapes.Add(line);
     // Save PDF file
-    document.Save(_dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
+    document.Save(dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
 }
 ```
 
@@ -218,7 +212,7 @@ public static void ExampleLineAcrossPage()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "ExampleLineAcrossPage_out.pdf");
+    document.Save(dataDir + "ExampleLineAcrossPage_out.pdf");
 }
 ```
 

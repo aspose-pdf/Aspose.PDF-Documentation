@@ -118,26 +118,26 @@ The following code snippet shows you how to get an image's dimensions and resolu
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Load the source PDF file
-Document doc = new Document(dataDir+ "ImageInformation.pdf");
+Document document = new Document(dataDir +  "ImageInformation.pdf");
 
 // Define the default resolution for image
 int defaultResolution = 72;
 System.Collections.Stack graphicsState = new System.Collections.Stack();
 // Define array list object which will hold image names
-System.Collections.ArrayList imageNames = new System.Collections.ArrayList(doc.Pages[1].Resources.Images.Names);
+System.Collections.ArrayList imageNames = new System.Collections.ArrayList(document.Pages[1].Resources.Images.Names);
 // Insert an object to stack
 graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
 
 // Get all the operators on first page of document
-foreach (Operator op in doc.Pages[1].Contents)
+foreach (Operator op in document.Pages[1].Contents)
 {
     // Use GSave/GRestore operators to revert the transformations back to previously set
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+    Operators.GSave opSaveState = op as Operators.GSave;
+    Operators.GRestore opRestoreState = op as Operators.GRestore;
     // Instantiate ConcatenateMatrix object as it defines current transformation matrix.
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+    Operators.ConcatenateMatrix opCtm = op as Operators.ConcatenateMatrix;
     // Create Do operator which draws objects from resources. It draws Form objects and Image objects
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    Operators.Do opDo = op as Operators.Do;
 
     if (opSaveState != null)
     {
@@ -171,7 +171,7 @@ foreach (Operator op in doc.Pages[1].Contents)
         {
             System.Drawing.Drawing2D.Matrix lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
             // Create XImage object to hold images of first pdf page
-            XImage image = doc.Pages[1].Resources.Images[opDo.Name];
+            XImage image = document.Pages[1].Resources.Images[opDo.Name];
 
             // Get image dimensions
             double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));

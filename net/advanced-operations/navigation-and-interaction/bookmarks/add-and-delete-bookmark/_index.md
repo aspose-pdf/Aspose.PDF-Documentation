@@ -98,21 +98,20 @@ The following code snippet shows you how to add a bookmark in a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
+Document document = new Document(dataDir + "AddBookmark.pdf");
 
 // Create a bookmark object
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
+OutlineItemCollection pdfOutline = new OutlineItemCollection(document.Outlines);
 pdfOutline.Title = "Test Outline";
 pdfOutline.Italic = true;
 pdfOutline.Bold = true;
 // Set the destination page number
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
+pdfOutline.Action = new GoToAction(document.Pages[1]);
 // Add bookmark in the document's outline collection.
-pdfDocument.Outlines.Add(pdfOutline);
+document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddBookmark_out.pdf";
 // Save output
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddBookmark_out.pdf");
 ```
 
 ## Add a Child Bookmark to the PDF Document
@@ -135,16 +134,16 @@ The following code snippets show how to add child bookmark to a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+Document document = new Document(dataDir + "AddChildBookmark.pdf");
 
 // Create a parent bookmark object
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
+OutlineItemCollection pdfOutline = new OutlineItemCollection(document.Outlines);
 pdfOutline.Title = "Parent Outline";
 pdfOutline.Italic = true;
 pdfOutline.Bold = true;
 
 // Create a child bookmark object
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
+OutlineItemCollection pdfChildOutline = new OutlineItemCollection(document.Outlines);
 pdfChildOutline.Title = "Child Outline";
 pdfChildOutline.Italic = true;
 pdfChildOutline.Bold = true;
@@ -152,11 +151,10 @@ pdfChildOutline.Bold = true;
 // Add child bookmark in parent bookmark's collection
 pdfOutline.Add(pdfChildOutline);
 // Add parent bookmark in the document's outline collection.
-pdfDocument.Outlines.Add(pdfOutline);
+document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddChildBookmark_out.pdf";
 // Save output
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddChildBookmark_out.pdf");
 ```
 
 ## Delete all Bookmarks from a PDF Document
@@ -176,14 +174,13 @@ The following code snippets show how to delete all bookmarks from a PDF document
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+Document document = new Document(dataDir + "DeleteAllBookmarks.pdf");
 
 // Delete all bookmarks
-pdfDocument.Outlines.Delete();
+document.Outlines.Delete();
 
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
 // Save updated file
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
 ```
 
 ## Delete a Particular Bookmark from a PDF Document
@@ -203,13 +200,13 @@ The following code snippets show how to delete a particular bookmark from the PD
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+Document document = new Document(dataDir + "DeleteParticularBookmark.pdf");
 
 // Delete particular outline by Title
-pdfDocument.Outlines.Delete("Child Outline");
+document.Outlines.Delete("Child Outline");
 
 // Save updated file
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
 ```
 
 <script type="application/ld+json">

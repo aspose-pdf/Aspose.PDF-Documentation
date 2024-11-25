@@ -20,7 +20,7 @@ public static void PrintingPDFFile()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample.pdf");
+    viewer.BindPdf(dataDir + "sample.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -58,7 +58,7 @@ public static void PrintingPDFDisplayPrintDialog()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample.pdf");
+    viewer.BindPdf(dataDir + "sample.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -100,7 +100,7 @@ public static void PrintingPDFToSoftPrinter()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample.pdf");
+    viewer.BindPdf(dataDir + "sample.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -145,7 +145,7 @@ public static void PrintingPDFHidePrintDialog()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample.pdf");
+    viewer.BindPdf(dataDir + "sample.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -184,7 +184,7 @@ public static void PrintingPDFasGrayscale()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample.pdf");
+    viewer.BindPdf(dataDir + "sample.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -226,7 +226,7 @@ public static void PrintingPDFToPostScript()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample.pdf");
+    viewer.BindPdf(dataDir + "sample.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -241,7 +241,7 @@ public static void PrintingPDFToPostScript()
     // Set XPS/PDF printer name
     ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
     // Set output file name and PrintToFile attribute
-    ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+    ps.PrintFileName = dataDir + "PdfToPostScript_out.ps";
     ps.PrintToFile = true;
 
     // Set PageSize (if required)
@@ -269,7 +269,7 @@ public static void CheckingPrintJobStatus()
     PdfViewer viewer = new PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(_dataDir + "sample1.pdf");
+    viewer.BindPdf(dataDir + "sample1.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -284,7 +284,7 @@ public static void CheckingPrintJobStatus()
     // Set XPS/PDF printer name
     ps.PrinterName = "HP Universal Printing PS (v7.0.0)";
     // Set output file name and PrintToFile attribute
-    ps.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+    ps.PrintFileName = dataDir + "PdfToPostScript_out.ps";
     ps.PrintToFile = true;
 
     // Set PageSize (if required)
@@ -328,8 +328,8 @@ In a particular printing job, the pages of PDF document can either be printed in
 public static void PrintingPagesInSimplexAndDuplexMode()
 {
     int printingJobIndex = 0;
-    string inPdf = _dataDir + "sample-8page.pdf";
-    string output = _dataDir;
+    string inPdf = dataDir + "sample-8page.pdf";
+    string output = dataDir;
     IList<PrintingJobSettings> printingJobs = new List<PrintingJobSettings>();
 
     PrintingJobSettings printingJob1 = new PrintingJobSettings

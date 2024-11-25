@@ -99,10 +99,10 @@ Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "TextField.pdf");
+Document document = new Document(dataDir + "TextField.pdf");
 
 // Create a field
-TextBoxField textBoxField = new TextBoxField(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
+TextBoxField textBoxField = new TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
 textBoxField.PartialName = "textbox1";
 textBoxField.Value = "Text Box";
 
@@ -115,11 +115,10 @@ textBoxField.Border = border;
 textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
 // Add field to the document
-pdfDocument.Form.Add(textBoxField, 1);
+document.Form.Add(textBoxField, 1);
 
-dataDir = dataDir + "TextBox_out.pdf";
 // Save modified PDF
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "TextBox_out.pdf");
 ```
 
 ### Adding RadioButtonField
@@ -132,21 +131,20 @@ The following code snippets show how to add [RadioButtonField](https://reference
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Instantiate Document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add a page to PDF file
-pdfDocument.Pages.Add();
+document.Pages.Add();
 // Instatiate RadioButtonField object with page number as argument
-RadioButtonField radio = new RadioButtonField(pdfDocument.Pages[1]);
+RadioButtonField radio = new RadioButtonField(document.Pages[1]);
 // Add first radio button option and also specify its origin using Rectangle object
 radio.AddOption("Test", new Rectangle(0, 0, 20, 20));
 // Add second radio button option
 radio.AddOption("Test1", new Rectangle(20, 20, 40, 40));
 // Add radio button to form object of Document object
-pdfDocument.Form.Add(radio);
+document.Form.Add(radio);
 
-dataDir = dataDir + "RadioButton_out.pdf";
 // Save the PDF file
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "RadioButton_out.pdf");
 ```
 
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
@@ -156,9 +154,9 @@ The following code snippet shows the steps to add RadioButtonField with three op
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+Document document = new Document();
+Page page = document.Pages.Add();
+Table table = new Table();
 table.ColumnWidths = "120 120 120";
 page.Paragraphs.Add(table);
 Row r1 = table.Rows.Add();
@@ -168,7 +166,7 @@ Cell c3 = r1.Cells.Add();
 
 RadioButtonField rf = new RadioButtonField(page);
 rf.PartialName = "radio";
-doc.Form.Add(rf, 1);
+document.Form.Add(rf, 1);
 
 RadioButtonOptionField opt1 = new RadioButtonOptionField();
 RadioButtonOptionField opt2 = new RadioButtonOptionField();
@@ -211,9 +209,8 @@ c1.Paragraphs.Add(opt1);
 c2.Paragraphs.Add(opt2);
 c3.Paragraphs.Add(opt3);
 
-dataDir = dataDir + "RadioButtonWithOptions_out.pdf";
 // Save the PDF file
-doc.Save(dataDir);
+document.Save(dataDir + "RadioButtonWithOptions_out.pdf");
 ```
 
 ### Adding Caption to RadioButtonField
@@ -226,7 +223,7 @@ Following code snippet shows how to add caption which will be associated with Ra
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load source PDF form
-Aspose.Pdf.Facades.Form form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
+Form form1 = new Form(dataDir + "RadioButtonField.pdf");
 Document PDF_Template_PDF_HTML = new Document(dataDir + "RadioButtonField.pdf");
 foreach (var item in form1.FieldNames)
 {
@@ -234,12 +231,12 @@ foreach (var item in form1.FieldNames)
     Dictionary<string, string> radioOptions = form1.GetButtonOptionValues(item);
     if (item.Contains("radio1"))
     {
-        Aspose.Pdf.Forms.RadioButtonField field0 = PDF_Template_PDF_HTML.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
-        Aspose.Pdf.Forms.RadioButtonOptionField fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
+        RadioButtonField field0 = PDF_Template_PDF_HTML.Form[item] as RadioButtonField;
+        RadioButtonOptionField fieldoption = new RadioButtonOptionField();
         fieldoption.OptionName = "Yes";
         fieldoption.PartialName = "Yesname";
 
-        var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
+        var updatedFragment = new TextFragment("test123");
         updatedFragment.TextState.Font = FontRepository.FindFont("Arial");
         updatedFragment.TextState.FontSize = 10;
         updatedFragment.TextState.LineSpacing = 6.32f;
@@ -275,13 +272,13 @@ The following code snippets show how to add ComboBox field in a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Create Document object
-Document doc = new Document();
+Document document = new Document();
 
 // Add page to document object
-doc.Pages.Add();
+document.Pages.Add();
 
 // Instantiate ComboBox Field object
-ComboBoxField combo = new ComboBoxField(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
+ComboBoxField combo = new ComboBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
 
 // Add option to ComboBox
 combo.AddOption("Red");
@@ -290,10 +287,10 @@ combo.AddOption("Green");
 combo.AddOption("Blue");
 
 // Add combo box object to form fields collection of document object
-doc.Form.Add(combo);
-dataDir = dataDir + "ComboBox_out.pdf";
+document.Form.Add(combo);
+
 // Save the PDF document
-doc.Save(dataDir);
+document.Save(dataDir + "ComboBox_out.pdf");
 ```
 
 ### Add Tooltip to Form Field
@@ -308,14 +305,13 @@ The code snippets that follow show how to add a tooltip to a form field, first u
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load source PDF form
-Document doc = new Document(dataDir + "AddTooltipToField.pdf");
+Document document = new Document(dataDir + "AddTooltipToField.pdf");
 
 // Set the tooltip for textfield
-(doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
+(document.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
 
-dataDir = dataDir + "AddTooltipToField_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+document.Save(dataDir + "AddTooltipToField_out.pdf");
 ```
 
 

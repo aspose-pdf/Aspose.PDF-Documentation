@@ -18,12 +18,12 @@ First of all, an object is drawn in the [Document](https://reference.aspose.com/
 public static void AddingJavascriptActions()
 {
     PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     // create Javascript link
     System.Drawing.Rectangle rect = new System.Drawing.Rectangle(50, 750, 50, 50);
     String code = "app.alert('Welcome to Aspose!');";
     editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
     // save the output file
-    editor.Save(_dataDir + "JavaScriptAdded_output.pdf");
+    editor.Save(dataDir + "JavaScriptAdded_output.pdf");
 }
 ```

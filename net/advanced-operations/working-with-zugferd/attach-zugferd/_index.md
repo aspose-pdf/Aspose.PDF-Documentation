@@ -28,7 +28,7 @@ We recommend following steps to attach ZUGFeRD to PDF:
 ```cs
 var path = @"C:\Samples\ZUGFeRD\";
 
-var document = new Aspose.Pdf.Document(Path.Combine(path,"ZUGFeRD-test.pdf"));
+var document = new Document(Path.Combine(path,"ZUGFeRD-test.pdf"));
 // Setup new file to be added as attachment
 var description = "Invoice metadata conforming to ZUGFeRD standard";
 var fileSpecification = new Aspose.Pdf.FileSpecification(Path.Combine(path, "factur-x.xml"), description)

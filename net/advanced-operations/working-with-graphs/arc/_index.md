@@ -84,15 +84,11 @@ Aspose.PDF for .NET supports the feature to add graph objects (for example graph
 
 Follow the steps below:
 
-1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance
-
-1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions
-
-1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object
-
-1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page
-
-1. Save our PDF file
+1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance.
+1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions.
+1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object.
+1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page.
+1. Save our PDF file.
 
 The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) object.
 
@@ -127,7 +123,7 @@ public static void Arc()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingArc_out.pdf");
+    document.Save(dataDir + "DrawingArc_out.pdf");
 }
 ```
 
@@ -162,7 +158,7 @@ public static void ArcFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "ExampleFilledArc_out.pdf");
+    document.Save(dataDir + "ExampleFilledArc_out.pdf");
 }
 ```
 

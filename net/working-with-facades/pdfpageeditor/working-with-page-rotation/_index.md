@@ -23,11 +23,11 @@ To rotate pages in document we can use [PageRotations](https://reference.aspose.
 public static void RotatePages1()
 {
     var editor = new PdfPageEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
 
     editor.PageRotations = new System.Collections.Generic.Dictionary<int, int> { { 1, 90 }, { 2, 180 }, { 3,270 } };
 
-    editor.Save(_dataDir + "sample-rotate-a.pdf");
+    editor.Save(dataDir + "sample-rotate-a.pdf");
 }
 ```
 
@@ -39,12 +39,12 @@ We can also use [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facad
 public static void RotatePages2()
 {
     var editor = new PdfPageEditor();
-    editor.BindPdf(_dataDir + "sample.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
 
     editor.ProcessPages = new int[] { 1, 3 };
     editor.Rotation = 90;
 
-    editor.Save(_dataDir + "sample-rotate-a.pdf");
+    editor.Save(dataDir + "sample-rotate-a.pdf");
 }
 ```
 

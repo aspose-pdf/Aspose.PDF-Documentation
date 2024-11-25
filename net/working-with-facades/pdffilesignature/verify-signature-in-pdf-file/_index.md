@@ -20,7 +20,7 @@ The following code snippet shows you how to verify whether PDF is signed using a
 public static void IsPdfSigned()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
     if (pdfSign.ContainsSignature())
     {
         Console.WriteLine("Document Signed");
@@ -37,7 +37,7 @@ To determine if a file is singed, without providing the signature name, use the 
 public static void IsPdfSignedWithGivenSignature()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
     if (pdfSign.VerifySigned("Signature1"))
     {
         Console.WriteLine("PDF Signed");
@@ -53,7 +53,7 @@ public static void IsPdfSignedWithGivenSignature()
 public static void IsPdfSignatureValid()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
     if (pdfSign.VerifySignature("Signature1"))
     {
         Console.WriteLine("Signature Verified");

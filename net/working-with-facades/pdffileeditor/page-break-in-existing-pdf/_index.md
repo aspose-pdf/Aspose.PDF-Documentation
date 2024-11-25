@@ -24,17 +24,17 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 public static void PageBrakeExample01()
 {
     // Instantiate Document instance
-    Document doc = new Document(_dataDir + "Sample-Document-01.pdf");
+    Document document = new Document(dataDir + "Sample-Document-01.pdf");
     // Instantiate blank Document instance
     Document dest = new Document();
     // Create PdfFileEditor object
     PdfFileEditor fileEditor = new PdfFileEditor();
-    fileEditor.AddPageBreak(doc, dest, new PdfFileEditor.PageBreak[]
+    fileEditor.AddPageBreak(document, dest, new PdfFileEditor.PageBreak[]
     {
         new PdfFileEditor.PageBreak(1, 450)
     });
     // Save resultant file
-    dest.Save(_dataDir + "PageBreak_out.pdf");
+    dest.Save(dataDir + "PageBreak_out.pdf");
 }
 ```
 
@@ -46,8 +46,8 @@ public static void PageBrakeExample02()
     // Create PdfFileEditor object
     PdfFileEditor fileEditor = new PdfFileEditor();
 
-    fileEditor.AddPageBreak(_dataDir + "Sample-Document-02.pdf",
-        _dataDir + "PageBreakWithDestPath_out.pdf",
+    fileEditor.AddPageBreak(dataDir + "Sample-Document-02.pdf",
+        dataDir + "PageBreakWithDestPath_out.pdf",
         new PdfFileEditor.PageBreak[]
         {
             new PdfFileEditor.PageBreak(1, 450)
@@ -60,15 +60,17 @@ public static void PageBrakeExample02()
 ```csharp
 public static void PageBrakeExample03()
 {
-    Stream src = new FileStream(_dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read);
-    Stream dest = new FileStream(_dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite);
-    PdfFileEditor fileEditor = new PdfFileEditor();
-    fileEditor.AddPageBreak(src, dest,
-        new PdfFileEditor.PageBreak[]
+    using (Stream src = new FileStream(dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read))
+    {
+        using (Stream dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite))
         {
-            new PdfFileEditor.PageBreak(1, 450)
-        });
-    dest.Close();
-    src.Close();
+            PdfFileEditor fileEditor = new PdfFileEditor();
+            fileEditor.AddPageBreak(src, dest,
+                new PdfFileEditor.PageBreak[]
+                {
+                    new PdfFileEditor.PageBreak(1, 450)
+                });
+        }
+    }
 }
 ```

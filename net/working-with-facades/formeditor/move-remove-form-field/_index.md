@@ -17,9 +17,9 @@ If you want to move a form field to a new location then you can use [MoveField](
 public static void MoveField()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-05.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-05.pdf");
     editor.MoveField("Last Name", 262.56f, 496.75f, 382.28f, 514.03f);
-    editor.Save(_dataDir + "Sample-Form-05-mod.pdf");
+    editor.Save(dataDir + "Sample-Form-05-mod.pdf");
 }
 ```
 
@@ -31,10 +31,10 @@ In order to delete a form field from an existing PDF file, you can use RemoveFie
 public static void RemoveFields()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
     editor.RemoveField("First Name");
     editor.RemoveField("Last Name");
-    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+    editor.Save(dataDir + "Sample-Form-01-updated.pdf");
 }
 ```
 
@@ -46,9 +46,9 @@ Also you can rename your field using [RenameField](https://reference.aspose.com/
 public static void RenameFields()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
     editor.RenameField("Last Name", "LastName");
     editor.RenameField("First Name", "FirstName");
-    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+    editor.Save(dataDir + "Sample-Form-01-updated.pdf");
 }
 ```

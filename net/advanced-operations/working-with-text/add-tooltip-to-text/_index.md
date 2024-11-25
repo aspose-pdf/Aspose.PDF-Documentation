@@ -89,10 +89,10 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string outputFile = dataDir + "Tooltip_out.pdf";
 
 // Create sample document with text
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a tooltip"));
-doc.Pages[1].Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
-doc.Save(outputFile);
+Document document = new Document();
+document.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a tooltip"));
+document.Pages[1].Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
+document.Save(outputFile);
 
 // Open document with text
 Document document = new Document(outputFile);
@@ -165,9 +165,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string outputFile = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
 
 // Create sample document with text
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display floating text"));
-doc.Save(outputFile);
+Document document = new Document();
+document.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display floating text"));
+document.Save(outputFile);
 
 // Open document with text
 Document document = new Document(outputFile);

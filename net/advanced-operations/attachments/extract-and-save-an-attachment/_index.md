@@ -95,10 +95,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
+Document document = new Document(dataDir + "GetAlltheAttachments.pdf");
 
 // Get embedded files collection
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
+EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
 // Get count of the embedded files
 Console.WriteLine("Total files : {0}", embeddedFiles.Count);
@@ -127,13 +127,12 @@ foreach (FileSpecification fileSpecification in embeddedFiles)
 
     // Get the attachment and write to file or stream
     byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+    using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+    {
+        fileStream.Write(fileContent, 0, fileContent.Length);
+    }
+    count += 1;
 }
 ```
 
@@ -147,10 +146,10 @@ In order to get an individual attachment, we can specify the index of attachment
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
+Document document = new Document(dataDir + "GetIndividualAttachment.pdf");
 
 // Get particular embedded file
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
+FileSpecification fileSpecification = document.EmbeddedFiles[1];
 
 // Get the file properties
 Console.WriteLine("Name: {0}", fileSpecification.Name);
@@ -173,9 +172,10 @@ if (fileSpecification.Params != null)
 byte[] fileContent = new byte[fileSpecification.Contents.Length];
 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
+using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+{
+    fileStream.Write(fileContent, 0, fileContent.Length);
+}
 ```
 
 <script type="application/ld+json">

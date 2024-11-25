@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Working with PDF documents includes various functions. Managing the pages of a PDF file is an important part of this job. Aspose.PDF.Facaded provide the `PdfFileEditor` class for this purpose.
+Working with PDF documents includes various functions. Managing the pages of a PDF file is an important part of this job. Aspose.Pdf.Facaded provide the `PdfFileEditor` class for this purpose.
 
 PdfFileEditor class contains the methods which help manipulate individual pages; this class doesn't edit or manipulate the contents of a page. You can insert a new page, delete existing page, split the pages or you can specify imposition of the pages using PdfFileEditor.
 

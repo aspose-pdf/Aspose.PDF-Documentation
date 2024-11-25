@@ -17,7 +17,7 @@ To extract signature information, we have introduced the ExtractCertificate(..) 
 ```csharp
 public static void ExtractSignatureInfo()
 {
-    string input = _dataDir + "DigitallySign.pdf";
+    string input = dataDir + "DigitallySign.pdf";
     string certificateFileName = "extracted_cert.pfx";
     using (PdfFileSignature pdfFileSignature = new PdfFileSignature())
     {
@@ -33,7 +33,7 @@ public static void ExtractSignatureInfo()
                 {
                     using (cerStream)
                     {
-                        using (FileStream fs = new FileStream(_dataDir + certificateFileName, FileMode.CreateNew))
+                        using (FileStream fs = new FileStream(dataDir + certificateFileName, FileMode.CreateNew))
                         {
                             cerStream.CopyTo(fs);
                         }
@@ -56,13 +56,13 @@ public static void ExtractSignatureImage()
 {
     using (PdfFileSignature signature = new PdfFileSignature())
     {
-        signature.BindPdf(_dataDir + "DigitallySign.pdf");
+        signature.BindPdf(dataDir + "DigitallySign.pdf");
 
         if (signature.ContainsSignature())
         {
             foreach (string sigName in signature.GetSignNames())
             {
-                string outFile = _dataDir + "ExtractImages_out.jpg";
+                string outFile = dataDir + "ExtractImages_out.jpg";
                 using (Stream imageStream = signature.ExtractImage(sigName))
                 {
                     if (imageStream != null)
@@ -88,19 +88,19 @@ Aspose.PDF functionality allows flexible configuration for digital sign instance
 public static void SupressLocationReason()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "sample01.pdf");
+    pdfSign.BindPdf(dataDir + "sample01.pdf");
 
     // Create a rectangle for signature location
     System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
     // Set signature appearance
-    pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
+    pdfSign.SignatureAppearance = dataDir + "aspose-logo.png";
 
     // Create any of the three signature types
-    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    PKCS1 signature = new PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
     pdfSign.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
     // Save output PDF file
-    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+    pdfSign.Save(dataDir + "DigitallySign.pdf");
 }
 ```
 
@@ -112,13 +112,13 @@ Aspose.PDF for .NET allows customization features for a digital sign. The Sign m
 public static void CustomizationFeaturesForDigitalSign()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "sample01.pdf");
+    pdfSign.BindPdf(dataDir + "sample01.pdf");
 
     // Create a rectangle for signature location
     System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
 
     // Create any of the three signature types
-    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    PKCS1 signature = new PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
     SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
     {
@@ -130,7 +130,7 @@ public static void CustomizationFeaturesForDigitalSign()
 
     pdfSign.Sign(1, true, rect, signature);
     // Save output PDF file
-    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+    pdfSign.Save(dataDir + "DigitallySign.pdf");
 }
 ```
 
@@ -147,8 +147,8 @@ Each of provided signatures contains a set of configuration properties implement
 ```csharp
 public static void ChangeLanguageInDigitalSignText()
 {
-    string inFile = _dataDir + "sample01.pdf";
-    string outFile = _dataDir + "DigitallySign.pdf";
+    string inFile = dataDir + "sample01.pdf";
+    string outFile = dataDir + "DigitallySign.pdf";
 
     using (Aspose.Pdf.Facades.PdfFileSignature pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
@@ -157,7 +157,7 @@ public static void ChangeLanguageInDigitalSignText()
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
 
         //create any of the three signature types
-        PKCS7 pkcs = new PKCS7(_dataDir + "test01.pfx", "Aspose2021")
+        PKCS7 pkcs = new PKCS7(dataDir + "test01.pfx", "Aspose2021")
         {
             Reason = "Pruebas Firma",
             ContactInfo = "Contacto Pruebas",

@@ -17,11 +17,11 @@ Other than the creation of simple bookmarks, sometimes you have a requirement to
 ```csharp
 public static void AddBookmarksAction()
 {
-    var document = new Document(_dataDir + "Sample.pdf");
+    var document = new Document(dataDir + "Sample.pdf");
     PdfContentEditor editor = new PdfContentEditor(document);
     editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
     // Saves the result PDF to file
-    editor.Save(_dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
 }
 ```

@@ -96,16 +96,16 @@ The [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfile
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "AddAttachment.pdf");
+Document document = new Document(dataDir + "AddAttachment.pdf");
 
 // Setup new file to be added as attachment
 FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "Sample text file");
 
 // Add attachment to document's attachment collection
-pdfDocument.EmbeddedFiles.Add(fileSpecification);
+document.EmbeddedFiles.Add(fileSpecification);
 
 // Save updated document
-pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
+document.Save(dataDir + "AddllAnnotations_out.pdf");
 ```
 
 <script type="application/ld+json">

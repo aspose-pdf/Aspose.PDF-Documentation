@@ -17,7 +17,7 @@ You can then use [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspos
 ```csharp
 public static void ExtractAnnotation()
 {
-    var document = new Document(_dataDir + "sample_cats_dogs.pdf");
+    var document = new Document(dataDir + "sample_cats_dogs.pdf");
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
     annotationEditor.BindPdf(document);
 

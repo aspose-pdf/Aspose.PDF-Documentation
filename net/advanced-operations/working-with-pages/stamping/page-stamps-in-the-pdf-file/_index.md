@@ -88,15 +88,15 @@ public static void AddPageStamp()
     var inputFileName = "sample-4pages.pdf";
     var outputFileName = "AddPageStamp_out.pdf";
     var pageStampFileName = "PageStamp.pdf";
-    var document = new Document(_dataDir + inputFileName);
+    var document = new Document(dataDir + inputFileName);
 
-    var bluePageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 1)
+    var bluePageStamp = new PdfPageStamp(dataDir + pageStampFileName, 1)
     {
         Height = 800,
         Background = true
     };
 
-    var plumPageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 2)
+    var plumPageStamp = new PdfPageStamp(dataDir + pageStampFileName, 2)
     {
         Height = 800,
         Background = true
@@ -114,7 +114,7 @@ public static void AddPageStamp()
         }
     }
 
-    document.Save(_dataDir + outputFileName);
+    document.Save(dataDir + outputFileName);
 }
 ```
 

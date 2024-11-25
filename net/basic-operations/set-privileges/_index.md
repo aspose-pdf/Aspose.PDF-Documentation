@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Encrypt PDF File with C# using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
-lastmod: "2022-02-17"
+lastmod: "2024-11-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -119,12 +119,11 @@ The following code snippet shows you how to encrypt PDF files.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 // Open document
-Document document = new Document(dataDir+ "Encrypt.pdf");
+Document document = new Document(dataDir +  "Encrypt.pdf");
 // Encrypt PDF
 document.Encrypt("user", "owner", 0, CryptoAlgorithm.RC4x128);
-dataDir = dataDir + "Encrypt_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "Encrypt_out.pdf");
 ```
 
 ## Decrypt PDF File using Owner Password
@@ -141,12 +140,11 @@ In order to decrypt the PDF file, you first need to create a [Document](https://
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 // Open document
-Document document = new Document(dataDir+ "Decrypt.pdf", "password");
+Document document = new Document(dataDir +  "Decrypt.pdf", "password");
 // Decrypt PDF
 document.Decrypt();
-dataDir = dataDir + "Decrypt_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "Decrypt_out.pdf");
 ```
 
 ## Change Password of a PDF File
@@ -164,17 +162,16 @@ The following code snippet shows you how to change the password of a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
 // Open document
-Document document = new Document(dataDir+ "ChangePassword.pdf", "owner");
+Document document = new Document(dataDir +  "ChangePassword.pdf", "owner");
 // Change password
 document.ChangePasswords("owner", "newuser", "newowner");
-dataDir = dataDir + "ChangePassword_out.pdf";
 // Save updated PDF
-document.Save(dataDir);
+document.Save(dataDir + "ChangePassword_out.pdf");
 ```
 
 ## How to - determine if the source PDF is password protected
 
-**Aspose.PDF for .NET** provides great capabilities of dealing with PDF documents. When using Document class of Aspose.PDF namespace to open a PDF document that is password-protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact, when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorized access of document)
+**Aspose.PDF for .NET** provides great capabilities of dealing with PDF documents. When using Document class of Aspose.PDF namespace to open a PDF document that is password-protected, we need to provide the password information as an argument to Document constructor and in case this information is not provided, an error message is generated. In fact, when trying to open a PDF file with Document object, the constructor is trying to read the contents of PDF file and in case correct password is not provided, an error message is generated (it happens to prevent unauthorized access of document).
 
 When dealing with encrypted PDF files, you may come across the scenario where you would be interested to detect if a PDF has an open password and/or an edit password. Sometimes there are documents that do not require password information while opening them, but they require information in order to edit the contents of the file. So in order to fulfill the above requirements, PdfFileInfo class present under Aspose.PDF.Facades provides the properties which can help in determining the required information.
 
@@ -208,9 +205,11 @@ for (int passwordcount = 0; passwordcount < passwords.Length; passwordcount++)
 {
     try
     {
-        Document doc = new Document(dataDir + "IsPasswordProtected.pdf", passwords[passwordcount]);
-        if (doc.Pages.Count > 0)
-            Console.WriteLine("Number of Page in document are = " + doc.Pages.Count);
+        Document document = new Document(dataDir + "IsPasswordProtected.pdf", passwords[passwordcount]);
+        if (document.Pages.Count > 0)
+        {
+            Console.WriteLine("Number of Page in document are = " + document.Pages.Count);
+        }
     }
     catch (InvalidPasswordException)
     {

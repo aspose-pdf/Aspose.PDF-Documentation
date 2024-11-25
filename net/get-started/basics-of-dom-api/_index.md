@@ -47,7 +47,7 @@ This topic will explain the new Aspose.PDF for .NET API and guide you to get sta
 The Aspose.PDF for .NET is composed of two parts:
 
 - Aspose.PDF for .NET DOM API.
-- Aspose.PDF.Facades (old Aspose.PDF.Kit for .NET).
+- Aspose.Pdf.Facades (old Aspose.PDF.Kit for .NET).
 
 You'll find the details of each of these areas below.
 
@@ -79,10 +79,10 @@ Annotations are a part of a PDF document's interactive features. We have dedicat
 
 This namespace contains classes that help you work with PDF forms and form fields, for example Form, Field, TextBoxField and OptionCollection etc.
 
-#### Aspose.PDF.Devices
+#### Aspose.Pdf.Devices
 
 We can perform various operations on the PDF documents such as converting PDF document to various image formats. However, such operations do not belong to the Document object and we cannot extend the Document class for such operations. That's why we have introduced the concept of the Device in the new DOM API.
 
-#### Aspose.PDF.Facades
+#### Aspose.Pdf.Facades
 
 Previous to Aspose.PDF for .NET, you needed Aspose.PDF.Kit for .NET to manipulate existing PDF files. To execute old Aspose.PDF.Kit code, can use Aspose.PDF.Facades namespace.

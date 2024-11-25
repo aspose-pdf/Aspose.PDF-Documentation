@@ -21,14 +21,14 @@ public static void ExtractText()
     PdfExtractor pdfExtractor = new PdfExtractor();
 
     // Bind the input PDF
-    pdfExtractor.BindPdf(_dataDir + "sample.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample.pdf");
 
     // ExtractText
     pdfExtractor.ExtractText();
 
     if (!WholeText)
     {
-        pdfExtractor.GetText(_dataDir + "sample.txt");
+        pdfExtractor.GetText(dataDir + "sample.txt");
     }
     else
     {
@@ -36,7 +36,7 @@ public static void ExtractText()
         int pageNumber = 1;
         while (pdfExtractor.HasNextPageText())
         {
-            pdfExtractor.GetNextPageText($"{_dataDir}\\sample{pageNumber:D3}.txt");
+            pdfExtractor.GetNextPageText($"{dataDir}\\sample{pageNumber:D3}.txt");
             pageNumber++;
         }
     }
@@ -53,7 +53,7 @@ public static void ExtractTextExtractonMode()
     PdfExtractor pdfExtractor = new PdfExtractor();
 
     // Bind the input PDF
-    pdfExtractor.BindPdf(_dataDir + "sample.pdf");
+    pdfExtractor.BindPdf(dataDir + "sample.pdf");
 
     // ExtractText
     // pdfExtractor.ExtractTextMode = 0; //pure mode
@@ -62,7 +62,7 @@ public static void ExtractTextExtractonMode()
 
     if (!WholeText)
     {
-        pdfExtractor.GetText(_dataDir + "sample.txt");
+        pdfExtractor.GetText(dataDir + "sample.txt");
     }
     else
     {
@@ -70,7 +70,7 @@ public static void ExtractTextExtractonMode()
         int pageNumber = 1;
         while (pdfExtractor.HasNextPageText())
         {
-            pdfExtractor.GetNextPageText($"{_dataDir}\\sample{pageNumber:D3}.txt");
+            pdfExtractor.GetNextPageText($"{dataDir}\\sample{pageNumber:D3}.txt");
             pageNumber++;
         }
     }

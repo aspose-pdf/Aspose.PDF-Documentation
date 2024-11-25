@@ -92,8 +92,8 @@ FormEditor form = new FormEditor();
 
 form.BindPdf(dataDir + "input.pdf");
 form.SetFieldLimit("textbox1", 15);
-dataDir = dataDir + "SetFieldLimit_out.pdf";
-form.Save(dataDir);
+
+form.Save(dataDir + "SetFieldLimit_out.pdf");
 ```
 
 Similarly, Aspose.PDF has a method that gets the field limit using the DOM approach. The following code snippet shows the steps.
@@ -103,25 +103,25 @@ Similarly, Aspose.PDF has a method that gets the field limit using the DOM appro
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 // Getting maximum field limit using DOM
-Document doc = new Document(dataDir + "FieldLimit.pdf");
-Console.WriteLine("Limit: " + (doc.Form["textbox1"] as TextBoxField).MaxLen);
+Document document = new Document(dataDir + "FieldLimit.pdf");
+Console.WriteLine("Limit: " + (document.Form["textbox1"] as TextBoxField).MaxLen);
 ```
 
-You can also get the same value using the *Aspose.PDF.Facades* namespace using the following code snippet.
+You can also get the same value using the *Aspose.Pdf.Facades* namespace using the following code snippet.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 // Getting maximum field limit using Facades
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
+Form form = new Form();
 form.BindPdf(dataDir + "FieldLimit.pdf");
 Console.WriteLine("Limit: " + form.GetFieldLimit("textbox1"));
 ```
 
 ## Set Custom Font for the Form Field
 
-Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. To set and update the default font used for form fields, use the DefaultAppearance(Font font, double size, Color color) class. This class can be found under the Aspose.PDF.InteractiveFeatures namespace. To use this object, use the Field class DefaultAppearance property.
+Form fields in Adobe PDF files can be configured to use specific default fonts. In the early versions of Aspose.PDF, only the 14 default fonts were supported. Later releases allowed developers to apply any font. To set and update the default font used for form fields, use the DefaultAppearance(Font font, double size, Color color) class. This class can be found under the Aspose.Pdf.InteractiveFeatures namespace. To use this object, use the Field class DefaultAppearance property.
 
 The following code snippet shows how to set the default font for PDF form fields.
 
@@ -131,20 +131,19 @@ The following code snippet shows how to set the default font for PDF form fields
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "FormFieldFont14.pdf");
+Document document = new Document(dataDir + "FormFieldFont14.pdf");
 
 // Get particular form field from document
-Aspose.Pdf.Forms.Field field = pdfDocument.Form["textbox1"] as Aspose.Pdf.Forms.Field;
+Field field = document.Form["textbox1"] as Field;
 
 // Create font object
-Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
+Font font = FontRepository.FindFont("ComicSansMS");
 
 // Set the font information for form field
-// Field.DefaultAppearance = new Aspose.Pdf.Forms.in.DefaultAppearance(font, 10, System.Drawing.Color.Black);
+// Field.DefaultAppearance = new DefaultAppearance(font, 10, System.Drawing.Color.Black);
 
-dataDir = dataDir + "FormFieldFont14_out.pdf";
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "FormFieldFont14_out.pdf");
 ```
 
 ## Add/remove fields in existing form
@@ -157,13 +156,13 @@ All the form fields are contained in the Document object's Form collection. This
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteFormField.pdf");
+Document document = new Document(dataDir + "DeleteFormField.pdf");
 
 // Delete a particular field by name
-pdfDocument.Form.Delete("textbox1");
-dataDir = dataDir + "DeleteFormField_out.pdf";
+document.Form.Delete("textbox1");
+
 // Save modified document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "DeleteFormField_out.pdf");
 ```
 
 <script type="application/ld+json">

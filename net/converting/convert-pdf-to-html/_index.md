@@ -58,10 +58,10 @@ Aspose.PDF for .NET provides a two-line code for transforming a source PDF file 
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open the source PDF document
-Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 
 // Save the file into MS document format
-pdfDocument.Save(dataDir + "output_out.html", SaveFormat.Html);
+document.Save(dataDir + "output_out.html", SaveFormat.Html);
 ```
 
 ### Splitting Output to Multi-page HTML
@@ -74,7 +74,7 @@ When converting large PDF file with several pages to HTML format, the output app
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Open the source PDF document
-Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 
 // Instantiate HTML SaveOptions object
 HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
@@ -83,7 +83,7 @@ HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 htmlOptions.SplitIntoPages = true;
 
 // Save the document
-pdfDocument.Save(@"MultiPageHTML_out.html", htmlOptions);
+document.Save(@"MultiPageHTML_out.html", htmlOptions);
 ```
 
 ### Specify Folder for Storing SVG Files
@@ -92,7 +92,7 @@ During PDF to HTML conversion, it is possible to specify the folder that SVG ima
 
 ```csharp
 // Load the PDF file
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 
 // Instantiate HTML save options object
 HtmlSaveOptions newOptions = new HtmlSaveOptions();
@@ -101,7 +101,7 @@ HtmlSaveOptions newOptions = new HtmlSaveOptions();
 newOptions.SpecialFolderForSvgImages = dataDir;
 
 // Save the output file
-doc.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
+document.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
 ```
 
 ### Compressing SVG Images During Conversion
@@ -142,14 +142,14 @@ With the following simple code snippet, you can split the output HTML into pages
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
            
 HtmlSaveOptions options = new HtmlSaveOptions();
 // This is the tested setting
 options.HtmlMarkupGenerationMode = HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent;
 options.SplitIntoPages = true;
 
-doc.Save(dataDir + "CreateSubsequentFiles_out.html", options);
+document.Save(dataDir + "CreateSubsequentFiles_out.html", options);
 ```
 
 ### Transparent Text rendering
@@ -161,11 +161,11 @@ In case the source/input PDF file contains transparent texts shadowed by foregro
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 htmlOptions.SaveShadowedTextsAsTransparentTexts = true;
 htmlOptions.SaveTransparentTexts = true;
-doc.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
+document.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
 ```
 
 ### PDF document layers rendering
@@ -177,7 +177,7 @@ We can render PDF document layers in separate layer type element during PDF to H
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
+Document document = new Document(dataDir + "PDFToHTML.pdf");
 // Instantiate HTML SaveOptions object
 HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 
@@ -185,7 +185,7 @@ HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
 htmlOptions.ConvertMarkedContentToLayers = true;
 
 // Save the document
-doc.Save(dataDir + "LayersRendering_out.html", htmlOptions);
+document.Save(dataDir + "LayersRendering_out.html", htmlOptions);
 ```
 
 ## See Also 

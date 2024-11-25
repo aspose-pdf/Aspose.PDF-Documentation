@@ -24,15 +24,15 @@ In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://ref
 ```csharp
 public static void DecryptPDFFile()
 {
-    PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
+    PdfFileInfo pdfFileInfo = new PdfFileInfo(dataDir + "sample_encrypted.pdf");
     // Create PdfFileSecurity object
     if (pdfFileInfo.IsEncrypted)
     {
         PdfFileSecurity fileSecurity = new PdfFileSecurity();
-        fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
+        fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
         // Decrypt PDF document
         fileSecurity.DecryptFile("P@ssw0rd");
-        fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+        fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
 }
 ```

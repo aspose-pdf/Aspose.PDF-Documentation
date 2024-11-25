@@ -16,7 +16,7 @@ The following code snippet shows you how to get PDF file information.
 public static void GetPdfInfo()
 {
     // Open document
-    PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf");
+    PdfFileInfo fileInfo = new PdfFileInfo(dataDir + "sample.pdf");
     // Get PDF information
     Console.WriteLine("Subject: {0}", fileInfo.Subject);
     Console.WriteLine("Title: {0}", fileInfo.Title);
@@ -41,7 +41,7 @@ In order to get information, we use the [Header](https://reference.aspose.com/pd
 public static void GetMetaInfo()
 {
     // Create instance of PdfFileInfo object
-    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(_dataDir + "SetMetaInfo_out.pdf");
+    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "SetMetaInfo_out.pdf");
     // Retrieve all existing custom attributes
     Hashtable hTable = new Hashtable(fInfo.Header);
 

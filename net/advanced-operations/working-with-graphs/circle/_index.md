@@ -84,15 +84,11 @@ Like bar graphs, circle graphs can be used to display data in a number of separa
 
 Follow the steps below:
 
-1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance
-
-1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions
-
-1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object
-
-1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page
-
-1. Save our PDF file
+1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance.
+1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions.
+1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object.
+1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page.
+1. Save our PDF file.
 
 ```csharp
 public static void Circle()
@@ -118,7 +114,7 @@ public static void Circle()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCircle1_out.pdf");
+    document.Save(dataDir + "DrawingCircle1_out.pdf");
 }
 ```
 
@@ -157,7 +153,7 @@ public static void CircleFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCircle2_out.pdf");
+    document.Save(dataDir + "DrawingCircle2_out.pdf");
 }
 ```
 

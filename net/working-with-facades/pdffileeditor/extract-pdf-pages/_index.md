@@ -19,7 +19,7 @@ public static void Extract_PDFPages_FilePaths()
     PdfFileEditor pdfEditor = new PdfFileEditor();
 
     // Extract pages
-    pdfEditor.Extract(_dataDir + "MultiplePages.pdf", 1, 3, _dataDir + "ExtractPagesBetweenNumbers_out.pdf");
+    pdfEditor.Extract(dataDir + "MultiplePages.pdf", 1, 3, dataDir + "ExtractPagesBetweenNumbers_out.pdf");
 }
 ```
 
@@ -34,9 +34,9 @@ public static void Extract_PDFPages_Streams()
     PdfFileEditor pdfEditor = new PdfFileEditor();
 
     // Create streams
-    using (FileStream inputStream = new FileStream(_dataDir + "MultiplePages.pdf", FileMode.Open))
+    using (FileStream inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
     {
-        using (FileStream outputStream = new FileStream(_dataDir + "ExtractPagesBetweenTwoNumbers_out.pdf", FileMode.Create))
+        using (FileStream outputStream = new FileStream(dataDir + "ExtractPagesBetweenTwoNumbers_out.pdf", FileMode.Create))
         {
             // Extract pages
             pdfEditor.Extract(inputStream, 1, 3, outputStream);
@@ -56,7 +56,7 @@ public static void Extract_ArrayPDFPages_FilePaths()
     PdfFileEditor pdfEditor = new PdfFileEditor();
     int[] pagesToExtract = new int[] { 1, 2 };
     // Extract pages
-    pdfEditor.Extract(_dataDir + "Extract.pdf", pagesToExtract, _dataDir + "ExtractArrayOfPages_out.pdf");
+    pdfEditor.Extract(dataDir + "Extract.pdf", pagesToExtract, dataDir + "ExtractArrayOfPages_out.pdf");
 }
 ```
 
@@ -71,9 +71,9 @@ public static void Extract_ArrayPDFPages_Streams()
     // Create PdfFileEditor object
     PdfFileEditor pdfEditor = new PdfFileEditor();
     // Create streams
-    using (FileStream inputStream = new FileStream(_dataDir + "MultiplePages.pdf", FileMode.Open))
+    using (FileStream inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
     {
-        using (FileStream outputStream = new FileStream(_dataDir + "ExtractArrayOfPagesUsingStreams_out.pdf", FileMode.Create))
+        using (FileStream outputStream = new FileStream(dataDir + "ExtractArrayOfPagesUsingStreams_out.pdf", FileMode.Create))
         {
             int[] pagesToExtract = new int[] { 1, 2 };
             // Extract pages
