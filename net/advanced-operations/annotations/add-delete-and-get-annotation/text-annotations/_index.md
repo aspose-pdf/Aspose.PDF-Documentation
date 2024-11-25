@@ -287,7 +287,59 @@ The [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/text
 
 The following code snippet shows how to add a FreeTextAnnotation with specific text formatting.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Annotations-SetFreeTextAnnotationFormatting-SetFreeTextAnnotationFormatting.cs" >}}
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+csharp
+private static void AddFreeAnnotation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
+    {
+        // Instantiate DefaultAppearance object
+        var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 28, System.Drawing.Color.Red);
+        // Create annotation
+        var freetext = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600), defaultAppearance);
+        // Specify the contents of annotation
+        freetext.Contents = "Free Text";
+        // Add anootation to annotations collection of page
+        document.Pages[1].Annotations.Add(freetext);
+        // Save the updated document
+        document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
+    }
+}
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+csharp
+private static void AddFreeAnnotation(string fontName = "Arial", float fontSize = 28)
+{
+     // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    using var document = new Aspose.Pdf.Document($"{dataDir}SetFreeTextAnnotationFormatting.pdf");
+    // Set default values
+    var textColor = System.Drawing.Color.Red;
+    var position = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
+
+    // Instantiate DefaultAppearance object
+    Aspose.Pdf.Annotations.DefaultAppearance defaultAppearance = new(fontName, fontSize, textColor);
+    // Create annotation
+    var freetext = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], position, defaultAppearance)
+    {
+        // Specify the contents of annotation
+        Contents = "Free Text"
+    };
+    // Add anootation to annotations collection of page
+    document.Pages[1].Annotations.Add(freetext);
+
+    // Save the updated document
+    document.Save($"{dataDir}SetFreeTextAnnotationFormatting_out.pdf");
+}
+
+{{< /tab >}}
+{{< /tabs >}}
 
 {{% alert color="primary" %}}
 
