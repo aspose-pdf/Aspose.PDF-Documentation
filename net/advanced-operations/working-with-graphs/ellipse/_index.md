@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Ellipse Object to PDF file",
-    "alternativeHeadline": "How to create Ellipse Object in PDF file",
+    "alternativeHeadline": "Add Ellipse Objects in PDF Files Effortlessly",
+    "abstract": "Introducing the new Ellipse Object feature for Aspose.PDF in .NET, which allows developers to effortlessly incorporate ellipse shapes into their PDF documents. This functionality supports adding filled ellipses and even text within the shapes, enhancing the visual presentation and customization of PDF files. Optimize your document generation with rich graphical elements that elevate user engagement",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, ellipse in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Ellipse, PDF manipulation, Aspose.PDF for .NET, create ellipse object, filled ellipse, text inside ellipse, drawing object, color fill, PDF document generation",
+    "wordcount": "541",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-ellipse/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to create a Ellipse object to your PDF using Aspose.PDF for .NET."
 }
 </script>
