@@ -289,7 +289,7 @@ The following code snippet shows how to add a FreeTextAnnotation with specific t
 
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
-csharp
+```csharp
 private static void AddFreeAnnotation()
 {
     // The path to the documents directory
@@ -310,10 +310,11 @@ private static void AddFreeAnnotation()
         document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
     }
 }
+```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-csharp
+```csharp
 private static void AddFreeAnnotation(string fontName = "Arial", float fontSize = 28)
 {
      // The path to the documents directory.
@@ -337,7 +338,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
     // Save the updated document
     document.Save($"{dataDir}SetFreeTextAnnotationFormatting_out.pdf");
 }
-
+```
 {{< /tab >}}
 {{< /tabs >}}
 
