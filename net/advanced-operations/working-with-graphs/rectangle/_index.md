@@ -86,23 +86,16 @@ First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file.
+1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance.
+1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance.
+1. Set border for [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing).
+1. Create Rectangle instance.
 
-1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file
-
-1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
-
-1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance
-
-1. Set border for [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)
-
-1. Create Rectangle instance
-
-1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object
-
-1. Add graph object to paragraphs collection of page instance
-
-1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
+1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object.
+1. Add graph object to paragraphs collection of page instance.
+1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance.
 
 1. And save your PDF file
 
