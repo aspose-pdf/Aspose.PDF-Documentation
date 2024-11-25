@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Print PDF in WPF application",
-    "alternativeHeadline": "How to print PDF in WPF application",
+    "alternativeHeadline": "Print PDF Documents Directly from WPF Applications",
+    "abstract": "The new feature enables seamless printing of PDF documents directly from a WPF application using C#. This functionality allows users to convert PDF files to XPS format and print them efficiently, enhancing document management capabilities within their applications. With a straightforward code example, developers can easily implement this feature to streamline their PDF printing processes",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf in WPF application",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Print PDF, WPF application, C# PDF printing, Aspose.PDF library, convert PDF to XPS, direct printing, view PDF document, DocViewer class, MemoryStream object, FixedDocumentSequence",
+    "wordcount": "406",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/print-pdf-document-in-wpf-application/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "C# Print PDF documents from a WPF application. This code sample shows how to print PDF documents from a WPF application using C#."
 }
 </script>

@@ -15,7 +15,7 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extra Annotations using C#",
-    "alternativeHeadline": "Enhance PDF Annotations with C# Functionality",
+    "alternativeHeadline": "Enhance PDF Annotations with C#",
     "abstract": "Introducing the Extra Annotations feature in C#, which allows developers to seamlessly add, retrieve, and remove various annotations from PDF documents. This robust functionality enhances PDF interaction by enabling precise text editing and document manipulation, including the ability to add caret and redaction annotations effectively. Optimize your PDF handling with these advanced capabilities designed for intuitive document management",
     "author": {
         "@type": "Person",

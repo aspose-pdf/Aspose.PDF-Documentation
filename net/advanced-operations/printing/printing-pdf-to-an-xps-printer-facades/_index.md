@@ -16,21 +16,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Printing PDF to an XPS Printer",
-    "alternativeHeadline": "How to print PDF to an XPS Printer",
+    "alternativeHeadline": "Print PDFs Directly to XPS Printers with Ease",
+    "abstract": "The new feature enables seamless printing of PDF documents directly to XPS printers using the PdfViewer class in C#. This functionality supports configuring various print settings, allowing enhanced control over the printing process, including auto resizing and rotation adjustments. Ideal for developers, this feature streamlines the integration of PDF printing capabilities into .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf to an XPS printer",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "print pdf to xps, PdfViewer class, print document settings, C# PDF printing, XPS printer, printer settings, page settings, choose paper tray, soft printer, Aspose.PDF library",
+    "wordcount": "458",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-pdf-to-an-xps-printer-facades/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This page shows how to printing PDF to an XPS printer using PdfViewer class."
 }
 </script>

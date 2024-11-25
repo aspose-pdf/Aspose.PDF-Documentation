@@ -15,22 +15,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extract AcroForm",
-    "alternativeHeadline": "How to extract AcroForm from PDF",
+    "headline": "Extract AcroForm - Extract Form Data from PDF in C#",
+    "alternativeHeadline": "Effortlessly Extract PDF Form Data Using C#",
+    "abstract": "The new Extract AcroForm feature in Aspose.PDF for .NET enables developers to easily extract form data from PDF documents. This functionality allows users to retrieve values from individual fields or all fields within a PDF, enhancing data management and manipulation capabilities in C# applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, extract acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "extract form data, PDF in C#, Aspose.PDF for .NET, AcroForm extraction, get field values PDF, PDF form fields, individual field value, get fields in region, manipulate PDF forms, C# PDF library",
+    "wordcount": "673",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-form/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Extract form from your PDF document with Aspose.PDF for .NET library. Get value from an individual field of PDF file."
 }
 </script>

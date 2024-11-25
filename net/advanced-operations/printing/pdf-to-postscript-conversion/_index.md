@@ -16,21 +16,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF to PostScript conversion",
-    "alternativeHeadline": "Convert PDF to PostScript",
+    "alternativeHeadline": "Effortlessly Convert PDF Files to PostScript Format",
+    "abstract": "The new PDF to PostScript conversion feature allows seamless transformation of PDF documents into PostScript format using the PdfViewer class in C#. This functionality enhances your printing workflow by enabling direct file output to a PS printer, making it easier to manage and utilize PDF files in various printing environments",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf to postscript",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "pdf to postscript, PDF to PostScript conversion, PdfViewer class, printing PDF documents, convert PDF files, C# PDF printing, print job status, PrinterJobName property, Aspose.PDF library, PS printer installation",
+    "wordcount": "1224",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-to-postscript-conversion/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class."
 }
 </script>

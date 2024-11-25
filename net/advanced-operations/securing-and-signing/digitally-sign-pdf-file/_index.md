@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "How to digitally sign PDF",
-    "alternativeHeadline": "Wirking with digitally sign PDF",
+    "headline": "Add digital signature or digitally sign PDF in C#",
+    "alternativeHeadline": "Add Digital Signatures to PDFs in C#",
+    "abstract": "Aspose.PDF for .NET introduces powerful capabilities for digitally signing PDF documents using C# or VB.NET, enhancing document integrity and security. Users can implement various signature types, including non-detached and detached signatures with support for PKCS7 and ECDSA, allowing for customizable signing processes tailored to specific cryptographic standards. This feature not only verifies the authenticity of the documents but also enables timestamping and certification, ensuring trusted document handling",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, digitally sign pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "digital signature, digitally sign PDF, C#, PDF signing, PKCS12 certificate, verify PDF signature, ECDSA signing, timestamp server, custom hash signing, Aspose.PDF for .NET",
+    "wordcount": "2020",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/digitally-sign-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET."
 }
 </script>

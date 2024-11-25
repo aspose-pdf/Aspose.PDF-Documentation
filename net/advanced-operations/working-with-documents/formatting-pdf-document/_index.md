@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Formatting PDF Document using C#",
-    "alternativeHeadline": "How to format PDF Document in .NET",
+    "headline": "Formatting Document using C#",
+    "alternativeHeadline": "Enhance PDF Formatting with Aspose.PDF for .NET",
+    "abstract": "Discover the powerful new feature of Aspose.PDF for .NET that allows users to create and format PDF documents seamlessly. With comprehensive control over document properties such as window display settings, font embedding options, and customizable zoom factors, developers can enhance user experience and maintain document integrity across different platforms. Optimize your PDF manipulation tasks with this robust functionality that significantly improves the efficiency of your .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, format pdf document",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Formatting PDF Document, Aspose.PDF for .NET, PDF document properties, embed fonts, font substitution, set zoom factor, document window properties, PDF manipulation library, PDF document generation, C# PDF formatting",
+    "wordcount": "2526",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/formatting-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks."
 }
 </script>
