@@ -90,13 +90,13 @@ The following code snippet shows how to search a document for all its images.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "SearchAndGetImages.pdf");
+Document document = new Document(dataDir +  "SearchAndGetImages.pdf");
 
 // Create ImagePlacementAbsorber object to perform image placement search
 ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
 
 // Accept the absorber for all the pages
-doc.Pages.Accept(abs);
+document.Pages.Accept(abs);
 
 // Loop through all ImagePlacements, get image and ImagePlacement Properties
 foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
@@ -118,7 +118,7 @@ To get an image from an individual page, use the following code:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-doc.Pages[1].Accept(abs);
+document.Pages[1].Accept(abs);
 ```
 
 <script type="application/ld+json">

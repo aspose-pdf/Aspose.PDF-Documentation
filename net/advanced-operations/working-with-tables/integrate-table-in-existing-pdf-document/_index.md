@@ -117,8 +117,8 @@ dr[1] = "Mary Miller";
 dr[2] = "Female";
 dt.Rows.Add(dr);
 // Create Document instance
-Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 // Initializes a new instance of the Table
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 // Set column widths of the table
@@ -130,10 +130,10 @@ table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .
 table.ImportDataTable(dt, true, 0, 1, 3, 3);
 
 // Add table object to first page of input document
-doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "DataIntegrated_out.pdf";
+document.Pages[1].Paragraphs.Add(table);
+
 // Save updated document containing table object
-doc.Save(dataDir);
+document.Save(dataDir + "DataIntegrated_out.pdf");
 ```
 
 ## How to determine if table will break in the current page
@@ -148,7 +148,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 // Instantiate an object PDF class
 Document pdf = new Document();
 // Add the section to PDF document sections collection
-Aspose.Pdf.Page page = pdf.Pages.Add();
+Page page = pdf.Pages.Add();
 // Instantiate a table object
 Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
 table1.Margin.Top = 300;
@@ -199,10 +199,8 @@ if ((PageHeight - TotalObjectsHeight) <= 10)
     Console.WriteLine("Page Height - Objects Height < 10, so table will break");
 }
 
-
-dataDir = dataDir + "DetermineTableBreak_out.pdf";
 // Save the pdf document
-pdf.Save(dataDir);
+pdf.Save(dataDir + "DetermineTableBreak_out.pdf");
 ```
 
 ## Add Repeating Column in Table
@@ -216,8 +214,8 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 string outFile = dataDir + "AddRepeatingColumn_out.pdf";
 // Create a new document
-Document doc = new Document();
-Aspose.Pdf.Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 // Instantiate an outer table that takes up the entire page
 Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();
@@ -275,7 +273,7 @@ for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
     row1.Cells.Add("col " + RowCounter.ToString() + ", 17");
 }
 
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 ## Integrate Table with the Entity Framework source

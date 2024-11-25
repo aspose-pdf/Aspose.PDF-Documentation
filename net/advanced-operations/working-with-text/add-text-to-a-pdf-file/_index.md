@@ -97,10 +97,10 @@ The following code snippet shows you how to add text in an existing PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages[1];
+Page pdfPage = (Page)document.Pages[1];
 
 // Create text fragment
 TextFragment textFragment = new TextFragment("main text");
@@ -118,10 +118,8 @@ TextBuilder textBuilder = new TextBuilder(pdfPage);
 // Append the text fragment to the PDF page
 textBuilder.AppendText(textFragment);
 
-dataDir = dataDir + "AddText_out.pdf";
-
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "AddText_out.pdf");
 ```
 
 ## Loading Font from Stream
@@ -135,9 +133,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string fontFile = "";
 
 // Load input PDF file
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Create text builder object for first page of document
-TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
+TextBuilder textBuilder = new TextBuilder(document.Pages[1]);
 // Create text fragment with sample string
 TextFragment textFragment = new TextFragment("Hello world");
 
@@ -154,10 +152,8 @@ if (fontFile != "")
         textBuilder.AppendText(textFragment);
     }
 
-    dataDir = dataDir + "LoadingFontFromStream_out.pdf";
-
-    // Save resulting PDF document.
-    doc.Save(dataDir);
+    // Save resulting PDF document
+    document.Save(dataDir + "LoadingFontFromStream_out.pdf");
 }
 ```
 
@@ -170,9 +166,9 @@ The following code snippet shows you how to add text in PDF document using [Text
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Open document
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of Document object
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 TextBuilder builder = new TextBuilder(page);
 // Create text paragraph
 TextParagraph paragraph = new TextParagraph();
@@ -191,10 +187,8 @@ paragraph.AppendLine(fragment1);
 // Add paragraph
 builder.AppendParagraph(paragraph);
 
-dataDir = dataDir + "AddTextUsingTextParagraph_out.pdf";
-
 // Save resulting PDF document.
-doc.Save(dataDir);
+document.Save(dataDir + "AddTextUsingTextParagraph_out.pdf");
 ```
 
 ## Add Hyperlink to TextSegment
@@ -206,9 +200,9 @@ A PDF page may comprise of one or more TextFragment objects, where each TextFrag
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF file
-Page page1 = doc.Pages.Add();
+Page page1 = document.Pages.Add();
 // Create TextFragment instance
 TextFragment tf = new TextFragment("Sample Text Fragment");
 // Set horizontal alignment for TextFragment
@@ -234,10 +228,8 @@ tf.Segments.Add(segment);
 // Add TextFragment to paragraphs collection of page object
 page1.Paragraphs.Add(tf);
 
-dataDir = dataDir + "AddHyperlinkToTextSegment_out.pdf";
-
 // Save resulting PDF document.
-doc.Save(dataDir);
+document.Save(dataDir + "AddHyperlinkToTextSegment_out.pdf");
 ```
 
 ## Use OTF Font
@@ -249,9 +241,9 @@ Aspose.PDF for .NET offers the feature to use Custom/TrueType fonts while creati
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create new document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF file
-Aspose.Pdf.Page page = pdfDocument.Pages.Add();
+Page page = document.Pages.Add();
 // Create TextFragment instnace with sample text
 TextFragment fragment = new TextFragment("Sample Text in OTF font");
 // Find font inside system font directory
@@ -264,10 +256,8 @@ fragment.TextState.Font.IsEmbedded = true;
 // Add TextFragment to paragraphs collection of Page instance
 page.Paragraphs.Add(fragment);
 
-dataDir = dataDir + "OTFFont_out.pdf";
-
 // Save resulting PDF document.
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "OTFFont_out.pdf");
 ```
 
 ## Add HTML String using DOM
@@ -282,9 +272,9 @@ The [HtmlFragment](https://reference.aspose.com/pdf/net/aspose.pdf/htmlfragment)
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Add a page to pages collection of PDF file
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Instantiate HtmlFragment with HTML contnets
 HtmlFragment title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
 // Set bottom margin information
@@ -294,9 +284,8 @@ title.Margin.Top = 200;
 // Add HTML Fragment to paragraphs collection of page
 page.Paragraphs.Add(title);
 
-dataDir = dataDir + "AddHTMLUsingDOM_out.pdf";
 // Save PDF file
-doc.Save(dataDir);
+document.Save(dataDir + "AddHTMLUsingDOM_out.pdf");
 ```
 
 Following code snippet demonstrate steps how to add HTML ordered lists into the document:
@@ -308,15 +297,15 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // The path to the output document. 
 string outFile = dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf";
 // Instantiate Document object 
-Document doc = new Document();
+Document document = new Document();
 // Instantiate HtmlFragment object with corresponding HTML fragment 
 HtmlFragment t = new HtmlFragment("`<body style='line-height: 100px;'><ul><li>First</li><li>Second</li><li>Third</li><li>Fourth</li><li>Fifth</li></ul>Text after the list.<br/>Next line<br/>Last line</body>`");
 // Add Page in Pages Collection 
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Add HtmlFragment inside page 
 page.Paragraphs.Add(t);
 // Save resultant PDF file 
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 You can also set HTML string formatting using TextState object as following:
@@ -335,9 +324,9 @@ In case if you set some text attributes values via HTML markup and then provide 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Add a page to pages collection of PDF file
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Instantiate HtmlFragment with HTML contnets
 HtmlFragment title = new HtmlFragment("<p style='font-family: Verdana'><b><i>Table contains text</i></b></p>");
 //Font-family from 'Verdana' will be reset to 'Arial'
@@ -350,9 +339,7 @@ title.Margin.Top = 400;
 // Add HTML Fragment to paragraphs collection of page
 page.Paragraphs.Add(title);
 // Save PDF file
-dataDir = dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf";
-// Save PDF file
-doc.Save(dataDir);
+document.Save(dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf");
 ```
 
 ## FootNotes and EndNotes (DOM)
@@ -386,9 +373,9 @@ The following example demonstrates how to add Footnotes to the bottom of the Pdf
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create GraphInfo object
 Aspose.Pdf.GraphInfo graph = new Aspose.Pdf.GraphInfo();
 // Set line width as 2
@@ -408,16 +395,14 @@ text.FootNote = new Note("foot note for test text 1");
 // Add TextFragment to paragraphs collection of first page of document
 page.Paragraphs.Add(text);
 // Create second TextFragment
-text = new TextFragment("Aspose.Pdf for .NET");
+text = new TextFragment("Aspose.PDF for .NET");
 // Set FootNote for second text fragment
 text.FootNote = new Note("foot note for test text 2");
 // Add second text fragment to paragraphs collection of PDF file
 page.Paragraphs.Add(text);
 
-dataDir = dataDir + "CustomLineStyleForFootNote_out.pdf";
-
 // Save resulting PDF document.
-doc.Save(dataDir);
+document.Save(dataDir + "CustomLineStyleForFootNote_out.pdf");
 ```
 
 We can set Footnote Label (note identifier) formatting using TextState object as following:
@@ -440,9 +425,9 @@ By default, the FootNote number is incremental starting from 1. However, we may 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create Document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create GraphInfo object
 Aspose.Pdf.GraphInfo graph = new Aspose.Pdf.GraphInfo();
 // Set line width as 2
@@ -464,7 +449,8 @@ text.FootNote.Text = " Aspose(2015)";
 // Add TextFragment to paragraphs collection of first page of document
 page.Paragraphs.Add(text);
 
-dataDir = dataDir + "CustomizeFootNoteLabel_out.pdf";
+// Save resulting PDF document
+document.Save(dataDir + "CustomizeFootNoteLabel_out.pdf");
 ```
 
 ## Adding Image and Table to Footnote
@@ -494,8 +480,8 @@ Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 table.Rows.Add().Cells.Add().Paragraphs.Add(new TextFragment("Row 1 Cell 1"));
 text.FootNote.Paragraphs.Add(table);
 
-// Save resulting PDF document.
-document.Save(dataDir + "AddImageAndTable_out.pdf";);
+// Save resulting PDF document
+document.Save(dataDir + "AddImageAndTable_out.pdf");
 ```
 
 ## How to Create EndNotes
@@ -509,9 +495,9 @@ The following example demonstrates how to add an Endnote in the Pdf page.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Create Document instance
-Document doc = new Document();
+Document document = new Document();
 // Add page to pages collection of PDF
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create TextFragment instance
 TextFragment text = new TextFragment("Hello World");
 // Set FootNote value for TextFragment
@@ -522,7 +508,7 @@ text.EndNote.Text = " Aspose(2015)";
 page.Paragraphs.Add(text);
 
 // Save resulting PDF document.
-doc.Save(dataDir + "CreateEndNotes_out.pdf");
+document.Save(dataDir + "CreateEndNotes_out.pdf");
 ```
 
 ## Text and Image as InLine Paragraph
@@ -608,11 +594,11 @@ document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf");
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of Document
-Page page = pdfDocument.Pages.Add();
+Page page = document.Pages.Add();
 // Create TextBuilder instance
-TextBuilder builder = new TextBuilder(pdfDocument.Pages[1]);
+TextBuilder builder = new TextBuilder(document.Pages[1]);
 // Instantiate TextParagraph instance
 TextParagraph paragraph = new TextParagraph();
 // Create TextState instance to specify font name and size
@@ -626,9 +612,8 @@ paragraph.Position = new Position(100, 550);
 // Append TextParagraph to TextBuilder instance
 builder.AppendParagraph(paragraph);
 
-dataDir = dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf";
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf");
 ```
 
 ### Using TextStamp
@@ -639,9 +624,9 @@ pdfDocument.Save(dataDir);
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document pdfDocument = new Document();
+Document document = new Document();
 // Add page to pages collection of Document
-Page page = pdfDocument.Pages.Add();
+Page page = document.Pages.Add();
 // Instantiate TextStamp instance with sample text
 TextStamp stamp = new TextStamp("This is text stamp with character spacing");
 // Specify font name for Stamp object
@@ -656,9 +641,8 @@ stamp.XIndent = 100;
 stamp.YIndent = 500;
 // Add textual stamp to page instance
 stamp.Put(page);
-dataDir = dataDir + "CharacterSpacingUsingTextStamp_out.pdf";
-// Save resulting PDF document.
-pdfDocument.Save(dataDir);
+// Save resulting PDF document
+document.Save(dataDir + "CharacterSpacingUsingTextStamp_out.pdf");
 ```
 
 ## Create Multi-Column PDF document
@@ -755,8 +739,8 @@ Here is an example of how to set custom TAB stops.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document _pdfdocument = new Document();
-Page page = _pdfdocument.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 Aspose.Pdf.Text.TabStops ts = new Aspose.Pdf.Text.TabStops();
 Aspose.Pdf.Text.TabStop ts1 = ts.Add(100);
@@ -784,8 +768,7 @@ page.Paragraphs.Add(text0);
 page.Paragraphs.Add(text1);
 page.Paragraphs.Add(text2);
 
-dataDir = dataDir + "CustomTabStops_out.pdf";
-_pdfdocument.Save(dataDir);
+document.Save(dataDir + "CustomTabStops_out.pdf");
 ```
 
 ## How to Add Transparent Text in PDF
@@ -798,9 +781,9 @@ A PDF file contains Image, Text, Graph, attachment, Annotations objects and whil
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Create Document instance
-Document doc = new Document();
+Document document = new Document();
 // Create page to pages collection of PDF file
-Aspose.Pdf.Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 
 // Create Graph object
 Aspose.Pdf.Drawing.Graph canvas = new Aspose.Pdf.Drawing.Graph(100, 400);
@@ -824,8 +807,7 @@ text.TextState.ForegroundColor = color;
 // Add text to paragraphs collection of page instance
 page.Paragraphs.Add(text);
 
-dataDir = dataDir + "AddTransparentText_out.pdf";
-doc.Save(dataDir);
+document.Save(dataDir + "AddTransparentText_out.pdf");
 ```
 
 ## Specify LineSpacing for Fonts
@@ -839,13 +821,13 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 string fontFile = dataDir + "HPSimplified.TTF";
 // Load input PDF file
-Document doc = new Document();
+Document document = new Document();
 //Create TextFormattingOptions with LineSpacingMode.FullSize
 TextFormattingOptions formattingOptions = new TextFormattingOptions();
 formattingOptions.LineSpacing = TextFormattingOptions.LineSpacingMode.FullSize;
 
 // Create text builder object for first page of document
-//TextBuilder textBuilder = new TextBuilder(doc.Pages[1]);
+//TextBuilder textBuilder = new TextBuilder(document.Pages[1]);
 // Create text fragment with sample string
 TextFragment textFragment = new TextFragment("Hello world");
 
@@ -862,13 +844,12 @@ if (fontFile != "")
         textFragment.TextState.FormattingOptions = formattingOptions;
         // Add the text to TextBuilder so that it can be placed over the PDF file
         //textBuilder.AppendText(textFragment);
-        var page = doc.Pages.Add();
+        var page = document.Pages.Add();
         page.Paragraphs.Add(textFragment);
     }
 
-    dataDir = dataDir + "SpecifyLineSpacing_out.pdf";
     // Save resulting PDF document
-    doc.Save(dataDir);
+    document.Save(dataDir + "SpecifyLineSpacing_out.pdf");
 }
 ```
 

@@ -24,7 +24,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 public static void ExtractText()
 {
-   Document document = new Document(_dataDir + "ExtractStampText.pdf");
+   Document document = new Document(dataDir + "ExtractStampText.pdf");
    Annotation item = document.Pages[1].Annotations[1];
    if (item is StampAnnotation annot) 
    {

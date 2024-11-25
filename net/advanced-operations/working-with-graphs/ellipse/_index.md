@@ -112,7 +112,7 @@ public static void Ellipse()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingEllipse_out.pdf");
+    document.Save(dataDir + "DrawingEllipse_out.pdf");
 }
 ```
 
@@ -150,7 +150,7 @@ public static void EllipseFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingEllipse_out.pdf");
+    document.Save(dataDir + "DrawingEllipse_out.pdf");
 }
 ```
 
@@ -193,7 +193,7 @@ public static void EllipseWithText()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingEllipseText_out.pdf");
+    document.Save(dataDir + "DrawingEllipseText_out.pdf");
 }
  ```
 

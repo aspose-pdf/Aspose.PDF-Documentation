@@ -23,11 +23,11 @@ The following code snippet shows you how to import annotations to an XFDF file:
 ```csharp
 public static void ImportAnnotation()
 {
-    var sources = new string[] { _dataDir + "sample_cats_dogs.pdf" };
+    var sources = new string[] { dataDir + "sample_cats_dogs.pdf" };
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(_dataDir + "sample.pdf");
+    annotationEditor.BindPdf(dataDir + "sample.pdf");
     annotationEditor.ImportAnnotations(sources);
-    annotationEditor.Save(_dataDir + "sample_demo.pdf");
+    annotationEditor.Save(dataDir + "sample_demo.pdf");
 }
 ```
 
@@ -37,15 +37,19 @@ The next code snippet describes how import/export annotations to an XFDF file:
 public static void ImportExportXFDF01()
 {
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
-    System.IO.FileStream xmlOutputStream = System.IO.File.OpenWrite(_dataDir + "sample.xfdf");
-    annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
-    xmlOutputStream.Close();
-    var document = new Document();
-    document.Pages.Add();
-    annotationEditor.BindPdf(document);
-    annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(_dataDir + "sample.xfdf"));
-    annotationEditor.Save(_dataDir + "ImportedAnnotation.pdf");
+    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+    using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "sample.xfdf"))
+    {
+        annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
+    }
+
+    using (var document = new Document())
+    {
+        document.Pages.Add();
+        annotationEditor.BindPdf(document);
+        annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "sample.xfdf"));
+        annotationEditor.Save(dataDir + "ImportedAnnotation.pdf");
+    }
 }
 ```
 
@@ -55,16 +59,19 @@ This way, the annotations of the specified types will only be imported or export
 public static void ImportExportXFDF02()
 {
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
-    System.IO.FileStream xmlOutputStream = System.IO.File.OpenWrite(_dataDir + "sample.xfdf");
-    var annotationTypes = new[] { AnnotationType.FreeText, AnnotationType.Text };
-    annotationEditor.ExportAnnotationsXfdf(xmlOutputStream, 2, 2, annotationTypes);
-    xmlOutputStream.Close();
+    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+    using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "sample.xfdf"))
+    {
+        var annotationTypes = new[] { AnnotationType.FreeText, AnnotationType.Text };
+        annotationEditor.ExportAnnotationsXfdf(xmlOutputStream, 2, 2, annotationTypes);
+    }
 
-    var document = new Document(_dataDir + "sample.pdf");
-    document.Pages.Add();
-    annotationEditor.BindPdf(document);
-    annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(_dataDir + "sample.xfdf"));
-    annotationEditor.Save(_dataDir + "ImportedAnnotation.pdf");
+    using (var document = new Document(dataDir + "sample.pdf"))
+    {
+        document.Pages.Add();
+        annotationEditor.BindPdf(document);
+        annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "sample.xfdf"));
+        annotationEditor.Save(dataDir + "ImportedAnnotation.pdf");
+    }
 }
 ```

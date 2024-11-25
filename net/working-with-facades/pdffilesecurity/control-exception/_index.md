@@ -14,7 +14,7 @@ draft: false
 public static void ControlExceptionPDFFile()
 {
     PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
+    fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
     fileSecurity.AllowExceptions = false;
     // Decrypt PDF document
     if (!fileSecurity.DecryptFile("IncorrectPassword"))
@@ -22,7 +22,7 @@ public static void ControlExceptionPDFFile()
         Console.WriteLine("Something wrong...");
         Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
     }
-    fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+    fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
 }
 ```
 
@@ -33,7 +33,7 @@ If you set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.fac
 public static void ControlExceptionPDFFile2()
 {
     PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample_encrypted.pdf");
+    fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
     fileSecurity.AllowExceptions = true;
     try
     {
@@ -45,6 +45,6 @@ public static void ControlExceptionPDFFile2()
         Console.WriteLine("Something wrong...");
         Console.WriteLine($"Exception: {ex.Message}");
     }
-    fileSecurity.Save(_dataDir + "sample_decrtypted.pdf");
+    fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
 }
 ```

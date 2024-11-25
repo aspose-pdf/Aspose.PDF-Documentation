@@ -95,16 +95,16 @@ The following code snippet shows you how to extract links from a PDF file.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 // Open document
-Document document = new Document(dataDir+ "ExtractLinks.pdf");
+Document document = new Document(dataDir +  "ExtractLinks.pdf");
 // Extract actions
 Page page = document.Pages[1];
 AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
 page.Accept(selector);
 IList<Annotation> list = selector.Selected;
 Annotation annotation = (Annotation)list[0];
-dataDir = dataDir + "ExtractLinks_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "ExtractLinks_out.pdf");
 ```
 
 <script type="application/ld+json">

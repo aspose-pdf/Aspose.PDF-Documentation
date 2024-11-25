@@ -17,10 +17,10 @@ Follow the next code snippet for resolve your task:
 ```csharp
 public static class ExamplePdfConverter
 {
-    private static readonly string _dataDir = @"C:\Samples\Facades\PdfConverter\";
+    private static readonly string dataDir = @"C:\Samples\Facades\PdfConverter\";
     public static void MergeImages01()
     {
-        var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+        var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                                 .OrderBy(f => f)
                                 .Select(f => File.OpenRead(f))
                                 .Cast<Stream>()
@@ -29,7 +29,7 @@ public static class ExamplePdfConverter
         using (Stream inputStream =
                 PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
         {
-            FileStream outputStream = new FileStream(_dataDir+"merged_images.jpg", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
             inputStream.CopyTo(outputStream);
         }
     }
@@ -41,7 +41,7 @@ The second example works the same as the previous one, but the merged images wil
 ```csharp
 public static void MergeImages02()
 {
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
@@ -50,7 +50,7 @@ public static void MergeImages02()
     using (Stream inputStream =
             PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
     {
-        FileStream outputStream = new FileStream(_dataDir + "merged_images.jpg", FileMode.Create);
+        FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
         inputStream.CopyTo(outputStream);
     }
 }
@@ -61,7 +61,7 @@ In the third example, we will merge the pictures by centering them. Two horizont
 ```csharp
 public static void MergeImages03()
 {
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
@@ -70,7 +70,7 @@ public static void MergeImages03()
     using (Stream inputStream =
             PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
     {
-        FileStream outputStream = new FileStream(_dataDir + "merged_images.jpg", FileMode.Create);
+        FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
         inputStream.CopyTo(outputStream);
     }
 }
@@ -81,7 +81,7 @@ Also, Aspose.PDF for Java present you the opportunity to combine pictures and sa
 ```csharp
 public static void MergeImages04()
 {
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
@@ -90,7 +90,7 @@ public static void MergeImages04()
     using (Stream inputStream =
             PdfConverter.MergeImagesAsTiff(fileStreams))
     {
-        FileStream outputStream = new FileStream(_dataDir + "merged_images.tiff", FileMode.Create);
+        FileStream outputStream = new FileStream(dataDir + "merged_images.tiff", FileMode.Create);
         inputStream.CopyTo(outputStream);
     }
 }
@@ -101,7 +101,7 @@ To save the merged images as one image on PDF page, we place them in the imageSt
 ```csharp
    public static void MergeImages05()
         {
-            var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+            var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                                     .OrderBy(f => f)
                                     .Select(f => File.OpenRead(f))
                                     .Cast<Stream>()
@@ -115,7 +115,7 @@ To save the merged images as one image on PDF page, we place them in the imageSt
         var document = new Document();
         var pages = document.Pages.Add();
         pages.AddImage(outputStream, new Rectangle(10,120,400,720));
-        document.Save(_dataDir + "merged_images.pdf");
+        document.Save(dataDir + "merged_images.pdf");
     }
 }
 ```

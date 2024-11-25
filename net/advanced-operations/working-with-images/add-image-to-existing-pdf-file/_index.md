@@ -98,7 +98,7 @@ The following code snippet shows how to add the image in a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddImage.pdf");
+Document document = new Document(dataDir +  "AddImage.pdf");
 
 // Set coordinates
 int lowerLeftX = 100;
@@ -107,26 +107,25 @@ int upperRightX = 200;
 int upperRightY = 200;
 
 // Get the page where image needs to be added
-Page page = pdfDocument.Pages[1];
+Page page = document.Pages[1];
 // Load image into stream
 FileStream imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open);
 // Add image to Images collection of Page Resources
 page.Resources.Images.Add(imageStream);
 // Using GSave operator: this operator saves current graphics state
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+page.Contents.Add(new Operators.GSave());
 // Create Rectangle and Matrix objects
 Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
 Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
 // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+page.Contents.Add(new Operators.ConcatenateMatrix(matrix));
 XImage ximage = page.Resources.Images[page.Resources.Images.Count];
 // Using Do operator: this operator draws image
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+page.Contents.Add(new Operators.Do(ximage.Name));
 // Using GRestore operator: this operator restores graphics state
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-dataDir = dataDir + "AddImage_out.pdf";
+page.Contents.Add(new Operators.GRestore());
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddImage_out.pdf");
 ```
 
 {{% alert color="primary" %}}
@@ -143,13 +142,13 @@ By default, the JPEG quality is set to 100%. To apply better compression and qua
 There is also an alternative, easier way to add a Image to a PDF file. You can use [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of the [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. The following code snippet shows you how to add image in an existing PDF file.
 
 ```csharp
-string imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-string outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");
+string imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
+string outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 Document document = new Document();
 Page page = document.Pages.Add();
 page.SetPageSize(PageSize.A3.Height, PageSize.A3.Width);
 page = document.Pages.Add();
-Aspose.Pdf.Facades.PdfFileMend mender = new Aspose.Pdf.Facades.PdfFileMend(document);
+PdfFileMend mender = new PdfFileMend(document);
 mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
 document.Save(outputPdfFileName);
 ```
@@ -157,8 +156,8 @@ document.Save(outputPdfFileName);
 Sometimes, it is necessary to crop an image before inserting it into a PDF. Use can use `AddImage()` method to support adding cropped images:
 
 ```csharp
-var imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-var outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");;
+var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
+var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 
 using (Document document = new Document())
 {
@@ -192,7 +191,7 @@ If we do not know the dimensions of the image there is every chance of getting a
 ```csharp
 public static void AddingImageAndPreserveAspectRatioIntoPDF()
 {
-    var bitmap = System.Drawing.Image.FromFile(_dataDir + "3410492.jpg");
+    var bitmap = System.Drawing.Image.FromFile(dataDir + "3410492.jpg");
 
     int width;
     int height;
@@ -200,15 +199,15 @@ public static void AddingImageAndPreserveAspectRatioIntoPDF()
     width = bitmap.Width;
     height = bitmap.Height;
 
-    var document = new Aspose.Pdf.Document();
+    var document = new Document();
 
     var page = document.Pages.Add();
 
     int scaledWidth = 400;
     int scaledHeight = scaledWidth * height / width;
 
-    page.AddImage(_dataDir + "3410492.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
-    document.Save(_dataDir + "sample_image.pdf");
+    page.AddImage(dataDir + "3410492.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
+    document.Save(dataDir + "sample_image.pdf");
 }
 ```
 
@@ -266,11 +265,11 @@ It is possible to control the quality of an image that's being added to a PDF fi
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 
 ```csharp
-Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document(inFile);
-foreach (Aspose.PDF.Page page in pdfDocument.Pages)
+Document document = new Document(inFile);
+foreach (Page page in document.Pages)
 {
     int idx = 1;
-    foreach (Aspose.PDF.XImage image in page.Resources.Images)
+    foreach (XImage image in page.Resources.Images)
     {
         using (MemoryStream imageStream = new MemoryStream())
         {
@@ -281,9 +280,9 @@ foreach (Aspose.PDF.Page page in pdfDocument.Pages)
     }
 }
 
-// pdfDocument.OptimizeResources();
+// document.OptimizeResources();
 
-pdfDocument.Save(outFile);
+document.Save(outFile);
 ```
 
 ## Support applying a Clipping Mask to Images
@@ -295,12 +294,14 @@ The code snippet loads a PDF, opens two image files, and applies those images as
 Stencil mask can be added by 'XImage.AddStencilMask(Stream maskStream)' method:
 
 ```cs
-Document doc = new Document("input.pdf");
+Document document = new Document("input.pdf");
 using (var fs1 = new FileStream("mask1.jpg", FileMode.Open))
-using (var fs2 = new FileStream("mask2.png", FileMode.Open))
 {
-    doc.Pages[1].Resources.Images[1].AddStencilMask(fs1);
-    doc.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+    using (var fs2 = new FileStream("mask2.png", FileMode.Open))
+    {
+        document.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+        document.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+    }
 }
 ```
 

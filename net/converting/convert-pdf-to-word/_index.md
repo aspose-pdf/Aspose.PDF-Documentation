@@ -58,9 +58,9 @@ The following C# code snippet shows converting a PDF file into DOC format.
 public static void ConvertPDFtoWord()
 {
     // Open the source PDF document
-    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
     // Save the file into MS document format
-    pdfDocument.Save(_dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
+    document.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
 }
 ```
 
@@ -77,9 +77,9 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 ```csharp
 public static void ConvertPDFtoWordDocAdvanced()
 {
-    var pdfFile = Path.Combine(_dataDir, "PDF-to-DOC.pdf");
-    var docFile = Path.Combine(_dataDir, "PDF-to-DOC.doc");
-    Document pdfDocument = new Document(pdfFile);
+    var pdfFile = dataDir + "PDF-to-DOC.pdf";
+    var docFile = dataDir + "PDF-to-DOC.doc";
+    Document document = new Document(pdfFile);
     DocSaveOptions saveOptions = new DocSaveOptions
     {
         Format = DocSaveOptions.DocFormat.Doc,
@@ -90,7 +90,7 @@ public static void ConvertPDFtoWordDocAdvanced()
         // Enable the value to recognize bullets during the conversion process
         RecognizeBullets = true
     };
-    pdfDocument.Save(docFile, saveOptions);
+    document.Save(docFile, saveOptions);
 }
 ```
 
@@ -117,9 +117,9 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 public static void ConvertPDFtoWord_DOCX_Format()
 {
     // Open the source PDF document
-    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
     // Save the resultant DOC file
-    pdfDocument.Save(_dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+    document.Save(dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
 }
 ```
 
@@ -133,7 +133,7 @@ There is also recognition of numbered lists and many other minor things.
 public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {    
     // Open the source PDF document
-    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
 
     // Instantiate DocSaveOptions object
     DocSaveOptions saveOptions = new DocSaveOptions
@@ -144,7 +144,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
         Mode = DocSaveOptions.RecognitionMode.EnhancedFlow
     };
     // Save document in docx format
-    pdfDocument.Save("ConvertToDOCX_out.docx", saveOptions);
+    document.Save("ConvertToDOCX_out.docx", saveOptions);
 }
 ```
 

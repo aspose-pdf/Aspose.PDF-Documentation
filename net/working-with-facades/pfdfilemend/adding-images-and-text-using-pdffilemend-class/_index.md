@@ -29,16 +29,16 @@ In the following example, we add image to the page using imageStream:
 ```csharp
 public static void AddImage01()
 {
-    Document document = new Document(_dataDir + "sample.pdf");
+    Document document = new Document(dataDir + "sample.pdf");
     PdfFileMend mender = new PdfFileMend();
 
     // Load image into stream
-    var imageStream = System.IO.File.OpenRead(_dataDir + "logo.png");
+    var imageStream = System.IO.File.OpenRead(dataDir + "logo.png");
     mender.BindPdf(document);
     mender.AddImage(imageStream, 1, 10, 650, 110, 750);
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend04_output.pdf");
+    mender.Save(dataDir + "PdfFileMend04_output.pdf");
 }
 ```
 
@@ -49,10 +49,10 @@ With the help of [CompositingParameters](https://reference.aspose.com/pdf/net/as
 ```csharp
 public static void AddImage02()
 {
-    Document document = new Document(_dataDir + "sample_color.pdf");
+    Document document = new Document(dataDir + "sample_color.pdf");
     PdfFileMend mender = new PdfFileMend();
     // Load image into stream
-    var imageStream = System.IO.File.OpenRead(_dataDir + "logo.png");
+    var imageStream = System.IO.File.OpenRead(dataDir + "logo.png");
     mender.BindPdf(document);
     int pageNum = 1;
     int lowerLeftX = 10;
@@ -63,7 +63,7 @@ public static void AddImage02()
     mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend05_output.pdf");
+    mender.Save(dataDir + "PdfFileMend05_output.pdf");
 }
 ```
 
@@ -74,10 +74,10 @@ There are several ways to store an image in PDF file. We will demonstrate one of
 ```csharp
 public static void AddImage03()
 {
-    Document document = new Document(_dataDir + "sample_color.pdf");
+    Document document = new Document(dataDir + "sample_color.pdf");
     PdfFileMend mender = new PdfFileMend();
     // Load image into stream
-    var imageStream = System.IO.File.OpenRead(_dataDir + "logo.png");
+    var imageStream = System.IO.File.OpenRead(dataDir + "logo.png");
     mender.BindPdf(document);
     int pageNum = 1;
     int lowerLeftX = 10;
@@ -88,17 +88,17 @@ public static void AddImage03()
     mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend06_output.pdf");
+    mender.Save(dataDir + "PdfFileMend06_output.pdf");
 }
 ```
 
 ```csharp
 public static void AddImage04()
 {
-    Document document = new Document(_dataDir + "sample_color.pdf");
+    Document document = new Document(dataDir + "sample_color.pdf");
     PdfFileMend mender = new PdfFileMend();
     // Load image into stream
-    var imageStream = System.IO.File.OpenRead(_dataDir + "logo.png");
+    var imageStream = System.IO.File.OpenRead(dataDir + "logo.png");
     mender.BindPdf(document);
     int pageNum = 1;
     int lowerLeftX = 10;
@@ -109,7 +109,7 @@ public static void AddImage04()
     mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend07_output.pdf");
+    mender.Save(dataDir + "PdfFileMend07_output.pdf");
 }
 ```
 
@@ -121,13 +121,13 @@ We can add text in several ways. Consider the first. We take the [FormattedText]
 public static void AddText01()
 {
     PdfFileMend mender = new PdfFileMend();
-    mender.BindPdf(_dataDir + "sample.pdf");
+    mender.BindPdf(dataDir + "sample.pdf");
     FormattedText message = new FormattedText("Welcome to Aspose!");
 
     mender.AddText(message, 1, 10, 750);
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend01_output.pdf");
+    mender.Save(dataDir + "PdfFileMend01_output.pdf");
 }
 ```
 
@@ -141,14 +141,14 @@ The second way to add [FormattedText](https://reference.aspose.com/pdf/net/aspos
 public static void AddText02()
 {
     PdfFileMend mender = new PdfFileMend();
-    mender.BindPdf(_dataDir + "sample.pdf");
+    mender.BindPdf(dataDir + "sample.pdf");
     FormattedText message = new FormattedText("Welcome to Aspose! Welcome to Aspose!");
 
     mender.AddText(message, 1, 10, 700, 55, 810);
     mender.WrapMode = WordWrapMode.ByWords;
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend02_output.pdf");
+    mender.Save(dataDir + "PdfFileMend02_output.pdf");
 }
 ```
 
@@ -157,7 +157,7 @@ The third example provides the ability to Add Text to specified pages. In our ex
 ```csharp
 public static void AddText03()
 {
-    Document document = new Document(_dataDir + "sample.pdf");
+    Document document = new Document(dataDir + "sample.pdf");
     document.Pages.Add();
     document.Pages.Add();
     document.Pages.Add();
@@ -168,6 +168,6 @@ public static void AddText03()
     mender.AddText(message, pageNums, 10, 750, 310, 760);
 
     // save the output file
-    mender.Save(_dataDir + "PdfFileMend03_output.pdf");
+    mender.Save(dataDir + "PdfFileMend03_output.pdf");
 }
 ```

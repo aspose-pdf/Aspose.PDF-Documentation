@@ -41,7 +41,7 @@ String ^lateBinding(String ^file)
     // create ComHelper
     IDispatch* comHelperPtr;
 
-    wcscpy_s(str, L"Aspose.PDF.ComHelper");
+    wcscpy_s(str, L"Aspose.Pdf.ComHelper");
     CLSIDFromProgID(str, &pclsid);
 
     HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&comHelperPtr);
@@ -53,7 +53,7 @@ String ^lateBinding(String ^file)
     {
         // set license
         IDispatch* licPtr;
-        wcscpy_s(str, L"Aspose.PDF.License");
+        wcscpy_s(str, L"Aspose.Pdf.License");
         CLSIDFromProgID(str, &pclsid);
 
         HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&licPtr);
@@ -63,7 +63,7 @@ String ^lateBinding(String ^file)
         hr = licPtr->GetIDsOfNames(IID_NULL, &setLicense, 1, GetUserDefaultLCID(), &dispid);
         arg.vt = VT_BSTR;
 
-        BSTR lic = SysAllocString(L"C:\\Temp\\Aspose.PDF.lic");
+        BSTR lic = SysAllocString(L"C:\\Temp\\Aspose.Pdf.lic");
 
         arg.bstrVal = lic;
 

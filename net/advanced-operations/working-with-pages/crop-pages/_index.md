@@ -95,7 +95,7 @@ The snippet below show how to crop the page:
 ```csharp
 public static void CropPagesPDF()
 {
-    var document = new Aspose.Pdf.Document("crop_page.pdf");
+    var document = new Document("crop_page.pdf");
     Console.WriteLine(document.Pages[1].CropBox);
     Console.WriteLine(document.Pages[1].TrimBox);
     Console.WriteLine(document.Pages[1].ArtBox);

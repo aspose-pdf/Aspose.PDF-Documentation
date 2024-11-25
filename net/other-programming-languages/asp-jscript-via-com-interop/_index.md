@@ -22,11 +22,11 @@ Example:
         <h3>creation of sample PDF document while using Aspose.PDF for .NET with classical ASP and JScript</h3>
 <%
 // set license
-var lic = Server.CreateObject("Aspose.PDF.License");
+var lic = Server.CreateObject("Aspose.Pdf.License");
 lic.SetLicense("D:\\ASPOSE\\Aspose.Total.lic");
 
 // Instantiate Pdf instance by calling its empty constructor
-var pdf = Server.CreateObject("Aspose.PDF.Document");
+var pdf = Server.CreateObject("Aspose.Pdf.Document");
 
 // Create a new Page in the PDF object
 var pdfpage = pdf.Pages.Add();

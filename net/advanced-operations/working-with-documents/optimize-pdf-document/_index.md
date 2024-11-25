@@ -114,13 +114,13 @@ The following code snippet shows how to optimize a PDF document for the web.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 
 // Optimize for web
-pdfDocument.Optimize();
+document.Optimize();
 
 // Save output document
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ## Reduce Size PDF
@@ -138,12 +138,12 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "ShrinkDocument.pdf");
+Document document = new Document(dataDir + "ShrinkDocument.pdf");
 // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
-pdfDocument.OptimizeResources();
+document.OptimizeResources();
 
 // Save updated document
-pdfDocument.Save(dataDir + "ShrinkDocument_out.pdf");
+document.Save(dataDir + "ShrinkDocument_out.pdf");
 ```
 
 ## Optimization Strategy Management
@@ -161,7 +161,7 @@ We have two ways to work with images: reduce image quality and/or change their r
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Open document
-Document pdfDocument = new Document(dataDir + "Shrinkimage.pdf");
+Document document = new Document(dataDir + "Shrinkimage.pdf");
 // Initialize OptimizationOptions
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
 // Set CompressImages option
@@ -169,10 +169,10 @@ optimizeOptions.ImageCompressionOptions.CompressImages = true;
 // Set ImageQuality option
 optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
+document.OptimizeResources(optimizeOptions);
 
 // Save updated document
-pdfDocument.Save(dataDir + "Shrinkimage_out.pdf");
+document.Save(dataDir + "Shrinkimage_out.pdf");
 ```
 
 Another way is to resize the images with a lower resolution. In this case, we should set ResizeImages to true and MaxResolution to the appropriate value.
@@ -184,7 +184,7 @@ var time = DateTime.Now.Ticks;
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Open document
-Document pdfDocument = new Document(dataDir + "ResizeImage.pdf");
+Document document = new Document(dataDir + "ResizeImage.pdf");
 // Initialize OptimizationOptions
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
 // Set CompressImages option
@@ -196,10 +196,9 @@ optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 // Set MaxResolution option
 optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "ResizeImages_out.pdf";
+document.OptimizeResources(optimizeOptions);
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "ResizeImages_out.pdf");
 ```
 
 Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
@@ -211,7 +210,7 @@ var time = DateTime.Now.Ticks;
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 // Open document
-Document pdfDocument = new Document(dataDir + "Shrinkimage.pdf");
+Document document = new Document(dataDir + "Shrinkimage.pdf");
 // Initialize OptimizationOptions
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
 // Set CompressImages option
@@ -221,10 +220,10 @@ optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 // Set Imagae Compression Version to fast
 optimizeOptions.ImageCompressionOptions.Version = Pdf.Optimization.ImageCompressionVersion.Fast;
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "FastShrinkImages_out.pdf";
+document.OptimizeResources(optimizeOptions);
+
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "FastShrinkImages_out.pdf");
 Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
 ```
 
@@ -237,17 +236,17 @@ A PDF document sometimes contains the PDF objects that are not referenced from a
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 // Set RemoveUsedObject option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     RemoveUnusedObjects = true
 };
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
+document.OptimizeResources(optimizeOptions);
 
 // Save updated document
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ### Removing Unused Streams
@@ -259,17 +258,17 @@ Sometimes the document contains the unused resource streams. These streams are n
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 // Set RemoveUsedStreams option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     RemoveUnusedStreams = true
 };
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
+document.OptimizeResources(optimizeOptions);
 
 // Save updated document
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 ### Linking Duplicate Streams
@@ -281,17 +280,17 @@ Some documents can contain several identical resource streams (like images, for 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 // Set LinkDuplcateStreams option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
     LinkDuplcateStreams = true
 };
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
+document.OptimizeResources(optimizeOptions);
+
 // Save updated document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
 
 Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
@@ -301,7 +300,7 @@ Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pd
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 // Set AllowReusePageContent  option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
@@ -309,9 +308,9 @@ var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 };
 Console.WriteLine("Start");
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
+document.OptimizeResources(optimizeOptions);
 // Save updated document
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 Console.WriteLine("Finished");
 var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
 var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
@@ -327,7 +326,7 @@ If the document uses embedded fonts, it means that all font data is stored in th
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Open document
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+Document document = new Document(dataDir + "OptimizeDocument.pdf");
 // Set UnembedFonts  option
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
@@ -335,9 +334,9 @@ var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 };
 Console.WriteLine("Start");
 // Optimize PDF document using OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
+document.OptimizeResources(optimizeOptions);
 // Save updated document
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
+document.Save(dataDir + "OptimizeDocument_out.pdf");
 Console.WriteLine("Finished");
 var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
 var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
@@ -407,7 +406,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Load source PDF file
 using (Document document = new Document(dataDir + "input.pdf"))
 {
-    Aspose.Pdf.RgbToDeviceGrayConversionStrategy strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
+    RgbToDeviceGrayConversionStrategy strategy = new RgbToDeviceGrayConversionStrategy();
     for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
     {
         // Get instance of particular page inside PDF

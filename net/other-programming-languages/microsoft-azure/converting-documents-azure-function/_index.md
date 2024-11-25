@@ -175,7 +175,7 @@ public class PdfConverter
         sourceStream.Position = 0;
 
         // Load PDF document
-        var pdfDocument = new Document(sourceStream);
+        var document = new Document(sourceStream);
         
         // Create output stream
         using var outputStream = new MemoryStream();
@@ -186,28 +186,28 @@ public class PdfConverter
         {
             case "docx":
                 targetBlobName += ".docx";
-                pdfDocument.Save(outputStream, SaveFormat.DocX);
+                document.Save(outputStream, SaveFormat.DocX);
                 break;
 
             case "html":
                 targetBlobName += ".html";
-                pdfDocument.Save(outputStream, SaveFormat.Html);
+                document.Save(outputStream, SaveFormat.Html);
                 break;
 
             case "xlsx":
                 targetBlobName += ".xlsx";
-                pdfDocument.Save(outputStream, SaveFormat.Excel);
+                document.Save(outputStream, SaveFormat.Excel);
                 break;
 
             case "pptx":
                 targetBlobName += ".pptx";
-                pdfDocument.Save(outputStream, SaveFormat.Pptx);
+                document.Save(outputStream, SaveFormat.Pptx);
                 break;
 
             case "jpeg":
             case "jpg":
                 targetBlobName += ".jpg";
-                foreach (var page in pdfDocument.Pages)
+                foreach (var page in document.Pages)
                 {
                     var jpegDevice = new JpegDevice(new Resolution(300));
                     jpegDevice.Process(page, outputStream);

@@ -16,7 +16,7 @@ The following code snippet shows you how to set PDF file information.
 ```csharp
 public static void SetPdfInfo()
 {
-    PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf")
+    PdfFileInfo fileInfo = new PdfFileInfo(dataDir + "sample.pdf")
     {
         // Set PDF information
         Author = "Aspose",
@@ -25,7 +25,7 @@ public static void SetPdfInfo()
         Creator = "Aspose"
     };
     // Save updated file
-    fileInfo.SaveNewInfo(_dataDir + "SetFileInfo_out.pdf");
+    fileInfo.SaveNewInfo(dataDir + "SetFileInfo_out.pdf");
 }
 ```
 
@@ -37,12 +37,12 @@ public static void SetPdfInfo()
 public static void SetMetaInfo()
 {
     // Create instance of PdfFileInfo object
-    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(_dataDir + "sample.pdf");
+    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf");
 
     // Set new customer attribute as meta info
     fInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
 
     // Save updated file
-    fInfo.SaveNewInfo(_dataDir + "SetMetaInfo_out.pdf");
+    fInfo.SaveNewInfo(dataDir + "SetMetaInfo_out.pdf");
 }
 ```

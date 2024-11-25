@@ -25,12 +25,12 @@ echo "<h2>Calling Aspose.PDF for .NET from PHP using COM Interoperatibility</h2>
 echo "<h3>PDF to Excel Conversion</h3>";
 
 //set license
-$lic = new COM("Aspose.PDF.License");
+$lic = new COM("Aspose.Pdf.License");
 $lic->SetLicense("C:/temp/Aspose.Total.lic");
 
 //Load Pdf Document
 $input="C:/temp/HelloWorld.pdf";
-$helper = new COM("Aspose.PDF.ComHelper");
+$helper = new COM("Aspose.Pdf.ComHelper");
 
 $pdf = $helper->OpenFile($input);
 

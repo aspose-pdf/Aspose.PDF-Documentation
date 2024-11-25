@@ -82,7 +82,7 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-using (Document pdfDocument = new Document(dataDir + "input.pdf"))
+using (Document document = new Document(dataDir + "input.pdf"))
 {
     using (FileStream imageStream = new FileStream(dataDir + "SetDefaultFontName.png", FileMode.Create))
     {
@@ -91,7 +91,7 @@ using (Document pdfDocument = new Document(dataDir + "input.pdf"))
         RenderingOptions ro = new RenderingOptions();
         ro.DefaultFontName = "Arial";
         pngDevice.RenderingOptions = ro;
-        pngDevice.Process(pdfDocument.Pages[1], imageStream);
+        pngDevice.Process(document.Pages[1], imageStream);
     }
 }
 ```

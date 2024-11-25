@@ -92,7 +92,7 @@ private void Print_OnClick(object sender, RoutedEventArgs e)
     };
     openFileDialog.ShowDialog();
 
-    Aspose.Pdf.Document document = new Document(openFileDialog.FileName);
+    Document document = new Document(openFileDialog.FileName);
     var memoryStream = new MemoryStream();
     document.Save(memoryStream, SaveFormat.Xps);
     var package = Package.Open(memoryStream);

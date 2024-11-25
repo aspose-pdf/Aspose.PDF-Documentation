@@ -23,13 +23,13 @@ When you do not provide the format type (options), then the document is saved in
 ```csharp
 public static void SaveDocument()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    var originalFileName = dataDir + "SimpleResume.pdf";
+    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
+    var document = new Document(originalFileName);
     // make some manipation, i.g add new empty page
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(modifiedFileName);
+    document.Pages.Add();
+    document.Save(modifiedFileName);
 }
 ```
 
@@ -40,13 +40,13 @@ You can also save the created or manipulated PDF document to stream by using ove
 ```csharp
 public static void SaveDocumentStream()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    var originalFileName = dataDir + "SimpleResume.pdf";
+    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
+    var document = new Document(originalFileName);
     // make some manipation, i.g add new empty page
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(System.IO.File.OpenWrite(modifiedFileName));
+    document.Pages.Add();
+    document.Save(System.IO.File.OpenWrite(modifiedFileName));
 }
 ```
 
@@ -55,11 +55,11 @@ public static void SaveDocumentStream()
 To save documents in Web applications, you can use the ways proposed above. In addition, the `Document` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
 
 ```csharp
-var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-var pdfDocument = new Aspose.Pdf.Document(originalFileName);
+var originalFileName = dataDir + "SimpleResume.pdf";
+var document = new Document(originalFileName);
 // make some manipulation, i.g add a new empty page
-pdfDocument.Pages.Add();
-pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
+document.Pages.Add();
+document.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
 
 For more detailed explanation please follow to [Showcase](/pdf/net/showcases/) section.
@@ -76,9 +76,9 @@ In both cases, the `Save` method is used to store the documents, while the docum
 ```csharp
 public static void SaveDocumentAsPDFx()
 {
-    var pdfDocument = new Aspose.Pdf.Document("..\\..\\..\\Samples\\SimpleResume.pdf");
-    pdfDocument.Pages.Add();
-    pdfDocument.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-    pdfDocument.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
+    var document = new Document("..\\..\\..\\Samples\\SimpleResume.pdf");
+    document.Pages.Add();
+    document.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
+    document.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
 }
 ```

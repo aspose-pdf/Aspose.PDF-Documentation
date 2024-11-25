@@ -35,13 +35,13 @@ Please try using the following code snippet to accomplish this requirement with 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Document pdfDocument = new Document(dataDir + "PDFToEPUB.pdf");
+Document document = new Document(dataDir + "PDFToEPUB.pdf");
 // Instantiate Epub Save options
 EpubSaveOptions options = new EpubSaveOptions();
 // Specify the layout for contents
 options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
 // Save the ePUB document
-pdfDocument.Save(dataDir + "PDFToEPUB_out.epub", options);
+document.Save(dataDir + "PDFToEPUB_out.epub", options);
 ```
 
 ## Convert PDF to LaTeX/TeX
@@ -67,7 +67,7 @@ The following code snippet shows the process of converting PDF files into the TE
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Create Document object
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf");
+Document document = new Document(dataDir + "PDFToTeX.pdf");
 
 // Instantiate LaTex save option          
 LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
@@ -79,7 +79,7 @@ string pathToOutputDirectory = dataDir;
 saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
 // Save PDF file into LaTex format           
-doc.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
 ```
 
 ## Convert PDF to Text
@@ -96,11 +96,11 @@ The following code snippet explains how to extract the texts from the all pages.
 public static void ConvertPDFDocToTXT()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "demo.pdf");
+    Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
-    ta.Visit(pdfDocument);
+    ta.Visit(document);
     // Save the extracted text in text file
-    File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
 }
 ```
 
@@ -121,16 +121,16 @@ The following code snippet explains how to extract the texts from the particular
 ```csharp
 public static void ConvertPDFPagestoTXT()
 {
-    Document pdfDocument = new Document(System.IO.Path.Combine(_dataDir, "demo.pdf"));
+    Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
     var pages = new [] {1, 3, 4};
     foreach (var page in pages)
     {
-        ta.Visit(pdfDocument.Pages[page]);
+        ta.Visit(document.Pages[page]);
     }
    
     // Save the extracted text in text file
-    File.WriteAllText(System.IO.Path.Combine(_dataDir, "input_Text_Extracted_out.txt"), ta.Text);
+    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", ta.Text);
 }
 ```
 
@@ -188,7 +188,7 @@ string inputPdfPath = "";
 string markdownOutputFilePath = "";
 
 // Create a new Document object using the specified input PDF path.
-using (Document doc = new Document(inputPdfPath))
+using (Document document = new Document(inputPdfPath))
 {
     // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
     MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
@@ -201,6 +201,6 @@ using (Document doc = new Document(inputPdfPath))
     saveOptions.ResourcesDirectoryName = "images";
 
     // Save the document in Markdown format to the specified output file path using the defined save options.    
-    doc.Save(markdownOutputFilePath, saveOptions);
+    document.Save(markdownOutputFilePath, saveOptions);
 }
 ```

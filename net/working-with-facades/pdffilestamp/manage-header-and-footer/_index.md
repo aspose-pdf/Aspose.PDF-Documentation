@@ -19,7 +19,7 @@ public static void AddHeader()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!",
@@ -32,7 +32,7 @@ public static void AddHeader()
     fileStamp.AddHeader(formattedText, 10);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddHeader_out.pdf");
+    fileStamp.Save(dataDir + "AddHeader_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -50,7 +50,7 @@ public static void AddFooter()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!",
@@ -63,7 +63,7 @@ public static void AddFooter()
     fileStamp.AddFooter(formattedText, 10);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddFooter_out.pdf");
+    fileStamp.Save(dataDir + "AddFooter_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -81,14 +81,14 @@ public static void AddImageHeader()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
-    using (var fs = new FileStream(_dataDir + "aspose-logo.png", FileMode.Open))
+    fileStamp.BindPdf(dataDir + "sample.pdf");
+    using (var fs = new FileStream(dataDir + "aspose-logo.png", FileMode.Open))
     {
         // Add Header
         fileStamp.AddHeader(fs, 10);
 
         // Save updated PDF file
-        fileStamp.Save(_dataDir + "AddImage-Header_out.pdf");
+        fileStamp.Save(dataDir + "AddImage-Header_out.pdf");
         // Close fileStamp
         fileStamp.Close();
     }
@@ -106,14 +106,14 @@ public static void AddImageFooter()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
-    using (var fs = new FileStream(_dataDir + "aspose-logo.png", FileMode.Open))
+    fileStamp.BindPdf(dataDir + "sample.pdf");
+    using (var fs = new FileStream(dataDir + "aspose-logo.png", FileMode.Open))
     {
         // Add footer
         fileStamp.AddFooter(fs, 10);
 
         // Save updated PDF file
-        fileStamp.Save(_dataDir + "AddImage-Footer_out.pdf");
+        fileStamp.Save(dataDir + "AddImage-Footer_out.pdf");
 
         // Close fileStamp
         fileStamp.Close();

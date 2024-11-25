@@ -107,7 +107,7 @@ class Program
         // Create print server and print queue.
         PrintQueue defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
-        Aspose.Pdf.Document document = new Document(pdfFileName);
+        Document document = new Document(pdfFileName);
         var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
         document.Save(xpsFileName,SaveFormat.Xps);
 
@@ -157,6 +157,7 @@ The [PrintScaling](https://reference.aspose.com/pdf/net/aspose.pdf/document/prin
 The page scaling option that shall be selected when a print dialog is displayed for this document. Valid values are None, which indicates no page scaling, and AppDefault, which indicates the conforming reader's default print scaling. If this entry has an unrecognized value, AppDefault should be used. Default value: AppDefault.
 
 ```cs
+const string dataDir = @"Samples\"; 
 public void PDFNET_111()
 {
     Object[] printScalingValues = { null, PrintScaling.None, PrintScaling.Default };
@@ -170,10 +171,13 @@ public void PDFNET_111()
         {
             document.PrintScaling = (PrintScaling)printScalingValue;
         }
-        String outputPdf = GetOutputPdf("PDFNET-111_" + i);
+        String outputPdf = dataDir + "PDFNET-111_" + i + ".pdf";
         document.Save(outputPdf);
         Document documentOutput = new Document(outputPdf);
-        Assert.AreEqual(printScalingExpected[i], documentOutput.PrintScaling);
+        if (printScalingExpected[i] == documentOutput.PrintScaling) 
+        {
+            Console.WriteLine("Print scaling matched");
+        }
     }
 }
 ```

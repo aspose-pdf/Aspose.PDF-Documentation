@@ -118,7 +118,7 @@ public static void Circle()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCircle1_out.pdf");
+    document.Save(dataDir + "DrawingCircle1_out.pdf");
 }
 ```
 
@@ -157,7 +157,7 @@ public static void CircleFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCircle2_out.pdf");
+    document.Save(dataDir + "DrawingCircle2_out.pdf");
 }
 ```
 

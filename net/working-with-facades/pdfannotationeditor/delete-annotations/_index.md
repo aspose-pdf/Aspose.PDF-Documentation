@@ -19,11 +19,11 @@ public static void DeleteAllAnnotations()
 {
     // Open document
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
     // Delete all annoations
     annotationEditor.DeleteAnnotations();
     // Save updated PDF
-    annotationEditor.Save(_dataDir + "DeleteAllAnnotation.pdf");
+    annotationEditor.Save(dataDir + "DeleteAllAnnotation.pdf");
 }   
 ```
 
@@ -35,7 +35,7 @@ You can use [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pd
 public static void DeleteAnnotation()
 {
     // Open document
-    var document = new Document(_dataDir + "sample_cats_dogs.pdf");
+    var document = new Document(dataDir + "sample_cats_dogs.pdf");
     int index;
     for (index = 1; index <= document.Pages[1].Annotations.Count; index++)
     {
@@ -49,6 +49,6 @@ public static void DeleteAnnotation()
     annotationEditor.DeleteAnnotation(document.Pages[1].Annotations[index].Name);
 
     // Save updated PDF
-    annotationEditor.Save(_dataDir + "DeleteAnnotation.pdf");
+    annotationEditor.Save(dataDir + "DeleteAnnotation.pdf");
 }
 ```

@@ -14,11 +14,11 @@ Aspose.PDF for .NET provides great capabilities for create/manipulating form fie
 public static void ImportData()
 {
     var editor = new Form();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-    editor.ImportFdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.fdf"));
-    editor.ImportXml(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xml"));
-    editor.ImportXfdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xfdf"));
-    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
+    editor.ImportFdf(System.IO.File.OpenRead(dataDir + "Sample-Form-01-upd.fdf"));
+    editor.ImportXml(System.IO.File.OpenRead(dataDir + "Sample-Form-01-upd.xml"));
+    editor.ImportXfdf(System.IO.File.OpenRead(dataDir + "Sample-Form-01-upd.xfdf"));
+    editor.Save(dataDir + "Sample-Form-01-updated.pdf");
 }
 ```
 
@@ -28,9 +28,9 @@ public static void ImportData()
 public static void ExportData()
 {
     var editor = new Form();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-    editor.ExportFdf(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.fdf"));
-    editor.ExportXml(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.xml"));
-    editor.ExportXfdf(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.xfdf"));
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
+    editor.ExportFdf(System.IO.File.OpenWrite(dataDir + "Sample-Form-01-mod.fdf"));
+    editor.ExportXml(System.IO.File.OpenWrite(dataDir + "Sample-Form-01-mod.xml"));
+    editor.ExportXfdf(System.IO.File.OpenWrite(dataDir + "Sample-Form-01-mod.xfdf"));
 }
 ```

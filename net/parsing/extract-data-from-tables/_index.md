@@ -31,11 +31,11 @@ The following example shows table extraction from the all pages:
 public static void Extract_Table()
 {
     // Load source PDF document
-    var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);                       
-    foreach (var page in pdfDocument.Pages)
+    var filePath = "<... enter path to pdf file here ...>";
+    Document document = new Document(filePath);                       
+    foreach (var page in document.Pages)
     {
-        Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
+        TableAbsorber absorber = new TableAbsorber();
         absorber.Visit(page);
         foreach (AbsorbedTable table in absorber.TableList)
         {
@@ -73,15 +73,15 @@ The following example show how to extract table marked with Square Annotation:
 public static void Extract_Marked_Table()
 {
     // Load source PDF document
-    var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);  
-    var page = pdfDocument.Pages[1];
+    var filePath = "<... enter path to pdf file here ...>";
+    Document document = new Document(filePath);  
+    var page = document.Pages[1];
     var squareAnnotation =
         page.Annotations.FirstOrDefault(ann => ann.AnnotationType == Annotations.AnnotationType.Square)
         as Annotations.SquareAnnotation;
 
 
-    Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
+    TableAbsorber absorber = new TableAbsorber();
     absorber.Visit(page);
 
     foreach (AbsorbedTable table in absorber.TableList)
@@ -97,7 +97,6 @@ public static void Extract_Marked_Table()
             {
                 foreach (AbsorbedCell cell in row.CellList)
                 {
-
                     foreach (TextFragment fragment in cell.TextFragments)
                     {
                         var sb = new StringBuilder();
@@ -129,12 +128,12 @@ public static void Extract_Table_Save_CSV()
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
     // Load PDF document
-    Document pdfDocument = new Document(_dataDir + "input.pdf");
+    Document document = new Document(dataDir + "input.pdf");
 
     // Instantiate ExcelSave Option object
     ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 
     // Save the output in XLS format
-    pdfDocument.Save("PDFToXLS_out.xlsx", excelSave);
+    document.Save("PDFToXLS_out.xlsx", excelSave);
 }
 ```

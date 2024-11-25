@@ -115,7 +115,7 @@ The following code snippet shows how to get each watermark on the first page of 
 ```csharp
 public static void AddWatermarks()
 {
-    Document document = new Document(_dataDir + "text.pdf");
+    Document document = new Document(dataDir + "text.pdf");
     WatermarkArtifact artifact = new WatermarkArtifact();
     artifact.SetTextAndState(
         "WATERMARK",
@@ -131,7 +131,7 @@ public static void AddWatermarks()
     artifact.Opacity = 0.5;
     artifact.IsBackground = true;
     document.Pages[1].Artifacts.Add(artifact);
-    document.Save(_dataDir + "watermark.pdf");
+    document.Save(dataDir + "watermark.pdf");
 }
 ```
 

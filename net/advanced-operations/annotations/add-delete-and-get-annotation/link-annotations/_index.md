@@ -87,7 +87,7 @@ A [Link Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/
 Several additional steps were performed to create the annotation. We used 2 TextFragmentAbsorbers to find fragments to demo. The first one is for the link annotation text, and the second one indicates some places in the document.
 
 ```cs
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Link Annotation Demo.pdf"));
+Document document = new Document(dataDir + "Link Annotation Demo.pdf");
 
 var page = document.Pages[1];
 
@@ -216,11 +216,11 @@ Please try using the following code snippet to Get LinkAnnotation from PDF docum
 class ExampleLinkAnnotations
 {
     // The path to the documents directory.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    private const string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     public static void GetLinkAnnotations()
     {
         // Load the PDF file
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
+        Document document = new Document(dataDir + "SimpleResume_mod.pdf");
         var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
         foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
         {
@@ -246,11 +246,11 @@ The following code snippet shows how to Delete Link Annotation from PDF file. Fo
 class ExampleLinkAnnotations
 {
     // The path to the documents directory.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    private const string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     public static void DeleteLinkAnnotations()
     {
         // Load the PDF file
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
+        Document document = new Document(dataDir + "SimpleResume_mod.pdf");
         // Find and delete all link annotation on the 1st page
         var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
 
@@ -259,7 +259,7 @@ class ExampleLinkAnnotations
             document.Pages[1].Annotations.Delete(la);
         }
         // Save document with removed annotation
-        document.Save(System.IO.Path.Combine(_dataDir, "SimpleResume_del.pdf"));
+        document.Save(dataDir + "SimpleResume_del.pdf");
     }
 }
 ```

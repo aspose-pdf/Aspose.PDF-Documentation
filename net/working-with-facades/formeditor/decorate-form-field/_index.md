@@ -17,7 +17,7 @@ The following code snippet shows you how to decorate a particular form field.
 public static void DecorateField()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
     var cityDecoration = new FormFieldFacade
     {
@@ -29,7 +29,7 @@ public static void DecorateField()
 
     editor.Facade = cityDecoration;
     editor.DecorateField("City");
-    editor.Save(_dataDir + "Sample-Form-02.pdf");
+    editor.Save(dataDir + "Sample-Form-02.pdf");
 }
 ```
 
@@ -42,7 +42,7 @@ public static void DecorateField()
 public static void DecorateField2()
 {
     var editor = new FormEditor();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
+    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
     var textFieldDecoration = new FormFieldFacade
     {
@@ -51,7 +51,7 @@ public static void DecorateField2()
 
     editor.Facade = textFieldDecoration;
     editor.DecorateField(FieldType.Text);
-    editor.Save(_dataDir + "Sample-Form-01-align-text.pdf");
+    editor.Save(dataDir + "Sample-Form-01-align-text.pdf");
 }
 ```
 

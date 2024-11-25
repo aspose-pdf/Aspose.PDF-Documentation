@@ -95,8 +95,8 @@ Next following code snippet show you how to convert EPUB files to PDF format wit
 public static void ConvertEPUBtoPDF()
 {
     EpubLoadOptions option = new EpubLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "WebAssembly.epub", option);
-    pdfDocument.Save(_dataDir + "epub_test.pdf");
+    Document document= new Document(dataDir + "WebAssembly.epub", option);
+    document.Save(dataDir + "epub_test.pdf");
 }
 ```
 
@@ -106,8 +106,8 @@ You can also set page size for conversion. To define new page size you `SizeF` o
 public static void ConvertEPUBtoPDFAdv()
 {
     EpubLoadOptions option = new EpubLoadOptions(new SizeF(1190, 1684));
-    Document pdfDocument= new Document(_dataDir + "WebAssembly.epub", option);
-    pdfDocument.Save(_dataDir + "epub_test.pdf");
+    Document document= new Document(dataDir + "WebAssembly.epub", option);
+    document.Save(dataDir + "epub_test.pdf");
 }
 ```
 
@@ -138,9 +138,9 @@ The following code snippet shows how to use this functionality with Aspose.PDF l
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Open Markdown document
-Document pdfDocument= new Document(dataDir + "sample.md", new MdLoadOptions());
+Document document= new Document(dataDir + "sample.md", new MdLoadOptions());
 // Save document in PDF format
-pdfDocument.Save(dataDir + "MarkdownToPDF.pdf");
+document.Save(dataDir + "MarkdownToPDF.pdf");
 ```
 
 ## Convert PCL to PDF
@@ -393,8 +393,8 @@ The following code snippet shows the process of converting a PCL file into PDF f
 public static void ConvertPCLtoPDF()
 {
     PclLoadOptions options = new PclLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
-    pdfDocument.Save(_dataDir + "pcl_test.pdf");
+    Document document= new Document(dataDir + "demo.pcl", options);
+    document.Save(dataDir + "pcl_test.pdf");
 }
 ```
 
@@ -404,13 +404,15 @@ You can also monitor the detection of errors during the conversion process. To d
 public static void ConvertPCLtoPDFAvdanced()
 {
     PclLoadOptions options = new PclLoadOptions { SupressErrors = true };
-    Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
+    Document document= new Document(dataDir + "demo.pcl", options);
     if (options.Exceptions!=null)
+    {
         foreach (var ex in options.Exceptions)
         {
             Console.WriteLine(ex.Message);
         }
-    pdfDocument.Save(_dataDir + "pcl_test.pdf");
+    }
+    document.Save(dataDir + "pcl_test.pdf");
 }
 ```
 
@@ -458,10 +460,10 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 TextReader tr = new StreamReader(dataDir + "log.txt");
 
 // Instantiate a Document object by calling its empty constructor
-Document pdfDocument= new Document();
+Document document= new Document();
 
 // Add a new page in Pages collection of Document
-Page page = pdfDocument.Pages.Add();
+Page page = document.Pages.Add();
 
 // Create an instance of TextFragmet and pass the text from reader object to its constructor as argument
 TextFragment text = new TextFragment(tr.ReadToEnd());
@@ -470,7 +472,7 @@ TextFragment text = new TextFragment(tr.ReadToEnd());
 page.Paragraphs.Add(text);
 
 // Save resultant PDF file
-pdfDocument.Save(dataDir + "TexttoPDF_out.pdf");
+document.Save(dataDir + "TexttoPDF_out.pdf");
 ```
 
 ### Convert pre-formatted text file to PDF
@@ -493,13 +495,13 @@ Following example shows how to convert pre-formatted text file (80x25) to PDF do
 public static void ConvertPreFormattedTextToPdf()
 {
     // Read the text file as array of string
-    var lines = System.IO.File.ReadAllLines(_dataDir + "rfc822.txt");
+    var lines = System.IO.File.ReadAllLines(dataDir + "rfc822.txt");
 
     // Instantiate a Document object by calling its empty constructor
-    Document pdfDocument= new Document();
+    Document document= new Document();
 
     // Add a new page in Pages collection of Document
-    Page page = pdfDocument.Pages.Add();
+    Page page = document.Pages.Add();
 
     // Set left and right margins for better presentation
     page.PageInfo.Margin.Left = 20;
@@ -513,7 +515,7 @@ public static void ConvertPreFormattedTextToPdf()
         // see https://en.wikipedia.org/wiki/Page_break
         if (line.StartsWith("\x0c"))
         {
-            page = pdfDocument.Pages.Add();
+            page = document.Pages.Add();
             page.PageInfo.Margin.Left = 20;
             page.PageInfo.Margin.Right = 10;
             page.PageInfo.DefaultTextState.Font = FontRepository.FindFont("Courier New");
@@ -532,7 +534,7 @@ public static void ConvertPreFormattedTextToPdf()
     }
 
     // Save resultant PDF file
-    pdfDocument.Save(_dataDir + "TexttoPDF_out.pdf");
+    document.Save(dataDir + "TexttoPDF_out.pdf");
 }
 ```
 
@@ -573,7 +575,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 Aspose.Pdf.LoadOptions options = new XpsLoadOptions();
 
 // Create document object
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options);
+Document document = new Document(dataDir + "XPSToPDF.xps", options);
 
 // Save the resultant PDF document
 document.Save(dataDir + "XPSToPDF_out.pdf");
@@ -598,13 +600,13 @@ Following code snippet can be used to convert a PostScript file into PDF format 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
-string _dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Create a new instance of PsLoadOptions
 PsLoadOptions options = new PsLoadOptions();
 // Open .ps document with created load options
-Document pdfDocument = new Document(_dataDir + "input.ps", options);
+Document document = new Document(dataDir + "input.ps", options);
 // Save document
-pdfDocument.Save(dataDir + "PSToPDF.pdf");
+document.Save(dataDir + "PSToPDF.pdf");
 ```
 
 Additionally, you can set a set of font folders that will be used during conversion:
@@ -616,8 +618,8 @@ public static void ConvertPostscriptToPDFAvdanced()
     {
         FontsFolders = new [] { @"c:\tmp\fonts1", @"c:\tmp\fonts2"}
     };
-    Document pdfDocument = new Document(_dataDir + "input.ps", options);
-    pdfDocument.Save(_dataDir + "ps_test.pdf");
+    Document document = new Document(dataDir + "input.ps", options);
+    document.Save(dataDir + "ps_test.pdf");
 }
 ```
 
@@ -650,8 +652,8 @@ public static void Convert_XSLFO_to_PDF()
     // Set error handling strategy
     options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
     // Create Document object
-    var pdfDocument = new Aspose.Pdf.Document(".\\samples\\employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Document(".\\samples\\employees.xml", options);
+    document.Save(dataDir + "data_xml.pdf");
 }
 ```
 
@@ -676,9 +678,9 @@ public static void ConvertTeXtoPDF()
     // Instantiate Latex Load option object
     TeXLoadOptions options = new TeXLoadOptions();
     // Create Document object
-    Aspose.Pdf.Document pdfDocument= new Aspose.Pdf.Document(_dataDir + "samplefile.tex", options);
+    Document document= new Document(dataDir + "samplefile.tex", options);
     // Save the output in PDF file
-    pdfDocument.Save(_dataDir + "TeXToPDF_out.pdf");
+    document.Save(dataDir + "TeXToPDF_out.pdf");
 }
 ```
 

@@ -89,15 +89,15 @@ public static void PrintToPostscriptFile()
     // The path to the documents directory.
     // string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    Aspose.Pdf.Facades.PdfViewer viewer = new Aspose.Pdf.Facades.PdfViewer();
-    viewer.BindPdf(_dataDir + "input.pdf");
+    PdfViewer viewer = new PdfViewer();
+    viewer.BindPdf(dataDir + "input.pdf");
     // Set PrinterSettings and PageSettings
     System.Drawing.Printing.PrinterSettings printerSettings = new System.Drawing.Printing.PrinterSettings();
     printerSettings.Copies = 1;
     // Set PS printer, one can find this driver in the list of preinstalled printer drivers in Windows
     printerSettings.PrinterName = "HP LaserJet 2300 Series PS";
     // Set output file name and PrintToFile attribute
-    printerSettings.PrintFileName = _dataDir + "PdfToPostScript_out.ps";
+    printerSettings.PrintFileName = dataDir + "PdfToPostScript_out.ps";
     printerSettings.PrintToFile = true;
     // Disable print page dialog
     viewer.PrintPageDialog = false;
@@ -122,7 +122,7 @@ public static void CheckingPrintJobStatus()
     PdfViewer viewer = new PdfViewer();
 
     // Bind source PDF file
-    viewer.BindPdf(_dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "input.pdf");
     viewer.AutoResize = true;
 
     // Hide printing dialog

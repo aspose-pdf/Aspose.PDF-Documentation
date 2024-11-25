@@ -86,11 +86,11 @@ The following code snippet shows you how to replace an image in a PDF file.
 
 ```csharp
 // Open document
-Document pdfDocument = new Document("input.pdf");
+Document document = new Document("input.pdf");
 // Replace a particular image
-pdfDocument.Pages[1].Resources.Images.Replace(1, new FileStream("lovely.jpg", FileMode.Open));
+document.Pages[1].Resources.Images.Replace(1, new FileStream("lovely.jpg", FileMode.Open));
 // Save updated PDF file
-pdfDocument.Save("output.pdf");
+document.Save("output.pdf");
 ```
 
 <script type="application/ld+json">

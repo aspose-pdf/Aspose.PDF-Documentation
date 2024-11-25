@@ -124,7 +124,7 @@ Follow the steps below:
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCurve1_out.pdf");
+    document.Save(dataDir + "DrawingCurve1_out.pdf");
 }
 ```
 
@@ -160,7 +160,7 @@ public static void CurveFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCurve2_out.pdf");
+    document.Save(dataDir + "DrawingCurve2_out.pdf");
 }
 ```
 

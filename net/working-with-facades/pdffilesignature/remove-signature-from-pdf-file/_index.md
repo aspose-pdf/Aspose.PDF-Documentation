@@ -22,7 +22,7 @@ public static void RemoveSignature()
     // Create PdfFileSignature object
     PdfFileSignature pdfSign = new PdfFileSignature();
     // Open PDF document
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
     // Get list of signature names
     var sigNames = pdfSign.GetSignNames();
     // Remove all the signatures from the PDF file
@@ -32,7 +32,7 @@ public static void RemoveSignature()
         pdfSign.RemoveSignature(sigNames[index]);
     }
     // Save updated PDF file
-    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```
 
@@ -47,12 +47,12 @@ public static void RemoveSignatureButKeepField()
     PdfFileSignature pdfSign = new PdfFileSignature();
 
     // Open PDF document
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
 
     pdfSign.RemoveSignature("Signature1", false);
 
     // Save updated PDF file
-    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```
 
@@ -65,7 +65,7 @@ public static void RemoveSignatureButKeepField2()
     PdfFileSignature pdfSign = new PdfFileSignature();
 
     // Open PDF document
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
 
     var sigNames = pdfSign.GetSignNames();
     foreach (var sigName in sigNames)
@@ -74,6 +74,6 @@ public static void RemoveSignatureButKeepField2()
     }
 
     // Save updated PDF file
-    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```

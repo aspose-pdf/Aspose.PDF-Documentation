@@ -95,10 +95,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
 // Instantiate Document Object
-Document doc = new Document();
+Document document = new Document();
 
 // Instantiate document Collection object
-doc.Collection = new Collection();
+document.Collection = new Collection();
 
 // Get Files to add to Portfolio
 FileSpecification excel = new FileSpecification(dataDir + "HelloWorld.xlsx");
@@ -111,12 +111,12 @@ word.Description = "Word File";
 image.Description = "Image File";
 
 // Add files to document collection
-doc.Collection.Add(excel);
-doc.Collection.Add(word);
-doc.Collection.Add(image);
+document.Collection.Add(excel);
+document.Collection.Add(word);
+document.Collection.Add(image);
 
 // Save Portfolio document
-doc.Save(dataDir + "CreatePDFPortfolio_out.pdf");
+document.Save(dataDir + "CreatePDFPortfolio_out.pdf");
 ```
 
 ## Extract files from PDF Portfolio
@@ -133,9 +133,9 @@ The following code snippet shows you the steps to extract files from PDF portfol
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
 // Load source PDF Portfolio
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
+Document document = new Document(dataDir + "PDFPortfolio.pdf");
 // Get collection of embedded files
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
+EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 // Iterate through individual file of Portfolio
 foreach (FileSpecification fileSpecification in embeddedFiles)
 {
@@ -144,10 +144,10 @@ foreach (FileSpecification fileSpecification in embeddedFiles)
     fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
     string filename = Path.GetFileName(fileSpecification.Name);
     // Save the extracted file to some location
-    FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    // Close the stream object
-    fileStream.Close();
+    using (FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create))
+    {
+        fileStream.Write(fileContent, 0, fileContent.Length);
+    }
 }
 ```
 
@@ -163,9 +163,9 @@ In order to delete/remove files from PDF portfolio, try using the following code
 string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
 // Load source PDF Portfolio
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-pdfDocument.Collection.Delete();
-pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
+Document document = new Document(dataDir + "PDFPortfolio.pdf");
+document.Collection.Delete();
+document.Save(dataDir + "No_PortFolio_out.pdf");
 ```
 
 <script type="application/ld+json">

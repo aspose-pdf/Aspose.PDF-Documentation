@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /net/extract-image-and-signature-information/
 description: You may extract images from the signature field and extract signature information using the SignatureField class with C#.
-lastmod: "2022-02-17"
+lastmod: "2024-11-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -89,15 +89,15 @@ In order to extract signature information, we have introduced the [ExtractImage]
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-string input = dataDir+ @"ExtractingImage.pdf";
-using (Document pdfDocument = new Document(input))
+string input = dataDir +  @"ExtractingImage.pdf";
+using (Document document = new Document(input))
 {
-    foreach (Field field in pdfDocument.Form)
+    foreach (Field field in document.Form)
     {
         SignatureField sf = field as SignatureField;
         if (sf != null)
         {
-            string outFile = dataDir+ @"output_out.jpg";
+            string outFile = dataDir +  @"output_out.jpg";
             using (Stream imageStream = sf.ExtractImage())
             {
                 if (imageStream != null)
@@ -129,9 +129,9 @@ To extract signature information, we have introduced the [ExtractCertificate](ht
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
 string input = dataDir + "ExtractSignatureInfo.pdf";
-using (Document pdfDocument = new Document(input))
+using (Document document = new Document(input))
 {
-    foreach (Field field in pdfDocument.Form)
+    foreach (Field field in document.Form)
     {
         SignatureField sf = field as SignatureField;
         if (sf != null)
@@ -152,6 +152,34 @@ using (Document pdfDocument = new Document(input))
         }
     }
 }
+```
+
+You can get information about document signature algorithms.
+
+```csharp
+using (Document document = new Document(inputFilePath))
+{
+    using (PdfFileSignature signature = new PdfFileSignature(document))
+    {
+        var sigNames = signature.GetSignNames();
+        List<SignatureAlgorithmInfo> signaturesInfoList =  signature.GetSignaturesInfo();
+        foreach (var sigInfo in signaturesInfoList)
+        {
+            Console.WriteLine(sigInfo.DigestHashAlgorithm);
+            Console.WriteLine(sigInfo.AlgorithmType);
+            Console.WriteLine(sigInfo.CryptographicStandard);
+            Console.WriteLine(sigInfo.SignatureName);
+        }
+    }
+}
+```
+
+Sample output for the example above:
+```
+Sha256
+Rsa
+Pkcs7
+Signature1
 ```
 
 <script type="application/ld+json">

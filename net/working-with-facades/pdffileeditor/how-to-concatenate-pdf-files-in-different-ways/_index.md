@@ -86,12 +86,17 @@ Similar to the above approach, this approach also allows joining two PDF files. 
 ```csharp
 private void button2_Click(object sender, System.EventArgs e)
 {
-    FileStream pdf1 = new FileStream(textBox1.Text,FileMode.Open);
-    FileStream pdf2 = new FileStream(textBox2.Text,FileMode.Open);
-    FileStream outputPDF = new FileStream(textBox4.Text,FileMode.Create);
-    PdfFileEditor pdfEditor = new PdfFileEditor();
-    pdfEditor.Concatenate(pdf1,pdf2,outputPDF);
-    outputPDF.Close();
+    using (FileStream pdf1 = new FileStream(textBox1.Text, FileMode.Open))
+    {
+        using (FileStream pdf2 = new FileStream(textBox2.Text, FileMode.Open))
+        {
+            using (FileStream outputPDF = new FileStream(textBox4.Text, FileMode.Create))
+            {
+                PdfFileEditor pdfEditor = new PdfFileEditor();
+                pdfEditor.Concatenate(pdf1, pdf2, outputPDF);
+            }
+        }
+    }
 }
 ```
 
@@ -106,13 +111,18 @@ If you want to join more than two PDF files then this approach would be your ult
 ```csharp
 private void button3_Click(object sender, System.EventArgs e)
 {
-    FileStream pdf1 = new FileStream(textBox1.Text,FileMode.Open);
-    FileStream pdf2 = new FileStream(textBox2.Text,FileMode.Open);
-    FileStream pdf3 = new FileStream(textBox3.Text,FileMode.Open);
-    Stream[] pdfStreams = new Stream[]{pdf1,pdf2,pdf3};
-    FileStream outputPDF = new FileStream(textBox4.Text,FileMode.Create);
-    PdfFileEditor pdfEditor = new PdfFileEditor();
-    pdfEditor.Concatenate(pdfStreams,outputPDF);
-    outputPDF.Close();
+    using (FileStream pdf1 = new FileStream(textBox1.Text, FileMode.Open))
+    {
+        using (FileStream pdf2 = new FileStream(textBox2.Text, FileMode.Open))
+        {
+            using (FileStream pdf3 = new FileStream(textBox3.Text, FileMode.Open))
+            {
+                Stream[] pdfStreams = new Stream[]{pdf1, pdf2, pdf3};
+                FileStream outputPDF = new FileStream(textBox4.Text, FileMode.Create);
+                PdfFileEditor pdfEditor = new PdfFileEditor();
+                pdfEditor.Concatenate(pdfStreams, outputPDF);
+            }
+        }
+    }
 }
 ```

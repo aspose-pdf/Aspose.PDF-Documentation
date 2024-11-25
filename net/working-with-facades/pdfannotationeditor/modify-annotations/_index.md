@@ -20,9 +20,9 @@ For example, in the following code, consider changing the author in our annotati
 public static void ModifyAnnotationsAuthor()
 {
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
     annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
-    annotationEditor.Save(_dataDir + "ModifyAnnotationsAuthor.pdf");
+    annotationEditor.Save(dataDir + "ModifyAnnotationsAuthor.pdf");
 }
 ```
 
@@ -31,7 +31,7 @@ The second method allows you to delete all the annotations of a specified type.
 ```csharp
 public static void ModifyAnnotations()
 {
-    var document = new Document(_dataDir + "sample_cats_dogs.pdf");
+    var document = new Document(dataDir + "sample_cats_dogs.pdf");
     PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
     annotationEditor.BindPdf(document);
 
@@ -48,7 +48,7 @@ public static void ModifyAnnotations()
     };
     // Modify annotations in the PDF file
     annotationEditor.ModifyAnnotations(1, 1, annotation);
-    annotationEditor.Save(_dataDir + "ModifyAnnotations.pdf");
+    annotationEditor.Save(dataDir + "ModifyAnnotations.pdf");
 }
 ```
 
