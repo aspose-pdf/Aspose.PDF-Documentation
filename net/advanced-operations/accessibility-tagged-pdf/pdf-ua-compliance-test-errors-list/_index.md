@@ -15,20 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF-UA Compliance Test - Errors List",
-    "alternativeHeadline": "PDF/UA compliance testing using the API",
+    "alternativeHeadline": "Comprehensive Error List for PDF-UA Compliance Testing",
+    "abstract": "Discover the new PDF-UA Compliance Test feature that streamlines error identification during PDF/UA compliance testing with the Aspose.PDF API. This functionality provides a comprehensive list of error messages categorized by type, enabling developers to efficiently troubleshoot and ensure accessibility compliance in their PDF documents. Enhance your development process with clear insights into common compliance errors, from general issues to specific graphics and text validations",
     "author": {
-        "name":"Anastasiia Holub",
+        "@type": "Person",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF-UA compliance, Aspose.PDF API, compliance testing errors, document generation, C# PDF handling, PDF/UA errors list, PDF validation messages, accessibility compliance, PDF error codes, structured document compliance",
+    "wordcount": "1372",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -70,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-ua-compliance-test-errors-list/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article shows a list of the errors that can arise during PDF/UA compliance testing using the Aspose.PDF API and C# or VB."
 }
 </script>

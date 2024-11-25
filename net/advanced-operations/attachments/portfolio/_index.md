@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Portfolio in PDF",
-    "alternativeHeadline": "Create Portfolio in PDF document",
+    "alternativeHeadline": "Create Dynamic PDF Portfolios from Multiple File Types",
+    "abstract": "Discover the innovative PDF Portfolio feature in Aspose.PDF, enabling users to effortlessly combine multiple file types including Microsoft Excel, Word documents, and images into a cohesive PDF. This functionality not only preserves the identity of each individual file but also simplifies the process of managing, extracting, and modifying components within the portfolio, ensuring a streamlined user experience for document generation and management",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf document generation in pdf",
-    "keywords": "pdf, c#, portfolio",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "genre": "pdf document generation",
+    "keywords": "PDF Portfolio, C# PDF creation, Aspose.PDF library, Document class, FileSpecification class, file extraction PDF, remove files PDF Portfolio, unified container PDF, embedded files collection, PDF manipulation .NET",
+    "wordcount": "575",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/portfolio/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "How to Create a PDF Portfolio with C#. You should use a Microsoft Excel File, a Word document, and an image file to create a PDF Portfolio."
 }
 </script>

@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract Tagged Content from PDF",
-    "alternativeHeadline": "How to tag image in PDF ",
+    "alternativeHeadline": "Extract Content from Tagged PDFs Effortlessly",
+    "abstract": "The new Extract Tagged Content from PDF feature in Aspose.PDF for .NET allows users to efficiently extract and manipulate tagged content from PDF documents using C#. This functionality enhances PDF accessibility and compliance by providing seamless access to the document structure, enabling developers to programmatically manage text, images, and metadata within tagged PDFs",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "tag, pdf, extract",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Extract, Tagged Content, PDF Document, Aspose.PDF, C#, Root Structure, Child Elements, Tagging Images, PDF/UA Compliance, StructureElement",
+    "wordcount": "872",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-tagged-content-from-tagged-pdfs/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2022-11-25",
     "description": "This article explains how to extract tagged content PDF document using Aspose.PDF for .NET"
 }
 </script>

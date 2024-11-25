@@ -10,6 +10,73 @@ sitemap:
     priority: 0.8
 lastmod: "2024-10-23"
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "PDF AI Copilot",
+    "alternativeHeadline": "Seamlessly Integrate AI with PDF Document Processing",
+    "abstract": "The PDF AI Copilot feature leverages advanced AI technology to enhance document processing through functionality such as document summarization, interactive chat capabilities with PDF content, and generating image descriptions from documents. This innovative API streamlines how users interact with and extract insights from PDF documents, making it an essential tool for enhancing productivity and user engagement",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "PDF AI Copilot, Aspose.PDF API, document summary, chat with documents, OpenAI Summary, OpenAI Chat, image descriptions, Llama Chat, AI document processing",
+    "wordcount": "1047",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/ai-copilot/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/ai-copilot/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
+
 {{% alert color="primary" %}}
 **Aspose.PDF AI Copilot API** designed to allows users to process PDF documents using LLMs from different providers. This [API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/) will help users in building chatbot applications and integrating PDF solutions with LLMs.
 {{% /alert %}}

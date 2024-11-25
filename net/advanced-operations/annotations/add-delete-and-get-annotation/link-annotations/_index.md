@@ -16,17 +16,18 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Using Link Annotation for PDF",
     "alternativeHeadline": "How to add Link Annotation in PDF",
+    "abstract": "Aspose.PDF for .NET introduces robust capabilities for managing link annotations within PDF documents, enabling users to seamlessly add, retrieve, and remove hyperlinks. This feature enhances document interactivity by allowing links to open specific pages, external files, or web URLs, all customizable with various styles and actions. Unlock new possibilities for PDF navigation and user engagement with this powerful annotation functionality",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
     "keywords": "pdf, c#, text annotation",
     "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF Doc Team",

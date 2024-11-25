@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF sticky Annotations using C#",
-    "alternativeHeadline": "How to add Sticky Annotations in PDF",
+    "alternativeHeadline": "Add Sticky Watermark Annotations to PDF with C#",
+    "abstract": "Introducing the new PDF Sticky Annotations feature in C#, which allows users to create and customize watermark annotations directly within PDF documents. This functionality supports setting specific text positions, controlling opacity, and efficiently reusing images, enhancing the overall document presentation while optimizing file sizes",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, sticky annotations, watermark annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF sticky annotations, C# sticky annotations, Watermark Annotation, Aspose.PDF.Drawing, PDF document generation, opacity property, XImageCollection, optimize PDF size",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sticky-annotations/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This topic about sticky annotations, as an example we shows the Watermark Annotation in the text."
 }
 </script>

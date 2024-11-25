@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF Highlights Annotation using C#",
-    "alternativeHeadline": "How to add Highlights Annotation in PDF",
+    "headline": "PDF Highlight Annotation using C#",
+    "alternativeHeadline": "PDF Annotations with Customizable Highlighting Options",
+    "abstract": "The new PDF Highlight Annotation feature using C# allows users to seamlessly add and customize text markup annotations in their PDF documents. This functionality includes options for highlights, underlines, strikeouts, and jagged underlines, all of which can be edited for color, opacity, and metadata, enhancing document interactivity and clarity",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, highlights annotation, text markup annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF Highlight Annotation, C#, text markup annotation, highlight settings, strikethrough settings, underline settings, add annotation, delete annotation, Aspose.PDF.Drawing, markup annotations",
+    "wordcount": "958",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/highlights-annotation/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document."
 }
 </script>

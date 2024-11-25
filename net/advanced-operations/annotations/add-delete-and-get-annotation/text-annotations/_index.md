@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Using Text Annotation for PDF",
-    "alternativeHeadline": "How to add Text Annotation in PDF",
+    "alternativeHeadline": "Enhance PDFs with Dynamic Text Annotations",
+    "abstract": "Aspose.PDF for .NET introduces advanced text annotation capabilities, allowing users to effortlessly add, retrieve, or remove text annotations within PDF documents. This feature enhances the PDF editing process by enabling precise placement and customization of annotations, thereby improving document interaction and usability",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, text annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Text Annotation, PDF document generation, Aspose.PDF for .NET, Add Annotation, Delete Annotation, Free Text Annotation, Popup Annotation, StrikeOutAnnotation, AnnotationCollection, Aspose.PDF library",
+    "wordcount": "2636",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-annotation/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF for .NET allows you to Add, Get, and Delete Text Annotation from your PDF document."
 }
 </script>

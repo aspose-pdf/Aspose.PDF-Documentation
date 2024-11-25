@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Table in Tagged PDFs",
-    "alternativeHeadline": "Manipulating tables in Tagged PDFs",
+    "alternativeHeadline": "Streamlined Table Creation in Tagged PDFs",
+    "abstract": "The new functionality in Aspose.PDF for .NET empowers users to seamlessly create and style tables within tagged PDF documents. This feature enhances document accessibility and compliance, allowing for the addition of table headers, bodies, and footers while maintaining PDF/UA compliance. With a variety of customizable properties, users can easily manipulate table styles, including borders, backgrounds, and alignments, to meet specific formatting requirements",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "table, pdf, style table element, create table",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "table, Tagged PDF, Aspose.PDF for .NET, CreateTableElement, TableElement, style table, table row, table cell, PDF/UA compliance, manipulate tables",
+    "wordcount": "2179",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-table-in-tagged-pdfs/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to works with table in Tagged PDF document with Aspose.PDF for .NET."
 }
 </script>

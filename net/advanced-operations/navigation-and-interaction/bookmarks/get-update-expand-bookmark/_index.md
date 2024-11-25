@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get, Update and Expand a Bookmark",
-    "alternativeHeadline": "How to get Bookmarks from PDF file",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks",
+    "abstract": "The new Get, Update and Expand a Bookmark feature enhances the Aspose.PDF for .NET library by providing users with the capability to retrieve, modify, and visually expand bookmarks within PDF documents. This functionality enables efficient navigation and organization of PDF content, making it easier to manage complex documents with hierarchical bookmark structures",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, get bookmarks",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "get bookmarks, update bookmarks, expand bookmarks, PDF bookmarks, Aspose.PDF for .NET, OutlineCollection, OutlineItemCollection, child bookmarks",
+    "wordcount": "1050",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/get-update-and-expand-bookmark/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article describes how to use bookmarks in a PDF file with our Aspose.PDF for .NET library."
 }
 </script>
