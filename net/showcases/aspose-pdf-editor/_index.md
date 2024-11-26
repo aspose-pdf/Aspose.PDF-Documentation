@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Aspose.PDF Editor",
     "alternativeHeadline": "HTML5 PDF Editor: Create, Edit, and Convert PDF Online",
-    "abstract": "The Aspose.PDF Editor is a robust open-source web-based PDF editing tool for .NET that enables users to create, edit, and convert PDF documents seamlessly within their web applications. With advanced functionalities such as merging files, filling form fields, and supporting multiple formats, it offers a simplified UI designed for efficient document management and enhanced user experience",
+    "abstract": "The Aspose.PDF for .NET Editor is a robust open-source web-based PDF editing tool for .NET that enables users to create, edit, and convert PDF documents seamlessly within their web applications. With advanced functionalities such as merging files, filling form fields, and supporting multiple formats, it offers a simplified UI designed for efficient document management and enhanced user experience",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",

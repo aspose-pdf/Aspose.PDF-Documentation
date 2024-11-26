@@ -10,7 +10,7 @@ url: /net/php-via-com-interop/
     "@type": "TechArticle",
     "headline": "PHP via COM Interop",
     "alternativeHeadline": "Seamlessly Integrate PHP with Aspose.PDF for .NET via COM",
-    "abstract": "Introducing the PHP via COM Interop feature, which allows seamless integration of Aspose.PDF for .NET within PHP applications. This functionality enables developers to create and manipulate PDF files using PHP, enhancing productivity by leveraging .NET\u2019s powerful capabilities directly from PHP scripts. Experience efficient PDF to Excel conversions and more with this innovative interoperability solution",
+    "abstract": "Introducing the PHP via COM Interop feature, which allows seamless integration of Aspose.PDF for .NET within PHP applications. This functionality enables developers to create and manipulate PDF files using PHP, enhancing productivity by leveraging .NET powerful capabilities directly from PHP scripts. Experience efficient PDF to Excel conversions and more with this innovative interoperability solution",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
