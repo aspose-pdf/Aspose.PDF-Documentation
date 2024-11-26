@@ -4,6 +4,71 @@ type: docs
 weight: 20
 url: /net/use-aspose-pdf-for-net-via-com-interop/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Aspose.PDF for .NET via COM Interop",
+    "alternativeHeadline": "Aspose.PDF for .NET Enables COM Interop Usage",
+    "abstract": "Aspose.PDF for .NET now supports seamless integration with various programming languages through COM Interop, allowing developers to utilize its powerful PDF manipulation capabilities outside the .NET framework. This feature enhances flexibility by transforming Aspose.PDF objects into COM objects, streamlining interactions with unmanaged code while maintaining high performance through early and late binding techniques",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1338",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/use-aspose-pdf-for-net-via-com-interop/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/use-aspose-pdf-for-net-via-com-interop/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 {{% alert color="primary" %}}
 

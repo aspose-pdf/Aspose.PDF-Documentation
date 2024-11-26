@@ -4,6 +4,71 @@ type: docs
 weight: 30
 url: /net/using-wrapper-in-cpp/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Using wrapper in CPP",
+    "alternativeHeadline": "Effortlessly Extract Text from PDF Using Wrapper",
+    "abstract": "The new wrapper functionality in C allows users to seamlessly extract text from PDF documents using Aspose.PDF for .NET via COM Interop. This feature simplifies the process of retrieving content by enabling direct interaction with PDF files through an accessible and efficient wrapper assembly. Enhance your applications with this powerful text retrieval capability while ensuring smooth integration within the .NET ecosystem",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "194",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/using-wrapper-in-cpp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/using-wrapper-in-cpp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Prerequisites
 

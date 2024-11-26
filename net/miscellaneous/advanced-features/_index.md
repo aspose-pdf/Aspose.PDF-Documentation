@@ -4,6 +4,71 @@ type: docs
 weight: 210
 url: /net/advanced-features/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Advanced Features",
+    "alternativeHeadline": "Streamlined PDF Handling and Mathematical Expression Support in C#",
+    "abstract": "Discover the latest enhancement in Aspose.PDF for .NET that allows seamless sending of PDF documents to web browsers for direct download without the need for physical storage. This feature not only simplifies file delivery but also includes advanced capabilities to extract embedded files and incorporate complex mathematical expressions using LaTeX, making it an essential tool for developers working with PDF formats",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "386",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "\u002B61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/advanced-features/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/advanced-features/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Sending Pdf to Browser for Download
 
