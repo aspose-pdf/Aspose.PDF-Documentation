@@ -17,21 +17,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Replace Text in PDF",
-    "alternativeHeadline": "Replacing and Removing Text in PDF File",
+    "alternativeHeadline": "Efficiently Modify Text Across PDF Pages with Ease",
+    "abstract": "The Replace Text in PDF feature in Aspose.PDF for .NET allows users to efficiently locate and replace text across an entire PDF document or within specific page regions. It supports advanced capabilities, including text replacement based on regular expressions, automatic rearranging of page content after replacements, and the ability to remove unused fonts, enhancing the document editing experience",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, dreplace text, remove text",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2744",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -47,21 +47,21 @@ aliases:
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
+                "telephone": "\u002B1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
+                "telephone": "\u002B44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
+                "telephone": "\u002B61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
@@ -73,7 +73,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/replace-text-in-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Learn more about various ways of replacing and removing text from Aspose.PDF for .NET library."
 }
 </script>

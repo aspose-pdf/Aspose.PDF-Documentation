@@ -16,21 +16,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Generate PDF from XML",
-    "alternativeHeadline": "Convert XML into PDF",
+    "alternativeHeadline": "Generate PDF directly from XML data",
+    "abstract": "Aspose.PDF for .NET now generates PDFs directly from XML data using multiple methods: XSLT transformations, XSL-FO markup, and a custom Aspose.PDF XML schema.  This new functionality offers flexible PDF creation from diverse XML structures, streamlining document generation workflows",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, generate pdf form xml, convert xml to pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "3834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +46,21 @@ aliases:
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
+                "telephone": "\u002B1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
+                "telephone": "\u002B44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
+                "telephone": "\u002B61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
@@ -72,7 +72,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/generate-pdf-from-xml"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Aspose.PDF for .NET provides several ways to convert an XML file into a PDF document requiring that the input XML file."
 }
 </script>

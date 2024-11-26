@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Text in PDF using C#",
-    "alternativeHeadline": "Add, Rotate, Search, and Delete Text in PDF File",
+    "alternativeHeadline": "Enhanced Text Manipulation Features in PDF with C#",
+    "abstract": "Discover powerful text manipulation capabilities in PDFs using Aspose.PDF for .NET. This feature allows users to seamlessly add, replace, rotate, and format text within PDF documents, enhancing document interactivity and customization. Empower your applications with efficient search functionalities and flexible text handling techniques tailored for C# developers",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add text, search text, delete text, manipulate text in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF manipulation, add text to PDF, rotate text in PDF, search text in PDF, replace text in PDF, text formatting inside PDF, Aspose.PDF for .NET, text handling techniques, PDF document generation, Floating Box tool",
+    "wordcount": "371",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +46,21 @@ sitemap:
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
+                "telephone": "\u002B1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
+                "telephone": "\u002B44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
+                "telephone": "\u002B61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-text/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and C#."
 }
 </script>

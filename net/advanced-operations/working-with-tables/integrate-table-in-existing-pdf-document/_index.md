@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Integrate Table with Data Sources PDF",
-    "alternativeHeadline": "How to integrate Table with Data Sources PDF",
+    "alternativeHeadline": "Integrate PDF Tables with Data Sources Seamlessly",
+    "abstract": "The integrate Table with Data Sources PDF feature allows developers to seamlessly import data from various sources, including databases and the Entity Framework, directly into PDF tables using Aspose.PDF for .NET. With functionalities to determine pagination and support for repeating columns, this feature enhances data presentation while maintaining document integrity by preventing table breaks across pages",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, integrate table",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2201",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +45,21 @@ sitemap:
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
+                "telephone": "\u002B1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
+                "telephone": "\u002B44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
+                "telephone": "\u002B61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/integrate-table/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article shows how to integrate PDF tables. Integrate Table with Database and determine if the table will split on the current page."
 }
 </script>

@@ -19,21 +19,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Split PDF programmatically",
-    "alternativeHeadline": "How to split PDF with .NET",
+    "alternativeHeadline": "Effortlessly split PDF into individual files with C#",
+    "abstract": "Allows developers to programmatically split PDF documents into individual files using C#. This feature simplifies the management of PDF content by enabling the extraction of distinct pages into separate PDF files within .NET applications, enhancing workflow efficiency and document handling capabilities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, split pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "326",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -49,21 +49,21 @@ aliases:
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
+                "telephone": "\u002B1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
+                "telephone": "\u002B44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
+                "telephone": "\u002B61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
@@ -75,7 +75,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/split-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#."
 }
 </script>

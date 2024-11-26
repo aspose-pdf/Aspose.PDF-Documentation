@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Creating PDF from XML using XSLT",
-    "alternativeHeadline": "How to create PDF from XML using XSLT",
+    "alternativeHeadline": "Generate PDF from XML using XSLT and C#",
+    "abstract": "Generate PDFs directly from XML files using XSLT and a C# library.  This new functionality streamlines report generation by transforming existing XML data into a PDF-compatible format. The process leverages XSLT for transformation and requires adherence to the Aspose.PDF schema",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, create pdf xml, pdf with xslt",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "323",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +45,21 @@ sitemap:
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "+1 903 306 1676",
+                "telephone": "\u002B1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+44 141 628 8900",
+                "telephone": "\u002B44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "+61 2 8006 6987",
+                "telephone": "\u002B61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-a-hello-world-pdf-document-through-xml-and-xslt/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "C# library provides the ability to convert an XML file into pdf document requiring that the input XML file must follow the Aspose.PDF Schema."
 }
 </script>
