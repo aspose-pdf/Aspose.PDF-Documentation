@@ -15,7 +15,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Working with Headings in PDF",
     "alternativeHeadline": "Enhance PDF Headings with Custom Numbering Styles",
-    "abstract": "Enhance your PDF documents with customizable heading numbering using Aspose.PDF for .NET. This new feature allows you to apply various pre-defined numbering styles, such as Roman numerals and alphabetical listings, to organize your headings effectively, improving the document\u0027s readability and structure. Streamline your PDF creation process by integrating this versatile functionality into your C# applications",
+    "abstract": "Enhance your PDF documents with customizable heading numbering using Aspose.PDF for .NET. This new feature allows you to apply various pre-defined numbering styles, such as Roman numerals and alphabetical listings, to organize your headings effectively, improving the document readability and structure. Streamline your PDF creation process by integrating this versatile functionality into your C# applications",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",

@@ -6,6 +6,71 @@ url: /net/extract-text/
 description: This section explains how to extract text from pdf using PdfExtractor class.
 lastmod: "2021-06-05"
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Text from PDF File",
+    "alternativeHeadline": "Effortless Text Extraction from PDF Files",
+    "abstract": "The PdfExtractor class enables efficient text extraction from PDF files through multiple methods, allowing users to retrieve text, images, and attachments with ease. By utilizing methods like ExtractText, GetText, and GetNextPageText, developers can seamlessly extract and save textual content from individual pages or entire documents, streamlining PDF manipulation tasks. With flexible extraction modes available, this feature enhances control over the output format, making it an essential tool for anyone working with PDF data",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "441",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-text/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-text/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 In this article, we’ll look into the details of extracting text from a PDF file. All of these extraction features are provided at one place, in [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class. We’ll see how to use these features in our code.
 

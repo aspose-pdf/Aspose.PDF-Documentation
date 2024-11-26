@@ -7,6 +7,71 @@ description: This section explains how to merge Images, and it is possible to sa
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Merge images",
+    "alternativeHeadline": "Merge Images with Flexible Formats and Arrangements",
+    "abstract": "Aspose.PDF for .NET introduces a powerful new feature that enables users to merge images seamlessly. This functionality allows for combining images in various formats and styles such as vertical, horizontal, or centered while also offering the option to save the final output in the highly versatile TIFF format. Ideal for enhancing document presentations, this feature simplifies the process of creating merged image files using a straightforward code integration",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "482",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/merge-images/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/merge-images/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 Aspose.PDF 21.4 allows you to combine Images. [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) method checks the contents of a specific folder and works with the specified type of files in it. When working with merging pictures, we specify 'inputImagesStreams', Image Format and Image Merge Mode (as example - vertical) of our file. Then we save our result in FileOutputStream.
 

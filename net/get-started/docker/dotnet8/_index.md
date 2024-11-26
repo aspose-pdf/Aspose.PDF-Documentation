@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "How to run Aspose.PDF for .NET 8 in Docker",
     "alternativeHeadline": "Integrate Aspose.PDF with .NET 8 in Docker",
-    "abstract": "Discover how to seamlessly integrate Aspose.PDF for .NET 8 into your applications using Docker, whether on Linux or Windows containers. This feature enables efficient PDF document generation and manipulation within ASP.NET Core applications, allowing developers to leverage powerful PDF capabilities in a containerized environment. Optimize your .NET projects by utilizing this straightforward setup guide and enhance your development workflow with Aspose.PDF\u0027s robust functionalities",
+    "abstract": "Discover how to seamlessly integrate Aspose.PDF for .NET 8 into your applications using Docker, whether on Linux or Windows containers. This feature enables efficient PDF document generation and manipulation within ASP.NET Core applications, allowing developers to leverage powerful PDF capabilities in a containerized environment. Optimize your .NET projects by utilizing this straightforward setup guide and enhance your development workflow with Aspose.PDF for .NET robust functionalities",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
