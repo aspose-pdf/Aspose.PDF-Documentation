@@ -18,21 +18,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Header and Footer to PDF",
-    "alternativeHeadline": "How to add Header and Footer to PDF File",
+    "alternativeHeadline": "Add Custom Headers and Footers to PDF Files",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature that allows users to enrich their PDF documents by adding customizable headers and footers. Using the TextStamp and ImageStamp classes, developers can easily integrate both text and images, tailoring their placement and appearance to fit various document formats and styles. This enhances document professionalism and readability, making it ideal for reports, invoices, and other formal communications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add header, add footer in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "1549",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -74,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-headers-and-footers-of-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Aspose.PDF for .NET allows you to add headers and footers to your PDF file using TextStamp class."
 }
 </script>

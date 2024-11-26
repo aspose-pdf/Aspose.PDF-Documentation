@@ -10,21 +10,22 @@ lastmod: "2024-10-28"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with JavaScript",
-    "alternativeHeadline": "How to work with JavaScript in PDF",
+    "alternativeHeadline": "Enhance PDF with Custom JavaScript Actions",
+    "abstract": "Discover the enhanced capabilities of integrating JavaScript within PDF documents through Aspose.PDF for .NET. This new feature allows developers to add and manage JavaScript actions at both document and page levels, enabling interactive and dynamic PDF experiences geared towards improved user engagement and functionality. Unlock the potential of JavaScript to create sophisticated PDF forms that mimic web-like behaviors, elevating your document generation workflows",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, javascript in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "JavaScript, Acrobat JavaScript, PDF document generation, JavaScript collection, document level JavaScript, JavaScript Action, interactive PDF forms, manipulate PDF files, HTML JavaScript, Aspose.PDF for .NET",
+    "wordcount": "423",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,8 +67,8 @@ lastmod: "2024-10-28"
         "@type": "WebPage",
         "@id": "/net/working-with-javascript/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 

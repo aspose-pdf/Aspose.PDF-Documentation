@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Default Font Name",
-    "alternativeHeadline": "How to Set Default Font Name in PDF",
+    "alternativeHeadline": "Customize PDF to image conversion with default font",
+    "abstract": "Specify custom default fonts for PDF to image conversion using Aspose.PDF for .NET.  The DefaultFontName property lets you select a replacement font when the original is unavailable, improving rendering consistency. This new feature enhances control over the output image appearance",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, .net, set default font name",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Default Font Name, PDF to image conversion, Aspose.PDF for .NET, RenderingOptions, DefaultFontName property, .NET API",
+    "wordcount": "198",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/set-default-font-name/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section describes how to set the default font name during the conversion process from PDF to image."
 }
 </script>

@@ -16,22 +16,23 @@ aliases:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Add Pages in PDF with C#",
-    "alternativeHeadline": "How to add Pages in PDF document",
+    "headline": "Add Pages to PDF Document",
+    "alternativeHeadline": "Insert and Manage Pages in PDF Easily with C#",
+    "abstract": "The feature in Aspose.PDF for .NET allows users to easily insert pages into a PDF document at any specified location, enhancing document flexibility and organization. This functionality not only supports adding pages but also includes options to move or remove existing pages using C#. Streamline your PDF management with this intuitive addition to your development toolkit",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add pdf page, insert pdf page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Pages to PDF, insert PDF page, empty page PDF, C# PDF manipulation, PDF document generation, PageCollection, Aspose.PDF for .NET, move PDF pages, remove PDF pages, add pages to PDF",
+    "wordcount": "651",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-pages/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article teaches how to insert (add) a page at the desired location PDF file. Learn how to move, remove (delete) pages from a PDF file using C#."
 }
 </script>

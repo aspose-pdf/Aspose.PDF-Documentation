@@ -18,21 +18,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Operators",
-    "alternativeHeadline": "How to use PDF operators",
+    "alternativeHeadline": "Empowered PDF Manipulation with Operators Integration",
+    "abstract": "The Operators feature in Aspose.PDF for .NET enhances PDF manipulation capabilities by allowing users to utilize specific operator classes for tasks such as adding images and removing graphics. This functionality simplifies the process of defining graphical elements and their states within a PDF, providing developers with powerful tools for fine-tuned document editing and processing",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, operators in pdf, use pdf operators",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "operators, Aspose.PDF, PDF manipulation, GSave operator, ConcatenateMatrix operator, Do operator, GRestore operator, graphics state, remove graphics",
+    "wordcount": "1233",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -74,7 +75,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/working-with-operators/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation."
 }
 </script>
