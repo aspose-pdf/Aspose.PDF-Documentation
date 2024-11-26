@@ -40,21 +40,21 @@ url: /net/php-via-com-interop/
         "contactPoint": [
             {
                 "@type": "ContactPoint",
-                "telephone": "\u002B1 903 306 1676",
+                "telephone": "+1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "\u002B44 141 628 8900",
+                "telephone": "+44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
-                "telephone": "\u002B61 2 8006 6987",
+                "telephone": "+61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
