@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF .NET for CRM
 type: docs
-weight: 310
+weight: 20
 url: /net/aspose-pdf-net-for-crm/
 description: Learn how to use Aspose.PDF for Microsoft Dynamics CRM
 lastmod: "2021-06-05"
