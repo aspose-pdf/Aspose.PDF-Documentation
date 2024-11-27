@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get and Search Images in PDF",
-    "alternativeHeadline": "How to Get and Search Images in PDF file",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Documents",
+    "abstract": "Discover the new capability of searching and extracting images from PDF documents using the Aspose.PDF library. This feature streamlines the process of locating images across multiple pages, allowing users to easily retrieve image properties such as dimensions and resolution with simple code snippets. Enhance your PDF document manipulation skills by leveraging this efficient image handling functionality",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, .net, get image, search image",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "get images, search images, PDF document, Aspose.PDF library, ImagePlacementAbsorber, ImagePlacements, .NET PDF manipulation, document image extraction, image placement properties, code examples",
+    "wordcount": "316",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/search-and-get-images-from-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section explain how to search and get images from PDF document with Aspose.PDF library."
 }
 </script>

@@ -15,22 +15,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Manipulate PDF Document",
-    "alternativeHeadline": "How to manipulate PDF file",
+    "headline": "Manipulate PDF Document in C#",
+    "alternativeHeadline": "Enhanced PDF Manipulation Features in C# Library",
+    "abstract": "Discover the powerful capabilities of manipulating PDF documents in C#, including validation for PDF/A standards, the ability to create and customize tables of contents, and setting expiry dates for documents. This feature not only enhances document management but also ensures compliance with industry standards, making it essential for developers seeking robust PDF handling solutions",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, manipulate pdf file",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
+    "wordcount": "2170",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and etc."
 }
 </script>

@@ -16,21 +16,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Printing PDF in .NET Framework",
-    "alternativeHeadline": "How to print PDF in .NET Framework",
+    "alternativeHeadline": "Print PDF Files Easily with C# in .NET Framework",
+    "abstract": "Introducing our new feature that allows seamless printing of PDF files to the default printer using C#. With customizable printer and page settings, developers can effortlessly manage print options and optimize output based on PDF page size, enhancing operational efficiency and user experience. This functionality simplifies the process of integrating PDF printing capabilities into .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf in .NET Framework",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "print pdf, C# print pdf, .NET Framework, PdfViewer class, Printer and Page Settings, PrintDocumentWithSettings, choose paper source, PDF page size, Aspose.PDF, document printing",
+    "wordcount": "503",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-pdf-in-net-framework/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You may print PDF files to the default printer using the printer and page settings with C#."
 }
 </script>

@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with XML using C#",
-    "alternativeHeadline": "How to generate PDF document from XML ",
+    "alternativeHeadline": "Generate PDF from XML effortlessly with C#",
+    "abstract": "Discover the powerful capability of generating PDF documents directly from XML using Aspose.PDF for .NET. This feature simplifies the process of XML data manipulation, allowing for seamless document conversion that enhances productivity and efficiency in your applications. Leverage this functionality to streamline your workflow and improve data presentation",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, xml in pdf, generate pdf from pdf ",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "178",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-xml/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Learn how to generate a PDF document from XML in Aspose.PDF for .NET"
 }
 </script>

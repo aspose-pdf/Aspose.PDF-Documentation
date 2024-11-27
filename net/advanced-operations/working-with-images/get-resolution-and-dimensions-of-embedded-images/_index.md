@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get Resolution and Dimensions of Images",
-    "alternativeHeadline": "How to get Resolution and Dimensions of Embedded Images",
+    "alternativeHeadline": "Extract Image Resolution and Dimensions Efficiently",
+    "abstract": "Discover how to efficiently obtain the resolution and dimensions of embedded images within PDF documents using the Aspose.PDF library. This feature allows developers to access image properties directly without extraction, streamlining the process of image manipulation in PDF files while enhancing functionality and control over image data",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, get resolution, get dimensions",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Get Resolution, Dimensions of Images, Embedded Images, Aspose.PDF.Drawing, ArrayList, Image Placement Classes, ConcatenateMatrix, XImage, PDF Manipulation Library, Image Resolution Computation",
+    "wordcount": "827",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-resolution-and-dimensions-of-embedded-images/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section shows details in getting resolution and dimensions of Embedded Images"
 }
 </script>

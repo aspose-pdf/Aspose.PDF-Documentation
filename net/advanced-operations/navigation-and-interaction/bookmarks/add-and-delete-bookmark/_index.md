@@ -17,21 +17,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add and Delete a Bookmark",
-    "alternativeHeadline": "How to add and delete Bookmark from PDF",
+    "alternativeHeadline": "Manage PDF Bookmarks: Add and Delete with Ease",
+    "abstract": "The new feature allows users to efficiently manage bookmarks within PDF documents using C#. You can easily add new bookmarks or delete existing ones, whether you want to remove all bookmarks or target specific entries. This functionality enhances document navigation and organization for improved user experience",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, delete bookmark, add bookmark",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "add bookmark, delete bookmark, PDF document, C# programming, OutlineItemCollection, OutlineCollection, child bookmark, parent bookmark",
+    "wordcount": "851",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-and-delete-bookmark/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You can add a bookmark to a PDF document with C#. It is possible to delete all or particular bookmarks from a PDF document."
 }
 </script>

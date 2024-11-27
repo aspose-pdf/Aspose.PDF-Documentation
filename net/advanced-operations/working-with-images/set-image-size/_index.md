@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Image Size",
-    "alternativeHeadline": "How to set image size PDF file using C# ",
+    "alternativeHeadline": "Set Custom Image Dimensions in PDFs with C#",
+    "abstract": "Discover the new Set Image Size feature in the Aspose.PDF library for .NET, allowing you to easily define the dimensions of images added to PDF documents. With properties like FixWidth and FixHeight, you can customize image sizes for a polished and professional appearance in your PDF files. Optimize your PDF generation workflow by mastering this essential functionality",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, set image size",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Set Image Size, PDF generation, C# library, FixWidth, FixHeight, Aspose.Pdf.Image, image dimensions, PDF file manipulation, Aspose.PDF for .NET",
+    "wordcount": "216",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/set-image-size/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section describes how to set image size PDF file using C# library."
 }
 </script>

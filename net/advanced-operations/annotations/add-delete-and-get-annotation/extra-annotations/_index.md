@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extra Annotations using C#",
-    "alternativeHeadline": "How to add Extra Annotations in PDF",
+    "alternativeHeadline": "Enhance PDF Annotations with C#",
+    "abstract": "Introducing the Extra Annotations feature in C#, which allows developers to seamlessly add, retrieve, and remove various annotations from PDF documents. This robust functionality enhances PDF interaction by enabling precise text editing and document manipulation, including the ability to add caret and redaction annotations effectively. Optimize your PDF handling with these advanced capabilities designed for intuitive document management",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, link annotation, caret annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Extra Annotations, Caret Annotation, PDF document manipulation, Aspose.PDF for .NET, Redaction Annotation, Markup annotation, Delete Caret Annotation, Get Caret Annotation, StrikeOutAnnotation, PdfAnnotationEditor",
+    "wordcount": "929",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extra-annotations/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This section describes how to add, get, and delete extra kinds of annotations from your PDF document."
 }
 </script>

@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Determine Line Break",
-    "alternativeHeadline": "How to determinate line break of TextFragment",
+    "alternativeHeadline": "Enhance Multi-Line Text Fragment Line Breaking Tracking",
+    "abstract": "Discover Determine Line Break feature in Aspose.PDF for .NET, which enables precise control over the line breaking of multi-line TextFragments in your PDF documents. This functionality simplifies tracking text formatting and enhances the overall presentation of your PDF outputs, making it an essential tool for developers working with text layout in C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, determinate line break",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "268",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/determine-line-break/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Learn more about how to determinate a line break of multi-line TextFragment using C#"
 }
 </script>

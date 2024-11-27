@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract Image and Signature Information",
-    "alternativeHeadline": "How to extract Image and Signature from PDF",
+    "alternativeHeadline": "Extract PDF signature images and certificate details",
+    "abstract": "New Aspose.PDF for .NET functionality extracts images and detailed information from PDF signature fields.  Using C#, developers can retrieve signature images and certificate data, including public key, thumbprint, and issuer details, enhancing PDF manipulation capabilities. This improves digital signature verification and management within applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, extract signature",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
+    "wordcount": "583",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You may extract images from the signature field and extract signature information using the SignatureField class with C#."
 }
 </script>

@@ -17,21 +17,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Graphs in PDF file",
-    "alternativeHeadline": "How to create graphs in PDF",
+    "alternativeHeadline": "Create and Manipulate Graphs in PDF Files",
+    "abstract": "Discover the powerful new feature for generating and manipulating graphs within PDF documents using Aspose.PDF for .NET. This functionality allows developers to create a variety of graph shapes, including arcs, circles, lines, and rectangles, enhancing the visual presentation of data in their applications. Optimize your PDF generation process and deliver dynamic data visualizations with ease",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, graphs in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Graph, PDF documents, Aspose.PDF for .NET, Graph class, Shapes, Arc, Circle, Line graph, Rectangle, PDF manipulation",
+    "wordcount": "329",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/graphs/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains what a is Graph, how to create a filled rectangle object, and other functions"
 }
 </script>

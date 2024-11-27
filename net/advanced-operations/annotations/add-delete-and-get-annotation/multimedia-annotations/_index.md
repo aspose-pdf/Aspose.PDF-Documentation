@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF Multimedia Annotation using C#",
-    "alternativeHeadline": "How to add Multimedia Annotation in PDF",
+    "alternativeHeadline": "Enable Multimedia Annotations in PDF with C#",
+    "abstract": "Aspose.PDF for .NET introduces advanced multimedia annotation capabilities, enabling users to seamlessly add, retrieve, and delete various multimedia types in PDF documents. This feature supports screen, sound, and rich media annotations, enhancing document interactivity and allowing for the integration of external video content, audio notes, and embedded media, making PDF documents more dynamic and engaging",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, multimedia annotation, screen annotation, sound annotation, widget annotation, 3D annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF multimedia annotation, Aspose.PDF, C# PDF features, screen annotation, sound annotation, rich media annotation, widget annotations, 3D annotation, document navigation, multimedia file embedding",
+    "wordcount": "2247",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,8 +72,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/multimedia-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 

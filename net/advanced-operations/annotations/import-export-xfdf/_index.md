@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Import and Export Annotations to XFDF",
-    "alternativeHeadline": "Methods for importing and exporting annotations data to XFDF files",
+    "alternativeHeadline": "Effortless XFDF Annotation Import and Export",
+    "abstract": "The new import and export functionality for XFDF in the Aspose.PDF for .NET library enhances PDF document management by allowing seamless transfer of annotation data. This feature enables users to easily integrate annotations from XFDF files and export them back, promoting efficient data exchange and archiving capabilities for PDF forms",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, import export to XFDF",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Import Annotations, Export Annotations, XFDF Format, Aspose.PDF for .NET, PdfAnnotationEditor, ImportAnnotationFromXfdf, ExportAnnotationsXfdf, PDF Forms Manipulation",
+    "wordcount": "670",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/import-export-xfdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library."
 }
 </script>

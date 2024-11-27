@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Text stamps in PDF C#",
-    "alternativeHeadline": "Add Text stamps in PDF C#",
+    "alternativeHeadline": "Effortlessly Add Text Stamps in PDF Documents with C#",
+    "abstract": "The new TextStamp feature in Aspose.PDF for .NET enables users to effortlessly add customizable text stamps to PDF documents. With properties for font size, style, and color, along with alignment options, this functionality enhances document annotation by allowing precise placement and appearance of text within PDF files",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "765",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Add a text stamp to a PDF document using the TextStamp class with  Aspose.PDF for .NET library."
 }
 </script>

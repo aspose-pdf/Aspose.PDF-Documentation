@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Advanced operations",
-    "alternativeHeadline": "Using Advanced Features in working with PDF",
+    "alternativeHeadline": "Unlock Complex PDF Manipulation with New Features in C#",
+    "abstract": "Discover the powerful capabilities of Aspose.PDF for .NET advanced operations, designed for both novice and experienced developers. This feature enables intricate manipulations of PDF files, from compressing and merging documents to intricate text searches and form management, all while maintaining seamless integration with various PDF sources like Adobe Acrobat and Microsoft Office. Unlock a new level of efficiency in document handling and manipulation with this versatile toolset",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, advanced operations in pdf, create pdf, delete pdf, manipulate pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "521",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/advanced-operations/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>

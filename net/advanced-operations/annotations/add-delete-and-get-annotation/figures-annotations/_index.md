@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Figures Annotations using C#",
-    "alternativeHeadline": "How to add Figures Annotations in PDF",
+    "alternativeHeadline": "Enhance PDF Documents with Comprehensive Figure Annotations",
+    "abstract": "Introducing the new Figures Annotations feature in Aspose.PDF for .NET, which empowers users to seamlessly add, retrieve, and delete various types of annotations including lines, squares, circles, polygons, and polylines in PDF documents. This functionality enhances document interactivity, allowing for clearer communication and visual markup directly within the PDF files. Optimize your PDF editing tasks with this robust annotation toolset tailored for developers using C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, figures annotations, polygon annotation, line annotation, square annotation, circle annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "pdf, figures annotations, line annotation, square annotation, circle annotation, polygon annotation, polyline annotation, free text annotation, ink annotation, Aspose.PDF for .NET",
+    "wordcount": "2125",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/figures-annotation/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for .NET"
 }
 </script>

@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Image stamps in PDF using C#",
-    "alternativeHeadline": "Add Image stamps in PDF using C#",
+    "alternativeHeadline": "Add Custom Image Stamps to PDF Documents",
+    "abstract": "The new feature in the Aspose.PDF library allows users to seamlessly add image stamps to PDF documents using C#. With the ImageStamp class, developers can customize attributes such as size, opacity, and quality, significantly enhancing document presentation and accessibility. This functionality also includes the ability to add alternative text, promoting better usability for screen readers",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "646",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,10 +71,11 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/image-stamps-in-pdf-page/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF library."
 }
 </script>
+
 
 ## Add Image Stamp in PDF File
 

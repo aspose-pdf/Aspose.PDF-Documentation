@@ -18,22 +18,23 @@ aliases:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF Annotations",
-    "alternativeHeadline": "Working with Annotations in PDFs",
+    "headline": "Working with Annotations",
+    "alternativeHeadline": "Enhance PDFs with Comprehensive Annotation Capabilities",
+    "abstract": "Enhance your PDF documents with the powerful annotation capabilities of the Aspose.PDF library. This feature allows users to easily add, edit, and delete various annotation types, including highlights, notes, and shapes, while maintaining full compatibility with PDF viewers. Discover how to seamlessly manage annotations and import/export data in XFDF and FDF formats for efficient PDF document manipulation",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, annotations",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF Annotations, Aspose.PDF, annotations, XFDF format, FDF format, edit annotations, add annotations, delete annotations, PDF manipulation, interactive features",
+    "wordcount": "294",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -75,8 +76,8 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 

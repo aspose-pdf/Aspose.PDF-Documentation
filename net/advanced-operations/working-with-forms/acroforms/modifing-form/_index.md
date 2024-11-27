@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Modifing AcroForm",
-    "alternativeHeadline": "How to Modifing AcroForm",
+    "alternativeHeadline": "Modify and Manage AcroForm Fields in PDF",
+    "abstract": "The new Modifying AcroForm feature in the Aspose.PDF for .NET library allows users to seamlessly add or remove fields from existing PDF forms. This functionality also includes setting field limits and customizing font appearances for a refined user experience, enhancing PDF form management and interaction",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, modifing acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Modifing AcroForm, Aspose.PDF for .NET, PDF form fields, SetFieldLimit, custom font, Add/remove fields, Document Form collection, DefaultAppearance, manage form fields, PDF manipulation",
+    "wordcount": "601",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/modifing-form/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Modifing form in your PDF file with Aspose.PDF for .NET library. You can Add or remove fields in existing form, getand set fieldlimit and etc."
 }
 </script>

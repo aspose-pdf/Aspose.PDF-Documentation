@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Text Formatting inside PDF using C#",
-    "alternativeHeadline": "How to format text in PDF File",
+    "alternativeHeadline": "Enhance PDF Text Formatting with New C# Features",
+    "abstract": "Discover the powerful text formatting capabilities of Aspose.PDF for .NET, allowing you to add line indents, text borders, underline effects, and more to your PDF documents. This feature enables precise control over text aesthetics and layout, enhancing the overall presentation of your PDF files. Optimize your PDF generation workflows with versatile formatting options tailored for developers",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, format text in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "1642",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-formatting-inside-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, and etc."
 }
 </script>

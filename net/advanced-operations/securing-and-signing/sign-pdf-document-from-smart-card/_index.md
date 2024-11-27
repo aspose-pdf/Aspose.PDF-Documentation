@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to add Smart Card signature to PDF",
-    "alternativeHeadline": "Working with Smart Card signature in PDF",
+    "alternativeHeadline": "Add Smart Card Signatures to PDF Documents Easily",
+    "abstract": "Aspose.PDF for .NET now enables seamless PDF signing using smart cards, enhancing digital security by allowing users to authenticate documents with their stored digital certificates. This functionality supports both signature fields and advanced signing options, ensuring compliance and integrity in PDF transactions",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, smart card signature",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Smart Card signature, PDF signing, Aspose.PDF for .NET, digital signatures, external signing service, PKCS7 signature, certificate selection, hash algorithm, signature field, signing PDF documents",
+    "wordcount": "755",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sign-pdf-document-from-smart-card/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF for .NET allows you to sign PDF documents from a smart card using signature field."
 }
 </script>

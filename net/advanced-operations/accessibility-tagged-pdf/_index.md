@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Accessibility and Tagged PDFs",
-    "alternativeHeadline": "Working with tagged PDFs",
+    "alternativeHeadline": "Create accessible PDFs with new tagging features",
+    "abstract": "Create accessible PDFs with enhanced tagging capabilities.  This new feature allows for easier navigation and readability by assistive technologies, improving accessibility for users with disabilities. Develop compliant, inclusive PDF documents",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "tagged, pdf, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Tagged PDF, Accessible PDF, PDF Accessibility, Create Tagged PDF, Edit Tagged PDF, Extract Tagged Content, PDF Tags, Structure Elements",
+    "wordcount": "172",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,8 +72,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/accessibility-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF provides the ability to create Tagged PDF documents, allowing you to tag the structural elements. Learn more about how to get accessible PDFs."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 

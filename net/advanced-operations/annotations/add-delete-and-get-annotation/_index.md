@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add, Delete and Get Annotation",
-    "alternativeHeadline": "Working with Annotations in PDF file",
+    "alternativeHeadline": "Manage PDF Annotations with Aspose.PDF for .NET",
+    "abstract": "Enhance your PDF manipulation capabilities with the new Add, Delete, and Get Annotation feature in Aspose.PDF for .NET. This powerful functionality allows users to seamlessly manage annotations within their PDF files, offering streamlined editing and improved content interaction. Discover how to work with various types of annotations to meet your specific document needs",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add annotation, get annotation, delete annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "add annotation, delete annotation, get annotation, Aspose.PDF for .NET, PDF document generation, PDF annotations, multimedia annotation, PDF text annotation, highlights annotation, PDF manipulation library",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-delete-and-get-annotation/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "With Aspose.PDF for .NET you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task."
 }
 </script>

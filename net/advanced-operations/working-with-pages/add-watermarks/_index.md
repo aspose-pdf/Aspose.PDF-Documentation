@@ -18,21 +18,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add watermark to PDF using C#",
-    "alternativeHeadline": "How to add watermark to PDF",
+    "alternativeHeadline": "Add Custom Watermarks to PDF with C#",
+    "abstract": "The new feature in Aspose.PDF for .NET allows developers to programmatically add customizable watermarks to PDF documents using the Artifact functionality. This feature enhances document management by supporting various artifact properties, including type, opacity, rotation, and text customization, enabling users to create professional and identifiable PDF files easily",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add watermark",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "462",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -74,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-watermarks/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#."
 }
 </script>

@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Generate Thumbnail Images from PDF",
-    "alternativeHeadline": "How to generate Thumbnail Images from PDF file",
+    "alternativeHeadline": "Generate Thumbnails from PDF Documents Effortlessly",
+    "abstract": "The new feature allows users to efficiently generate thumbnail images directly from PDF documents. This functionality enhances document management by transforming PDF pages into easily shareable image formats, streamlining workflows for developers and users alike. With support for various image formats, this feature simplifies the process of visualizing PDF content without the need for external software like Adobe Acrobat",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, generate thumbnail Images",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Generate Thumbnail Images, PDF documents, Aspose.PDF for .NET, Acrobat SDK, image formats, PDF Manipulation Library, JavaScript, interapplication communication, thumbnail images, JPEG conversion",
+    "wordcount": "767",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/generate-thumbnail-images-from-pdf-documents/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section describes how to generate thumbnail images from PDF documents"
 }
 </script>

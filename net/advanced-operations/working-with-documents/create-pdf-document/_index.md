@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to Create PDF using C#",
-    "alternativeHeadline": "Create PDF document from scratch",
+    "alternativeHeadline": "Create and Format PDFs Effortlessly with C#",
+    "abstract": "The new functionality in Aspose.PDF for .NET empowers developers to effortlessly create and format PDF documents using C#. With this intuitive API, users can generate searchable PDFs, manipulate tagged content for accessibility, and seamlessly integrate PDF generation into various .NET applications, enhancing productivity and streamlining workflows",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, create pdf document",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF creation, C# PDF generation, Aspose.PDF for .NET, searchable PDF, accessible PDF, Document class, TextFragment, PDF document manipulation, .NET applications, BDC operations",
+    "wordcount": "871",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Create and format the PDF Document with Aspose.PDF for .NET."
 }
 </script>

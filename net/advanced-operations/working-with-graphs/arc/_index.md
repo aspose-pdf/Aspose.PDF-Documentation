@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Arc Object to PDF file",
-    "alternativeHeadline": "How to create Arc in PDF file",
+    "alternativeHeadline": "Add Colorful Arc Shapes to  PDF Documents",
+    "abstract": "The new feature in Aspose.PDF for .NET allows users to seamlessly integrate arc objects into PDF documents, enhancing graphic capabilities by providing the ability to draw arcs in various colors and dimensions. This functionality empowers developers to create more visually appealing and customized PDF files by adding filled arcs and detailed shapes with precise control over attributes such as borders and fill colors",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, arc in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Arc Object, PDF file, Aspose.PDF for .NET, create Arc, graph objects, filled Arc object",
+    "wordcount": "472",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-arc/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to create a arc object to your PDF using Aspose.PDF for .NET."
 }
 </script>

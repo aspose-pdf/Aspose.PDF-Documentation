@@ -17,21 +17,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Securing and signing PDF in C#",
-    "alternativeHeadline": "How to sign PDF",
+    "alternativeHeadline": "Securely Digitally Sign PDFs with C#",
+    "abstract": "Discover the advanced capabilities of securing and digitally signing PDF documents using C#. This feature enables users to apply robust digital signatures with various algorithms and digest options, ensuring document integrity and authenticity. Enhance your PDF security with Aspose.PDF comprehensive signing functionalities tailored for seamless integration in .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, sign pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
+    "wordcount": "269",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This section describes the features of using a signature and securing your PDF document using C#"
 }
 </script>

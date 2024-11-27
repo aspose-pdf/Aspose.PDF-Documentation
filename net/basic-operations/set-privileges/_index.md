@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Privileges, Encrypt and Decrypt PDF",
-    "alternativeHeadline": "How to encrypt and decrypt PDF file",
+    "alternativeHeadline": "Set PDF Privileges and Secure with Encryption with C#",
+    "abstract": "The new feature allows users to efficiently encrypt and decrypt PDF files using C# with a variety of encryption types and algorithms. By utilizing user and owner passwords, it provides robust control over document access and permissions, ensuring the confidentiality and integrity of PDF content while simplifying security management for developers",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, encrypt pdf, decrypt pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "1586",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/set-privileges-encrypt-and-decrypt-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Encrypt PDF File with C# using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password."
 }
 </script>

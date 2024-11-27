@@ -16,21 +16,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to Merge PDF using C#",
-    "alternativeHeadline": "Combine PDF documents",
+    "alternativeHeadline": "Combine PDF Effortlessly Using C#",
+    "abstract": "Discover the powerful capability to effortlessly merge multiple PDF documents into a single file using C# with the Aspose.PDF library. This feature allows developers to streamline their workflows by combining PDFs efficiently, preserving quality and structure throughout the process. Perfect for software integration, this functionality enhances productivity by simplifying document management tasks",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf document manipulation",
-    "keywords": "pdf, c#, merge pdf, concatenate, combine pdf",
-    "wordcount": "212",
-    "proficiencyLevel":"Beginner",
+    "genre": "pdf document generation",
+    "wordcount": "411",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -67,12 +67,12 @@ sitemap:
             }
         ]
     },
-    "url": "https://docs.aspose.com/pdf/net/merge-pdf-documents/",
+    "url": "/net/merge-pdf-documents/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://docs.aspose.com/pdf/net/merge-pdf-documents/"
+        "@id": "/net/merge-pdf-documents/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This page explain how to merge PDF documents into a single PDF file with C# or VB.NET."
 }
 </script>

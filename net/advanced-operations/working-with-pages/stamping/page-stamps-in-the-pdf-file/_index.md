@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add PDF Page Stamps in PDF using C#",
-    "alternativeHeadline": "Add PDF Page Stamps in PDF using C#",
+    "alternativeHeadline": "Enhance PDFs with Custom Page Stamps in C#",
+    "abstract": "Unlock powerful PDF editing capabilities with the new page stamp feature in Aspose.PDF for .NET. Easily add customizable composite stamps incorporating graphics, text, and tables directly onto your PDF documents, enhancing their visual appeal and functionality. Ideal for creating professional stationery-like designs, this feature simplifies document generation and manipulation in C#",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "212",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/page-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Add a page stamp to a PDF document using the PdfPageStamp class with Aspose.PDF for .NET library."
 }
 </script>

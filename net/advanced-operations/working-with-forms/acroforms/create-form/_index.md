@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Create AcroForm",
-    "alternativeHeadline": "How to create AcroForm in PDF",
+    "headline": "Create AcroForm - Create Fillable PDF in C#",
+    "alternativeHeadline": "Create Interactive Forms in PDF with C#",
+    "abstract": "Aspose.PDF for .NET introduces the ability to create fillable PDF forms from scratch, allowing developers to seamlessly integrate customizable form fields such as text boxes, radio buttons, and combo boxes into their PDFs. This functionality empowers users to enhance document interactivity and improve data collection within their applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, create acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
+    "wordcount": "1125",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "With Aspose.PDF for .NET you may create a form from scratch in your PDF file"
 }
 </script>

@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Rotate Text Inside PDF using C#",
-    "alternativeHeadline": "How to rotate Text in PDF File",
+    "alternativeHeadline": "Rotate Text to Any Angle in PDF with C#",
+    "abstract": "Aspose.PDF for .NET allows users to rotate text fragments and entire paragraphs within PDF documents at various angles. This feature enhances document flexibility by enabling precise text orientation adjustments, catering to diverse formatting needs in professional and creative applications. Users can effortlessly implement these rotations using the provided APIs, enhancing the document generation experience",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "860",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/rotate-text-inside-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph."
 }
 </script>

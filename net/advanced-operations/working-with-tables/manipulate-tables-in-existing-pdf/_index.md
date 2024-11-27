@@ -14,21 +14,20 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Manipulate Tables in existing PDF",
-    "alternativeHeadline": "How to update Tables content in existing PDF",
+    "alternativeHeadline": "Enhance Table Editing in Existing PDF Documents",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature for manipulating existing PDF tables, allowing users to search, parse, and modify table content with ease. The new TableAbsorber class enables dynamic updates and replacements of tables directly within PDF documents, streamlining the process of managing tabular data in PDFs for enhanced functionality. Explore this innovative capability to optimize your PDF editing and data integration tasks",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, manipulate tables",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -70,8 +69,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-tables-in-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 

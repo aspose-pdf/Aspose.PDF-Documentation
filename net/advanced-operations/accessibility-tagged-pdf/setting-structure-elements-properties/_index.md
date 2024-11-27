@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Setting Structure Elements Properties",
-    "alternativeHeadline": "How to set the properties of structural elements",
+    "alternativeHeadline": "Setting Properties for Structure Elements in PDFs",
+    "abstract": "Enhance your PDF document accessibility with the new feature in Aspose.PDF for .NET that allows users to set properties for structure elements. This functionality enables precise control over titles, languages, and custom tags for various elements within a Tagged PDF, ensuring compliance and improved navigation for screen readers",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, set text structure, set language, set title, set Note structure element",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Setting Structure Elements Properties, Aspose.PDF for .NET, Tagged PDF Document, CreateSectElement, CreateHeaderElement, SetTitle, SetLanguage, NoteElement, StructureElement, LinkElement",
+    "wordcount": "2730",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/setting-structure-elements-properties/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You may set different structure elements properties in PDF document with Aspose.PDF for .NET."
 }
 </script>

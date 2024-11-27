@@ -11,22 +11,22 @@ lastmod: "2024-02-17"
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Working with GraphicsAbsorber",
-    "alternativeHeadline": "How to get the position of an Image in PDF File",
+    "headline": "Working with Vector Graphics",
+    "alternativeHeadline": "Enhance PDF Graphics Manipulation with С№",
+    "abstract": "Discover the advanced capabilities of the GraphicsAbsorber tool in Aspose.PDF for .NET, allowing developers to seamlessly manipulate vector graphics in PDF documents. This feature enables precise extraction, movement, and removal of graphics, as well as the ability to add them to different pages, enhancing your PDF manipulation workflow with greater flexibility and control",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, GraphicsAbsorber in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "889",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +68,7 @@ lastmod: "2024-02-17"
         "@type": "WebPage",
         "@id": "/net/working-with-vector-graphics/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section describes the features of working with GraphicsAbsorber PDF file using C# library."
 }
 </script>

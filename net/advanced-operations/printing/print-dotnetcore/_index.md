@@ -16,21 +16,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to print PDF file in .NET Core",
-    "alternativeHeadline": "Print PDF file in .NET Core",
+    "alternativeHeadline": "Print PDFs as XPS in .NET Core with ease",
+    "abstract": "Discover the new functionality in .NET Core that streamlines the process of printing PDF documents by converting them to XPS format and efficiently managing print jobs in your local printer queue. This feature also allows for enhanced control over paper sources based on PDF page sizes, ensuring a tailored printing experience. Optimize your document management with precise scaling options directly from the print dialog",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf in .NET Core",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "print PDF, .NET Core, convert PDF to XPS, print queue, Aspose.PDF, paper source by PDF page size, print dialog presets, page scaling, document printing, local printer",
+    "wordcount": "606",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +73,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/print-dotnetcore/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This page explains how to convert a PDF document into XPS and add it as a job to the queue of the local printer."
 }
 </script>
