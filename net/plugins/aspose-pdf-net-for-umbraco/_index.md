@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF .NET for Umbraco
 type: docs
-weight: 200
+weight: 50
 url: /net/aspose-pdf-net-for-umbraco/
 description: Learn how to use Umbraco PDF Import Module
 lastmod: "2021-06-05"

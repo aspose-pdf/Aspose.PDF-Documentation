@@ -167,7 +167,7 @@ private void OpenFile_OnClick(object sender, RoutedEventArgs e)
         var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
         DocViewer.Document = xpsDoc.GetFixedDocumentSequence();
         xpsDoc.Close();
-    };
+    }
 }
 ```
 
