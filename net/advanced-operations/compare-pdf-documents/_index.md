@@ -79,7 +79,7 @@ sitemap:
 
 Please note that all comparing tools are available in [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/) library.
 
-# Ways to compare PDF Documents
+## Ways to compare PDF Documents
 
 When working with PDF documents, there are times when you need to compare the content of two documents to identify differences. The Aspose.PDF for .NET library provides a powerful toolset for this purpose. In this article, we'll explore how to compare PDF documents using a couple of simple code snippets.
 

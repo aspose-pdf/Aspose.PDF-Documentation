@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-# Installation
+## Installation
 
 **Aspose.PDF for JavaScript via C++** is a easy and secure toolkit used to work with PDF directly in the web browser.
 

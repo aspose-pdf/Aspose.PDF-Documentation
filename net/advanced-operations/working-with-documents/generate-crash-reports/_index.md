@@ -77,7 +77,7 @@ sitemap:
 }
 </script>
 
-# Generate Crash Report
+## Generate Crash Reports
 
 These code snippets are designed to handle an exception and generate a crash report when an error occurs. 
 

@@ -4,7 +4,6 @@ linktitle: Encrypt and Decrypt PDF File
 type: docs
 weight: 20
 url: /cpp/set-privileges-encrypt-and-decrypt-pdf-file/
-keywords: encrypt pdf,password protect pdf,decrypt pdf,c++
 description: Encrypt PDF File with C++ using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.
 lastmod: "2021-12-17"
 sitemap:

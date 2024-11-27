@@ -11,7 +11,7 @@ sitemap:
     priority: 0.5
 ---
 
-# Plugins
+## Plugins
 
 This section contains a list of the plugins for the most popular web applications: DotNetNuke, Sitefinity, Umbraco, etc.
 
