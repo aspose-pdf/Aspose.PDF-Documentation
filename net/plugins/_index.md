@@ -15,10 +15,10 @@ sitemap:
 
 This section contains a list of the plugins for the most popular web applications: DotNetNuke, Sitefinity, Umbraco, etc.
 
-* [Aspose.PDF .NET for Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET for Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
-* [Aspose.PDF .NET for CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET for DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET for VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
-* [Using Aspose.PDF for .NET with Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Aspose.PDF for .NET with Coldfusion](/pdf/net/aspose-pdf-net-for-coldfusion/)
+* [Aspose.PDF for .NET with CRM](/pdf/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF for .NET with DNN](/pdf/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF for .NET with Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/))
+* [Aspose.PDF for .NET with Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF for .NET with VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
 
