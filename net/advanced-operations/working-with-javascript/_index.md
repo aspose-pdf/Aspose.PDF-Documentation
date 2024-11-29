@@ -96,7 +96,7 @@ The example below applies the OpenAction to a specific document.
 
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Working-Document-AddJavaScriptToPage-AddJavaScriptToPage.cs" >}}
 
-### **Adding/Removing JavaScript to Document Level**
+### Adding/Removing JavaScript to Document Level
 
 A new property named JavaScript is added in Document class which has JavaScript collection type and provides access to JavaScript scenarios by its key. This property is used to add Document level JavaScript. The JavaScript collection has the following properties and methods:
 
@@ -105,6 +105,75 @@ A new property named JavaScript is added in Document class which has JavaScript 
 - bool Remove(string key) – removes JavaScript by its key.
 
 {{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Working-Document-AddRemoveJavascriptToDoc-AddRemoveJavascriptToDoc.cs" >}}
+
+### Setting Expiry Date of a PDF Document Using JavaScript Actions
+
+Aspose.PDF allows you to set an expiry date for a PDF document by embedding JavaScript Actions. This functionality ensures the PDF becomes inaccessible after a specified date and time, enhancing document security and control. By leveraging JavaScript Actions, you can define precise expiration conditions down to the second, ensuring the document's accessibility is tightly regulated.
+
+**You can achieve this by following these steps**
+
+1. **Initialize Document:** Create a new PDF document and add a blank page or open an existing PDF document.
+2. **Define Expiry Date and Time:** Set the date and time after which the document will expire.
+3. **Prepare JavaScript Code:** 
+    - Retrieve the current date and time.
+    - Define the exact expiry date and time, considering that months are zero-based in JavaScript.
+    - Compare the current date and time with the expiry date and time.
+    - If the current date and time exceed the expiry date and time, display an alert and close the document.
+4. **Set Open Action:** Associate the JavaScript action with the document's open action.
+5. **Save Document:** Save the PDF with the embedded JavaScript that enforces the expiry condition.
+
+Below are code snippets demonstrating this functionality in both C# (.NET) and Java.
+
+The following C# code snippet demonstrates how to set an expiry date and time for a PDF document using JavaScript Actions with Aspose.PDF:
+
+```csharp
+private static void CreateDocumentWithExpiryDate()
+{
+    // Initialize a new PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add();
+
+        // Define the expiry date and time (e.g., April 1, 2024, 12:00:00 PM)
+        DateTime expiryDateTime = new DateTime(2024, 4, 1, 12, 0, 0);
+
+        // Create JavaScript code to enforce the expiry date and time
+        string jsCode =
+            // Get the current date and time
+            "var rightNow = new Date();\n" +
+            // Set the expiry date and time
+            "var endDate = new Date(" +
+                $"{expiryDateTime.Year}," +
+                $"{expiryDateTime.Month - 1}," + // Months are zero-based in JavaScript
+                $"{expiryDateTime.Day}," +
+                $"{expiryDateTime.Hour}," +
+                $"{expiryDateTime.Minute}," +
+                $"{expiryDateTime.Second}" +
+            ");\n" +
+            "if(rightNow > endDate)\n" +
+            "{\n" +
+            "    app.alert(\"This Document has Expired as of \" + endDate.toLocaleString() + \".\");\n" +
+            "    this.closeDoc();\n" +
+            "}";
+
+        // Create a JavascriptAction with the defined JavaScript code
+        var javaScript = new Aspose.Pdf.Annotations.JavascriptAction(jsCode);
+
+        // Set the JavaScript action to execute when the document is opened
+        document.OpenAction = javaScript;
+
+        // Save the updated PDF document
+        string outputPath = "C:\\PDFExpiry.pdf";
+        document.Save(outputPath);
+    }
+}
+```
+
+- **JavaScript Date Object:** In JavaScript, the month index starts at `0` for January and ends at `11` for December. Ensure that the month value is adjusted accordingly when setting the expiry date and time.
+  
+- **Security Considerations:** While JavaScript actions can control the behavior of a PDF document, they rely on the PDF viewer's support for JavaScript. Not all PDF viewers may honor these scripts, and users might have JavaScript execution disabled for security reasons.
+
+- **Customization:** Modify the JavaScript code to perform additional actions upon expiry, such as disabling certain features, redirecting to a specific page, or logging the event. Additionally, if necessary, you can check only the date of expiry without specifying the time.
 
 <script type="application/ld+json">
 {

@@ -219,7 +219,7 @@ Since the 24.2 release, Aspose.PDF has implemented converting Searchable PDF to 
 The following code snippet shows the process of converting PDF file into XPS format.
 
 ```csharp
-using (var document = new Document("input.pdf"))
+using (var document = new Aspose.Pdf.Document("input.pdf"))
 {
     var xpsOptions = new XpsSaveOptions
     {
