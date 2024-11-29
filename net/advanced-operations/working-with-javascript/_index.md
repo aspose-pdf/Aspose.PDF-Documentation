@@ -108,7 +108,7 @@ A new property named JavaScript is added in Document class which has JavaScript 
 
 ### Setting Expiry Date of a PDF Document Using JavaScript Actions
 
-Aspose.PDF allows you to set an expiry date for a PDF document by embedding JavaScript Actions. This functionality ensures that the PDF becomes inaccessible after a specified date and time, enhancing document security and control. By leveraging JavaScript Actions, you can define precise expiration conditions down to the second, ensuring that the document's accessibility is tightly regulated.
+Aspose.PDF allows you to set an expiry date for a PDF document by embedding JavaScript Actions. This functionality ensures the PDF becomes inaccessible after a specified date and time, enhancing document security and control. By leveraging JavaScript Actions, you can define precise expiration conditions down to the second, ensuring the document's accessibility is tightly regulated.
 
 **You can achieve this by following these steps**
 
@@ -122,7 +122,7 @@ Aspose.PDF allows you to set an expiry date for a PDF document by embedding Java
 4. **Set Open Action:** Associate the JavaScript action with the document's open action.
 5. **Save Document:** Save the PDF with the embedded JavaScript that enforces the expiry condition.
 
-Below you can find code snippets demonstrating this functionality in both C# (.NET) and Java.
+Below are code snippets demonstrating this functionality in both C# (.NET) and Java.
 
 The following C# code snippet demonstrates how to set an expiry date and time for a PDF document using JavaScript Actions with Aspose.PDF:
 
@@ -173,7 +173,7 @@ private static void CreateDocumentWithExpiryDate()
   
 - **Security Considerations:** While JavaScript actions can control the behavior of a PDF document, they rely on the PDF viewer's support for JavaScript. Not all PDF viewers may honor these scripts, and users might have JavaScript execution disabled for security reasons.
 
-- **Customization:** You can modify the JavaScript code to perform additional actions upon expiry, such as disabling certain features, redirecting to a specific page, or logging the event. Additionally, if necessary, you can check only the date of expiry without specifying the time.
+- **Customization:** Modify the JavaScript code to perform additional actions upon expiry, such as disabling certain features, redirecting to a specific page, or logging the event. Additionally, if necessary, you can check only the date of expiry without specifying the time.
 
 <script type="application/ld+json">
 {
