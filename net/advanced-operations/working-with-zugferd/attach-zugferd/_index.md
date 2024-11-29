@@ -91,21 +91,25 @@ We recommend following steps to attach ZUGFeRD to PDF:
 * Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 
 ```cs
-var path = @"C:\Samples\ZUGFeRD\";
+var dataDir = @"C:\Samples\ZUGFeRD\";
 
-var document = new Document(Path.Combine(path,"ZUGFeRD-test.pdf"));
-// Setup new file to be added as attachment
-var description = "Invoice metadata conforming to ZUGFeRD standard";
-var fileSpecification = new Aspose.Pdf.FileSpecification(Path.Combine(path, "factur-x.xml"), description)
+// Load PDF document
+using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-test.pdf"))
 {
-    Description = "Zugferd",
-    MIMEType = "text/xml",
-    AFRelationship = Aspose.Pdf.AFRelationship.Alternative
-};
-// Add attachment to document's attachment collection
-document.EmbeddedFiles.Add(fileSpecification);
-document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.PDF_A_3U, Aspose.Pdf.ConvertErrorAction.Delete);
-document.Save(Path.Combine(path, "ZUGFeRD-res.pdf"));
+    // Setup new file to be added as attachment
+    var description = "Invoice metadata conforming to ZUGFeRD standard";
+    var fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "factur-x.xml", description)
+    {
+        Description = "Zugferd",
+        MIMEType = "text/xml",
+        Name = "factur-x.xml"
+    };
+    // Add attachment to document's attachment collection
+    document.EmbeddedFiles.Add(fileSpecification);
+    document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.ZUGFeRD, Aspose.Pdf.ConvertErrorAction.Delete);
+    // Save result PDF
+    document.Save(dataDir + "ZUGFeRD-res.pdf");
+}
 ```
 
 The convert method takes a stream, a PDF format, and a convert error action as parameters. The stream parameter can be used to save the conversion log. The convert error action parameter specifies what to do if any errors occur during the conversion. In this case, it is set to "Delete", which means that any elements that are not compliant with the PDF/A-3U format will be deleted from the document.
