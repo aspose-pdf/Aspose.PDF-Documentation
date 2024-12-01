@@ -17,7 +17,7 @@ Document Object Model (DOM) is a form of representation of structured documents 
 
 In simple words, DOM is a tree of objects that represent the structure of some document. Aspose.PDF for Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. However, the aspects of the DOM (such as its Elements) are manipulated within the syntax of the programming language in use. The public interface of a DOM is specified in its application programming interface (API).
 
-### Introduction to PDF Document
+### Introduction to PDF Document 
 
 Portable Document Format (PDF) is an open standard for document exchange. A PDF document is a combination of text and binary data. If you open it in a text editor, you will see the raw objects that define the structure and contents of the document.
 
@@ -27,7 +27,7 @@ The logical structure of a PDF file is hierarchical and determines the sequence 
 
 As the structure of a PDF file is hierarchical, Aspose.PDF for Java also accesses the elements in the same way. The following hierarchy shows you how the PDF document is logically structured and how Aspose.PDF for Java DOM API constructs it.
 
-![PDF Document Structure](../images/structure.png)
+![PDF Document Structure](/java/images/structure.png)
 
 ### Accessing PDF Document Elements
 

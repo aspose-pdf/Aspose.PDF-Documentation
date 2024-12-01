@@ -34,4 +34,4 @@ You are able to do the following:
 - [Set Image Size](/pdf/java/set-image-size/) - Java library allows you to set the size of an image.
 - [Set Default Font Name](/pdf/java/set-default-font-name/) - use DefaultFontName property for setting Default Font Name.
 - [Generate Thumbnail Images from PDF Documents](/pdf/java/generate-thumbnail-images-from-pdf-documents/) - next article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
-- Support for DICOM Images - Aspose.PDF for Java supports special medical graphic standard of images. Aspose.PDF for Java allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/java/convert-dicom-to-pdf/) section.
+- Support for DICOM Images - Aspose.PDF for Java supports special medical graphic standard of images. Aspose.PDF for Java allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/java/convert-images-format-to-pdf/) section.

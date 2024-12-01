@@ -81,6 +81,6 @@ sitemap:
 You'll learn different ways to:
 
 - [Working with Documents](/pdf/python-java/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
-- [Working with Pages](/pdf/python-java/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
-- [Working with Forms](/pdf/python-java/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
+- [Working with Pages](/pdf/python-java/working-with-pages-in-python/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
+- [Working with Forms](/pdf/python-java/forms/) - deal with interact PDF documents, add formfields, extract data.
 - [Working with Text](/pdf/python-java/working-with-text/) - add, format, search and replace text in PDF.

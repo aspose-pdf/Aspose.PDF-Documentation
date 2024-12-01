@@ -34,7 +34,7 @@ So, PDFs are the best file format for forms since they can be distributed electr
 
 For a more detailed study of the possibilities of working with forms, study the following articles in the section:
 
--[Create AcroForm](/pdf/java/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using Java.
+-[Create AcroForm](/pdf/java/create-forms/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using Java.
 
 -[Fill AcroForm](/pdf/java/fill-form/) - to fill a form field, get the field from the Document object's Form collection.
 
