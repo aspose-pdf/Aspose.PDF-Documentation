@@ -15,11 +15,11 @@ sitemap:
 
 ## Cross-platform software
 
-Supports various platforms and .NET versions. See [System Requirements](/net/system-requirements/) for details.
+Supports various platforms and .NET versions. See [System Requirements](/pdf/net/system-requirements/) for details.
 
 ## General Features
 
-Aspose.PDF provides powerful Document Object Model (DOM) to explore and modify all types of PDF content. Supports loading from and saving to a wide list of [file formats](/net/supported-file-formats/). 
+Aspose.PDF provides powerful Document Object Model (DOM) to explore and modify all types of PDF content. Supports loading from and saving to a wide list of [file formats](/pdf/net/supported-file-formats/). 
 
 ## Supported PDF standards
 
