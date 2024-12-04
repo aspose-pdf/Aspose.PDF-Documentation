@@ -93,7 +93,7 @@ The following table indicates the file formats that Aspose.PDF for .NET can load
 |[XPS](https://docs.fileformat.com/page-description-language/xps/)|XPS Documents|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[XSLFO](https://docs.fileformat.com/page-description-language/xslfo/)|XSL-FO is part of XSL file which is used for the transformation and formatting of XML data|{{< emoticons/tick >}}| | |
 |[MD](https://docs.fileformat.com/word-processing/md/)|Markdown Format|{{< emoticons/tick >}}| | |
-|[OFD](https://file.org/extension/ofd/)|OFD format refers to “Open Fixed-layout Document”, established as China’s national standard for electronic file storage, used as an alternative to the popular PDF format.|{{< emoticons/tick >}}| | |
+|[OFD](https://en.wikipedia.org/wiki/OFD)|OFD format refers to “Open Fixed-layout Document”, established as China’s national standard for electronic file storage, used as an alternative to the popular PDF format.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Saves the document in the Microsoft Excel SpreadSheet| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Saves the document in the Microsoft Excel 2007 format| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Saves the document in the Microsoft PowerPoint Presentations format| |{{< emoticons/tick >}}| |

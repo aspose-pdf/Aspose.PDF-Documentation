@@ -82,13 +82,13 @@ A `PageCollection` extension method has been added to update the page number and
 
 The following code snippet demonstrates how to update pagination in the document:
 ```csharp
-private static void Update_Pagination()
+private static void UpdatePagination()
 {
     // Document that contains at least one page with pagination artifacts.
     var inputDocumentPath = "DocumentWithPaginationArtifacts.pdf";
     var outputDocumentPath = "DocumentWithUpdatedPagination.pdf";
 
-    using (Document document = new Document(inputDocumentPath))
+    using (var document = new Aspose.Pdf.Document(inputDocumentPath))
     {
         document.Pages.Insert(1, document.Pages[2]);
         document.Pages.Add();
@@ -109,13 +109,13 @@ DSA supports only SHA-1. Please note that SHA-1 is outdated and does not meet cu
 
 The following code snippet demonstrates setting of hashing algorithm for Pkcs7Detached:
 ```csharp
-public void SignWithManualDigestHashAlgorithm(string cert, string pass, string inputPdfFile, string outPdfSigned)
+private static void SignWithManualDigestHashAlgorithm(string cert, string pass, string inputPdfFile, string outPdfSigned)
 {
-    using (Document document = new Document(inputPdfFile))
+    using (var document = new Aspose.Pdf.Document(inputPdfFile))
     {
-        using (PdfFileSignature signature = new PdfFileSignature(document))
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            PKCS7Detached pkcs = new PKCS7Detached(cert, pass,  DigestHashAlgorithm.Sha512);
+            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(cert, pass,  DigestHashAlgorithm.Sha512);
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
             signature.Save(outPdfSigned);
         }
@@ -128,15 +128,15 @@ A new `FontEncodingStrategy` property has been added to the `HtmlSaveOptions` cl
 
 The following sample demonstrates the new option using:
 ```csharp
-public void ConvertPdfToHtmlUsingCMap(string inputPdfFile, string outHtmlFile)
+private static void ConvertPdfToHtmlUsingCMap(string inputPdfFile, string outputHtmlFile)
 {
-    using (Document document = new Document(inputPdfFile))
+    using (var document = new Aspose.Pdf.Document(inputPdfFile))
     {
-        HtmlSaveOptions options = new HtmlSaveOptions
+        var options = new Aspose.Pdf.HtmlSaveOptions
         {
-            FontEncodingStrategy = HtmlSaveOptions.FontEncodingRules.DecreaseToUnicodePriorityLevel
+            FontEncodingStrategy = Aspose.Pdf.HtmlSaveOptions.FontEncodingRules.DecreaseToUnicodePriorityLevel
         };
-        document.Save(outHtmlFile, options);
+        document.Save(outputHtmlFile, options);
     }
 }
 
