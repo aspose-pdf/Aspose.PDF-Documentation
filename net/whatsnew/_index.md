@@ -71,10 +71,75 @@ lastmod: "2024-10-18"
         "@type": "WebPage",
         "@id": "/net/whatsnew/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2024-12-04",
     "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
+
+## What's new in Aspose.PDF 24.11
+
+A `PageCollection` extension method has been added to update the page number and date header/footer artifacts when adding or inserting new pages. Settings for the page number and date format should be stored in the original document according to the PDF specification, as implemented by Adobe Acrobat.
+
+The following code snippet demonstrates how to update pagination in the document:
+```csharp
+private static void Update_Pagination()
+{
+    // Document that contains at least one page with pagination artifacts.
+    var inputDocumentPath = "DocumentWithPaginationArtifacts.pdf";
+    var outputDocumentPath = "DocumentWithUpdatedPagination.pdf";
+
+    using (Document document = new Document(inputDocumentPath))
+    {
+        document.Pages.Insert(1, document.Pages[2]);
+        document.Pages.Add();
+        document.Pages.UpdatePagination();
+
+        document.Save(outputDocumentPath);
+    }
+}
+```
+
+Since version 24.11, we have added the ability to choose a hashing algorithm for Pkcs7Detached. The default is SHA-256. For ECDSA digital signatures, the default digest algorithm depends on the key length.
+
+ECDSA supports SHA-1, SHA-256, SHA-384, SHA-512, SHA3-256, SHA3-384, and SHA3-512. The SHA3-256, SHA3-384, and SHA3-512 algorithms are supported only for .NET 8 and newer versions. For details on supported platforms for SHA-3, refer to the [documentation](https://learn.microsoft.com/en-us/dotnet/standard/security/cross-platform-cryptography#sha-3).
+
+RSA supports SHA-1, SHA-256, SHA-384, and SHA-512.
+
+DSA supports only SHA-1. Please note that SHA-1 is outdated and does not meet current security standards.
+
+The following code snippet demonstrates setting of hashing algorithm for Pkcs7Detached:
+```csharp
+public void SignWithManualDigestHashAlgorithm(string cert, string pass, string inputPdfFile, string outPdfSigned)
+{
+    using (Document document = new Document(inputPdfFile))
+    {
+        using (PdfFileSignature signature = new PdfFileSignature(document))
+        {
+            PKCS7Detached pkcs = new PKCS7Detached(cert, pass,  DigestHashAlgorithm.Sha512);
+            signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
+            signature.Save(outPdfSigned);
+        }
+        document.Save(outPdfSigned);
+    }
+}
+```
+
+A new `FontEncodingStrategy` property has been added to the `HtmlSaveOptions` class. The PDF specification recommends using the `ToUnicode` table to extract text content from PDFs. However, using the font's CMap table can produce better results for certain types of documents. Starting with version 24.11, you can choose which table to use for decoding. By default, the `ToUnicode` table is used.
+
+The following sample demonstrates the new option using:
+```csharp
+public void ConvertPdfToHtmlUsingCMap(string inputPdfFile, string outHtmlFile)
+{
+    using (Document document = new Document(inputPdfFile))
+    {
+        HtmlSaveOptions options = new HtmlSaveOptions
+        {
+            FontEncodingStrategy = HtmlSaveOptions.FontEncodingRules.DecreaseToUnicodePriorityLevel
+        };
+        document.Save(outHtmlFile, options);
+    }
+}
+
 
 ## What's new in Aspose.PDF 24.10
 
