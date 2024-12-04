@@ -26,11 +26,9 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Features](/pdf/reportingservices/features/)
 - [Sample Reports Gallery](/pdf/reportingservices/sample-reports-gallery/)
 - [Install Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Integration with Microsoft Report Viewer in local mode](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
 - [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
 - [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
 - [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 ## Aspose.PDF for Reporting Services Resources
@@ -42,9 +40,7 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Download Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
 - [Sample Reports Gallery Aspose.PDF for Reporting Services](/pdf/reportingservices/sample-reports-gallery/)
 - [Install Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Integration with Microsoft Report Viewer in local mode](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
 - [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
 - [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
 - [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)

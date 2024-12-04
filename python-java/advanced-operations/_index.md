@@ -76,7 +76,7 @@ sitemap:
 }
 </script>
 
-**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/python-java/basic-operations/), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
+**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
 
 You'll learn different ways to:
 

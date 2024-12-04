@@ -27,8 +27,6 @@ To find out more about Aspose.PDF, select the appropriate section:
 
 [Supported Document Formats](/pdf/php-java/supported-file-formats/) – provides information about supported formats
 
-[Supported Features](/pdf/php-java/key-features/) – provides information on what features are supported when loading or saving a document in various formats
-
 [Licensing and Subscription](/pdf/php-java/licensing/) – provides information on applying a license and using multiple Aspose products
 
 [Technical Support](/pdf/php-java/technical-support/) – This page gives recommendations for quick and quality to resolve your tasks

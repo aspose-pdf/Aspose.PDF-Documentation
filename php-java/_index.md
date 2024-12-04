@@ -29,8 +29,6 @@ Aspose.PDF for PHP via Java provides excellent security features to develop secu
 
 ## Chapters
 
-- [What's new](/pdf/php-java/whatsnew/)
-- [Overview](/pdf/php-java/overview/)
 - [Get Started](/pdf/php-java/get-started/)
 - [Basic operations](/pdf/php-java/basic-operations/)
 - [Converting documents](/pdf/php-java/converting/)
