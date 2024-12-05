@@ -16,7 +16,7 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in C#",
     "alternativeHeadline": "Attach ZUGFeRD Invoices to PDF in C#",
-    "abstract": "Discover the new functionality that allows developers to generate PDF documents compliant with PDF/A-3U and seamlessly attach ZUGFeRD invoices using C#. This feature simplifies the process of embedding invoice metadata in PDF files, ensuring long-term document preservation and compliance with electronic invoicing standards",
+    "abstract": "Discover the new functionality that allows developers to generate PDF documents compliant with PDF/A-3B and seamlessly attach ZUGFeRD invoices using C#. This feature simplifies the process of embedding invoice metadata in PDF files, ensuring long-term document preservation and compliance with electronic invoicing standards",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -87,7 +87,7 @@ We recommend following steps to attach ZUGFeRD to PDF:
 * Create a [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification/) object by providing the path and description of another file named "factur-x.xml", which contains invoice metadata conforming to the ZUGFeRD standard.
 * Add properties to the file specification object, such as the description, MIME type, and AF relationship. The AF relationship indicates how the embedded file is related to the PDF document. In this case, it is set to "Alternative", meaning the embedded file is an alternative representation of the PDF content.
 * Add the file specification object to the document's embedded files collection. File name should be specified to ZUGFeRD standard, e.g. "factur-x.xml".
-* Convert the document to PDF/A-3U format, a subset of PDF that ensures the long-term preservation of electronic documents. PDF/A-3U allows embedding files of any format in PDF documents.
+* Convert the document to PDF/A-3B format, a subset of PDF that ensures the long-term preservation of electronic documents. PDF/A-3B allows embedding files of any format in PDF documents.
 * Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 
 ```cs
@@ -112,4 +112,4 @@ using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-test.pdf"))
 }
 ```
 
-The convert method takes a stream, a PDF format, and a convert error action as parameters. The stream parameter can be used to save the conversion log. The convert error action parameter specifies what to do if any errors occur during the conversion. In this case, it is set to "Delete", which means that any elements that are not compliant with the PDF/A-3U format will be deleted from the document.
+The convert method takes a stream, a PDF format, and a convert error action as parameters. The stream parameter can be used to save the conversion log. The convert error action parameter specifies what to do if any errors occur during the conversion. In this case, it is set to "Delete", which means that any elements that are not compliant with the PDF/A-3B format will be deleted from the document.
