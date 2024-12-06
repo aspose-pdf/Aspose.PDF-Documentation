@@ -83,28 +83,94 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive">PDF/A</abbr> restriction from the original document. 
 Class [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) has method [RemovePdfaCompliance(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/removepdfacompliance) to remove the PDF compliance information from input/source file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void ConvertPDFAtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ConvertPDFAtoPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    Document document = new Document(dataDir + "PDFAToPDF.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
+    {
+        // Remove PDF/A compliance information
+        document.RemovePdfaCompliance();
+    
+        // Save updated document
+        document.Save(dataDir + "PDFAToPDF_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ConvertPDFAtoPDF()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf");
+
     // Remove PDF/A compliance information
     document.RemovePdfaCompliance();
+    
     // Save updated document
     document.Save(dataDir + "PDFAToPDF_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-This info also removes if you make any changes in the document (e.g. add pages). In the following example, the output document loses PDF/A compliance after the page adding.
+PDF/A conformance may also be removed if you make any changes in the document (e.g. add pages). In the following example, the output document loses PDF/A compliance after a new page is added.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void ConvertPDFAtoPDFAdvanced()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ConvertPDFAtoPDFAdvanced()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    Document document = new Document(dataDir + "PDFAToPDF.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
+    {
+        // Adding a new (empty) page removes PDF/A compliance information.
+        document.Pages.Add();
+
+        // Save updated document
+        document.Save(dataDir + "PDFAToPDF_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ConvertPDFAtoPDFAdvanced()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf");
+
     // Adding a new (empty) page removes PDF/A compliance information.
     document.Pages.Add();
+
     // Save updated document
     document.Save(dataDir + "PDFAToPDF_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}

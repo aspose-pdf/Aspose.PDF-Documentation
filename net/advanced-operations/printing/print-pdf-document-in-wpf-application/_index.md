@@ -84,48 +84,130 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The Aspose.PDF library has the ability to convert PDF files to XPS. We can use this function to organize the printing of documents.
 Let's consider the example for direct printing:
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private void Print_OnClick(object sender, RoutedEventArgs e)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void DirectPrintWpf()
 {
+    // Select a PDF document to print
     var openFileDialog = new OpenFileDialog
     {
         Filter = "PDF Documents|*.pdf"
     };
-    openFileDialog.ShowDialog();
 
-    Document document = new Document(openFileDialog.FileName);
-    var memoryStream = new MemoryStream();
-    document.Save(memoryStream, SaveFormat.Xps);
-    var package = Package.Open(memoryStream);
-
-    //Create URI for Xps Package
-    //Any Uri will actually be fine here. It acts as a place holder for the
-    //Uri of the package inside of the PackageStore
-    var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
-    var packageUri = new Uri(inMemoryPackageName);
-
-    //Add package to PackageStore
-    PackageStore.AddPackage(packageUri, package);
-
-    var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
-    var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
-
-    var printDialog = new PrintDialog();
-    if (printDialog.ShowDialog() == true)
+    if (openFileDialog.ShowDialog() == true)
     {
-        if (fixedDocumentSequence != null)
+        // Open the document
+        using (var document = new Aspose.Pdf.Document(openFileDialog.FileName))
         {
-            printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator, "A fixed document");
-        }
-        else
-        {
-            throw new NullReferenceException();
+            using (var memoryStream = new MemoryStream())
+            {
+                // Convert the document to the XPS format
+                document.Save(memoryStream, SaveFormat.Xps);
+        
+                // Create an XPS package
+                using (var package = Package.Open(memoryStream))
+                {
+                    //Create URI for the XPS package
+                    //Any Uri will actually be fine here. It acts as a placeholder for the
+                    //Uri of the package inside the PackageStore
+                    var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+                    var packageUri = new Uri(inMemoryPackageName);
+        
+                    //Add the package to PackageStore
+                    PackageStore.AddPackage(packageUri, package);
+        
+                    // Open the XPS document from the package
+                    using (var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName))
+                    {
+                        // Get the root document sequence
+                        var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
+        
+                        // Open a print dialog to set printing options
+                        var printDialog = new PrintDialog();
+                        if (printDialog.ShowDialog() == true)
+                        {
+                            if (fixedDocumentSequence != null)
+                            {
+                                // Print converted document
+                                printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator,
+                                    "A fixed document");
+                            }
+                        }
+        
+                        // Remove the package from the store and close the document after the print
+                        PackageStore.RemovePackage(packageUri);
+                        xpsDoc.Close();
+                    }
+                }
+            }
         }
     }
-    PackageStore.RemovePackage(packageUri);
-    xpsDoc.Close();
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void DirectPrintWpf()
+{
+    // Select a PDF document to print
+    var openFileDialog = new OpenFileDialog
+    {
+        Filter = "PDF Documents|*.pdf"
+    };
+
+    if (openFileDialog.ShowDialog())
+    {
+        // Open the document
+        using var document = new Aspose.Pdf.Document(openFileDialog.FileName);
+        
+        // Convert the document to the XPS format
+        using var memoryStream = new MemoryStream();
+        document.Save(memoryStream, SaveFormat.Xps);
+        
+        // Create an XPS package
+        using var package = Package.Open(memoryStream);
+        
+        //Create URI for the XPS package
+        //Any Uri will actually be fine here. It acts as a placeholder for the
+        //Uri of the package inside the PackageStore
+        var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+        var packageUri = new Uri(inMemoryPackageName);
+        
+        //Add the package to PackageStore
+        PackageStore.AddPackage(packageUri, package);
+        
+        // Open the XPS document from the package
+        using var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
+        
+        // Get the root document sequence
+        var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
+        
+        // Open a print dialog to set printing options
+        var printDialog = new PrintDialog();
+        if (printDialog.ShowDialog() == true)
+        {
+            if (fixedDocumentSequence != null)
+            {
+                // Print converted document
+                printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator,
+                    "A fixed document");
+            }
+        }
+        
+        // Remove the package from the store and close the document after the print
+        PackageStore.RemovePackage(packageUri);
+        xpsDoc.Close();
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 In this case, we will follow these steps:
 
@@ -139,12 +221,17 @@ In this case, we will follow these steps:
 
 ## View and print document
 
-In many cases, users want to see the document before printing. To implement a view, we can use a DocViewer class.
+In many cases, users want to see the document before printing. To implement a view, we can use a `DocumentViewer` control.
 Most of the steps for implementing this approach are similar to the previous example.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private void OpenFile_OnClick(object sender, RoutedEventArgs e)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {
+    // Select a PDF document to print
     var openFileDialog = new OpenFileDialog
     {
         Filter = "PDF Documents|*.pdf"
@@ -152,24 +239,85 @@ private void OpenFile_OnClick(object sender, RoutedEventArgs e)
 
     if (openFileDialog.ShowDialog() == true)
     {
-        var document = new Document(openFileDialog.FileName);
-        var memoryStream = new MemoryStream();
+        // Open the document
+        using (var document = new Aspose.Pdf.Document(openFileDialog.FileName))
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                // Convert the document to the XPS format
+                document.Save(memoryStream, SaveFormat.Xps);
+
+                // Create an XPS package
+                using (var package = Package.Open(memoryStream))
+                {
+                    //Create URI for the XPS package
+                    var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+                    var packageUri = new Uri(inMemoryPackageName);
+
+                    //Add package to PackageStore
+                    PackageStore.AddPackage(packageUri, package);
+
+                    // Open the XPS document from the package
+                    using (var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName))
+                    {
+                        // Display the document in the DocumentViewer
+                        docViewer.Document = xpsDoc.GetFixedDocumentSequence();
+
+                        // Close the XPS document after use
+                        xpsDoc.Close();
+                    }
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
+{
+    // Select a PDF document to print
+    var openFileDialog = new OpenFileDialog
+    {
+        Filter = "PDF Documents|*.pdf"
+    };
+
+    if (openFileDialog.ShowDialog() == true)
+    {
+        // Open the document
+        using var document = new Aspose.Pdf.Document(openFileDialog.FileName);
+
+        // Convert the document to the XPS format
+        using var memoryStream = new MemoryStream();
         document.Save(memoryStream, SaveFormat.Xps);
 
-        var package = Package.Open(memoryStream);
+        // Create an XPS package
+        using var package = Package.Open(memoryStream);
 
+        //Create URI for the XPS package
         var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
         var packageUri = new Uri(inMemoryPackageName);
 
         //Add package to PackageStore
         PackageStore.AddPackage(packageUri, package);
 
-        var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
-        DocViewer.Document = xpsDoc.GetFixedDocumentSequence();
+        // Open the XPS document from the package
+        using var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
+
+        // Display the document in the DocumentViewer
+        docViewer.Document = xpsDoc.GetFixedDocumentSequence();
+
+        // Close the XPS document after use
         xpsDoc.Close();
     }
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
