@@ -139,7 +139,6 @@ private static void DirectPrintWpf()
         
                         // Remove the package from the store and close the document after the print
                         PackageStore.RemovePackage(packageUri);
-                        xpsDoc.Close();
                     }
                 }
             }
@@ -202,7 +201,6 @@ private static void DirectPrintWpf()
         
         // Remove the package from the store and close the document after the print
         PackageStore.RemovePackage(packageUri);
-        xpsDoc.Close();
     }
 }
 ```
@@ -262,9 +260,6 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
                     {
                         // Display the document in the DocumentViewer
                         docViewer.Document = xpsDoc.GetFixedDocumentSequence();
-
-                        // Close the XPS document after use
-                        xpsDoc.Close();
                     }
                 }
             }
@@ -310,9 +305,6 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 
         // Display the document in the DocumentViewer
         docViewer.Document = xpsDoc.GetFixedDocumentSequence();
-
-        // Close the XPS document after use
-        xpsDoc.Close();
     }
 }
 ```

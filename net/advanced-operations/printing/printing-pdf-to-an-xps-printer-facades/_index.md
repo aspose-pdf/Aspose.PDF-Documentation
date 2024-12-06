@@ -99,7 +99,7 @@ private static void PrintToXpsPrinter()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -123,9 +123,6 @@ private static void PrintToXpsPrinter()
 
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -144,7 +141,7 @@ private static void PrintToXpsPrinter()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -168,9 +165,6 @@ private static void PrintToXpsPrinter()
 
     // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -196,13 +190,13 @@ private static void PickTrayByPdfSizeFacade()
     using (var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
         // Open a document
-        contentEditor.BindPdf(dataDir + "input.pdf");
+        contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set the flag to choose a paper tray using the PDF page size
         contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
 
         // Save the changed document
-        contentEditor.Save(dataDir + "result.pdf");
+        contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
     }
 }
 ```
@@ -221,13 +215,13 @@ private static void PickTrayByPdfSizeFacade()
     using var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
     // Open a document
-    contentEditor.BindPdf(dataDir + "input.pdf");
+    contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set the flag to choose a paper tray using the PDF page size
     contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
 
     // Save the changed document
-    contentEditor.Save(dataDir + "result.pdf");
+    contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
 }
 ```
 {{< /tab >}}

@@ -97,7 +97,7 @@ private static void PrintToPostscriptFile()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open document
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set PrinterSettings and PageSettings
         var printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
@@ -115,9 +115,6 @@ private static void PrintToPostscriptFile()
         
         // Pass printer settings object to the method
         viewer.PrintDocumentWithSettings(printerSettings);
-        
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -136,7 +133,7 @@ private static void PrintToPostscriptFile()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open document
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set PrinterSettings and PageSettings
     var printerSettings = new Aspose.Pdf.Printing.PrinterSettings();
@@ -154,9 +151,6 @@ private static void PrintToPostscriptFile()
         
     // Pass printer settings object to the method
     viewer.PrintDocumentWithSettings(printerSettings);
-        
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -180,7 +174,7 @@ private static void CheckingPrintJobStatus()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Bind source PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         viewer.AutoResize = true;       // Print the file with adjusted size
 
@@ -248,7 +242,7 @@ private static void CheckingPrintJobStatus()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Bind source PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     viewer.AutoResize = true;       // Print the file with adjusted size
 
@@ -321,7 +315,7 @@ private static void SetPrinterJobName()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Bind source PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Specify the name of Print job
         viewer.PrinterJobName = GetCurrentUserCredentials();
@@ -352,7 +346,7 @@ private static void SetPrinterJobName()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Bind source PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Specify the name of Print job
     viewer.PrinterJobName = GetCurrentUserCredentials();
@@ -392,7 +386,7 @@ private static void PrintWithImpersonation()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open document
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Do not produce the page number dialog when printing
         viewer.PrintPageDialog = false;
@@ -408,9 +402,6 @@ private static void PrintWithImpersonation()
 
             // Pass printer settings object to the method
             viewer.PrintDocumentWithSettings(ps); // OwnerUserName is a value of Owner column in spooler app
-
-            // Close the PDF file after printing
-            viewer.Close();
         }
     }
 }
@@ -430,7 +421,7 @@ private static void PrintWithImpersonation()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open document
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Do not produce the page number dialog when printing
     viewer.PrintPageDialog = false;
@@ -446,9 +437,6 @@ private static void PrintWithImpersonation()
 
     // Pass printer settings object to the method
     viewer.PrintDocumentWithSettings(ps); // OwnerUserName is a value of Owner column in spooler app
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -509,7 +497,7 @@ private static void PrintUsingSpoolerApi()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -611,7 +599,7 @@ private static void PrintUsingSpoolerApi()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size

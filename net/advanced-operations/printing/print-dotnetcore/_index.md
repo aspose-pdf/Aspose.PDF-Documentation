@@ -97,7 +97,7 @@ private static void PrintWithNetCore()
 
     // Create the secondary thread and pass the printing method for
     // the constructor's ThreadStart delegate parameter.
-    var printingThread = new Thread(() => PrintPDF(dataDir + "input.pdf"));
+    var printingThread = new Thread(() => PrintPDF(dataDir + "PrintDocument.pdf"));
 
     // Set the thread that will use PrintQueue.AddJob to single threading.
     printingThread.SetApartmentState(ApartmentState.STA);
@@ -144,7 +144,7 @@ private static void PrintWithNetCore()
 
     // Create the secondary thread and pass the printing method for
     // the constructor's ThreadStart delegate parameter.
-    var printingThread = new Thread(() => PrintPDF(dataDir + "input.pdf"));
+    var printingThread = new Thread(() => PrintPDF(dataDir + "PrintDocument.pdf"));
 
     // Set the thread that will use PrintQueue.AddJob to single threading.
     printingThread.SetApartmentState(ApartmentState.STA);
@@ -204,7 +204,7 @@ private static void PickTrayByPdfSize()
         document.PickTrayByPdfSize = true;
 
         // Save the document
-        document.Save(dataDir + "PickTrayByPdfSize.pdf");
+        document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
     }
 }
 ```
@@ -230,7 +230,7 @@ private static void PickTrayByPdfSize()
     document.PickTrayByPdfSize = true;
 
     // Save the document
-    document.Save(dataDir + "PickTrayByPdfSize.pdf");
+    document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
 }
 ```
 {{< /tab >}}

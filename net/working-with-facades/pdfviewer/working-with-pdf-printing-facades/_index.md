@@ -92,7 +92,7 @@ private static void PrintingPDFFile()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -115,9 +115,6 @@ private static void PrintingPDFFile()
 
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -136,7 +133,7 @@ private static void PrintingPDFFile()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -159,9 +156,6 @@ private static void PrintingPDFFile()
 
     // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -183,7 +177,7 @@ private static void PrintingPDFDisplayPrintDialog()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -203,9 +197,6 @@ private static void PrintingPDFDisplayPrintDialog()
             // Print document using printer and page settings
             viewer.PrintDocumentWithSettings(pgs, ps);
         }
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -224,7 +215,7 @@ private static void PrintingPDFDisplayPrintDialog()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -244,9 +235,6 @@ private static void PrintingPDFDisplayPrintDialog()
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
     }
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -270,7 +258,7 @@ private static void PrintingPDFToSoftPrinter()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -295,9 +283,6 @@ private static void PrintingPDFToSoftPrinter()
 
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -316,7 +301,7 @@ private static void PrintingPDFToSoftPrinter()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -341,9 +326,6 @@ private static void PrintingPDFToSoftPrinter()
 
     // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -369,7 +351,7 @@ private static void PrintingPDFHidePrintDialog()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -391,9 +373,6 @@ private static void PrintingPDFHidePrintDialog()
 
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -412,7 +391,7 @@ private static void PrintingPDFHidePrintDialog()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -434,9 +413,6 @@ private static void PrintingPDFHidePrintDialog()
 
     // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -460,7 +436,7 @@ private static void PrintingPDFAsGrayscale()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -483,9 +459,6 @@ private static void PrintingPDFAsGrayscale()
 
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -504,7 +477,7 @@ private static void PrintingPDFAsGrayscale()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -527,9 +500,6 @@ private static void PrintingPDFAsGrayscale()
 
     // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -555,7 +525,7 @@ private static void PrintingPDFToPostScript()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Open input PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -582,9 +552,6 @@ private static void PrintingPDFToPostScript()
 
         // Print document using printer and page settings
         viewer.PrintDocumentWithSettings(pgs, ps);
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -603,7 +570,7 @@ private static void PrintingPDFToSoftPrinter()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Open input PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -630,9 +597,6 @@ private static void PrintingPDFToSoftPrinter()
 
     // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
@@ -656,7 +620,7 @@ private static void CheckingPrintJobStatus()
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
         // Bind source PDF file
-        viewer.BindPdf(dataDir + "input.pdf");
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
         viewer.AutoResize = true;         // Print the file with adjusted size
@@ -699,9 +663,6 @@ private static void CheckingPrintJobStatus()
             // No errors were found. Printing job has completed successfully
             Console.WriteLine("Printing completed without any issue.");
         }
-
-        // Close the PDF file after printing
-        viewer.Close();
     }
 }
 ```
@@ -720,7 +681,7 @@ private static void CheckingPrintJobStatus()
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
     // Bind source PDF file
-    viewer.BindPdf(dataDir + "input.pdf");
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
     viewer.AutoResize = true;         // Print the file with adjusted size
@@ -763,9 +724,6 @@ private static void CheckingPrintJobStatus()
         // No errors were found. Printing job has completed successfully
         Console.WriteLine("Printing completed without any issue.");
     }
-
-    // Close the PDF file after printing
-    viewer.Close();
 }
 ```
 {{< /tab >}}
