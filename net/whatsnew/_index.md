@@ -139,6 +139,7 @@ private static void ConvertPdfToHtmlUsingCMap(string inputPdfFile, string output
         document.Save(outputHtmlFile, options);
     }
 }
+```
 
 
 ## What's new in Aspose.PDF 24.10
