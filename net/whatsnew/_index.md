@@ -267,15 +267,15 @@ The following code snippet demonstrates the graphic comparison of two PDF docume
 ```cs
 private static void PdfGraphicComparison(string firstDocumentPath, string secondDocumentPath, string comparisonResultPdfPath)
 {
-    using (var doc1 = new Aspose.Pdf.Document(firstDocumentPath), doc2 = new Aspose.Pdf.Document(secondDocumentPath))
+    using (var firstDocument = new Aspose.Pdf.Document(firstDocumentPath), secondDocument = new Aspose.Pdf.Document(secondDocumentPath))
     {
-        GraphicalPdfComparer comparer = new GraphicalPdfComparer()
+        var comparer = new Aspose.Pdf.Comparison.GraphicalComparison.GraphicalPdfComparer()
         {
             Threshold = 3.0,
             Color = Color.Red,
             Resolution = new Resolution(300)
         };
-        comparer.CompareDocumentsToPdf(doc1, doc2, comparisonResultPdfPath);
+        comparer.CompareDocumentsToPdf(firstDocument, secondDocument, comparisonResultPdfPath);
     }
 }
 ```
@@ -285,29 +285,31 @@ API implemented for integrating FileFormat.HEIC and Aspose.PDF. The HEIC (High-E
 To convert HEIC images to PDF user should add the reference to `FileFormat.HEIC` NuGet package and use the following code snippet:
 
 ```cs
-var heicImagePath = "iphone_photo.heic";
-var resultPdfPath = "iphone_photo.pdf";
-
-using (var fs = new FileStream(heicImagePath, FileMode.Open))
+private static void HeicToPdf(string heicImagePath, string resultPdfPath)
 {
-    HeicImage image = HeicImage.Load(fs);
-    var pixels = image.GetByteArray(PixelFormat.Rgb24);
-    var width = (int)image.Width;
-    var height = (int)image.Height;
+    using (var fs = new FileStream(heicImagePath, FileMode.Open))
+    {
+        var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
+        var pixels = image.GetByteArray(FileFormat.Heic.Decoder.PixelFormat.Rgb24);
+        var width = (int)image.Width;
+        var height = (int)image.Height;
 
-    var document = new Document();
-    Page page = document.Pages.Add();
-    Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
-    asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
-    page.PageInfo.Height = height;
-    page.PageInfo.Width = width;
-    page.PageInfo.Margin.Bottom = 0;
-    page.PageInfo.Margin.Top = 0;
-    page.PageInfo.Margin.Right = 0;
-    page.PageInfo.Margin.Left = 0;
+        using (var document = new Aspose.Pdf.Document())
+        {
+            Aspose.Pdf.Page page = document.Pages.Add();
+            var asposeImage = new Aspose.Pdf.Image();
+            asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, Aspose.Pdf.BitmapInfo.PixelFormat.Rgb24);
+            page.PageInfo.Height = height;
+            page.PageInfo.Width = width;
+            page.PageInfo.Margin.Bottom = 0;
+            page.PageInfo.Margin.Top = 0;
+            page.PageInfo.Margin.Right = 0;
+            page.PageInfo.Margin.Left = 0;
 
-    page.Paragraphs.Add(asposeImage);
-    document.Save(resultPdfPath);
+            page.Paragraphs.Add(asposeImage);
+            document.Save(resultPdfPath);
+        }
+    }
 }
 ```
 
