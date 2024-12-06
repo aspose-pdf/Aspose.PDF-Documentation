@@ -205,7 +205,7 @@ private static void InsertCroppedImageToPdf(string imageFile, string resultPdf)
             var bbox = new Aspose.Pdf.Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
 
             // Add a new page to the document
-            Aspose.Pdf.Page page = document.Pages.Add();
+            var page = document.Pages.Add();
 
             // Insert the cropped image onto the page, specifying the original position (imageRect)
             // and the cropping area (bbox)
@@ -243,13 +243,13 @@ private static void ExtractPdfLayer(string inputPdfPath, string outputPdfName)
 {
     using (var inputDocument = new Aspose.Pdf.Document(inputPdfPath))
     {
-        Aspose.Pdf.Page inputPage = inputDocument.Pages[1];
+        var inputPage = inputDocument.Pages[1];
 
         var layers = inputPage.Layers;
 
         foreach (Aspose.Pdf.Layer layer in layers)
         {
-            var ExtractedLayerPdfName = string.Format("{0}_{1}.pdf", outputPdfName, layer.Id);
+            var extractedLayerPdfName = string.Format("{0}_{1}.pdf", outputPdfName, layer.Id);
 
             using (var stream = File.Create(ExtractedLayerPdfName))
             {
@@ -296,7 +296,7 @@ private static void HeicToPdf(string heicImagePath, string resultPdfPath)
 
         using (var document = new Aspose.Pdf.Document())
         {
-            Aspose.Pdf.Page page = document.Pages.Add();
+            var page = document.Pages.Add();
             var asposeImage = new Aspose.Pdf.Image();
             asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, Aspose.Pdf.BitmapInfo.PixelFormat.Rgb24);
             page.PageInfo.Height = height;
