@@ -247,11 +247,11 @@ private static void ExtractPdfLayer(string inputPdfPath, string outputPdfName)
 
         var layers = inputPage.Layers;
 
-        foreach (Aspose.Pdf.Layer layer in layers)
+        foreach (var layer in layers)
         {
             var extractedLayerPdfName = string.Format("{0}_{1}.pdf", outputPdfName, layer.Id);
 
-            using (var stream = File.Create(ExtractedLayerPdfName))
+            using (var stream = File.Create(extractedLayerPdfName))
             {
                 layer.Save(stream);
             }
@@ -267,15 +267,18 @@ The following code snippet demonstrates the graphic comparison of two PDF docume
 ```cs
 private static void PdfGraphicComparison(string firstDocumentPath, string secondDocumentPath, string comparisonResultPdfPath)
 {
-    using (var firstDocument = new Aspose.Pdf.Document(firstDocumentPath), secondDocument = new Aspose.Pdf.Document(secondDocumentPath))
+    using (var firstDocument = new Aspose.Pdf.Document(firstDocumentPath))
     {
-        var comparer = new Aspose.Pdf.Comparison.GraphicalComparison.GraphicalPdfComparer()
+        using (var secondDocument = new Aspose.Pdf.Document(secondDocumentPath))
         {
-            Threshold = 3.0,
-            Color = Color.Red,
-            Resolution = new Resolution(300)
-        };
-        comparer.CompareDocumentsToPdf(firstDocument, secondDocument, comparisonResultPdfPath);
+            var comparer = new Aspose.Pdf.Comparison.GraphicalComparison.GraphicalPdfComparer()
+            {
+                Threshold = 3.0,
+                Color = Color.Red,
+                Resolution = new Resolution(300)
+            };
+            comparer.CompareDocumentsToPdf(firstDocument, secondDocument, comparisonResultPdfPath);
+        }
     }
 }
 ```
