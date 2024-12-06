@@ -157,24 +157,24 @@ The SHA-256 hash algorithm is used for generating the signature. ECDSA signature
 You can use your usual code to sign documents with ECDSA and to verify signatures:
  
 ```cs
-public void Sign(string cert, string inputPdfFile, string outFile)
+private static void Sign(string cert, string inputPdfFile, string signedPdfFile)
 {
-    using (Document document = new Document(inputPdfFile))
+    using (var document = new Aspose.Pdf.Document(inputPdfFile))
     {
-        using (PdfFileSignature signature = new PdfFileSignature(document))
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            PKCS7Detached pkcs = new PKCS7Detached(cert, "12345");
+            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(cert, "12345");
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
-            signature.Save(outFile);
+            signature.Save(signedPdfFile);
         }
     }
 }
 
-public static void Verify(string fileName)
+private static void Verify(string signedPdfFile)
 {
-    using (Document document = new Document(fileName))
+    using (var document = new Aspose.Pdf.Document(signedPdfFile))
     {
-        using (PdfFileSignature signature = new PdfFileSignature(document))
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             var sigNames = signature.GetSignNames();
             foreach (var sigName in sigNames)
@@ -190,31 +190,31 @@ public static void Verify(string fileName)
 Sometimes, it is necessary to crop an image before inserting it into a PDF. We have added an overloaded version of the `AddImage()` method to support adding cropped images:
 
 ```cs
-var imagePath = "";
-var resultPdfPath = "";
-
-using (Document document = new Document())
+private static void InsertCroppedImageToPdf(string imageFile, string resultPdf)
 {
-    using (Stream imgStream = File.OpenRead(imagePath))
+    using (var document = new Aspose.Pdf.Document())
     {
-        // Define the rectangle where the image will be placed on the PDF page
-        Rectangle imageRect = new Rectangle(17.62, 65.25, 602.62, 767.25);                    
+        using (Stream imgStream = File.OpenRead(imageFile))
+        {
+            // Define the rectangle where the image will be placed on the PDF page
+            var imageRect = new Aspose.Pdf.Rectangle(17.62, 65.25, 602.62, 767.25);                    
 
-        // Crop the image to half its original width and height
-        var w = imageRect.Width / 2;
-        var h = imageRect.Height / 2;
-        Rectangle bbox = new Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
+            // Crop the image to half its original width and height
+            var w = imageRect.Width / 2;
+            var h = imageRect.Height / 2;
+            var bbox = new Aspose.Pdf.Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
 
-        // Add a new page to the document
-        Page page = document.Pages.Add();
+            // Add a new page to the document
+            var page = document.Pages.Add();
 
-        // Insert the cropped image onto the page, specifying the original position (imageRect)
-        // and the cropping area (bbox)
-        page.AddImage(imgStream, imageRect, bbox);
+            // Insert the cropped image onto the page, specifying the original position (imageRect)
+            // and the cropping area (bbox)
+            page.AddImage(imgStream, imageRect, bbox);
+        }
+
+        // Save the document to the specified file path
+        document.Save(resultPdf);
     }
-
-    // Save the document to the specified file path
-    document.Save(resultPdfPath);
 }
 ```
 
@@ -232,28 +232,30 @@ try
 }
 catch (Exception ex)
 {
-    PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+    Aspose.Pdf.PdfException.GenerateCrashReport(new Aspose.Pdf.CrashReportOptions(ex));
 }
 ```
 
 Extracting an PDF document layer elements and saving into new PDF stream are available from now. In PDF documents, layers (also known as Optional Content Groups or OCGs) are used for various purposes, primarily to manage and control the visibility of content within the document. This functionality is particularly useful in design, engineering, and publishing. For example: blueprint aspects, complex diagram components, language versions of the same content.
 
 ```cs
-var documentPath = "";
-var resultPdfPath ="";
-
-var inputDocument = new Document(documentPath);
-var inputPage = inputDocument.Pages[1];
-
-var layers = inputPage.Layers;
-
-foreach (var layer in layers)
+private static void ExtractPdfLayer(string inputPdfPath, string outputPdfName)
 {
-    var outputPdf = string.Format("{0}_{1}.pdf", resultPdfPath, layer.Id);
-
-    using (var stream = File.Create(outputPdf))
+    using (var inputDocument = new Aspose.Pdf.Document(inputPdfPath))
     {
-        layer.Save(stream);
+        var inputPage = inputDocument.Pages[1];
+
+        var layers = inputPage.Layers;
+
+        foreach (var layer in layers)
+        {
+            var extractedLayerPdfName = string.Format("{0}_{1}.pdf", outputPdfName, layer.Id);
+
+            using (var stream = File.Create(extractedLayerPdfName))
+            {
+                layer.Save(stream);
+            }
+        }
     }
 }
 ```
@@ -263,19 +265,21 @@ The `GraphicalPdfComparer` class is added for the graphic comparison of PDF docu
 The following code snippet demonstrates the graphic comparison of two PDF documents and saves an image with the differences into the resultant PDF document:
 
 ```cs
-var firstDocumentPath = "";
-var secondDocumentPath = "";
-var resultPdfPath = "";
-
-using (Document doc1 = new Document(firstDocumentPath), doc2 = new Document(secondDocumentPath))
+private static void PdfGraphicComparison(string firstDocumentPath, string secondDocumentPath, string comparisonResultPdfPath)
 {
-    GraphicalPdfComparer comparer = new GraphicalPdfComparer()
+    using (var firstDocument = new Aspose.Pdf.Document(firstDocumentPath))
     {
-        Threshold = 3.0,
-        Color = Color.Red,
-        Resolution = new Resolution(300)
-    };
-    comparer.CompareDocumentsToPdf(doc1, doc2, resultPdfPath);
+        using (var secondDocument = new Aspose.Pdf.Document(secondDocumentPath))
+        {
+            var comparer = new Aspose.Pdf.Comparison.GraphicalComparison.GraphicalPdfComparer()
+            {
+                Threshold = 3.0,
+                Color = Color.Red,
+                Resolution = new Resolution(300)
+            };
+            comparer.CompareDocumentsToPdf(firstDocument, secondDocument, comparisonResultPdfPath);
+        }
+    }
 }
 ```
 
@@ -284,29 +288,31 @@ API implemented for integrating FileFormat.HEIC and Aspose.PDF. The HEIC (High-E
 To convert HEIC images to PDF user should add the reference to `FileFormat.HEIC` NuGet package and use the following code snippet:
 
 ```cs
-var heicImagePath = "iphone_photo.heic";
-var resultPdfPath = "iphone_photo.pdf";
-
-using (var fs = new FileStream(heicImagePath, FileMode.Open))
+private static void HeicToPdf(string heicImagePath, string resultPdfPath)
 {
-    HeicImage image = HeicImage.Load(fs);
-    var pixels = image.GetByteArray(PixelFormat.Rgb24);
-    var width = (int)image.Width;
-    var height = (int)image.Height;
+    using (var fs = new FileStream(heicImagePath, FileMode.Open))
+    {
+        var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
+        var pixels = image.GetByteArray(FileFormat.Heic.Decoder.PixelFormat.Rgb24);
+        var width = (int)image.Width;
+        var height = (int)image.Height;
 
-    var document = new Document();
-    Page page = document.Pages.Add();
-    Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
-    asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
-    page.PageInfo.Height = height;
-    page.PageInfo.Width = width;
-    page.PageInfo.Margin.Bottom = 0;
-    page.PageInfo.Margin.Top = 0;
-    page.PageInfo.Margin.Right = 0;
-    page.PageInfo.Margin.Left = 0;
+        using (var document = new Aspose.Pdf.Document())
+        {
+            var page = document.Pages.Add();
+            var asposeImage = new Aspose.Pdf.Image();
+            asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, Aspose.Pdf.BitmapInfo.PixelFormat.Rgb24);
+            page.PageInfo.Height = height;
+            page.PageInfo.Width = width;
+            page.PageInfo.Margin.Bottom = 0;
+            page.PageInfo.Margin.Top = 0;
+            page.PageInfo.Margin.Right = 0;
+            page.PageInfo.Margin.Left = 0;
 
-    page.Paragraphs.Add(asposeImage);
-    document.Save(resultPdfPath);
+            page.Paragraphs.Add(asposeImage);
+            document.Save(resultPdfPath);
+        }
+    }
 }
 ```
 
