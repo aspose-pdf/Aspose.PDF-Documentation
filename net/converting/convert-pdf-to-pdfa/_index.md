@@ -110,7 +110,7 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 
 private static void ConvertPdfToPdfA()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open document
@@ -133,7 +133,7 @@ private static void ConvertPdfToPdfA()
 
 private static void ConvertPdfToPdfA()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open document
@@ -159,7 +159,7 @@ To perform validation only, use the following line of code:
 
 private static void ValidatePdfAStandard()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
     // Open document
@@ -178,7 +178,7 @@ private static void ValidatePdfAStandard()
        
 private static void ValidatePdfAStandard()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -202,7 +202,7 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b 
 
 private static void ConvertPdfToPdfA3b()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open document
@@ -224,7 +224,7 @@ private static void ConvertPdfToPdfA3b()
 
 private static void ConvertPdfToPdfA3b()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open document
@@ -251,7 +251,7 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-4 f
 
 private static void ConvertPdfToPdfA4()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Open document
@@ -276,7 +276,7 @@ private static void ConvertPdfToPdfA4()
 
 private static void ConvertPdfToPdfA4()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open document
@@ -307,7 +307,7 @@ PDF/A-3a is the format that provides the feature to attach any file format as an
 
 private static void AddAttachmentToPdfA()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
     // Instantiate Document instance to load existing file
@@ -336,7 +336,7 @@ private static void AddAttachmentToPdfA()
 
 private static void AddAttachmentToPdfA()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Instantiate Document instance to load existing file
@@ -369,7 +369,7 @@ As per PDF/A standards, fonts should be embedded in a PDF/A document. However, i
 
 private static void ReplaceMissingFonts()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     try
@@ -403,7 +403,7 @@ private static void ReplaceMissingFonts()
 
 private static void ReplaceMissingFonts()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     try

@@ -90,7 +90,7 @@ The [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewe
 
 private static void PrintToPostscriptFile()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -126,7 +126,7 @@ private static void PrintToPostscriptFile()
 
 private static void PrintToPostscriptFile()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -167,7 +167,7 @@ A PDF file can be printed to a physical printer as well as to the Microsoft XPS 
 
 private static void CheckingPrintJobStatus()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
@@ -235,7 +235,7 @@ private static void CheckingPrintJobStatus()
 
 private static void CheckingPrintJobStatus()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
@@ -308,7 +308,7 @@ Sometimes there occurs a need to get or set the print job owner name (i.e., the 
 
 private static void SetPrinterJobName()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -339,7 +339,7 @@ private static string GetCurrentUserCredentials()
 
 private static void SetPrinterJobName()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -379,7 +379,7 @@ Please note that there is no possibility to set owner value using Aspose.PDF pri
 
 private static void PrintWithImpersonation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -414,7 +414,7 @@ private static void PrintWithImpersonation()
 
 private static void PrintWithImpersonation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -461,7 +461,7 @@ struct PrintingJobSettings
 
 private static void PrintUsingSpoolerApi()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
@@ -563,7 +563,7 @@ struct PrintingJobSettings
 
 private static void PrintUsingSpoolerApi()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;

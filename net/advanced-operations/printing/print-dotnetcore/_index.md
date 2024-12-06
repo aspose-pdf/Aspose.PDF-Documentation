@@ -92,7 +92,7 @@ In this example, we convert PDF document into XPS and add it as a job to the que
 
 private static void PrintWithNetCore()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the secondary thread and pass the printing method for
@@ -139,7 +139,7 @@ private static void PrintPDF(string pdfFileName)
 
 private static void PrintWithNetCore()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the secondary thread and pass the printing method for
@@ -190,7 +190,7 @@ This preference can be switched on and off using the [Document.PickTrayByPdfSize
 
 private static void PickTrayByPdfSize()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create a new document
@@ -216,7 +216,7 @@ private static void PickTrayByPdfSize()
 
 private static void PickTrayByPdfSize()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create a new document
@@ -251,7 +251,7 @@ The page scaling option that shall be selected when a print dialog is displayed 
 
 private static void SetPrintScaling()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create an empty document
@@ -276,7 +276,7 @@ private static void SetPrintScaling()
 
 private static void SetPrintScaling()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create an empty document

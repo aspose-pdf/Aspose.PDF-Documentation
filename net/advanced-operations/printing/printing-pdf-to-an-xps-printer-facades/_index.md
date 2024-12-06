@@ -92,7 +92,7 @@ Finally, use [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/as
 
 private static void PrintToXpsPrinter()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -134,7 +134,7 @@ private static void PrintToXpsPrinter()
 
 private static void PrintToXpsPrinter()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -183,7 +183,7 @@ This preference can be switched on and off using the [PdfContentEditor](https://
 
 private static void PickTrayByPdfSizeFacade()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the PdfContentEditor facade
@@ -208,7 +208,7 @@ private static void PickTrayByPdfSizeFacade()
 
 private static void PickTrayByPdfSizeFacade()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the PdfContentEditor facade

@@ -90,7 +90,7 @@ Class [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) has m
 
 private static void ConvertPDFAtoPDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open document
@@ -112,7 +112,7 @@ private static void ConvertPDFAtoPDF()
 
 private static void ConvertPDFAtoPDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open document
@@ -137,7 +137,7 @@ PDF/A conformance may also be removed if you make any changes in the document (e
 
 private static void ConvertPDFAtoPDFAdvanced()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open document
@@ -159,7 +159,7 @@ private static void ConvertPDFAtoPDFAdvanced()
 
 private static void ConvertPDFAtoPDFAdvanced()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open document

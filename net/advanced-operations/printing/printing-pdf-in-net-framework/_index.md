@@ -92,7 +92,7 @@ The [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewe
 
 private static void SimplePrint()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -133,7 +133,7 @@ private static void SimplePrint()
 
 private static void SimplePrint()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -177,7 +177,7 @@ In order to display a print dialog, try using the following code snippet:
 
 private static void PrintWithPrintDialog()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -216,7 +216,7 @@ private static void PrintWithPrintDialog()
 
 private static void PrintWithPrintDialog()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
@@ -262,7 +262,7 @@ This preference can be switched on and off using the [Document.PickTrayByPdfSize
 
 private static void PickTrayByPdfSize()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create a new document
@@ -288,7 +288,7 @@ private static void PickTrayByPdfSize()
 
 private static void PickTrayByPdfSize()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create a new document
