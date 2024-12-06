@@ -269,7 +269,7 @@ private static void PickTrayByPdfSize()
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a new page and some content
-        Aspose.Pdf.Page page = document.Pages.Add();
+        var page = document.Pages.Add();
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
 
         // Set the flag to choose a paper tray using the PDF page size
@@ -295,7 +295,7 @@ private static void PickTrayByPdfSize()
     using var document = new Aspose.Pdf.Document();
 
     // Add a new page and some content
-    Aspose.Pdf.Page page = document.Pages.Add();
+    var page = document.Pages.Add();
     page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
 
     // Set the flag to choose a paper tray using the PDF page size
