@@ -4,7 +4,7 @@ linktitle: How to run other examples
 type: docs
 weight: 50
 url: /cpp/how-to-run-other-examples/
-description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
+description: Learn how to execute different examples using Aspose.PDF in C++ for seamless PDF document management.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -3,6 +3,7 @@ title: Get Page Properties in Python
 type: docs
 weight: 50
 url: /python-java/get-page-properties-in-python/
+description: Explore how to retrieve page properties of a PDF document using Python and Aspose.PDF, providing insight into document structure.
 ---
 
 To get page properties of Pdf document using **Aspose.PDF Java for Python**, simply invoke **GetPageProperties** class.

@@ -4,7 +4,7 @@ linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /net/text-formatting-inside-pdf/
-description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, and etc.
+description: Learn how to format text within a PDF document in .NET using Aspose.PDF to enhance the document's visual presentation.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

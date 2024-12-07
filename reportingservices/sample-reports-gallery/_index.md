@@ -3,6 +3,7 @@ title: Sample Reports Gallery
 type: docs
 weight: 40
 url: /reportingservices/sample-reports-gallery/
+description: Explore sample reports generated using Aspose.PDF for Reporting Services. See how your SSRS reports can transform into polished PDF outputs.
 lastmod: "2024-05-05"
 ---
 

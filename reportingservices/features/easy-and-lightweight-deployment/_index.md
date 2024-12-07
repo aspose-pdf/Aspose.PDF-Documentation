@@ -3,6 +3,7 @@ title: Easy and Lightweight Deployment
 type: docs
 weight: 40
 url: /reportingservices/easy-and-lightweight-deployment/
+description: Learn how to deploy Aspose.PDF for Reporting Services with minimal effort. Lightweight setup ensures quick implementation and efficiency.
 lastmod: "2021-06-05"
 ---
 

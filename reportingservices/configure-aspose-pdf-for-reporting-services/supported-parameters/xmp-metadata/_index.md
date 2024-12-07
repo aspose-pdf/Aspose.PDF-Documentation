@@ -3,6 +3,7 @@ title: XMP Metadata
 type: docs
 weight: 80
 url: /reportingservices/xmp-metadata/
+description: Learn to manage XMP metadata in PDF reports using Aspose.PDF for Reporting Services. Enhance document metadata handling.
 lastmod: "2021-06-05"
 ---
 

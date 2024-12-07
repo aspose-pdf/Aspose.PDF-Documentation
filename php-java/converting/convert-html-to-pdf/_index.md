@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /php-java/convert-html-to-pdf/
 lastmod: "2024-05-20"
-description: This topic show you how to Aspose.PDF allows to convert HTML and MHTML formats to PDF file.
+description: Learn how to easily convert HTML documents to PDF format using Aspose.PDF in PHP and Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

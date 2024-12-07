@@ -5,6 +5,7 @@ second_title: Aspose.PDF for JasperReports
 type: docs
 weight: 120
 url: /jasperreports/
+description: Integrate Aspose.PDF for JasperReports to export reports into professional-grade PDFs. Enhance your JasperReports capabilities effortlessly.
 is_root: true
 lastmod: "2021-06-05"
 ---

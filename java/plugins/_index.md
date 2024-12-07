@@ -3,6 +3,7 @@ title: Plugins from Java
 type: docs
 weight: 100
 url: /java/plugins/
+description: Enhance Aspose.PDF for Java with plugins. Discover how to extend PDF processing capabilities using additional tools and integrations.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

@@ -3,6 +3,7 @@ title: Insert an Empty Page at End of PDF File in PHP
 type: docs
 weight: 60
 url: /java/insert-an-empty-page-at-end-of-pdf-file-in-php/
+description: Learn how to insert an empty page at the end of a PDF document in PHP using Aspose.PDF for document expansion.
 lastmod: "2021-06-05"
 ---
 

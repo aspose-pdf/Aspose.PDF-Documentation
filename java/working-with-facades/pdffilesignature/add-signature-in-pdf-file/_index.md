@@ -3,7 +3,7 @@ title: Add Signature in PDF File
 type: docs
 weight: 10
 url: /java/add-signature-in-pdf/
-description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
+description: Learn how to add a digital signature to a PDF document using Aspose.PDF in Java for secure signing and document verification.
 lastmod: "2021-06-05"
 draft: false
 ---

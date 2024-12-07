@@ -75,7 +75,6 @@ const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
 
 1. **AsposePdfPrepare** - [Sign PDF](/pdf/javascript-cpp/sign-pdf/)
 1. **AsposePdfPrepareBase64**
-1. **AsposePdfGetAllFonts** - [Extract fonts from PDF](/pdf/javascript-cpp/extract-fonts-from-pdf/)
 1. **AsposePdfAddTextHeaderFooter** - [Add Headers and/or Footers](/pdf/javascript-cpp/add-headers-and-footers-of-pdf-file/)
 1. **AsposePdfRotateAllPages** - [Rotate Pages](/pdf/javascript-cpp/rotate-pages/)
 1. **AsposePdfConvertToGrayscale** - [Convert PDF to Grayscale](/pdf/javascript-cpp/conversion/)

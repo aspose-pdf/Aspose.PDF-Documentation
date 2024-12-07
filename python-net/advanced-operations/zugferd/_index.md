@@ -4,7 +4,7 @@ linktitle: Working with ZUGFeRD
 type: docs
 weight: 90
 url: /python-net/working-with-zugferd/
-description: Learn how to create ZUGFeRD-compliant PDF Invoices using Aspose.PDF for Java
+description: Explore how to handle ZUGFeRD invoices in Python with Aspose.PDF for managing and generating electronic invoices.
 lastmod: "2024-01-17"
 sitemap:
     changefreq: "monthly"

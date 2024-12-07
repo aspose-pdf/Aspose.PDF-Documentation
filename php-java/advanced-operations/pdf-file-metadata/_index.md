@@ -4,7 +4,7 @@ linktitle: PDF File Metadata
 type: docs
 weight: 140
 url: /php-java/pdf-file-metadata/
-description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
+description: Learn how to work with PDF file metadata and extract document properties using Aspose.PDF in PHP/Java.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

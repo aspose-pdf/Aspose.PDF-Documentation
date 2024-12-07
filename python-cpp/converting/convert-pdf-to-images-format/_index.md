@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-cpp/convert-pdf-to-images-format/
 lastmod: "2023-06-23"
-description: This topic show you how to use Aspose.PDF for Python to convert PDF to various images formats e.g. TIFF, BMP, EMF, JPEG, PNG, GIF, SVG with a few lines of code.
+description: Discover how to convert PDF documents into image formats (PNG, JPG, TIFF) using Aspose.PDF in Python via C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

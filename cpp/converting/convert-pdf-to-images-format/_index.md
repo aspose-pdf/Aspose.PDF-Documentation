@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert PDF to various images formats. Convert PDF pages to PNG, JPEG, BMP images with a few lines of code.
+description: Learn how to convert PDF pages into various image formats such as PNG, JPEG, or TIFF using Aspose.PDF in C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

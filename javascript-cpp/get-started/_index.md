@@ -29,7 +29,7 @@ Using Aspose.PDF for JavaScript in your project gives you the following profits:
 
 - [Extract a text from PDF](/pdf/javascript-cpp/extract-text/)
 - [Optimize PDF document](/pdf/javascript-cpp/optimize-pdf/)
-- [Add a stamp to PDF file](/pdf/javascript-cpp/add-stamp-to-pdf/)
+- [Add a stamp to PDF file](/pdf/javascript-cpp/stamping/)
 - [Add a image to PDF file](/pdf/javascript-cpp/add-image-to-pdf/)
 - [Split PDF to two files](/pdf/javascript-cpp/split-pdf/)
 - [Merge two files to PDF](/pdf/javascript-cpp/merge-pdf/)

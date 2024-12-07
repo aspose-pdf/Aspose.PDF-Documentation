@@ -42,5 +42,3 @@ It creates PDF documents effectively, allows you to use a familiar editor, and h
 ### Learn more about:
 
 - ["Hello, World" Python Example](/pdf/python-cpp/hello-world-example/)
-- [Complex PDF](/pdf/python-cpp/complex-pdf-example/)
-- [How to run other examples](/pdf/python-cpp/how-to-run-other-examples/)

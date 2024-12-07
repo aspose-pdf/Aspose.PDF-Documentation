@@ -5,6 +5,7 @@ second_title: Aspose.PDF for Java
 type: docs
 weight: 20
 url: /java/
+description: Learn about Aspose.PDF for Java, a robust library for creating, editing, and converting PDF files in Java applications with exceptional performance.
 is_root: true
 lastmod: "2021-06-05"
 ---

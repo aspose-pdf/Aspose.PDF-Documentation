@@ -4,7 +4,7 @@ linktitle: Create or Add Table
 type: docs
 weight: 10
 url: /php-java/add-table-in-existing-pdf-document/
-description: Learn how to create or add table to a PDF document, applying cell style, splitting table on pages and customize the rows and columns etc.
+description: Explore how to insert a table into an existing PDF document in PHP using Aspose.PDF for enhanced data organization.
 lastmod: "2024-05-16"
 sitemap:
     changefreq: "monthly"

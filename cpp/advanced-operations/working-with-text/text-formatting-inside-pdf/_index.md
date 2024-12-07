@@ -4,7 +4,7 @@ linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /cpp/text-formatting-inside-pdf/
-description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, adding a border around the added text, text alignment for floating box contents and etc.
+description: Learn how to apply text formatting within PDFs in C++ using Aspose.PDF to control text appearance.
 lastmod: "2021-12-13"
 sitemap:
     changefreq: "weekly"

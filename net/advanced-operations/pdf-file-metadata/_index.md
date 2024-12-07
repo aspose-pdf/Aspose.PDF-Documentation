@@ -4,7 +4,7 @@ linktitle: PDF File Metadata
 type: docs
 weight: 200
 url: /net/pdf-file-metadata/
-description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
+description: Explore how to extract and manage PDF metadata, such as author and title, in .NET using Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"

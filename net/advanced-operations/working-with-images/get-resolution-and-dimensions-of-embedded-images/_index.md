@@ -4,7 +4,7 @@ linktitle: Get Resolution and Dimensions
 type: docs
 weight: 40
 url: /net/get-resolution-and-dimensions-of-embedded-images/
-description: This section shows details in getting resolution and dimensions of Embedded Images
+description: Learn how to retrieve resolution and dimensions of embedded images from a PDF in .NET using Aspose.PDF.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">

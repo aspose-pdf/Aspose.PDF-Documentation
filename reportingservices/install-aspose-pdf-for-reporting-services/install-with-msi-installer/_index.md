@@ -3,6 +3,7 @@ title: Install with MSI Installer
 type: docs
 weight: 10
 url: /reportingservices/install-with-msi-installer/
+description: Learn how to install Aspose.PDF for Reporting Services using the MSI installer. A straightforward guide for quick setup.
 lastmod: "2021-06-05"
 ---
 

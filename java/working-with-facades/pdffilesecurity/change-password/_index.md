@@ -3,7 +3,7 @@ title: Change Password of PDF File
 type: docs
 weight: 40
 url: /java/change-password/
-description: This topic explains how change-password on PDF File using PdfFileSecurity Class.
+description: Learn how to change the password of a PDF file for enhanced security using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

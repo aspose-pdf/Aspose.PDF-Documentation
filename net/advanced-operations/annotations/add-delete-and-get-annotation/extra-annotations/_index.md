@@ -4,7 +4,7 @@ linktitle: Extra Annotations
 type: docs
 weight: 60
 url: /net/extra-annotations/
-description: This section describes how to add, get, and delete extra kinds of annotations from your PDF document.
+description: Learn how to add additional annotations to PDF files in .NET using Aspose.PDF for interactive document features.
 lastmod: "2023-09-12"
 sitemap:
     changefreq: "monthly"

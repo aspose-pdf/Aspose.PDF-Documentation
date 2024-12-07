@@ -3,6 +3,7 @@ title: Ruby Programmers Guide
 type: docs
 weight: 20
 url: /java/ruby-programmers-guide/
+description: Comprehensive guide for Ruby developers to use Aspose.PDF for creating, editing, and managing PDF documents.
 lastmod: "2021-06-05"
 ---
 

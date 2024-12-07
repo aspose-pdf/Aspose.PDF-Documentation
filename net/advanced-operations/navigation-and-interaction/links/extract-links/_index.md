@@ -4,7 +4,7 @@ linktitle: Extract Links
 type: docs
 weight: 30
 url: /net/extract-links/
-description: Extract links from PDF with C#. This topic explain you how to extract links using AnnotationSelector class.
+description: Discover how to extract hyperlinks from PDF documents in .NET using Aspose.PDF for content management and link analysis.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"

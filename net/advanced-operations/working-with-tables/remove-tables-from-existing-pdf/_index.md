@@ -4,6 +4,7 @@ linktitle: Remove Tables
 type: docs
 weight: 50
 url: /net/remove-tables-from-existing-pdf/
+description: Understand how to remove tables from a PDF document using Aspose.PDF for .NET, improving document clarity and structure.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"

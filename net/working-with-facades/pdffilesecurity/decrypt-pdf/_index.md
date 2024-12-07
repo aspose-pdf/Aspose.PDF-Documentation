@@ -3,7 +3,7 @@ title: Decrypt PDF File
 type: docs
 weight: 20
 url: /net/decrypt-pdf-file/
-description: This topic explains how to Decrypt PDF File using PdfFileSecurity Class.
+description: Explore methods to decrypt password-protected PDF files in .NET, ensuring access to the document's content using Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---

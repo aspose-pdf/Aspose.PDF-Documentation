@@ -3,6 +3,7 @@ title: Working with Documents in Python via Java
 type: docs
 weight: 20
 url: /python-java/working-with-documents/
+description: Learn to create, edit, and manage PDF documents in Python using Aspose.PDF. Simplify your document workflow.
 lastmod: "2021-06-05"
 ---
 

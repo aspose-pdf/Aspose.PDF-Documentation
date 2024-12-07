@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /python-net/convert-pdf-to-word/
 lastmod: "2022-12-23"
-description: Learn how to write Python code for PDF to Microsoft Word formats conversion with Aspose.PDF for Python via .NET. and tune up conversion PDF to DOC(DOCX).
+description: Learn how to convert PDF documents to Word format in Python using Aspose.PDF for easy document editing.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

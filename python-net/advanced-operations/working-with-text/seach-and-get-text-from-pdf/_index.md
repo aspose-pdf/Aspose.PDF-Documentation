@@ -4,7 +4,7 @@ linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /python-net/search-and-get-text-from-pdf/
-description: This article explains how to use various tools to search and get a text from Aspose.PDF for .NET.
+description: Learn how to search and extract text from PDF documents in Python using Aspose.PDF for document analysis.
 lastmod: "2024-02-17"
 sitemap:
     changefreq: "monthly"

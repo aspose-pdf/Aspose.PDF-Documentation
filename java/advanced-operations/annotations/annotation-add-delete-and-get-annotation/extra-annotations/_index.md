@@ -4,7 +4,7 @@ linktitle: Extra Annotations
 type: docs
 weight: 60
 url: /java/extra-annotations/
-description: This section describes how to add, get, and delete extra kinds of annotations from your PDF document.
+description: Discover how to add extra annotations to PDF documents in Java with Aspose.PDF for more interactive documents.
 lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"

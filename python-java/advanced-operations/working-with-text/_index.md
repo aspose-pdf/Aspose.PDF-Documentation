@@ -3,6 +3,7 @@ title: Working with Text in Python via Java
 type: docs
 weight: 40
 url: /python-java/working-with-text/
+description: Master text operations in PDF files using Aspose.PDF for Python. Add, extract, and format text with ease.
 lastmod: "2021-06-05"
 ---
 

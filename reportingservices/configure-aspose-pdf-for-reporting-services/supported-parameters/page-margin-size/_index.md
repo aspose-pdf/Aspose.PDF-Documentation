@@ -3,6 +3,7 @@ title: Page margin size
 type: docs
 weight: 70
 url: /reportingservices/page-margin-size/
+description: Adjust page margin sizes in PDF reports with Aspose.PDF for Reporting Services for improved readability and layout.
 lastmod: "2021-06-05"
 ---
 

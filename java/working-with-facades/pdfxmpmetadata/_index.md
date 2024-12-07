@@ -3,7 +3,7 @@ title: PdfXmpMetadata Class
 type: docs
 weight: 100
 url: /java/pdfxmpmetadata-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfXmpMetadata Class.
+description: Learn how to manage and extract XMP metadata embedded in PDF documents using the PDFXMPMetadata class in Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

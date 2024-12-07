@@ -4,6 +4,7 @@ linktitle: Using in other languages
 type: docs
 weight: 110
 url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
+description: Learn how to use Aspose.PDF for .NET in other programming languages like VB.NET, C++, and more. Maximize the versatility of PDF processing.
 lastmod: "2024-11-21"
 ---
 

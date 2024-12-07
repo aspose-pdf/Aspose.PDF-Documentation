@@ -3,6 +3,7 @@ title: Supported File Formats
 type: docs
 weight: 20
 url: /reportingservices/supported-file-formats/
+description: Check out the supported file formats of Aspose.PDF for Reporting Services. Render your SSRS reports to PDF, DOC, XLS, and more with ease.
 lastmod: "2021-06-05"
 ---
 

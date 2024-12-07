@@ -4,7 +4,7 @@ linktitle: Text Formatting inside PDF
 type: docs
 weight: 30
 url: /python-net/text-formatting-inside-pdf/
-description: This page explains how to format text inside your PDF file. There are adding line Indent, adding text border, adding underline text, and etc.
+description: Explore text formatting options within PDF files in Python using Aspose.PDF for customized document styling.
 lastmod: "2024-02-17"
 sitemap:
     changefreq: "monthly"

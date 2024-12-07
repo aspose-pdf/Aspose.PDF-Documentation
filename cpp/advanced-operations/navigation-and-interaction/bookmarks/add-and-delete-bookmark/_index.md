@@ -117,7 +117,7 @@ void DeleteAllBookmarksFromPDFDocument() {
 
 ## Delete a Particular Bookmark from a PDF Document
 
-[Delete All Attachments from PDF document](https://docs.aspose.com/pdf/cpp/working-with-attachments/) showed how to delete all attachments from a PDF file. It is also possible to only remove specific attachments.
+[Delete All Attachments from PDF document](https://docs.aspose.com/pdf/cpp/removing-attachment-from-an-existing-pdf/) showed how to delete all attachments from a PDF file. It is also possible to only remove specific attachments.
 
 To delete a particular bookmark from a PDF file:
 

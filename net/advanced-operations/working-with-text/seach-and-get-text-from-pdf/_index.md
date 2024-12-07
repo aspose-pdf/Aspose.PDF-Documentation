@@ -4,7 +4,7 @@ linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /net/search-and-get-text-from-pdf/
-description: This article explains how to use various tools to search and get a text from Aspose.PDF for .NET.
+description: Discover how to search and retrieve text from a PDF file in .NET using Aspose.PDF for text analysis and extraction.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

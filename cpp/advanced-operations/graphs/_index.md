@@ -4,7 +4,7 @@ linktitle: Working with Graphs
 type: docs
 weight: 70
 url: /cpp/graphs/
-description: This article explains what a is Graph, how to create a filled rectangle object, how to add text inside a graph object, how to add a line object to PDF and etc.
+description: Learn how to create and manipulate graphs within PDF files in C++ using Aspose.PDF for visual data representation.
 lastmod: "2021-12-18"
 sitemap:
     changefreq: "weekly"

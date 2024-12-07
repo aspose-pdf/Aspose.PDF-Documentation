@@ -3,6 +3,7 @@ title: Add, Delete and Get Annotation - Facades
 type: docs
 weight: 10
 url: /cpp/add-delete-and-get-annotation-facades/
+description: Discover how to add, delete, and retrieve annotations in PDF documents using C++ and Aspose.PDF for advanced document markup.
 ---
 
 ## <ins>**Add Annotation in an existing PDF file using PdfContentEditor**

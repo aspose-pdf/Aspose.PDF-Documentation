@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-net/converting/
 lastmod: "2022-12-22"
-description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python API.
+description: Learn how to convert PDFs to other formats in Python (NET) with Aspose.PDF for streamlined document processing.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

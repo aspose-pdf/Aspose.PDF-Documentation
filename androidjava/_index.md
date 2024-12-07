@@ -5,6 +5,7 @@ second_title: Aspose.PDF for Android via Java
 type: docs
 weight: 100
 url: /androidjava/
+description: Explore Aspose.PDF for Android via Java. Create, manipulate, and convert PDF files seamlessly in Android applications with powerful features.
 is_root: true
 lastmod: "2021-05-08"
 ---

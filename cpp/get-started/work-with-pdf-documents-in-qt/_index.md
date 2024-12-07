@@ -3,6 +3,7 @@ title: Work with PDF Documents in Qt
 type: docs
 weight: 130
 url: /cpp/work-with-pdf-documents-in-qt/
+description: Discover how to create and manage PDF documents in Qt using Aspose.PDF for C++. Follow this comprehensive guide.
 lastmod: "2021-11-01"
 ---
 

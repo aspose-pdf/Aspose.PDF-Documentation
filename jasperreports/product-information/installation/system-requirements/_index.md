@@ -3,6 +3,7 @@ title: System Requirements
 type: docs
 weight: 10
 url: /jasperreports/system-requirements/
+description: Learn about the system requirements for Aspose.PDF for JasperReports. Ensure compatibility and optimal performance with your environment.
 lastmod: "2021-06-05"
 ---
 

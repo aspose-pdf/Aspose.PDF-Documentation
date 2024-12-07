@@ -43,6 +43,5 @@ Converting  PDF/A to PDF formats and back it's possible with Java library.
 | Convert File to PDF | Convert PDF to File |
 | :---------------- | :------------------ |
 | [Convert Text to PDF](/pdf/androidjava/convert-text-to-pdf/) | [Convert PDF to Text](/pdf/androidjava/convert-pdf-to-txt/) |
-| [Convert PCL to PDF](/pdf/androidjava/convert-pcl-to-pdf/) | |
 | [Convert XML to PDF](/pdf/androidjava/convert-xml-to-pdf/) | |
 

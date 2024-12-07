@@ -3,6 +3,7 @@ title: Set PDF Expiration in PHP
 type: docs
 weight: 80
 url: /java/set-pdf-expiration-in-php/
+description: Discover how to set an expiration date for a PDF file in PHP, controlling access with Aspose.PDF.
 lastmod: "2021-06-05"
 ---
 

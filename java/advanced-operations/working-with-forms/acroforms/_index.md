@@ -4,7 +4,7 @@ linktitle: AcroForms
 type: docs
 weight: 10
 url: /java/acroforms/
-description: With Aspose.PDF for Java you may create a form from scratch, fill the form field in a PDF document, extract data from the form, add or remove fields in the existing form.
+description: Learn how to work with AcroForms in PDF documents, including form field creation, modification, and data extraction using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
@@ -34,7 +34,7 @@ So, PDFs are the best file format for forms since they can be distributed electr
 
 For a more detailed study of the possibilities of working with forms, study the following articles in the section:
 
--[Create AcroForm](/pdf/java/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using Java.
+-[Create AcroForm](/pdf/java/create-forms/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using Java.
 
 -[Fill AcroForm](/pdf/java/fill-form/) - to fill a form field, get the field from the Document object's Form collection.
 

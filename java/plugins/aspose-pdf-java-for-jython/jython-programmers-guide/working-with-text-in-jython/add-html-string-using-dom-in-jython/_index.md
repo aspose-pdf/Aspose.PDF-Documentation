@@ -3,6 +3,7 @@ title: Add HTML String using DOM in Jython
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-jython/
+description: Explore how to add HTML content to a PDF document using the DOM in Jython with Aspose.PDF for rich document creation.
 lastmod: "2021-06-05"
 ---
 

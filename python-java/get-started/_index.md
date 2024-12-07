@@ -45,6 +45,4 @@ It creates PDF documents effectively, allows you to use a familiar editor, and h
 ### Learn more about
 
 - [Basics of DOM API](/pdf/python-java/basics-of-dom-api/)
-- ["Hello, World" Java Example](/pdf/python-java/hello-world-example/)
 - [Complex PDF](/pdf/python-java/complex-pdf-example/)
-- [How to run other examples](/pdf/python-java/how-to-run-other-examples/)

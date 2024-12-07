@@ -3,6 +3,7 @@ title: Insert an Image into a Table Cell in PDF
 type: docs
 weight: 20
 url: /java/insert-an-image-into-a-table-cell-in-pdf/
+description: Learn how to embed images in table cells within PDFs using Aspose.PDF for Java. Add visual appeal to your documents.
 lastmod: "2022-01-27"
 ---
 

@@ -4,7 +4,7 @@ linktitle: Extra Annotations
 type: docs
 weight: 60
 url: /cpp/extra-annotations/
-description: This section describes how to add, get, and delete extra kinds of annotations from your PDF document.
+description: Explore how to add extra annotations, such as comments or highlights, to PDF files in C++ using Aspose.PDF.
 lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"

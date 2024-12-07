@@ -4,7 +4,7 @@ linktitle: Sticky Annotation
 type: docs
 weight: 50
 url: /net/sticky-annotations/
-description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text.
+description: Learn how to create sticky annotations, such as notes and highlights, in PDFs using Aspose.PDF in .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

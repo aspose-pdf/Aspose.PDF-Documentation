@@ -3,6 +3,7 @@ title: Installing and Using Aspose.Pdf for IntelliJ IDEA - Maven
 type: docs
 weight: 10
 url: /java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
+description: Discover the steps to install and configure Aspose.PDF for IntelliJ IDEA with Maven for efficient PDF document processing in Java.
 lastmod: "2021-06-05"
 ---
 

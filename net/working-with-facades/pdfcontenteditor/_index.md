@@ -3,7 +3,7 @@ title: PdfContentEditor Class
 type: docs
 weight: 30
 url: /net/pdfcontenteditor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfContentEditor Class.
+description: Explore how to edit PDF content programmatically using the PDFContentEditor class in .NET with Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

@@ -40,5 +40,5 @@ Read more about:
 
 - [Working with Document Conversion in Python via Java](/pdf/python-java/conversion/)
 - [Working with Document Object in Python via Java](/pdf/python-java/working-with-documents/)
-- [Working with Pages in Python via Java](/pdf/python-java/working-with-pages/)
+- [Working with Pages in Python via Java](/pdf/python-java/working-with-pages-in-python/)
 - [Working with Text in Python via Java](/pdf/python-java/working-with-text/)

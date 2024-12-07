@@ -3,7 +3,7 @@ title: Convert PDF File
 type: docs
 weight: 30
 url: /net/convert-pdf-file/
-description: This section explains how to convert PDF File with Aspose.PDF Facades using PdfConverter class.
+description: Learn how to convert a PDF file to various formats in .NET using Aspose.PDF for flexible document handling.
 lastmod: "2021-06-05"
 draft: false
 ---

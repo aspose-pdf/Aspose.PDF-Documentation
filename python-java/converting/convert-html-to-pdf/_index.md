@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /python-java/convert-html-to-pdf/
 lastmod: "2023-04-06"
-description: This topic show you how to convert HTML to PDF and MHTML to PDF using Aspose.PDF. for Python.
+description: Learn how to convert HTML content into PDF format using Aspose.PDF in Python for Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

@@ -3,7 +3,7 @@ title: PdfExtractor Class
 type: docs
 weight: 60
 url: /java/pdfextractor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfExtractor Class.
+description: Explore how to extract text and images from a PDF file using the PDFExtractor class in Java with Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

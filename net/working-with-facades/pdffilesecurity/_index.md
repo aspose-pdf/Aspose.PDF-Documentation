@@ -3,7 +3,7 @@ title: PdfFileSecurity Class
 type: docs
 weight: 125
 url: /net/pdffilesecurity-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileSecurity Class Class.
+description: Learn how to secure PDF documents by applying encryption, digital signatures, and access controls using the PDFFileSecurity class in .NET.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

@@ -4,7 +4,7 @@ linktitle: sticky Annotation
 type: docs
 weight: 50
 url: /python-net/sticky-annotations/
-description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text.
+description: Discover how to add sticky annotations in PDF documents using Aspose.PDF in Python via .NET for comments and feedback.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

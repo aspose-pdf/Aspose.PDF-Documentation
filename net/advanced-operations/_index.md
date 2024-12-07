@@ -90,8 +90,8 @@ You'll learn different ways to:
 - [Working with XML](/pdf/net/working-with-xml) - construct PDF documents based on the XML structure.
 - [Working with Operators](/pdf/net/working-with-operators/) - make low-level operations in PDF.
 - [Working with Vector Graphics](/pdf/net/working-with-vector-graphics) - describes the features of working with GraphicsAbsorber.
-- [Working with ZUGFeRD](pdf/net/working-with-zugferd) - create ZUGFeRD-compliant PDF invoices.
-- [Working with Javascript](pdf/net/working-with-javascript) - add, remove Javascript code in PDF.
+- [Working with ZUGFeRD](/pdf/net/working-with-zugferd) - create ZUGFeRD-compliant PDF invoices.
+- [Working with Javascript](/pdf/net/working-with-javascript) - add, remove Javascript code in PDF.
 - [Compare PDF documents](/pdf/net/compare-pdf-documents/) - possible to compare PDF documents content.
 - [Navigation and Interaction](/pdf/net/navigation-and-interaction/) - deal with actions, bookmarks, navigate pages.
 - [PDF AI Copilot](/pdf/net/ai-copilot/) - allow to process PDF documents using LLMs from different providers.

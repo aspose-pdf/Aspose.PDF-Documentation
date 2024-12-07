@@ -4,7 +4,7 @@ linktitle: Manipulate PDF Document
 type: docs
 weight: 30
 url: /php-java/manipulate-pdf-document/
-description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
+description: Discover how to manipulate PDF files in PHP with Aspose.PDF for content modification and document structuring.
 lastmod: "2024-06-05"
 ---
 

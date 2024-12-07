@@ -3,6 +3,7 @@ title: Set PDF Expiration in Ruby
 type: docs
 weight: 110
 url: /java/set-pdf-expiration-in-ruby/
+description: Implement expiration dates in PDFs using Aspose.PDF for Ruby for time-sensitive documents.
 lastmod: "2021-06-05"
 ---
 

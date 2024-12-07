@@ -3,7 +3,7 @@ title: Convert PDF File
 type: docs
 weight: 20
 url: /java/convert-pdf-file/
-description: This section explains how to convert PDF File with Aspose.PDF Facades using PdfConverter class.
+description: Explore how to convert a PDF file to other formats in Java with Aspose.PDF for efficient document format transformation.
 lastmod: "2021-06-05"
 draft: false
 ---

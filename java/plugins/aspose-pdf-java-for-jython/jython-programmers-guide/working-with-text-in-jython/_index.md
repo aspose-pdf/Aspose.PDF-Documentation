@@ -3,6 +3,7 @@ title: Working With Text in Jython
 type: docs
 weight: 40
 url: /java/working-with-text-in-jython/
+description: Explore text manipulation in PDFs using Jython with Aspose.PDF, making it easier to work with text content in documents.
 lastmod: "2021-06-05"
 ---
 

@@ -3,6 +3,7 @@ title: PDF File Metadata
 type: docs
 weight: 20
 url: /cpp/pdf-file-metadata/
+description: Discover how to read and modify PDF metadata using Aspose.PDF for C++. Enhance PDF document properties with easy-to-follow instructions.
 ---
 
 ## Get/Set PDF File Information

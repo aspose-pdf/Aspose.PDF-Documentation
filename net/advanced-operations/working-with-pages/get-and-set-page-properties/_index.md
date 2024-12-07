@@ -2,6 +2,7 @@
 title: Get and Set Page Properties
 type: docs
 url: /net/get-and-set-page-properties/
+description: Learn how to get and set page properties for PDF documents using Aspose.PDF for .NET, allowing for customized document formatting.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">

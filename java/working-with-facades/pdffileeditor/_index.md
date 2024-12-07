@@ -3,7 +3,7 @@ title: PdfFileEditor Class
 type: docs
 weight: 10
 url: /java/pdffileeditor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileEditor class.
+description: Discover how to use the PDFFileEditor class in Java to edit and manipulate PDF documents using Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

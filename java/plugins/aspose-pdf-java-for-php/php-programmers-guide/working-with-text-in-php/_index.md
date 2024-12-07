@@ -3,6 +3,7 @@ title: Working with Text in PHP
 type: docs
 weight: 40
 url: /java/working-with-text-in-php/
+description: Learn how to manipulate and extract text from PDF documents in PHP using Aspose.PDF for better content handling.
 lastmod: "2021-06-05"
 ---
 

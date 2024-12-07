@@ -29,4 +29,4 @@ You'll learn different ways to:
 
 - [Working with Documents](/pdf/python-cpp/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
 - [Working with Pages](/pdf/python-cpp/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
-- [Encrypt, and Decrypt PDF](/pdf/python-cpp/encrypt-decrypt-pdf/) - encrypt, and decrypt PDFs using Python.
+- [Encrypt, and Decrypt PDF](/pdf/python-cpp/set-privileges-encrypt-and-decrypt-pdf-file/) - encrypt, and decrypt PDFs using Python.

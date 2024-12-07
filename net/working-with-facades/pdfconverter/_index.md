@@ -3,7 +3,7 @@ title: PdfConverter Class
 type: docs
 weight: 70
 url: /net/pdfconverter-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfConverter class.
+description: Learn how to utilize the PDFConverter class in .NET to convert PDF documents into different formats with Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

@@ -4,6 +4,7 @@ linktitle: Manipulate Tables
 type: docs
 weight: 40
 url: /python-net/manipulate-tables-in-existing-pdf/
+description: Discover how to manipulate tables in an existing PDF document using Python .NET, simplifying your document editing tasks.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

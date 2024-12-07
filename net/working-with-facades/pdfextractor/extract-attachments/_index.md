@@ -3,7 +3,7 @@ title: Extract Attachments from PDF File
 type: docs
 weight: 10
 url: /net/extract-attachments/
-description: This section explains about extracting attachments from pdf with PdfExtractor class.
+description: Discover how to extract and manage attachments in PDF documents in .NET using Aspose.PDF for better document handling.
 lastmod: "2021-06-05"
 ---
 <script type="application/ld+json">

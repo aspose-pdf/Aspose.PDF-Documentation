@@ -3,7 +3,7 @@ title: Set Privileges on PDF
 type: docs
 weight: 50
 url: /net/set-privileges/
-description: This topic explains how to set privileges on an existing PDF file using PdfFileSecurity Class.
+description: Discover how to modify user privileges in PDF files, restricting certain actions using Aspose.PDF in .NET.
 lastmod: "2021-06-05"
 draft: false
 ---

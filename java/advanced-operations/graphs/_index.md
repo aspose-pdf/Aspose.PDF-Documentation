@@ -4,7 +4,7 @@ linktitle: Working with Graphs
 type: docs
 weight: 70
 url: /java/graphs/
-description: This article explains what a is Graph, how to create a filled rectangle object, how to add text inside a graph object, how to add a line object to PDF and etc.
+description: Learn how to create and manage graphs within PDF documents using Aspose.PDF in Java for visualizing data effectively.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

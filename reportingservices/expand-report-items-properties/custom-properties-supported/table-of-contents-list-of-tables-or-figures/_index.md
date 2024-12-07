@@ -3,6 +3,7 @@ title: Table of Contents List of Tables or Figures
 type: docs
 weight: 10
 url: /reportingservices/table-of-contents-list-of-tables-or-figures/
+description: Learn how to add a Table of Contents, List of Tables, or Figures in PDF reports using Aspose.PDF for Reporting Services.
 lastmod: "2021-06-05"
 ---
 

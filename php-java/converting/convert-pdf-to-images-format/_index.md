@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /php-java/convert-pdf-to-images-format/
 lastmod: "2024-05-20"
-description: This topic show you how to Aspose.PDF allows to convert PDF to various images formats. Convert PDF pages to PNG, JPEG, BMP images with a few lines of code.
+description: Explore how to convert PDF documents into image formats (PNG, JPG, TIFF) using Aspose.PDF in PHP via Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

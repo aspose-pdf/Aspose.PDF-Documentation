@@ -4,7 +4,7 @@ linktitle: Extract Paragraph
 type: docs
 weight: 20
 url: /php-java/extract-paragraph-from-pdf/
-description: This article describes how to use ParagraphAbsorber - a special tool in Aspose.PDF to extract text from PDF documents.
+description: Explore how to extract paragraphs from a PDF file in PHP using Aspose.PDF for efficient text extraction.
 lastmod: "2024-05-20"
 sitemap:
     changefreq: "monthly"

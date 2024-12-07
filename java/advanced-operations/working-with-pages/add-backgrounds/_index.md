@@ -4,7 +4,7 @@ linktitle: Add backgrounds
 type: docs
 weight: 110
 url: /java/add-backgrounds/
-descriptions: Add background image to the your PDF file with Java. Use the BackgroundArtifact object.
+description: Learn how to add backgrounds to PDF documents using Aspose.PDF for Java. Follow this step-by-step guide for creative customization.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

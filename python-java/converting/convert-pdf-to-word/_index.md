@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /python-java/convert-pdf-to-word/
 lastmod: "2023-04-06"
-description: Learn how to write Python code for PDF to Microsoft Word formats conversion with Aspose.PDF for Python via .NET. and tune up conversion PDF to DOC(DOCX).
+description: Discover how to convert PDF files to Word format in Java using Aspose.PDF for efficient content extraction and modification.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

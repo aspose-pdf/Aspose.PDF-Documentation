@@ -3,6 +3,7 @@ title: PDF_A Conformance
 type: docs
 weight: 100
 url: /reportingservices/pdf_a-conformance/
+description: Enable PDF/A conformance in Aspose.PDF for Reporting Services. Create archival-compliant documents effortlessly.
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: Control Exception PDF File
 type: docs
 weight: 30
 url: /net/control-exception/
-description: This topic explains how control exception on PDF File using PdfFileSecurity Class Class.
+description: Learn how to handle exceptions in PDF processing and ensure smooth operations while working with PDFs using Aspose.PDF in .NET.
 lastmod: "2021-06-05"
 draft: false
 ---

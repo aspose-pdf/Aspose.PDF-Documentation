@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /php-java/convert-pdf-to-pdfa/
 lastmod: "2024-05-20"
-description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
+description: Explore how to convert PDF files to PDF/A format for compliance with document archiving standards in PHP via Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

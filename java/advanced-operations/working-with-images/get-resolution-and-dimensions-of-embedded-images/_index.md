@@ -4,7 +4,7 @@ linktitle: Get Resolution and Dimensions
 type: docs
 weight: 40
 url: /java/get-resolution-and-dimensions-of-embedded-images/
-description: This section shows details in getting resolution and dimensions of Embedded Images
+description: Discover how to extract image resolutions and dimensions from embedded images in PDF files using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 ---
 

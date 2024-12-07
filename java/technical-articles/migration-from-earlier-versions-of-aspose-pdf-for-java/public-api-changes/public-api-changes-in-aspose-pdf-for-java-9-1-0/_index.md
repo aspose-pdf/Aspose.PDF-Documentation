@@ -3,6 +3,7 @@ title: Public API Changes in Aspose.PDF for Java 9.1.0
 type: docs
 weight: 40
 url: /java/public-api-changes-in-aspose-pdf-for-java-9-1-0/
+description: Discover the key public API changes in Aspose.PDF for Java version 9.1.0, ensuring optimal use of the new features and fixes.
 lastmod: "2022-01-27"
 ---
 

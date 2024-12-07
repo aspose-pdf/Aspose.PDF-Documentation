@@ -4,7 +4,7 @@ linktitle: Add Text to PDF
 type: docs
 weight: 10
 url: /net/add-text-to-pdf-file/
-description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
+description: Learn how to add text to a PDF document in .NET using Aspose.PDF for content enhancement and document editing.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

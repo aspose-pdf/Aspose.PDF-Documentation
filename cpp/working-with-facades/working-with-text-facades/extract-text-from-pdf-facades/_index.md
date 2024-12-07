@@ -3,6 +3,7 @@ title: Extract Text from PDF - Facades
 type: docs
 weight: 10
 url: /cpp/extract-text-from-pdf-facades/
+description: Learn how to extract text from PDF documents using the Facades API in C++ with Aspose.PDF for efficient content extraction.
 ---
 
 ## <ins>**Extract Text from all Pages of the Document**

@@ -3,7 +3,7 @@ title: PdfXmpMetadata Class
 type: docs
 weight: 130
 url: /net/pdfxmpmetadata-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfXmpMetadata Class.
+description: Discover how to work with XMP metadata in PDF files using the PDFXMPMetadata class in .NET with Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

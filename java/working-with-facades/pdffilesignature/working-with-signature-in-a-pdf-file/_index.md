@@ -3,7 +3,7 @@ title: Working with Signature in PDF File
 type: docs
 weight: 40
 url: /java/working-with-signature-in-a-pdf-file/
-description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
+description: Discover how to manage digital signatures in PDF documents, including adding, removing, and verifying, using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

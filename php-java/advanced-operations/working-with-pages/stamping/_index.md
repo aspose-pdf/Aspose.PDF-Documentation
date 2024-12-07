@@ -4,7 +4,7 @@ linktitle: Stamping
 type: docs
 weight: 120
 url: /php-java/stamping/
-description: This section describes how to add image stamps and text stamps to a PDF page.
+description: Discover how to add stamps, watermarks, or annotations to PDFs in PHP/Java using Aspose.PDF for document customization.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

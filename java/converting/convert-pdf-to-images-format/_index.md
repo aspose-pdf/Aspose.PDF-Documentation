@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/convert-pdf-to-images-format/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert PDF to various images formats. Convert PDF pages to PNG, JPEG, BMP images with a few lines of code.
+description: Discover how to convert PDF pages into image formats like PNG, JPEG, and TIFF using Aspose.PDF for Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

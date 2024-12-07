@@ -19,6 +19,6 @@ You are able to do the following:
 
 - [Optimize PDF](/pdf/python-cpp/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
 - [Merge PDF](/pdf/python-cpp/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using Python.
-- [Split PDF](/pdf/python-cpp/split-document/) - split PDF pages into individual PDF files in your Python applications.
+- [Split PDF](/pdf/python-cpp/split-pdf-document/) - split PDF pages into individual PDF files in your Python applications.
 
 

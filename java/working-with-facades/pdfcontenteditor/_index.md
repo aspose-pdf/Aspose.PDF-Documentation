@@ -3,7 +3,7 @@ title: PdfContentEditor Class
 type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfContentEditor Class.
+description: Learn how to use the PDFContentEditor class in Java to manipulate the content of a PDF document using Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

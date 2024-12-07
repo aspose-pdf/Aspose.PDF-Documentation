@@ -3,6 +3,7 @@ title: Extract Text From Stamps
 type: docs
 weight: 60
 url: /php-java/extract-text-from-stamps/
+description: Discover how to extract text from stamps in PDFs using Aspose.PDF for PHP Java. Achieve accurate text retrieval effortlessly.
 ---
 
 ## Extract Text from Stamp Annotations

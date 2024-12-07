@@ -3,7 +3,7 @@ title: Set Viewer Preference of an existing PDF File
 type: docs
 weight: 60
 url: /java/set-viewer-preference-of-an-existing-pdf-file/
-description: This section shows how to work with Aspose.PDF Facades using PdfContentEditor Class.
+description: Learn how to set viewer preferences, such as page layout and zoom settings, for existing PDF documents using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

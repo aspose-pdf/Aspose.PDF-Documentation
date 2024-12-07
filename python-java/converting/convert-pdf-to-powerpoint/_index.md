@@ -4,7 +4,7 @@ linktitle: Convert PDF to PowerPoint
 type: docs
 weight: 30
 url: /python-java/convert-pdf-to-powerpoint/
-description: Aspose.PDF allows you to convert PDF to PPT (PowerPoint) format using Python. One way there is a possibility to convert PDF to PPTX with Slides as Images.
+description: Master the conversion of PDFs to PowerPoint slides using Aspose.PDF for Python via Java. Follow our detailed instructions for high-quality PPTX results.
 lastmod: "2023-04-06"
 sitemap:
     changefreq: "monthly"

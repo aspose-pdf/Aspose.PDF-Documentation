@@ -3,7 +3,7 @@ title: PdfFileMend Class
 type: docs
 weight: 20
 url: /java/pdffilemend-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileMend Class.
+description: Learn how to use the PDFFileMend class in Java to mend and repair PDF files using Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

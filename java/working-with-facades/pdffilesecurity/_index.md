@@ -3,7 +3,7 @@ title: PdfFileSecurity Class
 type: docs
 weight: 110
 url: /java/pdffilesecurity-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileSecurity Class Class.
+description: Learn how to secure PDF documents by applying encryption and passwords using the PDFFileSecurity class in Java with Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

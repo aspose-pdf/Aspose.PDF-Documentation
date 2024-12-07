@@ -4,7 +4,7 @@ linktitle: PDF Annotations
 type: docs
 weight: 100
 url: /python-net/annotations/
-description: This section shows how to use all kinds of annotations to your PDF file with the Aspose.PDF library.
+description: Explore how to add, modify, and extract annotations from PDFs using Aspose.PDF in Python and .NET.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

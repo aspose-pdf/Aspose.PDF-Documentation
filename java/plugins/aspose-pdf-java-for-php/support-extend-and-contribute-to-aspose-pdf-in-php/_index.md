@@ -3,6 +3,7 @@ title: Support, Extend and Contribute to Aspose.Pdf in PHP
 type: docs
 weight: 30
 url: /java/support-extend-and-contribute-to-aspose-pdf-in-php/
+description: Find out how to support and extend Aspose.PDF in PHP, and contribute to enhancing the PDF processing capabilities in your PHP applications.
 lastmod: "2021-06-05"
 ---
 

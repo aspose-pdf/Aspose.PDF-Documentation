@@ -3,6 +3,7 @@ title: Set Document Window and Page Display Properties in Ruby
 type: docs
 weight: 100
 url: /java/set-document-window-and-page-display-properties-in-ruby/
+description: Customize document and page display settings in PDFs using Ruby and Aspose.PDF.
 lastmod: "2021-06-05"
 ---
 

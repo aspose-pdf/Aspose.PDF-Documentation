@@ -3,7 +3,7 @@ title: Move and Remove Form Field
 type: docs
 weight: 50
 url: /java/move-remove-form-field/
-description: This section explains how you can move and remove Form Fields with FormEditor Class.
+description: Learn how to move or remove form fields within a PDF document using Aspose.PDF in Java for better form management.
 lastmod: "2021-06-05"
 draft: false
 ---

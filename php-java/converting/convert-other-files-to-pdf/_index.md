@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /php-java/convert-other-files-to-pdf/
 lastmod: "2024-05-20"
-description: This topic show you how to Aspose.PDF allows to convert other file formats to PDF document.
+description: Explore the functionality of converting other document formats like Word, Excel, and PowerPoint to PDF with Aspose.PDF for PHP via Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

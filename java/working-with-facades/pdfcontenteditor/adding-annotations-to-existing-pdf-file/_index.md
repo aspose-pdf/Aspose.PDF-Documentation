@@ -3,7 +3,7 @@ title: Adding Annotations to existing PDF file
 type: docs
 weight: 80
 url: /java/adding-annotations-to-existing-pdf-file/
-description: This section explains how to add Annotations to existing PDF file with Aspose.PDF Facades.
+description: Learn how to add various types of annotations to existing PDF files in Java using Aspose.PDF for interactive features.
 lastmod: "2021-06-30"
 sitemap:
     changefreq: "monthly"

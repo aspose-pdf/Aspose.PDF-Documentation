@@ -3,7 +3,7 @@ title: Set Privileges on an Existing PDF File
 type: docs
 weight: 50
 url: /java/set-privileges/
-description: This topic explains how to set privileges on an existing PDF file using PdfFileSecurity Class.
+description: Learn how to set user privileges, such as printing or copying restrictions, for PDF documents using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

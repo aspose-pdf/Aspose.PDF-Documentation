@@ -4,7 +4,7 @@ linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /cpp/search-and-get-text-from-pdf/
-description: This article explains how to use various tools to search and get a text from PDF docs. We can search with regular expression from particular or whole pages.
+description: Learn how to search and extract text from PDF files in C++ using Aspose.PDF for efficient text retrieval.
 lastmod: "2021-12-13"
 sitemap:
     changefreq: "monthly"
