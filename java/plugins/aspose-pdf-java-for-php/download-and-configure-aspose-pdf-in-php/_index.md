@@ -3,6 +3,7 @@ title: Download and Configure Aspose.PDF in PHP
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-php/
+description: Learn how to download and configure Aspose.PDF in PHP for easy integration and PDF manipulation within your PHP projects.
 lastmod: "2021-06-05"
 ---
 

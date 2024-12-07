@@ -4,7 +4,7 @@ linktitle: Create or Add Table
 type: docs
 weight: 10
 url: /java/add-table-in-existing-pdf-document/
-description: Learn how to create or add table to a PDF document, applying cell style, splitting table on pages and customize the rows and columns etc.
+description: Discover how to add a table to an existing PDF document in Java using Aspose.PDF, enabling structured data presentation.
 lastmod: "2021-12-16"
 sitemap:
     changefreq: "monthly"

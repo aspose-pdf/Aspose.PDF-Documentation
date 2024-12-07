@@ -3,6 +3,7 @@ title: Get Document Window and Page Display Properties in Python
 type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-python/
+description: Understand how to retrieve document window and page display properties from a PDF in Python with Aspose.PDF for accurate presentation.
 lastmod: "2021-06-05"
 ---
 

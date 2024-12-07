@@ -3,7 +3,7 @@ title: PdfFileInfo Class
 type: docs
 weight: 90
 url: /java/pdffileinfo-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileInfo Class.
+description: Learn how to extract and manage file information, such as metadata and properties, from a PDF using PDFFileInfo in Java.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

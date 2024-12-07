@@ -3,6 +3,7 @@ title: Extract Text From Stamps
 type: docs
 weight: 60
 url: /java/extract-text-from-stamps/
+description: Learn how to extract text from stamps in PDF files using Aspose.PDF for Java. Follow this guide for precise text retrieval.
 ---
 
 ## Extract Text from Stamp Annotations

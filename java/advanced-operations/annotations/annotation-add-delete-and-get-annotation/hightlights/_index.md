@@ -4,7 +4,7 @@ linktitle: Highlights Annotation
 type: docs
 weight: 20
 url: /java/highlights-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+description: Discover how to add highlights annotations in a PDF document in Java using Aspose.PDF to highlight important text.
 lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"

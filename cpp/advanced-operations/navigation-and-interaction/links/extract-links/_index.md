@@ -4,7 +4,7 @@ linktitle: Extract Links
 type: docs
 weight: 30
 url: /cpp/extract-links/
-description: Extract links from PDF with C#. This topic explain you how to extract links using AnnotationSelector class. 
+description: Learn how to extract links from a PDF document in C++ using Aspose.PDF to analyze and manage hyperlinks within PDF files.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/convert-other-files-to-pdf/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert other file formats to PDF document.
+description: Learn how to convert a variety of file formats, including Word and Excel, into PDF format using Aspose.PDF in C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.5

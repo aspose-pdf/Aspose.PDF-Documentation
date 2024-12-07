@@ -3,6 +3,7 @@ title: Get Document Window and Page Display Properties in Ruby
 type: docs
 weight: 40
 url: /java/get-document-window-and-page-display-properties-in-ruby/
+description: Retrieve and customize document window and page display properties in PDF files using Ruby and Aspose.PDF.
 lastmod: "2021-06-05"
 ---
 

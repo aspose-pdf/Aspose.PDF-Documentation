@@ -4,7 +4,7 @@ linktitle: Basics of DOM API
 type: docs
 weight: 110
 url: /java/basics-of-dom-api/
-description: Aspose.PDF for Java also uses the idea of DOM to represent the structure of a PDF document in terms of objects. Here you can read the description of this structure.
+description: Get started with the basics of Aspose.PDF DOM API for Java. Learn how to create, modify, and manage PDF documents with ease.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

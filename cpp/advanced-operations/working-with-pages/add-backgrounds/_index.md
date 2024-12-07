@@ -4,7 +4,7 @@ linktitle: Add backgrounds
 type: docs
 weight: 110
 url: /cpp/add-backgrounds/
-descriptions: Add background image to the your PDF file with C++. Use the BackgroundArtifact object.
+description: Learn how to add customizable backgrounds to PDF documents with Aspose.PDF for C++. Follow this step-by-step guide.
 lastmod: "2021-12-03"
 sitemap:
     changefreq: "weekly"

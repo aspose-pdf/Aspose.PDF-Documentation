@@ -3,6 +3,7 @@ title: Add and Delete Bookmarks
 type: docs
 weight: 10
 url: /cpp/add-and-delete-bookmarks/
+description: Learn how to manage bookmarks in PDF files, including adding and deleting, using C++ and Aspose.PDF for better document navigation.
 ---
 
 ## <ins>**Add Bookmark**

@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert PDF file to other file formats.
+description: Explore how to convert PDF files into other formats like Word, Excel, or images using Aspose.PDF for Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
