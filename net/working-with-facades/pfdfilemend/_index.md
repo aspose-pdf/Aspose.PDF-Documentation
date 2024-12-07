@@ -3,7 +3,7 @@ title: PdfFileMend Class
 type: docs
 weight: 20
 url: /net/pdffilemend-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileMend Class.
+description: Explore how to use the PDFFileMend class in .NET to mend damaged PDF files using Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

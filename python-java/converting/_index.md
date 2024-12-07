@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-java/converting/
 lastmod: "2023-04-06"
-description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python API.
+description: Explore how to convert PDF documents into various formats in Python (Java) using Aspose.PDF for greater flexibility.
 aliases:
     - /python-java/conversion/
 sitemap:

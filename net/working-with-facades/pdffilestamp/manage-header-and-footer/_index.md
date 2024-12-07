@@ -3,7 +3,7 @@ title: Manage Header and Footer
 type: docs
 weight: 40
 url: /net/manage-header-and-footer/
-description: This section explains how to manage Header and Footer with Aspose.PDF Facades using PdfFileStamp Class.
+description: Explore how to manipulate headers and footers in PDF files in .NET with Aspose.PDF for improved document structuring.
 lastmod: "2021-06-05"
 draft: false
 ---

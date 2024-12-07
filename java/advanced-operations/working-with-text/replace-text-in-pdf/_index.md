@@ -4,7 +4,7 @@ linktitle: Replace Text in PDF
 type: docs
 weight: 40
 url: /java/replace-text-in-a-pdf-document/
-description: Learn more about various ways of replacing and removing text from PDF. Aspose.PDF allows replacing text in a particular region or with a regular expression.
+description: Explore how to replace text within a PDF document in Java using Aspose.PDF for content updates and document customization.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

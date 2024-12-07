@@ -3,6 +3,7 @@ title: Aspose.PDF for .NET via COM Interop
 type: docs
 weight: 20
 url: /net/use-aspose-pdf-for-net-via-com-interop/
+description: Discover how to use Aspose.PDF for .NET via COM Interop for seamless integration with non-.NET applications.
 ---
 <script type="application/ld+json">
 {

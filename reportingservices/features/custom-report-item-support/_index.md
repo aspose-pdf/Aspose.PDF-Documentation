@@ -3,6 +3,7 @@ title: Custom Report Item Support
 type: docs
 weight: 30
 url: /reportingservices/custom-report-item-support/
+description: Leverage custom report item support in Aspose.PDF for Reporting Services. Achieve tailored, high-quality PDF outputs effortlessly.
 lastmod: "2021-06-05"
 ---
 

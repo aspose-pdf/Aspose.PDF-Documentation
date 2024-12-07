@@ -4,7 +4,7 @@ linktitle: Extra Annotations
 type: docs
 weight: 60
 url: /python-net/extra-annotations/
-description: This section describes how to add, get, and delete extra kinds of annotations from your PDF document.
+description: Learn how to add extra annotations like highlights or notes to PDFs in Python with Aspose.PDF for enhancing PDF content.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

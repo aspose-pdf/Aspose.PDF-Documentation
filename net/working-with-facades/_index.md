@@ -3,7 +3,7 @@ title: Working with Facades
 type: docs
 weight: 100
 url: /net/working-with-facades/
-description: This section explains how to work with Aspose.PDF Facades - a toolset for popular operations with PDF.
+description: Learn how to work with PDF facades in .NET using Aspose.PDF for easier manipulation and viewing of PDF content.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

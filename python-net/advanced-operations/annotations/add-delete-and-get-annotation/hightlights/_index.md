@@ -4,7 +4,7 @@ linktitle: Highlights Annotation
 type: docs
 weight: 20
 url: /python-net/highlights-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+description: Learn how to add highlights annotations to PDF files in Python using Aspose.PDF for text emphasis.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

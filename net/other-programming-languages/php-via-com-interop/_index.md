@@ -3,6 +3,7 @@ title: PHP via COM Interop
 type: docs
 weight: 50
 url: /net/php-via-com-interop/
+description: Integrate Aspose.PDF for .NET into PHP applications using COM Interop. Add powerful PDF processing features to your workflow.
 ---
 <script type="application/ld+json">
 {

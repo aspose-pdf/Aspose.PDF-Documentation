@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /python-net/convert-pdf-to-pdfa/
 lastmod: "2022-12-23"
-description: This topic show you how to Aspose.PDF for Python via Python allows to convert a PDF file to a PDF/A compliant PDF file. 
+description: Learn how to convert PDF files to PDF/A format for compliance with archiving standards using Aspose.PDF in Python via .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

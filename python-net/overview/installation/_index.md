@@ -4,7 +4,7 @@ linktitle: Installation
 type: docs
 weight: 40
 url: /python-net/installation/
-description: This section shows a product description and instructions for installing Aspose.PDF for Python.
+description: Find step-by-step instructions for installing Aspose.PDF for Python and .NET to start working with PDF documents.
 lastmod: "2022-12-21"
 sitemap:
     changefreq: "weekly"

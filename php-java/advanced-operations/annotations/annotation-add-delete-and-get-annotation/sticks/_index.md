@@ -4,7 +4,7 @@ linktitle: Sticky Annotation
 type: docs
 weight: 50
 url: /php-java/sticky-annotations/
-description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text. It uses to represent graphics on the page. Check code snippet to resolve this task.
+description: Explore how to add sticky annotations to PDF files for feedback, using Aspose.PDF in PHP/Java.
 lastmod: "2024-06-24"
 sitemap:
     changefreq: "weekly"
