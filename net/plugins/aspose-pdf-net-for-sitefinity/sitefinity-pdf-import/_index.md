@@ -99,7 +99,7 @@ Sitefinity PDF Import is an open source add-on from [Aspose](http://www.aspose.c
 
 In order to setup Aspose.PDF .NET for Sitefinity add-ons you need to have the following requirements met:
 
-- Sitefinity CMS running on ASP.NET 4.0
+- Sitefinity CMS running on ASP.NET 4.0.
 
 Please feel free to contact us if you have any issues setting up this Sitefinity Add-on.
 
@@ -107,7 +107,7 @@ Please feel free to contact us if you have any issues setting up this Sitefinity
 
 The Add-on is supported on all versions of
 
-- Sitefinity CMS running on ASP.NET 4.0
+- Sitefinity CMS running on ASP.NET 4.0.
 
 ### Support, Extend and Contribute
 
@@ -119,9 +119,9 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to Aspose.PDF .NET for Sitefinity Modules using any of the following platforms
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity/issues)
-- [Sourceforge](https://sourceforge.net/p/asposesitefinity/tickets/?source=navbar)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/issues?status=new&status=open)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity/issues).
+- [Sourceforge](https://sourceforge.net/p/asposesitefinity/tickets/?source=navbar).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/issues?status=new&status=open).
 
 #### Extend and Contribute
 
