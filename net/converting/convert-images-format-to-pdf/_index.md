@@ -161,17 +161,23 @@ You can convert BMP to PDF files with Aspose.PDF for .NET API. Therefore, you ca
 So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
 
 ```csharp
-//Initialize empty PDF document
-Document document = new Document();
-document.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-
-// Load sample BMP image file
-image.File = dataDir + "Sample.bmp";
-document.Pages[1].Paragraphs.Add(image);
-
-// Save output PDF document
-document.Save(dataDir + "BMPtoPDF.pdf");
+private static void ConvertBMPtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	//Initialize empty PDF document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		document.Pages.Add();
+		Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+		
+		// Load sample BMP image file
+		image.File = dataDir + "BMPtoPDF.bmp";
+		document.Pages[1].Paragraphs.Add(image);
+		
+		// Save output PDF document
+		document.Save(dataDir + "BMPtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
@@ -195,9 +201,15 @@ Check next code snippet for converting CGM files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-CgmLoadOptions option = new CgmLoadOptions();
-Document document= new Document(dataDir + "corvette.cgm", option);
-document.Save(dataDir + "CGMtoPDF.pdf");
+private static void ConvertCGMtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	var option = new Aspose.Pdf.CgmLoadOptions();
+	using (var document = new Aspose.Pdf.Document(dataDir + "CGMtoPDF.cgm", option))
+	{
+		document.Save(dataDir + "CGMtoPDF_out.pdf");
+	}
+}
 ```
 
 ## Convert DICOM to PDF
@@ -218,20 +230,25 @@ document.Save(dataDir + "CGMtoPDF.pdf");
 The following code snippet shows how to convert DICOM files to PDF format with Aspose.PDF. You should load DICOM image, place the image on a page in a PDF file and save the output as PDF.
 
 ```csharp
-// Instantiate Document Object
-Document document = new Document();
-
-// Add a page to pages collection of document
-Page page = document.Pages.Add();
-
-Image image = new Image
+private static void ConvertDICOMtoPDF()
 {
-	FileType = ImageFileType.Dicom,
-	File = dataDir + "bmode.dcm"
-};
-document.Pages[1].Paragraphs.Add(image);
-// Save output as PDF format
-document.Save(dataDir + "PDFWithDicomImage_out.pdf");
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	// Instantiate Document Object
+    using (var document = new Aspose.Pdf.Document())
+    {
+		// Add a page to pages collection of document
+		Page page = document.Pages.Add();
+		
+		var image = new Aspose.Pdf.Image
+		{
+			FileType = ImageFileType.Dicom,
+			File = dataDir + "DICOMtoPDF.dcm"
+		};
+		document.Pages[1].Paragraphs.Add(image);
+		// Save output as PDF format
+		document.Save(dataDir + "DICOMtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
@@ -256,27 +273,32 @@ Aspose presents you online free application ["DICOM to PDF"](https://products.as
 Moreover, the following code snippet shows how to convert an EMF to PDF with C# in your .NET code snippet:
 
 ```csharp
-// Initialize new PDF document
-var document = new Document();
+private static void ConvertEMFtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	// Initialize new PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+		// Spcify path of input EMF image file
+		var imageFile = dataDir + "EMFtoPDF.emf";
+		var page = document.Pages.Add();
+		var image = new Aspose.Pdf.Image();
+		image.File = imageFile;
 
-// Spcify path of input EMF image file
-var imageFile = dataDir + "drawing.emf";
-var page = document.Pages.Add();
-var image = new Aspose.Pdf.Image();
-image.File = imageFile;
+		// Specify page dimension properties
+		page.PageInfo.Margin.Bottom = 0;
+		page.PageInfo.Margin.Top = 0;
+		page.PageInfo.Margin.Left = 0;
+		page.PageInfo.Margin.Right = 0;
+		page.PageInfo.Width = image.BitmapSize.Width;
+		page.PageInfo.Height = image.BitmapSize.Height;
 
-// Specify page dimension properties
-page.PageInfo.Margin.Bottom = 0;
-page.PageInfo.Margin.Top = 0;
-page.PageInfo.Margin.Left = 0;
-page.PageInfo.Margin.Right = 0;
-page.PageInfo.Width = image.BitmapSize.Width;
-page.PageInfo.Height = image.BitmapSize.Height;
+		page.Paragraphs.Add(image);
 
-page.Paragraphs.Add(image);
-
-//Save output PDF document
-document.Save(dataDir + "EMFtoPDF.pdf");
+		//Save output PDF document
+		document.Save(dataDir + "EMFtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
@@ -303,19 +325,22 @@ You can convert GIF to PDF files with Aspose.PDF for .NET API. Therefore, you ca
 So the following code snippet follows these steps and shows how to convert BMP to PDF using C#:
 
 ```csharp
-//Initialize empty PDF document
-Document document = new Document();
-
-document.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-
-// Load sample GIF image file
-image.File = dataDir + "Sample.gif";
-document.Pages[1].Paragraphs.Add(image);
-
-// Save output PDF document
-document.Save(dataDir + "GIFtoPDF.pdf");
-
+private static void ConvertGIFtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    using (var document = new Aspose.Pdf.Document())
+    {
+		//Initialize empty PDF document
+		document.Pages.Add();
+		var image = new Aspose.Pdf.Image();
+		
+		// Load sample GIF image file
+		image.File = dataDir + "GIFtoPDF.gif";
+		document.Pages[1].Paragraphs.Add(image);
+		// Save output PDF document
+		document.Save(dataDir + "GIFtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
@@ -342,22 +367,26 @@ You can very easy convert a JPG images to PDF with Aspose.PDF for .NET by follow
 The code snippet below shows how to convert JPG Image to PDF using C#:
 
 ```csharp
-// Load input JPG file
-String path = dataDir + "Aspose.jpg";
-
-// Initialize new PDF document
-Document document = new Document();
-
-// Add empty page in empty document
-Page page = document.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = path;
-
-// Add image on a page
-page.Paragraphs.Add(image);
-
-// Save output PDF file
-document.Save(dataDir + "ImagetoPDF.pdf");
+private static void ConvertJPGtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	// Initialize new PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+		// Load input JPG file
+		String path = dataDir + "JPGtoPDF.jpg";
+		// Add empty page in empty document
+		var page = document.Pages.Add();
+		var image = new Aspose.Pdf.Image();
+		image.File = path;
+		
+		// Add image on a page
+		page.Paragraphs.Add(image);
+		
+		// Save output PDF file
+		document.Save(dataDir + "JPGtoPDF_out.pdf");
+    }
+}
 ```
 
 Then you can see how to convert an image to PDF with the **same height and width of the page**. We will be getting the image dimensions and accordingly set the page dimensions of PDF document with the below steps:
@@ -369,27 +398,31 @@ Then you can see how to convert an image to PDF with the **same height and width
 Following code snippet shows how to convert an Image to PDF with same page height and width using C#:
 
 ```csharp
-var path = dataDir + "Aspose.jpg";
-// Initialize a new PDF document
-Document document = new Document();
-
-// Add an empty page
-Page page = document.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = path;
-
-// Read Height of input image
-page.PageInfo.Height = image.BitmapSize.Height;
-// Read Width of input image
-page.PageInfo.Width = image.BitmapSize.Width;
-page.PageInfo.Margin.Bottom = 0;
-page.PageInfo.Margin.Top = 0;
-page.PageInfo.Margin.Right = 0;
-page.PageInfo.Margin.Left = 0;
-page.Paragraphs.Add(image);
-
-// Save output PDF file
-document.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
+private static void ConvertJPGtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    using (var document = new Aspose.Pdf.Document())
+    {
+		var path = dataDir + "JPGtoPDF.jpg";
+		// Add an empty page
+		var page = document.Pages.Add();
+		var image = new Aspose.Pdf.Image();
+		image.File = path;
+		
+		// Read Height of input image
+		page.PageInfo.Height = image.BitmapSize.Height;
+		// Read Width of input image
+		page.PageInfo.Width = image.BitmapSize.Width;
+		page.PageInfo.Margin.Bottom = 0;
+		page.PageInfo.Margin.Top = 0;
+		page.PageInfo.Margin.Right = 0;
+		page.PageInfo.Margin.Left = 0;
+		page.Paragraphs.Add(image);
+		
+		// Save output PDF file
+		document.Save(dataDir + "JPGtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
@@ -419,27 +452,32 @@ You can convert PNG to PDF image using the below steps:
 Moreover, the code snippet below shows how to convert PNG to PDF with C# in your .NET applications:
 
 ```csharp
-// Load input PNG file
-String path = dataDir + "Aspose.png";
-Document document = new Document();
-
-// Add an empty page
-Page page = document.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = path;
-
-// Read Height of input image
-page.PageInfo.Height = image.BitmapSize.Height;
-// Read Width of input image
-page.PageInfo.Width = image.BitmapSize.Width;
-page.PageInfo.Margin.Bottom = 0;
-page.PageInfo.Margin.Top = 0;
-page.PageInfo.Margin.Right = 0;
-page.PageInfo.Margin.Left = 0;
-page.Paragraphs.Add(image);
-
-// Save output PDF
-document.Save(dataDir + "ImagetoPDF.pdf");
+private static void ConvertPNGtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    using (var document = new Aspose.Pdf.Document())
+    {
+		// Load input PNG file
+		String path = dataDir + "PNGtoPDF.png";
+		// Add an empty page
+		var page = document.Pages.Add();
+		var image = new Aspose.Pdf.Image();
+		image.File = path;
+		
+		// Read Height of input image
+		page.PageInfo.Height = image.BitmapSize.Height;
+		// Read Width of input image
+		page.PageInfo.Width = image.BitmapSize.Width;
+		page.PageInfo.Margin.Bottom = 0;
+		page.PageInfo.Margin.Top = 0;
+		page.PageInfo.Margin.Right = 0;
+		page.PageInfo.Margin.Left = 0;
+		page.Paragraphs.Add(image);
+		
+		// Save output PDF
+		document.Save(dataDir + "PNGtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
@@ -477,9 +515,15 @@ To convert SVG files to PDF, use the class named [SvgLoadOptions](https://refere
 The following code snippet shows the process of converting SVG file into PDF format with Aspose.PDF for .NET.
 
 ```csharp
-SvgLoadOptions option = new SvgLoadOptions();
-Document document= new Document(dataDir + "car.svg", option);
-document.Save(dataDir + "svgtest.pdf");
+private static void ConvertSVGtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	var option = new Aspose.Pdf.SvgLoadOptions();
+	using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", option))
+	{
+		document.Save(dataDir + "SVGtoPDF_out.pdf");
+	}
+}
 ```
 
 ## Get SVG dimensions
@@ -489,17 +533,24 @@ It is also possible to get the dimensions of the source SVG file. This informati
 The following code snippet shows the process of getting the source SVG file's dimensions and generating a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-var loadopt = new SvgLoadOptions();
-loadopt.AdjustPageSize = true;
-var svgDoc = new Document(dataDir + "GetSVGDimensions.svg", loadopt);
-svgDoc.Pages[1].PageInfo.Margin.Top = 0;
-svgDoc.Pages[1].PageInfo.Margin.Left = 0;
-svgDoc.Pages[1].PageInfo.Margin.Bottom = 0;
-svgDoc.Pages[1].PageInfo.Margin.Right = 0;
-svgDoc.Save(dataDir + "GetSVGDimensions_out.pdf");
+private static void ConvertSVGtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+	// The path to the documents directory.
+	string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+	var loadopt = new Aspose.Pdf.SvgLoadOptions();
+	loadopt.AdjustPageSize = true;
+	using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", loadopt))
+	{
+		document.Pages[1].PageInfo.Margin.Top = 0;
+		document.Pages[1].PageInfo.Margin.Left = 0;
+		document.Pages[1].PageInfo.Margin.Bottom = 0;
+		document.Pages[1].PageInfo.Margin.Right = 0;
+		document.Save(dataDir + "SVGtoPDF_out.pdf");
+	}
+    
+}
 ```
 
 ### SVG Supported Features
@@ -702,17 +753,23 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 3. Save PDF document.
 
 ```csharp
-//Initialize empty PDF document
-Document document = new Document();
-document.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-
-// Load sample Tiff image file
-image.File = dataDir + "sample.tiff";
-document.Pages[1].Paragraphs.Add(image);
-
-// Save output PDF document
-document.Save(dataDir + "TIFFtoPDF.pdf");
+private static void ConvertTIFFtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+	//Initialize empty PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+		document.Pages.Add();
+		var image = new Aspose.Pdf.Image();
+		
+		// Load sample Tiff image file
+		image.File = dataDir + "TIFFtoPDF.tiff";
+		document.Pages[1].Paragraphs.Add(image);
+		
+		// Save output PDF document
+		document.Save(dataDir + "TIFFtoPDF_out.pdf");
+    }
+}
 ```
 
 In case you need to convert multi-page TIFF image to multi-page PDF document and control some params, i.g. width or aspect ratio, please follow these steps:
@@ -726,36 +783,42 @@ In case you need to convert multi-page TIFF image to multi-page PDF document and
 The following code snippet shows how to convert multi-page or multi-frame TIFF image to PDF with C#:
 
 ```csharp
-// Initalize new Document
-Document pdf = new Document();
-
-//Load TIFF image into stream
-Bitmap bitmap = new Bitmap(File.OpenRead(dataDir + "multipage.tif"));
-// Convert multi page or multi frame TIFF to PDF
-FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
-int frameCount = bitmap.GetFrameCount(dimension);
-
-// Iterate through each frame
-for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+private static void ConvertTIFFtoPDF()
 {
-	Page page = pdf.Pages.Add();
+	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	bitmap.SelectActiveFrame(dimension, frameIdx);
-
-	MemoryStream currentImage = new MemoryStream();
-	bitmap.Save(currentImage, ImageFormat.Tiff);
-
-	Aspose.Pdf.Image imageht = new Aspose.Pdf.Image
+	// Load TIFF image into stream
+	using (var document = new Aspose.Pdf.Document())
 	{
-		ImageStream = currentImage,
-		//Apply some other options
-		//ImageScale = 0.5
-	};
-	page.Paragraphs.Add(imageht);
-}
+		var bitmap = new System.Drawing.Bitmap(File.OpenRead(dataDir + "TIFFtoPDF.tif"));
 
-// Save output PDF file
-pdf.Save(dataDir + "TifftoPDF.pdf");
+		// Convert multi page or multi frame TIFF to PDF
+		FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
+		int frameCount = bitmap.GetFrameCount(dimension);
+
+		// Iterate through each frame
+		for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+		{
+			Page page = document.Pages.Add();
+
+			bitmap.SelectActiveFrame(dimension, frameIdx);
+
+			MemoryStream currentImage = new MemoryStream();
+			bitmap.Save(currentImage, ImageFormat.Tiff);
+
+			var imageht = new Aspose.Pdf.Image
+			{
+				ImageStream = currentImage,
+				//Apply some other options
+				//ImageScale = 0.5
+			};
+			page.Paragraphs.Add(imageht);
+		}
+
+		// Save output PDF file
+		document.Save(dataDir + "TIFFtoPDF_out.pdf");
+	}
+}
 ```
 
 ## Convert CDR to PDF
@@ -771,8 +834,14 @@ Check next code snippet for converting CDR files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-var document = new Document("input.cdr", new CdrLoadOptions());
-document.Save("out.pdf");
+private static void ConvertCDRtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.cdr", new CdrLoadOptions()))
+    {
+        document.Save(dataDir + "CDRtoPDF_out.pdf");
+    }
+}
 ```
 
 ## Convert DJVU to PDF
@@ -788,8 +857,16 @@ Check next code snippet for converting DJVU files to PDF format.
 3. Save the document with the desired file name.
 
 ```csharp
-var document = new Document("input.djvu", new DjvuLoadOptions());
-document.Save("out.pdf");
+private static void ConvertDJVUtoPDF()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    
+    using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.djvu", new DjvuLoadOptions()))
+    {
+        document.Save(dataDir + "CDRtoPDF_out.pdf");
+    }
+}
+
 ```
 
 ## Convert HEIC to PDF
@@ -799,26 +876,33 @@ For loading heic images you need to add a reference to the https://www.nuget.org
 Convert HEIC images to PDF using Aspose.PDF:
 
 ```cs
-using (var fs = new FileStream("iphone_photo.heic", FileMode.Open))
+private static void ConvertHEICtoPDF()
 {
-    HeicImage image = HeicImage.Load(fs);
-    var pixels = image.GetByteArray(PixelFormat.Rgb24);
-    var width = (int)image.Width;
-    var height = (int)image.Height;
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    
+    using (var fs = new FileStream(dataDir + "HEICtoPDF.heic", FileMode.Open))
+    {
+        var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
+        var pixels = image.GetByteArray(PixelFormat.Rgb24);
+        var width = (int)image.Width;
+        var height = (int)image.Height;
 
-    var document = new Document();
-    Page page = document.Pages.Add();
-    Aspose.Pdf.Image asposeImage = new Aspose.Pdf.Image();
-    asposeImage.BitmapInfo = new BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
-    page.PageInfo.Height = height;
-    page.PageInfo.Width = width;
-    page.PageInfo.Margin.Bottom = 0;
-    page.PageInfo.Margin.Top = 0;
-    page.PageInfo.Margin.Right = 0;
-    page.PageInfo.Margin.Left = 0;
+        using (var document = new Aspose.Pdf.Document())
+        {
+            var page = document.Pages.Add();
+            var asposeImage = new Aspose.Pdf.Image();
+            asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
+            page.PageInfo.Height = height;
+            page.PageInfo.Width = width;
+            page.PageInfo.Margin.Bottom = 0;
+            page.PageInfo.Margin.Top = 0;
+            page.PageInfo.Margin.Right = 0;
+            page.PageInfo.Margin.Left = 0;
 
-    page.Paragraphs.Add(asposeImage);
-    document.Save("iphone_photo.pdf");
+            page.Paragraphs.Add(asposeImage);
+            document.Save(dataDir + "HEICtoPDF_out.pdf");
+        }
+    }
 }
 ```
 
