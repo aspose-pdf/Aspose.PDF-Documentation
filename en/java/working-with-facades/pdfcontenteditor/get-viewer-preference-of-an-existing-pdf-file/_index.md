@@ -3,7 +3,7 @@ title: Get Viewer Preference of an existing PDF File
 type: docs
 weight: 70
 url: /java/get-viewer-preference-of-an-existing-pdf-file/
-description: This section shows how to work with Aspose.PDF Facades using PdfContentEditor Class.
+description: Explore how to extract and retrieve viewer preferences from an existing PDF file using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

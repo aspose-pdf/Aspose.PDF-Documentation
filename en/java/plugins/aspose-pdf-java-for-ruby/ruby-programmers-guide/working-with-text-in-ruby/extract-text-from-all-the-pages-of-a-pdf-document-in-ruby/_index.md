@@ -3,6 +3,7 @@ title: Extract Text From All the Pages of a PDF Document in Ruby
 type: docs
 weight: 30
 url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
+description: Understand how to extract text from all pages of a PDF document using Ruby and Aspose.PDF, ideal for content analysis.
 lastmod: "2021-06-05"
 ---
 

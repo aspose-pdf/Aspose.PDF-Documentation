@@ -3,7 +3,7 @@ title: Verify Signature in PDF File
 type: docs
 weight: 30
 url: /java/verify-signature-in-pdf/
-description: This section explains how to work with Signature in a PDF File using PdfFileSignature class.
+description: Learn how to verify digital signatures in a PDF document in Java to ensure authenticity using Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---

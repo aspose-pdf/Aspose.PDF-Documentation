@@ -18,21 +18,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add watermark to PDF using C#",
-    "alternativeHeadline": "How to add watermark to PDF",
+    "alternativeHeadline": "Add Custom Watermarks to PDF with C#",
+    "abstract": "The new feature in Aspose.PDF for .NET allows developers to programmatically add customizable watermarks to PDF documents using the Artifact functionality. This feature enhances document management by supporting various artifact properties, including type, opacity, rotation, and text customization, enabling users to create professional and identifiable PDF files easily",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add watermark",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "462",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -74,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-watermarks/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the C#."
 }
 </script>
@@ -91,8 +91,8 @@ In order to get all artifacts on a particular page, the [Page](https://reference
 
 The [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) class contains following properties:
 
-**Artifact.Type** – gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
-**Artifact.Subtype** – gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
+- **Artifact.Type**: gets the artifact type (supports values of the Artifact.ArtifactType enumeration where values include Background, Layout, Page, Pagination and Undefined).
+- **Artifact.Subtype**: gets artifact subtype (supports the values of the Artifact.ArtifactSubtype enumeration where values include Background, Footer, Header, Undefined, Watermark).
 
 {{% alert color="primary" %}}
 
@@ -100,22 +100,22 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 
 {{% /alert %}}
 
-**Artifact.Contents** – Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
-**Artifact.Form** – Gets an artifact's XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
-**Artifact.Image** – Gets an artifact's image (if an image is presents, else null).
-**Artifact.Text** – Gets an artifact's text.
-**Artifact.Rectangle** – Gets an position of an artifact on the page.
-**Artifact.Rotation** – Gets an artifact's rotation (in degrees, positive value indicates counter-clockwise rotation).
-**Artifact.Opacity** – Gets an artifact's opacity. Possible values are in the range 0…1, where 1 is completely opaque.
+- **Artifact.Contents**: Gets a collection of artifact internal operators. Its supported type is System.Collections.ICollection.
+- **Artifact.Form**: Gets an artifact's XForm (if XForm is used). Watermarks, header, and footer artifacts contains XForm which shows all artifact contents.
+- **Artifact.Image**: Gets an artifact's image (if an image is presents, else null).
+- **Artifact.Text**: Gets an artifact's text.
+- **Artifact.Rectangle**: Gets an position of an artifact on the page.
+- **Artifact.Rotation**: Gets an artifact's rotation (in degrees, positive value indicates counter-clockwise rotation).
+- **Artifact.Opacity**: Gets an artifact's opacity. Possible values are in the range 0…1, where 1 is completely opaque.
 
-## Programming Samples: How To Add Watermark On PDF Files
+## How To Add Watermark On PDF Files
 
 The following code snippet shows how to get each watermark on the first page of a PDF file with C#.
 
 ```csharp
 public static void AddWatermarks()
 {
-    Document document = new Document(_dataDir + "text.pdf");
+    Document document = new Document(dataDir + "text.pdf");
     WatermarkArtifact artifact = new WatermarkArtifact();
     artifact.SetTextAndState(
         "WATERMARK",
@@ -131,7 +131,7 @@ public static void AddWatermarks()
     artifact.Opacity = 0.5;
     artifact.IsBackground = true;
     document.Pages[1].Artifacts.Add(artifact);
-    document.Save(_dataDir + "watermark.pdf");
+    document.Save(dataDir + "watermark.pdf");
 }
 ```
 

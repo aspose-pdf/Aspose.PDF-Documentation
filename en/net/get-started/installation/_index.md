@@ -10,6 +10,72 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How to Install Aspose.PDF for .NET",
+    "alternativeHeadline": "Seamless PDF Creation with Aspose.PDF for .NET",
+    "abstract": "Aspose.PDF for .NET is a powerful component that enables developers to generate and manipulate PDF documents programmatically without relying on Adobe Acrobat. With support for inserting complex elements such as tables, images, and custom fonts, as well as robust security features and seamless integration through NuGet, this versatile tool enhances productivity and efficiency in .NET applications",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "Aspose.PDF, PDF documents, .NET component, NuGet installation, C# API, Temporary License, multithread safe, eval version limitations, .NET Core support, font installation",
+    "wordcount": "1214",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/installation/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/installation/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Aspose.PDF C# component
 
@@ -45,9 +111,9 @@ Internet Service Providers hosting multiple applications from different companie
 - **FileIOPermission is restricted.** This means you can only access files in your application's virtual directory hierarchy.
 Due to the reasons specified above, Aspose .NET components cannot be used on servers granting permission set other than Full Trust.
 
-# Installation
+## Installation
 
-## Evaluate Aspose.PDF for .NET
+### Evaluate Aspose.PDF for .NET
 
 You can easily download Aspose.PDF for .NET for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license.
 
@@ -59,7 +125,7 @@ If you want to test Aspose.PDF for .NET without the evaluation version limitatio
 
 {{% /alert %}}
 
-## Installing Aspose.PDF for .NET through NuGet
+### Installing Aspose.PDF for .NET through NuGet
 
 NuGet is a free, open source developer-focused package management system for the .NET platform intent on simplifying the process of incorporating third party libraries into a .NET application during development. It is a Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects that use the .NET Framework. A library or tool can easily be shared with other developers by creating a NuGet package and storing it inside a NuGet repository. When you install the package, NuGet copies files to your solution and automatically makes the necessary changes, such as adding references and changing your app.config or web.config files. If you decide to remove the library, NuGet removes files and reverses whatever changes it made to your project so that no clutter is left.
 
@@ -70,7 +136,7 @@ NuGet is a free, open source developer-focused package management system for the
 - Open your .NET application in Visual Studio.
 - On the Tools menu, select **NuGet Package Manager** and then **Package Manager Console**.
 - Type the command `Install-Package Aspose.PDF` to install the latest full release, or type the command `Install-Package Aspose.PDF -prerelease` to install the latest release including hot fixes.
-- Press `Enter`
+- Press `Enter`.
 
 #### Update package using the Package Manager Console
 
@@ -98,11 +164,11 @@ Follow these steps to reference the component using the package manager GUI:
 
 - Click Install/Update next to the latest version of Aspose.PDF for .NET.
 
-![Installation_step2](../images/install_step2.png)
+![Installation_step2](../images/Install_step2.png)
 
 - And click Accept in the pop up window.
 
-![Installation_step3](../images/install_step3.png)
+![Installation_step3](../images/Install_step3.png)
 
 ![Installation](../images/install.gif)
 

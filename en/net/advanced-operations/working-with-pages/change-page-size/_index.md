@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Change PDF Page Size with C#",
-    "alternativeHeadline": "Resize PDF Page with .NET",
+    "alternativeHeadline": "Effortlessly Resize PDF Pages in C#",
+    "abstract": "The new functionality in Aspose.PDF for .NET allows developers to easily change the page size of PDF documents programmatically. With just a few lines of code, users can modify existing PDF dimensions, enhancing their document management capabilities and ensuring compatibility with various layout requirements. This feature streamlines the process of resizing PDF pages to preferred formats, such as A4, directly within .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, change pdf size, resize pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "300",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/change-page-size/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Change Page Size from your PDF document using Aspose.PDF for .NET library."
 }
 </script>

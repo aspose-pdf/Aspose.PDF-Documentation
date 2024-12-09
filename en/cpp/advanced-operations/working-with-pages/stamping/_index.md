@@ -4,7 +4,7 @@ linktitle: Stamping
 type: docs
 weight: 120
 url: /cpp/stamping/
-description: This section describes how to add image stamps and text stamps to a PDF page.
+description: Learn how to stamp text or images onto PDF documents in C++ with Aspose.PDF to add watermarks or annotations.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

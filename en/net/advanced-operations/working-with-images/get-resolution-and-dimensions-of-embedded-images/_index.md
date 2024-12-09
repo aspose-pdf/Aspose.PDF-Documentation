@@ -4,7 +4,7 @@ linktitle: Get Resolution and Dimensions
 type: docs
 weight: 40
 url: /net/get-resolution-and-dimensions-of-embedded-images/
-description: This section shows details in getting resolution and dimensions of Embedded Images
+description: Learn how to retrieve resolution and dimensions of embedded images from a PDF in .NET using Aspose.PDF.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get Resolution and Dimensions of Images",
-    "alternativeHeadline": "How to get Resolution and Dimensions of Embedded Images",
+    "alternativeHeadline": "Extract Image Resolution and Dimensions Efficiently",
+    "abstract": "Discover how to efficiently obtain the resolution and dimensions of embedded images within PDF documents using the Aspose.PDF library. This feature allows developers to access image properties directly without extraction, streamlining the process of image manipulation in PDF files while enhancing functionality and control over image data",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, get resolution, get dimensions",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Get Resolution, Dimensions of Images, Embedded Images, Aspose.PDF.Drawing, ArrayList, Image Placement Classes, ConcatenateMatrix, XImage, PDF Manipulation Library, Image Resolution Computation",
+    "wordcount": "827",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-resolution-and-dimensions-of-embedded-images/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section shows details in getting resolution and dimensions of Embedded Images"
 }
 </script>
@@ -118,26 +119,26 @@ The following code snippet shows you how to get an image's dimensions and resolu
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Load the source PDF file
-Document doc = new Document(dataDir+ "ImageInformation.pdf");
+Document document = new Document(dataDir +  "ImageInformation.pdf");
 
 // Define the default resolution for image
 int defaultResolution = 72;
 System.Collections.Stack graphicsState = new System.Collections.Stack();
 // Define array list object which will hold image names
-System.Collections.ArrayList imageNames = new System.Collections.ArrayList(doc.Pages[1].Resources.Images.Names);
+System.Collections.ArrayList imageNames = new System.Collections.ArrayList(document.Pages[1].Resources.Images.Names);
 // Insert an object to stack
 graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
 
 // Get all the operators on first page of document
-foreach (Operator op in doc.Pages[1].Contents)
+foreach (Operator op in document.Pages[1].Contents)
 {
     // Use GSave/GRestore operators to revert the transformations back to previously set
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+    Operators.GSave opSaveState = op as Operators.GSave;
+    Operators.GRestore opRestoreState = op as Operators.GRestore;
     // Instantiate ConcatenateMatrix object as it defines current transformation matrix.
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+    Operators.ConcatenateMatrix opCtm = op as Operators.ConcatenateMatrix;
     // Create Do operator which draws objects from resources. It draws Form objects and Image objects
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    Operators.Do opDo = op as Operators.Do;
 
     if (opSaveState != null)
     {
@@ -171,7 +172,7 @@ foreach (Operator op in doc.Pages[1].Contents)
         {
             System.Drawing.Drawing2D.Matrix lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
             // Create XImage object to hold images of first pdf page
-            XImage image = doc.Pages[1].Resources.Images[opDo.Name];
+            XImage image = document.Pages[1].Resources.Images[opDo.Name];
 
             // Get image dimensions
             double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));

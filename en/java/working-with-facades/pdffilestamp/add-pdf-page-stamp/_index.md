@@ -3,7 +3,7 @@ title: Add PDF Page Stamp
 type: docs
 weight: 10
 url: /java/add-pdf-page-stamp/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileStamp Class.
+description: Learn how to add page stamps, such as text or image stamps, to existing PDF documents using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 draft: false
 ---

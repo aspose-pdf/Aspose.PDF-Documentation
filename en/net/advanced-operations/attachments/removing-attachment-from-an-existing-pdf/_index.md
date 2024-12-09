@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Removing attachment from PDF",
-    "alternativeHeadline": "How to delete attachments from PDF",
+    "alternativeHeadline": "Remove Attachments Efficiently from PDF Files",
+    "abstract": "Aspose.PDF now includes a powerful feature that allows users to easily remove attachments from their PDF documents using the C# PDF API. This functionality simplifies PDF management by enabling users to delete any embedded files from their documents, ensuring a cleaner and more streamlined PDF experience",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, delete attachments",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Removing attachment from PDF, Aspose.PDF, delete attachments, PDF API, C# PDF library, EmbeddedFiles collection, document.Save method, PDF manipulation, attachments management, Aspose.PDF for .NET",
+    "wordcount": "229",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/removing-attachment-from-an-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF can remove attachments from your PDF documents. Use C# PDF API to remove attachments in PDF files using Aspose.PDF library."
 }
 </script>
@@ -93,13 +94,13 @@ The following code snippet shows how to remove attachments from a PDF document.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
+Document document = new Document(dataDir + "DeleteAllAttachments.pdf");
 
 // Delete all attachments
-pdfDocument.EmbeddedFiles.Delete();
+document.EmbeddedFiles.Delete();
 
 // Save updated document
-pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+document.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
 ```
 
 <script type="application/ld+json">

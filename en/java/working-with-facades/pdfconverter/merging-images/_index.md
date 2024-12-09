@@ -3,7 +3,7 @@ title: Merge images
 type: docs
 weight: 10
 url: /java/merge-images/
-description: This section explains how to merge Images, and it is possible to save in the Tiff format.
+description: Learn how to merge multiple images into a single PDF file using Aspose.PDF in Java for efficient image handling.
 lastmod: "2021-07-01"
 draft: false
 ---

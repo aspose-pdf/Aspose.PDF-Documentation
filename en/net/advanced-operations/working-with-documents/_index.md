@@ -19,21 +19,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with PDF Documents using C#",
-    "alternativeHeadline": "Manipulating PDF Documents",
+    "alternativeHeadline": "Streamline PDF Management with Aspose.PDF for .NET using C#",
+    "abstract": "Discover the powerful capabilities of the Aspose.PDF library for C#, allowing seamless manipulation of PDF documents. From optimizing and merging files to validating against PDF A standards, this feature provides developers with essential tools for comprehensive PDF management in .NET applications. Enhance your document processing workflows today with advanced PDF functionalities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf documents",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF manipulation, Aspose.PDF for .NET, formatting PDF document, manipulate PDF document, optimize PDF, merge PDF, split PDF, concatenate PDF files, C# PDF processing, create crash reports",
+    "wordcount": "362",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -75,7 +76,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/working-with-documents/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article describes to you what manipulations can be done with the document with Aspose.PDF library."
 }
 </script>
@@ -97,8 +98,8 @@ You are able to do the following:
 - [Split PDF](/pdf/net/split-document/) - split PDF pages into individual PDF files in your .NET applications.
 - [Concatenate PDF files in folder](/pdf/net/concatenating-all-pdf-files-in-particular-folder/) - concatenate all PDF files in Particular folder using PdfFileEditor class.
 - [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-pdf-documents/) - you will learn how to concatenate multiple PDF files using MemoryStreams with C#.
+- [Create Crash Reports](/pdf/net/generate-crash-reports/) - generate crash reports using C#.
 - [Working with Headings](/pdf/net/working-with-headings/) - you can create numbering in heading your PDF document with C#.
-- [Generate Crash Reports](/pdf/net/generate-crash-reports/) - generate crash reports using C#.
 
 <script type="application/ld+json">
 {

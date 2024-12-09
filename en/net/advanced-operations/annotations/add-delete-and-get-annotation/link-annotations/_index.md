@@ -16,17 +16,18 @@ sitemap:
     "@type": "TechArticle",
     "headline": "Using Link Annotation for PDF",
     "alternativeHeadline": "How to add Link Annotation in PDF",
+    "abstract": "Aspose.PDF for .NET introduces robust capabilities for managing link annotations within PDF documents, enabling users to seamlessly add, retrieve, and remove hyperlinks. This feature enhances document interactivity by allowing links to open specific pages, external files, or web URLs, all customizable with various styles and actions. Unlock new possibilities for PDF navigation and user engagement with this powerful annotation functionality",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
     "keywords": "pdf, c#, text annotation",
     "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
         "name": "Aspose.PDF Doc Team",
@@ -87,7 +88,7 @@ A [Link Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/
 Several additional steps were performed to create the annotation. We used 2 TextFragmentAbsorbers to find fragments to demo. The first one is for the link annotation text, and the second one indicates some places in the document.
 
 ```cs
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Link Annotation Demo.pdf"));
+Document document = new Document(dataDir + "Link Annotation Demo.pdf");
 
 var page = document.Pages[1];
 
@@ -121,7 +122,7 @@ To create the annotation we have followed certain steps:
 1. Create `LinkAnnotation` and pass the page object and the rectangle of the text fragment which is corresponded with annotation.
 1. Set `Action` as `GoToAction` and pass `XYZExplicitDestination` as desired destination. We created `XYZExplicitDestination` based on page, left and top coordinates and zoom.
 1. Add annotation to page annotaion collection.
-1. Save the document
+1. Save the document.
 
 ### Using Link Annotation with named destination
 
@@ -216,11 +217,11 @@ Please try using the following code snippet to Get LinkAnnotation from PDF docum
 class ExampleLinkAnnotations
 {
     // The path to the documents directory.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    private const string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     public static void GetLinkAnnotations()
     {
         // Load the PDF file
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
+        Document document = new Document(dataDir + "SimpleResume_mod.pdf");
         var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
         foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
         {
@@ -246,18 +247,20 @@ The following code snippet shows how to Delete Link Annotation from PDF file. Fo
 class ExampleLinkAnnotations
 {
     // The path to the documents directory.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    private const string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     public static void DeleteLinkAnnotations()
     {
         // Load the PDF file
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
+        Document document = new Document(dataDir + "SimpleResume_mod.pdf");
         // Find and delete all link annotation on the 1st page
         var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
 
         foreach (var la in linkAnnotations)
+        {
             document.Pages[1].Annotations.Delete(la);
+        }
         // Save document with removed annotation
-        document.Save(System.IO.Path.Combine(_dataDir, "SimpleResume_del.pdf"));
+        document.Save(dataDir + "SimpleResume_del.pdf");
     }
 }
 ```

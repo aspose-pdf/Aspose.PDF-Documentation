@@ -1,5 +1,5 @@
 ---
-title: Add Page Number to PDF with C#
+title: Add Page Number to PDF
 linktitle: Add Page Number
 type: docs
 weight: 100
@@ -16,22 +16,23 @@ aliases:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Add Page Number to PDF with C#",
-    "alternativeHeadline": "How to add Page Number Stamp to PDF",
+    "headline": "Add Page Number to PDF",
+    "alternativeHeadline": "Add Dynamic Page Numbering to PDF",
+    "abstract": "Aspose.PDF for .NET introduces a powerful Page Number Stamp feature, enabling seamless integration of page numbers into PDF documents. This functionality enhances document navigation and organization by allowing users to customize format, alignment, and styling for better readability and professional presentation",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, page number stamp",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Page Number, PDF Stamp, Aspose.PDF for .NET, PageNumberStamp class, Document object, PageNumberStamp properties, Bates numbering, PDF document generation, Page number stamp, C# PDF manipulation",
+    "wordcount": "559",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-page-number/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Aspose.PDF for .NET allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class."
 }
 </script>
@@ -91,13 +92,13 @@ You can use [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pa
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "PageNumberStamp.pdf");
+Document document = new Document(dataDir + "PageNumberStamp.pdf");
 
 // Create page number stamp
 PageNumberStamp pageNumberStamp = new PageNumberStamp();
 // Whether the stamp is background
 pageNumberStamp.Background = false;
-pageNumberStamp.Format = "Page # of " + pdfDocument.Pages.Count;
+pageNumberStamp.Format = "Page # of " + document.Pages.Count;
 pageNumberStamp.BottomMargin = 10;
 pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
 pageNumberStamp.StartingNumber = 1;
@@ -109,11 +110,10 @@ pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
 pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
 
 // Add stamp to particular page
-pdfDocument.Pages[1].AddStamp(pageNumberStamp);
+document.Pages[1].AddStamp(pageNumberStamp);
 
-dataDir = dataDir + "PageNumberStamp_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "PageNumberStamp_out.pdf");
 ```
 
 ## Live Example
@@ -133,13 +133,13 @@ Aspose.PDF has limited support for Bates Numbering for now. This functionality w
 ```csharp
 static void Demo03()
 {
-    Document doc = new Document(@"C:\Samples\Sample-Document03.pdf");
-    foreach (var page in doc.Pages)
+    Document document = new Document(@"C:\Samples\Sample-Document03.pdf");
+    foreach (var page in document.Pages)
     {
         var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
         page.Artifacts.Delete(batesNum);
     }
-    doc.Save(@"C:\Samples\Sample-Document04.pdf");
+    document.Save(@"C:\Samples\Sample-Document04.pdf");
 }
 ```
 

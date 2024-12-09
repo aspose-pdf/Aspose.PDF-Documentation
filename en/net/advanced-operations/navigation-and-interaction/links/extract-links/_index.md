@@ -4,7 +4,7 @@ linktitle: Extract Links
 type: docs
 weight: 30
 url: /net/extract-links/
-description: Extract links from PDF with C#. This topic explain you how to extract links using AnnotationSelector class.
+description: Discover how to extract hyperlinks from PDF documents in .NET using Aspose.PDF for content management and link analysis.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract Links from the PDF File",
-    "alternativeHeadline": "How to extract Links from PDF",
+    "alternativeHeadline": "Effortlessly Extract Links from PDF Files",
+    "abstract": "Extract links from PDF files seamlessly using C# with the new AnnotationSelector class. This feature allows developers to easily identify and extract link annotations from specified pages of a PDF document, enhancing PDF manipulation capabilities for applications that require precise link extraction",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, extract link from pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Extract Links, PDF extraction, C# PDF library, AnnotationSelector class, LinkAnnotation objects, PDF document manipulation, Aspose.PDF library, extract links from PDF",
+    "wordcount": "303",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-links/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Extract links from PDF with C#. This topic explain you how to extract links using AnnotationSelector class."
 }
 </script>
@@ -95,16 +96,16 @@ The following code snippet shows you how to extract links from a PDF file.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 // Open document
-Document document = new Document(dataDir+ "ExtractLinks.pdf");
+Document document = new Document(dataDir +  "ExtractLinks.pdf");
 // Extract actions
 Page page = document.Pages[1];
 AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
 page.Accept(selector);
 IList<Annotation> list = selector.Selected;
 Annotation annotation = (Annotation)list[0];
-dataDir = dataDir + "ExtractLinks_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "ExtractLinks_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -1,5 +1,5 @@
 ---
-title: Add background to PDF with C#
+title: Add background to PDF
 linktitle: Add backgrounds
 type: docs
 weight: 110
@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Add background to PDF with C#",
-    "alternativeHeadline": "Working with Background in PDF",
+    "headline": "Add background to PDF",
+    "alternativeHeadline": "Add Custom Backgrounds to PDFs with C#",
+    "abstract": "Introducing the ability to seamlessly integrate background images into your PDF documents using C# with Aspose.PDF for .NET. This feature utilizes the BackgroundArtifact object, allowing for enhanced design options such as watermarks or subtle texturing, perfect for making your PDFs stand out with minimal effort. Discover how to elevate your document layouts by adding customized backgrounds effortlessly",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, background in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add background to PDF, BackgroundArtifact object, PDF manipulation, C# PDF library, watermark in PDF, Aspose.PDF for .NET, add background image, PDF document generation, PDF artifacts, document background settings",
+    "wordcount": "228",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-backgrounds/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Add background image to the your PDF file with C#. Use the BackgroundArtifact object."
 }
 </script>
@@ -88,10 +89,10 @@ The following code snippet shows how to add a background image to PDF pages usin
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Create a new Document object
-Document doc = new Document();
+Document document = new Document();
 
 // Add a new page to document object
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 
 // Create Background Artifact object
 BackgroundArtifact background = new BackgroundArtifact();
@@ -102,9 +103,8 @@ background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg")
 // Add backgroundartifact to artifacts collection of page
 page.Artifacts.Add(background);
 
-dataDir = dataDir + "ImageAsBackground_out.pdf";
 // Save the document
-doc.Save(dataDir);
+document.Save(dataDir + "ImageAsBackground_out.pdf");
 ```
 
 <script type="application/ld+json">

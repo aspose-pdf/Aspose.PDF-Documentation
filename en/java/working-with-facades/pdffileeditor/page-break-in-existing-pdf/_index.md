@@ -3,7 +3,7 @@ title: Page Break in existing PDF
 type: docs
 weight: 30
 url: /java/page-break-in-existing-pdf/
-description: This section explains how to break pages in an existing PDF using PdfFileEditor class.
+description: Learn how to add page breaks within an existing PDF document using Aspose.PDF for Java to improve document formatting.
 lastmod: "2021-06-05"
 draft: false
 ---

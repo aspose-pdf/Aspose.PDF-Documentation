@@ -4,7 +4,7 @@ linktitle: Highlight Annotation
 type: docs
 weight: 20
 url: /net/highlights-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+description: Learn how to add highlights annotation to PDF documents in .NET using Aspose.PDF for text emphasis and review.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF Highlights Annotation using C#",
-    "alternativeHeadline": "How to add Highlights Annotation in PDF",
+    "headline": "PDF Highlight Annotation using C#",
+    "alternativeHeadline": "PDF Annotations with Customizable Highlighting Options",
+    "abstract": "The new PDF Highlight Annotation feature using C# allows users to seamlessly add and customize text markup annotations in their PDF documents. This functionality includes options for highlights, underlines, strikeouts, and jagged underlines, all of which can be edited for color, opacity, and metadata, enhancing document interactivity and clarity",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, highlights annotation, text markup annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF Highlight Annotation, C#, text markup annotation, highlight settings, strikethrough settings, underline settings, add annotation, delete annotation, Aspose.PDF.Drawing, markup annotations",
+    "wordcount": "958",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/highlights-annotation/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document."
 }
 </script>
@@ -101,66 +102,47 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 1. After we should add all annotations to the page.
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Text;
-using System;
-using System.Linq;
+// The path to the documents directory.
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
+// Load the PDF file
+Document document = new Document(dataDir + "sample.pdf");
+var tfa = new TextFragmentAbsorber("PDF");
+tfa.Visit(document.Pages[1]);
 
-namespace Aspose.Pdf.Examples.Advanced
+//Create annotations
+HighlightAnnotation highlightAnnotation = new HighlightAnnotation(document.Pages[1],
+    tfa.TextFragments[1].Rectangle )
 {
-    class ExampleTextMarkupAnnotation
-    {
-        // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
+    Title = "Aspose User",
+    Color = Color.LightGreen
+};
 
-        public static void AddTextMarkupAnnotation()
-        {
-            try
-            {
-                // Load the PDF file
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
-                var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
-                tfa.Visit(document.Pages[1]);
-
-                //Create annotations
-                HighlightAnnotation highlightAnnotation = new HighlightAnnotation(document.Pages[1],
-                   tfa.TextFragments[1].Rectangle )
-                {
-                    Title = "Aspose User",
-                    Color = Color.LightGreen
-                };
-
-                StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(
-                   document.Pages[1],
-                   tfa.TextFragments[2].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = Color.Blue
-                };
-                SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(document.Pages[1],
-                    tfa.TextFragments[3].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = Color.Red
-                };
-                UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(document.Pages[1],
-                    tfa.TextFragments[4].Rectangle)
-                {
-                    Title = "Aspose User",
-                    Color = Color.Violet
-                };
-                // Add annotation to the page
-                document.Pages[1].Annotations.Add(highlightAnnotation);
-                document.Pages[1].Annotations.Add(squigglyAnnotation);
-                document.Pages[1].Annotations.Add(strikeOutAnnotation);
-                document.Pages[1].Annotations.Add(underlineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
+StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(
+    document.Pages[1],
+    tfa.TextFragments[2].Rectangle)
+{
+    Title = "Aspose User",
+    Color = Color.Blue
+};
+SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(document.Pages[1],
+    tfa.TextFragments[3].Rectangle)
+{
+    Title = "Aspose User",
+    Color = Color.Red
+};
+UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(document.Pages[1],
+    tfa.TextFragments[4].Rectangle)
+{
+    Title = "Aspose User",
+    Color = Color.Violet
+};
+// Add annotation to the page
+document.Pages[1].Annotations.Add(highlightAnnotation);
+document.Pages[1].Annotations.Add(squigglyAnnotation);
+document.Pages[1].Annotations.Add(strikeOutAnnotation);
+document.Pages[1].Annotations.Add(underlineAnnotation);
+// Save result file
+document.Save(dataDir + "sample_mod.pdf");
 ```
 
 If you want to highlight a multi-line fragment you should use advanced example:
@@ -171,7 +153,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
 /// </summary>
 public static void AddHighlightAnnotationAdvanced()
 {
-    var document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    var document = new Document(dataDir + "sample_mod.pdf");
     var page = document.Pages[1];
     var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
     tfa.Visit(page);
@@ -180,10 +162,10 @@ public static void AddHighlightAnnotationAdvanced()
         var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
         page.Annotations.Add(highlightAnnotation);
     }
-    document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    document.Save(dataDir + "sample_mod.pdf");
 }
 
-private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
+private static HighlightAnnotation HighLightTextFragment(Page page,
     TextFragment textFragment, Color color)
 {
     if (textFragment.Segments.Count == 1)
@@ -233,7 +215,7 @@ private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
 public static void GetHighlightedText()
 {
     // Load the PDF file
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    Document document = new Document(dataDir + "sample_mod.pdf");
     var highlightAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Highlight)
         .Cast<HighlightAnnotation>();
@@ -252,15 +234,15 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 public static void GetTextMarkupAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    Document document = new Document(dataDir + "sample_mod.pdf");
     var textMarkupAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Highlight
         || a.AnnotationType == AnnotationType.Squiggly)
         .Cast<TextMarkupAnnotation>();
-        foreach (var ta in textMarkupAnnotations)
-        {
-            Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-        }
+    foreach (var ta in textMarkupAnnotations)
+    {
+        Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+    }
 }
 ```
 
@@ -272,16 +254,16 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
 public static void DeleteTextMarkupAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
+    Document document = new Document(dataDir + "sample_mod.pdf");
     var textMarkupAnnotations = document.Pages[1].Annotations
         .Where(a => a.AnnotationType == AnnotationType.Highlight
         ||a.AnnotationType == AnnotationType.Squiggly)
         .Cast<TextMarkupAnnotation>();
-        foreach (var ta in textMarkupAnnotations)
-        {
+    foreach (var ta in textMarkupAnnotations)
+    {
         document.Pages[1].Annotations.Delete(ta);
-        }
-        document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
+    }
+    document.Save(dataDir + "sample_del.pdf");
 }
 ```
 

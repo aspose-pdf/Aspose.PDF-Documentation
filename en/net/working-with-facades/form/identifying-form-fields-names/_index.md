@@ -3,10 +3,75 @@ title: Identifying form fields names
 type: docs
 weight: 10
 url: /net/identifying-form-fields-names/
-description: Aspose.PDF.Facades allows you identifying form fields names using Form Class.
+description: Aspose.Pdf.Facades allows you identifying form fields names using Form Class.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Identifying form fields names",
+    "alternativeHeadline": "Identify and Label PDF Form Fields Easily",
+    "abstract": "The functionality in Aspose.PDF for .NET simplifies the process of identifying form field names in PDF documents. By utilizing the Form class and its attributes, users can easily retrieve and display field names alongside their corresponding fields, streamlining PDF form filling and editing. This feature enhances user experience by ensuring accurate field manipulation, especially when working with forms created in external tools like Adobe Designer",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "511",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/identifying-form-fields-names/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/identifying-form-fields-names/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 [Aspose.PDF for .NET](/pdf/net/) provides the capability to create, edit and fill already created Pdf forms. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace contains [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) class, which contains the function named [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) and it takes two arguments i.e. Field name and field value. So in-order to fill the form fields, you must be aware of the exact form field name.
 

@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Line Object to PDF file",
-    "alternativeHeadline": "How to create Line Object in PDF file",
+    "alternativeHeadline": "Enhance PDFs with Custom Line Objects Using .NET",
+    "abstract": "Enhance your PDF documents by seamlessly adding line objects with Aspose.PDF for .NET. This new functionality allows precise control over line attributes, including dash patterns and colors, enabling users to create visually appealing graphical representations within their PDF files. Discover how to implement this feature easily with comprehensive code examples and clear step-by-step instructions",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, line in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Line Object, PDF manipulation, Aspose.PDF for .NET, Line object, Drawing in PDF, Graph object, Rectangle in PDF, Dotted Dashed Line, Draw Line Across the Page, PDF document generation",
+    "wordcount": "729",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-line/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to create a line object to your PDF using Aspose.PDF for .NET."
 }
 </script>
@@ -84,18 +85,12 @@ Aspose.PDF for .NET supports the feature to add graph objects (for example graph
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-
-1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file
-
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file.
 1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance.
-
 1. Add Graph object to paragraphs collection of page instance.
-
 1. Create [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) instance.
-
 1. Set line width.
-
 1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object.
 
 1. Save your PDF file.
@@ -128,7 +123,7 @@ public static void AddLineObjectToPDF()
     graph.Shapes.Add(line);
 
     // Save PDF file
-    document.Save(_dataDir + "AddLineObject_out.pdf");
+    document.Save(dataDir + "AddLineObject_out.pdf");
 }
 ```
 
@@ -161,7 +156,7 @@ public static void DashLengthInBlackAndDashLengthInWhite()
     // Add line to shapes collection of drawing object
     canvas.Shapes.Add(line);
     // Save PDF file
-    document.Save(_dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
+    document.Save(dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
 }
 ```
 
@@ -218,7 +213,7 @@ public static void ExampleLineAcrossPage()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "ExampleLineAcrossPage_out.pdf");
+    document.Save(dataDir + "ExampleLineAcrossPage_out.pdf");
 }
 ```
 

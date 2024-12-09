@@ -11,6 +11,72 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF to PowerPoint in .NET",
+    "alternativeHeadline": "Convert PDF Documents to PowerPoint Presentations Efficiently in C#",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature enabling seamless conversion of PDF documents to PowerPoint (PPTX) format, allowing each PDF page to transform into a distinct slide. With the option to render text as selectable or as images, users can easily customize their presentations while tracking conversion progress efficiently. Optimize your document workflow by leveraging this innovative functionality for enhanced productivity",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1174",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-to-powerpoint/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-to-powerpoint/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
+
 ## Overview
 
 This article explains how to **convert PDF to PowerPoint using C#**. It covers these topics.
@@ -41,20 +107,20 @@ In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following
 
 <a name="csharp-pdf-to-powerpoint"><strong>Steps: Convert PDF to PowerPoint in C#</strong></a> | <a name="csharp-pdf-to-pptx"><strong>Steps: Convert PDF to PPTX in C#</strong></a>
 
-1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class
-2. Create an instance of [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class
-3. Use the **Save** method of the **Document** object to save the PDF as PPTX
+1. Create an instance of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
+2. Create an instance of [PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class.
+3. Use the **Save** method of the **Document** object to save the PDF as PPTX.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 // Save the output in PPTX format
-doc.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
+document.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
 ```
 
 ## Convert PDF to PPTX with Slides as Images
@@ -74,12 +140,12 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 // Save the output in PPTX format
 pptx_save.SlidesAsImages = true;
-doc.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
+document.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
 ```
 
 ## Progress Detail of PPTX Conversion
@@ -91,14 +157,14 @@ Aspose.PDF for .NET lets you track the progress of PDF to PPTX conversion. The [
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Instantiate PptxSaveOptions instance
 Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
 
 //Specify Custom Progress Handler
 pptx_save.CustomProgressHandler = ShowProgressOnConsole;
 // Save the output in PPTX format
-doc.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", pptx_save);
+document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", pptx_save);
 ```
 
 Following is the custom method for displaying progress conversion.
@@ -118,7 +184,6 @@ switch (eventInfo.EventType)
         break;
     case ProgressEventType.SourcePageAnalysed:
         Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
-
         break;
     default:
         break;

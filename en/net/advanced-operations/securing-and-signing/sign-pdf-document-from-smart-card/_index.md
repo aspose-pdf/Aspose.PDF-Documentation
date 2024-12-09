@@ -2,10 +2,10 @@
 title: How to add Smart Card signature to PDF
 linktitle: PDF Signing with Smart Card
 type: docs
-weight: 40
+weight: 30
 url: /net/sign-pdf-document-from-smart-card/
 description: Aspose.PDF for .NET allows you to sign PDF documents from a smart card using signature field.
-lastmod: "2022-02-17"
+lastmod: "2024-11-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to add Smart Card signature to PDF",
-    "alternativeHeadline": "Working with Smart Card signature in PDF",
+    "alternativeHeadline": "Add Smart Card Signatures to PDF Documents Easily",
+    "abstract": "Aspose.PDF for .NET now enables seamless PDF signing using smart cards, enhancing digital security by allowing users to authenticate documents with their stored digital certificates. This functionality supports both signature fields and advanced signing options, ensuring compliance and integrity in PDF transactions",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, smart card signature",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Smart Card signature, PDF signing, Aspose.PDF for .NET, digital signatures, external signing service, PKCS7 signature, certificate selection, hash algorithm, signature field, signing PDF documents",
+    "wordcount": "755",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sign-pdf-document-from-smart-card/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF for .NET allows you to sign PDF documents from a smart card using signature field."
 }
 </script>
@@ -92,7 +93,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 File.Copy(dataDir + "blank.pdf", dataDir + "externalSignature1.pdf", true);
 using (FileStream fs = new FileStream(dataDir + "externalSignature1.pdf", FileMode.Open, FileAccess.ReadWrite))
 {
-    using (Document doc = new Document(fs))
+    using (Document document = new Document(fs))
     {
         SignatureField field1 = new SignatureField(doc.Pages[1], new Rectangle(100, 400, 10, 10));
 
@@ -102,7 +103,7 @@ using (FileStream fs = new FileStream(dataDir + "externalSignature1.pdf", FileMo
         // Manually chose the certificate in the store
         System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel = System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
 
-        Aspose.Pdf.Forms.ExternalSignature externalSignature = new Aspose.Pdf.Forms.ExternalSignature(sel[0])
+        ExternalSignature externalSignature = new ExternalSignature(sel[0])
         {
             Authority = "Me",
             Reason = "Reason",
@@ -110,20 +111,24 @@ using (FileStream fs = new FileStream(dataDir + "externalSignature1.pdf", FileMo
         };
 
         field1.PartialName = "sig1";
-        doc.Form.Add(field1, 1);
+        document.Form.Add(field1, 1);
         field1.Sign(externalSignature);
-        doc.Save();
+        // Save result file
+        document.Save();
     }
 }
 
-using (PdfFileSignature pdfSign = new PdfFileSignature(new Document(dataDir + "externalSignature1.pdf")))
+using (Document document = new Document(dataDir + "externalSignature1.pdf"))
 {
-    IList<string> sigNames = pdfSign.GetSignNames();
-    for (int index = 0; index <= sigNames.Count - 1; index++)
+    using (PdfFileSignature pdfSign = new PdfFileSignature(document))
     {
-        if (!pdfSign.VerifySigned(sigNames[index]) || !pdfSign.VerifySignature(sigNames[index]))
+        IList<string> sigNames = pdfSign.GetSignNames();
+        for (int index = 0; index <= sigNames.Count - 1; index++)
         {
-            throw new ApplicationException("Not verified");
+            if (!pdfSign.VerifySignature(sigNames[index]))
+            {
+                throw new ApplicationException("Not verified");
+            }
         }
     }
 }
@@ -136,34 +141,69 @@ using (PdfFileSignature pdfSign = new PdfFileSignature(new Document(dataDir + "e
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-Document doc = new Document(dataDir + "blank.pdf");
-
-using (Facades.PdfFileSignature pdfSign = new Facades.PdfFileSignature())
+using (Document document = new Document(dataDir + "blank.pdf"))
 {
-    pdfSign.BindPdf(doc);
+    using (Facades.PdfFileSignature pdfSign = new Facades.PdfFileSignature())
+    {
+        pdfSign.BindPdf(document);
 
-    // Sign with certificate selection in the windows certificate store
-    System.Security.Cryptography.X509Certificates.X509Store store = new System.Security.Cryptography.X509Certificates.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser);
-    store.Open(System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly);
-    // Manually chose the certificate in the store
-    System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel = System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
+        // Sign with certificate selection in the windows certificate store
+        System.Security.Cryptography.X509Certificates.X509Store store = new System.Security.Cryptography.X509Certificates.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser);
+        store.Open(System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly);
+        // Manually chose the certificate in the store
+        System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel = System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
 
-    Aspose.Pdf.Forms.ExternalSignature externalSignature = new Aspose.Pdf.Forms.ExternalSignature(sel[0]);
-    pdfSign.SignatureAppearance = dataDir + "demo.png";
-    pdfSign.Sign(1, "Reason", "Contact", "Location", true, new System.Drawing.Rectangle(100, 100, 200, 200), externalSignature);
-    pdfSign.Save(dataDir + "externalSignature2.pdf");
+        ExternalSignature externalSignature = new ExternalSignature(sel[0]);
+        pdfSign.SignatureAppearance = dataDir + "demo.png";
+        pdfSign.Sign(1, "Reason", "Contact", "Location", true, new System.Drawing.Rectangle(100, 100, 200, 200), externalSignature);
+        // Save result file
+        pdfSign.Save(dataDir + "externalSignature2.pdf");
+    }
 }
 
-using (Facades.PdfFileSignature pdfSign = new Facades.PdfFileSignature(new Document(dataDir + "externalSignature2.pdf")))
+using (Document document = new Document(dataDir + "externalSignature1.pdf"))
 {
-    IList<string> sigNames = pdfSign.GetSignNames();
-    for (int index = 0; index <= sigNames.Count - 1; index++)
+    using (Facades.PdfFileSignature pdfSign = new Facades.PdfFileSignature(document))
     {
-        if (!pdfSign.VerifySigned(sigNames[index]) || !pdfSign.VerifySignature(sigNames[index]))
+        IList<string> sigNames = pdfSign.GetSignNames();
+        for (int index = 0; index <= sigNames.Count - 1; index++)
         {
-            throw new ApplicationException("Not verified");
+            if (!pdfSign.VerifySignature(sigNames[index]))
+            {
+                throw new ApplicationException("Not verified");
+            }
         }
     }
+}
+```
+
+You can use the ExternalSignature class for an external signing service. ExternalSignature creates PKCS7 and PKCS7 detached signatures.
+You can pass the desired hashing algorithm to the ExternalSignature constructor. Note that non-detached signatures can only use SHA1.
+It will be chosen automatically if you do not explicitly specify the hashing algorithm. For non-detached signatures, it will be SHA1; for detached, it will be SHA-256 for an RSA key. For an ECDSA key, the hash size depends on the key size.
+
+The ExternalSignature constructor also accepts a key certificate (it can be in Base64 format). You can pass a certificate containing a private key and a certificate containing only a public key. In either case, the signature will be performed externally in the CustomSignHash delegate code, but the external algorithm must create a signature corresponding to the key of the passed certificate. The certificate is needed to generate the signed document correctly. ECDSA signature does not support SHA-1.
+
+```csharp
+var inputPdf = "";
+var outputPdf = "";
+
+using (var sign = new PdfFileSignature())
+{
+    sign.BindPdf(inputPdf);
+
+    X509Certificate2 signerCert = GetPublicCertificate();
+    
+    var signature = new ExternalSignature(signerCert, DigestHashAlgorithm.Sha256);
+
+    SignHash customSignHash = delegate(byte[] signableHash, DigestHashAlgorithm digestHashAlgorithm)
+    {
+        return CallExternalSignatureService(signableHash, digestHashAlgorithm);
+    };
+    
+    signature.CustomSignHash = customSignHash;
+    sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), signature);
+    // Save result file
+    sign.Save(outputPdf);
 }
 ```
 

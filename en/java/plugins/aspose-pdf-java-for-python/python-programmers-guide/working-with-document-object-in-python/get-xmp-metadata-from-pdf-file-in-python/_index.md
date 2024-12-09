@@ -3,6 +3,7 @@ title: Get XMP Metadata from PDF File in Python
 type: docs
 weight: 50
 url: /java/get-xmp-metadata-from-pdf-file-in-python/
+description: Discover how to retrieve XMP metadata from a PDF file in Python using Aspose.PDF, enabling detailed content analysis.
 lastmod: "2021-06-05"
 ---
 

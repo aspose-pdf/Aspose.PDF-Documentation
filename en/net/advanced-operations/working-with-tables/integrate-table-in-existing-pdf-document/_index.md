@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Integrate Table with Data Sources PDF",
-    "alternativeHeadline": "How to integrate Table with Data Sources PDF",
+    "alternativeHeadline": "Integrate PDF Tables with Data Sources Seamlessly",
+    "abstract": "The integrate Table with Data Sources PDF feature allows developers to seamlessly import data from various sources, including databases and the Entity Framework, directly into PDF tables using Aspose.PDF for .NET. With functionalities to determine pagination and support for repeating columns, this feature enhances data presentation while maintaining document integrity by preventing table breaks across pages",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, integrate table",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2201",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/integrate-table/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article shows how to integrate PDF tables. Integrate Table with Database and determine if the table will split on the current page."
 }
 </script>
@@ -117,8 +117,8 @@ dr[1] = "Mary Miller";
 dr[2] = "Female";
 dt.Rows.Add(dr);
 // Create Document instance
-Document doc = new Document();
-doc.Pages.Add();
+Document document = new Document();
+document.Pages.Add();
 // Initializes a new instance of the Table
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 // Set column widths of the table
@@ -130,10 +130,10 @@ table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .
 table.ImportDataTable(dt, true, 0, 1, 3, 3);
 
 // Add table object to first page of input document
-doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "DataIntegrated_out.pdf";
+document.Pages[1].Paragraphs.Add(table);
+
 // Save updated document containing table object
-doc.Save(dataDir);
+document.Save(dataDir + "DataIntegrated_out.pdf");
 ```
 
 ## How to determine if table will break in the current page
@@ -148,7 +148,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 // Instantiate an object PDF class
 Document pdf = new Document();
 // Add the section to PDF document sections collection
-Aspose.Pdf.Page page = pdf.Pages.Add();
+Page page = pdf.Pages.Add();
 // Instantiate a table object
 Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
 table1.Margin.Top = 300;
@@ -192,15 +192,15 @@ Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\
 // + Table Top margin and table height from Page height and its less
 // Than 10 (an average row can be greater than 10)
 if ((PageHeight - TotalObjectsHeight) <= 10)
+{
     // If the value is less than 10, then display the message.
     // Which shows that another row can not be placed and if we add new
     // Row, table will break. It depends upon the row height value.
     Console.WriteLine("Page Height - Objects Height < 10, so table will break");
+}
 
-
-dataDir = dataDir + "DetermineTableBreak_out.pdf";
 // Save the pdf document
-pdf.Save(dataDir);
+pdf.Save(dataDir + "DetermineTableBreak_out.pdf");
 ```
 
 ## Add Repeating Column in Table
@@ -214,8 +214,8 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 string outFile = dataDir + "AddRepeatingColumn_out.pdf";
 // Create a new document
-Document doc = new Document();
-Aspose.Pdf.Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 // Instantiate an outer table that takes up the entire page
 Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();
@@ -254,7 +254,6 @@ row.Cells.Add("header 16");
 row.Cells.Add("header 17");
 
 for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
-
 {
     // Create rows in the table and then cells in the rows
     Aspose.Pdf.Row row1 = mytable.Rows.Add();
@@ -273,7 +272,8 @@ for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
     row1.Cells.Add("col " + RowCounter.ToString() + ", 16");
     row1.Cells.Add("col " + RowCounter.ToString() + ", 17");
 }
-doc.Save(outFile);
+
+document.Save(outFile);
 ```
 
 ## Integrate Table with the Entity Framework source
@@ -328,6 +328,7 @@ public static class PdfHelper
             }
         }
     }
+    
     public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
     {
         var headRow = table.Rows.Add();           

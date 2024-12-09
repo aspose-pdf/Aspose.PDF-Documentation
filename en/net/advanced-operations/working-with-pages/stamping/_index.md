@@ -20,22 +20,23 @@ aliases:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Stamping with Aspose.PDF using C#",
-    "alternativeHeadline": "How to add Image Stamp to PDF",
+    "headline": "Working with PDF Pages in C#",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "Discover the advanced capabilities of **Aspose.PDF for .NET** for managing PDF pages, including adding, moving, and deleting pages with precision. This feature enables users to enhance their PDF documents by incorporating headers, footers, watermarks, and custom page sizes, all through intuitive C# code. Optimize your document workflows with seamless PDF manipulation and customization functionalities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf stamp, image stamp",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "pdf, add pages, rotate pages, delete pages, add watermarks, page numbering, crop pages, Aspose.PDF for .NET",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,13 +73,13 @@ aliases:
             }
         ]
     },
-    "url": "/net/stamping/",
+    "url": "/net/working-with-pages/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/stamping/"
+        "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "This section describes how to add image stamps and text stamps to a PDF page."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 
@@ -87,9 +88,9 @@ The Stamp in the PDF file gives the additional information for the PDF file, suc
 
 Check the following sections to learn how to add a stamp with C#:
 
-- [Add Image stamps in PDF page](/pdf/net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
+- [Add Image stamps in the PDF page](/pdf/net/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
 - [Add Text stamps in the PDF File](/pdf/net/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
-
+- [Page stamps in the PDF File](/pdf/net/page-stamps-in-the-pdf-file/) - add a page stamp to PDF document using the PdfPageStamp class.
 
 
 <script type="application/ld+json">

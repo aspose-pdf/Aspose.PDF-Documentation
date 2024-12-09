@@ -1,12 +1,77 @@
 ---
-title: Using Aspose.Pdf for .NET with Coldfusion
+title: Using Aspose.PDF for .NET with Coldfusion
 type: docs
-weight: 300
+weight: 10
 url: /net/using-aspose-pdf-for-net-with-coldfusion/
-description: You should work with Aspose.Pdf for .NET with Coldfusion using PdfFileInfo Class
+description: You should work with Aspose.PDF for .NET with Coldfusion using PdfFileInfo Class
 lastmod: "2021-07-14"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Using Aspose.PDF for .NET with Coldfusion",
+    "alternativeHeadline": "Integrate Aspose.PDF for .NET with Coldfusion Effortlessly",
+    "abstract": "Discover the seamless integration of Aspose.PDF for .NET with Coldfusion, enabling you to manipulate and edit PDF files effortlessly. Learn how to utilize the PdfFileInfo class for extracting essential document information while enhancing your Coldfusion applications with robust PDF functionalities. This guide provides a clear example, ensuring you can easily implement this powerful feature",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "634",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/using-aspose-pdf-for-net-with-coldfusion/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/using-aspose-pdf-for-net-with-coldfusion/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 {{% alert color="primary" %}}
 
@@ -28,17 +93,15 @@ First of all, you h ave to copy the DLL (Aspose.PDF .dll) to a location from whe
 
 ```html
 <cfobject type = ".NET" name = "fileinfo" 
-        class = "Aspose.PDF.Facades.PdfFileInfo" 
+        class = "Aspose.Pdf.Facades.PdfFileInfo" 
         assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
 ```
 
-The attribute class in the above tag points to Aspose.PDF. Facades class, which in this case is PdfFileInfo. The name attribute is the instance name of the class and will be used later in the code to access class methods or properties. Type attribute specifies the type of the component - in our case it is .NET.
+The attribute class in the above tag points to Aspose.PDF Facades class, which in this case is PdfFileInfo. The name attribute is the instance name of the class and will be used later in the code to access class methods or properties. Type attribute specifies the type of the component - in our case it is .NET.
 
 One important point which you’ll have to keep in mind while using the .NET component in Coldfusion is that, when you get or set any property of the class object, you have to follow a specific structure. To set a property you’ll use syntax like Set_propertyname, and to get a property value you’ll use Get_propertyname.
 
-For example
-
-Set a property value:
+For example, set a property value:
 
 ```html
 <cfset FilePath = ExpandPath("guide.pdf")>
@@ -57,7 +120,7 @@ A basic but complete example to help you understand the process of using Aspose.
 ```html
 <!--- create an instance of PdfFileInfo class --->
 
-<cfobject type = ".NET" name = "fileinfo" class = "Aspose.PDF.Facades.PdfFileInfo"
+<cfobject type = ".NET" name = "fileinfo" class = "Aspose.Pdf.Facades.PdfFileInfo"
 
 assembly = "C:/Aspose/Net/Assembly/Aspose.PDF.dll">
 

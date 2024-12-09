@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /javascript-cpp/convert-pdf-to-pdfa/
 lastmod: "2023-11-01"
-description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
+description: Discover how to convert PDFs to PDF/A for archival purposes using Aspose.PDF in JavaScript via C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

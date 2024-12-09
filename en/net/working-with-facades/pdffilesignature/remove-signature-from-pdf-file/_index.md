@@ -7,6 +7,71 @@ description: This section explains how to remove signature from PDF File using P
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Remove Signature from PDF File",
+    "alternativeHeadline": "Effortlessly Remove Signatures from PDF Files",
+    "abstract": "The functionality allows users to efficiently remove digital signatures from PDF files using the PdfFileSignature class. This feature provides flexibility, enabling the removal of specific signatures while optionally retaining the signature fields for future use, enhancing document management capabilities",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "434",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/remove-signature-from-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/remove-signature-from-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Remove Digital Signature from the PDF File
 
@@ -22,7 +87,7 @@ public static void RemoveSignature()
     // Create PdfFileSignature object
     PdfFileSignature pdfSign = new PdfFileSignature();
     // Open PDF document
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
     // Get list of signature names
     var sigNames = pdfSign.GetSignNames();
     // Remove all the signatures from the PDF file
@@ -32,7 +97,7 @@ public static void RemoveSignature()
         pdfSign.RemoveSignature(sigNames[index]);
     }
     // Save updated PDF file
-    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```
 
@@ -47,12 +112,12 @@ public static void RemoveSignatureButKeepField()
     PdfFileSignature pdfSign = new PdfFileSignature();
 
     // Open PDF document
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
 
     pdfSign.RemoveSignature("Signature1", false);
 
     // Save updated PDF file
-    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```
 
@@ -65,7 +130,7 @@ public static void RemoveSignatureButKeepField2()
     PdfFileSignature pdfSign = new PdfFileSignature();
 
     // Open PDF document
-    pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
 
     var sigNames = pdfSign.GetSignNames();
     foreach (var sigName in sigNames)
@@ -74,6 +139,6 @@ public static void RemoveSignatureButKeepField2()
     }
 
     // Save updated PDF file
-    pdfSign.Save(_dataDir + "RemoveSignature_out.pdf");
+    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```

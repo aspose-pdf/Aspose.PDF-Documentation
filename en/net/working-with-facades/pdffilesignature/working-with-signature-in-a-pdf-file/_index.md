@@ -7,6 +7,71 @@ description: This section explains how to to extract signature information, extr
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Working with Signature in PDF File",
+    "alternativeHeadline": "Extract Signature Details and Images from PDFs",
+    "abstract": "The new functionality in Aspose.PDF for .NET enhances PDF document security by allowing users to extract signature information and images with the PdfFileSignature class. This feature also includes the ability to customize digital signatures, suppress specific information like location and reason, and change language settings for signature text, providing a comprehensive toolset for managing PDF signatures efficiently",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "878",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/working-with-signature-in-a-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/working-with-signature-in-a-pdf-file/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## How to Extract Signature Information
 
@@ -17,7 +82,7 @@ To extract signature information, we have introduced the ExtractCertificate(..) 
 ```csharp
 public static void ExtractSignatureInfo()
 {
-    string input = _dataDir + "DigitallySign.pdf";
+    string input = dataDir + "DigitallySign.pdf";
     string certificateFileName = "extracted_cert.pfx";
     using (PdfFileSignature pdfFileSignature = new PdfFileSignature())
     {
@@ -33,7 +98,7 @@ public static void ExtractSignatureInfo()
                 {
                     using (cerStream)
                     {
-                        using (FileStream fs = new FileStream(_dataDir + certificateFileName, FileMode.CreateNew))
+                        using (FileStream fs = new FileStream(dataDir + certificateFileName, FileMode.CreateNew))
                         {
                             cerStream.CopyTo(fs);
                         }
@@ -56,13 +121,13 @@ public static void ExtractSignatureImage()
 {
     using (PdfFileSignature signature = new PdfFileSignature())
     {
-        signature.BindPdf(_dataDir + "DigitallySign.pdf");
+        signature.BindPdf(dataDir + "DigitallySign.pdf");
 
         if (signature.ContainsSignature())
         {
             foreach (string sigName in signature.GetSignNames())
             {
-                string outFile = _dataDir + "ExtractImages_out.jpg";
+                string outFile = dataDir + "ExtractImages_out.jpg";
                 using (Stream imageStream = signature.ExtractImage(sigName))
                 {
                     if (imageStream != null)
@@ -88,19 +153,19 @@ Aspose.PDF functionality allows flexible configuration for digital sign instance
 public static void SupressLocationReason()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "sample01.pdf");
+    pdfSign.BindPdf(dataDir + "sample01.pdf");
 
     // Create a rectangle for signature location
     System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
     // Set signature appearance
-    pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
+    pdfSign.SignatureAppearance = dataDir + "aspose-logo.png";
 
     // Create any of the three signature types
-    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    PKCS1 signature = new PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
     pdfSign.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
     // Save output PDF file
-    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+    pdfSign.Save(dataDir + "DigitallySign.pdf");
 }
 ```
 
@@ -112,13 +177,13 @@ Aspose.PDF for .NET allows customization features for a digital sign. The Sign m
 public static void CustomizationFeaturesForDigitalSign()
 {
     PdfFileSignature pdfSign = new PdfFileSignature();
-    pdfSign.BindPdf(_dataDir + "sample01.pdf");
+    pdfSign.BindPdf(dataDir + "sample01.pdf");
 
     // Create a rectangle for signature location
     System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
 
     // Create any of the three signature types
-    PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+    PKCS1 signature = new PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
     SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
     {
@@ -130,7 +195,7 @@ public static void CustomizationFeaturesForDigitalSign()
 
     pdfSign.Sign(1, true, rect, signature);
     // Save output PDF file
-    pdfSign.Save(_dataDir + "DigitallySign.pdf");
+    pdfSign.Save(dataDir + "DigitallySign.pdf");
 }
 ```
 
@@ -138,17 +203,17 @@ public static void CustomizationFeaturesForDigitalSign()
 
 Using Aspose.PDF for .NET API, you can sign a PDF file using any of the following three types of signatures:
 
-- PKCS#1
-- PKCS#7
-- PKCS#7
+- PKCS#1.
+- PKCS#7.
+- PKCS#12.
 
 Each of provided signatures contains a set of configuration properties implemented for your convenience(localization, date time format, font family etc). Class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) provides corresponding functionality. The following code snippet demonstrates how to change language in digital sign text:
 
 ```csharp
 public static void ChangeLanguageInDigitalSignText()
 {
-    string inFile = _dataDir + "sample01.pdf";
-    string outFile = _dataDir + "DigitallySign.pdf";
+    string inFile = dataDir + "sample01.pdf";
+    string outFile = dataDir + "DigitallySign.pdf";
 
     using (Aspose.Pdf.Facades.PdfFileSignature pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
@@ -157,7 +222,7 @@ public static void ChangeLanguageInDigitalSignText()
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
 
         //create any of the three signature types
-        PKCS7 pkcs = new PKCS7(_dataDir + "test01.pfx", "Aspose2021")
+        PKCS7 pkcs = new PKCS7(dataDir + "test01.pfx", "Aspose2021")
         {
             Reason = "Pruebas Firma",
             ContactInfo = "Contacto Pruebas",

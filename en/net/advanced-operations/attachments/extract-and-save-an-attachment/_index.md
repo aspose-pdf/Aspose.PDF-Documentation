@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract and Save an Attachment",
-    "alternativeHeadline": "How to extract and save an attachments",
+    "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature that enables users to seamlessly extract and save attachments from PDF documents. This functionality allows for the retrieval of all embedded files or specific attachments, enhancing document management and accessibility for developers working with PDF files. Optimize your PDF workflows by effortlessly handling attachments with this innovative tool",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, save attachments, extract attachments",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
+    "wordcount": "604",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-and-save-an-attachment/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF for .NET allows you to get all attachments from a PDF document. Also, you can get an individual attachment from your document."
 }
 </script>
@@ -95,10 +96,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
+Document document = new Document(dataDir + "GetAlltheAttachments.pdf");
 
 // Get embedded files collection
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
+EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
 // Get count of the embedded files
 Console.WriteLine("Total files : {0}", embeddedFiles.Count);
@@ -127,13 +128,12 @@ foreach (FileSpecification fileSpecification in embeddedFiles)
 
     // Get the attachment and write to file or stream
     byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+    using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+    {
+        fileStream.Write(fileContent, 0, fileContent.Length);
+    }
+    count += 1;
 }
 ```
 
@@ -147,10 +147,10 @@ In order to get an individual attachment, we can specify the index of attachment
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
+Document document = new Document(dataDir + "GetIndividualAttachment.pdf");
 
 // Get particular embedded file
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
+FileSpecification fileSpecification = document.EmbeddedFiles[1];
 
 // Get the file properties
 Console.WriteLine("Name: {0}", fileSpecification.Name);
@@ -169,14 +169,14 @@ if (fileSpecification.Params != null)
     Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
 }
 
-
 // Get the attachment and write to file or stream
 byte[] fileContent = new byte[fileSpecification.Contents.Length];
 fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
 
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
+using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+{
+    fileStream.Write(fileContent, 0, fileContent.Length);
+}
 ```
 
 <script type="application/ld+json">

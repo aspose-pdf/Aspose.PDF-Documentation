@@ -2,10 +2,10 @@
 title: Extract Image and Signature Information
 linktitle: Extract Image and Signature Information
 type: docs
-weight: 30
+weight: 20
 url: /net/extract-image-and-signature-information/
 description: You may extract images from the signature field and extract signature information using the SignatureField class with C#.
-lastmod: "2022-02-17"
+lastmod: "2024-11-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract Image and Signature Information",
-    "alternativeHeadline": "How to extract Image and Signature from PDF",
+    "alternativeHeadline": "Extract PDF signature images and certificate details",
+    "abstract": "New Aspose.PDF for .NET functionality extracts images and detailed information from PDF signature fields.  Using C#, developers can retrieve signature images and certificate data, including public key, thumbprint, and issuer details, enhancing PDF manipulation capabilities. This improves digital signature verification and management within applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, extract signature",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Extract Image, SignatureField class, ExtractImage method, ExtractCertificate method, C#, Aspose.PDF for .NET, PDF Signature, digital signature, signature information",
+    "wordcount": "583",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-image-and-signature-information/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You may extract images from the signature field and extract signature information using the SignatureField class with C#."
 }
 </script>
@@ -89,15 +90,15 @@ In order to extract signature information, we have introduced the [ExtractImage]
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-string input = dataDir+ @"ExtractingImage.pdf";
-using (Document pdfDocument = new Document(input))
+string input = dataDir +  @"ExtractingImage.pdf";
+using (Document document = new Document(input))
 {
-    foreach (Field field in pdfDocument.Form)
+    foreach (Field field in document.Form)
     {
         SignatureField sf = field as SignatureField;
         if (sf != null)
         {
-            string outFile = dataDir+ @"output_out.jpg";
+            string outFile = dataDir +  @"output_out.jpg";
             using (Stream imageStream = sf.ExtractImage())
             {
                 if (imageStream != null)
@@ -129,9 +130,9 @@ To extract signature information, we have introduced the [ExtractCertificate](ht
 string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
 string input = dataDir + "ExtractSignatureInfo.pdf";
-using (Document pdfDocument = new Document(input))
+using (Document document = new Document(input))
 {
-    foreach (Field field in pdfDocument.Form)
+    foreach (Field field in document.Form)
     {
         SignatureField sf = field as SignatureField;
         if (sf != null)
@@ -152,6 +153,34 @@ using (Document pdfDocument = new Document(input))
         }
     }
 }
+```
+
+You can get information about document signature algorithms.
+
+```csharp
+using (Document document = new Document(inputFilePath))
+{
+    using (PdfFileSignature signature = new PdfFileSignature(document))
+    {
+        var sigNames = signature.GetSignNames();
+        List<SignatureAlgorithmInfo> signaturesInfoList =  signature.GetSignaturesInfo();
+        foreach (var sigInfo in signaturesInfoList)
+        {
+            Console.WriteLine(sigInfo.DigestHashAlgorithm);
+            Console.WriteLine(sigInfo.AlgorithmType);
+            Console.WriteLine(sigInfo.CryptographicStandard);
+            Console.WriteLine(sigInfo.SignatureName);
+        }
+    }
+}
+```
+
+Sample output for the example above:
+```
+Sha256
+Rsa
+Pkcs7
+Signature1
 ```
 
 <script type="application/ld+json">

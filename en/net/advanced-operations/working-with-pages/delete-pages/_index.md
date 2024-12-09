@@ -17,21 +17,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Delete PDF Pages programmatically C#",
-    "alternativeHeadline": "How to remove PDF Pages",
+    "alternativeHeadline": "Delete Specific Pages from PDF with C#",
+    "abstract": "With the Aspose.PDF for .NET library, users can now efficiently remove specific pages from PDF documents programmatically using C#. This feature streamlines PDF management, allowing for quick edits and updates tailored to user needs, ultimately enhancing document customization and control",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, delete pdf pages, remove pdf pages",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "214",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +73,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/delete-pages/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "You can delete pages from your PDF file using Aspose.PDF for .NET  library."
 }
 </script>
@@ -84,8 +84,8 @@ You can delete pages from a PDF file using Aspose.PDF for .NET. To delete a part
 
 ## Delete Page from PDF File
 
-1. Call the [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) method and specify the page's index
-1. Call the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method to save the updated PDF file
+1. Call the [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) method and specify the page's index.
+1. Call the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method to save the updated PDF file.
 The following code snippet shows how to delete a particular page from the PDF file using C#.
 
 ```csharp
@@ -94,14 +94,13 @@ The following code snippet shows how to delete a particular page from the PDF fi
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "DeleteParticularPage.pdf");
+Document document = new Document(dataDir + "DeleteParticularPage.pdf");
 
 // Delete a particular page
-pdfDocument.Pages.Delete(2);
+document.Pages.Delete(2);
 
-dataDir = dataDir + "DeleteParticularPage_out.pdf";
 // Save updated PDF
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "DeleteParticularPage_out.pdf");
 ```
 
 <script type="application/ld+json">

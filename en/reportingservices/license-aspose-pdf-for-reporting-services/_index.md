@@ -4,6 +4,7 @@ title: License
 type: docs
 weight: 70
 url: /reportingservices/license-aspose-pdf-for-reporting-services/
+description: Understand licensing options for Aspose.PDF for Reporting Services. Find out how to activate your license and unlock full functionality.
 lastmod: "2021-06-05"
 ---
 

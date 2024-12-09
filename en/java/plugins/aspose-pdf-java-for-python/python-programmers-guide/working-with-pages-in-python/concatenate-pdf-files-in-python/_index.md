@@ -3,6 +3,7 @@ title: Concatenate PDF Files in Python
 type: docs
 weight: 10
 url: /java/concatenate-pdf-files-in-python/
+description: Learn how to concatenate multiple PDF files into a single PDF document in Python using Aspose.PDF, simplifying document management.
 lastmod: "2021-06-05"
 ---
 

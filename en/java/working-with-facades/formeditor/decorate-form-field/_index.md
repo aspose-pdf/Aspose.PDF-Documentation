@@ -3,7 +3,7 @@ title: Decorate Form Field in PDF
 type: docs
 weight: 20
 url: /java/decorate-form-field/
-description: This section explains how to decorate Form Field in PDF using FormEditor Class.
+description: Learn how to apply decorations like borders or colors to form fields in PDF documents using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

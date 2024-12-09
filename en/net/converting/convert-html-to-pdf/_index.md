@@ -10,6 +10,72 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert HTML to PDF in .NET",
+    "alternativeHeadline": "Convert HTML and MHTML to PDF with C#",
+    "abstract": "The conversion feature in Aspose.PDF for .NET allows seamless transformation of HTML and MHTML documents into high-quality PDF files. With advanced customization options, users can control font embedding, media queries, and external resource management while ensuring that web pages or local HTML files are accurately rendered into PDF format with flexibility tailored to their specific needs",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1889",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-html-to-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-html-to-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
+
 ## Overview 
 
 This article explains how to **convert HTML to PDF using C#**. It covers the following topics.
@@ -49,8 +115,8 @@ The following C# code sample shows how to convert an HTML document to a PDF.
 public static void ConvertHTMLtoPDF()
 {
     HtmlLoadOptions options= new HtmlLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "test.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    Document document= new Document(dataDir + "test.html", options);
+    document.Save(dataDir + "html_test.PDF");
 }
 ```
 
@@ -78,8 +144,8 @@ public static void ConvertHTMLtoPDFAdvanced_MediaType()
         // set Print or Screen mode
         HtmlMediaType = HtmlMediaType.Print
     };
-    Document pdfDocument= new Document(_dataDir + "test.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    Document document= new Document(dataDir + "test.html", options);
+    document.Save(dataDir + "html_test.PDF");
 }
 ```
 
@@ -92,8 +158,8 @@ public static void ConvertHTMLtoPDFAdvanced_EmbedFonts()
 {
     // Disable font embedding
     HtmlLoadOptions options = new HtmlLoadOptions {IsEmbedFonts = false};
-    Document pdfDocument= new Document(_dataDir + "test_fonts.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    Document document= new Document(dataDir + "test_fonts.html", options);
+    document.Save(dataDir + "html_test.PDF");
 }
 ```
 
@@ -111,8 +177,8 @@ public static void ConvertHTMLtoPDFAdvanced_DummyImage()
     {
         CustomLoaderOfExternalResources = SamePictureLoader
     };
-    Document pdfDocument= new Document(_dataDir + "test.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    Document document= new Document(dataDir + "test.html", options);
+    document.Save(dataDir + "html_test.PDF");
 }
 
 private static LoadOptions.ResourceLoadingResult SamePictureLoader(string resourceURI)
@@ -121,7 +187,7 @@ private static LoadOptions.ResourceLoadingResult SamePictureLoader(string resour
 
     if (resourceURI.EndsWith(".png"))
     {
-        byte[] resultBytes = File.ReadAllBytes(_dataDir + "test.jpg");
+        byte[] resultBytes = File.ReadAllBytes(dataDir + "test.jpg");
         result = new LoadOptions.ResourceLoadingResult(resultBytes)
         {
             //Set MIME Type
@@ -164,8 +230,8 @@ public static void ConvertHTMLtoPDFAdvanced_WebPage()
     {
         PageInfo = {Width = 842, Height = 1191, IsLandscape = true}
     };
-    Document pdfDocument= new Document(GetContentFromUrlAsStream(url), options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    Document document= new Document(GetContentFromUrlAsStream(url), options);
+    document.Save(dataDir + "html_test.PDF");
 }
 
 private static Stream GetContentFromUrlAsStream(string url, ICredentials credentials = null)
@@ -191,8 +257,8 @@ public static void ConvertHTMLtoPDFAdvanced_Authorized()
     {
         ExternalResourcesCredentials = credentials
     };
-    Document pdfDocument= new Document(GetContentFromUrlAsStream(url, credentials), options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    Document document= new Document(GetContentFromUrlAsStream(url, credentials), options);
+    document.Save(dataDir + "html_test.PDF");
 }
 
 private static Stream GetContentFromUrlAsStream(string url, ICredentials credentials = null)
@@ -218,9 +284,9 @@ HtmlLoadOptions options = new HtmlLoadOptions();
 // Set Render to single page property
 options.IsRenderToSinglePage = true;
 // Load document
-Document pdfDocument= new Document(dataDir + "HTMLToPDF.html", options);
+Document document= new Document(dataDir + "HTMLToPDF.html", options);
 // Save
-pdfDocument.Save(dataDir + "RenderContentToSamePage.pdf");
+document.Save(dataDir + "RenderContentToSamePage.pdf");
 ```
 
 ### Render HTML with SVG Data
@@ -238,9 +304,9 @@ string outFile = dataDir + "RenderHTMLwithSVGData.pdf";
 // Initialize HtmlLoadOptions
 HtmlLoadOptions options = new HtmlLoadOptions(Path.GetDirectoryName(inFile));
 // Initialize Document object
-Document pdfDocument = new Document(inFile, options);
+Document document = new Document(inFile, options);
 // save
-pdfDocument.Save(outFile);
+document.Save(outFile);
 ```
 
 ## Convert MHTML to PDF 
@@ -268,8 +334,8 @@ public static void ConvertMHTtoPDF()
     {
         PageInfo = { Width = 842, Height = 1191, IsLandscape = true}
     };
-    Document pdfDocument= new Document(_dataDir + "fileformatinfo.mht", options);
-    pdfDocument.Save(_dataDir + "mhtml_test.PDF");
+    Document document= new Document(dataDir + "fileformatinfo.mht", options);
+    document.Save(dataDir + "mhtml_test.PDF");
 }
 ```
 

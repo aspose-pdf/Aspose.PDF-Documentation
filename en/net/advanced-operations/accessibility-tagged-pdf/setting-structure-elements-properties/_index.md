@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Setting Structure Elements Properties",
-    "alternativeHeadline": "How to set the properties of structural elements",
+    "alternativeHeadline": "Setting Properties for Structure Elements in PDFs",
+    "abstract": "Enhance your PDF document accessibility with the new feature in Aspose.PDF for .NET that allows users to set properties for structure elements. This functionality enables precise control over titles, languages, and custom tags for various elements within a Tagged PDF, ensuring compliance and improved navigation for screen readers",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, set text structure, set language, set title, set Note structure element",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Setting Structure Elements Properties, Aspose.PDF for .NET, Tagged PDF Document, CreateSectElement, CreateHeaderElement, SetTitle, SetLanguage, NoteElement, StructureElement, LinkElement",
+    "wordcount": "2730",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/setting-structure-elements-properties/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You may set different structure elements properties in PDF document with Aspose.PDF for .NET."
 }
 </script>
@@ -138,10 +139,10 @@ taggedContent.SetLanguage("en-US");
 StructureElement rootElement = taggedContent.RootElement;
 
 ParagraphElement p = taggedContent.CreateParagraphElement();
+
 // Set Text to Text Structure Element
 p.SetText("Paragraph.");
 rootElement.AppendChild(p);
-
 
 // Save Tagged Pdf Document
 document.Save(dataDir + "TextStructureElement.pdf");
@@ -397,14 +398,12 @@ string imgFile = dataDir + "google-icon-512.png";
 Document document = new Document();
 ITaggedContent taggedContent = document.TaggedContent;
 
-
 // Setting Title and Nature Language for document
 taggedContent.SetTitle("Link Elements Example");
 taggedContent.SetLanguage("en-US");
 
 // Getting Root structure element (Document structure element)
 StructureElement rootElement = taggedContent.RootElement;
-
 
 ParagraphElement p1 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p1);
@@ -413,7 +412,6 @@ p1.AppendChild(link1);
 link1.Hyperlink = new WebHyperlink("http://google.com");
 link1.SetText("Google");
 link1.AlternateDescriptions = "Link to Google";
-
 
 ParagraphElement p2 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p2);
@@ -424,7 +422,6 @@ SpanElement span2 = taggedContent.CreateSpanElement();
 span2.SetText("Google");
 link2.AppendChild(span2);
 link2.AlternateDescriptions = "Link to Google";
-
 
 ParagraphElement p3 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p3);
@@ -440,7 +437,6 @@ link3.SetText("-");
 link3.AppendChild(span32);
 link3.AlternateDescriptions = "Link to Google";
 
-
 ParagraphElement p4 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p4);
 LinkElement link4 = taggedContent.CreateLinkElement();
@@ -448,7 +444,6 @@ p4.AppendChild(link4);
 link4.Hyperlink = new WebHyperlink("http://google.com");
 link4.SetText("The multiline link: Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google Google");
 link4.AlternateDescriptions = "Link to Google (multiline)";
-
 
 ParagraphElement p5 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p5);
@@ -464,7 +459,6 @@ placementAttribute.SetNameValue(AttributeName.Placement_Block);
 linkLayoutAttributes.SetAttribute(placementAttribute);
 link5.AppendChild(figure5);
 link5.AlternateDescriptions = "Link to Google";
-
 
 // Save Tagged Pdf Document
 document.Save(outFile);
@@ -500,7 +494,6 @@ taggedContent.SetLanguage("en-US");
 // Getting Root structure element (Document structure element)
 StructureElement rootElement = taggedContent.RootElement;
 
-
 ParagraphElement p1 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p1);
 SpanElement span11 = taggedContent.CreateSpanElement();
@@ -510,7 +503,6 @@ span12.SetText(" and Span_12.");
 p1.SetText("Paragraph with ");
 p1.AppendChild(span11);
 p1.AppendChild(span12);
-
 
 ParagraphElement p2 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p2);
@@ -522,7 +514,6 @@ p2.AppendChild(span21);
 p2.SetText(" and ");
 p2.AppendChild(span22);
 
-
 ParagraphElement p3 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p3);
 SpanElement span31 = taggedContent.CreateSpanElement();
@@ -532,7 +523,6 @@ span32.SetText(" and Span_32");
 p3.AppendChild(span31);
 p3.AppendChild(span32);
 p3.SetText(".");
-
 
 ParagraphElement p4 = taggedContent.CreateParagraphElement();
 rootElement.AppendChild(p4);
@@ -549,7 +539,6 @@ span42.SetText("Span_42");
 p4.AppendChild(span41);
 p4.AppendChild(span42);
 p4.SetText(".");
-
 
 // Save Tagged Pdf Document
 document.Save(outFile);
@@ -604,7 +593,6 @@ note3.SetId("note_003");
 
 // Resultant document does not compliance to PDF/UA If ClearId() used for Note Structure Element
 //note3.ClearId();
-
 
 // Save Tagged Pdf Document
 document.Save(outFile);

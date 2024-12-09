@@ -3,10 +3,75 @@ title: Convert PDF File
 type: docs
 weight: 30
 url: /net/convert-pdf-file/
-description: This section explains how to convert PDF File with Aspose.PDF Facades using PdfConverter class.
+description: Learn how to convert a PDF file to various formats in .NET using Aspose.PDF for flexible document handling.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF File",
+    "alternativeHeadline": "Convert PDF Pages to Image Formats Efficiently",
+    "abstract": "Unlock the power of Aspose.PDF for .NET Facades to effortlessly convert PDF pages into diverse image formats like JPEG, GIF, and PNG with the PdfConverter class. This feature enables detailed control over the conversion process, allowing you to specify parameters such as resolution, coordinate type, and page range for customized output. Enhance your document handling capabilities by integrating seamless PDF to image conversions into your applications",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "561",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-file/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Convert PDF Pages to Different Image Formats (Facades)
 
@@ -19,14 +84,16 @@ public static void ConvertPdfPagesToImages01()
     PdfConverter converter = new PdfConverter();
 
     // Bind input pdf file
-    converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
+    converter.BindPdf(dataDir + "Sample-Document-01.pdf");
 
     // Initialize the converting process
     converter.DoConvert();
 
     // Check if pages exist and then convert to image one by one
     while (converter.HasNextImage())
-        converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+    {
+        converter.GetNextImage(dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+    }
 
     // Close the PdfConverter object
     converter.Close();
@@ -42,7 +109,7 @@ public static void ConvertPdfPagesToImages02()
     PdfConverter converter = new PdfConverter();
 
     // Bind input pdf file
-    converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
+    converter.BindPdf(dataDir + "Sample-Document-01.pdf");
 
     // Initialize the converting process
     converter.DoConvert();
@@ -50,10 +117,12 @@ public static void ConvertPdfPagesToImages02()
     converter.Resolution = new Devices.Resolution(600);
     converter.FormPresentationMode = Devices.FormPresentationMode.Production;
     converter.StartPage = 2;
-    // converter.EndPage = 3;
+
     // Check if pages exist and then convert to image one by one
     while (converter.HasNextImage())
-        converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+    {
+        converter.GetNextImage(dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+    }
 
     // Close the PdfConverter object
     converter.Close();

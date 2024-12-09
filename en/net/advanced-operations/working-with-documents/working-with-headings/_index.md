@@ -2,6 +2,7 @@
 title: Working with Headings in PDF
 type: docs
 url: /net/working-with-headings/
+weight: 70
 description: Create numbering in heading your PDF document with C#. Aspose.PDF for .NET offers different kinds of numbering styles.
 lastmod: "2022-02-17"
 sitemap:
@@ -13,21 +14,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Headings in PDF",
-    "alternativeHeadline": "Create Headings in PDF",
+    "alternativeHeadline": "Enhance PDF Headings with Custom Numbering Styles",
+    "abstract": "Enhance your PDF documents with customizable heading numbering using Aspose.PDF for .NET. This new feature allows you to apply various pre-defined numbering styles, such as Roman numerals and alphabetical listings, to organize your headings effectively, improving the document readability and structure. Streamline your PDF creation process by integrating this versatile functionality into your C# applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, headings in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF, C#, headings in PDF, numbering style, Aspose.PDF for .NET, pre-defined numbering styles, NumberingStyle enumeration, document generation, Heading class, pdf document manipulation",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -69,10 +71,11 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-headings/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Create numbering in heading your PDF document with C#. Aspose.PDF for .NET offers different kinds of numbering styles."
 }
 </script>
+
 
 ## Apply Numbering Style in Heading
 
@@ -87,7 +90,7 @@ Headings are the important parts of any document. Writers always try to make hea
 |NumeralsRomanLowercase|Roman lower type, for example, i,i.ii, ...|
 |LettersUppercase|English upper type, for example, A,A.B, ...|
 |LettersLowercase|English lower type, for example, a,a.b, ...|
-The **Style** property of **Aspose.PDF.Heading** class is used to set the numbering styles of the headings.
+The **Style** property of **Aspose.Pdf.Heading** class is used to set the numbering styles of the headings.
 
 |**Figure: Pre-defined numbering styles**|
 | :- |
@@ -108,7 +111,7 @@ pdfDoc.PageInfo.Margin.Right = 72;
 pdfDoc.PageInfo.Margin.Top = 72;
 pdfDoc.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.Page pdfPage = pdfDoc.Pages.Add();
+Page pdfPage = pdfDoc.Pages.Add();
 pdfPage.PageInfo.Width = 612.0;
 pdfPage.PageInfo.Height = 792.0;
 pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
@@ -117,15 +120,12 @@ pdfPage.PageInfo.Margin.Right = 72;
 pdfPage.PageInfo.Margin.Top = 72;
 pdfPage.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox();
+FloatingBox floatBox = new FloatingBox();
 floatBox.Margin = pdfPage.PageInfo.Margin;
 
 pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
-
-Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
+Heading heading = new Heading(1);
 heading.IsInList = true;
 heading.StartNumber = 1;
 heading.Text = "List 1";
@@ -134,7 +134,7 @@ heading.IsAutoSequence = true;
 
 floatBox.Paragraphs.Add(heading);
 
-Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
+Heading heading2 = new Heading(1);
 heading2.IsInList = true;
 heading2.StartNumber = 13;
 heading2.Text = "List 2";
@@ -143,7 +143,7 @@ heading2.IsAutoSequence = true;
 
 floatBox.Paragraphs.Add(heading2);
 
-Aspose.Pdf.Heading heading3 = new Aspose.Pdf.Heading(2);
+Heading heading3 = new Heading(2);
 heading3.IsInList = true;
 heading3.StartNumber = 1;
 heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan onaccount of each allowed";
@@ -151,8 +151,8 @@ heading3.Style = NumberingStyle.LettersLowercase;
 heading3.IsAutoSequence = true;
 
 floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+
+pdfDoc.Save(dataDir + "ApplyNumberStyle_out.pdf");
 ```
 
 <script type="application/ld+json">

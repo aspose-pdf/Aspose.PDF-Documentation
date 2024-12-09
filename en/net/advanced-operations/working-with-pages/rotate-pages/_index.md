@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Rotate PDF Pages Using C#",
-    "alternativeHeadline": "How to rotate PDF Pages with .NET",
+    "alternativeHeadline": "Effortlessly Rotate PDF Pages with C#",
+    "abstract": "The new feature in Aspose.PDF for .NET allows developers to programmatically change the orientation of pages in existing PDF files. Users can effortlessly switch between landscape and portrait modes, ensuring that content fits properly within the new layout, enhancing document usability and presentation",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, rotate pdf page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "236",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/rotate-pages/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This topic describes how to rotate the page orientation in an existing PDF file programmatically with C#."
 }
 </script>

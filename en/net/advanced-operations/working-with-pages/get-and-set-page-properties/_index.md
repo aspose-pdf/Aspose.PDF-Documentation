@@ -2,6 +2,7 @@
 title: Get and Set Page Properties
 type: docs
 url: /net/get-and-set-page-properties/
+description: Learn how to get and set page properties for PDF documents using Aspose.PDF for .NET, allowing for customized document formatting.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -9,21 +10,21 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get and Set Page Properties",
-    "alternativeHeadline": "Getting and Setting PDF Page Properties",
+    "alternativeHeadline": "Manage PDF Page Properties with Ease",
+    "abstract": "The Get and Set Page Properties feature in Aspose.PDF for .NET empowers developers to effortlessly access and manipulate PDF page attributes. This functionality allows users to retrieve critical information, such as page counts and specific properties like color types, media boxes, and trim boxes, all with just a few lines of code. Enhance your PDF document management capabilities today by leveraging this robust feature for efficient PDF manipulation in .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, get page properties, set page properties",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "1117",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -65,8 +66,8 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-and-set-page-properties/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 

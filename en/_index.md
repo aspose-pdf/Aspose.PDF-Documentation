@@ -55,7 +55,7 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.PDF for Java Online Documentation](/pdf/java/)
-- [Aspose.PDF for Java Features](/pdf/java/aspose-pdf-features/)
+- [Aspose.PDF for Java Features](/pdf/java/key-features/)
 - [Aspose.PDF for Java Release Notes](https://releases.aspose.com/pdf/java/release-notes/)
 - [Aspose.PDF for Java Product Page](https://products.aspose.com/pdf/java/)
 - [Aspose.PDF for Java from Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
@@ -135,11 +135,9 @@ Microsoft SQL Server Reporting Services fulfills a need that many organizations 
 - [Dowload Aspose.PDF for Reporting Services](https://releases.aspose.com/pdf/reportingservices/)
 - [Sample Reports Gallery Aspose.PDF for Reporting Services](/pdf/reportingservices/sample-reports-gallery/)
 - [Install Aspose.Pdf for Reporting Services](/pdf/reportingservices/install-aspose-pdf-for-reporting-services/)
-- [Integration with Microsoft Report Viewer in local mode](/pdf/reportingservices/integration-with-microsoft-report-viewer-in-local-mode/)
 - [License Aspose.Pdf for Reporting Services](/pdf/reportingservices/license-aspose-pdf-for-reporting-services/)
 - [Configure Aspose.Pdf for Reporting Services](/pdf/reportingservices/configure-aspose-pdf-for-reporting-services/)
 - [Expand Report Items Properties](/pdf/reportingservices/expand-report-items-properties/)
-- [Integration with MS ReportViewer 2010 and 2012](/pdf/reportingservices/integration-with-ms-reportviewer-2010-and-2012/)
 - [Evaluate Aspose.Pdf for Reporting Services](/pdf/reportingservices/evaluate-aspose-pdf-for-reporting-services/)
 
 {{% alert color="primary" %}}

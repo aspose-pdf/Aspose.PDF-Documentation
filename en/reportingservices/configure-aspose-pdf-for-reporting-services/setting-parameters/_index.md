@@ -3,6 +3,7 @@ title: Setting Parameters
 type: docs
 weight: 10
 url: /reportingservices/setting-parameters/
+description: Find out how to set parameters for PDF rendering in Aspose.PDF for Reporting Services. Achieve precise control over output.
 lastmod: "2021-06-05"
 ---
 

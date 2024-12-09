@@ -4,6 +4,7 @@ linktitle: Remove Tables
 type: docs
 weight: 50
 url: /net/remove-tables-from-existing-pdf/
+description: Understand how to remove tables from a PDF document using Aspose.PDF for .NET, improving document clarity and structure.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Remove Tables from existing PDF",
-    "alternativeHeadline": "How to Delete Tables from PDF",
+    "alternativeHeadline": "Effortlessly Eliminate Tables from Existing PDF Files",
+    "abstract": "The Remove Tables feature in Aspose.PDF for .NET allows users to efficiently eliminate table objects from existing PDF documents using the TableAbsorber class. This functionality simplifies the process of managing PDF content by providing straightforward methods to locate and remove tables, enhancing document editing capabilities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, remove table, delete tables",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "494",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -70,8 +71,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/remove-tables-from-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 
@@ -95,13 +96,13 @@ We have added new function i.e. Remove() to the existing TableAbsorber Class in 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
-Document pdfDocument = new Document(dataDir + "Table_input.pdf");
+Document document = new Document(dataDir + "Table_input.pdf");
 
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get first table on the page
 AbsorbedTable table = absorber.TableList[0];
@@ -110,7 +111,7 @@ AbsorbedTable table = absorber.TableList[0];
 absorber.Remove(table);
 
 // Save PDF
-pdfDocument.Save(dataDir + "Table_out.pdf");
+document.Save(dataDir + "Table_out.pdf");
 ```
 
 ## Remove Multiple Tables from PDF document
@@ -123,13 +124,13 @@ Sometimes a PDF document may contain more than one table and you may come up wit
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
-Document pdfDocument = new Document(dataDir + "Table_input2.pdf");
+Document document = new Document(dataDir + "Table_input2.pdf");
 
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit second page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get copy of table collection
 AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
@@ -137,10 +138,12 @@ absorber.TableList.CopyTo(tables, 0);
 
 // Loop through the copy of collection and removing tables
 foreach (AbsorbedTable table in tables)
+{
     absorber.Remove(table);
+}
 
 // Save document
-pdfDocument.Save(dataDir + "Table2_out.pdf");
+document.Save(dataDir + "Table2_out.pdf");
 ```
 
 {{% alert color="primary" %}}

@@ -16,21 +16,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Generate PDF from XML",
-    "alternativeHeadline": "Convert XML into PDF",
+    "alternativeHeadline": "Generate PDF directly from XML data",
+    "abstract": "Aspose.PDF for .NET now generates PDFs directly from XML data using multiple methods: XSLT transformations, XSL-FO markup, and a custom Aspose.PDF XML schema.  This new functionality offers flexible PDF creation from diverse XML structures, streamlining document generation workflows",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, generate pdf form xml, convert xml to pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "3834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,7 +72,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/generate-pdf-from-xml"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Aspose.PDF for .NET provides several ways to convert an XML file into a PDF document requiring that the input XML file."
 }
 </script>
@@ -342,15 +342,15 @@ So, we need to transform XML and load into PDF document. The following example s
 ```csharp
 private static void ExampleXSLTtoPDF()
 {
-    var _dataDir = @"C:\tmp\";
+    var dataDir = @"C:\tmp\";
     var XmlContent = File.ReadAllText(@"XMLFile1.xml");
     var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
     // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var pdfDocument = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Document(TransformXmltoHtml(XmlContent, XsltContent), options);
+    document.Save(dataDir + "data_xml.pdf");
 }
 
 public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
@@ -465,12 +465,12 @@ The following snippet shows how to use this class with the sample files describe
 ```csharp
 public static void Example_XSLFO_to_PDF()
 {
-    var _dataDir = @"C:\tmp\";
+    var dataDir = @"C:\tmp\";
     // Instantiate XslFoLoadOption object
     var options = new Pdf.XslFoLoadOptions("employees.xslt");
     // Create Document object
-    var pdfDocument = new Aspose.Pdf.Document("employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Document("employees.xml", options);
+    document.Save(dataDir + "data_xml.pdf");
 }
 ```
 
@@ -575,9 +575,9 @@ The following snippet shows how to use this class with the sample files describe
 ```csharp
 public static void Example_XSLFO_to_PDF_Param_21_7()
 {
-  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
-  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
-  string outputFile = Path.Combine(_dataDir, "out.pdf");
+  string xmlInputFile = dataDir + "employees.xml";
+  string xsltInputFile = dataDir + "employees.xslt";
+  string outputFile = dataDir + "out.pdf";
 
   XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
 
@@ -594,12 +594,12 @@ If you use version earlier than 21.7, please use following techinque:
 ```csharp
 public static void Example_XSLFO_to_PDF_Param_21_6()
 {
-    var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-    var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+    var XmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var XsltContent = File.ReadAllText(dataDir + "employees.xslt");
 
     var options = new Aspose.Pdf.XslFoLoadOptions();
-    var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var document = new Document(TransformXSL(XmlContent, XsltContent), options);
+    document.Save(dataDir + "data_xml.pdf");
 }
 
 public static MemoryStream TransformXSL(string inputXml, string xsltString)
@@ -609,8 +609,7 @@ public static MemoryStream TransformXSL(string inputXml, string xsltString)
     //Create own XsltArgumentList
     XsltArgumentList argsList = new XsltArgumentList();
     argsList.AddParam("isBoldName", "", "no");
-    //---------------------
-
+    
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
@@ -652,10 +651,10 @@ To generate PDF document we will use [BindXml](https://reference.aspose.com/pdf/
 ```csharp
 private static void Example_XML_to_PDF()
 {
-    var _dataDir = @"C:\tmp\";
-    var pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var dataDir = @"C:\tmp\";
+    var document = new Document();
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+    document.Save(dataDir + "data_xml.pdf");
 }
 ```
 
@@ -1117,17 +1116,17 @@ BindXML() method offers the feature to load XML file contents and Document.save(
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Bind source XML file
-doc.BindXml( dataDir + "log.xml");
+document.BindXml(dataDir + "log.xml");
 // Get reference of page object from XML
-Page page = (Page)doc.GetObjectById("mainSection");
+Page page = (Page)document.GetObjectById("mainSection");
 // Get reference of first TextSegment with ID boldHtml
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
+TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
 // Get reference of second TextSegment with ID strongHtml
-segment = (TextSegment)doc.GetObjectById("strongHtml");
+segment = (TextSegment)document.GetObjectById("strongHtml");
 // Save resultant PDF file
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+document.Save(dataDir + "XMLToPDF_out.pdf");
 ```
 
 ### Adding graphics elements to the page
@@ -1202,11 +1201,11 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 string inXml = dataDir + "input.xml";
 string inFile = dataDir + "aspose-logo.jpg";
 string outFile = dataDir + "output_out.pdf";
-Document doc = new Document();
-doc.BindXml(inXml);
-Image image = (Image)doc.GetObjectById("testImg");
+Document document = new Document();
+document.BindXml(inXml);
+Image image = (Image)document.GetObjectById("testImg");
 image.File = inFile;
-doc.Save(outFile);
+document.Save(outFile);
 ```
 
 <script type="application/ld+json">

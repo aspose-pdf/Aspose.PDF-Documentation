@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-cpp/converting/
 lastmod: "2023-07-22"
-description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python API.
+description: Understand how to convert PDF files to different formats in Python (C++) with Aspose.PDF for easier content handling.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

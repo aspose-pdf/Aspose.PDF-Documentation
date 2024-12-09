@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Navigation and Interaction in PDF",
-    "alternativeHeadline": "Links, Actions and Bookmarks in PDF",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "Discover the new capability to programmatically manage links within PDF documents using C#. This feature allows you to effortlessly add internal page links and external website hyperlinks, enhancing navigation and interactivity in your PDFs. Perfect for developers looking to streamline their PDF management processes!",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, links, actions, bookmarks in  pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/navigation-and-interaction/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This section describes the features of work with links, actions and bookmarks."
 }
 </script>

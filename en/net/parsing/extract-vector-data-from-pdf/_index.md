@@ -10,6 +10,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Vector Data from a PDF file using C#",
+    "alternativeHeadline": "Effortless Vector Data Extraction from PDF with C#",
+    "abstract": "Aspose.PDF for .NET now offers an innovative feature that enables users to seamlessly extract vector data from PDF files. This functionality includes detailed access to graphic elements, such as paths and polygons, along with their properties like position, color, and linewidth, empowering developers to handle vector graphics efficiently in their applications",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "361",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-vector-data-from-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-vector-data-from-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Access to Vector Data from PDF document
 
@@ -19,13 +84,13 @@ It retrieves various properties of the second graphic element, such as its assoc
 
 ```csharp
 // Creates a new Document object using the provided input data.
-var doc = new Document(input);
+var document = new Document(input);
 
 // Instantiates a new GraphicsAbsorber object to process graphic elements. 
 var grAbsorber = new GraphicsAbsorber(); 
 
 // Visits the second page of the document to extract graphic elements. 
-grAbsorber.Visit(doc.Pages[1]); 
+grAbsorber.Visit(document.Pages[1]); 
 
 // Retrieves the list of graphic elements from the GraphicsAbsorber. 
 var elements = grAbsorber.Elements; 
@@ -45,8 +110,8 @@ var position = elements[1].Position;
 For extraction of Vector Data from PDF, we can use SVG extractor:
 
 ```csharp
-var doc = new Document(input);
-doc.Pages[1].TrySaveVectorGraphics(outputSvg);
+var document = new Document(input);
+document.Pages[1].TrySaveVectorGraphics(outputSvg);
 ```
 
 ### Extract all subpaths to images separately
@@ -66,7 +131,6 @@ extractor.Extract(page, svgDirPath);
 ```csharp
 List<GraphicElement> elements = new List<GraphicElement>();
 // Fill elements list needed graphic elements.
-
 SvgExtractor svgExtractor = new SvgExtractor();
 svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "1.svg"));
 ```

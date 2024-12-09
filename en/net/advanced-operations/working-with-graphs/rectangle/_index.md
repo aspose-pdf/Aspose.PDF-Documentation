@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Rectangle Object to PDF file",
-    "alternativeHeadline": "How to create Rectangle Object in PDF file",
+    "alternativeHeadline": "Add Rectangle to PDF file",
+    "abstract": "The new feature in Aspose.PDF for .NET allows users to seamlessly add Rectangle objects to PDF documents. This functionality includes options to customize the rectangles with solid colors, gradient fills, and transparency, delivering enhanced visual customization and layering control for PDF content",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, rectangle in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Rectangle, PDF document generation, Aspose.PDF for .NET, Rectangle object, fill rectangle, gradient color fill, Z-Order control, alpha channel color, graph objects in PDF, create filled rectangle",
+    "wordcount": "1263",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-rectangle/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to create a Rectangle object to your PDF using Aspose.PDF for .NET."
 }
 </script>
@@ -86,23 +87,16 @@ First, let's look at the possibility of creating a Rectangle object.
 
 Follow the steps below:
 
-1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
+1. Create a new PDF [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file.
+1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance.
+1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance.
+1. Set border for [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing).
+1. Create Rectangle instance.
 
-1. Add [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to pages collection of PDF file
-
-1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
-
-1. Create [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) instance
-
-1. Set border for [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing)
-
-1. Create Rectangle instance
-
-1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object
-
-1. Add graph object to paragraphs collection of page instance
-
-1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance
+1. Add [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object to shapes collection of Graph object.
+1. Add graph object to paragraphs collection of page instance.
+1. Add [Text fragment](https://reference.aspose.com/pdf/net/aspose.pdf/texfragment) to paragraphs collection of page instance.
 
 1. And save your PDF file
 
@@ -143,14 +137,14 @@ Aspose.PDF for .NET also offers the feature to fill rectangle object with a cert
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
-private const string _dataDir = "C:\\Samples\\";
+private const string dataDir = "C:\\Samples\\";
 public static void RectangleFilled()
 {
     // Create Document instance
-    var doc = new Document();
+    var document = new Document();
 
     // Add page to pages collection of PDF file
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
     // Create Graph instance
     var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
 
@@ -167,7 +161,7 @@ public static void RectangleFilled()
     graph.Shapes.Add(rect);
 
     // Save PDF file
-    doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
+    document.Save(dataDir + "CreateFilledRectangle_out.pdf");
 }
 ```
 
@@ -185,10 +179,10 @@ The following code snippet shows how to add a [Rectangle](https://reference.aspo
 public static void CreateFilledRectangletGradientFill()
 {
     // Create Document instance
-    var doc = new Document();
+    var document = new Document();
 
     // Add page to pages collection of PDF file
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
     // Create Graph instance
     var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
     // Add graph object to paragraphs collection of page instance
@@ -209,7 +203,7 @@ public static void CreateFilledRectangletGradientFill()
     graph.Shapes.Add(rect);
 
     // Save PDF file
-    doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
+    document.Save(dataDir + "CreateFilledRectangle_out.pdf");
 }
 ```
 
@@ -227,10 +221,10 @@ Instead of making a color transparent, each pixel stores information on how opaq
 public static void RectangleFilled_AlphaChannel()
 {
     // Create Document instance
-    var doc = new Document();
+    var document = new Document();
 
     // Add page to pages collection of PDF file
-    var page = doc.Pages.Add();
+    var page = document.Pages.Add();
     // Create Graph instance
     var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
     // Add graph object to paragraphs collection of page instance
@@ -252,7 +246,7 @@ public static void RectangleFilled_AlphaChannel()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    doc.Save(_dataDir + "CreateFilledRectangle_out.pdf");
+    document.Save(dataDir + "CreateFilledRectangle_out.pdf");
 }
 ```
 
@@ -268,9 +262,9 @@ The following code snippet shows the steps to render [Rectangle](https://referen
 public static void AddRectangleZOrder()
 {
     // Instantiate Document class object
-    Document doc1 = new Document();
+    Document document1 = new Document();
     /// Add page to pages collection of PDF file
-    Page page1 = doc1.Pages.Add();
+    Page page1 = document1.Pages.Add();
     // Set size of PDF page
     page1.SetPageSize(375, 300);
     // Set left margin for page object as 0
@@ -284,7 +278,7 @@ public static void AddRectangleZOrder()
     // Create a new rectangle with Color as Green, Z-Order as 0 and certain dimensions
     AddRectangle(page1, 40, 40, 60, 30, Color.Green, 0);
     // Save resultant PDF file
-    doc1.Save(_dataDir + "ControlRectangleZOrder_out.pdf");
+    document1.Save(dataDir + "ControlRectangleZOrder_out.pdf");
 }
 ```
 

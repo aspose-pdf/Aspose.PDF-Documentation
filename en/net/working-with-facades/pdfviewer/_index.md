@@ -3,7 +3,7 @@ title: PdfViewer Class
 type: docs
 weight: 135
 url: /net/pdfviewer-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfViewer Class.
+description: Explore how to integrate PDF viewing capabilities in .NET applications using the PDFViewer class from Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

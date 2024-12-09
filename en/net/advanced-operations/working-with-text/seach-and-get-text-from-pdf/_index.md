@@ -4,7 +4,7 @@ linktitle: Search and Get Text
 type: docs
 weight: 60
 url: /net/search-and-get-text-from-pdf/
-description: This article explains how to use various tools to search and get a text from Aspose.PDF for .NET.
+description: Discover how to search and retrieve text from a PDF file in .NET using Aspose.PDF for text analysis and extraction.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Search and Get Text from Pages of PDF",
-    "alternativeHeadline": "Tools to search and get text from Pages of PDF",
+    "alternativeHeadline": "Search and Extract Text from PDF Pages",
+    "abstract": "Aspose.PDF for .NET enables users to efficiently search and extract text from all pages of a PDF document. This functionality leverages the TextFragmentAbsorber class to locate specified phrases or text segments, along with advanced support for regular expressions, allowing for precise text retrieval and manipulation. Ideal for developers, this feature enhances PDF document handling capabilities by simplifying text extraction processes",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, search text, get text from pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2762",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/search-and-get-text-from-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article explains how to use various tools to search and get a text from Aspose.PDF for .NET."
 }
 </script>
@@ -90,13 +90,13 @@ The following code snippet shows you how to search for text from all the pages.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
+Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
 
 // Create TextAbsorber object to find all instances of the input search phrase
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
 
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+document.Pages.Accept(textFragmentAbsorber);
 
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
@@ -104,7 +104,6 @@ TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragmen
 // Loop through the fragments
 foreach (TextFragment textFragment in textFragmentCollection)
 {
-
     Console.WriteLine("Text : {0} ", textFragment.Text);
     Console.WriteLine("Position : {0} ", textFragment.Position);
     Console.WriteLine("XIndent : {0} ", textFragment.Position.XIndent);
@@ -123,7 +122,7 @@ In case you need to search text inside any particular PDF page, please specify t
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Accept the absorber for a particular page
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+document.Pages[2].Accept(textFragmentAbsorber);
 ```
 
 ### Search through a list of phrases in a TextFragmentAbsorber
@@ -159,14 +158,17 @@ In order to search text segments from all the pages, you first need to get the T
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SearchAndGetTextPage.pdf");
+Document document = new Document(dataDir + "SearchAndGetTextPage.pdf");
 
 // Create TextAbsorber object to find all instances of the input search phrase
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("Figure");
+
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+document.Pages.Accept(textFragmentAbsorber);
+
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+
 // Loop through the fragments
 foreach (TextFragment textFragment in textFragmentCollection)
 {
@@ -191,7 +193,7 @@ In order to search and get TextSegments from a particular page of PDF, you need 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // Accept the absorber for all the pages
-pdfDocument.Pages[2].Accept(textFragmentAbsorber);
+document.Pages[2].Accept(textFragmentAbsorber);
 ```
 
 ## Search and Get Text from all pages using Regular Expression
@@ -204,7 +206,7 @@ TextFragmentAbsorber helps you search and retrieve text, from all the pages, bas
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionAll.pdf");
+Document document = new Document(dataDir + "SearchRegularExpressionAll.pdf");
 
 // Create TextAbsorber object to find all the phrases matching the regular expression
 TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
@@ -215,7 +217,7 @@ TextSearchOptions textSearchOptions = new TextSearchOptions(true);
 textFragmentAbsorber.TextSearchOptions = textSearchOptions;
 
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textFragmentAbsorber);
+document.Pages.Accept(textFragmentAbsorber);
 
 // Get the extracted text fragments
 TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
@@ -275,14 +277,19 @@ The following code snippet shows you how to search text inside a PDF file using 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
 // Create absorber object to find all instances of the input search phrase
 TextFragmentAbsorber absorber = new TextFragmentAbsorber("\\d{4}-\\d{4}");
+
 // Enable regular expression search
 absorber.TextSearchOptions = new TextSearchOptions(true);
+
 // Open document
 PdfContentEditor editor = new PdfContentEditor();
+
 // Bind source PDF file
 editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
+
 // Accept the absorber for the page
 editor.Document.Pages[1].Accept(absorber);
 
@@ -303,8 +310,7 @@ foreach (TextFragment textFragment in absorber.TextFragments)
         (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
 }
 
-dataDir = dataDir + "SearchTextAndAddHyperlink_out.pdf";
-editor.Save(dataDir);
+editor.Save(dataDir + "SearchTextAndAddHyperlink_out.pdf");
 editor.Close();
 ```
 
@@ -323,11 +329,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 Document document = new Document(dataDir + "SearchAndGetTextFromAll.pdf");
 
 // Create TextAbsorber object to find all the phrases matching the regular expression
-
 TextFragmentAbsorber textAbsorber = new TextFragmentAbsorber(@"[\S]+");
 
 TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-
 textAbsorber.TextSearchOptions = textSearchOptions;
 
 document.Pages.Accept(textAbsorber);
@@ -340,10 +344,10 @@ foreach (TextFragment textFragment in textAbsorber.TextFragments)
     {
         DrawBox(editor, textFragment.Page.Number, textSegment, System.Drawing.Color.Red);
     }
-
 }
-dataDir = dataDir + "SearchTextAndDrawRectangle_out.pdf";
-document.Save(dataDir);
+
+// Save result document
+document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
 ```
 
 ## Highlight each character in PDF document
@@ -363,11 +367,11 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 int resolution = 150;
 
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 using (MemoryStream ms = new MemoryStream())
 {
-    PdfConverter conv = new PdfConverter(pdfDocument);
+    PdfConverter conv = new PdfConverter(document);
     conv.Resolution = new Resolution(resolution, resolution);
     conv.GetNextImage(ms, System.Drawing.Imaging.ImageFormat.Png);
 
@@ -378,60 +382,60 @@ using (MemoryStream ms = new MemoryStream())
         float scale = resolution / 72f;
         gr.Transform = new System.Drawing.Drawing2D.Matrix(scale, 0, 0, -scale, 0, bmp.Height);
 
-        for (int i = 0; i < pdfDocument.Pages.Count; i++)
+        for (int i = 0; i < document.Pages.Count; i++)
         {
-Page page = pdfDocument.Pages[1];
-// Create TextAbsorber object to find all words
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
-textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
-page.Accept(textFragmentAbsorber);
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    if (i == 0)
-    {
-        gr.DrawRectangle(
-        Pens.Yellow,
-        (float)textFragment.Position.XIndent,
-        (float)textFragment.Position.YIndent,
-        (float)textFragment.Rectangle.Width,
-        (float)textFragment.Rectangle.Height);
+            Page page = document.Pages[1];
+            // Create TextAbsorber object to find all words
+            TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber(@"[\S]+");
+            textFragmentAbsorber.TextSearchOptions.IsRegularExpressionUsed = true;
+            page.Accept(textFragmentAbsorber);
+            // Get the extracted text fragments
+            TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+            // Loop through the fragments
+            foreach (TextFragment textFragment in textFragmentCollection)
+            {
+                if (i == 0)
+                {
+                    gr.DrawRectangle(
+                        Pens.Yellow,
+                        (float)textFragment.Position.XIndent,
+                        (float)textFragment.Position.YIndent,
+                        (float)textFragment.Rectangle.Width,
+                        (float)textFragment.Rectangle.Height);
 
-        for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
-        {
-TextSegment segment = textFragment.Segments[segNum];
+                    for (int segNum = 1; segNum <= textFragment.Segments.Count; segNum++)
+                    {
+                        TextSegment segment = textFragment.Segments[segNum];
 
-for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
-{
-    CharInfo characterInfo = segment.Characters[charNum];
+                        for (int charNum = 1; charNum <= segment.Characters.Count; charNum++)
+                        {
+                            CharInfo characterInfo = segment.Characters[charNum];
 
-    Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
-    Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
-          "   TextFragment URY = " + textFragment.Rectangle.URY);
+                            Aspose.Pdf.Rectangle rect = page.GetPageRect(true);
+                            Console.WriteLine("TextFragment = " + textFragment.Text + "    Page URY = " + rect.URY +
+                                "   TextFragment URY = " + textFragment.Rectangle.URY);
 
-    gr.DrawRectangle(
-    Pens.Black,
-    (float)characterInfo.Rectangle.LLX,
-    (float)characterInfo.Rectangle.LLY,
-    (float)characterInfo.Rectangle.Width,
-    (float)characterInfo.Rectangle.Height);
-}
+                            gr.DrawRectangle(
+                                Pens.Black,
+                                (float)characterInfo.Rectangle.LLX,
+                                (float)characterInfo.Rectangle.LLY,
+                                (float)characterInfo.Rectangle.Width,
+                                (float)characterInfo.Rectangle.Height);
+                        }
 
-gr.DrawRectangle(
-Pens.Green,
-(float)segment.Rectangle.LLX,
-(float)segment.Rectangle.LLY,
-(float)segment.Rectangle.Width,
-(float)segment.Rectangle.Height);
+                        gr.DrawRectangle(
+                            Pens.Green,
+                            (float)segment.Rectangle.LLX,
+                            (float)segment.Rectangle.LLY,
+                            (float)segment.Rectangle.Width,
+                            (float)segment.Rectangle.Height);
+                    }
+                }
+            }
         }
     }
-}
-        }
-    }
-    dataDir = dataDir + "HighlightCharacterInPDF_out.png";
-    bmp.Save(dataDir, System.Drawing.Imaging.ImageFormat.Png);
+    
+    bmp.Save(dataDir + "HighlightCharacterInPDF_out.png";, System.Drawing.Imaging.ImageFormat.Png);
 }
 ```
 
@@ -444,32 +448,35 @@ Sometimes we want to add hidden text in a PDF document and then search hidden te
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-//Create document with hidden text
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-Page page = doc.Pages.Add();
-TextFragment frag1 = new TextFragment("This is common text.");
-TextFragment frag2 = new TextFragment("This is invisible text.");
-
-//Set text property - invisible
-frag2.TextState.Invisible = true;
-
-page.Paragraphs.Add(frag1);
-page.Paragraphs.Add(frag2);
-doc.Save(dataDir + "39400_out.pdf");
-doc.Dispose();
-
-//Search text in the document
-doc = new Aspose.Pdf.Document(dataDir + "39400_out.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-absorber.Visit(doc.Pages[1]);
-
-foreach (TextFragment fragment in absorber.TextFragments)
+// Create document with hidden text
+using (Document document = new Document())
 {
-    //Do something with fragments
-    Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
-    fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
+    Page page = document.Pages.Add();
+    TextFragment frag1 = new TextFragment("This is common text.");
+    TextFragment frag2 = new TextFragment("This is invisible text.");
+
+    //Set text property - invisible
+    frag2.TextState.Invisible = true;
+
+    page.Paragraphs.Add(frag1);
+    page.Paragraphs.Add(frag2);
+    // Save document
+    document.Save(dataDir + "39400_out.pdf");
 }
-doc.Dispose();
+
+// Search text in the document
+using (Document document = new Document(dataDir + "39400_out.pdf"))
+{
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+    absorber.Visit(document.Pages[1]);
+
+    foreach (TextFragment fragment in absorber.TextFragments)
+    {
+        //Do something with fragments
+        Console.WriteLine("Text '{0}' on pos {1} invisibility: {2} ",
+        fragment.Text, fragment.Position.ToString(), fragment.TextState.Invisible);
+    }
+}
 ```
 
 ## Searching Text With .NET Regex
@@ -484,7 +491,7 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
 
 // Open document
-Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf");
+Document document = new Document(dataDir + "SearchTextRegex.pdf");
 
 // Get a particular page
 Page page = document.Pages[1];

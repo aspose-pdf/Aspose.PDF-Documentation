@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Move PDF Pages programmatically C#",
-    "alternativeHeadline": "How to move PDF Pages with .NET",
+    "alternativeHeadline": "Programmatically Rearrange PDF Pages with .NET",
+    "abstract": "Aspose.PDF for .NET introduces a powerful new feature that allows users to programmatically move PDF pages between documents or rearrange them within the same document. This functionality enhances PDF manipulation capabilities by enabling developers to insert pages at designated locations and effortlessly manage page organization while maintaining document integrity",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, move pdf page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "668",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/move-pages/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for .NET."
 }
 </script>
@@ -124,8 +124,8 @@ The following code snippet shows you how to move a bunch of pages from one PDF d
 ```csharp
 var srcFileName = "<enter file name>";
 var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
-var dstDocument = new Aspose.Pdf.Document();
+var srcDocument = new Document(srcFileName);
+var dstDocument = new Document();
 var pages = new []{ 1, 3 };
 foreach (var pageIndex in pages)
 {
@@ -149,7 +149,7 @@ srcDocument.Save(srcFileName);
 ```csharp
 var srcFileName = "<enter file name>";
 var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
+var srcDocument = new Document(srcFileName);
 
 var page = srcDocument.Pages[2];
 srcDocument.Pages.Add(page);

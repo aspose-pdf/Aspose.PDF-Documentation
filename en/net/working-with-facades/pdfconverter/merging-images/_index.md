@@ -3,10 +3,75 @@ title: Merge images
 type: docs
 weight: 20
 url: /net/merge-images/
-description: This section explains how to merge Images, and it is possible to save in the Tiff format.
+description: Discover how to merge images into a single PDF document in .NET using Aspose.PDF for streamlined document creation.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Merge images",
+    "alternativeHeadline": "Merge Images with Flexible Formats and Arrangements",
+    "abstract": "Aspose.PDF for .NET introduces a powerful new feature that enables users to merge images seamlessly. This functionality allows for combining images in various formats and styles such as vertical, horizontal, or centered while also offering the option to save the final output in the highly versatile TIFF format. Ideal for enhancing document presentations, this feature simplifies the process of creating merged image files using a straightforward code integration",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "482",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/merge-images/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/merge-images/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 Aspose.PDF 21.4 allows you to combine Images. [Merge Images](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/mergeimages) method checks the contents of a specific folder and works with the specified type of files in it. When working with merging pictures, we specify 'inputImagesStreams', Image Format and Image Merge Mode (as example - vertical) of our file. Then we save our result in FileOutputStream.
 
@@ -17,10 +82,10 @@ Follow the next code snippet for resolve your task:
 ```csharp
 public static class ExamplePdfConverter
 {
-    private static readonly string _dataDir = @"C:\Samples\Facades\PdfConverter\";
+    private static readonly string dataDir = @"C:\Samples\Facades\PdfConverter\";
     public static void MergeImages01()
     {
-        var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+        var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                                 .OrderBy(f => f)
                                 .Select(f => File.OpenRead(f))
                                 .Cast<Stream>()
@@ -29,7 +94,7 @@ public static class ExamplePdfConverter
         using (Stream inputStream =
                 PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
         {
-            FileStream outputStream = new FileStream(_dataDir+"merged_images.jpg", FileMode.Create);
+            FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
             inputStream.CopyTo(outputStream);
         }
     }
@@ -41,7 +106,7 @@ The second example works the same as the previous one, but the merged images wil
 ```csharp
 public static void MergeImages02()
 {
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
@@ -50,7 +115,7 @@ public static void MergeImages02()
     using (Stream inputStream =
             PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
     {
-        FileStream outputStream = new FileStream(_dataDir + "merged_images.jpg", FileMode.Create);
+        FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
         inputStream.CopyTo(outputStream);
     }
 }
@@ -61,7 +126,7 @@ In the third example, we will merge the pictures by centering them. Two horizont
 ```csharp
 public static void MergeImages03()
 {
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
@@ -70,7 +135,7 @@ public static void MergeImages03()
     using (Stream inputStream =
             PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
     {
-        FileStream outputStream = new FileStream(_dataDir + "merged_images.jpg", FileMode.Create);
+        FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
         inputStream.CopyTo(outputStream);
     }
 }
@@ -81,7 +146,7 @@ Also, Aspose.PDF for Java present you the opportunity to combine pictures and sa
 ```csharp
 public static void MergeImages04()
 {
-    var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
@@ -90,7 +155,7 @@ public static void MergeImages04()
     using (Stream inputStream =
             PdfConverter.MergeImagesAsTiff(fileStreams))
     {
-        FileStream outputStream = new FileStream(_dataDir + "merged_images.tiff", FileMode.Create);
+        FileStream outputStream = new FileStream(dataDir + "merged_images.tiff", FileMode.Create);
         inputStream.CopyTo(outputStream);
     }
 }
@@ -101,7 +166,7 @@ To save the merged images as one image on PDF page, we place them in the imageSt
 ```csharp
    public static void MergeImages05()
         {
-            var fileStreams = Directory.GetFiles(_dataDir, "cat*.jpg")
+            var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
                                     .OrderBy(f => f)
                                     .Select(f => File.OpenRead(f))
                                     .Cast<Stream>()
@@ -115,7 +180,7 @@ To save the merged images as one image on PDF page, we place them in the imageSt
         var document = new Document();
         var pages = document.Pages.Add();
         pages.AddImage(outputStream, new Rectangle(10,120,400,720));
-        document.Save(_dataDir + "merged_images.pdf");
+        document.Save(dataDir + "merged_images.pdf");
     }
 }
 ```

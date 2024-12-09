@@ -3,7 +3,7 @@ title: PdfFileSignature Class
 type: docs
 weight: 70
 url: /java/pdffilesignature-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileSignature class.
+description: Discover how to sign, verify, and manage digital signatures within PDF files using the PDFFileSignature class in Java with Aspose.PDF.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

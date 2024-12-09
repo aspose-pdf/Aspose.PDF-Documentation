@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF Tooltip using C#",
-    "alternativeHeadline": "Add PDF Tooltip to the Text",
+    "alternativeHeadline": "Add Interactive Tooltips to PDF Text in C#",
+    "abstract": "Enhance your PDF documents with the new PDF Tooltip feature using C#. This functionality allows you to seamlessly add tooltips to text fragments in PDF files, providing users with additional information upon hovering. Utilize invisible buttons and hidden text blocks to create a dynamic and interactive reading experience with Aspose.PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add pdf tooltip",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "1072",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-tooltip/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Learn how to add tooltip to the text fragment in PDF using C# and Aspose.PDF"
 }
 </script>
@@ -89,10 +89,10 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string outputFile = dataDir + "Tooltip_out.pdf";
 
 // Create sample document with text
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a tooltip"));
-doc.Pages[1].Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
-doc.Save(outputFile);
+Document document = new Document();
+document.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a tooltip"));
+document.Pages[1].Paragraphs.Add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
+document.Save(outputFile);
 
 // Open document with text
 Document document = new Document(outputFile);
@@ -165,9 +165,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string outputFile = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
 
 // Create sample document with text
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display floating text"));
-doc.Save(outputFile);
+Document document = new Document();
+document.Pages.Add().Paragraphs.Add(new TextFragment("Move the mouse cursor here to display floating text"));
+document.Save(outputFile);
 
 // Open document with text
 Document document = new Document(outputFile);

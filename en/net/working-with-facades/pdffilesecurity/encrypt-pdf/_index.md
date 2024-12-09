@@ -7,6 +7,71 @@ description: This topic explains how to Encrypt PDF File using PdfFileSecurity C
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Encrypt PDF File",
+    "alternativeHeadline": "Secure PDF Encryption with C#",
+    "abstract": "Discover how to enhance the security of your sensitive documents with the new PDF encryption feature using the PdfFileSecurity Class. This functionality allows you to password-protect your PDF files, ensuring that only authorized users can access them. Explore various encryption types and algorithms, including AES with a key length of up to 256 bits, for robust protection during file sharing and archiving",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "273",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/encrypt-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/encrypt-pdf-file/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 Encrypting a PDF document protects its content from unauthorized access from outside, especially during file sharing or archiving.
 
@@ -34,10 +99,10 @@ public static void EncryptPDFFile()
 {
     // Create PdfFileSecurity object
     PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample.pdf");
+    fileSecurity.BindPdf(dataDir + "sample.pdf");
     // Encrypt file using 256-bit encryption
     fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", DocumentPrivilege.Print, KeySize.x256, Algorithm.AES);
-    fileSecurity.Save(_dataDir + "sample_encrypted.pdf");
+    fileSecurity.Save(dataDir + "sample_encrypted.pdf");
 }
 ```
 

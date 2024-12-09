@@ -3,6 +3,7 @@ title: API Limitations
 type: docs
 weight: 10
 url: /java/api-limitations/
+description: Understand the API limitations of Aspose.PDF for Java. Learn about constraints to optimize your implementation.
 lastmod: "2022-01-27"
 ---
 

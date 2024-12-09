@@ -3,6 +3,7 @@ title: Set PDF File Information in Ruby
 type: docs
 weight: 120
 url: /java/set-pdf-file-information-in-ruby/
+description: Programmatically define and update PDF metadata like title, author, and keywords using Ruby.
 lastmod: "2021-06-05"
 ---
 

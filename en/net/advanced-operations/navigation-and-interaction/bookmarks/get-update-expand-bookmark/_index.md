@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Get, Update and Expand a Bookmark",
-    "alternativeHeadline": "How to get Bookmarks from PDF file",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks",
+    "abstract": "The new Get, Update and Expand a Bookmark feature enhances the Aspose.PDF for .NET library by providing users with the capability to retrieve, modify, and visually expand bookmarks within PDF documents. This functionality enables efficient navigation and organization of PDF content, making it easier to manage complex documents with hierarchical bookmark structures",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, get bookmarks",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "get bookmarks, update bookmarks, expand bookmarks, PDF bookmarks, Aspose.PDF for .NET, OutlineCollection, OutlineItemCollection, child bookmarks",
+    "wordcount": "1050",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/get-update-and-expand-bookmark/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article describes how to use bookmarks in a PDF file with our Aspose.PDF for .NET library."
 }
 </script>
@@ -90,10 +91,10 @@ To get the bookmarks, loop through the [OutlineCollection](https://reference.asp
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetBookmarks.pdf");
+Document document = new Document(dataDir + "GetBookmarks.pdf");
 
 // Loop through all the bookmarks
-foreach (OutlineItemCollection outlineItem in pdfDocument.Outlines)
+foreach (OutlineItemCollection outlineItem in document.Outlines)
 {
     Console.WriteLine(outlineItem.Title);
     Console.WriteLine(outlineItem.Italic);
@@ -116,8 +117,9 @@ PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
 // Open PDF file
 bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 // Extract bookmarks
-Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
-foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+foreach (Bookmark bookmark in bookmarks)
 {
     string strLevelSeprator = string.Empty;
     for (int i = 1; i < bookmark.Level; i++)
@@ -141,10 +143,10 @@ Bookmarks can be organized in a hierarchical structure, with parents and childre
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetChildBookmarks.pdf");
+Document document = new Document(dataDir + "GetChildBookmarks.pdf");
 
 // Loop through all the bookmarks
-foreach (OutlineItemCollection outlineItem in pdfDocument.Outlines)
+foreach (OutlineItemCollection outlineItem in document.Outlines)
 {
     Console.WriteLine(outlineItem.Title);
     Console.WriteLine(outlineItem.Italic);
@@ -176,17 +178,16 @@ To update a bookmark in a PDF file, first, get the particular bookmark from the 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "UpdateBookmarks.pdf");
+Document document = new Document(dataDir + "UpdateBookmarks.pdf");
 
 // Get a bookmark object
-OutlineItemCollection pdfOutline = pdfDocument.Outlines[1];
+OutlineItemCollection pdfOutline = document.Outlines[1];
 pdfOutline.Title = "Updated Outline";
 pdfOutline.Italic = true;
 pdfOutline.Bold = true;
 
-dataDir = dataDir + "UpdateBookmarks_out.pdf";
 // Save output
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "UpdateBookmarks_out.pdf");
 ```
 
 ## Update Child Bookmarks in a PDF Document
@@ -210,19 +211,19 @@ The following code snippet shows you how to update child bookmarks in a PDF docu
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "UpdateChildBookmarks.pdf");
+Document document = new Document(dataDir + "UpdateChildBookmarks.pdf");
 
 // Get a bookmark object
-OutlineItemCollection pdfOutline = pdfDocument.Outlines[1];
+OutlineItemCollection pdfOutline = document.Outlines[1];
 
 // Get child bookmark object
 OutlineItemCollection childOutline = pdfOutline[1];
 childOutline.Title = "Updated Outline";
 childOutline.Italic = true;
 childOutline.Bold = true;
-dataDir = dataDir + "UpdateChildBookmarks_out.pdf";
-// Save output
-pdfDocument.Save(dataDir);
+
+// Save output document
+document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
 ```
 
 ## Expanded Bookmarks when viewing document
@@ -237,20 +238,19 @@ In order to accomplish this requirement, we can set open status for each outline
 string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
 // Open document
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
-doc.PageMode = PageMode.UseOutlines;
+document.PageMode = PageMode.UseOutlines;
 // Traverse through each Ouline item in outlines collection of PDF file
-foreach (OutlineItemCollection item in doc.Outlines)
+foreach (OutlineItemCollection item in document.Outlines)
 {
     // Set open status for outline item
     item.Open = true;
 }
 
-dataDir = dataDir + "ExpandBookmarks_out.pdf";
 // Save output
-doc.Save(dataDir);
+document.Save(dataDir + + "ExpandBookmarks_out.pdf");
 ```
 
 <script type="application/ld+json">

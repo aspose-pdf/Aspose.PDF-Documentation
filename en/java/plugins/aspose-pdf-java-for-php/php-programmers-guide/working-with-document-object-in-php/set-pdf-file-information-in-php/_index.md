@@ -3,6 +3,7 @@ title: Set PDF File Information in PHP
 type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-php/
+description: Learn how to set various file properties, such as metadata, for a PDF document in PHP using Aspose.PDF.
 lastmod: "2021-06-05"
 ---
 

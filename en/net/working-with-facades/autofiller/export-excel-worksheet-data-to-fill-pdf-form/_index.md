@@ -7,6 +7,71 @@ description: This section explains how you can export Excel worksheet data to fi
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Export Excel data to fill PDF form",
+    "alternativeHeadline": "Export Excel Data to Auto-Fill PDF Forms",
+    "abstract": "The feature in Aspose.PDF for .NET allows users to seamlessly export data from Excel worksheets into PDF forms using the AutoFiller Class. By leveraging the ExportDataTable method, users can transform Excel data into a DataTable and efficiently fill out PDF forms, streamlining the process of data entry and increasing productivity. This functionality ensures that PDF forms are populated accurately and automatically based on the data structure in Excel",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "908",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/export-excel-worksheet-data-to-fill-pdf-form/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/export-excel-worksheet-data-to-fill-pdf-form/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 {{% alert color="primary" %}}
 
@@ -15,7 +80,7 @@ We would be using [ExportDataTable](https://reference.aspose.com/cells/net/aspos
 
 {{% /alert %}}
 
-## Implementation Details
+## Implementation details
 
 In the following scenario we are going to using a PDF form, which contains three form fields named ID, Name and Gender.
 
@@ -35,15 +100,15 @@ Once the method is called a new Pdf form file is generated, which contains five 
 ```csharp
 Workbook workbook = new Workbook();
 // Creating a file stream containing the Excel file to be opened
-FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open);
-// Opening the Excel file through the file stream
-workbook.Open(fstream);
-// Accessing the first worksheet in the Excel file
-Worksheet worksheet = workbook.Worksheets[0];
-// Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
-DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
-// Closing the file stream to free all resources
-fstream.Close();
+using (FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open))
+{
+    // Opening the Excel file through the file stream
+    workbook.Open(fstream);
+    // Accessing the first worksheet in the Excel file
+    Worksheet worksheet = workbook.Worksheets[0];
+    // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
+    DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
+}
 // Create an object of AutoFiller class
 AutoFiller autoFiller = new AutoFiller();
 // The input pdf file that contains form fields
@@ -71,10 +136,8 @@ internal static void FillFromXLSX()
     // Call the method to import the data from DataTable object into Pdf form fields.
     autoFiller.ImportDataTable(dataTable);
 
-
     // The resultant pdf, that will contain the form fields filled with information from DataTable
     autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
-
 }
 ```
 
@@ -137,5 +200,5 @@ private static DataTable GenerateDataTable()
 ## Conclusion
 
 {{% alert color="primary" %}}
-[Aspose.PDF.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .NET version.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) also offers the capability to fill PDF form using data from database but this feature is currently supported in .NET version.
 {{% /alert %}}

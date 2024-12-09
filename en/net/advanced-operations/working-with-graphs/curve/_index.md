@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Curve Object to PDF file",
-    "alternativeHeadline": "How to create Curve Object in PDF file",
+    "alternativeHeadline": "Create Curves in PDFs",
+    "abstract": "The new feature in Aspose.PDF for .NET allows developers to create and manipulate curve objects within PDF documents, utilizing Bezier curves for smooth graphics. This enhancement facilitates the design of both simple and filled curves, providing a powerful tool for generating complex visual representations in PDFs while maintaining control over dimensions and styling",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, .net, curve in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Curve, Curve object, Bezier curves, Aspose.PDF for .NET, PDF document generation, Drawing object, Filled Curve, Graph object, PDF manipulation, ASP.NET PDF",
+    "wordcount": "500",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-curve/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to create a curve object to your PDF using Aspose.PDF for .NET."
 }
 </script>
@@ -90,15 +91,11 @@ In this article, we will investigate  simply graph curves, and filled curves, th
 
 Follow the steps below:
 
-1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance
-
-1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions
-
-1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object
-
-1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page
-
-1. Save our PDF file
+1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance.
+1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions.
+1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object.
+1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page.
+1. Save our PDF file.
 
 ```csharp
  public static void ExampleCurve()
@@ -124,7 +121,7 @@ Follow the steps below:
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCurve1_out.pdf");
+    document.Save(dataDir + "DrawingCurve1_out.pdf");
 }
 ```
 
@@ -160,7 +157,7 @@ public static void CurveFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCurve2_out.pdf");
+    document.Save(dataDir + "DrawingCurve2_out.pdf");
 }
 ```
 

@@ -4,7 +4,7 @@ linktitle: Digitally sign PDF
 type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
-description: Digitally sign PDF documents using Java. Verify, or validate the digitally sign PDFs with Java based application with PDF Library. You can certify a PDF file with a PKCS1-Certificate.
+description: Learn how to digitally sign a PDF file to ensure its authenticity and integrity using Aspose.PDF for Java
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -1,6 +1,6 @@
 ---
-title:  Extract data from AcroForm using C#
-linktitle:  Extract data from AcroForm
+title:  Extract Data from AcroForm using C#
+linktitle:  Extract Data from AcroForm
 type: docs
 weight: 50
 url: /net/extract-data-from-acroform/
@@ -10,6 +10,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Data from AcroForm using C#",
+    "alternativeHeadline": "Effortlessly Extract Acrobat Form Data with C#",
+    "abstract": "Discover the new functionality in Aspose.PDF for .NET that simplifies the extraction of form field data from AcroForms in PDF documents. With the ability to export data into JSON, XML, FDF, and XFDF formats, users can efficiently manage form data while leveraging concise code examples for seamless integration into applications",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "826",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-data-from-acroform/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-data-from-acroform/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Extract form fields from PDF document
 
@@ -22,7 +87,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 public static void ExtractFormFields()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
+    var document = new Document(dataDir + "StudentInfoFormElectronic.pdf");
     // Get values from all fields
     foreach (Field formField in document.Form)
     {
@@ -45,7 +110,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 public static void ExtractFormFieldsToJson()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
+    var document = new Document(dataDir + "StudentInfoFormElectronic.pdf");
     var formData = document.Form.Cast<Field>().Select(f => new { Name = f.PartialName, f.Value });
     string jsonString = JsonSerializer.Serialize(formData);
     Console.WriteLine(jsonString);
@@ -64,17 +129,16 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
 // Open document
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-form.BindPdf(dataDir + "input.pdf");
-// Create xml file.
-System.IO.FileStream xmlOutputStream = new FileStream( dataDir + "input.xml", FileMode.Create);
-// Export data
-form.ExportXml(xmlOutputStream);
-// Close file stream
-xmlOutputStream.Close();
-
-// Close the document
-form.Dispose();
+using (Form form = new Form())
+{
+    form.BindPdf(dataDir + "input.pdf");
+    // Create xml file.
+    using (FileStream xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
+    {
+        // Export data
+        form.ExportXml(xmlOutputStream);
+    }
+}
 ```
 
 ## Export Data to FDF from a PDF File
@@ -88,21 +152,20 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// Open Document
-form.BindPdf(dataDir + "input.pdf");
+using (Form form = new Aspose.Pdf.Facades.Form())
+{
+    // Open Document
+    form.BindPdf(dataDir + "input.pdf");
 
-// Create fdf file.
-System.IO.FileStream fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create);
-
-// Export data
-form.ExportFdf(fdfOutputStream);
-
-// Close file stream
-fdfOutputStream.Close();
-
-// Save updated document
-form.Save(dataDir + "ExportDataToPdf_out.pdf");
+    // Create fdf file.
+    using (FileStream fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create))
+    {
+        // Export data
+        form.ExportFdf(fdfOutputStream);
+    }
+    // Save updated document
+    form.Save(dataDir + "ExportDataToPdf_out.pdf");
+}
 ```
 
 ## Export Data to XFDF from a PDF File
@@ -116,19 +179,18 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// Open Document
-form.BindPdf(dataDir + "input.pdf");
+using (Form form = new Form())
+{
+    // Open Document
+    form.BindPdf(dataDir + "input.pdf");
 
-// Create xfdf file.
-System.IO.FileStream xfdfOutputStream = new FileStream("student1.xfdf", FileMode.Create);
-
-// Export data
-form.ExportXfdf(xfdfOutputStream);
-
-// Close file stream
-xfdfOutputStream.Close();
-
-// Save updated document
-form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+    // Create xfdf file.
+    using (FileStream xfdfOutputStream = new FileStream("student1.xfdf", FileMode.Create))
+    {
+        // Export data
+        form.ExportXfdf(xfdfOutputStream);
+    }
+    // Save updated document
+    form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+}
 ```
