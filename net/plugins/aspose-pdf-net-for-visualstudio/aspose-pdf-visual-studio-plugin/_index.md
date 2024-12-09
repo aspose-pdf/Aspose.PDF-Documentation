@@ -83,7 +83,7 @@ Microsoft Visual Studio is an integrated development environment (IDE) from Micr
 
 Aspose.PDF for .NET is a PDF document creation and manipulation component that enables your .NET applications to read, write and manipulate existing PDF documents without using Adobe Acrobat.
 
-For more details about [Aspose.PDF for .NET API](https://products.aspose.com/pdf/net/)
+For more details about [Aspose.PDF for .NET API](https://products.aspose.com/pdf/net/).
 
 ### Explore Aspose.PDF for .NET Examples using Visual Studio
 
@@ -103,7 +103,7 @@ This version provides the following features:
 
 ## System Requirements and Supported Platforms
 
-In order to install and use Aspose Visual Studio Plugin you need to have one of the following Visual Studio version installed
+In order to install and use Aspose Visual Studio Plugin you need to have one of the following Visual Studio version installed.
 
 - Visual Studio 2010, 2012, 2013.
 
