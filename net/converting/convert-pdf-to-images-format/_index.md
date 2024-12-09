@@ -157,27 +157,31 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 ```csharp
 public static void ConvertPDFtoTIFF()
 {
-    // Open document
-    Document document = new Document(dataDir + "PageToTIFF.pdf");
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Resolution object
-    Resolution resolution = new Resolution(300);
-
-    // Create TiffSettings object
-    TiffSettings tiffSettings = new TiffSettings
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTIFF.pdf"))
     {
-        Compression = CompressionType.None,
-        Depth = ColorDepth.Default,
-        Shape = ShapeType.Landscape,
-        SkipBlankPages = false
-    };
+        // Create Resolution object
+        var resolution = new Aspose.Pdf.Devices.Resolution(300);
 
-    // Create TIFF device
-    TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
+        // Create TiffSettings object
+        var tiffSettings = new Aspose.Pdf.Devices.TiffSettings
+        {
+            Compression = Aspose.Pdf.Devices.CompressionType.None,
+            Depth = Aspose.Pdf.Devices.ColorDepth.Default,
+            Shape = Aspose.Pdf.Devices.ShapeType.Landscape,
+            SkipBlankPages = false
+        };
 
-    // Convert a particular page and save the image to stream
-    tiffDevice.Process(document, dataDir + "AllPagesToTIFF_out.tif");
+        // Create TIFF device
+        var tiffDevice = new Aspose.Pdf.Devices.TiffDevice(resolution, tiffSettings);
+
+        // Convert a particular page and save the image to stream
+        tiffDevice.Process(document, dataDir + "PDFtoTIFF_out.tif");
+    }
 }
+
 ```
 
 ### Convert One Page to TIFF Image
@@ -193,26 +197,30 @@ Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF 
 ```csharp
 public static void ConvertPDFtoTiffSinglePage()
 {
-    // Open document
-    Document document = new Document(dataDir + "PageToTIFF.pdf");
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Resolution object
-    Resolution resolution = new Resolution(300);
-
-    // Create TiffSettings object
-    TiffSettings tiffSettings = new TiffSettings
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTiffSinglePage.pdf"))
     {
-        Compression = CompressionType.None,
-        Depth = ColorDepth.Default,
-        Shape = ShapeType.Landscape,
-    };
+        // Create Resolution object
+        var resolution = new Aspose.Pdf.Devices.Resolution(300);
 
-    // Create TIFF device
-    TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
+        // Create TiffSettings object
+        var tiffSettings = new Aspose.Pdf.Devices.TiffSettings
+        {
+            Compression = Aspose.Pdf.Devices.CompressionType.None,
+            Depth = Aspose.Pdf.Devices.ColorDepth.Default,
+            Shape = Aspose.Pdf.Devices.ShapeType.Landscape,
+        };
 
-    // Convert a particular page and save the image to stream
-    tiffDevice.Process(document, 1, 1, dataDir + "PageToTIFF_out.tif");
+        // Create TIFF device
+        var tiffDevice = new Aspose.Pdf.Devices.TiffDevice(resolution, tiffSettings);
+
+        // Convert a particular page and save the image to stream
+        tiffDevice.Process(document, 1, 1, dataDir + "PDFtoTiffSinglePage_out.tif");
+    }
 }
+
 ```
 
 ### Use Bradley algorithm during conversion
@@ -222,33 +230,41 @@ Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using 
 ```csharp
 public static void ConvertPDFtoTiffBradleyBinarization()
 {
-    // Open document
-    Document document = new Document(dataDir + "PageToTIFF.pdf");
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    string outputImageFile = dataDir + "resultant_out.tif";
-    string outputBinImageFile = dataDir + "37116-bin_out.tif";
-
-    // Create Resolution object
-    Resolution resolution = new Resolution(300);
-    // Create TiffSettings object
-    TiffSettings tiffSettings = new TiffSettings
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTiffBradleyBinarization.pdf"))
     {
-        Compression = CompressionType.LZW,
-        Depth = Aspose.Pdf.Devices.ColorDepth.Format1bpp
-    };
-    // Create TIFF device
-    TiffDevice tiffDevice = new TiffDevice(resolution, tiffSettings);
-    // Convert a particular page and save the image to stream
-    tiffDevice.Process(document, outputImageFile);
+        string outputImageFile = dataDir + "PDFtoTiffBradleyBinarization_out.tif";
+        string outputBinImageFile = dataDir + "PDFtoTiffBradleyBinarization-bin_out.tif";
 
-    using (FileStream inStream = new FileStream(outputImageFile, FileMode.Open))
-    {
-        using (FileStream outStream = new FileStream(outputBinImageFile, FileMode.Create))
+        // Create Resolution object
+        var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+        // Create TiffSettings object
+        var tiffSettings = new Aspose.Pdf.Devices.TiffSettings
         {
-            tiffDevice.BinarizeBradley(inStream, outStream, 0.1);
+            Compression = Aspose.Pdf.Devices.CompressionType.LZW,
+            Depth = Aspose.Pdf.Devices.ColorDepth.Format1bpp
+        };
+
+        // Create TIFF device
+        var tiffDevice = new Aspose.Pdf.Devices.TiffDevice(resolution, tiffSettings);
+
+        // Convert a particular page and save the image to stream
+        tiffDevice.Process(document, outputImageFile);
+
+        // Binarize the image using Bradley method
+        using (var inStream = new FileStream(outputImageFile, FileMode.Open))
+        {
+            using (var outStream = new FileStream(outputBinImageFile, FileMode.Create))
+            {
+                tiffDevice.BinarizeBradley(inStream, outStream, 0.1);
+            }
         }
     }
-} 
+}
+
 ```
 
 
@@ -294,28 +310,30 @@ The following steps and code snippet in C# shows this possibility
 ```csharp
 public static class ExampleConvertPdfToImage
 {
-     private static readonly string dataDir = @"C:\Samples\";
+	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     // BMP, JPEG, GIF, PNG, EMF
-    public static void ConvertPDFusingImageDevice()
-    {
-        // Create Resolution object            
-        Resolution resolution = new Resolution(300);
-        BmpDevice bmpDevice = new BmpDevice(resolution);
-        JpegDevice jpegDevice = new JpegDevice(resolution);
-        GifDevice gifDevice = new GifDevice(resolution);
-        PngDevice pngDevice = new PngDevice(resolution);
-        EmfDevice emfDevice = new EmfDevice(resolution);
+	public static void ConvertPDFusingImageDevice()
+	{
+		var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-        Document document = new Document(dataDir + 
-            "ConvertAllPagesToBmp.pdf");
-            
-        ConvertPDFtoImage(bmpDevice, "bmp", document);
-        ConvertPDFtoImage(jpegDevice,"jpeg", document);
-        ConvertPDFtoImage(gifDevice, "gif", document);
-        ConvertPDFtoImage(pngDevice, "png", document);
-        ConvertPDFtoImage(emfDevice, "emf", document);
-            
-    }
+		// Create Resolution object            
+		var resolution = new Aspose.Pdf.Devices.Resolution(300);
+		var bmpDevice = new Aspose.Pdf.Devices.BmpDevice(resolution);
+		var jpegDevice = new Aspose.Pdf.Devices.JpegDevice(resolution);
+		var gifDevice = new Aspose.Pdf.Devices.GifDevice(resolution);
+		var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+		var emfDevice = new Aspose.Pdf.Devices.EmfDevice(resolution);
+
+		// Open document using 'using' block to ensure proper disposal
+		using (var document = new Aspose.Pdf.Document(dataDir + "ConvertAllPagesToBmp.pdf"))
+		{
+			ConvertPDFtoImage(bmpDevice, "bmp", document);
+			ConvertPDFtoImage(jpegDevice, "jpeg", document);
+			ConvertPDFtoImage(gifDevice, "gif", document);
+			ConvertPDFtoImage(pngDevice, "png", document);
+			ConvertPDFtoImage(emfDevice, "emf", document);
+		}
+	}
 }
 
 public static void ConvertPDFtoImage(ImageDevice imageDevice, 
@@ -373,17 +391,22 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 ```csharp
 public static void ConvertPDFtoSVG()
 {
-    // Load PDF document
-    Document document = new Document(dataDir + "input.pdf");
-    // Instantiate an object of SvgSaveOptions
-    SvgSaveOptions saveOptions = new SvgSaveOptions
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Load PDF document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // Do not compress SVG image to Zip archive
-        CompressOutputToZipArchive = false,
-        TreatTargetFileNameAsDirectory = true                
-    };
-            
-    // Save the output in SVG files
-    document.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
+        // Instantiate an object of SvgSaveOptions
+        var saveOptions = new Aspose.Pdf.SvgSaveOptions
+        {
+            // Do not compress SVG image to Zip archive
+            CompressOutputToZipArchive = false,
+            TreatTargetFileNameAsDirectory = true                
+        };
+
+        // Save the output in SVG files
+        document.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
+    }
 }
+
 ```
