@@ -10,6 +10,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Data from Table in PDF with C#",
+    "alternativeHeadline": "Effortlessly Extract Tables from PDFs Using C#",
+    "abstract": "Discover the powerful ability to extract tabular data from PDF documents using Aspose.PDF for .NET in C#. This feature simplifies the process of retrieving and manipulating tables by allowing users to seamlessly access individual cells and store the extracted data in formats such as CSV and Excel, enhancing data accessibility and usability",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "695",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-data-from-table-in-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-data-from-table-in-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Extract Tables from PDF programmatically
 
@@ -17,10 +82,10 @@ Extracting tables from PDFs is not a trivial task because table can be created i
 
 Aspose.PDF for .NET has a tool to make it easy to retrieve tables. To extract table data you shoud perform the following steps:
 
-1. Open document - instantiate a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object;
+1. Open document - instantiate a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object.
 1. Create a [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) object.
 1. Decide which pages to be analyzed and apply [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/visit) to the desired pages. The tabular data will be scanned and the result will be stored in [TableList](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/properties/tablelist).
-1. `TableList` is a List of [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). To get the date iterate throught `TableList` and handle [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) and [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)
+1. `TableList` is a List of [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). To get the date iterate throught `TableList` and handle [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) and [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
 1. Each [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contains [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) collection. You can process it for your own purposes.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
@@ -31,11 +96,11 @@ The following example shows table extraction from the all pages:
 public static void Extract_Table()
 {
     // Load source PDF document
-    var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);                       
-    foreach (var page in pdfDocument.Pages)
+    var filePath = "<... enter path to pdf file here ...>";
+    Document document = new Document(filePath);                       
+    foreach (var page in document.Pages)
     {
-        Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
+        TableAbsorber absorber = new TableAbsorber();
         absorber.Visit(page);
         foreach (AbsorbedTable table in absorber.TableList)
         {
@@ -63,7 +128,7 @@ public static void Extract_Table()
 
 Each abosorbed table has [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rectangle) property that describes position of the table on page.
 
-So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
+If you need to extract tables located in a specific region, you have to work with specific coordinates.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -73,15 +138,15 @@ The following example show how to extract table marked with Square Annotation:
 public static void Extract_Marked_Table()
 {
     // Load source PDF document
-    var filePath="<... enter path to pdf file here ...>";
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(filePath);  
-    var page = pdfDocument.Pages[1];
+    var filePath = "<... enter path to pdf file here ...>";
+    Document document = new Document(filePath);  
+    var page = document.Pages[1];
     var squareAnnotation =
         page.Annotations.FirstOrDefault(ann => ann.AnnotationType == Annotations.AnnotationType.Square)
         as Annotations.SquareAnnotation;
 
 
-    Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
+    TableAbsorber absorber = new TableAbsorber();
     absorber.Visit(page);
 
     foreach (AbsorbedTable table in absorber.TableList)
@@ -97,7 +162,6 @@ public static void Extract_Marked_Table()
             {
                 foreach (AbsorbedCell cell in row.CellList)
                 {
-
                     foreach (TextFragment fragment in cell.TextFragments)
                     {
                         var sb = new StringBuilder();
@@ -129,12 +193,12 @@ public static void Extract_Table_Save_CSV()
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
     // Load PDF document
-    Document pdfDocument = new Document(_dataDir + "input.pdf");
+    Document document = new Document(dataDir + "input.pdf");
 
     // Instantiate ExcelSave Option object
     ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 
     // Save the output in XLS format
-    pdfDocument.Save("PDFToXLS_out.xlsx", excelSave);
+    document.Save("PDFToXLS_out.xlsx", excelSave);
 }
 ```

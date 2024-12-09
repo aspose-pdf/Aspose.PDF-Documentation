@@ -4,7 +4,7 @@ linktitle: Accessibility. Tagged PDF
 type: docs
 weight: 120
 url: /java/accessibility-tagged-pdf/
-description: Aspose.PDF provides the ability to create Tagged PDF documents, allowing you to tag the structural elements. Learn more about how to get accessible PDFs.
+description: Ensure PDF accessibility with Aspose.PDF for Java. Learn how to create tagged PDFs to meet accessibility standards like WCAG and PDF
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

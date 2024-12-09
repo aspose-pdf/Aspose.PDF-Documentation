@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Create Tagged PDF using C#",
-    "alternativeHeadline": "How to create Tagged PDF",
+    "alternativeHeadline": "Programmatically create tagged PDFs using C#",
+    "abstract": "Programmatically create tagged PDF documents using C# and Aspose.PDF, ensuring PDF/UA compliance.  This feature enables the creation of structured PDF documents with elements like headers and paragraphs, supporting nested structures and text styling for accessibility.  The library also includes validation to confirm PDF/UA standards are met",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "create, tagged, pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Tagged PDF, C#, Aspose.PDF, PDF/UA, Structure Elements, ITaggedContent, AppendChild,  StructureTextState",
+    "wordcount": "1163",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2022-11-25",
     "description": "This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET."
 }
 </script>
@@ -97,7 +98,6 @@ private static void CreateTaggedPdfDocument01()
     taggedContent.SetTitle("Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
 
-    // 
     HeaderElement mainHeader = taggedContent.CreateHeaderElement();
     mainHeader.SetText("Main Header");
 
@@ -235,22 +235,21 @@ figure1.SetImage("image.png");
 
 // Save Tagged Pdf Document
 document.Save(dataDir + "IllustrationStructureElements.pdf");
-
 ```
 
 ## Validate Tagged PDF
 
 Aspose.PDF for .NET provides the ability to validate PDF/UA Tagged PDF Document. Validation of PDF/UA standard supports:
 
-- Checks for XObjects
-- Checks for Actions
-- Checks for Optional Content
-- Checks for Embedded Files
-- Checks for Acroform Fields(Validate Natural Language and Alternate Name and Digital Signatures)
-- Checks for XFA Form Fields
-- Checks for Security settings
-- Checks for Navigation
-- Checks for Annotations
+- Checks for XObjects.
+- Checks for Actions.
+- Checks for Optional Content.
+- Checks for Embedded Files.
+- Checks for Acroform Fields(Validate Natural Language and Alternate Name and Digital Signatures).
+- Checks for XFA Form Fields.
+- Checks for Security settings.
+- Checks for Navigation.
+- Checks for Annotations.
 
 The code snippet below shows how to validate the Tagged PDF Document. Corresponding problems will be displayed in the XML log report.
 
@@ -261,10 +260,9 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 string inputFileName = dataDir + "StructureElements.pdf";
 string outputLogName = dataDir + "ua-20.xml";
 
-using (var document = new Aspose.Pdf.Document(inputFileName))
+using (var document = new Document(inputFileName))
 {
-    bool isValid = document.Validate(outputLogName, Aspose.Pdf.PdfFormat.PDF_UA_1);
-
+    bool isValid = document.Validate(outputLogName, PdfFormat.PDF_UA_1);
 }
 ```
 

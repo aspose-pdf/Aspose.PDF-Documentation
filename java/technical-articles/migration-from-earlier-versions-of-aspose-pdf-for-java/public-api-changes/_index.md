@@ -3,6 +3,7 @@ title: Public API changes
 type: docs
 weight: 40
 url: /java/public-api-changes/
+description: Stay informed about the latest changes and updates to the public API of Aspose.PDF for Java for seamless integration.
 lastmod: "2022-01-27"
 ---
 

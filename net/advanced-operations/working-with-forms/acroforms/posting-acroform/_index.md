@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Posting AcroForm Data",
-    "alternativeHeadline": "Import and Export form data to XML file",
+    "alternativeHeadline": "Post AcroForm Data",
+    "abstract": "Introducing a powerful new feature in Aspose.PDF for .NET, the ability to post AcroForm data. This functionality allows developers to not only create and edit AcroForms but also seamlessly import and export form data to XML files, enhancing data processing and storage capabilities within applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, posting acroform data",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Posting AcroForm Data, Import and Export Form Data, Aspose.PDF for .NET, AcroForm Fields, Submit Button, External Web Page Integration, Form Data Posting, XML File Handling, FieldType.Text, Database Saving",
+    "wordcount": "400",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/posting-acroform-data/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "You can import and export form data to and XML file with Aspose.Pdf.Facades namespace in Aspose.PDF for .NET."
 }
 </script>
@@ -90,11 +91,11 @@ In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades n
 
 ```csharp
 // Create an instance of FormEditor class and bind input and output pdf files
-Aspose.Pdf.Facades.FormEditor editor = new Aspose.Pdf.Facades.FormEditor("input.pdf","output.pdf");
+FormEditor editor = new FormEditor("input.pdf","output.pdf");
 
 // Create AcroForm fields - I have created only two fields for simplicity
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
+editor.AddField(FieldType.Text, "firstname", 1, 100, 600, 200, 625);
+editor.AddField(FieldType.Text, "lastname", 1, 100, 550, 200, 575);
 
 // Add a submit button and set target URL
 editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);

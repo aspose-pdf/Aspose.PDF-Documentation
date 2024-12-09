@@ -17,21 +17,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Printing PDF documents",
-    "alternativeHeadline": "How to print PDF documents",
+    "alternativeHeadline": "Streamlined C# PDF Printing Techniques and Settings",
+    "abstract": "Discover the new functionality of printing PDF documents using C# with our comprehensive guide. This feature provides essential techniques and tips for configuring PDF printer settings within .NET projects, enhancing your document handling capabilities. Perfect for developers looking to streamline their printing processes in .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, print pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Printing PDF, C# PDF printer settings, .NET project tips, PDF document generation, print PDF document in WPF application, printing PDF in .NET Framework, Aspose.PDF for .NET Library, PDF to PostScript conversion, check print job status, printing PDF in .NET Core",
+    "wordcount": "120",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/printing-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "C# Print PDF techniques and walkthrough for C# PDF printer settings and .NET project tips"
 }
 </script>

@@ -3,10 +3,75 @@ title: Add PDF Page Stamp
 type: docs
 weight: 10
 url: /net/add-pdf-page-stamp/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileStamp Class.
+description: Discover how to add stamps to PDF pages in .NET, including text and images, for watermarking or branding using Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add PDF Page Stamp",
+    "alternativeHeadline": "Enhance PDFs with Custom Stamps and Page Numbers",
+    "abstract": "Introducing the PDF Page Stamp feature that allows users to effortlessly add customized stamps on all or specific pages of a PDF document using the PdfFileStamp class. This functionality enhances document personalization by enabling various attributes like rotation, background, and custom numbering styles for page stamps, making your PDF files not only unique but also professionally polished",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1309",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-pdf-page-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-pdf-page-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Add PDF Page Stamp on All Pages in a PDF File
 
@@ -19,11 +84,11 @@ public static void AddPageStampOnAllPages()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
+    stamp.BindPdf(dataDir + "pagestamp.pdf", 1);
     stamp.SetOrigin(20, 20);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -32,7 +97,7 @@ public static void AddPageStampOnAllPages()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+    fileStamp.Save(dataDir + "PageStampOnAllPages.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -50,11 +115,11 @@ public static void AddPageStampOnCertainPages()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
+    stamp.BindPdf(dataDir + "pagestamp.pdf", 1);
     stamp.SetOrigin(20, 20);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -63,7 +128,7 @@ public static void AddPageStampOnCertainPages()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+    fileStamp.Save(dataDir + "PageStampOnAllPages.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -87,10 +152,10 @@ public static void AddPageNumberInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Get total number of pages
-    int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+    int totalPages = new PdfFileInfo(dataDir + "sample.pdf").NumberOfPages;
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
@@ -106,7 +171,7 @@ public static void AddPageNumberInPdfFile()
     fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+    fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -117,11 +182,11 @@ public static void AddPageNumberInPdfFile()
 
 The PdfFileStamp class offers the feature to add Page Number information as stamp object inside PDF document. Prior to this release, the class only supported 1,2,3,4 as page numbering style. However, there has been a requirement from some customers to use custom numbering style when placing page number stamp inside PDF document. In order to accomplish this requirement, [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) property has been introduced, which accepts the values from [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) enumeration. Specified below are values offered in this enumeration.
 
-- LettersLowercase
-- LettersUppercase
-- NumeralsArabic
-- NumeralsRomanLowercase
-- NumeralsRomanUppercase
+- LettersLowercase.
+- LettersUppercase.
+- NumeralsArabic.
+- NumeralsRomanLowercase.
+- NumeralsRomanUppercase.
 
 ```csharp
 public static void AddCustomPageNumberInPdfFile()
@@ -130,10 +195,10 @@ public static void AddCustomPageNumberInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Get total number of pages
-    int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+    int totalPages = new PdfFileInfo(dataDir + "sample.pdf").NumberOfPages;
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
@@ -152,7 +217,7 @@ public static void AddCustomPageNumberInPdfFile()
     fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+    fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();

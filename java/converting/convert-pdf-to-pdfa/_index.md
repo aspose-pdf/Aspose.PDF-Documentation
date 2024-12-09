@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/convert-pdf-to-pdfa/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert a PDF file to a PDF/A compliant PDF file. 
+description: Learn how to convert PDF files to PDF/A format for long-term archiving and compliance with document preservation standards using Aspose.PDF in Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

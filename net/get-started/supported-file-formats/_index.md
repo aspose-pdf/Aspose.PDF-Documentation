@@ -10,6 +10,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Supported File Formats",
+    "alternativeHeadline": "Aspose.PDF for .NET Supports Extensive File Formats in C#",
+    "abstract": "Aspose.PDF for .NET now supports an extensive range of file formats for both loading and saving, enhancing versatility for developers. This functionality includes popular formats such as PDF, EPUB, HTML, and SVG, catering to various document processing needs. Discover comprehensive file format support that streamlines PDF manipulation within your applications",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "566",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/supported-file-formats/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/supported-file-formats/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 The following table indicates the file formats that Aspose.PDF for .NET can load and save.
 
@@ -28,6 +93,7 @@ The following table indicates the file formats that Aspose.PDF for .NET can load
 |[XPS](https://docs.fileformat.com/page-description-language/xps/)|XPS Documents|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
 |[XSLFO](https://docs.fileformat.com/page-description-language/xslfo/)|XSL-FO is part of XSL file which is used for the transformation and formatting of XML data|{{< emoticons/tick >}}| | |
 |[MD](https://docs.fileformat.com/word-processing/md/)|Markdown Format|{{< emoticons/tick >}}| | |
+|[OFD](https://en.wikipedia.org/wiki/OFD)|OFD format refers to “Open Fixed-layout Document”, established as China’s national standard for electronic file storage, used as an alternative to the popular PDF format.|{{< emoticons/tick >}}| | |
 |[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Saves the document in the Microsoft Excel SpreadSheet| |{{< emoticons/tick >}}| |
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Saves the document in the Microsoft Excel 2007 format| |{{< emoticons/tick >}}| |
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|Saves the document in the Microsoft PowerPoint Presentations format| |{{< emoticons/tick >}}| |

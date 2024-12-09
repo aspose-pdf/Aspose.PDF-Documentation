@@ -4,7 +4,7 @@ linktitle: Bookmarks
 type: docs
 weight: 30
 url: /net/bookmarks/
-description: This section explain how to add, delete and get bookmark with Aspose.PDF for .NET.
+description: Discover how to work with PDF bookmarks in .NET using Aspose.PDF for easy document navigation and organization.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -18,21 +18,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Bookmarks in PDF using C#",
-    "alternativeHeadline": "How to add Bookmarks in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks with C#",
+    "abstract": "Discover the new capabilities of Aspose.PDF for .NET, enabling users to efficiently manage bookmarks in PDF documents. This feature allows for seamless addition, deletion, and retrieval of bookmarks, enhancing navigation and accessibility within PDF files",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, bookmarks in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Bookmarks, PDF, C#, Aspose.PDF, add bookmark, delete bookmark, get bookmark, update bookmark, expand bookmark, PDF manipulation",
+    "wordcount": "130",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -74,7 +75,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/bookmarks/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This section explain how to add, delete and get bookmark with Aspose.PDF for .NET."
 }
 </script>

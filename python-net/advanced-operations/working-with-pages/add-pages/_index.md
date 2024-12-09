@@ -4,7 +4,7 @@ linktitle: Add Pages
 type: docs
 weight: 10
 url: /python-net/add-pages/
-description: This article teaches how to insert (add) a page at the desired location PDF file. Learn how to move, remove (delete) pages from a PDF file using C#.
+description: Discover how to add pages to a PDF document in Python using Aspose.PDF for flexible document creation and editing.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"

@@ -3,7 +3,7 @@ title: Control Exception PDF File
 type: docs
 weight: 30
 url: /java/control-exception/
-description: This topic explains how control exception on PDF File using PdfFileSecurity Class Class.
+description: Learn how to control and handle exceptions while working with PDF documents using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

@@ -17,21 +17,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Images in PDF using C#",
-    "alternativeHeadline": "How to work with Images in PDF with .NET",
+    "alternativeHeadline": "Comprehensive Image Handling in PDF with C#",
+    "abstract": "The new functionality in Aspose.PDF for .NET enhances your ability to manage images within PDF documents, offering advanced features such as image resizing, replacement, extraction, and detailed image properties retrieval. This robust library simplifies the process of adding and manipulating graphics in your PDF files, making it an essential tool for developers seeking to create dynamic digital documents efficiently",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, image in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "C#, PDF manipulation, Aspose.PDF library, image extraction, add image to PDF, replace image in PDF, set image size, search images in PDF, DICOM image support",
+    "wordcount": "578",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/working-with-images/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section describes the features of working with images in a PDF file using C# library."
 }
 </script>
@@ -98,6 +99,7 @@ You are able to do the following:
 - [Set Default Font Name](/pdf/net/set-default-font-name/) - Setting Default Font Name for conversion process.
 - [Generate Thumbnail Images from PDF Documents](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - next article shows how to generate thumbnail images from PDF documents using first the Acrobat SDK and then Aspose.PDF.
 - Support for DICOM Images - Aspose.PDF for .NET supports special medical graphic standard of images. Aspose.PDF for .NET allows you to convert DICOM and SVG images. Please check [Convert DICOM to PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) section.
+- [Working with Vector Graphics](/pdf/net/working-with-vector-graphics) - this section describes the features of working with GraphicsAbsorber tool using C#.
 
 <script type="application/ld+json">
 {

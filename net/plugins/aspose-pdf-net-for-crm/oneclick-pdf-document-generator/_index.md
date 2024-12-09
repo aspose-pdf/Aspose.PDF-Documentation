@@ -9,6 +9,72 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "OneClick PDF Document Generator",
+    "alternativeHeadline": "Effortless PDF Generation with OneClick Integration",
+    "abstract": "The Aspose .NET OneClick PDF Document Generator is an innovative open-source tool that simplifies PDF creation and export directly from Microsoft Dynamics CRM. With its ability to generate documents in one click, support for complex fields, and seamless integration with CRM entities like Account, Contact, and Opportunity, this feature streamlines document management and enhances workflow efficiency",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "OneClick PDF Document Generator, Aspose .NET, Microsoft Dynamics CRM, PDF generation, CRM entity integration, document template, one click functionality, open source add-on, template design, document export",
+    "wordcount": "742",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/oneclick-pdf-document-generator/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/oneclick-pdf-document-generator/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Introduction
 
@@ -101,10 +167,10 @@ To Customize the solution download and install the unmanaged solution into CRM.
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010 or higher
-  Please follow these simple steps to get started
+- Visual Studio 2010 or higher.
+  Please follow these simple steps to get started.
 - Download/Clone the source code.
-- Open Visual Studio 2010 and Choose File > Open Project
+- Open Visual Studio 2010 and Choose File > Open Project.
 - Browse to the latest source code that you have downloaded and open the .sln file.
 
 **Note:** This Add-on is Open source. The Scenario we have created and resolved the issue may differ from the end user. You can download the latest source code and update it according to your business needs.

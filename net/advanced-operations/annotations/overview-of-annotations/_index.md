@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Overview of supported Annotations",
-    "alternativeHeadline": "List of supported Annotations",
+    "alternativeHeadline": "Comprehensive List of Aspose.PDF Annotations",
+    "abstract": "Discover the comprehensive list of supported annotations available in Aspose.PDF for .NET, enabling developers to enhance PDF documents with various features. This functionality includes diverse annotation types, such as text, link, highlight, and multimedia, providing robust options for PDF manipulation and customization. Explore how these annotations can elevate your .NET applications and improve user engagement with PDF content",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, supported annotations",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Aspose.PDF, supported annotations, PDF document generation, .NET Framework, .NET Core, Text annotation, Link annotations, Free text annotation, Highlight annotation, Watermark annotation",
+    "wordcount": "370",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/overview-of-annotations/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Check out the list of possible annotations you can work with using Aspose.PDF for .NET."
 }
 </script>

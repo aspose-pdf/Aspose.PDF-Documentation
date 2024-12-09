@@ -4,7 +4,7 @@ linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /net/rotate-text-inside-pdf/
-description: Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph.
+description: Learn how to rotate text within PDF files in .NET using Aspose.PDF to adjust text alignment and improve presentation.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Rotate Text Inside PDF using C#",
-    "alternativeHeadline": "How to rotate Text in PDF File",
+    "alternativeHeadline": "Rotate Text to Any Angle in PDF with C#",
+    "abstract": "Aspose.PDF for .NET allows users to rotate text fragments and entire paragraphs within PDF documents at various angles. This feature enhances document flexibility by enabling precise text orientation adjustments, catering to diverse formatting needs in professional and creative applications. Users can effortlessly implement these rotations using the provided APIs, enhancing the document generation experience",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "860",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/rotate-text-inside-pdf/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph."
 }
 </script>
@@ -88,9 +88,9 @@ By using the Rotation property of [TextFragment](https://reference.aspose.com/pd
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 // Create text fragment
 TextFragment textFragment1 = new TextFragment("main text");
 textFragment1.Position = new Position(100, 600);
@@ -118,7 +118,7 @@ textBuilder.AppendText(textFragment1);
 textBuilder.AppendText(textFragment2);
 textBuilder.AppendText(textFragment3);
 // Save document
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
+document.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
 ```
 
 ## Implement Rotation using TextParagraph and TextBuilder (Rotated Fragments)
@@ -127,9 +127,9 @@ pdfDocument.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 TextParagraph paragraph = new TextParagraph();
 paragraph.Position = new Position(200, 600);
 // Create text fragment
@@ -160,7 +160,7 @@ TextBuilder textBuilder = new TextBuilder(pdfPage);
 // Append the text paragraph to the PDF page
 textBuilder.AppendParagraph(paragraph);
 // Save document
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
+document.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
 ```
 
 ## Implement Rotation using TextFragment and Page.Paragraphs
@@ -169,9 +169,9 @@ pdfDocument.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 // Create text fragment
 TextFragment textFragment1 = new TextFragment("main text");
 // Set text properties
@@ -195,7 +195,7 @@ pdfPage.Paragraphs.Add(textFragment1);
 pdfPage.Paragraphs.Add(textFragment2);
 pdfPage.Paragraphs.Add(textFragment3);
 // Save document
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+document.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
 ```
 
 ## Implement Rotation using TextParagraph and TextBuilder (Whole Paragraph Rotated)
@@ -204,9 +204,9 @@ pdfDocument.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Initialize document object
-Document pdfDocument = new Document();
+Document document = new Document();
 // Get particular page
-Page pdfPage = (Page)pdfDocument.Pages.Add();
+Page pdfPage = (Page)document.Pages.Add();
 for (int i = 0; i < 4; i++)
 {
     TextParagraph paragraph = new TextParagraph();
@@ -244,7 +244,7 @@ for (int i = 0; i < 4; i++)
     textBuilder.AppendParagraph(paragraph);
 }
 // Save document
-pdfDocument.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+document.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
 ```
 
 <script type="application/ld+json">

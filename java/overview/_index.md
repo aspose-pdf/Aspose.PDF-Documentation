@@ -147,8 +147,6 @@ Aspose.PDF for Java present different ways to print PDF files:
 - Printing PDF in WPF application
 - various additional operations, like PDF to PostScript conversion, Checking Print Job Status etc.
 
-Let's check the next section for more details: [Printing PDF documents](/pdf/java/printing-document/).
-
 In addition, Aspose.PDF for Java can be applied to easily convert text, images, SVG, HTML to PDF and convert PDF to various document formats with excellent performance and good quality.
 
 ## Pricing and Policies

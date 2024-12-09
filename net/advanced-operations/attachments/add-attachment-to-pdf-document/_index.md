@@ -17,21 +17,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Adding Attachment to a PDF document",
-    "alternativeHeadline": "How to add attachments to PDF",
+    "alternativeHeadline": "Easily Attach Files to Your PDF Documents",
+    "abstract": "Aspose.PDF for .NET now offers an efficient way to enhance your PDF documents by allowing users to seamlessly add various attachments, including text files and images. This functionality simplifies the process of embedding additional information within a PDF, ensuring essential data is readily accessible within your documents. Optimize your document management with this powerful feature and improve user experience by keeping all relevant resources together",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, attachments in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Adding attachments to PDF, PDF file types, Aspose.PDF for .NET, FileSpecification object, Document object, EmbeddedFiles collection, PDF document manipulation, C# PDF library, PDF attachment functionality, Aspose.Drawing integration",
+    "wordcount": "309",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-attachment-to-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This page describes how to add an attachment to a PDF file with Aspose.PDF for . NET library"
 }
 </script>
@@ -96,16 +97,16 @@ The [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfile
 string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "AddAttachment.pdf");
+Document document = new Document(dataDir + "AddAttachment.pdf");
 
 // Setup new file to be added as attachment
 FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "Sample text file");
 
 // Add attachment to document's attachment collection
-pdfDocument.EmbeddedFiles.Add(fileSpecification);
+document.EmbeddedFiles.Add(fileSpecification);
 
 // Save updated document
-pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
+document.Save(dataDir + "AddllAnnotations_out.pdf");
 ```
 
 <script type="application/ld+json">

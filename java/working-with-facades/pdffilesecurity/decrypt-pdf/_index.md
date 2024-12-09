@@ -3,7 +3,7 @@ title: Decrypt PDF File
 type: docs
 weight: 20
 url: /java/decrypt-pdf-file/
-description: This topic explains how to Decrypt PDF File using PdfFileSecurity Class.
+description: Discover how to decrypt PDF files using Aspose.PDF in Java and remove password protection to gain access to the content.
 lastmod: "2021-06-05"
 draft: false
 ---

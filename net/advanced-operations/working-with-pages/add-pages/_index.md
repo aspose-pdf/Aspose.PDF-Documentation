@@ -4,7 +4,7 @@ linktitle: Add Pages
 type: docs
 weight: 10
 url: /net/add-pages/
-description: This article teaches how to insert (add) a page at the desired location PDF file. Learn how to move, remove (delete) pages from a PDF file using C#.
+description: Explore how to add pages to an existing PDF in .NET with Aspose.PDF for enhancing and expanding your documents.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -16,22 +16,23 @@ aliases:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Add Pages in PDF with C#",
-    "alternativeHeadline": "How to add Pages in PDF document",
+    "headline": "Add Pages to PDF Document",
+    "alternativeHeadline": "Insert and Manage Pages in PDF Easily with C#",
+    "abstract": "The feature in Aspose.PDF for .NET allows users to easily insert pages into a PDF document at any specified location, enhancing document flexibility and organization. This functionality not only supports adding pages but also includes options to move or remove existing pages using C#. Streamline your PDF management with this intuitive addition to your development toolkit",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add pdf page, insert pdf page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Pages to PDF, insert PDF page, empty page PDF, C# PDF manipulation, PDF document generation, PageCollection, Aspose.PDF for .NET, move PDF pages, remove PDF pages, add pages to PDF",
+    "wordcount": "651",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/add-pages/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article teaches how to insert (add) a page at the desired location PDF file. Learn how to move, remove (delete) pages from a PDF file using C#."
 }
 </script>
@@ -104,25 +105,25 @@ The following code snippet shows you how to insert a page in a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "InsertEmptyPage.pdf");
+Document document = new Document(dataDir + "InsertEmptyPage.pdf");
 
 // Insert an empty page in a PDF
-pdfDocument.Pages.Insert(2);
+document.Pages.Insert(2);
 // Save output file
-pdfDocument.Save(dataDir + "InsertEmptyPage_out.pdf");
+document.Save(dataDir + "InsertEmptyPage_out.pdf");
 ```
 
 In example above, we added empty page with default parameters. If you need to make page size the same as another page in document you shold add
 a few lines of code:
 
 ```cs
-var page = pdfDocument.Pages.Insert(2);
+var page = document.Pages.Insert(2);
 //copy page parameters from page 1
-page.ArtBox = pdfDocument.Pages[1].ArtBox;
-page.BleedBox = pdfDocument.Pages[1].BleedBox;
-page.CropBox = pdfDocument.Pages[1].CropBox;
-page.MediaBox = pdfDocument.Pages[1].MediaBox;
-page.TrimBox = pdfDocument.Pages[1].TrimBox;
+page.ArtBox = document.Pages[1].ArtBox;
+page.BleedBox = document.Pages[1].BleedBox;
+page.CropBox = document.Pages[1].CropBox;
+page.MediaBox = document.Pages[1].MediaBox;
+page.TrimBox = document.Pages[1].TrimBox;
 ```
 
 ### Add an Empty Page at the End of a PDF File
@@ -143,13 +144,13 @@ The following code snippet shows you how to insert an empty page at the end of a
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "InsertEmptyPageAtEnd.pdf");
+Document document = new Document(dataDir + "InsertEmptyPageAtEnd.pdf");
 
 // Insert an empty page at the end of a PDF file
-pdfDocument.Pages.Add();
+document.Pages.Add();
 
 // Save output file
-pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -3,6 +3,7 @@ title: Change in methods name
 type: docs
 weight: 10
 url: /java/change-in-methods-name/
+description: Find out about method name changes in recent versions of Aspose.PDF for Java, ensuring code compatibility with the latest API.
 lastmod: "2022-01-27"
 ---
 

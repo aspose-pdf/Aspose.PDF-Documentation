@@ -3,6 +3,7 @@ title: Jython Programmers Guide
 type: docs
 weight: 10
 url: /java/jython-programmers-guide/
+description: Get started with Jython programming for Aspose.PDF by learning key features and methods for managing PDF files in Jython.
 lastmod: "2021-06-05"
 ---
 

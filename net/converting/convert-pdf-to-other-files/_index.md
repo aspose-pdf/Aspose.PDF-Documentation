@@ -5,12 +5,76 @@ type: docs
 weight: 90
 url: /net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-keywords: convert, PDF, EPUB, LaText, Text, XPS, C#
 description: This topic shows you how to convert PDF file to other file formats like EPUB, LaTeX, Text, XPS etc using C# or .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF to EPUB, LaTeX, Text, XPS in C#",
+    "alternativeHeadline": "Add PDF format conversion to EPUB, LaTeX, Text, XPS in C#",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature that allows seamless conversion of PDF files into various formats, including EPUB, LaTeX, Text, XPS, and Markdown. This functionality enhances document accessibility and usability by enabling developers to effortlessly integrate diverse file format conversions into their C# applications, thereby catering to a broader audience and optimizing content for different platforms",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1419",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-to-other-files/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-to-other-files/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Convert PDF to EPUB
 
@@ -35,13 +99,13 @@ Please try using the following code snippet to accomplish this requirement with 
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Load PDF document
-Document pdfDocument = new Document(dataDir + "PDFToEPUB.pdf");
+Document document = new Document(dataDir + "PDFToEPUB.pdf");
 // Instantiate Epub Save options
 EpubSaveOptions options = new EpubSaveOptions();
 // Specify the layout for contents
 options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
 // Save the ePUB document
-pdfDocument.Save(dataDir + "PDFToEPUB_out.epub", options);
+document.Save(dataDir + "PDFToEPUB_out.epub", options);
 ```
 
 ## Convert PDF to LaTeX/TeX
@@ -67,7 +131,7 @@ The following code snippet shows the process of converting PDF files into the TE
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Create Document object
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf");
+Document document = new Document(dataDir + "PDFToTeX.pdf");
 
 // Instantiate LaTex save option          
 LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
@@ -79,7 +143,7 @@ string pathToOutputDirectory = dataDir;
 saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
 // Save PDF file into LaTex format           
-doc.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
 ```
 
 ## Convert PDF to Text
@@ -96,11 +160,11 @@ The following code snippet explains how to extract the texts from the all pages.
 public static void ConvertPDFDocToTXT()
 {
     // Open document
-    Document pdfDocument = new Document(_dataDir + "demo.pdf");
+    Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
-    ta.Visit(pdfDocument);
+    ta.Visit(document);
     // Save the extracted text in text file
-    File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
 }
 ```
 
@@ -121,16 +185,16 @@ The following code snippet explains how to extract the texts from the particular
 ```csharp
 public static void ConvertPDFPagestoTXT()
 {
-    Document pdfDocument = new Document(System.IO.Path.Combine(_dataDir, "demo.pdf"));
+    Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
     var pages = new [] {1, 3, 4};
     foreach (var page in pages)
     {
-        ta.Visit(pdfDocument.Pages[page]);
+        ta.Visit(document.Pages[page]);
     }
    
     // Save the extracted text in text file
-    File.WriteAllText(System.IO.Path.Combine(_dataDir, "input_Text_Extracted_out.txt"), ta.Text);
+    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", ta.Text);
 }
 ```
 
@@ -155,8 +219,7 @@ Since the 24.2 release, Aspose.PDF has implemented converting Searchable PDF to 
 The following code snippet shows the process of converting PDF file into XPS format.
 
 ```csharp
-
-using (var document = new Document("input.pdf"))
+using (var document = new Aspose.Pdf.Document("input.pdf"))
 {
     var xpsOptions = new XpsSaveOptions
     {
@@ -185,23 +248,23 @@ The code opens a PDF document, configures the parameters for converting it to a 
 The following code snippet shows the process of converting PDF file into MD format.
 
 ```csharp
+string inputPdfPath = "";
+string markdownOutputFilePath = "";
 
-    string inputPdfPath = "";
-    string markdownOutputFilePath = "";
-
-    // Create a new Document object using the specified input PDF path.
-    using (Document doc = new Document(inputPdfPath))
+// Create a new Document object using the specified input PDF path.
+using (Document document = new Document(inputPdfPath))
+{
+    // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
+    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
     {
-        // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
-        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
-        {
-            // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
-            UseImageHtmlTag = false
-        }
-            // Specify the directory name where resources (like images) will be stored.
-            saveOptions.ResourcesDirectoryName = "images";
-
-        // Save the document in Markdown format to the specified output file path using the defined save options.    
-        doc.Save(markdownOutputFilePath, saveOptions);
+        // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
+        UseImageHtmlTag = false
     }
+    
+    // Specify the directory name where resources (like images) will be stored.
+    saveOptions.ResourcesDirectoryName = "images";
+
+    // Save the document in Markdown format to the specified output file path using the defined save options.    
+    document.Save(markdownOutputFilePath, saveOptions);
+}
 ```

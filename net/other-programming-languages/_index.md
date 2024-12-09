@@ -1,9 +1,11 @@
 ---
-title: Other .NET Programming Languages
+title: Using in other languages
 linktitle: Using in other languages
 type: docs
 weight: 110
 url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
+description: Learn how to use Aspose.PDF for .NET in other programming languages like VB.NET, C++, and more. Maximize the versatility of PDF processing.
+lastmod: "2024-11-21"
 ---
 
 
@@ -17,3 +19,4 @@ url: /net/use-aspose-pdf-for-net-in-other-programming-languages/
 - [Creating a Wrapper Assembly](/pdf/net/creating-a-wrapper-assembly/)
 - [VBScript using wrapper](/pdf/net/vbscript-using-wrapper/)
 - [Using Aspose.PDF for .NET with Python](/pdf/net/python-net/)
+- [Converting Documents in Microsoft Azure](/pdf/net/microsoft-azure/)

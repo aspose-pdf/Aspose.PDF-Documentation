@@ -3,7 +3,73 @@ title: Aspose.PDF for .NET via COM Interop
 type: docs
 weight: 20
 url: /net/use-aspose-pdf-for-net-via-com-interop/
+description: Discover how to use Aspose.PDF for .NET via COM Interop for seamless integration with non-.NET applications.
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Aspose.PDF for .NET via COM Interop",
+    "alternativeHeadline": "Aspose.PDF for .NET Enables COM Interop Usage",
+    "abstract": "Aspose.PDF for .NET now supports seamless integration with various programming languages through COM Interop, allowing developers to utilize its powerful PDF manipulation capabilities outside the .NET framework. This feature enhances flexibility by transforming Aspose.PDF objects into COM objects, streamlining interactions with unmanaged code while maintaining high performance through early and late binding techniques",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1338",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/use-aspose-pdf-for-net-via-com-interop/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/use-aspose-pdf-for-net-via-com-interop/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 {{% alert color="primary" %}}
 
@@ -108,11 +174,10 @@ To generate a TLB file:
 The creation of a COM object is similar to creation of a normal .NET object:
 
 ```vb
-
 'Instantiate Pdf instance by calling its empty constructor
 
 Dim pdf
-Set pdf = CreateObject("Aspose.PDF.Generator.Pdf")
+Set pdf = CreateObject("Aspose.Pdf.Generator.Pdf")
 
 ```
 

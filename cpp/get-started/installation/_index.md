@@ -19,7 +19,7 @@ Aspose.PDF for C++ is a native C++ library that enables developers to create, re
 
 {{% /alert %}}
 
-# Installation
+## Installation
 
 ## Evaluate Aspose.PDF for C++
 

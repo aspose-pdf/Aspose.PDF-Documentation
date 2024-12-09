@@ -3,6 +3,7 @@ title: Install Aspose.PDF
 type: docs
 weight: 50
 url: /reportingservices/install-aspose-pdf-for-reporting-services/
+description: Learn how to install Aspose.PDF for Reporting Services. Follow this step-by-step guide to enable PDF export functionality in SSRS.
 lastmod: "2021-06-05"
 ---
 

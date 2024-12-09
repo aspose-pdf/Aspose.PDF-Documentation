@@ -2,7 +2,7 @@
 title: Formatting PDF Document using C#
 linktitle: Formatting PDF Document
 type: docs
-weight: 11
+weight: 20
 url: /net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks.
 lastmod: "2022-02-17"
@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Formatting PDF Document using C#",
-    "alternativeHeadline": "How to format PDF Document in .NET",
+    "headline": "Formatting Document using C#",
+    "alternativeHeadline": "Enhance PDF Formatting with Aspose.PDF for .NET",
+    "abstract": "Discover the powerful new feature of Aspose.PDF for .NET that allows users to create and format PDF documents seamlessly. With comprehensive control over document properties such as window display settings, font embedding options, and customizable zoom factors, developers can enhance user experience and maintain document integrity across different platforms. Optimize your PDF manipulation tasks with this robust functionality that significantly improves the efficiency of your .NET applications",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, format pdf document",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Formatting PDF Document, Aspose.PDF for .NET, PDF document properties, embed fonts, font substitution, set zoom factor, document window properties, PDF manipulation library, PDF document generation, C# PDF formatting",
+    "wordcount": "2526",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/formatting-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks."
 }
 </script>
@@ -104,43 +105,43 @@ The following code snippet shows you how to get the properties using [Document](
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetDocumentWindow.pdf");
+Document document = new Document(dataDir + "GetDocumentWindow.pdf");
 
 // Get different document properties
 // Position of document's window - Default: false
-Console.WriteLine("CenterWindow : {0}", pdfDocument.CenterWindow);
+Console.WriteLine("CenterWindow : {0}", document.CenterWindow);
   
 // Predominant reading order; determins the position of page
 // When displayed side by side - Default: L2R
-Console.WriteLine("Direction : {0}", pdfDocument.Direction);
+Console.WriteLine("Direction : {0}", document.Direction);
 
 // Whether window's title bar should display document title
 // If false, title bar displays PDF file name - Default: false
-Console.WriteLine("DisplayDocTitle : {0}", pdfDocument.DisplayDocTitle);
+Console.WriteLine("DisplayDocTitle : {0}", document.DisplayDocTitle);
 
 // Whether to resize the document's window to fit the size of
 // First displayed page - Default: false
-Console.WriteLine("FitWindow : {0}", pdfDocument.FitWindow);
+Console.WriteLine("FitWindow : {0}", document.FitWindow);
 
 // Whether to hide menu bar of the viewer application - Default: false
-Console.WriteLine("HideMenuBar : {0}", pdfDocument.HideMenubar);
+Console.WriteLine("HideMenuBar : {0}", document.HideMenubar);
 
 // Whether to hide tool bar of the viewer application - Default: false
-Console.WriteLine("HideToolBar : {0}", pdfDocument.HideToolBar);
+Console.WriteLine("HideToolBar : {0}", document.HideToolBar);
 
 // Whether to hide UI elements like scroll bars
 // And leaving only the page contents displayed - Default: false
-Console.WriteLine("HideWindowUI : {0}", pdfDocument.HideWindowUI);
+Console.WriteLine("HideWindowUI : {0}", document.HideWindowUI);
 
 // Document's page mode. How to display document on exiting full-screen mode.
-Console.WriteLine("NonFullScreenPageMode : {0}", pdfDocument.NonFullScreenPageMode);
+Console.WriteLine("NonFullScreenPageMode : {0}", document.NonFullScreenPageMode);
 
 // The page layout i.e. single page, one column
-Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout);
+Console.WriteLine("PageLayout : {0}", document.PageLayout);
 
 // How the document should display when opened
 // I.e. show thumbnails, full-screen, show attachment panel
-Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
+Console.WriteLine("pageMode : {0}", document.PageMode);
 ```
 
 ### Set Document Window and Page Display Properties
@@ -153,16 +154,16 @@ This topic explains how to set the properties of the document window, viewer app
 
 Properties available are:
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- CenterWindow.
+- Direction.
+- DisplayDocTitle.
+- FitWindow.
+- HideMenuBar.
+- HideToolBar.
+- HideWindowUI.
+- NonFullScreenPageMode.
+- PageLayout.
+- PageMode.
 
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
@@ -172,47 +173,46 @@ Each is used and described in the code below. The following - code snippet shows
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetDocumentWindow.pdf");
+Document document = new Document(dataDir + "SetDocumentWindow.pdf");
 
 // Set different document properties
 // Sepcify to position document's window - Default: false
-pdfDocument.CenterWindow = true;
+document.CenterWindow = true;
 
 // Predominant reading order; determins the position of page
 // When displayed side by side - Default: L2R
-pdfDocument.Direction = Direction.R2L;
+document.Direction = Direction.R2L;
 
 // Specify whether window's title bar should display document title
 // If false, title bar displays PDF file name - Default: false
-pdfDocument.DisplayDocTitle = true;
+document.DisplayDocTitle = true;
 
 // Specify whether to resize the document's window to fit the size of
 // First displayed page - Default: false
-pdfDocument.FitWindow = true;
+document.FitWindow = true;
 
 // Specify whether to hide menu bar of the viewer application - Default: false
-pdfDocument.HideMenubar = true;
+document.HideMenubar = true;
 
 // Specify whether to hide tool bar of the viewer application - Default: false
-pdfDocument.HideToolBar = true;
+document.HideToolBar = true;
 
 // Specify whether to hide UI elements like scroll bars
 // And leaving only the page contents displayed - Default: false
-pdfDocument.HideWindowUI = true;
+document.HideWindowUI = true;
 
 // Document's page mode. specify how to display document on exiting full-screen mode.
-pdfDocument.NonFullScreenPageMode = PageMode.UseOC;
+document.NonFullScreenPageMode = PageMode.UseOC;
 
 // Specify the page layout i.e. single page, one column
-pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
+document.PageLayout = PageLayout.TwoColumnLeft;
 
 // Specify how the document should display when opened
 // I.e. show thumbnails, full-screen, show attachment panel
-pdfDocument.PageMode = PageMode.UseThumbs;
+document.PageMode = PageMode.UseThumbs;
 
-dataDir = dataDir + "SetDocumentWindow_out.pdf";
 // Save updated PDF file
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "SetDocumentWindow_out.pdf");
 ```
 
 ### Embedding Fonts in an existing PDF file
@@ -238,24 +238,24 @@ Some PDF documents have fonts from a special Adobe font set. Fonts from this set
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 // Load an existing PDF Document
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Set EmbedStandardFonts property of document
-pdfDocument.EmbedStandardFonts = true;
-foreach (Aspose.Pdf.Page page in pdfDocument.Pages)
+document.EmbedStandardFonts = true;
+foreach (Page page in document.Pages)
 {
     if (page.Resources.Fonts != null)
     {
-        foreach (Aspose.Pdf.Text.Font pageFont in page.Resources.Fonts)
+        foreach (Text.Font pageFont in page.Resources.Fonts)
         {
-// Check if font is already embedded
-if (!pageFont.IsEmbedded)
-{
-    pageFont.IsEmbedded = true;
-}
+            // Check if font is already embedded
+            if (!pageFont.IsEmbedded)
+            {
+                pageFont.IsEmbedded = true;
+            }
         }
     }
 }
-pdfDocument.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
+document.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
 ```
 
 ### Embedding Fonts while creating PDF
@@ -272,24 +272,23 @@ We use the property IsEmbedded of Font class to embed the font information into 
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Instantiate Pdf object by calling its empty constructor
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+Document document = new Document();
 
 // Create a section in the Pdf object
-Aspose.Pdf.Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 
-Aspose.Pdf.Text.TextFragment fragment = new Aspose.Pdf.Text.TextFragment("");
+Text.TextFragment fragment = new Text.TextFragment("");
 
-Aspose.Pdf.Text.TextSegment segment = new Aspose.Pdf.Text.TextSegment(" This is a sample text using Custom font.");
-Aspose.Pdf.Text.TextState ts = new Aspose.Pdf.Text.TextState();
+Text.TextSegment segment = new Text.TextSegment(" This is a sample text using Custom font.");
+Text.TextState ts = new Text.TextState();
 ts.Font = FontRepository.FindFont("Arial");
 ts.Font.IsEmbedded = true;
 segment.TextState = ts;
 fragment.Segments.Add(segment);
 page.Paragraphs.Add(fragment);
 
-dataDir = dataDir + "EmbedFontWhileDocCreation_out.pdf";
 // Save PDF Document
-doc.Save(dataDir);
+document.Save(dataDir + "EmbedFontWhileDocCreation_out.pdf");
 ```
 
 ### Set Default Font Name while Saving PDF
@@ -304,12 +303,14 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 string documentName = dataDir + "input.pdf";
 string newName = "Arial";
 using (System.IO.FileStream fs = new System.IO.FileStream(documentName, System.IO.FileMode.Open))
-using (Document document = new Document(fs))
 {
-    PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-    // Specify Default Font Name
-    pdfSaveOptions.DefaultFontName = newName;
-    document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
+    using (Document document = new Document(fs))
+    {
+        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
+        // Specify Default Font Name
+        pdfSaveOptions.DefaultFontName = newName;
+        document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
+    }
 }
 ```
 
@@ -321,9 +322,9 @@ In case you want to get all fonts from a PDF document, you can use FontUtilities
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document doc = new Document(dataDir + "input.pdf");
-Aspose.Pdf.Text.Font[] fonts = doc.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+Document document = new Document(dataDir + "input.pdf");
+Text.Font[] fonts = document.FontUtilities.GetAllFonts();
+foreach (Text.Font font in fonts)
 {
     Console.WriteLine(font.FontName);
 }
@@ -338,9 +339,9 @@ Aspose.PDF for .NET provides methods to get notifications about font substitutio
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
-doc.FontSubstitution += new Document.FontSubstitutionHandler(OnFontSubstitution);
+document.FontSubstitution += new Document.FontSubstitutionHandler(OnFontSubstitution);
 ```
 
 The **OnFontSubstitution** method is as listed below.
@@ -364,12 +365,12 @@ Following code snippet shows how to set FontSubsetStrategy:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // All fonts will be embedded as subset into document in case of SubsetAllFonts.
-doc.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetAllFonts);
+document.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetAllFonts);
 // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
-doc.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
-doc.Save(dataDir + "Output_out.pdf");
+document.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+document.Save(dataDir + "Output_out.pdf");
 ```
 
 ### Get-Set Zoom Factor of PDF File
@@ -388,13 +389,13 @@ The following code snippet shows how to set the zoom factor of a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Instantiate new Document object
-Document doc = new Document(dataDir + "SetZoomFactor.pdf");
+Document document = new Document(dataDir + "SetZoomFactor.pdf");
 
 GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0, 0, .5));
-doc.OpenAction = action;
-dataDir = dataDir + "Zoomed_pdf_out.pdf";
+document.OpenAction = action;
+
 // Save the document
-doc.Save(dataDir);
+document.Save(dataDir + "Zoomed_pdf_out.pdf");
 ```
 
 #### Get Zoom Factor
@@ -407,10 +408,10 @@ The following code snippet shows how to get a PDF file's zoom factor.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Instantiate new Document object
-Document doc = new Document(dataDir + "Zoomed_pdf.pdf");
+Document document = new Document(dataDir + "Zoomed_pdf.pdf");
 
 // Create GoToAction object
-GoToAction action = doc.OpenAction as GoToAction;
+GoToAction action = document.OpenAction as GoToAction;
 
 // Get the Zoom factor of PDF file
 System.Console.WriteLine((action.Destination as XYZExplicitDestination).Zoom); // Document zoom value;
@@ -424,11 +425,11 @@ Aspoose.PDF allows setting the Print Dialog Preset properties of a PDF document.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-using (Document doc = new Document())
+using (Document document = new Document())
 {
-    doc.Pages.Add();
-    doc.Duplex = PrintDuplex.DuplexFlipLongEdge;
-    doc.Save(dataDir + "35297_out.pdf", SaveFormat.Pdf);
+    document.Pages.Add();
+    document.Duplex = PrintDuplex.DuplexFlipLongEdge;
+    document.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", SaveFormat.Pdf);
 }
 ```
 
@@ -438,10 +439,10 @@ using (Document doc = new Document())
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-string outputFile = dataDir + "input.pdf";
+string inputFile = dataDir + "input.pdf";
 using (PdfContentEditor ed = new PdfContentEditor())
 {
-    ed.BindPdf(outputFile);
+    ed.BindPdf(inputFile);
     if ((ed.GetViewerPreference() & ViewerPreference.DuplexFlipShortEdge) > 0)
     {
         Console.WriteLine("The file has duplex flip short edge");

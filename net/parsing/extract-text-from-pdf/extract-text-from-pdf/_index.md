@@ -1,6 +1,6 @@
 ---
-title: Extract text from PDF C#
-linktitle: Extract text from PDF
+title: Extract Text from PDF C#
+linktitle: Extract Text from PDF
 type: docs
 weight: 10
 url: /net/extract-text-from-all-pdf/
@@ -10,6 +10,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Text from PDF C#",
+    "alternativeHeadline": "Effortlessly Extract Text from PDFs in C#",
+    "abstract": "Discover the powerful new functionality in Aspose.PDF for .NET that allows developers to effortlessly extract text from PDF documents. This feature supports extraction from all pages or specific regions, accommodates multi-column layouts, and even enables the retrieval of highlighted text with just a few lines of code. Enhance your document processing capabilities and streamline content extraction with this versatile tool",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "2005",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-text-from-all-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-text-from-all-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Extract Text From All the Pages of a PDF Document
 
@@ -23,20 +88,20 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+Document document = new Document(dataDir + "ExtractTextAll.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
 // Accept the absorber for all the pages
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 Call the **Accept** method on a particular page of the Document object. The Index is the particular page number from where text needs to be extracted.
@@ -49,41 +114,38 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber textAbsorber = new TextAbsorber();
  
 // Accept the absorber for a particular page
-pdfDocument.Pages[1].Accept(textAbsorber);
+document.Pages[1].Accept(textAbsorber);
 
 // Get the extracted text
 string extractedText = textAbsorber.Text;
 
-dataDir = dataDir + "extracted-text_out.txt";
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir);
-
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text_out.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 ## Extract Text from Pages using Text Device
 
-You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal
+You can use the **TextDevice** class to extract text from a PDF file. TextDevice uses TextAbsorber in its implementation, thus, in fact, they do the same thing but TextDevice just implemented to unify the "Device" approach to extract anything from the page ImageDevice, PageDevice, etc. TextAbsorber may extract text from Page, entire PDF or XForm, this TextAbsorber is more universal.
 
 ### Extract text from all pages
 
 The following steps and code snippet shows you how to extract text from a PDF using the text device.
 
-1. Create an object of Document class with input PDF file specified
-1. Create an object of TextDevice class
-1. Use object of TextExtractOptions class to specify extraction options
-1. Use the Process method of TextDevice class to convert contents to the text
-1. Save the text to the output file
+1. Create an object of Document class with input PDF file specified.
+1. Create an object of TextDevice class.
+1. Use object of TextExtractOptions class to specify extraction options.
+1. Use the Process method of TextDevice class to convert contents to the text.
+1. Save the text to the output file.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -93,12 +155,12 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document( dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 System.Text.StringBuilder builder = new System.Text.StringBuilder();
 // String to hold extracted text
 string extractedText = "";
 
-foreach (Page pdfPage in pdfDocument.Pages)
+foreach (Page pdfPage in document.Pages)
 {
     using (MemoryStream textStream = new MemoryStream())
     {
@@ -106,17 +168,13 @@ foreach (Page pdfPage in pdfDocument.Pages)
         TextDevice textDevice = new TextDevice();
 
         // Set text extraction options - set text extraction mode (Raw or Pure)
-        TextExtractionOptions textExtOptions = new
-        TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+        TextExtractionOptions textExtOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
         textDevice.ExtractionOptions = textExtOptions;
 
         // Convert a particular page and save text to the stream
         textDevice.Process(pdfPage, textStream);
         // Convert a particular page and save text to the stream
-        textDevice.Process(pdfDocument.Pages[1], textStream);
-
-        // Close memory stream
-        textStream.Close();
+        textDevice.Process(document.Pages[1], textStream);
 
         // Get text from memory stream
         extractedText = Encoding.Unicode.GetString(textStream.ToArray());
@@ -124,9 +182,8 @@ foreach (Page pdfPage in pdfDocument.Pages)
     builder.Append(extractedText);
 }
 
-dataDir = dataDir + "input_Text_Extracted_out.txt";
 // Save the extracted text in text file
-File.WriteAllText(dataDir, builder.ToString());
+File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", builder.ToString());
 ```
 
 ## Extract Text from a particular page region
@@ -143,7 +200,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextAll.pdf");
+Document document = new Document(dataDir + "ExtractTextAll.pdf");
 
 // Create TextAbsorber object to extract text
 TextAbsorber absorber = new TextAbsorber();
@@ -151,16 +208,16 @@ absorber.TextSearchOptions.LimitToPageBounds = true;
 absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 200, 250, 350);
 
 // Accept the absorber for first page
-pdfDocument.Pages[1].Accept(absorber);
+document.Pages[1].Accept(absorber);
 
 // Get the extracted text
 string extractedText = absorber.Text;
 // Create a writer and open the file
-TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt");
-// Write a line of text to the file
-tw.WriteLine(extractedText);
-// Close the stream
-tw.Close();
+using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+{
+    // Write a line of text to the file
+    tw.WriteLine(extractedText);
+}
 ```
 
 ## Extract text based on columns
@@ -175,10 +232,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 TextFragmentAbsorber tfa = new TextFragmentAbsorber();
-pdfDocument.Pages.Accept(tfa);
+document.Pages.Accept(tfa);
 TextFragmentCollection tfc = tfa.TextFragments;
 foreach (TextFragment tf in tfc)
 {
@@ -186,16 +243,14 @@ foreach (TextFragment tf in tfc)
     tf.TextState.FontSize = tf.TextState.FontSize * 0.7f;
 }
 Stream st = new MemoryStream();
-pdfDocument.Save(st);
-pdfDocument = new Document(st);
+document.Save(st);
+document = new Document(st);
 TextAbsorber textAbsorber = new TextAbsorber();
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
-textAbsorber.Visit(pdfDocument);
+textAbsorber.Visit(document);
 
-dataDir = dataDir + "ExtractColumnsText_out.txt";
-
-System.IO.File.WriteAllText(dataDir, extractedText);
+System.IO.File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
 ```
 
 ### Second approach - Using ScaleFactor
@@ -204,7 +259,7 @@ In this new release, we also have introduced several improvements in TextAbsorbe
 
 Specifying the ScaleFactor values between 0.1 and -0.1 is treated as zero value, but it makes the algorithm to calculate scale factor needed during extracting text automatically. The calculation is based on average glyph width of the most popular font on the page, but we cannot guarantee that in extracted text no string of column reaches the start of the next column. Please note that if ScaleFactor value is not specified, the default value of 1.0 will be used. It means no scaling will be carried out. If the specified ScaleFactor value is more than 10 or less than -0.1, the default value of 1.0 will be used.
 
-We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large number of PDF files for text content extraction. Or manually set redundant reducing of grid width ( about ScaleFactor = 0.5). However, you must not determine whether scaling is necessary for concrete documents or not. If You set redundant reducing of grid width for the document (that doesn't need in it), the extracted text content will remain fully adequate. Please take a look at the following code snippet.
+We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large number of PDF files for text content extraction. Or manually set redundant reducing of grid width (about ScaleFactor = 0.5). However, you must not determine whether scaling is necessary for concrete documents or not. If You set redundant reducing of grid width for the document (that doesn't need in it), the extracted text content will remain fully adequate. Please take a look at the following code snippet.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -214,16 +269,16 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "ExtractTextPage.pdf");
+Document document = new Document(dataDir + "ExtractTextPage.pdf");
 
 TextAbsorber textAbsorber = new TextAbsorber();
 textAbsorber.ExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
 // Setting scale factor to 0.5 is enough to split columns in the majority of documents
 // Setting of zero allows to algorithm choose scale factor automatically
 textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
-pdfDocument.Pages.Accept(textAbsorber);
+document.Pages.Accept(textAbsorber);
 String extractedText = textAbsorber.Text;
-System.IO.File.WriteAllText( dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
+System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
 ```
 
 {{% alert color="primary" %}}
@@ -242,9 +297,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document doc = new Document(dataDir + "ExtractHighlightedText.pdf");
+Document document = new Document(dataDir + "ExtractHighlightedText.pdf");
 // Loop through all the annotations
-foreach (Annotation annotation in doc.Pages[1].Annotations)
+foreach (Annotation annotation in document.Pages[1].Annotations)
 {
     // Filter TextMarkupAnnotation
     if (annotation is TextMarkupAnnotation)
@@ -275,12 +330,12 @@ string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 string inXml = "40014.xml";
 string outFile = "40014_out.pdf";
 
-Document doc = new Document();
-doc.BindXml(dataDir + inXml);
+Document document = new Document();
+document.BindXml(dataDir + inXml);
 
-Page page = (Page)doc.GetObjectById("mainSection");
+Page page = (Page)document.GetObjectById("mainSection");
 
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-doc.Save(dataDir + outFile);
+TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
+segment = (TextSegment)document.GetObjectById("strongHtml");
+document.Save(dataDir + outFile);
 ```

@@ -4,7 +4,7 @@ linktitle: Working with ZUGFeRD
 type: docs
 weight: 90
 url: /java/working-with-zugferd/
-description: Learn how to create ZUGFeRD-compliant PDF Invoices using Aspose.PDF for Java
+description: Learn how to work with ZUGFeRD invoices in Java using Aspose.PDF to manage electronic invoicing standards.
 lastmod: "2024-01-17"
 sitemap:
     changefreq: "monthly"

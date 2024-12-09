@@ -4,7 +4,7 @@ linktitle: Securing and signing in PDF
 type: docs
 weight: 150
 url: /php-java/securing-and-signing/
-description: This section describes the features of using a signature and securing your PDF document using Java.
+description: Learn how to apply security measures and digital signatures to PDF documents in PHP/Java with Aspose.PDF.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

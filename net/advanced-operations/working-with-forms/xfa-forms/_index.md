@@ -4,7 +4,7 @@ linktitle: XFA Forms
 type: docs
 weight: 20
 url: /net/xfa-forms/
-description: Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.PDF.Facades.
+description: Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.Pdf.Facades.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with XFA Forms",
-    "alternativeHeadline": "Fill, Convert and Get XFA Forms in PDF",
+    "alternativeHeadline": "Enhance PDF handling with XFA form support",
+    "abstract": "Aspose.PDF for .NET now offers advanced capabilities for working with XFA forms, allowing developers to fill, convert, and manage XFA Acroform fields within PDF documents. This feature simplifies the manipulation of dynamic forms, enabling seamless access to field values and properties while providing an efficient conversion from XFA to standard AcroForms. Enhance your PDF processing workflow with this robust solution for handling complex form structures",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, fill xfa form, get xfa form, convert xfa form",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "XFA Forms, Aspose.PDF for .NET, fill XFA form, convert XFA to Acroform, get XFA field properties, dynamic forms, XML Forms Architecture, manipulate XFA fields, AcroForm fields, PDF document generation",
+    "wordcount": "684",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,8 +72,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/xfa-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.PDF.Facades."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.Pdf.Facades."
 }
 </script>
 
@@ -96,17 +97,17 @@ The following code snippet shows you how to fill fields in XFA form.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load XFA form
-Document doc = new Document(dataDir + "FillXFAFields.pdf");
+Document document = new Document(dataDir + "FillXFAFields.pdf");
 
 // Get names of XFA form fields
-string[] names = doc.Form.XFA.FieldNames;
+string[] names = document.Form.XFA.FieldNames;
 
 // Set field values
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
-dataDir = dataDir + "Filled_XFA_out.pdf";
+document.Form.XFA[names[0]] = "Field 0";
+document.Form.XFA[names[1]] = "Field 1";
+
 // Save the updated document
-doc.Save(dataDir);
+document.Save(dataDir + "Filled_XFA_out.pdf");
 ```
 
 ## Convert XFA-to-Acroform
@@ -138,9 +139,8 @@ Document document = new Document(dataDir + "DynamicXFAToAcroForm.pdf");
 // Set the form fields type as standard AcroForm
 document.Form.Type = FormType.Standard;
 
-dataDir = dataDir + "Standard_AcroForm_out.pdf";
 // Save the resultant PDF
-document.Save(dataDir);
+document.Save(dataDir + "Standard_AcroForm_out.pdf");
 ```
 
 ## Get XFA field properties
@@ -153,23 +153,22 @@ To access field properties, first use Document.Form.XFA.Teamplate to access the 
 string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
 // Load XFA form
-Document doc = new Document(dataDir + "GetXFAProperties.pdf");
+Document document = new Document(dataDir + "GetXFAProperties.pdf");
 
-string[] names = doc.Form.XFA.FieldNames;
+string[] names = document.Form.XFA.FieldNames;
 
 // Set field values
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
+document.Form.XFA[names[0]] = "Field 0";
+document.Form.XFA[names[1]] = "Field 1";
 
 // Get field position
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
 
 // Get field position
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
 
-dataDir = dataDir + "Filled_XFA_out.pdf";
 // Save the updated document
-doc.Save(dataDir);
+document.Save(dataDir + "Filled_XFA_out.pdf");
 ```
 
 <script type="application/ld+json">

@@ -4,11 +4,77 @@ linktitle: Converting Documents with Microsoft Azure function
 type: docs
 weight: 20
 url: /net/converting-documents-with-microsoft-azure-function/
+description: Learn how to convert PDF documents using Microsoft Azure Functions with Aspose.PDF for .NET, enabling cloud-based document processing.
 lastmod: "2024-10-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Converting Documents with Microsoft Azure function",
+    "alternativeHeadline": "Integrate PDF Conversion with Microsoft Azure Functions",
+    "abstract": "The new document conversion feature powered by Microsoft Azure allows users to efficiently transform PDF files into various formats such as DOCX, HTML, and JPEG using Aspose.PDF for .NET and Azure Functions. This functionality enables seamless integration with Azure resources, ensuring quick and reliable file processing tailored for developers seeking to enhance their applications",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1256",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/converting-documents-with-microsoft-azure-function/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/converting-documents-with-microsoft-azure-function/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 This article provides detailed step-by-step instructions for converting PDF documents in Microsoft Azure using Aspose.PDF for .NET and Azure function.
 
@@ -74,9 +140,9 @@ npm install -g azure-functions-core-tools@4 --unsafe-perm true
 ```
 
 3. Install Azure CLI:
-- Windows: Download from Microsoft's website
-- macOS: `brew install azure-cli`
-- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+- Windows: Download from Microsoft's website.
+- macOS: `brew install azure-cli`.
+- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`.
 
 #### Configure Project
 
@@ -175,7 +241,7 @@ public class PdfConverter
         sourceStream.Position = 0;
 
         // Load PDF document
-        var pdfDocument = new Document(sourceStream);
+        var document = new Document(sourceStream);
         
         // Create output stream
         using var outputStream = new MemoryStream();
@@ -186,28 +252,28 @@ public class PdfConverter
         {
             case "docx":
                 targetBlobName += ".docx";
-                pdfDocument.Save(outputStream, SaveFormat.DocX);
+                document.Save(outputStream, SaveFormat.DocX);
                 break;
 
             case "html":
                 targetBlobName += ".html";
-                pdfDocument.Save(outputStream, SaveFormat.Html);
+                document.Save(outputStream, SaveFormat.Html);
                 break;
 
             case "xlsx":
                 targetBlobName += ".xlsx";
-                pdfDocument.Save(outputStream, SaveFormat.Excel);
+                document.Save(outputStream, SaveFormat.Excel);
                 break;
 
             case "pptx":
                 targetBlobName += ".pptx";
-                pdfDocument.Save(outputStream, SaveFormat.Pptx);
+                document.Save(outputStream, SaveFormat.Pptx);
                 break;
 
             case "jpeg":
             case "jpg":
                 targetBlobName += ".jpg";
-                foreach (var page in pdfDocument.Pages)
+                foreach (var page in document.Pages)
                 {
                     var jpegDevice = new JpegDevice(new Resolution(300));
                     jpegDevice.Process(page, outputStream);

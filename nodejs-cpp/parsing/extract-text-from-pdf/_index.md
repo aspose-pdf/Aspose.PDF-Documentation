@@ -1,19 +1,19 @@
 ---
-title: Extract Text from PDF in Node.js
-linktitle: Extract text from PDF
+title: Parse Text from PDF in Node.js
+linktitle: Parse text from PDF
 type: docs
 weight: 30
 url: /nodejs-cpp/extract-text-from-pdf/
-description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Node.js via C++. 
+description: This article describes various ways to parse text from PDF documents using Aspose.PDF for Node.js via C++. 
 lastmod: "2023-11-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-## Extract Text From PDF Document
+## Parse Text From PDF Document
 
-Extracting text from the PDF document is a very common and useful task. 
+Parsing text from the PDF document is a very common and useful task. 
 Extracting text from PDFs serves a variety of purposes, from improving search and availability to enabling analysis and automation of data in various fields such as business, research, and information management.
 
 In case you want to extract text from PDF document, you can use [AsposePdfExtractText](https://reference.aspose.com/pdf/nodejs-cpp/convert/asposepdfextracttext/) function. 

@@ -3,7 +3,7 @@ title: Extract Attachments from PDF File
 type: docs
 weight: 10
 url: /java/extract-attachments/
-description: This section explains about extracting attachments from pdf with PdfExtractor class.
+description: Learn how to extract attachments from a PDF file in Java with Aspose.PDF for managing document-related files.
 lastmod: "2021-06-05"
 draft: false
 ---

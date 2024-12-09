@@ -4,6 +4,7 @@ linktitle: Manipulate Tables
 type: docs
 weight: 40
 url: /net/manipulate-tables-in-existing-pdf/
+description: Learn how to work with tables in existing PDFs using Aspose.PDF for .NET, providing flexibility in document modification.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,21 +15,20 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Manipulate Tables in existing PDF",
-    "alternativeHeadline": "How to update Tables content in existing PDF",
+    "alternativeHeadline": "Enhance Table Editing in Existing PDF Documents",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature for manipulating existing PDF tables, allowing users to search, parse, and modify table content with ease. The new TableAbsorber class enables dynamic updates and replacements of tables directly within PDF documents, streamlining the process of managing tabular data in PDFs for enhanced functionality. Explore this innovative capability to optimize your PDF editing and data integration tasks",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, manipulate tables",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -70,8 +70,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-tables-in-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 
@@ -87,20 +87,21 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF file
-Document pdfDocument = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get access to first table on page, their first cell and text fragments in it
 TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
 
 // Change text of the first text fragment in the cell
 fragment.Text = "hi world";
-dataDir = dataDir + "ManipulateTable_out.pdf";
-pdfDocument.Save(dataDir);
+
+// Save file
+document.Save(dataDir + "ManipulateTable_out.pdf");
 ```
 
 ## Replace old Table with a new one in PDF document
@@ -113,13 +114,13 @@ In case you need to find a particular table and replace it with the desired one,
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
-Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+Document document = new Document(dataDir + @"Table_input2.pdf");
 
 // Create TableAbsorber object to find tables
 TableAbsorber absorber = new TableAbsorber();
 
 // Visit first page with absorber
-absorber.Visit(pdfDocument.Pages[1]);
+absorber.Visit(document.Pages[1]);
 
 // Get first table on the page
 AbsorbedTable table = absorber.TableList[0];
@@ -135,10 +136,10 @@ row.Cells.Add("Col 2");
 row.Cells.Add("Col 3");
 
 // Replace the table with new one
-absorber.Replace(pdfDocument.Pages[1], table, newTable);
+absorber.Replace(document.Pages[1], table, newTable);
 
 // Save document
-pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
+document.Save(dataDir + "TableReplaced_out.pdf");
 ```
 
 <script type="application/ld+json">

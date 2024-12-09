@@ -12,6 +12,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Open PDF document programmatically",
+    "alternativeHeadline": "Programmatically Open and Access Various PDF Documents with C#",
+    "abstract": "Discover opening PDF documents with the Aspose.PDF for .NET library. This feature allows developers to seamlessly access existing PDFs, load documents from streams, and handle encrypted files with ease, enhancing workflow efficiency and expanding the capabilities of PDF manipulation in C#",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "238",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/open-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/open-pdf-document/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -23,9 +88,9 @@ There are several ways to open a document. The easiest is to specify a file name
 public static void OpenDocument()
 {
     var fileName = @"C:\tmp\tourguidev2_gb_tags.pdf";
-    using (var pdfDocument = new Aspose.Pdf.Document(fileName))
+    using (var document = new Document(fileName))
     {
-        Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
+        Console.WriteLine($"Pages {document.Pages.Count}");
     }
 }
 ```
@@ -46,9 +111,9 @@ public static void OpenDocumentStream()
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    using (var pdfDocument = new Aspose.Pdf.Document(stream))
+    using (var document = new Document(stream))
     {
-        Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
+        Console.WriteLine($"Pages {document.Pages.Count}");
     }
 }
 ```
@@ -62,9 +127,9 @@ public static void OpenDocumentWithPassword()
     const string password = "Aspose2020";
     try
     {
-        using (var pdfDocument = new Aspose.Pdf.Document(fileName, password))
+        using (var document = new Document(fileName, password))
         {
-            Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
+            Console.WriteLine($"Pages {document.Pages.Count}");
         }
     }
     catch (InvalidPasswordException e)

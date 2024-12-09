@@ -4,7 +4,6 @@ linktitle: Split PDF files
 type: docs
 weight: 60
 url: /net/split-pdf-document/
-keywords: split pdf into multiple files, split pdf into separate pdfs, split pdf c#
 description: This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#.
 lastmod: "2022-02-17"
 sitemap:
@@ -19,21 +18,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Split PDF programmatically",
-    "alternativeHeadline": "How to split PDF with .NET",
+    "alternativeHeadline": "Effortlessly split PDF into individual files with C#",
+    "abstract": "Allows developers to programmatically split PDF documents into individual files using C#. This feature simplifies the management of PDF content by enabling the extraction of distinct pages into separate PDF files within .NET applications, enhancing workflow efficiency and document handling capabilities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, split pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "326",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -75,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/split-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This topic shows how to split PDF pages into individual PDF files in your .NET applications with C#."
 }
 </script>
@@ -88,13 +87,13 @@ aliases:
 
 This topic shows how to split PDF pages into individual PDF files in your .NET applications. To split PDF pages into single page PDF files using C#, the following steps can be followed:
 
-1. Loop through the pages of PDF document through the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object's [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection
-1. For each iteration, create a new Document object and add the individual [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object into the empty document
-1. Save the new PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method
+1. Loop through the pages of PDF document through the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object's [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) collection.
+1. For each iteration, create a new Document object and add the individual [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object into the empty document.
+1. Save the new PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-## Split PDF into multiple files or separate pdfs in C#
+## Split PDF into multiple files or separate pdfs
 
 The following C# code snippet shows you how to split PDF pages into individual PDF files.
 
@@ -104,12 +103,12 @@ The following C# code snippet shows you how to split PDF pages into individual P
 string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SplitToPages.pdf");
+Document document = new Document(dataDir + "SplitToPages.pdf");
 
 int pageCount = 1;
 
 // Loop through all the pages
-foreach (Page pdfPage in pdfDocument.Pages)
+foreach (Page pdfPage in document.Pages)
 {
     Document newDocument = new Document();
     newDocument.Pages.Add(pdfPage);

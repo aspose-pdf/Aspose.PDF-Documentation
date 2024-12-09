@@ -9,6 +9,71 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "DNN PDF Import Module",
+    "alternativeHeadline": "Effortless PDF Content Import for DotNetNuke",
+    "abstract": "The DNN PDF Import Module leverages Aspose.PDF for .NET technology to seamlessly extract and display content from PDF documents directly within DotNetNuke, eliminating the need for additional software like Adobe Acrobat. This innovative module simplifies the document import process with an intuitive interface, allowing users to easily browse files and import PDF content to their web pages",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "878",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/dnn-pdf-import-module/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/dnn-pdf-import-module/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Introduction
 
@@ -24,7 +89,7 @@ This module demonstrates the powerful import feature provided by [Aspose.PDF](ht
 
 In order to setup Aspose .NET Pdf Import for DNN Module you need to have the following requirements met:
 
-- DNN 7.0 +
+- DNN 7.0+.
 
 Please feel free to contact us if you wish to install this module on other versions of DNN.
 
@@ -32,7 +97,7 @@ Please feel free to contact us if you wish to install this module on other versi
 
 Aspose .NET Pdf Import for DNN Module currently supports
 
-- DNN 7.0 +
+- DNN 7.0+.
 
 Please feel free to contact us if you wish to install this module on other versions of DNN.
 
@@ -40,9 +105,9 @@ Please feel free to contact us if you wish to install this module on other versi
 
 You can download Aspose .NET Pdf Import for DNN from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_DNN/releases)
-- [Sourceforge](https://sourceforge.net/projects/asposednn/files/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-dnn/downloads)
+- [Github](https://github.com/asposemarketplace/Aspose_for_DNN/releases).
+- [Sourceforge](https://sourceforge.net/projects/asposednn/files/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-dnn/downloads).
 
 ## Installing
 
@@ -62,9 +127,9 @@ Please check [this module installation video](http://www.dnnsoftware.com/communi
 
 After you have installed Aspose .NET PDF Import for the DNN module it is really simple to start using it on your website. Please follow these simple steps to get started
 
-1. Make sure you are logged-in to DNN as Host or Admin level account
-1. Navigate to the page where you want to add the Import module
-1. Select **Modules** -> **Add New Module** from the top Ribbon
+1. Make sure you are logged-in to DNN as Host or Admin level account.
+1. Navigate to the page where you want to add the Import module.
+1. Select **Modules** -> **Add New Module** from the top Ribbon.
 
 1. From the list select **Aspose .NET PDF Import for DNN** and drag it to a place of your choice on the page.
 
@@ -84,9 +149,9 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to Aspose .NET Pdf Import for DNN Module using any of the following platforms
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_DNN/issues)
-- [Sourceforge](https://sourceforge.net/p/asposednn/tickets/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-dnn/issues?status=new&status=open)
+- [Github](https://github.com/asposemarketplace/Aspose_for_DNN/issues).
+- [Sourceforge](https://sourceforge.net/p/asposednn/tickets/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-dnn/issues?status=new&status=open).
 
 ### Extend and Contribute
 
@@ -96,19 +161,19 @@ Aspose .NET PDF Import for DNN is open source and its source code is available o
 
 You can get the latest source code from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_DNN)
-- [Sourceforge](https://sourceforge.net/p/asposednn/code/ci/master/tree/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-dnn/src)
+- [Github](https://github.com/asposemarketplace/Aspose_for_DNN).
+- [Sourceforge](https://sourceforge.net/p/asposednn/code/ci/master/tree/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-dnn/src).
 
 #### How to configure the source code
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010 or higher
-- [DNN Development Template](https://docs.aspose.com/total/net/aspose-dnn-module-development-template/#downloading)
+- Visual Studio 2010 or higher.
+- [DNN Development Template](https://docs.aspose.com/total/net/aspose-dnn-module-development-template/#downloading).
 
 Please follow these simple steps to get started
 
 1. Download/Clone the source code.
-1. Open Visual Studio 2010 and Choose **File** > **Open Project**
-1. Browse to the latest source code that you have downloaded and open **AsposeDNNPdfImport.csproj**
+1. Open Visual Studio 2010 and Choose **File** > **Open Project**.
+1. Browse to the latest source code that you have downloaded and open **AsposeDNNPdfImport.csproj**.

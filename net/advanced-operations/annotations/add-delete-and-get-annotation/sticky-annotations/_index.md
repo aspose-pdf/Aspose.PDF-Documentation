@@ -4,7 +4,7 @@ linktitle: Sticky Annotation
 type: docs
 weight: 50
 url: /net/sticky-annotations/
-description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text.
+description: Learn how to create sticky annotations, such as notes and highlights, in PDFs using Aspose.PDF in .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF sticky Annotations using C#",
-    "alternativeHeadline": "How to add Sticky Annotations in PDF",
+    "alternativeHeadline": "Add Sticky Watermark Annotations to PDF with C#",
+    "abstract": "Introducing the new PDF Sticky Annotations feature in C#, which allows users to create and customize watermark annotations directly within PDF documents. This functionality supports setting specific text positions, controlling opacity, and efficiently reusing images, enhancing the overall document presentation while optimizing file sizes",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, sticky annotations, watermark annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF sticky annotations, C# sticky annotations, Watermark Annotation, Aspose.PDF.Drawing, PDF document generation, opacity property, XImageCollection, optimize PDF size",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sticky-annotations/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This topic about sticky annotations, as an example we shows the Watermark Annotation in the text."
 }
 </script>
@@ -88,21 +89,21 @@ Please check the following code snippet to add WatermarkAnnotation.
 
 ```csharp
  //Load a Document
-Aspose.PDF.Document doc = new Aspose.PDF.Document("source.pdf");
+Document document = new Document("source.pdf");
 
 //Load Page object to add Annotation
-Page page = doc.Pages[1];
+Page page = document.Pages[1];
 
 //Create Annotation
-WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.PDF.Rectangle(100, 500, 400, 600));
+WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
 
 //Add annotaiton into Annotation collection of Page
 page.Annotations.Add(wa);
 
 //Create TextState for Font settings
-Aspose.PDF.Text.TextState ts = new Aspose.PDF.Text.TextState();
+Text.TextState ts = new Text.TextState();
 
-ts.ForegroundColor = Aspose.PDF.Color.Blue;
+ts.ForegroundColor = Aspose.Pdf.Color.Blue;
 ts.Font = FontRepository.FindFont("Times New Roman");
 
 ts.FontSize = 32;
@@ -115,7 +116,7 @@ wa.Opacity = 0.5;
 wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
 //Save the Document
-doc.Save("Output.pdf");
+document.Save("Output.pdf");
 ```
 
 ## Add Reference of a single Image multiple times in a PDF Document
@@ -123,9 +124,9 @@ doc.Save("Output.pdf");
 Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
 
 ```csharp
- Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
+Aspose.Pdf.Rectangle imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
 
-using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+using (Document document = new Document("input.pdf"))
 {
     using (var imageStream = File.Open("icon.png", FileMode.Open))
     {
@@ -146,11 +147,11 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
                 name = form.Resources.Images.Add(image);
             }
             form.Contents.Add(new Operator.GSave());
-            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
             form.Contents.Add(new Operator.Do(name));
             form.Contents.Add(new Operator.GRestore());
             page.Annotations.Add(annotation, false);
-            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+            imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
         }
     }
     document.Save("output.pdf");

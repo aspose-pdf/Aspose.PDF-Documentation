@@ -18,21 +18,22 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Attachments in PDF",
-    "alternativeHeadline": "Attachments in PDF file",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "Discover how to efficiently manage attachments in PDF files using the powerful C# PDF API. This feature allows developers to access, add, and remove various file types attached to PDFs, complete with detailed C# code samples for seamless integration into applications. Enhance your PDF manipulation capabilities by leveraging this comprehensive guide",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, attachments in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -74,7 +75,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Use C# PDF API to access, add and remove attachments in PDF files using C# from within your applications. Complete guide with C# code samples."
 }
 </script>

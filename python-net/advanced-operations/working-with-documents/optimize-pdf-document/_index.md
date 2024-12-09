@@ -4,8 +4,7 @@ linktitle: Optimize PDF
 type: docs
 weight: 30
 url: /python-net/optimize-pdf/
-keywords: "optimize pdf python"
-description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with Python.
+description: Learn how to optimize PDF documents in Python for improved web performance and reduced file size using Aspose.PDF.
 lastmod: "2023-04-17"
 sitemap:
     changefreq: "monthly"

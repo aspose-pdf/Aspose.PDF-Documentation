@@ -3,6 +3,7 @@ title: Working with Pages in Python via Java
 type: docs
 weight: 30
 url: /python-java/working-with-pages-in-python/
+description: Explore how to add, remove, and reorder pages in PDF documents using Aspose.PDF for Python.
 lastmod: "2021-06-05"
 ---
 

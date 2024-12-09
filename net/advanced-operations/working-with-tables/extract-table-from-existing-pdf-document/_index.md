@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract Table from PDF Document",
-    "alternativeHeadline": "How to extract Table from PDF File",
+    "alternativeHeadline": "Extract Tables Easily from PDF Files with .NET",
+    "abstract": "Aspose.PDF for .NET introduces the capability to extract tables from PDF documents, streamlining data manipulation and enhancing productivity for developers. This feature allows users to efficiently access and manage tabular data within PDFs, making it an essential tool for applications requiring data extraction and processing",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, extract table",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "837",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-table-from-existing-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document."
 }
 </script>
@@ -84,8 +84,8 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 public static void Extract_Table()
 {
     // Load source PDF document
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");           
-    foreach (var page in pdfDocument.Pages)
+    Document document = new Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");           
+    foreach (var page in document.Pages)
     {
         Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
         absorber.Visit(page);
@@ -122,15 +122,15 @@ The page borders are path drawing operations. Therefore the Pdf->Html processing
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-Document doc = new Document(dataDir + "input.pdf");
+Document document = new Document(dataDir + "input.pdf");
 
 Stack graphicsState = new Stack();
-System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap((int)doc.Pages[1].PageInfo.Width, (int)doc.Pages[1].PageInfo.Height);
+System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap((int)document.Pages[1].PageInfo.Width, (int)document.Pages[1].PageInfo.Height);
 System.Drawing.Drawing2D.GraphicsPath graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
 // Default ctm matrix value is 1,0,0,1,0,0
 System.Drawing.Drawing2D.Matrix lastCTM = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, 0);
 // System.Drawing coordinate system is top left based, while pdf coordinate system is low left based, so we have to apply the inversion matrix
-System.Drawing.Drawing2D.Matrix inversionMatrix = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, (float)doc.Pages[1].PageInfo.Height);
+System.Drawing.Drawing2D.Matrix inversionMatrix = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, (float)document.Pages[1].PageInfo.Height);
 System.Drawing.PointF lastPoint = new System.Drawing.PointF(0, 0);
 System.Drawing.Color fillColor = System.Drawing.Color.FromArgb(0, 0, 0);
 System.Drawing.Color strokeColor = System.Drawing.Color.FromArgb(0, 0, 0);
@@ -141,20 +141,20 @@ using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
     graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
 
     // Process all the contents commands
-    foreach (Operator op in doc.Pages[1].Contents)
+    foreach (Operator op in document.Pages[1].Contents)
     {
-        Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-        Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-        Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-        Aspose.Pdf.Operators.MoveTo opMoveTo = op as Aspose.Pdf.Operators.MoveTo;
-        Aspose.Pdf.Operators.LineTo opLineTo = op as Aspose.Pdf.Operators.LineTo;
-        Aspose.Pdf.Operators.Re opRe = op as Aspose.Pdf.Operators.Re;
-        Aspose.Pdf.Operators.EndPath opEndPath = op as Aspose.Pdf.Operators.EndPath;
-        Aspose.Pdf.Operators.Stroke opStroke = op as Aspose.Pdf.Operators.Stroke;
-        Aspose.Pdf.Operators.Fill opFill = op as Aspose.Pdf.Operators.Fill;
-        Aspose.Pdf.Operators.EOFill opEOFill = op as Aspose.Pdf.Operators.EOFill;
-        Aspose.Pdf.Operators.SetRGBColor opRGBFillColor = op as Aspose.Pdf.Operators.SetRGBColor;
-        Aspose.Pdf.Operators.SetRGBColorStroke opRGBStrokeColor = op as Aspose.Pdf.Operators.SetRGBColorStroke;
+        Operators.GSave opSaveState = op as Operators.GSave;
+        Operators.GRestore opRestoreState = op as Operators.GRestore;
+        Operators.ConcatenateMatrix opCtm = op as Operators.ConcatenateMatrix;
+        Operators.MoveTo opMoveTo = op as Operators.MoveTo;
+        Operators.LineTo opLineTo = op as Operators.LineTo;
+        Operators.Re opRe = op as Operators.Re;
+        Operators.EndPath opEndPath = op as Operators.EndPath;
+        Operators.Stroke opStroke = op as Operators.Stroke;
+        Operators.Fill opFill = op as Operators.Fill;
+        Operators.EOFill opEOFill = op as Operators.EOFill;
+        Operators.SetRGBColor opRGBFillColor = op as Operators.SetRGBColor;
+        Operators.SetRGBColorStroke opRGBStrokeColor = op as Operators.SetRGBColorStroke;
 
         if (opSaveState != null)
         {
@@ -235,8 +235,8 @@ using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
         }
     }
 }
-dataDir = dataDir + "ExtractBorder_out.png";
-bitmap.Save(dataDir, ImageFormat.Png);
+
+bitmap.Save(dataDir + "ExtractBorder_out.png", ImageFormat.Png);
 ```
 
 <script type="application/ld+json">

@@ -4,7 +4,7 @@ linktitle: Search and Get Images
 type: docs
 weight: 60
 url: /cpp/search-and-get-images-from-pdf-document/
-description: This section explain how to search and get images from PDF document with Aspose.PDF library.
+description: Explore how to extract and search for images within PDF files in .NET using Aspose.PDF for media extraction.
 lastmod: "2021-12-18"
 ---
 

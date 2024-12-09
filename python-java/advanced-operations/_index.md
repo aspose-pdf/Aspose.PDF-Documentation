@@ -76,11 +76,11 @@ sitemap:
 }
 </script>
 
-**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/python-java/basic-operations/), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
+**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
 
 You'll learn different ways to:
 
 - [Working with Documents](/pdf/python-java/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document.
-- [Working with Pages](/pdf/python-java/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
-- [Working with Forms](/pdf/python-java/working-with-forms/) - deal with interact PDF documents, add formfields, extract data.
+- [Working with Pages](/pdf/python-java/working-with-pages-in-python/) - add, move or remove, crop pages, add watermarks, stamps, and etc.
+- [Working with Forms](/pdf/python-java/forms/) - deal with interact PDF documents, add formfields, extract data.
 - [Working with Text](/pdf/python-java/working-with-text/) - add, format, search and replace text in PDF.

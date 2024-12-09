@@ -5,12 +5,76 @@ type: docs
 weight: 70
 url: /net/converting/
 lastmod: "2021-11-01"
-keywords: convert pdf c#
 description: This section contains articles relating to convert PDF documents in different formats using C# or .NET using PDF file format API.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF documents using C# API",
+    "alternativeHeadline": "Effortless PDF Conversion with C#",
+    "abstract": "Aspose.PDF for .NET library simplifies the process of converting PDF documents into various formats and vice versa, enhancing document accessibility and editability. With comprehensive support for popular file types, users can easily transform PDF files to Microsoft Word, Excel, PowerPoint, and more, making it an essential tool for efficient document management. Experience seamless conversion capabilities and high-quality results with this robust C# API",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "864",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/converting/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/converting/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 One of the most popular and necessary tasks in working with pdf documents is saving these files in one format or another, that is, converting. Document conversion is the conversion of file types from one file format to another as you need it. You can convert a large number of documents at once or one.
 

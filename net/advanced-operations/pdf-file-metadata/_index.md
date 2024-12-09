@@ -4,7 +4,7 @@ linktitle: PDF File Metadata
 type: docs
 weight: 200
 url: /net/pdf-file-metadata/
-description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
+description: Explore how to extract and manage PDF metadata, such as author and title, in .NET using Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +14,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Working with PDF File Metadata | C#",
-    "alternativeHeadline": "How to get PDF File Metadata",
+    "headline": "Working with PDF File Metadata in C#",
+    "alternativeHeadline": "Extracting and Managing PDF Metadata in C#",
+    "abstract": "Unlock the power of PDF file management with our new feature for C# developers, enabling seamless access to PDF file metadata. Gain insights into file properties, extract XMP metadata, and easily update document information, streamlining your document handling process. Experience enhanced functionality for maintaining and manipulating PDF metadata efficiently",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf file metadata",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF file metadata, C# PDF manipulation, get PDF file information, set PDF file information, XMP metadata, Aspose.PDF for .NET, document properties, PDF metadata management",
+    "wordcount": "834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-file-metadata/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information."
 }
 </script>
@@ -88,9 +89,9 @@ In order to get file specific information of a PDF file, you first need to get t
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetFileInfo.pdf");
+Document document = new Document(dataDir + "GetFileInfo.pdf");
 // Get document information
-DocumentInfo docInfo = pdfDocument.Info;
+DocumentInfo docInfo = document.Info;
 // Show document information
 Console.WriteLine("Author: {0}", docInfo.Author);
 Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
@@ -122,10 +123,10 @@ The following code snippet shows you how to set PDF file information.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetFileInfo.pdf");
+Document document = new Document(dataDir + "SetFileInfo.pdf");
 
 // Specify document information
-DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+DocumentInfo docInfo = new DocumentInfo(document);
 
 docInfo.Author = "Aspose";
 docInfo.CreationDate = DateTime.Now;
@@ -134,9 +135,8 @@ docInfo.ModDate = DateTime.Now;
 docInfo.Subject = "PDF Information";
 docInfo.Title = "Setting PDF Document Information";
 
-dataDir = dataDir + "SetFileInfo_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "SetFileInfo_out.pdf");
 ```
 
 ## Get XMP Metadata from PDF File
@@ -154,12 +154,12 @@ The following code snippet shows you how to get metadata from the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "GetXMPMetadata.pdf");
+Document document = new Document(dataDir + "GetXMPMetadata.pdf");
 
 // Get properties
-Console.WriteLine(pdfDocument.Metadata["xmp:CreateDate"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:Nickname"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:CustomProperty"]);
+Console.WriteLine(document.Metadata["xmp:CreateDate"]);
+Console.WriteLine(document.Metadata["xmp:Nickname"]);
+Console.WriteLine(document.Metadata["xmp:CustomProperty"]);
 ```
 
 ## Set XMP Metadata in a PDF File
@@ -178,16 +178,15 @@ The following code snippet shows you how to set metadata in a PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
+Document document = new Document(dataDir + "SetXMPMetadata.pdf");
 
 // Set properties
-pdfDocument.Metadata["xmp:CreateDate"] = DateTime.Now;
-pdfDocument.Metadata["xmp:Nickname"] = "Nickname";
-pdfDocument.Metadata["xmp:CustomProperty"] = "Custom Value";
+document.Metadata["xmp:CreateDate"] = DateTime.Now;
+document.Metadata["xmp:Nickname"] = "Nickname";
+document.Metadata["xmp:CustomProperty"] = "Custom Value";
 
-dataDir = dataDir + "SetXMPMetadata_out.pdf";
 // Save document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "SetXMPMetadata_out.pdf");
 ```
 
 ## Insert Metadata with Prefix
@@ -200,13 +199,12 @@ Some developers need to create a new metadata namespace with a prefix. The follo
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 // Open document
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
-pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
-pdfDocument.Metadata["xmp:ModifyDate"] = DateTime.Now;
+Document document = new Document(dataDir + "SetXMPMetadata.pdf");
+document.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
+document.Metadata["xmp:ModifyDate"] = DateTime.Now;
 
-dataDir = dataDir + "SetPrefixMetadata_out.pdf";
 // Save document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "SetPrefixMetadata_out.pdf");
 ```
 
 <script type="application/ld+json">

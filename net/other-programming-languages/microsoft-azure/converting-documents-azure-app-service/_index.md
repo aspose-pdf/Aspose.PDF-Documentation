@@ -4,11 +4,77 @@ linktitle: Converting Documents with Microsoft Azure App service
 type: docs
 weight: 10
 url: /net/converting-documents-with-microsoft-azure-app-service/
+description: Find out how to convert PDF documents with Microsoft Azure App Service and Aspose.PDF for .NET, optimizing document workflows in the cloud.
 lastmod: "2024-10-25"
 sitemap:
     changefreq: "weekly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Converting Documents with Microsoft Azure App service",
+    "alternativeHeadline": "Convert PDF Documents with Azure App Service Easily",
+    "abstract": "Unlock the power of document conversion with the new feature that allows users to seamlessly convert PDF files into various formats, including DOCX, HTML, JPG, and PNG, using Microsoft Azure App Service. This feature leverages Aspose.PDF for .NET, providing a robust and efficient solution for handling document transformations within cloud applications. Enhance your workflow by integrating this conversion capability into your Azure projects today",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1042",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/converting-documents-with-microsoft-azure-app-service/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/converting-documents-with-microsoft-azure-app-service/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 This article provides detailed step-by-step instructions for converting PDF documents in Microsoft Azure using Aspose.PDF for .NET and Azure App service.
 
@@ -24,10 +90,10 @@ This article provides detailed step-by-step instructions for converting PDF docu
 ### Create App Service
 
 1. Go to Azure Portal (https://portal.azure.com).
-2. Create a new Resource Group
+2. Create a new Resource Group.
 3. Create a new App Service:
-   - Choose .NET 6 (LTS) runtime
-   - Select appropriate pricing tier
+   - Choose .NET 6 (LTS) runtime.
+   - Select appropriate pricing tier.
 4. Create an Application Insights resource for logging.
 
 ## Create Project
@@ -52,9 +118,9 @@ code --install-extension ms-azuretools.vscode-azureappservice
 ```
 
 2. Install Azure CLI:
-- Windows: Download from Microsoft's website
-- macOS: `brew install azure-cli`
-- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`
+- Windows: Download from Microsoft's website.
+- macOS: `brew install azure-cli`.
+- Linux: `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`.
 
 #### Configure Project
 
@@ -136,9 +202,9 @@ license.SetLicense("Aspose.PDF.lic");
 ### Create code
 
 In Visual Studio:
-1. Right-click on Controllers folder
-2. Add → New Item → API Controller - Empty
-3. Name your file "PdfController.cs"
+1. Right-click on Controllers folder.
+2. Add → New Item → API Controller - Empty.
+3. Name your file "PdfController.cs".
 
 ```csharp
 // PdfController.cs
@@ -275,13 +341,13 @@ Replace `Your-Connection-StringG` with your actual connection string from Azure 
 ## Test Locally
 
 In Visual Studio:
-1. Press F5 to run the application
-2. Swagger UI will open
+1. Press F5 to run the application.
+2. Swagger UI will open.
 3. Test the /api/pdf/convert endpoint:
-   - Click "Try it out"
-   - Upload a PDF file
-   - Select output format
-   - Execute and verify the conversion
+   - Click "Try it out".
+   - Upload a PDF file.
+   - Select output format.
+   - Execute and verify the conversion.
 
 In Visual Studio Code:
 ```bash
@@ -295,12 +361,12 @@ curl -X POST "https://localhost:5001/api/pdf/convert?outputFormat=docx" \
 ## Deploy to Azure
 
 In Visual Studio:
-1. Right-click on the project
-2. Select "Publish"
-3. Choose "Azure" as target
-4. Select "Azure App Service (Windows)"
-5. Select your subscription and App Service
-6. Click "Publish"
+1. Right-click on the project.
+2. Select "Publish".
+3. Choose "Azure" as target.
+4. Select "Azure App Service (Windows)".
+5. Select your subscription and App Service.
+6. Click "Publish".
 
 In Visual Studio Code:
 ```bash
@@ -320,8 +386,8 @@ az webapp deploy \
 
 ## Configure Azure App Service
 
-1. Go to Azure Portal
-2. Open your App Service
+1. Go to Azure Portal.
+2. Open your App Service.
 3. Configure settings:
    ```
    App Settings:

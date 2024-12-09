@@ -2,7 +2,7 @@
 title: Basics of Aspose.PDF DOM API
 linktitle: Basics of DOM API
 type: docs
-weight: 140
+weight: 130
 url: /net/basics-of-dom-api/
 description: Aspose.PDF for .NET also uses the idea of DOM to represent the structure of a PDF document in terms of objects. 
 lastmod: "2021-06-05"
@@ -10,6 +10,71 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Basics of Aspose.PDF DOM API",
+    "alternativeHeadline": "Enhanced PDF Manipulation with Aspose.PDF DOM API in C#",
+    "abstract": "The new Aspose.PDF for .NET DOM API provides a robust object-oriented approach to manipulate PDF documents by representing their structure as a hierarchical tree. This feature allows developers to easily access, update, and export PDF elements while enhancing flexibility and control over document manipulation through an intuitive programming interface",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "891",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/basics-of-dom-api/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/basics-of-dom-api/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Introduction to the DOM API
 
@@ -33,12 +98,12 @@ As the structure of a PDF file is hierarchical, Aspose.PDF for .NET also accesse
 
 The Document object is at the root level of the object model. The Aspose.PDF for .NET DOM API allows you to create a Document object and then access all other objects in the hierarchy. You can either access any of the collections like Pages or individual element like Page etc. The DOM API provides single entry and exit points to manipulate the PDF document as shown below:
 
-- Open PDF document
-- Access PDF document structure in DOM style
-- Update data in the PDF document
-- Validate PDF document
-- Export PDF document into different formats
-- Finally, save the updated PDF document
+- Open PDF document.
+- Access PDF document structure in DOM style.
+- Update data in the PDF document.
+- Validate PDF document.
+- Export PDF document into different formats.
+- Finally, save the updated PDF document.
 
 ## How to Use New Aspose.PDF for .NET API
 
@@ -46,8 +111,9 @@ This topic will explain the new Aspose.PDF for .NET API and guide you to get sta
 
 The Aspose.PDF for .NET is composed of two parts:
 
-- Aspose.PDF for .NET DOM API
-- Aspose.PDF.Facades (old Aspose.PDF.Kit for .NET)
+- Aspose.PDF for .NET DOM API.
+- Aspose.Pdf.Facades (old Aspose.PDF.Kit for .NET).
+
 You'll find the details of each of these areas below.
 
 ### Aspose.PDF for .NET DOM API
@@ -78,10 +144,10 @@ Annotations are a part of a PDF document's interactive features. We have dedicat
 
 This namespace contains classes that help you work with PDF forms and form fields, for example Form, Field, TextBoxField and OptionCollection etc.
 
-#### Aspose.PDF.Devices
+#### Aspose.Pdf.Devices
 
 We can perform various operations on the PDF documents such as converting PDF document to various image formats. However, such operations do not belong to the Document object and we cannot extend the Document class for such operations. That's why we have introduced the concept of the Device in the new DOM API.
 
-##### Aspose.PDF.Facades
+#### Aspose.Pdf.Facades
 
-Previous to Aspose.PDF for .NET t.o.o, you needed Aspose.PDF.Kit for .NET to manipulate existing PDF files. To execute old Aspose.PDF.Kit code, can use Aspose.PDF.Facades namespace.
+Previous to Aspose.PDF for .NET, you needed Aspose.PDF.Kit for .NET to manipulate existing PDF files. To execute old Aspose.PDF.Kit code, can use Aspose.PDF.Facades namespace.

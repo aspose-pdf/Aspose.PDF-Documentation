@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/convert-html-to-pdf/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert HTML and MHTML formats to PDF file.
+description: Explore how to convert HTML content into PDF format using Aspose.PDF in Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

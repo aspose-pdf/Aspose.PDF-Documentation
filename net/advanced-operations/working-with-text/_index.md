@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Text in PDF using C#",
-    "alternativeHeadline": "Add, Rotate, Search, and Delete Text in PDF File",
+    "alternativeHeadline": "Enhanced Text Manipulation Features in PDF with C#",
+    "abstract": "Discover powerful text manipulation capabilities in PDFs using Aspose.PDF for .NET. This feature allows users to seamlessly add, replace, rotate, and format text within PDF documents, enhancing document interactivity and customization. Empower your applications with efficient search functionalities and flexible text handling techniques tailored for C# developers",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add text, search text, delete text, manipulate text in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF manipulation, add text to PDF, rotate text in PDF, search text in PDF, replace text in PDF, text formatting inside PDF, Aspose.PDF for .NET, text handling techniques, PDF document generation, Floating Box tool",
+    "wordcount": "371",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-text/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and C#."
 }
 </script>
@@ -81,9 +82,10 @@ sitemap:
  You are able to do the following:
 
 - [Add Text to PDF file](/pdf/net/add-text-to-pdf-file/) - add text to your PDF, use fonts from strem and files, add HTML string, add a hyperlink, etc.
-- [PDF Tooltip](/pdf/net/pdf-tooltip/) -  you may add a tooltip to searched text by adding an invisible button using C#.
+- [PDF Tooltip](/pdf/net/pdf-tooltip/) - you may add a tooltip to searched text by adding an invisible button using C#.
 - [Text Formatting inside PDF](/pdf/net/text-formatting-inside-pdf/) - Many features you can add to your document when formatting the text inside it. Add line indent, add text border, add underline text, add newline feed with Aspose.PDF library.
-- [Replace Text in PDF](/pdf/net/replace-text-in-pdf/) -  to replace text in all the pages of a PDF document. You first need to use TextFragmentAbsorber.
+- [Using FloatingBox](/pdf/net/floating-box/) - the Floating Box tool is a special tool for placing text and other content on a PDF page.
+- [Replace Text in PDF](/pdf/net/replace-text-in-pdf/) - to replace text in all the pages of a PDF document. You first need to use TextFragmentAbsorber.
 - [Rotate Text Inside PDF](/pdf/net/rotate-text-inside-pdf/) - rotate text inside PDF using rotation property of TextFragment Class.
 - [Search and Get Text from Pages of PDF Document](/pdf/net/search-and-get-text-from-pdf/) - you can use TextFragmentAbsorber class for searching and getting a text from pages.
 - [Determine Line Break](/pdf/net/determine-line-break/) - this topic explains how to track line breaking of multi-kine text fragments.

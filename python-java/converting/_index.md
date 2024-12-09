@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /python-java/converting/
 lastmod: "2023-04-06"
-description: This section contains articles relating to converting PDF documents into different formats and vice versa using Python API.
+description: Explore how to convert PDF documents into various formats in Python (Java) using Aspose.PDF for greater flexibility.
 aliases:
     - /python-java/conversion/
 sitemap:
@@ -26,7 +26,6 @@ After learning the code examples, you will understand that the Aspose.PDF for Py
 Aspose.PDF supports the largest number of popular document formats, both for loading and saving.
 
 Draw your attention that the current section describes only popular conversions.
-For a complete list of supported formats, see the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/python-java/supported-file-formats/).
 
 Aspose.PDF for Python via .NET allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app. Learn the sections of converting documents with code snippets.
 

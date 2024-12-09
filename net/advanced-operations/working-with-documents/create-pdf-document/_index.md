@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "How to Create PDF using C#",
-    "alternativeHeadline": "Create PDF document from scratch",
+    "alternativeHeadline": "Create and Format PDFs Effortlessly with C#",
+    "abstract": "The new functionality in Aspose.PDF for .NET empowers developers to effortlessly create and format PDF documents using C#. With this intuitive API, users can generate searchable PDFs, manipulate tagged content for accessibility, and seamlessly integrate PDF generation into various .NET applications, enhancing productivity and streamlining workflows",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, dotnet, create pdf document",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF creation, C# PDF generation, Aspose.PDF for .NET, searchable PDF, accessible PDF, Document class, TextFragment, PDF document manipulation, .NET applications, BDC operations",
+    "wordcount": "871",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-pdf-document/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Create and format the PDF Document with Aspose.PDF for .NET."
 }
 </script>
@@ -88,10 +89,10 @@ Aspose.PDF for .NET API lets you create and read PDF files using C# and VB.NET. 
 
 To create a PDF file using C#, the following steps can be used.
 
-1. Create an object of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class
-1. Add a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object to the [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) collection of the Document object
-1. Add [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) to [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) collection of the page
-1. Save the resultant PDF document
+1. Create an object of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
+1. Add a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object to the [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) collection of the Document object.
+1. Add [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) to [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) collection of the page.
+1. Save the resultant PDF document.
 
 ```csharp
 // The path to the documents directory.
@@ -102,7 +103,7 @@ Document document = new Document();
 // Add page
 Page page = document.Pages.Add();
 // Add text to new page
-page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+page.Paragraphs.Add(new TextFragment("Hello World!"));
 // Save updated PDF
 document.Save(dataDir + "HelloWorld_out.pdf");
 ```
@@ -116,71 +117,64 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-using System;
-
-namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
+using (Document document = new Document(file))
 {
-    class ExampleCreateDocument
+    bool convertResult = false;
+    try
     {
-        private const string _dataDir = "C:\\Samples";
-        public static void CreateSearchableDocuments(string file)
+        convertResult = document.Convert(CallBackGetHocr);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    document.Save(file);
+}
+
+static string CallBackGetHocr(System.Drawing.Image img)
+{
+    string tmpFile = System.IO.Path.GetTempFileName();
+    try
+    {
+        System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
+
+        bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
+        string inputFile = string.Concat('"', tmpFile, '"');
+        string outputFile = string.Concat('"', tmpFile, '"');
+        string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
+        string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
+
+        System.Diagnostics.ProcessStartInfo psi =
+            new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
+            {
+                UseShellExecute = true,
+                CreateNoWindow = true,
+                WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
+                WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
+            };
+
+        System.Diagnostics.Process p = new System.Diagnostics.Process
         {
-            Aspose.Pdf.Document doc = new Aspose.Pdf.Document(file);
-            bool convertResult = false;
-            try
-            {
-                convertResult = doc.Convert(CallBackGetHocr);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            doc.Save(file);
-            doc.Dispose();
+            StartInfo = psi
+        };
+        p.Start();
+        p.WaitForExit();
+
+        using (System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+        {
+            string text = streamReader.ReadToEnd();
+            return text;
         }
-
-        static string CallBackGetHocr(System.Drawing.Image img)
+    }
+    finally
+    {
+        if (System.IO.File.Exists(tmpFile))
         {
-            string tmpFile = System.IO.Path.GetTempFileName();
-            try
-            {
-                System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
-
-                bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
-                string inputFile = string.Concat('"', tmpFile, '"');
-                string outputFile = string.Concat('"', tmpFile, '"');
-                string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
-                string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
-
-                System.Diagnostics.ProcessStartInfo psi =
-                    new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
-                    {
-                        UseShellExecute = true,
-                        CreateNoWindow = true,
-                        WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-                        WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
-                    };
-
-                System.Diagnostics.Process p = new System.Diagnostics.Process
-                {
-                    StartInfo = psi
-                };
-                p.Start();
-                p.WaitForExit();
-
-                System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr");
-                string text = streamReader.ReadToEnd();
-                streamReader.Close();
-
-                return text;
-            }
-            finally
-            {
-                if (System.IO.File.Exists(tmpFile))
-                    System.IO.File.Delete(tmpFile);
-                if (System.IO.File.Exists(tmpFile + ".hocr"))
-                    System.IO.File.Delete(tmpFile + ".hocr");
-            }
+            System.IO.File.Delete(tmpFile);
+        }
+        if (System.IO.File.Exists(tmpFile + ".hocr"))
+        {
+            System.IO.File.Delete(tmpFile + ".hocr");
         }
     }
 }
@@ -207,13 +201,13 @@ span.Tag(bdc);
 
 Steps to creating an accessible PDF:
 
-1. Load the PDF Document
-1. Access Tagged Content
-1. Create a Span Element
-1. Append Span to Root Element
-1. Iterate Over Page Contents
-1. Check for BDC Elements and Tag Them
-1. Save the Modified Document
+1. Load the PDF Document.
+1. Access Tagged Content.
+1. Create a Span Element.
+1. Append Span to Root Element.
+1. Iterate Over Page Contents.
+1. Check for BDC Elements and Tag Them.
+1. Save the Modified Document.
 
 ```cs
 var document = new Document(somepdffilepath);

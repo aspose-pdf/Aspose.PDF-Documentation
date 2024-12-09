@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Image stamps in PDF using C#",
-    "alternativeHeadline": "Add Image stamps in PDF using C#",
+    "alternativeHeadline": "Add Custom Image Stamps to PDF Documents",
+    "abstract": "The new feature in the Aspose.PDF library allows users to seamlessly add image stamps to PDF documents using C#. With the ImageStamp class, developers can customize attributes such as size, opacity, and quality, significantly enhancing document presentation and accessibility. This functionality also includes the ability to add alternative text, promoting better usability for screen readers",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "646",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,10 +71,11 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/image-stamps-in-pdf-page/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF library."
 }
 </script>
+
 
 ## Add Image Stamp in PDF File
 
@@ -95,7 +96,7 @@ The following code snippet shows how to add image stamp in the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
+Document document = new Document(dataDir +  "AddImageStamp.pdf");
 
 // Create image stamp
 ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
@@ -107,11 +108,10 @@ imageStamp.Width = 300;
 imageStamp.Rotate = Rotation.on270;
 imageStamp.Opacity = 0.5;
 // Add stamp to particular page
-pdfDocument.Pages[1].AddStamp(imageStamp);
+document.Pages[1].AddStamp(imageStamp);
 
-dataDir = dataDir + "AddImageStamp_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddImageStamp_out.pdf");
 ```
 
 ## Control Image Quality when Adding Stamp
@@ -124,14 +124,14 @@ When adding an image as a stamp object, you can control the quality of the image
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
+Document document = new Document(dataDir +  "AddImageStamp.pdf");
 
 // Create image stamp
 ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
 
 imageStamp.Quality = 10;
-pdfDocument.Pages[1].AddStamp(imageStamp);
-pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
+document.Pages[1].AddStamp(imageStamp);
+document.Save(dataDir + "ControlImageQuality_out.pdf");
 ```
 
 ## Image Stamp as Background in Floating Box
@@ -144,9 +144,9 @@ Aspose.PDF API lets you add image stamp as background in a floating box. The Bac
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Instantiate Document object
-Document doc = new Document();
+Document document = new Document();
 // Add page to PDF document
-Page page = doc.Pages.Add();
+Page page = document.Pages.Add();
 // Create FloatingBox object
 FloatingBox aBox = new FloatingBox(200, 100);
 // Set left position for FloatingBox
@@ -169,7 +169,7 @@ aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
 // Add FloatingBox to paragraphs collection of page object
 page.Paragraphs.Add(aBox);
 // Save the PDF document
-doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
 ```
 
 ## Add alternative text to the image stamp
@@ -179,7 +179,7 @@ Since version 24.6, it is possible to add alternative text to the image stamp.
 This code opens a PDF file, adds an image as a stamp at a specific position, and includes alternative text for accessibility. The updated PDF is then saved with a new filename.
 
 ```cs
-var pdfDocument = new Document(dataDir + "yourDoc.pdf");
+var document = new Document(dataDir + "yourDoc.pdf");
 var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
 {
     XIndent = 100,
@@ -188,9 +188,9 @@ var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
     AlternativeText = "Your alt text"  // This property added.
 };
 
-pdfDocument.Pages[1].AddStamp(imageStamp);
+document.Pages[1].AddStamp(imageStamp);
 
-pdfDocument.Save(dataDir + "yourDocWithImageStamp.pdf");
+document.Save(dataDir + "yourDocWithImageStamp.pdf");
 ```
 
 <script type="application/ld+json">

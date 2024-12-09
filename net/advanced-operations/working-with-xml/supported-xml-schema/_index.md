@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "XML Schema of Aspose.PDF",
-    "alternativeHeadline": "How to work with XML Schema in PDF ",
+    "alternativeHeadline": "Enhanced XML Schema Support in C#",
+    "abstract": "Introducing the XML Schema for Aspose.PDF for .NET, a powerful new feature that enhances your ability to work with XML documents in .NET applications. This schema provides a structured way to define and manipulate PDF objects, allowing for advanced customization and control over document design and layout, making it an essential tool for developers seeking to optimize their PDF generation processes. Discover how this feature can streamline your development workflow and improve your application PDF handling capabilities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, XML schema",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2078",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "net/supported-xml-schema/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This article describes an XML schema for working with XML documents in Aspose.PDF for .NET"
 }
 </script>

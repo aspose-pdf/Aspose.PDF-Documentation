@@ -10,6 +10,71 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF to Microsoft Word Documents in .NET",
+    "alternativeHeadline": "Seamlessly Convert PDFs to Word Documents with C#",
+    "abstract": "Aspose.PDF for .NET introduces a powerful feature for converting PDF files to Microsoft Word formats (DOC and DOCX) using C#. This functionality not only enhances document editing but also provides flexible options for text recognition and formatting, ensuring high fidelity between the source PDF and the resulting Word document",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1495",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-to-word/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-to-word/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Overview
 
@@ -58,10 +123,9 @@ The following C# code snippet shows converting a PDF file into DOC format.
 public static void ConvertPDFtoWord()
 {
     // Open the source PDF document
-    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
     // Save the file into MS document format
-    pdfDocument.Save(_dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
-
+    document.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
 }
 ```
 
@@ -78,9 +142,9 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 ```csharp
 public static void ConvertPDFtoWordDocAdvanced()
 {
-    var pdfFile = Path.Combine(_dataDir, "PDF-to-DOC.pdf");
-    var docFile = Path.Combine(_dataDir, "PDF-to-DOC.doc");
-    Document pdfDocument = new Document(pdfFile);
+    var pdfFile = dataDir + "PDF-to-DOC.pdf";
+    var docFile = dataDir + "PDF-to-DOC.doc";
+    Document document = new Document(pdfFile);
     DocSaveOptions saveOptions = new DocSaveOptions
     {
         Format = DocSaveOptions.DocFormat.Doc,
@@ -91,7 +155,7 @@ public static void ConvertPDFtoWordDocAdvanced()
         // Enable the value to recognize bullets during the conversion process
         RecognizeBullets = true
     };
-    pdfDocument.Save(docFile, saveOptions);
+    document.Save(docFile, saveOptions);
 }
 ```
 
@@ -118,9 +182,9 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 public static void ConvertPDFtoWord_DOCX_Format()
 {
     // Open the source PDF document
-    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
     // Save the resultant DOC file
-    pdfDocument.Save(_dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+    document.Save(dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
 }
 ```
 
@@ -134,7 +198,7 @@ There is also recognition of numbered lists and many other minor things.
 public static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {    
     // Open the source PDF document
-    Document pdfDocument = new Document(_dataDir + "PDFToDOC.pdf");
+    Document document = new Document(dataDir + "PDFToDOC.pdf");
 
     // Instantiate DocSaveOptions object
     DocSaveOptions saveOptions = new DocSaveOptions
@@ -145,7 +209,7 @@ public static void ConvertPDFtoWord_Advanced_DOCX_Format()
         Mode = DocSaveOptions.RecognitionMode.EnhancedFlow
     };
     // Save document in docx format
-    pdfDocument.Save("ConvertToDOCX_out.docx", saveOptions);
+    document.Save("ConvertToDOCX_out.docx", saveOptions);
 }
 ```
 

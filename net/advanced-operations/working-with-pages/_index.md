@@ -17,21 +17,21 @@ aliases:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with PDF Pages in C#",
-    "alternativeHeadline": "How to work with PDF Pages",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "Discover the advanced capabilities of Aspose.PDF for .NET for managing PDF pages, including adding, moving, and deleting pages with precision. This feature enables users to enhance their PDF documents by incorporating headers, footers, watermarks, and custom page sizes, all through intuitive C# code. Optimize your document workflows with seamless PDF manipulation and customization functionalities",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf page, add pdf page, add page number, rotate page, delete page",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -73,7 +73,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "How to add pages, add headers and footers, add watermarks  you can know in this section. Aspose.PDF for .NET explain to you all details on this topic."
 }
 </script>
@@ -93,7 +93,7 @@ You are able to do the following:
 - [Change Page size](/pdf/net/change-page-size/) - you can change PDF page size with code snippet using Aspose.PDF library.
 - [Rotate Pages](/pdf/net/rotate-pages/) - you can change the page orientation of pages in an existing PDF file.
 - [Split Pages](/pdf/net/split-document/) - you can split PDF files into one or multiple PDF.
-- [Add Headers and/or Footers](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file .
+- [Add Headers and/or Footers](/pdf/net/add-headers-and-footers-of-pdf-file/) - add text or images in the headers and footers of your PDF file.
 - [Crop Pages](/pdf/net/crop-pages/) - you can crop pages in PDF document programmatically with different Page Properties.
 - [Add Watermarks](/pdf/net/add-watermarks/) - add watermarks in your PDF file with Artifact Class.
 - [Add Page Numbering in PDF File](/pdf/net/add-page-number/) - PageNumberStamp class will help you to add a Page Number in your PDF file.

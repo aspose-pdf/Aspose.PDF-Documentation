@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /cpp/convert-pdf-to-other-files/
 lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert PDF file to other file formats.
+description: Learn how to convert PDF documents to other formats such as Word, Excel, and image formats using Aspose.PDF in C++.
 sitemap:
     changefreq: "monthly"
     priority: 0.8

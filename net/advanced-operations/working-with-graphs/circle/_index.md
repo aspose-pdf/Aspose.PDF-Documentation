@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Circle Object to PDF file",
-    "alternativeHeadline": "How to create Circle Object in PDF file",
+    "alternativeHeadline": "Add Interactive Circle Objects in PDFs with Ease",
+    "abstract": "The new functionality in Aspose.PDF for .NET allows users to effortlessly create circle objects within PDF files. This feature enhances data visualization by enabling the addition of both regular and filled circle graphics, offering developers an intuitive way to represent information graphically in their documents",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, circle in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Add Circle Object, Circle in PDF, Aspose.PDF for .NET, PDF document generation, Create filled Circle, Graph object, PDF file manipulation, C# PDF library",
+    "wordcount": "441",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-circle/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This article explains how to create a circle object to your PDF using Aspose.PDF for .NET."
 }
 </script>
@@ -84,15 +85,11 @@ Like bar graphs, circle graphs can be used to display data in a number of separa
 
 Follow the steps below:
 
-1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance
-
-1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions
-
-1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object
-
-1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page
-
-1. Save our PDF file
+1. Create [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) instance.
+1. Create [Drawing object](https://reference.aspose.com/pdf/net/aspose.pdf.drawing) with certain dimensions.
+1. Set [Border](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph/properties/border) for Drawing object.
+1. Add [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph) object to paragraphs collection of page.
+1. Save our PDF file.
 
 ```csharp
 public static void Circle()
@@ -118,7 +115,7 @@ public static void Circle()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCircle1_out.pdf");
+    document.Save(dataDir + "DrawingCircle1_out.pdf");
 }
 ```
 
@@ -157,7 +154,7 @@ public static void CircleFilled()
     page.Paragraphs.Add(graph);
 
     // Save PDF file
-    document.Save(_dataDir + "DrawingCircle2_out.pdf");
+    document.Save(dataDir + "DrawingCircle2_out.pdf");
 }
 ```
 

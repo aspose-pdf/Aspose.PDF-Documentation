@@ -3,10 +3,75 @@ title: Manage Header and Footer
 type: docs
 weight: 40
 url: /net/manage-header-and-footer/
-description: This section explains how to manage Header and Footer with Aspose.PDF Facades using PdfFileStamp Class.
+description: Explore how to manipulate headers and footers in PDF files in .NET with Aspose.PDF for improved document structuring.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Manage Header and Footer",
+    "alternativeHeadline": "Enhance PDFs with Custom Headers and Footers",
+    "abstract": "The Manage Header and Footer features in Aspose.PDF for .NET allows users to easily add, customize, and format both headers and footers in PDF documents using the PdfFileStamp class. This functionality supports the inclusion of text and images, providing flexibility in document presentation while ensuring professional formatting. Users can seamlessly integrate this feature into their applications to enhance the visual appeal and organization of PDF files",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1007",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/manage-header-and-footer/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/manage-header-and-footer/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Add Header in a PDF File
 
@@ -19,7 +84,7 @@ public static void AddHeader()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!",
@@ -32,7 +97,7 @@ public static void AddHeader()
     fileStamp.AddHeader(formattedText, 10);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddHeader_out.pdf");
+    fileStamp.Save(dataDir + "AddHeader_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -50,7 +115,7 @@ public static void AddFooter()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create formatted text for page number
     FormattedText formattedText = new FormattedText("Aspose - Your File Format Experts!",
@@ -63,7 +128,7 @@ public static void AddFooter()
     fileStamp.AddFooter(formattedText, 10);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddFooter_out.pdf");
+    fileStamp.Save(dataDir + "AddFooter_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -81,14 +146,14 @@ public static void AddImageHeader()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
-    using (var fs = new FileStream(_dataDir + "aspose-logo.png", FileMode.Open))
+    fileStamp.BindPdf(dataDir + "sample.pdf");
+    using (var fs = new FileStream(dataDir + "aspose-logo.png", FileMode.Open))
     {
         // Add Header
         fileStamp.AddHeader(fs, 10);
 
         // Save updated PDF file
-        fileStamp.Save(_dataDir + "AddImage-Header_out.pdf");
+        fileStamp.Save(dataDir + "AddImage-Header_out.pdf");
         // Close fileStamp
         fileStamp.Close();
     }
@@ -106,14 +171,14 @@ public static void AddImageFooter()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
-    using (var fs = new FileStream(_dataDir + "aspose-logo.png", FileMode.Open))
+    fileStamp.BindPdf(dataDir + "sample.pdf");
+    using (var fs = new FileStream(dataDir + "aspose-logo.png", FileMode.Open))
     {
         // Add footer
         fileStamp.AddFooter(fs, 10);
 
         // Save updated PDF file
-        fileStamp.Save(_dataDir + "AddImage-Footer_out.pdf");
+        fileStamp.Save(dataDir + "AddImage-Footer_out.pdf");
 
         // Close fileStamp
         fileStamp.Close();

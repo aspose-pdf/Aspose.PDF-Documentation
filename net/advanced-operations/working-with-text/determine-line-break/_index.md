@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Determine Line Break",
-    "alternativeHeadline": "How to determinate line break of TextFragment",
+    "alternativeHeadline": "Enhance Multi-Line Text Fragment Line Breaking Tracking",
+    "abstract": "Discover Determine Line Break feature in Aspose.PDF for .NET, which enables precise control over the line breaking of multi-line TextFragments in your PDF documents. This functionality simplifies tracking text formatting and enhances the overall presentation of your PDF outputs, making it an essential tool for developers working with text layout in C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, determinate line break",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "268",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/determine-line-break/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Learn more about how to determinate a line break of multi-line TextFragment using C#"
 }
 </script>
@@ -87,8 +87,8 @@ Aspose.PDF for .NET offers logging (tracking) background processing (line breaki
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
+Document document = new Document();
+Page page = document.Pages.Add();
 
 for (int i = 0; i < 4; i++)
 {
@@ -96,9 +96,9 @@ for (int i = 0; i < 4; i++)
     text.TextState.FontSize = 20;
     page.Paragraphs.Add(text);
 }
-doc.Save(dataDir + "DetermineLineBreak_out.pdf");
+document.Save(dataDir + "DetermineLineBreak_out.pdf");
 
-string notifications = doc.Pages[1].GetNotifications();
+string notifications = document.Pages[1].GetNotifications();
 File.WriteAllText(dataDir + "notifications_out.txt", notifications);
 ```
 

@@ -26,7 +26,7 @@ sitemap:
 **Aspose.PDF for Java** is fast and light weight. It creates PDF documents efficiently and helps your application perform better. Aspose.PDF for Java is our customers’ first choice when creating PDF documents because of its price, superb performance and great support.
 Using this library, you can implement rich capabilities for creating PDF files from scratch, or completely process existing PDF documents without installing Adobe Acrobat.
 
-# Installation
+## Installation
 
 ## Evaluate Aspose.PDF for Java
 

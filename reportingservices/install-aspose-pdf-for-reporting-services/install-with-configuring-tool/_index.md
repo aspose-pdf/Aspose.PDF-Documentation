@@ -3,6 +3,7 @@ title: Install with Configuring Tool
 type: docs
 weight: 30
 url: /reportingservices/install-with-configuring-tool/
+description: Step-by-step guide to installing Aspose.PDF for Reporting Services using the configuration tool for seamless integration.
 lastmod: "2021-06-05"
 ---
 

@@ -3,7 +3,7 @@ title: PdfFileSignature Class
 type: docs
 weight: 60
 url: /net/pdffilesignature-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileSignature class.
+description: Explore how to add, verify, and remove digital signatures from PDF documents in .NET using the PDFFileSignature class with Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

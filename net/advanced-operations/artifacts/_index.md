@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Artifacts in .NET",
-    "alternativeHeadline": "Artifacts in PDF document",
+    "alternativeHeadline": "Add and Manage Artifacts in PDF Documents",
+    "abstract": "Aspose.PDF for .NET introduces the Artifact class, allowing developers to efficiently manage non-content elements like background images and watermarks within PDF documents. This functionality enhances document structure while improving accessibility and performance, as artifacts can be ignored by assistive technologies. With customizable options for types and properties, users can easily manipulate these elements to create visually appealing PDFs",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, artifacts in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Artifacts, PDF document generation, Aspose.PDF for .NET, BackgroundArtifact, WatermarkArtifact, Artifact class, PDF artifacts, Artifact types, Accessibility in PDF, PDF watermark handling",
+    "wordcount": "779",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/artifacts/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Aspose.PDF for .NET allows you to add a background image to PDF pages,  and get each watermark using Artifact class."
 }
 </script>
@@ -112,7 +113,7 @@ The following code snippet shows how to get all watermarks on the first page of 
 _Note:_ This code also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-var document = new Document(System.IO.Path.Combine(_dataDir, "sample-w.pdf"));
+var document = new Document(dataDir + "sample-w.pdf");
 var watermarks = document.Pages[1].Artifacts
     .Where(artifact =>
     artifact.Type == Artifact.ArtifactType.Pagination
@@ -130,25 +131,25 @@ Background images can be used to add a watermark, or other subtle design, to doc
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
 
 ```csharp
-var document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+var document = new Document(dataDir + "sample.pdf");
 var background = new BackgroundArtifact()
 {
-    BackgroundImage = System.IO.File.OpenRead(System.IO.Path.Combine(_dataDir, "background.jpg"))
+    BackgroundImage = System.IO.File.OpenRead(dataDir + "background.jpg")
 };
 document.Pages[1].Artifacts.Add(background);
-document.Save(System.IO.Path.Combine(_dataDir, "sample_artifacts_background.pdf"));
+document.Save(dataDir + "sample_artifacts_background.pdf");
 ```
 
 If you want, for some reason, to use a solid color background, please change the previous code in the following manner:
 
 ```csharp
-var document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+var document = new Document(dataDir + "sample.pdf");
 var background = new BackgroundArtifact()
 {
     BackgroundColor = Color.DarkKhaki,
 };
 document.Pages[1].Artifacts.Add(background);
-document.Save(System.IO.Path.Combine(_dataDir, "sample_artifacts_background.pdf"));
+document.Save(dataDir + "sample_artifacts_background.pdf");
 ```
 
 ## Counting Artifacts of a Particular Type
@@ -156,7 +157,7 @@ document.Save(System.IO.Path.Combine(_dataDir, "sample_artifacts_background.pdf"
 To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code:
 
 ```csharp
-var document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+var document = new Document(dataDir + "sample.pdf");
 var paginationArtifacts = document.Pages[1].Artifacts.Where(artifact => artifact.Type == Artifact.ArtifactType.Pagination);
 Console.WriteLine("Watermarks: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Watermark));
 Console.WriteLine("Backgrounds: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Background));

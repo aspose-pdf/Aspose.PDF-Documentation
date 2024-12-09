@@ -12,21 +12,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Extract Images from PDF File",
-    "alternativeHeadline": "How to extract Images from PDF",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Files",
+    "abstract": "The new feature for extracting images from PDF files using the C# library allows developers to easily retrieve and save images contained within PDF documents. By leveraging the Aspose.PDF library, users can access specific images from any page and export them in various formats, streamlining their workflow for managing PDF content",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, extract image from pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Extract images, PDF file, C# library, images collection, extract images from PDF, XImage object, save extracted image, PDF manipulation, Aspose.PDF for .NET, document resources",
+    "wordcount": "227",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,7 +69,7 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/extract-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "This section shows how to extract images from PDF file using C# library."
 }
 </script>
@@ -85,21 +86,20 @@ The image's index returns an [XImage](https://reference.aspose.com/pdf/net/aspos
 string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "ExtractImages.pdf");
+using (Document document = new Document(dataDir +  "ExtractImages.pdf"))
+{
+    // Extract a particular image
+    XImage xImage = document.Pages[1].Resources.Images[1];
 
-// Extract a particular image
-XImage xImage = pdfDocument.Pages[1].Resources.Images[1];
+    using (FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create))
+    {
+        // Save output image
+        xImage.Save(outputImage, ImageFormat.Jpeg);
+    }
 
-FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create);
-
-// Save output image
-xImage.Save(outputImage, ImageFormat.Jpeg);
-outputImage.Close();
-
-dataDir = dataDir + "ExtractImages_out.pdf";
-
-// Save updated PDF file
-pdfDocument.Save(dataDir);
+    // Save updated PDF file
+    document.Save(dataDir + "ExtractImages_out.pdf");
+}
 ```
 
 <script type="application/ld+json">

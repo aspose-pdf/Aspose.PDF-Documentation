@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF Multimedia Annotation using C#",
-    "alternativeHeadline": "How to add Multimedia Annotation in PDF",
+    "alternativeHeadline": "Enable Multimedia Annotations in PDF with C#",
+    "abstract": "Aspose.PDF for .NET introduces advanced multimedia annotation capabilities, enabling users to seamlessly add, retrieve, and delete various multimedia types in PDF documents. This feature supports screen, sound, and rich media annotations, enhancing document interactivity and allowing for the integration of external video content, audio notes, and embedded media, making PDF documents more dynamic and engaging",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, multimedia annotation, screen annotation, sound annotation, widget annotation, 3D annotation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "PDF multimedia annotation, Aspose.PDF, C# PDF features, screen annotation, sound annotation, rich media annotation, widget annotations, 3D annotation, document navigation, multimedia file embedding",
+    "wordcount": "2247",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,8 +72,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/multimedia-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 
@@ -91,11 +92,11 @@ The following methods/properties of RichMediaAnnotation class can be used.
 
 - Stream CustomPlayer { set; }: Allows setting player used to play video.
 - string CustomFlashVariables { set; }: Allows to set variables that are passed to flash application. This line is set of “key=value” pairs which are separated with ‘&'.
-- void AddCustomData(strig name, Stream data):  Add additional data for the player. For example source=video.mp4&autoPlay=true&scale=100
-- ActivationEvent ActivateOn { get; set}:  Event activates player; possible values are Click, PageOpen, PageVisible
-- void SetContent(Stream stream, string name): Set video/audio data to be playedю
-- void Update():  Create a data structure of the annotation. This method should be called last
-- void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active
+- void AddCustomData(strig name, Stream data):  Add additional data for the player. For example source=video.mp4&autoPlay=true&scale=100.
+- ActivationEvent ActivateOn { get; set}:  Event activates player; possible values are Click, PageOpen, PageVisible.
+- void SetContent(Stream stream, string name): Set video/audio data to be played.
+- void Update():  Create a data structure of the annotation. This method should be called last.
+- void SetPoster(Stream): Set poster of the video i.e. picture shown when the player is not active.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
@@ -104,35 +105,20 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows how to add Screen Annotation to a PDF file:
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.IO;
-using System.Linq;
+// The path to the documents directory.
+private const string dataDir = "..\\..\\..\\..\\Samples\\";
+// Load the PDF file
+Document document = new Document(dataDir + "sample.pdf");
 
+var mediaFile = dataDir + "input.swf";
+// Create Screen Annotation
+var screenAnnotation = new ScreenAnnotation(
+    document.Pages[1],
+    new Rectangle(170, 190, 470, 380),
+    mediaFile);
+document.Pages[1].Annotations.Add(screenAnnotation);
 
-namespace Aspose.Pdf.Examples.Advanced
-{
-    class ExampleMultimediaAnnotation
-    {
-        // The path to the documents directory.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddScreenAnnotation()
-        {
-            // Load the PDF file
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
-
-            var mediaFile = System.IO.Path.Combine(_dataDir, "input.swf");
-            // Create Screen Annotation
-            var screenAnnotation = new ScreenAnnotation(
-                document.Pages[1],
-                new Rectangle(170, 190, 470, 380),
-                mediaFile);
-            document.Pages[1].Annotations.Add(screenAnnotation);
-
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_swf.pdf"));
-        }
-    }
-}
+document.Save(dataDir + "sample_swf.pdf");
 ```
 
 ## Add Sound Annotation
@@ -143,9 +129,9 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
 public static void AddSoundAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+    Document document = new Document(dataDir + "sample.pdf");
 
-    var mediaFile = System.IO.Path.Combine(_dataDir, "file_example_WAV_1MG.wav");
+    var mediaFile = dataDir + "file_example_WAV_1MG.wav";
     // Create Sound Annotation
     var soundAnnotation = new SoundAnnotation(
         document.Pages[1],
@@ -160,7 +146,7 @@ public static void AddSoundAnnotation()
 
     document.Pages[1].Annotations.Add(soundAnnotation);
 
-    document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));
+    document.Save(dataDir + "sample_wav.pdf");
 }
 ```
 
@@ -171,9 +157,9 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 ```csharp
 public static void AddRichMediaAnnotation()
 {
-    Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
+    Document document = new Document();
     var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
-    Page page = doc.Pages.Add();
+    Page page = document.Pages.Add();
     //give name to video data. This data will be embedded into document with this name and referenced from flash variables by this name.
     //videoName should not contain path to the file; this is rather "key" to access data inside of the PDF document
     const string videoName = "file_example_MP4_480_1_5MG.mp4";
@@ -189,11 +175,11 @@ public static void AddRichMediaAnnotation()
     };
     //add skin code.
     rma.AddCustomData(skinName,
-        new FileStream(Path.Combine(pathToAdobeApp,"SkinOverAllNoFullNoCaption.swf"), FileMode.Open, FileAccess.Read));
+        new FileStream(pathToAdobeApp + "SkinOverAllNoFullNoCaption.swf", FileMode.Open, FileAccess.Read);
     //set poster for video
-    rma.SetPoster(new FileStream(Path.Combine(_dataDir, posterName), FileMode.Open, FileAccess.Read));
+    rma.SetPoster(new FileStream(dataDir + posterName), FileMode.Open, FileAccess.Read);
 
-    Stream fs = new FileStream(Path.Combine(_dataDir,videoName), FileMode.Open, FileAccess.Read);
+    Stream fs = new FileStream(dataDir + videoName), FileMode.Open, FileAccess.Read);
 
     //set video content
     rma.SetContent(videoName, fs);
@@ -210,7 +196,7 @@ public static void AddRichMediaAnnotation()
     //add annotation on the page.
     page.Annotations.Add(rma);
 
-    doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
+    document.Save(dataDir +"RichMediaAnnotation.pdf");
 }
 ```
 
@@ -223,7 +209,7 @@ public static void GetMultimediaAnnotation()
 {
     // Load the PDF file
     Document document = new Document(
-        Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
+        dataDir + "RichMediaAnnotation.pdf");
     var mediaAnnotations = document.Pages[1].Annotations
         .Where(a => (a.AnnotationType == AnnotationType.Screen)
         || (a.AnnotationType == AnnotationType.Sound)
@@ -244,7 +230,7 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
 public static void DeletePolyAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
+    Document document = new Document(dataDir + "RichMediaAnnotation.pdf");
     var richMediaAnnotations = document.Pages[1].Annotations
                     .Where(a => a.AnnotationType == AnnotationType.RichMedia)
                     .Cast<RichMediaAnnotation>();
@@ -253,7 +239,7 @@ public static void DeletePolyAnnotation()
     {
         document.Pages[1].Annotations.Delete(rma);
     }
-    document.Save(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation_del.pdf"));
+    document.Save(dataDir + "RichMediaAnnotation_del.pdf");
 }
 ```
 
@@ -277,7 +263,7 @@ In this sample, we will learn how to add the push-buttons for navigation in the 
 ### Add Button to the Document
 
 ```csharp
-document = new Document();
+var document = new Document();
 var page = document.Pages.Add();
 var rect = new Rectangle(72, 748, 164, 768);
 var printButton = new ButtonField(page, rect)
@@ -385,9 +371,9 @@ The main task of 3D modeling is the idea of a future object or object because, i
 
 3D annotation is added using a model created in the U3D format.
 
-1. Create a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)
-1. Create [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent
+1. Create a new [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Load the data of the desired 3D model (in our case "Ring.u3d") to create [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
+1. Create [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) object and link it to the document and 3DContent.
 1. Tune pdf3dArtWork object:
 
     - 3DLightingScheme - (we will set  `CAD` in example)
@@ -395,14 +381,14 @@ The main task of 3D modeling is the idea of a future object or object because, i
     - Fill `ViewArray`, create at least one [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) and add it to array.
 
 1. Set 3 basic parameters in annotation:
-    - the `page` on which the annotation will be placed,
-    - the `rectangle`, inside which the annotation,
+    - the `page` on which the annotation will be placed.
+    - the `rectangle`, inside which the annotation.
     - and the `3dArtWork` object.
-1. For a better presentation of the 3D object, set the Border frame
-1. Set the default view (for example - TOP)
+1. For a better presentation of the 3D object, set the Border frame.
+1. Set the default view (for example - TOP).
 1. Add some additional parameters: name, preview poster etc.
-1. Add Annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)
-1. Save the result
+1. Add Annotation to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Save the result.
 
 ### Example
 
@@ -413,7 +399,7 @@ public static void Add3dAnnotation()
 {
     // Load the PDF file
     Document document = new Document();
-    PDF3DContent pdf3DContent = new PDF3DContent(System.IO.Path.Combine(_dataDir,"Ring.u3d"));
+    PDF3DContent pdf3DContent = new PDF3DContent(dataDir + "Ring.u3d");
     PDF3DArtwork pdf3dArtWork = new PDF3DArtwork(document, pdf3DContent)
     {
         LightingScheme = new PDF3DLightingScheme(LightingSchemeType.CAD),
@@ -432,10 +418,10 @@ public static void Add3dAnnotation()
     pdf3dAnnotation.Flags = AnnotationFlags.NoZoom;
     pdf3dAnnotation.Name = "Ring.u3d";
     //set preview image if needed
-    //pdf3dAnnotation.SetImagePreview(System.IO.Path.Combine(_dataDir, "sample_3d.png"));
+    //pdf3dAnnotation.SetImagePreview(dataDir + "sample_3d.png");
     document.Pages[1].Annotations.Add(pdf3dAnnotation);
 
-    document.Save(System.IO.Path.Combine(_dataDir, "sample_3d.pdf"));
+    document.Save(dataDir + "sample_3d.pdf");
 }
 ```
 

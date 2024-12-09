@@ -15,21 +15,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add Text stamps in PDF C#",
-    "alternativeHeadline": "Add Text stamps in PDF C#",
+    "alternativeHeadline": "Effortlessly Add Text Stamps in PDF Documents with C#",
+    "abstract": "The new TextStamp feature in Aspose.PDF for .NET enables users to effortlessly add customizable text stamps to PDF documents. With properties for font size, style, and color, along with alignment options, this functionality enhances document annotation by allowing precise placement and appearance of text within PDF files",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, document generation",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "765",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,12 +71,12 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Add a text stamp to a PDF document using the TextStamp class with  Aspose.PDF for .NET library."
 }
 </script>
 
-## Add Text Stamp with C#
+## Add Text Stamp
 
 You can use [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) class to add a text stamp in a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text stamp, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the stamp in the PDF. 
 
@@ -90,7 +90,7 @@ The following code snippet shows you how to add text stamp in the PDF file.
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Open document
-Document pdfDocument = new Document(dataDir+ "AddTextStamp.pdf");
+Document document = new Document(dataDir +  "AddTextStamp.pdf");
 
 // Create text stamp
 TextStamp textStamp = new TextStamp("Sample Stamp");
@@ -106,13 +106,12 @@ textStamp.TextState.Font = FontRepository.FindFont("Arial");
 textStamp.TextState.FontSize = 14.0F;
 textStamp.TextState.FontStyle = FontStyles.Bold;
 textStamp.TextState.FontStyle = FontStyles.Italic;
-textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Aqua);
+textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
 // Add stamp to particular page
-pdfDocument.Pages[1].AddStamp(textStamp);
+document.Pages[1].AddStamp(textStamp);
 
-dataDir = dataDir + "AddTextStamp_out.pdf";
 // Save output document
-pdfDocument.Save(dataDir);
+document.Save(dataDir + "AddTextStamp_out.pdf");
 ```
 
 ## Define alignment for TextStamp object
@@ -127,7 +126,7 @@ The following code snippets shows an example on how to load an existing PDF docu
 string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
 // Instantiate Document object with input file
-Document doc = new Document(dataDir+ "DefineAlignment.pdf");
+Document document = new Document(dataDir +  "DefineAlignment.pdf");
 // Instantiate FormattedText object with sample string
 FormattedText text = new FormattedText("This");
 // Add new text line to FormattedText
@@ -146,11 +145,10 @@ stamp.TextAlignment = HorizontalAlignment.Center;
 // Set top margin for stamp object
 stamp.TopMargin = 20;
 // Add the stamp object over first page of document
-doc.Pages[1].AddStamp(stamp);
+document.Pages[1].AddStamp(stamp);
 
-dataDir = dataDir + "StampedPDF_out.pdf";
 // Save the udpated document
-doc.Save(dataDir);
+document.Save(dataDir + "StampedPDF_out.pdf");
 ```
 
 ## Fill Stroke Text as Stamp in PDF File
@@ -170,7 +168,7 @@ ts.StrokingColor = Color.Gray;
 // Set text rendering mode
 ts.RenderingMode = TextRenderingMode.StrokeText;
 // Load an input PDF document
-Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Aspose.Pdf.Document(dataDir + "input.pdf"));
+Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Document(dataDir + "input.pdf"));
 
 Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
 stamp.BindLogo(new Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Facades.EncodingType.Winansi, true, 78));

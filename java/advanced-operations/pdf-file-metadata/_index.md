@@ -4,7 +4,7 @@ linktitle: PDF File Metadata
 type: docs
 weight: 140
 url: /java/pdf-file-metadata/
-description: This section explains how to get PDF file information, how to get XMP Metadata from a PDF file, set PDF File Information.
+description: Discover how to manage and extract metadata from PDF files in Java using Aspose.PDF to handle document properties.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

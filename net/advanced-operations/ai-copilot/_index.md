@@ -10,6 +10,73 @@ sitemap:
     priority: 0.8
 lastmod: "2024-10-23"
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "PDF AI Copilot",
+    "alternativeHeadline": "Seamlessly Integrate AI with PDF Document Processing",
+    "abstract": "The PDF AI Copilot feature leverages advanced AI technology to enhance document processing through functionality such as document summarization, interactive chat capabilities with PDF content, and generating image descriptions from documents. This innovative API streamlines how users interact with and extract insights from PDF documents, making it an essential tool for enhancing productivity and user engagement",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "PDF AI Copilot, Aspose.PDF API, document summary, chat with documents, OpenAI Summary, OpenAI Chat, image descriptions, Llama Chat, AI document processing",
+    "wordcount": "1047",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/ai-copilot/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/ai-copilot/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
+
 {{% alert color="primary" %}}
 **Aspose.PDF AI Copilot API** designed to allows users to process PDF documents using LLMs from different providers. This [API](https://reference.aspose.com/pdf/net/aspose.pdf.ai/) will help users in building chatbot applications and integrating PDF solutions with LLMs.
 {{% /alert %}}
@@ -112,6 +179,8 @@ await chatCopilot
 The provided code snippet demonstrates the creation of an OpenAI client, configuration of ImageDescriptionCopilot options and usage of the copilot to obtain image descriptions for attached documents. Additionally, there is an extension method that allows adding image descriptions to images in the attached documents and saving new documents in the provided directory.
 
 ```cs
+const string dataDir = @"Samples\";
+
 // Create AI client.
 var openAiClient = OpenAIClient
     .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
@@ -128,11 +197,11 @@ var options = OpenAIImageDescriptionCopilotOptions
     .WithTopP(1)
     .WithDocument(new PdfDocument // Attach documents.
         {
-        Name = "Another_Pdf_with_images",
-        Document = new Document(GetInputPath("Pdf_with_images_low_res_bw.pdf"))
+            Name = "Another_Pdf_with_images",
+            Document = new Document(dataDir + "Pdf_with_images_low_res_bw.pdf")
         })
-    .WithDocument(GetInputPath("Mona_liza.jpg")) // Attach images
-    .WithDocument(GetInputPath("Pdf_with_images.pdf")); // Attach document paths.
+    .WithDocument(dataDir + "Mona_liza.jpg") // Attach images
+    .WithDocument(dataDir + "Pdf_with_images.pdf"); // Attach document paths.
 
 // Create copilot.
 var copilot = AICopilotFactory.CreateImageDescriptionCopilot(openAiClient, options);
@@ -165,6 +234,8 @@ var response = result.Choices[0].Message.Content; // Hello! How can I assist you
 [**Llama Summary**](https://reference.aspose.com/pdf/net/aspose.pdf.ai/llamaclient/) allows client can be used to create the Summary Copilot.
 
 ```cs
+const string dataDir = @"Samples\";
+
 var llamaClient = LlamaClient
     .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
     .Build();
@@ -174,7 +245,7 @@ var options = LlamaSummaryCopilotOptions
     .Create() // Create options like this, or...
     //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate.
     .WithTemperature(0.5) // Configure other optional parameters.
-    .WithDocument("DocumentInputPath") // .WithDocument methods allow to add text, pdf, and paths to documents.
+    .WithDocument(dataDir + "InputDocument.pdf") // .WithDocument methods allow to add text, pdf, and paths to documents.
     .WithDocuments(new List<TextDocument>()); // .WithDocuments methods allow to add text, pdf and path collections.
 
 // Create summary copilot.
@@ -190,8 +261,8 @@ Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
 Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new PageInfo());
 
 // Save the summary as a PDF document.
-await summaryCopilot.SaveSummaryAsync("outputPath");
+await summaryCopilot.SaveSummaryAsync(dataDir + "Llama_out.pdf");
 
 // Save summary with specified format.
-await summaryCopilot.SaveSummaryAsync("outputPath", SaveFormat.DocX);
+await summaryCopilot.SaveSummaryAsync(dataDir + "Llama_out.docx", SaveFormat.DocX);
 ```

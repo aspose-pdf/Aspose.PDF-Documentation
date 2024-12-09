@@ -3,6 +3,7 @@ title: Set PDF File Information in Jython
 type: docs
 weight: 70
 url: /java/set-pdf-file-information-in-jython/
+description: Learn how to set the metadata and other file properties of a PDF document in Jython with Aspose.PDF.
 lastmod: "2021-06-05"
 ---
 

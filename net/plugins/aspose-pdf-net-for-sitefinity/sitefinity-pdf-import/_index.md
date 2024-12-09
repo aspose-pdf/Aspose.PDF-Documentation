@@ -9,7 +9,71 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Sitefinity PDF Import",
+    "alternativeHeadline": "Effortless PDF Content Import for Sitefinity Users",
+    "abstract": "Introducing the Sitefinity PDF Import feature, which allows developers to effortlessly extract and display content from PDF documents directly within their Sitefinity websites. This open-source add-on enhances content management by integrating a simple file browser and an Import from PDF button, streamlining the process of document manipulation without the need for additional software. Unlock the potential of your content with this powerful import functionality",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1145",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/sitefinity-pdf-import/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/sitefinity-pdf-import/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Getting Started
 
@@ -67,21 +131,21 @@ Aspose .NET PDF Import for Sitefinity is open source and its source code is avai
 
 You can get the latest source code from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity)
-- [Sourceforge](https://sourceforge.net/p/asposesitefinity/code/ci/master/tree/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/src)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity).
+- [Sourceforge](https://sourceforge.net/p/asposesitefinity/code/ci/master/tree/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/src).
 
 #### How to configure the source code
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010 or higher
+- Visual Studio 2010 or higher.
 
 Please follow these simple steps to get started
 
 1. Download/Clone the source code.
-1. Open Visual Studio 2010 and Choose `File > Open Project`
-1. Browse to the latest source code that you have downloaded and open **Aspose.SiteFinity.PDFImport.sln**
+1. Open Visual Studio 2010 and Choose `File > Open Project`.
+1. Browse to the latest source code that you have downloaded and open **Aspose.SiteFinity.PDFImport.sln**.
 
 ## Installation and Usage
 
@@ -91,9 +155,9 @@ Please follow these simple steps to get started
 
 You can download Aspose .NET Pdf Import for Sitefinity from one of the following locations
 
-- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity/releases)
-- [Sourceforge](https://sourceforge.net/projects/asposesitefinity/files/)
-- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/downloads)
+- [Github](https://github.com/asposemarketplace/Aspose_for_Sitefinity/releases).
+- [Sourceforge](https://sourceforge.net/projects/asposesitefinity/files/).
+- [Bitbucket](https://bitbucket.org/asposemarketplace/aspose-for-sitefinity/downloads).
 
 #### Installing
 
@@ -111,9 +175,9 @@ Please extract the downloaded ZIP file. You will need FTP or direct access to th
 1. Log into your Sitefinity CMS with an **Administrator** account. The login page can be reached by <http://www.mywebsite.com/sitefinity>
 1. Click **Administration** and then **Settings**.
    The Basic Settings page appears.
-1. **Click the Advanced link.**
+1. **Click the Advanced link.**.
    The Settings page appears.
-1. In the left pane, click **Toolboxes** followed by **Toolboxes**, then **PageControls**, **Sections** and **ContentToolboxSection**, then **Tools.**
+1. In the left pane, click **Toolboxes** followed by **Toolboxes**, then **PageControls**, **Sections** and **ContentToolboxSection**, then **Tools.**.
 1. Click **Create new**.
    The widget registration form appears.
 1. Fill the form fields as follows:
@@ -125,7 +189,7 @@ Please extract the downloaded ZIP file. You will need FTP or direct access to th
       Import PDF Documents to Sitefinity using Aspose .NET PDF Import for Sitefinity
    1. You may leave all other fields as they are.
 1. When finished, click **Save changes**.
-   The widget is registered in the toolbox and can be used in Sitefinity. The settings are also shown in the picture below
+   The widget is registered in the toolbox and can be used in Sitefinity. The settings are also shown in the picture below.
 
 ### Using and Video Demo
 

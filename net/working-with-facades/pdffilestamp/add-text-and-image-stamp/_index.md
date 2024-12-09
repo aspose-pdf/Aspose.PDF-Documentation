@@ -7,6 +7,71 @@ description: This section explains how to add Text and Image Stamp with Aspose.P
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Text and Image Stamp",
+    "alternativeHeadline": "Add Custom Text and Image Stamps in PDFs",
+    "abstract": "The Add Text and Image Stamp features in Aspose.PDF for .NET enables users to seamlessly apply customized text and image stamps across all or specific pages of PDF documents. This functionality enhances document personalization, allowing for detailed control over stamp attributes such as position, rotation, and quality, ultimately improving the presentation and branding of your PDF files",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1435",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-text-and-image-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-text-and-image-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 ## Add Text Stamp on All Pages in a PDF File
 
@@ -19,7 +84,7 @@ public static void AddTextStampOnAllPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Stamp stamp = new Stamp();
@@ -32,7 +97,7 @@ public static void AddTextStampOnAllPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddTextStamp-All_out.pdf");
+    fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -50,7 +115,7 @@ public static void AddTextStampOnParticularPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
@@ -66,7 +131,7 @@ public static void AddTextStampOnParticularPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddTextStamp-Page_out.pdf");
+    fileStamp.Save(dataDir + "AddTextStamp-Page_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -84,11 +149,11 @@ public static void AddImageStampOnAllPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindImage(_dataDir + "aspose-logo.png");
+    stamp.BindImage(dataDir + "aspose-logo.png");
     stamp.SetOrigin(10, 200);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -100,7 +165,7 @@ public static void AddImageStampOnAllPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddImageStamp-Page_out.pdf");
+    fileStamp.Save(dataDir + "AddImageStamp-Page_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();
@@ -122,11 +187,11 @@ public static void AddImageStampOnParticularPagesInPdfFile()
     PdfFileStamp fileStamp = new PdfFileStamp();
 
     // Open Document
-    fileStamp.BindPdf(_dataDir + "sample.pdf");
+    fileStamp.BindPdf(dataDir + "sample.pdf");
 
     // Create stamp
     Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindImage(_dataDir + "aspose-logo.png");
+    stamp.BindImage(dataDir + "aspose-logo.png");
     stamp.SetOrigin(10, 200);
     stamp.Rotation = 90.0F;
     stamp.IsBackground = true;
@@ -135,7 +200,7 @@ public static void AddImageStampOnParticularPagesInPdfFile()
     fileStamp.AddStamp(stamp);
 
     // Save updated PDF file
-    fileStamp.Save(_dataDir + "AddImageStamp-All_out.pdf");
+    fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
 
     // Close fileStamp
     fileStamp.Close();

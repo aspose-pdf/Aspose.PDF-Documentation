@@ -5,8 +5,7 @@ type: docs
 weight: 20
 url: /python-java/convert-pdf-to-excel/
 lastmod: "2022-12-23"
-keywords: convert PDF to Excel using python, convert PDF to XLS using python, convert PDF to XLSX using python, export table from PDF to Excel in python.
-description: Aspose.PDF for Python library allows you to convert PDF to Excel format using Python. These formats include XLS, XLSX, XML 2003 Spreadsheet, CSV, ODS.
+description: Learn how to convert PDFs to Excel files using Aspose.PDF for Python via Java. Achieve precision and efficiency with our comprehensive tutorial.
 sitemap:
     changefreq: "monthly"
     priority: 0.7

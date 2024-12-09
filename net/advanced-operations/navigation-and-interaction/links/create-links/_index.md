@@ -15,21 +15,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Create Links in PDF file with C#",
-    "alternativeHeadline": "How to create Links in PDF",
+    "alternativeHeadline": "Create Interactive Links in PDFs Using C#",
+    "abstract": "The new feature allows developers to seamlessly create interactive links within PDF documents using C#. This functionality enhances user engagement by linking to external applications or other PDF files, enabling a more dynamic and feature-rich document experience. Ideal for tutorials and guiding users, this integration empowers users to connect content effectively",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, create link in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Create Links, PDF document, C#, LinkAnnotation, LaunchAction, GoToRemoteAction, Aspose.PDF, Document object, PDF manipulation, External link",
+    "wordcount": "690",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-links/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "This section explains how to create links in your PDF document with C#."
 }
 </script>
@@ -108,9 +109,8 @@ link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 link.Action = new LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
 page.Annotations.Add(link);
 
-dataDir = dataDir + "CreateApplicationLink_out.pdf";
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "CreateApplicationLink_out.pdf");
 ```
 
 ### Create PDF Document Link in a PDF File
@@ -133,16 +133,16 @@ The following code snippet shows how to create PDF document link in a PDF file.
 // The path to the documents directory.
 string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 // Open document
-Document document = new Document(dataDir+ "CreateDocumentLink.pdf");
+Document document = new Document(dataDir +  "CreateDocumentLink.pdf");
 // Create link
 Page page = document.Pages[1];
 LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
 link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
 page.Annotations.Add(link);
-dataDir = dataDir + "CreateDocumentLink_out.pdf";
+
 // Save updated document
-document.Save(dataDir);
+document.Save(dataDir + "CreateDocumentLink_out.pdf");
 ```
 
 <script type="application/ld+json">

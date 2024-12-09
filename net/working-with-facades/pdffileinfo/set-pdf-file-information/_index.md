@@ -7,7 +7,71 @@ description: This section explains how to set PDF File Information with Aspose.P
 lastmod: "2021-06-05"
 draft: false
 ---
-
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Set PDF File Information",
+    "alternativeHeadline": "Set Custom Metadata for PDF Files Effortlessly",
+    "abstract": "Enhance your PDF file management with the new functionality in Aspose.PDF for .NET that allows you to easily set and update file-specific information such as Author, Title, and Keywords. Utilize the PdfFileInfo class to efficiently modify your PDFs, adding valuable metadata to improve organization and searchability. Streamline your workflow by saving these updates seamlessly with the SaveNewInfo method",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "251",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/set-pdf-file-information/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/set-pdf-file-information/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
+}
+</script>
 
 [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class allows you to set file specific information of a PDF file. You need to create an object of [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class and then set different file specific properties like Author, Title, Keyword, and Creator etc. Finally, save the updated PDF file using [SaveNewInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileinfo/savenewinfo/methods/1) method of the [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) object.
 
@@ -16,7 +80,7 @@ The following code snippet shows you how to set PDF file information.
 ```csharp
 public static void SetPdfInfo()
 {
-    PdfFileInfo fileInfo = new PdfFileInfo(_dataDir + "sample.pdf")
+    PdfFileInfo fileInfo = new PdfFileInfo(dataDir + "sample.pdf")
     {
         // Set PDF information
         Author = "Aspose",
@@ -25,7 +89,7 @@ public static void SetPdfInfo()
         Creator = "Aspose"
     };
     // Save updated file
-    fileInfo.SaveNewInfo(_dataDir + "SetFileInfo_out.pdf");
+    fileInfo.SaveNewInfo(dataDir + "SetFileInfo_out.pdf");
 }
 ```
 
@@ -37,12 +101,12 @@ public static void SetPdfInfo()
 public static void SetMetaInfo()
 {
     // Create instance of PdfFileInfo object
-    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(_dataDir + "sample.pdf");
+    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf");
 
     // Set new customer attribute as meta info
     fInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
 
     // Save updated file
-    fInfo.SaveNewInfo(_dataDir + "SetMetaInfo_out.pdf");
+    fInfo.SaveNewInfo(dataDir + "SetMetaInfo_out.pdf");
 }
 ```
