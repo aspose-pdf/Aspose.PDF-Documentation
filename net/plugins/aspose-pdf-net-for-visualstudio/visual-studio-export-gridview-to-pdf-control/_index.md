@@ -108,7 +108,7 @@ Export GridView To Pdf Control for Visual Studio is supported of all version of 
 
 You can download Export GridView To Pdf Control from one of the following locations
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposeExportGridViewToPdfControl_1.0)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposeExportGridViewToPdfControl_1.0).
 
 ## Installing
 
@@ -256,7 +256,7 @@ You can get the latest source code from one of the following locations
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010
+- Visual Studio 2010.
 
 Please follow these simple steps to get started
 

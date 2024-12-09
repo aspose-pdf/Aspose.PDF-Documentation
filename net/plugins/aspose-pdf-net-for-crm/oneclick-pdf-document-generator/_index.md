@@ -101,7 +101,7 @@ In order to install and use Aspose .NET OneClick PDF Document Generator for Micr
 
 - Microsoft Dynamics CRM 2015.
 - Microsoft Dynamics CRM Online.
-- .NET Framework 4.5 or above
+- .NET Framework 4.5 or above.
 
 Please feel free to contact us if you find any issues in installing or using this Add-on.
 
@@ -109,7 +109,7 @@ Please feel free to contact us if you find any issues in installing or using thi
 
 You can download the latest solution at:
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/OneClickPDFGenerator)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/OneClickPDFGenerator).
 
 ## Installing or Uninstalling
 
@@ -161,7 +161,7 @@ You can log any issues or suggestions related to Aspose OneClick PDF Document Ge
 
 You can download the latest source code at:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Dynamics%20CRM/OneClick%20PDF%20Document%20Generator)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Dynamics%20CRM/OneClick%20PDF%20Document%20Generator).
 
 To Customize the solution download and install the unmanaged solution into CRM.
 
