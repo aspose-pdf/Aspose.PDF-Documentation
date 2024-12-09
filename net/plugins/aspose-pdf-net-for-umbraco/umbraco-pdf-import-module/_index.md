@@ -91,7 +91,7 @@ Umbraco PDF Import is an open source add-on from [Aspose](http://www.aspose.com/
 
 In order to setup Aspose .NET Pdf Import for Umbraco module you need to have the following requirements met:
 
-- Umbraco 6.0+
+- Umbraco 6.0+.
 
 Please feel free to contact us if you wish to install this module on other versions of Umbraco.
 
@@ -99,7 +99,7 @@ Please feel free to contact us if you wish to install this module on other versi
 
 The module is supported on all versions of
 
-- Umbraco running on ASP.NET 4.0
+- Umbraco running on ASP.NET 4.0.
 
 ## Downloading
 
@@ -179,5 +179,5 @@ You need to have the following installed in order to open and extend the source 
 Please follow these simple steps to get started
 
 1. Download/Clone the source code.
-1. Open Visual Studio 2010 and Choose **File** > **Open Project**
-1. Browse to the latest source code that you have downloaded and open **Aspose.Import from PDF.sln**
+1. Open Visual Studio 2010 and Choose **File** > **Open Project**.
+1. Browse to the latest source code that you have downloaded and open **Aspose.Import from PDF.sln**.

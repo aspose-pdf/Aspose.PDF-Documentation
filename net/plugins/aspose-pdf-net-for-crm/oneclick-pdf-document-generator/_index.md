@@ -117,7 +117,7 @@ You can download the latest solution at:
 
 #### Importing the Solution
 
-- Download the Solution File. (Managed if you intent to uninstall it)
+- Download the Solution File. (Managed if you intent to uninstall it).
 - Open CRM and go to Import Solution.
 - Click Browse and select the downloaded solution file and click next.
 - Click Next and wait for the solution to import.
@@ -126,8 +126,8 @@ You can download the latest solution at:
 #### Configuring Web Page
 
 - Download the source code for website.
-- Copy on server. (Recommended under inetpub)
-- Open IIS. (On server where you intent to deploy website, accessible from CRM server)
+- Copy on server. (Recommended under inetpub).
+- Open IIS. (On server where you intent to deploy website, accessible from CRM server).
 - Create a new Website.
 - Choose physical path and configure website.
 - Browse to check if it is accessible.

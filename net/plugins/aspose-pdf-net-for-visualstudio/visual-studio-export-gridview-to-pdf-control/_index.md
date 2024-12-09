@@ -82,11 +82,11 @@ This initial version of the control provides the following features:
 - Inherited from default ASP.NET GridView control and hence have all its features and properties.
 - Works with all .NET versions starting from .NET 2.0.
 - Ability to customize/localize Export button text.
-- Option to Export in Landscape mode in case GridView content is wider and does not fit in default Portrait mode
+- Option to Export in Landscape mode in case GridView content is wider and does not fit in default Portrait mode.
 - Apply look and feel of your own theme on Export button using css.
-- Option to add custom heading on top of the exported document
-- Option to save each exported document on server at configurable disk path
-- Option to export current page or all pages when paging is enabled
+- Option to add custom heading on top of the exported document.
+- Option to save each exported document on server at configurable disk path.
+- Option to export current page or all pages when paging is enabled.
 
 ## System Requirements and Supported Platforms
 
@@ -98,11 +98,11 @@ Export GridView To Pdf Control for Visual Studio can be used on any system that 
 
 Export GridView To Pdf Control for Visual Studio is supported of all version of ASP.NET running on .NET framework 2.0 or greater. You can use any of the following Visual Studio versions to use this control in your ASP.NET applications
 
-- Visual Studio 2005
-- Visual Studio 2008
-- Visual Studio 2010
-- Visual Studio 2012
-- Visual Studio 2013
+- Visual Studio 2005.
+- Visual Studio 2008.
+- Visual Studio 2010.
+- Visual Studio 2012.
+- Visual Studio 2013.
 
 ## Downloading
 
@@ -116,11 +116,11 @@ It is very simple and easy to install Export GridView To Pdf Control, please fol
 
 ### **For Visual Studio 2010, 2012 and 2013**
 
-1. Extract the downloaded zip file i.e. Aspose.PDF.GridViewExport_1.0.zip
-1. Double click the VSIX file Aspose.PDF.GridViewExport.vsix
-1. A dialog will appear showing you the available and supported Visual Studio versions installed on your machine
+1. Extract the downloaded zip file i.e. Aspose.PDF.GridViewExport_1.0.zip.
+1. Double click the VSIX file Aspose.PDF.GridViewExport.vsix.
+1. A dialog will appear showing you the available and supported Visual Studio versions installed on your machine.
 1. Select the ones you want to add the Export GridView To Pdf Control to.
-1. Click Install
+1. Click Install.
 
 You will get a success dialog once the installation is completed.
 
@@ -130,14 +130,14 @@ You will get a success dialog once the installation is completed.
 
 Please follow these steps to integrate Export GridView To Pdf Control in Visual studio for easy drag and drop just like other ASP.NET controls
 
-1. Extract the downloaded zip file i.e. Aspose.PDF.GridViewExport.NET2.0_1.0.zip
-1. Make sure to run Visual Studio as Administrator
+1. Extract the downloaded zip file i.e. Aspose.PDF.GridViewExport.NET2.0_1.0.zip.
+1. Make sure to run Visual Studio as Administrator.
 
 On the Tools menu, click Choose Toolbox Items.
 
 1. Click Browse.
    The Open dialog box appears.
-1. Browse to the extracted folder and select Aspose.PDF.GridViewExport.dll
+1. Browse to the extracted folder and select Aspose.PDF.GridViewExport.dll.
 1. Click OK.
 
 When you open an aspx or ascx control in the left side Toolbox you will see ExportGridViewToPdf under General Tab
@@ -156,9 +156,9 @@ Once installed, it is very easy to start using this control in your ASP.NET appl
 
 If you have any issues using the above methods which uses Visual Studio Toolbox, you can manually add this control to your ASP.NET application running on any .NET framework greater than 2.0
 
-1. If you are using Visual Studio make sure to Run it as Administrator
+1. If you are using Visual Studio make sure to Run it as Administrator.
 1. Add reference to **Aspose.PDF.GridViewExport.dll** available in extracted download package in your ASP.NET project or web application. Make sure your web application/Visual Studio have full access to this folder otherwise you might get Access is denied exception.
-1. Add this line to the top of the page, control or MasterPage
+1. Add this line to the top of the page, control or MasterPage.
 
 ```csharp
  <%@ Register assembly="Aspose.PDF.GridViewExport" namespace="Aspose.PDF.GridViewExport" tagprefix="aspose" %>
@@ -207,14 +207,14 @@ The following properties are exposed to configure and use cool features provided
 
 |**Property Name**|**Type**|**Example/Possible values**|**Description**|
 | :- | :- | :- | :- |
-|ExportButtonText|string|Export to Pdf|You can use this property to override existing default text|
-|ExportButtonCssClass|string|btn btn-primary|Css Class that is applied to the outer div of the export button. To apply css on button you can use .yourClass input|
-|ExportInLandscape|bool|true or false|If true it changes the orientation of the output document to landscape. Default is Portrait|
+|ExportButtonText|string|Export to Pdf|You can use this property to override existing default text.|
+|ExportButtonCssClass|string|btn btn-primary|Css Class that is applied to the outer div of the export button. To apply css on button you can use .yourClass input.|
+|ExportInLandscape|bool|true or false|If true it changes the orientation of the output document to landscape. Default is Portrait.|
 | | | | |
-|ExportFileHeading|string|GridView Export Example Report|You can use html tags to add style to your heading|
+|ExportFileHeading|string|GridView Export Example Report|You can use html tags to add style to your heading.|
 |ExportOutputPathOnServer|string|c:/temp|Local output Disk path on server where a copy of the export is automatically saved. Application must have write access to this path.|
 |ExportDataSource|object|allRowsDataTable|Sets the object from which this data-bind control retrieves its list of data items. The object must have all the data that need to be exported. This property is used in addition to normal DataSource property and is useful when custom paging is enabled and current page only fetches rows to be displayed on screen.|
-|LicenseFilePath|string| |Local path on server to the license file. For example c:/inetpub/Aspose.PDF.lic|
+|LicenseFilePath|string| |Local path on server to the license file. For example c:/inetpub/Aspose.PDF.lic.|
 
 An example of Export GridView to Pdf control with all properties used is shown below
 
@@ -240,7 +240,7 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to this Pdf using any of the following platforms
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/issues)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/issues).
 
 ### Extend and Contribute
 
@@ -250,7 +250,7 @@ Aspose .NET Export GridView To Pdf for Visual Studio is open source and its sour
 
 You can get the latest source code from one of the following locations
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.PDF.GridViewExport)
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/tree/master/Plugins/Visual%20Studio/Aspose.PDF.GridViewExport).
 
 #### How to configure the source code
 
@@ -261,13 +261,13 @@ You need to have the following installed in order to open and extend the source 
 Please follow these simple steps to get started
 
 1. Download/Clone the source code.
-1. Open Visual Studio 2010 and Choose `File > Open Project`
-1. Browse to the latest source code that you have downloaded and open **Aspose.PDF.GridViewExport.sln**
+1. Open Visual Studio 2010 and Choose `File > Open Project`.
+1. Browse to the latest source code that you have downloaded and open **Aspose.PDF.GridViewExport.sln**.
 
 #### Source code overview
 
 There are three projects in the solution
 
 - Aspose.PDF.GridViewExport - Contains VSIX package and Server Pdf for .NET 4.0.
-- Aspose.PDF.GridViewExport_DotNet_2.0 - Extended GridView Pdf for .NET 2.0
-- Aspose.PDF.GridViewExport.Website - Web project for testing the Word Exportable GridView Pdf
+- Aspose.PDF.GridViewExport_DotNet_2.0 - Extended GridView Pdf for .NET 2.0.
+- Aspose.PDF.GridViewExport.Website - Web project for testing the Word Exportable GridView Pdf.

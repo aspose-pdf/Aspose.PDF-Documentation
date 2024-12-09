@@ -92,10 +92,10 @@ Aspose Visual Studio Plugin - **Explore Aspose.PDF for .NET Examples** is a grea
 This version provides the following features:
 
 - Supports Visual Studio 2010 and Visual Studio 2012 and Visual Studio 2013.
-- Easy to launch from **File > Aspose** menu in Visual Studio
+- Easy to launch from **File > Aspose** menu in Visual Studio.
 - Saves time and reduces the learning curve.
 - Enables you to select and open the latest Aspose.PDF for .NET API examples hosted on Github.com.
-- Allow you to open **C#** or **VB.NET** examples project
+- Allow you to open **C#** or **VB.NET** examples project.
 - A selected project is automatically opened in Visual Studio with all required references set to give you a ready to run and explore environment.
 - Automatically downloads the latest API libraries from **NuGet** and examples from **GitHub**.
 
@@ -105,7 +105,7 @@ This version provides the following features:
 
 In order to install and use Aspose Visual Studio Plugin you need to have one of the following Visual Studio version installed
 
-- Visual Studio 2010, 2012, 2013
+- Visual Studio 2010, 2012, 2013.
 
 Please feel free to contact us if you find any issues in installing or using this plugin.
 
@@ -113,14 +113,14 @@ Please feel free to contact us if you find any issues in installing or using thi
 
 You can download Aspose Visual Studio Plugin from one of the following locations
 
-- [Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET)
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposePdfExamplesVSPlugin)
+- [Visual Studio Gallery](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET).
+- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposePdfExamplesVSPlugin).
 
 ## Installing
 
 It is very simple and easy to install Aspose Visual Studio Plugin, please follow these simple steps
 
-- Double click the downloaded msi file
+- Double click the downloaded msi file.
 - Follow the steps, you can simply press Next on each screen to install it using standard settings.
 
 You will get a success dialog once the installation is completed.
@@ -164,8 +164,8 @@ This is why we offer free support. Anyone who uses our product, whether they hav
 
 You can log any issues or suggestions related to Aspose Visual Studio Plugin using any of the following platforms
 
-- [Visual Studio Gallery - Q and A](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET)
-- [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET/issues)
+- [Visual Studio Gallery - Q and A](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET).
+- [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET/issues).
 
 ### Extend and Contribute
 
@@ -175,19 +175,19 @@ You can log any issues or suggestions related to Aspose Visual Studio Plugin usi
 
 You can get the latest source code from one of the following locations
 
-- [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET)
+- [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET).
 
 #### How to configure the source code
 
 You need to have the following installed in order to open and extend the source code
 
-- Visual Studio 2010
+- Visual Studio 2010.
 
 Please follow these simple steps to get started
 
 1. Download/Clone the source code.
-1. Open Visual Studio 2010 and Choose **File** > **Open Project**
-1. Browse to the latest source code that you have downloaded and open **AsposeVisualStudioPlugin.sln**
+1. Open Visual Studio 2010 and Choose **File** > **Open Project**.
+1. Browse to the latest source code that you have downloaded and open **AsposeVisualStudioPlugin.sln**.
 
 #### Source code overview
 
