@@ -4,7 +4,7 @@ linktitle: Sticky Annotation
 type: docs
 weight: 50
 url: /java/sticky-annotations/
-description: This topic about sticky annotations, as an example we shows the Watermark Annotation in the text. It uses to represent graphics on the page. Check code snippet to resolve this task.
+description: Learn how to create sticky annotations in PDFs for notes, highlights, and comments using Aspose.PDF in Java.
 lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"

@@ -3,6 +3,7 @@ title: Custom Properties Supported
 type: docs
 weight: 20
 url: /reportingservices/custom-properties-supported/
+description: Check the supported custom properties in Aspose.PDF for Reporting Services. Maximize flexibility in your PDF outputs.
 lastmod: "2021-06-05"
 ---
 

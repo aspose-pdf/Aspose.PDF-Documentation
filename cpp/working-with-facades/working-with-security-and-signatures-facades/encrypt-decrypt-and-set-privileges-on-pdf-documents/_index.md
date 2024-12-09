@@ -3,6 +3,7 @@ title: Encrypt, Decrypt and set Privileges on PDF documents
 type: docs
 weight: 10
 url: /cpp/encrypt-decrypt-and-set-privileges-on-pdf-documents/
+description: Find out how to encrypt, decrypt, and set security privileges on PDF documents using C++ and Aspose.PDF to protect sensitive content.
 ---
 
 ## <ins>**Set Privileges on an Existing PDF File**

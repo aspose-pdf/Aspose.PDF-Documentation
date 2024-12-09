@@ -3,7 +3,7 @@ title: Adding Annotations to existing PDF file
 type: docs
 weight: 80
 url: /net/adding-annotations-to-existing-pdf-file/
-description: This section explains how to add Annotations to existing PDF file with Aspose.PDF Facades.
+description: Explore how to add annotations like comments or highlights to existing PDF documents in .NET using Aspose.PDF.
 lastmod: "2021-06-30"
 sitemap:
     changefreq: "monthly"

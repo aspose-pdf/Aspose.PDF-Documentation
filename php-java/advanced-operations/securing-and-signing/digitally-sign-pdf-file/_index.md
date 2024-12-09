@@ -4,7 +4,7 @@ linktitle: Digitally sign PDF
 type: docs
 weight: 10
 url: /php-java/digitally-sign-pdf-file/
-description: Digitally sign PDF documents using Java. Verify, or validate the digitally sign PDFs with Java based application with PDF Library. You can certify a PDF file with a PKCS1-Certificate.
+description: Explore how to digitally sign PDF documents in PHP using Aspose.PDF to protect document integrity and verify authorship.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"

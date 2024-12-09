@@ -3,6 +3,7 @@ title: Change in class name
 type: docs
 weight: 20
 url: /java/change-in-class-name/
+description: Understand the changes in class names in recent Aspose.PDF for Java versions to ensure compatibility with your existing codebase.
 lastmod: "2022-01-27"
 ---
 

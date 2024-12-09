@@ -3,7 +3,7 @@ title: Adding Javascript actions PDF
 type: docs
 weight: 10
 url: /net/adding-javascript-actions/
-description: This section explains how to add Javascript actions to existing PDF file with Aspose.PDF Facades.
+description: Discover how to add JavaScript actions, such as button clicks or form submissions, to PDFs in .NET using Aspose.PDF.
 lastmod: "2021-06-30"
 sitemap:
     changefreq: "monthly"

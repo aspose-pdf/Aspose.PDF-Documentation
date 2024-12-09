@@ -3,7 +3,7 @@ title: Page Break in existing PDF
 type: docs
 weight: 30
 url: /net/page-break-in-existing-pdf/
-description: This section explains how to break pages in an existing PDF using PdfFileEditor class.
+description: Discover how to insert page breaks in an existing PDF file in .NET using Aspose.PDF for better page management.
 lastmod: "2021-06-05"
 draft: false
 ---

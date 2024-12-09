@@ -3,7 +3,7 @@ title: Decorate Form Field in PDF
 type: docs
 weight: 30
 url: /net/decorate-form-field/
-description: This section explains how to decorate Form Field in PDF using FormEditor Class.
+description: Explore how to decorate form fields in a PDF document, adding visual enhancements like borders, in .NET with Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---

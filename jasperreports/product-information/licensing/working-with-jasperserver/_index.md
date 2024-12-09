@@ -2,7 +2,7 @@
 title: Working with JasperServer
 type: docs
 weight: 20
-url: /jasperreports/working-with-jasperserver/
+description: Explore how to efficiently work with JasperServer using Aspose.PDF. Export reports to professional PDFs with ease.
 lastmod: "2021-06-05"
 ---
 

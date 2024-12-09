@@ -4,7 +4,7 @@ linktitle: Bookmarks
 type: docs
 weight: 30
 url: /net/bookmarks/
-description: This section explain how to add, delete and get bookmark with Aspose.PDF for .NET.
+description: Discover how to work with PDF bookmarks in .NET using Aspose.PDF for easy document navigation and organization.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"

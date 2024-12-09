@@ -3,7 +3,7 @@ title: Add PDF Page Stamp
 type: docs
 weight: 10
 url: /net/add-pdf-page-stamp/
-description: This section explains how to work with Aspose.PDF Facades using PdfFileStamp Class.
+description: Discover how to add stamps to PDF pages in .NET, including text and images, for watermarking or branding using Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---

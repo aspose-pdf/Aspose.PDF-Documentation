@@ -3,6 +3,7 @@ title: Expand Report Items Props
 type: docs
 weight: 90
 url: /reportingservices/expand-report-items-properties/
+description: Enhance SSRS reports with Aspose.PDF. Learn how to expand report item properties for detailed PDF customization.
 lastmod: "2021-06-05"
 ---
 

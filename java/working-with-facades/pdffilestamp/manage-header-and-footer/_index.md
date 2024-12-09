@@ -3,7 +3,7 @@ title: Manage Header and Footer
 type: docs
 weight: 40
 url: /java/manage-header-and-footer/
-description: This section explains how to manage Header and Footer with Aspose.PDF Facades using PdfFileStamp Class.
+description: Learn how to add, remove, or modify headers and footers in a PDF document using Aspose.PDF in Java.
 lastmod: "2021-06-05"
 draft: false
 ---

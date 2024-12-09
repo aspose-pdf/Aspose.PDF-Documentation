@@ -3,7 +3,7 @@ title: Merge images
 type: docs
 weight: 20
 url: /net/merge-images/
-description: This section explains how to merge Images, and it is possible to save in the Tiff format.
+description: Discover how to merge images into a single PDF document in .NET using Aspose.PDF for streamlined document creation.
 lastmod: "2021-06-05"
 draft: false
 ---

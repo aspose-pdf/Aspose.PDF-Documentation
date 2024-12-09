@@ -3,7 +3,7 @@ title: PdfBookmarEditor Class
 type: docs
 weight: 50
 url: /java/working-with-bookmarks-facades/
-description: This section explains how to work with Aspose.PDF Facades using PdfBookmarEditor Class.
+description: Learn how to manage PDF bookmarks with facades in Java using Aspose.PDF for easier navigation within documents.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

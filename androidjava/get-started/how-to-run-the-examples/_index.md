@@ -4,7 +4,7 @@ linktitle: How to run other examples
 type: docs
 weight: 40
 url: /androidjava/how-to-run-other-examples/    
-description: This page demonstrates guidelines that will be helpful the following requirements before downloading and running the examples.
+description: Explore how to run various examples using Aspose.PDF on Android/Java for leveraging PDF functionalities in mobile apps.
 lastmod: "2021-06-05"
 ---
 

@@ -29,11 +29,11 @@ Using Aspose.PDF for Node.js in your project gives you the following profits:
 
 - [Extract a text from PDF](/pdf/nodejs-cpp/extract-text/)
 - [Optimize PDF document](/pdf/nodejs-cpp/optimize-pdf/)
-- [Add a stamp to PDF file](/pdf/nodejs-cpp/add-stamp-to-pdf/)
+- [Add a stamp to PDF file](/pdf/nodejs-cpp/stamping/)
 - [Add a image to PDF file](/pdf/nodejs-cpp/add-image-to-pdf/)
 - [Split PDF to two files](/pdf/nodejs-cpp/split-pdf/)
 - [Merge two files to PDF](/pdf/nodejs-cpp/merge-pdf/)
-- [Encrypt PDF documents](/pdf/nodejs-cpp/encrypt-pdf/)
+- [Encrypt PDF documents](/pdf/nodejs-cpp/encrypt-pdf/) 
 - [Decrypt PDF documents](/pdf/nodejs-cpp/decrypt-pdf/)
 
 ## Conversion Features

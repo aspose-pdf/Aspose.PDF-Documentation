@@ -3,7 +3,7 @@ title: Change Password of PDF File
 type: docs
 weight: 40
 url: /net/change-password/
-description: This topic explains how change-password on PDF File using PdfFileSecurity Class.
+description: Explore how to modify the password of a PDF document in .NET to improve file security with Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---

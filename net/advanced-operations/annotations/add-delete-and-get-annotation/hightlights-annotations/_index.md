@@ -4,7 +4,7 @@ linktitle: Highlight Annotation
 type: docs
 weight: 20
 url: /net/highlights-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+description: Learn how to add highlights annotation to PDF documents in .NET using Aspose.PDF for text emphasis and review.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"

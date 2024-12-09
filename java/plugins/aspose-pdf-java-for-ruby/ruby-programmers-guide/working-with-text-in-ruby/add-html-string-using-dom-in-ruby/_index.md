@@ -3,6 +3,7 @@ title: Add HTML String using DOM in Ruby
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-ruby/
+description: Discover how to add an HTML string to a PDF document using the DOM API in Ruby with Aspose.PDF for dynamic content generation.
 lastmod: "2021-06-05"
 ---
 

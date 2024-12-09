@@ -25,7 +25,7 @@ The following table indicates the Annotation types that Aspose.PDF for C++ suppo
 |[PolyLine](/pdf/cpp/figures-annotation/)|(PDF 1.5) Polyline annotation|||
 |[Highlight](/pdf/cpp/highlights-annotation/)|(PDF 1.3) Highlight annotation|||
 |[Underline](/pdf/cpp/highlights-annotation/)|(PDF 1.3) Underline annotation|||
-|[Squiggly](/cpp/highlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|||
+|[Squiggly](/pdf/cpp/highlights-annotation/)|(PDF 1.4) Squiggly-underline annotation|||
 |[StrikeOut](/pdf/cpp/highlights-annotation/)|(PDF 1.3) Strikeout annotation|||
 |[Stamp](/pdf/cpp/stamping/)|(PDF 1.3) Rubber stamp annotation|||
 |[Caret](/pdf/cpp/extra-annotations/)|(PDF 1.5) Caret annotation|||

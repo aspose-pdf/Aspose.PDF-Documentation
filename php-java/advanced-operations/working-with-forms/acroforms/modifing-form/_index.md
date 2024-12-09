@@ -3,7 +3,7 @@ title: Modifying AcroForms
 linktitle: Modifying AcroForms
 type: docs
 weight: 40
-url: /java/modifing-form/
+url: /php-java/modifing-form/
 description: This section explains how to modifying forms in your PDF document with Aspose.PDF for PHP via Java.
 lastmod: "2024-06-05"
 sitemap:

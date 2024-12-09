@@ -3,6 +3,7 @@ title: Get Page Properties in PHP
 type: docs
 weight: 50
 url: /java/get-page-properties-in-php/
+description: Explore how to retrieve the properties of specific pages in a PDF document in PHP using Aspose.PDF for detailed control.
 lastmod: "2021-06-05"
 ---
 

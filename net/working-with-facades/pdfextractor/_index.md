@@ -3,7 +3,7 @@ title: PdfExtractor Class
 type: docs
 weight: 50
 url: /net/pdfextractor-class/
-description: This section explains how to work with Aspose.PDF Facades using PdfExtractor Class.
+description: Learn how to extract content like text and images from a PDF using the PDFExtractor class in .NET with Aspose.PDF.
 lastmod: "2021-07-15"
 draft: false
 sitemap:

@@ -3,6 +3,7 @@ title: ASP - JScript via COM Interop
 type: docs
 weight: 40
 url: /net/asp-jscript-via-com-interop/
+description: Learn to use Aspose.PDF for .NET in ASP and JScript applications through COM Interop. Enable advanced PDF capabilities.
 ---
 <script type="application/ld+json">
 {

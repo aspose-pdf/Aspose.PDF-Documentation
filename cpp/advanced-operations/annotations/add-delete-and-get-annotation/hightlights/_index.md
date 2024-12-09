@@ -4,7 +4,7 @@ linktitle: Highlights Annotation
 type: docs
 weight: 20
 url: /cpp/highlights-annotation/
-description: The Markup annotations are presented in the text as highlights, underlines, strikeouts, or jagged underlines in the text of a document.
+description: Explore how to apply highlights annotation to PDF text in C++ with Aspose.PDF for document enhancement.
 lastmod: "2021-11-24"
 sitemap:
     changefreq: "monthly"

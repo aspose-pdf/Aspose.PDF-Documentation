@@ -3,6 +3,7 @@ title: Install Aspose.PDF for JasperReports
 type: docs
 weight: 50
 url: /jasperreports/installation/
+description: Step-by-step installation guide for Aspose.PDF for JasperReports. Start creating professional PDFs from JasperReports today.
 lastmod: "2021-06-05"
 ---
 

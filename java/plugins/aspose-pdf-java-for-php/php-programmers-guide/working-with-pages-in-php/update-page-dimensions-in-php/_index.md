@@ -3,6 +3,7 @@ title: Update Page Dimensions in PHP
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-php/
+description: Learn how to modify page dimensions within a PDF document in PHP using Aspose.PDF for better layout control.
 lastmod: "2021-06-05"
 ---
 

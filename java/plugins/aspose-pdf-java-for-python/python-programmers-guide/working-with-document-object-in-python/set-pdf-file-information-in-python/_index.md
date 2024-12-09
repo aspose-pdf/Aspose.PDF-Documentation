@@ -3,6 +3,7 @@ title: Set PDF File Information in Python
 type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-python/
+description: Learn how to set PDF file information such as author, title, and more in Python using Aspose.PDF to organize documents.
 lastmod: "2021-06-05"
 ---
 

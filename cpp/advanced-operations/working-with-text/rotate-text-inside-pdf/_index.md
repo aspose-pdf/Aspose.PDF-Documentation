@@ -4,7 +4,7 @@ linktitle: Rotate Text Inside PDF
 type: docs
 weight: 50
 url: /cpp/rotate-text-inside-pdf/
-description: Learn different ways to rotate text to PDF. Aspose.PDF allows you to rotate text to any angle, rotate text fragment or a whole paragraph.
+description: Learn how to rotate text within a PDF document in C++ using Aspose.PDF to adjust text orientation and improve layout.
 lastmod: "2021-12-13"
 sitemap:
     changefreq: "weekly"

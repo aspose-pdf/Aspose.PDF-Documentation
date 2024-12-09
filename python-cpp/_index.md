@@ -37,7 +37,6 @@ Aspose.PDF for Python via C++ offers a complete set of functions for working wit
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.PDF for Python via C++ Features](/pdf/python-cpp/key-features/)
 - [Aspose.PDF for Python via C++ Release Notes](https://releases.aspose.com/pdf/pythoncpp/)
 - [Aspose.PDF for Python via C++ Product Page](https://products.aspose.com/pdf/python-cpp/)
 - [Download Aspose.PDF for Python via C++](https://releases.aspose.com/pdf/pythoncpp/)
