@@ -11,6 +11,78 @@ sitemap:
 lastmod: "2021-06-05"
 ---
 
+## What's new in Aspose.PDF 24.9
+
+The `GraphicalPdfCompare` class is added to compare PDF documents and pages. Graphic comparison deals with document page images. It returns the result as an `ImagesDifference` object or as a PDF document that contains images merged from the original and the differences. Graphic comparison is most useful for documents with minor text or graphic content differences.
+
+You can set the following class properties:
+
+Resolution - resolution in DPI units for output images and images generated during the comparison.
+Color - the color of change marks.
+Threshold - change threshold in percent. The default value is zero. Setting a value other than zero allows you to ignore graphic changes that are insignificant to you.
+The class has a method that allows you to get page image differences in a form suitable for further processingn-ImagesDifference getDifference().
+
+The following code snippet demonstrates the graphic comparison of two PDF documents and saves an image with the differences in the resultant PDF document:
+
+```java
+
+    GraphicalPdfComparer comparer = new GraphicalPdfComparer();
+    comparer.setThreshold(3.0);
+    comparer.setColor(Color.getRed());
+    comparer.setResolution(new Resolution(300));
+
+    Document doc1 = new Document(dataDir+"graph_compare.pdf");
+    Document doc2 = new Document(dataDir+"graph_compare_.pdf");
+    comparer.compareDocumentsToPdf(doc2, doc1, dataDir+"graph_compare_24_9__.pdf");
+    doc1.close();
+    doc2.close();
+```
+
+Also, in this release possible to create an accessible PDF using low-level functions:
+
+The next code snippet works with a PDF document and its tagged content, utilizing an Aspose.PDF for Java library to process it.
+
+```java
+
+    //Create template document with simple text
+    Document documentTemp = new Document();
+    Page page = documentTemp .getPages().add();
+    TextFragment fragment = new TextFragment("Helloworld");
+    page.getParagraphs().add(fragment);
+    documentTemp .save(output);
+
+    //Add tag to the text in the document
+    Document document = new Document(output);
+    OperatorCollection operators = document.getPages().get_Item(1).getContents();
+    for (int i = 1; i <= operators.size(); i++) {
+        Operator op = operators.get_Item(i);
+        if (op instanceof BT) {
+            BDC bdc = new BDC("P", new BDCProperties(new Integer[]{1}, "ru", "Hello world"));
+            operators.insert(i - 1, bdc);
+            i += 1;
+        }
+
+        if (op instanceof ET) {
+            operators.insert(i + 1, new EMC());
+            i += 1;
+        }
+    }
+
+    ITaggedContent content = document.getTaggedContent();
+    SpanElement span = content.createSpanElement();
+    content.getRootElement().appendChild(span);
+    for (Operator op :  operators) {
+        if (op instanceof BDC) {
+            BDC bdc = (BDC)op;
+            if (bdc != null) {
+                span.tag(bdc);
+            }
+        }
+    }
+
+    document.save(output);
+```
+
 ## What's new in Aspose.PDF 24.8
 
 Since 24.8, support for the PDF/A-4 format:
