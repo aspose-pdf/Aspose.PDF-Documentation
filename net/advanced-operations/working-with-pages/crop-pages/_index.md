@@ -114,10 +114,8 @@ public static void CropPagesPDF()
 ```
 
 In this example we used a sample file [here](crop_page.pdf). Initially our page looks like shown on the Figure 1.
-![Figure 1. Cropped Page](crop_page.png)
 
 After the change, the page will look like Figure 2.
-![Figure 2. Cropped Page](crop_page2.png)
 
 <script type="application/ld+json">
 {

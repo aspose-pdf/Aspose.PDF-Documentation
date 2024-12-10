@@ -1,7 +1,7 @@
 ---
 title: Import and Export Data in JSON
 type: docs
-weight: 70
+weight: 80
 url: /net/import-export-json/
 description: This section explains how to import and Export Data in JSON
 lastmod: "2024-06-05"
