@@ -192,8 +192,6 @@ document.Save(dataDir + "appartments_mod.pdf");
 
 As an example, we will see the following result of adding Square and Circle annotations to a PDF document:
 
-![Circle and Square Annotation demo](circle_demo.png)
-
 ## Adding Polygon and Polyline Annotations
 
 The Poly- tool allows you to create shapes and outlines with an arbitrary number of sides on the document.

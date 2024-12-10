@@ -425,10 +425,6 @@ public static void Add3dAnnotation()
 }
 ```
 
-This code example showed us such a model:
-
-![3D Annotation demo](3d_demo.png)
-
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",

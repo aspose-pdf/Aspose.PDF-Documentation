@@ -168,8 +168,8 @@ await chatCopilot.SaveResponseAsync("message1", "outputPath");
 await chatCopilot
     .SaveResponseAsync(new List<string>
     {
-    "message1",
-    "message2"
+        "message1",
+        "message2"
     },
     "outputPath");
 ```

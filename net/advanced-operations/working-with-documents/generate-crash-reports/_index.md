@@ -101,7 +101,7 @@ try
 }
 catch (Exception ex)
 {
-PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+    PdfException.GenerateCrashReport(new CrashReportOptions(ex));
 }
 ```
 
@@ -117,7 +117,6 @@ catch (Exception ex)
     CrashReportOptions options = new CrashReportOptions(ex);
     //by default it's working directory of application
     options.CrashReportDirectory = "C:\Temp";
-
     PdfException.GenerateCrashReport(new CrashReportOptions(ex));
 }
 ```
@@ -136,7 +135,6 @@ catch (Exception ex)
     //by default crash report name will be generated like following:
     //string.Format(@"CrashReport_{0}_{1}.html", DateTime.Today.ToShortDateString(), DateTime.Now.Ticks)
     options.CrashReportFilename = "custom_crash_report_name.html";
-
     PdfException.GenerateCrashReport(options);
 }
 ```
