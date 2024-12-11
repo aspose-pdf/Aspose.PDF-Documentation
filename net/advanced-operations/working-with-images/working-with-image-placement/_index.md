@@ -84,34 +84,31 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Load the source PDF document
-Document document = new Document(dataDir +  "ImagePlacement.pdf");
-ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-           
-// Load the contents of first page
-document.Pages[1].Accept(abs);
-foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
+private static void ExtractAndScaleImagesFromPDF()
 {
-    // Get image properties
-    Console.Out.WriteLine("image width:" + imagePlacement.Rectangle.Width);
-    Console.Out.WriteLine("image height:" + imagePlacement.Rectangle.Height);
-    Console.Out.WriteLine("image LLX:" + imagePlacement.Rectangle.LLX);
-    Console.Out.WriteLine("image LLY:" + imagePlacement.Rectangle.LLY);
-    Console.Out.WriteLine("image horizontal resolution:" + imagePlacement.Resolution.X);
-    Console.Out.WriteLine("image vertical resolution:" + imagePlacement.Resolution.Y);
+	// The path to the documents directory
+	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Retrieve image with visible dimensions
-    Bitmap scaledImage;
-    using (MemoryStream imageStream = new MemoryStream())
-    {
-        // Retrieve image from resources
-        imagePlacement.Image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Png);
-        Bitmap resourceImage = (Bitmap)Bitmap.FromStream(imageStream);
-        // Create bitmap with actual dimensions
-        scaledImage = new Bitmap(resourceImage, (int)imagePlacement.Rectangle.Width, (int)imagePlacement.Rectangle.Height);
-    }
+	// Load the source PDF document using 'using' block to ensure proper disposal
+	using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
+	{
+		var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+
+		// Load the contents of the first page
+		document.Pages[1].Accept(abs);
+
+		// Iterate through each image placement on the first page
+		foreach (var imagePlacement in abs.ImagePlacements)
+		{
+			// Get image properties
+			Console.Out.WriteLine("image width: " + imagePlacement.Rectangle.Width);
+			Console.Out.WriteLine("image height: " + imagePlacement.Rectangle.Height);
+			Console.Out.WriteLine("image LLX: " + imagePlacement.Rectangle.LLX);
+			Console.Out.WriteLine("image LLY: " + imagePlacement.Rectangle.LLY);
+			Console.Out.WriteLine("image horizontal resolution: " + imagePlacement.Resolution.X);
+			Console.Out.WriteLine("image vertical resolution: " + imagePlacement.Resolution.Y);
+		}
+	}
 }
 ```
 
