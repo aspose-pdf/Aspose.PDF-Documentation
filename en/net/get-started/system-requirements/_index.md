@@ -120,6 +120,7 @@ You can use Aspose.PDF for .NET to develop applications in any development envir
 - Microsoft Visual Studio 2017[^1].
 - Microsoft Visual Studio 2019.
 - Microsoft Visual Studio 2022.
+- Microsoft Visual Studio Code.
 
 ## Supported Frameworks
 The following .NET Framework versions are supported:
