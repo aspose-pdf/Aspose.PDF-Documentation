@@ -1,4 +1,4 @@
-name: Hugo-CI
+name: Hugo-CI-stage
 on:
   push:
     branches:
