@@ -1,0 +1,36 @@
+name: Hugo-CI
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+        '.github/**'
+
+jobs:
+  job-one:
+    name: Deploy
+    runs-on: [self-hosted, linux, x64, dev4-pdf]
+    steps:
+      - name: hugo build
+        run: |
+          git clone https://x-access-token:${{ secrets.GH_PAT }}@github.com/aspose-pdf/Aspose.PDF-Hugo-template.git || (cd Aspose.PDF-Hugo-template && git pull)
+          cd Aspose.PDF-Hugo-template
+          rm -rf content
+          sudo npm install -D --save autoprefixer
+          sudo npm install -D --save postcss-cli
+          rsync --recursive --delete --force --progress ../* content/
+          rm -rf content/Aspose.PDF-Hugo-template
+          rm -rf public
+          hugo0.136 --baseURL docs.aspose.com/pdf  --config ./config.toml,./configs/docs.aspose.com-pdf.toml
+          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+      - name: hugo deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
+          port: ${{ secrets.SSHPORT }}
+          script: |
+            sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
+            sudo chmod -R 755 ${{ secrets.DEPLOYPATH }}
+            sudo nginx -s reload
