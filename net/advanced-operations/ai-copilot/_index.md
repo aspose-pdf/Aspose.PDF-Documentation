@@ -123,7 +123,7 @@ private static async Task GetSummary()
     Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
     // Save summary as PDF document.
-    await summaryCopilot.SaveSummaryAsync("Summary.pdf");
+    await summaryCopilot.SaveSummaryAsync("Summary_out.pdf");
 }
 ```
 
@@ -166,15 +166,15 @@ private static async Task ChatWithDocument()
     });
 
     // Save summary as PDF document.
-    await chatCopilot.SaveResponseAsync("Summarize this document.", "ResponseDocument1.pdf");
+    await chatCopilot.SaveResponseAsync("Summarize this document.", "ResponseDocument1_out.pdf");
 
     // Save summary as PDF document.
     await chatCopilot.SaveResponseAsync(new List<string>
         {
             "What is the subject of this document?",
             "How many words in it?"
-        }, 
-        "ResponseDocument2.pdf");
+        },
+        "ResponseDocument2_out.pdf");
 
     // Save context (ids of assistant, thread, documents).
     await chatCopilot.SaveContextAsync("ContextBackup.json");
