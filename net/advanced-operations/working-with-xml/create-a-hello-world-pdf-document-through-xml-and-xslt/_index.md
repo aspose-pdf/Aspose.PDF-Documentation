@@ -139,7 +139,7 @@ private static void CreateDocument()
         //Bind XML and XSLT files to the document
         document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
 
-        //Save the document
+        // Save output document
         document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
     }
 }
@@ -161,7 +161,7 @@ private static void CreateDocument()
     //Bind XML and XSLT files to the document
     document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
 
-    //Save the document
+    // Save output document
     document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
 }
 ```
