@@ -1,18 +1,18 @@
 ---
 title: وثائق Aspose.PDF لـ .NET
-linktitle: Aspose.PDF لـ .NET
-second_title: Aspose.PDF لـ .NET
+linktitle: Aspose.PDF for .NET
+second_title: Aspose.PDF for .NET
 type: docs
 weight: 10
 url: /ar/net/
 is_root: true
-lastmod: "2021-06-05"
+lastmod: "2024-12-16"
 description: تعلم استخدام Aspose.PDF .NET لإنشاء تطبيقات لمعالجة مستندات PDF على أي منصة باستخدام C#، VB. استعراض الدروس، أكواد العينة، والمزيد.
 aliases:
     - /net/working-with-aspose-pdf/
-    - /net/developer-guide/           
+    - /net/developer-guide/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 ![صورة شعار Aspose.PDF لـ .NET](aspose_pdf-for-net.png)
