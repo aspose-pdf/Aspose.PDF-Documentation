@@ -282,7 +282,7 @@ class Program
         license.SetLicense("Aspose.PDF.NET.lic");
 
         // Initialize a new PDF document
-        using (Document document = new Document())
+        using (var document = new Document())
         {
             // Add a page to the document
             var page = document.Pages.Add();
