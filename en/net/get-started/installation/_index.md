@@ -277,7 +277,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Add at the beginning of your Main method
+        // Activate your license, you can comment out these codelines to use library in Evaluation mode
         var license = new License();
         license.SetLicense("Aspose.PDF.NET.lic");
 
