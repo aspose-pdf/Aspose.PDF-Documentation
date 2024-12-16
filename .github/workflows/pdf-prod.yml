@@ -1,4 +1,4 @@
-name: Hugo-CI
+name: Hugo-CI-prod
 on:
   push:
     branches:
@@ -21,7 +21,7 @@ jobs:
           rsync --recursive --delete --force --progress ../* content/
           rm -rf content/Aspose.PDF-Hugo-template
           rm -rf public
-          hugo0.136 --baseURL docs.aspose.com/pdf  --config ./config.toml,./configs/docs.aspose.com-pdf.toml
+          hugo0.136 --baseURL https://docs.aspose.com/pdf  --config ./config.toml,./configs/docs.aspose.com-pdf.toml
           rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: appleboy/ssh-action@master
