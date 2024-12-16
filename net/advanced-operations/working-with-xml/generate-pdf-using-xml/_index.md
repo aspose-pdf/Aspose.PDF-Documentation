@@ -339,37 +339,98 @@ To convert this file to PDF we should create an XSL with HTML layout. Let's rend
 
 So, we need to transform XML and load into PDF document. The following example shows this way:
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void ExampleXSLTtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ExampleXsltToPdf()
 {
-    var dataDir = @"C:\tmp\";
-    var XmlContent = File.ReadAllText(@"XMLFile1.xml");
-    var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
+
     // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var document = new Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    document.Save(dataDir + "data_xml.pdf");
+
+    //Create pdf document
+    using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
+    {
+        // Save output document
+        document.Save(dataDir + "XSLT_out.pdf");
+    }
 }
 
-public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
 {
     var transform = new XslCompiledTransform();
+
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
     }
+
     var memoryStream = new MemoryStream();
     var results = new StreamWriter(memoryStream);
+
     using (var reader = XmlReader.Create(new StringReader(inputXml)))
     {
         transform.Transform(reader, null, results);
     }
+
     memoryStream.Position = 0;
     return memoryStream;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ExampleXsltToPDF()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
+    var options = new Aspose.Pdf.HtmlLoadOptions();
+
+    // set page size to A5
+    options.PageInfo.Height = 595;
+    options.PageInfo.Width = 420;
+
+    //Create pdf document
+    using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
+
+    // Save output document
+    document.Save(dataDir + "XSLT_out.pdf");
+}
+
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, null, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Generating PDF document using XSL-FO markup
 
@@ -462,17 +523,50 @@ Let's create yet another file - the XSL-FO markup file to transform employees' d
 Aspose.PDF has a special [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) class that allows to apply XSL-FO tranformation.
 The following snippet shows how to use this class with the sample files described above.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void Example_Xslfo_to_Pdf()
 {
-    var dataDir = @"C:\tmp\";
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
     // Instantiate XslFoLoadOption object
-    var options = new Pdf.XslFoLoadOptions("employees.xslt");
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
     // Create Document object
-    var document = new Document("employees.xml", options);
-    document.Save(dataDir + "data_xml.pdf");
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save output document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void Example_Xslfo_to_Pdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Create Document object
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
+
+    // Save output document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Generating PDF document using XSL-FO markup and XSL params
 
@@ -572,51 +666,104 @@ To add XSL params we need to create own [XsltArgumentList](https://docs.microsof
 set as property in [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
 The following snippet shows how to use this class with the sample files described above.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF_Param_21_7()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void Example_Xslfo_to_Pdf_Param_21_7()
 {
-  string xmlInputFile = dataDir + "employees.xml";
-  string xsltInputFile = dataDir + "employees.xslt";
-  string outputFile = dataDir + "out.pdf";
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
 
-  XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
+    string xmlInputFile = dataDir + "employees.xml";
+    string xsltInputFile = dataDir + "employees.xslt";
 
-  options.XsltArgumentList = new XsltArgumentList();
-  options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+    // Instantiate XslFoLoadOption object
+    Aspose.Pdf.XslFoLoadOptions options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
 
-  Document document = new Document(xmlInputFile, options);
-  document.Save(outputFile);
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+
+    // Create Document object
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(xmlInputFile, options))
+    {
+        // Save output document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-If you use version earlier than 21.7, please use following techinque:
-
+{{< tab tabNum="2" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF_Param_21_6()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void Example_Xslfo_to_Pdf_Param_21_7()
 {
-    var XmlContent = File.ReadAllText(dataDir + "employees.xml");
-    var XsltContent = File.ReadAllText(dataDir + "employees.xslt");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    string xmlInputFile = dataDir + "employees.xml";
+    string xsltInputFile = dataDir + "employees.xslt";
+
+    // Instantiate XslFoLoadOption object
+    Aspose.Pdf.XslFoLoadOptions options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
+
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+
+    // Create Document object
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(xmlInputFile, options);
+
+    // Save output document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+If you use version earlier than 21.7, please use following technique:
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void Example_Xslfo_to_Pdf_Param_21_6()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
 
     var options = new Aspose.Pdf.XslFoLoadOptions();
-    var document = new Document(TransformXSL(XmlContent, XsltContent), options);
-    document.Save(dataDir + "data_xml.pdf");
+
+    // Create Document object
+    using (var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options))
+    {
+        // Save output document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 
-public static MemoryStream TransformXSL(string inputXml, string xsltString)
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
 {
     var transform = new XslCompiledTransform();
 
     //Create own XsltArgumentList
     XsltArgumentList argsList = new XsltArgumentList();
     argsList.AddParam("isBoldName", "", "no");
-    
+
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
     }
-    var memoryStream = new MemoryStream();
 
+    var memoryStream = new MemoryStream();
     var results = new StreamWriter(memoryStream);
+
     using (var reader = XmlReader.Create(new StringReader(inputXml)))
     {
         transform.Transform(reader, argsList, results);
@@ -626,6 +773,52 @@ public static MemoryStream TransformXSL(string inputXml, string xsltString)
     return memoryStream;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void Example_Xslfo_to_Pdf_Param_21_6()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Create Document object
+    using var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options);
+
+    // Save output document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    //Create own XsltArgumentList
+    XsltArgumentList argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, argsList, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Generating PDF document based on Aspose.PDF XML Schema
 
@@ -648,15 +841,50 @@ Let's define the page with default parameters. Our page will have an A4 page siz
 
 To generate PDF document we will use [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) method.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void Example_XML_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ExampleXmlToPdf()
 {
-    var dataDir = @"C:\tmp\";
-    var document = new Document();
-    document.BindXml(dataDir + "aspose_pdf_demo.xml");
-    document.Save(dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create Document object
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Bind XML file to the document
+        document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+        // Save output document
+        document.Save(dataDir + "XML_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ExampleXmlToPdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create Document object
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML file to the document
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+    // Save output document
+    document.Save(dataDir + "XML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 To define a new page size we should add a `PageInfo` element. In the following example, we were set A5 page size and margins 25mm and 10mm.
 
@@ -1129,6 +1357,69 @@ segment = (TextSegment)document.GetObjectById("strongHtml");
 document.Save(dataDir + "XMLToPDF_out.pdf");
 ```
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Instantiate Document object
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    {
+        // Bind source XML file
+        document.BindXml(dataDir + "log.xml");
+
+        // Get reference of page object from XML
+        Aspose.Pdf.Page page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+        // Get reference of first TextSegment with ID boldHtml
+        Aspose.Pdf.Text.TextSegment segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+        // Get reference of second TextSegment with ID strongHtml
+        segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+        // Save output document
+        document.Save(dataDir + "XMLToPDF_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Instantiate Document object
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+
+    // Bind source XML file
+    document.BindXml(dataDir + "log.xml");
+
+    // Get reference of page object from XML
+    Aspose.Pdf.Page page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+    // Get reference of first TextSegment with ID boldHtml
+    Aspose.Pdf.Text.TextSegment segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+    // Get reference of second TextSegment with ID strongHtml
+    segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+    // Save output document
+    document.Save(dataDir + "XMLToPDF_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ### Adding graphics elements to the page
 
 We can add other additionital elements to XML document: Image or Graph objects. The following snippet shows how to add those elements to the document
@@ -1207,6 +1498,71 @@ Image image = (Image)document.GetObjectById("testImg");
 image.File = inFile;
 document.Save(outFile);
 ```
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateDocument()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    string inXml = dataDir + "input.xml";
+    string inFile = dataDir + "aspose-logo.jpg";
+    string outFile = dataDir + "output_out.pdf";
+
+    // Create Document object
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    {
+        // Bind source XML file
+        document.BindXml(inXml);
+
+        // Get reference of Image with ID testImg
+        Aspose.Pdf.Image image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+        // Set image file
+        image.File = inFile;
+
+        // Save output document
+        document.Save(outFile);
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateDocument()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    string inXml = dataDir + "input.xml";
+    string inFile = dataDir + "aspose-logo.jpg";
+    string outFile = dataDir + "output_out.pdf";
+
+    // Create Document object
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+
+    // Bind source XML file
+    document.BindXml(inXml);
+
+    // Get reference of Image with ID testImg
+    Aspose.Pdf.Image image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+    // Set image file
+    image.File = inFile;
+
+    // Save output document
+    document.Save(outFile);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
