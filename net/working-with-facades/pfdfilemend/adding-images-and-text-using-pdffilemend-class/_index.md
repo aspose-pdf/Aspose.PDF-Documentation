@@ -97,7 +97,7 @@ private static void AddImage01()
 	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
 	// Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
 	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
 	{
 		// Load image into stream
@@ -123,7 +123,7 @@ private static void AddImage02()
 	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
 	// Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
 	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
 	{
 		// Load image into stream
@@ -159,7 +159,7 @@ private static void AddImage03()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
     // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         // Load image into stream
@@ -193,7 +193,7 @@ private static void AddImage04()
 	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
 	// Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
 	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
 	{
 		// Load image into stream
@@ -234,7 +234,7 @@ private static void AddText01()
 	// Create PdfFileMend object using 'using' block to ensure proper disposal
 	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
 	{
-		mender.BindPdf(dataDir + "sample.pdf");
+		mender.BindPdf(dataDir + "AddImage.pdf");
 
 		// Create formatted text
 		var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose!");
@@ -262,7 +262,7 @@ private static void AddText02()
 	// Create PdfFileMend object using 'using' block to ensure proper disposal
 	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
 	{
-		mender.BindPdf(dataDir + "sample.pdf");
+		mender.BindPdf(dataDir + "AddImage.pdf");
 
 		// Create formatted text
 		var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose! Welcome to Aspose!");
@@ -287,7 +287,7 @@ private static void AddText03()
 	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
 	// Create Document object and add pages
-	using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
 	{
 		document.Pages.Add();
 		document.Pages.Add();

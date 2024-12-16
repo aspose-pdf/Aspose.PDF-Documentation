@@ -93,20 +93,21 @@ private static void UsingGraphicsAbsorber()
 	using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
 	{
 		// Step 3: Create an instance of GraphicsAbsorber
-		var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
-
-		// Select the first page of the document
-		var page = document.Pages[1];
-
-		// Step 4: Use the `Visit` method to extract graphics from the page
-		graphicsAbsorber.Visit(page);
-
-		// Step 5: Display information about the extracted elements
-		foreach (var element in graphicsAbsorber.Elements)
+		using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
 		{
-			Console.WriteLine($"Page Number: {element.SourcePage.Number}");
-			Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
-			Console.WriteLine($"Number of Operators: {element.Operators.Count}");
+			// Select the first page of the document
+			var page = document.Pages[1];
+
+			// Step 4: Use the `Visit` method to extract graphics from the page
+			graphicsAbsorber.Visit(page);
+
+			// Step 5: Display information about the extracted elements
+			foreach (var element in graphicsAbsorber.Elements)
+			{
+				Console.WriteLine($"Page Number: {element.SourcePage.Number}");
+				Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
+				Console.WriteLine($"Number of Operators: {element.Operators.Count}");
+			}
 		}
 	}
 }
@@ -130,28 +131,29 @@ private static void MoveGraphics()
 	// Open document using 'using' block to ensure proper disposal
 	using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
 	{
-		// Create a GraphicsAbsorber instance
-		var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
-
-		// Select the first page of the document
-		var page = document.Pages[1];
-
-		// Extract graphic elements from the page
-		graphicsAbsorber.Visit(page);
-
-		// Temporarily suspend updates to improve performance
-		graphicsAbsorber.SuppressUpdate();
-
-		// Loop through each extracted graphic element and shift its position
-		foreach (var element in graphicsAbsorber.Elements)
+		// Create a GraphicsAbsorber instance using 'using' block
+		using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
 		{
-			var position = element.Position;
-			// Move graphics by shifting its X and Y coordinates
-			element.Position = new Aspose.Pdf.Point(position.X + 150, position.Y - 10);
-		}
+			// Select the first page of the document
+			var page = document.Pages[1];
 
-		// Resume updates and apply changes
-		graphicsAbsorber.ResumeUpdate();
+			// Extract graphic elements from the page
+			graphicsAbsorber.Visit(page);
+
+			// Temporarily suspend updates to improve performance
+			graphicsAbsorber.SuppressUpdate();
+
+			// Loop through each extracted graphic element and shift its position
+			foreach (var element in graphicsAbsorber.Elements)
+			{
+				var position = element.Position;
+				// Move graphics by shifting its X and Y coordinates
+				element.Position = new Aspose.Pdf.Point(position.X + 150, position.Y - 10);
+			}
+
+			// Resume updates and apply changes
+			graphicsAbsorber.ResumeUpdate();
+		}
 
 		// Save the modified document
 		document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
@@ -178,36 +180,37 @@ private static void RemoveGraphicsMethod1()
     // Open the document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber
-        var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
-
-        // Get the first page of the document
-        var page = document.Pages[1];
-
-        // Extract graphic elements from the page
-        graphicsAbsorber.Visit(page);
-
-        // Define the rectangle where graphics will be removed
-        var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
-
-        // Temporarily suspend updates for better performance
-        graphicsAbsorber.SuppressUpdate();
-
-        // Iterate through the extracted graphic elements and remove elements inside the rectangle
-        foreach (var element in graphicsAbsorber.Elements)
+        // Create an instance of GraphicsAbsorber using 'using' block
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
-            // Check if the graphic's position falls within the rectangle
-            if (rectangle.Contains(element.Position))
+            // Get the first page of the document
+            var page = document.Pages[1];
+
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
+
+            // Define the rectangle where graphics will be removed
+            var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
+
+            // Temporarily suspend updates for better performance
+            graphicsAbsorber.SuppressUpdate();
+
+            // Iterate through the extracted graphic elements and remove elements inside the rectangle
+            foreach (var element in graphicsAbsorber.Elements)
             {
-                // Remove the graphic element
-                element.Remove();
+                // Check if the graphic's position falls within the rectangle
+                if (rectangle.Contains(element.Position))
+                {
+                    // Remove the graphic element
+                    element.Remove();
+                }
             }
+
+            // Resume updates and apply changes
+            graphicsAbsorber.ResumeUpdate();
         }
 
-        // Resume updates and apply changes
-        graphicsAbsorber.ResumeUpdate();
-
-        // Save the modified document
+        // Save the modified document with '_out' suffix
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -218,45 +221,46 @@ private static void RemoveGraphicsMethod1()
 ```csharp
 private static void RemoveGraphicsMethod2()
 {
-	// The path to the document directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Open document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
-	{
-		// Create an instance of GraphicsAbsorber
-		var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
+    {
+        // Create an instance of GraphicsAbsorber using 'using' block
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the first page of the document
+            var page = document.Pages[1];
 
-		// Get the first page of the document
-		var page = document.Pages[1];
+            // Define the rectangle where graphics will be removed
+            var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
 
-		// Define the rectangle where graphics will be removed
-		var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
 
-		// Extract graphic elements from the page
-		graphicsAbsorber.Visit(page);
+            // Create a collection for the removed elements
+            var removedElementsCollection = new Aspose.Pdf.Vector.GraphicElementCollection();
 
-		// Create a collection for the removed elements
-		var removedElementsCollection = new Aspose.Pdf.Vector.GraphicElementCollection();
+            // Add elements within the rectangle to the collection
+            foreach (var item in graphicsAbsorber.Elements.Where(el => rectangle.Contains(el.Position)))
+            {
+                removedElementsCollection.Add(item);
+            }
 
-		// Add elements within the rectangle to the collection
-		foreach (var item in graphicsAbsorber.Elements.Where(el => rectangle.Contains(el.Position)))
-		{
-			removedElementsCollection.Add(item);
-		}
+            // Temporarily suppress updates for better performance
+            page.Contents.SuppressUpdate();
 
-		// Temporarily suppress updates for better performance
-		page.Contents.SuppressUpdate();
+            // Delete the selected graphic elements
+            page.DeleteGraphics(removedElementsCollection);
 
-		// Delete the selected graphic elements
-		page.DeleteGraphics(removedElementsCollection);
+            // Resume updates and apply changes
+            page.Contents.ResumeUpdate();
+        }
 
-		// Resume updates and apply changes
-		page.Contents.ResumeUpdate();
-
-		// Save the updated document
-		document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
-	}
+        // Save the updated document with '_out' suffix
+        document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
+    }
 }
 ```
 
@@ -278,29 +282,30 @@ private static void AddToAnotherPageMethod1()
     // Open document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create a GraphicsAbsorber instance
-        var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
-
-        // Get the first and second pages
-        var page1 = document.Pages[1];
-        var page2 = document.Pages[2];
-
-        // Extract graphic elements from the first page
-        graphicsAbsorber.Visit(page1);
-
-        // Temporarily suppress updates for better performance
-        page2.Contents.SuppressUpdate();
-
-        // Add each graphic element from the first page to the second page
-        foreach (var element in graphicsAbsorber.Elements)
+        // Create a GraphicsAbsorber instance using 'using' block
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
-            element.AddOnPage(page2); // Add each graphic element to the second page.
+            // Get the first and second pages
+            var page1 = document.Pages[1];
+            var page2 = document.Pages[2];
+
+            // Extract graphic elements from the first page
+            graphicsAbsorber.Visit(page1);
+
+            // Temporarily suppress updates for better performance
+            page2.Contents.SuppressUpdate();
+
+            // Add each graphic element from the first page to the second page
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                element.AddOnPage(page2); // Add each graphic element to the second page.
+            }
+
+            // Resume updates and apply changes
+            page2.Contents.ResumeUpdate();
         }
 
-        // Resume updates and apply changes
-        page2.Contents.ResumeUpdate();
-
-        // Save the updated document
+        // Save the updated document with '_out' suffix
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -311,34 +316,35 @@ private static void AddToAnotherPageMethod1()
 ```csharp
 private static void AddToAnotherPageMethod2()
 {
-	// The path to the document directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Open document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
-	{
-		// Create a GraphicsAbsorber instance
-		var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
+    {
+        // Create a GraphicsAbsorber instance using 'using' block
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the first and second pages
+            var page1 = document.Pages[1];
+            var page2 = document.Pages[2];
 
-		// Get the first and second pages
-		var page1 = document.Pages[1];
-		var page2 = document.Pages[2];
+            // Extract graphic elements from the first page
+            graphicsAbsorber.Visit(page1);
 
-		// Extract graphic elements from the first page
-		graphicsAbsorber.Visit(page1);
+            // Temporarily suppress updates for better performance
+            page2.Contents.SuppressUpdate();
 
-		// Temporarily suppress updates for better performance
-		page2.Contents.SuppressUpdate();
+            // Add all graphics at once from the first page to the second page
+            page2.AddGraphics(graphicsAbsorber.Elements);
 
-		// Add all graphics at once from the first page to the second page
-		page2.AddGraphics(graphicsAbsorber.Elements);
+            // Resume updates and apply changes
+            page2.Contents.ResumeUpdate();
+        }
 
-		// Resume updates and apply changes
-		page2.Contents.ResumeUpdate();
-
-		// Save the updated document
-		document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
-	}
+        // Save the updated document with '_out' suffix
+        document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
+    }
 }
 ```
 

@@ -91,7 +91,7 @@ private static void MergeImages01()
 								.ToList();
 
 	// Use 'using' block to ensure proper resource management for both input and output streams
-	using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+	using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
 	using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.jpg", FileMode.Create))  // Output file with '_out' suffix
 	{
 		// Copy merged images to the output file
@@ -116,7 +116,7 @@ private static void MergeImages02()
 
 	// Use 'using' block to ensure proper resource management for both input and output streams
 	using (Stream inputStream =
-			Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
+			Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
 	using (FileStream outputStream = new FileStream(dataDir + "MergeImages02_out.jpg", FileMode.Create))  // Output file with '_out' suffix
 	{
 		// Copy merged images to the output file
@@ -141,7 +141,7 @@ private static void MergeImages03()
 
 	// Use 'using' block to ensure proper resource management for both input and output streams
 	using (Stream inputStream =
-			Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
+			Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
 	using (FileStream outputStream = new FileStream(dataDir + "MergeImages03_out.jpg", FileMode.Create))  // Output file with '_out' suffix
 	{
 		// Copy merged images to the output file
@@ -191,7 +191,7 @@ private static void MergeImages05()
 
     // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
-            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
     using (MemoryStream outputStream = new MemoryStream())  // Output to MemoryStream
     {
         // Copy merged images to the MemoryStream

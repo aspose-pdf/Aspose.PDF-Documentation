@@ -154,14 +154,20 @@ private static void EllipseFilled()
         // Create first ellipse and set its fill color
         var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(100, 100, 120, 180)
         {
-            GraphInfo = { FillColor = Aspose.Pdf.Color.GreenYellow }
+            GraphInfo = 
+			{ 
+				FillColor = Aspose.Pdf.Color.GreenYellow 
+			}
         };
         graph.Shapes.Add(ellipse1);
 
         // Create second ellipse and set its fill color
         var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(200, 150, 180, 120)
         {
-            GraphInfo = { FillColor = Aspose.Pdf.Color.DarkRed }
+            GraphInfo = 
+			{ 
+				FillColor = Aspose.Pdf.Color.DarkRed 
+			}
         };
         graph.Shapes.Add(ellipse2);
 
@@ -212,7 +218,10 @@ private static void EllipseWithText()
         // Create first ellipse and set properties
         var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(100, 100, 120, 180)
         {
-            GraphInfo = { FillColor = Aspose.Pdf.Color.GreenYellow },
+            GraphInfo = 
+			{ 
+				FillColor = Aspose.Pdf.Color.GreenYellow 
+			},
             Text = textFragment
         };
         graph.Shapes.Add(ellipse1);
@@ -220,7 +229,10 @@ private static void EllipseWithText()
         // Create second ellipse and set properties
         var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(200, 150, 180, 120)
         {
-            GraphInfo = { FillColor = Aspose.Pdf.Color.DarkRed },
+            GraphInfo = 
+			{ 
+				FillColor = Aspose.Pdf.Color.DarkRed 
+			},
             Text = textFragment
         };
         graph.Shapes.Add(ellipse2);

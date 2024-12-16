@@ -113,25 +113,37 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 The following code snippet shows how to get each watermark on the first page of a PDF file with C#.
 
 ```csharp
-public static void AddWatermarks()
+private static void AddWatermarks()
 {
-    Document document = new Document(dataDir + "text.pdf");
-    WatermarkArtifact artifact = new WatermarkArtifact();
-    artifact.SetTextAndState(
-        "WATERMARK",
-        new TextState()
-        {
-            FontSize = 72,
-            ForegroundColor = Color.Blue,
-            Font = FontRepository.FindFont("Courier")
-        });
-    artifact.ArtifactHorizontalAlignment = HorizontalAlignment.Center;
-    artifact.ArtifactVerticalAlignment = VerticalAlignment.Center;
-    artifact.Rotation = 45;
-    artifact.Opacity = 0.5;
-    artifact.IsBackground = true;
-    document.Pages[1].Artifacts.Add(artifact);
-    document.Save(dataDir + "watermark.pdf");
+	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Dynamic path for data directory
+
+	// Open document using 'using' block to ensure proper disposal
+	using (var document = new Aspose.Pdf.Document(dataDir + "AddWatermarks.pdf"))
+	{
+		// Create a new watermark artifact
+		var artifact = new Aspose.Pdf.WatermarkArtifact();
+		artifact.SetTextAndState(
+			"WATERMARK",
+			new Aspose.Pdf.Text.TextState()
+			{
+				FontSize = 72,
+				ForegroundColor = Aspose.Pdf.Color.Blue,
+				Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier")
+			});
+
+		// Set watermark properties
+		artifact.ArtifactHorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+		artifact.ArtifactVerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+		artifact.Rotation = 45;
+		artifact.Opacity = 0.5;
+		artifact.IsBackground = true;
+
+		// Add watermark artifact to the first page
+		document.Pages[1].Artifacts.Add(artifact);
+
+		// Save the updated document with '_out' suffix
+		document.Save(dataDir + "AddWatermarks_out.pdf");
+	}
 }
 ```
 

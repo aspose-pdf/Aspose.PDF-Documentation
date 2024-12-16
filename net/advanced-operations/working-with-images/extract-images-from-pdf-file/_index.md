@@ -85,14 +85,13 @@ The image's index returns an [XImage](https://reference.aspose.com/pdf/net/aspos
 private static void ExtractImageFromPDF()
 {
 	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 	// Open document using 'using' block to ensure proper disposal
 	using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
 	{
 		// Extract a particular image
 		var xImage = document.Pages[1].Resources.Images[1];
-
 		using (var outputImage = new FileStream(dataDir + "ExtractedImage.jpg", FileMode.Create))
 		{
 			// Save output image

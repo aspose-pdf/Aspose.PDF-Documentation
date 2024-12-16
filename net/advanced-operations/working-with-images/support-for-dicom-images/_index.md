@@ -107,7 +107,6 @@ private static void AddDicomImageToPDF()
         document.Save(dataDir + "PdfWithDicomImage_out.pdf");
     }
 }
-
 ```
 
 

@@ -85,25 +85,24 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 private static void ExtractImagesFromPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+	// The path to the documents directory.
+	string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
-    {
-        // Extract a particular image
-        var xImage = document.Pages[1].Resources.Images[1];
+	// Open document using 'using' block to ensure proper disposal
+	using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
+	{
+		// Extract a particular image
+		var xImage = document.Pages[1].Resources.Images[1];
 
-        using (var outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create))
-        {
-            // Save output image
-            xImage.Save(outputImage, ImageFormat.Jpeg);
-        }
+		using (var outputImage = new FileStream(dataDir + "outputImage.jpg", FileMode.Create))
+		{
+			// Save output image
+			xImage.Save(outputImage, ImageFormat.Jpeg);
+		}
 
-        // Save updated PDF file
-        document.Save(dataDir + "ExtractImages_out.pdf");
-    }
+		// Save updated PDF file
+		document.Save(dataDir + "ExtractImages_out.pdf");
+	}
 }
-
 ```

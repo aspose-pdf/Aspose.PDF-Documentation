@@ -100,37 +100,40 @@ Follow the steps below:
 ```csharp
 private static void ExampleCurve()
 {
-    // The path to the document directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+	// The path to the document directory
+	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document())
-    {
-        // Add page to pages collection of PDF file
-        var page = document.Pages.Add();
+	// Create Document instance using 'using' block to ensure proper disposal
+	using (var document = new Aspose.Pdf.Document())
+	{
+		// Add page to pages collection of PDF file
+		var page = document.Pages.Add();
 
-        // Create Drawing object with certain dimensions
-        var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+		// Create Drawing object with certain dimensions
+		var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
 
-        // Set border for Drawing object
-        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
-        graph.Border = borderInfo;
+		// Set border for Drawing object
+		var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+		graph.Border = borderInfo;
 
-        // Create a curve and set its properties
-        var curve1 = new Aspose.Pdf.Drawing.Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 })
-        {
-            GraphInfo = { Color = Aspose.Pdf.Color.GreenYellow }
-        };
+		// Create a curve and set its properties
+		var curve1 = new Aspose.Pdf.Drawing.Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 })
+		{
+			GraphInfo = 
+			{ 
+				Color = Aspose.Pdf.Color.GreenYellow 
+			}
+		};
 
-        // Add the curve to the graph shapes
-        graph.Shapes.Add(curve1);
+		// Add the curve to the graph shapes
+		graph.Shapes.Add(curve1);
 
-        // Add Graph object to paragraphs collection of page
-        page.Paragraphs.Add(graph);
+		// Add Graph object to paragraphs collection of page
+		page.Paragraphs.Add(graph);
 
-        // Save PDF file
-        document.Save(dataDir + "DrawingCurve1_out.pdf");
-    }
+		// Save PDF file
+		document.Save(dataDir + "DrawingCurve1_out.pdf");
+	}
 }
 
 ```
@@ -165,7 +168,10 @@ private static void CurveFilled()
         // Create a curve and set fill color
         var curve1 = new Aspose.Pdf.Drawing.Curve(new float[] { 10, 10, 50, 60, 70, 10, 100, 120 })
         {
-            GraphInfo = { FillColor = Aspose.Pdf.Color.GreenYellow }
+            GraphInfo = 
+			{ 
+				FillColor = Aspose.Pdf.Color.GreenYellow 
+			}
         };
 
         // Add the curve to the graph shapes

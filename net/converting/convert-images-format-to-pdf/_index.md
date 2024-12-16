@@ -168,7 +168,7 @@ private static void ConvertBMPtoPDF()
 	using (var document = new Aspose.Pdf.Document())
 	{
 		document.Pages.Add();
-		Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+		var image = new Aspose.Pdf.Image();
 		
 		// Load sample BMP image file
 		image.File = dataDir + "BMPtoPDF.bmp";
@@ -237,7 +237,7 @@ private static void ConvertDICOMtoPDF()
     using (var document = new Aspose.Pdf.Document())
     {
 		// Add a page to pages collection of document
-		Page page = document.Pages.Add();
+		var page = document.Pages.Add();
 		
 		var image = new Aspose.Pdf.Image
 		{
@@ -374,7 +374,7 @@ private static void ConvertJPGtoPDF()
     using (var document = new Aspose.Pdf.Document())
     {
 		// Load input JPG file
-		String path = dataDir + "JPGtoPDF.jpg";
+		var path = dataDir + "JPGtoPDF.jpg";
 		// Add empty page in empty document
 		var page = document.Pages.Add();
 		var image = new Aspose.Pdf.Image();
@@ -458,7 +458,7 @@ private static void ConvertPNGtoPDF()
     using (var document = new Aspose.Pdf.Document())
     {
 		// Load input PNG file
-		String path = dataDir + "PNGtoPDF.png";
+		var path = dataDir + "PNGtoPDF.png";
 		// Add an empty page
 		var page = document.Pages.Add();
 		var image = new Aspose.Pdf.Image();
@@ -535,10 +535,9 @@ The following code snippet shows the process of getting the source SVG file's di
 ```csharp
 private static void ConvertSVGtoPDF()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 	// The path to the documents directory.
-	string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+	var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 	var loadopt = new Aspose.Pdf.SvgLoadOptions();
 	loadopt.AdjustPageSize = true;
 	using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", loadopt))
@@ -787,32 +786,34 @@ private static void ConvertTIFFtoPDF()
 {
 	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	// Load TIFF image into stream
 	using (var document = new Aspose.Pdf.Document())
 	{
-		var bitmap = new System.Drawing.Bitmap(File.OpenRead(dataDir + "TIFFtoPDF.tif"));
-
-		// Convert multi page or multi frame TIFF to PDF
-		FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
-		int frameCount = bitmap.GetFrameCount(dimension);
-
-		// Iterate through each frame
-		for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+		using (var bitmap = new System.Drawing.Bitmap(File.OpenRead(dataDir + "TIFFtoPDF.tif")))
 		{
-			Page page = document.Pages.Add();
+			// Convert multi page or multi frame TIFF to PDF
+			var dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
+			var frameCount = bitmap.GetFrameCount(dimension);
 
-			bitmap.SelectActiveFrame(dimension, frameIdx);
-
-			MemoryStream currentImage = new MemoryStream();
-			bitmap.Save(currentImage, ImageFormat.Tiff);
-
-			var imageht = new Aspose.Pdf.Image
+			// Iterate through each frame
+			for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
 			{
-				ImageStream = currentImage,
-				//Apply some other options
-				//ImageScale = 0.5
-			};
-			page.Paragraphs.Add(imageht);
+				var page = document.Pages.Add();
+
+				bitmap.SelectActiveFrame(dimension, frameIdx);
+
+				using (var currentImage = new MemoryStream())
+				{
+					bitmap.Save(currentImage, ImageFormat.Tiff);
+
+					var imageht = new Aspose.Pdf.Image
+					{
+						ImageStream = currentImage,
+						//Apply some other options
+						//ImageScale = 0.5
+					};
+					page.Paragraphs.Add(imageht);
+				}
+			}
 		}
 
 		// Save output PDF file
@@ -866,7 +867,6 @@ private static void ConvertDJVUtoPDF()
         document.Save(dataDir + "CDRtoPDF_out.pdf");
     }
 }
-
 ```
 
 ## Convert HEIC to PDF
@@ -878,31 +878,31 @@ Convert HEIC images to PDF using Aspose.PDF:
 ```cs
 private static void ConvertHEICtoPDF()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    
-    using (var fs = new FileStream(dataDir + "HEICtoPDF.heic", FileMode.Open))
-    {
-        var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
-        var pixels = image.GetByteArray(PixelFormat.Rgb24);
-        var width = (int)image.Width;
-        var height = (int)image.Height;
+	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-        using (var document = new Aspose.Pdf.Document())
-        {
-            var page = document.Pages.Add();
-            var asposeImage = new Aspose.Pdf.Image();
-            asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, BitmapInfo.PixelFormat.Rgb24);
-            page.PageInfo.Height = height;
-            page.PageInfo.Width = width;
-            page.PageInfo.Margin.Bottom = 0;
-            page.PageInfo.Margin.Top = 0;
-            page.PageInfo.Margin.Right = 0;
-            page.PageInfo.Margin.Left = 0;
+	using (var fs = new FileStream(dataDir + "HEICtoPDF.heic", FileMode.Open))
+	{
+		var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
+		var pixels = image.GetByteArray(PixelFormat.Rgb24);
+		var width = (int)image.Width;
+		var height = (int)image.Height;
 
-            page.Paragraphs.Add(asposeImage);
-            document.Save(dataDir + "HEICtoPDF_out.pdf");
-        }
-    }
+		using (var document = new Aspose.Pdf.Document())
+		{
+			var page = document.Pages.Add();
+			var asposeImage = new Aspose.Pdf.Image();
+			asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, Aspose.Pdf.BitmapInfo.PixelFormat.Rgb24);
+			page.PageInfo.Height = height;
+			page.PageInfo.Width = width;
+			page.PageInfo.Margin.Bottom = 0;
+			page.PageInfo.Margin.Top = 0;
+			page.PageInfo.Margin.Right = 0;
+			page.PageInfo.Margin.Left = 0;
+
+			page.Paragraphs.Add(asposeImage);
+			document.Save(dataDir + "HEICtoPDF_out.pdf");
+		}
+	}
 }
 ```
 

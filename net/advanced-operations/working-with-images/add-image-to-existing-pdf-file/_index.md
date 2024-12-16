@@ -96,48 +96,48 @@ The following code snippet shows how to add the image in a PDF document.
 ```csharp
 private static void AddImageToPDF()
 {
-    // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+	// The path to the documents directory
+	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-    {
-        // Set coordinates for the image placement
-        int lowerLeftX = 100;
-        int lowerLeftY = 100;
-        int upperRightX = 200;
-        int upperRightY = 200;
+	// Open document using 'using' block to ensure proper disposal
+	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+	{
+		// Set coordinates for the image placement
+		int lowerLeftX = 100;
+		int lowerLeftY = 100;
+		int upperRightX = 200;
+		int upperRightY = 200;
 
-        // Get the page where image needs to be added
-        var page = document.Pages[1];
+		// Get the page where image needs to be added
+		var page = document.Pages[1];
 
-        // Load image into stream using 'using' block
-        using (var imageStream = new FileStream(dataDir + "AddImage.jpg", FileMode.Open))
-        {
-            // Add image to Images collection of Page Resources
-            page.Resources.Images.Add(imageStream);
+		// Load image into stream using 'using' block
+		using (var imageStream = new FileStream(dataDir + "AddImage.jpg", FileMode.Open))
+		{
+			// Add image to Images collection of Page Resources
+			page.Resources.Images.Add(imageStream);
 
-            // Using GSave operator: this operator saves the current graphics state
-            page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+			// Using GSave operator: this operator saves the current graphics state
+			page.Contents.Add(new Aspose.Pdf.Operators.GSave());
 
-            // Create Rectangle and Matrix objects to define image positioning
-            var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-            var matrix = new Aspose.Pdf.Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
+			// Create Rectangle and Matrix objects to define image positioning
+			var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+			var matrix = new Aspose.Pdf.Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
 
-            // Using ConcatenateMatrix operator: defines how the image must be placed
-            page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+			// Using ConcatenateMatrix operator: defines how the image must be placed
+			page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
 
-            // Retrieve the added image and use Do operator to draw it
-            var ximage = page.Resources.Images[page.Resources.Images.Count];
-            page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+			// Retrieve the added image and use Do operator to draw it
+			var ximage = page.Resources.Images[page.Resources.Images.Count];
+			page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
 
-            // Using GRestore operator: this operator restores the graphics state
-            page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-        }
+			// Using GRestore operator: this operator restores the graphics state
+			page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+		}
 
-        // Save the updated document
-        document.Save(dataDir + "AddImage_out.pdf");
-    }
+		// Save the updated document
+		document.Save(dataDir + "AddImage_out.pdf");
+	}
 }
 ```
 
@@ -158,11 +158,11 @@ There is also an alternative, easier way to add a Image to a PDF file. You can u
 private static void AddImageToPDFUsingPdfFileMender()
 {
 	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
 	// Define image file and output PDF file paths
-	string imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
-	string outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
+	var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
+	var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 
 	// Create a new Document object and add pages
 	using (var document = new Aspose.Pdf.Document())
@@ -202,7 +202,7 @@ private static void AddCroppedImageToPDF()
 	using (var document = new Aspose.Pdf.Document())
 	{
 		// Open image stream using 'using' block
-		using (Stream imgStream = File.OpenRead(imageFileName))
+		using (var imgStream = File.OpenRead(imageFileName))
 		{
 			// Define the rectangle where the image will be placed on the PDF page
 			var imageRect = new Aspose.Pdf.Rectangle(17.62, 65.25, 602.62, 767.25);
@@ -374,7 +374,7 @@ private static void AddStencilMasksToImages()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddStencilMasksToImages.pdf"))
     {
         // Open the first mask image file using 'using' block
         using (var fs1 = new FileStream(dataDir + "mask1.jpg", FileMode.Open))
@@ -391,10 +391,9 @@ private static void AddStencilMasksToImages()
         }
 
         // Save the updated document
-        document.Save(dataDir + "output_with_masks.pdf");
+        document.Save(dataDir + "AddStencilMasksToImages_out.pdf");
     }
 }
-
 ```
 
 <script type="application/ld+json">
