@@ -6,13 +6,13 @@ type: docs
 weight: 10
 url: /ru/net/
 is_root: true
-lastmod: "2021-06-05"
+lastmod: "2024-12-16"
 description: Узнайте, как использовать Aspose.PDF .NET для создания приложений для обработки документов PDF на любой платформе с использованием C#, VB. Изучите учебные пособия, примеры кода и многое другое.
 aliases:
     - /net/working-with-aspose-pdf/
-    - /net/developer-guide/           
+    - /net/developer-guide/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
 ![Логотип Aspose.PDF для .NET](aspose_pdf-for-net.png)
@@ -21,8 +21,7 @@ sitemap:
 
 {{% alert color="primary" %}}
 
-Aspose.PDF - это компонент .NET, созданный для того, чтобы разработчики могли программно создавать PDF-документы, будь то простые или сложные, на лету.
-Aspose.PDF — это компонент .NET, созданный для того, чтобы разработчики могли программно создавать PDF-документы, будь то простые или сложные, на лету.
+Aspose.PDF - это компонент .NET, созданный для того, чтобы разработчики могли программно создавать PDF-документы любой сложности.
 
 {{% /alert %}}
 
