@@ -185,3 +185,126 @@ These fonts should be placed in "/usr/share/fonts/truetype/msttcorefonts" direct
 ```csharp
 Aspose.Pdf.Text.FontRepository.Sources.Add(new FolderFontSource("<user's path to ms fonts>"));
 ```
+
+#### Set up Aspose.PDF for .NET in Visual Studio Code
+- Install .NET SDK
+
+1. Visit the official ![Microsoft .NET website](https://dotnet.microsoft.com/download).
+2. Download the latest .NET SDK.
+3. Run the installer.
+4. Open a terminal and verify installation by running:
+```bash
+dotnet --version
+```
+
+- Install Visual Studio Code
+
+1. Go to https://code.visualstudio.com/.
+2. Download the appropriate version for your operating system.
+
+- Install Required VS Code Extensions
+
+1. Open Visual Studio Code.
+2. Click on the Extensions view icon (square icon on the left sidebar).
+3. Search for and install the following extensions:
+   - "C#" by Microsoft
+   - "C# Dev Kit" by Microsoft
+   - ".NET Core Test Explorer" (optional, but recommended)
+
+- Create a new .NET project
+
+1. Open Visual Studio Code
+2. Go to Terminal > New Terminal
+3. Navigate to your desired project directory
+```bash
+# Create a new console application
+dotnet new console -n AsposePDFNetDemo
+# Navigate into the project directory
+cd AsposePDFNetDemo
+```
+
+- Add NuGet package
+
+```bash
+# Install Aspose.PDF package
+dotnet add package Aspose.PDF
+```
+
+- Verify package installation
+
+1. Open the `.csproj` file
+2. Confirm the Aspose.PDF package reference is added:
+```xml
+<ItemGroup>
+  <PackageReference Include="Aspose.PDF" Version="x.x.x" />
+</ItemGroup>
+```
+
+- Create Debug Configuration
+
+1. Press Ctrl+Shift+P (Cmd+Shift+P on Mac).
+2. Type ">.NET: Generate Assets for Build and Debug".
+3. Select your project.
+4. Create or modify `.vscode/launch.json`:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/net7.0/AsposePDFNetDemo.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ]
+}
+```
+
+- Write sample code Program.cs
+
+Replace the contents of `Program.cs` with:
+```csharp
+using System;
+using Aspose.Pdf;
+using Aspose.Pdf.Text;
+
+class Program 
+{
+    static void Main(string[] args)
+    {
+        // Add at the beginning of your Main method
+        var license = new License();
+        license.SetLicense("Aspose.PDF.NET.lic");
+
+        // Initialize a new PDF document
+        using (Document document = new Document())
+        {
+            // Add a page to the document
+            var page = document.Pages.Add();
+            
+            // Create a text fragment
+            var textFragment = new TextFragment("Hello, Aspose.PDF for .NET!");
+            textFragment.Position = new Position(100, 600);
+            
+            // Add text to the page
+            page.Paragraphs.Add(textFragment);
+            
+            // Save the document
+            document.Save("sample.pdf");
+        }
+    }
+}
+```
+
+- Build and run
+
+```bash
+dotnet restore
+dotnet build
+dotnet run
+```
