@@ -13,7 +13,7 @@ switch ($mode.ToLower()) {
     }
     "develop" {
         $branch = "develop"
-        $link = "https://docs.aspose.com/pdf"
+        $link = "docs-qa.aspose.com"
         Write-Output "Run in QA mode"
         break
     }
@@ -28,4 +28,4 @@ New-Item -ItemType Directory -Path E:\doc-test\content
 Set-Location  E:\doc-test\content
 git clone -b $branch --single-branch https://github.com/aspose-pdf/Aspose.PDF-Documentation.git .
 Set-Location  E:\doc-test\
-hugo --baseURL $link/pdf/ --config ./config.toml,.\configs\$link-pdf.toml
+hugo --baseURL https://$link/pdf/ --config ./config.toml,.\configs\$link-pdf.toml
