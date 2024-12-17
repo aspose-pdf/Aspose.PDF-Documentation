@@ -91,22 +91,58 @@ Links are represented as annotations in a PDF file, so to extract links, extract
 
 The following code snippet shows you how to extract links from a PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Open document
-Document document = new Document(dataDir +  "ExtractLinks.pdf");
-// Extract actions
-Page page = document.Pages[1];
-AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
-page.Accept(selector);
-IList<Annotation> list = selector.Selected;
-Annotation annotation = (Annotation)list[0];
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Save updated document
-document.Save(dataDir + "ExtractLinks_out.pdf");
+private static void ExtractLinkAnnotation()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
+    {
+        // Extract actions
+        Aspose.Pdf.Page page = document.Pages[1];
+        Aspose.Pdf.Annotations.AnnotationSelector selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+        page.Accept(selector);
+        IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
+        Aspose.Pdf.Annotations.Annotation annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+
+        // Save updated document
+        document.Save(dataDir + "ExtractLinks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ExtractLinkAnnotation()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");
+
+    // Extract actions
+    Aspose.Pdf.Page page = document.Pages[1];
+    Aspose.Pdf.Annotations.AnnotationSelector selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+    page.Accept(selector);
+    IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
+    Aspose.Pdf.Annotations.Annotation annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+
+    // Save updated document
+    document.Save(dataDir + "ExtractLinks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
