@@ -85,11 +85,14 @@ In the sample code below we demonstrate how to iterate through each page in a PD
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-public static void ExtractFormFields()
+private static void ExtractFormFields()
 {
-    var document = new Document(dataDir + "StudentInfoFormElectronic.pdf");
+    // Load source PDF document
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf");
+
     // Get values from all fields
-    foreach (Field formField in document.Form)
+    foreach (Aspose.Pdf.Forms.Field formField in document.Form)
     {
         Console.WriteLine("Field Name : {0} ", formField.PartialName);
         Console.WriteLine("Value : {0} ", formField.Value);
@@ -108,11 +111,17 @@ The form field's Value property allows you to get the value of a particular fiel
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-public static void ExtractFormFieldsToJson()
+private static void ExtractFormFieldsToJson()
 {
-    var document = new Document(dataDir + "StudentInfoFormElectronic.pdf");
-    var formData = document.Form.Cast<Field>().Select(f => new { Name = f.PartialName, f.Value });
-    string jsonString = JsonSerializer.Serialize(formData);
+    // Load source PDF document
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf");
+
+    // Extract form fields and convert to JSON
+    var formData = document.Form.Cast<Aspose.Pdf.Forms.Field>().Select(f => new { Name = f.PartialName, f.Value });
+    string jsonString = System.Text.Json.JsonSerializer.Serialize(formData);
+
+    // Output the JSON string
     Console.WriteLine(jsonString);
 }
 ```
@@ -124,19 +133,22 @@ Form class allows you to export data to an XML file from the PDF file using Expo
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-
-// Open document
-using (Form form = new Form())
+private static void ExportFormDataToXml()
 {
-    form.BindPdf(dataDir + "input.pdf");
-    // Create xml file.
-    using (FileStream xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
+    // Explicit dataDir initialization
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    // Open document
+    using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Export data
-        form.ExportXml(xmlOutputStream);
+        form.BindPdf(dataDir + "input.pdf");
+
+        // Create xml file
+        using (var xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
+        {
+            // Export data
+            form.ExportXml(xmlOutputStream);
+        }
     }
 }
 ```
@@ -148,23 +160,26 @@ Form class allows you to export data to an FDF file from the PDF file using Expo
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-
-using (Form form = new Aspose.Pdf.Facades.Form())
+private static void ExportDataToPdf()
 {
-    // Open Document
-    form.BindPdf(dataDir + "input.pdf");
+    // Explicit dataDir initialization
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-    // Create fdf file.
-    using (FileStream fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create))
+    using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Export data
-        form.ExportFdf(fdfOutputStream);
+        // Open Document
+        form.BindPdf(dataDir + "input.pdf");
+
+        // Create fdf file
+        using (var fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create))
+        {
+            // Export data
+            form.ExportFdf(fdfOutputStream);
+        }
+
+        // Save updated document
+        form.Save(dataDir + "ExportDataToPdf_out.pdf");
     }
-    // Save updated document
-    form.Save(dataDir + "ExportDataToPdf_out.pdf");
 }
 ```
 
@@ -175,22 +190,25 @@ Form class allows you to export data to an XFDF file from the PDF file using Exp
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-
-using (Form form = new Form())
+private static void ExportDataToXFDF()
 {
-    // Open Document
-    form.BindPdf(dataDir + "input.pdf");
+    // Explicit dataDir initialization
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-    // Create xfdf file.
-    using (FileStream xfdfOutputStream = new FileStream("student1.xfdf", FileMode.Create))
+    using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Export data
-        form.ExportXfdf(xfdfOutputStream);
+        // Open Document
+        form.BindPdf(dataDir + "input.pdf");
+
+        // Create xfdf file
+        using (var xfdfOutputStream = new FileStream(dataDir + "student1.xfdf", FileMode.Create))
+        {
+            // Export data
+            form.ExportXfdf(xfdfOutputStream);
+        }
+
+        // Save updated document
+        form.Save(dataDir + "ExportDataToXFDF_out.pdf");
     }
-    // Save updated document
-    form.Save(dataDir + "ExportDataToXFDF_out.pdf");
 }
 ```
