@@ -124,77 +124,70 @@ private static void GenerateThumbnailImagesFromPDF()
     string templatePortraitFile = Application.StartupPath + @"\pdftemplate_portrait.gif";
     string templateLandscapeFile = Application.StartupPath + @"\pdftemplate_landscape.gif";
 
-    try
-    {
-        // Get list of files to process from the input path
-        string[] files = Directory.GetFiles(pdfInputPath, "*.pdf");
+    // Get list of files to process from the input path
+    string[] files = Directory.GetFiles(pdfInputPath, "*.pdf");
 
-        for (int n = 0; n < files.Length; n++)
+    for (int n = 0; n < files.Length; n++)
+    {
+        string inputFile = files[n];
+        string outputFile = Path.Combine(pngOutputPath, Path.GetFileNameWithoutExtension(inputFile) + ".png");
+
+        // Create the document
+        pdfDoc = (Acrobat.CAcroPDDoc)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.PDDoc", "");
+
+        if (pdfDoc.Open(inputFile) == 0)
         {
-            string inputFile = files[n];
-            string outputFile = Path.Combine(pngOutputPath, Path.GetFileNameWithoutExtension(inputFile) + ".png");
-
-            // Create the document
-            pdfDoc = (Acrobat.CAcroPDDoc)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.PDDoc", "");
-
-            if (pdfDoc.Open(inputFile) == 0)
-            {
-                throw new FileNotFoundException($"Unable to open PDF file: {inputFile}");
-            }
-
-            int pageCount = pdfDoc.GetNumPages();
-            pdfPage = (Acrobat.CAcroPDPage)pdfDoc.AcquirePage(0);
-            pdfPoint = (Acrobat.CAcroPoint)pdfPage.GetSize();
-
-            pdfRect = (Acrobat.CAcroRect)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.Rect", "");
-            pdfRect.Left = 0;
-            pdfRect.right = pdfPoint.x;
-            pdfRect.Top = 0;
-            pdfRect.bottom = pdfPoint.y;
-
-            pdfPage.CopyToClipboard(pdfRect, 0, 0, 100);
-            IDataObject clipboardData = Clipboard.GetDataObject();
-
-            if (clipboardData.GetDataPresent(DataFormats.Bitmap))
-            {
-                Bitmap pdfBitmap = (Bitmap)clipboardData.GetData(DataFormats.Bitmap);
-
-                int thumbnailWidth = 45;
-                int thumbnailHeight = 59;
-                string templateFile = pdfPoint.x < pdfPoint.y ? templatePortraitFile : templateLandscapeFile;
-
-                if (pdfPoint.x > pdfPoint.y)
-                {
-                    // Swap width and height for landscape orientation
-                    (thumbnailWidth, thumbnailHeight) = (thumbnailHeight, thumbnailWidth);
-                }
-
-                Bitmap templateBitmap = new Bitmap(templateFile);
-                Image pdfImage = pdfBitmap.GetThumbnailImage(thumbnailWidth, thumbnailHeight, null, IntPtr.Zero);
-
-                Bitmap thumbnailBitmap = new Bitmap(thumbnailWidth + 7, thumbnailHeight + 7, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
-
-                templateBitmap.MakeTransparent();
-
-                using (Graphics thumbnailGraphics = Graphics.FromImage(thumbnailBitmap))
-                {
-                    thumbnailGraphics.DrawImage(pdfImage, 2, 2, thumbnailWidth, thumbnailHeight);
-                    thumbnailGraphics.DrawImage(templateBitmap, 0, 0);
-                    thumbnailBitmap.Save(outputFile, System.Drawing.Imaging.ImageFormat.Png);
-                }
-
-                Console.WriteLine("Generated thumbnail: {0}", outputFile);
-
-                pdfDoc.Close();
-                Marshal.ReleaseComObject(pdfPage);
-                Marshal.ReleaseComObject(pdfRect);
-                Marshal.ReleaseComObject(pdfDoc);
-            }
+            throw new FileNotFoundException($"Unable to open PDF file: {inputFile}");
         }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"An error occurred: {ex}");
+
+        int pageCount = pdfDoc.GetNumPages();
+        pdfPage = (Acrobat.CAcroPDPage)pdfDoc.AcquirePage(0);
+        pdfPoint = (Acrobat.CAcroPoint)pdfPage.GetSize();
+
+        pdfRect = (Acrobat.CAcroRect)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.Rect", "");
+        pdfRect.Left = 0;
+        pdfRect.right = pdfPoint.x;
+        pdfRect.Top = 0;
+        pdfRect.bottom = pdfPoint.y;
+
+        pdfPage.CopyToClipboard(pdfRect, 0, 0, 100);
+        IDataObject clipboardData = Clipboard.GetDataObject();
+
+        if (clipboardData.GetDataPresent(DataFormats.Bitmap))
+        {
+            Bitmap pdfBitmap = (Bitmap)clipboardData.GetData(DataFormats.Bitmap);
+
+            int thumbnailWidth = 45;
+            int thumbnailHeight = 59;
+            string templateFile = pdfPoint.x < pdfPoint.y ? templatePortraitFile : templateLandscapeFile;
+
+            if (pdfPoint.x > pdfPoint.y)
+            {
+                // Swap width and height for landscape orientation
+                (thumbnailWidth, thumbnailHeight) = (thumbnailHeight, thumbnailWidth);
+            }
+
+            Bitmap templateBitmap = new Bitmap(templateFile);
+            Image pdfImage = pdfBitmap.GetThumbnailImage(thumbnailWidth, thumbnailHeight, null, IntPtr.Zero);
+
+            Bitmap thumbnailBitmap = new Bitmap(thumbnailWidth + 7, thumbnailHeight + 7, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+            templateBitmap.MakeTransparent();
+
+            using (Graphics thumbnailGraphics = Graphics.FromImage(thumbnailBitmap))
+            {
+                thumbnailGraphics.DrawImage(pdfImage, 2, 2, thumbnailWidth, thumbnailHeight);
+                thumbnailGraphics.DrawImage(templateBitmap, 0, 0);
+                thumbnailBitmap.Save(outputFile, System.Drawing.Imaging.ImageFormat.Png);
+            }
+
+            Console.WriteLine("Generated thumbnail: {0}", outputFile);
+
+            pdfDoc.Close();
+            Marshal.ReleaseComObject(pdfPage);
+            Marshal.ReleaseComObject(pdfRect);
+            Marshal.ReleaseComObject(pdfDoc);
+        }
     }
 }
 ```
