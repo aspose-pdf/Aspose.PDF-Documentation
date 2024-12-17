@@ -170,7 +170,6 @@ private static void AddPageNumberInPdfFile()
 
         // Set starting number for first page; you might want to start from 2 or more
         fileStamp.StartingNumber = 1;
-
         // Add page number in upper right corner
         fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
