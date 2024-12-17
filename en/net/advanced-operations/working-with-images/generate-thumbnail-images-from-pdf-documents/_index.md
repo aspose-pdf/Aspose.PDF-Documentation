@@ -109,7 +109,141 @@ Once Adobe Acrobat is installed, use regedit.exe and look under HKEY_CLASSES_ROO
 
 ![todo:image_alt_text](generate-thumbnail-images-from-pdf-documents_1.png)
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-CreateThumbnailImagesUsingAdobe-CreateThumbnailImagesUsingAdobe.cs" >}}
+```csharp
+private static void GenerateThumbnailImagesFromPDF()
+{
+    // Acrobat objects
+    Acrobat.CAcroPDDoc pdfDoc;
+    Acrobat.CAcroPDPage pdfPage;
+    Acrobat.CAcroRect pdfRect;
+    Acrobat.CAcroPoint pdfPoint;
+
+    AppSettingsReader appSettings = new AppSettingsReader();
+
+    string pdfInputPath = appSettings.GetValue("pdfInputPath", typeof(string)).ToString();
+    string pngOutputPath = appSettings.GetValue("pngOutputPath", typeof(string)).ToString();
+
+    string templatePortraitFile = Application.StartupPath + @"\pdftemplate_portrait.gif";
+    string templateLandscapeFile = Application.StartupPath + @"\pdftemplate_portrait.gif"; ;
+
+    try
+    {
+      // Get list of files to process from the input path
+      // Could change to read list from database instead
+      string[] files = Directory.GetFiles(pdfInputPath, "*.pdf");
+
+      for(int n = 0; n<files.Length; n++)
+      {
+        string inputFile = files[n].ToString();
+        string outputFile = pngOutputPath + files[n].Substring(files[n].LastIndexOf(@"\") + 1).Replace(".pdf", ".png");
+
+        /* Could skip if thumbnail already exists in output path
+        FileInfo fi = new FileInfo(inputFile);
+        if (!fi.Exists) {} */
+
+        // Create the document (Can only create the AcroExch.PDDoc object using late-binding)
+        // Note using VisualBasic helper functions, have to add reference to DLL in
+        // C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll
+        // Will always be available as .NET framework ships with all
+        pdfDoc = (Acrobat.CAcroPDDoc) Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.PDDoc", "");
+
+        int ret = pdfDoc.Open(inputFile);
+
+        if (ret == 0)
+        {
+            throw new FileNotFoundException();
+        }
+
+        // Get the number of pages (to be used later if you wanted to store that information)
+        int pageCount = pdfDoc.GetNumPages();
+
+        // Get the first page
+        pdfPage = (Acrobat.CAcroPDPage) pdfDoc.AcquirePage(0);
+        pdfPoint = (Acrobat.CAcroPoint) pdfPage.GetSize();
+
+        pdfRect = (Acrobat.CAcroRect) Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.Rect", "");
+
+        pdfRect.Left = 0;
+        pdfRect.right = pdfPoint.x;
+        pdfRect.Top = 0;
+        pdfRect.bottom = pdfPoint.y;
+
+        // Render to clipboard, scaled by 100 percent (ie. original size)
+        // Even though we want a smaller image, better for us to scale in .NET
+        // than Acrobat as it would greek out small text
+        // see http://www.adobe.com/support/techdocs/1dd72.htm
+        pdfPage.CopyToClipboard(pdfRect, 0, 0, 100);
+
+        IDataObject clipboardData = Clipboard.GetDataObject();
+
+        if (clipboardData.GetDataPresent(DataFormats.Bitmap))
+        {
+           Bitmap pdfBitmap = (Bitmap)clipboardData.GetData(DataFormats.Bitmap);
+
+          // Size of generated thumbnail in pixels
+          int thumbnailWidth = 45;
+          int thumbnailHeight = 59;
+
+          string templateFile;
+
+           // Switch between portrait and landscape
+           if (pdfPoint.x<pdfPoint.y)
+           {
+               templateFile = templatePortraitFile;
+           }
+           else
+           {
+               templateFile = templateLandscapeFile;
+               // Swap width and height (little trick not using third temp variable)
+               thumbnailWidth = thumbnailWidth ^ thumbnailHeight;
+               thumbnailHeight = thumbnailWidth ^ thumbnailHeight;
+               thumbnailWidth = thumbnailWidth ^ thumbnailHeight;
+           }
+
+          // Load the template graphic
+          Bitmap templateBitmap = new Bitmap(templateFile);
+
+          // Render to small image using the bitmap class
+          Image pdfImage = pdfBitmap.GetThumbnailImage(thumbnailWidth, thumbnailHeight, null, IntPtr.Zero);
+
+          // Create new blank bitmap (+ 7 for template border)
+          Bitmap thumbnailBitmap = new Bitmap(thumbnailWidth + 7, thumbnailHeight + 7,
+          System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+          // To overlayout the template with the image, we need to set the transparency
+          // http://www.sellsbrothers.com/writing/default.aspx?content=dotnetimagerecoloring.htm
+          templateBitmap.MakeTransparent();
+
+          using (Graphics thumbnailGraphics = Graphics.FromImage(thumbnailBitmap))
+          {
+              // Draw rendered pdf image to new blank bitmap
+              thumbnailGraphics.DrawImage(pdfImage, 2, 2, thumbnailWidth, thumbnailHeight);
+
+              // Draw template outline over the bitmap (pdf with show through the transparent area)
+              thumbnailGraphics.DrawImage(templateBitmap, 0, 0);
+
+             // Save as .png file
+             thumbnailBitmap.Save(outputFile, System.Drawing.Imaging.ImageFormat.Png);
+
+             Console.WriteLine("Generated thumbnail... {0}", outputFile);
+          }
+
+          pdfDoc.Close();
+
+          // Not sure how why it is to do this, but Acrobat is not the best behaved COM object
+          // see http://blogs.msdn.com/yvesdolc/archive/2004/04/17/115379.aspx
+          Marshal.ReleaseComObject(pdfPage);
+          Marshal.ReleaseComObject(pdfRect);
+          Marshal.ReleaseComObject(pdfDoc);
+        }
+      }
+    }
+    catch (System.Exception ex)
+    {
+      Console.Write(ex.ToString());
+    }
+}
+```
 
 ## Aspose.PDF for .NET Approach
 
