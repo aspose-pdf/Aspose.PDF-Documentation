@@ -176,41 +176,47 @@ The code samples given here traverses through the pages of the PDF document and 
 ##### Programming Samples
 
 ```csharp
-// Open the PDF document
-using (var document = new Aspose.Pdf.Document("source.pdf"))
+private static void IdentifyBarcodes()
 {
-    // Traverse through the individual pages of the PDF file
-    for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open the PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))
     {
-        using (var imageStream = new System.IO.MemoryStream())
+        // Traverse through the individual pages of the PDF file
+        for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
         {
-            // Create a Resolution object
-            var resolution = new Aspose.Pdf.Devices.Resolution(300);
-
-            // Instantiate a PngDevice object while passing a Resolution object as an argument to its constructor
-            var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
-
-            // Convert a particular page and save the image to stream
-            pngDevice.Process(document.Pages[pageCount], imageStream);
-
-            // Set the stream position to the beginning of Stream
-            imageStream.Position = 0;
-
-            // Instantiate a BarCodeReader object
-           var barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
-
-            // String txtResult.Text = "";
-            while (barcodeReader.Read())
+            using (var imageStream = new System.IO.MemoryStream())
             {
-                // Get the barcode text from the barcode image
-                var code = barcodeReader.GetCodeText();
+                // Create a Resolution object
+                var resolution = new Aspose.Pdf.Devices.Resolution(300);
 
-                // Write the barcode text to Console output
-                Console.WriteLine("BARCODE : " + code);
+                // Instantiate a PngDevice object while passing a Resolution object as an argument to its constructor
+                var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+
+                // Convert a particular page and save the image to stream
+                pngDevice.Process(document.Pages[pageCount], imageStream);
+
+                // Set the stream position to the beginning of Stream
+                imageStream.Position = 0;
+
+                // Instantiate a BarCodeReader object
+                var barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
+
+                // String txtResult.Text = "";
+                while (barcodeReader.Read())
+                {
+                    // Get the barcode text from the barcode image
+                    var code = barcodeReader.GetCodeText();
+
+                    // Write the barcode text to Console output
+                    Console.WriteLine("BARCODE : " + code);
+                }
+
+                // Close the BarCodeReader object to release the image file
+                barcodeReader.Close();
             }
-
-            // Close the BarCodeReader object to release the image file
-            barcodeReader.Close();
         }
     }
 }
