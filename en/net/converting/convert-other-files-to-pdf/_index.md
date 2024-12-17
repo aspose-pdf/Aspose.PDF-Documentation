@@ -168,11 +168,20 @@ public static void ConvertEPUBtoPDF()
 You can also set page size for conversion. To define new page size you `SizeF` object and pass it to [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main) constructor.
 
 ```csharp
-public static void ConvertEPUBtoPDFAdv()
+private static void ConvertEPUBtoPDF()
 {
-    EpubLoadOptions option = new EpubLoadOptions(new SizeF(1190, 1684));
-    Document document= new Document(dataDir + "WebAssembly.epub", option);
-    document.Save(dataDir + "epub_test.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Convert option
+    var option = new Aspose.Pdf.EpubLoadOptions();
+    
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", option))
+    {
+        // Save the converted document
+        document.Save(dataDir + "epub_test.pdf");
+    }
 }
 ```
 
