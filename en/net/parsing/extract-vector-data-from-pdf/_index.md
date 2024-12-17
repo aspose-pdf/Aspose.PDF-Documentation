@@ -120,15 +120,15 @@ For extraction of Vector Data from PDF, we can use SVG extractor:
 ```csharp
 private static void SaveVectorGraphicsFromPage()
 {
-	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	// Open the document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-	{
-		// Save vector graphics from the first page to an SVG file
-		document.Pages[1].TrySaveVectorGraphics(dataDir + "VectorGraphics_out.svg");
-	}
+    // Open the document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Save vector graphics from the first page to an SVG file
+        document.Pages[1].TrySaveVectorGraphics(dataDir + "VectorGraphics_out.svg");
+    }
 }
 ```
 
@@ -137,29 +137,29 @@ private static void SaveVectorGraphicsFromPage()
 ```csharp
 private static void ExtractAllSubpathsToImagesSeparately()
 {
-	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	// Path to the directory where SVGs will be saved
-	var svgDirPath = dataDir + "SvgOutput/";
+    // Path to the directory where SVGs will be saved
+    var svgDirPath = dataDir + "SvgOutput/";
 
-	// Create extraction options
-	var options = new Aspose.Pdf.Vector.SvgExtractionOptions
-	{
-		ExtractEverySubPathToSvg = true
-	};
+    // Create extraction options
+    var options = new Aspose.Pdf.Vector.SvgExtractionOptions
+    {
+        ExtractEverySubPathToSvg = true
+    };
 
-	// Open document using 'using' block
-	using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-	{
-		// Get the first page of the document
-		var page = document.Pages[1];
+    // Open document using 'using' block
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Get the first page of the document
+        var page = document.Pages[1];
 
-		// Create SVG extractor using 'using' block
-		var extractor = new Aspose.Pdf.Vector.SvgExtractor(options);
-		// Extract SVGs from the page
-		extractor.Extract(page, svgDirPath);
-	}
+        // Create SVG extractor using 'using' block
+        var extractor = new Aspose.Pdf.Vector.SvgExtractor(options);
+        // Extract SVGs from the page
+        extractor.Extract(page, svgDirPath);
+    }
 }
 ```
 
@@ -168,29 +168,29 @@ private static void ExtractAllSubpathsToImagesSeparately()
 ```csharp
 private static void ExtractListOfElementsToSingleImage()
 {
-	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	// Path to the directory where SVGs will be saved
-	var svgDirPath = dataDir + "SvgOutput/";
+    // Path to the directory where SVGs will be saved
+    var svgDirPath = dataDir + "SvgOutput/";
 
-	// Initialize the list of graphic elements
-	var elements = new List<Aspose.Pdf.Vector.GraphicElement>();
+    // Initialize the list of graphic elements
+    var elements = new List<Aspose.Pdf.Vector.GraphicElement>();
 
-	// Example: Fill elements list with needed graphic elements (implement your logic here)
+    // Example: Fill elements list with needed graphic elements (implement your logic here)
 
-	// Open document using 'using' block
-	using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-	{
-		// Get the first page of the document
-		var page = document.Pages[1];
+    // Open document using 'using' block
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Get the first page of the document
+        var page = document.Pages[1];
 
-		// Use SvgExtractor to extract SVGs
-		var svgExtractor = new Aspose.Pdf.Vector.SvgExtractor();
+        // Use SvgExtractor to extract SVGs
+        var svgExtractor = new Aspose.Pdf.Vector.SvgExtractor();
 
-		// Extract SVGs from graphic elements on the page
-		svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
-	}
+        // Extract SVGs from graphic elements on the page
+        svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
+    }
 }
 ```
 
@@ -199,27 +199,27 @@ private static void ExtractListOfElementsToSingleImage()
 ```csharp
 private static void ExtractSingleElement()
 {
-	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	// Path to the directory where SVGs will be saved
-	var svgDirPath = dataDir + "SvgOutput/";
+    // Path to the directory where SVGs will be saved
+    var svgDirPath = dataDir + "SvgOutput/";
 
-	// Open document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
-	{
-		// Create a GraphicsAbsorber object to extract graphic elements
-		var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Create a GraphicsAbsorber object to extract graphic elements
+        var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
 
-		// Get the first page of the document
-		var page = document.Pages[1];
+        // Get the first page of the document
+        var page = document.Pages[1];
 
-		// Process the page to extract graphic elements
-		graphicsAbsorber.Visit(page);
+        // Process the page to extract graphic elements
+        graphicsAbsorber.Visit(page);
 
-		// Extract the graphic element (XFormPlacement) and save it as SVG
-		var xFormPlacement = graphicsAbsorber.Elements[1] as Aspose.Pdf.Vector.XFormPlacement;
-		xFormPlacement.Elements[2].SaveToSvg(Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
-	}
+        // Extract the graphic element (XFormPlacement) and save it as SVG
+        var xFormPlacement = graphicsAbsorber.Elements[1] as Aspose.Pdf.Vector.XFormPlacement;
+        xFormPlacement.Elements[2].SaveToSvg(Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
+    }
 }
 ```

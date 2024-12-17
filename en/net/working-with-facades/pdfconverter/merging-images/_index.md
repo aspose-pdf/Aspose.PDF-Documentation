@@ -82,21 +82,21 @@ Follow the next code snippet for resolve your task:
 ```csharp
 private static void MergeImages01()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Updated to use dynamic path
-	// Get all image files matching the pattern "MergeImages*.jpg"
-	var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
-								.OrderBy(f => f)
-								.Select(f => File.OpenRead(f))
-								.Cast<Stream>()
-								.ToList();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Updated to use dynamic path
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
+                                .OrderBy(f => f)
+                                .Select(f => File.OpenRead(f))
+                                .Cast<Stream>()
+                                .ToList();
 
-	// Use 'using' block to ensure proper resource management for both input and output streams
-	using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
-	using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.jpg", FileMode.Create))  // Output file with '_out' suffix
-	{
-		// Copy merged images to the output file
-		inputStream.CopyTo(outputStream);
-	}
+    // Use 'using' block to ensure proper resource management for both input and output streams
+    using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    {
+        // Copy merged images to the output file
+        inputStream.CopyTo(outputStream);
+    }
 }
 ```
 
@@ -105,23 +105,23 @@ The second example works the same as the previous one, but the merged images wil
 ```csharp
 private static void MergeImages02()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Get all image files matching the pattern "MergeImages*.jpg"
-	var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
-							.OrderBy(f => f)
-							.Select(f => File.OpenRead(f))
-							.Cast<Stream>()
-							.ToList();
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
+                            .OrderBy(f => f)
+                            .Select(f => File.OpenRead(f))
+                            .Cast<Stream>()
+                            .ToList();
 
-	// Use 'using' block to ensure proper resource management for both input and output streams
-	using (Stream inputStream =
-			Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
-	using (FileStream outputStream = new FileStream(dataDir + "MergeImages02_out.jpg", FileMode.Create))  // Output file with '_out' suffix
-	{
-		// Copy merged images to the output file
-		inputStream.CopyTo(outputStream);
-	}
+    // Use 'using' block to ensure proper resource management for both input and output streams
+    using (Stream inputStream =
+            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages02_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    {
+        // Copy merged images to the output file
+        inputStream.CopyTo(outputStream);
+    }
 }
 ```
 
@@ -130,23 +130,23 @@ In the third example, we will merge the pictures by centering them. Two horizont
 ```csharp
 private static void MergeImages03()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Get all image files matching the pattern "MergeImages*.jpg"
-	var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
-							.OrderBy(f => f)
-							.Select(f => File.OpenRead(f))
-							.Cast<Stream>()
-							.ToList();
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
+                            .OrderBy(f => f)
+                            .Select(f => File.OpenRead(f))
+                            .Cast<Stream>()
+                            .ToList();
 
-	// Use 'using' block to ensure proper resource management for both input and output streams
-	using (Stream inputStream =
-			Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
-	using (FileStream outputStream = new FileStream(dataDir + "MergeImages03_out.jpg", FileMode.Create))  // Output file with '_out' suffix
-	{
-		// Copy merged images to the output file
-		inputStream.CopyTo(outputStream);
-	}
+    // Use 'using' block to ensure proper resource management for both input and output streams
+    using (Stream inputStream =
+            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages03_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    {
+        // Copy merged images to the output file
+        inputStream.CopyTo(outputStream);
+    }
 }
 ```
 
@@ -155,23 +155,23 @@ Also, Aspose.PDF for Java present you the opportunity to combine pictures and sa
 ```csharp
 private static void MergeImages04()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Get all image files matching the pattern "MergeImages*.jpg"
-	var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
-							.OrderBy(f => f)
-							.Select(f => File.OpenRead(f))
-							.Cast<Stream>()
-							.ToList();
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
+                            .OrderBy(f => f)
+                            .Select(f => File.OpenRead(f))
+                            .Cast<Stream>()
+                            .ToList();
 
-	// Use 'using' block to ensure proper resource management for both input and output streams
-	using (Stream inputStream =
-			Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(fileStreams))
-	using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.tiff", FileMode.Create))  // Output file with '_out' suffix
-	{
-		// Copy merged images to the output file
-		inputStream.CopyTo(outputStream);
-	}
+    // Use 'using' block to ensure proper resource management for both input and output streams
+    using (Stream inputStream =
+            Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(fileStreams))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.tiff", FileMode.Create))  // Output file with '_out' suffix
+    {
+        // Copy merged images to the output file
+        inputStream.CopyTo(outputStream);
+    }
 }
 ```
 

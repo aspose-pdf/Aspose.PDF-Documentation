@@ -308,40 +308,40 @@ The following steps and code snippet in C# shows this possibility
 // BMP, JPEG, GIF, PNG, EMF
 private static void ConvertPDFusingImageDevice()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-	// Create Resolution object            
-	var resolution = new Aspose.Pdf.Devices.Resolution(300);
-	var bmpDevice = new Aspose.Pdf.Devices.BmpDevice(resolution);
-	var jpegDevice = new Aspose.Pdf.Devices.JpegDevice(resolution);
-	var gifDevice = new Aspose.Pdf.Devices.GifDevice(resolution);
-	var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
-	var emfDevice = new Aspose.Pdf.Devices.EmfDevice(resolution);
+    // Create Resolution object            
+    var resolution = new Aspose.Pdf.Devices.Resolution(300);
+    var bmpDevice = new Aspose.Pdf.Devices.BmpDevice(resolution);
+    var jpegDevice = new Aspose.Pdf.Devices.JpegDevice(resolution);
+    var gifDevice = new Aspose.Pdf.Devices.GifDevice(resolution);
+    var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+    var emfDevice = new Aspose.Pdf.Devices.EmfDevice(resolution);
 
-	// Open document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "ConvertAllPagesToBmp.pdf"))
-	{
-		ConvertPDFtoImage(bmpDevice, "bmp", document, dataDir);
-		ConvertPDFtoImage(jpegDevice, "jpeg", document, dataDir);
-		ConvertPDFtoImage(gifDevice, "gif", document, dataDir);
-		ConvertPDFtoImage(pngDevice, "png", document, dataDir);
-		ConvertPDFtoImage(emfDevice, "emf", document, dataDir);
-	}
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertAllPagesToBmp.pdf"))
+    {
+        ConvertPDFtoImage(bmpDevice, "bmp", document, dataDir);
+        ConvertPDFtoImage(jpegDevice, "jpeg", document, dataDir);
+        ConvertPDFtoImage(gifDevice, "gif", document, dataDir);
+        ConvertPDFtoImage(pngDevice, "png", document, dataDir);
+        ConvertPDFtoImage(emfDevice, "emf", document, dataDir);
+    }
 }
 
 private static void ConvertPDFtoImage(ImageDevice imageDevice,
-		string ext, Document document, string dataDir)
+        string ext, Document document, string dataDir)
 {
-	for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
-	{
-		using (FileStream imageStream =
-			new FileStream($"{dataDir}image{pageCount}_out.{ext}",
-			FileMode.Create))
-		{
-			// Convert a particular page and save the image to stream
-			imageDevice.Process(document.Pages[pageCount], imageStream);
-		}
-	}
+    for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
+    {
+        using (FileStream imageStream =
+            new FileStream($"{dataDir}image{pageCount}_out.{ext}",
+            FileMode.Create))
+        {
+            // Convert a particular page and save the image to stream
+            imageDevice.Process(document.Pages[pageCount], imageStream);
+        }
+    }
 }
 ```
 

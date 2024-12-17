@@ -126,18 +126,18 @@ To get an image from an individual page, use the following code:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractImageFromAnIndividualPage()
 {
-	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Open document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetImages.pdf"))
-	{
-		// Create ImagePlacementAbsorber object to perform image placement search
-		var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetImages.pdf"))
+    {
+        // Create ImagePlacementAbsorber object to perform image placement search
+        var abs = new Aspose.Pdf.ImagePlacementAbsorber();
 
-		// Accept the absorber for all the pages
-		document.Pages[1].Accept(abs);
-	}
+        // Accept the absorber for all the pages
+        document.Pages[1].Accept(abs);
+    }
 }
 ```
 

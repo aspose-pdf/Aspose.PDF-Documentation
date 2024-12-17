@@ -80,28 +80,28 @@ In order to convert PDF pages to different image formats, you need to create [Pd
 ```csharp
 private static void ConvertPdfPagesToImages01()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfConverter object using 'using' block to ensure proper disposal
-	using (var converter = new Aspose.Pdf.Facades.PdfConverter())
-	{
-		// Bind input pdf file
-		converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
+    // Create PdfConverter object using 'using' block to ensure proper disposal
+    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    {
+        // Bind input pdf file
+        converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
 
-		// Initialize the converting process
-		converter.DoConvert();
+        // Initialize the converting process
+        converter.DoConvert();
 
-		// Check if pages exist and then convert to image one by one
-		while (converter.HasNextImage())
-		{
-			// Generate output file name with '_out' suffix
-			var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
-			// Convert the page to image and save it
-			converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-		}
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
+        {
+            // Generate output file name with '_out' suffix
+            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+            // Convert the page to image and save it
+            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
 
-		// The converter will be automatically disposed at the end of the 'using' block
-	}
+        // The converter will be automatically disposed at the end of the 'using' block
+    }
 }
 ```
 
@@ -110,34 +110,34 @@ In the next code snippet, we will show how you can change some parameters. With 
 ```csharp
 private static void ConvertPdfPagesToImages02()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfConverter object using 'using' block to ensure proper disposal
-	using (var converter = new Aspose.Pdf.Facades.PdfConverter())
-	{
-		// Bind input pdf file
-		converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
+    // Create PdfConverter object using 'using' block to ensure proper disposal
+    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    {
+        // Bind input pdf file
+        converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
 
-		// Initialize the converting process
-		converter.DoConvert();
+        // Initialize the converting process
+        converter.DoConvert();
 
-		// Set additional conversion settings
-		converter.CoordinateType = Aspose.Pdf.PageCoordinateType.CropBox;
-		converter.Resolution = new Aspose.Pdf.Devices.Resolution(600);
-		converter.FormPresentationMode = Aspose.Pdf.Devices.FormPresentationMode.Production;
-		converter.StartPage = 2;
+        // Set additional conversion settings
+        converter.CoordinateType = Aspose.Pdf.PageCoordinateType.CropBox;
+        converter.Resolution = new Aspose.Pdf.Devices.Resolution(600);
+        converter.FormPresentationMode = Aspose.Pdf.Devices.FormPresentationMode.Production;
+        converter.StartPage = 2;
 
-		// Check if pages exist and then convert to image one by one
-		while (converter.HasNextImage())
-		{
-			// Generate output file name with '_out' suffix
-			var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
-			// Convert the page to image and save it
-			converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-		}
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
+        {
+            // Generate output file name with '_out' suffix
+            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+            // Convert the page to image and save it
+            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
 
-		// The converter will be automatically disposed at the end of the 'using' block
-	}
+        // The converter will be automatically disposed at the end of the 'using' block
+    }
 }
 ```
 

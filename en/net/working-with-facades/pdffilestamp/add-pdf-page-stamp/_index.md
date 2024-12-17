@@ -80,27 +80,27 @@ draft: false
 ```csharp
 private static void AddPageStampOnAllPages()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-		// Create stamp
-		var stamp = new Aspose.Pdf.Facades.Stamp();
-		stamp.BindPdf(dataDir + "AddPageStampOnAllPages.pdf", 1);
-		stamp.SetOrigin(20, 20);
-		stamp.Rotation = 90.0F;
-		stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindPdf(dataDir + "AddPageStampOnAllPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-		// Add stamp to PDF file
-		fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
+    }
 }
 ```
 
@@ -111,28 +111,28 @@ private static void AddPageStampOnAllPages()
 ```csharp
 private static void AddPageStampOnCertainPages()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-		// Create stamp
-		var stamp = new Aspose.Pdf.Facades.Stamp();
-		stamp.BindPdf(dataDir + "PageStampOnCertainPages.pdf", 1);
-		stamp.SetOrigin(20, 20);
-		stamp.Rotation = 90.0F;
-		stamp.IsBackground = true;
-		stamp.Pages = new[] { 1, 3 };  // Apply stamp to specific pages (1 and 3)
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindPdf(dataDir + "PageStampOnCertainPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
+        stamp.Pages = new[] { 1, 3 };  // Apply stamp to specific pages (1 and 3)
 
-		// Add stamp to PDF file
-		fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
+    }
 }
 
 // Add PDF Page Numbers
@@ -149,34 +149,34 @@ public enum PageNumPosition
 ```csharp
 private static void AddPageNumberInPdfFile()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "StampPDF.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-		// Get total number of pages
-		int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-		// Create formatted text for page number
-		var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
-			System.Drawing.Color.AntiqueWhite,
-			System.Drawing.Color.Gray,
-			Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,  // Updated to full enum name
-			Aspose.Pdf.Facades.EncodingType.Winansi,      // Updated to full enum name
-			false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,  // Updated to full enum name
+            Aspose.Pdf.Facades.EncodingType.Winansi,      // Updated to full enum name
+            false, 12);
 
-		// Set starting number for first page; you might want to start from 2 or more
-		fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
 
-		// Add page number in upper right corner
-		fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
+    }
 }
 ```
 
@@ -193,36 +193,36 @@ The PdfFileStamp class offers the feature to add Page Number information as stam
 ```csharp
 private static void AddCustomPageNumberInPdfFile()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "StampPDF.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-		// Get total number of pages
-		int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-		// Create formatted text for page number
-		var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
-			System.Drawing.Color.AntiqueWhite,
-			System.Drawing.Color.Gray,
-			Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,  // Updated to full enum name
-			Aspose.Pdf.Facades.EncodingType.Winansi,      // Updated to full enum name
-			false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,  // Updated to full enum name
+            Aspose.Pdf.Facades.EncodingType.Winansi,      // Updated to full enum name
+            false, 12);
 
-		// Specify numbering style as Numerals Roman UpperCase
-		fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
+        // Specify numbering style as Numerals Roman UpperCase
+        fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
 
-		// Set starting number for first page; you might want to start from 2 or more
-		fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
 
-		// Add page number in upper right corner
-		fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
+    }
 }
 ```

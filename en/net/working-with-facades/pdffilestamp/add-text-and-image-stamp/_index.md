@@ -80,34 +80,34 @@ draft: false
 ```csharp
 private static void AddTextStampOnAllPagesInPdfFile()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "sample.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-		// Create stamp
-		var stamp = new Aspose.Pdf.Facades.Stamp();
-		stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Hello World!",
-			System.Drawing.Color.Blue,
-			System.Drawing.Color.Gray,
-			Aspose.Pdf.Facades.FontStyle.Helvetica,
-			Aspose.Pdf.Facades.EncodingType.Winansi,
-			true,
-			14));
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Hello World!",
+            System.Drawing.Color.Blue,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.Helvetica,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            true,
+            14));
 
-		stamp.SetOrigin(10, 400);
-		stamp.Rotation = 90.0F;
-		stamp.IsBackground = true;
+        stamp.SetOrigin(10, 400);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-		// Add stamp to PDF file
-		fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
+    }
 }
 ```
 
@@ -196,26 +196,26 @@ When adding Image as stamp object, you can also control the quality of image. In
 ```csharp
 private static void AddImageStampOnParticularPagesInPdfFile()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "sample.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-		// Create stamp
-		var stamp = new Aspose.Pdf.Facades.Stamp();
-		stamp.BindImage(dataDir + "StampImage.png");
-		stamp.SetOrigin(10, 200);
-		stamp.Rotation = 90.0F;
-		stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindImage(dataDir + "StampImage.png");
+        stamp.SetOrigin(10, 200);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-		// Add stamp to PDF file
-		fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
+    }
 }
 ```

@@ -125,33 +125,33 @@ If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://ref
 ```csharp
 private static void GenerateThumbnailImagesFromPDF()
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-	// The path to the documents directory.
-	string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Retrieve names of all the PDF files in a particular directory
-	string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
+    // Retrieve names of all the PDF files in a particular directory
+    string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
 
-	// Iterate through all the files entries in array
-	for (int counter = 0; counter < fileEntries.Length; counter++)
-	{
-		//Open document
-		using (var pdfDocument = new Document(fileEntries[counter]))
-		{
-			for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
-			{
-				using (FileStream imageStream = new FileStream(dataDir + "\\Thumbanils" + counter.ToString() + "_" + pageCount + ".jpg", FileMode.Create))
-				{
-					//Create Resolution object
-					Resolution resolution = new Resolution(300);
-					//JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
-					JpegDevice jpegDevice = new JpegDevice(45, 59, resolution, 100);
-					//Convert a particular page and save the image to stream
-					jpegDevice.Process(pdfDocument.Pages[pageCount], imageStream);
-				}
-			}
-		}
-	}
+    // Iterate through all the files entries in array
+    for (int counter = 0; counter < fileEntries.Length; counter++)
+    {
+        //Open document
+        using (var pdfDocument = new Document(fileEntries[counter]))
+        {
+            for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
+            {
+                using (FileStream imageStream = new FileStream(dataDir + "\\Thumbanils" + counter.ToString() + "_" + pageCount + ".jpg", FileMode.Create))
+                {
+                    //Create Resolution object
+                    Resolution resolution = new Resolution(300);
+                    //JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
+                    JpegDevice jpegDevice = new JpegDevice(45, 59, resolution, 100);
+                    //Convert a particular page and save the image to stream
+                    jpegDevice.Process(pdfDocument.Pages[pageCount], imageStream);
+                }
+            }
+        }
+    }
 }
 ```
 

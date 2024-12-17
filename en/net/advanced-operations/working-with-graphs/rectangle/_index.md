@@ -195,42 +195,42 @@ The following code snippet shows how to add a [Rectangle](https://reference.aspo
 ```csharp
 private static void CreateFilledRectangleGradientFill()
 {
-	// Path to the document directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // Path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Create Document instance using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document())
-	{
-		// Add page to pages collection of PDF file
-		var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-		// Create Graph instance
-		var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+        // Create Graph instance
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-		// Add graph object to paragraphs collection of page instance
-		page.Paragraphs.Add(graph);
+        // Add graph object to paragraphs collection of page instance
+        page.Paragraphs.Add(graph);
 
-		// Create Rectangle instance
-		var rect = new Aspose.Pdf.Drawing.Rectangle(0, 0, 300, 300);
+        // Create Rectangle instance
+        var rect = new Aspose.Pdf.Drawing.Rectangle(0, 0, 300, 300);
 
-		// Create a gradient fill color
-		var gradientColor = new Aspose.Pdf.Color();
-		var gradientSettings = new Aspose.Pdf.Drawing.GradientAxialShading(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.Blue)
-		{
-			Start = new Aspose.Pdf.Point(0, 0),
-			End = new Aspose.Pdf.Point(350, 350)
-		};
-		gradientColor.PatternColorSpace = gradientSettings;
+        // Create a gradient fill color
+        var gradientColor = new Aspose.Pdf.Color();
+        var gradientSettings = new Aspose.Pdf.Drawing.GradientAxialShading(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.Blue)
+        {
+            Start = new Aspose.Pdf.Point(0, 0),
+            End = new Aspose.Pdf.Point(350, 350)
+        };
+        gradientColor.PatternColorSpace = gradientSettings;
 
-		// Apply gradient fill color to the rectangle
-		rect.GraphInfo.FillColor = gradientColor;
+        // Apply gradient fill color to the rectangle
+        rect.GraphInfo.FillColor = gradientColor;
 
-		// Add rectangle object to shapes collection of Graph object
-		graph.Shapes.Add(rect);
+        // Add rectangle object to shapes collection of Graph object
+        graph.Shapes.Add(rect);
 
-		// Save PDF file
-		document.Save(dataDir + "CreateFilledRectangleGradient_out.pdf");
-	}
+        // Save PDF file
+        document.Save(dataDir + "CreateFilledRectangleGradient_out.pdf");
+    }
 }
 ```
 

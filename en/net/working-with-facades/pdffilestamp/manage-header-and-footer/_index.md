@@ -80,30 +80,30 @@ draft: false
 ```csharp
 private static void AddHeader()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "sample.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-		// Create formatted text for the header
-		var formattedText = new Aspose.Pdf.Facades.FormattedText(
-			"Aspose - Your File Format Experts!",
-			System.Drawing.Color.Yellow,
-			System.Drawing.Color.Black,
-			Aspose.Pdf.Facades.FontStyle.Courier,   // Updated to full enum name
-			Aspose.Pdf.Facades.EncodingType.Winansi, // Updated to full enum name
-			false,
-			14);
+        // Create formatted text for the header
+        var formattedText = new Aspose.Pdf.Facades.FormattedText(
+            "Aspose - Your File Format Experts!",
+            System.Drawing.Color.Yellow,
+            System.Drawing.Color.Black,
+            Aspose.Pdf.Facades.FontStyle.Courier,   // Updated to full enum name
+            Aspose.Pdf.Facades.EncodingType.Winansi, // Updated to full enum name
+            false,
+            14);
 
-		// Add header
-		fileStamp.AddHeader(formattedText, 10);
+        // Add header
+        fileStamp.AddHeader(formattedText, 10);
 
-		// Save updated PDF file with '_out' suffix
-		fileStamp.Save(dataDir + "AddHeader_out.pdf");
-	}
+        // Save updated PDF file with '_out' suffix
+        fileStamp.Save(dataDir + "AddHeader_out.pdf");
+    }
 }
 ```
 
@@ -148,23 +148,23 @@ private static void AddFooter()
 ```csharp
 private static void AddImageHeader()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "sample.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-		// Add Header
-		using (var fs = new FileStream(dataDir + "ImageHeader.png", FileMode.Open))
-		{
-			fileStamp.AddHeader(fs, 10);  // Add image header with position offset
+        // Add Header
+        using (var fs = new FileStream(dataDir + "ImageHeader.png", FileMode.Open))
+        {
+            fileStamp.AddHeader(fs, 10);  // Add image header with position offset
 
-			// Save updated PDF file with '_out' suffix
-			fileStamp.Save(dataDir + "AddImageHeader_out.pdf");
-		}
-	}
+            // Save updated PDF file with '_out' suffix
+            fileStamp.Save(dataDir + "AddImageHeader_out.pdf");
+        }
+    }
 }
 ```
 
@@ -175,22 +175,22 @@ private static void AddImageHeader()
 ```csharp
 private static void AddImageFooter()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileStamp object using 'using' block to ensure proper disposal
-	using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
-	{
-		// Open Document
-		fileStamp.BindPdf(dataDir + "sample.pdf");
+    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Open Document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-		// Add footer
-		using (var fs = new FileStream(dataDir + "ImageFooter.png", FileMode.Open))
-		{
-			fileStamp.AddFooter(fs, 10);  // Add image footer with position offset
+        // Add footer
+        using (var fs = new FileStream(dataDir + "ImageFooter.png", FileMode.Open))
+        {
+            fileStamp.AddFooter(fs, 10);  // Add image footer with position offset
 
-			// Save updated PDF file with '_out' suffix
-			fileStamp.Save(dataDir + "AddImageFooter_out.pdf");
-		}
-	}
+            // Save updated PDF file with '_out' suffix
+            fileStamp.Save(dataDir + "AddImageFooter_out.pdf");
+        }
+    }
 }
 ```

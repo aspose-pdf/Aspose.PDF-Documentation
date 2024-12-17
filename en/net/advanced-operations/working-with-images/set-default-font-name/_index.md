@@ -82,30 +82,30 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPdfToImageWithDefaultFont()
 {
-	// The path to the documents directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-	// Open the document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "PdfToImageWithDefaultFont.pdf"))
-	{
-		// Open the image stream using 'using' block to ensure proper disposal
-		using (var imageStream = new FileStream(dataDir + "SetDefaultFontName.png", FileMode.Create))
-		{
-			// Set the resolution for the image
-			var resolution = new Aspose.Pdf.Devices.Resolution(300);
+    // Open the document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfToImageWithDefaultFont.pdf"))
+    {
+        // Open the image stream using 'using' block to ensure proper disposal
+        using (var imageStream = new FileStream(dataDir + "SetDefaultFontName.png", FileMode.Create))
+        {
+            // Set the resolution for the image
+            var resolution = new Aspose.Pdf.Devices.Resolution(300);
 
-			// Create the PNG device and set rendering options
-			var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
-			var ro = new Aspose.Pdf.RenderingOptions
-			{
-				DefaultFontName = "Arial"
-			};
-			pngDevice.RenderingOptions = ro;
+            // Create the PNG device and set rendering options
+            var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+            var ro = new Aspose.Pdf.RenderingOptions
+            {
+                DefaultFontName = "Arial"
+            };
+            pngDevice.RenderingOptions = ro;
 
-			// Process the first page of the document and save it as an image
-			pngDevice.Process(document.Pages[1], imageStream);
-		}
-	}
+            // Process the first page of the document and save it as an image
+            pngDevice.Process(document.Pages[1], imageStream);
+        }
+    }
 }
 ```
 

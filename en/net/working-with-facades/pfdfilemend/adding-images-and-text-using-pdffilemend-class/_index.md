@@ -94,22 +94,22 @@ In the following example, we add image to the page using imageStream:
 ```csharp
 private static void AddImage01()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
-	{
-		// Load image into stream
-		using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
-		{
-			mender.BindPdf(document);
-			mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
+    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
+    {
+        // Load image into stream
+        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        {
+            mender.BindPdf(document);
+            mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
 
-			// Save the updated PDF file with '_out' suffix
-			mender.Save(dataDir + "AddImage_out.pdf");
-		}
-	}
+            // Save the updated PDF file with '_out' suffix
+            mender.Save(dataDir + "AddImage_out.pdf");
+        }
+    }
 }
 ```
 
@@ -120,32 +120,32 @@ With the help of [CompositingParameters](https://reference.aspose.com/pdf/net/as
 ```csharp
 private static void AddImage02()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
-	{
-		// Load image into stream
-		using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
-		{
-			mender.BindPdf(document);
+    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
+    {
+        // Load image into stream
+        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        {
+            mender.BindPdf(document);
 
-			int pageNum = 1;
-			int lowerLeftX = 10;
-			int lowerLeftY = 650;
-			int upperRightX = 110;
-			int upperRightY = 750;
+            int pageNum = 1;
+            int lowerLeftX = 10;
+            int lowerLeftY = 650;
+            int upperRightX = 110;
+            int upperRightY = 750;
 
-			// Use compositing parameters for the image
-			var compositingParameters = new Aspose.Pdf.CompositingParameters(Aspose.Pdf.BlendMode.Multiply);
+            // Use compositing parameters for the image
+            var compositingParameters = new Aspose.Pdf.CompositingParameters(Aspose.Pdf.BlendMode.Multiply);
 
-			mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
+            mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-			// Save the output file with '_out' suffix
-			mender.Save(dataDir + "AddImage_out.pdf");
-		}
-	}
+            // Save the output file with '_out' suffix
+            mender.Save(dataDir + "AddImage_out.pdf");
+        }
+    }
 }
 ```
 
@@ -190,35 +190,35 @@ private static void AddImage03()
 ```csharp
 private static void AddImage04()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
-	{
-		// Load image into stream
-		using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
-		{
-			mender.BindPdf(document);
+    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
+    {
+        // Load image into stream
+        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        {
+            mender.BindPdf(document);
 
-			int pageNum = 1;
-			int lowerLeftX = 10;
-			int lowerLeftY = 650;
-			int upperRightX = 110;
-			int upperRightY = 750;
+            int pageNum = 1;
+            int lowerLeftX = 10;
+            int lowerLeftY = 650;
+            int upperRightX = 110;
+            int upperRightY = 750;
 
-			// Use compositing parameters with BlendMode.Multiply, ImageFilterType.Flate and false
-			var compositingParameters = new Aspose.Pdf.CompositingParameters(
-				Aspose.Pdf.BlendMode.Multiply,
-				Aspose.Pdf.ImageFilterType.Flate,
-				false);
+            // Use compositing parameters with BlendMode.Multiply, ImageFilterType.Flate and false
+            var compositingParameters = new Aspose.Pdf.CompositingParameters(
+                Aspose.Pdf.BlendMode.Multiply,
+                Aspose.Pdf.ImageFilterType.Flate,
+                false);
 
-			mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
+            mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-			// Save the output file with '_out' suffix
-			mender.Save(dataDir + "AddImage_outp.pdf");
-		}
-	}
+            // Save the output file with '_out' suffix
+            mender.Save(dataDir + "AddImage_outp.pdf");
+        }
+    }
 }
 ```
 
@@ -229,22 +229,22 @@ We can add text in several ways. Consider the first. We take the [FormattedText]
 ```csharp
 private static void AddText01()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileMend object using 'using' block to ensure proper disposal
-	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
-	{
-		mender.BindPdf(dataDir + "AddImage.pdf");
+    // Create PdfFileMend object using 'using' block to ensure proper disposal
+    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
+    {
+        mender.BindPdf(dataDir + "AddImage.pdf");
 
-		// Create formatted text
-		var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose!");
+        // Create formatted text
+        var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose!");
 
-		// Add text to the first page at position (10, 750)
-		mender.AddText(message, 1, 10, 750);
+        // Add text to the first page at position (10, 750)
+        mender.AddText(message, 1, 10, 750);
 
-		// Save the output file with '_out' suffix
-		mender.Save(dataDir + "AddText_out.pdf");
-	}
+        // Save the output file with '_out' suffix
+        mender.Save(dataDir + "AddText_out.pdf");
+    }
 }
 ```
 
@@ -257,25 +257,25 @@ The second way to add [FormattedText](https://reference.aspose.com/pdf/net/aspos
 ```csharp
 private static void AddText02()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create PdfFileMend object using 'using' block to ensure proper disposal
-	using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
-	{
-		mender.BindPdf(dataDir + "AddImage.pdf");
+    // Create PdfFileMend object using 'using' block to ensure proper disposal
+    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
+    {
+        mender.BindPdf(dataDir + "AddImage.pdf");
 
-		// Create formatted text
-		var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose! Welcome to Aspose!");
+        // Create formatted text
+        var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose! Welcome to Aspose!");
 
-		// Add text to the first page at the specified position with wrapping
-		mender.AddText(message, 1, 10, 700, 55, 810);
+        // Add text to the first page at the specified position with wrapping
+        mender.AddText(message, 1, 10, 700, 55, 810);
 
-		// Set word wrapping mode to wrap by words
-		mender.WrapMode = Aspose.Pdf.Facades.WordWrapMode.ByWords;
+        // Set word wrapping mode to wrap by words
+        mender.WrapMode = Aspose.Pdf.Facades.WordWrapMode.ByWords;
 
-		// Save the output file with '_out' suffix
-		mender.Save(dataDir + "AddText_out.pdf");
-	}
+        // Save the output file with '_out' suffix
+        mender.Save(dataDir + "AddText_out.pdf");
+    }
 }
 ```
 
@@ -284,32 +284,32 @@ The third example provides the ability to Add Text to specified pages. In our ex
 ```csharp
 private static void AddText03()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-	// Create Document object and add pages
-	using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-	{
-		document.Pages.Add();
-		document.Pages.Add();
-		document.Pages.Add();
+    // Create Document object and add pages
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        document.Pages.Add();
+        document.Pages.Add();
+        document.Pages.Add();
 
-		// Create PdfFileMend object using 'using' block to ensure proper disposal
-		using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
-		{
-			mender.BindPdf(document);
+        // Create PdfFileMend object using 'using' block to ensure proper disposal
+        using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
+        {
+            mender.BindPdf(document);
 
-			// Create formatted text
-			var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose!");
+            // Create formatted text
+            var message = new Aspose.Pdf.Facades.FormattedText("Welcome to Aspose!");
 
-			// Specify the pages where text should be added
-			int[] pageNums = new int[] { 1, 3 };
+            // Specify the pages where text should be added
+            int[] pageNums = new int[] { 1, 3 };
 
-			// Add text to the specified pages at the specified coordinates
-			mender.AddText(message, pageNums, 10, 750, 310, 760);
+            // Add text to the specified pages at the specified coordinates
+            mender.AddText(message, pageNums, 10, 750, 310, 760);
 
-			// Save the output file with '_out' suffix
-			mender.Save(dataDir + "AddText_out.pdf");
-		}
-	}
+            // Save the output file with '_out' suffix
+            mender.Save(dataDir + "AddText_out.pdf");
+        }
+    }
 }
 ```

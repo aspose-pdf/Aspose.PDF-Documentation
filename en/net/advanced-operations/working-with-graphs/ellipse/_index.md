@@ -86,43 +86,43 @@ Aspose.PDF for .NET supports to add [Ellipse](https://reference.aspose.com/pdf/n
 ```csharp
 private static void Ellipse()
 {
-	// The path to the document directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Create Document instance using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document())
-	{
-		// Add page to pages collection of PDF file
-		var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-		// Create Drawing object with certain dimensions
-		var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-		// Set border for Drawing object
-		var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
-		graph.Border = borderInfo;
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-		// Create first ellipse with specified coordinates and radii
-		var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(150, 100, 120, 60)
-		{
-			GraphInfo = { Color = Aspose.Pdf.Color.GreenYellow },
-			Text = new Aspose.Pdf.Text.TextFragment("Ellipse")
-		};
-		graph.Shapes.Add(ellipse1);
+        // Create first ellipse with specified coordinates and radii
+        var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(150, 100, 120, 60)
+        {
+            GraphInfo = { Color = Aspose.Pdf.Color.GreenYellow },
+            Text = new Aspose.Pdf.Text.TextFragment("Ellipse")
+        };
+        graph.Shapes.Add(ellipse1);
 
-		// Create second ellipse with different dimensions and color
-		var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(50, 50, 18, 300)
-		{
-			GraphInfo = { Color = Aspose.Pdf.Color.DarkRed }
-		};
-		graph.Shapes.Add(ellipse2);
+        // Create second ellipse with different dimensions and color
+        var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(50, 50, 18, 300)
+        {
+            GraphInfo = { Color = Aspose.Pdf.Color.DarkRed }
+        };
+        graph.Shapes.Add(ellipse2);
 
-		// Add Graph object to paragraphs collection of page
-		page.Paragraphs.Add(graph);
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
 
-		// Save PDF file
-		document.Save(dataDir + "DrawingEllipse_out.pdf");
-	}
+        // Save PDF file
+        document.Save(dataDir + "DrawingEllipse_out.pdf");
+    }
 }
 ```
 
@@ -155,9 +155,9 @@ private static void EllipseFilled()
         var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(100, 100, 120, 180)
         {
             GraphInfo = 
-			{ 
-				FillColor = Aspose.Pdf.Color.GreenYellow 
-			}
+            { 
+                FillColor = Aspose.Pdf.Color.GreenYellow 
+            }
         };
         graph.Shapes.Add(ellipse1);
 
@@ -165,9 +165,9 @@ private static void EllipseFilled()
         var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(200, 150, 180, 120)
         {
             GraphInfo = 
-			{ 
-				FillColor = Aspose.Pdf.Color.DarkRed 
-			}
+            { 
+                FillColor = Aspose.Pdf.Color.DarkRed 
+            }
         };
         graph.Shapes.Add(ellipse2);
 
@@ -219,9 +219,9 @@ private static void EllipseWithText()
         var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(100, 100, 120, 180)
         {
             GraphInfo = 
-			{ 
-				FillColor = Aspose.Pdf.Color.GreenYellow 
-			},
+            { 
+                FillColor = Aspose.Pdf.Color.GreenYellow 
+            },
             Text = textFragment
         };
         graph.Shapes.Add(ellipse1);
@@ -230,9 +230,9 @@ private static void EllipseWithText()
         var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(200, 150, 180, 120)
         {
             GraphInfo = 
-			{ 
-				FillColor = Aspose.Pdf.Color.DarkRed 
-			},
+            { 
+                FillColor = Aspose.Pdf.Color.DarkRed 
+            },
             Text = textFragment
         };
         graph.Shapes.Add(ellipse2);

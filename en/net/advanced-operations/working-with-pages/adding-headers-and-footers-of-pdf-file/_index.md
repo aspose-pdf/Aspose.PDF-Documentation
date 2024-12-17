@@ -253,43 +253,43 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddDifferentHeaders()
 {
-	var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
 
-	// Open source document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))
-	{
-		// Create three stamps
-		var stamp1 = new Aspose.Pdf.TextStamp("Header 1");
-		var stamp2 = new Aspose.Pdf.TextStamp("Header 2");
-		var stamp3 = new Aspose.Pdf.TextStamp("Header 3");
+    // Open source document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))
+    {
+        // Create three stamps
+        var stamp1 = new Aspose.Pdf.TextStamp("Header 1");
+        var stamp2 = new Aspose.Pdf.TextStamp("Header 2");
+        var stamp3 = new Aspose.Pdf.TextStamp("Header 3");
 
-		// Set stamp1 properties (Header 1)
-		stamp1.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-		stamp1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-		stamp1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
-		stamp1.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-		stamp1.TextState.FontSize = 14;
+        // Set stamp1 properties (Header 1)
+        stamp1.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
+        stamp1.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        stamp1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        stamp1.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+        stamp1.TextState.FontSize = 14;
 
-		// Set stamp2 properties (Header 2)
-		stamp2.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-		stamp2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-		stamp2.Zoom = 10;
+        // Set stamp2 properties (Header 2)
+        stamp2.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
+        stamp2.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        stamp2.Zoom = 10;
 
-		// Set stamp3 properties (Header 3)
-		stamp3.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
-		stamp3.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-		stamp3.RotateAngle = 35;
-		stamp3.TextState.BackgroundColor = Aspose.Pdf.Color.Pink;
-		stamp3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+        // Set stamp3 properties (Header 3)
+        stamp3.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
+        stamp3.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        stamp3.RotateAngle = 35;
+        stamp3.TextState.BackgroundColor = Aspose.Pdf.Color.Pink;
+        stamp3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
 
-		// Add the stamps to specific pages
-		document.Pages[1].AddStamp(stamp1);
-		document.Pages[2].AddStamp(stamp2);
-		document.Pages[3].AddStamp(stamp3);
+        // Add the stamps to specific pages
+        document.Pages[1].AddStamp(stamp1);
+        document.Pages[2].AddStamp(stamp2);
+        document.Pages[3].AddStamp(stamp3);
 
-		// Save the updated document with '_out' suffix
-		document.Save(dataDir + "MultiHeader_out.pdf");
-	}
+        // Save the updated document with '_out' suffix
+        document.Save(dataDir + "MultiHeader_out.pdf");
+    }
 }
 ```
 

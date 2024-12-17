@@ -86,30 +86,30 @@ The first step in working with vector graphics is to extract them from a PDF doc
 ```csharp
 private static void UsingGraphicsAbsorber()
 {
-	// Step 1: The path to the document directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // Step 1: The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Step 2: Open the document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
-	{
-		// Step 3: Create an instance of GraphicsAbsorber
-		using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
-		{
-			// Select the first page of the document
-			var page = document.Pages[1];
+    // Step 2: Open the document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
+    {
+        // Step 3: Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Select the first page of the document
+            var page = document.Pages[1];
 
-			// Step 4: Use the `Visit` method to extract graphics from the page
-			graphicsAbsorber.Visit(page);
+            // Step 4: Use the `Visit` method to extract graphics from the page
+            graphicsAbsorber.Visit(page);
 
-			// Step 5: Display information about the extracted elements
-			foreach (var element in graphicsAbsorber.Elements)
-			{
-				Console.WriteLine($"Page Number: {element.SourcePage.Number}");
-				Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
-				Console.WriteLine($"Number of Operators: {element.Operators.Count}");
-			}
-		}
-	}
+            // Step 5: Display information about the extracted elements
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                Console.WriteLine($"Page Number: {element.SourcePage.Number}");
+                Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
+                Console.WriteLine($"Number of Operators: {element.Operators.Count}");
+            }
+        }
+    }
 }
 ```
 
@@ -125,39 +125,39 @@ Once you have extracted the graphics, you can move them to a different position 
 ```csharp
 private static void MoveGraphics()
 {
-	// The path to the document directory
-	var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-	// Open document using 'using' block to ensure proper disposal
-	using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
-	{
-		// Create a GraphicsAbsorber instance using 'using' block
-		using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
-		{
-			// Select the first page of the document
-			var page = document.Pages[1];
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
+    {
+        // Create a GraphicsAbsorber instance using 'using' block
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Select the first page of the document
+            var page = document.Pages[1];
 
-			// Extract graphic elements from the page
-			graphicsAbsorber.Visit(page);
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
 
-			// Temporarily suspend updates to improve performance
-			graphicsAbsorber.SuppressUpdate();
+            // Temporarily suspend updates to improve performance
+            graphicsAbsorber.SuppressUpdate();
 
-			// Loop through each extracted graphic element and shift its position
-			foreach (var element in graphicsAbsorber.Elements)
-			{
-				var position = element.Position;
-				// Move graphics by shifting its X and Y coordinates
-				element.Position = new Aspose.Pdf.Point(position.X + 150, position.Y - 10);
-			}
+            // Loop through each extracted graphic element and shift its position
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                var position = element.Position;
+                // Move graphics by shifting its X and Y coordinates
+                element.Position = new Aspose.Pdf.Point(position.X + 150, position.Y - 10);
+            }
 
-			// Resume updates and apply changes
-			graphicsAbsorber.ResumeUpdate();
-		}
+            // Resume updates and apply changes
+            graphicsAbsorber.ResumeUpdate();
+        }
 
-		// Save the modified document
-		document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
-	}
+        // Save the modified document
+        document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
+    }
 }
 ```
 
