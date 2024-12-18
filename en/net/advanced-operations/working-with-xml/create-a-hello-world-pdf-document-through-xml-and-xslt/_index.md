@@ -130,11 +130,11 @@ Please follow these steps to convert an XML file into a PDF document using XSLT:
 
 private static void CreateDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
 
     //Create pdf document
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         //Bind XML and XSLT files to the document
         document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
@@ -152,11 +152,11 @@ private static void CreateDocument()
 
 private static void CreateDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
 
     //Create pdf document
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    using var document = new Aspose.Pdf.Document();
 
     //Bind XML and XSLT files to the document
     document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
