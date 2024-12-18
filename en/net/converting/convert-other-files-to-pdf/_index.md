@@ -698,15 +698,19 @@ In order to convert a PostScript file to PDF format, Aspose.PDF for .NET offers 
 Following code snippet can be used to convert a PostScript file into PDF format with Aspose.PDF for .NET:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Create a new instance of PsLoadOptions
-PsLoadOptions options = new PsLoadOptions();
-// Open .ps document with created load options
-Document document = new Document(dataDir + "input.ps", options);
-// Save document
-document.Save(dataDir + "PSToPDF.pdf");
+private static void ConvertPostScriptToPDF()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new PsLoadOptions();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.ps", options))
+    {
+        // Save document in PDF format
+        document.Save(dataDir + "PSToPDF_out.pdf");
+    }
+}
 ```
 
 Additionally, you can set a set of font folders that will be used during conversion:
