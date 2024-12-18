@@ -553,26 +553,28 @@ In case of the plain text file, we can use the following technique:
 5. Use **Save** method of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Read the source text file
-TextReader tr = new StreamReader(dataDir + "log.txt");
-
-// Instantiate a Document object by calling its empty constructor
-Document document= new Document();
-
-// Add a new page in Pages collection of Document
-Page page = document.Pages.Add();
-
-// Create an instance of TextFragmet and pass the text from reader object to its constructor as argument
-TextFragment text = new TextFragment(tr.ReadToEnd());
-
-// Add a new text paragraph in paragraphs collection and pass the TextFragment object
-page.Paragraphs.Add(text);
-
-// Save resultant PDF file
-document.Save(dataDir + "TexttoPDF_out.pdf");
+private static void ConvertPlainTextFileToPDF()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Read the source text file
+    using (var streamReader = new StreamReader(dataDir + "log.txt"))
+    {
+        // Instantiate a Document object by calling its empty constructor
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add a new page in Pages collection of Document
+            var page = document.Pages.Add();
+            // Create an instance of TextFragment and pass the text from reader object to its constructor as argument
+            var text = new Aspose.Pdf.Text.TextFragment(streamReader.ReadToEnd());
+            // Add a new text paragraph in paragraphs collection and pass the TextFragment object
+            page.Paragraphs.Add(text);
+            // Save document in PDF format
+            document.Save(dataDir + "TextToPDF_out.pdf"); 
+        }
+    }
+}
 ```
 
 ### Convert pre-formatted text file to PDF
