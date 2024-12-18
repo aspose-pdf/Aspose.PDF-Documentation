@@ -494,18 +494,25 @@ private static void ConvertPCLtoPDF()
 You can also monitor the detection of errors during the conversion process. To do this, you need to configure PclLoadOptions object: set or unset SupressErrors.
 
 ```csharp
-public static void ConvertPCLtoPDFAvdanced()
+private static void ConvertPCLtoPDFAdvanced()
 {
-    PclLoadOptions options = new PclLoadOptions { SupressErrors = true };
-    Document document= new Document(dataDir + "demo.pcl", options);
-    if (options.Exceptions!=null)
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.PclLoadOptions { SupressErrors = true };
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
     {
-        foreach (var ex in options.Exceptions)
+        if (options.Exceptions != null)
         {
-            Console.WriteLine(ex.Message);
+            foreach (var ex in options.Exceptions)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
+        // Save document in PDF format
+        document.Save(dataDir + "pcl_test.pdf");
     }
-    document.Save(dataDir + "pcl_test.pdf");
 }
 ```
 
