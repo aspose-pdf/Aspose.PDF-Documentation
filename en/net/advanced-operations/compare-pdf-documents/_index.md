@@ -232,8 +232,8 @@ private static void ComparePDFWithGetDifferenceMethod()
 
     string doc1Path = dataDir + "documentPath1.pdf";
     string doc2Path = dataDir + "documentPath1.pdf";
-    string destPngFilePath = dataDir + "destPngFilePath.pdf";
-    string diffPngFilePath = dataDir + "diffPngFilePath.pdf";
+    string destPngFilePath = dataDir + "destPngFilePath.png";
+    string diffPngFilePath = dataDir + "diffPngFilePath.png";
 
     // Open documents
     using (Document document1 = new Aspose.Pdf.Document(doc1Path), document2 = new Aspose.Pdf.Document(doc2Path))
