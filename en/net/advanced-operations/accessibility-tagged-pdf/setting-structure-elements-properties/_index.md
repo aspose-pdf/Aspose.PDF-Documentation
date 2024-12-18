@@ -915,7 +915,7 @@ private static void SetElements()
     link5.AppendChild(figure5);
     link5.AlternateDescriptions = "Link to Google";
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(outFile);
 
     // Checking PDF/UA compliance
