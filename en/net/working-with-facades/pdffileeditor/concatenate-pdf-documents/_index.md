@@ -275,7 +275,25 @@ private static void ConcatenatingAllPdfFilesInParticularFolder()
 
 Please see the following simple code snippet to achieve this functionality.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePDFForms-ConcatenatePDFForms.cs" >}}
+```csharp
+private static void ConcatenatePdfFormsAndKeepFieldsUnique()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Set input and output file paths
+    var inputFile1 = dataDir + "inFile1.pdf";
+    var inputFile2 = dataDir + "inFile2.pdf";
+    var outFile = dataDir + "ConcatenatePDFForms_out.pdf";
+    // Open documents
+    var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // To keep unique field Id for all the fields 
+    fileEditor.KeepFieldsUnique = true;
+    // Format of the suffix which is added to field name to make it unique when forms are concatenated.
+    fileEditor.UniqueSuffix = "_%NUM%";
+    // Concatenate the files into a resultant Pdf file
+    fileEditor.Concatenate(inputFile1, inputFile2, outFile);
+}
+```
 
 ## Concatenate PDF files and create Table Of Contents
 
