@@ -716,14 +716,21 @@ private static void ConvertPostScriptToPDF()
 Additionally, you can set a set of font folders that will be used during conversion:
 
 ```csharp
-private static void ConvertPostscriptToPDFAvdanced()
+private static void ConvertPostscriptToPDFAdvanced()
 {
-    PsLoadOptions options = new PsLoadOptions
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Convert options with custom font folders
+    var options = new Aspose.Pdf.PsLoadOptions
     {
-        FontsFolders = new [] { @"c:\tmp\fonts1", @"c:\tmp\fonts2"}
+        FontsFolders = new[] { dataDir + @"\fonts1", dataDir + @"\fonts2" }
     };
-    Document document = new Document(dataDir + "input.ps", options);
-    document.Save(dataDir + "ps_test.pdf");
+
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.ps", options))
+    {
+        document.Save(dataDir + "ConvertPostscriptToPDFAdvanced_out.pdf");
+    }
 }
 ```
 
