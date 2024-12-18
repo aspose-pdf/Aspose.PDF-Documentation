@@ -263,17 +263,28 @@ private static void ComparePDFWithGetDifferenceMethod()
 The provided code snippet used the  [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) method, which compares two documents and generates a PDF report of the comparison results.
 
 ```cs
-string firstPath = "";
-string secondPath = "";
-string resultPdfPath = "";
-using (Document doc1 = new Document(firstPath), doc2 = new Document(secondPath))
+private static void ComparePDFWithCompareDocumentsToPdfMethod()
 {
-    GraphicalPdfComparer comparer = new GraphicalPdfComparer()
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    string document1Path = dataDir + "document1.pdf";
+    string document2Path = dataDir + "document2.pdf";
+    string resultPdfPath = dataDir + "compareDocumentsToPdf_out.pdf";
+
+    // Open documents
+    using (Document document1 = new Aspose.Pdf.Document(document1Path),
+           document2 = new Aspose.Pdf.Document(document2Path))
     {
-        Threshold = 3.0,
-        Color = Color.Blue,
-        Resolution = new Resolution(300)
-    };
-    comparer.CompareDocumentsToPdf(doc1, doc2, resultPdfPath);
+        // Create comparer
+        var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer()
+        {
+            Threshold = 3.0,
+            Color = Aspose.Pdf.Color.Blue,
+            Resolution = new Aspose.Pdf.Devices.Resolution(300)
+        };
+        // Compare
+        comparer.CompareDocumentsToPdf(document1, document2, resultPdfPath);
+    }
 }
 ```
