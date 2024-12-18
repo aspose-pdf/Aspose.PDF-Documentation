@@ -78,15 +78,50 @@ Bookmarks give you the option to keep track/link to specific page inside the PDF
 ## Implementation details
 
 Other than the creation of simple bookmarks, sometimes you have a requirement to create a bookmark in the form of chapters where you nest the individual bookmarks inside of the chapter bookmarks so that when you click on the + sign for a chapter you would see the pages inside when the bookmarks expands, as shown in the picture below .
- 
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void AddBookmarksAction()
 {
-    var document = new Document(dataDir + "Sample.pdf");
-    PdfContentEditor editor = new PdfContentEditor(document);
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmarksAction.pdf"))
+    {
+        var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
+        editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
+
+        // Saves the result PDF to file
+        editor.Save(dataDir + "AddBookmarksAction_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddBookmarksAction()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddBookmarksAction.pdf");
+
+    var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
     editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
     // Saves the result PDF to file
-    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+    editor.Save(dataDir + "AddBookmarksAction_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
