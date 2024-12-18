@@ -79,27 +79,77 @@ draft: false
 
 In order to read the settings we use [GetViewerPreference](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getviewerpreference) class. This method returns a variable where all settings are saved.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void GetViewerPreference()
 {
-    var document = new Document(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
-    PdfContentEditor editor = new PdfContentEditor(document);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Change Viewer Preferences
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetViewerPreference.pdf"))
+    {
+        // Instantiate PdfContentEditor object
+        var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
+        // Get Viewer Preferences
+        var preferences = editor.GetViewerPreference();
+
+        if ((preferences & Aspose.Pdf.Facades.ViewerPreference.CenterWindow) != 0)
+        {
+            Console.WriteLine("CenterWindow");
+        }
+
+        if ((preferences & Aspose.Pdf.Facades.ViewerPreference.HideMenubar) != 0)
+        {
+            Console.WriteLine("Menu bar hided");
+        }
+
+        if ((preferences & Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen) != 0)
+        {
+            Console.WriteLine("Page Mode Full Screen");
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void GetViewerPreference()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetViewerPreference.pdf");
+
+    // Instantiate PdfContentEditor object
+    var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
+    // Get Viewer Preferences
     var preferences = editor.GetViewerPreference();
-    if ((preferences & ViewerPreference.CenterWindow) != 0)
+
+    if ((preferences & Aspose.Pdf.Facades.ViewerPreference.CenterWindow) != 0)
     {
         Console.WriteLine("CenterWindow");
     }
 
-    if ((preferences & ViewerPreference.HideMenubar) != 0)
+    if ((preferences & Aspose.Pdf.Facades.ViewerPreference.HideMenubar) != 0)
     {
         Console.WriteLine("Menu bar hided");
     }
 
-    if ((preferences & ViewerPreference.PageModeFullScreen) != 0)
+    if ((preferences & Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen) != 0)
     {
         Console.WriteLine("Page Mode Full Screen");
     }
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
