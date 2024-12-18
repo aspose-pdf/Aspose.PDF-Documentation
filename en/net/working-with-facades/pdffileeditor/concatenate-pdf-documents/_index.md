@@ -105,7 +105,7 @@ The following C# code snippet shows you how to concatenate PDF files using file 
 ```csharp
 private static void ConcatenatePdfFilesUsingFilePaths()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
@@ -119,7 +119,7 @@ In some cases, when there are a lot of outlines, users may disable them with set
 ```csharp
 private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 { 
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     // Create PdfFileEditor object
     var pfe = new Aspose.Pdf.Facades.PdfFileEditor();
@@ -141,7 +141,7 @@ The following C# code snippet shows you how to concatenate multiple PDF files us
 ```csharp
 private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     string document1Path = dataDir + "document1.pdf";
@@ -199,7 +199,7 @@ If you want to concatenate multiple PDF files, you can use the overload of the [
 ```csharp
 private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     // Create PdfFileEditor
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
@@ -219,7 +219,7 @@ Concatenating an array of PDF files is not limited to only files residing on the
 ```csharp
 private static void ConcatenateArrayOfPdfFilesUsingStreams()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     
     var document1Path = dataDir + "document1.pdf";
@@ -253,7 +253,21 @@ You can even read all the Pdf files in a particular folder at runtime and concat
 
 Please try using the following C# code snippet to achieve this functionality.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatingAllPdfFiles-ConcatenatingAllPdfFiles.cs" >}}
+```csharp
+private static void ConcatenatingAllPdfFilesInParticularFolder()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Retrieve names of all the Pdf files in a particular Directory
+    var fileEntries = Directory.GetFiles(dataDir, "*.pdf");
+    var resultPdfPath = dataDir + "ConcatenatingAllPdfFilesInParticularFolder_out.pdf";
+    // Instantiate PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Call Concatenate method of PdfFileEditor object to concatenate all input files
+    // Into a single output file
+    pdfEditor.Concatenate(fileEntries, resultPdfPath);
+}
+```
 
 ## Concatenate PDF Forms and keep fields names unique
 
@@ -303,7 +317,7 @@ Please try using the following C# code snippet to achieve this functionality fro
 ```csharp
 private static void ConcatenatePdfFilesInFolder()
 { 
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     // Retrieve names of all the Pdf files in a particular Directory
     string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
