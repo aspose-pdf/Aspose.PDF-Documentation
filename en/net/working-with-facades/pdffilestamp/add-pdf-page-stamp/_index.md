@@ -134,12 +134,6 @@ private static void AddPageStampOnCertainPages()
         fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
     }
 }
-
-// Add PDF Page Numbers
-public enum PageNumPosition
-{
-    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
-}
 ```
 
 ## Add Page Number in a PDF File
@@ -176,6 +170,12 @@ private static void AddPageNumberInPdfFile()
         // Save updated PDF file with '_out' suffix
         fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
     }
+}
+
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
 }
 ```
 
@@ -223,5 +223,11 @@ private static void AddCustomPageNumberInPdfFile()
         // Save updated PDF file with '_out' suffix
         fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
     }
+}
+
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
 }
 ```
