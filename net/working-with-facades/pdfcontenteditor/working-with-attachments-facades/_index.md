@@ -81,39 +81,139 @@ You can add an attachment in an existing PDF file using [PdfContentEditor](https
 
 The following code snippet shows you how to add attachment from a file. For example, let's add the MP3 file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void AttachmentDemo01()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddAttachment()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
-    editor.AddDocumentAttachment(@"C:\Samples\file_example_MP3_700KB.mp3","Demo MP3 file");
-    editor.Save(dataDir + "PdfContentEditorDemo07.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor =  new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf")))
+    {
+        editor.AddDocumentAttachment(dataDir + "Demo_MP3.mp3", "Demo MP3 file");
+
+        // Save document
+        editor.Save(dataDir + "AddAttachment_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddAttachment()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"));
+    editor.AddDocumentAttachment(dataDir + "Demo_MP3.mp3", "Demo MP3 file");
+
+    // Save document
+    editor.Save(dataDir + "AddAttachment_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Add Attachment from a Stream in an Existing PDF
 
 Attachment can be added in a PDF file from a stream – FileStream – using [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) method. This method takes three arguments: stream, attachment name, and attachment description. In order to add attachment, you need to create an object of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class and bind the input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, you can call [AddDocumentAttachment](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/adddocumentattachment) method to add the attachment. Finally, you can call Save method to save the updated PDF file. The following code snippet shows you how to add attachment from a Stream.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void AttachmentDemo02()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddAttachment()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
-    var fileStream = System.IO.File.OpenRead(@"C:\Samples\file_example_MP3_700KB.mp3");
-    editor.AddDocumentAttachment(fileStream, "file_example_MP3_700KB.mp3", "Demo MP3 file");
-    editor.Save(dataDir + "PdfContentEditorDemo08.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf")))
+    {
+        var fileStream = File.OpenRead(dataDir + "Demo_MP3.mp3");
+        editor.AddDocumentAttachment(fileStream, "Demo_MP3.mp3", "Demo MP3 file");
+
+        // Save document
+        editor.Save(dataDir + "AddAttachment_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddAttachment()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"));
+
+    var fileStream = File.OpenRead(dataDir + "Demo_MP3.mp3");
+    editor.AddDocumentAttachment(fileStream, "Demo_MP3.mp3", "Demo MP3 file");
+
+    // Save document
+    editor.Save(dataDir + "AddAttachment_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Delete All Attachments from an Existing PDF File
 
 [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) method of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class allows you to delete all the attachments from an existing PDF file. Call the [DeleteAttachments](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteattachments) method. Finally, you have to call [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method to save the updated PDF file. The following code snippet shows you how to delete all attachments from an existing PDF file.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void DeleteAllAttachments()
 {
-    AttachmentDemo02();
-    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "PdfContentEditorDemo07.pdf"));
-    editor.DeleteAttachments();
-    editor.Save(dataDir + "PdfContentEditorDemo09.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf")))
+    {
+        editor.DeleteAttachments();
+
+        // Save document
+        editor.Save(dataDir + "DeleteAllAttachments_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void DeleteAllAttachments()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"));
+    editor.DeleteAttachments();
+
+    // Save document
+    editor.Save(dataDir + "DeleteAllAttachments_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
