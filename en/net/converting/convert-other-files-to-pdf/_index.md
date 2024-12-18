@@ -790,12 +790,15 @@ The following code snippet shows the process of converting LaTex file to PDF for
 ```csharp
 private static void ConvertTeXtoPDF()
 {
-    // Instantiate Latex Load option object
-    TeXLoadOptions options = new TeXLoadOptions();
-    // Create Document object
-    Document document= new Document(dataDir + "samplefile.tex", options);
-    // Save the output in PDF file
-    document.Save(dataDir + "TeXToPDF_out.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.TeXLoadOptions();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "samplefile.tex", options))
+    {
+        document.Save(dataDir + "TeXToPDF_out.pdf");
+    }
 }
 ```
 
