@@ -98,7 +98,6 @@ Aspose.Barcode contains a namespace, BarCodeRecognition, which contains the BarC
 
 For the purposes of this example, first convert a page in a PDF file into an image with Aspose.Pdf.Facades.PdfConverter. Then use the Aspose.BarCodeRecognition.BarCodeReader class to recognize the barcode in the image.
 
-
 {{% /alert %}}
 
 ```csharp
@@ -166,8 +165,8 @@ In above code snippets the output image is saved to a MemoryStream object. The i
 
 {{% /alert %}}
 
-{anchor:devices]
 #### Using the PngDevice Class
+
 In the Aspose.Pdf.Devices, is the PngDevice. This class lets you convert pages in PDF documents to PNG images.
 
 For the purpose of this example, load the source PDF file into the Document] cument's pages into PNG images. When the images have been created, use the BarCodeReader class under the Aspose.BarCodeRecognition to identify and read barcodes in the images.
