@@ -88,7 +88,99 @@ A PDF file goes through many stages during its life time. We create a PDF docume
 In order to manipulate XMP using Aspose.Pdf.Facades, we will use [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) class. We will use this class to manipulate predefined Meta data properties.[PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) class adds these properties to a PDF file. It also helps to open and save PDF files in which we’re adding Meta data. So, using [PdfXmpMetadata](http://www.aspose.com/docs/display/pdfnet/PdfXmpMetadata+Class) class, we can easily manipulate XMP in a PDF file.
 Following code snippet will help you understand how to use [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) class to work with XMP:
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ExtensibleMetadataPlatform-ExtensibleMetadataPlatform.cs" >}}
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddXmpMetadata()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+
+    // Create an object of PdfXmpMetadata class
+    var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
+
+    // Create input and output file streams
+    var input = new FileStream(dataDir + "FilledForm.pdf", FileMode.Open);
+
+    var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create);
+
+    // Set input file stream
+    xmpMetaData.BindPdf(input);
+
+    // Add base URL property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.BaseURL, "xmlns:pdf=http:// Ns.adobe.com/pdf/1.3/");
+
+    // Add creation date property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreateDate, DateTime.Now.ToString());
+
+    // Add Metadata Date property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.MetadataDate, DateTime.Now.ToString());
+
+    // Add Creator Tool property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreatorTool, "Creator Tool Name");
+
+    // Add Modify Date to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate, DateTime.Now.ToString());
+
+    // Add Nick Name to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
+
+    // Save xmp meta data in the pdf file
+    xmpMetaData.Save(output);
+
+    // Close input and output file streams
+    input.Close();
+    output.Close();
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddXmpMetadata()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+
+    // Create an object of PdfXmpMetadata class
+    var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
+
+    // Create input and output file streams
+    using var input = new FileStream(dataDir + "FilledForm.pdf", FileMode.Open);
+
+    using var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create);
+
+    // Set input file stream
+    xmpMetaData.BindPdf(input);
+
+    // Add base URL property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.BaseURL, "xmlns:pdf=http:// Ns.adobe.com/pdf/1.3/");
+
+    // Add creation date property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreateDate, DateTime.Now.ToString());
+
+    // Add Metadata Date property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.MetadataDate, DateTime.Now.ToString());
+
+    // Add Creator Tool property to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreatorTool, "Creator Tool Name");
+
+    // Add Modify Date to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate, DateTime.Now.ToString());
+
+    // Add Nick Name to xmp metadata
+    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
+
+    // Save xmp meta data in the pdf file
+    xmpMetaData.Save(output);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Conclusion
 
