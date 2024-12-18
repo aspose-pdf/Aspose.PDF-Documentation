@@ -100,33 +100,33 @@ Currently, the following copilots available:
 
 private static async Task GetSummary()
 {
-    // Create AI client.
+    // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
-               .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-               //.WithProject("proj_123") // Configure optional parameters.
+               .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+               //.WithProject("proj_123") // Configure optional parameters
                .Build())
     {
-        // Create copilot options.
+        // Create copilot options
         var options = Aspose.Pdf.AI.OpenAISummaryCopilotOptions
             .Create() // Create options like this, or...
-            //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-            .WithTemperature(0.5) // Configure other optional parameters.
-            .WithDocument("SampleDocument.pdf"); // .WithDocument methods allows to add text, pdf and paths to documents.
-            //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allows to add text, pdf and path collections.
+            //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate
+            .WithTemperature(0.5) // Configure other optional parameters
+            .WithDocument("SampleDocument.pdf"); // .WithDocument methods allows to add text, pdf and paths to documents
+            //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allows to add text, pdf and path collections
 
-        // Create summary copilot.
+        // Create summary copilot
         Aspose.Pdf.AI.ISummaryCopilot summaryCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateSummaryCopilot(openAiClient, options);
 
-        // Get summary text.
+        // Get summary text
         string summaryText = await summaryCopilot.GetSummaryAsync();
 
-        // Get summary document.
+        // Get summary document
         Aspose.Pdf.Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
 
-        // Get summary document with page info.
+        // Get summary document with page info
         Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
-        // Save summary as PDF document.
+        // Save summary as PDF document
         await summaryCopilot.SaveSummaryAsync("Summary_out.pdf");
     }
 }
@@ -139,33 +139,33 @@ private static async Task GetSummary()
 
 private static async Task GetSummary()
 {
-    // Create AI client.
+    // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
-        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-        //.WithProject("proj_123") // Configure optional parameters.
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
         .Build();
 
-    // Create copilot options.
+    // Create copilot options
     var options = Aspose.Pdf.AI.OpenAISummaryCopilotOptions
         .Create() // Create options like this, or...
-        //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-        .WithTemperature(0.5) // Configure other optional parameters.
-        .WithDocument("SampleDocument.pdf"); // .WithDocument methods allows to add text, pdf and paths to documents.
-        //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allows to add text, pdf and path collections.
+        //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate
+        .WithTemperature(0.5) // Configure other optional parameters
+        .WithDocument("SampleDocument.pdf"); // .WithDocument methods allows to add text, pdf and paths to documents
+        //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allows to add text, pdf and path collections
 
-    // Create summary copilot.
+    // Create summary copilot
     Aspose.Pdf.AI.ISummaryCopilot summaryCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateSummaryCopilot(openAiClient, options);
 
-    // Get summary text.
+    // Get summary text
     string summaryText = await summaryCopilot.GetSummaryAsync();
 
-    // Get summary document.
+    // Get summary document
     Aspose.Pdf.Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
 
-    // Get summary document with page info.
+    // Get summary document with page info
     Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
-    // Save summary as PDF document.
+    // Save summary as PDF document
     await summaryCopilot.SaveSummaryAsync("Summary_out.pdf");
 }
 ```
@@ -183,41 +183,41 @@ The provided code demonstrates the creation of an OpenAI client, configuration o
 
 private static async Task ChatWithDocument()
 {
-    // Create AI client.
+    // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
-                .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-                //.WithProject("proj_123") // Configure optional parameters.
+                .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+                //.WithProject("proj_123") // Configure optional parameters
                 //.WithOrganization("org_123")
-                .Build()) // Build.
+                .Build()) // Build
     {
-        // Create copilot options.
+        // Create copilot options
         var options = Aspose.Pdf.AI.OpenAIChatCopilotOptions
             .Create() // Create options like this, or...
-            //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt35Turbo) // Configure other optional parameters.
+            //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate
+            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt35Turbo) // Configure other optional parameters
             .WithTemperature(0.5)
             .WithTopP(1)
-            //.WithContextBackupJsonPath("ContextBackup.json") // Supply context backup to resume the conversation session.
-            //.WithRestoreContextFromBackup(true) // If set to true, the context will be restored.
-            .WithDocument("SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents.
+            //.WithContextBackupJsonPath("ContextBackup.json") // Supply context backup to resume the conversation session
+            //.WithRestoreContextFromBackup(true) // If set to true, the context will be restored
+            .WithDocument("SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents
 
-        // Create summary copilot.
+        // Create summary copilot
         Aspose.Pdf.AI.IChatCopilot chatCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateChatCopilot(openAiClient, options);
 
-        // Get response on a user query.
+        // Get response on a user query
         string copilotResponse1 = await chatCopilot.GetResponseAsync("Summarize this document.");
 
-        // Get response on a list of queries.
+        // Get response on a list of queries
         string copilotResponse2 = await chatCopilot.GetResponseAsync(new List<string>
         {
             "What is the subject of this document?",
             "How many words in it?"
         });
 
-        // Save summary as PDF document.
+        // Save summary as PDF document
         await chatCopilot.SaveResponseAsync("Summarize this document.", "ResponseDocument1_out.pdf");
 
-        // Save summary as PDF document.
+        // Save summary as PDF document
         await chatCopilot.SaveResponseAsync(new List<string>
             {
                 "What is the subject of this document?",
@@ -225,10 +225,10 @@ private static async Task ChatWithDocument()
             },
             "ResponseDocument2_out.pdf");
 
-        // Save context (ids of assistant, thread, documents).
+        // Save context (ids of assistant, thread, documents)
         await chatCopilot.SaveContextAsync("ContextBackup.json");
 
-        // Deletes the context.
+        // Deletes the context
         await chatCopilot.DeleteContextAsync();
     }
 }
@@ -241,41 +241,41 @@ private static async Task ChatWithDocument()
 
 private static async Task ChatWithDocument()
 {
-    // Create AI client.
+    // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
-        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-        //.WithProject("proj_123") // Configure optional parameters.
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
         //.WithOrganization("org_123")
-        .Build(); // Build.
+        .Build(); // Build
 
-    // Create copilot options.
+    // Create copilot options
     var options = Aspose.Pdf.AI.OpenAIChatCopilotOptions
         .Create() // Create options like this, or...
-        //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate.
-        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt35Turbo) // Configure other optional parameters.
+        //.Create(options => { options.Model = OpenAIModels.Gpt35Turbo; }) // ...create using delegate
+        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt35Turbo) // Configure other optional parameters
         .WithTemperature(0.5)
         .WithTopP(1)
-        //.WithContextBackupJsonPath("ContextBackup.json") // Supply context backup to resume the conversation session.
-        //.WithRestoreContextFromBackup(true) // If set to true, the context will be restored.
-        .WithDocument("SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents.
+        //.WithContextBackupJsonPath("ContextBackup.json") // Supply context backup to resume the conversation session
+        //.WithRestoreContextFromBackup(true) // If set to true, the context will be restored
+        .WithDocument("SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents
 
-    // Create summary copilot.
+    // Create summary copilot
     Aspose.Pdf.AI.IChatCopilot chatCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateChatCopilot(openAiClient, options);
 
-    // Get response on a user query.
+    // Get response on a user query
     string copilotResponse1 = await chatCopilot.GetResponseAsync("Summarize this document.");
 
-    // Get response on a list of queries.
+    // Get response on a list of queries
     string copilotResponse2 = await chatCopilot.GetResponseAsync(new List<string>
     {
         "What is the subject of this document?",
         "How many words in it?"
     });
 
-    // Save summary as PDF document.
+    // Save summary as PDF document
     await chatCopilot.SaveResponseAsync("Summarize this document.", "ResponseDocument1_out.pdf");
 
-    // Save summary as PDF document.
+    // Save summary as PDF document
     await chatCopilot.SaveResponseAsync(new List<string>
         {
             "What is the subject of this document?",
@@ -283,10 +283,10 @@ private static async Task ChatWithDocument()
         },
         "ResponseDocument2_out.pdf");
 
-    // Save context (ids of assistant, thread, documents).
+    // Save context (ids of assistant, thread, documents)
     await chatCopilot.SaveContextAsync("ContextBackup.json");
 
-    // Deletes the context.
+    // Deletes the context
     await chatCopilot.DeleteContextAsync();
 }
 ```
@@ -304,35 +304,35 @@ The provided code snippet demonstrates the creation of an OpenAI client, configu
 
 private static async Task CreateImageDescriptions()
 {
-    // Create AI client.
+    // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
-        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-        //.WithProject("proj_123") // Configure optional parameters.
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
         //.WithOrganization("org_123")
-        .Build()) // Build.
+        .Build()) // Build
     {
-        // Create copilot options.
+        // Create copilot options
         var options = Aspose.Pdf.AI.OpenAIImageDescriptionCopilotOptions
             .Create() // Create options like this, or...
-            //.Create(options => { options.Model = OpenAIModels.Gpt4Turbo; }) // ...create using delegate.
-            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4Turbo) // The model should have vision capabilities.
+            //.Create(options => { options.Model = OpenAIModels.Gpt4Turbo; }) // ...create using delegate
+            .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4Turbo) // The model should have vision capabilities
             .WithTemperature(0.5)
             .WithTopP(1)
-            .WithDocument(new Aspose.Pdf.AI.PdfDocument // Attach documents.
+            .WithDocument(new Aspose.Pdf.AI.PdfDocument // Attach documents
             {
                 Name = "Another_Pdf_with_images",
                 Document = new Aspose.Pdf.Document("Pdf_with_images.pdf")
             })
             .WithDocument("Mona_liza.jpg"); // Attach images
-            //.WithDocument("Pdf_with_images.pdf"); // Attach document paths.
+            //.WithDocument("Pdf_with_images.pdf"); // Attach document paths
 
-        // Create copilot.
+        // Create copilot
         var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateImageDescriptionCopilot(openAiClient, options);
 
-        // Get Image descriptions.
+        // Get Image descriptions
         List<Aspose.Pdf.AI.ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescriptionsAsync();
 
-        // Use extension method to add image descriptions to attached documents.
+        // Use extension method to add image descriptions to attached documents
         await copilot.AddPdfImageDescriptionsAsync("OutputDirectory");
     }
 }
@@ -345,35 +345,35 @@ private static async Task CreateImageDescriptions()
 
 private static async Task CreateImageDescriptions()
 {
-    // Create AI client.
+    // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
-        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key.
-        //.WithProject("proj_123") // Configure optional parameters.
+        .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
+        //.WithProject("proj_123") // Configure optional parameters
         //.WithOrganization("org_123")
-        .Build(); // Build.
+        .Build(); // Build
 
-    // Create copilot options.
+    // Create copilot options
     var options = Aspose.Pdf.AI.OpenAIImageDescriptionCopilotOptions
         .Create() // Create options like this, or...
-        //.Create(options => { options.Model = OpenAIModels.Gpt4Turbo; }) // ...create using delegate.
-        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4Turbo) // The model should have vision capabilities.
+        //.Create(options => { options.Model = OpenAIModels.Gpt4Turbo; }) // ...create using delegate
+        .WithModel(Aspose.Pdf.AI.OpenAIModels.Gpt4Turbo) // The model should have vision capabilities
         .WithTemperature(0.5)
         .WithTopP(1)
-        .WithDocument(new Aspose.Pdf.AI.PdfDocument // Attach documents.
+        .WithDocument(new Aspose.Pdf.AI.PdfDocument // Attach documents
         {
             Name = "Another_Pdf_with_images",
             Document = new Aspose.Pdf.Document("Pdf_with_images.pdf")
         })
         .WithDocument("Mona_liza.jpg"); // Attach images
-        //.WithDocument("Pdf_with_images.pdf"); // Attach document paths.
+        //.WithDocument("Pdf_with_images.pdf"); // Attach document paths
 
-    // Create copilot.
+    // Create copilot
     var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateImageDescriptionCopilot(openAiClient, options);
 
-    // Get Image descriptions.
+    // Get Image descriptions
     List<Aspose.Pdf.AI.ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescriptionsAsync();
 
-    // Use extension method to add image descriptions to attached documents.
+    // Use extension method to add image descriptions to attached documents
     await copilot.AddPdfImageDescriptionsAsync("OutputDirectory");
 }
 ```
@@ -390,7 +390,7 @@ private static async Task CreateImageDescriptions()
 private static async Task ChatWithLlama()
 {
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
-        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+        .CreateWithApiKey(ApiKey) // Create Llama client with the API key
         .Build())
     {
         var result = await llamaClient.CreateCompletionAsync(new Aspose.Pdf.AI.LlamaChatCompletionRequest
@@ -414,7 +414,7 @@ private static async Task ChatWithLlama()
 private static async Task ChatWithLlama()
 {
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
-        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+        .CreateWithApiKey(ApiKey) // Create Llama client with the API key
         .Build();
 
     var result = await llamaClient.CreateCompletionAsync(new Aspose.Pdf.AI.LlamaChatCompletionRequest
@@ -441,33 +441,33 @@ private static async Task ChatWithLlama()
 private static async Task GenerateSummary()
 {
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
-        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+        .CreateWithApiKey(ApiKey) // Create Llama client with the API key
         .Build())
     {
-        // Create copilot options.
+        // Create copilot options
         var options = Aspose.Pdf.AI.LlamaSummaryCopilotOptions
             .Create() // Create options like this, or...
-            //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate.
-            .WithTemperature(0.5) // Configure other optional parameters.
-            .WithDocument("SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents.
-            //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allow to add text, pdf and path collections.
+            //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate
+            .WithTemperature(0.5) // Configure other optional parameters
+            .WithDocument("SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents
+            //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allow to add text, pdf and path collections
 
-        // Create summary copilot.
+        // Create summary copilot
         var summaryCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateSummaryCopilot(llamaClient, options);
 
-        // Get summary text.
+        // Get summary text
         string summaryText = await summaryCopilot.GetSummaryAsync();
 
-        // Get summary document.
+        // Get summary document
         Aspose.Pdf.Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
 
-        // Get the summary document with page info.
+        // Get the summary document with page info
         Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
-        // Save the summary as a PDF document.
+        // Save the summary as a PDF document
         await summaryCopilot.SaveSummaryAsync("Llama_out.pdf");
 
-        // Save summary with specified format.
+        // Save summary with specified format
         await summaryCopilot.SaveSummaryAsync("Llama_out.docx", Aspose.Pdf.SaveFormat.DocX);
     }
 }
@@ -481,33 +481,33 @@ private static async Task GenerateSummary()
 private static async Task GenerateSummary()
 {
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
-        .CreateWithApiKey(ApiKey) // Create Llama client with the API key.
+        .CreateWithApiKey(ApiKey) // Create Llama client with the API key
         .Build();
 
-    // Create copilot options.
+    // Create copilot options
     var options = Aspose.Pdf.AI.LlamaSummaryCopilotOptions
         .Create() // Create options like this, or...
-        //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate.
-        .WithTemperature(0.5) // Configure other optional parameters.
-        .WithDocument("SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents.
-        //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allow to add text, pdf and path collections.
+        //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate
+        .WithTemperature(0.5) // Configure other optional parameters
+        .WithDocument("SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents
+        //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allow to add text, pdf and path collections
 
-    // Create summary copilot.
+    // Create summary copilot
     var summaryCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateSummaryCopilot(llamaClient, options);
 
-    // Get summary text.
+    // Get summary text
     string summaryText = await summaryCopilot.GetSummaryAsync();
 
-    // Get summary document.
+    // Get summary document
     Aspose.Pdf.Document summaryDocument = await summaryCopilot.GetSummaryDocumentAsync();
 
-    // Get the summary document with page info.
+    // Get the summary document with page info
     Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
-    // Save the summary as a PDF document.
+    // Save the summary as a PDF document
     await summaryCopilot.SaveSummaryAsync("Llama_out.pdf");
 
-    // Save summary with specified format.
+    // Save summary with specified format
     await summaryCopilot.SaveSummaryAsync("Llama_out.docx", Aspose.Pdf.SaveFormat.DocX);
 }
 ```
