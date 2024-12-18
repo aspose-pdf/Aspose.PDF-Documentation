@@ -170,7 +170,7 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
                     using (var fileStream2 = new MemoryStream(buffer2))
                     {
                         // Create instance of PdfFileEditor class to concatenate streams
-                        var pdfEditor = new PdfFileEditor();
+                        var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
                         // Concatenate both input MemoryStreams and save to output MemoryStream
                         pdfEditor.Concatenate(fileStream1, fileStream2, pdfStream);
                         // Convert MemoryStream back to byte array
