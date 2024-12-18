@@ -305,17 +305,15 @@ private static void AddTable()
 
     var resultTable = new DataTable();
 
-    using (var conn = new SqlConnection(connectionString))
-    {
-        const string sql = "SELECT * FROM Tennats";
-        using (var cmd = new SqlCommand(sql, conn))
-        {
-            using (var adapter = new SqlDataAdapter(cmd))
-            {
-                adapter.Fill(resultTable);
-            }
-        }
-    }
+    using var conn = new SqlConnection(connectionString);
+
+    const string sql = "SELECT * FROM Tennats";
+
+    using var cmd = new SqlCommand(sql, conn);
+
+    using var adapter = new SqlDataAdapter(cmd);
+    
+    adapter.Fill(resultTable);
 
     table.ImportDataTable(resultTable, true, 1, 1);
 
@@ -329,7 +327,7 @@ private static void AddTable()
 
     return new FileContentResult(streamOut.ToArray(), "application/pdf")
     {
-        FileDownloadName = "demotable2.pdf"
+        PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
     };
 }
 ```
