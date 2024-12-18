@@ -9,10 +9,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /en/net/working-with-document/
-    - /en/net/working-with-document-facades/
-    - /en/net/create-document/
 ---
 <script type="application/ld+json">
 {
