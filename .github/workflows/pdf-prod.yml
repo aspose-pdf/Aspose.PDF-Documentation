@@ -1,5 +1,6 @@
 name: Hugo-CI-prod
 on:
+  workflow_dispatch: null
   push:
     branches:
       - master
