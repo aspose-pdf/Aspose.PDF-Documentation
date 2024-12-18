@@ -10,9 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 aliases:
-    - /ar/net/working-with-document/
-    - /ar/net/working-with-document-facades/
-    - /ar/net/create-document/
+    - /net/working-with-document/
+    - /net/working-with-document-facades/
+    - /net/create-document/
 ---
 <script type="application/ld+json">
 {
