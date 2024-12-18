@@ -327,7 +327,21 @@ private static void ConcatenatePdfFiles()
 
 Once the PDF files have been merged, we can insert a blank page at the beginning of document on which can can create Table Of contents. In order to accomplish this requirement, we can load the merged file into **Document** object and we need to call Page.Insert(...) method to insert a blank page.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-InsertBlankPage.cs" >}}
+```csharp
+private static void InsertBlankPageAtBeginning()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Set input and output file paths
+    var inputFilePath = dataDir + "inFile.pdf";
+    // Open document
+    using (var document = new Aspose.Pdf.Document(inputFilePath))
+    {
+        // Insert an empty page in a PDF
+        document.Pages.Insert(1);
+    }
+}
+```
 
 ### Add Text Stamps
 
