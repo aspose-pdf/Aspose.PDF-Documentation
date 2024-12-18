@@ -686,7 +686,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_7()
     options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
     // Create Document object
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(xmlInputFile, options))
+    using (var document = new Aspose.Pdf.Document(xmlInputFile, options))
     {
         // Save output document
         document.Save(dataDir + "XSLFO_out.pdf");
@@ -753,7 +753,7 @@ public static MemoryStream TransformXsl(string inputXml, string xsltString)
     var transform = new XslCompiledTransform();
 
     //Create own XsltArgumentList
-    XsltArgumentList argsList = new XsltArgumentList();
+    var argsList = new XsltArgumentList();
     argsList.AddParam("isBoldName", "", "no");
 
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
