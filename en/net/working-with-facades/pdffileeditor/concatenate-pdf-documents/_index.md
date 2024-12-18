@@ -301,7 +301,27 @@ private static void ConcatenatePdfFormsAndKeepFieldsUnique()
 
 Please take a look over following code snippet for information on how to merge the PDF files.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-ConcatenatePdfFilesAndCreateTOC.cs" >}}
+```csharp
+private static void ConcatenatePdfFiles()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Set input and output file paths
+    var inputFile1 = dataDir + "inFile1.pdf";
+    var inputFile2 = dataDir + "inFile2.pdf";
+    var outFile = dataDir + "ConcatenatePdfFiles_out.pdf";
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    
+    using (var outputStream = new FileStream(outFile, FileMode.Create))
+    using (var stream1 = new FileStream(inputFile1, FileMode.Open))
+    using (var stream2 = new FileStream(inputFile2, FileMode.Open))
+    {
+        // Save concatenated output file
+        pdfEditor.Concatenate(stream1, stream2, outputStream);
+    }
+}
+```
 
 ### Insert blank page
 
