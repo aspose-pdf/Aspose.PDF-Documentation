@@ -138,7 +138,59 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 
 The following C# code snippet shows you how to concatenate multiple PDF files using MemoryStreams:
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenateMultiplePDFUsingMemoryStream-ConcatenateMultiplePDFUsingMemoryStream.cs" >}}
+```csharp
+private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+
+    string document1Path = dataDir + "document1.pdf";
+    string document2Path = dataDir + "document2.pdf";
+    string resultPdfPath = dataDir + "concatenated_out.pdf";
+    
+    // Create two file streams to read PDF files
+    using (var fs1 = new FileStream(document1Path, FileMode.Open, FileAccess.Read))
+    {
+        using (var fs2 = new FileStream(document2Path, FileMode.Open, FileAccess.Read))
+        {
+            // Create byte arrays to keep the contents of PDF files
+            var buffer1 = new byte[Convert.ToInt32(fs1.Length)];
+            var buffer2 = new byte[Convert.ToInt32(fs2.Length)];
+
+            var i = 0;
+            // Read PDF file contents into byte arrays
+            i = fs1.Read(buffer1, 0, Convert.ToInt32(fs1.Length));
+            i = fs2.Read(buffer2, 0, Convert.ToInt32(fs2.Length));
+
+            // Now, first convert byte arrays into MemoryStreams and then concatenate those streams
+            using (var pdfStream = new MemoryStream())
+            {
+                using (var fileStream1 = new MemoryStream(buffer1))
+                {
+                    using (var fileStream2 = new MemoryStream(buffer2))
+                    {
+                        // Create instance of PdfFileEditor class to concatenate streams
+                        var pdfEditor = new PdfFileEditor();
+                        // Concatenate both input MemoryStreams and save to output MemoryStream
+                        pdfEditor.Concatenate(fileStream1, fileStream2, pdfStream);
+                        // Convert MemoryStream back to byte array
+                        var data = pdfStream.ToArray();
+                        // Create a FileStream to save the output PDF file
+                        var output = new FileStream(resultPdfPath, FileMode.Create, FileAccess.Write);
+                        // Write byte array contents in the output file stream
+                        output.Write(data, 0, data.Length);
+                        // Close output file
+                        output.Close();
+                    }
+                }
+            }
+            // Close input files
+            fs1.Close();
+            fs2.Close();
+        }
+    }
+}
+```
 
 ## Concatenate Array of PDF Files Using File Paths
 
