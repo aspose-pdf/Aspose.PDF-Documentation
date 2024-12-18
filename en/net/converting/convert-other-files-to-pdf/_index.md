@@ -594,7 +594,7 @@ In this case, the library's algorithm also adds extra pages, but we can control 
 Following example shows how to convert pre-formatted text file (80x25) to PDF document with page size A4.
 
 ```csharp
-public static void ConvertPreFormattedTextToPdf()
+private static void ConvertPreFormattedTextToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
@@ -712,7 +712,7 @@ document.Save(dataDir + "PSToPDF.pdf");
 Additionally, you can set a set of font folders that will be used during conversion:
 
 ```csharp
-public static void ConvertPostscriptToPDFAvdanced()
+private static void ConvertPostscriptToPDFAvdanced()
 {
     PsLoadOptions options = new PsLoadOptions
     {
@@ -745,7 +745,7 @@ Aspose.PDF for .NET presents you online free application ["XML to PDF"](https://
 The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [Document](https://reference.aspose.com/page/net/aspose.page/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). But sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
 
 ```csharp
-public static void Convert_XSLFO_to_PDF()
+private static void Convert_XSLFO_to_PDF()
 {
     // Instantiate XslFoLoadOption object
     var options = new XslFoLoadOptions(".\\samples\\employees.xslt");
@@ -773,7 +773,7 @@ Aspose.PDF for .NET supports the feature to convert TeX files to PDF format and 
 The following code snippet shows the process of converting LaTex file to PDF format with C#.
 
 ```csharp
-public static void ConvertTeXtoPDF()
+private static void ConvertTeXtoPDF()
 {
     // Instantiate Latex Load option object
     TeXLoadOptions options = new TeXLoadOptions();
