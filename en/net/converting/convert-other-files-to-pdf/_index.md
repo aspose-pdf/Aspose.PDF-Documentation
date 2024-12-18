@@ -157,17 +157,6 @@ Aspose.PDF for .NET presents you online free application ["EPUB to PDF"](https:/
 Next following code snippet show you how to convert EPUB files to PDF format with C#.
 
 ```csharp
-public static void ConvertEPUBtoPDF()
-{
-    EpubLoadOptions option = new EpubLoadOptions();
-    Document document= new Document(dataDir + "WebAssembly.epub", option);
-    document.Save(dataDir + "epub_test.pdf");
-}
-```
-
-You can also set page size for conversion. To define new page size you `SizeF` object and pass it to [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main) constructor.
-
-```csharp
 private static void ConvertEPUBtoPDF()
 {
     // The path to the documents directory
@@ -176,6 +165,26 @@ private static void ConvertEPUBtoPDF()
     // Convert option
     var option = new Aspose.Pdf.EpubLoadOptions();
     
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", option))
+    {
+        // Save the converted document
+        document.Save(dataDir + "epub_test.pdf");
+    }
+}
+```
+
+You can also set page size for conversion. To define new page size you `SizeF` object and pass it to [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main) constructor.
+
+```csharp
+private static void ConvertEPUBtoPDFAdv()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Convert option
+    var option = new Aspose.Pdf.EpubLoadOptions(new SizeF(1190, 1684));
+
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", option))
     {
