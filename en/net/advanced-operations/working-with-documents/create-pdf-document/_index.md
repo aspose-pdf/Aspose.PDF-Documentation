@@ -95,17 +95,23 @@ To create a PDF file using C#, the following steps can be used.
 1. Save the resultant PDF document.
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+private static void CreateHelloWorldPdf()
+{
+    // Explicit dataDir initialization
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-// Initialize document object
-Document document = new Document();
-// Add page
-Page page = document.Pages.Add();
-// Add text to new page
-page.Paragraphs.Add(new TextFragment("Hello World!"));
-// Save updated PDF
-document.Save(dataDir + "HelloWorld_out.pdf");
+    // Initialize document object
+    var document = new Aspose.Pdf.Document();
+
+    // Add page
+    var page = document.Pages.Add();
+
+    // Add text to new page
+    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+
+    // Save updated PDF
+    document.Save(dataDir + "HelloWorld_out.pdf");
+}
 ```
 
 ### How to Create a Searchable PDF document
@@ -117,18 +123,26 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-using (Document document = new Document(file))
+private static void ConvertDocumentWithHocr(string file)
 {
-    bool convertResult = false;
-    try
+    // Load the document
+    using (var document = new Aspose.Pdf.Document(file))
     {
-        convertResult = document.Convert(CallBackGetHocr);
+        bool convertResult = false;
+        try
+        {
+            // Attempt to convert the document with HOCR
+            convertResult = document.Convert(CallBackGetHocr);
+        }
+        catch (Exception ex)
+        {
+            // Log the exception message
+            Console.WriteLine(ex.Message);
+        }
+
+        // Save the document
+        document.Save(file);
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex.Message);
-    }
-    document.Save(file);
 }
 
 static string CallBackGetHocr(System.Drawing.Image img)
@@ -210,20 +224,33 @@ Steps to creating an accessible PDF:
 1. Save the Modified Document.
 
 ```cs
-var document = new Document(somepdffilepath);
-ITaggedContent content = document.TaggedContent;
-SpanElement span = content.CreateSpanElement();
-content.RootElement.AppendChild(span);
-foreach (var op in document.Pages[1].Contents)
+private static void ProcessTaggedContent(string somePdfFilePath, string output)
 {
-    BDC bdc = op as BDC;
-    if (bdc != null)
-    {
-        span.Tag(bdc);
-    }
-}
+    // Load the document
+    var document = new Aspose.Pdf.Document(somePdfFilePath);
 
-document.Save(output);
+    // Get the tagged content
+    var content = document.TaggedContent;
+
+    // Create a SpanElement
+    var span = content.CreateSpanElement();
+
+    // Append the span to the root element
+    content.RootElement.AppendChild(span);
+
+    // Process operations on the first page
+    foreach (var op in document.Pages[1].Contents)
+    {
+        if (op is Aspose.Pdf.Operators.BDC bdc)
+        {
+            // Tag the BDC operation
+            span.Tag(bdc);
+        }
+    }
+
+    // Save the document
+    document.Save(output);
+}
 ```
 
 This code modifies a PDF by creating a span element within the document's tagged content and tagging specific content (BDC operations) from the first page with this span. The modified PDF is then saved to a new file.
