@@ -79,16 +79,54 @@ The [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/P
 
 First of all, an object is drawn in the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), in our example a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle). And set the action [createJavaScriptLink](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createjavascriptlink) to the Rectangle. After you may save your document.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void AddingJavascriptActions()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddJavascriptAction()
 {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
-    // create Javascript link
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(50, 750, 50, 50);
-    String code = "app.alert('Welcome to Aspose!');";
-    editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
-    // save the output file
-    editor.Save(dataDir + "JavaScriptAdded_output.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        editor.BindPdf(dataDir + "sample.pdf");
+
+        // create Javascript link
+        var rect = new System.Drawing.Rectangle(50, 750, 50, 50);
+
+        var code = "app.alert('Welcome to Aspose!');";
+        editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
+
+        // save the output file
+        editor.Save(dataDir + "JavaScriptAdded_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void AddJavascriptAction()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+    editor.BindPdf(dataDir + "sample.pdf");
+
+    // create Javascript link
+    var rect = new System.Drawing.Rectangle(50, 750, 50, 50);
+
+    var code = "app.alert('Welcome to Aspose!');";
+    editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
+
+    // save the output file
+    editor.Save(dataDir + "JavaScriptAdded_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
