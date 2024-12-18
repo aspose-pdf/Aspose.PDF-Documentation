@@ -216,7 +216,36 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
 
 Concatenating an array of PDF files is not limited to only files residing on the disk. You can also concatenate an array of PDF files from streams. If you want to concatenate multiple PDF files, you can use the appropriate overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. First, you need to create an array of input streams and one stream for output PDF and then call the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. The output will be saved in the output stream.The following C# code snippet shows you how to concatenate array of PDF files using streams.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateArrayOfPdfUsingStreams-ConcatenateArrayOfPdfUsingStreams.cs" >}}
+```csharp
+private static void ConcatenateArrayOfPdfFilesUsingStreams()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    
+    var document1Path = dataDir + "document1.pdf";
+    var document2Path = dataDir + "document2.pdf";
+    var resultPdfPath = dataDir + "ConcatenateArrayOfPdfUsingStreams_out.pdf";
+    
+    // Create PdfFileEditor object
+    PdfFileEditor pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Output stream
+    using (var outputStream = new FileStream(resultPdfPath, FileMode.Create))
+    {
+        using (var stream1 = new FileStream(document1Path, FileMode.Open))
+        {
+            using (var stream2 = new FileStream(document2Path, FileMode.Open))
+            {
+                // Array of streams
+                var inputStreams = new Stream[2];
+                inputStreams[0] = stream1;
+                inputStreams[1] = stream2;
+                // Concatenate file
+                pdfEditor.Concatenate(inputStreams, outputStream);
+            }   
+        }
+    }
+}
+```
 
 ## Concatenating all Pdf files in Particular folder
 
