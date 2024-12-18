@@ -134,7 +134,7 @@ private static void CreateDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
 
     //Create pdf document
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         //Bind XML and XSLT files to the document
         document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
@@ -156,7 +156,7 @@ private static void CreateDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
 
     //Create pdf document
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    using var document = new Aspose.Pdf.Document();
 
     //Bind XML and XSLT files to the document
     document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");

@@ -102,14 +102,14 @@ private static void ExtractLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
     {
         // Extract actions
-        Aspose.Pdf.Page page = document.Pages[1];
-        Aspose.Pdf.Annotations.AnnotationSelector selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+        var page = document.Pages[1];
+        var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
         page.Accept(selector);
-        IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
-        Aspose.Pdf.Annotations.Annotation annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+        var list = selector.Selected;
+        var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
 
         // Save updated document
         document.Save(dataDir + "ExtractLinks_out.pdf");
@@ -128,14 +128,14 @@ private static void ExtractLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");
 
     // Extract actions
-    Aspose.Pdf.Page page = document.Pages[1];
-    Aspose.Pdf.Annotations.AnnotationSelector selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+    var page = document.Pages[1];
+    var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
     page.Accept(selector);
-    IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
-    Aspose.Pdf.Annotations.Annotation annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+    var list = selector.Selected;
+    var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
 
     // Save updated document
     document.Save(dataDir + "ExtractLinks_out.pdf");
