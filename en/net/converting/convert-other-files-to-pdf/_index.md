@@ -161,10 +161,10 @@ private static void ConvertEPUBtoPDF()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-    // Convert option
-    var option = new Aspose.Pdf.EpubLoadOptions();
+    // Convert options
+    var options = new Aspose.Pdf.EpubLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", option))
+    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
     {
         // Save the converted document
         document.Save(dataDir + "epub_test.pdf");
@@ -179,10 +179,10 @@ private static void ConvertEPUBtoPDFAdv()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-    // Convert option
-    var option = new Aspose.Pdf.EpubLoadOptions(new SizeF(1190, 1684));
+    // Convert options
+    var options = new Aspose.Pdf.EpubLoadOptions(new SizeF(1190, 1684));
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", option))
+    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
     {
         // Save the converted document
         document.Save(dataDir + "epub_test.pdf");
@@ -218,8 +218,10 @@ private static void ConvertMarkdownToPDF()
 {
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-    // Open Markdown document
-    using (var document = new Aspose.Pdf.Document(dataDir + "sample.md", new Aspose.Pdf.MdLoadOptions()))
+    // Convert options
+    var options = new Aspose.Pdf.MdLoadOptions();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.md", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "MarkdownToPDF.pdf");
@@ -474,11 +476,18 @@ The following code snippet shows the process of converting a PCL file into PDF f
 3. Save the document with the desired file name.
 
 ```csharp
-public static void ConvertPCLtoPDF()
+private static void ConvertPCLtoPDF()
 {
-    PclLoadOptions options = new PclLoadOptions();
-    Document document= new Document(dataDir + "demo.pcl", options);
-    document.Save(dataDir + "pcl_test.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.PclLoadOptions();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
+    {
+        // Save document in PDF format
+        document.Save(dataDir + "pcl_test.pdf");
+    }
 }
 ```
 
