@@ -118,18 +118,25 @@ The code starts by initializing two PDF documents using their respective file pa
 3. The resulting comparison document, which highlights the differences between the two pages, is saved to the file path specified in 'resultPdfPath'.
 
 ```cs
-string documentPath1 = "";
-string documentPath2= "";
-
-string resultPdfPath = "";
-
-using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+private static void ComparingSpecificPages()
 {
-    SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    var documentPath1 = dataDir + "documentPath1.pdf";
+    var documentPath2 = dataDir + "documentPath2.pdf";
+    var resultPdfPath = dataDir + "ComparingSpecificPages_out.pdf";
+
+    // Open documents
+    using (Document document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
     {
-        AdditionalChangeMarks = true,
-        ComparisonMode = ComparisonMode.IgnoreSpaces
-    });
+        // Compare
+        Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+        {
+            AdditionalChangeMarks = true,
+            ComparisonMode = ComparisonMode.IgnoreSpaces
+        });
+    }
 }
 ```
 
@@ -151,18 +158,29 @@ Just like in the first example, two PDF documents are initialized with their fil
 3. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
 
 ```cs
-string documentPath1 = "";
-string documentPath2 = "";
-
-string resultPdfPath = "";
-
-using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+private static void ComparingEntireDocuments()
 {
-    SideBySidePdfComparer.Compare(document1, document2, resultPdfPath, new SideBySideComparisonOptions()
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var documentPath1 = dataDir + "documentPath1.pdf";
+    var documentPath2 = dataDir + "documentPath2.pdf";
+    var resultPdfPath = dataDir + "ComparingEntireDocuments_out.pdf";
+
+    // Open documents
+    using (Document document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
     {
-        AdditionalChangeMarks = true,
-        ComparisonMode = ComparisonMode.IgnoreSpaces
-    });
+        // Compare
+        Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
+            document1,
+            document2,
+            resultPdfPath,
+            new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+            {
+                AdditionalChangeMarks = true,
+                ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+            });
+    }
 }
 ```
 
@@ -207,25 +225,34 @@ This method compares the first pages of two PDF files and generates two PNG imag
 This process can be useful for visually comparing changes or differences between two versions of a document.
 
 ```cs
-string doc1Path = "";
-string doc2Path = "";
-string destPngFilePath = "";
-string diffPngFilePath = "";
-
-using (Document doc1 = new Document(doc1Path), doc2 = new Document(doc2Path))
+private static void ComparePDFWithGetDifferenceMethod()
 {
-    GraphicalPdfComparer comparer = new GraphicalPdfComparer();
-    using (ImagesDifference imagesDifference = comparer.GetDifference(doc1.Pages[1], doc2.Pages[1]))
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    string doc1Path = dataDir + "documentPath1.pdf";
+    string doc2Path = dataDir + "documentPath1.pdf";
+    string destPngFilePath = dataDir + "destPngFilePath.pdf";
+    string diffPngFilePath = dataDir + "diffPngFilePath.pdf";
+
+    // Open documents
+    using (Document document1 = new Aspose.Pdf.Document(doc1Path), document2 = new Aspose.Pdf.Document(doc2Path))
     {
-
-        using (Bitmap diffImg = imagesDifference.DifferenceToImage(Color.Red, Color.White))
+        // Create comparer 
+        var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
+        
+        // Compare
+        using (var imagesDifference = comparer.GetDifference(document1.Pages[1], document2.Pages[1]))
         {
-            diffImg.Save(diffPngFilePath);
-        }
+            using (var diffImg = imagesDifference.DifferenceToImage(Color.Red, Color.White))
+            {
+                diffImg.Save(diffPngFilePath);
+            }
 
-        using (Bitmap destImg = imagesDifference.GetDestinationImage())
-        {
-            destImg.Save(destPngFilePath);
+            using (var destImg = imagesDifference.GetDestinationImage())
+            {
+                destImg.Save(destPngFilePath);
+            }
         }
     }
 }
