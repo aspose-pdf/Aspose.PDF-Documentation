@@ -100,16 +100,16 @@ private static void GetTaggedContent()
     // Create Pdf Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-        // Work with Tagged Pdf content
+        // Work with Tagged PDF content
 
         // Set Title and Language for Document
         taggedContent.SetTitle("Simple Tagged Pdf Document");
         taggedContent.SetLanguage("en-US");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TaggedPDFContent.pdf");
     }
 }
@@ -125,19 +125,19 @@ private static void GetTaggedContent()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
     // Get Content for work with TaggedPdf
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
-    // Work with Tagged Pdf content
+    // Work with Tagged PDF content
 
     // Set Title and Language for Document
     taggedContent.SetTitle("Simple Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "TaggedPDFContent.pdf");
 }
 ```
@@ -158,10 +158,10 @@ private static void GetRootStructure()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
@@ -186,10 +186,10 @@ private static void GetRootStructure()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
-    // Get Content for work with TaggedPdf
+    // Get Content for work with Tagged PDF
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Set Title and Language for Document
@@ -219,10 +219,10 @@ private static void AccessChildElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open Pdf Document
+    // Open PDF Document
     using (var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf"))
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Access to root element(s)
@@ -261,7 +261,7 @@ private static void AccessChildElements()
             }
         }
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "AccessChildElements.pdf");
     }
 }
@@ -277,10 +277,10 @@ private static void AccessChildElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open Pdf Document
+    // Open PDF Document
     using var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf");
 
-    // Get Content for work with TaggedPdf
+    // Get Content for work with Tagged PDF
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Access to root element(s)
@@ -319,7 +319,7 @@ private static void AccessChildElements()
         }
     }
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "AccessChildElements.pdf");
 }
 ```
@@ -352,12 +352,12 @@ private static void TagImages()
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
         Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-        // Set title for tagged pdf document
+        // Set title for tagged PDF document
         taggedContent.SetTitle("Document with images");
 
         foreach (Aspose.Pdf.LogicalStructure.FigureElement figureElement in rootElement.FindElements<Aspose.Pdf.LogicalStructure.FigureElement>(true))
         {
-            // Set Alternative Text  for Figure
+            // Set AlternativeText for Figure
             figureElement.AlternativeText = "Figure alternative text (technique 2)";
 
             // Create and Set BBox Attribute
@@ -410,12 +410,12 @@ private static void TagImages()
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
     Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-    // Set title for tagged pdf document
+    // Set title for tagged PDF document
     taggedContent.SetTitle("Document with images");
 
     foreach (Aspose.Pdf.LogicalStructure.FigureElement figureElement in rootElement.FindElements<Aspose.Pdf.LogicalStructure.FigureElement>(true))
     {
-        // Set Alternative Text  for Figure
+        // Set AlternativeText for Figure
         figureElement.AlternativeText = "Figure alternative text (technique 2)";
 
         // Create and Set BBox Attribute

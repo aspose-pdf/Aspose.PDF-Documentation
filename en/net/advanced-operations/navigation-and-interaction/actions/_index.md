@@ -114,7 +114,7 @@ private static void AddHyperlink()
     using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
     {
         // Create link
-        Aspose.Pdf.Page page = document.Pages[1];
+        var page = document.Pages[1];
         // Create Link annotation object
         var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
         // Create border object for LinkAnnotation
@@ -156,7 +156,7 @@ private static void AddHyperlink()
     // Open document
     using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
     // Create link
-    Aspose.Pdf.Page page = document.Pages[1];
+    var page = document.Pages[1];
     // Create Link annotation object
     var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
     // Create border object for LinkAnnotation
@@ -206,7 +206,7 @@ private static void AddHyperlink()
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
-        Aspose.Pdf.Page page = document.Pages.Add();
+        var page = document.Pages.Add();
         // Create Text Fragment instance
         var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
         // Create local hyperlink instance
@@ -249,7 +249,7 @@ private static void AddHyperlink()
     // Create Document instance
     using var document = new Aspose.Pdf.Document();
     // Add page to pages collection of PDF file
-    Aspose.Pdf.Page page = document.Pages.Add();
+    var page = document.Pages.Add();
     // Create Text Fragment instance
     var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
     // Create local hyperlink instance
@@ -309,7 +309,7 @@ private static void GetHyperlink()
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Traverse through all the page of PDF
-        foreach (Aspose.Pdf.Page page in document.Pages)
+        foreach (var page in document.Pages)
         {
             // Get the link annotations from particular page
             var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
@@ -317,10 +317,10 @@ private static void GetHyperlink()
             page.Accept(selector);
 
             // Create list holding all the links
-            IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
+            var list = selector.Selected;
 
             // Iterate through individual item inside list
-            foreach (Aspose.Pdf.Annotations.LinkAnnotation a in list)
+            foreach (var a in list)
             {
                 // Print the destination URL
                 Console.WriteLine("\nDestination: " + (a.Action as Aspose.Pdf.Annotations.GoToURIAction).URI + "\n");
@@ -344,7 +344,7 @@ private static void GetHyperlink()
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Traverse through all the page of PDF
-    foreach (Aspose.Pdf.Page page in document.Pages)
+    foreach (var page in document.Pages)
     {
         // Get the link annotations from particular page
         var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
@@ -355,7 +355,7 @@ private static void GetHyperlink()
         IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
 
         // Iterate through individual item inside list
-        foreach (Aspose.Pdf.Annotations.LinkAnnotation a in list)
+        foreach (var a in list)
         {
             // Print the destination URL
             Console.WriteLine("\nDestination: " + (a.Action as Aspose.Pdf.Annotations.GoToURIAction).URI + "\n");
@@ -388,7 +388,7 @@ private static void ShowLinkAnnotationText()
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Iterate through each page of PDF
-        foreach (Aspose.Pdf.Page page in document.Pages)
+        foreach (var page in document.Pages)
         {
             // Show link annotation
             ShowLinkAnnotations(page);
@@ -398,7 +398,7 @@ private static void ShowLinkAnnotationText()
 
 private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 {
-    foreach (Aspose.Pdf.Annotations.Annotation annot in page.Annotations)
+    foreach (var annot in page.Annotations)
     {
         if (annot is Aspose.Pdf.Annotations.LinkAnnotation)
         {
@@ -430,7 +430,7 @@ private static void ShowLinkAnnotationText()
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Iterate through each page of PDF
-    foreach (Aspose.Pdf.Page page in document.Pages)
+    foreach (var page in document.Pages)
     {
         // Show link annotation
         ShowLinkAnnotations(page);
@@ -439,7 +439,7 @@ private static void ShowLinkAnnotationText()
 
 private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 {
-    foreach (Aspose.Pdf.Annotations.Annotation annot in page.Annotations)
+    foreach (var annot in page.Annotations)
     {
         if (annot is Aspose.Pdf.Annotations.LinkAnnotation)
         {
@@ -535,7 +535,7 @@ private static void SpecifyPage()
     using (var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf"))
     {
         // Get the instance of second page of document
-        Aspose.Pdf.Page page2 = document.Pages[2];
+        var page2 = document.Pages[2];
         // Create the variable to set the zoom factor of target page
         double zoom = 1;
         // Create GoToAction instance
@@ -563,7 +563,7 @@ private static void SpecifyPage()
     // Load the PDF file
     using var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf");
     // Get the instance of second page of document
-    Aspose.Pdf.Page page2 = document.Pages[2];
+    var page2 = document.Pages[2];
     // Create the variable to set the zoom factor of target page
     double zoom = 1;
     // Create GoToAction instance

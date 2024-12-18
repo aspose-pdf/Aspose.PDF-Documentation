@@ -208,7 +208,7 @@ private static void CreateTable()
         summaryAttribute.SetStringValue("The summary text for table");
         tableAttributes.SetAttribute(summaryAttribute);
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "CreateTableElement.pdf");
     }
 
@@ -343,7 +343,7 @@ private static void CreateTable()
     summaryAttribute.SetStringValue("The summary text for table");
     tableAttributes.SetAttribute(summaryAttribute);
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(dataDir + "CreateTableElement.pdf");
 
     // Checking PDF/UA compliance
@@ -464,7 +464,7 @@ private static void StyleTable()
             tdElement.SetText(String.Format("Foot {0}", colIndex));
         }
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTableElement.pdf");
     }
 
@@ -563,7 +563,7 @@ private static void StyleTable()
         tdElement.SetText(String.Format("Foot {0}", colIndex));
     }
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(dataDir + "StyleTableElement.pdf");
 
     // Checking PDF/UA compliance
@@ -670,7 +670,7 @@ private static void StyleTableRow()
             tdElement.SetText(string.Format("Foot {0}", colIndex));
         }
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTableRow.pdf");
     }
 
@@ -760,7 +760,7 @@ private static void StyleTableRow()
         tdElement.SetText(string.Format("Foot {0}", colIndex));
     }
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(dataDir + "StyleTableRow.pdf");
 
     // Checking PDF/UA compliance
@@ -898,7 +898,7 @@ private static void StyleTableCell()
             tdElement.SetText(string.Format("Foot {0}", colIndex));
         }
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTableCell.pdf");
     }
 
@@ -1019,7 +1019,7 @@ private static void StyleTableCell()
         tdElement.SetText(string.Format("Foot {0}", colIndex));
     }
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(dataDir + "StyleTableCell.pdf");
 
     // Checking PDF/UA compliance

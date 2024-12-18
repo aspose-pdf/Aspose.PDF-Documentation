@@ -91,10 +91,10 @@ private static void SetProperties()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
@@ -117,7 +117,7 @@ private static void SetProperties()
         h1.ExpansionText = "Expansion Text";
         h1.ActualText = "Actual Text";
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StructureElementsProperties.pdf");
     }
 }
@@ -133,10 +133,10 @@ private static void SetProperties()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
-    // Get Content for work with TaggedPdf
+    // Get Content for work with Tagged PDF
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Set Title and Language for Document
@@ -159,7 +159,7 @@ private static void SetProperties()
     h1.ExpansionText = "Expansion Text";
     h1.ActualText = "Actual Text";
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "StructureElementsProperties.pdf");
 }
 ```
@@ -180,10 +180,10 @@ private static void SetTextElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
@@ -199,7 +199,7 @@ private static void SetTextElements()
         p.SetText("Paragraph.");
         rootElement.AppendChild(p);
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TextStructureElement.pdf");
     }
 }
@@ -215,7 +215,7 @@ private static void SetTextElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
     // Get Content for work with TaggedPdf
@@ -234,7 +234,7 @@ private static void SetTextElements()
     p.SetText("Paragraph.");
     rootElement.AppendChild(p);
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "TextStructureElement.pdf");
 }
 ```
@@ -256,10 +256,10 @@ private static void SetTextBlockElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
@@ -292,7 +292,7 @@ private static void SetTextBlockElements()
         p.SetText("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
         rootElement.AppendChild(p);
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "TextBlockStructureElements.pdf");
     }
 }
@@ -308,10 +308,10 @@ private static void SetTextBlockElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
-    // Get Content for work with TaggedPdf
+    // Get Content for work with Tagged PDF
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Set Title and Language for Document
@@ -344,7 +344,7 @@ private static void SetTextBlockElements()
     p.SetText("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
     rootElement.AppendChild(p);
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "TextBlockStructureElements.pdf");
 }
 ```
@@ -365,10 +365,10 @@ private static void SetInlineElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
@@ -467,7 +467,7 @@ private static void SetInlineElements()
         span10.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
         p.AppendChild(span10);
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "InlineStructureElements.pdf");
     }
 }
@@ -483,10 +483,10 @@ private static void SetInlineElements()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
-    // Get Content for work with TaggedPdf
+    // Get Content for work with Tagged PDF
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Set Title and Language for Document
@@ -585,7 +585,7 @@ private static void SetInlineElements()
     span10.SetText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
     p.AppendChild(span10);
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "InlineStructureElements.pdf");
 }
 ```
@@ -606,10 +606,10 @@ private static void SetTagName()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Get Content for work with TaggedPdf
+        // Get Content for work with Tagged PDF
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
@@ -660,7 +660,7 @@ private static void SetTagName()
         p3.AppendChild(span3);
         p4.AppendChild(span4);
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "CustomTag.pdf");
     }
 }
@@ -676,10 +676,10 @@ private static void SetTagName()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
-    // Get Content for work with TaggedPdf
+    // Get Content for work with Tagged PDF
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Set Title and Language for Document
@@ -730,7 +730,7 @@ private static void SetTagName()
     p3.AppendChild(span3);
     p4.AppendChild(span4);
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "CustomTag.pdf");
 }
 ```
@@ -756,7 +756,7 @@ private static void SetElements()
     string logFile = dataDir + "46035_log.xml";
     string imgFile = dataDir + "google-icon-512.png";
 
-    // Creation document and getting Tagged Pdf Content
+    // Creation document and getting Tagged PDF Content
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -817,13 +817,13 @@ private static void SetElements()
         figure5.SetImage(imgFile, 1200);
         figure5.AlternativeText = "Google icon";
         Aspose.Pdf.LogicalStructure.StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
-        Aspose.Pdf.LogicalStructure.StructureAttribute placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
+        var placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
         placementAttribute.SetNameValue(Aspose.Pdf.LogicalStructure.AttributeName.Placement_Block);
         linkLayoutAttributes.SetAttribute(placementAttribute);
         link5.AppendChild(figure5);
         link5.AlternateDescriptions = "Link to Google";
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(outFile);
     }
 
@@ -849,7 +849,7 @@ private static void SetElements()
     string logFile = dataDir + "46035_log.xml";
     string imgFile = dataDir + "google-icon-512.png";
 
-    // Creation document and getting Tagged Pdf Content
+    // Creation document and getting Tagged PDF Content
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -909,13 +909,13 @@ private static void SetElements()
     figure5.SetImage(imgFile, 1200);
     figure5.AlternativeText = "Google icon";
     Aspose.Pdf.LogicalStructure.StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
-    Aspose.Pdf.LogicalStructure.StructureAttribute placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
+    var placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
     placementAttribute.SetNameValue(Aspose.Pdf.LogicalStructure.AttributeName.Placement_Block);
     linkLayoutAttributes.SetAttribute(placementAttribute);
     link5.AppendChild(figure5);
     link5.AlternateDescriptions = "Link to Google";
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(outFile);
 
     // Checking PDF/UA compliance
@@ -946,7 +946,7 @@ private static void AddLinkElement()
     string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
     string logFile = dataDir + "46144_log.xml";
 
-    // Creation document and getting Tagged Pdf Content
+    // Creation document and getting Tagged PDF Content
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -1004,7 +1004,7 @@ private static void AddLinkElement()
         p4.AppendChild(span42);
         p4.SetText(".");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(outFile);
     }
 
@@ -1030,7 +1030,7 @@ private static void AddLinkElement()
     string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
     string logFile = dataDir + "46144_log.xml";
 
-    // Creation document and getting Tagged Pdf Content
+    // Creation document and getting Tagged PDF Content
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -1087,7 +1087,7 @@ private static void AddLinkElement()
     p4.AppendChild(span42);
     p4.SetText(".");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(outFile);
 
     // Checking PDF/UA compliance
@@ -1115,7 +1115,7 @@ private static void SetNoteElement()
     string outFile = dataDir + "45929_doc.pdf";
     string logFile = dataDir + "45929_log.xml";
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -1150,7 +1150,7 @@ private static void SetNoteElement()
         // Resultant document does not compliance to PDF/UA If ClearId() used for Note Structure Element
         //note3.ClearId();
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(outFile);
     }
 
@@ -1175,7 +1175,7 @@ private static void SetNoteElement()
     string outFile = dataDir + "45929_doc.pdf";
     string logFile = dataDir + "45929_log.xml";
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -1209,7 +1209,7 @@ private static void SetNoteElement()
     // Resultant document does not compliance to PDF/UA If ClearId() used for Note Structure Element
     //note3.ClearId();
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document1.Save(outFile);
 
     // Checking PDF/UA compliance
@@ -1237,7 +1237,7 @@ private static void SetLanguageAndTitle()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get TaggedContent
@@ -1276,7 +1276,7 @@ private static void SetLanguageAndTitle()
         pSP.Language = "es-ES";
         taggedContent.RootElement.AppendChild(pSP);
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "SetupLanguageAndTitle.pdf");
     }
 }
@@ -1292,7 +1292,7 @@ private static void SetLanguageAndTitle()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
     // Get TaggedContent
@@ -1331,7 +1331,7 @@ private static void SetLanguageAndTitle()
     pSP.Language = "es-ES";
     taggedContent.RootElement.AppendChild(pSP);
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "SetupLanguageAndTitle.pdf");
 }
 ```

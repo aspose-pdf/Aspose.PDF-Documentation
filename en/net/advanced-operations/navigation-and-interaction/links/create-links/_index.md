@@ -105,7 +105,7 @@ private static void CreateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
     {
         // Create link
         Aspose.Pdf.Page page = document.Pages[1];
@@ -131,10 +131,10 @@ private static void CreateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
 
     // Create link
-    Aspose.Pdf.Page page = document.Pages[1];
+    var page = document.Pages[1];
     Aspose.Pdf.Annotations.LinkAnnotation link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
     link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
     link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
@@ -173,11 +173,11 @@ private static void CreateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
     {
         // Create link
-        Aspose.Pdf.Page page = document.Pages[1];
-        Aspose.Pdf.Annotations.LinkAnnotation link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
         link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
         link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
         page.Annotations.Add(link);
@@ -199,11 +199,11 @@ private static void CreateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
 
     // Create link
-    Aspose.Pdf.Page page = document.Pages[1];
-    Aspose.Pdf.Annotations.LinkAnnotation link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
     link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
     link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
     page.Annotations.Add(link);

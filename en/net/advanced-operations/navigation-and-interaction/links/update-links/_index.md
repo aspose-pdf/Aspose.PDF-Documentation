@@ -103,13 +103,13 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
         // Get the first link annotation from first page of document
-        Aspose.Pdf.Annotations.LinkAnnotation linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
 
         // Modification link: change link destination
-        Aspose.Pdf.Annotations.GoToAction goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
+        var goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
 
         // Specify the destination for link object
         // The first parameter is document object, second is destination page number.
@@ -133,13 +133,13 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
     // Get the first link annotation from first page of document
-    Aspose.Pdf.Annotations.LinkAnnotation linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
 
     // Modification link: change link destination
-    Aspose.Pdf.Annotations.GoToAction goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
+    var goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
 
     // Specify the destination for link object
     // The first parameter is document object, second is destination page number.
@@ -168,10 +168,10 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
         // Get the first link annotation from first page of document
-        Aspose.Pdf.Annotations.LinkAnnotation linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
 
         // Modification link: change link action and set target as web address
         linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
@@ -193,10 +193,10 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
     // Get the first link annotation from first page of document
-    Aspose.Pdf.Annotations.LinkAnnotation linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
 
     // Modification link: change link action and set target as web address
     linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
@@ -223,10 +223,10 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
-        Aspose.Pdf.Annotations.LinkAnnotation linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
-        Aspose.Pdf.Annotations.GoToRemoteAction goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+        var goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
 
         // Next line update destination, do not update file
         goToR.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(2, 0, 0, 1.5);
@@ -251,10 +251,10 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
-    Aspose.Pdf.Annotations.LinkAnnotation linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
-    Aspose.Pdf.Annotations.GoToRemoteAction goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+    var goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
 
     // Next line update destination, do not update file
     goToR.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(2, 0, 0, 1.5);
@@ -284,14 +284,14 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
-        foreach (Aspose.Pdf.Annotations.Annotation annotation in document.Pages[1].Annotations)
+        foreach (var annotation in document.Pages[1].Annotations)
         {
             if (annotation is Aspose.Pdf.Annotations.LinkAnnotation)
             {
                 // Search the text under the annotation
-                Aspose.Pdf.Text.TextFragmentAbsorber ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
+                var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
                 Aspose.Pdf.Rectangle rect = annotation.Rect;
                 rect.LLX -= 10;
                 rect.LLY -= 10;
@@ -301,9 +301,9 @@ private static void UpdateLinkAnnotation()
                 ta.Visit(document.Pages[1]);
 
                 // Change color of the text.
-                foreach (Aspose.Pdf.Text.TextFragment tf in ta.TextFragments)
+                foreach (var textFragment in ta.TextFragments)
                 {
-                    tf.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+                    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
                 }
             }
         }
@@ -325,14 +325,14 @@ private static void UpdateLinkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
-    foreach (Aspose.Pdf.Annotations.Annotation annotation in document.Pages[1].Annotations)
+    foreach (var annotation in document.Pages[1].Annotations)
     {
         if (annotation is Aspose.Pdf.Annotations.LinkAnnotation)
         {
             // Search the text under the annotation
-            Aspose.Pdf.Text.TextFragmentAbsorber ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
+            var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
             Aspose.Pdf.Rectangle rect = annotation.Rect;
             rect.LLX -= 10;
             rect.LLY -= 10;
@@ -342,9 +342,9 @@ private static void UpdateLinkAnnotation()
             ta.Visit(document.Pages[1]);
 
             // Change color of the text.
-            foreach (Aspose.Pdf.Text.TextFragment tf in ta.TextFragments)
+            foreach (var textFragment in ta.TextFragments)
             {
-                tf.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+                textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
             }
         }
     }

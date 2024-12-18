@@ -99,7 +99,7 @@ private static void GetBookmarks()
     using (var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf"))
     {
         // Loop through all the bookmarks
-        foreach (Aspose.Pdf.OutlineItemCollection outlineItem in document.Outlines)
+        foreach (var outlineItem in document.Outlines)
         {
             Console.WriteLine(outlineItem.Title);
             Console.WriteLine(outlineItem.Italic);
@@ -124,7 +124,7 @@ private static void GetBookmarks()
     using var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf");
 
     // Loop through all the bookmarks
-    foreach (Aspose.Pdf.OutlineItemCollection outlineItem in document.Outlines)
+    foreach (var outlineItem in document.Outlines)
     {
         Console.WriteLine(outlineItem.Title);
         Console.WriteLine(outlineItem.Italic);
@@ -159,7 +159,7 @@ private static void GetBookmarkPageNumber()
         // Extract bookmarks
         Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
 
-        foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+        foreach (var bookmark in bookmarks)
         {
             string strLevelSeparator = string.Empty;
 
@@ -195,7 +195,7 @@ private static void GetBookmarkPageNumber()
     // Extract bookmarks
     Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
 
-    foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+    foreach (var bookmark in bookmarks)
     {
         string strLevelSeparator = string.Empty;
 
@@ -231,7 +231,7 @@ private static void GetChildBookmarks()
     using (var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf"))
     {
         // Loop through all the bookmarks
-        foreach (Aspose.Pdf.OutlineItemCollection outlineItem in document.Outlines)
+        foreach (var outlineItem in document.Outlines)
         {
             Console.WriteLine(outlineItem.Title);
             Console.WriteLine(outlineItem.Italic);
@@ -243,7 +243,7 @@ private static void GetChildBookmarks()
                 Console.WriteLine("Child Bookmarks");
 
                 // There are child bookmarks then loop through that as well
-                foreach (Aspose.Pdf.OutlineItemCollection childOutline in outlineItem)
+                foreach (var childOutline in outlineItem)
                 {
                     Console.WriteLine(childOutline.Title);
                     Console.WriteLine(childOutline.Italic);
@@ -270,7 +270,7 @@ private static void GetChildBookmarks()
     using var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf");
 
     // Loop through all the bookmarks
-    foreach (Aspose.Pdf.OutlineItemCollection outlineItem in document.Outlines)
+    foreach (var outlineItem in document.Outlines)
     {
         Console.WriteLine(outlineItem.Title);
         Console.WriteLine(outlineItem.Italic);
@@ -282,7 +282,7 @@ private static void GetChildBookmarks()
             Console.WriteLine("Child Bookmarks");
 
             // There are child bookmarks then loop through that as well
-            foreach (Aspose.Pdf.OutlineItemCollection childOutline in outlineItem)
+            foreach (var childOutline in outlineItem)
             {
                 Console.WriteLine(childOutline.Title);
                 Console.WriteLine(childOutline.Italic);
@@ -314,7 +314,7 @@ private static void UpdateBookmarks()
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf"))
     {
         // Get a bookmark object
-        Aspose.Pdf.OutlineItemCollection pdfOutline = document.Outlines[1];
+        var pdfOutline = document.Outlines[1];
         pdfOutline.Title = "Updated Outline";
         pdfOutline.Italic = true;
         pdfOutline.Bold = true;
@@ -339,7 +339,7 @@ private static void UpdateBookmarks()
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf");
 
     // Get a bookmark object
-    Aspose.Pdf.OutlineItemCollection pdfOutline = document.Outlines[1];
+    var pdfOutline = document.Outlines[1];
     pdfOutline.Title = "Updated Outline";
     pdfOutline.Italic = true;
     pdfOutline.Bold = true;
@@ -380,7 +380,7 @@ private static void UpdateChildBookmarks()
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf"))
     {
         // Get a bookmark object
-        Aspose.Pdf.OutlineItemCollection pdfOutline = document.Outlines[1];
+        var pdfOutline = document.Outlines[1];
 
         // Get child bookmark object
         Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
@@ -408,7 +408,7 @@ private static void UpdateChildBookmarks()
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf");
 
     // Get a bookmark object
-    Aspose.Pdf.OutlineItemCollection pdfOutline = document.Outlines[1];
+    var pdfOutline = document.Outlines[1];
 
     // Get child bookmark object
     Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
@@ -446,7 +446,7 @@ private static void ExpandBookmarks()
         document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
 
         // Traverse through each Outline item in outlines collection of PDF file
-        foreach (Aspose.Pdf.OutlineItemCollection item in document.Outlines)
+        foreach (var item in document.Outlines)
         {
             // Set open status for outline item
             item.Open = true;
@@ -475,7 +475,7 @@ private static void ExpandBookmarks()
     document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
 
     // Traverse through each Outline item in outlines collection of PDF file
-    foreach (Aspose.Pdf.OutlineItemCollection item in document.Outlines)
+    foreach (var item in document.Outlines)
     {
         // Set open status for outline item
         item.Open = true;

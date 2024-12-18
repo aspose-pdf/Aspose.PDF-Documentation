@@ -106,11 +106,11 @@ private static void AddJavaScript()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF files
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Adding JavaScript at Document Level
         // Instantiate JavascriptAction with desired JavaScript statement
-        JavascriptAction javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
+        var javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
         // Assign JavascriptAction object to desired action of Document
         document.OpenAction = javaScript;
@@ -136,11 +136,11 @@ private static void AddJavaScript()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF files
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Adding JavaScript at Document Level
     // Instantiate JavascriptAction with desired JavaScript statement
-    JavascriptAction javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
+    var javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
     // Assign JavascriptAction object to desired action of Document
     document.OpenAction = javaScript;
@@ -175,7 +175,7 @@ private static void AddJavaScript()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Document object
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
         document.JavaScript["func1"] = "function func1() { hello(); }";
@@ -184,7 +184,7 @@ private static void AddJavaScript()
     }
 
     // Remove Document level JavaScript
-    using (Aspose.Pdf.Document document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf"))
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf"))
     {
         IList keys = (IList)document1.JavaScript.Keys;
 
@@ -214,14 +214,14 @@ private static void AddJavaScript()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Document object
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    using var document = new Aspose.Pdf.Document();
     document.Pages.Add();
     document.JavaScript["func1"] = "function func1() { hello(); }";
     document.JavaScript["func2"] = "function func2() { hello(); }";
     document.Save(dataDir + "AddJavascript.pdf");
 
     // Remove Document level JavaScript
-    using Aspose.Pdf.Document document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf");
+    using var document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf");
     IList keys = (IList)document1.JavaScript.Keys;
 
     Console.WriteLine("=============================== ");
@@ -318,7 +318,7 @@ private static void CreateDocumentWithExpiryDate()
     document.Pages.Add();
 
     // Define the expiry date and time (e.g., April 1, 2024, 12:00:00 PM)
-    DateTime expiryDateTime = new DateTime(2024, 4, 1, 12, 0, 0);
+    var expiryDateTime = new DateTime(2024, 4, 1, 12, 0, 0);
 
     // Create JavaScript code to enforce the expiry date and time
     string jsCode =

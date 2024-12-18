@@ -680,7 +680,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_7()
     string xsltInputFile = dataDir + "employees.xslt";
 
     // Instantiate XslFoLoadOption object
-    Aspose.Pdf.XslFoLoadOptions options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
+    var options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
 
     options.XsltArgumentList = new XsltArgumentList();
     options.XsltArgumentList.AddParam("isBoldName", "", "yes");
@@ -708,13 +708,13 @@ public static void Example_Xslfo_to_Pdf_Param_21_7()
     string xsltInputFile = dataDir + "employees.xslt";
 
     // Instantiate XslFoLoadOption object
-    Aspose.Pdf.XslFoLoadOptions options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
+    var options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
 
     options.XsltArgumentList = new XsltArgumentList();
     options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
     // Create Document object
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document(xmlInputFile, options);
+    using var document = new Aspose.Pdf.Document(xmlInputFile, options);
 
     // Save output document
     document.Save(dataDir + "XSLFO_out.pdf");
@@ -801,7 +801,7 @@ public static MemoryStream TransformXsl(string inputXml, string xsltString)
     var transform = new XslCompiledTransform();
 
     //Create own XsltArgumentList
-    XsltArgumentList argsList = new XsltArgumentList();
+    var argsList = new XsltArgumentList();
     argsList.AddParam("isBoldName", "", "no");
 
     using var reader1 = XmlReader.Create(new StringReader(xsltString));
@@ -1368,16 +1368,16 @@ private static void CreateDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Instantiate Document object
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Bind source XML file
         document.BindXml(dataDir + "log.xml");
 
         // Get reference of page object from XML
-        Aspose.Pdf.Page page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+        var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
 
         // Get reference of first TextSegment with ID boldHtml
-        Aspose.Pdf.Text.TextSegment segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+        var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
 
         // Get reference of second TextSegment with ID strongHtml
         segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
@@ -1399,16 +1399,16 @@ private static void CreateDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Instantiate Document object
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    using var document = new Aspose.Pdf.Document();
 
     // Bind source XML file
     document.BindXml(dataDir + "log.xml");
 
     // Get reference of page object from XML
-    Aspose.Pdf.Page page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+    var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
 
     // Get reference of first TextSegment with ID boldHtml
-    Aspose.Pdf.Text.TextSegment segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+    var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
 
     // Get reference of second TextSegment with ID strongHtml
     segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
@@ -1514,13 +1514,13 @@ private static void CreateDocument()
     string outFile = dataDir + "output_out.pdf";
 
     // Create Document object
-    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Bind source XML file
         document.BindXml(inXml);
 
         // Get reference of Image with ID testImg
-        Aspose.Pdf.Image image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+        var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
 
         // Set image file
         image.File = inFile;
@@ -1546,13 +1546,13 @@ private static void CreateDocument()
     string outFile = dataDir + "output_out.pdf";
 
     // Create Document object
-    using Aspose.Pdf.Document document = new Aspose.Pdf.Document();
+    using var document = new Aspose.Pdf.Document();
 
     // Bind source XML file
     document.BindXml(inXml);
 
     // Get reference of Image with ID testImg
-    Aspose.Pdf.Image image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+    var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
 
     // Set image file
     image.File = inFile;
