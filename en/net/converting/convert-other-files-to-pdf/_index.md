@@ -758,13 +758,17 @@ The conversion of XSL-FO files to PDF can be implemented using the traditional A
 ```csharp
 private static void Convert_XSLFO_to_PDF()
 {
-    // Instantiate XslFoLoadOption object
-    var options = new XslFoLoadOptions(".\\samples\\employees.xslt");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
     // Set error handling strategy
-    options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
-    // Create Document object
-    var document = new Document(".\\samples\\employees.xml", options);
-    document.Save(dataDir + "data_xml.pdf");
+    options.ParsingErrorsHandlingType = Aspose.Pdf.XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        document.Save(dataDir + "Convert_XSLFO_to_PDF_out.pdf");
+    }
 }
 ```
 
