@@ -116,7 +116,21 @@ private static void ConcatenatePdfFilesUsingFilePaths()
 
 In some cases, when there are a lot of outlines, users may disable them with setting CopyOutlines to false and improve performance of concatenation.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-CopyOutline.cs" >}}
+```csharp
+private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
+{ 
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Create PdfFileEditor object
+    var pfe = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Get files from dataDir
+    string[] files = Directory.GetFiles(dataDir);
+    // Setting CopyOutlines to false
+    pfe.CopyOutlines = false;
+    // Concatenate files
+    pfe.Concatenate(files, dataDir + "ConcatenateUsingPath_CopyOutlinesDisabled_out.pdf");
+}
+```
 
 ## Concatenate multiple PDF files using MemoryStreams
 
