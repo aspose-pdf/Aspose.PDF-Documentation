@@ -77,17 +77,49 @@ draft: false
 
 In order to replace text in an existing PDF file, you need to create an object of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class and bind an input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, you need to call [ReplaceText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replacetext/index) method. You need to save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class. The following code snippet shows you how to replace text in an existing PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceText01()
 {
-    PdfContentEditor editor = new PdfContentEditor();
-    ditor.BindPdf(dataDir + "sample.pdf");
-    editor.ReplaceText("Value", "Label");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo01.pdf");
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.ReplaceText("Value", "Label");
+
+        // Save the output file
+        editor.Save(dataDir + "ReplaceText_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceText01()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor Object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.ReplaceText("Value", "Label");
+
+    // Save the output file
+    editor.Save(dataDir + "ReplaceText_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 Check how it's looks in the original document:
 
@@ -99,95 +131,289 @@ And check the result after replacing the text:
 
 In the second example, you will see how, in addition to replacing the text, you can also increase or decrease the font size:
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceText02()
 {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.ReplaceText("Value", "Label", 12);
+
+        // save the output file
+        editor.Save(dataDir + "ReplaceText_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceText02()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+    editor.BindPdf(dataDir + "ReplaceText.pdf");
     editor.ReplaceText("Value", "Label", 12);
 
     // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo02.pdf");
+    editor.Save(dataDir + "ReplaceText_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 For more advanced possibilities for working with our text, we will use the [TextState](https://reference.aspose.com/pdf/net/aspose.pdf.text/textstate) method. With this method, we can make text bold, italic, colored, and so on.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceText03()
 {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
-    TextState textState = new TextState
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        ForegroundColor = Color.Red,
+        editor.BindPdf(dataDir + "ReplaceText.pdf");
+
+        var textState = new Aspose.Pdf.Text.TextState
+        {
+            ForegroundColor = Aspose.Pdf.Color.Red,
+            FontSize = 12,
+        };
+
+        editor.ReplaceText("Value", "Label", textState);
+
+        // save the output file
+        editor.Save(dataDir + "ReplaceText_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceText03()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+    editor.BindPdf(dataDir + "ReplaceText.pdf");
+
+    var textState = new Aspose.Pdf.Text.TextState
+    {
+        ForegroundColor = Aspose.Pdf.Color.Red,
         FontSize = 12,
     };
+
     editor.ReplaceText("Value", "Label", textState);
 
     // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo03.pdf");
+    editor.Save(dataDir + "ReplaceText_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 In case you need to replace all the specified text in the document, use the following code snippet. That is, the replacement of the text will take place wherever the text specified for replacement will be encountered, and it will also count the number of such replacements.
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceText04()
 {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        int count = 0;
+
+        while (editor.ReplaceText("Value", "Label"))
+        {
+            count++;
+        }
+
+        Console.WriteLine($"{count} occurrences have been replaced.");
+
+        // Save the output file
+        editor.Save(dataDir + "ReplaceText_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceText04()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+    editor.BindPdf(dataDir + "ReplaceText.pdf");
     int count = 0;
+
     while (editor.ReplaceText("Value", "Label"))
-    { 
+    {
         count++;
     }
 
     Console.WriteLine($"{count} occurrences have been replaced.");
 
-    // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo04.pdf");
+    // Save the output file
+    editor.Save(dataDir + "ReplaceText_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ![Replace all Text](replace_text3.png)
 
 The following code snippet shows how to make all the text replacements but on a specific page of your document.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceText05()
 {
-    PdfContentEditor editor = new PdfContentEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        int count = 0;
+
+        while (editor.ReplaceText("9999", 2, "ABCDE"))
+        {
+            count++;
+        }
+
+        Console.WriteLine($"{count} occurrences have been replaced.");
+
+        // Save the output file
+        editor.Save(dataDir + "ReplaceText_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceText05()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+    editor.BindPdf(dataDir + "ReplaceText.pdf");
     int count = 0;
+
     while (editor.ReplaceText("9999", 2, "ABCDE"))
     {
         count++;
     }
-    
+
     Console.WriteLine($"{count} occurrences have been replaced.");
 
-    // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo05.pdf");
+    // Save the output file
+    editor.Save(dataDir + "ReplaceText_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 In the next code snippet, we will show how to replace, for example, a given number with the letters we need.
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceText06()
 {
-    PdfContentEditor editor = new PdfContentEditor
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor
+           {
+               ReplaceTextStrategy = new Aspose.Pdf.Facades.ReplaceTextStrategy
+               {
+                   IsRegularExpressionUsed = true,
+                   ReplaceScope = Aspose.Pdf.Facades.ReplaceTextStrategy.Scope.ReplaceAll
+               }
+           })
     {
-        ReplaceTextStrategy = new ReplaceTextStrategy
-        {
-            IsRegularExpressionUsed = true,
-            ReplaceScope = ReplaceTextStrategy.Scope.ReplaceAll
-        }
-    };
-    editor.BindPdf(dataDir + "sample.pdf");
-    editor.ReplaceText("\\d{4}", "ABCDE");
-    // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo06.pdf");
+        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.ReplaceText("\\d{4}", "ABCDE");
+
+        // Save the output file
+        editor.Save(dataDir + "ReplaceText_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceText06()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor
+    {
+        ReplaceTextStrategy = new Aspose.Pdf.Facades.ReplaceTextStrategy
+        {
+            IsRegularExpressionUsed = true,
+            ReplaceScope = Aspose.Pdf.Facades.ReplaceTextStrategy.Scope.ReplaceAll
+        }
+    };
+
+    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.ReplaceText("\\d{4}", "ABCDE");
+
+    // Save the output file
+    editor.Save(dataDir + "ReplaceText_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
