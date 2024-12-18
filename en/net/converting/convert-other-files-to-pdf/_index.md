@@ -666,18 +666,19 @@ The following code snippet shows the process of converting XPS file into PDF for
 3. Save the document to PDF format with the desired file name.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
-// Instantiate LoadOption object using XPS load option
-Aspose.Pdf.LoadOptions options = new XpsLoadOptions();
-
-// Create document object
-Document document = new Document(dataDir + "XPSToPDF.xps", options);
-
-// Save the resultant PDF document
-document.Save(dataDir + "XPSToPDF_out.pdf");
+private static void ConvertXPSToPDF()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Instantiate Options object
+    var options = new Aspose.Pdf.XpsLoadOptions();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options))
+    {
+        // Save document in PDF format
+        document.Save(dataDir + "ConvertXPSToPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
