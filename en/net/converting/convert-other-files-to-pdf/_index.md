@@ -216,7 +216,7 @@ The following code snippet shows how to use this functionality with Aspose.PDF l
 ```csharp
 private static void ConvertMarkdownToPDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Convert options
     var options = new Aspose.Pdf.MdLoadOptions();
@@ -478,7 +478,7 @@ The following code snippet shows the process of converting a PCL file into PDF f
 ```csharp
 private static void ConvertPCLtoPDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Convert options
     var options = new Aspose.Pdf.PclLoadOptions();
@@ -496,7 +496,7 @@ You can also monitor the detection of errors during the conversion process. To d
 ```csharp
 private static void ConvertPCLtoPDFAdvanced()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Convert options
     var options = new Aspose.Pdf.PclLoadOptions { SupressErrors = true };
@@ -556,12 +556,12 @@ In case of the plain text file, we can use the following technique:
 private static void ConvertPlainTextFileToPDF()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Read the source text file
     using (var streamReader = new StreamReader(dataDir + "log.txt"))
     {
-        // Instantiate a Document object by calling its empty constructor
+        // Instantiate a Document object
         using (var document = new Aspose.Pdf.Document())
         {
             // Add a new page in Pages collection of Document
@@ -596,47 +596,44 @@ Following example shows how to convert pre-formatted text file (80x25) to PDF do
 ```csharp
 public static void ConvertPreFormattedTextToPdf()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Read the text file as array of string
-    var lines = System.IO.File.ReadAllLines(dataDir + "rfc822.txt");
-
-    // Instantiate a Document object by calling its empty constructor
-    Document document= new Document();
-
-    // Add a new page in Pages collection of Document
-    Page page = document.Pages.Add();
-
-    // Set left and right margins for better presentation
-    page.PageInfo.Margin.Left = 20;
-    page.PageInfo.Margin.Right = 10;
-    page.PageInfo.DefaultTextState.Font = FontRepository.FindFont("Courier New");
-    page.PageInfo.DefaultTextState.FontSize = 12;
-
-    foreach (var line in lines)
+    var lines = File.ReadAllLines(dataDir + "rfc822.txt");
+    // Instantiate a Document object
+    using (var document = new Aspose.Pdf.Document())
     {
-        // check if line contains "form feed" character
-        // see https://en.wikipedia.org/wiki/Page_break
-        if (line.StartsWith("\x0c"))
-        {
-            page = document.Pages.Add();
-            page.PageInfo.Margin.Left = 20;
-            page.PageInfo.Margin.Right = 10;
-            page.PageInfo.DefaultTextState.Font = FontRepository.FindFont("Courier New");
-            page.PageInfo.DefaultTextState.FontSize = 12;
-        }
-        else
-        {
-            // Create an instance of TextFragment and
-            // pass the line to its
-            // constructor as argument
-            TextFragment text = new TextFragment(line);
+        // Add a new page in Pages collection of Document
+        var page = document.Pages.Add();
+        // Set left and right margins for better presentation
+        page.PageInfo.Margin.Left = 20;
+        page.PageInfo.Margin.Right = 10;
+        page.PageInfo.DefaultTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier New");
+        page.PageInfo.DefaultTextState.FontSize = 12;
 
-            // Add a new text paragraph in paragraphs collection and pass the TextFragment object
-            page.Paragraphs.Add(text);
+        foreach (var line in lines)
+        {
+            // check if line contains "form feed" character
+            // see https://en.wikipedia.org/wiki/Page_break
+            if (line.StartsWith("\x0c"))
+            {
+                page = document.Pages.Add();
+                page.PageInfo.Margin.Left = 20;
+                page.PageInfo.Margin.Right = 10;
+                page.PageInfo.DefaultTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier New");
+                page.PageInfo.DefaultTextState.FontSize = 12;
+            }
+            else
+            {
+                // Create an instance of TextFragment and pass the line to its constructor as argument
+                var text = new Aspose.Pdf.Text.TextFragment(line);
+                // Add a new text paragraph in paragraphs collection and pass the TextFragment object
+                page.Paragraphs.Add(text);
+            }
         }
+        // Save document in PDF format
+        document.Save(dataDir + "PreFormattedTextToPDF_out.pdf");
     }
-
-    // Save resultant PDF file
-    document.Save(dataDir + "TexttoPDF_out.pdf");
 }
 ```
 
@@ -670,7 +667,7 @@ The following code snippet shows the process of converting XPS file into PDF for
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Instantiate LoadOption object using XPS load option
@@ -701,7 +698,7 @@ Following code snippet can be used to convert a PostScript file into PDF format 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 // Create a new instance of PsLoadOptions
 PsLoadOptions options = new PsLoadOptions();
