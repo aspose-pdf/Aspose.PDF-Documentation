@@ -209,8 +209,6 @@ In Visual Studio:
 ```csharp
 // PdfController.cs
 using Microsoft.AspNetCore.Mvc;
-using Aspose.Pdf;
-using Aspose.Pdf.Devices;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -238,36 +236,36 @@ public class PdfController : ControllerBase
                 return BadRequest("File must be a PDF");
 
             using var inputStream = file.OpenReadStream();
-            using var document = new Document(inputStream);
+            using var document = new Aspose.Pdf.Document(inputStream);
             using var outputStream = new MemoryStream();
 
             switch (outputFormat.ToLower())
             {
                 case "docx":
-                    document.Save(outputStream, SaveFormat.DocX);
-                    return File(outputStream.ToArray(), 
+                    document.Save(outputStream, Aspose.Pdf.SaveFormat.DocX);
+                    return File(outputStream.ToArray(),
                         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                         "converted.docx");
 
                 case "html":
-                    document.Save(outputStream, SaveFormat.Html);
-                    return File(outputStream.ToArray(), 
-                        "text/html", 
+                    document.Save(outputStream, Aspose.Pdf.SaveFormat.Html);
+                    return File(outputStream.ToArray(),
+                        "text/html",
                         "converted.html");
 
                 case "jpg":
                 case "jpeg":
-                    var jpegDevice = new JpegDevice();
+                    var jpegDevice = new Aspose.Pdf.Devices.JpegDevice();
                     jpegDevice.Process(document.Pages[1], outputStream);
-                    return File(outputStream.ToArray(), 
-                        "image/jpeg", 
+                    return File(outputStream.ToArray(),
+                        "image/jpeg",
                         "converted.jpg");
 
                 case "png":
-                    var pngDevice = new PngDevice();
+                    var pngDevice = new Aspose.Pdf.Devices.PngDevice();
                     pngDevice.Process(document.Pages[1], outputStream);
-                    return File(outputStream.ToArray(), 
-                        "image/png", 
+                    return File(outputStream.ToArray(),
+                        "image/png",
                         "converted.png");
 
                 default:
