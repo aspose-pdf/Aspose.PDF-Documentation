@@ -77,22 +77,187 @@ draft: false
 
 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class allows you to extract images from a stamp in a PDF file. First, you need to create an object of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, call [GetStamps](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/getstamps) method to get array of StampInfo objects from a particular page of PDF file. Then you can get the image from a StampInfo using StampInfo.Image property. Once you get the image, you can save the image or work with different properties of the image. The following code snippet shows you how to extract image from an image stamp.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
+public static void ExtractImageFromStamp()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-ExtractImageImageStamp-ExtractImageImageStamp.cs" >}}
+    // Instantiate PdfContentEditor object
+    using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind input PDF file
+        pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
+
+        // Get Stamp info for the first stamp
+        Aspose.Pdf.Facades.StampInfo[] infos = pdfContentEditor.GetStamps(1);
+
+        // Get the image from Stamp Info
+        System.Drawing.Image image = infos[0].Image;
+
+        // Save the extracted image
+        image.Save(dataDir + "image_out.jpg");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ExtractImageFromStamp()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+
+    // Instantiate PdfContentEditor object
+    using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind input PDF file
+    pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
+
+    // Get Stamp info for the first stamp
+    Aspose.Pdf.Facades.StampInfo[] infos = pdfContentEditor.GetStamps(1);
+
+    // Get the image from Stamp Info
+    System.Drawing.Image image = infos[0].Image;
+
+    // Save the extracted image
+    image.Save(dataDir + "image_out.jpg");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Change Position of a Stamp in a PDF file
 
 [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class allows you to change the position of a stamp in a PDF file. First, you need to create an object of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, call [MoveStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestamp) method with stamp index and new position on a particular page of PDF file. Then, you can save the updated file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to move a stamp in a particular page.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
+public static void ChangeStampPosition()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-ChangeStampPosition-ChangeStampPosition.cs" >}}
+    // Instantiate PdfContentEditor object
+    using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind input PDF file
+        pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
+        int pageId = 1;
+        int stampIndex = 1;
+        double x = 200;
+        double y = 200;
 
+        // Change the position of the stamp to new x and y position
+        pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
+
+        // Save the Pdf file
+        pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ChangeStampPosition()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+
+    // Instantiate PdfContentEditor object
+    using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind input PDF file
+    pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
+
+    int pageId = 1;
+    int stampIndex = 1;
+    double x = 200;
+    double y = 200;
+
+    // Change the position of the stamp to new x and y position
+    pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
+
+    // Save the Pdf file
+    pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 Also, you can use [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/movestampbyid) method to move a specific stamp by using StampId.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
+public static void MoveStampById()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Stamps-Watermarks-ChangeStampPosition-ChangeStampPositionByID.cs" >}}
+    // Instantiate PdfContentEditor Object
+    using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind input PDF file
+        pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
+
+        int pageId = 1;
+        int stampId = 1;
+        double x = 200;
+        double y = 200;
+
+        // Change the position of the stamp to new x and y position
+        pdfContentEditor.MoveStamp(pageId, stampId, x, y);
+
+        // Save the Pdf file
+        pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void MoveStampById()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+
+    // Instantiate PdfContentEditor Object
+    using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind input PDF file
+    pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
+
+    int pageId = 1;
+    int stampId = 1;
+    double x = 200;
+    double y = 200;
+
+    // Change the position of the stamp to new x and y position
+    pdfContentEditor.MoveStamp(pageId, stampId, x, y);
+
+    // Save the Pdf file
+    pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
