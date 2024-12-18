@@ -95,38 +95,89 @@ Therefore, to create a PDF document with Aspose.PDF, you should follow these ste
 1. Add created items to the corresponding collection on the page (in our case it will be a paragraph collection).
 1. Save the document as PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Step 1
-var document = new Document
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTable()
 {
-    PageInfo = new PageInfo { Margin = new MarginInfo(28, 28, 28, 42) }
-};
+    // Step 1
+    using (var document = new Aspose.Pdf.Document
+           {
+               PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
+           })
+    {
+        // Step 2
+        var pdfPage = document.Pages.Add();
 
-// Step 2
-var pdfPage = document.Pages.Add();
+        // Step 3
+        var textFragment = new Aspose.Pdf.Text.TextFragment(reportTitle);
 
-// Step 3
-var textFragment = new TextFragment(reportTitle);
+        var table = new Aspose.Pdf.Table
+        {
+            // .................................
+        };
 
-var table = new Table
+        // Step 4
+        pdfPage.Paragraphs.Add(textFragment);
+        pdfPage.Paragraphs.Add(table);
+
+        // Step 5
+        using (var streamOut = new MemoryStream())
+        {
+            document.Save(streamOut);
+
+            return new FileContentResult(streamOut.ToArray(), "application/pdf")
+            {
+                FileDownloadName = "tenants.pdf"
+            };
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTable()
 {
-    // .................................
-};
+    // Step 1
+    using var document = new Aspose.Pdf.Document
+    {
+        PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
+    };
 
-// Step 4
-pdfPage.Paragraphs.Add(textFragment);
-pdfPage.Paragraphs.Add(table);
+    // Step 2
+    var pdfPage = document.Pages.Add();
 
-// Step 5
-using (var streamOut = new MemoryStream())
-{
+    // Step 3
+    var textFragment = new Aspose.Pdf.Text.TextFragment(reportTitle);
+
+    var table = new Aspose.Pdf.Table
+    {
+        // .................................
+    };
+
+    // Step 4
+    pdfPage.Paragraphs.Add(textFragment);
+    pdfPage.Paragraphs.Add(table);
+
+    // Step 5
+    using var streamOut = new MemoryStream();
+
     document.Save(streamOut);
+
     return new FileContentResult(streamOut.ToArray(), "application/pdf")
     {
         FileDownloadName = "tenants.pdf"
     };
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 The most common problem is the output of data in a table format. The [Table class](https://reference.aspose.com/pdf/net/aspose.pdf/table) is used to process tables. This class gives us the ability to create tables and place them in the document, using [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) and [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). So, to create the table, you need to add the required number of rows and fill them with the appropriate number of cells.
 
