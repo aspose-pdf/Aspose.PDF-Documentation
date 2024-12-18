@@ -166,8 +166,8 @@ private static void ConvertEPUBtoPDF()
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
     {
-        // Save the converted document
-        document.Save(dataDir + "epub_test.pdf");
+        // Save document in PDF format
+        document.Save(dataDir + "ConvertEPUBtoPDF_out.pdf");
     }
 }
 ```
@@ -184,8 +184,8 @@ private static void ConvertEPUBtoPDFAdv()
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
     {
-        // Save the converted document
-        document.Save(dataDir + "epub_test.pdf");
+        // Save document in PDF format
+        document.Save(dataDir + "ConvertEPUBtoPDFAdv_out.pdf");
     }
 }
 ```
@@ -224,7 +224,7 @@ private static void ConvertMarkdownToPDF()
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.md", options))
     {
         // Save document in PDF format
-        document.Save(dataDir + "MarkdownToPDF.pdf");
+        document.Save(dataDir + "ConvertMarkdownToPDF_out.pdf");
     }
 }
 ```
@@ -486,7 +486,7 @@ private static void ConvertPCLtoPDF()
     using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
     {
         // Save document in PDF format
-        document.Save(dataDir + "pcl_test.pdf");
+        document.Save(dataDir + "ConvertPCLtoPDF_out.pdf");
     }
 }
 ```
@@ -511,7 +511,7 @@ private static void ConvertPCLtoPDFAdvanced()
             }
         }
         // Save document in PDF format
-        document.Save(dataDir + "pcl_test.pdf");
+        document.Save(dataDir + "ConvertPCLtoPDFAdvanced_out.pdf");
     }
 }
 ```
