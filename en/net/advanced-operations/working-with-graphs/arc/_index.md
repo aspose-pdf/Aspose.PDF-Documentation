@@ -94,37 +94,58 @@ Follow the steps below:
 The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) object.
 
 ```csharp
-public static void Arc()
+private static void Arc()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-    var arc1 = new Arc(100, 100, 95, 0, 90);
-    arc1.GraphInfo.Color = Color.GreenYellow;
-    graph.Shapes.Add(arc1);
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    var arc2 = new Arc(100, 100, 90, 70, 180);
-    arc2.GraphInfo.Color = Color.DarkBlue;
-    graph.Shapes.Add(arc2);
+        // Create arcs and set their properties
+        var arc1 = new Aspose.Pdf.Drawing.Arc(100, 100, 95, 0, 90)
+        {
+            GraphInfo = 
+            { 
+                Color = Aspose.Pdf.Color.GreenYellow 
+            }
+        };
+        graph.Shapes.Add(arc1);
 
-    var arc3 = new Arc(100, 100, 85, 120, 210);
-    arc3.GraphInfo.Color = Color.Red;
-    graph.Shapes.Add(arc3);
+        var arc2 = new Aspose.Pdf.Drawing.Arc(100, 100, 90, 70, 180)
+        {
+            GraphInfo = 
+            { 
+                Color = Aspose.Pdf.Color.DarkBlue 
+            }
+        };
+        graph.Shapes.Add(arc2);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        var arc3 = new Aspose.Pdf.Drawing.Arc(100, 100, 85, 120, 210)
+        {
+            GraphInfo = 
+            { 
+                Color = Aspose.Pdf.Color.Red 
+            }
+        };
+        graph.Shapes.Add(arc3);
 
-    // Save PDF file
-    document.Save(dataDir + "DrawingArc_out.pdf");
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
+
+        // Save PDF file
+        document.Save(dataDir + "DrawingArc_out.pdf");
+    }
 }
 ```
 
@@ -133,33 +154,50 @@ public static void Arc()
 Next example shows how to add a Arc object that is filled with color and certain dimensions.
 
 ```csharp
-public static void ArcFilled()
+private static void ArcFilled()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-    var arc = new Arc(100, 100, 95, 0, 90);
-    arc.GraphInfo.FillColor = Color.GreenYellow;
-    graph.Shapes.Add(arc);
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    var line = new Line(new float[] { 195, 100, 100, 100, 100, 195 });
-    line.GraphInfo.FillColor = Color.GreenYellow;
-    graph.Shapes.Add(line);
+        // Create an arc and set fill color
+        var arc = new Aspose.Pdf.Drawing.Arc(100, 100, 95, 0, 90)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.GreenYellow 
+            }
+        };
+        graph.Shapes.Add(arc);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        // Create a line and set fill color
+        var line = new Aspose.Pdf.Drawing.Line(new float[] { 195, 100, 100, 100, 100, 195 })
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.GreenYellow 
+            }
+        };
+        graph.Shapes.Add(line);
 
-    // Save PDF file
-    document.Save(dataDir + "ExampleFilledArc_out.pdf");
+        // Add Graph object to the paragraphs collection of page
+        page.Paragraphs.Add(graph);
+
+        // Save the PDF file
+        document.Save(dataDir + "ExampleFilledArc_out.pdf");
+    }
 }
 ```
 
