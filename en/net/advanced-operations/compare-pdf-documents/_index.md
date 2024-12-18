@@ -122,7 +122,7 @@ private static void ComparingSpecificPages()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();
-    
+
     var documentPath1 = dataDir + "documentPath1.pdf";
     var documentPath2 = dataDir + "documentPath2.pdf";
     var resultPdfPath = dataDir + "ComparingSpecificPages_out.pdf";
@@ -134,7 +134,7 @@ private static void ComparingSpecificPages()
         Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new Aspose.Pdf.Comparison.SideBySideComparisonOptions
         {
             AdditionalChangeMarks = true,
-            ComparisonMode = ComparisonMode.IgnoreSpaces
+            ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
         });
     }
 }
