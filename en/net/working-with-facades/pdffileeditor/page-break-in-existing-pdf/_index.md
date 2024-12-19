@@ -133,17 +133,23 @@ private static void PageBrakeExample02()
 ## Example 3
 
 ```csharp
-public static void PageBrakeExample03()
+private static void PageBrakeExample03()
 {
-    using (Stream src = new FileStream(dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    using (var src = new FileStream(dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read))
     {
-        using (Stream dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite))
+        using (var dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite))
         {
-            PdfFileEditor fileEditor = new PdfFileEditor();
+            // Create PdfFileEditor object
+            var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+            
+            // Add page break
             fileEditor.AddPageBreak(src, dest,
-                new PdfFileEditor.PageBreak[]
+                new[]
                 {
-                    new PdfFileEditor.PageBreak(1, 450)
+                    new Aspose.Pdf.Facades.PdfFileEditor.PageBreak(1, 450)
                 });
         }
     }
