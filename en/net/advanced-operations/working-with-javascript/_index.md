@@ -102,7 +102,7 @@ The example below applies the OpenAction to a specific document.
 
 private static void AddJavaScript()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF files
@@ -132,7 +132,7 @@ private static void AddJavaScript()
 
 private static void AddJavaScript()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF files
@@ -171,7 +171,7 @@ A new property named JavaScript is added in Document class which has JavaScript 
 
 private static void AddJavaScript()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Document object
@@ -210,7 +210,7 @@ private static void AddJavaScript()
 
 private static void AddJavaScript()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Document object
