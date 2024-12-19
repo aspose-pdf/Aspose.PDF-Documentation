@@ -77,25 +77,53 @@ draft: false
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. The following code snippet shows you how to make booklet using file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingPaths-MakeBookletUsingPaths.cs" >}}
+```csharp
+private static void MakeBookletOfPdfUsingFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Make booklet
+    pdfEditor.MakeBooklet(dataDir + "input.pdf", dataDir + "MakeBookletUsingPaths_out.pdf");
+}
+```
 
 ## Make Booklet of PDF Using Page Size and File Paths
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also set the page size of the output PDF file with this overlaod. The following code snippet shows you how to make booklet using page size and file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingPageSizeAndPaths-MakeBookletUsingPageSizeAndPaths.cs" >}}
+```csharp
+private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Make booklet
+    pdfEditor.MakeBooklet(dataDir + "input.pdf", dataDir + "MakeBookletUsingPageSizeAndPaths_out.pdf", PageSize.A5);
+}
+```
 
 ## Make Booklet of PDF Using Page Size, Specified Left and Right Pages, and File Paths
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also set the page size of the output PDF file and specify particular pages for the left and right sides of the output PDF file with this overlaod. The following code snippet shows you how to make booklet using page size, specified left and right pages and file paths.
 
 
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingLeftRightPagesAndPaths-MakeBookletUsingLeftRightPagesAndPaths.cs" >}}
+```csharp
+private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFilePaths()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Set left and right pages
+    var leftPages = new int[] { 1, 5 };
+    var rightPages = new int[] { 2, 3 };
+    // Make booklet
+    pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", leftPages, rightPages);
+}
+```
 
 ## Make Booklet of PDF Using Specified Left and Right Pages, and File Paths
 
