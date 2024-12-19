@@ -107,7 +107,7 @@ The following code snippet shows you how to add a hyperlink to a PDF file.
 
 private static void AddHyperlink()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -150,7 +150,7 @@ private static void AddHyperlink()
 
 private static void AddHyperlink()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -199,7 +199,7 @@ In order to add the local hyperlink, we need to create a TextFragment so that li
 
 private static void AddHyperlink()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Create Document instance
@@ -243,7 +243,7 @@ private static void AddHyperlink()
 
 private static void AddHyperlink()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Create Document instance
@@ -302,7 +302,7 @@ The following code snippet shows how to get hyperlink destinations (URL) from a 
 
 private static void GetHyperlink()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -337,7 +337,7 @@ private static void GetHyperlink()
 
 private static void GetHyperlink()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -381,7 +381,7 @@ To find the URL content, you need to work with both annotation and text. The [An
 
 private static void ShowLinkAnnotationText()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -423,7 +423,7 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 
 private static void ShowLinkAnnotationText()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -477,7 +477,7 @@ The following code snippet shows how to remove a document open action from the P
 
 private static void RemoveOpenAction()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -499,7 +499,7 @@ private static void RemoveOpenAction()
 
 private static void RemoveOpenAction()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -528,7 +528,7 @@ The [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.ann
 
 private static void SpecifyPage()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -557,7 +557,7 @@ private static void SpecifyPage()
 
 private static void SpecifyPage()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
