@@ -100,7 +100,7 @@ The following code snippet shows you how to add a bookmark in a PDF document.
 
 private static void AddBookmark()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -131,7 +131,7 @@ private static void AddBookmark()
 
 private static void AddBookmark()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -177,7 +177,7 @@ The following code snippets show how to add child bookmark to a PDF document.
 
 private static void AddChildBookmark()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -214,7 +214,7 @@ private static void AddChildBookmark()
 
 private static void AddChildBookmark()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -263,7 +263,7 @@ The following code snippets show how to delete all bookmarks from a PDF document
 
 private static void DeleteBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -285,7 +285,7 @@ private static void DeleteBookmarks()
 
 private static void DeleteBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -319,7 +319,7 @@ The following code snippets show how to delete a particular bookmark from the PD
 
 private static void DeleteBookmark()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -341,7 +341,7 @@ private static void DeleteBookmark()
 
 private static void DeleteBookmark()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
