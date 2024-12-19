@@ -89,12 +89,12 @@ public static void DeleteImage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
-    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteImage.pdf")))
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf")))
     {
         editor.DeleteImage(2, new[] { 2 });
 
         // Save document
-        editor.Save(dataDir + "DeleteImage_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
     }
 }
 ```
@@ -110,12 +110,12 @@ public static void DeleteImage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor Object
-    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteImage.pdf"));
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf"));
 
     editor.DeleteImage(2, new[] { 2 });
 
     // Save document
-    editor.Save(dataDir + "DeleteImage_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
 }
 ```
 {{< /tab >}}
@@ -138,12 +138,12 @@ public static void DeleteImages()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
-    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteImages.pdf")))
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf")))
     {
         editor.DeleteImage();
 
         // Save document
-        editor.Save(dataDir + "DeleteImages_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
     }
 }
 ```
@@ -159,12 +159,12 @@ public static void DeleteImages()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
-    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteImages.pdf"));
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf"));
 
     editor.DeleteImage();
 
     // Save document
-    editor.Save(dataDir + "DeleteImages_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
 }
 ```
 {{< /tab >}}
@@ -185,12 +185,12 @@ public static void ReplaceImage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
-    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "ReplaceImage.pdf")))
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample_cats_dogs.pdf")))
     {
         editor.ReplaceImage(2, 4, dataDir + "Image.jpg");
 
         // Save document
-        editor.Save(dataDir + "ReplaceImage_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
     }
 }
 ```
@@ -206,11 +206,11 @@ public static void ReplaceImage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
-    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "ReplaceImage.pdf"));
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample_cats_dogs.pdf"));
     editor.ReplaceImage(2, 4, dataDir + "Image.jpg");
 
     // Save document
-    editor.Save(dataDir + "ReplaceImage_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
 }
 ```
 {{< /tab >}}
