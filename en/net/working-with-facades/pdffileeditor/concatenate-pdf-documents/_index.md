@@ -337,7 +337,7 @@ private static void InsertBlankPage()
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     // Insert a blank page at the beginning of concatenated file to display Table of Contents
-    using (var document = new Aspose.Pdf.Document(dataDir + "ConcatenatePdfFiles_out.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Concatenated_Table_Of_Contents.pdf"))
     {
         // Insert a blank page in a PDF
         document.Pages.Insert(1);
@@ -354,7 +354,7 @@ private static void AddTextStampForTableOfContents()
 {
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    var inputPdfFile = Path.Combine(dataDir, "ConcatenatePdfFiles_out.pdf");
+    var inputPdfFile = Path.Combine(dataDir, "input1.pdf");
     // Set Text Stamp to display string Table Of Contents
     var stamp = new Aspose.Pdf.Facades.Stamp();
     stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
@@ -377,7 +377,7 @@ private static void CreateLocalLinks()
     // Now we need to add Heading for Table Of Contents and links for documents
     var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
     // Bind the PDF file in which we added the blank page
-    contentEditor.BindPdf(dataDir + "ConcatenatePdfFiles_out.pdf");
+    contentEditor.BindPdf(dataDir + "Concatenated_Table_Of_Contents.pdf");
     // Create link for first document
     contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
 }
