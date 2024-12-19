@@ -92,13 +92,13 @@ private static void PageBrakeExample01()
     string dataDir = RunExamples.GetDataDir_AsposePdf();
     
     // Instantiate Document instance
-    using (Document document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
     {
         // Instantiate blank Document instance
-        using (Document dest = new Aspose.Pdf.Document())
+        using (var dest = new Aspose.Pdf.Document())
         {
             // Create PdfFileEditor object
-            PdfFileEditor fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+            var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
             fileEditor.AddPageBreak(document, dest, new PdfFileEditor.PageBreak[]
             {
                 new PdfFileEditor.PageBreak(1, 450)
@@ -113,10 +113,13 @@ private static void PageBrakeExample01()
 ## Example 2
 
 ```csharp
-public static void PageBrakeExample02()
+private static void PageBrakeExample02()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
     // Create PdfFileEditor object
-    PdfFileEditor fileEditor = new PdfFileEditor();
+    var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
 
     fileEditor.AddPageBreak(dataDir + "Sample-Document-02.pdf",
         dataDir + "PageBreakWithDestPath_out.pdf",
