@@ -84,17 +84,87 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 From Aspose.PDF for .NET 9.6.0 release, we have added great new features like changing the page orientation from landscape to portrait and vice versa. To change the page orientation, set the page's MediaBox using the following code snippet. You can also change page orientation by setting rotation angle using Rotate() method.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-ChangeOrientation-ChangeOrientation.cs" >}}
+```csharp
+private static void ChangePageOrientation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    //Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        foreach (Page page in document.Pages)
+        {
+            Aspose.Pdf.Rectangle r = page.MediaBox;
+            double newHeight = r.Width;
+            double newWidth = r.Height;
+            double newLLX = r.LLX;
+            //  We must to move page upper in order to compensate changing page size
+            // (lower edge of the page is 0,0 and information is usually placed from the
+            //  Top of the page. That's why we move lover edge upper on difference between
+            //  Old and new height.
+            double newLLY = r.LLY + (r.Height - newHeight);
+            page.MediaBox = new Aspose.Pdf.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight);
+            // Sometimes we also need to set CropBox (if it was set in original file)
+            page.CropBox = new Aspose.Pdf.Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight);
+            // Setting Rotation angle of page
+            page.Rotate = Rotation.on90;
+        }
+        // Save output file
+        document.Save(dataDir + "ChangeOrientation_out.pdf");
+    }
+}
+```
 
 ## Fitting the Page Content to the New Page Orientation
 
 Please note that when using the above code snippet, some of the document's content might be cut because the page height is decreased. To avoid this, increase width proportionally and leave the height intact. Example of calculations:
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-FitPageContents-FitPageContents.cs" >}}
+```csharp
+private static void FittingThePageContentToTheNewPageOrientation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    //Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        foreach (Page page in document.Pages)
+        {
+            Rectangle r = page.MediaBox;
+            // New height the same
+            double newHeight = r.Height;
+            // New width is expanded proportionally to make orientation landscape
+            // (we assume that previous orientation is portrait)
+            double newWidth = r.Height * r.Height / r.Width;
+        }
+    }
+}
+```
 
 Besides the above approach, consider using the PdfPageEditor facade which can apply zoom to the page contents).
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-ZoomToPageContents-ZoomToPageContents.cs" >}}
+```csharp
+private static void ZoomToPageContents()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    //Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get rectangular region of first page of PDF
+        Aspose.Pdf.Rectangle rect = document.Pages[1].Rect;
+        // Instantiate PdfPageEditor instance
+        var pdfPageEditor = new PdfPageEditor();
+        // Bind source PDF
+        pdfPageEditor.BindPdf(dataDir + "input.pdf");
+        // Set zoom coefficient
+        pdfPageEditor.Zoom = (float)(rect.Width / rect.Height);
+        // Update page size
+        pdfPageEditor.PageSize = new Aspose.Pdf.PageSize((float)rect.Height, (float)rect.Width);
+        // Save output file
+        document.Save(dataDir + "ZoomToPageContents_out.pdf");
+    }
+}
+```
 
 <script type="application/ld+json">
 {
