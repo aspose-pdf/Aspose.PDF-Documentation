@@ -86,20 +86,27 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 ## Example 1 (Add page break)
 
 ```csharp
-public static void PageBrakeExample01()
+private static void PageBrakeExample01()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    
     // Instantiate Document instance
-    Document document = new Document(dataDir + "Sample-Document-01.pdf");
-    // Instantiate blank Document instance
-    Document dest = new Document();
-    // Create PdfFileEditor object
-    PdfFileEditor fileEditor = new PdfFileEditor();
-    fileEditor.AddPageBreak(document, dest, new PdfFileEditor.PageBreak[]
+    using (Document document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
     {
-        new PdfFileEditor.PageBreak(1, 450)
-    });
-    // Save resultant file
-    dest.Save(dataDir + "PageBreak_out.pdf");
+        // Instantiate blank Document instance
+        using (Document dest = new Aspose.Pdf.Document())
+        {
+            // Create PdfFileEditor object
+            PdfFileEditor fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+            fileEditor.AddPageBreak(document, dest, new PdfFileEditor.PageBreak[]
+            {
+                new PdfFileEditor.PageBreak(1, 450)
+            });
+            // Save resultant file
+            dest.Save(dataDir + "PageBreak_out.pdf"); 
+        }
+    }
 }
 ```
 
