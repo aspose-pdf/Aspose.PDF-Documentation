@@ -90,7 +90,7 @@ public static void GetViewerPreference()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "GetViewerPreference.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf"))
     {
         // Instantiate PdfContentEditor object
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -127,7 +127,7 @@ public static void GetViewerPreference()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "GetViewerPreference.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf");
 
     // Instantiate PdfContentEditor object
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
