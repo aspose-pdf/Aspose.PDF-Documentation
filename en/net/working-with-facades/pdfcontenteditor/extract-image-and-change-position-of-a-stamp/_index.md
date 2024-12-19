@@ -84,7 +84,7 @@ draft: false
 
 public static void ExtractImageFromStamp()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
@@ -112,7 +112,7 @@ public static void ExtractImageFromStamp()
 
 public static void ExtractImageFromStamp()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
@@ -145,7 +145,7 @@ public static void ExtractImageFromStamp()
 
 public static void ChangeStampPosition()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
@@ -175,7 +175,7 @@ public static void ChangeStampPosition()
 
 public static void ChangeStampPosition()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
@@ -208,7 +208,7 @@ Also, you can use [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pd
 
 public static void MoveStampById()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor Object
@@ -238,7 +238,7 @@ public static void MoveStampById()
 
 public static void MoveStampById()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor Object
