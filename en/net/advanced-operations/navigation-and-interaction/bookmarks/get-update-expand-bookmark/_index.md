@@ -92,7 +92,7 @@ To get the bookmarks, loop through the [OutlineCollection](https://reference.asp
 
 private static void GetBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -117,7 +117,7 @@ private static void GetBookmarks()
 
 private static void GetBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -147,7 +147,7 @@ Once you have added a bookmark you can find out what page it is on by getting th
 
 private static void GetBookmarkPageNumber()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Create PdfBookmarkEditor
@@ -183,7 +183,7 @@ private static void GetBookmarkPageNumber()
 
 private static void GetBookmarkPageNumber()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Create PdfBookmarkEditor
@@ -224,7 +224,7 @@ Bookmarks can be organized in a hierarchical structure, with parents and childre
 
 private static void GetChildBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -263,7 +263,7 @@ private static void GetChildBookmarks()
 
 private static void GetChildBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -307,7 +307,7 @@ To update a bookmark in a PDF file, first, get the particular bookmark from the 
 
 private static void UpdateBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -332,7 +332,7 @@ private static void UpdateBookmarks()
 
 private static void UpdateBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -373,7 +373,7 @@ The following code snippet shows you how to update child bookmarks in a PDF docu
 
 private static void UpdateChildBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -401,7 +401,7 @@ private static void UpdateChildBookmarks()
 
 private static void UpdateChildBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -436,7 +436,7 @@ In order to accomplish this requirement, we can set open status for each outline
 
 private static void ExpandBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
@@ -465,7 +465,7 @@ private static void ExpandBookmarks()
 
 private static void ExpandBookmarks()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open document
