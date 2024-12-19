@@ -90,7 +90,7 @@ In order to get file specific information of a PDF file, you first need to get t
 
 private static void GetFileInformation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -117,7 +117,7 @@ private static void GetFileInformation()
 
 private static void GetFileInformation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -161,7 +161,7 @@ The following code snippet shows you how to set PDF file information.
 
 private static void SetFileInformation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -190,7 +190,7 @@ private static void SetFileInformation()
 
 private static void SetFileInformation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -229,7 +229,7 @@ The following code snippet shows you how to get metadata from the PDF file.
 
 private static void GetXmpMetadata()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -250,7 +250,7 @@ private static void GetXmpMetadata()
 
 private static void GetXmpMetadata()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -282,7 +282,7 @@ The following code snippet shows you how to set metadata in a PDF file.
 
 private static void SetXmpMetadata()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -306,7 +306,7 @@ private static void SetXmpMetadata()
 
 private static void SetXmpMetadata()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -335,7 +335,7 @@ Some developers need to create a new metadata namespace with a prefix. The follo
 
 private static void InsertMetadataWithPrefix()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -357,7 +357,7 @@ private static void InsertMetadataWithPrefix()
 
 private static void InsertMetadataWithPrefix()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
