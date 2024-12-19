@@ -86,7 +86,7 @@ First of all, an object is drawn in the [Document](https://reference.aspose.com/
 
 public static void AddJavascriptAction()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
@@ -112,7 +112,7 @@ public static void AddJavascriptAction()
 
 public static void AddJavascriptAction()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
