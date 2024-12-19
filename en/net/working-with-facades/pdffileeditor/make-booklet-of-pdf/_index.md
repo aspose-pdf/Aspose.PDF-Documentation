@@ -129,33 +129,92 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also specify particular pages for the left and right sides of the output PDF file with this overlaod.color:#000000}The following code snippet shows you how to make booklet using specified left and right pages and file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingLeftRightPagesAndPaths-MakeBookletUsingLeftRightPagesAndPaths.cs" >}}
+```csharp
+private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Set left and right pages
+    var leftPages = new int[] { 1, 5 };
+    var rightPages = new int[] { 2, 3 };
+    // Make booklet
+    pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", leftPages, rightPages);
+}
+```
 
 ## Make Booklet of PDF Using Streams
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF streams. This overload allows you to make booklet using streams instead of file paths. The following code snippet shows you how to make booklet using streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingStreams-MakeBookletUsingStreams.cs" >}}
+```csharp
+private static void MakeBookletOfPdfUsingStreams()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "MakeBookletUsingStreams_out.pdf", FileMode.Create))
+        {
+            // Make booklet
+            pdfEditor.MakeBooklet(inputStream, outputStream);
+        }
+    }
+}
+```
 
 ## Make Booklet of PDF Using Page Size and Streams
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also set the page size of the output PDF stream with this overload. The following code snippet shows you how to make booklet using page size and streams.
 
+```csharp
+private static void MakeBookletOfPdfUsingPageSizeAndStreams()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "MakeBookletUsingPageSizeAndStreams_out.pdf", FileMode.Create))
+        {
+            // Make booklet
+            pdfEditor.MakeBooklet(inputStream, outputStream, PageSize.A5);
+        }
+    }
+}
+```
 
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingPageSizeAndStreams-MakeBookletUsingPageSizeAndStreams.cs" >}}
-
-## Make Booklet of PDF Using Page Size, Sepcified Left and Right Pages, and Streams
+## Make Booklet of PDF Using Page Size, Specified Left and Right Pages, and Streams
 
 [MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF stream and save it to the output PDF stream. This overload allows you to make booklet using streams instead of file paths. You can also set the page size of the output PDF file and specify particular pages for the left and right sides of the output PDF stream with this overload. The following code snippet shows you how to make booklet using page size, specified left and right pages, and streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeBooklet-MakeBookletUsingPageSizeLeftRightPagesAndStreams-MakeBookletUsingPageSizeLeftRightPagesAndStreams.cs" >}}
+```csharp
+private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndStreams()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "MakeBookletUsingPageSizeLeftRightPagesAndStreams_out.pdf", FileMode.Create))
+        {
+            // Set left and right pages
+            var leftPages = new int[] { 1, 5 };
+            var rightPages = new int[] { 2, 3 };
+            // Make booklet
+            pdfEditor.MakeBooklet(inputStream, outputStream, PageSize.A5, leftPages, rightPages);
+        }
+    }
+}
+```
 
 ## Make Booklet of PDF Using Specified Left and Right Pages, and Streams
 
