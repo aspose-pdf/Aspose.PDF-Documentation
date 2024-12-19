@@ -13,8 +13,8 @@ sitemap:
 
 To add text to existing PDF file:
 
-1. Opens a PDF file.
-1. Adds the text "added text" to the first page of the document with [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/) function.
+1. Open a PDF file.
+1. Add the text to the PDF document with [PageAddText](https://reference.aspose.com/pdf/go-cpp/organize/pageaddtext/) function.
 1. Saves the modifications to the same file.
 
 ## Adding Text

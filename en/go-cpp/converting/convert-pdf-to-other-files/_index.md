@@ -11,14 +11,6 @@ sitemap:
     priority: 0.8
 ---
 
-{{% alert color="success" %}}
-**Try to convert PDF to EPUB online**
-
-Aspose.PDF for Go presents you online free application ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
-{{% /alert %}}
-
 ## Convert PDF to EPUB
 
 **<abbr title="Electronic Publication">EPUB</abbr>** is a free and open e-book standard from the International Digital Publishing Forum (IDPF). Files have the extension .epub.
@@ -54,11 +46,11 @@ The provided Go code snippet demonstrates how to convert a PDF document into a E
 ```
 
 {{% alert color="success" %}}
-**Try to convert PDF to LaTeX/TeX online**
+**Try to convert PDF to EPUB online**
 
-Aspose.PDF for Go presents you online free application ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Go presents you online free application ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to LaTeX/TeX with Free App](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
+[![Aspose.PDF Convertion PDF to EPUB with Free App](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
 ## Convert PDF to TeX
@@ -96,11 +88,11 @@ The provided Go code snippet demonstrates how to convert a PDF document into a T
 ```
 
 {{% alert color="success" %}}
-**Try to convert Convert PDF to Text online**
+**Try to convert PDF to LaTeX/TeX online**
 
-Aspose.PDF for Go presents you online free application ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Go presents you online free application ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to Text with Free App](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+[![Aspose.PDF Convertion PDF to LaTeX/TeX with Free App](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
 ## Convert PDF to TXT
@@ -135,11 +127,11 @@ The provided Go code snippet demonstrates how to convert a PDF document into a T
 ```
 
 {{% alert color="success" %}}
-**Try to convert PDF to XPS online**
+**Try to convert Convert PDF to Text online**
 
-Aspose.PDF for Go presents you online free application ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Go presents you online free application ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to XPS with Free App](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+[![Aspose.PDF Convertion PDF to Text with Free App](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
 
 ## Convert PDF to XPS
@@ -176,6 +168,14 @@ The provided Go code snippet demonstrates how to convert a PDF document into a X
       defer pdf.Close()
     }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to XPS online**
+
+Aspose.PDF for Go presents you online free application ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to XPS with Free App](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+{{% /alert %}}
 
 ## Convert PDF to Grayscale PDF
 

@@ -16,7 +16,7 @@ sitemap:
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for Go provides full product functionality, but all pages in the generated PDF documents are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2024 Aspose Pty Ltd." at the top.
+- **Documents created with an evaluation watermark.** The evaluation version of Aspose.PDF for Go provides full product functionality, but all pages in the generated files are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2024 Aspose Pty Ltd." at the top.
 
 - **Limit the number of pages that can be processed.**
 In the evaluation version, you can only process the first four pages of a document.
@@ -24,8 +24,6 @@ In the evaluation version, you can only process the first four pages of a docume
 >If you want to test Aspose.PDF for Go without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 ## Classic license
-
-If you use any other Aspose for Go component along with Aspose.PDF for Go, please specify the namespace for License like [Aspose.Pdf.License](https://reference.aspose.com/pdf/go-cpp/core/setlicense/).
 
 Applying a license to enable full functionality of the Aspose.PDF library using a license file (Aspose.PDF.GoViaCPP.lic).
 

@@ -13,4 +13,4 @@ sitemap:
 
 **Parse PDF** documents is a term releated to extraction variuous kind of information from PDF file. This section covers how to:
 
-- [Extract Text from PDF](/pdf/go-cpp/extract-text-from-pdf/). The next Go code snippet demonstrates how to use the Aspose.PDF library to extract text from a PDF file and display it in the console.
+- [Extract Text from PDF](/pdf/go-cpp/extract-text-from-pdf/). The following example in Go demonstrates how to use the Aspose.PDF library to extract text from a PDF file and display it in the console.

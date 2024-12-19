@@ -53,9 +53,7 @@ To get the number of pages in a PDF file:
 In this example the method pdf.PageSetSize() changes the size of the first page of the PDF document. The PageSizeA1 constant ensures that the first page is set to the A1 paper size. This is useful when converting documents to a standardized format or ensuring that specific content fits correctly on pages.
 
 1. Opening the PDF Document with [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method.
-
 1. Setting the Page Size with [PageSetSize](https://reference.aspose.com/pdf/go-cpp/organize/pagesetsize/) function.
-
 1. Saving the Document using [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method.
 
 ```go

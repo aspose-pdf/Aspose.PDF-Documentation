@@ -20,14 +20,6 @@ The most common task is when you need to save an entire PDF document or some spe
 
 **Aspose.PDF for Go via C++** supports various PDF to image formats conversion. Please checks the section [Aspose.PDF Supported File Formats](https://docs.aspose.com/pdf/go-cpp/supported-file-formats/).
 
-{{% alert color="success" %}}
-**Try to convert PDF to JPEG online**
-
-Aspose.PDF for Go presents you online free application ["PDF to JPEG"](https://products.aspose.app/pdf/conversion/pdf-to-jpg), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF conversion PDF to JPEG with Free App](pdf_to_jpg.png)](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
-{{% /alert %}}
-
 ## Convert PDF to JPEG
 
 The provided Go code snippet demonstrates how to convert the first page of a PDF document into a JPEG image using the Aspose.PDF library:
@@ -60,11 +52,11 @@ The provided Go code snippet demonstrates how to convert the first page of a PDF
 ```
 
 {{% alert color="success" %}}
-**Try to convert PDF to TIFF online**
+**Try to convert PDF to JPEG online**
 
-Aspose.PDF for Go presents you online free application ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Go presents you online free application ["PDF to JPEG"](https://products.aspose.app/pdf/conversion/pdf-to-jpg), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
+[![Aspose.PDF conversion PDF to JPEG with Free App](pdf_to_jpg.png)](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
 {{% /alert %}}
 
 ## Convert PDF to TIFF
@@ -99,13 +91,11 @@ The provided Go code snippet demonstrates how to convert the first page of a PDF
 ```
 
 {{% alert color="success" %}}
-**Try to convert PDF to PNG online**
+**Try to convert PDF to TIFF online**
 
-As an example of how our free applications work please check the next feature.
+Aspose.PDF for Go presents you online free application ["PDF to TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), where you may try to investigate the functionality and quality it works.
 
-Aspose.PDF for Go presents you online free application ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), where you may try to investigate the functionality and quality it works.
-
-[![How to convert PDF to PNG using Free App](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
+[![Aspose.PDF conversion PDF to TIFF with Free App](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
 
 ## Convert PDF to PNG
@@ -139,13 +129,14 @@ The provided Go code snippet demonstrates how to convert the first page of a PDF
     }
 ```
 
-
 {{% alert color="success" %}}
-**Try to convert PDF to SVG online**
+**Try to convert PDF to PNG online**
 
-Aspose.PDF for Go presents you online free application ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), where you may try to investigate the functionality and quality it works.
+As an example of how our free applications work please check the next feature.
 
-[![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
+Aspose.PDF for Go presents you online free application ["PDF to PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), where you may try to investigate the functionality and quality it works.
+
+[![How to convert PDF to PNG using Free App](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 {{% /alert %}}
 
 **Scalable Vector Graphics (SVG)** is a family of specifications of an XML-based file format for two-dimensional vector graphics, both static and dynamic (interactive or animated). The SVG specification is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
@@ -180,6 +171,14 @@ The provided Go code snippet demonstrates how to convert the first page of a PDF
       defer pdf.Close()
     }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to SVG online**
+
+Aspose.PDF for Go presents you online free application ["PDF to SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to SVG with Free App](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
+{{% /alert %}}
 
 ## Convert PDF to DICOM
 

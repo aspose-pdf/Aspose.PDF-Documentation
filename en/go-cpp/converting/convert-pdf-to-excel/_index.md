@@ -11,17 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-## Creating spreadsheets from PDF using Go
-
 **Aspose.PDF for Go** support the feature of converting PDF files to Excel format.
-
-{{% alert color="success" %}}
-**Try to convert PDF to Excel online**
-
-Aspose.PDF for Go presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
-{{% /alert %}}
 
 ## Convert PDF to XLSX
 
@@ -56,3 +46,11 @@ Aspose.PDF for Go uses [SaveXlsX](https://reference.aspose.com/pdf/go-cpp/conver
     defer pdf.Close()
   }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to Excel online**
+
+Aspose.PDF for Go presents you online free application ["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+{{% /alert %}}

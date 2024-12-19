@@ -13,14 +13,6 @@ sitemap:
 
 To edit the content of a PDF file in Microsoft Word or other word processors that support DOC and DOCX formats. PDF files are editable, but DOC and DOCX files are more flexible and customizable.
 
-{{% alert color="success" %}}
-**Try to convert PDF to DOC online**
-
-Aspose.PDF for Go presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
-
-[![Convert PDF to DOC](/cpp/converting/convert-pdf-to-word/pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
-{{% /alert %}}
-
 ## Convert PDF to DOC
 
 The provided Go code snippet demonstrates how to convert a PDF document into a DOC using the Aspose.PDF library:
@@ -52,13 +44,12 @@ The provided Go code snippet demonstrates how to convert a PDF document into a D
     }
 ```
 
-{{% alert color="warning" %}}
-**Try to convert PDF to DOCX online**
+{{% alert color="success" %}}
+**Try to convert PDF to DOC online**
 
-Aspose.PDF for Go presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
+Aspose.PDF for Go presents you online free application ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), where you may try to investigate the functionality and quality it works.
 
-[![Aspose.PDF Convertion PDF to Word Free App](/cpp/converting/convert-pdf-to-word/pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
-
+[![Convert PDF to DOC](/cpp/converting/convert-pdf-to-word/pdf_to_doc.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc) 
 {{% /alert %}}
 
 ## Convert PDF to DOCX
@@ -93,3 +84,12 @@ The provided Go code snippet demonstrates how to convert a PDF document into a D
       defer pdf.Close()
     }
 ```
+
+{{% alert color="success" %}}
+**Try to convert PDF to DOCX online**
+
+Aspose.PDF for Go presents you online free application ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to Word Free App](/cpp/converting/convert-pdf-to-word/pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+
+{{% /alert %}}

@@ -11,14 +11,6 @@ sitemap:
     priority: 0.7
 ---
 
-{{% alert color="success" %}}
-**Try to convert PDF to PowerPoint online**
-
-Aspose.PDF for Go presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
-
-[![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
-{{% /alert %}}
-
 ## Convert PDF to PPTX
 
 The provided Go code snippet demonstrates how to convert a PDF document into a PPTX using the Aspose.PDF library:
@@ -50,3 +42,10 @@ The provided Go code snippet demonstrates how to convert a PDF document into a P
     }
 ```
 
+{{% alert color="success" %}}
+**Try to convert PDF to PowerPoint online**
+
+Aspose.PDF for Go presents you online free application ["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), where you may try to investigate the functionality and quality it works.
+
+[![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
+{{% /alert %}}

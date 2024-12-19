@@ -13,7 +13,7 @@ sitemap:
 
 A "Hello World" example is traditionally used to introduce features of a programming language or software with a simple use case.
 
-**Aspose.PDF for Go** is a feature-rich PDF API that allows developers to embed PDF document creation, manipulation, and conversion capabilities with Go. It supports many popular file formats, including PDF, TXT, HTML, PCL, XPS, EPUB, TEX, and image file formats. In this article, we are creating a PDF document containing the text "Hello World!" After installing Aspose.PDF for Go in your environment, you can execute the code sample to see how the Aspose.PDF API works.
+**Aspose.PDF for Go** is a feature-rich PDF API that allows developers to embed PDF document creation, manipulation, and conversion capabilities with Go. It supports many popular file formats, including PDF, TXT, XPS, EPUB, TEX, DOC, DOCX, PPTX, image formats etc. In this article, we are creating a PDF document containing the text "Hello World!" After installing Aspose.PDF for Go in your environment, you can execute the code sample to see how the Aspose.PDF API works.
 Below code snippet follows these steps:
 
 1. Create a new PDF document instance.

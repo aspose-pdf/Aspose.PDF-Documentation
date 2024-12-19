@@ -12,9 +12,10 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+
 ![Aspose.PDF for Go logo image](aspose_pdf-for-go-cpp.png)
 
-<h2>Welcome to Aspose.PDF for Go via C++</h2>
+## Welcome to Aspose.PDF for Go via C++
 
 {{% alert color="primary" %}}
 
@@ -22,14 +23,14 @@ The **Aspose.PDF for Go via C++** is a powerful toolkit that allows developers t
 
 {{% /alert %}}
 
-<h2>Chapters</h2>
+## Chapters
 
 - [Overview](/pdf/go-cpp/overview/)
 - [Get Started](/pdf/go-cpp/get-started/)
 - [Basic operations](/pdf/go-cpp/basic-operations/)
 - [Release Notes](https://releases.aspose.com/pdf/gocpp/)
 
-<h2>Aspose.PDF for Go Resources</h2>
+## Aspose.PDF for Go Resources
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
