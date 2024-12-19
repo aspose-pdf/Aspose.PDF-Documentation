@@ -97,7 +97,7 @@ These methods allow you to edit pdf file tags, for example:
 
 private static void EditTags()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -322,7 +322,7 @@ private static void EditTags()
 
 private static void EditTags()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
