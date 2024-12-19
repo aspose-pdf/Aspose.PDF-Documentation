@@ -101,7 +101,7 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
     string dataDir = RunExamples.GetDataDir_AsposePdf();
     // Document path
     var srcFileName = dataDir + "input.pdf";
-    var dstFileName = dataDir + "moved_out.pdf";
+    var destFileName = dataDir + "moved_out.pdf";
     //Open documents
     using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
     {
@@ -110,7 +110,7 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
             var page = srcDocument.Pages[2];
             dstDocument.Pages.Add(page);
             // Save output file
-            dstDocument.Save(dstFileName);
+            dstDocument.Save(destFileName);
             srcDocument.Pages.Delete(2);
             srcDocument.Save(srcFileName);
         }
@@ -133,20 +133,31 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 The following code snippet shows you how to move a bunch of pages from one PDF document to another.
 
 ```csharp
-var srcFileName = "<enter file name>";
-var dstFileName = "<enter file name>";
-var srcDocument = new Document(srcFileName);
-var dstDocument = new Document();
-var pages = new []{ 1, 3 };
-foreach (var pageIndex in pages)
+private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
-    var page = srcDocument.Pages[pageIndex];
-    dstDocument.Pages.Add(page);
-}                       
-// Save output files
-dstDocument.Save(dstFileName);
-srcDocument.Pages.Delete(pages);
-srcDocument.Save(srcFileName);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Document path
+    string srcFileName = dataDir + "input.pdf";
+    string destFileName = dataDir + "moved_out.pdf";
+    //Open documents
+    using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var pages = new[] { 1, 3 };
+            foreach (int pageIndex in pages)
+            {
+                var page = srcDocument.Pages[pageIndex];
+                dstDocument.Pages.Add(page);
+            }
+            // Save output files
+            dstDocument.Save(destFileName);
+            srcDocument.Pages.Delete(pages);
+            srcDocument.Save(srcFileName);
+        }
+    }
+}
 ```
 
 ## Moving a Page in new location in the current PDF Document
@@ -158,16 +169,24 @@ srcDocument.Save(srcFileName);
 1. Save the output PDF using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 ```csharp
-var srcFileName = "<enter file name>";
-var dstFileName = "<enter file name>";
-var srcDocument = new Document(srcFileName);
+private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Document path
+    string srcFileName = dataDir + "input.pdf";
+    string destFileName = dataDir + "moved_out.pdf";
 
-var page = srcDocument.Pages[2];
-srcDocument.Pages.Add(page);
-srcDocument.Pages.Delete(2);          
-
-// Save output file
-srcDocument.Save(dstFileName);
+    // Open document
+    using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
+    {
+        var page = srcDocument.Pages[2];
+        srcDocument.Pages.Add(page);
+        srcDocument.Pages.Delete(2);
+        // Save output file
+        srcDocument.Save(destFileName);
+    }
+}
 ```
 
 <script type="application/ld+json">
