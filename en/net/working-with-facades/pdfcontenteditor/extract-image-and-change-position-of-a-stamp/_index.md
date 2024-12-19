@@ -94,10 +94,10 @@ public static void ExtractImageFromStamp()
         pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
 
         // Get Stamp info for the first stamp
-        Aspose.Pdf.Facades.StampInfo[] infos = pdfContentEditor.GetStamps(1);
+        var infos = pdfContentEditor.GetStamps(1);
 
         // Get the image from Stamp Info
-        System.Drawing.Image image = infos[0].Image;
+        var image = infos[0].Image;
 
         // Save the extracted image
         image.Save(dataDir + "image_out.jpg");
@@ -122,10 +122,10 @@ public static void ExtractImageFromStamp()
     pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
 
     // Get Stamp info for the first stamp
-    Aspose.Pdf.Facades.StampInfo[] infos = pdfContentEditor.GetStamps(1);
+    var infos = pdfContentEditor.GetStamps(1);
 
     // Get the image from Stamp Info
-    System.Drawing.Image image = infos[0].Image;
+    var image = infos[0].Image;
 
     // Save the extracted image
     image.Save(dataDir + "image_out.jpg");
