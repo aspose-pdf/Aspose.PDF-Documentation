@@ -92,7 +92,7 @@ The following code snippet shows, how to create a table in the Tagged PDF docume
 
 private static void CreateTable()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create document
@@ -228,7 +228,7 @@ private static void CreateTable()
 
 private static void CreateTable()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create document
@@ -384,7 +384,7 @@ The following code snippet shows how to style a table in Tagged PDF document:
 
 private static void StyleTable()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create document
@@ -484,7 +484,7 @@ private static void StyleTable()
 
 private static void StyleTable()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create document
@@ -599,8 +599,9 @@ The following code snippet shows how to style a table row in the Tagged PDF docu
 
 private static void StyleTableRow()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create document
     using (var document = new Aspose.Pdf.Document())
     {
@@ -690,8 +691,9 @@ private static void StyleTableRow()
 
 private static void StyleTableRow()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
@@ -796,8 +798,9 @@ The following code snippet shows how to style a table cell in the Tagged PDF doc
 
 private static void StyleTableCell()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create document
     using (var document = new Aspose.Pdf.Document())
     {
@@ -865,7 +868,6 @@ private static void StyleTableCell()
                 Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
                 tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
 
-
                 tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
                 tdElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
 
@@ -918,8 +920,9 @@ private static void StyleTableCell()
 
 private static void StyleTableCell()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
@@ -985,7 +988,6 @@ private static void StyleTableCell()
 
             Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
             tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
-
 
             tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
             tdElement.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 4.0F, Aspose.Pdf.Color.Gray);
