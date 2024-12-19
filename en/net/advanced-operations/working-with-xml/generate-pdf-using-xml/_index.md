@@ -1338,25 +1338,6 @@ BindXML() method offers the feature to load XML file contents and Document.save(
 </Document>
 ```
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
-// Instantiate Document object
-Document document = new Document();
-// Bind source XML file
-document.BindXml(dataDir + "log.xml");
-// Get reference of page object from XML
-Page page = (Page)document.GetObjectById("mainSection");
-// Get reference of first TextSegment with ID boldHtml
-TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
-// Get reference of second TextSegment with ID strongHtml
-segment = (TextSegment)document.GetObjectById("strongHtml");
-// Save resultant PDF file
-document.Save(dataDir + "XMLToPDF_out.pdf");
-```
-
 {{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
@@ -1486,19 +1467,6 @@ Following XML template contains an `<Image>` tag in it with an ID "testImg". In 
 
 Code to set image path in XML template is as follows:
 
-```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-string inXml = dataDir + "input.xml";
-string inFile = dataDir + "aspose-logo.jpg";
-string outFile = dataDir + "output_out.pdf";
-Document document = new Document();
-document.BindXml(inXml);
-Image image = (Image)document.GetObjectById("testImg");
-image.File = inFile;
-document.Save(outFile);
-```
-
 {{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
@@ -1506,7 +1474,7 @@ document.Save(outFile);
 
 private static void CreateDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     string inXml = dataDir + "input.xml";
@@ -1538,7 +1506,7 @@ private static void CreateDocument()
 
 private static void CreateDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     string inXml = dataDir + "input.xml";
