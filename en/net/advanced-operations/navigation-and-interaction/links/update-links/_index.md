@@ -99,7 +99,7 @@ The following code snippet shows you how to update a link in a PDF file and set 
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -129,7 +129,7 @@ private static void UpdateLinkAnnotation()
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -164,7 +164,7 @@ To update the hyperlink so that it points to a web address, instantiate the [GoT
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -189,7 +189,7 @@ private static void UpdateLinkAnnotation()
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -219,7 +219,7 @@ The following code snippet shows how to update a link in a PDF file and set its 
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -247,7 +247,7 @@ private static void UpdateLinkAnnotation()
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -280,7 +280,7 @@ The link annotation does not contain text. Instead, the text is placed in the co
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
@@ -321,7 +321,7 @@ private static void UpdateLinkAnnotation()
 
 private static void UpdateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Load the PDF file
