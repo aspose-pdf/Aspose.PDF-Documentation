@@ -328,16 +328,14 @@ private static void ConcatenatePdfFiles()
 Once the PDF files have been merged, we can insert a blank page at the beginning of document on which can can create Table Of contents. In order to accomplish this requirement, we can load the merged file into **Document** object and we need to call Page.Insert(...) method to insert a blank page.
 
 ```csharp
-private static void InsertBlankPageAtBeginning()
+private static void InsertBlankPage()
 {
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    // Set input and output file paths
-    var inputFilePath = dataDir + "inFile.pdf";
-    // Open document
-    using (var document = new Aspose.Pdf.Document(inputFilePath))
+    // Insert a blank page at the beginning of concatenated file to display Table of Contents
+    using (var document = new Aspose.Pdf.Document(dataDir + "Concatenated_Table_Of_Contents.pdf"))
     {
-        // Insert an empty page in a PDF
+        // Insert a blank page in a PDF
         document.Pages.Insert(1);
     }
 }
@@ -347,7 +345,21 @@ private static void InsertBlankPageAtBeginning()
 
 In order to create a Table of Contents, we need to add Text stamps on first page using [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp) objects. Stamp class provides `BindLogo(...)` method to add [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) and we can also specify the location to add these text stamps using `SetOrigin(..)` method. In this article, we are concatenating two PDF files, so we need to create two text stamp objects pointing to these individual documents.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-AddTextStamps.cs" >}}
+```csharp
+private static void AddTextStampForTableOfContents()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var inputPdfFile = Path.Combine(dataDir, "input1.pdf");
+    // Set Text Stamp to display string Table Of Contents
+    var stamp = new Aspose.Pdf.Facades.Stamp();
+    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
+    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+    stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(inputPdfFile).GetPageWidth(1) / 3, 700);
+    // Set particular pages
+    stamp.Pages = new[] { 1 };
+}
+```
 
 ### Create local links
 
