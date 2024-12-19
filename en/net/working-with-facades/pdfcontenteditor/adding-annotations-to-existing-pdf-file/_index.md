@@ -97,7 +97,7 @@ public static void AddFreeTextAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddFreeTextAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PdfContentEditor object
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -133,7 +133,7 @@ public static void AddFreeTextAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "AddFreeTextAnnotation.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Instantiate PdfContentEditor object
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -174,7 +174,7 @@ public static void AddTextAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddTextAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PdfContentEditor object
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -210,7 +210,7 @@ public static void AddTextAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "AddTextAnnotation.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Instantiate PdfContentEditor object
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -251,7 +251,7 @@ public static void AddLineAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddLineAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PdfContentEditor object
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -283,7 +283,7 @@ public static void AddLineAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "AddLineAnnotation.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Instantiate PdfContentEditor object
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
