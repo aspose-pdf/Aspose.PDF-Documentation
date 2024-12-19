@@ -102,37 +102,35 @@ public static void AddXmpMetadata()
     var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
 
     // Create input and output file streams
-    var input = new FileStream(dataDir + "FilledForm.pdf", FileMode.Open);
+    using (var input = new FileStream(dataDir + "FilledForm.pdf", FileMode.Open))
+    {
+        using (var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create))
+        {
+            // Set input file stream
+            xmpMetaData.BindPdf(input);
 
-    var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create);
+            // Add base URL property to xmp metadata
+            xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.BaseURL, "xmlns:pdf=http:// Ns.adobe.com/pdf/1.3/");
 
-    // Set input file stream
-    xmpMetaData.BindPdf(input);
+            // Add creation date property to xmp metadata
+            xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreateDate, DateTime.Now.ToString());
 
-    // Add base URL property to xmp metadata
-    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.BaseURL, "xmlns:pdf=http:// Ns.adobe.com/pdf/1.3/");
+            // Add Metadata Date property to xmp metadata
+            xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.MetadataDate, DateTime.Now.ToString());
 
-    // Add creation date property to xmp metadata
-    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreateDate, DateTime.Now.ToString());
+            // Add Creator Tool property to xmp metadata
+            xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreatorTool, "Creator Tool Name");
 
-    // Add Metadata Date property to xmp metadata
-    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.MetadataDate, DateTime.Now.ToString());
+            // Add Modify Date to xmp metadata
+            xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate, DateTime.Now.ToString());
 
-    // Add Creator Tool property to xmp metadata
-    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.CreatorTool, "Creator Tool Name");
+            // Add Nick Name to xmp metadata
+            xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-    // Add Modify Date to xmp metadata
-    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.ModifyDate, DateTime.Now.ToString());
-
-    // Add Nick Name to xmp metadata
-    xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
-
-    // Save xmp meta data in the pdf file
-    xmpMetaData.Save(output);
-
-    // Close input and output file streams
-    input.Close();
-    output.Close();
+            // Save xmp meta data in the pdf file
+            xmpMetaData.Save(output);
+        }
+    }
 }
 ```
 {{< /tab >}}
