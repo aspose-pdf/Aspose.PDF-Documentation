@@ -292,7 +292,7 @@ private static void UpdateLinkAnnotation()
             {
                 // Search the text under the annotation
                 var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
-                Aspose.Pdf.Rectangle rect = annotation.Rect;
+                var rect = annotation.Rect;
                 rect.LLX -= 10;
                 rect.LLY -= 10;
                 rect.URX += 10;
@@ -333,7 +333,7 @@ private static void UpdateLinkAnnotation()
         {
             // Search the text under the annotation
             var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
-            Aspose.Pdf.Rectangle rect = annotation.Rect;
+            var rect = annotation.Rect;
             rect.LLX -= 10;
             rect.LLY -= 10;
             rect.URX += 10;

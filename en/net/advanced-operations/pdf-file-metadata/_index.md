@@ -97,7 +97,7 @@ private static void GetFileInformation()
     using (var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf"))
     {
         // Get document information
-        Aspose.Pdf.DocumentInfo docInfo = document.Info;
+        var docInfo = document.Info;
 
         // Show document information
         Console.WriteLine("Author: {0}", docInfo.Author);
@@ -124,7 +124,7 @@ private static void GetFileInformation()
     using var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf");
 
     // Get document information
-    Aspose.Pdf.DocumentInfo docInfo = document.Info;
+    var docInfo = document.Info;
 
     // Show document information
     Console.WriteLine("Author: {0}", docInfo.Author);
