@@ -95,16 +95,27 @@ To move an page we should:
 The following code snippet shows you how to move one page.
 
 ```csharp
-var srcFileName = "<enter file name>";
-var dstFileName = "<enter file name>";
-var srcDocument = new Document(srcFileName);
-var dstDocument = new Document();
-var page = srcDocument.Pages[2];
-dstDocument.Pages.Add(page);
-// Save output file
-dstDocument.Save(srcFileName);
-srcDocument.Pages.Delete(2);
-srcDocument.Save(dstFileName);
+private static void MovingAPageFromOnePdfDocumentToAnother()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Document path
+    var srcFileName = dataDir + "input.pdf";
+    var dstFileName = dataDir + "moved_out.pdf";
+    //Open documents
+    using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var page = srcDocument.Pages[2];
+            dstDocument.Pages.Add(page);
+            // Save output file
+            dstDocument.Save(dstFileName);
+            srcDocument.Pages.Delete(2);
+            srcDocument.Save(srcFileName);
+        }
+    }
+}
 ```
 
 ## Moving bunch of Pages from one PDF Document to Another
