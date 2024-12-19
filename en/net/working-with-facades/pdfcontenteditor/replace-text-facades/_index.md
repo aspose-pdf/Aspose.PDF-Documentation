@@ -84,17 +84,17 @@ In order to replace text in an existing PDF file, you need to create an object o
 
 public static void ReplaceText01()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.BindPdf(dataDir + "sample.pdf");
         editor.ReplaceText("Value", "Label");
 
         // Save the output file
-        editor.Save(dataDir + "ReplaceText_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo01.pdf");
     }
 }
 ```
@@ -106,16 +106,16 @@ public static void ReplaceText01()
 
 public static void ReplaceText01()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor Object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
-    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("Value", "Label");
 
     // Save the output file
-    editor.Save(dataDir + "ReplaceText_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo01.pdf");
 }
 ```
 {{< /tab >}}
@@ -138,17 +138,17 @@ In the second example, you will see how, in addition to replacing the text, you 
 
 public static void ReplaceText02()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.BindPdf(dataDir + "sample.pdf");
         editor.ReplaceText("Value", "Label", 12);
 
         // save the output file
-        editor.Save(dataDir + "ReplaceText_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo02.pdf");
     }
 }
 ```
@@ -160,16 +160,16 @@ public static void ReplaceText02()
 
 public static void ReplaceText02()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
-    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("Value", "Label", 12);
 
     // save the output file
-    editor.Save(dataDir + "ReplaceText_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo02.pdf");
 }
 ```
 {{< /tab >}}
@@ -184,13 +184,13 @@ For more advanced possibilities for working with our text, we will use the [Text
 
 public static void ReplaceText03()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.BindPdf(dataDir + "sample.pdf");
 
         var textState = new Aspose.Pdf.Text.TextState
         {
@@ -201,7 +201,7 @@ public static void ReplaceText03()
         editor.ReplaceText("Value", "Label", textState);
 
         // save the output file
-        editor.Save(dataDir + "ReplaceText_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo03.pdf");
     }
 }
 ```
@@ -213,12 +213,12 @@ public static void ReplaceText03()
 
 public static void ReplaceText03()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
-    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
 
     var textState = new Aspose.Pdf.Text.TextState
     {
@@ -229,7 +229,7 @@ public static void ReplaceText03()
     editor.ReplaceText("Value", "Label", textState);
 
     // save the output file
-    editor.Save(dataDir + "ReplaceText_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo03.pdf");
 }
 ```
 {{< /tab >}}
@@ -244,13 +244,13 @@ In case you need to replace all the specified text in the document, use the foll
 
 public static void ReplaceText04()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.BindPdf(dataDir + "sample.pdf");
         int count = 0;
 
         while (editor.ReplaceText("Value", "Label"))
@@ -261,7 +261,7 @@ public static void ReplaceText04()
         Console.WriteLine($"{count} occurrences have been replaced.");
 
         // Save the output file
-        editor.Save(dataDir + "ReplaceText_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo04.pdf");
     }
 }
 ```
@@ -278,7 +278,7 @@ public static void ReplaceText04()
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
-    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     int count = 0;
 
     while (editor.ReplaceText("Value", "Label"))
@@ -289,7 +289,7 @@ public static void ReplaceText04()
     Console.WriteLine($"{count} occurrences have been replaced.");
 
     // Save the output file
-    editor.Save(dataDir + "ReplaceText_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo04.pdf");
 }
 ```
 {{< /tab >}}
@@ -312,7 +312,7 @@ public static void ReplaceText05()
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.BindPdf(dataDir + "sample.pdf");
         int count = 0;
 
         while (editor.ReplaceText("9999", 2, "ABCDE"))
@@ -323,7 +323,7 @@ public static void ReplaceText05()
         Console.WriteLine($"{count} occurrences have been replaced.");
 
         // Save the output file
-        editor.Save(dataDir + "ReplaceText_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo05.pdf");
     }
 }
 ```
@@ -340,7 +340,7 @@ public static void ReplaceText05()
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
-    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     int count = 0;
 
     while (editor.ReplaceText("9999", 2, "ABCDE"))
@@ -351,7 +351,7 @@ public static void ReplaceText05()
     Console.WriteLine($"{count} occurrences have been replaced.");
 
     // Save the output file
-    editor.Save(dataDir + "ReplaceText_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo05.pdf");
 }
 ```
 {{< /tab >}}
@@ -379,11 +379,11 @@ public static void ReplaceText06()
                }
            })
     {
-        editor.BindPdf(dataDir + "ReplaceText.pdf");
+        editor.BindPdf(dataDir + "sample.pdf");
         editor.ReplaceText("\\d{4}", "ABCDE");
 
         // Save the output file
-        editor.Save(dataDir + "ReplaceText_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo06.pdf");
     }
 }
 ```
@@ -408,11 +408,11 @@ public static void ReplaceText06()
         }
     };
 
-    editor.BindPdf(dataDir + "ReplaceText.pdf");
+    editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("\\d{4}", "ABCDE");
 
     // Save the output file
-    editor.Save(dataDir + "ReplaceText_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo06.pdf");
 }
 ```
 {{< /tab >}}
