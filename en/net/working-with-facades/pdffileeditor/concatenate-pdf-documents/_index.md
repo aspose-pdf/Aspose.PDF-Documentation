@@ -309,7 +309,7 @@ private static void ConcatenatePdfFiles()
     // Set input and output file paths
     var inputFile1 = dataDir + "input1.pdf";
     var inputFile2 = dataDir + "input2.pdf";
-    var outFile = dataDir + "ConcatenatePdfFiles_out.pdf";
+    var outFile = dataDir + "ConcatenatePdfFilesAndCreateTOC_out.pdf";
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
 
