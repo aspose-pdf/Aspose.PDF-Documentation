@@ -186,7 +186,7 @@ private static void AddJavaScript()
     // Remove Document level JavaScript
     using (var document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf"))
     {
-        IList keys = (IList)document1.JavaScript.Keys;
+        var keys = (IList)document1.JavaScript.Keys;
 
         Console.WriteLine("=============================== ");
 
