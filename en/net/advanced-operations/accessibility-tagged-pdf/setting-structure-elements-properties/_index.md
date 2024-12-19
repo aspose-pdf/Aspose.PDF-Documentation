@@ -88,7 +88,7 @@ Following code snippet shows how to set structure elements properties of a Tagge
 
 private static void SetProperties()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -130,7 +130,7 @@ private static void SetProperties()
 
 private static void SetProperties()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -177,7 +177,7 @@ In order to set text structure elements of a Tagged PDF Document, Aspose.PDF off
 
 private static void SetTextElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -212,7 +212,7 @@ private static void SetTextElements()
 
 private static void SetTextElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -253,7 +253,7 @@ Following code snippet shows how to set text block structure elements of a Tagge
 
 private static void SetTextBlockElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -305,7 +305,7 @@ private static void SetTextBlockElements()
 
 private static void SetTextBlockElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -362,7 +362,7 @@ In order to set inline structure elements of a Tagged PDF Document, Aspose.PDF o
 
 private static void SetInlineElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -480,7 +480,7 @@ private static void SetInlineElements()
 
 private static void SetInlineElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -603,7 +603,7 @@ In order to set a custom tag name of the elements of a Tagged PDF Document, Aspo
 
 private static void SetTagName()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -673,7 +673,7 @@ private static void SetTagName()
 
 private static void SetTagName()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -750,7 +750,7 @@ In order to set link structure elements in a Tagged PDF Document, Aspose.PDF off
 
 private static void SetElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     string outFile = dataDir + "LinkStructureElements_Output.pdf";
     string logFile = dataDir + "46035_log.xml";
@@ -843,7 +843,7 @@ private static void SetElements()
 
 private static void SetElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     string outFile = dataDir + "LinkStructureElements_Output.pdf";
     string logFile = dataDir + "46035_log.xml";
@@ -940,7 +940,7 @@ Aspose.PDF for .NET API also allows you to add link structure elements. Followin
 
 private static void AddLinkElement()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
@@ -1024,7 +1024,7 @@ private static void AddLinkElement()
 
 private static void AddLinkElement()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
@@ -1110,7 +1110,7 @@ Aspose.PDF for .NET API also allows you to add [NoteElement](https://reference.a
 
 private static void SetNoteElement()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     string outFile = dataDir + "45929_doc.pdf";
     string logFile = dataDir + "45929_log.xml";
@@ -1170,7 +1170,7 @@ private static void SetNoteElement()
 
 private static void SetNoteElement()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     string outFile = dataDir + "45929_doc.pdf";
     string logFile = dataDir + "45929_log.xml";
@@ -1234,7 +1234,7 @@ Aspose.PDF for .NET API also allows you to set language and title for a document
 
 private static void SetLanguageAndTitle()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -1289,7 +1289,7 @@ private static void SetLanguageAndTitle()
 
 private static void SetLanguageAndTitle()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
