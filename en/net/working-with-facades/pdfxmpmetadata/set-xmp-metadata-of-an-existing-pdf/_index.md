@@ -82,7 +82,7 @@ In order to set XMP metadata in a PDF file, you need to create [PdfXmpMetadata](
 
 public static void AddXmpMetadata()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
 
     // Create PdfXmpMetadata object
@@ -126,7 +126,7 @@ public static void AddXmpMetadata()
 
 public static void AddXmpMetadata()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
 
     // Create PdfXmpMetadata object
