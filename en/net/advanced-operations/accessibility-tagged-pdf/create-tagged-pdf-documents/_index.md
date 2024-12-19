@@ -303,7 +303,6 @@ private static void AddStyle()
         Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
         taggedContent.RootElement.AppendChild(p);
 
-        // Under Development
         p.StructureTextState.FontSize = 18F;
         p.StructureTextState.ForegroundColor = Aspose.Pdf.Color.Red;
         p.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
@@ -339,7 +338,6 @@ private static void AddStyle()
     Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
     taggedContent.RootElement.AppendChild(p);
 
-    // Under Development
     p.StructureTextState.FontSize = 18F;
     p.StructureTextState.ForegroundColor = Aspose.Pdf.Color.Red;
     p.StructureTextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
@@ -377,7 +375,6 @@ private static void IllustrateStructureElements()
         taggedContent.SetTitle("Tagged Pdf Document");
         taggedContent.SetLanguage("en-US");
 
-        // Under Development
         Aspose.Pdf.LogicalStructure.IllustrationElement figure1 = taggedContent.CreateFigureElement();
         taggedContent.RootElement.AppendChild(figure1);
         figure1.AlternativeText = "Figure One";
@@ -411,7 +408,6 @@ private static void IllustrateStructureElements()
     taggedContent.SetTitle("Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
 
-    // Under Development
     Aspose.Pdf.LogicalStructure.IllustrationElement figure1 = taggedContent.CreateFigureElement();
     taggedContent.RootElement.AppendChild(figure1);
     figure1.AlternativeText = "Figure One";
