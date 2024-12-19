@@ -365,12 +365,112 @@ private static void AddTextStampForTableOfContents()
 
 Now we need to add links towards the pages inside the concatenated file. In order to accomplish this requirement, we can use `CreateLocalLink(..)` method of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class. In following code snippet, we have passed Transparent as 4th argument so that the rectangle around link is not visible.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-CreateLocalLinks.cs" >}}
+```csharp
+private static void CreateLocalLinks()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Now we need to add Heading for Table Of Contents and links for documents
+    var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+    // Bind the PDF file in which we added the blank page
+    contentEditor.BindPdf(dataDir + "Concatenated_Table_Of_Contents.pdf");
+    // Create link for first document
+    contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
+}
+```
 
 ### Complete code
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-CompletedCode.cs" >}}
+```csharp
+private static void CompleteCode()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create a MemoryStream object to hold the resultant PDf file
+    using (var concatenatedStream = new MemoryStream())
+    {
+        using (var fs1 = new FileStream(dataDir + "input1.pdf", FileMode.Open))
+        {
+            using (var fs2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+            {
+                // Save concatenated output file
+                pdfEditor.Concatenate(fs1, fs2, concatenatedStream);
+            }
+        }
+        
+        using (var concatenatedPdfDocument = new Aspose.Pdf.Document(concatenatedStream))
+        {
+            // Insert a blank page at the beginning of concatenated file to display Table of Contents
+            concatenatedPdfDocument.Pages.Insert(1);
 
+            // Hold the result file with empty page added
+            using (var documentWithBlankPage = new MemoryStream())
+            {
+                // Save output file
+                concatenatedPdfDocument.Save(documentWithBlankPage);
+
+                using (var documentWithTocHeading = new MemoryStream())
+                {
+                    // Add Table Of Contents logo as stamp to PDF file
+                    var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp();
+                    // Find the input file
+                    fileStamp.BindPdf(documentWithBlankPage);
+
+                    // Set Text Stamp to display string Table Of Contents
+                    var stamp = new Aspose.Pdf.Facades.Stamp();
+                    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
+                    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+                    stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(documentWithBlankPage).GetPageWidth(1) / 3, 700);
+                    // Set particular pages
+                    stamp.Pages = new[] { 1 };
+                    // Add stamp to PDF file
+                    fileStamp.AddStamp(stamp);
+
+                    // Create stamp text for first item in Table Of Contents
+                    var document1Link = new Aspose.Pdf.Facades.Stamp();
+                    document1Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("1 - Link to Document 1", Color.Black, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
+                    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+                    document1Link.SetOrigin(150, 650);
+                    // Set particular pages on which stamp should be displayed
+                    document1Link.Pages = new[] { 1 };
+                    // Add stamp to PDF file
+                    fileStamp.AddStamp(document1Link);
+
+                    // Create stamp text for second item in Table Of Contents
+                    var document2Link = new Aspose.Pdf.Facades.Stamp();
+                    document2Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("2 - Link to Document 2", Color.Black, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
+                    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+                    document2Link.SetOrigin(150, 620);
+                    // Set particular pages on which stamp should be displayed
+                    document2Link.Pages = new[] { 1 };
+                    // Add stamp to PDF file
+                    fileStamp.AddStamp(document2Link);
+
+                    // Save updated PDF file
+                    fileStamp.Save(documentWithTocHeading);
+                    fileStamp.Close();
+
+                    // Now we need to add Heading for Table Of Contents and links for documents
+                    var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+                    // Bind the PDF file in which we added the blank page
+                    contentEditor.BindPdf(documentWithTocHeading);
+                    // Create link for first document
+                    contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
+                    // Create link for Second document
+                    // We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
+                    // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
+                    contentEditor.CreateLocalLink(new Rectangle(150, 620, 100, 20), new PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, Color.Transparent);
+
+                    // Save updated PDF
+                    contentEditor.Save(dataDir + "Concatenated_Table_Of_Contents.pdf");
+                }
+            }
+        }
+    }
+}
+```csharp
 
 ## Concatenate PDF files in folder
 
