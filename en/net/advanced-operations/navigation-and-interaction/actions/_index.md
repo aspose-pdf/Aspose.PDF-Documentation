@@ -352,7 +352,7 @@ private static void GetHyperlink()
         page.Accept(selector);
 
         // Create list holding all the links
-        IList<Aspose.Pdf.Annotations.Annotation> list = selector.Selected;
+        var list = selector.Selected;
 
         // Iterate through individual item inside list
         foreach (var a in list)
