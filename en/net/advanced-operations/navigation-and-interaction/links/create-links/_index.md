@@ -101,7 +101,7 @@ The following code snippet shows how to create a link to an application in a PDF
 
 private static void CreateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -127,7 +127,7 @@ private static void CreateLinkAnnotation()
 
 private static void CreateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -135,7 +135,7 @@ private static void CreateLinkAnnotation()
 
     // Create link
     var page = document.Pages[1];
-    Aspose.Pdf.Annotations.LinkAnnotation link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
     link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
     link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
     page.Annotations.Add(link);
@@ -169,7 +169,7 @@ The following code snippet shows how to create PDF document link in a PDF file.
 
 private static void CreateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -195,7 +195,7 @@ private static void CreateLinkAnnotation()
 
 private static void CreateLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
