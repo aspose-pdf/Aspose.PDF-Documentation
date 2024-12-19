@@ -94,7 +94,7 @@ public static void SetViewerPreference()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
     {
         // Instantiate PdfContentEditor object
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -105,7 +105,7 @@ public static void SetViewerPreference()
         editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
 
         // Saves the result PDF to file
-        editor.Save(dataDir + "SetViewerPreference_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
     }
 }
 ```
@@ -117,8 +117,11 @@ public static void SetViewerPreference()
 
 public static void SetViewerPreference()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    
     // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
 
     // Instantiate PdfContentEditor object
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -129,7 +132,7 @@ public static void SetViewerPreference()
     editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
 
     // Saves the result PDF to file
-    editor.Save(dataDir + "SetViewerPreference_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
 }
 ```
 {{< /tab >}}
