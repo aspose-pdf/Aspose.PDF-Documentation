@@ -109,7 +109,7 @@ private static void CreateLinkAnnotation()
     {
         // Create link
         var page = document.Pages[1];
-        Aspose.Pdf.Annotations.LinkAnnotation link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
         link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
         link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
         page.Annotations.Add(link);
