@@ -94,7 +94,7 @@ Following code snippet shows how to get content of a PDF document with Tagged Te
 
 private static void GetTaggedContent()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Pdf Document
@@ -104,7 +104,6 @@ private static void GetTaggedContent()
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
         // Work with Tagged PDF content
-
         // Set Title and Language for Document
         taggedContent.SetTitle("Simple Tagged Pdf Document");
         taggedContent.SetLanguage("en-US");
@@ -122,7 +121,7 @@ private static void GetTaggedContent()
 
 private static void GetTaggedContent()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -132,7 +131,6 @@ private static void GetTaggedContent()
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
 
     // Work with Tagged PDF content
-
     // Set Title and Language for Document
     taggedContent.SetTitle("Simple Tagged Pdf Document");
     taggedContent.SetLanguage("en-US");
@@ -155,7 +153,7 @@ In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [St
 
 private static void GetRootStructure()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -183,7 +181,7 @@ private static void GetRootStructure()
 
 private static void GetRootStructure()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
@@ -216,7 +214,7 @@ In order to access child elements of a Tagged PDF Document, Aspose.PDF offers [E
 
 private static void AccessChildElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF Document
@@ -274,7 +272,7 @@ private static void AccessChildElements()
 
 private static void AccessChildElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF Document
@@ -339,7 +337,7 @@ Following code snippet shows how to tag images in existing PDF document:
 
 private static void TagImages()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     string inFile = dataDir + "TH.pdf";
     string outFile = dataDir + "TH_out.pdf";
@@ -397,7 +395,7 @@ private static void TagImages()
 
 private static void TagImages()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     string inFile = dataDir + "TH.pdf";
     string outFile = dataDir + "TH_out.pdf";
