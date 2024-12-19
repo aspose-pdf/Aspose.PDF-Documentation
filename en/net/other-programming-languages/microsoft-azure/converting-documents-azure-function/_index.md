@@ -217,7 +217,6 @@ license.SetLicense("Aspose.PDF.lic");
 Create a new file `PdfConverter.cs`:
 
 ```csharp
-using Aspose.Pdf;
 using Azure.Storage.Blobs;
 using System;
 using System.IO;
@@ -241,8 +240,8 @@ public class PdfConverter
         sourceStream.Position = 0;
 
         // Load PDF document
-        var document = new Document(sourceStream);
-        
+        var document = new Aspose.Pdf.Document(sourceStream);
+
         // Create output stream
         using var outputStream = new MemoryStream();
         string targetBlobName = Path.GetFileNameWithoutExtension(sourceBlobName);
@@ -252,22 +251,22 @@ public class PdfConverter
         {
             case "docx":
                 targetBlobName += ".docx";
-                document.Save(outputStream, SaveFormat.DocX);
+                document.Save(outputStream, Aspose.Pdf.SaveFormat.DocX);
                 break;
 
             case "html":
                 targetBlobName += ".html";
-                document.Save(outputStream, SaveFormat.Html);
+                document.Save(outputStream, Aspose.Pdf.SaveFormat.Html);
                 break;
 
             case "xlsx":
                 targetBlobName += ".xlsx";
-                document.Save(outputStream, SaveFormat.Excel);
+                document.Save(outputStream, Aspose.Pdf.SaveFormat.Excel);
                 break;
 
             case "pptx":
                 targetBlobName += ".pptx";
-                document.Save(outputStream, SaveFormat.Pptx);
+                document.Save(outputStream, Aspose.Pdf.SaveFormat.Pptx);
                 break;
 
             case "jpeg":
@@ -275,7 +274,7 @@ public class PdfConverter
                 targetBlobName += ".jpg";
                 foreach (var page in document.Pages)
                 {
-                    var jpegDevice = new JpegDevice(new Resolution(300));
+                    var jpegDevice = new Aspose.Pdf.Devices.JpegDevice(new Aspose.Pdf.Devices.Resolution(300));
                     jpegDevice.Process(page, outputStream);
                 }
                 break;

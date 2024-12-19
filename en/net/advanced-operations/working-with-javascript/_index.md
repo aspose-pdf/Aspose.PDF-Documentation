@@ -95,7 +95,66 @@ You can add JavaScript at both the document and page levels using [Aspose.PDF fo
 
 The example below applies the OpenAction to a specific document.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Working-Document-AddJavaScriptToPage-AddJavaScriptToPage.cs" >}}
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddJavaScript()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Load an existing PDF files
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Adding JavaScript at Document Level
+        // Instantiate JavascriptAction with desired JavaScript statement
+        var javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
+
+        // Assign JavascriptAction object to desired action of Document
+        document.OpenAction = javaScript;
+
+        // Adding JavaScript at Page Level
+        document.Pages[2].Actions.OnOpen = new JavascriptAction("app.alert('page 1 opened')");
+        document.Pages[2].Actions.OnClose = new JavascriptAction("app.alert('page 1 closed')");
+
+        // Save PDF Document
+        document.Save(dataDir + "JavaScript-Added_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddJavaScript()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Load an existing PDF files
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Adding JavaScript at Document Level
+    // Instantiate JavascriptAction with desired JavaScript statement
+    var javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
+
+    // Assign JavascriptAction object to desired action of Document
+    document.OpenAction = javaScript;
+
+    // Adding JavaScript at Page Level
+    document.Pages[2].Actions.OnOpen = new JavascriptAction("app.alert('page 1 opened')");
+    document.Pages[2].Actions.OnClose = new JavascriptAction("app.alert('page 1 closed')");
+
+    // Save PDF Document
+    document.Save(dataDir + "JavaScript-Added_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Adding/Removing JavaScript to Document Level
 
@@ -105,7 +164,81 @@ A new property named JavaScript is added in Document class which has JavaScript 
 - IList Keys – provides a list of existing keys in JavaScript collection.
 - bool Remove(string key) – removes JavaScript by its key.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Working-Document-AddRemoveJavascriptToDoc-AddRemoveJavascriptToDoc.cs" >}}
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddJavaScript()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create Document object
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add();
+        document.JavaScript["func1"] = "function func1() { hello(); }";
+        document.JavaScript["func2"] = "function func2() { hello(); }";
+        document.Save(dataDir + "AddJavascript.pdf");
+    }
+
+    // Remove Document level JavaScript
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf"))
+    {
+        var keys = (IList)document1.JavaScript.Keys;
+
+        Console.WriteLine("=============================== ");
+
+        foreach (string key in keys)
+        {
+            Console.WriteLine(key + " ==> " + document1.JavaScript[key]);
+        }
+
+        document1.JavaScript.Remove("func1");
+
+        Console.WriteLine("Key 'func1' removed ");
+        Console.WriteLine("=============================== ");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddJavaScript()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create Document object
+    using var document = new Aspose.Pdf.Document();
+    document.Pages.Add();
+    document.JavaScript["func1"] = "function func1() { hello(); }";
+    document.JavaScript["func2"] = "function func2() { hello(); }";
+    document.Save(dataDir + "AddJavascript.pdf");
+
+    // Remove Document level JavaScript
+    using var document1 = new Aspose.Pdf.Document(dataDir + "AddJavascript.pdf");
+    IList keys = (IList)document1.JavaScript.Keys;
+
+    Console.WriteLine("=============================== ");
+
+    foreach (string key in keys)
+    {
+        Console.WriteLine(key + " ==> " + document1.JavaScript[key]);
+    }
+
+    document1.JavaScript.Remove("func1");
+
+    Console.WriteLine("Key 'func1' removed ");
+    Console.WriteLine("=============================== ");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Setting Expiry Date of a PDF Document Using JavaScript Actions
 
@@ -127,7 +260,11 @@ Below are code snippets demonstrating this functionality in both C# (.NET) and J
 
 The following C# code snippet demonstrates how to set an expiry date and time for a PDF document using JavaScript Actions with Aspose.PDF:
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CreateDocumentWithExpiryDate()
 {
     // Initialize a new PDF document
@@ -144,12 +281,12 @@ private static void CreateDocumentWithExpiryDate()
             "var rightNow = new Date();\n" +
             // Set the expiry date and time
             "var endDate = new Date(" +
-                $"{expiryDateTime.Year}," +
-                $"{expiryDateTime.Month - 1}," + // Months are zero-based in JavaScript
-                $"{expiryDateTime.Day}," +
-                $"{expiryDateTime.Hour}," +
-                $"{expiryDateTime.Minute}," +
-                $"{expiryDateTime.Second}" +
+            $"{expiryDateTime.Year}," +
+            $"{expiryDateTime.Month - 1}," + // Months are zero-based in JavaScript
+            $"{expiryDateTime.Day}," +
+            $"{expiryDateTime.Hour}," +
+            $"{expiryDateTime.Minute}," +
+            $"{expiryDateTime.Second}" +
             ");\n" +
             "if(rightNow > endDate)\n" +
             "{\n" +
@@ -164,11 +301,56 @@ private static void CreateDocumentWithExpiryDate()
         document.OpenAction = javaScript;
 
         // Save the updated PDF document
-        string outputPath = "C:\\PDFExpiry.pdf";
-        document.Save(outputPath);
+        document.Save("PDFExpiry_out.pdf");
     }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateDocumentWithExpiryDate()
+{
+    // Initialize a new PDF document
+    using var document = new Aspose.Pdf.Document();
+    document.Pages.Add();
+
+    // Define the expiry date and time (e.g., April 1, 2024, 12:00:00 PM)
+    var expiryDateTime = new DateTime(2024, 4, 1, 12, 0, 0);
+
+    // Create JavaScript code to enforce the expiry date and time
+    string jsCode =
+        // Get the current date and time
+        "var rightNow = new Date();\n" +
+        // Set the expiry date and time
+        "var endDate = new Date(" +
+        $"{expiryDateTime.Year}," +
+        $"{expiryDateTime.Month - 1}," + // Months are zero-based in JavaScript
+        $"{expiryDateTime.Day}," +
+        $"{expiryDateTime.Hour}," +
+        $"{expiryDateTime.Minute}," +
+        $"{expiryDateTime.Second}" +
+        ");\n" +
+        "if(rightNow > endDate)\n" +
+        "{\n" +
+        "    app.alert(\"This Document has Expired as of \" + endDate.toLocaleString() + \".\");\n" +
+        "    this.closeDoc();\n" +
+        "}";
+
+    // Create a JavascriptAction with the defined JavaScript code
+    var javaScript = new Aspose.Pdf.Annotations.JavascriptAction(jsCode);
+
+    // Set the JavaScript action to execute when the document is opened
+    document.OpenAction = javaScript;
+
+    // Save the updated PDF document
+    document.Save("PDFExpiry_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 - **JavaScript Date Object:** In JavaScript, the month index starts at `0` for January and ends at `11` for December. Ensure that the month value is adjusted accordingly when setting the expiry date and time.
   
