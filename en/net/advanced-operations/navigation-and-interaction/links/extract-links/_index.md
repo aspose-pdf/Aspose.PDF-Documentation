@@ -98,7 +98,7 @@ The following code snippet shows you how to extract links from a PDF file.
 
 private static void ExtractLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
@@ -124,7 +124,7 @@ private static void ExtractLinkAnnotation()
 
 private static void ExtractLinkAnnotation()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open document
