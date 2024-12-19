@@ -287,7 +287,7 @@ In order to style text structure in a Tagged PDF Document, Aspose.PDF offers [Fo
 
 private static void AddStyle()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Pdf Document
@@ -323,7 +323,7 @@ private static void AddStyle()
 
 private static void AddStyle()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Pdf Document
@@ -364,7 +364,7 @@ In order to illustrate structure elements in a Tagged PDF Document, Aspose.PDF o
 
 private static void IllustrateStructureElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Pdf Document
@@ -398,7 +398,7 @@ private static void IllustrateStructureElements()
 
 private static void IllustrateStructureElements()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Pdf Document
@@ -449,7 +449,7 @@ The code snippet below shows how to validate the Tagged PDF Document. Correspond
 
 private static void ValidateTaggedPdf()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     string inputFileName = dataDir + "StructureElements.pdf";
@@ -470,7 +470,7 @@ private static void ValidateTaggedPdf()
 
 private static void ValidateTaggedPdf()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     string inputFileName = dataDir + "StructureElements.pdf";
