@@ -86,18 +86,18 @@ Other than the creation of simple bookmarks, sometimes you have a requirement to
 
 public static void AddBookmarksAction()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmarksAction.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
     {
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
 
         editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
         // Saves the result PDF to file
-        editor.Save(dataDir + "AddBookmarksAction_out.pdf");
+        editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
     }
 }
 ```
@@ -109,18 +109,18 @@ public static void AddBookmarksAction()
 
 public static void AddBookmarksAction()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "AddBookmarksAction.pdf");
+    using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
 
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
 
     editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
     // Saves the result PDF to file
-    editor.Save(dataDir + "AddBookmarksAction_out.pdf");
+    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
 }
 ```
 {{< /tab >}}
