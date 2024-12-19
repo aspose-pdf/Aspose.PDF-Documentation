@@ -121,7 +121,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
     var leftPages = new int[] { 1, 5 };
     var rightPages = new int[] { 2, 3 };
     // Make booklet
-    pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", leftPages, rightPages);
+    pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", PageSize.A5, leftPages, rightPages);
 }
 ```
 
