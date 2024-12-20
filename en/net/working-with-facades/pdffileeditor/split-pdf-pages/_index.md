@@ -250,4 +250,29 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
 
 In order to split PDF file to individual pages, you need to pass the PDF as stream to the [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index) method. This method will return an array of MemoryStream containing individual pages of the PDF file. You can loop through this array of MemoryStream and save individual pages as individual PDF files on the disk, or you can keep these individual pages in the memory stream for later use in your application. The following code snippet shows you how to split PDF to individual pages using streams.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitToIndividualPagesUsingStreams-SplitToIndividualPagesUsingStreams.cs" >}}
+```csharp
+private static void SplitPdfToIndividualPagesUsingStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create input stream
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        var fileNumber = 1;
+        // Split to pages
+        MemoryStream[] outBuffer = pdfEditor.SplitToPages(inputStream);
+        // Save individual files
+        foreach (MemoryStream aStream in outBuffer)
+        {
+            using (var outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
+            {
+                aStream.WriteTo(outStream);
+                outStream.Close();
+                fileNumber++;
+            }
+        }
+    }
+}
+```
