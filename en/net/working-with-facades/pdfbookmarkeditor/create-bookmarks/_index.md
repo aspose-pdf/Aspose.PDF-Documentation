@@ -191,9 +191,38 @@ private static void AddBookmarkInAnExistingPdfFile()
 
 You can add child bookmarks in an existing PDF file using [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. In order to add child bookmarks, you need to create [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects. You can add individual [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects into [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks) object. You also need to create a [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object and set its [ChildItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) property to [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks) object. You then need to pass this [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object with [ChildItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark/properties/childitem) to the [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method. Finally, you need to save the updated PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. The following code snippet shows you how to add child bookmarks in an existing PDF file.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddChildBookmark-AddChildBookmark.cs" >}}
+```csharp
+private static void AddChildBookmarkInAnExistingPdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    // Create bookmarks
+    var bookmarks = new Aspose.Pdf.Facades.Bookmarks();
+    var childBookmark1 = new Aspose.Pdf.Facades.Bookmark();
+    childBookmark1.PageNumber = 1;
+    childBookmark1.Title = "First Child";
+    var childBookmark2 = new Aspose.Pdf.Facades.Bookmark();
+    childBookmark2.PageNumber = 2;
+    childBookmark2.Title = "Second Child";
+    bookmarks.Add(childBookmark1);
+    bookmarks.Add(childBookmark2);
+    var bookmark = new Aspose.Pdf.Facades.Bookmark();
+    bookmark.Action = "GoTo";
+    bookmark.PageNumber = 1;
+    bookmark.Title = "Parent";
+    bookmark.ChildItems = bookmarks;
+    // Create PdfBookmarkEditor class
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Bind PDF document
+        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        // Create bookmarks
+        bookmarkEditor.CreateBookmarks(bookmark);
+        // Save updated document
+        bookmarkEditor.Save(dataDir + "AddChildBookmark_out.pdf");
+    }
+}
+```
 
 ## See also
 
