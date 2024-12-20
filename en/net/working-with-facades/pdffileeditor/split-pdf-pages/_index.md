@@ -145,7 +145,34 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 
 [SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to split the PDF file into multiple sets of pages. In this example, we require two sets of pages (1, 2) and (5, 6). You can pass a stream to this method instead of accessing the file from the disk. This method returns an array of MemoryStream. You can loop through this array and save the individual sets of pages as separate files. The following code snippet shows you how to split PDF pages to bulk using streams.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesToBulkUsingStreams-SplitPagesToBulkUsingStreams.cs" >}}
+```csharp
+private static void SplitPdfPagesToBulkUsingStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create input stream
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    {
+        var fileNumber = 1;
+        // Create array of pages to split
+        int[][] numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+        // Split to bulk
+        MemoryStream[] outBuffer = pdfEditor.SplitToBulks(inputStream, numberOfPages);
+        // Save individual files
+        foreach (MemoryStream aStream in outBuffer)
+        {
+            using (var outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
+            {
+                aStream.WriteTo(outStream);
+                outStream.Close();
+                fileNumber++;
+            }
+        }
+    }
+}
+```
 
 ## Split PDF Pages to End Using File Paths
 
