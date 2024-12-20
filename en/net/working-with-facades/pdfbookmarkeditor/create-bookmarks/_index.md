@@ -119,9 +119,22 @@ private static void CreateBookmarksOfAllPages()
 
 You can create a bookmark of a particular page in an existing PDF file using [CreateBookmarkOfPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method. This method takes two arguments: bookmark title and page number. First, you need to create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call the [CreateBookmarkOfPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method and save the output PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create bookmark of a particular page.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-CreateBookmarkPage-CreateBookmarkPage.cs" >}}
+```csharp
+private static void CreateBookmarkOfAParticularPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        // Create bookmark of a particular page
+        bookmarkEditor.CreateBookmarkOfPage("Bookmark Name", 2);
+        // Save updated document
+        bookmarkEditor.Save(dataDir + "CreateBookmark-Page_out.pdf");
+    }
+}
+```
 
 ## Create Bookmarks of a Range of Pages
 
