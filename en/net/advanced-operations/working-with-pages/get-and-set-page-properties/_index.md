@@ -222,7 +222,36 @@ All the pages of the PDF files are contained by the [PageCollection](https://ref
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 
 ```csharp
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-DeterminePageColor-DeterminePageColor.cs" >}}
+private static void DeterminePageColor()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Iterate through all the page of PDF file
+        for (var pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
+        {
+            // Get the color type information for particular PDF page
+            Aspose.Pdf.ColorType pageColorType = document.Pages[pageCount].ColorType;
+            switch (pageColorType)
+            {
+                case ColorType.BlackAndWhite:
+                    Console.WriteLine("Page # -" + pageCount + " is Black and white..");
+                    break;
+                case ColorType.Grayscale:
+                    Console.WriteLine("Page # -" + pageCount + " is Gray Scale...");
+                    break;
+                case ColorType.Rgb:
+                    Console.WriteLine("Page # -" + pageCount + " is RGB..", pageCount);
+                    break;
+                case ColorType.Undefined:
+                    Console.WriteLine("Page # -" + pageCount + " Color is undefined..");
+                    break;
+            }
+        }
+    }
+}
 ```
 
 <script type="application/ld+json">
