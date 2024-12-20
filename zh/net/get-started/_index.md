@@ -6,8 +6,6 @@ weight: 30
 url: /zh/net/get-started/
 description: 本节描述了工作的基本原则和使用DOM API的情况。还展示了创建PDF文档的简单和复杂示例。
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2021-06-05"   
 sitemap:
     changefreq: "weekly"

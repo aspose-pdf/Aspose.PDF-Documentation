@@ -5,13 +5,6 @@ type: docs
 weight: 20
 url: /id/net/concatenate-pdf-documents/
 description: Bagian ini menjelaskan cara menggabungkan dokumen PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
-aliases:
-    - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/
-    - /pdf/net/concatenate-pdf-files-and-create-table-of-contents/
-    - /pdf/net/concatenate-pdf-forms-and-keep-fields-names-unique/
-    - /pdf/net/concatenating-all-pdf-files-in-particular-folder/
-    - /pdf/net/how-to-concatenate-pdf-files-in-different-ways/
-    - /pdf/net/append-pdf-files/
 lastmod: "2021-06-05"
 ---
 

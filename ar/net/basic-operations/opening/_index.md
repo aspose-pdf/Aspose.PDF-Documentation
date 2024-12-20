@@ -5,8 +5,6 @@ type: docs
 weight: 20
 url: /ar/net/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF في C# باستخدام مكتبة Aspose.PDF لـ .NET. يمكنك فتح PDF موجود، مستند من تيار، ومستند PDF المشفر.
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
