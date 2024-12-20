@@ -5,8 +5,6 @@ type: docs
 weight: 30
 url: /zh/net/save-pdf-document/
 description: 学习如何在C# Aspose.PDF for .NET PDF库中保存PDF文件。将PDF文档保存到文件系统、流和Web应用程序中。
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

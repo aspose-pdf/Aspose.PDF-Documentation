@@ -5,8 +5,6 @@ type: docs
 weight: 40
 url: /ar/net/hello-world-example/
 description: هذا المثال يوضح كيفية إنشاء مستند PDF بسيط يحتوي على نص Hello World باستخدام Aspose.PDF
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

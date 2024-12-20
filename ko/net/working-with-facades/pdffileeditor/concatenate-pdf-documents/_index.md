@@ -5,13 +5,6 @@ type: docs
 weight: 20
 url: /ko/net/concatenate-pdf-documents/
 description: 이 섹션은 PdfFileEditor 클래스를 사용하여 Aspose.PDF Facades로 PDF 문서를 연결하는 방법을 설명합니다.
-aliases:
-    - /pdf/net/concatenate-multiple-pdf-files-using-memorystreams/
-    - /pdf/net/concatenate-pdf-files-and-create-table-of-contents/
-    - /pdf/net/concatenate-pdf-forms-and-keep-fields-names-unique/
-    - /pdf/net/concatenating-all-pdf-files-in-particular-folder/
-    - /pdf/net/how-to-concatenate-pdf-files-in-different-ways/
-    - /pdf/net/append-pdf-files/
 lastmod: "2021-06-05"
 ---
 

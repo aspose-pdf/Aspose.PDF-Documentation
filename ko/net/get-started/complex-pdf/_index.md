@@ -5,8 +5,6 @@ type: docs
 weight: 60
 url: /ko/net/complex-pdf-example/
 description: Aspose.PDF for NET를 사용하면 이미지, 텍스트 조각, 테이블이 포함된 더 복잡한 문서를 생성할 수 있습니다.
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

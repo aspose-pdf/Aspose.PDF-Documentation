@@ -6,8 +6,6 @@ weight: 70
 url: /ja/python-java/converting/
 lastmod: "2023-04-06"
 description: このセクションには、Python APIを使用してPDFドキュメントをさまざまな形式に変換すること、およびその逆に関する記事が含まれています。
-aliases:
-    - /python-java/conversion/
 sitemap:
     changefreq: "monthly"
     priority: 0.8

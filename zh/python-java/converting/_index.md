@@ -6,8 +6,6 @@ weight: 70
 url: /zh/python-java/converting/
 lastmod: "2023-04-06"
 description: 本节包含有关使用 Python API 将 PDF 文档转换为不同格式及反向转换的文章。
-aliases:
-    - /python-java/conversion/
 sitemap:
     changefreq: "monthly"
     priority: 0.8

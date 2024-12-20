@@ -5,8 +5,6 @@ type: docs
 weight: 40
 url: /fr/net/hello-world-example/
 description: Cet échantillon démontre comment créer un document PDF simple avec le texte Hello World en utilisant Aspose.PDF
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

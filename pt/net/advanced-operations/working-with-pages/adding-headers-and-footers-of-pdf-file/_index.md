@@ -1,4 +1,4 @@
- ---
+---
 title: Adicionar Cabeçalho e Rodapé ao PDF
 linktitle: Adicionar Cabeçalho e Rodapé ao PDF
 type: docs
@@ -9,9 +9,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-aliases:
-    - /net/manage-header-and-footer-of-pdf-file/
-    - /net/manage-header-and-footer/
 ---
 <script type="application/ld+json">
 {
