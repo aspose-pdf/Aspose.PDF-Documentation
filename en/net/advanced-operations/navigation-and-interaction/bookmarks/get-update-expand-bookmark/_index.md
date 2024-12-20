@@ -85,110 +85,271 @@ The [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object'
 
 To get the bookmarks, loop through the [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) collection and get each bookmark in the OutlineItemCollection. The OutlineItemCollection provides access to all the bookmark's attributes. The following code snippet shows you how to get bookmarks from the PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "GetBookmarks.pdf");
-
-// Loop through all the bookmarks
-foreach (OutlineItemCollection outlineItem in document.Outlines)
+private static void GetBookmarks()
 {
-    Console.WriteLine(outlineItem.Title);
-    Console.WriteLine(outlineItem.Italic);
-    Console.WriteLine(outlineItem.Bold);
-    Console.WriteLine(outlineItem.Color);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+        }
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf");
+
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Getting a Bookmark's Page Number
 
 Once you have added a bookmark you can find out what page it is on by getting the destination PageNumber associated with the Bookmark object.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create PdfBookmarkEditor
-PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-// Open PDF file
-bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
-// Extract bookmarks
-Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
-
-foreach (Bookmark bookmark in bookmarks)
+private static void GetBookmarkPageNumber()
 {
-    string strLevelSeprator = string.Empty;
-    for (int i = 1; i < bookmark.Level; i++)
-    {
-        strLevelSeprator += "----";
-    }
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    Console.WriteLine("{0}Title: {1}", strLevelSeprator, bookmark.Title);
-    Console.WriteLine("{0}Page Number: {1}", strLevelSeprator, bookmark.PageNumber);
-    Console.WriteLine("{0}Page Action: {1}", strLevelSeprator, bookmark.Action);
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open PDF file
+        bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
+
+        // Extract bookmarks
+        Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+        foreach (var bookmark in bookmarks)
+        {
+            string strLevelSeparator = string.Empty;
+
+            for (int i = 1; i < bookmark.Level; i++)
+            {
+                strLevelSeparator += "----";
+            }
+
+            Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+            Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+            Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+        }
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Create PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open PDF file
+    bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
+
+    // Extract bookmarks
+    Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+    foreach (var bookmark in bookmarks)
+    {
+        string strLevelSeparator = string.Empty;
+
+        for (int i = 1; i < bookmark.Level; i++)
+        {
+            strLevelSeparator += "----";
+        }
+
+        Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+        Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+        Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Get Child Bookmarks from a PDF Document
 
 Bookmarks can be organized in a hierarchical structure, with parents and children. To get all bookmarks, loop through the Document object's Outlines collections. However, to get child bookmarks as well, also loop through all the bookmarks in each [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) object obtained in the first loop. The following code snippets show how to get child bookmarks from a PDF document.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "GetChildBookmarks.pdf");
-
-// Loop through all the bookmarks
-foreach (OutlineItemCollection outlineItem in document.Outlines)
+private static void GetChildBookmarks()
 {
-    Console.WriteLine(outlineItem.Title);
-    Console.WriteLine(outlineItem.Italic);
-    Console.WriteLine(outlineItem.Bold);
-    Console.WriteLine(outlineItem.Color);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    if (outlineItem.Count > 0)
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf"))
     {
-        Console.WriteLine("Child Bookmarks");
-        // There are child bookmarks then loop through that as well
-        foreach (OutlineItemCollection childOutline in outlineItem)
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
         {
-            Console.WriteLine(childOutline.Title);
-            Console.WriteLine(childOutline.Italic);
-            Console.WriteLine(childOutline.Bold);
-            Console.WriteLine(childOutline.Color);
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+
+            if (outlineItem.Count > 0)
+            {
+                Console.WriteLine("Child Bookmarks");
+
+                // There are child bookmarks then loop through that as well
+                foreach (var childOutline in outlineItem)
+                {
+                    Console.WriteLine(childOutline.Title);
+                    Console.WriteLine(childOutline.Italic);
+                    Console.WriteLine(childOutline.Bold);
+                    Console.WriteLine(childOutline.Color);
+                }
+            }
         }
     }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf");
+
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+
+        if (outlineItem.Count > 0)
+        {
+            Console.WriteLine("Child Bookmarks");
+
+            // There are child bookmarks then loop through that as well
+            foreach (var childOutline in outlineItem)
+            {
+                Console.WriteLine(childOutline.Title);
+                Console.WriteLine(childOutline.Italic);
+                Console.WriteLine(childOutline.Bold);
+                Console.WriteLine(childOutline.Color);
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Update Bookmarks in a PDF Document
 
 To update a bookmark in a PDF file, first, get the particular bookmark from the Document object's OutlineColletion collection by specifying the bookmark's index. Once you have retrieved the bookmark into [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) object, you can update its properties and then save the updated PDF file using the Save method. The following code snippets show how to update bookmarks in a PDF document.
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "UpdateBookmarks.pdf");
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Get a bookmark object
-OutlineItemCollection pdfOutline = document.Outlines[1];
-pdfOutline.Title = "Updated Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+        pdfOutline.Title = "Updated Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// Save output
-document.Save(dataDir + "UpdateBookmarks_out.pdf");
+        // Save output
+        document.Save(dataDir + "UpdateBookmarks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+    pdfOutline.Title = "Updated Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Save output
+    document.Save(dataDir + "UpdateBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Update Child Bookmarks in a PDF Document
 
@@ -205,26 +366,62 @@ Get a bookmark from the Document object's OutlineCollection collection by specif
 
 The following code snippet shows you how to update child bookmarks in a PDF document.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "UpdateChildBookmarks.pdf");
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Get a bookmark object
-OutlineItemCollection pdfOutline = document.Outlines[1];
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
 
-// Get child bookmark object
-OutlineItemCollection childOutline = pdfOutline[1];
-childOutline.Title = "Updated Outline";
-childOutline.Italic = true;
-childOutline.Bold = true;
+        // Get child bookmark object
+        Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+        childOutline.Title = "Updated Outline";
+        childOutline.Italic = true;
+        childOutline.Bold = true;
 
-// Save output document
-document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+        // Save output document
+        document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+
+    // Get child bookmark object
+    Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+    childOutline.Title = "Updated Outline";
+    childOutline.Italic = true;
+    childOutline.Bold = true;
+
+    // Save output document
+    document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Expanded Bookmarks when viewing document
 
@@ -232,26 +429,64 @@ Bookmarks are held in the Document object's [OutlineItemCollection](https://refe
 
 In order to accomplish this requirement, we can set open status for each outline/bookmark item as Open. The following code snippet shows you how to set the open status for each bookmark as expanded in a PDF document.
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "input.pdf");
-
-// Set page view mode i.e. show thumbnails, full-screen, show attachment panel
-document.PageMode = PageMode.UseOutlines;
-// Traverse through each Ouline item in outlines collection of PDF file
-foreach (OutlineItemCollection item in document.Outlines)
+private static void ExpandBookmarks()
 {
-    // Set open status for outline item
-    item.Open = true;
-}
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Save output
-document.Save(dataDir + + "ExpandBookmarks_out.pdf");
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+        // Traverse through each Outline item in outlines collection of PDF file
+        foreach (var item in document.Outlines)
+        {
+            // Set open status for outline item
+            item.Open = true;
+        }
+
+        // Save output
+        document.Save(dataDir + "ExpandBookmarks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+    document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+    // Traverse through each Outline item in outlines collection of PDF file
+    foreach (var item in document.Outlines)
+    {
+        // Set open status for outline item
+        item.Open = true;
+    }
+
+    // Save output
+    document.Save(dataDir + "ExpandBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

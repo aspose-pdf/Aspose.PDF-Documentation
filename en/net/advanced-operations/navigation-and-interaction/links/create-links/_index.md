@@ -94,24 +94,58 @@ By adding a link to an application into a document, it is possible to link to ap
 
 The following code snippet shows how to create a link to an application in a PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "CreateApplicationLink.pdf");
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-// Create link
-Page page = document.Pages[1];
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-link.Action = new LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
-page.Annotations.Add(link);
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
+        page.Annotations.Add(link);
 
-// Save updated document
-document.Save(dataDir + "CreateApplicationLink_out.pdf");
+        // Save updated document
+        document.Save(dataDir + "CreateApplicationLink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
+
+    // Create link
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
+    page.Annotations.Add(link);
+
+    // Save updated document
+    document.Save(dataDir + "CreateApplicationLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Create PDF Document Link in a PDF File
 
@@ -128,22 +162,58 @@ Aspose.PDF for .NET allows you to add a link to an external PDF file so that you
 
 The following code snippet shows how to create PDF document link in a PDF file.
 
- ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Open document
-Document document = new Document(dataDir +  "CreateDocumentLink.pdf");
-// Create link
-Page page = document.Pages[1];
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
-page.Annotations.Add(link);
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Save updated document
-document.Save(dataDir + "CreateDocumentLink_out.pdf");
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
+        page.Annotations.Add(link);
+
+        // Save updated document
+        document.Save(dataDir + "CreateDocumentLink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
+
+    // Create link
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
+    page.Annotations.Add(link);
+
+    // Save updated document
+    document.Save(dataDir + "CreateDocumentLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
