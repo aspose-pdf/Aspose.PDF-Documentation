@@ -82,18 +82,30 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-using (Document document = new Document())
+private static void AddDicomImageToPDF()
 {
-    document.Pages.Add();
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-    image.FileType = ImageFileType.Dicom;
-    image.ImageStream = new FileStream(dataDir + "0002.dcm", FileMode.Open, FileAccess.Read);
-    document.Pages[1].Paragraphs.Add(image);
-    // Save output as PDF format
-    document.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to the document
+        document.Pages.Add();
+
+        // Create an image instance and set its properties
+        var image = new Aspose.Pdf.Image
+        {
+            FileType = Aspose.Pdf.ImageFileType.Dicom,
+            ImageStream = new FileStream(dataDir + "DicomImage.dcm", FileMode.Open, FileAccess.Read)
+        };
+
+        // Add image to the first page
+        document.Pages[1].Paragraphs.Add(image);
+
+        // Save output as PDF format
+        document.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    }
 }
 ```
 

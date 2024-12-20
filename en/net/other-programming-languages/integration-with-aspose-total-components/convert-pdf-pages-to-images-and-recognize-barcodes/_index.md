@@ -76,7 +76,7 @@ PDF documents usually comprise text, images, tables, attachments, graphs, annota
 
 {{% /alert %}}
 
-### Converting Pages to Images and Recognizing Barcodes
+## Converting Pages to Images and Recognizing Barcodes
 
 {{% alert color="primary" %}}
 
@@ -88,7 +88,7 @@ When the pages have been converted to an image format, we can use Aspose.BarCode
 
 {{% /alert %}}
 
-#### Using Aspose.Pdf.Facades
+### Using Aspose.Pdf.Facades
 
 {{% alert color="primary" %}}
 
@@ -98,61 +98,64 @@ Aspose.Barcode contains a namespace, BarCodeRecognition, which contains the BarC
 
 For the purposes of this example, first convert a page in a PDF file into an image with Aspose.Pdf.Facades.PdfConverter. Then use the Aspose.BarCodeRecognition.BarCodeReader class to recognize the barcode in the image.
 
-
 {{% /alert %}}
 
-##### Programming Samples
-
 ```csharp
-// Create a PdfConverter object
-var converter = new Aspose.Pdf.Facades.PdfConverter();
-
-// Bind the input PDF file
-converter.BindPdf("Source.pdf");
-
-// Specify the start page to be processed
-converter.StartPage = 1;
-
-// Specify the end page for processing
-converter.EndPage = 1;
-
-// Create a Resolution object to specify the resolution of resultant image
-converter.Resolution = new Aspose.Pdf.Devices.Resolution(300);
-
-// Initialize the convertion process
-converter.DoConvert();
-
-// Create a MemoryStream object to hold the resultant image
-using (var imageStream = new MemoryStream())
+private static void IdentifyBarcodesConverter()
 {
-    // Check if pages exist and then convert to image one by one
-    while (converter.HasNextImage())
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create a PdfConverter object
+    var converter = new Aspose.Pdf.Facades.PdfConverter();
+
+    // Bind the input PDF file
+    converter.BindPdf(dataDir + "IdentifyBarcodes.pdf");
+
+    // Specify the start page to be processed
+    converter.StartPage = 1;
+
+    // Specify the end page for processing
+    converter.EndPage = 1;
+
+    // Create a Resolution object to specify the resolution of resultant image
+    converter.Resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+    // Initialize the convertion process
+    converter.DoConvert();
+
+    // Create a MemoryStream object to hold the resultant image
+    using (var imageStream = new MemoryStream())
     {
-        // Save the image in the given image Format
-        converter.GetNextImage(imageStream, System.Drawing.Imaging.ImageFormat.Png);
-
-        // Set the stream position to the beginning of the stream
-        imageStream.Position = 0;
-
-        // Instantiate a BarCodeReader object
-        var barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
-
-        // String txtResult.Text = "";
-        while (barcodeReader.Read())
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
         {
-            // Get the barcode text from the barcode image
-            var code = barcodeReader.GetCodeText();
+            // Save the image in the given image Format
+            converter.GetNextImage(imageStream, System.Drawing.Imaging.ImageFormat.Png);
 
-            // Write the barcode text to Console output
-            Console.WriteLine("BARCODE : " + code);
+            // Set the stream position to the beginning of the stream
+            imageStream.Position = 0;
+
+            // Instantiate a BarCodeReader object
+            var barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
+
+            // String txtResult.Text = "";
+            while (barcodeReader.Read())
+            {
+                // Get the barcode text from the barcode image
+                var code = barcodeReader.GetCodeText();
+
+                // Write the barcode text to Console output
+                Console.WriteLine("BARCODE : " + code);
+            }
+
+            // Close the BarCodeReader object to release the image file
+            barcodeReader.Close();
         }
 
-        // Close the BarCodeReader object to release the image file
-        barcodeReader.Close();
+        // Close the PdfConverter instance and release the resources
+        converter.Close();
     }
-
-    // Close the PdfConverter instance and release the resources
-    converter.Close();
 }
 ```
 
@@ -162,8 +165,8 @@ In above code snippets the output image is saved to a MemoryStream object. The i
 
 {{% /alert %}}
 
-{anchor:devices]
 #### Using the PngDevice Class
+
 In the Aspose.Pdf.Devices, is the PngDevice. This class lets you convert pages in PDF documents to PNG images.
 
 For the purpose of this example, load the source PDF file into the Document] cument's pages into PNG images. When the images have been created, use the BarCodeReader class under the Aspose.BarCodeRecognition to identify and read barcodes in the images.
@@ -173,7 +176,6 @@ For the purpose of this example, load the source PDF file into the Document] cum
 The code samples given here traverses through the pages of the PDF document and tries to identify barcodes on each page.
 
 {{% /alert %}}
-##### Programming Samples
 
 ```csharp
 private static void IdentifyBarcodes()

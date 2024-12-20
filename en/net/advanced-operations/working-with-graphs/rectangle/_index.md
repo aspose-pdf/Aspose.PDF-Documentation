@@ -101,29 +101,38 @@ Follow the steps below:
 1. And save your PDF file
 
 ```csharp
-private static void AddRectangle(Page page, float x, float y, float width, float height, Color color, int zindex)
+private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float width, float height, Aspose.Pdf.Color color, int zIndex)
 {
-    // Create graph object with dimensions same as specified for Rectangle object
-    Aspose.Pdf.Drawing.Graph graph = new Aspose.Pdf.Drawing.Graph(width, height)
+    // Create a Graph object with dimensions matching the specified rectangle
+    var graph = new Aspose.Pdf.Drawing.Graph(width, height)
     {
-        // Can we change the position of graph instance
+        // Prevent the graph from repositioning automatically
         IsChangePosition = false,
-        // Set Left coordinate position for Graph instance
+        // Set the Left coordinate position for the Graph instance
         Left = x,
-        // Set Top coordinate position for Graph object
+        // Set the Top coordinate position for the Graph instance
         Top = y
     };
-    // Add a rectangle inside the "graph"
-    Rectangle rect = new Rectangle(0, 0, width, height);
-    // Set rectangle fill color
-    rect.GraphInfo.FillColor = color;
-    // Color of graph object
-    rect.GraphInfo.Color = color;
-    // Add rectangle to shapes collection of graph instance
+
+    // Create a Rectangle object inside the Graph
+    var rect = new Aspose.Pdf.Drawing.Rectangle(0, 0, width, height)
+    {
+        // Set the fill color of the rectangle
+        GraphInfo =
+        {
+            FillColor = color,
+            // Set the border color of the rectangle
+            Color = color
+        }
+    };
+
+    // Add the rectangle to the Shapes collection of the Graph
     graph.Shapes.Add(rect);
-    // Set Z-Index for rectangle object
-    graph.ZIndex = zindex;
-    // Add graph to paragraphs collection of page object
+
+    // Set the Z-Index for the Graph object to control layering
+    graph.ZIndex = zIndex;
+
+    // Add the Graph object to the Paragraphs collection of the page
     page.Paragraphs.Add(graph);
 }
 ```
@@ -137,31 +146,39 @@ Aspose.PDF for .NET also offers the feature to fill rectangle object with a cert
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
-private const string dataDir = "C:\\Samples\\";
-public static void RectangleFilled()
+private static void RectangleFilled()
 {
-    // Create Document instance
-    var document = new Document();
+    // Path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
-    // Create Graph instance
-    var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Add graph object to paragraphs collection of page instance
-    page.Paragraphs.Add(graph);
+        // Create Graph instance
+        var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
 
-    // Create Rectangle instance
-    var rect = new Rectangle(100, 100, 200, 120);
+        // Add graph object to paragraphs collection of page instance
+        page.Paragraphs.Add(graph);
 
-    // Specify fill color for Graph object
-    rect.GraphInfo.FillColor = Color.Red;
+        // Create Rectangle instance with specified dimensions
+        var rect = new Aspose.Pdf.Drawing.Rectangle(100, 100, 200, 120)
+        {
+            // Specify fill color for the Rectangle object
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.Red 
+            }
+        };
 
-    // Add rectangle object to shapes collection of Graph object
-    graph.Shapes.Add(rect);
+        // Add rectangle object to shapes collection of Graph object
+        graph.Shapes.Add(rect);
 
-    // Save PDF file
-    document.Save(dataDir + "CreateFilledRectangle_out.pdf");
+        // Save PDF file
+        document.Save(dataDir + "CreateFilledRectangle_out.pdf");
+    }
 }
 ```
 
@@ -176,34 +193,44 @@ Aspose.PDF for .NET supports the feature to add graph objects to PDF documents a
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with Gradient Color.
 
 ```csharp
-public static void CreateFilledRectangletGradientFill()
+private static void CreateFilledRectangleGradientFill()
 {
-    // Create Document instance
-    var document = new Document();
+    // Path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
-    // Create Graph instance
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-    // Add graph object to paragraphs collection of page instance
-    page.Paragraphs.Add(graph);
-    // Create Rectangle instance
-    var rect = new Rectangle(0, 0, 300, 300);
-    // Specify fill color for Graph object
-    var gradientColor = new Color();
-    var gradientSettings = new GradientAxialShading(Color.Red, Color.Blue)
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
     {
-        Start = new Point(0, 0),
-        End = new Point(350, 350)
-    };
-    gradientColor.PatternColorSpace = gradientSettings;
-    rect.GraphInfo.FillColor = gradientColor;
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Add rectangle object to shapes collection of Graph object
-    graph.Shapes.Add(rect);
+        // Create Graph instance
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-    // Save PDF file
-    document.Save(dataDir + "CreateFilledRectangle_out.pdf");
+        // Add graph object to paragraphs collection of page instance
+        page.Paragraphs.Add(graph);
+
+        // Create Rectangle instance
+        var rect = new Aspose.Pdf.Drawing.Rectangle(0, 0, 300, 300);
+
+        // Create a gradient fill color
+        var gradientColor = new Aspose.Pdf.Color();
+        var gradientSettings = new Aspose.Pdf.Drawing.GradientAxialShading(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.Blue)
+        {
+            Start = new Aspose.Pdf.Point(0, 0),
+            End = new Aspose.Pdf.Point(350, 350)
+        };
+        gradientColor.PatternColorSpace = gradientSettings;
+
+        // Apply gradient fill color to the rectangle
+        rect.GraphInfo.FillColor = gradientColor;
+
+        // Add rectangle object to shapes collection of Graph object
+        graph.Shapes.Add(rect);
+
+        // Save PDF file
+        document.Save(dataDir + "CreateFilledRectangleGradient_out.pdf");
+    }
 }
 ```
 
@@ -218,35 +245,50 @@ Pixels of the image can store information about their opacity along with color v
 Instead of making a color transparent, each pixel stores information on how opaque it is. This opacity data is called alpha channel and is typically stored after the color channels of the pixel.
 
 ```csharp
-public static void RectangleFilled_AlphaChannel()
+private static void RectangleFilled_AlphaChannel()
 {
-    // Create Document instance
-    var document = new Document();
+    // Path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
-    // Create Graph instance
-    var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
-    // Add graph object to paragraphs collection of page instance
-    page.Paragraphs.Add(graph);
-    // Create Rectangle instance
-    var rect = new Rectangle(100, 100, 200, 120);
-    // Specify fill color for Graph object
-    rect.GraphInfo.FillColor = Color.FromArgb(128, 244, 180, 0);
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Add rectangle object to shapes collection of Graph object
-    graph.Shapes.Add(rect);
+        // Create Graph instance
+        var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
 
-    // Create second rectangle object
-    var rect1 = new Rectangle(200, 150, 200, 100);
-    rect1.GraphInfo.FillColor = Color.FromArgb(160, 120, 0, 120);
-    graph.Shapes.Add(rect1);
+        // Add graph object to paragraphs collection of page instance
+        page.Paragraphs.Add(graph);
 
-    // Add graph instance to paragraph collection of page object
-    page.Paragraphs.Add(graph);
+        // Create first rectangle with alpha channel fill color
+        var rect = new Aspose.Pdf.Drawing.Rectangle(100, 100, 200, 120)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.FromArgb(128, 244, 180, 0) 
+            }
+        };
 
-    // Save PDF file
-    document.Save(dataDir + "CreateFilledRectangle_out.pdf");
+        // Add the first rectangle to the shapes collection of the Graph object
+        graph.Shapes.Add(rect);
+
+        // Create second rectangle with different alpha channel fill color
+        var rect1 = new Aspose.Pdf.Drawing.Rectangle(200, 150, 200, 100)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.FromArgb(160, 120, 0, 120) 
+            }
+        };
+
+        // Add the second rectangle to the shapes collection of the Graph object
+        graph.Shapes.Add(rect1);
+
+        // Save PDF file
+        document.Save(dataDir + "CreateFilledRectangle_out.pdf");
+    }
 }
 ```
 
@@ -259,26 +301,32 @@ Aspose.PDF for .NET supports the feature to add graph objects (for example graph
 The following code snippet shows the steps to render [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) objects on top of each other.
 
 ```csharp
-public static void AddRectangleZOrder()
+private static void AddRectangleZOrder()
 {
-    // Instantiate Document class object
-    Document document1 = new Document();
-    /// Add page to pages collection of PDF file
-    Page page1 = document1.Pages.Add();
-    // Set size of PDF page
-    page1.SetPageSize(375, 300);
-    // Set left margin for page object as 0
-    page1.PageInfo.Margin.Left = 0;
-    // Set top margin of page object as 0
-    page1.PageInfo.Margin.Top = 0;
-    // Create a new rectangle with Color as Red, Z-Order as 0 and certain dimensions
-    AddRectangle(page1, 50, 40, 60, 40, Color.Red, 2);
-    // Create a new rectangle with Color as Blue, Z-Order as 0 and certain dimensions
-    AddRectangle(page1, 20, 20, 30, 30, Color.Blue, 1);
-    // Create a new rectangle with Color as Green, Z-Order as 0 and certain dimensions
-    AddRectangle(page1, 40, 40, 60, 30, Color.Green, 0);
-    // Save resultant PDF file
-    document1.Save(dataDir + "ControlRectangleZOrder_out.pdf");
+    // Path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Instantiate Document class object using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
+
+        // Set size of PDF page
+        page.SetPageSize(375, 300);
+
+        // Set left and top margins for the page object as 0
+        page.PageInfo.Margin.Left = 0;
+        page.PageInfo.Margin.Top = 0;
+
+        // Create rectangles with different colors and Z-Order values
+        AddRectangle(page, 50, 40, 60, 40, Aspose.Pdf.Color.Red, 2);
+        AddRectangle(page, 20, 20, 30, 30, Aspose.Pdf.Color.Blue, 1);
+        AddRectangle(page, 40, 40, 60, 30, Aspose.Pdf.Color.Green, 0);
+
+        // Save the resultant PDF file
+        document.Save(dataDir + "ControlRectangleZOrder_out.pdf");
+    }
 }
 ```
 
