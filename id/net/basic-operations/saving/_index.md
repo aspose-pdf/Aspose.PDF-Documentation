@@ -5,8 +5,6 @@ type: docs
 weight: 30
 url: /id/net/save-pdf-document/
 description: Pelajari cara menyimpan file PDF dalam C# Aspose.PDF untuk perpustakaan PDF .NET. Simpan dokumen PDF ke sistem file, ke stream, dan dalam aplikasi Web.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

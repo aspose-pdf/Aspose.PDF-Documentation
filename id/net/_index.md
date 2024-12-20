@@ -7,10 +7,7 @@ weight: 10
 url: /id/net/
 is_root: true
 lastmod: "2021-06-05"
-description: Pelajari cara menggunakan Aspose.PDF .NET untuk membuat aplikasi pemrosesan dokumen PDF di platform apa pun menggunakan C#, VB. Jelajahi tutorial, contoh kode, dan lainnya.
-aliases:
-    - /net/working-with-aspose-pdf/
-    - /net/developer-guide/           
+description: Pelajari cara menggunakan Aspose.PDF .NET untuk membuat aplikasi pemrosesan dokumen PDF di platform apa pun menggunakan C#, VB. Jelajahi tutorial, contoh kode, dan lainnya.        
 sitemap:
     changefreq: "weekly"
     priority: 0.7

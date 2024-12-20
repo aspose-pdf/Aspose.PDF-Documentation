@@ -5,8 +5,6 @@ type: docs
 weight: 40
 url: /ko/net/hello-world-example/
 description: 이 샘플은 Aspose.PDF를 사용하여 간단한 PDF 문서와 Hello World 텍스트를 생성하는 방법을 보여줍니다.
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

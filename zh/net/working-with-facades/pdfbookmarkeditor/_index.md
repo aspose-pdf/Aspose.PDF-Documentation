@@ -9,8 +9,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 
 - [创建书签](/pdf/zh/net/create-bookmarks/)

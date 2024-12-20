@@ -1,4 +1,4 @@
- ---
+---
 title: طباعة مستند PDF في تطبيق WPF
 linktitle: طباعة مستند PDF في تطبيق WPF
 type: docs
