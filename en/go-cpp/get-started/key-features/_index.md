@@ -28,7 +28,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 <table class="table table-bordered">
   <tbody>
     <tr>
-      <th scope="col" rowspan="8">
+      <th scope="col" rowspan="7">
         Core operation
       </th>
       <td>
@@ -61,7 +61,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="8">
+      <th scope="col" rowspan="4">
         Page core operation
       </th>
      <td>
@@ -84,7 +84,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="7">
+      <th scope="col" rowspan="6">
         Organize
       </th>
       <td>
@@ -117,7 +117,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="6">
+      <th scope="col" rowspan="4">
         Page organize
       </th>
       <td>
@@ -140,7 +140,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="5">
+      <th scope="col" rowspan="1">
         Others
       </th>
       <td>
@@ -148,7 +148,7 @@ Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
       </td>
     </tr>
     <tr>
-      <th scope="col" rowspan="6">
+      <th scope="col" rowspan="1">
         Converting and Saving
       </th>
       <td>

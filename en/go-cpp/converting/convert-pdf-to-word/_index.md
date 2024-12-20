@@ -3,7 +3,7 @@ title: Convert PDF to Word documents in Go
 linktitle: Convert PDF to Word
 type: docs
 weight: 10
-url: /Go-cpp/convert-pdf-to-doc/
+url: /go-cpp/convert-pdf-to-doc/
 lastmod: "2023-08-04"
 description: Learn how to write Go code for conversion PDF to DOC(DOCX).
 sitemap:
