@@ -140,9 +140,26 @@ private static void CreateBookmarkOfAParticularPage()
 
 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class allows you to create bookmarks of a range of pages. You can use [CreateBookmarkOfPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method with two parameters: bookmark list (the list of the bookmark titles) and page list (the list of the pages to bookmark). First, you need to create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call [CreateBookmarkOfPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarkofpage/methods/1) method and save the output PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create bookmarks of a range of pages.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-CreateBookmarkPageRange-CreateBookmarkPageRange.cs" >}}
+```csharp
+private static void CreateBookmarksOfARangeOfPages()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        // Bookmark name list
+        string[] bookmarkList = { "First" };
+        // Page list
+        int[] pageList = { 1 };
+        // Create bookmark of a range of pages
+        bookmarkEditor.CreateBookmarkOfPage(bookmarkList, pageList);
+        // Save updated document
+        bookmarkEditor.Save(dataDir + "CreateBookmarkPageRange_out.pdf");
+    }
+}
+```
 
 ## Add Bookmark in an Existing PDF File
 
