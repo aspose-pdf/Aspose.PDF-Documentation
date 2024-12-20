@@ -92,10 +92,10 @@ private static void GetNumberOfPagesInAPdfFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     // Open document
-    using (var pdfDocument = new Aspose.Pdf.Document(dataDir + "GetNumberofPages.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetNumberofPages.pdf"))
     {
         // Get page count
-        System.Console.WriteLine("Page Count : {0}", pdfDocument.Pages.Count);
+        System.Console.WriteLine("Page Count : {0}", document.Pages.Count);
     }
 }
 ```
@@ -105,13 +105,13 @@ private static void GetNumberOfPagesInAPdfFile()
 Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
 
 ```csharp
- private static void GetPageCountWithoutSavingTheDocument()
+private static void GetPageCountWithoutSavingTheDocument()
 {
     // Open document
-    using (var doc = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
-        Page page = doc.Pages.Add();
+        Page page = document.Pages.Add();
         // Create loop instance
         for (var i = 0; i < 300; i++)
         {
@@ -119,9 +119,9 @@ Sometimes we generate the PDF files on the fly and during PDF file creation, we 
             page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Pages count test"));
         }
         // Process the paragraphs in PDF file to get accurate page count
-        doc.ProcessParagraphs();
+        document.ProcessParagraphs();
         // Print number of pages in document
-        Console.WriteLine("Number of pages in document = " + doc.Pages.Count);
+        Console.WriteLine("Number of pages in document = " + document.Pages.Count);
     }
 }
 ```
@@ -154,10 +154,10 @@ private static void AccessingPageProperties()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     // Open document
-    using (var pdfDocument = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
     {
         // Get page collection
-        PageCollection pageCollection = pdfDocument.Pages;
+        PageCollection pageCollection = document.Pages;
         // Get particular page
         Page pdfPage = pageCollection[1];
         // Get page properties
