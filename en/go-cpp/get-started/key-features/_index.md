@@ -19,7 +19,7 @@ Supports various platforms and Go versions. See [System Requirements](/pdf/go-cp
 
 Supports loading from and saving to a wide list of [file formats](/pdf/go-cpp/supported-file-formats/).
 
-## Supported PDF standarts
+## Supported PDF standards
 
 Aspose.PDF for Go supports PDF versions 1.2, 1.3, 1.4, 1.5, 1.6 and 1.7.
 

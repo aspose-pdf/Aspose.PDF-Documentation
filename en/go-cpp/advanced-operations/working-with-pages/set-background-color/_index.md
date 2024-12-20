@@ -13,7 +13,7 @@ sitemap:
 
 1. The provided code snippet demonstrates how to set a background color for a PDF file using the Aspose.PDF library in Go.
 1. The [Open](https://reference.aspose.com/pdf/go-cpp/core/open/) method loads the specified PDF file into memory, allowing further manipulations, such as modifying its appearance or content.
-1. The [SetBackground](https://reference.asposekw.com/pdf/go-cpp/organize/setbackground/) method applies a new background color to the PDF document. The RGB values allow users to customize the document's visual style.
+1. The [SetBackground](https://reference.aspose.com/pdf/go-cpp/organize/setbackground/) method applies a new background color to the PDF document. The RGB values allow users to customize the document's visual style.
 1. The [SaveAs](https://reference.aspose.com/pdf/go-cpp/core/saveas/) method saves the updated PDF under a new name.
 
 This code is ideal for applications that need to automate PDF customizations, such as creating branded reports, adding watermarks, or enhancing visual consistency across multiple documents.
