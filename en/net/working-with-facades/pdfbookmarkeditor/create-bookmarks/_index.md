@@ -77,17 +77,43 @@ draft: false
 
 In order to create bookmarks of all the pages, you need to use [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method without any parameters . [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class allows you to create bookmarks of all the pages of a PDF file. First, you need to create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method and save the output PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create Bookmarks.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-CreateBookmarksAll-CreateBookmarksAll.cs" >}}
+```csharp
+private static void CreateBookmarksOfAllPages()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        // Create bookmark of all pages
+        bookmarkEditor.CreateBookmarks();
+        // Save updated document
+        bookmarkEditor.Save(dataDir + "CreateBookmarksOfAllPages_out.pdf");
+    }
+} 
+```
 
 ## Create Bookmarks of All Pages with Properties
 
 [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class allows you to create bookmarks of all the pages of a PDF file and specify the properties (Color, Bold, Italic). You can do that with the help of [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method. First, you need to create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. Then, you have to call [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method and save the output PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to create bookmarks of all the pages with properties.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-CreateBookmarksPagesProperties-CreateBookmarksPagesProperties.cs" >}}
+```csharp
+    private static void CreateBookmarksOfAllPagesWithProperties()
+    {
+        // The path to the documents directory
+        string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+        // Create PdfBookmarkEditor
+        using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+        {
+            bookmarkEditor.BindPdf(dataDir + "input.pdf");
+            // Create bookmark of all pages
+            bookmarkEditor.CreateBookmarks(System.Drawing.Color.Green, true, true);
+            // Save updated document
+            bookmarkEditor.Save(dataDir + "CreateBookmarks-PagesProperties_out.pdf");
+        }
+    }
+```
 
 ## Create Bookmark of a Particular Page
 
