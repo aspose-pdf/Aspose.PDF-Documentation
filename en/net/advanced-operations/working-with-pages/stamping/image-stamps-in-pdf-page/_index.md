@@ -91,27 +91,28 @@ To add an image stamp:
 The following code snippet shows how to add image stamp in the PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Open document
-Document document = new Document(dataDir +  "AddImageStamp.pdf");
-
-// Create image stamp
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-imageStamp.Background = true;
-imageStamp.XIndent = 100;
-imageStamp.YIndent = 100;
-imageStamp.Height = 300;
-imageStamp.Width = 300;
-imageStamp.Rotate = Rotation.on270;
-imageStamp.Opacity = 0.5;
-// Add stamp to particular page
-document.Pages[1].AddStamp(imageStamp);
-
-// Save output document
-document.Save(dataDir + "AddImageStamp_out.pdf");
+private static void AddImageStampInPdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Background = true;
+        imageStamp.XIndent = 100;
+        imageStamp.YIndent = 100;
+        imageStamp.Height = 300;
+        imageStamp.Width = 300;
+        imageStamp.Rotate = Rotation.on270;
+        imageStamp.Opacity = 0.5;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(imageStamp);
+        // Save document
+        document.Save(dataDir + "AddImageStamp_out.pdf");
+    }
+}
 ```
 
 ## Control Image Quality when Adding Stamp
@@ -119,19 +120,20 @@ document.Save(dataDir + "AddImageStamp_out.pdf");
 When adding an image as a stamp object, you can control the quality of the image. The Quality property of the ImageStamp class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Open document
-Document document = new Document(dataDir +  "AddImageStamp.pdf");
-
-// Create image stamp
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-
-imageStamp.Quality = 10;
-document.Pages[1].AddStamp(imageStamp);
-document.Save(dataDir + "ControlImageQuality_out.pdf");
+private static void ControlImageQualityWhenAddingStamp()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Quality = 10;
+        document.Pages[1].AddStamp(imageStamp);
+        document.Save(dataDir + "ControlImageQuality_out.pdf");
+    }
+}
 ```
 
 ## Image Stamp as Background in Floating Box
