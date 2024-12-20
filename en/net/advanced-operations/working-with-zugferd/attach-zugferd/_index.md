@@ -91,24 +91,27 @@ We recommend following steps to attach ZUGFeRD to PDF:
 * Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 
 ```cs
-var dataDir = @"C:\Samples\ZUGFeRD\";
-
-// Load PDF document
-using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-test.pdf"))
+private static void AttachZUGFeRD()
 {
-    // Setup new file to be added as attachment
-    var description = "Invoice metadata conforming to ZUGFeRD standard";
-    var fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "factur-x.xml", description)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-test.pdf"))
     {
-        Description = "Zugferd",
-        MIMEType = "text/xml",
-        Name = "factur-x.xml"
-    };
-    // Add attachment to document's attachment collection
-    document.EmbeddedFiles.Add(fileSpecification);
-    document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.ZUGFeRD, Aspose.Pdf.ConvertErrorAction.Delete);
-    // Save result PDF
-    document.Save(dataDir + "ZUGFeRD-res.pdf");
+        // Setup new file to be added as attachment
+        var description = "Invoice metadata conforming to ZUGFeRD standard";
+        var fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "factur-x.xml", description)
+        {
+            Description = "Zugferd",
+            MIMEType = "text/xml",
+            Name = "factur-x.xml"
+        };
+        // Add attachment to document's attachment collection
+        document.EmbeddedFiles.Add(fileSpecification);
+        document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.ZUGFeRD, Aspose.Pdf.ConvertErrorAction.Delete);
+        // Save document
+        document.Save(dataDir + "ZUGFeRD-res.pdf");
+    }
 }
 ```
 
