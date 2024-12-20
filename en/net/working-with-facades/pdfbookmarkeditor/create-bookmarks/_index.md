@@ -165,9 +165,27 @@ private static void CreateBookmarksOfARangeOfPages()
 
 You can add bookmark in an existing PDF file using [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. In order to create the bookmark, you need to create [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object and set the required attributes of the bookmark. After that, you need to pass the [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) object to the [CreateBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/createbookmarks/methods/2) method of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class. Finally, you need to save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to add the bookmark in an existing PDF file.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-AddBookmark-AddBookmark.cs" >}}
+```csharp
+private static void AddBookmarkInAnExistingPdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    // Create bookmark
+    var bookmark = new Aspose.Pdf.Facades.Bookmark();
+    bookmark.PageNumber = 1;
+    bookmark.Title = "New Bookmark";
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Bind PDF document
+        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        // Create bookmarks
+        bookmarkEditor.CreateBookmarks(bookmark);
+        // Save updated document
+        bookmarkEditor.Save(dataDir + "AddBookmark_out.pdf");
+    }
+}
+```
 
 ## Add Child Bookmark in an Existing PDF File
 
