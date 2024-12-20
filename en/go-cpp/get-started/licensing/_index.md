@@ -3,7 +3,7 @@ title: Aspose PDF License
 linktitle: Licensing and limitations
 type: docs
 weight: 90
-url: /go-cpplicensing/
+url: /go-cpp/licensing/
 description: Aspose. PDF for Go invites its customers to get a Classic License. As well as use a limited license to better explore the product.
 lastmod: "2024-12-05"
 sitemap:
