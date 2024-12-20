@@ -97,17 +97,47 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
 If you want to insert some specified pages into another PDF file, then you can use an overload of the [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) method which requires an integer array of pages. In this array, you can specify which particular pages you want to insert in the input PDF file. In order to do that, you need an input PDF file in which you want to insert the pages, a port file from which the pages need to be taken for insertion, a location where the pages are to be inserted, and integer array of the pages from port file which have to be inserted in the input PDF file. This array contains a list of particular pages which you’re interested to insert in the input PDF file. Finally, the output PDF file is saved with the specified array of pages inserted in the input file.
 The following code snippet shows you how to insert array of PDF pages using file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-InsertPages-InsertArrayOfPages-InsertArrayOfPages.cs" >}}
+```csharp
+private static void InsertArrayOfPdfPagesUsingFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    var pagesToInsert = new int[] { 2, 3 };
+    // Insert pages
+    pdfEditor.Insert(
+        dataDir + "input.pdf", 1, 
+        dataDir + "InsertPages.pdf", pagesToInsert, 
+        dataDir + "InsertArrayOfPages_out.pdf");
+}
+```
 
 ## Insert PDF Pages between Two Numbers Using Streams
 
 If you want to insert the range of pages using streams, you only need to use the appropriate overload of the [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class. In order to do that, you need an input PDF stream in which you want to insert the pages, a port stream from which the pages need to be taken for insertion, a location where the pages are to be inserted, and a range of pages of the port stream which have to be inserted in the input PDF stream. This range is specified with start page and end page parameters. Finally, the output PDF stream is saved with the specified range of pages inserted in the input stream. The following code snippet shows you how to insert PDF pages between two numbers using streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-InsertPages-InsertPagesBetweenNumbersUsingStreams-InsertPagesBetweenNumbersUsingStreams.cs" >}}
+```csharp
+private static void InsertPdfPagesBetweenTwoNumbersUsingStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var portStream = new FileStream(dataDir + "InsertPages.pdf", FileMode.Open))
+        {
+            using (var outputStream = new FileStream(dataDir + "InsertPagesBetweenNumbersUsingStreams_out.pdf", FileMode.Create))
+            {
+                // Insert pages
+                pdfEditor.Insert(inputStream, 1, portStream, 1, 4, outputStream);
+            }
+        }
+    }
+}
+```
 
 ## Insert Array of PDF Pages Using Streams
 
