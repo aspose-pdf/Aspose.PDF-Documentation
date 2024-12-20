@@ -202,10 +202,14 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open);
-    var outputStream = new FileStream(dataDir + "UsingPageSizeHorizontalVerticalValuesAndStreams_out.pdf", FileMode.Create);
-    // Make NUp
-    pdfEditor.MakeNUp(inputStream, outputStream, 2, 3);
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "UsingPageSizeHorizontalVerticalValuesAndStreams_out.pdf", FileMode.Create))
+        {
+            // Make NUp
+            pdfEditor.MakeNUp(inputStream, outputStream, 2, 3); 
+        }
+    }
 }
 ```
 
