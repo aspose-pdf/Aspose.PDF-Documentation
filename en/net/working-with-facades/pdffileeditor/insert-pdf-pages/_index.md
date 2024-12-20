@@ -143,6 +143,26 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingStreams()
 
 You can also insert an array of pages into another PDF file using streams with the helps of appropriate overload of the Insert method which requires an integer array of pages. In this array, you can specify which particular pages you want to insert in the input PDF stream. In order to do that, you need an input PDF stream in which you want to insert the pages, a port stream from which the pages need to be taken for insertion, a location where the pages are to be inserted, and integer array of the pages from port stream which have to be inserted in the input PDF file. This array contains a list of particular pages which you’re interested to insert in the input PDF stream. Finally, the output PDF stream is saved with the specified array of pages inserted in the input file.The following code snippet shows you how to insert array of PDF pages using streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-InsertPages-InsertPagesUsingStreams-InsertPagesUsingStreams.cs" >}}
+```csharp
+    private static void InsertArrayOfPdfPagesUsingStreams()
+    {
+        // The path to the documents directory
+        string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+        // Create PdfFileEditor object
+        var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+        // Pages to insert
+        var pagesToInsert = new int[] { 2, 3 };
+        // Create streams
+        using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+        {
+            using (var portStream = new FileStream(dataDir + "InsertPages.pdf", FileMode.Open))
+            {
+                using (var outputStream = new FileStream(dataDir + "InsertPagesUsingStreams_out.pdf", FileMode.Create))
+                {
+                    // Insert pages
+                    pdfEditor.Insert(inputStream, 1, portStream, pagesToInsert, outputStream);
+                }
+            }
+        }
+    }
+```
