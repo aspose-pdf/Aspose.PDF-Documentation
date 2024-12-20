@@ -82,18 +82,25 @@ When this option is selected, your annotations will be included in your exported
 Check how the [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) method used in the next code snippet.
 
 ```csharp
-public static void Flattening()
+private static void FlattenAnnotationFromPdf()
 {
-    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
-    FlattenSettings flattenSettings = new FlattenSettings
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Create PdfAnnotationEditor
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        ApplyRedactions = true,
-        CallEvents = false,
-        HideButtons = true,
-        UpdateAppearances = true
-    };
-    annotationEditor.FlatteningAnnotations(flattenSettings);
-    annotationEditor.Save(dataDir + "FlattenAnnotation.pdf");
+        annotationEditor.BindPdf(dataDir + "input.pdf");
+        // Create FlattenSettings
+        var flattenSettings = new Aspose.Pdf.Forms.Form.FlattenSettings
+        {
+            ApplyRedactions = true,
+            CallEvents = false,
+            HideButtons = true,
+            UpdateAppearances = true
+        };
+        annotationEditor.FlatteningAnnotations(flattenSettings);
+        //Save document
+        annotationEditor.Save(dataDir + "FlattenAnnotation_out.pdf");
+    }
 }
 ```

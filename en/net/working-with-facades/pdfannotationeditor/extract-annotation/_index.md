@@ -80,18 +80,22 @@ sitemap:
 You can then use [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfannotationeditor/extractannotations/methods/1) method to extract the annotations to an ArrayList. After that, you can loop through this list and get individual annotations. And finally, save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method of the [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) object. The following code snippet shows you how to extract annotations from PDF file.
 
 ```csharp
-public static void ExtractAnnotation()
+private static void ExtractAnnotation()
 {
-    var document = new Document(dataDir + "sample_cats_dogs.pdf");
-    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(document);
-
-    // Extract annotations
-    var annotationTypes = new[] { AnnotationType.FreeText, AnnotationType.Text };
-    var annotations = annotationEditor.ExtractAnnotations(1, 2, annotationTypes);
-    foreach (var annotation in annotations)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        Console.WriteLine(annotation.Contents);
+        var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
+        annotationEditor.BindPdf(document);
+        // Extract annotations
+        var annotationTypes = new[] { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Text };
+        IList<Annotation>? annotations = annotationEditor.ExtractAnnotations(1, 2, annotationTypes);
+        foreach (Annotation? annotation in annotations)
+        {
+            Console.WriteLine(annotation.Contents);
+        }
     }
 }
 ```

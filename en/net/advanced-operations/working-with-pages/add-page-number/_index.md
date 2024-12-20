@@ -87,33 +87,33 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 You can use [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) class to add a page number stamp in a PDF file. [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) class provides properties necessary to create a page number based stamp like format, margins, alignments, starting number etc. In order to add page number stamp, you need to create a [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object and a [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) object using required properties. After that, you can call [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) to add the stamp in the PDF. You can also set the font attributes of the page number stamp. The following code snippet shows you how to add page numbers in a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Open document
-Document document = new Document(dataDir + "PageNumberStamp.pdf");
-
-// Create page number stamp
-PageNumberStamp pageNumberStamp = new PageNumberStamp();
-// Whether the stamp is background
-pageNumberStamp.Background = false;
-pageNumberStamp.Format = "Page # of " + document.Pages.Count;
-pageNumberStamp.BottomMargin = 10;
-pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
-pageNumberStamp.StartingNumber = 1;
-// Set text properties
-pageNumberStamp.TextState.Font = FontRepository.FindFont("Arial");
-pageNumberStamp.TextState.FontSize = 14.0F;
-pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
-pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
-pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
-
-// Add stamp to particular page
-document.Pages[1].AddStamp(pageNumberStamp);
-
-// Save output document
-document.Save(dataDir + "PageNumberStamp_out.pdf");
+private static void AddPageNumberToPdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PageNumberStamp.pdf"))
+    {
+        // Create page number stamp
+        var pageNumberStamp = new Aspose.Pdf.PageNumberStamp();
+        // Whether the stamp is background
+        pageNumberStamp.Background = false;
+        pageNumberStamp.Format = "Page # of " + document.Pages.Count;
+        pageNumberStamp.BottomMargin = 10;
+        pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
+        pageNumberStamp.StartingNumber = 1;
+        // Set text properties
+        pageNumberStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        pageNumberStamp.TextState.FontSize = 14.0F;
+        pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
+        pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
+        pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(pageNumberStamp);
+        // Save document
+        document.Save(dataDir + "PageNumberStamp_out.pdf");  
+    }
+}
 ```
 
 ## Live Example
@@ -128,18 +128,24 @@ document.Save(dataDir + "PageNumberStamp_out.pdf");
 
 Aspose.PDF has limited support for Bates Numbering for now. This functionality will be updated according to customers' requests.
 
-### How to remove Bates nubmering
+### How to remove Bates numbering
 
 ```csharp
-static void Demo03()
+private static void RemoveBatesNumbering()
 {
-    Document document = new Document(@"C:\Samples\Sample-Document03.pdf");
-    foreach (var page in document.Pages)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
-        page.Artifacts.Delete(batesNum);
+        foreach (Page? page in document.Pages)
+        {
+            Artifact? batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
+            page.Artifacts.Delete(batesNum);
+        }
+        // Save document
+        document.Save(dataDir + "RemoveBatesNumbering_out.pdf");
     }
-    document.Save(@"C:\Samples\Sample-Document04.pdf");
 }
 ```
 

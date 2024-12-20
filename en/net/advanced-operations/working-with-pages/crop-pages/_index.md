@@ -93,23 +93,27 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The snippet below show how to crop the page:
 
 ```csharp
-public static void CropPagesPDF()
+private static void CropPage()
 {
-    var document = new Document("crop_page.pdf");
-    Console.WriteLine(document.Pages[1].CropBox);
-    Console.WriteLine(document.Pages[1].TrimBox);
-    Console.WriteLine(document.Pages[1].ArtBox);
-    Console.WriteLine(document.Pages[1].BleedBox);
-    Console.WriteLine(document.Pages[1].MediaBox);
-
-    // Create new Box Rectagle
-    var newBox = new Rectangle(200, 220, 2170, 1520);
-    document.Pages[1].CropBox = newBox;
-    document.Pages[1].TrimBox = newBox;
-    document.Pages[1].ArtBox = newBox;
-    document.Pages[1].BleedBox = newBox;
-   
-    document.Save("crop_page_modified.pdf");           
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    //Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        Console.WriteLine(document.Pages[1].CropBox);
+        Console.WriteLine(document.Pages[1].TrimBox);
+        Console.WriteLine(document.Pages[1].ArtBox);
+        Console.WriteLine(document.Pages[1].BleedBox);
+        Console.WriteLine(document.Pages[1].MediaBox);
+        // Create new Box rectangle
+        var newBox = new Rectangle(200, 220, 2170, 1520);
+        document.Pages[1].CropBox = newBox;
+        document.Pages[1].TrimBox = newBox;
+        document.Pages[1].ArtBox = newBox;
+        document.Pages[1].BleedBox = newBox;
+        //Save the updated document
+        document.Save(dataDir + "crop_out.pdf");  
+    }
 }
 ```
 

@@ -98,13 +98,50 @@ Please note that the height and width properties use points as basic unit, where
 
 The following code snippet shows how to change the PDF page dimensions to A4 size.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-UpdateDimensions-UpdateDimensions.cs" >}}
+```csharp
+private static void ChangePdfPageSize()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Get page collection
+        PageCollection pageCollection = document.Pages;
+        // Get particular page
+        Page pdfPage = pageCollection[1];
+        // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
+        // So A4 dimensions in points will be (842.4, 597.6)
+        pdfPage.SetPageSize(597.6, 842.4);
+        // Save the updated document
+        document.Save(dataDir + "UpdateDimensions_out.pdf"); 
+    }
+}
+```
 
 ## Get PDF Page Size
 
 You can read PDF page size of an existing PDF file using Aspose.PDF for .NET. The following code sample shows how to read PDF page dimensions using C#.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetDimensions-GetDimensions.cs" >}}
+```csharp
+private static void GetPdfPageSize()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Adds a blank page to pdf document
+        Page page = document.Pages.Count > 0 ? document.Pages[1] : document.Pages.Add();
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+        // Rotate page at 90 degree angle
+        page.Rotate = Rotation.on90;
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+    }
+}
+```
 
 <script type="application/ld+json">
 {
