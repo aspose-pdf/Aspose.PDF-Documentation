@@ -141,37 +141,40 @@ private static void ControlImageQualityWhenAddingStamp()
 Aspose.PDF API lets you add image stamp as background in a floating box. The BackgroundImage property of FloatingBox class can be used to set the background image stamp for a floating box as shown in following code sample.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Instantiate Document object
-Document document = new Document();
-// Add page to PDF document
-Page page = document.Pages.Add();
-// Create FloatingBox object
-FloatingBox aBox = new FloatingBox(200, 100);
-// Set left position for FloatingBox
-aBox.Left = 40;
-// Set Top position for FloatingBox
-aBox.Top = 80;
-// Set the Horizontal alignment for FloatingBox
-aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// Add text fragment to paragraphs collection of FloatingBox
-aBox.Paragraphs.Add(new TextFragment("main text"));
-// Set border for FloatingBox
-aBox.Border = new BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
-// Add background image
-aBox.BackgroundImage = new Image
+private static void ImageStampAsBackgroundInFloatingBox()
 {
-    File = dataDir + "aspose-logo.jpg"
-};
-// Set background color for FloatingBox
-aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
-// Add FloatingBox to paragraphs collection of page object
-page.Paragraphs.Add(aBox);
-// Save the PDF document
-document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Instantiate Document object
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to PDF document
+        Page page = document.Pages.Add();
+        // Create FloatingBox object
+        var aBox = new Aspose.Pdf.FloatingBox(200, 100);
+        // Set left position for FloatingBox
+        aBox.Left = 40;
+        // Set Top position for FloatingBox
+        aBox.Top = 80;
+        // Set the Horizontal alignment for FloatingBox
+        aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        // Add text fragment to paragraphs collection of FloatingBox
+        aBox.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("main text"));
+        // Set border for FloatingBox
+        aBox.Border = new Aspose.Pdf.BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
+        // Add background image
+        aBox.BackgroundImage = new Aspose.Pdf.Image
+        {
+            File = dataDir + "aspose-logo.jpg"
+        };
+        // Set background color for FloatingBox
+        aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
+        // Add FloatingBox to paragraphs collection of page object
+        page.Paragraphs.Add(aBox);
+        // Save document
+        document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    }
+}
 ```
 
 ## Add alternative text to the image stamp
@@ -181,18 +184,27 @@ Since version 24.6, it is possible to add alternative text to the image stamp.
 This code opens a PDF file, adds an image as a stamp at a specific position, and includes alternative text for accessibility. The updated PDF is then saved with a new filename.
 
 ```cs
-var document = new Document(dataDir + "yourDoc.pdf");
-var imageStamp = new ImageStamp(dataDir + "yourImage.jpg")
+private static void AddAlternativeTextToTheImageStamp()
 {
-    XIndent = 100,
-    YIndent = 700,
-    Quality = 100,
-    AlternativeText = "Your alt text"  // This property added.
-};
-
-document.Pages[1].AddStamp(imageStamp);
-
-document.Save(dataDir + "yourDocWithImageStamp.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "yourImage.jpg")
+        {
+            XIndent = 100,
+            YIndent = 700,
+            Quality = 100,
+            AlternativeText = "Your alt text"  // This property added.
+        };
+        // Add stamp
+        document.Pages[1].AddStamp(imageStamp);
+        // Save document
+        document.Save(dataDir + "docWithImageStamp_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
