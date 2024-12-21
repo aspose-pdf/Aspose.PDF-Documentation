@@ -188,3 +188,73 @@ Following are the links to some useful resources you may need to accomplish your
 - [Licensing Aspose.PDF for JasperReports](/pdf/jasperreports/licensing/)
 - [Evaluate Aspose.Pdf](/pdf/jasperreports/evaluate-aspose-pdf/)
 - [Aspose.PDF for JasperReports  API Limitations](/pdf/jasperreports/api-limitations/)
+
+{{% alert color="primary" %}}
+
+![Aspose.PDF for Go via C++ Product Logo](aspose_pdf-for-go-cpp.png)
+
+<h2>Welcome to the Aspose.PDF for Go via C++ Documentation Section</h2>
+
+Aspose.PDF for Go via C++ is generation library that makes creating complex, multi-page, printable documents easy. The API is designed with simplicity, often making the generation of complex documents as straightforward as a few function calls. True to its name, the library is built using C++ code, enabling exceptional speed. By compiling it into WebAssembly, we have ensured its portability across various operating systems.
+
+{{% /alert %}}
+
+<h3>Aspose.PDF for Go via C++ Resources</h3>
+
+The following links offer some useful resources you may need to accomplish your tasks.
+
+- [Aspose.PDF for Go via C++ Online Documentation](/pdf/go-cpp/)
+- [Aspose.PDF for Go via C++ Features](/pdf/go-cpp/key-features/)
+- [Aspose.PDF for Go via C++ Release Notes](https://releases.aspose.com/pdf/gocpp/)
+- [Aspose.PDF for Go via C++ Product Page](https://products-qa.aspose.com/pdf/go-cpp/)
+- [Download Aspose.PDF for Go via C++](https://releases.aspose.com/pdf/gocpp/)
+- [Aspose.PDF for Go via C++ API Reference Guide](https://reference.aspose.com/pdf/go-cpp/)
+- [Download Examples at GitHub Repository](https://github.com/aspose-pdf/aspose-pdf-go-cpp)
+- [Aspose.PDF for Go via C++ Free Support Forum](https://forum.aspose.com/c/pdf/10)
+- [Aspose.PDF for Go via C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+{{% alert color="primary" %}}
+
+![Aspose.PDF for JavaScript via C++ Product Logo](aspose_pdf-for-javascript-cpp.png)
+
+<h2>Welcome to the Aspose.PDF for JavaScript via C++ Documentation Section</h2>
+
+Aspose.PDF for JavaScript via C++ is a scalable and feature-rich toolkit to process PDF using JavaScript. Developers can create their own JavaScript product and distribute them all over the web. Aspose.PDF for JavaScript via C++ is built on the use of WebAssembly technology and is based on Aspose.PDF for .NET.
+
+{{% /alert %}}
+
+<h3>Aspose.PDF for JavaScript via C++ Resources</h3>
+
+The following links offer some useful resources you may need to accomplish your tasks.
+
+- [Aspose.PDF for JavaScript via C++ Online Documentation](/pdf/javascript-cpp/)
+- [Aspose.PDF for JavaScript via C++ Features](/pdf/javascript-cpp/overview/)
+- [Aspose.PDF for JavaScript via C++ Release Notes](https://releases.aspose.com/pdf/javascriptcpp/release-notes/)
+- [Aspose.PDF for JavaScript via C++ Product Page](https://products.aspose.com/pdf/javascript-cpp/)
+- [Download Aspose.PDF for JavaScript via C++](https://releases.aspose.com/pdf/javascriptcpp/)
+- [Aspose.PDF for JavaScript via C++ API Reference Guide](https://reference.aspose.com/pdf/javascript-cpp/)
+- [Aspose.PDF for JavaScript via C++ Free Support Forum](https://forum.aspose.com/c/pdf/10)
+- [Aspose.PDF for JavaScript via C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
+{{% alert color="primary" %}}
+
+![Aspose.PDF for Node.js via C++ Product Logo](aspose_pdf-for-nodejs-cpp.png)
+
+<h2>Welcome to the Aspose.PDF for Node.js via C++ Documentation Section</h2>
+
+Node.js is a cross-platform runtime environment for server-side and networking applications written in JavaScript. Essentially it allows you to run JavaScript applications outside of a browser context.
+
+{{% /alert %}}
+
+<h3>Aspose.PDF for Node.js via C++ Resources</h3>
+
+The following links offer some useful resources you may need to accomplish your tasks.
+
+- [Aspose.PDF for Node.js via C++ Online Documentation](/pdf/nodejs-cpp/)
+- [Aspose.PDF for Node.js via C++ Features](/pdf/nodejs-cpp/overview/)
+- [Aspose.PDF for Node.js via  C++ Release Notes](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
+- [Aspose.PDF for Node.js via C++ Product Page](https://products.aspose.com/pdf/nodejs-cpp/)
+- [Download Aspose.PDF for Node.js via C++](https://releases.aspose.com/pdf/nodejscpp/release-notes/)
+- [Aspose.PDF for Node.js via C++ API Reference Guide](https://reference.aspose.com/pdf/nodejs-cpp/)
+- [Aspose.PDF for Node.js via C++ Free Support Forum](https://forum.aspose.com/c/pdf/10)
+- [Aspose.PDF for Node.js via C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
