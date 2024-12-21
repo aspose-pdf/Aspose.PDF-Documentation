@@ -6,8 +6,6 @@ weight: 30
 url: /pt/net/get-started/
 description: Esta seção descreve os princípios básicos de trabalho e uso da API DOM. Também demonstra exemplos simples e complexos para a criação de um documento PDF.
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

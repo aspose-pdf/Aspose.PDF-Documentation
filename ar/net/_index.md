@@ -8,9 +8,6 @@ url: /ar/net/
 is_root: true
 lastmod: "2024-12-16"
 description: تعلم استخدام Aspose.PDF .NET لإنشاء تطبيقات لمعالجة مستندات PDF على أي منصة باستخدام C#، VB. استعراض الدروس، أكواد العينة، والمزيد.
-aliases:
-    - /net/working-with-aspose-pdf/
-    - /net/developer-guide/
 sitemap:
     changefreq: "monthly"
     priority: 0.7

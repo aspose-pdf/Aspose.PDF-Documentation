@@ -5,8 +5,6 @@ type: docs
 weight: 30
 url: /ar/net/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF في مكتبة Aspose.PDF لـ .NET. حفظ مستند PDF إلى نظام الملفات، إلى تيار، وفي تطبيقات الويب.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

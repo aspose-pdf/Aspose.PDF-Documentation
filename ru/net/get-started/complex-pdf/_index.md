@@ -5,8 +5,6 @@ type: docs
 weight: 60
 url: /ru/net/complex-pdf-example/
 description: Aspose.PDF для .NET позволяет создавать более сложные документы, содержащие изображения, фрагменты текста и таблицы в одном документе.
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

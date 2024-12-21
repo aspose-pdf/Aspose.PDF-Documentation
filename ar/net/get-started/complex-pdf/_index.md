@@ -5,8 +5,6 @@ type: docs
 weight: 60
 url: /ar/net/complex-pdf-example/
 description: يتيح لك Aspose.PDF لـ NET إنشاء مستندات أكثر تعقيداً تحتوي على صور وأجزاء نصية وجداول في مستند واحد.
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

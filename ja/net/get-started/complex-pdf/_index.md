@@ -5,8 +5,6 @@ type: docs
 weight: 60
 url: /ja/net/complex-pdf-example/
 description: Aspose.PDF for NETを使用すると、画像、テキストフラグメント、およびテーブルを含む複雑なドキュメントを作成できます。
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

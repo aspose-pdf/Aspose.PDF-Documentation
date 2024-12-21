@@ -9,9 +9,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/split-document/
-    - /net/split-pdf-pages/
 ---
 <script type="application/ld+json">
 {
