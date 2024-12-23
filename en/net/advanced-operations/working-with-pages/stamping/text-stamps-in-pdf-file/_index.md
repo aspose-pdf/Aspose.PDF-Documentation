@@ -207,7 +207,7 @@ The following code snippet demonstrates how to add a text stamp to a PDF file an
 private static void AutoSetTheFontSizeOfTextStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     //Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
@@ -234,7 +234,7 @@ The following code snippet demonstrates how to add a text stamp to a PDF file, a
 private static void AutoSetTheFontSizeOfTextStampToFItPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
