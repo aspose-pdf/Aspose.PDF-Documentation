@@ -107,7 +107,7 @@ private static void ChangePdfPageSize()
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
     {
         // Get page collection
-        PageCollection pageCollection = document.Pages;
+        var pageCollection = document.Pages;
         // Get particular page
         Page pdfPage = pageCollection[1];
         // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points

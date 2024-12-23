@@ -157,7 +157,7 @@ private static void AccessingPageProperties()
     using (var document = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
     {
         // Get page collection
-        PageCollection pageCollection = document.Pages;
+        var pageCollection = document.Pages;
         // Get particular page
         Page pdfPage = pageCollection[1];
         // Get page properties
