@@ -138,7 +138,7 @@ private static void RemoveBatesNumbering()
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        foreach (Page? page in document.Pages)
+        foreach (var page in document.Pages)
         {
             Artifact? batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
             page.Artifacts.Delete(batesNum);
