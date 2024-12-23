@@ -125,9 +125,9 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     var fileNumber = 1;
     // Create array of pages to split
-    int[][] numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+    var numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
     // Split to bulk
-    MemoryStream[] outBuffer = pdfEditor.SplitToBulks(dataDir + "MultiplePages.pdf", numberOfPages);
+    var outBuffer = pdfEditor.SplitToBulks(dataDir + "MultiplePages.pdf", numberOfPages);
     // Save individual files
     foreach (var aStream in outBuffer)
     {
@@ -157,9 +157,9 @@ private static void SplitPdfPagesToBulkUsingStreams()
     {
         var fileNumber = 1;
         // Create array of pages to split
-        int[][] numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+        var numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
         // Split to bulk
-        MemoryStream[] outBuffer = pdfEditor.SplitToBulks(inputStream, numberOfPages);
+        var outBuffer = pdfEditor.SplitToBulks(inputStream, numberOfPages);
         // Save individual files
         foreach (var aStream in outBuffer)
         {
@@ -232,7 +232,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     var fileNumber = 1;
     // Split to pages
-    MemoryStream[] outBuffer = pdfEditor.SplitToPages(dataDir + "input.pdf");
+    var outBuffer = pdfEditor.SplitToPages(dataDir + "input.pdf");
     // Save individual files
     foreach (var aStream in outBuffer)
     {
@@ -262,7 +262,7 @@ private static void SplitPdfToIndividualPagesUsingStreams()
     {
         var fileNumber = 1;
         // Split to pages
-        MemoryStream[] outBuffer = pdfEditor.SplitToPages(inputStream);
+        var outBuffer = pdfEditor.SplitToPages(inputStream);
         // Save individual files
         foreach (var aStream in outBuffer)
         {
