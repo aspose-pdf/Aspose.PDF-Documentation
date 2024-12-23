@@ -128,7 +128,7 @@ private static void ComparingSpecificPages()
     var resultPdfPath = dataDir + "ComparingSpecificPages_out.pdf";
 
     // Open documents
-    using (Document document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
+    using (var document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
     {
         // Compare
         Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new Aspose.Pdf.Comparison.SideBySideComparisonOptions
@@ -168,7 +168,7 @@ private static void ComparingEntireDocuments()
     var resultPdfPath = dataDir + "ComparingEntireDocuments_out.pdf";
 
     // Open documents
-    using (Document document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
+    using (var document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
     {
         // Compare
         Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
@@ -236,7 +236,7 @@ private static void ComparePDFWithGetDifferenceMethod()
     string diffPngFilePath = dataDir + "diffPngFilePath.png";
 
     // Open documents
-    using (Document document1 = new Aspose.Pdf.Document(doc1Path), document2 = new Aspose.Pdf.Document(doc2Path))
+    using (var document1 = new Aspose.Pdf.Document(doc1Path), document2 = new Aspose.Pdf.Document(doc2Path))
     {
         // Create comparer 
         var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
@@ -273,7 +273,7 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
     string resultPdfPath = dataDir + "compareDocumentsToPdf_out.pdf";
 
     // Open documents
-    using (Document document1 = new Aspose.Pdf.Document(document1Path),
+    using (var document1 = new Aspose.Pdf.Document(document1Path),
            document2 = new Aspose.Pdf.Document(document2Path))
     {
         // Create comparer
