@@ -155,10 +155,10 @@ private void button2_Click(object sender, System.EventArgs e)
     {
         using (var pdf2 = new FileStream(textBox2.Text, FileMode.Open))
         {
-            using (var outputPDF = new FileStream(textBox4.Text, FileMode.Create))
+            using (var outputStream = new FileStream(textBox4.Text, FileMode.Create))
             {
                 var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
-                pdfEditor.Concatenate(pdf1, pdf2, outputPDF);
+                pdfEditor.Concatenate(pdf1, pdf2, outputStream);
             }
         }
     }
@@ -183,9 +183,11 @@ private void button3_Click(object sender, System.EventArgs e)
             using (var pdf3 = new FileStream(textBox3.Text, FileMode.Open))
             {
                 var pdfStreams = new Stream[] { pdf1, pdf2, pdf3 };
-                var outputPDF = new FileStream(textBox4.Text, FileMode.Create);
-                var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
-                pdfEditor.Concatenate(pdfStreams, outputPDF);
+                using (var outputStream = new FileStream(textBox4.Text, FileMode.Create))
+                {
+                    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+                    pdfEditor.Concatenate(pdfStreams, outputStream);
+                }
             }
         }
     }
