@@ -172,7 +172,7 @@ private static void FillStrokeTextAsStampInPdfFile()
     // Set text rendering mode
     textState.RenderingMode = TextRenderingMode.StrokeText;
     // Open document
-    using (var document = new Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Create PdfFileStamp
         var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp(document);
