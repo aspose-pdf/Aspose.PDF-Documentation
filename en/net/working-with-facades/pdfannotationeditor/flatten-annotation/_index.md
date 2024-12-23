@@ -100,7 +100,7 @@ private static void FlattenAnnotationFromPdf()
             UpdateAppearances = true
         };
         annotationEditor.FlatteningAnnotations(flattenSettings);
-        //Save document
+        // Save document
         annotationEditor.Save(dataDir + "FlattenAnnotation_out.pdf");
     }
 }

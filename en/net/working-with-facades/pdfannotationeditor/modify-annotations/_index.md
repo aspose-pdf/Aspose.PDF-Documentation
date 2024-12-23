@@ -129,7 +129,7 @@ private static void ModifyAnnotations()
             };
             // Modify annotations in the PDF file
             annotationEditor.ModifyAnnotations(1, 1, annotation);
-            //Save document
+            // Save document
             annotationEditor.Save(dataDir + "ModifyAnnotations_out.pdf");
         }
     }
