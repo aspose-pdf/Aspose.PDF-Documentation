@@ -69,7 +69,7 @@ You can visit the [Convert PDF format](/pdf/go-cpp/conversion/) page for details
 
 ## Pricing and Policies
 
-Please visit the [Licensing](/pdf/go-cpp/licensing/) page for information on licenses and review the [Pricing Information]() page for details on pricing.
+Please visit the [Licensing](/pdf/go-cpp/licensing/) page for information on licenses and review the [Pricing Information](https://purchase.aspose.com/pricing/) page for details on pricing.
 
 ## Technical Support
 
