@@ -231,7 +231,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 The following code snippet demonstrates how to add a text stamp to a PDF file, automatically adjusting the stamp font size to ensure the stamp fits on the page.
 
 ```cs
-private static void AutoSetTheFontSizeOfTextStampToFItPage()
+private static void AutoSetTheFontSizeOfTextStampToFitPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
