@@ -241,16 +241,16 @@ private static void DeterminePageColor()
             Aspose.Pdf.ColorType pageColorType = document.Pages[pageCount].ColorType;
             switch (pageColorType)
             {
-                case ColorType.BlackAndWhite:
+                case Aspose.Pdf.ColorType.BlackAndWhite:
                     Console.WriteLine("Page # -" + pageCount + " is Black and white..");
                     break;
-                case ColorType.Grayscale:
+                case Aspose.Pdf.ColorType.Grayscale:
                     Console.WriteLine("Page # -" + pageCount + " is Gray Scale...");
                     break;
-                case ColorType.Rgb:
+                case Aspose.Pdf.ColorType.Rgb:
                     Console.WriteLine("Page # -" + pageCount + " is RGB..", pageCount);
                     break;
-                case ColorType.Undefined:
+                case Aspose.Pdf.ColorType.Undefined:
                     Console.WriteLine("Page # -" + pageCount + " Color is undefined..");
                     break;
             }
