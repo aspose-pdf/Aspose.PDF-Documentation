@@ -179,11 +179,13 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
                         // Convert MemoryStream back to byte array
                         var data = pdfStream.ToArray();
                         // Create a FileStream to save the output PDF file
-                        var output = new FileStream(resultPdfPath, FileMode.Create, FileAccess.Write);
-                        // Write byte array contents in the output file stream
-                        output.Write(data, 0, data.Length);
-                        // Close output file
-                        output.Close();
+                        using (var output = new FileStream(resultPdfPath, FileMode.Create, FileAccess.Write))
+                        {
+                            // Write byte array contents in the output file stream
+                            output.Write(data, 0, data.Length);
+                            // Close output file
+                            output.Close(); 
+                        }
                     }
                 }
             }
