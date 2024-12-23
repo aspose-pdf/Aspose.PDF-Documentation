@@ -228,7 +228,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
     }
 }
 ```
-The following code snippet demonstrates how to add a text stamp to a PDF file, automatically adjusting the stamp font size to ensure the stamp fits on the page.
+The following code snippet demonstrates how to add a text stamp to a PDF file and automatically adjust the font size to fit the stamp rectangle. The stamp rectangle defaults to the page size.
 
 ```cs
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
