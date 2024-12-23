@@ -159,7 +159,7 @@ private static void AccessingPageProperties()
         // Get page collection
         var pageCollection = document.Pages;
         // Get particular page
-        Page pdfPage = pageCollection[1];
+        var pdfPage = pageCollection[1];
         // Get page properties
         System.Console.WriteLine("ArtBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.ArtBox.Height, pdfPage.ArtBox.Width, pdfPage.ArtBox.LLX,
             pdfPage.ArtBox.LLY, pdfPage.ArtBox.URX, pdfPage.ArtBox.URY);
@@ -201,7 +201,7 @@ private static void GetAParticularPageOfThePdfFile()
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Get particular page
-        Page pdfPage = document.Pages[2];
+        var pdfPage = document.Pages[2];
         // Save the page as PDF file
         using (var newDocument = new Aspose.Pdf.Document())
         {
