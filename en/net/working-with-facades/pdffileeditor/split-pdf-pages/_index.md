@@ -129,7 +129,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
     // Split to bulk
     MemoryStream[] outBuffer = pdfEditor.SplitToBulks(dataDir + "MultiplePages.pdf", numberOfPages);
     // Save individual files
-    foreach (MemoryStream aStream in outBuffer)
+    foreach (var aStream in outBuffer)
     {
         using (var outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
         {
@@ -161,7 +161,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
         // Split to bulk
         MemoryStream[] outBuffer = pdfEditor.SplitToBulks(inputStream, numberOfPages);
         // Save individual files
-        foreach (MemoryStream aStream in outBuffer)
+        foreach (var aStream in outBuffer)
         {
             using (var outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
             {
@@ -234,7 +234,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
     // Split to pages
     MemoryStream[] outBuffer = pdfEditor.SplitToPages(dataDir + "input.pdf");
     // Save individual files
-    foreach (MemoryStream aStream in outBuffer)
+    foreach (var aStream in outBuffer)
     {
         using (var outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
         {
@@ -264,7 +264,7 @@ private static void SplitPdfToIndividualPagesUsingStreams()
         // Split to pages
         MemoryStream[] outBuffer = pdfEditor.SplitToPages(inputStream);
         // Save individual files
-        foreach (MemoryStream aStream in outBuffer)
+        foreach (var aStream in outBuffer)
         {
             using (var outStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
             {
