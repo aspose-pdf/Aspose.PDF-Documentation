@@ -135,7 +135,7 @@ This approach is good only if you need to join only two PDF files. First two arg
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
 {
-    PdfFileEditor pdfEditor = new PdfFileEditor();
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     pdfEditor.Concatenate(textBox1.Text,textBox2.Text,textBox4.Text);
 }
 ```
@@ -151,14 +151,14 @@ Similar to the above approach, this approach also allows joining two PDF files. 
 ```csharp
 private void button2_Click(object sender, System.EventArgs e)
 {
-    using (FileStream pdf1 = new FileStream(textBox1.Text, FileMode.Open))
+    using (var pdf1 = new FileStream(textBox1.Text, FileMode.Open))
     {
-        using (FileStream pdf2 = new FileStream(textBox2.Text, FileMode.Open))
+        using (var pdf2 = new FileStream(textBox2.Text, FileMode.Open))
         {
-            using (FileStream outputPDF = new FileStream(textBox4.Text, FileMode.Create))
+            using (var outputStream = new FileStream(textBox4.Text, FileMode.Create))
             {
-                PdfFileEditor pdfEditor = new PdfFileEditor();
-                pdfEditor.Concatenate(pdf1, pdf2, outputPDF);
+                var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+                pdfEditor.Concatenate(pdf1, pdf2, outputStream);
             }
         }
     }
@@ -176,16 +176,18 @@ If you want to join more than two PDF files then this approach would be your ult
 ```csharp
 private void button3_Click(object sender, System.EventArgs e)
 {
-    using (FileStream pdf1 = new FileStream(textBox1.Text, FileMode.Open))
+    using (var pdf1 = new FileStream(textBox1.Text, FileMode.Open))
     {
-        using (FileStream pdf2 = new FileStream(textBox2.Text, FileMode.Open))
+        using (var pdf2 = new FileStream(textBox2.Text, FileMode.Open))
         {
-            using (FileStream pdf3 = new FileStream(textBox3.Text, FileMode.Open))
+            using (var pdf3 = new FileStream(textBox3.Text, FileMode.Open))
             {
-                Stream[] pdfStreams = new Stream[]{pdf1, pdf2, pdf3};
-                FileStream outputPDF = new FileStream(textBox4.Text, FileMode.Create);
-                PdfFileEditor pdfEditor = new PdfFileEditor();
-                pdfEditor.Concatenate(pdfStreams, outputPDF);
+                var pdfStreams = new Stream[] { pdf1, pdf2, pdf3 };
+                using (var outputStream = new FileStream(textBox4.Text, FileMode.Create))
+                {
+                    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+                    pdfEditor.Concatenate(pdfStreams, outputStream);
+                }
             }
         }
     }
