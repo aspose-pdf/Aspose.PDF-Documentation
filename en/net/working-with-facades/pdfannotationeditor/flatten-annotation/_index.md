@@ -82,6 +82,7 @@ When this option is selected, your annotations will be included in your exported
 Check how the [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/flatteningannotations) method used in the next code snippet.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FlattenAnnotationFromPdf()
 {
     // The path to the documents directory

@@ -157,6 +157,7 @@ Aspose.PDF for .NET presents you online free application ["EPUB to PDF"](https:/
 Next following code snippet show you how to convert EPUB files to PDF format with C#.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertEPUBtoPDF()
 {
     // The path to the documents directory
@@ -175,6 +176,7 @@ private static void ConvertEPUBtoPDF()
 You can also set page size for conversion. To define new page size you `SizeF` object and pass it to [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main) constructor.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertEPUBtoPDFAdv()
 {
     // The path to the documents directory
@@ -214,6 +216,7 @@ The following code snippet shows how to use this functionality with Aspose.PDF l
 3. Save the document with the desired file name.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertMarkdownToPDF()
 {
     // The path to the documents directory
@@ -476,6 +479,7 @@ The following code snippet shows the process of converting a PCL file into PDF f
 3. Save the document with the desired file name.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPCLtoPDF()
 {
     // The path to the documents directory
@@ -494,6 +498,7 @@ private static void ConvertPCLtoPDF()
 You can also monitor the detection of errors during the conversion process. To do this, you need to configure PclLoadOptions object: set or unset SupressErrors.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPCLtoPDFAdvanced()
 {
     // The path to the documents directory
@@ -553,6 +558,7 @@ In case of the plain text file, we can use the following technique:
 5. Use **Save** method of [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) class.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPlainTextFileToPDF()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -594,6 +600,7 @@ In this case, the library's algorithm also adds extra pages, but we can control 
 Following example shows how to convert pre-formatted text file (80x25) to PDF document with page size A4.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPreFormattedTextToPdf()
 {
     // The path to the documents directory
@@ -666,6 +673,7 @@ The following code snippet shows the process of converting XPS file into PDF for
 3. Save the document to PDF format with the desired file name.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertXPSToPDF()
 {
     // The path to the documents directory
@@ -698,6 +706,7 @@ In order to convert a PostScript file to PDF format, Aspose.PDF for .NET offers 
 Following code snippet can be used to convert a PostScript file into PDF format with Aspose.PDF for .NET:
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPostScriptToPDF()
 {
     // The path to the documents directory
@@ -716,6 +725,7 @@ private static void ConvertPostScriptToPDF()
 Additionally, you can set a set of font folders that will be used during conversion:
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPostscriptToPDFAdvanced()
 {
     // The path to the documents directory
@@ -756,6 +766,7 @@ Aspose.PDF for .NET presents you online free application ["XML to PDF"](https://
 The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [Document](https://reference.aspose.com/page/net/aspose.page/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). But sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Convert_XSLFO_to_PDF()
 {
     // The path to the documents directory
@@ -788,6 +799,7 @@ Aspose.PDF for .NET supports the feature to convert TeX files to PDF format and 
 The following code snippet shows the process of converting LaTex file to PDF format with C#.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertTeXtoPDF()
 {
     // The path to the documents directory
@@ -811,6 +823,7 @@ Aspose.PDF for .NET supports the feature to convert OFD files to PDF format and 
 The following code snippet shows the process of converting OFD file to PDF format with C#.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertOFDToPDF()
 {
     // The path to the documents directory

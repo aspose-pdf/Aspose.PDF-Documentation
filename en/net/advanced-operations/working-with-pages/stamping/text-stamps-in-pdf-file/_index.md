@@ -85,6 +85,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to add text stamp in the PDF file.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextStamp()
 {
     // The path to the documents directory
@@ -122,6 +123,7 @@ Adding watermarks to PDF documents is one of the frequent demanded features and 
 The following code snippets shows an example on how to load an existing PDF document and add TextStamp over it.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DefineAlignmentForTextStampObject()
 {
     // The path to the documents directory
@@ -161,6 +163,7 @@ We have implemented setting of rendering mode for text adding and editing scenar
 Following code snippet demonstrates adding Fill Stroke Text:
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FillStrokeTextAsStampInPdfFile()
 {
     // The path to the documents directory

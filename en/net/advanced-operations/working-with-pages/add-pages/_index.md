@@ -100,6 +100,7 @@ To insert an empty page in a PDF file:
 The following code snippet shows you how to insert a page in a PDF file.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertAnEmptyPage()
 {
     // The path to the documents directory
@@ -119,6 +120,7 @@ In example above, we added empty page with default parameters. If you need to ma
 a few lines of code:
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertAnEmptyPageWithParameters()
 {
     var page = document.Pages.Insert(2);
@@ -144,6 +146,7 @@ To insert an empty page at the end of a PDF file:
 The following code snippet shows you how to insert an empty page at the end of a PDF file.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertAnEmptyPageAtTheEnd()
 {
     // The path to the documents directory

@@ -118,6 +118,7 @@ The code starts by initializing two PDF documents using their respective file pa
 3. The resulting comparison document, which highlights the differences between the two pages, is saved to the file path specified in 'resultPdfPath'.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparingSpecificPages()
 {
     // The path to the documents directory
@@ -158,6 +159,7 @@ Just like in the first example, two PDF documents are initialized with their fil
 3. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparingEntireDocuments()
 {
     // The path to the documents directory
@@ -225,6 +227,7 @@ This method compares the first pages of two PDF files and generates two PNG imag
 This process can be useful for visually comparing changes or differences between two versions of a document.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparePDFWithGetDifferenceMethod()
 {
     // The path to the documents directory
@@ -263,6 +266,7 @@ private static void ComparePDFWithGetDifferenceMethod()
 The provided code snippet used the  [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) method, which compares two documents and generates a PDF report of the comparison results.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparePDFWithCompareDocumentsToPdfMethod()
 {
     // The path to the documents directory

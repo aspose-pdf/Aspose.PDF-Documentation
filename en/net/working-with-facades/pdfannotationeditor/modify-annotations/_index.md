@@ -82,6 +82,7 @@ sitemap:
 For example, in the following code, consider changing the author in our annotation using [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ModifyAnnotationsAuthor()
 {
     // The path to the documents directory
@@ -102,6 +103,7 @@ private static void ModifyAnnotationsAuthor()
 The second method allows you to delete all the annotations of a specified type.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ModifyAnnotations()
 {
     // The path to the documents directory
