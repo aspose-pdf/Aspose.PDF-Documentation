@@ -6,8 +6,6 @@ weight: 70
 url: /ar/python-java/converting/
 lastmod: "2023-04-06"
 description: تحتوي هذه القسم على مقالات تتعلق بتحويل مستندات PDF إلى تنسيقات مختلفة وبالعكس باستخدام Python API.
-aliases:
-    - /python-java/conversion/
 sitemap:
     changefreq: "monthly"
     priority: 0.8

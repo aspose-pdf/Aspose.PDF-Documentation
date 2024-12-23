@@ -83,19 +83,57 @@ Ater that, you can call [ChangeViewerPreference](https://reference.aspose.com/pd
 
 For example, we specify the parameter [CenterWindow](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/centerwindow) with which we center the window, after remove the top toolbar with [HideMenubar](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/hidemenubar) and with [PageModeUseNone](https://reference.aspose.com/pdf/net/aspose.pdf.facades/viewerpreference/fields/pagemodeusenone) open full-screen mode.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void SetViewerPreference()
 {
-    var document = new Document(dataDir + "Sample.pdf");
-    PdfContentEditor editor = new PdfContentEditor(document);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Change Viewer Preferences
-    editor.ChangeViewerPreference(ViewerPreference.CenterWindow);
-    editor.ChangeViewerPreference(ViewerPreference.HideMenubar);
-    editor.ChangeViewerPreference(ViewerPreference.PageModeFullScreen);
-    
-    // Saves the result PDF to file
-    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
-    GetViewerPreference();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
+    {
+        // Instantiate PdfContentEditor object
+        var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
+        // Change Viewer Preferences
+        editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.CenterWindow);
+        editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.HideMenubar);
+        editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
+
+        // Saves the result PDF to file
+        editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void SetViewerPreference()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
+
+    // Instantiate PdfContentEditor object
+    var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
+    // Change Viewer Preferences
+    editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.CenterWindow);
+    editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.HideMenubar);
+    editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
+
+    // Saves the result PDF to file
+    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}

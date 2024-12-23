@@ -78,47 +78,51 @@ The PDF documents are usually comprised of Text, Image, Table, Attachments, Grap
 
 According to Document Object Model of Aspose.PDF for .NET, a PDF file contains one or more pages where each page contains collection of Images, Forms and Fonts in Resources object. So in order to extract images from PDF file, we will traverse through individual pages of PDF file, get the collection of Images from particular page and save them in MemoryStream object for further processing with BarCodeReader class of Aspose.BarCodeRecognition.
 
-**C#**
-
 ```csharp
-// Open document
-Document document = new Document("source.pdf");
-
-// Traverse through individual pages of PDF file
-for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
+private static void IdentifyBarcodes()
 {
-    // Traverse through each image extracted from PDF pages
-    foreach (XImage xImage in document.Pages[pageCount].Resources.Images)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))
     {
-        using (MemoryStream imageStream = new MemoryStream())
+        // Traverse through individual pages of PDF file
+        for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
         {
-            // Save output image
-            xImage.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-   
-            // Set the stream position to the begining of Stream
-            imageStream.Position = 0;
-   
-            // Instantiate BarCodeReader object
-            Aspose.BarCodeRecognition.BarCodeReader barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
-   
-            while (barcodeReader.Read())
+            // Traverse through each image extracted from PDF pages
+            foreach (var xImage in document.Pages[pageCount].Resources.Images)
             {
-                // Get BarCode text from BarCode image
-                string code = barcodeReader.GetCodeText();
-   
-                // Write the BarCode text to Console output
-                Console.WriteLine("BARCODE : " + code);
+                using (var imageStream = new System.IO.MemoryStream())
+                {
+                    // Save output image
+                    xImage.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
+        
+                    // Set the stream position to the begining of Stream
+                    imageStream.Position = 0;
+        
+                    // Instantiate BarCodeReader object
+                    var barcodeReader = new Aspose.BarCodeRecognition.BarCodeReader(imageStream, Aspose.BarCodeRecognition.BarCodeReadType.Code39Extended);
+        
+                    while (barcodeReader.Read())
+                    {
+                        // Get BarCode text from BarCode image
+                        var code = barcodeReader.GetCodeText();
+        
+                        // Write the BarCode text to Console output
+                        Console.WriteLine("BARCODE : " + code);
+                    }
+        
+                    // Close BarCodeReader object to release the Image file
+                    barcodeReader.Close();
+                }
             }
-   
-            // Close BarCodeReader object to release the Image file
-            barcodeReader.Close();
         }
     }
 }
-
 ```
 
-For further details on topics covered in this article, please visit the following links
+For further details on topics covered in this article visit the following links:
 
 - [Extract Images from the PDF File](/net/extract-images-from-the-pdf-file/)
-- [Read Barcodes](https://docs.aspose.com/barcode/net/read-barcodes/)
+- [Read Barcodes](https://docs.aspose.com/barcode/net/barcode-recognition/)

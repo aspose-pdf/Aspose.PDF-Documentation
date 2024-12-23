@@ -80,23 +80,22 @@ Follow the next code snippet for resolve your task:
 ## Merge Images
 
 ```csharp
-public static class ExamplePdfConverter
+private static void MergeImages01()
 {
-    private static readonly string dataDir = @"C:\Samples\Facades\PdfConverter\";
-    public static void MergeImages01()
-    {
-        var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Updated to use dynamic path
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
                                 .OrderBy(f => f)
                                 .Select(f => File.OpenRead(f))
                                 .Cast<Stream>()
                                 .ToList();
 
-        using (Stream inputStream =
-                PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
-        {
-            FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
-            inputStream.CopyTo(outputStream);
-        }
+    // Use 'using' block to ensure proper resource management for both input and output streams
+    using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    {
+        // Copy merged images to the output file
+        inputStream.CopyTo(outputStream);
     }
 }
 ```
@@ -104,18 +103,23 @@ public static class ExamplePdfConverter
 The second example works the same as the previous one, but the merged images will be saved horizontally.
 
 ```csharp
-public static void MergeImages02()
+private static void MergeImages02()
 {
-    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
                             .ToList();
 
+    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
-            PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
+            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages02_out.jpg", FileMode.Create))  // Output file with '_out' suffix
     {
-        FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
+        // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
     }
 }
@@ -124,18 +128,23 @@ public static void MergeImages02()
 In the third example, we will merge the pictures by centering them. Two horizontally, two vertically.
 
 ```csharp
-public static void MergeImages03()
+private static void MergeImages03()
 {
-    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
                             .ToList();
 
+    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
-            PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
+            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages03_out.jpg", FileMode.Create))  // Output file with '_out' suffix
     {
-        FileStream outputStream = new FileStream(dataDir + "merged_images.jpg", FileMode.Create);
+        // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
     }
 }
@@ -144,18 +153,23 @@ public static void MergeImages03()
 Also, Aspose.PDF for Java present you the opportunity to combine pictures and save them in the Tiff format, using  [MergeImagesAsTiff Method](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#saveAsTIFF-java.io.OutputStream-).
 
 ```csharp
-public static void MergeImages04()
+private static void MergeImages04()
 {
-    var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
                             .OrderBy(f => f)
                             .Select(f => File.OpenRead(f))
                             .Cast<Stream>()
                             .ToList();
 
+    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
-            PdfConverter.MergeImagesAsTiff(fileStreams))
+            Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(fileStreams))
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.tiff", FileMode.Create))  // Output file with '_out' suffix
     {
-        FileStream outputStream = new FileStream(dataDir + "merged_images.tiff", FileMode.Create);
+        // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
     }
 }
@@ -164,23 +178,34 @@ public static void MergeImages04()
 To save the merged images as one image on PDF page, we place them in the imageStream, place the result on the page with addImage method, where we specify the coordinates where we want to place them.
 
 ```csharp
-   public static void MergeImages05()
-        {
-            var fileStreams = Directory.GetFiles(dataDir, "cat*.jpg")
-                                    .OrderBy(f => f)
-                                    .Select(f => File.OpenRead(f))
-                                    .Cast<Stream>()
-                                    .ToList();
+private static void MergeImages05()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
+    // Get all image files matching the pattern "MergeImages*.jpg"
+    var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
+                                .OrderBy(f => f)
+                                .Select(f => File.OpenRead(f))
+                                .Cast<Stream>()
+                                .ToList();
+
+    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
-            PdfConverter.MergeImages(fileStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+            Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
+    using (MemoryStream outputStream = new MemoryStream())  // Output to MemoryStream
     {
-        MemoryStream outputStream = new MemoryStream();
+        // Copy merged images to the MemoryStream
         inputStream.CopyTo(outputStream);
-        var document = new Document();
-        var pages = document.Pages.Add();
-        pages.AddImage(outputStream, new Rectangle(10,120,400,720));
-        document.Save(dataDir + "merged_images.pdf");
+
+        // Create a new Document instance and add a page
+        var document = new Aspose.Pdf.Document();
+        var page = document.Pages.Add();
+
+        // Add the image from the MemoryStream to the page
+        page.AddImage(outputStream, new Aspose.Pdf.Rectangle(10, 120, 400, 720));
+
+        // Save the document with '_out' suffix
+        document.Save(dataDir + "MergeImages_out.pdf");
     }
 }
 ```

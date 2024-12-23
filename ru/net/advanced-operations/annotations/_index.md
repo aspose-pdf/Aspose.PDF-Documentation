@@ -9,10 +9,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-aliases:
-    - /net/working-with-annotations/
-    - /net/annotation/
-    - /net/working-with-annotations-facades/
 ---
 <script type="application/ld+json">
 {

@@ -109,7 +109,88 @@ Once Adobe Acrobat is installed, use regedit.exe and look under HKEY_CLASSES_ROO
 
 ![todo:image_alt_text](generate-thumbnail-images-from-pdf-documents_1.png)
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-CreateThumbnailImagesUsingAdobe-CreateThumbnailImagesUsingAdobe.cs" >}}
+```csharp
+private static void GenerateThumbnailImagesFromPDF()
+{
+    // Acrobat objects
+    Acrobat.CAcroPDDoc pdfDoc;
+    Acrobat.CAcroPDPage pdfPage;
+    Acrobat.CAcroRect pdfRect;
+    Acrobat.CAcroPoint pdfPoint;
+
+    AppSettingsReader appSettings = new AppSettingsReader();
+    string pdfInputPath = appSettings.GetValue("pdfInputPath", typeof(string)).ToString();
+    string pngOutputPath = appSettings.GetValue("pngOutputPath", typeof(string)).ToString();
+    string templatePortraitFile = Application.StartupPath + @"\pdftemplate_portrait.gif";
+    string templateLandscapeFile = Application.StartupPath + @"\pdftemplate_landscape.gif";
+
+    // Get list of files to process from the input path
+    string[] files = Directory.GetFiles(pdfInputPath, "*.pdf");
+
+    for (int n = 0; n < files.Length; n++)
+    {
+        string inputFile = files[n];
+        string outputFile = Path.Combine(pngOutputPath, Path.GetFileNameWithoutExtension(inputFile) + ".png");
+
+        // Create the document
+        pdfDoc = (Acrobat.CAcroPDDoc)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.PDDoc", "");
+
+        if (pdfDoc.Open(inputFile) == 0)
+        {
+            throw new FileNotFoundException($"Unable to open PDF file: {inputFile}");
+        }
+
+        int pageCount = pdfDoc.GetNumPages();
+        pdfPage = (Acrobat.CAcroPDPage)pdfDoc.AcquirePage(0);
+        pdfPoint = (Acrobat.CAcroPoint)pdfPage.GetSize();
+
+        pdfRect = (Acrobat.CAcroRect)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.Rect", "");
+        pdfRect.Left = 0;
+        pdfRect.right = pdfPoint.x;
+        pdfRect.Top = 0;
+        pdfRect.bottom = pdfPoint.y;
+
+        pdfPage.CopyToClipboard(pdfRect, 0, 0, 100);
+        IDataObject clipboardData = Clipboard.GetDataObject();
+
+        if (clipboardData.GetDataPresent(DataFormats.Bitmap))
+        {
+            Bitmap pdfBitmap = (Bitmap)clipboardData.GetData(DataFormats.Bitmap);
+
+            int thumbnailWidth = 45;
+            int thumbnailHeight = 59;
+            string templateFile = pdfPoint.x < pdfPoint.y ? templatePortraitFile : templateLandscapeFile;
+
+            if (pdfPoint.x > pdfPoint.y)
+            {
+                // Swap width and height for landscape orientation
+                (thumbnailWidth, thumbnailHeight) = (thumbnailHeight, thumbnailWidth);
+            }
+
+            Bitmap templateBitmap = new Bitmap(templateFile);
+            Image pdfImage = pdfBitmap.GetThumbnailImage(thumbnailWidth, thumbnailHeight, null, IntPtr.Zero);
+
+            Bitmap thumbnailBitmap = new Bitmap(thumbnailWidth + 7, thumbnailHeight + 7, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+            templateBitmap.MakeTransparent();
+
+            using (Graphics thumbnailGraphics = Graphics.FromImage(thumbnailBitmap))
+            {
+                thumbnailGraphics.DrawImage(pdfImage, 2, 2, thumbnailWidth, thumbnailHeight);
+                thumbnailGraphics.DrawImage(templateBitmap, 0, 0);
+                thumbnailBitmap.Save(outputFile, System.Drawing.Imaging.ImageFormat.Png);
+            }
+
+            Console.WriteLine("Generated thumbnail: {0}", outputFile);
+
+            pdfDoc.Close();
+            Marshal.ReleaseComObject(pdfPage);
+            Marshal.ReleaseComObject(pdfRect);
+            Marshal.ReleaseComObject(pdfDoc);
+        }
+    }
+}
+```
 
 ## Aspose.PDF for .NET Approach
 
@@ -122,7 +203,38 @@ Aspose.PDF has distinct benefits:
 
 If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) namespace provides a class named [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) for rendering PDF pages into JPEG images. Please take a look over the following code snippet.
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-CreateThumbnailImages-CreateThumbnailImages.cs" >}}
+```csharp
+private static void GenerateThumbnailImagesFromPDF()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Retrieve names of all the PDF files in a particular directory
+    string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
+
+    // Iterate through all the files entries in array
+    for (int counter = 0; counter < fileEntries.Length; counter++)
+    {
+        //Open document
+        using (var pdfDocument = new Document(fileEntries[counter]))
+        {
+            for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
+            {
+                using (FileStream imageStream = new FileStream(dataDir + "\\Thumbanils" + counter.ToString() + "_" + pageCount + ".jpg", FileMode.Create))
+                {
+                    //Create Resolution object
+                    Resolution resolution = new Resolution(300);
+                    //JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
+                    JpegDevice jpegDevice = new JpegDevice(45, 59, resolution, 100);
+                    //Convert a particular page and save the image to stream
+                    jpegDevice.Process(pdfDocument.Pages[pageCount], imageStream);
+                }
+            }
+        }
+    }
+}
+```
 
 {{% alert color="primary" %}}
 

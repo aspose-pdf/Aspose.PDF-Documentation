@@ -9,8 +9,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 
 - [Crear Marcadores](/pdf/es/net/create-bookmarks/)

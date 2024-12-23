@@ -83,26 +83,34 @@ The next code snippet creates a new Document object using some input data, initi
 It retrieves various properties of the second graphic element, such as its associated operators, rectangle, and position.
 
 ```csharp
-// Creates a new Document object using the provided input data.
-var document = new Document(input);
+private static void ProcessGraphicsInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Instantiates a new GraphicsAbsorber object to process graphic elements. 
-var grAbsorber = new GraphicsAbsorber(); 
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate a new GraphicsAbsorber object to process graphic elements
+        using (var grAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Visit the second page of the document to extract graphic elements
+            grAbsorber.Visit(document.Pages[1]);
 
-// Visits the second page of the document to extract graphic elements. 
-grAbsorber.Visit(document.Pages[1]); 
+            // Retrieve the list of graphic elements from the GraphicsAbsorber
+            var elements = grAbsorber.Elements;
 
-// Retrieves the list of graphic elements from the GraphicsAbsorber. 
-var elements = grAbsorber.Elements; 
+            // Access the operators associated with the second graphic element
+            var operations = elements[1].Operators;
 
-// Accesses the operators associated with the second graphic element. 
-var operations = elements[1].Operators; 
+            // Retrieve the rectangle associated with the second graphic element
+            var rectangle = elements[1].Rectangle;
 
-// Retrieves the rectangle associated with the second graphic element. 
-var rectangle = elements[1].Rectangle; 
-
-// Gets the position of the second graphic element. 
-var position = elements[1].Position;
+            // Get the position of the second graphic element
+            var position = elements[1].Position;
+        }
+    }
+}
 ```
 
 ## Extract Vector Data from PDF document
@@ -110,36 +118,108 @@ var position = elements[1].Position;
 For extraction of Vector Data from PDF, we can use SVG extractor:
 
 ```csharp
-var document = new Document(input);
-document.Pages[1].TrySaveVectorGraphics(outputSvg);
+private static void SaveVectorGraphicsFromPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open the document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Save vector graphics from the first page to an SVG file
+        document.Pages[1].TrySaveVectorGraphics(dataDir + "VectorGraphics_out.svg");
+    }
+}
 ```
 
 ### Extract all subpaths to images separately
 
 ```csharp
-SvgExtractionOptions options = new SvgExtractionOptions
+private static void ExtractAllSubpathsToImagesSeparately()
 {
-    ExtractEverySubPathToSvg = true
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-SvgExtractor extractor = new SvgExtractor(options);
-extractor.Extract(page, svgDirPath);
+    // Path to the directory where SVGs will be saved
+    var svgDirPath = dataDir + "SvgOutput/";
+
+    // Create extraction options
+    var options = new Aspose.Pdf.Vector.SvgExtractionOptions
+    {
+        ExtractEverySubPathToSvg = true
+    };
+
+    // Open document using 'using' block
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Get the first page of the document
+        var page = document.Pages[1];
+
+        // Create SVG extractor using 'using' block
+        var extractor = new Aspose.Pdf.Vector.SvgExtractor(options);
+        // Extract SVGs from the page
+        extractor.Extract(page, svgDirPath);
+    }
+}
 ```
 
 ### Extract list of elements to single image
 
 ```csharp
-List<GraphicElement> elements = new List<GraphicElement>();
-// Fill elements list needed graphic elements.
-SvgExtractor svgExtractor = new SvgExtractor();
-svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "1.svg"));
+private static void ExtractListOfElementsToSingleImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Path to the directory where SVGs will be saved
+    var svgDirPath = dataDir + "SvgOutput/";
+
+    // Initialize the list of graphic elements
+    var elements = new List<Aspose.Pdf.Vector.GraphicElement>();
+
+    // Example: Fill elements list with needed graphic elements (implement your logic here)
+
+    // Open document using 'using' block
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Get the first page of the document
+        var page = document.Pages[1];
+
+        // Use SvgExtractor to extract SVGs
+        var svgExtractor = new Aspose.Pdf.Vector.SvgExtractor();
+
+        // Extract SVGs from graphic elements on the page
+        svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
+    }
+}
 ```
 
 ### Extract single element
 
 ```csharp
-GraphicsAbsorber graphicsAbsorber = new GraphicsAbsorber();
-graphicsAbsorber.Visit(page);
-XFormPlacement xFormPlacement = graphicsAbsorber.Elements[1] as XFormPlacement;
-xFormPlacement.Elements[2].SaveToSvg(page, Path.Combine(svgDirPath,"1.svg"));
+private static void ExtractSingleElement()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Path to the directory where SVGs will be saved
+    var svgDirPath = dataDir + "SvgOutput/";
+
+    // Open document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
+    {
+        // Create a GraphicsAbsorber object to extract graphic elements
+        var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+
+        // Get the first page of the document
+        var page = document.Pages[1];
+
+        // Process the page to extract graphic elements
+        graphicsAbsorber.Visit(page);
+
+        // Extract the graphic element (XFormPlacement) and save it as SVG
+        var xFormPlacement = graphicsAbsorber.Elements[1] as Aspose.Pdf.Vector.XFormPlacement;
+        xFormPlacement.Elements[2].SaveToSvg(Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
+    }
+}
 ```

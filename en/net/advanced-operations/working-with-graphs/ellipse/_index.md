@@ -84,36 +84,45 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 Aspose.PDF for .NET supports to add [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
 
 ```csharp
-public static void Ellipse()
+private static void Ellipse()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    var ellipse1 = new Ellipse(150, 100, 120, 60);
-    ellipse1.GraphInfo.Color = Color.GreenYellow;
-    ellipse1.Text = new TextFragment("Ellipse");
-    graph.Shapes.Add(ellipse1);
+        // Create first ellipse with specified coordinates and radii
+        var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(150, 100, 120, 60)
+        {
+            GraphInfo = { Color = Aspose.Pdf.Color.GreenYellow },
+            Text = new Aspose.Pdf.Text.TextFragment("Ellipse")
+        };
+        graph.Shapes.Add(ellipse1);
 
-    var ellipse2 = new Ellipse(50, 50, 18, 300);
-    ellipse2.GraphInfo.Color = Color.DarkRed;
+        // Create second ellipse with different dimensions and color
+        var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(50, 50, 18, 300)
+        {
+            GraphInfo = { Color = Aspose.Pdf.Color.DarkRed }
+        };
+        graph.Shapes.Add(ellipse2);
 
-    graph.Shapes.Add(ellipse2);
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
-
-    // Save PDF file
-    document.Save(dataDir + "DrawingEllipse_out.pdf");
+        // Save PDF file
+        document.Save(dataDir + "DrawingEllipse_out.pdf");
+    }
 }
 ```
 
@@ -124,34 +133,50 @@ public static void Ellipse()
 The following code snippet shows how to add a [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)  object that is filled with color.
 
 ```csharp
-public static void EllipseFilled()
+private static void EllipseFilled()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    var ellipse1 = new Ellipse(100, 100, 120, 180);
-    ellipse1.GraphInfo.FillColor = Color.GreenYellow;
-    graph.Shapes.Add(ellipse1);
+        // Create first ellipse and set its fill color
+        var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(100, 100, 120, 180)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.GreenYellow 
+            }
+        };
+        graph.Shapes.Add(ellipse1);
 
-    var ellipse2 = new Ellipse(200, 150, 180, 120);
-    ellipse2.GraphInfo.FillColor = Color.DarkRed;
-    graph.Shapes.Add(ellipse2);
+        // Create second ellipse and set its fill color
+        var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(200, 150, 180, 120)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.DarkRed 
+            }
+        };
+        graph.Shapes.Add(ellipse2);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
 
-    // Save PDF file
-    document.Save(dataDir + "DrawingEllipse_out.pdf");
+        // Save PDF file
+        document.Save(dataDir + "DrawingEllipse_out.pdf");
+    }
 }
 ```
 
@@ -162,39 +187,62 @@ public static void EllipseFilled()
 Aspose.PDF for .NET supports to add text inside the Graph Object. Text property of Graph Object provides option to set text of the Graph Object. The following code snippet shows how to add text inside a Rectangle object.
 
 ```csharp
-public static void EllipseWithText()
+private static void EllipseWithText()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 400);
 
-    var textFragment = new TextFragment("Ellipse");
-    textFragment.TextState.Font = FontRepository.FindFont("Helvetica");
-    textFragment.TextState.FontSize = 24;
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    var ellipse1 = new Ellipse(100, 100, 120, 180);
-    ellipse1.GraphInfo.FillColor = Color.GreenYellow;
-    ellipse1.Text = textFragment;
-    graph.Shapes.Add(ellipse1);
+        // Create TextFragment for adding text to shapes
+        var textFragment = new Aspose.Pdf.Text.TextFragment("Ellipse")
+        {
+            TextState =
+            {
+                Font = Aspose.Pdf.Text.FontRepository.FindFont("Helvetica"),
+                FontSize = 24
+            }
+        };
 
-    var ellipse2 = new Ellipse(200, 150, 180, 120);
-    ellipse2.GraphInfo.FillColor = Color.DarkRed;
-    ellipse2.Text = textFragment;
-    graph.Shapes.Add(ellipse2);
+        // Create first ellipse and set properties
+        var ellipse1 = new Aspose.Pdf.Drawing.Ellipse(100, 100, 120, 180)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.GreenYellow 
+            },
+            Text = textFragment
+        };
+        graph.Shapes.Add(ellipse1);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        // Create second ellipse and set properties
+        var ellipse2 = new Aspose.Pdf.Drawing.Ellipse(200, 150, 180, 120)
+        {
+            GraphInfo = 
+            { 
+                FillColor = Aspose.Pdf.Color.DarkRed 
+            },
+            Text = textFragment
+        };
+        graph.Shapes.Add(ellipse2);
 
-    // Save PDF file
-    document.Save(dataDir + "DrawingEllipseText_out.pdf");
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
+
+        // Save PDF file
+        document.Save(dataDir + "DrawingEllipseText_out.pdf");
+    }
 }
  ```
 
