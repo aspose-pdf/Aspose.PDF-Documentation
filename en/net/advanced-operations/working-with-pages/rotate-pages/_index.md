@@ -129,7 +129,7 @@ private static void FittingThePageContentToTheNewPageOrientation()
     {
         foreach (Page page in document.Pages)
         {
-            Rectangle r = page.MediaBox;
+            Aspose.Pdf.Rectangle r = page.MediaBox;
             // New height the same
             double newHeight = r.Height;
             // New width is expanded proportionally to make orientation landscape
