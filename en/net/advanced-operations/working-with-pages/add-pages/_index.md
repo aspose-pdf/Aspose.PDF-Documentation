@@ -121,7 +121,6 @@ a few lines of code:
 ```cs
 private static void InsertAnEmptyPageWithParameters()
 {
-    //...
     var page = document.Pages.Insert(2);
     //copy page parameters from page 1
     page.ArtBox = document.Pages[1].ArtBox;
