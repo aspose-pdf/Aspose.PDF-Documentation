@@ -89,4 +89,28 @@ draft: false
 
 
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ChangingFieldAppearance-ChangingFieldAppearance.cs" >}}
+```csharp
+private static void AddFieldAndSetAttributes()
+{
+    // Define the path to the directory containing the input PDF
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open the existing PDF document
+    var doc = new Aspose.Pdf.Document(dataDir + "FilledForm.pdf");
+
+    // Create an instance of FormEditor to manipulate form fields
+    var formEditor = new Aspose.Pdf.Facades.FormEditor(doc);
+
+    // Add a new text field to the form on page 1 at the specified coordinates and size
+    formEditor.AddField(Aspose.Pdf.Facades.FieldType.Text, "text1", 1, 200, 550, 300, 575);
+
+    // Set the field attribute to make the text field required (user must fill it)
+    formEditor.SetFieldAttribute("text1", Aspose.Pdf.Facades.PropertyFlag.Required);
+
+    // Set a character limit for the field (maximum 20 characters)
+    formEditor.SetFieldLimit("text1", 20);
+
+    // Save the modified PDF with the added field and attributes
+    formEditor.Save(dataDir + "ChangingFieldAppearance_out.pdf");
+}
+```

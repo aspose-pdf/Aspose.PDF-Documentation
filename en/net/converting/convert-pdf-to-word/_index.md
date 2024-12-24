@@ -120,10 +120,11 @@ The following C# code snippet shows converting a PDF file into DOC format.
 2. Save it to **SaveFormat.Doc** format by calling **Document.Save()** method.
 
 ```csharp
-public static void ConvertPDFtoWord()
+private static void ConvertPDFtoWord()
 {
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    Document document = new Document(dataDir + "PDFToDOC.pdf");
+    var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf");
     // Save the file into MS document format
     document.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
 }
@@ -140,22 +141,25 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 - [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) is used to switch on bullet recognition during conversion.
 
 ```csharp
-public static void ConvertPDFtoWordDocAdvanced()
+private static void ConvertPDFtoWordDocAdvanced()
 {
-    var pdfFile = dataDir + "PDF-to-DOC.pdf";
-    var docFile = dataDir + "PDF-to-DOC.doc";
-    Document document = new Document(pdfFile);
-    DocSaveOptions saveOptions = new DocSaveOptions
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open the source PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "PDF-to-DOC.pdf");
+    // Instantiate DocSaveOptions object
+    var saveOptions = new Aspose.Pdf.DocSaveOptions
     {
-        Format = DocSaveOptions.DocFormat.Doc,
+        // Set format to save MS document
+        Format = Aspose.Pdf.DocSaveOptions.DocFormat.Doc,
         // Set the recognition mode as Flow
-        Mode = DocSaveOptions.RecognitionMode.Flow,
+        Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.Flow,
         // Set the Horizontal proximity as 2.5
         RelativeHorizontalProximity = 2.5f,
         // Enable the value to recognize bullets during the conversion process
         RecognizeBullets = true
     };
-    document.Save(docFile, saveOptions);
+    // Save the file into MS document with save options
+    document.Save(dataDir + "PDF-to-DOC.doc", saveOptions);
 }
 ```
 
@@ -179,12 +183,13 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 2. Save it to **SaveFormat.DocX** format by calling **Document.Save()** method.
 
 ```csharp
-public static void ConvertPDFtoWord_DOCX_Format()
+private static void ConvertPDFtoWord_DOCX_Format()
 {
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    Document document = new Document(dataDir + "PDFToDOC.pdf");
-    // Save the resultant DOC file
-    document.Save(dataDir + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+    var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf");
+    // Save the file into MS document format
+    document.Save(dataDir + "PDFtoDOC.docx", SaveFormat.DocX);
 }
 ```
 
@@ -195,21 +200,22 @@ The main difference between Flow and Enhanced Flow is that tables (both with and
 There is also recognition of numbered lists and many other minor things.
 
 ```csharp
-public static void ConvertPDFtoWord_Advanced_DOCX_Format()
-{    
+private static void ConvertPDFtoWord_Advanced_DOCX_Format()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    Document document = new Document(dataDir + "PDFToDOC.pdf");
+    var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf");
 
     // Instantiate DocSaveOptions object
-    DocSaveOptions saveOptions = new DocSaveOptions
+    DocSaveOptions saveOptions = new Aspose.Pdf.DocSaveOptions
     {
-        // Specify the output format as DOCX
-        Format = DocSaveOptions.DocFormat.DocX
-        // Set other DocSaveOptions params
-        Mode = DocSaveOptions.RecognitionMode.EnhancedFlow
+        // Set format to save MS document
+        Format = Aspose.Pdf.DocSaveOptions.DocFormat.DocX,
+        // Set the recognition mode as EnhancedFlow
+        Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.EnhancedFlow
     };
-    // Save document in docx format
-    document.Save("ConvertToDOCX_out.docx", saveOptions);
+    // Save the file into MS document format
+    document.Save("PDFToDOC.docx", saveOptions);
 }
 ```
 

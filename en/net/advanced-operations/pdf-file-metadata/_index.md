@@ -113,20 +113,17 @@ private static void GetFileInformation()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void GetFileInformation()
+private static void GetPDFFileInformation()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf");
+    // Open the document
+    var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf");
 
     // Get document information
     var docInfo = document.Info;
 
-    // Show document information
+    // Display document information
     Console.WriteLine("Author: {0}", docInfo.Author);
     Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
     Console.WriteLine("Keywords: {0}", docInfo.Keywords);
@@ -186,27 +183,25 @@ private static void SetFileInformation()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void SetFileInformation()
+private static void SetPDFFileInformation()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "SetFileInfo.pdf");
+    // Open the document
+    var document = new Aspose.Pdf.Document(dataDir + "SetFileInfo.pdf");
 
     // Specify document information
-    var docInfo = new Aspose.Pdf.DocumentInfo(document);
+    var docInfo = new Aspose.Pdf.DocumentInfo(document)
+    {
+        Author = "Aspose",
+        CreationDate = DateTime.Now,
+        Keywords = "Aspose.Pdf, DOM, API",
+        ModDate = DateTime.Now,
+        Subject = "PDF Information",
+        Title = "Setting PDF Document Information"
+    };
 
-    docInfo.Author = "Aspose";
-    docInfo.CreationDate = DateTime.Now;
-    docInfo.Keywords = "Aspose.Pdf, DOM, API";
-    docInfo.ModDate = DateTime.Now;
-    docInfo.Subject = "PDF Information";
-    docInfo.Title = "Setting PDF Document Information";
-
-    // Save output document
+    // Save the output document
     document.Save(dataDir + "SetFileInfo_out.pdf");
 }
 ```
@@ -225,41 +220,17 @@ The following code snippet shows you how to get metadata from the PDF file.
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void GetXmpMetadata()
+private static void GetXMPMetadata()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf"))
-    {
-        // Get properties
-        Console.WriteLine(document.Metadata["xmp:CreateDate"]);
-        Console.WriteLine(document.Metadata["xmp:Nickname"]);
-        Console.WriteLine(document.Metadata["xmp:CustomProperty"]);
-    }
-}
-```
-{{< /tab >}}
+    // Open the document
+    var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf");
 
-{{< tab tabNum="2" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void GetXmpMetadata()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-    // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf");
-
-    // Get properties
-    Console.WriteLine(document.Metadata["xmp:CreateDate"]);
-    Console.WriteLine(document.Metadata["xmp:Nickname"]);
-    Console.WriteLine(document.Metadata["xmp:CustomProperty"]);
+    // Get and display properties
+    Console.WriteLine($"Create Date: {document.Metadata["xmp:CreateDate"]}");
+    Console.WriteLine($"Nickname: {document.Metadata["xmp:Nickname"]}");
+    Console.WriteLine($"Custom Property: {document.Metadata["xmp:CustomProperty"]}");
 }
 ```
 {{< /tab >}}
@@ -278,46 +249,19 @@ The following code snippet shows you how to set metadata in a PDF file.
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void SetXmpMetadata()
+private static void SetXMPMetadata()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
-    {
-        // Set properties
-        document.Metadata["xmp:CreateDate"] = DateTime.Now;
-        document.Metadata["xmp:Nickname"] = "Nickname";
-        document.Metadata["xmp:CustomProperty"] = "Custom Value";
-
-        // Save document
-        document.Save(dataDir + "SetXMPMetadata_out.pdf");
-    }
-}
-```
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void SetXmpMetadata()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-    // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf");
+    // Open the document
+    var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf");
 
     // Set properties
-    document.Metadata["xmp:CreateDate"] = DateTime.Now;
+    document.Metadata["xmp:CreateDate"] = DateTime.Now.ToString("o");
     document.Metadata["xmp:Nickname"] = "Nickname";
     document.Metadata["xmp:CustomProperty"] = "Custom Value";
 
-    // Save document
+    // Save the document
     document.Save(dataDir + "SetXMPMetadata_out.pdf");
 }
 ```
@@ -331,41 +275,20 @@ Some developers need to create a new metadata namespace with a prefix. The follo
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void InsertMetadataWithPrefix()
+private static void SetPrefixMetadata()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
-    {
-        document.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
-        document.Metadata["xmp:ModifyDate"] = DateTime.Now;
+    // Open the document
+    var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf");
 
-        // Save document
-        document.Save(dataDir + "SetPrefixMetadata_out.pdf");
-    }
-}
-```
-{{< /tab >}}
+    // Register a namespace URI for the 'xmp' prefix
+    document.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
 
-{{< tab tabNum="2" >}}
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // Set the metadata property using the registered prefix
+    document.Metadata["xmp:ModifyDate"] = DateTime.Now.ToString("o"); // ISO 8601 format for datetime
 
-private static void InsertMetadataWithPrefix()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-    // Open document
-    using var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf");
-    document.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // Xmlns prefix was removed
-    document.Metadata["xmp:ModifyDate"] = DateTime.Now;
-
-    // Save document
+    // Save the updated document
     document.Save(dataDir + "SetPrefixMetadata_out.pdf");
 }
 ```
