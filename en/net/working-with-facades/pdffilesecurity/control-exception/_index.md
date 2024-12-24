@@ -85,7 +85,6 @@ private static void ControlExceptionPDFFile()
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
-        // Bind PDF document to PdfFileSecurity object
         fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
         // Disallow exceptions
         fileSecurity.AllowExceptions = false;
@@ -96,7 +95,7 @@ private static void ControlExceptionPDFFile()
             Console.WriteLine("Something wrong...");
             Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
         }
-        // Save output PDF file 
+        // Save the document
         fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
 }
@@ -115,7 +114,6 @@ private static void ControlExceptionPDFFile2()
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
-        // Bind PDF document to PdfFileSecurity object
         fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
         // Allow exceptions
         fileSecurity.AllowExceptions = true;
@@ -129,7 +127,7 @@ private static void ControlExceptionPDFFile2()
             Console.WriteLine("Something wrong...");
             Console.WriteLine($"Exception: {ex.Message}");
         }
-        // Save output PDF file
+        // Save the document
         fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
 }

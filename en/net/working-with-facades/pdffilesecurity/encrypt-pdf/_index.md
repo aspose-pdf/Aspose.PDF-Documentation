@@ -108,7 +108,7 @@ private static void EncryptPDFFile()
         // Encrypt file using 256-bit encryption
         fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", DocumentPrivilege.Print, KeySize.x256,
             Algorithm.AES);
-        // Save output PDF file
+        // Save the document
         fileSecurity.Save(dataDir + "sample_encrypted.pdf");
     }
 }

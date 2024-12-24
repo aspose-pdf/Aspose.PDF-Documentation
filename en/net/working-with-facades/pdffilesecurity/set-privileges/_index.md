@@ -86,19 +86,18 @@ private static void SetPrivilege1()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Create DocumentPrivileges object.
+    // Create DocumentPrivileges object and set needed privileges
     var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    // Create PdfFileSecurity object
     using(PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege
         fileSecurity.SetPrivilege(privilege);
-        // Save output PDF file
+        // Save the document.
         fileSecurity.Save(dataDir + "sample_privileges.pdf");
     }
 }
@@ -114,19 +113,18 @@ private static void SetPrivilegeWithPassword()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Create DocumentPrivileges object
+    // Create DocumentPrivileges object and set needed privileges
     var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    // Create PdfFileSecurity object
     using(var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege and passwords.
         fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
-        // Save output PDF file
+        // Save the document
         fileSecurity.Save(dataDir + "sample_privileges.pdf");
     }
 }
@@ -162,7 +160,7 @@ private static void RemoveExtendedRights()
         {
             pdfSign.RemoveUsageRights();
         }
-        // Save output PDF file 
+        // Save the document
         pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
     }
 }

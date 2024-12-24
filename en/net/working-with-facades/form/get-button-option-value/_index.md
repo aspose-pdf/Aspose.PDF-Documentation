@@ -86,7 +86,6 @@ private static void GetButtonOptions()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
-        // Open Document
         pdfForm.BindPdf(dataDir + "FormField.pdf");
 
         // Get button option values
@@ -116,7 +115,6 @@ private static void GetCurremtButtonOptionValue()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
-        // Open Document
         pdfForm.BindPdf(dataDir + "FormField.pdf");
 
         // Get button option values

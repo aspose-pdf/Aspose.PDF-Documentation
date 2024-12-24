@@ -120,17 +120,17 @@ private static void SignDocument(string pfxFilePath, string password)
     string inFile = dataDir + "DigitallySign.pdf";
     string outFile = dataDir + "DigitallySign_out.pdf";
     
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(inFile))
     {
         // Instantiate PdfFileSignature object
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            // Create PKCS#7 object for sign.
+            // Create PKCS#7 object for sign
             var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
             // Sign PDF file
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
-            // Save output PDF file
+            // Save the document
             signature.Save(outFile);
         }
     }
@@ -150,16 +150,17 @@ private static void SignDocument(string pfxFilePath, string password)
     string inFile = dataDir + "DigitallySign.pdf";
     string outFile = dataDir + "DigitallySign_out.pdf";
     
+    // Open the document
     using (var document = new Aspose.Pdf.Document(inFile))
     {
-        // Instantiate PdfFileSignature object
+        // Instantiate PdfFileSignature object using the opened document.
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            // Create PKCS#7 detached object for sign.
+            // Create PKCS#7 detached object for sign
             var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(pfxFilePath, password, DigestHashAlgorithm.Sha256);
             // Sign PDF file
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200),pkcs);
-            // Save output PDF file
+            // Save the document
             signature.Save(outFile);
         }
     }
@@ -178,7 +179,7 @@ private static void Verify()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the PDF document from the specified file
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Create an instance of PdfFileSignature for working with signatures in the document
@@ -217,20 +218,20 @@ private static void SignWithTimeStampServer(string pfxFilePath, string password)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the PDF document from the specified file
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
     {
         // Create an instance of PdfFileSignature for working with signatures in the document
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
-            // Create TimestampSettings settings.
+            // Create TimestampSettings settings
             var timestampSettings = new Aspose.Pdf.TimestampSettings("https://freetsa.org/tsr", string.Empty); // User/Password can be omitted
             pkcs.TimestampSettings = timestampSettings;
             System.Drawing.Rectangle rect = new System.Drawing.Rectangle(100, 100, 200, 100);
             // Create any of the three signature types
             signature.Sign(1, "Signature Reason", "Contact", "Location", true, rect, pkcs);
-            // Save output PDF file
+            // Save the document
             signature.Save(dataDir + "DigitallySignWithTimeStamp_out.pdf");
         }
     }
@@ -281,7 +282,7 @@ private static void SignWithBase64Certificate(string pfxFilePath, string passwor
         pdfSign.Sign(1, "second approval", "second_user@example.com", "Australia", false,
             new System.Drawing.Rectangle(200, 200, 200, 100),
             sign);
-        // Save output PDF file
+        // Save the document
         pdfSign.Save(dataDir + "SignWithBase64Certificate_out.pdf");
     }
 }
@@ -339,7 +340,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
         pkcs7.CustomSignHash = CustomSignHash;
         // Sign the file
         sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
-        // Save output PDF file
+        // Save the document
         sign.Save(dataDir + "SignWithCertificate_out.pdf");
     }
 
@@ -403,7 +404,7 @@ To sign a PDF document using ECDSA, the general steps in C# would be:
   
 private static void VerifyEcda(string signedPdf)
 {
-    // Open the PDF document from the specified file
+    // Open the document
     using (var document = new Aspose.Pdf.Document(signedPdf))
     {
         // Create an instance of PdfFileSignature for working with signatures in the document
@@ -436,7 +437,7 @@ private static void SignEcdsa(string pfxFilePath, string password)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
     
-    // Open the PDF document from the specified input file
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Create an instance of PdfFileSignature to sign the document
@@ -448,7 +449,7 @@ private static void SignEcdsa(string pfxFilePath, string password)
             // Sign the first page of the document, setting the signature's appearance at the specified location
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
 
-            // Save the signed document to the specified output file
+            // Save the document
             signature.Save(dataDir + "SignEcdsa_out.pdf");
         }
     }

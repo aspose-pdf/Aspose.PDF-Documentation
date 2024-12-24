@@ -91,7 +91,6 @@ private static void RemoveSignature()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        // Open PDF document
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
         // Get list of signature names
         var sigNames = pdFileSignature.GetSignNames();
@@ -102,7 +101,7 @@ private static void RemoveSignature()
             pdFileSignature.RemoveSignature(sigNames[index]);
         }
 
-        // Save updated PDF file
+        // Save the document
         pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
 }
@@ -121,13 +120,12 @@ private static void RemoveSignatureButKeepField()
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Open PDF document
+    {       
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
 
         pdFileSignature.RemoveSignature("Signature1", false);
 
-        // Save updated PDF file
+        // Save the document
         pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
 }
@@ -144,8 +142,7 @@ private static void RemoveSignatureButKeepField2()
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
-        // Open PDF document
+    {       
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
 
         var sigNames = pdFileSignature.GetSignNames();
@@ -154,7 +151,7 @@ private static void RemoveSignatureButKeepField2()
             pdFileSignature.RemoveSignature(sigName, false);
         }
 
-        // Save updated PDF file
+        // Save the document
         pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
 }

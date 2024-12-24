@@ -103,7 +103,7 @@ private static void ChangePassword()
             {
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
                 fileSecurity.ChangePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.Print, KeySize.x256);
-                // Save output PDF file
+                // Save the document
                 fileSecurity.Save(dataDir + "sample_encrtypted1.pdf");
             }
         }

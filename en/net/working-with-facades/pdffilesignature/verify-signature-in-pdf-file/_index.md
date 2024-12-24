@@ -90,7 +90,7 @@ private static void IsPdfSigned()
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
-    {
+    {      
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
         if (pdFileSignature.ContainsSignature())
         {

@@ -185,7 +185,7 @@ private static void SupressLocationReason()
         var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
 
         pdfFileSignature.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
-        // Save output PDF file
+        // Save the document
         pdfFileSignature.Save(dataDir + "DigitallySign.pdf");
     }
 }
@@ -223,7 +223,7 @@ private static void CustomizationFeaturesForDigitalSign()
         signature.CustomAppearance = signatureCustomAppearance;
 
         pdfFileSignature.Sign(1, true, rect, signature);
-        // Save output PDF file
+        // Save the document
         pdfFileSignature.Save(dataDir + "DigitallySign.pdf");
     }
 }
@@ -252,10 +252,10 @@ private static void ChangeLanguageInDigitalSignText()
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         pdfFileSignature.BindPdf(inFile);
-        //create a rectangle for signature location
+        // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
 
-        //create any of the three signature types
+        // Create any of the three signature types
         var pkcs = new Aspose.Pdf.Forms.PKCS7(dataDir + "test01.pfx", "Aspose2021")
         {
             Reason = "Pruebas Firma",
@@ -277,9 +277,9 @@ private static void ChangeLanguageInDigitalSignText()
         };
         // Set signature appearance
         pkcs.CustomAppearance = signatureCustomAppearance;
-        // sign the PDF file
+        // Sign the PDF file
         pdfFileSignature.Sign(1, true, rect, pkcs);
-        //save output PDF file
+        // Save the document
         pdfFileSignature.Save(outFile);
     }
 }

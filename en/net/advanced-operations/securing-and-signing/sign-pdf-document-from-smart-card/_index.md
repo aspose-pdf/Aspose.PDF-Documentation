@@ -96,7 +96,7 @@ private static void GetSignatureInfo()
     // Open a document stream.
     using (var fs = new FileStream(dataDir + "blank.pdf", FileMode.Open, FileAccess.ReadWrite))
     {
-        // Load the document
+        // Open the document from stream
         using (var document = new Aspose.Pdf.Document(fs))
         {
             // Create a signature field
@@ -127,7 +127,7 @@ private static void GetSignatureInfo()
             document.Form.Add(field1, 1);
             // Sign the document
             field1.Sign(externalSignature);
-            // Save result file in place
+            // Save the document
             document.Save(dataDir + "externalSignature1.pdf");
         }
     }
@@ -138,6 +138,7 @@ private static void VerifyExternalSignature()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "externalSignature1.pdf"))
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
@@ -165,11 +166,11 @@ private void SignWithSmartCard()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "blank.pdf"))
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
         {   
-            // Bind PDF document to PdfFileSignature object
             pdfSign.BindPdf(document);
 
             // Sign with certificate selection in the windows certificate store
@@ -183,7 +184,7 @@ private void SignWithSmartCard()
             pdfSign.SignatureAppearance = dataDir + "demo.png";
             // Sign the document
             pdfSign.Sign(1, "Reason", "Contact", "Location", true, new System.Drawing.Rectangle(100, 100, 200, 200), externalSignature);
-            // Save result file
+            // Save the document
             pdfSign.Save(dataDir + "externalSignature2.pdf");
         }
     }
@@ -194,6 +195,7 @@ private static void VerifyExternalSignature()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "externalSignature1.pdf"))
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
@@ -225,17 +227,17 @@ private static void SignWithExternalService()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "blank.pdf"))
     {
         using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
         {
-            // Bind PDF document to PdfFileSignature object
             sign.BindPdf(document);
             
             // Get public certificate.
             System.Security.Cryptography.X509Certificates.X509Certificate2 signerCert = GetPublicCertificate();
             
-            // Set certificate an digest algorithm
+            // Set a certificate and a digest algorithm
             var signature = new Aspose.Pdf.Forms.ExternalSignature(signerCert, DigestHashAlgorithm.Sha256);
 
             // Define a delegate to external sign
@@ -246,7 +248,7 @@ private static void SignWithExternalService()
             // Set a sign hash
             signature.CustomSignHash = customSignHash;
             sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), signature);
-            // Save result file
+            // Save the document
             sign.Save(dataDir + "externalSignature.pdf");
         }
     }

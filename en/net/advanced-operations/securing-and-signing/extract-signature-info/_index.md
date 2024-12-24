@@ -93,6 +93,7 @@ private static void ExtractImagesFromSignatureField()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
     {
         // Searching for signature fields
@@ -139,6 +140,7 @@ private static void ExtractCertificate()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
         // Searching for signature fields
@@ -177,6 +179,7 @@ You can get information about document signature algorithms.
 
 private void GetSignaturesInfo(string signedPdfDocument)
 {
+    // Open the document
     using (var document = new Aspose.Pdf.Document(signedPdfDocument))
     {
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))

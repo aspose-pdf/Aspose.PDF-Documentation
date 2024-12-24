@@ -91,7 +91,7 @@ private static void ImportDataFromXml()
             // Import data
             pdfForm.ImportXml(xmlInputStream);           
 
-            // Save updated document
+            // Save the document
             pdfForm.Save(dataDir + "ImportDataFromXML_out.pdf");
         }
     }
@@ -149,7 +149,7 @@ private static void ImportDataFromPdfIntoPdf()
             // Import data
             pdfForm.ImportFdf(fdfInputStream);         
 
-            // Save updated document
+            // Save the document
             pdfForm.Save(dataDir + "ImportDataFromPdf_out.pdf");
         }
     }
@@ -178,7 +178,7 @@ private static void ExportDataToPdfFromPdf()
             // Export data
             pdfForm.ExportFdf(fdfOutputStream);           
 
-            // Save updated document
+            // Save the document
             pdfForm.Save(dataDir + "ExportDataToPdf_out.pdf"); 
         }
     }
@@ -256,8 +256,7 @@ private static void ExportValuesFromFieldsToJSON()
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
     
     using (var form = new Aspose.Pdf.Facades.Form())
-    {
-        // Open Document
+    {       
         form.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Create XFDF file
@@ -283,8 +282,7 @@ private static void ImportValuesFromJsonToForm()
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var form = new Aspose.Pdf.Facades.Form())
-    {
-        // Open Document
+    {        
         form.BindPdf("Sample-Form-01.pdf");
 
         // Create XFDF file
