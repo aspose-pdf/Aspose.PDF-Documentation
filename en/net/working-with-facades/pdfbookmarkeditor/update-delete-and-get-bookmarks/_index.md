@@ -77,38 +77,313 @@ draft: false
 
 In order to update an existing bookmark in a PDF file, you need to use [ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) method. This method takes two arguments: source title (the title of the bookmark to modify), destination title (the title to be replaced). You need to create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to call [ModifyBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/modifybookmarks) method, and then save the updated PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to modify an existing bookmark in a PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void UpdateExistingBookmark()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-UpdateBookmark-UpdateBookmark.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "UpdateBookmark.pdf");
+
+        // Modify the existing bookmark, assigning a new title
+        bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title");
+
+        // Save the updated PDF file
+        bookmarkEditor.Save(dataDir + "UpdateBookmark_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void UpdateExistingBookmark()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "UpdateBookmark.pdf");
+
+    // Modify the existing bookmark, assigning a new title
+    bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title");
+
+    // Save the updated PDF file
+    bookmarkEditor.Save(dataDir + "UpdateBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Delete All Bookmarks from the PDF File
 
 You can delete all the bookmarks from the PDF file using [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) method without any parameters. First of all, you need to create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind the input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to call the [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) method and then save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to delete all the bookmarks from the PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void DeleteAllBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-DeleteAllBookmarks-DeleteAllBookmarks.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "DeleteAllBookmarks.pdf");
+
+        // Delete all bookmarks in the document
+        bookmarkEditor.DeleteBookmarks();
+
+        // Save the updated PDF file
+        bookmarkEditor.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void DeleteAllBookmarks()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "DeleteAllBookmarks.pdf");
+
+    // Delete all bookmarks in the document
+    bookmarkEditor.DeleteBookmarks();
+
+    // Save the updated PDF file
+    bookmarkEditor.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Delete a Particular Bookmark from a PDF File
 
 In order to delete a particular bookmark, you need to call [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) method with string (title) parameter. The *title* here represents the bookmark to be deleted from the PDF. Create an object of [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, call [DeleteBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/methods/deletebookmarks) method and then save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to delete a particular bookmark from a PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void DeleteParticularBookmark()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-DeleteABookmark-DeleteABookmark.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "DeleteABookmark.pdf");
+
+        // Delete a bookmark with the title "Page2"
+        bookmarkEditor.DeleteBookmarks("Page2");
+
+        // Save the updated PDF file
+        bookmarkEditor.Save(dataDir + "DeleteABookmark_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void DeleteParticularBookmark()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "DeleteABookmark.pdf");
+
+    // Delete a bookmark with the title "Page2"
+    bookmarkEditor.DeleteBookmarks("Page2");
+
+    // Save the updated PDF file
+    bookmarkEditor.Save(dataDir + "DeleteABookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Get Bookmarks from the PDF Document Facades
 
 The [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) class provides the feature to manipulate Bookmarks in existing PDF file. It provides various properties to get/set information regarding bookmarks. The following code snippet shows how to get information related to each bookmark in PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void GetBookmarksFromDocument()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-GetFromPDF-GetFromPDF.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "GetFromPDF.PDF");
+
+        // Extract all bookmarks from the document
+        Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+        // Iterate through each bookmark and display information
+        foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+        {
+            // Get the title information of bookmark item
+            Console.WriteLine("Title: {0}", bookmark.Title);
+
+            // Get the destination page for bookmark
+            Console.WriteLine("Page Number: {0}", bookmark.PageNumber);
+
+            // Get the information related to associated action with bookmark
+            Console.WriteLine("Bookmark Action: " + bookmark.Action);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void GetBookmarksFromDocument()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "GetFromPDF.PDF");
+
+    // Extract all bookmarks from the document
+    Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+    // Iterate through each bookmark and display information
+    foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+    {
+        // Get the title information of bookmark item
+        Console.WriteLine("Title: {0}", bookmark.Title);
+
+        // Get the destination page for bookmark
+        Console.WriteLine("Page Number: {0}", bookmark.PageNumber);
+
+        // Get the information related to associated action with bookmark
+        Console.WriteLine("Bookmark Action: " + bookmark.Action);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Extract Bookmarks from an Existing PDF File
 
-[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) method allows you to extract bookmarks from a PDF file. In order to extract the bookmarks, you need to create [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) object and bind the PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to call [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) method. The [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) method returns [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks/methods/index) object. You can then loop through these bookmarks and get individual [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects. Finally, save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to export bookmarks to an XML file.
+[ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) method allows you to extract bookmarks from a PDF file. In order to extract the bookmarks, you need to create [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) object and bind the PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to call [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) method. The [ExtractBookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/extractbookmarks/methods/3) method returns [Bookmarks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmarks/methods/index) object. You can then loop through these bookmarks and get individual [Bookmark](https://reference.aspose.com/pdf/net/aspose.pdf.facades/bookmark) objects. Finally, you can export the bookmarks to an XML file using the [ExportBookmarksToXML](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor/exportbookmarkstoxml) method. The following code snippet shows you how to export bookmarks to an XML file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void ExtractBookmarksFromPDFFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-ExtractBookmarks-ExtractBookmarks.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
+
+        // Extract bookmarks from the document
+        Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+        // Iterate through each extracted bookmark
+        foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+        {
+            // Get the title information of bookmark item
+            Console.WriteLine("Title: {0}", bookmark.Title);
+
+            // Get the destination page for bookmark
+            Console.WriteLine("Page Number: {0}", bookmark.PageNumber);
+        }
+
+        // Export bookmarks to an XML file
+        bookmarkEditor.ExportBookmarksToXML(dataDir + "bookmarks.xml");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void ExtractBookmarksFromPDFFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
+
+    // Extract bookmarks from the document
+    Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+    // Iterate through each extracted bookmark
+    foreach (Aspose.Pdf.Facades.Bookmark bookmark in bookmarks)
+    {
+        // Get the title information of bookmark item
+        Console.WriteLine("Title: {0}", bookmark.Title);
+
+        // Get the destination page for bookmark
+        Console.WriteLine("Page Number: {0}", bookmark.PageNumber);
+    }
+
+    // Export bookmarks to an XML file
+    bookmarkEditor.ExportBookmarksToXML(dataDir + "bookmarks.xml");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
