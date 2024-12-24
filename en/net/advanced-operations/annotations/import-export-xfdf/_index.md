@@ -92,54 +92,55 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to export annotations to an XFDF file:
 
 ```csharp
-// The path to the documents directory.
-private const string dataDir = "..\\..\\..\\..\\Samples\\";
+private static void ExportAnnotationsToXfdf()
+{
+    // Initialize data directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-/// <summary>
-/// Importing annotations from XFDF file
-/// XML Forms Data Format (XFDF) file created by Adobe Acrobat, a PDF authoring application;
-/// stores descriptions of page form elements and their values, such as the names and values for
-/// text fields; used for saving form data that can be imported into a PDF document.       
-/// You can import annotation data from the XFDF file to PDF using
-/// the ImportAnnotationsFromXfdf method in PdfAnnotationEditor class.
-/// </summary>
-// Create PdfAnnotationEditor object
-PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+    // Create PdfAnnotationEditor object
+    var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-// Bind PDF document to the Annotation Editor
-AnnotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
+    // Bind PDF document to the Annotation Editor
+    annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
 
-// Export annotations
-var fileStream = File.OpenWrite(dataDir + "exportannotations.xfdf");
-var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
-AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
-fileStream.Flush();
-fileStream.Close();
+    // Define the annotation types to export
+    var annotType = new Aspose.Pdf.Annotations.AnnotationType[] { Aspose.Pdf.Annotations.AnnotationType.Line, Aspose.Pdf.Annotations.AnnotationType.Square };
+
+    // Export annotations to XFDF file
+    using (var fileStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+    {
+        annotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
+        fileStream.Flush();
+    }
+}
 ```
 
-The next code snippet describes how import annotations to an XFDF file:
+The next code snippet describes how import annotations from an XFDF file:
 
 ```csharp
-public static void ImportAnnotationXFDF()
+private static void ImportAnnotationXFDF()
 {
+    // Initialize data directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
     // Create PdfAnnotationEditor object
-    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+    var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
+
     // Create a new PDF document
-    var document = new Document();
+    var document = new Aspose.Pdf.Document();
     document.Pages.Add();
-    AnnotationEditor.BindPdf(document);
 
+    // Bind the PDF document to the Annotation Editor
+    annotationEditor.BindPdf(document);
+
+    // Define the export file name
     var exportFileName = dataDir + "exportannotations.xfdf";
-    if (!File.Exists(exportFileName))
-    {
-        ExportAnnotationXFDF();
-    }
 
-    // Import annotation
-    AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+    // Import annotations from the XFDF file
+    annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
 
-    // Save output PDF
-    document.Save(dataDir + "AnnotationDemo2.pdf");
+    // Save the output PDF
+    document.Save(dataDir + "AnnotationDemo2_out.pdf");
 }
 ```
 
@@ -148,29 +149,27 @@ public static void ImportAnnotationXFDF()
 In the code below an ImportAnnotations method allows import annotations directly from another PDF doc.
 
 ```csharp
-/// <summary>
-/// ImportAnnotations method allow import annotations directly from another PDF doc
-/// </summary>
-public static void ImportAnnotationFromPDF()
+private static void ImportAnnotationFromPDF()
 {
-    // Create PdfAnnotationEditor object
-    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+    // Initialize data directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open existing PDF document (one page with annotations)
+    var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf");
+
     // Create a new PDF document
-    var document = new Document();
-    document.Pages.Add();
-    AnnotationEditor.BindPdf(document);
-    var exportFileName = dataDir + "exportannotations.xfdf";
-    if (!File.Exists(exportFileName))
+    var documentTo = new Aspose.Pdf.Document();
+    documentTo.Pages.Add();
+
+    // Export/import
+    using (var ms = new MemoryStream())
     {
-        ExportAnnotationXFDF();
+        documentFrom.ExportAnnotationsToXfdf(ms);
+        documentTo.ImportAnnotationsFromXfdf(ms);
     }
 
-    // Annotation Editor allows import annotations from several PDF documents,
-    // but in this example, we use only one.
-    AnnotationEditor.ImportAnnotations(new[] { dataDir + "AnnotationDemo1.pdf" });
-
-    // Save output PDF
-    document.Save(dataDir + "AnnotationDemo3.pdf");
+    // Save the output PDF
+    documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
 }
 ```
 

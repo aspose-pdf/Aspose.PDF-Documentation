@@ -88,35 +88,38 @@ You can add Watermark Text using [WatermarkAnnotation](https://reference.aspose.
 Please check the following code snippet to add WatermarkAnnotation.
 
 ```csharp
- //Load a Document
-Document document = new Document("source.pdf");
+private static void AddWatermarkAnnotation()
+{
+    // Initialize data directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-//Load Page object to add Annotation
-Page page = document.Pages[1];
+    // Load the PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "source.pdf");
 
-//Create Annotation
-WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
+    // Load Page object to add Annotation
+    var page = document.Pages[1];
 
-//Add annotaiton into Annotation collection of Page
-page.Annotations.Add(wa);
+    // Create Watermark Annotation
+    var wa = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
 
-//Create TextState for Font settings
-Text.TextState ts = new Text.TextState();
+    // Add annotation into Annotation collection of Page
+    page.Annotations.Add(wa);
 
-ts.ForegroundColor = Aspose.Pdf.Color.Blue;
-ts.Font = FontRepository.FindFont("Times New Roman");
+    // Create TextState for Font settings
+    var ts = new Aspose.Pdf.Text.TextState();
+    ts.ForegroundColor = Aspose.Pdf.Color.Blue;
+    ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+    ts.FontSize = 32;
 
-ts.FontSize = 32;
+    // Set opacity level of Annotation Text
+    wa.Opacity = 0.5;
 
-//Set opacity level of Annotaiton Text
+    // Add Text in Annotation
+    wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
-wa.Opacity = 0.5;
-//Add Text in Annotation
-
-wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
-
-//Save the Document
-document.Save("Output.pdf");
+    // Save the Document
+    document.Save(dataDir + "Output_out.pdf");
+}
 ```
 
 ## Add Reference of a single Image multiple times in a PDF Document
@@ -124,19 +127,33 @@ document.Save("Output.pdf");
 Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. We have added a new method XImageCollection.Add(XImage) in Aspose.PDF for .NET 17.1.0. This method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
 
 ```csharp
-Aspose.Pdf.Rectangle imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
-
-using (Document document = new Document("input.pdf"))
+private static void AddWatermarkAnnotationWithImage()
 {
-    using (var imageStream = File.Open("icon.png", FileMode.Open))
+    // Initialize data directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Define the rectangle for the image
+    var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
+
+    // Load the PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Open the image stream
+    using (var imageStream = File.Open(dataDir + "icon.png", FileMode.Open))
     {
         XImage image = null;
+
+        // Iterate through each page in the document
         foreach (Page page in document.Pages)
         {
-            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.Rect);
+            // Create a Watermark Annotation
+            var annotation = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, page.Rect);
             XForm form = annotation.Appearance["N"];
             form.BBox = page.Rect;
+
             string name;
+
+            // Add the image to the form resources if it hasn't been added yet
             if (image == null)
             {
                 name = form.Resources.Images.Add(imageStream);
@@ -146,15 +163,23 @@ using (Document document = new Document("input.pdf"))
             {
                 name = form.Resources.Images.Add(image);
             }
-            form.Contents.Add(new Operator.GSave());
-            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
-            form.Contents.Add(new Operator.Do(name));
-            form.Contents.Add(new Operator.GRestore());
+
+            // Add operators to the form contents to place the image
+            form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+            form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+            form.Contents.Add(new Aspose.Pdf.Operators.Do(name));
+            form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+            // Add the annotation to the page
             page.Annotations.Add(annotation, false);
+
+            // Adjust the image rectangle size for the next iteration
             imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
         }
     }
-    document.Save("output.pdf");
+
+    // Save the document
+    document.Save(dataDir + "output_out.pdf");
 }
 ```
 
