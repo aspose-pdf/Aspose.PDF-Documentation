@@ -88,10 +88,10 @@ In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://ref
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void DecryptPDFFile()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using(var pdfFileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample_encrypted.pdf"))

@@ -81,10 +81,10 @@ Once the object of a particular signature type is created, you can use the [Sign
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
   
 private static void AddPdfFileSignature()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -111,10 +111,10 @@ The following code example shows us the ability to sign a document with two sign
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void AddTwoSignature()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -153,10 +153,10 @@ You need to create an object of [PdfFileSignature](https://reference.aspose.com/
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void AddPdfFileSignatureField()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -185,10 +185,10 @@ If our document has two fields, the algorithm for signing it is similar to the f
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void AddPdfFileSignatureField2()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())

@@ -81,10 +81,10 @@ To extract signature information, we have introduced the ExtractCertificate(..) 
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ExtractSignatureInfo()
 { 
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     string input = dataDir + "DigitallySign.pdf";
@@ -126,10 +126,10 @@ In order to extract signature information, we have introduced the ExtractImage(.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ExtractSignatureImage()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var signature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -166,10 +166,10 @@ Aspose.PDF functionality allows flexible configuration for digital sign instance
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void SupressLocationReason()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -197,10 +197,10 @@ Aspose.PDF for .NET allows customization features for a digital sign. The Sign m
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void CustomizationFeaturesForDigitalSign()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -241,10 +241,10 @@ Each of provided signatures contains a set of configuration properties implement
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ChangeLanguageInDigitalSignText()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     string inFile = dataDir + "sample01.pdf";
     string outFile = dataDir + "DigitallySign.pdf";

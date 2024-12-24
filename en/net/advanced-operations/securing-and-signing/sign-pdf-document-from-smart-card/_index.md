@@ -87,10 +87,10 @@ Following are the code snippets to sign a PDF document from a smart card:
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void GetSignatureInfo()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open a document stream.
@@ -135,9 +135,9 @@ private static void GetSignatureInfo()
 
 private static void VerifyExternalSignature()
 {    
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open document.
     using (var document = new Aspose.Pdf.Document(dataDir + "externalSignature1.pdf"))
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
@@ -159,10 +159,10 @@ private static void VerifyExternalSignature()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private void SignWithSmartCard()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var document = new Aspose.Pdf.Document(dataDir + "blank.pdf"))
@@ -191,7 +191,6 @@ private void SignWithSmartCard()
 
 private static void VerifyExternalSignature()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
@@ -219,9 +218,10 @@ It will be chosen automatically if you do not explicitly specify the hashing alg
 The ExternalSignature constructor also accepts a key certificate (it can be in Base64 format). You can pass a certificate containing a private key and a certificate containing only a public key. In either case, the signature will be performed externally in the CustomSignHash delegate code, but the external algorithm must create a signature corresponding to the key of the passed certificate. The certificate is needed to generate the signed document correctly. ECDSA signature does not support SHA-1.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SignWithExternalService()
-{
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+{    
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     

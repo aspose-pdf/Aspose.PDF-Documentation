@@ -84,10 +84,10 @@ To set privileges on a PDF file, create an object of the [DocumentPrivilege](htt
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void SetPrivilegesOnExistingPdfFile()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Load a source PDF file
@@ -121,10 +121,10 @@ The following code snippet shows you how to encrypt PDF files.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void EncryptPdfFile()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var document = new Aspose.Pdf.Document(dataDir + "Encrypt.pdf"))
@@ -148,10 +148,10 @@ In order to decrypt the PDF file, you first need to create a [Document](https://
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void DecryptPdfFile()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open a document with a password
@@ -176,10 +176,10 @@ The following code snippet shows you how to change the password of a PDF file.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ChangePassword()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     // Open a document with a password
@@ -217,10 +217,10 @@ Sometimes there is a requirement to determine the correct password from an array
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void DetermineCorrectPasswordFromArray()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Load source PDF file

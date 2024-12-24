@@ -87,10 +87,10 @@ In order to extract signature information, we have introduced the [ExtractImage]
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ExtractImagesFromSignatureField()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
@@ -133,10 +133,10 @@ To extract signature information, we have introduced the [ExtractCertificate](ht
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ExtractCertificate()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
@@ -174,7 +174,6 @@ You can get information about document signature algorithms.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private void GetSignaturesInfo(string signedPdfDocument)
 {

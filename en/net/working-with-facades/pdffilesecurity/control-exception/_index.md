@@ -77,10 +77,10 @@ draft: false
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ControlExceptionPDFFile()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
@@ -107,10 +107,10 @@ If you set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.fac
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
 
 private static void ControlExceptionPDFFile2()
 {   
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
