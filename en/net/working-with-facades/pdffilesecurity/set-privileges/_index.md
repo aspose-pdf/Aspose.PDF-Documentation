@@ -79,10 +79,11 @@ draft: false
 To set a PDF file's privileges, create a [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and call the SetPrivilege method. You can specify the privileges using the DocumentPrivilege object and then pass this object to the SetPrivilege method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void SetPrivilege1()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Create DocumentPrivileges object.
@@ -106,10 +107,11 @@ private static void SetPrivilege1()
 See the following method with specifying a password:
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void SetPrivilegeWithPassword()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Create DocumentPrivileges object
@@ -146,12 +148,14 @@ Starting Aspose.PDF for .NET 9.5.0, names of following methods are updated. Plea
 The following code shows ho to remove usage rights from the document:
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void RemoveExtendedRights()
 {
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
     
-    // Create PdfFileSecurity object
     using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         pdfSign.BindPdf(dataDir + "DigitallySign.pdf");

@@ -82,13 +82,13 @@ To verify whether a PDF file is signed using a [particular signature](/pdf/net/w
 The following code snippet shows you how to verify whether PDF is signed using a given signature.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void IsPdfSigned()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Create PdfFileSignature object
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
@@ -107,13 +107,13 @@ private static void IsPdfSigned()
 To determine if a file is singed, without providing the signature name, use the following code.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void IsPdfSignedWithGivenSignature()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Create PdfFileSignature object
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
@@ -130,13 +130,13 @@ private static void IsPdfSignedWithGivenSignature()
 [VerifySignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/verifysignature) method of [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class allows you to validate a particular signature. This method requires signature name as input and returns true if the signature is valid. The following code snippet shows you how to validate a signature.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void IsPdfSignatureValid()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Create PdfFileSignature object
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");

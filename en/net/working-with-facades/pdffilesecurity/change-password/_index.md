@@ -87,19 +87,18 @@ In order to change password of a PDF file, you need to create [PdfFileSecurity](
 The following code snippet shows you how to change passwords of a PDF file.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void ChangePassword()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-    // Create PdfFileInfo object
     using (var pdfFileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample_encrypted.pdf"))
     {
-        // Create PdfFileSecurity object if the document is encrypted.
+        // Create PdfFileSecurity object if the document is encrypted
         if (pdfFileInfo.IsEncrypted)
         {
-            // Create PdfFileSecurity object
             using (PdfFileSecurity fileSecurity = new PdfFileSecurity())
             {
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");

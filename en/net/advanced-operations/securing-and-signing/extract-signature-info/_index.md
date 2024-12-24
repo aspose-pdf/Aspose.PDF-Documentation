@@ -86,16 +86,16 @@ Aspose.PDF for .NET supports the feature to digitally sign the PDF files using t
 In order to extract signature information, we have introduced the [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) method to the SignatureField class. Please take a look at the following code snippet which demonstrates the steps to extract an image from the SignatureField object:
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void ExtractImagesFromSignatureField()
 {
-    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-    // Open a document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
     {
-        // Searching for signature fields.
+        // Searching for signature fields
         foreach (var field in document.Form)
         {
             var sf = field as Aspose.Pdf.Forms.SignatureField;
@@ -132,16 +132,16 @@ Aspose.PDF for .NET supports the feature to digitally sign the PDF files using t
 To extract signature information, we have introduced the [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) method to the [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private static void ExtractCertificate()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open document.
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
-        // Searching for signature fields.
+        // Searching for signature fields
         foreach (var field in document.Form)
         {
             var sf = field as Aspose.Pdf.Forms.SignatureField;
@@ -149,13 +149,13 @@ private static void ExtractCertificate()
             {
                 continue;
             }
-            // Extract certificate.
+            // Extract certificate
             Stream cerStream = sf.ExtractCertificate();
             if (cerStream == null)
             {
                 continue;
             }
-            // Save certificate.
+            // Save certificate
             using (cerStream)
             {
                 byte[] bytes = new byte[cerStream.Length];
@@ -173,6 +173,9 @@ private static void ExtractCertificate()
 You can get information about document signature algorithms.
 
 ```csharp
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// The path to the documents directory
+
 private void GetSignaturesInfo(string signedPdfDocument)
 {
     using (var document = new Aspose.Pdf.Document(signedPdfDocument))
