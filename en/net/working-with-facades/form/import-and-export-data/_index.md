@@ -118,10 +118,7 @@ private static void ExportDataToXml()
         using (var xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
         {
             // Export data
-            pdfForm.ExportXml(xmlOutputStream);           
-
-            // Close the document
-            pdfForm.Dispose();
+            pdfForm.ExportXml(xmlOutputStream);
         }
     }
 }

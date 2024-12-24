@@ -219,7 +219,7 @@ The ExternalSignature constructor also accepts a key certificate (it can be in B
 
 private static void SignWithExternalService()
 {    
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open the document
@@ -256,7 +256,7 @@ private static X509Certificate2 GetPublicCertificate()
 
 private static byte[] CallExternalSignatureService(byte[] hash, DigestHashAlgorithm digestHashAlgorithm)
 {
-    // Calling a third-party service that provides a digital signature service
+    // Call a third-party service that provides a digital signature service
     // The method must return signed data
     // The digestHashAlgorithm argument points to the digest algorithm that was applied to the data to produce the value of the hash argument
 }
