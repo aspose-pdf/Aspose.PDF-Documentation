@@ -108,12 +108,12 @@ With Aspose.PDF for .NET, you can efficiently extract any embedded file which ma
 
 Following code snippet extracts all the embedded files from a PDF file:
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
 private static void ExtractEmbeddedFilesFromPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
     {
         // Save output in XML format
         document.Save(dataDir + "PDFToXML_out.xml", Aspose.Pdf.SaveFormat.MobiXml);
@@ -128,12 +128,12 @@ With Aspose.PDF, you can add mathematical expressions/formulas inside PDF docume
 ### Without preamble and document environment
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
 private static void LatexWithoutPreambleAndDocEnvironment()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Load source PDF file
-    using(var document = new Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add Page in Pages Collection
         var page = doc.Pages.Add();
@@ -145,7 +145,7 @@ private static void LatexWithoutPreambleAndDocEnvironment()
         var latexText1 = "$123456789+\\sqrt{1}+\\int_a^b f(x)dx$";
         var cell = row.Cells.Add();
         cell.Margin = new MarginInfo { Left = 20, Right = 20, Top = 20, Bottom = 20 };
-        // Second TeXFragment constructor bool parameter provides LaTeX paragraph indents elimination.
+        // Second TeXFragment constructor bool parameter provides LaTeX paragraph indents elimination
         var ltext1 = new Aspose.Pdf.TeXFragment(latexText1, true);
         cell.Paragraphs.Add(ltext1);
         // Add table inside page
@@ -164,7 +164,7 @@ private static void LatexWithPreambleAndDocEnvironment()
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add Page in Pages Collection
         var page = doc.Pages.Add();
@@ -208,7 +208,7 @@ private static void LatexTagsSupport()
     \end{proof}
     \end{document}";
 
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         var page = doc.Pages.Add();
         var latex = new Aspose.Pdf.TeXFragment(s);

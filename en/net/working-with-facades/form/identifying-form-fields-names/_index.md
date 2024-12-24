@@ -122,7 +122,7 @@ private static void IdentifyFormFieldsNames()
             "TextField" + i, allfields[i], 1, 
             box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
         }
-        // Close the document
+        // Save the document
         editor.Save(dataDir + "IdentifyFormFields_out.pdf");`
     }
 }
