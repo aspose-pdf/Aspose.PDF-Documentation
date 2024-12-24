@@ -189,7 +189,7 @@ Aspose.Pdf.Text.FontRepository.Sources.Add(new FolderFontSource("<user's path to
 #### Set up Aspose.PDF for .NET in Visual Studio Code
 - Install .NET SDK
 
-1. Visit the official ![Microsoft .NET website](https://dotnet.microsoft.com/download).
+1. Visit the official [Microsoft .NET website](https://dotnet.microsoft.com/download).
 2. Download the latest .NET SDK.
 3. Run the installer.
 4. Open a terminal and verify installation by running:

@@ -77,62 +77,175 @@ draft: false
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths.The following code snippet shows you how to make NUP using file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-MakeNUpUsingPaths-MakeNUpUsingPaths.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Make NUp
+    pdfEditor.MakeNUp(dataDir + "input.pdf", dataDir + "input2.pdf", "MakeNUpUsingPaths_out.pdf");
+}
+```
 
 ## Make NUp Using Page Size and File Paths
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths. You can also set the page size of the output PDF file using this overload.The following code snippet shows you how to make NUp using page size and file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-MakeNUpUsingPageSizeAndPaths-MakeNUpUsingPageSizeAndPaths.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupUsingPageSizeAndFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Make NUp
+    pdfEditor.MakeNUp(dataDir + "MultiplePages.pdf", dataDir + "MakeNUpUsingPageSizeAndPaths_out.pdf", 2, 3, PageSize.A5);
+}
+```
 
 ## Make NUp of PDF Using Page Size, Horizontal and Vertical Values, and File Paths
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF file and save it to the output PDF file. This overload allows you to make NUp using file paths. You can also set the page size of the output PDF file and horizontal and vertical number of pages on each output page using this overload. The following code snippet shows you how to make NUp using page size, horizontal and vertical values, and file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-UsingPageSizeHorizontalAndVerticalValues-UsingPageSizeHorizontalAndVerticalValues.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Make NUp
+    pdfEditor.MakeNUp(dataDir + "input.pdf", "UsingPageSizeHorizontalAndVerticalValues_out.pdf", 2, 3);
+}
+```
 
 ## Make NUp of PDF Using Array Of PDF Files and File Paths
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of an array of input PDF files and save them to a single output PDF file. This overload allows you to make NUp using file paths.The following code snippet shows you hot make NUp using array of PDF files and file paths.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-UsingArrayOfFilesAndPaths-UsingArrayOfFilesAndPaths.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create array of files
+    string[] filesArray = new string[2];
+    filesArray[0] = dataDir + "input.pdf";
+    filesArray[1] = dataDir + "input2.pdf";
+    // Make NUp
+    pdfEditor.MakeNUp(filesArray, dataDir + "UsingArrayOfFilesAndPaths_out.pdf", true);
+}
+```
 
 ## Make NUp of PDF Using Streams
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. The following code snippet shows you how to make NUp using streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-MakeNUpUsingStreams-MakeNUpUsingStreams.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream1 = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var inputStream2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+        {
+            using (var outputStream = new FileStream(dataDir + "MakeNUpUsingStreams_out.pdf", FileMode.Create))
+            {
+                // Make NUp
+                pdfEditor.MakeNUp(inputStream1, inputStream2, outputStream);
+            }
+        }
+    }
+}
+```
 
 ## Make NUp of PDF Using Page Size and Streams
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. You can also set the page size of the output PDF stream using this overload. The following code snippet shows you how to make NUp using page size and streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-MakeNUpUsingPageSizeAndStreams-MakeNUpUsingPageSizeAndStreams.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingPageSizeAndStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "MakeNUpUsingPageSizeAndStreams_out.pdf", FileMode.Create))
+        {
+            // Make NUp
+            pdfEditor.MakeNUp(inputStream, outputStream, 2, 3, PageSize.A5);    
+        }    
+    }
+}
+```
 
 ## Make NUp of PDF Using Page Size, Horizontal and Vertical Values, and Streams
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of the input PDF stream and save it to the output PDF stream. This overload allows you to make NUp using streams instead of file paths. You can also set the page size of the output PDF stream and horizontal and vertical number of pages on each output page using this overload. The following code snippet shows you how to make NUp using page size, horizontal and vertical values, and streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-UsingPageSizeHorizontalVerticalValuesAndStreams-UsingPageSizeHorizontalVerticalValuesAndStreams.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "UsingPageSizeHorizontalVerticalValuesAndStreams_out.pdf", FileMode.Create))
+        {
+            // Make NUp
+            pdfEditor.MakeNUp(inputStream, outputStream, 2, 3); 
+        }
+    }
+}
+```
 
 ## Make NUp of PDF Using Array Of PDF Files and Streams
 
 [MakeNUp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makenup/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make NUp of an array of input PDF streams and save them to a single output PDF stream. This overload allows you to make NUp using streams instead of file paths. The following code snippet shows you how to make NUp using array of PDF files using streams.
 
-
-
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-MakeNUp-UsingArrayOfFilesAndStreams-UsingArrayOfFilesAndStreams.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MakeNupOfPdfUsingArrayOfPdfFilesAndStreams()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var stream1 = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    {
+        using (var stream2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+        {
+            using (var outputStream = new FileStream(dataDir + "UsingArrayOfFilesAndStreams_out.pdf", FileMode.Create))
+            {
+                var fileStreams = new Stream[2];
+                fileStreams[0] = stream1;
+                fileStreams[1] = stream2;
+                // Make NUp
+                pdfEditor.MakeNUp(fileStreams, outputStream, true);
+            }
+        }
+    }
+}
+```

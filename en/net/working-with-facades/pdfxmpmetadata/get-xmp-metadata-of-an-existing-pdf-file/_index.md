@@ -75,22 +75,57 @@ draft: false
 
 In order to get XMP metadata from a PDF file, you need to create [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) object and bind the PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. You can pass specific XMP metadata properties to the [PdfXmpMetadata](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfxmpmetadata) object to get their values. The following code snippet shows you how to get XMP metadata from a PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create PdfXmpMetadata object
-PdfXmpMetadata xmpMetaData = new PdfXmpMetadata();
+public static void GetXmpMetadata()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
 
-// Bind pdf file to the object
-xmpMetaData.BindPdf(dataDir + "input.pdf");
+    // Create PdfXmpMetadata object
+    using (var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata())
+    {
+        // Bind pdf file to the object
+        xmpMetaData.BindPdf(dataDir + "GetXMPMetadata.pdf");
 
-// Get XMP Meta Data properties
-Console.WriteLine(": {0}", xmpMetaData[DefaultMetadataProperties.CreateDate].ToString());
-Console.WriteLine(": {0}", xmpMetaData[DefaultMetadataProperties.MetadataDate].ToString());
-Console.WriteLine(": {0}", xmpMetaData[DefaultMetadataProperties.CreatorTool].ToString());
-Console.WriteLine(": {0}", xmpMetaData["customNamespace:UserPropertyName"].ToString());
+        // Get XMP Meta Data properties
+        Console.WriteLine(": {0}", xmpMetaData[Aspose.Pdf.Facades.DefaultMetadataProperties.CreateDate].ToString());
+        Console.WriteLine(": {0}", xmpMetaData[Aspose.Pdf.Facades.DefaultMetadataProperties.MetadataDate].ToString());
+        Console.WriteLine(": {0}", xmpMetaData[Aspose.Pdf.Facades.DefaultMetadataProperties.CreatorTool].ToString());
+        Console.WriteLine(": {0}", xmpMetaData["customNamespace:UserPropertyName"].ToString());
 
-Console.ReadLine();
+        Console.ReadLine();
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void GetXmpMetadata()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
+
+    // Create PdfXmpMetadata object
+    using var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
+
+    // Bind pdf file to the object
+    xmpMetaData.BindPdf(dataDir + "GetXMPMetadata.pdf");
+
+    // Get XMP Meta Data properties
+    Console.WriteLine(": {0}", xmpMetaData[Aspose.Pdf.Facades.DefaultMetadataProperties.CreateDate].ToString());
+    Console.WriteLine(": {0}", xmpMetaData[Aspose.Pdf.Facades.DefaultMetadataProperties.MetadataDate].ToString());
+    Console.WriteLine(": {0}", xmpMetaData[Aspose.Pdf.Facades.DefaultMetadataProperties.CreatorTool].ToString());
+    Console.WriteLine(": {0}", xmpMetaData["customNamespace:UserPropertyName"].ToString());
+
+    Console.ReadLine();
+}
+```
+{{< /tab >}}
+{{< /tabs >}}

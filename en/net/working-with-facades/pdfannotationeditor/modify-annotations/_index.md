@@ -82,38 +82,57 @@ sitemap:
 For example, in the following code, consider changing the author in our annotation using [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
-public static void ModifyAnnotationsAuthor()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ModifyAnnotationsAuthor()
 {
-    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(dataDir + "sample_cats_dogs.pdf");
-    annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
-    annotationEditor.Save(dataDir + "ModifyAnnotationsAuthor.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Create PdfAnnotationEditor
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    {
+        // Bind PDF document
+        annotationEditor.BindPdf(dataDir + "input.pdf");
+        // Modify annotations author
+        annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
+        // Save document
+        annotationEditor.Save(dataDir + "ModifyAnnotationsAuthor_out.pdf");
+    }
 }
 ```
 
 The second method allows you to delete all the annotations of a specified type.
 
 ```csharp
-public static void ModifyAnnotations()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ModifyAnnotations()
 {
-    var document = new Document(dataDir + "sample_cats_dogs.pdf");
-    PdfAnnotationEditor annotationEditor = new PdfAnnotationEditor();
-    annotationEditor.BindPdf(document);
-
-    // Create a new object of type Annotation to modify annotation attributes
-    var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance();
-    Aspose.Pdf.Annotations.FreeTextAnnotation annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
-        document.Pages[1],
-        new Aspose.Pdf.Rectangle(1, 1, 1, 1),
-        defaultAppearance)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // Set new annotation attributees
-        Title = "Aspose.PDF Demo User",
-        Subject = "Technical Article"
-    };
-    // Modify annotations in the PDF file
-    annotationEditor.ModifyAnnotations(1, 1, annotation);
-    annotationEditor.Save(dataDir + "ModifyAnnotations.pdf");
+        // Create PdfAnnotationEditor
+        using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+        {
+            // Bind PDF document
+            annotationEditor.BindPdf(document);
+            // Create a new object of type Annotation to modify annotation attributes
+            var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance();
+            var annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
+                document.Pages[1],
+                new Aspose.Pdf.Rectangle(1, 1, 1, 1),
+                defaultAppearance)
+            {
+                // Set new annotation attributees
+                Title = "Aspose.PDF Demo User",
+                Subject = "Technical Article"
+            };
+            // Modify annotations in the PDF file
+            annotationEditor.ModifyAnnotations(1, 1, annotation);
+            // Save document
+            annotationEditor.Save(dataDir + "ModifyAnnotations_out.pdf");
+        }
+    }
 }
 ```
 

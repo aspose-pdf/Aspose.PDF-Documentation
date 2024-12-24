@@ -102,11 +102,37 @@ This article explains how to merge, combine or concatenate different PDF files i
 
 The following C# code snippet shows you how to concatenate PDF files using file paths.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-ConcatenateUsingPath.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenatePdfFilesUsingFilePaths()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Concatenate files
+    pdfEditor.Concatenate(dataDir + "input.pdf", dataDir + "input2.pdf", dataDir + "ConcatenateUsingPath_out.pdf");
+}
+```
 
 In some cases, when there are a lot of outlines, users may disable them with setting CopyOutlines to false and improve performance of concatenation.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateUsingPath-CopyOutline.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
+{ 
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Create PdfFileEditor object
+    var pfe = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Get files from dataDir
+    string[] files = Directory.GetFiles(dataDir);
+    // Setting CopyOutlines to false
+    pfe.CopyOutlines = false;
+    // Concatenate files
+    pfe.Concatenate(files, dataDir + "ConcatenateUsingPath_CopyOutlinesDisabled_out.pdf");
+}
+```
 
 ## Concatenate multiple PDF files using MemoryStreams
 
@@ -114,19 +140,119 @@ In some cases, when there are a lot of outlines, users may disable them with set
 
 The following C# code snippet shows you how to concatenate multiple PDF files using MemoryStreams:
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenateMultiplePDFUsingMemoryStream-ConcatenateMultiplePDFUsingMemoryStream.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+
+    string document1Path = dataDir + "document1.pdf";
+    string document2Path = dataDir + "document2.pdf";
+    string resultPdfPath = dataDir + "concatenated_out.pdf";
+    
+    // Create two file streams to read PDF files
+    using (var fs1 = new FileStream(document1Path, FileMode.Open, FileAccess.Read))
+    {
+        using (var fs2 = new FileStream(document2Path, FileMode.Open, FileAccess.Read))
+        {
+            // Create byte arrays to keep the contents of PDF files
+            var buffer1 = new byte[Convert.ToInt32(fs1.Length)];
+            var buffer2 = new byte[Convert.ToInt32(fs2.Length)];
+
+            var i = 0;
+            // Read PDF file contents into byte arrays
+            i = fs1.Read(buffer1, 0, Convert.ToInt32(fs1.Length));
+            i = fs2.Read(buffer2, 0, Convert.ToInt32(fs2.Length));
+
+            // Now, first convert byte arrays into MemoryStreams and then concatenate those streams
+            using (var pdfStream = new MemoryStream())
+            {
+                using (var fileStream1 = new MemoryStream(buffer1))
+                {
+                    using (var fileStream2 = new MemoryStream(buffer2))
+                    {
+                        // Create instance of PdfFileEditor class to concatenate streams
+                        var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+                        // Concatenate both input MemoryStreams and save to output MemoryStream
+                        pdfEditor.Concatenate(fileStream1, fileStream2, pdfStream);
+                        // Convert MemoryStream back to byte array
+                        var data = pdfStream.ToArray();
+                        // Create a FileStream to save the output PDF file
+                        using (var output = new FileStream(resultPdfPath, FileMode.Create, FileAccess.Write))
+                        {
+                            // Write byte array contents in the output file stream
+                            output.Write(data, 0, data.Length);
+                            // Close output file
+                            output.Close(); 
+                        }
+                    }
+                }
+            }
+            // Close input files
+            fs1.Close();
+            fs2.Close();
+        }
+    }
+}
+```
 
 ## Concatenate Array of PDF Files Using File Paths
 
 If you want to concatenate multiple PDF files, you can use the overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method, which allows you to pass an array of PDF files. The final output is saved as a merged file created from all the files in the array.The following C# code snippet shows you how to concatenate array of PDF files using file paths.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateArrayOfFilesWithPath-ConcatenateArrayOfFilesWithPath.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Create PdfFileEditor
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Array of files
+    var filesArray = new string[2];
+    filesArray[0] = dataDir + "input.pdf";
+    filesArray[1] = dataDir + "input2.pdf";
+    // Concatenate files
+    pdfEditor.Concatenate(filesArray, dataDir + "ConcatenateArrayOfPdfFilesUsingFilePaths_out.pdf");
+}
+```
 
 ## Concatenate Array of PDF Files Using Streams
 
 Concatenating an array of PDF files is not limited to only files residing on the disk. You can also concatenate an array of PDF files from streams. If you want to concatenate multiple PDF files, you can use the appropriate overload of the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. First, you need to create an array of input streams and one stream for output PDF and then call the [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) method. The output will be saved in the output stream.The following C# code snippet shows you how to concatenate array of PDF files using streams.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-ConcatenateDocuments-ConcatenateArrayOfPdfUsingStreams-ConcatenateArrayOfPdfUsingStreams.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenateArrayOfPdfFilesUsingStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    
+    var document1Path = dataDir + "document1.pdf";
+    var document2Path = dataDir + "document2.pdf";
+    var resultPdfPath = dataDir + "ConcatenateArrayOfPdfUsingStreams_out.pdf";
+    
+    // Create PdfFileEditor object
+    PdfFileEditor pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Output stream
+    using (var outputStream = new FileStream(resultPdfPath, FileMode.Create))
+    {
+        using (var stream1 = new FileStream(document1Path, FileMode.Open))
+        {
+            using (var stream2 = new FileStream(document2Path, FileMode.Open))
+            {
+                // Array of streams
+                var inputStreams = new Stream[2];
+                inputStreams[0] = stream1;
+                inputStreams[1] = stream2;
+                // Concatenate file
+                pdfEditor.Concatenate(inputStreams, outputStream);
+            }   
+        }
+    }
+}
+```
 
 ## Concatenating all Pdf files in Particular folder
 
@@ -134,7 +260,22 @@ You can even read all the Pdf files in a particular folder at runtime and concat
 
 Please try using the following C# code snippet to achieve this functionality.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatingAllPdfFiles-ConcatenatingAllPdfFiles.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenatingAllPdfFilesInParticularFolder()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Retrieve names of all the Pdf files in a particular Directory
+    var fileEntries = Directory.GetFiles(dataDir, "*.pdf");
+    var resultPdfPath = dataDir + "ConcatenatingAllPdfFilesInParticularFolder_out.pdf";
+    // Instantiate PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Call Concatenate method of PdfFileEditor object to concatenate all input files
+    // Into a single output file
+    pdfEditor.Concatenate(fileEntries, resultPdfPath);
+}
+```
 
 ## Concatenate PDF Forms and keep fields names unique
 
@@ -142,7 +283,26 @@ Please try using the following C# code snippet to achieve this functionality.
 
 Please see the following simple code snippet to achieve this functionality.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePDFForms-ConcatenatePDFForms.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenatePdfFormsAndKeepFieldsUnique()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Set input and output file paths
+    var inputFile1 = dataDir + "inFile1.pdf";
+    var inputFile2 = dataDir + "inFile2.pdf";
+    var outFile = dataDir + "ConcatenatePDFForms_out.pdf";
+    // Open documents
+    var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // To keep unique field Id for all the fields 
+    fileEditor.KeepFieldsUnique = true;
+    // Format of the suffix which is added to field name to make it unique when forms are concatenated.
+    fileEditor.UniqueSuffix = "_%NUM%";
+    // Concatenate the files into a resultant Pdf file
+    fileEditor.Concatenate(inputFile1, inputFile2, outFile);
+}
+```
 
 ## Concatenate PDF files and create Table Of Contents
 
@@ -150,30 +310,185 @@ Please see the following simple code snippet to achieve this functionality.
 
 Please take a look over following code snippet for information on how to merge the PDF files.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-ConcatenatePdfFilesAndCreateTOC.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenatePdfFiles()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Set input and output file paths
+    var inputFile1 = dataDir + "input1.pdf";
+    var inputFile2 = dataDir + "input2.pdf";
+    var outFile = dataDir + "ConcatenatePdfFilesAndCreateTOC_out.pdf";
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+
+    using (var outputStream = new FileStream(outFile, FileMode.Create))
+    {
+        using (var stream1 = new FileStream(inputFile1, FileMode.Open))
+        {
+            using (var stream2 = new FileStream(inputFile2, FileMode.Open))
+            {
+                // Save concatenated output file
+                pdfEditor.Concatenate(stream1, stream2, outputStream);
+            }
+        }
+    }
+}
+```
 
 ### Insert blank page
 
 Once the PDF files have been merged, we can insert a blank page at the beginning of document on which can can create Table Of contents. In order to accomplish this requirement, we can load the merged file into **Document** object and we need to call Page.Insert(...) method to insert a blank page.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-InsertBlankPage.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertBlankPage()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Insert a blank page at the beginning of concatenated file to display Table of Contents
+    using (var document = new Aspose.Pdf.Document(dataDir + "Concatenated_Table_Of_Contents.pdf"))
+    {
+        // Insert a blank page in a PDF
+        document.Pages.Insert(1);
+    }
+}
+```
 
 ### Add Text Stamps
 
 In order to create a Table of Contents, we need to add Text stamps on first page using [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp) objects. Stamp class provides `BindLogo(...)` method to add [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) and we can also specify the location to add these text stamps using `SetOrigin(..)` method. In this article, we are concatenating two PDF files, so we need to create two text stamp objects pointing to these individual documents.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-AddTextStamps.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStampForTableOfContents()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var inputPdfFile = Path.Combine(dataDir, "input1.pdf");
+    // Set Text Stamp to display string Table Of Contents
+    var stamp = new Aspose.Pdf.Facades.Stamp();
+    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
+    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+    stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(inputPdfFile).GetPageWidth(1) / 3, 700);
+    // Set particular pages
+    stamp.Pages = new[] { 1 };
+}
+```
 
 ### Create local links
 
 Now we need to add links towards the pages inside the concatenated file. In order to accomplish this requirement, we can use `CreateLocalLink(..)` method of [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class. In following code snippet, we have passed Transparent as 4th argument so that the rectangle around link is not visible.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-CreateLocalLinks.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLocalLinks()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Now we need to add Heading for Table Of Contents and links for documents
+    var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+    // Bind the PDF file in which we added the blank page
+    contentEditor.BindPdf(dataDir + "Concatenated_Table_Of_Contents.pdf");
+    // Create link for first document
+    contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
+}
+```
 
 ### Complete code
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ConcatenatePdfFilesAndCreateTOC-CompletedCode.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CompleteCode()
+{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create a MemoryStream object to hold the resultant PDf file
+    using (var concatenatedStream = new MemoryStream())
+    {
+        using (var fs1 = new FileStream(dataDir + "input1.pdf", FileMode.Open))
+        {
+            using (var fs2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+            {
+                // Save concatenated output file
+                pdfEditor.Concatenate(fs1, fs2, concatenatedStream);
+            }
+        }
+        
+        using (var concatenatedPdfDocument = new Aspose.Pdf.Document(concatenatedStream))
+        {
+            // Insert a blank page at the beginning of concatenated file to display Table of Contents
+            concatenatedPdfDocument.Pages.Insert(1);
 
+            // Hold the result file with empty page added
+            using (var documentWithBlankPage = new MemoryStream())
+            {
+                // Save output file
+                concatenatedPdfDocument.Save(documentWithBlankPage);
+
+                using (var documentWithTocHeading = new MemoryStream())
+                {
+                    // Add Table Of Contents logo as stamp to PDF file
+                    var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp();
+                    // Find the input file
+                    fileStamp.BindPdf(documentWithBlankPage);
+
+                    // Set Text Stamp to display string Table Of Contents
+                    var stamp = new Aspose.Pdf.Facades.Stamp();
+                    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
+                    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+                    stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(documentWithBlankPage).GetPageWidth(1) / 3, 700);
+                    // Set particular pages
+                    stamp.Pages = new[] { 1 };
+                    // Add stamp to PDF file
+                    fileStamp.AddStamp(stamp);
+
+                    // Create stamp text for first item in Table Of Contents
+                    var document1Link = new Aspose.Pdf.Facades.Stamp();
+                    document1Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("1 - Link to Document 1", Color.Black, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
+                    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+                    document1Link.SetOrigin(150, 650);
+                    // Set particular pages on which stamp should be displayed
+                    document1Link.Pages = new[] { 1 };
+                    // Add stamp to PDF file
+                    fileStamp.AddStamp(document1Link);
+
+                    // Create stamp text for second item in Table Of Contents
+                    var document2Link = new Aspose.Pdf.Facades.Stamp();
+                    document2Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("2 - Link to Document 2", Color.Black, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
+                    // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
+                    document2Link.SetOrigin(150, 620);
+                    // Set particular pages on which stamp should be displayed
+                    document2Link.Pages = new[] { 1 };
+                    // Add stamp to PDF file
+                    fileStamp.AddStamp(document2Link);
+
+                    // Save updated PDF file
+                    fileStamp.Save(documentWithTocHeading);
+                    fileStamp.Close();
+
+                    // Now we need to add Heading for Table Of Contents and links for documents
+                    var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+                    // Bind the PDF file in which we added the blank page
+                    contentEditor.BindPdf(documentWithTocHeading);
+                    // Create link for first document
+                    contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
+                    // Create link for Second document
+                    // We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
+                    // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
+                    contentEditor.CreateLocalLink(new Rectangle(150, 620, 100, 20), new PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, Color.Transparent);
+
+                    // Save updated PDF
+                    contentEditor.Save(dataDir + "Concatenated_Table_Of_Contents.pdf");
+                }
+            }
+        }
+    }
+}
+```csharp
 
 ## Concatenate PDF files in folder
 
@@ -182,23 +497,17 @@ Now we need to add links towards the pages inside the concatenated file. In orde
 Please try using the following C# code snippet to achieve this functionality from Aspose.PDF:
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-
-// Retrieve names of all the Pdf files in a particular Directory
-string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
-
-// Get the current System date and set its format
-string date = DateTime.Now.ToString("MM-dd-yyyy");
-// Get the current System time and set its format
-string hoursSeconds = DateTime.Now.ToString("hh-mm");
-// Set the value for the final Resultant Pdf document
-string masterFileName = date + "_" + hoursSeconds + "_out.pdf";
-
-// Instantiate PdfFileEditor object
-Aspose.Pdf.Facades.PdfFileEditor pdfEditor = new PdfFileEditor();
-
-// Call Concatenate method of PdfFileEditor object to concatenate all input files
-// Into a single output file
-pdfEditor.Concatenate(fileEntries, dataDir + masterFileName);
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConcatenatePdfFilesInFolder()
+{ 
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Retrieve names of all the Pdf files in a particular Directory
+    string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
+    // Create PdfFileEditor
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Call Concatenate method of PdfFileEditor object to concatenate all input files
+    // Into a single output file
+    pdfEditor.Concatenate(fileEntries, dataDir + "concatenate_out.pdf");
+}
 ```

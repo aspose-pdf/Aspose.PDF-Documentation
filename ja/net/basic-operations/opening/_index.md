@@ -5,8 +5,6 @@ type: docs
 weight: 20
 url: /ja/net/open-pdf-document/
 description: C# Aspose.PDF for .NET PDFライブラリを使用してPDFファイルを開く方法を学びます。既存のPDF、ストリームからのドキュメント、暗号化されたPDFドキュメントを開くことができます。
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

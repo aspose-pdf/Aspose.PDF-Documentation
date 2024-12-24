@@ -84,15 +84,20 @@ A lot of users want to stamp their PDF documents with multi-line text. They usua
 Please refer to the following code chunk to add multi-line watermark in existing PDF.
 
 ```csharp
-// Instantiate a stamp object
-Stamp logoStamp = new Stamp();
+private static void AddTextStampToPdf()
+{
+    // Instantiate a stamp object
+    var logoStamp = new Aspose.Pdf.Facades.Stamp();
 
-// Instantiate an object of FormattedText class
-FormattedText formatText = new FormattedText("Hello World!",
-System.Drawing.Color.FromArgb(180, 0, 0), FontStyle.TimesItalic, EncodingType.Winansi, false, 50);
+    // Instantiate an object of FormattedText class
+    var formatText = new Aspose.Pdf.Facades.FormattedText("Hello World!",
+        System.Drawing.Color.FromArgb(180, 0, 0), 
+        Aspose.Pdf.Facades.FontStyle.TimesItalic,
+        Aspose.Pdf.Facades.EncodingType.Winansi, false, 50);
 
-// Add another line for Stamp
-formatText.AddNewLineText("Good Luck");
-// BindLogo to PDF
-logoStamp.BindLogo(formatText);
+    // Add another line for Stamp
+    formatText.AddNewLineText("Good Luck");
+    // BindLogo to PDF
+    logoStamp.BindLogo(formatText);
+}
 ```

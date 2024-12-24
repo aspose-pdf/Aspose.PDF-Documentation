@@ -86,32 +86,34 @@ The following code snippet shows you how to add text stamp in the PDF file.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Open document
-Document document = new Document(dataDir +  "AddTextStamp.pdf");
-
-// Create text stamp
-TextStamp textStamp = new TextStamp("Sample Stamp");
-// Set whether stamp is background
-textStamp.Background = true;
-// Set origin
-textStamp.XIndent = 100;
-textStamp.YIndent = 100;
-// Rotate stamp
-textStamp.Rotate = Rotation.on90;
-// Set text properties
-textStamp.TextState.Font = FontRepository.FindFont("Arial");
-textStamp.TextState.FontSize = 14.0F;
-textStamp.TextState.FontStyle = FontStyles.Bold;
-textStamp.TextState.FontStyle = FontStyles.Italic;
-textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
-// Add stamp to particular page
-document.Pages[1].AddStamp(textStamp);
-
-// Save output document
-document.Save(dataDir + "AddTextStamp_out.pdf");
+private static void AddTextStamp()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create text stamp
+        var textStamp = new Aspose.Pdf.TextStamp("Sample Stamp");
+        // Set whether stamp is background
+        textStamp.Background = true;
+        // Set origin
+        textStamp.XIndent = 100;
+        textStamp.YIndent = 100;
+        // Rotate stamp
+        textStamp.Rotate = Rotation.on90;
+        // Set text properties
+        textStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        textStamp.TextState.FontSize = 14.0F;
+        textStamp.TextState.FontStyle = FontStyles.Bold;
+        textStamp.TextState.FontStyle = FontStyles.Italic;
+        textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(textStamp);
+        // Save output document
+        document.Save(dataDir + "AddTextStamp_out.pdf");  
+    }
+}
 ```
 
 ## Define alignment for TextStamp object
@@ -122,33 +124,36 @@ The following code snippets shows an example on how to load an existing PDF docu
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Instantiate Document object with input file
-Document document = new Document(dataDir +  "DefineAlignment.pdf");
-// Instantiate FormattedText object with sample string
-FormattedText text = new FormattedText("This");
-// Add new text line to FormattedText
-text.AddNewLineText("is sample");
-text.AddNewLineText("Center Aligned");
-text.AddNewLineText("TextStamp");
-text.AddNewLineText("Object");
-// Create TextStamp object using FormattedText
-TextStamp stamp = new TextStamp(text);
-// Specify the Horizontal Alignment of text stamp as Center aligned
-stamp.HorizontalAlignment = HorizontalAlignment.Center;
-// Specify the Vertical Alignment of text stamp as Center aligned
-stamp.VerticalAlignment = VerticalAlignment.Center;
-// Specify the Text Horizontal Alignment of TextStamp as Center aligned
-stamp.TextAlignment = HorizontalAlignment.Center;
-// Set top margin for stamp object
-stamp.TopMargin = 20;
-// Add the stamp object over first page of document
-document.Pages[1].AddStamp(stamp);
-
-// Save the udpated document
-document.Save(dataDir + "StampedPDF_out.pdf");
+private static void DefineAlignmentForTextStampObject()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate FormattedText object with sample string
+        var text = new Aspose.Pdf.Facades.FormattedText("This");
+        // Add new text line to FormattedText
+        text.AddNewLineText("is sample");
+        text.AddNewLineText("Center Aligned");
+        text.AddNewLineText("TextStamp");
+        text.AddNewLineText("Object");
+        // Create TextStamp object using FormattedText
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        // Specify the Horizontal Alignment of text stamp as Center aligned
+        stamp.HorizontalAlignment = HorizontalAlignment.Center;
+        // Specify the Vertical Alignment of text stamp as Center aligned
+        stamp.VerticalAlignment = VerticalAlignment.Center;
+        // Specify the Text Horizontal Alignment of TextStamp as Center aligned
+        stamp.TextAlignment = HorizontalAlignment.Center;
+        // Set top margin for stamp object
+        stamp.TopMargin = 20;
+        // Add the stamp object over first page of document
+        document.Pages[1].AddStamp(stamp);
+        // Save the updated document
+        document.Save(dataDir + "StampedPDF_out.pdf");
+    }
+}
 ```
 
 ## Fill Stroke Text as Stamp in PDF File
@@ -159,32 +164,38 @@ Following code snippet demonstrates adding Fill Stroke Text:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-// Create TextState object to transfer advanced properties
-TextState ts = new TextState();
-// Set color for stroke
-ts.StrokingColor = Color.Gray;
-// Set text rendering mode
-ts.RenderingMode = TextRenderingMode.StrokeText;
-// Load an input PDF document
-Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Document(dataDir + "input.pdf"));
-
-Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-stamp.BindLogo(new Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Facades.EncodingType.Winansi, true, 78));
-
-// Bind TextState
-stamp.BindTextState(ts);
-// Set X,Y origin
-stamp.SetOrigin(100, 100);
-stamp.Opacity = 5;
-stamp.BlendingSpace = Facades.BlendingColorSpace.DeviceRGB;
-stamp.Rotation = 45.0F;
-stamp.IsBackground = false;
-// Add Stamp
-fileStamp.AddStamp(stamp);
-fileStamp.Save(dataDir + "ouput_out.pdf");
-fileStamp.Close();
+private static void FillStrokeTextAsStampInPdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Create TextState object to transfer advanced properties
+    var textState = new Aspose.Pdf.Text.TextState();
+    // Set color for stroke
+    textState.StrokingColor = Color.Gray;
+    // Set text rendering mode
+    textState.RenderingMode = TextRenderingMode.StrokeText;
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create PdfFileStamp
+        var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp(document);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Aspose.Pdf.Facades.EncodingType.Winansi, true, 78));
+        // Bind TextState
+        stamp.BindTextState(textState);
+        // Set X,Y origin
+        stamp.SetOrigin(100, 100);
+        stamp.Opacity = 5;
+        stamp.BlendingSpace = Aspose.Pdf.Facades.BlendingColorSpace.DeviceRGB;
+        stamp.Rotation = 45.0F;
+        stamp.IsBackground = false;
+        // Add Stamp
+        fileStamp.AddStamp(stamp);
+        fileStamp.Save(dataDir + "FillStrokeTextAsStampInPdfFile_out.pdf");
+        fileStamp.Close();
+    }
+}
 ```
 
 <script type="application/ld+json">

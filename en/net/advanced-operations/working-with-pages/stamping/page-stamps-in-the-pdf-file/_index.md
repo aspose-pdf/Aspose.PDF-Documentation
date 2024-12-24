@@ -83,38 +83,45 @@ A [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) c
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-public static void AddPageStamp()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStamp()
 {
-    var inputFileName = "sample-4pages.pdf";
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var inputFileName = "input.pdf";
     var outputFileName = "AddPageStamp_out.pdf";
     var pageStampFileName = "PageStamp.pdf";
-    var document = new Document(dataDir + inputFileName);
 
-    var bluePageStamp = new PdfPageStamp(dataDir + pageStampFileName, 1)
+    //Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + inputFileName))
     {
-        Height = 800,
-        Background = true
-    };
-
-    var plumPageStamp = new PdfPageStamp(dataDir + pageStampFileName, 2)
-    {
-        Height = 800,
-        Background = true
-    };
-
-    for (int i = 1; i < 5; i++)
-    {
-        if (i % 2 == 0)
+        //Create PdfPageStamps
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + pageStampFileName, 1)
         {
-            document.Pages[i].AddStamp(bluePageStamp);
-        }
-        else
+            Height = 800,
+            Background = true
+        };
+        var plumPageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + pageStampFileName, 2)
         {
-            document.Pages[i].AddStamp(plumPageStamp);
+            Height = 800,
+            Background = true
+        };
+        // Add stamps
+        for (var i = 1; i < 5; i++)
+        {
+            if (i % 2 == 0)
+            {
+                document.Pages[i].AddStamp(bluePageStamp);
+            }
+            else
+            {
+                document.Pages[i].AddStamp(plumPageStamp);
+            }
         }
+        // Save updated document
+        document.Save(dataDir + outputFileName);
     }
-
-    document.Save(dataDir + outputFileName);
 }
 ```
 
