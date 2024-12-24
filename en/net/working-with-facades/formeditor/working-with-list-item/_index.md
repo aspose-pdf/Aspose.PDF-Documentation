@@ -78,16 +78,28 @@ draft: false
 [AddListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/addlistitem) method allows you to add an item in a [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield) field. The first argument is the field name and second argument in the field item. You can either pass a single field item or you can pass an array of string contains a list of items. This method is provided by [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class. The following code snippet shows you how to add list items in a PDF file.
 
 ```csharp
-public static void AddListItem()
+private static void AddListItem()
 {
-    var editor = new FormEditor();
-    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
-    editor.AddField(FieldType.ListBox, "Country", 1, 232.56f, 476.75f, 352.28f, 514.03f);
-    editor.AddListItem("Country", "USA");
-    editor.AddListItem("Country", "Canada");
-    editor.AddListItem("Country", "France");
-    editor.AddListItem("Country", "Spain");
-    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
+    // Define the path to the directory containing the input PDF
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create an instance of FormEditor to manipulate form fields
+    var formEditor = new Aspose.Pdf.Facades.FormEditor();
+    
+    // Bind the input PDF file to the formEditor
+    formEditor.BindPdf(dataDir + "Sample-Form-01.pdf");
+
+    // Add a ListBox field for selecting country, placed at the specified coordinates on page 1
+    formEditor.AddField(Aspose.Pdf.Facades.FieldType.ListBox, "Country", 1, 232.56f, 476.75f, 352.28f, 514.03f);
+
+    // Add list items to the 'Country' ListBox field
+    formEditor.AddListItem("Country", "USA");
+    formEditor.AddListItem("Country", "Canada");
+    formEditor.AddListItem("Country", "France");
+    formEditor.AddListItem("Country", "Spain");
+
+    // Save the updated PDF with the list items added
+    formEditor.Save(dataDir + "Sample-Form-01-mod.pdf");
 }
 ```
 
@@ -96,11 +108,21 @@ public static void AddListItem()
 [DelListItem](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/dellistitem) method allows you to delete a particular item from the [ListBox](https://reference.aspose.com/pdf/net/aspose.pdf.forms/listboxfield). The first parameter is the field name while second parameter is the item which you want to delete from the list. This method is provided by [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class. The following code snippet shows you how to delete a list item from the PDF file.
 
 ```csharp
-public static void DelListItem()
+private static void DelListItem()
 {
-    var editor = new FormEditor();
-    editor.BindPdf(dataDir + "Sample-Form-04.pdf");
-    editor.DelListItem("Country", "France");
-    editor.Save(dataDir + "Sample-Form-04-mod.pdf");
+    // Define the path to the directory containing the input PDF
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create an instance of FormEditor to manipulate form fields
+    var formEditor = new Aspose.Pdf.Facades.FormEditor();
+
+    // Bind the input PDF file to the formEditor
+    formEditor.BindPdf(dataDir + "Sample-Form-04.pdf");
+
+    // Delete the list item "France" from the 'Country' ListBox field
+    formEditor.DelListItem("Country", "France");
+
+    // Save the updated PDF with the list item removed
+    formEditor.Save(dataDir + "Sample-Form-04-mod.pdf");
 }
 ```

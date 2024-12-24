@@ -112,15 +112,18 @@ In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following
 3. Use the **Save** method of the **Document** object to save the PDF as PPTX.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Load PDF document
-Document document = new Document(dataDir + "input.pdf");
-// Instantiate PptxSaveOptions instance
-Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
-// Save the output in PPTX format
-document.Save(dataDir + "PDFToPPT_out.pptx", pptx_save);
+private static void ConvertPDFToPPTX()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open the source PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Instantiate PptxSaveOptions object
+    var saveOptions = new Aspose.Pdf.PptxSaveOptions();
+
+    // Save the file in PPTX format
+    document.Save(dataDir + "PDFToPPT_out.pptx", saveOptions);
+}
 ```
 
 ## Convert PDF to PPTX with Slides as Images
@@ -136,16 +139,21 @@ Aspose.PDF for .NET presents you online free application ["PDF to PPTX"](https:/
 In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class. To achieve this, set property [SlidesAsImages](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) of [PptxSaveOptios](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class to 'true' as shown in the following code sample.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Load PDF document
-Document document = new Document(dataDir + "input.pdf");
-// Instantiate PptxSaveOptions instance
-Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
-// Save the output in PPTX format
-pptx_save.SlidesAsImages = true;
-document.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
+private static void ConvertPDFToPPTWithSlidesAsImages()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open the source PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Instantiate PptxSaveOptions object
+    var saveOptions = new Aspose.Pdf.PptxSaveOptions
+    {
+        SlidesAsImages = true
+    };
+
+    // Save the file in PPTX format with slides as images
+    document.Save(dataDir + "PDFToPPT_out_.pptx", saveOptions);
+}
 ```
 
 ## Progress Detail of PPTX Conversion
@@ -153,41 +161,51 @@ document.Save(dataDir + "PDFToPPT_out_.pptx", pptx_save);
 Aspose.PDF for .NET lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class provides [CustomProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Load PDF document
-Document document = new Document(dataDir + "input.pdf");
-// Instantiate PptxSaveOptions instance
-Aspose.Pdf.PptxSaveOptions pptx_save = new Aspose.Pdf.PptxSaveOptions();
+ private static void ConvertPDFToPPTWithCustomProgressHandler()
+ {
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
+     // Open the source PDF document
+     var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
-//Specify Custom Progress Handler
-pptx_save.CustomProgressHandler = ShowProgressOnConsole;
-// Save the output in PPTX format
-document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", pptx_save);
-```
+     // Instantiate PptxSaveOptions object
+     var saveOptions = new Aspose.Pdf.PptxSaveOptions();
 
-Following is the custom method for displaying progress conversion.
+     // Specify custom progress handler
+     saveOptions.CustomProgressHandler = ShowProgressOnConsole;
 
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-switch (eventInfo.EventType)
-{
-    case ProgressEventType.TotalProgress:
-        Console.WriteLine(String.Format("{0}  - Conversion progress : {1}% .", DateTime.Now.TimeOfDay, eventInfo.Value.ToString()));
-        break;
-    case ProgressEventType.ResultPageCreated:
-        Console.WriteLine(String.Format("{0}  - Result page's {1} of {2} layout created.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
-        break;
-    case ProgressEventType.ResultPageSaved:
-        Console.WriteLine(String.Format("{0}  - Result page {1} of {2} exported.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
-        break;
-    case ProgressEventType.SourcePageAnalysed:
-        Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.TimeOfDay, eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
-        break;
-    default:
-        break;
-}
+     // Save the file in PPTX format with progress tracking
+     document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", saveOptions);
+ }
+
+ // Define the method to handle progress events and display them on the console
+ private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)
+ {
+     switch (eventInfo.EventType)
+     {
+         case ProgressEventType.TotalProgress:
+             // Display overall progress of the conversion
+             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Conversion progress: {eventInfo.Value}%.");
+             break;
+
+         case ProgressEventType.ResultPageCreated:
+             // Display progress of the page layout creation
+             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Result page {eventInfo.Value} of {eventInfo.MaxValue} layout created.");
+             break;
+
+         case ProgressEventType.ResultPageSaved:
+             // Display progress of the page being exported
+             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Result page {eventInfo.Value} of {eventInfo.MaxValue} exported.");
+             break;
+
+         case ProgressEventType.SourcePageAnalysed:
+             // Display progress of the source page analysis
+             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Source page {eventInfo.Value} of {eventInfo.MaxValue} analyzed.");
+             break;
+
+         default:
+             break;
+     }
+ }
 ```
 
 ## See Also 

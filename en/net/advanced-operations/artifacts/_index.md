@@ -113,14 +113,24 @@ The following code snippet shows how to get all watermarks on the first page of 
 _Note:_ This code also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-var document = new Document(dataDir + "sample-w.pdf");
-var watermarks = document.Pages[1].Artifacts
-    .Where(artifact =>
-    artifact.Type == Artifact.ArtifactType.Pagination
-    && artifact.Subtype == Artifact.ArtifactSubtype.Watermark);
-foreach (WatermarkArtifact item in watermarks.Cast<WatermarkArtifact>())
+private static void ExtractWatermarkFromPDF()
 {
-    Console.WriteLine($"{item.Text} {item.Rectangle}");
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "sample-w.pdf");
+
+    // Get the watermarks from the first page artifacts
+    var watermarks = document.Pages[1].Artifacts
+        .Where(artifact =>
+            artifact.Type == Aspose.Pdf.Artifact.ArtifactType.Pagination
+            && artifact.Subtype == Aspose.Pdf.Artifact.ArtifactSubtype.Watermark);
+
+    // Iterate through the found watermark artifacts and print details
+    foreach (Aspose.Pdf.WatermarkArtifact item in watermarks.Cast<Aspose.Pdf.WatermarkArtifact>())
+    {
+        Console.WriteLine($"{item.Text} {item.Rectangle}");
+    }
 }
 ```
 
@@ -131,25 +141,49 @@ Background images can be used to add a watermark, or other subtle design, to doc
 The following code snippet shows how to add a background image to PDF pages using the BackgroundArtifact object.
 
 ```csharp
-var document = new Document(dataDir + "sample.pdf");
-var background = new BackgroundArtifact()
+private static void AddBackgroundImageToPDF()
 {
-    BackgroundImage = System.IO.File.OpenRead(dataDir + "background.jpg")
-};
-document.Pages[1].Artifacts.Add(background);
-document.Save(dataDir + "sample_artifacts_background.pdf");
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "sample.pdf");
+
+    // Create a new BackgroundArtifact and set the background image
+    var background = new Aspose.Pdf.BackgroundArtifact()
+    {
+        BackgroundImage = System.IO.File.OpenRead(dataDir + "background.jpg")
+    };
+
+    // Add the background image to the first page's artifacts
+    document.Pages[1].Artifacts.Add(background);
+
+    // Save the document with the added background
+    document.Save(dataDir + "sample_artifacts_background.pdf");
+}
 ```
 
 If you want, for some reason, to use a solid color background, please change the previous code in the following manner:
 
 ```csharp
-var document = new Document(dataDir + "sample.pdf");
-var background = new BackgroundArtifact()
+private static void AddBackgroundColorToPDF()
 {
-    BackgroundColor = Color.DarkKhaki,
-};
-document.Pages[1].Artifacts.Add(background);
-document.Save(dataDir + "sample_artifacts_background.pdf");
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "sample.pdf");
+
+    // Create a new BackgroundArtifact and set the background color
+    var background = new Aspose.Pdf.BackgroundArtifact()
+    {
+        BackgroundColor = Aspose.Pdf.Color.DarkKhaki
+    };
+
+    // Add the background color to the first page's artifacts
+    document.Pages[1].Artifacts.Add(background);
+
+    // Save the document with the applied background color
+    document.Save(dataDir + "sample_artifacts_background.pdf");
+}
 ```
 
 ## Counting Artifacts of a Particular Type
@@ -157,12 +191,22 @@ document.Save(dataDir + "sample_artifacts_background.pdf");
 To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code:
 
 ```csharp
-var document = new Document(dataDir + "sample.pdf");
-var paginationArtifacts = document.Pages[1].Artifacts.Where(artifact => artifact.Type == Artifact.ArtifactType.Pagination);
-Console.WriteLine("Watermarks: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Watermark));
-Console.WriteLine("Backgrounds: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Background));
-Console.WriteLine("Headers: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Header));
-Console.WriteLine("Footers: {0}", paginationArtifacts.Count(a => a.Subtype == Artifact.ArtifactSubtype.Footer));
+private static void CountPDFArtifacts()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the PDF document
+    var document = new Aspose.Pdf.Document(dataDir + "sample.pdf");
+
+    // Get pagination artifacts from the first page
+    var paginationArtifacts = document.Pages[1].Artifacts.Where(artifact => artifact.Type == Aspose.Pdf.Artifact.ArtifactType.Pagination);
+
+    // Count and display the number of each artifact type
+    Console.WriteLine("Watermarks: {0}", paginationArtifacts.Count(a => a.Subtype == Aspose.Pdf.Artifact.ArtifactSubtype.Watermark));
+    Console.WriteLine("Backgrounds: {0}", paginationArtifacts.Count(a => a.Subtype == Aspose.Pdf.Artifact.ArtifactSubtype.Background));
+    Console.WriteLine("Headers: {0}", paginationArtifacts.Count(a => a.Subtype == Aspose.Pdf.Artifact.ArtifactSubtype.Header));
+    Console.WriteLine("Footers: {0}", paginationArtifacts.Count(a => a.Subtype == Aspose.Pdf.Artifact.ArtifactSubtype.Footer));
+}
 ```
 
 <script type="application/ld+json">
