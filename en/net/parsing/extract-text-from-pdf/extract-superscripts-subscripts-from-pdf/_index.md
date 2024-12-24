@@ -89,20 +89,23 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSuperScriptsAndSubScripts(string inputFilePath, string outputFilePath)
+private static void ExtractSuperScriptsAndSubScripts()
 {
-	// Open document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Create an absorber
-		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-		document.Pages[1].Accept(absorber);
-		using (StreamWriter writer = new StreamWriter(outputFilePath))
-		{
-			// Write the extracted text in text file
-			writer.WriteLine(absorber.Text);
-		}
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SuperScriptExample.pdf"))
+    {
+        // Create an absorber
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        document.Pages[1].Accept(absorber);
+        using (StreamWriter writer = new StreamWriter(dataDir + "SuperScriptExample_out.txt"))
+        {
+            // Write the extracted text in text file
+            writer.WriteLine(absorber.Text);
+        }
+    }
 }
 ```
 
@@ -112,24 +115,27 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractSuperScriptsAndSubScriptsWithTextFragments(string inputFilePath, string outputFilePath)
+private static void ExtractSuperScriptsAndSubScriptsWithTextFragments()
 {
-	// Open document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Create an absorber
-		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-		document.Pages[1].Accept(absorber);
-		using (StreamWriter writer = new StreamWriter(outputFilePath))
-		{
-			foreach (var textFragment in absorber.TextFragments)
-			{
-				// Write the extracted text in text file
-				writer.Write(textFragment.Text);
-			}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-		}
-	}
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SuperScriptExample.pdf"))
+    {
+        // Create an absorber
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        document.Pages[1].Accept(absorber);
+        using (StreamWriter writer = new StreamWriter(dataDir + "SuperScriptExample_out.txt"))
+        {
+            foreach (var textFragment in absorber.TextFragments)
+            {
+                // Write the extracted text in text file
+                writer.Write(textFragment.Text);
+            }
+
+        }
+    }
 }
 ```
 

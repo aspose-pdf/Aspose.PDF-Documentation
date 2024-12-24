@@ -100,7 +100,8 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreatingAComplexPdf()
 {
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Initialize document object
     using (var document = new Aspose.Pdf.Document())
     {
@@ -134,7 +135,7 @@ private static void CreatingAComplexPdf()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1f, Aspose.Pdf.Color.DarkSlateGray),
             DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 0.5f, Aspose.Pdf.Color.Black),
             DefaultCellPadding = new Aspose.Pdf.MarginInfo(4.5, 4.5, 4.5, 4.5),
-            Margin = 
+            Margin =
             {
                 Bottom = 10
             },

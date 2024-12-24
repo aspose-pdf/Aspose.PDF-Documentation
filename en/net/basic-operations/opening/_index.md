@@ -86,13 +86,16 @@ There are several ways to open a document. The easiest is to specify a file name
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void OpenDocument(string inputFilePath)
+private static void OpenDocument()
 {
-	// Open document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		Console.WriteLine("Pages " + document.Pages.Count);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Load document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
+    {
+        Console.WriteLine("Pages " + document.Pages.Count);
+    }
 }
 ```
 
@@ -100,22 +103,25 @@ private static void OpenDocument(string inputFilePath)
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void OpenDocumentStream(string inputFilePath)
+private static void OpenDocumentStream()
 {
-	var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-	// Create a new WebClient instance.
-	var webClient = new WebClient();
-	// Concatenate the domain with the Web resource filename.
-	var strWebResource = remoteUri + inputFilePath;
-	Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", inputFilePath, strWebResource);
+    var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
 
-	var stream = new MemoryStream();
-	webClient.OpenRead(strWebResource)?.CopyTo(stream);
+    var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
+    // Create a new WebClient instance.
+    var webClient = new System.Net.WebClient();
+    // Concatenate the domain with the Web resource filename.
+    var strWebResource = remoteUri + fileName;
+    Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, strWebResource);
 
-	using (var document = new Aspose.Pdf.Document(stream))
-	{
-		Console.WriteLine("Pages " +document.Pages.Count);
-	}
+    var stream = new MemoryStream();
+    webClient.OpenRead(strWebResource)?.CopyTo(stream);
+
+    // Load document
+    using (var document = new Aspose.Pdf.Document(stream))
+    {
+        Console.WriteLine("Pages " + document.Pages.Count);
+    }
 }
 ```
 
@@ -123,20 +129,23 @@ private static void OpenDocumentStream(string inputFilePath)
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void OpenDocumentWithPassword(string inputFilePath)
+private static void OpenDocumentWithPassword()
 {
-	const string password = "Aspose2020";
-	try
-	{
-		// Open document
-		using (var document = new Document(inputFilePath, password))
-		{
-			Console.WriteLine("Pages " + document.Pages.Count);
-		}
-	}
-	catch (InvalidPasswordException e)
-	{
-		Console.WriteLine(e);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    const string password = "Aspose2020";
+    try
+    {
+        // Load document
+        using (var document = new Aspose.Pdf.Document(dataDir + "DocSite.pdf", password))
+        {
+            Console.WriteLine("Pages " + document.Pages.Count);
+        }
+    }
+    catch (Aspose.Pdf.InvalidPasswordException e)
+    {
+        Console.WriteLine(e);
+    }
 }
 ```

@@ -86,10 +86,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractParagraphWithDrawingTheBorder(string inputFilePath, string outputFilePath)
+private static void ExtractParagraphWithDrawingTheBorder()
 {
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Open document
-    using (var document = new Aspose.Pdf.Document(inputFilePath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
         var page = document.Pages[2];
 
@@ -108,7 +111,7 @@ private static void ExtractParagraphWithDrawingTheBorder(string inputFilePath, s
         }
 
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "DocumentWithBorder_out.pdf");
     }
 }
 
@@ -150,43 +153,46 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractParagraphByIteratingThroughParagraphsCollection(string inputFilePath)
+private static void ExtractParagraphByIteratingThroughParagraphsCollection()
 {
-	// Open an existing PDF file
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Instantiate ParagraphAbsorber
-		var absorber = new Aspose.Pdf.Text.ParagraphAbsorber();
-		absorber.Visit(document);
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-		foreach (Aspose.Pdf.Text.PageMarkup markup in absorber.PageMarkups)
-		{
-			int i = 1;
-			foreach (Aspose.Pdf.Text.MarkupSection section in markup.Sections)
-			{
-				int j = 1;
-				foreach (Aspose.Pdf.Text.MarkupParagraph paragraph in section.Paragraphs)
-				{
-					StringBuilder paragraphText = new StringBuilder();
-					foreach (List<Aspose.Pdf.Text.TextFragment> line in paragraph.Lines)
-					{
-						foreach (Aspose.Pdf.Text.TextFragment fragment in line)
-						{
-							paragraphText.Append(fragment.Text);
-						}
-						paragraphText.Append("\r\n");
-					}
-					paragraphText.Append("\r\n");
+    // Open an existing PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
+    {
+        // Instantiate ParagraphAbsorber
+        var absorber = new Aspose.Pdf.Text.ParagraphAbsorber();
+        absorber.Visit(document);
 
-					Console.WriteLine("Paragraph {0} of section {1} on page {2}:", j, i, markup.Number);
-					Console.WriteLine(paragraphText.ToString());
+        foreach (Aspose.Pdf.Text.PageMarkup markup in absorber.PageMarkups)
+        {
+            int i = 1;
+            foreach (Aspose.Pdf.Text.MarkupSection section in markup.Sections)
+            {
+                int j = 1;
+                foreach (Aspose.Pdf.Text.MarkupParagraph paragraph in section.Paragraphs)
+                {
+                    StringBuilder paragraphText = new StringBuilder();
+                    foreach (List<Aspose.Pdf.Text.TextFragment> line in paragraph.Lines)
+                    {
+                        foreach (Aspose.Pdf.Text.TextFragment fragment in line)
+                        {
+                            paragraphText.Append(fragment.Text);
+                        }
+                        paragraphText.Append("\r\n");
+                    }
+                    paragraphText.Append("\r\n");
 
-					j++;
-				}
-				i++;
-			}
-		}
-	}
+                    Console.WriteLine("Paragraph {0} of section {1} on page {2}:", j, i, markup.Number);
+                    Console.WriteLine(paragraphText.ToString());
+
+                    j++;
+                }
+                i++;
+            }
+        }
+    }
 }
 ```
 

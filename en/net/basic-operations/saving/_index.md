@@ -87,16 +87,19 @@ When you do not provide the format type (options), then the document is saved in
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void SaveDocument(string inputFilePath, string outputFilePath)
+private static void SaveDocument()
 {
-	// Load document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Make some manipation, i.g add new empty page
-		document.Pages.Add();
-		// Save document
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save document
+        document.Save(dataDir + "SimpleResumeModified.pdf");
+    }
 }
 ```
 
@@ -106,16 +109,19 @@ You can also save the created or manipulated PDF document to stream by using ove
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void SaveDocumentStream(string inputFilePath, string outputFilePath)
+private static void SaveDocumentStream()
 {
-	// Load document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Make some manipation, i.g add new empty page
-		document.Pages.Add();
-		// Save document
-		document.Save(System.IO.File.OpenWrite(outputFilePath));
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save document
+        document.Save(System.IO.File.OpenWrite(dataDir + "SimpleResumeModified.pdf"));
+    }
 }
 ```
 
@@ -132,17 +138,20 @@ In both cases, the `Save` method is used to store the documents, while the docum
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void SaveDocumentAsPDFx(string inputFilePath, string outputFilePath)
+private static void SaveDocumentAsPDFx()
 {
-	// Load document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Add a new page
-		document.Pages.Add();
-		// Convert a document to a PDF/X-3 format
-		document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
-		// Save document
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Add a new page
+        document.Pages.Add();
+        // Convert a document to a PDF/X-3 format
+        document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
+        // Save document
+        document.Save(dataDir + "SimpleResume_X3.pdf");
+    }
 }
 ```

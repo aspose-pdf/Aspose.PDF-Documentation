@@ -96,18 +96,21 @@ To create a PDF file using C#, the following steps can be used.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreateDocument(string outputFilePath)
+private static void CreateDocument()
 {
-	// Initialize document object
-	using (var document = new Aspose.Pdf.Document())
-	{
-		// Add page
-		var page = document.Pages.Add();
-		// Add text to new page
-		page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-		// Save updated PDF
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Initialize document object
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Add text to new page
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+        // Save document
+        document.Save(dataDir + "HelloWorld_out.pdf");
+    }
 }
 ```
 
@@ -121,68 +124,71 @@ Following is complete code to accomplish this requirement:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreateSearchableDocument(string outputFilePath)
+private static void CreateSearchableDocument()
 {
-	using (var document = new Aspose.Pdf.Document(outputFilePath))
-	{
-		bool convertResult = false;
-		try
-		{
-			convertResult = document.Convert(CallBackGetHocr);
-		}
-		catch (Exception ex)
-		{
-			Console.WriteLine(ex.Message);
-		}
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+    
+    // The path to the document
+    var filePath = dataDir + "SearchableDocument.pdf";
+
+    // Load document
+    using (var document = new Aspose.Pdf.Document(filePath))
+    {
+        document.Convert(CallBackGetHocr);
+
+        // Save document
+        document.Save(filePath);
+    }
 }
 
 private static string CallBackGetHocr(System.Drawing.Image img)
 {
-	string tmpFile = System.IO.Path.GetTempFileName();
-	try
-	{
-		var bmp = new System.Drawing.Bitmap(img);
-		bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
+    var tmpFile = System.IO.Path.GetTempFileName();
+    try
+    {
+        using (var bmp = new System.Drawing.Bitmap(img))
+        {
+            bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
+        }
 
-		var inputFile = string.Concat('"', tmpFile, '"');
-		var outputFile = string.Concat('"', tmpFile, '"');
-		var arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
-		var tesseractProcessName = RunExamples.GetTesseractExePath();
+        var inputFile = string.Concat('"', tmpFile, '"');
+        var outputFile = string.Concat('"', tmpFile, '"');
+        var arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
+        var tesseractProcessName = RunExamples.GetTesseractExePath();
 
-		var psi = new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
-		{
-			UseShellExecute = true,
-			CreateNoWindow = true,
-			WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-			WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
-		};
+        var psi = new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
+        {
+            UseShellExecute = true,
+            CreateNoWindow = true,
+            WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
+            WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
+        };
 
-		var p = new System.Diagnostics.Process
-		{
-			StartInfo = psi
-		};
-		p.Start();
-		p.WaitForExit();
+        var p = new System.Diagnostics.Process
+        {
+            StartInfo = psi
+        };
+        p.Start();
+        p.WaitForExit();
 
-		using (var streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
-		{
-			string text = streamReader.ReadToEnd();
-			return text;
-		}
-	}
-	finally
-	{
-		if (System.IO.File.Exists(tmpFile))
-		{
-			System.IO.File.Delete(tmpFile);
-		}
-		if (System.IO.File.Exists(tmpFile + ".hocr"))
-		{
-			System.IO.File.Delete(tmpFile + ".hocr");
-		}
-	}
+        using (var streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+        {
+            string text = streamReader.ReadToEnd();
+            return text;
+        }
+    }
+    finally
+    {
+        if (System.IO.File.Exists(tmpFile))
+        {
+            System.IO.File.Delete(tmpFile);
+        }
+        if (System.IO.File.Exists(tmpFile + ".hocr"))
+        {
+            System.IO.File.Delete(tmpFile + ".hocr");
+        }
+    }
 }
 ```
 
@@ -217,29 +223,31 @@ Steps to creating an accessible PDF:
 
 ```cs
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreateAnAccessibleDocument(string inputFilePath, string outputFilePath)
+private static void CreateAnAccessibleDocument()
 {
-	// Load the PDF document.
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		// Access tagged content.
-		Aspose.Pdf.Tagged.ITaggedContent content = document.TaggedContent;
-		// Create a span element.
-		Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
-		// Append span to root element.
-		content.RootElement.AppendChild(span);
-		// Iterate over page contents.
-		foreach (var op in document.Pages[1].Contents)
-		{
-			var bdc = op as Aspose.Pdf.Operators.BDC;
-			if (bdc != null)
-			{
-				span.Tag(bdc);
-			}
-		}
-		// Save document
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+    // Load document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
+    {
+        // Access tagged content.
+        Aspose.Pdf.Tagged.ITaggedContent content = document.TaggedContent;
+        // Create a span element.
+        Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
+        // Append span to root element.
+        content.RootElement.AppendChild(span);
+        // Iterate over page contents.
+        foreach (var op in document.Pages[1].Contents)
+        {
+            var bdc = op as Aspose.Pdf.Operators.BDC;
+            if (bdc != null)
+            {
+                span.Tag(bdc);
+            }
+        }
+        // Save document
+        document.Save(dataDir + "AccessibleDocument.pdf");
+    }
 }
 ```
 
