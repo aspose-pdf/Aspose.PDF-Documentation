@@ -103,16 +103,11 @@ private static void GetSignatureInfo()
             var field1 = new Aspose.Pdf.Forms.SignatureField(document.Pages[1], new Rectangle(100, 400, 10, 10));
 
             // Sign with certificate selection in the windows certificate store
-            System.Security.Cryptography.X509Certificates.X509Store store =
-                new System.Security.Cryptography.X509Certificates.X509Store(System.Security.Cryptography
-                    .X509Certificates.StoreLocation.CurrentUser);
-            store.Open(System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly);
+            X509Store store = new X509Store(StoreLocation.CurrentUser);
+            store.Open(OpenFlags.ReadOnly);
             
             // Manually chose the certificate in the store
-            System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel =
-                System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(
-                    store.Certificates, null, null,
-                    System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
+            X509Certificate2Collection sel = X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, X509SelectionFlag.SingleSelection);
 
             // Set an external signature settings
             var externalSignature = new ExternalSignature(sel[0])
@@ -174,10 +169,10 @@ private void SignWithSmartCard()
             pdfSign.BindPdf(document);
 
             // Sign with certificate selection in the windows certificate store
-            System.Security.Cryptography.X509Certificates.X509Store store = new System.Security.Cryptography.X509Certificates.X509Store(System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser);
-            store.Open(System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly);
+            X509Store store = new X509Store(StoreLocation.CurrentUser);
+            store.Open(OpenFlags.ReadOnly);
             // Manually chose the certificate in the store
-            System.Security.Cryptography.X509Certificates.X509Certificate2Collection sel = System.Security.Cryptography.X509Certificates.X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, System.Security.Cryptography.X509Certificates.X509SelectionFlag.SingleSelection);
+            X509Certificate2Collection sel = X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, X509SelectionFlag.SingleSelection);
             
             // Set an external signature settings
             var externalSignature = new Aspose.Pdf.Forms.ExternalSignature(sel[0]);
@@ -234,8 +229,8 @@ private static void SignWithExternalService()
         {
             sign.BindPdf(document);
             
-            // Get public certificate.
-            System.Security.Cryptography.X509Certificates.X509Certificate2 signerCert = GetPublicCertificate();
+            // Get public certificate
+            X509Certificate2 signerCert = GetPublicCertificate();
             
             // Set a certificate and a digest algorithm
             var signature = new Aspose.Pdf.Forms.ExternalSignature(signerCert, DigestHashAlgorithm.Sha256);
@@ -254,7 +249,7 @@ private static void SignWithExternalService()
     }
 }
 
-private static System.Security.Cryptography.X509Certificates.X509Certificate2 GetPublicCertificate()
+private static X509Certificate2 GetPublicCertificate()
 {
     // Your code to get a public certificate. The certificate can be supplied by a third-party service or a smart card
 }

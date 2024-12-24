@@ -97,7 +97,7 @@ private static void SetPrivilege1()
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege
         fileSecurity.SetPrivilege(privilege);
-        // Save the document.
+        // Save the document
         fileSecurity.Save(dataDir + "sample_privileges.pdf");
     }
 }
@@ -122,7 +122,7 @@ private static void SetPrivilegeWithPassword()
     using(var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
         fileSecurity.BindPdf(dataDir + "sample.pdf");
-        // Set privilege and passwords.
+        // Set privilege and passwords
         fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
         // Save the document
         fileSecurity.Save(dataDir + "sample_privileges.pdf");
@@ -150,7 +150,7 @@ The following code shows ho to remove usage rights from the document:
 
 private static void RemoveExtendedRights()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
     
     using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())

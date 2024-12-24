@@ -99,7 +99,7 @@ private static void SetPrivilegesOnExistingPdfFile()
         // Only allow screen reading
         documentPrivilege.AllowScreenReaders = true;
         // Encrypt the file with User and Owner password
-        // Need to set the password, so that once the user views the file with user password,
+        // Need to set the password, so that once the user views the file with user password
         // Only screen reading option is enabled
         document.Encrypt("user", "owner", documentPrivilege, CryptoAlgorithm.AESx128, false);
         // Save the document

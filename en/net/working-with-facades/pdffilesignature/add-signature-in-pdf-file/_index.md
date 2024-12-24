@@ -142,7 +142,7 @@ private static void AddTwoSignature()
 
         pdFileSignature.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
 
-        // Save the document.
+        // Save the document
         pdFileSignature.Save(dataDir + "DigitallySign.pdf");
     }
 }

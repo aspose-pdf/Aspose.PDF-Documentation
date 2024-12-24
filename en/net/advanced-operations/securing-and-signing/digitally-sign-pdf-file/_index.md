@@ -147,7 +147,7 @@ private static void SignDocument(string pfxFilePath, string password)
     // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
     {
-        // Instantiate PdfFileSignature object using the opened document.
+        // Instantiate PdfFileSignature object using the opened document
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             // Create PKCS#7 detached object for sign
