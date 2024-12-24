@@ -76,18 +76,28 @@ draft: false
 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) class allows you to control exceptions. To do this, you need to set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) property to false or true. If you set the operation to false, the result of [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) will return true or false depending on the correctness of the password. 
 
 ```csharp
-public static void ControlExceptionPDFFile()
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ControlExceptionPDFFile()
 {
-    PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
-    fileSecurity.AllowExceptions = false;
-    // Decrypt PDF document
-    if (!fileSecurity.DecryptFile("IncorrectPassword"))
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
-        Console.WriteLine("Something wrong...");
-        Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
+        fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
+        // Disallow exceptions
+        fileSecurity.AllowExceptions = false;
+        
+        // Decrypt PDF document
+        if (!fileSecurity.DecryptFile("IncorrectPassword"))
+        {
+            Console.WriteLine("Something wrong...");
+            Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
+        }
+        // Save the document
+        fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
-    fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
 }
 ```
 
@@ -95,21 +105,30 @@ If you set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.fac
 
 
 ```csharp
-public static void ControlExceptionPDFFile2()
-{
-    PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
-    fileSecurity.AllowExceptions = true;
-    try
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ControlExceptionPDFFile2()
+{   
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
-        // Decrypt PDF document
-        fileSecurity.DecryptFile("IncorrectPassword");
+        fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
+        // Allow exceptions
+        fileSecurity.AllowExceptions = true;
+        try
+        {
+            // Decrypt PDF document
+            fileSecurity.DecryptFile("IncorrectPassword");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Something wrong...");
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+        // Save the document
+        fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
-    catch (Exception ex)
-    {
-        Console.WriteLine("Something wrong...");
-        Console.WriteLine($"Exception: {ex.Message}");
-    }
-    fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
 }
 ```
