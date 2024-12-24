@@ -77,9 +77,56 @@ draft: false
 
 [ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) method allows you to import bookmarks into a PDF file from an XML file. In order to import the bookmarks, you need to create [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfbookmarkeditor) object and bind the PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, you need to call [ImportBookmarksWithXml](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfbookmarkeditor/importbookmarkswithxml/methods/1) method. Finally, save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method. The following code snippet shows you how to import bookmarks from an XML file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void ImportBookmarksFromXML()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-ImportFromXML-ImportFromXML.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "ImportFromXML.pdf");
+
+        // Import bookmarks
+        bookmarkEditor.ImportBookmarksWithXML(dataDir + "bookmarks.xml");
+
+        // Save the updated PDF file
+        bookmarkEditor.Save(dataDir + "ImportFromXML_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void ImportBookmarksFromXML()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "ImportFromXML.pdf");
+
+    // Import bookmarks
+    bookmarkEditor.ImportBookmarksWithXML(dataDir + "bookmarks.xml");
+
+    // Save the updated PDF file
+    bookmarkEditor.Save(dataDir + "ImportFromXML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Export Bookmarks to XML from an Existing PDF File
 
@@ -93,6 +140,47 @@ To export bookmarks:
 
 The following code snippet shows you how to export bookmarks to an XML file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 
+private static void ExportBookmarksToXML()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Bookmarks-ExportToXML-ExportToXML.cs" >}}
+    // Create an instance of PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Open a PDF document
+        bookmarkEditor.BindPdf(dataDir + "ExportToXML.pdf");
+
+        // Export bookmarks to an XML file
+        bookmarkEditor.ExportBookmarksToXML(dataDir + "bookmarks.xml");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+
+private static void ExportBookmarksToXML()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
+    // Create an instance of PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
+
+    // Open a PDF document
+    bookmarkEditor.BindPdf(dataDir + "ExportToXML.pdf");
+
+    // Export bookmarks to an XML file
+    bookmarkEditor.ExportBookmarksToXML(dataDir + "bookmarks.xml");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
