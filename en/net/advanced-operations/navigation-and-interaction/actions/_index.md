@@ -100,40 +100,91 @@ In order to add web hyperlinks to PDF documents:
 
 The following code snippet shows you how to add a hyperlink to a PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Open document
-Document document = new Document(dataDir + "AddHyperlink.pdf");
-// Create link
-Page page = document.Pages[1];
-// Create Link annotation object
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-// Create border object for LinkAnnotation
-Border border = new Border(link);
-// Set the border width value as 0
-border.Width = 0;
-// Set the border for LinkAnnotation
-link.Border = border;
-// Specify the link type as remote URI
-link.Action = new GoToURIAction("www.aspose.com");
-// Add link annotation to annotations collection of first page of PDF file
-page.Annotations.Add(link);
+private static void AddHyperlink()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-// Create Free Text annotation
-FreeTextAnnotation textAnnotation = new FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), new DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 10, System.Drawing.Color.Blue));
-// String to be added as Free text
-textAnnotation.Contents = "Link to Aspose website";
-// Set the border for Free Text Annotation
-textAnnotation.Border = border;
-// Add FreeText annotation to annotations collection of first page of Document
-document.Pages[1].Annotations.Add(textAnnotation);
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        // Create Link annotation object
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        // Create border object for LinkAnnotation
+        var border = new Aspose.Pdf.Annotations.Border(link);
+        // Set the border width value as 0
+        border.Width = 0;
+        // Set the border for LinkAnnotation
+        link.Border = border;
+        // Specify the link type as remote URI
+        link.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
+        // Add link annotation to annotations collection of first page of PDF file
+        page.Annotations.Add(link);
 
-// Save updated document
-document.Save(dataDir + "AddHyperlink_out.pdf");
+        // Create Free Text annotation
+        var textAnnotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), new Aspose.Pdf.Annotations.DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 10, System.Drawing.Color.Blue));
+        // String to be added as Free text
+        textAnnotation.Contents = "Link to Aspose website";
+        // Set the border for Free Text Annotation
+        textAnnotation.Border = border;
+        // Add FreeText annotation to annotations collection of first page of Document
+        document.Pages[1].Annotations.Add(textAnnotation);
+
+        // Save updated document
+        document.Save(dataDir + "AddHyperlink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddHyperlink()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
+    // Create link
+    var page = document.Pages[1];
+    // Create Link annotation object
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    // Create border object for LinkAnnotation
+    var border = new Aspose.Pdf.Annotations.Border(link);
+    // Set the border width value as 0
+    border.Width = 0;
+    // Set the border for LinkAnnotation
+    link.Border = border;
+    // Specify the link type as remote URI
+    link.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
+    // Add link annotation to annotations collection of first page of PDF file
+    page.Annotations.Add(link);
+
+    // Create Free Text annotation
+    var textAnnotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), new Aspose.Pdf.Annotations.DefaultAppearance(Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman"), 10, System.Drawing.Color.Blue));
+    // String to be added as Free text
+    textAnnotation.Contents = "Link to Aspose website";
+    // Set the border for Free Text Annotation
+    textAnnotation.Border = border;
+    // Add FreeText annotation to annotations collection of first page of Document
+    document.Pages[1].Annotations.Add(textAnnotation);
+
+    // Save updated document
+    document.Save(dataDir + "AddHyperlink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Create Hyperlink to pages in same PDF
 
@@ -141,41 +192,93 @@ Aspose.PDF for .NET provides a great feature to PDF creation as well as its mani
 
 In order to add the local hyperlink, we need to create a TextFragment so that link can be associated with the TextFragment. The [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) class has a property named Hyperlink which is used to associate LocalHyperlink instance. The following code snippet shows the steps to accomplish this requirement.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create Document instance
-Document document = new Document();
-// Add page to pages collection of PDF file
-Page page = document.Pages.Add();
-// Create Text Fragment instance
-TextFragment text = new TextFragment("link page number test to page 7");
-// Create local hyperlink instance
-LocalHyperlink link = new LocalHyperlink();
-// Set target page for link instance
-link.TargetPageNumber = 7;
-// Set TextFragment hyperlink
-text.Hyperlink = link;
-// Add text to paragraphs collection of Page
-page.Paragraphs.Add(text);
-// Create new TextFragment instance
-text = new TextFragment("link page number test to page 1");
-// TextFragment should be added over new page
-text.IsInNewPage = true;
-// Create another local hyperlink instance
-link = new LocalHyperlink();
-// Set Target page for second hyperlink
-link.TargetPageNumber = 1;
-// Set link for second TextFragment
-text.Hyperlink = link;
-// Add text to paragraphs collection of page object
-page.Paragraphs.Add(text);
+private static void AddHyperlink()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-// Save updated document
-document.Save(dataDir + "CreateLocalHyperlink_out.pdf");
+    // Create Document instance
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
+        // Create Text Fragment instance
+        var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
+        // Create local hyperlink instance
+        var link = new Aspose.Pdf.LocalHyperlink();
+        // Set target page for link instance
+        link.TargetPageNumber = 7;
+        // Set TextFragment hyperlink
+        text.Hyperlink = link;
+        // Add text to paragraphs collection of Page
+        page.Paragraphs.Add(text);
+        // Create new TextFragment instance
+        text = new Aspose.Pdf.Text.TextFragment("link page number test to page 1");
+        // TextFragment should be added over new page
+        text.IsInNewPage = true;
+        // Create another local hyperlink instance
+        link = new Aspose.Pdf.LocalHyperlink();
+        // Set Target page for second hyperlink
+        link.TargetPageNumber = 1;
+        // Set link for second TextFragment
+        text.Hyperlink = link;
+        // Add text to paragraphs collection of page object
+        page.Paragraphs.Add(text);
+
+        // Save updated document
+        document.Save(dataDir + "CreateLocalHyperlink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddHyperlink()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Create Document instance
+    using var document = new Aspose.Pdf.Document();
+    // Add page to pages collection of PDF file
+    var page = document.Pages.Add();
+    // Create Text Fragment instance
+    var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
+    // Create local hyperlink instance
+    var link = new Aspose.Pdf.LocalHyperlink();
+    // Set target page for link instance
+    link.TargetPageNumber = 7;
+    // Set TextFragment hyperlink
+    text.Hyperlink = link;
+    // Add text to paragraphs collection of Page
+    page.Paragraphs.Add(text);
+    // Create new TextFragment instance
+    text = new Aspose.Pdf.Text.TextFragment("link page number test to page 1");
+    // TextFragment should be added over new page
+    text.IsInNewPage = true;
+    // Create another local hyperlink instance
+    link = new Aspose.Pdf.LocalHyperlink();
+    // Set Target page for second hyperlink
+    link.TargetPageNumber = 1;
+    // Set link for second TextFragment
+    text.Hyperlink = link;
+    // Add text to paragraphs collection of page object
+    page.Paragraphs.Add(text);
+
+    // Save updated document
+    document.Save(dataDir + "CreateLocalHyperlink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Get PDF Hyperlink Destination (URL)
 
@@ -192,30 +295,76 @@ To get a link's URL:
 
 The following code snippet shows how to get hyperlink destinations (URL) from a PDF file.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Load the PDF file
-Document document = new Document(dataDir + "input.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Traverse through all the page of PDF
-foreach (Page page in document.Pages)
+private static void GetHyperlink()
 {
-    // Get the link annotations from particular page
-    AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    page.Accept(selector);
-    // Create list holding all the links
-    IList<Annotation> list = selector.Selected;
-    // Iterate through invidiaul item inside list
-    foreach (LinkAnnotation a in list)
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // Print the destination URL
-        Console.WriteLine("\nDestination: " + (a.Action as GoToURIAction).URI + "\n");
+        // Traverse through all the page of PDF
+        foreach (var page in document.Pages)
+        {
+            // Get the link annotations from particular page
+            var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+
+            page.Accept(selector);
+
+            // Create list holding all the links
+            var list = selector.Selected;
+
+            // Iterate through individual item inside list
+            foreach (var a in list)
+            {
+                // Print the destination URL
+                Console.WriteLine("\nDestination: " + (a.Action as Aspose.Pdf.Annotations.GoToURIAction).URI + "\n");
+            }
+        }
     }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GetHyperlink()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Load the PDF file
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Traverse through all the page of PDF
+    foreach (var page in document.Pages)
+    {
+        // Get the link annotations from particular page
+        var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+
+        page.Accept(selector);
+
+        // Create list holding all the links
+        var list = selector.Selected;
+
+        // Iterate through individual item inside list
+        foreach (var a in list)
+        {
+            // Print the destination URL
+            Console.WriteLine("\nDestination: " + (a.Action as Aspose.Pdf.Annotations.GoToURIAction).URI + "\n");
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Get Hyperlink Text
 
@@ -225,40 +374,37 @@ Text and annotations/actions in a PDF file are represented by different entities
 
 To find the URL content, you need to work with both annotation and text. The [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object does not have itself have the text but sits under the text on the page. So to get the text, the Annotation gives the URL's bounds, while the Text object gives the URL contents. Please see the following code snippet.
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Run()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ShowLinkAnnotationText()
 {
-    try
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // ExStart:GetHyperlinkText
-        // The path to the documents directory.
-        string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-        // Load the PDF file
-        Document document = new Document(dataDir + "input.pdf");
         // Iterate through each page of PDF
-        foreach (Page page in document.Pages)
+        foreach (var page in document.Pages)
         {
             // Show link annotation
             ShowLinkAnnotations(page);
         }
-        // ExEnd:GetHyperlinkText
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex.Message);
     }
 }
 
-// ExStart:ShowLinkAnnotations
-public static void ShowLinkAnnotations(Page page)
+private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 {
-    foreach (Annotation annot in page.Annotations)
+    foreach (var annot in page.Annotations)
     {
-        if (annot is LinkAnnotation)
+        if (annot is Aspose.Pdf.Annotations.LinkAnnotation)
         {
             // Print the URL of each Link Annotation
-            Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
-            TextAbsorber absorber = new TextAbsorber();
+            Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
+            var absorber = new Aspose.Pdf.Text.TextAbsorber();
             absorber.TextSearchOptions.LimitToPageBounds = true;
             absorber.TextSearchOptions.Rectangle = annot.Rect;
             page.Accept(absorber);
@@ -266,11 +412,52 @@ public static void ShowLinkAnnotations(Page page)
             // Print the text associated with hyperlink
             Console.WriteLine(extractedText);
         }
-
     }
 }
-// ExEnd:ShowLinkAnnotations
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ShowLinkAnnotationText()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Load the PDF file
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Iterate through each page of PDF
+    foreach (var page in document.Pages)
+    {
+        // Show link annotation
+        ShowLinkAnnotations(page);
+    }
+}
+
+private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
+{
+    foreach (var annot in page.Annotations)
+    {
+        if (annot is Aspose.Pdf.Annotations.LinkAnnotation)
+        {
+            // Print the URL of each Link Annotation
+            Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
+            var absorber = new Aspose.Pdf.Text.TextAbsorber();
+            absorber.TextSearchOptions.LimitToPageBounds = true;
+            absorber.TextSearchOptions.Rectangle = annot.Rect;
+            page.Accept(absorber);
+            string extractedText = absorber.Text;
+            // Print the text associated with hyperlink
+            Console.WriteLine(extractedText);
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Remove Document Open Action from a PDF File
 
@@ -283,18 +470,50 @@ To remove an open action:
 
 The following code snippet shows how to remove a document open action from the PDF file.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Open document
-Document document = new Document(dataDir + "RemoveOpenAction.pdf");
-// Remove document open action
-document.OpenAction = null;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Save updated document
-document.Save(dataDir + "RemoveOpenAction_out.pdf");
+private static void RemoveOpenAction()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveOpenAction.pdf"))
+    {
+        // Remove document open action
+        document.OpenAction = null;
+
+        // Save updated document
+        document.Save(dataDir + "RemoveOpenAction_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void RemoveOpenAction()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open document
+    using var document = new Aspose.Pdf.Document(dataDir + "RemoveOpenAction.pdf");
+
+    // Remove document open action
+    document.OpenAction = null;
+
+    // Save updated document
+    document.Save(dataDir + "RemoveOpenAction_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## How to Specify PDF Page when Viewing Document {#how-to-specify-pdf-page-when-viewing-document}
 
@@ -302,26 +521,63 @@ When viewing PDF files in a PDF viewer such as Adobe Reader, the files usually o
 
 The [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) class allows you to specify a page in a PDF file that you want to open. When passing the GoToAction object value to the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class OpenAction property, the document opens at the page specified against the XYZExplicitDestination object. The following code snippet shows how to specify a page as the document open action.
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Load the PDF file
-Document document = new Document(dataDir + "SpecifyPageWhenViewing.pdf");
-// Get the instance of second page of document
-Page page2 = document.Pages[2];
-// Create the variable to set the zoom factor of target page
-double zoom = 1;
-// Create GoToAction instance
-GoToAction action = new GoToAction(document.Pages[2]);
-// Go to 2 page
-action.Destination = new XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
-// Set the document open action
-document.OpenAction = action;
-// Save updated document
-document.Save(dataDir + "goto2page_out.pdf");
+private static void SpecifyPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf"))
+    {
+        // Get the instance of second page of document
+        var page2 = document.Pages[2];
+        // Create the variable to set the zoom factor of target page
+        double zoom = 1;
+        // Create GoToAction instance
+        var action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[2]);
+        // Go to 2 page
+        action.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
+        // Set the document open action
+        document.OpenAction = action;
+        // Save updated document
+        document.Save(dataDir + "goto2page_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void SpecifyPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Load the PDF file
+    using var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf");
+    // Get the instance of second page of document
+    var page2 = document.Pages[2];
+    // Create the variable to set the zoom factor of target page
+    double zoom = 1;
+    // Create GoToAction instance
+    var action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[2]);
+    // Go to 2 page
+    action.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
+    // Set the document open action
+    document.OpenAction = action;
+    // Save updated document
+    document.Save(dataDir + "goto2page_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

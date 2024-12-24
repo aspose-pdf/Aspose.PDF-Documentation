@@ -5,8 +5,6 @@ type: docs
 weight: 60
 url: /id/net/complex-pdf-example/
 description: Aspose.PDF untuk NET memungkinkan Anda untuk membuat dokumen yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu dokumen.
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

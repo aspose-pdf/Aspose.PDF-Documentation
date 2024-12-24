@@ -95,69 +95,195 @@ Therefore, to create a PDF document with Aspose.PDF, you should follow these ste
 1. Add created items to the corresponding collection on the page (in our case it will be a paragraph collection).
 1. Save the document as PDF file.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Step 1
-var document = new Document
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTable()
 {
-    PageInfo = new PageInfo { Margin = new MarginInfo(28, 28, 28, 42) }
-};
+    // Step 1
+    using (var document = new Aspose.Pdf.Document
+           {
+               PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
+           })
+    {
+        // Step 2
+        var pdfPage = document.Pages.Add();
 
-// Step 2
-var pdfPage = document.Pages.Add();
+        // Step 3
+        var textFragment = new Aspose.Pdf.Text.TextFragment(reportTitle);
 
-// Step 3
-var textFragment = new TextFragment(reportTitle);
+        var table = new Aspose.Pdf.Table
+        {
+            // .................................
+        };
 
-var table = new Table
+        // Step 4
+        pdfPage.Paragraphs.Add(textFragment);
+        pdfPage.Paragraphs.Add(table);
+
+        // Step 5
+        using (var streamOut = new MemoryStream())
+        {
+            document.Save(streamOut);
+
+            return new FileContentResult(streamOut.ToArray(), "application/pdf")
+            {
+                FileDownloadName = "tenants.pdf"
+            };
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTable()
 {
-    // .................................
-};
+    // Step 1
+    using var document = new Aspose.Pdf.Document
+    {
+        PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
+    };
 
-// Step 4
-pdfPage.Paragraphs.Add(textFragment);
-pdfPage.Paragraphs.Add(table);
+    // Step 2
+    var pdfPage = document.Pages.Add();
 
-// Step 5
-using (var streamOut = new MemoryStream())
-{
+    // Step 3
+    var textFragment = new Aspose.Pdf.Text.TextFragment(reportTitle);
+
+    var table = new Aspose.Pdf.Table
+    {
+        // .................................
+    };
+
+    // Step 4
+    pdfPage.Paragraphs.Add(textFragment);
+    pdfPage.Paragraphs.Add(table);
+
+    // Step 5
+    using var streamOut = new MemoryStream();
+
     document.Save(streamOut);
+
     return new FileContentResult(streamOut.ToArray(), "application/pdf")
     {
         FileDownloadName = "tenants.pdf"
     };
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 The most common problem is the output of data in a table format. The [Table class](https://reference.aspose.com/pdf/net/aspose.pdf/table) is used to process tables. This class gives us the ability to create tables and place them in the document, using [Rows](https://reference.aspose.com/pdf/net/aspose.pdf/rows) and [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cell). So, to create the table, you need to add the required number of rows and fill them with the appropriate number of cells.
 
 The following example creates the table 4x10.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-var table = new Table
-{
-    // Set column auto widths of the table
-    ColumnWidths = "25% 25% 25% 25%",
-    // Set cell padding
-    DefaultCellPadding = new MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
-    // Set the table border color as Green
-    Border = new BorderInfo(BorderSide.All, .5f, Color.Green),
-    // Set the border for table cells as Black
-    DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
-};
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-for (var rowCount = 0; rowCount < 10; rowCount++)
+private static void AddTable()
 {
-    // Add row to table
-    var row = table.Rows.Add();
-    // Add table cells
-    for (int i = 0; i < 4; i++)
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create document
+    using (var document = new Aspose.Pdf.Document())
     {
-        row.Cells.Add($"Cell ({i+1}, {rowCount +1})");
+        document.Pages.Add();
+
+        var table = new Aspose.Pdf.Table
+        {
+            // Set column auto widths of the table
+            ColumnWidths = "25% 25% 25% 25%",
+
+            // Set cell padding
+            DefaultCellPadding = new Aspose.Pdf.MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
+
+            // Set the table border color as Green
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.Green),
+
+            // Set the border for table cells as Black
+            DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .2f, Aspose.Pdf.Color.Green),
+        };
+
+        for (var rowCount = 0; rowCount < 10; rowCount++)
+        {
+            // Add row to table
+            var row = table.Rows.Add();
+
+            // Add table cells
+            for (int i = 0; i < 4; i++)
+            {
+                row.Cells.Add($"Cell ({i + 1}, {rowCount + 1})");
+            }
+        }
+
+        // Add table object to first page of input document
+        document.Pages[1].Paragraphs.Add(table);
+
+        // Save document
+        document.Save(dataDir + "AddTable_out.pdf");
     }
 }
-// Add table object to first page of input document
-document.Pages[1].Paragraphs.Add(table);
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTable()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create document
+    using var document = new Aspose.Pdf.Document();
+    document.Pages.Add();
+
+    var table = new Aspose.Pdf.Table
+    {
+        // Set column auto widths of the table
+        ColumnWidths = "25% 25% 25% 25%",
+
+        // Set cell padding
+        DefaultCellPadding = new Aspose.Pdf.MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
+
+        // Set the table border color as Green
+        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.Green),
+
+        // Set the border for table cells as Black
+        DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .2f, Aspose.Pdf.Color.Green),
+    };
+
+    for (var rowCount = 0; rowCount < 10; rowCount++)
+    {
+        // Add row to table
+        var row = table.Rows.Add();
+
+        // Add table cells
+        for (int i = 0; i < 4; i++)
+        {
+            row.Cells.Add($"Cell ({i + 1}, {rowCount + 1})");
+        }
+    }
+
+    // Add table object to first page of input document
+    document.Pages[1].Paragraphs.Add(table);
+
+    // Save document
+    document.Save(dataDir + "AddTable_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 When initializing the Table object, the minimal skin settings were used:
 
@@ -175,68 +301,143 @@ As a result, we get the table 4x10 with equal-width columns.
 The Table class provides methods for interacting with ADO.NET data sources - [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) and [ImportDataView](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/importdataview). The first method imports data from the DataTable, the second from the DataView.
 Premising that these objects are not very convenient for working in the MVC template, we will limit ourselves to a brief example. In this example (line 50), the ImportDataTable method is called and receives as parameters a DataTable instance and additional settings like the header flag and the initial position (rows/cols) for the data output.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Create new a PDF document
-var document = new Document
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTable()
 {
-    PageInfo = new PageInfo { Margin = new MarginInfo(28, 28, 28, 42) }
-};
-
-var pdfPage = document.Pages.Add();
-
-// Initializes a new instance of the TextFragment for report's title
-var textFragment = new TextFragment(reportTitle1);
-Table table = new Table
-{
-    // Set column widths of the table
-    ColumnWidths = "25% 25% 25% 25%",
-    // Set cell padding
-    DefaultCellPadding = new MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
-    // Set the table border color as Green
-    Border = new BorderInfo(BorderSide.All, .5f, Color.Green),
-    // Set the border for table cells as Black
-    DefaultCellBorder = new BorderInfo(BorderSide.All, .2f, Color.Green),
-};
-
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("config.json", false)
-    .Build();
-
-var connectionString = configuration.GetSection("connectionString").Value;
-
-if (string.IsNullOrEmpty(connectionString))
-{
-    throw new ArgumentException("No connection string in config.json");
-}
-
-var resultTable = new DataTable();
-
-using (var conn = new SqlConnection(connectionString))
-{
-    const string sql = "SELECT * FROM Tennats";
-    using (var cmd = new SqlCommand(sql, conn))
+    // Create new a PDF document
+    using (var document = new Aspose.Pdf.Document
     {
-        using (var adapter = new SqlDataAdapter(cmd))
+        PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
+    })
+    {
+        var table = new Aspose.Pdf.Table
         {
-            adapter.Fill(resultTable);
+            // Set column widths of the table
+            ColumnWidths = "25% 25% 25% 25%",
+            // Set cell padding
+            DefaultCellPadding = new Aspose.Pdf.MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
+            // Set the table border color as Green
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.Green),
+            // Set the border for table cells as Black
+            DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .2f, Aspose.Pdf.Color.Green),
+        };
+
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("config.json", false)
+            .Build();
+
+        var connectionString = configuration.GetSection("connectionString").Value;
+
+        if (string.IsNullOrEmpty(connectionString))
+        {
+            throw new ArgumentException("No connection string in config.json");
+        }
+
+        var resultTable = new DataTable();
+
+        using (var conn = new SqlConnection(connectionString))
+        {
+            const string sql = "SELECT * FROM Tennats";
+            using (var cmd = new SqlCommand(sql, conn))
+            {
+                using (var adapter = new SqlDataAdapter(cmd))
+                {
+                    adapter.Fill(resultTable);
+                }
+            }
+        }
+
+        table.ImportDataTable(resultTable, true, 1, 1);
+
+        // Add table object to first page of input document
+        document.Pages[1].Paragraphs.Add(table);
+
+        using (var streamOut = new MemoryStream())
+        {
+            // Save document
+            document.Save(streamOut);
+
+            return new FileContentResult(streamOut.ToArray(), "application/pdf")
+            {
+                FileDownloadName = "demotable2.pdf"
+            };
         }
     }
 }
+```
+{{< /tab >}}
 
-table.ImportDataTable(resultTable,true,1,1);
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Add table object to first page of input document
-document.Pages[1].Paragraphs.Add(table);
-using (var streamOut = new MemoryStream())
+private static void AddTable()
 {
+    // Create new a PDF document
+    using var document = new Aspose.Pdf.Document
+    {
+        PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
+    };
+
+    var table = new Aspose.Pdf.Table
+    {
+        // Set column widths of the table
+        ColumnWidths = "25% 25% 25% 25%",
+        // Set cell padding
+        DefaultCellPadding = new Aspose.Pdf.MarginInfo(10, 5, 10, 5), // Left Bottom Right Top
+        // Set the table border color as Green
+        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.Green),
+        // Set the border for table cells as Black
+        DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .2f, Aspose.Pdf.Color.Green),
+    };
+
+    var configuration = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("config.json", false)
+        .Build();
+
+    var connectionString = configuration.GetSection("connectionString").Value;
+
+    if (string.IsNullOrEmpty(connectionString))
+    {
+        throw new ArgumentException("No connection string in config.json");
+    }
+
+    var resultTable = new DataTable();
+
+    using var conn = new SqlConnection(connectionString);
+
+    const string sql = "SELECT * FROM Tennats";
+
+    using var cmd = new SqlCommand(sql, conn);
+
+    using var adapter = new SqlDataAdapter(cmd);
+    
+    adapter.Fill(resultTable);
+
+    table.ImportDataTable(resultTable, true, 1, 1);
+
+    // Add table object to first page of input document
+    document.Pages[1].Paragraphs.Add(table);
+
+    using var streamOut = new MemoryStream();
+    
+    // Save document
     document.Save(streamOut);
+
     return new FileContentResult(streamOut.ToArray(), "application/pdf")
     {
-        FileDownloadName = "demotable2.pdf"
+        PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
     };
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Exporting Data from the Entity Framework
 
@@ -245,7 +446,7 @@ More relevant for modern .NET is the import of data from ORM frameworks. In this
 ```csharp
 public static class PdfHelper
 {
-    public static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)
+    public static void ImportEntityList<TSource>(this Aspose.Pdf.Table table, IList<TSource> data)
     {
         var headRow = table.Rows.Add();
 
@@ -290,14 +491,14 @@ public static class PdfHelper
             }
         }
     }
-    
-    public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
+
+    public static void ImportGroupedData<TKey, TValue>(this Aspose.Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
     {
-        var headRow = table.Rows.Add();           
+        var headRow = table.Rows.Add();
         var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
         foreach (var prop in props)
         {
-            headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);               
+            headRow.Cells.Add(prop.GetCustomAttribute(typeof(DisplayAttribute)) is DisplayAttribute dd ? dd.Name : prop.Name);
         }
 
         foreach (var group in groupedData)
@@ -306,8 +507,8 @@ public static class PdfHelper
             var row = table.Rows.Add();
             var cell = row.Cells.Add(group.Key.ToString());
             cell.ColSpan = props.Length;
-            cell.BackgroundColor = Pdf.Color.DarkGray;
-            cell.DefaultCellTextState.ForegroundColor = Pdf.Color.White;
+            cell.BackgroundColor = Aspose.Pdf.Color.DarkGray;
+            cell.DefaultCellTextState.ForegroundColor = Aspose.Pdf.Color.White;
 
             foreach (var item in group.Values)
             {

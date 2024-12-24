@@ -188,9 +188,8 @@ private static void PrintingPDFDisplayPrintDialog()
         {
             // Document printing code goes here
 
-            // To use extension methods to convert PrinterSettings and PageSettings to Aspose.PDF counterparts, add the following line
-            // to the usings section (without the comment symbols):
-            // using Aspose.Pdf.Printing.Extensions;
+            // Convert PrinterSettings and PageSettings to Aspose.PDF counterparts via extension methods
+            // provided in the Aspose.Pdf.Printing namespace
             Aspose.Pdf.Printing.PrinterSettings ps = printDialog.PrinterSettings.ToAsposePrinterSettings();
             Aspose.Pdf.Printing.PageSettings pgs = printDialog.PrinterSettings.DefaultPageSettings.ToAsposePageSettings();
 
@@ -226,9 +225,8 @@ private static void PrintingPDFDisplayPrintDialog()
     {
         // Document printing code goes here
 
-        // To use extension methods to convert PrinterSettings and PageSettings to Aspose.PDF counterparts, add the following line
-        // to the usings section (without the comment symbols):
-        // using Aspose.Pdf.Printing.Extensions;
+        // Convert PrinterSettings and PageSettings to Aspose.PDF counterparts via extension methods
+        // provided in the Aspose.Pdf.Printing namespace
         Aspose.Pdf.Printing.PrinterSettings ps = printDialog.PrinterSettings.ToAsposePrinterSettings();
         Aspose.Pdf.Printing.PageSettings pgs = printDialog.PrinterSettings.DefaultPageSettings.ToAsposePageSettings();
 

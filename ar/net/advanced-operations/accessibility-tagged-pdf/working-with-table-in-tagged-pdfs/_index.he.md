@@ -1,4 +1,4 @@
- ---
+---
 title: עבודה עם טבלה ב-PDF מתויגים
 linktitle: עבודה עם טבלה ב-PDF מתויגים
 type: docs

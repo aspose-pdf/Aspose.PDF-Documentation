@@ -101,29 +101,36 @@ The following code snippet shows you how to insert a page in a PDF file.
 
 ```cs
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Open document
-Document document = new Document(dataDir + "InsertEmptyPage.pdf");
-
-// Insert an empty page in a PDF
-document.Pages.Insert(2);
-// Save output file
-document.Save(dataDir + "InsertEmptyPage_out.pdf");
+private static void InsertAnEmptyPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
+    {
+       // Insert an empty page in a PDF
+       document.Pages.Insert(2);
+        // Save output file
+       document.Save(dataDir + "InsertEmptyPage_out.pdf");
+    }
+}
 ```
 
-In example above, we added empty page with default parameters. If you need to make page size the same as another page in document you shold add
+In example above, we added empty page with default parameters. If you need to make page size the same as another page in document you should add
 a few lines of code:
 
 ```cs
-var page = document.Pages.Insert(2);
-//copy page parameters from page 1
-page.ArtBox = document.Pages[1].ArtBox;
-page.BleedBox = document.Pages[1].BleedBox;
-page.CropBox = document.Pages[1].CropBox;
-page.MediaBox = document.Pages[1].MediaBox;
-page.TrimBox = document.Pages[1].TrimBox;
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageWithParameters()
+{
+    var page = document.Pages.Insert(2);
+    //copy page parameters from page 1
+    page.ArtBox = document.Pages[1].ArtBox;
+    page.BleedBox = document.Pages[1].BleedBox;
+    page.CropBox = document.Pages[1].CropBox;
+    page.MediaBox = document.Pages[1].MediaBox;
+    page.TrimBox = document.Pages[1].TrimBox;
+}
 ```
 
 ### Add an Empty Page at the End of a PDF File
@@ -140,17 +147,19 @@ The following code snippet shows you how to insert an empty page at the end of a
 
 ```cs
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Open document
-Document document = new Document(dataDir + "InsertEmptyPageAtEnd.pdf");
-
-// Insert an empty page at the end of a PDF file
-document.Pages.Add();
-
-// Save output file
-document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+private static void InsertAnEmptyPageAtTheEnd()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))
+    {
+        // Insert an empty page at the end of a PDF file
+        document.Pages.Add();
+        // Save output file
+        document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">

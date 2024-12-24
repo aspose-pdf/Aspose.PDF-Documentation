@@ -78,14 +78,48 @@ In order to delete the images from a particular page, you need to call [DeleteIm
 
 The following code snippet shows you how to delete images from a particular page of PDF.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void DeleteImage()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf")))
+    {
+        editor.DeleteImage(2, new[] { 2 });
+
+        // Save document
+        editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void DeleteImage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor Object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf"));
+
     editor.DeleteImage(2, new[] { 2 });
+
+    // Save document
     editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Delete All the Images from a PDF File (Facades)
 
@@ -93,24 +127,91 @@ All the images can be deleted from a PDF file using [DeleteImage](https://refere
 
 The following code snippet shows you how to delete all the images from a PDF file.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void DeleteImages()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample.pdf"));
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf")))
+    {
+        editor.DeleteImage();
+
+        // Save document
+        editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void DeleteImages()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample.pdf"));
+
     editor.DeleteImage();
+
+    // Save document
     editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## Replace Image in a PDF File (Facades)
 
 the [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) allows you replace your image in a PDF file, call for this the [ReplaceImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/replaceimage) method, and Save the result.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void ReplaceImage()
 {
-    PdfContentEditor editor = new PdfContentEditor(new Document(dataDir + "sample_cats_dogs.pdf"));
-    editor.ReplaceImage(2, 4, @"C:\Samples\Facades\PdfContentEditor\cat04.jpg");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample_cats_dogs.pdf")))
+    {
+        editor.ReplaceImage(2, 4, dataDir + "Image.jpg");
+
+        // Save document
+        editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+public static void ReplaceImage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Instantiate PdfContentEditor object
+    using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample_cats_dogs.pdf"));
+    editor.ReplaceImage(2, 4, dataDir + "Image.jpg");
+
+    // Save document
     editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}

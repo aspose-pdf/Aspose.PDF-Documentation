@@ -5,8 +5,6 @@ type: docs
 weight: 30
 url: /ja/net/save-pdf-document/
 description: C# Aspose.PDF for .NET PDFライブラリを使ってPDFファイルを保存する方法を学びます。ファイルシステム、ストリーム、WebアプリケーションにPDFドキュメントを保存します。
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

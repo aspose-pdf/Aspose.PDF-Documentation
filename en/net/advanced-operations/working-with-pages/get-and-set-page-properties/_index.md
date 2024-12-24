@@ -86,13 +86,47 @@ To get the number of pages in a PDF file:
 
 The following code snippet shows how to get the number of pages of a PDF file.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetNumberofPages-GetNumberofPages.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetNumberOfPagesInAPdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetNumberofPages.pdf"))
+    {
+        // Get page count
+        System.Console.WriteLine("Page Count : {0}", document.Pages.Count);
+    }
+}
+```
 
 ### Get page count without saving the document
 
 Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetPageCount-GetPageCount.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPageCountWithoutSavingTheDocument()
+{
+    // Open document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
+        // Create loop instance
+        for (var i = 0; i < 300; i++)
+        {
+            // Add TextFragment to paragraphs collection of page object
+            page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Pages count test"));
+        }
+        // Process the paragraphs in PDF file to get accurate page count
+        document.ProcessParagraphs();
+        // Print number of pages in document
+        Console.WriteLine("Number of pages in document = " + document.Pages.Count);
+    }
+}
+```
 
 ## Get Page Properties
 
@@ -116,7 +150,37 @@ The [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) class provides 
 
 From there, it is possible to access either individual Page objects using their index, or loop through the collection, using a foreach loop, to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetProperties-GetProperties.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AccessingPageProperties()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
+    {
+        // Get page collection
+        var pageCollection = document.Pages;
+        // Get particular page
+        var pdfPage = pageCollection[1];
+        // Get page properties
+        System.Console.WriteLine("ArtBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.ArtBox.Height, pdfPage.ArtBox.Width, pdfPage.ArtBox.LLX,
+            pdfPage.ArtBox.LLY, pdfPage.ArtBox.URX, pdfPage.ArtBox.URY);
+        System.Console.WriteLine("BleedBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.BleedBox.Height, pdfPage.BleedBox.Width, pdfPage.BleedBox.LLX,
+            pdfPage.BleedBox.LLY, pdfPage.BleedBox.URX, pdfPage.BleedBox.URY);
+        System.Console.WriteLine("CropBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.CropBox.Height, pdfPage.CropBox.Width, pdfPage.CropBox.LLX,
+            pdfPage.CropBox.LLY, pdfPage.CropBox.URX, pdfPage.CropBox.URY);
+        System.Console.WriteLine("MediaBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.MediaBox.Height, pdfPage.MediaBox.Width, pdfPage.MediaBox.LLX,
+            pdfPage.MediaBox.LLY, pdfPage.MediaBox.URX, pdfPage.MediaBox.URY);
+        System.Console.WriteLine("TrimBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.TrimBox.Height, pdfPage.TrimBox.Width, pdfPage.TrimBox.LLX,
+            pdfPage.TrimBox.LLY, pdfPage.TrimBox.URX, pdfPage.TrimBox.URY);
+        System.Console.WriteLine("Rect : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}", pdfPage.Rect.Height, pdfPage.Rect.Width, pdfPage.Rect.LLX, pdfPage.Rect.LLY,
+            pdfPage.Rect.URX, pdfPage.Rect.URY);
+        System.Console.WriteLine("Page Number : {0}", pdfPage.Number);
+        System.Console.WriteLine("Rotate : {0}", pdfPage.Rotate);
+    }
+}
+```
 
 ## Get a Particular Page of the PDF File
 
@@ -131,7 +195,27 @@ The [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object'
 
 The following code snippet shows how to get a particular page from a PDF file and save it as a new file.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetParticularPage-GetParticularPage.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAParticularPageOfThePdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get particular page
+        var pdfPage = document.Pages[2];
+        // Save the page as PDF file
+        using (var newDocument = new Aspose.Pdf.Document())
+        {
+            newDocument.Pages.Add(pdfPage);
+            // Save document
+            newDocument.Save(dataDir + "GetParticularPage_out.pdf");
+        }
+    }
+}
+```
 
 ## Determine Page Color
 
@@ -141,7 +225,39 @@ All the pages of the PDF files are contained by the [PageCollection](https://ref
 
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-DeterminePageColor-DeterminePageColor.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeterminePageColor()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Iterate through all the page of PDF file
+        for (var pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
+        {
+            // Get the color type information for particular PDF page
+            Aspose.Pdf.ColorType pageColorType = document.Pages[pageCount].ColorType;
+            switch (pageColorType)
+            {
+                case Aspose.Pdf.ColorType.BlackAndWhite:
+                    Console.WriteLine("Page # -" + pageCount + " is Black and white..");
+                    break;
+                case Aspose.Pdf.ColorType.Grayscale:
+                    Console.WriteLine("Page # -" + pageCount + " is Gray Scale...");
+                    break;
+                case Aspose.Pdf.ColorType.Rgb:
+                    Console.WriteLine("Page # -" + pageCount + " is RGB..", pageCount);
+                    break;
+                case Aspose.Pdf.ColorType.Undefined:
+                    Console.WriteLine("Page # -" + pageCount + " Color is undefined..");
+                    break;
+            }
+        }
+    }
+}
+```
 
 <script type="application/ld+json">
 {

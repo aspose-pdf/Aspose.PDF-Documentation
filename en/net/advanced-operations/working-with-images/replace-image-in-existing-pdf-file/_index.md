@@ -87,11 +87,24 @@ The following code snippet shows you how to replace an image in a PDF file.
 
 ```csharp
 // Open document
-Document document = new Document("input.pdf");
-// Replace a particular image
-document.Pages[1].Resources.Images.Replace(1, new FileStream("lovely.jpg", FileMode.Open));
-// Save updated PDF file
-document.Save("output.pdf");
+private static void ReplaceImageInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open the document using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceImage.pdf"))
+    {
+        // Replace a particular image in the document
+        using (var imageStream = new FileStream(dataDir + "NewImage.jpg", FileMode.Open))
+        {
+            document.Pages[1].Resources.Images.Replace(1, imageStream);
+        }
+
+        // Save the updated PDF file
+        document.Save(dataDir + "ReplaceImage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
