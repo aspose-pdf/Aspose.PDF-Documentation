@@ -83,9 +83,9 @@ Extracting text from a PDF document is a common requirement. In this example, yo
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromDocument(string inputFilePath, string outputFilePath)
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 	// Open document
 	using (var document = new Aspose.Pdf.Document(inputFilePath))
 	{
@@ -113,9 +113,9 @@ Call the **Accept** method on a particular page of the Document object. The Inde
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromPage(string inputFilePath, string outputFilePath)
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
@@ -159,6 +159,7 @@ The following steps and code snippet shows you how to extract text from a PDF us
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromPagesWithTextDevice(string inputFilePath, string outputFilePath)
 {
     var builder = new System.Text.StringBuilder();
@@ -204,9 +205,9 @@ The **Accept** method of a page is called to extract the text. Create objects of
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromParticularPageRegion(string inputFilePath, string outputFilePath)
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 	// Open document
 	using (var document = new Aspose.Pdf.Document(inputFilePath))
 	{
@@ -238,10 +239,9 @@ A PDF file may comprise of Text, Image, Annotations, Attachments, Graphs, etc el
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextBasedOnColumns(string inputFilePath, string outputFilePath)
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 	var extractedText = string.Empty;
 	// Open document
 	using (var sourceDocument = new Aspose.Pdf.Document(inputFilePath))
@@ -283,9 +283,9 @@ We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large n
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExctractTextWithScaleFactor(string inputFilePath, string outputFilePath)
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 	// Open document
 	using (var document = new Aspose.Pdf.Document(inputFilePath))
 	{
@@ -317,9 +317,9 @@ In various scenarios of text extraction from a PDF document, you can come up wit
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractHighlightedTextFromDocument(string inputFilePath)
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 	// Open document
 	using (var document = new Aspose.Pdf.Document(inputFilePath))
 	{
@@ -350,10 +350,9 @@ Sometimes we need access to TextFragement or TextSegment items when processing P
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AccessTextFragmentAndSegmentElementsFromXML(string inputFilePath, string outputFilePath)
 {
-	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 	// Create document
 	using (var document = new Aspose.Pdf.Document())
 	{

@@ -79,6 +79,7 @@ In this article, we’ll look into the details of extracting text from a PDF fil
 For example, in order to extract text you can use three methods i.e. [ExtractText, GetText, HasNextPageText and GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/index). Now, in order to start extracting text, first of all, you need to call [ExtractText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extracttext/index) method; this will extract the text from the PDF file and will store it into memory. After that, [GetText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/gettext/index) method will take this extracted text and save on to the disk at specified location in a file. [HasNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextpagetext) helps you loop through each page and check whether the next page has any text or not. If it contains some text then [GetNextPageText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/getnextpagetext/index) will help you save the text of an individual page into the file.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractText(string inputFilePath, string outputFolderPath)
 {
 	bool wholeText = true;
@@ -113,6 +114,7 @@ private static void ExtractText(string inputFilePath, string outputFolderPath)
 To Extract the Text Extraction Mode use the following code:
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextExtractonMode(string inputFilePath, string outputFilePath, string outputFolderPath)
 {
 	bool wholeText = true;

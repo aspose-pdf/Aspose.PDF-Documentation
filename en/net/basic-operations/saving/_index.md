@@ -86,6 +86,7 @@ You can save the created or manipulated PDF document to file system using `Save`
 When you do not provide the format type (options), then the document is saved in Aspose.PDF v.1.7 (*.pdf) format.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocument(string inputFilePath, string outputFilePath)
 {
 	// Load document
@@ -104,6 +105,7 @@ private static void SaveDocument(string inputFilePath, string outputFilePath)
 You can also save the created or manipulated PDF document to stream by using overloads of `Save` methods.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocumentStream(string inputFilePath, string outputFilePath)
 {
 	// Load document
@@ -115,18 +117,6 @@ private static void SaveDocumentStream(string inputFilePath, string outputFilePa
 		document.Save(System.IO.File.OpenWrite(outputFilePath));
 	}
 }
-```
-
-## Save PDF document in Web applications
-
-To save documents in Web applications, you can use the ways proposed above. In addition, the `Document` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
-
-```csharp
-var originalFileName = dataDir + "SimpleResume.pdf";
-var document = new Document(originalFileName);
-// make some manipulation, i.g add a new empty page
-document.Pages.Add();
-document.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
 
 For more detailed explanation please follow to [Showcase](/pdf/net/showcases/) section.
@@ -141,6 +131,7 @@ PDF/X is a subset of the PDF ISO standard. The purpose of PDF/X is to facilitate
 In both cases, the `Save` method is used to store the documents, while the documents must be prepared using the `Convert` method.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocumentAsPDFx(string inputFilePath, string outputFilePath)
 {
 	// Load document

@@ -88,6 +88,7 @@ Use the **TextFragmentAbsorber** class and you can already do anything with the 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractSuperScriptsAndSubScripts(string inputFilePath, string outputFilePath)
 {
 	// Open document
@@ -110,6 +111,7 @@ Or use **TextFragments** separately and do all sorts of manipulations with them,
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractSuperScriptsAndSubScriptsWithTextFragments(string inputFilePath, string outputFilePath)
 {
 	// Open document

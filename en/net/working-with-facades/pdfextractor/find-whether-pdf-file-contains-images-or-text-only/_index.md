@@ -85,6 +85,7 @@ Following code snippet shows you how to fulfill this requirement.
 {{% /alert %}}
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckIfPdfContainsTextOrImages(string inputFilePath)
 {
     // Instantiate a memoryStream object to hold the extracted text from Document
