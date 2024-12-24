@@ -140,15 +140,14 @@ private static void ExtractSignatureImage()
         {
             // Get list of signature names
             foreach (string sigName in signature.GetSignNames())
-            {
-                string outFile = dataDir + "ExtractImages_out.jpg";
+            {                
                 // Extract signature image
                 using (Stream imageStream = signature.ExtractImage(sigName))
                 {
                     if (imageStream != null)
                     {
                         imageStream.Position = 0;
-                        using (FileStream fs = new FileStream(outFile, FileMode.OpenOrCreate))
+                        using (FileStream fs = new FileStream(dataDir + "ExtractImages_out.jpg", FileMode.OpenOrCreate))
                         {
                             imageStream.CopyTo(fs);
                         }
@@ -245,13 +244,11 @@ Each of provided signatures contains a set of configuration properties implement
 private static void ChangeLanguageInDigitalSignText()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    string inFile = dataDir + "sample01.pdf";
-    string outFile = dataDir + "DigitallySign.pdf";
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();   
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfFileSignature.BindPdf(inFile);
+        pdfFileSignature.BindPdf(dataDir + "sample01.pdf");
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
 
@@ -280,7 +277,7 @@ private static void ChangeLanguageInDigitalSignText()
         // Sign the PDF file
         pdfFileSignature.Sign(1, true, rect, pkcs);
         // Save the document
-        pdfFileSignature.Save(outFile);
+        pdfFileSignature.Save(dataDir + "DigitallySign.pdf");
     }
 }
 ```

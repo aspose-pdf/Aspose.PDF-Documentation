@@ -115,7 +115,7 @@ private static void ExportDataToXml()
         pdfForm.BindPdf(dataDir + "input.pdf");
 
         // Create xml file
-        using (var xmlOutputStream = new FileStream( dataDir + "input.xml", FileMode.Create))
+        using (var xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
         {
             // Export data
             pdfForm.ExportXml(xmlOutputStream);           
@@ -260,7 +260,7 @@ private static void ExportValuesFromFieldsToJSON()
         form.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Create XFDF file
-        using (FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Create))
+        using (FileStream jsonStream = new FileStream(dataDir + "Sample-Form-01.json", FileMode.Create))
         {
             // Export data
             form.ExportJson(jsonStream);
@@ -283,10 +283,10 @@ private static void ImportValuesFromJsonToForm()
 
     using (var form = new Aspose.Pdf.Facades.Form())
     {        
-        form.BindPdf("Sample-Form-01.pdf");
+        form.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Create XFDF file
-        using (FileStream jsonStream = new FileStream("Sample-Form-01.json", FileMode.Open))
+        using (FileStream jsonStream = new FileStream(dataDir + "Sample-Form-01.json", FileMode.Open))
         {
             // Export data
             form.ImportJson(jsonStream);

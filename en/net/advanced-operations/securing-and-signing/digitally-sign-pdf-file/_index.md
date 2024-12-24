@@ -115,13 +115,10 @@ The example below creates a PKCS7 non-detached signature with the SHA-1 digest a
 private static void SignDocument(string pfxFilePath, string password)
 {    
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    string inFile = dataDir + "DigitallySign.pdf";
-    string outFile = dataDir + "DigitallySign_out.pdf";
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
     
     // Open the document
-    using (var document = new Aspose.Pdf.Document(inFile))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
     {
         // Instantiate PdfFileSignature object
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
@@ -131,7 +128,7 @@ private static void SignDocument(string pfxFilePath, string password)
             // Sign PDF file
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
             // Save the document
-            signature.Save(outFile);
+            signature.Save(dataDir + "DigitallySign_out.pdf");
         }
     }
 }
@@ -145,13 +142,10 @@ The example below creates a detached signature in PKCS7 format with the SHA-1 di
 private static void SignDocument(string pfxFilePath, string password)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    string inFile = dataDir + "DigitallySign.pdf";
-    string outFile = dataDir + "DigitallySign_out.pdf";
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
     
     // Open the document
-    using (var document = new Aspose.Pdf.Document(inFile))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
     {
         // Instantiate PdfFileSignature object using the opened document.
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
@@ -161,7 +155,7 @@ private static void SignDocument(string pfxFilePath, string password)
             // Sign PDF file
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200),pkcs);
             // Save the document
-            signature.Save(outFile);
+            signature.Save(dataDir + "DigitallySign_out.pdf");
         }
     }
 }
