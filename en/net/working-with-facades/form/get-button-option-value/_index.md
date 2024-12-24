@@ -76,11 +76,53 @@ draft: false
 ## Get Button Option Values from an Existing PDF File
 
 The radion buttons provide a way to show different options. The [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) class allows you to get all the button option values for a particular radio button. You can get these values using [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues) method. This method requires the name of the radio button as input parameter and returns a Hashtable. You can iterate through this Hashtable to get the option values. The following code snippet shows you how to get button option values from existing PDF file.
+```csharp
+private static void GetButtonOptions()
+{
+    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Forms-GetButtonOptionValue-GetButtonOptionValue.cs" >}}
+    // Create Form Object
+    using (var pdfForm = new Aspose.Pdf.Facades.Form())
+    {
+        // Open Document
+        pdfForm.BindPdf(dataDir + "FormField.pdf");
+
+        // Get button option values
+        var optionValues = pdfForm.GetButtonOptionValues("Gender");
+
+        IDictionaryEnumerator optionValueEnumerator = optionValues.GetEnumerator();
+
+        while (optionValueEnumerator.MoveNext())
+        {
+            Console.WriteLine("Key : {0} , Value : {1} ", optionValueEnumerator.Key, optionValueEnumerator.Value);
+        }
+    }
+}
+```
 
 ## Get Current Button Option Value from an Existing PDF File
 
 Radio buttons provide a way to set option values, however one of them can be selected at a time. If you want to get the currently selected option value then you can use [GetButtonOptionCurrentValue** method. [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) class provides this method. The [GetButtonOptionCurrentValue](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptioncurrentvalue) method requires radio button name as input parameter and returns the value as string. The following code snippet shows you how to get current button option value from an existing PDF file.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Forms-GetButtonOptionValue-GetCurrentValue.cs" >}}
+```csharp
+private static void GetCurremtButtonOptionValue()
+{
+    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    // Create Form Object
+    using (var pdfForm = new Aspose.Pdf.Facades.Form())
+    {
+        // Open Document
+        pdfForm.BindPdf(dataDir + "FormField.pdf");
+
+        // Get button option values
+        string optionValue = pdfForm.GetButtonOptionCurrentValue("Gender");
+
+        Console.WriteLine("Current Value : {0} ", optionValue);
+    }
+}
+```

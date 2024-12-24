@@ -86,27 +86,34 @@ Aspose.PDF for .NET supports the feature to digitally sign the PDF files using t
 In order to extract signature information, we have introduced the [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) method to the SignatureField class. Please take a look at the following code snippet which demonstrates the steps to extract an image from the SignatureField object:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-string input = dataDir +  @"ExtractingImage.pdf";
-using (Document document = new Document(input))
+private static void ExtractImagesFromSignatureField()
 {
-    foreach (Field field in document.Form)
+    // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Open a document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
     {
-        SignatureField sf = field as SignatureField;
-        if (sf != null)
+        // Searching for signature fields.
+        foreach (var field in document.Form)
         {
-            string outFile = dataDir +  @"output_out.jpg";
+            var sf = field as Aspose.Pdf.Forms.SignatureField;
+            if (sf == null)
+            {
+                continue;
+            }
+
             using (Stream imageStream = sf.ExtractImage())
             {
                 if (imageStream != null)
                 {
-                    using (System.Drawing.Image image = Bitmap.FromStream(imageStream))
-                    {
-                        image.Save(outFile, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    }
+                    continue;
+                }
+
+                using (System.Drawing.Image image = System.Drawing.Bitmap.FromStream(imageStream))
+                {
+                    image.Save(dataDir + "output_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
                 }
             }
         }
@@ -125,29 +132,37 @@ Aspose.PDF for .NET supports the feature to digitally sign the PDF files using t
 To extract signature information, we have introduced the [ExtractCertificate](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractcertificate) method to the [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class. Please take a look at the following code snippet which demonstrates the steps to extract the certificate from SignatureField object:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-
-string input = dataDir + "ExtractSignatureInfo.pdf";
-using (Document document = new Document(input))
+private static void ExtractCertificate()
 {
-    foreach (Field field in document.Form)
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    // Open document.
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
-        SignatureField sf = field as SignatureField;
-        if (sf != null)
+        // Searching for signature fields.
+        foreach (var field in document.Form)
         {
-            Stream cerStream = sf.ExtractCertificate();
-            if (cerStream != null)
+            var sf = field as Aspose.Pdf.Forms.SignatureField;
+            if (sf == null)
             {
-                using (cerStream)
+                continue;
+            }
+            // Extract certificate.
+            Stream cerStream = sf.ExtractCertificate();
+            if (cerStream == null)
+            {
+                continue;
+            }
+            // Save certificate.
+            using (cerStream)
+            {
+                byte[] bytes = new byte[cerStream.Length];
+                using (FileStream fs = new FileStream(dataDir + "input.cer", FileMode.CreateNew))
                 {
-                    byte[] bytes = new byte[cerStream.Length];
-                    using (FileStream fs = new FileStream(dataDir + @"input.cer", FileMode.CreateNew))
-                    {
-                        cerStream.Read(bytes, 0, bytes.Length);
-                        fs.Write(bytes, 0, bytes.Length);
-                    }
+                    cerStream.Read(bytes, 0, bytes.Length);
+                    fs.Write(bytes, 0, bytes.Length);
                 }
             }
         }
@@ -158,18 +173,21 @@ using (Document document = new Document(input))
 You can get information about document signature algorithms.
 
 ```csharp
-using (Document document = new Document(inputFilePath))
+private void GetSignaturesInfo(string signedPdfDocument)
 {
-    using (PdfFileSignature signature = new PdfFileSignature(document))
+    using (var document = new Aspose.Pdf.Document(signedPdfDocument))
     {
-        var sigNames = signature.GetSignNames();
-        List<SignatureAlgorithmInfo> signaturesInfoList =  signature.GetSignaturesInfo();
-        foreach (var sigInfo in signaturesInfoList)
+        using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            Console.WriteLine(sigInfo.DigestHashAlgorithm);
-            Console.WriteLine(sigInfo.AlgorithmType);
-            Console.WriteLine(sigInfo.CryptographicStandard);
-            Console.WriteLine(sigInfo.SignatureName);
+            var sigNames = signature.GetSignNames();
+            var signaturesInfoList =  signature.GetSignaturesInfo();
+            foreach (var sigInfo in signaturesInfoList)
+            {
+                Console.WriteLine(sigInfo.DigestHashAlgorithm);
+                Console.WriteLine(sigInfo.AlgorithmType);
+                Console.WriteLine(sigInfo.CryptographicStandard);
+                Console.WriteLine(sigInfo.SignatureName);
+            }
         }
     }
 }
