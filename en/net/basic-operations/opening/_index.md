@@ -85,56 +85,53 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```csharp
-public static void OpenDocument()
+private static void OpenDocument(string inputFilePath)
 {
-    var fileName = @"C:\tmp\tourguidev2_gb_tags.pdf";
-    using (var document = new Document(fileName))
-    {
-        Console.WriteLine($"Pages {document.Pages.Count}");
-    }
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		Console.WriteLine("Pages " + document.Pages.Count);
+	}
 }
 ```
 
 ## Open existing PDF document from stream
 
 ```csharp
-public static void OpenDocumentStream()
+private static void OpenDocumentStream(string inputFilePath)
 {
-    const string fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
-    var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-    // Create a new WebClient instance.
-    var webClient = new WebClient();
-    // Concatenate the domain with the Web resource filename.
-    var strWebResource = remoteUri + fileName;
-    Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, strWebResource);
+	var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
+	// Create a new WebClient instance.
+	var webClient = new WebClient();
+	// Concatenate the domain with the Web resource filename.
+	var strWebResource = remoteUri + inputFilePath;
+	Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", inputFilePath, strWebResource);
 
-    var stream = new MemoryStream();
-    webClient.OpenRead(strWebResource)?.CopyTo(stream);
+	var stream = new MemoryStream();
+	webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    using (var document = new Document(stream))
-    {
-        Console.WriteLine($"Pages {document.Pages.Count}");
-    }
+	using (var document = new Aspose.Pdf.Document(stream))
+	{
+		Console.WriteLine("Pages " +document.Pages.Count);
+	}
 }
 ```
 
 ## Open encrypted PDF document
 
 ```csharp
-public static void OpenDocumentWithPassword()
+private static void OpenDocumentWithPassword(string inputFilePath)
 {
-    const string fileName = @"C:\tmp\DocSite.pdf";
-    const string password = "Aspose2020";
-    try
-    {
-        using (var document = new Document(fileName, password))
-        {
-            Console.WriteLine($"Pages {document.Pages.Count}");
-        }
-    }
-    catch (InvalidPasswordException e)
-    {
-        Console.WriteLine(e);
-    }
+	const string password = "Aspose2020";
+	try
+	{
+		using (var document = new Document(inputFilePath, password))
+		{
+			Console.WriteLine("Pages " + document.Pages.Count);
+		}
+	}
+	catch (InvalidPasswordException e)
+	{
+		Console.WriteLine(e);
+	}
 }
 ```

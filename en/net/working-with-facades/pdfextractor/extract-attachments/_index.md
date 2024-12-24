@@ -77,20 +77,24 @@ One of the main category under the extraction capabilities of [Aspose.Pdf.Facade
 The following code snippet shows you how to use PdfExtractor methods:
 
 ```csharp
-public static void ExtractAttachments()
+private static void ExtractAttachments(string inputFilePath, string outputDirectory)
 {
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(dataDir + "sample-attach.pdf");
+	// Create extractor
+	using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
+	{
+		pdfExtractor.BindPdf(inputFilePath);
 
-    // Extract attachments
-    pdfExtractor.ExtractAttachment();
+		// Extract attachments
+		pdfExtractor.ExtractAttachment();
 
-    // Get attachment names
-    if (pdfExtractor.GetAttachNames().Count > 0)
-    {
-         Console.WriteLine("Extracting and storing...");
-         // Get extracted attachments
-         pdfExtractor.GetAttachment(dataDir);
-    }
+		// Get attachment names
+		if (pdfExtractor.GetAttachNames().Count > 0)
+		{
+			Console.WriteLine("Extracting and storing...");
+
+			// Get extracted attachments
+			pdfExtractor.GetAttachment(outputDirectory);
+		}
+	}
 }
 ```

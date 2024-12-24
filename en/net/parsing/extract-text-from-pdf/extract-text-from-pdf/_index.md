@@ -83,24 +83,28 @@ Extracting text from a PDF document is a common requirement. In this example, yo
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "ExtractTextAll.pdf");
-
-// Create TextAbsorber object to extract text
-TextAbsorber textAbsorber = new TextAbsorber();
-// Accept the absorber for all the pages
-document.Pages.Accept(textAbsorber);
-// Get the extracted text
-string extractedText = textAbsorber.Text;
-// Create a writer and open the file
-using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+private static void ExtractTextFromDocument(string inputFilePath, string outputFilePath)
 {
-    // Write a line of text to the file
-    tw.WriteLine(extractedText);
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Create TextAbsorber object to extract text
+		var textAbsorber = new Aspose.Pdf.Text.TextAbsorber();
+
+		// Accept the absorber for all the pages
+		document.Pages.Accept(textAbsorber);
+
+		// Get the extracted text
+		string extractedText = textAbsorber.Text;
+
+		// Create a writer and open the file
+		using (TextWriter tw = new StreamWriter(outputFilePath))
+		{
+			// Write a line of text to the file
+			tw.WriteLine(extractedText);
+		}
+	}
 }
 ```
 
@@ -109,27 +113,32 @@ Call the **Accept** method on a particular page of the Document object. The Inde
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "ExtractTextPage.pdf");
-
-// Create TextAbsorber object to extract text
-TextAbsorber textAbsorber = new TextAbsorber();
- 
-// Accept the absorber for a particular page
-document.Pages[1].Accept(textAbsorber);
-
-// Get the extracted text
-string extractedText = textAbsorber.Text;
-
-// Create a writer and open the file
-using (TextWriter tw = new StreamWriter(dataDir + "extracted-text_out.txt"))
+private static void ExtractTextFromPage(string inputFilePath, string outputFilePath)
 {
-    // Write a line of text to the file
-    tw.WriteLine(extractedText);
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(inputFilePath))
+    {
+
+        // Create TextAbsorber object to extract text
+        var textAbsorber = new Aspose.Pdf.Text.TextAbsorber();
+
+        // Accept the absorber for a particular page
+        document.Pages[1].Accept(textAbsorber);
+
+        // Get the extracted text
+        string extractedText = textAbsorber.Text;
+
+        // Create a writer and open the file
+        using (TextWriter tw = new StreamWriter(outputFilePath))
+        {
+            // Write a line of text to the file
+            tw.WriteLine(extractedText);
+        }
+    }
 }
 ```
 
@@ -150,40 +159,40 @@ The following steps and code snippet shows you how to extract text from a PDF us
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "input.pdf");
-System.Text.StringBuilder builder = new System.Text.StringBuilder();
-// String to hold extracted text
-string extractedText = "";
-
-foreach (Page pdfPage in document.Pages)
+private static void ExtractTextFromPagesWithTextDevice(string inputFilePath, string outputFilePath)
 {
-    using (MemoryStream textStream = new MemoryStream())
+    var builder = new System.Text.StringBuilder();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(inputFilePath))
     {
-        // Create text device
-        TextDevice textDevice = new TextDevice();
+        // String to hold extracted text
+        string extractedText = "";
 
-        // Set text extraction options - set text extraction mode (Raw or Pure)
-        TextExtractionOptions textExtOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
-        textDevice.ExtractionOptions = textExtOptions;
+        foreach (var pdfPage in document.Pages)
+        {
+            using (MemoryStream textStream = new MemoryStream())
+            {
+                // Create text device
+                var textDevice = new Aspose.Pdf.Devices.TextDevice();
 
-        // Convert a particular page and save text to the stream
-        textDevice.Process(pdfPage, textStream);
-        // Convert a particular page and save text to the stream
-        textDevice.Process(document.Pages[1], textStream);
+                // Set text extraction options - set text extraction mode (Raw or Pure)
+                var textExtOptions = new Aspose.Pdf.Text.TextExtractionOptions(Aspose.Pdf.Text.TextExtractionOptions.TextFormattingMode.Pure);
+                textDevice.ExtractionOptions = textExtOptions;
 
-        // Get text from memory stream
-        extractedText = Encoding.Unicode.GetString(textStream.ToArray());
+                // Convert a particular page and save text to the stream
+                textDevice.Process(pdfPage, textStream);
+                // Convert a particular page and save text to the stream
+                textDevice.Process(document.Pages[1], textStream);
+
+                // Get text from memory stream
+                extractedText = System.Text.Encoding.Unicode.GetString(textStream.ToArray());
+            }
+            builder.Append(extractedText);
+        }
     }
-    builder.Append(extractedText);
+    // Save the extracted text in text file
+    File.WriteAllText(outputFilePath, builder.ToString());
 }
-
-// Save the extracted text in text file
-File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", builder.ToString());
 ```
 
 ## Extract Text from a particular page region
@@ -195,28 +204,30 @@ The **Accept** method of a page is called to extract the text. Create objects of
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "ExtractTextAll.pdf");
-
-// Create TextAbsorber object to extract text
-TextAbsorber absorber = new TextAbsorber();
-absorber.TextSearchOptions.LimitToPageBounds = true;
-absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 200, 250, 350);
-
-// Accept the absorber for first page
-document.Pages[1].Accept(absorber);
-
-// Get the extracted text
-string extractedText = absorber.Text;
-// Create a writer and open the file
-using (TextWriter tw = new StreamWriter(dataDir + "extracted-text.txt"))
+private static void ExtractTextFromParticularPageRegion(string inputFilePath, string outputFilePath)
 {
-    // Write a line of text to the file
-    tw.WriteLine(extractedText);
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Create TextAbsorber object to extract text
+		var absorber = new Aspose.Pdf.Text.TextAbsorber();
+		absorber.TextSearchOptions.LimitToPageBounds = true;
+		absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 200, 250, 350);
+
+		// Accept the absorber for first page
+		document.Pages[1].Accept(absorber);
+
+		// Get the extracted text
+		string extractedText = absorber.Text;
+
+		// Create a writer and open the file
+		using (TextWriter tw = new StreamWriter(outputFilePath))
+		{
+			// Write a line of text to the file
+			tw.WriteLine(extractedText);
+		}
+	}
 }
 ```
 
@@ -227,30 +238,38 @@ A PDF file may comprise of Text, Image, Annotations, Attachments, Graphs, etc el
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "ExtractTextPage.pdf");
-
-TextFragmentAbsorber tfa = new TextFragmentAbsorber();
-document.Pages.Accept(tfa);
-TextFragmentCollection tfc = tfa.TextFragments;
-foreach (TextFragment tf in tfc)
+private static void ExtractTextBasedOnColumns(string inputFilePath, string outputFilePath)
 {
-    // Need to reduce font size at least for 70%
-    tf.TextState.FontSize = tf.TextState.FontSize * 0.7f;
-}
-Stream st = new MemoryStream();
-document.Save(st);
-document = new Document(st);
-TextAbsorber textAbsorber = new TextAbsorber();
-document.Pages.Accept(textAbsorber);
-String extractedText = textAbsorber.Text;
-textAbsorber.Visit(document);
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-System.IO.File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
+	var extractedText = string.Empty;
+	// Open document
+	using (var sourceDocument = new Aspose.Pdf.Document(inputFilePath))
+	{
+
+		var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+		sourceDocument.Pages.Accept(textFragmentAbsorber);
+		Aspose.Pdf.Text.TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
+		foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentCollection)
+		{
+			// Need to reduce font size at least for 70%
+			textFragment.TextState.FontSize = textFragment.TextState.FontSize * 0.7f;
+		}
+		Stream sourceStream = new MemoryStream();
+		sourceDocument.Save(sourceStream);
+		using (var destDocument = new Aspose.Pdf.Document(sourceStream))
+		{
+			var textAbsorber = new Aspose.Pdf.Text.TextAbsorber();
+			destDocument.Pages.Accept(textAbsorber);
+			extractedText = textAbsorber.Text;
+			textAbsorber.Visit(destDocument);
+		}
+
+	}
+	
+	// Save the extracted text in text file
+	System.IO.File.WriteAllText(outputFilePath, extractedText);
+}
 ```
 
 ### Second approach - Using ScaleFactor
@@ -264,21 +283,25 @@ We propose the usage of auto-scaling (ScaleFactor = 0) when processing a large n
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+private static void ExctractTextWithScaleFactor(string inputFilePath, string outputFilePath)
+{
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
 
-// Open document
-Document document = new Document(dataDir + "ExtractTextPage.pdf");
+		var textAbsorber = new Aspose.Pdf.Text.TextAbsorber();
+		textAbsorber.ExtractionOptions = new Aspose.Pdf.Text.TextExtractionOptions(Aspose.Pdf.Text.TextExtractionOptions.TextFormattingMode.Pure);
+		// Setting scale factor to 0.5 is enough to split columns in the majority of documents
+		// Setting of zero allows to algorithm choose scale factor automatically
+		textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
+		document.Pages.Accept(textAbsorber);
+		var extractedText = textAbsorber.Text;
 
-TextAbsorber textAbsorber = new TextAbsorber();
-textAbsorber.ExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
-// Setting scale factor to 0.5 is enough to split columns in the majority of documents
-// Setting of zero allows to algorithm choose scale factor automatically
-textAbsorber.ExtractionOptions.ScaleFactor = 0.5; /* 0; */
-document.Pages.Accept(textAbsorber);
-String extractedText = textAbsorber.Text;
-System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
+		// Save the extracted text in text file
+		System.IO.File.WriteAllText(outputFilePath, extractedText);
+	}
+}
 ```
 
 {{% alert color="primary" %}}
@@ -294,25 +317,29 @@ In various scenarios of text extraction from a PDF document, you can come up wit
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document document = new Document(dataDir + "ExtractHighlightedText.pdf");
-// Loop through all the annotations
-foreach (Annotation annotation in document.Pages[1].Annotations)
+private static void ExtractHighlightedTextFromDocument(string inputFilePath)
 {
-    // Filter TextMarkupAnnotation
-    if (annotation is TextMarkupAnnotation)
-    {
-        TextMarkupAnnotation highlightedAnnotation = annotation as TextMarkupAnnotation;
-        // Retrieve highlighted text fragments
-        TextFragmentCollection collection = highlightedAnnotation.GetMarkedTextFragments();
-        foreach (TextFragment tf in collection)
-        {
-            // Display highlighted text
-            Console.WriteLine(tf.Text);
-        }
-    }
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Loop through all the annotations
+		foreach (Aspose.Pdf.Annotations.Annotation annotation in document.Pages[1].Annotations)
+		{
+			// Filter TextMarkupAnnotation
+			if (annotation is Aspose.Pdf.Annotations.TextMarkupAnnotation)
+			{
+				var highlightedAnnotation = annotation as Aspose.Pdf.Annotations.TextMarkupAnnotation;
+				// Retrieve highlighted text fragments
+				Aspose.Pdf.Text.TextFragmentCollection collection = highlightedAnnotation.GetMarkedTextFragments();
+				foreach (Aspose.Pdf.Text.TextFragment textFragment in collection)
+				{
+					// Display highlighted text
+					Console.WriteLine(textFragment.Text);
+				}
+			}
+		}
+	}
 }
 ```
 
@@ -323,19 +350,24 @@ Sometimes we need access to TextFragement or TextSegment items when processing P
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+private static void AccessTextFragmentAndSegmentElementsFromXML(string inputFilePath, string outputFilePath)
+{
+	// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-string inXml = "40014.xml";
-string outFile = "40014_out.pdf";
+	// Create document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		document.BindXml(inputFilePath);
 
-Document document = new Document();
-document.BindXml(dataDir + inXml);
+		// Get page
+		var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
 
-Page page = (Page)document.GetObjectById("mainSection");
+		// Get elements by Id
+		var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+		segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
 
-TextSegment segment = (TextSegment)document.GetObjectById("boldHtml");
-segment = (TextSegment)document.GetObjectById("strongHtml");
-document.Save(dataDir + outFile);
+		// save document
+		document.Save(outputFilePath);
+	}
+}
 ```

@@ -95,17 +95,19 @@ To create a PDF file using C#, the following steps can be used.
 1. Save the resultant PDF document.
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
-
-// Initialize document object
-Document document = new Document();
-// Add page
-Page page = document.Pages.Add();
-// Add text to new page
-page.Paragraphs.Add(new TextFragment("Hello World!"));
-// Save updated PDF
-document.Save(dataDir + "HelloWorld_out.pdf");
+private static void CreateDocument(string outputFilePath)
+{
+	// Initialize document object
+	using (var document = new Aspose.Pdf.Document())
+	{
+		// Add page
+		var page = document.Pages.Add();
+		// Add text to new page
+		page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+		// Save updated PDF
+		document.Save(outputFilePath);
+	}
+}
 ```
 
 ### How to Create a Searchable PDF document
@@ -117,66 +119,68 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-using (Document document = new Document(file))
+private static void CreateSearchableDocument(string outputFilePath)
 {
-    bool convertResult = false;
-    try
-    {
-        convertResult = document.Convert(CallBackGetHocr);
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex.Message);
-    }
-    document.Save(file);
+	using (var document = new Aspose.Pdf.Document(outputFilePath))
+	{
+		bool convertResult = false;
+		try
+		{
+			convertResult = document.Convert(CallBackGetHocr);
+		}
+		catch (Exception ex)
+		{
+			Console.WriteLine(ex.Message);
+		}
+		document.Save(outputFilePath);
+	}
 }
 
-static string CallBackGetHocr(System.Drawing.Image img)
+private static string CallBackGetHocr(System.Drawing.Image img)
 {
-    string tmpFile = System.IO.Path.GetTempFileName();
-    try
-    {
-        System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
+	string tmpFile = System.IO.Path.GetTempFileName();
+	try
+	{
+		var bmp = new System.Drawing.Bitmap(img);
+		bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
 
-        bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
-        string inputFile = string.Concat('"', tmpFile, '"');
-        string outputFile = string.Concat('"', tmpFile, '"');
-        string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
-        string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
+		var inputFile = string.Concat('"', tmpFile, '"');
+		var outputFile = string.Concat('"', tmpFile, '"');
+		var arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
+		var tesseractProcessName = RunExamples.GetTesseractExePath();
 
-        System.Diagnostics.ProcessStartInfo psi =
-            new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
-            {
-                UseShellExecute = true,
-                CreateNoWindow = true,
-                WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-                WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
-            };
+		var psi = new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
+		{
+			UseShellExecute = true,
+			CreateNoWindow = true,
+			WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
+			WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
+		};
 
-        System.Diagnostics.Process p = new System.Diagnostics.Process
-        {
-            StartInfo = psi
-        };
-        p.Start();
-        p.WaitForExit();
+		var p = new System.Diagnostics.Process
+		{
+			StartInfo = psi
+		};
+		p.Start();
+		p.WaitForExit();
 
-        using (System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
-        {
-            string text = streamReader.ReadToEnd();
-            return text;
-        }
-    }
-    finally
-    {
-        if (System.IO.File.Exists(tmpFile))
-        {
-            System.IO.File.Delete(tmpFile);
-        }
-        if (System.IO.File.Exists(tmpFile + ".hocr"))
-        {
-            System.IO.File.Delete(tmpFile + ".hocr");
-        }
-    }
+		using (var streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+		{
+			string text = streamReader.ReadToEnd();
+			return text;
+		}
+	}
+	finally
+	{
+		if (System.IO.File.Exists(tmpFile))
+		{
+			System.IO.File.Delete(tmpFile);
+		}
+		if (System.IO.File.Exists(tmpFile + ".hocr"))
+		{
+			System.IO.File.Delete(tmpFile + ".hocr");
+		}
+	}
 }
 ```
 
@@ -189,13 +193,13 @@ The example creates a new span element in the tagged content of the first page o
 You can create a bdc statement specifying mcid, lang, and expansion text using the BDCProperties object:
 
 ```cs
-BDC bdc = new BDC(PdfConsts.P, new BDCProperties(1, "de", "Hallo, welt!"));
+var bdc = new Aspose.Pdf.Operators.BDC("P", new Aspose.Pdf.Facades.BDCProperties(1, "de", "Hallo, welt!"));
 ```
 
 After creating the structure tree, it is possible to bind the BDC operator to the specified element of the structure with method Tag on the element object:
 
 ```cs
-SpanElement span = content.CreateSpanElement();
+Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
 span.Tag(bdc);
 ```
 
@@ -210,20 +214,30 @@ Steps to creating an accessible PDF:
 1. Save the Modified Document.
 
 ```cs
-var document = new Document(somepdffilepath);
-ITaggedContent content = document.TaggedContent;
-SpanElement span = content.CreateSpanElement();
-content.RootElement.AppendChild(span);
-foreach (var op in document.Pages[1].Contents)
+private static void CreateAnAccessibleDocument(string inputFilePath, string outputFilePath)
 {
-    BDC bdc = op as BDC;
-    if (bdc != null)
-    {
-        span.Tag(bdc);
-    }
+	// Load the PDF document.
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Access tagged content.
+		Aspose.Pdf.Tagged.ITaggedContent content = document.TaggedContent;
+		// Create a span element.
+		Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
+		// Append span to root element.
+		content.RootElement.AppendChild(span);
+		// Iterate over page contents.
+		foreach (var op in document.Pages[1].Contents)
+		{
+			var bdc = op as Aspose.Pdf.Operators.BDC;
+			if (bdc != null)
+			{
+				span.Tag(bdc);
+			}
+		}
+		// Save document
+		document.Save(outputFilePath);
+	}
 }
-
-document.Save(output);
 ```
 
 This code modifies a PDF by creating a span element within the document's tagged content and tagging specific content (BDC operations) from the first page with this span. The modified PDF is then saved to a new file.

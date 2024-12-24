@@ -88,13 +88,20 @@ Use the **TextFragmentAbsorber** class and you can already do anything with the 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-const string dataDir = @"Samples\"; 
-Document document = new Document(dataDir + "test1.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-document.Pages[1].Accept(absorber);
-using (StreamWriter writer = new StreamWriter(dataDir + "output.txt"))
+private static void ExtractSuperScriptsAndSubScripts(string inputFilePath, string outputFilePath)
 {
-    writer.WriteLine(absorber.Text);
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Create an absorber
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+		document.Pages[1].Accept(absorber);
+		using (StreamWriter writer = new StreamWriter(outputFilePath))
+		{
+			// Write the extracted text in text file
+			writer.WriteLine(absorber.Text);
+		}
+	}
 }
 ```
 
@@ -103,15 +110,24 @@ Or use **TextFragments** separately and do all sorts of manipulations with them,
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-Document document = new Document(dataDir + "test1.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber();
-document.Pages[1].Accept(absorber);
-using (StreamWriter writer = new StreamWriter(dataDir + "output.txt"))
+private static void ExtractSuperScriptsAndSubScriptsWithTextFragments(string inputFilePath, string outputFilePath)
 {
-    foreach (var textFragment in absorber.TextFragments)
-    {
-        writer.Write(textFragment.Text);
-    }
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Create an absorber
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+		document.Pages[1].Accept(absorber);
+		using (StreamWriter writer = new StreamWriter(outputFilePath))
+		{
+			foreach (var textFragment in absorber.TextFragments)
+			{
+				// Write the extracted text in text file
+				writer.Write(textFragment.Text);
+			}
+
+		}
+	}
 }
 ```
 

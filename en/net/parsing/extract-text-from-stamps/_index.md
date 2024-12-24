@@ -87,16 +87,18 @@ Aspose.PDF for NET lets you extract text from stamp annotations. In order to ext
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-public static void ExtractText()
+private static void ExtractText(string inputFilePath)
 {
-   Document document = new Document(dataDir + "ExtractStampText.pdf");
-   Annotation item = document.Pages[1].Annotations[1];
-   if (item is StampAnnotation annot) 
-   {
-        TextAbsorber ta = new TextAbsorber();
-        XForm ap = annot.Appearance["N"];
-        ta.Visit(ap);
-        Console.WriteLine(ta.Text);
-   }
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		Aspose.Pdf.Annotations.Annotation item = document.Pages[1].Annotations[1];
+		if (item is Aspose.Pdf.Annotations.StampAnnotation annot)
+		{
+			var absorber = new Aspose.Pdf.Text.TextAbsorber();
+			Aspose.Pdf.XForm appearance = annot.Appearance["N"];
+			absorber.Visit(appearance);
+			Console.WriteLine(absorber.Text);
+		}
+	}
 }
 ```

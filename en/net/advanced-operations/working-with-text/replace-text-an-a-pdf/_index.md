@@ -92,34 +92,35 @@ In order to replace text in all the pages of a PDF document, you first need to u
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "ReplaceTextAll.pdf");
-
-// Create TextAbsorber object to find all instances of the input search phrase
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
-
-// Accept the absorber for all the pages
-document.Pages.Accept(textFragmentAbsorber);
-
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
+private static void ReplaceTextInAllPages(string folderPath)
 {
-    // Update text and other properties
-    textFragment.Text = "TEXT";
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
+	// Open document
+	using (var document = new Aspose.Pdf.Document(folderPath + "ReplaceTextAll.pdf"))
+	{
+		// Create TextAbsorber object to find all instances of the input search phrase
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("text");
 
-// Save resulting PDF document
-document.Save(dataDir + "ReplaceTextAll_out.pdf");
+		// Accept the absorber for all the pages
+		document.Pages.Accept(absorber);
+
+		// Get the extracted text fragments
+		var textFragmentCollection = absorber.TextFragments;
+
+		// Loop through the fragments
+		foreach (var textFragment in textFragmentCollection)
+		{
+			// Update text and other properties
+			textFragment.Text = "TEXT";
+			textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+			textFragment.TextState.FontSize = 22;
+			textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+			textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+		}
+
+		// Save resulting PDF document
+		document.Save(folderPath + "ReplaceTextAll_out.pdf");
+	}
+}
 ```
 
 ## Replace Text in particular page region
@@ -127,30 +128,35 @@ document.Save(dataDir + "ReplaceTextAll_out.pdf");
 In order to replace text in a particular page region, first, we need to instantiate TextFragmentAbsorber object, specify page region using TextSearchOptions.Rectangle property and then iterate through all the TextFragments to replace the text. Once these operations are completed, we only need to save the output PDF using the Save method of the Document object.  The following code snippet shows you how to replace text in all pages of PDF document.
 
 ```csharp
-// load PDF file
-Document pdf  = new Document("c:/pdftest/programaticallyproducedpdf.pdf");
-
-// instantiate TextFragment Absorber object
-Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Text.TextFragmentAbsorber();
-
-// search text within page bound
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
-
-// specify the page region for TextSearch Options
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 100, 200, 200);
-
-// search text from first page of PDF file
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
-
-// iterate through individual TextFragment
-foreach (Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextInParticularPageRegion(string inputFilePath, string outputFilePath)
 {
-    // update text to blank characters
-    tf.Text = "";
-}
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// instantiate TextFragment Absorber object
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
 
-// save updated PDF file after text replace
-pdf.Save("c:/pdftest/TextUpdated.pdf");
+		// search text within page bound
+		absorber.TextSearchOptions.LimitToPageBounds = true;
+
+		// specify the page region for TextSearch Options
+		absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 100, 200, 200);
+
+		// search text from first page of PDF file
+		document.Pages[1].Accept(absorber);
+
+		// iterate through individual TextFragment
+		foreach (var textFragment in absorber.TextFragments)
+		{
+			// update text to blank characters
+			textFragment.Text = "";
+		}
+
+		// save updated PDF file after text replace
+		document.Save(outputFilePath);
+	}
+}
 ```
 
 ## Replace Text Based on a Regular Expression
@@ -159,38 +165,39 @@ If you want to replace some phrases based on regular expression, you first need 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "SearchRegularExpressionPage.pdf");
-
-// Create TextAbsorber object to find all the phrases matching the regular expression
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
-
-// Set text search option to specify regular expression usage
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
-
-// Accept the absorber for a single page
-document.Pages[1].Accept(textFragmentAbsorber);
-
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
+private static void ReplaceTextBasedOnARegularExpression(string inputFilePath, string outputFilePath)
 {
-    // Update text and other properties
-    textFragment.Text = "New Phrase";
-    // Set to an instance of an object.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
 
-document.Save(dataDir + "ReplaceTextonRegularExpression_out.pdf");
+		// Create TextAbsorber object to find all the phrases matching the regular expression
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
+
+		// Set text search option to specify regular expression usage
+		absorber.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(true);
+
+		// Accept the absorber for a single page
+		document.Pages[1].Accept(absorber);
+
+		// Get the extracted text fragments
+		var collection = absorber.TextFragments;
+
+		// Loop through the fragments
+		foreach (var textFragment in collection)
+		{
+			// Update text and other properties
+			textFragment.Text = "New Phrase";
+			// Set to an instance of an object.
+			textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+			textFragment.TextState.FontSize = 22;
+			textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+			textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+		}
+
+		document.Save(outputFilePath);
+	}
+}
 ```
 
 ## Replace fonts in existing PDF file
@@ -199,30 +206,34 @@ Aspose.PDF for .NET supports the capability to replace text in PDF document. How
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Load source PDF file
-Document document = new Document(dataDir + "ReplaceTextPage.pdf");
-
-// Search text fragments and set edit option as remove unused fonts
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-
-// Accept the absorber for all the pages
-document.Pages.Accept(absorber);
-
-// Traverse through all the TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
+private static void ReplaceFonts(string inputFilePath, string outputFilePath)
 {
-    // If the font name is ArialMT, replace font name with Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
-    {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
-}
+	// Load source PDF file
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Create text edit options
+		var options = new Aspose.Pdf.Text.TextEditOptions(Aspose.Pdf.Text.TextEditOptions.FontReplace.RemoveUnusedFonts);
 
-// Save updated document
-document.Save(dataDir + "ReplaceFonts_out.pdf");
+		// Search text fragments and set edit option as remove unused fonts
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber(options);
+
+		// Accept the absorber for all the pages
+		document.Pages.Accept(absorber);
+
+		// Traverse through all the TextFragments
+		foreach (var textFragment in absorber.TextFragments)
+		{
+			// If the font name is ArialMT, replace font name with Arial
+			if (textFragment.TextState.Font.FontName == "Arial,Bold")
+			{
+				textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+			}
+		}
+
+		// Save updated document
+		document.Save(outputFilePath);
+	}
+}
 ```
 
 ## Text Replacement should automatically re-arrange Page Contents
@@ -233,30 +244,32 @@ In order to cater above-stated scenarios, Aspose.PDF for .NET has been enhanced 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Load source PDF file
-Document document = new Document(dataDir + "ExtractTextPage.pdf");
-
-// Create TextFragment Absorber object with regular expression
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-document.Pages.Accept(textFragmentAbsorber);
-
-// Replace each TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
+private static void AutomaticallyReArrangePageContents(string folderPath)
 {
-    // Set font of text fragment being replaced
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Set font size
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Replace the text with larger string than placeholder
-    textFragment.Text = "This is a Larger String for the Testing of this issue";
-}
+	// Open document
+	using (var document = new Aspose.Pdf.Document(folderPath + "ExtractTextPage.pdf"))
+	{
 
-// Save resultant PDF
-document.Save(dataDir + "RearrangeContentsUsingTextReplacement_out.pdf");
+		// Create TextFragment Absorber object with regular expression
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
+		document.Pages.Accept(absorber);
+
+		// Replace each TextFragment
+		foreach (var textFragment in absorber.TextFragments)
+		{
+			// Set font of text fragment being replaced
+			textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+			// Set font size
+			textFragment.TextState.FontSize = 12;
+			textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
+			// Replace the text with larger string than placeholder
+			textFragment.Text = "This is a Larger String for the Testing of this issue";
+		}
+
+		// Save resultant PDF
+		document.Save(folderPath + "RearrangeContentsUsingTextReplacement_out.pdf");
+	}
+}
 ```
 
 ## Rendering Replaceable Symbols during PDF creation
@@ -270,37 +283,41 @@ Replaceable symbols are special symbols in a text string that can be replaced wi
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+private static void RenderingReplaceableSymbols(string folderPath)
+{
+	// Create document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		var page = document.Pages.Add();
 
-Document document = new Document();
-Page applicationFirstPage = (Page)document.Pages.Add();
+		// Initialize new TextFragment with text containing required newline markers
+		Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
 
-// Initialize new TextFragment with text containing required newline markers
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+		// Set text fragment properties if necessary
+		textFragment.TextState.FontSize = 12;
+		textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+		textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+		textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
 
-// Set text fragment properties if necessary
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+		// Create TextParagraph object
+		var par = new Aspose.Pdf.Text.TextParagraph();
 
-// Create TextParagraph object
-TextParagraph par = new TextParagraph();
+		// Add new TextFragment to paragraph
+		par.AppendLine(textFragment);
 
-// Add new TextFragment to paragraph
-par.AppendLine(textFragment);
+		// Set paragraph position
+		par.Position = new Aspose.Pdf.Text.Position(100, 600);
 
-// Set paragraph position
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
+		// Create TextBuilder object
+		var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
 
-// Create TextBuilder object
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-
-// Add the TextParagraph using TextBuilder
-textBuilder.AppendParagraph(par);
-
-document.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
+		// Add the TextParagraph using TextBuilder
+		textBuilder.AppendParagraph(par);
+		
+		// Save document
+		document.Save(folderPath + "RenderingReplaceableSymbols_out.pdf");
+	}
+}
 ```
 
 ## Replaceable symbols in Header/Footer area
@@ -309,130 +326,135 @@ Replaceable symbols can also be placed inside the Header/Footer section of PDF f
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Document document = new Document();
-Page page = document.Pages.Add();
-
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Assign the marginInfo instance to Margin property of sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
-
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
-
-// Instantiate a Text paragraph that will store the content to show as header
-TextFragment t1 = new TextFragment("report title");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
-
-TextFragment t2 = new TextFragment("Report_Name");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
-
-// Create a HeaderFooter object for the section
-HeaderFooter hfFoot = new HeaderFooter();
-
-// Set the HeaderFooter object to odd & even footer
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
-
-// Add a text paragraph containing current page number of total number of pages
-TextFragment t3 = new TextFragment("Generated on test date");
-TextFragment t4 = new TextFragment("report name ");
-TextFragment t5 = new TextFragment("Page $p of $P");
-
-// Instantiate a table object
-Table tab2 = new Table();
-
-// Add the table in paragraphs collection of the desired section
-hfFoot.Paragraphs.Add(tab2);
-
-// Set with column widths of the table
-tab2.ColumnWidths = "165 172 165";
-
-// Create rows in the table and then cells in the rows
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// Set the vertical allignment of the text as center alligned
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL"))
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// Add the table in paragraphs collection of the desired section
-page.Paragraphs.Add(table);
-
-// Set default cell border using BorderInfo object
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// Set table border using another customized BorderInfo object
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// Create rows in the table and then cells in the rows
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
+private static void ReplaceableSymbolsInHeaderOrFooterArea(string folderPath)
 {
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-        {
-            c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
-        }
-        else
-        {
-            c1 = row.Cells.Add("item1" + c);
-        }
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
-    }
-}
+	// Create document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		var page = document.Pages.Add();
 
-document.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
+		// Create margin info
+		var marginInfo = new Aspose.Pdf.MarginInfo();
+		marginInfo.Top = 90;
+		marginInfo.Bottom = 50;
+		marginInfo.Left = 50;
+		marginInfo.Right = 50;
+		// Assign the marginInfo instance to Margin property of sec1.PageInfo
+		page.PageInfo.Margin = marginInfo;
+
+		var headerFooterFirst = new Aspose.Pdf.HeaderFooter();
+		page.Header = headerFooterFirst;
+		headerFooterFirst.Margin.Left = 50;
+		headerFooterFirst.Margin.Right = 50;
+
+		// Instantiate a Text paragraph that will store the content to show as header
+		var fragment1 = new Aspose.Pdf.Text.TextFragment("report title");
+		fragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+		fragment1.TextState.FontSize = 16;
+		fragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
+		fragment1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+		fragment1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+		fragment1.TextState.LineSpacing = 5f;
+		headerFooterFirst.Paragraphs.Add(fragment1);
+
+		var fragment2 = new Aspose.Pdf.Text.TextFragment("Report_Name");
+		fragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+		fragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
+		fragment2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+		fragment2.TextState.LineSpacing = 5f;
+		fragment2.TextState.FontSize = 12;
+		headerFooterFirst.Paragraphs.Add(fragment2);
+
+		// Create a HeaderFooter object for the section
+		var headerFooterFoot = new Aspose.Pdf.HeaderFooter();
+
+		// Set the HeaderFooter object to odd & even footer
+		page.Footer = headerFooterFoot;
+		headerFooterFoot.Margin.Left = 50;
+		headerFooterFoot.Margin.Right = 50;
+
+		// Add a text paragraph containing current page number of total number of pages
+		var fragment3 = new Aspose.Pdf.Text.TextFragment("Generated on test date");
+		var fragment4 = new Aspose.Pdf.Text.TextFragment("report name ");
+		var fragment5 = new Aspose.Pdf.Text.TextFragment("Page $p of $P");
+
+		// Instantiate a table object
+		var table2 = new Aspose.Pdf.Table();
+
+		// Add the table in paragraphs collection of the desired section
+		headerFooterFoot.Paragraphs.Add(table2);
+
+		// Set with column widths of the table
+		table2.ColumnWidths = "165 172 165";
+
+		// Create rows in the table and then cells in the rows
+		var row3 = table2.Rows.Add();
+
+		row3.Cells.Add();
+		row3.Cells.Add();
+		row3.Cells.Add();
+
+		// Set the vertical allignment of the text as center alligned
+		row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
+		row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+		row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+
+		row3.Cells[0].Paragraphs.Add(fragment3);
+		row3.Cells[1].Paragraphs.Add(fragment4);
+		row3.Cells[2].Paragraphs.Add(fragment5);
+
+		// Sec1.Paragraphs.Add(New Text("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL"))
+		var table = new Aspose.Pdf.Table();
+
+		table.ColumnWidths = "33% 33% 34%";
+		table.DefaultCellPadding = new Aspose.Pdf.MarginInfo();
+		table.DefaultCellPadding.Top = 10;
+		table.DefaultCellPadding.Bottom = 10;
+
+		// Add the table in paragraphs collection of the desired section
+		page.Paragraphs.Add(table);
+
+		// Set default cell border using BorderInfo object
+		table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1f);
+
+		// Set table border using another customized BorderInfo object
+		table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1f);
+
+		table.RepeatingRowsCount = 1;
+
+		// Create rows in the table and then cells in the rows
+		var row1 = table.Rows.Add();
+
+		row1.Cells.Add("col1");
+		row1.Cells.Add("col2");
+		row1.Cells.Add("col3");
+		const string CRLF = "\r\n";
+		for (int i = 0; i <= 10; i++)
+		{
+			var row = table.Rows.Add();
+			row.IsRowBroken = true;
+			for (int c = 0; c <= 2; c++)
+			{
+				Aspose.Pdf.Cell c1;
+				if (c == 2)
+				{
+					c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
+				}
+				else
+				{
+					c1 = row.Cells.Add("item1" + c);
+				}
+				c1.Margin = new Aspose.Pdf.MarginInfo();
+				c1.Margin.Left = 30;
+				c1.Margin.Top = 10;
+				c1.Margin.Bottom = 10;
+			}
+		}
+
+		// Save document
+		document.Save(folderPath + "ReplaceableSymbolsInHeaderFooter_out.pdf");
+	}
+}
 ```
 
 ## Remove Unused Fonts from PDF File
@@ -449,22 +471,25 @@ The following code snippet replaces font for all text fragments of all document 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Load source PDF file
-Document document = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-document.Pages.Accept(absorber);
-
-// Iterate through all the TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
+private static void RemoveUnusedFonts(string folderPath)
 {
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
-}
+	// Open document
+	using (var document = new Aspose.Pdf.Document(folderPath + "ReplaceTextPage.pdf"))
+	{
+		var options = new Aspose.Pdf.Text.TextEditOptions(Aspose.Pdf.Text.TextEditOptions.FontReplace.RemoveUnusedFonts);
+		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+		document.Pages.Accept(absorber);
 
-// Save updated document
-document.Save(dataDir + "RemoveUnusedFonts_out.pdf");
+		// Iterate through all the TextFragments
+		foreach (var textFragment in absorber.TextFragments)
+		{
+			textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial, Bold");
+		}
+
+		// Save updated document
+		document.Save(folderPath + "RemoveUnusedFonts_out.pdf");
+	}
+}
 ```
 
 ## Remove All Text from PDF Document
@@ -477,23 +502,25 @@ Therefore, we recommend using another approach for the scenario of removing all 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Open document
-Document document = new Document(dataDir + "RemoveAllText.pdf");
-// Loop through all pages of PDF Document
-for (int i = 1; i <= document.Pages.Count; i++)
+private static void RemoveAllTextFromDocument(string folderPath)
 {
-    Page page = document.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Operators.TextShowOperator());
-    // Select all text on the page
-    page.Contents.Accept(operatorSelector);
-    // Delete all text
-    page.Contents.Delete(operatorSelector.Selected);
+	// Open document
+	using (var document = new Aspose.Pdf.Document(folderPath + "RemoveAllText.pdf"))
+	{
+		// Loop through all pages of PDF Document
+		for (int i = 1; i <= document.Pages.Count; i++)
+		{
+			var page = document.Pages[i];
+			var operatorSelector = new Aspose.Pdf.OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
+			// Select all text on the page
+			page.Contents.Accept(operatorSelector);
+			// Delete all text
+			page.Contents.Delete(operatorSelector.Selected);
+		}
+		// Save the document
+		document.Save(folderPath + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+	}
 }
-// Save the document
-document.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
 
 <script type="application/ld+json">

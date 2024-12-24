@@ -86,15 +86,16 @@ You can save the created or manipulated PDF document to file system using `Save`
 When you do not provide the format type (options), then the document is saved in Aspose.PDF v.1.7 (*.pdf) format.
 
 ```csharp
-public static void SaveDocument()
+private static void SaveDocument(string inputFilePath, string outputFilePath)
 {
-    var originalFileName = dataDir + "SimpleResume.pdf";
-    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
-
-    var document = new Document(originalFileName);
-    // make some manipation, i.g add new empty page
-    document.Pages.Add();
-    document.Save(modifiedFileName);
+	// Load document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Make some manipation, i.g add new empty page
+		document.Pages.Add();
+		// Save document
+		document.Save(outputFilePath);
+	}
 }
 ```
 
@@ -103,15 +104,16 @@ public static void SaveDocument()
 You can also save the created or manipulated PDF document to stream by using overloads of `Save` methods.
 
 ```csharp
-public static void SaveDocumentStream()
+private static void SaveDocumentStream(string inputFilePath, string outputFilePath)
 {
-    var originalFileName = dataDir + "SimpleResume.pdf";
-    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
-
-    var document = new Document(originalFileName);
-    // make some manipation, i.g add new empty page
-    document.Pages.Add();
-    document.Save(System.IO.File.OpenWrite(modifiedFileName));
+	// Load document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Make some manipation, i.g add new empty page
+		document.Pages.Add();
+		// Save document
+		document.Save(System.IO.File.OpenWrite(outputFilePath));
+	}
 }
 ```
 
@@ -139,11 +141,17 @@ PDF/X is a subset of the PDF ISO standard. The purpose of PDF/X is to facilitate
 In both cases, the `Save` method is used to store the documents, while the documents must be prepared using the `Convert` method.
 
 ```csharp
-public static void SaveDocumentAsPDFx()
+private static void SaveDocumentAsPDFx(string inputFilePath, string outputFilePath)
 {
-    var document = new Document("..\\..\\..\\Samples\\SimpleResume.pdf");
-    document.Pages.Add();
-    document.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-    document.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
+	// Load document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Add a new page
+		document.Pages.Add();
+		// Convert a document to a PDF/X-3 format
+		document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
+		// Save document
+		document.Save(outputFilePath);
+	}
 }
 ```

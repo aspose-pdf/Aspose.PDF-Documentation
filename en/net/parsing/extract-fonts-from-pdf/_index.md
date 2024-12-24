@@ -82,12 +82,17 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document document = new Document(dataDir + "input.pdf");
-Aspose.Pdf.Text.Font[] fonts = document.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+private static void ExtractFonts(string inputFilePath)
 {
-    Console.WriteLine(font.FontName);
+	// Open document
+	using (var document = new Aspose.Pdf.Document(inputFilePath))
+	{
+		// Extract fonts
+		Aspose.Pdf.Text.Font[] fonts = document.FontUtilities.GetAllFonts();
+		foreach (Aspose.Pdf.Text.Font font in fonts)
+		{
+			Console.WriteLine(font.FontName);
+		}
+	}
 }
 ```

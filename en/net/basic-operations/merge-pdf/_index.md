@@ -95,19 +95,25 @@ To concatenate two PDF files:
 The following code snippet shows how to concatenate PDF files.
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+private static void MergeDocuments()
+{
+	// The path to the documents directory.
+	string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-// Open first document
-Document document1 = new Document(dataDir + "Concat1.pdf");
-// Open second document
-Document document2 = new Document(dataDir + "Concat2.pdf");
+	// Open first document
+	using (var document1 = new Aspose.Pdf.Document(dataDir + "Concat1.pdf"))
+	{
+		// Open second document
+		using (var document2 = new Aspose.Pdf.Document(dataDir + "Concat2.pdf"))
+		{
+			// Add pages of second document to the first
+			document1.Pages.Add(document2.Pages);
 
-// Add pages of second document to the first
-document1.Pages.Add(document2.Pages);
-
-// Save concatenated output file
-document1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
+			// Save concatenated output file
+			document1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
+		}
+	}
+}
 ```
 
 ## Live Example
