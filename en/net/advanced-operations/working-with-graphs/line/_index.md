@@ -98,32 +98,36 @@ Follow the steps below:
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
-public static void AddLineObjectToPDF()
+private static void AddLineObjectToPDF()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Graph instance
-    var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
+        // Create Graph instance
+        var graph = new Aspose.Pdf.Drawing.Graph(100, 400);
 
-    // Add graph object to paragraphs collection of page instance
-    page.Paragraphs.Add(graph);
+        // Add graph object to paragraphs collection of page instance
+        page.Paragraphs.Add(graph);
 
-    // Create Rectangle instance
-    var line = new Line(new float[] { 100, 100, 200, 100 });
+        // Create Line instance with specified coordinates
+        var line = new Aspose.Pdf.Drawing.Line(new float[] { 100, 100, 200, 100 });
 
-    // Specify fill color for Graph object
-    line.GraphInfo.DashArray = new int[] { 0, 1, 0 };
-    line.GraphInfo.DashPhase = 1;
+        // Specify dash settings for the line
+        line.GraphInfo.DashArray = new int[] { 0, 1, 0 };
+        line.GraphInfo.DashPhase = 1;
 
-    // Add rectangle object to shapes collection of Graph object
-    graph.Shapes.Add(line);
+        // Add line object to shapes collection of Graph object
+        graph.Shapes.Add(line);
 
-    // Save PDF file
-    document.Save(dataDir + "AddLineObject_out.pdf");
+        // Save PDF file
+        document.Save(dataDir + "AddLineObject_out.pdf");
+    }
 }
 ```
 
@@ -132,31 +136,41 @@ public static void AddLineObjectToPDF()
 ## How to add Dotted Dashed Line to your PDF document
 
 ```csharp
-public static void DashLengthInBlackAndDashLengthInWhite()
+private static void DashLengthInBlackAndDashLengthInWhite()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var canvas = new Aspose.Pdf.Drawing.Graph(100, 400);
-    // Add drawing object to paragraphs collection of page instance
-    page.Paragraphs.Add(canvas);
+        // Create Drawing object with certain dimensions
+        var canvas = new Aspose.Pdf.Drawing.Graph(100, 400);
 
-    // Create Line object
-    var line = new Line(new float[] { 100, 100, 200, 100 });
-    // Set color for Line object
-    line.GraphInfo.Color = Color.Red;
-    // Specify dash array for line object
-    line.GraphInfo.DashArray = new int[] { 0, 1, 0 };
-    // Set the dash phase for Line instance
-    line.GraphInfo.DashPhase = 1;
-    // Add line to shapes collection of drawing object
-    canvas.Shapes.Add(line);
-    // Save PDF file
-    document.Save(dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
+        // Add drawing object to paragraphs collection of page instance
+        page.Paragraphs.Add(canvas);
+
+        // Create Line object
+        var line = new Aspose.Pdf.Drawing.Line(new float[] { 100, 100, 200, 100 });
+
+        // Set color for Line object
+        line.GraphInfo.Color = Aspose.Pdf.Color.Red;
+
+        // Specify dash array for line object
+        line.GraphInfo.DashArray = new int[] { 3, 2 }; // Dash and gap lengths in points
+
+        // Set the dash phase for Line instance
+        line.GraphInfo.DashPhase = 1;
+
+        // Add line to shapes collection of drawing object
+        canvas.Shapes.Add(line);
+
+        // Save PDF file
+        document.Save(dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
+    }
 }
 ```
 
@@ -171,49 +185,55 @@ We can also use line object to draw a cross starting from Left-Bottom to Right-U
 Please take a look over following code snippet to accomplish this requirement.
 
 ```csharp
-public static void ExampleLineAcrossPage()
+private static void ExampleLineAcrossPage()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
-    // Set page margin on all sides as 0
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    page.PageInfo.Margin.Left = 0;
-    page.PageInfo.Margin.Right = 0;
-    page.PageInfo.Margin.Bottom = 0;
-    page.PageInfo.Margin.Top = 0;
+        // Set page margin on all sides as 0
+        page.PageInfo.Margin.Left = 0;
+        page.PageInfo.Margin.Right = 0;
+        page.PageInfo.Margin.Bottom = 0;
+        page.PageInfo.Margin.Top = 0;
 
-    // Create Graph object with Width and Height equal to page dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(
-        (float)page.PageInfo.Width,
-        (float)page.PageInfo.Height);
+        // Create Graph object with Width and Height equal to page dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(
+            (float)page.PageInfo.Width,
+            (float)page.PageInfo.Height);
 
-    // Create first line object starting from Lower-Left to Top-Right corner of page
-    var line = new Line(
-            new float[]{
-                (float)page.Rect.LLX, 0,
-                (float)page.PageInfo.Width,
-                (float)page.Rect.URY });
+        // Create first line object starting from Lower-Left to Top-Right corner of page
+        var line1 = new Aspose.Pdf.Drawing.Line(new float[]
+        {
+            (float)page.Rect.LLX, 0,
+            (float)page.PageInfo.Width,
+            (float)page.Rect.URY
+        });
 
-    // Add line to shapes collection of Graph object
-    graph.Shapes.Add(line);
-    // Draw line from Top-Left corner of page to Bottom-Right corner of page
-    var line2 = new Line(
-        new float[]{ 0,
-            (float) page.Rect.URY,
-            (float) page.PageInfo.Width,
-            (float) page.Rect.LLX });
+        // Add line to shapes collection of Graph object
+        graph.Shapes.Add(line1);
 
-    // Add line to shapes collection of Graph object
-    graph.Shapes.Add(line2);
+        // Create second line object starting from Top-Left corner to Bottom-Right corner of page
+        var line2 = new Aspose.Pdf.Drawing.Line(new float[]
+        {
+            0, (float)page.Rect.URY,
+            (float)page.PageInfo.Width, (float)page.Rect.LLX
+        });
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        // Add line to shapes collection of Graph object
+        graph.Shapes.Add(line2);
 
-    // Save PDF file
-    document.Save(dataDir + "ExampleLineAcrossPage_out.pdf");
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
+
+        // Save PDF file
+        document.Save(dataDir + "ExampleLineAcrossPage_out.pdf");
+    }
 }
 ```
 

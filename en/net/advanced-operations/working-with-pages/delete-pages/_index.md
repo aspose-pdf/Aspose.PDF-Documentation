@@ -90,17 +90,19 @@ The following code snippet shows how to delete a particular page from the PDF fi
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Open document
-Document document = new Document(dataDir + "DeleteParticularPage.pdf");
-
-// Delete a particular page
-document.Pages.Delete(2);
-
-// Save updated PDF
-document.Save(dataDir + "DeleteParticularPage_out.pdf");
+private static void DeletePageFromPdfFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularPage.pdf"))
+    {
+        // Delete a particular page
+        document.Pages.Delete(2);
+        // Save updated PDF
+        document.Save(dataDir + "DeleteParticularPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">

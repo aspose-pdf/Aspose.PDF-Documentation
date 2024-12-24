@@ -5,8 +5,6 @@ type: docs
 weight: 20
 url: /ko/net/open-pdf-document/
 description: C# Aspose.PDF for .NET PDF 라이브러리를 사용하여 PDF 파일을 여는 방법을 알아보세요. 기존 PDF, 스트림에서의 문서, 암호화된 PDF 문서를 열 수 있습니다.
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

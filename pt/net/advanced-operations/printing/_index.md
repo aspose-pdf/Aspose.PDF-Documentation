@@ -9,8 +9,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/working-with-pdf-printing-facades/
 ---
 <script type="application/ld+json">
 {

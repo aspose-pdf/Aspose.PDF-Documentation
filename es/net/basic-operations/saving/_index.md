@@ -5,8 +5,6 @@ type: docs
 weight: 30
 url: /es/net/save-pdf-document/
 description: Aprende cómo guardar un archivo PDF en C# Aspose.PDF para la biblioteca .NET PDF. Guarda el documento PDF en el sistema de archivos, en un stream y en aplicaciones web.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

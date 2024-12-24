@@ -9,8 +9,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 
 - [책갈피 생성](/pdf/ko/net/create-bookmarks/)

@@ -92,30 +92,39 @@ Follow the steps below:
 1. Save our PDF file.
 
 ```csharp
-public static void Circle()
+private static void Circle()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
 
-    var circle = new Circle(100, 100, 40);
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    circle.GraphInfo.Color = Color.GreenYellow;
-    graph.Shapes.Add(circle);
+        // Create a circle with the specified coordinates and radius
+        var circle = new Aspose.Pdf.Drawing.Circle(100, 100, 40);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        // Set the circle's color
+        circle.GraphInfo.Color = Aspose.Pdf.Color.GreenYellow;
 
-    // Save PDF file
-    document.Save(dataDir + "DrawingCircle1_out.pdf");
+        // Add the circle to the graph shapes
+        graph.Shapes.Add(circle);
+
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
+
+        // Save PDF file
+        document.Save(dataDir + "DrawingCircle1_out.pdf");
+    }
 }
 ```
 
@@ -128,33 +137,44 @@ Our drawn circle will look like this:
 This example shows how to add a Circle object that is filled with color.
 
 ```csharp
-public static void CircleFilled()
+private static void CircleFilled()
 {
-    // Create Document instance
-    var document = new Document();
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Add page to pages collection of PDF file
-    var page = document.Pages.Add();
+    // Create Document instance using 'using' block to ensure proper disposal
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to pages collection of PDF file
+        var page = document.Pages.Add();
 
-    // Create Drawing object with certain dimensions
-    var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
+        // Create Drawing object with certain dimensions
+        var graph = new Aspose.Pdf.Drawing.Graph(400, 200);
 
-    // Set border for Drawing object
-    var borderInfo = new BorderInfo(BorderSide.All, Color.Green);
-    graph.Border = borderInfo;
+        // Set border for Drawing object
+        var borderInfo = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Green);
+        graph.Border = borderInfo;
 
-    var circle = new Circle(100, 100, 40);
-    circle.GraphInfo.Color = Color.GreenYellow;
-    circle.GraphInfo.FillColor = Color.Green;
-    circle.Text = new TextFragment("Circle");
+        // Create a filled circle
+        var circle = new Aspose.Pdf.Drawing.Circle(100, 100, 40)
+        {
+            GraphInfo = 
+            { 
+                Color = Aspose.Pdf.Color.GreenYellow, 
+                FillColor = Aspose.Pdf.Color.Green 
+            },
+            Text = new Aspose.Pdf.Text.TextFragment("Circle")
+        };
 
-    graph.Shapes.Add(circle);
+        // Add the circle to the graph shapes
+        graph.Shapes.Add(circle);
 
-    // Add Graph object to paragraphs collection of page
-    page.Paragraphs.Add(graph);
+        // Add Graph object to paragraphs collection of page
+        page.Paragraphs.Add(graph);
 
-    // Save PDF file
-    document.Save(dataDir + "DrawingCircle2_out.pdf");
+        // Save PDF file
+        document.Save(dataDir + "DrawingCircle2_out.pdf");
+    }
 }
 ```
 

@@ -6,8 +6,6 @@ weight: 80
 url: /ja/net/key-features/
 description: Aspose.PDF for .NETは一般的な機能を示しています。サポートされているPDFバージョンとPDFを操作することができるすべてを示しています。
 lastmod: "2021-06-05"
-aliases:
-    - /net/feature-list/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

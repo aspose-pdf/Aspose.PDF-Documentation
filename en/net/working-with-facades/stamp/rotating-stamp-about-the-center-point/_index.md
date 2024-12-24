@@ -86,5 +86,54 @@ draft: false
 Now, we see how the stamp can be rotated about the center of the stamp. [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class provides a property named Rotation. This property sets or gets the rotation from 0 to 360 of stamp content. We can specify any rotation value from 0 to 360. By specifying the rotation value we can rotate the stamp about its center point. If a Stamp is an object of Stamp type then the rotation value can be specified as aStamp.Rotation = 90. In this case the stamp will be rotated at 90 degrees about the center of the stamp content. The following code snippet shows you how to rotate the stamp about the center point:
 
 
+```csharp
+private static void AddRotatingStampToPdf()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();  // Using dynamic path
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-RotatingStamp-RotatingStamp.cs" >}}
+    // Set path of the image to be set as watermark
+    string imageFile = dataDir + "RotatingStamp.jpg";
+
+    // Set input file path
+    string inFile = dataDir + "RotatingStamp.pdf";
+
+    // Set output file path
+    string outFile = dataDir + "RotatingStamp_out.pdf";  // Output file with '_out' suffix
+
+    // Create PdfFileInfo object to get height and width of the pages
+    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(inFile))
+    {
+        // Create Stamp object
+        var aStamp = new Aspose.Pdf.Facades.Stamp();
+
+        // Bind image file with the Stamp object
+        aStamp.BindImage(imageFile);
+
+        // Specify whether the stamp will be added as a background or not
+        aStamp.IsBackground = false;
+
+        // Specifies at which pages to add the watermark
+        aStamp.Pages = new int[] { 1 };
+
+        // Specifies the watermark rotation - rotate at 90 degrees
+        aStamp.Rotation = 90;
+
+        // Specifies the position of stamp - lower left corner of the stamp
+        aStamp.SetOrigin(fileInfo.GetPageWidth(1) / 2, fileInfo.GetPageHeight(1) / 2);
+
+        // Set the size of the watermark
+        aStamp.SetImageSize(100, 100);
+
+        // Create a Document object for the input PDF
+        using (var doc = new Aspose.Pdf.Document(inFile))
+        {
+            // Create PdfFileStamp class to bind input and output files
+            using (var stamper = new Aspose.Pdf.Facades.PdfFileStamp(doc))
+            {
+                // Add the stamp in the PDF file
+                stamper.AddStamp(aStamp);
+            }
+        }
+    }
+}
+```

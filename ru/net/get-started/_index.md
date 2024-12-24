@@ -6,8 +6,6 @@ weight: 30
 url: /ru/net/get-started/
 description: Этот раздел описывает основные принципы работы и использования DOM API. Также демонстрирует простые и сложные примеры создания PDF документа.
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
