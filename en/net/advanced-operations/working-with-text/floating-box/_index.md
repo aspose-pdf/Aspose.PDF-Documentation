@@ -83,16 +83,25 @@ This feature also work in [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 The Floating Box tool is a special tool for placing text and other content on a PDF page. Its main feature is text clipping when it overlaps the size of the FloatingBox.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-var box = new FloatingBox(400, 30)
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAndAddFloatingBox()
 {
-    Border = new BorderInfo(BorderSide.All, 1.5f, Color.DarkGreen),
-    IsNeedRepeating = false,
-};
-var text = LoremNET.Lorem.Paragraph(20, 6);
-box.Paragraphs.Add(new TextFragment(text));
-page.Paragraphs.Add(box);
+	// Create document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		var page = document.Pages.Add();
+		// Create and fill box
+		var box = new Aspose.Pdf.FloatingBox(400, 30)
+		{
+			Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen),
+			IsNeedRepeating = false,
+		};
+		var text = LoremNET.Lorem.Paragraph(20, 6);
+		box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
+		// Add box
+		page.Paragraphs.Add(box);
+	}
+}
 ```  
 
 In the example above, we are creating a FloatingBox with a width of 400 pt and a height of 30 pt.
@@ -120,32 +129,42 @@ If we set this property to `true` the text will be reflow to the next page in th
 * `ColumnCount` is a number of columns.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-page.PageInfo.Margin = new MarginInfo(36, 18, 36, 18);
-var columnCount = 3;
-var spacing = 10;
-var width = page.PageInfo.Width 
-    - page.PageInfo.Margin.Left 
-    - page.PageInfo.Margin.Right 
-    - (columnCount - 1) * spacing;
-var columnWidth = width / 3;
-var box = new FloatingBox()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MultiColumnLayout(string outputFilePath)
 {
-    IsNeedRepeating = true
-};
-box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
-box.ColumnInfo.ColumnSpacing = "{spacing}";
-box.ColumnInfo.ColumnCount = columnCount;
-var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 20);
-foreach (var paragraph in paragraphs)
-{
-    box.Paragraphs.Add(new TextFragment(paragraph));
+    // Create document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page
+        var page = document.Pages.Add();
+        // Set margin settings
+        page.PageInfo.Margin = new Aspose.Pdf.MarginInfo(36, 18, 36, 18);
+        var columnCount = 3;
+        var spacing = 10;
+        var width = page.PageInfo.Width
+            - page.PageInfo.Margin.Left
+            - page.PageInfo.Margin.Right
+            - (columnCount - 1) * spacing;
+        var columnWidth = width / 3;
+        // Create a FloatingBox
+        var box = new Aspose.Pdf.FloatingBox()
+        {
+            IsNeedRepeating = true
+        };
+        box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
+        box.ColumnInfo.ColumnSpacing = "{spacing}";
+        box.ColumnInfo.ColumnCount = columnCount;
+        var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 20);
+        foreach (var paragraph in paragraphs)
+        {
+            box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(paragraph));
+        }
+        // Add the box to the page
+        page.Paragraphs.Add(box);
+        // Save document
+        document.Save(outputFilePath);
+    }
 }
-
-page.Paragraphs.Add(box);
-
-document.Save("sample.pdf");
 ```
 
 We used the additional library LoremNET in the above example and created 20 paragraphs. These paragraphs were divided into three columns and filled the following pages until the text ran out.
@@ -155,37 +174,46 @@ We used the additional library LoremNET in the above example and created 20 para
 We will do the same with the following example as the previous one. The difference is that we created 3 paragraphs. We can force FloatingBox to render each paragraph in the new column. To do that we need to set `IsFirstParagraphInColumn` when we adding text to the FloatingBox object.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-page.PageInfo.Margin = new MarginInfo(36, 18, 36, 18);
-var columnCount = 3;
-var spacing = 10;
-var width = page.PageInfo.Width 
-    - page.PageInfo.Margin.Left 
-    - page.PageInfo.Margin.Right 
-    - (columnCount - 1) * spacing;
-var columnWidth = width / 3;
-var box = new FloatingBox()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MultiColumnLayout(string outputFilePath)
 {
-    IsNeedRepeating = true
-};
-box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
-box.ColumnInfo.ColumnSpacing = "{spacing}";
-box.ColumnInfo.ColumnCount = 3;
+	// Create document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		// Add page
+		var page = document.Pages.Add();
+		// Set margin settings
+		page.PageInfo.Margin = new Aspose.Pdf.MarginInfo(36, 18, 36, 18);
+		var columnCount = 3;
+		var spacing = 10;
+		var width = page.PageInfo.Width
+			- page.PageInfo.Margin.Left
+			- page.PageInfo.Margin.Right
+			- (columnCount - 1) * spacing;
+		var columnWidth = width / 3;
+		var box = new Aspose.Pdf.FloatingBox()
+		{
+			IsNeedRepeating = true
+		};
+		box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
+		box.ColumnInfo.ColumnSpacing = "{spacing}";
+		box.ColumnInfo.ColumnCount = 3;
 
-var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 3);
-foreach (var paragraph in paragraphs)
-{
-    var text = new TextFragment(paragraph)
-    {
-        IsFirstParagraphInColumn = true
-    };
-    box.Paragraphs.Add(text);
-}
+		var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 3);
+		foreach (var paragraph in paragraphs)
+		{
+			var text = new Aspose.Pdf.Text.TextFragment(paragraph)
+			{
+				IsFirstParagraphInColumn = true
+			};
+			box.Paragraphs.Add(text);
+		}
 
-page.Paragraphs.Add(box);
-
-document.Save("sample.pdf");
+		// Add the box to the page
+		page.Paragraphs.Add(box);
+		// Save document
+		document.Save(outputFilePath);
+	}
 ```
 
 ### Background support
@@ -193,17 +221,26 @@ document.Save("sample.pdf");
 You can set desired background color by using `BackgroundColor` property.
 
 ```cs
-// Initialize document object
-Document document = new Document();
-Page page = document.Pages.Add();
-var box = new FloatingBox(400, 60)
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void BackgroundSupport()
 {
-    IsNeedRepeating = false,
-    BackgroundColor = Color.LightGreen,
-};
-var text = LoremNET.Lorem.Paragraph(20, 6);
-box.Paragraphs.Add(new TextFragment(text));
-page.Paragraphs.Add(box);
+	// Create document
+	using (var document = new Aspose.Pdf.Document())
+	{
+		// Add page
+		var page = document.Pages.Add();
+		// Create FloatingBox
+		var box = new Aspose.Pdf.FloatingBox(400, 60)
+		{
+			IsNeedRepeating = false,
+			BackgroundColor = Aspose.Pdf.Color.LightGreen,
+		};
+		var text = LoremNET.Lorem.Paragraph(20, 6);
+		box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
+		// Add the box to the page
+		page.Paragraphs.Add(box);
+	}
+}
 ```
 
 ### Offset support
@@ -211,19 +248,28 @@ page.Paragraphs.Add(box);
 FloatingBox can be shifted to another location by setting the `Top` and `Left` values.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-
-var box = new FloatingBox()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OffsetSupport()
 {
-    Top = -45,
-    Left = 15,
-    Border = new BorderInfo(BorderSide.All, 1.5f, Color.DarkGreen)
-};
-var text = LoremNET.Lorem.Paragraph(20, 6);
-box.Paragraphs.Add(new TextFragment(text));
+    // Create document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create FloatingBox
+        var box = new Aspose.Pdf.FloatingBox()
+        {
+            Top = -45,
+            Left = 15,
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen)
+        };
+        var text = LoremNET.Lorem.Paragraph(20, 6);
+        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
 
-page.Paragraphs.Add(new TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
-page.Paragraphs.Add(box);            
-page.Paragraphs.Add(new TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
+        // Add the box to the page
+        page.Paragraphs.Add(box);
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
+    }
+}
 ```
