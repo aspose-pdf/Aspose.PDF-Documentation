@@ -129,14 +129,17 @@ private static void ComparingSpecificPages()
     var resultPdfPath = dataDir + "ComparingSpecificPages_out.pdf";
 
     // Open documents
-    using (var document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
+    using (var document1 = new Aspose.Pdf.Document(documentPath1))
     {
-        // Compare
-        Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+        using (var document2 = new Aspose.Pdf.Document(documentPath2))
         {
-            AdditionalChangeMarks = true,
-            ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
-        });
+            // Compare
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+            {
+                AdditionalChangeMarks = true,
+                ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+            });
+        }
     }
 }
 ```
@@ -170,18 +173,21 @@ private static void ComparingEntireDocuments()
     var resultPdfPath = dataDir + "ComparingEntireDocuments_out.pdf";
 
     // Open documents
-    using (var document1 = new Aspose.Pdf.Document(documentPath1), document2 = new Aspose.Pdf.Document(documentPath2))
+    using (var document1 = new Aspose.Pdf.Document(documentPath1))
     {
-        // Compare
-        Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
-            document1,
-            document2,
-            resultPdfPath,
-            new Aspose.Pdf.Comparison.SideBySideComparisonOptions
-            {
-                AdditionalChangeMarks = true,
-                ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
-            });
+        using (var document2 = new Aspose.Pdf.Document(documentPath2))
+        {
+            // Compare
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
+                document1,
+                document2,
+                resultPdfPath,
+                new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+                {
+                    AdditionalChangeMarks = true,
+                    ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+                });
+        }
     }
 }
 ```
@@ -239,22 +245,23 @@ private static void ComparePDFWithGetDifferenceMethod()
     string diffPngFilePath = dataDir + "diffPngFilePath.png";
 
     // Open documents
-    using (var document1 = new Aspose.Pdf.Document(doc1Path), document2 = new Aspose.Pdf.Document(doc2Path))
+    using (var document1 = new Aspose.Pdf.Document(doc1Path))
     {
-        // Create comparer 
-        var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
-        
-        // Compare
-        using (var imagesDifference = comparer.GetDifference(document1.Pages[1], document2.Pages[1]))
+        using (var document2 = new Aspose.Pdf.Document(doc2Path))
         {
-            using (var diffImg = imagesDifference.DifferenceToImage(Color.Red, Color.White))
+            // Create comparer 
+            var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
+            // Compare
+            using (var imagesDifference = comparer.GetDifference(document1.Pages[1], document2.Pages[1]))
             {
-                diffImg.Save(diffPngFilePath);
-            }
-
-            using (var destImg = imagesDifference.GetDestinationImage())
-            {
-                destImg.Save(destPngFilePath);
+                using (var diffImg = imagesDifference.DifferenceToImage(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.White))
+                {
+                    diffImg.Save(diffPngFilePath);
+                }
+                using (var destImg = imagesDifference.GetDestinationImage())
+                {
+                    destImg.Save(destPngFilePath);
+                }
             }
         }
     }
@@ -277,18 +284,20 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
     string resultPdfPath = dataDir + "compareDocumentsToPdf_out.pdf";
 
     // Open documents
-    using (var document1 = new Aspose.Pdf.Document(document1Path),
-           document2 = new Aspose.Pdf.Document(document2Path))
+    using (var document1 = new Aspose.Pdf.Document(document1Path))
     {
-        // Create comparer
-        var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer()
+        using (var document2 = new Aspose.Pdf.Document(document2Path))
         {
-            Threshold = 3.0,
-            Color = Aspose.Pdf.Color.Blue,
-            Resolution = new Aspose.Pdf.Devices.Resolution(300)
-        };
-        // Compare
-        comparer.CompareDocumentsToPdf(document1, document2, resultPdfPath);
+            // Create comparer
+            var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer()
+            {
+                Threshold = 3.0,
+                Color = Aspose.Pdf.Color.Blue,
+                Resolution = new Aspose.Pdf.Devices.Resolution(300)
+            };
+            // Compare
+            comparer.CompareDocumentsToPdf(document1, document2, resultPdfPath);
+        }
     }
 }
 ```
