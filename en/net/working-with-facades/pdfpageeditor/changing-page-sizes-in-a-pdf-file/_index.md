@@ -80,33 +80,32 @@ draft: false
 
 
 ```csharp
- private static void ChangePdfPageSize()
- {
-     // The path to the documents directory
-     var dataDir = RunExamples.GetDataDir_AsposePdf();
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangePdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-     // Create PdfPageEditor object
-     var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
+    // Create PdfPageEditor object
+    using (var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
+    {
+        // Bind the PDF file
+        pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
 
-     // Bind the PDF file
-     pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
+        // Change page size of the selected pages
+        pdfPageEditor.ProcessPages = new[] { 1 };
 
-     // Change page size of the selected pages
-     pdfPageEditor.ProcessPages = new[] { 1 };
+        // Select a predefined page size (LETTER) and assign it
+        pdfPageEditor.PageSize = Aspose.Pdf.PageSize.PageLetter;
 
-     // Select a predefined page size (LETTER) and assign it
-     pdfPageEditor.PageSize = Aspose.Pdf.PageSize.PageLetter;
+        // Save the file with the updated page size
+        pdfPageEditor.Save(dataDir + "ChangePageSizes_out.pdf");
 
-     // Save the file with the updated page size
-     pdfPageEditor.Save(dataDir + "ChangePageSizes_out.pdf");
+        // Retrieve and display the page size assigned
+        pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
 
-     // Retrieve and display the page size assigned
-     pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
-
-     var pageSize = pdfPageEditor.GetPageSize(1);
-     Console.WriteLine($"Width: {pageSize.Width}, Height: {pageSize.Height}");
-
-     // Dispose of the editor object
-     pdfPageEditor = null;
- }
+        var pageSize = pdfPageEditor.GetPageSize(1);
+        Console.WriteLine($"Width: {pageSize.Width}, Height: {pageSize.Height}");
+    }
+}
 ```

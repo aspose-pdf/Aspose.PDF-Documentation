@@ -112,17 +112,19 @@ In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following
 3. Use the **Save** method of the **Document** object to save the PDF as PPTX.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToPPTX()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate PptxSaveOptions object
+        var saveOptions = new Aspose.Pdf.PptxSaveOptions();
 
-    // Instantiate PptxSaveOptions object
-    var saveOptions = new Aspose.Pdf.PptxSaveOptions();
-
-    // Save the file in PPTX format
-    document.Save(dataDir + "PDFToPPT_out.pptx", saveOptions);
+        // Save the file in PPTX format
+        document.Save(dataDir + "PDFToPPT_out.pptx", saveOptions);
+    }
 }
 ```
 
@@ -139,20 +141,22 @@ Aspose.PDF for .NET presents you online free application ["PDF to PPTX"](https:/
 In case if you need to convert a searchable PDF to PPTX as images instead of selectable text, Aspose.PDF provides such a feature via [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class. To achieve this, set property [SlidesAsImages](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/slidesasimages) of [PptxSaveOptios](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class to 'true' as shown in the following code sample.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToPPTWithSlidesAsImages()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
-
-    // Instantiate PptxSaveOptions object
-    var saveOptions = new Aspose.Pdf.PptxSaveOptions
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        SlidesAsImages = true
-    };
+        // Instantiate PptxSaveOptions object
+        var saveOptions = new Aspose.Pdf.PptxSaveOptions
+        {
+            SlidesAsImages = true
+        };
 
-    // Save the file in PPTX format with slides as images
-    document.Save(dataDir + "PDFToPPT_out_.pptx", saveOptions);
+        // Save the file in PPTX format with slides as images
+        document.Save(dataDir + "PDFToPPT_out_.pptx", saveOptions);
+    }
 }
 ```
 
@@ -161,21 +165,24 @@ private static void ConvertPDFToPPTWithSlidesAsImages()
 Aspose.PDF for .NET lets you track the progress of PDF to PPTX conversion. The [Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions) class provides [CustomProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/pptxsaveoptions/properties/customprogresshandler) property that can be specified to a custom method for tracking the progress of conversion as shown in the following code sample.
 
 ```csharp
- private static void ConvertPDFToPPTWithCustomProgressHandler()
- {
-     var dataDir = RunExamples.GetDataDir_AsposePdf();
-     // Open the source PDF document
-     var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToPPTWithCustomProgressHandler()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Open the source PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
 
-     // Instantiate PptxSaveOptions object
-     var saveOptions = new Aspose.Pdf.PptxSaveOptions();
+        // Instantiate PptxSaveOptions object
+        var saveOptions = new Aspose.Pdf.PptxSaveOptions();
 
-     // Specify custom progress handler
-     saveOptions.CustomProgressHandler = ShowProgressOnConsole;
+        // Specify custom progress handler
+        saveOptions.CustomProgressHandler = ShowProgressOnConsole;
 
-     // Save the file in PPTX format with progress tracking
-     document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", saveOptions);
- }
+        // Save the file in PPTX format with progress tracking
+        document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", saveOptions);
+    }
+}
 
  // Define the method to handle progress events and display them on the console
  private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)

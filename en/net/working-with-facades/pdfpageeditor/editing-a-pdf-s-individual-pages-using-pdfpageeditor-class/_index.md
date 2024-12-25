@@ -102,58 +102,60 @@ You can find samples of the above mentioned methods in the code snippet given be
 
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void EditPdfPages()
 {
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create a new instance of PdfPageEditor class
-    var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
+    using (var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
+    {
+        // Bind an existing pdf file
+        pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
 
-    // Bind an existing pdf file
-    pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
+        // Specify an array of pages which need to be manipulated (pages can be multiple, here we have specified only one page)
+        pdfPageEditor.ProcessPages = new int[] { 1 };
 
-    // Specify an array of pages which need to be manipulated (pages can be multiple, here we have specified only one page)
-    pdfPageEditor.ProcessPages = new int[] { 1 };
+        // Alignment related code
+        pdfPageEditor.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
 
-    // Alignment related code
-    pdfPageEditor.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Right;
+        // Specify transition type for the pages
+        pdfPageEditor.TransitionType = 2;
+        // Specify transition duration
+        pdfPageEditor.TransitionDuration = 5;
 
-    // Specify transition type for the pages
-    pdfPageEditor.TransitionType = 2;
-    // Specify transition duration
-    pdfPageEditor.TransitionDuration = 5;
+        // Display related code
 
-    // Display related code
+        // Select a page size from the enumeration and assign to property
+        pdfPageEditor.PageSize = Aspose.Pdf.PageSize.PageLedger;
 
-    // Select a page size from the enumeration and assign to property
-    pdfPageEditor.PageSize = Aspose.Pdf.PageSize.PageLedger;
+        // Assign page rotation
+        pdfPageEditor.Rotation = 90;
 
-    // Assign page rotation
-    pdfPageEditor.Rotation = 90;
+        // Specify zoom factor for the page
+        pdfPageEditor.Zoom = 100;
 
-    // Specify zoom factor for the page
-    pdfPageEditor.Zoom = 100;
+        // Assign display duration for the page
+        pdfPageEditor.DisplayDuration = 5;
 
-    // Assign display duration for the page
-    pdfPageEditor.DisplayDuration = 5;
+        // Fetching methods
 
-    // Fetching methods
+        // Methods provided by the class, page rotation specified already
+        var rotation = pdfPageEditor.GetPageRotation(1);
 
-    // Methods provided by the class, page rotation specified already
-    var rotation = pdfPageEditor.GetPageRotation(1);
+        // Already specified page can be fetched
+        var pageSize = pdfPageEditor.GetPageSize(1);
 
-    // Already specified page can be fetched
-    var pageSize = pdfPageEditor.GetPageSize(1);
+        // This method gets the page count
+        var totalPages = pdfPageEditor.GetPages();
 
-    // This method gets the page count
-    var totalPages = pdfPageEditor.GetPages();
+        // This method changes the origin from (0,0) to specified number
+        pdfPageEditor.MovePosition(100, 100);
 
-    // This method changes the origin from (0,0) to specified number
-    pdfPageEditor.MovePosition(100, 100);  
-
-    // Finally save the output file
-    pdfPageEditor.Save(dataDir + "EditPdfPages_out.pdf");
+        // Finally save the output file
+        pdfPageEditor.Save(dataDir + "EditPdfPages_out.pdf");
+    }
 }
 ```
 

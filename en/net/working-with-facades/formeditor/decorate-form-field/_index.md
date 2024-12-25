@@ -79,38 +79,40 @@ draft: false
 The following code snippet shows you how to decorate a particular form field.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DecorateField()
 {
     // Define the path to the directory containing the input PDF
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
-    var editor = new Aspose.Pdf.Facades.FormEditor();
-
-    // Bind the input PDF file to the FormEditor
-    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
-
-    // Create a FormFieldFacade object to define decoration properties for the field
-    var cityDecoration = new Aspose.Pdf.Facades.FormFieldFacade
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Set the font style to Courier
-        Font = Aspose.Pdf.Facades.FontStyle.Courier,
-        // Set the font size to 12
-        FontSize = 12,
-        // Set the border color to black
-        BorderColor = System.Drawing.Color.Black,
-        // Set the border width to 2
-        BorderWidth = 2                            
-    };
+        // Bind the input PDF file to the FormEditor
+        editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
-    // Assign the decoration facade to the FormEditor
-    editor.Facade = cityDecoration;
+        // Create a FormFieldFacade object to define decoration properties for the field
+        var cityDecoration = new Aspose.Pdf.Facades.FormFieldFacade
+        {
+            // Set the font style to Courier
+            Font = Aspose.Pdf.Facades.FontStyle.Courier,
+            // Set the font size to 12
+            FontSize = 12,
+            // Set the border color to black
+            BorderColor = System.Drawing.Color.Black,
+            // Set the border width to 2
+            BorderWidth = 2
+        };
 
-    // Apply the decoration to the field named "City"
-    editor.DecorateField("City");
+        // Assign the decoration facade to the FormEditor
+        editor.Facade = cityDecoration;
 
-    // Save the modified PDF with the decorated field
-    editor.Save(dataDir + "Sample-Form-02.pdf");
+        // Apply the decoration to the field named "City"
+        editor.DecorateField("City");
+
+        // Save the modified PDF with the decorated field
+        editor.Save(dataDir + "Sample-Form-02.pdf");
+    }
 }
 ```
 
@@ -120,33 +122,35 @@ private static void DecorateField()
 
 
 ```csharp
- private static void DecorateField2()
- {
-     // Define the path to the directory containing the input PDF
-     var dataDir = RunExamples.GetDataDir_AsposePdf();
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DecorateField2()
+{
+    // Define the path to the directory containing the input PDF
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-     // Create an instance of FormEditor to manipulate form fields
-     var editor = new Aspose.Pdf.Facades.FormEditor();
+    // Create an instance of FormEditor to manipulate form fields
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Bind the input PDF file to the FormEditor
+        editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
-     // Bind the input PDF file to the FormEditor
-     editor.BindPdf(dataDir + "Sample-Form-01.pdf");
+        // Create a FormFieldFacade object to define alignment properties for text fields
+        var textFieldDecoration = new Aspose.Pdf.Facades.FormFieldFacade
+        {
+            // Set text alignment to center
+            Alignment = Aspose.Pdf.Facades.FormFieldFacade.AlignCenter
+        };
 
-     // Create a FormFieldFacade object to define alignment properties for text fields
-     var textFieldDecoration = new Aspose.Pdf.Facades.FormFieldFacade
-     {
-         // Set text alignment to center
-         Alignment = Aspose.Pdf.Facades.FormFieldFacade.AlignCenter 
-     };
+        // Assign the decoration facade to the FormEditor
+        editor.Facade = textFieldDecoration;
 
-     // Assign the decoration facade to the FormEditor
-     editor.Facade = textFieldDecoration;
+        // Apply the alignment decoration to all text fields in the PDF
+        editor.DecorateField(Aspose.Pdf.Facades.FieldType.Text);
 
-     // Apply the alignment decoration to all text fields in the PDF
-     editor.DecorateField(Aspose.Pdf.Facades.FieldType.Text);
-
-     // Save the modified PDF with aligned text fields
-     editor.Save(dataDir + "Sample-Form-01-align-text.pdf");
- }
+        // Save the modified PDF with aligned text fields
+        editor.Save(dataDir + "Sample-Form-01-align-text.pdf");
+    }
+}
 ```
 
 

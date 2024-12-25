@@ -85,22 +85,28 @@ To rotate pages in document we can use [PageRotations](https://reference.aspose.
 `PageRotations` contains the page number and rotation degree, the key represents the page number, the value of key represents the rotation in degrees.
 
 ```csharp
-private static void RotatePages1()
-{
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ private static void RotatePages1()
+ {
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var editor = new Aspose.Pdf.Facades.PdfPageEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
+     using (var editor = new Aspose.Pdf.Facades.PdfPageEditor())
+     {
+         // Bind an existing pdf file
+         editor.BindPdf(dataDir + "sample.pdf");
 
-    editor.PageRotations = new System.Collections.Generic.Dictionary<int, int>
-    {
-        { 1, 90 },
-        { 2, 180 },
-        { 3, 270 }
-    };
+         // Specify the page rotation dictionary
+         editor.PageRotations = new System.Collections.Generic.Dictionary<int, int>
+         {
+             { 1, 90 },
+             { 2, 180 },
+             { 3, 270 }
+         };
 
-    editor.Save(dataDir + "sample-rotate-a.pdf");
-}
+         // Save the modified PDF
+         editor.Save(dataDir + "sample-rotate-a.pdf");
+     }
+ }
 ```
 
 ## Rotate page using Rotation
@@ -108,19 +114,23 @@ private static void RotatePages1()
 We can also use [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfpageeditor/properties/rotation) propety. The rotation must be 0, 90, 180 or 270
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotatePages2()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var editor = new Aspose.Pdf.Facades.PdfPageEditor();
-    editor.BindPdf(dataDir + "sample.pdf");
+    using (var editor = new Aspose.Pdf.Facades.PdfPageEditor())
+    {
+        // Bind an existing pdf file
+        editor.BindPdf(dataDir + "sample.pdf");
 
-    // Specify the pages to rotate and the rotation angle
-    editor.ProcessPages = new int[] { 1, 3 };
-    editor.Rotation = 90;
+        // Specify the pages to rotate and the rotation angle
+        editor.ProcessPages = new int[] { 1, 3 };
+        editor.Rotation = 90;
 
-    // Save the modified PDF
-    editor.Save(dataDir + "sample-rotate-a.pdf");
+        // Save the modified PDF
+        editor.Save(dataDir + "sample-rotate-a.pdf");
+    }
 }
 ```
 

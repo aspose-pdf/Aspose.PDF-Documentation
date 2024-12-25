@@ -120,13 +120,16 @@ The following C# code snippet shows converting a PDF file into DOC format.
 2. Save it to **SaveFormat.Doc** format by calling **Document.Save()** method.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWord()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf");
-    // Save the file into MS document format
-    document.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
+    usnig (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
+    {
+        // Save the file into MS document format
+        document.Save(dataDir + "PDFToDOC_out.doc", SaveFormat.Doc);
+    }
 }
 ```
 
@@ -141,25 +144,27 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 - [`RecognitionBullets`](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/properties/recognizebullets) is used to switch on bullet recognition during conversion.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWordDocAdvanced()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    var document = new Aspose.Pdf.Document(dataDir + "PDF-to-DOC.pdf");
-    // Instantiate DocSaveOptions object
-    var saveOptions = new Aspose.Pdf.DocSaveOptions
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDF-to-DOC.pdf"))
     {
-        // Set format to save MS document
-        Format = Aspose.Pdf.DocSaveOptions.DocFormat.Doc,
-        // Set the recognition mode as Flow
-        Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.Flow,
-        // Set the Horizontal proximity as 2.5
-        RelativeHorizontalProximity = 2.5f,
-        // Enable the value to recognize bullets during the conversion process
-        RecognizeBullets = true
-    };
-    // Save the file into MS document with save options
-    document.Save(dataDir + "PDF-to-DOC.doc", saveOptions);
+        var saveOptions = new Aspose.Pdf.DocSaveOptions
+        {
+            // Set format to save MS document
+            Format = Aspose.Pdf.DocSaveOptions.DocFormat.Doc,
+            // Set the recognition mode as Flow
+            Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.Flow,
+            // Set the Horizontal proximity as 2.5
+            RelativeHorizontalProximity = 2.5f,
+            // Enable the value to recognize bullets during the conversion process
+            RecognizeBullets = true
+        };
+        // Save the file into MS document with save options
+        document.Save(dataDir + "PDF-to-DOC.doc", saveOptions);
+    }
 }
 ```
 
@@ -183,13 +188,16 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 2. Save it to **SaveFormat.DocX** format by calling **Document.Save()** method.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWord_DOCX_Format()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf");
-    // Save the file into MS document format
-    document.Save(dataDir + "PDFtoDOC.docx", SaveFormat.DocX);
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
+    {
+        // Save the file into MS document format
+        document.Save(dataDir + "PDFtoDOC.docx", SaveFormat.DocX);
+    }
 }
 ```
 
@@ -200,22 +208,25 @@ The main difference between Flow and Enhanced Flow is that tables (both with and
 There is also recognition of numbered lists and many other minor things.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Open the source PDF document
-    var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf");
-
-    // Instantiate DocSaveOptions object
-    DocSaveOptions saveOptions = new Aspose.Pdf.DocSaveOptions
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
-        // Set format to save MS document
-        Format = Aspose.Pdf.DocSaveOptions.DocFormat.DocX,
-        // Set the recognition mode as EnhancedFlow
-        Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.EnhancedFlow
-    };
-    // Save the file into MS document format
-    document.Save("PDFToDOC.docx", saveOptions);
+
+        // Instantiate DocSaveOptions object
+        DocSaveOptions saveOptions = new Aspose.Pdf.DocSaveOptions
+        {
+            // Set format to save MS document
+            Format = Aspose.Pdf.DocSaveOptions.DocFormat.DocX,
+            // Set the recognition mode as EnhancedFlow
+            Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.EnhancedFlow
+        };
+        // Save the file into MS document format
+        document.Save("PDFToDOC.docx", saveOptions);
+    }
 }
 ```
 

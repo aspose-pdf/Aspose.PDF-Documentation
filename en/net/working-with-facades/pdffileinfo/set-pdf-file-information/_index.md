@@ -78,23 +78,24 @@ draft: false
 The following code snippet shows you how to set PDF file information.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPdfInfo()
 {
     // Define the directory for input and output files
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create PdfFileInfo object to work with PDF metadata
-    var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf")
+    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf"))
     {
         // Set PDF information
-        Author = "Aspose",
-        Title = "Hello World!",
-        Keywords = "Peace and Development",
-        Creator = "Aspose"
-    };
-
-    // Save the PDF with updated information
-    fileInfo.SaveNewInfo(dataDir + "SetFileInfo_out.pdf");
+        fileInfo.Author = "Aspose";
+        fileInfo.Title = "Hello World!";
+        fileInfo.Keywords = "Peace and Development";
+        fileInfo.Creator = "Aspose";
+        
+        // Save the PDF with updated information
+        fileInfo.SaveNewInfo(dataDir + "SetFileInfo_out.pdf");
+    }
 }
 ```
 
@@ -103,18 +104,20 @@ private static void SetPdfInfo()
 [SetMetaInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/methods/setmetainfo) method allows you to add any information. In our example, we added a field. Check next code snippet:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetMetaInfo()
 {
     // Define the directory for input and output files
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of the PdfFileInfo object
-    var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf");
+    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf"))
+    {
+        // Set a new custom attribute as meta info
+        fileInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
 
-    // Set a new custom attribute as meta info
-    fileInfo.SetMetaInfo("Reviewer", "Aspose.PDF user");
-
-    // Save the updated file
-    fileInfo.SaveNewInfo(dataDir + "SetMetaInfo_out.pdf");
+        // Save the updated file
+        fileInfo.SaveNewInfo(dataDir + "SetMetaInfo_out.pdf");
+    }
 }
 ```

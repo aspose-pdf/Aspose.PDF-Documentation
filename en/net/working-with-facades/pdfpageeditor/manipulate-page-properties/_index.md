@@ -81,23 +81,27 @@ The following code snippet shows you how to get PDF page properties from existin
 
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetPdfPageProperties()
 {
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open document
-    var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
-    pageEditor.BindPdf(dataDir + "input.pdf");
+    using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
+    {
+        // Bind the PDF file
+        pageEditor.BindPdf(dataDir + "input.pdf");
 
-    // Get page properties and print them to the console
-    Console.WriteLine($"Page 1 Rotation: {pageEditor.GetPageRotation(1)}");
-    Console.WriteLine($"Total Pages: {pageEditor.GetPages()}");
-    Console.WriteLine($"Trim Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "trim")}");
-    Console.WriteLine($"Art Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "art")}");
-    Console.WriteLine($"Bleed Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "bleed")}");
-    Console.WriteLine($"Crop Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "crop")}");
-    Console.WriteLine($"Media Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "media")}");
+        // Get page properties and print them to the console
+        Console.WriteLine($"Page 1 Rotation: {pageEditor.GetPageRotation(1)}");
+        Console.WriteLine($"Total Pages: {pageEditor.GetPages()}");
+        Console.WriteLine($"Trim Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "trim")}");
+        Console.WriteLine($"Art Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "art")}");
+        Console.WriteLine($"Bleed Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "bleed")}");
+        Console.WriteLine($"Crop Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "crop")}");
+        Console.WriteLine($"Media Box Size of Page 1: {pageEditor.GetPageBoxSize(1, "media")}");
+    }
 }
 ```
 
@@ -110,33 +114,36 @@ The following code snippet shows you how to set PDF page properties in an existi
 
 
 ```csharp
- private static void SetPdfPageProperties()
- {
-     // The path to the documents directory
-     var dataDir = RunExamples.GetDataDir_AsposePdf();
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPdfPageProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-     // Open the document
-     var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
-     pageEditor.BindPdf(dataDir + "input.pdf");
+    // Open the document
+    using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
+    {
+        pageEditor.BindPdf(dataDir + "input.pdf");
 
-     // Set page properties
-     // Move origin from (0,0)
-     pageEditor.MovePosition(100, 100);
+        // Set page properties
+        // Move origin from (0,0)
+        pageEditor.MovePosition(100, 100);
 
-     // Set page rotations
-     var pageRotations = new System.Collections.Hashtable
-     {
-         { 1, 90 },
-         { 2, 180 },
-         { 3, 270 }
-     };
+        // Set page rotations
+        var pageRotations = new System.Collections.Hashtable
+        {
+            { 1, 90 },
+            { 2, 180 },
+            { 3, 270 }
+        };
 
-     // Set zoom where 1.0f = 100% zoom
-     pageEditor.Zoom = 2.0f;
+        // Set zoom where 1.0f = 100% zoom
+        pageEditor.Zoom = 2.0f;
 
-     // Save updated PDF file
-     pageEditor.Save(dataDir + "SetPageProperties_out.pdf");
- }
+        // Save updated PDF file
+        pageEditor.Save(dataDir + "SetPageProperties_out.pdf");
+    }
+}
 ```
 
 ## Resize Page Contents of Specific Pages in a PDF file
@@ -148,6 +155,7 @@ The following code snippet shows how to resize the contents of some specific pag
 
 
 ```csharp
+  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void ResizePdfPageContents()
  {
      // The path to the documents directory
@@ -157,28 +165,29 @@ The following code snippet shows how to resize the contents of some specific pag
      var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
 
      // Open PDF Document
-     var doc = new Aspose.Pdf.Document(dataDir + "input.pdf");
+     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+     {
+         // Specify Parameters to be used for resizing
+         var parameters = new Aspose.Pdf.Facades.PdfFileEditor.ContentsResizeParameters(
+             // Left margin = 10% of page width
+             PdfFileEditor.ContentsResizeValue.Percents(10),
+             // New contents width calculated automatically as width - left margin - right margin (100% - 10% - 10% = 80%)
+             null,
+             // Right margin is 10% of page
+             PdfFileEditor.ContentsResizeValue.Percents(10),
+             // Top margin = 10% of height
+             PdfFileEditor.ContentsResizeValue.Percents(10),
+             // New contents height is calculated automatically (similar to width)
+             null,
+             // Bottom margin is 10%
+             PdfFileEditor.ContentsResizeValue.Percents(10)
+         );
 
-     // Specify Parameters to be used for resizing
-     var parameters = new Aspose.Pdf.Facades.PdfFileEditor.ContentsResizeParameters(
-         // Left margin = 10% of page width
-         PdfFileEditor.ContentsResizeValue.Percents(10),
-         // New contents width calculated automatically as width - left margin - right margin (100% - 10% - 10% = 80%)
-         null,
-         // Right margin is 10% of page
-         PdfFileEditor.ContentsResizeValue.Percents(10),
-         // Top margin = 10% of height
-         PdfFileEditor.ContentsResizeValue.Percents(10),
-         // New contents height is calculated automatically (similar to width)
-         null,
-         // Bottom margin is 10%
-         PdfFileEditor.ContentsResizeValue.Percents(10)
-     );
+         // Resize Page Contents
+         fileEditor.ResizeContents(document, new[] { 1, 2 }, parameters);
 
-     // Resize Page Contents
-     fileEditor.ResizeContents(doc, new[] { 1, 2 }, parameters);
-
-     // Save document into a new location
-     doc.Save(dataDir + "ResizePageContents_out.pdf");
+         // Save document into a new location
+         document.Save(dataDir + "ResizePageContents_out.pdf");
+     }
  }
 ```
