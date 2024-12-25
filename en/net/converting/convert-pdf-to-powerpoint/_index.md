@@ -185,34 +185,34 @@ private static void ConvertPDFToPPTWithCustomProgressHandler()
 }
 
  // Define the method to handle progress events and display them on the console
- private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)
- {
-     switch (eventInfo.EventType)
-     {
-         case ProgressEventType.TotalProgress:
-             // Display overall progress of the conversion
-             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Conversion progress: {eventInfo.Value}%.");
-             break;
+private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)
+{
+    switch (eventInfo.EventType)
+    {
+        case Aspose.Pdf.ProgressEventType.TotalProgress:
+            // Display overall progress of the conversion
+            Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Conversion progress: {eventInfo.Value}%.");
+            break;
 
-         case ProgressEventType.ResultPageCreated:
-             // Display progress of the page layout creation
-             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Result page {eventInfo.Value} of {eventInfo.MaxValue} layout created.");
-             break;
+        case Aspose.Pdf.ProgressEventType.ResultPageCreated:
+            // Display progress of the page layout creation
+            Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Result page {eventInfo.Value} of {eventInfo.MaxValue} layout created.");
+            break;
 
-         case ProgressEventType.ResultPageSaved:
-             // Display progress of the page being exported
-             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Result page {eventInfo.Value} of {eventInfo.MaxValue} exported.");
-             break;
+        case Aspose.Pdf.ProgressEventType.ResultPageSaved:
+            // Display progress of the page being exported
+            Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Result page {eventInfo.Value} of {eventInfo.MaxValue} exported.");
+            break;
 
-         case ProgressEventType.SourcePageAnalysed:
-             // Display progress of the source page analysis
-             Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Source page {eventInfo.Value} of {eventInfo.MaxValue} analyzed.");
-             break;
+        case Aspose.Pdf.ProgressEventType.SourcePageAnalysed:
+            // Display progress of the source page analysis
+            Console.WriteLine($"{DateTime.Now.TimeOfDay}  - Source page {eventInfo.Value} of {eventInfo.MaxValue} analyzed.");
+            break;
 
-         default:
-             break;
-     }
- }
+        default:
+            break;
+    }
+}
 ```
 
 ## See Also 
