@@ -251,15 +251,13 @@ private static void ComparePDFWithGetDifferenceMethod()
         {
             // Create comparer 
             var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
-    
             // Compare
             using (var imagesDifference = comparer.GetDifference(document1.Pages[1], document2.Pages[1]))
             {
-                using (var diffImg = imagesDifference.DifferenceToImage(Color.Red, Color.White))
+                using (var diffImg = imagesDifference.DifferenceToImage(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.White))
                 {
                     diffImg.Save(diffPngFilePath);
                 }
-
                 using (var destImg = imagesDifference.GetDestinationImage())
                 {
                     destImg.Save(destPngFilePath);
