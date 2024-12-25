@@ -412,10 +412,11 @@ private static void ConvertMHTtoPDF()
     };
 
     // Initialize Document object using the MHT file and options
-    var document = new Aspose.Pdf.Document(dataDir + "fileformatinfo.mht", options);
-
-    // Save the document as a PDF
-    document.Save(dataDir + "mhtml_test.PDF");
+    using (var document = new Aspose.Pdf.Document(dataDir + "fileformatinfo.mht", options))
+    {
+        // Save the document as a PDF
+        document.Save(dataDir + "mhtml_test.PDF");
+    }
 }
 ```
 
