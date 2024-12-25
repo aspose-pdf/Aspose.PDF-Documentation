@@ -192,7 +192,7 @@ The align environment is defined in amsmath package, and proof environment is de
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void LatexTagsSupport()
 {
-    /var s = @"
+    var s = @"
     \usepackage{amsmath,amsthm}
     \begin{document}
     \begin{proof} The proof is a follows: 
