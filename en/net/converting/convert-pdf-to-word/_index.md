@@ -124,7 +124,7 @@ The following C# code snippet shows converting a PDF file into DOC format.
 private static void ConvertPDFtoWord()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+    // Open the document
     usnig (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
         // Save the file into MS document format
@@ -148,7 +148,7 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 private static void ConvertPDFtoWordDocAdvanced()
 {
      var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDF-to-DOC.pdf"))
     {
         var saveOptions = new Aspose.Pdf.DocSaveOptions
@@ -192,7 +192,7 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 private static void ConvertPDFtoWord_DOCX_Format()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
         // Save the file into MS document format
@@ -212,7 +212,7 @@ There is also recognition of numbered lists and many other minor things.
 private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
 

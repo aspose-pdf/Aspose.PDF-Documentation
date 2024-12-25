@@ -176,11 +176,8 @@ The code below wraps a PDF file's existing contents with the GSave/GRestore oper
 private static void DrawXFormOnPage()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    var imageFile = dataDir + "aspose-logo.jpg";
-    var inFile = dataDir + "DrawXFormOnPage.pdf";
-    var outFile = dataDir + "blank-sample2_out.pdf";
 
-    using (var document = new Aspose.Pdf.Document(inFile))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DrawXFormOnPage.pdf"))
     {
         var pageContents = document.Pages[1].Contents;
 
@@ -200,7 +197,7 @@ private static void DrawXFormOnPage()
         form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
 
         // Load image into stream
-        using (var imageStream = new FileStream(imageFile, FileMode.Open))
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
         {
             // Add the image to the XForm's resources
             form.Resources.Images.Add(imageStream);
@@ -229,7 +226,7 @@ private static void DrawXFormOnPage()
         pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
         // Save the updated document
-        document.Save(outFile);
+        document.Save(dataDir + "blank-sample2_out.pdf");
     }
 }
 ```
