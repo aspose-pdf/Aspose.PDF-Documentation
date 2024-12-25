@@ -139,7 +139,6 @@ private static void AddField()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFieldScript()
 {
-    // Define the path to the directory containing the input PDF
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields

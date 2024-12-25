@@ -84,10 +84,10 @@ The following code snippet shows you how to get PDF page properties from existin
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetPdfPageProperties()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open document
+    // Open the document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
         // Bind the PDF file
@@ -140,7 +140,7 @@ private static void SetPdfPageProperties()
         // Set zoom where 1.0f = 100% zoom
         pageEditor.Zoom = 2.0f;
 
-        // Save updated PDF file
+        // Save the updated PDF file
         pageEditor.Save(dataDir + "SetPageProperties_out.pdf");
     }
 }
