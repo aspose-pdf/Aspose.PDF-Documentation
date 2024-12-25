@@ -75,18 +75,44 @@ url: /net/advanced-features/
 Sometimes when you are developing an ASP.NET application, you need to send PDF file(s) to web browser(s) for download without saving them physically. In order to achieve that you can save PDF document into MemoryStream object after generating it and pass bytes from that MemoryStream to Response object. Doing this will make the browser to download the generated PDF document.
 
 Following code snippet demonstrate the above functionality:
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private void Page_Load(object sender, EventArgs e)
+{
+    // Clear the response before writing to it
+    Response.Clear();
+    // Set content type for PDF
+    Response.ContentType = "application/pdf";
+    // Set the response header for file download
+    Response.AddHeader("content-disposition", "attachment; filename=TestDocument.pdf");
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-Examples.Web-SendPdfToBrowserForDownload.aspx-1.cs" >}}
+    // Create a new document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add Page in Pages Collection
+        var page = document.Pages.Add();
+        var textFragment = new Aspose.Pdf.Text.TextFragment("Hello World");
+        page.Paragraphs.Add(textFragment);
+        
+        // Save the document to a MemoryStream
+        using (var ms = new MemoryStream())
+        {
+            document.Save(ms);
+             // Reset the stream position to the beginning
+            ms.Position = 0;
 
-## Extracting embedded files from a PDF file
-
-Aspose.PDF stands out when it comes to advanced features for working with PDF format files. It extracts embedded files way better than other tools offering this feature.
-
-With Aspose.PDF for .NET, you can efficiently extract any embedded file which may be an embedded font, an image, a video or an audio. Following goal-specific approach demonstrates how quickly and efficiently the embedded files can be extracted. Aspose.PDF facilitates you to extract all the font files whether it is a true type (TTF) or an open type font (OTF). Likewise, using this feature, image of any format JPG, PNG, SVG etc can be extracted in its 'as is' condition.
-
-Following code snippet extracts all the embedded files from a PDF file:
-
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-DocumentConversion-PDFToXML-PDFToXML.cs" >}}
+            // Write the MemoryStream to the response
+            ms.CopyTo(Response.OutputStream);
+            Response.AddHeader("content-length", ms.Length.ToString());
+            Response.Flush();
+            // Suppress the remaining content
+            Response.SuppressContent = true; 
+        }
+    }
+    // End the response to prevent further processing
+    Response.End(); 
+}
+```
 
 ## Use of Latex Script to Add Mathematical Expressions
 
@@ -94,14 +120,98 @@ With Aspose.PDF, you can add mathematical expressions/formulas inside PDF docume
 
 ### Without preamble and document environment
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Text-UseLatexScript-WithoutPreambleanddocument.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
+private static void LatexWithoutPreambleAndDocEnvironment()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add Page in Pages Collection
+        var page = doc.Pages.Add();
+        // Create a Table
+        var table = new Aspose.Pdf.Table();
+        // Add a row into Table
+        var row = table.Rows.Add();
+        // Add Cell with Latex Script to add methematical expressions/formulae
+        var latexText1 = "$123456789+\\sqrt{1}+\\int_a^b f(x)dx$";
+        var cell = row.Cells.Add();
+        cell.Margin = new MarginInfo { Left = 20, Right = 20, Top = 20, Bottom = 20 };
+        // Second TeXFragment constructor bool parameter provides LaTeX paragraph indents elimination
+        var ltext1 = new Aspose.Pdf.TeXFragment(latexText1, true);
+        cell.Paragraphs.Add(ltext1);
+        // Add table inside page
+        page.Paragraphs.Add(table);
+        // Save the document
+        document.Save(dataDir + "LatextScriptInPdf_out.pdf");
+    }
+}
+```
 
 ### With preamble and document environment
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Text-UseLatexScript2-WithPreambleanddocument.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void LatexWithPreambleAndDocEnvironment()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add Page in Pages Collection
+        var page = doc.Pages.Add();
+        // Create a Table
+        var table = new Aspose.Pdf.Table();
+        // Add a row into Table
+        var row = table.Rows.Add();
+       // Add Cell with Latex Script to add methematical expressions/formulae
+        var latexText2 = @"\documentclass{article}
+                            \begin{document}
+                            Latex and the document class will normally take care of page layout issues for you. For submission to an academic publication, this entire topic will be out
+                            \end{document}";
+        var cell = row.Cells.Add();
+        cell.Margin = new Aspose.Pdf.MarginInfo { Left = 20, Right = 20, Top = 20, Bottom = 20 };
+        var text2 = new Aspose.Pdf.HtmlFragment(latexText2);
+        cell.Paragraphs.Add(text2);
+        // Add table inside page
+        page.Paragraphs.Add(table);
+        // Save the document
+        document.Save(dataDir + "LatextScriptInPdf2_out.pdf");
+    }
+}
+```
 
 ### Support for Latex Tags
 
 The align environment is defined in amsmath package, and proof environment is defined in amsthm package. Thus, you have to specify these packages using \usepackage command in the document preamble. And this means that you have to enclose the LaTeX text into document environment either as shown in the following code sample.
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Text-UseLatexScript3-UseLatexScript3.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void LatexTagsSupport()
+{
+    /var s = @"
+    \usepackage{amsmath,amsthm}
+    \begin{document}
+    \begin{proof} The proof is a follows: 
+    \begin{align}
+    (x+y)^3&=(x+y)(x+y)^2
+    (x+y)(x^2+2xy+y^2)\\
+    &=x^3+3x^2y+3xy^3+x^3.\qedhere
+    \end{align}
+    \end{proof}
+    \end{document}";
+    
+    // Create a new document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = doc.Pages.Add();
+        var latex = new Aspose.Pdf.TeXFragment(s);
+        page.Paragraphs.Add(latex);
+        // Save the document
+        document.Save(dataDir + "Script_out.pdf");
+    }
+}
+```
