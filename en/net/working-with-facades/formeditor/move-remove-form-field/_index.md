@@ -81,12 +81,14 @@ If you want to move a form field to a new location then you can use [MoveField](
 private static void MoveField()
 {
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    var editor = new Aspose.Pdf.Facades.FormEditor();
-    // Open the document
-    editor.BindPdf(dataDir + "MoveField.pdf");
-    editor.MoveField("Last Name", 262.56f, 496.75f, 382.28f, 514.03f);
-    // Save the document
-    editor.Save(dataDir + "MoveField_out.pdf");
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the document
+        editor.BindPdf(dataDir + "MoveField.pdf");
+        editor.MoveField("Last Name", 262.56f, 496.75f, 382.28f, 514.03f);
+        // Save the document
+        editor.Save(dataDir + "MoveField_out.pdf");
+    }
 }
 ```
 
@@ -98,13 +100,15 @@ In order to delete a form field from an existing PDF file, you can use RemoveFie
 private static void RemoveFields()
 {
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    var editor = new Aspose.Pdf.Facades.FormEditor();
-    // Open the document
-    editor.BindPdf(dataDir + "RemoveField.pdf");
-    editor.RemoveField("First Name");
-    editor.RemoveField("Last Name");
-    // Save the document
-    editor.Save(dataDir + "RemoveField_out.pdf");
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the document
+        editor.BindPdf(dataDir + "RemoveField.pdf");
+        editor.RemoveField("First Name");
+        editor.RemoveField("Last Name");
+        // Save the document
+        editor.Save(dataDir + "RemoveField_out.pdf");
+    }
 }
 ```
 
@@ -116,12 +120,14 @@ Also you can rename your field using [RenameField](https://reference.aspose.com/
 private static void RenameFields()
 {
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    var editor = new Aspose.Pdf.Facades.FormEditor();
-    // Open the document
-    editor.BindPdf(dataDir + "RenameField.pdf");
-    editor.RenameField("Last Name", "LastName");
-    editor.RenameField("First Name", "FirstName");
-    // Save the document
-    editor.Save(dataDir + "RenameField_out.pdf");
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the document
+        editor.BindPdf(dataDir + "RenameField.pdf");
+        editor.RenameField("Last Name", "LastName");
+        editor.RenameField("First Name", "FirstName");
+        // Save the document
+        editor.Save(dataDir + "RenameField_out.pdf");
+    }
 }
 ```

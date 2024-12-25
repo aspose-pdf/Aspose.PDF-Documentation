@@ -97,28 +97,24 @@ private static void JustifyTextInTextboxField()
             form.BindPdf(source);
             // Fill Text Field
             form.FillField("Text1", "Thank you for using Aspose");
-
             // Save the document in Memory Stream
             form.Save(ms);
-
             ms.Seek(0, SeekOrigin.Begin);
 
             using (var dest = new FileStream(dataDir + "JustifyText_out.pdf", FileMode.Create))
             {
                 // Create formEditor Object
-                var formEditor = new Aspose.Pdf.Facades.FormEditor();
-
-                // Open PDF from memory stream
-                formEditor.BindPdf(ms);
-
-                // Set Text Alignment as Justified
-                formEditor.Facade.Alignment = Aspose.Pdf.Facades.FormFieldFacade.AlignJustified;
-
-                // Decorate form field
-                formEditor.DecorateField();
-
-                // Save the resultant file
-                formEditor.Save(dest);
+                using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
+                {
+                    // Open PDF from memory stream
+                    formEditor.BindPdf(ms);
+                    // Set Text Alignment as Justified
+                    formEditor.Facade.Alignment = Aspose.Pdf.Facades.FormFieldFacade.AlignJustified;
+                    // Decorate form field
+                    formEditor.DecorateField();
+                    // Save the resultant file
+                    formEditor.Save(dest);
+                }
             }
         }
     }

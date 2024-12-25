@@ -114,16 +114,18 @@ private static void IdentifyFormFieldsNames()
     using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
     {
         // Now we need to add a textfield just upon the original one
-        var editor = new Aspose.Pdf.Facades.FormEditor(doc);
-        for (int i = 0; i < allfields.Length; i++)
+        using (var editor = new Aspose.Pdf.Facades.FormEditor(document))
         {
-            // Add text field beneath every existing form field
-            editor.AddField(Aspose.Pdf.Facades.FieldType.Text, 
-            "TextField" + i, allfields[i], 1, 
-            box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
+            for (int i = 0; i < allfields.Length; i++)
+            {
+                // Add text field beneath every existing form field
+                editor.AddField(Aspose.Pdf.Facades.FieldType.Text, 
+                "TextField" + i, allfields[i], 1, 
+                box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
+            }
+            // Save the document
+            editor.Save(dataDir + "IdentifyFormFields_out.pdf");
         }
-        // Save the document
-        editor.Save(dataDir + "IdentifyFormFields_out.pdf");`
     }
 }
 ```
