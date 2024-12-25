@@ -79,28 +79,38 @@ Following code snippet demonstrate the above functionality:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private void Page_Load(object sender, EventArgs e)
 {
+    // Clear the response before writing to it
+    Response.Clear();
+    // Set content type for PDF
+    Response.ContentType = "application/pdf";
+    // Set the response header for file download
+    Response.AddHeader("content-disposition", "attachment; filename=TestDocument.pdf");
+
     // Create a new document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
         var textFragment = new Aspose.Pdf.Text.TextFragment("Hello World");
         page.Paragraphs.Add(textFragment);
-        using(var ms = new MemoryStream())
+        
+        // Save the document to a MemoryStream
+        using (var ms = new MemoryStream())
         {
-            // Save the document
             document.Save(ms);
-            Response.Clear();
-            Response.ClearHeaders();
-            Response.ClearContent();
-            Response.Charset = "UTF-8";
+             // Reset the stream position to the beginning
+            ms.Position = 0;
+
+            // Write the MemoryStream to the response
+            ms.CopyTo(Response.OutputStream);
             Response.AddHeader("content-length", ms.Length.ToString());
-            Response.AddHeader("content-disposition", String.Format("attachment;filename=TestDocument.pdf", "FileName"));
-            Response.ContentType = "application/pdf"; Response.BinaryWrite(ms.ToArray());
             Response.Flush();
-            Response.End();
+            // Suppress the remaining content
+            Response.SuppressContent = true; 
         }
     }
-}  
+    // End the response to prevent further processing
+    Response.End(); 
+}
 ```
 
 ## Use of Latex Script to Add Mathematical Expressions
