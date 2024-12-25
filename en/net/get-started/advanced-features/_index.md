@@ -76,8 +76,10 @@ Sometimes when you are developing an ASP.NET application, you need to send PDF f
 
 Following code snippet demonstrate the above functionality:
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private void Page_Load(object sender, EventArgs e)
 {
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -85,6 +87,7 @@ private void Page_Load(object sender, EventArgs e)
         page.Paragraphs.Add(textFragment);
         using(var ms = new MemoryStream())
         {
+            // Save the document
             document.Save(ms);
             Response.Clear();
             Response.ClearHeaders();
@@ -138,9 +141,9 @@ private static void LatexWithoutPreambleAndDocEnvironment()
 ### With preamble and document environment
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void LatexWithPreambleAndDocEnvironment()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Load source PDF file
     using (var document = new Aspose.Pdf.Document())
@@ -173,6 +176,7 @@ private static void LatexWithPreambleAndDocEnvironment()
 The align environment is defined in amsmath package, and proof environment is defined in amsthm package. Thus, you have to specify these packages using \usepackage command in the document preamble. And this means that you have to enclose the LaTeX text into document environment either as shown in the following code sample.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void LatexTagsSupport()
 {
     /var s = @"
@@ -186,12 +190,14 @@ private static void LatexTagsSupport()
     \end{align}
     \end{proof}
     \end{document}";
-
+    
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = doc.Pages.Add();
         var latex = new Aspose.Pdf.TeXFragment(s);
         page.Paragraphs.Add(latex);
+        // Save the document
         document.Save(dataDir + "Script_out.pdf");
     }
 }

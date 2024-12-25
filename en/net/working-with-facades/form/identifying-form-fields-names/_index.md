@@ -93,6 +93,7 @@ The solution to this problem is Box property in [FormFieldFacade](https://refere
 In [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace we have a class named [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) which provides the capability to manipulate PDF forms. Open a pdf form; add a text field beneath every existing form field and save the Pdf form with new name.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void IdentifyFormFieldsNames()
 {
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
@@ -106,11 +107,13 @@ private static void IdentifyFormFieldsNames()
     {
         // Get the appearance attributes of each field, consequtively
         var facade = form.GetFieldFacade(allfields[i]);
-        // Box in FormFieldFacade class holds field's location.
+        // Box in FormFieldFacade class holds field's location
         box[i] = facade.Box;
     }
+    // Save the document
     form.Save(dataDir + "IdentifyFormFields_1_out.pdf");
 
+    // Create a new document
     using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
     {
         // Now we need to add a textfield just upon the original one
