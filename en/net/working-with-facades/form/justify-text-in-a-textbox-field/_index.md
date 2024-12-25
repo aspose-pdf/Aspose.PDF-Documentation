@@ -89,7 +89,7 @@ private static void JustifyTextInTextboxField()
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     using (var source = File.Open(dataDir + "JustifyText.pdf", FileMode.Open))
     {
-        using (var ms = new System.IO.MemoryStream())
+        using (var ms = new MemoryStream())
         {
             // Create Form Object
             var form = new Aspose.Pdf.Facades.Form();

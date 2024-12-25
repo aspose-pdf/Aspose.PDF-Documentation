@@ -81,9 +81,9 @@ private void Page_Load(object sender, EventArgs e)
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
-        var textFragment = new Aspose.Pdf.Text.TextFragment("Hello World")
-        var paragraph = page.Paragraphs.Add(textFragment);
-        using(var ms = new System.IO.MemoryStream())
+        var textFragment = new Aspose.Pdf.Text.TextFragment("Hello World");
+        page.Paragraphs.Add(textFragment);
+        using(var ms = new MemoryStream())
         {
             document.Save(ms);
             Response.Clear();
@@ -98,27 +98,6 @@ private void Page_Load(object sender, EventArgs e)
         }
     }
 }  
-```
-
-## Extracting embedded files from a PDF file
-
-Aspose.PDF stands out when it comes to advanced features for working with PDF format files. It extracts embedded files way better than other tools offering this feature.
-
-With Aspose.PDF for .NET, you can efficiently extract any embedded file which may be an embedded font, an image, a video or an audio. Following goal-specific approach demonstrates how quickly and efficiently the embedded files can be extracted. Aspose.PDF facilitates you to extract all the font files whether it is a true type (TTF) or an open type font (OTF). Likewise, using this feature, image of any format JPG, PNG, SVG etc can be extracted in its 'as is' condition.
-
-Following code snippet extracts all the embedded files from a PDF file:
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
-private static void ExtractEmbeddedFilesFromPDF()
-{
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
-    // Load source PDF file
-    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
-    {
-        // Save output in XML format
-        document.Save(dataDir + "PDFToXML_out.xml", Aspose.Pdf.SaveFormat.MobiXml);
-    }
-}
 ```
 
 ## Use of Latex Script to Add Mathematical Expressions

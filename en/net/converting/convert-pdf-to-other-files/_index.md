@@ -268,3 +268,21 @@ using (Document document = new Document(inputPdfPath))
     document.Save(markdownOutputFilePath, saveOptions);
 }
 ```
+
+### Convert PDF to MobiXml
+
+MobiXML is a popular eBook format, designed to be usen on mobile platforms.
+The following code snippet explains how to convert PDF document to MobiXML file.
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
+private static void ConvertPdfToMobiXml()
+{
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
+    {
+        // Save output in XML format
+        document.Save(dataDir + "PDFToXML_out.xml", Aspose.Pdf.SaveFormat.MobiXml);
+    }
+}
+```
