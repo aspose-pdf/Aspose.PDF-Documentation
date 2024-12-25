@@ -113,6 +113,7 @@ With Aspose.PDF, you can add mathematical expressions/formulas inside PDF docume
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
 private static void LatexWithoutPreambleAndDocEnvironment()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Load source PDF file
     using (var document = new Aspose.Pdf.Document())
@@ -144,6 +145,7 @@ private static void LatexWithoutPreambleAndDocEnvironment()
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void LatexWithPreambleAndDocEnvironment()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Load source PDF file
     using (var document = new Aspose.Pdf.Document())

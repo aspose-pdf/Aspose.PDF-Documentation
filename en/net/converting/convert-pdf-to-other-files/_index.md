@@ -277,6 +277,7 @@ The following code snippet explains how to convert PDF document to MobiXML file.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
 private static void ConvertPdfToMobiXml()
 {
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
     // Load source PDF file
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))

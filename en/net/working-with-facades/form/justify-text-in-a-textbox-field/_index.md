@@ -87,7 +87,9 @@ In this article, we’ll show you how to justify text in a textbox field in a PD
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void JustifyTextInTextboxField()
 {
+    // The path to the documents directory 
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Open the document
     using (var source = File.Open(dataDir + "JustifyText.pdf", FileMode.Open))
     {
         using (var ms = new MemoryStream())
