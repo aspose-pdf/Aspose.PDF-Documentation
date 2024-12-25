@@ -89,6 +89,7 @@ private void Page_Load(object sender, EventArgs e)
     // Create a new document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add Page in Pages Collection
         var page = document.Pages.Add();
         var textFragment = new Aspose.Pdf.Text.TextFragment("Hello World");
         page.Paragraphs.Add(textFragment);
