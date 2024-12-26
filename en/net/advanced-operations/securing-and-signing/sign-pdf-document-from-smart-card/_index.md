@@ -100,7 +100,7 @@ private static void GetSignatureInfo()
         using (var document = new Aspose.Pdf.Document(fs))
         {
             // Create a signature field
-            var field1 = new Aspose.Pdf.Forms.SignatureField(document.Pages[1], new Rectangle(100, 400, 10, 10));
+            var field1 = new Aspose.Pdf.Forms.SignatureField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 400, 10, 10));
 
             // Sign with certificate selection in the windows certificate store
             X509Store store = new X509Store(StoreLocation.CurrentUser);

@@ -339,7 +339,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
     }
 
     // Custom hash signing function to generate a digital signature
-    byte[] CustomSignHash(byte[] signableHash, DigestHashAlgorithm digestHashAlgorithm)
+    byte[] CustomSignHash(byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
     {
         var inputP12 = "111.p12";
         var inputPfxPassword = "123456";
@@ -441,7 +441,7 @@ private static void SignEcdsa(string pfxFilePath, string password)
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             // Create a PKCS7Detached object using the provided certificate and password
-            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(cert, "12345", DigestHashAlgorithm.Sha256);
+            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(cert, "12345", Aspose.Pdf.DigestHashAlgorithm.Sha256);
 
             // Sign the first page of the document, setting the signature's appearance at the specified location
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
