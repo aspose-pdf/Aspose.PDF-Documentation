@@ -488,7 +488,7 @@ private static void CompleteCode()
         }
     }
 }
-```csharp
+```
 
 ## Concatenate PDF files in folder
 
