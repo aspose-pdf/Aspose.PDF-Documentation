@@ -492,6 +492,7 @@ private static void ConvertPCLtoPDF()
         // Save document in PDF format
         document.Save(dataDir + "ConvertPCLtoPDF_out.pdf");
     }
+}
 ```
 
 You can also monitor the detection of errors during the conversion process. To do this, you need to configure PclLoadOptions object: set or unset SupressErrors.
