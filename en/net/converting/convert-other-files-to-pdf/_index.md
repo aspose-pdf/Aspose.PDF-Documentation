@@ -506,7 +506,7 @@ private static void ConvertPCLtoPDFAdvanced()
     // Convert options
     var options = new Aspose.Pdf.PclLoadOptions { SupressErrors = true };
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDFAdvanced.pcl", options))
     {
         if (options.Exceptions != null)
         {
