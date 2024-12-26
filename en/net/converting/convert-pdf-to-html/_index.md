@@ -97,6 +97,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 - Splitting Output to Multi-page HTML.
 - Specify Folder for Storing SVG Files.
 - Compressing SVG Images During Conversion.
+- Save images as PNG background.
 - Specifying the Images Folder.
 - Create Subsequent Files with Body Contents Only.
 - Transparent Text rendering.
@@ -207,6 +208,30 @@ private static void SavePDFtoCompressedHTMLWithSVG()
 
         // Save the output file
         document.Save(dataDir + "CompressedSVGHTML_out.html", newOptions);
+    }
+}
+```
+
+### Save images as PNG background
+
+The default output format for saving images is SVG. During conversion, some images from PDF are transformed into SVG vector images. This could be slow. Instead, the images could be transformed into one PNG background file for each page.
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PdfToHtmlSaveImagesAsPngBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
+           
+    // Create HtmlSaveOption with tested feature
+    var htmlSaveOptions = new HtmlSaveOptions();
+           
+    // Option to save images in PNG format as background for each page.
+    htmlSaveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+       document.Save(dataDir + "imagesAsPngBackground_out.html", htmlSaveOptions);         
     }
 }
 ```
