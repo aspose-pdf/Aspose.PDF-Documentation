@@ -76,14 +76,31 @@ draft: false
 [CopyInnerField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyinnerfield/index) method allows you to copy a field in the same file, at the same coordinates, on the specified page. This method requires the field name which you want to copy, the new field name, and the page number at which the field needs to be copied. [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) class provides this method. The following code snippet shows you how to copy the field at the same location in the same file.
 
 ```csharp
-public static void CopyInnerField()
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CopyInnerField()
 {
-    var editor = new FormEditor();
-    var document = new Document(dataDir + "Sample-Form-01.pdf");
-    document.Pages.Add();
-    editor.BindPdf(document);
-    editor.CopyInnerField("Last Name", "Last Name 2", 2);
-    editor.Save(dataDir + "Sample-Form-01-mod.pdf");
+    // Define the path to the directory containing the input PDF
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create an instance of FormEditor object
+    using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the existing PDF document
+        using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Form-01.pdf"))
+        {
+            // Add a new page to the document
+            document.Pages.Add();
+
+            // Bind the document to the formEditor
+            formEditor.BindPdf(document);
+
+            // Copy the field "Last Name" from the first page to "Last Name 2" on the second page
+            formEditor.CopyInnerField("Last Name", "Last Name 2", 2);
+
+            // Save the updated PDF with the copied field
+            formEditor.Save(dataDir + "Sample-Form-01-mod.pdf");
+        }
+    }
 }
 ```
 
@@ -92,15 +109,34 @@ public static void CopyInnerField()
 [CopyOuterField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/copyouterfield/index) method allows you to copy a form field from an external PDF file and then add it to the input PDF file at the same location and the specified page number. This method requires the PDF file from which the field needs to be copied, the field name, and the page number at which the field needs to be copied. This method is provided by [FormEditor](https://reference.aspose.com/html/net/aspose.html.forms/formeditor) class.The following code snippet shows you how to copy a field from an external PDF file.
 
 ```csharp
-public static void CopyOuterField()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CopyOuterField()
 {
-    var editor = new FormEditor();
-    var document = new Document();
-    document.Pages.Add();
-    editor.BindPdf(document);
-    editor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "First Name", 1);
-    editor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "Last Name", 1);
-    editor.Save(dataDir + "Sample-Form-02-mod.pdf");
+    // Define the path to the directory containing the input PDF
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create an instance of FormEditor 
+    using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Create empty document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add a new page to the document
+            document.Pages.Add();
+
+            // Bind the newly created document to the formEditor
+            formEditor.BindPdf(document);
+
+            // Copy the outer field "First Name" from the original document to the new document
+            formEditor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "First Name", 1);
+
+            // Copy the outer field "Last Name" from the original document to the new document
+            formEditor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "Last Name", 1);
+
+            // Save the updated PDF with the copied outer fields
+            formEditor.Save(dataDir + "Sample-Form-02-mod.pdf");
+        }
+    }
 }
 ```
 

@@ -79,4 +79,33 @@ draft: false
 
 
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-ChangePageSizes-ChangePageSizes.cs" >}}
+```csharp
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangePdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PdfPageEditor object
+    using (var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
+    {
+        // Bind the PDF file
+        pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
+
+        // Change page size of the selected pages
+        pdfPageEditor.ProcessPages = new[] { 1 };
+
+        // Select a predefined page size (LETTER) and assign it
+        pdfPageEditor.PageSize = Aspose.Pdf.PageSize.PageLetter;
+
+        // Save the file with the updated page size
+        pdfPageEditor.Save(dataDir + "ChangePageSizes_out.pdf");
+
+        // Retrieve and display the page size assigned
+        pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
+
+        var pageSize = pdfPageEditor.GetPageSize(1);
+        Console.WriteLine($"Width: {pageSize.Width}, Height: {pageSize.Height}");
+    }
+}
+```

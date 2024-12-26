@@ -118,15 +118,18 @@ Aspose.PDF for .NET provides a two-line code for transforming a source PDF file 
 2. Save it to **SaveFormat.Html** format by calling **Document.Save()** method.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoHTML()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Open the source PDF document
-Document document = new Document(dataDir + "PDFToHTML.pdf");
-
-// Save the file into MS document format
-document.Save(dataDir + "output_out.html", SaveFormat.Html);
+    // Open the source PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Save the file into HTML format
+        document.Save(dataDir + "output_out.html", Aspose.Pdf.SaveFormat.Html);
+    }
+}
 ```
 
 ### Splitting Output to Multi-page HTML
@@ -134,21 +137,25 @@ document.Save(dataDir + "output_out.html", SaveFormat.Html);
 When converting large PDF file with several pages to HTML format, the output appears as a single HTML page. It can end up being very long. To control page size, it is possible to split the output into several pages during PDF to HTML conversion. Please try using the following code snippet.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoMultiPageHTML()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Open the source PDF document
-Document document = new Document(dataDir + "PDFToHTML.pdf");
+    // Open the source PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var htmlOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Specify to split the output into multiple pages
+            SplitIntoPages = true
+        };
 
-// Instantiate HTML SaveOptions object
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-
-// Specify to split the output into multiple pages
-htmlOptions.SplitIntoPages = true;
-
-// Save the document
-document.Save(@"MultiPageHTML_out.html", htmlOptions);
+        // Save the document
+        document.Save(dataDir + "MultiPageHTML_out.html", htmlOptions);
+    }
+}
 ```
 
 ### Specify Folder for Storing SVG Files
@@ -156,17 +163,25 @@ document.Save(@"MultiPageHTML_out.html", htmlOptions);
 During PDF to HTML conversion, it is possible to specify the folder that SVG images should be saved to. Use the [`HtmlSaveOption class`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) [`SpecialFolderForSvgImages property`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) to specify a special SVG image directory. This property gets or sets the path to the directory to which SVG images must be saved to when encountered during conversion. If the parameter is empty or null, then any SVG files are saved together with other image files.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "PDFToHTML.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SavePDFtoHTMLWithSVG()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Instantiate HTML save options object
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML save options object
+        var newOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Specify the folder where SVG images are saved during PDF to HTML conversion
+            SpecialFolderForSvgImages = dataDir
+        };
 
-// Specify the folder where SVG images are saved during PDF to HTML conversion
-newOptions.SpecialFolderForSvgImages = dataDir;
-
-// Save the output file
-document.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
+        // Save the output file
+        document.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
+    }
+}
 ```
 
 ### Compressing SVG Images During Conversion
@@ -174,12 +189,26 @@ document.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
 To compress SVG images during PDF to HTML conversion, please try using the following code:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Create HtmlSaveOption with tested feature
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SavePDFtoCompressedHTMLWithSVG()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Compress the SVG images if there are any
-newOptions.CompressSvgGraphicsIfAny = true;
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+
+        // Create HtmlSaveOptions with tested feature
+        var newOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Compress the SVG images if there are any
+            CompressSvgGraphicsIfAny = true
+        };
+
+        // Save the output file
+        document.Save(dataDir + "CompressedSVGHTML_out.html", newOptions);
+    }
+}
 ```
 
 ### Specifying the Images Folder
@@ -187,12 +216,25 @@ newOptions.CompressSvgGraphicsIfAny = true;
 We can also specify the folder that images will be saved to during PDF to HTML conversion:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Create HtmlSaveOption with tested feature
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SavePDFtoHTMLWithSeparateImageFolder()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Specify the separate folder to save images
-newOptions.SpecialFolderForAllImages = dataDir;
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Create HtmlSaveOptions with tested feature
+        var newOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Specify the separate folder to save images
+            SpecialFolderForAllImages = dataDir
+        };
+
+        // Save the output file
+        document.Save(dataDir + "HTMLWithSeparateImageFolder_out.html", newOptions);
+    }
+}
 ```
 
 ### Create Subsequent Files with Body Contents Only
@@ -204,17 +246,29 @@ To meet this requirement, a new property, HtmlMarkupGenerationMode, was introduc
 With the following simple code snippet, you can split the output HTML into pages. In the output pages, all HTML objects must go exactly where they go now (fonts processing and output, CSS creation and output, images creation and output), except that the output HTML will contain contents currently placed inside thetags (now “body” tags will be omitted). However, when using this approach, the link to the CSS is the responsibility of your code, because things like will be stripped out. For this purpose, you may read the CSS via File.ReadAllText() and send it via AJAX to to a web page where it will be applied by jQuery.
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToHTMLWithBodyContent()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document document = new Document(dataDir + "PDFToHTML.pdf");
-           
-HtmlSaveOptions options = new HtmlSaveOptions();
-// This is the tested setting
-options.HtmlMarkupGenerationMode = HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent;
-options.SplitIntoPages = true;
+    // Load the PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Initialize HtmlSaveOptions
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Set HtmlMarkupGenerationMode to generate only body content
+            HtmlMarkupGenerationMode =
+                Aspose.Pdf.HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent,
 
-document.Save(dataDir + "CreateSubsequentFiles_out.html", options);
+            // Specify to split the output into multiple pages
+            SplitIntoPages = true
+        };
+
+        // Save the output file
+        document.Save(dataDir + "CreateSubsequentFiles_out.html", options);
+    }
+}
 ```
 
 ### Transparent Text rendering
@@ -222,15 +276,26 @@ document.Save(dataDir + "CreateSubsequentFiles_out.html", options);
 In case the source/input PDF file contains transparent texts shadowed by foreground images, then there might be text rendering issues. So in order to cater such scenarios, SaveShadowedTextsAsTransparentTexts and SaveTransparentTexts properties can be used.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToHTMLWithTransparentTextRendering()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document document = new Document(dataDir + "PDFToHTML.pdf");
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-htmlOptions.SaveShadowedTextsAsTransparentTexts = true;
-htmlOptions.SaveTransparentTexts = true;
-document.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
+    // Load the PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Initialize HtmlSaveOptions
+        var htmlOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Enable transparent text rendering
+            SaveShadowedTextsAsTransparentTexts = true,
+            SaveTransparentTexts = true
+        };
+
+        // Save the output HTML
+        document.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
+    }
+}
 ```
 
 ### PDF document layers rendering
@@ -238,19 +303,25 @@ document.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
 We can render PDF document layers in separate layer type element during PDF to HTML conversion:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToHTMLWithLayersRendering()
+{
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document document = new Document(dataDir + "PDFToHTML.pdf");
-// Instantiate HTML SaveOptions object
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
+    // Load the PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var htmlOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Enable rendering of PDF document layers separately in the output HTML
+            ConvertMarkedContentToLayers = true
+        };
 
-// Specify to render PDF document layers separately in output HTML
-htmlOptions.ConvertMarkedContentToLayers = true;
-
-// Save the document
-document.Save(dataDir + "LayersRendering_out.html", htmlOptions);
+        // Save the document as HTML
+        document.Save(dataDir + "LayersRendering_out.html", htmlOptions);
+    }
+}
 ```
 
 ## See Also 
