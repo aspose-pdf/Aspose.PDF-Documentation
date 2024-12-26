@@ -184,7 +184,7 @@ private static void ConvertEPUBtoPDFAdv()
     // Convert options
     var options = new Aspose.Pdf.EpubLoadOptions(new SizeF(1190, 1684));
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertEPUBtoPDFAdv_out.pdf");
@@ -487,12 +487,11 @@ private static void ConvertPCLtoPDF()
     // Convert options
     var options = new Aspose.Pdf.PclLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDF.pcl", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertPCLtoPDF_out.pdf");
     }
-}
 ```
 
 You can also monitor the detection of errors during the conversion process. To do this, you need to configure PclLoadOptions object: set or unset SupressErrors.
