@@ -165,7 +165,7 @@ private static void ConvertEPUBtoPDF()
     // Convert options
     var options = new Aspose.Pdf.EpubLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertEPUBtoPDF_out.pdf");
