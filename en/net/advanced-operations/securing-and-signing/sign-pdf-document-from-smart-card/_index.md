@@ -110,7 +110,7 @@ private static void GetSignatureInfo()
             X509Certificate2Collection sel = X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, X509SelectionFlag.SingleSelection);
 
             // Set an external signature settings
-            var externalSignature = new ExternalSignature(sel[0])
+            var externalSignature = new Aspose.Pdf.Forms.ExternalSignature(sel[0])
             {
                 Authority = "Me",
                 Reason = "Reason",

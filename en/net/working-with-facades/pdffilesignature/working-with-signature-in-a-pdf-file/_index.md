@@ -87,7 +87,7 @@ private static void ExtractSignatureInfo()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    string input = dataDir + "DigitallySign.pdf";
+    string input = dataDir + "signed_rsa.pdf";
     string certificateFileName = "extracted_cert.pfx";
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
@@ -134,7 +134,7 @@ private static void ExtractSignatureImage()
     
     using (var signature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        signature.BindPdf(dataDir + "DigitallySign.pdf");
+        signature.BindPdf(dataDir + "ExtractingImage.pdf");
 
         if (signature.ContainsSignature())
         {
@@ -173,7 +173,7 @@ private static void SupressLocationReason()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfFileSignature.BindPdf(dataDir + "sample01.pdf");
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
@@ -181,11 +181,11 @@ private static void SupressLocationReason()
         pdfFileSignature.SignatureAppearance = dataDir + "aspose-logo.png";
 
         // Create any of the three signature types
-        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdfFileSignature.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
         // Save the document
-        pdfFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
 ```
@@ -204,13 +204,13 @@ private static void CustomizationFeaturesForDigitalSign()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfFileSignature.BindPdf(dataDir + "sample01.pdf");
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
 
         // Create any of the three signature types
-        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
         // Create signature appearance
         var signatureCustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
         {
@@ -223,7 +223,7 @@ private static void CustomizationFeaturesForDigitalSign()
 
         pdfFileSignature.Sign(1, true, rect, signature);
         // Save the document
-        pdfFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
 ```
@@ -248,12 +248,12 @@ private static void ChangeLanguageInDigitalSignText()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfFileSignature.BindPdf(dataDir + "sample01.pdf");
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
 
         // Create any of the three signature types
-        var pkcs = new Aspose.Pdf.Forms.PKCS7(dataDir + "test01.pfx", "Aspose2021")
+        var pkcs = new Aspose.Pdf.Forms.PKCS7(dataDir + "rsa_cert.pfx", "12345")
         {
             Reason = "Pruebas Firma",
             ContactInfo = "Contacto Pruebas",
@@ -277,7 +277,7 @@ private static void ChangeLanguageInDigitalSignText()
         // Sign the PDF file
         pdfFileSignature.Sign(1, true, rect, pkcs);
         // Save the document
-        pdfFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
 ```

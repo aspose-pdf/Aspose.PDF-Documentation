@@ -91,7 +91,7 @@ private static void IsPdfSigned()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {      
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         if (pdFileSignature.ContainsSignature())
         {
             Console.WriteLine("Document Signed");
@@ -116,7 +116,7 @@ private static void IsPdfSignedWithGivenSignature()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         if (pdFileSignature.VerifySignature("Signature1"))
         {
             Console.WriteLine("PDF Signed");
@@ -139,7 +139,7 @@ private static void IsPdfSignatureValid()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         if (pdFileSignature.VerifySignature("Signature1"))
         {
             Console.WriteLine("Signature Verified");

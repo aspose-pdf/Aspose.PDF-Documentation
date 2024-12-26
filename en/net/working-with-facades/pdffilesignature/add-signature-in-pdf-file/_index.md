@@ -89,7 +89,7 @@ private static void AddPdfFileSignature()
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdFileSignature.BindPdf(dataDir + "sample01.pdf");
+        pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
@@ -98,11 +98,11 @@ private static void AddPdfFileSignature()
         pdFileSignature.SignatureAppearance = dataDir + "aspose-logo.png";
 
         // Create any of the three signature types
-        PKCS1 signature = new PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+        var signature = new PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdFileSignature.Sign(1, "I'm document author", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
         // Save the document
-        pdFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
 ```
@@ -120,30 +120,30 @@ private static void AddTwoSignature()
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         // Sign with 1st signature
-        pdFileSignature.BindPdf(dataDir + "sample01.pdf");
+        pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for 1st signature location
         System.Drawing.Rectangle rect1 = new System.Drawing.Rectangle(10, 10, 300, 50);
 
         // Create 1st signature object
-        var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+        var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdFileSignature.Sign(1, "I'm document author", "test@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect1, signature1);
-        pdFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
 
         // Sign with 2nd signature
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
 
         // Create a rectangle for 2nd signature location
         System.Drawing.Rectangle rect2 = new System.Drawing.Rectangle(10, 10, 300, 50);
 
         // Create 2nd signature object
-        var signature2 = new Aspose.Pdf.Forms.PKCS1(dataDir + "test02.pfx", "Aspose2021"); // PKCS#1
+        var signature2 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdFileSignature.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
 
         // Save the document
-        pdFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
     }
 }
 ```
@@ -161,13 +161,13 @@ private static void AddPdfFileSignatureField()
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdFileSignature.BindPdf(dataDir + "sample02.pdf");
+        pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create any of the three signature types
-        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "test02.pfx", "Aspose2021")
+        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
         {
             Reason = "Sign as Author",
-            CustomAppearance = new SignatureCustomAppearance
+            CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
             {
                 FontSize = 6,
                 FontFamilyName = "Calibri"
@@ -176,7 +176,7 @@ private static void AddPdfFileSignatureField()
         
         pdFileSignature.Sign("Signature1", signature);
         // Save the document
-        pdFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
 ```
@@ -193,25 +193,25 @@ private static void AddPdfFileSignatureField2()
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfSign.BindPdf(dataDir + "sample03.pdf");
+        pdfSign.BindPdf(dataDir + "input.pdf");
 
         // Create any of the three signature types
-        var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "test01.pfx", "Aspose2021")
+        var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
         {
             Reason = "Sign as Author",
-            CustomAppearance = new SignatureCustomAppearance
+            CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
             {
                 FontSize = 6
             }
         }; // PKCS#1
         pdFileSignature.Sign("Signature1", signature1);
         // Save the document
-        pdFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
 
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
 
         // Create any of the three signature types
-        var signature2 = new Aspose.Pdf.Forms.PKCS1(dataDir + "test02.pfx", "Aspose2021")
+        var signature2 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
         {
             Reason = "Sign as Reviwer",
             CustomAppearance = new SignatureCustomAppearance
@@ -222,7 +222,7 @@ private static void AddPdfFileSignatureField2()
         
         pdFileSignature.Sign("Signature2", signature2);
         // Save the document
-        pdFileSignature.Save(dataDir + "DigitallySign.pdf");
+        pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
     }
 }
 ```

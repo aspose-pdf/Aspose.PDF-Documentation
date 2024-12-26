@@ -112,7 +112,7 @@ The example below creates a PKCS7 non-detached signature with the SHA-1 digest a
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     
-private static void SignDocument(string pfxFilePath, string password)
+private static void SignDocument()
 {    
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
@@ -124,7 +124,7 @@ private static void SignDocument(string pfxFilePath, string password)
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             // Create PKCS#7 object for sign
-            var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
+            var pkcs = new Aspose.Pdf.Forms.PKCS7(dataDir + "rsa_cert.pfx", "12345");
             // Sign PDF file
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
             // Save the document
@@ -174,7 +174,7 @@ private static void Verify()
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open the document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
     {
         // Create an instance of PdfFileSignature for working with signatures in the document
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
@@ -329,7 +329,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
     {   
         sign.BindPdf(dataDir + "input.pdf");
         // Create PKCS#7 object to sign
-        var pkcs7 = new Aspose.Pdf.Forms.PKCS7(string pfxFilePath, string password);// You can use PKCS7Detached with digest algorithm argument
+        var pkcs7 = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);// You can use PKCS7Detached with digest algorithm argument
         // Set the delegate to external sign
         pkcs7.CustomSignHash = CustomSignHash;
         // Sign the file
@@ -396,10 +396,13 @@ To sign a PDF document using ECDSA, the general steps in C# would be:
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
   
-private static void VerifyEcda(string signedPdf)
+private static void VerifyEcda()
 {
-    // Open the document
-    using (var document = new Aspose.Pdf.Document(signedPdf))
+   // The path to the documents directory
+   string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+            
+   // Open the document
+   using (var document = new Aspose.Pdf.Document(dataDir + "signed_ecdsa.pdf"))
     {
         // Create an instance of PdfFileSignature for working with signatures in the document
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))

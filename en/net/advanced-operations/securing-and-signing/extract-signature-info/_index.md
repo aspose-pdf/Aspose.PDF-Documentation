@@ -177,10 +177,13 @@ You can get information about document signature algorithms.
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-private void GetSignaturesInfo(string signedPdfDocument)
+private void GetSignaturesInfo()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+            
     // Open the document
-    using (var document = new Aspose.Pdf.Document(signedPdfDocument))
+    using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
     {
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {

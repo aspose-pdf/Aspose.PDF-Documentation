@@ -95,7 +95,7 @@ private static void SetPrivilegesOnExistingPdfFile()
     {
         // Instantiate Document Privileges object
         // Apply restrictions on all privileges
-        DocumentPrivilege documentPrivilege = DocumentPrivilege.ForbidAll;
+        var documentPrivilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
         // Only allow screen reading
         documentPrivilege.AllowScreenReaders = true;
         // Encrypt the file with User and Owner password

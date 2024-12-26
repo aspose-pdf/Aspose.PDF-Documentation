@@ -91,7 +91,7 @@ private static void RemoveSignature()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         // Get list of signature names
         var sigNames = pdFileSignature.GetSignNames();
         // Remove all the signatures from the PDF file
@@ -121,7 +121,7 @@ private static void RemoveSignatureButKeepField()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {       
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
         pdFileSignature.RemoveSignature("Signature1", false);
 
@@ -143,7 +143,7 @@ private static void RemoveSignatureButKeepField2()
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {       
-        pdFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
         var sigNames = pdFileSignature.GetSignNames();
         foreach (var sigName in sigNames)
