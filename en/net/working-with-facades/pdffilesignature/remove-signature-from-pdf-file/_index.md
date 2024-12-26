@@ -82,22 +82,28 @@ The [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/p
 The following code snippet shows how to remove digital signature from the PDF file.
 
 ```csharp
-public static void RemoveSignature()
-{
-    // Create PdfFileSignature object
-    PdfFileSignature pdfSign = new PdfFileSignature();
-    // Open PDF document
-    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
-    // Get list of signature names
-    var sigNames = pdfSign.GetSignNames();
-    // Remove all the signatures from the PDF file
-    for (int index = 0; index < sigNames.Count; index++)
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void RemoveSignature()
+{  
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        Console.WriteLine($"Removed {sigNames[index]}");
-        pdfSign.RemoveSignature(sigNames[index]);
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
+        // Get list of signature names
+        var sigNames = pdFileSignature.GetSignNames();
+        // Remove all the signatures from the PDF file
+        for (int index = 0; index < sigNames.Count; index++)
+        {
+            Console.WriteLine($"Removed {sigNames[index]}");
+            pdFileSignature.RemoveSignature(sigNames[index]);
+        }
+
+        // Save the document
+        pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
-    // Save updated PDF file
-    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```
 
@@ -106,39 +112,47 @@ public static void RemoveSignature()
 As shown above, the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) method lets you remove signature fields from PDF files. When using this method with versions prior to 9.3.0, both the signature and signature field are removed. Some develoeprs want to remove only the signature and keep the signature field so that it can be used to resign the document. To keep the signature field and only remove the signature, please use the following code snippet.
 
 ```csharp
-public static void RemoveSignatureButKeepField()
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void RemoveSignatureButKeepField()
 {
-    // Create PdfFileSignature object
-    PdfFileSignature pdfSign = new PdfFileSignature();
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {       
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
-    // Open PDF document
-    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
+        pdFileSignature.RemoveSignature("Signature1", false);
 
-    pdfSign.RemoveSignature("Signature1", false);
-
-    // Save updated PDF file
-    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
+        // Save the document
+        pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
+    }
 }
 ```
 
 The following example shows how to remove all signatures from fields.
 
 ```csharp
-public static void RemoveSignatureButKeepField2()
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void RemoveSignatureButKeepField2()
 {
-    // Create PdfFileSignature object
-    PdfFileSignature pdfSign = new PdfFileSignature();
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {       
+        pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
-    // Open PDF document
-    pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
+        var sigNames = pdFileSignature.GetSignNames();
+        foreach (var sigName in sigNames)
+        {
+            pdFileSignature.RemoveSignature(sigName, false);
+        }
 
-    var sigNames = pdfSign.GetSignNames();
-    foreach (var sigName in sigNames)
-    {
-        pdfSign.RemoveSignature(sigName, false);
+        // Save the document
+        pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
-
-    // Save updated PDF file
-    pdfSign.Save(dataDir + "RemoveSignature_out.pdf");
 }
 ```
