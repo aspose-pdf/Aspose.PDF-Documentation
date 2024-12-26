@@ -101,7 +101,7 @@ private static void SetPrivilegesOnExistingPdfFile()
         // Encrypt the file with User and Owner password
         // Need to set the password, so that once the user views the file with user password
         // Only screen reading option is enabled
-        document.Encrypt("user", "owner", documentPrivilege, CryptoAlgorithm.AESx128, false);
+        document.Encrypt("user", "owner", documentPrivilege, Aspose.Pdf.CryptoAlgorithm.AESx128, false);
         // Save the document
         document.Save(dataDir + "SetPrivileges_out.pdf");
     }
@@ -131,7 +131,7 @@ private static void EncryptPdfFile()
     using (var document = new Aspose.Pdf.Document(dataDir + "Encrypt.pdf"))
     {
         // Encrypt PDF
-        document.Encrypt("user", "owner", 0, CryptoAlgorithm.RC4x128);
+        document.Encrypt("user", "owner", 0, Aspose.Pdf.CryptoAlgorithm.RC4x128);
         // Save the document
         document.Save(dataDir + "Encrypt_out.pdf");
     }
@@ -244,7 +244,7 @@ private static void DetermineCorrectPasswordFromArray()
                     }
                 }
             }
-            catch (InvalidPasswordException)
+            catch (Aspose.Pdf.InvalidPasswordException)
             {
                 Console.WriteLine("Password = " + passwords[passwordcount] + "  is not correct");
             }

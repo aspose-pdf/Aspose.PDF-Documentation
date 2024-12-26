@@ -97,12 +97,12 @@ private static void ChangePassword()
     using (var pdfFileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample_encrypted.pdf"))
     {
         // Create PdfFileSecurity object if the document is encrypted
-        if (pdfFileInfo.IsEncrypted)
+        if (pdfFileInfo.IsEncrypted)    
         {
-            using (PdfFileSecurity fileSecurity = new PdfFileSecurity())
+            using (PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
             {
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
-                fileSecurity.ChangePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.Print, KeySize.x256);
+                fileSecurity.ChangePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256);
                 // Save the document
                 fileSecurity.Save(dataDir + "sample_encrtypted1.pdf");
             }

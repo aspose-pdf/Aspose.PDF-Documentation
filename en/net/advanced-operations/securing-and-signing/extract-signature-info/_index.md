@@ -114,6 +114,7 @@ private static void ExtractImagesFromSignatureField()
 
                 using (System.Drawing.Image image = System.Drawing.Bitmap.FromStream(imageStream))
                 {
+                    // Save the image
                     image.Save(dataDir + "output_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
                 }
             }

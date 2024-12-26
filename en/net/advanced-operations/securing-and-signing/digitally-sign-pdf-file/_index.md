@@ -151,7 +151,7 @@ private static void SignDocument(string pfxFilePath, string password)
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
             // Create PKCS#7 detached object for sign
-            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(pfxFilePath, password, DigestHashAlgorithm.Sha256);
+            var pkcs = new Aspose.Pdf.Forms.PKCS7Detached(pfxFilePath, password, Aspose.Pdf.DigestHashAlgorithm.Sha256);
             // Sign PDF file
             signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200),pkcs);
             // Save the document
@@ -259,7 +259,7 @@ private static void SignWithBase64Certificate(string pfxFilePath, string passwor
         var sign = new Aspose.Pdf.Forms.ExternalSignature(base64Str, false);// without Private Key
         sign.ShowProperties = false;
         // Create a delegate to external sign
-        Aspose.Pdf.Forms.SignHash customSignHash = delegate (byte[] signableHash, DigestHashAlgorithm digestHashAlgorithm)
+        Aspose.Pdf.Forms.SignHash customSignHash = delegate (byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
         {
             // Simulated Server Part (This will probably just be sending data and receiving a response)
             var signerCert = new X509Certificate2(pfxFilePath, password, X509KeyStorageFlags.Exportable);// must have Private Key

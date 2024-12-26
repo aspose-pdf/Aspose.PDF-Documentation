@@ -94,11 +94,11 @@ private static void DecryptPDFFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    using(var pdfFileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample_encrypted.pdf"))
+    using (var pdfFileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample_encrypted.pdf"))
     {
         if (pdfFileInfo.IsEncrypted)
         {
-            using(var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+            using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
             {
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
                 // Decrypt PDF document

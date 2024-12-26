@@ -102,12 +102,12 @@ private static void EncryptPDFFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    using(var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
         fileSecurity.BindPdf(dataDir + "input.pdf");
         // Encrypt file using 256-bit encryption
-        fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", Aspose.Pdf.Facades.DocumentPrivilege.Print, KeySize.x256,
-            Algorithm.AES);
+        fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256,
+            Aspose.Pdf.Facades.Algorithm.AES);
         // Save the document
         fileSecurity.Save(dataDir + "sample_encrypted.pdf");
     }

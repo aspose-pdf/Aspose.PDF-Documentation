@@ -233,10 +233,10 @@ private static void SignWithExternalService()
             X509Certificate2 signerCert = GetPublicCertificate();
             
             // Set a certificate and a digest algorithm
-            var signature = new Aspose.Pdf.Forms.ExternalSignature(signerCert, DigestHashAlgorithm.Sha256);
+            var signature = new Aspose.Pdf.Forms.ExternalSignature(signerCert, Aspose.Pdf.DigestHashAlgorithm.Sha256);
 
             // Define a delegate to external sign
-            Aspose.Pdf.Forms.SignHash customSignHash = delegate(byte[] signableHash, DigestHashAlgorithm digestHashAlgorithm)
+            Aspose.Pdf.Forms.SignHash customSignHash = delegate(byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
             {
                 return CallExternalSignatureService(signableHash, digestHashAlgorithm);
             };
@@ -254,7 +254,7 @@ private static X509Certificate2 GetPublicCertificate()
     // Your code to get a public certificate. The certificate can be supplied by a third-party service or a smart card
 }
 
-private static byte[] CallExternalSignatureService(byte[] hash, DigestHashAlgorithm digestHashAlgorithm)
+private static byte[] CallExternalSignatureService(byte[] hash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
 {
     // Call a third-party service that provides a digital signature service
     // The method must return signed data

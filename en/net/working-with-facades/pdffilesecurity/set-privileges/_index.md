@@ -92,7 +92,7 @@ private static void SetPrivilege1()
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    using(PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    using (PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege
@@ -119,7 +119,7 @@ private static void SetPrivilegeWithPassword()
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    using(var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege and passwords
