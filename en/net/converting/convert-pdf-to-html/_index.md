@@ -189,11 +189,22 @@ The default output format for saving images is SVG. During conversion, some imag
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Create HtmlSaveOption with tested feature
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+private static void PdfToHtmlSaveImagesAsPngBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
+           
+    // Create HtmlSaveOption with tested feature
+    var htmlSaveOptions = new HtmlSaveOptions();
+           
+    // Option to save images in PNG format as background for each page.
+    htmlSaveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
 
-// Save images as PNG background for each page
-newOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+       document.Save(dataDir + "imagesAsPngBackground_out.html", htmlSaveOptions);         
+    }
+}
 ```
 
 ### Specifying the Images Folder
