@@ -90,30 +90,41 @@ Also, [Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/
 The following code snippet shows you how to Import FDF format annotations to PDF with Form.ImportFdf() method:
 
 ```csharp
-var fdfPath = Params.InputPath + "test.fdf";
-var templatePath = Params.InputPath + "Empty.pdf";
-var outputPath = Params.OutputPath + "test_form.pdf";
-
-using (var form = new Aspose.Pdf.Facades.Form(templatePath))
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportFDFByForm()
 {
-    using (var fdfInputStream = new FileStream(fdfPath, FileMode.Open))
-    {
-        form.ImportFdf(fdfInputStream);
-    }
+    var fdfPath = Params.InputPath + "test.fdf";
+    var templatePath = Params.InputPath + "Empty.pdf";
+    var outputPath = Params.OutputPath + "test_form.pdf";
 
-    form.Save(outputPath);
+    using (var form = new Aspose.Pdf.Facades.Form(templatePath))
+    {
+        using (var fdfInputStream = new FileStream(fdfPath, FileMode.Open))
+        {
+            form.ImportFdf(fdfInputStream);
+        }
+
+        form.Save(outputPath);
+    }
 }
 ```
 
 The next code snippet shows how to import FDF format annotations to PDF with PdfAnnotationEditor.ImportAnnotationsFromFdf() method:
 
 ```csharp
-var fdfPath = Params.InputPath + "test.fdf";
-var templatePath = Params.InputPath + "Empty.pdf";
-var outputPath = Params.OutputPath + "test_annEditor.pdf";
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportFDFByPdfAnnotationEditor()
+{
+    var fdfPath = Params.InputPath + "test.fdf";
+    var templatePath = Params.InputPath + "Empty.pdf";
+    var outputPath = Params.OutputPath + "test_annEditor.pdf";
 
-var editor = new PdfAnnotationEditor();
-editor.BindPdf(new Document(templatePath));
-editor.ImportAnnotationsFromFdf(fdfPath);
-editor.Save(outputPath);
+    using (var document = new Aspose.Pdf.Document(templatePath))
+    {
+        var editor = new PdfAnnotationEditor();
+        editor.BindPdf(document);
+        editor.ImportAnnotationsFromFdf(fdfPath);
+        editor.Save(outputPath);  
+    }
+}
 ```
