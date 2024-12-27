@@ -147,8 +147,8 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
 
-    string document1Path = dataDir + "document1.pdf";
-    string document2Path = dataDir + "document2.pdf";
+    string document1Path = dataDir + "ConcatenateMultiplePdfFilesUsingMemoryStreams1.pdf";
+    string document2Path = dataDir + "ConcatenateMultiplePdfFilesUsingMemoryStreams2.pdf";
     string resultPdfPath = dataDir + "concatenated_out.pdf";
     
     // Create two file streams to read PDF files
