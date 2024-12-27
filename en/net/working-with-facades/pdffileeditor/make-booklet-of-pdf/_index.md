@@ -86,7 +86,7 @@ private static void MakeBookletOfPdfUsingFilePaths()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make booklet
-    pdfEditor.MakeBooklet(dataDir + "input.pdf", dataDir + "MakeBookletUsingPaths_out.pdf");
+    pdfEditor.MakeBooklet(dataDir + "MakeBookletInput.pdf", dataDir + "MakeBookletUsingPaths_out.pdf");
 }
 ```
 
@@ -103,7 +103,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndFilePaths()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make booklet
-    pdfEditor.MakeBooklet(dataDir + "input.pdf", dataDir + "MakeBookletUsingPageSizeAndPaths_out.pdf", PageSize.A5);
+    pdfEditor.MakeBooklet(dataDir + "MakeBookletInput.pdf", dataDir + "MakeBookletUsingPageSizeAndPaths_out.pdf", PageSize.A5);
 }
 ```
 
@@ -124,7 +124,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
     var leftPages = new int[] { 1, 5 };
     var rightPages = new int[] { 2, 3 };
     // Make booklet
-    pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", PageSize.A5, leftPages, rightPages);
+    pdfEditor.MakeBooklet(dataDir + "MakeBookletMultiplePagesInput.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", PageSize.A5, leftPages, rightPages);
 }
 ```
 
@@ -144,7 +144,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndFilePaths(
     var leftPages = new int[] { 1, 5 };
     var rightPages = new int[] { 2, 3 };
     // Make booklet
-    pdfEditor.MakeBooklet(dataDir + "MultiplePages.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", leftPages, rightPages);
+    pdfEditor.MakeBooklet(dataDir + "MakeBookletMultiplePagesInput.pdf", dataDir + "MakeBookletUsingLeftRightPagesAndPaths_out.pdf", leftPages, rightPages);
 }
 ```
 
@@ -161,7 +161,7 @@ private static void MakeBookletOfPdfUsingStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MakeBookletInput.pdf", FileMode.Open))
     {
         using (var outputStream = new FileStream(dataDir + "MakeBookletUsingStreams_out.pdf", FileMode.Create))
         {
@@ -185,7 +185,7 @@ private static void MakeBookletOfPdfUsingPageSizeAndStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MakeBookletInput.pdf", FileMode.Open))
     {
         using (var outputStream = new FileStream(dataDir + "MakeBookletUsingPageSizeAndStreams_out.pdf", FileMode.Create))
         {
@@ -209,7 +209,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndSt
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MakeBookletMultiplePagesInput.pdf", FileMode.Open))
     {
         using (var outputStream = new FileStream(dataDir + "MakeBookletUsingPageSizeLeftRightPagesAndStreams_out.pdf", FileMode.Create))
         {
@@ -236,7 +236,7 @@ private static void MakeBookletOfPdfUsingSpecifiedLeftAndRightPagesAndStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MakeBookletMultiplePagesInput.pdf", FileMode.Open))
     {
         using (var outputStream = new FileStream(dataDir + "MakeBookletUsingLeftRightPagesAndStreams_out.pdf", FileMode.Create))
         {
