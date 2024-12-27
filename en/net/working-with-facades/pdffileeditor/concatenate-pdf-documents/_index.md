@@ -125,12 +125,10 @@ private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Create PdfFileEditor object
     var pfe = new Aspose.Pdf.Facades.PdfFileEditor();
-    // Get files from dataDir
-    string[] files = Directory.GetFiles(dataDir);
     // Setting CopyOutlines to false
     pfe.CopyOutlines = false;
     // Concatenate files
-    pfe.Concatenate(files, dataDir + "ConcatenateUsingPath_CopyOutlinesDisabled_out.pdf");
+    pfe.Concatenate(dataDir + "ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled1.pdf", dataDir + "ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled2.pdf", dataDir + "ConcatenateUsingPath_CopyOutlinesDisabled_out.pdf");
 }
 ```
 
