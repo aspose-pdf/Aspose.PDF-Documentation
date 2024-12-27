@@ -561,11 +561,10 @@ In case of the plain text file, we can use the following technique:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPlainTextFileToPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Read the source text file
-    using (var streamReader = new StreamReader(dataDir + "log.txt"))
+    using (var streamReader = new StreamReader(dataDir + "TextToPDFInput.txt"))
     {
         // Instantiate a Document object
         using (var document = new Aspose.Pdf.Document())
@@ -577,7 +576,7 @@ private static void ConvertPlainTextFileToPDF()
             // Add a new text paragraph in paragraphs collection and pass the TextFragment object
             page.Paragraphs.Add(text);
             // Save document in PDF format
-            document.Save(dataDir + "TextToPDF_out.pdf"); 
+            document.Save(dataDir + "TextToPDF_out.pdf");
         }
     }
 }
