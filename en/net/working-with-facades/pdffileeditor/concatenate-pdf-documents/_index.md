@@ -407,15 +407,15 @@ private static void CompleteCode()
     // Create a MemoryStream object to hold the resultant PDf file
     using (var concatenatedStream = new MemoryStream())
     {
-        using (var fs1 = new FileStream(dataDir + "input1.pdf", FileMode.Open))
+        using (var fs1 = new FileStream(dataDir + "ConcatenateInput1.pdf", FileMode.Open))
         {
-            using (var fs2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+            using (var fs2 = new FileStream(dataDir + "ConcatenateInput2.pdf", FileMode.Open))
             {
                 // Save concatenated output file
                 pdfEditor.Concatenate(fs1, fs2, concatenatedStream);
             }
         }
-        
+
         using (var concatenatedPdfDocument = new Aspose.Pdf.Document(concatenatedStream))
         {
             // Insert a blank page at the beginning of concatenated file to display Table of Contents
@@ -436,7 +436,8 @@ private static void CompleteCode()
 
                     // Set Text Stamp to display string Table Of Contents
                     var stamp = new Aspose.Pdf.Facades.Stamp();
-                    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", System.Drawing.Color.Maroon, System.Drawing.Color.Transparent, Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 18));
+                    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", System.Drawing.Color.Maroon, System.Drawing.Color.Transparent,
+                        Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 18));
                     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
                     stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(documentWithBlankPage).GetPageWidth(1) / 3, 700);
                     // Set particular pages
@@ -446,7 +447,8 @@ private static void CompleteCode()
 
                     // Create stamp text for first item in Table Of Contents
                     var document1Link = new Aspose.Pdf.Facades.Stamp();
-                    document1Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("1 - Link to Document 1", System.Drawing.Color.Black, System.Drawing.Color.Transparent, Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 12));
+                    document1Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("1 - Link to Document 1", System.Drawing.Color.Black, System.Drawing.Color.Transparent,
+                        Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 12));
                     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
                     document1Link.SetOrigin(150, 650);
                     // Set particular pages on which stamp should be displayed
@@ -456,7 +458,8 @@ private static void CompleteCode()
 
                     // Create stamp text for second item in Table Of Contents
                     var document2Link = new Aspose.Pdf.Facades.Stamp();
-                    document2Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("2 - Link to Document 2", System.Drawing.Color.Black, System.Drawing.Color.Transparent, Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 12));
+                    document2Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("2 - Link to Document 2", System.Drawing.Color.Black, System.Drawing.Color.Transparent,
+                        Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 12));
                     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
                     document2Link.SetOrigin(150, 620);
                     // Set particular pages on which stamp should be displayed
@@ -477,7 +480,8 @@ private static void CompleteCode()
                     // Create link for Second document
                     // We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
                     // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
-                    contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 620, 100, 20), new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
+                    contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 620, 100, 20),
+                        new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
                     // Save updated PDF
                     contentEditor.Save(dataDir + "Concatenated_Table_Of_Contents_out.pdf");
                 }
@@ -505,6 +509,6 @@ private static void ConcatenatePdfFilesInFolder()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Call Concatenate method of PdfFileEditor object to concatenate all input files
     // Into a single output file
-    pdfEditor.Concatenate(fileEntries, dataDir + "concatenate_out.pdf");
+    pdfEditor.Concatenate(fileEntries, dataDir + "ConcatenatePdfFilesInFolder_out.pdf");
 }
 ```
