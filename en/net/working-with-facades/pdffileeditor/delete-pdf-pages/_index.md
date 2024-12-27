@@ -86,7 +86,7 @@ private static void DeletePages()
     // Array of pages to delete
     var pagesToDelete = new int[] { 1, 2 };
     // Delete pages
-    pdfEditor.Delete(dataDir + "input.pdf", pagesToDelete, dataDir + "DeletePagesUsingFilePath_out.pdf");
+    pdfEditor.Delete(dataDir + "DeletePagesInput.pdf", pagesToDelete, dataDir + "DeletePagesUsingFilePath_out.pdf");
 }
 ```
 
@@ -103,12 +103,12 @@ private static void DeletePagesUsingStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "DeletePagesInput.pdf", FileMode.Open))
     {
         using (var outputStream = new FileStream(dataDir + "DeletePagesUsingStream_out.pdf", FileMode.Create))
         {
             // Array of pages to delete
-            var pagesToDelete = new int[] { 1, 3 };
+            var pagesToDelete = new int[] { 1, 2 };
             // Delete pages
             pdfEditor.Delete(inputStream, pagesToDelete, outputStream);
         }
