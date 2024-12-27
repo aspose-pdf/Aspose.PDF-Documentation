@@ -86,8 +86,11 @@ By using the Rotation property of [TextFragment](https://reference.aspose.com/pd
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void RotateTextInsidePDF(string outputFilePath)
+private static void RotateTextInsidePDF()
 {
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Initialize document object
     using (var document = new Aspose.Pdf.Document())
     {
@@ -120,7 +123,7 @@ private static void RotateTextInsidePDF(string outputFilePath)
         textBuilder.AppendText(textFragment2);
         textBuilder.AppendText(textFragment3);
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
     }
 }
 ```
@@ -129,9 +132,11 @@ private static void RotateTextInsidePDF(string outputFilePath)
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void RotateTextInsidePDF(string outputFilePath)
+private static void RotateTextInsidePDF()
 {
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Initialize document object
     using (var document = new Aspose.Pdf.Document())
     {
@@ -167,7 +172,7 @@ private static void RotateTextInsidePDF(string outputFilePath)
         // Append the text paragraph to the PDF page
         textBuilder.AppendParagraph(paragraph);
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
     }
 }
 ```
@@ -176,38 +181,41 @@ private static void RotateTextInsidePDF(string outputFilePath)
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void RotateTextInsidePDF(string outputFilePath)
+private static void RotateTextInsidePDF()
 {
-	// Initialize document object
-	using (var document = new Aspose.Pdf.Document())
-	{
-		// Get particular page
-		var page = document.Pages.Add();
-		// Create text fragment
-		var textFragment1 = new Aspose.Pdf.Text.TextFragment("main text");
-		// Set text properties
-		textFragment1.TextState.FontSize = 12;
-		textFragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-		// Create text fragment
-		var textFragment2 = new Aspose.Pdf.Text.TextFragment("rotated text");
-		// Set text properties
-		textFragment2.TextState.FontSize = 12;
-		textFragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-		// Set rotation
-		textFragment2.TextState.Rotation = 315;
-		// Create text fragment
-		var textFragment3 = new Aspose.Pdf.Text.TextFragment("rotated text");
-		// Set text properties
-		textFragment3.TextState.FontSize = 12;
-		textFragment3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-		// Set rotation
-		textFragment3.TextState.Rotation = 270;
-		page.Paragraphs.Add(textFragment1);
-		page.Paragraphs.Add(textFragment2);
-		page.Paragraphs.Add(textFragment3);
-		// Save document
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Initialize document object
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get particular page
+        var page = document.Pages.Add();
+        // Create text fragment
+        var textFragment1 = new Aspose.Pdf.Text.TextFragment("main text");
+        // Set text properties
+        textFragment1.TextState.FontSize = 12;
+        textFragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Create text fragment
+        var textFragment2 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        // Set text properties
+        textFragment2.TextState.FontSize = 12;
+        textFragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Set rotation
+        textFragment2.TextState.Rotation = 315;
+        // Create text fragment
+        var textFragment3 = new Aspose.Pdf.Text.TextFragment("rotated text");
+        // Set text properties
+        textFragment3.TextState.FontSize = 12;
+        textFragment3.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        // Set rotation
+        textFragment3.TextState.Rotation = 270;
+        page.Paragraphs.Add(textFragment1);
+        page.Paragraphs.Add(textFragment2);
+        page.Paragraphs.Add(textFragment3);
+        // Save document
+        document.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+    }
 }
 ```
 
@@ -215,9 +223,11 @@ private static void RotateTextInsidePDF(string outputFilePath)
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void RotateTextInsidePDF(string outputFilePath)
+private static void RotateTextInsidePDF()
 {
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Initialize document object
     using (var document = new Aspose.Pdf.Document())
     {
@@ -260,7 +270,7 @@ private static void RotateTextInsidePDF(string outputFilePath)
             textBuilder.AppendParagraph(paragraph);
         }
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
     }
 }
 ```

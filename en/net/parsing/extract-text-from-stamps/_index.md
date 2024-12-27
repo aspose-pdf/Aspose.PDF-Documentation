@@ -88,19 +88,21 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractText(string inputFilePath)
+private static void ExtractText()
 {
-	// Open document
-	using (var document = new Aspose.Pdf.Document(inputFilePath))
-	{
-		Aspose.Pdf.Annotations.Annotation item = document.Pages[1].Annotations[1];
-		if (item is Aspose.Pdf.Annotations.StampAnnotation annot)
-		{
-			var absorber = new Aspose.Pdf.Text.TextAbsorber();
-			Aspose.Pdf.XForm appearance = annot.Appearance["N"];
-			absorber.Visit(appearance);
-			Console.WriteLine(absorber.Text);
-		}
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractStampText.pdf"))
+    {
+        Aspose.Pdf.Annotations.Annotation item = document.Pages[1].Annotations[1];
+        if (item is Aspose.Pdf.Annotations.StampAnnotation annot)
+        {
+            var absorber = new Aspose.Pdf.Text.TextAbsorber();
+            Aspose.Pdf.XForm appearance = annot.Appearance["N"];
+            absorber.Visit(appearance);
+            Console.WriteLine(absorber.Text);
+        }
+    }
 }
 ```

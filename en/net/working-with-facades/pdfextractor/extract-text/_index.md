@@ -80,34 +80,37 @@ For example, in order to extract text you can use three methods i.e. [ExtractTex
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractText(string inputFilePath, string outputFolderPath)
+private static void ExtractText()
 {
-	bool wholeText = true;
-	// Create an object of the PdfExtractor class
-	using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
-	{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-		// Bind the input PDF
-		pdfExtractor.BindPdf(inputFilePath);
+    bool wholeText = true;
+    // Create an object of the PdfExtractor class
+    using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
+    {
 
-		// ExtractText
-		pdfExtractor.ExtractText();
+        // Bind the input PDF
+        pdfExtractor.BindPdf(dataDir + "sample.pdf");
 
-		if (!wholeText)
-		{
-			pdfExtractor.GetText(inputFilePath);
-		}
-		else
-		{
-			// Extract the text into separate files
-			int pageNumber = 1;
-			while (pdfExtractor.HasNextPageText())
-			{
-				pdfExtractor.GetNextPageText($"{outputFolderPath}\\sample{pageNumber:D3}.txt");
-				pageNumber++;
-			}
-		}
-	}
+        // ExtractText
+        pdfExtractor.ExtractText();
+
+        if (!wholeText)
+        {
+            pdfExtractor.GetText(dataDir + "sample.txt");
+        }
+        else
+        {
+            // Extract the text into separate files
+            int pageNumber = 1;
+            while (pdfExtractor.HasNextPageText())
+            {
+                pdfExtractor.GetNextPageText($"{dataDir}\\sample{pageNumber:D3}.txt");
+                pageNumber++;
+            }
+        }
+    }
 }
 ```
 
@@ -115,35 +118,38 @@ To Extract the Text Extraction Mode use the following code:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractTextExtractonMode(string inputFilePath, string outputFilePath, string outputFolderPath)
+private static void ExtractTextExtractonMode()
 {
-	bool wholeText = true;
-	// Create an object of the PdfExtractor class
-	using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
-	{
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-		// Bind the input PDF
-		pdfExtractor.BindPdf(inputFilePath);
+    bool wholeText = true;
+    // Create an object of the PdfExtractor class
+    using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
+    {
 
-		// ExtractText
-		// pdfExtractor.ExtractTextMode = 0; //pure mode
-		pdfExtractor.ExtractTextMode = 1; //raw mode
-		pdfExtractor.ExtractText();
+        // Bind the input PDF
+        pdfExtractor.BindPdf(dataDir + "ExtractTextExtractonMode.pdf");
 
-		if (!wholeText)
-		{
-			pdfExtractor.GetText(outputFilePath);
-		}
-		else
-		{
-			// Extract the text into separate files
-			int pageNumber = 1;
-			while (pdfExtractor.HasNextPageText())
-			{
-				pdfExtractor.GetNextPageText($"{outputFolderPath}\\sample{pageNumber:D3}.txt");
-				pageNumber++;
-			}
-		}
-	}
+        // ExtractText
+        // pdfExtractor.ExtractTextMode = 0; //pure mode
+        pdfExtractor.ExtractTextMode = 1; //raw mode
+        pdfExtractor.ExtractText();
+
+        if (!wholeText)
+        {
+            pdfExtractor.GetText(dataDir + "ExtractTextExtractonMode_out.txt");
+        }
+        else
+        {
+            // Extract the text into separate files
+            int pageNumber = 1;
+            while (pdfExtractor.HasNextPageText())
+            {
+                pdfExtractor.GetNextPageText($"{dataDir}\\sample{pageNumber:D3}.txt");
+                pageNumber++;
+            }
+        }
+    }
 }
 ```

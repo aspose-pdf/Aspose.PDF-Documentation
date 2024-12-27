@@ -86,15 +86,18 @@ Following code snippet shows you how to fulfill this requirement.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CheckIfPdfContainsTextOrImages(string inputFilePath)
+private static void CheckIfPdfContainsTextOrImages()
 {
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Instantiate a memoryStream object to hold the extracted text from Document
     MemoryStream ms = new MemoryStream();
     // Instantiate PdfExtractor object
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
         // Bind the input PDF document to extractor
-        extractor.BindPdf(inputFilePath);
+        extractor.BindPdf(dataDir + "FilledForm.pdf");
         // Extract text from the input PDF document
         extractor.ExtractText();
         // Save the extracted text to a text file
