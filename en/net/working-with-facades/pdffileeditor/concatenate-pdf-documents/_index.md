@@ -288,8 +288,8 @@ private static void ConcatenatePdfFormsAndKeepFieldsUnique()
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Set input and output file paths
-    var inputFile1 = dataDir + "inFile1.pdf";
-    var inputFile2 = dataDir + "inFile2.pdf";
+    var inputFile1 = dataDir + "ConcatenatePdfFormsAndKeepFieldsUnique1.pdf";
+    var inputFile2 = dataDir + "ConcatenatePdfFormsAndKeepFieldsUnique2.pdf";
     var outFile = dataDir + "ConcatenatePDFForms_out.pdf";
     // Open documents
     var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
