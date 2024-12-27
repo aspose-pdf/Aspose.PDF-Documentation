@@ -239,7 +239,7 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     var fileNumber = 1;
     // Split to pages
-    var outBuffer = pdfEditor.SplitToPages(dataDir + "input.pdf");
+    var outBuffer = pdfEditor.SplitToPages(dataDir + "splitPdfToIndividualPagesInput.pdf");
     // Save individual files
     foreach (var outStream in outBuffer)
     {
@@ -266,7 +266,7 @@ private static void SplitPdfToIndividualPagesUsingStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create input stream
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "splitPdfToIndividualPagesInput.pdf", FileMode.Open))
     {
         var fileNumber = 1;
         // Split to pages
