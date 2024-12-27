@@ -234,7 +234,7 @@ private static void ConcatenateArrayOfPdfFilesUsingStreams()
     var resultPdfPath = dataDir + "ConcatenateArrayOfPdfUsingStreams_out.pdf";
     
     // Create PdfFileEditor object
-    PdfFileEditor pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Output stream
     using (var outputStream = new FileStream(resultPdfPath, FileMode.Create))
     {
@@ -369,7 +369,7 @@ private static void AddTextStampForTableOfContents()
     var inputPdfFile = Path.Combine(dataDir, "input1.pdf");
     // Set Text Stamp to display string Table Of Contents
     var stamp = new Aspose.Pdf.Facades.Stamp();
-    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
+    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", System.Drawing.Color.Maroon, System.Drawing.Color.Transparent, Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 18));
     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
     stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(inputPdfFile).GetPageWidth(1) / 3, 700);
     // Set particular pages
@@ -392,7 +392,7 @@ private static void CreateLocalLinks()
     // Bind the PDF file in which we added the blank page
     contentEditor.BindPdf(dataDir + "Concatenated_Table_Of_Contents.pdf");
     // Create link for first document
-    contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
+    contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);
 }
 ```
 
@@ -438,7 +438,7 @@ private static void CompleteCode()
 
                     // Set Text Stamp to display string Table Of Contents
                     var stamp = new Aspose.Pdf.Facades.Stamp();
-                    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", Color.Maroon, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
+                    stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", System.Drawing.Color.Maroon, System.Drawing.Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 18));
                     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
                     stamp.SetOrigin(new Aspose.Pdf.Facades.PdfFileInfo(documentWithBlankPage).GetPageWidth(1) / 3, 700);
                     // Set particular pages
@@ -448,7 +448,7 @@ private static void CompleteCode()
 
                     // Create stamp text for first item in Table Of Contents
                     var document1Link = new Aspose.Pdf.Facades.Stamp();
-                    document1Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("1 - Link to Document 1", Color.Black, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
+                    document1Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("1 - Link to Document 1", System.Drawing.Color.Black, System.Drawing.Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
                     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
                     document1Link.SetOrigin(150, 650);
                     // Set particular pages on which stamp should be displayed
@@ -458,7 +458,7 @@ private static void CompleteCode()
 
                     // Create stamp text for second item in Table Of Contents
                     var document2Link = new Aspose.Pdf.Facades.Stamp();
-                    document2Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("2 - Link to Document 2", Color.Black, Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
+                    document2Link.BindLogo(new Aspose.Pdf.Facades.FormattedText("2 - Link to Document 2", System.Drawing.Color.Black, System.Drawing.Color.Transparent, FontStyle.Helvetica, EncodingType.Winansi, true, 12));
                     // Specify the origin of Stamp. We are getting the page width and specifying the X coordinate for stamp
                     document2Link.SetOrigin(150, 620);
                     // Set particular pages on which stamp should be displayed
@@ -475,12 +475,11 @@ private static void CompleteCode()
                     // Bind the PDF file in which we added the blank page
                     contentEditor.BindPdf(documentWithTocHeading);
                     // Create link for first document
-                    contentEditor.CreateLocalLink(new Rectangle(150, 650, 100, 20), 2, 1, Color.Transparent);
+                    contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);
                     // Create link for Second document
                     // We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
                     // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
-                    contentEditor.CreateLocalLink(new Rectangle(150, 620, 100, 20), new PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, Color.Transparent);
-
+                    contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 620, 100, 20), new PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
                     // Save updated PDF
                     contentEditor.Save(dataDir + "Concatenated_Table_Of_Contents.pdf");
                 }
