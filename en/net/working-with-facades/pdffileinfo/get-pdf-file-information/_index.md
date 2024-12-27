@@ -78,23 +78,31 @@ In order to get file specific information of a PDF file, you need to create an o
 The following code snippet shows you how to get PDF file information.
 
 ```csharp
-public static void GetPdfInfo()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPdfInfo()
 {
-    // Open document
-    PdfFileInfo fileInfo = new PdfFileInfo(dataDir + "sample.pdf");
-    // Get PDF information
-    Console.WriteLine("Subject: {0}", fileInfo.Subject);
-    Console.WriteLine("Title: {0}", fileInfo.Title);
-    Console.WriteLine("Keywords: {0}", fileInfo.Keywords);
-    Console.WriteLine("Creator: {0}", fileInfo.Creator);
-    Console.WriteLine("Creation Date: {0}", fileInfo.CreationDate);
-    Console.WriteLine("Modification Date: {0}", fileInfo.ModDate);
-    // Find whether is it valid PDF and it is encrypted as well
-    Console.WriteLine("Is Valid PDF: {0}", fileInfo.IsPdfFile);
-    Console.WriteLine("Is Encrypted: {0}", fileInfo.IsEncrypted);
+    // Define the directory for input files
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    Console.WriteLine("Page width:{0}", fileInfo.GetPageWidth(1));
-    Console.WriteLine("Page height:{0}", fileInfo.GetPageHeight(1));
+    // Open the PDF document
+    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf"))
+    {
+        // Get and display PDF information
+        Console.WriteLine("Subject: {0}", fileInfo.Subject);
+        Console.WriteLine("Title: {0}", fileInfo.Title);
+        Console.WriteLine("Keywords: {0}", fileInfo.Keywords);
+        Console.WriteLine("Creator: {0}", fileInfo.Creator);
+        Console.WriteLine("Creation Date: {0}", fileInfo.CreationDate);
+        Console.WriteLine("Modification Date: {0}", fileInfo.ModDate);
+
+        // Check if the file is a valid PDF and if it is encrypted
+        Console.WriteLine("Is Valid PDF: {0}", fileInfo.IsPdfFile);
+        Console.WriteLine("Is Encrypted: {0}", fileInfo.IsEncrypted);
+
+        // Get dimensions of the first page
+        Console.WriteLine("Page width: {0}", fileInfo.GetPageWidth(1));
+        Console.WriteLine("Page height: {0}", fileInfo.GetPageHeight(1));
+    }
 }
 ```
 
@@ -103,21 +111,28 @@ public static void GetPdfInfo()
 In order to get information, we use the [Header](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/header) property. With 'Hashtable'  we get all the possible values.
 
 ```csharp
-public static void GetMetaInfo()
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetMetaInfo()
 {
-    // Create instance of PdfFileInfo object
-    Aspose.Pdf.Facades.PdfFileInfo fInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "SetMetaInfo_out.pdf");
-    // Retrieve all existing custom attributes
-    Hashtable hTable = new Hashtable(fInfo.Header);
+    // Define the directory for input files
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    IDictionaryEnumerator enumerator = hTable.GetEnumerator();
-    while (enumerator.MoveNext())
+    // Create an instance of PdfFileInfo object
+    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "SetMetaInfo_out.pdf"))
     {
-        string output = enumerator.Key.ToString() + " " + enumerator.Value;
-        Console.WriteLine(output);
-    }
+        // Retrieve all existing custom attributes
+        var hashTable = new System.Collections.Hashtable(fileInfo.Header);
 
-    // Retrieve one custom attributes
-    Console.WriteLine(fInfo.GetMetaInfo("Reviewer"));
+        // Enumerate and display all custom attributes
+        var enumerator = hashTable.GetEnumerator();
+        while (enumerator.MoveNext())
+        {
+            string output = $"{enumerator.Key} {enumerator.Value}";
+            Console.WriteLine(output);
+        }
+
+        // Retrieve and display a specific custom attribute
+        Console.WriteLine("Reviewer: " + fileInfo.GetMetaInfo("Reviewer"));
+    }
 }
 ```

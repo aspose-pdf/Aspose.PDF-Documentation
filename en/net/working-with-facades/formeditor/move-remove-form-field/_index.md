@@ -78,12 +78,19 @@ draft: false
 If you want to move a form field to a new location then you can use [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class. You only need to provide the field name and new location of this field to the [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) method. You also need to save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class. The following code snippet shows you how to move a form field in a new location in a PDF file.
 
 ```csharp
-public static void MoveField()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MoveField()
 {
-    var editor = new FormEditor();
-    editor.BindPdf(dataDir + "Sample-Form-05.pdf");
-    editor.MoveField("Last Name", 262.56f, 496.75f, 382.28f, 514.03f);
-    editor.Save(dataDir + "Sample-Form-05-mod.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the document
+        editor.BindPdf(dataDir + "MoveField.pdf");
+        editor.MoveField("textbox1", 262.56f, 496.75f, 382.28f, 514.03f);
+        // Save the document
+        editor.Save(dataDir + "MoveField_out.pdf");
+    }
 }
 ```
 
@@ -92,13 +99,19 @@ public static void MoveField()
 In order to delete a form field from an existing PDF file, you can use RemoveField method of FormEditor class. This method takes only one argument: field name. You need to create an object of FormEditor class, call [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) method to remove a particular field from the PDF and then call the Save method to save the updated PDF file. The following code snippet shows you how to delete form fields from an existing PDF file.
 
 ```csharp
-public static void RemoveFields()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveFields()
 {
-    var editor = new FormEditor();
-    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
-    editor.RemoveField("First Name");
-    editor.RemoveField("Last Name");
-    editor.Save(dataDir + "Sample-Form-01-updated.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the document
+        editor.BindPdf(dataDir + "ModifyFormField.pdf");
+        editor.RemoveField("textbox1");
+        // Save the document
+        editor.Save(dataDir + "RemoveField_out.pdf");
+    }
 }
 ```
 
@@ -107,12 +120,18 @@ public static void RemoveFields()
 Also you can rename your field using [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class.
 
 ```csharp
-public static void RenameFields()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RenameFields()
 {
-    var editor = new FormEditor();
-    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
-    editor.RenameField("Last Name", "LastName");
-    editor.RenameField("First Name", "FirstName");
-    editor.Save(dataDir + "Sample-Form-01-updated.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    using (var editor = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Open the document
+        editor.BindPdf(dataDir + "ModifyFormField.pdf");
+        editor.RenameField("textbox1", "FirstName");
+        // Save the document
+        editor.Save(dataDir + "RenameField_out.pdf");
+    }
 }
 ```

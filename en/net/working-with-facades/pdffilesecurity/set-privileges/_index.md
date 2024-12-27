@@ -79,38 +79,54 @@ draft: false
 To set a PDF file's privileges, create a [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and call the SetPrivilege method. You can specify the privileges using the DocumentPrivilege object and then pass this object to the SetPrivilege method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```csharp
-public static void SetPrivilege1()
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void SetPrivilege1()
 {
-    // Create DocumentPrivileges object
-    DocumentPrivilege privilege = DocumentPrivilege.ForbidAll;
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    // Create DocumentPrivileges object and set needed privileges
+    var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    // Create PdfFileSecurity object
-    PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(dataDir + "sample.pdf");
-    fileSecurity.SetPrivilege(privilege);
-    fileSecurity.Save(dataDir + "sample_privileges.pdf");
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        fileSecurity.BindPdf(dataDir + "sample.pdf");
+        // Set privilege
+        fileSecurity.SetPrivilege(privilege);
+        // Save the document
+        fileSecurity.Save(dataDir + "sample_privileges.pdf");
+    }
 }
 ```
 
 See the following method with specifying a password:
 
 ```csharp
-public static void SetPrivilege2()
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void SetPrivilegeWithPassword()
 {
-    // Create DocumentPrivileges object
-    DocumentPrivilege privilege = DocumentPrivilege.ForbidAll;
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    // Create DocumentPrivileges object and set needed privileges
+    var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    // Create PdfFileSecurity object
-    PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(dataDir + "sample.pdf");
-    fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
-    fileSecurity.Save(dataDir + "sample_privileges.pdf");
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        fileSecurity.BindPdf(dataDir + "sample.pdf");
+        // Set privilege and passwords
+        fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
+        // Save the document
+        fileSecurity.Save(dataDir + "sample_privileges.pdf");
+    }
 }
 ```
 
@@ -130,17 +146,22 @@ Starting Aspose.PDF for .NET 9.5.0, names of following methods are updated. Plea
 The following code shows ho to remove usage rights from the document:
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
-string input = dataDir + "DigitallySign.pdf";
-using (PdfFileSignature pdfSign = new PdfFileSignature())
-{
-    pdfSign.BindPdf(input);
-    if (pdfSign.ContainsUsageRights())
-    {
-        pdfSign.RemoveUsageRights();
-    }
+// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-    pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
+private static void RemoveExtendedRights()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
+    
+    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
+        if (pdfSign.ContainsUsageRights())
+        {
+            pdfSign.RemoveUsageRights();
+        }
+        // Save the document
+        pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
+    }
 }
 ```

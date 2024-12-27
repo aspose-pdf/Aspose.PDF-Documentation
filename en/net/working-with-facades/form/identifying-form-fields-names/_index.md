@@ -92,4 +92,44 @@ The solution to this problem is Box property in [FormFieldFacade](https://refere
 
 In [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace we have a class named [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) which provides the capability to manipulate PDF forms. Open a pdf form; add a text field beneath every existing form field and save the Pdf form with new name.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-IdentifyFormFields-IdentifyFormFields.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void IdentifyFormFieldsNames()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // First a input pdf file should be assigned
+    var form = new Aspose.Pdf.Facades.Form(dataDir + "FilledForm.pdf");
+    // Get all field names
+    var allfields = form.FieldNames;
+    // Create an array which will hold the location coordinates of Form fields
+    var box = new System.Drawing.Rectangle[allfields.Length];
+    for (int i = 0; i < allfields.Length; i++)
+    {
+        // Get the appearance attributes of each field, consequtively
+        var facade = form.GetFieldFacade(allfields[i]);
+        // Box in FormFieldFacade class holds field's location
+        box[i] = facade.Box;
+    }
+    // Save the document
+    form.Save(dataDir + "IdentifyFormFields_1_out.pdf");
+
+    // Create a new document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
+    {
+        // Now we need to add a textfield just upon the original one
+        using (var editor = new Aspose.Pdf.Facades.FormEditor(document))
+        {
+            for (int i = 0; i < allfields.Length; i++)
+            {
+                // Add text field beneath every existing form field
+                editor.AddField(Aspose.Pdf.Facades.FieldType.Text, 
+                "TextField" + i, allfields[i], 1, 
+                box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
+            }
+            // Save the document
+            editor.Save(dataDir + "IdentifyFormFields_out.pdf");
+        }
+    }
+}
+```

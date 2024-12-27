@@ -83,6 +83,44 @@ In this article, we’ll show you how to justify text in a textbox field in a PD
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class in [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) offers the capability to decorate a PDF form field. Now, if your requirement is to justify the text in a textbox field, you can easily achieve that using [AlignJustified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade/fields/alignjustified) value of [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade) enumeration and calling the [FormEditor.DecorateField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/decoratefield/index) method. In the below example, first we will fill a Textbox Field using the [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) method of [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) class. After that we will use FormEditor class to justify the Text in the Textbox Field. The following code snippet shows you how to justify text in a Textbox Field.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-JustifyText-JustifyText.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void JustifyTextInTextboxField()
+{
+    // The path to the documents directory 
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    // Open the document
+    using (var source = File.Open(dataDir + "JustifyText.pdf", FileMode.Open))
+    {
+        using (var ms = new MemoryStream())
+        {
+            // Create Form Object
+            var form = new Aspose.Pdf.Facades.Form();
+            // Open Source File
+            form.BindPdf(source);
+            // Fill Text Field
+            form.FillField("Text1", "Thank you for using Aspose");
+            // Save the document in Memory Stream
+            form.Save(ms);
+            ms.Seek(0, SeekOrigin.Begin);
 
+            using (var dest = new FileStream(dataDir + "JustifyText_out.pdf", FileMode.Create))
+            {
+                // Create formEditor Object
+                using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
+                {
+                    // Open PDF from memory stream
+                    formEditor.BindPdf(ms);
+                    // Set Text Alignment as Justified
+                    formEditor.Facade.Alignment = Aspose.Pdf.Facades.FormFieldFacade.AlignJustified;
+                    // Decorate form field
+                    formEditor.DecorateField();
+                    // Save the resultant file
+                    formEditor.Save(dest);
+                }
+            }
+        }
+    }
+}
+```
 Please note that justified alignment is not supported by PDF that's why text will be aligned left when you input the text in the Textbox Field. But when field is not active text is justified.

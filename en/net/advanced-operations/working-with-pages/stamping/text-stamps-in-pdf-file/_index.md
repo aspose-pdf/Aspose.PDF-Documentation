@@ -198,6 +198,62 @@ private static void FillStrokeTextAsStampInPdfFile()
 }
 ```
 
+## Add text stamp and automatically adjust the font size
+
+The following code snippet demonstrates how to add a text stamp to a PDF file and automatically adjust the font size to fit the stamp rectangle.
+
+```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStamp()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    //Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        stamp.Width = 400;
+        stamp.Height = 200;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        //Save document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStamp_out.pdf");
+    }
+}
+```
+The following code snippet demonstrates how to add a text stamp to a PDF file and automatically adjust the font size to fit the stamp rectangle. The stamp rectangle defaults to the page size.
+
+```cs
+private static void AutoSetTheFontSizeOfTextStampToFitPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        //Save document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStampToFItPage_out.pdf");
+    }
+}
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
