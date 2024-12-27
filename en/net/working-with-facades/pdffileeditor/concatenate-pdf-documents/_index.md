@@ -226,11 +226,11 @@ private static void ConcatenateArrayOfPdfFilesUsingStreams()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
-    
-    var document1Path = dataDir + "document1.pdf";
-    var document2Path = dataDir + "document2.pdf";
+
+    var document1Path = dataDir + "Concatenate1.pdf";
+    var document2Path = dataDir + "Concatenate2.pdf";
     var resultPdfPath = dataDir + "ConcatenateArrayOfPdfUsingStreams_out.pdf";
-    
+
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Output stream
