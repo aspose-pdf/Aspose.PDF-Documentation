@@ -95,22 +95,25 @@ To create a PDF file using C#, the following steps can be used.
 1. Save the resultant PDF document.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CreateHelloWorldPdf()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
     // Initialize document object
-    var document = new Aspose.Pdf.Document();
+    using(var document = new Aspose.Pdf.Document())
+	{
+		// Add page
+		var page = document.Pages.Add();
 
-    // Add page
-    var page = document.Pages.Add();
+		// Add text to new page
+		page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
 
-    // Add text to new page
-    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-
-    // Save updated PDF
-    document.Save(dataDir + "HelloWorld_out.pdf");
+		// Save updated PDF
+		document.Save(dataDir + "HelloWorld_out.pdf");
+	}
 }
 ```
 
@@ -123,6 +126,8 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertDocumentWithHocr(string file)
 {
     // Load the document
@@ -147,10 +152,10 @@ private static void ConvertDocumentWithHocr(string file)
 
 static string CallBackGetHocr(System.Drawing.Image img)
 {
-    string tmpFile = System.IO.Path.GetTempFileName();
+    string tmpFile = Path.GetTempFileName();
     try
     {
-        System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
+        var bmp = new System.Drawing.Bitmap(img);
 
         bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
         string inputFile = string.Concat('"', tmpFile, '"');
@@ -158,8 +163,7 @@ static string CallBackGetHocr(System.Drawing.Image img)
         string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
         string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
 
-        System.Diagnostics.ProcessStartInfo psi =
-            new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
+        var psi = new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
             {
                 UseShellExecute = true,
                 CreateNoWindow = true,
@@ -167,14 +171,14 @@ static string CallBackGetHocr(System.Drawing.Image img)
                 WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
             };
 
-        System.Diagnostics.Process p = new System.Diagnostics.Process
+        var p = new System.Diagnostics.Process
         {
             StartInfo = psi
         };
         p.Start();
         p.WaitForExit();
 
-        using (System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+        using (var streamReader = new StreamReader(tmpFile + ".hocr"))
         {
             string text = streamReader.ReadToEnd();
             return text;
@@ -182,13 +186,13 @@ static string CallBackGetHocr(System.Drawing.Image img)
     }
     finally
     {
-        if (System.IO.File.Exists(tmpFile))
+        if (File.Exists(tmpFile))
         {
-            System.IO.File.Delete(tmpFile);
+            File.Delete(tmpFile);
         }
-        if (System.IO.File.Exists(tmpFile + ".hocr"))
+        if (File.Exists(tmpFile + ".hocr"))
         {
-            System.IO.File.Delete(tmpFile + ".hocr");
+            File.Delete(tmpFile + ".hocr");
         }
     }
 }
@@ -224,32 +228,35 @@ Steps to creating an accessible PDF:
 1. Save the Modified Document.
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ProcessTaggedContent(string somePdfFilePath, string output)
 {
     // Load the document
-    var document = new Aspose.Pdf.Document(somePdfFilePath);
+    using(var document = new Aspose.Pdf.Document(somePdfFilePath))
+	{
+		// Get the tagged content
+		var content = document.TaggedContent;
 
-    // Get the tagged content
-    var content = document.TaggedContent;
+		// Create a SpanElement
+		var span = content.CreateSpanElement();
 
-    // Create a SpanElement
-    var span = content.CreateSpanElement();
+		// Append the span to the root element
+		content.RootElement.AppendChild(span);
 
-    // Append the span to the root element
-    content.RootElement.AppendChild(span);
+		// Process operations on the first page
+		foreach (var op in document.Pages[1].Contents)
+		{
+			if (op is Aspose.Pdf.Operators.BDC bdc)
+			{
+				// Tag the BDC operation
+				span.Tag(bdc);
+			}
+		}
 
-    // Process operations on the first page
-    foreach (var op in document.Pages[1].Contents)
-    {
-        if (op is Aspose.Pdf.Operators.BDC bdc)
-        {
-            // Tag the BDC operation
-            span.Tag(bdc);
-        }
-    }
-
-    // Save the document
-    document.Save(output);
+		// Save the document
+		document.Save(output);
+	}
 }
 ```
 

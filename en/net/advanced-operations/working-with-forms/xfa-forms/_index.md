@@ -93,29 +93,31 @@ The following code snippet shows you how to fill fields in XFA form.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void FillXFAFields()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load XFA form
-    var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf");
+    using(var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
+	{
+		// Get names of XFA form fields
+		var names = document.Form.XFA.FieldNames;
 
-    // Get names of XFA form fields
-    var names = document.Form.XFA.FieldNames;
+		// Set field values
+		if (names.Length > 0)
+		{
+			document.Form.XFA[names[0]] = "Field 0";
+		}
+		if (names.Length > 1)
+		{
+			document.Form.XFA[names[1]] = "Field 1";
+		}
 
-    // Set field values
-    if (names.Length > 0)
-    {
-        document.Form.XFA[names[0]] = "Field 0";
-    }
-    if (names.Length > 1)
-    {
-        document.Form.XFA[names[1]] = "Field 1";
-    }
-
-    // Save the updated document
-    document.Save(dataDir + "Filled_XFA_out.pdf");
+		// Save the updated document
+		document.Save(dataDir + "Filled_XFA_out.pdf");
+	}
 }
 ```
 
@@ -139,19 +141,21 @@ We cannot extract or manipulate pages of XFA Forms, because the form content is 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertDynamicXFAToAcroForm()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load dynamic XFA form
-    var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf");
+    using(var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
+	{
+		// Set the form fields type as standard AcroForm
+		document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
 
-    // Set the form fields type as standard AcroForm
-    document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
-
-    // Save the resultant PDF
-    document.Save(dataDir + "Standard_AcroForm_out.pdf");
+		// Save the resultant PDF
+		document.Save(dataDir + "Standard_AcroForm_out.pdf");
+	}
 }
 ```
 
@@ -161,36 +165,38 @@ To access field properties, first use Document.Form.XFA.Template to access the f
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetXFAProperties()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load XFA form
-    var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf");
+    using(var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
+	{
+		// Get names of XFA form fields
+		var names = document.Form.XFA.FieldNames;
 
-    // Get names of XFA form fields
-    var names = document.Form.XFA.FieldNames;
+		// Set field values
+		if (names.Length > 0)
+		{
+			document.Form.XFA[names[0]] = "Field 0";
+		}
+		if (names.Length > 1)
+		{
+			document.Form.XFA[names[1]] = "Field 1";
+		}
 
-    // Set field values
-    if (names.Length > 0)
-    {
-        document.Form.XFA[names[0]] = "Field 0";
-    }
-    if (names.Length > 1)
-    {
-        document.Form.XFA[names[1]] = "Field 1";
-    }
+		// Get field position
+		if (names.Length > 0)
+		{
+			Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+			Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+		}
 
-    // Get field position
-    if (names.Length > 0)
-    {
-        Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
-        Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
-    }
-
-    // Save the updated document
-    document.Save(dataDir + "Filled_XFA_out.pdf");
+		// Save the updated document
+		document.Save(dataDir + "Filled_XFA_out.pdf");
+	}
 }
 ```
 

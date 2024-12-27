@@ -82,33 +82,36 @@ sitemap:
 The next code snippet creates a new Document object using an input variable that contains the path to the PDF file. The example accesses the forms presented on page 2 of the document and checks for forms with certain properties. If a form with the type "Typewriter" and subtype "Form" is found, it uses TextFragmentAbsorber to visit and remove all text fragments in this form.
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ClearTextInForm(string input, string output)
 {
     // Load the document
-    var document = new Aspose.Pdf.Document(input);
+    using(cument = new Aspose.Pdf.Document(input))
+	{
+		// Get the forms from the first page
+		var forms = document.Pages[1].Resources.Forms;
 
-    // Get the forms from the first page
-    var forms = document.Pages[1].Resources.Forms;
+		foreach (var form in forms)
+		{
+			// Check if the form is of type "Typewriter" and subtype "Form"
+			if (form.IT == "Typewriter" && form.Subtype == "Form")
+			{
+				// Create a TextFragmentAbsorber to find text fragments
+				var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+				absorber.Visit(form);
 
-    foreach (var form in forms)
-    {
-        // Check if the form is of type "Typewriter" and subtype "Form"
-        if (form.IT == "Typewriter" && form.Subtype == "Form")
-        {
-            // Create a TextFragmentAbsorber to find text fragments
-            var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-            absorber.Visit(form);
+				// Clear the text in each fragment
+				foreach (var fragment in absorber.TextFragments)
+				{
+					fragment.Text = "";
+				}
+			}
+		}
 
-            // Clear the text in each fragment
-            foreach (var fragment in absorber.TextFragments)
-            {
-                fragment.Text = "";
-            }
-        }
-    }
-
-    // Save the modified document
-    document.Save(output);
+		// Save the modified document
+		document.Save(output);
+	}	
 }
 ```
 
@@ -119,51 +122,57 @@ This code snippet searches the forms on the first page of a PDF document for for
 The Aspose.PDF library provides two ways to remove such forms from PDFs:
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void DeleteSpecifiedForm(string input, string output)
 {
     // Load the document
-    var document = new Aspose.Pdf.Document(input);
+    using(var document = new Aspose.Pdf.Document(input))
+	{
+		// Get the forms from the first page
+		var forms = document.Pages[1].Resources.Forms;
 
-    // Get the forms from the first page
-    var forms = document.Pages[1].Resources.Forms;
+		// Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
+		for (int i = forms.Count; i > 0; i--)
+		{
+			if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
+			{
+				forms.Delete(forms[i].Name);
+			}
+		}
 
-    // Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
-    for (int i = forms.Count; i > 0; i--)
-    {
-        if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
-        {
-            forms.Delete(forms[i].Name);
-        }
-    }
-
-    // Save the modified document
-    document.Save(output);
+		// Save the modified document
+		document.Save(output);
+	}
 }
 ```
 
 Method 2:
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void DeleteSpecifiedForm(string input, string output)
 {
     // Load the document
-    var document = new Aspose.Pdf.Document(input);
+    using(var document = new Aspose.Pdf.Document(input))
+	{
+		// Get the forms from the first page
+		var forms = document.Pages[1].Resources.Forms;
 
-    // Get the forms from the first page
-    var forms = document.Pages[1].Resources.Forms;
+		// Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
+		foreach (var form in forms)
+		{
+			if (form.IT == "Typewriter" && form.Subtype == "Form")
+			{
+				var name = forms.GetFormName(form);
+				forms.Delete(name);
+			}
+		}
 
-    // Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
-    foreach (var form in forms)
-    {
-        if (form.IT == "Typewriter" && form.Subtype == "Form")
-        {
-            var name = forms.GetFormName(form);
-            forms.Delete(name);
-        }
-    }
-
-    // Save the modified document
-    document.Save(output);
+		// Save the modified document
+		document.Save(output);
+	}
 }
 ```
 
@@ -172,18 +181,21 @@ private static void DeleteSpecifiedForm(string input, string output)
 This code removes all form elements from the first page of a PDF document and then saves the modified document to the specified output path.
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void RemoveAllForms(string input, string output)
 {
     // Load the document
-    var document = new Aspose.Pdf.Document(input);
+    using(var document = new Aspose.Pdf.Document(input))
+	{
+		// Get the forms from the first page
+		var forms = document.Pages[1].Resources.Forms;
 
-    // Get the forms from the first page
-    var forms = document.Pages[1].Resources.Forms;
+		// Clear all forms
+		forms.Clear();
 
-    // Clear all forms
-    forms.Clear();
-
-    // Save the modified document
-    document.Save(output);
+		// Save the modified document
+		document.Save(output);
+	}
 }
 ```

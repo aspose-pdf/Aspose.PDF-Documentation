@@ -95,6 +95,8 @@ Inside the catch block, the PdfException.GenerateCrashReport() method is called.
 **Basic workflow:**
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GenerateCrashReportExample()
 {
     try
@@ -116,6 +118,8 @@ private static void GenerateCrashReportExample()
 **Set a directory where crash report will be generated:**
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GenerateCrashReportInCustomDirectory()
 {
     try
@@ -143,6 +147,8 @@ private static void GenerateCrashReportInCustomDirectory()
 **Set your own crash report name:**
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GenerateCrashReportWithCustomFilename()
 {
     try
@@ -170,6 +176,8 @@ private static void GenerateCrashReportWithCustomFilename()
 **Provide additional information about exceptional circumstances in the CustomMessage field:**
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GenerateCrashReportWithCustomMessage()
 {
     try

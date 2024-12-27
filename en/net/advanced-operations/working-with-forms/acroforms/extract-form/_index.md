@@ -89,20 +89,22 @@ The following C# code snippets show how to get the values of all the fields from
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetValuesFromFields()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf");
-
-    // Get values from all fields
-    foreach (Aspose.Pdf.Forms.Field formField in document.Form)
-    {
-        Console.WriteLine("Field Name : {0} ", formField.PartialName);
-        Console.WriteLine("Value : {0} ", formField.Value);
-    }
+    using(var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
+	{
+		// Get values from all fields
+		foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+		{
+			Console.WriteLine("Field Name : {0} ", formField.PartialName);
+			Console.WriteLine("Value : {0} ", formField.Value);
+		}
+	}
 }
 ```
 
@@ -112,21 +114,23 @@ The form field's Value property allows you to get the value of a particular fiel
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetValueFromField()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf");
-
-    // Get a field
-    if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-    {
-        // Get field value
-        Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
-        Console.WriteLine("Value : {0} ", textBoxField.Value);
-    }
+    using(var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+	{
+		// Get a field
+		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+		{
+			// Get field value
+			Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
+			Console.WriteLine("Value : {0} ", textBoxField.Value);
+		}
+	}
 }
 ```
 
@@ -134,20 +138,22 @@ To get the submit button's URL, use the following lines of code.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetSubmitFormActionUrl()
 {
     // Explicit dataDir initialization
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf");
-
-    // Get the SubmitFormAction from the form field
-    if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
-    {
-        // Output the URL of the SubmitFormAction
-        Console.WriteLine(act.Url.Name);
-    }
+    using(var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+	{
+		// Get the SubmitFormAction from the form field
+		if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
+		{
+			// Output the URL of the SubmitFormAction
+			Console.WriteLine(act.Url.Name);
+		}
+	}
 }
 ```
 
@@ -170,23 +176,24 @@ private static void GetFieldsFromRegion()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open pdf file
-    var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf");
+    using(var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
+	{
+		// Create rectangle object to get fields in that area
+		var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
 
-    // Create rectangle object to get fields in that area
-    var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
+		// Get the PDF form
+		var form = document.Form;
 
-    // Get the PDF form
-    var form = document.Form;
+		// Get fields in the rectangular area
+		var fields = form.GetFieldsInRect(rectangle);
 
-    // Get fields in the rectangular area
-    var fields = form.GetFieldsInRect(rectangle);
-
-    // Display Field names and values
-    foreach (var field in fields)
-    {
-        // Display image placement properties for all placements
-        Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
-    }
+		// Display Field names and values
+		foreach (var field in fields)
+		{
+			// Display image placement properties for all placements
+			Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
+		}
+	}
 }
 ```
 

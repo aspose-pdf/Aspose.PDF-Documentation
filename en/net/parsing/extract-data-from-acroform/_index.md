@@ -85,17 +85,21 @@ In the sample code below we demonstrate how to iterate through each page in a PD
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractFormFields()
 {
     // Load source PDF document
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-    var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf");
-
-    // Get values from all fields
-    foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+    using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
     {
-        Console.WriteLine("Field Name : {0} ", formField.PartialName);
-        Console.WriteLine("Value : {0} ", formField.Value);
+
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
     }
 }
 ```
@@ -111,18 +115,21 @@ The form field's Value property allows you to get the value of a particular fiel
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractFormFieldsToJson()
 {
     // Load source PDF document
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-    var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf");
+    using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
+    {
+        // Extract form fields and convert to JSON
+        var formData = document.Form.Cast<Aspose.Pdf.Forms.Field>().Select(f => new { Name = f.PartialName, f.Value });
+        string jsonString = System.Text.Json.JsonSerializer.Serialize(formData);
 
-    // Extract form fields and convert to JSON
-    var formData = document.Form.Cast<Aspose.Pdf.Forms.Field>().Select(f => new { Name = f.PartialName, f.Value });
-    string jsonString = System.Text.Json.JsonSerializer.Serialize(formData);
-
-    // Output the JSON string
-    Console.WriteLine(jsonString);
+        // Output the JSON string
+        Console.WriteLine(jsonString);
+    }
 }
 ```
 
@@ -133,6 +140,8 @@ Form class allows you to export data to an XML file from the PDF file using Expo
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExportFormDataToXml()
 {
     // Explicit dataDir initialization
@@ -160,6 +169,8 @@ Form class allows you to export data to an FDF file from the PDF file using Expo
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExportDataToPdf()
 {
     // Explicit dataDir initialization
@@ -190,6 +201,8 @@ Form class allows you to export data to an XFDF file from the PDF file using Exp
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExportDataToXFDF()
 {
     // Explicit dataDir initialization
