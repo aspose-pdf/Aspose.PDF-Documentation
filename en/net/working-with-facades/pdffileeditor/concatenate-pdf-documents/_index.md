@@ -211,8 +211,8 @@ private static void ConcatenateArrayOfPdfFilesUsingFilePaths()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Array of files
     var filesArray = new string[2];
-    filesArray[0] = dataDir + "input.pdf";
-    filesArray[1] = dataDir + "input2.pdf";
+    filesArray[0] = dataDir + "Concatenate1.pdf";
+    filesArray[1] = dataDir + "Concatenate2.pdf";
     // Concatenate files
     pdfEditor.Concatenate(filesArray, dataDir + "ConcatenateArrayOfPdfFilesUsingFilePaths_out.pdf");
 }
