@@ -84,59 +84,63 @@ It is often required to add some details for a phrase or specific word as a tool
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void AddTooltipToSearchedText(string outputFilePath)
+private static void AddTooltipToSearchedText()
 {
-	// Create sample document with text
-	using (var document = new Aspose.Pdf.Document())
-	{
-		document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
-		document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
-		document.Save(outputFilePath);
-	}
-	// Open document with text
-	using (var document = new Aspose.Pdf.Document(outputFilePath))
-	{
-		// Create TextAbsorber object to find all the phrases matching the regular expression
-		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
-		// Accept the absorber for the document pages
-		document.Pages.Accept(absorber);
-		// Get the extracted text fragments
-		var textFragments = absorber.TextFragments;
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var outputFilePath = dataDir + "Tooltip_out.pdf";
 
-		// Loop through the fragments
-		foreach (var fragment in textFragments)
-		{
-			// Create invisible button on text fragment position
-			var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
-			// AlternateName value will be displayed as tooltip by a viewer application
-			field.AlternateName = "Tooltip for text.";
-			// Add button field to the document
-			document.Form.Add(field);
-		}
+    // Create sample document with text
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        document.Save(outputFilePath);
+    }
+    // Open document with text
+    using (var document = new Aspose.Pdf.Document(outputFilePath))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the extracted text fragments
+        var textFragments = absorber.TextFragments;
 
-		// Next will be sapmle of very long tooltip
-		absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
-		document.Pages.Accept(absorber);
-		textFragments = absorber.TextFragments;
+        // Loop through the fragments
+        foreach (var fragment in textFragments)
+        {
+            // Create invisible button on text fragment position
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // AlternateName value will be displayed as tooltip by a viewer application
+            field.AlternateName = "Tooltip for text.";
+            // Add button field to the document
+            document.Form.Add(field);
+        }
 
-		foreach (var fragment in textFragments)
-		{
-			var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
-			// Set very long text
-			field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-									" sed do eiusmod tempor incididunt ut labore et dolore magna" +
-									" aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-									" ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-									" Duis aute irure dolor in reprehenderit in voluptate velit" +
-									" esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-									" occaecat cupidatat non proident, sunt in culpa qui officia" +
-									" deserunt mollit anim id est laborum.";
-			document.Form.Add(field);
-		}
+        // Next will be sapmle of very long tooltip
+        absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
+        document.Pages.Accept(absorber);
+        textFragments = absorber.TextFragments;
 
-		// Save document
-		document.Save(outputFilePath);
-	}
+        foreach (var fragment in textFragments)
+        {
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // Set very long text
+            field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
+                                    " deserunt mollit anim id est laborum.";
+            document.Form.Add(field);
+        }
+
+        // Save document
+        document.Save(outputFilePath);
+    }
 }
 ```
 
@@ -161,64 +165,68 @@ Please also take into account that PDF actions in the documents work fine in the
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreateHiddenTextBlock(string outputFilePath)
+private static void CreateHiddenTextBlock()
 {
-	// Create sample document with text
-	using (var document = new Aspose.Pdf.Document())
-	{
-		// Add paragraph with text
-		document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
-		document.Save(outputFilePath);
-	}
+    // The path to the documents directory.
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var outputFilePath = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
 
-	// Open document with text
-	using (var document = new Aspose.Pdf.Document(outputFilePath))
-	{
-		// Create TextAbsorber object to find all the phrases matching the regular expression
-		var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
-		// Accept the absorber for the document pages
-		document.Pages.Accept(absorber);
-		// Get the first extracted text fragment
-		var textFragments = absorber.TextFragments;
-		var fragment = textFragments[1];
+    // Create sample document with text
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add paragraph with text
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
+        document.Save(outputFilePath);
+    }
 
-		// Create hidden text field for floating text in the specified rectangle of the page
-		var floatingField = new Aspose.Pdf.Forms.TextBoxField(fragment.Page, new Aspose.Pdf.Rectangle(100, 700, 220, 740));
-		// Set text to be displayed as field value
-		floatingField.Value = "This is the \"floating text field\".";
-		// We recommend to make field 'readonly' for this scenario
-		floatingField.ReadOnly = true;
-		// Set 'hidden' flag to make field invisible on document opening
-		floatingField.Flags |= Aspose.Pdf.Annotations.AnnotationFlags.Hidden;
+    // Open document with text
+    using (var document = new Aspose.Pdf.Document(outputFilePath))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the first extracted text fragment
+        var textFragments = absorber.TextFragments;
+        var fragment = textFragments[1];
 
-		// Setting a unique field name isn't necessary but allowed
-		floatingField.PartialName = "FloatingField_1";
+        // Create hidden text field for floating text in the specified rectangle of the page
+        var floatingField = new Aspose.Pdf.Forms.TextBoxField(fragment.Page, new Aspose.Pdf.Rectangle(100, 700, 220, 740));
+        // Set text to be displayed as field value
+        floatingField.Value = "This is the \"floating text field\".";
+        // We recommend to make field 'readonly' for this scenario
+        floatingField.ReadOnly = true;
+        // Set 'hidden' flag to make field invisible on document opening
+        floatingField.Flags |= Aspose.Pdf.Annotations.AnnotationFlags.Hidden;
 
-		// Setting characteristics of field appearance isn't necessary but makes it better
-		floatingField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
-		floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
-		floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
-		floatingField.Border = new Aspose.Pdf.Annotations.Border(floatingField);
-		floatingField.Border.Width = 1;
-		floatingField.Multiline = true;
+        // Setting a unique field name isn't necessary but allowed
+        floatingField.PartialName = "FloatingField_1";
 
-		// Add text field to the document
-		document.Form.Add(floatingField);
+        // Setting characteristics of field appearance isn't necessary but makes it better
+        floatingField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
+        floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
+        floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
+        floatingField.Border = new Aspose.Pdf.Annotations.Border(floatingField);
+        floatingField.Border.Width = 1;
+        floatingField.Multiline = true;
 
-		// Create invisible button on text fragment position
-		var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
-		// Create new hide action for specified field (annotation) and invisibility flag.
-		// (You also may reffer floating field by the name if you specified it above.)
-		// Add actions on mouse enter/exit at the invisible button field
-		buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
-		buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
+        // Add text field to the document
+        document.Form.Add(floatingField);
 
-		// Add button field to the document
-		document.Form.Add(buttonField);
+        // Create invisible button on text fragment position
+        var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+        // Create new hide action for specified field (annotation) and invisibility flag.
+        // (You also may reffer floating field by the name if you specified it above.)
+        // Add actions on mouse enter/exit at the invisible button field
+        buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
+        buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
 
-		// Save document
-		document.Save(outputFilePath);
-	}
+        // Add button field to the document
+        document.Form.Add(buttonField);
+
+        // Save document
+        document.Save(outputFilePath);
+    }
 }
 ```
 
