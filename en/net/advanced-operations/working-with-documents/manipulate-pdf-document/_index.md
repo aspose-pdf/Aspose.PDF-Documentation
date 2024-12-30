@@ -377,10 +377,10 @@ private static void CustomizePageNumbersAddingToC()
         Page tocPage = document.Pages.Insert(1);
 
         // Create object to represent TOC information
-        TocInfo tocInfo = new TocInfo();
-        TextFragment title = new TextFragment("Table Of Contents");
+        var tocInfo = new Aspose.Pdf.TocInfo();
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
         title.TextState.FontSize = 20;
-        title.TextState.FontStyle = FontStyles.Bold;
+        title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
         // Set the title for TOC
         tocInfo.Title = title;
@@ -391,8 +391,8 @@ private static void CustomizePageNumbersAddingToC()
         for (int i = 1; i < document.Pages.Count; i++)
         {
             // Create Heading object
-            Heading heading2 = new Heading(1);
-            TextSegment segment2 = new TextSegment();
+            var heading2 = new Aspose.Pdf.Heading(1);
+            var segment2 = new Aspose.Pdf.Text.TextSegment();
             heading2.TocPage = tocPage;
             heading2.Segments.Add(segment2);
 
@@ -436,10 +436,10 @@ private static void SetExpiryDate()
         document.Pages.Add();
 
         // Add text fragment to paragraphs collection of page object
-        document.Pages[1].Paragraphs.Add(new TextFragment("Hello World..."));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World..."));
 
         // Create JavaScript object to set PDF expiry date
-        JavascriptAction javaScript = new JavascriptAction(
+        var javaScript = new Aspose.Pdf.Annotations.JavascriptAction(
             "var year=2017;" +
             "var month=5;" +
             "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());" +
@@ -481,8 +481,8 @@ private static void DetermineProgress()
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
     {
         // Create DocSaveOptions instance and set custom progress handler
-        var saveOptions = new DocSaveOptions();
-        saveOptions.CustomProgressHandler = new UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
+        var saveOptions = new Aspose.Pdf.DocSaveOptions();
+        saveOptions.CustomProgressHandler = new Aspose.Pdf.UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
 
         // Save PDF Document with progress tracking
         document.Save(dataDir + "DetermineProgress_out.pdf", saveOptions);
@@ -490,20 +490,20 @@ private static void DetermineProgress()
 }
 
 // Method to handle progress and display it on the console
-private static void ShowProgressOnConsole(UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)
+private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)
 {
     switch (eventInfo.EventType)
     {
-        case UnifiedSaveOptions.ProgressEventType.TotalProgress:
+        case Aspose.Pdf.ProgressEventType.TotalProgress:
             Console.WriteLine(String.Format("{0}  - Conversion progress : {1}% .", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString()));
             break;
-        case UnifiedSaveOptions.ProgressEventType.SourcePageAnalysed:
+        case Aspose.Pdf.ProgressEventType.SourcePageAnalysed:
             Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
-        case UnifiedSaveOptions.ProgressEventType.ResultPageCreated:
+        case Aspose.Pdf.ProgressEventType.ResultPageCreated:
             Console.WriteLine(String.Format("{0}  - Result page's {1} of {2} layout created.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
-        case UnifiedSaveOptions.ProgressEventType.ResultPageSaved:
+        case Aspose.Pdf.ProgressEventType.ResultPageSaved:
             Console.WriteLine(String.Format("{0}  - Result page {1} of {2} exported.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
         default:

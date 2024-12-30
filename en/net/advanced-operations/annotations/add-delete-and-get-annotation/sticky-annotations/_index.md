@@ -95,7 +95,7 @@ private static void AddWatermarkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
 	{
 		// Load Page object to add Annotation
@@ -140,7 +140,7 @@ private static void AddWatermarkAnnotationWithImage()
     // Define the rectangle for the image
     var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Open the image stream

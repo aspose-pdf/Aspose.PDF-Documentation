@@ -272,7 +272,7 @@ private static void ImportAnnotationsFromXfdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create an XFDF string builder
@@ -328,7 +328,7 @@ private static void AddInvisibleAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create a free text annotation
@@ -472,7 +472,7 @@ private static void DeleteAllAnnotationsFromPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"))
 	{
 		// Delete all annotations from the first page
@@ -505,7 +505,7 @@ private static void DeleteParticularAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularAnnotation.pdf"))
 	{
 		// Delete a particular annotation by index (e.g., the first annotation on the first page)
@@ -529,7 +529,7 @@ private static void GetAllAnnotationsFromPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetAllAnnotationsFromPage.pdf"))
 	{
 		// Loop through all the annotations on the first page
@@ -558,7 +558,7 @@ private static void GetParticularAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetParticularAnnotation.pdf"))
 	{
 		// Get a particular annotation by index (e.g., the first annotation on the first page)
@@ -584,7 +584,7 @@ private static void AddAndGetResourceOfAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create a screen annotation with a SWF file

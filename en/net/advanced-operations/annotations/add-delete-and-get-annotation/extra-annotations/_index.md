@@ -101,7 +101,7 @@ private static void AddCaretAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Create Caret Annotation for text insertion
@@ -160,7 +160,7 @@ private static void GetCaretAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
 	{
 		// Get Caret annotations from the first page
@@ -189,7 +189,7 @@ private static void DeleteCaretAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
 	{
 		// Get Caret annotations from the first page

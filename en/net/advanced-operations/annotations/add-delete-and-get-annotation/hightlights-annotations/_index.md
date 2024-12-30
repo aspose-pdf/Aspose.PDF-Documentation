@@ -110,7 +110,7 @@ private static void AddTextMarkupAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Create a TextFragmentAbsorber to find the text "PDF"
@@ -232,7 +232,7 @@ public static void GetHighlightedText()
 	{
 		var highlightAnnotations = document.Pages[1].Annotations
 			.Where(a => a.AnnotationType == AnnotationType.Highlight)
-			.Cast<HighlightAnnotation>();
+			.Cast<Aspose.Pdf.Annotations.HighlightAnnotation>();
 		foreach (var ta in highlightAnnotations)
 		{
 			Console.WriteLine($"[{ta.GetMarkedText()}]");
@@ -256,7 +256,7 @@ public static void GetTextMarkupAnnotation()
 		var textMarkupAnnotations = document.Pages[1].Annotations
 			.Where(a => a.AnnotationType == AnnotationType.Highlight
 			|| a.AnnotationType == AnnotationType.Squiggly)
-			.Cast<TextMarkupAnnotation>();
+			.Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
 		foreach (var ta in textMarkupAnnotations)
 		{
 			Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
@@ -280,7 +280,7 @@ public static void DeleteTextMarkupAnnotation()
 		var textMarkupAnnotations = document.Pages[1].Annotations
 			.Where(a => a.AnnotationType == AnnotationType.Highlight
 			||a.AnnotationType == AnnotationType.Squiggly)
-			.Cast<TextMarkupAnnotation>();
+			.Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
 		foreach (var ta in textMarkupAnnotations)
 		{
 			document.Pages[1].Annotations.Delete(ta);

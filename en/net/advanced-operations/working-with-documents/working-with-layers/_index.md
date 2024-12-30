@@ -99,7 +99,7 @@ private static void LockLayerInPDF()
 	// The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Get the first page and the first layer

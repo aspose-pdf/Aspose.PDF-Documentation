@@ -582,16 +582,16 @@ private static void ExportFieldsToJsonWithOptions()
         Console.Write($"{result.FieldFullName} ");
         switch (result.FieldSerializationStatus)
         {
-            case FieldSerializationStatus.Success:
+            case Aspose.Pdf.FieldSerializationStatus.Success:
                 Console.WriteLine("Success");
                 break;
-            case FieldSerializationStatus.Warning:
+            case Aspose.Pdf.FieldSerializationStatus.Warning:
                 foreach (var messages in result.WarningMessages)
                 {
                     Console.WriteLine(messages);
                 }
                 break;
-            case FieldSerializationStatus.Error:
+            case Aspose.Pdf.FieldSerializationStatus.Error:
                 foreach (var messages in result.ErrorMessages)
                 {
                     Console.WriteLine(messages);

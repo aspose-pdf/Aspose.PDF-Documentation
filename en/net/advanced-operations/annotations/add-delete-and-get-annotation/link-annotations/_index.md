@@ -95,7 +95,7 @@ private static void AddLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "Link Annotation Demo.pdf"))
 	{
 		var page = document.Pages[1];
@@ -239,7 +239,7 @@ private static void GetLinkAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
 	{
 		// Get all Link annotations from the first page
@@ -279,7 +279,7 @@ private static void DeleteLinkAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
 	{
 		// Find and delete all link annotations on the 1st page

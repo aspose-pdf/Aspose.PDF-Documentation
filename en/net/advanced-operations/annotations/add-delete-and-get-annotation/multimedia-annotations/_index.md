@@ -112,7 +112,7 @@ private static void AddScreenAnnotationWithMedia()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (cument = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Path to the media file (SWF)
@@ -142,7 +142,7 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
 
 private static void AddSoundAnnotation()
 {
-    // Load the PDF document
+    // Open the document
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
@@ -242,7 +242,7 @@ private static void GetMultimediaAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
 	{
 		// Get multimedia annotations (Screen, Sound, RichMedia)
@@ -273,7 +273,7 @@ private static void DeletePolyAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
     {
         // Get RichMedia annotations
@@ -375,7 +375,7 @@ private static void AddNavigationButtons()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load the PDF document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
 	{
 		// Create an array of button fields
