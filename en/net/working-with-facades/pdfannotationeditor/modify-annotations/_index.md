@@ -116,19 +116,13 @@ private static void ModifyAnnotations()
         {
             // Bind PDF document
             annotationEditor.BindPdf(document);
-            // Create a new object of type Annotation to modify annotation attributes
-            var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance();
-            var annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
-                document.Pages[1],
-                new Aspose.Pdf.Rectangle(1, 1, 1, 1),
-                defaultAppearance)
-            {
-                // Set new annotation attributes
-                Title = "Aspose.PDF Demo User",
-                Subject = "Technical Article"
-            };
+            // Create a new object of type Annotation
+            TextAnnotation newTextAnnotation = new TextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
+            newTextAnnotation.Title = "Updated title";
+            newTextAnnotation.Subject = "Updated subject";
+            newTextAnnotation.Contents = "Updated sample contents for the annotation";
             // Modify annotations in the PDF file
-            annotationEditor.ModifyAnnotations(1, 1, annotation);
+            annotationEditor.ModifyAnnotations(1, 1, newTextAnnotation);
             // Save document
             annotationEditor.Save(dataDir + "ModifyAnnotations_out.pdf");
         }
