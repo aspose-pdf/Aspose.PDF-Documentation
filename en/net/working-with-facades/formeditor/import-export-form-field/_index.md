@@ -76,26 +76,77 @@ draft: false
 Aspose.PDF for .NET provides great capabilities for create/manipulating form fields inside PDF document. Using this API, you can programmatically fill form fields inside PDF file, fill form fields by [Import Data from FDF into a PDF File](/pdf/net/import-and-export-data/), [Import Data from XFDF into a PDF File](/pdf/net/import-and-export-data/), [Import Data from XML into a PDF File](/pdf/net/import-and-export-data/) or even you can import data from [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) object.
 
 ```csharp
-public static void ImportData()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void ImportData()
 {
-    var editor = new Form();
-    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
-    editor.ImportFdf(System.IO.File.OpenRead(dataDir + "Sample-Form-01-upd.fdf"));
-    editor.ImportXml(System.IO.File.OpenRead(dataDir + "Sample-Form-01-upd.xml"));
-    editor.ImportXfdf(System.IO.File.OpenRead(dataDir + "Sample-Form-01-upd.xfdf"));
-    editor.Save(dataDir + "Sample-Form-01-updated.pdf");
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Open Document
+        form.BindPdf(dataDir + "input.pdf");
+
+        // Import data fdf
+        using (var xfdfInputStream  = new FileStream(dataDir + "student.fdf", FileMode.Open))
+        {
+            form.ImportFdf(xfdfInputStream);
+        }
+                
+        // Import data xml
+        using (var xfdfInputStream  = new FileStream(dataDir + "input.xml", FileMode.Open))
+        {
+            form.ImportXml(xfdfInputStream);
+        }
+                
+        // Import data xfdf
+        using (var xfdfInputStream  = new FileStream(dataDir + "input.xfdf", FileMode.Open))
+        {
+            form.ImportXfdf(xfdfInputStream);
+        }
+                
+        // Save updated document
+        form.Save(dataDir + "ImportDataUpdated_out.pdf");
+    }
 }
 ```
 
 ## Export Data from FDF into a PDF File
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 public static void ExportData()
 {
-    var editor = new Form();
-    editor.BindPdf(dataDir + "Sample-Form-01.pdf");
-    editor.ExportFdf(System.IO.File.OpenWrite(dataDir + "Sample-Form-01-mod.fdf"));
-    editor.ExportXml(System.IO.File.OpenWrite(dataDir + "Sample-Form-01-mod.xml"));
-    editor.ExportXfdf(System.IO.File.OpenWrite(dataDir + "Sample-Form-01-mod.xfdf"));
-}
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Open Document
+        form.BindPdf(dataDir + "input.pdf");
+
+                
+        // Create fdf file.
+        using (var fdfOutputStream = new FileStream(dataDir + "data_out.fdf", FileMode.Create))
+        {
+            // Export fdf
+            form.ExportXfdf(fdfOutputStream);
+        }
+                
+        // Create xml file.
+        using (var xmlOutputStream = new FileStream(dataDir + "data_out.xml", FileMode.Create))
+        {
+            // Export xml
+            form.ExportXfdf(xmlOutputStream);
+        }
+            
+        // Create xfdf file.
+        using (var xfdfOutputStream = new FileStream(dataDir + "data_out.xfdf", FileMode.Create))
+        {
+            // Export xfdf
+            form.ExportXfdf(xfdfOutputStream);
+        }
+                
+    }
+} 
 ```
