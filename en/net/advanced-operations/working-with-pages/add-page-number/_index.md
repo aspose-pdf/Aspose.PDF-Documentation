@@ -106,8 +106,8 @@ private static void AddPageNumberToPdf()
         // Set text properties
         pageNumberStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
         pageNumberStamp.TextState.FontSize = 14.0F;
-        pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
-        pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
         pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
         // Add stamp to particular page
         document.Pages[1].AddStamp(pageNumberStamp);
@@ -138,12 +138,16 @@ private static void RemoveBatesNumbering()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))
     {
         foreach (var page in document.Pages)
         {
-            Artifact? batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
-            page.Artifacts.Delete(batesNum);
+            // Remove bates numbering
+            var artifacts = page.Artifacts.Where(ar => ar.CustomSubtype == "BatesN");
+            foreach (var artifact in artifacts)
+            {
+                page.Artifacts.Delete(artifact);   
+            }
         }
         // Save document
         document.Save(dataDir + "RemoveBatesNumbering_out.pdf");

@@ -86,7 +86,7 @@ private static void MakeNupOfPdfUsingFilePaths()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make NUp
-    pdfEditor.MakeNUp(dataDir + "input.pdf", dataDir + "input2.pdf", "MakeNUpUsingPaths_out.pdf");
+    pdfEditor.MakeNUp(dataDir + "MakeNupInput.pdf", dataDir + "MakeNupInput2.pdf", "MakeNUpUsingPaths_out.pdf");
 }
 ```
 
@@ -103,7 +103,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make NUp
-    pdfEditor.MakeNUp(dataDir + "MultiplePages.pdf", dataDir + "MakeNUpUsingPageSizeAndPaths_out.pdf", 2, 3, PageSize.A5);
+    pdfEditor.MakeNUp(dataDir + "MakeNupMultiplePagesInput.pdf", dataDir + "MakeNUpUsingPageSizeAndPaths_out.pdf", 2, 3, PageSize.A5);
 }
 ```
 
@@ -120,7 +120,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make NUp
-    pdfEditor.MakeNUp(dataDir + "input.pdf", "UsingPageSizeHorizontalAndVerticalValues_out.pdf", 2, 3);
+    pdfEditor.MakeNUp(dataDir + "MakeNupInput.pdf", "MakeNUpUsingPageSizeHorizontalAndVerticalValues_out.pdf", 2, 3);
 }
 ```
 
@@ -138,10 +138,10 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create array of files
     string[] filesArray = new string[2];
-    filesArray[0] = dataDir + "input.pdf";
-    filesArray[1] = dataDir + "input2.pdf";
+    filesArray[0] = dataDir + "MakeNupInput.pdf";
+    filesArray[1] = dataDir + "MakeNupInput2.pdf";
     // Make NUp
-    pdfEditor.MakeNUp(filesArray, dataDir + "UsingArrayOfFilesAndPaths_out.pdf", true);
+    pdfEditor.MakeNUp(filesArray, dataDir + "MakeNupUsingArrayOfFilesAndPaths_out.pdf", true);
 }
 ```
 
@@ -158,9 +158,9 @@ private static void MakeNupOfPdfUsingStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream1 = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream1 = new FileStream(dataDir + "MakeNupInput.pdf", FileMode.Open))
     {
-        using (var inputStream2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+        using (var inputStream2 = new FileStream(dataDir + "MakeNupInput2.pdf", FileMode.Open))
         {
             using (var outputStream = new FileStream(dataDir + "MakeNUpUsingStreams_out.pdf", FileMode.Create))
             {
@@ -185,7 +185,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MakeNupInput.pdf", FileMode.Open))
     {
         using (var outputStream = new FileStream(dataDir + "MakeNUpUsingPageSizeAndStreams_out.pdf", FileMode.Create))
         {
@@ -209,9 +209,9 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MakeNupInput.pdf", FileMode.Open))
     {
-        using (var outputStream = new FileStream(dataDir + "UsingPageSizeHorizontalVerticalValuesAndStreams_out.pdf", FileMode.Create))
+        using (var outputStream = new FileStream(dataDir + "MakeNUpUsingPageSizeHorizontalVerticalValuesAndStreams_out.pdf", FileMode.Create))
         {
             // Make NUp
             pdfEditor.MakeNUp(inputStream, outputStream, 2, 3); 
@@ -233,11 +233,11 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var stream1 = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var stream1 = new FileStream(dataDir + "MakeNupInput.pdf", FileMode.Open))
     {
-        using (var stream2 = new FileStream(dataDir + "input2.pdf", FileMode.Open))
+        using (var stream2 = new FileStream(dataDir + "MakeNupInput2.pdf", FileMode.Open))
         {
-            using (var outputStream = new FileStream(dataDir + "UsingArrayOfFilesAndStreams_out.pdf", FileMode.Create))
+            using (var outputStream = new FileStream(dataDir + "MakeNUpUsingArrayOfFilesAndStreams_out.pdf", FileMode.Create))
             {
                 var fileStreams = new Stream[2];
                 fileStreams[0] = stream1;

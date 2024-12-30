@@ -86,12 +86,12 @@ For example, in the following code, consider changing the author in our annotati
 private static void ModifyAnnotationsAuthor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Create PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
         // Bind PDF document
-        annotationEditor.BindPdf(dataDir + "input.pdf");
+        annotationEditor.BindPdf(dataDir + "AnnotationsInput.pdf");
         // Modify annotations author
         annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
         // Save document
@@ -100,35 +100,29 @@ private static void ModifyAnnotationsAuthor()
 }
 ```
 
-The second method allows you to delete all the annotations of a specified type.
+The second method allows you to modify annotations.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ModifyAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
         // Create PdfAnnotationEditor
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
             // Bind PDF document
             annotationEditor.BindPdf(document);
-            // Create a new object of type Annotation to modify annotation attributes
-            var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance();
-            var annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
-                document.Pages[1],
-                new Aspose.Pdf.Rectangle(1, 1, 1, 1),
-                defaultAppearance)
-            {
-                // Set new annotation attributees
-                Title = "Aspose.PDF Demo User",
-                Subject = "Technical Article"
-            };
+            // Create a new object of type Annotation
+            TextAnnotation newTextAnnotation = new TextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
+            newTextAnnotation.Title = "Updated title";
+            newTextAnnotation.Subject = "Updated subject";
+            newTextAnnotation.Contents = "Updated sample contents for the annotation";
             // Modify annotations in the PDF file
-            annotationEditor.ModifyAnnotations(1, 1, annotation);
+            annotationEditor.ModifyAnnotations(1, 1, newTextAnnotation);
             // Save document
             annotationEditor.Save(dataDir + "ModifyAnnotations_out.pdf");
         }

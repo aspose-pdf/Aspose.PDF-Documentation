@@ -90,22 +90,22 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 private static void PageBrakeExample01()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
-    
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
+
     // Instantiate Document instance
-    using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "PageBreak.pdf"))
     {
         // Instantiate blank Document instance
         using (var dest = new Aspose.Pdf.Document())
         {
             // Create PdfFileEditor object
             var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
-            fileEditor.AddPageBreak(document, dest, new PdfFileEditor.PageBreak[]
+            fileEditor.AddPageBreak(document, dest, new Aspose.Pdf.Facades.PdfFileEditor.PageBreak[]
             {
-                new PdfFileEditor.PageBreak(1, 450)
+                new Aspose.Pdf.Facades.PdfFileEditor.PageBreak(1, 450)
             });
             // Save resultant file
-            dest.Save(dataDir + "PageBreak_out.pdf"); 
+            dest.Save(dataDir + "PageBreak_out.pdf");
         }
     }
 }
@@ -118,16 +118,16 @@ private static void PageBrakeExample01()
 private static void PageBrakeExample02()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
 
     // Create PdfFileEditor object
     var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
 
-    fileEditor.AddPageBreak(dataDir + "Sample-Document-02.pdf",
+    fileEditor.AddPageBreak(dataDir + "PageBreak.pdf",
         dataDir + "PageBreakWithDestPath_out.pdf",
-        new PdfFileEditor.PageBreak[]
+        new Aspose.Pdf.Facades.PdfFileEditor.PageBreak[]
         {
-            new PdfFileEditor.PageBreak(1, 450)
+            new Aspose.Pdf.Facades.PdfFileEditor.PageBreak(1, 450)
         });
 }
 ```
@@ -139,15 +139,15 @@ private static void PageBrakeExample02()
 private static void PageBrakeExample03()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
 
-    using (var src = new FileStream(dataDir + "Sample-Document-03.pdf", FileMode.Open, FileAccess.Read))
+    using (var src = new FileStream(dataDir + "PageBreak.pdf", FileMode.Open, FileAccess.Read))
     {
         using (var dest = new FileStream(dataDir + "PageBreakWithStream_out.pdf", FileMode.Create, FileAccess.ReadWrite))
         {
             // Create PdfFileEditor object
             var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
-            
+
             // Add page break
             fileEditor.AddPageBreak(src, dest,
                 new[]

@@ -165,7 +165,7 @@ private static void ConvertEPUBtoPDF()
     // Convert options
     var options = new Aspose.Pdf.EpubLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertEPUBtoPDF_out.pdf");
@@ -184,7 +184,7 @@ private static void ConvertEPUBtoPDFAdv()
     // Convert options
     var options = new Aspose.Pdf.EpubLoadOptions(new SizeF(1190, 1684));
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "WebAssembly.epub", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertEPUBtoPDFAdv_out.pdf");
@@ -487,7 +487,7 @@ private static void ConvertPCLtoPDF()
     // Convert options
     var options = new Aspose.Pdf.PclLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDF.pcl", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertPCLtoPDF_out.pdf");
@@ -506,7 +506,7 @@ private static void ConvertPCLtoPDFAdvanced()
     // Convert options
     var options = new Aspose.Pdf.PclLoadOptions { SupressErrors = true };
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pcl", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDFAdvanced.pcl", options))
     {
         if (options.Exceptions != null)
         {
@@ -561,11 +561,10 @@ In case of the plain text file, we can use the following technique:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPlainTextFileToPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Read the source text file
-    using (var streamReader = new StreamReader(dataDir + "log.txt"))
+    using (var streamReader = new StreamReader(dataDir + "TextToPDFInput.txt"))
     {
         // Instantiate a Document object
         using (var document = new Aspose.Pdf.Document())
@@ -577,7 +576,7 @@ private static void ConvertPlainTextFileToPDF()
             // Add a new text paragraph in paragraphs collection and pass the TextFragment object
             page.Paragraphs.Add(text);
             // Save document in PDF format
-            document.Save(dataDir + "TextToPDF_out.pdf"); 
+            document.Save(dataDir + "TextToPDF_out.pdf");
         }
     }
 }
@@ -714,7 +713,7 @@ private static void ConvertPostScriptToPDF()
     // Convert options
     var options = new PsLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.ps", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "PSToPDF_out.pdf");
@@ -730,15 +729,15 @@ private static void ConvertPostscriptToPDFAdvanced()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
     // Convert options with custom font folders
     var options = new Aspose.Pdf.PsLoadOptions
     {
         FontsFolders = new[] { dataDir + @"\fonts1", dataDir + @"\fonts2" }
     };
-
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.ps", options))
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
+        // Save document in PDF format
         document.Save(dataDir + "ConvertPostscriptToPDFAdvanced_out.pdf");
     }
 }
@@ -766,19 +765,19 @@ Aspose.PDF for .NET presents you online free application ["XML to PDF"](https://
 The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [Document](https://reference.aspose.com/page/net/aspose.page/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). But sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Convert_XSLFO_to_PDF()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Convert options
-    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "XSLFOToPdfInput.xslt");
     // Set error handling strategy
     options.ParsingErrorsHandlingType = Aspose.Pdf.XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "XSLFOToPdfInput.xml", options))
     {
-        document.Save(dataDir + "Convert_XSLFO_to_PDF_out.pdf");
+        // Save document in PDF format
+        document.Save(dataDir + "XSLFOToPdf_out.pdf");
     }
 }
 ```
@@ -823,17 +822,14 @@ Aspose.PDF for .NET supports the feature to convert OFD files to PDF format and 
 The following code snippet shows the process of converting OFD file to PDF format with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertOFDToPDF()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
     // Convert options
     var options = new Aspose.Pdf.OfdLoadOptions();
-
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "test.ofd", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertOFDToPDF.ofd", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertOFDToPDF_out.pdf");
