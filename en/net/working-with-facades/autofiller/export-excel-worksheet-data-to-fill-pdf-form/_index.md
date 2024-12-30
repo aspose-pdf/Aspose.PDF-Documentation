@@ -98,75 +98,88 @@ Once the method is called a new Pdf form file is generated, which contains five 
 |![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_5.png)|![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_6.png)|
 
 ```csharp
-Workbook workbook = new Workbook();
-// Creating a file stream containing the Excel file to be opened
-using (FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open))
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportExcelToPdfForm()
 {
-    // Opening the Excel file through the file stream
-    workbook.Open(fstream);
-    // Accessing the first worksheet in the Excel file
-    Worksheet worksheet = workbook.Worksheets[0];
-    // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
-    DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
+
+    var workbook = new Workbook();
+    // Creating a file stream containing the Excel file to be opened
+    using (FileStream fstream = new FileStream(dataDir + "newBook1.xls", FileMode.Open))
+    {
+        // Opening the Excel file through the file stream
+        workbook.Open(fstream);
+        // Accessing the first worksheet in the Excel file
+        var worksheet = workbook.Worksheets[0];
+        // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
+        System.Data.DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
+        // Create an object of AutoFiller class
+        using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
+        {
+            // The input pdf file that contains form fields
+            autoFiller.InputFileName = dataDir + "DataTableExample.pdf";
+            // The resultant pdf, that will contain the form fields filled with information from DataTable
+            autoFiller.OutputFileName = dataDir + "DataTableExample_out.pdf";
+            // Call the method to import the data from DataTable object into Pdf form fields
+            autoFiller.ImportDataTable(dataTable);
+            // Save the  document
+            autoFiller.Save();
+        }
+    }
 }
-// Create an object of AutoFiller class
-AutoFiller autoFiller = new AutoFiller();
-// The input pdf file that contains form fields
-autoFiller.InputFileName = "d:\\pdftest\\DataTableExample.pdf";
-// The resultant pdf, that will contain the form fields filled with information from DataTable
-autoFiller.OutputFileName = "D:\\pdftest\\DataTableExample_Filled.pdf";
-// Call the method to import the data from DataTable object into Pdf form fields.
-autoFiller.ImportDataTable(dataTable);
-// Call the save method to generate the pdf file
-autoFiller.Save();
 ```
 
 For filling from XLSX please use next code snippet:
 
 ```csharp
-internal static void FillFromXLSX()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillFromXLSX()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
+
     // Create an object of AutoFiller class
-    AutoFiller autoFiller = new AutoFiller();
-    // The input pdf file that contains form fields
-    autoFiller.BindPdf(@"C:\Samples\Facades\Autofiller\Sample-Form-01.pdf");
+    using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
+    {
+        // The input pdf file that contains form fields
+        autoFiller.BindPdf(dataDir + "Sample-Form-01.pdf");
 
-    DataTable dataTable = GenerateDataTable();
+        System.Data.DataTable dataTable = GenerateDataTable();
 
-    // Call the method to import the data from DataTable object into Pdf form fields.
-    autoFiller.ImportDataTable(dataTable);
+        // Call the method to import the data from DataTable object into Pdf form fields
+        autoFiller.ImportDataTable(dataTable);
 
-    // The resultant pdf, that will contain the form fields filled with information from DataTable
-    autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
+        // Save the document
+        autoFiller.Save(dataDir + "Sample-Form-01_out.pdf");
+    }
 }
 ```
 
 Aspose.PDF for .NET allows you to generate Data Table in PDF document:
 
 ```csharp
-private static DataTable GenerateDataTable()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static System.Data.DataTable GenerateDataTable()
 {
     string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
-    // Create a new DataTable.
-    System.Data.DataTable table = new DataTable("Students");
-    // Declare variables for DataColumn and DataRow objects.
-    DataColumn column;
-    DataRow row;
+    // Create a new DataTable
+    var table = new System.Data.DataTable("Students");
 
     // Create new DataColumn, set DataType,
-    // ColumnName and add to DataTable.
-    column = new DataColumn
+    // ColumnName and add to DataTable
+    var column = new System.Data.DataColumn
     {
         DataType = System.Type.GetType("System.Int32"),
         ColumnName = "id",
         ReadOnly = true,
         Unique = true
     };
-    // Add the Column to the DataColumnCollection.
+    // Add the Column to the DataColumnCollection
     table.Columns.Add(column);
 
-    // Create second column.
-    column = new DataColumn
+    // Create second column
+    column = new System.Data.DataColumn
     {
         DataType = System.Type.GetType("System.String"),
         ColumnName = "First Name",
@@ -175,17 +188,18 @@ private static DataTable GenerateDataTable()
         ReadOnly = false,
         Unique = false
     };
-    // Add the column to the table.
+    // Add the column to the table
     table.Columns.Add(column);
 
-    // Make the ID column the primary key column.
-    DataColumn[] PrimaryKeyColumns = new DataColumn[1];
-    PrimaryKeyColumns[0] = table.Columns["id"];
-    table.PrimaryKey = PrimaryKeyColumns;
+    // Make the ID column the primary key column
+    var primaryKeyColumns = new System.Data.DataColumn[1];
+    primaryKeyColumns[0] = table.Columns["id"];
+    table.PrimaryKey = primaryKeyColumns;
 
     // Create three new DataRow objects and add
     // them to the DataTable
     var rand = new Random();
+    System.Data.DataRow row;
     for (int i = 1; i <= 4; i++)
     {
         row = table.NewRow();

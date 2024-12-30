@@ -86,59 +86,64 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractParagraph()
+private static void ExtractParagraphWithDrawingTheBorder()
 {
-    // The path to the documents directory.
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    Document document = new Document(dataDir + "input.pdf");
-    Page page = document.Pages[2];
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    ParagraphAbsorber absorber = new ParagraphAbsorber();
-    absorber.Visit(page);
-
-    PageMarkup markup = absorber.PageMarkups[0];
-
-    foreach (MarkupSection section in markup.Sections)
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
-        DrawRectangleOnPage(section.Rectangle, page);
-        foreach (MarkupParagraph paragraph in section.Paragraphs)
-        {
-            DrawPolygonOnPage(paragraph.Points, page);
-        }
-    }
+        var page = document.Pages[2];
 
-    document.Save(dataDir + "output_out.pdf");
+        var absorber = new Aspose.Pdf.Text.ParagraphAbsorber();
+        absorber.Visit(page);
+
+        Aspose.Pdf.Text.PageMarkup markup = absorber.PageMarkups[0];
+
+        foreach (Aspose.Pdf.Text.MarkupSection section in markup.Sections)
+        {
+            DrawRectangleOnPage(section.Rectangle, page);
+            foreach (Aspose.Pdf.Text.MarkupParagraph paragraph in section.Paragraphs)
+            {
+                DrawPolygonOnPage(paragraph.Points, page);
+            }
+        }
+
+        // Save the document
+        document.Save(dataDir + "DocumentWithBorder_out.pdf");
+    }
 }
 
-private static void DrawRectangleOnPage(Rectangle rectangle, Page page)
+private static void DrawRectangleOnPage(Aspose.Pdf.Rectangle rectangle, Aspose.Pdf.Page page)
 {
-    page.Contents.Add(new Operators.GSave());
-    page.Contents.Add(new Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
-    page.Contents.Add(new Operators.SetRGBColorStroke(0, 1, 0));
-    page.Contents.Add(new Operators.SetLineWidth(2));
+    page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+    page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+    page.Contents.Add(new Aspose.Pdf.Operators.SetRGBColorStroke(0, 1, 0));
+    page.Contents.Add(new Aspose.Pdf.Operators.SetLineWidth(2));
     page.Contents.Add(
-        new Operators.Re(rectangle.LLX,
+        new Aspose.Pdf.Operators.Re(rectangle.LLX,
             rectangle.LLY,
             rectangle.Width,
             rectangle.Height));
-    page.Contents.Add(new Operators.ClosePathStroke());
-    page.Contents.Add(new Operators.GRestore());
+    page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
+    page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 }
 
-private static void DrawPolygonOnPage(Point[] polygon, Page page)
+private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Page page)
 {
-    page.Contents.Add(new Operators.GSave());
-    page.Contents.Add(new Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
-    page.Contents.Add(new Operators.SetRGBColorStroke(0, 0, 1));
-    page.Contents.Add(new Operators.SetLineWidth(1));
-    page.Contents.Add(new Operators.MoveTo(polygon[0].X, polygon[0].Y));
+    page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+    page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
+    page.Contents.Add(new Aspose.Pdf.Operators.SetRGBColorStroke(0, 0, 1));
+    page.Contents.Add(new Aspose.Pdf.Operators.SetLineWidth(1));
+    page.Contents.Add(new Aspose.Pdf.Operators.MoveTo(polygon[0].X, polygon[0].Y));
     for (int i = 1; i < polygon.Length; i++)
     {
-        page.Contents.Add(new Operators.LineTo(polygon[i].X, polygon[i].Y));
+        page.Contents.Add(new Aspose.Pdf.Operators.LineTo(polygon[i].X, polygon[i].Y));
     }
-    page.Contents.Add(new Operators.LineTo(polygon[0].X, polygon[0].Y));
-    page.Contents.Add(new Operators.ClosePathStroke());
-    page.Contents.Add(new Operators.GRestore());
+    page.Contents.Add(new Aspose.Pdf.Operators.LineTo(polygon[0].X, polygon[0].Y));
+    page.Contents.Add(new Aspose.Pdf.Operators.ClosePathStroke());
+    page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 }
 ```
 
@@ -148,39 +153,45 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Open an existing PDF file
-Document document = new Document(dataDir + "input.pdf");
-// Instantiate ParagraphAbsorber
-ParagraphAbsorber absorber = new ParagraphAbsorber();
-absorber.Visit(document);
-
-foreach (PageMarkup markup in absorber.PageMarkups)
+private static void ExtractParagraphByIteratingThroughParagraphsCollection()
 {
-    int i = 1;
-    foreach (MarkupSection section in markup.Sections)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
-        int j = 1;
-        foreach (MarkupParagraph paragraph in section.Paragraphs)
+        // Instantiate ParagraphAbsorber
+        var absorber = new Aspose.Pdf.Text.ParagraphAbsorber();
+        absorber.Visit(document);
+
+        foreach (Aspose.Pdf.Text.PageMarkup markup in absorber.PageMarkups)
         {
-            StringBuilder paragraphText = new StringBuilder();
-            foreach (List<TextFragment> line in paragraph.Lines)
+            int i = 1;
+            foreach (Aspose.Pdf.Text.MarkupSection section in markup.Sections)
             {
-                foreach (TextFragment fragment in line)
+                int j = 1;
+                foreach (Aspose.Pdf.Text.MarkupParagraph paragraph in section.Paragraphs)
                 {
-                    paragraphText.Append(fragment.Text);
+                    StringBuilder paragraphText = new StringBuilder();
+                    foreach (List<Aspose.Pdf.Text.TextFragment> line in paragraph.Lines)
+                    {
+                        foreach (Aspose.Pdf.Text.TextFragment fragment in line)
+                        {
+                            paragraphText.Append(fragment.Text);
+                        }
+                        paragraphText.Append("\r\n");
+                    }
+                    paragraphText.Append("\r\n");
+
+                    Console.WriteLine("Paragraph {0} of section {1} on page {2}:", j, i, markup.Number);
+                    Console.WriteLine(paragraphText.ToString());
+
+                    j++;
                 }
-                paragraphText.Append("\r\n");
+                i++;
             }
-            paragraphText.Append("\r\n");
-
-            Console.WriteLine("Paragraph {0} of section {1} on page {2}:", j, i, markup.Number);
-            Console.WriteLine(paragraphText.ToString());
-
-            j++;
         }
-        i++;
     }
 }
 ```

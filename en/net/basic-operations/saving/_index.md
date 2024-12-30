@@ -86,15 +86,20 @@ You can save the created or manipulated PDF document to file system using `Save`
 When you do not provide the format type (options), then the document is saved in Aspose.PDF v.1.7 (*.pdf) format.
 
 ```csharp
-public static void SaveDocument()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocument()
 {
-    var originalFileName = dataDir + "SimpleResume.pdf";
-    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var document = new Document(originalFileName);
-    // make some manipation, i.g add new empty page
-    document.Pages.Add();
-    document.Save(modifiedFileName);
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save the document
+        document.Save(dataDir + "SimpleResumeModified.pdf");
+    }
 }
 ```
 
@@ -103,28 +108,21 @@ public static void SaveDocument()
 You can also save the created or manipulated PDF document to stream by using overloads of `Save` methods.
 
 ```csharp
-public static void SaveDocumentStream()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentStream()
 {
-    var originalFileName = dataDir + "SimpleResume.pdf";
-    var modifiedFileName = dataDir + "SimpleResumeModified.pdf";
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var document = new Document(originalFileName);
-    // make some manipation, i.g add new empty page
-    document.Pages.Add();
-    document.Save(System.IO.File.OpenWrite(modifiedFileName));
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save the document
+        document.Save(System.IO.File.OpenWrite(dataDir + "SimpleResumeModified.pdf"));
+    }
 }
-```
-
-## Save PDF document in Web applications
-
-To save documents in Web applications, you can use the ways proposed above. In addition, the `Document` class has overloaded method `Save` for using with the [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8) class.
-
-```csharp
-var originalFileName = dataDir + "SimpleResume.pdf";
-var document = new Document(originalFileName);
-// make some manipulation, i.g add a new empty page
-document.Pages.Add();
-document.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
 ```
 
 For more detailed explanation please follow to [Showcase](/pdf/net/showcases/) section.
@@ -139,11 +137,21 @@ PDF/X is a subset of the PDF ISO standard. The purpose of PDF/X is to facilitate
 In both cases, the `Save` method is used to store the documents, while the documents must be prepared using the `Convert` method.
 
 ```csharp
-public static void SaveDocumentAsPDFx()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentAsPDFx()
 {
-    var document = new Document("..\\..\\..\\Samples\\SimpleResume.pdf");
-    document.Pages.Add();
-    document.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-    document.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Add a new page
+        document.Pages.Add();
+        // Convert a document to a PDF/X-3 format
+        document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
+        // Save the document
+        document.Save(dataDir + "SimpleResume_X3.pdf");
+    }
 }
 ```
