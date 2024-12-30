@@ -145,9 +145,9 @@ private static void RemoveBatesNumbering()
             var batesNum = page.Artifacts.FirstOrDefault(ar => ar.CustomSubtype == "BatesN");
             if (batesNum != null)
             {
+                // Remove bates numbering
                 page.Artifacts.Delete(batesNum);   
             }
- 
         }
         // Save document
         document.Save(dataDir + "RemoveBatesNumbering_out.pdf");
