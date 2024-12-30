@@ -100,7 +100,7 @@ private static void ModifyAnnotationsAuthor()
 }
 ```
 
-The second method allows you to delete all the annotations of a specified type.
+The second method allows you to modify annotations.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
