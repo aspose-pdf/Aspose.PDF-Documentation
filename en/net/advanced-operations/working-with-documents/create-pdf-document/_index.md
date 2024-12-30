@@ -149,7 +149,7 @@ private static void ConvertDocumentWithHocr(string file)
         }
 
         // Save the document
-        document.Save(file);
+        document.Save(dataDir + "TextBox_out.pdf");
     }
 }
 
@@ -261,7 +261,7 @@ private static void ProcessTaggedContent(string somePdfFilePath, string output)
 		}
 
 		// Save the document
-		document.Save(output);
+		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }
 ```

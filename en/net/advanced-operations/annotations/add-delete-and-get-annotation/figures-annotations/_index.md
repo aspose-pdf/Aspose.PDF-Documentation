@@ -146,7 +146,7 @@ private static void AddLineAnnotation()
 		document.Pages[1].Annotations.Add(lineAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "Appartments_mod.pdf");
+		document.Save(dataDir + "Appartments_mod_out.pdf");
 	}
 }
 ```
@@ -206,7 +206,7 @@ private static void AddCircleAndSquareAnnotations()
 		document.Pages[1].Annotations.Add(squareAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "appartments_mod.pdf");
+		document.Save(dataDir + "appartments_mod_out.pdf");
 	}
 }
 ```
@@ -295,7 +295,7 @@ private static void AddPolygonAndPolylineAnnotations()
 		document.Pages[1].Annotations.Add(polylineAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "appartments_mod.pdf");
+		document.Save(dataDir + "appartments_mod_out.pdf");
 	}
 }
 ```
@@ -481,7 +481,7 @@ private static void DeleteLineAnnotations()
 		}
 
 		// Save the updated document
-		document.Save(dataDir + "Appartments_mod_deleted_lines.pdf");
+		document.Save(dataDir + "Appartments_mod_deleted_lines_out.pdf");
 	}
 }
 ```
@@ -512,7 +512,7 @@ private static void DeleteCircleAndSquareAnnotations()
 		}
 
 		// Save the updated document
-		document.Save(dataDir + "Appartments_del.pdf");
+		document.Save(dataDir + "Appartments_del_out.pdf");
 	}
 }
 ```
@@ -544,7 +544,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 		}
 
 		// Save the updated document
-		document.Save(dataDir + "Appartments_del.pdf");
+		document.Save(dataDir + "Appartments_del_out.pdf");
 	}
 }
 ```
@@ -602,7 +602,7 @@ private static void AddInkAnnotation()
 		page.Annotations.Add(ia);
 
 		// Save the updated document
-		document.Save(dataDir + "appartments_mod.pdf");
+		document.Save(dataDir + "appartments_mod_out.pdf");
 	}
 }
 ```

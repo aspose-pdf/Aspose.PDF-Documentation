@@ -276,7 +276,7 @@ private static void CreateTocWithCustomFormatting()
 		}
 
 		// Save the Pdf
-		document.Save(outFile);
+		document.Save(dataDir + "TOC_out.pdf");
 	}
 }
 ```
@@ -353,7 +353,7 @@ private static void CreateTocWithHiddenPageNumbers()
 		}
 
 		// Save the Pdf
-		document.Save(outFile);
+		document.Save(dataDir + "TOC_out.pdf");
 	}
 }
 ```

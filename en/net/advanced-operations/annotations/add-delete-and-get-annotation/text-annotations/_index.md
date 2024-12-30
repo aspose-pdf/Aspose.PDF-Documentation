@@ -425,7 +425,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 		document.Pages[1].Annotations.Add(freetext);
 
 		// Save the updated document
-		document.Save($"{dataDir}SetFreeTextAnnotationFormatting_out.pdf");
+		document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
 	}
 }
 ```

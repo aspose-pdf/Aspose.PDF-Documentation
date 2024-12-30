@@ -86,8 +86,11 @@ The next code snippet creates a new Document object using an input variable that
 
 private static void ClearTextInForm(string input, string output)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (cument = new Aspose.Pdf.Document(input))
+    using (cument = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;
@@ -110,7 +113,7 @@ private static void ClearTextInForm(string input, string output)
 		}
 
 		// Save the modified document
-		document.Save(output);
+		document.Save(dataDir + "TextBox_out.pdf");
 	}	
 }
 ```
@@ -145,7 +148,7 @@ private static void DeleteSpecifiedForm(string input, string output)
 		}
 
 		// Save the modified document
-		document.Save(output);
+		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }
 ```
@@ -177,7 +180,7 @@ private static void DeleteSpecifiedForm(string input, string output)
 		}
 
 		// Save the modified document
-		document.Save(output);
+		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }
 ```
@@ -204,7 +207,7 @@ private static void RemoveAllForms(string input, string output)
 		forms.Clear();
 
 		// Save the modified document
-		document.Save(output);
+		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }
 ```
