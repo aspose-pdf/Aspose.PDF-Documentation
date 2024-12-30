@@ -86,7 +86,7 @@ For example, in the following code, consider changing the author in our annotati
 private static void ModifyAnnotationsAuthor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Create PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
@@ -107,7 +107,7 @@ The second method allows you to delete all the annotations of a specified type.
 private static void ModifyAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
@@ -123,7 +123,7 @@ private static void ModifyAnnotations()
                 new Aspose.Pdf.Rectangle(1, 1, 1, 1),
                 defaultAppearance)
             {
-                // Set new annotation attributees
+                // Set new annotation attributes
                 Title = "Aspose.PDF Demo User",
                 Subject = "Technical Article"
             };

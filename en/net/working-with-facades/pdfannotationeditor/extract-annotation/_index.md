@@ -88,14 +88,16 @@ private static void ExtractAnnotation()
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
-        var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
-        annotationEditor.BindPdf(document);
-        // Extract annotations
-        var annotationTypes = new[] { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Text };
-        var annotations = annotationEditor.ExtractAnnotations(1, 2, annotationTypes);
-        foreach (var annotation in annotations)
+        using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
-            Console.WriteLine(annotation.Contents);
+            annotationEditor.BindPdf(document);
+            // Extract annotations
+            var annotationTypes = new[] { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Text };
+            var annotations = annotationEditor.ExtractAnnotations(1, 2, annotationTypes);
+            foreach (var annotation in annotations)
+            {
+                Console.WriteLine(annotation.Contents);
+            }
         }
     }
 }
