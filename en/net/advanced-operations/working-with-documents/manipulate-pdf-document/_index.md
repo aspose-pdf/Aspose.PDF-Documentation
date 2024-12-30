@@ -206,9 +206,6 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 
 private static void CreateTocWithCustomFormatting()
 {
-    // Output file name
-    string outFile = "TOC.pdf";
-
     // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
@@ -429,7 +426,7 @@ private static void SetExpiryDate()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Instantiate Document object
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file

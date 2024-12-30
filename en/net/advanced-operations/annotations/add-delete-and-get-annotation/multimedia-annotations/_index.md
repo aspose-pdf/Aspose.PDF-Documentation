@@ -494,7 +494,7 @@ private static void Add3dAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Create a new PDF document
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Load 3D content

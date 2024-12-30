@@ -140,7 +140,7 @@ private static void AddRadioButtonToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Instantiate Document object
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
@@ -174,7 +174,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Instantiate Document object
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
@@ -322,7 +322,7 @@ private static void AddComboBoxToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create Document object
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add page to document object

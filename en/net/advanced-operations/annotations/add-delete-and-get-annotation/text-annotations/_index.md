@@ -227,7 +227,7 @@ private static void AddFreeTextCalloutAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Create a new PDF document
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		var page = document.Pages.Add();

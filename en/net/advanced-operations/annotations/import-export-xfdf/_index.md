@@ -131,7 +131,7 @@ private static void ImportAnnotationFromXfdf()
     // Create PdfAnnotationEditor object
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
 	{
-		// Create a new PDF document
+		// Create a new document
 		using (var document = new Aspose.Pdf.Document())
 		{
 			document.Pages.Add();
@@ -167,7 +167,7 @@ private static void ImportAnnotationFromPDF()
     // Open existing PDF document (one page with annotations)
     using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
 	{
-		// Create a new PDF document
+		// Create a new document
 		using (var documentTo = new Aspose.Pdf.Document())
 		{
 			documentTo.Pages.Add();

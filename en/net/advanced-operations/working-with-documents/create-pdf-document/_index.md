@@ -102,7 +102,7 @@ private static void CreateHelloWorldPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Initialize document object
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add page

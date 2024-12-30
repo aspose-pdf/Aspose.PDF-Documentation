@@ -295,7 +295,7 @@ private static void EmbedFontWhileCreatingPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Instantiate Pdf object by calling its empty constructor
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Create a section in the Pdf object

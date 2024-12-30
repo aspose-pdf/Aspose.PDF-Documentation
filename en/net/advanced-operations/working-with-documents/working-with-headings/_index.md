@@ -106,7 +106,7 @@ private static void ApplyNumberStyleToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new PDF document
+    // Create a new document
     using (var document = new Aspose.Pdf.Document())
 	{
 		document.PageInfo.Width = 612.0;
