@@ -713,7 +713,7 @@ private static void ConvertPostScriptToPDF()
     // Convert options
     var options = new PsLoadOptions();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.ps", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "PSToPDF_out.pdf");
@@ -729,15 +729,15 @@ private static void ConvertPostscriptToPDFAdvanced()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
     // Convert options with custom font folders
     var options = new Aspose.Pdf.PsLoadOptions
     {
         FontsFolders = new[] { dataDir + @"\fonts1", dataDir + @"\fonts2" }
     };
-
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.ps", options))
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
+        // Save document in PDF format
         document.Save(dataDir + "ConvertPostscriptToPDFAdvanced_out.pdf");
     }
 }
