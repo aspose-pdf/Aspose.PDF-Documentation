@@ -98,7 +98,7 @@ private static void SaveDocument()
         // Make some manipation, i.g add new empty page
         document.Pages.Add();
         // Save the document
-        document.Save(dataDir + "SimpleResumeModified.pdf");
+        document.Save(dataDir + "SimpleResume_out.pdf");
     }
 }
 ```
@@ -120,7 +120,7 @@ private static void SaveDocumentStream()
         // Make some manipation, i.g add new empty page
         document.Pages.Add();
         // Save the document
-        document.Save(System.IO.File.OpenWrite(dataDir + "SimpleResumeModified.pdf"));
+        document.Save(dataDir + "SimpleResume_out.pdf");
     }
 }
 ```
