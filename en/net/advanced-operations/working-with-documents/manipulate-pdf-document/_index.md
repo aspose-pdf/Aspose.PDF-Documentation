@@ -436,7 +436,7 @@ private static void SetExpiryDate()
         document.Pages.Add();
 
         // Add text fragment to paragraphs collection of page object
-        document.Pages[1].Paragraphs.Add(new TextFragment("Hello World..."));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World..."));
 
         // Create JavaScript object to set PDF expiry date
         JavascriptAction javaScript = new JavascriptAction(
