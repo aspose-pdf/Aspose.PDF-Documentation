@@ -164,7 +164,7 @@ private static void MultiColumnLayout()
         }
         // Add a box to a page
         page.Paragraphs.Add(box);
-        // Save document
+        // Save the document
         document.Save(dataDir + "sample_out.pdf");
     }
 }
@@ -180,7 +180,7 @@ We will do the same with the following example as the previous one. The differen
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MultiColumnLayout2()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
     // Create the document
@@ -218,7 +218,7 @@ private static void MultiColumnLayout2()
 
         // Add a box to a page
         page.Paragraphs.Add(box);
-        // Save document
+        // Save the document
         document.Save(dataDir + "sample_out.pdf");
     }
 }

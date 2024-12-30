@@ -83,7 +83,7 @@ private static void ExtractAttachments()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-    // Create extractor
+    // Create the extractor
     using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
         pdfExtractor.BindPdf(dataDir + "GetAlltheAttachments.pdf");

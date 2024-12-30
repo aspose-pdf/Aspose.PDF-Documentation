@@ -97,7 +97,7 @@ private static void ReplaceTextInAllPages()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextAll.pdf"))
     {
         // Create TextAbsorber object to find all instances of the input search phrase
@@ -120,7 +120,7 @@ private static void ReplaceTextInAllPages()
             textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "ReplaceTextAll_out.pdf");
     }
 }
@@ -137,7 +137,7 @@ private static void ReplaceTextInParticularPageRegion()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "programaticallyproducedpdf.pdf"))
     {
         // instantiate TextFragment Absorber object
@@ -159,7 +159,7 @@ private static void ReplaceTextInParticularPageRegion()
             textFragment.Text = "";
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "ReplaceTextInParticularPageRegion_out.pdf");
     }
 }
@@ -176,7 +176,7 @@ private static void ReplaceTextBasedOnARegularExpression()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionPage.pdf"))
     {
 
@@ -204,7 +204,7 @@ private static void ReplaceTextBasedOnARegularExpression()
             textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "ReplaceTextonRegularExpression_out.pdf");
     }
 }
@@ -221,7 +221,7 @@ private static void ReplaceFonts()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextPage.pdf"))
     {
         // Create text edit options
@@ -243,7 +243,7 @@ private static void ReplaceFonts()
             }
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "ReplaceFonts_out.pdf");
     }
 }
@@ -262,7 +262,7 @@ private static void AutomaticallyReArrangePageContents()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
     {
         // Create TextFragment Absorber object with regular expression
@@ -281,7 +281,7 @@ private static void AutomaticallyReArrangePageContents()
             textFragment.Text = "This is a Larger String for the Testing of this issue";
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "RearrangeContentsUsingTextReplacement_out.pdf");
     }
 }
@@ -332,7 +332,7 @@ private static void RenderingReplaceableSymbols()
         // Add the TextParagraph using TextBuilder
         textBuilder.AppendParagraph(par);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
     }
 }
@@ -472,7 +472,7 @@ private static void ReplaceableSymbolsInHeaderOrFooterArea()
             }
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
     }
 }
@@ -510,7 +510,7 @@ private static void RemoveUnusedFonts()
             textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial, Bold");
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "RemoveUnusedFonts_out.pdf");
     }
 }

@@ -91,7 +91,7 @@ private static void OpenDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
         Console.WriteLine("Pages " + document.Pages.Count);
@@ -117,7 +117,7 @@ private static void OpenDocumentStream()
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(stream))
     {
         Console.WriteLine("Pages " + document.Pages.Count);
@@ -131,7 +131,7 @@ private static void OpenDocumentStream()
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocumentWithPassword()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
     const string password = "Aspose2020";

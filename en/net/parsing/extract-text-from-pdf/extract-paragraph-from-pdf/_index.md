@@ -91,7 +91,7 @@ private static void ExtractParagraphWithDrawingTheBorder()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
         var page = document.Pages[2];
@@ -110,7 +110,7 @@ private static void ExtractParagraphWithDrawingTheBorder()
             }
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "DocumentWithBorder_out.pdf");
     }
 }
@@ -158,7 +158,7 @@ private static void ExtractParagraphByIteratingThroughParagraphsCollection()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
         // Instantiate ParagraphAbsorber

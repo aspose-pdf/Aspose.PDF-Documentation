@@ -91,7 +91,7 @@ private static void Search()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
 
@@ -131,7 +131,7 @@ private static void Search()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
 
@@ -166,7 +166,7 @@ private static void Search()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionAll.pdf"))
     {
         // Create TextAbsorber object to find all instances of the input search phrase
@@ -192,7 +192,7 @@ private static void Search()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextPage.pdf"))
     {
 
@@ -235,7 +235,7 @@ private static void Search()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
 
@@ -259,7 +259,7 @@ private static void Search()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionAll.pdf"))
     {
 
@@ -300,22 +300,22 @@ private static void Search()
 private static void TextFragmentAbsorberCtor()
 {
     Aspose.Pdf.Text.TextFragmentAbsorber textFragmentAbsorber;
-    // In order to search exact match of a word, you may consider using regular expression.
+    // In order to search exact match of a word, you may consider using regular expression
     textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(@"\bWord\b", new Aspose.Pdf.Text.TextSearchOptions(true));
 
-    // In order to search a string in either upper case or lowercase, you may consider using regular expression.
+    // In order to search a string in either upper case or lowercase, you may consider using regular expression
     textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("(?i)Line", new Aspose.Pdf.Text.TextSearchOptions(true));
 
-    // In order to search all the strings (parse all strings) inside PDF document, please try using following regular expression.
+    // In order to search all the strings (parse all strings) inside PDF document, please try using following regular expression
     textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(@"[\S]+");
 
-    // Find match of search string and get anything after the string till line break.
+    // Find match of search string and get anything after the string till line break
     textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(@"(?i)the ((.)*)");
 
-    // Please use following regular expression to find text following to the regex match.
+    // Please use following regular expression to find text following to the regex match
     textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(@"(?<=word).*");
 
-    // In order to search Hyperlink/URL's inside PDF document, please try using following regular expression.
+    // In order to search Hyperlink/URL's inside PDF document, please try using following regular expression
     textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber(@"(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?");
 }
 ```
@@ -372,7 +372,7 @@ private static void Search()
                 (float)textFragment.Rectangle.URX, (float)textFragment.Rectangle.LLY - 1, 1, 1, blue, "S", dashArray, LEArray);
         }
 
-        // Save document
+        // Save the document
         editor.Save(dataDir + "SearchTextAndAddHyperlink_out.pdf");
         editor.Close();
     }
@@ -392,7 +392,7 @@ private static void SearchAndDraw()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
 
@@ -414,7 +414,7 @@ private static void SearchAndDraw()
                 }
             }
         }
-        // Save document
+        // Save the document
         document.Save(dataDir + "SearchTextAndDrawRectangle_out.pdf");
     }
 }
@@ -439,7 +439,7 @@ private static void SearchAndHighlight()
 
     int resolution = 150;
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
 
@@ -509,7 +509,7 @@ private static void SearchAndHighlight()
                         }
                     }
                 }
-
+                // Save result
                 bmp.Save(dataDir + "HighlightCharacterInPDF_out.png", System.Drawing.Imaging.ImageFormat.Png);
             }
         }
@@ -540,7 +540,7 @@ private static void CreateAndSearchText()
 
         page.Paragraphs.Add(frag1);
         page.Paragraphs.Add(frag2);
-        // Save document
+        // Save the document
         document.Save(dataDir + "CreateAndSearchText_out.pdf");
     }
 
@@ -574,7 +574,7 @@ private static void Search()
     // Create Regex object to find all words
     var regex = new System.Text.RegularExpressions.Regex(@"[\S]+");
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchTextRegex.pdf"))
     {
 

@@ -88,7 +88,7 @@ private static void ExtractTextFromDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextAll.pdf"))
     {
         // Create TextAbsorber object to extract text
@@ -121,7 +121,7 @@ private static void ExtractTextFromPage()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
     {
 
@@ -168,13 +168,13 @@ private static void ExtractTextFromPagesWithTextDevice()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     var builder = new System.Text.StringBuilder();
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
     {
         // String to hold extracted text
         string extractedText = "";
 
-        foreach (var pdfPage in document.Pages)
+        foreach (var page in document.Pages)
         {
             using (MemoryStream textStream = new MemoryStream())
             {
@@ -186,7 +186,7 @@ private static void ExtractTextFromPagesWithTextDevice()
                 textDevice.ExtractionOptions = textExtOptions;
 
                 // Convert a particular page and save text to the stream
-                textDevice.Process(pdfPage, textStream);
+                textDevice.Process(page, textStream);
                 // Convert a particular page and save text to the stream
                 textDevice.Process(document.Pages[1], textStream);
 
@@ -216,7 +216,7 @@ private static void ExtractTextFromParticularPageRegion()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextAll.pdf"))
     {
         // Create TextAbsorber object to extract text
@@ -254,7 +254,7 @@ private static void ExtractTextBasedOnColumns()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     var extractedText = string.Empty;
-    // Open document
+    // Open the document
     using (var sourceDocument = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
     {
 
@@ -298,7 +298,7 @@ private static void ExctractTextWithScaleFactor()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
     {
 
@@ -335,7 +335,7 @@ private static void ExtractHighlightedTextFromDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractHighlightedText.pdf"))
     {
         // Loop through all the annotations
@@ -371,7 +371,7 @@ private static void AccessTextFragmentAndSegmentElementsFromXML()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create document
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         document.BindXml(dataDir + "40014.xml");
@@ -383,7 +383,7 @@ private static void AccessTextFragmentAndSegmentElementsFromXML()
         var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
         segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
 
-        // save document
+        // Save the document
         document.Save(dataDir + "DocumentFromXML_out.pdf");
     }
 }

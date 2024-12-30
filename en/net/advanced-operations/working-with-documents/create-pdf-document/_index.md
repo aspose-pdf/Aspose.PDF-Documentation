@@ -108,7 +108,7 @@ private static void CreateDocument()
         var page = document.Pages.Add();
         // Add text to new page
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-        // Save document
+        // Save the document
         document.Save(dataDir + "HelloWorld_out.pdf");
     }
 }
@@ -134,7 +134,7 @@ private static void CreateSearchableDocument()
     {
         document.Convert(CallBackGetHocr);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "SearchableDocument_out.pdf");
     }
 }
@@ -227,13 +227,13 @@ private static void CreateAnAccessibleDocument()
     // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
-        // Access tagged content.
+        // Access tagged content
         Aspose.Pdf.Tagged.ITaggedContent content = document.TaggedContent;
-        // Create a span element.
+        // Create a span element
         Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
-        // Append span to root element.
+        // Append span to root element
         content.RootElement.AppendChild(span);
-        // Iterate over page contents.
+        // Iterate over page contents
         foreach (var op in document.Pages[1].Contents)
         {
             var bdc = op as Aspose.Pdf.Operators.BDC;
@@ -242,8 +242,8 @@ private static void CreateAnAccessibleDocument()
                 span.Tag(bdc);
             }
         }
-        // Save document
-        document.Save(dataDir + "AccessibleDocument.pdf");
+        // Save the document
+        document.Save(dataDir + "AccessibleDocument_out.pdf");
     }
 }
 ```

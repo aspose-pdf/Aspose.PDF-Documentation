@@ -94,10 +94,10 @@ private static void AddTooltipToSearchedText()
     {
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
         document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
-        // Save document
+        // Save the document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -138,7 +138,7 @@ private static void AddTooltipToSearchedText()
             document.Form.Add(field);
         }
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
 }
@@ -170,15 +170,16 @@ private static void CreateHiddenTextBlock()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create sample document with text
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add paragraph with text
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
+        // Save the document
         document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 
-    // Open document with text
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -214,8 +215,8 @@ private static void CreateHiddenTextBlock()
 
         // Create invisible button on text fragment position
         var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
-        // Create new hide action for specified field (annotation) and invisibility flag.
-        // (You also may reffer floating field by the name if you specified it above.)
+        // Create new hide action for specified field (annotation) and invisibility flag
+        // (You also may reffer floating field by the name if you specified it above)
         // Add actions on mouse enter/exit at the invisible button field
         buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
         buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
@@ -223,7 +224,7 @@ private static void CreateHiddenTextBlock()
         // Add button field to the document
         document.Form.Add(buttonField);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 }

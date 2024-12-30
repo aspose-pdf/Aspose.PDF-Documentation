@@ -120,7 +120,7 @@ private static void AddText()
         // Append the text fragment to the PDF page
         textBuilder.AppendText(textFragment);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -138,7 +138,7 @@ private static void LoadingFontFromStream()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     string fontFile = "";
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "LoadFonts.pdf"))
     {
         // Create text builder object for first page of document
@@ -159,7 +159,7 @@ private static void LoadingFontFromStream()
                 textBuilder.AppendText(textFragment);
             }
 
-            // Save document
+            // Save the document
             document.Save(dataDir + "LoadingFontFromStream_out.pdf");
         }
     }
@@ -200,7 +200,7 @@ private static void AddTextWithTextParagraph()
         // Add paragraph
         builder.AppendParagraph(paragraph);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddTextUsingTextParagraph_out.pdf");
     }
 }
@@ -247,7 +247,7 @@ private static void AddHyperlinkToTextSegment()
         // Add TextFragment to paragraphs collection of page object
         page.Paragraphs.Add(fragment);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddHyperlinkToTextSegment_out.pdf");
     }
 }
@@ -281,7 +281,7 @@ private static void UseOTFFont()
         // Add TextFragment to paragraphs collection of Page instance
         page.Paragraphs.Add(fragment);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "OTFFont_out.pdf");
     }
 }
@@ -314,7 +314,7 @@ private static void AddHTMLStringUsingDOM()
         // Add HTML Fragment to paragraphs collection of page
         page.Paragraphs.Add(title);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddHTMLUsingDOM_out.pdf");
     }
 }
@@ -338,7 +338,7 @@ private static void AddHTMLOrderedListIntoDocument()
         var page = document.Pages.Add();
         // Add HtmlFragment inside page 
         page.Paragraphs.Add(fragment);
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf");
     }
 }
@@ -363,7 +363,7 @@ private static void SetHTMLStringFormatting()
         var page = document.Pages.Add();
         // Add HtmlFragment inside page 
         page.Paragraphs.Add(fragment);
-        // Save document
+        // Save the document
         document.Save(dataDir + "SetHTMLStringFormatting_out.pdf");
     }
 }
@@ -393,7 +393,7 @@ private static void AddHTMLUsingDOMAndOverwrite()
         title.Margin.Top = 400;
         // Add HTML Fragment to paragraphs collection of page
         page.Paragraphs.Add(title);
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf");
     }
 }
@@ -461,7 +461,7 @@ private static void CustomLineStyleForFootNote()
         // Add second text fragment to paragraphs collection of PDF file
         page.Paragraphs.Add(text);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CustomLineStyleForFootNote_out.pdf");
     }
 }
@@ -519,7 +519,7 @@ private static void CustomizeFootNoteLabel()
         // Add TextFragment to paragraphs collection of first page of document
         page.Paragraphs.Add(text);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CustomizeFootNoteLabel_out.pdf");
     }
 }
@@ -558,7 +558,7 @@ private static void AddImageAndTable()
         table.Rows.Add().Cells.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Row 1 Cell 1"));
         text.FootNote.Paragraphs.Add(table);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddImageAndTable_out.pdf");
     }
 }
@@ -590,7 +590,7 @@ private static void CreateEndNotes()
         // Add TextFragment to paragraphs collection of first page of document
         page.Paragraphs.Add(text);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CreateEndNotes_out.pdf");
     }
 }
@@ -638,7 +638,7 @@ private static void TextAndImageAsParagraph()
         // Add newly created TextFragment to paragraphs collection of page
         page.Paragraphs.Add(text);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "TextAndImageAsParagraph_out.pdf");
     }
 }
@@ -676,7 +676,7 @@ private static void CharacterSpacingUsingTextBuilderAndFragment()
         // Append TextFragment to TextBuilder instance
         builder.AppendText(wideFragment);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndFragment_out.pdf");
     }
 }
@@ -711,7 +711,7 @@ private static void CharacterSpacingUsingTextBuilderAndParagraph()
         // Append TextParagraph to TextBuilder instance
         builder.AppendParagraph(paragraph);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CharacterSpacingUsingTextBuilderAndParagraph_out.pdf");
     }
 }
@@ -746,7 +746,7 @@ private static void CharacterSpacingUsingTextStamp()
         // Add textual stamp to page instance
         stamp.Put(page);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CharacterSpacingUsingTextStamp_out.pdf");
     }
 }
@@ -824,7 +824,7 @@ private static void CreateMultiColumnPdf()
 
         page.Paragraphs.Add(box);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CreateMultiColumnPdf_out.pdf");
     }
 }
@@ -887,7 +887,7 @@ private static void CustomTabStops()
         page.Paragraphs.Add(text1);
         page.Paragraphs.Add(text2);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "CustomTabStops_out.pdf");
     }
 }
@@ -932,7 +932,7 @@ private static void AddTransparentText()
         // Add text to paragraphs collection of page instance
         page.Paragraphs.Add(text);
 
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddTransparentText_out.pdf");
     }
 }
@@ -980,7 +980,7 @@ private static void SpecifyLineSpacing()
                 page.Paragraphs.Add(textFragment);
             }
 
-            // Save document
+            // Save the document
             document.Save(dataDir + "SpecifyLineSpacing_out.pdf");
         }
     }

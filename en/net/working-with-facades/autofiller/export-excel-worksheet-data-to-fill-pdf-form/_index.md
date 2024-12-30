@@ -121,9 +121,9 @@ private static void ExportExcelToPdfForm()
             autoFiller.InputFileName = dataDir + "DataTableExample.pdf";
             // The resultant pdf, that will contain the form fields filled with information from DataTable
             autoFiller.OutputFileName = dataDir + "DataTableExample_out.pdf";
-            // Call the method to import the data from DataTable object into Pdf form fields.
+            // Call the method to import the data from DataTable object into Pdf form fields
             autoFiller.ImportDataTable(dataTable);
-            // Call the save method to generate the pdf file
+            // Save the  document
             autoFiller.Save();
         }
     }
@@ -147,10 +147,10 @@ private static void FillFromXLSX()
 
         System.Data.DataTable dataTable = GenerateDataTable();
 
-        // Call the method to import the data from DataTable object into Pdf form fields.
+        // Call the method to import the data from DataTable object into Pdf form fields
         autoFiller.ImportDataTable(dataTable);
 
-        // The resultant pdf, that will contain the form fields filled with information from DataTable
+        // Save the document
         autoFiller.Save(dataDir + "Sample-Form-01_out.pdf");
     }
 }

@@ -122,7 +122,7 @@ private static void RotateTextInsidePDF()
         textBuilder.AppendText(textFragment1);
         textBuilder.AppendText(textFragment2);
         textBuilder.AppendText(textFragment3);
-        // Save document
+        // Save the document
         document.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
     }
 }
@@ -171,7 +171,7 @@ private static void RotateTextInsidePDF()
         var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
         // Append the text paragraph to the PDF page
         textBuilder.AppendParagraph(paragraph);
-        // Save document
+        // Save the document
         document.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
     }
 }
@@ -213,7 +213,7 @@ private static void RotateTextInsidePDF()
         page.Paragraphs.Add(textFragment1);
         page.Paragraphs.Add(textFragment2);
         page.Paragraphs.Add(textFragment3);
-        // Save document
+        // Save the document
         document.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
     }
 }
@@ -269,7 +269,7 @@ private static void RotateTextInsidePDF()
             // Append the text fragment to the PDF page
             textBuilder.AppendParagraph(paragraph);
         }
-        // Save document
+        // Save the document
         document.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
     }
 }

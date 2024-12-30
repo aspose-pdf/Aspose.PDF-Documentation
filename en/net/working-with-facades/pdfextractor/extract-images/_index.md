@@ -83,7 +83,7 @@ private static void ExtractImagesWholePDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open input PDF
+    // Open the document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
@@ -111,7 +111,7 @@ private static void ExtractImagesWholePDFStreams()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open input PDF
+    // Open the document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
@@ -146,7 +146,7 @@ private static void ExtractImagesParticularPage()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open input PDF
+    // Open the document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
@@ -230,7 +230,7 @@ private static void ExtractImagesImageExtractionMode()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open input PDF
+    // Open the document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");

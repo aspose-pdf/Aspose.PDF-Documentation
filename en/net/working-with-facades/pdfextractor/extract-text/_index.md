@@ -89,7 +89,6 @@ private static void ExtractText()
     // Create an object of the PdfExtractor class
     using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-
         // Bind the input PDF
         pdfExtractor.BindPdf(dataDir + "sample.pdf");
 
@@ -127,7 +126,6 @@ private static void ExtractTextExtractonMode()
     // Create an object of the PdfExtractor class
     using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-
         // Bind the input PDF
         pdfExtractor.BindPdf(dataDir + "ExtractTextExtractonMode.pdf");
 

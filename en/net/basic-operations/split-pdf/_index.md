@@ -104,7 +104,7 @@ private static void SplitDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "SplitToPages.pdf"))
     {
         int pageCount = 1;
@@ -115,7 +115,7 @@ private static void SplitDocument()
             using (var newDocument = new Aspose.Pdf.Document())
             {
                 newDocument.Pages.Add(pdfPage);
-                // Save concatenated output file
+                // Save the document
                 newDocument.Save(dataDir + "page_" + pageCount + "_out" + ".pdf");
                 pageCount++;
             }
