@@ -90,7 +90,7 @@ This example selects a TextBoxField and sets its value using the Value property.
 
 private static void FillFormField()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document

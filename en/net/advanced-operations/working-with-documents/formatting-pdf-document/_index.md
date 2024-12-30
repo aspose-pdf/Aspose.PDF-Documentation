@@ -104,7 +104,7 @@ The following code snippet shows you how to get the properties using [Document](
 
 private static void GetDocumentWindowProperties()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -177,7 +177,7 @@ Each is used and described in the code below. The following - code snippet shows
 
 private static void SetDocumentWindowProperties()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -248,7 +248,7 @@ Some PDF documents have fonts from a special Adobe font set. Fonts from this set
 
 private static void EmbedFontsType1ToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Load an existing PDF Document
@@ -292,7 +292,7 @@ We use the property IsEmbedded of Font class to embed the font information into 
 
 private static void EmbedFontWhileCreatingPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate Pdf object by calling its empty constructor
@@ -334,7 +334,7 @@ When a PDF document contains fonts, which are not available in the document itse
 
 private static void SetDefaultFontOnDocumentSave(string documentName, string newName)
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document with missing font
@@ -364,7 +364,7 @@ In case you want to get all fonts from a PDF document, you can use FontUtilities
 
 private static void GetAllFontsFromPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document
@@ -391,7 +391,7 @@ Aspose.PDF for .NET provides methods to get notifications about font substitutio
 
 private static void NotificationFontSubstitution()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document
@@ -434,7 +434,7 @@ Following code snippet shows how to set FontSubsetStrategy:
 
 private static void SetFontSubsetStrategy()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document
@@ -467,7 +467,7 @@ The following code snippet shows how to set the zoom factor of a PDF file.
 
 private static void SetZoomFactor()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate new Document object
@@ -492,7 +492,7 @@ The following code snippet shows how to get a PDF file's zoom factor.
 
 private static void GetZoomFactor()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate new Document object
@@ -520,7 +520,7 @@ Aspoose.PDF allows setting the Print Dialog Preset properties of a PDF document.
 
 private static void SetPrintDialogPresetProperties()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create a new document
@@ -545,7 +545,7 @@ private static void SetPrintDialogPresetProperties()
 
 private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     string inputFile = dataDir + "input.pdf";

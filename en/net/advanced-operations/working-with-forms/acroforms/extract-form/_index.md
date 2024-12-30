@@ -92,7 +92,7 @@ The following C# code snippets show how to get the values of all the fields from
 
 private static void GetValuesFromFields()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
@@ -117,7 +117,7 @@ The form field's Value property allows you to get the value of a particular fiel
 
 private static void GetValueFromField()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
@@ -141,7 +141,7 @@ To get the submit button's URL, use the following lines of code.
 
 private static void GetSubmitFormActionUrl()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
@@ -172,7 +172,7 @@ The following C# code snippet shows how to get form fields in a specific rectang
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetFieldsFromRegion()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open pdf file

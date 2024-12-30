@@ -99,7 +99,7 @@ Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf
 
 private static void AddTextBoxFieldToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
@@ -137,7 +137,7 @@ The following code snippets show how to add [RadioButtonField](https://reference
 
 private static void AddRadioButtonToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Instantiate Document object
@@ -171,7 +171,7 @@ The following code snippet shows the steps to add RadioButtonField with three op
 
 private static void AddRadioButtonWithOptionsToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Instantiate Document object
@@ -260,7 +260,7 @@ Following code snippet shows how to add caption which will be associated with Ra
 
 private static void AddingCaptionToRadioButtonField()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
@@ -319,7 +319,7 @@ The following code snippets show how to add ComboBox field in a PDF document.
 
 private static void AddComboBoxToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create Document object
@@ -357,7 +357,7 @@ The code snippets that follow show how to add a tooltip to a form field, first u
 
 private static void AddTooltipToField()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form

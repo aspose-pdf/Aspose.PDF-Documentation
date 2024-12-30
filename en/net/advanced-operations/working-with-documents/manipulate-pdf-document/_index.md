@@ -98,7 +98,7 @@ The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 private static void ValidateToPdfA1aStandard()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -117,7 +117,7 @@ The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
 private static void ValidateToPdfA1bStandard()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -148,7 +148,7 @@ To add a TOC to an existing PDF file, use the Heading class in the Aspose.PDF na
 
 private static void AddTOCToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF file
@@ -290,7 +290,7 @@ In case if you do not want to display page numbers, along with the headings in T
 
 private static void CreateTocWithHiddenPageNumbers()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Output file name
@@ -367,7 +367,7 @@ It is common to customize the page numbering in the TOC while adding TOC in a PD
 
 private static void CustomizePageNumbersAddingToC()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Use meaningful names for input and output files
@@ -430,7 +430,7 @@ In order to accomplish the above stated requirement, we can use *JavascriptActio
 
 private static void SetExpiryDate()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate Document object
@@ -478,7 +478,7 @@ The code snippets below shows how to use CustomerProgressHandler.
 
 private static void DetermineProgress()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -526,7 +526,7 @@ Aspose.PDF provides the function to flatten your PDF in C# with just few line of
 
 private static void FlattenForms()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load source PDF form

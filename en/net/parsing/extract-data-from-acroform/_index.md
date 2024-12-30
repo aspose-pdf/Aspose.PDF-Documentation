@@ -144,7 +144,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 private static void ExportFormDataToXml()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     // Open document
@@ -173,7 +173,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 private static void ExportDataToPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var form = new Aspose.Pdf.Facades.Form())
@@ -205,7 +205,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 private static void ExportDataToXFDF()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var form = new Aspose.Pdf.Facades.Form())

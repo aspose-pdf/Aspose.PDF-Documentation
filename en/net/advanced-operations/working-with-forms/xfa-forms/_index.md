@@ -96,7 +96,7 @@ The following code snippet shows you how to fill fields in XFA form.
 
 private static void FillXFAFields()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load XFA form
@@ -144,7 +144,7 @@ We cannot extract or manipulate pages of XFA Forms, because the form content is 
 
 private static void ConvertDynamicXFAToAcroForm()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load dynamic XFA form
@@ -168,7 +168,7 @@ To access field properties, first use Document.Form.XFA.Template to access the f
 
 private static void GetXFAProperties()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load XFA form

@@ -99,7 +99,7 @@ To create a PDF file using C#, the following steps can be used.
 
 private static void CreateHelloWorldPdf()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
     // Initialize document object

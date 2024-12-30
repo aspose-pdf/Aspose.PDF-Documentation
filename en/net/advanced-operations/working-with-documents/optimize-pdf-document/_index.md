@@ -113,7 +113,7 @@ The following code snippet shows how to optimize a PDF document for the web.
 
 private static void OptimizeDocument()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -143,7 +143,7 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 
 private static void ShrinkDocument()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
@@ -173,7 +173,7 @@ We have two ways to work with images: reduce image quality and/or change their r
 
 private static void ShrinkImage()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document
@@ -204,7 +204,7 @@ Another way is to resize the images with a lower resolution. In this case, we sh
 
 private static void ResizeImages()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document
@@ -244,7 +244,7 @@ private static void FastShrinkImages()
     // Initialize Time
     var time = DateTime.Now.Ticks;
 
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document
@@ -283,7 +283,7 @@ A PDF document sometimes contains the PDF objects that are not referenced from a
 
 private static void OptimizeDocument()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document

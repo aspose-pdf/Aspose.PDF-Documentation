@@ -88,7 +88,7 @@ The FormEditor class SetFieldLimit(field, limit) method allows you to set a fiel
 
 private static void SetFieldLimit()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create FormEditor instance
@@ -113,7 +113,7 @@ Similarly, Aspose.PDF has a method that gets the field limit using the DOM appro
 
 private static void GetFieldLimitUsingDOM()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
@@ -135,7 +135,7 @@ You can also get the same value using the *Aspose.Pdf.Facades* namespace using t
 
 private static void GetFieldLimitUsingFacades()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create Form instance
@@ -161,7 +161,7 @@ The following code snippet shows how to set the default font for PDF form fields
 
 private static void SetFormFieldFont()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
@@ -192,7 +192,7 @@ All the form fields are contained in the Document object's Form collection. This
 
 private static void DeleteFormField()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document

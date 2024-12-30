@@ -520,7 +520,7 @@ Let's break down this Aspose.PDF example step by step:
 
 private static void ExportFieldsToJsonWithOptions()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load the document

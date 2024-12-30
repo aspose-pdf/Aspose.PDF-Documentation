@@ -94,7 +94,7 @@ In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades n
 
 private static void CreateAcroFormWithFields()
 {
-    // Explicit dataDir initialization
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create an instance of FormEditor class and bind input and output pdf files
