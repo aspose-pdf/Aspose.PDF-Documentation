@@ -95,7 +95,7 @@ private static void ConvertFdftoXml()
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create a file stream for FDF file - input file
-    using (var fdfInputStream = new System.IO.FileStream(dataDir + "inFile.pdf", FileMode.Open))
+    using (var fdfInputStream = new System.IO.FileStream(dataDir + "input.fdf", FileMode.Open))
     {
         // Create a file stream for XML file - output file
         using (var xmlOutputStream = new System.IO.FileStream(dataDir + "ConvertFdfToXML_out.xml", FileMode.Create))
