@@ -105,8 +105,8 @@ private static void AddTextStamp()
         // Set text properties
         textStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
         textStamp.TextState.FontSize = 14.0F;
-        textStamp.TextState.FontStyle = FontStyles.Bold;
-        textStamp.TextState.FontStyle = FontStyles.Italic;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
         textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
         // Add stamp to particular page
         document.Pages[1].AddStamp(textStamp);
@@ -173,7 +173,7 @@ private static void FillStrokeTextAsStampInPdfFile()
     // Set color for stroke
     textState.StrokingColor = Color.Gray;
     // Set text rendering mode
-    textState.RenderingMode = TextRenderingMode.StrokeText;
+    textState.RenderingMode = Aspose.Pdf.Text.TextRenderingMode.StrokeText;
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
@@ -231,6 +231,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 The following code snippet demonstrates how to add a text stamp to a PDF file and automatically adjust the font size to fit the stamp rectangle. The stamp rectangle defaults to the page size.
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
 {
     // The path to the documents directory
