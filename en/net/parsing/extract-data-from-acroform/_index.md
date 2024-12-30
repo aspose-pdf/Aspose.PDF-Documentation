@@ -147,7 +147,7 @@ private static void ExportFormDataToXml()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-    // Open document
+    // Open form
     using (var form = new Aspose.Pdf.Facades.Form())
     {
         form.BindPdf(dataDir + "input.pdf");

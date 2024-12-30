@@ -338,7 +338,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document with missing font
-    using (var fs = new System.IO.FileStream(documentName, System.IO.FileMode.Open))
+    using (var fs = new FileStream(dataDir + "GetDocumentWindow.pdf", FileMode.Open))
     {
         using (var document = new Aspose.Pdf.Document(fs))
         {

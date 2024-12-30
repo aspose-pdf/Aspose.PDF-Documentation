@@ -126,8 +126,11 @@ The Aspose.PDF library provides two ways to remove such forms from PDFs:
 
 private static void DeleteSpecifiedForm(string input, string output)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+	
     // Load the document
-    using (var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;
@@ -154,8 +157,11 @@ Method 2:
 
 private static void DeleteSpecifiedForm(string input, string output)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;
@@ -185,8 +191,11 @@ This code removes all form elements from the first page of a PDF document and th
 
 private static void RemoveAllForms(string input, string output)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;

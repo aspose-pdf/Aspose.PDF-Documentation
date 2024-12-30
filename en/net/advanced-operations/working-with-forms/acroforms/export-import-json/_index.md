@@ -92,8 +92,11 @@ private static void ExportAllFieldsToJson(string inputPdfPath, string outputJson
     // Create ExportFieldsToJsonOptions with indentation
     var options = new Aspose.Pdf.ExportFieldsToJsonOptions { WriteIndented = true };
 
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Export fields to JSON
         var exportResult = document.Form.ExportToJson(outputJsonPath, options);
@@ -111,8 +114,11 @@ private static void ExportAllFieldsToJson(string inputPdfPath, string outputJson
 
 private static void ImportFieldsFromJsonAndInsertToPdf(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+	
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Create a new document to import fields into
         var newDocument = new Aspose.Pdf.Document();
@@ -138,11 +144,14 @@ This snippet export fields to Json file utilizes 'FileStream' to manage the file
 
 private static void ExportFieldsToJson(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+	
     // Create ExportFieldsToJsonOptions with indentation
     var options = new Aspose.Pdf.ExportFieldsToJsonOptions { WriteIndented = true };
 
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Create a FileStream to write the JSON output
         using (var fileStream = File.Create(outputJsonPath))
@@ -161,8 +170,11 @@ private static void ExportFieldsToJson(string inputPdfPath, string outputJsonPat
 
 private static void ImportFieldsFromJsonToCreatedPdt(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Create a new document to import fields into
         var newDocument = new Aspose.Pdf.Document();
@@ -192,11 +204,14 @@ In some scenarios, you might prefer to work with data in memory rather than with
 
 private static void ExportFieldsToJsonUsingMemoryStream(string inputPdfPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Create a MemoryStream to hold the JSON data
     using (var memoryStream = new MemoryStream())
     {
         // Load the document
-        using (var document = new Aspose.Pdf.Document(inputPdfPath))
+        using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
         {
             // Export fields to JSON and write to the MemoryStream
             var exportResult = document.Form.ExportToJson(memoryStream);
@@ -215,8 +230,11 @@ private static void ExportFieldsToJsonUsingMemoryStream(string inputPdfPath, str
 
 private static void ImportFieldsFromJsonUsingMemoryStream(string inputPdfPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Create a new document to import fields into
         var newDocument = new Aspose.Pdf.Document();
@@ -255,8 +273,11 @@ private static void ExportFieldToJson(string inputPdfPath, string outputJsonPath
     // Create ExportFieldsToJsonOptions with indentation
     var options = new Aspose.Pdf.ExportFieldsToJsonOptions { WriteIndented = true };
 
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Get the specific field (WidgetAnnotation) from the form
         if (document.Form[1] is Aspose.Pdf.Annotations.WidgetAnnotation field)
@@ -275,8 +296,11 @@ private static void ExportFieldToJson(string inputPdfPath, string outputJsonPath
 
 private static void ImportFieldFromJson(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Create a new document to import fields into
         var newDocument = new Aspose.Pdf.Document();
@@ -304,9 +328,12 @@ private static void ExportFieldToJson(string inputPdfPath, string outputJsonPath
 {
     // Create ExportFieldsToJsonOptions with indentation
     var options = new Aspose.Pdf.ExportFieldsToJsonOptions { WriteIndented = true };
+	
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();	
 
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Get the specific field (WidgetAnnotation) from the form
         if (document.Form[1] is Aspose.Pdf.Annotations.WidgetAnnotation field)
@@ -357,11 +384,14 @@ This code snippet demonstrates how to export a specific form field from a PDF do
 
 private static void ExportFieldToJsonUsingMemoryStream(string inputPdfPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Create a MemoryStream to hold the JSON data
     using (var memoryStream = new MemoryStream())
     {
         // Load the document
-        using (var document = new Aspose.Pdf.Document(inputPdfPath))
+        using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
         {
             // Get the specific field (WidgetAnnotation) from the form
             if (document.Form[1] is Aspose.Pdf.Annotations.WidgetAnnotation field)
@@ -384,8 +414,11 @@ private static void ExportFieldToJsonUsingMemoryStream(string inputPdfPath, stri
 
 private static void ImportFieldFromJsonUsingMemoryStream(string inputPdfPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Create a new document to import fields into
         var newDocument = new Aspose.Pdf.Document();
@@ -421,8 +454,11 @@ This code snippet shows how to export the value of a specific form field from a 
 
 private static void ExportFieldValueToJson(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+	
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Get the specific field from the form
         if (document.Form.Fields[1] is Aspose.Pdf.Forms.Field field)
@@ -447,8 +483,11 @@ This code snippet demonstrates how to import a value from a JSON file into a spe
 
 private static void ImportFieldValueFromJson(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Get the specific field from the form
         if (document.Form.Fields[1] is Aspose.Pdf.Forms.Field field)
@@ -476,8 +515,11 @@ This code snippet demonstrates how to import a value of another field to the spe
 
 private static void ImportFieldValueFromJson(string inputPdfPath, string outputJsonPath, string outputPdfPath, string fullNameOfOtherFieldInJson)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(inputPdfPath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         // Get the specific field from the form
         if (document.Form.Fields[1] is Aspose.Pdf.Forms.Field field)

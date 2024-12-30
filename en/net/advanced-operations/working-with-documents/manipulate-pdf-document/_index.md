@@ -370,12 +370,8 @@ private static void CustomizePageNumbersAddingToC()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Use meaningful names for input and output files
-    string inFile = dataDir + "CustomizePageNumbersAddingToC.pdf";
-    string outFile = dataDir + "CustomizePageNumbersAddingToC_out.pdf";
-
     // Load an existing PDF file
-    using (var document = new Aspose.Pdf.Document(inFile))
+    using (var document = new Aspose.Pdf.Document(dataDir + "CustomizePageNumbersAddingToC.pdf"))
     {
         // Get access to first page of PDF file
         Page tocPage = document.Pages.Insert(1);
@@ -414,7 +410,7 @@ private static void CustomizePageNumbersAddingToC()
         }
 
         // Save the updated document
-        document.Save(outFile);
+        document.Save(dataDir + "CustomizePageNumbersAddingToC_out.pdf");
     }
 }
 ```

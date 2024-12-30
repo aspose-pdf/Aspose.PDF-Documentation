@@ -130,8 +130,11 @@ Following is complete code to accomplish this requirement:
 
 private static void ConvertDocumentWithHocr(string file)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(file))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
         bool convertResult = false;
         try
@@ -232,8 +235,11 @@ Steps to creating an accessible PDF:
 
 private static void ProcessTaggedContent(string somePdfFilePath, string output)
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
     // Load the document
-    using (var document = new Aspose.Pdf.Document(somePdfFilePath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the tagged content
 		var content = document.TaggedContent;

@@ -406,7 +406,8 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 {
      // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    using (var document = new Aspose.Pdf.Document($"{dataDir}SetFreeTextAnnotationFormatting.pdf"))
+	
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
 	{
 		// Set default values
 		var textColor = System.Drawing.Color.Red;
