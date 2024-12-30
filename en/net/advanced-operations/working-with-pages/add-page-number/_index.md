@@ -106,8 +106,8 @@ private static void AddPageNumberToPdf()
         // Set text properties
         pageNumberStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
         pageNumberStamp.TextState.FontSize = 14.0F;
-        pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
-        pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
         pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
         // Add stamp to particular page
         document.Pages[1].AddStamp(pageNumberStamp);
@@ -142,7 +142,7 @@ private static void RemoveBatesNumbering()
     {
         foreach (var page in document.Pages)
         {
-            Artifact? batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
+            var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
             page.Artifacts.Delete(batesNum);
         }
         // Save document
