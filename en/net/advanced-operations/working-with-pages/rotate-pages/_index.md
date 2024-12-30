@@ -91,7 +91,7 @@ private static void ChangePageOrientation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
     {
         foreach (Page page in document.Pages)
         {
@@ -127,7 +127,7 @@ private static void FittingThePageContentToTheNewPageOrientation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
     {
         foreach (Page page in document.Pages)
         {
@@ -151,14 +151,14 @@ private static void ZoomToPageContents()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
     {
         // Get rectangular region of first page of PDF
         Aspose.Pdf.Rectangle rect = document.Pages[1].Rect;
         // Instantiate PdfPageEditor instance
         var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
         // Bind source PDF
-        pdfPageEditor.BindPdf(dataDir + "input.pdf");
+        pdfPageEditor.BindPdf(dataDir + "RotatePagesInput.pdf");
         // Set zoom coefficient
         pdfPageEditor.Zoom = (float)(rect.Width / rect.Height);
         // Update page size
