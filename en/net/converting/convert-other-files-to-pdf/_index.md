@@ -822,17 +822,14 @@ Aspose.PDF for .NET supports the feature to convert OFD files to PDF format and 
 The following code snippet shows the process of converting OFD file to PDF format with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertOFDToPDF()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
     // Convert options
     var options = new Aspose.Pdf.OfdLoadOptions();
-
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "test.ofd", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertOFDToPDF.ofd", options))
     {
         // Save document in PDF format
         document.Save(dataDir + "ConvertOFDToPDF_out.pdf");
