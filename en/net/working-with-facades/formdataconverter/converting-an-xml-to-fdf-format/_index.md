@@ -86,5 +86,19 @@ FDF stands for Forms Data Format, and an FDF file contains the form values in a 
 Use the [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormDataConverter) class for this purpose. This class provides different methods for converting one data format into another. This article shows how to use one method, ConvertXmlToFdf(..), which takes an FDF file as an input or source stream and saves it into XML format. The following code snippet shows how to convert an FDF file into an XML file.
 
 
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+public static void ConvertXmlToFdf()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-XMLToPdf-XMLToPdf.cs" >}}
+    using (var src = new FileStream(dataDir + "log.xml", FileMode.Open, FileAccess.Read))
+    {
+        using (var dest = new FileStream(dataDir + "XMLToPdf_out.pdf", FileMode.Create, FileAccess.ReadWrite))
+        {
+            FormDataConverter.ConvertXmlToFdf(src, dest);
+        }
+    }
+}
+```
