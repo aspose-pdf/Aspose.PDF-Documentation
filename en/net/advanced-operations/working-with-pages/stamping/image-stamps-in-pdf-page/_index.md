@@ -196,7 +196,7 @@ private static void AddAlternativeTextToTheImageStamp()
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Create image stamp
-        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "yourImage.jpg")
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
         {
             XIndent = 100,
             YIndent = 700,
