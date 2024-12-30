@@ -96,8 +96,7 @@ private static void CreateAndAddFloatingBox()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen),
             IsNeedRepeating = false,
         };
-        var text = LoremNET.Lorem.Paragraph(20, 6);
-        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
+        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example"));
         // Add box
         page.Paragraphs.Add(box);
     }
@@ -157,7 +156,7 @@ private static void MultiColumnLayout()
         box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
         box.ColumnInfo.ColumnSpacing = "{spacing}";
         box.ColumnInfo.ColumnCount = columnCount;
-        var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 20);
+        var paragraphs = "text example";
         foreach (var paragraph in paragraphs)
         {
             box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(paragraph));
@@ -206,7 +205,7 @@ private static void MultiColumnLayout2()
         box.ColumnInfo.ColumnSpacing = "{spacing}";
         box.ColumnInfo.ColumnCount = 3;
 
-        var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 3);
+        var paragraphs = "text example";
         foreach (var paragraph in paragraphs)
         {
             var text = new Aspose.Pdf.Text.TextFragment(paragraph)
@@ -241,7 +240,7 @@ private static void BackgroundSupport()
             IsNeedRepeating = false,
             BackgroundColor = Aspose.Pdf.Color.LightGreen,
         };
-        var text = LoremNET.Lorem.Paragraph(20, 6);
+        var text = "text example";
         box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
         page.Paragraphs.Add(box);
     }
@@ -268,13 +267,12 @@ private static void OffsetSupport()
             Left = 15,
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen)
         };
-        var text = LoremNET.Lorem.Paragraph(20, 6);
-        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
+        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 1"));
 
-        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 2"));
         // Add the box to the page
         page.Paragraphs.Add(box);
-        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 3"));
     }
 }
 ```

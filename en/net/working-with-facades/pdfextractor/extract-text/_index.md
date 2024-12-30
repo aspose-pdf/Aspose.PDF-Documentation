@@ -130,8 +130,8 @@ private static void ExtractTextExtractonMode()
         pdfExtractor.BindPdf(dataDir + "ExtractTextExtractonMode.pdf");
 
         // ExtractText
-        // pdfExtractor.ExtractTextMode = 0; //pure mode
-        pdfExtractor.ExtractTextMode = 1; //raw mode
+        // pdfExtractor.ExtractTextMode = 0; // pure mode
+        pdfExtractor.ExtractTextMode = 1; // raw mode
         pdfExtractor.ExtractText();
 
         if (!wholeText)

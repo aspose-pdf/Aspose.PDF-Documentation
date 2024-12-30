@@ -123,7 +123,7 @@ private static void ExportExcelToPdfForm()
             autoFiller.OutputFileName = dataDir + "DataTableExample_out.pdf";
             // Call the method to import the data from DataTable object into Pdf form fields
             autoFiller.ImportDataTable(dataTable);
-            // Save the  document
+            // Save the document
             autoFiller.Save();
         }
     }

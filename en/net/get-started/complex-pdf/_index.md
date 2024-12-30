@@ -166,7 +166,7 @@ private static void CreatingAComplexPdf()
 
         page.Paragraphs.Add(table);
         // Save the document
-        document.Save(dataDir + "Complex.pdf");
+        document.Save(dataDir + "Complex_out.pdf");
     }
 }
 ```

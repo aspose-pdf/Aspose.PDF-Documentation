@@ -118,7 +118,6 @@ private static void AddTooltipToSearchedText()
             document.Form.Add(field);
         }
 
-        // Next will be sapmle of very long tooltip
         absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
         document.Pages.Accept(absorber);
         textFragments = absorber.TextFragments;
