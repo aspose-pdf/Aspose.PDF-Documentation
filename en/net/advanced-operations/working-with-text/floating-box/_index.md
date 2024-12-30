@@ -154,9 +154,15 @@ private static void MultiColumnLayout()
             IsNeedRepeating = true
         };
         box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
-        box.ColumnInfo.ColumnSpacing = "{spacing}";
-        box.ColumnInfo.ColumnCount = columnCount;
-        var paragraphs = "text example";
+        box.ColumnInfo.ColumnSpacing = $"{spacing}";
+        box.ColumnInfo.ColumnCount = 3;
+
+        var phrase = "text example";
+        var paragraphs = new string[10]
+        {
+            phrase, phrase, phrase, phrase, phrase,
+            phrase, phrase, phrase, phrase, phrase,
+        };
         foreach (var paragraph in paragraphs)
         {
             box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(paragraph));
@@ -202,10 +208,15 @@ private static void MultiColumnLayout2()
             IsNeedRepeating = true
         };
         box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
-        box.ColumnInfo.ColumnSpacing = "{spacing}";
+        box.ColumnInfo.ColumnSpacing = $"{spacing}";
         box.ColumnInfo.ColumnCount = 3;
 
-        var paragraphs = "text example";
+        var phrase = "text example";
+        var paragraphs = new string[10]
+        {
+            phrase, phrase, phrase, phrase, phrase,
+            phrase, phrase, phrase, phrase, phrase,
+        };
         foreach (var paragraph in paragraphs)
         {
             var text = new Aspose.Pdf.Text.TextFragment(paragraph)
