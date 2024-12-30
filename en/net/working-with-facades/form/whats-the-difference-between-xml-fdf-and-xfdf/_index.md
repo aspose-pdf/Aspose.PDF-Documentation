@@ -156,4 +156,41 @@ We often come across the scenario in which we need to fill the form which is cre
 As a solution to this problem, we would require the appearance attributes of each field. [Form](http://www.aspose.com/documentation/file-format-components/aspose.pdf.kit-for-.net-and-java/aspose.pdf.kit.form.html) class has a function named GetFieldFacade which returns attributes, including location, color, border style, font, list item and so on. To save these values we will be using [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade) class, which is used to record visual attributes of the fields. Once we have these attributes we can add a text field beneath every field which would be displaying the field name. Here a question arises how we would determine the location where to add the text field? Solution to this problem is Box property in [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade) class, which holds the field's location. We would save these values to an array of rectangle type and use these values to identify the position where to add the new text fields.
 In Aspose.Pdf.Facades namespace, we have a class named [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) which provides the capability to manipulate PDF form. Open a PDF form add a text field beneath every existing form field and save the PDF form with new name.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-TechnicalArticles-DifferenceBetweenFile-DifferenceBetweenFile.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void DifferenceBetweenFile()
+{
+    // The path to the documents directory.
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+
+    // First a input pdf file should be assigned
+    using (var form = new Aspose.Pdf.Facades.Form(dataDir + "FilledForm.pdf"))
+    {
+        // Get all field names
+        String[] allfields = form.FieldNames;
+        // Create an array which will hold the location coordinates of Form fields
+        var box = new System.Drawing.Rectangle[allfields.Length];
+        for (int i = 0; i < allfields.Length; i++)
+        {
+            // Get the appearance attributes of each field, consequtively
+            FormFieldFacade facade = form.GetFieldFacade(allfields[i]);
+            // Box in FormFieldFacade class holds field's location.
+            box[i] = facade.Box;
+        }
+        form.Save(dataDir + "DifferenceBetweenFile_out.pdf");
+            
+        using (var document = new Document(dataDir + "FilledForm - 2.pdf"))
+        {
+            // Now we need to add a textfield just upon the original one
+            FormEditor editor = new FormEditor(document);
+            for (int i = 0; i < allfields.Length; i++)
+            {
+                // Add text field beneath every existing form field
+                editor.AddField(FieldType.Text, "TextField" + i, allfields[i], 1, box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
+            }
+            // Save the document
+            editor.Save(dataDir + "DifferenceBetweenFile_out.pdf");
+        }
+    }
+}
+```
