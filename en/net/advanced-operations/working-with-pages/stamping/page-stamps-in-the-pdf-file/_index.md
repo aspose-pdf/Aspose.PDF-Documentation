@@ -87,11 +87,11 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void AddPageStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var inputFileName = "input.pdf";
+    var inputFileName = "AddPageStampInput.pdf";
     var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "PageStamp.pdf";
+    var pageStampFileName = "AddPageStamp.pdf";
 
     //Open document
     using (var document = new Aspose.Pdf.Document(dataDir + inputFileName))
@@ -102,23 +102,8 @@ private static void AddPageStamp()
             Height = 800,
             Background = true
         };
-        var plumPageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + pageStampFileName, 2)
-        {
-            Height = 800,
-            Background = true
-        };
         // Add stamps
-        for (var i = 1; i < 5; i++)
-        {
-            if (i % 2 == 0)
-            {
-                document.Pages[i].AddStamp(bluePageStamp);
-            }
-            else
-            {
-                document.Pages[i].AddStamp(plumPageStamp);
-            }
-        }
+        document.Pages[1].AddStamp(bluePageStamp);
         // Save updated document
         document.Save(dataDir + outputFileName);
     }
