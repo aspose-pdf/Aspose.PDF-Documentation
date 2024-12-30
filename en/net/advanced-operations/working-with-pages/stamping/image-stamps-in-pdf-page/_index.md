@@ -97,7 +97,7 @@ private static void AddImageStampInPdfFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
         var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
@@ -127,7 +127,7 @@ private static void ControlImageQualityWhenAddingStamp()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
         var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
@@ -193,7 +193,7 @@ private static void AddAlternativeTextToTheImageStamp()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
         var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
@@ -206,7 +206,7 @@ private static void AddAlternativeTextToTheImageStamp()
         // Add stamp
         document.Pages[1].AddStamp(imageStamp);
         // Save document
-        document.Save(dataDir + "docWithImageStamp_out.pdf");
+        document.Save(dataDir + "DocWithImageStamp_out.pdf");
     }
 }
 ```
