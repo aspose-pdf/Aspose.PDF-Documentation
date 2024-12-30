@@ -91,7 +91,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractSuperScriptsAndSubScripts()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open document
@@ -117,7 +117,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractSuperScriptsAndSubScriptsWithTextFragments()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open document

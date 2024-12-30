@@ -80,7 +80,7 @@ The following code snippet shows you how to use PdfExtractor methods:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractAttachments()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
     // Create extractor

@@ -84,7 +84,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractFonts()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document

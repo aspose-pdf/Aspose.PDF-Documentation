@@ -98,10 +98,10 @@ To create a PDF file using C#, the following steps can be used.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Initialize document object
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
@@ -126,13 +126,13 @@ Following is complete code to accomplish this requirement:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateSearchableDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
     
     // The path to the document
     var filePath = dataDir + "SearchableDocument.pdf";
 
-    // Load document
+    // Open document
     using (var document = new Aspose.Pdf.Document(filePath))
     {
         document.Convert(CallBackGetHocr);

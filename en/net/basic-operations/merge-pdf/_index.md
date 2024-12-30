@@ -98,7 +98,7 @@ The following code snippet shows how to concatenate PDF files.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MergeDocuments()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open first document

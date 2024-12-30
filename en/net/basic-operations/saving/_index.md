@@ -89,7 +89,7 @@ When you do not provide the format type (options), then the document is saved in
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Load document
@@ -111,7 +111,7 @@ You can also save the created or manipulated PDF document to stream by using ove
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocumentStream()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Load document
@@ -140,7 +140,7 @@ In both cases, the `Save` method is used to store the documents, while the docum
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocumentAsPDFx()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Load document

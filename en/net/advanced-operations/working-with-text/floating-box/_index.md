@@ -132,7 +132,7 @@ If we set this property to `true` the text will be reflow to the next page in th
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MultiColumnLayout()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
     // Create the document

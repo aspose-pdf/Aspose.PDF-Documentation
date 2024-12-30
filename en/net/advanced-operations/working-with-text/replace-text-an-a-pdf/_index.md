@@ -159,7 +159,7 @@ private static void ReplaceTextInParticularPageRegion()
             textFragment.Text = "";
         }
 
-        // save updated PDF file after text replace
+        // Save document
         document.Save(dataDir + "ReplaceTextInParticularPageRegion_out.pdf");
     }
 }
@@ -204,6 +204,7 @@ private static void ReplaceTextBasedOnARegularExpression()
             textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
         }
 
+        // Save document
         document.Save(dataDir + "ReplaceTextonRegularExpression_out.pdf");
     }
 }

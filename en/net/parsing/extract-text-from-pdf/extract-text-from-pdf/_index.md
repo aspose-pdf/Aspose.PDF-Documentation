@@ -86,7 +86,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextAll.pdf"))
@@ -118,7 +118,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromPage()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open document
@@ -164,7 +164,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromPagesWithTextDevice()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     var builder = new System.Text.StringBuilder();
@@ -213,7 +213,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextFromParticularPageRegion()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open document
@@ -250,7 +250,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextBasedOnColumns()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     var extractedText = string.Empty;
@@ -295,7 +295,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExctractTextWithScaleFactor()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open document
@@ -332,7 +332,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractHighlightedTextFromDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open document
@@ -368,7 +368,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AccessTextFragmentAndSegmentElementsFromXML()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Create document

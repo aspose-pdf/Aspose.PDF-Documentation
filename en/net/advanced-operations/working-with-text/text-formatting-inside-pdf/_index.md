@@ -366,7 +366,7 @@ private static void AlignTextToFloat()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create new document
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -401,6 +401,7 @@ private static void AlignTextToFloat()
         // Add float box
         page.Paragraphs.Add(floatBox2);
 
+        // Save document
         document.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
     }
 }

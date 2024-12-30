@@ -100,9 +100,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreatingAComplexPdf()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Initialize document object
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page

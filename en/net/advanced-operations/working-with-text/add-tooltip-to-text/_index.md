@@ -86,18 +86,19 @@ It is often required to add some details for a phrase or specific word as a tool
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToSearchedText()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     var outputFilePath = dataDir + "Tooltip_out.pdf";
 
-    // Create sample document with text
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
         document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        // Save document
         document.Save(outputFilePath);
     }
-    // Open document with text
+    // Open document
     using (var document = new Aspose.Pdf.Document(outputFilePath))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -167,7 +168,7 @@ Please also take into account that PDF actions in the documents work fine in the
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateHiddenTextBlock()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     var outputFilePath = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
 

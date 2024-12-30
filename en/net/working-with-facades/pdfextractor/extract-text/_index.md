@@ -82,7 +82,7 @@ For example, in order to extract text you can use three methods i.e. [ExtractTex
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractText()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     bool wholeText = true;
@@ -120,7 +120,7 @@ To Extract the Text Extraction Mode use the following code:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTextExtractonMode()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     bool wholeText = true;

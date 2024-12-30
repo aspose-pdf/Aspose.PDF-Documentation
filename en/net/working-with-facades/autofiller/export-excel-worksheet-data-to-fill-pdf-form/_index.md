@@ -101,7 +101,7 @@ Once the method is called a new Pdf form file is generated, which contains five 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExportExcelToPdfForm()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
 
     var workbook = new Workbook();
@@ -136,7 +136,7 @@ For filling from XLSX please use next code snippet:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FillFromXLSX()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
 
     // Create an object of AutoFiller class
@@ -163,11 +163,11 @@ Aspose.PDF for .NET allows you to generate Data Table in PDF document:
 private static System.Data.DataTable GenerateDataTable()
 {
     string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
-    // Create a new DataTable.
+    // Create a new DataTable
     var table = new System.Data.DataTable("Students");
 
     // Create new DataColumn, set DataType,
-    // ColumnName and add to DataTable.
+    // ColumnName and add to DataTable
     var column = new System.Data.DataColumn
     {
         DataType = System.Type.GetType("System.Int32"),
@@ -175,10 +175,10 @@ private static System.Data.DataTable GenerateDataTable()
         ReadOnly = true,
         Unique = true
     };
-    // Add the Column to the DataColumnCollection.
+    // Add the Column to the DataColumnCollection
     table.Columns.Add(column);
 
-    // Create second column.
+    // Create second column
     column = new System.Data.DataColumn
     {
         DataType = System.Type.GetType("System.String"),
@@ -188,10 +188,10 @@ private static System.Data.DataTable GenerateDataTable()
         ReadOnly = false,
         Unique = false
     };
-    // Add the column to the table.
+    // Add the column to the table
     table.Columns.Add(column);
 
-    // Make the ID column the primary key column.
+    // Make the ID column the primary key column
     var primaryKeyColumns = new System.Data.DataColumn[1];
     primaryKeyColumns[0] = table.Columns["id"];
     table.PrimaryKey = primaryKeyColumns;

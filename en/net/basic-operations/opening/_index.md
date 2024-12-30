@@ -88,10 +88,10 @@ There are several ways to open a document. The easiest is to specify a file name
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Load document
+    // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
         Console.WriteLine("Pages " + document.Pages.Count);
@@ -117,7 +117,7 @@ private static void OpenDocumentStream()
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    // Load document
+    // Open document
     using (var document = new Aspose.Pdf.Document(stream))
     {
         Console.WriteLine("Pages " + document.Pages.Count);

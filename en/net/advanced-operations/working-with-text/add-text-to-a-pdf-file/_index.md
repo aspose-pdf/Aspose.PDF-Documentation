@@ -120,7 +120,7 @@ private static void AddText()
         // Append the text fragment to the PDF page
         textBuilder.AppendText(textFragment);
 
-        // Save resulting PDF document
+        // Save document
         document.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -200,7 +200,7 @@ private static void AddTextWithTextParagraph()
         // Add paragraph
         builder.AppendParagraph(paragraph);
 
-        // Save document.
+        // Save document
         document.Save(dataDir + "AddTextUsingTextParagraph_out.pdf");
     }
 }
@@ -247,7 +247,7 @@ private static void AddHyperlinkToTextSegment()
         // Add TextFragment to paragraphs collection of page object
         page.Paragraphs.Add(fragment);
 
-        // Save resulting PDF document.
+        // Save document
         document.Save(dataDir + "AddHyperlinkToTextSegment_out.pdf");
     }
 }
@@ -281,7 +281,7 @@ private static void UseOTFFont()
         // Add TextFragment to paragraphs collection of Page instance
         page.Paragraphs.Add(fragment);
 
-        // Save resulting PDF document.
+        // Save document
         document.Save(dataDir + "OTFFont_out.pdf");
     }
 }
@@ -461,7 +461,7 @@ private static void CustomLineStyleForFootNote()
         // Add second text fragment to paragraphs collection of PDF file
         page.Paragraphs.Add(text);
 
-        // Save  document
+        // Save document
         document.Save(dataDir + "CustomLineStyleForFootNote_out.pdf");
     }
 }

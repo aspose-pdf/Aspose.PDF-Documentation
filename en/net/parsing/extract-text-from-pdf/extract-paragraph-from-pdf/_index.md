@@ -88,7 +88,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractParagraphWithDrawingTheBorder()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open document
@@ -155,10 +155,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractParagraphByIteratingThroughParagraphsCollection()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open an existing PDF file
+    // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
         // Instantiate ParagraphAbsorber

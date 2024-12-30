@@ -88,10 +88,10 @@ By using the Rotation property of [TextFragment](https://reference.aspose.com/pd
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Initialize document object
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -134,10 +134,10 @@ private static void RotateTextInsidePDF()
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Initialize document object
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -183,10 +183,10 @@ private static void RotateTextInsidePDF()
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Initialize document object
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -225,10 +225,10 @@ private static void RotateTextInsidePDF()
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Initialize document object
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page

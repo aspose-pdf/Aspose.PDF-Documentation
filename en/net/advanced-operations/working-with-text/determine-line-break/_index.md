@@ -86,10 +86,10 @@ Aspose.PDF for .NET offers logging (tracking) background processing (line breaki
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DetermineLineBreak()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open document
+    // Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Page page = document.Pages.Add();
