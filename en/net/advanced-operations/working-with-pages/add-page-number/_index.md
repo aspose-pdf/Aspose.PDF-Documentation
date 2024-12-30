@@ -142,11 +142,11 @@ private static void RemoveBatesNumbering()
     {
         foreach (var page in document.Pages)
         {
-            var batesNum = page.Artifacts.FirstOrDefault(ar => ar.CustomSubtype == "BatesN");
-            if (batesNum != null)
+            // Remove bates numbering
+            var artifacts = page.Artifacts.Where(ar => ar.CustomSubtype == "BatesN");
+            foreach (var artifact in artifacts)
             {
-                // Remove bates numbering
-                page.Artifacts.Delete(batesNum);   
+                page.Artifacts.Delete(artifact);   
             }
         }
         // Save document
