@@ -90,7 +90,7 @@ Use the [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.faca
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 public static void ConvertXmlToFdf()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     using (var src = new FileStream(dataDir + "log.xml", FileMode.Open, FileAccess.Read))

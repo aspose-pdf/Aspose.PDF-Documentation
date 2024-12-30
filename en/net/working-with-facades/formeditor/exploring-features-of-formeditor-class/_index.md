@@ -92,20 +92,20 @@ These methods can be divided into two main categories, one of which is used to m
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExploringFormEditorFeatures()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "inFile.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "inFile.pdf"))
     {
         // Create instance of FormEditor
-        using (var editor = new FormEditor(document))
+        using (var editor = new Aspose.Pdf.Facades.FormEditor(document))
         {
             // Add field in the PDF file
-            editor.AddField(FieldType.Text, "field1", 1, 300, 500, 350, 525);
+            editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "field1", 1, 300, 500, 350, 525);
 
             // Add List field in PDF file
-            editor.AddField(FieldType.ListBox, "field2", 1, 300, 200, 350, 225);
+            editor.AddField(Aspose.Pdf.Facades.FieldType.ListBox, "field2", 1, 300, 200, 350, 225);
 
             // Add list items
             editor.AddListItem("field2", "item 1");
@@ -130,13 +130,13 @@ private static void ExploringFormEditorFeatures()
             editor.ResetFacade();
 
             // Set the alignment style of a text field
-            editor.SetFieldAlignment("field1", FormFieldFacade.AlignLeft);
+            editor.SetFieldAlignment("field1", Aspose.Pdf.Facades.FormFieldFacade.AlignLeft);
 
             // Set appearance of the field
-            editor.SetFieldAppearance("field1", AnnotationFlags.NoRotate);
+            editor.SetFieldAppearance("field1", Aspose.Pdf.Annotations.AnnotationFlags.NoRotate);
 
             // Set field attributes i.e. ReadOnly, Required
-            editor.SetFieldAttribute("field1", PropertyFlag.ReadOnly);
+            editor.SetFieldAttribute("field1", Aspose.Pdf.Facades.PropertyFlag.ReadOnly);
 
             // Set field limit
             editor.SetFieldLimit("field1", 25);

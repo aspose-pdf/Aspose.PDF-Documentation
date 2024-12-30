@@ -160,7 +160,7 @@ In Aspose.Pdf.Facades namespace, we have a class named [FormEditor](https://refe
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DifferenceBetweenFile()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // First a input pdf file should be assigned
@@ -172,21 +172,21 @@ private static void DifferenceBetweenFile()
         var box = new System.Drawing.Rectangle[allfields.Length];
         for (int i = 0; i < allfields.Length; i++)
         {
-            // Get the appearance attributes of each field, consequtively
-            FormFieldFacade facade = form.GetFieldFacade(allfields[i]);
+            // Get the appearance attributes of each field, consecutively
+            var facade = form.GetFieldFacade(allfields[i]);
             // Box in FormFieldFacade class holds field's location.
             box[i] = facade.Box;
         }
         form.Save(dataDir + "DifferenceBetweenFile_out.pdf");
             
-        using (var document = new Document(dataDir + "FilledForm - 2.pdf"))
+        using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
         {
             // Now we need to add a textfield just upon the original one
-            FormEditor editor = new FormEditor(document);
+            FormEditor editor = new Aspose.Pdf.Facades.FormEditor(document);
             for (int i = 0; i < allfields.Length; i++)
             {
                 // Add text field beneath every existing form field
-                editor.AddField(FieldType.Text, "TextField" + i, allfields[i], 1, box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
+                editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "TextField" + i, allfields[i], 1, box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
             }
             // Save the document
             editor.Save(dataDir + "DifferenceBetweenFile_out.pdf");

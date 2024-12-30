@@ -93,7 +93,7 @@ The following code snippet shows you how to Import FDF format annotations to PDF
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFDFByForm()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var form = new Aspose.Pdf.Facades.Form(dataDir + "input.pdf"))
@@ -115,13 +115,13 @@ The next code snippet shows how to import FDF format annotations to PDF with Pdf
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFDFByPdfAnnotationEditor()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     // Open fdf file.
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        var editor = new PdfAnnotationEditor();
+        var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
         editor.BindPdf(dataDir + "input.pdf");
         editor.ImportAnnotationsFromFdf(dataDir + "student.fdf");
         // Save updated document
