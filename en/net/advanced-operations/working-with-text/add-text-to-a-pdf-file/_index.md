@@ -102,7 +102,7 @@ private static void AddText()
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
-        var page = document.Pages[1];
+        var page = document.Pages.Add();
 
         // Create text fragment
         var textFragment = new Aspose.Pdf.Text.TextFragment("main text");
@@ -697,7 +697,7 @@ private static void CharacterSpacingUsingTextBuilderAndParagraph()
         // Add page to pages collection of Document
         var page = document.Pages.Add();
         // Create TextBuilder instance
-        var builder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+        var builder = new Aspose.Pdf.Text.TextBuilder(page);
         // Instantiate TextParagraph instance
         var paragraph = new Aspose.Pdf.Text.TextParagraph();
         // Create TextState instance to specify font name and size

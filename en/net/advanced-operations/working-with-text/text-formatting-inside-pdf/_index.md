@@ -192,7 +192,7 @@ private static void AddUnderlineText()
         // Append TextFragment to PDF file
         tb.AppendText(fragment);
 
-        // Save the document.
+        // Save the document
         document.Save(dataDir + "AddUnderlineText_out.pdf");
     }
 }

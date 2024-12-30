@@ -275,7 +275,7 @@ private static void ExtractTextBasedOnColumns()
             extractedText = textAbsorber.Text;
             textAbsorber.Visit(destDocument);
         }
-	    // Save the extracted text in text file
+        // Save the extracted text in text file
         System.IO.File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
     }
 }
