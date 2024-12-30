@@ -126,7 +126,7 @@ private static void AddLineAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
 	{
 		// Create Line Annotation
 		var lineAnnotation = new Aspose.Pdf.Annotations.LineAnnotation(
@@ -177,7 +177,7 @@ private static void AddCircleAndSquareAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
 	{
 		// Create Circle Annotation
 		var circleAnnotation = new Aspose.Pdf.Annotations.CircleAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(270, 160, 483, 383))
@@ -251,7 +251,7 @@ private static void AddPolygonAndPolylineAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
 	{
 		// Create Polygon Annotation
 		var polygonAnnotation = new Aspose.Pdf.Annotations.PolygonAnnotation(
@@ -317,7 +317,7 @@ private static void ReadLineAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all line annotations from the first page
 		var lineAnnotations = document.Pages[1].Annotations
@@ -346,7 +346,7 @@ private static void ReadCircleAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all circle annotations from the first page
 		var circleAnnotations = document.Pages[1].Annotations
@@ -375,7 +375,7 @@ private static void ReadSquareAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all square annotations from the first page
 		var squareAnnotations = document.Pages[1].Annotations
@@ -404,7 +404,7 @@ private static void ReadPolylineAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all polyline annotations from the first page
 		var polyAnnotations = document.Pages[1].Annotations
@@ -433,7 +433,7 @@ private static void ReadPolygonAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all polygon annotations from the first page
 		var polyAnnotations = document.Pages[1].Annotations
@@ -467,7 +467,7 @@ private static void DeleteLineAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all line annotations from the first page
 		var lineAnnotations = document.Pages[1].Annotations
@@ -497,7 +497,7 @@ private static void DeleteCircleAndSquareAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all circle and square annotations from the first page
 		var figures = document.Pages[1].Annotations
@@ -530,7 +530,7 @@ private static void DeletePolylineAndPolygonAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all polyline and polygon annotations from the first page
 		var polyAnnotations = document.Pages[1].Annotations
@@ -564,7 +564,7 @@ private static void AddInkAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
 	{
 		var page = document.Pages[1];
 
@@ -620,7 +620,7 @@ private static void AddInkAnnotationWithLineWidth()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create a new PDF document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		document.Pages.Add();
 

@@ -87,7 +87,7 @@ The next code snippet creates a new Document object using an input variable that
 private static void ClearTextInForm(string input, string output)
 {
     // Load the document
-    using(cument = new Aspose.Pdf.Document(input))
+    using (cument = new Aspose.Pdf.Document(input))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;
@@ -127,7 +127,7 @@ The Aspose.PDF library provides two ways to remove such forms from PDFs:
 private static void DeleteSpecifiedForm(string input, string output)
 {
     // Load the document
-    using(var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(input))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;
@@ -155,7 +155,7 @@ Method 2:
 private static void DeleteSpecifiedForm(string input, string output)
 {
     // Load the document
-    using(var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(input))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;
@@ -186,7 +186,7 @@ This code removes all form elements from the first page of a PDF document and th
 private static void RemoveAllForms(string input, string output)
 {
     // Load the document
-    using(var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(input))
 	{
 		// Get the forms from the first page
 		var forms = document.Pages[1].Resources.Forms;

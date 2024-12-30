@@ -113,7 +113,7 @@ private static void AddScreenAnnotationWithMedia()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(cument = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    using (cument = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Path to the media file (SWF)
 		var mediaFile = dataDir + "input.swf";
@@ -144,7 +144,7 @@ private static void AddSoundAnnotation()
 {
     // Load the PDF document
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		var mediaFile = dataDir + "file_example_WAV_1MG.wav";
 
@@ -181,7 +181,7 @@ private static void AddRichMediaAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create a new document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
 		Page page = document.Pages.Add();
@@ -243,7 +243,7 @@ private static void GetMultimediaAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
 	{
 		// Get multimedia annotations (Screen, Sound, RichMedia)
 		var mediaAnnotations = document.Pages[1].Annotations
@@ -321,7 +321,7 @@ private static void AddPrintButton()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create a new document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a new page
 		var page = document.Pages.Add();
@@ -376,7 +376,7 @@ private static void AddNavigationButtons()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
 	{
 		// Create an array of button fields
 		var buttons = new Aspose.Pdf.Forms.ButtonField[4];
@@ -495,7 +495,7 @@ private static void Add3dAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create a new PDF document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Load 3D content
 		var pdf3DContent = new Aspose.Pdf.Annotations.PDF3DContent(dataDir + "Ring.u3d");

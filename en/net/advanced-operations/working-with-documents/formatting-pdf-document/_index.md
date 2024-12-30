@@ -108,7 +108,7 @@ private static void GetDocumentWindowProperties()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
 	{
 		// Get different document properties
 		// Position of document's window - Default: false
@@ -181,7 +181,7 @@ private static void SetDocumentWindowProperties()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
 	{
 		// Set different document properties
 		// Specify to position document's window - Default: false
@@ -252,7 +252,7 @@ private static void EmbedFontsType1ToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Load an existing PDF Document
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
     // Set EmbedStandardFonts property of document
 		document.EmbedStandardFonts = true;
@@ -296,7 +296,7 @@ private static void EmbedFontWhileCreatingPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate Pdf object by calling its empty constructor
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Create a section in the Pdf object
 		var page = document.Pages.Add();
@@ -368,7 +368,7 @@ private static void GetAllFontsFromPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Get all fonts used in the document
 		var fonts = document.FontUtilities.GetAllFonts();
@@ -395,7 +395,7 @@ private static void NotificationFontSubstitution()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Attach the FontSubstitution event handler
 		document.FontSubstitution += OnFontSubstitution;
@@ -438,7 +438,7 @@ private static void SetFontSubsetStrategy()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// All fonts will be embedded as subset into document in case of SubsetAllFonts.
 		document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetAllFonts);
@@ -471,7 +471,7 @@ private static void SetZoomFactor()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate new Document object
-    using(var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
 	{
 		// Create GoToAction with a specific zoom factor
 		var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
@@ -496,7 +496,7 @@ private static void GetZoomFactor()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate new Document object
-    using(var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
 	{
 		// Create GoToAction object
 		if (document.OpenAction is Aspose.Pdf.Annotations.GoToAction action)

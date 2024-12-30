@@ -102,7 +102,7 @@ private static void AddTextAnnotationToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load document
-    using(var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create text annotation
 		var textAnnotation = new Aspose.Pdf.Annotations.TextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
@@ -146,7 +146,7 @@ private static void AddLineAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
 	{
 		// Create Line Annotation
 		var lineAnnotation = new Aspose.Pdf.Annotations.LineAnnotation(
@@ -184,7 +184,7 @@ private static void AddFreeTextAnnotationDemo()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
 	{
 		var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor(document);
 
@@ -228,7 +228,7 @@ private static void AddFreeTextCalloutAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create a new PDF document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		var page = document.Pages.Add();
 
@@ -273,7 +273,7 @@ private static void ImportAnnotationsFromXfdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create an XFDF string builder
 		var xfdf = new StringBuilder();
@@ -329,7 +329,7 @@ private static void AddInvisibleAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create a free text annotation
 		var annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
@@ -406,7 +406,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 {
      // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    using(var document = new Aspose.Pdf.Document($"{dataDir}SetFreeTextAnnotationFormatting.pdf"))
+    using (var document = new Aspose.Pdf.Document($"{dataDir}SetFreeTextAnnotationFormatting.pdf"))
 	{
 		// Set default values
 		var textColor = System.Drawing.Color.Red;
@@ -472,7 +472,7 @@ private static void DeleteAllAnnotationsFromPage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"))
 	{
 		// Delete all annotations from the first page
 		document.Pages[1].Annotations.Delete();
@@ -505,7 +505,7 @@ private static void DeleteParticularAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularAnnotation.pdf"))
 	{
 		// Delete a particular annotation by index (e.g., the first annotation on the first page)
 		document.Pages[1].Annotations.Delete(1);
@@ -529,7 +529,7 @@ private static void GetAllAnnotationsFromPage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetAllAnnotationsFromPage.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAllAnnotationsFromPage.pdf"))
 	{
 		// Loop through all the annotations on the first page
 		foreach (Aspose.Pdf.Annotations.MarkupAnnotation annotation in document.Pages[1].Annotations)
@@ -558,7 +558,7 @@ private static void GetParticularAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetParticularAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetParticularAnnotation.pdf"))
 	{
 		// Get a particular annotation by index (e.g., the first annotation on the first page)
 		var textAnnotation = (Aspose.Pdf.Annotations.TextAnnotation)document.Pages[1].Annotations[1];
@@ -584,7 +584,7 @@ private static void AddAndGetResourceOfAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create a screen annotation with a SWF file
 		var sa = new Aspose.Pdf.Annotations.ScreenAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");

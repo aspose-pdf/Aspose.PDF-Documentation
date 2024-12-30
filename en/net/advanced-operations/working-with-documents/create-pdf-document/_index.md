@@ -103,7 +103,7 @@ private static void CreateHelloWorldPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
     // Initialize document object
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add page
 		var page = document.Pages.Add();
@@ -233,7 +233,7 @@ Steps to creating an accessible PDF:
 private static void ProcessTaggedContent(string somePdfFilePath, string output)
 {
     // Load the document
-    using(var document = new Aspose.Pdf.Document(somePdfFilePath))
+    using (var document = new Aspose.Pdf.Document(somePdfFilePath))
 	{
 		// Get the tagged content
 		var content = document.TaggedContent;

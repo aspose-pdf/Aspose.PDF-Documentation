@@ -102,7 +102,7 @@ private static void AddCaretAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Create Caret Annotation for text insertion
 		var caretAnnotation1 = new Aspose.Pdf.Annotations.CaretAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(299.988, 713.664, 308.708, 720.769))
@@ -161,7 +161,7 @@ private static void GetCaretAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
 	{
 		// Get Caret annotations from the first page
 		var caretAnnotations = document.Pages[1].Annotations
@@ -190,7 +190,7 @@ private static void DeleteCaretAnnotation()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
 	{
 		// Get Caret annotations from the first page
 		var caretAnnotations = document.Pages[1].Annotations
@@ -222,7 +222,7 @@ private static void RedactPage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create RedactionAnnotation instance for a specific page region
 		var annot = new Aspose.Pdf.Annotations.RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
@@ -262,7 +262,7 @@ private static void RedactPageWithFacadesApproach()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create an instance of PdfAnnotationEditor
-    using(var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    using (var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
 	{
 		// Redact a specific page region
 		editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);

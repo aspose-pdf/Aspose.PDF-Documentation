@@ -100,7 +100,7 @@ private static void FillXFAFields()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load XFA form
-    using(var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
 	{
 		// Get names of XFA form fields
 		var names = document.Form.XFA.FieldNames;
@@ -148,7 +148,7 @@ private static void ConvertDynamicXFAToAcroForm()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load dynamic XFA form
-    using(var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
 	{
 		// Set the form fields type as standard AcroForm
 		document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
@@ -172,7 +172,7 @@ private static void GetXFAProperties()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load XFA form
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
 	{
 		// Get names of XFA form fields
 		var names = document.Form.XFA.FieldNames;

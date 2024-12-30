@@ -94,7 +94,7 @@ private static void FillFormField()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))
 	{
 		// Get a field
 		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)

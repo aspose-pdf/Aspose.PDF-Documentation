@@ -96,7 +96,7 @@ private static void GetValuesFromFields()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
 	{
 		// Get values from all fields
 		foreach (Aspose.Pdf.Forms.Field formField in document.Form)
@@ -121,7 +121,7 @@ private static void GetValueFromField()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
 	{
 		// Get a field
 		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
@@ -145,7 +145,7 @@ private static void GetSubmitFormActionUrl()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
 	{
 		// Get the SubmitFormAction from the form field
 		if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
@@ -176,7 +176,7 @@ private static void GetFieldsFromRegion()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open pdf file
-    using(var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
 	{
 		// Create rectangle object to get fields in that area
 		var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);

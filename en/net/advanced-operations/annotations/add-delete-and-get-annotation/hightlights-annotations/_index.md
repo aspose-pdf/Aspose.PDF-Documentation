@@ -111,7 +111,7 @@ private static void AddTextMarkupAnnotations()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Create a TextFragmentAbsorber to find the text "PDF"
 		var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
@@ -164,7 +164,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
 /// </summary>
 public static void AddHighlightAnnotationAdvanced()
 {
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var page = document.Pages[1];
 		var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
@@ -228,7 +228,7 @@ private static HighlightAnnotation HighLightTextFragment(Page page,
 public static void GetHighlightedText()
 {
     // Load the PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var highlightAnnotations = document.Pages[1].Annotations
 			.Where(a => a.AnnotationType == AnnotationType.Highlight)
@@ -251,7 +251,7 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 public static void GetTextMarkupAnnotation()
 {
     // Load the PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var textMarkupAnnotations = document.Pages[1].Annotations
 			.Where(a => a.AnnotationType == AnnotationType.Highlight
@@ -275,7 +275,7 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
 public static void DeleteTextMarkupAnnotation()
 {
     // Load the PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var textMarkupAnnotations = document.Pages[1].Annotations
 			.Where(a => a.AnnotationType == AnnotationType.Highlight

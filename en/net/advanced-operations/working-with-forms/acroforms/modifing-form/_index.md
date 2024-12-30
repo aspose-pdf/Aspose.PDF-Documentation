@@ -117,7 +117,7 @@ private static void GetFieldLimitUsingDOM()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
 	{
 		// Get the field and its maximum limit
 		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
@@ -165,7 +165,7 @@ private static void SetFormFieldFont()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
 	{
 		// Get particular form field from document
 		if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
@@ -196,7 +196,7 @@ private static void DeleteFormField()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))
 	{
 		// Delete a particular field by name
 		document.Form.Delete("textbox1");

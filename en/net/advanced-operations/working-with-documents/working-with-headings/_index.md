@@ -107,7 +107,7 @@ private static void ApplyNumberStyleToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create a new PDF document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		document.PageInfo.Width = 612.0;
 		document.PageInfo.Height = 792.0;

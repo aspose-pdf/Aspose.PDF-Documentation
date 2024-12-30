@@ -102,7 +102,7 @@ private static void ValidateToPdfA1aStandard()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
 	{
 		// Validate PDF for PDF/A-1a
 		document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1A);
@@ -121,7 +121,7 @@ private static void ValidateToPdfA1bStandard()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
 	{
 		// Validate PDF for PDF/A-1b
 		document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1B);
@@ -152,7 +152,7 @@ private static void AddTOCToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load an existing PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
 	{
 		// Get access to the first page of PDF file
 		var tocPage = document.Pages.Insert(1);
@@ -210,7 +210,7 @@ private static void CreateTocWithCustomFormatting()
     string outFile = "TOC.pdf";
 
     // Create a new document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a TOC page
 		var tocPage = document.Pages.Add();
@@ -297,7 +297,7 @@ private static void CreateTocWithHiddenPageNumbers()
     string outFile = dataDir + "HiddenPageNumbers_out.pdf";
 
     // Create a new document
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a TOC page
 		var tocPage = document.Pages.Add();

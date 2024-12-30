@@ -103,7 +103,7 @@ private static void AddTextBoxFieldToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Create a field
 		var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
@@ -141,7 +141,7 @@ private static void AddRadioButtonToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Instantiate Document object
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
 		document.Pages.Add();
@@ -175,7 +175,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Instantiate Document object
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
 		var page = document.Pages.Add();
@@ -323,7 +323,7 @@ private static void AddComboBoxToPdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create Document object
-    using(var document = new Aspose.Pdf.Document())
+    using (var document = new Aspose.Pdf.Document())
 	{
 		// Add page to document object
 		document.Pages.Add();
@@ -361,7 +361,7 @@ private static void AddTooltipToField()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
-    using(var document = new Aspose.Pdf.Document(dataDir + "AddTooltipToField.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTooltipToField.pdf"))
 	{
 		// Set the tooltip for textfield
 		if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)

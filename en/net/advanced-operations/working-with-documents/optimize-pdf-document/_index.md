@@ -117,7 +117,7 @@ private static void OptimizeDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
 		// Optimize for web
 		document.Optimize();
@@ -147,7 +147,7 @@ private static void ShrinkDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
 	{
 		// Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
 		document.OptimizeResources();
@@ -177,7 +177,7 @@ private static void ShrinkImage()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
 	{
 		// Initialize OptimizationOptions
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
@@ -208,7 +208,7 @@ private static void ResizeImages()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
 	{
 		// Initialize OptimizationOptions
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
@@ -248,7 +248,7 @@ private static void FastShrinkImages()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
 	{
 		// Initialize OptimizationOptions
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
@@ -287,7 +287,7 @@ private static void OptimizeDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
 		// Set RemoveUsedObject option
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
@@ -317,7 +317,7 @@ private static void OptimizePdfDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set RemoveUsedStreams option
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
@@ -347,7 +347,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set LinkDuplicateStreams option
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
@@ -375,7 +375,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set AllowReusePageContent option
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
@@ -414,7 +414,7 @@ private static void OptimizePdfDocumentWithUnembedFonts()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set UnembedFonts option
 		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
@@ -457,7 +457,7 @@ private static void FlattenAnnotationsInPdfDocument()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load document
-    using(var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Flatten annotations
 		foreach (var page in document.Pages)
@@ -487,7 +487,7 @@ private static void FlattenPdfForms()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Flatten Forms
 		if (document.Form.Fields.Lenght > 0)
@@ -517,7 +517,7 @@ private static void ConvertRgbToGrayScale()
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create RGB to DeviceGray conversion strategy
 		var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();

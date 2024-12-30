@@ -100,7 +100,7 @@ private static void ExportAnnotationsToXfdf()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PdfAnnotationEditor object
-    using(var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
 	{
 		// Bind PDF document to the Annotation Editor
 		annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
@@ -129,10 +129,10 @@ private static void ImportAnnotationXFDF()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PdfAnnotationEditor object
-    using(var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
 	{
 		// Create a new PDF document
-		using(var document = new Aspose.Pdf.Document())
+		using (var document = new Aspose.Pdf.Document())
 		{
 			document.Pages.Add();
 
@@ -165,10 +165,10 @@ private static void ImportAnnotationFromPDF()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open existing PDF document (one page with annotations)
-    using(var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
+    using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
 	{
 		// Create a new PDF document
-		using(var documentTo = new Aspose.Pdf.Document())
+		using (var documentTo = new Aspose.Pdf.Document())
 		{
 			documentTo.Pages.Add();
 

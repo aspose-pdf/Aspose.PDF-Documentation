@@ -131,7 +131,7 @@ To create a new PDF from a layer, the following code snippet can be used:
 private static void SaveLayersFromPdf(string inputPath, string outputPath)
 {
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document(inputPath))
+    using (var document = new Aspose.Pdf.Document(inputPath))
 	{
 		// Get layers from the first page
 		var layers = document.Pages[1].Layers;
@@ -155,7 +155,7 @@ It is possible to extract PDF layer elements and save them into a new PDF file s
 private static void SaveLayersToOutputStream(string inputPath, Stream outputStream)
 {
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document(inputPath))
+    using (var document = new Aspose.Pdf.Document(inputPath))
 	{
 		// Get layers from the first page
 		var layers = document.Pages[1].Layers;
@@ -179,7 +179,7 @@ Aspose.PDF for .NET library opens a PDF, iterates through each layer on the firs
 private static void FlattenLayersInPdf(string input)
 {
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document(input)
+    using (var document = new Aspose.Pdf.Document(input)
 	{
 		// Get the first page
 		var page = document.Pages[1];
@@ -212,7 +212,7 @@ The second parameter allows renaming the optional content group marker. The defa
 private static void MergeLayersInPdf(string input, string output, string newLayerName, string optionalLayerName = null)
 {
     // Load source PDF file
-    using(var document = new Aspose.Pdf.Document(input))
+    using (var document = new Aspose.Pdf.Document(input))
 	{
 		// Get the first page
 		var page = document.Pages[1];
