@@ -84,16 +84,16 @@ You can then use [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspos
 private static void ExtractAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractAnnotations.pdf"))
     {
         var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
         annotationEditor.BindPdf(document);
         // Extract annotations
         var annotationTypes = new[] { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Text };
-        IList<Annotation>? annotations = annotationEditor.ExtractAnnotations(1, 2, annotationTypes);
-        foreach (Annotation? annotation in annotations)
+        var annotations = annotationEditor.ExtractAnnotations(1, 2, annotationTypes);
+        foreach (var annotation in annotations)
         {
             Console.WriteLine(annotation.Contents);
         }
