@@ -765,19 +765,19 @@ Aspose.PDF for .NET presents you online free application ["XML to PDF"](https://
 The conversion of XSL-FO files to PDF can be implemented using the traditional Aspose.PDF technique - instantiate [Document](https://reference.aspose.com/page/net/aspose.page/document) object with [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). But sometimes you can meet with the incorrect file structure. For this case, XSL-FO converter allows setting the error handling strategy. You can choose `ThrowExceptionImmediately`, `TryIgnore` or `InvokeCustomHandler`.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Convert_XSLFO_to_PDF()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Convert options
-    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "XSLFOToPdfInput.xslt");
     // Set error handling strategy
     options.ParsingErrorsHandlingType = Aspose.Pdf.XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "XSLFOToPdfInput.xml", options))
     {
-        document.Save(dataDir + "Convert_XSLFO_to_PDF_out.pdf");
+        // Save document in PDF format
+        document.Save(dataDir + "XSLFOToPdf_out.pdf");
     }
 }
 ```
