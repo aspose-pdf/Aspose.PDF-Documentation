@@ -91,7 +91,7 @@ private static void ModifyAnnotationsAuthor()
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
         // Bind PDF document
-        annotationEditor.BindPdf(dataDir + "input.pdf");
+        annotationEditor.BindPdf(dataDir + "AnnotationsInput.pdf");
         // Modify annotations author
         annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
         // Save document
@@ -109,7 +109,7 @@ private static void ModifyAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
         // Create PdfAnnotationEditor
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
