@@ -156,7 +156,7 @@ private static void ZoomToPageContents()
         // Get rectangular region of first page of PDF
         Aspose.Pdf.Rectangle rect = document.Pages[1].Rect;
         // Instantiate PdfPageEditor instance
-        var pdfPageEditor = new PdfPageEditor();
+        var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
         // Bind source PDF
         pdfPageEditor.BindPdf(dataDir + "input.pdf");
         // Set zoom coefficient
