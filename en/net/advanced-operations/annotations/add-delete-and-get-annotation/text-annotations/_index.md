@@ -166,7 +166,7 @@ private static void AddLineAnnotation()
 		document.Pages[1].Annotations.Add(lineAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "Appartments_mod_out.pdf");
+		document.Save(dataDir + "AddLineAnnotation_out.pdf");
 	}
 }
 ```
@@ -288,7 +288,7 @@ private static void ImportAnnotationsFromXfdf()
 		document.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(xfdf.ToString())));
 
 		// Save the updated document
-		document.Save(dataDir + "SetCalloutPropertyXFDF_out.pdf");
+		document.Save(dataDir + "SetCalloutPropertyXfdf_out.pdf");
 	}
 }
 ```

@@ -130,7 +130,7 @@ private static void AddLinkAnnotation()
 		page.Annotations.Add(linkAnnotation1);
 
 		// Save the document
-		document.Save(dataDir + "test_out.pdf");
+		document.Save(dataDir + "AddLinkAnnotation_out.pdf");
 	}
 }
 ```
@@ -291,7 +291,7 @@ private static void DeleteLinkAnnotations()
 		}
 
 		// Save the document with removed annotations
-		document.Save(dataDir + "SimpleResume_del_out.pdf");
+		document.Save(dataDir + "DeleteLinkAnnotations_out.pdf");
 	}
 }
 ```

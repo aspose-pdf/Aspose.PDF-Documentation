@@ -533,7 +533,7 @@ private static void ConvertRgbToGrayScale()
 		}
 
 		// Save resultant file
-		document.Save(dataDir + "Test-gray_out.pdf");
+		document.Save(dataDir + "TestGray_out.pdf");
 	}
 }
 ```

@@ -149,7 +149,7 @@ private static void AddTextMarkupAnnotations()
 		document.Pages[1].Annotations.Add(underlineAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "sample_mod_out.pdf");
+		document.Save(dataDir + "AddTextMarkupAnnotations_out.pdf");
 	}
 }
 ```
@@ -174,7 +174,7 @@ public static void AddHighlightAnnotationAdvanced()
 			var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
 			page.Annotations.Add(highlightAnnotation);
 		}
-		document.Save(dataDir + "sample_mod_out.pdf");
+		document.Save(dataDir + "AddHighlightAnnotationAdvanced_out.pdf");
 	}
 }
 
@@ -231,7 +231,7 @@ public static void GetHighlightedText()
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var highlightAnnotations = document.Pages[1].Annotations
-			.Where(a => a.AnnotationType == AnnotationType.Highlight)
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight)
 			.Cast<Aspose.Pdf.Annotations.HighlightAnnotation>();
 		foreach (var ta in highlightAnnotations)
 		{
@@ -254,8 +254,8 @@ public static void GetTextMarkupAnnotation()
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var textMarkupAnnotations = document.Pages[1].Annotations
-			.Where(a => a.AnnotationType == AnnotationType.Highlight
-			|| a.AnnotationType == AnnotationType.Squiggly)
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+			|| a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
 			.Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
 		foreach (var ta in textMarkupAnnotations)
 		{
@@ -278,14 +278,14 @@ public static void DeleteTextMarkupAnnotation()
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var textMarkupAnnotations = document.Pages[1].Annotations
-			.Where(a => a.AnnotationType == AnnotationType.Highlight
-			||a.AnnotationType == AnnotationType.Squiggly)
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+			||a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
 			.Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
 		foreach (var ta in textMarkupAnnotations)
 		{
 			document.Pages[1].Annotations.Delete(ta);
 		}
-		document.Save(dataDir + "sample_del_out.pdf");
+		document.Save(dataDir + "DeleteTextMarkupAnnotation_out.pdf");
 	}
 }
 ```

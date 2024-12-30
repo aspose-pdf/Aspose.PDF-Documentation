@@ -116,7 +116,7 @@ private static void FillXFAFields()
 		}
 
 		// Save the updated document
-		document.Save(dataDir + "Filled_XFA_out.pdf");
+		document.Save(dataDir + "FilledXfa_out.pdf");
 	}
 }
 ```
@@ -154,7 +154,7 @@ private static void ConvertDynamicXFAToAcroForm()
 		document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
 
 		// Save the resultant PDF
-		document.Save(dataDir + "Standard_AcroForm_out.pdf");
+		document.Save(dataDir + "StandardAcroForm_out.pdf");
 	}
 }
 ```
@@ -195,7 +195,7 @@ private static void GetXFAProperties()
 		}
 
 		// Save the updated document
-		document.Save(dataDir + "Filled_XFA_out.pdf");
+		document.Save(dataDir + "FilledXfa_out.pdf");
 	}
 }
 ```

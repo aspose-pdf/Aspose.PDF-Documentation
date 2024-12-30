@@ -110,7 +110,7 @@ private static void LockLayerInPDF()
         layer.Lock();
 
         // Save the document
-        document.Save(dataDir + "locked_layer_out.pdf");
+        document.Save(dataDir + "LockLayerInPDF_out.pdf");
     }
 }
 ```
@@ -236,7 +236,7 @@ private static void MergeLayersInPdf(string input, string output, string newLaye
 		}
 
 		// Save the updated document
-		document.Save(dataDir + "merged-layers_out.pdf");
+		document.Save(dataDir + "MergeLayersInPdf_out.pdf");
 	}
 }
 ```

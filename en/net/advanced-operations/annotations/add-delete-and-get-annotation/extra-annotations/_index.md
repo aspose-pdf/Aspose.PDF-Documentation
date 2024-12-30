@@ -123,7 +123,7 @@ private static void AddCaretAnnotations()
 		};
 
 		// Create StrikeOut Annotation
-		var strikeOutAnnotation = new StrikeOutAnnotation(document.Pages[1],
+		var strikeOutAnnotation = new Aspose.Pdf.Annotations.StrikeOutAnnotation(document.Pages[1],
 			new Rectangle(318.407, 727.826, 368.916, 740.098))
 		{
 			Color = Aspose.Pdf.Color.Blue,
@@ -143,7 +143,7 @@ private static void AddCaretAnnotations()
 		document.Pages[1].Annotations.Add(strikeOutAnnotation);
 
 		// Save result file
-		document.Save(dataDir + "sample_caret_out.pdf");
+		document.Save(dataDir + "AddCaretAnnotations_out.pdf");
 	}
 }
 ```
@@ -204,7 +204,7 @@ private static void DeleteCaretAnnotation()
 		}
 
 		// Save the document after deleting annotations
-		document.Save(dataDir + "sample_caret_del_out.pdf");
+		document.Save(dataDir + "DeleteCaretAnnotation_out.pdf");
 	}
 }
 ```

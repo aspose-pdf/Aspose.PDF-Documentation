@@ -274,7 +274,7 @@ private static void EmbedFontsType1ToPdf()
 		}
 
 		// Save the updated PDF file
-		document.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
+		document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
 	}		
 }
 ```
@@ -349,7 +349,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
             };
 
             // Save the document with the specified save options
-            document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
+            document.Save(dataDir + "DefaultFont_out.pdf", pdfSaveOptions);
         }
     }
 }
@@ -404,7 +404,7 @@ private static void NotificationFontSubstitution()
 			//                                                                        oldFont.FontName, newFont.FontName));
 
 		// Save the document (optional, depending on your use case)
-		document.Save(dataDir + "output_out.pdf");
+		document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
 	}
 }
 ```
@@ -447,7 +447,7 @@ private static void SetFontSubsetStrategy()
 		document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
 
 		// Save the updated PDF document
-		document.Save(dataDir + "Output_out.pdf");
+		document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
 	}
 }
 ```

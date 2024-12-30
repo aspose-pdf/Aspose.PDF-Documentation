@@ -123,7 +123,7 @@ The next code snippet describes how import annotations from an XFDF file:
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-private static void ImportAnnotationXFDF()
+private static void ImportAnnotationFromXfdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
@@ -146,7 +146,7 @@ private static void ImportAnnotationXFDF()
 			annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
 
 			// Save the output PDF
-			document.Save(dataDir + "AnnotationDemo2_out.pdf");
+			document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
 		}
 	}
 }

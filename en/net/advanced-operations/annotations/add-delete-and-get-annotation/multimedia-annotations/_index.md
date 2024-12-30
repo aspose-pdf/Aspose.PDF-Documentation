@@ -128,7 +128,7 @@ private static void AddScreenAnnotationWithMedia()
 		document.Pages[1].Annotations.Add(screenAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "sample_swf_out.pdf");
+		document.Save(dataDir + "AddScreenAnnotationWithMedia_out.pdf");
 	}
 }
 ```
@@ -163,7 +163,7 @@ private static void AddSoundAnnotation()
 		document.Pages[1].Annotations.Add(soundAnnotation);
 
 		// Save the document with the new annotation
-		document.Save(dataDir + "sample_wav_out.pdf");
+		document.Save(dataDir + "AddSoundAnnotation_out.pdf");
 	}
 }
 ```
@@ -288,7 +288,7 @@ private static void DeletePolyAnnotation()
         }
 
         // Save the document after deleting annotations
-        document.Save(dataDir + "RichMediaAnnotation_del_out.pdf");
+        document.Save(dataDir + "DeletePolyAnnotation_out.pdf");
     }
 }
 ```
@@ -532,7 +532,7 @@ private static void Add3dAnnotation()
 		document.Pages[1].Annotations.Add(pdf3dAnnotation);
 
 		// Save the document
-		document.Save(dataDir + "sample_3d_out.pdf");
+		document.Save(dataDir + "Add3dAnnotation_out.pdf");
 	}
 }
 ```

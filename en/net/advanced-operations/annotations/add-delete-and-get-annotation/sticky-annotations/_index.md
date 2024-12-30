@@ -120,7 +120,7 @@ private static void AddWatermarkAnnotation()
 		wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
 		// Save the Document
-		document.Save(dataDir + "Output_out.pdf");
+		document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
 	}
 }
 ```
@@ -184,7 +184,7 @@ private static void AddWatermarkAnnotationWithImage()
 		}
 
 		// Save the document
-		document.Save(dataDir + "output_out.pdf");
+		document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
 	}
 }
 ```
