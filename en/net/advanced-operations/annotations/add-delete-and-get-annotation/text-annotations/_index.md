@@ -166,7 +166,7 @@ private static void AddLineAnnotation()
 		document.Pages[1].Annotations.Add(lineAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "Appartments_mod.pdf");
+		document.Save(dataDir + "Appartments_mod_out.pdf");
 	}
 }
 ```
@@ -255,7 +255,7 @@ private static void AddFreeTextCalloutAnnotation()
 		fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">This is a sample</span></p></body>";
 
 		// Save the document
-		document.Save(dataDir + "SetCalloutProperty.pdf");
+		document.Save(dataDir + "SetCalloutProperty_out.pdf");
 	}
 }
 ```
@@ -288,7 +288,7 @@ private static void ImportAnnotationsFromXfdf()
 		document.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(xfdf.ToString())));
 
 		// Save the updated document
-		document.Save(dataDir + "SetCalloutPropertyXFDF.pdf");
+		document.Save(dataDir + "SetCalloutPropertyXFDF_out.pdf");
 	}
 }
 ```
@@ -592,7 +592,7 @@ private static void AddAndGetResourceOfAnnotation()
 		document.Pages[1].Annotations.Add(sa);
 
 		// Save the document with the new annotation
-		document.Save(dataDir + "GetResourceOfAnnotation_Out.pdf");
+		document.Save(dataDir + "GetResourceOfAnnotation_out.pdf");
 
 		// Open the updated document
 		var document1 = new Aspose.Pdf.Document(dataDir + "GetResourceOfAnnotation_Out.pdf");

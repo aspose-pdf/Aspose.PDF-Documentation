@@ -128,7 +128,7 @@ private static void AddScreenAnnotationWithMedia()
 		document.Pages[1].Annotations.Add(screenAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "sample_swf.pdf");
+		document.Save(dataDir + "sample_swf_out.pdf");
 	}
 }
 ```
@@ -177,7 +177,7 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 
 private static void AddRichMediaAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create a new document
@@ -239,7 +239,7 @@ Please try using the following code snippet to Get MultimediaAnnotation from PDF
 
 private static void GetMultimediaAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -270,7 +270,7 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
 
 private static void DeletePolyAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -317,7 +317,7 @@ In this sample, we will learn how to add the push-buttons for navigation in the 
 
 private static void AddPrintButton()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create a new document
@@ -372,7 +372,7 @@ This example shows how to create 4 buttons:
 
 private static void AddNavigationButtons()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load the PDF document
@@ -491,7 +491,7 @@ Please check the following code snippet to add 3D Annotation.
 
 private static void Add3dAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create a new PDF document

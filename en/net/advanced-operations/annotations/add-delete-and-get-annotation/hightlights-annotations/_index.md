@@ -149,7 +149,7 @@ private static void AddTextMarkupAnnotations()
 		document.Pages[1].Annotations.Add(underlineAnnotation);
 
 		// Save the updated document
-		document.Save(dataDir + "sample_mod.pdf");
+		document.Save(dataDir + "sample_mod_out.pdf");
 	}
 }
 ```
@@ -174,7 +174,7 @@ public static void AddHighlightAnnotationAdvanced()
 			var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
 			page.Annotations.Add(highlightAnnotation);
 		}
-		document.Save(dataDir + "sample_mod.pdf");
+		document.Save(dataDir + "sample_mod_out.pdf");
 	}
 }
 
@@ -285,7 +285,7 @@ public static void DeleteTextMarkupAnnotation()
 		{
 			document.Pages[1].Annotations.Delete(ta);
 		}
-		document.Save(dataDir + "sample_del.pdf");
+		document.Save(dataDir + "sample_del_out.pdf");
 	}
 }
 ```

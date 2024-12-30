@@ -96,7 +96,7 @@ The following code snippet shows you how to export annotations to an XFDF file:
 
 private static void ExportAnnotationsToXfdf()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PdfAnnotationEditor object
@@ -125,7 +125,7 @@ The next code snippet describes how import annotations from an XFDF file:
 
 private static void ImportAnnotationXFDF()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PdfAnnotationEditor object
@@ -161,7 +161,7 @@ In the code below an ImportAnnotations method allows import annotations directly
 
 private static void ImportAnnotationFromPDF()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open existing PDF document (one page with annotations)

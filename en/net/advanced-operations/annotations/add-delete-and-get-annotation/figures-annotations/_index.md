@@ -759,6 +759,6 @@ public static void DeleteCircleAnnotation()
     }
 
     // Save result file
-    document.Save(dataDir + "Appartments_del.pdf");
+    document.Save(dataDir + "Appartments_del_out.pdf");
 }
 ```

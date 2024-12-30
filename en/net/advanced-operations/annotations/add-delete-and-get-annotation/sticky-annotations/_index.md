@@ -92,7 +92,7 @@ Please check the following code snippet to add WatermarkAnnotation.
 
 private static void AddWatermarkAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -134,7 +134,7 @@ Sometimes we have a requirement to use same image multiple times in a PDF docume
 
 private static void AddWatermarkAnnotationWithImage()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Define the rectangle for the image

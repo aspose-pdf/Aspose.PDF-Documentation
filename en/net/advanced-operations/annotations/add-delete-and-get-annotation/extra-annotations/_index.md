@@ -98,7 +98,7 @@ The following code snippet shows how to add Caret Annotation to a PDF file:
 
 private static void AddCaretAnnotations()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -143,7 +143,7 @@ private static void AddCaretAnnotations()
 		document.Pages[1].Annotations.Add(strikeOutAnnotation);
 
 		// Save result file
-		document.Save(dataDir + "sample_caret.pdf");
+		document.Save(dataDir + "sample_caret_out.pdf");
 	}
 }
 ```
@@ -157,7 +157,7 @@ Please try using the following code snippet to Get Caret Annotation in PDF docum
 
 private static void GetCaretAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -186,7 +186,7 @@ The following code snippet shows how Delete Caret Annotation from a PDF file.
 
 private static void DeleteCaretAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -218,7 +218,7 @@ Aspose.PDF for .NET supports the feature to add as well as manipulate Annotation
 
 private static void RedactPage()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open the PDF document
@@ -258,7 +258,7 @@ Aspose.Pdf.Facades namespace also has a class named [PdfAnnotationEditor](https:
 
 private static void RedactPageWithFacadesApproach()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create an instance of PdfAnnotationEditor

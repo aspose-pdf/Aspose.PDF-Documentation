@@ -92,7 +92,7 @@ Several additional steps were performed to create the annotation. We used 2 Text
 
 private static void AddLinkAnnotation()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -236,7 +236,7 @@ Please try using the following code snippet to Get LinkAnnotation from PDF docum
 
 private static void GetLinkAnnotations()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
@@ -276,7 +276,7 @@ The following code snippet shows how to Delete Link Annotation from PDF file. Fo
 
 private static void DeleteLinkAnnotations()
 {
-    // Initialize data directory
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Load the PDF document
