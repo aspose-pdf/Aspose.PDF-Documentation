@@ -138,12 +138,16 @@ private static void RemoveBatesNumbering()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))
     {
         foreach (var page in document.Pages)
         {
-            var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
-            page.Artifacts.Delete(batesNum);
+            var batesNum = page.Artifacts.FirstOrDefault(ar => ar.CustomSubtype == "BatesN");
+            if (batesNum != null)
+            {
+                page.Artifacts.Delete(batesNum);   
+            }
+ 
         }
         // Save document
         document.Save(dataDir + "RemoveBatesNumbering_out.pdf");
