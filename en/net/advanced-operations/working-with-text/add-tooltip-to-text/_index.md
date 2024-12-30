@@ -88,7 +88,6 @@ private static void AddTooltipToSearchedText()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    var outputFilePath = dataDir + "Tooltip_out.pdf";
 
     // Create the document
     using (var document = new Aspose.Pdf.Document())
@@ -96,10 +95,10 @@ private static void AddTooltipToSearchedText()
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
         document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "Tooltip_out.pdf");
     }
     // Open document
-    using (var document = new Aspose.Pdf.Document(outputFilePath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
         var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
@@ -140,7 +139,7 @@ private static void AddTooltipToSearchedText()
         }
 
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "Tooltip_out.pdf");
     }
 }
 ```
@@ -170,18 +169,17 @@ private static void CreateHiddenTextBlock()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    var outputFilePath = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
 
     // Create sample document with text
     using (var document = new Aspose.Pdf.Document())
     {
         // Add paragraph with text
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
-        document.Save(outputFilePath);
+        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 
     // Open document with text
-    using (var document = new Aspose.Pdf.Document(outputFilePath))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
         var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
@@ -226,7 +224,7 @@ private static void CreateHiddenTextBlock()
         document.Form.Add(buttonField);
 
         // Save document
-        document.Save(outputFilePath);
+        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 }
 ```

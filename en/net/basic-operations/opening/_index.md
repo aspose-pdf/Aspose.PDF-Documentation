@@ -137,7 +137,7 @@ private static void OpenDocumentWithPassword()
     const string password = "Aspose2020";
     try
     {
-        // Load document
+        // Open the document
         using (var document = new Aspose.Pdf.Document(dataDir + "DocSite.pdf", password))
         {
             Console.WriteLine("Pages " + document.Pages.Count);

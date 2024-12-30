@@ -129,16 +129,13 @@ private static void CreateSearchableDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
     
-    // The path to the document
-    var filePath = dataDir + "SearchableDocument.pdf";
-
-    // Open document
-    using (var document = new Aspose.Pdf.Document(filePath))
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchableDocument.pdf"))
     {
         document.Convert(CallBackGetHocr);
 
         // Save document
-        document.Save(filePath);
+        document.Save(dataDir + "SearchableDocument_out.pdf");
     }
 }
 
@@ -225,9 +222,9 @@ Steps to creating an accessible PDF:
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateAnAccessibleDocument()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
-    // Load document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
         // Access tagged content.
