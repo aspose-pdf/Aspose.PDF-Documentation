@@ -87,20 +87,26 @@ This example selects a TextBoxField and sets its value using the Value property.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Open document
-Document document = new Document(dataDir + "FillFormField.pdf");
+private static void FillFormField()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Get a field
-TextBoxField textBoxField = document.Form["textbox1"] as TextBoxField;
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))
+	{
+		// Get a field
+		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+		{
+			// Modify field value
+			textBoxField.Value = "Value to be filled in the field";
+		}
 
-// Modify field value
-textBoxField.Value = "Value to be filled in the field";
-
-// Save updated document
-document.Save(dataDir + "FillFormField_out.pdf");
+		// Save updated document
+		document.Save(dataDir + "FillFormField_out.pdf");
+	}
+}
 ```
 
 <script type="application/ld+json">

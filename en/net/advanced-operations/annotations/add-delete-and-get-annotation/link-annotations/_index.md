@@ -88,33 +88,51 @@ A [Link Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/
 Several additional steps were performed to create the annotation. We used 2 TextFragmentAbsorbers to find fragments to demo. The first one is for the link annotation text, and the second one indicates some places in the document.
 
 ```cs
-Document document = new Document(dataDir + "Link Annotation Demo.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-var page = document.Pages[1];
-
-var regEx = new Regex(@"Link Annotation Demo \d");
-TextFragmentAbsorber textFragmentAbsorber1 = new TextFragmentAbsorber(regEx);
-textFragmentAbsorber1.Visit(document);
-
-regEx = new Regex(@"Sample text \d");
-TextFragmentAbsorber textFragmentAbsorber2 = new TextFragmentAbsorber(regEx);
-textFragmentAbsorber2.Visit(document);
-
-var linkFragments = textFragmentAbsorber1.TextFragments;
-var sampleTextFragments = textFragmentAbsorber2.TextFragments;
-
-var linkAnnotation1 = new LinkAnnotation(page, linkFragments[1].Rectangle)
+private static void AddLinkAnnotation()
 {
-    Action = new GoToAction(
-        new XYZExplicitDestination(
-            sampleTextFragments[1].Page,
-            sampleTextFragments[1].Rectangle.LLX,
-            sampleTextFragments[1].Rectangle.URX, 1.5))
-};
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-page.Annotations.Add(linkAnnotation1);
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Link Annotation Demo.pdf"))
+	{
+		var page = document.Pages[1];
 
-document.Save("test.pdf");
+		// Define regular expressions for text fragments
+		var regEx1 = new Regex(@"Link Annotation Demo \d");
+		var regEx2 = new Regex(@"Sample text \d");
+
+		// Create TextFragmentAbsorber for the first regular expression
+		var textFragmentAbsorber1 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx1);
+		textFragmentAbsorber1.Visit(document);
+
+		// Create TextFragmentAbsorber for the second regular expression
+		var textFragmentAbsorber2 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx2);
+		textFragmentAbsorber2.Visit(document);
+
+		// Get the text fragments for both absorbers
+		var linkFragments = textFragmentAbsorber1.TextFragments;
+		var sampleTextFragments = textFragmentAbsorber2.TextFragments;
+
+		// Create a LinkAnnotation
+		var linkAnnotation1 = new Aspose.Pdf.Annotations.LinkAnnotation(page, linkFragments[1].Rectangle)
+		{
+			Action = new Aspose.Pdf.Annotations.GoToAction(
+				new Aspose.Pdf.Annotations.XYZExplicitDestination(
+					sampleTextFragments[1].Page,
+					sampleTextFragments[1].Rectangle.LLX,
+					sampleTextFragments[1].Rectangle.URX, 1.5))
+		};
+
+		// Add the link annotation to the page
+		page.Annotations.Add(linkAnnotation1);
+
+		// Save the document
+		document.Save(dataDir + "AddLinkAnnotation_out.pdf");
+	}
+}
 ```
 
 To create the annotation we have followed certain steps:
@@ -214,28 +232,38 @@ linkAnnotation5.Border = new Border(linkAnnotation5)
 Please try using the following code snippet to Get LinkAnnotation from PDF document.
 
 ```csharp
-class ExampleLinkAnnotations
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GetLinkAnnotations()
 {
-    // The path to the documents directory.
-    private const string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    public static void GetLinkAnnotations()
-    {
-        // Load the PDF file
-        Document document = new Document(dataDir + "SimpleResume_mod.pdf");
-        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
-        foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
-        {
-            // Print the URL of each Link Annotation
-            Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
-            TextAbsorber absorber = new TextAbsorber();
-            absorber.TextSearchOptions.LimitToPageBounds = true;
-            absorber.TextSearchOptions.Rectangle = annot.Rect;
-            document.Pages[1].Accept(absorber);
-            string extractedText = absorber.Text;
-            // Print the text associated with hyperlink
-            Console.WriteLine(extractedText);
-        }
-    }
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
+	{
+		// Get all Link annotations from the first page
+		var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
+
+		// Iterate through each Link annotation
+		foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
+		{
+			// Print the URL of each Link Annotation
+			Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
+
+			// Create a TextAbsorber to extract text within the annotation's rectangle
+			var absorber = new Aspose.Pdf.Text.TextAbsorber();
+			absorber.TextSearchOptions.LimitToPageBounds = true;
+			absorber.TextSearchOptions.Rectangle = annot.Rect;
+
+			// Accept the absorber for the first page
+			document.Pages[1].Accept(absorber);
+
+			// Extract and print the text associated with the hyperlink
+			string extractedText = absorber.Text;
+			Console.WriteLine(extractedText);
+		}
+	}
 }
 ```
 
@@ -244,23 +272,26 @@ class ExampleLinkAnnotations
 The following code snippet shows how to Delete Link Annotation from PDF file. For this we need to find and and remove all link annotations on the 1st page. After this we will save document with removed annotation.
 
 ```csharp
-class ExampleLinkAnnotations
-{
-    // The path to the documents directory.
-    private const string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    public static void DeleteLinkAnnotations()
-    {
-        // Load the PDF file
-        Document document = new Document(dataDir + "SimpleResume_mod.pdf");
-        // Find and delete all link annotation on the 1st page
-        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-        foreach (var la in linkAnnotations)
-        {
-            document.Pages[1].Annotations.Delete(la);
-        }
-        // Save document with removed annotation
-        document.Save(dataDir + "SimpleResume_del.pdf");
-    }
+private static void DeleteLinkAnnotations()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
+	{
+		// Find and delete all link annotations on the 1st page
+		var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
+
+		foreach (var la in linkAnnotations)
+		{
+			document.Pages[1].Annotations.Delete(la);
+		}
+
+		// Save the document with removed annotations
+		document.Save(dataDir + "DeleteLinkAnnotations_out.pdf");
+	}
 }
 ```

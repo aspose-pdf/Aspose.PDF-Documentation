@@ -94,48 +94,58 @@ Steps with which we create Caret annotation:
 The following code snippet shows how to add Caret Annotation to a PDF file:
 
 ```csharp
-// The path to the documents directory.
-private const string dataDir = "..\\..\\..\\..\\Samples\\";
-// Load the PDF file
-Document document = new Document(dataDir + "sample.pdf");
-// This annotation is used to indicate the insertion of text
-var caretAnnotation1 = new CaretAnnotation(document.Pages[1], new Rectangle(299.988, 713.664, 308.708, 720.769))
-{
-    Title = "Aspose User",
-    Subject = "Inserted text 1",
-    Flags = AnnotationFlags.Print,
-    Color = Color.Blue
-};
-// This annotation is used to indicate the replacement of text
-var caretAnnotation2 = new CaretAnnotation(document.Pages[1], new Rectangle(361.246, 727.908, 370.081, 735.107))
-{
-    Flags = AnnotationFlags.Print,
-    Subject = "Inserted text 2",
-    Title = "Aspose User",
-    Color = Color.Blue
-};
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-var strikeOutAnnotation = new StrikeOutAnnotation(document.Pages[1],
-    new Rectangle(318.407, 727.826, 368.916, 740.098))
+private static void AddCaretAnnotations()
 {
-    Color = Color.Blue,
-    QuadPoints = new[] {
-    new Point(321.66, 739.416),
-    new Point(365.664, 739.416),
-    new Point(321.66, 728.508),
-    new Point(365.664, 728.508)
-},
-    Subject = "Cross-out",
-    InReplyTo = caretAnnotation2,
-    ReplyType = ReplyType.Group
-};
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-document.Pages[1].Annotations.Add(caretAnnotation1);
-document.Pages[1].Annotations.Add(caretAnnotation2);
-document.Pages[1].Annotations.Add(strikeOutAnnotation);
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+	{
+		// Create Caret Annotation for text insertion
+		var caretAnnotation1 = new Aspose.Pdf.Annotations.CaretAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(299.988, 713.664, 308.708, 720.769))
+		{
+			Title = "Aspose User",
+			Subject = "Inserted text 1",
+			Flags = Aspose.Pdf.Annotations.AnnotationFlags.Print,
+			Color = Aspose.Pdf.Color.Blue
+		};
 
-// Save result file
-document.Save(dataDir + "sample_caret.pdf");
+		// Create Caret Annotation for text replacement
+		var caretAnnotation2 = new Aspose.Pdf.Annotations.CaretAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(361.246, 727.908, 370.081, 735.107))
+		{
+			Flags = Aspose.Pdf.Annotations.AnnotationFlags.Print,
+			Subject = "Inserted text 2",
+			Title = "Aspose User",
+			Color = Aspose.Pdf.Color.Blue
+		};
+
+		// Create StrikeOut Annotation
+		var strikeOutAnnotation = new Aspose.Pdf.Annotations.StrikeOutAnnotation(document.Pages[1],
+			new Rectangle(318.407, 727.826, 368.916, 740.098))
+		{
+			Color = Aspose.Pdf.Color.Blue,
+			QuadPoints = new[] {
+				new Point(321.66, 739.416),
+				new Point(365.664, 739.416),
+				new Point(321.66, 728.508),
+				new Point(365.664, 728.508)
+			},
+			Subject = "Cross-out",
+			InReplyTo = caretAnnotation2,
+			ReplyType = Aspose.Pdf.Annotations.ReplyType.Group
+		};
+
+		document.Pages[1].Annotations.Add(caretAnnotation1);
+		document.Pages[1].Annotations.Add(caretAnnotation2);
+		document.Pages[1].Annotations.Add(strikeOutAnnotation);
+
+		// Save result file
+		document.Save(dataDir + "AddCaretAnnotations_out.pdf");
+	}
+}
 ```
 
 ### Get Caret Annotation
@@ -143,17 +153,27 @@ document.Save(dataDir + "sample_caret.pdf");
 Please try using the following code snippet to Get Caret Annotation in PDF document:
 
 ```csharp
-public static void GetCaretAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GetCaretAnnotation()
 {
-    // Load the PDF file
-    Document document = new Document(dataDir + "sample_caret.pdf");
-    var caretAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Caret)
-        .Cast<CaretAnnotation>();
-    foreach (var ca in caretAnnotations)
-    {
-        Console.WriteLine($"{ca.Rect}");
-    }
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
+	{
+		// Get Caret annotations from the first page
+		var caretAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Caret)
+			.Cast<Aspose.Pdf.Annotations.CaretAnnotation>();
+
+		// Iterate through the annotations and print their details
+		foreach (var ca in caretAnnotations)
+		{
+			Console.WriteLine($"{ca.Rect}");
+		}
+	}
 }
 ```
 
@@ -162,19 +182,30 @@ public static void GetCaretAnnotation()
 The following code snippet shows how Delete Caret Annotation from a PDF file.
 
 ```csharp
-public static void DeleteCaretAnnotation()
-{
-    // Load the PDF file
-    Document document = new Document(dataDir + "sample_caret.pdf");
-    var caretAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Caret)
-        .Cast<CaretAnnotation>();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-    foreach (var ca in caretAnnotations)
-    {
-        document.Pages[1].Annotations.Delete(ca);
-    }
-    document.Save(dataDir + "sample_caret_del.pdf");
+private static void DeleteCaretAnnotation()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
+	{
+		// Get Caret annotations from the first page
+		var caretAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Caret)
+			.Cast<Aspose.Pdf.Annotations.CaretAnnotation>();
+
+		// Delete each Caret annotation
+		foreach (var ca in caretAnnotations)
+		{
+			document.Pages[1].Annotations.Delete(ca);
+		}
+
+		// Save the document after deleting annotations
+		document.Save(dataDir + "DeleteCaretAnnotation_out.pdf");
+	}
 }
 ```
 
@@ -184,29 +215,38 @@ Aspose.PDF for .NET supports the feature to add as well as manipulate Annotation
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Open document
-Document document = new Document(dataDir + "input.pdf");
+private static void RedactPage()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Create RedactionAnnotation instance for specific page region
-RedactionAnnotation annot = new RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
-annot.FillColor = Aspose.Pdf.Color.Green;
-annot.BorderColor = Aspose.Pdf.Color.Yellow;
-annot.Color = Aspose.Pdf.Color.Blue;
-// Text to be printed on redact annotation
-annot.OverlayText = "REDACTED";
-annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// Repat Overlay text over redact Annotation
-annot.Repeat = true;
-// Add annotation to annotations collection of first page
-document.Pages[1].Annotations.Add(annot);
-// Flattens annotation and redacts page contents (i.e. removes text and image
-// Under redacted annotation)
-annot.Redact();
-// Save result document
-document.Save(dataDir + "RedactPage_out.pdf");
+    // Open the PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+	{
+		// Create RedactionAnnotation instance for a specific page region
+		var annot = new Aspose.Pdf.Annotations.RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
+		annot.FillColor = Aspose.Pdf.Color.Green;
+		annot.BorderColor = Aspose.Pdf.Color.Yellow;
+		annot.Color = Aspose.Pdf.Color.Blue;
+
+		// Text to be printed on the redact annotation
+		annot.OverlayText = "REDACTED";
+		annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+
+		// Repeat Overlay text over the redact Annotation
+		annot.Repeat = true;
+
+		// Add annotation to the annotations collection of the first page
+		document.Pages[1].Annotations.Add(annot);
+
+		// Flattens annotation and redacts page contents (i.e., removes text and image under the redacted annotation)
+		annot.Redact();
+
+		// Save the result document
+		document.Save(dataDir + "RedactPage_out.pdf");
+	}
+}
 ```
 
 ### Facades approach
@@ -215,14 +255,25 @@ Aspose.Pdf.Facades namespace also has a class named [PdfAnnotationEditor](https:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-PdfAnnotationEditor editor = new PdfAnnotationEditor();
-// Redact certain page region
-editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
-editor.BindPdf(dataDir + "input.pdf");
-editor.Save(dataDir + "FacadesApproach_out.pdf");
+private static void RedactPageWithFacadesApproach()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create an instance of PdfAnnotationEditor
+    using (var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+	{
+		// Redact a specific page region
+		editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
+
+		// Bind the PDF document
+		editor.BindPdf(dataDir + "input.pdf");
+
+		// Save the result document
+		editor.Save(dataDir + "FacadesApproach_out.pdf");
+	}
+}
 ```
 
 <script type="application/ld+json">

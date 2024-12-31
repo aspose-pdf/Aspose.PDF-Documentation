@@ -90,18 +90,27 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 In this article, we have tried to create an AcroForm using [Aspose.Pdf.Facades namepsace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace). We have also added a submit button and set its target URL. The following code snippets show you how to create the form and then receive the posted data on the web page.
 
 ```csharp
-// Create an instance of FormEditor class and bind input and output pdf files
-FormEditor editor = new FormEditor("input.pdf","output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create AcroForm fields - I have created only two fields for simplicity
-editor.AddField(FieldType.Text, "firstname", 1, 100, 600, 200, 625);
-editor.AddField(FieldType.Text, "lastname", 1, 100, 550, 200, 575);
+private static void CreateAcroFormWithFields()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Add a submit button and set target URL
-editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+    // Create an instance of FormEditor class and bind input and output pdf files
+    using (var editor = new Aspose.Pdf.Facades.FormEditor(dataDir + "input.pdf", dataDir + "output.pdf"))
+    {
+        // Create AcroForm fields - I have created only two fields for simplicity
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
 
-// Save output pdf file
-editor.Save();
+        // Add a submit button and set target URL
+        editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+
+        // Save output pdf file
+        editor.Save();
+    }
+}
 ```
 
 {{% alert color="primary" %}}

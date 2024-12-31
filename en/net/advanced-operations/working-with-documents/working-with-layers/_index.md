@@ -92,13 +92,27 @@ There are two new methods and one property was added:
 - Layer.Locked; - Property, indicating the layer locked state.
 
 ```cs
-var document = new Document(input);
-var page = document.Pages[1];
-var layer = page.Layers[0];
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-layer.Lock();
+private static void LockLayerInPDF()
+{
+	// The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
 
-document.Save(output);
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get the first page and the first layer
+        var page = document.Pages[1];
+        var layer = page.Layers[0];
+
+        // Lock the layer
+        layer.Lock();
+
+        // Save the document
+        document.Save(dataDir + "LockLayerInPDF_out.pdf");
+    }
+}
 ```
 
 ## Extract PDF layer elements
@@ -108,12 +122,25 @@ The Aspose.PDF for .NET library allows extracts of each layer from the first pag
 To create a new PDF from a layer, the following code snippet can be used:
 
 ```cs
-var document = new Document(inputPath);
-var layers = document.Pages[1].Layers;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-foreach (var layer in layers)
+private static void SaveLayersFromPdf(string inputPath, string outputPath)
 {
-    layer.Save(outputPath);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+	{
+		// Get layers from the first page
+		var layers = document.Pages[1].Layers;
+
+		// Save each layer to the output path
+		foreach (var layer in layers)
+		{
+			layer.Save(outputPath);
+		}
+	}
 }
 ```
 
@@ -122,12 +149,25 @@ The 24.9 release has resulted in an update to this feature.
 It is possible to extract PDF layer elements and save them into a new PDF file stream:
 
 ```cs
-var document = new Document(inputPath);
-var layers = document.Pages[1].Layers;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-foreach (var layer in layers)
+private static void SaveLayersToOutputStream(string inputPath, Stream outputStream)
 {
-    Layer.Save(Stream outputStream);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+	
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+	{
+		// Get layers from the first page
+		var layers = document.Pages[1].Layers;
+
+		// Save each layer to the output stream
+		foreach (var layer in layers)
+		{
+			layer.Save(outputStream);
+		}
+	}
 }
 ```
 
@@ -136,12 +176,25 @@ foreach (var layer in layers)
 Aspose.PDF for .NET library opens a PDF, iterates through each layer on the first page, and flattens each layer, making it permanent on the page.
 
 ```cs
-var document = new Document(input);
-var page = document.Pages[1];
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-foreach (var layer in page.Layers)
+private static void FlattenLayersInPdf(string input)
 {
-    layer.Flatten(true);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf")
+	{
+		// Get the first page
+		var page = document.Pages[1];
+
+		// Flatten each layer on the page
+		foreach (var layer in page.Layers)
+		{
+			layer.Flatten(true);
+		}
+	}
 }
 ```
 
@@ -159,12 +212,31 @@ Two methods were added to merge all layers on the page:
 The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
 
 ```cs
-var document = new Document(input);
-var page = document.Pages[1];
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-page.MergeLayers("NewLayerName");
+private static void MergeLayersInPdf(string input, string output, string newLayerName, string optionalLayerName = null)
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Or page.MergeLayers("NewLayerName", "OC1");
+    // Load source PDF file
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+	{
+		// Get the first page
+		var page = document.Pages[1];
 
-document.Save(output);
+		// Merge layers with a new layer name
+		if (optionalLayerName != null)
+		{
+			page.MergeLayers(newLayerName, optionalLayerName);
+		}
+		else
+		{
+			page.MergeLayers(newLayerName);
+		}
+
+		// Save the updated document
+		document.Save(dataDir + "MergeLayersInPdf_out.pdf");
+	}
+}
 ```

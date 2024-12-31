@@ -95,62 +95,110 @@ Inside the catch block, the PdfException.GenerateCrashReport() method is called.
 **Basic workflow:**
 
 ```cs
-try
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GenerateCrashReportExample()
 {
-    throw new Exception("message", new Exception("inner message"));
-}
-catch (Exception ex)
-{
-    PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+    try
+    {
+        // some code
+        // ....
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(new Aspose.Pdf.CrashReportOptions(ex));
+    }
 }
 ```
 
 **Set a directory where crash report will be generated:**
 
 ```cs
-try
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GenerateCrashReportInCustomDirectory()
 {
-    throw new Exception("message", new Exception("inner message"));
-}
-catch (Exception ex)
-{
-    CrashReportOptions options = new CrashReportOptions(ex);
-    //by default it's working directory of application
-    options.CrashReportDirectory = "C:\Temp";
-    PdfException.GenerateCrashReport(new CrashReportOptions(ex));
+    try
+    {
+        // some code
+        // ...
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Create crash report options
+        var options = new Aspose.Pdf.CrashReportOptions(ex);
+
+        // Set custom crash report directory
+        options.CrashReportDirectory = @"C:\Temp";
+
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(options);
+    }
 }
 ```
 
 **Set your own crash report name:**
 
 ```cs
-try
-{
-    throw new Exception("message", new Exception("inner message"));
-}
-catch (Exception ex)
-{
-    CrashReportOptions options = new CrashReportOptions(ex);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-    //by default crash report name will be generated like following:
-    //string.Format(@"CrashReport_{0}_{1}.html", DateTime.Today.ToShortDateString(), DateTime.Now.Ticks)
-    options.CrashReportFilename = "custom_crash_report_name.html";
-    PdfException.GenerateCrashReport(options);
+private static void GenerateCrashReportWithCustomFilename()
+{
+    try
+    {
+        // some code
+        // ...
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Create crash report options
+        var options = new Aspose.Pdf.CrashReportOptions(ex);
+
+        // Set custom crash report filename
+        options.CrashReportFilename = "custom_crash_report_name.html";
+
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(options);
+    }
 }
 ```
 
 **Provide additional information about exceptional circumstances in the CustomMessage field:**
 
 ```cs
-try
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void GenerateCrashReportWithCustomMessage()
 {
-    throw new Exception("message", new Exception("inner message"));
-}
-catch (Exception ex)
-{
-    CrashReportOptions options = new CrashReportOptions(ex);
-    options.CustomMessage = "Exception occured while processing PDF files with XFA formated forms";
-    PdfException.GenerateCrashReport(options);
+    try
+    {
+        // some code
+        // ...
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Create crash report options
+        var options = new Aspose.Pdf.CrashReportOptions(ex);
+
+        // Set custom message for the crash report
+        options.CustomMessage = "Exception occurred while processing PDF files with XFA formatted forms";
+
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(options);
+    }
 }
 ```
 

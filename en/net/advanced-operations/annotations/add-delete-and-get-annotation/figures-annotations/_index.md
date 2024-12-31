@@ -118,26 +118,37 @@ To style our line we need to set color, width, starting style, and ending style.
 The following code snippet shows how to add Line Annotation to a PDF file:
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create Line Annotation
-var lineAnnotation = new LineAnnotation(
-    document.Pages[1],
-    new Rectangle(550, 93, 562, 439),
-    new Point(556, 99), new Point(556, 443))
+private static void AddLineAnnotation()
 {
-    Title = "John Smith",
-    Color = Color.Red,
-    Width = 3,
-    StartingStyle = LineEnding.OpenArrow,
-    EndingStyle = LineEnding.OpenArrow,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
-};
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Add annotation to the page
-document.Pages[1].Annotations.Add(lineAnnotation);
-document.Save(dataDir + "Appartments_mod.pdf");
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
+	{
+		// Create Line Annotation
+		var lineAnnotation = new Aspose.Pdf.Annotations.LineAnnotation(
+			document.Pages[1],
+			new Aspose.Pdf.Rectangle(550, 93, 562, 439),
+			new Aspose.Pdf.Point(556, 99), new Aspose.Pdf.Point(556, 443))
+		{
+			Title = "John Smith",
+			Color = Aspose.Pdf.Color.Red,
+			Width = 3,
+			StartingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+			EndingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+			Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 124, 1021, 266))
+		};
+
+		// Add annotation to the page
+		document.Pages[1].Annotations.Add(lineAnnotation);
+
+		// Save the updated document
+		document.Save(dataDir + "AddLineAnnotation_out.pdf");
+	}
+}
 ```
 
 ## Adding Square or Circle
@@ -158,36 +169,46 @@ Also we can sets some properties of the `CircleAnnotation` object, such as the t
 Drawing a rectangle is the same as drawing a circle. The following code snippet shows how to add circle and square annotations to a PDF page.
 
 ```csharp
-var dataDir = "<path-to-file>";
-// Load the PDF file
-Document document = new Document(dataDir + "appartments.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create Cirlce Annotation
-var circleAnnotation = new CircleAnnotation(document.Pages[1], new Rectangle(270, 160, 483, 383))
+private static void AddCircleAndSquareAnnotations()
 {
-    Title = "John Smith",
-    Subject = "Circle",
-    Color = Color.Red,
-    InteriorColor = Color.MistyRose,
-    Opacity = 0.5,        
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 316, 1021, 459))
-};
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Create Square Annotation
-var squareAnnotation = new SquareAnnotation(document.Pages[1], new Rectangle(67, 317, 261, 459))
-{
-    Title = "John Smith",
-    Subject = "Rectangle",
-    Color = Color.Blue,
-    InteriorColor = Color.BlueViolet,
-    Opacity = 0.25,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
-};
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+	{
+		// Create Circle Annotation
+		var circleAnnotation = new Aspose.Pdf.Annotations.CircleAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(270, 160, 483, 383))
+		{
+			Title = "John Smith",
+			Subject = "Circle",
+			Color = Aspose.Pdf.Color.Red,
+			InteriorColor = Aspose.Pdf.Color.MistyRose,
+			Opacity = 0.5,
+			Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 316, 1021, 459))
+		};
 
-// Add annotation to the page
-document.Pages[1].Annotations.Add(circleAnnotation);
-document.Pages[1].Annotations.Add(squareAnnotation);
-document.Save(dataDir + "appartments_mod.pdf");
+		// Create Square Annotation
+		var squareAnnotation = new Aspose.Pdf.Annotations.SquareAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(67, 317, 261, 459))
+		{
+			Title = "John Smith",
+			Subject = "Rectangle",
+			Color = Aspose.Pdf.Color.Blue,
+			InteriorColor = Aspose.Pdf.Color.BlueViolet,
+			Opacity = 0.25,
+			Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 196, 1021, 338))
+		};
+
+		// Add annotations to the page
+		document.Pages[1].Annotations.Add(circleAnnotation);
+		document.Pages[1].Annotations.Add(squareAnnotation);
+
+		// Save the updated document
+		document.Save(dataDir + "AddCircleAndSquareAnnotations_out.pdf");
+	}
+}
 ```
 
 As an example, we will see the following result of adding Square and Circle annotations to a PDF document:
@@ -222,47 +243,61 @@ Instead `PolygonAnnotation` we can't fill this shape, so we don't need to use `I
 The following code snippet shows how to add Polygon and Polyline Annotations to a PDF file:
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "appartments.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-// Create Polygon Annotation
-var polygonAnnotation = new PolygonAnnotation(document.Pages[1],
-    new Rectangle(270, 193, 571, 383),
-    new Point[] {
-        new Point(274, 381),
-        new Point(555, 381),
-        new Point(555, 304),
-        new Point(570, 304),
-        new Point(570, 195),
-        new Point(274, 195)})
+private static void AddPolygonAndPolylineAnnotations()
 {
-    Title = "John Smith",
-    Color = Color.Blue,
-    InteriorColor = Color.BlueViolet,
-    Opacity = 0.25,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
-};
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Create PoliLine Annotation
-var polylineAnnotation = new PolylineAnnotation(document.Pages[1],
-    new Rectangle(270, 193, 571, 383),
-    new Point[] {
-        new Point(545,150),
-        new Point(545,190),
-        new Point(667,190),
-        new Point(667,110),
-        new Point(626,111)
-        })
-{
-    Title = "John Smith",
-    Color = Color.Red,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
-};
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+	{
+		// Create Polygon Annotation
+		var polygonAnnotation = new Aspose.Pdf.Annotations.PolygonAnnotation(
+			document.Pages[1],
+			new Aspose.Pdf.Rectangle(270, 193, 571, 383),
+			new Aspose.Pdf.Point[] {
+				new Aspose.Pdf.Point(274, 381),
+				new Aspose.Pdf.Point(555, 381),
+				new Aspose.Pdf.Point(555, 304),
+				new Aspose.Pdf.Point(570, 304),
+				new Aspose.Pdf.Point(570, 195),
+				new Aspose.Pdf.Point(274, 195)
+			})
+		{
+			Title = "John Smith",
+			Color = Aspose.Pdf.Color.Blue,
+			InteriorColor = Aspose.Pdf.Color.BlueViolet,
+			Opacity = 0.25,
+			Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 196, 1021, 338))
+		};
 
-// Add annotation to the page
-document.Pages[1].Annotations.Add(polygonAnnotation);
-document.Pages[1].Annotations.Add(polylineAnnotation);
-document.Save(dataDir + "appartments_mod.pdf");
+		// Create Polyline Annotation
+		var polylineAnnotation = new Aspose.Pdf.Annotations.PolylineAnnotation(
+			document.Pages[1],
+			new Aspose.Pdf.Rectangle(270, 193, 571, 383),
+			new Aspose.Pdf.Point[] {
+				new Aspose.Pdf.Point(545, 150),
+				new Aspose.Pdf.Point(545, 190),
+				new Aspose.Pdf.Point(667, 190),
+				new Aspose.Pdf.Point(667, 110),
+				new Aspose.Pdf.Point(626, 111)
+			})
+		{
+			Title = "John Smith",
+			Color = Aspose.Pdf.Color.Red,
+			Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 196, 1021, 338))
+		};
+
+		// Add annotations to the page
+		document.Pages[1].Annotations.Add(polygonAnnotation);
+		document.Pages[1].Annotations.Add(polylineAnnotation);
+
+		// Save the updated document
+		document.Save(dataDir + "AddPolygonAndPolylineAnnotations_out.pdf");
+	}
+}
 ```
 
 ## Getting Figures
@@ -274,15 +309,28 @@ All annotations are stored in the `Annotations` collection. Any annotation can i
 The example below explains how to obtain all Line Annotations from the first page of the PDF document.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var lineAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Line)
-    .Cast<LineAnnotation>();
-foreach (var la in lineAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ReadLineAnnotations()
 {
-    Console.WriteLine($"[{la.Starting.X},{la.Starting.Y}]-[{la.Ending.X},{la.Ending.Y}]");
-}   
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all line annotations from the first page
+		var lineAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Line)
+			.Cast<Aspose.Pdf.Annotations.LineAnnotation>();
+
+		// Iterate through each line annotation and print its coordinates
+		foreach (var la in lineAnnotations)
+		{
+			Console.WriteLine($"[{la.Starting.X},{la.Starting.Y}]-[{la.Ending.X},{la.Ending.Y}]");
+		}
+	}
+}
 ```
 
 ### Getting Circle Annotations
@@ -290,15 +338,28 @@ foreach (var la in lineAnnotations)
 The example below explains how to obtain all Polyline Annotations from the first page of the PDF document.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var circleAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Line)
-    .Cast<CircleAnnotation>();
-foreach (var ca in circleAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ReadCircleAnnotations()
 {
-    Console.WriteLine($"[{ca.Rect}]");
-}   
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all circle annotations from the first page
+		var circleAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Circle)
+			.Cast<Aspose.Pdf.Annotations.CircleAnnotation>();
+
+		// Iterate through each circle annotation and print its rectangle
+		foreach (var ca in circleAnnotations)
+		{
+			Console.WriteLine($"[{ca.Rect}]");
+		}
+	}
+}
 ```
 
 ### Getting Square Annotations
@@ -306,14 +367,27 @@ foreach (var ca in circleAnnotations)
 The example below explains how to obtain all Polyline Annotations from the first page of the PDF document.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var squareAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Square)
-    .Cast<SquareAnnotation>();
-foreach (var sq in squareAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ReadSquareAnnotations()
 {
-    Console.WriteLine($"[{sq.Rect}]");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all square annotations from the first page
+		var squareAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Square)
+			.Cast<Aspose.Pdf.Annotations.SquareAnnotation>();
+
+		// Iterate through each square annotation and print its rectangle
+		foreach (var sq in squareAnnotations)
+		{
+			Console.WriteLine($"[{sq.Rect}]");
+		}
+	}
 }
 ```
 
@@ -322,15 +396,28 @@ foreach (var sq in squareAnnotations)
 The example below explains how to obtain all Polyline Annotations from the first page of the PDF document.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var polyAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.PolyLine)
-    .Cast<PolylineAnnotation>();
-foreach (var pa in polyAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ReadPolylineAnnotations()
 {
-    Console.WriteLine($"[{pa.Rect}]");
-}     
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all polyline annotations from the first page
+		var polyAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.PolyLine)
+			.Cast<Aspose.Pdf.Annotations.PolylineAnnotation>();
+
+		// Iterate through each polyline annotation and print its rectangle
+		foreach (var pa in polyAnnotations)
+		{
+			Console.WriteLine($"[{pa.Rect}]");
+		}
+	}
+}
 ```
 
 ### Getting Polygon Annotations
@@ -338,14 +425,28 @@ foreach (var pa in polyAnnotations)
 The example below explains how to obtain all Polygon Annotations from the first page of the PDF document.
 
 ```csharp
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var polyAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Polygon)
-    .Cast<PolygonAnnotation>();
-foreach (var pa in polyAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void ReadPolygonAnnotations()
 {
-    Console.WriteLine($"[{pa.Rect}]");
-} 
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all polygon annotations from the first page
+		var polyAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Polygon)
+			.Cast<Aspose.Pdf.Annotations.PolygonAnnotation>();
+
+		// Iterate through each polygon annotation and print its rectangle
+		foreach (var pa in polyAnnotations)
+		{
+			Console.WriteLine($"[{pa.Rect}]");
+		}
+	}
+}
 ```
 
 ## Deleting Figures
@@ -358,33 +459,62 @@ The approach to removing annotation from PDF in pretty simple:
 ### Deleting Line Annotation
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var lineAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Line)
-    .Cast<LineAnnotation>();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-foreach (var la in lineAnnotations)
+private static void DeleteLineAnnotations()
 {
-    document.Pages[1].Annotations.Delete(la);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all line annotations from the first page
+		var lineAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Line)
+			.Cast<Aspose.Pdf.Annotations.LineAnnotation>();
+
+		// Iterate through each line annotation and delete it
+		foreach (var la in lineAnnotations)
+		{
+			document.Pages[1].Annotations.Delete(la);
+		}
+
+		// Save the updated document
+		document.Save(dataDir + "DeleteLineAnnotations_out.pdf");
+	}
 }
 ```
 
 ### Delete Circle and Square Annotations
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var figures = document.Pages[1].Annotations
-    .Where(a =>
-        a.AnnotationType == AnnotationType.Circle
-        || a.AnnotationType == AnnotationType.Square);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-foreach (var fig in figures)
+private static void DeleteCircleAndSquareAnnotations()
 {
-    document.Pages[1].Annotations.Delete(fig);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all circle and square annotations from the first page
+		var figures = document.Pages[1].Annotations
+			.Where(a =>
+				a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Circle
+				|| a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Square);
+
+		// Iterate through each figure annotation and delete it
+		foreach (var fig in figures)
+		{
+			document.Pages[1].Annotations.Delete(fig);
+		}
+
+		// Save the updated document
+		document.Save(dataDir + "DeleteCircleAndSquareAnnotations_out.pdf");
+	}
 }
-document.Save(dataDir + "Appartments_del.pdf");
 ```
 
 ### Delete Polygon and Polyline Annotations
@@ -392,19 +522,31 @@ document.Save(dataDir + "Appartments_del.pdf");
 The following code snippet shows how Delete Polygon and Polyline Annotations from a PDF file.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "Appartments_mod.pdf");
-var polyAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.PolyLine
-                || a.AnnotationType == AnnotationType.Polygon);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-foreach (var pa in polyAnnotations)
+private static void DeletePolylineAndPolygonAnnotations()
 {
-    document.Pages[1].Annotations.Delete(pa);
-}
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Save result file
-document.Save(dataDir + "Appartments_del.pdf");
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+	{
+		// Get all polyline and polygon annotations from the first page
+		var polyAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.PolyLine
+						|| a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Polygon);
+
+		// Iterate through each polyline or polygon annotation and delete it
+		foreach (var pa in polyAnnotations)
+		{
+			document.Pages[1].Annotations.Delete(pa);
+		}
+
+		// Save the updated document
+		document.Save(dataDir + DeletePolylineAndPolygonAnnotations_out.pdf");
+	}
+}
 ```
 
 ## How to add Ink Annotation to PDF file
@@ -414,38 +556,55 @@ An Ink Annotation represents a freehand "scribble" composed of one or more disjo
 The [InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) represents freehand scribble composed of one or more disjoint points. Please try using the following code snippet to add InkAnnotation in PDF document.
 
 ```csharp
-// Load the PDF file
-Document document = new Document(dataDir + "appartments.pdf");
-Page page = document.Pages[1];
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-Rectangle arect = new Rectangle(156.574, 521.316, 541.168, 575.703);
-
-IList<Point[]> inkList = new List<Point[]>();
-Point[] arrpt = new[]
+private static void AddInkAnnotation()
 {
-    new Point(209.727,542.263),
-    new Point(209.727,541.94),
-    new Point(209.727,541.616)
-};
-inkList.Add(arrpt);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-InkAnnotation ia = new InkAnnotation(page, arect, inkList)
-{
-    Title = "John Smith",
-    Subject = "Pencil",
-    Color = Color.LightBlue,
-    CapStyle = CapStyle.Rounded,
-    Opacity = 0.5
-};
-Border border = new Border(ia)
-{
-    Width = 25
-};
-ia.Border = border;
-page.Annotations.Add(ia);
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+	{
+		var page = document.Pages[1];
 
-// Save output file
-document.Save(dataDir + "appartments_mod.pdf");
+		// Define the rectangle for the ink annotation
+		var arect = new Aspose.Pdf.Rectangle(156.574, 521.316, 541.168, 575.703);
+
+		// Create a list of ink paths
+		IList<Aspose.Pdf.Point[]> inkList = new List<Aspose.Pdf.Point[]>();
+		var arrpt = new[]
+		{
+			new Aspose.Pdf.Point(209.727, 542.263),
+			new Aspose.Pdf.Point(209.727, 541.94),
+			new Aspose.Pdf.Point(209.727, 541.616)
+		};
+		inkList.Add(arrpt);
+
+		// Create the ink annotation
+		var ia = new Aspose.Pdf.Annotations.InkAnnotation(page, arect, inkList)
+		{
+			Title = "John Smith",
+			Subject = "Pencil",
+			Color = Aspose.Pdf.Color.LightBlue,
+			CapStyle = Aspose.Pdf.Annotations.CapStyle.Rounded,
+			Opacity = 0.5
+		};
+
+		// Set the border for the annotation
+		var border = new Aspose.Pdf.Annotations.Border(ia)
+		{
+			Width = 25
+		};
+		ia.Border = border;
+
+		// Add the annotation to the page
+		page.Annotations.Add(ia);
+
+		// Save the updated document
+		document.Save(dataDir + "AddInkAnnotation_out.pdf");
+	}
+}
 ```
 
 ### Set Line width of InkAnnotation
@@ -454,38 +613,65 @@ The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.anno
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-Document document = new Document();
-document.Pages.Add();
-IList<Point[]> inkList = new List<Point[]>();
-LineInfo lineInfo = new LineInfo();
-lineInfo.VerticeCoordinate = new float[] { 55, 55, 70, 70, 70, 90, 150, 60 };
-lineInfo.Visibility = true;
-lineInfo.LineColor = System.Drawing.Color.Red;
-lineInfo.LineWidth = 2;
-int length = lineInfo.VerticeCoordinate.Length / 2;
-Aspose.Pdf.Point[] gesture = new Aspose.Pdf.Point[length];
-for (int i = 0; i < length; i++)
+private static void AddInkAnnotationWithLineWidth()
 {
-   gesture[i] = new Aspose.Pdf.Point(lineInfo.VerticeCoordinate[2 * i], lineInfo.VerticeCoordinate[2 * i + 1]);
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create a new document
+    using (var document = new Aspose.Pdf.Document())
+	{
+		document.Pages.Add();
+
+		// Create a list of ink paths
+		IList<Aspose.Pdf.Point[]> inkList = new List<Aspose.Pdf.Point[]>();
+
+		// Define line information
+		var lineInfo = new Aspose.Pdf.Facades.LineInfo
+		{
+			VerticeCoordinate = new float[] { 55, 55, 70, 70, 70, 90, 150, 60 },
+			Visibility = true,
+			LineColor = System.Drawing.Color.Red,
+			LineWidth = 2
+		};
+
+		// Convert line coordinates to Aspose.Pdf.Point array
+		int length = lineInfo.VerticeCoordinate.Length / 2;
+		var gesture = new Aspose.Pdf.Point[length];
+		for (int i = 0; i < length; i++)
+		{
+			gesture[i] = new Aspose.Pdf.Point(lineInfo.VerticeCoordinate[2 * i], lineInfo.VerticeCoordinate[2 * i + 1]);
+		}
+
+		// Add the gesture to the ink list
+		inkList.Add(gesture);
+
+		// Create the ink annotation
+		var a1 = new Aspose.Pdf.Annotations.InkAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList)
+		{
+			Subject = "Test",
+			Title = "Title",
+			Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green)
+		};
+
+		// Set the border for the annotation
+		var border = new Aspose.Pdf.Annotations.Border(a1)
+		{
+			Width = 3,
+			Effect = Aspose.Pdf.Annotations.BorderEffect.Cloudy,
+			Dash = new Aspose.Pdf.Annotations.Dash(1, 1),
+			Style = Aspose.Pdf.Annotations.BorderStyle.Solid
+		};
+		a1.Border = border;
+
+		// Add the annotation to the page
+		document.Pages[1].Annotations.Add(a1);
+
+		// Save the updated document
+		document.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
+	}
 }
-
-inkList.Add(gesture);
-InkAnnotation a1 = new InkAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList);
-a1.Subject = "Test";
-a1.Title = "Title";
-a1.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-Border border = new Border(a1);
-border.Width = 3;
-border.Effect = BorderEffect.Cloudy;
-border.Dash = new Dash(1, 1);
-border.Style = BorderStyle.Solid;
-document.Pages[1].Annotations.Add(a1);
-
-// Save output file
-document.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
 ```
 
 <script type="application/ld+json">
@@ -573,6 +759,6 @@ public static void DeleteCircleAnnotation()
     }
 
     // Save result file
-    document.Save(dataDir + "Appartments_del.pdf");
+    document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
 }
 ```

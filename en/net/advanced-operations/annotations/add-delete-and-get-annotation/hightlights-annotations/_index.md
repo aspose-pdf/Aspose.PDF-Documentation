@@ -102,67 +102,80 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 1. After we should add all annotations to the page.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 // The path to the documents directory.
-private const string dataDir = "..\\..\\..\\..\\Samples\\";
-// Load the PDF file
-Document document = new Document(dataDir + "sample.pdf");
-var tfa = new TextFragmentAbsorber("PDF");
-tfa.Visit(document.Pages[1]);
+private static void AddTextMarkupAnnotations()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-//Create annotations
-HighlightAnnotation highlightAnnotation = new HighlightAnnotation(document.Pages[1],
-    tfa.TextFragments[1].Rectangle )
-{
-    Title = "Aspose User",
-    Color = Color.LightGreen
-};
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+	{
+		// Create a TextFragmentAbsorber to find the text "PDF"
+		var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
+		tfa.Visit(document.Pages[1]);
 
-StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(
-    document.Pages[1],
-    tfa.TextFragments[2].Rectangle)
-{
-    Title = "Aspose User",
-    Color = Color.Blue
-};
-SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(document.Pages[1],
-    tfa.TextFragments[3].Rectangle)
-{
-    Title = "Aspose User",
-    Color = Color.Red
-};
-UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(document.Pages[1],
-    tfa.TextFragments[4].Rectangle)
-{
-    Title = "Aspose User",
-    Color = Color.Violet
-};
-// Add annotation to the page
-document.Pages[1].Annotations.Add(highlightAnnotation);
-document.Pages[1].Annotations.Add(squigglyAnnotation);
-document.Pages[1].Annotations.Add(strikeOutAnnotation);
-document.Pages[1].Annotations.Add(underlineAnnotation);
-// Save result file
-document.Save(dataDir + "sample_mod.pdf");
+		// Create annotations for the found text fragments
+		var highlightAnnotation = new Aspose.Pdf.Annotations.HighlightAnnotation(document.Pages[1], tfa.TextFragments[1].Rectangle)
+		{
+			Title = "Aspose User",
+			Color = Aspose.Pdf.Color.LightGreen
+		};
+
+		var strikeOutAnnotation = new Aspose.Pdf.Annotations.StrikeOutAnnotation(document.Pages[1], tfa.TextFragments[2].Rectangle)
+		{
+			Title = "Aspose User",
+			Color = Aspose.Pdf.Color.Blue
+		};
+
+		var squigglyAnnotation = new Aspose.Pdf.Annotations.SquigglyAnnotation(document.Pages[1], tfa.TextFragments[3].Rectangle)
+		{
+			Title = "Aspose User",
+			Color = Aspose.Pdf.Color.Red
+		};
+
+		var underlineAnnotation = new Aspose.Pdf.Annotations.UnderlineAnnotation(document.Pages[1], tfa.TextFragments[4].Rectangle)
+		{
+			Title = "Aspose User",
+			Color = Aspose.Pdf.Color.Violet
+		};
+
+		// Add annotations to the page
+		document.Pages[1].Annotations.Add(highlightAnnotation);
+		document.Pages[1].Annotations.Add(squigglyAnnotation);
+		document.Pages[1].Annotations.Add(strikeOutAnnotation);
+		document.Pages[1].Annotations.Add(underlineAnnotation);
+
+		// Save the updated document
+		document.Save(dataDir + "AddTextMarkupAnnotations_out.pdf");
+	}
+}
 ```
 
 If you want to highlight a multi-line fragment you should use advanced example:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 /// <summary>
 /// Advanced example for you want to highlight a multi-line fragment
 /// </summary>
 public static void AddHighlightAnnotationAdvanced()
 {
-    var document = new Document(dataDir + "sample_mod.pdf");
-    var page = document.Pages[1];
-    var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
-    tfa.Visit(page);
-    foreach (var textFragment in tfa.TextFragments)
-    {
-        var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
-        page.Annotations.Add(highlightAnnotation);
-    }
-    document.Save(dataDir + "sample_mod.pdf");
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+	{
+		var page = document.Pages[1];
+		var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
+		tfa.Visit(page);
+		foreach (var textFragment in tfa.TextFragments)
+		{
+			var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
+			page.Annotations.Add(highlightAnnotation);
+		}
+		document.Save(dataDir + "AddHighlightAnnotationAdvanced_out.pdf");
+	}
 }
 
 private static HighlightAnnotation HighLightTextFragment(Page page,
@@ -215,14 +228,16 @@ private static HighlightAnnotation HighLightTextFragment(Page page,
 public static void GetHighlightedText()
 {
     // Load the PDF file
-    Document document = new Document(dataDir + "sample_mod.pdf");
-    var highlightAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Highlight)
-        .Cast<HighlightAnnotation>();
-    foreach (var ta in highlightAnnotations)
-    {
-        Console.WriteLine($"[{ta.GetMarkedText()}]");
-    }
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+	{
+		var highlightAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight)
+			.Cast<Aspose.Pdf.Annotations.HighlightAnnotation>();
+		foreach (var ta in highlightAnnotations)
+		{
+			Console.WriteLine($"[{ta.GetMarkedText()}]");
+		}
+	}
 }
 ```
 
@@ -231,18 +246,22 @@ public static void GetHighlightedText()
 Please try using the following code snippet to Get Text Markup Annotation from PDF document.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void GetTextMarkupAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(dataDir + "sample_mod.pdf");
-    var textMarkupAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Highlight
-        || a.AnnotationType == AnnotationType.Squiggly)
-        .Cast<TextMarkupAnnotation>();
-    foreach (var ta in textMarkupAnnotations)
-    {
-        Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-    }
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+	{
+		var textMarkupAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+			|| a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
+			.Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
+		foreach (var ta in textMarkupAnnotations)
+		{
+			Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+		}
+	}
 }
 ```
 
@@ -251,19 +270,23 @@ public static void GetTextMarkupAnnotation()
 The following code snippet shows how to Delete Text Markup Annotation from PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 public static void DeleteTextMarkupAnnotation()
 {
     // Load the PDF file
-    Document document = new Document(dataDir + "sample_mod.pdf");
-    var textMarkupAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Highlight
-        ||a.AnnotationType == AnnotationType.Squiggly)
-        .Cast<TextMarkupAnnotation>();
-    foreach (var ta in textMarkupAnnotations)
-    {
-        document.Pages[1].Annotations.Delete(ta);
-    }
-    document.Save(dataDir + "sample_del.pdf");
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+	{
+		var textMarkupAnnotations = document.Pages[1].Annotations
+			.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+			||a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
+			.Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
+		foreach (var ta in textMarkupAnnotations)
+		{
+			document.Pages[1].Annotations.Delete(ta);
+		}
+		document.Save(dataDir + "DeleteTextMarkupAnnotation_out.pdf");
+	}
 }
 ```
 
