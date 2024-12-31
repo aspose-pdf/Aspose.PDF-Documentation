@@ -77,19 +77,25 @@ lastmod: "2021-07-15"
 [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class allows you to extract images from a PDF file. First off, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, call [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) method to extract all the images into memory. Once the images are extracted, you can get those images with the help of [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) methods. You need to loop through all the extracted images using a while loop. In order to save the images to disk, you can call the overload of the [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) method which takes file path as argument. The following code snippet shows you how to extract images from the whole PDF to files.
 
 ```csharp
-public static void ExtractImagesWholePDF()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesWholePDF()
 {
-    // Open input PDF
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Extract all the images
-    pdfExtractor.ExtractImage();
-
-    // Get all the extracted images
-    while (pdfExtractor.HasNextImage())
+    // Open the document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        pdfExtractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+
+        // Extract all the images
+        extractor.ExtractImage();
+
+        // Get all the extracted images
+        while (extractor.HasNextImage())
+        {
+            extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
+        }
     }
 }
 ```
@@ -99,25 +105,31 @@ public static void ExtractImagesWholePDF()
 [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class allows you to extract images from a PDF file into streams. First off, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. After that, call [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) method to extract all the images into memory. Once the images are extracted, you can get those images with the help of [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) methods. You need to loop through all the extracted images using a while loop. In order to save the images to stream, you can call the overload of the [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) method which takes Stream as argument. The following code snippet shows you how to extract images from the whole PDF to streams.
 
 ```csharp
-public static void ExtractImagesWholePDFStreams()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesWholePDFStreams()
 {
-    // Open input PDF
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Extract images
-    pdfExtractor.ExtractImage();
-    // Get all the extracted images
-    while (pdfExtractor.HasNextImage())
+    // Open the document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        // Read image into memory stream
-        MemoryStream memoryStream = new MemoryStream();
-        pdfExtractor.GetNextImage(memoryStream);
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
-        // Write to disk, if you like, or use it otherwise.
-        using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+        // Extract images
+        extractor.ExtractImage();
+        // Get all the extracted images
+        while (extractor.HasNextImage())
         {
-            memoryStream.WriteTo(fileStream);
+            // Read image into memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            extractor.GetNextImage(memoryStream);
+
+            // Write to disk, if you like, or use it otherwise
+            using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+            {
+                memoryStream.WriteTo(fileStream);
+            }
         }
     }
 }
@@ -128,30 +140,36 @@ public static void ExtractImagesWholePDFStreams()
 You can extract images from a particular page of a PDF file. In order to do that, you need to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties to the particular page you want to extract images from. First of all, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. Secondly, you have to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) * and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties. After that, call [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) method to extract all the images into memory. Once the images are extracted, you can get those images with the help of [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) methods. You need to loop through all the extracted images using a while loop. You can either save the images to disk or stream. You only need to call the appropriate overload of [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) method. The following code snippet shows you how to extract images from a particular page of PDF to streams.
 
 ```csharp
-public static void ExtractImagesParticularPage()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesParticularPage()
 {
-    // Open input PDF
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Set StartPage and EndPage properties to the page number to
-    // You want to extract images from
-    pdfExtractor.StartPage = 2;
-    pdfExtractor.EndPage = 2;
-
-    // Extract images
-    pdfExtractor.ExtractImage();
-    // Get extracted images
-    while (pdfExtractor.HasNextImage())
+    // Open the document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        // Read image into memory stream
-        MemoryStream memoryStream = new MemoryStream();
-        pdfExtractor.GetNextImage(memoryStream);
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
-        // Write to disk, if you like, or use it otherwise
-        using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+        // Set StartPage and EndPage properties to the page number to
+        // You want to extract images from
+        extractor.StartPage = 2;
+        extractor.EndPage = 2;
+
+        // Extract images
+        extractor.ExtractImage();
+        // Get extracted images
+        while (extractor.HasNextImage())
         {
-            memoryStream.WriteTo(fileStream);
+            // Read image into memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            extractor.GetNextImage(memoryStream);
+
+            // Write to disk, if you like, or use it otherwise
+            using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+            {
+                memoryStream.WriteTo(fileStream);
+            }
         }
     }
 }
@@ -162,32 +180,38 @@ public static void ExtractImagesParticularPage()
 You can extract images from a range of pages of a PDF file. In order to do that, you need to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage)  and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties to the range of pages you want to extract images from. First of all, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method. Secondly, you have to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage)  and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties. After that, call [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) method to extract all the images into memory. Once the images are extracted, you can get those images with the help of [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) methods. You need to loop through all the extracted images using a while loop. You can either save the images to disk or stream. You only need to call the appropriate overload of [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) method. The following code snippet shows you how to extract images from a range of pages of PDF to streams.
 
 ```csharp
-public static void ExtractImagesRangePages()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesRangePages()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
     // Open input PDF
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
-
-    // Set StartPage and EndPage properties to the page number to
-    // You want to extract images from
-    pdfExtractor.StartPage = 2;
-    pdfExtractor.EndPage = 2;
-
-    // Extract images
-    pdfExtractor.ExtractImage();
-
-    // Get extracted images
-    while (pdfExtractor.HasNextImage())
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        // Read image into memory stream
-        MemoryStream memoryStream = new MemoryStream();
-        pdfExtractor.GetNextImage(memoryStream);
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
-        // Write to disk, if you like, or use it otherwise
-        using (FileStream fileStream = new
-        FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+        // Set StartPage and EndPage properties to the page number to
+        // You want to extract images from
+        extractor.StartPage = 2;
+        extractor.EndPage = 2;
+
+        // Extract images
+        extractor.ExtractImage();
+
+        // Get extracted images
+        while (extractor.HasNextImage())
         {
-            memoryStream.WriteTo(fileStream);
+            // Read image into memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            extractor.GetNextImage(memoryStream);
+
+            // Write to disk, if you like, or use it otherwise
+            using (FileStream fileStream = new
+            FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+            {
+                memoryStream.WriteTo(fileStream);
+            }
         }
     }
 }
@@ -200,23 +224,29 @@ public static void ExtractImagesRangePages()
 The following code snippet shows you how to extract images from PDF file using ExtractImageMode option.
 
 ```csharp
-public static void ExtractImagesImageExtractionMode()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesImageExtractionMode()
 {
-    // Open input PDF
-    PdfExtractor extractor = new PdfExtractor();
-    extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Specify Image Extraction Mode
-    //extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
-    extractor.ExtractImageMode = ExtractImageMode.DefinedInResources;
-
-    // Extract Images based on Image Extraction Mode
-    extractor.ExtractImage();
-
-    // Get all the extracted images
-    while (extractor.HasNextImage())
+    // Open the document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.png", System.Drawing.Imaging.ImageFormat.Png);
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+
+        // Specify Image Extraction Mode
+        //extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
+        extractor.ExtractImageMode = Aspose.Pdf.ExtractImageMode.DefinedInResources;
+
+        // Extract Images based on Image Extraction Mode
+        extractor.ExtractImage();
+
+        // Get all the extracted images
+        while (extractor.HasNextImage())
+        {
+            extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.png", System.Drawing.Imaging.ImageFormat.Png);
+        }
     }
 }
 ```
@@ -224,46 +254,51 @@ public static void ExtractImagesImageExtractionMode()
 For checking if Pdf contains Text Or Images use next code snippet:
 
 ```csharp
-public static void CheckIfPdfContainsTextOrImages()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckIfPdfContainsTextOrImages()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
     // Instantiate a memoryStream object to hold the extracted text from Document
     MemoryStream ms = new MemoryStream();
     // Instantiate PdfExtractor object
-    PdfExtractor extractor = new PdfExtractor();
-
-    // Bind the input PDF document to extractor
-    extractor.BindPdf(dataDir + "FilledForm.pdf");
-    // Extract text from the input PDF document
-    extractor.ExtractText();
-    // Save the extracted text to a text file
-    extractor.GetText(ms);
-    // Check if the MemoryStream length is greater than or equal to 1
-
-    bool containsText = ms.Length >= 1;
-
-    // Extract images from the input PDF document
-    extractor.ExtractImage();
-
-    // Calling HasNextImage method in while loop. When images will finish, loop will exit
-    bool containsImage = extractor.HasNextImage();
-
-    // Now find out whether this PDF is text only or image only
-
-    if (containsText && !containsImage)
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        Console.WriteLine("PDF contains text only");
-    }
-    else if (!containsText && containsImage)
-    {
-        Console.WriteLine("PDF contains image only");
-    }
-    else if (containsText && containsImage)
-    {
-        Console.WriteLine("PDF contains both text and image");
-    }
-    else if (!containsText && !containsImage)
-    {
-        Console.WriteLine("PDF contains neither text or nor image");
+        // Bind the input PDF document to extractor
+        extractor.BindPdf(dataDir + "FilledForm.pdf");
+        // Extract text from the input PDF document
+        extractor.ExtractText();
+        // Save the extracted text to a text file
+        extractor.GetText(ms);
+        // Check if the MemoryStream length is greater than or equal to 1
+
+        bool containsText = ms.Length >= 1;
+
+        // Extract images from the input PDF document
+        extractor.ExtractImage();
+
+        // Calling HasNextImage method in while loop. When images will finish, loop will exit
+        bool containsImage = extractor.HasNextImage();
+
+        // Now find out whether this PDF is text only or image only
+
+        if (containsText && !containsImage)
+        {
+            Console.WriteLine("PDF contains text only");
+        }
+        else if (!containsText && containsImage)
+        {
+            Console.WriteLine("PDF contains image only");
+        }
+        else if (containsText && containsImage)
+        {
+            Console.WriteLine("PDF contains both text and image");
+        }
+        else if (!containsText && !containsImage)
+        {
+            Console.WriteLine("PDF contains neither text or nor image");
+        }
     }
 }
 ```

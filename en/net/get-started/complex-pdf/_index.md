@@ -97,70 +97,76 @@ If we create a document from scratch we need to follow certain steps:
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-private static readonly string dataDir = "..\\..\\..\\Samples\\";
-
-// Initialize document object
-Document document = new Document();
-// Add page
-Page page = document.Pages.Add();
-
-// Add image
-var imageFileName = dataDir + "logo.png";
-page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
-
-// Add Header
-var header = new TextFragment("New ferry routes in Fall 2020");
-header.TextState.Font = FontRepository.FindFont("Arial");
-header.TextState.FontSize = 24;
-header.HorizontalAlignment = HorizontalAlignment.Center;
-header.Position = new Position(130, 720);
-page.Paragraphs.Add(header);
-
-// Add description
-var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
-var description = new TextFragment(descriptionText);
-description.TextState.Font = FontRepository.FindFont("Times New Roman");
-description.TextState.FontSize = 14;
-description.HorizontalAlignment = HorizontalAlignment.Left;
-page.Paragraphs.Add(description);
-
-// Add table
-var table = new Table
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreatingAComplexPdf()
 {
-    ColumnWidths = "200",
-    Border = new BorderInfo(BorderSide.Box, 1f, Color.DarkSlateGray),
-    DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Black),
-    DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
-    Margin =
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Create the document
+    using (var document = new Aspose.Pdf.Document())
     {
-        Bottom = 10
-    },
-    DefaultCellTextState =
-    {
-        Font =  FontRepository.FindFont("Helvetica")
+        // Add page
+        var page = document.Pages.Add();
+
+        // Add image
+        var imageFileName = dataDir + "logo.png";
+        page.AddImage(imageFileName, new Aspose.Pdf.Rectangle(20, 730, 120, 830));
+
+        // Add Header
+        var header = new Aspose.Pdf.Text.TextFragment("New ferry routes in Fall 2020");
+        header.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        header.TextState.FontSize = 24;
+        header.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        header.Position = new Aspose.Pdf.Text.Position(130, 720);
+        page.Paragraphs.Add(header);
+
+        // Add description
+        var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
+        var description = new Aspose.Pdf.Text.TextFragment(descriptionText);
+        description.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+        description.TextState.FontSize = 14;
+        description.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Left;
+        page.Paragraphs.Add(description);
+
+        // Add table
+        var table = new Aspose.Pdf.Table
+        {
+            ColumnWidths = "200",
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1f, Aspose.Pdf.Color.DarkSlateGray),
+            DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 0.5f, Aspose.Pdf.Color.Black),
+            DefaultCellPadding = new Aspose.Pdf.MarginInfo(4.5, 4.5, 4.5, 4.5),
+            Margin =
+            {
+                Bottom = 10
+            },
+            DefaultCellTextState =
+            {
+                Font =  Aspose.Pdf.Text.FontRepository.FindFont("Helvetica")
+            }
+        };
+
+        var headerRow = table.Rows.Add();
+        headerRow.Cells.Add("Departs City");
+        headerRow.Cells.Add("Departs Island");
+        foreach (Aspose.Pdf.Cell headerRowCell in headerRow.Cells)
+        {
+            headerRowCell.BackgroundColor = Aspose.Pdf.Color.Gray;
+            headerRowCell.DefaultCellTextState.ForegroundColor = Aspose.Pdf.Color.WhiteSmoke;
+        }
+
+        var time = new TimeSpan(6, 0, 0);
+        var incTime = new TimeSpan(0, 30, 0);
+        for (int i = 0; i < 10; i++)
+        {
+            var dataRow = table.Rows.Add();
+            dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+            time = time.Add(incTime);
+            dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+        }
+
+        page.Paragraphs.Add(table);
+        // Save the document
+        document.Save(dataDir + "Complex_out.pdf");
     }
-};
-
-var headerRow = table.Rows.Add();
-headerRow.Cells.Add("Departs City");
-headerRow.Cells.Add("Departs Island");
-foreach (Cell headerRowCell in headerRow.Cells)
-{
-    headerRowCell.BackgroundColor = Color.Gray;
-    headerRowCell.DefaultCellTextState.ForegroundColor = Color.WhiteSmoke;
 }
-
-var time = new TimeSpan(6, 0, 0);
-var incTime = new TimeSpan(0, 30, 0);
-for (int i = 0; i < 10; i++)
-{
-    var dataRow = table.Rows.Add();
-    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-    time=time.Add(incTime);
-    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-}
-
-page.Paragraphs.Add(table);
-
-document.Save(dataDir + "Complex.pdf");
 ```

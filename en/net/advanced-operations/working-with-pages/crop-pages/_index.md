@@ -97,9 +97,9 @@ The snippet below show how to crop the page:
 private static void CropPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "CropPageInput.pdf"))
     {
         Console.WriteLine(document.Pages[1].CropBox);
         Console.WriteLine(document.Pages[1].TrimBox);
@@ -113,7 +113,7 @@ private static void CropPage()
         document.Pages[1].ArtBox = newBox;
         document.Pages[1].BleedBox = newBox;
         //Save the updated document
-        document.Save(dataDir + "crop_out.pdf");  
+        document.Save(dataDir + "CropPage_out.pdf");  
     }
 }
 ```

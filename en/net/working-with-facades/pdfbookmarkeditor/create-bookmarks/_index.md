@@ -86,7 +86,7 @@ private static void CreateBookmarksOfAllPages()
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        bookmarkEditor.BindPdf(dataDir + "CreateBookmarksAll.pdf");
         // Create bookmark of all pages
         bookmarkEditor.CreateBookmarks();
         // Save updated document
@@ -108,7 +108,7 @@ private static void CreateBookmarksOfAllPagesWithProperties()
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        bookmarkEditor.BindPdf(dataDir + "CreateBookmarks-PagesProperties.pdf");
         // Create bookmark of all pages
         bookmarkEditor.CreateBookmarks(System.Drawing.Color.Green, true, true);
         // Save updated document
@@ -130,7 +130,7 @@ private static void CreateBookmarkOfAParticularPage()
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        bookmarkEditor.BindPdf(dataDir + "CreateBookmark-Page.pdf");
         // Create bookmark of a particular page
         bookmarkEditor.CreateBookmarkOfPage("Bookmark Name", 2);
         // Save updated document
@@ -152,7 +152,7 @@ private static void CreateBookmarksOfARangeOfPages()
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        bookmarkEditor.BindPdf(dataDir + "CreateBookmark-Page.pdf");
         // Bookmark name list
         string[] bookmarkList = { "First" };
         // Page list
@@ -183,7 +183,7 @@ private static void AddBookmarkInAnExistingPdfFile()
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
         // Bind PDF document
-        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        bookmarkEditor.BindPdf(dataDir + "AddBookmark.pdf");
         // Create bookmarks
         bookmarkEditor.CreateBookmarks(bookmark);
         // Save updated document
@@ -221,7 +221,7 @@ private static void AddChildBookmarkInAnExistingPdfFile()
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
         // Bind PDF document
-        bookmarkEditor.BindPdf(dataDir + "input.pdf");
+        bookmarkEditor.BindPdf(dataDir + "AddChildBookmark.pdf");
         // Create bookmarks
         bookmarkEditor.CreateBookmarks(bookmark);
         // Save updated document

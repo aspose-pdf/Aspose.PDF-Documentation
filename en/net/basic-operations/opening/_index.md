@@ -85,12 +85,16 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```csharp
-public static void OpenDocument()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocument()
 {
-    var fileName = @"C:\tmp\tourguidev2_gb_tags.pdf";
-    using (var document = new Document(fileName))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
-        Console.WriteLine($"Pages {document.Pages.Count}");
+        Console.WriteLine("Pages " + document.Pages.Count);
     }
 }
 ```
@@ -98,12 +102,14 @@ public static void OpenDocument()
 ## Open existing PDF document from stream
 
 ```csharp
-public static void OpenDocumentStream()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocumentStream()
 {
-    const string fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
+    var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
+
     var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
     // Create a new WebClient instance.
-    var webClient = new WebClient();
+    var webClient = new System.Net.WebClient();
     // Concatenate the domain with the Web resource filename.
     var strWebResource = remoteUri + fileName;
     Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, strWebResource);
@@ -111,9 +117,10 @@ public static void OpenDocumentStream()
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    using (var document = new Document(stream))
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(stream))
     {
-        Console.WriteLine($"Pages {document.Pages.Count}");
+        Console.WriteLine("Pages " + document.Pages.Count);
     }
 }
 ```
@@ -121,18 +128,22 @@ public static void OpenDocumentStream()
 ## Open encrypted PDF document
 
 ```csharp
-public static void OpenDocumentWithPassword()
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocumentWithPassword()
 {
-    const string fileName = @"C:\tmp\DocSite.pdf";
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
     const string password = "Aspose2020";
     try
     {
-        using (var document = new Document(fileName, password))
+        // Open the document
+        using (var document = new Aspose.Pdf.Document(dataDir + "DocSite.pdf", password))
         {
-            Console.WriteLine($"Pages {document.Pages.Count}");
+            Console.WriteLine("Pages " + document.Pages.Count);
         }
     }
-    catch (InvalidPasswordException e)
+    catch (Aspose.Pdf.InvalidPasswordException e)
     {
         Console.WriteLine(e);
     }

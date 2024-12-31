@@ -99,10 +99,10 @@ The following code snippet shows you how to move one page.
 private static void MovingAPageFromOnePdfDocumentToAnother()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     // Document path
-    var srcFileName = dataDir + "input.pdf";
-    var destFileName = dataDir + "moved_out.pdf";
+    var srcFileName = dataDir + "MovingPageInput.pdf";
+    var destFileName = dataDir + "MovingPage_out.pdf";
     //Open documents
     using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
     {
@@ -138,10 +138,10 @@ The following code snippet shows you how to move a bunch of pages from one PDF d
 private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     // Document path
-    string srcFileName = dataDir + "input.pdf";
-    string destFileName = dataDir + "moved_out.pdf";
+    string srcFileName = dataDir + "MovingBunchOfPagesInput.pdf";
+    string destFileName = dataDir + "MovingBunchOfPages_out.pdf";
     //Open documents
     using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
     {
@@ -175,10 +175,10 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     // Document path
-    string srcFileName = dataDir + "input.pdf";
-    string destFileName = dataDir + "moved_out.pdf";
+    string srcFileName = dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocumentInput.pdf";
+    string destFileName = dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocument_out.pdf";
 
     // Open document
     using (var srcDocument = new Aspose.Pdf.Document(srcFileName))

@@ -87,7 +87,7 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Insert pages
     pdfEditor.Insert(
-        dataDir + "input.pdf", 1, 
+        dataDir + "MultiplePages.pdf", 1, 
         dataDir + "InsertPages.pdf", 2, 5, 
         dataDir + "InsertPagesBetweenNumbers_out.pdf");
 }
@@ -109,7 +109,7 @@ private static void InsertArrayOfPdfPagesUsingFilePaths()
     var pagesToInsert = new int[] { 2, 3 };
     // Insert pages
     pdfEditor.Insert(
-        dataDir + "input.pdf", 1, 
+        dataDir + "MultiplePages.pdf", 1, 
         dataDir + "InsertPages.pdf", pagesToInsert, 
         dataDir + "InsertArrayOfPages_out.pdf");
 }
@@ -128,7 +128,7 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingStreams()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
     {
         using (var portStream = new FileStream(dataDir + "InsertPages.pdf", FileMode.Open))
         {
@@ -157,7 +157,7 @@ private static void InsertArrayOfPdfPagesUsingStreams()
     // Pages to insert
     var pagesToInsert = new int[] { 2, 3 };
     // Create streams
-    using (var inputStream = new FileStream(dataDir + "input.pdf", FileMode.Open))
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
     {
         using (var portStream = new FileStream(dataDir + "InsertPages.pdf", FileMode.Open))
         {
