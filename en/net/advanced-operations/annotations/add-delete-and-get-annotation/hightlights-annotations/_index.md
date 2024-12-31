@@ -179,33 +179,33 @@ public static void AddHighlightAnnotationAdvanced()
 }
 
 private static HighlightAnnotation HighLightTextFragment(Page page,
-    TextFragment textFragment, Color color)
+    Aspose.Pdf.Text.TextFragment textFragment, Aspose.Pdf.Color color)
 {
     if (textFragment.Segments.Count == 1)
     {
-        return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
+        return new Aspose.Pdf.Annotations.HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
         {
             Title = "Aspose User",
             Color = color,
             Modified = DateTime.Now,
-            QuadPoints = new Point[]
+            QuadPoints = new Aspose.Pdf.Point[]
             {
-                new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
-                new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
-                new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
-                new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
             }
         };
     }
 
     var offset = 0;
-    var quadPoints = new Point[textFragment.Segments.Count * 4];
-    foreach (var segment in textFragment.Segments)
+    var quadPoints = new Aspose.Pdf.Point[textFragment.Segments.Count * 4];
+    foreach (Aspose.Pdf.Text.TextSegment segment in textFragment.Segments)
     {
-        quadPoints[offset + 0] = new Point(segment.Rectangle.LLX, segment.Rectangle.URY);
-        quadPoints[offset + 1] = new Point(segment.Rectangle.URX, segment.Rectangle.URY);
-        quadPoints[offset + 2] = new Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
-        quadPoints[offset + 3] = new Point(segment.Rectangle.URX, segment.Rectangle.LLY);
+        quadPoints[offset + 0] = new Aspose.Pdf.Point(segment.Rectangle.LLX, segment.Rectangle.URY);
+        quadPoints[offset + 1] = new Aspose.Pdf.Point(segment.Rectangle.URX, segment.Rectangle.URY);
+        quadPoints[offset + 2] = new Aspose.Pdf.Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
+        quadPoints[offset + 3] = new Aspose.Pdf.Point(segment.Rectangle.URX, segment.Rectangle.LLY);
         offset += 4;
     }
 
@@ -213,7 +213,7 @@ private static HighlightAnnotation HighLightTextFragment(Page page,
     var lly = quadPoints.Min(pt => pt.Y);
     var urx = quadPoints.Max(pt => pt.X);
     var ury = quadPoints.Max(pt => pt.Y);
-    return new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury))
+    return new Aspose.Pdf.Annotations.HighlightAnnotation(page, new Aspose.Pdf.Rectangle(llx, lly, urx, ury))
     {
         Title = "Aspose User",
         Color = color,
