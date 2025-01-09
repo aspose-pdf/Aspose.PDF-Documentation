@@ -309,7 +309,7 @@ private static void ConcatenatePdfFormsAndKeepFieldsUnique()
 Please take a look over following code snippet for information on how to merge the PDF files.
 
 ```csharp
- // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConcatenatePdfFiles()
 {
     // The path to the documents directory.
