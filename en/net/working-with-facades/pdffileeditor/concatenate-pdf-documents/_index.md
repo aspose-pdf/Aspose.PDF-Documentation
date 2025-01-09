@@ -309,14 +309,14 @@ private static void ConcatenatePdfFormsAndKeepFieldsUnique()
 Please take a look over following code snippet for information on how to merge the PDF files.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConcatenatePdfFiles()
 {
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Set input and output file paths
-    var inputFile1 = dataDir + "input1.pdf";
-    var inputFile2 = dataDir + "input2.pdf";
+    var inputFile1 = dataDir + "ConcatenateInput1.pdf";
+    var inputFile2 = dataDir + "ConcatenateInput2.pdf";
     var outFile = dataDir + "ConcatenatePdfFilesAndCreateTOC_out.pdf";
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
@@ -364,7 +364,7 @@ private static void AddTextStampForTableOfContents()
 {
     // The path to the documents directory.
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
-    var inputPdfFile = Path.Combine(dataDir, "input1.pdf");
+    var inputPdfFile = Path.Combine(dataDir, "ConcatenateInput1.pdf");
     // Set Text Stamp to display string Table Of Contents
     var stamp = new Aspose.Pdf.Facades.Stamp();
     stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Table Of Contents", System.Drawing.Color.Maroon, System.Drawing.Color.Transparent, Aspose.Pdf.Facades.FontStyle.Helvetica, Aspose.Pdf.Facades.EncodingType.Winansi, true, 18));
@@ -481,7 +481,7 @@ private static void CompleteCode()
                     // We have used   new PdfFileInfo("d:/pdftest/Input1.pdf").NumberOfPages + 2   as PdfFileInfo.NumberOfPages(..) returns the page count for first document
                     // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
                     contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 620, 100, 20),
-                        new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "Input1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
+                        new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "ConcatenateInput1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
                     // Save updated PDF
                     contentEditor.Save(dataDir + "Concatenated_Table_Of_Contents_out.pdf");
                 }
