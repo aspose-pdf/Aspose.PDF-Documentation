@@ -116,59 +116,6 @@ private static void ChangePageOrientation()
 }
 ```
 
-## Fitting the Page Content to the New Page Orientation
-
-Please note that when using the above code snippet, some of the document's content might be cut because the page height is decreased. To avoid this, increase width proportionally and leave the height intact. Example of calculations:
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void FittingThePageContentToTheNewPageOrientation()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
-    {
-        foreach (Page page in document.Pages)
-        {
-            Aspose.Pdf.Rectangle r = page.MediaBox;
-            // New height the same
-            double newHeight = r.Height;
-            // New width is expanded proportionally to make orientation landscape
-            // (we assume that previous orientation is portrait)
-            double newWidth = r.Height * r.Height / r.Width;
-        }
-    }
-}
-```
-
-Besides the above approach, consider using the PdfPageEditor facade which can apply zoom to the page contents).
-
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ZoomToPageContents()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
-    {
-        // Get rectangular region of first page of PDF
-        Aspose.Pdf.Rectangle rect = document.Pages[1].Rect;
-        // Instantiate PdfPageEditor instance
-        var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor();
-        // Bind source PDF
-        pdfPageEditor.BindPdf(dataDir + "RotatePagesInput.pdf");
-        // Set zoom coefficient
-        pdfPageEditor.Zoom = (float)(rect.Width / rect.Height);
-        // Update page size
-        pdfPageEditor.PageSize = new Aspose.Pdf.PageSize((float)rect.Height, (float)rect.Width);
-        // Save output file
-        document.Save(dataDir + "ZoomToPageContents_out.pdf");
-    }
-}
-```
-
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
