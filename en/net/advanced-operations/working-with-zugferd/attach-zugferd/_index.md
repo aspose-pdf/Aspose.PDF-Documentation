@@ -95,13 +95,13 @@ We recommend following steps to attach ZUGFeRD to PDF:
 private static void AttachZUGFeRD()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-test.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-testInput.pdf"))
     {
         // Setup new file to be added as attachment
         var description = "Invoice metadata conforming to ZUGFeRD standard";
-        var fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "factur-x.xml", description)
+        var fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "ZUGFeRD-testXmlInput.xml", description)
         {
             Description = "Zugferd",
             MIMEType = "text/xml",
@@ -111,7 +111,7 @@ private static void AttachZUGFeRD()
         document.EmbeddedFiles.Add(fileSpecification);
         document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.ZUGFeRD, Aspose.Pdf.ConvertErrorAction.Delete);
         // Save document
-        document.Save(dataDir + "ZUGFeRD-res.pdf");
+        document.Save(dataDir + "ZUGFeRD_out.pdf");
     }
 }
 ```
