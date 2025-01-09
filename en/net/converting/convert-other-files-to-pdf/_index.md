@@ -596,7 +596,7 @@ Follow these steps to convert pre-formatted text to PDF with C#:
 3. Run loop through an array of strings and add each string as a paragraph in [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/) collection.
 
 In this case, the library's algorithm also adds extra pages, but we can control this process ourselves.
-Following example shows how to convert pre-formatted text file (80x25) to PDF document with page size A4.
+Following example shows how to convert pre-formatted text file to PDF document with page size A4.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -605,7 +605,7 @@ private static void ConvertPreFormattedTextToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     // Read the text file as array of string
-    var lines = File.ReadAllLines(dataDir + "rfc822.txt");
+    var lines = File.ReadAllLines(dataDir + "ConvertPreFormattedTextToPdf.txt");
     // Instantiate a Document object
     using (var document = new Aspose.Pdf.Document())
     {
