@@ -267,7 +267,7 @@ When the `PositioningMode` value is
 	Adding an element is taken into account when determining the location of subsequent elements.
 	If the value of at least one of the Left, Top properties is not zero, then they are also taken into account, but this uses a not entirely obvious logic and it is better not to use this.
 
-- ParagraphPositioningMode.Absolute
+- `ParagraphPositioningMode.Absolute`
 	The location is specified by the Left and Top values, does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```cs
