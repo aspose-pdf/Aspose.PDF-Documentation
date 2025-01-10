@@ -61,7 +61,7 @@ The LaTeX file format is a text file format with the special markup and used in 
 The provided Go code snippet demonstrates how to convert a PDF document into a TeX using the Aspose.PDF library:
 
 1. Open a PDF document.
-1. Convert a PDF file to TeX using [SaveTeX]() function.
+1. Convert a PDF file to TeX using [SaveTeX](https://reference.aspose.com/pdf/go-cpp/convert/savetex/) function.
 1. Close the PDF document and release any allocated resources.
 
 ```go
@@ -100,7 +100,7 @@ Aspose.PDF for Go presents you online free application ["PDF to LaTeX"](https://
 The provided Go code snippet demonstrates how to convert a PDF document into a TXT using the Aspose.PDF library:
 
 1. Open a PDF document.
-1. Convert a PDF file to TXT using [SaveTxt]() function.
+1. Convert a PDF file to TXT using [SaveTxt](https://reference.aspose.com/pdf/go-cpp/convert/savetxt/) function.
 1. Close the PDF document and release any allocated resources.
 
 ```go
@@ -143,7 +143,7 @@ The XPS file type is primarily associated with the XML Paper Specification by Mi
 The provided Go code snippet demonstrates how to convert a PDF document into a XPS using the Aspose.PDF library:
 
 1. Open a PDF document.
-1. Convert a PDF file to XPS using [SaveXps]() function.
+1. Convert a PDF file to XPS using [SaveXps](https://reference.aspose.com/pdf/go-cpp/convert/savexps/) function.
 1. Close the PDF document and release any allocated resources.
 
 ```go
