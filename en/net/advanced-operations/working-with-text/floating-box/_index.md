@@ -282,7 +282,7 @@ private static void OffsetSupport()
         // Create FloatingBox
         var box = new Aspose.Pdf.FloatingBox()
         {
-            Top = -45,
+            Top = 45,
             Left = 15,
             PositioningMode = Aspose.Pdf.ParagraphPositioningMode.Absolute
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen)
