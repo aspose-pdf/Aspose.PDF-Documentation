@@ -98,7 +98,7 @@ private static void AddImage01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -108,7 +108,7 @@ private static void AddImage01()
             mender.BindPdf(document);
             mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
 
-            // Save the updated PDF file
+            // Save the document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -126,7 +126,7 @@ private static void AddImage02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -146,7 +146,7 @@ private static void AddImage02()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the output file
+            // Save the document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -164,7 +164,7 @@ private static void AddImage03()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects 
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -186,7 +186,7 @@ private static void AddImage03()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the output file
+            // Save the document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -200,7 +200,7 @@ private static void AddImage04()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -223,7 +223,7 @@ private static void AddImage04()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the output file
+            // Save the document
             mender.Save(dataDir + "AddImage_outp.pdf");
         }
     }
@@ -241,7 +241,7 @@ private static void AddText01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileMend object using 'using' block to ensure proper disposal
+    // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         mender.BindPdf(dataDir + "AddImage.pdf");
@@ -252,7 +252,7 @@ private static void AddText01()
         // Add text to the first page at position (10, 750)
         mender.AddText(message, 1, 10, 750);
 
-        // Save the output file
+        // Save the document
         mender.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -271,7 +271,7 @@ private static void AddText02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileMend object using 'using' block to ensure proper disposal
+    // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         mender.BindPdf(dataDir + "AddImage.pdf");
@@ -285,7 +285,7 @@ private static void AddText02()
         // Set word wrapping mode to wrap by words
         mender.WrapMode = Aspose.Pdf.Facades.WordWrapMode.ByWords;
 
-        // Save the output file
+        // Save the document
         mender.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -307,7 +307,7 @@ private static void AddText03()
         document.Pages.Add();
         document.Pages.Add();
 
-        // Create PdfFileMend object using 'using' block to ensure proper disposal
+        // Create PdfFileMend object
         using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
             mender.BindPdf(document);
@@ -321,7 +321,7 @@ private static void AddText03()
             // Add text to the specified pages at the specified coordinates
             mender.AddText(message, pageNums, 10, 750, 310, 760);
 
-            // Save the output file
+            // Save the document
             mender.Save(dataDir + "AddText_out.pdf");
         }
     }

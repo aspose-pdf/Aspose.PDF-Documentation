@@ -92,9 +92,8 @@ private static void MergeImages01()
                                 .Cast<Stream>()
                                 .ToList();
 
-    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
-    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.jpg", FileMode.Create))
     {
         // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
@@ -118,10 +117,9 @@ private static void MergeImages02()
                             .Cast<Stream>()
                             .ToList();
 
-    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
             Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Horizontal, 1, 1))
-    using (FileStream outputStream = new FileStream(dataDir + "MergeImages02_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages02_out.jpg", FileMode.Create))
     {
         // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
@@ -145,10 +143,9 @@ private static void MergeImages03()
                             .Cast<Stream>()
                             .ToList();
 
-    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
             Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Center, 2, 2))
-    using (FileStream outputStream = new FileStream(dataDir + "MergeImages03_out.jpg", FileMode.Create))  // Output file with '_out' suffix
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages03_out.jpg", FileMode.Create))
     {
         // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
@@ -172,10 +169,9 @@ private static void MergeImages04()
                             .Cast<Stream>()
                             .ToList();
 
-    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
             Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(fileStreams))
-    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.tiff", FileMode.Create))  // Output file with '_out' suffix
+    using (FileStream outputStream = new FileStream(dataDir + "MergeImages_out.tiff", FileMode.Create))
     {
         // Copy merged images to the output file
         inputStream.CopyTo(outputStream);
@@ -199,7 +195,6 @@ private static void MergeImages05()
                                 .Cast<Stream>()
                                 .ToList();
 
-    // Use 'using' block to ensure proper resource management for both input and output streams
     using (Stream inputStream =
             Aspose.Pdf.Facades.PdfConverter.MergeImages(fileStreams, Aspose.Pdf.Drawing.ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
     using (MemoryStream outputStream = new MemoryStream())  // Output to MemoryStream

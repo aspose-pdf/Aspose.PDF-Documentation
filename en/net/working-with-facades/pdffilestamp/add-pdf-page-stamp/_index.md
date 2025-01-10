@@ -84,7 +84,7 @@ private static void AddPageStampOnAllPages()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -100,7 +100,7 @@ private static void AddPageStampOnAllPages()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
     }
 }
@@ -117,7 +117,7 @@ private static void AddPageStampOnCertainPages()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -134,7 +134,7 @@ private static void AddPageStampOnCertainPages()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
     }
 }
@@ -151,7 +151,7 @@ private static void AddPageNumberInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -173,7 +173,7 @@ private static void AddPageNumberInPdfFile()
         // Add page number in upper right corner
         fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
     }
 }
@@ -202,7 +202,7 @@ private static void AddCustomPageNumberInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -228,7 +228,7 @@ private static void AddCustomPageNumberInPdfFile()
         // Add page number in upper right corner
         fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
     }
 }

@@ -166,7 +166,7 @@ So the following code snippet follows these steps and shows how to convert BMP t
 private static void ConvertBMPtoPDF()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    //Initialize empty PDF document
+    //Create the document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
@@ -176,7 +176,7 @@ private static void ConvertBMPtoPDF()
         image.File = dataDir + "BMPtoPDF.bmp";
         document.Pages[1].Paragraphs.Add(image);
         
-        // Save output PDF document
+        // Save the document
         document.Save(dataDir + "BMPtoPDF_out.pdf");
     }
 }
@@ -239,7 +239,7 @@ The following code snippet shows how to convert DICOM files to PDF format with A
 private static void ConvertDICOMtoPDF()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // Instantiate Document Object
+    // Create the document 
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a page to pages collection of document
@@ -251,7 +251,7 @@ private static void ConvertDICOMtoPDF()
             File = dataDir + "DICOMtoPDF.dcm"
         };
         document.Pages[1].Paragraphs.Add(image);
-        // Save output as PDF format
+        // Save the document
         document.Save(dataDir + "DICOMtoPDF_out.pdf");
     }
 }
@@ -284,7 +284,7 @@ Moreover, the following code snippet shows how to convert an EMF to PDF with C# 
 private static void ConvertEMFtoPDF()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // Initialize new PDF document
+    // Create the document 
     using (var document = new Aspose.Pdf.Document())
     {
         // Spcify path of input EMF image file
@@ -303,7 +303,7 @@ private static void ConvertEMFtoPDF()
 
         page.Paragraphs.Add(image);
 
-        //Save output PDF document
+        //Save the document
         document.Save(dataDir + "EMFtoPDF_out.pdf");
     }
 }
@@ -347,7 +347,7 @@ private static void ConvertGIFtoPDF()
         // Load sample GIF image file
         image.File = dataDir + "GIFtoPDF.gif";
         document.Pages[1].Paragraphs.Add(image);
-        // Save output PDF document
+        // Save the document
         document.Save(dataDir + "GIFtoPDF_out.pdf");
     }
 }
@@ -382,7 +382,7 @@ The code snippet below shows how to convert JPG Image to PDF using C#:
 private static void ConvertJPGtoPDF()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // Initialize new PDF document
+    // Create the document 
     using (var document = new Aspose.Pdf.Document())
     {
         // Load input JPG file
@@ -395,7 +395,7 @@ private static void ConvertJPGtoPDF()
         // Add image on a page
         page.Paragraphs.Add(image);
         
-        // Save output PDF file
+        // Save the document
         document.Save(dataDir + "JPGtoPDF_out.pdf");
     }
 }
@@ -433,7 +433,7 @@ private static void ConvertJPGtoPDF()
         page.PageInfo.Margin.Left = 0;
         page.Paragraphs.Add(image);
         
-        // Save output PDF file
+        // Save the document
         document.Save(dataDir + "JPGtoPDF_out.pdf");
     }
 }
@@ -490,7 +490,7 @@ private static void ConvertPNGtoPDF()
         page.PageInfo.Margin.Left = 0;
         page.Paragraphs.Add(image);
         
-        // Save output PDF
+        // Save the document
         document.Save(dataDir + "PNGtoPDF_out.pdf");
     }
 }

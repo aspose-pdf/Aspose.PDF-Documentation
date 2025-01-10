@@ -84,7 +84,7 @@ private static void ConvertPdfPagesToImages01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfConverter object using 'using' block to ensure proper disposal
+    // Create PdfConverter object
     using (var converter = new Aspose.Pdf.Facades.PdfConverter())
     {
         // Bind input pdf file
@@ -114,7 +114,7 @@ private static void ConvertPdfPagesToImages02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfConverter object using 'using' block to ensure proper disposal
+    // Create PdfConverter object
     using (var converter = new Aspose.Pdf.Facades.PdfConverter())
     {
         // Bind input pdf file

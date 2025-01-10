@@ -84,7 +84,7 @@ private static void AddTextStampOnAllPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -107,7 +107,7 @@ private static void AddTextStampOnAllPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file with '_out' suffix
+        // Save the document
         fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
     }
 }
@@ -124,7 +124,7 @@ private static void AddTextStampOnParticularPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -149,7 +149,7 @@ private static void AddTextStampOnParticularPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "AddTextStamp-Page_out.pdf");
     }
 }
@@ -166,7 +166,7 @@ private static void AddImageStampOnAllPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -185,7 +185,7 @@ private static void AddImageStampOnAllPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "AddImageStamp-Page_out.pdf");
     }
 }
@@ -222,7 +222,7 @@ private static void AddImageStampOnParticularPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file
+        // Save the document
         fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
     }
 }

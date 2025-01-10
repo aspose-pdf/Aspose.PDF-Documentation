@@ -92,10 +92,10 @@ private static void UsingGraphicsAbsorber()
     // Path to the document
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Step 1: Create a Document object using 'using' block to ensure proper disposal
+    // Step 1: Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
     {
-        // Step 2: Create an instance of GraphicsAbsorber using 'using' block
+        // Step 2: Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Select the first page of the document
@@ -136,10 +136,10 @@ private static void MoveGraphics()
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "MoveGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -161,7 +161,7 @@ private static void MoveGraphics()
             // Resume updates and apply changes
             graphicsAbsorber.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "MoveGraphics_out.pdf");
         }
     }
@@ -188,10 +188,10 @@ private static void RemoveGraphicsMethod1()
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -218,7 +218,7 @@ private static void RemoveGraphicsMethod1()
             // Resume updates and apply changes
             graphicsAbsorber.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "RemoveGraphics_out.pdf");
         }
     }
@@ -235,10 +235,10 @@ private static void RemoveGraphicsMethod2()
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -268,7 +268,7 @@ private static void RemoveGraphicsMethod2()
             // Resume updates and apply changes
             page.Contents.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "RemoveGraphics_out.pdf");
         }
     }
@@ -294,10 +294,10 @@ private static void AddToAnotherPageMethod1()
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the pages from the document
@@ -319,7 +319,7 @@ private static void AddToAnotherPageMethod1()
             // Resume updates and apply changes
             page2.Contents.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "AddToAnotherPage_out.pdf");
         }
     }
@@ -336,10 +336,10 @@ private static void AddToAnotherPageMethod2()
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the pages from the document
@@ -358,7 +358,7 @@ private static void AddToAnotherPageMethod2()
             // Resume updates and apply changes
             page2.Contents.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "AddToAnotherPage_out.pdf");
         }
     }

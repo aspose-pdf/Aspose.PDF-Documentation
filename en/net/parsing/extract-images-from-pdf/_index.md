@@ -90,7 +90,7 @@ private static void ExtractImagesFromPDF()
     // The path to the documents directory.
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
     {
         // Extract a particular image
@@ -98,11 +98,11 @@ private static void ExtractImagesFromPDF()
 
         using (var outputImage = new FileStream(dataDir + "outputImage.jpg", FileMode.Create))
         {
-            // Save output image
+            // Save the output image
             xImage.Save(outputImage, ImageFormat.Jpeg);
         }
 
-        // Save updated PDF file
+        // Save the document
         document.Save(dataDir + "ExtractImages_out.pdf");
     }
 }
