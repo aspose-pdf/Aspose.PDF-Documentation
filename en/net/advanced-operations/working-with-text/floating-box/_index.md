@@ -258,9 +258,17 @@ private static void BackgroundSupport()
 }
 ```
 
-### Offset support
+### Positioning support
 
-FloatingBox can be shifted to another location by setting the `Top` and `Left` values.
+The location of the FloatingBox on the generated page is determined by the `PositioningMode`, `Left`, `Top` properties.
+When the `PositioningMode` value is
+- `ParagraphPositioningMode.Default` (default value)
+	The location is determined by the previously placed elements.
+	Adding an element is taken into account when determining the location of subsequent elements.
+	If the value of at least one of the Left, Top properties is not zero, then they are also taken into account, but this uses a not entirely obvious logic and it is better not to use this.
+
+- `ParagraphPositioningMode.Absolute`
+	The location is specified by the Left and Top values, does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```cs
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -274,8 +282,9 @@ private static void OffsetSupport()
         // Create FloatingBox
         var box = new Aspose.Pdf.FloatingBox()
         {
-            Top = -45,
+            Top = 45,
             Left = 15,
+            PositioningMode = Aspose.Pdf.ParagraphPositioningMode.Absolute
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen)
         };
         box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 1"));
