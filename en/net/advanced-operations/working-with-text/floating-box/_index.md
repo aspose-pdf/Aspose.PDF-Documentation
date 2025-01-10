@@ -262,7 +262,7 @@ private static void BackgroundSupport()
 
 The location of the FloatingBox on the generated page is determined by the `PositioningMode`, `Left`, `Top` properties.
 When the `PositioningMode` value is
-- ParagraphPositioningMode.Default (default value)
+- `ParagraphPositioningMode.Default` (default value)
 	The location is determined by the previously placed elements.
 	Adding an element is taken into account when determining the location of subsequent elements.
 	If the value of at least one of the Left, Top properties is not zero, then they are also taken into account, but this uses a not entirely obvious logic and it is better not to use this.
