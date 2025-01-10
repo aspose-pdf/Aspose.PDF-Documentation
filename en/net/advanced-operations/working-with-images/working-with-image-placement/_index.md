@@ -83,13 +83,13 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+
 private static void ExtractAndScaleImagesFromPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Load the source PDF document using 'using' block to ensure proper disposal
+    // Load the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
     {
         var abs = new Aspose.Pdf.ImagePlacementAbsorber();

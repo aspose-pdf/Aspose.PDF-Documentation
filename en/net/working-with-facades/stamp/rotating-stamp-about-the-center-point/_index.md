@@ -87,6 +87,8 @@ Now, we see how the stamp can be rotated about the center of the stamp. [Stamp](
 
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddRotatingStampToPdf()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();  // Using dynamic path

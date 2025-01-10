@@ -92,11 +92,13 @@ You can use [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/p
 In the following example, we add image to the page using imageStream:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImage01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -106,7 +108,7 @@ private static void AddImage01()
             mender.BindPdf(document);
             mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
 
-            // Save the updated PDF file with '_out' suffix
+            // Save the document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -118,11 +120,13 @@ private static void AddImage01()
 With the help of [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1), we can superimpose one image on top of another:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImage02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -142,7 +146,7 @@ private static void AddImage02()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the output file with '_out' suffix
+            // Save the document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -154,11 +158,13 @@ private static void AddImage02()
 There are several ways to store an image in PDF file. We will demonstrate one of them in the following example:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImage03()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects 
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -180,7 +186,7 @@ private static void AddImage03()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the output file with '_out' suffix
+            // Save the document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -188,11 +194,13 @@ private static void AddImage03()
 ```
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImage04()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create Document and PdfFileMend objects using 'using' block to ensure proper disposal
+    // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -215,7 +223,7 @@ private static void AddImage04()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the output file with '_out' suffix
+            // Save the document
             mender.Save(dataDir + "AddImage_outp.pdf");
         }
     }
@@ -227,11 +235,13 @@ private static void AddImage04()
 We can add text in several ways. Consider the first. We take the [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) and add it to the Page. After, we indicate the coordinates of the lower left corner, and then we add our text to the Page.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddText01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileMend object using 'using' block to ensure proper disposal
+    // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         mender.BindPdf(dataDir + "AddImage.pdf");
@@ -242,7 +252,7 @@ private static void AddText01()
         // Add text to the first page at position (10, 750)
         mender.AddText(message, 1, 10, 750);
 
-        // Save the output file with '_out' suffix
+        // Save the document
         mender.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -255,11 +265,13 @@ Check how it's looks:
 The second way to add [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Additionally, we indicate a rectangle in which our text should fit.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddText02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileMend object using 'using' block to ensure proper disposal
+    // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         mender.BindPdf(dataDir + "AddImage.pdf");
@@ -273,7 +285,7 @@ private static void AddText02()
         // Set word wrapping mode to wrap by words
         mender.WrapMode = Aspose.Pdf.Facades.WordWrapMode.ByWords;
 
-        // Save the output file with '_out' suffix
+        // Save the document
         mender.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -282,6 +294,8 @@ private static void AddText02()
 The third example provides the ability to Add Text to specified pages. In our example, let's add a caption on pages 1 and 3 of the document.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddText03()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -293,7 +307,7 @@ private static void AddText03()
         document.Pages.Add();
         document.Pages.Add();
 
-        // Create PdfFileMend object using 'using' block to ensure proper disposal
+        // Create PdfFileMend object
         using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
             mender.BindPdf(document);
@@ -307,7 +321,7 @@ private static void AddText03()
             // Add text to the specified pages at the specified coordinates
             mender.AddText(message, pageNums, 10, 750, 310, 760);
 
-            // Save the output file with '_out' suffix
+            // Save the document
             mender.Save(dataDir + "AddText_out.pdf");
         }
     }

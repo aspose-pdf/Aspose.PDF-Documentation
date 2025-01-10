@@ -155,6 +155,8 @@ By default, the JPEG quality is set to 100%. To apply better compression and qua
 There is also an alternative, easier way to add a Image to a PDF file. You can use [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method of the [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) class. The [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) method requires the image to be added, the page number at which the image needs to be added and the coordinate information. After that, save the updated PDF file using Close method. The following code snippet shows you how to add image in an existing PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImageToPDFUsingPdfFileMender()
 {
     // The path to the documents directory
@@ -189,6 +191,8 @@ private static void AddImageToPDFUsingPdfFileMender()
 Sometimes, it is necessary to crop an image before inserting it into a PDF. Use can use `AddImage()` method to support adding cropped images:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddCroppedImageToPDF()
 {
     // The path to the documents directory
@@ -231,6 +235,8 @@ private static void AddCroppedImageToPDF()
 If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one of the ways to avoid this.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
 {
     // The path to the documents directory
@@ -271,7 +277,7 @@ A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements a
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+
 private static void ExtractImageTypesFromPDF()
 {
     // The path to the documents directory
@@ -325,6 +331,8 @@ It is possible to control the quality of an image that's being added to a PDF fi
 The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ReplaceImagesInPDF()
 {
     // The path to the documents directory
@@ -368,6 +376,8 @@ The code snippet loads a PDF, opens two image files, and applies those images as
 Stencil mask can be added by 'XImage.AddStencilMask(Stream maskStream)' method:
 
 ```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddStencilMasksToImages()
 {
     // The path to the documents directory

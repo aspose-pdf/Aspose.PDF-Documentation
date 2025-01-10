@@ -84,12 +84,14 @@ Vector graphics are a crucial component of many PDF documents, used to represent
 The first step in working with vector graphics is to extract them from a PDF document. Here’s how you can do it using the `GraphicsAbsorber` class:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void UsingGraphicsAbsorber()
 {
     // Step 1: The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Step 2: Open the document using 'using' block to ensure proper disposal
+    // Step 2: Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Step 3: Create an instance of GraphicsAbsorber
@@ -123,15 +125,17 @@ private static void UsingGraphicsAbsorber()
 Once you have extracted the graphics, you can move them to a different position on the same page. Here’s how you can achieve this:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MoveGraphics()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create a GraphicsAbsorber instance using 'using' block
+        // Create a GraphicsAbsorber instance 
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Select the first page of the document
@@ -155,7 +159,7 @@ private static void MoveGraphics()
             graphicsAbsorber.ResumeUpdate();
         }
 
-        // Save the modified document
+        // Save the document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -172,12 +176,14 @@ There are scenarios where you might want to remove specific graphics from a page
 ### Method 1: Using Rectangle Boundary
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void RemoveGraphicsMethod1()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open the document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create an instance of GraphicsAbsorber using 'using' block
@@ -210,7 +216,7 @@ private static void RemoveGraphicsMethod1()
             graphicsAbsorber.ResumeUpdate();
         }
 
-        // Save the modified document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -219,12 +225,14 @@ private static void RemoveGraphicsMethod1()
 ### Method 2: Using a Collection of Removed Elements
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void RemoveGraphicsMethod2()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create an instance of GraphicsAbsorber using 'using' block
@@ -258,7 +266,7 @@ private static void RemoveGraphicsMethod2()
             page.Contents.ResumeUpdate();
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -274,15 +282,17 @@ Graphics absorbed from one page can be added to another page within the same doc
 ### Method 1: Adding Graphics Individually
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddToAnotherPageMethod1()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create a GraphicsAbsorber instance using 'using' block
+        // Create a GraphicsAbsorber instance 
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first and second pages
@@ -305,7 +315,7 @@ private static void AddToAnotherPageMethod1()
             page2.Contents.ResumeUpdate();
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -314,15 +324,17 @@ private static void AddToAnotherPageMethod1()
 ### Method 2: Adding Graphics as a Collection
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddToAnotherPageMethod2()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create a GraphicsAbsorber instance using 'using' block
+        // Create a GraphicsAbsorber instance
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first and second pages
@@ -342,7 +354,7 @@ private static void AddToAnotherPageMethod2()
             page2.Contents.ResumeUpdate();
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }

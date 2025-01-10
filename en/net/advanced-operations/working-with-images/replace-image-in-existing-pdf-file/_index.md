@@ -86,7 +86,8 @@ The Images collection can be found in a page's Resources collection. To replace 
 The following code snippet shows you how to replace an image in a PDF file.
 
 ```csharp
-// Open document
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ReplaceImageInPDF()
 {
     // The path to the documents directory

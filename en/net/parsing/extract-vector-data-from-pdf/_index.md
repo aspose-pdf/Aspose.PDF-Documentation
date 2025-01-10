@@ -83,12 +83,14 @@ The next code snippet creates a new Document object using some input data, initi
 It retrieves various properties of the second graphic element, such as its associated operators, rectangle, and position.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ProcessGraphicsInPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate a new GraphicsAbsorber object to process graphic elements
@@ -118,12 +120,14 @@ private static void ProcessGraphicsInPDF()
 For extraction of Vector Data from PDF, we can use SVG extractor:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SaveVectorGraphicsFromPage()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
     {
         // Save vector graphics from the first page to an SVG file
@@ -135,6 +139,8 @@ private static void SaveVectorGraphicsFromPage()
 ### Extract all subpaths to images separately
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractAllSubpathsToImagesSeparately()
 {
     // The path to the documents directory
@@ -149,7 +155,7 @@ private static void ExtractAllSubpathsToImagesSeparately()
         ExtractEverySubPathToSvg = true
     };
 
-    // Open document using 'using' block
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
     {
         // Get the first page of the document
@@ -166,6 +172,8 @@ private static void ExtractAllSubpathsToImagesSeparately()
 ### Extract list of elements to single image
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractListOfElementsToSingleImage()
 {
     // The path to the documents directory
@@ -179,7 +187,7 @@ private static void ExtractListOfElementsToSingleImage()
 
     // Example: Fill elements list with needed graphic elements (implement your logic here)
 
-    // Open document using 'using' block
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
     {
         // Get the first page of the document
@@ -197,6 +205,8 @@ private static void ExtractListOfElementsToSingleImage()
 ### Extract single element
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractSingleElement()
 {
     // The path to the documents directory
@@ -205,7 +215,7 @@ private static void ExtractSingleElement()
     // Path to the directory where SVGs will be saved
     var svgDirPath = dataDir + "SvgOutput/";
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
     {
         // Create a GraphicsAbsorber object to extract graphic elements

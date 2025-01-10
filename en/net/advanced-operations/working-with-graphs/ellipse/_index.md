@@ -84,6 +84,8 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 Aspose.PDF for .NET supports to add [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse) objects to PDF documents. It also offers the feature to fill ellipse  object with a certain color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void Ellipse()
 {
     // The path to the document directory
@@ -133,6 +135,8 @@ private static void Ellipse()
 The following code snippet shows how to add a [Ellipse](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/ellipse)  object that is filled with color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void EllipseFilled()
 {
     // The path to the document directory
@@ -187,6 +191,8 @@ private static void EllipseFilled()
 Aspose.PDF for .NET supports to add text inside the Graph Object. Text property of Graph Object provides option to set text of the Graph Object. The following code snippet shows how to add text inside a Rectangle object.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void EllipseWithText()
 {
     // The path to the document directory

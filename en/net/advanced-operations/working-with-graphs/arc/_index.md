@@ -94,6 +94,8 @@ Follow the steps below:
 The following code snippet shows how to add a [Arc](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/arc) object.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void Arc()
 {
     // The path to the document directory
@@ -154,6 +156,8 @@ private static void Arc()
 Next example shows how to add a Arc object that is filled with color and certain dimensions.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ArcFilled()
 {
     // The path to the document directory

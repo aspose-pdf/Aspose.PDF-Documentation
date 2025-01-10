@@ -117,7 +117,7 @@ The following code snippet shows how to get each watermark on the first page of 
 private static void AddWatermarks()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddWatermarksInput.pdf"))
     {
         // Create a new watermark artifact
@@ -138,7 +138,7 @@ private static void AddWatermarks()
         artifact.IsBackground = true;
         // Add watermark artifact to the first page
         document.Pages[1].Artifacts.Add(artifact);
-        // Save document
+        // Save the document
         document.Save(dataDir + "AddWatermarks_out.pdf");
     }
 }

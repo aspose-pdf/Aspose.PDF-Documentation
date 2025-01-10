@@ -78,11 +78,13 @@ draft: false
 [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class allows you to add text stamp on all the pages of a PDF file. In order to add text stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes. You also need to create the text stamp using [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. You can set other attributes like origin, rotation, background etc. using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) object as well. Then you can add the stamp in the PDF file using [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. Finally, save the output PDF file using [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. The following code snippet shows you how to add text stamp on all pages in a PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddTextStampOnAllPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -105,7 +107,7 @@ private static void AddTextStampOnAllPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file with '_out' suffix
+        // Save the document
         fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
     }
 }
@@ -116,11 +118,13 @@ private static void AddTextStampOnAllPagesInPdfFile()
 [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class allows you to add text stamp on particular pages of a PDF file. In order to add text stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes. You also need to create the text stamp using [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. You can set other attributes like origin, rotation, background etc. using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) object as well. As you want to add text stamp on particular pages of the PDF file, you also need to set the  [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) property of the [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. This property requires an integer array containing numbers of the pages on which you want to add the stamp. Then you can add the stamp in the PDF file using [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. Finally, save the output PDF file using [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. The following code snippet shows you how to add text stamp on particular pages in a PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddTextStampOnParticularPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -145,7 +149,7 @@ private static void AddTextStampOnParticularPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file with '_out' suffix
+        // Save the document
         fileStamp.Save(dataDir + "AddTextStamp-Page_out.pdf");
     }
 }
@@ -156,11 +160,13 @@ private static void AddTextStampOnParticularPagesInPdfFile()
 [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class allows you to add image stamp on all the pages of a PDF file. In order to add image stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes. You also need to create the image stamp using [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. You can set other attributes like origin, rotation, background etc. using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) object as well. Then you can add the stamp in the PDF file using [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. Finally, save the output PDF file using [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. The following code snippet shows you how to add image stamp on all pages in a PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImageStampOnAllPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Open Document
@@ -179,7 +185,7 @@ private static void AddImageStampOnAllPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file with '_out' suffix
+        // Save the document
         fileStamp.Save(dataDir + "AddImageStamp-Page_out.pdf");
     }
 }
@@ -194,6 +200,8 @@ When adding Image as stamp object, you can also control the quality of image. In
 [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class allows you to add image stamp on particular pages of a PDF file. In order to add image stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes. You also need to create the image stamp using [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. You can set other attributes like origin, rotation, background etc. using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) object as well. As you want to add image stamp on particular pages of the PDF file, you also need to set the [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) property of the [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class. This property requires an integer array containing numbers of the pages on which you want to add the stamp. Then you can add the stamp in the PDF file using [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. Finally, save the output PDF file using [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) method of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) class. The following code snippet shows you how to add image stamp on particular pages in a PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddImageStampOnParticularPagesInPdfFile()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -214,7 +222,7 @@ private static void AddImageStampOnParticularPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save updated PDF file with '_out' suffix
+        // Save the document
         fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
     }
 }

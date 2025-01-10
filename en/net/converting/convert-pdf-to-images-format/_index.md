@@ -155,11 +155,13 @@ Aspose.PDF for .NET explain how to convert all pages in a PDF file to a single T
 The following code snippet shows how to convert all the PDF pages to a single TIFF image.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertPDFtoTIFF()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTIFF.pdf"))
     {
         // Create Resolution object
@@ -194,11 +196,13 @@ Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF 
 3. Call the overloaded **TiffDevice.Process()** method with **fromPage** and **toPage** parameters to convert PDF document pages to TIFF.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertPDFtoTiffSinglePage()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTiffSinglePage.pdf"))
     {
         // Create Resolution object
@@ -226,11 +230,13 @@ private static void ConvertPDFtoTiffSinglePage()
 Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using LZW compression and then with the use of AForge, Binarization can be applied. However one of the customers requested that for some images, they need to get the Threshold using Otsu, so they also would like to use Bradley.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertPDFtoTiffBradleyBinarization()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTiffBradleyBinarization.pdf"))
     {
         string outputImageFile = dataDir + "PDFtoTiffBradleyBinarization_out.tif";
@@ -305,7 +311,9 @@ The following steps and code snippet in C# shows this possibility
 3. Call the **ImageDevice.Process()** method to perform PDF to Image conversion.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 // BMP, JPEG, GIF, PNG, EMF
+
 private static void ConvertPDFusingImageDevice()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -318,7 +326,7 @@ private static void ConvertPDFusingImageDevice()
     var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
     var emfDevice = new Aspose.Pdf.Devices.EmfDevice(resolution);
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ConvertAllPagesToBmp.pdf"))
     {
         ConvertPDFtoImage(bmpDevice, "bmp", document, dataDir);
@@ -382,11 +390,13 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 3. Call the **Document.Save()** method and pass it **SvgSaveOptions** object convert the PDF document to SVG.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertPDFtoSVG()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load PDF document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoSVG.pdf"))
     {
         // Instantiate an object of SvgSaveOptions
@@ -397,7 +407,7 @@ private static void ConvertPDFtoSVG()
             TreatTargetFileNameAsDirectory = true                
         };
 
-        // Save the output in SVG files
+        // Save the document
         document.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
     }
 }

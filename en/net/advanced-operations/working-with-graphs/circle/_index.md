@@ -92,6 +92,8 @@ Follow the steps below:
 1. Save our PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void Circle()
 {
     // The path to the document directory
@@ -137,6 +139,8 @@ Our drawn circle will look like this:
 This example shows how to add a Circle object that is filled with color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CircleFilled()
 {
     // The path to the document directory

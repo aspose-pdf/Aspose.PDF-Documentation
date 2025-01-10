@@ -98,6 +98,8 @@ Follow the steps below:
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddLineObjectToPDF()
 {
     // The path to the document directory
@@ -136,6 +138,8 @@ private static void AddLineObjectToPDF()
 ## How to add Dotted Dashed Line to your PDF document
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void DashLengthInBlackAndDashLengthInWhite()
 {
     // The path to the document directory
@@ -185,6 +189,8 @@ We can also use line object to draw a cross starting from Left-Bottom to Right-U
 Please take a look over following code snippet to accomplish this requirement.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExampleLineAcrossPage()
 {
     // The path to the document directory

@@ -97,7 +97,7 @@ private static void AddHeaderText()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextinHeader.pdf"))
     {
         // Create header as a TextStamp
@@ -114,7 +114,7 @@ private static void AddHeaderText()
             page.AddStamp(textStamp);
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "TextinHeader_out.pdf");
     }
 }
@@ -138,7 +138,7 @@ private static void AddFooterText()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextinFooter.pdf"))
     {
         // Create footer as a TextStamp
@@ -155,7 +155,7 @@ private static void AddFooterText()
             page.AddStamp(textStamp);
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "TextinFooter_out.pdf");
     }
 }
@@ -179,7 +179,7 @@ private static void AddImageHeader()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageinHeader.pdf"))
     {
         // Create header as an ImageStamp
@@ -196,7 +196,7 @@ private static void AddImageHeader()
             page.AddStamp(imageStamp);
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "ImageinHeader_out.pdf");
     }
 }
@@ -220,7 +220,7 @@ private static void AddImageFooter()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageInFooter.pdf"))
     {
         // Create footer as an ImageStamp
@@ -237,7 +237,7 @@ private static void AddImageFooter()
             page.AddStamp(imageStamp);
         }
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "ImageInFooter_out.pdf");
     }
 }
@@ -255,7 +255,7 @@ private static void AddDifferentHeaders()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
 
-    // Open source document using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))
     {
         // Create three stamps
@@ -287,7 +287,7 @@ private static void AddDifferentHeaders()
         document.Pages[2].AddStamp(stamp2);
         document.Pages[3].AddStamp(stamp3);
 
-        // Save the updated document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "MultiHeader_out.pdf");
     }
 }

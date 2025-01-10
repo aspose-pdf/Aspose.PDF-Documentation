@@ -85,15 +85,17 @@ Vector graphics are a crucial component of many PDF documents, used to represent
 The first step in working with vector graphics is to extract them from a PDF document. Here’s how you can do it using the `GraphicsAbsorber` class:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void UsingGraphicsAbsorber()
 {
     // Path to the document
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Step 1: Create a Document object using 'using' block to ensure proper disposal
+    // Step 1: Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
     {
-        // Step 2: Create an instance of GraphicsAbsorber using 'using' block
+        // Step 2: Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Select the first page of the document
@@ -127,15 +129,17 @@ private static void UsingGraphicsAbsorber()
 Once you have extracted the graphics, you can move them to a different position on the same page. Here’s how you can achieve this:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MoveGraphics()
 {
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "MoveGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -157,7 +161,7 @@ private static void MoveGraphics()
             // Resume updates and apply changes
             graphicsAbsorber.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "MoveGraphics_out.pdf");
         }
     }
@@ -177,15 +181,17 @@ There are scenarios where you might want to remove specific graphics from a page
 ### Method 1: Using Rectangle Boundary
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void RemoveGraphicsMethod1()
 {
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Open the document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -212,7 +218,7 @@ private static void RemoveGraphicsMethod1()
             // Resume updates and apply changes
             graphicsAbsorber.ResumeUpdate();
 
-            // Save the modified document
+            // Save the document
             document.Save(dataDir + "RemoveGraphics_out.pdf");
         }
     }
@@ -222,15 +228,17 @@ private static void RemoveGraphicsMethod1()
 ### Method 2: Using a Collection of Removed Elements
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void RemoveGraphicsMethod2()
 {
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))  // Renamed to method name
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -260,7 +268,7 @@ private static void RemoveGraphicsMethod2()
             // Resume updates and apply changes
             page.Contents.ResumeUpdate();
 
-            // Save the modified document with '_out' suffix
+            // Save the document
             document.Save(dataDir + "RemoveGraphics_out.pdf");
         }
     }
@@ -279,15 +287,17 @@ Graphics absorbed from one page can be added to another page within the same doc
 ### Method 1: Adding Graphics Individually
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddToAnotherPageMethod1()
 {
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))  // Renamed to method name
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the pages from the document
@@ -309,7 +319,7 @@ private static void AddToAnotherPageMethod1()
             // Resume updates and apply changes
             page2.Contents.ResumeUpdate();
 
-            // Save the modified document with '_out' suffix
+            // Save the document
             document.Save(dataDir + "AddToAnotherPage_out.pdf");
         }
     }
@@ -319,15 +329,17 @@ private static void AddToAnotherPageMethod1()
 ### Method 2: Adding Graphics as a Collection
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddToAnotherPageMethod2()
 {
     // Path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))  // Renamed to method name
+    // Open the document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create an instance of GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the pages from the document
@@ -346,7 +358,7 @@ private static void AddToAnotherPageMethod2()
             // Resume updates and apply changes
             page2.Contents.ResumeUpdate();
 
-            // Save the modified document with '_out' suffix
+            // Save the document
             document.Save(dataDir + "AddToAnotherPage_out.pdf");
         }
     }

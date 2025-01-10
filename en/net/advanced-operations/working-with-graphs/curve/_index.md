@@ -98,6 +98,8 @@ Follow the steps below:
 1. Save our PDF file.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExampleCurve()
 {
     // The path to the document directory
@@ -147,6 +149,8 @@ The following picture shows the result executed with our code snippet:
 This example shows how to add a Curve object that is filled with color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CurveFilled()
 {
     // The path to the document directory
