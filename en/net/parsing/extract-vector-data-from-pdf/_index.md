@@ -83,6 +83,8 @@ The next code snippet creates a new Document object using some input data, initi
 It retrieves various properties of the second graphic element, such as its associated operators, rectangle, and position.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ProcessGraphicsInPDF()
 {
     // The path to the documents directory
@@ -118,6 +120,8 @@ private static void ProcessGraphicsInPDF()
 For extraction of Vector Data from PDF, we can use SVG extractor:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SaveVectorGraphicsFromPage()
 {
     // The path to the documents directory
@@ -135,6 +139,8 @@ private static void SaveVectorGraphicsFromPage()
 ### Extract all subpaths to images separately
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractAllSubpathsToImagesSeparately()
 {
     // The path to the documents directory
@@ -166,6 +172,8 @@ private static void ExtractAllSubpathsToImagesSeparately()
 ### Extract list of elements to single image
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractListOfElementsToSingleImage()
 {
     // The path to the documents directory
@@ -197,6 +205,8 @@ private static void ExtractListOfElementsToSingleImage()
 ### Extract single element
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ExtractSingleElement()
 {
     // The path to the documents directory

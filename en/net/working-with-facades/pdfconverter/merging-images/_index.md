@@ -80,6 +80,8 @@ Follow the next code snippet for resolve your task:
 ## Merge Images
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MergeImages01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Updated to use dynamic path
@@ -103,6 +105,8 @@ private static void MergeImages01()
 The second example works the same as the previous one, but the merged images will be saved horizontally.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MergeImages02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -128,6 +132,8 @@ private static void MergeImages02()
 In the third example, we will merge the pictures by centering them. Two horizontally, two vertically.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MergeImages03()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -153,6 +159,8 @@ private static void MergeImages03()
 Also, Aspose.PDF for Java present you the opportunity to combine pictures and save them in the Tiff format, using  [MergeImagesAsTiff Method](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#saveAsTIFF-java.io.OutputStream-).
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MergeImages04()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -178,6 +186,8 @@ private static void MergeImages04()
 To save the merged images as one image on PDF page, we place them in the imageStream, place the result on the page with addImage method, where we specify the coordinates where we want to place them.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void MergeImages05()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -204,7 +214,7 @@ private static void MergeImages05()
         // Add the image from the MemoryStream to the page
         page.AddImage(outputStream, new Aspose.Pdf.Rectangle(10, 120, 400, 720));
 
-        // Save the document with '_out' suffix
+        // Save the document
         document.Save(dataDir + "MergeImages_out.pdf");
     }
 }

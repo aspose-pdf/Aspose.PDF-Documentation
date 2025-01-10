@@ -193,6 +193,8 @@ Aspose.PDF for .NET supports the feature to add graph objects to PDF documents a
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with Gradient Color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CreateFilledRectangleGradientFill()
 {
     // Path to the document directory
@@ -245,6 +247,8 @@ Pixels of the image can store information about their opacity along with color v
 Instead of making a color transparent, each pixel stores information on how opaque it is. This opacity data is called alpha channel and is typically stored after the color channels of the pixel.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void RectangleFilled_AlphaChannel()
 {
     // Path to the document directory
@@ -301,6 +305,8 @@ Aspose.PDF for .NET supports the feature to add graph objects (for example graph
 The following code snippet shows the steps to render [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) objects on top of each other.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void AddRectangleZOrder()
 {
     // Path to the document directory

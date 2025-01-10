@@ -110,6 +110,8 @@ Once Adobe Acrobat is installed, use regedit.exe and look under HKEY_CLASSES_ROO
 ![todo:image_alt_text](generate-thumbnail-images-from-pdf-documents_1.png)
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GenerateThumbnailImagesFromPDF()
 {
     // Acrobat objects
@@ -204,6 +206,8 @@ Aspose.PDF has distinct benefits:
 If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://reference.aspose.com/pdf/net/aspose.pdf.devices) namespace provides a class named [JpegDevice](https://reference.aspose.com/pdf/net/aspose.pdf.devices/jpegdevice) for rendering PDF pages into JPEG images. Please take a look over the following code snippet.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GenerateThumbnailImagesFromPDF()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET

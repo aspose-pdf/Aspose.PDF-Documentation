@@ -78,6 +78,8 @@ draft: false
 In order to convert PDF pages to different image formats, you need to create [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) object and open the PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, you need to call [DoConvert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) method for initialization tasks. Then, you can loop through all the pages using [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) and [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) methods. The [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) method allows you to create image of a particular page. You also need to pass ImageFormat to this method in order to create an image of specific type i.e. JPEG, GIF or PNG etc. Finally, call the [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) method of the [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) class. The following code snippet shows you how to convert PDF pages to images.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertPdfPagesToImages01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -99,8 +101,6 @@ private static void ConvertPdfPagesToImages01()
             // Convert the page to image and save it
             converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
-
-        // The converter will be automatically disposed at the end of the 'using' block
     }
 }
 ```
@@ -108,6 +108,8 @@ private static void ConvertPdfPagesToImages01()
 In the next code snippet, we will show how you can change some parameters. With [CoordinateType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/coordinatetype) we set the frame 'CropBox'. Also, we can change [Resolution](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/resolution) specifying the number of dots per inch. The next one [FormPresentationMode](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/formpresentationmode) - form presentation mode. Then we indicate the [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/startpage) with which the page number of the beginning of the conversion is set. We can also specify the last page by setting a range.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void ConvertPdfPagesToImages02()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
@@ -130,13 +132,11 @@ private static void ConvertPdfPagesToImages02()
         // Check if pages exist and then convert to image one by one
         while (converter.HasNextImage())
         {
-            // Generate output file name with '_out' suffix
+            // Generate output file name
             var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
             // Convert the page to image and save it
             converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
-
-        // The converter will be automatically disposed at the end of the 'using' block
     }
 }
 ```

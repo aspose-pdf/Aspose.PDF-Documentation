@@ -83,7 +83,7 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+
 private static void ExtractAndScaleImagesFromPDF()
 {
     // The path to the documents directory
