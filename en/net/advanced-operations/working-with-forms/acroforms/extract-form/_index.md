@@ -175,7 +175,7 @@ private static void GetFieldsFromRegion()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open pdf file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
 	{
 		// Create rectangle object to get fields in that area

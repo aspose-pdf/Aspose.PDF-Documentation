@@ -100,7 +100,7 @@ draft: false
          formEditor.AddListItem("Country", "France");
          formEditor.AddListItem("Country", "Spain");
 
-         // Save the updated PDF with the list items added
+         // Save PDF document
          formEditor.Save(dataDir + "Sample-Form-01-mod.pdf");
      }
  }
@@ -126,7 +126,7 @@ draft: false
          // Delete the list item "France" from the 'Country' ListBox field
          formEditor.DelListItem("Country", "France");
 
-         // Save the updated PDF with the list item removed
+         // Save PDF document
          formEditor.Save(dataDir + "Sample-Form-04-mod.pdf");
      }
  }

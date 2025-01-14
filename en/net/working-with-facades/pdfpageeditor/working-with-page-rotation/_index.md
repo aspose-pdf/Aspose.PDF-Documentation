@@ -103,7 +103,7 @@ To rotate pages in document we can use [PageRotations](https://reference.aspose.
              { 3, 270 }
          };
 
-         // Save the modified PDF
+         // Save PDF document
          editor.Save(dataDir + "sample-rotate-a.pdf");
      }
  }
@@ -128,7 +128,7 @@ private static void RotatePages2()
         editor.ProcessPages = new int[] { 1, 3 };
         editor.Rotation = 90;
 
-        // Save the modified PDF
+        // Save PDF document
         editor.Save(dataDir + "sample-rotate-a.pdf");
     }
 }

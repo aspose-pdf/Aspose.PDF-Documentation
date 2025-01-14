@@ -199,7 +199,7 @@ private static void ArcFilled()
         // Add Graph object to the paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save the PDF file
+        // Save PDF document
         document.Save(dataDir + "ExampleFilledArc_out.pdf");
     }
 }

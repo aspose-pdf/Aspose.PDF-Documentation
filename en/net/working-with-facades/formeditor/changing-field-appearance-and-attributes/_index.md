@@ -113,7 +113,7 @@ draft: false
              // Set a character limit for the field (maximum 20 characters)
              formEditor.SetFieldLimit("text1", 20);
 
-             // Save the modified PDF with the added field and attributes
+             // Save PDF document
              formEditor.Save(dataDir + "ChangingFieldAppearance_out.pdf");
          }
      }

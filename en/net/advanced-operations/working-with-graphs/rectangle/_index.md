@@ -330,7 +330,7 @@ private static void AddRectangleZOrder()
         AddRectangle(page, 20, 20, 30, 30, Aspose.Pdf.Color.Blue, 1);
         AddRectangle(page, 40, 40, 60, 30, Aspose.Pdf.Color.Green, 0);
 
-        // Save the resultant PDF file
+        // Save PDF document file
         document.Save(dataDir + "ControlRectangleZOrder_out.pdf");
     }
 }

@@ -97,7 +97,7 @@ private static void CopyInnerField()
             // Copy the field "Last Name" from the first page to "Last Name 2" on the second page
             formEditor.CopyInnerField("Last Name", "Last Name 2", 2);
 
-            // Save the updated PDF with the copied field
+            // Save PDF document
             formEditor.Save(dataDir + "Sample-Form-01-mod.pdf");
         }
     }
@@ -133,7 +133,7 @@ private static void CopyOuterField()
             // Copy the outer field "Last Name" from the original document to the new document
             formEditor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "Last Name", 1);
 
-            // Save the updated PDF with the copied outer fields
+            // Save PDF document
             formEditor.Save(dataDir + "Sample-Form-02-mod.pdf");
         }
     }

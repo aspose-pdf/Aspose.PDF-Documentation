@@ -89,7 +89,7 @@ private static void ExtractAndScaleImagesFromPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Load the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
     {
         var abs = new Aspose.Pdf.ImagePlacementAbsorber();

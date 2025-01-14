@@ -110,7 +110,7 @@ private static void DecorateField()
         // Apply the decoration to the field named "City"
         editor.DecorateField("City");
 
-        // Save the modified PDF with the decorated field
+        // Save PDF document
         editor.Save(dataDir + "Sample-Form-02.pdf");
     }
 }
@@ -147,7 +147,7 @@ private static void DecorateField2()
         // Apply the alignment decoration to all text fields in the PDF
         editor.DecorateField(Aspose.Pdf.Facades.FieldType.Text);
 
-        // Save the modified PDF with aligned text fields
+        // Save PDF document
         editor.Save(dataDir + "Sample-Form-01-align-text.pdf");
     }
 }

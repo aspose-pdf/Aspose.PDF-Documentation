@@ -154,7 +154,7 @@ public static void SetMeteredLicense()
         "<type public key here>",
         "<type private key here>");
 
-    // Load the document from disk.
+    // Open PDF document
     Document document = new Document("input.pdf");
     //Get the page count of document
     Console.WriteLine(document.Pages.Count);
@@ -171,6 +171,7 @@ Therefore, in order to put an extra layer of security when embedding the license
 ```csharp
 License license = new License();
 license.SetLicense(GetSecureLicenseFromStream());
+// Open PDF document
 Document document = new Document("document.pdf");
 //Get the page count of document
 Console.WriteLine(document.Pages.Count);

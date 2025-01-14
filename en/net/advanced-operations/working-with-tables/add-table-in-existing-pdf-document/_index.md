@@ -501,7 +501,7 @@ for (int counter = 0; counter <= 200; counter++)
 // Add table to paragraphs collection of PDF file
 document.Pages[1].Paragraphs.Add(tab);
 
-// Save the PDF document
+// Save PDF document
 document.Save(dataDir + "InsertPageBreak_out.pdf");
 ```
 

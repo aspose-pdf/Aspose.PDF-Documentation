@@ -97,7 +97,7 @@ private static void AddField()
         // Set a character limit for the "Country" field to 20 characters
         editor.SetFieldLimit("Country", 20);
 
-        // Save the modified PDF with the added field
+        // Save PDF document
         editor.Save(dataDir + "Sample-Form-01-mod.pdf");
     }
 }
@@ -125,7 +125,7 @@ private static void AddField()
          // and the coordinates of the button (left, bottom, right, top)
          editor.AddSubmitBtn("Submit", 1, "Submit", "http://localhost:3000", 232.56f, 466.75f, 352.28f, 484.03f);
 
-         // Save the modified PDF with the added submit button
+         // Save PDF document
          editor.Save(dataDir + "Sample-Form-01-mod.pdf");
      }
  }
@@ -151,7 +151,7 @@ private static void AddFieldScript()
         // The script displays an alert box with the message "Only one last name"
         editor.AddFieldScript("Last Name", "app.alert(\"Only one last name\",3);");
 
-        // Save the modified PDF with the added script
+        // Save PDF document
         editor.Save(dataDir + "Sample-Form-01-mod.pdf");
     }
 }

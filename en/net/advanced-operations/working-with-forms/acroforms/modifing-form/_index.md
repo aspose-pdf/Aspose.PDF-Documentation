@@ -100,7 +100,7 @@ private static void SetFieldLimit()
         // Set field limit for "textbox1"
         form.SetFieldLimit("textbox1", 15);
 
-        // Save the updated PDF
+        // Save PDF document
         form.Save(dataDir + "SetFieldLimit_out.pdf");
     }
 }
@@ -201,7 +201,7 @@ private static void DeleteFormField()
 		// Delete a particular field by name
 		document.Form.Delete("textbox1");
 
-		// Save modified document
+		// Save PDF document
 		document.Save(dataDir + "DeleteFormField_out.pdf");
 	}
 }

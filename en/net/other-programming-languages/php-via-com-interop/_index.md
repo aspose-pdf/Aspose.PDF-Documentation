@@ -101,7 +101,7 @@ $helper = new COM("Aspose.Pdf.ComHelper");
 
 $pdf = $helper->OpenFile($input);
 
-// Save the PDF document  to desired file format by passing  SaveFormat enum value for the format in this case we pass 9 for excel.
+// Save PDF document to desired file format by passing  SaveFormat enum value for the format in this case we pass 9 for excel.
 
 $output = "C:/temp/test_php.xls";
 $pdf->Save_4($output,9);
