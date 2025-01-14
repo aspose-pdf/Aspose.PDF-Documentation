@@ -134,7 +134,7 @@ private static void GenerateThumbnailImagesFromPDF()
         string inputFile = files[n];
         string outputFile = Path.Combine(pngOutputPath, Path.GetFileNameWithoutExtension(inputFile) + ".png");
 
-        // Create the document
+        // Create PDF document
         pdfDoc = (Acrobat.CAcroPDDoc)Microsoft.VisualBasic.Interaction.CreateObject("AcroExch.PDDoc", "");
 
         if (pdfDoc.Open(inputFile) == 0)

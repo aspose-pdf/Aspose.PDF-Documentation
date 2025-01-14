@@ -90,7 +90,7 @@ private static void GetPdfPageProperties()
     // Open PDF document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
-        // Bind the PDF file
+        // Bind PDF document
         pageEditor.BindPdf(dataDir + "input.pdf");
 
         // Get page properties and print them to the console
@@ -186,7 +186,7 @@ The following code snippet shows how to resize the contents of some specific pag
          // Resize Page Contents
          fileEditor.ResizeContents(document, new[] { 1, 2 }, parameters);
 
-         // Save PDF document into a new location
+         // Save PDF document
          document.Save(dataDir + "ResizePageContents_out.pdf");
      }
  }

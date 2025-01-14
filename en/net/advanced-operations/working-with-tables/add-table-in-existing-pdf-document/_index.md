@@ -264,7 +264,7 @@ Aspose.Pdf.Row row2 = tab1.Rows.Add();
 row2.Cells.Add("item1");
 row2.Cells.Add("item2");
 row2.Cells.Add("item3");
-// Save the Pdf
+// Save PDF document
 document.Save(dataDir + "MarginsOrPadding_out.pdf");
 ```
 

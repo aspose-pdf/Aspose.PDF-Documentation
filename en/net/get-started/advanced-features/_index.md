@@ -126,7 +126,7 @@ private static void LatexWithoutPreambleAndDocEnvironment()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add Page in Pages Collection
@@ -158,7 +158,7 @@ private static void LatexWithPreambleAndDocEnvironment()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add Page in Pages Collection

@@ -91,7 +91,7 @@ private static void TextFormattingInsidePdf()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -137,7 +137,7 @@ private static void AddTextBorder()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -173,7 +173,7 @@ private static void AddUnderlineText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add age page to PDF document
@@ -244,7 +244,7 @@ private static void AddNewLine()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -291,7 +291,7 @@ private static void AddStrikeoutText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -367,7 +367,7 @@ private static void AlignTextToFloat()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();

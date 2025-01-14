@@ -91,7 +91,7 @@ private static void RotateTextInsidePDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -137,7 +137,7 @@ private static void RotateTextInsidePDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -186,7 +186,7 @@ private static void RotateTextInsidePDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -228,7 +228,7 @@ private static void RotateTextInsidePDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page

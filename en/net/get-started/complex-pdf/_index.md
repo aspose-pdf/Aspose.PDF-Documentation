@@ -102,7 +102,7 @@ private static void CreatingAComplexPdf()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page

@@ -89,7 +89,7 @@ private static void AddTooltipToSearchedText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
@@ -169,7 +169,7 @@ private static void CreateHiddenTextBlock()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add paragraph with text

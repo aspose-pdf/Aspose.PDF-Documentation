@@ -102,7 +102,7 @@ private static void CreateHelloWorldDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
@@ -125,6 +125,7 @@ Following is complete code to accomplish this requirement:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CreateSearchableDocument()
 {
     // The path to the documents directory
@@ -221,6 +222,7 @@ Steps to creating an accessible PDF:
 
 ```cs
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void CreateAnAccessibleDocument()
 {
     // The path to the documents directory

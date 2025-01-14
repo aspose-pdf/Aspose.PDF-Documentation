@@ -86,7 +86,7 @@ The Floating Box tool is a special tool for placing text and other content on a 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateAndAddFloatingBox()
 {
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -134,7 +134,7 @@ private static void MultiColumnLayout()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
@@ -188,7 +188,7 @@ private static void MultiColumnLayout2()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
@@ -242,7 +242,7 @@ You can set desired background color by using `BackgroundColor` property.
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void BackgroundSupport()
 {
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -274,7 +274,7 @@ When the `PositioningMode` value is
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OffsetSupport()
 {
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page

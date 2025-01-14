@@ -89,7 +89,7 @@ private static void DetermineLineBreak()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Page page = document.Pages.Add();

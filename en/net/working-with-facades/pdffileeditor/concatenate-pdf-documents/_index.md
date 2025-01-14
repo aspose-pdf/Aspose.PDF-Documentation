@@ -387,7 +387,7 @@ private static void CreateLocalLinks()
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Now we need to add Heading for Table Of Contents and links for documents
     var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
-    // Bind the PDF file in which we added the blank page
+    // Bind PDF document in which we added the blank page
     contentEditor.BindPdf(dataDir + "ConcatenatePdfFilesAndCreateTOC_out.pdf");
     // Create link for first document
     contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);
@@ -473,7 +473,7 @@ private static void CompleteCode()
 
                     // Now we need to add Heading for Table Of Contents and links for documents
                     var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
-                    // Bind the PDF file in which we added the blank page
+                    // Bind PDF document in which we added the blank page
                     contentEditor.BindPdf(documentWithTocHeading);
                     // Create link for first document
                     contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);

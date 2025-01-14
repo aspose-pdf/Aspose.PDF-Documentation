@@ -238,8 +238,9 @@ The following code snippet shows how to convert DICOM files to PDF format with A
 
 private static void ConvertDICOMtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // Create the document 
+    // Create PDF document 
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a page to pages collection of document
@@ -283,8 +284,9 @@ Moreover, the following code snippet shows how to convert an EMF to PDF with C# 
 
 private static void ConvertEMFtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // Create the document 
+    // Create PDF document 
     using (var document = new Aspose.Pdf.Document())
     {
         // Spcify path of input EMF image file
@@ -337,7 +339,9 @@ So the following code snippet follows these steps and shows how to convert BMP t
 
 private static void ConvertGIFtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         //Initialize empty PDF document
@@ -381,8 +385,9 @@ The code snippet below shows how to convert JPG Image to PDF using C#:
 
 private static void ConvertJPGtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // Create the document 
+    // Create PDF document 
     using (var document = new Aspose.Pdf.Document())
     {
         // Load input JPG file
@@ -414,7 +419,9 @@ Following code snippet shows how to convert an Image to PDF with same page heigh
 
 private static void ConvertJPGtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var path = dataDir + "JPGtoPDF.jpg";
@@ -470,7 +477,9 @@ Moreover, the code snippet below shows how to convert PNG to PDF with C# in your
 
 private static void ConvertPNGtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Load input PNG file
@@ -535,10 +544,13 @@ The following code snippet shows the process of converting SVG file into PDF for
 
 private static void ConvertSVGtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     var option = new Aspose.Pdf.SvgLoadOptions();
+    // Open SVG file 
     using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", option))
     {
+        // Save PDF document
         document.Save(dataDir + "SVGtoPDF_out.pdf");
     }
 }
@@ -555,11 +567,11 @@ The following code snippet shows the process of getting the source SVG file's di
 
 private static void ConvertSVGtoPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     var loadopt = new Aspose.Pdf.SvgLoadOptions();
     loadopt.AdjustPageSize = true;
+    // Open SVG file
     using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", loadopt))
     {
         document.Pages[1].PageInfo.Margin.Top = 0;
@@ -776,8 +788,9 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 private static void ConvertTIFFtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    //Initialize empty PDF document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
@@ -787,7 +800,7 @@ private static void ConvertTIFFtoPDF()
         image.File = dataDir + "TIFFtoPDF.tiff";
         document.Pages[1].Paragraphs.Add(image);
         
-        // Save PDF document PDF document
+        // Save PDF document
         document.Save(dataDir + "TIFFtoPDF_out.pdf");
     }
 }
@@ -808,8 +821,10 @@ The following code snippet shows how to convert multi-page or multi-frame TIFF i
 
 private static void ConvertTIFFtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         using (var bitmap = new System.Drawing.Bitmap(File.OpenRead(dataDir + "TIFFtoPDF.tif")))
@@ -840,7 +855,7 @@ private static void ConvertTIFFtoPDF()
             }
         }
 
-        // Save PDF document PDF file
+        // Save PDF document
         document.Save(dataDir + "TIFFtoPDF_out.pdf");
     }
 }
@@ -863,9 +878,12 @@ Check next code snippet for converting CDR files to PDF format.
 
 private static void ConvertCDRtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Open CDR file
     using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.cdr", new CdrLoadOptions()))
     {
+        // Save PDF document
         document.Save(dataDir + "CDRtoPDF_out.pdf");
     }
 }
@@ -888,10 +906,13 @@ Check next code snippet for converting DJVU files to PDF format.
 
 private static void ConvertDJVUtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
+    // Open DJVU file
     using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.djvu", new DjvuLoadOptions()))
     {
+        // Save PDF document
         document.Save(dataDir + "CDRtoPDF_out.pdf");
     }
 }
@@ -908,8 +929,10 @@ Convert HEIC images to PDF using Aspose.PDF:
 
 private static void ConvertHEICtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
+    // Open HEIC file
     using (var fs = new FileStream(dataDir + "HEICtoPDF.heic", FileMode.Open))
     {
         var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
@@ -930,6 +953,7 @@ private static void ConvertHEICtoPDF()
             page.PageInfo.Margin.Left = 0;
 
             page.Paragraphs.Add(asposeImage);
+            // Save PDF document
             document.Save(dataDir + "HEICtoPDF_out.pdf");
         }
     }

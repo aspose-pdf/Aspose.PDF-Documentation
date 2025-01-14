@@ -279,7 +279,7 @@ private static void ConvertPdfToMobiXml()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
     {
         // Save PDF document in XML format

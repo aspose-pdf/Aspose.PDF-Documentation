@@ -1978,7 +1978,7 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
     };
     // Sign the PDF file
     pdfSign.Sign(1, true, rect, pkcs);
-    // Save PDF document PDF file
+    // Save PDF document
     pdfSign.Save(outFile);
 }
 ```

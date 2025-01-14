@@ -105,7 +105,7 @@ private static void AddJavaScript()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF files
+    // Open PDF documents
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Adding JavaScript at Document Level
@@ -135,7 +135,7 @@ private static void AddJavaScript()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF files
+    // Open PDF documents
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Adding JavaScript at Document Level

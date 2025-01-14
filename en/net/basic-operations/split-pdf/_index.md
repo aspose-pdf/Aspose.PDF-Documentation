@@ -112,7 +112,7 @@ private static void SplitDocument()
         // Loop through all the pages
         foreach (var page in document1.Pages)
         {
-            // Create the document
+            // Create PDF document
             using (var document2 = new Aspose.Pdf.Document())
             {
                 document2.Pages.Add(page);

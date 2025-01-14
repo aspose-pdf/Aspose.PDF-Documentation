@@ -93,7 +93,7 @@ private static void GetSignatureInfo()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open a document stream.
+    // Open a document stream
     using (var fs = new FileStream(dataDir + "blank.pdf", FileMode.Open, FileAccess.ReadWrite))
     {
         // Open PDF document from stream

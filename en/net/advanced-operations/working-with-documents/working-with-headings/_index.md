@@ -159,7 +159,7 @@ private static void ApplyNumberStyleToPdf()
 		heading3.IsAutoSequence = true;
 		floatBox.Paragraphs.Add(heading3);
 
-		// Save PDF document with the applied number style
+		// Save PDF document
 		document.Save(dataDir + "ApplyNumberStyle_out.pdf");
 	}
 }

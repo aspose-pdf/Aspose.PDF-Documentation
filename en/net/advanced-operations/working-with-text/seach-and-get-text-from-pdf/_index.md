@@ -528,7 +528,7 @@ private static void CreateAndSearchText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();

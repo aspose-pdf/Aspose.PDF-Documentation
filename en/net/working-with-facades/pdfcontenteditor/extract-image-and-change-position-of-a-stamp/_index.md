@@ -162,7 +162,7 @@ public static void ChangeStampPosition()
         // Change the position of the stamp to new x and y position
         pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
 
-        // Save the Pdf file
+        // Save PDF document
         pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
     }
 }
@@ -192,7 +192,7 @@ public static void ChangeStampPosition()
     // Change the position of the stamp to new x and y position
     pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
 
-    // Save the Pdf file
+    // Save PDF document
     pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
 }
 ```
@@ -225,7 +225,7 @@ public static void MoveStampById()
         // Change the position of the stamp to new x and y position
         pdfContentEditor.MoveStamp(pageId, stampId, x, y);
 
-        // Save the Pdf file
+        // Save PDF document
         pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
     }
 }
@@ -255,7 +255,7 @@ public static void MoveStampById()
     // Change the position of the stamp to new x and y position
     pdfContentEditor.MoveStamp(pageId, stampId, x, y);
 
-    // Save the Pdf file
+    // Save PDF document
     pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
 }
 ```

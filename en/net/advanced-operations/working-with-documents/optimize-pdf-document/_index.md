@@ -516,7 +516,7 @@ private static void ConvertRgbToGrayScale()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create RGB to DeviceGray conversion strategy

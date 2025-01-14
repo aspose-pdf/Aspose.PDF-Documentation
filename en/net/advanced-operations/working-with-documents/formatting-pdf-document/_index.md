@@ -251,7 +251,7 @@ private static void EmbedFontsType1ToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Load an existing PDF Document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
     // Set EmbedStandardFonts property of document
@@ -337,7 +337,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document with missing font
+    // Open PDF document
     using (var fs = new FileStream(dataDir + "GetDocumentWindow.pdf", FileMode.Open))
     {
         using (var document = new Aspose.Pdf.Document(fs))
@@ -367,7 +367,7 @@ private static void GetAllFontsFromPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Get all fonts used in the document
@@ -394,7 +394,7 @@ private static void NotificationFontSubstitution()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Attach the FontSubstitution event handler
@@ -437,7 +437,7 @@ private static void SetFontSubsetStrategy()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// All fonts will be embedded as subset into document in case of SubsetAllFonts.
@@ -470,7 +470,7 @@ private static void SetZoomFactor()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Instantiate new Document object
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
 	{
 		// Create GoToAction with a specific zoom factor
@@ -495,7 +495,7 @@ private static void GetZoomFactor()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Instantiate new Document object
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
 	{
 		// Create GoToAction object
@@ -552,7 +552,7 @@ private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
 
     using (var ed = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind the PDF file
+        // Bind PDF document
         ed.BindPdf(inputFile);
 
         // Check if the file has duplex flip short edge
