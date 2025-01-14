@@ -110,7 +110,7 @@ private static void InsertAnEmptyPage()
     {
        // Insert an empty page in a PDF
        document.Pages.Insert(2);
-        // Save PDF document file
+        // Save PDF document
        document.Save(dataDir + "InsertEmptyPage_out.pdf");
     }
 }
@@ -156,7 +156,7 @@ private static void InsertAnEmptyPageAtTheEnd()
     {
         // Insert an empty page at the end of a PDF file
         document.Pages.Add();
-        // Save PDF document file
+        // Save PDF document
         document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
     }
 }

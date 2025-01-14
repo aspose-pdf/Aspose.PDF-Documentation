@@ -102,7 +102,7 @@ private static void ReplaceImageInPDF()
             document.Pages[1].Resources.Images.Replace(1, imageStream);
         }
 
-        // Save the updated PDF file
+        // Save PDF document
         document.Save(dataDir + "ReplaceImage_out.pdf");
     }
 }

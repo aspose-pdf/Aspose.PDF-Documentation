@@ -159,7 +159,7 @@ private static void AddImageUsingPDFOperators()
         // Restore the graphics state using the GRestore operator
         page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 
-        // Save the updated PDF document
+        // Save PDF document
         document.Save(dataDir + "PDFOperators_out.pdf");
     }
 }
@@ -264,7 +264,7 @@ The following code snippet shows how to remove graphics. Please note that if the
           // Delete the specified operators from the page contents
           oc.Delete(operators);
 
-          // Save PDF document with the modified content
+          // Save PDF document
           document.Save(dataDir + "No_Graphics_out.pdf");
       }
   }

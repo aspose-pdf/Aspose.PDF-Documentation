@@ -90,7 +90,7 @@ private static void ChangePageOrientation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    //Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))
     {
         foreach (Page page in document.Pages)
@@ -110,7 +110,7 @@ private static void ChangePageOrientation()
             // Setting Rotation angle of page
             page.Rotate = Rotation.on90;
         }
-        // Save PDF document file
+        // Save PDF document
         document.Save(dataDir + "ChangeOrientation_out.pdf");
     }
 }

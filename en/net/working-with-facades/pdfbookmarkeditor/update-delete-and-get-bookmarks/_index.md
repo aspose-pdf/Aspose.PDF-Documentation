@@ -96,7 +96,7 @@ private static void UpdateExistingBookmark()
         // Modify the existing bookmark, assigning a new title
         bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title");
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "UpdateBookmark_out.pdf");
     }
 }
@@ -121,7 +121,7 @@ private static void UpdateExistingBookmark()
     // Modify the existing bookmark, assigning a new title
     bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title");
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "UpdateBookmark_out.pdf");
 }
 ```
@@ -151,7 +151,7 @@ private static void DeleteAllBookmarks()
         // Delete all bookmarks in the document
         bookmarkEditor.DeleteBookmarks();
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "DeleteAllBookmarks_out.pdf");
     }
 }
@@ -176,7 +176,7 @@ private static void DeleteAllBookmarks()
     // Delete all bookmarks in the document
     bookmarkEditor.DeleteBookmarks();
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "DeleteAllBookmarks_out.pdf");
 }
 ```
@@ -206,7 +206,7 @@ private static void DeleteParticularBookmark()
         // Delete a bookmark with the title "Page2"
         bookmarkEditor.DeleteBookmarks("Page2");
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "DeleteABookmark_out.pdf");
     }
 }
@@ -231,7 +231,7 @@ private static void DeleteParticularBookmark()
     // Delete a bookmark with the title "Page2"
     bookmarkEditor.DeleteBookmarks("Page2");
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "DeleteABookmark_out.pdf");
 }
 ```

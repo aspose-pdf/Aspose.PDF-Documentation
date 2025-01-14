@@ -208,7 +208,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    //Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
         // Create text for stamp
@@ -223,7 +223,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
         stamp.Height = 200;
         //Add stamp
         document.Pages[1].AddStamp(stamp);
-        //Save document
+        // Save PDF document
         document.Save(dataDir + "AutoSetTheFontSizeOfTextStamp_out.pdf");
     }
 }
@@ -249,7 +249,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
         stamp.Scale = false;
         //Add stamp
         document.Pages[1].AddStamp(stamp);
-        //Save document
+        // Save PDF document
         document.Save(dataDir + "AutoSetTheFontSizeOfTextStampToFItPage_out.pdf");
     }
 }

@@ -99,7 +99,7 @@ private static void DeletePageFromPdfFile()
     {
         // Delete a particular page
         document.Pages.Delete(2);
-        // Save updated PDF
+        // Save PDF document
         document.Save(dataDir + "DeleteParticularPage_out.pdf");
     }
 }

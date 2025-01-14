@@ -300,7 +300,7 @@ private static void CreateDocumentWithExpiryDate()
         // Set the JavaScript action to execute when the document is opened
         document.OpenAction = javaScript;
 
-        // Save the updated PDF document
+        // Save PDF document
         document.Save("PDFExpiry_out.pdf");
     }
 }
@@ -345,7 +345,7 @@ private static void CreateDocumentWithExpiryDate()
     // Set the JavaScript action to execute when the document is opened
     document.OpenAction = javaScript;
 
-    // Save the updated PDF document
+    // Save PDF document
     document.Save("PDFExpiry_out.pdf");
 }
 ```

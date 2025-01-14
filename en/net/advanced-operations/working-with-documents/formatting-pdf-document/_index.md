@@ -219,7 +219,7 @@ private static void SetDocumentWindowProperties()
 		// I.e. show thumbnails, full-screen, show attachment panel
 		document.PageMode = Aspose.Pdf.PageMode.UseThumbs;
 
-		// Save updated PDF file
+		// Save PDF document
 		document.Save(dataDir + "SetDocumentWindow_out.pdf");
 	}
 }
@@ -273,7 +273,7 @@ private static void EmbedFontsType1ToPdf()
 			}
 		}
 
-		// Save the updated PDF file
+		// Save PDF document
 		document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
 	}		
 }
@@ -348,7 +348,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
                 DefaultFontName = newName
             };
 
-            // Save PDF document with the specified save options
+            // Save PDF document
             document.Save(dataDir + "DefaultFont_out.pdf", pdfSaveOptions);
         }
     }
@@ -403,7 +403,7 @@ private static void NotificationFontSubstitution()
 			// (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
 			//                                                                        oldFont.FontName, newFont.FontName));
 
-		// Save PDF document (optional, depending on your use case)
+		// Save PDF document
 		document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
 	}
 }
@@ -446,7 +446,7 @@ private static void SetFontSubsetStrategy()
 		// Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
 		document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
 
-		// Save the updated PDF document
+		// Save PDF document
 		document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
 	}
 }
@@ -532,7 +532,7 @@ private static void SetPrintDialogPresetProperties()
         // Set duplex printing to DuplexFlipLongEdge
         document.Duplex = Aspose.Pdf.PrintDuplex.DuplexFlipLongEdge;
 
-        // Save PDF document with the specified properties
+        // Save PDF document
         document.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
     }
 }
@@ -564,7 +564,7 @@ private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
         // Change the viewer preference to duplex flip short edge
         ed.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.DuplexFlipShortEdge);
 
-        // Save the updated PDF file
+        // Save PDF document
         ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
     }
 }

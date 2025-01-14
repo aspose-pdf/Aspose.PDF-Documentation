@@ -99,7 +99,7 @@ private static void DeleteImageFromPDF()
         // Delete a particular image
         document.Pages[1].Resources.Images.Delete(1);
 
-        // Save updated PDF file
+        // Save PDF document
         document.Save(dataDir + "DeleteImages_out.pdf");
     }
 }

@@ -140,7 +140,7 @@ private static void SetPdfPageProperties()
         // Set zoom where 1.0f = 100% zoom
         pageEditor.Zoom = 2.0f;
 
-        // Save the updated PDF file
+        // Save PDF document
         pageEditor.Save(dataDir + "SetPageProperties_out.pdf");
     }
 }

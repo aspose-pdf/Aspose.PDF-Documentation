@@ -98,7 +98,7 @@ private static void DeleteAllAnnotations()
         // Delete all annoations
         annotationEditor.DeleteAnnotations();
 
-        // Save the updated PDF file
+        // Save PDF document
         annotationEditor.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
     }
 }
@@ -123,7 +123,7 @@ private static void DeleteAllAnnotations()
     // Delete all annoations
     annotationEditor.DeleteAnnotations();
 
-    // Save the updated PDF file
+    // Save PDF document
     annotationEditor.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
 }
 ```
@@ -187,7 +187,7 @@ private static void DeleteAllAnnotationByType()
             // Delete the annotation selected by the user
             annotationEditor.DeleteAnnotations(annotationTypes[index]);
 
-            // Save the updated PDF file
+            // Save PDF document
             annotationEditor.Save(dataDir + "DeleteAllAnnotationByType_out.pdf");
         }
     }
@@ -245,7 +245,7 @@ private static void DeleteAllAnnotationByType()
     // Delete the annotation selected by the user
     annotationEditor.DeleteAnnotations(annotationTypes[index]);
 
-    // Save the updated PDF file
+    // Save PDF document
     annotationEditor.Save(dataDir + "DeleteAllAnnotationByType_out.pdf");
 }
 ```
@@ -289,7 +289,7 @@ private static void DeleteAnnotationByName()
             // Delete the annotation selected by the user
             annotationEditor.DeleteAnnotation(document.Pages[1].Annotations[index].Name);
 
-            // Save the updated PDF file
+            // Save PDF document
             annotationEditor.Save(dataDir + "DeleteAnnotationByName_out.pdf");
         }
     }
@@ -329,7 +329,7 @@ private static void DeleteAnnotationByName()
     // Delete the annotation selected by the user
     annotationEditor.DeleteAnnotation(document.Pages[1].Annotations[index].Name);
 
-    // Save the updated PDF file
+    // Save PDF document
     annotationEditor.Save(dataDir + "DeleteAnnotationByName_out.pdf");
 }
 ```

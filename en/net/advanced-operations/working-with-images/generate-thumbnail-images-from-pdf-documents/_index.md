@@ -220,7 +220,7 @@ private static void GenerateThumbnailImagesFromPDF()
     // Iterate through all the files entries in array
     for (int counter = 0; counter < fileEntries.Length; counter++)
     {
-        //Open document
+        // Open PDF document
         using (var pdfDocument = new Document(fileEntries[counter]))
         {
             for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)

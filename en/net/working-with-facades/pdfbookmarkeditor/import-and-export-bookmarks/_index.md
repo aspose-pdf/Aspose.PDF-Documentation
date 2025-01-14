@@ -96,7 +96,7 @@ private static void ImportBookmarksFromXML()
         // Import bookmarks
         bookmarkEditor.ImportBookmarksWithXML(dataDir + "bookmarks.xml");
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "ImportFromXML_out.pdf");
     }
 }
@@ -121,7 +121,7 @@ private static void ImportBookmarksFromXML()
     // Import bookmarks
     bookmarkEditor.ImportBookmarksWithXML(dataDir + "bookmarks.xml");
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "ImportFromXML_out.pdf");
 }
 ```

@@ -322,7 +322,7 @@ private static void AddAttachmentToPdfA()
             // Perform conversion to PDF/A-3a, so that the attachment is included in the resultant file
             document.Convert(dataDir + "PDFA3aConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_3A, Aspose.Pdf.ConvertErrorAction.Delete);
 
-            // Save resultant file
+            // Save PDF document
             document.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
         }
     }
@@ -351,7 +351,7 @@ private static void AddAttachmentToPdfA()
     // Perform conversion to PDF/A-3a, so that the attachment is included in the resultant file
     document.Convert(dataDir + "PDFA3aConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_3A, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save resultant file
+    // Save PDF document
     document.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
 }
 ```

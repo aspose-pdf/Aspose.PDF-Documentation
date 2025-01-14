@@ -109,7 +109,7 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
     Page page = document.Pages.Add();
     // Add text to new page
     page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-    // Save updated PDF
+    // Save PDF document
     var outputFileName = dataDir + "HelloWorld_out.pdf";
     document.Save(outputFileName);
 %>

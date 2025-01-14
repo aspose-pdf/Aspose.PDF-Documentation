@@ -98,7 +98,7 @@ private static void ExtractImageFromPDF()
             xImage.Save(outputImage, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
 
-        // Save updated PDF file
+        // Save PDF document
         document.Save(dataDir + "ExtractImages_out.pdf");
     }
 }

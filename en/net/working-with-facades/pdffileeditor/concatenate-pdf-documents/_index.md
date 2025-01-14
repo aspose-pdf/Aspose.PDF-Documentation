@@ -424,7 +424,7 @@ private static void CompleteCode()
             // Hold the result file with empty page added
             using (var documentWithBlankPage = new MemoryStream())
             {
-                // Save PDF document file
+                // Save PDF document
                 concatenatedPdfDocument.Save(documentWithBlankPage);
 
                 using (var documentWithTocHeading = new MemoryStream())
@@ -467,7 +467,7 @@ private static void CompleteCode()
                     // Add stamp to PDF file
                     fileStamp.AddStamp(document2Link);
 
-                    // Save updated PDF file
+                    // Save PDF document
                     fileStamp.Save(documentWithTocHeading);
                     fileStamp.Close();
 
@@ -482,7 +482,7 @@ private static void CompleteCode()
                     // And 2 is because, second document will start at Input1+1 and 1 for the page containing Table Of Contents.
                     contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 620, 100, 20),
                         new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "ConcatenateInput1.pdf").NumberOfPages + 2, 1, System.Drawing.Color.Transparent);
-                    // Save updated PDF
+                    // Save PDF document
                     contentEditor.Save(dataDir + "Concatenated_Table_Of_Contents_out.pdf");
                 }
             }

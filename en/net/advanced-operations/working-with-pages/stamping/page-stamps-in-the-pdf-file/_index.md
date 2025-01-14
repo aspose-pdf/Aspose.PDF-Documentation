@@ -93,7 +93,7 @@ private static void AddPageStamp()
     var outputFileName = "AddPageStamp_out.pdf";
     var pageStampFileName = "AddPageStamp.pdf";
 
-    //Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + inputFileName))
     {
         //Create PdfPageStamps

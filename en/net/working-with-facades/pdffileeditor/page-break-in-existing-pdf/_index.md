@@ -104,7 +104,7 @@ private static void PageBrakeExample01()
             {
                 new Aspose.Pdf.Facades.PdfFileEditor.PageBreak(1, 450)
             });
-            // Save resultant file
+            // Save PDF document
             dest.Save(dataDir + "PageBreak_out.pdf");
         }
     }
