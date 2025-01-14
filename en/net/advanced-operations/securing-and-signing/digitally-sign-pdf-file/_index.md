@@ -161,7 +161,10 @@ private static void SignDocument(string pfxFilePath, string password)
 }
 ```
 
-You can verify a signatures by using PdfFileSignature.VerifySignature() method. 
+You can verify a signatures by using PdfFileSignature.VerifySignature() method.
+Previously, the "GetSignNames()" method was used to get signature names. Starting with version 25.02, the "GetSignatureNames()" method should be used, which returns the list of "SignatureName".
+The "SignatureName" allows to avoid collisions when verifying signatures with the same names.
+Methods that accept the SignatureName type instead of a string signature name should also be used.
 
 _Notes, the __PdfFileSignature.VerifySigned()__ method is deprecated._
 
@@ -180,7 +183,7 @@ private static void Verify()
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {         
             // Get a list of signature names in the document
-            var sigNames = signature.GetSignNames();
+            var sigNames = signature.GetSignatureNames();
 
             // Loop through all signature names to verify each one
             foreach (var sigName in sigNames)
@@ -414,7 +417,7 @@ private static void VerifyEcda()
             }
 
             // Get a list of signature names in the document
-            var sigNames = signature.GetSignNames();
+            var sigNames = signature.GetSignatureNames();
 
             // Loop through all signature names to verify each one
             foreach (var sigName in sigNames)
