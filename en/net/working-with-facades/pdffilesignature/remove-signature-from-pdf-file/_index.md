@@ -145,7 +145,7 @@ private static void RemoveSignatureButKeepField2()
     {       
         pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
-        var sigNames = pdFileSignature.GetSignNames();
+        var sigNames = pdFileSignature.GetSignatureNames();
         foreach (var sigName in sigNames)
         {
             pdFileSignature.RemoveSignature(sigName, false);

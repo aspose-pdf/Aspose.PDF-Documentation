@@ -138,7 +138,7 @@ private static void VerifyExternalSignature()
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            var sigNames = pdfSign.GetSignNames();
+            var sigNames = pdfSign.GetSignatureNames();
             for (int index = 0; index <= sigNames.Count - 1; index++)
             {
                 if (!pdfSign.VerifySignature(sigNames[index]))
@@ -195,7 +195,7 @@ private static void VerifyExternalSignature()
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            var sigNames = pdfSign.GetSignNames();
+            var sigNames = pdfSign.GetSignatureNames();
             for (int index = 0; index <= sigNames.Count - 1; index++)
             {
                 if (!pdfSign.VerifySignature(sigNames[index]))
