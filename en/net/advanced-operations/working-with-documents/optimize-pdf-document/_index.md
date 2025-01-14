@@ -122,7 +122,7 @@ private static void OptimizeDocument()
 		// Optimize for web
 		document.Optimize();
 
-		// Save PDF document document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 }

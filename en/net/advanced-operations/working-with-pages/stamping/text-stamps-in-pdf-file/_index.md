@@ -110,7 +110,7 @@ private static void AddTextStamp()
         textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
         // Add stamp to particular page
         document.Pages[1].AddStamp(textStamp);
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "AddTextStamp_out.pdf");  
     }
 }

@@ -87,6 +87,7 @@ In order to get file specific information of a PDF file, you first need to get t
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetPDFFileInformation()
 {
     // The path to the documents directory
@@ -113,6 +114,7 @@ private static void GetPDFFileInformation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetPDFFileInformation()
 {
     // The path to the documents directory
@@ -156,6 +158,7 @@ The following code snippet shows you how to set PDF file information.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SetFileInformation()
 {
     // The path to the documents directory
@@ -174,7 +177,7 @@ private static void SetFileInformation()
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
 
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
     }
 }
@@ -184,6 +187,7 @@ private static void SetFileInformation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SetFileInformation()
 {
     // The path to the documents directory
@@ -202,7 +206,7 @@ private static void SetFileInformation()
         docInfo.Subject = "PDF Information";
         docInfo.Title = "Setting PDF Document Information";
 
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "SetFileInfo_out.pdf");
     }
 }
@@ -223,6 +227,7 @@ The following code snippet shows you how to get metadata from the PDF file.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetXMPMetadata()
 {
     // The path to the documents directory
@@ -243,6 +248,7 @@ private static void GetXMPMetadata()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void GetXMPMetadata()
 {
     // The path to the documents directory
@@ -275,6 +281,7 @@ The following code snippet shows you how to set metadata in a PDF file.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SetXMPMetadata()
 {
     // The path to the documents directory
@@ -296,9 +303,9 @@ private static void SetXMPMetadata()
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
 private static void SetXMPMetadata()
 {
     // The path to the documents directory

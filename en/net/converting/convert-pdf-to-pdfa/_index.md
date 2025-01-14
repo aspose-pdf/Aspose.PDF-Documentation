@@ -120,7 +120,7 @@ private static void ConvertPdfToPdfA()
         // During conversion process, the validation is also performed
         document.Convert(dataDir + "PDFA1bConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_1B, Aspose.Pdf.ConvertErrorAction.Delete);
         
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFA_out.pdf");
     }
 }
@@ -143,7 +143,7 @@ private static void ConvertPdfToPdfA()
     // During conversion process, the validation is also performed
     document.Convert(dataDir + "PDFA1bConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_1B, Aspose.Pdf.ConvertErrorAction.Delete);
     
-    // Save PDF document document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFA_out.pdf");
 }
 ```
@@ -211,7 +211,7 @@ private static void ConvertPdfToPdfA3b()
         // Convert to PDF/A compliant document, log file is omitted
         document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.PDF_A_3B, Aspose.Pdf.ConvertErrorAction.Delete);
         
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFA3b_out.pdf");
     }
 }
@@ -233,7 +233,7 @@ private static void ConvertPdfToPdfA3b()
     // Convert to PDF/A compliant document, log file is omitted
     document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.PDF_A_3B, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save PDF document document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFA3b_out.pdf");
 }
 ```
@@ -263,7 +263,7 @@ private static void ConvertPdfToPdfA4()
         // Convert to the PDF/A-4 format
         document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
 
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFA4_out.pdf");
     }
 }
@@ -288,7 +288,7 @@ private static void ConvertPdfToPdfA4()
     // Convert to the PDF/A-4 format
     document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save PDF document document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFA4_out.pdf");
 }
 ```
@@ -390,7 +390,7 @@ private static void ReplaceMissingFonts()
         // During the conversion, the missing font will be replaced with the substitution one
         document.Convert(dataDir + "ReplaceMissingFonts.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
     }
 }
@@ -424,7 +424,7 @@ private static void ReplaceMissingFonts()
     // During the conversion, the missing font will be replaced with the substitution one
     document.Convert(dataDir + "ReplaceMissingFonts.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-    // Save PDF document document
+    // Save PDF document
     document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
 }
 ```

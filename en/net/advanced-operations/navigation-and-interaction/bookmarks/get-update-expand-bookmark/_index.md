@@ -388,7 +388,7 @@ private static void UpdateChildBookmarks()
         childOutline.Italic = true;
         childOutline.Bold = true;
 
-        // Save PDF document document
+        // Save PDF document
         document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
     }
 }
@@ -416,7 +416,7 @@ private static void UpdateChildBookmarks()
     childOutline.Italic = true;
     childOutline.Bold = true;
 
-    // Save PDF document document
+    // Save PDF document
     document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
 }
 ```
