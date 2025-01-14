@@ -89,15 +89,11 @@ private static void AddPageStamp()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var inputFileName = "AddPageStampInput.pdf";
-    var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "AddPageStamp.pdf";
-
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + inputFileName))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))
     {
         //Create PdfPageStamps
-        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + pageStampFileName, 1)
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + "AddPageStamp.pdf", 1)
         {
             Height = 800,
             Background = true
@@ -105,7 +101,7 @@ private static void AddPageStamp()
         // Add stamps
         document.Pages[1].AddStamp(bluePageStamp);
         // Save PDF document
-        document.Save(dataDir + outputFileName);
+        document.Save(dataDir + "AddPageStamp_out.pdf");
     }
 }
 ```

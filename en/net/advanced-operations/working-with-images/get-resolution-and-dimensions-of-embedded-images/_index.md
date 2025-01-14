@@ -115,13 +115,12 @@ The following code snippet shows you how to get an image's dimensions and resolu
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractImageInformationFromPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Load the source PDF file using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageInformation.pdf"))
     {
         // Define the default resolution for image

@@ -130,7 +130,7 @@ The following code snippet shows the process of converting PDF files into the TE
 // The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// Create Document object
+// Create PDF document
 Document document = new Document(dataDir + "PDFToTeX.pdf");
 
 // Instantiate LaTex save option          
@@ -142,7 +142,7 @@ string pathToOutputDirectory = dataDir;
 // Set the output directory path for save option object
 saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
-// Save PDF file into LaTex format           
+// Save PDF document into LaTex format           
 document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
 ```
 

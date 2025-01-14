@@ -104,6 +104,7 @@ private static void ChangePdfPageSize()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
     {
@@ -130,6 +131,7 @@ private static void GetPdfPageSize()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
     {

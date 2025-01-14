@@ -87,7 +87,7 @@ private static void AddDicomImageToPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a page to the document
@@ -103,7 +103,7 @@ private static void AddDicomImageToPDF()
         // Add image to the first page
         document.Pages[1].Paragraphs.Add(image);
 
-        // Save PDF document as PDF format
+        // Save PDF document
         document.Save(dataDir + "PdfWithDicomImage_out.pdf");
     }
 }

@@ -87,7 +87,7 @@ private static void ExtractImageFromPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
     {
         // Extract a particular image

@@ -116,7 +116,9 @@ The following code snippet shows how to get each watermark on the first page of 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddWatermarks()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddWatermarksInput.pdf"))
     {

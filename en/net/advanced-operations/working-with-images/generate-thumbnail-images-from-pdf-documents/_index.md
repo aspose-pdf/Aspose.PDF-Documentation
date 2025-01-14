@@ -111,7 +111,6 @@ Once Adobe Acrobat is installed, use regedit.exe and look under HKEY_CLASSES_ROO
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GenerateThumbnailImagesFromPDF()
 {
     // Acrobat objects
@@ -207,10 +206,8 @@ If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://ref
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GenerateThumbnailImagesFromPDF()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
@@ -221,18 +218,16 @@ private static void GenerateThumbnailImagesFromPDF()
     for (int counter = 0; counter < fileEntries.Length; counter++)
     {
         // Open PDF document
-        using (var pdfDocument = new Document(fileEntries[counter]))
+        using (var document = new Aspose.Pdf.Document(fileEntries[counter]))
         {
-            for (int pageCount = 1; pageCount <= pdfDocument.Pages.Count; pageCount++)
+            for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
             {
-                using (FileStream imageStream = new FileStream(dataDir + "\\Thumbanils" + counter.ToString() + "_" + pageCount + ".jpg", FileMode.Create))
+                using (FileStream imageStream = new FileStream(dataDir + @"\Thumbanils" + counter.ToString() + "_" + pageCount + ".jpg", FileMode.Create))
                 {
-                    //Create Resolution object
-                    Resolution resolution = new Resolution(300);
-                    //JpegDevice jpegDevice = new JpegDevice(500, 700, resolution, 100);
-                    JpegDevice jpegDevice = new JpegDevice(45, 59, resolution, 100);
-                    //Convert a particular page and save the image to stream
-                    jpegDevice.Process(pdfDocument.Pages[pageCount], imageStream);
+                    var resolution = new Aspose.Pdf.Devices.Resolution(300);
+                    var jpegDevice = new Aspose.Pdf.Devices.JpegDevice(45, 59, resolution, 100);
+                    // Convert a particular page and save the image to stream
+                    jpegDevice.Process(document.Pages[pageCount], imageStream);
                 }
             }
         }

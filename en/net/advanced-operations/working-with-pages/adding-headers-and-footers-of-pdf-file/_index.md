@@ -95,7 +95,8 @@ The following code snippet shows you how to add text in the header of a PDF file
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddHeaderText()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextinHeader.pdf"))
@@ -136,7 +137,8 @@ The following code snippet shows you how to add text in the footer of a PDF file
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFooterText()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextinFooter.pdf"))
@@ -177,7 +179,8 @@ The following code snippet shows you how to add image in the header of a PDF fil
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageHeader()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageinHeader.pdf"))
@@ -218,7 +221,8 @@ The following code snippet shows you how to add image in the footer of a PDF fil
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageFooter()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageInFooter.pdf"))
@@ -253,7 +257,8 @@ In order to accomplish this requirement, we will create individual TextStamp obj
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddDifferentHeaders()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))

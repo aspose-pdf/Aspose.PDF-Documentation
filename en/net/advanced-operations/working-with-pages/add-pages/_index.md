@@ -105,6 +105,7 @@ private static void InsertAnEmptyPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
     {
@@ -151,6 +152,7 @@ private static void InsertAnEmptyPageAtTheEnd()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))
     {

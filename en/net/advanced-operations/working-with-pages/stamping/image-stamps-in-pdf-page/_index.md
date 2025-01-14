@@ -96,6 +96,7 @@ private static void AddImageStampInPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
@@ -126,6 +127,7 @@ private static void ControlImageQualityWhenAddingStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
@@ -148,7 +150,8 @@ private static void ImageStampAsBackgroundInFloatingBox()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Instantiate Document object
+
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to PDF document
@@ -192,6 +195,7 @@ private static void AddAlternativeTextToTheImageStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {

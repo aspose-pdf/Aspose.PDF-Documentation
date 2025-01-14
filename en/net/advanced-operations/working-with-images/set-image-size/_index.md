@@ -85,7 +85,7 @@ private static void SetImageSizeInPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Instantiate Document object
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -111,7 +111,7 @@ private static void SetImageSizeInPDF()
         page.PageInfo.Width = 800;
         page.PageInfo.Height = 800;
 
-        // Save resultant PDF file
+        // Save PDF document
         document.Save(dataDir + "SetImageSize_out.pdf");
     }
 }

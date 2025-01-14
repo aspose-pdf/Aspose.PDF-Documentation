@@ -89,6 +89,7 @@ private static void AddBackgroundToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {

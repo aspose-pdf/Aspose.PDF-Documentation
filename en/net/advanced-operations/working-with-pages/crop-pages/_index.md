@@ -98,6 +98,7 @@ private static void CropPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CropPageInput.pdf"))
     {
@@ -112,7 +113,7 @@ private static void CropPage()
         document.Pages[1].TrimBox = newBox;
         document.Pages[1].ArtBox = newBox;
         document.Pages[1].BleedBox = newBox;
-        //Save the updated document
+        // Save PDF document
         document.Save(dataDir + "CropPage_out.pdf");  
     }
 }

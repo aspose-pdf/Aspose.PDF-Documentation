@@ -92,6 +92,7 @@ private static void AddPageNumberToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PageNumberStamp.pdf"))
     {
@@ -137,6 +138,7 @@ private static void RemoveBatesNumbering()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))
     {

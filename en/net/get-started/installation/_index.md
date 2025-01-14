@@ -281,15 +281,15 @@ class Program
         var license = new License();
         license.SetLicense("Aspose.PDF.NET.lic");
 
-        // Initialize a new PDF document
-        using (var document = new Document())
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
         {
             // Add a page to the document
             var page = document.Pages.Add();
             
             // Create a text fragment
-            var textFragment = new TextFragment("Hello, Aspose.PDF for .NET!");
-            textFragment.Position = new Position(100, 600);
+            var textFragment = new Aspose.Pdf.Text.TextFragment("Hello, Aspose.PDF for .NET!");
+            textFragment.Position = new Aspose.Pdf.Text.Position(100, 600);
             
             // Add text to the page
             page.Paragraphs.Add(textFragment);

@@ -94,12 +94,13 @@ To add an image to an existing PDF file:
 The following code snippet shows how to add the image in a PDF document.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageToPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     {
         // Set coordinates for the image placement
@@ -156,7 +157,6 @@ There is also an alternative, easier way to add a Image to a PDF file. You can u
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImageToPDFUsingPdfFileMender()
 {
     // The path to the documents directory
@@ -164,7 +164,6 @@ private static void AddImageToPDFUsingPdfFileMender()
 
     // Define image file and output PDF file paths
     var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
-    var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 
     // Create a new Document object and add pages
     using (var document = new Aspose.Pdf.Document())
@@ -183,7 +182,7 @@ private static void AddImageToPDFUsingPdfFileMender()
         mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
 
         // Save PDF document
-        document.Save(outputPdfFileName);
+        document.Save(dataDir + "AddImageMender_out.pdf");
     }
 }
 ```
@@ -202,7 +201,7 @@ private static void AddCroppedImageToPDF()
     var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
     var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Open image stream using 'using' block
@@ -225,7 +224,7 @@ private static void AddCroppedImageToPDF()
         }
 
         // Save PDF document to the specified file path
-        document.Save(outputPdfFileName);
+        document.Save(dataDir + "AddCroppedImageMender_out.pdf");
     }
 }
 ```
@@ -236,7 +235,6 @@ If we do not know the dimensions of the image there is every chance of getting a
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddingImageAndPreserveAspectRatioIntoPDF()
 {
     // The path to the documents directory
@@ -262,7 +260,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Add the image to the page
             page.AddImage(dataDir + "InputImage.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
 
-            // Save PDF document to a file
+            // Save PDF document
             document.Save(dataDir + "PreserveAspectRatio.pdf");
         }
     }
@@ -277,7 +275,6 @@ A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements a
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractImageTypesFromPDF()
 {
     // The path to the documents directory
@@ -287,7 +284,7 @@ private static void ExtractImageTypesFromPDF()
     int grayscaled = 0;
     int rgb = 0;
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
     {
         // Iterate through all pages in the document
@@ -332,16 +329,13 @@ The following code snippet demonstrates how to convert all the document images i
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ReplaceImagesInPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-    string inFile = dataDir + "ReplaceImages.pdf";
-    string outFile = dataDir + "ReplaceImages_out.pdf";
 
-    // Open PDF document using 'using' block to ensure proper disposal
-    using (var document = new Aspose.Pdf.Document(inFile))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceImages.pdf"))
     {
         // Iterate through all pages in the document
         foreach (Aspose.Pdf.Page page in document.Pages)
@@ -362,7 +356,7 @@ private static void ReplaceImagesInPDF()
         }
 
         // Save PDF document
-        document.Save(outFile);
+        document.Save(dataDir + "ReplaceImages_out.pdf");
     }
 }
 ```
@@ -383,7 +377,7 @@ private static void AddStencilMasksToImages()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddStencilMasksToImages.pdf"))
     {
         // Open the first mask image file using 'using' block

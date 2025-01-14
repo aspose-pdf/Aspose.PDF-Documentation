@@ -92,6 +92,7 @@ private static void GetNumberOfPagesInAPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetNumberofPages.pdf"))
     {
@@ -109,7 +110,7 @@ Sometimes we generate the PDF files on the fly and during PDF file creation, we 
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetPageCountWithoutSavingTheDocument()
 {
-    // Open PDF document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -156,6 +157,7 @@ private static void AccessingPageProperties()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
     {
@@ -201,6 +203,7 @@ private static void GetAParticularPageOfThePdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
@@ -231,6 +234,7 @@ private static void DeterminePageColor()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {

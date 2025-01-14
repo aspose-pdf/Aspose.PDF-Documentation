@@ -83,7 +83,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ```csharp
 public static void Extract_Table()
 {
-    // Load source PDF document
+    // Open PDF document
     Document document = new Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");           
     foreach (var page in document.Pages)
     {

@@ -90,6 +90,7 @@ private static void AddTextStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
@@ -128,6 +129,7 @@ private static void DefineAlignmentForTextStampObject()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
@@ -208,6 +210,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
@@ -236,6 +239,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {

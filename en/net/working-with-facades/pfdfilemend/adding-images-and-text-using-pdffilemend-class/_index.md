@@ -93,10 +93,10 @@ In the following example, we add image to the page using imageStream:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImage01()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images(); 
 
     // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
@@ -121,10 +121,10 @@ With the help of [CompositingParameters](https://reference.aspose.com/pdf/net/as
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImage02()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
@@ -159,12 +159,12 @@ There are several ways to store an image in PDF file. We will demonstrate one of
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImage03()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document and PdfFileMend objects 
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -195,12 +195,12 @@ private static void AddImage03()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImage04()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document and PdfFileMend objects
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
@@ -236,10 +236,10 @@ We can add text in several ways. Consider the first. We take the [FormattedText]
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddText01()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
@@ -266,10 +266,10 @@ The second way to add [FormattedText](https://reference.aspose.com/pdf/net/aspos
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddText02()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
@@ -295,12 +295,12 @@ The third example provides the ability to Add Text to specified pages. In our ex
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddText03()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document object and add pages
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     {
         document.Pages.Add();

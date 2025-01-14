@@ -99,7 +99,6 @@ The example below applies the OpenAction to a specific document.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddJavaScript()
 {
     // The path to the documents directory
@@ -120,7 +119,7 @@ private static void AddJavaScript()
         document.Pages[2].Actions.OnClose = new JavascriptAction("app.alert('page 1 closed')");
 
         // Save PDF Document
-        document.Save(dataDir + "JavaScript-Added_out.pdf");
+        document.Save(dataDir + "JavaScriptAdded_out.pdf");
     }
 }
 ```
@@ -129,7 +128,6 @@ private static void AddJavaScript()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddJavaScript()
 {
     // The path to the documents directory
@@ -150,7 +148,7 @@ private static void AddJavaScript()
     document.Pages[2].Actions.OnClose = new JavascriptAction("app.alert('page 1 closed')");
 
     // Save PDF Document
-    document.Save(dataDir + "JavaScript-Added_out.pdf");
+    document.Save(dataDir + "JavaScriptAdded_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -168,13 +166,12 @@ A new property named JavaScript is added in Document class which has JavaScript 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddJavaScript()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Document object
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
@@ -207,13 +204,12 @@ private static void AddJavaScript()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddJavaScript()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Document object
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
     document.Pages.Add();
     document.JavaScript["func1"] = "function func1() { hello(); }";
@@ -264,10 +260,12 @@ The following C# code snippet demonstrates how to set an expiry date and time fo
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateDocumentWithExpiryDate()
 {
-    // Initialize a new PDF document
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
@@ -301,7 +299,7 @@ private static void CreateDocumentWithExpiryDate()
         document.OpenAction = javaScript;
 
         // Save PDF document
-        document.Save("PDFExpiry_out.pdf");
+        document.Save(dataDir + "PDFExpiry_out.pdf");
     }
 }
 ```
@@ -313,7 +311,10 @@ private static void CreateDocumentWithExpiryDate()
 
 private static void CreateDocumentWithExpiryDate()
 {
-    // Initialize a new PDF document
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
     document.Pages.Add();
 
@@ -346,7 +347,7 @@ private static void CreateDocumentWithExpiryDate()
     document.OpenAction = javaScript;
 
     // Save PDF document
-    document.Save("PDFExpiry_out.pdf");
+    document.Save(dataDir + "PDFExpiry_out.pdf");
 }
 ```
 {{< /tab >}}

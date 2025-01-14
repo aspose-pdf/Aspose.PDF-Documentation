@@ -92,7 +92,7 @@ private static void ExtractImagesFromPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetImages.pdf"))
     {
         // Create ImagePlacementAbsorber object to perform image placement search
@@ -129,7 +129,7 @@ private static void ExtractImageFromAnIndividualPage()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open PDF document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetImages.pdf"))
     {
         // Create ImagePlacementAbsorber object to perform image placement search

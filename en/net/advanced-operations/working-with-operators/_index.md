@@ -114,6 +114,7 @@ The following code snippet shows how to use PDF operators.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageUsingPDFOperators()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document
@@ -175,8 +176,10 @@ The code below wraps a PDF file's existing contents with the GSave/GRestore oper
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DrawXFormOnPage()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DrawXFormOnPage.pdf"))
     {
         var pageContents = document.Pages[1].Contents;
@@ -226,7 +229,7 @@ private static void DrawXFormOnPage()
         pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
         // Save PDF document
-        document.Save(dataDir + "blank-sample2_out.pdf");
+        document.Save(dataDir + "DrawXFormOnPage_out.pdf");
     }
 }
 ```
@@ -241,12 +244,12 @@ The following code snippet shows how to remove graphics. Please note that if the
   // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
   private static void RemoveGraphicsObjects()
   {
+      // The path to the documents directory
       var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-      // Load the source document
+      // Open PDF document
       using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphicsObjects.pdf"))
       {
-
           // Get the specific page (page 2 in this case)
           var page = document.Pages[2];
 
@@ -265,7 +268,7 @@ The following code snippet shows how to remove graphics. Please note that if the
           oc.Delete(operators);
 
           // Save PDF document
-          document.Save(dataDir + "No_Graphics_out.pdf");
+          document.Save(dataDir + "NoGraphics_out.pdf");
       }
   }
 ```
