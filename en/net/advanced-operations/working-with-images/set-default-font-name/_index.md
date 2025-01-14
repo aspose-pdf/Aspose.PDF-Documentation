@@ -85,7 +85,7 @@ private static void ConvertPdfToImageWithDefaultFont()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open the document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "PdfToImageWithDefaultFont.pdf"))
     {
         // Open the image stream using 'using' block to ensure proper disposal

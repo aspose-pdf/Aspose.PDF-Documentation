@@ -116,7 +116,7 @@ private static void GetFieldLimitUsingDOM()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
 	{
 		// Get the field and its maximum limit
@@ -164,7 +164,7 @@ private static void SetFormFieldFont()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
 	{
 		// Get particular form field from document
@@ -177,7 +177,7 @@ private static void SetFormFieldFont()
 			field.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance(font, 10, System.Drawing.Color.Black);
 		}
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "FormFieldFont14_out.pdf");
 	}
 }
@@ -195,7 +195,7 @@ private static void DeleteFormField()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))
 	{
 		// Delete a particular field by name

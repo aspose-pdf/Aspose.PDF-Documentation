@@ -294,7 +294,7 @@ class Program
             // Add text to the page
             page.Paragraphs.Add(textFragment);
             
-            // Save the document
+            // Save PDF document
             document.Save("sample.pdf");
         }
     }

@@ -111,10 +111,10 @@ private static void IdentifyFormFieldsNames()
         // Box in FormFieldFacade class holds field's location
         box[i] = facade.Box;
     }
-    // Save the document
+    // Save PDF document
     form.Save(dataDir + "IdentifyFormFields_1_out.pdf");
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
     {
         // Now we need to add a textfield just upon the original one
@@ -127,7 +127,7 @@ private static void IdentifyFormFieldsNames()
                 "TextField" + i, allfields[i], 1, 
                 box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
             }
-            // Save the document
+            // Save PDF document
             editor.Save(dataDir + "IdentifyFormFields_out.pdf");
         }
     }

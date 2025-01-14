@@ -105,12 +105,12 @@ private static void InsertAnEmptyPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
     {
        // Insert an empty page in a PDF
        document.Pages.Insert(2);
-        // Save output file
+        // Save PDF document file
        document.Save(dataDir + "InsertEmptyPage_out.pdf");
     }
 }
@@ -151,12 +151,12 @@ private static void InsertAnEmptyPageAtTheEnd()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))
     {
         // Insert an empty page at the end of a PDF file
         document.Pages.Add();
-        // Save output file
+        // Save PDF document file
         document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
     }
 }

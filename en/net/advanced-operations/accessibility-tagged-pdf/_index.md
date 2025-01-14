@@ -4,7 +4,7 @@ linktitle: Accessibility. Tagged PDF
 type: docs
 weight: 180
 url: /net/accessibility-tagged-pdf/
-description: Discover how to generate accessible tagged PDFs with Aspose.PDF for .NET. Comply with accessibility standards for inclusive document design.
+description: Discover how to generate accessible Tagged PDFs with Aspose.PDF for .NET. Comply with accessibility standards for inclusive document design.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"

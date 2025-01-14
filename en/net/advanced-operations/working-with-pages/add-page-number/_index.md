@@ -92,7 +92,7 @@ private static void AddPageNumberToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PageNumberStamp.pdf"))
     {
         // Create page number stamp
@@ -111,7 +111,7 @@ private static void AddPageNumberToPdf()
         pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
         // Add stamp to particular page
         document.Pages[1].AddStamp(pageNumberStamp);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "PageNumberStamp_out.pdf");  
     }
 }
@@ -137,7 +137,7 @@ private static void RemoveBatesNumbering()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))
     {
         foreach (var page in document.Pages)
@@ -149,7 +149,7 @@ private static void RemoveBatesNumbering()
                 page.Artifacts.Delete(artifact);   
             }
         }
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "RemoveBatesNumbering_out.pdf");
     }
 }

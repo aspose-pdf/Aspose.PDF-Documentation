@@ -104,7 +104,7 @@ private static void AddPageStamp()
         };
         // Add stamps
         document.Pages[1].AddStamp(bluePageStamp);
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + outputFileName);
     }
 }

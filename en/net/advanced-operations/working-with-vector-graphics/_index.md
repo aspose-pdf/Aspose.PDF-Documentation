@@ -132,7 +132,7 @@ private static void MoveGraphics()
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create a GraphicsAbsorber instance 
@@ -159,7 +159,7 @@ private static void MoveGraphics()
             graphicsAbsorber.ResumeUpdate();
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -183,7 +183,7 @@ private static void RemoveGraphicsMethod1()
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create an instance of GraphicsAbsorber using 'using' block
@@ -216,7 +216,7 @@ private static void RemoveGraphicsMethod1()
             graphicsAbsorber.ResumeUpdate();
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -232,7 +232,7 @@ private static void RemoveGraphicsMethod2()
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create an instance of GraphicsAbsorber using 'using' block
@@ -266,7 +266,7 @@ private static void RemoveGraphicsMethod2()
             page.Contents.ResumeUpdate();
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -289,7 +289,7 @@ private static void AddToAnotherPageMethod1()
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create a GraphicsAbsorber instance 
@@ -315,7 +315,7 @@ private static void AddToAnotherPageMethod1()
             page2.Contents.ResumeUpdate();
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }
@@ -331,7 +331,7 @@ private static void AddToAnotherPageMethod2()
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
         // Create a GraphicsAbsorber instance
@@ -354,7 +354,7 @@ private static void AddToAnotherPageMethod2()
             page2.Contents.ResumeUpdate();
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DocumentWithVectorGraphics_out.pdf");
     }
 }

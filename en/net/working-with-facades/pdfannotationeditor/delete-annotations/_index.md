@@ -92,7 +92,7 @@ private static void DeleteAllAnnotations()
     // Create an instance of PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // Open a PDF document
+        // Open PDF document
         annotationEditor.BindPdf(dataDir + "DeleteAllAnnotationsFromPage.pdf");
 
         // Delete all annoations
@@ -117,7 +117,7 @@ private static void DeleteAllAnnotations()
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-    // Open a PDF document
+    // Open PDF document
     annotationEditor.BindPdf(dataDir + "DeleteAllAnnotationsFromPage.pdf");
 
     // Delete all annoations
@@ -146,7 +146,7 @@ private static void DeleteAllAnnotationByType()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
-    // Open a PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf"))
     {
         // Collect all annotation types from all pages
@@ -181,7 +181,7 @@ private static void DeleteAllAnnotationByType()
         // Create an instance of PdfAnnotationEditor
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
-            // Open a PDF document
+            // Open PDF document
             annotationEditor.BindPdf(document);
 
             // Delete the annotation selected by the user
@@ -204,7 +204,7 @@ private static void DeleteAllAnnotationByType()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
-    // Open a PDF document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf");
 
     // Collect all annotation types from all pages
@@ -239,7 +239,7 @@ private static void DeleteAllAnnotationByType()
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-    // Open a PDF document
+    // Open PDF document
     annotationEditor.BindPdf(document);
 
     // Delete the annotation selected by the user
@@ -266,7 +266,7 @@ private static void DeleteAnnotationByName()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
-    // Open a PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf"))
     {
         // Display the list of annotations in the first page (adjust as needed for multiple pages)
@@ -283,7 +283,7 @@ private static void DeleteAnnotationByName()
         // Create an instance of PdfAnnotationEditor
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
-            // Open a PDF document
+            // Open PDF document
             annotationEditor.BindPdf(document);
 
             // Delete the annotation selected by the user
@@ -306,7 +306,7 @@ private static void DeleteAnnotationByName()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
-    // Open a PDF document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf");
 
     // Display the list of annotations in the first page (adjust as needed for multiple pages)
@@ -323,7 +323,7 @@ private static void DeleteAnnotationByName()
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-    // Open a PDF document
+    // Open PDF document
     annotationEditor.BindPdf(document);
 
     // Delete the annotation selected by the user

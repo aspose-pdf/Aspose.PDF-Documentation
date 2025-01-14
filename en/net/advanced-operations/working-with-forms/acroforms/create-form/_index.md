@@ -102,7 +102,7 @@ private static void AddTextBoxFieldToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Create a field
@@ -140,7 +140,7 @@ private static void AddRadioButtonToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
@@ -174,7 +174,7 @@ private static void AddRadioButtonWithOptionsToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
@@ -322,7 +322,7 @@ private static void AddComboBoxToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add page to document object
@@ -369,7 +369,7 @@ private static void AddTooltipToField()
 			field.AlternateName = "Text box tool tip";
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddTooltipToField_out.pdf");
 	}
 }

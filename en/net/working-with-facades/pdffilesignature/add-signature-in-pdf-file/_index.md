@@ -101,7 +101,7 @@ private static void AddPdfFileSignature()
         var signature = new PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdFileSignature.Sign(1, "I'm document author", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
@@ -142,7 +142,7 @@ private static void AddTwoSignature()
 
         pdFileSignature.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
 
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
     }
 }
@@ -175,7 +175,7 @@ private static void AddPdfFileSignatureField()
         }; // PKCS#1
         
         pdFileSignature.Sign("Signature1", signature);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
@@ -205,7 +205,7 @@ private static void AddPdfFileSignatureField2()
             }
         }; // PKCS#1
         pdFileSignature.Sign("Signature1", signature1);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
 
         pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
@@ -221,7 +221,7 @@ private static void AddPdfFileSignatureField2()
         }; // PKCS#1
         
         pdFileSignature.Sign("Signature2", signature2);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
     }
 }

@@ -116,13 +116,13 @@ private static void OptimizeDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
 		// Optimize for web
 		document.Optimize();
 
-		// Save output document
+		// Save PDF document document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 }
@@ -146,13 +146,13 @@ private static void ShrinkDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
 	{
 		// Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
 		document.OptimizeResources();
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "ShrinkDocument_out.pdf");
 	}
 }
@@ -176,7 +176,7 @@ private static void ShrinkImage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
 	{
 		// Initialize OptimizationOptions
@@ -191,7 +191,7 @@ private static void ShrinkImage()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "Shrinkimage_out.pdf");
 	}
 }
@@ -207,7 +207,7 @@ private static void ResizeImages()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
 	{
 		// Initialize OptimizationOptions
@@ -228,7 +228,7 @@ private static void ResizeImages()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "ResizeImages_out.pdf");
 	}
 }
@@ -247,7 +247,7 @@ private static void FastShrinkImages()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
 	{
 		// Initialize OptimizationOptions
@@ -265,7 +265,7 @@ private static void FastShrinkImages()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "FastShrinkImages_out.pdf");
 	}
 
@@ -286,7 +286,7 @@ private static void OptimizeDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
 		// Set RemoveUsedObject option
@@ -298,7 +298,7 @@ private static void OptimizeDocument()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 }
@@ -316,7 +316,7 @@ private static void OptimizePdfDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set RemoveUsedStreams option
@@ -328,7 +328,7 @@ private static void OptimizePdfDocument()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 }
@@ -346,7 +346,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set LinkDuplicateStreams option
@@ -358,7 +358,7 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 }
@@ -374,7 +374,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set AllowReusePageContent option
@@ -388,7 +388,7 @@ private static void OptimizePdfDocumentWithReusePageContent()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 
@@ -413,7 +413,7 @@ private static void OptimizePdfDocumentWithUnembedFonts()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Set UnembedFonts option
@@ -427,7 +427,7 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 		// Optimize PDF document using OptimizationOptions
 		document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");	
 	}
 	
@@ -456,7 +456,7 @@ private static void FlattenAnnotationsInPdfDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
 	{
 		// Flatten annotations
@@ -468,7 +468,7 @@ private static void FlattenAnnotationsInPdfDocument()
 			}
 		}
 
-		// Save updated document
+		// Save PDF document
 		document.Save(dataDir + "OptimizeDocument_out.pdf");
 	}
 }
@@ -498,7 +498,7 @@ private static void FlattenPdfForms()
 			}
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "FlattenForms_out.pdf");
 	}
 }

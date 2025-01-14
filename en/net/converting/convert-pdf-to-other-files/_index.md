@@ -96,9 +96,9 @@ Please try using the following code snippet to accomplish this requirement with 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Load PDF document
+// Open PDF document
 Document document = new Document(dataDir + "PDFToEPUB.pdf");
 // Instantiate Epub Save options
 EpubSaveOptions options = new EpubSaveOptions();
@@ -127,7 +127,7 @@ The following code snippet shows the process of converting PDF files into the TE
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
 // Create Document object
@@ -159,7 +159,7 @@ The following code snippet explains how to extract the texts from the all pages.
 ```csharp
 public static void ConvertPDFDocToTXT()
 {
-    // Open document
+    // Open PDF document
     Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();
     ta.Visit(document);
@@ -264,7 +264,7 @@ using (Document document = new Document(inputPdfPath))
     // Specify the directory name where resources (like images) will be stored.
     saveOptions.ResourcesDirectoryName = "images";
 
-    // Save the document in Markdown format to the specified output file path using the defined save options.    
+    // Save PDF document in Markdown format to the specified output file path using the defined save options.    
     document.Save(markdownOutputFilePath, saveOptions);
 }
 ```
@@ -282,7 +282,7 @@ private static void ConvertPdfToMobiXml()
     // Load source PDF file
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
     {
-        // Save output in XML format
+        // Save PDF document in XML format
         document.Save(dataDir + "PDFToXML_out.xml", Aspose.Pdf.SaveFormat.MobiXml);
     }
 }

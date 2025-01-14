@@ -92,7 +92,7 @@ We have added new function i.e. Remove() to the existing TableAbsorber Class in 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
@@ -120,7 +120,7 @@ Sometimes a PDF document may contain more than one table and you may come up wit
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
@@ -142,7 +142,7 @@ foreach (AbsorbedTable table in tables)
     absorber.Remove(table);
 }
 
-// Save document
+// Save PDF document
 document.Save(dataDir + "Table2_out.pdf");
 ```
 

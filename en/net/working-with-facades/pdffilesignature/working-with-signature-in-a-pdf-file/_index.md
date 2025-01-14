@@ -182,7 +182,7 @@ private static void SupressLocationReason()
         var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdfFileSignature.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
-        // Save the document
+        // Save PDF document
         pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
@@ -220,7 +220,7 @@ private static void CustomizationFeaturesForDigitalSign()
         signature.CustomAppearance = signatureCustomAppearance;
 
         pdfFileSignature.Sign(1, true, rect, signature);
-        // Save the document
+        // Save PDF document
         pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
@@ -274,7 +274,7 @@ private static void ChangeLanguageInDigitalSignText()
         pkcs.CustomAppearance = signatureCustomAppearance;
         // Sign the PDF file
         pdfFileSignature.Sign(1, true, rect, pkcs);
-        // Save the document
+        // Save PDF document
         pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }

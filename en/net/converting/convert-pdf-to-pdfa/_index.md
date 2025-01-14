@@ -113,14 +113,14 @@ private static void ConvertPdfToPdfA()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Convert to PDF/A compliant document
         // During conversion process, the validation is also performed
         document.Convert(dataDir + "PDFA1bConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_1B, Aspose.Pdf.ConvertErrorAction.Delete);
         
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "PDFToPDFA_out.pdf");
     }
 }
@@ -136,14 +136,14 @@ private static void ConvertPdfToPdfA()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Convert to PDF/A compliant document
     // During conversion process, the validation is also performed
     document.Convert(dataDir + "PDFA1bConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_1B, Aspose.Pdf.ConvertErrorAction.Delete);
     
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "PDFToPDFA_out.pdf");
 }
 ```
@@ -162,7 +162,7 @@ private static void ValidatePdfAStandard()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
     {
         // Validate PDF for PDF/A-1a
@@ -181,7 +181,7 @@ private static void ValidatePdfAStandard()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf");
 
     // Validate PDF for PDF/A-1a
@@ -205,13 +205,13 @@ private static void ConvertPdfToPdfA3b()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Convert to PDF/A compliant document, log file is omitted
         document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.PDF_A_3B, Aspose.Pdf.ConvertErrorAction.Delete);
         
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "PDFToPDFA3b_out.pdf");
     }
 }
@@ -227,13 +227,13 @@ private static void ConvertPdfToPdfA3b()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Convert to PDF/A compliant document, log file is omitted
     document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.PDF_A_3B, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "PDFToPDFA3b_out.pdf");
 }
 ```
@@ -254,7 +254,7 @@ private static void ConvertPdfToPdfA4()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // If the document version is less than PDF-2.0, it must be converted to PDF-2.0
@@ -263,7 +263,7 @@ private static void ConvertPdfToPdfA4()
         // Convert to the PDF/A-4 format
         document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
 
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "PDFToPDFA4_out.pdf");
     }
 }
@@ -279,7 +279,7 @@ private static void ConvertPdfToPdfA4()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // If the document version is less than PDF-2.0, it must be converted to PDF-2.0
@@ -288,7 +288,7 @@ private static void ConvertPdfToPdfA4()
     // Convert to the PDF/A-4 format
     document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "PDFToPDFA4_out.pdf");
 }
 ```
@@ -384,13 +384,13 @@ private static void ReplaceMissingFonts()
         Aspose.Pdf.Text.FontRepository.Substitutions.Add(fontSubstitution);
     }
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // During the conversion, the missing font will be replaced with the substitution one
         document.Convert(dataDir + "ReplaceMissingFonts.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
     }
 }
@@ -418,13 +418,13 @@ private static void ReplaceMissingFonts()
         Aspose.Pdf.Text.FontRepository.Substitutions.Add(fontSubstitution);
     }
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // During the conversion, the missing font will be replaced with the substitution one
     document.Convert(dataDir + "ReplaceMissingFonts.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
 }
 ```

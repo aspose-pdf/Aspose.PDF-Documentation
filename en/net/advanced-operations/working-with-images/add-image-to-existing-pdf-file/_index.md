@@ -99,7 +99,7 @@ private static void AddImageToPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     {
         // Set coordinates for the image placement
@@ -135,7 +135,7 @@ private static void AddImageToPDF()
             page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "AddImage_out.pdf");
     }
 }
@@ -182,7 +182,7 @@ private static void AddImageToPDFUsingPdfFileMender()
         // Add image to the first page using the mender
         mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
 
-        // Save the updated document
+        // Save PDF document
         document.Save(outputPdfFileName);
     }
 }
@@ -202,7 +202,7 @@ private static void AddCroppedImageToPDF()
     var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
     var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document())
     {
         // Open image stream using 'using' block
@@ -224,7 +224,7 @@ private static void AddCroppedImageToPDF()
             page.AddImage(imgStream, imageRect, bbox);
         }
 
-        // Save the document to the specified file path
+        // Save PDF document to the specified file path
         document.Save(outputPdfFileName);
     }
 }
@@ -262,7 +262,7 @@ private static void AddingImageAndPreserveAspectRatioIntoPDF()
             // Add the image to the page
             page.AddImage(dataDir + "InputImage.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
 
-            // Save the document to a file
+            // Save PDF document to a file
             document.Save(dataDir + "PreserveAspectRatio.pdf");
         }
     }
@@ -287,7 +287,7 @@ private static void ExtractImageTypesFromPDF()
     int grayscaled = 0;
     int rgb = 0;
 
-    // Open the document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
     {
         // Iterate through all pages in the document
@@ -340,7 +340,7 @@ private static void ReplaceImagesInPDF()
     string inFile = dataDir + "ReplaceImages.pdf";
     string outFile = dataDir + "ReplaceImages_out.pdf";
 
-    // Open the document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(inFile))
     {
         // Iterate through all pages in the document
@@ -361,7 +361,7 @@ private static void ReplaceImagesInPDF()
             }
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(outFile);
     }
 }
@@ -383,7 +383,7 @@ private static void AddStencilMasksToImages()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "AddStencilMasksToImages.pdf"))
     {
         // Open the first mask image file using 'using' block
@@ -400,7 +400,7 @@ private static void AddStencilMasksToImages()
             }
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "AddStencilMasksToImages_out.pdf");
     }
 }

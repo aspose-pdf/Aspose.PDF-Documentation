@@ -110,7 +110,7 @@ private static void ChangePageOrientation()
             // Setting Rotation angle of page
             page.Rotate = Rotation.on90;
         }
-        // Save output file
+        // Save PDF document file
         document.Save(dataDir + "ChangeOrientation_out.pdf");
     }
 }

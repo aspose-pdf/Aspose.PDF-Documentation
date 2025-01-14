@@ -86,7 +86,7 @@ private void Page_Load(object sender, EventArgs e)
     // Set the response header for file download
     Response.AddHeader("content-disposition", "attachment; filename=TestDocument.pdf");
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add Page in Pages Collection
@@ -94,7 +94,7 @@ private void Page_Load(object sender, EventArgs e)
         var textFragment = new Aspose.Pdf.Text.TextFragment("Hello World");
         page.Paragraphs.Add(textFragment);
         
-        // Save the document to a MemoryStream
+        // Save PDF document to a MemoryStream
         using (var ms = new MemoryStream())
         {
             document.Save(ms);
@@ -144,7 +144,7 @@ private static void LatexWithoutPreambleAndDocEnvironment()
         cell.Paragraphs.Add(ltext1);
         // Add table inside page
         page.Paragraphs.Add(table);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "LatextScriptInPdf_out.pdf");
     }
 }
@@ -178,7 +178,7 @@ private static void LatexWithPreambleAndDocEnvironment()
         cell.Paragraphs.Add(text2);
         // Add table inside page
         page.Paragraphs.Add(table);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "LatextScriptInPdf2_out.pdf");
     }
 }
@@ -204,13 +204,13 @@ private static void LatexTagsSupport()
     \end{proof}
     \end{document}";
     
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = doc.Pages.Add();
         var latex = new Aspose.Pdf.TeXFragment(s);
         page.Paragraphs.Add(latex);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Script_out.pdf");
     }
 }

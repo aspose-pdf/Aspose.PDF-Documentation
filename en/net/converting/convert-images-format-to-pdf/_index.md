@@ -176,7 +176,7 @@ private static void ConvertBMPtoPDF()
         image.File = dataDir + "BMPtoPDF.bmp";
         document.Pages[1].Paragraphs.Add(image);
         
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "BMPtoPDF_out.pdf");
     }
 }
@@ -251,7 +251,7 @@ private static void ConvertDICOMtoPDF()
             File = dataDir + "DICOMtoPDF.dcm"
         };
         document.Pages[1].Paragraphs.Add(image);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DICOMtoPDF_out.pdf");
     }
 }
@@ -347,7 +347,7 @@ private static void ConvertGIFtoPDF()
         // Load sample GIF image file
         image.File = dataDir + "GIFtoPDF.gif";
         document.Pages[1].Paragraphs.Add(image);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "GIFtoPDF_out.pdf");
     }
 }
@@ -395,7 +395,7 @@ private static void ConvertJPGtoPDF()
         // Add image on a page
         page.Paragraphs.Add(image);
         
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "JPGtoPDF_out.pdf");
     }
 }
@@ -433,7 +433,7 @@ private static void ConvertJPGtoPDF()
         page.PageInfo.Margin.Left = 0;
         page.Paragraphs.Add(image);
         
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "JPGtoPDF_out.pdf");
     }
 }
@@ -490,7 +490,7 @@ private static void ConvertPNGtoPDF()
         page.PageInfo.Margin.Left = 0;
         page.Paragraphs.Add(image);
         
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "PNGtoPDF_out.pdf");
     }
 }
@@ -556,7 +556,7 @@ The following code snippet shows the process of getting the source SVG file's di
 private static void ConvertSVGtoPDF()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     var loadopt = new Aspose.Pdf.SvgLoadOptions();
     loadopt.AdjustPageSize = true;
@@ -787,7 +787,7 @@ private static void ConvertTIFFtoPDF()
         image.File = dataDir + "TIFFtoPDF.tiff";
         document.Pages[1].Paragraphs.Add(image);
         
-        // Save output PDF document
+        // Save PDF document PDF document
         document.Save(dataDir + "TIFFtoPDF_out.pdf");
     }
 }
@@ -840,7 +840,7 @@ private static void ConvertTIFFtoPDF()
             }
         }
 
-        // Save output PDF file
+        // Save PDF document PDF file
         document.Save(dataDir + "TIFFtoPDF_out.pdf");
     }
 }

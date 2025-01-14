@@ -93,20 +93,24 @@ The [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfile
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// Open document
-Document document = new Document(dataDir + "AddAttachment.pdf");
+private static void AddEmbeddedFile()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// Setup new file to be added as attachment
-FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "Sample text file");
+    // Open PDF document
+    Document document = new Document(dataDir + "AddAttachment.pdf");
 
-// Add attachment to document's attachment collection
-document.EmbeddedFiles.Add(fileSpecification);
+    // Setup new file to be added as attachment
+    FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "Sample text file");
 
-// Save updated document
-document.Save(dataDir + "AddllAnnotations_out.pdf");
+    // Add attachment to document's attachment collection
+    document.EmbeddedFiles.Add(fileSpecification);
+
+    // Save PDF document
+    document.Save(dataDir + "AddAnnotations_out.pdf");
+}
 ```
 
 <script type="application/ld+json">

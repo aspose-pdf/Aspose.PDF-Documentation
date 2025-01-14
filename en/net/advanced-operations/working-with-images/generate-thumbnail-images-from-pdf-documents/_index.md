@@ -211,7 +211,7 @@ If we need to convert PDF pages into JPEGs, the [Aspose.PDF.Devices](https://ref
 private static void GenerateThumbnailImagesFromPDF()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Retrieve names of all the PDF files in a particular directory

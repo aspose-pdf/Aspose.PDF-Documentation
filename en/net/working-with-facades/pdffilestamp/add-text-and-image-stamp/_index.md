@@ -107,7 +107,7 @@ private static void AddTextStampOnAllPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
     }
 }
@@ -149,7 +149,7 @@ private static void AddTextStampOnParticularPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddTextStamp-Page_out.pdf");
     }
 }
@@ -185,7 +185,7 @@ private static void AddImageStampOnAllPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddImageStamp-Page_out.pdf");
     }
 }
@@ -222,7 +222,7 @@ private static void AddImageStampOnParticularPagesInPdfFile()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
     }
 }

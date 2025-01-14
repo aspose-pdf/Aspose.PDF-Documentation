@@ -93,7 +93,7 @@ private static void DeleteImageFromPDF()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open PDF document using 'using' block to ensure proper disposal
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteImages.pdf"))
     {
         // Delete a particular image

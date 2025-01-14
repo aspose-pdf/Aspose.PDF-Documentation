@@ -91,7 +91,7 @@ private static void PrintingPDFFile()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -132,7 +132,7 @@ private static void PrintingPDFFile()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -176,7 +176,7 @@ private static void PrintingPDFDisplayPrintDialog()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -213,7 +213,7 @@ private static void PrintingPDFDisplayPrintDialog()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -255,7 +255,7 @@ private static void PrintingPDFToSoftPrinter()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -298,7 +298,7 @@ private static void PrintingPDFToSoftPrinter()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -348,7 +348,7 @@ private static void PrintingPDFHidePrintDialog()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -388,7 +388,7 @@ private static void PrintingPDFHidePrintDialog()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -433,7 +433,7 @@ private static void PrintingPDFAsGrayscale()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -474,7 +474,7 @@ private static void PrintingPDFAsGrayscale()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -522,7 +522,7 @@ private static void PrintingPDFToPostScript()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -567,7 +567,7 @@ private static void PrintingPDFToSoftPrinter()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -781,7 +781,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
@@ -883,7 +883,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing

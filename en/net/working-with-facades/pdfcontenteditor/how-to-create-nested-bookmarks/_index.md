@@ -89,7 +89,7 @@ public static void AddBookmarksAction()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
     {
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -112,7 +112,7 @@ public static void AddBookmarksAction()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
 
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);

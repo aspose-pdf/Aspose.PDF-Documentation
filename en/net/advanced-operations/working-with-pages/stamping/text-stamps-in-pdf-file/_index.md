@@ -90,7 +90,7 @@ private static void AddTextStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
         // Create text stamp
@@ -110,7 +110,7 @@ private static void AddTextStamp()
         textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
         // Add stamp to particular page
         document.Pages[1].AddStamp(textStamp);
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "AddTextStamp_out.pdf");  
     }
 }
@@ -128,7 +128,7 @@ private static void DefineAlignmentForTextStampObject()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
         // Instantiate FormattedText object with sample string
@@ -150,7 +150,7 @@ private static void DefineAlignmentForTextStampObject()
         stamp.TopMargin = 20;
         // Add the stamp object over first page of document
         document.Pages[1].AddStamp(stamp);
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "StampedPDF_out.pdf");
     }
 }
@@ -174,7 +174,7 @@ private static void FillStrokeTextAsStampInPdfFile()
     textState.StrokingColor = Color.Gray;
     // Set text rendering mode
     textState.RenderingMode = Aspose.Pdf.Text.TextRenderingMode.StrokeText;
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
         // Create PdfFileStamp
@@ -236,7 +236,7 @@ private static void AutoSetTheFontSizeOfTextStampToFitPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
     {
         // Create text for stamp

@@ -360,7 +360,7 @@ private static void ExampleXsltToPdf()
     //Create pdf document
     using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
     {
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "XSLT_out.pdf");
     }
 }
@@ -408,7 +408,7 @@ private static void ExampleXsltToPDF()
     //Create pdf document
     using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "XSLT_out.pdf");
 }
 
@@ -539,7 +539,7 @@ public static void Example_Xslfo_to_Pdf()
     // Create Document object
     using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
     {
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "XSLFO_out.pdf");
     }
 }
@@ -561,7 +561,7 @@ public static void Example_Xslfo_to_Pdf()
     // Create Document object
     using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "XSLFO_out.pdf");
 }
 ```
@@ -688,7 +688,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_7()
     // Create Document object
     using (var document = new Aspose.Pdf.Document(xmlInputFile, options))
     {
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "XSLFO_out.pdf");
     }
 }
@@ -716,7 +716,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_7()
     // Create Document object
     using var document = new Aspose.Pdf.Document(xmlInputFile, options);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "XSLFO_out.pdf");
 }
 ```
@@ -743,7 +743,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_6()
     // Create Document object
     using (var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options))
     {
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "XSLFO_out.pdf");
     }
 }
@@ -792,7 +792,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_6()
     // Create Document object
     using var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options);
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "XSLFO_out.pdf");
 }
 
@@ -857,7 +857,7 @@ private static void ExampleXmlToPdf()
         //Bind XML file to the document
         document.BindXml(dataDir + "aspose_pdf_demo.xml");
 
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "XML_out.pdf");
     }
 }
@@ -879,7 +879,7 @@ private static void ExampleXmlToPdf()
     //Bind XML file to the document
     document.BindXml(dataDir + "aspose_pdf_demo.xml");
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "XML_out.pdf");
 }
 ```
@@ -1363,7 +1363,7 @@ private static void CreateDocument()
         // Get reference of second TextSegment with ID strongHtml
         segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
 
-        // Save output document
+        // Save PDF document document
         document.Save(dataDir + "XMLToPDF_out.pdf");
     }
 }
@@ -1394,7 +1394,7 @@ private static void CreateDocument()
     // Get reference of second TextSegment with ID strongHtml
     segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
 
-    // Save output document
+    // Save PDF document document
     document.Save(dataDir + "XMLToPDF_out.pdf");
 }
 ```
@@ -1493,7 +1493,7 @@ private static void CreateDocument()
         // Set image file
         image.File = inFile;
 
-        // Save output document
+        // Save PDF document document
         document.Save(outFile);
     }
 }
@@ -1525,7 +1525,7 @@ private static void CreateDocument()
     // Set image file
     image.File = inFile;
 
-    // Save output document
+    // Save PDF document document
     document.Save(outFile);
 }
 ```

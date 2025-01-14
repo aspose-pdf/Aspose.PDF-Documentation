@@ -101,7 +101,7 @@ private static void AddCaretAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Create Caret Annotation for text insertion
@@ -142,7 +142,7 @@ private static void AddCaretAnnotations()
 		document.Pages[1].Annotations.Add(caretAnnotation2);
 		document.Pages[1].Annotations.Add(strikeOutAnnotation);
 
-		// Save result file
+		// Save PDF document
 		document.Save(dataDir + "AddCaretAnnotations_out.pdf");
 	}
 }
@@ -160,7 +160,7 @@ private static void GetCaretAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
 	{
 		// Get Caret annotations from the first page
@@ -189,7 +189,7 @@ private static void DeleteCaretAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
 	{
 		// Get Caret annotations from the first page
@@ -203,7 +203,7 @@ private static void DeleteCaretAnnotation()
 			document.Pages[1].Annotations.Delete(ca);
 		}
 
-		// Save the document after deleting annotations
+		// Save PDF document after deleting annotations
 		document.Save(dataDir + "DeleteCaretAnnotation_out.pdf");
 	}
 }
@@ -221,7 +221,7 @@ private static void RedactPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create RedactionAnnotation instance for a specific page region

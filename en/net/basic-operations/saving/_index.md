@@ -92,12 +92,12 @@ private static void SaveDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
     {
         // Make some manipation, i.g add new empty page
         document.Pages.Add();
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SimpleResume_out.pdf");
     }
 }
@@ -114,12 +114,12 @@ private static void SaveDocumentStream()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
     {
         // Make some manipation, i.g add new empty page
         document.Pages.Add();
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SimpleResume_out.pdf");
     }
 }
@@ -143,14 +143,14 @@ private static void SaveDocumentAsPDFx()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
     {
         // Add a new page
         document.Pages.Add();
         // Convert a document to a PDF/X-3 format
         document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SimpleResume_X3.pdf");
     }
 }

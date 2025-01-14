@@ -94,10 +94,10 @@ private static void AddTooltipToSearchedText()
     {
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
         document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -137,7 +137,7 @@ private static void AddTooltipToSearchedText()
             document.Form.Add(field);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
 }
@@ -174,11 +174,11 @@ private static void CreateHiddenTextBlock()
     {
         // Add paragraph with text
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -223,7 +223,7 @@ private static void CreateHiddenTextBlock()
         // Add button field to the document
         document.Form.Add(buttonField);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 }

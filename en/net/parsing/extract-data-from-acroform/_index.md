@@ -188,7 +188,7 @@ private static void ExportDataToPdf()
             form.ExportFdf(fdfOutputStream);
         }
 
-        // Save updated document
+        // Save PDF document
         form.Save(dataDir + "ExportDataToPdf_out.pdf");
     }
 }
@@ -220,7 +220,7 @@ private static void ExportDataToXFDF()
             form.ExportXfdf(xfdfOutputStream);
         }
 
-        // Save updated document
+        // Save PDF document
         form.Save(dataDir + "ExportDataToXFDF_out.pdf");
     }
 }

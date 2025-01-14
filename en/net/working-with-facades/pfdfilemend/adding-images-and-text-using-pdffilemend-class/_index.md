@@ -108,7 +108,7 @@ private static void AddImage01()
             mender.BindPdf(document);
             mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
 
-            // Save the document
+            // Save PDF document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -146,7 +146,7 @@ private static void AddImage02()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the document
+            // Save PDF document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -186,7 +186,7 @@ private static void AddImage03()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the document
+            // Save PDF document
             mender.Save(dataDir + "AddImage_out.pdf");
         }
     }
@@ -223,7 +223,7 @@ private static void AddImage04()
 
             mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save the document
+            // Save PDF document
             mender.Save(dataDir + "AddImage_outp.pdf");
         }
     }
@@ -252,7 +252,7 @@ private static void AddText01()
         // Add text to the first page at position (10, 750)
         mender.AddText(message, 1, 10, 750);
 
-        // Save the document
+        // Save PDF document
         mender.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -285,7 +285,7 @@ private static void AddText02()
         // Set word wrapping mode to wrap by words
         mender.WrapMode = Aspose.Pdf.Facades.WordWrapMode.ByWords;
 
-        // Save the document
+        // Save PDF document
         mender.Save(dataDir + "AddText_out.pdf");
     }
 }
@@ -321,7 +321,7 @@ private static void AddText03()
             // Add text to the specified pages at the specified coordinates
             mender.AddText(message, pageNums, 10, 750, 310, 760);
 
-            // Save the document
+            // Save PDF document
             mender.Save(dataDir + "AddText_out.pdf");
         }
     }

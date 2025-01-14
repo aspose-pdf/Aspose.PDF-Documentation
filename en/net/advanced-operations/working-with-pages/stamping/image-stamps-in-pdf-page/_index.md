@@ -96,7 +96,7 @@ private static void AddImageStampInPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
@@ -110,7 +110,7 @@ private static void AddImageStampInPdfFile()
         imageStamp.Opacity = 0.5;
         // Add stamp to particular page
         document.Pages[1].AddStamp(imageStamp);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "AddImageStamp_out.pdf");
     }
 }
@@ -126,7 +126,7 @@ private static void ControlImageQualityWhenAddingStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
@@ -174,7 +174,7 @@ private static void ImageStampAsBackgroundInFloatingBox()
         aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
         // Add FloatingBox to paragraphs collection of page object
         page.Paragraphs.Add(aBox);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
     }
 }
@@ -192,7 +192,7 @@ private static void AddAlternativeTextToTheImageStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
@@ -205,7 +205,7 @@ private static void AddAlternativeTextToTheImageStamp()
         };
         // Add stamp
         document.Pages[1].AddStamp(imageStamp);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "DocWithImageStamp_out.pdf");
     }
 }

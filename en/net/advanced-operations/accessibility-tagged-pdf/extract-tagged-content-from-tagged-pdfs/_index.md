@@ -109,7 +109,7 @@ private static void GetTaggedContent()
         taggedContent.SetLanguage("en-US");
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "TaggedPDFContent.pdf");
+        document.Save(dataDir + "TaggedPDFContent_out.pdf");
     }
 }
 ```
@@ -136,7 +136,7 @@ private static void GetTaggedContent()
     taggedContent.SetLanguage("en-US");
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "TaggedPDFContent.pdf");
+    document.Save(dataDir + "TaggedPDFContent_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -153,9 +153,6 @@ In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [St
 
 private static void GetRootStructure()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
     // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
@@ -181,9 +178,6 @@ private static void GetRootStructure()
 
 private static void GetRootStructure()
 {
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
@@ -260,7 +254,7 @@ private static void AccessChildElements()
         }
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "AccessChildElements.pdf");
+        document.Save(dataDir + "AccessChildElements_out.pdf");
     }
 }
 ```
@@ -318,7 +312,7 @@ private static void AccessChildElements()
     }
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "AccessChildElements.pdf");
+    document.Save(dataDir + "AccessChildElements_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -339,12 +333,9 @@ private static void TagImages()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    string inFile = dataDir + "TH.pdf";
-    string outFile = dataDir + "TH_out.pdf";
-    string logFile = dataDir + "TH_out.xml";
 
-    // Open document
-    using (var document1 = new Aspose.Pdf.Document(inFile))
+    // Open PDF document
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
     {
         // Gets tagged content and root structure element
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
@@ -375,14 +366,14 @@ private static void TagImages()
         // Move Span Element into Paragraph
         spanElement.ChangeParentElement(paragraph);
 
-        // Save document
-        document1.Save(outFile);
+        // Save PDF document
+        document1.Save(dataDir + "TH_out.pdf");
     }
 
-    // Checking PDF/UA Compliance for out document
-    using (var document2 = new Aspose.Pdf.Document(outFile))
+    // Check PDF/UA Compliance for out document
+    using (var document2 = new Aspose.Pdf.Document(dataDir + "TH_out.pdf"))
     {
-        bool isPdfUaCompliance = document2.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document2.Validate(dataDir + "TH_out.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -397,12 +388,9 @@ private static void TagImages()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    string inFile = dataDir + "TH.pdf";
-    string outFile = dataDir + "TH_out.pdf";
-    string logFile = dataDir + "TH_out.xml";
 
-    // Open document
-    using var document1 = new Aspose.Pdf.Document(inFile);
+    // Open PDF document
+    using var document1 = new Aspose.Pdf.Document(dataDir + "TH.pdf");
 
     // Gets tagged content and root structure element
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
@@ -433,13 +421,13 @@ private static void TagImages()
     // Move Span Element into Paragraph
     spanElement.ChangeParentElement(paragraph);
 
-    // Save document
-    document1.Save(outFile);
+    // Save PDF document
+    document1.Save(dataDir + "TH_out.pdf");
 
-    // Checking PDF/UA Compliance for out document
-    using var document2 = new Aspose.Pdf.Document(outFile);
+    // Check PDF/UA Compliance for out document
+    using var document2 = new Aspose.Pdf.Document(dataDir + "TH_out.pdf");
 
-    bool isPdfUaCompliance = document2.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+    bool isPdfUaCompliance = document2.Validate(dataDir + "TH_out.pdf", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```

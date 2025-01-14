@@ -93,7 +93,7 @@ public static void SetViewerPreference()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
     {
         // Instantiate PdfContentEditor object
@@ -120,7 +120,7 @@ public static void SetViewerPreference()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
 
     // Instantiate PdfContentEditor object

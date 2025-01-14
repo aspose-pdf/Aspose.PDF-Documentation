@@ -120,7 +120,7 @@ private static void TextFormattingInsidePdf()
         text = new Aspose.Pdf.Text.TextFragment("Line5");
         page.Paragraphs.Add(text);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SubsequentIndent_out.pdf");
     }
 }
@@ -156,7 +156,7 @@ private static void AddTextBorder()
         textFragment.TextState.DrawTextRectangleBorder = true;
         var tb = new Aspose.Pdf.Text.TextBuilder(page);
         tb.AppendText(textFragment);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "PDFWithTextBorder_out.pdf");
     }
 }
@@ -192,7 +192,7 @@ private static void AddUnderlineText()
         // Append TextFragment to PDF file
         tb.AppendText(fragment);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "AddUnderlineText_out.pdf");
     }
 }
@@ -209,7 +209,7 @@ private static void AddBorder()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     
-    // Open the document
+    // Open PDF document
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
         editor.BindPdf(dataDir + "AddBorder.pdf");
@@ -220,7 +220,7 @@ private static void AddBorder()
         //Add border
         editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
 
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "AddingBorderAroundAddedText_out.pdf");
     }
 }
@@ -272,7 +272,7 @@ private static void AddNewLine()
         // Add the TextParagraph using TextBuilder
         textBuilder.AppendParagraph(par);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "AddNewLineFeed_out.pdf");
     }
 }
@@ -316,7 +316,7 @@ private static void AddStrikeoutText()
         // Append the text fragment to the PDF page
         textBuilder.AppendText(textFragment);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "AddStrikeOutText_out.pdf");
     }
 }
@@ -333,7 +333,7 @@ private static void ApplyGradientShadingToText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "text_sample4.pdf"))
     {
         var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Lorem ipsum");
@@ -348,7 +348,7 @@ private static void ApplyGradientShadingToText()
         };
         textFragment.TextState.Underline = true;
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir +"ApplyGradientShadingToText_out.pdf");
     }
 }
@@ -402,7 +402,7 @@ private static void AlignTextToFloat()
         // Add float box
         page.Paragraphs.Add(floatBox2);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "FloatingBox_alignment_review_out.pdf");
     }
 }
@@ -421,7 +421,7 @@ private static void RemoveHiddenText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "HiddenText.pdf"))
     {
         var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
@@ -440,7 +440,7 @@ private static void RemoveHiddenText()
             }
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "HiddenText_out.pdf");
     }
 }

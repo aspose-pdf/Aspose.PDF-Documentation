@@ -100,7 +100,7 @@ private static void AddPageStampOnAllPages()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
     }
 }
@@ -134,7 +134,7 @@ private static void AddPageStampOnCertainPages()
         // Add stamp to PDF file
         fileStamp.AddStamp(stamp);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
     }
 }
@@ -173,7 +173,7 @@ private static void AddPageNumberInPdfFile()
         // Add page number in upper right corner
         fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
     }
 }
@@ -228,7 +228,7 @@ private static void AddCustomPageNumberInPdfFile()
         // Add page number in upper right corner
         fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
     }
 }

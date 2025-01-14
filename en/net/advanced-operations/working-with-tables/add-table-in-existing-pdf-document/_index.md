@@ -105,7 +105,7 @@ The following code snippets show how to add text in an existing PDF file.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load source PDF document
@@ -129,7 +129,7 @@ for (int row_count = 1; row_count < 10; row_count++)
 // Add table object to first page of input document
 document.Pages[1].Paragraphs.Add(table);
 
-// Save updated document containing table object
+// Save PDF document containing table object
 document.Save(dataDir + "document_with_table_out.pdf");
 ```
 
@@ -195,7 +195,7 @@ public static void AddTable_RowColSpan()
     // Add table object to first page of input document
     document.Pages[1].Paragraphs.Add(table);
 
-    // Save updated document containing table object
+    // Save PDF document containing table object
     document.Save(dataDir + "document_with_table_out.pdf");
 }
 ```
@@ -226,7 +226,7 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instntiate the Document object by calling its empty constructor
@@ -272,7 +272,7 @@ To create table with rounded corner, use the BorderInfo class' `RoundedBorderRad
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
 
@@ -298,7 +298,7 @@ As in Microsoft Word, an autofit method is actually a shortcut which applies dif
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instntiate the Pdf object by calling its empty constructor
@@ -340,7 +340,7 @@ row2.Cells.Add("item1");
 row2.Cells.Add("item2");
 row2.Cells.Add("item3");
 
-// Save updated document containing table object
+// Save PDF document containing table object
 document.Save(dataDir + "AutoFitToWindow_out.pdf");
 ```
 
@@ -350,7 +350,7 @@ Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Create a new document
+// Create PDF document
 Document document = new Document();
 // Add page in document
 Page page = document.Pages.Add();
@@ -376,7 +376,7 @@ The following code snippet shows the steps for creating a table instance and add
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instantiate Document object
@@ -426,7 +426,7 @@ Please take into account that using of HTML Tags inside table element increases 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 DataTable dt = new DataTable("Employee");
@@ -470,7 +470,7 @@ As a default behavior, when creating a table inside a PDF file, the table flows 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instantiate Document instance
@@ -515,7 +515,7 @@ To render table on a new page, use the [IsInNewPage](https://reference.aspose.co
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 Document document = new Document();

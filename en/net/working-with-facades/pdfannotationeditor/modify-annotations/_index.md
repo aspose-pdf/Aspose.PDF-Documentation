@@ -94,7 +94,7 @@ private static void ModifyAnnotationsAuthor()
         annotationEditor.BindPdf(dataDir + "AnnotationsInput.pdf");
         // Modify annotations author
         annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
-        // Save document
+        // Save PDF document
         annotationEditor.Save(dataDir + "ModifyAnnotationsAuthor_out.pdf");
     }
 }
@@ -108,7 +108,7 @@ private static void ModifyAnnotations()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
         // Create PdfAnnotationEditor
@@ -123,7 +123,7 @@ private static void ModifyAnnotations()
             newTextAnnotation.Contents = "Updated sample contents for the annotation";
             // Modify annotations in the PDF file
             annotationEditor.ModifyAnnotations(1, 1, newTextAnnotation);
-            // Save document
+            // Save PDF document
             annotationEditor.Save(dataDir + "ModifyAnnotations_out.pdf");
         }
     }

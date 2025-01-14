@@ -108,7 +108,7 @@ private static void EncryptPDFFile()
         // Encrypt file using 256-bit encryption
         fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256,
             Aspose.Pdf.Facades.Algorithm.AES);
-        // Save the document
+        // Save PDF document
         fileSecurity.Save(dataDir + "sample_encrypted.pdf");
     }
 }

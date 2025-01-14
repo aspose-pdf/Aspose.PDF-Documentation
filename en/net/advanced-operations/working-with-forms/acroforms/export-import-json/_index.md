@@ -120,7 +120,7 @@ private static void ImportFieldsFromJsonAndInsertToPdf(string inputPdfPath, stri
     // Load the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        // Create a new document to import fields into
+        // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
         // Add a new page to the new document
@@ -176,7 +176,7 @@ private static void ImportFieldsFromJsonToCreatedPdt(string inputPdfPath, string
     // Load the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        // Create a new document to import fields into
+        // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
         // Add a new page to the new document
@@ -236,7 +236,7 @@ private static void ImportFieldsFromJsonUsingMemoryStream(string inputPdfPath, s
     // Load the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        // Create a new document to import fields into
+        // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
         // Add a new page to the new document
@@ -302,7 +302,7 @@ private static void ImportFieldFromJson(string inputPdfPath, string outputJsonPa
     // Load the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        // Create a new document to import fields into
+        // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
         // Add a new page to the new document
@@ -356,7 +356,7 @@ private static void ExportFieldToJson(string inputPdfPath, string outputJsonPath
 
 private static void ImportFieldFromJson(string inputPdfPath, string outputJsonPath, string outputPdfPath)
 {
-    // Create a new document to import fields into
+    // Create PDF document to import fields into
     using (var newDocument = new Aspose.Pdf.Document())
     {
         // Add a new page to the new document
@@ -420,7 +420,7 @@ private static void ImportFieldFromJsonUsingMemoryStream(string inputPdfPath, st
     // Load the document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        // Create a new document to import fields into
+        // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
         // Add a new page to the new document
@@ -500,7 +500,7 @@ private static void ImportFieldValueFromJson(string inputPdfPath, string outputJ
             }
         }
 
-        // Save the document with the updated field value
+        // Save PDF document with the updated field value
         document.Save(dataDir + "TextBox_out.pdf");
     }
 }
@@ -532,7 +532,7 @@ private static void ImportFieldValueFromJson(string inputPdfPath, string outputJ
             }
         }
 
-        // Save the document with the updated field value
+        // Save PDF document with the updated field value
         document.Save(dataDir + "TextBox_out.pdf");
     }
 }

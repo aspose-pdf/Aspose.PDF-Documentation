@@ -85,10 +85,10 @@ private static void MoveField()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the document
+        // Open PDF document
         editor.BindPdf(dataDir + "MoveField.pdf");
         editor.MoveField("textbox1", 262.56f, 496.75f, 382.28f, 514.03f);
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "MoveField_out.pdf");
     }
 }
@@ -106,10 +106,10 @@ private static void RemoveFields()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the document
+        // Open PDF document
         editor.BindPdf(dataDir + "ModifyFormField.pdf");
         editor.RemoveField("textbox1");
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "RemoveField_out.pdf");
     }
 }
@@ -127,10 +127,10 @@ private static void RenameFields()
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the document
+        // Open PDF document
         editor.BindPdf(dataDir + "ModifyFormField.pdf");
         editor.RenameField("textbox1", "FirstName");
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "RenameField_out.pdf");
     }
 }

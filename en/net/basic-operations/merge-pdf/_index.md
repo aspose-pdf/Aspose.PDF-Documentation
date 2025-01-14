@@ -110,7 +110,7 @@ private static void MergeDocuments()
             // Add pages of second document to the first
             document1.Pages.Add(document2.Pages);
 
-            // Save the document
+            // Save PDF document
             document1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
         }
     }

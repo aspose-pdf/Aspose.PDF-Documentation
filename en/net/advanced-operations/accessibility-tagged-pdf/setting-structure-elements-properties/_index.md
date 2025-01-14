@@ -118,7 +118,7 @@ private static void SetProperties()
         h1.ActualText = "Actual Text";
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "StructureElementsProperties.pdf");
+        document.Save(dataDir + "StructureElementsProperties_out.pdf");
     }
 }
 ```
@@ -160,7 +160,7 @@ private static void SetProperties()
     h1.ActualText = "Actual Text";
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "StructureElementsProperties.pdf");
+    document.Save(dataDir + "StructureElementsProperties_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -200,7 +200,7 @@ private static void SetTextElements()
         rootElement.AppendChild(p);
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "TextStructureElement.pdf");
+        document.Save(dataDir + "TextStructureElement_out.pdf");
     }
 }
 ```
@@ -235,7 +235,7 @@ private static void SetTextElements()
     rootElement.AppendChild(p);
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "TextStructureElement.pdf");
+    document.Save(dataDir + "TextStructureElement_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -293,7 +293,7 @@ private static void SetTextBlockElements()
         rootElement.AppendChild(p);
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "TextBlockStructureElements.pdf");
+        document.Save(dataDir + "TextBlockStructureElements_out.pdf");
     }
 }
 ```
@@ -345,7 +345,7 @@ private static void SetTextBlockElements()
     rootElement.AppendChild(p);
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "TextBlockStructureElements.pdf");
+    document.Save(dataDir + "TextBlockStructureElements_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -468,7 +468,7 @@ private static void SetInlineElements()
         p.AppendChild(span10);
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "InlineStructureElements.pdf");
+        document.Save(dataDir + "InlineStructureElements_out.pdf");
     }
 }
 ```
@@ -586,7 +586,7 @@ private static void SetInlineElements()
     p.AppendChild(span10);
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "InlineStructureElements.pdf");
+    document.Save(dataDir + "InlineStructureElements_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -661,7 +661,7 @@ private static void SetTagName()
         p4.AppendChild(span4);
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "CustomTag.pdf");
+        document.Save(dataDir + "CustomTag_out.pdf");
     }
 }
 ```
@@ -731,7 +731,7 @@ private static void SetTagName()
     p4.AppendChild(span4);
 
     // Save Tagged PDF Document
-    document.Save(dataDir + "CustomTag.pdf");
+    document.Save(dataDir + "CustomTag_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -752,11 +752,8 @@ private static void SetElements()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    string outFile = dataDir + "LinkStructureElements_Output.pdf";
-    string logFile = dataDir + "46035_log.xml";
-    string imgFile = dataDir + "google-icon-512.png";
 
-    // Creation document and getting Tagged PDF Content
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -814,7 +811,7 @@ private static void SetElements()
         p5.AppendChild(link5);
         link5.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
         Aspose.Pdf.LogicalStructure.FigureElement figure5 = taggedContent.CreateFigureElement();
-        figure5.SetImage(imgFile, 1200);
+        figure5.SetImage(dataDir + "google-icon-512.png", 1200);
         figure5.AlternativeText = "Google icon";
         Aspose.Pdf.LogicalStructure.StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
         var placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
@@ -824,13 +821,13 @@ private static void SetElements()
         link5.AlternateDescriptions = "Link to Google";
 
         // Save Tagged PDF Document
-        document.Save(outFile);
+        document.Save(dataDir + "LinkStructureElements_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(outFile))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "LinkStructureElements_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "LinkStructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -845,11 +842,8 @@ private static void SetElements()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    string outFile = dataDir + "LinkStructureElements_Output.pdf";
-    string logFile = dataDir + "46035_log.xml";
-    string imgFile = dataDir + "google-icon-512.png";
 
-    // Creation document and getting Tagged PDF Content
+    // Create PDF document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -906,7 +900,7 @@ private static void SetElements()
     p5.AppendChild(link5);
     link5.Hyperlink = new Aspose.Pdf.WebHyperlink("http://google.com");
     Aspose.Pdf.LogicalStructure.FigureElement figure5 = taggedContent.CreateFigureElement();
-    figure5.SetImage(imgFile, 1200);
+    figure5.SetImage(dataDir + "google-icon-512.png", 1200);
     figure5.AlternativeText = "Google icon";
     Aspose.Pdf.LogicalStructure.StructureAttributes linkLayoutAttributes = link5.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
     var placementAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.Placement);
@@ -916,11 +910,11 @@ private static void SetElements()
     link5.AlternateDescriptions = "Link to Google";
 
     // Save Tagged PDF Document
-    document1.Save(outFile);
+    document1.Save(dataDir + "LinkStructureElements_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(outFile);
-    bool isPdfUaCompliance = document2.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "LinkStructureElements_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "LinkStructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```
@@ -943,10 +937,7 @@ private static void AddLinkElement()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
-    string logFile = dataDir + "46144_log.xml";
-
-    // Creation document and getting Tagged PDF Content
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -1005,13 +996,13 @@ private static void AddLinkElement()
         p4.SetText(".");
 
         // Save Tagged PDF Document
-        document.Save(outFile);
+        document.Save(dataDir + "AddStructureElementIntoElement_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(outFile))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddStructureElementIntoElement_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "46144_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -1027,10 +1018,7 @@ private static void AddLinkElement()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    string outFile = dataDir + "AddStructureElementIntoElement_Output.pdf";
-    string logFile = dataDir + "46144_log.xml";
-
-    // Creation document and getting Tagged PDF Content
+    // Create PDF document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -1088,11 +1076,11 @@ private static void AddLinkElement()
     p4.SetText(".");
 
     // Save Tagged PDF Document
-    document1.Save(outFile);
+    document1.Save(dataDir + "AddStructureElementIntoElement_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(outFile);
-    bool isPdfUaCompliance = document2.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "AddStructureElementIntoElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "46144_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```
@@ -1112,8 +1100,6 @@ private static void SetNoteElement()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    string outFile = dataDir + "45929_doc.pdf";
-    string logFile = dataDir + "45929_log.xml";
 
     // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
@@ -1151,13 +1137,13 @@ private static void SetNoteElement()
         //note3.ClearId();
 
         // Save Tagged PDF Document
-        document.Save(outFile);
+        document.Save(dataDir + "SetNoteElement_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(outFile))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetNoteElement_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "SetNoteElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -1172,8 +1158,6 @@ private static void SetNoteElement()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    string outFile = dataDir + "45929_doc.pdf";
-    string logFile = dataDir + "45929_log.xml";
 
     // Create PDF Document
     using var document1 = new Aspose.Pdf.Document();
@@ -1210,11 +1194,11 @@ private static void SetNoteElement()
     //note3.ClearId();
 
     // Save Tagged PDF Document
-    document1.Save(outFile);
+    document1.Save(dataDir + "SetNoteElement_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(outFile);
-    bool isPdfUaCompliance = document2.Validate(logFile, Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "SetNoteElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "SetNoteElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```
@@ -1277,7 +1261,7 @@ private static void SetLanguageAndTitle()
         taggedContent.RootElement.AppendChild(pSP);
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "SetupLanguageAndTitle.pdf");
+        document.Save(dataDir + "SetupLanguageAndTitle_out.pdf");
     }
 }
 ```

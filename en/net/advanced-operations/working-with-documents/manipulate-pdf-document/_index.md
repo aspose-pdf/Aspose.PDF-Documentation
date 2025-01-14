@@ -101,7 +101,7 @@ private static void ValidateToPdfA1aStandard()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
 	{
 		// Validate PDF for PDF/A-1a
@@ -120,7 +120,7 @@ private static void ValidateToPdfA1bStandard()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
 	{
 		// Validate PDF for PDF/A-1b
@@ -191,7 +191,7 @@ private static void AddTOCToPdf()
 			tocPage.Paragraphs.Add(heading);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "TOC_out.pdf");
 	}
 }
@@ -206,7 +206,7 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 
 private static void CreateTocWithCustomFormatting()
 {
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a TOC page
@@ -293,7 +293,7 @@ private static void CreateTocWithHiddenPageNumbers()
     // Output file name
     string outFile = dataDir + "HiddenPageNumbers_out.pdf";
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a TOC page
@@ -406,7 +406,7 @@ private static void CustomizePageNumbersAddingToC()
             tocPage.Paragraphs.Add(heading2);
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "CustomizePageNumbersAddingToC_out.pdf");
     }
 }
@@ -426,7 +426,7 @@ private static void SetExpiryDate()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -474,7 +474,7 @@ private static void DetermineProgress()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
     {
         // Create DocSaveOptions instance and set custom progress handler
@@ -534,7 +534,7 @@ private static void FlattenForms()
             }
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "FlattenForms_out.pdf");
     }
 }

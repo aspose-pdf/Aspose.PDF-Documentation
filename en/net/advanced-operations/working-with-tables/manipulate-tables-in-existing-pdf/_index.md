@@ -83,7 +83,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF file
@@ -110,7 +110,7 @@ In case you need to find a particular table and replace it with the desired one,
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Load existing PDF document
@@ -138,7 +138,7 @@ row.Cells.Add("Col 3");
 // Replace the table with new one
 absorber.Replace(document.Pages[1], table, newTable);
 
-// Save document
+// Save PDF document
 document.Save(dataDir + "TableReplaced_out.pdf");
 ```
 

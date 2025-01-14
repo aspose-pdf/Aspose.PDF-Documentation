@@ -93,13 +93,13 @@ private static void ConvertPDFAtoPDF()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
     {
         // Remove PDF/A compliance information
         document.RemovePdfaCompliance();
     
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "PDFAToPDF_out.pdf");
     }
 }
@@ -115,13 +115,13 @@ private static void ConvertPDFAtoPDF()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf");
 
     // Remove PDF/A compliance information
     document.RemovePdfaCompliance();
     
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "PDFAToPDF_out.pdf");
 }
 ```
@@ -140,13 +140,13 @@ private static void ConvertPDFAtoPDFAdvanced()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
     {
         // Adding a new (empty) page removes PDF/A compliance information.
         document.Pages.Add();
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "PDFAToPDF_out.pdf");
     }
 }
@@ -162,13 +162,13 @@ private static void ConvertPDFAtoPDFAdvanced()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf");
 
     // Adding a new (empty) page removes PDF/A compliance information.
     document.Pages.Add();
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "PDFAToPDF_out.pdf");
 }
 ```

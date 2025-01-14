@@ -105,7 +105,7 @@ You can find samples of the above mentioned methods in the code snippet given be
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void EditPdfPages()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create a new instance of PdfPageEditor class

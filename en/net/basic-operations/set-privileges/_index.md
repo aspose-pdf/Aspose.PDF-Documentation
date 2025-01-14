@@ -90,7 +90,7 @@ private static void SetPrivilegesOnExistingPdfFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate Document Privileges object
@@ -102,7 +102,7 @@ private static void SetPrivilegesOnExistingPdfFile()
         // Need to set the password, so that once the user views the file with user password
         // Only screen reading option is enabled
         document.Encrypt("user", "owner", documentPrivilege, Aspose.Pdf.CryptoAlgorithm.AESx128, false);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SetPrivileges_out.pdf");
     }
 }
@@ -127,12 +127,12 @@ private static void EncryptPdfFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Encrypt.pdf"))
     {
         // Encrypt PDF
         document.Encrypt("user", "owner", 0, Aspose.Pdf.CryptoAlgorithm.RC4x128);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Encrypt_out.pdf");
     }
 }
@@ -155,12 +155,12 @@ private static void DecryptPdfFile()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document with a password
+    // Open PDF document with a password
     using (var document = new Aspose.Pdf.Document(dataDir + "Decrypt.pdf", "password"))
     {
         // Decrypt PDF
         document.Decrypt();
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Decrypt_out.pdf");
     }
 }
@@ -183,12 +183,12 @@ private static void ChangePassword()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-    // Open the document with a password
+    // Open PDF document with a password
     using (var document = new Aspose.Pdf.Document(dataDir + "ChangePassword.pdf", "owner"))
     {
         // Change password
         document.ChangePasswords("owner", "newuser", "newowner");
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "ChangePassword_out.pdf");
     }
 }

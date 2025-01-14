@@ -96,7 +96,7 @@ public static void AddFreeTextAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PdfContentEditor object
@@ -116,7 +116,7 @@ public static void AddFreeTextAnnotation()
         // Add annotation
         editor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddFreeTextAnnotation_out.pdf");
     }
 }
@@ -132,7 +132,7 @@ public static void AddFreeTextAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Instantiate PdfContentEditor object
@@ -152,7 +152,7 @@ public static void AddFreeTextAnnotation()
     // Add annotation
     editor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddFreeTextAnnotation_out.pdf");
 }
 ```
@@ -173,7 +173,7 @@ public static void AddTextAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PdfContentEditor object
@@ -193,7 +193,7 @@ public static void AddTextAnnotation()
         // Add annotation
         editor.CreateText(rect, "Aspose User", "PDF is a better format for modern documents", false, "Key", 1);
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddTextAnnotation_out.pdf");
     }
 }
@@ -209,7 +209,7 @@ public static void AddTextAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Instantiate PdfContentEditor object
@@ -229,7 +229,7 @@ public static void AddTextAnnotation()
     // Add annotation
     editor.CreateText(rect, "Aspose User", "PDF is a better format for modern documents", false, "Key", 1);
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddTextAnnotation_out.pdf");
 }
 ```
@@ -250,7 +250,7 @@ public static void AddLineAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PdfContentEditor object
@@ -266,7 +266,7 @@ public static void AddLineAnnotation()
             new int[] { 1, 0, 3 },
             new[] { "Open", "Open" });
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddLineAnnotation_out.pdf");
     }
 }
@@ -282,7 +282,7 @@ public static void AddLineAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Instantiate PdfContentEditor object
@@ -298,7 +298,7 @@ public static void AddLineAnnotation()
         new int[] { 1, 0, 3 },
         new[] { "Open", "Open" });
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddLineAnnotation_out.pdf");
 }
 ```

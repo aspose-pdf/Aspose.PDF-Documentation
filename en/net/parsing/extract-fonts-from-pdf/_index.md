@@ -87,7 +87,7 @@ private static void ExtractFonts()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractFonts.pdf"))
     {
         Aspose.Pdf.Text.Font[] fonts = document.FontUtilities.GetAllFonts();

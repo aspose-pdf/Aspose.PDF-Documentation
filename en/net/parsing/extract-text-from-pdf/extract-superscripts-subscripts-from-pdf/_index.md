@@ -94,7 +94,7 @@ private static void ExtractSuperScriptsAndSubScripts()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SuperScriptExample.pdf"))
     {
         // Create an absorber
@@ -120,7 +120,7 @@ private static void ExtractSuperScriptsAndSubScriptsWithTextFragments()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SuperScriptExample.pdf"))
     {
         // Create an absorber

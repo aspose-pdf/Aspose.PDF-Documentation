@@ -110,7 +110,7 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
         {
             var page = srcDocument.Pages[2];
             dstDocument.Pages.Add(page);
-            // Save output file
+            // Save PDF document file
             dstDocument.Save(destFileName);
             srcDocument.Pages.Delete(2);
             srcDocument.Save(srcFileName);
@@ -153,7 +153,7 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
                 var page = srcDocument.Pages[pageIndex];
                 dstDocument.Pages.Add(page);
             }
-            // Save output files
+            // Save PDF document files
             dstDocument.Save(destFileName);
             srcDocument.Pages.Delete(pages);
             srcDocument.Save(srcFileName);
@@ -180,13 +180,13 @@ private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
     string srcFileName = dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocumentInput.pdf";
     string destFileName = dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocument_out.pdf";
 
-    // Open document
+    // Open PDF document
     using (var srcDocument = new Aspose.Pdf.Document(srcFileName))
     {
         var page = srcDocument.Pages[2];
         srcDocument.Pages.Add(page);
         srcDocument.Pages.Delete(2);
-        // Save output file
+        // Save PDF document file
         srcDocument.Save(destFileName);
     }
 }

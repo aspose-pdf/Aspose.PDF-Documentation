@@ -104,7 +104,7 @@ private static void SplitDocument()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-    // Open the document
+    // Open PDF document
     using (var document1 = new Aspose.Pdf.Document(dataDir + "SplitToPages.pdf"))
     {
         int pageCount = 1;
@@ -116,7 +116,7 @@ private static void SplitDocument()
             using (var document2 = new Aspose.Pdf.Document())
             {
                 document2.Pages.Add(page);
-                // Save the document
+                // Save PDF document
                 document2.Save(dataDir + "Page_" + pageCount + "_out.pdf");
                 pageCount++;
             }

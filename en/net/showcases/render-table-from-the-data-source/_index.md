@@ -127,7 +127,7 @@ private static void AddTable()
         // Add table object to first page of input document
         document.Pages[1].Paragraphs.Add(table);
 
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "AddTable_out.pdf");
     }
 }
@@ -177,7 +177,7 @@ private static void AddTable()
     // Add table object to first page of input document
     document.Pages[1].Paragraphs.Add(table);
 
-    // Save document
+    // Save PDF document
     document.Save(dataDir + "AddTable_out.pdf");
 }
 ```
@@ -254,7 +254,7 @@ private static void AddTable()
 
         using (var streamOut = new MemoryStream())
         {
-            // Save document
+            // Save PDF document
             document.Save(streamOut);
 
             return new FileContentResult(streamOut.ToArray(), "application/pdf")
@@ -322,7 +322,7 @@ private static void AddTable()
 
     using var streamOut = new MemoryStream();
     
-    // Save document
+    // Save PDF document
     document.Save(streamOut);
 
     return new FileContentResult(streamOut.ToArray(), "application/pdf")

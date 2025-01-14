@@ -93,7 +93,7 @@ public static void DeleteImage()
     {
         editor.DeleteImage(2, new[] { 2 });
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
     }
 }
@@ -114,7 +114,7 @@ public static void DeleteImage()
 
     editor.DeleteImage(2, new[] { 2 });
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "PdfContentEditorDemo10.pdf");
 }
 ```
@@ -142,7 +142,7 @@ public static void DeleteImages()
     {
         editor.DeleteImage();
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
     }
 }
@@ -163,7 +163,7 @@ public static void DeleteImages()
 
     editor.DeleteImage();
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "PdfContentEditorDemo11.pdf");
 }
 ```
@@ -189,7 +189,7 @@ public static void ReplaceImage()
     {
         editor.ReplaceImage(2, 4, dataDir + "Image.jpg");
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
     }
 }
@@ -209,7 +209,7 @@ public static void ReplaceImage()
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "sample_cats_dogs.pdf"));
     editor.ReplaceImage(2, 4, dataDir + "Image.jpg");
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "PdfContentEditorDemo12.pdf");
 }
 ```

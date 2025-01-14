@@ -94,7 +94,7 @@ private static void DeletePageFromPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularPage.pdf"))
     {
         // Delete a particular page

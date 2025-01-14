@@ -89,7 +89,7 @@ private static void CreateBookmarksOfAllPages()
         bookmarkEditor.BindPdf(dataDir + "CreateBookmarksAll.pdf");
         // Create bookmark of all pages
         bookmarkEditor.CreateBookmarks();
-        // Save updated document
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "CreateBookmarksOfAllPages_out.pdf");
     }
 } 
@@ -111,7 +111,7 @@ private static void CreateBookmarksOfAllPagesWithProperties()
         bookmarkEditor.BindPdf(dataDir + "CreateBookmarks-PagesProperties.pdf");
         // Create bookmark of all pages
         bookmarkEditor.CreateBookmarks(System.Drawing.Color.Green, true, true);
-        // Save updated document
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "CreateBookmarks-PagesProperties_out.pdf");
     }
 }
@@ -133,7 +133,7 @@ private static void CreateBookmarkOfAParticularPage()
         bookmarkEditor.BindPdf(dataDir + "CreateBookmark-Page.pdf");
         // Create bookmark of a particular page
         bookmarkEditor.CreateBookmarkOfPage("Bookmark Name", 2);
-        // Save updated document
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "CreateBookmark-Page_out.pdf");
     }
 }
@@ -159,7 +159,7 @@ private static void CreateBookmarksOfARangeOfPages()
         int[] pageList = { 1 };
         // Create bookmark of a range of pages
         bookmarkEditor.CreateBookmarkOfPage(bookmarkList, pageList);
-        // Save updated document
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "CreateBookmarkPageRange_out.pdf");
     }
 }
@@ -186,7 +186,7 @@ private static void AddBookmarkInAnExistingPdfFile()
         bookmarkEditor.BindPdf(dataDir + "AddBookmark.pdf");
         // Create bookmarks
         bookmarkEditor.CreateBookmarks(bookmark);
-        // Save updated document
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "AddBookmark_out.pdf");
     }
 }
@@ -224,7 +224,7 @@ private static void AddChildBookmarkInAnExistingPdfFile()
         bookmarkEditor.BindPdf(dataDir + "AddChildBookmark.pdf");
         // Create bookmarks
         bookmarkEditor.CreateBookmarks(bookmark);
-        // Save updated document
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "AddChildBookmark_out.pdf");
     }
 }

@@ -90,7 +90,7 @@ private static void UpdateExistingBookmark()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Open PDF document
         bookmarkEditor.BindPdf(dataDir + "UpdateBookmark.pdf");
 
         // Modify the existing bookmark, assigning a new title
@@ -115,7 +115,7 @@ private static void UpdateExistingBookmark()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Open PDF document
     bookmarkEditor.BindPdf(dataDir + "UpdateBookmark.pdf");
 
     // Modify the existing bookmark, assigning a new title
@@ -145,7 +145,7 @@ private static void DeleteAllBookmarks()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Open PDF document
         bookmarkEditor.BindPdf(dataDir + "DeleteAllBookmarks.pdf");
 
         // Delete all bookmarks in the document
@@ -170,7 +170,7 @@ private static void DeleteAllBookmarks()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Open PDF document
     bookmarkEditor.BindPdf(dataDir + "DeleteAllBookmarks.pdf");
 
     // Delete all bookmarks in the document
@@ -200,7 +200,7 @@ private static void DeleteParticularBookmark()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Open PDF document
         bookmarkEditor.BindPdf(dataDir + "DeleteABookmark.pdf");
 
         // Delete a bookmark with the title "Page2"
@@ -225,7 +225,7 @@ private static void DeleteParticularBookmark()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Open PDF document
     bookmarkEditor.BindPdf(dataDir + "DeleteABookmark.pdf");
 
     // Delete a bookmark with the title "Page2"
@@ -255,7 +255,7 @@ private static void GetBookmarksFromDocument()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Open PDF document
         bookmarkEditor.BindPdf(dataDir + "GetFromPDF.PDF");
 
         // Extract all bookmarks from the document
@@ -290,7 +290,7 @@ private static void GetBookmarksFromDocument()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Open PDF document
     bookmarkEditor.BindPdf(dataDir + "GetFromPDF.PDF");
 
     // Extract all bookmarks from the document
@@ -330,7 +330,7 @@ private static void ExtractBookmarksFromPDFFile()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Open PDF document
         bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
 
         // Extract bookmarks from the document
@@ -365,7 +365,7 @@ private static void ExtractBookmarksFromPDFFile()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Open PDF document
     bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
 
     // Extract bookmarks from the document

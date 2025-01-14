@@ -107,7 +107,7 @@ private static void GetDocumentWindowProperties()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
 	{
 		// Get different document properties
@@ -180,7 +180,7 @@ private static void SetDocumentWindowProperties()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
 	{
 		// Set different document properties
@@ -295,7 +295,7 @@ private static void EmbedFontWhileCreatingPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Create a section in the Pdf object
@@ -348,7 +348,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
                 DefaultFontName = newName
             };
 
-            // Save the document with the specified save options
+            // Save PDF document with the specified save options
             document.Save(dataDir + "DefaultFont_out.pdf", pdfSaveOptions);
         }
     }
@@ -403,7 +403,7 @@ private static void NotificationFontSubstitution()
 			// (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
 			//                                                                        oldFont.FontName, newFont.FontName));
 
-		// Save the document (optional, depending on your use case)
+		// Save PDF document (optional, depending on your use case)
 		document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
 	}
 }
@@ -477,7 +477,7 @@ private static void SetZoomFactor()
 		var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
 		document.OpenAction = action;
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "Zoomed_pdf_out.pdf");
 	}
 }
@@ -523,7 +523,7 @@ private static void SetPrintDialogPresetProperties()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a page to the document
@@ -532,7 +532,7 @@ private static void SetPrintDialogPresetProperties()
         // Set duplex printing to DuplexFlipLongEdge
         document.Duplex = Aspose.Pdf.PrintDuplex.DuplexFlipLongEdge;
 
-        // Save the document with the specified properties
+        // Save PDF document with the specified properties
         document.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
     }
 }

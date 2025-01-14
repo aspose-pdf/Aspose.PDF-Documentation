@@ -91,7 +91,7 @@ private static void ImportDataFromXml()
             // Import data
             pdfForm.ImportXml(xmlInputStream);           
 
-            // Save the document
+            // Save PDF document
             pdfForm.Save(dataDir + "ImportDataFromXML_out.pdf");
         }
     }
@@ -146,7 +146,7 @@ private static void ImportDataFromPdfIntoPdf()
             // Import data
             pdfForm.ImportFdf(fdfInputStream);         
 
-            // Save the document
+            // Save PDF document
             pdfForm.Save(dataDir + "ImportDataFromPdf_out.pdf");
         }
     }
@@ -175,7 +175,7 @@ private static void ExportDataToPdfFromPdf()
             // Export data
             pdfForm.ExportFdf(fdfOutputStream);           
 
-            // Save the document
+            // Save PDF document
             pdfForm.Save(dataDir + "ExportDataToPdf_out.pdf"); 
         }
     }
@@ -204,7 +204,7 @@ private static void ImportDataFromXFDIntoPdf()
             // Import data
             pdfForm.ImportXfdf(xfdfInputStream);           
 
-            // Save updated document
+            // Save PDF document
             pdfForm.Save(dataDir + "ImportDataFromXFDF_out.pdf");
         }
     }
@@ -233,7 +233,7 @@ private static void ExportDataToXFDFFromPdf()
             // Export data
             pdfForm.ExportXfdf(xfdfOutputStream);
 
-            // Save updated document
+            // Save PDF document
             pdfForm.Save(dataDir + "ExportDataToXFDF_out.pdf");
         }
     }

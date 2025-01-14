@@ -87,10 +87,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 private static void ExtractImagesFromPDF()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
     {
         // Extract a particular image
@@ -102,7 +102,7 @@ private static void ExtractImagesFromPDF()
             xImage.Save(outputImage, ImageFormat.Jpeg);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "ExtractImages_out.pdf");
     }
 }

@@ -95,7 +95,7 @@ private static void ControlExceptionPDFFile()
             Console.WriteLine("Something wrong...");
             Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
         }
-        // Save the document
+        // Save PDF document
         fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
 }
@@ -127,7 +127,7 @@ private static void ControlExceptionPDFFile2()
             Console.WriteLine("Something wrong...");
             Console.WriteLine($"Exception: {ex.Message}");
         }
-        // Save the document
+        // Save PDF document
         fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
     }
 }

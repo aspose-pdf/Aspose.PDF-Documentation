@@ -84,7 +84,7 @@ private static void IdentifyBarcodes()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))
     {
         // Traverse through individual pages of PDF file
@@ -95,7 +95,7 @@ private static void IdentifyBarcodes()
             {
                 using (var imageStream = new System.IO.MemoryStream())
                 {
-                    // Save output image
+                    // Save PDF document image
                     xImage.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
         
                     // Set the stream position to the begining of Stream

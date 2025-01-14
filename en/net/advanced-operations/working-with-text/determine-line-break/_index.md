@@ -101,7 +101,7 @@ private static void DetermineLineBreak()
             page.Paragraphs.Add(text);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DetermineLineBreak_out.pdf");
 
         string notifications = document.Pages[1].GetNotifications();

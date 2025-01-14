@@ -96,7 +96,7 @@ public static void AddAttachment()
     {
         editor.AddDocumentAttachment(dataDir + "Demo_MP3.mp3", "Demo MP3 file");
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddAttachment_out.pdf");
     }
 }
@@ -116,7 +116,7 @@ public static void AddAttachment()
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"));
     editor.AddDocumentAttachment(dataDir + "Demo_MP3.mp3", "Demo MP3 file");
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddAttachment_out.pdf");
 }
 ```
@@ -143,7 +143,7 @@ public static void AddAttachment()
         var fileStream = File.OpenRead(dataDir + "Demo_MP3.mp3");
         editor.AddDocumentAttachment(fileStream, "Demo_MP3.mp3", "Demo MP3 file");
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddAttachment_out.pdf");
     }
 }
@@ -165,7 +165,7 @@ public static void AddAttachment()
     var fileStream = File.OpenRead(dataDir + "Demo_MP3.mp3");
     editor.AddDocumentAttachment(fileStream, "Demo_MP3.mp3", "Demo MP3 file");
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddAttachment_out.pdf");
 }
 ```
@@ -191,7 +191,7 @@ public static void DeleteAllAttachments()
     {
         editor.DeleteAttachments();
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "DeleteAllAttachments_out.pdf");
     }
 }
@@ -211,7 +211,7 @@ public static void DeleteAllAttachments()
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"));
     editor.DeleteAttachments();
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "DeleteAllAttachments_out.pdf");
 }
 ```

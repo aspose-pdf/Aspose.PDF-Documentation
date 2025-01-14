@@ -116,7 +116,7 @@ private static void AddImageUsingPDFOperators()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFOperators.pdf"))
     {
         // Set coordinates for the image placement
@@ -225,7 +225,7 @@ private static void DrawXFormOnPage()
         // Restore graphics state
         pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "blank-sample2_out.pdf");
     }
 }
@@ -264,7 +264,7 @@ The following code snippet shows how to remove graphics. Please note that if the
           // Delete the specified operators from the page contents
           oc.Delete(operators);
 
-          // Save the document with the modified content
+          // Save PDF document with the modified content
           document.Save(dataDir + "No_Graphics_out.pdf");
       }
   }

@@ -209,7 +209,7 @@ private static void MergeImages05()
         // Add the image from the MemoryStream to the page
         page.AddImage(outputStream, new Aspose.Pdf.Rectangle(10, 120, 400, 720));
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "MergeImages_out.pdf");
     }
 }

@@ -105,7 +105,7 @@ private static void ImportData()
             form.ImportXfdf(xfdfInputStream);
         }
                 
-        // Save updated document
+        // Save PDF document
         form.Save(dataDir + "ImportDataUpdated_out.pdf");
     }
 }

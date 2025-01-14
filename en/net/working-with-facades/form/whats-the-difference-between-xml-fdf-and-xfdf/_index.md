@@ -188,7 +188,7 @@ private static void DifferenceBetweenFile()
                 // Add text field beneath every existing form field
                 editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "TextField" + i, allfields[i], 1, box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
             }
-            // Save the document
+            // Save PDF document
             editor.Save(dataDir + "DifferenceBetweenFile_out.pdf");
         }
     }

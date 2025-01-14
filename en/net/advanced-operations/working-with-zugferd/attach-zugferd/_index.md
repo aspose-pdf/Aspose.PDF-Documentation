@@ -96,7 +96,7 @@ private static void AttachZUGFeRD()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-testInput.pdf"))
     {
         // Setup new file to be added as attachment
@@ -110,7 +110,7 @@ private static void AttachZUGFeRD()
         // Add attachment to document's attachment collection
         document.EmbeddedFiles.Add(fileSpecification);
         document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.ZUGFeRD, Aspose.Pdf.ConvertErrorAction.Delete);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "ZUGFeRD_out.pdf");
     }
 }

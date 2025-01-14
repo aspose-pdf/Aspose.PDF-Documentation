@@ -89,7 +89,7 @@ private static void JustifyTextInTextboxField()
 {
     // The path to the documents directory 
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    // Open the document
+    // Open PDF document
     using (var source = File.Open(dataDir + "JustifyText.pdf", FileMode.Open))
     {
         using (var ms = new MemoryStream())
@@ -100,7 +100,7 @@ private static void JustifyTextInTextboxField()
             form.BindPdf(source);
             // Fill Text Field
             form.FillField("Text1", "Thank you for using Aspose");
-            // Save the document in Memory Stream
+            // Save PDF document in Memory Stream
             form.Save(ms);
             ms.Seek(0, SeekOrigin.Begin);
 

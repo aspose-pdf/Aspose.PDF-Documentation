@@ -103,7 +103,7 @@ private static void AddHeader()
         // Add header
         fileStamp.AddHeader(formattedText, 10);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddHeader_out.pdf");
     }
 }
@@ -139,7 +139,7 @@ private static void AddFooter()
         // Add footer
         fileStamp.AddFooter(formattedText, 10);
 
-        // Save the document
+        // Save PDF document
         fileStamp.Save(dataDir + "AddFooter_out.pdf");
     }
 }
@@ -167,7 +167,7 @@ private static void AddImageHeader()
         {
             fileStamp.AddHeader(fs, 10);  // Add image header with position offset
 
-            // Save the document
+            // Save PDF document
             fileStamp.Save(dataDir + "AddImageHeader_out.pdf");
         }
     }
@@ -196,7 +196,7 @@ private static void AddImageFooter()
         {
             fileStamp.AddFooter(fs, 10);  // Add image footer with position offset
 
-            // Save the document
+            // Save PDF document
             fileStamp.Save(dataDir + "AddImageFooter_out.pdf");
         }
     }

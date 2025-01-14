@@ -87,7 +87,7 @@ private static void GetPdfPageProperties()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
         // Bind the PDF file
@@ -120,7 +120,7 @@ private static void SetPdfPageProperties()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
         pageEditor.BindPdf(dataDir + "input.pdf");
@@ -186,7 +186,7 @@ The following code snippet shows how to resize the contents of some specific pag
          // Resize Page Contents
          fileEditor.ResizeContents(document, new[] { 1, 2 }, parameters);
 
-         // Save document into a new location
+         // Save PDF document into a new location
          document.Save(dataDir + "ResizePageContents_out.pdf");
      }
  }

@@ -107,7 +107,7 @@ private static void CreateAcroFormWithFields()
         // Add a submit button and set target URL
         editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
 
-        // Save output pdf file
+        // Save PDF document pdf file
         editor.Save();
     }
 }

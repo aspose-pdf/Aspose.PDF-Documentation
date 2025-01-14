@@ -99,7 +99,7 @@ private static void DirectPrintWpf()
 
     if (openFileDialog.ShowDialog() == true)
     {
-        // Open the document
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(openFileDialog.FileName))
         {
             using (var memoryStream = new MemoryStream())
@@ -162,7 +162,7 @@ private static void DirectPrintWpf()
 
     if (openFileDialog.ShowDialog())
     {
-        // Open the document
+        // Open PDF document
         using var document = new Aspose.Pdf.Document(openFileDialog.FileName);
         
         // Convert the document to the XPS format
@@ -237,7 +237,7 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 
     if (openFileDialog.ShowDialog() == true)
     {
-        // Open the document
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(openFileDialog.FileName))
         {
             using (var memoryStream = new MemoryStream())
@@ -283,7 +283,7 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 
     if (openFileDialog.ShowDialog() == true)
     {
-        // Open the document
+        // Open PDF document
         using var document = new Aspose.Pdf.Document(openFileDialog.FileName);
 
         // Convert the document to the XPS format

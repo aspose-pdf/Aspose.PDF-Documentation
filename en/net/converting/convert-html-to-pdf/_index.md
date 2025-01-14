@@ -123,7 +123,7 @@ private static void ConvertHTMLtoPDF()
     // Open the source HTML document
     using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "html_test.pdf");
     }
 }
@@ -161,7 +161,7 @@ private static void ConvertHTMLtoPDFAdvanced_MediaType()
     // Open the source HTML document
     using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "html_test.pdf");
     }
 }
@@ -187,7 +187,7 @@ HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We
      // Open the source HTML document
      using (var document = new Aspose.Pdf.Document(dataDir + "test_fonts.html", options))
      {
-         // Save the document
+         // Save PDF document
          document.Save(dataDir + "html_test.pdf");
      }
  }
@@ -215,7 +215,7 @@ private static void ConvertHTMLtoPDFAdvanced_DummyImage()
     // Open the source HTML document
     using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "html_test.pdf");
     }
 }
@@ -282,7 +282,7 @@ private static void ConvertHTMLtoPDFAdvanced_WebPage()
     // Load the web page content as a stream and create a PDF document
     using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url), options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "html_test.pdf");
     }
 }
@@ -317,7 +317,7 @@ Sometimes we need to perform the conversion of HTML files which require authenti
 
      using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url, credentials), options))
      {
-        // Save the document
+        // Save PDF document
          document.Save(dataDir + "html_test.pdf");
      }
  }
@@ -349,10 +349,10 @@ Aspose.PDF for .NET provides the ability to render all contents on a single page
          IsRenderToSinglePage = true
      };
 
-     // Load document
+     // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "HTMLToPDF.html", options))
      {
-         // Save the document
+         // Save PDF document
          document.Save(dataDir + "RenderContentToSamePage.pdf");
      }
  }
@@ -377,7 +377,7 @@ private static void ConvertHTMLtoPDFWithSVG()
     // Initialize Document object
     using (var document = new Aspose.Pdf.Document(inFile, options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "RenderHTMLwithSVGData.pdf");
     }
 }
@@ -415,7 +415,7 @@ private static void ConvertMHTtoPDF()
     // Initialize Document object using the MHT file and options
     using (var document = new Aspose.Pdf.Document(dataDir + "fileformatinfo.mht", options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "mhtml_test.pdf");
     }
 }

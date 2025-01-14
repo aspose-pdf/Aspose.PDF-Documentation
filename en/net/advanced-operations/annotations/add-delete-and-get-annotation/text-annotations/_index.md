@@ -101,7 +101,7 @@ private static void AddTextAnnotationToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create text annotation
@@ -123,7 +123,7 @@ private static void AddTextAnnotationToPdf()
 		// Add annotation to the annotations collection of the page
 		document.Pages[1].Annotations.Add(textAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddAnnotation_out.pdf");
 	}
 }
@@ -145,7 +145,7 @@ private static void AddLineAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
 	{
 		// Create Line Annotation
@@ -165,7 +165,7 @@ private static void AddLineAnnotation()
 		// Add annotation to the page
 		document.Pages[1].Annotations.Add(lineAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddLineAnnotation_out.pdf");
 	}
 }
@@ -183,7 +183,7 @@ private static void AddFreeTextAnnotationDemo()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
 	{
 		var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor(document);
@@ -209,7 +209,7 @@ private static void AddFreeTextAnnotationDemo()
 		// Create free text annotation
 		pdfContentEditor.CreateFreeText(rect, "Free Text Demo", 1); // Last param is the page number
 
-		// Save the updated document
+		// Save PDF document
 		pdfContentEditor.Save(dataDir + "pdf-sample-0.pdf");
 	}
 }
@@ -227,7 +227,7 @@ private static void AddFreeTextCalloutAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		var page = document.Pages.Add();
@@ -254,7 +254,7 @@ private static void AddFreeTextCalloutAnnotation()
 		// Set rich text for the annotation
 		fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">This is a sample</span></p></body>";
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "SetCalloutProperty_out.pdf");
 	}
 }
@@ -272,7 +272,7 @@ private static void ImportAnnotationsFromXfdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create an XFDF string builder
@@ -287,7 +287,7 @@ private static void ImportAnnotationsFromXfdf()
 		// Import annotations from the XFDF string
 		document.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(xfdf.ToString())));
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "SetCalloutPropertyXfdf_out.pdf");
 	}
 }
@@ -328,7 +328,7 @@ private static void AddInvisibleAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Create a free text annotation
@@ -345,7 +345,7 @@ private static void AddInvisibleAnnotation()
 		// Add the annotation to the page
 		document.Pages[1].Annotations.Add(annotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "InvisibleAnnotation_out.pdf");
 	}
 }
@@ -376,7 +376,7 @@ private static void AddFreeAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
     {
         // Instantiate DefaultAppearance object
@@ -391,7 +391,7 @@ private static void AddFreeAnnotation()
         // Add annotation to annotations collection of page
         document.Pages[1].Annotations.Add(freetext);
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
     }
 }
@@ -404,7 +404,7 @@ private static void AddFreeAnnotation()
 
 private static void AddFreeAnnotation(string fontName = "Arial", float fontSize = 28)
 {
-     // The path to the documents directory.
+     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 	
     using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
@@ -424,7 +424,7 @@ private static void AddFreeAnnotation(string fontName = "Arial", float fontSize 
 		// Add anootation to annotations collection of page
 		document.Pages[1].Annotations.Add(freetext);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
 	}
 }
@@ -472,13 +472,13 @@ private static void DeleteAllAnnotationsFromPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"))
 	{
 		// Delete all annotations from the first page
 		document.Pages[1].Annotations.Delete();
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
 	}
 }
@@ -505,13 +505,13 @@ private static void DeleteParticularAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularAnnotation.pdf"))
 	{
 		// Delete a particular annotation by index (e.g., the first annotation on the first page)
 		document.Pages[1].Annotations.Delete(1);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "DeleteParticularAnnotation_out.pdf");
 	}
 }
@@ -529,7 +529,7 @@ private static void GetAllAnnotationsFromPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetAllAnnotationsFromPage.pdf"))
 	{
 		// Loop through all the annotations on the first page
@@ -558,7 +558,7 @@ private static void GetParticularAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetParticularAnnotation.pdf"))
 	{
 		// Get a particular annotation by index (e.g., the first annotation on the first page)
@@ -584,14 +584,14 @@ private static void AddAndGetResourceOfAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
 	{
 		// Create a screen annotation with a SWF file
 		var sa = new Aspose.Pdf.Annotations.ScreenAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
 		document.Pages[1].Annotations.Add(sa);
 
-		// Save the document with the new annotation
+		// Save PDF document with the new annotation
 		document.Save(dataDir + "GetResourceOfAnnotation_out.pdf");
 
 		// Open the updated document

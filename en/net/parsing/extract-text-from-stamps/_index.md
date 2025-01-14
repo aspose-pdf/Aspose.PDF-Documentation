@@ -93,7 +93,7 @@ private static void ExtractText()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractStampText.pdf"))
     {
         Aspose.Pdf.Annotations.Annotation item = document.Pages[1].Annotations[1];

@@ -161,7 +161,7 @@ private static void ConvertPDFtoTIFF()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTIFF.pdf"))
     {
         // Create Resolution object
@@ -202,7 +202,7 @@ private static void ConvertPDFtoTiffSinglePage()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTiffSinglePage.pdf"))
     {
         // Create Resolution object
@@ -236,7 +236,7 @@ private static void ConvertPDFtoTiffBradleyBinarization()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoTiffBradleyBinarization.pdf"))
     {
         string outputImageFile = dataDir + "PDFtoTiffBradleyBinarization_out.tif";
@@ -326,7 +326,7 @@ private static void ConvertPDFusingImageDevice()
     var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
     var emfDevice = new Aspose.Pdf.Devices.EmfDevice(resolution);
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ConvertAllPagesToBmp.pdf"))
     {
         ConvertPDFtoImage(bmpDevice, "bmp", document, dataDir);
@@ -396,7 +396,7 @@ private static void ConvertPDFtoSVG()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFtoSVG.pdf"))
     {
         // Instantiate an object of SvgSaveOptions
@@ -407,7 +407,7 @@ private static void ConvertPDFtoSVG()
             TreatTargetFileNameAsDirectory = true                
         };
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
     }
 }

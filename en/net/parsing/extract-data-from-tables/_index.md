@@ -192,7 +192,7 @@ public static void Extract_Table_Save_CSV()
 {
     // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-    // Load PDF document
+    // Open PDF document
     Document document = new Document(dataDir + "input.pdf");
 
     // Instantiate ExcelSave Option object

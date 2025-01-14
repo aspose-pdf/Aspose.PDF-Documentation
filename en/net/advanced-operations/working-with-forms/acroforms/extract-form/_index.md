@@ -95,7 +95,7 @@ private static void GetValuesFromFields()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
 	{
 		// Get values from all fields
@@ -120,7 +120,7 @@ private static void GetValueFromField()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
 	{
 		// Get a field
@@ -144,7 +144,7 @@ private static void GetSubmitFormActionUrl()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
 	{
 		// Get the SubmitFormAction from the form field

@@ -84,7 +84,7 @@ private static void GetPdfInfo()
     // Define the directory for input files
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the PDF document
+    // Open PDF document
     using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "sample.pdf"))
     {
         // Get and display PDF information

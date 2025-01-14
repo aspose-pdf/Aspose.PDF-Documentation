@@ -89,7 +89,7 @@ private static void AddBackgroundToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Image for background artifact object
@@ -103,7 +103,7 @@ private static void AddBackgroundToPdf()
             background.BackgroundImage = image;
             // Add background artifact to artifacts collection of page
             page.Artifacts.Add(background);
-            // Save the updated document
+            // Save PDF document
             document.Save(dataDir + "ImageAsBackground_out.pdf");
         }
     }

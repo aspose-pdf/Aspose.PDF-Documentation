@@ -183,7 +183,7 @@ private static void IdentifyBarcodes()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))
     {
         // Traverse through the individual pages of the PDF file

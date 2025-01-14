@@ -169,7 +169,7 @@ private static void MultiColumnLayout()
         }
         // Add a box to a page
         page.Paragraphs.Add(box);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "sample_out.pdf");
     }
 }
@@ -228,7 +228,7 @@ private static void MultiColumnLayout2()
 
         // Add a box to a page
         page.Paragraphs.Add(box);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "sample_out.pdf");
     }
 }

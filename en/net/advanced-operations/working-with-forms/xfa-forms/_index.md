@@ -115,7 +115,7 @@ private static void FillXFAFields()
 			document.Form.XFA[names[1]] = "Field 1";
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "FilledXfa_out.pdf");
 	}
 }
@@ -194,7 +194,7 @@ private static void GetXFAProperties()
 			Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "FilledXfa_out.pdf");
 	}
 }

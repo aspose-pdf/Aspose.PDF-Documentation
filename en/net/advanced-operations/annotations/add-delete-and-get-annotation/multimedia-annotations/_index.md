@@ -112,7 +112,7 @@ private static void AddScreenAnnotationWithMedia()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (cument = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Path to the media file (SWF)
@@ -127,7 +127,7 @@ private static void AddScreenAnnotationWithMedia()
 		// Add the annotation to the page
 		document.Pages[1].Annotations.Add(screenAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddScreenAnnotationWithMedia_out.pdf");
 	}
 }
@@ -142,7 +142,7 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
 
 private static void AddSoundAnnotation()
 {
-    // Open the document
+    // Open PDF document
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
@@ -162,7 +162,7 @@ private static void AddSoundAnnotation()
 
 		document.Pages[1].Annotations.Add(soundAnnotation);
 
-		// Save the document with the new annotation
+		// Save PDF document
 		document.Save(dataDir + "AddSoundAnnotation_out.pdf");
 	}
 }
@@ -180,7 +180,7 @@ private static void AddRichMediaAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
@@ -224,7 +224,7 @@ private static void AddRichMediaAnnotation()
 		// Add annotation to the page
 		page.Annotations.Add(rma);
 
-		// Save the document with the new annotation
+		// Save PDF document
 		document.Save(dataDir + "RichMediaAnnotation_out.pdf");
 	}
 }
@@ -242,7 +242,7 @@ private static void GetMultimediaAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
 	{
 		// Get multimedia annotations (Screen, Sound, RichMedia)
@@ -273,7 +273,7 @@ private static void DeletePolyAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
     {
         // Get RichMedia annotations
@@ -287,7 +287,7 @@ private static void DeletePolyAnnotation()
             document.Pages[1].Annotations.Delete(rma);
         }
 
-        // Save the document after deleting annotations
+        // Save PDF document
         document.Save(dataDir + "DeletePolyAnnotation_out.pdf");
     }
 }
@@ -320,7 +320,7 @@ private static void AddPrintButton()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a new page
@@ -353,7 +353,7 @@ private static void AddPrintButton()
 		// Add the button to the form
 		document.Form.Add(printButton);
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "PrintButton_out.pdf");
 	}
 }
@@ -375,7 +375,7 @@ private static void AddNavigationButtons()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
 	{
 		// Create an array of button fields
@@ -397,10 +397,7 @@ private static void AddNavigationButtons()
 		var clrBorder = System.Drawing.Color.FromArgb(255, 0, 255, 0);
 		var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
 
-
-
 		// We should create the buttons without attaching them to the page.
-
 		for (var i = 0; i < 4; i++)
 		{
 			buttons[i] = new Aspose.Pdf.Forms.ButtonField(document, new Aspose.Pdf.Rectangle(32 + i * 80, 28, 104 + i * 80, 68))
@@ -432,9 +429,8 @@ private static void AddNavigationButtons()
 			}
 		}
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "NavigationButtons_out.pdf");
-
 
 		// We call Form.Add method with the following parameters: field, name, and the index of the pages that this field will be added to.
 		// And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
@@ -494,7 +490,7 @@ private static void Add3dAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Load 3D content
@@ -531,7 +527,7 @@ private static void Add3dAnnotation()
 		// Add the 3D annotation to the page
 		document.Pages[1].Annotations.Add(pdf3dAnnotation);
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "Add3dAnnotation_out.pdf");
 	}
 }

@@ -153,7 +153,7 @@ private static void ConvertPDFtoMultiPageHTML()
             SplitIntoPages = true
         };
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "MultiPageHTML_out.html", htmlOptions);
     }
 }
@@ -169,7 +169,7 @@ private static void SavePDFtoHTMLWithSVG()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Instantiate HTML save options object
@@ -195,7 +195,7 @@ private static void SavePDFtoCompressedHTMLWithSVG()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
 
@@ -246,7 +246,7 @@ private static void SavePDFtoHTMLWithSeparateImageFolder()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Create HtmlSaveOptions with tested feature
@@ -276,7 +276,7 @@ private static void ConvertPDFToHTMLWithBodyContent()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Initialize HtmlSaveOptions
@@ -306,7 +306,7 @@ private static void ConvertPDFToHTMLWithTransparentTextRendering()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Initialize HtmlSaveOptions
@@ -333,7 +333,7 @@ private static void ConvertPDFToHTMLWithLayersRendering()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Instantiate HTML SaveOptions object
@@ -343,7 +343,7 @@ private static void ConvertPDFToHTMLWithLayersRendering()
             ConvertMarkedContentToLayers = true
         };
 
-        // Save the document as HTML
+        // Save PDF document as HTML
         document.Save(dataDir + "LayersRendering_out.html", htmlOptions);
     }
 }

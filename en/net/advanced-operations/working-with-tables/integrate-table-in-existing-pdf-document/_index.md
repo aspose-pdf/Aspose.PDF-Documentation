@@ -98,7 +98,7 @@ The example below demonstrates the use of the ImportDataTable method. In this ex
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 DataTable dt = new DataTable("Employee");
@@ -132,7 +132,7 @@ table.ImportDataTable(dt, true, 0, 1, 3, 3);
 // Add table object to first page of input document
 document.Pages[1].Paragraphs.Add(table);
 
-// Save updated document containing table object
+// Save PDF document containing table object
 document.Save(dataDir + "DataIntegrated_out.pdf");
 ```
 
@@ -142,7 +142,7 @@ Tables are by default added from top-left position and if the table reaches the 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 // Instantiate an object PDF class
@@ -209,11 +209,11 @@ In the Aspose.Pdf.Table class, you can set a RepeatingRowsCount that will repeat
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
+// The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
 string outFile = dataDir + "AddRepeatingColumn_out.pdf";
-// Create a new document
+// Create PDF document
 Document document = new Document();
 Page page = document.Pages.Add();
 
