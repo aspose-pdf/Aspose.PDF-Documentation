@@ -161,9 +161,9 @@ private static void SignDocument(string pfxFilePath, string password)
 }
 ```
 
-You can verify a signatures by using PdfFileSignature.VerifySignature() method.
-Previously, the "GetSignNames()" method was used to get signature names. Starting with version 25.02, the "GetSignatureNames()" method should be used, which returns the list of "SignatureName".
-The "SignatureName" allows to avoid collisions when verifying signatures with the same names.
+You can verify signatures by using PdfFileSignature.VerifySignature() method.
+Previously, the "GetSignNames()" method was used to get signature names. Starting with version 25.02, the "GetSignatureNames()" method should be used, which returns a list of "SignatureName".
+The "SignatureName" prevents collisions when verifying signatures with the same names.
 Methods that accept the SignatureName type instead of a string signature name should also be used.
 
 _Notes, the __PdfFileSignature.VerifySigned()__ method is deprecated._
