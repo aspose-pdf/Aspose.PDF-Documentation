@@ -156,6 +156,7 @@ private static void AddTextBorder()
         textFragment.TextState.DrawTextRectangleBorder = true;
         var tb = new Aspose.Pdf.Text.TextBuilder(page);
         tb.AppendText(textFragment);
+
         // Save PDF document
         document.Save(dataDir + "PDFWithTextBorder_out.pdf");
     }
@@ -217,7 +218,7 @@ private static void AddBorder()
         lineInfo.LineWidth = 2;
         lineInfo.VerticeCoordinate = new float[] { 0, 0, 100, 100, 50, 100 };
         lineInfo.Visibility = true;
-        //Add border
+        // Add border
         editor.CreatePolygon(lineInfo, 1, new System.Drawing.Rectangle(0, 0, 0, 0), "");
 
         // Save PDF document

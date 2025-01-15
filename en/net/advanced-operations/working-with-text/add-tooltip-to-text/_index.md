@@ -97,6 +97,7 @@ private static void AddTooltipToSearchedText()
         // Save PDF document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
     {
@@ -224,7 +225,7 @@ private static void CreateHiddenTextBlock()
         document.Form.Add(buttonField);
 
         // Save PDF document
-        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
+        document.Save(dataDir + "CreateHiddenTextBlock_out.pdf");
     }
 }
 ```

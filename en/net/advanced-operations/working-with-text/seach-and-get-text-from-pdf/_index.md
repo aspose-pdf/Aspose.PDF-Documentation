@@ -94,7 +94,6 @@ private static void Search()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
-
         // Create TextAbsorber object to find all instances of the input search phrase
         var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("text");
 
@@ -134,7 +133,6 @@ private static void Search()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
-
         // Create TextAbsorber object to find all instances of the input search phrase
         var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("text");
 
@@ -174,7 +172,6 @@ private static void Search()
         document.Pages.Accept(absorber);
         // Get result
         var result = absorber.RegexResults;
-
     }
 }
 ```
@@ -195,7 +192,6 @@ private static void Search()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextPage.pdf"))
     {
-
         // Create TextAbsorber object to find all instances of the input search phrase
         var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Figure");
 
@@ -238,7 +234,6 @@ private static void Search()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetTextFromAll.pdf"))
     {
-
         // Create TextAbsorber object to find all instances of the input search phrase
         var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("text");
 
@@ -262,7 +257,6 @@ private static void Search()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionAll.pdf"))
     {
-
         // Create TextAbsorber object to find all the phrases matching the regular expression
         var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
 
@@ -509,6 +503,7 @@ private static void SearchAndHighlight()
                         }
                     }
                 }
+                
                 // Save result
                 bmp.Save(dataDir + "HighlightCharacterInPDF_out.png", System.Drawing.Imaging.ImageFormat.Png);
             }

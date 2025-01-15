@@ -101,17 +101,16 @@ private static void MergeDocuments()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-    // Open first document
+    // Open PDF documents
     using (var document1 = new Aspose.Pdf.Document(dataDir + "Concat1.pdf"))
     {
-        // Open second document
         using (var document2 = new Aspose.Pdf.Document(dataDir + "Concat2.pdf"))
         {
             // Add pages of second document to the first
             document1.Pages.Add(document2.Pages);
 
             // Save PDF document
-            document1.Save(dataDir + "ConcatenatePdfFiles_out.pdf");
+            document1.Save(dataDir + "MergeDocuments_out.pdf");
         }
     }
 }

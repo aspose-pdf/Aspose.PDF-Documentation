@@ -121,7 +121,7 @@ private static void ReplaceTextInAllPages()
         }
 
         // Save PDF document
-        document.Save(dataDir + "ReplaceTextAll_out.pdf");
+        document.Save(dataDir + "ReplaceTextInAllPages_out.pdf");
     }
 }
 ```
@@ -282,7 +282,7 @@ private static void AutomaticallyReArrangePageContents()
         }
 
         // Save PDF document
-        document.Save(dataDir + "RearrangeContentsUsingTextReplacement_out.pdf");
+        document.Save(dataDir + "AutomaticallyReArrangePageContents_out.pdf");
     }
 }
 ```

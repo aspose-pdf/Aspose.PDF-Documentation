@@ -356,7 +356,7 @@ private static void ExampleXsltToPdf()
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
 
-    //Create pdf document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
     {
         // Save PDF document
@@ -403,7 +403,7 @@ private static void ExampleXsltToPDF()
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
 
-    //Create pdf document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
 
     // Save PDF document
@@ -1464,24 +1464,20 @@ private static void CreateDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    string inXml = dataDir + "input.xml";
-    string inFile = dataDir + "aspose-logo.jpg";
-    string outFile = dataDir + "output_out.pdf";
-
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Bind source XML file
-        document.BindXml(inXml);
+        // Bind XML file
+        document.BindXml(dataDir + "input.xml");
 
         // Get reference of Image with ID testImg
         var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
 
         // Set image file
-        image.File = inFile;
+        image.File = dataDir + "aspose-logo.jpg";
 
         // Save PDF document
-        document.Save(outFile);
+        document.Save(dataDir + "output_out.pdf");
     }
 }
 ```
@@ -1495,24 +1491,20 @@ private static void CreateDocument()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    string inXml = dataDir + "input.xml";
-    string inFile = dataDir + "aspose-logo.jpg";
-    string outFile = dataDir + "output_out.pdf";
-
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
     // Bind source XML file
-    document.BindXml(inXml);
+    document.BindXml(dataDir + "input.xml");
 
     // Get reference of Image with ID testImg
     var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
 
     // Set image file
-    image.File = inFile;
+    image.File = dataDir + "aspose-logo.jpg";
 
     // Save PDF document
-    document.Save(outFile);
+    document.Save(dataDir + "output_out.pdf");
 }
 ```
 {{< /tab >}}

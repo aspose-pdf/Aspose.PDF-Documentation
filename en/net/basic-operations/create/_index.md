@@ -90,14 +90,16 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 // The path to the documents directory
 string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-// Initialize document object
-Document document = new Document();
-// Add page
-Page page = document.Pages.Add();
-// Add text to new page
-page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-// Save PDF document
-document.Save(dataDir + "HelloWorld_out.pdf")
+// Create PDF document
+using (var document = new Document())
+{
+    // Add page
+    Page page = document.Pages.Add();
+    // Add text to new page
+    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+    // Save PDF document
+    document.Save(dataDir + "HelloWorld_out.pdf");
+}
 ```
 
 In this case, we create a PDF one-page document with A4 page size, portrait orientation. Our page will contain a "Hello, World" in the upper left part of the page.

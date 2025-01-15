@@ -123,7 +123,7 @@ private static void RotateTextInsidePDF()
         textBuilder.AppendText(textFragment2);
         textBuilder.AppendText(textFragment3);
         // Save PDF document
-        document.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```
@@ -172,7 +172,7 @@ private static void RotateTextInsidePDF()
         // Append the text paragraph to the PDF page
         textBuilder.AppendParagraph(paragraph);
         // Save PDF document
-        document.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```
@@ -214,7 +214,7 @@ private static void RotateTextInsidePDF()
         page.Paragraphs.Add(textFragment2);
         page.Paragraphs.Add(textFragment3);
         // Save PDF document
-        document.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```
@@ -270,7 +270,7 @@ private static void RotateTextInsidePDF()
             textBuilder.AppendParagraph(paragraph);
         }
         // Save PDF document
-        document.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```

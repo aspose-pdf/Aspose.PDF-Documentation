@@ -96,6 +96,7 @@ private static void AttachZUGFeRD()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-testInput.pdf"))
     {
