@@ -82,7 +82,7 @@ sitemap:
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllAnnotations()
 {
     // The path to the documents directory
@@ -106,7 +106,7 @@ private static void DeleteAllAnnotations()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllAnnotations()
 {
     // The path to the documents directory
@@ -135,7 +135,7 @@ You can use [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pd
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllAnnotationByType()
 {
     // The path to the documents directory
@@ -192,7 +192,7 @@ private static void DeleteAllAnnotationByType()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllAnnotationByType()
 {
     // The path to the documents directory
@@ -253,7 +253,7 @@ You can use the [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspos
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAnnotationByName()
 {
     // The path to the documents directory
@@ -292,7 +292,7 @@ private static void DeleteAnnotationByName()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAnnotationByName()
 {
     // The path to the documents directory

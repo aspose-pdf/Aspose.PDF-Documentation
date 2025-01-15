@@ -80,7 +80,7 @@ In order to update an existing bookmark in a PDF file, you need to use [ModifyBo
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void UpdateExistingBookmark()
 {
     // The path to the documents directory
@@ -104,7 +104,7 @@ private static void UpdateExistingBookmark()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void UpdateExistingBookmark()
 {
     // The path to the documents directory
@@ -133,7 +133,7 @@ You can delete all the bookmarks from the PDF file using [DeleteBookmarks](https
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllBookmarks()
 {
     // The path to the documents directory
@@ -157,7 +157,7 @@ private static void DeleteAllBookmarks()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllBookmarks()
 {
     // The path to the documents directory
@@ -186,7 +186,7 @@ In order to delete a particular bookmark, you need to call [DeleteBookmarks](htt
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteParticularBookmark()
 {
     // The path to the documents directory
@@ -210,7 +210,7 @@ private static void DeleteParticularBookmark()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteParticularBookmark()
 {
     // The path to the documents directory
@@ -239,7 +239,7 @@ The [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetBookmarksFromDocument()
 {
     // The path to the documents directory
@@ -273,7 +273,7 @@ private static void GetBookmarksFromDocument()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetBookmarksFromDocument()
 {
     // The path to the documents directory
@@ -312,7 +312,7 @@ private static void GetBookmarksFromDocument()
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExtractBookmarksFromPDFFile()
 {
     // The path to the documents directory
@@ -346,7 +346,7 @@ private static void ExtractBookmarksFromPDFFile()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExtractBookmarksFromPDFFile()
 {
     // The path to the documents directory

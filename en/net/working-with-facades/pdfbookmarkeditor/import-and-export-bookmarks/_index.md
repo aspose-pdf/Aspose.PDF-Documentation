@@ -80,7 +80,7 @@ draft: false
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ImportBookmarksFromXML()
 {
     // The path to the documents directory
@@ -104,7 +104,7 @@ private static void ImportBookmarksFromXML()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ImportBookmarksFromXML()
 {
     // The path to the documents directory
@@ -141,7 +141,7 @@ The following code snippet shows you how to export bookmarks to an XML file.
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExportBookmarksToXML()
 {
     // The path to the documents directory
@@ -162,7 +162,7 @@ private static void ExportBookmarksToXML()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExportBookmarksToXML()
 {
     // The path to the documents directory

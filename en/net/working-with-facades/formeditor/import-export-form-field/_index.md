@@ -76,7 +76,7 @@ draft: false
 Aspose.PDF for .NET provides great capabilities for create/manipulating form fields inside PDF document. Using this API, you can programmatically fill form fields inside PDF file, fill form fields by [Import Data from FDF into a PDF File](/pdf/net/import-and-export-data/), [Import Data from XFDF into a PDF File](/pdf/net/import-and-export-data/), [Import Data from XML into a PDF File](/pdf/net/import-and-export-data/) or even you can import data from [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) object.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ImportData()
 {
     // The path to the documents directory
@@ -114,7 +114,7 @@ private static void ImportData()
 ## Export Data from FDF into a PDF File
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExportData()
 {
     // The path to the documents directory
