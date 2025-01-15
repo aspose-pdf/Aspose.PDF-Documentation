@@ -97,7 +97,7 @@ The ImportDataTable(..) and ImportDataView(..) methods of the Table class are us
 The example below demonstrates the use of the ImportDataTable method. In this example, the DataTable object is created from scratch and records are added programmatically instead of filling the DataTable with data from databases. Developers can populate DataTable from the database too according to their desire.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFromDataTable()
 {
     // The path to the documents directory
@@ -146,7 +146,7 @@ private static void ImportFromDataTable()
 Tables are by default added from top-left position and if the table reaches the end of the page, it automatically breaks. You can programmatically get the information that either the Table will be accommodated in the current page or it will break at the bottom of the page. For that reason, first, you need to get the document size information, then you need to get the page Top and page Bottom margin information, Table top margin information and table height. If you add page Top Margin + page Bottom Margin + table Top Margin + table Height and deduct it from the document height, you can get the amount of space remaining over the document. Depending upon the particular height of row (which you have specified), you can calculate that if all the rows of a table can be accommodated within the remaining space over a page or not. Please take a look over the following code snippet. In the following code, the average row height is 23.002 Points.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DetermineTableBreak()
 {
     // The path to the documents directory
@@ -218,7 +218,7 @@ private static void DetermineTableBreak()
 In the Aspose.Pdf.Table class, you can set a RepeatingRowsCount that will repeat rows if the table is too long vertically and overflows to the next page. However, in some cases, tables are too wide to fit on a single page and needs to be continued to the next page. In order to serve the purpose, we have implemented RepeatingColumnsCount property in Aspose.Pdf.Table class. Setting this property will cause the table to break to next page column-wise and repeat given column count in the start of the next page. Following code snippet shows the usage of RepeatingColumnsCount property:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRepeatingColumn()
 {
     // The path to the documents directory
@@ -296,7 +296,7 @@ private static void AddRepeatingColumn()
 More relevant for modern .NET is the import of data from ORM frameworks. In this case, it's a good idea to extend the Table class with extension methods for importing data from a simple list or from the grouped data. Let's give an example for one of the most popular ORMs - Entity Framework.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 public static class PdfHelper
 {
     private static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)

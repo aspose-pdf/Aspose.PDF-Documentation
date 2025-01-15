@@ -87,7 +87,7 @@ To delete an image from a PDF file:
 The following code snippet shows how to delete an image from a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DeleteImageFromPDF()
 {
     // The path to the documents directory

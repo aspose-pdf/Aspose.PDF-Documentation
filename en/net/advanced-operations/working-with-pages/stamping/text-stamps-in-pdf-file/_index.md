@@ -85,7 +85,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to add text stamp in the PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextStamp()
 {
     // The path to the documents directory
@@ -124,7 +124,7 @@ Adding watermarks to PDF documents is one of the frequent demanded features and 
 The following code snippets shows an example on how to load an existing PDF document and add TextStamp over it.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DefineAlignmentForTextStampObject()
 {
     // The path to the documents directory
@@ -165,7 +165,7 @@ We have implemented setting of rendering mode for text adding and editing scenar
 Following code snippet demonstrates adding Fill Stroke Text:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FillStrokeTextAsStampInPdfFile()
 {
     // The path to the documents directory
@@ -205,7 +205,7 @@ private static void FillStrokeTextAsStampInPdfFile()
 The following code snippet demonstrates how to add a text stamp to a PDF file and automatically adjust the font size to fit the stamp rectangle.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStamp()
 {
     // The path to the documents directory
@@ -234,7 +234,7 @@ private static void AutoSetTheFontSizeOfTextStamp()
 The following code snippet demonstrates how to add a text stamp to a PDF file and automatically adjust the font size to fit the stamp rectangle. The stamp rectangle defaults to the page size.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
 {
     // The path to the documents directory

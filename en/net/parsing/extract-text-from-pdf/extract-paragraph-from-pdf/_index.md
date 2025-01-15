@@ -85,7 +85,7 @@ We can get text from a PDF document by searching a particular text (using "plain
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractParagraphWithDrawingTheBorder()
 {
     // The path to the documents directory
@@ -152,7 +152,7 @@ private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Pag
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractParagraphByIteratingThroughParagraphsCollection()
 {
     // The path to the documents directory

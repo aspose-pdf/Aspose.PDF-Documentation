@@ -90,7 +90,7 @@ Also, [Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/
 The following code snippet shows you how to Import FDF format annotations to PDF with Form.ImportFdf() method:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFDFByForm()
 {
     // The path to the documents directory
@@ -112,8 +112,7 @@ private static void ImportFDFByForm()
 The next code snippet shows how to import FDF format annotations to PDF with PdfAnnotationEditor.ImportAnnotationsFromFdf() method:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFdfByPdfAnnotationEditor()
 {
     // The path to the documents directory

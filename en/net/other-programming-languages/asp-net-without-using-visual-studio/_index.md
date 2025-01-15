@@ -86,7 +86,7 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
 {{% /alert %}}
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 <%@ Page Language ="C#" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.IO" %>

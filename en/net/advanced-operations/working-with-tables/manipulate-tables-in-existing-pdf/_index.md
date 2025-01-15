@@ -82,7 +82,7 @@ One of the earliest features supported by Aspose.PDF for .NET is its capabilitie
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ManipulateTable()
 {
     // The path to the documents directory
@@ -114,7 +114,7 @@ private static void ManipulateTable()
 In case you need to find a particular table and replace it with the desired one, you can use Replace() the method of [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) Class in order to do that. Following example demonstrate the functionality to replace the table inside PDF document:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ReplaceTable()
 {
     // The path to the documents directory

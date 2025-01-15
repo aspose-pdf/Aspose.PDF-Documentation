@@ -86,19 +86,22 @@ To create a PDF file using C#, the following steps can be used.
 The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
-
-// Create PDF document
-using (var document = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void HelloWorld()
 {
-    // Add page
-    Page page = document.Pages.Add();
-    // Add text to new page
-    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-    // Save PDF document
-    document.Save(dataDir + "HelloWorld_out.pdf");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Create PDF document
+    using (var document = new Document())
+    {
+        // Add page
+        Page page = document.Pages.Add();
+        // Add text to new page
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+        // Save PDF document
+        document.Save(dataDir + "HelloWorld_out.pdf");
+    }
 }
 ```
 

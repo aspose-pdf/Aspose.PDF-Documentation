@@ -92,7 +92,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to fill fields in XFA form.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FillXFAFields()
 {
     // The path to the documents directory
@@ -139,8 +139,7 @@ Currently, PDF supports two different methods for integrating data and PDF forms
 We cannot extract or manipulate pages of XFA Forms, because the form content is generated at runtime (during XFA form viewing) within the application trying to display or render the XFA form. Aspose.PDF has a feature that allows developers to convert XFA forms to standard AcroForms.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertDynamicXFAToAcroForm()
 {
     // The path to the documents directory
@@ -163,8 +162,7 @@ private static void ConvertDynamicXFAToAcroForm()
 To access field properties, first use Document.Form.XFA.Template to access the field template. The following code snippet shows the steps of getting X and Y coordinates of XFA a form field.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetXFAProperties()
 {
     // The path to the documents directory

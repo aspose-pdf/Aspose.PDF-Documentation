@@ -91,7 +91,7 @@ We recommend following steps to attach ZUGFeRD to PDF:
 * Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AttachZUGFeRD()
 {
     // The path to the documents directory

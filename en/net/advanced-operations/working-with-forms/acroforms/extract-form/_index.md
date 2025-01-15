@@ -88,7 +88,7 @@ To get values from all the fields in a PDF document, you need to navigate throug
 The following C# code snippets show how to get the values of all the fields from a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetValuesFromFields()
 {
     // The path to the documents directory
@@ -112,8 +112,7 @@ private static void GetValuesFromFields()
 The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object's Form collection. This C# example selects a [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetValueFromField()
 {
     // The path to the documents directory
@@ -136,8 +135,7 @@ private static void GetValueFromField()
 To get the submit button's URL, use the following lines of code.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetSubmitFormActionUrl()
 {
     // The path to the documents directory
@@ -168,7 +166,7 @@ Sometimes, you might know where in a document a form field is, but not have it's
 The following C# code snippet shows how to get form fields in a specific rectangular region of a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetFieldsFromRegion()
 {
     // The path to the documents directory

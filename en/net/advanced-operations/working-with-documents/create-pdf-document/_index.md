@@ -95,7 +95,7 @@ To create a PDF file using C#, the following steps can be used.
 1. Save the resultant PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateHelloWorldDocument()
 {
     // The path to the documents directory
@@ -123,8 +123,7 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateSearchableDocument()
 {
     // The path to the documents directory
@@ -220,8 +219,7 @@ Steps to creating an accessible PDF:
 1. Save the Modified Document.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateAnAccessibleDocument()
 {
     // The path to the documents directory

@@ -79,7 +79,7 @@ lastmod: "2022-02-17"
 The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPdfToImageWithDefaultFont()
 {
     // The path to the documents directory

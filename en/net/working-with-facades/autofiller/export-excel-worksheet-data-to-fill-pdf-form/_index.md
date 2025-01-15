@@ -98,7 +98,7 @@ Once the method is called a new Pdf form file is generated, which contains five 
 |![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_5.png)|![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_6.png)|
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExportExcelToPdfForm()
 {
     // The path to the documents directory
@@ -133,7 +133,7 @@ private static void ExportExcelToPdfForm()
 For filling from XLSX please use next code snippet:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FillFromXLSX()
 {
     // The path to the documents directory
@@ -159,7 +159,7 @@ private static void FillFromXLSX()
 Aspose.PDF for .NET allows you to generate Data Table in PDF document:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static System.Data.DataTable GenerateDataTable()
 {
     string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };

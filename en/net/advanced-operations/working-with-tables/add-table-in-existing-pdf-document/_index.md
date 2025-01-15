@@ -104,7 +104,7 @@ To add a table to an existing PDF file with Aspose.PDF for .NET, take the follow
 The following code snippets show how to add text in an existing PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTable()
 {
     // The path to the documents directory
@@ -145,7 +145,7 @@ Aspose.PDF for .NET provides [ColSpan](https://reference.aspose.com/pdf/net/aspo
 We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the table cell. After applying the required properties the created cell can be added to the table.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTableRowColSpan()
 {
     // The path to the documents directory
@@ -236,7 +236,7 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 ![Margin and Border in PDF Table](margin-border.png)
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddMarginsOrPadding()
 {
     // The path to the documents directory
@@ -287,7 +287,7 @@ private static void AddMarginsOrPadding()
 To create table with rounded corner, use the BorderInfo class' `RoundedBorderRadius` value and set the table corner style to round.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateTableWithRoundCorner()
 {
     Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
@@ -314,7 +314,7 @@ By default Aspose.PDF inserts a new table using `ColumnAdjustment` with `Customi
 As in Microsoft Word, an autofit method is actually a shortcut which applies different properties to the table all at once. These properties are actually what give the table the observed behavior. We will discuss these properties for each autofit option. We will use the following table and apply the different auto fit settings as a demonstration:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddAutoFitToWindow()
 {
     // The path to the documents directory
@@ -371,7 +371,7 @@ private static void AddAutoFitToWindow()
 Sometimes, it is required to get table width dynamically. Aspose.PDF.Table class has a method [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) for the purpose. For example, you have not set table columns width explicitly and set [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) to AutoFitToContent. In this case you can get table width as following.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetTableWidth()
 {
     // Create PDF document
@@ -402,7 +402,7 @@ Aspose.PDF for .NET supports the feature to add a table cell into a PDF file. Wh
 The following code snippet shows the steps for creating a table instance and adding an SVG image inside a table cell.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddSvgObjectToTable()
 {
     // The path to the documents directory
@@ -457,7 +457,7 @@ Please take into account that using of HTML Tags inside table element increases 
 {{% /alert %}}
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddHtmlInsideTableCell()
 {
     // The path to the documents directory
@@ -507,7 +507,7 @@ private static void AddHtmlInsideTableCell()
 As a default behavior, when creating a table inside a PDF file, the table flows to subsequent pages when it reaches tables Bottom margin. However, we may have a requirement to forcefully insert page break when a certain number of rows are added for table. The following code snippet shows the steps to insert page break when 10 rows are added for the table.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertPageBreak()
 {
     // The path to the documents directory
@@ -560,7 +560,7 @@ By default, paragraphs are added to a Page object's Paragraphs collection. Howev
 To render table on a new page, use the [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) property in the BaseParagraph class. The following code snippet shows how.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTableOnNewPage()
 {
     // The path to the documents directory

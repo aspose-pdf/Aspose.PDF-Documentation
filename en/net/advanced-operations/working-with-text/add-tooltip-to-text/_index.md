@@ -83,7 +83,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 It is often required to add some details for a phrase or specific word as a tooltip in the PDF document so that it can popup when the user hovers the mouse cursor over the text. Aspose.PDF for .NET provides this feature to create tooltips by adding an invisible button over the searched text. The following code snippet will show you the way to achieve this functionality:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToSearchedText()
 {
     // The path to the documents directory
@@ -164,7 +164,7 @@ Please also take into account that PDF actions in the documents work fine in the
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateHiddenTextBlock()
 {
     // The path to the documents directory

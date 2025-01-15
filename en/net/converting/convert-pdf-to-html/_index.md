@@ -220,7 +220,7 @@ private static void SavePDFtoCompressedHTMLWithSVG()
 The default output format for saving images is SVG. During conversion, some images from PDF are transformed into SVG vector images. This could be slow. Instead, the images could be transformed into one PNG background file for each page.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PdfToHtmlSaveImagesAsPngBackground()
 {
     // The path to the documents directory

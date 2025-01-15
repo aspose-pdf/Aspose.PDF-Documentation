@@ -92,7 +92,7 @@ You need to set the TopMargin property in such a way that it adjusts the text in
 The following code snippet shows you how to add text in the header of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddHeaderText()
 {
     // The path to the documents directory
@@ -134,7 +134,7 @@ You need to set the Bottom Margin property in such a way that it adjusts the tex
 The following code snippet shows you how to add text in the footer of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFooterText()
 {
     // The path to the documents directory
@@ -176,7 +176,7 @@ You need to set the TopMargin property in such a way that it adjusts the image i
 The following code snippet shows you how to add image in the header of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageHeader()
 {
     // The path to the documents directory
@@ -218,7 +218,7 @@ You need to set the [BottomMargin](https://reference.aspose.com/pdf/net/aspose.p
 The following code snippet shows you how to add image in the footer of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageFooter()
 {
     // The path to the documents directory
@@ -254,7 +254,7 @@ We know that we can add TextStamp in Header/Footer section of the document by us
 In order to accomplish this requirement, we will create individual TextStamp objects (number of objects depends upon the number of Header/Footers required)and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created Document object and three TextStamp objects and then we have used [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file with Aspose.PDF for .NET.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddDifferentHeaders()
 {
     // The path to the documents directory

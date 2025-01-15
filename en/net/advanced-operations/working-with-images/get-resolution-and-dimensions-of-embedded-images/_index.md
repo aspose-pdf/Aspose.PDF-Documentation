@@ -114,7 +114,7 @@ We also have a class named XImage which provides two properties,l Width and Heig
 The following code snippet shows you how to get an image's dimensions and resolution without extracting the image from the PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractImageInformationFromPDF()
 {
     // The path to the documents directory

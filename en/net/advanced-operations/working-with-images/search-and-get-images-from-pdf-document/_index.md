@@ -86,7 +86,7 @@ To search a whole document for images:
 The following code snippet shows how to search a document for all its images.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractImagesFromPDF()
 {
     // The path to the documents directory
@@ -123,7 +123,7 @@ private static void ExtractImagesFromPDF()
 To get an image from an individual page, use the following code:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractImageFromAnIndividualPage()
 {
     // The path to the documents directory

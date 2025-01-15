@@ -93,7 +93,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following example shows table extraction from the all pages:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTable()
 {
     // The path to the documents directory
@@ -142,7 +142,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following example show how to extract table marked with Square Annotation:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractMarkedTable()
 {
     // The path to the documents directory
@@ -200,7 +200,7 @@ To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to E
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTableSaveExcel()
 {
     // The path to the documents directory

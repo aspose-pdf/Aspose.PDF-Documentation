@@ -274,7 +274,7 @@ Different type of compression can be applied over images to reduce their size. T
 A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements and if the source PDF file contains images, we can determine image Color space and apply appropriate compression for image to reduce PDF file size. The following code snippet shows the steps to Identify if image inside PDF is Colored or Black & White.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractImageTypesFromPDF()
 {
     // The path to the documents directory
@@ -371,7 +371,6 @@ Stencil mask can be added by 'XImage.AddStencilMask(Stream maskStream)' method:
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddStencilMasksToImages()
 {
     // The path to the documents directory

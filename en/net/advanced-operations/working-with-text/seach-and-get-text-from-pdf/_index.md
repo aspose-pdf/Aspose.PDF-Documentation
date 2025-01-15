@@ -85,7 +85,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to search for text from all the pages.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory
@@ -124,7 +124,7 @@ private static void Search()
 In case you need to search text inside any particular PDF page, please specify the page number from pages collection of Document instance and call Accept method against that page (as shown in code line below).
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory
@@ -147,7 +147,7 @@ private static void Search()
 The C# library can only pass one phrase to the TextFragmentAbsorber, but since the 24.2 release of Aspose.PDF, it implemented a new algorithm for searching the list search algorithm.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // Create resular expressions
@@ -183,7 +183,7 @@ The code snippet searches for specific patterns like document numbers, keywords,
 In order to search text segments from all the pages, you first need to get the TextFragment objects from the document. TextFragmentAbsorber allows you to find text, matching a particular phrase, from all the pages of a PDF document. In order to search text from the whole document, you need to call the Accept method of Pages collection. The Accept method takes TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. Once the TextFragmentCollection is fetched from the document, you need to loop through this collection and get TextSegmentCollection of each TextFragment object. After that, you can get all the properties of the individual TextSegment object. The following code snippet shows you how to search text segments from all the pages.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory
@@ -225,7 +225,7 @@ private static void Search()
 In order to search and get TextSegments from a particular page of PDF, you need to specify the particular page index when calling Accept(..) method. Please take a look at the following code lines.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory
@@ -248,7 +248,7 @@ private static void Search()
 TextFragmentAbsorber helps you search and retrieve text, from all the pages, based on a regular expression. First, you need to pass a regular expression to TextFragmentAbsorber constructor as the phrase. After that, you have to set the TextSearchOptions property of the TextFragmentAbsorber object. This property requires TextSearchOptions object and you need to pass true as a parameter to its constructor while creating new objects. As you want to retrieve matching text from all the pages, you need to call Accept method of Pages collection. TextFragmentAbsorber returns a TextFragmentCollection containing all the fragments matching the criteria specified by the regular expression. The following code snippet shows you how to search and get text from all the pages based on a regular expression.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory
@@ -290,7 +290,7 @@ private static void Search()
 ```
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void TextFragmentAbsorberCtor()
 {
     Aspose.Pdf.Text.TextFragmentAbsorber textFragmentAbsorber;
@@ -328,7 +328,7 @@ To find a phrase and add hyperlink over it:
 The following code snippet shows you how to search text inside a PDF file using a regular expression and adding hyperlinks over the matches.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory
@@ -380,7 +380,7 @@ Aspose.PDF for .NET supports the feature to search and get the coordinates of ea
 In case of a text paragraph, you may consider using some regular expression to determine the paragraph break and draw a rectangle around it. Please take a look at the following code snippet. The following code snippet gets coordinates of each character and creates a rectangle around each character.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndDraw()
 {
     // The path to the documents directory
@@ -425,7 +425,7 @@ You can try searching for text in a document using Aspose.PDF and get the result
 Aspose.PDF for .NET supports the feature to search and get the coordinates of each character or text fragments. So in order to be certain about the coordinates being returned for each character, we may consider highlighting (adding rectangle) around each character. The following code snippet gets coordinates of each character and creates a rectangle around each character.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SearchAndHighlight()
 {
     // The path to the documents directory
@@ -517,7 +517,7 @@ private static void SearchAndHighlight()
 Sometimes we want to add hidden text in a PDF document and then search hidden text and use its position for post-processing. For your convenience, Aspose.PDF for .NET provides these abilities. You can add hidden text during document generation. Also, you can find hidden text using TextFragmentAbsorber. To add hidden text ,set TextState.Invisible to ‘true’ for the added text. TextFragmentAbsorber finds all text that matches the pattern (if specified). It is the default behavior that can’t be changed. In order to verify if the found text is actually invisible, the TextState.Invisible property can be used. The code snippet below shows how to use this feature.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateAndSearchText()
 {
     // The path to the documents directory
@@ -560,7 +560,7 @@ private static void CreateAndSearchText()
 Aspose.PDF for .NET provides the ability to search documents using the standard .NET Regex option. The TextFragmentAbsorber can be used for this purpose as shown in the code sample below.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Search()
 {
     // The path to the documents directory

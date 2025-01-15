@@ -79,7 +79,7 @@ The PDF documents are usually comprised of Text, Image, Table, Attachments, Grap
 According to Document Object Model of Aspose.PDF for .NET, a PDF file contains one or more pages where each page contains collection of Images, Forms and Fonts in Resources object. So in order to extract images from PDF file, we will traverse through individual pages of PDF file, get the collection of Images from particular page and save them in MemoryStream object for further processing with BarCodeReader class of Aspose.BarCodeRecognition.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void IdentifyBarcodes()
 {
     // The path to the documents directory

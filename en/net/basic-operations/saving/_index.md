@@ -86,7 +86,7 @@ You can save the created or manipulated PDF document to file system using `Save`
 When you do not provide the format type (options), then the document is saved in Aspose.PDF v.1.7 (*.pdf) format.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocument()
 {
     // The path to the documents directory
@@ -108,7 +108,7 @@ private static void SaveDocument()
 You can also save the created or manipulated PDF document to stream by using overloads of `Save` methods.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocumentStream()
 {
     // The path to the documents directory
@@ -137,7 +137,7 @@ PDF/X is a subset of the PDF ISO standard. The purpose of PDF/X is to facilitate
 In both cases, the `Save` method is used to store the documents, while the documents must be prepared using the `Convert` method.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SaveDocumentAsPDFx()
 {
     // The path to the documents directory

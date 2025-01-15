@@ -84,7 +84,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The FormEditor class SetFieldLimit(field, limit) method allows you to set a field limit, the maximum number of characters that can be entered into a field.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetFieldLimit()
 {
     // The path to the documents directory
@@ -108,8 +108,7 @@ private static void SetFieldLimit()
 Similarly, Aspose.PDF has a method that gets the field limit using the DOM approach. The following code snippet shows the steps.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetFieldLimitUsingDOM()
 {
     // The path to the documents directory
@@ -130,8 +129,7 @@ private static void GetFieldLimitUsingDOM()
 You can also get the same value using the *Aspose.Pdf.Facades* namespace using the following code snippet.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetFieldLimitUsingFacades()
 {
     // The path to the documents directory
@@ -156,8 +154,7 @@ Form fields in Adobe PDF files can be configured to use specific default fonts. 
 The following code snippet shows how to set the default font for PDF form fields.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetFormFieldFont()
 {
     // The path to the documents directory
@@ -187,8 +184,7 @@ private static void SetFormFieldFont()
 All the form fields are contained in the Document object's Form collection. This collection provides different methods that manage form fields, including the Delete method. If you want to delete a particular field, pass the field name as a parameter to the Delete method and then save the updated PDF document. The following code snippet shows how to delete a particular field from a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DeleteFormField()
 {
     // The path to the documents directory

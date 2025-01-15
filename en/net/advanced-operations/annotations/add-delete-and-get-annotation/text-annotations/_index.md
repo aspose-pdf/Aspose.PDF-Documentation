@@ -94,7 +94,7 @@ To add an annotation to a particular page, add it to that page's Annotations col
 The following code snippet shows you how to add an annotation in a PDF page.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextAnnotationToPdf()
 {
     // The path to the documents directory
@@ -219,7 +219,7 @@ private static void AddFreeTextAnnotationDemo()
 For a more flexible configuration of annotation in the PDF document, Aspose.PDF for .NET provides [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) property of [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) class which allows specifying Array of point of callout line. The following code snippet show, how to use this functionality:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFreeTextCalloutAnnotation()
 {
     // The path to the documents directory
@@ -263,7 +263,7 @@ private static void AddFreeTextCalloutAnnotation()
 If you use import from XFDF file please use callout-line name instead just Callout. The following code snippet shows, how to use this functionality:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportAnnotationsFromXfdf()
 {
     // The path to the documents directory
@@ -318,7 +318,7 @@ private static void CreateXfdf(ref StringBuilder pXfdf)
 Sometimes, it is necessary to create a watermark that isn’t visible in the document when viewing it but should be visible when the document is printed. Use annotation flags for this purpose. The following code snippet shows how.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddInvisibleAnnotation()
 {
     // The path to the documents directory
@@ -461,8 +461,7 @@ A [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object's [Annotat
 The following code snippet shows you how to delete all the annotations from a particular page.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DeleteAllAnnotationsFromPage()
 {
     // The path to the documents directory
@@ -494,8 +493,7 @@ Aspose.PDF allows you to remove a particular Annotation from PDF file. This topi
 To delete a particular annotation from a PDF, call the [AnnotationCollection collection's Delete method](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). This collection belongs to the [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object. The Delete method requires the index of the annotation you want to delete. Then, save the updated PDF file. The following code snippet shows how to delete a particular annotation.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DeleteParticularAnnotation()
 {
     // The path to the documents directory
@@ -518,8 +516,7 @@ private static void DeleteParticularAnnotation()
 Aspose.PDF allows you to get annotations from an entire document, or from a given page. To get all annotations from the page in a PDF document, loop through the [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection of desired page resources. The following code snippet shows you how to get all the annotations of a page.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetAllAnnotationsFromPage()
 {
     // The path to the documents directory
@@ -547,8 +544,7 @@ Please note that to get all annotations from the whole PDF, you have to loop thr
 Annotations are associated with individual pages and stored in a [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) object's [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) collection. To get a particular annotation, specify its index. This returns an [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) object which needs to be cast to a particular annotation type, for example [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). The following code snippet shows how to get a particular annotation and its properties.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetParticularAnnotation()
 {
     // The path to the documents directory
@@ -573,8 +569,7 @@ private static void GetParticularAnnotation()
 Aspose.PDF allows you to get a resource of annotation from an entire document, or from a given page. The following code snippet shows you how to get the resource of annotation as [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) object of input PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddAndGetResourceOfAnnotation()
 {
     // The path to the documents directory

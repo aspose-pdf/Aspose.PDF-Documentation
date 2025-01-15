@@ -85,7 +85,7 @@ Aspose.PDF for .NET offers SubsequentLinesIndent property into [TextFormattingOp
 Please use the following code snippet to use the property:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void TextFormattingInsidePdf()
 {
     // The path to the documents directory
@@ -131,7 +131,7 @@ private static void TextFormattingInsidePdf()
 The following code snippet shows, how to add a border to a text using TextBuilder and setting DrawTextRectangleBorder property of TextState:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBorder()
 {
     // The path to the documents directory
@@ -168,7 +168,7 @@ private static void AddTextBorder()
 The following code snippet shows you how to add Underline text while creating a new PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddUnderlineText()
 {
     // The path to the documents directory
@@ -204,7 +204,7 @@ private static void AddUnderlineText()
 You have control over the look and feel of the text you add. The example below shows how to add a border around a piece of text that you have added by drawing a rectangle around it. Find out more about the [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) class.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddBorder()
 {
     // The path to the documents directory
@@ -239,7 +239,7 @@ TextFragment doesn’t support line feed inside the text. However in order to ad
 Please use below code snippet.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddNewLine()
 {
     // The path to the documents directory
@@ -286,7 +286,7 @@ The TextState class provides the capabilities to set formatting for TextFragment
 Please use complete code snippet:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddStrikeoutText()
 {
     // The path to the documents directory
@@ -328,7 +328,7 @@ private static void AddStrikeoutText()
 Text formatting has been further enhanced in the API for text editing scenarios and now you can add text with pattern colorspace inside PDF document. Aspose.Pdf.Color Class has further been enhanced by introducing new property of PatternColorSpace, which can be used to specify shading colors for the text. This new property adds different Gradient Shading to the text e.g. Axial Shading, Radial (Type 3) Shading as shown in the following code snippet:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ApplyGradientShadingToText()
 {
     // The path to the documents directory
@@ -362,7 +362,7 @@ private static void ApplyGradientShadingToText()
 Aspose.PDF supports setting text alignment for contents inside a Floating Box element. The alignment properties of Aspose.Pdf.FloatingBox instance can be used to achieve this as shown in the following code sample.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AlignTextToFloat()
 {
     // The path to the documents directory
@@ -416,7 +416,7 @@ First, the code snippet creates a Document object from a file. Then, it adds a T
 This method keeps visible text intact and preserves the layout.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemoveHiddenText()
 {
     // The path to the documents directory

@@ -95,7 +95,7 @@ To add a form field:
 Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
 {
     // The path to the documents directory
@@ -132,8 +132,7 @@ private static void AddTextBoxFieldToPdf()
 The following code snippets show how to add [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) in a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonToPdf()
 {
     // The path to the documents directory
@@ -166,8 +165,7 @@ private static void AddRadioButtonToPdf()
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonWithOptionsToPdf()
 {
     // The path to the documents directory
@@ -255,8 +253,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 Following code snippet shows how to add caption which will be associated with RadioButtonField:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingCaptionToRadioButtonField()
 {
     // The path to the documents directory
@@ -315,8 +312,7 @@ private static void AddingCaptionToRadioButtonField()
 The following code snippets show how to add ComboBox field in a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddComboBoxToPdf()
 {
     // The path to the documents directory
@@ -353,8 +349,7 @@ The Document class provides a collection named Form which manages form fields in
 The code snippets that follow show how to add a tooltip to a form field, first using C# and then Visual Basic.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToField()
 {
     // The path to the documents directory

@@ -612,7 +612,7 @@ private static void AddInkAnnotation()
 The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddInkAnnotationWithLineWidth()
 {
     // The path to the documents directory
@@ -678,7 +678,7 @@ private static void AddInkAnnotationWithLineWidth()
 The following code snippet shows how to Delete Circle Annotation from PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DeleteCircleAnnotation()
 {
 	// The path to the documents directory

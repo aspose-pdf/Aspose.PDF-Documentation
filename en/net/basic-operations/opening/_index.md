@@ -85,7 +85,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocument()
 {
     // The path to the documents directory
@@ -102,7 +102,7 @@ private static void OpenDocument()
 ## Open existing PDF document from stream
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocumentStream()
 {
     var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
@@ -128,7 +128,7 @@ private static void OpenDocumentStream()
 ## Open encrypted PDF document
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocumentWithPassword()
 {
     // The path to the documents directory

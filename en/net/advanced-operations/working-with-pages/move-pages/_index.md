@@ -95,7 +95,7 @@ To move an page we should:
 The following code snippet shows you how to move one page.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MovingAPageFromOnePdfDocumentToAnother()
 {
     // The path to the documents directory
@@ -133,7 +133,7 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
 The following code snippet shows you how to move a bunch of pages from one PDF document to another.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
     // The path to the documents directory
@@ -169,7 +169,7 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 1. Save the output PDF using the [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) method.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
 {
     // The path to the documents directory

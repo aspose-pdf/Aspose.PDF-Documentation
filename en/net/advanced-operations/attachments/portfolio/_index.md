@@ -92,7 +92,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ![A PDF Portfolio created with Aspose.PDF for .NET](working-with-pdf-portfolio_1.jpg)
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreatePortfolio()
 {
     // The path to the documents directory
@@ -134,8 +134,7 @@ Aspose.PDF allows the creation of PDF Portfolio documents using [Document](http
 The following code snippet shows you the steps to extract files from PDF portfolio.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractPortfolioFiles()
 {
     // The path to the documents directory
@@ -170,8 +169,7 @@ private static void ExtractPortfolioFiles()
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemovePortfolioFiles()
 {
     // The path to the documents directory

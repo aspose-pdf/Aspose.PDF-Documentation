@@ -85,7 +85,7 @@ Following code snippet shows you how to fulfill this requirement.
 {{% /alert %}}
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CheckIfPdfContainsTextOrImages()
 {
     // The path to the documents directory

@@ -81,7 +81,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 ## Extract Table from PDF
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Extract_Table()
 {
     // The path to the documents directory
@@ -124,7 +124,7 @@ private static void Extract_Table()
 The page borders are path drawing operations. Therefore the Pdf->Html processing logic just performs drawing instructions and places the background behind the text. So, to repeat the logic, you have to process contents operators manually and draw the graphics yourself. Also please note that following code snippet might not work accurately for various PDF files but if you encounter any issue, please feel free to contact. This code was developed for specific PDF files. The following code snippet shows the steps to extract the table border as Image from PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractTableBorder()
 {
     // The path to the documents directory

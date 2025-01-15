@@ -86,7 +86,7 @@ XFDF stand for XML Forms Data Format. It is an XML based file format. This file 
 The following code snippet shows you how to import annotations to an XFDF file:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportAnnotation()
 {
     // The path to the documents directory
@@ -109,7 +109,7 @@ private static void ImportAnnotation()
 The next code snippet describes how import/export annotations to an XFDF file:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportExportXFDF01()
 {
     // The path to the documents directory
@@ -141,7 +141,7 @@ private static void ImportExportXFDF01()
 This way, the annotations of the specified types will only be imported or exported to an XFDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportExportXFDF02()
 {
     // The path to the documents directory

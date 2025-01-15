@@ -92,7 +92,7 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 The [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) collection contains all the attachments in the PDF file. The following code snippet shows you how to add an attachment in a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddEmbeddedFile()
 {
     // The path to the documents directory
