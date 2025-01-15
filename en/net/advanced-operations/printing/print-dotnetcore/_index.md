@@ -116,10 +116,9 @@ private static void PrintPDF(string pdfFileName)
     var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
     // Open a PDF document
-
-    // Convert PDF to XPS
     using (var document = new Aspose.Pdf.Document(pdfFileName))
     {
+        // Convert PDF to XPS
         var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
         document.Save(xpsFileName, SaveFormat.Xps);
 
