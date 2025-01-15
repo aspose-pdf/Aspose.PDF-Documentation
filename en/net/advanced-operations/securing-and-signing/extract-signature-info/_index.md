@@ -188,7 +188,7 @@ private void GetSignaturesInfo()
     {
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))
         {
-            var sigNames = signature.GetSignNames();
+            var sigNames = signature.GetSignatureNames();
             var signaturesInfoList =  signature.GetSignaturesInfo();
             foreach (var sigInfo in signaturesInfoList)
             {

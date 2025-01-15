@@ -94,25 +94,23 @@ private static void ExtractSignatureInfo()
     {
         pdfFileSignature.BindPdf(input);
         // Get list of signature names
-        var sigNames = pdfFileSignature.GetSignNames();
+        var sigNames = pdfFileSignature.GetSignatureNames();
         if (sigNames.Count > 0)
         {
-            string sigName = sigNames[0];
-            if (!string.IsNullOrEmpty(sigName))
+            SignatureName sigName = sigNames[0];            
+            // Extract signature certificate
+            Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
+            if (cerStream != null)
             {
-                // Extract signature certificate
-                Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
-                if (cerStream != null)
+                using (cerStream)
                 {
-                    using (cerStream)
+                    using (FileStream fs = new FileStream(dataDir + certificateFileName, FileMode.CreateNew))
                     {
-                        using (FileStream fs = new FileStream(dataDir + certificateFileName, FileMode.CreateNew))
-                        {
-                            cerStream.CopyTo(fs);
-                        }
+                        cerStream.CopyTo(fs);
                     }
                 }
             }
+            
         }
     }
 }
@@ -139,7 +137,7 @@ private static void ExtractSignatureImage()
         if (signature.ContainsSignature())
         {
             // Get list of signature names
-            foreach (string sigName in signature.GetSignNames())
+            foreach (string sigName in signature.GetSignatureNames())
             {                
                 // Extract signature image
                 using (Stream imageStream = signature.ExtractImage(sigName))
