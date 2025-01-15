@@ -98,7 +98,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreatingAComplexPdf()
+private static void CreatingComplexPdf()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
@@ -109,8 +109,7 @@ private static void CreatingAComplexPdf()
         var page = document.Pages.Add();
 
         // Add image
-        var imageFileName = dataDir + "logo.png";
-        page.AddImage(imageFileName, new Aspose.Pdf.Rectangle(20, 730, 120, 830));
+        page.AddImage(dataDir + "logo.png", new Aspose.Pdf.Rectangle(20, 730, 120, 830));
 
         // Add Header
         var header = new Aspose.Pdf.Text.TextFragment("New ferry routes in Fall 2020");

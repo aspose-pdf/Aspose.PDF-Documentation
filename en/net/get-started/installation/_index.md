@@ -269,6 +269,7 @@ dotnet add package Aspose.PDF
 
 Replace the contents of `Program.cs` with:
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;

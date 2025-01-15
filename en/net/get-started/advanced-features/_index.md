@@ -126,7 +126,7 @@ private static void LatexWithoutPreambleAndDocEnvironment()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    // Open PDF document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add Page in Pages Collection
@@ -203,6 +203,9 @@ private static void LatexTagsSupport()
     \end{align}
     \end{proof}
     \end{document}";
+
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
