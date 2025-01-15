@@ -110,7 +110,6 @@ The following code snippet shows how to optimize a PDF document for the web.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void OptimizeDocument()
 {
     // The path to the documents directory

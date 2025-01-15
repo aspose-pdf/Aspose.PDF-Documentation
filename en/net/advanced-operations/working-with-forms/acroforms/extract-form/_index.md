@@ -89,7 +89,6 @@ The following C# code snippets show how to get the values of all the fields from
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetValuesFromFields()
 {
     // The path to the documents directory

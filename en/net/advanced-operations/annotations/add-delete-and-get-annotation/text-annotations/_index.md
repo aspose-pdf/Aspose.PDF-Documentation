@@ -95,7 +95,6 @@ The following code snippet shows you how to add an annotation in a PDF page.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTextAnnotationToPdf()
 {
     // The path to the documents directory
@@ -221,7 +220,6 @@ For a more flexible configuration of annotation in the PDF document, Aspose.PDF 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddFreeTextCalloutAnnotation()
 {
     // The path to the documents directory
@@ -266,7 +264,6 @@ If you use import from XFDF file please use callout-line name instead just Callo
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportAnnotationsFromXfdf()
 {
     // The path to the documents directory
@@ -322,7 +319,6 @@ Sometimes, it is necessary to create a watermark that isn’t visible in the doc
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddInvisibleAnnotation()
 {
     // The path to the documents directory

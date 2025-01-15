@@ -119,7 +119,6 @@ The code starts by initializing two PDF documents using their respective file pa
 
 ```cs
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ComparingSpecificPages()
 {
     // The path to the documents directory

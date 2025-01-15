@@ -95,7 +95,6 @@ The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ValidateToPdfA1aStandard()
 {
     // The path to the documents directory

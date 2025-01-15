@@ -613,7 +613,6 @@ The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.anno
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddInkAnnotationWithLineWidth()
 {
     // The path to the documents directory

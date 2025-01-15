@@ -215,7 +215,6 @@ Aspose.PDF for .NET supports the feature to add as well as manipulate Annotation
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RedactPage()
 {
     // The path to the documents directory
@@ -255,7 +254,6 @@ Aspose.Pdf.Facades namespace also has a class named [PdfAnnotationEditor](https:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RedactPageWithFacadesApproach()
 {
     // The path to the documents directory

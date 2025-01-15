@@ -96,7 +96,6 @@ To create a PDF file using C#, the following steps can be used.
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateHelloWorldDocument()
 {
     // The path to the documents directory

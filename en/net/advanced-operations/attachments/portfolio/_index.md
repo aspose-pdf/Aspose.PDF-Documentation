@@ -93,7 +93,6 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreatePortfolio()
 {
     // The path to the documents directory

@@ -101,7 +101,6 @@ The following code snippet shows you how to get the properties using [Document](
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetDocumentWindowProperties()
 {
     // The path to the documents directory
