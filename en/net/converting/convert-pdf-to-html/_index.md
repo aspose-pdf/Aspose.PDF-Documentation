@@ -122,9 +122,10 @@ Aspose.PDF for .NET provides a two-line code for transforming a source PDF file 
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoHTML()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the source PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Save the file into HTML format
@@ -141,9 +142,10 @@ When converting large PDF file with several pages to HTML format, the output app
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoMultiPageHTML()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the source PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
         // Instantiate HTML SaveOptions object
@@ -167,6 +169,7 @@ During PDF to HTML conversion, it is possible to specify the folder that SVG ima
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SavePDFtoHTMLWithSVG()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document
@@ -193,12 +196,12 @@ To compress SVG images during PDF to HTML conversion, please try using the follo
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SavePDFtoCompressedHTMLWithSVG()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
-
         // Create HtmlSaveOptions with tested feature
         var newOptions = new Aspose.Pdf.HtmlSaveOptions
         {
@@ -244,6 +247,7 @@ We can also specify the folder that images will be saved to during PDF to HTML c
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SavePDFtoHTMLWithSeparateImageFolder()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document
@@ -274,6 +278,7 @@ With the following simple code snippet, you can split the output HTML into pages
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToHTMLWithBodyContent()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document
@@ -304,6 +309,7 @@ In case the source/input PDF file contains transparent texts shadowed by foregro
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToHTMLWithTransparentTextRendering()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document
@@ -331,6 +337,7 @@ We can render PDF document layers in separate layer type element during PDF to H
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToHTMLWithLayersRendering()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Open PDF document

@@ -107,7 +107,6 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
@@ -130,7 +129,6 @@ private static void ConvertPdfToPdfA()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
@@ -156,7 +154,6 @@ To perform validation only, use the following line of code:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ValidatePdfAStandard()
 {
     // The path to the documents directory
@@ -175,7 +172,6 @@ private static void ValidatePdfAStandard()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-       
 private static void ValidatePdfAStandard()
 {
     // The path to the documents directory
@@ -199,7 +195,6 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA3b()
 {
     // The path to the documents directory
@@ -221,7 +216,6 @@ private static void ConvertPdfToPdfA3b()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA3b()
 {
     // The path to the documents directory
@@ -248,7 +242,6 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-4 f
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA4()
 {
     // The path to the documents directory
@@ -273,7 +266,6 @@ private static void ConvertPdfToPdfA4()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA4()
 {
     // The path to the documents directory
@@ -304,13 +296,12 @@ PDF/A-3a is the format that provides the feature to attach any file format as an
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddAttachmentToPdfA()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Instantiate Document instance to load existing file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Setup new file to be added as attachment
@@ -333,13 +324,12 @@ private static void AddAttachmentToPdfA()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddAttachmentToPdfA()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Instantiate Document instance to load existing file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Setup new file to be added as attachment
@@ -366,7 +356,6 @@ As per PDF/A standards, fonts should be embedded in a PDF/A document. However, i
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ReplaceMissingFonts()
 {
     // The path to the documents directory
@@ -400,7 +389,6 @@ private static void ReplaceMissingFonts()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ReplaceMissingFonts()
 {
     // The path to the documents directory

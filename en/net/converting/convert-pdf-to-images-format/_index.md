@@ -156,9 +156,9 @@ The following code snippet shows how to convert all the PDF pages to a single TI
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFtoTIFF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
@@ -197,9 +197,9 @@ Aspose.PDF for .NET allows to convert a particular page in a PDF file to a TIFF 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFtoTiffSinglePage()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
@@ -231,9 +231,9 @@ Aspose.PDF for .NET has been supporting the feature to convert PDF to TIF using 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFtoTiffBradleyBinarization()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
@@ -269,7 +269,6 @@ private static void ConvertPDFtoTiffBradleyBinarization()
     }
 }
 ```
-
 
 ## Convert PDF using ImageDevice class
 
@@ -312,10 +311,9 @@ The following steps and code snippet in C# shows this possibility
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// BMP, JPEG, GIF, PNG, EMF
-
 private static void ConvertPDFusingImageDevice()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Resolution object            
@@ -391,9 +389,9 @@ The following code snippet shows the steps for converting a PDF file to SVG form
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFtoSVG()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document

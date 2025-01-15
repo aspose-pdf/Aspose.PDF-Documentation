@@ -167,7 +167,7 @@ private static void ConvertEPUBtoPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertEPUBtoPDF_out.pdf");
     }
 }
@@ -186,7 +186,7 @@ private static void ConvertEPUBtoPDFAdv()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertEPUBtoPDFAdv_out.pdf");
     }
 }
@@ -226,7 +226,7 @@ private static void ConvertMarkdownToPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.md", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertMarkdownToPDF_out.pdf");
     }
 }
@@ -489,7 +489,7 @@ private static void ConvertPCLtoPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDF.pcl", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertPCLtoPDF_out.pdf");
     }
 }
@@ -515,7 +515,7 @@ private static void ConvertPCLtoPDFAdvanced()
                 Console.WriteLine(ex.Message);
             }
         }
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertPCLtoPDFAdvanced_out.pdf");
     }
 }
@@ -575,7 +575,7 @@ private static void ConvertPlainTextFileToPDF()
             var text = new Aspose.Pdf.Text.TextFragment(streamReader.ReadToEnd());
             // Add a new text paragraph in paragraphs collection and pass the TextFragment object
             page.Paragraphs.Add(text);
-            // Save PDF document in PDF format
+            // Save PDF document
             document.Save(dataDir + "TextToPDF_out.pdf");
         }
     }
@@ -637,7 +637,7 @@ private static void ConvertPreFormattedTextToPdf()
                 page.Paragraphs.Add(text);
             }
         }
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "PreFormattedTextToPDF_out.pdf");
     }
 }
@@ -682,7 +682,7 @@ private static void ConvertXPSToPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertXPSToPDF_out.pdf");
     }
 }
@@ -715,7 +715,7 @@ private static void ConvertPostScriptToPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "PSToPDF_out.pdf");
     }
 }
@@ -737,7 +737,7 @@ private static void ConvertPostscriptToPDFAdvanced()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertPostscriptToPDFAdvanced_out.pdf");
     }
 }
@@ -776,7 +776,7 @@ private static void Convert_XSLFO_to_PDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "XSLFOToPdfInput.xml", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "XSLFOToPdf_out.pdf");
     }
 }
@@ -808,6 +808,7 @@ private static void ConvertTeXtoPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "samplefile.tex", options))
     {
+        // Save PDF document
         document.Save(dataDir + "TeXToPDF_out.pdf");
     }
 }
@@ -831,7 +832,7 @@ private static void ConvertOFDToPDF()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ConvertOFDToPDF.ofd", options))
     {
-        // Save PDF document in PDF format
+        // Save PDF document
         document.Save(dataDir + "ConvertOFDToPDF_out.pdf");
     }
 }

@@ -87,7 +87,6 @@ Class [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) has m
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFAtoPDF()
 {
     // The path to the documents directory
@@ -109,7 +108,6 @@ private static void ConvertPDFAtoPDF()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFAtoPDF()
 {
     // The path to the documents directory
@@ -134,7 +132,6 @@ PDF/A conformance may also be removed if you make any changes in the document (e
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFAtoPDFAdvanced()
 {
     // The path to the documents directory
@@ -156,7 +153,6 @@ private static void ConvertPDFAtoPDFAdvanced()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPDFAtoPDFAdvanced()
 {
     // The path to the documents directory

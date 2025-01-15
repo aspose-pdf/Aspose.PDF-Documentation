@@ -162,11 +162,11 @@ So the following code snippet follows these steps and shows how to convert BMP t
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertBMPtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    //Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
@@ -204,9 +204,9 @@ Check next code snippet for converting CGM files to PDF format.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertCGMtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     var option = new Aspose.Pdf.CgmLoadOptions();
     using (var document = new Aspose.Pdf.Document(dataDir + "CGMtoPDF.cgm", option))
@@ -281,7 +281,6 @@ Moreover, the following code snippet shows how to convert an EMF to PDF with C# 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertEMFtoPDF()
 {
     // The path to the documents directory
@@ -305,7 +304,7 @@ private static void ConvertEMFtoPDF()
 
         page.Paragraphs.Add(image);
 
-        //Save the document
+        // Save PDF document
         document.Save(dataDir + "EMFtoPDF_out.pdf");
     }
 }
@@ -336,11 +335,11 @@ So the following code snippet follows these steps and shows how to convert BMP t
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertGIFtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
@@ -382,7 +381,6 @@ The code snippet below shows how to convert JPG Image to PDF using C#:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertJPGtoPDF()
 {
     // The path to the documents directory
@@ -416,7 +414,6 @@ Following code snippet shows how to convert an Image to PDF with same page heigh
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertJPGtoPDF()
 {
     // The path to the documents directory
@@ -474,7 +471,6 @@ Moreover, the code snippet below shows how to convert PNG to PDF with C# in your
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPNGtoPDF()
 {
     // The path to the documents directory
@@ -541,7 +537,6 @@ The following code snippet shows the process of converting SVG file into PDF for
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertSVGtoPDF()
 {
     // The path to the documents directory
@@ -564,7 +559,6 @@ The following code snippet shows the process of getting the source SVG file's di
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertSVGtoPDF()
 {
     // The path to the documents directory
@@ -785,7 +779,6 @@ You can convert TIFF to PDF in the same manner as the rest raster file formats g
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertTIFFtoPDF()
 {
     // The path to the documents directory
@@ -818,7 +811,6 @@ The following code snippet shows how to convert multi-page or multi-frame TIFF i
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertTIFFtoPDF()
 {
     // The path to the documents directory
@@ -875,7 +867,6 @@ Check next code snippet for converting CDR files to PDF format.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertCDRtoPDF()
 {
     // The path to the documents directory
@@ -903,7 +894,6 @@ Check next code snippet for converting DJVU files to PDF format.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertDJVUtoPDF()
 {
     // The path to the documents directory
@@ -926,7 +916,6 @@ Convert HEIC images to PDF using Aspose.PDF:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertHEICtoPDF()
 {
     // The path to the documents directory
