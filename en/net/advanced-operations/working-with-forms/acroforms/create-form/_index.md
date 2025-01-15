@@ -104,27 +104,79 @@ private static void AddTextBoxFieldToPdf()
 
     // Open document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
-	{
-		// Create a field
-		var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
-		textBoxField.PartialName = "textbox1";
-		textBoxField.Value = "Text Box";
+    {
+        // Create a field
+        var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
+        textBoxField.PartialName = "textbox1";
+        textBoxField.Value = "Text Box";
 
-		// Configure border
-		var border = new Aspose.Pdf.Annotations.Border(textBoxField);
-		border.Width = 5;
-		border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
-		textBoxField.Border = border;
+        // Configure border
+        var border = new Aspose.Pdf.Annotations.Border(textBoxField);
+        border.Width = 5;
+        border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
+        textBoxField.Border = border;
 
-		// Set color
-		textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        // Set color
+        textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
-		// Add field to the document
-		document.Form.Add(textBoxField, 1);
+        // Add field to the document
+        document.Form.Add(textBoxField, 1);
 
-		// Save modified PDF
-		document.Save(dataDir + "TextBox_out.pdf");
-	}
+        // Save modified PDF
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
+```
+
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) can be added with some child annotations.
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+private static void AddTextBoxFieldToPdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create a new document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a new page to the created document
+        var page = document.Pages.Add();
+
+        // Defining an array with rectangle data for child annotations. 
+        // The number of elements in the array determines the number of child annotations to add.
+        var rects = new Rectangle[]
+        {
+            new Rectangle(10, 600, 110, 620),
+            new Rectangle(10, 630, 110, 650),
+            new Rectangle(10, 660, 110, 680)
+        };
+
+        // Defining an array with DefaultAppearance used to specify how child annotations are displayed in the added field.
+        var defaultAppearances = new DefaultAppearance[]
+        {
+            new DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
+            new DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
+            new DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+        };
+
+        // Create a field
+        var textBoxField = new TextBoxField(page, rects);
+
+        // Setting the appearances of child annotations
+        short i = 0;
+        foreach (WidgetAnnotation wa in textBoxField)
+        {
+            wa.DefaultAppearance = defaultAppearances[i++];
+        }
+        textBoxField.Value = "Text";
+
+        // Add field to the document
+        document.Form.Add(textBoxField);
+
+        // Save PDF with added TextBoxField
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
 }
 ```
 
