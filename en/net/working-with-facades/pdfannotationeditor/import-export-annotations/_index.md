@@ -116,7 +116,7 @@ private static void ImportExportXFDF01()
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
-        using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+        using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
         }
@@ -125,7 +125,7 @@ private static void ImportExportXFDF01()
         {
             document.Pages.Add();
             annotationEditor.BindPdf(document);
-            annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "exportannotations_out.xfdf"));
+            annotationEditor.ImportAnnotationsFromXfdf(File.OpenRead(dataDir + "exportannotations_out.xfdf"));
             annotationEditor.Save(dataDir + "ImportedAnnotation_out.pdf");
         }
     }
@@ -145,7 +145,7 @@ private static void ImportExportXFDF02()
     {
         // Export annotations
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
-        using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+        using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             var annotationTypes = new[] {AnnotationType.FreeText, AnnotationType.Text};
             annotationEditor.ExportAnnotationsXfdf(xmlOutputStream, 1, 5, annotationTypes);
@@ -156,7 +156,7 @@ private static void ImportExportXFDF02()
         {
             document.Pages.Add();
             annotationEditor.BindPdf(document);
-            annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "annotations.xfdf"));
+            annotationEditor.ImportAnnotationsFromXfdf(File.OpenRead(dataDir + "annotations.xfdf"));
             annotationEditor.Save(dataDir + "ImportedAnnotation_XFDF02_out.pdf");
             }
     }

@@ -86,6 +86,7 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
 {{% /alert %}}
 
 ```cs
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 <%@ Page Language ="C#" %>
 <%@ Import Namespace="System" %>
 <%@ Import Namespace="System.IO" %>
@@ -99,19 +100,22 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
     <body>
         <h3>creation of simple PDF document while using Aspose.PDF for .NET with Inline ASP.NET</h3>
 <%
-    // set license
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    // Set license
     Aspose.Pdf.License lic = new Aspose.Pdf.License();
-    lic.SetLicense("D:\\ASPOSE\\Licences\\Aspose.Total licenses\\Aspose.Total.lic");
+    lic.SetLicense("Aspose.Total.lic");
 
-    // Initialize document object
-    Document document = new Document();
-    // Add page
-    Page page = document.Pages.Add();
-    // Add text to new page
-    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-    // Save PDF document
-    var outputFileName = dataDir + "HelloWorld_out.pdf";
-    document.Save(outputFileName);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        Aspose.Pdf.Page page = document.Pages.Add();
+        // Add text to new page
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+        // Save PDF document
+        document.Save(dataDir + "HelloWorld_out.pdf");
+    }
 %>
 
     </body>

@@ -463,7 +463,9 @@ public async Task<IActionResult> Run(
 {
     // Check authentication
     if (!principal.Identity.IsAuthenticated)
+    {
         return new UnauthorizedResult();
+    }
     // ...
 }
 ```

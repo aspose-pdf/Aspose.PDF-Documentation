@@ -130,6 +130,7 @@ private static void ExtractTableBorder()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
+    // Open PDF document
     using (var document = new Document(dataDir + "input.pdf"))
     {
         Stack graphicsState = new Stack();

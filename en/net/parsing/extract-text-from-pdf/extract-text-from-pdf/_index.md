@@ -88,6 +88,7 @@ private static void ExtractTextFromDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextAll.pdf"))
     {
@@ -196,6 +197,7 @@ private static void ExtractTextFromPagesWithTextDevice()
             builder.Append(extractedText);
         }
     }
+
     // Save the extracted text in text file
     File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", builder.ToString());
 }
@@ -266,17 +268,20 @@ private static void ExtractTextBasedOnColumns()
             // Need to reduce font size at least for 70%
             textFragment.TextState.FontSize = textFragment.TextState.FontSize * 0.7f;
         }
-        Stream sourceStream = new MemoryStream();
-        sourceDocument.Save(sourceStream);
-        using (var destDocument = new Aspose.Pdf.Document(sourceStream))
+        using (Stream sourceStream = new MemoryStream())
         {
-            var textAbsorber = new Aspose.Pdf.Text.TextAbsorber();
-            destDocument.Pages.Accept(textAbsorber);
-            extractedText = textAbsorber.Text;
-            textAbsorber.Visit(destDocument);
+            sourceDocument.Save(sourceStream);
+            using (var destDocument = new Aspose.Pdf.Document(sourceStream))
+            {
+                var textAbsorber = new Aspose.Pdf.Text.TextAbsorber();
+                destDocument.Pages.Accept(textAbsorber);
+                extractedText = textAbsorber.Text;
+                textAbsorber.Visit(destDocument);
+            }
         }
+
         // Save the extracted text in text file
-        System.IO.File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
+        File.WriteAllText(dataDir + "ExtractColumnsText_out.txt", extractedText);
     }
 }
 ```
@@ -311,7 +316,7 @@ private static void ExctractTextWithScaleFactor()
         var extractedText = textAbsorber.Text;
 
         // Save the extracted text in text file
-        System.IO.File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
+        File.WriteAllText(dataDir + "ExtractTextUsingScaleFactor_out.text", extractedText);
     }
 }
 ```

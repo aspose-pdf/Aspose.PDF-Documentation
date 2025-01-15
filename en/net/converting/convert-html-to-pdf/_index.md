@@ -232,7 +232,7 @@ private static Aspose.Pdf.LoadOptions.ResourceLoadingResult SamePictureLoader(st
 
     if (resourceURI.EndsWith(".png"))
     {
-        byte[] resultBytes = System.IO.File.ReadAllBytes(dataDir + "test.jpg");
+        byte[] resultBytes = File.ReadAllBytes(dataDir + "test.jpg");
         result = new Aspose.Pdf.LoadOptions.ResourceLoadingResult(resultBytes)
         {
             // Set MIME Type
@@ -293,7 +293,7 @@ private static void ConvertHTMLtoPDFAdvanced_WebPage()
     }
 }
 
-private static System.IO.Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
+private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
 {
     using (var handler = new System.Net.Http.HttpClientHandler { Credentials = credentials })
     using (var httpClient = new System.Net.Http.HttpClient(handler))
@@ -329,7 +329,7 @@ Sometimes we need to perform the conversion of HTML files which require authenti
      }
  }
 
-private static System.IO.Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
+private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
 {
     using (var handler = new System.Net.Http.HttpClientHandler { Credentials = credentials })
     using (var httpClient = new System.Net.Http.HttpClient(handler))

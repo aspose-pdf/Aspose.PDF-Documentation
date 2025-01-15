@@ -129,10 +129,10 @@ private static void SetLicenseFromStream()
     // Initialize license object
     Aspose.Pdf.License license = new Aspose.Pdf.License();
     // Load license from the file stream
-    System.IO.FileStream myStream =
-        new System.IO.FileStream(
+    FileStream myStream =
+        new FileStream(
             "Aspose.Pdf.lic",
-            System.IO.FileMode.Open);
+            FileMode.Open);
     // Set license
     license.SetLicense(myStream);
     Console.WriteLine("License set successfully.");

@@ -91,19 +91,18 @@ This is a simple application that shows you how to create a new PDF file and add
 echo "<h2>Calling Aspose.PDF for .NET from PHP using COM Interoperatibility</h2>";
 echo "<h3>PDF to Excel Conversion</h3>";
 
-//set license
+// Set license
 $lic = new COM("Aspose.Pdf.License");
-$lic->SetLicense("C:/temp/Aspose.Total.lic");
+$lic->SetLicense("Aspose.Total.lic");
 
-//Load Pdf Document
-$input="C:/temp/HelloWorld.pdf";
+// Open PDF document
+$input = "HelloWorld.pdf";
 $helper = new COM("Aspose.Pdf.ComHelper");
 
 $pdf = $helper->OpenFile($input);
 
 // Save PDF document to desired file format by passing  SaveFormat enum value for the format in this case we pass 9 for excel.
-
-$output = "C:/temp/test_php.xls";
-$pdf->Save_4($output,9);
+$output = "test_php.xls";
+$pdf->Save_4($output, 9);
 ?>
 ```

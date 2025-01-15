@@ -395,8 +395,8 @@ private static void OptimizePdfDocumentWithReusePageContent()
     Console.WriteLine("Finished");
 
     // Calculate and display file sizes
-    var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-    var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
     Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
 }
 ```
@@ -434,8 +434,8 @@ private static void OptimizePdfDocumentWithUnembedFonts()
     Console.WriteLine("Finished");
 
     // Calculate and display file sizes
-    var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-    var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
     Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
 }
 ```

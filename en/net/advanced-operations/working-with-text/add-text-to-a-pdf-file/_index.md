@@ -967,7 +967,7 @@ private static void SpecifyLineSpacing()
         if (fontFile != "")
         {
             // Load the TrueType font into stream object
-            using (FileStream fontStream = System.IO.File.OpenRead(fontFile))
+            using (FileStream fontStream = File.OpenRead(fontFile))
             {
                 // Set the font name for text string
                 textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.OpenFont(fontStream, Aspose.Pdf.Text.FontTypes.TTF);

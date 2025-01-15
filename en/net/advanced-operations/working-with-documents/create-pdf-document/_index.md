@@ -143,7 +143,7 @@ private static void CreateSearchableDocument()
 
 private static string CallBackGetHocr(System.Drawing.Image img)
 {
-    var tmpFile = System.IO.Path.GetTempFileName();
+    var tmpFile = Path.GetTempFileName();
     try
     {
         using (var bmp = new System.Drawing.Bitmap(img))
@@ -161,7 +161,7 @@ private static string CallBackGetHocr(System.Drawing.Image img)
             UseShellExecute = true,
             CreateNoWindow = true,
             WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-            WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
+            WorkingDirectory = Path.GetDirectoryName(tesseractProcessName)
         };
 
         var p = new System.Diagnostics.Process
@@ -171,7 +171,7 @@ private static string CallBackGetHocr(System.Drawing.Image img)
         p.Start();
         p.WaitForExit();
 
-        using (var streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+        using (var streamReader = new StreamReader(tmpFile + ".hocr"))
         {
             string text = streamReader.ReadToEnd();
             return text;
@@ -179,13 +179,13 @@ private static string CallBackGetHocr(System.Drawing.Image img)
     }
     finally
     {
-        if (System.IO.File.Exists(tmpFile))
+        if (File.Exists(tmpFile))
         {
-            System.IO.File.Delete(tmpFile);
+            File.Delete(tmpFile);
         }
-        if (System.IO.File.Exists(tmpFile + ".hocr"))
+        if (File.Exists(tmpFile + ".hocr"))
         {
-            System.IO.File.Delete(tmpFile + ".hocr");
+            File.Delete(tmpFile + ".hocr");
         }
     }
 }

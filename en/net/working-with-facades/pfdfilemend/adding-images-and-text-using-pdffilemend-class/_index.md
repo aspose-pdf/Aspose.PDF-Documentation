@@ -103,7 +103,7 @@ private static void AddImage01()
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         // Load image into stream
-        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
         {
             mender.BindPdf(document);
             mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
@@ -131,7 +131,7 @@ private static void AddImage02()
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         // Load image into stream
-        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
         {
             mender.BindPdf(document);
 
@@ -169,7 +169,7 @@ private static void AddImage03()
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         // Load image into stream
-        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
         {
             mender.BindPdf(document);
 
@@ -205,7 +205,7 @@ private static void AddImage04()
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
         // Load image into stream
-        using (var imageStream = System.IO.File.OpenRead(dataDir + "AddImage.png"))
+        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
         {
             mender.BindPdf(document);
 

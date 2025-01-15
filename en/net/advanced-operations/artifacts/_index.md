@@ -158,7 +158,7 @@ private static void AddBackgroundImageToPDF()
         // Create a new BackgroundArtifact and set the background image
         var background = new Aspose.Pdf.BackgroundArtifact()
         {
-            BackgroundImage = System.IO.File.OpenRead(dataDir + "background.jpg")
+            BackgroundImage = File.OpenRead(dataDir + "background.jpg")
         };
 
         // Add the background image to the first page's artifacts

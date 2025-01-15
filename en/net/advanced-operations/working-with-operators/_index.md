@@ -130,7 +130,7 @@ private static void AddImageUsingPDFOperators()
         var page = document.Pages[1];
 
         // Load the image into a file stream
-        using (var imageStream = new System.IO.FileStream(dataDir + "PDFOperators.jpg", FileMode.Open))
+        using (var imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open))
         {
             // Add the image to the page's Resources collection
             page.Resources.Images.Add(imageStream);

@@ -86,15 +86,15 @@ The following example creates the table 4x10.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTable()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page
         document.Pages.Add();
 
         var table = new Aspose.Pdf.Table
@@ -137,14 +137,15 @@ private static void AddTable()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTable()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
+
+    // Add page
     document.Pages.Add();
 
     var table = new Aspose.Pdf.Table
@@ -200,10 +201,9 @@ Premising that these objects are not very convenient for working in the MVC temp
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTable()
 {
-    // Create new a PDF document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document
     {
         PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
@@ -273,7 +273,7 @@ private static void AddTable()
 
 private static void AddTable()
 {
-    // Create new a PDF document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document
     {
         PageInfo = new Aspose.Pdf.PageInfo { Margin = new Aspose.Pdf.MarginInfo(28, 28, 28, 42) }
