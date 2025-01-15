@@ -87,23 +87,19 @@ draft: false
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/FormEditor) class also provides a method to set the field limit. It tells the field that how much characters it can be filled with. The bellow code snippet shows you how all of these methods can be used.
 
-
-
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void AddFieldAndSetAttributes()
  {
-     // Define the path to the directory containing the input PDF
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-     // Open the existing PDF document
+     // Open PDF document
      using (var doc = new Aspose.Pdf.Document(dataDir + "FilledForm.pdf"))
      {
-
          // Create an instance of FormEditor to manipulate form fields
          using (var formEditor = new Aspose.Pdf.Facades.FormEditor(doc))
          {
-
              // Add a new text field to the form on page 1 at the specified coordinates and size
              formEditor.AddField(Aspose.Pdf.Facades.FieldType.Text, "text1", 1, 200, 550, 300, 575);
 

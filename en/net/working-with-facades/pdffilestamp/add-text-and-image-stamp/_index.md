@@ -79,15 +79,15 @@ draft: false
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTextStampOnAllPagesInPdfFile()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Create stamp
@@ -108,7 +108,7 @@ private static void AddTextStampOnAllPagesInPdfFile()
         fileStamp.AddStamp(stamp);
 
         // Save PDF document
-        fileStamp.Save(dataDir + "AddTextStamp-All_out.pdf");
+        fileStamp.Save(dataDir + "AddTextStampOnAllPages_out.pdf");
     }
 }
 ```
@@ -122,12 +122,13 @@ private static void AddTextStampOnAllPagesInPdfFile()
 
 private static void AddTextStampOnParticularPagesInPdfFile()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Create stamp
@@ -150,7 +151,7 @@ private static void AddTextStampOnParticularPagesInPdfFile()
         fileStamp.AddStamp(stamp);
 
         // Save PDF document
-        fileStamp.Save(dataDir + "AddTextStamp-Page_out.pdf");
+        fileStamp.Save(dataDir + "AddTextStampOnParticularPages_out.pdf");
     }
 }
 ```
@@ -161,15 +162,15 @@ private static void AddTextStampOnParticularPagesInPdfFile()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImageStampOnAllPagesInPdfFile()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Create stamp
@@ -186,7 +187,7 @@ private static void AddImageStampOnAllPagesInPdfFile()
         fileStamp.AddStamp(stamp);
 
         // Save PDF document
-        fileStamp.Save(dataDir + "AddImageStamp-Page_out.pdf");
+        fileStamp.Save(dataDir + "AddImageStampOnAllPages_out.pdf");
     }
 }
 ```
@@ -201,15 +202,15 @@ When adding Image as stamp object, you can also control the quality of image. In
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImageStampOnParticularPagesInPdfFile()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object using 'using' block to ensure proper disposal
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Create stamp
@@ -223,7 +224,7 @@ private static void AddImageStampOnParticularPagesInPdfFile()
         fileStamp.AddStamp(stamp);
 
         // Save PDF document
-        fileStamp.Save(dataDir + "AddImageStamp-All_out.pdf");
+        fileStamp.Save(dataDir + "AddImageStampOnParticularPages_out.pdf");
     }
 }
 ```

@@ -177,8 +177,10 @@ private static void DifferenceBetweenFile()
             // Box in FormFieldFacade class holds field's location.
             box[i] = facade.Box;
         }
+        // Save PDF document
         form.Save(dataDir + "DifferenceBetweenFile_out.pdf");
             
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
         {
             // Now we need to add a textfield just upon the original one

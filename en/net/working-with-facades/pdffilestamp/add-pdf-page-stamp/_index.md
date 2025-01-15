@@ -79,15 +79,15 @@ draft: false
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddPageStampOnAllPages()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
         // Create stamp
@@ -112,15 +112,15 @@ private static void AddPageStampOnAllPages()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddPageStampOnCertainPages()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
         // Create stamp
@@ -146,15 +146,15 @@ private static void AddPageStampOnCertainPages()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddPageNumberInPdfFile()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
         // Get total number of pages
@@ -197,15 +197,15 @@ The PdfFileStamp class offers the feature to add Page Number information as stam
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddCustomPageNumberInPdfFile()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
         // Get total number of pages

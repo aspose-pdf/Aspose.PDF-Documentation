@@ -89,11 +89,12 @@ private static void ReplaceText01()
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
         editor.ReplaceText("Value", "Label");
 
-        // Save the output file
-        editor.Save(dataDir + "PdfContentEditorDemo01.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo01_out.pdf");
     }
 }
 ```
@@ -109,11 +110,13 @@ private static void ReplaceText01()
 
     // Instantiate PdfContentEditor Object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("Value", "Label");
 
-    // Save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo01.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo01_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -141,11 +144,12 @@ private static void ReplaceText02()
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
         editor.ReplaceText("Value", "Label", 12);
 
-        // save the output file
-        editor.Save(dataDir + "PdfContentEditorDemo02.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo02_out.pdf");
     }
 }
 ```
@@ -161,11 +165,13 @@ private static void ReplaceText02()
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("Value", "Label", 12);
 
-    // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo02.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo02_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -185,6 +191,7 @@ private static void ReplaceText03()
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
 
         var textState = new Aspose.Pdf.Text.TextState
@@ -195,8 +202,8 @@ private static void ReplaceText03()
 
         editor.ReplaceText("Value", "Label", textState);
 
-        // save the output file
-        editor.Save(dataDir + "PdfContentEditorDemo03.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo03_out.pdf");
     }
 }
 ```
@@ -212,6 +219,8 @@ private static void ReplaceText03()
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
 
     var textState = new Aspose.Pdf.Text.TextState
@@ -222,8 +231,8 @@ private static void ReplaceText03()
 
     editor.ReplaceText("Value", "Label", textState);
 
-    // save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo03.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo03_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -243,6 +252,7 @@ private static void ReplaceText04()
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
         int count = 0;
 
@@ -253,8 +263,8 @@ private static void ReplaceText04()
 
         Console.WriteLine($"{count} occurrences have been replaced.");
 
-        // Save the output file
-        editor.Save(dataDir + "PdfContentEditorDemo04.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo04_out.pdf");
     }
 }
 ```
@@ -270,6 +280,8 @@ private static void ReplaceText04()
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
     int count = 0;
 
@@ -280,8 +292,8 @@ private static void ReplaceText04()
 
     Console.WriteLine($"{count} occurrences have been replaced.");
 
-    // Save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo04.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo04_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -303,6 +315,7 @@ private static void ReplaceText05()
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
         int count = 0;
 
@@ -313,8 +326,8 @@ private static void ReplaceText05()
 
         Console.WriteLine($"{count} occurrences have been replaced.");
 
-        // Save the output file
-        editor.Save(dataDir + "PdfContentEditorDemo05.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo05_out.pdf");
     }
 }
 ```
@@ -330,6 +343,8 @@ private static void ReplaceText05()
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
     int count = 0;
 
@@ -340,8 +355,8 @@ private static void ReplaceText05()
 
     Console.WriteLine($"{count} occurrences have been replaced.");
 
-    // Save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo05.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo05_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -368,11 +383,12 @@ private static void ReplaceText06()
                }
            })
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
         editor.ReplaceText("\\d{4}", "ABCDE");
 
-        // Save the output file
-        editor.Save(dataDir + "PdfContentEditorDemo06.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo06_out.pdf");
     }
 }
 ```
@@ -396,11 +412,12 @@ private static void ReplaceText06()
         }
     };
 
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
     editor.ReplaceText("\\d{4}", "ABCDE");
 
-    // Save the output file
-    editor.Save(dataDir + "PdfContentEditorDemo06.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo06_out.pdf");
 }
 ```
 {{< /tab >}}

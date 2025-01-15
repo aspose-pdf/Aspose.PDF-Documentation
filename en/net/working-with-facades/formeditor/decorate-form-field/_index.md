@@ -82,13 +82,13 @@ The following code snippet shows you how to decorate a particular form field.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DecorateField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Bind the input PDF file to the FormEditor
+        // Bind PDF document
         editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Create a FormFieldFacade object to define decoration properties for the field
@@ -125,13 +125,13 @@ private static void DecorateField()
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DecorateField2()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Bind the input PDF file to the FormEditor
+        // Bind PDF document
         editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Create a FormFieldFacade object to define alignment properties for text fields

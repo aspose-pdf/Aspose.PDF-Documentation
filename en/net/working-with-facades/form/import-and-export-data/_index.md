@@ -77,7 +77,6 @@ draft: false
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportDataFromXml()
 {
     // The path to the documents directory
@@ -104,7 +103,6 @@ private static void ImportDataFromXml()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportDataToXml()
 {
     // The path to the documents directory
@@ -112,9 +110,10 @@ private static void ExportDataToXml()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "input.pdf");
 
-        // Create xml file
+        // Create XML file
         using (var xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
         {
             // Export data
@@ -130,7 +129,6 @@ private static void ExportDataToXml()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportDataFromPdfIntoPdf()
 {
     // The path to the documents directory
@@ -138,9 +136,10 @@ private static void ImportDataFromPdfIntoPdf()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "input.pdf");
         
-        // Open fdf file
+        // Open FDF file
         using (var fdfInputStream = new FileStream(dataDir + "student.fdf", FileMode.Open))
         {
             // Import data
@@ -159,7 +158,6 @@ private static void ImportDataFromPdfIntoPdf()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportDataToPdfFromPdf()
 {
     // The path to the documents directory
@@ -167,9 +165,10 @@ private static void ExportDataToPdfFromPdf()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "input.pdf");
 
-        // Create fdf file
+        // Create FDF file
         using (var fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create))
         {
             // Export data
@@ -188,7 +187,6 @@ private static void ExportDataToPdfFromPdf()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportDataFromXFDIntoPdf()
 {
     // The path to the documents directory
@@ -196,9 +194,10 @@ private static void ImportDataFromXFDIntoPdf()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "input.pdf");
 
-        // Open xfdf file
+        // Open XFDF file
         using (var xfdfInputStream = new FileStream(dataDir + "test2.xfdf", FileMode.Open))
         {
             // Import data
@@ -217,7 +216,6 @@ private static void ImportDataFromXFDIntoPdf()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportDataToXFDFFromPdf()
 {
     // The path to the documents directory
@@ -225,9 +223,10 @@ private static void ExportDataToXFDFFromPdf()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "input.pdf");
 
-        // Create xfdf file
+        // Create XFDF file
         using (var xfdfOutputStream = new FileStream(dataDir + "out.xfdf", FileMode.Create))
         {
             // Export data
@@ -246,7 +245,6 @@ Aspose.Pdf.Facades provides an alternative API for working with form fields. Thi
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportValuesFromFieldsToJSON()
 {
     // The path to the documents directory
@@ -254,9 +252,10 @@ private static void ExportValuesFromFieldsToJSON()
     
     using (var form = new Aspose.Pdf.Facades.Form())
     {       
+        // Bind PDF document
         form.BindPdf(dataDir + "Test2.pdf");
 
-        // Create Json file
+        // Create JSON file
         using (FileStream jsonStream = new FileStream(dataDir + "Test2.json", FileMode.Create))
         {
             // Export data
@@ -272,7 +271,6 @@ This code snippet demonstrates how to import values into form fields of a PDF do
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportValuesFromJsonToForm()
 {
     // The path to the documents directory
@@ -280,9 +278,10 @@ private static void ImportValuesFromJsonToForm()
 
     using (var form = new Aspose.Pdf.Facades.Form())
     {        
+        // Bind PDF document
         form.BindPdf(dataDir + "Test2.pdf");
 
-        // Import from Json file
+        // Import from JSON file
         using (FileStream jsonStream = new FileStream(dataDir + "Test2.json", FileMode.Open))
         {
             // Export data

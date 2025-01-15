@@ -126,7 +126,7 @@ private static void AddXmpMetadata()
             // Add Nick Name to xmp metadata
             xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-            // Save xmp meta data in the pdf file
+            // Save PDF document
             xmpMetaData.Save(output);
         }
     }
@@ -171,7 +171,7 @@ private static void AddXmpMetadata()
     // Add Nick Name to xmp metadata
     xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-    // Save xmp meta data in the pdf file
+    // Save PDF document
     xmpMetaData.Save(output);
 }
 ```

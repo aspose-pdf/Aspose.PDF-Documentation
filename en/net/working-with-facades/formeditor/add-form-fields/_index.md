@@ -81,13 +81,13 @@ In order to add a form field in an existing PDF file, you need to use [AddField]
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Bind the input PDF file to the FormEditor
+        // Bind PDF document
         editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Add a text field named "Country" to the first page of the PDF
@@ -112,12 +112,13 @@ private static void AddField()
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void AddSubmitBtn()
  {
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Create an instance of FormEditor to manipulate form fields
      using (var editor = new Aspose.Pdf.Facades.FormEditor())
      {
-         // Bind the input PDF file to the FormEditor
+         // Bind PDF document
          editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
          // Add a submit button named "Submit" to the first page of the PDF
@@ -139,12 +140,13 @@ private static void AddField()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFieldScript()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Bind the input PDF file to the FormEditor
+        // Bind PDF document
         editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Add a JavaScript action to the field named "Last Name"

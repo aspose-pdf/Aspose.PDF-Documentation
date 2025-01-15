@@ -83,9 +83,11 @@ private static void CreateBookmarksOfAllPages()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "CreateBookmarksAll.pdf");
         // Create bookmark of all pages
         bookmarkEditor.CreateBookmarks();
@@ -105,9 +107,11 @@ private static void CreateBookmarksOfAllPagesWithProperties()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "CreateBookmarks-PagesProperties.pdf");
         // Create bookmark of all pages
         bookmarkEditor.CreateBookmarks(System.Drawing.Color.Green, true, true);
@@ -127,9 +131,11 @@ private static void CreateBookmarkOfAParticularPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "CreateBookmark-Page.pdf");
         // Create bookmark of a particular page
         bookmarkEditor.CreateBookmarkOfPage("Bookmark Name", 2);
@@ -149,9 +155,11 @@ private static void CreateBookmarksOfARangeOfPages()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "CreateBookmark-Page.pdf");
         // Bookmark name list
         string[] bookmarkList = { "First" };

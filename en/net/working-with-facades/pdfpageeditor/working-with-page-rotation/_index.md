@@ -88,11 +88,12 @@ To rotate pages in document we can use [PageRotations](https://reference.aspose.
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void RotatePages1()
  {
+    // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      using (var editor = new Aspose.Pdf.Facades.PdfPageEditor())
      {
-         // Bind an existing pdf file
+         // Bind PDF document
          editor.BindPdf(dataDir + "sample.pdf");
 
          // Specify the page rotation dictionary
@@ -117,11 +118,12 @@ We can also use [Rotation](https://reference.aspose.com/pdf/net/aspose.pdf.facad
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotatePages2()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     using (var editor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
-        // Bind an existing pdf file
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
 
         // Specify the pages to rotate and the rotation angle

@@ -83,7 +83,6 @@ sitemap:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void DeleteAllAnnotations()
 {
     // The path to the documents directory
@@ -92,7 +91,7 @@ private static void DeleteAllAnnotations()
     // Create an instance of PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // Open PDF document
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "DeleteAllAnnotationsFromPage.pdf");
 
         // Delete all annoations
@@ -108,7 +107,6 @@ private static void DeleteAllAnnotations()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void DeleteAllAnnotations()
 {
     // The path to the documents directory
@@ -117,7 +115,7 @@ private static void DeleteAllAnnotations()
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-    // Open PDF document
+    // Bind PDF document
     annotationEditor.BindPdf(dataDir + "DeleteAllAnnotationsFromPage.pdf");
 
     // Delete all annoations
@@ -130,8 +128,6 @@ private static void DeleteAllAnnotations()
 {{< /tab >}}
 {{< /tabs >}}
 
-
-
 ## Delete All Annotations by Specified Type
 
 You can use [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) class to delete all the annotations, by a specified annotation type, from the existing PDF file. In order to do that you need to create a [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) object and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) method. After that, call [DeleteAnnotations](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/deleteannotations) method, with the string parameter, to delete all the annotations from the file; the string parameter represents the annotation type to be deleted. Finally, use [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) method to save the updated PDF file. The following code snippet shows you how to delete all annotations by specified annotation type.
@@ -140,7 +136,6 @@ You can use [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pd
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void DeleteAllAnnotationByType()
 {
     // The path to the documents directory
@@ -181,7 +176,7 @@ private static void DeleteAllAnnotationByType()
         // Create an instance of PdfAnnotationEditor
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
-            // Open PDF document
+            // Bind PDF document
             annotationEditor.BindPdf(document);
 
             // Delete the annotation selected by the user
@@ -198,7 +193,6 @@ private static void DeleteAllAnnotationByType()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void DeleteAllAnnotationByType()
 {
     // The path to the documents directory
@@ -239,7 +233,7 @@ private static void DeleteAllAnnotationByType()
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-    // Open PDF document
+    // Bind PDF document
     annotationEditor.BindPdf(document);
 
     // Delete the annotation selected by the user
@@ -260,7 +254,6 @@ You can use the [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspos
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void DeleteAnnotationByName()
 {
     // The path to the documents directory
@@ -283,7 +276,7 @@ private static void DeleteAnnotationByName()
         // Create an instance of PdfAnnotationEditor
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
-            // Open PDF document
+            // Bind PDF document
             annotationEditor.BindPdf(document);
 
             // Delete the annotation selected by the user
@@ -300,7 +293,6 @@ private static void DeleteAnnotationByName()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void DeleteAnnotationByName()
 {
     // The path to the documents directory
@@ -323,7 +315,7 @@ private static void DeleteAnnotationByName()
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
 
-    // Open PDF document
+    // Bind PDF document
     annotationEditor.BindPdf(document);
 
     // Delete the annotation selected by the user

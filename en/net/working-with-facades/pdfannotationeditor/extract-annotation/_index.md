@@ -85,11 +85,13 @@ private static void ExtractAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
         using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
         {
+            // Bind PDF document
             annotationEditor.BindPdf(document);
             // Extract annotations
             var annotationTypes = new[] { Aspose.Pdf.Annotations.AnnotationType.FreeText, Aspose.Pdf.Annotations.AnnotationType.Text };

@@ -103,8 +103,8 @@ private static void SetViewerPreference()
         editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.HideMenubar);
         editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
 
-        // Saves the result PDF to file
-        editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference_out.pdf");
     }
 }
 ```
@@ -129,8 +129,8 @@ private static void SetViewerPreference()
     editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.HideMenubar);
     editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
 
-    // Saves the result PDF to file
-    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference_out.pdf");
 }
 ```
 {{< /tab >}}

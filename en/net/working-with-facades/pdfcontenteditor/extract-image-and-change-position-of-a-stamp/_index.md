@@ -89,7 +89,7 @@ private static void ExtractImageFromStamp()
     // Instantiate PdfContentEditor object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind input PDF file
+        // Bind PDF document
         pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
 
         // Get Stamp info for the first stamp
@@ -116,7 +116,7 @@ private static void ExtractImageFromStamp()
     // Instantiate PdfContentEditor object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Bind input PDF file
+    // Bind PDF document
     pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
 
     // Get Stamp info for the first stamp
@@ -148,7 +148,7 @@ private static void ChangeStampPosition()
     // Instantiate PdfContentEditor object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind input PDF file
+        // Bind PDF document
         pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
         int pageId = 1;
@@ -177,7 +177,7 @@ private static void ChangeStampPosition()
     // Instantiate PdfContentEditor object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Bind input PDF file
+    // Bind PDF document
     pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
     int pageId = 1;
@@ -209,7 +209,7 @@ private static void MoveStampById()
     // Instantiate PdfContentEditor Object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind input PDF file
+        // Bind PDF document
         pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
         int pageId = 1;
@@ -238,7 +238,7 @@ private static void MoveStampById()
     // Instantiate PdfContentEditor Object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Bind input PDF file
+    // Bind PDF document
     pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
     int pageId = 1;

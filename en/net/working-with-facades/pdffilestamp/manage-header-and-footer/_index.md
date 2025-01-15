@@ -79,15 +79,15 @@ draft: false
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddHeader()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Create formatted text for the header
@@ -115,15 +115,15 @@ private static void AddHeader()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddFooter()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Create formatted text for the footer
@@ -151,15 +151,15 @@ private static void AddFooter()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImageHeader()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Add Header
@@ -180,15 +180,15 @@ private static void AddImageHeader()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddImageFooter()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
-        // Open Document
+        // Bind PDF document
         fileStamp.BindPdf(dataDir + "sample.pdf");
 
         // Add footer

@@ -87,7 +87,7 @@ private static void GetXmpMetadata()
     // Create PdfXmpMetadata object
     using (var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata())
     {
-        // Bind pdf file to the object
+        // Bind PDF document
         xmpMetaData.BindPdf(dataDir + "GetXMPMetadata.pdf");
 
         // Get XMP Meta Data properties
@@ -113,7 +113,7 @@ private static void GetXmpMetadata()
     // Create PdfXmpMetadata object
     using var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
 
-    // Bind pdf file to the object
+    // Bind PDF document
     xmpMetaData.BindPdf(dataDir + "GetXMPMetadata.pdf");
 
     // Get XMP Meta Data properties

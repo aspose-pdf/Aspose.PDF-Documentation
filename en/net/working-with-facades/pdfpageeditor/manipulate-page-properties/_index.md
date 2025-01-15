@@ -111,8 +111,6 @@ In order to set page properties like page rotation, zoom or origin point you nee
 
 The following code snippet shows you how to set PDF page properties in an existing PDF file.
 
-
-
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPdfPageProperties()
@@ -123,6 +121,7 @@ private static void SetPdfPageProperties()
     // Open PDF document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
+        // Bind PDF document
         pageEditor.BindPdf(dataDir + "input.pdf");
 
         // Set page properties

@@ -100,16 +100,21 @@ private static void AddImage01()
 
     // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
-        // Load image into stream
-        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+        using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
-            mender.BindPdf(document);
-            mender.AddImage(imageStream, 1, 10, 650, 110, 750); // Add image to first page
+            // Load image into stream
+            using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+            {
+                // Bind PDF document
+                mender.BindPdf(document);
 
-            // Save PDF document
-            mender.Save(dataDir + "AddImage_out.pdf");
+                // Add image to first page
+                mender.AddImage(imageStream, 1, 10, 650, 110, 750);
+
+                // Save PDF document
+                mender.Save(dataDir + "AddImage_out.pdf");
+            }
         }
     }
 }
@@ -128,26 +133,29 @@ private static void AddImage02()
 
     // Create Document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
-        // Load image into stream
-        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+        using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
-            mender.BindPdf(document);
+            // Load image into stream
+            using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+            {
+                // Bind PDF document
+                mender.BindPdf(document);
 
-            int pageNum = 1;
-            int lowerLeftX = 10;
-            int lowerLeftY = 650;
-            int upperRightX = 110;
-            int upperRightY = 750;
+                int pageNum = 1;
+                int lowerLeftX = 10;
+                int lowerLeftY = 650;
+                int upperRightX = 110;
+                int upperRightY = 750;
 
-            // Use compositing parameters for the image
-            var compositingParameters = new Aspose.Pdf.CompositingParameters(Aspose.Pdf.BlendMode.Multiply);
+                // Use compositing parameters for the image
+                var compositingParameters = new Aspose.Pdf.CompositingParameters(Aspose.Pdf.BlendMode.Multiply);
 
-            mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
+                mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save PDF document
-            mender.Save(dataDir + "AddImage_out.pdf");
+                // Save PDF document
+                mender.Save(dataDir + "AddImage_out.pdf");
+            }
         }
     }
 }
@@ -166,28 +174,31 @@ private static void AddImage03()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
-        // Load image into stream
-        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+        using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
-            mender.BindPdf(document);
+            // Load image into stream
+            using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+            {
+                // Bind PDF document
+                mender.BindPdf(document);
 
-            int pageNum = 1;
-            int lowerLeftX = 10;
-            int lowerLeftY = 650;
-            int upperRightX = 110;
-            int upperRightY = 750;
+                int pageNum = 1;
+                int lowerLeftX = 10;
+                int lowerLeftY = 650;
+                int upperRightX = 110;
+                int upperRightY = 750;
 
-            // Use compositing parameters with BlendMode.Exclusion and ImageFilterType.Flate
-            var compositingParameters = new Aspose.Pdf.CompositingParameters(
-                Aspose.Pdf.BlendMode.Exclusion,
-                Aspose.Pdf.ImageFilterType.Flate);
+                // Use compositing parameters with BlendMode.Exclusion and ImageFilterType.Flate
+                var compositingParameters = new Aspose.Pdf.CompositingParameters(
+                    Aspose.Pdf.BlendMode.Exclusion,
+                    Aspose.Pdf.ImageFilterType.Flate);
 
-            mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
+                mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save PDF document
-            mender.Save(dataDir + "AddImage_out.pdf");
+                // Save PDF document
+                mender.Save(dataDir + "AddImage_out.pdf");
+            }
         }
     }
 }
@@ -202,29 +213,32 @@ private static void AddImage04()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
-    using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
-        // Load image into stream
-        using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+        using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
-            mender.BindPdf(document);
+            // Load image into stream
+            using (var imageStream = File.OpenRead(dataDir + "AddImage.png"))
+            {
+                // Bind PDF document
+                mender.BindPdf(document);
 
-            int pageNum = 1;
-            int lowerLeftX = 10;
-            int lowerLeftY = 650;
-            int upperRightX = 110;
-            int upperRightY = 750;
+                int pageNum = 1;
+                int lowerLeftX = 10;
+                int lowerLeftY = 650;
+                int upperRightX = 110;
+                int upperRightY = 750;
 
-            // Use compositing parameters with BlendMode.Multiply, ImageFilterType.Flate and false
-            var compositingParameters = new Aspose.Pdf.CompositingParameters(
-                Aspose.Pdf.BlendMode.Multiply,
-                Aspose.Pdf.ImageFilterType.Flate,
-                false);
+                // Use compositing parameters with BlendMode.Multiply, ImageFilterType.Flate and false
+                var compositingParameters = new Aspose.Pdf.CompositingParameters(
+                    Aspose.Pdf.BlendMode.Multiply,
+                    Aspose.Pdf.ImageFilterType.Flate,
+                    false);
 
-            mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
+                mender.AddImage(imageStream, pageNum, lowerLeftX, lowerLeftY, upperRightX, upperRightY, compositingParameters);
 
-            // Save PDF document
-            mender.Save(dataDir + "AddImage_outp.pdf");
+                // Save PDF document
+                mender.Save(dataDir + "AddImage_outp.pdf");
+            }
         }
     }
 }
@@ -244,6 +258,7 @@ private static void AddText01()
     // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
+        // Bind PDF document
         mender.BindPdf(dataDir + "AddImage.pdf");
 
         // Create formatted text
@@ -274,6 +289,7 @@ private static void AddText02()
     // Create PdfFileMend object
     using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
     {
+        // Bind PDF document
         mender.BindPdf(dataDir + "AddImage.pdf");
 
         // Create formatted text
@@ -310,6 +326,7 @@ private static void AddText03()
         // Create PdfFileMend object
         using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
         {
+            // Bind PDF document
             mender.BindPdf(document);
 
             // Create formatted text

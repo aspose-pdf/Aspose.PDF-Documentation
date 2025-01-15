@@ -87,9 +87,11 @@ private static void FlattenAnnotationFromPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+
     // Create PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "AnnotationsInput.pdf");
         // Create FlattenSettings
         var flattenSettings = new Aspose.Pdf.Forms.Form.FlattenSettings

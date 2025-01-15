@@ -95,8 +95,8 @@ private static void AddBookmarksAction()
 
         editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
-        // Saves the result PDF to file
-        editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo_Bookmark_out.pdf");
     }
 }
 ```
@@ -117,8 +117,8 @@ private static void AddBookmarksAction()
 
     editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
-    // Saves the result PDF to file
-    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark_out.pdf");
 }
 ```
 {{< /tab >}}

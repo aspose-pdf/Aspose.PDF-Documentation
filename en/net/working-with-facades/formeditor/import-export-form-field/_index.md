@@ -84,7 +84,7 @@ private static void ImportData()
 
     using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Open Document
+        // Bind PDF document
         form.BindPdf(dataDir + "input.pdf");
 
         // Import data fdf
@@ -93,13 +93,13 @@ private static void ImportData()
             form.ImportFdf(xfdfInputStream);
         }
                 
-        // Import data xml
+        // Import data XML
         using (var xfdfInputStream  = new FileStream(dataDir + "input.xml", FileMode.Open))
         {
             form.ImportXml(xfdfInputStream);
         }
                 
-        // Import data xfdf
+        // Import data XFDF
         using (var xfdfInputStream  = new FileStream(dataDir + "input.xfdf", FileMode.Open))
         {
             form.ImportXfdf(xfdfInputStream);
@@ -122,28 +122,24 @@ private static void ExportData()
 
     using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Open Document
+        // Bind PDF document
         form.BindPdf(dataDir + "input.pdf");
-
                 
-        // Create fdf file.
+        // Create FDF file
         using (var fdfOutputStream = new FileStream(dataDir + "data_out.fdf", FileMode.Create))
         {
-            // Export fdf
             form.ExportXfdf(fdfOutputStream);
         }
                 
-        // Create xml file.
+        // Create XML file
         using (var xmlOutputStream = new FileStream(dataDir + "data_out.xml", FileMode.Create))
         {
-            // Export xml
             form.ExportXfdf(xmlOutputStream);
         }
             
-        // Create xfdf file.
+        // Create XFDF file
         using (var xfdfOutputStream = new FileStream(dataDir + "data_out.xfdf", FileMode.Create))
         {
-            // Export xfdf
             form.ExportXfdf(xfdfOutputStream);
         }              
     }

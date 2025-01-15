@@ -87,7 +87,7 @@ private static void AddXmpMetadata()
     // Create PdfXmpMetadata object
     using (var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata())
     {
-        // Bind pdf file to the object
+        // Bind PDF document
         xmpMetaData.BindPdf(dataDir + "SetXMPMetadata.pdf");
 
         // Add create date
@@ -112,7 +112,7 @@ private static void AddXmpMetadata()
         // Change user defined property
         xmpMetaData["customNamespace:UserPropertyName"] = "UserPropertyValue2";
 
-        // Save xmp meta data in the pdf file
+        // Save PDF document
         xmpMetaData.Save(dataDir + "SetXMPMetadata_out.pdf");
     }
 }
@@ -130,7 +130,7 @@ private static void AddXmpMetadata()
     // Create PdfXmpMetadata object
     using var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
 
-    // Bind pdf file to the object
+    // Bind PDF document
     xmpMetaData.BindPdf(dataDir + "SetXMPMetadata.pdf");
 
     // Add create date
@@ -155,7 +155,7 @@ private static void AddXmpMetadata()
     // Change user defined property
     xmpMetaData["customNamespace:UserPropertyName"] = "UserPropertyValue2";
 
-    // Save xmp meta data in the pdf file
+    // Save PDF document
     xmpMetaData.Save(dataDir + "SetXMPMetadata_out.pdf");
 }
 ```

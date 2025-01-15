@@ -97,8 +97,10 @@ private static void ImportAnnotation()
             
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "input.pdf");
         annotationEditor.ImportAnnotations(sources);
+        // Save PDF document
         annotationEditor.Save(dataDir + "ImportAnnotations_out.pdf");
     }
 }
@@ -115,17 +117,21 @@ private static void ImportExportXFDF01()
 
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
         using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
         }
 
+        // Create PDF document
         using (var document = new Aspose.Pdf.Document())
         {
             document.Pages.Add();
+            // Bind PDF document
             annotationEditor.BindPdf(document);
             annotationEditor.ImportAnnotationsFromXfdf(File.OpenRead(dataDir + "exportannotations_out.xfdf"));
+            // Save PDF document
             annotationEditor.Save(dataDir + "ImportedAnnotation_out.pdf");
         }
     }
@@ -155,10 +161,12 @@ private static void ImportExportXFDF02()
         using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
         {
             document.Pages.Add();
+            // Bind PDF document
             annotationEditor.BindPdf(document);
             annotationEditor.ImportAnnotationsFromXfdf(File.OpenRead(dataDir + "annotations.xfdf"));
+            // Save PDF document
             annotationEditor.Save(dataDir + "ImportedAnnotation_XFDF02_out.pdf");
-            }
+        }
     }
 }
 ```

@@ -79,13 +79,13 @@ draft: false
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CopyInnerField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor object
     using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the existing PDF document
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Form-01.pdf"))
         {
             // Add a new page to the document
@@ -112,7 +112,7 @@ private static void CopyInnerField()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CopyOuterField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor 

@@ -105,10 +105,10 @@ The second example works the same as the previous one, but the merged images wil
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeImages02()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Get all image files matching the pattern "MergeImages*.jpg"
     var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
@@ -131,10 +131,10 @@ In the third example, we will merge the pictures by centering them. Two horizont
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeImages03()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Get all image files matching the pattern "MergeImages*.jpg"
     var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
@@ -157,10 +157,10 @@ Also, Aspose.PDF for Java present you the opportunity to combine pictures and sa
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeImages04()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Get all image files matching the pattern "MergeImages*.jpg"
     var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
@@ -183,10 +183,10 @@ To save the merged images as one image on PDF page, we place them in the imageSt
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeImages05()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Get all image files matching the pattern "MergeImages*.jpg"
     var fileStreams = Directory.GetFiles(dataDir, "MergeImages*.jpg")
