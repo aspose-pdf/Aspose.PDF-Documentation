@@ -128,7 +128,7 @@ private static void AddTextBoxFieldToPdf()
 }
 ```
 
-[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) can be added with some child annotations.
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) can be added with some widget annotations.
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
@@ -140,11 +140,11 @@ private static void AddTextBoxFieldToPdf()
     // Create a new document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page to the created document
+        // Add a new page in the created document
         var page = document.Pages.Add();
 
-        // Defining an array with rectangle data for child annotations. 
-        // The number of elements in the array determines the number of child annotations to add.
+        // Defining an array with rectangle data for widget annotations. 
+        // The number of elements in the array determines the number of widget annotations to add.
         var rects = new Rectangle[]
         {
             new Rectangle(10, 600, 110, 620),
@@ -152,7 +152,7 @@ private static void AddTextBoxFieldToPdf()
             new Rectangle(10, 660, 110, 680)
         };
 
-        // Defining an array with DefaultAppearance used to specify how child annotations are displayed in the added field.
+        // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
         var defaultAppearances = new DefaultAppearance[]
         {
             new DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
@@ -163,7 +163,7 @@ private static void AddTextBoxFieldToPdf()
         // Create a field
         var textBoxField = new TextBoxField(page, rects);
 
-        // Setting the appearances of child annotations
+        // Setting the appearances of widget annotations
         short i = 0;
         foreach (WidgetAnnotation wa in textBoxField)
         {
