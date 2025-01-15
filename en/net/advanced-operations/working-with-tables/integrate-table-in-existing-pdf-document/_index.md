@@ -98,42 +98,47 @@ The example below demonstrates the use of the ImportDataTable method. In this ex
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+private static void ImportFromDataTable()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-DataTable dt = new DataTable("Employee");
-dt.Columns.Add("Employee_ID", typeof(Int32));
-dt.Columns.Add("Employee_Name", typeof(string));
-dt.Columns.Add("Gender", typeof(string));
-// Add 2 rows into the DataTable object programmatically
-DataRow dr = dt.NewRow();
-dr[0] = 1;
-dr[1] = "John Smith";
-dr[2] = "Male";
-dt.Rows.Add(dr);
-dr = dt.NewRow();
-dr[0] = 2;
-dr[1] = "Mary Miller";
-dr[2] = "Female";
-dt.Rows.Add(dr);
-// Create Document instance
-Document document = new Document();
-document.Pages.Add();
-// Initializes a new instance of the Table
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-// Set column widths of the table
-table.ColumnWidths = "40 100 100 100";
-// Set the table border color as LightGray
-table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Set the border for table cells
-table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-table.ImportDataTable(dt, true, 0, 1, 3, 3);
+    DataTable dt = new DataTable("Employee");
+    dt.Columns.Add("Employee_ID", typeof(Int32));
+    dt.Columns.Add("Employee_Name", typeof(string));
+    dt.Columns.Add("Gender", typeof(string));
+    // Add 2 rows into the DataTable object programmatically
+    DataRow dr = dt.NewRow();
+    dr[0] = 1;
+    dr[1] = "John Smith";
+    dr[2] = "Male";
+    dt.Rows.Add(dr);
+    dr = dt.NewRow();
+    dr[0] = 2;
+    dr[1] = "Mary Miller";
+    dr[2] = "Female";
+    dt.Rows.Add(dr);
+    // Create PDF document
+    using (var document = new Document())
+    {
+        document.Pages.Add();
+        // Initializes a new instance of the Table
+        Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+        // Set column widths of the table
+        table.ColumnWidths = "40 100 100 100";
+        // Set the table border color as LightGray
+        table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
+        // Set the border for table cells
+        table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
+        table.ImportDataTable(dt, true, 0, 1, 3, 3);
 
-// Add table object to first page of input document
-document.Pages[1].Paragraphs.Add(table);
+        // Add table object to first page of input document
+        document.Pages[1].Paragraphs.Add(table);
 
-// Save PDF document containing table object
-document.Save(dataDir + "DataIntegrated_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ImportFromDataTable_out.pdf");
+    }
+}
 ```
 
 ## How to determine if table will break in the current page
@@ -142,65 +147,70 @@ Tables are by default added from top-left position and if the table reaches the 
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-// Instantiate an object PDF class
-Document pdf = new Document();
-// Add the section to PDF document sections collection
-Page page = pdf.Pages.Add();
-// Instantiate a table object
-Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
-table1.Margin.Top = 300;
-// Add the table in paragraphs collection of the desired section
-page.Paragraphs.Add(table1);
-// Set with column widths of the table
-table1.ColumnWidths = "100 100 100";
-// Set default cell border using BorderInfo object
-table1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
-// Set table border using another customized BorderInfo object
-table1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
-// Create MarginInfo object and set its left, bottom, right and top margins
-Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
-margin.Top = 5f;
-margin.Left = 5f;
-margin.Right = 5f;
-margin.Bottom = 5f;
-// Set the default cell padding to the MarginInfo object
-table1.DefaultCellPadding = margin;
-// If you increase the counter to 17, table will break
-// Because it cannot be accommodated any more over this page
-for (int RowCounter = 0; RowCounter <= 16; RowCounter++)
+private static void DetermineTableBreak()
 {
-    // Create rows in the table and then cells in the rows
-    Aspose.Pdf.Row row1 = table1.Rows.Add();
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 1");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 2");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 3");
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Create PDF document
+    using (var document = new Document())
+    {
+        // Add the section to PDF document sections collection
+        Page page = pdf.Pages.Add();
+        // Instantiate a table object
+        Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
+        table1.Margin.Top = 300;
+        // Add the table in paragraphs collection of the desired section
+        page.Paragraphs.Add(table1);
+        // Set with column widths of the table
+        table1.ColumnWidths = "100 100 100";
+        // Set default cell border using BorderInfo object
+        table1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
+        // Set table border using another customized BorderInfo object
+        table1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
+        // Create MarginInfo object and set its left, bottom, right and top margins
+        Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
+        margin.Top = 5f;
+        margin.Left = 5f;
+        margin.Right = 5f;
+        margin.Bottom = 5f;
+        // Set the default cell padding to the MarginInfo object
+        table1.DefaultCellPadding = margin;
+        // If you increase the counter to 17, table will break
+        // Because it cannot be accommodated any more over this page
+        for (int RowCounter = 0; RowCounter <= 16; RowCounter++)
+        {
+            // Create rows in the table and then cells in the rows
+            Aspose.Pdf.Row row1 = table1.Rows.Add();
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 1");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 2");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 3");
+        }
+        // Get the Page Height information
+        float PageHeight = (float)pdf.PageInfo.Height;
+        // Get the total height information of Page Top & Bottom margin,
+        // Table Top margin and table height.
+        float TotalObjectsHeight = (float)page.PageInfo.Margin.Top + (float)page.PageInfo.Margin.Bottom + (float)table1.Margin.Top + (float)table1.GetHeight();
+
+        // Display Page Height, Table Height, table Top margin and Page Top
+        // And Bottom margin information
+        Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\nTop Margin Info = " + page.PageInfo.Margin.Top.ToString() + "\nBottom Margin Info = " + page.PageInfo.Margin.Bottom.ToString() + "\n\nTable-Top Margin Info = " + table1.Margin.Top.ToString() + "\nAverage Row Height = " + table1.Rows[0].MinRowHeight.ToString() + " \nTable height " + table1.GetHeight().ToString() + "\n ----------------------------------------" + "\nTotal Page Height =" + PageHeight.ToString() + "\nCummulative height including Table =" + TotalObjectsHeight.ToString());
+
+        // Check if we deduct the sume of Page top margin + Page Bottom margin
+        // + Table Top margin and table height from Page height and its less
+        // Than 10 (an average row can be greater than 10)
+        if ((PageHeight - TotalObjectsHeight) <= 10)
+        {
+            // If the value is less than 10, then display the message.
+            // Which shows that another row can not be placed and if we add new
+            // Row, table will break. It depends upon the row height value.
+            Console.WriteLine("Page Height - Objects Height < 10, so table will break");
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DetermineTableBreak_out.pdf");
+    }
 }
-// Get the Page Height information
-float PageHeight = (float)pdf.PageInfo.Height;
-// Get the total height information of Page Top & Bottom margin,
-// Table Top margin and table height.
-float TotalObjectsHeight = (float)page.PageInfo.Margin.Top + (float)page.PageInfo.Margin.Bottom + (float)table1.Margin.Top + (float)table1.GetHeight();
-
-// Display Page Height, Table Height, table Top margin and Page Top
-// And Bottom margin information
-Console.WriteLine("PDF document Height = " + pdf.PageInfo.Height.ToString() + "\nTop Margin Info = " + page.PageInfo.Margin.Top.ToString() + "\nBottom Margin Info = " + page.PageInfo.Margin.Bottom.ToString() + "\n\nTable-Top Margin Info = " + table1.Margin.Top.ToString() + "\nAverage Row Height = " + table1.Rows[0].MinRowHeight.ToString() + " \nTable height " + table1.GetHeight().ToString() + "\n ----------------------------------------" + "\nTotal Page Height =" + PageHeight.ToString() + "\nCummulative height including Table =" + TotalObjectsHeight.ToString());
-
-// Check if we deduct the sume of Page top margin + Page Bottom margin
-// + Table Top margin and table height from Page height and its less
-// Than 10 (an average row can be greater than 10)
-if ((PageHeight - TotalObjectsHeight) <= 10)
-{
-    // If the value is less than 10, then display the message.
-    // Which shows that another row can not be placed and if we add new
-    // Row, table will break. It depends upon the row height value.
-    Console.WriteLine("Page Height - Objects Height < 10, so table will break");
-}
-
-// Save the pdf document
-pdf.Save(dataDir + "DetermineTableBreak_out.pdf");
 ```
 
 ## Add Repeating Column in Table
@@ -209,71 +219,76 @@ In the Aspose.Pdf.Table class, you can set a RepeatingRowsCount that will repeat
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-string outFile = dataDir + "AddRepeatingColumn_out.pdf";
-// Create PDF document
-Document document = new Document();
-Page page = document.Pages.Add();
-
-// Instantiate an outer table that takes up the entire page
-Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();
-outerTable.ColumnWidths = "100%";
-outerTable.HorizontalAlignment = HorizontalAlignment.Left;
-
-// Instantiate a table object that will be nested inside outerTable that will break inside the same page
-Aspose.Pdf.Table mytable = new Aspose.Pdf.Table();
-mytable.Broken = TableBroken.VerticalInSamePage;
-mytable.ColumnAdjustment = ColumnAdjustment.AutoFitToContent;
-
-// Add the outerTable to the page paragraphs
-// Add mytable to outerTable
-page.Paragraphs.Add(outerTable);
-var bodyRow = outerTable.Rows.Add();
-var bodyCell = bodyRow.Cells.Add();
-bodyCell.Paragraphs.Add(mytable);
-mytable.RepeatingColumnsCount = 5;
-page.Paragraphs.Add(mytable);
-
-// Add header Row
-Aspose.Pdf.Row row = mytable.Rows.Add();
-row.Cells.Add("header 1");
-row.Cells.Add("header 2");
-row.Cells.Add("header 3");
-row.Cells.Add("header 4");
-row.Cells.Add("header 5");
-row.Cells.Add("header 6");
-row.Cells.Add("header 7");
-row.Cells.Add("header 11");
-row.Cells.Add("header 12");
-row.Cells.Add("header 13");
-row.Cells.Add("header 14");
-row.Cells.Add("header 15");
-row.Cells.Add("header 16");
-row.Cells.Add("header 17");
-
-for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
+private static void AddRepeatingColumn()
 {
-    // Create rows in the table and then cells in the rows
-    Aspose.Pdf.Row row1 = mytable.Rows.Add();
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 1");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 2");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 3");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 4");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 5");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 6");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 7");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 11");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 12");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 13");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 14");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 15");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 16");
-    row1.Cells.Add("col " + RowCounter.ToString() + ", 17");
-}
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-document.Save(outFile);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.Page page = document.Pages.Add();
+
+        // Instantiate an outer table that takes up the entire page
+        Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();
+        outerTable.ColumnWidths = "100%";
+        outerTable.HorizontalAlignment = HorizontalAlignment.Left;
+
+        // Instantiate a table object that will be nested inside outerTable that will break inside the same page
+        Aspose.Pdf.Table mytable = new Aspose.Pdf.Table();
+        mytable.Broken = TableBroken.VerticalInSamePage;
+        mytable.ColumnAdjustment = ColumnAdjustment.AutoFitToContent;
+
+        // Add the outerTable to the page paragraphs
+        // Add mytable to outerTable
+        page.Paragraphs.Add(outerTable);
+        var bodyRow = outerTable.Rows.Add();
+        var bodyCell = bodyRow.Cells.Add();
+        bodyCell.Paragraphs.Add(mytable);
+        mytable.RepeatingColumnsCount = 5;
+        page.Paragraphs.Add(mytable);
+
+        // Add header Row
+        Aspose.Pdf.Row row = mytable.Rows.Add();
+        row.Cells.Add("header 1");
+        row.Cells.Add("header 2");
+        row.Cells.Add("header 3");
+        row.Cells.Add("header 4");
+        row.Cells.Add("header 5");
+        row.Cells.Add("header 6");
+        row.Cells.Add("header 7");
+        row.Cells.Add("header 11");
+        row.Cells.Add("header 12");
+        row.Cells.Add("header 13");
+        row.Cells.Add("header 14");
+        row.Cells.Add("header 15");
+        row.Cells.Add("header 16");
+        row.Cells.Add("header 17");
+
+        for (int RowCounter = 0; RowCounter <= 5; RowCounter++)
+        {
+            // Create rows in the table and then cells in the rows
+            Aspose.Pdf.Row row1 = mytable.Rows.Add();
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 1");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 2");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 3");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 4");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 5");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 6");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 7");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 11");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 12");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 13");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 14");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 15");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 16");
+            row1.Cells.Add("col " + RowCounter.ToString() + ", 17");
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddRepeatingColumn_out.pdf");
+    }
+}
 ```
 
 ## Integrate Table with the Entity Framework source
@@ -281,9 +296,10 @@ document.Save(outFile);
 More relevant for modern .NET is the import of data from ORM frameworks. In this case, it's a good idea to extend the Table class with extension methods for importing data from a simple list or from the grouped data. Let's give an example for one of the most popular ORMs - Entity Framework.
 
 ```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 public static class PdfHelper
 {
-    public static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)
+    private static void ImportEntityList<TSource>(this Pdf.Table table, IList<TSource> data)
     {
         var headRow = table.Rows.Add();
 
@@ -329,7 +345,7 @@ public static class PdfHelper
         }
     }
     
-    public static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
+    private static void ImportGroupedData<TKey,TValue>(this Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
     {
         var headRow = table.Rows.Add();           
         var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);

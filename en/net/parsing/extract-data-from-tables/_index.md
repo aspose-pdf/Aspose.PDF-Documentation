@@ -94,7 +94,7 @@ The following example shows table extraction from the all pages:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Extract_Table()
+private static void ExtractTable()
 {
     var filePath = "<... enter path to pdf file here ...>";
     // Open PDF document
@@ -137,7 +137,7 @@ The following example show how to extract table marked with Square Annotation:
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Extract_Marked_Table()
+private static void ExtractMarkedTable()
 {
     var filePath = "<... enter path to pdf file here ...>";
     // Open PDF document
@@ -191,7 +191,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Extract_Table_Save_CSV()
+private static void ExtractTableSaveExcel()
 {
 
     // Open PDF document
@@ -201,6 +201,6 @@ public static void Extract_Table_Save_CSV()
     ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 
     // Save the output in XLS format
-    document.Save("PDFToXLS_out.xlsx", excelSave);
+    document.Save("ExtractTableSaveXLS_out.xlsx", excelSave);
 }
 ```

@@ -79,8 +79,7 @@ In order to set XMP metadata in a PDF file, you need to create [PdfXmpMetadata](
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
@@ -123,8 +122,7 @@ public static void AddXmpMetadata()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();

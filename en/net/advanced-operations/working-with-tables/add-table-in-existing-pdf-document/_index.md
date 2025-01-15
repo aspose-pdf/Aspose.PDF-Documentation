@@ -146,7 +146,7 @@ We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the ta
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void AddTable_RowColSpan()
+private static void AddTableRowColSpan()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
@@ -206,7 +206,7 @@ public static void AddTable_RowColSpan()
         document.Pages[1].Paragraphs.Add(table);
 
         // Save PDF document
-        document.Save(dataDir + "AddTable_out.pdf");
+        document.Save(dataDir + "AddTableRowColSpan_out.pdf");
     }
 }
 ```

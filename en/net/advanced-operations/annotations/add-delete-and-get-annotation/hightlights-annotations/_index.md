@@ -103,8 +103,6 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-// The path to the documents directory
 private static void AddTextMarkupAnnotations()
 {
     // The path to the documents directory
@@ -158,11 +156,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-/// <summary>
-/// Advanced example for you want to highlight a multi-line fragment
-/// </summary>
-public static void AddHighlightAnnotationAdvanced()
+private static void AddHighlightAnnotationAdvanced()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
@@ -228,10 +222,7 @@ private static HighlightAnnotation HighLightTextFragment(Page page,
     };
 }
 
-/// <summary>
-/// How to get a Highlighted Text
-/// </summary>
-public static void GetHighlightedText()
+private static void GetHighlightedText()
 {
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
@@ -253,8 +244,7 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void GetTextMarkupAnnotation()
+private static void GetTextMarkupAnnotation()
 {
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
@@ -277,8 +267,7 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void DeleteTextMarkupAnnotation()
+private static void DeleteTextMarkupAnnotation()
 {
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))

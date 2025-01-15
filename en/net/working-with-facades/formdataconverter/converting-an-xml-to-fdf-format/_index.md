@@ -88,7 +88,7 @@ Use the [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.faca
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-public static void ConvertXmlToFdf()
+private static void ConvertXmlToFdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();

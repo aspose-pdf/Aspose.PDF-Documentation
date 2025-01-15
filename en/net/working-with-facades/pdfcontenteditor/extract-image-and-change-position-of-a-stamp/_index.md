@@ -81,8 +81,7 @@ draft: false
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ExtractImageFromStamp()
+private static void ExtractImageFromStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -109,8 +108,7 @@ public static void ExtractImageFromStamp()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ExtractImageFromStamp()
+private static void ExtractImageFromStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -142,8 +140,7 @@ public static void ExtractImageFromStamp()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ChangeStampPosition()
+private static void ChangeStampPosition()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -172,8 +169,7 @@ public static void ChangeStampPosition()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ChangeStampPosition()
+private static void ChangeStampPosition()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -205,8 +201,7 @@ Also, you can use [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pd
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void MoveStampById()
+private static void MoveStampById()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -235,8 +230,7 @@ public static void MoveStampById()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void MoveStampById()
+private static void MoveStampById()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();

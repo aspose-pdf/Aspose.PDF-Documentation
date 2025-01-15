@@ -674,6 +674,33 @@ private static void AddInkAnnotationWithLineWidth()
 }
 ```
 
+### Delete Circle Annotation
+
+The following code snippet shows how to Delete Circle Annotation from PDF file.
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteCircleAnnotation()
+{
+	// The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+	
+    // Open PDF document
+    Document document = new Document(dataDir + "Appartments_mod.pdf");
+    var circleAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Circle)
+        .Cast<CircleAnnotation>();
+
+    foreach (var ca in circleAnnotations)
+    {
+        document.Pages[1].Annotations.Delete(ca);
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
+}
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -738,27 +765,3 @@ private static void AddInkAnnotationWithLineWidth()
 }
 </script>
 
-
-
-### Delete Circle Annotation
-
-The following code snippet shows how to Delete Circle Annotation from PDF file.
-
-```csharp
-public static void DeleteCircleAnnotation()
-{
-    // Open PDF document
-    Document document = new Document(dataDir + "Appartments_mod.pdf");
-    var circleAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Circle)
-        .Cast<CircleAnnotation>();
-
-    foreach (var ca in circleAnnotations)
-    {
-        document.Pages[1].Annotations.Delete(ca);
-    }
-
-    // Save PDF document
-    document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
-}
-```

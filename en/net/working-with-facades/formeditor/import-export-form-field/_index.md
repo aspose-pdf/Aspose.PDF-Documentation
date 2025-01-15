@@ -115,7 +115,7 @@ private static void ImportData()
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-public static void ExportData()
+private static void ExportData()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
@@ -145,8 +145,7 @@ public static void ExportData()
         {
             // Export xfdf
             form.ExportXfdf(xfdfOutputStream);
-        }
-                
+        }              
     }
 } 
 ```

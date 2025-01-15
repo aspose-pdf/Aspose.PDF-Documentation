@@ -87,8 +87,7 @@ For example, we specify the parameter [CenterWindow](https://reference.aspose.co
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void SetViewerPreference()
+private static void SetViewerPreference()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -114,8 +113,7 @@ public static void SetViewerPreference()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void SetViewerPreference()
+private static void SetViewerPreference()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

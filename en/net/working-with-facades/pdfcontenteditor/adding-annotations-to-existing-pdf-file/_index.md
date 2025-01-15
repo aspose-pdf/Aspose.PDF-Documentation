@@ -90,8 +90,7 @@ The following code snippet shows you how to add free text annotation in a PDF fi
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddFreeTextAnnotation()
+private static void AddFreeTextAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -126,8 +125,7 @@ public static void AddFreeTextAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddFreeTextAnnotation()
+private static void AddFreeTextAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -167,8 +165,7 @@ In this example also, you need to create an object of type [PdfContentEditor](ht
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddTextAnnotation()
+private static void AddTextAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -203,8 +200,7 @@ public static void AddTextAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddTextAnnotation()
+private static void AddTextAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -244,8 +240,7 @@ We also specify the Rectangle, coordinates of the beginning and end of the line,
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddLineAnnotation()
+private static void AddLineAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -276,8 +271,7 @@ public static void AddLineAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddLineAnnotation()
+private static void AddLineAnnotation()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

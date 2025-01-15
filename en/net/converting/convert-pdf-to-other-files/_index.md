@@ -157,7 +157,7 @@ You can convert PDF document to TXT file using [Visit](https://reference.aspose.
 The following code snippet explains how to extract the texts from the all pages.
 
 ```csharp
-public static void ConvertPDFDocToTXT()
+private static void ConvertPDFDocToTXT()
 {
     // Open PDF document
     Document document = new Document(dataDir + "demo.pdf");
@@ -183,7 +183,7 @@ You can convert PDF document to TXT file with Aspose.PDF for .NET. You should us
 The following code snippet explains how to extract the texts from the particular pages.
 
 ```csharp
-public static void ConvertPDFPagestoTXT()
+private static void ConvertPDFPagestoTXT()
 {
     Document document = new Document(dataDir + "demo.pdf");
     TextAbsorber ta = new TextAbsorber();

@@ -83,8 +83,7 @@ Other than the creation of simple bookmarks, sometimes you have a requirement to
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddBookmarksAction()
+private static void AddBookmarksAction()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -106,8 +105,7 @@ public static void AddBookmarksAction()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddBookmarksAction()
+private static void AddBookmarksAction()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

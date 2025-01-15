@@ -100,7 +100,7 @@ The easiest way to apply a license is to put the license file in the same folder
 When you call the [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/license/methods/setlicense/index) method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.PDF.lic.xml" pass that file name to the Pdf.SetLicense(…) method.
 
 ```csharp
-public static void SetLicenseExample()
+private static void SetLicenseExample()
 {
     // Initialize license object
     Aspose.Pdf.License license = new Aspose.Pdf.License();
@@ -122,7 +122,7 @@ public static void SetLicenseExample()
 The following example shows how to load a license from a stream.
 
 ```csharp
-public static void SetLicenseFromStream()
+private static void SetLicenseFromStream()
 {
     // Initialize license object
     Aspose.Pdf.License license = new Aspose.Pdf.License();
@@ -145,7 +145,7 @@ A new class Metered has been introduced to apply metered key. Following is the s
  For more details, please refer to the [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
 ```csharp
-public static void SetMeteredLicense()
+private static void SetMeteredLicense()
 {
     // set metered public and private keys
     Aspose.Pdf.Metered metered = new Aspose.Pdf.Metered();

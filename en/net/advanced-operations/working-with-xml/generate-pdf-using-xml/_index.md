@@ -525,7 +525,7 @@ The following snippet shows how to use this class with the sample files describe
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Example_Xslfo_to_Pdf()
+private static void ExampleXslfoToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();
@@ -546,7 +546,7 @@ public static void Example_Xslfo_to_Pdf()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Example_Xslfo_to_Pdf()
+private static void ExampleXslfoToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();
@@ -666,7 +666,7 @@ The following snippet shows how to use this class with the sample files describe
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Example_Xslfo_to_Pdf_Param_21_7()
+private static void ExampleXslfoToPdfParam_21_7()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();
@@ -693,7 +693,7 @@ public static void Example_Xslfo_to_Pdf_Param_21_7()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Example_Xslfo_to_Pdf_Param_21_7()
+private static void ExampleXslfoToPdfParam_21_7()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();
@@ -723,7 +723,7 @@ If you use version earlier than 21.7, please use following technique:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Example_Xslfo_to_Pdf_Param_21_6()
+private static void ExampleXslfoToPdfParam_21_6()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();
@@ -771,7 +771,7 @@ public static MemoryStream TransformXsl(string inputXml, string xsltString)
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void Example_Xslfo_to_Pdf_Param_21_6()
+private static void ExampleXslfoToPdf_Param_21_6()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf();

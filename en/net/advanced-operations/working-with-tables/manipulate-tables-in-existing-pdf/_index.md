@@ -83,25 +83,30 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+private static void ManipulateTable()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Load existing PDF file
-Document document = new Document(dataDir + "input.pdf");
-// Create TableAbsorber object to find tables
-TableAbsorber absorber = new TableAbsorber();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Visit first page with absorber
-absorber.Visit(document.Pages[1]);
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Get access to first table on page, their first cell and text fragments in it
-TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
+        // Get access to first table on page, their first cell and text fragments in it
+        Aspose.Pdf.Text.TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
 
-// Change text of the first text fragment in the cell
-fragment.Text = "hi world";
+        // Change text of the first text fragment in the cell
+        fragment.Text = "hi world";
 
-// Save file
-document.Save(dataDir + "ManipulateTable_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ManipulateTable_out.pdf");
+    }
+}
 ```
 
 ## Replace old Table with a new one in PDF document
@@ -110,36 +115,40 @@ In case you need to find a particular table and replace it with the desired one,
 
 ```csharp
 // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+private static void ReplaceTable()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Load existing PDF document
-Document document = new Document(dataDir + @"Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Create TableAbsorber object to find tables
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Visit first page with absorber
-absorber.Visit(document.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// Get first table on the page
-AbsorbedTable table = absorber.TableList[0];
+        // Create new table
+        var newTable = new Aspose.Pdf.Table();
+        newTable.ColumnWidths = "100 100 100";
+        newTable.DefaultCellBorder = new Aspose.Pdf.BorderInfo(BorderSide.All, 1F);
 
-// Create new table
-Table newTable = new Table();
-newTable.ColumnWidths = "100 100 100";
-newTable.DefaultCellBorder = new BorderInfo(BorderSide.All, 1F);
+        Row row = newTable.Rows.Add();
+        row.Cells.Add("Col 1");
+        row.Cells.Add("Col 2");
+        row.Cells.Add("Col 3");
 
-Row row = newTable.Rows.Add();
-row.Cells.Add("Col 1");
-row.Cells.Add("Col 2");
-row.Cells.Add("Col 3");
+        // Replace the table with new one
+        absorber.Replace(document.Pages[1], table, newTable);
 
-// Replace the table with new one
-absorber.Replace(document.Pages[1], table, newTable);
-
-// Save PDF document
-document.Save(dataDir + "TableReplaced_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTable_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">

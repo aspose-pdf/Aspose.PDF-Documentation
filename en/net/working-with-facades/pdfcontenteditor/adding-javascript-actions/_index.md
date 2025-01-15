@@ -83,8 +83,7 @@ First of all, an object is drawn in the [Document](https://reference.aspose.com/
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddJavascriptAction()
+private static void AddJavascriptAction()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
@@ -109,8 +108,7 @@ public static void AddJavascriptAction()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddJavascriptAction()
+private static void AddJavascriptAction()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();

@@ -446,7 +446,7 @@ More relevant for modern .NET is the import of data from ORM frameworks. In this
 ```csharp
 public static class PdfHelper
 {
-    public static void ImportEntityList<TSource>(this Aspose.Pdf.Table table, IList<TSource> data)
+    private static void ImportEntityList<TSource>(this Aspose.Pdf.Table table, IList<TSource> data)
     {
         var headRow = table.Rows.Add();
 
@@ -492,7 +492,7 @@ public static class PdfHelper
         }
     }
 
-    public static void ImportGroupedData<TKey, TValue>(this Aspose.Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
+    private static void ImportGroupedData<TKey, TValue>(this Aspose.Pdf.Table table, IEnumerable<Models.GroupViewModel<TKey, TValue>> groupedData)
     {
         var headRow = table.Rows.Add();
         var props = typeof(TValue).GetProperties(BindingFlags.Public | BindingFlags.Instance);
