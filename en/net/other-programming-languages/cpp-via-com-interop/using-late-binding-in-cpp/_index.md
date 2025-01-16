@@ -87,16 +87,16 @@ This is a simple C++ code sample to extract text from PDF by means of COM Intero
 {{% /alert %}}
 
 ```cpp
-#include "stdafx.h"
+#include "pch.h"
 #include "comdef.h"
 
 using namespace System;
 
-String ^lateBinding(String ^file)
+String^ lateBinding(String^ file)
 {
     String^ text;
     DISPID dispid;
-    DISPPARAMS dp = { NULL, NULL, 0, 0};
+    DISPPARAMS dp = { NULL, NULL, 0, 0 };
     VARIANTARG vargs[1];
     VARIANT arg, result;
     WCHAR str[255];
@@ -108,7 +108,7 @@ String ^lateBinding(String ^file)
     wcscpy_s(str, L"Aspose.Pdf.ComHelper");
     CLSIDFromProgID(str, &pclsid);
 
-    HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&comHelperPtr);
+    HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&comHelperPtr);
     if (FAILED(hr))
     {
         Console::WriteLine(L"Error occured");
@@ -120,9 +120,9 @@ String ^lateBinding(String ^file)
         wcscpy_s(str, L"Aspose.Pdf.License");
         CLSIDFromProgID(str, &pclsid);
 
-        HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&licPtr);
+        HRESULT hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&licPtr);
 
-        OLECHAR* setLicense =  L"SetLicense";
+        OLECHAR* setLicense = L"SetLicense";
 
         hr = licPtr->GetIDsOfNames(IID_NULL, &setLicense, 1, GetUserDefaultLCID(), &dispid);
         arg.vt = VT_BSTR;
@@ -141,11 +141,11 @@ String ^lateBinding(String ^file)
 
         SysFreeString(lic);
 
-        licPtr.Release();
+        licPtr->Release();
 
         // get Document
 
-        OLECHAR* openFile =  L"OpenFile";
+        OLECHAR* openFile = L"OpenFile";
 
         hr = comHelperPtr->GetIDsOfNames(IID_NULL, &openFile, 1, GetUserDefaultLCID(), &dispid);
 
@@ -163,13 +163,13 @@ String ^lateBinding(String ^file)
 
         IDispatch* docPtr = result.pdispVal;
 
-        comHelperPtr.Release();
+        comHelperPtr->Release();
 
         //------------------------
 
         // get Pages for the Document
 
-        OLECHAR* pages =  L"Pages";
+        OLECHAR* pages = L"Pages";
 
         hr = docPtr->GetIDsOfNames(IID_NULL, &pages, 1, GetUserDefaultLCID(), &dispid);
 
@@ -189,7 +189,7 @@ String ^lateBinding(String ^file)
 
         CLSIDFromProgID(str, &pclsid);
 
-        hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void **)&absorberPtr);
+        hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&absorberPtr);
 
         //------------------------
 
@@ -227,27 +227,27 @@ String ^lateBinding(String ^file)
 
         text = gcnew String(result.bstrVal);
 
-        docPtr.Release();
+        docPtr->Release();
 
-        pagesPtr.Release();
+        pagesPtr->Release();
 
-        absorberPtr.Release();
+        absorberPtr->Release();
 
     }
 
     return text;
 }
 
-int main(array<System::String ^> ^args)
+int main(array<System::String^>^ args)
 {
     if (args->Length != 1)
     {
-        Console::WriteLine("Missing parameters\nUsage:testCOM <pdf file>");
+        Console::WriteLine("Missing parameters\nUsage:testCOM.exe <pdf file>");
         return 0;
     }
 
     CoInitialize(NULL);
-    String ^text = lateBinding(args[0]);
+    String^ text = lateBinding(args[0]);
     CoUninitialize();
     Console::WriteLine("Extracted text:");
     Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");

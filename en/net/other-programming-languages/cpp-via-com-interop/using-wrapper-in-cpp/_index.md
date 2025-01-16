@@ -87,17 +87,18 @@ We will use a [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assem
 {{% /alert %}}
 
 ```cpp
-#include "stdafx.h"
-#import "C:\\Temp\\PdfText.tlb"
+#include "pch.h"
+#include <comdef.h>
+
+#import "TextRetriever.tlb"
 using namespace System;
 
 String^ wrapper(String^ file)
 {
     String^ text;
-    // create ComHelper
 
-    PdfText::IPetrieverPtr retrieverPtr;
-    HRESULT hr = retrieverPtr.CreateInstance(__uuidof(PdfText::Petriever));
+    TextRetriever::IRetrieverPtr retrieverPtr;
+    HRESULT hr = retrieverPtr.CreateInstance(__uuidof(TextRetriever::Retriever));
 
     if (FAILED(hr))
     {
@@ -106,7 +107,7 @@ String^ wrapper(String^ file)
     else
     {
         // set license
-        retrieverPtr->SetLicense("C:\\Temp\\Aspose.PDF.lic");
+        retrieverPtr->SetLicense("Aspose.PDF.lic");
         // retrieve text
 
         BSTR extractedText = retrieverPtr->GetText((BSTR)System::Runtime::InteropServices::Marshal::StringToBSTR(file).ToPointer());
@@ -116,7 +117,7 @@ String^ wrapper(String^ file)
     return text;
 }
 
-int main(array<System::String ^> ^args)
+int main(array<System::String^>^ args)
 {
     CoInitialize(NULL);
     if (args->Length != 1)
@@ -125,7 +126,7 @@ int main(array<System::String ^> ^args)
         return 0;
     }
 
-    String ^text = wrapper(args[0]);
+    String^ text = wrapper(args[0]);
     CoUninitialize();
     Console::WriteLine("Extracted text:");
     Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");
