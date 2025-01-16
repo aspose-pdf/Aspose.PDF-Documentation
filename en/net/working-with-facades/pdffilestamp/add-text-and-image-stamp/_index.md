@@ -119,7 +119,6 @@ private static void AddTextStampOnAllPagesInPdfFile()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTextStampOnParticularPagesInPdfFile()
 {
     // The path to the documents directory

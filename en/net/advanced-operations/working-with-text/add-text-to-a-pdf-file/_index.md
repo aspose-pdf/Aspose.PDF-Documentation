@@ -471,7 +471,6 @@ We can set Footnote Label (note identifier) formatting using TextState object as
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void FormattingUsingTextStateObject()
 {
     var text = new Aspose.Pdf.Text.TextFragment("test text 1");

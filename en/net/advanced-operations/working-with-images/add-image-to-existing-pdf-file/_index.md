@@ -191,7 +191,6 @@ Sometimes, it is necessary to crop an image before inserting it into a PDF. Use 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddCroppedImageToPDF()
 {
     // The path to the documents directory

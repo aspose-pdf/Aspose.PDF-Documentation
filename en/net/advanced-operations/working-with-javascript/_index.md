@@ -308,7 +308,6 @@ private static void CreateDocumentWithExpiryDate()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateDocumentWithExpiryDate()
 {
     // The path to the documents directory

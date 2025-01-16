@@ -87,7 +87,6 @@ In order to get file specific information of a PDF file, you first need to get t
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetPDFFileInformation()
 {
     // The path to the documents directory
@@ -114,7 +113,6 @@ private static void GetPDFFileInformation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetPDFFileInformation()
 {
     // The path to the documents directory

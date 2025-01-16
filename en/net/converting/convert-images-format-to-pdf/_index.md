@@ -241,7 +241,6 @@ The following code snippet shows how to convert DICOM files to PDF format with A
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertDICOMtoPDF()
 {
     // The path to the documents directory
@@ -959,7 +958,7 @@ private static void ConvertHEICtoPDF()
             page.PageInfo.Margin.Left = 0;
 
             page.Paragraphs.Add(asposeImage);
-            
+
             // Save PDF document
             document.Save(dataDir + "HEICtoPDF_out.pdf");
         }
