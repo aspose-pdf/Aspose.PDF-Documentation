@@ -535,13 +535,88 @@ This feature is supported by version 18.12 or greater.
 
 Aspose.PDF for .NET provides support of FlateDecode compression for PDF Optimisation functionality. The following code snippet below shows how to use the option in Optimization to store images with **FlateDecode** compression:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-FlateDecodeCompression-1.cs" >}}
+```csharp
+private static void OptimizeDocumentImagesWithFlateCompression()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizationOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // To optimize images using FlateDecode compression, set optimization options to Flate
+        optimizationOptions.ImageCompressionOptions.Encoding = Aspose.Pdf.Optimization.ImageEncoding.Flate;
+
+        // Set optimization options
+        document.OptimizeResources(optimizationOptions);
+
+        // Save the optimized document
+        document.Save(dataDir + "FlateDecodeCompression.pdf");
+    }
+}
+```
 
 ### **Store Image in XImageCollection**
 
 Aspose.PDF for .NET provides the ability to store new images into **XImageCollection** with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag. The following code snippet shows how to use this functionality:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-StoreImageInXImageCollection-1.cs" >}}
+```csharp
+private static void AddImageToPdfWithFlateCompression()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create new document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a new page to the document
+        document.Pages.Add();
+        var page = document.Pages[1];
+
+        // Open the image file stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the page resources with Flate compression
+            page.Resources.Images.Add(imageStream, Aspose.Pdf.ImageFilterType.Flate);
+        }
+
+        // Get the added image
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
+
+        // Save the current graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Set coordinates for the image placement
+        int lowerLeftX = 0;
+        int lowerLeftY = 0;
+        int upperRightX = 600;
+        int upperRightY = 600;
+
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY
+        });
+
+        // Use ConcatenateMatrix operator to define how the image must be placed
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+
+        // Restore the graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save the document
+        document.Save(dataDir + "FlateDecodeCompression.pdf");
+    }
+}
+```
 
 <script type="application/ld+json">
 {
