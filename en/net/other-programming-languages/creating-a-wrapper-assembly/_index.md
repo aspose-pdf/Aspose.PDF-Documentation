@@ -106,25 +106,25 @@ namespace PdfText
     {
         public void SetLicense(string file)
         {
-            License lic = new License();
+            Aspose.Pdf.License lic = new Aspose.Pdf.License();
             lic.SetLicense(file);
         }
 
         public string GetText(string file)
         {
-            // open document
-            Document document = new Document(file);
+            // Open PDF document
+            using (var document = new Aspose.Pdf.Document(file))
+            {
+                // Сreate TextAbsorber object to extract text
+                Aspose.Pdf.Text.TextAbsorber absorber = new Aspose.Pdf.Text.TextAbsorber();
 
-            // create TextAbsorber object to extract text
-            TextAbsorber absorber = new TextAbsorber();
+                // Accept the absorber for all document's pages
+                document.Pages.Accept(absorber);
 
-            // accept the absorber for all document's pages
-            document.Pages.Accept(absorber);
-
-            // get the extracted text
-
-            string text = absorber.Text;
-            return text;
+                // Get the extracted text
+                string text = absorber.Text;
+                return text;
+            }
         }
     }
 }

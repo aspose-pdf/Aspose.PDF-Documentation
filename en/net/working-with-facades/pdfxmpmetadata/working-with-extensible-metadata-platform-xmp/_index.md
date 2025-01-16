@@ -92,8 +92,7 @@ Following code snippet will help you understand how to use [PdfXmpMetadata](http
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
@@ -127,7 +126,7 @@ public static void AddXmpMetadata()
             // Add Nick Name to xmp metadata
             xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-            // Save xmp meta data in the pdf file
+            // Save PDF document
             xmpMetaData.Save(output);
         }
     }
@@ -138,8 +137,7 @@ public static void AddXmpMetadata()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
@@ -173,7 +171,7 @@ public static void AddXmpMetadata()
     // Add Nick Name to xmp metadata
     xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-    // Save xmp meta data in the pdf file
+    // Save PDF document
     xmpMetaData.Save(output);
 }
 ```

@@ -98,7 +98,7 @@ private static void PrintToXpsPrinter()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -140,7 +140,7 @@ private static void PrintToXpsPrinter()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing

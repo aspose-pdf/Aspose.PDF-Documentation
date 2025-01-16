@@ -99,12 +99,13 @@ Please note that the height and width properties use points as basic unit, where
 The following code snippet shows how to change the PDF page dimensions to A4 size.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ChangePdfPageSize()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
     {
         // Get page collection
@@ -114,7 +115,7 @@ private static void ChangePdfPageSize()
         // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
         // So A4 dimensions in points will be (842.4, 597.6)
         pdfPage.SetPageSize(597.6, 842.4);
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "UpdateDimensions_out.pdf"); 
     }
 }
@@ -125,12 +126,13 @@ private static void ChangePdfPageSize()
 You can read PDF page size of an existing PDF file using Aspose.PDF for .NET. The following code sample shows how to read PDF page dimensions using C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetPdfPageSize()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
     {
         // Adds a blank page to pdf document

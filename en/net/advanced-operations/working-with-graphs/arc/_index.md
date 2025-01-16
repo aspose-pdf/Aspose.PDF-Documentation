@@ -95,13 +95,12 @@ The following code snippet shows how to add a [Arc](https://reference.aspose.com
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void Arc()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -145,7 +144,7 @@ private static void Arc()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingArc_out.pdf");
     }
 }
@@ -157,13 +156,12 @@ Next example shows how to add a Arc object that is filled with color and certain
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ArcFilled()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -199,7 +197,7 @@ private static void ArcFilled()
         // Add Graph object to the paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save the PDF file
+        // Save PDF document
         document.Save(dataDir + "ExampleFilledArc_out.pdf");
     }
 }

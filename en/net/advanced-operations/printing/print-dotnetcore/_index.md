@@ -115,10 +115,9 @@ private static void PrintPDF(string pdfFileName)
     // Create print server and print queue.
     var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
-    // Open a PDF document
+    // Convert PDF to XPS
     using (var document = new Aspose.Pdf.Document(pdfFileName))
     {
-        // Convert PDF to XPS
         var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
         document.Save(xpsFileName, SaveFormat.Xps);
 
@@ -161,7 +160,7 @@ private static void PrintPDF(string pdfFileName)
     // Create print server and print queue.
     var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
-    // Open a PDF document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(pdfFileName);
 
     // Convert PDF to XPS
@@ -192,7 +191,7 @@ private static void PickTrayByPdfSize()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a new page and some content
@@ -202,7 +201,7 @@ private static void PickTrayByPdfSize()
         // Set the flag to choose a paper tray using the PDF page size
         document.PickTrayByPdfSize = true;
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
     }
 }
@@ -218,7 +217,7 @@ private static void PickTrayByPdfSize()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create a new document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
     // Add a new page and some content
@@ -228,7 +227,7 @@ private static void PickTrayByPdfSize()
     // Set the flag to choose a paper tray using the PDF page size
     document.PickTrayByPdfSize = true;
 
-    // Save the document
+    // Save PDF document
     document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
 }
 ```
@@ -253,7 +252,7 @@ private static void SetPrintScaling()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create an empty document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a new page
@@ -262,7 +261,7 @@ private static void SetPrintScaling()
         // Disable print scaling
         document.PrintScaling = PrintScaling.None;
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "SetPrintScaling_out.pdf");
     }
 }
@@ -278,7 +277,7 @@ private static void SetPrintScaling()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create an empty document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
     // Add a new page
@@ -287,7 +286,7 @@ private static void SetPrintScaling()
     // Disable print scaling
     document.PrintScaling = PrintScaling.None;
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "SetPrintScaling_out.pdf");
 }
 ```

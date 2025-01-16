@@ -79,8 +79,7 @@ In order to set XMP metadata in a PDF file, you need to create [PdfXmpMetadata](
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
@@ -88,7 +87,7 @@ public static void AddXmpMetadata()
     // Create PdfXmpMetadata object
     using (var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata())
     {
-        // Bind pdf file to the object
+        // Bind PDF document
         xmpMetaData.BindPdf(dataDir + "SetXMPMetadata.pdf");
 
         // Add create date
@@ -113,7 +112,7 @@ public static void AddXmpMetadata()
         // Change user defined property
         xmpMetaData["customNamespace:UserPropertyName"] = "UserPropertyValue2";
 
-        // Save xmp meta data in the pdf file
+        // Save PDF document
         xmpMetaData.Save(dataDir + "SetXMPMetadata_out.pdf");
     }
 }
@@ -123,8 +122,7 @@ public static void AddXmpMetadata()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
@@ -132,7 +130,7 @@ public static void AddXmpMetadata()
     // Create PdfXmpMetadata object
     using var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
 
-    // Bind pdf file to the object
+    // Bind PDF document
     xmpMetaData.BindPdf(dataDir + "SetXMPMetadata.pdf");
 
     // Add create date
@@ -157,7 +155,7 @@ public static void AddXmpMetadata()
     // Change user defined property
     xmpMetaData["customNamespace:UserPropertyName"] = "UserPropertyValue2";
 
-    // Save xmp meta data in the pdf file
+    // Save PDF document
     xmpMetaData.Save(dataDir + "SetXMPMetadata_out.pdf");
 }
 ```

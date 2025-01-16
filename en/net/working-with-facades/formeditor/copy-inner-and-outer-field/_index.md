@@ -79,13 +79,13 @@ draft: false
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CopyInnerField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor object
     using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the existing PDF document
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Form-01.pdf"))
         {
             // Add a new page to the document
@@ -97,7 +97,7 @@ private static void CopyInnerField()
             // Copy the field "Last Name" from the first page to "Last Name 2" on the second page
             formEditor.CopyInnerField("Last Name", "Last Name 2", 2);
 
-            // Save the updated PDF with the copied field
+            // Save PDF document
             formEditor.Save(dataDir + "Sample-Form-01-mod.pdf");
         }
     }
@@ -112,7 +112,7 @@ private static void CopyInnerField()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CopyOuterField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor 
@@ -133,7 +133,7 @@ private static void CopyOuterField()
             // Copy the outer field "Last Name" from the original document to the new document
             formEditor.CopyOuterField(dataDir + "Sample-Form-01.pdf", "Last Name", 1);
 
-            // Save the updated PDF with the copied outer fields
+            // Save PDF document
             formEditor.Save(dataDir + "Sample-Form-02-mod.pdf");
         }
     }

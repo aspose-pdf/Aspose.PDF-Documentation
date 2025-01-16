@@ -80,8 +80,7 @@ In order to update an existing bookmark in a PDF file, you need to use [ModifyBo
 {{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void UpdateExistingBookmark()
 {
     // The path to the documents directory
@@ -90,13 +89,13 @@ private static void UpdateExistingBookmark()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "UpdateBookmark.pdf");
 
         // Modify the existing bookmark, assigning a new title
         bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title");
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "UpdateBookmark_out.pdf");
     }
 }
@@ -105,8 +104,7 @@ private static void UpdateExistingBookmark()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void UpdateExistingBookmark()
 {
     // The path to the documents directory
@@ -115,13 +113,13 @@ private static void UpdateExistingBookmark()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Bind PDF document
     bookmarkEditor.BindPdf(dataDir + "UpdateBookmark.pdf");
 
     // Modify the existing bookmark, assigning a new title
     bookmarkEditor.ModifyBookmarks("New Bookmark", "New Title");
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "UpdateBookmark_out.pdf");
 }
 ```
@@ -135,8 +133,7 @@ You can delete all the bookmarks from the PDF file using [DeleteBookmarks](https
 {{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllBookmarks()
 {
     // The path to the documents directory
@@ -145,13 +142,13 @@ private static void DeleteAllBookmarks()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "DeleteAllBookmarks.pdf");
 
         // Delete all bookmarks in the document
         bookmarkEditor.DeleteBookmarks();
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "DeleteAllBookmarks_out.pdf");
     }
 }
@@ -160,8 +157,7 @@ private static void DeleteAllBookmarks()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteAllBookmarks()
 {
     // The path to the documents directory
@@ -170,13 +166,13 @@ private static void DeleteAllBookmarks()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Bind PDF document
     bookmarkEditor.BindPdf(dataDir + "DeleteAllBookmarks.pdf");
 
     // Delete all bookmarks in the document
     bookmarkEditor.DeleteBookmarks();
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "DeleteAllBookmarks_out.pdf");
 }
 ```
@@ -190,8 +186,7 @@ In order to delete a particular bookmark, you need to call [DeleteBookmarks](htt
 {{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteParticularBookmark()
 {
     // The path to the documents directory
@@ -200,13 +195,13 @@ private static void DeleteParticularBookmark()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "DeleteABookmark.pdf");
 
         // Delete a bookmark with the title "Page2"
         bookmarkEditor.DeleteBookmarks("Page2");
 
-        // Save the updated PDF file
+        // Save PDF document
         bookmarkEditor.Save(dataDir + "DeleteABookmark_out.pdf");
     }
 }
@@ -215,8 +210,7 @@ private static void DeleteParticularBookmark()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DeleteParticularBookmark()
 {
     // The path to the documents directory
@@ -225,13 +219,13 @@ private static void DeleteParticularBookmark()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+   // Bind PDF document
     bookmarkEditor.BindPdf(dataDir + "DeleteABookmark.pdf");
 
     // Delete a bookmark with the title "Page2"
     bookmarkEditor.DeleteBookmarks("Page2");
 
-    // Save the updated PDF file
+    // Save PDF document
     bookmarkEditor.Save(dataDir + "DeleteABookmark_out.pdf");
 }
 ```
@@ -245,8 +239,7 @@ The [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/
 {{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetBookmarksFromDocument()
 {
     // The path to the documents directory
@@ -255,7 +248,7 @@ private static void GetBookmarksFromDocument()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "GetFromPDF.PDF");
 
         // Extract all bookmarks from the document
@@ -280,8 +273,7 @@ private static void GetBookmarksFromDocument()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void GetBookmarksFromDocument()
 {
     // The path to the documents directory
@@ -290,7 +282,7 @@ private static void GetBookmarksFromDocument()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Bind PDF document
     bookmarkEditor.BindPdf(dataDir + "GetFromPDF.PDF");
 
     // Extract all bookmarks from the document
@@ -320,8 +312,7 @@ private static void GetBookmarksFromDocument()
 {{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
 {{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExtractBookmarksFromPDFFile()
 {
     // The path to the documents directory
@@ -330,7 +321,7 @@ private static void ExtractBookmarksFromPDFFile()
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open a PDF document
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
 
         // Extract bookmarks from the document
@@ -355,8 +346,7 @@ private static void ExtractBookmarksFromPDFFile()
 
 {{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExtractBookmarksFromPDFFile()
 {
     // The path to the documents directory
@@ -365,7 +355,7 @@ private static void ExtractBookmarksFromPDFFile()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open a PDF document
+    // Open PDF document
     bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
 
     // Extract bookmarks from the document

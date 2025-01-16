@@ -83,21 +83,20 @@ Other than the creation of simple bookmarks, sometimes you have a requirement to
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddBookmarksAction()
+private static void AddBookmarksAction()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
     {
         var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
 
         editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
-        // Saves the result PDF to file
-        editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo_Bookmark_out.pdf");
     }
 }
 ```
@@ -106,21 +105,20 @@ public static void AddBookmarksAction()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddBookmarksAction()
+private static void AddBookmarksAction()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
 
     var editor = new Aspose.Pdf.Facades.PdfContentEditor(document);
 
     editor.CreateBookmarksAction("Bookmark 1", System.Drawing.Color.Green, true, false, string.Empty, "GoTo", "2");
 
-    // Saves the result PDF to file
-    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo_Bookmark_out.pdf");
 }
 ```
 {{< /tab >}}

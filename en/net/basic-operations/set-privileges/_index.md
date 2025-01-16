@@ -84,13 +84,12 @@ To set privileges on a PDF file, create an object of the [DocumentPrivilege](htt
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrivilegesOnExistingPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate Document Privileges object
@@ -102,7 +101,7 @@ private static void SetPrivilegesOnExistingPdfFile()
         // Need to set the password, so that once the user views the file with user password
         // Only screen reading option is enabled
         document.Encrypt("user", "owner", documentPrivilege, Aspose.Pdf.CryptoAlgorithm.AESx128, false);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SetPrivileges_out.pdf");
     }
 }
@@ -121,18 +120,17 @@ The following code snippet shows you how to encrypt PDF files.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void EncryptPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Encrypt.pdf"))
     {
         // Encrypt PDF
         document.Encrypt("user", "owner", 0, Aspose.Pdf.CryptoAlgorithm.RC4x128);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Encrypt_out.pdf");
     }
 }
@@ -149,18 +147,17 @@ In order to decrypt the PDF file, you first need to create a [Document](https://
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DecryptPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document with a password
+    // Open PDF document with a password
     using (var document = new Aspose.Pdf.Document(dataDir + "Decrypt.pdf", "password"))
     {
         // Decrypt PDF
         document.Decrypt();
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Decrypt_out.pdf");
     }
 }
@@ -177,18 +174,17 @@ The following code snippet shows you how to change the password of a PDF file.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ChangePassword()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-    // Open the document with a password
+    // Open PDF document with a password
     using (var document = new Aspose.Pdf.Document(dataDir + "ChangePassword.pdf", "owner"))
     {
         // Change password
         document.ChangePasswords("owner", "newuser", "newowner");
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "ChangePassword_out.pdf");
     }
 }
@@ -218,7 +214,6 @@ Sometimes there is a requirement to determine the correct password from an array
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DetermineCorrectPasswordFromArray()
 {
     // The path to the documents directory

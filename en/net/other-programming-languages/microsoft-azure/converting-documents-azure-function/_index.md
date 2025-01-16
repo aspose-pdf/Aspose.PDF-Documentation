@@ -239,7 +239,7 @@ public class PdfConverter
         await sourceBlob.DownloadToAsync(sourceStream);
         sourceStream.Position = 0;
 
-        // Load PDF document
+        // Open PDF document
         var document = new Aspose.Pdf.Document(sourceStream);
 
         // Create output stream
@@ -463,7 +463,9 @@ public async Task<IActionResult> Run(
 {
     // Check authentication
     if (!principal.Identity.IsAuthenticated)
+    {
         return new UnauthorizedResult();
+    }
     // ...
 }
 ```

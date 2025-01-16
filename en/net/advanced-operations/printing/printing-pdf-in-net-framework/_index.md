@@ -98,7 +98,7 @@ private static void SimplePrint()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -139,7 +139,7 @@ private static void SimplePrint()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -183,7 +183,7 @@ private static void PrintWithPrintDialog()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -221,7 +221,7 @@ private static void PrintWithPrintDialog()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -263,7 +263,7 @@ private static void PickTrayByPdfSize()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a new page and some content
@@ -273,7 +273,7 @@ private static void PickTrayByPdfSize()
         // Set the flag to choose a paper tray using the PDF page size
         document.PickTrayByPdfSize = true;
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
     }
 }
@@ -289,7 +289,7 @@ private static void PickTrayByPdfSize()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create a new document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
     // Add a new page and some content
@@ -299,7 +299,7 @@ private static void PickTrayByPdfSize()
     // Set the flag to choose a paper tray using the PDF page size
     document.PickTrayByPdfSize = true;
 
-    // Save the document
+    // Save PDF document
     document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
 }
 ```

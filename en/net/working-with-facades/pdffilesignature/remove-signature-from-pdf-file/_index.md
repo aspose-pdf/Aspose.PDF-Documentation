@@ -101,7 +101,7 @@ private static void RemoveSignature()
             pdFileSignature.RemoveSignature(sigNames[index]);
         }
 
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
 }
@@ -125,7 +125,7 @@ private static void RemoveSignatureButKeepField()
 
         pdFileSignature.RemoveSignature("Signature1", false);
 
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
 }
@@ -151,7 +151,7 @@ private static void RemoveSignatureButKeepField2()
             pdFileSignature.RemoveSignature(sigName, false);
         }
 
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "RemoveSignature_out.pdf");
     }
 }

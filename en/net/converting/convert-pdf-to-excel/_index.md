@@ -156,8 +156,9 @@ The following code snippet shows the process for converting PDF file into XLS or
   // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void ConvertPDFtoExcel()
  {
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
-     // Open the source PDF document
+     // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
      {
          // Instantiate ExcelSaveOptions object
@@ -177,11 +178,12 @@ When converting a PDF to XLS format, a blank column is added to the output file 
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-
         // Instantiate ExcelSaveOptions object
         var saveOptions = new Aspose.Pdf.ExcelSaveOptions
         {
@@ -208,11 +210,12 @@ When exporting a PDF file with a lot of pages to XLS, each page is exported to a
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-
         // Instantiate ExcelSaveOptions object
         var saveOptions = new Aspose.Pdf.ExcelSaveOptions
         {
@@ -243,8 +246,10 @@ The following code snippet shows the process for converting PDF file into XLS Ex
   // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
  {
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
-     // Open the source PDF document
+
+     // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
      {
 
@@ -275,8 +280,10 @@ Conversion to CSV format performs in the same way as above. All is what you need
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToCSV()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate ExcelSaveOptions object
@@ -305,11 +312,12 @@ Conversion to ODS format performs in the same way as all other formats.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToODS()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-
         // Instantiate ExcelSaveOptions object
         var saveOptions = new Aspose.Pdf.ExcelSaveOptions
         {

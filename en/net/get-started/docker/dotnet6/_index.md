@@ -131,7 +131,7 @@ namespace Docker.Linux.Demo01.Controllers
         {
             const string file_type = "application/pdf";
             const string file_name = "sample.pdf";
-            var memoryStream = new System.IO.MemoryStream();
+            var memoryStream = new MemoryStream();
 
             _logger.LogInformation("Start");
             // Initialize document object
@@ -140,7 +140,7 @@ namespace Docker.Linux.Demo01.Controllers
             var page = document.Pages.Add();
 
             // Add image
-            var imageFileName = System.IO.Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
+            var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
             page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
 
             // -------------------------------------------------------------

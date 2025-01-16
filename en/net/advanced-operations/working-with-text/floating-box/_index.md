@@ -83,10 +83,10 @@ This feature also work in [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 The Floating Box tool is a special tool for placing text and other content on a PDF page. Its main feature is text clipping when it overlaps the size of the FloatingBox.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateAndAddFloatingBox()
 {
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -128,13 +128,13 @@ If we set this property to `true` the text will be reflow to the next page in th
 * `ColumnCount` is a number of columns.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MultiColumnLayout()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
@@ -169,8 +169,8 @@ private static void MultiColumnLayout()
         }
         // Add a box to a page
         page.Paragraphs.Add(box);
-        // Save the document
-        document.Save(dataDir + "sample_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "MultiColumnLayout_out.pdf");
     }
 }
 ```
@@ -182,13 +182,13 @@ We used the additional library LoremNET in the above example and created 20 para
 We will do the same with the following example as the previous one. The difference is that we created 3 paragraphs. We can force FloatingBox to render each paragraph in the new column. To do that we need to set `IsFirstParagraphInColumn` when we adding text to the FloatingBox object.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MultiColumnLayout2()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
@@ -228,8 +228,8 @@ private static void MultiColumnLayout2()
 
         // Add a box to a page
         page.Paragraphs.Add(box);
-        // Save the document
-        document.Save(dataDir + "sample_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "MultiColumnLayout2_out.pdf");
     }
 }
 ```
@@ -239,10 +239,10 @@ private static void MultiColumnLayout2()
 You can set desired background color by using `BackgroundColor` property.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void BackgroundSupport()
 {
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         var page = document.Pages.Add();
@@ -271,10 +271,10 @@ When the `PositioningMode` value is
 	The location is specified by the Left and Top values, does not depend on previous elements and does not affect the location of subsequent ones.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OffsetSupport()
 {
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page

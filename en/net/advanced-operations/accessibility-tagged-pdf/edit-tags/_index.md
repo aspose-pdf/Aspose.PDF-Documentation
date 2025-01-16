@@ -100,7 +100,7 @@ private static void EditTags()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "EditTags.pdf"))
     {
         var page = document.Pages[1];
@@ -309,7 +309,7 @@ private static void EditTags()
         // Remove the struct element at index 0 from the struct tree.
         tagged.RootElement.RemoveChild(0);
 
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "EditTags_out.pdf");
     }
 }
@@ -325,7 +325,7 @@ private static void EditTags()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "EditTags.pdf");
 
     var page = document.Pages[1];
@@ -534,7 +534,7 @@ private static void EditTags()
     // Remove the struct element at index 0 from the struct tree.
     tagged.RootElement.RemoveChild(0);
 
-    // Save document
+    // Save PDF document
     document.Save(dataDir + "EditTags_out.pdf");
 }
 ```

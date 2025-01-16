@@ -79,15 +79,15 @@ In order to convert PDF pages to different image formats, you need to create [Pd
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfPagesToImages01()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfConverter object
     using (var converter = new Aspose.Pdf.Facades.PdfConverter())
     {
-        // Bind input pdf file
+        // Bind PDF document
         converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
 
         // Initialize the converting process
@@ -109,15 +109,15 @@ In the next code snippet, we will show how you can change some parameters. With 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfPagesToImages02()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Using dynamic path
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PdfConverter object
     using (var converter = new Aspose.Pdf.Facades.PdfConverter())
     {
-        // Bind input pdf file
+        // Bind PDF document
         converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
 
         // Initialize the converting process

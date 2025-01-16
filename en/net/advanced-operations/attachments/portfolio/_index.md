@@ -87,37 +87,42 @@ The code below results in the following portfolio.
 
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-### A PDF Portfolio created with Aspose.PDF
+### PDF Portfolio created with Aspose.PDF
 
 ![A PDF Portfolio created with Aspose.PDF for .NET](working-with-pdf-portfolio_1.jpg)
 
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreatePortfolio()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
-// Instantiate Document Object
-Document document = new Document();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Instantiate document Collection object
+        document.Collection = new Aspose.Pdf.Collection();
 
-// Instantiate document Collection object
-document.Collection = new Collection();
+        // Get Files to add to Portfolio
+        var excel = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.xlsx");
+        var word = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.docx");
+        var image = new Aspose.Pdf.FileSpecification(dataDir + "aspose-logo.jpg");
 
-// Get Files to add to Portfolio
-FileSpecification excel = new FileSpecification(dataDir + "HelloWorld.xlsx");
-FileSpecification word = new FileSpecification(dataDir + "HelloWorld.docx");
-FileSpecification image = new FileSpecification(dataDir + "aspose-logo.jpg");
+        // Provide description of the files
+        excel.Description = "Excel File";
+        word.Description = "Word File";
+        image.Description = "Image File";
 
-// Provide description of the files
-excel.Description = "Excel File";
-word.Description = "Word File";
-image.Description = "Image File";
+        // Add files to document collection
+        document.Collection.Add(excel);
+        document.Collection.Add(word);
+        document.Collection.Add(image);
 
-// Add files to document collection
-document.Collection.Add(excel);
-document.Collection.Add(word);
-document.Collection.Add(image);
-
-// Save Portfolio document
-document.Save(dataDir + "CreatePDFPortfolio_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "CreatePortfolio_out.pdf");
+    }
+}
 ```
 
 ## Extract files from PDF Portfolio
@@ -129,25 +134,30 @@ Aspose.PDF allows the creation of PDF Portfolio documents using [Document](http
 The following code snippet shows you the steps to extract files from PDF portfolio.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
-
-// Load source PDF Portfolio
-Document document = new Document(dataDir + "PDFPortfolio.pdf");
-// Get collection of embedded files
-EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
-// Iterate through individual file of Portfolio
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractPortfolioFiles()
 {
-    // Get the attachment and write to file or stream
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-    string filename = Path.GetFileName(fileSpecification.Name);
-    // Save the extracted file to some location
-    using (FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create))
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+
+    // Open PDF document
+    using (var document = new Document(dataDir + "PDFPortfolio.pdf"))
     {
-        fileStream.Write(fileContent, 0, fileContent.Length);
+        // Get collection of embedded files
+        EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+        // Iterate through individual file of Portfolio
+        foreach (FileSpecification fileSpecification in embeddedFiles)
+        {
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            string filename = Path.GetFileName(fileSpecification.Name);
+            // Save the extracted file to some location
+            using (FileStream fileStream = new FileStream(dataDir + filename + "_out", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+        }
     }
 }
 ```
@@ -159,14 +169,20 @@ foreach (FileSpecification fileSpecification in embeddedFiles)
 In order to delete/remove files from PDF portfolio, try using the following code lines.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemovePortfolioFiles()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
-// Load source PDF Portfolio
-Document document = new Document(dataDir + "PDFPortfolio.pdf");
-document.Collection.Delete();
-document.Save(dataDir + "No_PortFolio_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        document.Collection.Delete();
+        // Save PDF document
+        document.Save(dataDir + "NoPortFolio_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">

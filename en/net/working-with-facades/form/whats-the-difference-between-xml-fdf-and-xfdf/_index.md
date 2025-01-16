@@ -157,7 +157,7 @@ As a solution to this problem, we would require the appearance attributes of eac
 In Aspose.Pdf.Facades namespace, we have a class named [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) which provides the capability to manipulate PDF form. Open a PDF form add a text field beneath every existing form field and save the PDF form with new name.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void DifferenceBetweenFile()
 {
     // The path to the documents directory
@@ -177,8 +177,10 @@ private static void DifferenceBetweenFile()
             // Box in FormFieldFacade class holds field's location.
             box[i] = facade.Box;
         }
+        // Save PDF document
         form.Save(dataDir + "DifferenceBetweenFile_out.pdf");
             
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(dataDir + "FilledForm - 2.pdf"))
         {
             // Now we need to add a textfield just upon the original one
@@ -188,7 +190,7 @@ private static void DifferenceBetweenFile()
                 // Add text field beneath every existing form field
                 editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "TextField" + i, allfields[i], 1, box[i].Left, box[i].Top, box[i].Left + 50, box[i].Top + 10);
             }
-            // Save the document
+            // Save PDF document
             editor.Save(dataDir + "DifferenceBetweenFile_out.pdf");
         }
     }

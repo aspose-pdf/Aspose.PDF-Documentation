@@ -84,12 +84,12 @@ In this article, we’ll show you how to justify text in a textbox field in a PD
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class in [Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) offers the capability to decorate a PDF form field. Now, if your requirement is to justify the text in a textbox field, you can easily achieve that using [AlignJustified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade/fields/alignjustified) value of [FormFieldFacade](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formfieldfacade) enumeration and calling the [FormEditor.DecorateField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/decoratefield/index) method. In the below example, first we will fill a Textbox Field using the [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) method of [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) class. After that we will use FormEditor class to justify the Text in the Textbox Field. The following code snippet shows you how to justify text in a Textbox Field.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void JustifyTextInTextboxField()
 {
     // The path to the documents directory 
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
-    // Open the document
+    // Open PDF document
     using (var source = File.Open(dataDir + "JustifyText.pdf", FileMode.Open))
     {
         using (var ms = new MemoryStream())
@@ -100,7 +100,7 @@ private static void JustifyTextInTextboxField()
             form.BindPdf(source);
             // Fill Text Field
             form.FillField("Text1", "Thank you for using Aspose");
-            // Save the document in Memory Stream
+            // Save PDF document in Memory Stream
             form.Save(ms);
             ms.Seek(0, SeekOrigin.Begin);
 

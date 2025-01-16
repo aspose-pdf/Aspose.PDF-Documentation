@@ -89,7 +89,7 @@ private static void ClearTextInForm(string input, string output)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load the document
+    // Open PDF document
     using (cument = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
 	{
 		// Get the forms from the first page
@@ -112,7 +112,7 @@ private static void ClearTextInForm(string input, string output)
 			}
 		}
 
-		// Save the modified document
+		// Save PDF document
 		document.Save(dataDir + "TextBox_out.pdf");
 	}	
 }
@@ -132,7 +132,7 @@ private static void DeleteSpecifiedForm(string input, string output)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 	
-    // Load the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the forms from the first page
@@ -147,7 +147,7 @@ private static void DeleteSpecifiedForm(string input, string output)
 			}
 		}
 
-		// Save the modified document
+		// Save PDF document
 		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }
@@ -163,7 +163,7 @@ private static void DeleteSpecifiedForm(string input, string output)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the forms from the first page
@@ -179,7 +179,7 @@ private static void DeleteSpecifiedForm(string input, string output)
 			}
 		}
 
-		// Save the modified document
+		// Save PDF document
 		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }
@@ -197,7 +197,7 @@ private static void RemoveAllForms(string input, string output)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
 	{
 		// Get the forms from the first page
@@ -206,7 +206,7 @@ private static void RemoveAllForms(string input, string output)
 		// Clear all forms
 		forms.Clear();
 
-		// Save the modified document
+		// Save PDF document
 		document.Save(dataDir + "TextBox_out.pdf");
 	}
 }

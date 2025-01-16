@@ -98,13 +98,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following C# code snippet shows you how to split PDF pages into individual PDF files.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SplitDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-    // Open the document
+    // Open PDF document
     using (var document1 = new Aspose.Pdf.Document(dataDir + "SplitToPages.pdf"))
     {
         int pageCount = 1;
@@ -112,11 +112,11 @@ private static void SplitDocument()
         // Loop through all the pages
         foreach (var page in document1.Pages)
         {
-            // Create the document
+            // Create PDF document
             using (var document2 = new Aspose.Pdf.Document())
             {
                 document2.Pages.Add(page);
-                // Save the document
+                // Save PDF document
                 document2.Save(dataDir + "Page_" + pageCount + "_out.pdf");
                 pageCount++;
             }

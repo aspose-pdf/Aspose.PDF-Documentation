@@ -125,7 +125,7 @@ private static void AddLineAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
 	{
 		// Create Line Annotation
@@ -145,7 +145,7 @@ private static void AddLineAnnotation()
 		// Add annotation to the page
 		document.Pages[1].Annotations.Add(lineAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddLineAnnotation_out.pdf");
 	}
 }
@@ -176,7 +176,7 @@ private static void AddCircleAndSquareAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
 	{
 		// Create Circle Annotation
@@ -205,7 +205,7 @@ private static void AddCircleAndSquareAnnotations()
 		document.Pages[1].Annotations.Add(circleAnnotation);
 		document.Pages[1].Annotations.Add(squareAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddCircleAndSquareAnnotations_out.pdf");
 	}
 }
@@ -250,7 +250,7 @@ private static void AddPolygonAndPolylineAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
 	{
 		// Create Polygon Annotation
@@ -294,7 +294,7 @@ private static void AddPolygonAndPolylineAnnotations()
 		document.Pages[1].Annotations.Add(polygonAnnotation);
 		document.Pages[1].Annotations.Add(polylineAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddPolygonAndPolylineAnnotations_out.pdf");
 	}
 }
@@ -316,7 +316,7 @@ private static void ReadLineAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all line annotations from the first page
@@ -345,7 +345,7 @@ private static void ReadCircleAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all circle annotations from the first page
@@ -374,7 +374,7 @@ private static void ReadSquareAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all square annotations from the first page
@@ -403,7 +403,7 @@ private static void ReadPolylineAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all polyline annotations from the first page
@@ -432,7 +432,7 @@ private static void ReadPolygonAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all polygon annotations from the first page
@@ -466,7 +466,7 @@ private static void DeleteLineAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all line annotations from the first page
@@ -480,7 +480,7 @@ private static void DeleteLineAnnotations()
 			document.Pages[1].Annotations.Delete(la);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "DeleteLineAnnotations_out.pdf");
 	}
 }
@@ -496,7 +496,7 @@ private static void DeleteCircleAndSquareAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all circle and square annotations from the first page
@@ -511,7 +511,7 @@ private static void DeleteCircleAndSquareAnnotations()
 			document.Pages[1].Annotations.Delete(fig);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "DeleteCircleAndSquareAnnotations_out.pdf");
 	}
 }
@@ -529,7 +529,7 @@ private static void DeletePolylineAndPolygonAnnotations()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
 	{
 		// Get all polyline and polygon annotations from the first page
@@ -543,7 +543,7 @@ private static void DeletePolylineAndPolygonAnnotations()
 			document.Pages[1].Annotations.Delete(pa);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + DeletePolylineAndPolygonAnnotations_out.pdf");
 	}
 }
@@ -563,7 +563,7 @@ private static void AddInkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
 	{
 		var page = document.Pages[1];
@@ -601,7 +601,7 @@ private static void AddInkAnnotation()
 		// Add the annotation to the page
 		page.Annotations.Add(ia);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddInkAnnotation_out.pdf");
 	}
 }
@@ -612,14 +612,13 @@ private static void AddInkAnnotation()
 The width of [InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) can be changed using LineInfo and Border objects.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddInkAnnotationWithLineWidth()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		document.Pages.Add();
@@ -668,9 +667,36 @@ private static void AddInkAnnotationWithLineWidth()
 		// Add the annotation to the page
 		document.Pages[1].Annotations.Add(a1);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
 	}
+}
+```
+
+### Delete Circle Annotation
+
+The following code snippet shows how to Delete Circle Annotation from PDF file.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteCircleAnnotation()
+{
+	// The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+	
+    // Open PDF document
+    Document document = new Document(dataDir + "Appartments_mod.pdf");
+    var circleAnnotations = document.Pages[1].Annotations
+        .Where(a => a.AnnotationType == AnnotationType.Circle)
+        .Cast<CircleAnnotation>();
+
+    foreach (var ca in circleAnnotations)
+    {
+        document.Pages[1].Annotations.Delete(ca);
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
 }
 ```
 
@@ -738,27 +764,3 @@ private static void AddInkAnnotationWithLineWidth()
 }
 </script>
 
-
-
-### Delete Circle Annotation
-
-The following code snippet shows how to Delete Circle Annotation from PDF file.
-
-```csharp
-public static void DeleteCircleAnnotation()
-{
-    // Load the PDF file
-    Document document = new Document(dataDir + "Appartments_mod.pdf");
-    var circleAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Circle)
-        .Cast<CircleAnnotation>();
-
-    foreach (var ca in circleAnnotations)
-    {
-        document.Pages[1].Annotations.Delete(ca);
-    }
-
-    // Save result file
-    document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
-}
-```

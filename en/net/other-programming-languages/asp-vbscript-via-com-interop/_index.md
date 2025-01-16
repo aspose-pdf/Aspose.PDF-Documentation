@@ -98,23 +98,23 @@ This is a simple ASP application that shows you how to create a PDF file with sa
 <h3>creation of sample PDF document while using Aspose.PDF for .NET with classical ASP and VBScript</h3>
 
 <%
-'set license
+'Set license
 Dim lic
 Set lic = CreateObject("Aspose.Pdf.License")
-lic.SetLicense("D:\ASPOSE\Licences\Aspose.Total licenses\Aspose.Total.lic")
+lic.SetLicense("Aspose.Total.lic")
 
 'Instantiate Pdf instance by calling its empty constructor
-Dim pdf
-Set pdf = CreateObject("Aspose.Pdf.Generator.Pdf")
+Dim document
+Set document = CreateObject("Aspose.Pdf.Document")
 
 'Create a new section in the Pdf object
 Dim pdfsection
 Set pdfsection = CreateObject("Aspose.Pdf.Generator.Section")
 
 'Add section to Pdf object
-pdf.Sections.Add(pdfsection)
+document.Sections.Add(pdfsection)
 
-' Create Text object
+'Create Text object
 Dim SampleText
 Set SampleText = CreateObject("Aspose.Pdf.Generator.Text")
 
@@ -128,11 +128,11 @@ seg1.Content = "HelloWorld using ASP and VBScript"
 'Add segment (with red text color) to the paragraph
 SampleText.Segments.Add(seg1)
 
-' Add Text paragraph to paragraphs collection of a section
+'Add Text paragraph to paragraphs collection of a section
 pdfsection.Paragraphs.Add(SampleText)
 
-' Save the PDF document
-pdf.Save("d:\pdftest\HelloWorldinASP.pdf")
+'Save PDF document
+document.Save("HelloWorldinASP_out.pdf")
 %>
 
     </body>

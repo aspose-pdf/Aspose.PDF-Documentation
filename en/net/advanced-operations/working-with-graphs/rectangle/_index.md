@@ -101,6 +101,7 @@ Follow the steps below:
 1. And save your PDF file
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float width, float height, Aspose.Pdf.Color color, int zIndex)
 {
     // Create a Graph object with dimensions matching the specified rectangle
@@ -146,12 +147,13 @@ Aspose.PDF for .NET also offers the feature to fill rectangle object with a cert
 The following code snippet shows how to add a [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/rectangle) object that is filled with color.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RectangleFilled()
 {
-    // Path to the document directory
+    // The path to the documents directory directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -176,7 +178,7 @@ private static void RectangleFilled()
         // Add rectangle object to shapes collection of Graph object
         graph.Shapes.Add(rect);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "CreateFilledRectangle_out.pdf");
     }
 }
@@ -194,13 +196,12 @@ The following code snippet shows how to add a [Rectangle](https://reference.aspo
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateFilledRectangleGradientFill()
 {
-    // Path to the document directory
+    // The path to the documents directory directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -230,7 +231,7 @@ private static void CreateFilledRectangleGradientFill()
         // Add rectangle object to shapes collection of Graph object
         graph.Shapes.Add(rect);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "CreateFilledRectangleGradient_out.pdf");
     }
 }
@@ -248,13 +249,12 @@ Instead of making a color transparent, each pixel stores information on how opaq
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RectangleFilled_AlphaChannel()
 {
-    // Path to the document directory
+    // The path to the documents directory directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -290,7 +290,7 @@ private static void RectangleFilled_AlphaChannel()
         // Add the second rectangle to the shapes collection of the Graph object
         graph.Shapes.Add(rect1);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "CreateFilledRectangle_out.pdf");
     }
 }
@@ -306,13 +306,12 @@ The following code snippet shows the steps to render [Rectangle](https://referen
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddRectangleZOrder()
 {
-    // Path to the document directory
+    // The path to the documents directory directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Instantiate Document class object using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -330,7 +329,7 @@ private static void AddRectangleZOrder()
         AddRectangle(page, 20, 20, 30, 30, Aspose.Pdf.Color.Blue, 1);
         AddRectangle(page, 40, 40, 60, 30, Aspose.Pdf.Color.Green, 0);
 
-        // Save the resultant PDF file
+        // Save PDF document
         document.Save(dataDir + "ControlRectangleZOrder_out.pdf");
     }
 }
