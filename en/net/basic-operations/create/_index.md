@@ -90,13 +90,13 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 private static void HelloWorld()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
     // Create PDF document
-    using (var document = new Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        Page page = document.Pages.Add();
+        var page = document.Pages.Add();
         // Add text to new page
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
         // Save PDF document

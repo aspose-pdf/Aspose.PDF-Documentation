@@ -85,7 +85,7 @@ Create an instance of the [PdfViewer](https://reference.aspose.com/pdf/net/aspos
 private static void PrintingPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -125,7 +125,7 @@ private static void PrintingPDFFile()
 private static void PrintingPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -168,7 +168,7 @@ In order to display a print dialog, use the following code snippet:
 private static void PrintingPDFDisplayPrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -204,7 +204,7 @@ private static void PrintingPDFDisplayPrintDialog()
 private static void PrintingPDFDisplayPrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -245,7 +245,7 @@ There are printers that print to a file. To use them, set the name of the virtua
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -287,7 +287,7 @@ private static void PrintingPDFToSoftPrinter()
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -336,7 +336,7 @@ The following code snippet shows how to hide the print dialog.
 private static void PrintingPDFHidePrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -375,7 +375,7 @@ private static void PrintingPDFHidePrintDialog()
 private static void PrintingPDFHidePrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -419,7 +419,7 @@ A color PDF document can be printed to an XPS printer as grayscale, using [PdfVi
 private static void PrintingPDFAsGrayscale()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -459,7 +459,7 @@ private static void PrintingPDFAsGrayscale()
 private static void PrintingPDFAsGrayscale()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -506,7 +506,7 @@ The following code snippet shows how to print and convert a PDF to PostScript fo
 private static void PrintingPDFToPostScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -550,7 +550,7 @@ private static void PrintingPDFToPostScript()
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -599,7 +599,7 @@ A PDF file can be printed to a physical printer as well as to the Microsoft XPS 
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
@@ -659,7 +659,7 @@ private static void CheckingPrintJobStatus()
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -732,7 +732,7 @@ struct PrintingJobSettings
 private static void PrintingPagesInSimplexAndDuplexMode()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
     string outputDir = dataDir;
@@ -833,7 +833,7 @@ struct PrintingJobSettings
 private static void PrintingPagesInSimplexAndDuplexMode()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
     string outputDir = dataDir;

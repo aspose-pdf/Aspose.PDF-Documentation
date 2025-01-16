@@ -101,7 +101,7 @@ The example below demonstrates the use of the ImportDataTable method. In this ex
 private static void ImportFromDataTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     DataTable dt = new DataTable("Employee");
     dt.Columns.Add("Employee_ID", typeof(Int32));
@@ -119,9 +119,10 @@ private static void ImportFromDataTable()
     dr[2] = "Female";
     dt.Rows.Add(dr);
     // Create PDF document
-    using (var document = new Document())
+    using (var document = new Aspose.Pdf.Document())
     {
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         // Initializes a new instance of the Table
         Aspose.Pdf.Table table = new Aspose.Pdf.Table();
         // Set column widths of the table
@@ -133,7 +134,7 @@ private static void ImportFromDataTable()
         table.ImportDataTable(dt, true, 0, 1, 3, 3);
 
         // Add table object to first page of input document
-        document.Pages[1].Paragraphs.Add(table);
+        page.Paragraphs.Add(table);
 
         // Save PDF document
         document.Save(dataDir + "ImportFromDataTable_out.pdf");
@@ -150,13 +151,13 @@ Tables are by default added from top-left position and if the table reaches the 
 private static void DetermineTableBreak()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
-    using (var document = new Document())
+    using (var document = new Aspose.Pdf.Document())
     {
-        // Add the section to PDF document sections collection
-        Page page = pdf.Pages.Add();
+        // Add page
+        Aspose.Pdf.Page page = pdf.Pages.Add();
         // Instantiate a table object
         Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
         table1.Margin.Top = 300;
@@ -222,11 +223,12 @@ In the Aspose.Pdf.Table class, you can set a RepeatingRowsCount that will repeat
 private static void AddRepeatingColumn()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page
         Aspose.Pdf.Page page = document.Pages.Add();
 
         // Instantiate an outer table that takes up the entire page

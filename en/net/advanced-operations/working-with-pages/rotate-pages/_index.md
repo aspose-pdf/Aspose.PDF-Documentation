@@ -89,7 +89,7 @@ From Aspose.PDF for .NET 9.6.0 release, we have added great new features like ch
 private static void ChangePageOrientation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RotatePagesInput.pdf"))

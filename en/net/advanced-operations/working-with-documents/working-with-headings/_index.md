@@ -100,11 +100,10 @@ The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) librar
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ApplyNumberStyleToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())

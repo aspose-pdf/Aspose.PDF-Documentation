@@ -89,11 +89,10 @@ Several additional steps were performed to create the annotation. We used 2 Text
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Link Annotation Demo.pdf"))
@@ -233,11 +232,10 @@ Please try using the following code snippet to Get LinkAnnotation from PDF docum
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetLinkAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
@@ -273,11 +271,10 @@ The following code snippet shows how to Delete Link Annotation from PDF file. Fo
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteLinkAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))

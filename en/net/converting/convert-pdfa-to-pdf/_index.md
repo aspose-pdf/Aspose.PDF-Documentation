@@ -90,7 +90,7 @@ Class [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) has m
 private static void ConvertPDFAtoPDF()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
@@ -111,7 +111,7 @@ private static void ConvertPDFAtoPDF()
 private static void ConvertPDFAtoPDF()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf");
@@ -135,7 +135,7 @@ PDF/A conformance may also be removed if you make any changes in the document (e
 private static void ConvertPDFAtoPDFAdvanced()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf"))
@@ -156,7 +156,7 @@ private static void ConvertPDFAtoPDFAdvanced()
 private static void ConvertPDFAtoPDFAdvanced()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFAToPDF.pdf");

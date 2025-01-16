@@ -84,7 +84,7 @@ In order to update an existing bookmark in a PDF file, you need to use [ModifyBo
 private static void UpdateExistingBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -108,7 +108,7 @@ private static void UpdateExistingBookmark()
 private static void UpdateExistingBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
@@ -137,7 +137,7 @@ You can delete all the bookmarks from the PDF file using [DeleteBookmarks](https
 private static void DeleteAllBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -161,7 +161,7 @@ private static void DeleteAllBookmarks()
 private static void DeleteAllBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
@@ -190,7 +190,7 @@ In order to delete a particular bookmark, you need to call [DeleteBookmarks](htt
 private static void DeleteParticularBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -214,7 +214,7 @@ private static void DeleteParticularBookmark()
 private static void DeleteParticularBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
@@ -243,7 +243,7 @@ The [PdfBookmarkEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/
 private static void GetBookmarksFromDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -277,7 +277,7 @@ private static void GetBookmarksFromDocument()
 private static void GetBookmarksFromDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
@@ -316,7 +316,7 @@ private static void GetBookmarksFromDocument()
 private static void ExtractBookmarksFromPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -350,7 +350,7 @@ private static void ExtractBookmarksFromPDFFile()
 private static void ExtractBookmarksFromPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();

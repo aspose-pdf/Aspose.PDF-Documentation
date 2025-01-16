@@ -77,11 +77,10 @@ draft: false
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ControlExceptionPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
@@ -96,7 +95,7 @@ private static void ControlExceptionPDFFile()
             Console.WriteLine($"Last exception: {fileSecurity.LastException.Message}");
         }
         // Save PDF document
-        fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
+        fileSecurity.Save(dataDir + "SampleDecrtypted_out.pdf");
     }
 }
 ```
@@ -106,11 +105,10 @@ If you set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.fac
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ControlExceptionPDFFile2()
 {   
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
@@ -128,7 +126,7 @@ private static void ControlExceptionPDFFile2()
             Console.WriteLine($"Exception: {ex.Message}");
         }
         // Save PDF document
-        fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
+        fileSecurity.Save(dataDir + "SampleDecrtypted_out.pdf");
     }
 }
 ```

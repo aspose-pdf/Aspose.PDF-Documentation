@@ -96,7 +96,7 @@ The following code snippet shows you how to fill fields in XFA form.
 private static void FillXFAFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
@@ -143,7 +143,7 @@ We cannot extract or manipulate pages of XFA Forms, because the form content is 
 private static void ConvertDynamicXFAToAcroForm()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load dynamic XFA form
     using (var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
@@ -166,7 +166,7 @@ To access field properties, first use Document.Form.XFA.Template to access the f
 private static void GetXFAProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))

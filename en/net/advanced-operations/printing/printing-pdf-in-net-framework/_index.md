@@ -89,16 +89,15 @@ The [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewe
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SimplePrint()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open PDF document
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -130,16 +129,15 @@ private static void SimplePrint()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SimplePrint()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open PDF document
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -174,16 +172,15 @@ In order to display a print dialog, try using the following code snippet:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintWithPrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open PDF document
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -216,7 +213,7 @@ private static void PrintWithPrintDialog()
 private static void PrintWithPrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
@@ -257,11 +254,10 @@ This preference can be switched on and off using the [Document.PickTrayByPdfSize
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PickTrayByPdfSize()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -283,11 +279,10 @@ private static void PickTrayByPdfSize()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PickTrayByPdfSize()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();

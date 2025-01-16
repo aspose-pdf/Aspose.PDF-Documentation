@@ -80,24 +80,24 @@ sitemap:
 
 The following examples tested with:
 
-* Docker v.25.0.2 and Docker Desktop 4.27.1
-* Visual Studio 2022 Community Edition v.17.0.5
+* Docker v.25.0.2 and Docker Desktop 4.27.1.
+* Visual Studio 2022 Community Edition v.17.0.5.
 * .NET 8 SDK is used in the example provided below.
-* Aspose.PDF.Drawing v.24.01
+* Aspose.PDF.Drawing v.24.01.
 
 ## Create sample application for Docker Linux Container
 
-1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**
-1. In **Configure your new project** window set desired project name and location and press **Next**
+1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**.
+1. In **Configure your new project** window set desired project name and location and press **Next**.
 1. In **Additional information** window choose **.NET 6.0 (Long-term support)** and enable Docker support. You can also set **Docker OS** to Linux if needed.
-1. Press **Create**
-1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`)
+1. Press **Create**.
+1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`).
 
 ### Generate PDF document using ASP.NET Core Web App in Linux container
 
 We will use code from **Complex Example** in this app. Please follow [this link](/pdf/net/complex-pdf-example/) for a more detailed explanation.
 
-1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
+1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png).
 1. Create `fonts` folder in `wwwroot` folder and put [Roboto](https://fonts.google.com/specimen/Roboto) fonts there.
 1. Create `samples` folder in `wwwroot` folder and put sample data there.
 1. Replace code in `HomeController.cs` with the following snippet (please note that you can have another namespace):

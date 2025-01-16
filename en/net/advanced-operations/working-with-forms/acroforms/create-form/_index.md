@@ -99,7 +99,7 @@ Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf
 private static void AddTextBoxFieldToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
@@ -136,7 +136,7 @@ The following code snippets show how to add [RadioButtonField](https://reference
 private static void AddRadioButtonToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -169,7 +169,7 @@ The following code snippet shows the steps to add RadioButtonField with three op
 private static void AddRadioButtonWithOptionsToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -257,7 +257,7 @@ Following code snippet shows how to add caption which will be associated with Ra
 private static void AddingCaptionToRadioButtonField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
     using (var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
@@ -316,7 +316,7 @@ The following code snippets show how to add ComboBox field in a PDF document.
 private static void AddComboBoxToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -353,7 +353,7 @@ The code snippets that follow show how to add a tooltip to a form field, first u
 private static void AddTooltipToField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTooltipToField.pdf"))

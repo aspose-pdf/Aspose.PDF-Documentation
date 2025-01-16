@@ -95,11 +95,10 @@ The following code snippet shows how to add Caret Annotation to a PDF file:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddCaretAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
@@ -154,11 +153,10 @@ Please try using the following code snippet to Get Caret Annotation in PDF docum
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetCaretAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
@@ -183,11 +181,10 @@ The following code snippet shows how Delete Caret Annotation from a PDF file.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteCaretAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
@@ -218,7 +215,7 @@ Aspose.PDF for .NET supports the feature to add as well as manipulate Annotation
 private static void RedactPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -257,7 +254,7 @@ Aspose.Pdf.Facades namespace also has a class named [PdfAnnotationEditor](https:
 private static void RedactPageWithFacadesApproach()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create an instance of PdfAnnotationEditor
     using (var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor())

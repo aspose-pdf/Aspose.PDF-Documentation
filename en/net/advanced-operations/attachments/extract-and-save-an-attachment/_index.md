@@ -95,7 +95,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void GetAllAttachments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
     // Open PDF document
     Document document = new Document(dataDir + "GetAlltheAttachments.pdf");
@@ -149,7 +149,7 @@ In order to get an individual attachment, we can specify the index of attachment
 private static void GetIndividualAttachment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
     // Open PDF document
     Document document = new Document(dataDir + "GetIndividualAttachment.pdf");

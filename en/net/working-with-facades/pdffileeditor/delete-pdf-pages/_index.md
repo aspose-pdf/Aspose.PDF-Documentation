@@ -80,7 +80,7 @@ If you want to delete a number of pages from the PDF file which is residing on t
 private static void DeletePages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Array of pages to delete
@@ -99,7 +99,7 @@ The [Delete](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileedit
 private static void DeletePagesUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams

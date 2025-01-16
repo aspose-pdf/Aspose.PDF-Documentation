@@ -102,7 +102,7 @@ The example below applies the OpenAction to a specific document.
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF documents
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -131,7 +131,7 @@ private static void AddJavaScript()
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF documents
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
@@ -169,7 +169,7 @@ A new property named JavaScript is added in Document class which has JavaScript 
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -207,7 +207,7 @@ private static void AddJavaScript()
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
@@ -263,7 +263,7 @@ The following C# code snippet demonstrates how to set an expiry date and time fo
 private static void CreateDocumentWithExpiryDate()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -312,7 +312,7 @@ private static void CreateDocumentWithExpiryDate()
 private static void CreateDocumentWithExpiryDate()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();

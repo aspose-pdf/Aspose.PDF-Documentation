@@ -82,7 +82,7 @@ In order to create bookmarks of all the pages, you need to use [CreateBookmarks]
 private static void CreateBookmarksOfAllPages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -106,7 +106,7 @@ private static void CreateBookmarksOfAllPages()
 private static void CreateBookmarksOfAllPagesWithProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -130,7 +130,7 @@ You can create a bookmark of a particular page in an existing PDF file using [Cr
 private static void CreateBookmarkOfAParticularPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -154,7 +154,7 @@ private static void CreateBookmarkOfAParticularPage()
 private static void CreateBookmarksOfARangeOfPages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -182,7 +182,7 @@ You can add bookmark in an existing PDF file using [PdfBookmarkEditor](https://r
 private static void AddBookmarkInAnExistingPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
     // Create bookmark
     var bookmark = new Aspose.Pdf.Facades.Bookmark();
     bookmark.PageNumber = 1;
@@ -209,7 +209,7 @@ You can add child bookmarks in an existing PDF file using [PdfBookmarkEditor](ht
 private static void AddChildBookmarkInAnExistingPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
     // Create bookmarks
     var bookmarks = new Aspose.Pdf.Facades.Bookmarks();
     var childBookmark1 = new Aspose.Pdf.Facades.Bookmark();

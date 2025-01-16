@@ -92,12 +92,12 @@ and a lot of extensions like PDF/A, PDF/UA, PDF/X, PDF/E.
 
 Aspose.PDF for .NET provides following key features:
 
-- Convert a document from HTML, Doc/Docx, Pptx, Markdown, Json, Jpeg and others
-- Supports with various AI providers with the ability to load data from PDF documents
-- Supports the creation of PDF documents through both an API and from XML files
-- Excellent certificate-based security and password protection features to develop secure PDF documents
-- Compatible with robust digital signatures (including PAdES)
-- PDF Form creation (interactive forms, AcroForms, dynamic XFA forms)
+- Convert a document from HTML, Doc/Docx, Pptx, Markdown, Json, Jpeg and others.
+- Supports with various AI providers with the ability to load data from PDF documents.
+- Supports the creation of PDF documents through both an API and from XML files.
+- Excellent certificate-based security and password protection features to develop secure PDF documents.
+- Compatible with robust digital signatures (including PAdES).
+- PDF Form creation (interactive forms, AcroForms, dynamic XFA forms).
 
 and many more.
 

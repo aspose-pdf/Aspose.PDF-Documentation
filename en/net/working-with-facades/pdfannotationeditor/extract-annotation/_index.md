@@ -84,7 +84,7 @@ You can then use [ExtractAnnotations](https://reference.aspose.com/pdf/net/aspos
 private static void ExtractAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))

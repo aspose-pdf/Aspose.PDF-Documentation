@@ -87,10 +87,11 @@ The following code snippet shows how to remove digital signature from the PDF fi
 private static void RemoveSignature()
 {  
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         // Get list of signature names
         var sigNames = pdFileSignature.GetSignNames();
@@ -117,10 +118,11 @@ As shown above, the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspo
 private static void RemoveSignatureButKeepField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {       
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
         pdFileSignature.RemoveSignature("Signature1", false);
@@ -139,10 +141,11 @@ The following example shows how to remove all signatures from fields.
 private static void RemoveSignatureButKeepField2()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {       
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
 
         var sigNames = pdFileSignature.GetSignatureNames();

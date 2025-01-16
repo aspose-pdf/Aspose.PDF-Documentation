@@ -93,11 +93,10 @@ There are two new methods and one property was added:
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void LockLayerInPDF()
 {
 	// The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -123,11 +122,10 @@ To create a new PDF from a layer, the following code snippet can be used:
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SaveLayersFromPdf(string inputPath, string outputPath)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -150,11 +148,10 @@ It is possible to extract PDF layer elements and save them into a new PDF file s
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SaveLayersToOutputStream(string inputPath, Stream outputStream)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 	
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -177,11 +174,10 @@ Aspose.PDF for .NET library opens a PDF, iterates through each layer on the firs
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void FlattenLayersInPdf(string input)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf")
@@ -213,11 +209,10 @@ The second parameter allows renaming the optional content group marker. The defa
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeLayersInPdf(string input, string output, string newLayerName, string optionalLayerName = null)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))

@@ -97,11 +97,10 @@ The following code snippet shows you how to add a bookmark in a PDF document.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf"))
@@ -128,11 +127,10 @@ private static void AddBookmark()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf");
@@ -174,11 +172,10 @@ The following code snippets show how to add child bookmark to a PDF document.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddChildBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf"))
@@ -211,11 +208,10 @@ private static void AddChildBookmark()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddChildBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf");
@@ -260,11 +256,10 @@ The following code snippets show how to delete all bookmarks from a PDF document
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf"))
@@ -282,11 +277,10 @@ private static void DeleteBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf");
@@ -316,11 +310,10 @@ The following code snippets show how to delete a particular bookmark from the PD
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf"))
@@ -338,11 +331,10 @@ private static void DeleteBookmark()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf");

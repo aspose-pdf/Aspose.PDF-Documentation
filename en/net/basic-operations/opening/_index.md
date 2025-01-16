@@ -106,11 +106,10 @@ private static void OpenDocument()
 private static void OpenDocumentStream()
 {
     var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
-
     var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-    // Create a new WebClient instance.
+    // Create a new WebClient instance
     var webClient = new System.Net.WebClient();
-    // Concatenate the domain with the Web resource filename.
+    // Concatenate the domain with the Web resource filename
     var strWebResource = remoteUri + fileName;
     Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, strWebResource);
 

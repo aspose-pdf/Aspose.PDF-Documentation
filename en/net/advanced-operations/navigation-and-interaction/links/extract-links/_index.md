@@ -95,11 +95,10 @@ The following code snippet shows you how to extract links from a PDF file.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
@@ -121,11 +120,10 @@ private static void ExtractLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");

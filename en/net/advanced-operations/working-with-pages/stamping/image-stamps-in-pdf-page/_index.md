@@ -95,7 +95,7 @@ The following code snippet shows how to add image stamp in the PDF file.
 private static void AddImageStampInPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
@@ -126,7 +126,7 @@ When adding an image as a stamp object, you can control the quality of the image
 private static void ControlImageQualityWhenAddingStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
@@ -149,7 +149,7 @@ Aspose.PDF API lets you add image stamp as background in a floating box. The Bac
 private static void ImageStampAsBackgroundInFloatingBox()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -194,7 +194,7 @@ This code opens a PDF file, adds an image as a stamp at a specific position, and
 private static void AddAlternativeTextToTheImageStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))

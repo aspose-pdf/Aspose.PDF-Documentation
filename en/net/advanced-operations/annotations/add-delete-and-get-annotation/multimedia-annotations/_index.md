@@ -106,11 +106,10 @@ The following code snippet shows how to add Screen Annotation to a PDF file:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddScreenAnnotationWithMedia()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (cument = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
@@ -139,11 +138,10 @@ The following code snippet shows how to add Sound Annotation to a PDF file:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddSoundAnnotation()
 {
     // Open PDF document
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		var mediaFile = dataDir + "file_example_WAV_1MG.wav";
@@ -174,11 +172,10 @@ The following code snippet shows how to add RichMediaAnnotation to a PDF file:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddRichMediaAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -236,11 +233,10 @@ Please try using the following code snippet to Get MultimediaAnnotation from PDF
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetMultimediaAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
@@ -267,11 +263,10 @@ The following code snippet shows how to Delete MultimediaAnnotation from PDF fil
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeletePolyAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
@@ -314,11 +309,10 @@ In this sample, we will learn how to add the push-buttons for navigation in the 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddPrintButton()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -369,11 +363,10 @@ This example shows how to create 4 buttons:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddNavigationButtons()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
@@ -484,11 +477,10 @@ Please check the following code snippet to add 3D Annotation.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void Add3dAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())

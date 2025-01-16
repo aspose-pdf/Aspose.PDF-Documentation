@@ -93,7 +93,7 @@ The following code snippet shows you how to add free text annotation in a PDF fi
 private static void AddFreeTextAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -128,7 +128,7 @@ private static void AddFreeTextAnnotation()
 private static void AddFreeTextAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
@@ -168,7 +168,7 @@ In this example also, you need to create an object of type [PdfContentEditor](ht
 private static void AddTextAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -203,7 +203,7 @@ private static void AddTextAnnotation()
 private static void AddTextAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
@@ -243,7 +243,7 @@ We also specify the Rectangle, coordinates of the beginning and end of the line,
 private static void AddLineAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -274,7 +274,7 @@ private static void AddLineAnnotation()
 private static void AddLineAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");

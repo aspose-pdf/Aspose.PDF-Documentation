@@ -86,7 +86,7 @@ sitemap:
 private static void DeleteAllAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create an instance of PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
@@ -110,7 +110,7 @@ private static void DeleteAllAnnotations()
 private static void DeleteAllAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create an instance of PdfAnnotationEditor
     using var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
@@ -139,7 +139,7 @@ You can use [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pd
 private static void DeleteAllAnnotationByType()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf"))
@@ -196,7 +196,7 @@ private static void DeleteAllAnnotationByType()
 private static void DeleteAllAnnotationByType()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf");
@@ -257,7 +257,7 @@ You can use the [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspos
 private static void DeleteAnnotationByName()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf"))
@@ -296,7 +296,7 @@ private static void DeleteAnnotationByName()
 private static void DeleteAnnotationByName()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotations.pdf");

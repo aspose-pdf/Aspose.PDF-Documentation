@@ -95,7 +95,7 @@ We have added new function i.e. Remove() to the existing TableAbsorber Class in 
 private static void RemoveTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
     using (var document = new Document(dataDir + "Table_input.pdf"))
@@ -127,7 +127,7 @@ Sometimes a PDF document may contain more than one table and you may come up wit
 private static void RemoveMultipleTables()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))

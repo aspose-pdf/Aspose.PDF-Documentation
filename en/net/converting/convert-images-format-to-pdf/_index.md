@@ -166,15 +166,17 @@ private static void ConvertBMPtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         var image = new Aspose.Pdf.Image();
         
-        // Load sample BMP image file
+        // Load BMP file
         image.File = dataDir + "BMPtoPDF.bmp";
-        document.Pages[1].Paragraphs.Add(image);
+        page.Paragraphs.Add(image);
         
         // Save PDF document
         document.Save(dataDir + "BMPtoPDF_out.pdf");
@@ -208,9 +210,13 @@ private static void ConvertCGMtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     var option = new Aspose.Pdf.CgmLoadOptions();
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CGMtoPDF.cgm", option))
     {
+        // Save PDF document
         document.Save(dataDir + "CGMtoPDF_out.pdf");
     }
 }
@@ -240,10 +246,11 @@ private static void ConvertDICOMtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document 
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to pages collection of document
+        // Add page
         var page = document.Pages.Add();
         
         var image = new Aspose.Pdf.Image
@@ -251,7 +258,8 @@ private static void ConvertDICOMtoPDF()
             FileType = ImageFileType.Dicom,
             File = dataDir + "DICOMtoPDF.dcm"
         };
-        document.Pages[1].Paragraphs.Add(image);
+        page.Paragraphs.Add(image);
+
         // Save PDF document
         document.Save(dataDir + "DICOMtoPDF_out.pdf");
     }
@@ -285,14 +293,15 @@ private static void ConvertEMFtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document 
     using (var document = new Aspose.Pdf.Document())
     {
-        // Spcify path of input EMF image file
-        var imageFile = dataDir + "EMFtoPDF.emf";
+        // Add page
         var page = document.Pages.Add();
         var image = new Aspose.Pdf.Image();
-        image.File = imageFile;
+        // Load EMF file
+        image.File = dataDir + "EMFtoPDF.emf";
 
         // Specify page dimension properties
         page.PageInfo.Margin.Bottom = 0;
@@ -343,13 +352,14 @@ private static void ConvertGIFtoPDF()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        //Initialize empty PDF document
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         var image = new Aspose.Pdf.Image();
         
         // Load sample GIF image file
         image.File = dataDir + "GIFtoPDF.gif";
-        document.Pages[1].Paragraphs.Add(image);
+        page.Paragraphs.Add(image);
+
         // Save PDF document
         document.Save(dataDir + "GIFtoPDF_out.pdf");
     }
@@ -385,15 +395,15 @@ private static void ConvertJPGtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document 
     using (var document = new Aspose.Pdf.Document())
     {
-        // Load input JPG file
-        var path = dataDir + "JPGtoPDF.jpg";
-        // Add empty page in empty document
+        // Add page
         var page = document.Pages.Add();
         var image = new Aspose.Pdf.Image();
-        image.File = path;
+        // Load input JPG file
+        image.File = dataDir + "JPGtoPDF.jpg";
         
         // Add image on a page
         page.Paragraphs.Add(image);
@@ -418,14 +428,15 @@ private static void ConvertJPGtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        var path = dataDir + "JPGtoPDF.jpg";
-        // Add an empty page
+        // Add page
         var page = document.Pages.Add();
         var image = new Aspose.Pdf.Image();
-        image.File = path;
+        // Load JPEG file
+        image.File = dataDir + "JPGtoPDF.jpg";
         
         // Read Height of input image
         page.PageInfo.Height = image.BitmapSize.Height;
@@ -475,15 +486,15 @@ private static void ConvertPNGtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Load input PNG file
-        var path = dataDir + "PNGtoPDF.png";
-        // Add an empty page
+        // Add page
         var page = document.Pages.Add();
         var image = new Aspose.Pdf.Image();
-        image.File = path;
+        // Load PNG file
+        image.File = dataDir + "PNGtoPDF.png";
         
         // Read Height of input image
         page.PageInfo.Height = image.BitmapSize.Height;
@@ -541,6 +552,7 @@ private static void ConvertSVGtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     var option = new Aspose.Pdf.SvgLoadOptions();
     // Open SVG file 
     using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", option))
@@ -563,6 +575,7 @@ private static void ConvertSVGtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
     var loadopt = new Aspose.Pdf.SvgLoadOptions();
     loadopt.AdjustPageSize = true;
     // Open SVG file
@@ -572,6 +585,8 @@ private static void ConvertSVGtoPDF()
         document.Pages[1].PageInfo.Margin.Left = 0;
         document.Pages[1].PageInfo.Margin.Bottom = 0;
         document.Pages[1].PageInfo.Margin.Right = 0;
+
+        // Save PDF document
         document.Save(dataDir + "SVGtoPDF_out.pdf");
     }
     
@@ -783,6 +798,7 @@ private static void ConvertTIFFtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
@@ -871,6 +887,7 @@ private static void ConvertCDRtoPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Open CDR file
     using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.cdr", new CdrLoadOptions()))
     {
@@ -942,6 +959,7 @@ private static void ConvertHEICtoPDF()
             page.PageInfo.Margin.Left = 0;
 
             page.Paragraphs.Add(asposeImage);
+            
             // Save PDF document
             document.Save(dataDir + "HEICtoPDF_out.pdf");
         }

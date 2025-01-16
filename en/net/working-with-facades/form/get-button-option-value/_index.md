@@ -81,7 +81,7 @@ The radion buttons provide a way to show different options. The [Form](https://r
 private static void GetButtonOptions()
 {    
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -110,7 +110,7 @@ Radio buttons provide a way to set option values, however one of them can be sel
 private static void GetCurremtButtonOptionValue()
 {    
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {

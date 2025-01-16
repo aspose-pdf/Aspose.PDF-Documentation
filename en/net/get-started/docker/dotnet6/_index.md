@@ -80,24 +80,24 @@ sitemap:
 
 The following examples tested with:
 
-* Docker v.20.10.11 and Docker Desktop 4.3.2
-* Visual Studio 2022 Community Edition v.17.0.5
+* Docker v.20.10.11 and Docker Desktop 4.3.2.
+* Visual Studio 2022 Community Edition v.17.0.5.
 * .NET 6 SDK is used in the example provided below.
-* Aspose.PDF for .NET v.22.01
+* Aspose.PDF for .NET v.22.01.
 
 ## Create sample application for Docker Linux Container
 
-1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**
-1. In **Configure your new project** window set desired project name and location and press **Next**
+1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**.
+1. In **Configure your new project** window set desired project name and location and press **Next**.
 1. In **Additional information** window choose **.NET 6.0 (Long-term support)** and enable Docker support. You can also set **Docker OS** to Linux if needed.
-1. Press **Create**
-1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`)
+1. Press **Create**.
+1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`).
 
 ### Generate PDF document using ASP.NET Core Web App in Linux container
 
 We will use code from **Complex Example** in this app. Please follow [this link](/pdf/net/complex-pdf-example/) for a more detailed explanation.
 
-1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
+1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png).
 1. Replace code in `HomeController.cs` with the following snippet (please note that you can have another namespace):
 
 The following code snippet also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
@@ -250,17 +250,17 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 ## Create sample application for Docker Windows Container
 
-1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**
-1. In **Configure your new project** window set desired project name and location and press **Next**
+1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**.
+1. In **Configure your new project** window set desired project name and location and press **Next**.
 1. In **Additional information** window choose **.NET 6.0 (Long-term support)** and enable Docker support. If needed, you can also set **Docker OS** to `Windows`.
-1. Press **Create**
-1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`)
+1. Press **Create**.
+1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`).
 
 ### Generate PDF document using ASP.NET Core Web App in Windows container
 
 We will use the same code as in the previous example.
 
-1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
+1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png).
 1. Replace the code in `HomeController.cs` with the snippet above.
 
 ```dockerfile

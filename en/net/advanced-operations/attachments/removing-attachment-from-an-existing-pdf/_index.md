@@ -93,7 +93,7 @@ The following code snippet shows how to remove attachments from a PDF document.
 private static void DeleteAllAttachments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"))

@@ -91,7 +91,7 @@ The following code snippet shows how to get the number of pages of a PDF file.
 private static void GetNumberOfPagesInAPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetNumberofPages.pdf"))
@@ -156,7 +156,7 @@ From there, it is possible to access either individual Page objects using their 
 private static void AccessingPageProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
@@ -202,7 +202,7 @@ The following code snippet shows how to get a particular page from a PDF file an
 private static void GetAParticularPageOfThePdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -233,7 +233,7 @@ The following code snippet shows how to iterate through individual page of PDF f
 private static void DeterminePageColor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))

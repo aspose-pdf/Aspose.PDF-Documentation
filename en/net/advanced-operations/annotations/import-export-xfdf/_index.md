@@ -93,11 +93,10 @@ The following code snippet shows you how to export annotations to an XFDF file:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportAnnotationsToXfdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PdfAnnotationEditor object
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
@@ -122,11 +121,10 @@ The next code snippet describes how import annotations from an XFDF file:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportAnnotationFromXfdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Create PdfAnnotationEditor object
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
@@ -158,11 +156,10 @@ In the code below an ImportAnnotations method allows import annotations directly
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ImportAnnotationFromPDF()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))

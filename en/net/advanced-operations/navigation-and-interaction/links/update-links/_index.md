@@ -96,11 +96,10 @@ The following code snippet shows you how to update a link in a PDF file and set 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
@@ -126,11 +125,10 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
@@ -161,11 +159,10 @@ To update the hyperlink so that it points to a web address, instantiate the [GoT
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
@@ -186,11 +183,10 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
@@ -216,11 +212,10 @@ The following code snippet shows how to update a link in a PDF file and set its 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
@@ -244,11 +239,10 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
@@ -277,11 +271,10 @@ The link annotation does not contain text. Instead, the text is placed in the co
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
@@ -318,11 +311,10 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
