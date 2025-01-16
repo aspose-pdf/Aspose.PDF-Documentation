@@ -99,13 +99,12 @@ The following code snippet shows how to add a [Rectangle](https://reference.aspo
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddLineObjectToPDF()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -127,7 +126,7 @@ private static void AddLineObjectToPDF()
         // Add line object to shapes collection of Graph object
         graph.Shapes.Add(line);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "AddLineObject_out.pdf");
     }
 }
@@ -139,13 +138,12 @@ private static void AddLineObjectToPDF()
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DashLengthInBlackAndDashLengthInWhite()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -172,7 +170,7 @@ private static void DashLengthInBlackAndDashLengthInWhite()
         // Add line to shapes collection of drawing object
         canvas.Shapes.Add(line);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DashLengthInBlackAndDashLengthInWhite_out.pdf");
     }
 }
@@ -190,13 +188,12 @@ Please take a look over following code snippet to accomplish this requirement.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExampleLineAcrossPage()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -237,7 +234,7 @@ private static void ExampleLineAcrossPage()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "ExampleLineAcrossPage_out.pdf");
     }
 }

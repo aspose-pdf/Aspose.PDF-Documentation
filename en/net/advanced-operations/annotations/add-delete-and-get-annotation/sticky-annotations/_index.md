@@ -95,7 +95,7 @@ private static void AddWatermarkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
 	{
 		// Load Page object to add Annotation
@@ -119,7 +119,7 @@ private static void AddWatermarkAnnotation()
 		// Add Text in Annotation
 		wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
-		// Save the Document
+		// Save PDF document
 		document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
 	}
 }
@@ -140,7 +140,7 @@ private static void AddWatermarkAnnotationWithImage()
     // Define the rectangle for the image
     var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Open the image stream
@@ -183,7 +183,7 @@ private static void AddWatermarkAnnotationWithImage()
 			}
 		}
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
 	}
 }

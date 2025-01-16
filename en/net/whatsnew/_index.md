@@ -212,7 +212,7 @@ private static void InsertCroppedImageToPdf(string imageFile, string resultPdf)
             page.AddImage(imgStream, imageRect, bbox);
         }
 
-        // Save the document to the specified file path
+        // Save PDF document to the specified file path
         document.Save(resultPdf);
     }
 }
@@ -662,7 +662,7 @@ link1.Tag(link1Bdc);
 // Remove the struct element at index 0 from the struct tree.
 tagged.RootElement.RemoveChild(0);
 
-// Save document
+// Save PDF document
 document.Save(output);
 ```
 
@@ -1978,7 +1978,7 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
     };
     // Sign the PDF file
     pdfSign.Sign(1, true, rect, pkcs);
-    // Save output PDF file
+    // Save PDF document
     pdfSign.Save(outFile);
 }
 ```

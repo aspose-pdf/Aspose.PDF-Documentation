@@ -86,11 +86,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractFormFields()
 {
-    // Load source PDF document
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
     {
 
@@ -116,11 +115,10 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractFormFieldsToJson()
 {
-    // Load source PDF document
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
     {
         // Extract form fields and convert to JSON
@@ -141,13 +139,12 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportFormDataToXml()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-    // Open form
+    // Create form
     using (var form = new Aspose.Pdf.Facades.Form())
     {
         form.BindPdf(dataDir + "input.pdf");
@@ -170,15 +167,15 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportDataToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
+    // Create form
     using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Open Document
+        // Bind PDF document
         form.BindPdf(dataDir + "input.pdf");
 
         // Create fdf file
@@ -188,7 +185,7 @@ private static void ExportDataToPdf()
             form.ExportFdf(fdfOutputStream);
         }
 
-        // Save updated document
+        // Save PDF document
         form.Save(dataDir + "ExportDataToPdf_out.pdf");
     }
 }
@@ -202,15 +199,15 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExportDataToXFDF()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
+    // Create form
     using (var form = new Aspose.Pdf.Facades.Form())
     {
-        // Open Document
+        // Bind PDF document
         form.BindPdf(dataDir + "input.pdf");
 
         // Create xfdf file
@@ -220,7 +217,7 @@ private static void ExportDataToXFDF()
             form.ExportXfdf(xfdfOutputStream);
         }
 
-        // Save updated document
+        // Save PDF document
         form.Save(dataDir + "ExportDataToXFDF_out.pdf");
     }
 }

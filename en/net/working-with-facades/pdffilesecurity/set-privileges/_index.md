@@ -97,7 +97,7 @@ private static void SetPrivilege1()
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege
         fileSecurity.SetPrivilege(privilege);
-        // Save the document
+        // Save PDF document
         fileSecurity.Save(dataDir + "sample_privileges.pdf");
     }
 }
@@ -124,7 +124,7 @@ private static void SetPrivilegeWithPassword()
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege and passwords
         fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
-        // Save the document
+        // Save PDF document
         fileSecurity.Save(dataDir + "sample_privileges.pdf");
     }
 }
@@ -160,7 +160,7 @@ private static void RemoveExtendedRights()
         {
             pdfSign.RemoveUsageRights();
         }
-        // Save the document
+        // Save PDF document
         pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
     }
 }

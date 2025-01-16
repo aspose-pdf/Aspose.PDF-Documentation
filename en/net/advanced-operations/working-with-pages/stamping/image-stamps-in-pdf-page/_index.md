@@ -91,12 +91,13 @@ To add an image stamp:
 The following code snippet shows how to add image stamp in the PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageStampInPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
@@ -110,7 +111,7 @@ private static void AddImageStampInPdfFile()
         imageStamp.Opacity = 0.5;
         // Add stamp to particular page
         document.Pages[1].AddStamp(imageStamp);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "AddImageStamp_out.pdf");
     }
 }
@@ -121,12 +122,13 @@ private static void AddImageStampInPdfFile()
 When adding an image as a stamp object, you can control the quality of the image. The Quality property of the ImageStamp class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ControlImageQualityWhenAddingStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
@@ -143,12 +145,13 @@ private static void ControlImageQualityWhenAddingStamp()
 Aspose.PDF API lets you add image stamp as background in a floating box. The BackgroundImage property of FloatingBox class can be used to set the background image stamp for a floating box as shown in following code sample.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImageStampAsBackgroundInFloatingBox()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Instantiate Document object
+
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to PDF document
@@ -174,7 +177,7 @@ private static void ImageStampAsBackgroundInFloatingBox()
         aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
         // Add FloatingBox to paragraphs collection of page object
         page.Paragraphs.Add(aBox);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
     }
 }
@@ -187,12 +190,13 @@ Since version 24.6, it is possible to add alternative text to the image stamp.
 This code opens a PDF file, adds an image as a stamp at a specific position, and includes alternative text for accessibility. The updated PDF is then saved with a new filename.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddAlternativeTextToTheImageStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open document
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
     {
         // Create image stamp
@@ -205,7 +209,7 @@ private static void AddAlternativeTextToTheImageStamp()
         };
         // Add stamp
         document.Pages[1].AddStamp(imageStamp);
-        // Save document
+        // Save PDF document
         document.Save(dataDir + "DocWithImageStamp_out.pdf");
     }
 }

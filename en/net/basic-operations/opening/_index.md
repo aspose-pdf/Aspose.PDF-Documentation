@@ -85,13 +85,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 There are several ways to open a document. The easiest is to specify a file name.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
         Console.WriteLine("Pages " + document.Pages.Count);
@@ -102,7 +102,7 @@ private static void OpenDocument()
 ## Open existing PDF document from stream
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocumentStream()
 {
     var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
@@ -117,7 +117,7 @@ private static void OpenDocumentStream()
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(stream))
     {
         Console.WriteLine("Pages " + document.Pages.Count);
@@ -128,7 +128,7 @@ private static void OpenDocumentStream()
 ## Open encrypted PDF document
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OpenDocumentWithPassword()
 {
     // The path to the documents directory
@@ -137,7 +137,7 @@ private static void OpenDocumentWithPassword()
     const string password = "Aspose2020";
     try
     {
-        // Open the document
+        // Open PDF document
         using (var document = new Aspose.Pdf.Document(dataDir + "DocSite.pdf", password))
         {
             Console.WriteLine("Pages " + document.Pages.Count);

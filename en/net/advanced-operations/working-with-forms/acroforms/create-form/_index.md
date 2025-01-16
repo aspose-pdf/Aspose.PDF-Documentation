@@ -95,88 +95,35 @@ To add a form field:
 Below example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
-    {
-        // Create a field
-        var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
-        textBoxField.PartialName = "textbox1";
-        textBoxField.Value = "Text Box";
+	{
+		// Create a field
+		var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
+		textBoxField.PartialName = "textbox1";
+		textBoxField.Value = "Text Box";
 
-        // Configure border
-        var border = new Aspose.Pdf.Annotations.Border(textBoxField);
-        border.Width = 5;
-        border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
-        textBoxField.Border = border;
+		// Configure border
+		var border = new Aspose.Pdf.Annotations.Border(textBoxField);
+		border.Width = 5;
+		border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
+		textBoxField.Border = border;
 
-        // Set color
-        textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+		// Set color
+		textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
-        // Add field to the document
-        document.Form.Add(textBoxField, 1);
+		// Add field to the document
+		document.Form.Add(textBoxField, 1);
 
-        // Save modified PDF
-        document.Save(dataDir + "TextBox_out.pdf");
-    }
-}
-```
-
-[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) can be added with some widget annotations.
-```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-private static void AddTextBoxFieldToPdf()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-    // Create a new document
-    using (var document = new Aspose.Pdf.Document())
-    {
-        // Add a new page in the created document
-        var page = document.Pages.Add();
-
-        // Defining an array with rectangle data for widget annotations. 
-        // The number of elements in the array determines the number of widget annotations to add.
-        var rects = new Rectangle[]
-        {
-            new Rectangle(10, 600, 110, 620),
-            new Rectangle(10, 630, 110, 650),
-            new Rectangle(10, 660, 110, 680)
-        };
-
-        // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
-        var defaultAppearances = new DefaultAppearance[]
-        {
-            new DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
-            new DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
-            new DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
-        };
-
-        // Create a field
-        var textBoxField = new TextBoxField(page, rects);
-
-        // Setting the appearances of widget annotations
-        short i = 0;
-        foreach (WidgetAnnotation wa in textBoxField)
-        {
-            wa.DefaultAppearance = defaultAppearances[i++];
-        }
-        textBoxField.Value = "Text";
-
-        // Add field to the document
-        document.Form.Add(textBoxField);
-
-        // Save PDF with added TextBoxField
-        document.Save(dataDir + "TextBox_out.pdf");
-    }
+		// Save PDF document
+		document.Save(dataDir + "TextBox_out.pdf");
+	}
 }
 ```
 
@@ -185,14 +132,13 @@ private static void AddTextBoxFieldToPdf()
 The following code snippets show how to add [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) in a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
@@ -210,7 +156,7 @@ private static void AddRadioButtonToPdf()
 		// Add radio button to form object of Document object
 		document.Form.Add(radio);
 
-		// Save the PDF file
+		// Save PDF document
 		document.Save(dataDir + "RadioButton_out.pdf");
 	}
 }
@@ -219,14 +165,13 @@ private static void AddRadioButtonToPdf()
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddRadioButtonWithOptionsToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a page to PDF file
@@ -297,7 +242,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 		c2.Paragraphs.Add(opt2);
 		c3.Paragraphs.Add(opt3);
 
-		// Save the PDF file
+		// Save PDF document
 		document.Save(dataDir + "RadioButtonWithOptions_out.pdf");
 	}
 }
@@ -308,8 +253,7 @@ private static void AddRadioButtonWithOptionsToPdf()
 Following code snippet shows how to add caption which will be associated with RadioButtonField:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddingCaptionToRadioButtonField()
 {
     // The path to the documents directory
@@ -318,46 +262,47 @@ private static void AddingCaptionToRadioButtonField()
     // Load source PDF form
     using (var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
     {
-        var PDF_Template_PDF_HTML = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf");
-
-        foreach (var item in form1.FieldNames)
+        using (var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf"))
         {
-            Console.WriteLine(item.ToString());
-            var radioOptions = form1.GetButtonOptionValues(item);
-
-            if (item.Contains("radio1"))
+            foreach (var item in form1.FieldNames)
             {
-                var field0 = PDF_Template_PDF_HTML.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
-                var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
-                fieldoption.OptionName = "Yes";
-                fieldoption.PartialName = "Yesname";
+                Console.WriteLine(item.ToString());
+                var radioOptions = form1.GetButtonOptionValues(item);
 
-                var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
-                updatedFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
-                updatedFragment.TextState.FontSize = 10;
-                updatedFragment.TextState.LineSpacing = 6.32f;
+                if (item.Contains("radio1"))
+                {
+                    var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+                    var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
+                    fieldoption.OptionName = "Yes";
+                    fieldoption.PartialName = "Yesname";
 
-                // Create TextParagraph object
-                var par = new Aspose.Pdf.Text.TextParagraph();
+                    var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
+                    updatedFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+                    updatedFragment.TextState.FontSize = 10;
+                    updatedFragment.TextState.LineSpacing = 6.32f;
 
-                // Set paragraph position
-                par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
-                // Specify word wraping mode
-                par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+                    // Create TextParagraph object
+                    var par = new Aspose.Pdf.Text.TextParagraph();
 
-                // Add new TextFragment to paragraph
-                par.AppendLine(updatedFragment);
+                    // Set paragraph position
+                    par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+                    // Specify word wraping mode
+                    par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
 
-                // Add the TextParagraph using TextBuilder
-                var textBuilder = new Aspose.Pdf.Text.TextBuilder(PDF_Template_PDF_HTML.Pages[1]);
-                textBuilder.AppendParagraph(par);
+                    // Add new TextFragment to paragraph
+                    par.AppendLine(updatedFragment);
 
-                field0.DeleteOption("item1");
+                    // Add the TextParagraph using TextBuilder
+                    var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+                    textBuilder.AppendParagraph(par);
+
+                    field0.DeleteOption("item1");
+                }
             }
-        }
 
-        // Save the modified PDF
-        PDF_Template_PDF_HTML.Save(dataDir + "RadioButtonField_out.pdf");
+            // Save PDF document
+            document.Save(dataDir + "RadioButtonField_out.pdf");
+        }
     }
 }
 ```
@@ -367,14 +312,13 @@ private static void AddingCaptionToRadioButtonField()
 The following code snippets show how to add ComboBox field in a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddComboBoxToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add page to document object
@@ -392,7 +336,7 @@ private static void AddComboBoxToPdf()
 		// Add combo box object to form fields collection of document object
 		document.Form.Add(combo);
 
-		// Save the PDF document
+		// Save PDF document
 		document.Save(dataDir + "ComboBox_out.pdf");
 	}
 }
@@ -405,14 +349,13 @@ The Document class provides a collection named Form which manages form fields in
 The code snippets that follow show how to add a tooltip to a form field, first using C# and then Visual Basic.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToField()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load source PDF form
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTooltipToField.pdf"))
 	{
 		// Set the tooltip for textfield
@@ -421,7 +364,7 @@ private static void AddTooltipToField()
 			field.AlternateName = "Text box tool tip";
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddTooltipToField_out.pdf");
 	}
 }

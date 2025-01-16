@@ -104,7 +104,7 @@ private static void CreateLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
     {
         // Create link
@@ -114,7 +114,7 @@ private static void CreateLinkAnnotation()
         link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
         page.Annotations.Add(link);
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "CreateApplicationLink_out.pdf");
     }
 }
@@ -130,7 +130,7 @@ private static void CreateLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
 
     // Create link
@@ -140,7 +140,7 @@ private static void CreateLinkAnnotation()
     link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
     page.Annotations.Add(link);
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "CreateApplicationLink_out.pdf");
 }
 ```
@@ -172,7 +172,7 @@ private static void CreateLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
     {
         // Create link
@@ -182,7 +182,7 @@ private static void CreateLinkAnnotation()
         link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
         page.Annotations.Add(link);
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "CreateDocumentLink_out.pdf");
     }
 }
@@ -198,7 +198,7 @@ private static void CreateLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
 
     // Create link
@@ -208,7 +208,7 @@ private static void CreateLinkAnnotation()
     link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
     page.Annotations.Add(link);
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "CreateDocumentLink_out.pdf");
 }
 ```

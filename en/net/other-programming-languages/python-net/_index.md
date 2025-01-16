@@ -122,7 +122,7 @@ class HelloWorld(object):
 
     def run_simple(self):
 
-        # Initialize document object
+        # Create PDF document
         document = Document()
         # Add page
         page = document.Pages.Add()
@@ -141,6 +141,7 @@ class HelloWorld(object):
         # Append the text fragment to the PDF page
         textBuilder.AppendText(textFragment)
 
+        # Save PDF document
         document.Save("HelloWorld_out.pdf")
 ```
 
@@ -163,7 +164,7 @@ class HelloWorld(object):
     # Make a Complex Document
     def run_complex(self):
 
-        # Initialize document object
+        # Create PDF document
         document = Document()
         # Add page
         page = document.Pages.Add()
@@ -188,7 +189,6 @@ class HelloWorld(object):
         description.TextState.FontSize = 14
         description.HorizontalAlignment = HorizontalAlignment.Left
         page.Paragraphs.Add(description)
-
 
         # Add table
         table = Table()
@@ -223,6 +223,7 @@ class HelloWorld(object):
 
         page.Paragraphs.Add(table)
 
+        # Save PDF document
         document.Save(self.dataDir + "Complex.pdf")
 ```
 

@@ -78,7 +78,7 @@ draft: false
 A particular range of pages can be inserted from one PDF into another using [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class. In order to do that, you need an input PDF file in which you want to insert the pages, a port file from which the pages need to be taken for insertion, a location where the pages are to be inserted, and a range of pages of the port file which have to be inserted in the input PDF file. This range is specified with start page and end page parameters. Finally, the output PDF file is saved with the specified range of pages inserted in the input file. The following code snippet shows you how to insert PDF pages between two numbers using file streams.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
 {
     // The path to the documents directory
@@ -99,7 +99,7 @@ If you want to insert some specified pages into another PDF file, then you can u
 The following code snippet shows you how to insert array of PDF pages using file paths.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertArrayOfPdfPagesUsingFilePaths()
 {
     // The path to the documents directory
@@ -120,7 +120,7 @@ private static void InsertArrayOfPdfPagesUsingFilePaths()
 If you want to insert the range of pages using streams, you only need to use the appropriate overload of the [Insert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/insert/index) method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class. In order to do that, you need an input PDF stream in which you want to insert the pages, a port stream from which the pages need to be taken for insertion, a location where the pages are to be inserted, and a range of pages of the port stream which have to be inserted in the input PDF stream. This range is specified with start page and end page parameters. Finally, the output PDF stream is saved with the specified range of pages inserted in the input stream. The following code snippet shows you how to insert PDF pages between two numbers using streams.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertPdfPagesBetweenTwoNumbersUsingStreams()
 {
     // The path to the documents directory
@@ -147,7 +147,7 @@ private static void InsertPdfPagesBetweenTwoNumbersUsingStreams()
 You can also insert an array of pages into another PDF file using streams with the helps of appropriate overload of the Insert method which requires an integer array of pages. In this array, you can specify which particular pages you want to insert in the input PDF stream. In order to do that, you need an input PDF stream in which you want to insert the pages, a port stream from which the pages need to be taken for insertion, a location where the pages are to be inserted, and integer array of the pages from port stream which have to be inserted in the input PDF file. This array contains a list of particular pages which you’re interested to insert in the input PDF stream. Finally, the output PDF stream is saved with the specified array of pages inserted in the input file.The following code snippet shows you how to insert array of PDF pages using streams.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void InsertArrayOfPdfPagesUsingStreams()
 {
     // The path to the documents directory

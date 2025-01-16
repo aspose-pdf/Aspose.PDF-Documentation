@@ -93,7 +93,7 @@ private static void ExtractImagesFromSignatureField()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractingImage.pdf"))
     {
         // Searching for signature fields
@@ -141,7 +141,7 @@ private static void ExtractCertificate()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
         // Searching for signature fields
@@ -183,7 +183,7 @@ private void GetSignaturesInfo()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
             
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
     {
         using (var signature = new Aspose.Pdf.Facades.PdfFileSignature(document))

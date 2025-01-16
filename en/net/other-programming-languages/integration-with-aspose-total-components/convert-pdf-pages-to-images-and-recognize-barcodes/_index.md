@@ -101,6 +101,7 @@ For the purposes of this example, first convert a page in a PDF file into an ima
 {{% /alert %}}
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void IdentifyBarcodesConverter()
 {
     // The path to the documents directory
@@ -109,7 +110,7 @@ private static void IdentifyBarcodesConverter()
     // Create a PdfConverter object
     var converter = new Aspose.Pdf.Facades.PdfConverter();
 
-    // Bind the input PDF file
+    // Bind PDF document
     converter.BindPdf(dataDir + "IdentifyBarcodes.pdf");
 
     // Specify the start page to be processed
@@ -178,18 +179,19 @@ The code samples given here traverses through the pages of the PDF document and 
 {{% /alert %}}
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void IdentifyBarcodes()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))
     {
         // Traverse through the individual pages of the PDF file
         for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
         {
-            using (var imageStream = new System.IO.MemoryStream())
+            using (var imageStream = new MemoryStream())
             {
                 // Create a Resolution object
                 var resolution = new Aspose.Pdf.Devices.Resolution(300);

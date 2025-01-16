@@ -110,7 +110,7 @@ private static void AddHyperlink()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
     {
         // Create link
@@ -137,7 +137,7 @@ private static void AddHyperlink()
         // Add FreeText annotation to annotations collection of first page of Document
         document.Pages[1].Annotations.Add(textAnnotation);
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "AddHyperlink_out.pdf");
     }
 }
@@ -153,7 +153,7 @@ private static void AddHyperlink()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
     // Create link
     var page = document.Pages[1];
@@ -179,7 +179,7 @@ private static void AddHyperlink()
     // Add FreeText annotation to annotations collection of first page of Document
     document.Pages[1].Annotations.Add(textAnnotation);
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "AddHyperlink_out.pdf");
 }
 ```
@@ -202,7 +202,7 @@ private static void AddHyperlink()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Create Document instance
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -230,7 +230,7 @@ private static void AddHyperlink()
         // Add text to paragraphs collection of page object
         page.Paragraphs.Add(text);
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "CreateLocalHyperlink_out.pdf");
     }
 }
@@ -246,7 +246,7 @@ private static void AddHyperlink()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Create Document instance
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
     // Add page to pages collection of PDF file
     var page = document.Pages.Add();
@@ -273,7 +273,7 @@ private static void AddHyperlink()
     // Add text to paragraphs collection of page object
     page.Paragraphs.Add(text);
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "CreateLocalHyperlink_out.pdf");
 }
 ```
@@ -305,7 +305,7 @@ private static void GetHyperlink()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Traverse through all the page of PDF
@@ -340,7 +340,7 @@ private static void GetHyperlink()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Traverse through all the page of PDF
@@ -384,7 +384,7 @@ private static void ShowLinkAnnotationText()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Iterate through each page of PDF
@@ -426,7 +426,7 @@ private static void ShowLinkAnnotationText()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Iterate through each page of PDF
@@ -480,13 +480,13 @@ private static void RemoveOpenAction()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveOpenAction.pdf"))
     {
         // Remove document open action
         document.OpenAction = null;
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "RemoveOpenAction_out.pdf");
     }
 }
@@ -502,13 +502,13 @@ private static void RemoveOpenAction()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "RemoveOpenAction.pdf");
 
     // Remove document open action
     document.OpenAction = null;
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "RemoveOpenAction_out.pdf");
 }
 ```
@@ -531,7 +531,7 @@ private static void SpecifyPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf"))
     {
         // Get the instance of second page of document
@@ -544,8 +544,8 @@ private static void SpecifyPage()
         action.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
         // Set the document open action
         document.OpenAction = action;
-        // Save updated document
-        document.Save(dataDir + "goto2page_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "Goto2page_out.pdf");
     }
 }
 ```
@@ -560,7 +560,7 @@ private static void SpecifyPage()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf");
     // Get the instance of second page of document
     var page2 = document.Pages[2];
@@ -572,8 +572,8 @@ private static void SpecifyPage()
     action.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(page2, 0, page2.Rect.Height, zoom);
     // Set the document open action
     document.OpenAction = action;
-    // Save updated document
-    document.Save(dataDir + "goto2page_out.pdf");
+    // Save PDF document
+    document.Save(dataDir + "Goto2page_out.pdf");
 }
 ```
 {{< /tab >}}

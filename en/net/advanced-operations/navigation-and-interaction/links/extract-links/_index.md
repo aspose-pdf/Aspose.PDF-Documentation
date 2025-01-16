@@ -101,7 +101,7 @@ private static void ExtractLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
     {
         // Extract actions
@@ -111,7 +111,7 @@ private static void ExtractLinkAnnotation()
         var list = selector.Selected;
         var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "ExtractLinks_out.pdf");
     }
 }
@@ -127,7 +127,7 @@ private static void ExtractLinkAnnotation()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");
 
     // Extract actions
@@ -137,7 +137,7 @@ private static void ExtractLinkAnnotation()
     var list = selector.Selected;
     var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "ExtractLinks_out.pdf");
 }
 ```

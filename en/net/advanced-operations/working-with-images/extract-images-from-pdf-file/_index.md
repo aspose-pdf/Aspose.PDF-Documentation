@@ -81,24 +81,24 @@ Images are held in each page's [Resources](https://reference.aspose.com/pdf/net/
 The image's index returns an [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) object. This object provides a Save method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractImageFromPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
     {
         // Extract a particular image
         var xImage = document.Pages[1].Resources.Images[1];
         using (var outputImage = new FileStream(dataDir + "ExtractedImage.jpg", FileMode.Create))
         {
-            // Save output image
+            // Save PDF document image
             xImage.Save(outputImage, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
 
-        // Save updated PDF file
+        // Save PDF document
         document.Save(dataDir + "ExtractImages_out.pdf");
     }
 }
