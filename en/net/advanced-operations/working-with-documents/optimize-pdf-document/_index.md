@@ -548,7 +548,31 @@ This feature is supported by version 18.12 or greater.
 
 Aspose.PDF for .NET provides support of FlateDecode compression for PDF Optimisation functionality. The following code snippet below shows how to use the option in Optimization to store images with **FlateDecode** compression:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-FlateDecodeCompression-1.cs" >}}
+```csharp
+private static void OptimizeDocumentImagesWithFlateCompression()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizationOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // To optimize images using FlateDecode compression, set optimization options to Flate
+        optimizationOptions.ImageCompressionOptions.Encoding = Aspose.Pdf.Optimization.ImageEncoding.Flate;
+
+        // Set optimization options
+        document.OptimizeResources(optimizationOptions);
+
+        // Save the optimized document
+        document.Save(dataDir + "FlateDecodeCompression.pdf");
+    }
+}
+```
 
 ### **Store Image in XImageCollection**
 
