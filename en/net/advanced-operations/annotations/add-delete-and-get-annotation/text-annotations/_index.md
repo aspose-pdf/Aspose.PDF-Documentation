@@ -446,14 +446,14 @@ To strike out a certain TextFragment:
 
 The following code snippet shows how to search for a particular TextFragment and add a StrikeOutAnnotation to that object.
 
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private void StrikeOutTextInDocument()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
     {
         // Create TextFragment Absorber instance to search for a particular text fragment
@@ -496,10 +496,11 @@ private void StrikeOutTextInDocument()
             textFragment.Page.Annotations.Add(strikeOut);
         }
 
-        // Save the modified document
+        // Save PDF document
         document.Save(dataDir + "StrikeOutWords_out.pdf");
     }
 }
+```
 
 ## Delete All Annotations from Page of PDF File
 
