@@ -107,7 +107,7 @@ sampleText.Text =  = "HelloWorld using ASP and JScript";
 // Add Text paragraph to paragraphs collection of a section
 pdfpage.Paragraphs.Add(SampleText);
 
-// Save the PDF document
+// Save PDF document
 pdf.Save("d:\\pdftest\\HelloWorldinASP.pdf");
 
 %>

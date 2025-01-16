@@ -82,7 +82,6 @@ Create an instance of the [PdfViewer](https://reference.aspose.com/pdf/net/aspos
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFFile()
 {
     // The path to the documents directory
@@ -91,7 +90,7 @@ private static void PrintingPDFFile()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -123,7 +122,6 @@ private static void PrintingPDFFile()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFFile()
 {
     // The path to the documents directory
@@ -132,7 +130,7 @@ private static void PrintingPDFFile()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -167,7 +165,6 @@ In order to display a print dialog, use the following code snippet:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFDisplayPrintDialog()
 {
     // The path to the documents directory
@@ -176,7 +173,7 @@ private static void PrintingPDFDisplayPrintDialog()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -204,7 +201,6 @@ private static void PrintingPDFDisplayPrintDialog()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFDisplayPrintDialog()
 {
     // The path to the documents directory
@@ -213,7 +209,7 @@ private static void PrintingPDFDisplayPrintDialog()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -246,7 +242,6 @@ There are printers that print to a file. To use them, set the name of the virtua
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
@@ -255,7 +250,7 @@ private static void PrintingPDFToSoftPrinter()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -289,7 +284,6 @@ private static void PrintingPDFToSoftPrinter()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
@@ -298,7 +292,7 @@ private static void PrintingPDFToSoftPrinter()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -339,7 +333,6 @@ The following code snippet shows how to hide the print dialog.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFHidePrintDialog()
 {
     // The path to the documents directory
@@ -348,7 +341,7 @@ private static void PrintingPDFHidePrintDialog()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -379,7 +372,6 @@ private static void PrintingPDFHidePrintDialog()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFHidePrintDialog()
 {
     // The path to the documents directory
@@ -388,7 +380,7 @@ private static void PrintingPDFHidePrintDialog()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -424,7 +416,6 @@ A color PDF document can be printed to an XPS printer as grayscale, using [PdfVi
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFAsGrayscale()
 {
     // The path to the documents directory
@@ -433,7 +424,7 @@ private static void PrintingPDFAsGrayscale()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -465,7 +456,6 @@ private static void PrintingPDFAsGrayscale()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFAsGrayscale()
 {
     // The path to the documents directory
@@ -474,7 +464,7 @@ private static void PrintingPDFAsGrayscale()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -513,7 +503,6 @@ The following code snippet shows how to print and convert a PDF to PostScript fo
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToPostScript()
 {
     // The path to the documents directory
@@ -522,7 +511,7 @@ private static void PrintingPDFToPostScript()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -558,7 +547,6 @@ private static void PrintingPDFToPostScript()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
@@ -567,7 +555,7 @@ private static void PrintingPDFToSoftPrinter()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -608,7 +596,6 @@ A PDF file can be printed to a physical printer as well as to the Microsoft XPS 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
@@ -617,7 +604,7 @@ private static void CheckingPrintJobStatus()
     // Instantiate PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Bind source PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
@@ -669,7 +656,6 @@ private static void CheckingPrintJobStatus()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
@@ -678,7 +664,7 @@ private static void CheckingPrintJobStatus()
     // Instantiate PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Bind source PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
@@ -735,7 +721,6 @@ In a particular printing job, the pages of PDF document can either be printed in
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 struct PrintingJobSettings
 {
     public int ToPage { get; set; }
@@ -781,7 +766,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
@@ -837,7 +822,6 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 struct PrintingJobSettings
 {
     public int ToPage { get; set; }
@@ -883,7 +867,7 @@ private static void PrintingPagesInSimplexAndDuplexMode()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing

@@ -103,7 +103,7 @@ private static void DecryptPDFFile()
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
                 // Decrypt PDF document
                 fileSecurity.DecryptFile("P@ssw0rd");
-                // Save the document
+                // Save PDF document
                 fileSecurity.Save(dataDir + "sample_decrtypted.pdf");
             }
         }

@@ -93,12 +93,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The snippet below show how to crop the page:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CropPage()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    //Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CropPageInput.pdf"))
     {
         Console.WriteLine(document.Pages[1].CropBox);
@@ -112,7 +113,7 @@ private static void CropPage()
         document.Pages[1].TrimBox = newBox;
         document.Pages[1].ArtBox = newBox;
         document.Pages[1].BleedBox = newBox;
-        //Save the updated document
+        // Save PDF document
         document.Save(dataDir + "CropPage_out.pdf");  
     }
 }

@@ -81,8 +81,7 @@ draft: false
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ExtractImageFromStamp()
+private static void ExtractImageFromStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -90,7 +89,7 @@ public static void ExtractImageFromStamp()
     // Instantiate PdfContentEditor object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind input PDF file
+        // Bind PDF document
         pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
 
         // Get Stamp info for the first stamp
@@ -109,8 +108,7 @@ public static void ExtractImageFromStamp()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ExtractImageFromStamp()
+private static void ExtractImageFromStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -118,7 +116,7 @@ public static void ExtractImageFromStamp()
     // Instantiate PdfContentEditor object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Bind input PDF file
+    // Bind PDF document
     pdfContentEditor.BindPdf(dataDir + "ExtractImage-ImageStamp.pdf");
 
     // Get Stamp info for the first stamp
@@ -142,8 +140,7 @@ public static void ExtractImageFromStamp()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ChangeStampPosition()
+private static void ChangeStampPosition()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -151,7 +148,7 @@ public static void ChangeStampPosition()
     // Instantiate PdfContentEditor object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind input PDF file
+        // Bind PDF document
         pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
         int pageId = 1;
@@ -162,7 +159,7 @@ public static void ChangeStampPosition()
         // Change the position of the stamp to new x and y position
         pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
 
-        // Save the Pdf file
+        // Save PDF document
         pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
     }
 }
@@ -172,8 +169,7 @@ public static void ChangeStampPosition()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void ChangeStampPosition()
+private static void ChangeStampPosition()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -181,7 +177,7 @@ public static void ChangeStampPosition()
     // Instantiate PdfContentEditor object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Bind input PDF file
+    // Bind PDF document
     pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
     int pageId = 1;
@@ -192,7 +188,7 @@ public static void ChangeStampPosition()
     // Change the position of the stamp to new x and y position
     pdfContentEditor.MoveStamp(pageId, stampIndex, x, y);
 
-    // Save the Pdf file
+    // Save PDF document
     pdfContentEditor.Save(dataDir + "ChangeStampPosition_out.pdf");
 }
 ```
@@ -205,8 +201,7 @@ Also, you can use [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pd
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void MoveStampById()
+private static void MoveStampById()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -214,7 +209,7 @@ public static void MoveStampById()
     // Instantiate PdfContentEditor Object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind input PDF file
+        // Bind PDF document
         pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
         int pageId = 1;
@@ -225,7 +220,7 @@ public static void MoveStampById()
         // Change the position of the stamp to new x and y position
         pdfContentEditor.MoveStamp(pageId, stampId, x, y);
 
-        // Save the Pdf file
+        // Save PDF document
         pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
     }
 }
@@ -235,8 +230,7 @@ public static void MoveStampById()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void MoveStampById()
+private static void MoveStampById()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
@@ -244,7 +238,7 @@ public static void MoveStampById()
     // Instantiate PdfContentEditor Object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Bind input PDF file
+    // Bind PDF document
     pdfContentEditor.BindPdf(dataDir + "ChangeStampPosition.pdf");
 
     int pageId = 1;
@@ -255,7 +249,7 @@ public static void MoveStampById()
     // Change the position of the stamp to new x and y position
     pdfContentEditor.MoveStamp(pageId, stampId, x, y);
 
-    // Save the Pdf file
+    // Save PDF document
     pdfContentEditor.Save(dataDir + "ChangeStampPositionByID_out.pdf");
 }
 ```

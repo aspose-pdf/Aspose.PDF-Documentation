@@ -100,14 +100,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to get the properties using [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetDocumentWindowProperties()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
 	{
 		// Get different document properties
@@ -173,14 +172,13 @@ Properties available are:
 Each is used and described in the code below. The following - code snippet shows you how to set the properties using the [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetDocumentWindowProperties()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
 	{
 		// Set different document properties
@@ -219,7 +217,7 @@ private static void SetDocumentWindowProperties()
 		// I.e. show thumbnails, full-screen, show attachment panel
 		document.PageMode = Aspose.Pdf.PageMode.UseThumbs;
 
-		// Save updated PDF file
+		// Save PDF document
 		document.Save(dataDir + "SetDocumentWindow_out.pdf");
 	}
 }
@@ -244,14 +242,13 @@ The following code snippet shows how to embed a font in a PDF file.
 Some PDF documents have fonts from a special Adobe font set. Fonts from this set are called “Standard Type 1 Fonts”. This set includes 14 fonts and embedding this type of fonts requires using of special flags i.e [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). Following is the code snippet which can be used to get a document with all fonts embedded including Standard Type 1 Fonts:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void EmbedFontsType1ToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Load an existing PDF Document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
     // Set EmbedStandardFonts property of document
@@ -273,7 +270,7 @@ private static void EmbedFontsType1ToPdf()
 			}
 		}
 
-		// Save the updated PDF file
+		// Save PDF document
 		document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
 	}		
 }
@@ -288,14 +285,13 @@ If you need to use any font other than the 14 core fonts supported by Adobe Read
 We use the property IsEmbedded of Font class to embed the font information into Pdf file. Setting the value of this property to ‘True’ will embed the complete font file into the Pdf, knowing the fact that it will increase the Pdf file size. Following is the code snippet that can be used to embed the font information into Pdf.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void EmbedFontWhileCreatingPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Create a section in the Pdf object
@@ -330,14 +326,13 @@ private static void EmbedFontWhileCreatingPdf()
 When a PDF document contains fonts, which are not available in the document itself and on the device, API replaces these fonts with the default font. When font is available (is installed on the device or is embedded into the document), output PDF should have the same font (should not be replaced with default font). The value of the default font should contain the name of the font (not the path to the font files). We have implemented a feature to set default font name while saving a document as PDF. Following code snippet can be used to set default font:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetDefaultFontOnDocumentSave(string documentName, string newName)
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document with missing font
+    // Open PDF document
     using (var fs = new FileStream(dataDir + "GetDocumentWindow.pdf", FileMode.Open))
     {
         using (var document = new Aspose.Pdf.Document(fs))
@@ -348,7 +343,7 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
                 DefaultFontName = newName
             };
 
-            // Save the document with the specified save options
+            // Save PDF document
             document.Save(dataDir + "DefaultFont_out.pdf", pdfSaveOptions);
         }
     }
@@ -360,14 +355,13 @@ private static void SetDefaultFontOnDocumentSave(string documentName, string new
 In case you want to get all fonts from a PDF document, you can use FontUtilities.GetAllFonts() method provided in [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. Please check following code snippet in order to get all fonts from an existing PDF document:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetAllFontsFromPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Get all fonts used in the document
@@ -387,14 +381,13 @@ private static void GetAllFontsFromPdf()
 Aspose.PDF for .NET provides methods to get notifications about font substitution for handling font substitution cases. The code snippets below show how to use corresponding functionality.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void NotificationFontSubstitution()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Attach the FontSubstitution event handler
@@ -403,7 +396,7 @@ private static void NotificationFontSubstitution()
 			// (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
 			//                                                                        oldFont.FontName, newFont.FontName));
 
-		// Save the document (optional, depending on your use case)
+		// Save PDF document
 		document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
 	}
 }
@@ -431,13 +424,12 @@ Following code snippet shows how to set FontSubsetStrategy:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetFontSubsetStrategy()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// All fonts will be embedded as subset into document in case of SubsetAllFonts.
@@ -446,7 +438,7 @@ private static void SetFontSubsetStrategy()
 		// Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
 		document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
 
-		// Save the updated PDF document
+		// Save PDF document
 		document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
 	}
 }
@@ -463,21 +455,20 @@ The [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/got
 The following code snippet shows how to set the zoom factor of a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetZoomFactor()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Instantiate new Document object
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
 	{
 		// Create GoToAction with a specific zoom factor
 		var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
 		document.OpenAction = action;
 
-		// Save the document
+		// Save PDF document
 		document.Save(dataDir + "Zoomed_pdf_out.pdf");
 	}
 }
@@ -488,14 +479,13 @@ private static void SetZoomFactor()
 The following code snippet shows how to get a PDF file's zoom factor.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetZoomFactor()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Instantiate new Document object
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
 	{
 		// Create GoToAction object
@@ -516,14 +506,13 @@ private static void GetZoomFactor()
 Aspoose.PDF allows setting the Print Dialog Preset properties of a PDF document. It allows you to change the DuplexMode property for a PDF document which is set to simplex by default. This can be achieved using two different methodologies as shown below.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPrintDialogPresetProperties()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a page to the document
@@ -532,7 +521,7 @@ private static void SetPrintDialogPresetProperties()
         // Set duplex printing to DuplexFlipLongEdge
         document.Duplex = Aspose.Pdf.PrintDuplex.DuplexFlipLongEdge;
 
-        // Save the document with the specified properties
+        // Save PDF document
         document.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
     }
 }
@@ -541,8 +530,7 @@ private static void SetPrintDialogPresetProperties()
 ### Setting Print Dialog Preset Properties using PDF Content Editor
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
 {
     // The path to the documents directory
@@ -552,7 +540,7 @@ private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
 
     using (var ed = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind the PDF file
+        // Bind PDF document
         ed.BindPdf(inputFile);
 
         // Check if the file has duplex flip short edge
@@ -564,7 +552,7 @@ private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
         // Change the viewer preference to duplex flip short edge
         ed.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.DuplexFlipShortEdge);
 
-        // Save the updated PDF file
+        // Save PDF document
         ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
     }
 }

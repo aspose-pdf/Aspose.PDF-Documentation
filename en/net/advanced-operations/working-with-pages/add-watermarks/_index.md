@@ -113,11 +113,13 @@ Please note that watermarks created with Adobe Acrobat have the type Pagination 
 The following code snippet shows how to get each watermark on the first page of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddWatermarks()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-    // Open the document
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddWatermarksInput.pdf"))
     {
         // Create a new watermark artifact
@@ -138,7 +140,7 @@ private static void AddWatermarks()
         artifact.IsBackground = true;
         // Add watermark artifact to the first page
         document.Pages[1].Artifacts.Add(artifact);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "AddWatermarks_out.pdf");
     }
 }

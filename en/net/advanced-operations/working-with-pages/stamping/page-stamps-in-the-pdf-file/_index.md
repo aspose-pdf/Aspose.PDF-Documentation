@@ -83,29 +83,25 @@ A [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) c
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddPageStamp()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var inputFileName = "AddPageStampInput.pdf";
-    var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "AddPageStamp.pdf";
-
-    //Open document
-    using (var document = new Aspose.Pdf.Document(dataDir + inputFileName))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))
     {
         //Create PdfPageStamps
-        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + pageStampFileName, 1)
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + "AddPageStamp.pdf", 1)
         {
             Height = 800,
             Background = true
         };
         // Add stamps
         document.Pages[1].AddStamp(bluePageStamp);
-        // Save updated document
-        document.Save(dataDir + outputFileName);
+        // Save PDF document
+        document.Save(dataDir + "AddPageStamp_out.pdf");
     }
 }
 ```

@@ -131,7 +131,7 @@ private static void ImportAnnotationFromXfdf()
     // Create PdfAnnotationEditor object
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
 	{
-		// Create a new document
+		// Create PDF document
 		using (var document = new Aspose.Pdf.Document())
 		{
 			document.Pages.Add();
@@ -145,7 +145,7 @@ private static void ImportAnnotationFromXfdf()
 			// Import annotations from the XFDF file
 			annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
 
-			// Save the output PDF
+			// Save PDF document
 			document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
 		}
 	}
@@ -164,10 +164,10 @@ private static void ImportAnnotationFromPDF()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open existing PDF document (one page with annotations)
+    // Open PDF document
     using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
 	{
-		// Create a new document
+		// Create PDF document
 		using (var documentTo = new Aspose.Pdf.Document())
 		{
 			documentTo.Pages.Add();
@@ -179,7 +179,7 @@ private static void ImportAnnotationFromPDF()
 				documentTo.ImportAnnotationsFromXfdf(ms);
 			}
 
-			// Save the output PDF
+			// Save PDF document
 			documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
 		}
 	}

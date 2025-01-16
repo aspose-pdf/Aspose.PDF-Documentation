@@ -97,20 +97,19 @@ If we create a document from scratch we need to follow certain steps:
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void CreatingAComplexPdf()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreatingComplexPdf()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
         var page = document.Pages.Add();
 
         // Add image
-        var imageFileName = dataDir + "logo.png";
-        page.AddImage(imageFileName, new Aspose.Pdf.Rectangle(20, 730, 120, 830));
+        page.AddImage(dataDir + "logo.png", new Aspose.Pdf.Rectangle(20, 730, 120, 830));
 
         // Add Header
         var header = new Aspose.Pdf.Text.TextFragment("New ferry routes in Fall 2020");
@@ -165,7 +164,7 @@ private static void CreatingAComplexPdf()
         }
 
         page.Paragraphs.Add(table);
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Complex_out.pdf");
     }
 }

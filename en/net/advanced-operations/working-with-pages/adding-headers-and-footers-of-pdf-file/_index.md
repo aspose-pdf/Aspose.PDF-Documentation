@@ -92,12 +92,13 @@ You need to set the TopMargin property in such a way that it adjusts the text in
 The following code snippet shows you how to add text in the header of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddHeaderText()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextinHeader.pdf"))
     {
         // Create header as a TextStamp
@@ -114,7 +115,7 @@ private static void AddHeaderText()
             page.AddStamp(textStamp);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "TextinHeader_out.pdf");
     }
 }
@@ -133,12 +134,13 @@ You need to set the Bottom Margin property in such a way that it adjusts the tex
 The following code snippet shows you how to add text in the footer of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFooterText()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextinFooter.pdf"))
     {
         // Create footer as a TextStamp
@@ -155,7 +157,7 @@ private static void AddFooterText()
             page.AddStamp(textStamp);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "TextinFooter_out.pdf");
     }
 }
@@ -174,12 +176,13 @@ You need to set the TopMargin property in such a way that it adjusts the image i
 The following code snippet shows you how to add image in the header of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageHeader()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageinHeader.pdf"))
     {
         // Create header as an ImageStamp
@@ -196,7 +199,7 @@ private static void AddImageHeader()
             page.AddStamp(imageStamp);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "ImageinHeader_out.pdf");
     }
 }
@@ -215,12 +218,13 @@ You need to set the [BottomMargin](https://reference.aspose.com/pdf/net/aspose.p
 The following code snippet shows you how to add image in the footer of a PDF file with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddImageFooter()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImageInFooter.pdf"))
     {
         // Create footer as an ImageStamp
@@ -237,7 +241,7 @@ private static void AddImageFooter()
             page.AddStamp(imageStamp);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "ImageInFooter_out.pdf");
     }
 }
@@ -250,12 +254,13 @@ We know that we can add TextStamp in Header/Footer section of the document by us
 In order to accomplish this requirement, we will create individual TextStamp objects (number of objects depends upon the number of Header/Footers required)and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created Document object and three TextStamp objects and then we have used [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file with Aspose.PDF for .NET.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddDifferentHeaders()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();  // Dynamic path for data directory
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddingDifferentHeaders.pdf"))
     {
         // Create three stamps
@@ -287,7 +292,7 @@ private static void AddDifferentHeaders()
         document.Pages[2].AddStamp(stamp2);
         document.Pages[3].AddStamp(stamp3);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "MultiHeader_out.pdf");
     }
 }

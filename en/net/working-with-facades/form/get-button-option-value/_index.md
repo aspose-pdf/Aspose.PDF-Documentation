@@ -78,7 +78,6 @@ draft: false
 The radion buttons provide a way to show different options. The [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) class allows you to get all the button option values for a particular radio button. You can get these values using [GetButtonOptionValues](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/getbuttonoptionvalues) method. This method requires the name of the radio button as input parameter and returns a Hashtable. You can iterate through this Hashtable to get the option values. The following code snippet shows you how to get button option values from existing PDF file.
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void GetButtonOptions()
 {    
     // The path to the documents directory
@@ -86,6 +85,7 @@ private static void GetButtonOptions()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "FormField.pdf");
 
         // Get button option values
@@ -107,7 +107,6 @@ Radio buttons provide a way to set option values, however one of them can be sel
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-
 private static void GetCurremtButtonOptionValue()
 {    
     // The path to the documents directory
@@ -115,6 +114,7 @@ private static void GetCurremtButtonOptionValue()
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
+        // Bind PDF document
         pdfForm.BindPdf(dataDir + "FormField.pdf");
 
         // Get button option values

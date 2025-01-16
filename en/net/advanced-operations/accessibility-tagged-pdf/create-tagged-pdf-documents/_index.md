@@ -92,7 +92,10 @@ In order to create structure elements in a Tagged PDF Document, Aspose.PDF offer
 
 private static void CreateTaggedPdfDocument01()
 {
-    // Create PDF Document
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get Content for work with TaggedPdf
@@ -120,8 +123,8 @@ private static void CreateTaggedPdfDocument01()
         rootElement.AppendChild(mainHeader);
         rootElement.AppendChild(paragraphElement);
 
-        // Save Tagged Pdf Document
-        document.Save("TaggedPdfDocument_out.pdf");
+        // Save Tagged PDF document
+        document.Save(dataDir + "TaggedPdfDocument_out.pdf");
     }
 }
 ```
@@ -133,6 +136,9 @@ private static void CreateTaggedPdfDocument01()
 
 private static void CreateTaggedPdfDocument01()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
@@ -161,8 +167,8 @@ private static void CreateTaggedPdfDocument01()
     rootElement.AppendChild(mainHeader);
     rootElement.AppendChild(paragraphElement);
 
-    // Save Tagged Pdf Document
-    document.Save("TaggedPdfDocument_out.pdf");
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TaggedPdfDocument_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -185,7 +191,10 @@ Following code snippet shows how to create structure elements tree of Tagged PDF
 
 private static void CreateTaggedPdfDocument02()
 {
-    // Create Pdf Document
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get Content for work with TaggedPdf
@@ -219,8 +228,8 @@ private static void CreateTaggedPdfDocument02()
         rootElement.AppendChild(header1);
         rootElement.AppendChild(paragraphWithQuotes);
 
-        // Save Tagged Pdf Document
-        document.Save("TaggedPdfDocument_out.pdf");
+        // Save Tagged PDF Document
+        document.Save(dataDir + "TaggedPdfDocument_out.pdf");
     }
 }
 ```
@@ -232,7 +241,10 @@ private static void CreateTaggedPdfDocument02()
 
 private static void CreateTaggedPdfDocument02()
 {
-    // Create Pdf Document
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
     // Get Content for work with TaggedPdf
@@ -266,8 +278,8 @@ private static void CreateTaggedPdfDocument02()
     rootElement.AppendChild(header1);
     rootElement.AppendChild(paragraphWithQuotes);
 
-    // Save Tagged Pdf Document
-    document.Save("TaggedPdfDocument_out.pdf");
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TaggedPdfDocument_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -290,7 +302,7 @@ private static void AddStyle()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get Content for work with TaggedPdf
@@ -310,7 +322,7 @@ private static void AddStyle()
         p.SetText("Red italic text.");
 
         // Save Tagged Pdf Document
-        document.Save(dataDir + "StyleTextStructure.pdf");
+        document.Save(dataDir + "StyleTextStructure_out.pdf");
     }
 }
 ```
@@ -325,7 +337,7 @@ private static void AddStyle()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
     // Get Content for work with TaggedPdf
@@ -345,7 +357,7 @@ private static void AddStyle()
     p.SetText("Red italic text.");
 
     // Save Tagged Pdf Document
-    document.Save(dataDir + "StyleTextStructure.pdf");
+    document.Save(dataDir + "StyleTextStructure_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -365,7 +377,7 @@ private static void IllustrateStructureElements()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get Content for work with TaggedPdf
@@ -383,7 +395,7 @@ private static void IllustrateStructureElements()
         figure1.SetImage(dataDir + "image.png");
 
         // Save Tagged Pdf Document
-        document.Save(dataDir + "IllustrationStructureElements.pdf");
+        document.Save(dataDir + "IllustrationStructureElements_out.pdf");
     }
 }
 ```
@@ -398,7 +410,7 @@ private static void IllustrateStructureElements()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using var document = new Aspose.Pdf.Document();
 
     // Get Content for work with TaggedPdf
@@ -416,7 +428,7 @@ private static void IllustrateStructureElements()
     figure1.SetImage(dataDir + "image.png");
 
     // Save Tagged Pdf Document
-    document.Save(dataDir + "IllustrationStructureElements.pdf");
+    document.Save(dataDir + "IllustrationStructureElements_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -448,13 +460,10 @@ private static void ValidateTaggedPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    string inputFileName = dataDir + "StructureElements.pdf";
-    string outputLogName = dataDir + "ua-20.xml";
-
-    // Open document
-    using (var document = new Aspose.Pdf.Document(inputFileName))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StructureElements.pdf"))
     {
-        bool isValid = document.Validate(outputLogName, Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isValid = document.Validate(dataDir + "StructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     }
 }
 ```
@@ -469,13 +478,10 @@ private static void ValidateTaggedPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    string inputFileName = dataDir + "StructureElements.pdf";
-    string outputLogName = dataDir + "ua-20.xml";
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "StructureElements.pdf");
 
-    // Open document
-    using var document = new Aspose.Pdf.Document(inputFileName);
-
-    bool isValid = document.Validate(outputLogName, Aspose.Pdf.PdfFormat.PDF_UA_1);
+    bool isValid = document.Validate(dataDir + "StructureElements_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
 }
 ```
 {{< /tab >}}

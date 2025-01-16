@@ -94,14 +94,13 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows you how to validate PDF document for PDF/A-1A.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ValidateToPdfA1aStandard()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
 	{
 		// Validate PDF for PDF/A-1a
@@ -113,14 +112,13 @@ private static void ValidateToPdfA1aStandard()
 The following code snippet shows you how to validate PDF document for PDF/A-1b.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ValidateToPdfA1bStandard()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
 	{
 		// Validate PDF for PDF/A-1b
@@ -144,14 +142,13 @@ Aspose.PDF API allows you to add a table of content either when creating a PDF, 
 To add a TOC to an existing PDF file, use the Heading class in the Aspose.PDF namespace. The Aspose.Pdf namespace can both create new and manipulate existing PDF files. To add a TOC to an existing PDF, use the Aspose.PDF namespace. The following code snippet shows how to create a table of contents inside an existing PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTOCToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
 	{
 		// Get access to the first page of PDF file
@@ -191,7 +188,7 @@ private static void AddTOCToPdf()
 			tocPage.Paragraphs.Add(heading);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "TOC_out.pdf");
 	}
 }
@@ -203,10 +200,12 @@ Aspose.PDF also allows setting different TabLeaderType for different TOC levels.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateTocWithCustomFormatting()
 {
-    // Create a new document
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a TOC page
@@ -272,7 +271,7 @@ private static void CreateTocWithCustomFormatting()
 			page.Paragraphs.Add(heading);
 		}
 
-		// Save the Pdf
+		// Save PDF document
 		document.Save(dataDir + "TOC_out.pdf");
 	}
 }
@@ -283,17 +282,13 @@ private static void CreateTocWithCustomFormatting()
 In case if you do not want to display page numbers, along with the headings in TOC, you can use [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) property of [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) Class as false. Please check following code snippet to hide page numbers in the table of contents:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateTocWithHiddenPageNumbers()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Output file name
-    string outFile = dataDir + "HiddenPageNumbers_out.pdf";
-
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		// Add a TOC page
@@ -349,7 +344,7 @@ private static void CreateTocWithHiddenPageNumbers()
 			page.Paragraphs.Add(heading);
 		}
 
-		// Save the Pdf
+		// Save PDF document
 		document.Save(dataDir + "TOC_out.pdf");
 	}
 }
@@ -360,14 +355,13 @@ private static void CreateTocWithHiddenPageNumbers()
 It is common to customize the page numbering in the TOC while adding TOC in a PDF document. For example, we may need to add some prefix before page number like P1, P2, P3 and so on. In such a case, Aspose.PDF for .NET provides PageNumbersPrefix property of TocInfo class that can be used to customize page numbers as shown in the following code sample.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CustomizePageNumbersAddingToC()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load an existing PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CustomizePageNumbersAddingToC.pdf"))
     {
         // Get access to first page of PDF file
@@ -406,7 +400,7 @@ private static void CustomizePageNumbersAddingToC()
             tocPage.Paragraphs.Add(heading2);
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "CustomizePageNumbersAddingToC_out.pdf");
     }
 }
@@ -419,14 +413,13 @@ We apply access privileges on PDF files so that a certain group of users can acc
 In order to accomplish the above stated requirement, we can use *JavascriptAction* object. Please take a look over the following code snippet.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetExpiryDate()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -467,21 +460,20 @@ The field [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.
 The code snippets below shows how to use CustomerProgressHandler.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DetermineProgress()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
     {
         // Create DocSaveOptions instance and set custom progress handler
         var saveOptions = new Aspose.Pdf.DocSaveOptions();
         saveOptions.CustomProgressHandler = new Aspose.Pdf.UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
 
-        // Save PDF Document with progress tracking
+        // Save PDF Document
         document.Save(dataDir + "DetermineProgress_out.pdf", saveOptions);
     }
 }
@@ -515,14 +507,13 @@ PDF documents often include forms with interactive fillable widgets such as radi
 Aspose.PDF provides the function to flatten your PDF in C# with just few line of code:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FlattenForms()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load source PDF form
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Flatten Fillable PDF
@@ -534,7 +525,7 @@ private static void FlattenForms()
             }
         }
 
-        // Save the updated document
+        // Save PDF document
         document.Save(dataDir + "FlattenForms_out.pdf");
     }
 }

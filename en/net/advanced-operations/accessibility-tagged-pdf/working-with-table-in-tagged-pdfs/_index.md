@@ -95,7 +95,7 @@ private static void CreateTable()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -209,13 +209,13 @@ private static void CreateTable()
         tableAttributes.SetAttribute(summaryAttribute);
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "CreateTableElement.pdf");
+        document.Save(dataDir + "CreateTableElement_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(dataDir + "CreateTableElement.pdf"))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateTableElement_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(dataDir + "table.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "CreateTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -231,7 +231,7 @@ private static void CreateTable()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -344,11 +344,11 @@ private static void CreateTable()
     tableAttributes.SetAttribute(summaryAttribute);
 
     // Save Tagged PDF Document
-    document1.Save(dataDir + "CreateTableElement.pdf");
+    document1.Save(dataDir + "CreateTableElement_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(dataDir + "CreateTableElement.pdf");
-    bool isPdfUaCompliance = document2.Validate(dataDir + "table.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "CreateTableElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "CreateTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```
@@ -387,7 +387,7 @@ private static void StyleTable()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -465,13 +465,13 @@ private static void StyleTable()
         }
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "StyleTableElement.pdf");
+        document.Save(dataDir + "StyleTableElement_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableElement.pdf"))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableElement_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableElement.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -487,7 +487,7 @@ private static void StyleTable()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -564,11 +564,11 @@ private static void StyleTable()
     }
 
     // Save Tagged PDF Document
-    document1.Save(dataDir + "StyleTableElement.pdf");
+    document1.Save(dataDir + "StyleTableElement_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableElement.pdf");
-    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableElement.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableElement_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableElement_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```
@@ -602,7 +602,7 @@ private static void StyleTableRow()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -672,13 +672,13 @@ private static void StyleTableRow()
         }
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "StyleTableRow.pdf");
+        document.Save(dataDir + "StyleTableRow_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableRow.pdf"))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableRow_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableRow.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableRow_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -694,7 +694,7 @@ private static void StyleTableRow()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -763,11 +763,11 @@ private static void StyleTableRow()
     }
 
     // Save Tagged PDF Document
-    document1.Save(dataDir + "StyleTableRow.pdf");
+    document1.Save(dataDir + "StyleTableRow_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableRow.pdf");
-    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableRow.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableRow_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableRow_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```
@@ -801,7 +801,7 @@ private static void StyleTableCell()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
@@ -901,13 +901,13 @@ private static void StyleTableCell()
         }
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "StyleTableCell.pdf");
+        document.Save(dataDir + "StyleTableCell_out.pdf");
     }
 
-    // Checking PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableCell.pdf"))
+    // Check PDF/UA compliance
+    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableCell_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableCell.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableCell_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -923,7 +923,7 @@ private static void StyleTableCell()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create document
+    // Create PDF document
     using var document1 = new Aspose.Pdf.Document();
     Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
 
@@ -1022,11 +1022,11 @@ private static void StyleTableCell()
     }
 
     // Save Tagged PDF Document
-    document1.Save(dataDir + "StyleTableCell.pdf");
+    document1.Save(dataDir + "StyleTableCell_out.pdf");
 
-    // Checking PDF/UA compliance
-    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableCell.pdf");
-    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableCell.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    // Check PDF/UA compliance
+    using var document2 = new Aspose.Pdf.Document(dataDir + "StyleTableCell_out.pdf");
+    bool isPdfUaCompliance = document2.Validate(dataDir + "StyleTableCell_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
     Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
 }
 ```

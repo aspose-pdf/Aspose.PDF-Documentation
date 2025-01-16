@@ -85,7 +85,6 @@ Please refer to the following code chunk to add multi-line watermark in existing
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddTextStampToPdf()
 {
     // Instantiate a stamp object

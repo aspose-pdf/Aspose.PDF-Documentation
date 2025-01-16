@@ -85,13 +85,13 @@ By using the Rotation property of [TextFragment](https://reference.aspose.com/pd
 ## Implement Rotation using TextFragment and TextBuilder
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -122,8 +122,8 @@ private static void RotateTextInsidePDF()
         textBuilder.AppendText(textFragment1);
         textBuilder.AppendText(textFragment2);
         textBuilder.AppendText(textFragment3);
-        // Save the document
-        document.Save(dataDir + "TextFragmentTests_Rotated1_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```
@@ -131,13 +131,13 @@ private static void RotateTextInsidePDF()
 ## Implement Rotation using TextParagraph and TextBuilder (Rotated Fragments)
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -171,8 +171,8 @@ private static void RotateTextInsidePDF()
         var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
         // Append the text paragraph to the PDF page
         textBuilder.AppendParagraph(paragraph);
-        // Save the document
-        document.Save(dataDir + "TextFragmentTests_Rotated2_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```
@@ -180,13 +180,13 @@ private static void RotateTextInsidePDF()
 ## Implement Rotation using TextFragment and Page.Paragraphs
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -213,8 +213,8 @@ private static void RotateTextInsidePDF()
         page.Paragraphs.Add(textFragment1);
         page.Paragraphs.Add(textFragment2);
         page.Paragraphs.Add(textFragment3);
-        // Save the document
-        document.Save(dataDir + "TextFragmentTests_Rotated3_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```
@@ -222,13 +222,13 @@ private static void RotateTextInsidePDF()
 ## Implement Rotation using TextParagraph and TextBuilder (Whole Paragraph Rotated)
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RotateTextInsidePDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get particular page
@@ -269,8 +269,8 @@ private static void RotateTextInsidePDF()
             // Append the text fragment to the PDF page
             textBuilder.AppendParagraph(paragraph);
         }
-        // Save the document
-        document.Save(dataDir + "TextFragmentTests_Rotated4_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RotateTextInsidePDF_out.pdf");
     }
 }
 ```

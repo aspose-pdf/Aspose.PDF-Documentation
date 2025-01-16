@@ -103,14 +103,12 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-// The path to the documents directory.
 private static void AddTextMarkupAnnotations()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
 	{
 		// Create a TextFragmentAbsorber to find the text "PDF"
@@ -148,7 +146,7 @@ private static void AddTextMarkupAnnotations()
 		document.Pages[1].Annotations.Add(strikeOutAnnotation);
 		document.Pages[1].Annotations.Add(underlineAnnotation);
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "AddTextMarkupAnnotations_out.pdf");
 	}
 }
@@ -158,12 +156,12 @@ If you want to highlight a multi-line fragment you should use advanced example:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-/// <summary>
-/// Advanced example for you want to highlight a multi-line fragment
-/// </summary>
-public static void AddHighlightAnnotationAdvanced()
+private static void AddHighlightAnnotationAdvanced()
 {
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var page = document.Pages[1];
@@ -174,6 +172,8 @@ public static void AddHighlightAnnotationAdvanced()
 			var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
 			page.Annotations.Add(highlightAnnotation);
 		}
+
+        // Save PDF document
 		document.Save(dataDir + "AddHighlightAnnotationAdvanced_out.pdf");
 	}
 }
@@ -222,12 +222,9 @@ private static HighlightAnnotation HighLightTextFragment(Page page,
     };
 }
 
-/// <summary>
-/// How to get a Highlighted Text
-/// </summary>
-public static void GetHighlightedText()
+private static void GetHighlightedText()
 {
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var highlightAnnotations = document.Pages[1].Annotations
@@ -247,10 +244,9 @@ Please try using the following code snippet to Get Text Markup Annotation from P
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void GetTextMarkupAnnotation()
+private static void GetTextMarkupAnnotation()
 {
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var textMarkupAnnotations = document.Pages[1].Annotations
@@ -271,10 +267,9 @@ The following code snippet shows how to Delete Text Markup Annotation from PDF f
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void DeleteTextMarkupAnnotation()
+private static void DeleteTextMarkupAnnotation()
 {
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
 	{
 		var textMarkupAnnotations = document.Pages[1].Annotations
@@ -285,6 +280,8 @@ public static void DeleteTextMarkupAnnotation()
 		{
 			document.Pages[1].Annotations.Delete(ta);
 		}
+        
+        // Save PDF document
 		document.Save(dataDir + "DeleteTextMarkupAnnotation_out.pdf");
 	}
 }

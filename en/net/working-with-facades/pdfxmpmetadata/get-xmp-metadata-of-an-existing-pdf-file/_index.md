@@ -79,8 +79,7 @@ In order to get XMP metadata from a PDF file, you need to create [PdfXmpMetadata
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void GetXmpMetadata()
+private static void GetXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
@@ -88,7 +87,7 @@ public static void GetXmpMetadata()
     // Create PdfXmpMetadata object
     using (var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata())
     {
-        // Bind pdf file to the object
+        // Bind PDF document
         xmpMetaData.BindPdf(dataDir + "GetXMPMetadata.pdf");
 
         // Get XMP Meta Data properties
@@ -106,8 +105,7 @@ public static void GetXmpMetadata()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void GetXmpMetadata()
+private static void GetXmpMetadata()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_WorkingDocuments();
@@ -115,7 +113,7 @@ public static void GetXmpMetadata()
     // Create PdfXmpMetadata object
     using var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
 
-    // Bind pdf file to the object
+    // Bind PDF document
     xmpMetaData.BindPdf(dataDir + "GetXMPMetadata.pdf");
 
     // Get XMP Meta Data properties

@@ -83,21 +83,22 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 It is often required to add some details for a phrase or specific word as a tooltip in the PDF document so that it can popup when the user hovers the mouse cursor over the text. Aspose.PDF for .NET provides this feature to create tooltips by adding an invisible button over the searched text. The following code snippet will show you the way to achieve this functionality:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTooltipToSearchedText()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
         document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
-    // Open the document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -137,7 +138,7 @@ private static void AddTooltipToSearchedText()
             document.Form.Add(field);
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "Tooltip_out.pdf");
     }
 }
@@ -163,22 +164,22 @@ Please also take into account that PDF actions in the documents work fine in the
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateHiddenTextBlock()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add paragraph with text
         document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
     }
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
     {
         // Create TextAbsorber object to find all the phrases matching the regular expression
@@ -223,8 +224,8 @@ private static void CreateHiddenTextBlock()
         // Add button field to the document
         document.Form.Add(buttonField);
 
-        // Save the document
-        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "CreateHiddenTextBlock_out.pdf");
     }
 }
 ```

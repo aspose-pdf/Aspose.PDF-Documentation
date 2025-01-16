@@ -87,12 +87,13 @@ To get the number of pages in a PDF file:
 The following code snippet shows how to get the number of pages of a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetNumberOfPagesInAPdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetNumberofPages.pdf"))
     {
         // Get page count
@@ -106,10 +107,10 @@ private static void GetNumberOfPagesInAPdfFile()
 Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [ProcessParagraphs](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/processparagraphs) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetPageCountWithoutSavingTheDocument()
 {
-    // Open document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page to pages collection of PDF file
@@ -151,12 +152,13 @@ The [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) class provides 
 From there, it is possible to access either individual Page objects using their index, or loop through the collection, using a foreach loop, to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AccessingPageProperties()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetProperties.pdf"))
     {
         // Get page collection
@@ -196,12 +198,13 @@ The [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) object'
 The following code snippet shows how to get a particular page from a PDF file and save it as a new file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetAParticularPageOfThePdfFile()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Get particular page
@@ -210,7 +213,7 @@ private static void GetAParticularPageOfThePdfFile()
         using (var newDocument = new Aspose.Pdf.Document())
         {
             newDocument.Pages.Add(pdfPage);
-            // Save document
+            // Save PDF document
             newDocument.Save(dataDir + "GetParticularPage_out.pdf");
         }
     }
@@ -226,12 +229,13 @@ All the pages of the PDF files are contained by the [PageCollection](https://ref
 The following code snippet shows how to iterate through individual page of PDF file to get color information.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DeterminePageColor()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-    // Open document
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Iterate through all the page of PDF file

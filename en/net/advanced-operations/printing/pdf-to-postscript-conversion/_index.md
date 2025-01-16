@@ -96,7 +96,7 @@ private static void PrintToPostscriptFile()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open document
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set PrinterSettings and PageSettings
@@ -132,7 +132,7 @@ private static void PrintToPostscriptFile()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open document
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set PrinterSettings and PageSettings
@@ -385,7 +385,7 @@ private static void PrintWithImpersonation()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open document
+        // Open PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Do not produce the page number dialog when printing
@@ -420,7 +420,7 @@ private static void PrintWithImpersonation()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open document
+    // Open PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Do not produce the page number dialog when printing
@@ -496,7 +496,7 @@ private static void PrintUsingSpoolerApi()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Open PDF document
         viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
@@ -567,14 +567,13 @@ private static void PrintUsingSpoolerApi()
     string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
-    string outputDir = dataDir;
     var printingJobs = new List<PrintingJobSettings>();
 
     // Create multiple printing jobs to print different page ranges with different duplex settings
     var printingJob1 = new PrintingJobSettings();
     printingJob1.FromPage = 1;
     printingJob1.ToPage = 3;
-    printingJob1.OutputFile = outputDir + "PrintUsingSpoolerApi_p1-3_out.xps";
+    printingJob1.OutputFile = dataDir + "PrintUsingSpoolerApi_p1-3_out.xps";
     printingJob1.Mode = Aspose.Pdf.Printing.Duplex.Default;
 
     printingJobs.Add(printingJob1);
@@ -582,7 +581,7 @@ private static void PrintUsingSpoolerApi()
     PrintingJobSettings printingJob2 = new PrintingJobSettings();
     printingJob2.FromPage = 4;
     printingJob2.ToPage = 6;
-    printingJob2.OutputFile = outputDir + "PrintUsingSpoolerApi_p4-6_out.xps";
+    printingJob2.OutputFile = dataDir + "PrintUsingSpoolerApi_p4-6_out.xps";
     printingJob2.Mode = Aspose.Pdf.Printing.Duplex.Simplex;
 
     printingJobs.Add(printingJob2);
@@ -590,7 +589,7 @@ private static void PrintUsingSpoolerApi()
     PrintingJobSettings printingJob3 = new PrintingJobSettings();
     printingJob3.FromPage = 7;
     printingJob3.ToPage = 7;
-    printingJob3.OutputFile = outputDir + "PrintUsingSpoolerApi_p7_out.xps";
+    printingJob3.OutputFile = dataDir + "PrintUsingSpoolerApi_p7_out.xps";
     printingJob3.Mode = Aspose.Pdf.Printing.Duplex.Default;
 
     printingJobs.Add(printingJob3);
@@ -598,7 +597,7 @@ private static void PrintUsingSpoolerApi()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Open PDF document
     viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing

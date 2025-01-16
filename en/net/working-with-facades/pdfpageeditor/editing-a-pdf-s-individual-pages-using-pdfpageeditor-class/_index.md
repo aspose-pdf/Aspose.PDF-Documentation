@@ -105,13 +105,13 @@ You can find samples of the above mentioned methods in the code snippet given be
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void EditPdfPages()
 {
-    // The path to the documents directory.
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create a new instance of PdfPageEditor class
     using (var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
-        // Bind an existing pdf file
+        // Bind PDF document
         pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
 
         // Specify an array of pages which need to be manipulated (pages can be multiple, here we have specified only one page)
@@ -153,7 +153,7 @@ private static void EditPdfPages()
         // This method changes the origin from (0,0) to specified number
         pdfPageEditor.MovePosition(100, 100);
 
-        // Finally save the output file
+        // Save PDF document
         pdfPageEditor.Save(dataDir + "EditPdfPages_out.pdf");
     }
 }

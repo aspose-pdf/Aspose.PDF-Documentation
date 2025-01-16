@@ -106,7 +106,7 @@ private static void ApplyNumberStyleToPdf()
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
 	{
 		document.PageInfo.Width = 612.0;
@@ -159,7 +159,7 @@ private static void ApplyNumberStyleToPdf()
 		heading3.IsAutoSequence = true;
 		floatBox.Paragraphs.Add(heading3);
 
-		// Save the document with the applied number style
+		// Save PDF document
 		document.Save(dataDir + "ApplyNumberStyle_out.pdf");
 	}
 }

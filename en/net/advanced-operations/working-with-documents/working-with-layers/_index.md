@@ -99,7 +99,7 @@ private static void LockLayerInPDF()
 	// The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Get the first page and the first layer
@@ -109,7 +109,7 @@ private static void LockLayerInPDF()
         // Lock the layer
         layer.Lock();
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "LockLayerInPDF_out.pdf");
     }
 }
@@ -129,7 +129,7 @@ private static void SaveLayersFromPdf(string inputPath, string outputPath)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Get layers from the first page
@@ -156,7 +156,7 @@ private static void SaveLayersToOutputStream(string inputPath, Stream outputStre
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 	
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Get layers from the first page
@@ -183,7 +183,7 @@ private static void FlattenLayersInPdf(string input)
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf")
 	{
 		// Get the first page
@@ -219,7 +219,7 @@ private static void MergeLayersInPdf(string input, string output, string newLaye
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
 	{
 		// Get the first page
@@ -235,7 +235,7 @@ private static void MergeLayersInPdf(string input, string output, string newLaye
 			page.MergeLayers(newLayerName);
 		}
 
-		// Save the updated document
+		// Save PDF document
 		document.Save(dataDir + "MergeLayersInPdf_out.pdf");
 	}
 }

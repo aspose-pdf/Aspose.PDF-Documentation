@@ -85,13 +85,13 @@ We can get text from a PDF document by searching a particular text (using "plain
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractParagraphWithDrawingTheBorder()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
         var page = document.Pages[2];
@@ -110,7 +110,7 @@ private static void ExtractParagraphWithDrawingTheBorder()
             }
         }
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "DocumentWithBorder_out.pdf");
     }
 }
@@ -152,13 +152,13 @@ private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Pag
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractParagraphByIteratingThroughParagraphsCollection()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
         // Instantiate ParagraphAbsorber
