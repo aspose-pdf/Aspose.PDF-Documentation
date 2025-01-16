@@ -125,6 +125,10 @@ If honestly, externally, it is very difficult to determine if it is PDF or PDF/A
 - [Convert PDF to PDF/A formats](/pdf/net/convert-pdf-to-pdfa/) - .NET library by Aspose.PDF has an easy way for converting PDF to PDF/A
 - [Convert PDF/A to PDF format](/pdf/net/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with C# easy, fast, and high quality
 
+PDF/X is a subset of the PDF standard that facilitates graphics exchange and has a series of printing-related requirements which do not apply to standard PDF files.
+
+- [Convert PDF to PDF/X exchange format](/pdf/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET enables conversion to various PDF/X standard versions
+
 ## Try to convert PDF files online
 
 {{% alert color="success" %}}

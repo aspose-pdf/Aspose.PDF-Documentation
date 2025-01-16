@@ -2,7 +2,7 @@
 title: Convert PDF to PDF/X exchange format
 linktitle: Convert PDF to PDF/X exchange format
 type: docs
-weight: 100
+weight: 120
 url: /net/convert-pdf-to-pdfx/
 lastmod: "2025-01-16"
 description: Learn how to convert a PDF file to PDF/X format for graphics exchange and printing purposes using Aspose.PDF for .NET.
@@ -91,13 +91,12 @@ The following code snippet shows how to convert PDF files to PDF/X-4 compliant P
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfX()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFX.pdf"))
     {
         // Set up the desired PDF/X format with PdfFormatConversionOptions
@@ -112,7 +111,7 @@ private static void ConvertPdfToPdfX()
         // Convert to PDF/X compliant document
         document.Convert(options);
         
-        // Save output document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFX4_out.pdf");
     }
 }
@@ -122,13 +121,12 @@ private static void ConvertPdfToPdfX()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFX.pdf");
 
     // Set up the desired PDF/X format with PdfFormatConversionOptions
@@ -143,7 +141,7 @@ private static void ConvertPdfToPdfA()
     // Convert to PDF/X compliant document
     document.Convert(options);
     
-    // Save output document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFX4_out.pdf");
 }
 ```
