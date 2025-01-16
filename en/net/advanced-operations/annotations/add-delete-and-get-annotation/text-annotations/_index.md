@@ -450,13 +450,60 @@ To strike out a certain TextFragment:
 
 The following code snippet shows how to search for a particular TextFragment and add a StrikeOutAnnotation to that object.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Annotations-StrikeOutWords-StrikeOutWords.cs" >}}
+private void StrikeOutTextInDocument()
+{
+    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 
-{{% alert color="primary" %}}
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-This feature is supported by version 19.6 or greater.
+    // Open document
+    using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
+    {
+        // Create TextFragment Absorber instance to search for a particular text fragment
+        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Estoque");
 
-{{% /alert %}}
+        // Iterate through pages of PDF document
+        foreach (var page in document.Pages)
+        {
+            // Accept the absorber for the current page
+            page.Accept(textFragmentAbsorber);
+        }
+
+        // Get the collection of absorbed text fragments
+        var textFragmentCollection = textFragmentAbsorber.TextFragments;
+
+        // Iterate through the collection of text fragments
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentCollection)
+        {
+            // Get rectangular dimensions of the TextFragment object
+            var rect = new Aspose.Pdf.Rectangle(
+                (float)textFragment.Position.XIndent,
+                (float)textFragment.Position.YIndent,
+                (float)textFragment.Position.XIndent + (float)textFragment.Rectangle.Width,
+                (float)textFragment.Position.YIndent + (float)textFragment.Rectangle.Height);
+
+            // Instantiate StrikeOut Annotation instance
+            var strikeOut = new Aspose.Pdf.Annotations.StrikeOutAnnotation(textFragment.Page, rect)
+            {
+                // Set opacity for annotation
+                Opacity = 0.80f,
+
+                // Set the color of annotation
+                Color = Aspose.Pdf.Color.Red
+            };
+
+            // Set the border for annotation instance
+            strikeOut.Border = new Aspose.Pdf.Annotations.Border(strikeOut);
+
+            // Add annotation to the annotations collection of the TextFragment's page
+            textFragment.Page.Annotations.Add(strikeOut);
+        }
+
+        // Save the modified document
+        document.Save(dataDir + "StrikeOutWords_out.pdf");
+    }
+}
 
 ## Delete All Annotations from Page of PDF File
 
