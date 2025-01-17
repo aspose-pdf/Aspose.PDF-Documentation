@@ -76,7 +76,7 @@ draft: false
 [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) class allows you to control exceptions. To do this, you need to set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/properties/allowexceptions) property to false or true. If you set the operation to false, the result of [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) will return true or false depending on the correctness of the password. 
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ControlExceptionPDFFile()
 {
     // The path to the documents directory
@@ -104,7 +104,7 @@ If you set [AllowExceptions](https://reference.aspose.com/pdf/net/aspose.pdf.fac
 
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ControlExceptionPDFFile2()
 {   
     // The path to the documents directory

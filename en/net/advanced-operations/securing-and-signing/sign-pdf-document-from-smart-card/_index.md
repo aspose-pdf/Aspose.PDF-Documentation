@@ -86,7 +86,7 @@ Following are the code snippets to sign a PDF document from a smart card:
 ## Sign With Smart Card Using Signature Field
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetSignatureInfo()
 {
     // The path to the documents directory
@@ -153,7 +153,7 @@ private static void VerifyExternalSignature()
 ## Sign With Smart Card Using PDF File Signature
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private void SignWithSmartCard()
 {
     // The path to the documents directory
@@ -164,6 +164,7 @@ private void SignWithSmartCard()
     {
         using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
         {   
+            // Bind PDF document
             pdfSign.BindPdf(document);
 
             // Sign with certificate selection in the windows certificate store
@@ -213,7 +214,7 @@ It will be chosen automatically if you do not explicitly specify the hashing alg
 The ExternalSignature constructor also accepts a key certificate (it can be in Base64 format). You can pass a certificate containing a private key and a certificate containing only a public key. In either case, the signature will be performed externally in the CustomSignHash delegate code, but the external algorithm must create a signature corresponding to the key of the passed certificate. The certificate is needed to generate the signed document correctly. ECDSA signature does not support SHA-1.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignWithExternalService()
 {    
     // The path to the documents directory

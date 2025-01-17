@@ -79,7 +79,7 @@ draft: false
 To set a PDF file's privileges, create a [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and call the SetPrivilege method. You can specify the privileges using the DocumentPrivilege object and then pass this object to the SetPrivilege method. The following code snippet shows you how to set the privileges of a PDF file.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPrivilege1()
 {
     // The path to the documents directory
@@ -106,7 +106,7 @@ private static void SetPrivilege1()
 See the following method with specifying a password:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPrivilegeWithPassword()
 {
     // The path to the documents directory
@@ -146,7 +146,7 @@ Starting Aspose.PDF for .NET 9.5.0, names of following methods are updated. Plea
 The following code shows ho to remove usage rights from the document:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemoveExtendedRights()
 {
     // The path to the documents directory
