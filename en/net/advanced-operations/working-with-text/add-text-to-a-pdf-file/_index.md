@@ -136,7 +136,7 @@ private static void LoadingFontFromStream()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    string fontFile = "";
+    var fontFile = dataDir + "HPSimplified.ttf";
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "LoadFonts.pdf"))
@@ -146,7 +146,7 @@ private static void LoadingFontFromStream()
         // Create text fragment with sample string
         var textFragment = new Aspose.Pdf.Text.TextFragment("Hello world");
 
-        if (fontFile != "")
+        if (File.Exists(fontFile))
         {
             // Load the TrueType font into stream object
             using (FileStream fontStream = File.OpenRead(fontFile))
