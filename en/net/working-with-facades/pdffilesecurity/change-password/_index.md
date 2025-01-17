@@ -100,6 +100,7 @@ private static void ChangePassword()
         {
             using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
             {
+                // Bind PDF document
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
                 fileSecurity.ChangePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256);
                 // Save PDF document

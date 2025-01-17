@@ -103,6 +103,7 @@ private static void EncryptPDFFile()
     
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
+        // Bind PDF document
         fileSecurity.BindPdf(dataDir + "input.pdf");
         // Encrypt file using 256-bit encryption
         fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256,

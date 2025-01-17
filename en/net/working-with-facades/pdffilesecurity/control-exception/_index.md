@@ -84,6 +84,7 @@ private static void ControlExceptionPDFFile()
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
+        // Bind PDF document
         fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
         // Disallow exceptions
         fileSecurity.AllowExceptions = false;
@@ -112,6 +113,7 @@ private static void ControlExceptionPDFFile2()
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
+        // Bind PDF document
         fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
         // Allow exceptions
         fileSecurity.AllowExceptions = true;

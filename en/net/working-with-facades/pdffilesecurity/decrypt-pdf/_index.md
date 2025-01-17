@@ -99,6 +99,7 @@ private static void DecryptPDFFile()
         {
             using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
             {
+                // Bind PDF document
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
                 // Decrypt PDF document
                 fileSecurity.DecryptFile("P@ssw0rd");
