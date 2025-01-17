@@ -91,11 +91,10 @@ Following code snippet shows how to get content of a PDF document with Tagged Te
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetTaggedContent()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create Pdf Document
     using (var document = new Aspose.Pdf.Document())
@@ -118,11 +117,10 @@ private static void GetTaggedContent()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetTaggedContent()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
     using var document = new Aspose.Pdf.Document();
@@ -150,7 +148,6 @@ In order to get the root structure of Tagged PDF Document, Aspose.PDF offers [St
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetRootStructure()
 {
     // Create PDF Document
@@ -175,7 +172,6 @@ private static void GetRootStructure()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetRootStructure()
 {
     // Create PDF Document
@@ -205,11 +201,10 @@ In order to access child elements of a Tagged PDF Document, Aspose.PDF offers [E
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AccessChildElements()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF Document
     using (var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf"))
@@ -263,11 +258,10 @@ private static void AccessChildElements()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AccessChildElements()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF Document
     using var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf");
@@ -328,11 +322,10 @@ Following code snippet shows how to tag images in existing PDF document:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void TagImages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document1 = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
@@ -383,11 +376,10 @@ private static void TagImages()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void TagImages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document1 = new Aspose.Pdf.Document(dataDir + "TH.pdf");

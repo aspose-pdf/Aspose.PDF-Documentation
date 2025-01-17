@@ -336,7 +336,7 @@ private static void ConvertPDFusingImageDevice()
 }
 
 private static void ConvertPDFtoImage(ImageDevice imageDevice,
-        string ext, Document document, string dataDir)
+        string ext, Document document, var dataDir)
 {
     for (int pageCount = 1; pageCount <= document.Pages.Count; pageCount++)
     {
@@ -405,7 +405,7 @@ private static void ConvertPDFtoSVG()
             TreatTargetFileNameAsDirectory = true                
         };
 
-        // Save PDF document
+        // Save SVG file
         document.Save(dataDir + "PDFToSVG_out.svg", saveOptions);
     }
 }

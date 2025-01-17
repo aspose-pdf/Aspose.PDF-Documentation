@@ -84,7 +84,7 @@ draft: false
 private static void ImportBookmarksFromXML()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -108,7 +108,7 @@ private static void ImportBookmarksFromXML()
 private static void ImportBookmarksFromXML()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
@@ -145,7 +145,7 @@ The following code snippet shows you how to export bookmarks to an XML file.
 private static void ExportBookmarksToXML()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -166,7 +166,7 @@ private static void ExportBookmarksToXML()
 private static void ExportBookmarksToXML()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Bookmarks();
 
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();

@@ -88,7 +88,7 @@ The FormEditor class SetFieldLimit(field, limit) method allows you to set a fiel
 private static void SetFieldLimit()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create FormEditor instance
     using (var form = new Aspose.Pdf.Facades.FormEditor())
@@ -112,7 +112,7 @@ Similarly, Aspose.PDF has a method that gets the field limit using the DOM appro
 private static void GetFieldLimitUsingDOM()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
@@ -133,7 +133,7 @@ You can also get the same value using the *Aspose.Pdf.Facades* namespace using t
 private static void GetFieldLimitUsingFacades()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create Form instance
     using (var form = new Aspose.Pdf.Facades.Form())
@@ -158,7 +158,7 @@ The following code snippet shows how to set the default font for PDF form fields
 private static void SetFormFieldFont()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
@@ -188,7 +188,7 @@ All the form fields are contained in the Document object's Form collection. This
 private static void DeleteFormField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))

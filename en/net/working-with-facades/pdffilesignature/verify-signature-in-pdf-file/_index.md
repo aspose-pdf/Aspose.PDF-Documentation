@@ -83,21 +83,19 @@ The following code snippet shows you how to verify whether PDF is signed using a
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void IsPdfSigned()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {      
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         if (pdFileSignature.ContainsSignature())
         {
             Console.WriteLine("Document Signed");
         }
-
-        pdFileSignature.Close();
     }
 }
 ```
@@ -108,11 +106,10 @@ To determine if a file is singed, without providing the signature name, use the 
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void IsPdfSignedWithGivenSignature()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
@@ -131,11 +128,10 @@ private static void IsPdfSignedWithGivenSignature()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void IsPdfSignatureValid()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {

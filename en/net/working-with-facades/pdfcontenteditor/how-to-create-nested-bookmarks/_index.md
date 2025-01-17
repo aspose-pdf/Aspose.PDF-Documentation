@@ -86,7 +86,7 @@ Other than the creation of simple bookmarks, sometimes you have a requirement to
 private static void AddBookmarksAction()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
@@ -108,7 +108,7 @@ private static void AddBookmarksAction()
 private static void AddBookmarksAction()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");

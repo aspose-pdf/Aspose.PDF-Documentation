@@ -80,11 +80,10 @@ To set a PDF file's privileges, create a [PdfFileSecurity](https://reference.asp
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrivilege1()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Create DocumentPrivileges object and set needed privileges
     var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
@@ -94,11 +93,12 @@ private static void SetPrivilege1()
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
+        // Bind PDF document
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege
         fileSecurity.SetPrivilege(privilege);
         // Save PDF document
-        fileSecurity.Save(dataDir + "sample_privileges.pdf");
+        fileSecurity.Save(dataDir + "SamplePrivileges_out.pdf");
     }
 }
 ```
@@ -107,11 +107,10 @@ See the following method with specifying a password:
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrivilegeWithPassword()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Create DocumentPrivileges object and set needed privileges
     var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
@@ -121,11 +120,12 @@ private static void SetPrivilegeWithPassword()
 
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
+        // Bind PDF document
         fileSecurity.BindPdf(dataDir + "sample.pdf");
         // Set privilege and passwords
         fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
         // Save PDF document
-        fileSecurity.Save(dataDir + "sample_privileges.pdf");
+        fileSecurity.Save(dataDir + "SamplePrivilegesPassword_out.pdf");
     }
 }
 ```
@@ -147,14 +147,14 @@ The following code shows ho to remove usage rights from the document:
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RemoveExtendedRights()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
     
     using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
         if (pdfSign.ContainsUsageRights())
         {

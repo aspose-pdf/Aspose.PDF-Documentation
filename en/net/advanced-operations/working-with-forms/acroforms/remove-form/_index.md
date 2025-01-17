@@ -83,11 +83,10 @@ The next code snippet creates a new Document object using an input variable that
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ClearTextInForm(string input, string output)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (cument = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
@@ -126,11 +125,10 @@ The Aspose.PDF library provides two ways to remove such forms from PDFs:
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteSpecifiedForm(string input, string output)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 	
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
@@ -157,11 +155,10 @@ Method 2:
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteSpecifiedForm(string input, string output)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
@@ -191,11 +188,10 @@ This code removes all form elements from the first page of a PDF document and th
 
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RemoveAllForms(string input, string output)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))

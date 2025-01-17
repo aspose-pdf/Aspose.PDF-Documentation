@@ -86,7 +86,7 @@ In order to read the settings we use [GetViewerPreference](https://reference.asp
 private static void GetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf"))
@@ -122,7 +122,7 @@ private static void GetViewerPreference()
 private static void GetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf");

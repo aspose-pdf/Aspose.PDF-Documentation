@@ -81,18 +81,15 @@ To extract signature information, we have introduced the ExtractCertificate(..) 
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractSignatureInfo()
 { 
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
-    string input = dataDir + "signed_rsa.pdf";
-    string certificateFileName = "extracted_cert.pfx";
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfFileSignature.BindPdf(input);
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
         // Get list of signature names
         var sigNames = pdfFileSignature.GetSignatureNames();
         if (sigNames.Count > 0)
@@ -104,7 +101,7 @@ private static void ExtractSignatureInfo()
             {
                 using (cerStream)
                 {
-                    using (FileStream fs = new FileStream(dataDir + certificateFileName, FileMode.CreateNew))
+                    using (FileStream fs = new FileStream(dataDir + "extracted_cert.pfx", FileMode.CreateNew))
                     {
                         cerStream.CopyTo(fs);
                     }
@@ -124,14 +121,14 @@ In order to extract signature information, we have introduced the ExtractImage(.
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractSignatureImage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var signature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         signature.BindPdf(dataDir + "ExtractingImage.pdf");
 
         if (signature.ContainsSignature())
@@ -163,14 +160,14 @@ Aspose.PDF functionality allows flexible configuration for digital sign instance
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SupressLocationReason()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
@@ -194,11 +191,10 @@ Aspose.PDF for .NET allows customization features for a digital sign. The Sign m
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CustomizationFeaturesForDigitalSign()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
@@ -238,11 +234,10 @@ Each of provided signatures contains a set of configuration properties implement
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ChangeLanguageInDigitalSignText()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();   
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();   
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {

@@ -96,7 +96,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void CreatePortfolio()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -138,7 +138,7 @@ The following code snippet shows you the steps to extract files from PDF portfol
 private static void ExtractPortfolioFiles()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Open PDF document
     using (var document = new Document(dataDir + "PDFPortfolio.pdf"))
@@ -173,7 +173,7 @@ In order to delete/remove files from PDF portfolio, try using the following code
 private static void RemovePortfolioFiles()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))

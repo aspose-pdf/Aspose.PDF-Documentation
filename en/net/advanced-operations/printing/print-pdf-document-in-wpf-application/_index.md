@@ -88,7 +88,6 @@ Let's consider the example for direct printing:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DirectPrintWpf()
 {
     // Select a PDF document to print
@@ -151,7 +150,6 @@ private static void DirectPrintWpf()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DirectPrintWpf()
 {
     // Select a PDF document to print
@@ -226,7 +224,6 @@ Most of the steps for implementing this approach are similar to the previous exa
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {
     // Select a PDF document to print
@@ -272,7 +269,6 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {
     // Select a PDF document to print

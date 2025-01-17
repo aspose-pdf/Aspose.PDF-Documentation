@@ -93,7 +93,7 @@ These methods can be divided into two main categories, one of which is used to m
 private static void ExploringFormEditorFeatures()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "inFile.pdf"))

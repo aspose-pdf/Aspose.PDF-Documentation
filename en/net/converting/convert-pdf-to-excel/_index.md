@@ -158,6 +158,7 @@ The following code snippet shows the process for converting PDF file into XLS or
  {
      // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
+
      // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
      {
@@ -252,7 +253,6 @@ The following code snippet shows the process for converting PDF file into XLS Ex
      // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
      {
-
          // Instantiate ExcelSaveOptions object
          var saveOptions = new Aspose.Pdf.ExcelSaveOptions
          {
@@ -291,6 +291,7 @@ private static void ConvertPDFToCSV()
         {
             Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.CSV
         };
+        
         // Save the file in CSV format
         document.Save(dataDir + "PDFToXLS_out.csv", saveOptions);
     }

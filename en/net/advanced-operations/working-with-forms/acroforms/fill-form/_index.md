@@ -90,7 +90,7 @@ This example selects a TextBoxField and sets its value using the Value property.
 private static void FillFormField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))

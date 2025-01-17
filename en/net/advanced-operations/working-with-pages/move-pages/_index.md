@@ -99,7 +99,7 @@ The following code snippet shows you how to move one page.
 private static void MovingAPageFromOnePdfDocumentToAnother()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF documents
     using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingPageInput.pdf"))
@@ -112,7 +112,7 @@ private static void MovingAPageFromOnePdfDocumentToAnother()
             dstDocument.Save(dataDir + "MovingPage_out.pdf");
             srcDocument.Pages.Delete(2);
             // Save PDF document
-            srcDocument.Save(dataDir + "MovingPageInput.pdf");
+            srcDocument.Save(dataDir + "MovingPageInput_out.pdf");
         }
     }
 }
@@ -137,7 +137,7 @@ The following code snippet shows you how to move a bunch of pages from one PDF d
 private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF documents
     using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingBunchOfPagesInput.pdf"))
@@ -154,7 +154,7 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
             dstDocument.Save(dataDir + "MovingBunchOfPages_out.pdf");
             srcDocument.Pages.Delete(pages);
             // Save PDF document
-            srcDocument.Save(dataDir + "MovingBunchOfPagesInput.pdf";
+            srcDocument.Save(dataDir + "MovingBunchOfPagesInput_out.pdf";
         }
     }
 }
@@ -173,7 +173,7 @@ private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocumentInput.pdf"))

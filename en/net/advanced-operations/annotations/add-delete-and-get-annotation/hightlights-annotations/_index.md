@@ -106,7 +106,7 @@ In order to add an Text Markup Annotation to the PDF document, we need to perfor
 private static void AddTextMarkupAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
@@ -159,7 +159,7 @@ If you want to highlight a multi-line fragment you should use advanced example:
 private static void AddHighlightAnnotationAdvanced()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))

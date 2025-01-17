@@ -80,7 +80,7 @@ draft: false
 private static void ImportDataFromXml()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -106,7 +106,7 @@ private static void ImportDataFromXml()
 private static void ExportDataToXml()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -132,7 +132,7 @@ private static void ExportDataToXml()
 private static void ImportDataFromPdfIntoPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -161,7 +161,7 @@ private static void ImportDataFromPdfIntoPdf()
 private static void ExportDataToPdfFromPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -190,7 +190,7 @@ private static void ExportDataToPdfFromPdf()
 private static void ImportDataFromXFDIntoPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -219,7 +219,7 @@ private static void ImportDataFromXFDIntoPdf()
 private static void ExportDataToXFDFFromPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var pdfForm = new Aspose.Pdf.Facades.Form())
     {
@@ -248,7 +248,7 @@ Aspose.Pdf.Facades provides an alternative API for working with form fields. Thi
 private static void ExportValuesFromFieldsToJSON()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
     
     using (var form = new Aspose.Pdf.Facades.Form())
     {       
@@ -274,7 +274,7 @@ This code snippet demonstrates how to import values into form fields of a PDF do
 private static void ImportValuesFromJsonToForm()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var form = new Aspose.Pdf.Facades.Form())
     {        

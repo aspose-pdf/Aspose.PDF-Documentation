@@ -74,7 +74,7 @@ sitemap:
     },
     "dateModified": "2024-11-26",
     "description": "This sample demonstrates how to create a simple PDF document with text Hello World using Aspose.PDF",
-    "articleBody": "A \"Hello World\" example is traditionally used to introduce features of a programming language or software with a simple use case.\nAspose.PDF for .NET is a feature rich PDF API that allows the developers to embed PDF document creation, manipulation & conversion capabilities in their .NET applications. It supports working with many popular file formats including PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX and image file formats. In this article, we are creating a PDF document containing text \"Hello World!\". After installing Aspose.PDF for .NET in your environment, you can execute below code sample to see how Aspose.PDF API works.\nBelow code snippet follows these steps:\n1. Instantiate a Document object\n2. Add a Page to document object\n3. Create a TextFragment\n4. Add TextFragment to Paragraph collection of the page\n5. Save resultant PDF document\nFollowing code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API."
+    "articleBody": "A \"Hello World\" example is traditionally used to introduce features of a programming language or software with a simple use case.\nAspose.PDF for .NET is a feature rich PDF API that allows the developers to embed PDF document creation, manipulation & conversion capabilities in their .NET applications. It supports working with many popular file formats including PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX and image file formats. In this article, we are creating a PDF document containing text \"Hello World!\". After installing Aspose.PDF for .NET in your environment, you can execute below code sample to see how Aspose.PDF API works.\nBelow code snippet follows these steps:\n1. // Create PDF document\n2. Add a Page to document object\n3. Create a TextFragment\n4. Add TextFragment to Paragraph collection of the page\n5. Save resultant PDF document\nFollowing code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API."
 }
 </script>
 
@@ -99,13 +99,13 @@ Following code snippet is a Hello World program to exhibit working of Aspose.PDF
 private static void HelloWorld()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        Aspose.Pdf.Page page = document.Pages.Add();
+        var page = document.Pages.Add();
         // Add text to new page
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
         // Save PDF document

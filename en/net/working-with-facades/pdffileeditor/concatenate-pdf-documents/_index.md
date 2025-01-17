@@ -107,7 +107,7 @@ The following C# code snippet shows you how to concatenate PDF files using file 
 private static void ConcatenatePdfFilesUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Concatenate files
@@ -122,7 +122,7 @@ In some cases, when there are a lot of outlines, users may disable them with set
 private static void ConcatenatePdfFilesUsingFilePaths_CopyOutlinesDisabled()
 { 
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Create PdfFileEditor object
     var pfe = new Aspose.Pdf.Facades.PdfFileEditor();
     // Setting CopyOutlines to false
@@ -502,7 +502,7 @@ Please try using the following C# code snippet to achieve this functionality fro
 private static void ConcatenatePdfFilesInFolder()
 { 
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Retrieve names of all the Pdf files in a particular Directory
     string[] fileEntries = Directory.GetFiles(dataDir, "*.pdf");
     // Create PdfFileEditor

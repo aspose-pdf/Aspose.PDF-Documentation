@@ -184,13 +184,13 @@ The following example creates the table 4x10.
 private static void AddTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        document.Pages.Add();
+        var page = document.Pages.Add();
 
         var table = new Aspose.Pdf.Table
         {
@@ -220,7 +220,7 @@ private static void AddTable()
         }
 
         // Add table object to first page of input document
-        document.Pages[1].Paragraphs.Add(table);
+        page.Paragraphs.Add(table);
 
         // Save PDF document
         document.Save(dataDir + "AddTable_out.pdf");
@@ -235,13 +235,13 @@ private static void AddTable()
 private static void AddTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
     // Add page
-    document.Pages.Add();
+    var page = document.Pages.Add();
 
     var table = new Aspose.Pdf.Table
     {
@@ -271,7 +271,7 @@ private static void AddTable()
     }
 
     // Add table object to first page of input document
-    document.Pages[1].Paragraphs.Add(table);
+    page.Paragraphs.Add(table);
 
     // Save PDF document
     document.Save(dataDir + "AddTable_out.pdf");

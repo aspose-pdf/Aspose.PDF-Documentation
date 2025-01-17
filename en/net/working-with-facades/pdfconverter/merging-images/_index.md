@@ -81,7 +81,6 @@ Follow the next code snippet for resolve your task:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeImages01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Updated to use dynamic path

@@ -112,7 +112,7 @@ private static void SetLicenseExample()
     }
     catch (Exception)
     {
-        // something went wrong
+        // Something went wrong
         throw;
     }
     Console.WriteLine("License set successfully.");
@@ -151,8 +151,8 @@ A new class Metered has been introduced to apply metered key. Following is the s
 private static void SetMeteredLicense()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // set metered public and private keys
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Set metered public and private keys
     Aspose.Pdf.Metered metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
     metered.SetMeteredKey(
@@ -180,7 +180,7 @@ Therefore, in order to put an extra layer of security when embedding the license
 private static void SetLicenseFromStream()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     Aspose.Pdf.License license = new Aspose.Pdf.License();
     license.SetLicense(GetSecureLicenseFromStream());
     // Open PDF document

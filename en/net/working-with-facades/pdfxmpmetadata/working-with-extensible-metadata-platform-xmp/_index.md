@@ -95,7 +95,7 @@ Following code snippet will help you understand how to use [PdfXmpMetadata](http
 private static void AddXmpMetadata()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create an object of PdfXmpMetadata class
     var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
@@ -140,7 +140,7 @@ private static void AddXmpMetadata()
 private static void AddXmpMetadata()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create an object of PdfXmpMetadata class
     var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();

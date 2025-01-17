@@ -89,11 +89,10 @@ Please check the following code snippet to add WatermarkAnnotation.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddWatermarkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
@@ -131,11 +130,10 @@ Sometimes we have a requirement to use same image multiple times in a PDF docume
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddWatermarkAnnotationWithImage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Define the rectangle for the image
     var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);

@@ -83,7 +83,7 @@ According to Document Object Model of Aspose.PDF for .NET, a PDF file contains o
 private static void IdentifyBarcodes()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))

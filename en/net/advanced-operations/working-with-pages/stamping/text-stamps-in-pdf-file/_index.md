@@ -89,7 +89,7 @@ The following code snippet shows you how to add text stamp in the PDF file.
 private static void AddTextStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
@@ -128,7 +128,7 @@ The following code snippets shows an example on how to load an existing PDF docu
 private static void DefineAlignmentForTextStampObject()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
@@ -169,7 +169,7 @@ Following code snippet demonstrates adding Fill Stroke Text:
 private static void FillStrokeTextAsStampInPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     // Create TextState object to transfer advanced properties
     var textState = new Aspose.Pdf.Text.TextState();
     // Set color for stroke
@@ -209,7 +209,7 @@ The following code snippet demonstrates how to add a text stamp to a PDF file an
 private static void AutoSetTheFontSizeOfTextStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
@@ -238,7 +238,7 @@ The following code snippet demonstrates how to add a text stamp to a PDF file an
 private static void AutoSetTheFontSizeOfTextStampToFitPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))

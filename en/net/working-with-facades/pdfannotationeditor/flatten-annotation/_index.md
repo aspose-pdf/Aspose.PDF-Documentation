@@ -86,7 +86,7 @@ Check how the [flatteningAnnotations](https://reference.aspose.com/pdf/net/aspos
 private static void FlattenAnnotationFromPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Create PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())

@@ -99,7 +99,8 @@ Please try using the following code snippet to accomplish this requirement with 
 private static void ConvertPDFtoEPUB()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToEPUB.pdf"))
     {
@@ -107,7 +108,8 @@ private static void ConvertPDFtoEPUB()
         EpubSaveOptions options = new EpubSaveOptions();
         // Specify the layout for contents
         options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
-        // Save the ePUB document
+        
+        // Save ePUB document
         document.Save(dataDir + "PDFToEPUB_out.epub", options);
     }
 }
@@ -135,7 +137,7 @@ The following code snippet shows the process of converting PDF files into the TE
 private static void ConvertPDFtoTeX()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf"))
@@ -170,13 +172,14 @@ The following code snippet explains how to extract the texts from the all pages.
 private static void ConvertPDFtoTXT()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
         var ta = new Aspose.Pdf.Text.TextAbsorber();
         ta.Visit(document);
+
         // Save the extracted text in text file
         File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
     }
@@ -202,7 +205,7 @@ The following code snippet explains how to extract the texts from the particular
 private static void ConvertPDFtoTXT()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
@@ -245,7 +248,7 @@ The following code snippet shows the process of converting PDF file into XPS for
 private static void ConvertPDFtoXPS()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
@@ -253,6 +256,8 @@ private static void ConvertPDFtoXPS()
         {
             SaveTransparentTexts = true
         };
+
+        // Save XPS document
         document.Save(dataDir + "PDFtoXPS_out.xps", xpsOptions);
     }
 }
@@ -281,7 +286,7 @@ The following code snippet shows the process of converting PDF file into MD form
 private static void ConvertPDFtoMarkup()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (Document document = new Document(dataDir + "demo.pdf"))
@@ -311,7 +316,8 @@ The following code snippet explains how to convert PDF document to MobiXML file.
 private static void ConvertPdfToMobiXml()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
     {

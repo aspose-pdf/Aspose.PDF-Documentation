@@ -85,10 +85,11 @@ Once the object of a particular signature type is created, you can use the [Sign
 private static void AddPdfFileSignature()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
@@ -115,11 +116,11 @@ The following code example shows us the ability to sign a document with two sign
 private static void AddTwoSignature()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        // Sign with 1st signature
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for 1st signature location
@@ -157,10 +158,11 @@ You need to create an object of [PdfFileSignature](https://reference.aspose.com/
 private static void AddPdfFileSignatureField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create any of the three signature types
@@ -189,7 +191,7 @@ If our document has two fields, the algorithm for signing it is similar to the f
 private static void AddPdfFileSignatureField2()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
@@ -207,7 +209,7 @@ private static void AddPdfFileSignatureField2()
         pdFileSignature.Sign("Signature1", signature1);
         // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
-
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
 
         // Create any of the three signature types

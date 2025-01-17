@@ -96,7 +96,7 @@ The [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfile
 private static void AddEmbeddedFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
     // Open PDF document
     Document document = new Document(dataDir + "AddAttachment.pdf");

@@ -87,7 +87,7 @@ To set privileges on a PDF file, create an object of the [DocumentPrivilege](htt
 private static void SetPrivilegesOnExistingPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -123,7 +123,7 @@ The following code snippet shows you how to encrypt PDF files.
 private static void EncryptPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Encrypt.pdf"))
@@ -150,7 +150,7 @@ In order to decrypt the PDF file, you first need to create a [Document](https://
 private static void DecryptPdfFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document with a password
     using (var document = new Aspose.Pdf.Document(dataDir + "Decrypt.pdf", "password"))
@@ -177,7 +177,7 @@ The following code snippet shows you how to change the password of a PDF file.
 private static void ChangePassword()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     // Open PDF document with a password
     using (var document = new Aspose.Pdf.Document(dataDir + "ChangePassword.pdf", "owner"))
@@ -217,10 +217,11 @@ Sometimes there is a requirement to determine the correct password from an array
 private static void DetermineCorrectPasswordFromArray()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     using (var info = new  Aspose.Pdf.Facades.PdfFileInfo())
     {
+        // Bind PDF document
         info.BindPdf(dataDir + "IsPasswordProtected.pdf");
         // Determine if the source PDF is encrypted
         Console.WriteLine("File is password protected " + info.IsEncrypted);

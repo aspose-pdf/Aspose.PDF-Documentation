@@ -113,7 +113,7 @@ The following code snippet shows how to optimize a PDF document for the web.
 private static void OptimizeDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -142,7 +142,7 @@ The snippet below is an example. Note, though, that this method cannot guarantee
 private static void ShrinkDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
@@ -171,7 +171,7 @@ We have two ways to work with images: reduce image quality and/or change their r
 private static void ShrinkImage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
@@ -201,7 +201,7 @@ Another way is to resize the images with a lower resolution. In this case, we sh
 private static void ResizeImages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
@@ -240,7 +240,7 @@ private static void FastShrinkImages()
     var time = DateTime.Now.Ticks;
 
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
@@ -278,7 +278,7 @@ A PDF document sometimes contains the PDF objects that are not referenced from a
 private static void OptimizeDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -307,7 +307,7 @@ Sometimes the document contains the unused resource streams. These streams are n
 private static void OptimizePdfDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -336,7 +336,7 @@ Some documents can contain several identical resource streams (like images, for 
 private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -363,7 +363,7 @@ Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pd
 private static void OptimizePdfDocumentWithReusePageContent()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -401,7 +401,7 @@ If the document uses embedded fonts, it means that all font data is stored in th
 private static void OptimizePdfDocumentWithUnembedFonts()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -443,7 +443,7 @@ Annotations can be deleted when they are unnecessary. When they are needed but d
 private static void FlattenAnnotationsInPdfDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
@@ -472,7 +472,7 @@ If the PDF document contains AcroForms, we can try to reduce the file size by fl
 private static void FlattenPdfForms()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -501,7 +501,7 @@ A PDF file comprises Text, Image, Attachment, Annotations, Graphs, and other obj
 private static void ConvertRgbToGrayScale()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -540,7 +540,7 @@ Aspose.PDF for .NET provides support of FlateDecode compression for PDF Optimisa
 private static void OptimizeDocumentImagesWithFlateCompression()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
@@ -569,7 +569,7 @@ Aspose.PDF for .NET provides the ability to store new images into **XImageCollec
 private static void AddImageToPdfWithFlateCompression()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())

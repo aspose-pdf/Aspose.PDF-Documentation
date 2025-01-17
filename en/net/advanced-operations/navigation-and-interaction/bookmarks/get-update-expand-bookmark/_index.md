@@ -89,11 +89,10 @@ To get the bookmarks, loop through the [OutlineCollection](https://reference.asp
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf"))
@@ -114,11 +113,10 @@ private static void GetBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf");
@@ -144,11 +142,10 @@ Once you have added a bookmark you can find out what page it is on by getting th
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetBookmarkPageNumber()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
@@ -180,11 +177,10 @@ private static void GetBookmarkPageNumber()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetBookmarkPageNumber()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Create PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
@@ -221,11 +217,10 @@ Bookmarks can be organized in a hierarchical structure, with parents and childre
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetChildBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf"))
@@ -260,11 +255,10 @@ private static void GetChildBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetChildBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf");
@@ -304,11 +298,10 @@ To update a bookmark in a PDF file, first, get the particular bookmark from the 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf"))
@@ -329,11 +322,10 @@ private static void UpdateBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf");
@@ -370,11 +362,10 @@ The following code snippet shows you how to update child bookmarks in a PDF docu
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateChildBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf"))
@@ -398,11 +389,10 @@ private static void UpdateChildBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateChildBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf");
@@ -433,11 +423,10 @@ In order to accomplish this requirement, we can set open status for each outline
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExpandBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -462,11 +451,10 @@ private static void ExpandBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExpandBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");

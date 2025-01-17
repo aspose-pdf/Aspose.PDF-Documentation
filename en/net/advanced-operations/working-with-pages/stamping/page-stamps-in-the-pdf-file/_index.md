@@ -87,7 +87,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void AddPageStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))

@@ -104,7 +104,7 @@ The following code snippet shows you how to get the properties using [Document](
 private static void GetDocumentWindowProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
@@ -176,7 +176,7 @@ Each is used and described in the code below. The following - code snippet shows
 private static void SetDocumentWindowProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
@@ -246,7 +246,7 @@ Some PDF documents have fonts from a special Adobe font set. Fonts from this set
 private static void EmbedFontsType1ToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -289,7 +289,7 @@ We use the property IsEmbedded of Font class to embed the font information into 
 private static void EmbedFontWhileCreatingPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -330,7 +330,7 @@ When a PDF document contains fonts, which are not available in the document itse
 private static void SetDefaultFontOnDocumentSave(string documentName, string newName)
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var fs = new FileStream(dataDir + "GetDocumentWindow.pdf", FileMode.Open))
@@ -359,7 +359,7 @@ In case you want to get all fonts from a PDF document, you can use FontUtilities
 private static void GetAllFontsFromPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -385,7 +385,7 @@ Aspose.PDF for .NET provides methods to get notifications about font substitutio
 private static void NotificationFontSubstitution()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -427,7 +427,7 @@ Following code snippet shows how to set FontSubsetStrategy:
 private static void SetFontSubsetStrategy()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -459,7 +459,7 @@ The following code snippet shows how to set the zoom factor of a PDF file.
 private static void SetZoomFactor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
@@ -469,7 +469,7 @@ private static void SetZoomFactor()
 		document.OpenAction = action;
 
 		// Save PDF document
-		document.Save(dataDir + "Zoomed_pdf_out.pdf");
+		document.Save(dataDir + "ZoomFactor_out.pdf");
 	}
 }
 ```
@@ -483,7 +483,7 @@ The following code snippet shows how to get a PDF file's zoom factor.
 private static void GetZoomFactor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
@@ -510,7 +510,7 @@ Aspoose.PDF allows setting the Print Dialog Preset properties of a PDF document.
 private static void SetPrintDialogPresetProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -534,7 +534,7 @@ private static void SetPrintDialogPresetProperties()
 private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     string inputFile = dataDir + "input.pdf";
 

@@ -97,11 +97,10 @@ Currently, the following copilots available:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GetSummary()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -139,11 +138,10 @@ private static async Task GetSummary()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GetSummary()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -186,11 +184,10 @@ The provided code demonstrates the creation of an OpenAI client, configuration o
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -247,11 +244,10 @@ private static async Task ChatWithDocument()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -313,11 +309,10 @@ The provided code snippet demonstrates the creation of an OpenAI client, configu
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task CreateImageDescriptions()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -357,11 +352,10 @@ private static async Task CreateImageDescriptions()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task CreateImageDescriptions()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -404,7 +398,6 @@ private static async Task CreateImageDescriptions()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithLlama()
 {
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
@@ -428,7 +421,6 @@ private static async Task ChatWithLlama()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithLlama()
 {
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
@@ -455,11 +447,10 @@ private static async Task ChatWithLlama()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GenerateSummary()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
         .CreateWithApiKey(ApiKey) // Create Llama client with the API key
@@ -498,11 +489,10 @@ private static async Task GenerateSummary()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GenerateSummary()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
         .CreateWithApiKey(ApiKey) // Create Llama client with the API key

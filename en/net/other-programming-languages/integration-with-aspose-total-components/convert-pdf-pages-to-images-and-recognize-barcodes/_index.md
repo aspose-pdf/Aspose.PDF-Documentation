@@ -105,7 +105,7 @@ For the purposes of this example, first convert a page in a PDF file into an ima
 private static void IdentifyBarcodesConverter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Create a PdfConverter object
     var converter = new Aspose.Pdf.Facades.PdfConverter();
@@ -183,7 +183,7 @@ The code samples given here traverses through the pages of the PDF document and 
 private static void IdentifyBarcodes()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "IdentifyBarcodes.pdf"))

@@ -87,11 +87,10 @@ Following are the code snippets to sign a PDF document from a smart card:
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetSignatureInfo()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open a document stream
     using (var fs = new FileStream(dataDir + "blank.pdf", FileMode.Open, FileAccess.ReadWrite))
@@ -123,7 +122,7 @@ private static void GetSignatureInfo()
             // Sign the document
             field1.Sign(externalSignature);
             // Save PDF document
-            document.Save(dataDir + "externalSignature1.pdf");
+            document.Save(dataDir + "externalSignature1_out.pdf");
         }
     }
 }
@@ -131,7 +130,7 @@ private static void GetSignatureInfo()
 private static void VerifyExternalSignature()
 {    
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "externalSignature1.pdf"))
@@ -155,11 +154,10 @@ private static void VerifyExternalSignature()
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private void SignWithSmartCard()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "blank.pdf"))
@@ -180,7 +178,7 @@ private void SignWithSmartCard()
             // Sign the document
             pdfSign.Sign(1, "Reason", "Contact", "Location", true, new System.Drawing.Rectangle(100, 100, 200, 200), externalSignature);
             // Save PDF document
-            pdfSign.Save(dataDir + "externalSignature2.pdf");
+            pdfSign.Save(dataDir + "externalSignature2_out.pdf");
         }
     }
 }
@@ -188,7 +186,7 @@ private void SignWithSmartCard()
 private static void VerifyExternalSignature()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "externalSignature1.pdf"))
@@ -216,11 +214,10 @@ The ExternalSignature constructor also accepts a key certificate (it can be in B
 
 ```csharp
 // For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SignWithExternalService()
 {    
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "blank.pdf"))
@@ -244,7 +241,7 @@ private static void SignWithExternalService()
             signature.CustomSignHash = customSignHash;
             sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), signature);
             // Save PDF document
-            sign.Save(dataDir + "externalSignature.pdf");
+            sign.Save(dataDir + "ExternalSignature_out.pdf");
         }
     }
 }

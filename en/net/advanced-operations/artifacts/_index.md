@@ -114,7 +114,6 @@ _Note:_ This code also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) librar
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExtractWatermarkFromPDF()
 {
     // The path to the documents directory
@@ -146,7 +145,6 @@ The following code snippet shows how to add a background image to PDF pages usin
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddBackgroundImageToPDF()
 {
     // The path to the documents directory
@@ -204,7 +202,6 @@ To calculate the total count of artifacts of a particular type (for example, the
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CountPDFArtifacts()
 {
     // The path to the documents directory
