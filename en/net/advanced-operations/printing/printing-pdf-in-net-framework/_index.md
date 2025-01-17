@@ -261,7 +261,7 @@ private static void PickTrayByPdfSize()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page and some content
+        // Add page
         var page = document.Pages.Add();
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
 
@@ -286,7 +286,7 @@ private static void PickTrayByPdfSize()
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a new page and some content
+    // Add page
     var page = document.Pages.Add();
     page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
 

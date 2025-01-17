@@ -150,7 +150,7 @@ private static void GetBookmarkPageNumber()
     // Create PdfBookmarkEditor
     using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
     {
-        // Open PDF file
+        // Bind PDF document
         bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
         // Extract bookmarks
@@ -185,7 +185,7 @@ private static void GetBookmarkPageNumber()
     // Create PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open PDF file
+    // Bind PDF document
     bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
     // Extract bookmarks

@@ -96,7 +96,7 @@ private static void AddBackgroundToPdf()
         // Image for background artifact object
         using (var image = File.OpenRead(dataDir + "aspose-total-for-net.jpg"))
         {
-            // Add a new page to document object
+            // Add page
             Page page = document.Pages.Add();
             // Create Background Artifact object
             var background = new Aspose.Pdf.BackgroundArtifact();
