@@ -192,7 +192,7 @@ private static void AddPdfFileSignatureField2()
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
         // Bind PDF document
-        pdfSign.BindPdf(dataDir + "input.pdf");
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create any of the three signature types
         var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")

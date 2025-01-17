@@ -101,9 +101,12 @@ private static void SimplePrint()
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings and PrintDocument
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -141,9 +144,12 @@ private static void SimplePrint()
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings and PrintDocument
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -184,9 +190,12 @@ private static void PrintWithPrintDialog()
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         var printDialog = new System.Windows.Forms.PrintDialog();
         if (printDialog.ShowDialog() == DialogResult.OK)
@@ -221,9 +230,12 @@ private static void PrintWithPrintDialog()
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     var printDialog = new System.Windows.Forms.PrintDialog();
     if (printDialog.ShowDialog() == DialogResult.OK)
