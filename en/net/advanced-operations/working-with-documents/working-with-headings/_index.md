@@ -116,7 +116,7 @@ private static void ApplyNumberStyleToPdf()
         document.PageInfo.Margin.Top = 72;
         document.PageInfo.Margin.Bottom = 72;
 
-        // Add a new page to the document
+        // Add page
         var pdfPage = document.Pages.Add();
         pdfPage.PageInfo.Width = 612.0;
         pdfPage.PageInfo.Height = 792.0;

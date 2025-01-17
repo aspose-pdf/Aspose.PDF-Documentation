@@ -220,7 +220,7 @@ private static void AddHyperlinkToTextSegment()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
         // Create TextFragment instance
         var fragment = new Aspose.Pdf.Text.TextFragment("Sample Text Fragment");
@@ -267,7 +267,7 @@ private static void UseOTFFont()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
         // Create TextFragment instnace with sample text
         var fragment = new Aspose.Pdf.Text.TextFragment("Sample Text in OTF font");
@@ -338,6 +338,7 @@ private static void AddHTMLOrderedListIntoDocument()
         var page = document.Pages.Add();
         // Add HtmlFragment inside page 
         page.Paragraphs.Add(fragment);
+
         // Save PDF document
         document.Save(dataDir + "AddHTMLOrderedListIntoDocuments_out.pdf");
     }
@@ -363,6 +364,7 @@ private static void SetHTMLStringFormatting()
         var page = document.Pages.Add();
         // Add HtmlFragment inside page 
         page.Paragraphs.Add(fragment);
+
         // Save PDF document
         document.Save(dataDir + "SetHTMLStringFormatting_out.pdf");
     }
@@ -377,6 +379,7 @@ private static void AddHTMLUsingDOMAndOverwrite()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
@@ -393,6 +396,7 @@ private static void AddHTMLUsingDOMAndOverwrite()
         title.Margin.Top = 400;
         // Add HTML Fragment to paragraphs collection of page
         page.Paragraphs.Add(title);
+        
         // Save PDF document
         document.Save(dataDir + "AddHTMLUsingDOMAndOverwrite_out.pdf");
     }
@@ -434,7 +438,7 @@ private static void CustomLineStyleForFootNote()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF
+        // Add page
         var page = document.Pages.Add();
         // Create GraphInfo object
         var graph = new Aspose.Pdf.GraphInfo();
@@ -496,7 +500,7 @@ private static void CustomizeFootNoteLabel()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF
+        // Add page
         var page = document.Pages.Add();
         // Create GraphInfo object
         var graph = new Aspose.Pdf.GraphInfo();
@@ -579,7 +583,7 @@ private static void CreateEndNotes()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF
+        // Add page
         var page = document.Pages.Add();
         // Create TextFragment instance
         var text = new Aspose.Pdf.Text.TextFragment("Hello World");

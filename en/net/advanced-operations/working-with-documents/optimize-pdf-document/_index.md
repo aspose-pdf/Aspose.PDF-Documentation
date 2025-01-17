@@ -574,7 +574,7 @@ private static void AddImageToPdfWithFlateCompression()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page to the document
+        // Add page
         var page = document.Pages.Add();
 
         // Open the image file stream

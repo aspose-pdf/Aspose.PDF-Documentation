@@ -194,6 +194,7 @@ private static void FillStrokeTextAsStampInPdfFile()
         stamp.IsBackground = false;
         // Add Stamp
         fileStamp.AddStamp(stamp);
+        // Save PDF document
         fileStamp.Save(dataDir + "FillStrokeTextAsStampInPdfFile_out.pdf");
         fileStamp.Close();
     }

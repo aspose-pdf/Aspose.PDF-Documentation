@@ -202,7 +202,7 @@ private static void AddHyperlink()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
         // Create Text Fragment instance
         var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
@@ -244,7 +244,7 @@ private static void AddHyperlink()
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
-    // Add page to pages collection of PDF file
+    // Add page
     var page = document.Pages.Add();
     // Create Text Fragment instance
     var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");

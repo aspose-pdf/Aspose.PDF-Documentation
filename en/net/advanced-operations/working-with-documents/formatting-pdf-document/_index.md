@@ -515,7 +515,7 @@ private static void SetPrintDialogPresetProperties()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to the document
+        // Add page
         document.Pages.Add();
 
         // Set duplex printing to DuplexFlipLongEdge

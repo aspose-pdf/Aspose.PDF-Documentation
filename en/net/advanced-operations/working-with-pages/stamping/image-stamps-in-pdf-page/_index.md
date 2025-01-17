@@ -135,6 +135,7 @@ private static void ControlImageQualityWhenAddingStamp()
         var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
         imageStamp.Quality = 10;
         document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
         document.Save(dataDir + "ControlImageQuality_out.pdf");
     }
 }

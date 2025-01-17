@@ -156,7 +156,7 @@ private static void RectangleFilled()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Graph instance
@@ -204,7 +204,7 @@ private static void CreateFilledRectangleGradientFill()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Graph instance
@@ -257,7 +257,7 @@ private static void RectangleFilled_AlphaChannel()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Graph instance
@@ -314,7 +314,7 @@ private static void AddRectangleZOrder()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Set size of PDF page

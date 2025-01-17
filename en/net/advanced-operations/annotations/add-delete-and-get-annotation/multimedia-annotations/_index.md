@@ -503,7 +503,7 @@ private static void Add3dAnnotation()
 		pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, topMatrix, 0.188563, "Top")); //1
 		pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, frontMatrix, 0.188563, "Left")); //2
 
-		// Add a new page to the document
+		// Add page
 		var page = document.Pages.Add();
 
 		// Create a 3D annotation
