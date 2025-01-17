@@ -370,70 +370,70 @@ private static void AddNavigationButtons()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
-	{
-		// Create an array of button fields
-		var buttons = new Aspose.Pdf.Forms.ButtonField[4];
+    {
+        // Create an array of button fields
+        var buttons = new Aspose.Pdf.Forms.ButtonField[4];
 
-		// Define alternate names and normal captions for the buttons
-		var alternateNames = new[] { "Go to first page", "Go to prev page", "Go to next page", "Go to last page" };
-		var normalCaptions = new[] { "First", "Prev", "Next", "Last" };
+        // Define alternate names and normal captions for the buttons
+        var alternateNames = new[] { "Go to first page", "Go to prev page", "Go to next page", "Go to last page" };
+        var normalCaptions = new[] { "First", "Prev", "Next", "Last" };
 
-		// Define predefined actions for the buttons
-		PredefinedAction[] actions = {
-			PredefinedAction.FirstPage,
-			PredefinedAction.PrevPage,
-			PredefinedAction.NextPage,
-			PredefinedAction.LastPage
-		};
+        // Define predefined actions for the buttons
+        PredefinedAction[] actions = {
+            PredefinedAction.FirstPage,
+            PredefinedAction.PrevPage,
+            PredefinedAction.NextPage,
+            PredefinedAction.LastPage
+        };
 
-		// Define border and background colors
-		var clrBorder = System.Drawing.Color.FromArgb(255, 0, 255, 0);
-		var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
+        // Define border and background colors
+        var clrBorder = System.Drawing.Color.FromArgb(255, 0, 255, 0);
+        var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
 
-		// We should create the buttons without attaching them to the page.
-		for (var i = 0; i < 4; i++)
-		{
-			buttons[i] = new Aspose.Pdf.Forms.ButtonField(document, new Aspose.Pdf.Rectangle(32 + i * 80, 28, 104 + i * 80, 68))
-			{
-				AlternateName = alternateNames[i],
-				Color = Aspose.Pdf.Color.White,
-				NormalCaption = normalCaptions[i],
-				OnActivated = new Aspose.Pdf.Annotations.NamedAction(actions[i])
-			};
+        // We should create the buttons without attaching them to the page.
+        for (var i = 0; i < 4; i++)
+        {
+            buttons[i] = new Aspose.Pdf.Forms.ButtonField(document, new Aspose.Pdf.Rectangle(32 + i * 80, 28, 104 + i * 80, 68))
+            {
+                AlternateName = alternateNames[i],
+                Color = Aspose.Pdf.Color.White,
+                NormalCaption = normalCaptions[i],
+                OnActivated = new Aspose.Pdf.Annotations.NamedAction(actions[i])
+            };
 
-			// Set the border style for the button
-			buttons[i].Border = new Aspose.Pdf.Annotations.Border(buttons[i])
-			{
-				Style = Aspose.Pdf.Annotations.BorderStyle.Solid,
-				Width = 2
-			};
+            // Set the border style for the button
+            buttons[i].Border = new Aspose.Pdf.Annotations.Border(buttons[i])
+            {
+                Style = Aspose.Pdf.Annotations.BorderStyle.Solid,
+                Width = 2
+            };
 
-			// Set the border and background color characteristics
-			buttons[i].Characteristics.Border = clrBorder;
-			buttons[i].Characteristics.Background = clrBackGround;
-		}
+            // Set the border and background color characteristics
+            buttons[i].Characteristics.Border = clrBorder;
+            buttons[i].Characteristics.Background = clrBackGround;
+        }
 
-		// Duplicate the array of buttons on each page in the document
-		for (var pageIndex = 1; pageIndex <= document.Pages.Count; pageIndex++)
-		{
-			for (var i = 0; i < 4; i++)
-			{
-				document.Form.Add(buttons[i], $"btn{pageIndex}_{i + 1}", pageIndex);
-			}
-		}
+        // Duplicate the array of buttons on each page in the document
+        for (var pageIndex = 1; pageIndex <= document.Pages.Count; pageIndex++)
+        {
+            for (var i = 0; i < 4; i++)
+            {
+                document.Form.Add(buttons[i], $"btn{pageIndex}_{i + 1}", pageIndex);
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "NavigationButtons_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "NavigationButtons_out.pdf");
 
-		// We call Form.Add method with the following parameters: field, name, and the index of the pages that this field will be added to.
-		// And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
+        // We call Form.Add method with the following parameters: field, name, and the index of the pages that this field will be added to.
+        // And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
 
-		document.Form["btn1_1"].ReadOnly = true;
-		document.Form["btn1_2"].ReadOnly = true;
+        document.Form["btn1_1"].ReadOnly = true;
+        document.Form["btn1_2"].ReadOnly = true;
 
-		document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
-		document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
-	}
+        document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
+        document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
+    }
 }
 ```
 
@@ -484,44 +484,44 @@ private static void Add3dAnnotation()
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
-	{
-	// Load 3D content
-	var pdf3DContent = new Aspose.Pdf.Annotations.PDF3DContent(dataDir + "Ring.u3d");
+    {
+        // Load 3D content
+        var pdf3DContent = new Aspose.Pdf.Annotations.PDF3DContent(dataDir + "Ring.u3d");
 
-	// Create 3D artwork
-	var pdf3dArtWork = new Aspose.Pdf.Annotations.PDF3DArtwork(document, pdf3DContent)
-	{
-		LightingScheme = new Aspose.Pdf.Annotations.PDF3DLightingScheme(Aspose.Pdf.Annotations.LightingSchemeType.CAD),
-		RenderMode = new Aspose.Pdf.Annotations.PDF3DRenderMode(Aspose.Pdf.Annotations.RenderModeType.Solid),
-	};
+        // Create 3D artwork
+        var pdf3dArtWork = new Aspose.Pdf.Annotations.PDF3DArtwork(document, pdf3DContent)
+        {
+            LightingScheme = new Aspose.Pdf.Annotations.PDF3DLightingScheme(Aspose.Pdf.Annotations.LightingSchemeType.CAD),
+            RenderMode = new Aspose.Pdf.Annotations.PDF3DRenderMode(Aspose.Pdf.Annotations.RenderModeType.Solid),
+        };
 
-	// Define matrices for different views
-	var topMatrix = new Aspose.Pdf.Matrix3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 0.10271, 0.08184, 0.273836);
-	var frontMatrix = new Aspose.Pdf.Matrix3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.332652, 0.08184, 0.085273);
+        // Define matrices for different views
+        var topMatrix = new Aspose.Pdf.Matrix3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 0.10271, 0.08184, 0.273836);
+        var frontMatrix = new Aspose.Pdf.Matrix3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.332652, 0.08184, 0.085273);
 
-	// Add views to the 3D artwork
-	pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, topMatrix, 0.188563, "Top")); //1
-	pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, frontMatrix, 0.188563, "Left")); //2
+        // Add views to the 3D artwork
+        pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, topMatrix, 0.188563, "Top")); //1
+        pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, frontMatrix, 0.188563, "Left")); //2
 
-	// Add page
-	var page = document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
 
-	// Create a 3D annotation
-	var pdf3dAnnotation = new Aspose.Pdf.Annotations.PDF3DAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 700), pdf3dArtWork);
-	pdf3dAnnotation.Border = new Aspose.Pdf.Annotations.Border(pdf3dAnnotation);
-	pdf3dAnnotation.SetDefaultViewIndex(1);
-	pdf3dAnnotation.Flags = Aspose.Pdf.Annotations.AnnotationFlags.NoZoom;
-	pdf3dAnnotation.Name = "Ring.u3d";
+        // Create a 3D annotation
+        var pdf3dAnnotation = new Aspose.Pdf.Annotations.PDF3DAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 700), pdf3dArtWork);
+        pdf3dAnnotation.Border = new Aspose.Pdf.Annotations.Border(pdf3dAnnotation);
+        pdf3dAnnotation.SetDefaultViewIndex(1);
+        pdf3dAnnotation.Flags = Aspose.Pdf.Annotations.AnnotationFlags.NoZoom;
+        pdf3dAnnotation.Name = "Ring.u3d";
 
-	// Set preview image if needed
-	// pdf3dAnnotation.SetImagePreview(dataDir + "sample_3d.png");
+        // Set preview image if needed
+        // pdf3dAnnotation.SetImagePreview(dataDir + "sample_3d.png");
 
-	// Add the 3D annotation to the page
-	document.Pages[1].Annotations.Add(pdf3dAnnotation);
+        // Add the 3D annotation to the page
+        document.Pages[1].Annotations.Add(pdf3dAnnotation);
 
-	// Save PDF document
-	document.Save(dataDir + "Add3dAnnotation_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "Add3dAnnotation_out.pdf");
+    }
 }
 ```
 

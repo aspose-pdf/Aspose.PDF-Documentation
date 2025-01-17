@@ -96,41 +96,42 @@ private static void AddLinkAnnotation()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Link Annotation Demo.pdf"))
-	{
-		var page = document.Pages[1];
+    {
+        // Get first page
+        var page = document.Pages[1];
 
-		// Define regular expressions for text fragments
-		var regEx1 = new Regex(@"Link Annotation Demo \d");
-		var regEx2 = new Regex(@"Sample text \d");
+        // Define regular expressions for text fragments
+        var regEx1 = new Regex(@"Link Annotation Demo \d");
+        var regEx2 = new Regex(@"Sample text \d");
 
-		// Create TextFragmentAbsorber for the first regular expression
-		var textFragmentAbsorber1 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx1);
-		textFragmentAbsorber1.Visit(document);
+        // Create TextFragmentAbsorber for the first regular expression
+        var textFragmentAbsorber1 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx1);
+        textFragmentAbsorber1.Visit(document);
 
-		// Create TextFragmentAbsorber for the second regular expression
-		var textFragmentAbsorber2 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx2);
-		textFragmentAbsorber2.Visit(document);
+        // Create TextFragmentAbsorber for the second regular expression
+        var textFragmentAbsorber2 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx2);
+        textFragmentAbsorber2.Visit(document);
 
-		// Get the text fragments for both absorbers
-		var linkFragments = textFragmentAbsorber1.TextFragments;
-		var sampleTextFragments = textFragmentAbsorber2.TextFragments;
+        // Get the text fragments for both absorbers
+        var linkFragments = textFragmentAbsorber1.TextFragments;
+        var sampleTextFragments = textFragmentAbsorber2.TextFragments;
 
-		// Create a LinkAnnotation
-		var linkAnnotation1 = new Aspose.Pdf.Annotations.LinkAnnotation(page, linkFragments[1].Rectangle)
-		{
-			Action = new Aspose.Pdf.Annotations.GoToAction(
-				new Aspose.Pdf.Annotations.XYZExplicitDestination(
-					sampleTextFragments[1].Page,
-					sampleTextFragments[1].Rectangle.LLX,
-					sampleTextFragments[1].Rectangle.URX, 1.5))
-		};
+        // Create a LinkAnnotation
+        var linkAnnotation1 = new Aspose.Pdf.Annotations.LinkAnnotation(page, linkFragments[1].Rectangle)
+        {
+            Action = new Aspose.Pdf.Annotations.GoToAction(
+                new Aspose.Pdf.Annotations.XYZExplicitDestination(
+                    sampleTextFragments[1].Page,
+                    sampleTextFragments[1].Rectangle.LLX,
+                    sampleTextFragments[1].Rectangle.URX, 1.5))
+        };
 
-		// Add the link annotation to the page
-		page.Annotations.Add(linkAnnotation1);
+        // Add the link annotation to the page
+        page.Annotations.Add(linkAnnotation1);
 
-		// Save PDF document
-		document.Save(dataDir + "AddLinkAnnotation_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "AddLinkAnnotation_out.pdf");
+    }
 }
 ```
 
@@ -239,29 +240,29 @@ private static void GetLinkAnnotations()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
-	{
-		// Get all Link annotations from the first page
-		var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
+    {
+        // Get all Link annotations from the first page
+        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
 
-		// Iterate through each Link annotation
-		foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
-		{
-			// Print the URL of each Link Annotation
-			Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
+        // Iterate through each Link annotation
+        foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
+        {
+            // Print the URL of each Link Annotation
+            Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
 
-			// Create a TextAbsorber to extract text within the annotation's rectangle
-			var absorber = new Aspose.Pdf.Text.TextAbsorber();
-			absorber.TextSearchOptions.LimitToPageBounds = true;
-			absorber.TextSearchOptions.Rectangle = annot.Rect;
+            // Create a TextAbsorber to extract text within the annotation's rectangle
+            var absorber = new Aspose.Pdf.Text.TextAbsorber();
+            absorber.TextSearchOptions.LimitToPageBounds = true;
+            absorber.TextSearchOptions.Rectangle = annot.Rect;
 
-			// Accept the absorber for the first page
-			document.Pages[1].Accept(absorber);
+            // Accept the absorber for the first page
+            document.Pages[1].Accept(absorber);
 
-			// Extract and print the text associated with the hyperlink
-			string extractedText = absorber.Text;
-			Console.WriteLine(extractedText);
-		}
-	}
+            // Extract and print the text associated with the hyperlink
+            string extractedText = absorber.Text;
+            Console.WriteLine(extractedText);
+        }
+    }
 }
 ```
 
@@ -278,17 +279,17 @@ private static void DeleteLinkAnnotations()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
-	{
-		// Find and delete all link annotations on the 1st page
-		var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
+    {
+        // Find and delete all link annotations on the 1st page
+        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
 
-		foreach (var la in linkAnnotations)
-		{
-			document.Pages[1].Annotations.Delete(la);
-		}
+        foreach (var la in linkAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(la);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "DeleteLinkAnnotations_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "DeleteLinkAnnotations_out.pdf");
+    }
 }
 ```

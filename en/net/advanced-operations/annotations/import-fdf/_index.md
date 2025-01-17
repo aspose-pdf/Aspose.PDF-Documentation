@@ -122,6 +122,7 @@ private static void ImportFdfByPdfAnnotationEditor()
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
+        // Bind PDF document
         editor.BindPdf(dataDir + "input.pdf");
         editor.ImportAnnotationsFromFdf(dataDir + "student.fdf");
         // Save PDF document

@@ -258,16 +258,16 @@ private static void RedactPageWithFacadesApproach()
 
     // Create an instance of PdfAnnotationEditor
     using (var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
-	{
-		// Redact a specific page region
-		editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
+    {
+        // Redact a specific page region
+        editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
 
-		// Bind the PDF document
-		editor.BindPdf(dataDir + "input.pdf");
+        // Bind the PDF document
+        editor.BindPdf(dataDir + "input.pdf");
 
-		// Save the result document
-		editor.Save(dataDir + "FacadesApproach_out.pdf");
-	}
+        // Save the result document
+        editor.Save(dataDir + "FacadesApproach_out.pdf");
+    }
 }
 ```
 
