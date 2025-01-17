@@ -118,12 +118,12 @@ private static void OptimizeDocument()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
-		// Optimize for web
-		document.Optimize();
+        // Optimize for web
+        document.Optimize();
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -146,13 +146,13 @@ private static void ShrinkDocument()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
-	{
-		// Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
-		document.OptimizeResources();
+    {
+        // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
+        document.OptimizeResources();
 
-		// Save PDF document
-		document.Save(dataDir + "ShrinkDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "ShrinkDocument_out.pdf");
+    }
 }
 ```
 
@@ -175,22 +175,22 @@ private static void ShrinkImage()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
-	{
-		// Initialize OptimizationOptions
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-		// Set CompressImages option
-		optimizeOptions.ImageCompressionOptions.CompressImages = true;
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
-		// Set ImageQuality option
-		optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "Shrinkimage_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "Shrinkimage_out.pdf");
+    }
 }
 ```
 
@@ -205,28 +205,28 @@ private static void ResizeImages()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
-	{
-		// Initialize OptimizationOptions
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-		// Set CompressImages option
-		optimizeOptions.ImageCompressionOptions.CompressImages = true;
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
-		// Set ImageQuality option
-		optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
-		// Set ResizeImage option
-		optimizeOptions.ImageCompressionOptions.ResizeImages = true;
+        // Set ResizeImage option
+        optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
-		// Set MaxResolution option
-		optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
+        // Set MaxResolution option
+        optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "ResizeImages_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "ResizeImages_out.pdf");
+    }
 }
 ```
 
@@ -244,25 +244,25 @@ private static void FastShrinkImages()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
-	{
-		// Initialize OptimizationOptions
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-		// Set CompressImages option
-		optimizeOptions.ImageCompressionOptions.CompressImages = true;
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
-		// Set ImageQuality option
-		optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
-		// Set Image Compression Version to fast
-		optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
+        // Set Image Compression Version to fast
+        optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "FastShrinkImages_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FastShrinkImages_out.pdf");
+    }
 
     // Output the time taken for the operation
     Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
@@ -283,18 +283,18 @@ private static void OptimizeDocument()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
-		// Set RemoveUsedObject option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			RemoveUnusedObjects = true
-		};
-		
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Set RemoveUsedObject option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedObjects = true
+        };
+        
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -311,19 +311,19 @@ private static void OptimizePdfDocument()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set RemoveUsedStreams option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			RemoveUnusedStreams = true
-		};
+    {
+        // Set RemoveUsedStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedStreams = true
+        };
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -340,19 +340,19 @@ private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set LinkDuplicateStreams option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			LinkDuplicateStreams = true
-		};
+    {
+        // Set LinkDuplicateStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            LinkDuplicateStreams = true
+        };
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -367,21 +367,21 @@ private static void OptimizePdfDocumentWithReusePageContent()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set AllowReusePageContent option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			AllowReusePageContent = true
-		};
+    {
+        // Set AllowReusePageContent option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            AllowReusePageContent = true
+        };
 
-		Console.WriteLine("Start");
+        Console.WriteLine("Start");
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 
     Console.WriteLine("Finished");
 
@@ -405,21 +405,21 @@ private static void OptimizePdfDocumentWithUnembedFonts()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set UnembedFonts option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			UnembedFonts = true
-		};
+    {
+        // Set UnembedFonts option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            UnembedFonts = true
+        };
 
-		Console.WriteLine("Start");
+        Console.WriteLine("Start");
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");	
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");	
+    }
 	
     Console.WriteLine("Finished");
 
@@ -447,19 +447,19 @@ private static void FlattenAnnotationsInPdfDocument()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Flatten annotations
-		foreach (var page in document.Pages)
-		{
-			foreach (var annotation in page.Annotations)
-			{
-				annotation.Flatten();
-			}
-		}
+    {
+        // Flatten annotations
+        foreach (var page in document.Pages)
+        {
+            foreach (var annotation in page.Annotations)
+            {
+                annotation.Flatten();
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -476,19 +476,19 @@ private static void FlattenPdfForms()
 
     // Load source PDF form
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Flatten Forms
-		if (document.Form.Fields.Lenght > 0)
-		{
-			foreach (var item in document.Form.Fields)
-			{
-				item.Flatten();
-			}
-		}
+    {
+        // Flatten Forms
+        if (document.Form.Fields.Lenght > 0)
+        {
+            foreach (var item in document.Form.Fields)
+            {
+                item.Flatten();
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "FlattenForms_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FlattenForms_out.pdf");
+    }
 }
 ```
 
@@ -505,23 +505,23 @@ private static void ConvertRgbToGrayScale()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Create RGB to DeviceGray conversion strategy
-		var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
+    {
+        // Create RGB to DeviceGray conversion strategy
+        var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
 
-		// Iterate through each page
-		for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
-		{
-			// Get instance of particular page inside PDF
-			var page = document.Pages[idxPage];
+        // Iterate through each page
+        for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
+        {
+            // Get instance of particular page inside PDF
+            var page = document.Pages[idxPage];
 
-			// Convert the RGB colorspace image to GrayScale colorspace
-			strategy.Convert(page);
-		}
+            // Convert the RGB colorspace image to GrayScale colorspace
+            strategy.Convert(page);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TestGray_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TestGray_out.pdf");
+    }
 }
 ```
 
@@ -560,7 +560,7 @@ private static void OptimizeDocumentImagesWithFlateCompression()
 }
 ```
 
-### **Store Image in XImageCollection**
+### Store Image in XImageCollection
 
 Aspose.PDF for .NET provides the ability to store new images into **XImageCollection** with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag. The following code snippet shows how to use this functionality:
 
