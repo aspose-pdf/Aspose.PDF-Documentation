@@ -92,10 +92,10 @@ private static void PageBrakeExample01()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
 
-    // Instantiate Document instance
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PageBreak.pdf"))
     {
-        // Instantiate blank Document instance
+        // Create PDF document
         using (var dest = new Aspose.Pdf.Document())
         {
             // Create PdfFileEditor object
