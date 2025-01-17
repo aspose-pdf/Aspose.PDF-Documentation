@@ -102,7 +102,7 @@ String^ lateBinding(String^ file)
     WCHAR str[255];
     CLSID pclsid;
 
-    // create ComHelper
+    // Create ComHelper
     IDispatch* comHelperPtr;
 
     wcscpy_s(str, L"Aspose.Pdf.ComHelper");
@@ -115,7 +115,7 @@ String^ lateBinding(String^ file)
     }
     else
     {
-        // set license
+        // Set license
         IDispatch* licPtr;
         wcscpy_s(str, L"Aspose.Pdf.License");
         CLSIDFromProgID(str, &pclsid);
@@ -143,7 +143,7 @@ String^ lateBinding(String^ file)
 
         licPtr->Release();
 
-        // get Document
+        // Get Document
 
         OLECHAR* openFile = L"OpenFile";
 
@@ -165,9 +165,7 @@ String^ lateBinding(String^ file)
 
         comHelperPtr->Release();
 
-        //------------------------
-
-        // get Pages for the Document
+        // Get Pages for the Document
 
         OLECHAR* pages = L"Pages";
 
@@ -179,9 +177,7 @@ String^ lateBinding(String^ file)
 
         IDispatch* pagesPtr = result.pdispVal;
 
-        //------------------------
-
-        // create Absorber
+        // Create Absorber
 
         IDispatch* absorberPtr;
 
@@ -191,9 +187,7 @@ String^ lateBinding(String^ file)
 
         hr = CoCreateInstance(pclsid, NULL, CLSCTX_ALL, IID_IDispatch, (void**)&absorberPtr);
 
-        //------------------------
-
-        // browse text
+        // Browse text
 
         arg.vt = VT_DISPATCH;
 
@@ -211,9 +205,7 @@ String^ lateBinding(String^ file)
 
         hr = pagesPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_METHOD, &dp, &result, NULL, NULL);
 
-        //------------------------
-
-        // retrieve text
+        // Retrieve text
 
         OLECHAR* _text = L"Text";
 
@@ -222,8 +214,6 @@ String^ lateBinding(String^ file)
         hr = absorberPtr->GetIDsOfNames(IID_NULL, &_text, 1, GetUserDefaultLCID(), &dispid);
 
         hr = absorberPtr->Invoke(dispid, IID_NULL, GetUserDefaultLCID(), DISPATCH_PROPERTYGET, &dp, &result, 0, 0);
-
-        //------------------------
 
         text = gcnew String(result.bstrVal);
 
