@@ -96,14 +96,14 @@ private static void GetValuesFromFields()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
-	{
-		// Get values from all fields
-		foreach (Aspose.Pdf.Forms.Field formField in document.Form)
-		{
-			Console.WriteLine("Field Name : {0} ", formField.PartialName);
-			Console.WriteLine("Value : {0} ", formField.Value);
-		}
-	}
+    {
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
+    }
 }
 ```
 
@@ -120,15 +120,15 @@ private static void GetValueFromField()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
-	{
-		// Get a field
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-		{
-			// Get field value
-			Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
-			Console.WriteLine("Value : {0} ", textBoxField.Value);
-		}
-	}
+    {
+        // Get a field
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            // Get field value
+            Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
+            Console.WriteLine("Value : {0} ", textBoxField.Value);
+        }
+    }
 }
 ```
 
@@ -143,14 +143,14 @@ private static void GetSubmitFormActionUrl()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
-	{
-		// Get the SubmitFormAction from the form field
-		if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
-		{
-			// Output the URL of the SubmitFormAction
-			Console.WriteLine(act.Url.Name);
-		}
-	}
+    {
+        // Get the SubmitFormAction from the form field
+        if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
+        {
+            // Output the URL of the SubmitFormAction
+            Console.WriteLine(act.Url.Name);
+        }
+    }
 }
 ```
 
@@ -174,23 +174,23 @@ private static void GetFieldsFromRegion()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
-	{
-		// Create rectangle object to get fields in that area
-		var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
+    {
+        // Create rectangle object to get fields in that area
+        var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
 
-		// Get the PDF form
-		var form = document.Form;
+        // Get the PDF form
+        var form = document.Form;
 
-		// Get fields in the rectangular area
-		var fields = form.GetFieldsInRect(rectangle);
+        // Get fields in the rectangular area
+        var fields = form.GetFieldsInRect(rectangle);
 
-		// Display Field names and values
-		foreach (var field in fields)
-		{
-			// Display image placement properties for all placements
-			Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
-		}
-	}
+        // Display Field names and values
+        foreach (var field in fields)
+        {
+            // Display image placement properties for all placements
+            Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
+        }
+    }
 }
 ```
 

@@ -116,13 +116,13 @@ private static void GetFieldLimitUsingDOM()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
-	{
-		// Get the field and its maximum limit
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-		{
-			Console.WriteLine("Limit: " + textBoxField.MaxLen);
-		}
-	}
+    {
+        // Get the field and its maximum limit
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            Console.WriteLine("Limit: " + textBoxField.MaxLen);
+        }
+    }
 }
 ```
 
@@ -162,20 +162,20 @@ private static void SetFormFieldFont()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
-	{
-		// Get particular form field from document
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
-		{
-			// Create font object
-			var font = Aspose.Pdf.Text.FontRepository.FindFont("ComicSansMS");
+    {
+        // Get particular form field from document
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
+        {
+            // Create font object
+            var font = Aspose.Pdf.Text.FontRepository.FindFont("ComicSansMS");
 
-			// Set the font information for form field
-			field.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance(font, 10, System.Drawing.Color.Black);
-		}
+            // Set the font information for form field
+            field.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance(font, 10, System.Drawing.Color.Black);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "FormFieldFont14_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FormFieldFont14_out.pdf");
+    }
 }
 ```
 
@@ -192,13 +192,13 @@ private static void DeleteFormField()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))
-	{
-		// Delete a particular field by name
-		document.Form.Delete("textbox1");
+    {
+        // Delete a particular field by name
+        document.Form.Delete("textbox1");
 
-		// Save PDF document
-		document.Save(dataDir + "DeleteFormField_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "DeleteFormField_out.pdf");
+    }
 }
 ```
 
