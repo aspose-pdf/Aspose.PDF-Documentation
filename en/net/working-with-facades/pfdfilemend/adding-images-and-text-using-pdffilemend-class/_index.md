@@ -98,7 +98,7 @@ private static void AddImage01()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images(); 
 
-    // Create Document and PdfFileMend objects
+    // Create PDF document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     {
         using (var mender = new Aspose.Pdf.Facades.PdfFileMend())
@@ -131,7 +131,7 @@ private static void AddImage02()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document and PdfFileMend objects
+    // Create PDF document and PdfFileMend objects
     using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
     {
         using (var mender = new Aspose.Pdf.Facades.PdfFileMend())

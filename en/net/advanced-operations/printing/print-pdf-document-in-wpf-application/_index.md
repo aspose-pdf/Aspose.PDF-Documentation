@@ -106,7 +106,7 @@ private static void DirectPrintWpf()
                 // Convert the document to the XPS format
                 document.Save(memoryStream, SaveFormat.Xps);
         
-                // Create an XPS package
+                // Create XPS package
                 using (var package = Package.Open(memoryStream))
                 {
                     //Create URI for the XPS package
@@ -167,7 +167,7 @@ private static void DirectPrintWpf()
         using var memoryStream = new MemoryStream();
         document.Save(memoryStream, SaveFormat.Xps);
         
-        // Create an XPS package
+        // Create XPS package
         using var package = Package.Open(memoryStream);
         
         //Create URI for the XPS package
@@ -242,7 +242,7 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
                 // Convert the document to the XPS format
                 document.Save(memoryStream, SaveFormat.Xps);
 
-                // Create an XPS package
+                // Create XPS package
                 using (var package = Package.Open(memoryStream))
                 {
                     //Create URI for the XPS package
@@ -286,7 +286,7 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
         using var memoryStream = new MemoryStream();
         document.Save(memoryStream, SaveFormat.Xps);
 
-        // Create an XPS package
+        // Create XPS package
         using var package = Package.Open(memoryStream);
 
         //Create URI for the XPS package

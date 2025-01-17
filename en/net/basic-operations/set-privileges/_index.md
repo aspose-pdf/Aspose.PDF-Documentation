@@ -152,7 +152,7 @@ private static void DecryptPdfFile()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
-    // Open PDF document with a password
+    // Open PDF document with password
     using (var document = new Aspose.Pdf.Document(dataDir + "Decrypt.pdf", "password"))
     {
         // Decrypt PDF
@@ -179,7 +179,7 @@ private static void ChangePassword()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-    // Open PDF document with a password
+    // Open PDF document with password
     using (var document = new Aspose.Pdf.Document(dataDir + "ChangePassword.pdf", "owner"))
     {
         // Change password

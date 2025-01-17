@@ -316,6 +316,7 @@ private static void ConcatenatePdfFiles()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
 
+    // Open PDF documents
     using (var outputStream = new FileStream(outFile, FileMode.Create))
     {
         using (var stream1 = new FileStream(inputFile1, FileMode.Open))
