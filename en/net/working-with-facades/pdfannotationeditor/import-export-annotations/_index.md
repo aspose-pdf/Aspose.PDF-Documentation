@@ -127,6 +127,7 @@ private static void ImportExportXFDF01()
         // Create PDF document
         using (var document = new Aspose.Pdf.Document())
         {
+            // Add page
             document.Pages.Add();
             // Bind PDF document
             annotationEditor.BindPdf(document);
@@ -149,8 +150,10 @@ private static void ImportExportXFDF02()
     
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // Export annotations
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
+
+        // Export annotations
         using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             var annotationTypes = new[] {AnnotationType.FreeText, AnnotationType.Text};
@@ -160,6 +163,7 @@ private static void ImportExportXFDF02()
         // Import annotations
         using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
         {
+            // Add page
             document.Pages.Add();
             // Bind PDF document
             annotationEditor.BindPdf(document);

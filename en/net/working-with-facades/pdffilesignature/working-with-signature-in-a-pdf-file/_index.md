@@ -198,6 +198,7 @@ private static void CustomizationFeaturesForDigitalSign()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
@@ -241,6 +242,7 @@ private static void ChangeLanguageInDigitalSignText()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdfFileSignature.BindPdf(dataDir + "input.pdf");
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);

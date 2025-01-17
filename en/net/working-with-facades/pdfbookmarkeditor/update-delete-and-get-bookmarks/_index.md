@@ -355,7 +355,7 @@ private static void ExtractBookmarksFromPDFFile()
     // Create an instance of PdfBookmarkEditor
     using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-    // Open PDF document
+    // Bind PDF document
     bookmarkEditor.BindPdf(dataDir + "ExtractBookmarks.pdf");
 
     // Extract bookmarks from the document

@@ -105,7 +105,7 @@ private static void AddXmpMetadata()
     {
         using (var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create))
         {
-            // Set input file stream
+            // Bind PDF document
             xmpMetaData.BindPdf(input);
 
             // Add base URL property to xmp metadata
@@ -150,7 +150,7 @@ private static void AddXmpMetadata()
 
     using var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create);
 
-    // Set input file stream
+    // Bind PDF document
     xmpMetaData.BindPdf(input);
 
     // Add base URL property to xmp metadata

@@ -91,7 +91,7 @@ private static void CopyInnerField()
             // Add page
             document.Pages.Add();
 
-            // Bind the document to the formEditor
+            // Bind PDF document
             formEditor.BindPdf(document);
 
             // Copy the field "Last Name" from the first page to "Last Name 2" on the second page
@@ -124,7 +124,7 @@ private static void CopyOuterField()
             // Add page
             document.Pages.Add();
 
-            // Bind the newly created document to the formEditor
+            // Bind PDF document
             formEditor.BindPdf(document);
 
             // Copy the outer field "First Name" from the original document to the new document

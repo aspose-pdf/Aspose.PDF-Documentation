@@ -324,6 +324,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
     
     using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {   
+        // Bind PDF document
         sign.BindPdf(dataDir + "input.pdf");
         // Create PKCS#7 object to sign
         var pkcs7 = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);// You can use PKCS7Detached with digest algorithm argument

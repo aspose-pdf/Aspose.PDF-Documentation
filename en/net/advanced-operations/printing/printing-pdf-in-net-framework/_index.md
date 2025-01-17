@@ -226,7 +226,7 @@ private static void PrintWithPrintDialog()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open PDF document
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing

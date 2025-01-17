@@ -262,7 +262,7 @@ private static void RedactPageWithFacadesApproach()
         // Redact a specific page region
         editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
 
-        // Bind the PDF document
+        // Bind PDF document
         editor.BindPdf(dataDir + "input.pdf");
 
         // Save the result document

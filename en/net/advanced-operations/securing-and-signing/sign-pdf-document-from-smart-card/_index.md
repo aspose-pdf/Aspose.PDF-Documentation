@@ -225,6 +225,7 @@ private static void SignWithExternalService()
     {
         using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
         {
+            // Bind PDF document
             sign.BindPdf(document);
             
             // Get public certificate

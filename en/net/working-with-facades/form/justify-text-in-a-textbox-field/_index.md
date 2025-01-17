@@ -96,7 +96,7 @@ private static void JustifyTextInTextboxField()
         {
             // Create Form Object
             var form = new Aspose.Pdf.Facades.Form();
-            // Open Source File
+            // Bind PDF document
             form.BindPdf(source);
             // Fill Text Field
             form.FillField("Text1", "Thank you for using Aspose");
@@ -115,7 +115,7 @@ private static void JustifyTextInTextboxField()
                     formEditor.Facade.Alignment = Aspose.Pdf.Facades.FormFieldFacade.AlignJustified;
                     // Decorate form field
                     formEditor.DecorateField();
-                    // Save the resultant file
+                    // Save PDF document
                     formEditor.Save(dest);
                 }
             }

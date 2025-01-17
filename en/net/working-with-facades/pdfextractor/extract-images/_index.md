@@ -86,6 +86,7 @@ private static void ExtractImagesWholePDF()
     // Open PDF document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
         // Extract all the images
@@ -114,6 +115,7 @@ private static void ExtractImagesWholePDFStreams()
     // Open PDF document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
         // Extract images
@@ -149,6 +151,7 @@ private static void ExtractImagesParticularPage()
     // Open PDF document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
         // Set StartPage and EndPage properties to the page number to
@@ -189,6 +192,7 @@ private static void ExtractImagesRangePages()
     // Open input PDF
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
         // Set StartPage and EndPage properties to the page number to
@@ -233,6 +237,7 @@ private static void ExtractImagesImageExtractionMode()
     // Open PDF document
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
         // Specify Image Extraction Mode

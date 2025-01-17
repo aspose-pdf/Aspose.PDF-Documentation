@@ -131,6 +131,7 @@ private static void AddTwoSignature()
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
 
         // Sign with 2nd signature
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
 
         // Create a rectangle for 2nd signature location
