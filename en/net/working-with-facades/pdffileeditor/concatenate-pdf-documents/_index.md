@@ -181,15 +181,10 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
                         {
                             // Write byte array contents in the output file stream
                             output.Write(data, 0, data.Length);
-                            // Close output file
-                            output.Close(); 
                         }
                     }
                 }
             }
-            // Close input files
-            fs1.Close();
-            fs2.Close();
         }
     }
 }

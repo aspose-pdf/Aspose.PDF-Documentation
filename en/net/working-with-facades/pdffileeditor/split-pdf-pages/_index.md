@@ -137,7 +137,6 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
         using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
         {
             outStream.WriteTo(outFileStream);
-            outFileStream.Close();
             fileNumber++;
         }
     }
@@ -170,7 +169,6 @@ private static void SplitPdfPagesToBulkUsingStreams()
             using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
             {
                 outStream.WriteTo(outFileStream);
-                outFileStream.Close();
                 fileNumber++;
             }
         }
@@ -246,7 +244,6 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
         using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
         {
             outStream.WriteTo(outFileStream);
-            outFileStream.Close();
             fileNumber++;
         }
     }
@@ -277,7 +274,6 @@ private static void SplitPdfToIndividualPagesUsingStreams()
             using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
             {
                 outStream.WriteTo(outFileStream);
-                outFileStream.Close();
                 fileNumber++;
             }
         }
