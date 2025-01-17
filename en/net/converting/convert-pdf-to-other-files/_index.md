@@ -108,7 +108,7 @@ private static void ConvertPDFtoEPUB()
         EpubSaveOptions options = new EpubSaveOptions();
         // Specify the layout for contents
         options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
-        
+
         // Save ePUB document
         document.Save(dataDir + "PDFToEPUB_out.epub", options);
     }
@@ -289,10 +289,10 @@ private static void ConvertPDFtoMarkup()
     var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
-    using (Document document = new Document(dataDir + "demo.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
         // Create an instance of MarkdownSaveOptions to configure the Markdown export settings
-        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
+        var saveOptions = new MarkdownSaveOptions()
         {
             // Set to false to prevent the use of HTML <img> tags for images in the Markdown output
             UseImageHtmlTag = false

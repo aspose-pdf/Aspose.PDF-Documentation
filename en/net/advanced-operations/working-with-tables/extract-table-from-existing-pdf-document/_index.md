@@ -131,7 +131,7 @@ private static void ExtractTableBorder()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         Stack graphicsState = new Stack();
         using (var bitmap = new System.Drawing.Bitmap((int)document.Pages[1].PageInfo.Width, (int)document.Pages[1].PageInfo.Height))

@@ -141,12 +141,12 @@ private static void ExtractPortfolioFiles()
     var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "PDFPortfolio.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
     {
         // Get collection of embedded files
-        EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
         // Iterate through individual file of Portfolio
-        foreach (FileSpecification fileSpecification in embeddedFiles)
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
         {
             // Get the attachment and write to file or stream
             byte[] fileContent = new byte[fileSpecification.Contents.Length];

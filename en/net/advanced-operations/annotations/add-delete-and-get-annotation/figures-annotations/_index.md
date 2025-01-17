@@ -675,18 +675,20 @@ private static void DeleteCircleAnnotation()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 	
     // Open PDF document
-    Document document = new Document(dataDir + "Appartments_mod.pdf");
-    var circleAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Circle)
-        .Cast<CircleAnnotation>();
-
-    foreach (var ca in circleAnnotations)
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
     {
-        document.Pages[1].Annotations.Delete(ca);
-    }
+        var circleAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == AnnotationType.Circle)
+            .Cast<Aspose.Pdf.Annotations.CircleAnnotation>();
 
-    // Save PDF document
-    document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
+        foreach (var ca in circleAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(ca);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
+    }
 }
 ```
 

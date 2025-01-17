@@ -410,7 +410,7 @@ private static void AddSvgObjectToTable()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
-    using (var document = new Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Create an image instance
         Aspose.Pdf.Image img = new Aspose.Pdf.Image();
