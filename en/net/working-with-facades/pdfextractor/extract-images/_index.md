@@ -265,7 +265,7 @@ private static void CheckIfPdfContainsTextOrImages()
     // Instantiate PdfExtractor object
     using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        // Bind the input PDF document to extractor
+        // Bind PDF document
         extractor.BindPdf(dataDir + "FilledForm.pdf");
         // Extract text from the input PDF document
         extractor.ExtractText();
