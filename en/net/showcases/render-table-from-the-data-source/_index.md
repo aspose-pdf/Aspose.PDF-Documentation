@@ -95,7 +95,7 @@ private static void AddTable()
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        document.Pages.Add();
+        var page = document.Pages.Add();
 
         var table = new Aspose.Pdf.Table
         {
@@ -125,7 +125,7 @@ private static void AddTable()
         }
 
         // Add table object to first page of input document
-        document.Pages[1].Paragraphs.Add(table);
+        page.Paragraphs.Add(table);
 
         // Save PDF document
         document.Save(dataDir + "AddTable_out.pdf");
@@ -146,7 +146,7 @@ private static void AddTable()
     using var document = new Aspose.Pdf.Document();
 
     // Add page
-    document.Pages.Add();
+    var page = document.Pages.Add();
 
     var table = new Aspose.Pdf.Table
     {
@@ -176,7 +176,7 @@ private static void AddTable()
     }
 
     // Add table object to first page of input document
-    document.Pages[1].Paragraphs.Add(table);
+    page.Paragraphs.Add(table);
 
     // Save PDF document
     document.Save(dataDir + "AddTable_out.pdf");
