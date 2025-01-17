@@ -477,9 +477,11 @@ private static void AddHtmlInsideTableCell()
     dr[0] = "<li>UPHS/Presbyterian - Dept. of Emergency Medicine: 51 N. 39th Street . Philadelphia PA 19104-2640</li>";
     dt.Rows.Add(dr);
 
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         // Initializes a new instance of the Table
         Aspose.Pdf.Table tableProvider = new Aspose.Pdf.Table();
         //Set column widths of the table
@@ -496,7 +498,7 @@ private static void AddHtmlInsideTableCell()
 
         tableProvider.ImportDataTable(dt, false, 0, 0, 3, 1, true);
 
-        document.Pages[1].Paragraphs.Add(tableProvider);
+        page.Paragraphs.Add(tableProvider);
 
         // Save PDF document
         document.Save(dataDir + "HTMLInsideTableCell_out.pdf");
