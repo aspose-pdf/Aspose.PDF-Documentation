@@ -157,7 +157,7 @@ private static void DetermineTableBreak()
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        Aspose.Pdf.Page page = pdf.Pages.Add();
+        var page = pdf.Pages.Add();
         // Instantiate a table object
         Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
         table1.Margin.Top = 300;
@@ -229,7 +229,7 @@ private static void AddRepeatingColumn()
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
-        Aspose.Pdf.Page page = document.Pages.Add();
+        var page = document.Pages.Add();
 
         // Instantiate an outer table that takes up the entire page
         Aspose.Pdf.Table outerTable = new Aspose.Pdf.Table();
