@@ -130,7 +130,7 @@ private static void MakeBookletOfPdfUsingPageSizeSpecifiedLeftAndRightPagesAndFi
 
 ## Make Booklet of PDF Using Specified Left and Right Pages, and File Paths
 
-[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also specify particular pages for the left and right sides of the output PDF file with this overlaod.color:#000000}The following code snippet shows you how to make booklet using specified left and right pages and file paths.
+[MakeBooklet](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/makebooklet/index)  method of [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) class allows you to make booklet of the input PDF file and save it to the output PDF file. This overload allows you to make booklet using file paths. You can also specify particular pages for the left and right sides of the output PDF file with this overload.color:#000000}The following code snippet shows you how to make booklet using specified left and right pages and file paths.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
