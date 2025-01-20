@@ -129,7 +129,3 @@ private static void ModifyAnnotations()
     }
 }
 ```
-
-## See also
-
-Try to compare and find a way to work with annotations that suits you. Lets learn [PDF Annotations](/pdf/net/annotations/) section.
