@@ -181,15 +181,10 @@ private static void ConcatenateMultiplePdfFilesUsingMemoryStreams()
                         {
                             // Write byte array contents in the output file stream
                             output.Write(data, 0, data.Length);
-                            // Close output file
-                            output.Close(); 
                         }
                     }
                 }
             }
-            // Close input files
-            fs1.Close();
-            fs2.Close();
         }
     }
 }
@@ -321,6 +316,7 @@ private static void ConcatenatePdfFiles()
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
 
+    // Open PDF documents
     using (var outputStream = new FileStream(outFile, FileMode.Create))
     {
         using (var stream1 = new FileStream(inputFile1, FileMode.Open))
@@ -387,7 +383,7 @@ private static void CreateLocalLinks()
     var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Concatenate();
     // Now we need to add Heading for Table Of Contents and links for documents
     var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
-    // Bind PDF document in which we added the blank page
+    // Bind PDF document
     contentEditor.BindPdf(dataDir + "ConcatenatePdfFilesAndCreateTOC_out.pdf");
     // Create link for first document
     contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);
@@ -431,7 +427,7 @@ private static void CompleteCode()
                 {
                     // Add Table Of Contents logo as stamp to PDF file
                     var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp();
-                    // Find the input file
+                    // Bind PDF document
                     fileStamp.BindPdf(documentWithBlankPage);
 
                     // Set Text Stamp to display string Table Of Contents
@@ -473,7 +469,7 @@ private static void CompleteCode()
 
                     // Now we need to add Heading for Table Of Contents and links for documents
                     var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
-                    // Bind PDF document in which we added the blank page
+                    // Bind PDF document
                     contentEditor.BindPdf(documentWithTocHeading);
                     // Create link for first document
                     contentEditor.CreateLocalLink(new System.Drawing.Rectangle(150, 650, 100, 20), 2, 1, System.Drawing.Color.Transparent);

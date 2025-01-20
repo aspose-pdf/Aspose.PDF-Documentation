@@ -102,10 +102,10 @@ private static void ValidateToPdfA1aStandard()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
-	{
-		// Validate PDF for PDF/A-1a
-		document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1A);
-	}
+    {
+        // Validate PDF for PDF/A-1a
+        document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1A);
+    }
 }
 ```
 
@@ -120,10 +120,10 @@ private static void ValidateToPdfA1bStandard()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
-	{
-		// Validate PDF for PDF/A-1b
-		document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1B);
-	}
+    {
+        // Validate PDF for PDF/A-1b
+        document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1B);
+    }
 }
 ```
 
@@ -150,47 +150,47 @@ private static void AddTOCToPdf()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
-	{
-		// Get access to the first page of PDF file
-		var tocPage = document.Pages.Insert(1);
+    {
+        // Get access to the first page of PDF file
+        var tocPage = document.Pages.Insert(1);
 
-		// Create an object to represent TOC information
-		var tocInfo = new Aspose.Pdf.TocInfo();
-		var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
-		title.TextState.FontSize = 20;
-		title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        // Create an object to represent TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 20;
+        title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
-		// Set the title for TOC
-		tocInfo.Title = title;
-		tocPage.TocInfo = tocInfo;
+        // Set the title for TOC
+        tocInfo.Title = title;
+        tocPage.TocInfo = tocInfo;
 
-		// Create string objects which will be used as TOC elements
-		string[] titles = { "First page", "Second page", "Third page", "Fourth page" };
+        // Create string objects which will be used as TOC elements
+        string[] titles = { "First page", "Second page", "Third page", "Fourth page" };
 
-		for (int i = 0; i < 2; i++)
-		{
-			// Create Heading object
-			var heading = new Aspose.Pdf.Heading(1);
-			var segment = new Aspose.Pdf.Text.TextSegment();
-			heading.TocPage = tocPage;
-			heading.Segments.Add(segment);
+        for (int i = 0; i < 2; i++)
+        {
+            // Create Heading object
+            var heading = new Aspose.Pdf.Heading(1);
+            var segment = new Aspose.Pdf.Text.TextSegment();
+            heading.TocPage = tocPage;
+            heading.Segments.Add(segment);
 
-			// Specify the destination page for the heading object
-			heading.DestinationPage = document.Pages[i + 2];
+            // Specify the destination page for the heading object
+            heading.DestinationPage = document.Pages[i + 2];
 
-			// Destination page
-			heading.Top = document.Pages[i + 2].Rect.Height;
+            // Destination page
+            heading.Top = document.Pages[i + 2].Rect.Height;
 
-			// Destination coordinate
-			segment.Text = titles[i];
+            // Destination coordinate
+            segment.Text = titles[i];
 
-			// Add heading to the page containing TOC
-			tocPage.Paragraphs.Add(heading);
-		}
+            // Add heading to the page containing TOC
+            tocPage.Paragraphs.Add(heading);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TOC_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TOC_out.pdf");
+    }
 }
 ```
 
@@ -207,73 +207,73 @@ private static void CreateTocWithCustomFormatting()
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
-	{
-		// Add a TOC page
-		var tocPage = document.Pages.Add();
+    {
+        // Add a TOC page
+        var tocPage = document.Pages.Add();
 
-		// Create TOC information
-		var tocInfo = new Aspose.Pdf.TocInfo();
+        // Create TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
 
-		// Set LeaderType
-		tocInfo.LineDash = Aspose.Pdf.Text.TabLeaderType.Solid;
+        // Set LeaderType
+        tocInfo.LineDash = Aspose.Pdf.Text.TabLeaderType.Solid;
 
-		// Set the title for TOC
-		var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
-		title.TextState.FontSize = 30;
-		tocInfo.Title = title;
+        // Set the title for TOC
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 30;
+        tocInfo.Title = title;
 
-		// Add the TOC section to the document
-		tocPage.TocInfo = tocInfo;
+        // Add the TOC section to the document
+        tocPage.TocInfo = tocInfo;
 
-		// Define the format of the four levels list by setting the left margins
-		// and text format settings of each level
-		tocInfo.FormatArrayLength = 4;
+        // Define the format of the four levels list by setting the left margins
+        // and text format settings of each level
+        tocInfo.FormatArrayLength = 4;
 
-		// Level 1
-		tocInfo.FormatArray[0].Margin.Left = 0;
-		tocInfo.FormatArray[0].Margin.Right = 30;
-		tocInfo.FormatArray[0].LineDash = Aspose.Pdf.Text.TabLeaderType.Dot;
-		tocInfo.FormatArray[0].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
+        // Level 1
+        tocInfo.FormatArray[0].Margin.Left = 0;
+        tocInfo.FormatArray[0].Margin.Right = 30;
+        tocInfo.FormatArray[0].LineDash = Aspose.Pdf.Text.TabLeaderType.Dot;
+        tocInfo.FormatArray[0].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
 
-		// Level 2
-		tocInfo.FormatArray[1].Margin.Left = 10;
-		tocInfo.FormatArray[1].Margin.Right = 30;
-		tocInfo.FormatArray[1].LineDash = Aspose.Pdf.Text.TabLeaderType.None;
-		tocInfo.FormatArray[1].TextState.FontSize = 10;
+        // Level 2
+        tocInfo.FormatArray[1].Margin.Left = 10;
+        tocInfo.FormatArray[1].Margin.Right = 30;
+        tocInfo.FormatArray[1].LineDash = Aspose.Pdf.Text.TabLeaderType.None;
+        tocInfo.FormatArray[1].TextState.FontSize = 10;
 
-		// Level 3
-		tocInfo.FormatArray[2].Margin.Left = 20;
-		tocInfo.FormatArray[2].Margin.Right = 30;
-		tocInfo.FormatArray[2].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        // Level 3
+        tocInfo.FormatArray[2].Margin.Left = 20;
+        tocInfo.FormatArray[2].Margin.Right = 30;
+        tocInfo.FormatArray[2].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
-		// Level 4
-		tocInfo.FormatArray[3].LineDash = Aspose.Pdf.Text.TabLeaderType.Solid;
-		tocInfo.FormatArray[3].Margin.Left = 30;
-		tocInfo.FormatArray[3].Margin.Right = 30;
-		tocInfo.FormatArray[3].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        // Level 4
+        tocInfo.FormatArray[3].LineDash = Aspose.Pdf.Text.TabLeaderType.Solid;
+        tocInfo.FormatArray[3].Margin.Left = 30;
+        tocInfo.FormatArray[3].Margin.Right = 30;
+        tocInfo.FormatArray[3].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
-		// Create a section in the Pdf document
-		var page = document.Pages.Add();
+        // Create a section in the Pdf document
+        var page = document.Pages.Add();
 
-		// Add four headings in the section
-		for (int level = 1; level <= 4; level++)
-		{
-			var heading = new Aspose.Pdf.Heading(level);
-			var segment = new Aspose.Pdf.Text.TextSegment();
-			heading.Segments.Add(segment);
-			heading.IsAutoSequence = true;
-			heading.TocPage = tocPage;
-			segment.Text = "Sample Heading " + level;
-			heading.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial Unicode MS");
+        // Add four headings in the section
+        for (int level = 1; level <= 4; level++)
+        {
+            var heading = new Aspose.Pdf.Heading(level);
+            var segment = new Aspose.Pdf.Text.TextSegment();
+            heading.Segments.Add(segment);
+            heading.IsAutoSequence = true;
+            heading.TocPage = tocPage;
+            segment.Text = "Sample Heading " + level;
+            heading.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial Unicode MS");
 
-			// Add the heading into Table Of Contents.
-			heading.IsInList = true;
-			page.Paragraphs.Add(heading);
-		}
+            // Add the heading into Table Of Contents.
+            heading.IsInList = true;
+            page.Paragraphs.Add(heading);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TOC_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TOC_out.pdf");
+    }
 }
 ```
 
@@ -290,63 +290,63 @@ private static void CreateTocWithHiddenPageNumbers()
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
-	{
-		// Add a TOC page
-		var tocPage = document.Pages.Add();
+    {
+        // Add a TOC page
+        var tocPage = document.Pages.Add();
 
-		// Create TOC information
-		var tocInfo = new Aspose.Pdf.TocInfo();
+        // Create TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
 
-		// Set the title for TOC
-		var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
-		title.TextState.FontSize = 20;
-		title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
-		tocInfo.Title = title;
+        // Set the title for TOC
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 20;
+        title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        tocInfo.Title = title;
 
-		// Add the TOC section to the document
-		tocPage.TocInfo = tocInfo;
+        // Add the TOC section to the document
+        tocPage.TocInfo = tocInfo;
 
-		// Hide page numbers in TOC
-		tocInfo.IsShowPageNumbers = false;
+        // Hide page numbers in TOC
+        tocInfo.IsShowPageNumbers = false;
 
-		// Define the format of the four levels list by setting the left margins and
-		// text format settings of each level
-		tocInfo.FormatArrayLength = 4;
+        // Define the format of the four levels list by setting the left margins and
+        // text format settings of each level
+        tocInfo.FormatArrayLength = 4;
 
-		// Level 1
-		tocInfo.FormatArray[0].Margin.Right = 0;
-		tocInfo.FormatArray[0].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
+        // Level 1
+        tocInfo.FormatArray[0].Margin.Right = 0;
+        tocInfo.FormatArray[0].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
 
-		// Level 2
-		tocInfo.FormatArray[1].Margin.Left = 30;
-		tocInfo.FormatArray[1].TextState.Underline = true;
-		tocInfo.FormatArray[1].TextState.FontSize = 10;
+        // Level 2
+        tocInfo.FormatArray[1].Margin.Left = 30;
+        tocInfo.FormatArray[1].TextState.Underline = true;
+        tocInfo.FormatArray[1].TextState.FontSize = 10;
 
-		// Level 3
-		tocInfo.FormatArray[2].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        // Level 3
+        tocInfo.FormatArray[2].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
-		// Level 4
-		tocInfo.FormatArray[3].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        // Level 4
+        tocInfo.FormatArray[3].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
-		// Create a section in the Pdf document
-		var page = document.Pages.Add();
+        // Create a section in the Pdf document
+        var page = document.Pages.Add();
 
-		// Add four headings in the section
-		for (int level = 1; level <= 4; level++)
-		{
-			var heading = new Aspose.Pdf.Heading(level);
-			var segment = new Aspose.Pdf.Text.TextSegment();
-			heading.TocPage = tocPage;
-			heading.Segments.Add(segment);
-			heading.IsAutoSequence = true;
-			segment.Text = "this is heading of level " + level;
-			heading.IsInList = true;
-			page.Paragraphs.Add(heading);
-		}
+        // Add four headings in the section
+        for (int level = 1; level <= 4; level++)
+        {
+            var heading = new Aspose.Pdf.Heading(level);
+            var segment = new Aspose.Pdf.Text.TextSegment();
+            heading.TocPage = tocPage;
+            heading.Segments.Add(segment);
+            heading.IsAutoSequence = true;
+            segment.Text = "this is heading of level " + level;
+            heading.IsInList = true;
+            page.Paragraphs.Add(heading);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TOC_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TOC_out.pdf");
+    }
 }
 ```
 
@@ -422,11 +422,11 @@ private static void SetExpiryDate()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
 
         // Add text fragment to paragraphs collection of page object
-        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World..."));
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World..."));
 
         // Create JavaScript object to set PDF expiry date
         var javaScript = new Aspose.Pdf.Annotations.JavascriptAction(

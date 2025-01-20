@@ -98,7 +98,7 @@ private static void RemoveTable()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "Table_input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input.pdf"))
     {
         // Create TableAbsorber object to find tables
         var absorber = new Aspose.Pdf.Text.TableAbsorber();

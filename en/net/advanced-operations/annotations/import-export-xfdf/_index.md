@@ -100,20 +100,20 @@ private static void ExportAnnotationsToXfdf()
 
     // Create PdfAnnotationEditor object
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
-	{
-		// Bind PDF document to the Annotation Editor
-		annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
+    {
+        // Bind PDF document
+        annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
 
-		// Define the annotation types to export
-		var annotType = new Aspose.Pdf.Annotations.AnnotationType[] { Aspose.Pdf.Annotations.AnnotationType.Line, Aspose.Pdf.Annotations.AnnotationType.Square };
+        // Define the annotation types to export
+        var annotType = new Aspose.Pdf.Annotations.AnnotationType[] { Aspose.Pdf.Annotations.AnnotationType.Line, Aspose.Pdf.Annotations.AnnotationType.Square };
 
-		// Export annotations to XFDF file
-		using (var fileStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
-		{
-			annotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
-			fileStream.Flush();
-		}
-	}
+        // Export annotations to XFDF file
+        using (var fileStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+        {
+            annotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
+            fileStream.Flush();
+        }
+    }
 }
 ```
 
@@ -128,25 +128,26 @@ private static void ImportAnnotationFromXfdf()
 
     // Create PdfAnnotationEditor object
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
-	{
-		// Create PDF document
-		using (var document = new Aspose.Pdf.Document())
-		{
-			document.Pages.Add();
+    {
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = document.Pages.Add();
 
-			// Bind the PDF document to the Annotation Editor
-			annotationEditor.BindPdf(document);
+            // Bind PDF document
+            annotationEditor.BindPdf(document);
 
-			// Define the export file name
-			var exportFileName = dataDir + "exportannotations.xfdf";
+            // Define the export file name
+            var exportFileName = dataDir + "exportannotations.xfdf";
 
-			// Import annotations from the XFDF file
-			annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+            // Import annotations from the XFDF file
+            annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
 
-			// Save PDF document
-			document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
-		}
-	}
+            // Save PDF document
+            document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
+        }
+    }
 }
 ```
 
@@ -163,23 +164,24 @@ private static void ImportAnnotationFromPDF()
 
     // Open PDF document
     using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
-	{
-		// Create PDF document
-		using (var documentTo = new Aspose.Pdf.Document())
-		{
-			documentTo.Pages.Add();
+    {
+        // Create PDF document
+        using (var documentTo = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = documentTo.Pages.Add();
 
-			// Export/import
-			using (var ms = new MemoryStream())
-			{
-				documentFrom.ExportAnnotationsToXfdf(ms);
-				documentTo.ImportAnnotationsFromXfdf(ms);
-			}
+            // Export/import
+            using (var ms = new MemoryStream())
+            {
+                documentFrom.ExportAnnotationsToXfdf(ms);
+                documentTo.ImportAnnotationsFromXfdf(ms);
+            }
 
-			// Save PDF document
-			documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
-		}
-	}
+            // Save PDF document
+            documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
+        }
+    }
 }
 ```
 

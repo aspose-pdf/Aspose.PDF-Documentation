@@ -100,7 +100,7 @@ Currently, the following copilots available:
 private static async Task GetSummary()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -141,7 +141,7 @@ private static async Task GetSummary()
 private static async Task GetSummary()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -187,7 +187,7 @@ The provided code demonstrates the creation of an OpenAI client, configuration o
 private static async Task ChatWithDocument()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -247,7 +247,7 @@ private static async Task ChatWithDocument()
 private static async Task ChatWithDocument()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -312,7 +312,7 @@ The provided code snippet demonstrates the creation of an OpenAI client, configu
 private static async Task CreateImageDescriptions()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -343,7 +343,7 @@ private static async Task CreateImageDescriptions()
         List<Aspose.Pdf.AI.ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescriptionsAsync();
 
         // Use extension method to add image descriptions to attached documents
-        await copilot.AddPdfImageDescriptionsAsync("OutputDirectory");
+        await copilot.AddPdfImageDescriptionsAsync(dataDir);
     }
 }
 ```
@@ -355,7 +355,7 @@ private static async Task CreateImageDescriptions()
 private static async Task CreateImageDescriptions()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
@@ -386,7 +386,7 @@ private static async Task CreateImageDescriptions()
     List<Aspose.Pdf.AI.ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescriptionsAsync();
 
     // Use extension method to add image descriptions to attached documents
-    await copilot.AddPdfImageDescriptionsAsync("OutputDirectory");
+    await copilot.AddPdfImageDescriptionsAsync(dataDir);
 }
 ```
 {{< /tab >}}
@@ -450,7 +450,7 @@ private static async Task ChatWithLlama()
 private static async Task GenerateSummary()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
         .CreateWithApiKey(ApiKey) // Create Llama client with the API key
@@ -492,7 +492,7 @@ private static async Task GenerateSummary()
 private static async Task GenerateSummary()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
 
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
         .CreateWithApiKey(ApiKey) // Create Llama client with the API key

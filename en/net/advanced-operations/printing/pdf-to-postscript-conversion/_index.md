@@ -173,7 +173,8 @@ private static void CheckingPrintJobStatus()
         // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-        viewer.AutoResize = true;       // Print the file with adjusted size
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
 
         // Hide printing dialog
         viewer.PrintPageDialog = false;
@@ -240,7 +241,8 @@ private static void CheckingPrintJobStatus()
     // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-    viewer.AutoResize = true;       // Print the file with adjusted size
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
 
     // Hide printing dialog
     viewer.PrintPageDialog = false;
@@ -491,9 +493,12 @@ private static void PrintUsingSpoolerApi()
         viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -592,9 +597,12 @@ private static void PrintUsingSpoolerApi()
     viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings
     var ps = new Aspose.Pdf.Printing.PrinterSettings();

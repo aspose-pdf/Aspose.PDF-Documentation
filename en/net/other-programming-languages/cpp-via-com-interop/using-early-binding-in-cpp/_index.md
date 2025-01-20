@@ -111,7 +111,7 @@ using namespace System;
 String ^earlyBinding(String ^file)
 {
     String ^text;
-    // create ComHelper
+    // Create ComHelper
 
     Aspose_Pdf::_ComHelperPtr comHelperPtr;
     HRESULT hr = comHelperPtr.CreateInstance(__uuidof(Aspose_Pdf::ComHelper));
@@ -121,26 +121,26 @@ String ^earlyBinding(String ^file)
     }
     else
     {
-        // set license
+        // Set license
         Aspose_Pdf::_LicensePtr licPtr;
         licPtr.CreateInstance(__uuidof(Aspose_Pdf::License));
         licPtr->SetLicense("C:\\Temp\\Aspose.PDF.lic");
         licPtr.Release();
 
-        // get Document
+        // Get Document
         Aspose_Pdf::_DocumentPtr docPtr;
         docPtr = comHelperPtr->OpenFile((BSTR)System::Runtime::InteropServices::Marshal::StringToBSTR(file).ToPointer());
 
         comHelperPtr.Release();
 
-        // create Absorber
+        // Create Absorber
         Aspose_Pdf::_TextAbsorberPtr absorberPtr;
         HRESULT hRes = absorberPtr.CreateInstance(__uuidof(Aspose_Pdf::TextAbsorber));
 
-        // browse text
+        // Browse text
         docPtr->GetPages()->Accept_4(absorberPtr);
 
-        // retrieve text
+        // Retrieve text
         BSTR extractedText = absorberPtr->GetText();
         text = gcnew String(extractedText);
         docPtr.Release();

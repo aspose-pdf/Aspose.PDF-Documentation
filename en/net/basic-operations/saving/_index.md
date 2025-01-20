@@ -146,7 +146,7 @@ private static void SaveDocumentAsPDFx()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
     {
-        // Add a new page
+        // Add page
         document.Pages.Add();
         // Convert a document to a PDF/X-3 format
         document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));

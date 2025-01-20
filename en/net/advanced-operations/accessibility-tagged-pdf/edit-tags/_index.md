@@ -102,6 +102,7 @@ private static void EditTags()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "EditTags.pdf"))
     {
+        // Get first page 
         var page = document.Pages[1];
         // The marked content operator on page for the image.
         Aspose.Pdf.Operators.BDC imageBdc = null;
@@ -326,6 +327,7 @@ private static void EditTags()
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "EditTags.pdf");
 
+    // Get first page
     var page = document.Pages[1];
     // The marked content operator on page for the image.
     Aspose.Pdf.Operators.BDC imageBdc = null;

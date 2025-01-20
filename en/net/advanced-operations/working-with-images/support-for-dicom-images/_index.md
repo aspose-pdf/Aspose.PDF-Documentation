@@ -90,8 +90,8 @@ private static void AddDicomImageToPDF()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to the document
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
 
         // Create an image instance and set its properties
         var image = new Aspose.Pdf.Image
@@ -101,7 +101,7 @@ private static void AddDicomImageToPDF()
         };
 
         // Add image to the first page
-        document.Pages[1].Paragraphs.Add(image);
+        page.Paragraphs.Add(image);
 
         // Save PDF document
         document.Save(dataDir + "PdfWithDicomImage_out.pdf");

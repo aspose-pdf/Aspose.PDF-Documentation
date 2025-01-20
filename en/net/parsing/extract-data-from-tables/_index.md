@@ -207,10 +207,10 @@ private static void ExtractTableSaveExcel()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate ExcelSave Option object
-        ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
+        Aspose.Pdf.ExcelSaveOptions excelSave = new Aspose.Pdf.ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 
         // Save the output in XLS format
         document.Save(dataDir + "ExtractTableSaveXLS_out.xlsx", excelSave);

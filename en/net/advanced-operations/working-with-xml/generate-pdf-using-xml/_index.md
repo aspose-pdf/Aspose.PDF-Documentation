@@ -671,17 +671,14 @@ private static void ExampleXslfoToPdfParam_21_7()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    string xmlInputFile = dataDir + "employees.xml";
-    string xsltInputFile = dataDir + "employees.xslt";
-
     // Instantiate XslFoLoadOption object
-    var options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
     options.XsltArgumentList = new XsltArgumentList();
     options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
     // Open XML file
-    using (var document = new Aspose.Pdf.Document(xmlInputFile, options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
     {
         // Save PDF document
         document.Save(dataDir + "XSLFO_out.pdf");
@@ -698,17 +695,14 @@ private static void ExampleXslfoToPdfParam_21_7()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    string xmlInputFile = dataDir + "employees.xml";
-    string xsltInputFile = dataDir + "employees.xslt";
-
     // Instantiate XslFoLoadOption object
-    var options = new Aspose.Pdf.XslFoLoadOptions(xsltInputFile);
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
     options.XsltArgumentList = new XsltArgumentList();
     options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
     // Open XML file
-    using var document = new Aspose.Pdf.Document(xmlInputFile, options);
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
 
     // Save PDF document
     document.Save(dataDir + "XSLFO_out.pdf");

@@ -112,7 +112,7 @@ private static void AddHyperlink()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
     {
-        // Create link
+        // Get page
         var page = document.Pages[1];
         // Create Link annotation object
         var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
@@ -153,7 +153,7 @@ private static void AddHyperlink()
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
-    // Create link
+    // Get page
     var page = document.Pages[1];
     // Create Link annotation object
     var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
@@ -202,7 +202,7 @@ private static void AddHyperlink()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
         // Create Text Fragment instance
         var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
@@ -244,7 +244,7 @@ private static void AddHyperlink()
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
-    // Add page to pages collection of PDF file
+    // Add page
     var page = document.Pages.Add();
     // Create Text Fragment instance
     var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");

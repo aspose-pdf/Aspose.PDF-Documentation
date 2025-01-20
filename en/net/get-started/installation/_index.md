@@ -285,7 +285,7 @@ class Program
         // Create PDF document
         using (var document = new Aspose.Pdf.Document())
         {
-            // Add a page to the document
+            // Add page
             var page = document.Pages.Add();
             
             // Create a text fragment

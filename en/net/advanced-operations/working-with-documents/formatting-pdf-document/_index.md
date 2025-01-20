@@ -108,43 +108,43 @@ private static void GetDocumentWindowProperties()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
-	{
-		// Get different document properties
-		// Position of document's window - Default: false
-		Console.WriteLine("CenterWindow : {0}", document.CenterWindow);
+    {
+        // Get different document properties
+        // Position of document's window - Default: false
+        Console.WriteLine("CenterWindow : {0}", document.CenterWindow);
 
-		// Predominant reading order; determines the position of page
-		// When displayed side by side - Default: L2R
-		Console.WriteLine("Direction : {0}", document.Direction);
+        // Predominant reading order; determines the position of page
+        // When displayed side by side - Default: L2R
+        Console.WriteLine("Direction : {0}", document.Direction);
 
-		// Whether window's title bar should display document title
-		// If false, title bar displays PDF file name - Default: false
-		Console.WriteLine("DisplayDocTitle : {0}", document.DisplayDocTitle);
+        // Whether window's title bar should display document title
+        // If false, title bar displays PDF file name - Default: false
+        Console.WriteLine("DisplayDocTitle : {0}", document.DisplayDocTitle);
 
-		// Whether to resize the document's window to fit the size of
-		// First displayed page - Default: false
-		Console.WriteLine("FitWindow : {0}", document.FitWindow);
+        // Whether to resize the document's window to fit the size of
+        // First displayed page - Default: false
+        Console.WriteLine("FitWindow : {0}", document.FitWindow);
 
-		// Whether to hide menu bar of the viewer application - Default: false
-		Console.WriteLine("HideMenuBar : {0}", document.HideMenubar);
+        // Whether to hide menu bar of the viewer application - Default: false
+        Console.WriteLine("HideMenuBar : {0}", document.HideMenubar);
 
-		// Whether to hide tool bar of the viewer application - Default: false
-		Console.WriteLine("HideToolBar : {0}", document.HideToolBar);
+        // Whether to hide tool bar of the viewer application - Default: false
+        Console.WriteLine("HideToolBar : {0}", document.HideToolBar);
 
-		// Whether to hide UI elements like scroll bars
-		// And leaving only the page contents displayed - Default: false
-		Console.WriteLine("HideWindowUI : {0}", document.HideWindowUI);
+        // Whether to hide UI elements like scroll bars
+        // And leaving only the page contents displayed - Default: false
+        Console.WriteLine("HideWindowUI : {0}", document.HideWindowUI);
 
-		// Document's page mode. How to display document on exiting full-screen mode.
-		Console.WriteLine("NonFullScreenPageMode : {0}", document.NonFullScreenPageMode);
+        // Document's page mode. How to display document on exiting full-screen mode.
+        Console.WriteLine("NonFullScreenPageMode : {0}", document.NonFullScreenPageMode);
 
-		// The page layout i.e. single page, one column
-		Console.WriteLine("PageLayout : {0}", document.PageLayout);
+        // The page layout i.e. single page, one column
+        Console.WriteLine("PageLayout : {0}", document.PageLayout);
 
-		// How the document should display when opened
-		// I.e. show thumbnails, full-screen, show attachment panel
-		Console.WriteLine("PageMode : {0}", document.PageMode);
-	}
+        // How the document should display when opened
+        // I.e. show thumbnails, full-screen, show attachment panel
+        Console.WriteLine("PageMode : {0}", document.PageMode);
+    }
 }
 ```
 
@@ -180,46 +180,46 @@ private static void SetDocumentWindowProperties()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
-	{
-		// Set different document properties
-		// Specify to position document's window - Default: false
-		document.CenterWindow = true;
+    {
+        // Set different document properties
+        // Specify to position document's window - Default: false
+        document.CenterWindow = true;
 
-		// Predominant reading order; determines the position of page
-		// When displayed side by side - Default: L2R
-		document.Direction = Aspose.Pdf.Direction.R2L;
+        // Predominant reading order; determines the position of page
+        // When displayed side by side - Default: L2R
+        document.Direction = Aspose.Pdf.Direction.R2L;
 
-		// Specify whether window's title bar should display document title
-		// If false, title bar displays PDF file name - Default: false
-		document.DisplayDocTitle = true;
+        // Specify whether window's title bar should display document title
+        // If false, title bar displays PDF file name - Default: false
+        document.DisplayDocTitle = true;
 
-		// Specify whether to resize the document's window to fit the size of
-		// First displayed page - Default: false
-		document.FitWindow = true;
+        // Specify whether to resize the document's window to fit the size of
+        // First displayed page - Default: false
+        document.FitWindow = true;
 
-		// Specify whether to hide menu bar of the viewer application - Default: false
-		document.HideMenubar = true;
+        // Specify whether to hide menu bar of the viewer application - Default: false
+        document.HideMenubar = true;
 
-		// Specify whether to hide tool bar of the viewer application - Default: false
-		document.HideToolBar = true;
+        // Specify whether to hide tool bar of the viewer application - Default: false
+        document.HideToolBar = true;
 
-		// Specify whether to hide UI elements like scroll bars
-		// And leaving only the page contents displayed - Default: false
-		document.HideWindowUI = true;
+        // Specify whether to hide UI elements like scroll bars
+        // And leaving only the page contents displayed - Default: false
+        document.HideWindowUI = true;
 
-		// Document's page mode. Specify how to display document on exiting full-screen mode.
-		document.NonFullScreenPageMode = Aspose.Pdf.PageMode.UseOC;
+        // Document's page mode. Specify how to display document on exiting full-screen mode.
+        document.NonFullScreenPageMode = Aspose.Pdf.PageMode.UseOC;
 
-		// Specify the page layout i.e. single page, one column
-		document.PageLayout = Aspose.Pdf.PageLayout.TwoColumnLeft;
+        // Specify the page layout i.e. single page, one column
+        document.PageLayout = Aspose.Pdf.PageLayout.TwoColumnLeft;
 
-		// Specify how the document should display when opened
-		// I.e. show thumbnails, full-screen, show attachment panel
-		document.PageMode = Aspose.Pdf.PageMode.UseThumbs;
+        // Specify how the document should display when opened
+        // I.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseThumbs;
 
-		// Save PDF document
-		document.Save(dataDir + "SetDocumentWindow_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "SetDocumentWindow_out.pdf");
+    }
 }
 ```
 
@@ -250,29 +250,29 @@ private static void EmbedFontsType1ToPdf()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-    // Set EmbedStandardFonts property of document
-		document.EmbedStandardFonts = true;
+    {
+        // Set EmbedStandardFonts property of document
+        document.EmbedStandardFonts = true;
 
-		// Iterate through each page
-		foreach (var page in document.Pages)
-		{
-			if (page.Resources.Fonts != null)
-			{
-				foreach (var pageFont in page.Resources.Fonts)
-				{
-					// Check if font is already embedded
-					if (!pageFont.IsEmbedded)
-					{
-						pageFont.IsEmbedded = true;
-					}
-				}
-			}
-		}
+        // Iterate through each page
+        foreach (var page in document.Pages)
+        {
+            if (page.Resources.Fonts != null)
+            {
+                foreach (var pageFont in page.Resources.Fonts)
+                {
+                    // Check if font is already embedded
+                    if (!pageFont.IsEmbedded)
+                    {
+                        pageFont.IsEmbedded = true;
+                    }
+                }
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
-	}		
+        // Save PDF document
+        document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
+    }
 }
 ```
 
@@ -293,31 +293,31 @@ private static void EmbedFontWhileCreatingPdf()
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
-	{
-		// Create a section in the Pdf object
-		var page = document.Pages.Add();
+    {
+        // Create a section in the Pdf object
+        var page = document.Pages.Add();
 
-		// Create a TextFragment
-		var fragment = new Aspose.Pdf.Text.TextFragment("");
+        // Create a TextFragment
+        var fragment = new Aspose.Pdf.Text.TextFragment("");
 
-		// Create a TextSegment with sample text
-		var segment = new Aspose.Pdf.Text.TextSegment(" This is a sample text using Custom font.");
+        // Create a TextSegment with sample text
+        var segment = new Aspose.Pdf.Text.TextSegment(" This is a sample text using Custom font.");
 
-		// Create and configure TextState
-		var ts = new Aspose.Pdf.Text.TextState();
-		ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
-		ts.Font.IsEmbedded = true;
-		segment.TextState = ts;
+        // Create and configure TextState
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        ts.Font.IsEmbedded = true;
+        segment.TextState = ts;
 
-		// Add the segment to the fragment
-		fragment.Segments.Add(segment);
+        // Add the segment to the fragment
+        fragment.Segments.Add(segment);
 
-		// Add the fragment to the page
-		page.Paragraphs.Add(fragment);
+        // Add the fragment to the page
+        page.Paragraphs.Add(fragment);
 
-		// Save PDF Document
-		document.Save(dataDir + "EmbedFontWhileDocCreation_out.pdf");
-	}
+        // Save PDF Document
+        document.Save(dataDir + "EmbedFontWhileDocCreation_out.pdf");
+    }
 }
 ```
 
@@ -363,16 +363,16 @@ private static void GetAllFontsFromPdf()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Get all fonts used in the document
-		var fonts = document.FontUtilities.GetAllFonts();
+    {
+        // Get all fonts used in the document
+        var fonts = document.FontUtilities.GetAllFonts();
 
-		// Iterate through each font and print its name
-		foreach (var font in fonts)
-		{
-			Console.WriteLine(font.FontName);
-		}
-	}
+        // Iterate through each font and print its name
+        foreach (var font in fonts)
+        {
+            Console.WriteLine(font.FontName);
+        }
+    }
 }
 ```
 
@@ -389,16 +389,16 @@ private static void NotificationFontSubstitution()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Attach the FontSubstitution event handler
-		document.FontSubstitution += OnFontSubstitution;
-			// You can use lambda
-			// (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
-			//                                                                        oldFont.FontName, newFont.FontName));
+    {
+        // Attach the FontSubstitution event handler
+        document.FontSubstitution += OnFontSubstitution;
+        // You can use lambda
+        // (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
+        //                                                                        oldFont.FontName, newFont.FontName));
 
-		// Save PDF document
-		document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
+    }
 }
 ```
 
@@ -431,16 +431,16 @@ private static void SetFontSubsetStrategy()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// All fonts will be embedded as subset into document in case of SubsetAllFonts.
-		document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetAllFonts);
+    {
+        // All fonts will be embedded as subset into document in case of SubsetAllFonts.
+        document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetAllFonts);
 
-		// Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
-		document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+        // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
+        document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
 
-		// Save PDF document
-		document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
+    }
 }
 ```
 
@@ -463,14 +463,14 @@ private static void SetZoomFactor()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
-	{
-		// Create GoToAction with a specific zoom factor
-		var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
-		document.OpenAction = action;
+    {
+        // Create GoToAction with a specific zoom factor
+        var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
+        document.OpenAction = action;
 
-		// Save PDF document
-		document.Save(dataDir + "ZoomFactor_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "ZoomFactor_out.pdf");
+    }
 }
 ```
 
@@ -487,17 +487,17 @@ private static void GetZoomFactor()
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
-	{
-		// Create GoToAction object
-		if (document.OpenAction is Aspose.Pdf.Annotations.GoToAction action)
-		{
-			// Get the Zoom factor of PDF file
-			if (action.Destination is Aspose.Pdf.Annotations.XYZExplicitDestination destination)
-			{
-				System.Console.WriteLine(destination.Zoom); // Document zoom value;
-			}
-		}
-	}
+    {
+        // Create GoToAction object
+        if (document.OpenAction is Aspose.Pdf.Annotations.GoToAction action)
+        {
+            // Get the Zoom factor of PDF file
+            if (action.Destination is Aspose.Pdf.Annotations.XYZExplicitDestination destination)
+            {
+                System.Console.WriteLine(destination.Zoom); // Document zoom value;
+            }
+        }
+    }
 }
 ```
 
@@ -515,7 +515,7 @@ private static void SetPrintDialogPresetProperties()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to the document
+        // Add page
         document.Pages.Add();
 
         // Set duplex printing to DuplexFlipLongEdge

@@ -175,7 +175,6 @@ The creation of a COM object is similar to creation of a normal .NET object:
 
 ```vb
 'Instantiate Pdf instance by calling its empty constructor
-
 Dim pdf
 Set pdf = CreateObject("Aspose.Pdf.Generator.Pdf")
 

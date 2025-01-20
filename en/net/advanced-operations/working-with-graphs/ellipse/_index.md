@@ -93,7 +93,7 @@ private static void Ellipse()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -143,7 +143,7 @@ private static void EllipseFilled()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -198,7 +198,7 @@ private static void EllipseWithText()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions

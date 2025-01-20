@@ -113,7 +113,7 @@ private static void GetPageCountWithoutSavingTheDocument()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
         // Create loop instance
         for (var i = 0; i < 300; i++)

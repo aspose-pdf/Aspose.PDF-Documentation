@@ -92,6 +92,7 @@ private static void AddPageStampOnAllPages()
 
         // Create stamp
         var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
         stamp.BindPdf(dataDir + "AddPageStampOnAllPages.pdf", 1);
         stamp.SetOrigin(20, 20);
         stamp.Rotation = 90.0F;
@@ -125,6 +126,7 @@ private static void AddPageStampOnCertainPages()
 
         // Create stamp
         var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
         stamp.BindPdf(dataDir + "PageStampOnCertainPages.pdf", 1);
         stamp.SetOrigin(20, 20);
         stamp.Rotation = 90.0F;

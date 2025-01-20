@@ -107,60 +107,60 @@ private static void ApplyNumberStyleToPdf()
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
-	{
-		document.PageInfo.Width = 612.0;
-		document.PageInfo.Height = 792.0;
-		document.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-		document.PageInfo.Margin.Left = 72;
-		document.PageInfo.Margin.Right = 72;
-		document.PageInfo.Margin.Top = 72;
-		document.PageInfo.Margin.Bottom = 72;
+    {
+        document.PageInfo.Width = 612.0;
+        document.PageInfo.Height = 792.0;
+        document.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        document.PageInfo.Margin.Left = 72;
+        document.PageInfo.Margin.Right = 72;
+        document.PageInfo.Margin.Top = 72;
+        document.PageInfo.Margin.Bottom = 72;
 
-		// Add a new page to the document
-		var pdfPage = document.Pages.Add();
-		pdfPage.PageInfo.Width = 612.0;
-		pdfPage.PageInfo.Height = 792.0;
-		pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-		pdfPage.PageInfo.Margin.Left = 72;
-		pdfPage.PageInfo.Margin.Right = 72;
-		pdfPage.PageInfo.Margin.Top = 72;
-		pdfPage.PageInfo.Margin.Bottom = 72;
+        // Add page
+        var pdfPage = document.Pages.Add();
+        pdfPage.PageInfo.Width = 612.0;
+        pdfPage.PageInfo.Height = 792.0;
+        pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        pdfPage.PageInfo.Margin.Left = 72;
+        pdfPage.PageInfo.Margin.Right = 72;
+        pdfPage.PageInfo.Margin.Top = 72;
+        pdfPage.PageInfo.Margin.Bottom = 72;
 
-		// Create a floating box with the same margin as the page
-		var floatBox = new Aspose.Pdf.FloatingBox();
-		floatBox.Margin = pdfPage.PageInfo.Margin;
+        // Create a floating box with the same margin as the page
+        var floatBox = new Aspose.Pdf.FloatingBox();
+        floatBox.Margin = pdfPage.PageInfo.Margin;
 
-		// Add the floating box to the page
-		pdfPage.Paragraphs.Add(floatBox);
+        // Add the floating box to the page
+        pdfPage.Paragraphs.Add(floatBox);
 
-		// Add headings with numbering styles
-		var heading = new Aspose.Pdf.Heading(1);
-		heading.IsInList = true;
-		heading.StartNumber = 1;
-		heading.Text = "List 1";
-		heading.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
-		heading.IsAutoSequence = true;
-		floatBox.Paragraphs.Add(heading);
+        // Add headings with numbering styles
+        var heading = new Aspose.Pdf.Heading(1);
+        heading.IsInList = true;
+        heading.StartNumber = 1;
+        heading.Text = "List 1";
+        heading.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading);
 
-		var heading2 = new Aspose.Pdf.Heading(1);
-		heading2.IsInList = true;
-		heading2.StartNumber = 13;
-		heading2.Text = "List 2";
-		heading2.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
-		heading2.IsAutoSequence = true;
-		floatBox.Paragraphs.Add(heading2);
+        var heading2 = new Aspose.Pdf.Heading(1);
+        heading2.IsInList = true;
+        heading2.StartNumber = 13;
+        heading2.Text = "List 2";
+        heading2.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading2.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading2);
 
-		var heading3 = new Aspose.Pdf.Heading(2);
-		heading3.IsInList = true;
-		heading3.StartNumber = 1;
-		heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan on account of each allowed";
-		heading3.Style = Aspose.Pdf.NumberingStyle.LettersLowercase;
-		heading3.IsAutoSequence = true;
-		floatBox.Paragraphs.Add(heading3);
+        var heading3 = new Aspose.Pdf.Heading(2);
+        heading3.IsInList = true;
+        heading3.StartNumber = 1;
+        heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan on account of each allowed";
+        heading3.Style = Aspose.Pdf.NumberingStyle.LettersLowercase;
+        heading3.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading3);
 
-		// Save PDF document
-		document.Save(dataDir + "ApplyNumberStyle_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "ApplyNumberStyle_out.pdf");
+    }
 }
 ```
 

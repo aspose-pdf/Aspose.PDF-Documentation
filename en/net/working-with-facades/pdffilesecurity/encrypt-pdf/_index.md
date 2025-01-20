@@ -95,7 +95,7 @@ Review a possible list of such [CryptoAlgorithm](https://reference.aspose.com/pd
 The following code snippet shows you how to encrypt PDF file.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void EncryptPDFFile()
 {
     // The path to the documents directory
@@ -103,6 +103,7 @@ private static void EncryptPDFFile()
     
     using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
     {
+        // Bind PDF document
         fileSecurity.BindPdf(dataDir + "input.pdf");
         // Encrypt file using 256-bit encryption
         fileSecurity.EncryptFile("User_P@ssw0rd", "OwnerP@ssw0rd", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256,

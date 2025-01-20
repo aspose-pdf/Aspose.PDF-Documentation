@@ -80,7 +80,7 @@ Aspose.PDF for .NET supports the feature to digitally sign PDF files using the P
 To extract signature information, we have introduced the ExtractCertificate(..) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract certificate from the PdfFileSignature object:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractSignatureInfo()
 { 
     // The path to the documents directory
@@ -120,7 +120,7 @@ Aspose.PDF for .NET supports the feature to digitally sign the PDF files using t
 In order to extract signature information, we have introduced the ExtractImage(..) method to the PdfFileSignature class. Please take a look at the following code snippet which demonstrates the steps to extract image from the PdfFileSignature object:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractSignatureImage()
 {
     // The path to the documents directory
@@ -159,7 +159,7 @@ private static void ExtractSignatureImage()
 Aspose.PDF functionality allows flexible configuration for digital sign instance. [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)class provides ability sign PDF file. Sign method implementation allows to sign the PDF and pass the particular signature object to this class. Sign method contains set of attributes for the customization of output digital sing. In case if you need to suppress some text attributes from result sing you can leave them empty. The following code snippet demonstrate how to suppress Location and Reason two rows from signature block:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SupressLocationReason()
 {
     // The path to the documents directory
@@ -190,7 +190,7 @@ private static void SupressLocationReason()
 Aspose.PDF for .NET allows customization features for a digital sign. The Sign method of class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance)implements with 6 overloads for your comfortable usage. For example, you can configure result sign only by SignatureCustomAppearance class instance and its properties values. The following code snippet demonstrates how to hide "Digitally signed by" caption from output digital sign of your PDF. 
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CustomizationFeaturesForDigitalSign()
 {
     // The path to the documents directory
@@ -198,6 +198,7 @@ private static void CustomizationFeaturesForDigitalSign()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
@@ -233,7 +234,7 @@ Using Aspose.PDF for .NET API, you can sign a PDF file using any of the followin
 Each of provided signatures contains a set of configuration properties implemented for your convenience(localization, date time format, font family etc). Class [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) provides corresponding functionality. The following code snippet demonstrates how to change language in digital sign text:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ChangeLanguageInDigitalSignText()
 {
     // The path to the documents directory
@@ -241,6 +242,7 @@ private static void ChangeLanguageInDigitalSignText()
     
     using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdfFileSignature.BindPdf(dataDir + "input.pdf");
         // Create a rectangle for signature location
         System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);

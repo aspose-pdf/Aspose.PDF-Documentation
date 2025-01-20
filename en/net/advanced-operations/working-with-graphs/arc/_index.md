@@ -103,7 +103,7 @@ private static void Arc()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -164,7 +164,7 @@ private static void ArcFilled()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions

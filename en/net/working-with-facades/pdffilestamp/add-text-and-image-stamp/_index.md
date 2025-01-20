@@ -206,7 +206,7 @@ private static void AddImageStampOnParticularPagesInPdfFile()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create PdfFileStamp object using 'using' block to ensure proper disposal
+    // Create PdfFileStamp object
     using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
     {
         // Bind PDF document

@@ -90,30 +90,30 @@ private static void ClearTextInForm(string input, string output)
 
     // Open PDF document
     using (cument = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
-	{
-		// Get the forms from the first page
-		var forms = document.Pages[1].Resources.Forms;
+    {
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-		foreach (var form in forms)
-		{
-			// Check if the form is of type "Typewriter" and subtype "Form"
-			if (form.IT == "Typewriter" && form.Subtype == "Form")
-			{
-				// Create a TextFragmentAbsorber to find text fragments
-				var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
-				absorber.Visit(form);
+        foreach (var form in forms)
+        {
+            // Check if the form is of type "Typewriter" and subtype "Form"
+            if (form.IT == "Typewriter" && form.Subtype == "Form")
+            {
+                // Create a TextFragmentAbsorber to find text fragments
+                var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+                absorber.Visit(form);
 
-				// Clear the text in each fragment
-				foreach (var fragment in absorber.TextFragments)
-				{
-					fragment.Text = "";
-				}
-			}
-		}
+                // Clear the text in each fragment
+                foreach (var fragment in absorber.TextFragments)
+                {
+                    fragment.Text = "";
+                }
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TextBox_out.pdf");
-	}	
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }	
 }
 ```
 
@@ -132,22 +132,22 @@ private static void DeleteSpecifiedForm(string input, string output)
 	
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
-	{
-		// Get the forms from the first page
-		var forms = document.Pages[1].Resources.Forms;
+    {
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-		// Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
-		for (int i = forms.Count; i > 0; i--)
-		{
-			if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
-			{
-				forms.Delete(forms[i].Name);
-			}
-		}
+        // Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
+        for (int i = forms.Count; i > 0; i--)
+        {
+            if (forms[i].IT == "Typewriter" && forms[i].Subtype == "Form")
+            {
+                forms.Delete(forms[i].Name);
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TextBox_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
 }
 ```
 
@@ -162,23 +162,23 @@ private static void DeleteSpecifiedForm(string input, string output)
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
-	{
-		// Get the forms from the first page
-		var forms = document.Pages[1].Resources.Forms;
+    {
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-		// Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
-		foreach (var form in forms)
-		{
-			if (form.IT == "Typewriter" && form.Subtype == "Form")
-			{
-				var name = forms.GetFormName(form);
-				forms.Delete(name);
-			}
-		}
+        // Iterate through the forms and delete the ones with type "Typewriter" and subtype "Form"
+        foreach (var form in forms)
+        {
+            if (form.IT == "Typewriter" && form.Subtype == "Form")
+            {
+                var name = forms.GetFormName(form);
+                forms.Delete(name);
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "TextBox_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
 }
 ```
 
@@ -195,15 +195,15 @@ private static void RemoveAllForms(string input, string output)
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
-	{
-		// Get the forms from the first page
-		var forms = document.Pages[1].Resources.Forms;
+    {
+        // Get the forms from the first page
+        var forms = document.Pages[1].Resources.Forms;
 
-		// Clear all forms
-		forms.Clear();
+        // Clear all forms
+        forms.Clear();
 
-		// Save PDF document
-		document.Save(dataDir + "TextBox_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
 }
 ```

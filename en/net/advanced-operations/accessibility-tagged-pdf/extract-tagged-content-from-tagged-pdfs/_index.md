@@ -96,7 +96,7 @@ private static void GetTaggedContent()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Create Pdf Document
+    // Create PDF Document
     using (var document = new Aspose.Pdf.Document())
     {
         // Get Content for work with Tagged PDF

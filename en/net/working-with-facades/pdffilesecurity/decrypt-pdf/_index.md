@@ -87,7 +87,7 @@ You can try to unlock document using Aspose.PDF and get the results online at th
 In order to decrypt a PDF file, you need to create [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) object and then call the [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. You also need to pass the owner password to [DecryptFile](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity/methods/decryptfile) method. The following code snippet shows you how to decrypt PDF file.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void DecryptPDFFile()
 {
     // The path to the documents directory
@@ -99,6 +99,7 @@ private static void DecryptPDFFile()
         {
             using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
             {
+                // Bind PDF document
                 fileSecurity.BindPdf(dataDir + "sample_encrypted.pdf");
                 // Decrypt PDF document
                 fileSecurity.DecryptFile("P@ssw0rd");

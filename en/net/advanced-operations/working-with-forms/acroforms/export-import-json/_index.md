@@ -121,7 +121,7 @@ private static void ImportFieldsFromJsonAndInsertToPdf(string inputPdfPath, stri
         // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
-        // Add a new page to the new document
+        // Add page
         var page = newDocument.Pages.Add();
 
         // Import fields from JSON
@@ -175,7 +175,7 @@ private static void ImportFieldsFromJsonToCreatedPdt(string inputPdfPath, string
         // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
-        // Add a new page to the new document
+        // Add page
         var page = newDocument.Pages.Add();
 
         // Open the JSON file for reading
@@ -233,7 +233,7 @@ private static void ImportFieldsFromJsonUsingMemoryStream(string inputPdfPath, s
         // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
-        // Add a new page to the new document
+        // Add page
         var page = newDocument.Pages.Add();
 
         // Create a MemoryStream to hold the JSON data
@@ -297,7 +297,7 @@ private static void ImportFieldFromJson(string inputPdfPath, string outputJsonPa
         // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
-        // Add a new page to the new document
+        // Add page
         var page = newDocument.Pages.Add();
 
         // Import fields from JSON
@@ -349,7 +349,7 @@ private static void ImportFieldFromJson(string inputPdfPath, string outputJsonPa
     // Create PDF document to import fields into
     using (var newDocument = new Aspose.Pdf.Document())
     {
-        // Add a new page to the new document
+        // Add page
         var page = newDocument.Pages.Add();
 
         // Open the JSON file for reading
@@ -411,7 +411,7 @@ private static void ImportFieldFromJsonUsingMemoryStream(string inputPdfPath, st
         // Create PDF document to import fields into
         var newDocument = new Aspose.Pdf.Document();
 
-        // Add a new page to the new document
+        // Add page
         var page = newDocument.Pages.Add();
 
         // Create a MemoryStream to hold the JSON data

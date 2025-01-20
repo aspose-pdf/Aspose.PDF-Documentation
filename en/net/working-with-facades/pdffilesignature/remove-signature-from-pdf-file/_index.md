@@ -82,8 +82,7 @@ The [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/p
 The following code snippet shows how to remove digital signature from the PDF file.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemoveSignature()
 {  
     // The path to the documents directory
@@ -113,8 +112,7 @@ private static void RemoveSignature()
 As shown above, the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class [RemoveSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/removesignature) method lets you remove signature fields from PDF files. When using this method with versions prior to 9.3.0, both the signature and signature field are removed. Some develoeprs want to remove only the signature and keep the signature field so that it can be used to resign the document. To keep the signature field and only remove the signature, please use the following code snippet.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemoveSignatureButKeepField()
 {
     // The path to the documents directory
@@ -136,8 +134,7 @@ private static void RemoveSignatureButKeepField()
 The following example shows how to remove all signatures from fields.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemoveSignatureButKeepField2()
 {
     // The path to the documents directory

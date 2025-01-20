@@ -88,10 +88,10 @@ private static void CopyInnerField()
         // Open PDF document
         using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Form-01.pdf"))
         {
-            // Add a new page to the document
+            // Add page
             document.Pages.Add();
 
-            // Bind the document to the formEditor
+            // Bind PDF document
             formEditor.BindPdf(document);
 
             // Copy the field "Last Name" from the first page to "Last Name 2" on the second page
@@ -121,10 +121,10 @@ private static void CopyOuterField()
         // Create empty document
         using (var document = new Aspose.Pdf.Document())
         {
-            // Add a new page to the document
+            // Add page
             document.Pages.Add();
 
-            // Bind the newly created document to the formEditor
+            // Bind PDF document
             formEditor.BindPdf(document);
 
             // Copy the outer field "First Name" from the original document to the new document

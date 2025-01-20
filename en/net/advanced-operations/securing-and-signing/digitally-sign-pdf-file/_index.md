@@ -110,7 +110,7 @@ The digital signature will be set for the document after it is saved.
 
 The example below creates a PKCS7 non-detached signature with the SHA-1 digest algorithm.
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignDocument()
 {    
     // The path to the documents directory
@@ -136,7 +136,7 @@ private static void SignDocument()
 The example below creates a detached signature in PKCS7 format with the SHA-1 digest algorithm. The key algorithm depends on the certificate key. DSA, RSA, ECDSA are supported.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignDocument(string pfxFilePath, string password)
 {
     // The path to the documents directory
@@ -167,7 +167,7 @@ Methods that accept the SignatureName type instead of a string signature name sh
 _Notes, the __PdfFileSignature.VerifySigned()__ method is deprecated._
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void Verify()
 {
     // The path to the documents directory
@@ -205,7 +205,7 @@ Aspose.PDF for .NET supports to digitally sign the PDF with a timestamp server o
 In order to accomplish this requirement, the [TimestampSettings](https://reference.aspose.com/pdf/net/aspose.pdf/timestampsettings) class has been added to the Aspose.PDF namespace. Please take a look at the following code snippet which obtains timestamp and adds it to PDF document:
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignWithTimeStampServer(string pfxFilePath, string password)
 {    
     // The path to the documents directory
@@ -245,7 +245,7 @@ Steps to sign PDF:
 1. Saving the Signed PDF.
 
 ```cs
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignWithBase64Certificate(string pfxFilePath, string password)
 {   
     // The path to the documents directory
@@ -268,7 +268,7 @@ private static void SignWithBase64Certificate(string pfxFilePath, string passwor
             return signedData;
         };
         sign.CustomSignHash = customSignHash;
-        
+        // Bind PDF document
         pdfSign.BindPdf(dataDir + "input.pdf");
         // Sign the file
         pdfSign.Sign(1, "second approval", "second_user@example.com", "Australia", false,
@@ -316,7 +316,7 @@ The example below creates a non-detached signature with the RSA algorithm and th
 If you use PKCS7Detached instead of PKCS7, you can use ECDCA and set the desired digest algorithm.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignWithCertificate(string pfxFilePath, string password)
 {
     // The path to the documents directory
@@ -324,6 +324,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
     
     using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {   
+        // Bind PDF document
         sign.BindPdf(dataDir + "input.pdf");
         // Create PKCS#7 object to sign
         var pkcs7 = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);// You can use PKCS7Detached with digest algorithm argument
@@ -391,7 +392,7 @@ To sign a PDF document using ECDSA, the general steps in C# would be:
 1. Place the generated signature inside the PDF file along with metadata such as the reason for signing, location, and contact details.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void VerifyEcda()
 {
    // The path to the documents directory
