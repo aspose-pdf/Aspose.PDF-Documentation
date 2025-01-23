@@ -122,7 +122,7 @@ private static void ValidateToPdfA1bStandard()
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
     {
         // Validate PDF for PDF/A-1b
-        document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1B);
+        document.Validate(dataDir + "validation-result-A1B.xml", Aspose.Pdf.PdfFormat.PDF_A_1B);
     }
 }
 ```
