@@ -351,6 +351,53 @@ private static void SignWithCertificate(string pfxFilePath, string password)
 }
 ```
 
+To create a signature, a preliminary estimate of the length of the future digital signature is required.
+If you use SignHash to create a digital signature, you may find that the delegate is called twice during the document saving process.
+If for some reason you cannot afford two calls, for example, if a PIN code request occurs during the call, you can use the __AvoidEstimatingSignatureLength__ option for the PKCS1, PKCS7, PKCS7Detached, and ExternalSignature classes.
+Setting this option avoids the signature length estimation step by setting a fixed value as the expected length - __DefaultSignatureLength__. The default value for the DefaultSignatureLength property is 3000 bytes.
+The AvoidEstimatingSignatureLength option only works if the SignHash delegate is set in the CustomSignHash property.
+If the resulting signature length exceeds the expected length specified by the DefaultSignatureLength property, you will receive a __SignatureLengthMismatchException__ indicating the actual length.
+You can adjust the value of the DefaultSignatureLength parameter at your discretion.
+
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SignWithCertificate(string pfxFilePath, string password)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
+    {   
+        // Bind PDF document
+        sign.BindPdf(dataDir + "input.pdf");
+        // Create PKCS#7 object to sign
+        var pkcs7 = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);// You can use PKCS7Detached with digest algorithm argument
+        // Set the delegate to external sign
+        pkcs7.CustomSignHash = CustomSignHash;
+        // Set an option to avoiding twice SignHash calling.
+        pkcs7.AvoidEstimatingSignatureLength = true;
+        // Sign the file
+        sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
+        // Save PDF document
+        sign.Save(dataDir + "SignWithCertificate_out.pdf");
+    }
+
+    // Custom hash signing function to generate a digital signature
+    byte[] CustomSignHash(byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
+    {
+        var inputP12 = "111.p12";
+        var inputPfxPassword = "123456";
+        X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
+        RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+        var xmlString = signerCert.PrivateKey.ToXmlString(true);
+        rsaCSP.FromXmlString(xmlString);
+        byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+        return signedData;
+    }
+}
+```
+
 ## Signing PDF documents using ECDSA
 
 Signing PDF documents using ECDSA (Elliptic Curve Digital Signature Algorithm) involves utilizing elliptic curve cryptography to generate digital signatures. This offers high security and efficiency, especially for mobile and resource-constrained environments. This approach ensures that your PDF documents are digitally signed with the security advantages of elliptic curve cryptography.
