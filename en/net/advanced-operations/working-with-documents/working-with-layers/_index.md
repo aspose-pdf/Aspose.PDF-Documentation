@@ -136,7 +136,7 @@ private static void SaveLayersFromPdf()
         // Save each layer to the output path
         foreach (var layer in layers)
         {
-            layer.Save(dataDir + "Layers_out");
+            layer.Save(dataDir + "Layers_out.pdf");
         }
     }
 }

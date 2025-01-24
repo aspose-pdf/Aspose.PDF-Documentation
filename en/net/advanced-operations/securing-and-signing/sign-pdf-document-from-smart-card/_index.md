@@ -261,6 +261,68 @@ private static byte[] CallExternalSignatureService(byte[] hash, Aspose.Pdf.Diges
 }
 ```
 
+To create a signature, a preliminary estimate of the length of the future digital signature is required.
+If you use SignHash to create a digital signature, you may find that the delegate is called twice during the document saving process.
+If for some reason you cannot afford two calls, for example, if a PIN code request occurs during the call, you can use the __AvoidEstimatingSignatureLength__ option for the PKCS1, PKCS7, PKCS7Detached, and ExternalSignature classes.
+Setting this option avoids the signature length estimation step by setting a fixed value as the expected length - __DefaultSignatureLength__. The default value for the DefaultSignatureLength property is 3000 bytes.
+The AvoidEstimatingSignatureLength option only works if the SignHash delegate is set in the CustomSignHash property.
+If the resulting signature length exceeds the expected length specified by the DefaultSignatureLength property, you will receive a __SignatureLengthMismatchException__ indicating the actual length.
+You can adjust the value of the DefaultSignatureLength parameter at your discretion.
+
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SignWithExternalService()
+{    
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "blank.pdf"))
+    {
+        using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
+        {
+            // Bind PDF document
+            sign.BindPdf(document);
+            
+            // Get public certificate
+            X509Certificate2 signerCert = GetPublicCertificate();
+            
+            // Set a certificate and a digest algorithm
+            var signature = new Aspose.Pdf.Forms.ExternalSignature(signerCert, Aspose.Pdf.DigestHashAlgorithm.Sha256);
+
+            // Define a delegate to external sign
+            Aspose.Pdf.Forms.SignHash customSignHash = delegate(byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
+            {
+                return CallExternalSignatureService(signableHash, digestHashAlgorithm);
+            };
+            // Set a sign hash
+            signature.CustomSignHash = customSignHash;
+            
+            // Set an option to avoiding twice SignHash calling.
+            signature.AvoidEstimatingSignatureLength = true;
+            signature.DefaultSignatureLength = 3500;
+            
+            sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), signature);
+            // Save PDF document
+            sign.Save(dataDir + "ExternalSignature_out.pdf");
+        }
+    }
+}
+
+private static X509Certificate2 GetPublicCertificate()
+{
+    // Your code to get a public certificate. The certificate can be supplied by a third-party service or a smart card
+}
+
+private static byte[] CallExternalSignatureService(byte[] hash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
+{
+    // Call a third-party service that provides a digital signature service
+    // The method must return signed data
+    // The digestHashAlgorithm argument points to the digest algorithm that was applied to the data to produce the value of the hash argument
+}
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
