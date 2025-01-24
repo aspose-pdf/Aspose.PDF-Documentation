@@ -237,7 +237,3 @@ private static void AddChildBookmarkInAnExistingPdfFile()
     }
 }
 ```
-
-## See also
-
-Try to compare and find a way to work with bookmarks that suits you. Lets learn [Working with Bookmarks in PDF](/pdf/net/bookmarks/) section.
