@@ -83,23 +83,23 @@ First of all, an object is drawn in the [Document](https://reference.aspose.com/
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddJavascriptAction()
+private static void AddJavascriptAction()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "sample.pdf");
 
-        // create Javascript link
+        // Create Javascript link
         var rect = new System.Drawing.Rectangle(50, 750, 50, 50);
 
         var code = "app.alert('Welcome to Aspose!');";
         editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
 
-        // save the output file
+        // Save PDF document
         editor.Save(dataDir + "JavaScriptAdded_out.pdf");
     }
 }
@@ -109,22 +109,23 @@ public static void AddJavascriptAction()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddJavascriptAction()
+private static void AddJavascriptAction()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
     editor.BindPdf(dataDir + "sample.pdf");
 
-    // create Javascript link
+    // Create Javascript link
     var rect = new System.Drawing.Rectangle(50, 750, 50, 50);
 
     var code = "app.alert('Welcome to Aspose!');";
     editor.CreateJavaScriptLink(code, rect, 1, System.Drawing.Color.Green);
 
-    // save the output file
+    // Save PDF document
     editor.Save(dataDir + "JavaScriptAdded_out.pdf");
 }
 ```

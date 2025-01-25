@@ -115,8 +115,10 @@ In order to convert PDF to PPTX, Aspose.PDF for .NET advice to use the following
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToPPTX()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PptxSaveOptions object
@@ -144,8 +146,10 @@ In case if you need to convert a searchable PDF to PPTX as images instead of sel
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToPPTWithSlidesAsImages()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Instantiate PptxSaveOptions object
@@ -155,7 +159,7 @@ private static void ConvertPDFToPPTWithSlidesAsImages()
         };
 
         // Save the file in PPTX format with slides as images
-        document.Save(dataDir + "PDFToPPT_out_.pptx", saveOptions);
+        document.Save(dataDir + "PDFToPPT_out.pptx", saveOptions);
     }
 }
 ```
@@ -168,8 +172,10 @@ Aspose.PDF for .NET lets you track the progress of PDF to PPTX conversion. The [
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFToPPTWithCustomProgressHandler()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the source PDF document
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
 
@@ -180,7 +186,7 @@ private static void ConvertPDFToPPTWithCustomProgressHandler()
         saveOptions.CustomProgressHandler = ShowProgressOnConsole;
 
         // Save the file in PPTX format with progress tracking
-        document.Save(dataDir + "PDFToPPTWithProgressTracking_out_.pptx", saveOptions);
+        document.Save(dataDir + "PDFToPPTWithProgressTracking_out.pptx", saveOptions);
     }
 }
 

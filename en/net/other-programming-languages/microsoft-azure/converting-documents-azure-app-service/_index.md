@@ -229,11 +229,15 @@ public class PdfController : ControllerBase
         try
         {
             if (file == null || file.Length == 0)
+            {
                 return BadRequest("No file uploaded");
+            }
 
             // Validate input file is PDF
             if (!file.ContentType.Equals("application/pdf", StringComparison.OrdinalIgnoreCase))
+            {
                 return BadRequest("File must be a PDF");
+            }
 
             using var inputStream = file.OpenReadStream();
             using var document = new Aspose.Pdf.Document(inputStream);

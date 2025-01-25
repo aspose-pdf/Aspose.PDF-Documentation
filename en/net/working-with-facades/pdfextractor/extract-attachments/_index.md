@@ -77,7 +77,7 @@ One of the main category under the extraction capabilities of [Aspose.Pdf.Facade
 The following code snippet shows you how to use PdfExtractor methods:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractAttachments()
 {
     // The path to the documents directory
@@ -86,6 +86,7 @@ private static void ExtractAttachments()
     // Create the extractor
     using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         pdfExtractor.BindPdf(dataDir + "GetAlltheAttachments.pdf");
 
         // Extract attachments

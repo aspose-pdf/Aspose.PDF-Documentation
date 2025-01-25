@@ -99,16 +99,15 @@ Follow the steps below:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ExampleCurve()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -133,7 +132,7 @@ private static void ExampleCurve()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingCurve1_out.pdf");
     }
 }
@@ -150,16 +149,15 @@ This example shows how to add a Curve object that is filled with color.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CurveFilled()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -184,7 +182,7 @@ private static void CurveFilled()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingCurve2_out.pdf");
     }
 }

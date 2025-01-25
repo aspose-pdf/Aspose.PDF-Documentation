@@ -115,16 +115,17 @@ The following C# code sample shows how to convert an HTML document to a PDF.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertHTMLtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Load the HTML file into a document using HtmlLoadOptions
     var options = new Aspose.Pdf.HtmlLoadOptions();
 
-    // Open the source HTML document
+    // Open HTML document
     using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
     {
-        // Save the document
-        document.Save(dataDir + "html_test.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ConvertHTMLtoPDF_out.pdf");
     }
 }
 ```
@@ -147,8 +148,9 @@ Media queries are a popular technique for delivering a tailored style sheet to d
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ConvertHTMLtoPDFAdvanced_MediaType()
+private static void ConvertHTMLtoPDFAdvancedMediaType()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Load the HTML file into a document using HtmlLoadOptions with Print media type
@@ -158,11 +160,11 @@ private static void ConvertHTMLtoPDFAdvanced_MediaType()
         HtmlMediaType = Aspose.Pdf.HtmlMediaType.Print
     };
 
-    // Open the source HTML document
+    // Open HTML document
     using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
     {
-        // Save the document
-        document.Save(dataDir + "html_test.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ConvertHTMLtoPDFAdvancedMediaType_out.pdf");
     }
 }
 ```
@@ -173,8 +175,9 @@ HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
- private static void ConvertHTMLtoPDFAdvanced_EmbedFonts()
+ private static void ConvertHTMLtoPDFAdvancedEmbedFonts()
  {
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Load the HTML file into a document using HtmlLoadOptions with the font embedding option set
@@ -184,11 +187,11 @@ HTML pages often use fonts (i.g. fonts from local folder, Google Fonts, etc). We
          IsEmbedFonts = false
      };
 
-     // Open the source HTML document
+     // Open HTML document
      using (var document = new Aspose.Pdf.Document(dataDir + "test_fonts.html", options))
      {
-         // Save the document
-         document.Save(dataDir + "html_test.pdf");
+         // Save PDF document
+         document.Save(dataDir + "ConvertHTMLtoPDFAdvanced_EmbedFonts_out.pdf");
      }
  }
 ```
@@ -204,6 +207,7 @@ To do this we can define a custom loader `SamePictureLoader` and points [`Custom
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertHTMLtoPDFAdvanced_DummyImage()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Load the HTML file into a document with a custom resource loader for external images
@@ -212,22 +216,23 @@ private static void ConvertHTMLtoPDFAdvanced_DummyImage()
         CustomLoaderOfExternalResources = SamePictureLoader
     };
 
-    // Open the source HTML document
+    // Open HTML document
     using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "html_test.pdf");
     }
 }
 
 private static Aspose.Pdf.LoadOptions.ResourceLoadingResult SamePictureLoader(string resourceURI)
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
     Aspose.Pdf.LoadOptions.ResourceLoadingResult result;
 
     if (resourceURI.EndsWith(".png"))
     {
-        byte[] resultBytes = System.IO.File.ReadAllBytes(dataDir + "test.jpg");
+        byte[] resultBytes = File.ReadAllBytes(dataDir + "test.jpg");
         result = new Aspose.Pdf.LoadOptions.ResourceLoadingResult(resultBytes)
         {
             // Set MIME Type
@@ -265,8 +270,10 @@ When converting a web page hosted on a webserver to PDF:
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertHTMLtoPDFAdvanced_WebPage()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
     const string url = "https://en.wikipedia.org/wiki/Aspose_API";
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Set page size A3 and Landscape orientation;   
     var options = new Aspose.Pdf.HtmlLoadOptions(url)
@@ -282,12 +289,12 @@ private static void ConvertHTMLtoPDFAdvanced_WebPage()
     // Load the web page content as a stream and create a PDF document
     using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url), options))
     {
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "html_test.pdf");
     }
 }
 
-private static System.IO.Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
+private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
 {
     using (var handler = new System.Net.Http.HttpClientHandler { Credentials = credentials })
     using (var httpClient = new System.Net.Http.HttpClient(handler))
@@ -303,9 +310,10 @@ Sometimes we need to perform the conversion of HTML files which require authenti
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
- private static void ConvertHTMLtoPDFAdvanced_Authorized()
+ private static void ConvertHTMLtoPDFAdvancedAuthorized()
  {
-     string dataDir = RunExamples.GetDataDir_AsposePdf();
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      const string url = "http://httpbin.org/basic-auth/user1/password1";
      var credentials = new System.Net.NetworkCredential("user1", "password1");
@@ -317,12 +325,12 @@ Sometimes we need to perform the conversion of HTML files which require authenti
 
      using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url, credentials), options))
      {
-        // Save the document
-         document.Save(dataDir + "html_test.pdf");
+         // Save PDF document
+         document.Save(dataDir + "HtmlTest_out.pdf");
      }
  }
 
-private static System.IO.Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
+private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
 {
     using (var handler = new System.Net.Http.HttpClientHandler { Credentials = credentials })
     using (var httpClient = new System.Net.Http.HttpClient(handler))
@@ -338,9 +346,10 @@ Aspose.PDF for .NET provides the ability to render all contents on a single page
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
- private static void ConvertHTMLtoPDFAdvanced_SinglePageRendering()
+ private static void ConvertHTMLtoPDFAdvancedSinglePageRendering()
  {
-     string dataDir = RunExamples.GetDataDir_AsposePdf();
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Initialize HtmlLoadOptions
      var options = new Aspose.Pdf.HtmlLoadOptions
@@ -349,11 +358,11 @@ Aspose.PDF for .NET provides the ability to render all contents on a single page
          IsRenderToSinglePage = true
      };
 
-     // Load document
+     // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "HTMLToPDF.html", options))
      {
-         // Save the document
-         document.Save(dataDir + "RenderContentToSamePage.pdf");
+         // Save PDF document
+         document.Save(dataDir + "RenderContentToSamePage_out.pdf");
      }
  }
 ```
@@ -366,19 +375,17 @@ Aspose.PDF for .NET provides ability to convert HTML page to PDF document. Since
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertHTMLtoPDFWithSVG()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Set input file path
-    string inFile = dataDir + "HTMLSVG.html";
-
     // Initialize HtmlLoadOptions
-    var options = new Aspose.Pdf.HtmlLoadOptions(Path.GetDirectoryName(inFile));
+    var options = new Aspose.Pdf.HtmlLoadOptions(Path.GetDirectoryName(dataDir + "HTMLSVG.html"));
 
     // Initialize Document object
-    using (var document = new Aspose.Pdf.Document(inFile, options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "HTMLSVG.html", options))
     {
-        // Save the document
-        document.Save(dataDir + "RenderHTMLwithSVGData.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RenderHTMLwithSVGData_out.pdf");
     }
 }
 ```
@@ -402,8 +409,10 @@ Aspose.PDF for .NET presents you online free application ["MHTML to PDF"](https:
 3. Save output PDF document by calling **Document.Save()** method.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertMHTtoPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Initialize MhtLoadOptions with page setup
@@ -415,8 +424,8 @@ private static void ConvertMHTtoPDF()
     // Initialize Document object using the MHT file and options
     using (var document = new Aspose.Pdf.Document(dataDir + "fileformatinfo.mht", options))
     {
-        // Save the document
-        document.Save(dataDir + "mhtml_test.pdf");
+        // Save PDF document
+        document.Save(dataDir + "MhtmlTest_out.pdf");
     }
 }
 ```

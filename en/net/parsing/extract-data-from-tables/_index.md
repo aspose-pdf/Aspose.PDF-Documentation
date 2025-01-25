@@ -93,31 +93,38 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following example shows table extraction from the all pages:
 
 ```csharp
-public static void Extract_Table()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractTable()
 {
-    // Load source PDF document
-    var filePath = "<... enter path to pdf file here ...>";
-    Document document = new Document(filePath);                       
-    foreach (var page in document.Pages)
-    {
-        TableAbsorber absorber = new TableAbsorber();
-        absorber.Visit(page);
-        foreach (AbsorbedTable table in absorber.TableList)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {                    
+        foreach (var page in document.Pages)
         {
-            Console.WriteLine("Table");
-            foreach (AbsorbedRow row in table.RowList)
+            Aspose.Pdf.TableAbsorber absorber = new Aspose.Pdf.TableAbsorber();
+            absorber.Visit(page);
+            foreach (var table in absorber.TableList)
             {
-                foreach (AbsorbedCell cell in row.CellList)
-                {                                 
-                    foreach (TextFragment fragment in cell.TextFragments)
-                    {
-                        var sb = new StringBuilder();
-                        foreach (TextSegment seg in fragment.Segments)
-                            sb.Append(seg.Text);
-                        Console.Write($"{sb.ToString()}|");
-                    }                           
+                Console.WriteLine("Table");
+                foreach (var row in table.RowList)
+                {
+                    foreach (var cell in row.CellList)
+                    {                                 
+                        foreach (var fragment in cell.TextFragments)
+                        {
+                            var sb = new StringBuilder();
+                            foreach (var seg in fragment.Segments)
+                            {
+                                sb.Append(seg.Text);
+                            }
+                            Console.Write($"{sb.ToString()}|");
+                        }                           
+                    }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
             }
         }
     }
@@ -135,45 +142,50 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following example show how to extract table marked with Square Annotation:
 
 ```csharp
-public static void Extract_Marked_Table()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractMarkedTable()
 {
-    // Load source PDF document
-    var filePath = "<... enter path to pdf file here ...>";
-    Document document = new Document(filePath);  
-    var page = document.Pages[1];
-    var squareAnnotation =
-        page.Annotations.FirstOrDefault(ann => ann.AnnotationType == Annotations.AnnotationType.Square)
-        as Annotations.SquareAnnotation;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    { 
+        var page = document.Pages[1];
+        var squareAnnotation =
+            page.Annotations.FirstOrDefault(ann => ann.AnnotationType == Annotations.AnnotationType.Square)
+            as Aspose.Pdf.Annotations.SquareAnnotation;
 
 
-    TableAbsorber absorber = new TableAbsorber();
-    absorber.Visit(page);
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
+        absorber.Visit(page);
 
-    foreach (AbsorbedTable table in absorber.TableList)
-    {
-        var isInRegion = (squareAnnotation.Rect.LLX < table.Rectangle.LLX) &&
-        (squareAnnotation.Rect.LLY < table.Rectangle.LLY) &&
-        (squareAnnotation.Rect.URX > table.Rectangle.URX) &&
-        (squareAnnotation.Rect.URY > table.Rectangle.URY);
-
-        if (isInRegion)
+        foreach (var table in absorber.TableList)
         {
-            foreach (AbsorbedRow row in table.RowList)
+            var isInRegion = (squareAnnotation.Rect.LLX < table.Rectangle.LLX) &&
+            (squareAnnotation.Rect.LLY < table.Rectangle.LLY) &&
+            (squareAnnotation.Rect.URX > table.Rectangle.URX) &&
+            (squareAnnotation.Rect.URY > table.Rectangle.URY);
+
+            if (isInRegion)
             {
-                foreach (AbsorbedCell cell in row.CellList)
+                foreach (var row in table.RowList)
                 {
-                    foreach (TextFragment fragment in cell.TextFragments)
+                    foreach (var cell in row.CellList)
                     {
-                        var sb = new StringBuilder();
-                        foreach (TextSegment seg in fragment.Segments)
+                        foreach (var fragment in cell.TextFragments)
                         {
-                            sb.Append(seg.Text);
+                            var sb = new StringBuilder();
+                            foreach (var seg in fragment.Segments)
+                            {
+                                sb.Append(seg.Text);
+                            }
+                            var text = sb.ToString();
+                            Console.Write($"{text}|");
                         }
-                        var text = sb.ToString();
-                        Console.Write($"{text}|");
                     }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
             }
         }
     }
@@ -188,17 +200,20 @@ To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to E
 The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-public static void Extract_Table_Save_CSV()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractTableSaveExcel()
 {
-    // For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-    // Load PDF document
-    Document document = new Document(dataDir + "input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSave Option object
+        Aspose.Pdf.ExcelSaveOptions excelSave = new Aspose.Pdf.ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
 
-    // Instantiate ExcelSave Option object
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
-
-    // Save the output in XLS format
-    document.Save("PDFToXLS_out.xlsx", excelSave);
+        // Save the output in XLS format
+        document.Save(dataDir + "ExtractTableSaveXLS_out.xlsx", excelSave);
+    }
 }
 ```

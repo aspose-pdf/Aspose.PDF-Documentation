@@ -91,12 +91,13 @@ We recommend following steps to attach ZUGFeRD to PDF:
 * Save the converted document as a new PDF file (e.g. "ZUGFeRD-res.pdf").
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AttachZUGFeRD()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-    // Open document
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ZUGFeRD-testInput.pdf"))
     {
         // Setup new file to be added as attachment
@@ -110,8 +111,8 @@ private static void AttachZUGFeRD()
         // Add attachment to document's attachment collection
         document.EmbeddedFiles.Add(fileSpecification);
         document.Convert(new MemoryStream(), Aspose.Pdf.PdfFormat.ZUGFeRD, Aspose.Pdf.ConvertErrorAction.Delete);
-        // Save document
-        document.Save(dataDir + "ZUGFeRD_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AttachZUGFeRD_out.pdf");
     }
 }
 ```

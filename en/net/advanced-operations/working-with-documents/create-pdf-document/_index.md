@@ -95,21 +95,20 @@ To create a PDF file using C#, the following steps can be used.
 1. Save the resultant PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateHelloWorldDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-    // Create the document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add page
         var page = document.Pages.Add();
         // Add text to new page
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "HelloWorld_out.pdf");
     }
 }
@@ -124,25 +123,25 @@ This logic specified below recognizes text for PDF images. For recognition you m
 Following is complete code to accomplish this requirement:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateSearchableDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
     
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SearchableDocument.pdf"))
     {
         document.Convert(CallBackGetHocr);
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "SearchableDocument_out.pdf");
     }
 }
 
 private static string CallBackGetHocr(System.Drawing.Image img)
 {
-    var tmpFile = System.IO.Path.GetTempFileName();
+    var tmpFile = Path.GetTempFileName();
     try
     {
         using (var bmp = new System.Drawing.Bitmap(img))
@@ -160,7 +159,7 @@ private static string CallBackGetHocr(System.Drawing.Image img)
             UseShellExecute = true,
             CreateNoWindow = true,
             WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-            WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
+            WorkingDirectory = Path.GetDirectoryName(tesseractProcessName)
         };
 
         var p = new System.Diagnostics.Process
@@ -170,7 +169,7 @@ private static string CallBackGetHocr(System.Drawing.Image img)
         p.Start();
         p.WaitForExit();
 
-        using (var streamReader = new System.IO.StreamReader(tmpFile + ".hocr"))
+        using (var streamReader = new StreamReader(tmpFile + ".hocr"))
         {
             string text = streamReader.ReadToEnd();
             return text;
@@ -178,13 +177,13 @@ private static string CallBackGetHocr(System.Drawing.Image img)
     }
     finally
     {
-        if (System.IO.File.Exists(tmpFile))
+        if (File.Exists(tmpFile))
         {
-            System.IO.File.Delete(tmpFile);
+            File.Delete(tmpFile);
         }
-        if (System.IO.File.Exists(tmpFile + ".hocr"))
+        if (File.Exists(tmpFile + ".hocr"))
         {
-            System.IO.File.Delete(tmpFile + ".hocr");
+            File.Delete(tmpFile + ".hocr");
         }
     }
 }
@@ -220,12 +219,13 @@ Steps to creating an accessible PDF:
 1. Save the Modified Document.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CreateAnAccessibleDocument()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
-    // Open the document
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
         // Access tagged content
@@ -243,7 +243,7 @@ private static void CreateAnAccessibleDocument()
                 span.Tag(bdc);
             }
         }
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "AccessibleDocument_out.pdf");
     }
 }

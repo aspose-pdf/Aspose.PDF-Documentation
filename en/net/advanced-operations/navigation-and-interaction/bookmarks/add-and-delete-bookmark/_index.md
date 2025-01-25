@@ -97,13 +97,12 @@ The following code snippet shows you how to add a bookmark in a PDF document.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf"))
     {
         // Create a bookmark object
@@ -118,7 +117,7 @@ private static void AddBookmark()
         // Add bookmark in the document's outline collection.
         document.Outlines.Add(pdfOutline);
 
-        // Save output
+        // Save PDF document
         document.Save(dataDir + "AddBookmark_out.pdf");
     }
 }
@@ -128,13 +127,12 @@ private static void AddBookmark()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf");
 
     // Create a bookmark object
@@ -149,7 +147,7 @@ private static void AddBookmark()
     // Add bookmark in the document's outline collection.
     document.Outlines.Add(pdfOutline);
 
-    // Save output
+    // Save PDF document
     document.Save(dataDir + "AddBookmark_out.pdf");
 }
 ```
@@ -174,13 +172,12 @@ The following code snippets show how to add child bookmark to a PDF document.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddChildBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf"))
     {
         // Create a parent bookmark object
@@ -201,7 +198,7 @@ private static void AddChildBookmark()
         // Add parent bookmark in the document's outline collection.
         document.Outlines.Add(pdfOutline);
 
-        // Save output
+        // Save PDF document
         document.Save(dataDir + "AddChildBookmark_out.pdf");
     }
 }
@@ -211,13 +208,12 @@ private static void AddChildBookmark()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddChildBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf");
 
     // Create a parent bookmark object
@@ -238,7 +234,7 @@ private static void AddChildBookmark()
     // Add parent bookmark in the document's outline collection.
     document.Outlines.Add(pdfOutline);
 
-    // Save output
+    // Save PDF document
     document.Save(dataDir + "AddChildBookmark_out.pdf");
 }
 ```
@@ -260,19 +256,18 @@ The following code snippets show how to delete all bookmarks from a PDF document
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf"))
     {
         // Delete all bookmarks
         document.Outlines.Delete();
 
-        // Save updated file
+        // Save PDF document
         document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
     }
 }
@@ -282,19 +277,18 @@ private static void DeleteBookmarks()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmarks()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf");
 
     // Delete all bookmarks
     document.Outlines.Delete();
 
-    // Save updated file
+    // Save PDF document
     document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
 }
 ```
@@ -316,19 +310,18 @@ The following code snippets show how to delete a particular bookmark from the PD
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf"))
     {
         // Delete particular outline by Title
         document.Outlines.Delete("Child Outline");
 
-        // Save updated file
+        // Save PDF document
         document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
@@ -338,19 +331,18 @@ private static void DeleteBookmark()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DeleteBookmark()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf");
 
     // Delete particular outline by Title
     document.Outlines.Delete("Child Outline");
 
-    // Save updated file
+    // Save PDF document
     document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
 }
 ```

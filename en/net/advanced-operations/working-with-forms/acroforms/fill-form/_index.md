@@ -86,26 +86,25 @@ To fill a form field, get the field from the Document object's Form collection. 
 This example selects a TextBoxField and sets its value using the Value property.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FillFormField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FillFormField.pdf"))
-	{
-		// Get a field
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-		{
-			// Modify field value
-			textBoxField.Value = "Value to be filled in the field";
-		}
+    {
+        // Get a field
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            // Modify field value
+            textBoxField.Value = "Value to be filled in the field";
+        }
 
-		// Save updated document
-		document.Save(dataDir + "FillFormField_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FillFormField_out.pdf");
+    }
 }
 ```
 

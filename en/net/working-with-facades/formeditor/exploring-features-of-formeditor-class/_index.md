@@ -89,11 +89,11 @@ These methods can be divided into two main categories, one of which is used to m
 
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ExploringFormEditorFeatures()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "inFile.pdf"))

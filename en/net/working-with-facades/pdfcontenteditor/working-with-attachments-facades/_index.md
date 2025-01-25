@@ -85,18 +85,17 @@ The following code snippet shows you how to add attachment from a file. For exam
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddAttachment()
+private static void AddAttachment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor =  new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf")))
     {
         editor.AddDocumentAttachment(dataDir + "Demo_MP3.mp3", "Demo MP3 file");
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddAttachment_out.pdf");
     }
 }
@@ -106,17 +105,16 @@ public static void AddAttachment()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddAttachment()
+private static void AddAttachment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"));
     editor.AddDocumentAttachment(dataDir + "Demo_MP3.mp3", "Demo MP3 file");
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddAttachment_out.pdf");
 }
 ```
@@ -131,11 +129,10 @@ Attachment can be added in a PDF file from a stream – FileStream – using [Ad
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddAttachment()
+private static void AddAttachment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf")))
@@ -143,7 +140,7 @@ public static void AddAttachment()
         var fileStream = File.OpenRead(dataDir + "Demo_MP3.mp3");
         editor.AddDocumentAttachment(fileStream, "Demo_MP3.mp3", "Demo MP3 file");
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "AddAttachment_out.pdf");
     }
 }
@@ -153,11 +150,10 @@ public static void AddAttachment()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddAttachment()
+private static void AddAttachment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"));
@@ -165,7 +161,7 @@ public static void AddAttachment()
     var fileStream = File.OpenRead(dataDir + "Demo_MP3.mp3");
     editor.AddDocumentAttachment(fileStream, "Demo_MP3.mp3", "Demo MP3 file");
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "AddAttachment_out.pdf");
 }
 ```
@@ -180,18 +176,17 @@ public static void AddAttachment()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void DeleteAllAttachments()
+private static void DeleteAllAttachments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf")))
     {
         editor.DeleteAttachments();
 
-        // Save document
+        // Save PDF document
         editor.Save(dataDir + "DeleteAllAttachments_out.pdf");
     }
 }
@@ -201,17 +196,16 @@ public static void DeleteAllAttachments()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void DeleteAllAttachments()
+private static void DeleteAllAttachments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Instantiate PdfContentEditor object
     using var editor = new Aspose.Pdf.Facades.PdfContentEditor(new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"));
     editor.DeleteAttachments();
 
-    // Save document
+    // Save PDF document
     editor.Save(dataDir + "DeleteAllAttachments_out.pdf");
 }
 ```

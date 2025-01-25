@@ -269,6 +269,7 @@ dotnet add package Aspose.PDF
 
 Replace the contents of `Program.cs` with:
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 using System;
 using Aspose.Pdf;
 using Aspose.Pdf.Text;
@@ -278,23 +279,23 @@ class Program
     static void Main(string[] args)
     {
         // Activate your license, you can comment out these codelines to use library in Evaluation mode
-        var license = new License();
+        var license = new Aspose.Pdf.License();
         license.SetLicense("Aspose.PDF.NET.lic");
 
-        // Initialize a new PDF document
-        using (var document = new Document())
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
         {
-            // Add a page to the document
+            // Add page
             var page = document.Pages.Add();
             
             // Create a text fragment
-            var textFragment = new TextFragment("Hello, Aspose.PDF for .NET!");
-            textFragment.Position = new Position(100, 600);
+            var textFragment = new Aspose.Pdf.Text.TextFragment("Hello, Aspose.PDF for .NET!");
+            textFragment.Position = new Aspose.Pdf.Text.Position(100, 600);
             
             // Add text to the page
             page.Paragraphs.Add(textFragment);
             
-            // Save the document
+            // Save PDF document
             document.Save("sample.pdf");
         }
     }

@@ -92,11 +92,10 @@ Following code snippet will help you understand how to use [PdfXmpMetadata](http
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create an object of PdfXmpMetadata class
     var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
@@ -106,7 +105,7 @@ public static void AddXmpMetadata()
     {
         using (var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create))
         {
-            // Set input file stream
+            // Bind PDF document
             xmpMetaData.BindPdf(input);
 
             // Add base URL property to xmp metadata
@@ -127,7 +126,7 @@ public static void AddXmpMetadata()
             // Add Nick Name to xmp metadata
             xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-            // Save xmp meta data in the pdf file
+            // Save PDF document
             xmpMetaData.Save(output);
         }
     }
@@ -138,11 +137,10 @@ public static void AddXmpMetadata()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void AddXmpMetadata()
+private static void AddXmpMetadata()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create an object of PdfXmpMetadata class
     var xmpMetaData = new Aspose.Pdf.Facades.PdfXmpMetadata();
@@ -152,7 +150,7 @@ public static void AddXmpMetadata()
 
     using var output = new FileStream(dataDir + "xmp_out.pdf", FileMode.Create);
 
-    // Set input file stream
+    // Bind PDF document
     xmpMetaData.BindPdf(input);
 
     // Add base URL property to xmp metadata
@@ -173,7 +171,7 @@ public static void AddXmpMetadata()
     // Add Nick Name to xmp metadata
     xmpMetaData.Add(Aspose.Pdf.Facades.DefaultMetadataProperties.Nickname, "Test");
 
-    // Save xmp meta data in the pdf file
+    // Save PDF document
     xmpMetaData.Save(output);
 }
 ```

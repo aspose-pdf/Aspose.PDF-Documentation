@@ -98,13 +98,12 @@ The following code snippet shows how to create a link to an application in a PDF
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
     {
         // Create link
@@ -114,7 +113,7 @@ private static void CreateLinkAnnotation()
         link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
         page.Annotations.Add(link);
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "CreateApplicationLink_out.pdf");
     }
 }
@@ -124,13 +123,12 @@ private static void CreateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
 
     // Create link
@@ -140,7 +138,7 @@ private static void CreateLinkAnnotation()
     link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
     page.Annotations.Add(link);
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "CreateApplicationLink_out.pdf");
 }
 ```
@@ -166,13 +164,12 @@ The following code snippet shows how to create PDF document link in a PDF file.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
     {
         // Create link
@@ -182,7 +179,7 @@ private static void CreateLinkAnnotation()
         link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
         page.Annotations.Add(link);
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "CreateDocumentLink_out.pdf");
     }
 }
@@ -192,13 +189,12 @@ private static void CreateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
 
     // Create link
@@ -208,7 +204,7 @@ private static void CreateLinkAnnotation()
     link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
     page.Annotations.Add(link);
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "CreateDocumentLink_out.pdf");
 }
 ```

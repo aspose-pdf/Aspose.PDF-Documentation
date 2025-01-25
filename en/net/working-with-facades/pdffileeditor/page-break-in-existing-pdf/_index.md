@@ -86,16 +86,16 @@ As a default layout, the contents inside PDF files are added in Top-Left to Bott
 ## Example 1 (Add page break)
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PageBrakeExample01()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
 
-    // Instantiate Document instance
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PageBreak.pdf"))
     {
-        // Instantiate blank Document instance
+        // Create PDF document
         using (var dest = new Aspose.Pdf.Document())
         {
             // Create PdfFileEditor object
@@ -104,7 +104,7 @@ private static void PageBrakeExample01()
             {
                 new Aspose.Pdf.Facades.PdfFileEditor.PageBreak(1, 450)
             });
-            // Save resultant file
+            // Save PDF document
             dest.Save(dataDir + "PageBreak_out.pdf");
         }
     }
@@ -114,11 +114,11 @@ private static void PageBrakeExample01()
 ## Example 2
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PageBrakeExample02()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
 
     // Create PdfFileEditor object
     var fileEditor = new Aspose.Pdf.Facades.PdfFileEditor();
@@ -135,11 +135,11 @@ private static void PageBrakeExample02()
 ## Example 3
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void PageBrakeExample03()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_PageBreak();
 
     using (var src = new FileStream(dataDir + "PageBreak.pdf", FileMode.Open, FileAccess.Read))
     {

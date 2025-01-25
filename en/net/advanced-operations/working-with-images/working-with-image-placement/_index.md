@@ -82,14 +82,13 @@ With the release of Aspose.PDF for .NET 7.0.0, we introduced classes called [Ima
 The next code snippet also works with [Aspose.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractAndScaleImagesFromPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Load the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
     {
         var abs = new Aspose.Pdf.ImagePlacementAbsorber();

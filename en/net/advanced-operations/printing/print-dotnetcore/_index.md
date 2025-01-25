@@ -89,11 +89,10 @@ In this example, we convert PDF document into XPS and add it as a job to the que
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintWithNetCore()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the secondary thread and pass the printing method for
     // the constructor's ThreadStart delegate parameter.
@@ -115,10 +114,9 @@ private static void PrintPDF(string pdfFileName)
     // Create print server and print queue.
     var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
-    // Open a PDF document
+    // Convert PDF to XPS
     using (var document = new Aspose.Pdf.Document(pdfFileName))
     {
-        // Convert PDF to XPS
         var xpsFileName = pdfFileName.Replace(".pdf", ".xps");
         document.Save(xpsFileName, SaveFormat.Xps);
 
@@ -135,11 +133,10 @@ private static void PrintPDF(string pdfFileName)
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintWithNetCore()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the secondary thread and pass the printing method for
     // the constructor's ThreadStart delegate parameter.
@@ -161,7 +158,7 @@ private static void PrintPDF(string pdfFileName)
     // Create print server and print queue.
     var defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
-    // Open a PDF document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(pdfFileName);
 
     // Convert PDF to XPS
@@ -186,23 +183,22 @@ This preference can be switched on and off using the [Document.PickTrayByPdfSize
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PickTrayByPdfSize()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page and some content
+        // Add page
         var page = document.Pages.Add();
         page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
 
         // Set the flag to choose a paper tray using the PDF page size
         document.PickTrayByPdfSize = true;
 
-        // Save the document
+        // Save PDF document
         document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
     }
 }
@@ -212,23 +208,22 @@ private static void PickTrayByPdfSize()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PickTrayByPdfSize()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create a new document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a new page and some content
+    // Add page
     var page = document.Pages.Add();
     page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
 
     // Set the flag to choose a paper tray using the PDF page size
     document.PickTrayByPdfSize = true;
 
-    // Save the document
+    // Save PDF document
     document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
 }
 ```
@@ -247,22 +242,21 @@ The page scaling option that shall be selected when a print dialog is displayed 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrintScaling()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create an empty document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a new page
+        // Add page
         document.Pages.Add();
 
         // Disable print scaling
         document.PrintScaling = PrintScaling.None;
 
-        // Save updated document
+        // Save PDF document
         document.Save(dataDir + "SetPrintScaling_out.pdf");
     }
 }
@@ -272,22 +266,21 @@ private static void SetPrintScaling()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrintScaling()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Create an empty document
+    // Create PDF document
     using var document = new Aspose.Pdf.Document();
 
-    // Add a new page
+    // Add page
     document.Pages.Add();
 
     // Disable print scaling
     document.PrintScaling = PrintScaling.None;
 
-    // Save updated document
+    // Save PDF document
     document.Save(dataDir + "SetPrintScaling_out.pdf");
 }
 ```

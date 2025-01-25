@@ -81,13 +81,13 @@ draft: false
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void AddListItem()
  {
-     // Define the path to the directory containing the input PDF
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Create an instance of FormEditor to manipulate form fields
      using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
      {
-         // Bind the input PDF file to the formEditor
+         // Bind PDF document
          formEditor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
          // Add a ListBox field for selecting country, placed at the specified coordinates on page 1
@@ -100,7 +100,7 @@ draft: false
          formEditor.AddListItem("Country", "France");
          formEditor.AddListItem("Country", "Spain");
 
-         // Save the updated PDF with the list items added
+         // Save PDF document
          formEditor.Save(dataDir + "Sample-Form-01-mod.pdf");
      }
  }
@@ -114,19 +114,19 @@ draft: false
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void DelListItem()
  {
-     // Define the path to the directory containing the input PDF
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Create an instance of FormEditor to manipulate form fields
      using (var formEditor = new Aspose.Pdf.Facades.FormEditor())
      {
-         // Bind the input PDF file to the formEditor
+         // Bind PDF document
          formEditor.BindPdf(dataDir + "Sample-Form-04.pdf");
 
          // Delete the list item "France" from the 'Country' ListBox field
          formEditor.DelListItem("Country", "France");
 
-         // Save the updated PDF with the list item removed
+         // Save PDF document
          formEditor.Save(dataDir + "Sample-Form-04-mod.pdf");
      }
  }

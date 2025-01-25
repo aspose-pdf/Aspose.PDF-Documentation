@@ -88,28 +88,19 @@ Now, we see how the stamp can be rotated about the center of the stamp. [Stamp](
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddRotatingStampToPdf()
 {
-    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();  // Using dynamic path
-
-    // Set path of the image to be set as watermark
-    string imageFile = dataDir + "RotatingStamp.jpg";
-
-    // Set input file path
-    string inFile = dataDir + "RotatingStamp.pdf";
-
-    // Set output file path
-    string outFile = dataDir + "RotatingStamp_out.pdf";  // Output file with '_out' suffix
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();  
 
     // Create PdfFileInfo object to get height and width of the pages
-    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(inFile))
+    using (var fileInfo = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "RotatingStamp.pdf"))
     {
         // Create Stamp object
         var aStamp = new Aspose.Pdf.Facades.Stamp();
 
         // Bind image file with the Stamp object
-        aStamp.BindImage(imageFile);
+        aStamp.BindImage(dataDir + "RotatingStamp.jpg");
 
         // Specify whether the stamp will be added as a background or not
         aStamp.IsBackground = false;
@@ -126,11 +117,11 @@ private static void AddRotatingStampToPdf()
         // Set the size of the watermark
         aStamp.SetImageSize(100, 100);
 
-        // Create a Document object for the input PDF
-        using (var doc = new Aspose.Pdf.Document(inFile))
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document(dataDir + "RotatingStamp_out.pdf"))
         {
             // Create PdfFileStamp class to bind input and output files
-            using (var stamper = new Aspose.Pdf.Facades.PdfFileStamp(doc))
+            using (var stamper = new Aspose.Pdf.Facades.PdfFileStamp(document))
             {
                 // Add the stamp in the PDF file
                 stamper.AddStamp(aStamp);

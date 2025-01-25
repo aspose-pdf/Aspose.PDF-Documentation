@@ -142,7 +142,7 @@ private void button1_Click(object sender, System.EventArgs e)
 
 ### Approach 2
 
-- Concatenate(System.IO.Stream firstInputStream, System.IO.Stream secInputStream, System.IO.Stream outputStream)
+- Concatenate(Stream firstInputStream, Stream secInputStream, Stream outputStream)
 
 Similar to the above approach, this approach also allows joining two PDF files. First two arguments (firstInputStream and secInputStream) provide the two input PDF files as Streams (a stream is an array of bits/bytes) that are to be concatenated. Third argument (outputStream) provides the stream representation of desired output PDF file.
 
@@ -167,7 +167,7 @@ private void button2_Click(object sender, System.EventArgs e)
 
 ### Approach 3
 
-- Concatenate(System.IO.Stream inputStreams[], System.IO.Stream outputStream)
+- Concatenate(Stream inputStreams[], Stream outputStream)
 
 If you want to join more than two PDF files then this approach would be your ultimate choice. First argument (inputStreams[]) provides the input PDF files in the form of an Array of Streams that are to be concatenated. Second argument (outputStream) provides the stream representation of desired output PDF file.
 

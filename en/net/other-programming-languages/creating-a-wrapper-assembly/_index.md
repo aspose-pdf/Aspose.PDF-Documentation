@@ -83,14 +83,12 @@ Reducing the number of classes and methods that you need to invoke via COM Inter
 ## Aspose.PDF for .NET Wrapper
 
 ```csharp
-using System;
 using System.Runtime.InteropServices;
 
-namespace PdfText
+namespace TextRetriever
 {
-    [Guid("FC969AC9-6591-46FB-A4AB-DB12A776F3BF")]
     [InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
-    public interface IPetriever
+    public interface IRetriever
     {
         [DispId(1)]
         void SetLicense(string file);
@@ -99,34 +97,33 @@ namespace PdfText
         string GetText(string file);
     }
 
-    [Guid("3D59100F-3CC5-463D-B509-58FA0520B436")]
     [ClassInterface(ClassInterfaceType.None)]
-    [ComSourceInterfaces(typeof(IPetriever))]
-    public class Petriever : IPetriever
+    [ComSourceInterfaces(typeof(IRetriever))]
+    public class Retriever : IRetriever
     {
         public void SetLicense(string file)
         {
-            License lic = new License();
+            var lic = new Aspose.Pdf.License();
             lic.SetLicense(file);
         }
 
         public string GetText(string file)
         {
-            // open document
-            Document document = new Document(file);
+            // Open PDF document
+            using (var document = new Aspose.Pdf.Document(file))
+            {
+                // Create TextAbsorber object to extract text
+                var absorber = new Aspose.Pdf.Text.TextAbsorber();
 
-            // create TextAbsorber object to extract text
-            TextAbsorber absorber = new TextAbsorber();
+                // Accept the absorber for all document's pages
+                document.Pages.Accept(absorber);
 
-            // accept the absorber for all document's pages
-            document.Pages.Accept(absorber);
+                // Get the extracted text
+                string text = absorber.Text;
 
-            // get the extracted text
-
-            string text = absorber.Text;
-            return text;
+                return text;
+            }
         }
     }
 }
-
 ```

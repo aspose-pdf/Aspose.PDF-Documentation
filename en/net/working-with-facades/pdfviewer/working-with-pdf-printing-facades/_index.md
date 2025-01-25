@@ -82,22 +82,24 @@ Create an instance of the [PdfViewer](https://reference.aspose.com/pdf/net/aspos
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings and PrintDocument
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -123,22 +125,24 @@ private static void PrintingPDFFile()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings and PrintDocument
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -167,21 +171,22 @@ In order to display a print dialog, use the following code snippet:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFDisplayPrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
 
         var printDialog = new System.Windows.Forms.PrintDialog();
         if (printDialog.ShowDialog() == DialogResult.OK)
@@ -204,21 +209,22 @@ private static void PrintingPDFDisplayPrintDialog()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFDisplayPrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
 
     var printDialog = new System.Windows.Forms.PrintDialog();
     if (printDialog.ShowDialog() == DialogResult.OK)
@@ -246,23 +252,26 @@ There are printers that print to a file. To use them, set the name of the virtua
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-        viewer.PrintAsImage = false;      // Do not convert document pages to images
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Do not convert document pages to images
+        viewer.PrintAsImage = false;
 
         // Create objects for printer and page settings and PrintDocument
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -289,23 +298,26 @@ private static void PrintingPDFToSoftPrinter()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-    viewer.PrintAsImage = false;      // Do not convert document pages to images
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Do not convert document pages to images
+    viewer.PrintAsImage = false;
 
     // Create objects for printer and page settings and PrintDocument
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -339,22 +351,24 @@ The following code snippet shows how to hide the print dialog.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFHidePrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -379,22 +393,24 @@ private static void PrintingPDFHidePrintDialog()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFHidePrintDialog()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printin
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -424,23 +440,26 @@ A color PDF document can be printed to an XPS printer as grayscale, using [PdfVi
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFAsGrayscale()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-        viewer.PrintAsGrayscale = false;  // Print the file as grayscale
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Print the file as grayscale
+        viewer.PrintAsGrayscale = false;
 
         // Create objects for printer and page settings
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -465,23 +484,26 @@ private static void PrintingPDFAsGrayscale()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFAsGrayscale()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-    viewer.PrintAsGrayscale = false;  // Print the file as grayscale
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Print the file as grayscale
+    viewer.PrintAsGrayscale = false;
 
     // Create objects for printer and page settings
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -513,23 +535,26 @@ The following code snippet shows how to print and convert a PDF to PostScript fo
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToPostScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-        viewer.PrintAsImage = false;      // Do not convert document pages to images
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Do not convert document pages to images
+        viewer.PrintAsImage = false;
 
         // Create objects for printer and page settings and PrintDocument
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -558,23 +583,26 @@ private static void PrintingPDFToPostScript()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintingPDFToSoftPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-    viewer.PrintAsImage = false;      // Do not convert document pages to images
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Do not convert document pages to images
+    viewer.PrintAsImage = false;
 
     // Create objects for printer and page settings and PrintDocument
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -608,23 +636,26 @@ A PDF file can be printed to a physical printer as well as to the Microsoft XPS 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Bind source PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-        viewer.PrintAsImage = false;      // Do not convert document pages to images
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+        // Do not convert document pages to images
+        viewer.PrintAsImage = false;
 
         // Create Printer Settings object
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -669,23 +700,26 @@ private static void CheckingPrintJobStatus()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Bind source PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
-    viewer.PrintAsImage = false;      // Do not convert document pages to images
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+    // Do not convert document pages to images
+    viewer.PrintAsImage = false;
 
     // Create Printer Settings object
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -735,7 +769,6 @@ In a particular printing job, the pages of PDF document can either be printed in
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 struct PrintingJobSettings
 {
     public int ToPage { get; set; }
@@ -747,7 +780,7 @@ struct PrintingJobSettings
 private static void PrintingPagesInSimplexAndDuplexMode()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
     string outputDir = dataDir;
@@ -781,13 +814,16 @@ private static void PrintingPagesInSimplexAndDuplexMode()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -837,7 +873,6 @@ private static void PrintingPagesInSimplexAndDuplexMode()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 struct PrintingJobSettings
 {
     public int ToPage { get; set; }
@@ -849,7 +884,7 @@ struct PrintingJobSettings
 private static void PrintingPagesInSimplexAndDuplexMode()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
     string outputDir = dataDir;
@@ -883,13 +918,16 @@ private static void PrintingPagesInSimplexAndDuplexMode()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings
     var ps = new Aspose.Pdf.Printing.PrinterSettings();

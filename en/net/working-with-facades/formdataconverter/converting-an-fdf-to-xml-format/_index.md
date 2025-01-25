@@ -88,11 +88,11 @@ We can use [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.f
 The following code snippet shows you how to convert an FDF file into an XML file:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
 private static void ConvertFdftoXml()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create a file stream for FDF file - input file
     using (var fdfInputStream = new FileStream(dataDir + "input.fdf", FileMode.Open))

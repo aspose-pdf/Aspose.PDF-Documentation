@@ -81,13 +81,13 @@ In order to add a form field in an existing PDF file, you need to use [AddField]
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddField()
 {
-    // Define the path to the directory containing the input PDF
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Bind the input PDF file to the FormEditor
+        // Bind PDF document
         editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Add a text field named "Country" to the first page of the PDF
@@ -97,7 +97,7 @@ private static void AddField()
         // Set a character limit for the "Country" field to 20 characters
         editor.SetFieldLimit("Country", 20);
 
-        // Save the modified PDF with the added field
+        // Save PDF document
         editor.Save(dataDir + "Sample-Form-01-mod.pdf");
     }
 }
@@ -112,12 +112,13 @@ private static void AddField()
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
  private static void AddSubmitBtn()
  {
+     // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Create an instance of FormEditor to manipulate form fields
      using (var editor = new Aspose.Pdf.Facades.FormEditor())
      {
-         // Bind the input PDF file to the FormEditor
+         // Bind PDF document
          editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
          // Add a submit button named "Submit" to the first page of the PDF
@@ -125,7 +126,7 @@ private static void AddField()
          // and the coordinates of the button (left, bottom, right, top)
          editor.AddSubmitBtn("Submit", 1, "Submit", "http://localhost:3000", 232.56f, 466.75f, 352.28f, 484.03f);
 
-         // Save the modified PDF with the added submit button
+         // Save PDF document
          editor.Save(dataDir + "Sample-Form-01-mod.pdf");
      }
  }
@@ -139,19 +140,20 @@ private static void AddField()
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddFieldScript()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
     // Create an instance of FormEditor to manipulate form fields
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Bind the input PDF file to the FormEditor
+        // Bind PDF document
         editor.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         // Add a JavaScript action to the field named "Last Name"
         // The script displays an alert box with the message "Only one last name"
         editor.AddFieldScript("Last Name", "app.alert(\"Only one last name\",3);");
 
-        // Save the modified PDF with the added script
+        // Save PDF document
         editor.Save(dataDir + "Sample-Form-01-mod.pdf");
     }
 }

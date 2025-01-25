@@ -80,24 +80,24 @@ sitemap:
 
 The following examples tested with:
 
-* Docker v.20.10.11 and Docker Desktop 4.3.2
-* Visual Studio 2022 Community Edition v.17.0.5
+* Docker v.20.10.11 and Docker Desktop 4.3.2.
+* Visual Studio 2022 Community Edition v.17.0.5.
 * .NET 6 SDK is used in the example provided below.
-* Aspose.PDF for .NET v.22.01
+* Aspose.PDF for .NET v.22.01.
 
 ## Create sample application for Docker Linux Container
 
-1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**
-1. In **Configure your new project** window set desired project name and location and press **Next**
+1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**.
+1. In **Configure your new project** window set desired project name and location and press **Next**.
 1. In **Additional information** window choose **.NET 6.0 (Long-term support)** and enable Docker support. You can also set **Docker OS** to Linux if needed.
-1. Press **Create**
-1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`)
+1. Press **Create**.
+1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`).
 
 ### Generate PDF document using ASP.NET Core Web App in Linux container
 
 We will use code from **Complex Example** in this app. Please follow [this link](/pdf/net/complex-pdf-example/) for a more detailed explanation.
 
-1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
+1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png).
 1. Replace code in `HomeController.cs` with the following snippet (please note that you can have another namespace):
 
 The following code snippet also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
@@ -131,76 +131,77 @@ namespace Docker.Linux.Demo01.Controllers
         {
             const string file_type = "application/pdf";
             const string file_name = "sample.pdf";
-            var memoryStream = new System.IO.MemoryStream();
+            var memoryStream = new MemoryStream();
 
             _logger.LogInformation("Start");
             // Initialize document object
-            var document = new Document();
-            // Add page
-            var page = document.Pages.Add();
-
-            // Add image
-            var imageFileName = System.IO.Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
-            page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
-
-            // -------------------------------------------------------------
-            // Add Header
-            var header = new TextFragment("New ferry routes in Fall 2020");
-            header.TextState.Font = FontRepository.FindFont("Arial");
-            header.TextState.FontSize = 24;
-            header.HorizontalAlignment = HorizontalAlignment.Center;
-            header.Position = new Position(130, 720);
-            page.Paragraphs.Add(header);
-
-            // Add description
-            var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
-            var description = new TextFragment(descriptionText);
-            description.TextState.Font = FontRepository.FindFont("Times New Roman");
-            description.TextState.FontSize = 14;
-            description.HorizontalAlignment = HorizontalAlignment.Left;
-            page.Paragraphs.Add(description);
-
-
-            // Add table
-            var table = new Table
+            using (var document = new Aspose.Pdf.Document())
             {
-                ColumnWidths = "200",
-                Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
-                DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
-                DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
-                Margin =
+                // Add page
+                var page = document.Pages.Add();
+
+                // Add image
+                var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
+                page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
+
+                // -------------------------------------------------------------
+                // Add Header
+                var header = new TextFragment("New ferry routes in Fall 2020");
+                header.TextState.Font = FontRepository.FindFont("Arial");
+                header.TextState.FontSize = 24;
+                header.HorizontalAlignment = HorizontalAlignment.Center;
+                header.Position = new Position(130, 720);
+                page.Paragraphs.Add(header);
+
+                // Add description
+                var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
+                var description = new TextFragment(descriptionText);
+                description.TextState.Font = FontRepository.FindFont("Times New Roman");
+                description.TextState.FontSize = 14;
+                description.HorizontalAlignment = HorizontalAlignment.Left;
+                page.Paragraphs.Add(description);
+
+                // Add table
+                var table = new Table
                 {
-                    Top = 10,
-                    Bottom = 10
-                },
-                DefaultCellTextState =
+                    ColumnWidths = "200",
+                    Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
+                    DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
+                    DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
+                    Margin =
+                    {
+                        Top = 10,
+                        Bottom = 10
+                    },
+                    DefaultCellTextState =
+                    {
+                        Font =  FontRepository.FindFont("Helvetica")
+                    }
+                };
+
+                var headerRow = table.Rows.Add();
+                headerRow.Cells.Add("Departs City");
+                headerRow.Cells.Add("Departs Island");
+                foreach (Cell headerRowCell in headerRow.Cells)
                 {
-                    Font =  FontRepository.FindFont("Helvetica")
+                    headerRowCell.BackgroundColor = Color.LightGray;
+                    headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
                 }
-            };
 
-            var headerRow = table.Rows.Add();
-            headerRow.Cells.Add("Departs City");
-            headerRow.Cells.Add("Departs Island");
-            foreach (Cell headerRowCell in headerRow.Cells)
-            {
-                headerRowCell.BackgroundColor = Color.LightGray;
-                headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
+                var time = new TimeSpan(6, 0, 0);
+                var incTime = new TimeSpan(0, 30, 0);
+                for (int i = 0; i < 10; i++)
+                {
+                    var dataRow = table.Rows.Add();
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                    time = time.Add(incTime);
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                }
+
+                page.Paragraphs.Add(table);
+
+                document.Save(memoryStream);
             }
-
-            var time = new TimeSpan(6, 0, 0);
-            var incTime = new TimeSpan(0, 30, 0);
-            for (int i = 0; i < 10; i++)
-            {
-                var dataRow = table.Rows.Add();
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-                time = time.Add(incTime);
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-            }
-
-            page.Paragraphs.Add(table);
-
-            document.Save(memoryStream);
             _logger.LogInformation("Finish");
             return File(memoryStream, file_type, file_name);
         }
@@ -250,17 +251,17 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 ## Create sample application for Docker Windows Container
 
-1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**
-1. In **Configure your new project** window set desired project name and location and press **Next**
+1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**.
+1. In **Configure your new project** window set desired project name and location and press **Next**.
 1. In **Additional information** window choose **.NET 6.0 (Long-term support)** and enable Docker support. If needed, you can also set **Docker OS** to `Windows`.
-1. Press **Create**
-1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`)
+1. Press **Create**.
+1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`).
 
 ### Generate PDF document using ASP.NET Core Web App in Windows container
 
 We will use the same code as in the previous example.
 
-1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
+1. Create an `images` folder in the `wwwroot` folder and put the image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png).
 1. Replace the code in `HomeController.cs` with the snippet above.
 
 ```dockerfile

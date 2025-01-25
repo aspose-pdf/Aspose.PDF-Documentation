@@ -116,9 +116,10 @@ _Note:_ This code also works with [Aspose.PDF.Drawing](/pdf/net/drawing/) librar
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ExtractWatermarkFromPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample-w.pdf"))
     {
         // Get the watermarks from the first page artifacts
@@ -146,22 +147,23 @@ The following code snippet shows how to add a background image to PDF pages usin
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddBackgroundImageToPDF()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
     {
         // Create a new BackgroundArtifact and set the background image
         var background = new Aspose.Pdf.BackgroundArtifact()
         {
-            BackgroundImage = System.IO.File.OpenRead(dataDir + "background.jpg")
+            BackgroundImage = File.OpenRead(dataDir + "background.jpg")
         };
 
         // Add the background image to the first page's artifacts
         document.Pages[1].Artifacts.Add(background);
 
-        // Save the document with the added background
-        document.Save(dataDir + "sample_artifacts_background.pdf");
+        // Save PDF document with the added background
+        document.Save(dataDir + "SampleArtifactsBackground_out.pdf");
     }
 }
 ```
@@ -170,11 +172,13 @@ If you want, for some reason, to use a solid color background, please change the
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+
  private static void AddBackgroundColorToPDF()
  {
+    // The path to the documents directory
      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-     // Load the PDF document
+     // Open PDF document
      using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
      {
          // Create a new BackgroundArtifact and set the background color
@@ -186,8 +190,8 @@ If you want, for some reason, to use a solid color background, please change the
          // Add the background color to the first page's artifacts
          document.Pages[1].Artifacts.Add(background);
 
-         // Save the document with the applied background color
-         document.Save(dataDir + "sample_artifacts_background.pdf");
+         // Save PDF document
+         document.Save(dataDir + "SampleArtifactsBackground_out.pdf");
      }
  }
 ```
@@ -200,9 +204,10 @@ To calculate the total count of artifacts of a particular type (for example, the
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void CountPDFArtifacts()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Load the PDF document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
     {
         // Get pagination artifacts from the first page

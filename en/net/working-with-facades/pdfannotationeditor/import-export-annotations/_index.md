@@ -86,19 +86,21 @@ XFDF stand for XML Forms Data Format. It is an XML based file format. This file 
 The following code snippet shows you how to import annotations to an XFDF file:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Sources of PDF with annotations           
     var sources = new string[] { dataDir + "ImportAnnotations.pdf" };
             
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "input.pdf");
         annotationEditor.ImportAnnotations(sources);
+        // Save PDF document
         annotationEditor.Save(dataDir + "ImportAnnotations_out.pdf");
     }
 }
@@ -107,25 +109,30 @@ private static void ImportAnnotation()
 The next code snippet describes how import/export annotations to an XFDF file:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportExportXFDF01()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
-        using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+        using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             annotationEditor.ExportAnnotationsToXfdf(xmlOutputStream);
         }
 
+        // Create PDF document
         using (var document = new Aspose.Pdf.Document())
         {
+            // Add page
             document.Pages.Add();
+            // Bind PDF document
             annotationEditor.BindPdf(document);
-            annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "exportannotations_out.xfdf"));
+            annotationEditor.ImportAnnotationsFromXfdf(File.OpenRead(dataDir + "exportannotations_out.xfdf"));
+            // Save PDF document
             annotationEditor.Save(dataDir + "ImportedAnnotation_out.pdf");
         }
     }
@@ -135,17 +142,19 @@ private static void ImportExportXFDF01()
 This way, the annotations of the specified types will only be imported or exported to an XFDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportExportXFDF02()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // Export annotations
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
-        using (FileStream xmlOutputStream = System.IO.File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+
+        // Export annotations
+        using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             var annotationTypes = new[] {AnnotationType.FreeText, AnnotationType.Text};
             annotationEditor.ExportAnnotationsXfdf(xmlOutputStream, 1, 5, annotationTypes);
@@ -154,11 +163,14 @@ private static void ImportExportXFDF02()
         // Import annotations
         using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
         {
+            // Add page
             document.Pages.Add();
+            // Bind PDF document
             annotationEditor.BindPdf(document);
-            annotationEditor.ImportAnnotationsFromXfdf(System.IO.File.OpenRead(dataDir + "annotations.xfdf"));
+            annotationEditor.ImportAnnotationsFromXfdf(File.OpenRead(dataDir + "annotations.xfdf"));
+            // Save PDF document
             annotationEditor.Save(dataDir + "ImportedAnnotation_XFDF02_out.pdf");
-            }
+        }
     }
 }
 ```

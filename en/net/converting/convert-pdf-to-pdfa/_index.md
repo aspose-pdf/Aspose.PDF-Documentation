@@ -107,20 +107,19 @@ The following code snippet shows how to convert PDF files to PDF/A-1b compliant 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Convert to PDF/A compliant document
         // During conversion process, the validation is also performed
         document.Convert(dataDir + "PDFA1bConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_1B, Aspose.Pdf.ConvertErrorAction.Delete);
         
-        // Save output document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFA_out.pdf");
     }
 }
@@ -130,20 +129,19 @@ private static void ConvertPdfToPdfA()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Convert to PDF/A compliant document
     // During conversion process, the validation is also performed
     document.Convert(dataDir + "PDFA1bConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_1B, Aspose.Pdf.ConvertErrorAction.Delete);
     
-    // Save output document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFA_out.pdf");
 }
 ```
@@ -156,13 +154,12 @@ To perform validation only, use the following line of code:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ValidatePdfAStandard()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
     {
         // Validate PDF for PDF/A-1a
@@ -175,13 +172,12 @@ private static void ValidatePdfAStandard()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-       
 private static void ValidatePdfAStandard()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf");
 
     // Validate PDF for PDF/A-1a
@@ -199,19 +195,18 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-3b 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA3b()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Convert to PDF/A compliant document, log file is omitted
         document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.PDF_A_3B, Aspose.Pdf.ConvertErrorAction.Delete);
         
-        // Save output document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFA3b_out.pdf");
     }
 }
@@ -221,19 +216,18 @@ private static void ConvertPdfToPdfA3b()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA3b()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Convert to PDF/A compliant document, log file is omitted
     document.Convert(Stream.Null, Aspose.Pdf.PdfFormat.PDF_A_3B, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save output document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFA3b_out.pdf");
 }
 ```
@@ -248,13 +242,12 @@ Aspose.PDF for .NET also supports the feature to convert a PDF file to PDF/A-4 f
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA4()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // If the document version is less than PDF-2.0, it must be converted to PDF-2.0
@@ -263,7 +256,7 @@ private static void ConvertPdfToPdfA4()
         // Convert to the PDF/A-4 format
         document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
 
-        // Save output document
+        // Save PDF document
         document.Save(dataDir + "PDFToPDFA4_out.pdf");
     }
 }
@@ -273,13 +266,12 @@ private static void ConvertPdfToPdfA4()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ConvertPdfToPdfA4()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // If the document version is less than PDF-2.0, it must be converted to PDF-2.0
@@ -288,7 +280,7 @@ private static void ConvertPdfToPdfA4()
     // Convert to the PDF/A-4 format
     document.Convert(dataDir + "PDFA4ConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_4, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save output document
+    // Save PDF document
     document.Save(dataDir + "PDFToPDFA4_out.pdf");
 }
 ```
@@ -304,13 +296,12 @@ PDF/A-3a is the format that provides the feature to attach any file format as an
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddAttachmentToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
     
-    // Instantiate Document instance to load existing file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // Setup new file to be added as attachment
@@ -322,7 +313,7 @@ private static void AddAttachmentToPdfA()
             // Perform conversion to PDF/A-3a, so that the attachment is included in the resultant file
             document.Convert(dataDir + "PDFA3aConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_3A, Aspose.Pdf.ConvertErrorAction.Delete);
 
-            // Save resultant file
+            // Save PDF document
             document.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
         }
     }
@@ -333,13 +324,12 @@ private static void AddAttachmentToPdfA()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddAttachmentToPdfA()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Instantiate Document instance to load existing file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // Setup new file to be added as attachment
@@ -351,7 +341,7 @@ private static void AddAttachmentToPdfA()
     // Perform conversion to PDF/A-3a, so that the attachment is included in the resultant file
     document.Convert(dataDir + "PDFA3aConversionLog.xml", Aspose.Pdf.PdfFormat.PDF_A_3A, Aspose.Pdf.ConvertErrorAction.Delete);
 
-    // Save resultant file
+    // Save PDF document
     document.Save(dataDir + "AddAttachmentToPDFA_out.pdf");
 }
 ```
@@ -366,11 +356,10 @@ As per PDF/A standards, fonts should be embedded in a PDF/A document. However, i
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ReplaceMissingFonts()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     try
     {
@@ -384,13 +373,13 @@ private static void ReplaceMissingFonts()
         Aspose.Pdf.Text.FontRepository.Substitutions.Add(fontSubstitution);
     }
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf"))
     {
         // During the conversion, the missing font will be replaced with the substitution one
         document.Convert(dataDir + "ReplaceMissingFonts.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-        // Save output document
+        // Save PDF document
         document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
     }
 }
@@ -400,11 +389,10 @@ private static void ReplaceMissingFonts()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ReplaceMissingFonts()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     try
     {
@@ -418,13 +406,13 @@ private static void ReplaceMissingFonts()
         Aspose.Pdf.Text.FontRepository.Substitutions.Add(fontSubstitution);
     }
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "PDFToPDFA.pdf");
 
     // During the conversion, the missing font will be replaced with the substitution one
     document.Convert(dataDir + "ReplaceMissingFonts.xml", PdfFormat.PDF_A_1B, ConvertErrorAction.Delete);
 
-    // Save output document
+    // Save PDF document
     document.Save(dataDir + "ReplaceMissingFonts_out.pdf");
 }
 ```

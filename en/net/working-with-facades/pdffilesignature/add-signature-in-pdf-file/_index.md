@@ -80,15 +80,15 @@ draft: false
 Once the object of a particular signature type is created, you can use the [Sign](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) method of the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class to sign the PDF and pass the particular signature object to this class. You can also specify other attributes for this method. Finally, you need to save the signed PDF using [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) method of the [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class. The following code snippet shows you how to add signature in a PDF file.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-  
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddPdfFileSignature()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for signature location
@@ -101,7 +101,7 @@ private static void AddPdfFileSignature()
         var signature = new PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
         pdFileSignature.Sign(1, "I'm document author", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
@@ -110,16 +110,15 @@ private static void AddPdfFileSignature()
 The following code example shows us the ability to sign a document with two signatures. In our example, we put the first signature on the first page, and the second on the second page. You can specify the pages that you need.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTwoSignature()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        // Sign with 1st signature
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create a rectangle for 1st signature location
@@ -132,6 +131,7 @@ private static void AddTwoSignature()
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
 
         // Sign with 2nd signature
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
 
         // Create a rectangle for 2nd signature location
@@ -142,7 +142,7 @@ private static void AddTwoSignature()
 
         pdFileSignature.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
 
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
     }
 }
@@ -152,15 +152,15 @@ For a document with forms or acroforms that needs to be signed, see the followin
 You need to create an object of [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class using input and output PDF files. Use [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1) for binding. Create a signature with the ability to add the required properties. In our example they are 'Reason' and 'CustomAppearance'.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddPdfFileSignatureField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create any of the three signature types
@@ -175,7 +175,7 @@ private static void AddPdfFileSignatureField()
         }; // PKCS#1
         
         pdFileSignature.Sign("Signature1", signature);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
     }
 }
@@ -184,16 +184,16 @@ private static void AddPdfFileSignatureField()
 If our document has two fields, the algorithm for signing it is similar to the first example.
 
 ```csharp
-// For complete examples and data files, check for https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddPdfFileSignatureField2()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
     using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfSign.BindPdf(dataDir + "input.pdf");
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
         // Create any of the three signature types
         var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
@@ -205,9 +205,9 @@ private static void AddPdfFileSignatureField2()
             }
         }; // PKCS#1
         pdFileSignature.Sign("Signature1", signature1);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
-
+        // Bind PDF document
         pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
 
         // Create any of the three signature types
@@ -221,7 +221,7 @@ private static void AddPdfFileSignatureField2()
         }; // PKCS#1
         
         pdFileSignature.Sign("Signature2", signature2);
-        // Save the document
+        // Save PDF document
         pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
     }
 }

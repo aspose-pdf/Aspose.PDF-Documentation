@@ -83,13 +83,12 @@ In order to read the settings we use [GetViewerPreference](https://reference.asp
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void GetViewerPreference()
+private static void GetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf"))
     {
         // Instantiate PdfContentEditor object
@@ -120,13 +119,12 @@ public static void GetViewerPreference()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void GetViewerPreference()
+private static void GetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "SetViewerPreference.pdf");
 
     // Instantiate PdfContentEditor object

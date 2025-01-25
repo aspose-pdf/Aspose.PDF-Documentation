@@ -109,22 +109,21 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 The following code snippet shows how to optimize a PDF document for the web.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OptimizeDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
-		// Optimize for web
-		document.Optimize();
+        // Optimize for web
+        document.Optimize();
 
-		// Save output document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -139,22 +138,21 @@ The [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/docume
 The snippet below is an example. Note, though, that this method cannot guarantee document shrinking.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ShrinkDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
-	{
-		// Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
-		document.OptimizeResources();
+    {
+        // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
+        document.OptimizeResources();
 
-		// Save updated document
-		document.Save(dataDir + "ShrinkDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "ShrinkDocument_out.pdf");
+    }
 }
 ```
 
@@ -169,105 +167,102 @@ We have two ways to work with images: reduce image quality and/or change their r
 `ImageQuality` works similarly to JPEG quality, where value 0 is the lowest and value 100 is the highest.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ShrinkImage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
-	{
-		// Initialize OptimizationOptions
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-		// Set CompressImages option
-		optimizeOptions.ImageCompressionOptions.CompressImages = true;
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
-		// Set ImageQuality option
-		optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "Shrinkimage_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "Shrinkimage_out.pdf");
+    }
 }
 ```
 
 Another way is to resize the images with a lower resolution. In this case, we should set ResizeImages to true and MaxResolution to the appropriate value.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ResizeImages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
-	{
-		// Initialize OptimizationOptions
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-		// Set CompressImages option
-		optimizeOptions.ImageCompressionOptions.CompressImages = true;
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
-		// Set ImageQuality option
-		optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
-		// Set ResizeImage option
-		optimizeOptions.ImageCompressionOptions.ResizeImages = true;
+        // Set ResizeImage option
+        optimizeOptions.ImageCompressionOptions.ResizeImages = true;
 
-		// Set MaxResolution option
-		optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
+        // Set MaxResolution option
+        optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "ResizeImages_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "ResizeImages_out.pdf");
+    }
 }
 ```
 
 Another important issue is the execution time. But again, we can manage this setting too. Currently, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) property. The following snippet demonstrates the Fast algorithm:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FastShrinkImages()
 {
     // Initialize Time
     var time = DateTime.Now.Ticks;
 
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
-	{
-		// Initialize OptimizationOptions
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-		// Set CompressImages option
-		optimizeOptions.ImageCompressionOptions.CompressImages = true;
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
 
-		// Set ImageQuality option
-		optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
 
-		// Set Image Compression Version to fast
-		optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
+        // Set Image Compression Version to fast
+        optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "FastShrinkImages_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FastShrinkImages_out.pdf");
+    }
 
     // Output the time taken for the operation
     Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
@@ -279,28 +274,27 @@ private static void FastShrinkImages()
 A PDF document sometimes contains the PDF objects that are not referenced from any other object in the document. This may happen, for example, when a page is removed from the document page tree but the page object itself isn’t removed. Removing these objects doesn’t make the document invalid but rather shrinks it.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OptimizeDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
-		// Set RemoveUsedObject option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			RemoveUnusedObjects = true
-		};
-		
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Set RemoveUsedObject option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedObjects = true
+        };
+        
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -309,28 +303,27 @@ private static void OptimizeDocument()
 Sometimes the document contains the unused resource streams. These streams are not “unused objects” because they are referenced from a page resource dictionary. Thus, they are not removed with a “remove unused objects” method. But these streams are never used with the page contents. This may happen in cases when an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have “common” resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. It sometimes decreases the document size. The use of this technique is similar to the previous step:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OptimizePdfDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set RemoveUsedStreams option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			RemoveUnusedStreams = true
-		};
+    {
+        // Set RemoveUsedStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedStreams = true
+        };
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -339,64 +332,62 @@ private static void OptimizePdfDocument()
 Some documents can contain several identical resource streams (like images, for instance). This may happen, say when a document is concatenated with itself. The output document contains two independent copies of the same resource stream. We analyze all resource streams and compare them. If streams are duplicated, they are merged, that is, only one copy is left. The references are changed appropriately, and the copies of the object are removed. In some cases, it helps to decrease the document size.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set LinkDuplicateStreams option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			LinkDuplicateStreams = true
-		};
+    {
+        // Set LinkDuplicateStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            LinkDuplicateStreams = true
+        };
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
 Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OptimizePdfDocumentWithReusePageContent()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set AllowReusePageContent option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			AllowReusePageContent = true
-		};
+    {
+        // Set AllowReusePageContent option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            AllowReusePageContent = true
+        };
 
-		Console.WriteLine("Start");
+        Console.WriteLine("Start");
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 
     Console.WriteLine("Finished");
 
     // Calculate and display file sizes
-    var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-    var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
     Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
 }
 ```
@@ -406,36 +397,35 @@ private static void OptimizePdfDocumentWithReusePageContent()
 If the document uses embedded fonts, it means that all font data is stored in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user's machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. Thus, the document size decreases but the document itself may become unreadable if the correct font is not installed.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void OptimizePdfDocumentWithUnembedFonts()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Set UnembedFonts option
-		var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
-		{
-			UnembedFonts = true
-		};
+    {
+        // Set UnembedFonts option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            UnembedFonts = true
+        };
 
-		Console.WriteLine("Start");
+        Console.WriteLine("Start");
 
-		// Optimize PDF document using OptimizationOptions
-		document.OptimizeResources(optimizeOptions);
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
 
-		// Save updated document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");	
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");	
+    }
 	
     Console.WriteLine("Finished");
 
     // Calculate and display file sizes
-    var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-    var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
     Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
 }
 ```
@@ -449,28 +439,27 @@ The optimization resources apply these methods to the document. If any of these 
 Annotations can be deleted when they are unnecessary. When they are needed but do not require additional editing, they can be flattened. Both of these techniques will reduce the file size.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FlattenAnnotationsInPdfDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
-	{
-		// Flatten annotations
-		foreach (var page in document.Pages)
-		{
-			foreach (var annotation in page.Annotations)
-			{
-				annotation.Flatten();
-			}
-		}
+    {
+        // Flatten annotations
+        foreach (var page in document.Pages)
+        {
+            foreach (var annotation in page.Annotations)
+            {
+                annotation.Flatten();
+            }
+        }
 
-		// Save updated document
-		document.Save(dataDir + "OptimizeDocument_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
 ```
 
@@ -479,28 +468,27 @@ private static void FlattenAnnotationsInPdfDocument()
 If the PDF document contains AcroForms, we can try to reduce the file size by flattening form fields.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void FlattenPdfForms()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load source PDF form
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Flatten Forms
-		if (document.Form.Fields.Lenght > 0)
-		{
-			foreach (var item in document.Form.Fields)
-			{
-				item.Flatten();
-			}
-		}
+    {
+        // Flatten Forms
+        if (document.Form.Fields.Lenght > 0)
+        {
+            foreach (var item in document.Form.Fields)
+            {
+                item.Flatten();
+            }
+        }
 
-		// Save the updated document
-		document.Save(dataDir + "FlattenForms_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FlattenForms_out.pdf");
+    }
 }
 ```
 
@@ -509,32 +497,31 @@ private static void FlattenPdfForms()
 A PDF file comprises Text, Image, Attachment, Annotations, Graphs, and other objects. You may come across a requirement to convert a PDF from RGB colorspace to grayscale so that it would be faster while printing those PDF files. Also, when the file is converted to grayscale, the document size is reduced too, but it can just as well cause a decrease in the document quality. This feature is currently supported by the Pre-Flight feature of Adobe Acrobat, but when talking about Office automation, Aspose.PDF is an ultimate solution to provide such leverages for document manipulations. In order to accomplish this requirement, the following code snippet can be used.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertRgbToGrayScale()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load source PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Create RGB to DeviceGray conversion strategy
-		var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
+    {
+        // Create RGB to DeviceGray conversion strategy
+        var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
 
-		// Iterate through each page
-		for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
-		{
-			// Get instance of particular page inside PDF
-			var page = document.Pages[idxPage];
+        // Iterate through each page
+        for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
+        {
+            // Get instance of particular page inside PDF
+            var page = document.Pages[idxPage];
 
-			// Convert the RGB colorspace image to GrayScale colorspace
-			strategy.Convert(page);
-		}
+            // Convert the RGB colorspace image to GrayScale colorspace
+            strategy.Convert(page);
+        }
 
-		// Save resultant file
-		document.Save(dataDir + "TestGray_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "TestGray_out.pdf");
+    }
 }
 ```
 
@@ -548,13 +535,85 @@ This feature is supported by version 18.12 or greater.
 
 Aspose.PDF for .NET provides support of FlateDecode compression for PDF Optimisation functionality. The following code snippet below shows how to use the option in Optimization to store images with **FlateDecode** compression:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-FlateDecodeCompression-1.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocumentImagesWithFlateCompression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-### **Store Image in XImageCollection**
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizationOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // To optimize images using FlateDecode compression, set optimization options to Flate
+        optimizationOptions.ImageCompressionOptions.Encoding = Aspose.Pdf.Optimization.ImageEncoding.Flate;
+
+        // Set optimization options
+        document.OptimizeResources(optimizationOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocumentImagesWithFlateCompression_out.pdf");
+    }
+}
+```
+
+### Store Image in XImageCollection
 
 Aspose.PDF for .NET provides the ability to store new images into **XImageCollection** with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag. The following code snippet shows how to use this functionality:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-StoreImageInXImageCollection-1.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageToPdfWithFlateCompression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Open the image file stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the page resources with Flate compression
+            page.Resources.Images.Add(imageStream, Aspose.Pdf.ImageFilterType.Flate);
+        }
+
+        // Get the added image
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
+
+        // Save the current graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Set coordinates for the image placement
+        int lowerLeftX = 0;
+        int lowerLeftY = 0;
+        int upperRightX = 600;
+        int upperRightY = 600;
+
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY
+        });
+
+        // Use ConcatenateMatrix operator to define how the image must be placed
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+
+        // Restore the graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save the document
+        document.Save(dataDir + "AddImageToPdfWithFlateCompression_out.pdf");
+    }
+}
+```
 
 <script type="application/ld+json">
 {

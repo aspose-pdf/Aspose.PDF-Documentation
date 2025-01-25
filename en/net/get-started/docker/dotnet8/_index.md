@@ -80,24 +80,24 @@ sitemap:
 
 The following examples tested with:
 
-* Docker v.25.0.2 and Docker Desktop 4.27.1
-* Visual Studio 2022 Community Edition v.17.0.5
+* Docker v.25.0.2 and Docker Desktop 4.27.1.
+* Visual Studio 2022 Community Edition v.17.0.5.
 * .NET 8 SDK is used in the example provided below.
-* Aspose.PDF.Drawing v.24.01
+* Aspose.PDF.Drawing v.24.01.
 
 ## Create sample application for Docker Linux Container
 
-1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**
-1. In **Configure your new project** window set desired project name and location and press **Next**
+1. Launch Visual Studio 2022 and choose **ASP.NET Core Web App (Model-View-Controller)** template and press **Next**.
+1. In **Configure your new project** window set desired project name and location and press **Next**.
 1. In **Additional information** window choose **.NET 6.0 (Long-term support)** and enable Docker support. You can also set **Docker OS** to Linux if needed.
-1. Press **Create**
-1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`)
+1. Press **Create**.
+1. Choose **Tools->Nuget Package Manager->Package Manager Console** and install **Aspose.PDF for .NET** (use command `Install-Package Aspose.PDF`).
 
 ### Generate PDF document using ASP.NET Core Web App in Linux container
 
 We will use code from **Complex Example** in this app. Please follow [this link](/pdf/net/complex-pdf-example/) for a more detailed explanation.
 
-1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png)
+1. Create `images` folder in `wwwroot` folder and put image `logo.png`. You can use download this image from [here](/pdf/net/docker/logo.png).
 1. Create `fonts` folder in `wwwroot` folder and put [Roboto](https://fonts.google.com/specimen/Roboto) fonts there.
 1. Create `samples` folder in `wwwroot` folder and put sample data there.
 1. Replace code in `HomeController.cs` with the following snippet (please note that you can have another namespace):
@@ -139,72 +139,73 @@ namespace Docker.LinuxDemo.Controllers
             var memoryStream = new MemoryStream();
 
             _logger.LogInformation("PDF Generation: Start ");
-            // Initialize document object
-            var document = new Document();
-            // Add page
-            var page = document.Pages.Add();
-
-            // Add image
-            var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
-            page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
-
-            // Add Header
-            var header = new TextFragment("New ferry routes in Fall 2020");
-            header.TextState.Font = FontRepository.FindFont("Roboto");
-            header.TextState.FontSize = 24;
-            header.HorizontalAlignment = HorizontalAlignment.Center;
-            header.Position = new Position(130, 720);
-            page.Paragraphs.Add(header);
-
-            // Add description
-            var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
-            var description = new TextFragment(descriptionText);
-            description.TextState.Font = FontRepository.FindFont("Helvetica");
-            description.TextState.FontSize = 14;
-            description.HorizontalAlignment = HorizontalAlignment.Left;
-            page.Paragraphs.Add(description);
-
-
-            // Add table
-            var table = new Table
+            // Create PDF document
+            using (var document = new Aspose.Pdf.Document())
             {
-                ColumnWidths = "200",
-                Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
-                DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
-                DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
-                Margin =
+                // Add page
+                var page = document.Pages.Add();
+
+                // Add image
+                var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
+                page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
+
+                // Add Header
+                var header = new TextFragment("New ferry routes in Fall 2020");
+                header.TextState.Font = FontRepository.FindFont("Roboto");
+                header.TextState.FontSize = 24;
+                header.HorizontalAlignment = HorizontalAlignment.Center;
+                header.Position = new Position(130, 720);
+                page.Paragraphs.Add(header);
+
+                // Add description
+                var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
+                var description = new TextFragment(descriptionText);
+                description.TextState.Font = FontRepository.FindFont("Helvetica");
+                description.TextState.FontSize = 14;
+                description.HorizontalAlignment = HorizontalAlignment.Left;
+                page.Paragraphs.Add(description);
+
+                // Add table
+                var table = new Table
                 {
-                    Top = 10,
-                    Bottom = 10
-                },
-                DefaultCellTextState =
+                    ColumnWidths = "200",
+                    Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
+                    DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
+                    DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
+                    Margin =
+                    {
+                        Top = 10,
+                        Bottom = 10
+                    },
+                    DefaultCellTextState =
+                    {
+                        Font =  FontRepository.FindFont("Helvetica")
+                    }
+                };
+
+                var headerRow = table.Rows.Add();
+                headerRow.Cells.Add("Departs City");
+                headerRow.Cells.Add("Departs Island");
+                foreach (Cell headerRowCell in headerRow.Cells)
                 {
-                    Font =  FontRepository.FindFont("Helvetica")
+                    headerRowCell.BackgroundColor = Color.LightGray;
+                    headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
                 }
-            };
 
-            var headerRow = table.Rows.Add();
-            headerRow.Cells.Add("Departs City");
-            headerRow.Cells.Add("Departs Island");
-            foreach (Cell headerRowCell in headerRow.Cells)
-            {
-                headerRowCell.BackgroundColor = Color.LightGray;
-                headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
+                var time = new TimeSpan(6, 0, 0);
+                var incTime = new TimeSpan(0, 30, 0);
+                for (int i = 0; i < 10; i++)
+                {
+                    var dataRow = table.Rows.Add();
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                    time = time.Add(incTime);
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                }
+
+                page.Paragraphs.Add(table);
+
+                document.Save(memoryStream);
             }
-
-            var time = new TimeSpan(6, 0, 0);
-            var incTime = new TimeSpan(0, 30, 0);
-            for (int i = 0; i < 10; i++)
-            {
-                var dataRow = table.Rows.Add();
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-                time = time.Add(incTime);
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-            }
-
-            page.Paragraphs.Add(table);
-
-            document.Save(memoryStream);
             _logger.LogInformation("PDF Generation: Finish");
             return File(memoryStream, fileType, fileName);
         }
@@ -233,12 +234,15 @@ namespace Docker.LinuxDemo.Controllers
             var memoryStream = new MemoryStream();
             var pdfFileName = Path.Combine(_appEnvironment.WebRootPath, "samples", "samples-new.pdf");
 
-            var document = new Document(pdfFileName);
-            var resolution = new Resolution(300);
-            var renderer = new JpegDevice(resolution, 90);
-            renderer.Process(document.Pages[1], memoryStream);
-            memoryStream.Seek(0, SeekOrigin.Begin);
-            return File(memoryStream, fileType, fileName);
+            // Open PDF document
+            using (var document = new Aspose.Pdf.Document(pdfFileName))
+            {
+                var resolution = new Resolution(300);
+                var renderer = new JpegDevice(resolution, 90);
+                renderer.Process(document.Pages[1], memoryStream);
+                memoryStream.Seek(0, SeekOrigin.Begin);
+                return File(memoryStream, fileType, fileName);
+            }
         }
 
         // <summary>
@@ -252,8 +256,11 @@ namespace Docker.LinuxDemo.Controllers
             var memoryStream = new MemoryStream();
             var xpsFileName = Path.Combine(_appEnvironment.WebRootPath, "samples", "samples-new.oxps");
 
-            var document = new Document(xpsFileName, new XpsLoadOptions());
-            document.Save(memoryStream);
+            // Open XPS document
+            using (var document = new Aspose.Pdf.Document(xpsFileName, new Aspose.Pdf.XpsLoadOptions()))
+            {
+                document.Save(memoryStream);
+            }
 
             return File(memoryStream, fileType, fileName);
         }

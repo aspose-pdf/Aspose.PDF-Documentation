@@ -87,13 +87,12 @@ For example, we specify the parameter [CenterWindow](https://reference.aspose.co
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void SetViewerPreference()
+private static void SetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
     {
         // Instantiate PdfContentEditor object
@@ -104,8 +103,8 @@ public static void SetViewerPreference()
         editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.HideMenubar);
         editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
 
-        // Saves the result PDF to file
-        editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+        // Save PDF document
+        editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference_out.pdf");
     }
 }
 ```
@@ -114,13 +113,12 @@ public static void SetViewerPreference()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
-public static void SetViewerPreference()
+private static void SetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
-    // Open document
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");
 
     // Instantiate PdfContentEditor object
@@ -131,8 +129,8 @@ public static void SetViewerPreference()
     editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.HideMenubar);
     editor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PageModeFullScreen);
 
-    // Saves the result PDF to file
-    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference.pdf");
+    // Save PDF document
+    editor.Save(dataDir + "PdfContentEditorDemo_SetViewerPreference_out.pdf");
 }
 ```
 {{< /tab >}}

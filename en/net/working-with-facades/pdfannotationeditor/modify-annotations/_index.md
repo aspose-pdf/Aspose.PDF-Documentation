@@ -82,11 +82,11 @@ sitemap:
 For example, in the following code, consider changing the author in our annotation using [ModifyAnnotationsAuthor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/modifyannotationsauthor).
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ModifyAnnotationsAuthor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Create PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
@@ -94,7 +94,7 @@ private static void ModifyAnnotationsAuthor()
         annotationEditor.BindPdf(dataDir + "AnnotationsInput.pdf");
         // Modify annotations author
         annotationEditor.ModifyAnnotationsAuthor(1, 2, "Aspose User", "Aspose.PDF user");
-        // Save document
+        // Save PDF document
         annotationEditor.Save(dataDir + "ModifyAnnotationsAuthor_out.pdf");
     }
 }
@@ -103,12 +103,12 @@ private static void ModifyAnnotationsAuthor()
 The second method allows you to modify annotations.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ModifyAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
-    // Open document
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
         // Create PdfAnnotationEditor
@@ -123,13 +123,9 @@ private static void ModifyAnnotations()
             newTextAnnotation.Contents = "Updated sample contents for the annotation";
             // Modify annotations in the PDF file
             annotationEditor.ModifyAnnotations(1, 1, newTextAnnotation);
-            // Save document
+            // Save PDF document
             annotationEditor.Save(dataDir + "ModifyAnnotations_out.pdf");
         }
     }
 }
 ```
-
-## See also
-
-Try to compare and find a way to work with annotations that suits you. Lets learn [PDF Annotations](/pdf/net/annotations/) section.

@@ -93,16 +93,15 @@ Follow the steps below:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void Circle()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -124,7 +123,7 @@ private static void Circle()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingCircle1_out.pdf");
     }
 }
@@ -140,16 +139,15 @@ This example shows how to add a Circle object that is filled with color.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CircleFilled()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -176,7 +174,7 @@ private static void CircleFilled()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingCircle2_out.pdf");
     }
 }

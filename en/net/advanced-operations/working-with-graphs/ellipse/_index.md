@@ -85,16 +85,15 @@ Aspose.PDF for .NET supports to add [Ellipse](https://reference.aspose.com/pdf/n
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void Ellipse()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -122,7 +121,7 @@ private static void Ellipse()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingEllipse_out.pdf");
     }
 }
@@ -136,16 +135,15 @@ The following code snippet shows how to add a [Ellipse](https://reference.aspose
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void EllipseFilled()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -178,7 +176,7 @@ private static void EllipseFilled()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingEllipse_out.pdf");
     }
 }
@@ -192,16 +190,15 @@ Aspose.PDF for .NET supports to add text inside the Graph Object. Text property 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void EllipseWithText()
 {
     // The path to the document directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Create Document instance using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -246,7 +243,7 @@ private static void EllipseWithText()
         // Add Graph object to paragraphs collection of page
         page.Paragraphs.Add(graph);
 
-        // Save PDF file
+        // Save PDF document
         document.Save(dataDir + "DrawingEllipseText_out.pdf");
     }
 }

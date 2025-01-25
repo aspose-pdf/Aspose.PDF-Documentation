@@ -89,18 +89,22 @@ To delete all attachments associated with a PDF file:
 The following code snippet shows how to remove attachments from a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAttachments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// Open document
-Document document = new Document(dataDir + "DeleteAllAttachments.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"))
+    {
+        // Delete all attachments
+        document.EmbeddedFiles.Delete();
 
-// Delete all attachments
-document.EmbeddedFiles.Delete();
-
-// Save updated document
-document.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAttachments_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">

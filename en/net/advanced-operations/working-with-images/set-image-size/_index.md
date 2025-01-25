@@ -79,16 +79,16 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 It is possible to set the size of an image that's being added to a PDF file. In order to set size, you can use FixWidth and FixHeight properties of Aspose.Pdf.Image Class. The following code snippet demonstrates how to set the size of an image:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetImageSizeInPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Instantiate Document object
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create an image instance
@@ -111,7 +111,7 @@ private static void SetImageSizeInPDF()
         page.PageInfo.Width = 800;
         page.PageInfo.Height = 800;
 
-        // Save resultant PDF file
+        // Save PDF document
         document.Save(dataDir + "SetImageSize_out.pdf");
     }
 }

@@ -90,11 +90,11 @@ Also, [Class Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/
 The following code snippet shows you how to Import FDF format annotations to PDF with Form.ImportFdf() method:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFDFByForm()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
     using (var form = new Aspose.Pdf.Facades.Form(dataDir + "input.pdf"))
     {
@@ -103,7 +103,7 @@ private static void ImportFDFByForm()
         {
             form.ImportFdf(fdfInputStream);
         }
-        // Save updated document
+        // Save PDF document
         form.Save(dataDir + "ImportDataFromPdf_Form_out.pdf");
     }
 }
@@ -112,19 +112,20 @@ private static void ImportFDFByForm()
 The next code snippet shows how to import FDF format annotations to PDF with PdfAnnotationEditor.ImportAnnotationsFromFdf() method:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ImportFdfByPdfAnnotationEditor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-    // Open FDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
+        // Bind PDF document
         editor.BindPdf(dataDir + "input.pdf");
         editor.ImportAnnotationsFromFdf(dataDir + "student.fdf");
-        // Save updated document
+        // Save PDF document
         editor.Save(dataDir + "ImportDataFromPdf_AnnotationEditor_out.pdf");  
     }
 }

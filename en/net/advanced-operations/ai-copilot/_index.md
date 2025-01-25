@@ -97,9 +97,11 @@ Currently, the following copilots available:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GetSummary()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
                .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
@@ -126,8 +128,8 @@ private static async Task GetSummary()
         // Get summary document with page info
         Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
-        // Save summary as PDF document
-        await summaryCopilot.SaveSummaryAsync("Summary_out.pdf");
+        // Save PDF document
+        await summaryCopilot.SaveSummaryAsync(dataDir + "Summary_out.pdf");
     }
 }
 ```
@@ -136,9 +138,11 @@ private static async Task GetSummary()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GetSummary()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
         .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
@@ -165,8 +169,8 @@ private static async Task GetSummary()
     // Get summary document with page info
     Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
-    // Save summary as PDF document
-    await summaryCopilot.SaveSummaryAsync("Summary_out.pdf");
+    // Save PDF document
+    await summaryCopilot.SaveSummaryAsync(dataDir + "Summary_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -180,9 +184,11 @@ The provided code demonstrates the creation of an OpenAI client, configuration o
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithDocument()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
                 .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
@@ -199,7 +205,7 @@ private static async Task ChatWithDocument()
             .WithTopP(1)
             //.WithContextBackupJsonPath("ContextBackup.json") // Supply context backup to resume the conversation session
             //.WithRestoreContextFromBackup(true) // If set to true, the context will be restored
-            .WithDocument("SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents
+            .WithDocument(dataDir + "SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents
 
         // Create summary copilot
         Aspose.Pdf.AI.IChatCopilot chatCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateChatCopilot(openAiClient, options);
@@ -214,19 +220,19 @@ private static async Task ChatWithDocument()
             "How many words in it?"
         });
 
-        // Save summary as PDF document
-        await chatCopilot.SaveResponseAsync("Summarize this document.", "ResponseDocument1_out.pdf");
+        // Save PDF document
+        await chatCopilot.SaveResponseAsync("Summarize this document.", dataDir + "ResponseDocument1_out.pdf");
 
-        // Save summary as PDF document
+        // Save PDF document
         await chatCopilot.SaveResponseAsync(new List<string>
             {
                 "What is the subject of this document?",
                 "How many words in it?"
             },
-            "ResponseDocument2_out.pdf");
+            dataDir + "ResponseDocument2_out.pdf");
 
         // Save context (ids of assistant, thread, documents)
-        await chatCopilot.SaveContextAsync("ContextBackup.json");
+        await chatCopilot.SaveContextAsync(dataDir + "ContextBackup.json");
 
         // Deletes the context
         await chatCopilot.DeleteContextAsync();
@@ -238,9 +244,11 @@ private static async Task ChatWithDocument()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithDocument()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
         .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
@@ -257,7 +265,7 @@ private static async Task ChatWithDocument()
         .WithTopP(1)
         //.WithContextBackupJsonPath("ContextBackup.json") // Supply context backup to resume the conversation session
         //.WithRestoreContextFromBackup(true) // If set to true, the context will be restored
-        .WithDocument("SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents
+        .WithDocument(dataDir + "SampleDocument.pdf"); // Attach documents using .WithDocument(s) methods allows to add text, pdf and paths to documents
 
     // Create summary copilot
     Aspose.Pdf.AI.IChatCopilot chatCopilot = Aspose.Pdf.AI.AICopilotFactory.CreateChatCopilot(openAiClient, options);
@@ -273,7 +281,7 @@ private static async Task ChatWithDocument()
     });
 
     // Save summary as PDF document
-    await chatCopilot.SaveResponseAsync("Summarize this document.", "ResponseDocument1_out.pdf");
+    await chatCopilot.SaveResponseAsync("Summarize this document.", dataDir + "ResponseDocument1_out.pdf");
 
     // Save summary as PDF document
     await chatCopilot.SaveResponseAsync(new List<string>
@@ -281,10 +289,10 @@ private static async Task ChatWithDocument()
             "What is the subject of this document?",
             "How many words in it?"
         },
-        "ResponseDocument2_out.pdf");
+        dataDir + "ResponseDocument2_out.pdf");
 
     // Save context (ids of assistant, thread, documents)
-    await chatCopilot.SaveContextAsync("ContextBackup.json");
+    await chatCopilot.SaveContextAsync(dataDir +"ContextBackup.json");
 
     // Deletes the context
     await chatCopilot.DeleteContextAsync();
@@ -301,9 +309,11 @@ The provided code snippet demonstrates the creation of an OpenAI client, configu
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task CreateImageDescriptions()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     // Create AI client
     using (var openAiClient = Aspose.Pdf.AI.OpenAIClient
         .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
@@ -321,9 +331,9 @@ private static async Task CreateImageDescriptions()
             .WithDocument(new Aspose.Pdf.AI.PdfDocument // Attach documents
             {
                 Name = "Another_Pdf_with_images",
-                Document = new Aspose.Pdf.Document("Pdf_with_images.pdf")
+                Document = new Aspose.Pdf.Document(dataDir + "Pdf_with_images.pdf")
             })
-            .WithDocument("Mona_liza.jpg"); // Attach images
+            .WithDocument(dataDir + "Mona_liza.jpg"); // Attach images
             //.WithDocument("Pdf_with_images.pdf"); // Attach document paths
 
         // Create copilot
@@ -333,7 +343,7 @@ private static async Task CreateImageDescriptions()
         List<Aspose.Pdf.AI.ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescriptionsAsync();
 
         // Use extension method to add image descriptions to attached documents
-        await copilot.AddPdfImageDescriptionsAsync("OutputDirectory");
+        await copilot.AddPdfImageDescriptionsAsync(dataDir);
     }
 }
 ```
@@ -342,9 +352,11 @@ private static async Task CreateImageDescriptions()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task CreateImageDescriptions()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     // Create AI client
     using var openAiClient = Aspose.Pdf.AI.OpenAIClient
         .CreateWithApiKey(ApiKey) // Create OpenAI client with the API key
@@ -362,10 +374,10 @@ private static async Task CreateImageDescriptions()
         .WithDocument(new Aspose.Pdf.AI.PdfDocument // Attach documents
         {
             Name = "Another_Pdf_with_images",
-            Document = new Aspose.Pdf.Document("Pdf_with_images.pdf")
+            Document = new Aspose.Pdf.Document(dataDir + "Pdf_with_images.pdf")
         })
-        .WithDocument("Mona_liza.jpg"); // Attach images
-        //.WithDocument("Pdf_with_images.pdf"); // Attach document paths
+        .WithDocument(dataDir + "Mona_liza.jpg"); // Attach images
+        //.WithDocument(dataDir + "Pdf_with_images.pdf"); // Attach document paths
 
     // Create copilot
     var copilot = Aspose.Pdf.AI.AICopilotFactory.CreateImageDescriptionCopilot(openAiClient, options);
@@ -374,7 +386,7 @@ private static async Task CreateImageDescriptions()
     List<Aspose.Pdf.AI.ImageDescriptionResult> imageDescriptions = await copilot.GetImageDescriptionsAsync();
 
     // Use extension method to add image descriptions to attached documents
-    await copilot.AddPdfImageDescriptionsAsync("OutputDirectory");
+    await copilot.AddPdfImageDescriptionsAsync(dataDir);
 }
 ```
 {{< /tab >}}
@@ -386,7 +398,6 @@ private static async Task CreateImageDescriptions()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithLlama()
 {
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
@@ -410,7 +421,6 @@ private static async Task ChatWithLlama()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task ChatWithLlama()
 {
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
@@ -437,9 +447,11 @@ private static async Task ChatWithLlama()
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GenerateSummary()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     using (var llamaClient = Aspose.Pdf.AI.LlamaClient
         .CreateWithApiKey(ApiKey) // Create Llama client with the API key
         .Build())
@@ -449,7 +461,7 @@ private static async Task GenerateSummary()
             .Create() // Create options like this, or...
             //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate
             .WithTemperature(0.5) // Configure other optional parameters
-            .WithDocument("SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents
+            .WithDocument(dataDir + "SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents
             //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allow to add text, pdf and path collections
 
         // Create summary copilot
@@ -465,10 +477,10 @@ private static async Task GenerateSummary()
         Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
         // Save the summary as a PDF document
-        await summaryCopilot.SaveSummaryAsync("Llama_out.pdf");
+        await summaryCopilot.SaveSummaryAsync(dataDir + "Llama_out.pdf");
 
         // Save summary with specified format
-        await summaryCopilot.SaveSummaryAsync("Llama_out.docx", Aspose.Pdf.SaveFormat.DocX);
+        await summaryCopilot.SaveSummaryAsync(dataDir + "Llama_out.docx", Aspose.Pdf.SaveFormat.DocX);
     }
 }
 ```
@@ -477,9 +489,11 @@ private static async Task GenerateSummary()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static async Task GenerateSummary()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_AI();
+
     using var llamaClient = Aspose.Pdf.AI.LlamaClient
         .CreateWithApiKey(ApiKey) // Create Llama client with the API key
         .Build();
@@ -489,7 +503,7 @@ private static async Task GenerateSummary()
         .Create() // Create options like this, or...
         //.Create(options => { options.Model = LlamaModels.Llama13BChat; }) // ...create using delegate
         .WithTemperature(0.5) // Configure other optional parameters
-        .WithDocument("SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents
+        .WithDocument(dataDir + "SampleDocument.pdf"); // .WithDocument methods allow to add text, pdf, and paths to documents
         //.WithDocuments(new List<Aspose.Pdf.AI.TextDocument> { new Aspose.Pdf.AI.TextDocument() }); // .WithDocuments methods allow to add text, pdf and path collections
 
     // Create summary copilot
@@ -505,10 +519,10 @@ private static async Task GenerateSummary()
     Aspose.Pdf.Document summaryDocumentWithPageInfo = await summaryCopilot.GetSummaryDocumentAsync(new Aspose.Pdf.PageInfo());
 
     // Save the summary as a PDF document
-    await summaryCopilot.SaveSummaryAsync("Llama_out.pdf");
+    await summaryCopilot.SaveSummaryAsync(dataDir + "Llama_out.pdf");
 
     // Save summary with specified format
-    await summaryCopilot.SaveSummaryAsync("Llama_out.docx", Aspose.Pdf.SaveFormat.DocX);
+    await summaryCopilot.SaveSummaryAsync(dataDir + "Llama_out.docx", Aspose.Pdf.SaveFormat.DocX);
 }
 ```
 {{< /tab >}}

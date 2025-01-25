@@ -91,27 +91,31 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 We have added new function i.e. Remove() to the existing TableAbsorber Class in order to remove table from PDF document. Once the absorber successfully finds tables on the page, it becomes capable to remove them. Please check following code snippet showing how to remove a table from PDF document:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Load existing PDF document
-Document document = new Document(dataDir + "Table_input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Create TableAbsorber object to find tables
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Visit first page with absorber
-absorber.Visit(document.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// Get first table on the page
-AbsorbedTable table = absorber.TableList[0];
+        // Remove the table
+        absorber.Remove(table);
 
-// Remove the table
-absorber.Remove(table);
-
-// Save PDF
-document.Save(dataDir + "Table_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RemoveTable_out.pdf");
+    }
+}
 ```
 
 ## Remove Multiple Tables from PDF document
@@ -119,31 +123,35 @@ document.Save(dataDir + "Table_out.pdf");
 Sometimes a PDF document may contain more than one table and you may come up with a requirement to remove multiple tables from it. In order to remove multiple tables from PDF document, please use the following code snippet:
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-// Load existing PDF document
-Document document = new Document(dataDir + "Table_input2.pdf");
-
-// Create TableAbsorber object to find tables
-TableAbsorber absorber = new TableAbsorber();
-
-// Visit second page with absorber
-absorber.Visit(document.Pages[1]);
-
-// Get copy of table collection
-AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
-absorber.TableList.CopyTo(tables, 0);
-
-// Loop through the copy of collection and removing tables
-foreach (AbsorbedTable table in tables)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveMultipleTables()
 {
-    absorber.Remove(table);
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Save document
-document.Save(dataDir + "Table2_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
+
+        // Visit second page with absorber
+        absorber.Visit(document.Pages[1]);
+
+        // Get copy of table collection
+        Aspose.Pdf.Text.AbsorbedTable[] tables = new Aspose.Pdf.Text.AbsorbedTable[absorber.TableList.Count];
+        absorber.TableList.CopyTo(tables, 0);
+
+        // Loop through the copy of collection and removing tables
+        foreach (var table in tables)
+        {
+            absorber.Remove(table);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "RemoveMultipleTables_out.pdf");
+    }
+}
 ```
 
 {{% alert color="primary" %}}

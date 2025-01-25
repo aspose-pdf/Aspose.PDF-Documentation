@@ -118,23 +118,19 @@ The code starts by initializing two PDF documents using their respective file pa
 3. The resulting comparison document, which highlights the differences between the two pages, is saved to the file path specified in 'resultPdfPath'.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparingSpecificPages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    var documentPath1 = dataDir + "ComparingSpecificPages1.pdf";
-    var documentPath2 = dataDir + "ComparingSpecificPages2.pdf";
-    var resultPdfPath = dataDir + "ComparingSpecificPages_out.pdf";
-
-    // Open documents
-    using (var document1 = new Aspose.Pdf.Document(documentPath1))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages1.pdf"))
     {
-        using (var document2 = new Aspose.Pdf.Document(documentPath2))
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages2.pdf"))
         {
             // Compare
-            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], dataDir + "ComparingSpecificPages_out.pdf", new Aspose.Pdf.Comparison.SideBySideComparisonOptions
             {
                 AdditionalChangeMarks = true,
                 ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
@@ -162,26 +158,22 @@ Just like in the first example, two PDF documents are initialized with their fil
 3. The comparison result, which highlights differences across all pages of the two documents, is saved in the file specified by 'resultPdfPath'.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparingEntireDocuments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    var documentPath1 = dataDir + "ComparingEntireDocuments1.pdf";
-    var documentPath2 = dataDir + "ComparingEntireDocuments2.pdf";
-    var resultPdfPath = dataDir + "ComparingEntireDocuments_out.pdf";
-
-    // Open documents
-    using (var document1 = new Aspose.Pdf.Document(documentPath1))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments1.pdf"))
     {
-        using (var document2 = new Aspose.Pdf.Document(documentPath2))
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments2.pdf"))
         {
             // Compare
             Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
                 document1,
                 document2,
-                resultPdfPath,
+                dataDir + "ComparingEntireDocuments_out.pdf",
                 new Aspose.Pdf.Comparison.SideBySideComparisonOptions
                 {
                     AdditionalChangeMarks = true,
@@ -233,21 +225,16 @@ This method compares the first pages of two PDF files and generates two PNG imag
 This process can be useful for visually comparing changes or differences between two versions of a document.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparePDFWithGetDifferenceMethod()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    var doc1Path = dataDir + "ComparePDFWithGetDifferenceMethod1.pdf";
-    var doc2Path = dataDir + "ComparePDFWithGetDifferenceMethod2.pdf";
-    string destPngFilePath = dataDir + "ComparePDFWithGetDifferenceMethodDestPngFilePath_out.png";
-    string diffPngFilePath = dataDir + "ComparePDFWithGetDifferenceMethodDiffPngFilePath_out.png";
-
-    // Open documents
-    using (var document1 = new Aspose.Pdf.Document(doc1Path))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithGetDifferenceMethod1.pdf"))
     {
-        using (var document2 = new Aspose.Pdf.Document(doc2Path))
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithGetDifferenceMethod2.pdf"))
         {
             // Create comparer 
             var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
@@ -256,11 +243,11 @@ private static void ComparePDFWithGetDifferenceMethod()
             {
                 using (var diffImg = imagesDifference.DifferenceToImage(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.White))
                 {
-                    diffImg.Save(diffPngFilePath);
+                    diffImg.Save(dataDir + "ComparePDFWithGetDifferenceMethodDiffPngFilePath_out.png");
                 }
                 using (var destImg = imagesDifference.GetDestinationImage())
                 {
-                    destImg.Save(destPngFilePath);
+                    destImg.Save(dataDir + "ComparePDFWithGetDifferenceMethodDestPngFilePath_out.png");
                 }
             }
         }
@@ -273,21 +260,16 @@ private static void ComparePDFWithGetDifferenceMethod()
 The provided code snippet used the  [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/) method, which compares two documents and generates a PDF report of the comparison results.
 
 ```cs
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ComparePDFWithCompareDocumentsToPdfMethod()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    var document1Path = dataDir + "ComparePDFWithCompareDocumentsToPdfMethod1.pdf";
-    var document2Path = dataDir + "ComparePDFWithCompareDocumentsToPdfMethod2.pdf";
-
-    string resultPdfPath = dataDir + "compareDocumentsToPdf_out.pdf";
-
-    // Open documents
-    using (var document1 = new Aspose.Pdf.Document(document1Path))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod1.pdf"))
     {
-        using (var document2 = new Aspose.Pdf.Document(document2Path))
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod2.pdf"))
         {
             // Create comparer
             var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer()
@@ -297,7 +279,7 @@ private static void ComparePDFWithCompareDocumentsToPdfMethod()
                 Resolution = new Aspose.Pdf.Devices.Resolution(300)
             };
             // Compare
-            comparer.CompareDocumentsToPdf(document1, document2, resultPdfPath);
+            comparer.CompareDocumentsToPdf(document1, document2, dataDir + "compareDocumentsToPdf_out.pdf");
         }
     }
 }

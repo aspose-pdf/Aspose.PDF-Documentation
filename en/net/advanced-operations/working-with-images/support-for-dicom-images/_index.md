@@ -81,17 +81,17 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 **Aspose.PDF for .NET** supports functionality to add DICOM images to PDF documents. The following code snippet shows how to use this functionality.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddDicomImageToPDF()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Open document using 'using' block to ensure proper disposal
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add a page to the document
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
 
         // Create an image instance and set its properties
         var image = new Aspose.Pdf.Image
@@ -101,9 +101,9 @@ private static void AddDicomImageToPDF()
         };
 
         // Add image to the first page
-        document.Pages[1].Paragraphs.Add(image);
+        page.Paragraphs.Add(image);
 
-        // Save output as PDF format
+        // Save PDF document
         document.Save(dataDir + "PdfWithDicomImage_out.pdf");
     }
 }

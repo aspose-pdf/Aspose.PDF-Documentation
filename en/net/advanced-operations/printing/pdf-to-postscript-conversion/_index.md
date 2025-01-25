@@ -87,16 +87,15 @@ The [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewe
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintToPostscriptFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open document
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set PrinterSettings and PageSettings
@@ -123,16 +122,15 @@ private static void PrintToPostscriptFile()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintToPostscriptFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open document
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set PrinterSettings and PageSettings
@@ -164,19 +162,19 @@ A PDF file can be printed to a physical printer as well as to the Microsoft XPS 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Bind source PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-        viewer.AutoResize = true;       // Print the file with adjusted size
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
 
         // Hide printing dialog
         viewer.PrintPageDialog = false;
@@ -232,19 +230,19 @@ private static void CheckingPrintJobStatus()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CheckingPrintJobStatus()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Instantiate PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Bind source PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-    viewer.AutoResize = true;       // Print the file with adjusted size
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
 
     // Hide printing dialog
     viewer.PrintPageDialog = false;
@@ -305,16 +303,15 @@ Sometimes there occurs a need to get or set the print job owner name (i.e., the 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrinterJobName()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Bind source PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Specify the name of Print job
@@ -336,16 +333,15 @@ private static string GetCurrentUserCredentials()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SetPrinterJobName()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Bind source PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Specify the name of Print job
@@ -376,16 +372,15 @@ Please note that there is no possibility to set owner value using Aspose.PDF pri
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintWithImpersonation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open document
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Do not produce the page number dialog when printing
@@ -411,16 +406,15 @@ private static void PrintWithImpersonation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintWithImpersonation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open document
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Do not produce the page number dialog when printing
@@ -450,7 +444,6 @@ The following code snippet shows how to print some pages of PDF file in Simplex 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 struct PrintingJobSettings
 {
     public int ToPage { get; set; }
@@ -462,7 +455,7 @@ struct PrintingJobSettings
 private static void PrintUsingSpoolerApi()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
     string outputDir = dataDir;
@@ -496,13 +489,16 @@ private static void PrintUsingSpoolerApi()
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open input PDF file
+        // Bind PDF document
         viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -564,17 +560,16 @@ struct PrintingJobSettings
 private static void PrintUsingSpoolerApi()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     int printingJobIndex = 0;
-    string outputDir = dataDir;
     var printingJobs = new List<PrintingJobSettings>();
 
     // Create multiple printing jobs to print different page ranges with different duplex settings
     var printingJob1 = new PrintingJobSettings();
     printingJob1.FromPage = 1;
     printingJob1.ToPage = 3;
-    printingJob1.OutputFile = outputDir + "PrintUsingSpoolerApi_p1-3_out.xps";
+    printingJob1.OutputFile = dataDir + "PrintUsingSpoolerApi_p1-3_out.xps";
     printingJob1.Mode = Aspose.Pdf.Printing.Duplex.Default;
 
     printingJobs.Add(printingJob1);
@@ -582,7 +577,7 @@ private static void PrintUsingSpoolerApi()
     PrintingJobSettings printingJob2 = new PrintingJobSettings();
     printingJob2.FromPage = 4;
     printingJob2.ToPage = 6;
-    printingJob2.OutputFile = outputDir + "PrintUsingSpoolerApi_p4-6_out.xps";
+    printingJob2.OutputFile = dataDir + "PrintUsingSpoolerApi_p4-6_out.xps";
     printingJob2.Mode = Aspose.Pdf.Printing.Duplex.Simplex;
 
     printingJobs.Add(printingJob2);
@@ -590,7 +585,7 @@ private static void PrintUsingSpoolerApi()
     PrintingJobSettings printingJob3 = new PrintingJobSettings();
     printingJob3.FromPage = 7;
     printingJob3.ToPage = 7;
-    printingJob3.OutputFile = outputDir + "PrintUsingSpoolerApi_p7_out.xps";
+    printingJob3.OutputFile = dataDir + "PrintUsingSpoolerApi_p7_out.xps";
     printingJob3.Mode = Aspose.Pdf.Printing.Duplex.Default;
 
     printingJobs.Add(printingJob3);
@@ -598,13 +593,16 @@ private static void PrintUsingSpoolerApi()
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open input PDF file
+    // Bind PDF document
     viewer.BindPdf(dataDir + "Print-PageRange.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings
     var ps = new Aspose.Pdf.Printing.PrinterSettings();

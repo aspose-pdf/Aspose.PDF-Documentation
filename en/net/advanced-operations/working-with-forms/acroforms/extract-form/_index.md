@@ -88,23 +88,22 @@ To get values from all the fields in a PDF document, you need to navigate throug
 The following C# code snippets show how to get the values of all the fields from a PDF document.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetValuesFromFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
-	{
-		// Get values from all fields
-		foreach (Aspose.Pdf.Forms.Field formField in document.Form)
-		{
-			Console.WriteLine("Field Name : {0} ", formField.PartialName);
-			Console.WriteLine("Value : {0} ", formField.Value);
-		}
-	}
+    {
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
+    }
 }
 ```
 
@@ -113,47 +112,45 @@ private static void GetValuesFromFields()
 The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object's Form collection. This C# example selects a [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) and retrieves its value using the Value property.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetValueFromField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
-	{
-		// Get a field
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-		{
-			// Get field value
-			Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
-			Console.WriteLine("Value : {0} ", textBoxField.Value);
-		}
-	}
+    {
+        // Get a field
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            // Get field value
+            Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
+            Console.WriteLine("Value : {0} ", textBoxField.Value);
+        }
+    }
 }
 ```
 
 To get the submit button's URL, use the following lines of code.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetSubmitFormActionUrl()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
-	{
-		// Get the SubmitFormAction from the form field
-		if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
-		{
-			// Output the URL of the SubmitFormAction
-			Console.WriteLine(act.Url.Name);
-		}
-	}
+    {
+        // Get the SubmitFormAction from the form field
+        if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
+        {
+            // Output the URL of the SubmitFormAction
+            Console.WriteLine(act.Url.Name);
+        }
+    }
 }
 ```
 
@@ -169,31 +166,31 @@ Sometimes, you might know where in a document a form field is, but not have it's
 The following C# code snippet shows how to get form fields in a specific rectangular region of a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void GetFieldsFromRegion()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Open pdf file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
-	{
-		// Create rectangle object to get fields in that area
-		var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
+    {
+        // Create rectangle object to get fields in that area
+        var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
 
-		// Get the PDF form
-		var form = document.Form;
+        // Get the PDF form
+        var form = document.Form;
 
-		// Get fields in the rectangular area
-		var fields = form.GetFieldsInRect(rectangle);
+        // Get fields in the rectangular area
+        var fields = form.GetFieldsInRect(rectangle);
 
-		// Display Field names and values
-		foreach (var field in fields)
-		{
-			// Display image placement properties for all placements
-			Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
-		}
-	}
+        // Display Field names and values
+        foreach (var field in fields)
+        {
+            // Display image placement properties for all placements
+            Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
+        }
+    }
 }
 ```
 

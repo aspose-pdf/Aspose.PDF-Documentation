@@ -123,8 +123,10 @@ The following C# code snippet shows converting a PDF file into DOC format.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWord()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the document
+
+    // Open PDF document
     usnig (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
         // Save the file into MS document format
@@ -147,8 +149,10 @@ The [`RelativeHorizontalProximity`](https://reference.aspose.com/pdf/net/aspose.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWordDocAdvanced()
 {
-     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the document
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDF-to-DOC.pdf"))
     {
         var saveOptions = new Aspose.Pdf.DocSaveOptions
@@ -163,7 +167,7 @@ private static void ConvertPDFtoWordDocAdvanced()
             RecognizeBullets = true
         };
         // Save the file into MS document with save options
-        document.Save(dataDir + "PDF-to-DOC.doc", saveOptions);
+        document.Save(dataDir + "PDFtoDOC_out.doc", saveOptions);
     }
 }
 ```
@@ -191,12 +195,13 @@ The following C# code snippet shows converting a PDF file into DOCX format.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWord_DOCX_Format()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
         // Save the file into MS document format
-        document.Save(dataDir + "PDFtoDOC.docx", SaveFormat.DocX);
+        document.Save(dataDir + "PDFtoDOC_out.docx", SaveFormat.DocX);
     }
 }
 ```
@@ -211,11 +216,11 @@ There is also recognition of numbered lists and many other minor things.
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 {
+    // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
-    // Open the document
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToDOC.pdf"))
     {
-
         // Instantiate DocSaveOptions object
         DocSaveOptions saveOptions = new Aspose.Pdf.DocSaveOptions
         {
@@ -224,8 +229,9 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
             // Set the recognition mode as EnhancedFlow
             Mode = Aspose.Pdf.DocSaveOptions.RecognitionMode.EnhancedFlow
         };
+
         // Save the file into MS document format
-        document.Save("PDFToDOC.docx", saveOptions);
+        document.Save(dataDir + "PDFToDOC_out.docx", saveOptions);
     }
 }
 ```

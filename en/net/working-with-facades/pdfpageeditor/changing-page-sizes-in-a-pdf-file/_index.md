@@ -89,7 +89,7 @@ private static void ChangePdfPageSize()
     // Create PdfPageEditor object
     using (var pdfPageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
-        // Bind the PDF file
+        // Bind PDF document
         pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
 
         // Change page size of the selected pages
@@ -101,7 +101,7 @@ private static void ChangePdfPageSize()
         // Save the file with the updated page size
         pdfPageEditor.Save(dataDir + "ChangePageSizes_out.pdf");
 
-        // Retrieve and display the page size assigned
+        // Get and display the page size assigned
         pdfPageEditor.BindPdf(dataDir + "FilledForm.pdf");
 
         var pageSize = pdfPageEditor.GetPageSize(1);

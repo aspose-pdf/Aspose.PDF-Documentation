@@ -78,17 +78,17 @@ draft: false
 If you want to move a form field to a new location then you can use [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class. You only need to provide the field name and new location of this field to the [MoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/movefield) method. You also need to save the updated PDF file using [Save](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/save/index) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class. The following code snippet shows you how to move a form field in a new location in a PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void MoveField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the document
+        // Bind PDF document
         editor.BindPdf(dataDir + "MoveField.pdf");
         editor.MoveField("textbox1", 262.56f, 496.75f, 382.28f, 514.03f);
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "MoveField_out.pdf");
     }
 }
@@ -99,17 +99,17 @@ private static void MoveField()
 In order to delete a form field from an existing PDF file, you can use RemoveField method of FormEditor class. This method takes only one argument: field name. You need to create an object of FormEditor class, call [RemoveField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/removefield) method to remove a particular field from the PDF and then call the Save method to save the updated PDF file. The following code snippet shows you how to delete form fields from an existing PDF file.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RemoveFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the document
+        // Bind PDF document
         editor.BindPdf(dataDir + "ModifyFormField.pdf");
         editor.RemoveField("textbox1");
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "RemoveField_out.pdf");
     }
 }
@@ -120,17 +120,17 @@ private static void RemoveFields()
 Also you can rename your field using [RenameField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor/methods/renamefield) method of [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) class.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void RenameFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
-        // Open the document
+        // Bind PDF document
         editor.BindPdf(dataDir + "ModifyFormField.pdf");
         editor.RenameField("textbox1", "FirstName");
-        // Save the document
+        // Save PDF document
         editor.Save(dataDir + "RenameField_out.pdf");
     }
 }

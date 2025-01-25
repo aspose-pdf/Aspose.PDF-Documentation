@@ -95,17 +95,24 @@ Aspose.PDF for .NET also supports the feature to convert PDF documents to EPUB f
 Please try using the following code snippet to accomplish this requirement with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Load PDF document
-Document document = new Document(dataDir + "PDFToEPUB.pdf");
-// Instantiate Epub Save options
-EpubSaveOptions options = new EpubSaveOptions();
-// Specify the layout for contents
-options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
-// Save the ePUB document
-document.Save(dataDir + "PDFToEPUB_out.epub", options);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoEPUB()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToEPUB.pdf"))
+    {
+        // Instantiate Epub Save options
+        EpubSaveOptions options = new EpubSaveOptions();
+        // Specify the layout for contents
+        options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
+
+        // Save ePUB document
+        document.Save(dataDir + "PDFToEPUB_out.epub", options);
+    }
+}
 ```
 
 ## Convert PDF to LaTeX/TeX
@@ -126,24 +133,28 @@ To convert PDF files to TeX, Aspose.PDF has the class [LaTeXSaveOptions](https:/
 The following code snippet shows the process of converting PDF files into the TEX format with C#.
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoTeX()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// Create Document object
-Document document = new Document(dataDir + "PDFToTeX.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf"))
+    {
+        // Instantiate LaTex save option          
+        LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
 
-// Instantiate LaTex save option          
-LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
+        // Specify the output directory
+        string pathToOutputDirectory = dataDir;
 
-// Specify the output directory
-string pathToOutputDirectory = dataDir;
+        // Set the output directory path for save option object
+        saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
-// Set the output directory path for save option object
-saveOptions.OutDirectoryPath = pathToOutputDirectory;
-
-// Save PDF file into LaTex format           
-document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+        // Save PDF document into LaTex format           
+        document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+    }
+}
 ```
 
 ## Convert PDF to Text
@@ -157,14 +168,21 @@ You can convert PDF document to TXT file using [Visit](https://reference.aspose.
 The following code snippet explains how to extract the texts from the all pages.
 
 ```csharp
-public static void ConvertPDFDocToTXT()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoTXT()
 {
-    // Open document
-    Document document = new Document(dataDir + "demo.pdf");
-    TextAbsorber ta = new TextAbsorber();
-    ta.Visit(document);
-    // Save the extracted text in text file
-    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
+    {
+        var ta = new Aspose.Pdf.Text.TextAbsorber();
+        ta.Visit(document);
+
+        // Save the extracted text in text file
+        File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    }
 }
 ```
 
@@ -183,18 +201,25 @@ You can convert PDF document to TXT file with Aspose.PDF for .NET. You should us
 The following code snippet explains how to extract the texts from the particular pages.
 
 ```csharp
-public static void ConvertPDFPagestoTXT()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoTXT()
 {
-    Document document = new Document(dataDir + "demo.pdf");
-    TextAbsorber ta = new TextAbsorber();
-    var pages = new [] {1, 3, 4};
-    foreach (var page in pages)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
-        ta.Visit(document.Pages[page]);
+        var ta = new Aspose.Pdf.Text.TextAbsorber();
+        var pages = new [] {1, 3, 4};
+        foreach (var page in pages)
+        {
+            ta.Visit(document.Pages[page]);
+        }
+    
+        // Save the extracted text in text file
+        File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", ta.Text);
     }
-   
-    // Save the extracted text in text file
-    File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", ta.Text);
 }
 ```
 
@@ -219,13 +244,22 @@ Since the 24.2 release, Aspose.PDF has implemented converting Searchable PDF to 
 The following code snippet shows the process of converting PDF file into XPS format.
 
 ```csharp
-using (var document = new Aspose.Pdf.Document("input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoXPS()
 {
-    var xpsOptions = new XpsSaveOptions
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
-        SaveTransparentTexts = true
-    };
-    document.Save("output.xps", xpsOptions);
+        var xpsOptions = new XpsSaveOptions
+        {
+            SaveTransparentTexts = true
+        };
+
+        // Save XPS document
+        document.Save(dataDir + "PDFtoXPS_out.xps", xpsOptions);
+    }
 }
 ```
 
@@ -248,24 +282,28 @@ The code opens a PDF document, configures the parameters for converting it to a 
 The following code snippet shows the process of converting PDF file into MD format.
 
 ```csharp
-string inputPdfPath = "";
-string markdownOutputFilePath = "";
-
-// Create a new Document object using the specified input PDF path.
-using (Document document = new Document(inputPdfPath))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoMarkup()
 {
-    // Create an instance of MarkdownSaveOptions to configure the Markdown export settings.
-    MarkdownSaveOptions saveOptions = new MarkdownSaveOptions()
-    {
-        // Set to false to prevent the use of HTML <img> tags for images in the Markdown output.
-        UseImageHtmlTag = false
-    }
-    
-    // Specify the directory name where resources (like images) will be stored.
-    saveOptions.ResourcesDirectoryName = "images";
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Save the document in Markdown format to the specified output file path using the defined save options.    
-    document.Save(markdownOutputFilePath, saveOptions);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
+    {
+        // Create an instance of MarkdownSaveOptions to configure the Markdown export settings
+        var saveOptions = new MarkdownSaveOptions()
+        {
+            // Set to false to prevent the use of HTML <img> tags for images in the Markdown output
+            UseImageHtmlTag = false
+        }
+        
+        // Specify the directory name where resources (like images) will be stored
+        saveOptions.ResourcesDirectoryName = "images";
+
+        // Save PDF document in Markdown format to the specified output file path using the defined save options   
+        document.Save(dataDir + "PDFtoMarkup_out.md", saveOptions);
+    }
 }
 ```
 
@@ -274,15 +312,16 @@ using (Document document = new Document(inputPdfPath))
 MobiXML is a popular eBook format, designed to be usen on mobile platforms.
 The following code snippet explains how to convert PDF document to MobiXML file.
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
 private static void ConvertPdfToMobiXml()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();  
-    // Load source PDF file
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
     {
-        // Save output in XML format
+        // Save PDF document in XML format
         document.Save(dataDir + "PDFToXML_out.xml", Aspose.Pdf.SaveFormat.MobiXml);
     }
 }

@@ -96,13 +96,12 @@ The following code snippet shows you how to update a link in a PDF file and set 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
         // Get the first link annotation from first page of document
@@ -116,8 +115,8 @@ private static void UpdateLinkAnnotation()
         // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
         goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
 
-        // Save the document with updated link
-        document.Save(dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "UpdateLinks_out.pdf");
     }
 }
 ```
@@ -126,13 +125,12 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
     // Get the first link annotation from first page of document
@@ -146,8 +144,8 @@ private static void UpdateLinkAnnotation()
     // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
     goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
 
-    // Save the document with updated link
-    document.Save(dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");
+    // Save PDF document
+    document.Save(dataDir + "UpdateLinks_out.pdf");
 }
 ```
 {{< /tab >}}
@@ -161,13 +159,12 @@ To update the hyperlink so that it points to a web address, instantiate the [GoT
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
         // Get the first link annotation from first page of document
@@ -176,7 +173,7 @@ private static void UpdateLinkAnnotation()
         // Modification link: change link action and set target as web address
         linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
 
-        // Save the document with updated link
+        // Save PDF document
         document.Save(dataDir + "SetDestinationLink_out.pdf");
     }
 }
@@ -186,13 +183,12 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
     // Get the first link annotation from first page of document
@@ -201,7 +197,7 @@ private static void UpdateLinkAnnotation()
     // Modification link: change link action and set target as web address
     linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
 
-    // Save the document with updated link
+    // Save PDF document
     document.Save(dataDir + "SetDestinationLink_out.pdf");
 }
 ```
@@ -216,13 +212,12 @@ The following code snippet shows how to update a link in a PDF file and set its 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
         var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
@@ -234,7 +229,7 @@ private static void UpdateLinkAnnotation()
         // Next line update file
         goToR.File = new Aspose.Pdf.FileSpecification(dataDir + "input.pdf");
 
-        // Save the document with updated link
+        // Save PDF document
         document.Save(dataDir + "SetTargetLink_out.pdf");
     }
 }
@@ -244,13 +239,12 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
     var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
@@ -262,7 +256,7 @@ private static void UpdateLinkAnnotation()
     // Next line update file
     goToR.File = new Aspose.Pdf.FileSpecification(dataDir + "input.pdf");
 
-    // Save the document with updated link
+    // Save PDF document
     document.Save(dataDir + "SetTargetLink_out.pdf");
 }
 ```
@@ -277,13 +271,12 @@ The link annotation does not contain text. Instead, the text is placed in the co
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
         foreach (var annotation in document.Pages[1].Annotations)
@@ -308,7 +301,7 @@ private static void UpdateLinkAnnotation()
             }
         }
 
-        // Save the document with updated link
+        // Save PDF document
         document.Save(dataDir + "UpdateLinkTextColor_out.pdf");
     }
 }
@@ -318,13 +311,12 @@ private static void UpdateLinkAnnotation()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void UpdateLinkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-    // Load the PDF file
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
     foreach (var annotation in document.Pages[1].Annotations)
@@ -349,7 +341,7 @@ private static void UpdateLinkAnnotation()
         }
     }
 
-    // Save the document with updated link
+    // Save PDF document
     document.Save(dataDir + "UpdateLinkTextColor_out.pdf");
 }
 ```

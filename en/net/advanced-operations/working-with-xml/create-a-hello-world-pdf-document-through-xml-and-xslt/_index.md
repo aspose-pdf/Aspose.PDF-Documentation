@@ -127,11 +127,10 @@ Please follow these steps to convert an XML file into a PDF document using XSLT:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
 
     //Create pdf document
     using (var document = new Aspose.Pdf.Document())
@@ -139,7 +138,7 @@ private static void CreateDocument()
         //Bind XML and XSLT files to the document
         document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
 
-        // Save output document
+        // Save PDF document
         document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
     }
 }
@@ -149,11 +148,10 @@ private static void CreateDocument()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateDocument()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
 
     //Create pdf document
     using var document = new Aspose.Pdf.Document();
@@ -161,7 +159,7 @@ private static void CreateDocument()
     //Bind XML and XSLT files to the document
     document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
 
-    // Save output document
+    // Save PDF document
     document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
 }
 ```

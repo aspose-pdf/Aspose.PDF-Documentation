@@ -87,11 +87,11 @@ Use the [FormDataConverter](https://reference.aspose.com/pdf/net/aspose.pdf.faca
 
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-public static void ConvertXmlToFdf()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void ConvertXmlToFdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     using (var src = new FileStream(dataDir + "log.xml", FileMode.Open, FileAccess.Read))
     {

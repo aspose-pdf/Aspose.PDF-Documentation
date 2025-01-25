@@ -87,10 +87,10 @@ private static void GetPdfPageProperties()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
-        // Bind the PDF file
+        // Bind PDF document
         pageEditor.BindPdf(dataDir + "input.pdf");
 
         // Get page properties and print them to the console
@@ -111,8 +111,6 @@ In order to set page properties like page rotation, zoom or origin point you nee
 
 The following code snippet shows you how to set PDF page properties in an existing PDF file.
 
-
-
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetPdfPageProperties()
@@ -120,9 +118,10 @@ private static void SetPdfPageProperties()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Open the document
+    // Open PDF document
     using (var pageEditor = new Aspose.Pdf.Facades.PdfPageEditor())
     {
+        // Bind PDF document
         pageEditor.BindPdf(dataDir + "input.pdf");
 
         // Set page properties
@@ -140,7 +139,7 @@ private static void SetPdfPageProperties()
         // Set zoom where 1.0f = 100% zoom
         pageEditor.Zoom = 2.0f;
 
-        // Save the updated PDF file
+        // Save PDF document
         pageEditor.Save(dataDir + "SetPageProperties_out.pdf");
     }
 }
@@ -186,7 +185,7 @@ The following code snippet shows how to resize the contents of some specific pag
          // Resize Page Contents
          fileEditor.ResizeContents(document, new[] { 1, 2 }, parameters);
 
-         // Save document into a new location
+         // Save PDF document
          document.Save(dataDir + "ResizePageContents_out.pdf");
      }
  }
