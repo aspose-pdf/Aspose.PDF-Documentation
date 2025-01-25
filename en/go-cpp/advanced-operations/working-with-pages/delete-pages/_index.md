@@ -9,6 +9,10 @@ lastmod: "2024-12-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Delete PDF Pages with Aspose.PDF for Go
+Abstract: Aspose.PDF for Go via C++ offers efficient functionality to delete pages from PDF documents, enabling developers to remove unwanted or unnecessary pages with ease. The library allows for the deletion of single or multiple pages by specifying page numbers or ranges, ensuring precise document modifications. This feature helps streamline PDF files by eliminating redundant content and optimizing document structure. The documentation provides step-by-step instructions and code samples to assist developers in implementing page deletion functionality effectively within their applications.
+SoftwareApplication: go-cpp    
 ---
 
 You can delete pages from a PDF file using **Aspose.PDF for Go via C++**. The next code snippet demonstrates how to manipulate a PDF document by deleting a specific page. This method is efficient for PDF document manipulation tasks, specifically for removing pages, saving the modified document, and ensuring proper resource management.

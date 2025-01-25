@@ -9,6 +9,10 @@ lastmod: "2024-12-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tool for Converting PDF documents 
+Abstract: Aspose.PDF for Go via C++ provides a comprehensive set of tools for converting PDF documents to and from various formats with high accuracy and efficiency. The library supports conversions to popular formats such as DOCX, XLSX, PPTX, EPUB, images (JPEG, PNG, SVG), and more. Additionally, it facilitates the transformation of other file types, including text and images, into PDF format. The conversion process ensures document structure, formatting, and quality preservation. This documentation offers code samples and step-by-step guidance to help developers integrate conversion functionalities seamlessly into their applications.   
+SoftwareApplication: go-cpp
 ---
 
 The PDF was developed to provide a standard for presenting documents and other reference materials in a format that is independent of application software, hardware, and operating system. The content of PDF files is not limited to text, it can be hyperlinks, images, clickable buttons and forms, electronic signatures, watermarks, and more. Therefore, it is often necessary to convert PDF files to some other format in order to edit or change their content.

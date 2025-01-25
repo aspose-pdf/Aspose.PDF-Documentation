@@ -9,6 +9,10 @@ description: Aspose.PDF for Go allows you to convert PDF to XLSX format.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tool for Converting PDF to Excel documents 
+Abstract: The Aspose.PDF for Go via C++ library provides a robust solution for converting PDF documents to XLSX format with high accuracy and efficiency. This feature enables developers to extract tabular data from PDFs while preserving Excel spreadsheets original layout, structure, and formatting. The documentation offers detailed guidance on implementing the conversion process, including sample code and step-by-step instructions to facilitate seamless integration into Go applications.  
+SoftwareApplication: go-cpp
 ---
 
 **Aspose.PDF for Go** support the feature of converting PDF files to Excel format.
