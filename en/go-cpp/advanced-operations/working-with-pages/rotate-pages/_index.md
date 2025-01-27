@@ -9,6 +9,10 @@ lastmod: "2024-12-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Rotate PDF Pages with Aspose.PDF for Go
+Abstract: Aspose.PDF for Go via C++ provides robust functionality to rotate pages in PDF documents, allowing developers to modify page orientation as needed. The library supports rotating pages by 90, 180, or 270 degrees, enabling quick and efficient adjustments to document layout. This feature is useful for correcting misoriented pages or altering the document’s presentation. The documentation includes step-by-step instructions and code samples to help developers seamlessly integrate page rotation capabilities into their applications.
+SoftwareApplication: go-cpp    
 ---
 
 This section describes how to change the page orientation from landscape to portrait and vice versa in an existing PDF file using Go via C++.

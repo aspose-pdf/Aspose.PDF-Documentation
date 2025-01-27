@@ -9,6 +9,10 @@ lastmod: "2024-12-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Supported File Formats page for Aspose.PDF for Go
+Abstract: The Supported File Formats page for Aspose.PDF for Go provides detailed information on the file formats that the library can load and save. It includes the PDF (Portable Document Format) and various other document formats, with clear instructions on which formats are supported for reading (loading) and writing (saving). This helps developers determine which file formats they can work with using the Aspose.PDF for Go library when building PDF manipulation solutions. The page serves as an important reference for users to understand the file compatibility of the API.    
+SoftwareApplication: go-cpp
 ---
 
 The following table indicates the file formats that Aspose.PDF for Go can load and save.

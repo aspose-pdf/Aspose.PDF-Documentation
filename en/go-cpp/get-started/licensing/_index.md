@@ -9,6 +9,10 @@ lastmod: "2024-12-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Licensing of Aspose.PDF for Go via C++
+Abstract: The Licensing page for Aspose.PDF for Go via C++ explains the available licensing options for the product. Customers can choose between a Classic License, a Metered License, or a limited license for evaluation purposes. The page also highlights the benefits of obtaining a proper license, such as unlocking full functionality and removing evaluation limitations. 
+SoftwareApplication: go-cpp   
 ---
 
 

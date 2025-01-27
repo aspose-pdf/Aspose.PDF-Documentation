@@ -9,6 +9,10 @@ lastmod: "2024-12-10"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: The Aspose.PDF for Go and C++ Technical Support page
+Abstract: The Aspose.PDF for Go and C++ Technical Support page provides users with various support options to assist with any issues they may encounter while using the product. Aspose offers free technical support through an online forum where users can ask questions and receive answers from the support team and community members. Additionally, there is priority support available for customers with critical business needs, which ensures faster response times and dedicated assistance. The page also covers guidelines on how to report issues effectively, including sharing code samples and error details to expedite resolution.    
+SoftwareApplication: go-cpp
 ---
 
 Aspose provides unlimited free technical support for all of its products. Support is available to all users, including evaluation. The main avenue of support is Aspose.Forums.

@@ -9,6 +9,10 @@ description: This topic shows you how to convert PDF file to other file formats 
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: Tool for Converting PDF to EPUB, TeX, Text, and XPS
+Abstract: Aspose.PDF for Go via C++ offers powerful capabilities to convert PDF documents into various file formats, including DOCX, PPTX, HTML, EPUB, SVG, and more. This functionality allows developers to extract and repurpose PDF content seamlessly while maintaining formatting, structure, and quality across different output formats. The library provides flexible options to customize the conversion process according to specific requirements. The documentation includes comprehensive guidelines and code samples to assist developers in efficiently implementing PDF-to-file conversion within their applications. 
+SoftwareApplication: go-cpp     
 ---
 
 ## Convert PDF to EPUB
