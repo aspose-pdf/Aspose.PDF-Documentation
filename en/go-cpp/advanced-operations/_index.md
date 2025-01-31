@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Advanced operations for working with PDF documents
+AlternativeHeadline: Advanced operations for working with PDF documents in Go
 Abstract: Aspose.PDF for Go via C++ provides a comprehensive set of advanced operations to manipulate and enhance PDF documents programmatically. These operations include features such as digital signatures, encryption, watermarking, form field management, and content redaction. The library empowers developers to implement complex workflows, ensuring security, compliance, and customization of PDF documents. The documentation offers detailed explanations and code samples to assist developers in efficiently utilizing advanced PDF processing capabilities in their applications. 
 SoftwareApplication: go-cpp      
 ---
