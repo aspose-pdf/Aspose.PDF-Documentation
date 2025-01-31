@@ -513,7 +513,7 @@ Converting PDF Documents into PDF/A-4 format
 
 Since version 24.8, it has been possible to convert PDF documents into PDF/A-4. Part 4 of the standard, based on PDF 2.0, was published in late 2020.
 
-The second code snippet demonstrates how to convert a document into PDF/A-4 format when the input document is an earlier version.
+The following code snippet demonstrates how to convert a document into PDF/A-4 format when the input document is an earlier PDF version than 2.0.
 
 ```cs
 private static void ConvertPdfToPdfA4()
