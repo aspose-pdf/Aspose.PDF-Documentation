@@ -180,7 +180,7 @@ private static void FlattenLayersInPdf()
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
-    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf")
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Get the first page
         var page = document.Pages[1];
