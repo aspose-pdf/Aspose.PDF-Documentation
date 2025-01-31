@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Working with PDF pages by Aspose.PDF for Go
+AlternativeHeadline: Working with PDF pages using Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ offers a comprehensive set of features for working with PDF pages, enabling developers to manipulate page content and structure with ease. The library supports operations such as adding, deleting, reordering, and rotating pages, as well as adjusting page size and orientation. It also allows for the extraction and replacement of page content to meet various document processing needs. The documentation provides step-by-step instructions and code samples to help developers efficiently implement page manipulation features within their applications.
 SoftwareApplication: go-cpp      
 ---
