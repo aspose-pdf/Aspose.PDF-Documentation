@@ -9,6 +9,10 @@ description: Learn how to write Go code for conversion PDF to DOC(DOCX).
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tool for Converting PDF to Word
+Abstract: Aspose.PDF for Go via C++ enables the seamless conversion of PDF documents to DOC format while preserving the original text, images, tables, and overall document structure. This feature allows developers to transform static PDFs into editable Word files for further modification and processing. The library provides various customization options to control the conversion output, ensuring high fidelity and accuracy. The documentation includes detailed instructions and sample code to help developers efficiently implement PDF-to-DOC conversion in their applications.
+SoftwareApplication: go-cpp     
 ---
 
 To edit the content of a PDF file in Microsoft Word or other word processors that support DOC and DOCX formats. PDF files are editable, but DOC and DOCX files are more flexible and customizable.
