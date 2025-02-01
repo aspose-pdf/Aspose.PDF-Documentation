@@ -6,6 +6,9 @@ weight: 80
 url: /java/set-image-size/
 description: This section describes how to set image size PDF file using Java library.
 lastmod: "2021-06-05"
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a guide on how to set the size of an image when adding it to a PDF file using the Aspose.PDF library in Java. It introduces two key methods, `setFixWidth` and `setFixHeight`, from the `com.aspose.pdf.Image` class, which allow users to specify the dimensions of the image in points. An accompanying code snippet is presented, demonstrating the process of creating a PDF document, adding a page, and inserting an image with specified width and height. The image, an SVG file, is added to the PDF page with the specified dimensions, and the document is then saved. This example illustrates the customization of image size within PDF documents using Aspose.PDF.
 ---
 
 It is possible to set the size of an image that's being added to a PDF file. In order to set size, you can use [setFixWidth](https://reference.aspose.com/pdf/java/com.aspose.pdf/Image#setFixWidth-double-) and [setFixHeight](https://reference.aspose.com/pdf/java/com.aspose.pdf/Image#setFixHeight-double-) methods of com.aspose.pdf.Image Class. 

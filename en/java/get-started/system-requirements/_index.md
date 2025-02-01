@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: Aspose.PDF for Java is a PDF document creation engine that operates independently of Adobe Acrobat, allowing users to produce PDF documents without needing to have Adobe Acrobat installed. However, to view the created PDFs, a machine must have at least Adobe Acrobat Reader installed, which can be downloaded for free. The software supports a wide range of 32-bit and 64-bit operating systems that run the Java runtime, including various versions of Microsoft Windows (from Windows 2000 to Windows 10, and Azure), Linux distributions such as Ubuntu and CentOS, and Mac OS X. Aspose.PDF for Java is compatible with Java versions starting from J2SE 8.0 (1.8) and above, including IBM i environments. It can be used in any Java-targeting development environment, with explicit support for several versions of Microsoft Visual Studio ranging from 2003 to 2019.
 ---
 
 ## Overview

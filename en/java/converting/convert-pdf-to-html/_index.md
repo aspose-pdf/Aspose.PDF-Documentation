@@ -9,6 +9,9 @@ description: This topic show you how to Aspose.PDF allows to convert PDF file to
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a comprehensive guide on converting PDF files to HTML format using Aspose.PDF for Java, highlighting several advanced features and techniques. It begins by introducing the flexibility of Aspose.PDF for Java in handling file conversions and showcases an online application for direct PDF to HTML conversion. The article covers key functionalities such as splitting large PDF documents into multiple HTML pages, avoiding SVG format for images by opting for PNG, and specifying custom folders for saving images during conversion. It offers code snippets to demonstrate how to manage SVG image compression, control HTML output by excluding certain font resources, and ensure transparent text rendering. Additionally, the article discusses the rendering of PDF document layers separately in HTML and explains how to create HTML outputs with only body content. These features enable users to view PDF content on various platforms without additional software, making the conversion process efficient and customizable.
 ---
 
 Aspose.PDF for Java provides many features for converting various file formats to PDF documents and converting PDF files into various output formats. This article discusses how to convert a PDF file into HTML format and save the images from the PDF file in a particular folder.

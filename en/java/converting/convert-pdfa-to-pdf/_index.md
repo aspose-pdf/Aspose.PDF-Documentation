@@ -9,6 +9,9 @@ description: This topic show you how to Aspose.PDF allows to convert PDF/A file 
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a guide on converting a PDF/A document to a standard PDF by removing PDF/A compliance restrictions using the Aspose.PDF library for Java. It introduces the `Document` class and its method `removePdfaCompliance()`, which facilitates the removal of PDF/A compliance information from a source document. The process is illustrated with a code example that demonstrates how to read a PDF/A file, remove its compliance, and save the result as a standard PDF. Additionally, it highlights that any document modifications, such as adding pages, will also result in the loss of PDF/A compliance, as exemplified in a second code snippet. The examples showcase the practical application of converting PDF/A documents to regular PDF format, making them more versatile for general use.
 ---
 
 ## Convert PDF/A document to PDF

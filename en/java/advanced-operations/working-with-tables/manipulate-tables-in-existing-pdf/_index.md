@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article discusses the enhanced capabilities of Aspose.PDF for Java in manipulating tables within PDF documents. Initially, the library supported adding tables to new or existing PDFs, including integration with databases to create dynamic tables. The latest release introduces a feature for searching and parsing existing tables in a PDF using the new `Aspose.PDF.Text.TableAbsorber` class, which is similar to the existing `TextFragmentAbsorber`. A code example demonstrates updating the content of a specific table cell using this class. Additionally, the article explains how to replace an old table with a new one in a PDF document using the `TableAbsorber` class's `Replace()` method. A detailed code snippet illustrates this process, showing how to find a table, create a new table, and replace the old one within the PDF.
 ---
 
 ## Manipulate tables in existing PDF

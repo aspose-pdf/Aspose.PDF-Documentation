@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: This article discusses the functionality of the Aspose.PDF for Java library, specifically focusing on the ability to manipulate tables within PDF documents. It highlights the use of the `TableAbsorber` class to locate and remove tables from existing PDF files. The article provides detailed code examples demonstrating how to remove a single table from a PDF document using the `Remove` method of the `TableAbsorber` class. Additionally, it explains how to remove multiple tables from a PDF by iterating through the collection of tables identified by `TableAbsorber`. These functionalities simplify the process of editing PDF documents by allowing developers to efficiently manage table structures within them.
 ---
 
 {{% alert color="primary" %}}

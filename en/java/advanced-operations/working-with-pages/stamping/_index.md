@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: This article explains the concept of stamping in PDF documents, likening it to the use of rubber stamps on paper documents. Stamps in PDFs serve to provide additional information, enhance security, and restrict unauthorized use. The article introduces **Aspose.PDF for Java** as a tool for adding image or text stamps to PDF files. It offers detailed guidance on three main stamping techniques: adding image stamps, where users can control image quality and set the image as a background; adding text stamps, where users can adjust alignment and use fill stroke text as a stamp; and adding page stamps, which involve creating complex stamps from pages of other PDF files. Each section offers specific instructions and insights into implementing these features using Java.
 ---
 
 A stamp in a PDF document is analogous to applying a rubber stamp on a paper document.

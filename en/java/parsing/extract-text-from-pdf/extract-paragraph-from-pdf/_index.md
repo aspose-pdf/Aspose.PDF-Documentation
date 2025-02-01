@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article discusses methods for extracting text from PDF documents in the form of paragraphs using a specialized `ParagraphAbsorber` class. This functionality allows users to either draw borders around sections and paragraphs on a PDF page or iterate through the collection of paragraphs to retrieve their text. The first method involves visually marking the text's boundaries on the page using Java code to draw rectangles and polygons, highlighting the sections and paragraphs. The second method involves programmatically iterating over the paragraphs to extract and print their text content, providing a structured overview of the document's layout. Both approaches utilize the `ParagraphAbsorber` class, demonstrating its capabilities in managing PDF text extraction tasks.
 ---
 
 ## Extract Text from PDF document in Paragraphs form

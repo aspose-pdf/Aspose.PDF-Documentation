@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: This article provides a guide on how to add Circle objects to a PDF document using Aspose.PDF for Java. It explains the process of creating both regular and filled Circle objects within a PDF. The guide includes step-by-step instructions, starting with creating a `Document` instance and adding pages to it. A `Graph` object is then created with specified dimensions, and a border is set using the `BorderInfo` class. The article details how to add a `Circle` to the `Graph` with a specific color and, in the case of a filled circle, how to set both the border and fill colors. Code snippets demonstrate the implementation process, and visual results are shown through example images of the drawn and filled circles.
 ---
 
 ## Add Circle object

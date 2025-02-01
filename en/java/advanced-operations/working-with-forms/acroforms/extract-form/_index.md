@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a detailed guide on extracting values from form fields within PDF documents using Aspose.PDF for Java. It covers three key tasks: retrieving the value of an individual form field, extracting values from all fields, and obtaining form fields from a specific region of a PDF file. The first section explains how to use the `getValue()` method of a `TextBoxField` to fetch the value of a specific field by accessing the form field from the `Document` object's Form collection. The second section describes how to traverse all form fields in a PDF document and retrieve their values using the `getFields()` method. Lastly, the article illustrates how to filter and retrieve fields from a designated rectangular area within a PDF document by using the `getFieldsInRect()` method. Code snippets are included to demonstrate the implementation of each task, highlighting the flexibility and utility of Aspose.PDF for Java in form data extraction and manipulation.
 ---
 
 ## Get Value from an Individual Field of PDF Document

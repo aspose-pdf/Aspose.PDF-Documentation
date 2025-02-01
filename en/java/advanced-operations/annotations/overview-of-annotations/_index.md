@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a comprehensive overview of the annotation types supported by Aspose.PDF for Java. It includes a detailed table listing various annotations along with their descriptions and the PDF version in which they were introduced. The supported annotation types include Text, Link, FreeText, Line, Square, Circle, Polygon, PolyLine, Highlight, Underline, Squiggly, StrikeOut, Stamp, Caret, Ink, Sound, Movie, Widget, Screen, Watermark, and Redact annotations. Each entry is accompanied by a confirmation of support, signified by tick marks. This resource is crucial for developers utilizing Aspose.PDF for Java to understand the available annotation features and their compatibility with different PDF versions.
 ---
 
 The following table indicates the Annotation types that Aspose.PDF for Java supported.

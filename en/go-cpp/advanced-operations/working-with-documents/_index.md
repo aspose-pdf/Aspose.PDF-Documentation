@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Working with PDF documents by Aspose.PDF for Go
+AlternativeHeadline: Working with PDF documents with Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ provides a wide range of functionalities for working with PDF documents, enabling developers to optimize, and compress PDF. These capabilities allow efficient document management and customization to meet various application requirements. The documentation offers step-by-step guidance and code examples to help developers effectively utilize the features for working with PDF documents in their C++ applications.
 SoftwareApplication: go-cpp     
 ---

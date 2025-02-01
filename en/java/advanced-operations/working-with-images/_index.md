@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The Portable Document Format (PDF) is an essential part of modern digital document handling, commonly incorporating images. The Aspose.PDF for Java library is a robust tool designed to facilitate comprehensive image manipulation within PDF documents. Users can perform various tasks such as adding, deleting, extracting, and replacing images, as well as adjusting image size, and obtaining resolution and dimension information. This library supports advanced image operations like searching for images within PDFs and working with image placement. Additionally, Aspose.PDF for Java extends functionality to work with specialized image formats like DICOM, providing conversion capabilities. The article outlines specific tasks users can perform with the library, including generating thumbnail images and setting default font names, accompanied by code snippets for practical guidance. For further exploration and detailed instructions, readers are encouraged to consult subsequent articles linked within the document.
 ---
 
 Today, a world without the Portable Document Format (PDF) seems to be unthinkable. We are used to encountering PDF everywhere, at work, in school, and just in everyday life.

@@ -9,6 +9,10 @@ lastmod: "2021-11-26"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on annotating PDF documents using Aspose.PDF for Java
+Abstract: This article provides a comprehensive guide on annotating PDF documents, highlighting the capabilities of PDF viewers and the Aspose.PDF library. Annotations enhance PDFs by marking content and enabling interactive features, such as forms. The article outlines how PDF viewers should support various annotation types, including text highlights, notes, lines, and shapes. It further explores how Aspose.PDF facilitates the management of annotations, including adding, editing, and deleting them. Key sections covered include an overview of annotation types according to the PDF specification, methods for manipulating annotations, and techniques for importing and exporting annotation data using the XFDF format.
+SoftwareApplication: java
 ---
 
 If you're wondering how to annotate PDF, you are in the right place.

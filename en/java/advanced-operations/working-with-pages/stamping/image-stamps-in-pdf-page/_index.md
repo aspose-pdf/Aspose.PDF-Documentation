@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: This article provides a comprehensive guide on using the Aspose.PDF API to add image stamps to PDF documents. It explains the use of the `ImageStamp` class for inserting images, allowing customization of properties such as height, width, opacity, and rotation. The article includes a code snippet demonstrating how to create a `Document` object, initialize an `ImageStamp`, and apply it to a specific page using the `addStamp(..)` method. Additionally, it introduces the `setQuality(...)` method to control image quality when adding stamps, with an example code snippet. The article also covers how to use the `BackgroundImage` property of the `FloatingBox` class to set an image stamp as the background in a floating box, providing another illustrative code sample.
 ---
 
 ## Add Image Stamp in PDF File

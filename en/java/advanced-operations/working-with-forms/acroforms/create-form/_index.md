@@ -9,6 +9,13 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a comprehensive guide on how to add various form fields to a PDF document using the Aspose.PDF Java library. It begins by explaining the use of the `Document` class's `Form` collection to manage form fields. The article details the steps to add different types of form fields, including `TextBoxField`, `RadioButtonField`, `ComboBoxField`, and how to add captions and tooltips to these fields.
+
+The process of adding a `TextBoxField` involves creating a field object, setting its properties, and adding it to the document's `Form` collection. The article includes a Java code snippet demonstrating this process, highlighting key steps such as setting the field's position, size, border, color, and finally saving the modified PDF document.
+
+For `RadioButtonField`, the article provides examples of adding simple radio buttons, creating advanced radio buttons with options placed within table cells, and associating captions with radio button fields. The code snippets illustrate how to initialize
 ---
 
 ## Add Form Field in a PDF Document

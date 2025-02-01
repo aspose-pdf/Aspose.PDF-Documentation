@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: This article provides an overview of the various properties associated with pages in a PDF file, such as the media box, bleed box, trim box, art box, crop box, and page rectangle. These properties define different aspects of the page layout and dimensions, crucial for displaying and printing PDF documents accurately. The article specifically details how Aspose.PDF for Java can be used to access and manipulate these properties to manage the page layout effectively. An example Java code snippet illustrates how to crop a PDF page by setting new dimensions for the crop box, trim box, art box, and bleed box. The article includes visual examples showing the page before and after the cropping operation, demonstrating the changes made to the page layout. For further understanding of these properties, the article suggests consulting the Adobe.Pdf specification and provides an external reference link.
 ---
 
 ## Get Page Properties

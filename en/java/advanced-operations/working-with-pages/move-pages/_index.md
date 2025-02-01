@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a guide on how to manipulate PDF documents using Java, specifically focusing on moving pages between documents or within a single document. It outlines the steps involved in transferring a single page or multiple pages from one PDF document to another. The process includes creating `Document` objects for both source and destination files, retrieving pages from the `PageCollection`, adding them to the destination document, saving the changes, and deleting the pages from the source document. Code snippets demonstrate practical implementations, showing how to move individual pages, multiple pages, and reposition pages within the same document. These examples leverage the Aspose.PDF Java library to accomplish the tasks.
 ---
 
 ## Moving a Page from one PDF Document to Another

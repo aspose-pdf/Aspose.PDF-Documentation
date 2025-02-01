@@ -9,6 +9,10 @@ lastmod: "2021-11-24"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on adding and managing annotations in PDF with Aspose.PDF for Java
+Abstract: This article provides a comprehensive guide on adding and managing various types of annotations in PDF files using Aspose.PDF for Java. It covers the implementation of Caret Annotations, which indicate text insertions, by detailing the steps to create, add, retrieve, and delete these annotations from an existing PDF file. The article includes code snippets demonstrating how to configure Caret Annotations with specific properties such as title, subject, color, and flags. Additionally, it explores the use of StrikeOutAnnotations for text replacements. The document also delves into handling Link Annotations, which serve as hypertext links to other document sections or actions. This section includes instructions on adding, retrieving, and deleting Link Annotations, with examples that illustrate linking to a phone number. Furthermore, the article introduces Redaction Annotations, used to redact specific page regions. It explains how to create and apply these annotations, with examples of modifying the annotation's appearance and flattening the annotation to remove underlying content. The guide concludes
+SoftwareApplication: java
 ---
 
 ## How to add Caret Annotation into existing PDF file

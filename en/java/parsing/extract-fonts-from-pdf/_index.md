@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a method to extract all fonts from a PDF document using the `Document.IDocumentFontUtilities.getAllFonts()` method from the `Document` class in Java. The process involves loading the PDF document and retrieving its fonts, which are then saved using their respective font names. The code snippet demonstrates the implementation of this process, illustrating the steps to load the document, extract fonts, and save them to a specified location. This approach is useful for users needing to access or utilize fonts embedded within PDF files.
 ---
 
 In case you want to get all fonts from a PDF document, you can use `Document.IDocumentFontUtilities.getAllFonts()` method provided in Document class.

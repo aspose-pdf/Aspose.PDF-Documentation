@@ -9,6 +9,15 @@ description: This topic show you how to Aspose.PDF for Java library allows to co
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: **Abstract**
+
+Aspose.PDF for Java is a robust library that facilitates the conversion of various image formats into PDF files. This article provides a comprehensive guide on how to convert popular image formats—including BMP, CGM, DICOM, EMF, JPG, PNG, SVG, and TIFF—into PDFs using Aspose.PDF for Java. For each image format, the article offers specific steps and code snippets to demonstrate the conversion process. 
+
+For BMP to PDF conversion, the library supports loading BMP images, adding them to a document, and saving the output as a PDF. Similarly, CGM files can be converted by utilizing the `CgmLoadOptions` class to handle the vector graphics format, while DICOM images are processed using a stream approach suitable for medical imaging. EMF to PDF conversion can be achieved using various methods, including using the Image class directly or employing PDF operators for more intricate tasks.
+
+JPG and PNG formats are easily converted by loading the images and adding them to the
 ---
 
 **Aspose.PDF for Java**  allows you to convert different formats of images to PDF files. Our library demonstrates code snippets for converting the most popular image formats, such as - BMP, CGM, DICOM, EMF, JPG, PNG, SVG and TIFF formats.

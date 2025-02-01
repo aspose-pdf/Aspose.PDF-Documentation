@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a comprehensive guide on how to create links in PDF documents using Aspose.PDF for Java. It details two main use cases: creating a link to launch an external application and linking to an external PDF document. The process for both involves creating a `Document` object, selecting a `Page`, and utilizing a `LinkAnnotation` object with specified attributes and actions. For application links, a `LaunchAction` object is configured with the application path, while for PDF document links, a `GoToRemoteAction` object is used, specifying the target PDF and page number. Both processes conclude with saving the updated document. The article includes Java code snippets illustrating the implementation steps for each link type.
 ---
 
 ## Create Links

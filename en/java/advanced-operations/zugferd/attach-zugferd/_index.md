@@ -9,6 +9,9 @@ lastmod: "2024-01-18"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article outlines a step-by-step guide for attaching a ZUGFeRD-compliant file to a PDF document using Java. It begins by recommending the setup of a path variable to locate input and output PDF files. The process involves creating a `Document` object within a try-with-resources statement to ensure automatic closure. A `FileSpecification` object is then created to link an additional file containing invoice metadata that adheres to the ZUGFeRD standard. Properties such as description, MIME type, and AFrelationship are added to this file specification, indicating its role as an alternative representation of the PDF content. The file is attached to the document's embedded files collection and named according to the ZUGFeRD standard conventions. Subsequently, the document is converted to the PDF/A-3U format, which supports long-term preservation and embedding of files. Finally, the document is saved as a new PDF file, completing the attachment process. A code snippet is provided to demonstrate the implementation of this procedure using
 ---
 
 ## Attach ZUGFeRD to PDF

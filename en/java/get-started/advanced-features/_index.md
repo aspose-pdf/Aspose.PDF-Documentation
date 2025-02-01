@@ -9,6 +9,9 @@ lastmod: "2022-01-11"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article discusses the use of Latex tags in scientific and academic document creation, specifically highlighting the capabilities of the Aspose.PDF for Java 19.9 API. This API version supports various Latex tags, including `\begin`, `\end`, and `\qedhere`, which facilitate the inclusion of complex mathematical expressions and ensure consistent formatting throughout a document. An example code snippet is provided, demonstrating how to incorporate a structured mathematical proof within a document using these Latex tags. The snippet illustrates the process of creating a PDF document by embedding a Latex-formatted mathematical proof within a Java application, showcasing the ease and efficiency of generating professional documents using Aspose.PDF for Java.
 ---
 
 ## Support for Latex Tags

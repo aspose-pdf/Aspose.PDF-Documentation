@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a detailed guide on extracting images from a PDF document using the Aspose.PDF library in Java. It explains that each PDF page contains resources such as images, forms, and fonts, which can be accessed using the `getResources` method of the `Page` class. The `Resources` class includes an `XImageCollection`, from which images can be retrieved using the `getImages` method. To extract an image, one must first obtain a reference to the desired page, then access its resources and image collection. Images are accessed by their index in the collection, returning an `XImage` object. This object offers a `Save` method to save the image to an output stream. A code example demonstrates the process: loading a PDF document, accessing the first page, retrieving the first image from the collection, and saving it as a JPEG file. The article also includes exception handling for file output operations.
 ---
 
 Each page in PDF document contain resources (images, forms and fonts). We can access to these resources by calling [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) method. Class [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) contain [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) and we can get list of images by calling [getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--) method.

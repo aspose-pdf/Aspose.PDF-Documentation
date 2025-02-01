@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: Aspose.PDF for Java is a comprehensive library designed for managing and manipulating PDF documents with extensive features and compatibility. Written entirely in Java, it supports JDK 1.8 and above, and functions across both 32-bit and 64-bit operating systems. The library accommodates various PDF versions from 1.2 to 1.7. It provides robust font support, including core, PostScript, TrueType, and CJK fonts with Unicode capabilities. Text manipulation is flexible, offering options to replace, extract, and add text. Graphical elements can be inserted and customized, supporting different shapes, colors, and transformations. Image handling is versatile, allowing insertion, deletion, replacement, and format conversions (JPEG, TIFF, PNG, BMP, SVG, EMF, GIF). Attachment and annotation management are fully supported, alongside detailed page and document operations like concatenation, insertion, deletion, and format conversions (DOC/DOCX, Excel, HTML, XPS, Tex, and various
 ---
 
 ## General Features

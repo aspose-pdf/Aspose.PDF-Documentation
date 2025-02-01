@@ -9,6 +9,11 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: **Abstract:**
+
+Aspose.PDF for Java is a versatile Java component designed to enable developers to create and manipulate PDF documents programmatically. Supporting JDK 1.8 and above, it integrates seamlessly with various applications, including JSP/JSF web and Windows applications. This lightweight and efficient library allows the inclusion of tables, graphs, images, hyperlinks, and custom fonts in PDFs, while also offering compression and robust security features. The component facilitates PDF creation via an API or XML templates, providing full functionality in its evaluation version with certain limitations. Users can evaluate the component with a watermark or request a 30-day Temporary License to explore its full capabilities without restrictions. Installation is straightforward through the Aspose Repository, with simple Maven configurations. It also ensures compatibility with Java 11, requiring additional dependencies for certain classes. Aspose.PDF for Java is favored for its performance, cost-effectiveness, and support, making it a popular choice for creating PDF documents.
 ---
 
 ## Aspose.PDF for Java component

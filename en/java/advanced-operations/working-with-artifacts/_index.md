@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a comprehensive overview of handling artifacts in PDF files using Aspose.PDF for Java. Artifacts, including graphics objects like watermarks and background images, are not part of the authored content but serve aesthetic or organizational purposes. The article details the use of the `Artifact` class, which categorizes artifacts by type and subtype, such as Background, Layout, Footer, Header, and Watermark. It explains how to manipulate these artifacts through examples, such as setting a watermark on a PDF page using the `WatermarkArtifact` class and adding a background image with the `BackgroundArtifact` class. Additionally, the article includes programming samples that demonstrate how to retrieve watermarks from a PDF file and count artifacts of a particular type. These examples involve iterating through the artifacts collection of a page and executing specific operations based on artifact types. Overall, the article serves as a practical guide for developers looking to work with PDF artifacts using Aspose.PDF for Java.
 ---
 
 Artifacts are generally graphics objects or other markings that are not part of the authored content. In your PDF examples of artifacts include different information, there are page header or footer, lines or other graphics separating sections of the page, or decorative images.

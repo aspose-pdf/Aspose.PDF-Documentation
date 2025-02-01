@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides an overview of the XML schema used by Aspose.PDF for Java to handle XML documents. The schema defines a structured format for various elements and complex types associated with PDF document components, such as text fragments, tables, images, graphs, and pages. Key components include `DocumentType`, which encapsulates the entire document structure; `TextFragmentType`, detailing text segments and states; `TableType`, specifying table attributes and content; and `PageType`, outlining page layout and content options. The schema ensures that each element, such as `CellType`, `RowType`, and `ImageType`, follows a predefined structure with optional attributes for customization, like background color, alignment, and dimensions. Overall, the schema provides a comprehensive framework for representing PDF documents in XML format, enabling precise document creation and manipulation within Aspose.PDF for Java.
 ---
 
 Aspose.PDF for Java uses the following XML schema for working with XML documents:

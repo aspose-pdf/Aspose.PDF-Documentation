@@ -9,6 +9,17 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a comprehensive guide on how to rotate text within a PDF document using the rotation property available in the Aspose PDF library for Java. It explains the use of the `setRotation` method from the `TextFragment` class to achieve various text orientations for document customization. The article outlines several implementation scenarios:
+
+1. **Rotation Using TextFragment and TextBuilder**: Demonstrates how to create text fragments with different rotation angles (0, 45, and 90 degrees) and append them to a PDF page using a `TextBuilder`.
+
+2. **Rotation Using TextParagraph and TextBuilder (Rotated Fragments)**: Illustrates the process of adding multiple rotated text fragments to a `TextParagraph`, which is then appended to a PDF page.
+
+3. **Rotation Using TextFragment and Page.Paragraphs**: Shows how text fragments can be rotated (angles 0, 315, and 270 degrees) and directly added to a page's paragraphs.
+
+4. **Rotation Using
 ---
 
 ## Rotate Text Inside PDF using Rotation Property

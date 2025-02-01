@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article discusses how to add Curve objects, specifically Bézier curves, to PDF documents using the Aspose.PDF library for Java. Bézier curves, known for their smooth modeling capabilities in computer graphics, are incorporated into PDF documents through a sequence of steps utilizing Aspose's API. The article outlines the process of creating a `Document` instance, adding a `Drawing` object with specified dimensions, setting a border for the drawing, and adding a `Graph` object to the page's paragraph collection. Two examples are provided: one demonstrating the addition of a simple Bézier curve, and another illustrating a filled curve. Java code snippets are included to guide users through the implementation process, resulting in PDF files with visually demonstrated curves, as depicted in accompanying images.
 ---
 
 ## Add Curve object

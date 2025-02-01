@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a guide on using Aspose.PDF to extract attachments from a PDF document, which can be beneficial for saving documents separately or removing attachments from a PDF. It includes Java code snippets demonstrating how to retrieve all attachments from a PDF, detailing the process of accessing a specific embedded file, extracting its contents, and saving it to a specified path. Additionally, the article describes how to gather attachment information using the `FileSpecification` object within the `Document` class's `EmbeddedFiles` collection. The `FileSpecification` object allows users to access properties such as the file name, description, MIME type, and additional parameters like CheckSum, CreationDate, ModDate, and Size. The article emphasizes ensuring that the `getParams()` method does not return null when retrieving these parameters and provides a Java code snippet showcasing how to extract information from a particular attachment.
 ---
 
 ## Get Attachments From PDF Document

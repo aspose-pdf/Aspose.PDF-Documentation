@@ -9,6 +9,15 @@ lastmod: "2021-11-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: This tutorial provides a comprehensive guide on handling various types of annotations in a PDF document using Aspose.PDF for Java. It begins with instructions on adding a Text Annotation to a PDF file, explaining that annotations are associated with specific pages and can be managed via the Annotations collection of a Page object. The tutorial includes a code example demonstrating how to create and add a Text Annotation, detailing steps such as setting the annotation's properties and adding it to the PDF.
+
+The guide also covers the creation of Free Text Annotations, which display text directly on the page, using the PdfContentEditor.CreateFreeText method. A code snippet is provided to illustrate the process.
+
+Furthermore, the tutorial explains how to retrieve and delete Free Text Annotations from a PDF document. It includes code examples showing how to filter and manipulate annotations using the AnnotationSelector class.
+
+Additionally, the tutorial describes how to delete all annotations from a page and retrieve all annotations using the AnnotationCollection class. Code examples are provided for both tasks, showcasing
 ---
 
 Add, Delete, and Get Annotation are similar for different kinds of annotations. Let take as example a Text Annotation.

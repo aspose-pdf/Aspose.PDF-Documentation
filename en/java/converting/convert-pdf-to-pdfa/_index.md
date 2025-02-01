@@ -9,6 +9,9 @@ description: Learn how to convert PDF files to PDF/A format for long-term archiv
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article outlines the process of converting PDF files to various PDF/A compliance formats using Aspose.PDF for Java, emphasizing the necessity of validating the PDF before conversion, which is done following Adobe Preflight standards. The article provides code snippets for converting PDFs to PDF/A-1b, PDF/A-3b, PDF/A-3a, PDF/A-2a, and PDF/A-3U formats. It describes the validation process, which involves generating an XML file to log validation results, and offers functionality to specify actions for elements that cannot be converted. Additionally, it explains how to attach XML files to PDF/A-3 compliant documents and highlights the importance of reconverting post-attachment to ensure proper metadata handling. The article also mentions an online tool for converting PDFs to PDF/A-1A, offering users a chance to explore the functionality and quality of the conversion process.
 ---
 
 **Aspose.PDF for Java** allows you to convert a PDF file to a PDF/A compliant PDF file. Before doing so, the file must be validated. This article explains how.

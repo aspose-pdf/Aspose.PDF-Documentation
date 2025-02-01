@@ -9,6 +9,9 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: 
+Abstract: The article provides a detailed guide on creating a complex PDF document using Java and the Aspose.PDF library. The example document simulates one from a fictitious passenger ferry service company and includes an image, text fragments (header and paragraph), and a table. The process is built upon a Document Object Model (DOM) approach, which is further explained in the linked section "Basics of DOM API". The article outlines a step-by-step method for document creation: initializing a Document object, adding a Page, and incorporating an Image using various PDF operators such as GSave, ConcatenateMatrix, Do, and GRestore. A header and a descriptive paragraph are added using TextFragment objects, formatted with specific fonts and alignments. A table is constructed with defined properties and populated with rows of data. The complete document is then saved as "Complex.pdf". The provided Java code illustrates these operations, showcasing the integration of Aspose.PDF functionalities to achieve the desired complex document structure.
 ---
 
 The [Hello, World](/pdf/java/hello-world-example/) example showed simple steps to create a PDF document using Java and Aspose.PDF. In this article, we will take a look at creating a more complex document with Java and Aspose.PDF for Java. As an example, we'll take a document from a fictitious company that operates passenger ferry services.
