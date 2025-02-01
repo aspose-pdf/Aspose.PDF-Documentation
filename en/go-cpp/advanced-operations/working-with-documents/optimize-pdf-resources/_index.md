@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Optimize PDF Resources with Aspose.PDF for Go
+AlternativeHeadline: Optimize PDF Resources using Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ provides advanced capabilities to optimize PDF resources, enhancing document efficiency and reducing file size. The library allows developers to optimize fonts, images, and metadata by removing redundant data and compressing resources without compromising document quality. These optimization techniques improve document performance, making PDFs more suitable for sharing and storage. The documentation offers detailed guidance and code samples to help developers effectively implement resource optimization in their applications.
 SoftwareApplication: go-cpp     
 ---

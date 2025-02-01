@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Optimize and compress PDF files with Aspose.PDF for Go
+AlternativeHeadline: Optimize and compress PDF files using Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ offers powerful optimization features to reduce the size and improve the performance of PDF documents. The library provides various optimization options, including compressing images, removing unused objects, reducing font sizes, and optimizing content streams. These features help enhance document storage efficiency and ensure faster processing and loading times. The documentation provides step-by-step instructions and code samples to assist developers in implementing PDF optimization effectively within their applications.
 SoftwareApplication: go-cpp      
 ---
