@@ -270,10 +270,10 @@ A new `FontEncodingStrategy` property has been added to the `HtmlSaveOptions` cl
 
 The following sample demonstrates the new option using:
 ```csharp
-private static void ConvertPdfToHtmlUsingCMap(string inputPdfFile, string outputHtmlFile)
+private static void ConvertPdfToHtmlUsingCMap()
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
@@ -831,7 +831,7 @@ Two methods were added to merge all layers on the page:
 The second parameter allows renaming the optional content group marker. The default value is "oc1" (/OC /oc1 BDC).
 
 ```cs
-private static void MergePdfLayers(string inputPdfPath, string outputPdfPath)
+private static void MergePdfLayers()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
@@ -924,7 +924,7 @@ private static void PickTrayByPdfSizeFacade()
         contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set the flag to choose annotation paper tray using the PDF page size
-        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+        contentEditor.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.PickTrayByPDFSize);
 
         // Save PDF document
         contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
@@ -1166,7 +1166,7 @@ Here are examples of code for DictionaryEditor:
 - Add and set values to dictionary
 
 ```cs
-private static void ModifyKeysInPdfPageDicrionary(string outputPdfPath)
+private static void ModifyKeysInPdfPageDicrionary()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
@@ -1369,10 +1369,10 @@ private static void ConvertPDFtoMarkup()
         {
             // Set to false to prevent the use of HTML <img> tags for images in the Markdown output
             UseImageHtmlTag = false
-        }
-
-// Specify the directory name where resources (like images) will be stored
-saveOptions.ResourcesDirectoryName = "images";
+        };
+        
+        // Specify the directory name where resources (like images) will be stored
+        saveOptions.ResourcesDirectoryName = "images";
 
         // Save PDF document in Markdown format to the specified output file path using the defined save options
         document.Save(dataDir + "PDFtoMarkup_out.md", saveOptions);
@@ -1402,7 +1402,7 @@ private static void ConvertOFDToPDF()
 From this release added the Merger plugin:
 
 ```cs
-private static void PdfMergeUsingPlugin(string inputPdfPath1, string inputPdfPath2, string mergedPdfPath)
+private static void PdfMergeUsingPlugin()
 {
     string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
@@ -1469,6 +1469,7 @@ private static void RemoveHiddenText()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "HiddenText.pdf"))
     {
+        // Use TextFragmentAbsorber with no parameters to get all text
         var textAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
 
         // This option can be used to prevent other text fragments from moving after hidden text replacement
@@ -1494,12 +1495,15 @@ private static void RemoveHiddenText()
 Since 23.11 supports for thread interruption:
 
 ```cs
-private static void InterruptExample(string outputPdfPath)
+private static void InterruptExample()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
     using (var monitor = new Aspose.Pdf.Multithreading.InterruptMonitor())
     {
         // An class that can produce long-drawn-out work
-        RowSpanWorker worker = new RowSpanWorker(outputPdfPath, monitor);
+        RowSpanWorker worker = new RowSpanWorker(dataDir + "RowSpanWorker_out.pdf", monitor);
 
         var thread = new System.Threading.Thread(new System.Threading.ThreadStart(worker.Work));
         thread.Start();
@@ -1579,42 +1583,66 @@ The current update presents three versions of Removing tags from tagged PDFs.
 - Remove some node element from a documentElement (root tree element):
 
 ```cs
-var document = new Document("some tagged pdf");
-var structure = document.LogicalStructure;
-var documentElement = structure.Children[0];
-var structElement = documentElement.Children.Count > 1 ? documentElement.Children[1] as StructElement : null;
-if (documentElement.Children.Remove(structElement))
+private static void RemoveStructElement()
 {
-    // element removed
-    document.Save(outputPath);
-}
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// You can also delete the structElement itself
-//if (structElement != null)
-//{
-//    structElement.Remove();
-//    document.Save(outputPath);
-//}
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf"))
+    {
+        // Access to root element(s)
+        var structure = document.LogicalStructure;
+        var documentElement = structure.Children[0];
+        var structElement = documentElement.Children.Count > 1 ? documentElement.Children[1] as Aspose.Pdf.Structure.StructElement : null;
+
+        if (documentElement.Children.Remove(structElement))
+        {
+            // Element removed. Save PDF document.
+            document.Save(dataDir + "StructureElementsRemoved.pdf");
+        }
+
+        // You can also delete the structElement itself
+        //if (structElement != null)
+        //{
+        //    structElement.Remove();
+        //    document.Save(outputPdfPath);
+        //}
+    }
+}
 ```
 
 - Remove all marked elements tags from the document, but keep the structure elements:
 
 ```cs
-var document = new Document("some tagged pdf");
-var structure = document.LogicalStructure;
-var root = structure.Children[0];
-var queue = new Queue<Element>();
-queue.Enqueue(root);
-while(queue.TryDequeue(out var element))
+private static void RemoveMarkedElementsTags()
 {
-    foreach (var child in element.Children)
-    {
-        queue.Enqueue(child);
-    }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    if (element is TextElement || element is FigureElement)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
     {
-        element.Remove();
+        // Access to root element(s)
+        var structure = document.LogicalStructure;
+        var root = structure.Children[0];
+        var queue = new Queue<Aspose.Pdf.Structure.Element>();
+        queue.Enqueue(root);
+
+        while (queue.TryDequeue(out var element))
+        {
+            foreach (var child in element.Children)
+            {
+                queue.Enqueue(child);
+            }
+
+            if (element is Aspose.Pdf.Structure.TextElement || element is Aspose.Pdf.Structure.FigureElement)
+            {
+                element.Remove();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "MarkedElementsTagsRemoved.pdf");
     }
 }
 ```
@@ -1622,20 +1650,46 @@ while(queue.TryDequeue(out var element))
 - Remove tags at all:
 
 ```cs
-var document = new Document("some tagged pdf");
-var structure = document.LogicalStructure;
-var documentElement = structure.Children[0];
-documentElement.Remove();
-document.Save(outputPath);
+private static void RemoveTags()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
+    {
+        // Access to root element(s)
+        var structure = document.LogicalStructure;
+        var documentElement = structure.Children[0];
+        documentElement.Remove();
+
+        // Save PDF document
+        document.Save(dataDir + "TagsRemoved.pdf");
+    }
+}
 ```
 
 Since 23.10 was implemented a new feature to measure character height. Use the following code to measure the height of a character.
 
 ```cs
-var document = new Document(input);
-var absorber = new TextFragmentAbsorber();
-absorber.Visit(document.Pages[1]);
-var height = absorber.TextFragments[1].TextState.MeasureHeight('A');
+private static void DisplayCharacterHeight()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextAll.pdf"))
+    {
+        // Create TextFragmentAbsorber to get information about state of document text
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        absorber.Visit(document.Pages[1]);
+
+        // Get height of 'A' character being displayed with font of first text fragment
+        var textState = absorber.TextFragments[1].TextState;
+        var height = textState.MeasureHeight('A');
+        Console.WriteLine("The height of 'A' character displayed with {0} font size of {1} is {2:N3}", textState.Font.FontName, textState.FontSize,height);
+    }
+}
 ```
 
 Note that the measurement is based on the font embedded in the document. If any information for a dimension is missing, this method returns 0.
@@ -1643,50 +1697,72 @@ Note that the measurement is based on the font embedded in the document. If any 
 Also, this release provides the Sign a PDF using a signed HASH:
 
 ```cs
-public void PDFNET_54566()
+private static void SignPdfUsingSignedHash(string certP12, string pfxPassword)
 {
-    var inputPdf = "54566.pdf";
-    var inputP12 = "54566.p12";
-    var inputPfxPassword = "123456";
-    var outputPdf = "54566_out.pdf";
-    using (var sign = new PdfFileSignature())
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        sign.BindPdf(inputPdf);
-        var pkcs7 = new PKCS7(inputP12, inputPfxPassword);
-        pkcs7.CustomSignHash = CustomSignHash;
+        // Bind PDF document
+        sign.BindPdf(dataDir + "input.pdf");
+        var pkcs7 = new Aspose.Pdf.Forms.PKCS7(certP12, pfxPassword);
+
+        // Create a delegate to external sign
+        pkcs7.CustomSignHash = delegate (byte[] signableHash, Aspose.Pdf.DigestHashAlgorithm digestHashAlgorithm)
+        {
+            X509Certificate2 signerCert = new X509Certificate2(certP12, pfxPassword, X509KeyStorageFlags.Exportable);
+            RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+            var xmlString = signerCert.PrivateKey.ToXmlString(true);    //not supported on core 2.0
+            rsaCSP.FromXmlString(xmlString);                            //not supported on core 2.0
+
+            byte[] signedData = rsaCSP.SignHash(signableHash, CryptoConfig.MapNameToOID("SHA1"));
+            return signedData;
+        };
+
+        // Sign PDF file
         sign.Sign(1, "reason", "cont", "loc", false, new System.Drawing.Rectangle(0, 0, 500, 500), pkcs7);
-        sign.Save(outputPdf);
+
+        // Save PDF document
+        sign.Save(dataDir + "SignWithCertificate_out.pdf");
     }
-    using (var sign = new PdfFileSignature())
+
+    // Verify
+    using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        sign.BindPdf(outputPdf);
+        // Bind PDF document
+        sign.BindPdf(dataDir + "SignWithCertificate_out.pdf");
+
         if (!sign.VerifySignature("Signature1"))
         {
             throw new Exception("Not verified");
         }
     }
 }
-
-private byte[] CustomSignHash(byte[] signableHash)
-{
-    var inputP12 = "54566.p12";
-    var inputPfxPassword = "123456";
-    X509Certificate2 signerCert = new X509Certificate2(inputP12, inputPfxPassword, X509KeyStorageFlags.Exportable);
-    RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
-    var xmlString = signerCert.PrivateKey.ToXmlString(true);
-    rsaCSP.FromXmlString(xmlString);
-    byte[] signedData = rsaCSP.SignData(signableHash, CryptoConfig.MapNameToOID("SHA1"));
-    return signedData;
-}
 ```
 
 One more new feature is Print Dialog Presets Page Scaling:
 
 ```cs
-Document document = new Document();
-document.Pages.Add();
-document.PrintScaling = PrintScaling.None;
-document.Save("output.pdf");
+private static void SetPrintScaling()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        document.Pages.Add();
+
+        // Disable print scaling
+        document.PrintScaling = PrintScaling.None;
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrintScaling_out.pdf");
+    }
+}
 ```
 
 ## What's new in Aspose.PDF 23.9
@@ -1694,11 +1770,25 @@ document.Save("output.pdf");
 Since 23.9 support to remove a child annotation from a fillable field.
 
 ```cs
-var document = new Document("field-ref-add.pdf");
-field = (Field)document.Form[fieldName];
-var annotation = field[1];
-document.Pages[annotation .PageIndex].Annotations.Remove(annotation);
-document.Save("field-ref-delete.pdf");
+private static void RemoveChildAnnotationFromFillableField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FieldWithChildAnnots.pdf"))
+    {
+        // Get field with child annotations
+        var field = (Aspose.Pdf.Forms.Field)document.Form["1 Vehicle Identification Number"];
+        // Get first child annotation
+        var annotation = field[1];
+        // Remove the annotation
+        document.Pages[annotation.PageIndex].Annotations.Remove(annotation);
+
+        // Save PDF document
+        document.Save(dataDir + "RemoveChildAnnotation_out.pdf");
+    }
+}
 ```
 
 ## What's new in Aspose.PDF 23.8
@@ -1708,9 +1798,21 @@ Since 23.8 support to add Incremental Updates detection.
 The function for detecting Incremental Updates in a PDF document has been added. This function returns 'true' if a document was saved with incremental updates; otherwise, it returns 'false'.
 
 ```cs
-var path = @"C:\test.pdf";
-var document = new Document(path);
-Console.WriteLine(document.HasIncrementalUpdate());
+private static bool HasIncrementalUpdate()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithIncrementalUpdate.pdf"))
+    {
+        // New method
+        bool hasIncrementalUpdate = document.HasIncrementalUpdate();
+
+        Console.WriteLine("Document {0} incremental update check returns: {1}", document.FileName, hasIncrementalUpdate);
+        return hasIncrementalUpdate;
+    }
+}
 ```
 
 Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable PDF forms have checkbox fields that act as radio groups:
@@ -1718,51 +1820,67 @@ Also, 23.8 supports the ways to work with nested checkbox fields. Many fillable 
 - Create multi-value checkbox field:
 
 ```cs
-using (var document = new Document())
+private static void CreateMultivalueCheckboxField()
 {
-    var page = document.Pages.Add();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    var checkbox = new CheckboxField(page, new Rectangle(50, 50, 70, 70));
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
 
-    // Set the first checkbox group option value
-    checkbox.ExportValue = "option 1";
+        var checkbox = new Aspose.Pdf.Forms.CheckboxField(page, new Aspose.Pdf.Rectangle(50, 50, 70, 70));
 
-    // Add new option right under existing ones
-    checkbox.AddOption("option 2");
+        // Set the first checkbox group option value
+        checkbox.ExportValue = "option 1";
 
-    // Add new option at the given rectangle
-    checkbox.AddOption("option 3", new Rectangle(100, 100, 120, 120));
+        // Add new option right under existing ones
+        checkbox.AddOption("option 2");
 
-    document.Form.Add(checkbox);
+        // Add new option at the given rectangle
+        checkbox.AddOption("option 3", new Aspose.Pdf.Rectangle(100, 100, 120, 120));
 
-    // Select the added checkbox
-    checkbox.Value = "option 2";
-    document.Save("checkbox_group.pdf");
+        document.Form.Add(checkbox);
+
+        // Select the added checkbox
+        checkbox.Value = "option 2";
+
+        // Save PDF document
+        document.Save(dataDir + "MultivalueCheckboxField.pdf");
+    }
 }
 ```
 
 - Get and set value of a multi-value checkbox:
 
 ```cs
-using (Document document = new Document("example.pdf"))
+private static void GetAndSetValueOfMultivalueCheckboxField()
 {
-    Form form = document.Form;
-    CheckboxField checkbox = form.Fields[0] as CheckboxField;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Allowed values may be retrieved from the AllowedStates collection
-    // Set the checkbox value using Value property
-    checkbox.Value = checkbox.AllowedStates[0];
-    checkboxValue = checkbox.Value; // the previously set value, e.g. "option 1"
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MultivalueCheckboxField.pdf"))
+    {
+        var form = document.Form;
+        var checkbox = form.Fields[0] as Aspose.Pdf.Forms.CheckboxField;
 
-    // The value should be any element of AllowedStates
-    checkbox.Value = "option 2";
-    checkboxValue = checkbox.Value; // option 2
+        // Allowed values may be retrieved from the AllowedStates collection
+        // Set the checkbox value using Value property
+        checkbox.Value = checkbox.AllowedStates[0];
+        var checkboxValue = checkbox.Value; // the previously set value, e.g. "option 1"
 
-    // Uncheck boxes by either setting Value to "Off" or setting Checked to false
-    checkbox.Value = "Off";
-    // or, alternately:
-    // checkbox.Checked = false;
-    checkboxValue = checkbox.Value; // Off
+        // The value should be any element of AllowedStates
+        checkbox.Value = "option 2";
+        checkboxValue = checkbox.Value; // option 2
+
+        // Uncheck boxes by either setting Value to "Off" or setting Checked to false
+        checkbox.Value = "Off";
+        // or, alternately:
+        // checkbox.Checked = false;
+        checkboxValue = checkbox.Value; // Off
+    }
 }
 ```
 
@@ -1771,42 +1889,75 @@ using (Document document = new Document("example.pdf"))
 From Aspose.PDF 23.7 support to add the shape extraction:
 
 ```cs
-public void PDFNET_46298()
+private static void CopyShape()
 {
-    var input1 = "46298_1.pdf";
-    var input2 = "46298_2.pdf";
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Graphs();
 
-    var source = new Document(input1);
-    var dest = new Document(input2);
+    // Open PDF document
+    using (var sourceDocument = new Aspose.Pdf.Document(dataDir + "test.pdf"))
+    {
+        // Create PDF document
+        using (var destDocument = new Aspose.Pdf.Document())
+        {
+            // Absorb vector graphics from the source document
+            var graphicAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber();
+            graphicAbsorber.Visit(sourceDocument.Pages[1]);
 
-    var graphicAbsorber = new GraphicsAbsorber();
-    graphicAbsorber.Visit(source.Pages[1]);
-    var area = new Rectangle(90, 250, 300, 400);
-    dest.Pages[1].AddGraphics(graphicAbsorber.Elements, area);
+            // Copy the graphics into the destination document specified page and area
+            var area = new Aspose.Pdf.Rectangle(90, 250, 300, 400);
+            destDocument.Pages[1].AddGraphics(graphicAbsorber.Elements, area);
+
+            // Save PDF document
+            destDocument.Save(dataDir + "CopyShape_out.pdf");
+        }
+    }
 }
 ```
 
 Also supports the ability to detect Overflow when adding text:
 
 ```cs
-var document = new Document();
-var paragraphContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nisl tortor, efficitur sed cursus in, lobortis vitae nulla. Quisque rhoncus, felis sed dictum semper, est tellus finibus augue, ut feugiat enim risus eget tortor. Nulla finibus velit nec ante gravida sollicitudin. Morbi sollicitudin vehicula facilisis. Vestibulum ac convallis erat. Ut eget varius sem. Nam varius pharetra lorem, id ullamcorper justo auctor ac. Integer quis erat vitae lacus mollis volutpat eget et eros. Donec a efficitur dolor. Maecenas non dapibus nisi, ut pellentesque elit. Sed pellentesque rhoncus ante, a consectetur ligula viverra vel. Integer eget bibendum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elementum, sem a auctor vulputate, ante libero iaculis dolor, vitae facilisis dolor lorem at orci. Sed laoreet dui id nisi accumsan, id posuere diam accumsan.";
-var rectangle = new Rectangle(100, 600, 500, 700, false);
-var paragraph = new TextParagraph();
-var fragment = new TextFragment(paragraphContent);
-paragraph.VerticalAlignment = VerticalAlignment.Top;
-paragraph.FormattingOptions.WrapMode = TextFormattingOptions.WordWrapMode.ByWords;
-paragraph.Rectangle = rectangle;
-var isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
-while (!isFitRectangle)
+private static void FitTextIntoRectangle()
 {
-    fragment.TextState.FontSize -= 0.5f;
-    isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document()) 
+    {
+        // Generate text to add: "Lorem Ipsum" text of 1000 characters
+        var paragraphContent = RunExamples.GetLoremIpsumString(1000);
+        // Create a text fragment with the desired text
+        var fragment = new Aspose.Pdf.Text.TextFragment(paragraphContent);
+        // Declare the rectangle to fit text into
+        var rectangle = new Aspose.Pdf.Rectangle(100, 600, 500, 700, false);
+        
+        // Check whether the text fits into the rectangle
+        var isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
+
+        // Iteratively decrease font size until text fits the rectangle
+        while (!isFitRectangle)
+        {
+            fragment.TextState.FontSize -= 0.5f;
+            isFitRectangle = fragment.TextState.IsFitRectangle(paragraphContent, rectangle);
+        }
+
+        // Create a paragraph from the text fragment in the specified rectangle. Now you may be sure it fits.
+        var paragraph = new Aspose.Pdf.Text.TextParagraph();
+        paragraph.VerticalAlignment = Aspose.Pdf.VerticalAlignment.Top;
+        paragraph.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        paragraph.Rectangle = rectangle;
+        paragraph.AppendLine(fragment);
+
+        // Create a text builder to place the paragraph on the document page
+        var builder = new Aspose.Pdf.Text.TextBuilder(document.Pages.Add());
+        builder.AppendParagraph(paragraph);
+
+        // Save PDF document
+        document.Save(dataDir + "FitTextIntoRectangle_out.pdf");
+    }
 }
-paragraph.AppendLine(fragment);
-TextBuilder builder = new TextBuilder(document.Pages.Add());
-builder.AppendParagraph(paragraph);
-document.Save(output);
 ```
 
 ## What's new in Aspose.PDF 23.6
@@ -1824,23 +1975,33 @@ Update the Aspose.PdfForm
 Also support the add the ability to set the title of the HTML, Epub page:
 
 ```cs
-var document = new Document(Params.InputPath + "53357.pdf");
-
-var htmlSaveOptions = new HtmlSaveOptions
+private static void SetHtmlTitle()
 {
-    ExplicitListOfSavedPages = new[] { 1 },
-    SplitIntoPages = false,
-    FixedLayout = true,
-    CompressSvgGraphicsIfAny = false,
-    SaveTransparentTexts = true,
-    SaveShadowedTextsAsTransparentTexts = true,
-    FontSavingMode = HtmlSaveOptions.FontSavingModes.AlwaysSaveAsWOFF,
-    RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground,
-    PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml,
-    Title = "Title for page" // new Property
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-document.Save(Params.OutputPath + "53357-out.html", htmlSaveOptions);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            ExplicitListOfSavedPages = new[] { 1 },
+            SplitIntoPages = false,
+            FixedLayout = true,
+            CompressSvgGraphicsIfAny = false,
+            SaveTransparentTexts = true,
+            SaveShadowedTextsAsTransparentTexts = true,
+            FontSavingMode = Aspose.Pdf.HtmlSaveOptions.FontSavingModes.AlwaysSaveAsWOFF,
+            RasterImagesSavingMode = Aspose.Pdf.HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground,
+            PartsEmbeddingMode = Aspose.Pdf.HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml,
+            // New property
+            Title = "Title for page"
+        };
+
+        // Save HTML document
+        document.Save(dataDir + "SetHtmlTitle_out.html", options);
+    }
+}
 ```
 
 ## What's new in Aspose.PDF 23.5
@@ -1848,28 +2009,38 @@ document.Save(Params.OutputPath + "53357-out.html", htmlSaveOptions);
 Since 23.5 support to add RedactionAnnotation FontSize option. Use the next code snippet to solve this task:
 
 ```cs
-Document document = new Document(dataDir + "test_factuur.pdf");
+private static void AddRedactionAnnotationFontSize() 
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// Create RedactionAnnotation instance for specific page region
-RedactionAnnotation annot = new RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(367, 756.919982910156, 420, 823.919982910156));
-annot.FillColor = Aspose.Pdf.Color.Black;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf")) 
+    {
+        // Create RedactionAnnotation instance for specific page region
+        var annot = new Aspose.Pdf.Annotations.RedactionAnnotation(document.Pages[1],
+            new Aspose.Pdf.Rectangle(367, 756.919982910156, 420, 823.919982910156));
+        annot.FillColor = Aspose.Pdf.Color.Black;
 
-annot.BorderColor = Aspose.Pdf.Color.Yellow;
-annot.Color = Aspose.Pdf.Color.Blue;
-// Text to be printed on redact annotation
-annot.OverlayText = "(Unknown)";
-annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// Repat Overlay text over redact Annotation
-annot.Repeat = false;
-// New property there !
-annot.FontSize = 20;
-// Add annotation to annotations collection of first page
-document.Pages[1].Annotations.Add(annot);
-// Flattens annotation and redacts page contents (i.e. removes text and image
-// Under redacted annotation)
-annot.Redact();
-// Save result document
-document.Save(dataDir + "47704_RedactPage_out_NETCORE.pdf");
+        annot.BorderColor = Aspose.Pdf.Color.Yellow;
+        annot.Color = Aspose.Pdf.Color.Blue;
+        // Text to be printed on redact annotation
+        annot.OverlayText = "(Unknown)";
+        annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        // Repat Overlay text over redact Annotation
+        annot.Repeat = false;
+
+        // New property
+        annot.FontSize = 20;
+
+        // Add annotation to annotations collection of first page
+        document.Pages[1].Annotations.Add(annot);
+        // Flattens annotation and redacts page contents (i.e. removes text and image under redacted annotation)
+        annot.Redact();
+        // Save PDF document
+        document.Save(dataDir + "AddRedactionAnnotationFontSize_out.pdf");
+    }
+}
 ```
 
 ## What's new in Aspose.PDF 23.4
@@ -1888,44 +2059,72 @@ From Aspose.PDF 23.3 support to add the next plugins:
 
 ## What's new in Aspose.PDF 23.3
 
-Version 23.3 introduced support for adding a resolution to an image. Two methods can be used to solve this problem:
+Version 23.3 introduced support for keeping image proportions and resolution while inserting on the page. Two methods can be used to solve this problem:
 
 ```cs
-var table = new Table
+private static void InsertImageWithNativeResolutionAsTable()
 {
-    ColumnWidths = "600"
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-for(var j = 0; j < 2; j ++)
-{
-    var row = table.Rows.Add();
-    var cell = row.Cells.Add();
-    cell.Paragraphs.Add(new Image()
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        IsApplyResolution = true,
-        File = imageFile
-    });
-}
+        var page = document.Pages.Add();
 
-page.Paragraphs.Add(table);
+        var table = new Aspose.Pdf.Table
+        {
+            ColumnWidths = "600"
+        };
+
+        for (var j = 0; j < 2; j++)
+        {
+            var row = table.Rows.Add();
+            var cell = row.Cells.Add();
+            cell.Paragraphs.Add(new Aspose.Pdf.Image()
+            {
+                IsApplyResolution = true,
+                File = dataDir + "Image1.jpg"
+            });
+        }
+
+        page.Paragraphs.Add(table);
+
+        // Save PDF document
+        document.Save(dataDir + "ImageWithNativeResolutionAsTable_out.pdf");
+    }
+}
 ```
 
 And the second approach:
 
 ```cs
-page.Paragraphs.Add(new Image()
+private static void InsertImageWithNativeResolutionAsParagraph()
 {
-    IsApplyResolution = true,
-    File = imageFile
-});
-page.Paragraphs.Add(new Image()
-{
-    IsApplyResolution = true,
-    File = imageFile
-});
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        for (var j = 0; j < 2; j++)
+        {
+            page.Paragraphs.Add(new Aspose.Pdf.Image()
+            {
+                IsApplyResolution = true,
+                File = dataDir + "Image1.jpg"
+            });
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ImageWithNativeResolutionAsParagraph_out.pdf");
+    }
+}
 ```
 
-The image will be placed with scaled resolution or u can set FixedWidth or FixedHeight properties in combination with IsApplyResolution
+The image will be placed with scaled size and native resolution. You can set FixedWidth or FixedHeight properties in combination with IsApplyResolution.
 
 ## What's new in Aspose.PDF 23.1.1
 
@@ -1947,45 +2146,53 @@ Printer's marks are graphic symbols or text added to a page to assist production
 We will show the example of the option with color bars for measuring colors and ink densities. There is a basic abstract class PrinterMarkAnnotation and from it child ColorBarAnnotation - which already implements these stripes. Let's check the example:
 
 ```cs
-
-var outFile = myDir + "ColorBarTest.pdf");
-
-using (var document = new Document())
+private static void AddPrinterMarkAnnotation()
 {
-    Page page = document.Pages.Add();
-    page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
-    AddAnnotations(page);
-    document.Save(outFile);
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-void AddAnnotations(Page page)
-{
-    var rectBlack = new Aspose.Pdf.Rectangle(100, 300, 300, 320);
-    var rectCyan = new Aspose.Pdf.Rectangle(200, 600, 260, 690);
-    var rectMagenta = new Aspose.Pdf.Rectangle(10, 650, 140, 670);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+        page.TrimBox = new Aspose.Pdf.Rectangle(20, 20, 580, 820);
 
-    var colorBarBlack = new ColorBarAnnotation(page, rectBlack);
-    var colorBarCyan = new ColorBarAnnotation(page, rectCyan, ColorsOfCMYK.Cyan);
-    var colorBaMagenta = new ColorBarAnnotation(page, rectMagenta);
-    colorBaMagenta.ColorOfCMYK = ColorsOfCMYK.Magenta;
-    var colorBarYellow = new ColorBarAnnotation(page, new Aspose.Pdf.Rectangle(400, 250, 450, 700), ColorsOfCMYK.Yellow);
+        var rectBlack = new Aspose.Pdf.Rectangle(100, 300, 300, 320);
+        var rectCyan = new Aspose.Pdf.Rectangle(200, 600, 260, 690);
+        var rectMagenta = new Aspose.Pdf.Rectangle(10, 650, 140, 670);
 
-    page.Annotations.Add(colorBarBlack);
-    page.Annotations.Add(colorBarCyan);
-    page.Annotations.Add(colorBaMagenta);
-    page.Annotations.Add(colorBarYellow);
+        var colorBarBlack = new Aspose.Pdf.Annotations.ColorBarAnnotation(page, rectBlack);
+        var colorBarCyan = new Aspose.Pdf.Annotations.ColorBarAnnotation(page, rectCyan,
+            Aspose.Pdf.Annotations.ColorsOfCMYK.Cyan);
+        var colorBarMagenta = new Aspose.Pdf.Annotations.ColorBarAnnotation(page, rectMagenta);
+        colorBarMagenta.ColorOfCMYK = Aspose.Pdf.Annotations.ColorsOfCMYK.Magenta;
+        var colorBarYellow = new Aspose.Pdf.Annotations.ColorBarAnnotation(page,
+            new Aspose.Pdf.Rectangle(400, 250, 450, 700), Aspose.Pdf.Annotations.ColorsOfCMYK.Yellow);
+
+        page.Annotations.Add(colorBarBlack);
+        page.Annotations.Add(colorBarCyan);
+        page.Annotations.Add(colorBarMagenta);
+        page.Annotations.Add(colorBarYellow);
+
+        // Save PDF document
+        document.Save(dataDir + "PrinterMarkAnnotation_out.pdf");
+    }
 }
 ```
 Also support the vector images extraction. Try using the following code to detect and extract vector graphics:
 
 ```cs
-var document = new Document(input);
-try 
+private static void SavePdfVectorGraphicToSvg()
 {
-    document.Pages[1].TrySaveVectorGraphics(outputSvg);
-}
-catch (Exception)
-{
+    // The path to the document directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Graphs();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "test.pdf"))
+    {
+        // Attempt to save the vector graphics into a specified SVG file
+        document.Pages[1].TrySaveVectorGraphics(dataDir + "PdfVectorGraphicToSvg.svg");
+    }
 }
 ```
 
@@ -1994,10 +2201,19 @@ catch (Exception)
 From this release support to convert PDF to DICOM Image
 
 ```cs
-Document document = new Document("source.pdf");
-DicomDevice dicom = new DicomDevice();
-FileStream outStream = new FileStream("out.dicom", FileMode.Create, FileAccess.ReadWrite);
-dicom.Process(document.Pages[1], outStream);
+private static void PdfToDicom()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PagesToImages.pdf"))
+    {
+        var dicom = new Aspose.Pdf.Devices.DicomDevice();
+        FileStream outStream = new FileStream(dataDir + "PdfToDicom_out.dcm", FileMode.Create, FileAccess.ReadWrite);
+        dicom.Process(document.Pages[1], outStream);
+    }
+}
 ```    
 
 ## What's new in Aspose.PDF 22.09
@@ -2005,20 +2221,34 @@ dicom.Process(document.Pages[1], outStream);
 Since 22.09 support adding property for modify the order of the subject rubrics (E=, CN=, O=, OU=, ) into the signature.
 
 ```cs
-using (var fileSign = new PdfFileSignature())
+private static void SignPdfWithModifiedOrderOfSubjectRubrics(string pfxFilePath, string password)
 {
-    fileSign.BindPdf(inputPdf);
-    var rect = new System.Drawing.Rectangle(100, 100, 400, 100);
-    var signature = new PKCS7Detached(inputPfx, "123456789");
-    signature.CustomAppearance = new SignatureCustomAppearance()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var fileSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        UseDigitalSubjectFormat = true,
-        DigitalSubjectFormat = new SubjectNameElements[] { SubjectNameElements.CN, SubjectNameElements.O }
-        //or
-        //DigitalSubjectFormat = new SubjectNameElements[] { SubjectNameElements.OU, SubjectNameElements.S, SubjectNameElements.C }
-    };
-    fileSign.Sign(1, true, rect, signature);
-    fileSign.Save(outputPdf);
+        // Bind PDF document
+        fileSign.BindPdf(dataDir + "DigitallySign.pdf");
+
+        var rect = new System.Drawing.Rectangle(100, 100, 400, 100);
+        var signature = new Aspose.Pdf.Forms.PKCS7Detached(pfxFilePath, password);
+
+        // Set signature custom appearance
+        signature.CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance()
+        {
+            UseDigitalSubjectFormat = true,
+            DigitalSubjectFormat = new Aspose.Pdf.Forms.SubjectNameElements[] { Aspose.Pdf.Forms.SubjectNameElements.CN, Aspose.Pdf.Forms.SubjectNameElements.O }
+            //or
+            //DigitalSubjectFormat = new Aspose.Pdf.Forms.SubjectNameElements[] { Aspose.Pdf.Forms.SubjectNameElements.OU, Aspose.Pdf.Forms.SubjectNameElements.S, Aspose.Pdf.Forms.SubjectNameElements.C }
+        };
+
+        // Sign PDF file
+        fileSign.Sign(1, true, rect, signature);
+        // Save PDF document
+        fileSign.Save(dataDir + "SignPdfWithModifiedOrderOfSubjectRubrics_out.pdf");
+    }
 }
 ```
 
@@ -2030,9 +2260,28 @@ If the PDF document contains SubScript and SuperScript text such as H2O, then ex
 If the PDF contains text in italics, it must also be included in the extracted content.
 
 ```cs
-Document document = new Document(input);
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("TM");
-absorber.Visit(document.Pages[1]);
+private static void ExtractTextSuperscript()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextWithSubscriptsSuperscripts.pdf"))
+    {
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        absorber.Visit(document.Pages[1]);
+
+        // Iterate through text fragments to find superscript text
+        foreach (var textFragment in absorber.TextFragments) 
+        {
+            if (textFragment.TextState.Superscript)
+            {
+                Console.WriteLine(String.Format("Text {0} at {1} is superscript!", textFragment.Text, textFragment.Position));
+            }
+        }
+    }
+}
 ```
 
 ## What's new in Aspose.PDF 22.4
@@ -2044,10 +2293,25 @@ This release includes information for Aspose.PDF for .NET:
 **example**
 
 ```cs
-Document document = new Document("Superscript-Subscript.pdf");
-ExcelSaveOptions options = new ExcelSaveOptions();
-options.Format = ExcelSaveOptions.ExcelFormat.ODS;
-document.Save("output.ods"), options);
+private static void ConvertPdfToOds()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            // Specify the desired table file format
+            Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.ODS
+        };
+
+        // Save the file in ODS format
+        document.Save(dataDir + "PDFToODS_out.ods", saveOptions);
+    }
+}
 ```
 
 - PDF to XMLSpreadSheet2003: Recognize text in subscript and superscript;
@@ -2079,23 +2343,28 @@ This release includes the following updates:
 From the 22.2 version it is possible to sign a document using PdfFileSignature with LTV, and with being able to change the hashing from SHA1 to SHA256.
 
 ```csharp
-Example of using:
-var inputPdf = "51168.pdf";
-var inputPfx = "51168.pfx";
-var inputPfxPassword = "111111";
-var outputPdf = "51168.pdf";
-
-using (var document = new Document(inputPdf))
+private static void SignPdfWithSha256(string pfxFilePath, string password)
 {
-    using (PdfFileSignature signature = new PdfFileSignature(document))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var fileSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        var pkcs = new PKCS7(inputPfx, inputPfxPassword)
+        // Bind PDF document
+        fileSign.BindPdf(dataDir + "DigitallySign.pdf");
+
+        var rect = new System.Drawing.Rectangle(300, 100, 1, 1);
+        var signature = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password)
         {
             UseLtv = true,
-            TimestampSettings = new TimestampSettings("http://freetsa.org/tsr", string.Empty, DigestHashAlgorithm.Sha256)
+            TimestampSettings = new Aspose.Pdf.TimestampSettings("http://freetsa.org/tsr", string.Empty, Aspose.Pdf.DigestHashAlgorithm.Sha256)
         };
-        signature.Sign(1, false, new System.Drawing.Rectangle(300, 100, 1, 1), pkcs);
-        signature.Save(outputPdf);
+
+        // Sign PDF file
+        fileSign.Sign(1, false, rect, signature);
+        // Save PDF document
+        fileSign.Save(dataDir + "SignPdfWithSha256_out.pdf");
     }
 }
 ```
@@ -2109,18 +2378,22 @@ Now, Aspose.PDF for .NET supports loading documents from one of the most popular
 ### Allow non-latin characters in password
 
 ```csharp
-Aspose.Pdf.Facades.PdfFileSecurity fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity();
-fileSecurity.AllowExceptions = true;
-try
+private static void EncriptPdfNonlatinPassCharacters()
 {
-    fileSecurity.BindPdf(exportDoc);
-    bool res = fileSecurity.EncryptFile("æøå", "æøå", Aspose.Pdf.Facades.DocumentPrivilege.Print, Aspose.Pdf.Facades.KeySize.x256, Aspose.Pdf.Facades.Algorithm.AES);
-    Console.WriteLine(res);
-    fileSecurity.Save(output("encrypted.pdf"));
-}
-catch (Exception e)
-{
-    Console.WriteLn("Exception: " + e.Message);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        // Bind PDF document
+        fileSecurity.BindPdf(dataDir + "input.pdf");
+        // Encrypt file using 256-bit encryption
+        bool isSuccessful = fileSecurity.EncryptFile("æøå", "æøå", Aspose.Pdf.Facades.DocumentPrivilege.Print,
+            Aspose.Pdf.Facades.KeySize.x256, Aspose.Pdf.Facades.Algorithm.AES);
+        Console.WriteLine(isSuccessful);
+        // Save PDF document
+        fileSecurity.Save(dataDir + "PdfNonlatinPassEncrypted_out.pdf");
+    }
 }
 ```
 
@@ -2133,30 +2406,55 @@ Please use TextState.Invisible to get information about invisibility of text out
 We used the following code for testing:
 
 ```csharp
-Document pdf = new Document(dataDir + "TestPage.pdf");
-Console.WriteLine(pdf.FileName);
-var page = pdf.Pages[1];
-var textFragmentAbsorber = new TextFragmentAbsorber();
-page.Accept(textFragmentAbsorber);
-var textFragmentCollection = textFragmentAbsorber.TextFragments;
-for (int i = 1; i <= textFragmentCollection.Count; i++)
+private static void DisplayTextInvisibility()
 {
-    TextFragment fragment = textFragmentCollection[i];
-    Console.WriteLine("Fragment {0} at {1}", i, fragment.Rectangle.ToString());
-    Console.WriteLine("Text: {0}", fragment.Text);
-    Console.WriteLine("RenderingMode: {0}", fragment.TextState.RenderingMode.ToString());
-    Console.WriteLine("Invisibility: {0}", fragment.TextState.Invisible);
-    Console.WriteLine("---");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithHiddenText.pdf"))
+    {
+        Console.WriteLine(document.FileName);
+
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        absorber.Visit(document.Pages[1]);
+        var textFragmentCollection = absorber.TextFragments;
+
+        // Iterate through text fragments to find hidden text
+        for (int i = 1; i <= textFragmentCollection.Count; i++)
+        {
+            var fragment = textFragmentCollection[i];
+            Console.WriteLine("Fragment {0} at {1}", i, fragment.Rectangle.ToString());
+            Console.WriteLine("Text: {0}", fragment.Text);
+            Console.WriteLine("RenderingMode: {0}", fragment.TextState.RenderingMode.ToString());
+            Console.WriteLine("Invisibility: {0}", fragment.TextState.Invisible);
+            Console.WriteLine("---");
+        }
+    }
 }
 ```
 
 ### How do get information about the number of layers in a PDF document?
 
 ```csharp
-Please use code snippet:
-var inFile = "1234.pdf";
-Document document = new Document(inFile);
-List layers = document.Pages[1].Layers;
+private static void GetPdfLayers()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Layers();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithLayers.pdf"))
+    {
+        // Get layers from the first page
+        var layers = document.Pages[1].Layers;
+        // Save each layer to the output path
+        foreach (var layer in layers)
+        {
+            Console.WriteLine("Document {0} contains a layer named: {1} ", document.FileName, layer.Name);
+        }
+    }
+}
 ```
 
 ## What's new in Aspose.PDF 21.9
@@ -2164,19 +2462,32 @@ List layers = document.Pages[1].Layers;
 Customize background color for signature appearance and the font color of the labels in the signature area with Aspose.PDF for .NET.
 
 ```csharp
-using (PdfFileSignature pdfSign = new PdfFileSignature())
+private static void SignPdfWithCustomColorsInAppearance(string pfxFilePath, string password)
 {
-    pdfSign.BindPdf(inFile);
-    var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
-    var pkcs = new PKCS7(inPfxFile, "");
-    pkcs.CustomAppearance = new SignatureCustomAppearance()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        // Set colors
-        ForegroundColor = Color.DarkGreen,
-        BackgroundColor = Color.LightSeaGreen,
-    };
-    pdfSign.Sign(1, true, rect, pkcs);
-    pdfSign.Save(outFile);
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "DigitallySign.pdf");
+        var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+        // Create PKCS#7 object for sign
+        var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
+
+        // Set signature custom appearance
+        pkcs.CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance()
+        {
+            // Set colors
+            ForegroundColor = Aspose.Pdf.Color.DarkGreen,
+            BackgroundColor = Aspose.Pdf.Color.LightSeaGreen,
+        };
+        // Sign PDF file
+        pdfFileSignature.Sign(1, true, rect, pkcs);
+        // Save PDF document
+        pdfFileSignature.Save(dataDir + "SignPdfWithCustomColorsInAppearance_out.pdf");
+    }
 }
 ```
 
@@ -2187,21 +2498,31 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
 In the 21.8 version  ForegroundColor property, it allows changing text color in Digital Signature.
 
 ```csharp
-using (PdfFileSignature pdfSign = new PdfFileSignature())
+private static void SignPdfWithForegroundColorInAppearance(string pfxFilePath, string password)
 {
-    pdfSign.BindPdf(inFile);
-    // Create a rectangle for signature location
-    System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
-    PKCS7 pkcs = new PKCS7(inPfxFile, "");
-    pkcs.CustomAppearance = new SignatureCustomAppearance()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    // Instantiate PdfFileSignature object
+    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        // Set text color
-        ForegroundColor = Color.Green
-    };
-    // Sign the PDF file
-    pdfSign.Sign(1, true, rect, pkcs);
-    // Save PDF document
-    pdfSign.Save(outFile);
+        // Bind PDF document
+        pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
+        var rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+        // Create PKCS#7 object for sign
+        var pkcs = new Aspose.Pdf.Forms.PKCS7(pfxFilePath, password);
+
+        // Set signature custom appearance
+        pkcs.CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance()
+        {
+            // Set text color
+            ForegroundColor = Aspose.Pdf.Color.Green
+        };
+        // Sign PDF file
+        pdfSign.Sign(1, true, rect, pkcs);
+        // Save PDF document
+        pdfSign.Save(dataDir + "SignPdfWithForegroundInAppearance_out.pdf");
+    }
 }
 ```
 
@@ -2212,38 +2533,24 @@ using (PdfFileSignature pdfSign = new PdfFileSignature())
 To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and set as property in [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). The following snippet shows how to use this class with the sample files described above.
 
 ```csharp
-public static void Example_XSLFO_to_PDF()
+private static void ConvertXslfoToPdfWithArgumentList()
 {
-    var XmlContent = File.ReadAllText(dataDir + "employees.xml");
-    var XsltContent = File.ReadAllText(dataDir + "employees.xslt");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    var options = new Aspose.Pdf.XslFoLoadOptions();
+    // Create convert options
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "XSLFOToPdfInput.xslt");
 
     // Example of using XsltArgumentList
-        XsltArgumentList argsList = new XsltArgumentList();
-    argsList.AddParam("isBoldName", "", "yes");
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-    var document = new Document(TransformXml(XmlContent, XsltContent, argsList), options);
-    document.Save(dataDir + "data_xml.pdf");
-}
-
-public static MemoryStream TransformXml(string inputXml, string xsltString, XsltArgumentList argsList=null)
-{
-    var transform = new XslCompiledTransform();
-    using (var reader = XmlReader.Create(new StringReader(xsltString)))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "XSLFOToPdfInput.xml", options))
     {
-        transform.Load(reader);
+        // Save PDF document
+        document.Save(dataDir + "XslfoToPdfWithArgumentList_out.pdf");
     }
-    var memoryStream = new MemoryStream();
-
-    var results = new StreamWriter(memoryStream);
-    using (var reader = XmlReader.Create(new StringReader(inputXml)))
-    {
-        transform.Transform(reader, argsList, results);
-    }
-
-    memoryStream.Position = 0;
-    return memoryStream;
 }
 ```
 
@@ -2252,19 +2559,29 @@ public static MemoryStream TransformXml(string inputXml, string xsltString, Xslt
 With Aspose.PDF for .NET you can hide images using ImagePlacementAbsorber from the document:
 
 ```csharp
-public void PDFNET_49961()
+private static void HideImageInPdf()
 {
-   ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-   Document document = new Document("test.pdf");
-   // Hide image on first page
-   document.Pages[1].Accept(abs);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-   foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
-   {
-       imagePlacement.Hide();
-   }
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
+    {
+        // Create ImagePlacementAbsorber instance
+        var absorber = new Aspose.Pdf.ImagePlacementAbsorber();
+        // Load the images of the first page
+        document.Pages[1].Accept(absorber);
 
-   document.Save("test_out.pdf");
+        // Iterate through each image placement on the first page
+        foreach (var imagePlacement in absorber.ImagePlacements)
+        {
+            // Hide image
+            imagePlacement.Hide();
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "HideImageInPdf_out.pdf");
+    }
 }
 ```
 
@@ -2275,12 +2592,23 @@ public void PDFNET_49961()
 You can get a full font with the prefix with  BaseFont property for the Font class.
 
 ```csharp
-using (Document document = new Document(dataDir + @"testfont.pdf"))
+private static void DisplayFontFullNames()
 {
-    Font[] fonts = pdf.FontUtilities.GetAllFonts();
-    foreach (Font font in fonts)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "BreakfastMenu.pdf"))
     {
-        Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+        // Get document fonts
+        var fonts = document.FontUtilities.GetAllFonts();
+
+        // Iterate through the fonts
+        foreach (var font in fonts)
+        {
+            // Show font names
+            Console.WriteLine($"font name : {font.FontName} BaseFont name : {font.BaseFont}");
+        }
     }
 }
 ```
@@ -2294,27 +2622,32 @@ Aspose.PDF 21.4 allows you to combine Images. Follow the next code snippet:
 ```csharp
 private static void MergeAsJpeg()
 {
-   List<Stream> inputImagesStreams = new List<Stream>();
-   using (FileStream inputFile300dpi = new FileStream(@"c:\300.jpg", FileMode.Open))
-   {
-       inputImagesStreams.Add(inputFile300dpi);
-       using (FileStream inputFile600dpi = new FileStream(@"c:\49616_600.jpg", FileMode.Open))
-       {
-           inputImagesStreams.Add(inputFile600dpi);
-           using (Stream inputStream =
-                 PdfConverter.MergeImages(inputImagesStreams, ImageFormat.Jpeg, ImageMergeMode.Vertical, 1, 1))
-           {
-               using (FileStream outputStream = new FileStream(@"c:\out.jpg", FileMode.Create))
-               {
-                   byte[] buffer = new byte[32768];
-                   int read;
-                   while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
-                   {
-                       outputStream.Write(buffer, 0, read);
-                   }
-               }
-           }
-       }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    List<Stream> inputImagesStreams = new List<Stream>();
+    using (FileStream firstImageStream = new FileStream(dataDir + "aspose.jpg", FileMode.Open))
+    {
+        inputImagesStreams.Add(firstImageStream);
+        using (FileStream secondImageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            inputImagesStreams.Add(secondImageStream);
+
+            // Invoke PdfConverter.MergeImages to perform merge
+            using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImages(inputImagesStreams,
+                  Aspose.Pdf.Drawing.ImageFormat.Jpeg, Aspose.Pdf.Facades.ImageMergeMode.Vertical, 1, 1))
+            {
+                using (FileStream outputStream = new FileStream(dataDir + "Merge_out.jpg", FileMode.Create))
+                {
+                    byte[] buffer = new byte[32768];
+                    int read;
+                    while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        outputStream.Write(buffer, 0, read);
+                    }
+                }
+            }
+        }
     }
 }
 ```
@@ -2324,26 +2657,31 @@ Also you may merge you images as Tiff format:
 ```csharp
 private static void MergeAsTiff()
 {
-   List<Stream> inputImagesStreams = new List<Stream>();
-   using (FileStream inputFile300dpi = new FileStream(@"c:\300.tiff", FileMode.Open))
-   {
-       inputImagesStreams.Add(inputFile300dpi);
-       using (FileStream inputFile600dpi = new FileStream(@"c:\600.tiff", FileMode.Open))
-       {
-           inputImagesStreams.Add(inputFile600dpi);
-           using (Stream inputStream = PdfConverter.MergeImagesAsTiff(inputImagesStreams))
-           {
-               using (FileStream outputStream = new FileStream(@"c:\out.tiff", FileMode.Create))
-               {
-                   byte[] buffer = new byte[32768];
-                   int read;
-                   while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
-                   {
-                       outputStream.Write(buffer, 0, read);
-                   }
-               }
-           }
-       }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    List<Stream> inputImagesStreams = new List<Stream>();
+    using (FileStream firstImageStream = new FileStream(dataDir + "aspose.jpg", FileMode.Open))
+    {
+        inputImagesStreams.Add(firstImageStream);
+        using (FileStream secondImageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            inputImagesStreams.Add(secondImageStream);
+
+            // Invoke PdfConverter.MergeImagesAsTiff to perform merge
+            using (Stream inputStream = Aspose.Pdf.Facades.PdfConverter.MergeImagesAsTiff(inputImagesStreams))
+            {
+                using (FileStream outputStream = new FileStream(dataDir + "Merge_out.tiff", FileMode.Create))
+                {
+                    byte[] buffer = new byte[32768];
+                    int read;
+                    while ((read = inputStream.Read(buffer, 0, buffer.Length)) > 0)
+                    {
+                        outputStream.Write(buffer, 0, read);
+                    }
+                }
+            }
+        }
     }
 }
 ```
@@ -2355,19 +2693,24 @@ private static void MergeAsTiff()
 With the next code snippet, you should be able to get access to the encrypted payload of your PDF files, protected with Azure Information Protection:
 
 ```csharp
- public void Azure_Information_Protection()
- {
-     string inputFile = @"c:\pdf.pdf";
-     Document document = new Document(inputFile);
-     if (document.EmbeddedFiles[1].AFRelationship == AFRelationship.EncryptedPayload)
-     {
+private static void AzureInformationProtection()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
+    {
+        if (document.EmbeddedFiles[1].AFRelationship == Aspose.Pdf.AFRelationship.EncryptedPayload)
+        {
             if (document.EmbeddedFiles[1].EncryptedPayload != null)
             {
-              // document.EmbeddedFiles[1].EncryptedPayload.Type == "EncryptedPayload"
-              // document.EmbeddedFiles[1].EncryptedPayload.Subtype == "MicrosoftIRMServices"
-              // document.EmbeddedFiles[1].EncryptedPayload.Version == "2"
+                // document.EmbeddedFiles[1].EncryptedPayload.Type == "EncryptedPayload"
+                // document.EmbeddedFiles[1].EncryptedPayload.Subtype == "MicrosoftIRMServices"
+                // document.EmbeddedFiles[1].EncryptedPayload.Version == "2"
             }
-     }
+        }
+    }
 }
 ```
 
@@ -2380,27 +2723,34 @@ In this version of Aspose.PDF, the function became available to retrieve the bac
 Please consider the following code:
 
 ```csharp
-Document document = new Document(dataDir + "TextColor.pdf");
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber();
-
-TextSearchOptions searchOptions = new TextSearchOptions(false);
-searchOptions.SearchForTextRelatedGraphics = true;
-
-textFragmentAbsorber.TextSearchOptions = searchOptions;
-
-// Accept the absorber for all the pages
-document.Pages.Accept(textFragmentAbsorber);
-
-// Get the extracted text fragments
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Loop through the fragments
-foreach (TextFragment textFragment in textFragmentCollection)
+private static void DisplayPdfTextBackgroundColor()
 {
-    Console.WriteLine("Text: '{0}'", textFragment.Text);
-    Console.WriteLine("BackgroundColor: '{0}'", textFragment.TextState.BackgroundColor);
-    Console.WriteLine("ForegroundColor: '{0}'", textFragment.TextState.ForegroundColor);
-    Console.WriteLine("Segment BackgroundColor: '{0}'", textFragment.Segments[1].TextState.BackgroundColor);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfWithTextBackgroundColor.pdf"))
+    {
+        // Use TextFragmentAbsorber with no parameters to get all text
+        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        var searchOptions = new Aspose.Pdf.Text.TextSearchOptions(false);
+        // Setting this option into the 'true' is necessary 
+        searchOptions.SearchForTextRelatedGraphics = true;
+        textFragmentAbsorber.TextSearchOptions = searchOptions;
+
+        // Accept the absorber for all the pages
+        document.Pages.Accept(textFragmentAbsorber);
+        
+        // Loop through the fragments
+        foreach (var textFragment in textFragmentAbsorber.TextFragments)
+        {
+            Console.WriteLine("Text: '{0}'", textFragment.Text);
+            Console.WriteLine("BackgroundColor: '{0}'", textFragment.TextState.BackgroundColor);
+            Console.WriteLine("ForegroundColor: '{0}'", textFragment.TextState.ForegroundColor);
+            Console.WriteLine("Segment BackgroundColor: '{0}'", textFragment.Segments[1].TextState.BackgroundColor);
+        }
+    }
 }
 ```
 
@@ -2411,11 +2761,27 @@ Also, in Aspose.PDF 21.1, after converting PDF to HTML, became available embedde
 Here is the code snippet:
 
 ```csharp
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-saveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
-saveOptions.PartsEmbeddingMode = HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml;
-saveOptions.LettersPositioningMethod = HtmlSaveOptions.LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss;
-saveOptions.FontSavingMode = HtmlSaveOptions.FontSavingModes.AlwaysSaveAsTTF;
-saveOptions.SaveTransparentTexts = true;
-saveOptions.SaveFullFont = true;
+private static void PdfToHtmlWithFullFont()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            RasterImagesSavingMode = Aspose.Pdf.HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground,
+            PartsEmbeddingMode = Aspose.Pdf.HtmlSaveOptions.PartsEmbeddingModes.EmbedAllIntoHtml,
+            LettersPositioningMethod = Aspose.Pdf.HtmlSaveOptions.LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss,
+            FontSavingMode = Aspose.Pdf.HtmlSaveOptions.FontSavingModes.AlwaysSaveAsTTF,
+            SaveTransparentTexts = true,
+            // New option
+            SaveFullFont = true
+        };
+        // Save HTML document
+        document.Save(dataDir + "PdfToHtmlWithFullFont_out.html", options);
+    }
+}
 ```
