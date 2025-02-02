@@ -9,6 +9,10 @@ lastmod: "2024-12-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Add PDF Pages with Aspose.PDF for Go
+Abstract: Aspose.PDF for Go via C++ provides powerful functionality to add pages to PDF documents, allowing developers to create new pages dynamically and customize them according to specific requirements. The library supports inserting blank pages or copying pages from existing documents while offering options to define page size, orientation, and content. These capabilities enable seamless document expansion and customization. The documentation includes detailed instructions and code samples to help developers efficiently implement page addition features in their applications.
+SoftwareApplication: go-cpp     
 ---
 
 ## Add Page in a PDF File
