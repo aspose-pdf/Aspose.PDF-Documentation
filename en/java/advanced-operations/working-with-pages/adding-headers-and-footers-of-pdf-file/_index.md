@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Guide on adding text and image stamps to PDF documents using Aspose.PDF for Java
 Abstract: This article provides a comprehensive guide on adding text and image stamps to PDF documents using Aspose.PDF for Java. It details methods for inserting text and images into the headers and footers of PDF files, utilizing the `TextStamp` and `ImageStamp` classes. The article explains how to set various properties, such as font size, style, color, and alignment, and includes code snippets for adding these stamps. Additionally, it covers the process of adding multiple headers within a single PDF file by creating multiple `TextStamp` objects with different formatting. These techniques are useful for marking documents as "read", "qualified", "confidential", and more, enhancing document management and verification.
+SoftwareApplication: java
 ---
 
 PDF stamps are often used in contracts, reports, and restricted materials, to prove that the documents have been reviewed and marked as "read", "qualified", or "confidential", etc. This article will show you how we can add image stamps and text stamps to PDF documents by using **Aspose.PDF for Java**.

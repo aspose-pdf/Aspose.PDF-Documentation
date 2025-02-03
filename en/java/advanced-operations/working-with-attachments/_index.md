@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Managing attachments in PDF documents using Aspose.PDF for Java
 Abstract: This article provides a comprehensive guide on managing attachments in PDF documents using Aspose.PDF for Java. As the trend of adding external PDF file references grows, the article highlights the importance of incorporating attachments into PDF files. It covers key functionalities such as adding attachments to a PDF document, extracting and saving attachments, and programmatically removing attachments using Java. Additionally, the article offers insights into disabling file compression for embedded resources and discusses the concept of PDF portfolios. Each topic is linked to detailed tutorials to facilitate practical implementation.
+SoftwareApplication: java
 ---
 
 In this section, we will explain how to work with attachments in PDF using Aspose.PDF for Java.

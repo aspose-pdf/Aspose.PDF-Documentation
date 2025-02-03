@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to add a table to an existing PDF document in Java using Aspose.PDF
 Abstract: The article provides a comprehensive guide on creating and manipulating tables in PDF documents using the Aspose.PDF for Java library. It introduces the key classes such as `Table`, `Cell`, and `Row`, and demonstrates their usage through various examples. The process of adding tables to existing PDFs involves initializing a table, setting columns and rows, applying styles like borders, and populating it with data before inserting it into a document. The article also covers advanced functionalities, including handling colspan and rowspan for merging cells, setting borders and padding, and customizing table aesthetics with margins and rounded corners. Additionally, it explores the use of the `AutoFitToWindow` property for adjusting column widths and dynamically obtaining table widths. Other features discussed include inserting page breaks within tables, hiding spanned cell borders, and embedding SVG objects and HTML content into table cells. Practical code snippets accompany each section, illustrating the implementation of these features in Java.
+SoftwareApplication: java  
 ---
 
 ## Creating Table

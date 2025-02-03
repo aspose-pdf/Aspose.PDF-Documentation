@@ -7,8 +7,9 @@ url: /java/generate-thumbnail-images-from-pdf-documents/
 description: This section describes how to generate thumbnail images from PDF documents using Aspose.PDF for Java.
 lastmod: "2021-06-05"
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to generate thumbnail images from PDF documents using Aspose.PDF for Java
 Abstract: The article discusses the features and benefits of using Aspose.PDF for Java to handle PDF document processing, specifically focusing on converting PDF pages into image formats like JPEG. It highlights the advantages of Aspose.PDF, such as eliminating the need for Adobe Acrobat installation and offering a simpler alternative to Acrobat Automation. The article provides a detailed example using the Aspose.PDF library, specifically the `com.aspose.pdf.devices` namespace, to convert PDF pages into JPEG images. It includes a Java code snippet demonstrating how to iterate through PDF files in a directory, open each document, and convert specific pages to JPEG images using the `JpegDevice` class. The example showcases saving the rendered images to a specified directory, emphasizing ease of use and efficient PDF manipulation.
+SoftwareApplication: java
 ---
 
 ## Aspose.PDF for Java Approach

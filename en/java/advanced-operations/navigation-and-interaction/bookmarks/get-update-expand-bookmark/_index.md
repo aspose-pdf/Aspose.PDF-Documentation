@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Managing bookmarks within a PDF document using the Aspose.PDF library
 Abstract: This article provides a comprehensive guide on managing bookmarks within a PDF document using the Aspose.PDF library in Java. It details the process of retrieving bookmarks from a PDF file via the `OutlineCollection` and accessing their attributes using `OutlineItemCollection`. The article explains how to determine the page number associated with a bookmark by extracting the destination page number. Additionally, it covers updating bookmarks by accessing them through their index, modifying their properties, and saving the updated document. The guide also includes instructions for updating child bookmarks by navigating through parent-child relationships within the `OutlineCollection`. Furthermore, it discusses how to ensure all bookmarks are expanded when viewing a document by setting the open status for each bookmark. Code snippets are provided throughout to illustrate each process, making it a practical resource for developers working with PDF bookmarks.
+SoftwareApplication: java
 ---
 
 ## Get Bookmarks

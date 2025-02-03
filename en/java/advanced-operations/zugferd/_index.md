@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to work with ZUGFeRD invoices in Aspose.PDF for Java
 Abstract: ZUGFeRD is a widely adopted electronic invoicing standard in German-speaking and EU countries, designed to enhance efficiency and savings in B2B transactions by eliminating paper-based processes. It combines a human-readable PDF with a machine-readable XML file, facilitating seamless invoice information exchange between businesses and public authorities. The standard ensures compliance with legal requirements for archiving and taxation and aligns with the European standard EN 16931. ZUGFeRD's latest version, 2.0, offers improved processing speed, error reduction, better cash flow, and a reduced environmental footprint. Various resources are available for integrating ZUGFeRD with different programming languages, including Java, .NET, and Python, enabling the creation of PDF/3-A compliant documents with embedded ZUGFeRD invoices.
+SoftwareApplication: java 
 ---
 
 ## What is ZUGFeRD

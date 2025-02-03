@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to add Arc objects to PDF documents
 Abstract: The article provides a guide on how to add arc objects to PDF documents using Aspose.PDF for Java. It details the steps required to create and manipulate graphical elements within a PDF. The process involves creating a `Document` instance, initializing a `Drawing` object with specified dimensions, and setting a border using the `Border` class. A `Graph` object is then added to the PDF's page paragraphs. The article presents a code snippet demonstrating the creation of multiple arc objects with different colors and angles. Additionally, it covers how to create a filled arc object, showing the process of filling an arc with color and adding a line to the drawing. The final PDF file is saved with these graphical modifications. An accompanying image illustrates the result of a filled arc.
+SoftwareApplication: java
 ---
 
 ## Add Arc object

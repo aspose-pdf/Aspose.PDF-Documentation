@@ -4,14 +4,15 @@ linktitle: Licensing and limitations
 type: docs
 weight: 90
 url: /java/licensing/
-description: Aspose. PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
+description: Aspose.PDF for Java invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Overview of Evaluation and Licensing of the Aspose.PDF for Java
 Abstract: The article provides a comprehensive overview of the evaluation and licensing options available for Aspose.PDF for Java. It details the limitations of the evaluation version, which includes watermarked PDFs and a restriction on processing only four collection items. Users are encouraged to thoroughly test the product, with options to purchase a license or request a 30-day temporary license for full functionality without restrictions. The article explains how to load a classic license from a file or stream and emphasizes the importance of setting a license before document operations. Additionally, it introduces the metered license option for usage-based billing, with guidance on applying metered keys. For users employing multiple Aspose products, the article advises setting licenses separately for each product and using fully qualified class names to avoid confusion. Code examples are provided throughout to illustrate the licensing process.
+SoftwareApplication: java
 ---
 
 ## Limitation of an evaluation version

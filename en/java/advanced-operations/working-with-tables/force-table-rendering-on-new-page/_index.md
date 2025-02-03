@@ -6,8 +6,9 @@ url: /java/force-table-rendering-on-new-page/
 description: Ensure tables render on a new page in PDF documents using Aspose.PDF for Java. Enhance layout control in your reports.
 lastmod: "2021-06-05"
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to render a table on a new page in a PDF document using the Aspose.PDF for Java
 Abstract: This article discusses how to render a table on a new page in a PDF document using the Aspose.PDF library for Java. By default, elements are added to a page's Paragraphs collection, but the `IsInNewPage` method in the `BaseParagraph` class allows for rendering a table on a new page. The article provides a code example demonstrating this process, which involves creating a `Document` object, configuring page margins and orientation, and adding tables to the document. The first table renders on the current page, while the second table is set to render on a new page using the `setInNewPage(true)` method. The article also highlights the importance of using the latest Document Object Model (DOM) of the Aspose.PDF package for new features and issue resolution, while maintaining backward compatibility through the `isInNewPage` method.
+SoftwareApplication: java  
 ---
 
 ## Render Table on New Page

@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Overview of the features offered by Aspose.PDF for Java
 Abstract: The article provides a detailed overview of the features offered by Aspose.PDF for Java, a comprehensive Java library for creating and manipulating PDF documents without the need for Adobe Acrobat. Key functionalities include document compression, table creation, graph support, hyperlink integration, and extensive security controls such as digital signatures. The library also supports the addition and management of bookmarks, tables of contents, attachments, annotations, and metadata. Users can edit text and images, manage pages through splitting or concatenation, and transform PDF pages into various image formats. Additionally, Aspose.PDF for Java offers robust printing capabilities across different Java environments and facilitates conversion between PDF and other document formats. The article concludes with links to resources for pricing, licensing, technical support, and further learning about the library's features and installation requirements.
+SoftwareApplication: java
 ---
 
 _This page is an overview of  Aspose.PDF for Java features._

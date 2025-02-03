@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract: The article provides an introduction to the Document Object Model (DOM) API as it applies to handling PDF documents using Aspose.PDF for Java. It begins by explaining the DOM as a tree structure representing documents in a platform and language-neutral manner, emphasizing its role in manipulating PDF documents. The article then describes the hierarchical structure of PDF documents, composed of objects, file structure, document structure, and content streams. It elaborates on how Aspose.PDF for Java's DOM API allows for accessing and manipulating these elements, offering functionalities such as opening, updating, validating, and exporting PDF documents. Furthermore, the article outlines the components of the Aspose.PDF for Java API, including the DOM API and Aspose.PDF.Facades, which facilitate working with PDF documents at both the file and object levels. It provides a detailed overview of various namespaces within the API, such as `com.aspose.pdf`, `com.aspose.pdf.text`, and `com.aspose.pdf.devices`, each offering
+AlternativeHeadline: Document Object Model API of Aspose.PDF
+Abstract: The article provides an introduction to the Document Object Model (DOM) API as it applies to handling PDF documents using Aspose.PDF for Java. It begins by explaining the DOM as a tree structure representing documents in a platform and language-neutral manner, emphasizing its role in manipulating PDF documents. The article then describes the hierarchical structure of PDF documents, composed of objects, file structure, document structure, and content streams. It elaborates on how Aspose.PDF for Java's DOM API allows for accessing and manipulating these elements, offering functionalities such as opening, updating, validating, and exporting PDF documents. Furthermore, the article outlines the components of the Aspose.PDF for Java API, including the DOM API and Aspose.PDF.Facades, which facilitate working with PDF documents at both the file and object levels. 
+SoftwareApplication: java
 ---
 
 ## Introduction to the DOM API

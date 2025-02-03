@@ -10,14 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract: The article provides a comprehensive guide on handling annotations in PDF documents using Aspose.PDF for Java, focusing on various types of annotations including ScreenAnnotation, MovieAnnotation, SoundAnnotation, RichMediaAnnotation, and Widget Annotations. Each annotation type serves a unique purpose, such as embedding SWF files, external video links, sound clips, and interactive features like buttons or navigation aids.
-
-The document details the process of adding annotations to a PDF using Java code snippets, demonstrating how to load a PDF, create the desired annotation, and save the modified document. For instance, the ScreenAnnotation is used for media playback, while the SoundAnnotation enables sound embedding. RichMediaAnnotation supports complex media interactions with customizable players and activation events.
-
-Additionally, the article outlines methods for managing annotations, such as retrieving and deleting them, and touches on the use of 3D annotations to incorporate 3D models in PDFs. Examples provided illustrate setting up 3D annotations with views and default settings.
-
-The article emphasizes the flexibility
+AlternativeHeadline: Guide on handling Multimedia annotations in PDF documents using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on handling annotations in PDF documents using Aspose.PDF for Java, focusing on various types of annotations including ScreenAnnotation, MovieAnnotation, SoundAnnotation, RichMediaAnnotation, and Widget Annotations. Each annotation type serves a unique purpose, such as embedding SWF files, external video links, sound clips, and interactive features like buttons or navigation aids. The document details the process of adding annotations to a PDF using Java code snippets, demonstrating how to load a PDF, create the desired annotation, and save the modified document. For instance, the ScreenAnnotation is used for media playback, while the SoundAnnotation enables sound embedding. RichMediaAnnotation supports complex media interactions with customizable players and activation events. Additionally, the article outlines methods for managing annotations, such as retrieving and deleting them, and touches on the use of 3D annotations to incorporate 3D models in PDFs. Examples provided illustrate setting up 3D annotations with views and default settings.
+SoftwareApplication: java
 ---
 
 Annotations in a PDF document are contained in a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) object's Annotations collection. This collection contains all annotations for that individual page only: every page has its own Annotations collection. To add an annotation to a particular page, add it to that page's Annotations collection using the Add method.

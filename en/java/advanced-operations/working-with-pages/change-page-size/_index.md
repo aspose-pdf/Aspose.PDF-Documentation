@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to change and retrieve PDF page sizes using Aspose.PDF for Java
 Abstract: The article provides a guide on how to change and retrieve PDF page sizes using Aspose.PDF for Java. It explains the process of updating the dimensions of an existing PDF file by utilizing the `SetPageSize(...)` method from the `Page` class. The procedure involves loading the PDF, accessing its pages via the `PageCollection` object, selecting a specific page, adjusting its size, and saving the modified document. The article highlights that measurements use points, with specific conversion rates for inches and centimeters. A code example illustrates changing a PDF page to A4 size. Additionally, the article covers how to read the dimensions of a PDF page, providing a code snippet that demonstrates retrieving and printing page height and width, including adjustments for page rotation.
+SoftwareApplication: java
 ---
 
 ## Change PDF Page Size

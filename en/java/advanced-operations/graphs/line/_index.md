@@ -10,16 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract: The article provides a comprehensive guide on adding Line objects to PDF documents using Aspose.PDF for Java. It highlights the capability to incorporate various graph objects, such as lines and rectangles, with customizable attributes like dash patterns and colors. The article details three main functionalities:
-
-1. **Basic Line Addition**: It outlines the steps to create a PDF document, add a page, and draw a simple line using the `Line` object. A code snippet demonstrates setting line width and saving the document.
-
-2. **Dotted Dashed Line**: The process to create a dotted dashed line involves specifying color and dash patterns for the line. The provided code illustrates the implementation and results in saving the PDF with the dashed line.
-
-3. **Drawing Lines Across the Page**: Instructions are given to draw intersecting lines across the page, forming a cross. This includes setting page margins and utilizing the `Line` object to draw lines from corner to corner.
-
-Each section is accompanied by Java code examples and illustrative
+AlternativeHeadline: Add Line objects to PDF documents using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on adding Line objects to PDF documents using Aspose.PDF for Java. It highlights the capability to incorporate various graph objects, such as lines and rectangles, with customizable attributes like dash patterns and colors. The article details three main functionalities. It outlines the steps to create a PDF document, add a page, and draw a simple line using the `Line` object. A code snippet demonstrates setting line width and saving the document. The process to create a dotted dashed line involves specifying color and dash patterns for the line. The provided code illustrates the implementation and results in saving the PDF with the dashed line. Instructions are given to draw intersecting lines across the page, forming a cross. This includes setting page margins and utilizing the `Line` object to draw lines from corner to corner. Each section is accompanied by Java code examples and illustrative
+SoftwareApplication: java
 ---
 
 ## Add Line object

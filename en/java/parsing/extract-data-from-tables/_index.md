@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to extract tabular from PDF using Aspose.PDF for Java
 Abstract: The article discusses programmatically extracting tables from PDF documents using Aspose.PDF for Java. It outlines the steps necessary for extracting table data, starting with opening a PDF document and utilizing the `TableAbsorber` object to analyze specific pages. The extracted data is stored in a list of `AbsorbedTable` objects, which can be further processed by iterating through rows and cells to access `TextFragmentCollections`. The article provides code examples, including one for extracting tables from all pages, another for extracting tables from specific areas using annotations, and a final example that demonstrates exporting table data to a CSV file. The article also references additional resources for converting PDF files to Excel spreadsheets.
+SoftwareApplication: java
 ---
 
 ## Extract Tables from PDF programmatically

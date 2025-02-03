@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract: This article provides a guide on transforming XML files into PDF documents using XSLT and Aspose.Pdf. The process involves three key steps: creating an instance of the PDF class, applying a license (if available), and binding XML and XSLT files to the PDF instance using the `BindXML` method. Subsequently, the XML data is saved as a PDF document. The article includes examples of a simple XML file containing "Hello World!" content and a corresponding XSLT file that defines the transformation rules to format this content within a PDF document. Additionally, a Java code snippet is provided to demonstrate how to implement the transformation and PDF generation process programmatically using the Aspose.Pdf library.
+AlternativeHeadline: How to Create a Hello World PDF through XML and XSLT with Aspose.PDF 
+Abstract: This article provides a guide on transforming XML files into PDF documents using XSLT and Aspose.Pdf. The process involves three key steps - creating an instance of the PDF class, applying a license (if available), and binding XML and XSLT files to the PDF instance using the `BindXML` method. Subsequently, the XML data is saved as a PDF document. The article includes examples of a simple XML file containing "Hello World!" content and a corresponding XSLT file that defines the transformation rules to format this content within a PDF document. Additionally, a Java code snippet is provided to demonstrate how to implement the transformation and PDF generation process programmatically using the Aspose.Pdf library.
+SoftwareApplication: java 
 ---
 
 Sometimes you may have existing XML files that contain application data and you want to generate PDF report using these files. You can use XSLT to transform your existing XML document to Aspose.Pdf's compatible XML document and then generate PDF file. There are 3 steps to generate PDF using XML and XSLT.

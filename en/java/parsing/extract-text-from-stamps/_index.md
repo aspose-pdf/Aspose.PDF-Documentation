@@ -5,8 +5,9 @@ weight: 60
 url: /java/extract-text-from-stamps/
 description: Learn how to extract text from stamps in PDF files using Aspose.PDF for Java. Follow this guide for precise text retrieval.
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to Extract Text From Stamps with Aspose.PDF for Java 
 Abstract: The article provides a guide on using Aspose.PDF for Java to extract text from stamp annotations in a PDF document. The process involves creating a `Document` class object to access the PDF, retrieving the desired annotation from a specific page, and using a `TextAbsorber` class to capture the text. The article includes a Java code snippet demonstrating these steps, where a `StampAnnotation` is identified and its normal appearance is visited to extract and print the text content. This method enables efficient text extraction from specific annotations within a PDF using Aspose.PDF for Java.
+SoftwareApplication: java
 ---
 
 ## Extract Text from Stamp Annotations

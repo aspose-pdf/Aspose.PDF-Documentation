@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Manipulate Tables in PDF using Aspose.PDF for Java
 Abstract: This article highlights the capabilities of Aspose.PDF for Java in handling tables within PDF documents. Aspose.PDF for Java is a robust tool that enhances the manipulation of tables in PDFs, whether for documents being created from scratch or existing ones. It facilitates the creation, addition, extraction, integration, and removal of tables in PDF files. Users can create or add tables to existing PDFs, taking into account aspects like column or row merging, borders, margins, and padding. Additionally, the tool enables the extraction of tables or their borders as images, manipulation of tables using the TableAbsorber feature, and the removal of single or multiple tables from PDF documents. These functionalities make Aspose.PDF for Java an essential resource for systematic information display in PDFs.
+SoftwareApplication: java  
 ---
 
 Tables are important when working with PDF documents. They provide great features for displaying information in a systematic manner.

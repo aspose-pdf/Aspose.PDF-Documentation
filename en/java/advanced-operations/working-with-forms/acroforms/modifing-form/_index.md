@@ -9,6 +9,10 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on Modifying AcroForms in PDF documents using Aspose.PDF for Java
+Abstract: The Modifying Form section of the Aspose.PDF for Java documentation provides comprehensive guidelines on how to programmatically edit and update form fields in PDF documents. It covers various operations, including renaming fields, changing field properties, setting default values, and modifying form appearance. The documentation also explains how to add, remove, or reposition form fields dynamically. With clear instructions and practical Java code examples, developers can efficiently customize PDF forms to meet specific requirements, enabling seamless automation of form management tasks.
+SoftwareApplication: java        
 ---
 
 ## Set Custom Form Field Font

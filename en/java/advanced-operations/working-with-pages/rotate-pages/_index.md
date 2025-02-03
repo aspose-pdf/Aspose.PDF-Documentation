@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Guide on changing the page orientation of an existing PDF file using Aspose.PDF for Java
 Abstract: This article provides a guide on changing the page orientation of an existing PDF file using Aspose.PDF for Java. It explains that the page orientation can be switched between landscape and portrait by modifying the page's `MediaBox`. Additionally, the article discusses an alternative method to change orientation by setting the rotation angle with the `Rotate()` method. An example code snippet is provided, demonstrating how to open a PDF document, iterate through its pages, and apply a 90-degree rotation using the `setRotate()` method. The modified PDF is then saved as a new file. This demonstrates the flexibility and functionality of Aspose.PDF for Java in managing PDF page layouts.
+SoftwareApplication: java
 ---
 
 ## Change Page Orientation

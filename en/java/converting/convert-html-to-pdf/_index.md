@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to convert HTML content into PDF format using Aspose.PDF in Java
 Abstract: This article provides a comprehensive guide on converting HTML and MHTML documents to PDF format using Java, with a focus on utilizing the Aspose.PDF for Java API. It outlines step-by-step instructions and code samples for basic conversion tasks, such as loading HTML documents into a Document object and saving them as PDF files. It also delves into advanced conversion features, including media queries support, font embedding options, and managing external resource loading. Additionally, the article offers online conversion tools for both HTML and MHTML formats to PDF, allowing users to explore the functionality and quality of the conversion process.
+SoftwareApplication: java
 ---
 
 ## Overview

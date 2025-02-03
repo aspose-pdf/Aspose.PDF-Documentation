@@ -7,8 +7,9 @@ url: /java/merge-pdf-documents/
 description: This page explain how to merge PDF documents into a single PDF file with Java.
 lastmod: "2021-06-05"
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Guide on merging multiple PDF files into a single document using Aspose.PDF for Java
 Abstract: The article provides a guide on merging multiple PDF files into a single document using Aspose.PDF for Java. It highlights the demand for PDF merging and offers a step-by-step method to accomplish this task programmatically. The process involves creating `Document` objects for each PDF, utilizing the `PageCollection`'s `Add` method to combine them, and saving the final merged document. The article includes a Java code snippet demonstrating the merging process, where pages from one document are appended to another. Additionally, it mentions that Aspose.PDF can be used in other programming languages and provides an online tool for merging PDFs.
+SoftwareApplication: java
 ---
 
 Now, merging pdf files is one of the most demanded tasks. 

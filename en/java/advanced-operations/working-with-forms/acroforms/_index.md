@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
-Abstract: The article "Fundamentals of AcroForms" explores AcroForms, the original technology for creating PDF forms, introduced by Adobe in 1998. AcroForms are page-oriented and accept inputs in Forms Data Format (FDF) and XML Forms Data Format (xFDF), supported by third-party vendors. AcroForms are highlighted for their portability across platforms and the ability to add pages to a PDF form document through the use of Templates, enabling the integration of multiple database records. The article contrasts AcroForms with Adobe XML Forms Architecture (XFA) forms, highlighting that both are PDF forms but differ in capabilities. AcroForms, included in the PDF 1.2 specification, are known for supporting Templates, whereas XFA forms, introduced in the PDF 1.5 specification, offer document reflow capabilities. The article suggests that PDFs are optimal for electronic form distribution due to their ability to be filled and returned without printing. It also provides links to further resources on
+AlternativeHeadline: How to work with AcroForms in PDF documents using Aspose.PDF for Java
+Abstract: The article "Fundamentals of AcroForms" explores AcroForms, the original technology for creating PDF forms, introduced by Adobe in 1998. AcroForms are page-oriented and accept inputs in Forms Data Format (FDF) and XML Forms Data Format (xFDF), supported by third-party vendors. AcroForms are highlighted for their portability across platforms and the ability to add pages to a PDF form document through the use of Templates, enabling the integration of multiple database records. The article contrasts AcroForms with Adobe XML Forms Architecture (XFA) forms, highlighting that both are PDF forms but differ in capabilities. AcroForms, included in the PDF 1.2 specification, are known for supporting Templates, whereas XFA forms, introduced in the PDF 1.5 specification, offer document reflow capabilities. The article suggests that PDFs are optimal for electronic form distribution due to their ability to be filled and returned without printing. 
+SoftwareApplication: java
 ---
 
 ## Fundamentals of AcroForms

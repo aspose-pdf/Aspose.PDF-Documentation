@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Updating links in a PDF file using Aspose.PDF for Java
 Abstract: The article outlines methods for updating links in a PDF file using Java, specifically leveraging the Aspose.PDF library. It begins by introducing the `LinkAnnotation` class for managing links, and proceeds to detail several use cases for updating link destinations. The first example demonstrates how to modify a link to point to a different page within the same PDF using the `GoToAction` and `XYZExplicitDestination` classes. Another example illustrates setting a link's destination to a web address by using the `GoToURIAction` class. Additionally, there is guidance on updating a link to target another PDF file with the `GoToRemoteAction` class. The article also addresses modifying the color of link annotation text by adjusting the text color on the underlying page content. Code snippets are provided for each scenario, showing how to load the PDF, modify link attributes, and save the updated document.
+SoftwareApplication: java
 ---
 
 ## Update Links in PDF File

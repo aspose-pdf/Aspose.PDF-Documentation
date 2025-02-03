@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to add page numbers to a PDF document using Aspose.PDF for Java
 Abstract: This article provides a guide on how to add page numbers to a PDF document using Aspose.PDF for Java. The PageNumberStamp class is utilized to create a page number stamp, allowing customization of format, margins, alignments, starting number, and font attributes. The process involves creating a Document object and a PageNumberStamp object with the desired properties, followed by using the addStamp(..) method of the Page class to apply the stamp. The article includes a Java code snippet that demonstrates how to implement this functionality, including setting text properties such as font type, size, style, and color. The article also offers an online tool for checking the quality of Aspose.PDF conversion at the provided link.
+SoftwareApplication: java
 ---
 
 All the documents must have page numbers in it. The page number makes it easier for the reader to locate different parts of the document.

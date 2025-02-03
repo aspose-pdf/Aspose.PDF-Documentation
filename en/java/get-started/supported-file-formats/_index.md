@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: File Formats supported by Aspose.PDF for Java
 Abstract: This article provides a comprehensive table detailing the file formats supported by Aspose.PDF for Java for loading and saving. The formats are categorized based on their compatibility with the library's load and save functions. Supported load and save formats include PDF, EPUB, HTML, TeX, SVG, XML, and XPS, ensuring versatility in document handling. Formats such as CGM, MHT, PCL, PS, XSLFO, and MD are supported for loading only, while XLS, XLSX, PPTX, DOC, DOCX, MobiXML, JPEG, EMF, PNG, BMP, GIF, TIFF, and Text are supported for saving only. This delineation highlights the library's broad capabilities in processing a variety of document and image formats.
+SoftwareApplication: java
 ---
 
 The following table indicates the file formats that Aspose.PDF for Java can load and Save.

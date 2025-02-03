@@ -10,8 +10,9 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Guide on managing watermark annotations in PDF documents
 Abstract: The article provides a comprehensive guide on managing watermark annotations in PDF documents using the Aspose.PDF Java library. It explains how to add a watermark annotation to a PDF, ensuring it is printed at a fixed size and position regardless of page dimensions. The provided Java code snippet demonstrates how to add a watermark annotation with customizable text and opacity. Additionally, the article explains how to retrieve existing watermark annotations from a PDF using an `AnnotationSelector` and print their positions. Lastly, it includes a code example for deleting watermark annotations, illustrating how to filter and remove them from a PDF document. The examples collectively offer a complete workflow for handling watermark annotations, from creation to deletion.
+SoftwareApplication: java
 ---
 
 ## Add Watermark Annotation

@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: Guide on managing PDF file security using Java with the Aspose.PDF library
 Abstract: This article provides a comprehensive guide on managing PDF file security using Java with the Aspose.PDF library. It begins by detailing how to set privileges on existing PDF files through the `DocumentPrivilege` class, demonstrating how to restrict access while allowing screen reading and applying encryption using the `Encrypt` method. Different encryption types and algorithms can be employed, with the ability to specify user and owner passwords, as illustrated in the provided code snippets. The article further explains the process of decrypting PDF files using the owner password and outlines a method to change the password of a PDF document, emphasizing the necessity of using the current owner password as a prerequisite. Additionally, it discusses how to determine if a PDF is password-protected using the `PdfFileInfo` class, which offers methods to ascertain the password type and whether the document has open or edit passwords. Lastly, the article presents a method to determine the correct password from an array of potential passwords, showcasing how to iterate through these options to successfully open the document
+SoftwareApplication: java
 ---
 
 ## Set Privileges on an Existing PDF File

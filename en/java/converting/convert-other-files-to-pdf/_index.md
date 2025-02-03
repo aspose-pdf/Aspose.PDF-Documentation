@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true 
-AlternativeHeadline: 
-Abstract: The article provides a comprehensive guide on using **Aspose.PDF for Java** to convert various file formats into PDF. It covers the conversion of EPUB, Markdown, PCL, Text, XPS, PostScript, XML, and LaTeX files. For each format, the article explains the specific classes and methods needed to perform the conversion, such as `EpubLoadOptions`, `MdLoadOptions`, `PclLoadOptions`, `XpsLoadOptions`, `PsLoadOptions`, and `LatexLoadOptions`. Code snippets are provided to illustrate the conversion process, demonstrating how to initialize a `Document` object with the appropriate load options and save the output as a PDF. Additionally, the article highlights online applications offered by Aspose for each conversion type, allowing users to try the functionality and assess the quality of the conversions. Special sections are dedicated to known issues and limitations, particularly with PCL conversions, noting support for specific commands and potential discrepancies in output. The article emphasizes Asp
+AlternativeHeadline: How to convert various file format into PDF using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on using Aspose.PDF for Java to convert various file formats into PDF. It covers the conversion of EPUB, Markdown, PCL, Text, XPS, PostScript, XML, and LaTeX files. For each format, the article explains the specific classes and methods needed to perform the conversion, such as `EpubLoadOptions`, `MdLoadOptions`, `PclLoadOptions`, `XpsLoadOptions`, `PsLoadOptions`, and `LatexLoadOptions`. Code snippets are provided to illustrate the conversion process, demonstrating how to initialize a `Document` object with the appropriate load options and save the output as a PDF. Additionally, the article highlights online applications offered by Aspose for each conversion type, allowing users to try the functionality and assess the quality of the conversions. Special sections are dedicated to known issues and limitations, particularly with PCL conversions, noting support for specific commands and potential discrepancies in output.
+SoftwareApplication: java
 ---
 
 ## Convert EPUB to PDF

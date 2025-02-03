@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to search and extract text from a PDF document using Aspose.PDF for Java
 Abstract: The article provides a comprehensive guide on using the `TextFragmentAbsorber` class to search and extract text from PDF documents using the Aspose.PDF library in Java. It outlines methods to find text matching a specific phrase across all pages of a PDF, retrieve text segments, and employ regular expressions for text searches. The process involves utilizing the `accept()` method on the PDF document's `Pages` collection, which takes a `TextFragmentAbsorber` object and returns a collection of `TextFragment` objects. The article includes Java code snippets demonstrating how to loop through these fragments to access their properties such as text content, position, font characteristics, and color. Additionally, it explains how to target specific pages for text extraction and highlights the use of regular expressions to refine search criteria, including case-insensitive searches.
+SoftwareApplication: java 
 ---
 
 ## Search and Get Text from All the Pages of PDF Document

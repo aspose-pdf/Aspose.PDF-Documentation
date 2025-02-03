@@ -10,8 +10,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: 
+AlternativeHeadline: How to Rectangle object to PDF using Aspose.PDF for Java
 Abstract: The article provides an overview of the capabilities of Aspose.PDF for Java in adding and manipulating rectangle objects within PDF documents. It outlines the process for creating rectangles, setting their borders, and incorporating them into PDF files. The article details specific features such as filling rectangles with solid colors, gradient colors, and utilizing alpha color channels for transparency effects. Additionally, it explains how to control the Z-Order of rectangle objects to manage their layering when multiple objects are present in a document. Code snippets are provided throughout to demonstrate these functionalities, including creating filled rectangles, applying gradient fills, and adjusting object transparency. The article is well-suited for developers looking to enhance PDF documents with graphical elements using Aspose.PDF for Java.
+SoftwareApplication: java
 ---
 
 ## Add Rectangle object
