@@ -2124,7 +2124,8 @@ private static void InsertImageWithNativeResolutionAsParagraph()
 }
 ```
 
-The image will be placed with scaled size and native resolution. You can set FixedWidth or FixedHeight properties in combination with IsApplyResolution.
+The image will be placed in a scaled size and native resolution. You can set FixedWidth or FixedHeight properties in combination with IsApplyResolution.
+
 
 ## What's new in Aspose.PDF 23.1.1
 
