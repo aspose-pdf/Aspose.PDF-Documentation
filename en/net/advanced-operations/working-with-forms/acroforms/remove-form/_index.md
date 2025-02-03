@@ -89,7 +89,7 @@ private static void ClearTextInForm(string input, string output)
     var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
-    using (document = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBox.pdf"))
     {
         // Get the forms from the first page
         var forms = document.Pages[1].Resources.Forms;
