@@ -269,6 +269,7 @@ The AvoidEstimatingSignatureLength option only works if the SignHash delegate is
 If the resulting signature length exceeds the expected length specified by the DefaultSignatureLength property, you will receive a __SignatureLengthMismatchException__ indicating the actual length.
 You can adjust the value of the DefaultSignatureLength parameter at your discretion.
 
+For __ExternalSignature__, the AvoidEstimatingSignatureLength option can be used even if CustomSignHash is not used.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
