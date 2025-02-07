@@ -65,66 +65,64 @@ url: /net/choose-the-platform-and-interoperability-technology/
         "@type": "WebPage",
         "@id": "/net/choose-the-platform-and-interoperability-technology/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-02-01",
     "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/) is a class library which provides the functionality to generate PDF documents from scratch as well as it provides the capability to edit/manipulate existing PDF documents. Aspose.PDF is available in two distinct products [Aspose.PDF for .NET](/pdf/net/) and [Aspose.PDF for Java](/pdf/java/). We can say that Aspose.PDF “natively” supports:
+**There are three versions of the Aspose.PDF class library:**
+
+[Aspose.PDF](/pdf/) is a product family that provides functionality to generate PDF documents from scratch, as well as the capability to edit/manipulate existing ones. Aspose.PDF is available in three distinct products: [Aspose.PDF for .NET](/pdf/net/), [Aspose.PDF for Java](/pdf/java/), and [Aspose.PDF for C++](/pdf/cpp/). We can say that Aspose.PDF “natively” supports:
 
 - The .NET Framework and all programming languages targeting the .NET platform, such as C# or VB.NET.
 - The Java platform and the Java programming language.
+- The 32-bit and 64-bit operating systems and the C++ programming language.
 
 {{% /alert %}}
 
-Please note that it is also possible to use [Aspose.PDF for .NET](/pdf/net/) from many programming languages, including: ASP, C++, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
+Please note that it is also possible to use [Aspose.PDF for .NET](/pdf/net/) from many programming languages, including: ASP, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
 
 ## Support for other languages
 
 {{% alert color="primary" %}}
 
-This section contains articles and examples that show how to use Aspose.PDF in different programming languages and covers the following topics:
+This section contains suggestions and documentation links regarding how to use Aspose.PDF in different programming languages and covers the following topics:
 
-- How to determine “either to use [Aspose.PDF for .NET](/pdf/net/) or [Aspose.PDF for Java](/pdf/java/)“ ?
-- How to create objects, call methods, access properties of the Aspose.PDF objects.
+- Available ready-made wrappers for [Aspose.PDF for .NET](/pdf/net/).
+- How to create objects, call methods, and access properties of Aspose.PDF for .NET objects.
 
 If you follow the principles outlined in this section, you will be able to employ many of the features of Aspose.PDF in your projects.
 
 {{% /alert %}}
 
-**There are two versions of the Aspose.PDF class library:**
+**Products based on Aspose.PDF for .NET class library:**
 
-- [Aspose.PDF for .NET](/pdf/net/) to use with any programming language targeting the .NET platform.
-- [Aspose.PDF for Java](/pdf/java/) to use with the Java programming language.
+In addition to the three products mentioned above, Aspose proposes a set of solutions for different platforms and languages:
 
-Using Aspose.PDF from any other programming language requires the use of some *interoperability technology* . The interoperability technology must allow your programming language to call into a class library written for .NET or Java.
+- [Aspose.PDF for Python via .NET](/pdf/python-net/) used to develop 32-bit and 64-bit Python applications for different operating systems.
+- [Aspose.PDF for Reporting Services](/pdf/reportingservices/) makes possible generating PDF reports in Microsoft SQL Server Reporting Services and Power BI Report Server.
+- [Aspose.PDF for SharePoint](/pdf/sharepoint/) allows to export lists, list items and SharePoint Wiki pages to the PDF file format.
 
-{{% alert color="primary" %}}
+The full list of Aspose.PDF products may be found on [the page](/pdf/). It includes products based on [Aspose.PDF for Java](/pdf/java/) and PDF [Aspose.PDF for C++](/pdf/cpp/).
 
-Following is the list of the suggested interoperability technologies to use for a variety of programming languages:
+**Accessing Aspose.PDF objects from other languages**
 
-{{% /alert %}}
+Using Aspose.PDF from other programming languages requires an *interoperability technology* . This technology must enable your language to call a class library written for .NET, Java or C++. We suggest [COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/) technology with [Aspose.PDF for .NET](/pdf/net/) class library to use for a variety of programming languages:
+- ASP.
+- Delphi.
+- Perl.
+- PHP.
+- PowerBuilder.
+- VBScript.
+- Visual Basic.
 
-|**Programming Language** |**Aspose.PDF to Use** |**Interoperability Technology** |
-| :- | :- | :- |
-|ASP |.NET |COM Interop |
-|Delphi |.NET |COM Interop |
-|Jscript |.NET |COM Interop |
-|Perl |.NET |COM Interop |
-| |Java |Inline::Java |
-|PHP |.NET |COM Interop |
-| |Java |Java Bridge |
-|PowerBuilder |.NET |COM Interop |
-|Python |.NET |COM Interop |
-| |Java |JPype |
-|VBScript |.NET |COM Interop |
-|Visual Basic |.NET |COM Interop |
+Information about the interoperability technologies recommended to use with [Aspose.PDF for Java](/pdf/java/) and PDF [Aspose.PDF for C++](/pdf/cpp/) such as `Inline::Java` and `JPype` can be found on the corresponding [pages](/pdf/java/plugins/) of the products.
 
 ## Conclusion
 
 {{% alert color="primary" %}}
-From the above table you can see that for some programming languages it is possible to use either [Aspose.PDF for .NET](/pdf/net/) or [Aspose.PDF for Java](/pdf/java/).
+The above article shows that the use of [Aspose.PDF for .NET](/pdf/net/) goes beyond .NET programming languages.
 
 {{% /alert %}}
