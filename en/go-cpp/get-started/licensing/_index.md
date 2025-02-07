@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /go-cpp/licensing/
 description: Aspose. PDF for Go invites its customers to get a Classic License. As well as use a limited license to better explore the product.
-lastmod: "2024-12-05"
+lastmod: "2025-01-07"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ SoftwareApplication: go-cpp
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **Documents created with an evaluation watermark.** The evaluation version of Aspose.PDF for Go provides full product functionality, but all pages in the generated files are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2024 Aspose Pty Ltd." at the top.
+- **Documents created with an evaluation watermark.** The evaluation version of Aspose.PDF for Go provides full product functionality, but all pages in the generated files are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." at the top.
 
 - **Limit the number of pages that can be processed.**
 In the evaluation version, you can only process the first four pages of a document.
