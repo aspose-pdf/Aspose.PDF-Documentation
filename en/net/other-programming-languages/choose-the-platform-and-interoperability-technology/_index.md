@@ -82,7 +82,7 @@ url: /net/choose-the-platform-and-interoperability-technology/
 
 {{% /alert %}}
 
-Please note that it is also possible to use [Aspose.PDF for .NET](/pdf/net/) from many programming languages, including: ASP, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
+Please note that it is also possible to use [Aspose.PDF for .NET](/pdf/net/) from many programming languages, including: ASP, C++, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
 
 ## Support for other languages
 
