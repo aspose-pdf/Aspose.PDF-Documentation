@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /net/digitally-sign-pdf-file/
 description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET.
-lastmod: "2024-11-22"
+lastmod: "2025-02-07"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,7 +15,7 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Add digital signature or digitally sign PDF in C#",
-    "alternativeHeadline": "Add Digital Signatures to PDFs in C#",
+    "alternativeHeadline": "Working with digitally sign PDF",
     "abstract": "Aspose.PDF for .NET introduces powerful capabilities for digitally signing PDF documents using C# or VB.NET, enhancing document integrity and security. Users can implement various signature types, including non-detached and detached signatures with support for PKCS7 and ECDSA, allowing for customizable signing processes tailored to specific cryptographic standards. This feature not only verifies the authenticity of the documents but also enables timestamping and certification, ensuring trusted document handling",
     "author": {
         "@type": "Person",
@@ -72,7 +72,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/digitally-sign-pdf-file/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-02-07",
     "description": "Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET."
 }
 </script>
@@ -94,16 +94,16 @@ We can use follwing classed and method for PDF signing
 - Property [IsCertified](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/iscertified) in [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) class.
 
 
-To create a digital signature based on PKCS12 certificates (file extensions .p12, pfx), you should create an instance of the PdfFileSignature class, passing the document object to it.
+To create a digital signature based on PKCS12 certificates (file extensions .p12, pfx), you should create an instance of the `PdfFileSignature` class, passing the document object to it.
 Next, you should specify the desired digital signature method by creating an object of one of the classes:
 
 - PKCS1.
 - PKCS7.
 - PKCS7Detached.
 
-_You can set the digest algorithm only for PKCS7Detached. For PKCS1 and PKCS7, the digest algorithm is always set to SHA-1._
+_You can set the digest algorithm only for `PKCS7Detached`. For `PKCS1` and `PKCS7`, the digest algorithm is always set to SHA-1._
 
-Next, you need to use the received signature algorithm object in the PdfFileSignature.Sign() method.
+Next, you need to use the received signature algorithm object in the `PdfFileSignature.Sign()` method.
 The digital signature will be set for the document after it is saved.
 
 ## Sign PDF with digital signatures
@@ -112,9 +112,9 @@ The example below creates a PKCS7 non-detached signature with the SHA-1 digest a
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignDocument()
-{    
+{
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
@@ -133,15 +133,15 @@ private static void SignDocument()
 }
 ```
 
-The example below creates a detached signature in PKCS7 format with the SHA-1 digest algorithm. The key algorithm depends on the certificate key. DSA, RSA, ECDSA are supported.
+The example below creates a detached signature in PKCS7Detached format with the SHA-256 digest algorithm. The key algorithm depends on the certificate key. DSA, RSA, ECDSA are supported.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignDocument(string pfxFilePath, string password)
 {
     // The path to the documents directory
-    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
-    
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DigitallySign.pdf"))
     {
@@ -160,9 +160,9 @@ private static void SignDocument(string pfxFilePath, string password)
 ```
 
 You can verify signatures by using PdfFileSignature.VerifySignature() method.
-Previously, the "GetSignNames()" method was used to get signature names. Starting with version 25.02, the "GetSignatureNames()" method should be used, which returns a list of "SignatureName".
-The "SignatureName" prevents collisions when verifying signatures with the same names.
-Methods that accept the SignatureName type instead of a string signature name should also be used.
+Previously, the `GetSignNames()` method was used to get signature names. Starting with version 25.02, the `GetSignatureNames()` method should be used, which returns a list of `SignatureName`.
+The `SignatureName` prevents collisions when verifying signatures with the same names.
+Methods that accept the `SignatureName` type instead of a string signature name should also be used.
 
 _Notes, the __PdfFileSignature.VerifySigned()__ method is deprecated._
 
@@ -172,7 +172,7 @@ private static void Verify()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
     {
@@ -210,7 +210,7 @@ private static void SignWithTimeStampServer(string pfxFilePath, string password)
 {    
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
     {
@@ -247,10 +247,10 @@ Steps to sign PDF:
 ```cs
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SignWithBase64Certificate(string pfxFilePath, string password)
-{   
+{
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
+
     var base64Str = "Certificate in base64 format";
     using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
@@ -298,16 +298,16 @@ Let’s take a closer look at the DPF signing process:
 
 2. Signature Process:
 
-- A 'PdfFileSignature' object is created and bound to the input PDF.
-- A 'PKCS7' object is initialized using the PFX certificate and its password. The 'CustomSignHash' method is assigned as the custom hash signing function.
-- The Sign method is called, specifying the page number (1 in this case), signature details (reason, cont, loc), and the position (a rectangle with coordinates (0, 0, 500, 500)) for the signature.
+- A `PdfFileSignature` object is created and bound to the input PDF.
+- A `PKCS7` object is initialized using the PFX certificate and its password. The 'CustomSignHash' method is assigned as the custom hash signing function.
+- The `Sign` method is called, specifying the page number (1 in this case), signature details (reason, cont, loc), and the position (a rectangle with coordinates (0, 0, 500, 500)) for the signature.
 - The signed PDF is then saved to the specified output path.
 
 3. Custom Hash Signing:
 
-- The 'CustomSignHash' method accepts a byte array signableHash (the hash to be signed).
+- The `CustomSignHash` method accepts a byte array signableHash (the hash to be signed).
 - It loads the same PFX certificate and retrieves its private key.
-- The private key is used to sign the hash using the 'RSACryptoServiceProvider' and the SHA-1 algorithm.
+- The private key is used to sign the hash using the `RSACryptoServiceProvider` and the SHA-1 algorithm.
 - The signed data (byte array) is returned to be applied to the PDF signature.
 
 The digest algorithm can be specified in the PKCS7Detached constructor. A third-party service can be called in the CustomSignHash delegate. The signature algorithm used in CustomSignHash must match the key algorithm in the certificate passed to PKCS7/PKCS7Detached.
@@ -321,7 +321,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
+
     using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {   
         // Bind PDF document
@@ -353,10 +353,10 @@ private static void SignWithCertificate(string pfxFilePath, string password)
 
 To create a signature, a preliminary estimate of the length of the future digital signature is required.
 If you use SignHash to create a digital signature, you may find that the delegate is called twice during the document saving process.
-If for some reason you cannot afford two calls, for example, if a PIN code request occurs during the call, you can use the __AvoidEstimatingSignatureLength__ option for the PKCS1, PKCS7, PKCS7Detached, and ExternalSignature classes.
-Setting this option avoids the signature length estimation step by setting a fixed value as the expected length - __DefaultSignatureLength__. The default value for the DefaultSignatureLength property is 3000 bytes.
+If for some reason you cannot afford two calls, for example, if a PIN code request occurs during the call, you can use the `AvoidEstimatingSignatureLength` option for the PKCS1, PKCS7, PKCS7Detached, and ExternalSignature classes.
+Setting this option avoids the signature length estimation step by setting a fixed value as the expected length - `DefaultSignatureLength`. The default value for the DefaultSignatureLength property is 3000 bytes.
 The AvoidEstimatingSignatureLength option only works if the SignHash delegate is set in the CustomSignHash property.
-If the resulting signature length exceeds the expected length specified by the DefaultSignatureLength property, you will receive a __SignatureLengthMismatchException__ indicating the actual length.
+If the resulting signature length exceeds the expected length specified by the DefaultSignatureLength property, you will receive a `SignatureLengthMismatchException` indicating the actual length.
 You can adjust the value of the DefaultSignatureLength parameter at your discretion.
 
 
@@ -366,7 +366,7 @@ private static void SignWithCertificate(string pfxFilePath, string password)
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
+
     using (var sign = new Aspose.Pdf.Facades.PdfFileSignature())
     {   
         // Bind PDF document
@@ -415,7 +415,7 @@ The following elliptic curves are supported for digital signature creation and v
 - brainpoolP512r1.
 
 The default digest algorithm is SHA2 with a length dependent on the ECDSA key size.
-You can specify the digest algorithm in the PKCS7Detached constructor.
+You can specify the digest algorithm in the `PKCS7Detached` constructor.
 
 ECDSA digital signatures with the following digest algorithms can be signed: SHA-256, SHA-384, SHA3–512, SHA3–256, SHA3–384, SHA3–512.
 ECDSA digital signatures with the following digest algorithms can be verified: SHA-256, SHA-384, SHA3–512, SHA3–256, SHA3–384, SHA3–512.
@@ -444,7 +444,7 @@ private static void VerifyEcda()
 {
    // The path to the documents directory
    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-            
+
    // Open PDF document
    using (var document = new Aspose.Pdf.Document(dataDir + "signed_ecdsa.pdf"))
     {
@@ -474,10 +474,10 @@ private static void VerifyEcda()
 }
 
 private static void SignEcdsa(string pfxFilePath, string password)
-{   
+{
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures(); 
-    
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
