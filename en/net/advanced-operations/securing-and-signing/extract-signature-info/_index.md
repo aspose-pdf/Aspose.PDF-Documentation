@@ -81,9 +81,9 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 
 ## Extracting Image from Signature Field
 
-Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class and while signing the document, you can also set an image for SignatureAppearance. Now, this API also provides the capability to extract signature information as well as the image associated with the signature field.
+Aspose.PDF for .NET supports the feature to digitally sign the PDF files using the [SignatureField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield) class and while signing the document, you can also set an image for `SignatureAppearance`. Now, this API also provides the capability to extract signature information as well as the image associated with the signature field.
 
-In order to extract signature information, we have introduced the [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) method to the SignatureField class. Please take a look at the following code snippet which demonstrates the steps to extract an image from the SignatureField object:
+In order to extract signature information, we have introduced the [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturefield/methods/extractimage) method to the SignatureField class. Please take a look at the following code snippet which demonstrates the steps to extract an image from the `SignatureField` object:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -138,7 +138,7 @@ private static void ExtractCertificate()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-    
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "ExtractSignatureInfo.pdf"))
     {
@@ -179,7 +179,7 @@ private void GetSignaturesInfo()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
-            
+
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "signed_rsa.pdf"))
     {
