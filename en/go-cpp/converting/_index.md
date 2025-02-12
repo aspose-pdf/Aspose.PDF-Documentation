@@ -4,7 +4,7 @@ linktitle: Convert PDF documents
 type: docs
 weight: 50
 url: /go-cpp/conversion/
-description: This section contains articles relating to convert PDF documents to other formats by Aspose.PDF for Go via C++.
+description: This section contains articles relating to convert PDF documents to other formats with Aspose.PDF for Go via C++.
 lastmod: "2024-12-10"
 sitemap:
     changefreq: "monthly"

@@ -9,6 +9,10 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Setting Structure Elements Properties using Aspose.PDF for Java
+Abstract: The article discusses various methods provided by Aspose.PDF for setting structure elements in a Tagged PDF Document using Java. It outlines the use of specific classes and methods within the Aspose.PDF library to create and manipulate different types of structure elements. 
+SoftwareApplication: java
 ---
 
 ## Setting Structure Elements Properties

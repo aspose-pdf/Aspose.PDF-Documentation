@@ -9,6 +9,10 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 lastmod: "2021-06-05"
+TechArticle: true 
+AlternativeHeadline: Popular New Features in Aspose.PDF for Java
+Abstract: The What’s New section of the Aspose.PDF for Java documentation provides an overview of the latest updates, enhancements, and bug fixes introduced in recent releases. It highlights new features, performance improvements, and compatibility updates to help developers stay informed about the latest advancements in PDF processing. The documentation also includes details on deprecated functionalities and recommended alternatives. By regularly reviewing this section, developers can ensure they are utilizing the most efficient and up-to-date features in their Java applications for seamless PDF management.
+SoftwareApplication: java
 ---
 
 ## What's new in Aspose.PDF 24.8

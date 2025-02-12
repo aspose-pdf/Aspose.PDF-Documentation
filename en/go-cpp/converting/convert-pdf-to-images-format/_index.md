@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Tool for Converting PDF to Images format 
+AlternativeHeadline: Tool for Converting PDF to Images format with Aspose.PDF for Go
 Abstract: Aspose.PDF for Go via C++ enables seamless conversion of PDF documents to various image formats, including JPEG, PNG, BMP, and TIFF. This feature allows developers to render high-quality images while preserving the original document’s content, layout, and resolution. The library provides flexible options for output settings such as resolution, image quality, and color depth. The documentation offers step-by-step instructions and code samples to help developers efficiently integrate PDF-to-image conversion into their applications. 
 SoftwareApplication: go-cpp    
 ---

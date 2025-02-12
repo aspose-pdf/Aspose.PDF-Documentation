@@ -9,6 +9,10 @@ lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Manipulate Tables in Tagged PDFs using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on creating and styling tables in Tagged PDF documents using the Aspose.PDF for Java library, specifically from version 19.6 or greater. It outlines the use of various classes and methods such as `TableElement` and `createTableElement()` from the `ITaggedContent` interface to construct tables. The guide includes detailed code snippets demonstrating how to create table elements including headers, bodies, footers, rows, and cells with specific styling attributes. Key styling features are highlighted, such as background color, borders, alignment, and text state, along with capabilities for setting spans and verifying PDF/UA compliance. The document further details the application of these styles at the table, row, and cell levels, providing example code snippets for each. The article serves as a resource for developers looking to enhance their PDF documents programmatically with well-structured tables.
+SoftwareApplication: java
 ---
 
 {{% alert color="primary" %}}

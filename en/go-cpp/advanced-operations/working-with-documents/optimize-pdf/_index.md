@@ -17,7 +17,7 @@ SoftwareApplication: go-cpp
 
 ## Optimize PDF Document
 
-Toolkit by Aspose.PDF for Go via C++ allows you to optimize a PDF document.
+Toolkit with Aspose.PDF for Go via C++ allows you to optimize a PDF document.
 
 This snippet is useful for applications where reducing the size or enhancing the efficiency of PDF files is critical, such as for web uploads, archiving, or sharing over limited bandwidth.
 
