@@ -86,7 +86,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void ManipulateTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -118,7 +118,7 @@ In case you need to find a particular table and replace it with the desired one,
 private static void ReplaceTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))

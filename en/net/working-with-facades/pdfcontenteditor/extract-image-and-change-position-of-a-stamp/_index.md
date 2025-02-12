@@ -84,7 +84,7 @@ draft: false
 private static void ExtractImageFromStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
@@ -111,7 +111,7 @@ private static void ExtractImageFromStamp()
 private static void ExtractImageFromStamp()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
@@ -143,7 +143,7 @@ private static void ExtractImageFromStamp()
 private static void ChangeStampPosition()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
@@ -172,7 +172,7 @@ private static void ChangeStampPosition()
 private static void ChangeStampPosition()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
@@ -204,7 +204,7 @@ Also, you can use [MoveStampById](https://reference.aspose.com/pdf/net/aspose.pd
 private static void MoveStampById()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor Object
     using (var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
@@ -233,7 +233,7 @@ private static void MoveStampById()
 private static void MoveStampById()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_StampsWatermarks();
 
     // Instantiate PdfContentEditor Object
     using var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor();

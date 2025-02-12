@@ -142,7 +142,7 @@ private static void FillFromXLSX()
     // Create an object of AutoFiller class
     using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
     {
-        // The input pdf file that contains form fields
+        // Bind PDF document
         autoFiller.BindPdf(dataDir + "Sample-Form-01.pdf");
 
         System.Data.DataTable dataTable = GenerateDataTable();

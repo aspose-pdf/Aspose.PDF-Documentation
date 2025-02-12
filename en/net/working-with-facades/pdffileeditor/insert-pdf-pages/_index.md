@@ -82,7 +82,7 @@ A particular range of pages can be inserted from one PDF into another using [Ins
 private static void InsertPdfPagesBetweenTwoNumbersUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Insert pages
@@ -103,7 +103,7 @@ The following code snippet shows you how to insert array of PDF pages using file
 private static void InsertArrayOfPdfPagesUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     var pagesToInsert = new int[] { 2, 3 };
@@ -124,7 +124,7 @@ If you want to insert the range of pages using streams, you only need to use the
 private static void InsertPdfPagesBetweenTwoNumbersUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
@@ -151,7 +151,7 @@ You can also insert an array of pages into another PDF file using streams with t
 private static void InsertArrayOfPdfPagesUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Pages to insert

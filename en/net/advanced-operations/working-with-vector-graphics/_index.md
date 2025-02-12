@@ -183,7 +183,7 @@ private static void RemoveGraphicsMethod1()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -231,7 +231,7 @@ private static void RemoveGraphicsMethod2()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create an instance of GraphicsAbsorber using 'using' block
+        // Create GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first page of the document
@@ -287,7 +287,7 @@ private static void AddToAnotherPageMethod1()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create a GraphicsAbsorber instance 
+        // Create GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first and second pages
@@ -328,7 +328,7 @@ private static void AddToAnotherPageMethod2()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DocumentWithVectorGraphics.pdf"))
     {
-        // Create a GraphicsAbsorber instance
+        // Create GraphicsAbsorber
         using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
             // Get the first and second pages

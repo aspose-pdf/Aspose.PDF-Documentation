@@ -104,7 +104,7 @@ The following code snippet shows you how to insert a page in a PDF file.
 private static void InsertAnEmptyPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
@@ -151,7 +151,7 @@ The following code snippet shows you how to insert an empty page at the end of a
 private static void InsertAnEmptyPageAtTheEnd()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))

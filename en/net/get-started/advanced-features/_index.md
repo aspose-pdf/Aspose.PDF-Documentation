@@ -125,11 +125,11 @@ With Aspose.PDF, you can add mathematical expressions/formulas inside PDF docume
 private static void LatexWithoutPreambleAndDocEnvironment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add Page in Pages Collection
+        // Add page
         var page = doc.Pages.Add();
         // Create a Table
         var table = new Aspose.Pdf.Table();
@@ -157,11 +157,11 @@ private static void LatexWithoutPreambleAndDocEnvironment()
 private static void LatexWithPreambleAndDocEnvironment()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     // Open PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add Page in Pages Collection
+        // Add page
         var page = doc.Pages.Add();
         // Create a Table
         var table = new Aspose.Pdf.Table();
@@ -205,12 +205,13 @@ private static void LatexTagsSupport()
     \end{document}";
 
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
     
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        var page = doc.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         var latex = new Aspose.Pdf.TeXFragment(s);
         page.Paragraphs.Add(latex);
         // Save PDF document

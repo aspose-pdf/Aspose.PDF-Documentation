@@ -92,7 +92,7 @@ The following code snippet shows you how to convert an FDF file into an XML file
 private static void ConvertFdftoXml()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // Create a file stream for FDF file - input file
     using (var fdfInputStream = new FileStream(dataDir + "input.fdf", FileMode.Open))

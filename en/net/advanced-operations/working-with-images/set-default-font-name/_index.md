@@ -88,7 +88,7 @@ private static void ConvertPdfToImageWithDefaultFont()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PdfToImageWithDefaultFont.pdf"))
     {
-        // Open the image stream using 'using' block to ensure proper disposal
+        // Open the image stream
         using (var imageStream = new FileStream(dataDir + "SetDefaultFontName.png", FileMode.Create))
         {
             // Set the resolution for the image

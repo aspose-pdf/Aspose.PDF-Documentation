@@ -82,7 +82,7 @@ draft: false
 private static void SplitPdfPagesFromFirstUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Split pages
@@ -99,7 +99,7 @@ private static void SplitPdfPagesFromFirstUsingFilePaths()
 private static void SplitPdfPagesFromFirstUsingFileStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
@@ -123,7 +123,7 @@ private static void SplitPdfPagesFromFirstUsingFileStreams()
 private static void SplitPdfPagesToBulkUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     var fileNumber = 1;
@@ -137,7 +137,6 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
         using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
         {
             outStream.WriteTo(outFileStream);
-            outFileStream.Close();
             fileNumber++;
         }
     }
@@ -153,7 +152,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 private static void SplitPdfPagesToBulkUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create input stream
@@ -170,7 +169,6 @@ private static void SplitPdfPagesToBulkUsingStreams()
             using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
             {
                 outStream.WriteTo(outFileStream);
-                outFileStream.Close();
                 fileNumber++;
             }
         }
@@ -187,7 +185,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
 private static void SplitPdfPagesToEndUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Split pages
@@ -204,7 +202,7 @@ private static void SplitPdfPagesToEndUsingFilePaths()
 private static void SplitPdfPagesToEndUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
@@ -234,7 +232,7 @@ In order to split PDF file to individual pages, you need to pass the PDF as file
 private static void SplitPdfToIndividualPagesUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     var fileNumber = 1;
@@ -246,7 +244,6 @@ private static void SplitPdfToIndividualPagesUsingFilePaths()
         using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
         {
             outStream.WriteTo(outFileStream);
-            outFileStream.Close();
             fileNumber++;
         }
     }
@@ -262,7 +259,7 @@ In order to split PDF file to individual pages, you need to pass the PDF as stre
 private static void SplitPdfToIndividualPagesUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create input stream
@@ -277,7 +274,6 @@ private static void SplitPdfToIndividualPagesUsingStreams()
             using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
             {
                 outStream.WriteTo(outFileStream);
-                outFileStream.Close();
                 fileNumber++;
             }
         }

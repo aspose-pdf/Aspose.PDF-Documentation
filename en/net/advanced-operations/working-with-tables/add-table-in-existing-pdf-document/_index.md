@@ -108,7 +108,7 @@ The following code snippets show how to add text in an existing PDF file.
 private static void AddTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddTable.pdf"))
@@ -149,12 +149,13 @@ We use `ColSpan` or `RowSpan` property on the `Cell` object which creates the ta
 private static void AddTableRowColSpan()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
 
         // Initializes a new instance of the Table
         Aspose.Pdf.Table table = new Aspose.Pdf.Table
@@ -195,7 +196,6 @@ private static void AddTableRowColSpan()
         row3.Cells.Add("Test 4 3");
         row3.Cells.Add("Test 4 4");
 
-
         // Add 5th row to table
         row4 = table.Rows.Add();
         row4.Cells.Add("Test 5 1");
@@ -203,7 +203,7 @@ private static void AddTableRowColSpan()
         row4.Cells.Add("Test 5 4");
 
         // Add table object to first page of input document
-        document.Pages[1].Paragraphs.Add(table);
+        page.Paragraphs.Add(table);
 
         // Save PDF document
         document.Save(dataDir + "AddTableRowColSpan_out.pdf");
@@ -240,11 +240,12 @@ In the following example, the width of the cell border is set to 0.1 point, the 
 private static void AddMarginsOrPadding()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
+        // Add page
         Aspose.Pdf.Page page = document.Pages.Add();
         // Instantiate a table object
         Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
@@ -318,12 +319,12 @@ As in Microsoft Word, an autofit method is actually a shortcut which applies dif
 private static void AddAutoFitToWindow()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Create the section in the Pdf object
+        // Add page
         Aspose.Pdf.Page sec1 = document.Pages.Add();
 
         // Instantiate a table object
@@ -377,7 +378,7 @@ private static void GetTableWidth()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page in document
+        // Add page
         Aspose.Pdf.Page page = document.Pages.Add();
         // Initialize new table
         Aspose.Pdf.Table table = new Aspose.Pdf.Table
@@ -406,10 +407,10 @@ The following code snippet shows the steps for creating a table instance and add
 private static void AddSvgObjectToTable()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
-    using (var document = new Document())
+    using (var document = new Aspose.Pdf.Document())
     {
         // Create an image instance
         Aspose.Pdf.Image img = new Aspose.Pdf.Image();
@@ -461,7 +462,7 @@ Please take into account that using of HTML Tags inside table element increases 
 private static void AddHtmlInsideTableCell()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     DataTable dt = new DataTable("Employee");
     dt.Columns.Add("data", System.Type.GetType("System.String"));
@@ -476,9 +477,11 @@ private static void AddHtmlInsideTableCell()
     dr[0] = "<li>UPHS/Presbyterian - Dept. of Emergency Medicine: 51 N. 39th Street . Philadelphia PA 19104-2640</li>";
     dt.Rows.Add(dr);
 
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         // Initializes a new instance of the Table
         Aspose.Pdf.Table tableProvider = new Aspose.Pdf.Table();
         //Set column widths of the table
@@ -495,7 +498,8 @@ private static void AddHtmlInsideTableCell()
 
         tableProvider.ImportDataTable(dt, false, 0, 0, 3, 1, true);
 
-        document.Pages[1].Paragraphs.Add(tableProvider);
+        page.Paragraphs.Add(tableProvider);
+
         // Save PDF document
         document.Save(dataDir + "HTMLInsideTableCell_out.pdf");
     }
@@ -511,13 +515,13 @@ As a default behavior, when creating a table inside a PDF file, the table flows 
 private static void InsertPageBreak()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
-        document.Pages.Add();
+        // Add page
+        var page = document.Pages.Add();
         // Create table instance
         Aspose.Pdf.Table tab = new Aspose.Pdf.Table();
         // Set border style for table
@@ -543,7 +547,7 @@ private static void InsertPageBreak()
             }
         }
         // Add table to paragraphs collection of PDF file
-        document.Pages[1].Paragraphs.Add(tab);
+        page.Paragraphs.Add(tab);
 
         // Save PDF document
         document.Save(dataDir + "InsertPageBreak_out.pdf");
@@ -564,7 +568,7 @@ To render table on a new page, use the [IsInNewPage](https://reference.aspose.co
 private static void AddTableOnNewPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -594,7 +598,7 @@ private static void AddTableOnNewPage()
         }
         Aspose.Pdf.Paragraphs paragraphs = curPage.Paragraphs;
         paragraphs.Add(table);
-        /********************************************/
+
         Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
         table.ColumnWidths = "100 100";
         for (int i = 1; i <= 10; i++)

@@ -4,7 +4,7 @@ type: docs
 weight: 120
 url: /net/working-with-javascript/
 description: Learn how to add, modify, and execute JavaScript in PDF documents using Aspose.PDF for .NET. Enhance interactivity and automation.
-lastmod: "2024-10-28"
+lastmod: "2025-02-07"
 ---
 <script type="application/ld+json">
 {
@@ -68,7 +68,7 @@ lastmod: "2024-10-28"
         "@type": "WebPage",
         "@id": "/net/working-with-javascript/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-02-07",
     "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
@@ -102,9 +102,9 @@ The example below applies the OpenAction to a specific document.
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open PDF documents
+    // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         // Adding JavaScript at Document Level
@@ -131,9 +131,9 @@ private static void AddJavaScript()
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Open PDF documents
+    // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
 
     // Adding JavaScript at Document Level
@@ -169,7 +169,7 @@ A new property named JavaScript is added in Document class which has JavaScript 
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -207,7 +207,7 @@ private static void AddJavaScript()
 private static void AddJavaScript()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
@@ -263,15 +263,15 @@ The following C# code snippet demonstrates how to set an expiry date and time fo
 private static void CreateDocumentWithExpiryDate()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         document.Pages.Add();
 
-        // Define the expiry date and time (e.g., April 1, 2024, 12:00:00 PM)
-        DateTime expiryDateTime = new DateTime(2024, 4, 1, 12, 0, 0);
+        // Define the expiry date and time (e.g., April 1, 2025, 12:00:00 PM)
+        DateTime expiryDateTime = new DateTime(2025, 4, 1, 12, 0, 0);
 
         // Create JavaScript code to enforce the expiry date and time
         string jsCode =
@@ -308,18 +308,17 @@ private static void CreateDocumentWithExpiryDate()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void CreateDocumentWithExpiryDate()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
     document.Pages.Add();
 
-    // Define the expiry date and time (e.g., April 1, 2024, 12:00:00 PM)
-    var expiryDateTime = new DateTime(2024, 4, 1, 12, 0, 0);
+    // Define the expiry date and time (e.g., April 1, 2025, 12:00:00 PM)
+    var expiryDateTime = new DateTime(2025, 4, 1, 12, 0, 0);
 
     // Create JavaScript code to enforce the expiry date and time
     string jsCode =

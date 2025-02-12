@@ -96,7 +96,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void CreatePortfolio()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -138,15 +138,15 @@ The following code snippet shows you the steps to extract files from PDF portfol
 private static void ExtractPortfolioFiles()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "PDFPortfolio.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
     {
         // Get collection of embedded files
-        EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
         // Iterate through individual file of Portfolio
-        foreach (FileSpecification fileSpecification in embeddedFiles)
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
         {
             // Get the attachment and write to file or stream
             byte[] fileContent = new byte[fileSpecification.Contents.Length];
@@ -173,7 +173,7 @@ In order to delete/remove files from PDF portfolio, try using the following code
 private static void RemovePortfolioFiles()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))

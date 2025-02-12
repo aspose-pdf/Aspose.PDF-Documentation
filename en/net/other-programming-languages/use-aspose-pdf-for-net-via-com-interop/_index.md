@@ -129,12 +129,16 @@ To register Aspose.PDF for .NET for COM Interop manually:
 
 1. From the **Start** menu, select **All Programs**, then **Microsoft Visual Studio**, **Visual Studio Tools** and, finally, **Visual Studio Command Prompt**.
 1. Enter the command to register the assembly:
-   1. .NET Framework 2.0
-      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net2.0\Aspose.PDF.dll" /codebase
-   1. .NET Framework 3.5
-      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net3.5\Aspose.PDF.dll" /codebase
-   1. .NET Framework 4.0
-      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net4.0\Aspose.PDF.dll" /codebase
+   1. .NET Framework 4.8.1
+      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net4.8.1\Aspose.PDF.dll" /codebase
+   1. .NET 6.0
+      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net6.0\Aspose.PDF.dll" /codebase
+   1. .NET 7.0
+      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net7.0\Aspose.PDF.dll" /codebase
+   1. .NET 8.0
+      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net8.0\Aspose.PDF.dll" /codebase
+   1. .NET Standard 2.0
+      regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\netstandard2.0\Aspose.PDF.dll" /codebase
 
 {{% /alert %}}
 
@@ -143,7 +147,7 @@ Pay attention that /codebase is necessary only if Aspose.PDF.dll is not in GAC, 
 {{% alert color="primary" %}}
 
 regasm.exe is a tool included in .NET Framework SDK. All the .NET Framework SDK tools are located in the *\Microsoft .NET\Framevork\<FrameworkVersion>* directory, for example *C:\Windows\Microsoft .NET\Framework\v4.0.30319*. If you use Visual Studio .NET:
-From the **Start** menu, select **Programs**, followed by **Microsoft Visual Studio .NET**, then **Visual Studio .NET Tools** and, finally, **Visual Studio .NET 2003 Command Prompt**.
+From the **Start** menu, select **Programs**, followed by **Visual Studio 2022**, finally, **Developer Command Prompt for VS 2022**.
 It runs a command prompt with all the necessary environment variables set.
 
 {{% /alert %}}
@@ -160,12 +164,16 @@ If your programming language (for example Visual Basic or Delphi) allows you to 
 
 To generate a TLB file:
 
-- .NET Framework 2.0
-  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net2.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net2.0\Aspose.PDF.tlb" /codebase
-- .NET Framework 3.5
-  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net3.5\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net3.5\Aspose.PDF.tlb" /codebase
-- .NET Framework 4.0
-  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net4.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net4.0\Aspose.PDF.tlb" /codebase
+- .NET Framework 4.8.1
+  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net4.8.1\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net4.8.1\Aspose.PDF.tlb" /codebase
+- .NET 6.0
+  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net6.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net6.0\Aspose.PDF.tlb" /codebase
+- .NET 7.0
+  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net7.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net7.0\Aspose.PDF.tlb" /codebase
+- .NET 8.0
+  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net8.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\net8.0\Aspose.PDF.tlb" /codebase
+- .NET Standard 2.0
+  regasm "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\netstandard2.0\Aspose.PDF.dll" /tlb: "C:\Program Files\Aspose\Aspose.PDF for .NET\bin\netstandard2.0\Aspose.PDF.tlb" /codebase
 
 {{% /alert %}}
 
@@ -175,20 +183,19 @@ The creation of a COM object is similar to creation of a normal .NET object:
 
 ```vb
 'Instantiate Pdf instance by calling its empty constructor
-
-Dim pdf
-Set pdf = CreateObject("Aspose.Pdf.Generator.Pdf")
+Dim document
+Set document = CreateObject("Aspose.Pdf.Document")
 
 ```
 
 Once created, you are able to access the object's methods and properties, as if it was a COM object:
 
 ```vb
-'Add section to Pdf object
-pdf.Sections.Add(pdfsection)
+'Add page to the document
+document.Pages.Add()
 ```
 
-Some methods have overloads and they will be exposed by COM Interop with a numeric suffix added to them, except for the very first method that stays unchanged. For example, the Pdf.Save method overloads become Pdf.Save, Pdf.Save_2, and so on.
+Some methods have overloads and they will be exposed by COM Interop with a numeric suffix added to them, except for the very first method that stays unchanged. For example, the Document.Save method overloads become Document.Save, Document.Save_2, and so on.
 
 For more information, see the language-specific articles further in this documentation.
 

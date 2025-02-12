@@ -95,25 +95,72 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void GetAllAttachments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
     // Open PDF document
-    Document document = new Document(dataDir + "GetAlltheAttachments.pdf");
-
-    // Get embedded files collection
-    EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
-
-    // Get count of the embedded files
-    Console.WriteLine("Total files : {0}", embeddedFiles.Count);
-
-    int count = 1;
-
-    // Loop through the collection to get all the attachments
-    foreach (FileSpecification fileSpecification in embeddedFiles)
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
     {
+        // Get embedded files collection
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+
+        // Get count of the embedded files
+        Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+        int count = 1;
+
+        // Loop through the collection to get all the attachments
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            Console.WriteLine("Name: {0}", fileSpecification.Name);
+            Console.WriteLine("Description: {0}",
+            fileSpecification.Description);
+            Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+            // Check if parameter object contains the parameters
+            if (fileSpecification.Params != null)
+            {
+                Console.WriteLine("CheckSum: {0}",
+                fileSpecification.Params.CheckSum);
+                Console.WriteLine("Creation Date: {0}",
+                fileSpecification.Params.CreationDate);
+                Console.WriteLine("Modification Date: {0}",
+                fileSpecification.Params.ModDate);
+                Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+            }
+
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+            count += 1;
+        }
+    }
+}
+```
+
+## Get Individual Attachment
+
+In order to get an individual attachment, we can specify the index of attachment in `EmbeddedFiles` object of Document instance. Please try using following code snippet.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf"))
+    {
+        // Get particular embedded file
+        Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+        // Get the file properties
         Console.WriteLine("Name: {0}", fileSpecification.Name);
-        Console.WriteLine("Description: {0}",
-        fileSpecification.Description);
+        Console.WriteLine("Description: {0}", fileSpecification.Description);
         Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
 
         // Check if parameter object contains the parameters
@@ -131,56 +178,11 @@ private static void GetAllAttachments()
         // Get the attachment and write to file or stream
         byte[] fileContent = new byte[fileSpecification.Contents.Length];
         fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-        using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+
+        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
         {
             fileStream.Write(fileContent, 0, fileContent.Length);
         }
-        count += 1;
-    }
-}
-```
-
-## Get Individual Attachment
-
-In order to get an individual attachment, we can specify the index of attachment in `EmbeddedFiles` object of Document instance. Please try using following code snippet.
-
-```csharp
-// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void GetIndividualAttachment()
-{
-    // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-    // Open PDF document
-    Document document = new Document(dataDir + "GetIndividualAttachment.pdf");
-
-    // Get particular embedded file
-    FileSpecification fileSpecification = document.EmbeddedFiles[1];
-
-    // Get the file properties
-    Console.WriteLine("Name: {0}", fileSpecification.Name);
-    Console.WriteLine("Description: {0}", fileSpecification.Description);
-    Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
-
-    // Check if parameter object contains the parameters
-    if (fileSpecification.Params != null)
-    {
-        Console.WriteLine("CheckSum: {0}",
-        fileSpecification.Params.CheckSum);
-        Console.WriteLine("Creation Date: {0}",
-        fileSpecification.Params.CreationDate);
-        Console.WriteLine("Modification Date: {0}",
-        fileSpecification.Params.ModDate);
-        Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
-    }
-
-    // Get the attachment and write to file or stream
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-
-    using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
-    {
-        fileStream.Write(fileContent, 0, fileContent.Length);
     }
 }
 ```

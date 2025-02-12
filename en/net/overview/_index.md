@@ -89,16 +89,16 @@ Using this library, you can implement rich capabilities for creating PDF files f
 Compressing PDF documents helps reduce their file size, making them easier to store, share, and transfer over networks. This is particularly important when dealing with large PDF files that contain high-resolution images or graphics. Smaller file sizes result in faster loading times, especially when accessing PDF documents online or via email attachments. Compressed PDFs load quicker, improving user experience and productivity.
 **Aspose.PDF for .NET Library** provides different ways to reduce the size of your PDF, such as:
 
-- shrinking or compressing all images
-- removing unused PDF objects
-- removing unused PDF streams
-- linking duplicate PDF streams
-- unembedding fonts
-- removing or flattening annotations
-- removing AcroForm Fields
-- using flateDecode compression
-- store images in XImageCollection (reusable images)
-- convert a PDF from RGB color space to grayscale
+- shrinking or compressing all images.
+- removing unused PDF objects.
+- removing unused PDF streams.
+- linking duplicate PDF streams.
+- unembedding fonts.
+- removing or flattening annotations.
+- removing AcroForm Fields.
+- using flateDecode compression.
+- store images in XImageCollection (reusable images).
+- convert a PDF from RGB color space to grayscale.
 
 Let's check Docs pages for more details: [Optimize PDF](/pdf/net/optimize-pdf/)
 
@@ -154,12 +154,12 @@ Adding attachments and annotations makes PDF documents more interactive and enga
 
 The Aspose.PDF for .NET library has a different of manipulations with [Annotations](/pdf/net/annotations/). You can add such types as:
 
-- Text Annotation
-- Highlights Annotation
-- Figures Annotation
-- Multimedia Annotation
-- Sticky Annotations
-- Extra Annotations
+- Text Annotation.
+- Highlights Annotation.
+- Figures Annotation.
+- Multimedia Annotation.
+- Sticky Annotations.
+- Extra Annotations.
 
 Also, our Library allows you to add, extract, and remove Attachments from PDF. 
 For more details check the next [Documentation pages](/pdf/net/attachments/).
@@ -192,13 +192,13 @@ Converting PDF pages to images makes the content more accessible to users who ma
 
 Aspose.PDF allows to convert PDF to different image formats using C#. There are:
 
-- TIFF
-- BMP
-- EMF
-- JPG
-- PNG
-- GIF
-- SVG
+- TIFF.
+- BMP.
+- EMF.
+- JPG.
+- PNG.
+- GIF.
+- SVG.
 
 Aspose.PDF Library using DocumentDevice, or ImageDevice class for PDF to Image conversion.[Convert PDF to Different Image Formats](/pdf/net/convert-pdf-to-images-format/).
 
@@ -208,10 +208,10 @@ Printing PDF documents allows users to create physical copies that can be easily
 
 Aspose.PDF for .NET present different ways to print PDF files:
 
-- Printing PDF using .NET Framework 4.x
-- Printing PDF in .NET Core / .NET
-- Printing PDF to an XPS Printer using Facades (console app)
-- Printing PDF in WPF application
+- Printing PDF using .NET Framework 4.x.
+- Printing PDF in .NET Core / .NET.
+- Printing PDF to an XPS Printer using Facades (console app).
+- Printing PDF in WPF application.
 - various additional operations, like PDF to PostScript conversion, Checking Print Job Status etc.
 
 Let's check the next section for more details: [Printing PDF documents](/pdf/net/printing-document/).

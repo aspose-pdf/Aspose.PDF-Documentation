@@ -97,7 +97,7 @@ In [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)
 private static void IdentifyFormFieldsNames()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
     // First a input pdf file should be assigned
     var form = new Aspose.Pdf.Facades.Form(dataDir + "FilledForm.pdf");
     // Get all field names

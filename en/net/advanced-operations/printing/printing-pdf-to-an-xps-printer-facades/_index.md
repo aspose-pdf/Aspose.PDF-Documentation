@@ -89,22 +89,24 @@ Finally, use [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/as
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintToXpsPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
     {
-        // Open PDF document
+        // Bind PDF document
         viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set attributes for printing
-        viewer.AutoResize = true;         // Print the file with adjusted size
-        viewer.AutoRotate = true;         // Print the file with adjusted rotation
-        viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
         // Create objects for printer and page settings and PrintDocument
         var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -131,22 +133,24 @@ private static void PrintToXpsPrinter()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PrintToXpsPrinter()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create PdfViewer object
     using var viewer = new Aspose.Pdf.Facades.PdfViewer();
 
-    // Open PDF document
+    // Bind PDF document
     viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set attributes for printing
-    viewer.AutoResize = true;         // Print the file with adjusted size
-    viewer.AutoRotate = true;         // Print the file with adjusted rotation
-    viewer.PrintPageDialog = false;   // Do not produce the page number dialog when printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
 
     // Create objects for printer and page settings and PrintDocument
     var ps = new Aspose.Pdf.Printing.PrinterSettings();
@@ -180,22 +184,21 @@ This preference can be switched on and off using the [PdfContentEditor](https://
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PickTrayByPdfSizeFacade()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the PdfContentEditor facade
     using (var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Open a document
+        // Bind PDF document
         contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
         // Set the flag to choose a paper tray using the PDF page size
         contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
 
-        // Save the changed document
+        // Save PDF document
         contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
     }
 }
@@ -205,22 +208,20 @@ private static void PickTrayByPdfSizeFacade()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PickTrayByPdfSizeFacade()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
     // Create the PdfContentEditor facade
     using var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
 
-    // Open a document
+    // Bind PDF document
     contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set the flag to choose a paper tray using the PDF page size
     contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
-
-    // Save the changed document
+    // Save PDF document
     contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
 }
 ```

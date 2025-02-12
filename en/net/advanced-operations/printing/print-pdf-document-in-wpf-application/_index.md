@@ -88,7 +88,6 @@ Let's consider the example for direct printing:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DirectPrintWpf()
 {
     // Select a PDF document to print
@@ -107,7 +106,7 @@ private static void DirectPrintWpf()
                 // Convert the document to the XPS format
                 document.Save(memoryStream, SaveFormat.Xps);
         
-                // Create an XPS package
+                // Create XPS package
                 using (var package = Package.Open(memoryStream))
                 {
                     //Create URI for the XPS package
@@ -151,7 +150,6 @@ private static void DirectPrintWpf()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void DirectPrintWpf()
 {
     // Select a PDF document to print
@@ -169,7 +167,7 @@ private static void DirectPrintWpf()
         using var memoryStream = new MemoryStream();
         document.Save(memoryStream, SaveFormat.Xps);
         
-        // Create an XPS package
+        // Create XPS package
         using var package = Package.Open(memoryStream);
         
         //Create URI for the XPS package
@@ -226,7 +224,6 @@ Most of the steps for implementing this approach are similar to the previous exa
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {
     // Select a PDF document to print
@@ -245,7 +242,7 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
                 // Convert the document to the XPS format
                 document.Save(memoryStream, SaveFormat.Xps);
 
-                // Create an XPS package
+                // Create XPS package
                 using (var package = Package.Open(memoryStream))
                 {
                     //Create URI for the XPS package
@@ -272,7 +269,6 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
 {
     // Select a PDF document to print
@@ -290,7 +286,7 @@ private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
         using var memoryStream = new MemoryStream();
         document.Save(memoryStream, SaveFormat.Xps);
 
-        // Create an XPS package
+        // Create XPS package
         using var package = Package.Open(memoryStream);
 
         //Create URI for the XPS package

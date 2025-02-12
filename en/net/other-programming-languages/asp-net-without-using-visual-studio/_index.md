@@ -101,7 +101,7 @@ This example shows how to use [Aspose.PDF for .NET](/pdf/net/) with inline code 
         <h3>creation of simple PDF document while using Aspose.PDF for .NET with Inline ASP.NET</h3>
 <%
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
     // Set license
     Aspose.Pdf.License lic = new Aspose.Pdf.License();
     lic.SetLicense("Aspose.Total.lic");

@@ -270,9 +270,10 @@ When converting a web page hosted on a webserver to PDF:
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertHTMLtoPDFAdvanced_WebPage()
 {
-    const string url = "https://en.wikipedia.org/wiki/Aspose_API";
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf();
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    const string url = "https://en.wikipedia.org/wiki/Aspose_API";
 
     // Set page size A3 and Landscape orientation;   
     var options = new Aspose.Pdf.HtmlLoadOptions(url)
@@ -309,10 +310,10 @@ Sometimes we need to perform the conversion of HTML files which require authenti
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
- private static void ConvertHTMLtoPDFAdvanced_Authorized()
+ private static void ConvertHTMLtoPDFAdvancedAuthorized()
  {
      // The path to the documents directory
-     string dataDir = RunExamples.GetDataDir_AsposePdf();
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      const string url = "http://httpbin.org/basic-auth/user1/password1";
      var credentials = new System.Net.NetworkCredential("user1", "password1");
@@ -325,7 +326,7 @@ Sometimes we need to perform the conversion of HTML files which require authenti
      using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url, credentials), options))
      {
          // Save PDF document
-         document.Save(dataDir + "html_test.pdf");
+         document.Save(dataDir + "HtmlTest_out.pdf");
      }
  }
 
@@ -345,10 +346,10 @@ Aspose.PDF for .NET provides the ability to render all contents on a single page
 
 ```csharp
  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
- private static void ConvertHTMLtoPDFAdvanced_SinglePageRendering()
+ private static void ConvertHTMLtoPDFAdvancedSinglePageRendering()
  {
      // The path to the documents directory
-     string dataDir = RunExamples.GetDataDir_AsposePdf();
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
      // Initialize HtmlLoadOptions
      var options = new Aspose.Pdf.HtmlLoadOptions
@@ -361,7 +362,7 @@ Aspose.PDF for .NET provides the ability to render all contents on a single page
      using (var document = new Aspose.Pdf.Document(dataDir + "HTMLToPDF.html", options))
      {
          // Save PDF document
-         document.Save(dataDir + "RenderContentToSamePage.pdf");
+         document.Save(dataDir + "RenderContentToSamePage_out.pdf");
      }
  }
 ```
@@ -377,17 +378,14 @@ private static void ConvertHTMLtoPDFWithSVG()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Set input file path
-    string inFile = dataDir + "HTMLSVG.html";
-
     // Initialize HtmlLoadOptions
-    var options = new Aspose.Pdf.HtmlLoadOptions(Path.GetDirectoryName(inFile));
+    var options = new Aspose.Pdf.HtmlLoadOptions(Path.GetDirectoryName(dataDir + "HTMLSVG.html"));
 
     // Initialize Document object
-    using (var document = new Aspose.Pdf.Document(inFile, options))
+    using (var document = new Aspose.Pdf.Document(dataDir + "HTMLSVG.html", options))
     {
         // Save PDF document
-        document.Save(dataDir + "RenderHTMLwithSVGData.pdf");
+        document.Save(dataDir + "RenderHTMLwithSVGData_out.pdf");
     }
 }
 ```
@@ -411,6 +409,7 @@ Aspose.PDF for .NET presents you online free application ["MHTML to PDF"](https:
 3. Save output PDF document by calling **Document.Save()** method.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void ConvertMHTtoPDF()
 {
     // The path to the documents directory
@@ -426,7 +425,7 @@ private static void ConvertMHTtoPDF()
     using (var document = new Aspose.Pdf.Document(dataDir + "fileformatinfo.mht", options))
     {
         // Save PDF document
-        document.Save(dataDir + "mhtml_test.pdf");
+        document.Save(dataDir + "MhtmlTest_out.pdf");
     }
 }
 ```

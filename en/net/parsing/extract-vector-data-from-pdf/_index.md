@@ -158,7 +158,7 @@ private static void ExtractAllSubpathsToImagesSeparately()
         // Get the first page of the document
         var page = document.Pages[1];
 
-        // Create SVG extractor using 'using' block
+        // Create SVG extractor
         var extractor = new Aspose.Pdf.Vector.SvgExtractor(options);
         // Extract SVGs from the page
         extractor.Extract(page, svgDirPath);
@@ -175,9 +175,6 @@ private static void ExtractListOfElementsToSingleImage()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Path to the directory where SVGs will be saved
-    var svgDirPath = dataDir + "SvgOutput/";
-
     // Initialize the list of graphic elements
     var elements = new List<Aspose.Pdf.Vector.GraphicElement>();
 
@@ -193,7 +190,7 @@ private static void ExtractListOfElementsToSingleImage()
         var svgExtractor = new Aspose.Pdf.Vector.SvgExtractor();
 
         // Extract SVGs from graphic elements on the page
-        svgExtractor.Extract(elements, page, Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
+        svgExtractor.Extract(elements, page, Path.Combine(dataDir, "SvgOutput", "VectorGraphics_out.svg"));
     }
 }
 ```
@@ -207,8 +204,6 @@ private static void ExtractSingleElement()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Path to the directory where SVGs will be saved
-    var svgDirPath = dataDir + "SvgOutput/";
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "VectorGraphics.pdf"))
@@ -224,7 +219,7 @@ private static void ExtractSingleElement()
 
         // Extract the graphic element (XFormPlacement) and save it as SVG
         var xFormPlacement = graphicsAbsorber.Elements[1] as Aspose.Pdf.Vector.XFormPlacement;
-        xFormPlacement.Elements[2].SaveToSvg(Path.Combine(svgDirPath, "VectorGraphics_out.svg"));
+        xFormPlacement.Elements[2].SaveToSvg(Path.Combine(dataDir, "SvgOutput", "VectorGraphics_out.svg"));
     }
 }
 ```

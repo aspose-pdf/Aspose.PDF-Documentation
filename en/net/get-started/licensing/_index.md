@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /net/licensing/
 description: Aspose. PDF for .NET invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
-lastmod: "2021-06-05"
+lastmod: "2025-02-07"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/licensing/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-02-07",
     "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
@@ -80,7 +80,7 @@ sitemap:
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all pages in the generated PDF documents are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2024 Aspose Pty Ltd." at the top.
+- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all pages in the generated PDF documents are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." at the top.
 
 - **Limit the number of pages that can be processed.**
 In the evaluation version, you can only process the first four pages of a document.
@@ -112,7 +112,7 @@ private static void SetLicenseExample()
     }
     catch (Exception)
     {
-        // something went wrong
+        // Something went wrong
         throw;
     }
     Console.WriteLine("License set successfully.");
@@ -151,8 +151,8 @@ A new class Metered has been introduced to apply metered key. Following is the s
 private static void SetMeteredLicense()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    // set metered public and private keys
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    // Set metered public and private keys
     Aspose.Pdf.Metered metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
     metered.SetMeteredKey(
@@ -180,7 +180,7 @@ Therefore, in order to put an extra layer of security when embedding the license
 private static void SetLicenseFromStream()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     Aspose.Pdf.License license = new Aspose.Pdf.License();
     license.SetLicense(GetSecureLicenseFromStream());
     // Open PDF document

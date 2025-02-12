@@ -90,7 +90,7 @@ The following code snippet shows you how to import annotations to an XFDF file:
 private static void ImportAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     // Sources of PDF with annotations           
     var sources = new string[] { dataDir + "ImportAnnotations.pdf" };
@@ -113,7 +113,7 @@ The next code snippet describes how import/export annotations to an XFDF file:
 private static void ImportExportXFDF01()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
 
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
@@ -127,6 +127,7 @@ private static void ImportExportXFDF01()
         // Create PDF document
         using (var document = new Aspose.Pdf.Document())
         {
+            // Add page
             document.Pages.Add();
             // Bind PDF document
             annotationEditor.BindPdf(document);
@@ -145,12 +146,14 @@ This way, the annotations of the specified types will only be imported or export
 private static void ImportExportXFDF02()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
-        // Export annotations
+        // Bind PDF document
         annotationEditor.BindPdf(dataDir + "ExportAnnotations.pdf");
+
+        // Export annotations
         using (FileStream xmlOutputStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
         {
             var annotationTypes = new[] {AnnotationType.FreeText, AnnotationType.Text};
@@ -160,6 +163,7 @@ private static void ImportExportXFDF02()
         // Import annotations
         using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
         {
+            // Add page
             document.Pages.Add();
             // Bind PDF document
             annotationEditor.BindPdf(document);

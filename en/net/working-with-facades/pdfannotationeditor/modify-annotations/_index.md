@@ -86,7 +86,7 @@ For example, in the following code, consider changing the author in our annotati
 private static void ModifyAnnotationsAuthor()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Create PdfAnnotationEditor
     using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
     {
@@ -107,7 +107,7 @@ The second method allows you to modify annotations.
 private static void ModifyAnnotations()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Annotations();
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AnnotationsInput.pdf"))
     {
@@ -129,7 +129,3 @@ private static void ModifyAnnotations()
     }
 }
 ```
-
-## See also
-
-Try to compare and find a way to work with annotations that suits you. Lets learn [PDF Annotations](/pdf/net/annotations/) section.

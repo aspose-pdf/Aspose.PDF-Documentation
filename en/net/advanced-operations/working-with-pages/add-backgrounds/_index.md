@@ -88,7 +88,7 @@ The following code snippet shows how to add a background image to PDF pages usin
 private static void AddBackgroundToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
@@ -96,7 +96,7 @@ private static void AddBackgroundToPdf()
         // Image for background artifact object
         using (var image = File.OpenRead(dataDir + "aspose-total-for-net.jpg"))
         {
-            // Add a new page to document object
+            // Add page
             Page page = document.Pages.Add();
             // Create Background Artifact object
             var background = new Aspose.Pdf.BackgroundArtifact();

@@ -107,7 +107,7 @@ private static void AddLineObjectToPDF()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Graph instance
@@ -146,7 +146,7 @@ private static void DashLengthInBlackAndDashLengthInWhite()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Create Drawing object with certain dimensions
@@ -196,7 +196,7 @@ private static void ExampleLineAcrossPage()
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
 
         // Set page margin on all sides as 0

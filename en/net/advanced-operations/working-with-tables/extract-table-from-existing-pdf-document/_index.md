@@ -85,7 +85,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/net/drawing/
 private static void Extract_Table()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "the_worlds_cities_in_2018_data_booklet 7.pdf"))
@@ -128,10 +128,10 @@ The page borders are path drawing operations. Therefore the Pdf->Html processing
 private static void ExtractTableBorder()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
     // Open PDF document
-    using (var document = new Document(dataDir + "input.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
         Stack graphicsState = new Stack();
         using (var bitmap = new System.Drawing.Bitmap((int)document.Pages[1].PageInfo.Width, (int)document.Pages[1].PageInfo.Height))

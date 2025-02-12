@@ -104,16 +104,15 @@ The following code snippet shows you how to add a hyperlink to a PDF file.
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddHyperlink()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf"))
     {
-        // Create link
+        // Get page
         var page = document.Pages[1];
         // Create Link annotation object
         var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
@@ -147,15 +146,14 @@ private static void AddHyperlink()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddHyperlink()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "AddHyperlink.pdf");
-    // Create link
+    // Get page
     var page = document.Pages[1];
     // Create Link annotation object
     var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
@@ -196,16 +194,15 @@ In order to add the local hyperlink, we need to create a TextFragment so that li
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddHyperlink()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        // Add page to pages collection of PDF file
+        // Add page
         var page = document.Pages.Add();
         // Create Text Fragment instance
         var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
@@ -240,15 +237,14 @@ private static void AddHyperlink()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddHyperlink()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Create PDF document
     using var document = new Aspose.Pdf.Document();
-    // Add page to pages collection of PDF file
+    // Add page
     var page = document.Pages.Add();
     // Create Text Fragment instance
     var text = new Aspose.Pdf.Text.TextFragment("link page number test to page 7");
@@ -299,11 +295,10 @@ The following code snippet shows how to get hyperlink destinations (URL) from a 
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetHyperlink()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -334,11 +329,10 @@ private static void GetHyperlink()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void GetHyperlink()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
@@ -378,11 +372,10 @@ To find the URL content, you need to work with both annotation and text. The [An
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ShowLinkAnnotationText()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
@@ -420,11 +413,10 @@ private static void ShowLinkAnnotations(Aspose.Pdf.Page page)
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void ShowLinkAnnotationText()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
@@ -474,11 +466,10 @@ The following code snippet shows how to remove a document open action from the P
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RemoveOpenAction()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveOpenAction.pdf"))
@@ -496,11 +487,10 @@ private static void RemoveOpenAction()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void RemoveOpenAction()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "RemoveOpenAction.pdf");
@@ -525,11 +515,10 @@ The [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.ann
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SpecifyPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf"))
@@ -554,11 +543,10 @@ private static void SpecifyPage()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void SpecifyPage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "SpecifyPageWhenViewing.pdf");

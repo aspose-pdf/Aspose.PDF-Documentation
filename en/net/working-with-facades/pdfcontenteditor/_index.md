@@ -13,7 +13,7 @@ sitemap:
 
 - [Adding Javascript actions to existing PDF file](/pdf/net/adding-javascript-actions/)
 - [Adding Bookmark actions to existing PDF file](/pdf/net/how-to-create-nested-bookmarks/)
-- [Working with Images](/pdf/net/working-with-images-facades/)
+- [Working with Images](/pdf/net/working-with-images-in-pdf/)
 - [Replace Text - Facades](/pdf/net/replace-text-facades/)
 - [Working with Attachments - Facades](/pdf/net/working-with-attachments-facades/)
 - [Set Viewer Preference of an existing PDF File](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)

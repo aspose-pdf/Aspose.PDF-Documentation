@@ -343,7 +343,7 @@ private static void Search()
     // Create the editor
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
-        // Bind source document
+        // Bind PDF document
         editor.BindPdf(dataDir + "SearchRegularExpressionPage.pdf");
 
         // Accept the absorber for the page
@@ -368,7 +368,6 @@ private static void Search()
 
         // Save PDF document
         editor.Save(dataDir + "SearchTextAndAddHyperlink_out.pdf");
-        editor.Close();
     }
 }
 ```

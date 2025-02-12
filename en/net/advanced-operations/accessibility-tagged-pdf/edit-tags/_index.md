@@ -94,15 +94,15 @@ These methods allow you to edit pdf file tags, for example:
 {{< tab tabNum="1" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void EditTags()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "EditTags.pdf"))
     {
+        // Get first page 
         var page = document.Pages[1];
         // The marked content operator on page for the image.
         Aspose.Pdf.Operators.BDC imageBdc = null;
@@ -319,15 +319,15 @@ private static void EditTags()
 {{< tab tabNum="2" >}}
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void EditTags()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "EditTags.pdf");
 
+    // Get first page
     var page = document.Pages[1];
     // The marked content operator on page for the image.
     Aspose.Pdf.Operators.BDC imageBdc = null;

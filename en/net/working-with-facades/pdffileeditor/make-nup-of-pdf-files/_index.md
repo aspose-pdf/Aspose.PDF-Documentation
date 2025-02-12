@@ -82,7 +82,7 @@ draft: false
 private static void MakeNupOfPdfUsingFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make NUp
@@ -99,7 +99,7 @@ private static void MakeNupOfPdfUsingFilePaths()
 private static void MakeNupUsingPageSizeAndFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make NUp
@@ -116,7 +116,7 @@ private static void MakeNupUsingPageSizeAndFilePaths()
 private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Make NUp
@@ -133,7 +133,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndFileP
 private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create array of files
@@ -154,7 +154,7 @@ private static void MakeNupOfPdfUsingArrayOfPdfFilesAndFilePaths()
 private static void MakeNupOfPdfUsingStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
@@ -181,7 +181,7 @@ private static void MakeNupOfPdfUsingStreams()
 private static void MakeNupOfPdfUsingPageSizeAndStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
@@ -205,7 +205,7 @@ private static void MakeNupOfPdfUsingPageSizeAndStreams()
 private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams
@@ -229,7 +229,7 @@ private static void MakeNupOfPdfUsingPageSizeHorizontalAndVerticalValuesAndStrea
 private static void MakeNupOfPdfUsingArrayOfPdfFilesAndStreams()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
     // Create PdfFileEditor object
     var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
     // Create streams

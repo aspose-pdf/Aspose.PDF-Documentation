@@ -161,7 +161,7 @@ In Aspose.Pdf.Facades namespace, we have a class named [FormEditor](https://refe
 private static void DifferenceBetweenFile()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_TechnicalArticles();
 
     // First a input pdf file should be assigned
     using (var form = new Aspose.Pdf.Facades.Form(dataDir + "FilledForm.pdf"))

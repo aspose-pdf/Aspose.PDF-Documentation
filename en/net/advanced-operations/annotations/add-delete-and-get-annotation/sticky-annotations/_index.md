@@ -89,39 +89,38 @@ Please check the following code snippet to add WatermarkAnnotation.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddWatermarkAnnotation()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
-	{
-		// Load Page object to add Annotation
-		var page = document.Pages[1];
+    {
+        // Load Page object to add Annotation
+        var page = document.Pages[1];
 
-		// Create Watermark Annotation
-		var wa = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
+        // Create Watermark Annotation
+        var wa = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
 
-		// Add annotation into Annotation collection of Page
-		page.Annotations.Add(wa);
+        // Add annotation into Annotation collection of Page
+        page.Annotations.Add(wa);
 
-		// Create TextState for Font settings
-		var ts = new Aspose.Pdf.Text.TextState();
-		ts.ForegroundColor = Aspose.Pdf.Color.Blue;
-		ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
-		ts.FontSize = 32;
+        // Create TextState for Font settings
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.ForegroundColor = Aspose.Pdf.Color.Blue;
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+        ts.FontSize = 32;
 
-		// Set opacity level of Annotation Text
-		wa.Opacity = 0.5;
+        // Set opacity level of Annotation Text
+        wa.Opacity = 0.5;
 
-		// Add Text in Annotation
-		wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
+        // Add Text in Annotation
+        wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
-		// Save PDF document
-		document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
+    }
 }
 ```
 
@@ -131,61 +130,60 @@ Sometimes we have a requirement to use same image multiple times in a PDF docume
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void AddWatermarkAnnotationWithImage()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
     // Define the rectangle for the image
     var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
-	{
-		// Open the image stream
-		using (var imageStream = File.Open(dataDir + "icon.png", FileMode.Open))
-		{
-			XImage image = null;
+    {
+        // Open the image stream
+        using (var imageStream = File.Open(dataDir + "icon.png", FileMode.Open))
+        {
+            XImage image = null;
 
-			// Iterate through each page in the document
-			foreach (Page page in document.Pages)
-			{
-				// Create a Watermark Annotation
-				var annotation = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, page.Rect);
-				XForm form = annotation.Appearance["N"];
-				form.BBox = page.Rect;
+            // Iterate through each page in the document
+            foreach (Page page in document.Pages)
+            {
+                // Create a Watermark Annotation
+                var annotation = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, page.Rect);
+                XForm form = annotation.Appearance["N"];
+                form.BBox = page.Rect;
 
-				string name;
+                string name;
 
-				// Add the image to the form resources if it hasn't been added yet
-				if (image == null)
-				{
-					name = form.Resources.Images.Add(imageStream);
-					image = form.Resources.Images[name];
-				}
-				else
-				{
-					name = form.Resources.Images.Add(image);
-				}
+                // Add the image to the form resources if it hasn't been added yet
+                if (image == null)
+                {
+                    name = form.Resources.Images.Add(imageStream);
+                    image = form.Resources.Images[name];
+                }
+                else
+                {
+                    name = form.Resources.Images.Add(image);
+                }
 
-				// Add operators to the form contents to place the image
-				form.Contents.Add(new Aspose.Pdf.Operators.GSave());
-				form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
-				form.Contents.Add(new Aspose.Pdf.Operators.Do(name));
-				form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+                // Add operators to the form contents to place the image
+                form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+                form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+                form.Contents.Add(new Aspose.Pdf.Operators.Do(name));
+                form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 
-				// Add the annotation to the page
-				page.Annotations.Add(annotation, false);
+                // Add the annotation to the page
+                page.Annotations.Add(annotation, false);
 
-				// Adjust the image rectangle size for the next iteration
-				imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
-			}
-		}
+                // Adjust the image rectangle size for the next iteration
+                imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
+            }
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
+    }
 }
 ```
 

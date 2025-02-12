@@ -81,7 +81,6 @@ Follow the next code snippet for resolve your task:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
 private static void MergeImages01()
 {
     var dataDir = RunExamples.GetDataDir_AsposePdf_Images();  // Updated to use dynamic path
@@ -202,15 +201,18 @@ private static void MergeImages05()
         // Copy merged images to the MemoryStream
         inputStream.CopyTo(outputStream);
 
-        // Create a new Document instance and add a page
-        var document = new Aspose.Pdf.Document();
-        var page = document.Pages.Add();
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = document.Pages.Add();
 
-        // Add the image from the MemoryStream to the page
-        page.AddImage(outputStream, new Aspose.Pdf.Rectangle(10, 120, 400, 720));
+            // Add the image from the MemoryStream to the page
+            page.AddImage(outputStream, new Aspose.Pdf.Rectangle(10, 120, 400, 720));
 
-        // Save PDF document
-        document.Save(dataDir + "MergeImages_out.pdf");
+            // Save PDF document
+            document.Save(dataDir + "MergeImages_out.pdf");
+        }
     }
 }
 ```

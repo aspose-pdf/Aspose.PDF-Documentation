@@ -91,7 +91,7 @@ You can use [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pa
 private static void AddPageNumberToPdf()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PageNumberStamp.pdf"))
@@ -137,7 +137,7 @@ Aspose.PDF has limited support for Bates Numbering for now. This functionality w
 private static void RemoveBatesNumbering()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))

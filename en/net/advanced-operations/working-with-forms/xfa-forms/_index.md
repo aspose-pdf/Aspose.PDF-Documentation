@@ -96,27 +96,27 @@ The following code snippet shows you how to fill fields in XFA form.
 private static void FillXFAFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
-	{
-		// Get names of XFA form fields
-		var names = document.Form.XFA.FieldNames;
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-		// Set field values
-		if (names.Length > 0)
-		{
-			document.Form.XFA[names[0]] = "Field 0";
-		}
-		if (names.Length > 1)
-		{
-			document.Form.XFA[names[1]] = "Field 1";
-		}
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "FilledXfa_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
 }
 ```
 
@@ -143,17 +143,17 @@ We cannot extract or manipulate pages of XFA Forms, because the form content is 
 private static void ConvertDynamicXFAToAcroForm()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Load dynamic XFA form
     using (var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
-	{
-		// Set the form fields type as standard AcroForm
-		document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
+    {
+        // Set the form fields type as standard AcroForm
+        document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
 
-		// Save PDF document
-		document.Save(dataDir + "StandardAcroForm_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "StandardAcroForm_out.pdf");
+    }
 }
 ```
 
@@ -166,34 +166,34 @@ To access field properties, first use Document.Form.XFA.Template to access the f
 private static void GetXFAProperties()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
-	{
-		// Get names of XFA form fields
-		var names = document.Form.XFA.FieldNames;
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-		// Set field values
-		if (names.Length > 0)
-		{
-			document.Form.XFA[names[0]] = "Field 0";
-		}
-		if (names.Length > 1)
-		{
-			document.Form.XFA[names[1]] = "Field 1";
-		}
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-		// Get field position
-		if (names.Length > 0)
-		{
-			Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
-			Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
-		}
+        // Get field position
+        if (names.Length > 0)
+        {
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "FilledXfa_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
 }
 ```
 

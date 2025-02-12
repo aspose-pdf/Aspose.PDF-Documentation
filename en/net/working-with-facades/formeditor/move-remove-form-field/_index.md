@@ -82,7 +82,7 @@ If you want to move a form field to a new location then you can use [MoveField](
 private static void MoveField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
         // Bind PDF document
@@ -103,7 +103,7 @@ In order to delete a form field from an existing PDF file, you can use RemoveFie
 private static void RemoveFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
         // Bind PDF document
@@ -124,7 +124,7 @@ Also you can rename your field using [RenameField](https://reference.aspose.com/
 private static void RenameFields()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
     using (var editor = new Aspose.Pdf.Facades.FormEditor())
     {
         // Bind PDF document

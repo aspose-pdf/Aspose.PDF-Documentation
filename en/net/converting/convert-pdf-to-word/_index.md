@@ -180,7 +180,7 @@ Aspose.PDF for .NET presents you online free application ["PDF to DOC"](https://
 [![Convert PDF to DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
-## Convert PDF to DOCX (Microsoft Word 2007-2021) file
+## Convert PDF to DOCX (Microsoft Word 2007-2024) file
 
 Aspose.PDF for .NET API lets you read and convert PDF documents to DOCX using C# and any .NET language. DOCX is a well-known format for Microsoft Word documents whose structure was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and later versions but not with earlier versions of MS Word, which support DOC file extensions.
 

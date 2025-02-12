@@ -88,7 +88,7 @@ The FormEditor class SetFieldLimit(field, limit) method allows you to set a fiel
 private static void SetFieldLimit()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create FormEditor instance
     using (var form = new Aspose.Pdf.Facades.FormEditor())
@@ -112,17 +112,17 @@ Similarly, Aspose.PDF has a method that gets the field limit using the DOM appro
 private static void GetFieldLimitUsingDOM()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
-	{
-		// Get the field and its maximum limit
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
-		{
-			Console.WriteLine("Limit: " + textBoxField.MaxLen);
-		}
-	}
+    {
+        // Get the field and its maximum limit
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            Console.WriteLine("Limit: " + textBoxField.MaxLen);
+        }
+    }
 }
 ```
 
@@ -133,7 +133,7 @@ You can also get the same value using the *Aspose.Pdf.Facades* namespace using t
 private static void GetFieldLimitUsingFacades()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Create Form instance
     using (var form = new Aspose.Pdf.Facades.Form())
@@ -158,24 +158,24 @@ The following code snippet shows how to set the default font for PDF form fields
 private static void SetFormFieldFont()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
-	{
-		// Get particular form field from document
-		if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
-		{
-			// Create font object
-			var font = Aspose.Pdf.Text.FontRepository.FindFont("ComicSansMS");
+    {
+        // Get particular form field from document
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
+        {
+            // Create font object
+            var font = Aspose.Pdf.Text.FontRepository.FindFont("ComicSansMS");
 
-			// Set the font information for form field
-			field.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance(font, 10, System.Drawing.Color.Black);
-		}
+            // Set the font information for form field
+            field.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance(font, 10, System.Drawing.Color.Black);
+        }
 
-		// Save PDF document
-		document.Save(dataDir + "FormFieldFont14_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "FormFieldFont14_out.pdf");
+    }
 }
 ```
 
@@ -188,17 +188,17 @@ All the form fields are contained in the Document object's Form collection. This
 private static void DeleteFormField()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))
-	{
-		// Delete a particular field by name
-		document.Form.Delete("textbox1");
+    {
+        // Delete a particular field by name
+        document.Form.Delete("textbox1");
 
-		// Save PDF document
-		document.Save(dataDir + "DeleteFormField_out.pdf");
-	}
+        // Save PDF document
+        document.Save(dataDir + "DeleteFormField_out.pdf");
+    }
 }
 ```
 

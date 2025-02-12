@@ -86,6 +86,7 @@ private static void ExtractAttachments()
     // Create the extractor
     using (var pdfExtractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
+        // Bind PDF document
         pdfExtractor.BindPdf(dataDir + "GetAlltheAttachments.pdf");
 
         // Extract attachments

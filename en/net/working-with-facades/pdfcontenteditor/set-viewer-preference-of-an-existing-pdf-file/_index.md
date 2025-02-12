@@ -90,7 +90,7 @@ For example, we specify the parameter [CenterWindow](https://reference.aspose.co
 private static void SetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf"))
@@ -116,7 +116,7 @@ private static void SetViewerPreference()
 private static void SetViewerPreference()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     
     // Open PDF document
     using var document = new Aspose.Pdf.Document(dataDir + "Sample.pdf");

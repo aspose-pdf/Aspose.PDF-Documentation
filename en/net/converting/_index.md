@@ -94,36 +94,40 @@ Aspose.PDF for .NET allows converting PDF documents to various formats and also 
 
 Word documents are the most versatile and editable possible. Converting PDF to Word manually is a very time-consuming task. In this article, you will learn how to convert PDF to Word programmatically in C#.
 
-- [Convert PDF to Microsoft Word](/pdf/net/convert-pdf-to-word/) - you can convert your PDF document to Word format with C#
+- [Convert PDF to Microsoft Word](/pdf/net/convert-pdf-to-word/) - you can convert your PDF document to Word format with C#.
 
 Number formats are needed not only to make the data in the table easier to read, but also to make the table easier to use. Of course, if you need to convert such data from a PDF document to Excel format use our Aspose.PDF library.
 
-- [Convert PDF to Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - this section describes how to convert PDF document to XLSX, ODS, CSV and SpreadSheetML
+- [Convert PDF to Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - this section describes how to convert PDF document to XLSX, ODS, CSV and SpreadSheetML.
 
 The PowerPoint format is used to create various presentations. PPT files contain a large number of slides or pages containing various information.
 
-- [Convert PDF to Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - here we are talking about converting PDF to PowerPoint by tracking the conversion process
+- [Convert PDF to Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - here we are talking about converting PDF to PowerPoint by tracking the conversion process.
 
 HyperText Markup Language is a hypertext document description language, a standard language for creating web pages. With Aspose.PDF for .NET you can easily convert HTML documents and vice versa.
 
-- [Convert HTML format to PDF file](/pdf/net/convert-html-to-pdf/) - article about different aspects of HTML-to-PDF conversion
-- [Convert PDF file to HTML format](/pdf/net/convert-pdf-to-html/) - convert your PDF documents to HTML files as separate pages or as a simgle page
+- [Convert HTML format to PDF file](/pdf/net/convert-html-to-pdf/) - article about different aspects of HTML-to-PDF conversion.
+- [Convert PDF file to HTML format](/pdf/net/convert-pdf-to-html/) - convert your PDF documents to HTML files as separate pages or as a simgle page.
 
 There are many image formats that need to be converted to PDF for different purposes. Aspose.PDF allows the most popular images formats and vice versa.
 
-- [Convert Images formats to PDF file](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF allows you to convert different formats of images to PDF file
-- [Convert PDF to various Images formats](/pdf/net/convert-pdf-to-images-format/) - convert PDF pages as images in JPEG, PNG and other formats
+- [Convert Images formats to PDF file](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF allows you to convert different formats of images to PDF file.
+- [Convert PDF to various Images formats](/pdf/net/convert-pdf-to-images-format/) - convert PDF pages as images in JPEG, PNG and other formats.
 
 This section includes such formats as: EPUB, Markdown, PCL, XPS, LATex/TeX, Text, and PostScript.
 
-- [Convert other file formats to PDF](/pdf/net/convert-other-files-to-pdf/) - this topic describes conversion with various formats like EPUB, XPS, Postscript, text and others
-- [Convert PDF file to other formats](/pdf/net/convert-pdf-to-other-files/) - this topic describes way for conversion PDF document to various formats
+- [Convert other file formats to PDF](/pdf/net/convert-other-files-to-pdf/) - this topic describes conversion with various formats like EPUB, XPS, Postscript, text and others.
+- [Convert PDF file to other formats](/pdf/net/convert-pdf-to-other-files/) - this topic describes way for conversion PDF document to various formats.
 
 PDF/A is a version of PDF designed for the long-term archiving of electronic documents.
 If honestly, externally, it is very difficult to determine if it is PDF or PDF/A. To check this file, validators are used. Check the following articles for a quality converting PDF to PDF/A and vice versa.
 
-- [Convert PDF to PDF/A formats](/pdf/net/convert-pdf-to-pdfa/) - .NET library by Aspose.PDF has an easy way for converting PDF to PDF/A
-- [Convert PDF/A to PDF format](/pdf/net/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with C# easy, fast, and high quality
+- [Convert PDF to PDF/A formats](/pdf/net/convert-pdf-to-pdfa/) - .NET library by Aspose.PDF has an easy way for converting PDF to PDF/A.
+- [Convert PDF/A to PDF format](/pdf/net/convert-pdfa-to-pdf/) - convert PDF/A to PDF format with C# easy, fast, and high quality.
+
+PDF/X is a subset of the PDF standard that facilitates graphics exchange and has a series of printing-related requirements which do not apply to standard PDF files.
+
+- [Convert PDF to PDF/X exchange format](/pdf/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET enables conversion to various PDF/X standard versions
 
 ## Try to convert PDF files online
 

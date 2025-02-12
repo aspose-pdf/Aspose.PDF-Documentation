@@ -9,6 +9,10 @@ lastmod: "2024-09-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Parse PDF pages with Aspose.PDF for Go 
+Abstract: Aspose.PDF for Go via C++ provides powerful parsing capabilities that enable developers to extract and manipulate content from PDF documents efficiently. The API offers robust features to handle encrypted or complex PDFs while ensuring performance and reliability across various platforms.
+SoftwareApplication: go-cpp          
 ---
 
 **Parse PDF** documents is a term releated to extraction variuous kind of information from PDF file. This section covers how to:

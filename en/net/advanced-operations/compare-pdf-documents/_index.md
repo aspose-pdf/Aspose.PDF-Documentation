@@ -122,7 +122,7 @@ The code starts by initializing two PDF documents using their respective file pa
 private static void ComparingSpecificPages()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
     // Open PDF documents
     using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages1.pdf"))
@@ -162,7 +162,7 @@ Just like in the first example, two PDF documents are initialized with their fil
 private static void ComparingEntireDocuments()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
     // Open PDF documents
     using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments1.pdf"))
@@ -229,7 +229,7 @@ This process can be useful for visually comparing changes or differences between
 private static void ComparePDFWithGetDifferenceMethod()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
     // Open PDF documents
     using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithGetDifferenceMethod1.pdf"))
@@ -264,7 +264,7 @@ The provided code snippet used the  [CompareDocumentsToPdf](https://reference.as
 private static void ComparePDFWithCompareDocumentsToPdfMethod()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
     // Open PDF documents
     using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod1.pdf"))

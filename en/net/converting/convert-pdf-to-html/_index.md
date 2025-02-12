@@ -128,7 +128,7 @@ private static void ConvertPDFtoHTML()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
     {
-        // Save the file into HTML format
+        // Save the output HTML
         document.Save(dataDir + "output_out.html", Aspose.Pdf.SaveFormat.Html);
     }
 }
@@ -155,7 +155,7 @@ private static void ConvertPDFtoMultiPageHTML()
             SplitIntoPages = true
         };
 
-        // Save PDF document
+        // Save the output HTML
         document.Save(dataDir + "MultiPageHTML_out.html", htmlOptions);
     }
 }
@@ -182,7 +182,7 @@ private static void SavePDFtoHTMLWithSVG()
             SpecialFolderForSvgImages = dataDir
         };
 
-        // Save the output file
+        // Save the output HTML
         document.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
     }
 }
@@ -209,7 +209,7 @@ private static void SavePDFtoCompressedHTMLWithSVG()
             CompressSvgGraphicsIfAny = true
         };
 
-        // Save the output file
+        // Save the output HTML
         document.Save(dataDir + "CompressedSVGHTML_out.html", newOptions);
     }
 }
@@ -260,7 +260,7 @@ private static void SavePDFtoHTMLWithSeparateImageFolder()
             SpecialFolderForAllImages = dataDir
         };
 
-        // Save the output file
+        // Save the output HTML
         document.Save(dataDir + "HTMLWithSeparateImageFolder_out.html", newOptions);
     }
 }
@@ -295,7 +295,7 @@ private static void ConvertPDFToHTMLWithBodyContent()
             SplitIntoPages = true
         };
 
-        // Save the output file
+        // Save the output HTML
         document.Save(dataDir + "CreateSubsequentFiles_out.html", options);
     }
 }
@@ -350,7 +350,7 @@ private static void ConvertPDFToHTMLWithLayersRendering()
             ConvertMarkedContentToLayers = true
         };
 
-        // Save PDF document as HTML
+        // Save the output HTML
         document.Save(dataDir + "LayersRendering_out.html", htmlOptions);
     }
 }

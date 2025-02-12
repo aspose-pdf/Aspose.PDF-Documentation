@@ -213,6 +213,7 @@ private static void AddBorder()
     // Open PDF document
     using (var editor = new Aspose.Pdf.Facades.PdfContentEditor())
     {
+        // Bind PDF document
         editor.BindPdf(dataDir + "AddBorder.pdf");
         var lineInfo = new Aspose.Pdf.Facades.LineInfo();
         lineInfo.LineWidth = 2;

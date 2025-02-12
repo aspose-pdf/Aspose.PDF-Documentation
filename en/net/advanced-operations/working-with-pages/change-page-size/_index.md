@@ -103,7 +103,7 @@ The following code snippet shows how to change the PDF page dimensions to A4 siz
 private static void ChangePdfPageSize()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
@@ -130,7 +130,7 @@ You can read PDF page size of an existing PDF file using Aspose.PDF for .NET. Th
 private static void GetPdfPageSize()
 {
     // The path to the documents directory
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
     
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
