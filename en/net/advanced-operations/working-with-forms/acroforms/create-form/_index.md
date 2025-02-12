@@ -162,6 +162,57 @@ private static void AddRadioButtonToPdf()
 }
 ```
 
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) can be added with some widget annotations.
+```csharp
+// For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextBoxFieldToPdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a new page in the created document
+        var page = document.Pages.Add();
+
+        // Defining an array with rectangle data for widget annotations. 
+        // The number of elements in the array determines the number of widget annotations to add.
+        var rects = new Rectangle[]
+        {
+            new Rectangle(10, 600, 110, 620),
+            new Rectangle(10, 630, 110, 650),
+            new Rectangle(10, 660, 110, 680)
+        };
+
+        // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
+        var defaultAppearances = new DefaultAppearance[]
+        {
+            new DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
+            new DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
+            new DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+        };
+
+        // Create a field
+        var textBoxField = new TextBoxField(page, rects);
+
+        // Setting the appearances of widget annotations
+        short i = 0;
+        foreach (WidgetAnnotation wa in textBoxField)
+        {
+            wa.DefaultAppearance = defaultAppearances[i++];
+        }
+        textBoxField.Value = "Text";
+
+        // Add field to the document
+        document.Form.Add(textBoxField);
+
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
+```
+
 The following code snippet shows the steps to add RadioButtonField with three options and place them inside Table cells.
 
 ```csharp
