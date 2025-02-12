@@ -164,14 +164,13 @@ private static void AddRadioButtonToPdf()
 
 [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) can be added with some widget annotations.
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-
+// For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void AddTextBoxFieldToPdf()
 {
     // The path to the documents directory
     string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-    // Create a new document
+    // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add a new page in the created document
@@ -208,7 +207,7 @@ private static void AddTextBoxFieldToPdf()
         // Add field to the document
         document.Form.Add(textBoxField);
 
-        // Save PDF with added TextBoxField
+        // Save PDF document
         document.Save(dataDir + "TextBox_out.pdf");
     }
 }
