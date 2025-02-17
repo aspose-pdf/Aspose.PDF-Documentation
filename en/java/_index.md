@@ -1,5 +1,5 @@
 ---
-title: Aspose.PDF for Java Documentation
+title: Documentation
 linktitle: Aspose.PDF for Java
 second_title: Aspose.PDF for Java
 type: docs
