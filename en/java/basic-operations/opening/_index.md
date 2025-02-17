@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/open-pdf-document/
 description: Learn how to open a PDF file with Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to open a PDF file with Aspose.PDF for Java.
+Abstract: The article provides a guide on how to open existing PDF documents using the Aspose.PDF library in Java. It details three methods for opening PDFs - by specifying a file name, from a stream, and by accessing encrypted documents with a password. The first method demonstrates opening a PDF by specifying its file path and printing the number of pages. The second method involves opening a PDF from a remote URL stream, utilizing a `BufferedInputStream` to handle the input stream and output the page count. The third method explains how to access an encrypted PDF by supplying the required password and retrieving its page count. Each code example includes error handling to manage exceptions that may occur during the document opening process.
+SoftwareApplication: java 
 ---
 
 ## Open existing PDF document

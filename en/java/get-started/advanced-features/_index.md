@@ -5,10 +5,14 @@ type: docs
 weight: 120
 url: /java/advanced-features/
 description: This section shows how you can use LaTeX Tags in PDF document with Aspose.PDF for Java.
-lastmod: "2022-01-11"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Advanced Features section of the Aspose.PDF for Java
+Abstract: The Advanced Features section of the Aspose.PDF for Java documentation provides in-depth guidance on implementing complex PDF processing tasks programmatically. It covers a wide range of functionalities, including digital signatures, encryption, document optimization, and interactive elements such as annotations and form field automation. Additionally, the documentation explains advanced text and image manipulation techniques, custom rendering, and integration with external data sources. With practical Java code examples and detailed explanations, developers can leverage these features to enhance their PDF processing capabilities and build robust document management solutions.
+SoftwareApplication: java
 ---
 
 ## Support for Latex Tags

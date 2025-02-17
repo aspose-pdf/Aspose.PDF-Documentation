@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/migration-from-earlier-versions-of-aspose-pdf-for-java/
 description: Learn how to migrate from earlier versions of Aspose.PDF for Java. Ensure a smooth transition to the latest version.
-lastmod: "2022-01-27"
+lastmod: "2025-02-17"
 ---
 
 - [Migrating your code to Aspose.PDF for Java 2.5.0](/pdf/java/migrating-your-code-to-aspose-pdf-for-java-2-5-0/)

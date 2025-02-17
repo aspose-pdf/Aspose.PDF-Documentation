@@ -5,10 +5,14 @@ type: docs
 weight: 40
 url: /java/replace-text-in-a-pdf-document/
 description: Explore how to replace text within a PDF document in Java using Aspose.PDF for content updates and document customization.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to replace text within a PDF document using Aspose.PDF for Java
+Abstract: The article provides a detailed guide on various text manipulation techniques within PDF documents using Aspose.PDF for Java. It begins by introducing the concept of replacing text across all pages in a PDF, utilizing the `TextFragmentAbsorber` class to identify and modify specific text fragments. The article expands on this by illustrating how to replace text within specific regions of a page, employing the `TextSearchOptions.setRectangle` method to define search boundaries. Additionally, it covers text replacement based on regular expressions and demonstrates how to use `TextEditOptions` to replace fonts within a PDF. The article also delves into more advanced techniques, such as using non-English fonts for text replacement, ensuring text replacement automatically re-arranges page content, and handling replaceable symbols during PDF creation. It includes examples of rendering replaceable symbols in header/footer areas, highlighting the use of symbols like `$P` and `$p` for dynamic page numbering.
+SoftwareApplication: java 
 ---
 
 ## Replace Text in all pages of PDF document

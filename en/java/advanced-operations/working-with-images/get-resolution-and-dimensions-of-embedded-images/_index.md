@@ -5,7 +5,11 @@ type: docs
 weight: 40
 url: /java/get-resolution-and-dimensions-of-embedded-images/
 description: Discover how to extract image resolutions and dimensions from embedded images in PDF files using Aspose.PDF in Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true 
+AlternativeHeadline: How to get image resolutions and dimensions from images in PDF using Aspose.PDF in Java
+Abstract: The article provides a detailed explanation on how to utilize operator classes within the Aspose.PDF namespace to acquire resolution and dimension information about images embedded in a PDF document without extracting them. The process involves several steps, beginning with loading a source PDF file and creating an `ArrayList` to store image names. The article describes the use of the Page.Resources.Images property to access images and introduces a stack to manage the graphics state of images, enabling tracking of different states. The use of the `ConcatenateMatrix` object is discussed to apply transformations like scaling, rotating, and skewing, while ensuring transformations can be reverted using GSave and GRestore operators. The `Do` operator is highlighted for rendering images during transformations. Additionally, the `XImage` class is utilized to obtain image dimensions, aiding in resolution calculations. The article includes a Java code snippet demonstrating the implementation of these techniques to output image dimensions and resolutions through a Command Prompt, without the necessity of image extraction from the PDF.
+SoftwareApplication: java
 ---
 
 This topic explains how to use the operator classes in the Aspose.PDF namespace which provide the capability to get resolution and dimension information about images without having to extract them.

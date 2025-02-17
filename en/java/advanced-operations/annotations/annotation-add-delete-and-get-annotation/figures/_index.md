@@ -5,10 +5,14 @@ type: docs
 weight: 30
 url: /java/figures-annotation/
 description: This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for Java
-lastmod: "2021-11-24"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on creating, retrieving, and deleting Figures Annotations with Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on creating, retrieving, and deleting various types of annotations in PDF documents using Aspose.PDF for Java. It details the steps to add Square, Circle, Polygon, Polyline, Line, and Ink annotations, each accompanied by relevant Java code snippets. Square and Circle annotations are used to display rectangles and ellipses, respectively, with pop-up notes. Polygon and Polyline annotations allow for creating multi-vertex shapes, with Polyline not implicitly connecting the first and last vertices. Line annotations display straight lines with optional pop-up windows and captions, while Ink annotations represent freehand scribbles composed of disjoint paths. The guide further explains how to retrieve these annotations using `AnnotationSelector` and delete them from the PDF document, ensuring comprehensive manipulation of annotations within PDFs.
+SoftwareApplication: java
 ---
 
 ## Add Square or Circle Annotations

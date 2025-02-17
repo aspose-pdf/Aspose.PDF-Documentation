@@ -5,10 +5,14 @@ type: docs
 weight: 30
 url: /java/text-formatting-inside-pdf/
 description: Discover how to format text inside a PDF document using Aspose.PDF in Java, allowing for customized styling.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to format text inside a PDF document using Aspose.PDF in Java
+Abstract: The article provides detailed guidance on various text formatting techniques using Aspose.PDF for Java, a library for PDF document manipulation. Key functionalities include setting line indent via the `SubsequentLinesIndent` property within the `TextFormattingOptions` class, demonstrated through a Java code snippet that showcases the creation of a PDF with specific line indentations. Additionally, the article covers adding text borders by utilizing the `TextBuilder` and `TextState` classes to draw borders around text fragments. Methods for underlining text, striking out text, and adding new line feeds are also presented with corresponding code examples. Furthermore, it illustrates how to apply gradient shading to text using the `setPatternColorSpace` method, enabling both axial and radial shading effects. The article concludes with a demonstration of aligning text within a floating box, showcasing vertical and horizontal alignment properties. Each section is accompanied by practical Java code snippets, emphasizing the library's comprehensive text manipulation capabilities.
+SoftwareApplication: java 
 ---
 
 ## How to add Line Indent to PDF

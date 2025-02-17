@@ -5,10 +5,14 @@ type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
 description: Add a Page stamp to a PDF file using the PdfPageStamp class with Java.
-lastmod: "2021-09-10"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on using the Aspose.PDF API to add Page stamps to PDF documents
+Abstract: The article titled "Add Page Stamp with Java" provides a guide on using the `PdfPageStamp` class to apply composite stamps on PDF documents using Java. This process is akin to creating stationery in design software such as Adobe InDesign, Illustrator, or Microsoft Word. The article includes a practical example demonstrating how to use this functionality to apply two types of borders with blue and plum colors on a sample PDF document. The Java code snippet illustrates creating `PdfPageStamp` objects for the borders, configuring their properties, and applying them alternately on the pages of the document. The modified document is then saved with the applied stamps, showcasing the ease of adding complex graphical elements to PDF pages programmatically.
+SoftwareApplication: java
 ---
 
 ## Add Page Stamp with Java

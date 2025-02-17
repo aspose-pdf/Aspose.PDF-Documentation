@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/generate-pdf-from-xml
 description: Aspose.PDF for Java provides the opportunity to convert an XML file into PDF document requiring that the input XML file must follow the Aspose.PDF for Java Schema.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to generate PDF file from XML using Aspose.PDF for Java
+Abstract: Generating a PDF document from an XML source is a complex task due to the diverse content that XML can describe. Aspose.PDF for Java offers several methods to accomplish this, including XSLT transformation, XSL-FO markup, and Aspose.PDF XML Schema. This method involves converting XML to HTML using XSL (eXtensible Stylesheet Language) and subsequently creating a PDF from the HTML data. An example provided is a simple CD catalog XML file, which is transformed into an HTML table using XSL. The transformation process is handled in Java using libraries to convert the XML data into HTML and then into a PDF document XSL-FO (XSL Formatting Objects) is an XML-based language used to describe the formatting of XML data for output. Aspose.PDF includes classes that apply XSL-FO transformations to generate PDFs. An example is given with an XML file
+SoftwareApplication: java 
 ---
 
 Generating a PDF document from an XML document is not a trivial task because XML document can describes different content

@@ -5,10 +5,14 @@ type: docs
 weight: 140
 url: /java/pdf-file-metadata/
 description: Discover how to manage and extract metadata from PDF files in Java using Aspose.PDF to handle document properties.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on handling PDF file metadata using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on handling PDF file metadata using Aspose.PDF for Java. It covers methods to retrieve and set both file-specific information and XMP metadata. The guide begins by explaining how to access and display PDF file information such as author, creation date, and title using the `DocumentInfo` class. It then details how to modify these properties and save the updated document, while noting limitations on altering certain fields like "Producer" and "Creator". The article also demonstrates retrieving and setting XMP metadata, including creating custom metadata namespaces with prefixes. Code snippets are provided throughout to illustrate the practical application of these processes.
+SoftwareApplication: java
 ---
 
 ## Get PDF File Information

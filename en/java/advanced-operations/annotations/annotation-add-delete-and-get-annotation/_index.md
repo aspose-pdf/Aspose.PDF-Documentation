@@ -5,10 +5,15 @@ linktitle: Add, Delete and Get Annotation
 weight: 20
 url: /java/add-delete-and-get-annotation/
 description: With Aspose.PDF for Java you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.
-lastmod: "2021-11-28"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Manipulate annotations in PDF documents with Aspose.PDF for Java
+Abstract: This article explores the concept of annotations in PDF documents, which serve to enhance and expand the content through edits, comments, and formatting adjustments like highlighting or underlining text. Annotations can also include adding entirely new text to improve document readability. The article specifically discusses various types of annotations s
+upported by the Aspose.PDF for Java library, categorizing them into groups such as Text Annotations, Highlights Annotations, Figures Annotations, Multimedia Annotations, Sticky Annotations, and Extra Annotations, each with distinct purposes and functionalities.
+SoftwareApplication: java
 ---
 
 **What are annotations in PDF documents?**

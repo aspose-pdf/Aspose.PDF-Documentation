@@ -5,7 +5,11 @@ type: docs
 weight: 60
 url: /java/search-and-get-images-from-pdf-document/
 description: This section explain how to search and get images from PDF document with Aspose.PDF for Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true 
+AlternativeHeadline: How to search and get images from PDF with Aspose.PDF for Java library
+Abstract: This article provides a guide on using the `ImagePlacementAbsorber` class from the Aspose.PDF library to search for images across all pages of a PDF document. The process involves calling the `Accept` method of the `Pages` collection with an `ImagePlacementAbsorber` object to collect `ImagePlacement` items, which contain properties of the images found, such as dimensions and resolution. The article includes a Java code example demonstrating how to open a PDF document, create an `ImagePlacementAbsorber`, and retrieve properties of images within the document through iteration of `ImagePlacement` objects. Additionally, it shows how to extract images from a specific page using a modified `Accept` method call.
+SoftwareApplication: java
 ---
 
 The [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImagePlacementAbsorber) allows you to search among images on all pages in a PDF document.

@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF file using the TextStamp class with Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on using the Aspose.PDF API to add Text stamps to PDF documents
+Abstract: The Text Stamps in the PDF File section of the Aspose.PDF for Java documentation provides detailed instructions on how to add text stamps to PDF documents programmatically. It explains how to create and apply text stamps with customizable properties such as font style, size, color, transparency, and positioning. The documentation also covers advanced features like rotating text stamps and layering them over or under existing content. With clear explanations and practical Java code examples, developers can efficiently integrate text stamping functionality into their applications for document watermarking, branding, and annotation purposes.
+SoftwareApplication: java    
 ---
 
 ## Add Text Stamp with Java

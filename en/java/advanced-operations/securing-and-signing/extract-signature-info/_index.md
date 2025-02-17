@@ -5,10 +5,14 @@ type: docs
 weight: 30
 url: /java/extract-image-and-signature-information/
 description: You may extract images from the signature field and extract signature information using the SignatureField class with Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Extract various data from Signature using Aspose.PDF for Java
+Abstract: The article discusses the enhanced functionality of the Aspose.PDF for Java API, focusing on the extraction of images and signature information from digital signature fields in PDF documents. The API now includes the `extractImage()` method in the `SignatureField` class, allowing users to retrieve images associated with signature fields. A code snippet demonstrates how to extract images and save them as JPEG files using this method. Additionally, the article covers the replacement of signature images, guiding users on how to identify and manipulate signature fields to overlay new images. Furthermore, the article explains the process of extracting signature information using the `extractCertificate()` method, which retrieves details like the public key, thumbprint, and issuer from the signature field. Another code snippet illustrates how to extract the certificate from a PDF and save it as a `.cer` file. These capabilities enhance the manipulation of digital signatures in PDFs, providing developers with tools to manage signature appearance and extract relevant data programmatically.
+SoftwareApplication: java
 ---
 
 ## Extracting Image from Signature Field

@@ -5,10 +5,14 @@ type: docs
 weight: 100
 url: /java/technical-support/
 description: This page gives recommendations for quick and quality to resolve your tasks using Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Technical Support of the Aspose.PDF for Java
+Abstract: Aspose.PDF provides free technical support through various channels, primarily utilizing the [Aspose.Forums](https://forum.aspose.com/) for user inquiries, specifically the [Aspose.PDF forum](https://forum.aspose.com/c/pdf/10). Direct phone support is not available for technical issues and is limited to sales and purchase inquiries. Time zone differences may impact response times. For efficient issue resolution, it is recommended to utilize the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) for Java APIs and configure them in Maven projects. Before reporting issues, users should explore existing solutions within the forum and documentation, including the [API Reference](https://reference.aspose.com/pdf/java). When submitting a query, users should provide the original document and relevant code snippets, ensuring they are zipped if multiple files are involved.
+SoftwareApplication: java
 ---
 
 Aspose.PDF allows you to use free technical support for all its products. If you have questions about Aspose.PDF, check the next article:

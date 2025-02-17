@@ -4,7 +4,7 @@ type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/
 description: Learn how to use the PDFContentEditor class in Java to manipulate the content of a PDF document using Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

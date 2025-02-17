@@ -4,11 +4,15 @@ linktitle: Convert PDF documents
 type: docs
 weight: 50
 url: /java/converting/
-lastmod: "2021-11-17"
+lastmod: "2025-02-17"
 description: This section contains a description of all possible options for converting PDF documents on Java using Aspose.PDF library.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: Convert PDF documents to various formats and vice versa with Aspose.PDF for Java
+Abstract: The article discusses the capabilities of Aspose.PDF for Java, a versatile library for converting PDF documents to various formats and vice versa. It highlights the library's support for popular formats, such as Word, Excel, PowerPoint, HTML, and various image formats, and provides code examples to illustrate the conversion processes. The article also addresses less common formats like EPUB, Markdown, PCL, XPS, LATex/TeX, Text, and PostScript, and focuses on converting PDFs to PDF/A for long-term archiving. Additionally, the article includes links to specific sections for detailed conversion guides and promotes an online tool for testing Aspose.PDF's conversion capabilities. A complete list of supported formats is available through a provided link.
+SoftwareApplication: java
 ---
 
 **Aspose.PDF for Java** allows converting PDF documents to various formats and also converting from other formats to PDF. Also, you can check the quality of Aspose.PDF conversion and view the results online with Aspose.PDF converter app.

@@ -5,10 +5,14 @@ type: docs
 weight: 90
 url: /java/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Work with links, actions and bookmarks using Aspose.PDF for Java
+Abstract: This article provides a comprehensive guide on managing various interactive elements within PDF files using Java. It covers the creation, updating, and extraction of links, enabling efficient hyperlink management within PDFs. Additionally, the article explores methods to add, retrieve, and remove hyperlinks, as well as manage Document Open Actions and specify PDF page views. Furthermore, it discusses the use of bookmarks in large publications, explaining how they facilitate navigation through a document by allowing users to jump to specific pages or chapters via the Bookmarks Pane. The Pane is a dynamic feature that appears in the sidebar when a PDF contains a bookmark structure, enhancing the user experience by providing easy access to content.
+SoftwareApplication: java
 ---
 
 - [Links](/pdf/java/links/) - you can easily create, update and extract links with Java.

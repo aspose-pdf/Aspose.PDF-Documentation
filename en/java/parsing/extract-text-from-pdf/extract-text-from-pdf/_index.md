@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/extract-text-from-all-pdf/
 description: This article describes various ways to extract text from PDF documents using Aspose.PDF for Java. From entire pages, from a specific part, based on columns, etc.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to Extract text from PDF with Aspose.PDF for Java
+Abstract: This article explores various methods for extracting text from PDF documents using Aspose.PDF for Java. It provides detailed instructions and code examples for different scenarios, including extracting text from all pages, specific regions, and highlighted sections. The article discusses the use of classes such as `TextAbsorber` and `TextDevice`, and explains how to set extraction options and handle output. Additionally, it covers advanced features like adjusting text extraction based on columns using the `ScaleFactor` and accessing text fragments and segments from XML. These techniques are essential for developers needing to manipulate and extract data from PDF files programmatically.
+SoftwareApplication: java
 ---
 
 ## Extract Text From All the Pages of a PDF Document

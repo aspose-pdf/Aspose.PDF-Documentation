@@ -4,7 +4,11 @@ type: docs
 weight: 30
 url: /java/get-and-set-page-properties/
 description: This topic explain how to get numbers in PDF file, get page properties and determine page color using Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true 
+AlternativeHeadline: How to Get and Set Page Properties using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on using Aspose.PDF for Java to manipulate PDF page properties within Java applications. It explains how to determine the number of pages in a PDF document, both by saving the file and using the `processParagraphs()` method, which allows for page count retrieval without saving the document. The article further delves into accessing various page properties such as MediaBox, BleedBox, TrimBox, ArtBox, and CropBox, offering a detailed description of each. Additionally, it covers how to determine the color type of PDF pages, whether they are in RGB, grayscale, black and white, or undefined. Code snippets illustrate how to perform these operations, emphasizing the functionality provided by classes like `Document`, `PageCollection`, and `Page` within the Aspose.PDF library.
+SoftwareApplication: java
 ---
 
 Aspose.PDF for Java lets you read and set properties of pages in a PDF file in your Java applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties. 

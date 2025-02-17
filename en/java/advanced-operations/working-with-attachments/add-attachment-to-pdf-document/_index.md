@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/add-attachment-to-pdf-document/
 description: This page describes how to add an attachment to a PDF file with Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add attachments to a PDF file using Java
+Abstract: The article provides a step-by-step guide on how to add attachments to a PDF file using Java. It begins by creating a `FileSpecification` object, which contains the file intended for attachment along with a description. This object is then added to a PDF document's `EmbeddedFiles` collection, which holds all attachments in the document. The article includes a code snippet demonstrating this process - it opens an existing PDF document, sets up a new file to be attached, adds it to the document's attachments, and saves the updated PDF. The example uses Aspose.PDF for Java to manage the attachment process.
+SoftwareApplication: java
 ---
 
 Attachments can contain a wide variety of information and can be of a variety of file types. This article explains how to add an attachment to a PDF file.
