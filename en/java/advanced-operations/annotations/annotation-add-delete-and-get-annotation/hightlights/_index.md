@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/highlights-annotation/
 description: Discover how to add highlights annotations in a PDF document in Java using Aspose.PDF to highlight important text.
-lastmod: "2021-11-24"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Managing text markup annotations in PDF documents using Java

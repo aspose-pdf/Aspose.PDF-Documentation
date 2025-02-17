@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /java/pdffilesecurity-class/
 description: Learn how to secure PDF documents by applying encryption and passwords using the PDFFileSecurity class in Java with Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

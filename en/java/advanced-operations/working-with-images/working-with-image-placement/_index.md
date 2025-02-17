@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/working-with-image-placement/
 description: This section describes the features of working with image placement PDF file using Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 TechArticle: true 
 AlternativeHeadline: Using ImagePlacement objects in PDF documents in Java library
 Abstract: The article discusses the use of Aspose.PDF for Java, specifically focusing on the classes `ImagePlacement`, `ImagePlacementAbsorber`, and `ImagePlacementCollection`, which are used to determine an image's resolution and position within a PDF document. The `ImagePlacementAbsorber` class is responsible for searching and collecting `ImagePlacement` objects, which provide properties such as `Resolution` and `Rectangle` to extract image placement details. The article includes a Java code example demonstrating how to utilize these classes. It shows loading a PDF document, extracting image properties like width, height, and resolution, and then retrieving and processing images from the PDF. The example further illustrates how to scale and replace images using Java's `BufferedImage` class. This provides a practical implementation of handling and manipulating images within PDF documents using the Aspose.PDF library.

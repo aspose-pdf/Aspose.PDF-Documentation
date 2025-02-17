@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/extract-and-save-an-attachment/
 description: Aspose.PDF for Java allows you to get all attachments from a PDF document. Also, you can get an individual attachment from your document.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on using Aspose.PDF to extract attachments from a PDF document

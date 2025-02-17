@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /java/create-pdf-document/
 description: Aspose.PDF for Java helps you to create PDF document and searchable PDF file in few easy steps.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 TechArticle: true
 AlternativeHeadline: Guide on using the Aspose.PDF for Java API to generate and read PDF files
 Abstract: This article provides a comprehensive guide on using the Aspose.PDF for Java API to generate and read PDF files within Java applications. Aspose.PDF for Java allows developers to embed PDF processing capabilities directly into their applications, eliminating the need for additional software installations. It supports various Java application types, including Desktop, JSP, and JSF applications. The article outlines a step-by-step process for creating PDF files using Java by instantiating a `Document` object, adding a `Page` to its pages collection, inserting a `TextFragment` into the page's paragraphs, and saving the document. An example code snippet demonstrates the creation of a simple one-page PDF with "Hello, World!" text. Additionally, the article explores creating searchable PDFs using Aspose.PDF for Java. It details the use of a callback function to perform text recognition on PDF images, leveraging external OCR tools like Google Tesseract. The complete code example illustrates the conversion process, including handling image files and generating the searchable.

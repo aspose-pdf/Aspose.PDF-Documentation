@@ -5,9 +5,9 @@ type: docs
 weight: 40
 url: /java/modifing-form/
 description: This section explains how to modifying forms in your PDF document with Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on Modifying AcroForms in PDF documents using Aspose.PDF for Java

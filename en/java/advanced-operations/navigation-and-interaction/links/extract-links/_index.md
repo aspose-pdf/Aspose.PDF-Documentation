@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/extract-links/
 description: Extract links from PDF with Java. This topic explain you how to extract links using AnnotationSelector class. 
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Extracting links in a PDF file using Aspose.PDF for Java

@@ -5,9 +5,9 @@ type: docs
 weight: 70
 url: /java/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Java allows you to add headers and footers to your PDF file using TextStamp class.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on adding text and image stamps to PDF documents using Aspose.PDF for Java

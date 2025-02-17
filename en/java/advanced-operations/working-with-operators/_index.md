@@ -5,9 +5,9 @@ type: docs
 weight: 170
 url: /java/operators/
 description: This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on utilizing PDF operators to manipulate PDFs using Aspose.PDF

@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/extract-fonts-from-pdf/
 description: How to extract font from PDF using Aspose.PDF for Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to extract fonts from a PDF document using Aspose.PDF for Java

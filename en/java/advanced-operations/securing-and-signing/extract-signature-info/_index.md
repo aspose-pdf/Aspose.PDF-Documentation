@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/extract-image-and-signature-information/
 description: You may extract images from the signature field and extract signature information using the SignatureField class with Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Extract various data from Signature using Aspose.PDF for Java

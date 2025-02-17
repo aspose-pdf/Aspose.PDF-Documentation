@@ -4,7 +4,7 @@ linktitle: Convert PDF to PDF/A formats
 type: docs
 weight: 100
 url: /java/convert-pdf-to-pdfa/
-lastmod: "2021-11-19"
+lastmod: "2025-02-17"
 description: Learn how to convert PDF files to PDF/A format for long-term archiving and compliance with document preservation standards using Aspose.PDF in Java.
 sitemap:
     changefreq: "monthly"

@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/actions/
 description: This section explains how to add actions to the document and form fields programmatically with Java. Learn how to Add, Create, and Get Hyperlink in a PDF File.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to use actions in the PDF document using Aspose.PDF for Java

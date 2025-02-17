@@ -5,9 +5,9 @@ type: docs
 weight: 60
 url: /java/rotate-pages/
 description: Change page orientation and fitting the page content to the new page orientation using Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on changing the page orientation of an existing PDF file using Aspose.PDF for Java

@@ -5,9 +5,9 @@ type: docs
 weight: 50
 url: /java/working-with-tables/
 description: This section describes how to add and extract a table, how to manipulate and integrate a table using the Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Manipulate Tables in PDF using Aspose.PDF for Java

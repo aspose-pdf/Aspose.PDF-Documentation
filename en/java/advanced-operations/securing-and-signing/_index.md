@@ -5,9 +5,9 @@ type: docs
 weight: 150
 url: /java/securing-and-signing/
 description: Discover how to secure and digitally sign PDF documents in Java using Aspose.PDF for document protection and authentication.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Add digital signatures in PDF documents using the Aspose.PDF library for Java

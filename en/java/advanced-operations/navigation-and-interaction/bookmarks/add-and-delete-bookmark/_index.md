@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /java/add-and-delete-bookmark/
 description: You can add a bookmark to a PDF document with Java. It is possible to delete all or particular bookmarks from a PDF document.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to manage bookmarks using the Aspose PDF Java library

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-text-to-pdf-file/
 description: Discover how to insert text into an existing PDF document in Java with Aspose.PDF for text insertion and modification.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

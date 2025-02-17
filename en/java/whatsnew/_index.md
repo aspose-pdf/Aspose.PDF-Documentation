@@ -8,12 +8,181 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 TechArticle: true 
 AlternativeHeadline: Popular New Features in Aspose.PDF for Java
 Abstract: The What’s New section of the Aspose.PDF for Java documentation provides an overview of the latest updates, enhancements, and bug fixes introduced in recent releases. It highlights new features, performance improvements, and compatibility updates to help developers stay informed about the latest advancements in PDF processing. The documentation also includes details on deprecated functionalities and recommended alternatives. By regularly reviewing this section, developers can ensure they are utilizing the most efficient and up-to-date features in their Java applications for seamless PDF management.
 SoftwareApplication: java
 ---
+
+## What's new in Aspose.PDF 25.1
+
+The ability to pass the path to the external ICC profile for PDF/X and PDF/A conversion has already existed in the library for some years, enabled by the PdfFormatConversionOptions.IccProfileFileName property. Now it's also possible to pass data to fill OutputIntent properties using an object of the OutputIntent class.
+
+The following snippet shows how to convert annotation document to PDF/X-1 using annotation FOGRA39 ICC profile:
+
+```java
+
+    String iccProfile = "Coated_Fogra39L_VIGC_300.icc";
+    String outputConditionIdentifier = "FOGRA39";
+
+    Document pdfDocument = new Document("58191_1.pdf");
+    try {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions("log.log", PdfFormat.PDF_X_1A, ConvertErrorAction.Delete);
+        options.setIccProfileFileName(iccProfile);
+        options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
+        pdfDocument.convert(options);
+        pdfDocument.save("42686_1_PDF_X_1A.pdf");
+    } finally {
+        if (pdfDocument != null) {
+            pdfDocument.dispose();
+        }
+    }
+```
+
+Since 25.1 added the ability to obtain information about privileges when using documents:
+
+```java
+
+    Document document = new Document();
+    document.getPages().add();
+    try
+    {
+        PdfFileInfo info = new PdfFileInfo();
+        info.bindPdf(document);
+        DocumentPrivilege privilege = info.getDocumentPrivilege();
+        System.out.println(2 == privilege.getCopyAllowLevel());
+        System.out.println(2 == privilege.getPrintAllowLevel());
+        System.out.println(-1 == privilege.getChangeAllowLevel());
+
+        privilege.setCopyAllowLevel(0);
+        privilege.setCopyAllowLevel(1);
+        privilege.setCopyAllowLevel(2);
+
+        privilege.setPrintAllowLevel(0);
+        privilege.setPrintAllowLevel(1);
+        privilege.setPrintAllowLevel(2);
+
+        privilege.setChangeAllowLevel(0);
+        privilege.setChangeAllowLevel(1);
+        privilege.setChangeAllowLevel(2);
+        privilege.setChangeAllowLevel(3);
+        privilege.setChangeAllowLevel(4);
+
+        PdfFileSecurity fs = new com.aspose.pdf.facades.PdfFileSecurity(document, dataDir + "out_new_Doc"+version+".pdf");
+        fs.setPrivilege(privilege);
+    }
+    finally { 
+        if (document != null) document.dispose(); 
+        }
+```        
+
+## What's new in Aspose.PDF 24.12
+
+Since version 24.12, it has been possible to support for surrogate pair characters.
+
+The term 'surrogate pair' refers to encoding Unicode characters with high code points in the UTF-16 encoding scheme.
+
+```java
+
+    String surrogate_pair  = "🌉";
+        System.out.println(surrogate_pair.length());//==2
+        Document doc = new Document();
+        Page p = doc. getPages().add();
+    //add the path to the required fonts that contains surrogate pair characters
+        FontRepository.addLocalFontPath("C:\\Fonts\\Noto_Emoji");
+        Font f = FontRepository.findFont("Noto Emoji");
+        System.out.println(f.doesFontContainAllCharacters(surrogate_pair));
+        TextFragment textFragment = new TextFragment();
+        TextSegment segment = new TextSegment(surrogate_pair);
+        segment.getTextState().setFont(f);
+        textFragment.setText(surrogate_pair);
+        textFragment.getSegments().add(segment);
+
+        p.getParagraphs().add(textFragment);
+        doc.save(dataDir + "out_24_11_.pdf");
+```
+
+Since version 24.12, it has been possible to convert PDF documents into PDF/A-4. Part 4 of the standard, based on PDF 2.0, was published in late 2020.
+
+The following code snippet demonstrates how to convert a document into PDF/A-4 format when the input document is an earlier PDF version than 2.0.
+
+```java
+
+    Document document = new Document(inputPdf);
+    // Only PDF-2.x documents can be converted to PDF/A-4
+    document.convert("log1.xml", PdfFormat.v_2_0, ConvertErrorAction.Delete);
+    document.save(tmpOutputFile);
+
+    document = new Document(tmpOutputFile);
+    document.convert("log2.xml", PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
+    document.save("output.pdf");
+```
+
+## What's new in Aspose.PDF 24.9
+
+In this release possible to create an accessible PDF using low-level functions:
+
+The next code snippet works with a PDF document and its tagged content, utilizing an Aspose.PDF library to process it.
+
+```java
+
+    //Create template document with simple text
+    Document documentTemp = new Document();
+            Page page = documentTemp .getPages().add();
+            TextFragment fragment = new TextFragment("Helloworld");
+            page.getParagraphs().add(fragment);
+            documentTemp .save(output);
+
+    //Add tag to the text in the document
+    Document document = new Document(output);
+            OperatorCollection operators = document.getPages().get_Item(1).getContents();
+            for (int i = 1; i <= operators.size(); i++) {
+                Operator op = operators.get_Item(i);
+                if (op instanceof BT) {
+                    BDC bdc = new BDC("P", new BDCProperties(new Integer[]{1}, "ru", "Hello world"));
+                    operators.insert(i - 1, bdc);
+                    i += 1;
+                }
+
+                if (op instanceof ET) {
+                    operators.insert(i + 1, new EMC());
+                    i += 1;
+                }
+            }
+
+            ITaggedContent content = document.getTaggedContent();
+            SpanElement span = content.createSpanElement();
+            content.getRootElement().appendChild(span);
+            for (Operator op :  operators) {
+                if (op instanceof BDC) {
+                    BDC bdc = (BDC)op;
+                    if (bdc != null) {
+                        span.tag(bdc);
+                    }
+                }
+            }
+
+            document.save(output);
+```
+
+The `GraphicalPdfComparer` class is added for the graphic comparison of PDF documents and pages. Graphic comparison deals with document page images. It returns the result as an `ImagesDifference` object or as a PDF document that contains images merged from the original and the differences. Graphic comparison is most useful for documents that have minor differences in text or graphic content.
+
+The following code snippet demonstrates the graphic comparison of two PDF documents and saves an image with the differences into the resultant PDF document:
+
+```java
+
+    GraphicalPdfComparer comparer = new GraphicalPdfComparer();
+        comparer.setThreshold(3.0);
+        comparer.setColor(Color.getRed());
+        comparer.setResolution(new Resolution(300));
+
+        Document doc1 = new Document(dataDir+"graph_compare.pdf");
+        Document doc2 = new Document(dataDir+"graph_compare_.pdf");
+        comparer.compareDocumentsToPdf(doc2, doc1, dataDir+"graph_compare_24_9__.pdf");
+        doc1.close();
+        doc2.close();
+```
 
 ## What's new in Aspose.PDF 24.8
 

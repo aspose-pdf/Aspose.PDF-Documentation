@@ -4,10 +4,10 @@ linktitle: Convert PDF documents
 type: docs
 weight: 50
 url: /java/converting/
-lastmod: "2021-11-17"
+lastmod: "2025-02-17"
 description: This section contains a description of all possible options for converting PDF documents on Java using Aspose.PDF library.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.8
 TechArticle: true 
 AlternativeHeadline: Convert PDF documents to various formats and vice versa with Aspose.PDF for Java

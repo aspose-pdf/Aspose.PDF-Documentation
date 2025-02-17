@@ -5,9 +5,9 @@ type: docs
 weight: 50
 url: /java/working-with-forms/
 description: This section explains how to work with AcroForms and XFA Forms in your PDF documents with Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Manipulate Forms in PDF using Aspose.PDF for Java

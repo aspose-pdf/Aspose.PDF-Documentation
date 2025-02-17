@@ -5,9 +5,9 @@ type: docs
 weight: 70
 url: /java/advanced-operations/
 description: You can perform not only simple and easy tasks but also cope with more complex goals with Aspose. PDF for Java. 
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Advanced operations for working with PDF documents with Aspose.PDF for Java

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 TechArticle: true 
 AlternativeHeadline: Guide on optimizing and reducing the size of PDF files using Aspose.PDF for Java
 Abstract: The article provides a comprehensive guide on optimizing and reducing the size of PDF files using various techniques, primarily through the Aspose.PDF API. It emphasizes the benefits of optimizing PDFs for better network transfer, storage efficiency, and suitability for online publishing. Key optimization strategies discussed include optimizing page content for web browsing, compressing images, merging duplicate streams, unembedding fonts, and removing unused objects, streams, annotations, and form fields. The article also provides detailed code examples for implementing these techniques in Java, demonstrating how to linearize PDFs for online viewing, compress and resize images, remove redundant data, and convert color spaces to grayscale for improved printing efficiency. Additionally, it covers advanced features like using FlateDecode compression and storing images in XImageCollection for further optimization. Overall, the guide aims to equip users with practical methods to enhance PDF performance and manage file sizes effectively.

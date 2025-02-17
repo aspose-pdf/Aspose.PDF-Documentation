@@ -4,7 +4,7 @@ type: docs
 weight: 120
 url: /java/pdffilestamp-class/
 description: Explore how to use the PDFFileStamp class in Java to stamp text or images onto a PDF document using Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

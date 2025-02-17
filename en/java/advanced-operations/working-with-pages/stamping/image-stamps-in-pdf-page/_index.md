@@ -7,7 +7,7 @@ url: /java/image-stamps-in-pdf-page/
 description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF for Java library.
 lastmod: "2021-06-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on using the Aspose.PDF API to add image stamps to PDF documents

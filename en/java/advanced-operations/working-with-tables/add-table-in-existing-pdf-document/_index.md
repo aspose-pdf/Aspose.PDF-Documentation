@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-table-in-existing-pdf-document/
 description: Discover how to add a table to an existing PDF document in Java using Aspose.PDF, enabling structured data presentation.
-lastmod: "2021-12-16"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

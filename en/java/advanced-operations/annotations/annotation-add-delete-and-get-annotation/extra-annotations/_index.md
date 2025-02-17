@@ -5,9 +5,9 @@ type: docs
 weight: 60
 url: /java/extra-annotations/
 description: Discover how to add extra annotations to PDF documents in Java with Aspose.PDF for more interactive documents.
-lastmod: "2021-11-24"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on adding and managing annotations in PDF with Aspose.PDF for Java

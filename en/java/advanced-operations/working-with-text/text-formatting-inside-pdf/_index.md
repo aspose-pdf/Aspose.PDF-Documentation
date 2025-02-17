@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/text-formatting-inside-pdf/
 description: Discover how to format text inside a PDF document using Aspose.PDF in Java, allowing for customized styling.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to format text inside a PDF document using Aspose.PDF in Java

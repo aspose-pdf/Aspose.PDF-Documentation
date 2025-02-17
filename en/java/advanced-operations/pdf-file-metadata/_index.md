@@ -5,9 +5,9 @@ type: docs
 weight: 140
 url: /java/pdf-file-metadata/
 description: Discover how to manage and extract metadata from PDF files in Java using Aspose.PDF to handle document properties.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on handling PDF file metadata using Aspose.PDF for Java

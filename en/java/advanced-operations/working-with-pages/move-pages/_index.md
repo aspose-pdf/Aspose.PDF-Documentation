@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on how to manipulate PDF documents using Aspose.PDF for Java

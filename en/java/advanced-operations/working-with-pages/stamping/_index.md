@@ -5,9 +5,9 @@ type: docs
 weight: 120
 url: /java/stamping/
 description: This section describes how to add image stamps and text stamps to a PDF page.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to add image stamps and text stamps to a PDF page using Aspose.PDF for Java

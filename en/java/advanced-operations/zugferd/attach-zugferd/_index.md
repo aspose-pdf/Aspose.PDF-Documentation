@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/attach-zugferd/
 description: Learn how to generate a PDF document with ZUGFeRD in Aspose.PDF for Java
-lastmod: "2024-01-18"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

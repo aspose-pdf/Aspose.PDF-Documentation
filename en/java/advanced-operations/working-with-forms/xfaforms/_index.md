@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/xfa-forms/
 description: Explore how to handle XFA forms in PDF documents, including form data processing and conversion, with Aspose.PDF in Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Overview of XML Forms Architecture and its application in PDF forms

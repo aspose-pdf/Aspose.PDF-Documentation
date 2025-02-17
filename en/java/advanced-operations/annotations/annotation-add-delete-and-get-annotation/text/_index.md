@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/text-annotation/
 description: Aspose.PDF for Java allows you to Add, Get, and Delete Text Annotation from your PDF document.
-lastmod: "2021-11-24"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

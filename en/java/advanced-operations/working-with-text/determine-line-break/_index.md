@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment using Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

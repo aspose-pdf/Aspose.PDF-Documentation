@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/save-pdf-document/
 description: Learn how to save PDF file with Aspose.PDF for Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to save PDF file with Aspose.PDF for Java library

@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/working-with-facades/
 description: This section explains how to work with com.aspose.pdf.facades - a toolset for popular operations with PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

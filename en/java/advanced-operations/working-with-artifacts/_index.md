@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /java/artifacts/
 description: This page describes how to work with Artifact class using Aspose.PDF for Java. Code snippets show how to add a background image to PDF pages and how to get each watermark on the first page of a PDF file.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

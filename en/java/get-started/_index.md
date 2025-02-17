@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/get-started/
 description: This section describes the basic principles of work and using DOM API. Also demonstrates simple and complex examples for creating a PDF document
-lastmod: "2021-06-05"   
+lastmod: "2025-02-17"  
 sitemap: 
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Introductory Guide to the Aspose.PDF for Java 

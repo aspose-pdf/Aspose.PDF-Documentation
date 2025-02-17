@@ -5,9 +5,9 @@ type: docs
 weight: 40
 url: /java/working-with-images/
 description: This section describes the features of working with images in a PDF file using Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Working with images in a PDF file using Java library

@@ -5,9 +5,9 @@ type: docs
 weight: 90
 url: /java/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to add watermarks to PDF documents using the Aspose.PDF for Java library

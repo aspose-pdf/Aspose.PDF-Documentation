@@ -5,9 +5,9 @@ type: docs
 weight: 60
 url: /java/split-document/
 description: This topic shows how to split PDF pages into individual PDF files in your Java applications. 
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on how to split PDF files into individual pages using Aspose.PDF for Java

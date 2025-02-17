@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/search-and-get-text-from-pdf/
 description: Explore how to search and extract text from a PDF document in Java with Aspose.PDF for content extraction.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

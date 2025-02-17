@@ -4,7 +4,7 @@ linktitle: Convert other file formats to PDF
 type: docs
 weight: 80
 url: /java/convert-other-files-to-pdf/
-lastmod: "2021-11-19"
+lastmod: "2025-02-17"
 description: Discover how to convert various file formats, such as Word, Excel, and PowerPoint, into PDF using Aspose.PDF for Java.
 sitemap:
     changefreq: "monthly"

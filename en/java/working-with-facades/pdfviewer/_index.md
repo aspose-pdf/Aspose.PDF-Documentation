@@ -4,7 +4,7 @@ type: docs
 weight: 130
 url: /java/pdfviewer-class/
 description: Learn how to use the PDFViewer class in Java to render and view PDF files within your application with Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

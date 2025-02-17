@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /java/acroforms/
 description: Learn how to work with AcroForms in PDF documents, including form field creation, modification, and data extraction using Aspose.PDF in Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to work with AcroForms in PDF documents using Aspose.PDF for Java

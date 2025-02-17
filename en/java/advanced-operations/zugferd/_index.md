@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/working-with-zugferd/
 description: Learn how to work with ZUGFeRD invoices in Java using Aspose.PDF to manage electronic invoicing standards.
-lastmod: "2024-01-17"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -5,9 +5,9 @@ type: docs
 weight: 50
 url: /java/rotate-text-inside-pdf/
 description: Learn how to rotate text inside a PDF document, providing flexibility in document layout using Aspose.PDF for Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to rotate text inside a PDF document using Aspose.PDF for Java

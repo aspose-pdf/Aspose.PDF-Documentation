@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/pdf-tooltip/
 description: Learn how to add tooltip to the text fragment in PDF using Java and Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

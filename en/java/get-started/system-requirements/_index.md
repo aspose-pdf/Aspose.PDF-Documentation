@@ -5,9 +5,9 @@ type: docs
 weight: 30
 url: /java/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Supported Operating Systems of Aspose.PDF for Java 

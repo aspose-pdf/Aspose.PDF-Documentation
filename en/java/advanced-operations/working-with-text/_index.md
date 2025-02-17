@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

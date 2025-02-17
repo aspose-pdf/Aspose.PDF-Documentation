@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/graphs/
 description: Learn how to create and manage graphs within PDF documents using Aspose.PDF in Java for visualizing data effectively.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /java/pdfextractor-class/
 description: Explore how to extract text and images from a PDF file using the PDFExtractor class in Java with Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

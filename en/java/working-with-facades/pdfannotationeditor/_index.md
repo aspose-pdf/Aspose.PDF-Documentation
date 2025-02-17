@@ -4,7 +4,7 @@ type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/
 description: This section explains how to work with Aspose.PDF Facades using PdfAnnotationEditor Class.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

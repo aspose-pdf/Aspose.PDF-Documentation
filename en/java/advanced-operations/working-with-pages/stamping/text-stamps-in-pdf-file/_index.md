@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF file using the TextStamp class with Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on using the Aspose.PDF API to add Text stamps to PDF documents

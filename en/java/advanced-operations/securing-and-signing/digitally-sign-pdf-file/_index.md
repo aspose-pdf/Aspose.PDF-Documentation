@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
 description: Learn how to digitally sign a PDF file to ensure its authenticity and integrity using Aspose.PDF for Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to add digital signatures to PDF documents using the Aspose.PDF library for Java

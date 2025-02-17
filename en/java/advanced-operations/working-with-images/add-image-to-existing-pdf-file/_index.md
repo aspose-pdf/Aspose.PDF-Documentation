@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-image-to-existing-pdf-file/
 description: This section describes how to add image to existing PDF file using Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 TechArticle: true 
 AlternativeHeadline: How to add image to existing PDF file using Java Library
 Abstract: The article discusses methods for manipulating images within PDF documents using the Aspose.PDF for Java library. It begins by explaining the structure of PDF files, highlighting the significance of Resources and Contents properties, where Resources include elements like images and forms, while Contents consist of PDF operators. The article provides a detailed example of adding an image to an existing PDF using operators like GSave, ConcatenateMatrix, Do, and GRestore to define image placement and save the updated graphical state. Further, it introduces the capability to add images from a BufferedImage instance directly into a PDF, starting with version 9.5.0 of Aspose.PDF for Java. Additionally, it describes an alternative, simplified method using the PdfFileMend class to insert images into PDFs. The article also covers optimizing PDF size by reusing image references with the XImageCollection.add method and discusses identifying the color type of images to apply appropriate compression techniques. Code snippets accompany each section, illustrating the implementation of these functionalities.

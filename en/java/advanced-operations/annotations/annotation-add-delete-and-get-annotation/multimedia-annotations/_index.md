@@ -5,9 +5,9 @@ type: docs
 weight: 40
 url: /java/multimedia-annotation/
 description: Aspose.PDF for Java allows you to add, get, and delete the multimedia annotation from your PDF document.
-lastmod: "2021-11-24"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on handling Multimedia annotations in PDF documents using Aspose.PDF for Java

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
 description: Add a Page stamp to a PDF file using the PdfPageStamp class with Java.
-lastmod: "2021-09-10"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

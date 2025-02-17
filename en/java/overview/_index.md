@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/overview/
 description: Overview of key-features and supported formats of Aspose.PDF for Java, installation and licensing manual of Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Overview of the features offered by Aspose.PDF for Java

@@ -5,9 +5,9 @@ type: docs
 weight: 130
 url: /java/attachments/
 description: Use Java PDF API to access, add and remove attachments in PDF files using Java from within your applications. Complete guide with Java code samples.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Managing attachments in PDF documents using Aspose.PDF for Java

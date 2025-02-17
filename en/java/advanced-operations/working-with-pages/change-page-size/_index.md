@@ -5,9 +5,9 @@ type: docs
 weight: 50
 url: /java/change-page-size/
 description: Change Page Size from your PDF file using Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to change and retrieve PDF page sizes using Aspose.PDF for Java

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/formatting-pdf-document/
 description: Format the PDF Document with Aspose.PDF for Java. Use the next code snippet to resolve your tasks.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 TechArticle: true
 AlternativeHeadline: Guide on managing document window and page display properties using the Aspose.PDF library in Java
 Abstract: The article provides a comprehensive guide on managing document window and page display properties using the Aspose.PDF library in Java. It details how to retrieve and set various PDF document properties, such as window centering, reading direction, title display, and interface visibility, using methods from the `Document` class. The article includes code snippets demonstrating how to implement these changes programmatically. Additionally, it covers embedding fonts in existing and new PDF files to ensure consistent document appearance across different platforms. This involves using the `Font` class to embed fonts fully or partially, which is useful for reducing file size without compromising on font integrity for specific uses like logos. The article further explains how to set a default font name when saving a PDF, ensuring that missing fonts in a document are replaced with a specified default font. It also includes instructions for extracting all fonts from a PDF and managing the zoom factor using the `GoToAction` object for precise control over document presentation.

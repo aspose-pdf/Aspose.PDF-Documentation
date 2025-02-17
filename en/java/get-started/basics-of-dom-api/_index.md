@@ -5,9 +5,9 @@ type: docs
 weight: 110
 url: /java/basics-of-dom-api/
 description: Get started with the basics of Aspose.PDF DOM API for Java. Learn how to create, modify, and manage PDF documents with ease.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Document Object Model API of Aspose.PDF

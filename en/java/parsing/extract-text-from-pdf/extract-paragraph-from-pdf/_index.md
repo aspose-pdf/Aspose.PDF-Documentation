@@ -5,9 +5,9 @@ type: docs
 weight: 20
 url: /java/extract-paragraph-from-pdf/
 description: Discover how to extract paragraphs from a PDF document in Java with Aspose.PDF for easier content analysis.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: How to Extract Paragraph from PDF with Aspose.PDF for Java

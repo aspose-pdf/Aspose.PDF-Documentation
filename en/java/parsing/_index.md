@@ -5,9 +5,9 @@ type: docs
 weight: 60
 url: /java/parsing/
 description: Do you want to extract data from PDF documents? Discover various PDF data extraction methods with Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Guide on parsing PDF documents using Aspose.PDF for Java

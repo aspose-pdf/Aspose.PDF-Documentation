@@ -5,9 +5,9 @@ type: docs
 weight: 90
 url: /java/navigation-and-interaction/
 description: This section describes the features of work with links, actions and bookmarks.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: Work with links, actions and bookmarks using Aspose.PDF for Java

@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /java/why-aspose-pdf/
 description: In the next section explain why users choose Aspose.PDF for Java to work with documents.
-lastmod: "2024-03-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 TechArticle: true 
 AlternativeHeadline: 
