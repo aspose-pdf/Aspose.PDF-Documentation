@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/figures-annotation/
 description: This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for Java
-lastmod: "2025-02-17""
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
