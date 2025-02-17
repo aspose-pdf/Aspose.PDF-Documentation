@@ -4,7 +4,7 @@ linktitle: FAQ
 type: docs
 weight: 120
 url: /java/faq/
-description: Please learn Frequently Asked Questions from Aspose.PDF for Java library.
+description: Learn Frequently Asked Questions from Aspose.PDF for Java library.
 lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
