@@ -5,7 +5,7 @@ type: docs
 weight: 210
 url: /net/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document using C#
-lastmod: "2024-11-23"
+lastmod: "2024-02-07"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -28,7 +28,7 @@ aliases:
     },
     "genre": "pdf document generation",
     "keywords": "Securing PDF, signing PDF, digital signature, electronic signature, PKCS1, PKCS7, digest algorithms, Aspose.PDF, C# PDF manipulation, timestamp signature",
-    "wordcount": "269",
+    "wordcount": "302",
     "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
@@ -74,7 +74,7 @@ aliases:
         "@type": "WebPage",
         "@id": "/net/securing-and-signing/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2024-02-07",
     "description": "This section describes the features of using a signature and securing your PDF document using C#"
 }
 </script>

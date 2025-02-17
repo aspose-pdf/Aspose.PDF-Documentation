@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /net/licensing/
 description: Aspose. PDF for .NET invites its customers to get a Classic license and Metered License. As well as use a limited license to better explore the product.
-lastmod: "2021-06-05"
+lastmod: "2025-02-07"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -71,7 +71,7 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/licensing/"
     },
-    "dateModified": "2024-11-25",
+    "dateModified": "2025-02-07",
     "description": "Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers."
 }
 </script>
@@ -80,7 +80,7 @@ sitemap:
 
 We want our customers to test our components thoroughly before buying so the evaluation version allows you to use it as you would normally.
 
-- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all pages in the generated PDF documents are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2024 Aspose Pty Ltd." at the top.
+- **PDF created with an evaluation watermark.** The evaluation version of Aspose.PDF for .NET provides full product functionality, but all pages in the generated PDF documents are watermarked with the text "Evaluation Only. Created with Aspose.PDF. Copyright 2002-2025 Aspose Pty Ltd." at the top.
 
 - **Limit the number of pages that can be processed.**
 In the evaluation version, you can only process the first four pages of a document.
