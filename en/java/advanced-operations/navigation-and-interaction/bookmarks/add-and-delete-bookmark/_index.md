@@ -10,7 +10,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true 
-AlternativeHeadline: How to Add and Delete a Bookmarks using the Aspose PDF Java library
+AlternativeHeadline: How to manage bookmarks using the Aspose PDF Java library
 Abstract: This article provides a comprehensive guide on managing bookmarks in PDF documents using the Aspose PDF Java library. It covers the creation and deletion of bookmarks, including adding parent and child bookmarks and removing all or specific bookmarks. The process begins with opening a PDF document with the `Document` object, followed by creating a bookmark using the `OutlineItemCollection`, and adding it to the document's `OutlineCollection`. Code snippets are provided to illustrate how to add bookmarks, including child bookmarks, and how to delete all bookmarks or specific ones by title. The article includes detailed instructions and example code, demonstrating the use of methods like `add`, `delete`, and `save` for manipulating bookmarks effectively.
 SoftwareApplication: java
 ---
