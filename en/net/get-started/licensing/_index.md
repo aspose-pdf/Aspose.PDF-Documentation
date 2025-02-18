@@ -140,11 +140,38 @@ private static void SetLicenseFromStream()
 ```
 ## Metered License
 
-Aspose.PDF allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to Metered Licensing FAQ section.
+Aspose.PDF allows developers to apply metered key. The metered licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to Metered Licensing FAQ section.
+This guide provides best practices for smooth implementation and preventing disruptions due to licensing status changes.
 
-A new class Metered has been introduced to apply metered key. Following is the sample code demonstrating how to set metered public and private keys.
+The class "Metered" is used to apply metered keys. Following is the sample code demonstrating how to set metered public and private keys.
 
- For more details, please refer to the [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
+For more details, please refer to the [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
+
+__Metered Licensing Methods__
+
+Applying the Metered License use the `SetMeteredKey` method to activate the metered license by providing your public and private keys. This should be done once during application initialization to ensure proper licensing.
+
+Example: 
+
+```csharp
+ Aspose.PDF.Metered metered = new Aspose.PDF.Metered();
+ metered.SetMeteredKey("your-public-key", "your-private-key");
+ ```
+Checking License Status uses `IsMeteredLicensed()` to verify if the metered license is active.
+
+Example:
+
+```csharp
+bool isLicensed = Aspose.PDF.License.IsMeteredLicensed();
+if (!isLicensed) 
+{
+    metered.SetMeteredKey("your-public-key", "your-private-key");
+}
+ ```
+The method `Metered.GetConsumptionCredit()` is used to get the information about consumption credits.
+The method `Metered.GetConsumptionQuantity()` is used to get the information about consumption file size.
+
+Example:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -155,18 +182,96 @@ private static void SetMeteredLicense()
     // Set metered public and private keys
     Aspose.Pdf.Metered metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
-    metered.SetMeteredKey(
-        "<type public key here>",
-        "<type private key here>");
+    metered.SetMeteredKey("your public key", "your private key");
 
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // Get the page count of document
-        Console.WriteLine(document.Pages.Count);
+       // Add five pages
+       AddPages(document, 5);
+       // Save the document
+       document.Save(dataDir + "output.pdf")
+    }
+}
+
+private static void AddPages(Document document, int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        document.Pages.Add();
+    }
+}   
+```
+
+__Best Practices for Metered Licensing__
+
+✅ Recommended Approach: Singleton Pattern
+To ensure a stable licensing setup:
+
+- Apply the license once at application startup.
+- Use a singleton pattern (or similar approach) to create and reuse the metered license instance.
+- Periodically check the license status using `IsMeteredLicensed()`. Reapply the license only if it becomes invalid.
+- If implemented correctly, the license remains valid for 24 hours even if the license server is temporarily unavailable.
+
+Example: Singleton Implementation
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+public class AsposeLicenseManager
+{
+    private static AsposeLicenseManager _instance;
+    private static readonly object _lock = new object();
+    private Aspose.PDF.Metered _metered;
+
+    private AsposeLicenseManager()
+    {
+        _metered = new Aspose.PDF.Metered();
+        _metered.SetMeteredKey("your-public-key", "your-private-key");
+    }
+
+    public static AsposeLicenseManager Instance
+    {
+        get
+        {
+            lock (_lock)
+            {
+                if (_instance == null)
+                {
+                    _instance = new AsposeLicenseManager();
+                }
+                return _instance;
+            }
+        }
+    }
+
+    public void ValidateLicense()
+    {
+        if (!Aspose.PDF.License.IsMeteredLicensed())
+        {
+        _metered.SetMeteredKey("your-public-key", "your-private-key");
+        }
     }
 }
 ```
+
+❌ Common Mistakes to Avoid:
+
+- Frequent License Applications
+- Do not create a new metered license instance for every operation.
+- If the license server is unreachable during initialization, the license may revert to evaluation mode.
+- Do not apply the license repeatedly for each operation.
+- Frequent license applications can cause fallback into trial mode if the license server is temporarily unavailable.
+
+__Summary:__
+
+✅ Set the metered license once at application startup.
+✅ Use a singleton pattern to manage a single instance.
+✅ Periodically check and reapply the license if needed.
+❌ Avoid frequent license applications to prevent trial mode fallback.
+By following these best practices, you ensure smooth and uninterrupted usage of Aspose.PDF with metered licensing.
+
+If the license was initialized, then as long as this object "lives", even if the connection to the license server is lost for some reason, the license will be considered active for another 7 days. If you initialize a license whenever you need to do something and there is no connection to the server at the moment of initialization, then the license will go into Eval mode.
+It should be additionally emphasized that if a user has initialized a license, then as long as this object "lives", even if the connection to the license server is lost for some reason, the license will be considered active for another 24 hours. If you initialize a license whenever you need to do something and there is no connection to the server at the moment of initialization, then the license will go into Eval mode.
 
 Please note that COM applications that work with **Aspose.PDF for .NET** should also use the License class.
 
