@@ -143,7 +143,7 @@ private static void SetLicenseFromStream()
 Aspose.PDF allows developers to apply metered key. The metered licensing mechanism will be used along with existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to Metered Licensing FAQ section.
 This guide provides best practices for smooth implementation and preventing disruptions due to licensing status changes.
 
-The class "Metered" used to apply metered keys. Following is the sample code demonstrating how to set metered public and private keys.
+The class "Metered" is used to apply metered keys. Following is the sample code demonstrating how to set metered public and private keys.
 
 For more details, please refer to the [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
@@ -157,7 +157,7 @@ Example:
  Aspose.PDF.Metered metered = new Aspose.PDF.Metered();
  metered.SetMeteredKey("your-public-key", "your-private-key");
  ```
-Checking License Status use `IsMeteredLicensed()` to verify if the metered license is active.
+Checking License Status uses `IsMeteredLicensed()` to verify if the metered license is active.
 
 Example:
 
@@ -168,8 +168,8 @@ if (!isLicensed)
     metered.SetMeteredKey("your-public-key", "your-private-key");
 }
  ```
-The method Metered.GetConsumptionCredit() used to get the information about consumption credits.
-The method Metered.GetConsumptionQuantity() used to get the information about consumption file size.
+The method `Metered.GetConsumptionCredit()` is used to get the information about consumption credits.
+The method `Metered.GetConsumptionQuantity()` is used to get the information about consumption file size.
 
 Example:
 
