@@ -174,6 +174,7 @@ The method Metered.GetConsumptionQuantity() used to get the information about co
 Example:
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 private static void SetMeteredLicense()
 {
     // The path to the documents directory
@@ -207,10 +208,10 @@ __Best Practices for Metered Licensing__
 ✅ Recommended Approach: Singleton Pattern
 To ensure a stable licensing setup:
 
-• Apply the license once at application startup.
-• Use a singleton pattern (or similar approach) to create and reuse the metered license instance.
-• Periodically check the license status using `IsMeteredLicensed()`. Reapply the license only if it becomes invalid.
-• If implemented correctly, the license remains valid for 24 hours even if the license server is temporarily unavailable.
+- Apply the license once at application startup.
+- Use a singleton pattern (or similar approach) to create and reuse the metered license instance.
+- Periodically check the license status using `IsMeteredLicensed()`. Reapply the license only if it becomes invalid.
+- If implemented correctly, the license remains valid for 24 hours even if the license server is temporarily unavailable.
 
 Example: Singleton Implementation
 
