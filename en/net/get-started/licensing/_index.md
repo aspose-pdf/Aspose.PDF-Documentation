@@ -215,6 +215,7 @@ To ensure a stable licensing setup:
 Example: Singleton Implementation
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 public class AsposeLicenseManager
 {
     private static AsposeLicenseManager _instance;
@@ -268,8 +269,7 @@ __Summary:__
 ❌ Avoid frequent license applications to prevent trial mode fallback.
 By following these best practices, you ensure smooth and uninterrupted usage of Aspose.PDF with metered licensing.
 
-Extra comment:
-
+If the license was initialized, then as long as this object "lives", even if the connection to the license server is lost for some reason, the license will be considered active for another 7 days. If you initialize a license whenever you need to do something and there is no connection to the server at the moment of initialization, then the license will go into Eval mode.
 It should be additionally emphasized that if a user has initialized a license, then as long as this object "lives", even if the connection to the license server is lost for some reason, the license will be considered active for another 24 hours. If you initialize a license whenever you need to do something and there is no connection to the server at the moment of initialization, then the license will go into Eval mode.
 
 Please note that COM applications that work with **Aspose.PDF for .NET** should also use the License class.
