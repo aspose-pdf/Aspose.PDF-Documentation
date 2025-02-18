@@ -149,7 +149,7 @@ For more details, please refer to the [Metered Licensing FAQ](https://purchase.a
 
 __Metered Licensing Methods__
 
-Applying the Metered License use the SetMeteredKey method to activate the metered license by providing your public and private keys. This should be done once during application initialization to ensure proper licensing.
+Applying the Metered License use the `SetMeteredKey` method to activate the metered license by providing your public and private keys. This should be done once during application initialization to ensure proper licensing.
 
 Example: 
 
@@ -157,7 +157,7 @@ Example:
  Aspose.PDF.Metered metered = new Aspose.PDF.Metered();
  metered.SetMeteredKey("your-public-key", "your-private-key");
  ```
-Checking License Status use IsMeteredLicensed() to verify if the metered license is active.
+Checking License Status use `IsMeteredLicensed()` to verify if the metered license is active.
 
 Example:
 
@@ -209,7 +209,7 @@ To ensure a stable licensing setup:
 
 • Apply the license once at application startup.
 • Use a singleton pattern (or similar approach) to create and reuse the metered license instance.
-• Periodically check the license status using IsMeteredLicensed(). Reapply the license only if it becomes invalid.
+• Periodically check the license status using `IsMeteredLicensed()`. Reapply the license only if it becomes invalid.
 • If implemented correctly, the license remains valid for 24 hours even if the license server is temporarily unavailable.
 
 Example: Singleton Implementation
