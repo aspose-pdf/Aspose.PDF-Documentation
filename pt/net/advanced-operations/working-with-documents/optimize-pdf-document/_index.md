@@ -283,10 +283,10 @@ Alguns documentos podem conter vários fluxos de recursos idênticos (como image
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Abrir documento
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Definir a opção LinkDuplcateStreams
+// Definir a opção LinkDuplicateStreams
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
-    LinkDuplcateStreams = true
+    LinkDuplicateStreams = true
 };
 // Otimizar documento PDF usando OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);

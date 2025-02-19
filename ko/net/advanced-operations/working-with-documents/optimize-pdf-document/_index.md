@@ -281,10 +281,10 @@ pdfDocument.Save(dataDir);
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // 문서 열기
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// LinkDuplcateStreams 옵션 설정
+// LinkDuplicateStreams 옵션 설정
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
-    LinkDuplcateStreams = true
+    LinkDuplicateStreams = true
 };
 // OptimizationOptions를 사용하여 PDF 문서 최적화
 pdfDocument.OptimizeResources(optimizeOptions);

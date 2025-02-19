@@ -277,7 +277,7 @@ void LinkingDuplicateStreams() {
     // Инициализация OptimizationOptions
     auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
-    // Установить опцию LinkDuplcateStreams
+    // Установить опцию LinkDuplicateStreams
     optimizationOptions->set_LinkDuplcateStreams(true);
 
     // Оптимизация PDF документа с использованием OptimizationOptions

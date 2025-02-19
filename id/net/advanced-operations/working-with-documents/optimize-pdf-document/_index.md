@@ -281,10 +281,10 @@ Beberapa dokumen dapat mengandung beberapa aliran sumber daya yang identik (sepe
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Buka dokumen
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Setel opsi LinkDuplcateStreams
+// Setel opsi LinkDuplicateStreams
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
-    LinkDuplcateStreams = true
+    LinkDuplicateStreams = true
 };
 // Optimalkan dokumen PDF menggunakan OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);

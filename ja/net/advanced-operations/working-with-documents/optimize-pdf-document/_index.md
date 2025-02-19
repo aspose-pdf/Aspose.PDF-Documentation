@@ -280,10 +280,10 @@ pdfDocument.Save(dataDir);
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // ドキュメントを開く
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// LinkDuplcateStreams オプションを設定する
+// LinkDuplicateStreams オプションを設定する
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
-    LinkDuplcateStreams = true
+    LinkDuplicateStreams = true
 };
 // OptimizationOptions を使用して PDF ドキュメントを最適化する
 pdfDocument.OptimizeResources(optimizeOptions);
