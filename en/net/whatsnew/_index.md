@@ -85,8 +85,8 @@ In the Aspose.PDF 25.2 we have added:
 * [an option](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) to avoid twice call of the CustomSignHash delegate during signing.
 * new `GetSignatureNames()` method to get information about [digital signatures](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) of PDF.
 * possibility of creating a [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) with several widget annotations.
-
-> [!TIP]Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.2 Release Notes]> (https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) page.
+> [!NOTE]
+> Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.2 Release Notes](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) page.
 
 **Other notable enhancements**
 
