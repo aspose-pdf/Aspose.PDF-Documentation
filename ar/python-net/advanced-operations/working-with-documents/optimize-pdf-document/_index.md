@@ -217,7 +217,7 @@ A PDF document قد يحتوي أحيانًا على بيانات إضافية. 
 
     # افتح المستند
     document = ap.Document(input_pdf)
-    # تعيين خيار LinkDuplcateStreams
+    # تعيين خيار LinkDuplicateStreams
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # تحسين مستند PDF باستخدام OptimizationOptions
