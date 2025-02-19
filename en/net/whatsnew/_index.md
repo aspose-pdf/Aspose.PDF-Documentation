@@ -78,16 +78,17 @@ lastmod: "2025-01-31"
 
 ## What's new in Aspose.PDF 25.2
 
-*Most significant changes*
+**Most significant changes**
 
 In the Aspose.PDF 25.2 we have added:
 * support [PDF to PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) standard conversion.
 * [an option](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) to avoid twice call of the CustomSignHash delegate during signing.
 * new `GetSignatureNames()` method to get information about [digital signatures](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) of PDF.
 * possibility of creating a [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) with several widget annotations.
-Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.2 Release Notes](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) page.
 
-*Other notable enhancements*
+> [!TIP]Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.2 Release Notes]> (https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) page.
+
+**Other notable enhancements**
 
 * Image compression without quality loss on [PDF optimization](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) enhanced. Compressed document size reduced.
 * The Document [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) method improved. It can check and fix values in the Annotation.Rect array from now.
@@ -108,8 +109,7 @@ private static void AddingNewExtGState()
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        int pageIndex = 1;
-        Page page = doc.Pages[pageIndex];
+        var page = doc.Pages[1];
         var dictionaryEditor = new DictionaryEditor(page.Resources);
         var states = dictionaryEditor["ExtGState"].ToCosPdfDictionary();
 
