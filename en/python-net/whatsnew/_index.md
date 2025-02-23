@@ -8,8 +8,469 @@ description: In this page introduces the most popular new features in Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2021-12-24"
+lastmod: "2025-02-24"
 ---
+
+## What's new in Aspose.PDF 25.1
+
+An option to save PDF to HTML by skipping all raster images.
+
+```python
+
+    import aspose.pdf as ap
+
+    def save_pdf_to_html_without_images(input_pdf_path: str, output_html_path: str):
+        doc = ap.Document(input_pdf_path)
+        html_save_options = ap.HtmlSaveOptions()
+        html_save_options.explicit_list_of_saved_pages = [1]
+        html_save_options.fixed_layout = True
+        html_save_options.font_saving_mode = ap.HtmlSaveOptions.FontSavingModes.ALWAYS_SAVE_AS_WOFF
+        html_save_options.parts_embedding_mode = ap.HtmlSaveOptions.PartsEmbeddingModes.EMBED_ALL_INTO_HTML
+        html_save_options.raster_images_saving_mode = ap.HtmlSaveOptions.RasterImagesSavingModes.DONT_SAVE
+        doc.save(output_html_path, html_save_options)
+```
+
+Possibility to validate a PDF signature using a Certificate Authority (CA) Server:
+
+```python
+
+    import aspose.pdf as ap
+
+    def verify_signature_with_options(input_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        pdf_sign = ap.facades.PdfFileSignature(document)
+        for sign_name in pdf_sign.get_sign_names(True):
+            options = ap.security.ValidationOptions()
+            options.validation_mode = ap.security.ValidationMode.STRICT
+            options.validation_method = ap.security.ValidationMethod.AUTO
+            options.request_timeout = 20000
+            validation_results = []
+            verified = pdf_sign.verify_signature(sign_name, options, validation_results)
+            print(validation_results[0].status)
+            print(validation_results[0].message)
+```
+
+Cross-platform PDF signature validation using SHA-3 hashing algorithms:
+
+```python
+
+    import aspose.pdf as ap
+    import aspose.pydrawing as drawing
+
+
+    def sign_with_sha3(input_pdf_path: str, cert: str, password: str, output_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        pdf_sign = ap.facades.PdfFileSignature(document)
+        pkcs = ap.forms.PKCS7Detached(cert, password, ap.DigestHashAlgorithm.SHA_3_256) # // ap.DigestHashAlgorithm.SHA_3_384, ap.DigestHashAlgorithm.SHA_3_512
+        pdf_sign.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+        pdf_sign.save(output_pdf_path)
+
+
+    def verify(signed_pdf_file: str):
+        document = ap.Document(signed_pdf_file)
+        signature = ap.facades.PdfFileSignature(document)
+        sig_names = signature.get_sign_names(True)
+        for sig_name in sig_names:
+            is_valid = signature.verify_signature(sig_name)
+```
+
+## What's new in Aspose.PDF 24.12
+
+The following snippet shows how to convert the annotation document to PDF/X-1 using the annotation FOGRA39 ICC profile:
+
+```python
+
+    import aspose.pdf as ap
+
+    def convert_pdf_to_pdf_x_1_using_custom_icc_profile(input_pdf_path: str, output_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        options = ap.PdfFormatConversionOptions(ap.PdfFormat.PDF_X_1A, ap.ConvertErrorAction.DELETE)
+        options.icc_profile_file_name = "Coated_Fogra39L_VIGC_300.icc"
+        options.output_intent = ap.OutputIntent("FOGRA39")
+        document.convert(options)
+        document.save(output_pdf_path)
+```
+
+The following sample shows how this can be used in PDF to PNG conversion to avoid text getting turned into blank squares:
+
+```python
+
+    import aspose.pdf as ap
+
+    def pdf_to_png_with_analyzing_fonts(input_pdf_path: str, output_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        png_device = ap.devices.PngDevice()
+        png_device.rendering_options = ap.RenderingOptions()
+        png_device.rendering_options.analyze_fonts = True
+        png_device.process(document.pages[1], output_pdf_path) 
+```
+
+The following code snippet demonstrates how to add annotation text stamp to annotation PDF file and automatically adjust the font size to fit the stamp rectangle:
+
+```python
+
+    import aspose.pdf as ap
+
+    def auto_set_the_font_size_of_text_stamp(input_pdf_path: str, output_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        text = "Stamp example"
+        stamp = ap.TextStamp(text)
+        stamp.auto_adjust_font_size_to_fit_stamp_rectangle = True
+        stamp.auto_adjust_font_size_precision = 0.01
+        stamp.word_wrap_mode = ap.text.TextFormattingOptions.WordWrapMode.BY_WORDS
+        stamp.scale = False
+        stamp.width = 400
+        stamp.height = 200
+        document.pages[1].add_stamp(stamp)
+        document.save(output_pdf_path)
+```
+
+The following code snippet demonstrates how to add an annotation text stamp to an annotation PDF file and automatically adjust the font size to fit the page size:
+
+```python
+
+    import aspose.pdf as ap
+
+    def auto_set_the_font_size_of_text_stamp_to_fit_page(input_pdf_path: str, output_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        text = "Stamp example"
+        stamp = ap.TextStamp(text)
+        stamp.auto_adjust_font_size_to_fit_stamp_rectangle = True
+        stamp.auto_adjust_font_size_precision = 0.01
+        stamp.word_wrap_mode = ap.text.TextFormattingOptions.WordWrapMode.BY_WORDS
+        stamp.scale = False
+        document.pages[1].add_stamp(stamp)
+        document.save(output_pdf_path)
+```
+
+## What's new in Aspose.PDF 24.11
+
+The following code snippet demonstrates the setting of the hashing algorithm for Pkcs7Detached:
+
+```python
+
+    import aspose.pdf as ap
+    import aspose.pydrawing as drawing
+
+    def sign_with_manual_digest_hash_algorithm(cert: str, password: str, input_pdf_path: str, out_pdf_signed_path: str):
+        document = ap.Document(input_pdf_path)
+        signature = ap.facades.PdfFileSignature(document)
+        pkcs = ap.forms.PKCS7Detached(cert, password,  ap.DigestHashAlgorithm.SHA512)
+        signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+        signature.save(out_pdf_signed_path)
+        document.save(out_pdf_signed_path)
+```
+
+FontEncodingStrategy property. The following sample demonstrates the new option using:
+
+```python
+
+    import aspose.pdf as ap
+
+    def convert_pdf_to_html_using_cmap(input_pdf_path: str, output_html_path: str):
+        document = ap.Document(input_pdf_path)
+        options = ap.HtmlSaveOptions()
+        options.font_encoding_strategy = ap.HtmlSaveOptions.FontEncodingRules.DECREASE_TO_UNICODE_PRIORITY_LEVEL
+        document.save(output_html_path, options)
+```
+
+## What's new in Aspose.PDF 24.10
+
+You can use your usual code to sign documents with ECDSA and to verify signatures:
+
+```python
+
+    import aspose.pdf as ap
+    import aspose.pydrawing as drawing
+
+
+    def sign(cert: str, input_pdf_path: str, signed_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        signature = ap.facades.PdfFileSignature(document)
+        pkcs = ap.forms.PKCS7Detached(cert, "12345")
+        signature.sign(1, True, drawing.Rectangle(300, 100, 400, 200), pkcs)
+        signature.save(signed_pdf_path)
+        
+    def verify(signed_pdf_path: str):
+        document = ap.Document(signed_pdf_path)
+        signature = ap.facades.PdfFileSignature(document)
+        sig_names = signature.get_sign_names(True)
+        for sig_name in sig_names:
+            is_valid = signature.verify_signature(sig_name)
+```
+
+Sometimes, it is necessary to crop an image before inserting it into a PDF. We have added an overloaded version of the AddImage() method to support adding cropped images:
+
+```python
+
+    import aspose.pdf as ap
+    import io
+
+    def add_cropped_image_to_pdf(image_file_path: str, result_pdf_path: str):
+        document = ap.Document()
+        img_stream = io.FileIO(image_file_path, "r")
+        image_rect = ap.Rectangle(17.62, 65.25, 602.62, 767.25, True)
+        w = image_rect.width / 2
+        h = image_rect.height / 2
+        bbox = ap.Rectangle(image_rect.llx, image_rect.lly, image_rect.llx + w, image_rect.lly + h, True)
+        page = document.pages.add()
+        page.add_image(img_stream, image_rect, bbox, True)
+        document.save(result_pdf_path)
+```
+
+## What's new in Aspose.PDF 24.9
+
+Now, it is possible to extract PDF document layer elements and save them into new PDF streams. Layers (also known as Optional Content Groups or OCGs) are used in PDF documents for various purposes, primarily to manage and control the visibility of content within the document. This functionality is particularly useful in design, engineering, and publishing. Examples include blueprint aspects, complex diagram components, and language versions of the same content.
+
+```python
+
+    import aspose.pdf as ap
+
+    def extract_pdf_layer(input_pdf_path: str, output_pdf_path: str):
+        input_document = ap.Document(input_pdf_path)
+        input_page = input_document.pages[1]
+        layers = input_page.layers
+        for layer in layers:
+            extracted_layer_pdf_name = output_pdf_path + layer.id + ".pdf"
+            with open(extracted_layer_pdf_name, "wb") as stream:
+                layer.save(stream)
+```            
+
+The following code snippet demonstrates the graphic comparison of two PDF documents and saves an image with the differences into the resultant PDF document:
+
+```python
+
+    import aspose.pdf as ap
+
+    def compare_pdf_with_compare_documents_to_pdf_method(first_document_path: str, second_document_path: str, comparison_result_pdf_path: str):
+        first_document = ap.Document(first_document_path)
+        second_document = ap.Document(second_document_path)
+        comparer = ap.comparison.graphicalcomparison.GraphicalPdfComparer()
+        comparer.threshold = 3.0
+        comparer.color = ap.Color.red
+        comparer.resolution = ap.devices.Resolution(300)
+        comparer.compare_documents_to_pdf(first_document, second_document, comparison_result_pdf_path)
+```
+
+To convert HEIC images to PDF user should add the reference to the FileFormat.HEIC NuGet package and use the following code snippet:
+
+```python
+
+    import aspose.pdf as ap
+    import io
+
+    dev convert_heic_to_pdf(input_pdf_path: str, result_pdf_path: str, width: int, height: int, pixel_format: ap.BitmapInfo.PixelFormat):
+        document = ap.Document()
+        page = document.pages.add()
+        aspose_image = ap.Image()
+
+        pixels = io.FileIO(input_pdf_path).read()
+        aspose_image.bitmap_info = ap.BitmapInfo(pixels, width, height, pixel_format)
+        page.page_info.width = width
+        page.page_info.height = height
+        page.page_info.margin.bottom = 0
+        page.page_info.margin.top = 0
+        page.page_info.margin.right = 0
+        page.page_info.margin.left = 0
+        page.paragraphs.add(aspose_image)
+        document.save(result_pdf_path)
+```
+
+## What's new in Aspose.PDF 24.8
+
+The following code snippet demonstrates how to convert a document into PDF/A-4 format when the input document is an earlier PDF version than 2.0.
+
+```python
+
+    import aspose.pdf as ap
+
+    def convert_pdf_to_pdf_a4(input_pdf_path: str, conversion_log_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path) 
+        document.convert(io.BytesIO(), ap.PdfFormat.V_2_0, ap.ConvertErrorAction.DELETE)
+        document.convert(conversion_log_path , ap.PdfFormat.PDF_A_4, ap.ConvertErrorAction.DELETE)
+        document.save(result_pdf_path) 
+```
+
+Since 24.8 we introduced a method for flattening transparent content in PDF documents:
+
+```python
+
+    import aspose.pdf as ap
+
+    def flatten_transparency(input_pdf_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path) 
+        document.flatten_transparency()
+        document.save(result_pdf_path) 
+```
+
+## What's new in Aspose.PDF 24.7
+
+The first code snippet demonstrates how to compare the first pages of two PDF documents.
+
+```python
+
+    import aspose.pdf as ap
+
+    def comparing_specific_pages_side_by_side(input_pdf_path1: str, input_pdf_path2: str, result_pdf_path: str)
+        document1 = ap.Document(input_pdf_path1)
+        document2 = ap.Document(input_pdf_path2)
+        options = ap.comparison.SideBySideComparisonOptions()
+        options.comparison_mode = ap.comparison.ComparisonMode.IGNORE_SPACES
+        options.additional_change_marks = True
+        ap.comparison.SideBySidePdfComparer.compare(document1.pages[1], document2.pages[1], result_pdf_path, options)
+```
+
+The second code snippet expands the scope to compare the entire content of two PDF documents.
+
+```python
+
+    import aspose.pdf as ap
+
+    def comparing_entire_documents_side_by_side(input_pdf_path1: str, input_pdf_path2: str, result_pdf_path: str):
+        document1 = ap.Document(input_pdf_path1)
+        document2 = ap.Document(input_pdf_path2)
+        options = ap.comparison.SideBySideComparisonOptions()
+        options.comparison_mode = ap.comparison.ComparisonMode.IGNORE_SPACES
+        options.additional_change_marks = True
+        ap.comparison.SideBySidePdfComparer.compare(document1, document2, result_pdf_path, options)
+```
+
+## What's new in Aspose.PDF 24.6
+
+The next code snippet works with a PDF document and its tagged content, utilizing an Aspose.PDF library to process it:
+
+```python
+
+    import aspose.pdf as ap
+
+    def create_an_accessible_document(input_pdf_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        content = document.tagged_content
+        span = content.create_span_element()
+        content.root_element.append_child(span, True)
+        for op in document.pages[1].contents:
+                if is_assignable(op, ap.operators.BDC):
+                    bdc = cast(ap.operators.BDC, op)
+                    if bdc is not None:
+                        span.tag(bdc)
+        document.save(result_pdf_path)
+```
+
+## What's new in Aspose.PDF 24.5
+
+Lock a PDF layer:
+
+```python
+
+    import aspose.pdf as ap
+
+    def lock_layer_in_pdf(input_pdf_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        page = document.pages[1]
+        layer = page.layers[0]
+        layer.lock()
+        document.save(result_pdf_path)
+```
+
+Extract PDF layer elements:
+
+```python
+
+    import aspose.pdf as ap
+
+    def extract_pdf_layer(input_pdf_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        layers = document.pages[1].layers
+        for layer in layers:
+            layer.save(result_pdf_path)
+```
+
+Flatten a layered PDF:
+
+```python
+
+    import aspose.pdf as ap
+
+    def flatten_pdf_layers(input_pdf_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        page = document.pages[1]
+        for layer in page.layers:
+            layer.flatten(True)
+        document.save(result_pdf_path)
+```
+
+Merge All Layers inside the PDF into one:
+
+```python
+
+    import aspose.pdf as ap
+
+    def merge_pdf_layers(input_pdf_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        page = document.pages[1]
+        page.merge_layers("NewLayerName")
+        # Or page.merge_layers("NewLayerName", "OC1")
+        document.save(result_pdf_path)
+```
+
+## What's new in Aspose.PDF 24.4
+
+This release supports applying a clipping mask to images:
+
+```python
+
+    import aspose.pdf as ap
+    import io
+
+    def add_stencil_masks_to_images(input_pdf_path: str, input_mask1_path: str, input_mask2_path: str, result_pdf_path: str):
+        document = ap.Document(input_pdf_path)
+        fs1 = io.FileIO(input_mask1_path, "r")
+        fs2 = io.FileIO(input_mask2_path, "r")
+        document.pages[1].resources.images[1].add_stencil_mask(fs1)
+        document.pages[1].resources.images[2].add_stencil_mask(fs2)
+        document.save(result_pdf_path)
+``` 
+
+Beginning with Aspose.PDF 24.4 this preference can be switched on and off using the Document.PickTrayByPdfSize property or the PdfContentEditor facade:
+
+```python
+
+    import aspose.pdf as ap
+
+    def pick_tray_by_pdf_size(result_pdf_path: str):
+        document = ap.Document()
+        page = document.pages.add()
+        page.paragraphs.add(ap.text.TextFragment("Hello world!"))
+        document.pick_tray_by_pdf_size = True
+        document.save(result_pdf_path)
+```
+
+```python
+
+    import aspose.pdf as ap
+
+    def pick_tray_by_pdf_size_facade(input_pdf_path: str, result_pdf_path: str):
+        content_editor = ap.facades.PdfContentEditor()
+        content_editor.bind_pdf(input_pdf_path)
+        # Set the flag to choose a paper tray using the PDF page size
+        content_editor.change_viewer_preference(ap.facades.ViewerPreference.PICK_TRAY_BY_PDF_SIZE)
+        content_editor.save(result_pdf_path)
+```
+
+## What's new in Aspose.PDF 24.1
+
+Since 24.1 release possible to import FDF format annotations to PDF:
+
+```python
+
+    import aspose.pdf as ap
+
+    def import_fdf_by_form(input_pdf_path: str, template_path: str, result_pdf_path: str):
+        form = ap.facades.Form(template_path)
+        fdf_input_stream = io.FileIO(input_pdf_path, 'r')
+        form.import_fdf(fdf_input_stream)
+        form.save(result_pdf_path)    
+```
 
 ## What's new in Aspose.PDF 23.12
 
@@ -326,6 +787,7 @@ def add_annotations(page: ap.Page):
     page.annotations.add(color_ba_magenta, False)
     page.annotations.add(color_bar_yellow, False)
 ```
+
 Also support the vector images extraction. Try using the following code to detect and extract vector graphics:
 
 ```python
