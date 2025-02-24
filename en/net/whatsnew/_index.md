@@ -76,6 +76,62 @@ lastmod: "2025-01-31"
 }
 </script>
 
+## What's new in Aspose.PDF 25.2
+
+**Most significant changes**
+
+In the Aspose.PDF 25.2 we have added:
+* support [PDF to PDF/X-4](https://docs.aspose.com/pdf/net/convert-pdf-to-pdfx/) standard conversion.
+* [an option](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-a-pdf-with-hash-signing-function) to avoid twice call of the CustomSignHash delegate during signing.
+* new `GetSignatureNames()` method to get information about [digital signatures](https://docs.aspose.com/pdf/net/digitally-sign-pdf-file/#sign-pdf-with-digital-signatures) of PDF.
+* possibility of creating a [TextBoxField](https://docs.aspose.com/pdf/net/create-form/#adding-radiobuttonfield) with several widget annotations.
+> [!NOTE]
+> Detailed information about the changes and samples of using can be found on the [Aspose.PDF 25.2 Release Notes](https://releases.aspose.com/pdf/net/release-notes/2025/aspose-pdf-for-net-25-2-release-notes/) page.
+
+**Other notable enhancements**
+
+* Image compression without quality loss on [PDF optimization](https://docs.aspose.com/pdf/net/optimize-pdf/#shrinking-or-compressing-all-images) enhanced. Compressed document size reduced.
+* The Document [Repair](https://reference.aspose.com/pdf/net/aspose.pdf/document/repair/) method improved. It can check and fix values in the Annotation.Rect array from now.
+* System.Text.Json dependency version updated to avoid possible vulnerability CVE-2024-43485.
+* PDF signature attack detection improved to prevent obtaining false positive results.
+* A public API for redacting resources dictionary provided:
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingNewExtGState()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDirAsposePdfFacadesPages();
+
+    // Graphics state parameter dictionary new name
+    var gsName = "GS0";
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        var page = doc.Pages[1];
+        var dictionaryEditor = new DictionaryEditor(page.Resources);
+        var states = dictionaryEditor["ExtGState"].ToCosPdfDictionary();
+
+        var newGs = CosPdfDictionary.CreateEmptyDictionary(doc);
+        var pairs = new KeyValuePair<string, ICosPdfPrimitive>[3]
+        {
+            new KeyValuePair<string, ICosPdfPrimitive>("CA", new CosPdfNumber(1)),
+            new KeyValuePair<string, ICosPdfPrimitive>("ca", new CosPdfNumber(0.5)),
+            new KeyValuePair<string, ICosPdfPrimitive>("BM", new CosPdfName("Normal"))
+        };
+
+        foreach (var p in pairs)
+        {
+            newGs.Add(p);
+        }
+        states.Add(gsName, newGs);
+
+        // Save PDF document
+        doc.Save(outputPath);
+    }
+}
+```
 
 ## What's new in Aspose.PDF 25.1
 
