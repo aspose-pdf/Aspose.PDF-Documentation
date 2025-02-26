@@ -282,10 +282,10 @@ pdfDocument.Save(dataDir);
 string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 // Открыть документ
 Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// Установить опцию LinkDuplcateStreams
+// Установить опцию LinkDuplicateStreams
 var optimizeOptions = new Pdf.Optimization.OptimizationOptions
 {
-    LinkDuplcateStreams = true
+    LinkDuplicateStreams = true
 };
 // Оптимизировать PDF документ с использованием OptimizationOptions
 pdfDocument.OptimizeResources(optimizeOptions);

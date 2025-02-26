@@ -214,7 +214,7 @@ Some documents can contain several identical resource streams (like images, for 
 
     # Open document
     document = ap.Document(input_pdf)
-    # Set LinkDuplcateStreams option
+    # Set LinkDuplicateStreams option
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # Optimize PDF document using OptimizationOptions

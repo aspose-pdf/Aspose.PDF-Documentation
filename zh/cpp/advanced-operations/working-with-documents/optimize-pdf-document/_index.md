@@ -277,7 +277,7 @@ void LinkingDuplicateStreams() {
     // 初始化优化选项
     auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
-    // 设置 LinkDuplcateStreams 选项
+    // 设置 LinkDuplicateStreams 选项
     optimizationOptions->set_LinkDuplcateStreams(true);
 
     // 使用优化选项优化 PDF 文档
