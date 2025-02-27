@@ -229,7 +229,7 @@ private static void CountPDFArtifacts()
 
 ## Adding Bates Numbering Artifact
 
-To add Bates numbering artifact to a document, use the following code:
+To add a Bates numbering artifact to a document, call the ```AddBatesNumbering(BatesNArtifact batesNArtifact)``` extension method on the ```PageCollection```, passing the ```BatesNArtifact``` object as a parameter:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -238,7 +238,50 @@ private static void AddBatesNArtifact()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Create or Open PDF document
+    // Create or open PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add 10 pages
+        for (int i = 0; i < 10; i++)
+        {
+            document.Pages.Add();
+        }
+
+        // Add Bates numbering to all pages
+        document.Pages.AddBatesNumbering(new BatesNArtifact
+        {
+            // These properties are set to their default values, as if they were not specified
+            StartPage = 1,
+            EndPage = 0,
+            Subset = Subset.All,
+            NumberOfDigits = 6,
+            StartNumber = 1,
+            Prefix = "",
+            Suffix = "",
+            ArtifactVerticalAlignment = VerticalAlignment.Bottom,
+            ArtifactHorizontalAlignment = HorizontalAlignment.Right,
+            RightMargin = 72,
+            LeftMargin = 72,
+            TopMargin = 36,
+            BottomMargin = 36
+        });
+
+        // Save PDF document
+        document.Save(dataDir + "SampleBatesNArtifact_out.pdf");
+    }
+}
+```
+
+Or, you can pass a collection of ```PaginationArtifacts```:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBatesNArtifact()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create or open PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add 10 pages
@@ -275,7 +318,7 @@ private static void AddBatesNArtifact()
 }
 ```
 
-Alternatively, Bates numbering artifact can be added using the action delegate:
+Alternatively, you can add a Bates numbering artifact using an action delegate:
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -284,7 +327,7 @@ private static void AddBatesNArtifact()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Create or Open PDF document
+    // Create or open PDF document
     using (var document = new Aspose.Pdf.Document())
     {
         // Add 10 pages
