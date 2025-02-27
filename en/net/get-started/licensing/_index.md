@@ -104,7 +104,7 @@ When you call the [SetLicense](https://reference.aspose.com/pdf/net/aspose.pdf/l
 private static void SetLicenseExample()
 {
     // Initialize license object
-    Aspose.Pdf.License license = new Aspose.Pdf.License();
+    var license = new Aspose.Pdf.License();
     try
     {
         // Set license
@@ -127,10 +127,9 @@ The following example shows how to load a license from a stream.
 private static void SetLicenseFromStream()
 {
     // Initialize license object
-    Aspose.Pdf.License license = new Aspose.Pdf.License();
+    var license = new Aspose.Pdf.License();
     // Load license from the file stream
-    FileStream myStream =
-        new FileStream(
+    var myStream = new FileStream(
             "Aspose.Pdf.lic",
             FileMode.Open);
     // Set license
@@ -154,7 +153,7 @@ Applying the Metered License use the `SetMeteredKey` method to activate the mete
 Example: 
 
 ```csharp
- Aspose.PDF.Metered metered = new Aspose.PDF.Metered();
+ var metered = new Aspose.Pdf.Metered();
  metered.SetMeteredKey("your-public-key", "your-private-key");
  ```
 Checking License Status uses `IsMeteredLicensed()` to verify if the metered license is active.
@@ -162,7 +161,7 @@ Checking License Status uses `IsMeteredLicensed()` to verify if the metered lice
 Example:
 
 ```csharp
-bool isLicensed = Aspose.PDF.License.IsMeteredLicensed();
+bool isLicensed = Aspose.Pdf.License.IsMeteredLicensed();
 if (!isLicensed) 
 {
     metered.SetMeteredKey("your-public-key", "your-private-key");
@@ -180,7 +179,7 @@ private static void SetMeteredLicense()
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
     // Set metered public and private keys
-    Aspose.Pdf.Metered metered = new Aspose.Pdf.Metered();
+    var metered = new Aspose.Pdf.Metered();
     // Access the setMeteredKey property and pass public and private keys as parameters
     metered.SetMeteredKey("your public key", "your private key");
 
@@ -221,11 +220,11 @@ public class AsposeLicenseManager
 {
     private static AsposeLicenseManager _instance;
     private static readonly object _lock = new object();
-    private Aspose.PDF.Metered _metered;
+    private Aspose.Pdf.Metered _metered;
 
     private AsposeLicenseManager()
     {
-        _metered = new Aspose.PDF.Metered();
+        _metered = new Aspose.Pdf.Metered();
         _metered.SetMeteredKey("your-public-key", "your-private-key");
     }
 
@@ -246,7 +245,7 @@ public class AsposeLicenseManager
 
     public void ValidateLicense()
     {
-        if (!Aspose.PDF.License.IsMeteredLicensed())
+        if (!Aspose.Pdf.License.IsMeteredLicensed())
         {
         _metered.SetMeteredKey("your-public-key", "your-private-key");
         }
@@ -286,7 +285,7 @@ private static void SetLicenseFromStream()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-    Aspose.Pdf.License license = new Aspose.Pdf.License();
+    var license = new Aspose.Pdf.License();
     license.SetLicense(GetSecureLicenseFromStream());
     // Open PDF document
     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
