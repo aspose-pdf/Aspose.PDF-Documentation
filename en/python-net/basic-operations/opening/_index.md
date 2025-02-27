@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/open-pdf-document/
 description: Learn how to open a PDF file in Python Aspose.PDF for Python via .NET library. You can open existing PDF, document from stream, and encrypted PDF document.
-lastmod: "2022-12-22"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to open PDF file in Aspose.PDF for Python
+Abstract: This article provides instructions on how to open existing PDF documents using the Aspose.PDF library in Python. It details three methods - opening a PDF by specifying a file name, opening a PDF from a stream, and opening an encrypted PDF with a password. Each method involves creating an instance of the `ap.Document` class and then using it to access the number of pages in the document. Code snippets are provided for each approach to demonstrate the process.
 ---
 
 ## Open existing PDF document

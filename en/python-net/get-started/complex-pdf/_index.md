@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/complex-pdf-example/
 description: Aspose.PDF for Python via .NET allows you to create more complex documents that contain images, text fragments, and tables in one document.
-lastmod: "2022-12-22"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Generate complex PDF with Aspose.PDF for Python
+Abstract: This article provides a comprehensive guide to creating a complex PDF document using Python and the Aspose.PDF library. The example centers around a fictitious company offering passenger ferry services, illustrating the process of document creation from scratch. The document includes an image, a header, a descriptive paragraph, and a table. The steps involved include instantiating a `Document` object, adding a `Page`, inserting an `Image`, and creating `TextFragment` objects for both the header and description. The header uses Arial font at a size of 24pt and is center-aligned, while the description uses Times New Roman at 14pt with left alignment. A table is also created with specific properties and added to the page. The article includes a Python code snippet that demonstrates these steps, ensuring the document is saved as "Complex.pdf." The code illustrates the use of Aspose.PDF classes and methods to manage text, images, and table elements within a PDF document.
 ---
 
 The [Hello, World](/pdf/python-net/hello-world-example/) example showed simple steps to create a PDF document using Python and Aspose.PDF. In this article, we will take a look at creating a more complex document with Aspose.PDF for Python. As an example, we'll take a document from a fictitious company that operates passenger ferry services. Our document will contain a image, two text fragments (header and paragraph), and a table. 

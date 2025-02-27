@@ -5,10 +5,13 @@ type: docs
 weight: 90
 url: /python-net/working-with-zugferd/
 description: Explore how to handle ZUGFeRD invoices in Python with Aspose.PDF for managing and generating electronic invoices.
-lastmod: "2024-01-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to Work with ZUGFeRD
+Abstract: ZUGFeRD (Zentraler User Guide des Forums elektronische Rechnung Deutschland) is a standard for electronic invoicing widely adopted in German-speaking and EU countries. It combines a human-readable PDF and machine-readable XML data file to facilitate seamless exchange of invoice information between businesses and public authorities. This hybrid format ensures interoperability, complies with legal requirements for long-term archiving and tax compliance, and aligns with the European standard EN 16931. The latest version, ZUGFeRD 2.0, offers several benefits, including faster processing, reduced errors, improved cash flow, and lower environmental impact, making it advantageous for both buyers and sellers. The article also references resources for creating PDF/3-A compliant documents and attaching ZUGFeRD invoices using Python, Java, and .NET.
 ---
 
 ## What is ZUGFeRD

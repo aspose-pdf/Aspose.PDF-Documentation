@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/create-form/
 description: With Aspose.PDF for Python you may create a form from scratch in your PDF file
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide to generating forms within PDF documents using Python
+Abstract: The article titled "Create AcroForm in Python", published by Aspose.PDF Doc Team, serves as a beginner's guide to generating forms within PDF documents using Python. The article focuses on leveraging the Aspose.PDF for Python library to create AcroForm fields from scratch. It specifically details the process of adding a `TextBoxField` to a PDF document, illustrating this with a Python code example. The guide begins by explaining the use of the `Document` class and its `Form` collection, which facilitates form field management in a PDF. Subsequently, it demonstrates how to create a `TextBoxField`, configure its properties such as size, position, border, and color, and finally add it to the document. The modified document is then saved, completing the form creation process. This tutorial provides a practical introduction for those interested in PDF document generation using Python, supported by the Aspose.PDF library.
 ---
 <script type="application/ld+json">
 {

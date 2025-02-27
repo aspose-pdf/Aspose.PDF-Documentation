@@ -5,10 +5,13 @@ type: docs
 weight: 40
 url: /python-net/manipulate-tables-in-existing-pdf/
 description: Discover how to manipulate tables in an existing PDF document using Python .NET, simplifying your document editing tasks.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to manipulate Tables in existing PDF
+Abstract: The article "Manipulate Tables in existing PDF," authored, explores the capabilities of Aspose.PDF for Python via .NET in handling tables within PDF documents. It introduces the new `TableAbsorber` class, which allows users to search and parse existing tables in a PDF. The article provides practical examples and code snippets demonstrating how to update contents in a specific table cell, replace an old table with a new one, and determine if a table will break due to space constraints on a page. Additionally, it explains how to add repeating columns to a table, a feature useful for tables that are too wide to fit on a single page. This functionality ensures that specified columns repeat on the next page, maintaining the table's structure and readability. The article is intended for beginners and is published by the Aspose.PDF Doc Team, offering insights into advanced PDF manipulation using Python.
 ---
 <script type="application/ld+json">
 {

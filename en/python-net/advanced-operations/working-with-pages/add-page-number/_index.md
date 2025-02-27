@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/add-page-number/
 description: Aspose.PDF for Python via .NET allows you to add Page Number Stamp to your PDF file using PageNumber Stamp class.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline:  How to add Page Number to PDF with Python
+Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a beginner-friendly guide on adding page numbers to PDF files using Python. It introduces the Aspose.PDF for Python via .NET library, focusing on the `PageNumberStamp` class which allows users to customize and add page number stamps to PDF documents. The article details the process of creating a page number stamp, setting its properties such as format, margins, and font attributes, and applying it to a PDF using the `add_stamp()` method. A practical code snippet demonstrates the steps involved, and a live example is available through a free online web application. The Aspose.PDF for Python via .NET Library is highlighted as a versatile tool for PDF manipulation, compatible with multiple operating systems, and available for download.
 ---
 <script type="application/ld+json">
 {

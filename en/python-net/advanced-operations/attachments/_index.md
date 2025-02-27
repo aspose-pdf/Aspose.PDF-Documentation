@@ -5,10 +5,13 @@ type: docs
 weight: 130
 url: /python-net/attachments/
 description: Use Python PDF API to access, add and remove attachments in PDF files using Python from within your applications. Complete guide with Python code samples.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on managing attachments in PDF files using the Aspose.PDF for Python
+Abstract: The article titled "Working with Attachments in PDF using Python," provides a beginner-friendly guide on managing attachments in PDF files using the Aspose.PDF for Python via .NET library. It covers essential operations such as adding, accessing, and removing various types of file attachments (e.g., PDF, Word, images) within a PDF document programmatically using Python. The article includes practical Python code samples to help users implement these functionalities in their applications. Additionally, it offers links to more detailed resources on specific tasks like adding or removing attachments and managing portfolios within PDFs. The publisher, Aspose.PDF Doc Team, is renowned for their expertise in PDF document generation, and the article is supported by their comprehensive software library, which is available for multiple operating systems including Windows, macOS, and Linux.
 ---
 <script type="application/ld+json">
 {

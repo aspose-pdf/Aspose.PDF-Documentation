@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/add-attachment-to-pdf-document/
 description: This page describes how to add an attachment to a PDF file with Aspose.PDF for Python via .NET library.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Tutorial on adding attachments to a PDF document using Python
+Abstract: The article published by the Aspose.PDF Doc Team, offers a beginner-level tutorial on adding attachments to a PDF document using Python and the Aspose.PDF for Python via .NET library. It provides a step-by-step guide to creating a new Python project, importing the necessary Aspose.PDF package, and utilizing the `Document` and `FileSpecification` objects to embed files in a PDF. The process involves appending the `FileSpecification` object to the `EmbeddedFileCollection` of the `Document` object. The article includes a code snippet demonstrating how to implement this functionality, highlighting the efficiency and simplicity of the Aspose.PDF library for managing PDF documents programmatically. The tutorial is aimed at users interested in enhancing PDF documents with various file attachments, utilizing the Aspose.PDF library's capabilities.
 ---
 <script type="application/ld+json">
 {

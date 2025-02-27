@@ -4,11 +4,14 @@ linktitle: Licensing and limitations
 type: docs
 weight: 50
 url: /python-net/licensing/
-description: Aspose. PDF for Python invites its customers to get a Classic license. As well as use a limited license to better explore the product.
-lastmod: "2022-12-21"
+description: Aspose.PDF for Python invites its customers to get a Classic license. As well as use a limited license to better explore the product.
+lastmod: "2025-02-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Overview of Evaluation and Licensing of the Aspose.PDF for Python
+Abstract: The article discusses the limitations of the evaluation version of Aspose.PDF for Python, highlighting that while it offers full product functionality, all generated PDF documents are watermarked with a specific evaluation message. To overcome this, users can request a 30-day Temporary License to test the software without these limitations. The article also provides guidance on using a classic license, explaining how to load the license from a file or stream object and recommending placing the license file in the same directory as the Aspose.PDF.dll file for ease of use. An example is provided to demonstrate how to set the license in Python code. Users who employ additional Aspose components alongside Aspose.PDF are advised to specify the namespace for the License class appropriately.
 ---
 
 ## Limitation of an evaluation version

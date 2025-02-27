@@ -5,10 +5,13 @@ type: docs
 weight: 40
 url: /python-net/working-with-images/
 description: This section describes the features of working with images in a PDF file using Python library.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to manipulate images in PDF documents 
+Abstract: The article "Working with Images in PDF using Python" provides an overview of how to manipulate images within PDF documents using the Aspose.PDF for Python library. This tool offers a range of functionalities for handling images in existing PDF files, catering to both beginner and experienced users in PDF document generation. Key features include adding images to PDFs, removing images, and extracting images from PDF files. The library is described as an intelligent and efficient solution for these tasks, with detailed guides and code snippets available for each function. Published by the Aspose.PDF Doc Team, the article highlights the library's capabilities and offers insights into effectively managing PDF images with Python.
 ---
 <script type="application/ld+json">
 {

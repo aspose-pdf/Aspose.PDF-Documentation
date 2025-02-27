@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF document using the TextStamp class with  Aspose.PDF for Python library.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add Text stamps in PDF via Python
+Abstract: The article "Add Text stamps in PDF Python" provides an introduction to using the Aspose.PDF for Python library to add text stamps to PDF documents. It covers the basic steps required to utilize the `TextStamp` class, which allows users to customize properties such as font size, style, and color. The article includes code snippets demonstrating how to create a `Document` object, configure a `TextStamp` object, and apply it to a specific page. Additionally, it explains how to align text and set rendering modes for more advanced text styling, including fill and stroke text. The examples illustrate how to add watermarks and adjust text alignment and appearance within PDF files. The article is aimed at beginners and highlights the capabilities of the Aspose.PDF library for enhancing PDF document generation and manipulation.
 ---
 <script type="application/ld+json">
 {

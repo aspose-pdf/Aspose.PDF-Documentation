@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/removing-attachment-from-an-existing-pdf/
 description: Aspose.PDF can remove attachments from your PDF documents. Use Python PDF API to remove attachments in PDF files using Aspose.PDF for Python via .NET library.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on how to remove attachments from PDF using the Aspose.PDF for Python
+Abstract: The article titled "Removing attachment from PDF" provides a beginner-level guide on how to remove attachments from PDF files using the Aspose.PDF library for Python. The document's attachments are stored in the `EmbeddedFiles` collection of the `Document` object. To delete all attachments, one must call the `delete()` method on the `EmbeddedFiles` collection and then save the updated file using the `save()` method of the `Document` object. The article includes a code snippet demonstrating this process. Aspose.PDF for Python is a versatile library that facilitates PDF manipulation, and its applications are available for download across various operating systems. The library is published by Aspose.PDF, which offers customer support and resources through various online platforms.
 ---
 <script type="application/ld+json">
 {

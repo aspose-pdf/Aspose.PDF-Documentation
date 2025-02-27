@@ -4,11 +4,14 @@ linktitle: Convert PDF to Excel
 type: docs
 weight: 20
 url: /python-net/convert-pdf-to-excel/
-lastmod: "2022-12-23"
+lastmod: "2025-02-27"
 description: Convert PDFs to Excel spreadsheets effortlessly with Aspose.PDF for Python via .NET. Follow this guide for accurate PDF to XLSX conversions
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to convert PDF to EXCEL using Aspose.PDF for Python
+Abstract: This article provides a comprehensive guide on converting PDF files to various Excel formats using Python, specifically leveraging the Aspose.PDF for Python via .NET library. The document outlines conversion processes for several formats, including XLS, XLSX, CSV, and ODS, each detailed with step-by-step instructions and code snippets. It discusses the functionality of the Aspose.PDF component, which facilitates rendering PDF files into Excel workbooks by converting individual PDF pages into Excel worksheets. Key features such as controlling the insertion of blank columns and minimizing worksheets during conversion are highlighted. Additionally, the article introduces an online tool, "PDF to XLSX," for testing the conversion process. The document aims to equip readers with the necessary knowledge to perform these conversions programmatically and efficiently within Python applications.
 ---
 
 ## Overview

@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/get-update-and-expand-bookmark/
 description: This article describes how to use bookmarks in a PDF file with our Aspose.PDF for Python library.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide to handling bookmarks in PDF files using the Aspose.PDF for Python
+Abstract: The article "Get, Update and Expand a Bookmark with Python" published by the Aspose.PDF Doc Team, provides a beginner-level guide to handling bookmarks in PDF files using the Aspose.PDF for Python library. The article covers a range of operations including retrieving bookmarks from a PDF file, determining their associated page numbers, accessing child bookmarks, and updating bookmark properties. Code snippets demonstrate how to loop through the `OutlineCollection` to access bookmarks and utilize the `OutlineItemCollection` for handling bookmark attributes. Additionally, the article explains how to expand all bookmarks when viewing a PDF by setting the open status for each bookmark. This comprehensive guide is designed to aid users in efficiently managing PDF bookmarks through Python programming.
 ---
 <script type="application/ld+json">
 {

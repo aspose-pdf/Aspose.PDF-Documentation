@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/add-delete-and-get-annotation/
 description: With Aspose.PDF for Python you may add, delete and get annotation from your PDF file. Check all lists of annotations to resolve your task.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide to managing annotations in PDF documents
+Abstract: The article "Add, Delete and Get Annotation with Python", published by the Aspose.PDF Doc Team, provides an introductory guide to managing annotations in PDF documents using the Aspose.PDF library for Python. Annotations enhance PDF interactivity by allowing users to add notes, highlight text, draw shapes, and attach files. The article categorizes different types of annotations available in the library, such as text annotations, highlights, figures, sticky notes, and extra annotations, each linked to detailed guides. The Aspose.PDF for Python library offers a comprehensive tool for PDF document manipulation across various operating systems, catering to users seeking to add, delete, or retrieve annotations efficiently. The software is available for download and purchase, with a high user satisfaction rating.
 ---
 <script type="application/ld+json">
 {

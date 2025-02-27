@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/text-formatting-inside-pdf/
 description: Explore text formatting options within PDF files in Python using Aspose.PDF for customized document styling.
-lastmod: "2024-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on formatting text in PDF files using Python
+Abstract: The article titled "Text Formatting inside PDF using Python", published by the Aspose.PDF Doc Team, provides a comprehensive guide on formatting text within PDF files using Python, specifically utilizing the Aspose.PDF for .NET library. Aimed at beginners, the article covers various text formatting techniques such as adding line indents, text borders, underlines, and strikeouts. It also explains how to introduce new line feeds, apply gradient shading, and align text within floating box elements. Through detailed code snippets, the article demonstrates the use of classes like `TextFragment`, `TextBuilder`, and `PdfContentEditor` to achieve these formatting tasks. Additionally, it highlights enhancements in text editing capabilities like gradient shading using `PatternColorSpace`. The article serves as a practical resource for developers looking to manipulate PDF text formatting programmatically.
 ---
 <script type="application/ld+json">
 {

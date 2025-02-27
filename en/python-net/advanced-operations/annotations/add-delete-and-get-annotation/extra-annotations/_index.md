@@ -5,10 +5,13 @@ type: docs
 weight: 60
 url: /python-net/extra-annotations/
 description: Learn how to add extra annotations like highlights or notes to PDFs in Python with Aspose.PDF for enhancing PDF content.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Deleting various types of annotations in PDF documents using Python
+Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a comprehensive guide on adding, retrieving, and deleting various types of annotations in PDF documents using Python. Specifically, it focuses on Caret Annotations, which are used to indicate text edits, and Link Annotations, which enable navigation to URLs or positions within documents. Additionally, the article covers the use of Redaction Annotations for concealing confidential information in PDFs. It presents detailed steps and Python code snippets for implementing these annotations, highlighting the functionalities of the Aspose.PDF library for Python via .NET. The article is intended for beginners interested in PDF document manipulation, offering practical examples and resources for further exploration. The publisher, Aspose, is a well-established organization known for its PDF manipulation tools, and the article aligns with their offerings in PDF document generation and editing.
 ---
 <script type="application/ld+json">
 {

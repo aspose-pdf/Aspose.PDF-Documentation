@@ -5,10 +5,13 @@ type: docs
 weight: 50
 url: /python-net/add-headers-and-footers-of-pdf-file/
 description: Aspose.PDF for Python via .NET allows you to add headers and footers to your PDF file using TextStamp class.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add Header and Footer to PDF using Python
+Abstract: The article titled "Add Header and Footer to PDF using Python", published by Aspose.PDF Doc Team, provides a comprehensive guide on how to enhance PDF files using the Aspose.PDF for Python via .NET library. It covers the process of adding text and image headers and footers to PDF documents. By utilizing the `TextStamp` and `ImageStamp` classes, users can customize their PDF files with various formatting options, including font size, style, color, and alignment. The article includes detailed Python code snippets for adding both text and image stamps to the headers and footers of PDF files, along with instructions to add multiple headers within a single PDF document. The examples demonstrate the flexibility and functionality of the library, allowing users to efficiently manage and customize PDF content. The guide is aimed at beginners and offers a step-by-step approach to leveraging the Aspose.PDF library for PDF manipulation.
 ---
 <script type="application/ld+json">
 {

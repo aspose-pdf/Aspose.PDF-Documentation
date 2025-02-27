@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/image-stamps-in-pdf-page/
 description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF for Python library.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add Image stamps in PDF using Python
+Abstract: The article "Add Image Stamps in PDF using Python" provides a comprehensive guide on using the Aspose.PDF library to insert image stamps into PDF documents. Targeted at beginners, the article explains how to utilize the `ImageStamp` class to create image-based stamps with customizable properties such as height, width, and opacity. The process involves creating a `Document` object, an `ImageStamp` object, and employing the `add_stamp()` method of the `Page` class to append the stamp to the PDF. The article includes code snippets demonstrating these steps, as well as instructions on controlling image quality using the `quality` property, which adjusts image clarity from 0 to 100 percent. Furthermore, it explores advanced usage of image stamps as backgrounds in floating boxes, enhancing document design versatility. Published by the Aspose.PDF Doc Team, the article is a practical resource for developers looking to manipulate PDFs programmatically with Python.
 ---
 <script type="application/ld+json">
 {

@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/highlights-annotation/
 description: Learn how to add highlights annotations to PDF files in Python using Aspose.PDF for text emphasis.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on how to use Python to add and manipulate text markup annotations in PDF documents
+Abstract: The article "PDF Highlights Annotation using Python", published by the Aspose.PDF Doc Team, provides a beginner-friendly guide on how to use Python to add and manipulate text markup annotations in PDF documents. It covers various types of annotations such as highlights, underlines, strikethroughs, and squiggly lines, each serving distinct purposes like indicating importance, suggesting edits, or marking errors. The guide includes detailed steps for adding these annotations using the Aspose.PDF library, complete with code snippets for each type. Additionally, the article explains how to retrieve and delete annotations, enabling users to manage PDF content effectively. The Aspose.PDF for Python Library, which facilitates these operations, is highlighted as a versatile tool for PDF manipulation across different operating systems, available for download on platforms like NuGet.
 ---
 <script type="application/ld+json">
 {

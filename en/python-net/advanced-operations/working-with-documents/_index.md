@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/working-with-documents/
 description: This article describes to you what manipulations can be done with the document with Aspose.PDF for Python via .NET library.
-lastmod: "2023-04-12"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Manipulate PDF Documents via Python
+Abstract: The article "Working with PDF Documents using Python via .NET" explores the capabilities of the Aspose.PDF for Python via .NET library in handling PDF documents. This beginner-level guide highlights how PDF files, known for their secure and platform-independent nature, can be manipulated using this library. The article provides a comprehensive overview of tasks achievable with Aspose.PDF, such as creating and formatting PDF documents, validating against PDF/A standards, optimizing content and file size, merging and splitting documents, and managing document headings. It emphasizes the library's utility in overcoming challenges associated with editing and manipulating PDFs. The Aspose.PDF library, available for Windows, MacOS, and Linux, offers a robust solution for developers seeking to integrate advanced PDF functionalities into their Python applications.
 ---
 <script type="application/ld+json">
 {

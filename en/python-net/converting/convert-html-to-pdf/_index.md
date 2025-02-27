@@ -4,14 +4,17 @@ linktitle: Convert HTML to PDF file
 type: docs
 weight: 40
 url: /python-net/convert-html-to-pdf/
-lastmod: "2022-12-22"
+lastmod: "2025-02-27"
 description: Learn how to convert HTML content into a PDF document using Aspose.PDF for Python via .NET
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: How to convert HTML to PDF using Aspose.PDF for Python
+Abstract: Aspose.PDF for Python via .NET offers a robust solution for creating PDF files from web pages and raw HTML code within applications. This article provides a guide on converting HTML to PDF using Python, outlining the use of Aspose.PDF for Python, a PDF manipulation API that enables seamless conversion of HTML documents to PDF format. The conversion process can be customized as needed. The article includes a Python code sample demonstrating the conversion process, which involves creating an instance of the HtmlLoadOptions class, initializing a Document object, and saving the output PDF document using the Document.Save() method. Additionally, Aspose offers an online tool for converting HTML to PDF, allowing users to explore the functionality and quality of the conversion process.
 ---
 
-## Overview 
+## Overview
 
 Aspose.PDF for Python via .NET is a professional solution that allows you to create PDF files from web pages and raw HTML code in your applications.
 

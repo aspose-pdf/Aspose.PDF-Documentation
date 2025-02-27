@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF for Python.
-lastmod: "2024-01-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to work with Text in PDF using Python
+Abstract: The article "Working with Text in PDF using Python" provides a beginner-friendly guide to manipulating text within PDF files using the Aspose.PDF library for Python via .NET. It covers essential text operations such as adding, formatting, replacing, and rotating text, as well as searching and retrieving text from PDF documents. The guide emphasizes practical applications like adding translations, captions, and hyperlinks, and enhancing document interactivity with features like tooltips and text borders. Aspose.PDF is presented as a comprehensive solution for these tasks, offering extensive functionalities for customizing PDF content. The article is part of a series published by the Aspose.PDF Doc Team, aimed at enhancing user proficiency in PDF document generation and manipulation.
 ---
 <script type="application/ld+json">
 {
