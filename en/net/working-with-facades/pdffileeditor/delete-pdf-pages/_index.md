@@ -1,6 +1,8 @@
 ---
 title: Delete PDF pages
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/delete-pdf-pages/
 description: This section explains how to delete PDF pages with Aspose.PDF Facades using PdfFileEditor class.

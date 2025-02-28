@@ -2,6 +2,8 @@
 title: Working with XFA Forms
 linktitle: XFA Forms
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/xfa-forms/
 description: Aspose.PDF for .NET API lets you work with XFA and XFA Acroform fields in a PDF document. The Aspose.Pdf.Facades.

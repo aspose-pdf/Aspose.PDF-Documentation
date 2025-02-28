@@ -2,6 +2,8 @@
 title: Compare PDF documents
 linktitle: Compare PDF 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /net/compare-pdf-documents/
 description: Since 24.7 release it's possible to compare PDF documents content with annotation marks and side-by-side output

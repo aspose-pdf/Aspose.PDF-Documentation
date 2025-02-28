@@ -2,6 +2,8 @@
 title: Move PDF Pages programmatically C#
 linktitle: Move PDF Pages
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/move-pages/
 description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for .NET.

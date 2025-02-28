@@ -1,6 +1,8 @@
 ---
 title: PdfFileSignature Class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/pdffilesignature-class/
 description: Explore how to add, verify, and remove digital signatures from PDF documents in .NET using the PDFFileSignature class with Aspose.PDF.

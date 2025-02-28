@@ -1,6 +1,8 @@
 ---
 title: Set Viewer Preference of PDF 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/set-viewer-preference-of-an-existing-pdf-file/
 description: This section shows how to set viewer preference of an existing PDF file using PdfContentEditor Class.

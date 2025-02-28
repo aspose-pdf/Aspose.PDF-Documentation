@@ -2,6 +2,8 @@
 title: Set Privileges, Encrypt and Decrypt PDF
 linktitle: Encrypt and Decrypt PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/set-privileges-encrypt-and-decrypt-pdf-file/
 description: Encrypt PDF File with C# using Different Encryption Types and Algorithms. Also, decrypt PDF Files using Owner Password.

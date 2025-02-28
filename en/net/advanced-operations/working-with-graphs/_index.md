@@ -2,6 +2,8 @@
 title: Working with Graphs in PDF file
 linktitle: Working with Graphs
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/working-with-graphs/
 description: This article explains what a is Graph, how to create a filled rectangle object, and other functions

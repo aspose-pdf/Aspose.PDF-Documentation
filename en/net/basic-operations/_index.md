@@ -2,6 +2,8 @@
 title: Basic operations with PDF documents
 linktitle: Basic operations
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/basic-operations/
 lastmod: "2022-01-29"

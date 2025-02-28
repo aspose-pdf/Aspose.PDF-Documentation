@@ -2,6 +2,8 @@
 title: Converting Documents with Microsoft Azure function
 linktitle: Converting Documents with Microsoft Azure function
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/converting-documents-with-microsoft-azure-function/
 description: Learn how to convert PDF documents using Microsoft Azure Functions with Aspose.PDF for .NET, enabling cloud-based document processing.

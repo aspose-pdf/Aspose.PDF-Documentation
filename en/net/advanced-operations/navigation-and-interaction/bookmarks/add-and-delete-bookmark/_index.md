@@ -2,6 +2,8 @@
 title: Add and Delete a Bookmark
 linktitle: Add and Delete a Bookmark
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-and-delete-bookmark/
 description: You can add a bookmark to a PDF document with C#. It is possible to delete all or particular bookmarks from a PDF document.

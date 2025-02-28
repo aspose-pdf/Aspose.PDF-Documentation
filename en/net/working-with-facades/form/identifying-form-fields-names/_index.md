@@ -1,6 +1,8 @@
 ---
 title: Identifying form fields names
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/identifying-form-fields-names/
 description: Aspose.Pdf.Facades allows you identifying form fields names using Form Class.

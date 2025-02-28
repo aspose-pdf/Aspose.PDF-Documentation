@@ -2,6 +2,8 @@
 title: Manipulate Tables in existing PDF
 linktitle: Manipulate Tables
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/manipulate-tables-in-existing-pdf/
 description: Learn how to work with tables in existing PDFs using Aspose.PDF for .NET, providing flexibility in document modification.

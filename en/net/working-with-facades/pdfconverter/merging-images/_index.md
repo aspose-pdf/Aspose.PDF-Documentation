@@ -1,6 +1,8 @@
 ---
 title: Merge images 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/merge-images/
 description: Discover how to merge images into a single PDF document in .NET using Aspose.PDF for streamlined document creation.

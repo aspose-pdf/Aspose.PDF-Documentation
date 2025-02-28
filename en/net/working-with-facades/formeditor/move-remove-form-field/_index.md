@@ -1,6 +1,8 @@
 ---
 title: Move and Remove Form Field
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/move-remove-form-field/
 description: Explore how to manage form fields in PDFs, including moving or removing them, using Aspose.PDF for .NET.
