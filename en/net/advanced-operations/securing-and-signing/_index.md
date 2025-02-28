@@ -2,6 +2,8 @@
 title: Securing and signing PDF in C#
 linktitle: Securing and signing in PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 210
 url: /net/securing-and-signing/
 description: This section describes the features of using a signature and securing your PDF document using C#

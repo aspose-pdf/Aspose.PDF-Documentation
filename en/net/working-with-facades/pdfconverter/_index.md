@@ -1,6 +1,8 @@
 ---
 title: PdfConverter Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/pdfconverter-class/
 description: Learn how to utilize the PDFConverter class in .NET to convert PDF documents into different formats with Aspose.PDF.

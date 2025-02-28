@@ -2,6 +2,8 @@
 title: Add Ellipse Object to PDF file
 linktitle: Add Ellipse
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/add-ellipse/
 description: This article explains how to create a Ellipse object to your PDF using Aspose.PDF for .NET.

@@ -2,6 +2,8 @@
 title: What's new
 linktitle: What's new
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/whatsnew/
 description: In this page introduces the most popular new features in Aspose.PDF for .NET that have been introduced in recent releases.

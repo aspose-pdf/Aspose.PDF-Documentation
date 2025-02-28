@@ -2,6 +2,8 @@
 title: Overview of Aspose.PDF.Drawing for .NET
 linktitle: PDF.Drawing version
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /net/drawing/
 lastmod: "2023-12-21"

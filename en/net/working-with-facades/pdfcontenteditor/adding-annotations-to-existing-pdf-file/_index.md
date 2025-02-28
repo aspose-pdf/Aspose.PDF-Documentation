@@ -1,6 +1,8 @@
 ---
 title: Adding Annotations to existing PDF file
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/adding-annotations-to-existing-pdf-file/
 description: Explore how to add annotations like comments or highlights to existing PDF documents in .NET using Aspose.PDF.

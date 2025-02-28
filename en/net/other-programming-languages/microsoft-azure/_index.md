@@ -2,6 +2,8 @@
 title: Converting Documents in Microsoft Azure
 linktitle: Converting Documents in Microsoft Azure
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/microsoft-azure/
 description: Learn to deploy and use Aspose.PDF for .NET in Microsoft Azure environments. Unlock powerful PDF processing in the cloud.

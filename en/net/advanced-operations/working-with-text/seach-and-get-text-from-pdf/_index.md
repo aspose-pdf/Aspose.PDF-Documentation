@@ -2,6 +2,8 @@
 title: Search and Get Text from Pages of PDF
 linktitle: Search and Get Text
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/search-and-get-text-from-pdf/
 description: Discover how to search and retrieve text from a PDF file in .NET using Aspose.PDF for text analysis and extraction.

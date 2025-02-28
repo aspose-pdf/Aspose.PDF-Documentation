@@ -2,6 +2,8 @@
 title: Printing PDF in .NET Framework
 linktitle: Printing PDF in .NET Framework
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/printing-pdf-in-net-framework/
 description: You may print PDF files to the default printer using the printer and page settings with C#.

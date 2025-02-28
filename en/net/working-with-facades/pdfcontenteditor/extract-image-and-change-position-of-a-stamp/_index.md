@@ -1,6 +1,8 @@
 ---
 title: Extract image and change stamp position
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-image-and-change-position-of-a-stamp/
 description: This section explains how to extract Image and Change Position of a Stampwith Aspose.PDF Facades.

@@ -1,6 +1,8 @@
 ---
 title: Delete Annotations (facades)
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/delete-annotations/
 description: This section explains how to delete annotations with Aspose.PDF Facades using PdfAnnotationEditor Class.

@@ -2,6 +2,8 @@
 title: Generate Thumbnail Images from PDF
 linktitle: Generate Thumbnail Images
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/generate-thumbnail-images-from-pdf-documents/
 description: This section describes how to generate thumbnail images from PDF documents

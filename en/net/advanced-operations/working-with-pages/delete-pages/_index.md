@@ -2,6 +2,8 @@
 title: Delete PDF Pages programmatically C#
 linktitle: Delete PDF Pages
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/delete-pages/
 description: You can delete pages from your PDF file using Aspose.PDF for .NET  library.

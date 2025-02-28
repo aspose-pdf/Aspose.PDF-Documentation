@@ -1,6 +1,8 @@
 ---
 title: PdfBookmarkEditor Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 45
 url: /net/working-with-bookmarks-facades/
 description: This section explains how to work with Aspose.PDF Facades using PdfBookmarEditor Class.

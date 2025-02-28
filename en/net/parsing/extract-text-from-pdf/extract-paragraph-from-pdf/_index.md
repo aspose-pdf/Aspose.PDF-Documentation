@@ -2,6 +2,8 @@
 title: Extract Paragraph from PDF C#
 linktitle: Extract Paragraph from PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/extract-paragraph-from-pdf/
 description: Learn how to extract paragraphs from PDF documents in .NET using Aspose.PDF for structured text retrieval.

@@ -2,6 +2,8 @@
 title: Extract Table from PDF Document
 linktitle: Extract Table
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/extract-table-from-existing-pdf-document/
 description: Aspose.PDF for .NET makes it possible to carry out various manipulations with the tables contained in your pdf document.

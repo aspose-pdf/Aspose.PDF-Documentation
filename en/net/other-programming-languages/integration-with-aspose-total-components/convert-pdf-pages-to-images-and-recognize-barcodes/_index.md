@@ -1,6 +1,8 @@
 ---
 title: Convert PDF Pages to Images and Recognize Barcodes
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/convert-pdf-pages-to-images-and-recognize-barcodes/
 ---

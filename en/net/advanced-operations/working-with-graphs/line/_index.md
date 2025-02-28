@@ -2,6 +2,8 @@
 title: Add Line Object to PDF file
 linktitle: Add Line
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/add-line/
 description: This article explains how to create a line object to your PDF using Aspose.PDF for .NET.

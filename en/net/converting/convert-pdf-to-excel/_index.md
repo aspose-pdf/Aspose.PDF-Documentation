@@ -2,6 +2,8 @@
 title: Convert PDF to Excel in .NET
 linktitle: Convert PDF to Excel
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/convert-pdf-to-excel/
 lastmod: "2021-11-01"

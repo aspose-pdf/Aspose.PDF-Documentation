@@ -2,6 +2,8 @@
 title: Convert PDF to HTML in .NET 
 linktitle: Convert PDF to HTML format
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/convert-pdf-to-html/
 lastmod: "2021-11-01"

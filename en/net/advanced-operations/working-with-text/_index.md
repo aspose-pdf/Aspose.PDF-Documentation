@@ -2,6 +2,8 @@
 title: Working with Text in PDF using C#
 linktitle: Working with Text
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/working-with-text/
 description: This section explains various techniques of text handling. Learn how to add, replace, rotate, search text using Aspose.PDF and C#.

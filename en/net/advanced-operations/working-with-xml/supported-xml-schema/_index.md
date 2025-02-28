@@ -2,6 +2,8 @@
 title: XML Schema of Aspose.PDF
 linktitle: Supported XML Schema
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: net/supported-xml-schema/
 description: This article describes an XML schema for working with XML documents in Aspose.PDF for .NET

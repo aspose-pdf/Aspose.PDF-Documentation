@@ -1,6 +1,8 @@
 ---
 title: What's is the difference between FDF, XML, and XFDF formats
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/whats-the-difference-between-xml-fdf-and-xfdf/
 description: This section difference between XML, FDF and XFDF forms with Aspose.PDF Facades using Form Class.

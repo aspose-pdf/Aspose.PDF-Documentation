@@ -2,6 +2,8 @@
 title: Create or Add Table In PDF using C#
 linktitle: Create or Add Table
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-table-in-existing-pdf-document/
 description: Aspose.PDF for .NET is a library used to create, read, and edit PDF Tables. Check other advanced functions in this topic.

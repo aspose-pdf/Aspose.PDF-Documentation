@@ -2,6 +2,8 @@
 title: Using Link Annotations in PDF
 linktitle: Link Annotations
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/link-annotations/
 description: Aspose.PDF for .NET allows you to Add, Get, and Delete Link Annotation from your PDF document.

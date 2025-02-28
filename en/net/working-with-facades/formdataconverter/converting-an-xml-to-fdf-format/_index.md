@@ -1,6 +1,8 @@
 ---
 title: Converting an XML to FDF format
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/converting-an-xml-to-fdf-format/
 description: This section explains how you can convert an XML to FDF format with FormDataConverter.

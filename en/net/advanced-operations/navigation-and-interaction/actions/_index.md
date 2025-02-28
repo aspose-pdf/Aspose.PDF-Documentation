@@ -2,6 +2,8 @@
 title: Working with Actions in PDF
 linktitle: Actions
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/actions/
 description: This section explains how to add actions to the document and form fields programmatically with C#.

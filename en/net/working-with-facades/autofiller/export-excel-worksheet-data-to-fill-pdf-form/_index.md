@@ -1,6 +1,8 @@
 ---
 title: Export Excel data to fill PDF form
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/export-excel-worksheet-data-to-fill-pdf-form/
 description: This section explains how you can export Excel worksheet data to fill PDF form using AutoFiller Class.

@@ -2,6 +2,8 @@
 title: Extract SuperScripts and SubScripts text from PDF
 linktitle: Extract SuperScripts and SubScripts 
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-superscripts-subscripts-from-pdf/
 description: This article describes various ways to extract SuperScripts and SubScripts text from PDF using Aspose.PDF in C#. 

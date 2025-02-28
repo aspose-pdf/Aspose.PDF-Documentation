@@ -1,6 +1,8 @@
 ---
 title: Manage Header and Footer
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/manage-header-and-footer/
 description: Explore how to manipulate headers and footers in PDF files in .NET with Aspose.PDF for improved document structuring.

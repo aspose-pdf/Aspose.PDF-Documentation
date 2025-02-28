@@ -2,6 +2,8 @@
 title: Generate PDF from XML
 linktitle: Generate PDF from XML
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/generate-pdf-from-xml
 description: Aspose.PDF for .NET provides several ways to convert an XML file into a PDF document requiring that the input XML file.

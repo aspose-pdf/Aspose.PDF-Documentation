@@ -2,6 +2,8 @@
 title: FAQ 
 linktitle: FAQ
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 140
 url: /net/faq/
 description: Here you can find answers to Frequently Asked Questions for Aspose.PDF for .NET library.

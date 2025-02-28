@@ -2,6 +2,8 @@
 title: Update Links in PDF
 linktitle: Update Links
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/update-links/
 description: Update links in PDF programmatically. This guide is about how to update links in PDF in C# language.

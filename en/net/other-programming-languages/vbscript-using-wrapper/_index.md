@@ -1,6 +1,8 @@
 ---
 title: VBScript using wrapper
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /net/vbscript-using-wrapper/
 description: Explore how to use Aspose.PDF for .NET in VBScript applications by utilizing a wrapper for seamless integration.

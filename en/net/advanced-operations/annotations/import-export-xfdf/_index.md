@@ -2,6 +2,8 @@
 title: Import and Export Annotations to XFDF
 linktitle: Import and Export Annotations to XFDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/import-export-xfdf/
 description: You may import and export annotation with XFDF format with C# and Aspose.PDF for .NET library.

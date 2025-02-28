@@ -2,6 +2,8 @@
 title: Working with Bookmarks in PDF using C#
 linktitle: Bookmarks
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/bookmarks/
 description: Discover how to work with PDF bookmarks in .NET using Aspose.PDF for easy document navigation and organization.

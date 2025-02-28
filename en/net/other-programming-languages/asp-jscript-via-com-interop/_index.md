@@ -1,6 +1,8 @@
 ---
 title: ASP - JScript via COM Interop
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/asp-jscript-via-com-interop/
 description: Learn to use Aspose.PDF for .NET in ASP and JScript applications through COM Interop. Enable advanced PDF capabilities.

@@ -1,6 +1,8 @@
 ---
 title: Integration with Aspose.Total Components
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /net/integration-with-aspose-total-components/
 ---

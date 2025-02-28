@@ -2,6 +2,8 @@
 title: Printing PDF to an XPS Printer
 linktitle: Printing PDF to an XPS Printer (Facades)
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/printing-pdf-to-an-xps-printer-facades/
 description: This page shows how to printing PDF to an XPS printer using PdfViewer class.

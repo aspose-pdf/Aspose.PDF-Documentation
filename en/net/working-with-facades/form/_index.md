@@ -1,6 +1,8 @@
 ---
 title: Form Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 140
 url: /net/form-class/
 description: This section explains how to work with Aspose.PDF Facades using Form Class.

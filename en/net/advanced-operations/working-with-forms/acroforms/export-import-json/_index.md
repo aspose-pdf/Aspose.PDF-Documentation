@@ -1,6 +1,8 @@
 ---
 title: Import and Export Data in JSON
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/import-export-json/
 description: This section explains how to import and Export Data in JSON

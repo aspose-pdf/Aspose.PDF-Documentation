@@ -1,6 +1,8 @@
 ---
 title: Get Viewer Preference of PDF File
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/get-viewer-preference-of-an-existing-pdf-file/
 description: This section shows how to get viewer preference of an existing PDF file using PdfContentEditor Class.

@@ -1,6 +1,8 @@
 ---
 title: Convert PDF File
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/convert-pdf-file/
 description: Learn how to convert a PDF file to various formats in .NET using Aspose.PDF for flexible document handling.

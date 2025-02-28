@@ -2,6 +2,8 @@
 title: Working with Table in Tagged PDFs
 linktitle: Working with Table in Tagged PDFs
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/working-with-table-in-tagged-pdfs/
 description: This article explains how to works with table in Tagged PDF document with Aspose.PDF for .NET.

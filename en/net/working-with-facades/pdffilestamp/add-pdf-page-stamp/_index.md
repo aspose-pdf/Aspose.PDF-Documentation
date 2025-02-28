@@ -1,6 +1,8 @@
 ---
 title: Add PDF Page Stamp
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-pdf-page-stamp/
 description: Discover how to add stamps to PDF pages in .NET, including text and images, for watermarking or branding using Aspose.PDF.

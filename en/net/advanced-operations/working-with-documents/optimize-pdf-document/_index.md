@@ -2,6 +2,8 @@
 title: Optimize, Compress or Reduce PDF Size in C#
 linktitle: Optimize PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/optimize-pdf/
 description: Optimize PDF file, shrink all images, reduce size PDF, Unembed fonts, Remove unused objects with C#.

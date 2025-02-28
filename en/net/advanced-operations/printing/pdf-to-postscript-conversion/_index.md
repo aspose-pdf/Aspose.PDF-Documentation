@@ -2,6 +2,8 @@
 title: PDF to PostScript conversion
 linktitle: PDF to PostScript conversion
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/pdf-to-postscript-conversion/
 description: We have a solution for PDF to PostScript conversion. Use for this task printing and PdfViewer class.

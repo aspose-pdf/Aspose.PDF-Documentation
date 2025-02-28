@@ -1,6 +1,8 @@
 ---
 title: Extract PDF pages
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/extract-pdf-pages/
 description: This section explains how to extract PDF pages with Aspose.PDF Facades using PdfFileEditor class.

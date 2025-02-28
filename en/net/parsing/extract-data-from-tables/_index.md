@@ -2,6 +2,8 @@
 title: Extract Data from Table in PDF with C#
 linktitle: Extract Data from Table
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/extract-data-from-table-in-pdf/
 description: Learn how to extract tabular from PDF using Aspose.PDF for .NET in C#

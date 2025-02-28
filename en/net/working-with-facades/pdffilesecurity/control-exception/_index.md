@@ -1,6 +1,8 @@
 ---
 title: Control Exception PDF File
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/control-exception/
 description: Learn how to handle exceptions in PDF processing and ensure smooth operations while working with PDFs using Aspose.PDF in .NET.

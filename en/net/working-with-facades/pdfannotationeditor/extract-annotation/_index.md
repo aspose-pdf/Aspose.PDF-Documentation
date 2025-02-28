@@ -1,6 +1,8 @@
 ---
 title: Extract Annotations from PDF 
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-annotation/
 description: This section explains how to extract annotations from PDF file to XFDF with Aspose.PDF Facades.

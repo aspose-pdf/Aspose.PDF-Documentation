@@ -2,6 +2,8 @@
 title: Working with Operators
 linktitle: Working with Operators
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /net/working-with-operators/
 description: This topic explains how to use operators with Aspose.PDF. The operator classes provide great features for PDF manipulation.

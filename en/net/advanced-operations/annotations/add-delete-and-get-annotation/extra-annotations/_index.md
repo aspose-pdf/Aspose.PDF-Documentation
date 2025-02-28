@@ -2,6 +2,8 @@
 title: Extra Annotations using C#
 linktitle: Extra Annotations
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/extra-annotations/
 description: Learn how to add additional annotations to PDF files in .NET using Aspose.PDF for interactive document features.

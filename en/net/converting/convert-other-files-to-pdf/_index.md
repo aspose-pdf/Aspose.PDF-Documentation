@@ -2,6 +2,8 @@
 title: Convert other file formats to PDF in .NET
 linktitle: Convert other file formats to PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"

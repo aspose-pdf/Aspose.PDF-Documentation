@@ -1,6 +1,8 @@
 ---
 title: Extensible Metadata Platform - XMP
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/working-with-extensible-metadata-platform-xmp/
 description: This section explains how to work with Extensible Metadata Platform - XMP using PdfXmpMetadata Class.

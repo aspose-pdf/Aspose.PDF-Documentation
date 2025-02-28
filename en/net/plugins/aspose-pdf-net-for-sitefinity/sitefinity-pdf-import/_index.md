@@ -1,6 +1,8 @@
 ---
 title: Sitefinity PDF Import
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/sitefinity-pdf-import/
 description: Learn how to install and use PDF Import Module for Sitefinity

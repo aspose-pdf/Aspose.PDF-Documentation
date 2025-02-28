@@ -1,6 +1,8 @@
 ---
 title: Set PDF File Information
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/set-pdf-file-information/
 description: This section explains how to set PDF File Information with Aspose.PDF Facades.

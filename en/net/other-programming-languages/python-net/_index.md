@@ -2,6 +2,8 @@
 title: Using Aspose.PDF for .NET with Python
 linktitle: Integration with Python
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/python-net/
 description: In this tutorial, you will explore the different ways of creating and modifying PDF files in Python.

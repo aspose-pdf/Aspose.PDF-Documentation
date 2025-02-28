@@ -2,6 +2,8 @@
 title: Get, Update and Expand a Bookmark
 linktitle: Get, Update and Expand a Bookmark
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/get-update-and-expand-bookmark/
 description: This article describes how to use bookmarks in a PDF file with our Aspose.PDF for .NET library.

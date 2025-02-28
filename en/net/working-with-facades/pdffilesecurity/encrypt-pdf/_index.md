@@ -1,6 +1,8 @@
 ---
 title: Encrypt PDF File
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/encrypt-pdf-file/
 description: This topic explains how to Encrypt PDF File using PdfFileSecurity Class.

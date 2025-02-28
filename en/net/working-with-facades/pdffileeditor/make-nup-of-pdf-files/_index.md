@@ -1,6 +1,8 @@
 ---
 title: Make NUp of PDF files
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /net/make-nup-of-pdf-files/
 description: This article shows how to make NUp of PDF files work with Aspose.PDF Facades using PdfFileEditor class.

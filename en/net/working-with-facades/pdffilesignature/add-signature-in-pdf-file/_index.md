@@ -1,6 +1,8 @@
 ---
 title: Add Signature in PDF File
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-signature-in-pdf/
 description: This section explains how to add signature to PDF File using PdfFileSignature class.

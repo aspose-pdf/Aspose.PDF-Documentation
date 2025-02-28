@@ -2,6 +2,8 @@
 title: Convert PDF to Microsoft Word Documents in .NET
 linktitle: Convert PDF to Word
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/convert-pdf-to-word/
 lastmod: "2022-08-04"

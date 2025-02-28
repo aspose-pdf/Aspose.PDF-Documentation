@@ -1,6 +1,8 @@
 ---
 title: Import and Export Bookmarks
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/import-and-export-bookmarks/
 description: This section explains how to import and export Bookmarks with Aspose.PDF Facades.

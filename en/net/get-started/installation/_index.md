@@ -2,6 +2,8 @@
 title: How to Install Aspose.PDF for .NET
 linktitle: Installation
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/installation/
 description: This section shows a product description and instructions for installing Aspose.PDF for .NET on your own, as well as using NuGet.

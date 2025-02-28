@@ -1,6 +1,8 @@
 ---
 title: FormDataConverter Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /net/formdataconverter-class/
 description: This section explains how to work with Aspose.PDF Facades using FormDataConverter Class.

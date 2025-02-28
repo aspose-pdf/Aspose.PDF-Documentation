@@ -1,6 +1,8 @@
 ---
 title: Aspose.PDF .NET for VisualStudio
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/aspose-pdf-net-for-visualstudio/
 description: Learn how to use Aspose.PDF plugins for Visual Studio

@@ -2,6 +2,8 @@
 title: Extract Links from the PDF File
 linktitle: Extract Links
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-links/
 description: Discover how to extract hyperlinks from PDF documents in .NET using Aspose.PDF for content management and link analysis.

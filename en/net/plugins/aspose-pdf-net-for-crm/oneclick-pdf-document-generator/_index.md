@@ -1,6 +1,8 @@
 ---
 title: OneClick PDF Document Generator
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/oneclick-pdf-document-generator/
 description: Learn how to use Aspose.PDF OneClick PDF Document Generator

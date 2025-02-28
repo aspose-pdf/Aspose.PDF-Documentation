@@ -1,6 +1,8 @@
 ---
 title: Working with Headings in PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 url: /net/working-with-headings/
 weight: 70
 description: Create numbering in heading your PDF document with C#. Aspose.PDF for .NET offers different kinds of numbering styles.

@@ -1,6 +1,8 @@
 ---
 title: Visual Studio Export GridView To PDF Control
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/visual-studio-export-gridview-to-pdf-control/
 ---

@@ -2,6 +2,8 @@
 title: Manipulate PDF Document in C#
 linktitle: Manipulate PDF Document
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and etc.

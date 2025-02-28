@@ -1,6 +1,8 @@
 ---
 title: FormEditor Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/formeditor-class/
 description: This section explains how to work with Aspose.PDF Facades using FormEditor Class.

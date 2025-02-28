@@ -2,6 +2,8 @@
 title: How to run Aspose.PDF in Docker
 linktitle: Using Docker
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/docker/
 description: Integrate Aspose.PDF functionality into your application using Docker Linux or Windows containers

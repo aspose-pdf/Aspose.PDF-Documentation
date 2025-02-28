@@ -2,6 +2,8 @@
 title: Working with PDF Pages in C#
 linktitle: Working with Pages
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/working-with-pages/
 description: How to add pages, add headers and footers, add watermarks  you can know in this section. Aspose.PDF for .NET explain to you all details on this topic.

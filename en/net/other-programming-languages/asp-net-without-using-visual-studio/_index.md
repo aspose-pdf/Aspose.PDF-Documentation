@@ -1,6 +1,8 @@
 ---
 title: ASP.NET without using Visual Studio
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/asp-net-without-using-visual-studio/
 description: Learn how to use Aspose.PDF for .NET in ASP.NET projects without relying on Visual Studio. Follow this practical guide.

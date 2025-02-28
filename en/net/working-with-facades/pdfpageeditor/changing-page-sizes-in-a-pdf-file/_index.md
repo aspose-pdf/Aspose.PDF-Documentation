@@ -1,6 +1,8 @@
 ---
 title: Changing page sizes in PDF file
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/changing-page-sizes-in-a-pdf-file/
 description: Try to learn how to change page sizes in a PDF file using PdfPageEditor Class.

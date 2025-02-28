@@ -1,6 +1,8 @@
 ---
 title: ASP - VBScript via COM Interop
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/asp-vbscript-via-com-interop/
 ---

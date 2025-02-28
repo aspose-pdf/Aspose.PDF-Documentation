@@ -2,6 +2,8 @@
 title: Formatting PDF Document using C#
 linktitle: Formatting PDF Document
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for .NET. Use the next code snippet to resolve your tasks.

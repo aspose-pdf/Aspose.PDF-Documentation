@@ -1,6 +1,8 @@
 ---
 title: Page Break in existing PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/page-break-in-existing-pdf/
 description: Discover how to insert page breaks in an existing PDF file in .NET using Aspose.PDF for better page management.

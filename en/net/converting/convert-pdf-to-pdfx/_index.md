@@ -2,6 +2,8 @@
 title: Convert PDF to PDF/X exchange format
 linktitle: Convert PDF to PDF/X exchange format
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /net/convert-pdf-to-pdfx/
 lastmod: "2025-01-16"

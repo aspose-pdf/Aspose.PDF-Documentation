@@ -1,6 +1,8 @@
 ---
 title: PdfContentEditor Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/pdfcontenteditor-class/
 description: Explore how to edit PDF content programmatically using the PDFContentEditor class in .NET with Aspose.PDF.

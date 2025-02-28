@@ -2,6 +2,8 @@
 title: Add Arc Object to PDF file
 linktitle: Add Arc
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-arc/
 description: This article explains how to create a arc object to your PDF using Aspose.PDF for .NET.

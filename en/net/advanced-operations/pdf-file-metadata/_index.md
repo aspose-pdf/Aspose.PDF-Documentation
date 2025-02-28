@@ -2,6 +2,8 @@
 title: Working with PDF File Metadata in C#
 linktitle: PDF File Metadata
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 200
 url: /net/pdf-file-metadata/
 description: Explore how to extract and manage PDF metadata, such as author and title, in .NET using Aspose.PDF.

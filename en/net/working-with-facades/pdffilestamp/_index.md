@@ -1,6 +1,8 @@
 ---
 title: PdfFileStamp Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 155
 url: /net/pdffilestamp-class/
 description: This section explains how you can use PdfFileStamp Class by Aspose.PDF Facades in working with PDF.

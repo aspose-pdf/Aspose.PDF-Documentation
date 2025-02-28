@@ -2,6 +2,8 @@
 title: Create Tagged PDF using C#
 linktitle: Create Tagged PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/create-tagged-pdf/
 description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for .NET.

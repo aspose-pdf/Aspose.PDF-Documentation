@@ -1,6 +1,8 @@
 ---
 title: PdfExtractor Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/pdfextractor-class/
 description: Learn how to extract content like text and images from a PDF using the PDFExtractor class in .NET with Aspose.PDF.

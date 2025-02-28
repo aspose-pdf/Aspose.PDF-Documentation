@@ -2,6 +2,8 @@
 title: Convert PDF/A to PDF format 
 linktitle: Convert PDF/A to PDF format
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/convert-pdfa-to-pdf/
 lastmod: "2021-11-01"

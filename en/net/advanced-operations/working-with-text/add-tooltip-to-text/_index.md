@@ -2,6 +2,8 @@
 title: PDF Tooltip using C#
 linktitle: PDF Tooltip
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/pdf-tooltip/
 description: Learn how to add tooltip to the text fragment in PDF using C# and Aspose.PDF

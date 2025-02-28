@@ -2,6 +2,8 @@
 title: Add digital signature or digitally sign PDF in C#
 linktitle: Digitally sign PDF
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/digitally-sign-pdf-file/
 description: Digitally sign PDF documents using C# or VB.NET. Verify, or validate the digitally sign PDFs using C# or VB.NET.

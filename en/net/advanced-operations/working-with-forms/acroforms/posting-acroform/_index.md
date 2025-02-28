@@ -2,6 +2,8 @@
 title: Posting AcroForm Data
 linktitle: Posting AcroForm
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/posting-acroform-data/
 description: You can import and export form data to and XML file with Aspose.Pdf.Facades namespace in Aspose.PDF for .NET.

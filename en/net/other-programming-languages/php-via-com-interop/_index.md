@@ -1,6 +1,8 @@
 ---
 title: PHP via COM Interop
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/php-via-com-interop/
 description: Integrate Aspose.PDF for .NET into PHP applications using COM Interop. Add powerful PDF processing features to your workflow.

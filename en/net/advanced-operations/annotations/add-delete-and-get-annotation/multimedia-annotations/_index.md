@@ -2,6 +2,8 @@
 title: PDF Multimedia Annotation using C#
 linktitle: Multimedia Annotation
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/multimedia-annotation/
 description: Aspose.PDF for .NET allows you to add, get, and delete the multimedia annotation from your PDF document.

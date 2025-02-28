@@ -1,6 +1,8 @@
 ---
 title: Working with JavaScript
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /net/working-with-javascript/
 description: Learn how to add, modify, and execute JavaScript in PDF documents using Aspose.PDF for .NET. Enhance interactivity and automation.

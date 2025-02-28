@@ -2,6 +2,8 @@
 title: Advanced operations
 linktitle: Advanced operations
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /net/advanced-operations/
 description: Aspose.PDF can perform not only simple and easy tasks but also cope with more complex goals. Check the next section for advanced users and developers.

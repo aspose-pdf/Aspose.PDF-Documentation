@@ -2,6 +2,8 @@
 title: Overview of supported Annotations
 linktitle: Overview of Annotations
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/overview-of-annotations/
 description: Check out the list of possible annotations you can work with using Aspose.PDF for .NET.

@@ -1,6 +1,8 @@
 ---
 title: Working with PDF printing - Facades
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/working-with-pdf-printing-facades/
 description: This section explains how to print PDF files with Aspose.PDF Facades using PdfFileEditor class.

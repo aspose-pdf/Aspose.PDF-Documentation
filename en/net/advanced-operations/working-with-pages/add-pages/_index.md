@@ -2,6 +2,8 @@
 title: Add Pages to PDF Document
 linktitle: Add Pages
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-pages/
 description: Explore how to add pages to an existing PDF in .NET with Aspose.PDF for enhancing and expanding your documents.

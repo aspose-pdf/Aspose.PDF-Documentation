@@ -1,6 +1,8 @@
 ---
 title: Manipulate Page Properties
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/manipulate-page-properties/
 description: This section explains how to manipulate Page Properties with Aspose.PDF Facades using PdfPageEditor Class.

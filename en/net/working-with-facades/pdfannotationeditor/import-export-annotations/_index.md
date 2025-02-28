@@ -1,6 +1,8 @@
 ---
 title: Import and Export Annotations to XFDF 
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/import-export-annotations/
 description: This section explains how to import and export annotations from PDF file to XFDF with Aspose.PDF Facades.

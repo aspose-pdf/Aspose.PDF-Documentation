@@ -2,6 +2,8 @@
 title: Extract Tagged Content from PDF
 linktitle: Extract Tagged Content
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/extract-tagged-content-from-tagged-pdfs/
 description: This article explains how to extract tagged content PDF document using Aspose.PDF for .NET

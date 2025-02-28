@@ -1,6 +1,8 @@
 ---
 title: PdfFileEditor Class
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/pdffileeditor-class/
 description: Explore how to edit and manipulate PDF files using the PDFFileEditor class in .NET with Aspose.PDF.

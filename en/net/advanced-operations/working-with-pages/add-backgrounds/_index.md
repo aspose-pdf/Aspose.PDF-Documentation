@@ -2,6 +2,8 @@
 title: Add background to PDF
 linktitle: Add backgrounds
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/add-backgrounds/
 description: Add background image to the your PDF file with C#. Use the BackgroundArtifact object.

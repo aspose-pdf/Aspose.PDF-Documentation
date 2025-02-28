@@ -1,6 +1,8 @@
 ---
 title: Aspose.PDF .NET for Umbraco
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/aspose-pdf-net-for-umbraco/
 description: Learn how to use Umbraco PDF Import Module

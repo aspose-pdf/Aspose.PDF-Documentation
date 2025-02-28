@@ -2,6 +2,8 @@
 title: Working with Links in PDF programmatically
 linktitle: Links
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/links/
 description: This guide is about how to add an internal page link in PDF or insert an external website hyperlink to PDF in C# language.

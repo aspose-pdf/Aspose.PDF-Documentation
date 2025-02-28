@@ -1,6 +1,8 @@
 ---
 title: Aspose.PDF .NET for DNN
 type: docs
+ai_search_scope: pdfnet
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/aspose-pdf-net-for-dnn/
 description: Learn how to use PDF Import Module for DotNetNuke
