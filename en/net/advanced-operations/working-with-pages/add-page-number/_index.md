@@ -2,7 +2,7 @@
 title: Add Page Number to PDF
 linktitle: Add Page Number
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/add-page-number/

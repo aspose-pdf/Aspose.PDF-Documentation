@@ -2,7 +2,7 @@
 title: Navigation and Interaction in PDF
 linktitle: Navigation and interaction
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 140
 url: /net/navigation-and-interaction/

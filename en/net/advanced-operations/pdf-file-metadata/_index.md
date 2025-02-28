@@ -2,7 +2,7 @@
 title: Working with PDF File Metadata in C#
 linktitle: PDF File Metadata
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 200
 url: /net/pdf-file-metadata/

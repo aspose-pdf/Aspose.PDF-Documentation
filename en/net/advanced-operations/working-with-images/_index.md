@@ -2,7 +2,7 @@
 title: Working with Images in PDF using C#
 linktitle: Working with Images
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/working-with-images/

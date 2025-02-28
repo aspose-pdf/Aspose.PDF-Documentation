@@ -2,7 +2,7 @@
 title: Create Tagged PDF using C#
 linktitle: Create Tagged PDF
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/create-tagged-pdf/

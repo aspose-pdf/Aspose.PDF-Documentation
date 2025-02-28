@@ -1,7 +1,7 @@
 ---
 title: Extract Text From Stamps using C#
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/extract-text-from-stamps/

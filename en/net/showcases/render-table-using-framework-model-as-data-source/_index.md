@@ -2,7 +2,7 @@
 title: Render table with Entity Framework 
 linktitle: Render table with Entity Framework
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/render-table-using-entity-framework-model-as-data-source/

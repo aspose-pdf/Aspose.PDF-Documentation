@@ -2,7 +2,7 @@
 title: Text Formatting inside PDF using C#
 linktitle: Text Formatting inside PDF
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/text-formatting-inside-pdf/

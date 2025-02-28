@@ -2,7 +2,7 @@
 title: Add Text stamps in PDF C#
 linktitle: Text stamps in PDF File
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/text-stamps-in-the-pdf-file/

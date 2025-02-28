@@ -2,7 +2,7 @@
 title: Creating a complex PDF
 linktitle: Creating a complex PDF
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/complex-pdf-example/

@@ -1,7 +1,7 @@
 ---
 title: Get and Set Page Properties
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 url: /net/get-and-set-page-properties/
 description: Learn how to get and set page properties for PDF documents using Aspose.PDF for .NET, allowing for customized document formatting.

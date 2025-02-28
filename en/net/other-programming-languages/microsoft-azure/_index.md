@@ -2,7 +2,7 @@
 title: Converting Documents in Microsoft Azure
 linktitle: Converting Documents in Microsoft Azure
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /net/microsoft-azure/

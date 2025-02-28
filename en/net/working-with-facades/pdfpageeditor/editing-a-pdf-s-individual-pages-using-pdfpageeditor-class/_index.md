@@ -1,7 +1,7 @@
 ---
 title: Editing a PDF's individual pages
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/

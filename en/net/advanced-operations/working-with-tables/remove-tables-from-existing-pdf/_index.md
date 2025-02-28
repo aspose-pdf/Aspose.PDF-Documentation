@@ -2,7 +2,7 @@
 title: Remove Tables from existing PDF
 linktitle: Remove Tables
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/remove-tables-from-existing-pdf/

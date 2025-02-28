@@ -1,7 +1,7 @@
 ---
 title: Flatten Annotation from PDF to XFDF 
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/flatten-annotation/

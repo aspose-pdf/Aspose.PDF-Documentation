@@ -1,7 +1,7 @@
 ---
 title: Get XMP Metadata of PDF File
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/get-xmp-metadata-of-an-existing-pdf-file/

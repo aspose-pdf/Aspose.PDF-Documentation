@@ -2,7 +2,7 @@
 title: Search and Get Text from Pages of PDF
 linktitle: Search and Get Text
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/search-and-get-text-from-pdf/

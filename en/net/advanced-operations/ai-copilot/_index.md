@@ -2,7 +2,7 @@
 title: PDF AI Copilot
 linktitle: PDF AI Copilot
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 150
 url: /net/ai-copilot/

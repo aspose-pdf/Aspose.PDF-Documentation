@@ -2,7 +2,7 @@
 title: Basics of Aspose.PDF DOM API
 linktitle: Basics of DOM API
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /net/basics-of-dom-api/

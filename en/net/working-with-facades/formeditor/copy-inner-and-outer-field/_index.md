@@ -1,7 +1,7 @@
 ---
 title: Copy Inner and Outer Field
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /net/copy-inner-and-outer-field/

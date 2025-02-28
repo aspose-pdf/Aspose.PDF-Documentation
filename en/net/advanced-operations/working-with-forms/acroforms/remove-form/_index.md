@@ -2,7 +2,7 @@
 title: Delete Forms from PDF in C#
 linktitle: Delete Forms
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /net/remove-form/

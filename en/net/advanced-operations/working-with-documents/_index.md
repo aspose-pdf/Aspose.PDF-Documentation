@@ -2,7 +2,7 @@
 title: Working with PDF Documents using C#
 linktitle: Working with Documents
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/working-with-documents/

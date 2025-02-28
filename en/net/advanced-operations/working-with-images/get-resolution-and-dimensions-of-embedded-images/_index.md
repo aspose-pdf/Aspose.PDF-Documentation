@@ -2,7 +2,7 @@
 title: Get Resolution and Dimensions of Images
 linktitle: Get Resolution and Dimensions
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /net/get-resolution-and-dimensions-of-embedded-images/

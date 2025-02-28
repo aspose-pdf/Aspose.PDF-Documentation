@@ -2,7 +2,7 @@
 title: How to Merge PDF using C#
 linktitle: Merge PDF files
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/merge-pdf-documents/

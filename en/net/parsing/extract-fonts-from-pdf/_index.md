@@ -2,7 +2,7 @@
 title: Extract Fonts from PDF C#
 linktitle: Extract Fonts from PDF
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/extract-fonts-from-pdf/

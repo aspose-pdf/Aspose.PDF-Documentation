@@ -2,7 +2,7 @@
 title: Add Image to PDF using C#
 linktitle: Add Image
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/add-image-to-existing-pdf-file/

@@ -2,7 +2,7 @@
 title: Creating PDF/3-A compliant PDF and attaching ZUGFeRD invoice in C#
 linktitle: Attach ZUGFeRD to PDF
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/attach-zugferd/

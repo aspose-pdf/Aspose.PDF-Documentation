@@ -1,7 +1,7 @@
 ---
 title: Aspose.PDF .NET for CRM
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/aspose-pdf-net-for-crm/

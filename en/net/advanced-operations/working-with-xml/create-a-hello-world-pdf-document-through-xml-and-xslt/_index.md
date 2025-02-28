@@ -2,7 +2,7 @@
 title: Creating PDF from XML using XSLT
 linktitle: Create PDF from XML using XSLT
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/create-a-hello-world-pdf-document-through-xml-and-xslt/

@@ -2,7 +2,7 @@
 title: Set Image Size
 linktitle: Set Image Size
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /net/set-image-size/

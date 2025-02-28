@@ -3,7 +3,7 @@ title: Aspose.PDF for .NET Documentation
 linktitle: Aspose.PDF for .NET
 second_title: Aspose.PDF for .NET
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/

@@ -2,7 +2,7 @@
 title: Aspose.PDF for .NET Support
 linktitle: Technical Support
 type: docs
-ai_search_scope: pdfnet
+ai_search_scope: pdf_net
 ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/technical-support/
