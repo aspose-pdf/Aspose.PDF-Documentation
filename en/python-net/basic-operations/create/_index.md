@@ -5,6 +5,9 @@ type: docs
 weight: 10
 url: /python-net/create-document/
 description: This page describes how to create PDF document from scratch with Aspose.PDF for Python via .NET library.
+TechArticle: true 
+AlternativeHeadline: How to create PDF file in Aspose.PDF for Python
+Abstract: The article discusses the necessity for developers to programmatically generate PDF files, such as reports, within software applications. Writing custom code for this task can be time-consuming and inefficient. Instead, the article recommends using Aspose.PDF for Python via .NET as an efficient solution to create PDF files with Python. It outlines the steps to generate a PDF file - creating a `Document` object, adding a `Page` object to the document, inserting a `TextFragment` into the page, and saving the final document. The article provides a Python code snippet demonstrating these steps, showcasing how to create a simple PDF with the text "Hello, world!" using the Aspose.PDF library.
 ---
 
 For developers, there are many scenarios where it becomes necessary to programmatically generate PDF files. You may need to programmatically generate PDF reports and other PDF files in your software. It is rather long and inefficient to write your own code and functions from scratch. To create a PDF file with Python, there is a better solution - **Aspose.PDF for Python via .NET**.

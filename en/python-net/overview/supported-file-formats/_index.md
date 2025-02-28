@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/supported-file-formats/
 description: This page shows which Aspose.PDF for Python via .NET can load and save file formats.
-lastmod: "2022-12-22"
+lastmod: "2025-02-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: File Formats supported by Aspose.PDF for Python
+Abstract: The article provides a comprehensive table of file formats supported by Aspose.PDF for Python, detailing their load and save capabilities. Aspose.PDF can load and save various formats, including PDF, EPUB, HTML, TeX, SVG, XML, XPS, JPEG, EMF, PNG, BMP, TIFF, and Text. It also supports loading formats like CGM, MHT, PCL, PS, XSLFO, and MD, though it cannot save them. For spreadsheet and document formats, Aspose.PDF can save to XLS, XLSX, PPTX, DOC, DOCX, and MobiXML, but cannot load them. Additionally, it supports saving to GIF format, though loading is not possible. This table serves as a quick reference for users to understand the capabilities of Aspose.PDF in handling different file types.
 ---
 
 The following table indicates the file formats that Aspose.PDF Python can load and Save.

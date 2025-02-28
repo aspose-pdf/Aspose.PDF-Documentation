@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/system-requirements/
 description: This section lists the supported operating systems that a developer needs to successfully work with Aspose.PDF for Python.
-lastmod: "2022-12-22"
+lastmod: "2025-02-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: System Requirements of Aspose.PDF for Python
+Abstract: Aspose.PDF for Python via .NET is a PDF processing API designed to enable developers to manipulate PDF documents without the need for Microsoft Office® or Adobe Acrobat Automation. It supports the development of 32-bit and 64-bit Python applications across various operating systems, including Windows and Linux, provided that Python 3.5 or later is installed. The supported Windows versions range from Windows XP to Windows 11, while supported Linux distributions include Ubuntu, OpenSUSE, CentOS, among others. For Linux systems, specific requirements include GCC-6 runtime libraries or later, dependencies of .NET Core Runtime (without needing the runtime itself), and a pymalloc build of Python for versions 3.5-3.7. Additionally, a libpython shared Python library is necessary, often requiring installation via package managers or symbolic links to accommodate non-standard library locations.
 ---
 
 ## Overview

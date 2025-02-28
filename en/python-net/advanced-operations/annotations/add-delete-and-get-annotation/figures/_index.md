@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/figures-annotation/
 description: This article describes how to add, get, and delete figures annotations from your PDF document with Aspose.PDF for Python via .NET
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Various types of figure annotations in PDF documents using the Aspose.PDF library for Python
+Abstract: The article "Add Figures Annotations using Python" provides a comprehensive guide on creating, retrieving, and deleting various types of figure annotations in PDF documents using the Aspose.PDF library for Python. It focuses on beginner-level proficiency and covers square, circle, polygon, and polyline annotations. The article outlines the necessary steps for each annotation type, including loading the PDF, creating annotations with specified parameters, and appending them to the document. Code snippets are provided for practical demonstrations of how to add, get, and delete these annotations. The article also includes links to the Aspose.PDF documentation for further reference. The Aspose.PDF library is a versatile tool for PDF manipulation across various operating systems, available for download via NuGet.
 ---
 <script type="application/ld+json">
 {

@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/bookmarks/
 description: This section explain how to add, delete and get bookmark with Aspose.PDF for Python via .NET.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide to managing bookmarks in PDF documents using the Aspose.PDF for Python 
+Abstract: The article "Working with Bookmarks in PDF using Python" published by the Aspose.PDF Doc Team, provides a beginner-friendly guide to managing bookmarks in PDF documents using the Aspose.PDF for Python via .NET library. The article highlights the importance of bookmarks as interactive tools that enhance navigation within PDF files, making them more organized and accessible. It offers step-by-step instructions on how to add, delete, get, update, and expand bookmarks within a PDF document. This feature is compared to a table of contents, allowing users to quickly jump to specific sections or pages in the document. The article is part of a series aimed at beginners interested in PDF document generation and manipulation, and it includes links to further resources for detailed operations on bookmarks.
 ---
 <script type="application/ld+json">
 {

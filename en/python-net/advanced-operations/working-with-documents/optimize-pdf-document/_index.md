@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /python-net/optimize-pdf/
 description: Learn how to optimize PDF documents in Python for improved web performance and reduced file size using Aspose.PDF.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on reducing the size of PDF files using Python
+Abstract: The article "Optimize PDF using Python" provides a comprehensive guide on reducing the size of PDF files using Python, specifically with the Aspose.PDF for Python via .NET library. The author outlines several techniques to optimize PDF documents, focusing on enhancing network transfer and storage efficiency. These techniques include optimizing page content for online browsing, compressing images, merging duplicate streams, unembedding fonts, and removing unused objects. The article also covers customizing optimization strategies using the `OptimizeResources()` method and `OptimizationOptions` parameter, with code snippets demonstrating the implementation of various methods such as image compression, removing unused objects and streams, flattening annotations, and converting color spaces from RGB to grayscale. Additionally, the article introduces FlateDecode compression for images to further minimize file size. These optimization techniques are valuable for improving PDF performance on web pages, in emails, and in archival storage.
 ---
 <script type="application/ld+json">
 {

@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/add-text-to-pdf-file/
 description: This article describes various aspects of working with text in Aspose.PDF. Learn how to add text to PDF, add HTML fragments, or use custom OTF fonts.
-lastmod: "2024-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add Text to PDF using Python
+Abstract: This article, authored, provides a comprehensive guide on adding text to PDF documents using Aspose.PDF for Python. It covers various techniques and functionalities available in the Aspose.PDF library to manipulate text in PDF files. The article includes detailed examples and code snippets for tasks such as adding text fragments, using custom fonts, and creating hyperlinks within PDFs. It also explores advanced features like using OTF fonts, embedding HTML content, and customizing footnotes and endnotes. The guide is designed for beginners in PDF document generation, offering step-by-step instructions and practical insights into the versatile capabilities of the Aspose.PDF library for Python via .NET. Additionally, the article addresses the creation of multi-column layouts, handling text and image inline paragraphs, and dynamically measuring text widths. The publication is by the Aspose.PDF Doc Team, and the software is available for download on multiple platforms, supporting Windows, MacOS, and Linux.
 ---
 <script type="application/ld+json">
 {

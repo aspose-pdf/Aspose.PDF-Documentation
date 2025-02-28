@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/pdf-tooltip/
 description: Learn how to add tooltip to the text fragment in PDF using Python and Aspose.PDF
-lastmod: "2024-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add tooltip to the text fragment in PDF
+Abstract: The article "PDF Tooltip using Python" provides a guide on adding tooltips and interactive floating text elements to PDF documents using Python and the Aspose.PDF library. The article is aimed at beginners and includes code snippets demonstrating two key functionalities adding tooltips to specific text fragments in a PDF and creating hidden text blocks that appear on mouse hover. The first code example shows how to use the `TextFragmentAbsorber` to locate text and add invisible buttons with tooltips, while the second example details the creation of floating text using `TextBoxField` and button fields to manage its visibility. The article is published by the Aspose.PDF Doc Team and offers resources for further exploration of the Aspose.PDF for Python via .NET Library.
 ---
 <script type="application/ld+json">
 {

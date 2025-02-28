@@ -4,10 +4,13 @@ type: docs
 weight: 40
 url: /python-net/working-with-headings/
 description: Create numbering in heading your PDF document with Python. Aspose.PDF for Python via .NET offers different kinds of numbering styles.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to work with Headings in PDF
+Abstract: The article "Working with Headings in PDF", published by the Aspose.PDF Doc Team, provides a beginner-friendly guide on creating and organizing headings using numbering styles in PDF documents through Python. The article highlights the importance of headings in documents and demonstrates how to apply various pre-defined numbering styles, such as Arabic numerals, Roman numerals, and alphabetic styles, using the Aspose.PDF for Python via .NET library. It includes a code example illustrating how to set up and use these numbering styles with the Heading class in the Aspose library. This guide serves as a practical resource for developers looking to enhance PDF document organization with structured headings.
 ---
 <script type="application/ld+json">
 {

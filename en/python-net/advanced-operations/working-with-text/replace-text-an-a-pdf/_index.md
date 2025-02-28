@@ -5,12 +5,15 @@ type: docs
 weight: 40
 url: /python-net/replace-text-in-pdf/
 description: Learn more about various ways of replacing and removing text from Aspose.PDF for Python via .NET library.
-lastmod: "2024-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 aliases:
     - /python-net/replace-text-in-a-pdf-document/
+TechArticle: true 
+AlternativeHeadline: How to replace Text in PDF via Python
+Abstract: The article "Replace Text in PDF" discusses various methods for text manipulation within PDF documents using the Aspose.PDF for Python via .NET library. It covers techniques for replacing text across all pages or specific regions, utilizing regular expressions, and updating fonts without altering the text content. The article provides insights into the automatic rearrangement of page contents post-text replacement to prevent misalignment issues. Additionally, it explains the use of replaceable symbols during PDF creation, such as page numbers and line breaks, along with their integration in headers and footers. The document also outlines methods for removing unused fonts and deleting all text using operators, emphasizing performance efficiency. Practical code snippets are included to facilitate the implementation of these functionalities.
 ---
 <script type="application/ld+json">
 {
