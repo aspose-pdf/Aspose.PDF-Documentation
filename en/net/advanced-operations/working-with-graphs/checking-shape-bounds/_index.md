@@ -164,8 +164,7 @@ In case of issues, here are a few tips:
 Below is a complete example demonstrating all the steps combined:
 
 ```csharp
-[Test(Description = "Ability to check the bounds of an element when inserted into a parent container.")]
-public void Test()
+private static void CheckShapeBounds()
 {
     // Create a new document and add a page
     using (var doc = new Aspose.Pdf.Document())
