@@ -77,7 +77,7 @@ ft: true
 ---
 
 ## Introduction
-This document provides a detailed guide on how to use the bounds-checking feature in the `Aspose.Pdf.Drawing.Graph.Shapes` collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the element does not fit. We will walk through the steps to implement this functionality and provide a complete example.
+This document provides a detailed guide on using the bounds-checking feature in the Aspose.Pdf.Drawing.Graph.Shapes collection. This feature ensures that elements fit within their parent container and can be configured to throw an exception if the component does not fit. We will walk through the steps to implement this functionality and provide a complete example.
 
 ## Prerequisites
 You will need the following:
@@ -120,8 +120,8 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### Step 3: Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
-Create a `Rectangle` object with a width and height of 50 units. Position the rectangle at (-1, 0), which is outside the bounds of the graph.
+### Step 3: Create an Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
+Create a Rectangle object with a width and height of 50 units. Position the rectangle at (-1, 0), which is outside the bounds of the graph.
 
 ```csharp
 Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
