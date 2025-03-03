@@ -1,10 +1,10 @@
 ```markdown
 ---
-title: Checking Element Bounds in Aspose.Pdf.Drawing.Graph.Shapes Collection
+title: Checking Shape Bounds in Aspose.Pdf.Drawing.Graph.Shapes Collection
 type: docs
 weight: 10
 url: /net/aspose-pdf-drawing-graph-shapes-bounds-check/
-description: Learn how to check the bounds of an element when inserted into the Aspose.Pdf.Drawing.Graph.Shapes collection to ensure it fits within its parent container.
+description: Learn how to check the bounds of an shape when inserted into the Aspose.Pdf.Drawing.Graph.Shapes collection to ensure it fits within its parent container.
 lastmod: "2025-02-28"
 dra
 
