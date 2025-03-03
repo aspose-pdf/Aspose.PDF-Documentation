@@ -120,7 +120,7 @@ var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
 page.Paragraphs.Add(graph);
 ```
 
-### Step 3: Create a Rectangle Object with Specified Dimensions
+### Step 3: Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
 Create a `Rectangle` object with a width and height of 50 units. Position the rectangle at (-1, 0), which is outside the bounds of the graph.
 
 ```csharp
@@ -180,7 +180,7 @@ private static void CheckShapeBounds()
         };
         page.Paragraphs.Add(graph);
         
-        // Create a rectangle object with specified dimensions
+        // Create a Aspose.Pdf.Drawing.Shape object (for example, Aspose.Pdf.Drawing.Rectangle) with specified dimensions
         Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
             GraphInfo =
