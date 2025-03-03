@@ -199,5 +199,5 @@ private static void CheckShapeBounds()
 ```
 
 ## Conclusion
-The bounds-checking feature in the `Aspose.Pdf.Drawing.Graph.Shapes` collection is a powerful tool for ensuring that elements fit within their parent containers. By setting the `BoundsCheckMode` to `ThrowExceptionIfDoesNotFit`, you can prevent layout issues in your PDF documents. This feature is particularly useful in scenarios where precise element positioning and sizing are critical. For further details, you can visit the [official documentation](https://docs.aspose.com/pdf/net/).
+The bounds-checking feature in the 'Aspose.Pdf.Drawing.Graph. Shapes' collection is a powerful tool for ensuring elements fit within parent containers. You can prevent layout issues in your PDF documents by setting the BoundsCheckMode to ThrowExceptionIfDoesNotFit. This feature is particularly useful in scenarios where precise element positioning and sizing are critical. For further details, visit the [official documentation](https://docs.aspose.com/pdf/net/).
 ```
