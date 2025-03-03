@@ -167,9 +167,12 @@ Below is a complete example demonstrating all the steps combined:
 [Test(Description = "Ability to check the bounds of an element when inserted into a parent container.")]
 public void Test()
 {
+    // Create a new document and add a page
     using (var doc = new Aspose.Pdf.Document())
     {
         Aspose.Pdf.Page page = doc.Pages.Add();
+        
+        // Create a Graph Object with Specified Dimensions
         var graph = new Aspose.Pdf.Drawing.Graph(100d, 100d)
         {
             Top = 10,
@@ -177,6 +180,8 @@ public void Test()
             Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.Box, 1F, Aspose.Pdf.Color.Black)
         };
         page.Paragraphs.Add(graph);
+        
+        // Create a rectangle object with specified dimensions
         Aspose.Pdf.Drawing.Rectangle rect = new Aspose.Pdf.Drawing.Rectangle(-1, 0, 50, 50)
         {
             GraphInfo =
@@ -184,7 +189,11 @@ public void Test()
                 FillColor = Aspose.Pdf.Color.Tomato
             }
         };
+        
+        // Set the BoundsCheckMode to ThrowExceptionIfDoesNotFit
         graph.Shapes.UpdateBoundsCheckMode(Aspose.Pdf.BoundsCheckMode.ThrowExceptionIfDoesNotFit);
+        
+        // Attempt to add the rectangle to the graph
         graph.Shapes.Add(rect);
     }
 }
