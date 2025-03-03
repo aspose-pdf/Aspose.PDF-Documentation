@@ -91,9 +91,9 @@ You can download the Aspose.PDF for .NET library from the official website or in
 Here are the steps to complete the task:
 1. Create a new document and add a page.
 2. Create a `Graph` object with specified dimensions.
-3. Create a `Rectangle` object with specified dimensions.
+3. Create a `Shape` object with specified dimensions.
 4. Set the `BoundsCheckMode` to `ThrowExceptionIfDoesNotFit`.
-5. Attempt to add the rectangle to the graph.
+5. Attempt to add the shape to the graph.
 
 Let's see how to implement these steps in C# code.
 
