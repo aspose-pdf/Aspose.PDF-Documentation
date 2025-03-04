@@ -383,21 +383,21 @@ private static void AdjustPosition()
     using (var document = new Aspose.Pdf.Document())
     {
         // Get Content for work with TaggedPdf
-        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+        var taggedContent = document.TaggedContent;
 
         // Set Title and Language for Document
         taggedContent.SetTitle("Tagged Pdf Document");
         taggedContent.SetLanguage("en-US");
 
-        Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
+        var p = taggedContent.CreateParagraphElement();
         taggedContent.RootElement.AppendChild(p);
-        
+
         p.SetText("Red italic text.");
-        
+
         // Adjust position
-        p.AdjustPosition(new PositionSettings
+        p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
         {
-            HorizontalAlignment = HorizontalAlignment.None,
+            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
             Margin = new Aspose.Pdf.MarginInfo
             {
                 Left = 20,
@@ -405,7 +405,7 @@ private static void AdjustPosition()
                 Top = 20,
                 Bottom = 0
             },
-            VerticalAlignment = VerticalAlignment.None,
+            VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
             IsFirstParagraphInColumn = false,
             IsKeptWithNext = false,
             IsInNewPage = false,
@@ -428,40 +428,41 @@ private static void AdjustPosition()
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
-    using var document = new Aspose.Pdf.Document();
-
-    // Get Content for work with TaggedPdf
-    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
-
-    // Set Title and Language for Document
-    taggedContent.SetTitle("Tagged Pdf Document");
-    taggedContent.SetLanguage("en-US");
-
-    Aspose.Pdf.LogicalStructure.ParagraphElement p = taggedContent.CreateParagraphElement();
-    taggedContent.RootElement.AppendChild(p);
-
-    p.SetText("Red italic text.");
-    
-    // Adjust position
-    p.AdjustPosition(new PositionSettings
+    using (var document = new Aspose.Pdf.Document())
     {
-        HorizontalAlignment = HorizontalAlignment.None,
-        Margin = new Aspose.Pdf.MarginInfo
-        {
-            Left = 20,
-            Right = 0,
-            Top = 20,
-            Bottom = 0
-        },
-        VerticalAlignment = VerticalAlignment.None,
-        IsFirstParagraphInColumn = false,
-        IsKeptWithNext = false,
-        IsInNewPage = false,
-        IsInLineParagraph = false
-    });
+        // Get Content for work with TaggedPdf
+        var taggedContent = document.TaggedContent;
 
-    // Save Tagged Pdf Document
-    document.Save(dataDir + "StyleTextStructure_out.pdf");
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        var p = taggedContent.CreateParagraphElement();
+        taggedContent.RootElement.AppendChild(p);
+
+        p.SetText("Red italic text.");
+
+        // Adjust position
+        p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        {
+            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
+            Margin = new Aspose.Pdf.MarginInfo
+            {
+                Left = 20,
+                Right = 0,
+                Top = 20,
+                Bottom = 0
+            },
+            VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
+            IsFirstParagraphInColumn = false,
+            IsKeptWithNext = false,
+            IsInNewPage = false,
+            IsInLineParagraph = false
+        });
+
+        // Save Tagged Pdf Document
+        document.Save(dataDir + "StyleTextStructure_out.pdf");
+    }
 }
 ```
 {{< /tab >}}
