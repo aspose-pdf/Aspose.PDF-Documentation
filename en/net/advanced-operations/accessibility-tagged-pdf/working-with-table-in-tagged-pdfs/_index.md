@@ -1101,24 +1101,24 @@ private static void AdjustTablePosition()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-   
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
-
+        // Create tagged content  
+        var taggedContent = document.TaggedContent;
         taggedContent.SetTitle("Example table cell style");
         taggedContent.SetLanguage("en-US");
 
         // Get root structure element
-        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+        var rootElement = taggedContent.RootElement;
 
         // Create table structure element
-        Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+        var tableElement = taggedContent.CreateTableElement();
         rootElement.AppendChild(tableElement);
 
-        //Create position settings
-        Aspose.Pdf.Tagged.PositionSettings positionSettings = new Aspose.Pdf.Tagged.PositionSettings
+        // Create position settings
+        var positionSettings = new Aspose.Pdf.Tagged.PositionSettings
         {
             HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
             Margin = new Aspose.Pdf.MarginInfo
@@ -1135,23 +1135,23 @@ private static void AdjustTablePosition()
             IsInLineParagraph = false
         };
 
-        //Adjust table position
+        // Adjust table position
         tableElement.AdjustPosition(positionSettings);
-        
-        Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
-        Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
-        Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
-        int rowCount = 4;
-        int colCount = 4;
+
+        var tableTHeadElement = tableElement.CreateTHead();
+        var tableTBodyElement = tableElement.CreateTBody();
+        var tableTFootElement = tableElement.CreateTFoot();
+        var rowCount = 4;
+        var colCount = 4;
         int rowIndex;
         int colIndex;
 
-        Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+        var headTrElement = tableTHeadElement.CreateTR();
         headTrElement.AlternativeText = "Head Row";
 
         for (colIndex = 0; colIndex < colCount; colIndex++)
         {
-            Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+            var thElement = headTrElement.CreateTH();
             thElement.SetText(string.Format("Head {0}", colIndex));
 
             thElement.BackgroundColor = Aspose.Pdf.Color.GreenYellow;
@@ -1165,13 +1165,13 @@ private static void AdjustTablePosition()
 
         for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
         {
-            Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+            var trElement = tableTBodyElement.CreateTR();
             trElement.AlternativeText = string.Format("Row {0}", rowIndex);
 
             for (colIndex = 0; colIndex < colCount; colIndex++)
             {
-                int colSpan = 1;
-                int rowSpan = 1;
+                var colSpan = 1;
+                var rowSpan = 1;
 
                 if (colIndex == 1 && rowIndex == 1)
                 {
@@ -1187,7 +1187,7 @@ private static void AdjustTablePosition()
                     continue;
                 }
 
-                Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+                var tdElement = trElement.CreateTD();
                 tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
 
                 tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
@@ -1213,23 +1213,23 @@ private static void AdjustTablePosition()
             }
         }
 
-        Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+        var footTrElement = tableTFootElement.CreateTR();
         footTrElement.AlternativeText = "Foot Row";
 
         for (colIndex = 0; colIndex < colCount; colIndex++)
         {
-            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+            var tdElement = footTrElement.CreateTD();
             tdElement.SetText(string.Format("Foot {0}", colIndex));
         }
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "StyleTableCell_out.pdf");
+        document.Save(dataDir + "AdjustTablePosition_out.pdf");
     }
 
     // Check PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableCell_out.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AdjustTablePosition_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableCell_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        var isPdfUaCompliance = document.Validate(dataDir + "AdjustTablePosition_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
@@ -1243,24 +1243,24 @@ private static void AdjustTablePosition()
 {
     // The path to the documents directory
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-   
+
     // Create PDF document
     using (var document = new Aspose.Pdf.Document())
     {
-        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
-
+        // Create tagged content  
+        var taggedContent = document.TaggedContent;
         taggedContent.SetTitle("Example table cell style");
         taggedContent.SetLanguage("en-US");
 
         // Get root structure element
-        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+        var rootElement = taggedContent.RootElement;
 
         // Create table structure element
-        Aspose.Pdf.LogicalStructure.TableElement tableElement = taggedContent.CreateTableElement();
+        var tableElement = taggedContent.CreateTableElement();
         rootElement.AppendChild(tableElement);
 
-        //Create position settings
-        Aspose.Pdf.Tagged.PositionSettings positionSettings = new Aspose.Pdf.Tagged.PositionSettings
+        // Create position settings
+        var positionSettings = new Aspose.Pdf.Tagged.PositionSettings
         {
             HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
             Margin = new Aspose.Pdf.MarginInfo
@@ -1277,23 +1277,23 @@ private static void AdjustTablePosition()
             IsInLineParagraph = false
         };
 
-        //Adjust table position
+        // Adjust table position
         tableElement.AdjustPosition(positionSettings);
-        
-        Aspose.Pdf.LogicalStructure.TableTHeadElement tableTHeadElement = tableElement.CreateTHead();
-        Aspose.Pdf.LogicalStructure.TableTBodyElement tableTBodyElement = tableElement.CreateTBody();
-        Aspose.Pdf.LogicalStructure.TableTFootElement tableTFootElement = tableElement.CreateTFoot();
-        int rowCount = 4;
-        int colCount = 4;
+
+        var tableTHeadElement = tableElement.CreateTHead();
+        var tableTBodyElement = tableElement.CreateTBody();
+        var tableTFootElement = tableElement.CreateTFoot();
+        var rowCount = 4;
+        var colCount = 4;
         int rowIndex;
         int colIndex;
 
-        Aspose.Pdf.LogicalStructure.TableTRElement headTrElement = tableTHeadElement.CreateTR();
+        var headTrElement = tableTHeadElement.CreateTR();
         headTrElement.AlternativeText = "Head Row";
 
         for (colIndex = 0; colIndex < colCount; colIndex++)
         {
-            Aspose.Pdf.LogicalStructure.TableTHElement thElement = headTrElement.CreateTH();
+            var thElement = headTrElement.CreateTH();
             thElement.SetText(string.Format("Head {0}", colIndex));
 
             thElement.BackgroundColor = Aspose.Pdf.Color.GreenYellow;
@@ -1307,13 +1307,13 @@ private static void AdjustTablePosition()
 
         for (rowIndex = 0; rowIndex < rowCount; rowIndex++)
         {
-            Aspose.Pdf.LogicalStructure.TableTRElement trElement = tableTBodyElement.CreateTR();
+            var trElement = tableTBodyElement.CreateTR();
             trElement.AlternativeText = string.Format("Row {0}", rowIndex);
 
             for (colIndex = 0; colIndex < colCount; colIndex++)
             {
-                int colSpan = 1;
-                int rowSpan = 1;
+                var colSpan = 1;
+                var rowSpan = 1;
 
                 if (colIndex == 1 && rowIndex == 1)
                 {
@@ -1329,7 +1329,7 @@ private static void AdjustTablePosition()
                     continue;
                 }
 
-                Aspose.Pdf.LogicalStructure.TableTDElement tdElement = trElement.CreateTD();
+                var tdElement = trElement.CreateTD();
                 tdElement.SetText(string.Format("Cell [{0}, {1}]", rowIndex, colIndex));
 
                 tdElement.BackgroundColor = Aspose.Pdf.Color.Yellow;
@@ -1355,23 +1355,23 @@ private static void AdjustTablePosition()
             }
         }
 
-        Aspose.Pdf.LogicalStructure.TableTRElement footTrElement = tableTFootElement.CreateTR();
+        var footTrElement = tableTFootElement.CreateTR();
         footTrElement.AlternativeText = "Foot Row";
 
         for (colIndex = 0; colIndex < colCount; colIndex++)
         {
-            Aspose.Pdf.LogicalStructure.TableTDElement tdElement = footTrElement.CreateTD();
+            var tdElement = footTrElement.CreateTD();
             tdElement.SetText(string.Format("Foot {0}", colIndex));
         }
 
         // Save Tagged PDF Document
-        document.Save(dataDir + "StyleTableCell_out.pdf");
+        document.Save(dataDir + "AdjustTablePosition_out.pdf");
     }
 
     // Check PDF/UA compliance
-    using (var document = new Aspose.Pdf.Document(dataDir + "StyleTableCell_out.pdf"))
+    using (var document = new Aspose.Pdf.Document(dataDir + "AdjustTablePosition_out.pdf"))
     {
-        bool isPdfUaCompliance = document.Validate(dataDir + "StyleTableCell_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        var isPdfUaCompliance = document.Validate(dataDir + "AdjustTablePosition_log.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
         Console.WriteLine(string.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
     }
 }
