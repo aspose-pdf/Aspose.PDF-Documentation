@@ -224,22 +224,22 @@ This property can have the following values:
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
 public static void Check(string pdfFile)
 {
-    // Open the document
-    using (Document document = new Document(pdfFile))
+    // Open PDF document
+    using (Aspose.Pdf.Document document = new Aspose.Pdf.Document(pdfFile))
     {   
          // Create the compromise detector instance
-         SignaturesCompromiseDetector detector = new SignaturesCompromiseDetector(document);
+         Aspose.Pdf.SignaturesCompromiseDetector detector = new Aspose.Pdf.SignaturesCompromiseDetector(document);
          CompromiseCheckResult result;
     
          // Check for compromise
-         if(detector.Check(out result))
+         if (detector.Check(out result))
          {
             Console.WriteLine("No signature compromise detected");
             return;
          }
          
          // Get information about compromised signatures
-         if(result.HasCompromisedSignatures)
+         if (result.HasCompromisedSignatures)
          {
             Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
             foreach (var signatureName in result.CompromisedSignatures)
