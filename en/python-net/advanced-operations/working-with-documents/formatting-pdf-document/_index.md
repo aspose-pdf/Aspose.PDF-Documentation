@@ -5,10 +5,13 @@ type: docs
 weight: 11
 url: /python-net/formatting-pdf-document/
 description: Create and format the PDF Document with Aspose.PDF for Python via .NET. Use the next code snippet to resolve your tasks.
-lastmod: "2023-04-12"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Formatting PDF documents by Python 
+Abstract: This article provides a comprehensive guide on formatting PDF documents using Python with Aspose.PDF via .NET. It details how to access and set various properties of the PDF document window, viewer application, and page display. These properties include CenterWindow, Direction, DisplayDocTitle, FitWindow, HideMenuBar, HideToolBar, HideWindowUI, NonFullScreenPageMode, PageLayout, and PageMode. The article includes Python code snippets demonstrating how to get and set these properties. Additionally, it covers embedding Standard Type 1 Fonts and other fonts, setting default font names, retrieving all fonts from a PDF, and using FontSubsetStrategy for improved font embedding. It also discusses manipulating zoom factors and setting print dialog preset properties, including duplex printing options. Each section is supported by code examples, making it accessible for beginners aiming to enhance their PDF document processing capabilities.
 ---
 <script type="application/ld+json">
 {

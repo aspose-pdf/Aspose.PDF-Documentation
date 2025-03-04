@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /python-net/manipulate-pdf-document/
 description: This article contains information on how to validate PDF Document for PDF A Standard using Python, how to work with TOC, how to set PDF expiry date, and etc.
-lastmod: "2023-04-13"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Manipulate PDF documents via Python
+Abstract: The article "Manipulate PDF Document via Python" provides a comprehensive guide on using Python, specifically with the Aspose.PDF for Python via .NET library, to manipulate PDF documents. It covers various tasks such as validating PDF documents for PDF/A-1a and PDF/A-1b compliance, adding and customizing Table of Contents (TOC), setting PDF expiry dates, and flattening fillable PDF forms to make them non-editable. The article includes code snippets and examples to demonstrate how each task can be accomplished effectively. It also highlights the use of the Aspose.PDF library to enhance PDF document handling capabilities, making it a valuable resource for beginners and those interested in PDF document generation and manipulation.
 ---
 <script type="application/ld+json">
 {

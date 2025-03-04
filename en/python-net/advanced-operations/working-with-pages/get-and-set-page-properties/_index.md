@@ -5,10 +5,13 @@ type: docs
 weight: 90
 url: /python-net/get-and-set-page-properties/
 description: This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to get and set Page Properties using Python
+Abstract: The article "Get and Set Page Properties using Python", published by Aspose.PDF Doc Team, provides a comprehensive guide on how to manipulate PDF page properties using Python. It details methods for determining the number of pages in a PDF, describes various page properties including MediaBox, BleedBox, TrimBox, ArtBox, CropBox, and Rect, and demonstrates how to access these properties using the Aspose.PDF for Python via .NET library. The article also covers techniques for retrieving specific pages from a PDF, saving them as new documents, and determining page color types, offering practical code snippets for each task. Designed for beginners in PDF document generation, this resource serves as a valuable tool for developers looking to automate PDF page property management in their applications.
 ---
 <script type="application/ld+json">
 {

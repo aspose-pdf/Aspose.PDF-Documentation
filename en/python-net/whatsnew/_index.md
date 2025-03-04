@@ -9,6 +9,9 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 lastmod: "2025-02-24"
+TechArticle: true 
+AlternativeHeadline: Popular New Features in Aspose.PDF for Python via .NET
+Abstract: The article outlines the new features introduced in various versions of Aspose.PDF for Python. Introduced the ability to save PDFs to HTML without including raster images, validate PDF signatures using a Certificate Authority server, and cross-platform PDF signature validation using SHA-3 hashing algorithms. Features include converting annotation documents to PDF/X-1 using a custom ICC profile and handling font issues in PDF to PNG conversions. Improvements were also made to text stamp annotations to adjust font size automatically. New options for setting the hashing algorithm for Pkcs7Detached signatures and font encoding strategies during PDF to HTML conversion were introduced.
 ---
 
 ## What's new in Aspose.PDF 25.1

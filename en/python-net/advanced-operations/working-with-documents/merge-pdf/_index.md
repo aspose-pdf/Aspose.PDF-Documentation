@@ -5,10 +5,13 @@ type: docs
 weight: 50
 url: /python-net/merge-pdf-documents/
 description: This page explain how to merge PDF documents into a single PDF file with Python.
-lastmod: "2023-04-14"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Combining multiple PDF files 
+Abstract: The article "How to Merge PDF using Python" provides a guide for beginners on combining multiple PDF files into a single document using Python via the .NET framework, specifically utilizing the Aspose.PDF library. Merging PDF files can be beneficial for organization, efficient storage, and ease of sharing. The article details the process of merging PDFs by creating Document objects for each input file and utilizing the PageCollection's `add()` method to concatenate pages. The final output is saved using the `save()` method. A code snippet illustrates this procedure, demonstrating how to open PDF files, concatenate them, and save the merged document. Additionally, the article mentions an online application, Aspose.PDF Merger, allowing users to explore merging functionalities directly on the web.
 ---
 <script type="application/ld+json">
 {

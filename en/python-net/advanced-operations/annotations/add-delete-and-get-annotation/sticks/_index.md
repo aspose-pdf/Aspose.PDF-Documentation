@@ -5,10 +5,13 @@ type: docs
 weight: 50
 url: /python-net/sticky-annotations/
 description: Discover how to add sticky annotations in PDF documents using Aspose.PDF in Python via .NET for comments and feedback.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on implementing watermark annotations in PDF documents using the Aspose.PDF library for Python
+Abstract: The article titled "PDF Sticky Annotations using Python", published by the Aspose.PDF Doc Team, provides a beginner-level guide on implementing watermark annotations in PDF documents using the Aspose.PDF library for Python. It details the process of adding a watermark annotation, which is a graphic that remains fixed on a page, to confirm document authenticity. The article includes a code snippet demonstrating how to add, retrieve, and delete watermark annotations in a PDF. The Aspose.PDF library supports various operating systems and offers a comprehensive solution for PDF manipulation, as highlighted by its high user rating.
 ---
 <script type="application/ld+json">
 {

@@ -5,10 +5,13 @@ type: docs
 weight: 40
 url: /python-net/add-watermarks/
 description: This article explains the features of working with artifacts and getting watermarks in PDFs using  programmatically the Python.
-lastmod: "2023-04-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to Add watermark to PDF using Python
+Abstract: The article titled "Add watermark to PDF using Python" provides a beginner-friendly guide on how to incorporate watermarks into PDF documents using the Aspose.PDF library for Python via .NET. It focuses on the use of artifacts, which are managed through the `Artifact` and `ArtifactCollection` classes in Aspose.PDF. The article outlines the properties of the `Artifact` class, including its contents, form, image, text, position, rotation, and opacity. A sample Python code snippet demonstrates how to add a watermark to the first page of a PDF file, utilizing various attributes such as text state, alignment, rotation, and opacity to customize the watermark's appearance. This technical piece is published by the Aspose.PDF Doc Team and offers insights into leveraging Aspose.PDF's capabilities for PDF document manipulation.
 ---
 <script type="application/ld+json">
 {

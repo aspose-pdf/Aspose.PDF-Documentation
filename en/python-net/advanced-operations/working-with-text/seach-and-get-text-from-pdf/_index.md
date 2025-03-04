@@ -5,10 +5,13 @@ type: docs
 weight: 60
 url: /python-net/search-and-get-text-from-pdf/
 description: Learn how to search and extract text from PDF documents in Python using Aspose.PDF for document analysis.
-lastmod: "2024-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to search and get Text from Pages of PDF
+Abstract: The article, authored and published by the Aspose.PDF Doc Team, provides a comprehensive guide on using the Aspose.PDF for .NET library to search and extract text from PDF documents. It introduces the `TextFragmentAbsorber` class, which allows developers to locate text matching a specific phrase or pattern across all pages of a PDF. The article details how to employ the `Accept` method of the `Pages` collection to retrieve `TextFragment` objects, which can be iterated over to access various text properties.
 ---
 <script type="application/ld+json">
 {

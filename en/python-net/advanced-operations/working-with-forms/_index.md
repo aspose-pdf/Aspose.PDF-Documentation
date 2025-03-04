@@ -5,10 +5,13 @@ type: docs
 weight: 60
 url: /python-net/working-with-forms/
 description: This section describes how to work with AcroForms in PDF documents with Aspose.PDF. for Python via .NET.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on handling PDF documents with AcroForms using the Aspose.PDF for Python
+Abstract: The article "Working with Forms using Python", published by the Aspose.PDF Doc Team, offers a beginner-level guide on handling PDF documents with AcroForms using the Aspose.PDF for Python via .NET Library. It provides a straightforward approach to programmatically completing PDF forms and discusses methods for discovering and mapping fields within existing PDFs. The article highlights the functionality of AcroForms, which allow users to fill, submit, and store forms electronically, thereby streamlining the process of information collection. It includes practical insights on creating forms, filling form fields, extracting data, and managing form fields in PDFs using the Python library.
 ---
 <script type="application/ld+json">
 {

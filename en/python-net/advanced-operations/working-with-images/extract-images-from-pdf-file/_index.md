@@ -5,7 +5,10 @@ type: docs
 weight: 30
 url: /python-net/extract-images-from-pdf-file/
 description: This section shows how to extract images from PDF file using Python library.
-lastmod: "2023-02-17"
+lastmod: "2025-02-27"
+TechArticle: true 
+AlternativeHeadline: How to Extract Images from PDF File using Python
+Abstract: The article titled "Extract Images from PDF File with Python", published by the Aspose.PDF Doc Team, provides a guide for beginners on how to extract images from PDF files using the Aspose.PDF library for Python. This tutorial explains the process of accessing images stored in a PDF's resources collection, specifically within the XImage collection of each page. The article includes a Python code snippet demonstrating how to open a PDF document, access a specific image by its index, and save it using the `save()` method of the XImage object. The Aspose.PDF library is highlighted as a powerful tool for managing, archiving, analyzing, or sharing images extracted from PDF files. The article is aimed at simplifying the image extraction process for users, enhancing document management and accessibility.
 ---
 <script type="application/ld+json">
 {

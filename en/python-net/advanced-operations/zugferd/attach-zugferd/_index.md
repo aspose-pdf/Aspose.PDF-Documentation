@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /python-net/attach-zugferd/
 description: Learn how to generate a PDF document with ZUGFeRD in Aspose.PDF for Python via .NET
-lastmod: "2024-01-18"
+lastmod: "2025-02-27"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to create PDF/3-A compliant PDF
+Abstract: This article provides a step-by-step guide on how to attach a ZUGFeRD-compliant XML file to a PDF document using the Aspose.PDF library. The process involves several key steps importing the library, defining paths for input and output files, loading the PDF document, creating a `FileSpecification` object for the XML invoice metadata, and setting the MIME type and relationship properties. The XML file is then added to the PDF's embedded files collection, effectively attaching it as invoice metadata. The document is subsequently converted to the PDF/A-3A format, ensuring compliance with specific archival standards. Finally, the modified PDF, now containing the embedded ZUGFeRD data, is saved. The provided Python code illustrates the implementation of these steps, highlighting the use of Aspose.PDF's functionalities to achieve the desired outcome.
 ---
 
 ## Attach ZUGFeRD to PDF
