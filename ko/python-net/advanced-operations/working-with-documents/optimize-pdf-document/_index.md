@@ -217,7 +217,7 @@ PDF 문서에는 가끔 문서 내의 다른 객체에서 참조되지 않는 PD
 
     # 문서 열기
     document = ap.Document(input_pdf)
-    # LinkDuplcateStreams 옵션 설정
+    # LinkDuplicateStreams 옵션 설정
     optimizeOptions = ap.optimization.OptimizationOptions()
     optimizeOptions.link_duplcate_streams = True
     # OptimizationOptions를 사용하여 PDF 문서 최적화

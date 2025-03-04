@@ -276,7 +276,7 @@ void LinkingDuplicateStreams() {
     // تهيئة خيارات التحسين
     auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
 
-    // ضبط خيار LinkDuplcateStreams
+    // ضبط خيار LinkDuplicateStreams
     optimizationOptions->set_LinkDuplcateStreams(true);
 
     // تحسين مستند PDF باستخدام خيارات التحسين
