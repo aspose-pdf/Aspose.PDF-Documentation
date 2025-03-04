@@ -389,10 +389,10 @@ private static void AdjustPosition()
         taggedContent.SetTitle("Tagged Pdf Document");
         taggedContent.SetLanguage("en-US");
 
+        // Create paragraph
         var p = taggedContent.CreateParagraphElement();
         taggedContent.RootElement.AppendChild(p);
-
-        p.SetText("Red italic text.");
+        p.SetText("Text.");
 
         // Adjust position
         p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
@@ -400,7 +400,7 @@ private static void AdjustPosition()
             HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
             Margin = new Aspose.Pdf.MarginInfo
             {
-                Left = 20,
+                Left = 300,
                 Right = 0,
                 Top = 20,
                 Bottom = 0
@@ -413,7 +413,7 @@ private static void AdjustPosition()
         });
 
         // Save Tagged Pdf Document
-        document.Save(dataDir + "StyleTextStructure_out.pdf");
+        document.Save(dataDir + "AdjustTextPosition_out.pdf");
     }
 }
 ```
@@ -437,10 +437,10 @@ private static void AdjustPosition()
         taggedContent.SetTitle("Tagged Pdf Document");
         taggedContent.SetLanguage("en-US");
 
+        // Create paragraph
         var p = taggedContent.CreateParagraphElement();
         taggedContent.RootElement.AppendChild(p);
-
-        p.SetText("Red italic text.");
+        p.SetText("Text.");
 
         // Adjust position
         p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
@@ -448,7 +448,7 @@ private static void AdjustPosition()
             HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
             Margin = new Aspose.Pdf.MarginInfo
             {
-                Left = 20,
+                Left = 300,
                 Right = 0,
                 Top = 20,
                 Bottom = 0
@@ -461,7 +461,7 @@ private static void AdjustPosition()
         });
 
         // Save Tagged Pdf Document
-        document.Save(dataDir + "StyleTextStructure_out.pdf");
+        document.Save(dataDir + "AdjustTextPosition_out.pdf");
     }
 }
 ```
