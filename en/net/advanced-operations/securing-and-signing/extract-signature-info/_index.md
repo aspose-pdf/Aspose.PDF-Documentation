@@ -209,6 +209,51 @@ Pkcs7
 Signature1
 ```
 
+## Checking signatures for compromise
+
+To verify digital signatures for compromise, you can use the **SignaturesCompromiseDetector** class.
+To check the document's signatures, call the **Check()** method. If no signature compromise is detected, the method will return true.
+If the method returns false, you can check whether there are compromised signatures using the **HasCompromisedSignatures** property and retrieve the list of compromised signatures through the **CompromisedSignatures** property.
+To verify whether the existing signatures cover the entire document, use the **SignaturesCoverage** property.
+This property can have the following values:
+- **Undefined** – if one of the signatures is explicitly compromised or the coverage check failed.
+- **EntirelySigned** – if the signatures cover the entire document.
+- **PartiallySigned** – if the signatures do not cover the entire document and there is unsigned content.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+public static void Check(string pdfFile)
+{
+    // Open the document
+    using (Document document = new Document(pdfFile))
+    {   
+         // Create the compromise detector instance
+         SignaturesCompromiseDetector detector = new SignaturesCompromiseDetector(document);
+         CompromiseCheckResult result;
+    
+         // Check for compromise
+         if(detector.Check(out result))
+         {
+            Console.WriteLine("No signature compromise detected");
+            return;
+         }
+         
+         // Get information about compromised signatures
+         if(result.HasCompromisedSignatures)
+         {
+            Console.WriteLine($"Count of compromised signatures: {result.CompromisedSignatures.Count}");
+            foreach (var signatureName in result.CompromisedSignatures)
+            {
+                Console.WriteLine($"Signature name: {signatureName.FullName}");
+            }
+         }
+         
+         // Get info about signatures coverage
+         Console.WriteLine(result.SignaturesCoverage);   
+    }
+}
+```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
