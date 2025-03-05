@@ -211,9 +211,11 @@ Signature1
 
 ## Checking signatures for compromise
 
-To verify digital signatures for compromise, you can use the **SignaturesCompromiseDetector** class.
-To check the document's signatures, call the **Check()** method. If no signature compromise is detected, the method will return true.
-If the method returns false, you can check whether there are compromised signatures using the **HasCompromisedSignatures** property and retrieve the list of compromised signatures through the **CompromisedSignatures** property.
+You can use the **SignaturesCompromiseDetector** class to verify digital signatures for compromise.
+Call the **Check()** method to check the document's signatures. 
+If no signature compromise is detected, the method will return true.
+If the method returns false, you can check whether compromised signatures use the **HasCompromisedSignatures** property and retrieve the list of compromised signatures through the **CompromisedSignatures** property.
+
 To verify whether the existing signatures cover the entire document, use the **SignaturesCoverage** property.
 This property can have the following values:
 - **Undefined** – if one of the signatures is explicitly compromised or the coverage check failed.
