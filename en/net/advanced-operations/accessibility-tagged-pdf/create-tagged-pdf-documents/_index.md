@@ -428,41 +428,40 @@ private static void AdjustPosition()
     var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
     // Create PDF Document
-    using (var document = new Aspose.Pdf.Document())
+    using var document = new Aspose.Pdf.Document();
+    
+    // Get Content for work with TaggedPdf
+    var taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Create paragraph
+    var p = taggedContent.CreateParagraphElement();
+    taggedContent.RootElement.AppendChild(p);
+    p.SetText("Text.");
+
+    // Adjust position
+    p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
     {
-        // Get Content for work with TaggedPdf
-        var taggedContent = document.TaggedContent;
-
-        // Set Title and Language for Document
-        taggedContent.SetTitle("Tagged Pdf Document");
-        taggedContent.SetLanguage("en-US");
-
-        // Create paragraph
-        var p = taggedContent.CreateParagraphElement();
-        taggedContent.RootElement.AppendChild(p);
-        p.SetText("Text.");
-
-        // Adjust position
-        p.AdjustPosition(new Aspose.Pdf.Tagged.PositionSettings
+        HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
+        Margin = new Aspose.Pdf.MarginInfo
         {
-            HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.None,
-            Margin = new Aspose.Pdf.MarginInfo
-            {
-                Left = 300,
-                Right = 0,
-                Top = 20,
-                Bottom = 0
-            },
-            VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
-            IsFirstParagraphInColumn = false,
-            IsKeptWithNext = false,
-            IsInNewPage = false,
-            IsInLineParagraph = false
-        });
+            Left = 300,
+            Right = 0,
+            Top = 20,
+            Bottom = 0
+        },
+        VerticalAlignment = Aspose.Pdf.VerticalAlignment.None,
+        IsFirstParagraphInColumn = false,
+        IsKeptWithNext = false,
+        IsInNewPage = false,
+        IsInLineParagraph = false
+    });
 
-        // Save Tagged Pdf Document
-        document.Save(dataDir + "AdjustTextPosition_out.pdf");
-    }
+    // Save Tagged Pdf Document
+    document.Save(dataDir + "AdjustTextPosition_out.pdf");
 }
 ```
 {{< /tab >}}
