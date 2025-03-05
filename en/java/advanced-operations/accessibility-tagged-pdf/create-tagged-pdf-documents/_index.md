@@ -69,7 +69,7 @@ RubyElement rubyElement = taggedContent.createRubyElement();
 WarichuElement warichuElement = taggedContent.createWarichuElement();
 FormElement formElement = taggedContent.createFormElement();
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StructureElements.pdf");
 ```
 
@@ -131,7 +131,7 @@ rootElement.appendChild(sect3);
 DivElement div31 = taggedContent.createDivElement();
 sect3.appendChild(div31);
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StructureElementsTree.pdf");
 ```
 
@@ -163,7 +163,7 @@ p.getStructureTextState().setFontStyle(FontStyles.Italic);
 
 p.setText("Red italic text.");
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StyleTextStructure.pdf");
 ```
 
@@ -193,7 +193,7 @@ figure1.setTitle("Image 1");
 figure1.setTag("Fig1");
 figure1.setImage("image.png");
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "IllustrationStructureElements.pdf");
 ```
 

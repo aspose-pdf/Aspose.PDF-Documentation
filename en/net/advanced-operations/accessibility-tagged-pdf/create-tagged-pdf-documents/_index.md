@@ -325,7 +325,7 @@ private static void AddStyle()
 
         p.SetText("Red italic text.");
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "StyleTextStructure_out.pdf");
     }
 }
@@ -359,7 +359,7 @@ private static void AddStyle()
 
     p.SetText("Red italic text.");
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "StyleTextStructure_out.pdf");
 }
 ```
@@ -412,7 +412,7 @@ private static void AdjustPosition()
             IsInLineParagraph = false
         });
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "AdjustTextPosition_out.pdf");
     }
 }
@@ -460,7 +460,7 @@ private static void AdjustPosition()
         IsInLineParagraph = false
     });
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "AdjustTextPosition_out.pdf");
 }
 ```
@@ -507,7 +507,7 @@ private static void IllustrateStructureElements()
             },
         });
 
-        // Save Tagged Pdf Document
+        // Save Tagged PDF Document
         document.Save(dataDir + "IllustrationStructureElements_out.pdf");
     }
 }
@@ -549,7 +549,7 @@ private static void IllustrateStructureElements()
         },
     });
 
-    // Save Tagged Pdf Document
+    // Save Tagged PDF Document
     document.Save(dataDir + "IllustrationStructureElements_out.pdf");
 }
 ```

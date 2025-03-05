@@ -141,7 +141,7 @@ summaryAttribute.setStringValue("The summary text for table");
 tableAttributes.setAttribute(summaryAttribute);
 
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "CreateTableElement.pdf");
 ```
 
@@ -253,7 +253,7 @@ for (colIndex = 0; colIndex < colCount; colIndex++)
     tdElement.setText(String.format("Foot %s", colIndex));
 }
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StyleTableElement.pdf");
 ```
 
@@ -350,7 +350,7 @@ for (colIndex = 0; colIndex < colCount; colIndex++)
 
 
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StyleTableRow.pdf");
 ```
 
@@ -478,6 +478,6 @@ for (colIndex = 0; colIndex < colCount; colIndex++)
 }
 
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StyleTableCell.pdf");
 ```
