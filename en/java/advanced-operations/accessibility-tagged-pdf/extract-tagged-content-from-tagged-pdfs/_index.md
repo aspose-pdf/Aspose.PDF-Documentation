@@ -38,7 +38,7 @@ ITaggedContent taggedContent = document.getTaggedContent();
 taggedContent.setTitle("Simple Tagged Pdf Document");
 taggedContent.setLanguage("en-US");
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "TaggedPDFContent.pdf");
 ```
 
@@ -113,6 +113,6 @@ for (Element element : elementList)
     }
 }
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save( path +"AccessChildrenElements.pdf");
 ```

@@ -49,7 +49,7 @@ h1.setAlternativeText("Alternative Text");
 h1.setExpansionText("Expansion Text");
 h1.setActualText("Actual Text");
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "StructureElementsProperties.pdf");
 ```
 
@@ -81,7 +81,7 @@ p.setText("Paragraph.");
 rootElement.appendChild(p);
 
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "TextStructureElement.pdf");
 ```
 
@@ -130,7 +130,7 @@ ParagraphElement p = taggedContent.createParagraphElement();
 p.setText("P. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. Cras pellentesque libero semper, gravida magna sed, luctus leo. Fusce lectus odio, laoreet nec ullamcorper ut, molestie eu elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lacinia sit amet elit ac consectetur. Donec cursus condimentum ligula, vitae volutpat sem tristique eget. Nulla in consectetur massa. Vestibulum vitae lobortis ante. Nulla ullamcorper pellentesque justo rhoncus accumsan. Mauris ornare eu odio non lacinia. Aliquam massa leo, rhoncus ac iaculis eget, tempus et magna. Sed non consectetur elit. Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
 rootElement.appendChild(p);
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "TextBlockStructureElements.pdf");
 ```
 
@@ -244,7 +244,7 @@ SpanElement span10 = taggedContent.createSpanElement();
 span10.setText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus, vitae posuere risus odio id massa. Cras sed venenatis lacus.");
 p.appendChild(span10);
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "InlineStructureElements.pdf");
 ```
 
@@ -310,7 +310,7 @@ p2.appendChild(span2);
 p3.appendChild(span3);
 p4.appendChild(span4);
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(path + "CustomTag.pdf");
 ```
 
@@ -388,7 +388,7 @@ p4.appendChild(span42);
 p4.setText(".");
 
 
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(outFile);
 ```
 
@@ -430,6 +430,6 @@ NoteElement note3 = taggedContent.createNoteElement();
 paragraph.appendChild(note3);
 note3.setText("Note with ID = 'note_003'. ");
 note3.setId("note_003");
-// Save Tagged Pdf Document
+// Save Tagged PDF Document
 document.save(outFile);
 ```
