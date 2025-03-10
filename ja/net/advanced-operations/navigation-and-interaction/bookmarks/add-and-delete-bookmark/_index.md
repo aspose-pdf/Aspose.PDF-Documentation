@@ -2,34 +2,39 @@
 title: ブックマークの追加と削除
 linktitle: ブックマークの追加と削除
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/add-and-delete-bookmark/
-description: C#を使用してPDFドキュメントにブックマークを追加することができます。PDFドキュメントからすべてのブックマークまたは特定のブックマークを削除することが可能です。
+description: C#を使用してPDFドキュメントにブックマークを追加できます。PDFドキュメントからすべてまたは特定のブックマークを削除することも可能です。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/add-and-delete-a-bookmark/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "ブックマークの追加と削除",
-    "alternativeHeadline": "PDFからブックマークを追加・削除する方法",
+    "headline": "Add and Delete a Bookmark",
+    "alternativeHeadline": "Manage PDF Bookmarks: Add and Delete with Ease",
+    "abstract": "この新機能により、ユーザーはC#を使用してPDFドキュメント内のブックマークを効率的に管理できます。新しいブックマークを簡単に追加したり、既存のブックマークを削除したりできます。すべてのブックマークを削除するか、特定のエントリをターゲットにすることができます。この機能は、ドキュメントのナビゲーションと整理を向上させ、ユーザーエクスペリエンスを改善します。",
     "author": {
         "@type": "Person",
-        "name":"アンドリー・アンドルホフスキー",
-        "givenName": "アンドリー",
-        "familyName": "アンドルホフスキー",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, ブックマーク削除, ブックマーク追加",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "add bookmark, delete bookmark, PDF document, C# programming, OutlineItemCollection, OutlineCollection, child bookmark, parent bookmark",
+    "wordcount": "851",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,140 +76,280 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-and-delete-bookmark/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#を使用してPDFドキュメントにブックマークを追加することができます。PDFドキュメントからすべてのブックマークまたは特定のブックマークを削除することが可能です。"
+    "dateModified": "2024-11-25",
+    "description": "C#を使用してPDFドキュメントにブックマークを追加できます。PDFドキュメントからすべてまたは特定のブックマークを削除することも可能です。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
 
 ## PDFドキュメントにブックマークを追加する
 
-ブックマークは、[OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) コレクションに保持され、それ自体が [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) コレクションにあります。
+ブックマークは、Documentオブジェクトの[OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)コレクションに保持されており、さらに[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに含まれています。
 
 PDFにブックマークを追加するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) オブジェクトを使用してPDFドキュメントを開きます。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを使用してPDFドキュメントを開きます。
 1. ブックマークを作成し、そのプロパティを定義します。
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) コレクションをアウトラインコレクションに追加します。
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)コレクションをOutlinesコレクションに追加します。
 
 次のコードスニペットは、PDFドキュメントにブックマークを追加する方法を示しています。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf"))
+    {
+        // Create a bookmark object
+        var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfOutline.Title = "Test Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// ブックマークオブジェクトを作成する
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Test Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-// 目的のページ番号を設定する
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
-// ドキュメントのアウトラインコレクションにブックマークを追加する。
-pdfDocument.Outlines.Add(pdfOutline);
+        // Set the destination page number
+        pdfOutline.Action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[1]);
 
-dataDir = dataDir + "AddBookmark_out.pdf";
-// 出力を保存する
-pdfDocument.Save(dataDir);
+        // Add bookmark in the document's outline collection.
+        document.Outlines.Add(pdfOutline);
+
+        // Save PDF document
+        document.Save(dataDir + "AddBookmark_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf");
+
+    // Create a bookmark object
+    var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfOutline.Title = "Test Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Set the destination page number
+    pdfOutline.Action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[1]);
+
+    // Add bookmark in the document's outline collection.
+    document.Outlines.Add(pdfOutline);
+
+    // Save PDF document
+    document.Save(dataDir + "AddBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## PDFドキュメントに子ブックマークを追加する
 
-ブックマークはネストすることができ、親と子のブックマークの階層的な関係を示しています。この記事では、PDFに二階層目のブックマーク、つまり子ブックマークを追加する方法について説明します。
+ブックマークはネスト可能で、親ブックマークと子ブックマークの階層関係を示します。この記事では、PDFに子ブックマーク、つまり第二レベルのブックマークを追加する方法を説明します。
 
 PDFファイルに子ブックマークを追加するには、まず親ブックマークを追加します：
 
-1. ドキュメントを開く。
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)にブックマークを追加し、そのプロパティを定義する。
-1. OutlineItemCollectionをDocumentオブジェクトの[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに追加する。
+1. ドキュメントを開きます。
+1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)にブックマークを追加し、そのプロパティを定義します。
+1. OutlineItemCollectionをDocumentオブジェクトの[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに追加します。
 
-子ブックマークの作成は、上記の親ブックマークと同様に行われますが、親ブックマークのアウトラインコレクションに追加されます。
+子ブックマークは、上記で説明した親ブックマークと同様に作成されますが、親ブックマークのOutlinesコレクションに追加されます。
 
 次のコードスニペットは、PDFドキュメントに子ブックマークを追加する方法を示しています。
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddChildBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf"))
+    {
+        // Create a parent bookmark object
+        var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfOutline.Title = "Parent Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// 親ブックマークオブジェクトを作成する
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "親アウトライン";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
+        // Create a child bookmark object
+        var pdfChildOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfChildOutline.Title = "Child Outline";
+        pdfChildOutline.Italic = true;
+        pdfChildOutline.Bold = true;
 
-// 子ブックマークオブジェクトを作成する
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfChildOutline.Title = "子アウトライン";
-pdfChildOutline.Italic = true;
-pdfChildOutline.Bold = true;
+        // Add child bookmark in parent bookmark's collection
+        pdfOutline.Add(pdfChildOutline);
 
-// 親ブックマークのコレクションに子ブックマークを追加する
-pdfOutline.Add(pdfChildOutline);
-// ドキュメントのアウトラインコレクションに親ブックマークを追加する。
-pdfDocument.Outlines.Add(pdfOutline);
+        // Add parent bookmark in the document's outline collection.
+        document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddChildBookmark_out.pdf";
-// 出力を保存する
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddChildBookmark_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddChildBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf");
+
+    // Create a parent bookmark object
+    var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfOutline.Title = "Parent Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Create a child bookmark object
+    var pdfChildOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfChildOutline.Title = "Child Outline";
+    pdfChildOutline.Italic = true;
+    pdfChildOutline.Bold = true;
+
+    // Add child bookmark in parent bookmark's collection
+    pdfOutline.Add(pdfChildOutline);
+
+    // Add parent bookmark in the document's outline collection.
+    document.Outlines.Add(pdfOutline);
+
+    // Save PDF document
+    document.Save(dataDir + "AddChildBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## PDFドキュメントからすべてのブックマークを削除する
 
-PDF内のすべてのブックマークは[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに保持されています。この記事では、PDFファイルからすべてのブックマークを削除する方法について説明します。
+PDF内のすべてのブックマークは、[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションに保持されています。この記事では、PDFファイルからすべてのブックマークを削除する方法を説明します。
 
 PDFファイルからすべてのブックマークを削除するには：
 
 1. [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションのDeleteメソッドを呼び出します。
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して、修正されたファイルを保存します。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して、変更されたファイルを保存します。
 
 次のコードスニペットは、PDFドキュメントからすべてのブックマークを削除する方法を示しています。
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf"))
+    {
+        // Delete all bookmarks
+        document.Outlines.Delete();
 
-// すべてのブックマークを削除
-pdfDocument.Outlines.Delete();
-
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
-// 更新されたファイルを保存
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf");
+
+    // Delete all bookmarks
+    document.Outlines.Delete();
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## PDFドキュメントから特定のブックマークを削除する
 
 PDFファイルから特定のブックマークを削除するには：
 
-1. ブックマークのタイトルをパラメータとして [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) コレクションのDeleteメソッドに渡します。
+1. ブックマークのタイトルを[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションのDeleteメソッドにパラメータとして渡します。
 1. 次に、DocumentオブジェクトのSaveメソッドで更新されたファイルを保存します。
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) クラスは [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) コレクションを提供します。[Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) メソッドは、メソッドに渡されたタイトルのブックマークを削除します。
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスは、[OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection)コレクションを提供します。[Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete)メソッドは、メソッドに渡されたタイトルを持つブックマークを削除します。
 
-以下のコードスニペットは、PDFドキュメントから特定のブックマークを削除する方法を示しています。
+次のコードスニペットは、PDFドキュメントから特定のブックマークを削除する方法を示しています。
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf"))
+    {
+        // Delete particular outline by Title
+        document.Outlines.Delete("Child Outline");
 
-// タイトルによる特定のアウトラインを削除
-pdfDocument.Outlines.Delete("Child Outline");
-
-// 更新されたファイルを保存
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf");
+
+    // Delete particular outline by Title
+    document.Outlines.Delete("Child Outline");
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -232,21 +377,21 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -257,7 +402,7 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -269,5 +414,3 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
 </script>
-```
-

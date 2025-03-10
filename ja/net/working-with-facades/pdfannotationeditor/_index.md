@@ -1,18 +1,19 @@
 ---
 title: PdfAnnotationEditor クラス
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ja/net/pdfannotationeditor-class/
-description: このセクションでは、PdfAnnotationEditor クラスを使用して Aspose.PDF Facades を操作する方法について説明します。
+description: このセクションでは、PdfAnnotationEditor クラスを使用して Aspose.PDF ファサードで作業する方法を説明します。
 lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [指定されたタイプで全ての注釈を削除する (facades)](/pdf/ja/net/delete-annotations/)
-- [com.aspose.pdf.facades を使用して注釈を XFDF 形式でインポートおよびエクスポートする](/pdf/ja/net/import-export-annotations/)
-- [注釈を抽出する](/pdf/ja/net/extract-annotation/)
-- [注釈をフラット化する](/pdf/ja/net/flatten-annotation/)
-- [注釈を修正する](/pdf/ja/net/modify-annotations/)
+- [指定されたタイプによるすべての注釈の削除 (ファサード)](/pdf/net/delete-annotations/)
+- [com.aspose.pdf.facades を使用して XFDF 形式に注釈をインポートおよびエクスポートする](/pdf/net/import-export-annotations/)
+- [注釈の抽出](/pdf/net/extract-annotation/)
+- [注釈のフラット化](/pdf/net/flatten-annotation/)
+- [注釈の修正](/pdf/net/modify-annotations/)

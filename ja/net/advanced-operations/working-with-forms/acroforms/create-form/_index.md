@@ -1,10 +1,12 @@
 ---
-title: Create AcroForm - Create Fillable PDF in C#
-linktitle: Create AcroForm
+title: AcroFormの作成 - C#で入力可能なPDFを作成
+linktitle: AcroFormの作成
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/create-form/
-description: Aspose.PDF for .NETを使用して、PDFファイルでゼロからフォームを作成できます
+description: Aspose.PDF for .NETを使用して、PDFファイルにゼロからフォームを作成できます
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Create AcroForm",
-    "alternativeHeadline": "PDFでAcroFormを作成する方法",
+    "headline": "Create AcroForm - Create Fillable PDF in C#",
+    "alternativeHeadline": "Create Interactive Forms in PDF with C#",
+    "abstract": "Aspose.PDF for .NETは、開発者がテキストボックス、ラジオボタン、コンボボックスなどのカスタマイズ可能なフォームフィールドをPDFにシームレスに統合できるように、ゼロから入力可能なPDFフォームを作成する機能を提供します。この機能により、ユーザーはドキュメントのインタラクティビティを向上させ、アプリケーション内でのデータ収集を改善できます。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, create acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
+    "wordcount": "1125",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,247 +74,416 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NETを使用して、PDFファイルでゼロからフォームを作成できます"
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NETを使用して、PDFファイルにゼロからフォームを作成できます"
 }
 </script>
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
-## スクラッチからフォームを作成
+## ゼロからフォームを作成
 
 ### PDFドキュメントにフォームフィールドを追加
 
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) クラスは [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) というコレクションを提供しており、PDFドキュメントのフォームフィールドを管理するのに役立ちます。
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスは、PDFドキュメント内のフォームフィールドを管理するための[Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form)というコレクションを提供します。
 
 フォームフィールドを追加するには：
 
 1. 追加したいフォームフィールドを作成します。
-1. [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) コレクションのAddメソッドを呼び出します。
+1. [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form)コレクションのAddメソッドを呼び出します。
 
 ### TextBoxFieldの追加
 
 以下の例は、[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)を追加する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextBoxFieldToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir + "TextField.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
+    {
+        // Create a field
+        var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
+        textBoxField.PartialName = "textbox1";
+        textBoxField.Value = "Text Box";
 
-// フィールドを作成する
-TextBoxField textBoxField = new TextBoxField(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
-textBoxField.PartialName = "textbox1";
-textBoxField.Value = "テキストボックス";
+        // Configure border
+        var border = new Aspose.Pdf.Annotations.Border(textBoxField);
+        border.Width = 5;
+        border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
+        textBoxField.Border = border;
 
-// TextBoxField.Border = new Border(
-Border border = new Border(textBoxField);
-border.Width = 5;
-border.Dash = new Dash(1, 1);
-textBoxField.Border = border;
+        // Set color
+        textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
-textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        // Add field to the document
+        document.Form.Add(textBoxField, 1);
 
-// ドキュメントにフィールドを追加
-pdfDocument.Form.Add(textBoxField, 1);
-
-dataDir = dataDir + "TextBox_out.pdf";
-// 変更したPDFを保存
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
 ```
+
 ### RadioButtonFieldの追加
 
 次のコードスニペットは、PDFドキュメントに[RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield)を追加する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddRadioButtonToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Documentオブジェクトをインスタンス化します
-Document pdfDocument = new Document();
-// PDFファイルにページを追加します
-pdfDocument.Pages.Add();
-// ページ番号を引数に持つRadioButtonFieldオブジェクトをインスタンス化します
-RadioButtonField radio = new RadioButtonField(pdfDocument.Pages[1]);
-// 最初のラジオボタンオプションを追加し、Rectangleオブジェクトを使用してその原点も指定します
-radio.AddOption("Test", new Rectangle(0, 0, 20, 20));
-// 第二のラジオボタンオプションを追加します
-radio.AddOption("Test1", new Rectangle(20, 20, 40, 40));
-// Documentオブジェクトのフォームオブジェクトにラジオボタンを追加します
-pdfDocument.Form.Add(radio);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to PDF file
+        document.Pages.Add();
 
-dataDir = dataDir + "RadioButton_out.pdf";
-// PDFファイルを保存します
-pdfDocument.Save(dataDir);
+        // Instantiate RadioButtonField object with page number as argument
+        var radio = new Aspose.Pdf.Forms.RadioButtonField(document.Pages[1]);
+
+        // Add first radio button option and also specify its origin using Rectangle object
+        radio.AddOption("Test", new Aspose.Pdf.Rectangle(0, 0, 20, 20));
+
+        // Add second radio button option
+        radio.AddOption("Test1", new Aspose.Pdf.Rectangle(20, 20, 40, 40));
+
+        // Add radio button to form object of Document object
+        document.Form.Add(radio);
+
+        // Save PDF document
+        document.Save(dataDir + "RadioButton_out.pdf");
+    }
+}
 ```
-次のコードスニペットは、3つのオプションを持つRadioButtonFieldを追加し、それをテーブルセルに配置する手順を示しています。
+
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield)は、いくつかのウィジェット注釈と共に追加できます。
+```csharp
+// For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextBoxFieldToPdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a new page in the created document
+        var page = document.Pages.Add();
+
+        // Defining an array with rectangle data for widget annotations. 
+        // The number of elements in the array determines the number of widget annotations to add.
+        var rects = new Rectangle[]
+        {
+            new Rectangle(10, 600, 110, 620),
+            new Rectangle(10, 630, 110, 650),
+            new Rectangle(10, 660, 110, 680)
+        };
+
+        // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
+        var defaultAppearances = new DefaultAppearance[]
+        {
+            new DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
+            new DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
+            new DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+        };
+
+        // Create a field
+        var textBoxField = new TextBoxField(page, rects);
+
+        // Setting the appearances of widget annotations
+        short i = 0;
+        foreach (WidgetAnnotation wa in textBoxField)
+        {
+            wa.DefaultAppearance = defaultAppearances[i++];
+        }
+        textBoxField.Value = "Text";
+
+        // Add field to the document
+        document.Form.Add(textBoxField);
+
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
+```
+
+次のコードスニペットは、3つのオプションを持つRadioButtonFieldを追加し、それらをテーブルセル内に配置する手順を示しています。
 
 ```csharp
-// 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddRadioButtonWithOptionsToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-Document doc = new Document();
-Page page = doc.Pages.Add();
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-table.ColumnWidths = "120 120 120";
-page.Paragraphs.Add(table);
-Row r1 = table.Rows.Add();
-Cell c1 = r1.Cells.Add();
-Cell c2 = r1.Cells.Add();
-Cell c3 = r1.Cells.Add();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to PDF file
+        var page = document.Pages.Add();
 
-RadioButtonField rf = new RadioButtonField(page);
-rf.PartialName = "radio";
-doc.Form.Add(rf, 1);
+        // Create a table
+        var table = new Aspose.Pdf.Table();
+        table.ColumnWidths = "120 120 120";
+        page.Paragraphs.Add(table);
 
-RadioButtonOptionField opt1 = new RadioButtonOptionField();
-RadioButtonOptionField opt2 = new RadioButtonOptionField();
-RadioButtonOptionField opt3 = new RadioButtonOptionField();
+        // Add a row to the table
+        var r1 = table.Rows.Add();
 
-opt1.OptionName = "Item1";
-opt2.OptionName = "Item2";
-opt3.OptionName = "Item3";
+        // Add cells to the row
+        var c1 = r1.Cells.Add();
+        var c2 = r1.Cells.Add();
+        var c3 = r1.Cells.Add();
 
-opt1.Width = 15;
-opt1.Height = 15;
-opt2.Width = 15;
-opt2.Height = 15;
-opt3.Width = 15;
-opt3.Height = 15;
+        // Create a RadioButtonField
+        var rf = new Aspose.Pdf.Forms.RadioButtonField(page);
+        rf.PartialName = "radio";
+        document.Form.Add(rf, 1);
 
-rf.Add(opt1);
-rf.Add(opt2);
-rf.Add(opt3);
+        // Create RadioButtonOptionField options
+        var opt1 = new Aspose.Pdf.Forms.RadioButtonOptionField();
+        var opt2 = new Aspose.Pdf.Forms.RadioButtonOptionField();
+        var opt3 = new Aspose.Pdf.Forms.RadioButtonOptionField();
 
-opt1.Border = new Border(opt1);
-opt1.Border.Width = 1;
-opt1.Border.Style = BorderStyle.Solid;
-opt1.Characteristics.Border = System.Drawing.Color.Black;
-opt1.DefaultAppearance.TextColor = System.Drawing.Color.Red;
-opt1.Caption = new TextFragment("Item1");
-opt2.Border = new Border(opt1);
-opt2.Border.Width = 1;
-opt2.Border.Style = BorderStyle.Solid;
-opt2.Characteristics.Border = System.Drawing.Color.Black;
-opt2.DefaultAppearance.TextColor = System.Drawing.Color.Red;
-opt2.Caption = new TextFragment("Item2");
-opt3.Border = new Border(opt1);
-opt3.Border.Width = 1;
-opt3.Border.Style = BorderStyle.Solid;
-opt3.Characteristics.Border = System.Drawing.Color.Black;
-opt3.DefaultAppearance.TextColor = System.Drawing.Color.Red;
-opt3.Caption = new TextFragment("Item3");
-c1.Paragraphs.Add(opt1);
-c2.Paragraphs.Add(opt2);
-c3.Paragraphs.Add(opt3);
+        opt1.OptionName = "Item1";
+        opt2.OptionName = "Item2";
+        opt3.OptionName = "Item3";
 
-dataDir = dataDir + "RadioButtonWithOptions_out.pdf";
-// PDFファイルを保存
-doc.Save(dataDir);
+        opt1.Width = 15;
+        opt1.Height = 15;
+        opt2.Width = 15;
+        opt2.Height = 15;
+        opt3.Width = 15;
+        opt3.Height = 15;
+
+        rf.Add(opt1);
+        rf.Add(opt2);
+        rf.Add(opt3);
+
+        // Configure borders and captions for options
+        opt1.Border = new Aspose.Pdf.Annotations.Border(opt1);
+        opt1.Border.Width = 1;
+        opt1.Border.Style = Aspose.Pdf.Annotations.BorderStyle.Solid;
+        opt1.Characteristics.Border = System.Drawing.Color.Black;
+        opt1.DefaultAppearance.TextColor = System.Drawing.Color.Red;
+        opt1.Caption = new Aspose.Pdf.Text.TextFragment("Item1");
+
+        opt2.Border = new Aspose.Pdf.Annotations.Border(opt2);
+        opt2.Border.Width = 1;
+        opt2.Border.Style = Aspose.Pdf.Annotations.BorderStyle.Solid;
+        opt2.Characteristics.Border = System.Drawing.Color.Black;
+        opt2.DefaultAppearance.TextColor = System.Drawing.Color.Red;
+        opt2.Caption = new Aspose.Pdf.Text.TextFragment("Item2");
+
+        opt3.Border = new Aspose.Pdf.Annotations.Border(opt3);
+        opt3.Border.Width = 1;
+        opt3.Border.Style = Aspose.Pdf.Annotations.BorderStyle.Solid;
+        opt3.Characteristics.Border = System.Drawing.Color.Black;
+        opt3.DefaultAppearance.TextColor = System.Drawing.Color.Red;
+        opt3.Caption = new Aspose.Pdf.Text.TextFragment("Item3");
+
+        // Add options to the cells
+        c1.Paragraphs.Add(opt1);
+        c2.Paragraphs.Add(opt2);
+        c3.Paragraphs.Add(opt3);
+
+        // Save PDF document
+        document.Save(dataDir + "RadioButtonWithOptions_out.pdf");
+    }
+}
 ```
-### RadioButtonFieldにキャプションを追加する
+
+### RadioButtonFieldにキャプションを追加
 
 次のコードスニペットは、RadioButtonFieldに関連付けられるキャプションを追加する方法を示しています：
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// ソースPDFフォームを読み込む
-Aspose.Pdf.Facades.Form form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
-Document PDF_Template_PDF_HTML = new Document(dataDir + "RadioButtonField.pdf");
-foreach (var item in form1.FieldNames)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingCaptionToRadioButtonField()
 {
-    Console.WriteLine(item.ToString());
-    Dictionary<string, string> radioOptions = form1.GetButtonOptionValues(item);
-    if (item.Contains("radio1"))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Load source PDF form
+    using (var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
     {
-        Aspose.Pdf.Forms.RadioButtonField field0 = PDF_Template_PDF_HTML.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
-        Aspose.Pdf.Forms.RadioButtonOptionField fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
-        fieldoption.OptionName = "Yes";
-        fieldoption.PartialName = "Yesname";
+        using (var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf"))
+        {
+            foreach (var item in form1.FieldNames)
+            {
+                Console.WriteLine(item.ToString());
+                var radioOptions = form1.GetButtonOptionValues(item);
 
-        var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
-        updatedFragment.TextState.Font = FontRepository.FindFont("Arial");
-        updatedFragment.TextState.FontSize = 10;
-        updatedFragment.TextState.LineSpacing = 6.32f;
+                if (item.Contains("radio1"))
+                {
+                    var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+                    var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
+                    fieldoption.OptionName = "Yes";
+                    fieldoption.PartialName = "Yesname";
 
-        // TextParagraphオブジェクトを作成する
-        TextParagraph par = new TextParagraph();
+                    var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
+                    updatedFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+                    updatedFragment.TextState.FontSize = 10;
+                    updatedFragment.TextState.LineSpacing = 6.32f;
 
-        // 段落の位置を設定する
-        par.Position = new Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
-        // 単語ごとに改行するモードを指定する
-        par.FormattingOptions.WrapMode = TextFormattingOptions.WordWrapMode.ByWords;
+                    // Create TextParagraph object
+                    var par = new Aspose.Pdf.Text.TextParagraph();
 
-        // 段落に新しいTextFragmentを追加する
-        par.AppendLine(updatedFragment);
+                    // Set paragraph position
+                    par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+                    // Specify word wraping mode
+                    par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
 
-        // TextBuilderを使用してTextParagraphを追加する
-        TextBuilder textBuilder = new TextBuilder(PDF_Template_PDF_HTML.Pages[1]);
-        textBuilder.AppendParagraph(par);
+                    // Add new TextFragment to paragraph
+                    par.AppendLine(updatedFragment);
 
-        field0.DeleteOption("item1");
+                    // Add the TextParagraph using TextBuilder
+                    var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+                    textBuilder.AppendParagraph(par);
+
+                    field0.DeleteOption("item1");
+                }
+            }
+
+            // Save PDF document
+            document.Save(dataDir + "RadioButtonField_out.pdf");
+        }
     }
 }
-PDF_Template_PDF_HTML.Save(dataDir + "RadioButtonField_out.pdf");
 ```
-### コンボボックスフィールドの追加
 
-次のコードスニペットは、PDFドキュメントにコンボボックスフィールドを追加する方法を示しています。
+### ComboBoxフィールドの追加
+
+次のコードスニペットは、PDFドキュメントにComboBoxフィールドを追加する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddComboBoxToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Documentオブジェクトを作成
-Document doc = new Document();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to document object
+        document.Pages.Add();
 
-// ドキュメントオブジェクトにページを追加
-doc.Pages.Add();
+        // Instantiate ComboBox Field object
+        var combo = new Aspose.Pdf.Forms.ComboBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
 
-// ComboBox Fieldオブジェクトをインスタンス化
-ComboBoxField combo = new ComboBoxField(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
+        // Add options to ComboBox
+        combo.AddOption("Red");
+        combo.AddOption("Yellow");
+        combo.AddOption("Green");
+        combo.AddOption("Blue");
 
-// コンボボックスにオプションを追加
-combo.AddOption("Red");
-combo.AddOption("Yellow");
-combo.AddOption("Green");
-combo.AddOption("Blue");
+        // Add combo box object to form fields collection of document object
+        document.Form.Add(combo);
 
-// ドキュメントオブジェクトのフォームフィールドコレクションにコンボボックスオブジェクトを追加
-doc.Form.Add(combo);
-dataDir = dataDir + "ComboBox_out.pdf";
-// PDFドキュメントを保存
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ComboBox_out.pdf");
+    }
+}
 ```
 
-### フォームフィールドにツールチップを追加する
+### フォームフィールドにツールチップを追加
 
-Documentクラスは、PDFドキュメントのフォームフィールドを管理するFormというコレクションを提供しています。
-Document クラスは、PDFドキュメントのフォームフィールドを管理する Form というコレクションを提供します。
+Documentクラスは、PDFドキュメント内のフォームフィールドを管理するためのFormというコレクションを提供します。フォームフィールドにツールチップを追加するには、FieldクラスのAlternateNameを使用します。Adobe Acrobatは「代替名」をフィールドツールチップとして使用します。
 
-次に示すコードスニペットは、まず C# を使用して、次に Visual Basic を使用してフォームフィールドにツールチップを追加する方法を示しています。
+以下のコードスニペットは、最初にC#を使用し、その後Visual Basicを使用してフォームフィールドにツールチップを追加する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTooltipToField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// ソースPDFフォームをロード
-Document doc = new Document(dataDir + "AddTooltipToField.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTooltipToField.pdf"))
+    {
+        // Set the tooltip for textfield
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
+        {
+            field.AlternateName = "Text box tool tip";
+        }
 
-// テキストフィールドのツールチップを設定
-(doc.Form["textbox1"] as Field).AlternateName = "テキストボックスのツールチップ";
-
-dataDir = dataDir + "AddTooltipToField_out.pdf";
-// 更新されたドキュメントを保存
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddTooltipToField_out.pdf");
+    }
+}
 ```
 
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

@@ -1,15 +1,16 @@
 ---
 title: Aspose.PDF .NET for DNN
 type: docs
-weight: 320
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 30
 url: /ja/net/aspose-pdf-net-for-dnn/
-description: DotNetNuke用PDFインポートモジュールの使用方法を学ぶ
+description: DotNetNukeのPDFインポートモジュールの使用方法を学ぶ
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+このセクションには以下のトピックがあります：
 
-このセクションには以下のトピックが含まれています：
-
-- [DNN PDFインポートモジュール](/pdf/ja/net/dnn-pdf-import-module)
+- [DNN PDFインポートモジュール](/pdf/net/dnn-pdf-import-module)

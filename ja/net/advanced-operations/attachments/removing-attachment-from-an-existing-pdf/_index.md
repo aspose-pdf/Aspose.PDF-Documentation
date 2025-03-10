@@ -2,9 +2,11 @@
 title: PDFからの添付ファイルの削除
 linktitle: 既存のPDFからの添付ファイルの削除
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/removing-attachment-from-an-existing-pdf/
-description: Aspose.PDFを使ってPDFドキュメントから添付ファイルを削除できます。C# PDF APIを使用してAspose.PDFライブラリを使いPDFファイルから添付ファイルを削除します。
+description: Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。C# PDF APIを使用してAspose.PDFライブラリでPDFファイルの添付ファイルを削除します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFからの添付ファイルの削除",
-    "alternativeHeadline": "PDFから添付ファイルを削除する方法",
+    "headline": "Removing attachment from PDF",
+    "alternativeHeadline": "Remove Attachments Efficiently from PDF Files",
+    "abstract": "Aspose.PDFには、ユーザーがC# PDF APIを使用してPDFドキュメントから添付ファイルを簡単に削除できる強力な機能が含まれています。この機能により、ユーザーはドキュメントから埋め込まれたファイルを削除でき、よりクリーンで効率的なPDF体験を実現します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, 添付ファイル削除",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Removing attachment from PDF, Aspose.PDF, delete attachments, PDF API, C# PDF library, EmbeddedFiles collection, document.Save method, PDF manipulation, attachments management, Aspose.PDF for .NET",
+    "wordcount": "229",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,15 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/removing-attachment-from-an-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDFを使ってPDFドキュメントから添付ファイルを削除できます。C# PDF APIを使用してAspose.PDFライブラリを使いPDFファイルから添付ファイルを削除します。"
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFはPDFドキュメントから添付ファイルを削除できます。C# PDF APIを使用してAspose.PDFライブラリでPDFファイルの添付ファイルを削除します。"
 }
 </script>
-Aspose.PDFは、PDFファイルから添付ファイルを削除できます。PDFドキュメントの添付ファイルは、DocumentオブジェクトのEmbeddedFilesコレクションに保持されています。
 
-次のコードスニペットも[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリで動作します。
+Aspose.PDFはPDFファイルから添付ファイルを削除できます。PDFドキュメントの添付ファイルは、DocumentオブジェクトのEmbeddedFilesコレクションに保持されています。
 
-PDFファイルに関連付けられているすべての添付ファイルを削除するには：
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+
+PDFファイルに関連付けられたすべての添付ファイルを削除するには：
 
 1. [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection)コレクションの[Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete)メソッドを呼び出します。
 1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して更新されたファイルを保存します。
@@ -87,18 +91,22 @@ PDFファイルに関連付けられているすべての添付ファイルを�
 次のコードスニペットは、PDFドキュメントから添付ファイルを削除する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAttachments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"))
+    {
+        // Delete all attachments
+        document.EmbeddedFiles.Delete();
 
-// すべての添付ファイルを削除
-pdfDocument.EmbeddedFiles.Delete();
-
-// 更新されたドキュメントを保存
-pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAttachments_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -127,23 +135,23 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -152,7 +160,7 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -164,5 +172,3 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
     }
 }
 </script>
-```
-

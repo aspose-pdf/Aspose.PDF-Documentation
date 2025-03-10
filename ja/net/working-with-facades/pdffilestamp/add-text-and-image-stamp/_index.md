@@ -1,156 +1,231 @@
 ---
-title: テキストと画像スタンプの追加
+title: テキストおよび画像スタンプの追加
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/add-text-and-image-stamp/
-description: このセクションでは、PdfFileStampクラスを使用してAspose.PDF Facadesでテキストと画像のスタンプを追加する方法を説明します。
+description: このセクションでは、PdfFileStampクラスを使用してAspose.PDF Facadesでテキストおよび画像スタンプを追加する方法を説明します。
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Text and Image Stamp",
+    "alternativeHeadline": "Add Custom Text and Image Stamps in PDFs",
+    "abstract": "Aspose.PDF for .NETのテキストおよび画像スタンプの機能により、ユーザーはPDFドキュメントのすべてまたは特定のページにカスタマイズされたテキストおよび画像スタンプをシームレスに適用できます。この機能はドキュメントのパーソナライズを強化し、位置、回転、品質などのスタンプ属性に対する詳細な制御を可能にし、最終的にはPDFファイルのプレゼンテーションとブランディングを向上させます。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1435",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-text-and-image-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-text-and-image-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
 
-## PDFファイルのすべてのページにテキストスタンプを追加する
+## PDFファイルのすべてのページにテキストスタンプを追加
 
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用すると、PDFファイルのすべてのページにテキストスタンプを追加できます。
-``` In order to add text stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
-
-テキストスタンプを追加するには、まず [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスと [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスのオブジェクトを作成する必要があります。 あなたはまた、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスの [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) メソッドを使用してテキストスタンプを作成する必要があります。原点、回転、背景などの他の属性を [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) オブジェクトを使用して設定することもできます。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) メソッドを使用して、PDF ファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) メソッドを使用して、出力 PDF ファイルを保存します。以下のコードスニペットは、PDF ファイルのすべてのページにテキストスタンプを追加する方法を示しています。
-
-```csharp
- public static void AddTextStampOnAllPagesInPdfFile()
-        {
-            // Create PdfFileStamp object
-            PdfFileStamp fileStamp = new PdfFileStamp();
-
-            // Open Document
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
-
-            // Create stamp
-            Stamp stamp = new Stamp();
-            stamp.BindLogo(new FormattedText("Hello World!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Helvetica, EncodingType.Winansi, true, 14));
-            stamp.SetOrigin(10, 400);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
-
-            // Add stamp to PDF file
-            fileStamp.AddStamp(stamp);
-
-            // Save updated PDF file
-            fileStamp.Save(_dataDir + "AddTextStamp-All_out.pdf");
-
-            // Close fileStamp
-            fileStamp.Close();
-        }
-```
-## 特定のページにテキストスタンプを追加する
-
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用すると、PDFファイルの特定のページにテキストスタンプを追加できます。 In order to add text stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
-
-テキストスタンプを追加するには、まず [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスと [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスのオブジェクトを作成する必要があります。 You also need to create the text stamp using [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class.  
-テキストスタンプを作成するには、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスの [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) メソッドを使用する必要があります。 You can set other attributes like origin, rotation, background etc.  
-他の属性（例えば、起点、回転、背景など）を設定できます。 
-using [スタンプ](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) オブジェクトも使用します。
-``` 特定のPDFファイルのページにテキストスタンプを追加したい場合は、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages)プロパティを設定する必要があります。このプロパティには、スタンプを追加したいページの番号を含む整数配列が必要です。次に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp)メソッドを使用して、PDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して、出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルの特定のページにテキストスタンプを追加する方法を示しています。
-
-```csharp
- public static void AddTextStampOnParticularPagesInPdfFile()
-        {
-            // PdfFileStampオブジェクトを作成
-            PdfFileStamp fileStamp = new PdfFileStamp();
-
-            // ドキュメントを開く
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
-
-            // スタンプを作成
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindLogo(new FormattedText("Hello World!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Helvetica, EncodingType.Winansi, true, 14));
-            stamp.SetOrigin(10, 400);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
-
-            // 特定のページを設定
-            stamp.Pages = new int[] { 2 };
-
-            // PDFファイルにスタンプを追加
-            fileStamp.AddStamp(stamp);
-
-            // 更新されたPDFファイルを保存
-            fileStamp.Save(_dataDir + "AddTextStamp-Page_out.pdf");
-
-            // fileStampを閉じる
-            fileStamp.Close();
-        }
-```
-## 全ページに画像スタンプを追加する方法
-
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用すると、PDFファイルのすべてのページに画像スタンプを追加できます。 In order to add image stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
-
-画像スタンプを追加するためには、まず [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスと [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスのオブジェクトを作成する必要があります。 あなたはまた、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index)メソッドを使用して、画像のスタンプを作成する必要があります。[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して、原点、回転、背景などの他の属性を設定することもできます。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)メソッドを使用して、スタンプをPDFファイルに追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して、出力されたPDFファイルを保存します。以下のコードスニペットは、PDFファイルのすべてのページに画像スタンプを追加する方法を示しています。
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルのすべてのページにテキストスタンプを追加できます。テキストスタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)および[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。また、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo)メソッドを使用してテキストスタンプを作成する必要があります。他の属性（原点、回転、背景など）も[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して設定できます。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp)メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルのすべてのページにテキストスタンプを追加する方法を示しています。
 
 ```csharp
-public static void AddImageStampOnAllPagesInPdfFile()
-        {
-            // PdfFileStampオブジェクトを作成
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStampOnAllPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // ドキュメントを開く
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-            // スタンプを作成
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindImage(_dataDir + "aspose-logo.png");
-            stamp.SetOrigin(10, 200);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Hello World!",
+            System.Drawing.Color.Blue,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.Helvetica,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            true,
+            14));
 
-            // 特定のページを設定
-            stamp.Pages = new int[] { 2 };
+        stamp.SetOrigin(10, 400);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // PDFファイルにスタンプを追加
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // 更新されたPDFファイルを保存
-            fileStamp.Save(_dataDir + "AddImageStamp-Page_out.pdf");
-
-            // fileStampを閉じる
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddTextStampOnAllPages_out.pdf");
+    }
+}
 ```
-### スタンプとして追加する際の画像品質を制御
 
-画像をスタンプオブジェクトとして追加する際、画像の品質も制御できます。この要件を達成するために、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスに Quality プロパティが追加されました。これは画像の品質をパーセントで示します（有効な値は0..100です）。
+## PDFファイルの特定のページにテキストスタンプを追加
+
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルの特定のページにテキストスタンプを追加できます。テキストスタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)および[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。また、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo)メソッドを使用してテキストスタンプを作成する必要があります。他の属性（原点、回転、背景など）も[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して設定できます。PDFファイルの特定のページにテキストスタンプを追加するためには、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages)プロパティも設定する必要があります。このプロパティには、スタンプを追加したいページの番号を含む整数配列が必要です。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp)メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルの特定のページにテキストスタンプを追加する方法を示しています。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStampOnParticularPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
+
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Hello World!",
+            System.Drawing.Color.Blue,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.Helvetica,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            true,
+            14));
+        stamp.SetOrigin(10, 400);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
+
+        // Set particular pages (page 2)
+        stamp.Pages = new[] { 2 };
+
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
+
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddTextStampOnParticularPages_out.pdf");
+    }
+}
+```
+
+## PDFファイルのすべてのページに画像スタンプを追加
+
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルのすべてのページに画像スタンプを追加できます。画像スタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)および[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。また、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index)メソッドを使用して画像スタンプを作成する必要があります。他の属性（原点、回転、背景など）も[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して設定できます。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルのすべてのページに画像スタンプを追加する方法を示しています。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampOnAllPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
+
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindImage(dataDir + "StampImage.png");
+        stamp.SetOrigin(10, 200);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
+
+        // Set particular pages (page 2)
+        stamp.Pages = new[] { 2 };
+
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
+
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddImageStampOnAllPages_out.pdf");
+    }
+}
+```
+
+### スタンプとして追加する際の画像品質の制御
+
+画像をスタンプオブジェクトとして追加する際に、画像の品質を制御することもできます。この要件を満たすために、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスにQualityプロパティが追加されました。これは、画像の品質をパーセントで示します（有効な値は0..100です）。
 
 ## PDFファイルの特定のページに画像スタンプを追加
 
-[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスを使用すると、PDFファイルの特定のページに画像スタンプを追加できます。 In order to add image stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
-
-画像スタンプを追加するためには、まず [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスと [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスのオブジェクトを作成する必要があります。 You also need to create the image stamp using [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class.  
-イメージスタンプを作成するには、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスの [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) メソッドを使用する必要があります。 You can set other attributes like origin, rotation, background etc.
-
-他の属性を設定することができます。たとえば、origin、rotation、backgroundなどです。 using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) オブジェクトも使用します。PDFファイルの特定のページに画像スタンプを追加したい場合は、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) クラスの [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) プロパティを設定する必要があります。このプロパティには、スタンプを追加したいページの番号を含む整数配列が必要です。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) クラスの [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルの特定のページに画像スタンプを追加する方法を示しています。
+[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスを使用すると、PDFファイルの特定のページに画像スタンプを追加できます。画像スタンプを追加するには、まず[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)および[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスのオブジェクトを作成する必要があります。また、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index)メソッドを使用して画像スタンプを作成する必要があります。他の属性（原点、回転、背景など）も[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)オブジェクトを使用して設定できます。PDFファイルの特定のページに画像スタンプを追加するためには、[Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp)クラスの[Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages)プロパティも設定する必要があります。このプロパティには、スタンプを追加したいページの番号を含む整数配列が必要です。その後、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp)メソッドを使用してPDFファイルにスタンプを追加できます。最後に、[PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp)クラスの[Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close)メソッドを使用して出力PDFファイルを保存します。以下のコードスニペットは、PDFファイルの特定のページに画像スタンプを追加する方法を示しています。
 
 ```csharp
- public static void AddImageStampOnParticularPagesInPdfFile()
-        {
-            // PdfFileStampオブジェクトを作成
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampOnParticularPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // ドキュメントを開く
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-            // スタンプを作成
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindImage(_dataDir + "aspose-logo.png");
-            stamp.SetOrigin(10, 200);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindImage(dataDir + "StampImage.png");
+        stamp.SetOrigin(10, 200);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // PDFファイルにスタンプを追加
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // 更新されたPDFファイルを保存
-            fileStamp.Save(_dataDir + "AddImageStamp-All_out.pdf");
-
-            // fileStampを閉じる
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddImageStampOnParticularPages_out.pdf");
+    }
+}
 ```

@@ -1,10 +1,12 @@
 ---
-title: アノテーションの追加、削除、および取得
-linktitle: アノテーションの追加、削除、および取得
+title: 注釈の追加、削除、取得
+linktitle: 注釈の追加、削除、取得
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/add-delete-and-get-annotation/
-description: Aspose.PDF for .NET を使用して、PDFファイルからアノテーションを追加、削除、取得することができます。タスクを解決するためのアノテーションの全リストを確認してください。
+description: Aspose.PDF for .NETを使用すると、PDFファイルから注釈を追加、削除、取得できます。タスクを解決するために、すべての注釈リストを確認してください。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "アノテーションの追加、削除、および取得",
-    "alternativeHeadline": "PDFファイルでのアノテーションの操作",
+    "headline": "Add, Delete and Get Annotation",
+    "alternativeHeadline": "Manage PDF Annotations with Aspose.PDF for .NET",
+    "abstract": "Aspose.PDF for .NETの新しい注釈の追加、削除、取得機能を使用して、PDF操作能力を強化します。この強力な機能により、ユーザーはPDFファイル内の注釈をシームレスに管理でき、編集が簡素化され、コンテンツのインタラクションが向上します。特定の文書ニーズに応じてさまざまな種類の注釈を操作する方法を発見してください。",
     "author": {
         "@type": "Person",
-        "name":"アナスタシア・ホルブ",
-        "givenName": "アナスタシア",
-        "familyName": "ホルブ",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, アノテーションの追加, アノテーションの取得, アノテーションの削除",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "add annotation, delete annotation, get annotation, Aspose.PDF for .NET, PDF document generation, PDF annotations, multimedia annotation, PDF text annotation, highlights annotation, PDF manipulation library",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF ドキュメントチーム",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +74,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-delete-and-get-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NETを使用して、PDFファイルからアノテーションを追加、削除、取得することができます。タスクを解決するためのアノテーションの全リストを確認してください。"
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NETを使用すると、PDFファイルから注釈を追加、削除、取得できます。タスクを解決するために、すべての注釈リストを確認してください。"
 }
 </script>
-```
-**PDFドキュメントの注釈とは何ですか？**
 
-これらは、テキストの内容を拡張し、編集や他のユーザーへのコメントを加えるためにファイルに追加する追加のオブジェクトです。また、ドキュメントのテキストをより読みやすくすることも可能で、それを強調表示したり、下線を引いたり、完全に新しいテキストを追加することもできます。
+**PDFドキュメントにおける注釈とは何ですか？**
 
-Aspose.PDF for .NETライブラリで利用可能な注釈の異なる種類をグループにまとめました：
+これは、テキストの内容を拡張したり、他のユーザーへの編集やコメントを行ったりするためにファイルに追加する追加オブジェクトです。また、文書内のテキストをより読みやすくしたり、ハイライトしたり、下線を引いたり、まったく新しいテキストを追加したりすることも可能です。
 
-- [PDF テキスト注釈](/pdf/ja/net/text-annotation/)
-- [PDF ハイライト注釈](/pdf/ja/net/highlights-annotation/)
-- [PDF 図形注釈](/pdf/ja/net/figures-annotation/)
-- [マルチメディア注釈](/pdf/ja/net/multimedia-annotation/)
-- [PDF スティッキー注釈](/pdf/ja/net/sticky-annotations/)
-- [リンク注釈](/pdf/ja/net/link-annotations/)
-- [追加注釈](/pdf/ja/net/extra-annotations/)
+私たちは、Aspose.PDF for .NETライブラリで利用可能なさまざまな種類の注釈をグループにまとめました：
+
+- [PDFテキスト注釈](/pdf/net/text-annotation/)
+- [PDFハイライト注釈](/pdf/net/highlights-annotation/)
+- [PDF図形注釈](/pdf/net/figures-annotation/)
+- [マルチメディア注釈](/pdf/net/multimedia-annotation/)
+- [PDFスティッキー注釈](/pdf/net/sticky-annotations/)
+- [リンク注釈](/pdf/net/link-annotations/)
+- [追加の注釈](/pdf/net/extra-annotations/)
 
 <script type="application/ld+json">
 {
@@ -153,4 +156,3 @@ Aspose.PDF for .NETライブラリで利用可能な注釈の異なる種類を�
     }
 }
 </script>
-

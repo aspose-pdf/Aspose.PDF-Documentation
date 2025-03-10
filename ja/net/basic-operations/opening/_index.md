@@ -1,29 +1,102 @@
 ---
-title: プログラムによるPDFドキュメントの開始
+title: プログラムでPDFドキュメントを開く
 linktitle: PDFを開く
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/open-pdf-document/
-description: C# Aspose.PDF for .NET PDFライブラリを使用してPDFファイルを開く方法を学びます。既存のPDF、ストリームからのドキュメント、暗号化されたPDFドキュメントを開くことができます。
+description: C# Aspose.PDF for .NET PDFライブラリでPDFファイルを開く方法を学びます。既存のPDF、ストリームからのドキュメント、および暗号化されたPDFドキュメントを開くことができます。
+aliases:
+    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Open PDF document programmatically",
+    "alternativeHeadline": "Programmatically Open and Access Various PDF Documents with C#",
+    "abstract": "Aspose.PDF for .NETライブラリを使用してPDFドキュメントを開く方法を発見してください。この機能により、開発者は既存のPDFにシームレスにアクセスし、ストリームからドキュメントをロードし、暗号化されたファイルを簡単に処理できるため、ワークフローの効率が向上し、C#におけるPDF操作の能力が拡張されます。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "238",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/open-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/open-pdf-document/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
 
-次のコードスニペットは [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
 ## 既存のPDFドキュメントを開く
 
-ドキュメントを開く方法はいくつかあります。最も簡単な方法はファイル名を指定することです。
+ドキュメントを開く方法はいくつかあります。最も簡単なのは、ファイル名を指定することです。
 
 ```csharp
-public static void OpenDocument()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocument()
 {
-    var fileName = @"C:\tmp\tourguidev2_gb_tags.pdf";
-    using (var pdfDocument = new Aspose.Pdf.Document(fileName))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
-        Console.WriteLine($"ページ数 {pdfDocument.Pages.Count}");
+        Console.WriteLine("Pages " + document.Pages.Count);
     }
 }
 ```
@@ -31,42 +104,49 @@ public static void OpenDocument()
 ## ストリームから既存のPDFドキュメントを開く
 
 ```csharp
-public static void OpenDocumentStream()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocumentStream()
 {
-    const string fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
+    var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
     var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-    // 新しいWebClientインスタンスを作成します。
-    var webClient = new WebClient();
-    // ドメインとWebリソースのファイル名を連結します。
+    // Create a new WebClient instance
+    var webClient = new System.Net.WebClient();
+    // Concatenate the domain with the Web resource filename
     var strWebResource = remoteUri + fileName;
-    Console.WriteLine("ファイル \"{0}\" を \"{1}\" からダウンロードしています.......\n\n", fileName, strWebResource);
+    Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, strWebResource);
 
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    using (var pdfDocument = new Aspose.Pdf.Document(stream))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(stream))
     {
-        Console.WriteLine($"ページ数 {pdfDocument.Pages.Count}");
+        Console.WriteLine("Pages " + document.Pages.Count);
     }
 }
 ```
+
 ## 暗号化されたPDFドキュメントを開く
 
 ```csharp
-    public static void OpenDocumentWithPassword()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocumentWithPassword()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    const string password = "Aspose2020";
+    try
     {
-        const string fileName = @"C:\tmp\DocSite.pdf";
-        const string password = "Aspose2020";
-        try
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document(dataDir + "DocSite.pdf", password))
         {
-            using (var pdfDocument = new Aspose.Pdf.Document(fileName, password))
-            {
-                Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
-            }
-        }
-        catch (InvalidPasswordException e)
-        {
-            Console.WriteLine(e);
+            Console.WriteLine("Pages " + document.Pages.Count);
         }
     }
+    catch (Aspose.Pdf.InvalidPasswordException e)
+    {
+        Console.WriteLine(e);
+    }
+}
 ```

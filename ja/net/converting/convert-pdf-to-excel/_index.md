@@ -1,262 +1,386 @@
 ---
-title: .NETでPDFをExcelに変換
-linktitle: PDFをExcelに変換
+title: PDFをExcelに変換する .NET
+linktitle: PDFをExcelに変換する
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/convert-pdf-to-excel/
 lastmod: "2021-11-01"
-description: Aspose.PDF for .NET ライブラリを使用して、C#を使用してPDFをExcel形式に変換できます。これらの形式には、XLS、XLSX、XML 2003 スプレッドシート、CSV、ODSが含まれます。
+description: Aspose.PDF for .NETライブラリを使用して、C#でPDFをExcel形式に変換できます。これらの形式には、XLS、XLSX、XML 2003スプレッドシート、CSV、ODSが含まれます。
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF to Excel in .NET",
+    "alternativeHeadline": "Convert PDF Files to Excel Formats with C#",
+    "abstract": "Aspose.PDF for .NETの強力な機能を発見し、PDF文書をXLS、XLSX、CSV、ODSなどのさまざまなExcel形式に簡単に変換します。この機能により、個々のPDFページを別々のExcelワークシートに変換するだけでなく、結合シートのオプションも提供され、ユーザーがPDFデータを効率的に管理できる柔軟性が得られます。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1780",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-to-excel/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-to-excel/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDFは、単純で簡単なタスクだけでなく、より複雑な目標にも対応できます。次のセクションでは、上級ユーザーと開発者向けの情報を確認してください。"
+}
+</script>
+
 ## 概要
 
-この記事では、**C#を使用してPDFをExcel形式に変換する方法**について説明します。次のトピックをカバーしています。
+この記事では、**C#を使用してPDFをExcel形式に変換する方法**について説明します。以下のトピックをカバーしています。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
 _形式_: **XLS**
 
-- [C# PDFをXLSに](#csharp-pdf-to-xls)
 - [C# PDFをXLSに変換](#csharp-pdf-to-xls)
+- [C# PDFをXLSに変換する](#csharp-pdf-to-xls)
 - [C# PDFファイルをXLSに変換する方法](#csharp-pdf-to-xls)
 
 _形式_: **XLSX**
 
-- [C# PDFをXLSXに](#csharp-pdf-to-xlsx)
 - [C# PDFをXLSXに変換](#csharp-pdf-to-xlsx)
-- [C# PDFファイルをXLSXに変換する方法](#csharp-pdf-to-xlsx)
+- [C# PDFをXLSXに変換する](#csharp-pdf-to-xlsx)
 - [C# PDFファイルをXLSXに変換する方法](#csharp-pdf-to-xlsx)
 
-_フォーマット_: **Excel**
+_形式_: **Excel**
 
 - [C# PDFをExcelに変換](#csharp-pdf-to-xlsx)
 - [C# PDFをExcel XLSに変換](#csharp-pdf-to-xls)
 - [C# PDFをExcel XLSXに変換](#csharp-pdf-to-xlsx)
 
-_フォーマット_: **シングルExcelワークシート**
+_形式_: **単一Excelワークシート**
 
-- [C# PDFをシングルワークシートがあるXLSに変換](#csharp-pdf-to-excel-single)
-- [C# PDFをシングルワークシートがあるXLSXに変換](#csharp-pdf-to-excel-single)
+- [C# 単一ワークシートを持つPDFをXLSに変換](#csharp-pdf-to-excel-single)
+- [C# 単一ワークシートを持つPDFをXLSXに変換](#csharp-pdf-to-excel-single)
 
-_フォーマット_: **XMLスプレッドシート2003形式**
+_形式_: **XMLスプレッドシート2003形式**
 
 - [C# PDFをXML Excelに変換](#csharp-pdf-to-excel-xml-2003)
 - [C# PDFをXML Excelスプレッドシートに変換](#csharp-pdf-to-excel-xml-2003)
 
-_フォーマット_: **CSV**
+_形式_: **CSV**
 
 - [C# PDFをCSVに変換](#csharp-pdf-to-csv)
-- [C# PDFをCSVに変換する方法](#csharp-pdf-to-csv)
+- [C# PDFをCSVに変換する](#csharp-pdf-to-csv)
+- [C# PDFファイルをCSVに変換する方法](#csharp-pdf-to-csv)
 
-_フォーマット_: **ODS**
+_形式_: **ODS**
 
 - [C# PDFをODSに変換](#csharp-pdf-to-ods)
-- [C# PDFをODSに変換する方法](#csharp-pdf-to-ods)
+- [C# PDFをODSに変換する](#csharp-pdf-to-ods)
+- [C# PDFファイルをODSに変換する方法](#csharp-pdf-to-ods)
 
 ## C# PDFからExcelへの変換
 
-**Aspose.PDF for .NET**はPDFファイルをExcel 2007、CSV、およびSpeadsheetML形式に変換する機能をサポートしています。
-**Aspose.PDF for .NET** は、PDFファイルをExcel 2007、CSV、およびSpeadsheetML形式に変換する機能をサポートしています。
+**Aspose.PDF for .NET**は、PDFファイルをExcel 2007、CSV、SpreadsheetML形式に変換する機能をサポートしています。
 
 Aspose.PDF for .NETはPDF操作コンポーネントであり、PDFファイルをExcelワークブック（XLSXファイル）にレンダリングする機能を導入しました。この変換中に、PDFファイルの個々のページがExcelワークシートに変換されます。
 
 {{% alert color="success" %}}
-**PDFをExcelにオンラインで変換してみる**
+**PDFをExcelにオンラインで変換してみてください**
 
-Aspose.PDF for .NETは、無料のアプリケーション["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)をオンラインで提供しており、機能性や品質を試すことができます。
+Aspose.PDF for .NETは、オンラインの無料アプリケーション["PDF to XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)を提供しており、機能と品質を調査することができます。
 
-[![Aspose.PDF Convertion PDF to Excel with Free App](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
+[![Aspose.PDF PDFをExcelに変換する無料アプリ](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}
 
-PDFファイルを<abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)というクラスがあります。
-PDFファイルを<abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)というクラスがあります。
+PDFファイルを<abbr title="Microsoft Excel Open XML Spreadsheet">XLSX</abbr>形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)というクラスがあります。ExcelSaveOptionsクラスのオブジェクトは、Document.Save(..)コンストラクタの第二引数として渡されます。
 
-以下のコードスニペットは、Aspose.PDF for .NETを使用してPDFファイルをXLSまたはXLSX形式に変換するプロセスを示しています。
+次のコードスニペットは、Aspose.PDF for .NETを使用してPDFファイルをXLSまたはXLSX形式に変換するプロセスを示しています。
 
-<a name="csharp-pdf-to-xls"><strong>手順: C#でPDFをXLSに変換</strong></a>
+<a name="csharp-pdf-to-xls"><strong>手順: C#でPDFをXLSに変換する</strong></a>
 
-1. ソースPDFドキュメントで**Document**オブジェクトのインスタンスを作成します。
+1. ソースPDF文書を使用して**Document**オブジェクトのインスタンスを作成します。
 2. **ExcelSaveOptions**のインスタンスを作成します。
-3. **Document.Save()** メソッドを呼び出し、**ExcelSaveOptions**を渡すことで、**.xls拡張子**を指定して**XLS**形式で保存します。
+3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡して、**.xls拡張子**を指定して**XLS**形式で保存します。
 
-<a name="csharp-pdf-to-xlsx"><strong>手順: C#でPDFをXLSXに変換</strong></a>
+<a name="csharp-pdf-to-xlsx"><strong>手順: C#でPDFをXLSXに変換する</strong></a>
 
-1. ソースPDFドキュメントで**Document**オブジェクトのインスタンスを作成します。
+1. ソースPDF文書を使用して**Document**オブジェクトのインスタンスを作成します。
 2. **ExcelSaveOptions**のインスタンスを作成します。
-3. **Document.Save()** メソッドを呼び出し、**ExcelSaveOptions**を渡すことで、**.xlsx拡張子**を指定して**XLSX**形式で保存します。
+3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡して、**.xlsx拡張子**を指定して**XLSX**形式で保存します。
 
 ```csharp
-```csharp
-// 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ private static void ConvertPDFtoExcel()
+ {
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// PDFドキュメントを読み込む
-Document pdfDocument = new Document(dataDir + "input.pdf");
+     // Open PDF document
+     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+     {
+         // Instantiate ExcelSaveOptions object
+         var saveOptions = new Aspose.Pdf.ExcelSaveOptions();
 
-// ExcelSave Option オブジェクトをインスタンス化する
-Aspose.Pdf.ExcelSaveOptions excelsave = new Aspose.Pdf.ExcelSaveOptions();
-
-// 出力をXLS形式で保存する
-pdfDocument.Save("PDFToXLS_out.xlsx", excelsave);
+         // Save the file in XLSX format
+         document.Save(dataDir + "PDFToXLS_out.xlsx", saveOptions);
+     }
+ }
 ```
 
-## PDFをXLSに変換する際の制御列
+## コントロール列を持つPDFをXLSに変換
 
-PDFをXLS形式に変換するとき、出力ファイルの最初の列として空白の列が追加されます。これを制御するためにExcelSaveOptionsクラスのInsertBlankColumnAtFirstオプションを使用します。デフォルト値は`false`で、これは空白の列が挿入されないことを意味します。
+PDFをXLS形式に変換する際、出力ファイルの最初の列に空白の列が追加されます。この列を制御するために、ExcelSaveOptionsクラスのInsertBlankColumnAtFirstオプションが使用されます。デフォルト値は`false`であり、空白の列は挿入されません。
 
 ```csharp
-public static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoExcelAdvanced_InsertBlankColumnAtFirst()
 {
-    // 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-    // PDFドキュメントを読み込む
-    Document pdfDocument = new Document(_dataDir + "input.pdf");
-    // ExcelSave Option オブジェクトをインスタンス化する
-    Aspose.Pdf.ExcelSaveOptions excelsave = new Aspose.Pdf.ExcelSaveOptions {InsertBlankColumnAtFirst = false};
-    // 出力をXLS形式で保存する
-    pdfDocument.Save("PDFToXLS_out.xlsx", excelsave);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            InsertBlankColumnAtFirst = false
+        };
+
+        // Save the file in XLSX format
+        document.Save(dataDir + "PDFToXLS_out.xlsx", saveOptions);
+    }
 }
 ```
-## PDFを単一のExcelワークシートに変換する
 
-PDFファイルに多くのページが含まれている場合、XLSへのエクスポートでは、各ページがExcelファイルの異なるシートにエクスポートされます。これは、MinimizeTheNumberOfWorksheetsプロパティがデフォルトでfalseに設定されているためです。出力Excelファイルのすべてのページが1つのシートにエクスポートされるようにするには、MinimizeTheNumberOfWorksheetsプロパティをtrueに設定します。
+## PDFを単一Excelワークシートに変換
+
+多くのページを持つPDFファイルをXLSにエクスポートする場合、各ページはExcelファイルの異なるシートにエクスポートされます。これは、MinimizeTheNumberOfWorksheetsプロパティがデフォルトでfalseに設定されているためです。出力Excelファイルの1つのシートにすべてのページをエクスポートするには、MinimizeTheNumberOfWorksheetsプロパティをtrueに設定します。
 
 <a name="csharp-pdf-to-excel-single"><strong>手順: C#でPDFをXLSまたはXLSXの単一ワークシートに変換する</strong></a>
 
-1. ソースPDFドキュメントで**Document**オブジェクトのインスタンスを作成します。
-2. **MinimizeTheNumberOfWorksheets = true**で**ExcelSaveOptions**のインスタンスを作成します。
-3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡すことで、単一ワークシートを持つ**XLS**または**XLSX**形式で保存します。
+1. ソースPDF文書を使用して**Document**オブジェクトのインスタンスを作成します。
+2. **MinimizeTheNumberOfWorksheets = true**を指定して**ExcelSaveOptions**のインスタンスを作成します。
+3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡して、単一ワークシートを持つ**XLS**または**XLSX**形式で保存します。
 
 ```csharp
-public static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoExcelAdvanced_MinimizeTheNumberOfWorksheets()
 {
-    // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください
-    // PDFドキュメントをロード
-    Document pdfDocument = new Document(_dataDir + "input.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // ExcelSaveオプションオブジェクトのインスタンス化
-    Aspose.Pdf.ExcelSaveOptions excelsave = new ExcelSaveOptions {MinimizeTheNumberOfWorksheets = true};
-    // 出力をXLS形式で保存
-    pdfDocument.Save("PDFToXLS_out.xlsx", excelsave);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            MinimizeTheNumberOfWorksheets = true
+        };
+
+        // Save the file in XLSX format
+        document.Save(dataDir + "PDFToXLS_out.xlsx", saveOptions);
+    }
 }
 ```
-## 他のスプレッドシート形式に変換する
+
+## 他のスプレッドシート形式に変換
 
 ### XMLスプレッドシート2003形式に変換
 
-バージョン20.8以降、Aspose.PDFはデータ格納のデフォルトとしてMicrosoft Excel Open XML Spreadsheet 2007ファイル形式を使用しています。PDFファイルをXMLスプレッドシート2003形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)クラスがあり、[Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format)プロパティがあります。[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)クラスのオブジェクトを[Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として渡します。
+バージョン20.8以降、Aspose.PDFはデフォルトでMicrosoft Excel Open XMLスプレッドシート2007ファイル形式を使用してデータを保存します。PDFファイルをXMLスプレッドシート2003形式に変換するために、Aspose.PDFには[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)というクラスがあり、[Format](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions/properties/format)があります。[ExcelSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/excelsaveoptions)クラスのオブジェクトは、[Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)メソッドの第二引数として渡されます。
 
 次のコードスニペットは、PDFファイルをXLS Excel 2003 XML形式に変換するプロセスを示しています。
 
 <a name="csharp-pdf-to-excel-xml-2003"><strong>手順: C#でPDFをExcel 2003 XML形式に変換する</strong></a>
 
-1. ソースPDFドキュメントを持つ**Document**オブジェクトのインスタンスを作成します。
-2.
-2.
-3. **Document.Save()** メソッドを呼び出し、**ExcelSaveOptions** を渡して **XLS - Excel 2003 XML Format** 形式で保存します。
+1. ソースPDF文書を使用して**Document**オブジェクトのインスタンスを作成します。
+2. **Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003**を指定して**ExcelSaveOptions**のインスタンスを作成します。
+3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡して**XLS - Excel 2003 XML形式**で保存します。
 
 ```csharp
-public static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
+  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ private static void ConvertPDFtoExcelAdvanced_SaveXLS2003()
+ {
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+     // Open PDF document
+     using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+     {
+         // Instantiate ExcelSaveOptions object
+         var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+         {
+             Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003
+         };
+
+         // Save the file in XLS format
+         document.Save(dataDir + "PDFToXLS_out.xls", saveOptions);
+     }
+ }
+```
+
+### CSVに変換
+
+CSV形式への変換は、上記と同様に行われます。必要なことは、適切な形式を設定することだけです。
+
+<a name="csharp-pdf-to-csv"><strong>手順: C#でPDFをCSVに変換する</strong></a>
+
+1. ソースPDF文書を使用して**Document**オブジェクトのインスタンスを作成します。
+2. **Format = ExcelSaveOptions.ExcelFormat.CSV**を指定して**ExcelSaveOptions**のインスタンスを作成します。
+3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡して**CSV**形式で保存します。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToCSV()
 {
-    // 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // PDF文書をロード
-    Document pdfDocument = new Document(_dataDir + "input.pdf");
-
-    // ExcelSave Option オブジェクトをインスタンス化
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.XMLSpreadSheet2003 };
-
-    // 出力をXLS形式で保存
-    pdfDocument.Save("PDFToXLS_out.xls", excelSave);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.CSV
+        };
+        
+        // Save the file in CSV format
+        document.Save(dataDir + "PDFToXLS_out.csv", saveOptions);
+    }
 }
 ```
 
-### CSVへの変換
+### ODSに変換
 
-CSV形式への変換は上記と同じ方法で行います。必要なのは適切な形式を設定することです。
+<a name="csharp-pdf-to-ods"><strong>手順: C#でPDFをODSに変換する</strong></a>
 
-<a name="csharp-pdf-to-csv"><strong>手順: C#でPDFをCSVに変換</strong></a>
+1. ソースPDF文書を使用して**Document**オブジェクトのインスタンスを作成します。
+2. **Format = ExcelSaveOptions.ExcelFormat.ODS**を指定して**ExcelSaveOptions**のインスタンスを作成します。
+3. **Document.Save()**メソッドを呼び出し、**ExcelSaveOptions**を渡して**ODS**形式で保存します。
 
-1. ソースPDF文書を持つ **Document** オブジェクトのインスタンスを作成します。
-2.
-**CSV形式で保存する**
-
-**Document.Save()** メソッドを呼び出し、**ExcelSaveOptions** を渡すことによって、**CSV** 形式で保存します。
+ODS形式への変換は、他のすべての形式と同様に行われます。
 
 ```csharp
- // ExcelSaveオプションオブジェクトをインスタンス化
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.CSV };
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToODS()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Instantiate ExcelSaveOptions object
+        var saveOptions = new Aspose.Pdf.ExcelSaveOptions
+        {
+            Format = Aspose.Pdf.ExcelSaveOptions.ExcelFormat.ODS
+        };
+
+        // Save the file in ODS format
+        document.Save(dataDir + "PDFToODS_out.ods", saveOptions);
+    }
+}
 ```
 
-### ODSへ変換
+## 参照
 
-<a name="csharp-pdf-to-ods"><strong>手順: C#でPDFをODSに変換</strong></a>
+この記事では、これらのトピックもカバーしています。コードは上記と同じです。
 
-1. ソースPDFドキュメントで **Document** オブジェクトのインスタンスを作成します。
-2. **Format = ExcelSaveOptions.ExcelFormat.ODS** で **ExcelSaveOptions** のインスタンスを作成します。
-3. **Document.Save()** メソッドを呼び出し、**ExcelSaveOptions** を渡して **ODS** 形式で保存します。
+_形式_: **Excel**
+- [C# PDFをExcelに変換するコード](#csharp-pdf-to-xlsx)
+- [C# PDFをExcelに変換するAPI](#csharp-pdf-to-xlsx)
+- [C# PDFをExcelにプログラムで変換する](#csharp-pdf-to-xlsx)
+- [C# PDFをExcelに変換するライブラリ](#csharp-pdf-to-xlsx)
+- [C# PDFをExcelとして保存する](#csharp-pdf-to-xlsx)
+- [C# PDFからExcelを生成する](#csharp-pdf-to-xlsx)
+- [C# PDFからExcelを作成する](#csharp-pdf-to-xlsx)
+- [C# PDFをExcelに変換するコンバータ](#csharp-pdf-to-xlsx)
 
-ODS形式への変換は、他のすべての形式と同じ方法で行います。
+_形式_: **XLS**
+- [C# PDFをXLSに変換するコード](#csharp-pdf-to-xls)
+- [C# PDFをXLSに変換するAPI](#csharp-pdf-to-xls)
+- [C# PDFをXLSにプログラムで変換する](#csharp-pdf-to-xls)
+- [C# PDFをXLSに変換するライブラリ](#csharp-pdf-to-xls)
+- [C# PDFをXLSとして保存する](#csharp-pdf-to-xls)
+- [C# PDFからXLSを生成する](#csharp-pdf-to-xls)
+- [C# PDFからXLSを作成する](#csharp-pdf-to-xls)
+- [C# PDFをXLSに変換するコンバータ](#csharp-pdf-to-xls)
 
-```csharp
- // ExcelSaveオプションオブジェクトをインスタンス化
-    ExcelSaveOptions excelSave = new ExcelSaveOptions { Format = ExcelSaveOptions.ExcelFormat.ODS };
-```
+_形式_: **XLSX**
+- [C# PDFをXLSXに変換するコード](#csharp-pdf-to-xlsx)
+- [C# PDFをXLSXに変換するAPI](#csharp-pdf-to-xlsx)
+- [C# PDFをXLSXにプログラムで変換する](#csharp-pdf-to-xlsx)
+- [C# PDFをXLSXに変換するライブラリ](#csharp-pdf-to-xlsx)
+- [C# PDFをXLSXとして保存する](#csharp-pdf-to-xlsx)
+- [C# PDFからXLSXを生成する](#csharp-pdf-to-xlsx)
+- [C# PDFからXLSXを作成する](#csharp-pdf-to-xlsx)
+- [C# PDFをXLSXに変換するコンバータ](#csharp-pdf-to-xlsx)
 
-## 参照 
+_形式_: **CSV**
+- [C# PDFをCSVに変換するコード](#csharp-pdf-to-csv)
+- [C# PDFをCSVに変換するAPI](#csharp-pdf-to-csv)
+- [C# PDFをCSVにプログラムで変換する](#csharp-pdf-to-csv)
+- [C# PDFをCSVに変換するライブラリ](#csharp-pdf-to-csv)
+- [C# PDFをCSVとして保存する](#csharp-pdf-to-csv)
+- [C# PDFからCSVを生成する](#csharp-pdf-to-csv)
+- [C# PDFからCSVを作成する](#csharp-pdf-to-csv)
+- [C# PDFをCSVに変換するコンバータ](#csharp-pdf-to-csv)
 
-この記事では、上記と同じコードで以下のトピックもカバーしています。
-
-_フォーマット_: **Excel**
-- [C# PDF to Excel Code](#csharp-pdf-to-xlsx)
-- [C# PDF to Excel API](#csharp-pdf-to-xlsx)
-- [C# PDFからExcelへのAPI](#csharp-pdf-to-xlsx)
-- [C# プログラムでPDFからExcelへ](#csharp-pdf-to-xlsx)
-- [C# PDFからExcelへのライブラリ](#csharp-pdf-to-xlsx)
-- [C# PDFをExcelとして保存](#csharp-pdf-to-xlsx)
-- [C# PDFからExcelを生成](#csharp-pdf-to-xlsx)
-- [C# PDFからExcelを作成](#csharp-pdf-to-xlsx)
-- [C# PDFからExcelへのコンバータ](#csharp-pdf-to-xlsx)
-
-_Format_: **XLS**
-- [C# PDFからXLSコード](#csharp-pdf-to-xls)
-- [C# PDFからXLSへのAPI](#csharp-pdf-to-xls)
-- [C# プログラムでPDFからXLSへ](#csharp-pdf-to-xls)
-- [C# PDFからXLSへのライブラリ](#csharp-pdf-to-xls)
-- [C# PDFをXLSとして保存](#csharp-pdf-to-xls)
-- [C# PDFからXLSを生成](#csharp-pdf-to-xls)
-- [C# PDFからXLSを作成](#csharp-pdf-to-xls)
-- [C# PDFからXLSへのコンバータ](#csharp-pdf-to-xls)
-
-_Format_: **XLSX**
-- [C# PDFからXLSXコード](#csharp-pdf-to-xlsx)
-- [C# PDFからXLSXへのAPI](#csharp-pdf-to-xlsx)
-- [C# プログラムでPDFからXLSXへ](#csharp-pdf-to-xlsx)
-- [C# PDFからXLSXへのライブラリ](#csharp-pdf-to-xlsx)
-- [C# PDFをXLSXとして保存](#csharp-pdf-to-xlsx)
-- [C# PDFからXLSXを生成](#csharp-pdf-to-xlsx)
-- [C# PDFからXLSXを生成](#csharp-pdf-to-xlsx)
-- [C# PDFからXLSXを作成](#csharp-pdf-to-xlsx)
-- [C# PDFからXLSXへのコンバータ](#csharp-pdf-to-xlsx)
-
-_Format_: **CSV**
-- [C# PDFからCSVコード](#csharp-pdf-to-csv)
-- [C# PDFからCSV API](#csharp-pdf-to-csv)
-- [C# プログラムによるPDFからCSVへの変換](#csharp-pdf-to-csv)
-- [C# PDFからCSVライブラリ](#csharp-pdf-to-csv)
-- [C# PDFをCSVとして保存](#csharp-pdf-to-csv)
-- [C# PDFからCSVを生成](#csharp-pdf-to-csv)
-- [C# PDFからCSVを作成](#csharp-pdf-to-csv)
-- [C# PDFからCSVへのコンバータ](#csharp-pdf-to-csv)
-
-_Format_: **ODS**
-- [C# PDFからODSコード](#csharp-pdf-to-ods)
-- [C# PDFからODS API](#csharp-pdf-to-ods)
-- [C# プログラムによるPDFからODSへの変換](#csharp-pdf-to-ods)
-- [C# PDFからODSライブラリ](#csharp-pdf-to-ods)
-- [C# PDFをODSとして保存](#csharp-pdf-to-ods)
-- [C# PDFからODSを生成](#csharp-pdf-to-ods)
-- [C# PDFからODSを作成](#csharp-pdf-to-ods)
-- [C# PDFからODSへのコンバータ](#csharp-pdf-to-ods)
+_形式_: **ODS**
+- [C# PDFをODSに変換するコード](#csharp-pdf-to-ods)
+- [C# PDFをODSに変換するAPI](#csharp-pdf-to-ods)
+- [C# PDFをODSにプログラムで変換する](#csharp-pdf-to-ods)
+- [C# PDFをODSに変換するライブラリ](#csharp-pdf-to-ods)
+- [C# PDFをODSとして保存する](#csharp-pdf-to-ods)
+- [C# PDFからODSを生成する](#csharp-pdf-to-ods)
+- [C# PDFからODSを作成する](#csharp-pdf-to-ods)
+- [C# PDFをODSに変換するコンバータ](#csharp-pdf-to-ods)

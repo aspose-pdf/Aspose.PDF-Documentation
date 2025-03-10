@@ -1,35 +1,41 @@
 ---
-title: オペレーターの使用
-linktitle: オペレーターの使用
+title: 演算子の使用
+linktitle: 演算子の使用
 type: docs
-weight: 170
-url: /ja/net/operators/
-description: Aspose.PDFでオペレーターを使用する方法について説明します。オペレータークラスは、PDF操作のための優れた機能を提供します。
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 90
+url: /ja/net/working-with-operators/
+description: このトピックでは、Aspose.PDFで演算子を使用する方法について説明します。演算子クラスはPDF操作のための優れた機能を提供します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-operators/
+    - /net/operator/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "オペレーターの使用",
-    "alternativeHeadline": "PDFオペレーターの使用方法",
+    "headline": "Working with Operators",
+    "alternativeHeadline": "Empowered PDF Manipulation with Operators Integration",
+    "abstract": "Aspose.PDF for .NETの演算子機能は、ユーザーが画像の追加やグラフィックスの削除などのタスクに特定の演算子クラスを利用できるようにすることで、PDF操作能力を向上させます。この機能は、PDF内のグラフィカル要素とその状態を定義するプロセスを簡素化し、開発者に文書編集と処理のための強力なツールを提供します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, pdf内のオペレーター, PDFオペレーターの使用",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "operators, Aspose.PDF, PDF manipulation, GSave operator, ConcatenateMatrix operator, Do operator, GRestore operator, graphics state, remove graphics",
+    "wordcount": "1233",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,179 +72,207 @@ sitemap:
             }
         ]
     },
-    "url": "/net/operators/",
+    "url": "/net/working-with-operators/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/operators/"
+        "@id": "/net/working-with-operators/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDFでオペレーターを使用する方法について説明します。オペレータークラスは、PDF操作のための優れた機能を提供します。"
+    "dateModified": "2024-11-26",
+    "description": "このトピックでは、Aspose.PDFで演算子を使用する方法について説明します。演算子クラスはPDF操作のための優れた機能を提供します。"
 }
 </script>
 
-## PDFオペレーターとその使用法の紹介
+## PDF演算子の紹介とその使用法
 
-オペレーターは、ページにグラフィカルな形状を描画するなど、実行されるべきいくつかのアクションを指定するPDFキーワードです。オペレーターキーワードは、初期のソリダス文字（2Fh）がないことで名前付きオブジェクトと区別されます。オペレーターはコンテンツストリーム内でのみ意味を持ちます。
+演算子は、ページ上にグラフィカルな形状を描画するなど、実行されるべきアクションを指定するPDFキーワードです。演算子キーワードは、初期のスラッシュ文字（2Fh）がないことで名前付きオブジェクトと区別されます。演算子はコンテンツストリーム内でのみ意味を持ちます。
 
-コンテンツストリームは、ページに描画されるグラフィカル要素を記述する指示が含まれているPDFストリームオブジェクトです。PDFオペレーターの詳細については、[PDF仕様](https://opensource.adobe.com/dc-acrobat-sdk-docs/)で見ることができます。
+コンテンツストリームは、ページ上に描画されるグラフィカル要素を説明する命令からなるデータを持つPDFストリームオブジェクトです。PDF演算子に関する詳細は、[PDF仕様](https://opensource.adobe.com/dc-acrobat-sdk-docs/)で確認できます。
 
 ### 実装の詳細
 
-このトピックでは、Aspose.PDFでオペレーターを使用する方法について説明します。
-このトピックでは、Aspose.PDFで演算子を使用する方法について説明します。
+このトピックでは、Aspose.PDFで演算子を使用する方法について説明します。選択された例では、概念を示すためにPDFファイルに画像を追加します。PDFファイルに画像を追加するには、異なる演算子が必要です。この例では、[GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28)、[ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10)、[Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14)、および[GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26)を使用します。
 
-- **GSave** 演算子は、PDFの現在のグラフィカル状態を保存します。
-- **ConcatenateMatrix** （連結行列）演算子は、画像がPDFページにどのように配置されるかを定義するために使用されます。
-- **Do** 演算子は、ページ上に画像を描画します。
-- **GRestore** 演算子は、グラフィカル状態を復元します。
+- **GSave**演算子は、PDFの現在のグラフィカル状態を保存します。
+- **ConcatenateMatrix**（行列を連結する）演算子は、画像がPDFページにどのように配置されるかを定義するために使用されます。
+- **Do**演算子は、ページ上に画像を描画します。
+- **GRestore**演算子は、グラフィカル状態を復元します。
 
 PDFファイルに画像を追加するには：
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) オブジェクトを作成し、入力PDFドキュメントを開きます。
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトを作成し、入力PDF文書を開きます。
 1. 画像を追加する特定のページを取得します。
-1. 画像をページのResourcesコレクションに追加します。
-1. 演算子を使用してページに画像を配置します：
-   - まず、GSave 演算子を使用して現在のグラフィカル状態を保存します。
-   - 次に、ConcatenateMatrix 演算子を使用して画像が配置される位置を指定します。
-   - Do 演算子を使用してページに画像を描画します。
-1. 最後に、GRestore 演算子を使用して更新されたグラフィカル状態を保存します。
+1. ページのリソースコレクションに画像を追加します。
+1. 演算子を使用してページ上に画像を配置します：
+   - 最初に、GSave演算子を使用して現在のグラフィカル状態を保存します。
+   - 次に、ConcatenateMatrix演算子を使用して画像を配置する位置を指定します。
+   - Do演算子を使用してページ上に画像を描画します。
+1. 最後に、GRestore演算子を使用して更新されたグラフィカル状態を保存します。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
-以下のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリと一緒に使用できます。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
-以下のコードスニペットは、PDFオペレーターの使用方法を示しています。
-
-```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
-
-// ドキュメントを開く
-Document pdfDocument = new Document(dataDir+ "PDFOperators.pdf");
-
-// 座標を設定
-int lowerLeftX = 100;
-int lowerLeftY = 100;
-int upperRightX = 200;
-int upperRightY = 200;
-
-// 画像を追加するページを取得
-Page page = pdfDocument.Pages[1];
-// 画像をストリームにロード
-FileStream imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open);
-// ページリソースのイメージコレクションに画像を追加
-page.Resources.Images.Add(imageStream);
-// GSaveオペレーターを使用：このオペレーターは現在のグラフィックス状態を保存します
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-// RectangleとMatrixオブジェクトを作成
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
-// ConcatenateMatrix（マトリックスの連結）オペレーターを使用：画像がどのように配置されるかを定義
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
-XImage ximage = page.Resources.Images[page.Resources.Images.Count];
-// Doオペレーターを使用：このオペレーターは画像を描画します
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-// GRestoreオペレーターを使用：このオペレーターはグラフィックス状態を復元します
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-dataDir = dataDir + "PDFOperators_out.pdf";
-// 更新されたドキュメントを保存
-pdfDocument.Save(dataDir);
-```
-## ページ上にXFormを描画するためのオペレーターの使用
-
-このトピックでは、GSave/GRestoreオペレーター、ContatenateMatrixオペレーターを使用してxFormの位置を指定し、Doオペレーターを使用してページ上にxFormを描画する方法を示します。
-
-以下のコードは、PDFファイルの既存の内容をGSave/GRestoreオペレーターペアでラップします。このアプローチは、既存の内容の最後で初期グラフィックス状態を取得するのに役立ちます。このアプローチがない場合、望ましくない変換が既存のオペレーターチェーンの最後に残る可能性があります。
+以下のコードスニペットは、PDF演算子の使用方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
-
-string imageFile = dataDir+ "aspose-logo.jpg";
-string inFile = dataDir + "DrawXFormOnPage.pdf";
-string outFile = dataDir + "blank-sample2_out.pdf";
-
-using (Document doc = new Document(inFile))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageUsingPDFOperators()
 {
-    OperatorCollection pageContents = doc.Pages[1].Contents;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // サンプルは以下を示しています
-    // GSave/GRestoreオペレーターの使用
-    // xFormの位置指定にContatenateMatrixオペレーターを使用
-    // ページにxFormを描画するためにDoオペレーターを使用
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFOperators.pdf"))
+    {
+        // Set coordinates for the image placement
+        int lowerLeftX = 100;
+        int lowerLeftY = 100;
+        int upperRightX = 200;
+        int upperRightY = 200;
 
-    // 既存の内容をGSave/GRestoreオペレーターペアでラップ
-    //        これは既存の内容の最後で初期グラフィックス状態を取得するためです
-    //        それ以外の場合、望ましくない変換が既存のオペレーターチェーンの最後に残る可能性があります
-    pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Get the page where the image needs to be added
+        var page = document.Pages[1];
 
-    // 新しいコマンドの後でグラフィックス状態を適切にクリアするために、グラフィックス状態の保存オペレータを追加
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        // Load the image into a file stream
+        using (var imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open))
+        {
+            // Add the image to the page's Resources collection
+            page.Resources.Images.Add(imageStream);
+        }
 
-    #region create xForm
+        // Save the current graphics state using the GSave operator
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
 
-    // xFormを作成
-    XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
-    doc.Pages[1].Resources.Forms.Add(form);
-    form.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    // 画像の幅と高さを定義
-    form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
-    // 画像をストリームに読み込む
-    Stream imageStream = new FileStream(imageFile, FileMode.Open);
-    // 画像をXFormリソースの画像コレクションに追加
-    form.Resources.Images.Add(imageStream);
-    XImage ximage = form.Resources.Images[form.Resources.Images.Count];
-    // Doオペレーターを使用: このオペレーターは画像を描画します
-    form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-    form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Create a rectangle and matrix for positioning the image
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0,
+            0, rectangle.URY - rectangle.LLY,
+            rectangle.LLX, rectangle.LLY
+        });
 
-    #endregion
+        // Define how the image must be placed using the ConcatenateMatrix operator
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-    // x=100 y=500の座標にフォームを配置
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
-    // Doオペレーターを使用してフォームを描画
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Get the image from the Resources collection
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-    // x=100 y=300の座標にフォームを配置
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
-    // Doオペレーターを使用してフォームを描画
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore();
+        // Draw the image using the Do operator
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
 
-    // GSaveの後でグラフィックス状態をGRestoreで復元
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
-    doc.Save(outFile);
+        // Restore the graphics state using the GRestore operator
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save PDF document
+        document.Save(dataDir + "PDFOperators_out.pdf");
+    }
 }
 ```
-## オペレータクラスを使用してグラフィックオブジェクトを削除する
 
-オペレータクラスは、PDF操作に優れた機能を提供します。PDFファイルに[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor) クラスの [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) メソッドを使用して削除できないグラフィックが含まれている場合、代わりにオペレータクラスを使用して削除できます。
+## 演算子を使用してページにXFormを描画する
 
-次のコードスニペットは、グラフィックを削除する方法を示しています。PDFファイルにグラフィックのテキストラベルが含まれている場合、このアプローチを使用すると、PDFファイルにラベルが残る可能性があるため、そのような画像を削除する代替方法としてグラフィックオペレーターを探してください。
+このトピックでは、GSave/GRestore演算子、XFormを配置するためのConcatenateMatrix演算子、およびページにXFormを描画するためのDo演算子の使用方法を示します。
+
+以下のコードは、PDFファイルの既存の内容をGSave/GRestore演算子ペアでラップします。このアプローチは、既存の内容の最後で初期のグラフィックス状態を取得するのに役立ちます。このアプローチがないと、望ましくない変換が既存の演算子チェーンの最後に残る可能性があります。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DrawXFormOnPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document doc = new Document(dataDir+ "RemoveGraphicsObjects.pdf");
-Page page = doc.Pages[2];
-OperatorCollection oc = page.Contents;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DrawXFormOnPage.pdf"))
+    {
+        var pageContents = document.Pages[1].Contents;
 
-// 使用されるパスペイントオペレータ
-Operator[] operators = new Operator[] {
-        new Aspose.Pdf.Operators.Stroke(),
-        new Aspose.Pdf.Operators.ClosePathStroke(),
-        new Aspose.Pdf.Operators.Fill()
-};
+        // Wrap existing contents with GSave/GRestore operators to preserve graphics state
+        pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
-oc.Delete(operators);
-doc.Save(dataDir+ "No_Graphics_out.pdf");
+        // Add GSave operator to start new graphics state
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Create an XForm
+        var form = Aspose.Pdf.XForm.CreateNewForm(document.Pages[1], document);
+        document.Pages[1].Resources.Forms.Add(form);
+
+        form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+        // Define image width and height
+        form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
+
+        // Load image into stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the XForm's resources
+            form.Resources.Images.Add(imageStream);
+        }
+
+        var ximage = form.Resources.Images[form.Resources.Images.Count];
+        // Draw the image on the XForm
+        form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+        form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Place and draw the XForm at two different coordinates
+
+        // Draw the XForm at (100, 500)
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
+        pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Draw the XForm at (100, 300)
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
+        pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Restore graphics state
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save PDF document
+        document.Save(dataDir + "DrawXFormOnPage_out.pdf");
+    }
+}
+```
+
+## 演算子クラスを使用してグラフィックスオブジェクトを削除する
+
+演算子クラスは、PDF操作のための優れた機能を提供します。PDFファイルに、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)クラスの[DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage)メソッドを使用して削除できないグラフィックスが含まれている場合、演算子クラスを使用してそれらを削除できます。
+
+以下のコードスニペットは、グラフィックスを削除する方法を示しています。PDFファイルにグラフィックスのテキストラベルが含まれている場合、このアプローチを使用すると、それらがPDFファイルに残る可能性があることに注意してください。したがって、グラフィック演算子を検索して、そのような画像を削除するための代替方法を探してください。
+
+```csharp
+  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+  private static void RemoveGraphicsObjects()
+  {
+      // The path to the documents directory
+      var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+      // Open PDF document
+      using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphicsObjects.pdf"))
+      {
+          // Get the specific page (page 2 in this case)
+          var page = document.Pages[2];
+
+          // Get the operator collection from the page contents
+          var oc = page.Contents;
+
+          // Define the path-painting operators to be removed
+          var operators = new Aspose.Pdf.Operator[]
+          {
+              new Aspose.Pdf.Operators.Stroke(),
+              new Aspose.Pdf.Operators.ClosePathStroke(),
+              new Aspose.Pdf.Operators.Fill()
+          };
+
+          // Delete the specified operators from the page contents
+          oc.Delete(operators);
+
+          // Save PDF document
+          document.Save(dataDir + "NoGraphics_out.pdf");
+      }
+  }
 ```
 
 <script type="application/ld+json">
@@ -267,23 +301,23 @@ doc.Save(dataDir+ "No_Graphics_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -292,7 +326,7 @@ doc.Save(dataDir+ "No_Graphics_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -304,5 +338,3 @@ doc.Save(dataDir+ "No_Graphics_out.pdf");
     }
 }
 </script>
-```
-

@@ -1,10 +1,12 @@
 ---
-title: XFDF形式で注釈のインポートとエクスポート
-linktitle: XFDF形式で注釈のインポートとエクスポート
+title: XFDFへの注釈のインポートとエクスポート
+linktitle: XFDFへの注釈のインポートとエクスポート
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ja/net/import-export-xfdf/
-description: C#およびAspose.PDF for .NETライブラリを使用して、XFDF形式で注釈をインポートおよびエクスポートできます。
+description: C#とAspose.PDF for .NETライブラリを使用して、XFDF形式で注釈をインポートおよびエクスポートできます。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "XFDF形式で注釈のインポートとエクスポート",
-    "alternativeHeadline": "XFDFファイルへの注釈データのインポートとエクスポート方法",
+    "headline": "Import and Export Annotations to XFDF",
+    "alternativeHeadline": "Effortless XFDF Annotation Import and Export",
+    "abstract": "Aspose.PDF for .NETライブラリのXFDFに対する新しいインポートおよびエクスポート機能は、注釈データのシームレスな転送を可能にすることでPDF文書管理を強化します。この機能により、ユーザーはXFDFファイルから注釈を簡単に統合し、再度エクスポートすることができ、PDFフォームの効率的なデータ交換およびアーカイブ機能を促進します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, import export to XFDF",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Import Annotations, Export Annotations, XFDF Format, Aspose.PDF for .NET, PdfAnnotationEditor, ImportAnnotationFromXfdf, ExportAnnotationsXfdf, PDF Forms Manipulation",
+    "wordcount": "670",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,115 +74,114 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/import-export-xfdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#およびAspose.PDF for .NETライブラリを使用して、XFDF形式で注釈をインポートおよびエクスポートできます。"
+    "dateModified": "2024-11-25",
+    "description": "C#とAspose.PDF for .NETライブラリを使用して、XFDF形式で注釈をインポートおよびエクスポートできます。"
 }
 </script>
 
 {{% alert color="primary" %}}
 
-XFDFはXML Forms Data Formatの略です。これはXMLベースのファイル形式です。このファイル形式は、PDFフォームに含まれるフォームデータまたは注釈を表すために使用されます。XFDFはさまざまな目的で使用できますが、この場合、他のコンピューターやサーバー等へのフォームデータや注釈の送受信、またはフォームデータや注釈のアーカイブのために使用できます。この記事では、Aspose.Pdf.Facadesがこのコンセプトをどのように考慮しているか、そしてXFDFファイルへの注釈データのインポートとエクスポートをどのように行うかを見ていきます。
+XFDFはXMLフォームデータ形式を表します。これはXMLベースのファイル形式です。このファイル形式は、PDFフォームに含まれるフォームデータや注釈を表現するために使用されます。XFDFはさまざまな目的で使用できますが、私たちのケースでは、他のコンピュータやサーバーにフォームデータや注釈を送信または受信するために使用したり、フォームデータや注釈をアーカイブするために使用したりできます。この記事では、Aspose.Pdf.Facadesがこの概念をどのように考慮し、注釈データをXFDFファイルにインポートおよびエクスポートする方法を見ていきます。
 
 {{% /alert %}}
 
-**Aspose.PDF for .NET**はPDFドキュメントの編集に関しては機能豊富なコンポーネントです。XFDFはPDFフォーム操作の重要な側面であることを考慮して、Aspose.PDF for .NETのAspose.Pdf.Facades名前空間はこれを非常によく考慮しており、XFDFファイルへの注釈データのインポートとエクスポートの方法を提供しています。
+**Aspose.PDF for .NET**は、PDF文書の編集に関して機能が豊富なコンポーネントです。XFDFはPDFフォーム操作の重要な側面であることから、Aspose.PDF for .NETのAspose.Pdf.Facades名前空間はこれを非常によく考慮し、XFDFファイルに注釈データをインポートおよびエクスポートするためのメソッドを提供しています。
 
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) クラスには、XFDFファイルへの注釈のインポートとエクスポートを行うための2つのメソッドが含まれています。
-[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) クラスには、XFDFファイルへの注釈のインポートとエクスポートを操作するための2つのメソッドが含まれています。
+[PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor)クラスには、XFDFファイルへの注釈のインポートとエクスポートに関する2つのメソッドがあります。[ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index)メソッドは、PDF文書からXFDFファイルに注釈をエクスポートする機能を提供し、[ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index)メソッドは、既存のXFDFファイルから注釈をインポートすることを可能にします。注釈をインポートまたはエクスポートするには、注釈の種類を指定する必要があります。これらの種類を列挙型の形式で指定し、この列挙型をこれらのメソッドのいずれかに引数として渡すことができます。このようにして、指定された種類の注釈のみがXFDFファイルにインポートまたはエクスポートされます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
-次のコードスニペットは、XFDFファイルへの注釈のエクスポート方法を示しています：
+次のコードスニペットは、注釈をXFDFファイルにエクスポートする方法を示しています：
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Facades;
-using System.IO;
-
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportAnnotationsToXfdf()
 {
-    class ExampleAnnotationImportExport
-    {
-        // ドキュメントディレクトリへのパス。
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        /// <summary>
-        /// XFDFファイルからの注釈のインポート
-        /// アドビアクロバットによって作成されたXMLフォームデータフォーマット(XFDF)ファイル;
-        /// ページフォーム要素とその値の説明を格納し、テキストフィールドの名前や値などが含まれます。
-        /// PdfAnnotationEditorクラスのImportAnnotationsFromXfdfメソッドを使用して、XFDFファイルからPDFへ注釈データをインポートできます。
-        /// </summary>       
-   
-        public static void ExportAnnotationXFDF()
-        {
-            // PdfAnnotationEditorオブジェクトを作成
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-            // PDFドキュメントをアノテーションエディタにバインド
-            AnnotationEditor.BindPdf(Path.Combine(_dataDir, "AnnotationDemo1.pdf"));
-           
-            // 注釈をエクスポート
-            var fileStream = File.OpenWrite(Path.Combine(_dataDir, "exportannotations.xfdf"));
-            var annotType = new AnnotationType[] { AnnotationType.Line, AnnotationType.Square };
-            AnnotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
+    // Create PdfAnnotationEditor object
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    {
+        // Bind PDF document
+        annotationEditor.BindPdf(dataDir + "AnnotationDemo1.pdf");
+
+        // Define the annotation types to export
+        var annotType = new Aspose.Pdf.Annotations.AnnotationType[] { Aspose.Pdf.Annotations.AnnotationType.Line, Aspose.Pdf.Annotations.AnnotationType.Square };
+
+        // Export annotations to XFDF file
+        using (var fileStream = File.OpenWrite(dataDir + "exportannotations_out.xfdf"))
+        {
+            annotationEditor.ExportAnnotationsXfdf(fileStream, 1, 1, annotType);
             fileStream.Flush();
-            fileStream.Close();
         }
-        //...
     }
 }
 ```
-次のコードスニペットは、XFDFファイルにアノテーションをインポートする方法を説明しています：
+
+次のコードスニペットは、XFDFファイルから注釈をインポートする方法を説明しています：
 
 ```csharp
-public static void ImportAnnotationXFDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationFromXfdf()
 {
-    // PdfAnnotationEditor オブジェクトを作成する
-    PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-    // 新しいPDFドキュメントを作成する
-    var document = new Document();
-    document.Pages.Add();
-    AnnotationEditor.BindPdf(document);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-    if (!File.Exists(exportFileName))
-        ExportAnnotationXFDF();
+    // Create PdfAnnotationEditor object
+    using (var annotationEditor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    {
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = document.Pages.Add();
 
-    // アノテーションをインポートする
-    AnnotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+            // Bind PDF document
+            annotationEditor.BindPdf(document);
 
-    // 出力PDFを保存する
-    document.Save(Path.Combine(_dataDir, "AnnotationDemo2.pdf"));
+            // Define the export file name
+            var exportFileName = dataDir + "exportannotations.xfdf";
+
+            // Import annotations from the XFDF file
+            annotationEditor.ImportAnnotationsFromXfdf(exportFileName);
+
+            // Save PDF document
+            document.Save(dataDir + "ImportAnnotationFromXfdf_out.pdf");
+        }
+    }
 }
 ```
 
-## アノテーションのエクスポート/インポートを一度に行う別の方法
+## 一度に注釈をエクスポート/インポートする別の方法
 
-以下のコードでは、ImportAnnotationsメソッドを使用して、別のPDFドキュメントから直接アノテーションをインポートします。
+以下のコードでは、ImportAnnotationsメソッドを使用して、別のPDF文書から直接注釈をインポートできます。
 
 ```csharp
-        /// <summary>
-        /// ImportAnnotationsメソッドは、別のPDFドキュメントから直接アノテーションをインポートすることを可能にします
-        /// </summary>
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-        public static void ImportAnnotationFromPDF()
+    // Open PDF document
+    using (var documentFrom = new Aspose.Pdf.Document(dataDir + "some_doc.pdf"))
+    {
+        // Create PDF document
+        using (var documentTo = new Aspose.Pdf.Document())
         {
-            // PdfAnnotationEditor オブジェクトを作成する
-            PdfAnnotationEditor AnnotationEditor = new PdfAnnotationEditor();
-            // 新しいPDFドキュメントを作成する
-            var document = new Document();
-            document.Pages.Add();
-            AnnotationEditor.BindPdf(document);
-            var exportFileName = Path.Combine(_dataDir, "exportannotations.xfdf");
-            if (!File.Exists(exportFileName))
-                ExportAnnotationXFDF();
+            // Add page
+            var page = documentTo.Pages.Add();
 
-            // アノテーションエディターは複数のPDFドキュメントからのアノテーションのインポートを許可しますが、
-            // この例では1つだけを使用します。
-            AnnotationEditor.ImportAnnotations(new[] { Path.Combine(_dataDir, "AnnotationDemo1.pdf") });
+            // Export/import
+            using (var ms = new MemoryStream())
+            {
+                documentFrom.ExportAnnotationsToXfdf(ms);
+                documentTo.ImportAnnotationsFromXfdf(ms);
+            }
 
-            // 出力PDFを保存する
-            document.Save(Path.Combine(_dataDir, "AnnotationDemo3.pdf"));
+            // Save PDF document
+            documentTo.Save(dataDir + "AnnotationDemo3_out.pdf");
         }
     }
 }
@@ -211,21 +213,21 @@ public static void ImportAnnotationXFDF()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -236,7 +238,7 @@ public static void ImportAnnotationXFDF()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -248,5 +250,3 @@ public static void ImportAnnotationXFDF()
     }
 }
 </script>
-```
-

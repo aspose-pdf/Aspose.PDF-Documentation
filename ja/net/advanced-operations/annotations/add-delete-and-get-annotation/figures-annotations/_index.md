@@ -1,10 +1,12 @@
 ---
-title: C#を使用して図形注釈を追加する
-linktitle: 図形注釈
+title: C#を使用して図の注釈を追加する
+linktitle: 図の注釈
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/figures-annotation/
-description: この記事では、Aspose.PDF for .NETを使用してPDFドキュメントから図形注釈を追加、取得、削除する方法について説明します。
+description: この記事では、PDFドキュメントから図の注釈を追加、取得、削除する方法について説明します。
 lastmod: "2023-09-12"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#を使用して図形注釈を追加する",
-    "alternativeHeadline": "PDFに図形注釈を追加する方法",
+    "headline": "Add Figures Annotations using C#",
+    "alternativeHeadline": "Enhance PDF Documents with Comprehensive Figure Annotations",
+    "abstract": "Aspose.PDF for .NETの新しい図の注釈機能を紹介します。これにより、ユーザーはPDFドキュメントに線、四角形、円、多角形、ポリラインなどのさまざまなタイプの注釈をシームレスに追加、取得、削除できます。この機能はドキュメントのインタラクティビティを向上させ、PDFファイル内で直接明確なコミュニケーションと視覚的なマークアップを可能にします。C#を使用する開発者向けに特別に設計されたこの強力な注釈ツールセットでPDF編集作業を最適化してください。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, 図形注釈, 多角形注釈, 線注釈, 正方形注釈, 円注釈",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "pdf, figures annotations, line annotation, square annotation, circle annotation, polygon annotation, polyline annotation, free text annotation, ink annotation, Aspose.PDF for .NET",
+    "wordcount": "2125",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,417 +74,624 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/figures-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "この記事では、Aspose.PDF for .NETを使用してPDFドキュメントから図形注釈を追加、取得、削除する方法について説明します。"
+    "dateModified": "2024-11-25",
+    "description": "この記事では、PDFドキュメントから図の注釈を追加、取得、削除する方法について説明します。"
 }
 </script>
 
-PDFドキュメント管理アプリは、ドキュメントに注釈を付けるためのさまざまなツールを提供します。PDFの内部構造の観点からこれらのツールは注釈です。次の種類の描画ツールをサポートしています。
+PDFドキュメント管理アプリは、ドキュメントに注釈を付けるためのさまざまなツールを提供します。PDFの内部構造の観点から、これらのツールは注釈です。以下の種類の描画ツールをサポートしています。
 
-* Line Annotation - 線と矢印を描画するためのツール
-* Square Annotation - 四角と長方形を描画するためのツール
-* Circle Annotation - 楕円と円を描画するためのツール
-* FreeText Annotation - コールアウトコメントのためのツール
-* Polygon Annotation - 多角形と雲形を描画するためのツール
-* Polyline Annotation - 連結された線を描画するためのツール
+* 線の注釈 - 線や矢印を描くためのツール。
+* 四角形の注釈 - 四角形や長方形を描くためのツール。
+* 円の注釈 - 楕円や円を描くためのツール。
+* 自由テキストの注釈 - コメント用の呼び出し。
+* 多角形の注釈 - 多角形や雲を描くためのツール。
+* ポリラインの注釈 - 接続された線を描くためのツール。
 
-## ページに形と図形を追加する
+## ページに図形を追加する
 
-注釈を追加するアプローチは、どれも典型的です。
+注釈を追加するアプローチは、どの注釈でも一般的です。
 
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を利用してPDFファイルをロードするか新規作成する。
-1. 新しい注釈を作成し、パラメータを設定する（新しいRectangle、新しいPoint、タイトル、色、幅など）。
-1. リンクポップアップアノテーションを元のものと関連付けます。
-1. ページに注釈を追加します。
+1. PDFファイルをロードするか、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を使用して新しいファイルを作成します。
+1. 新しい注釈を作成し、パラメータ（新しいRectangle、新しいPoint、タイトル、色、幅など）を設定します。
+1. 新しい[PopupAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation/methods/index)を作成します。
+1. ポップアップ注釈を元の注釈にリンクします。
+1. 注釈をページに追加します。
 
-## 線または矢印の追加
+## 線や矢印を追加する
 
-線の注釈の目的は、ページ上に直線または矢印を表示することです。
-線を作成するために、新しいLineAnnotationオブジェクトが必要です。
-LineAnnotationクラスのコンストラクタは四つのパラメータを取ります：
+線の注釈の目的は、ページに単純な線や矢印を表示することです。
+線を作成するには、新しいLineAnnotationオブジェクトを作成する必要があります。  
+LineAnnotationクラスのコンストラクタは4つのパラメータを取ります：
 
-* 注釈が追加されるページ、
-* 注釈の境界を定義する矩形、
-* 線の開始と終了を定義する二つの点。
+* 注釈が追加されるページ。
+* 注釈の境界を定義する矩形。
+* 線の開始点と終了点を定義する2つのポイント。
 
 また、いくつかのプロパティを初期化する必要があります：
 
-* `Title` - 通常は、このコメントを作成したユーザーの名前です
-* `Subject` - 任意の文字列にできますが、一般的には注釈の名前です
+* `Title` - 通常、これはこのコメントを作成したユーザーの名前です。
+* `Subject` - 任意の文字列を指定できますが、一般的には注釈の名前です。
 
-線をスタイルするために、色、幅、開始スタイル、終了スタイルを設定する必要があります。
-私たちのラインをスタイリングするためには、色、幅、開始スタイル、および終了スタイルを設定する必要があります。
+線をスタイルするためには、色、幅、開始スタイル、終了スタイルを設定する必要があります。これらのプロパティは、PDFビューアで注釈がどのように表示され、動作するかを制御します。たとえば、`StartingStyle`および`EndingStyle`プロパティは、線の端に描画される形状（開いた矢印、閉じた矢印、円など）を決定します。
 
-次のコードスニペットは、PDFファイルに線注釈を追加する方法を示しています：
-
-```csharp
-// PDFファイルをロードする
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments.pdf"));
-
-// 線注釈を作成する
-var lineAnnotation = new LineAnnotation(
-    document.Pages[1],
-    new Rectangle(550, 93, 562, 439),
-    new Point(556, 99), new Point(556, 443))
-{
-    Title = "John Smith",
-    Color = Color.Red,
-    Width = 3,
-    StartingStyle = LineEnding.OpenArrow,
-    EndingStyle = LineEnding.OpenArrow,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
-};
-
-// ページに注釈を追加する
-document.Pages[1].Annotations.Add(lineAnnotation);
-document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-```
-
-## 四角または円の追加
-
-[四角](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) と [円](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) の注釈は、ページ上に長方形または楕円を表示します。
-[Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation) と [Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation) 注釈は、ページに四角形または楕円を表示します。
-
-### 円注釈の追加
-
-新しい円または楕円注釈を描画するには、新しい CircleAnnotation オブジェクトを作成する必要があります。`CircleAnnotation` クラスのコンストラクタは以下の二つのパラメータを取ります：
-
-* 注釈が追加されるページ，
-* 注釈の境界を定義する矩形
-
-また、`CircleAnnotation` オブジェクトのいくつかのプロパティを設定できます。これらのプロパティは、PDFビューアでの注釈の見た目と振る舞いを制御します。ここで、そして Square でさらに `InteriorColor` 色は塗りつぶし色、`Color` は境界色です。
-
-### 四角注釈の追加
-
-四角を描画することは、円を描画することと同じです。
-長方形を描くことは、円を描くことと同じです。
+以下のコードスニペットは、PDFファイルに線の注釈を追加する方法を示しています：
 
 ```csharp
-var dataDir = "<path-to-file>";
-// PDFファイルを読み込む
-Document document = new Document(System.IO.Path.Combine(dataDir, "appartments.pdf"));
-
-// 円のアノテーションを作成
-var circleAnnotation = new CircleAnnotation(document.Pages[1], new Rectangle(270, 160, 483, 383))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLineAnnotation()
 {
-    Title = "John Smith",
-    Subject = "Circle",
-    Color = Color.Red,
-    InteriorColor = Color.MistyRose,
-    Opacity = 0.5,        
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 316, 1021, 459))
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// 四角のアノテーションを作成
-var squareAnnotation = new SquareAnnotation(document.Pages[1], new Rectangle(67, 317, 261, 459))
-{
-    Title = "John Smith",
-    Subject = "Rectangle",
-    Color = Color.Blue,
-    InteriorColor = Color.BlueViolet,
-    Opacity = 0.25,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
-};
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
+    {
+        // Create Line Annotation
+        var lineAnnotation = new Aspose.Pdf.Annotations.LineAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(550, 93, 562, 439),
+            new Aspose.Pdf.Point(556, 99), new Aspose.Pdf.Point(556, 443))
+        {
+            Title = "John Smith",
+            Color = Aspose.Pdf.Color.Red,
+            Width = 3,
+            StartingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+            EndingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 124, 1021, 266))
+        };
 
-// ページにアノテーションを追加
-document.Pages[1].Annotations.Add(circleAnnotation);
-document.Pages[1].Annotations.Add(squareAnnotation);
-document.Save(System.IO.Path.Combine(dataDir, "appartments_mod.pdf"));
+        // Add annotation to the page
+        document.Pages[1].Annotations.Add(lineAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddLineAnnotation_out.pdf");
+    }
+}
 ```
-例として、PDFドキュメントにSquareとCircleの注釈を追加した結果を以下に示します：
 
-![Circle and Square Annotation demo](circle_demo.png)
+## 四角形または円を追加する
 
-## ポリゴンとポリラインの注釈を追加する
+[Square](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squareannotation)および[Circle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/circleannotation)注釈は、ページに矩形または楕円を表示します。開くと、関連するメモのテキストを含むポップアップウィンドウが表示されます。四角形の注釈は、円の注釈（Aspose.Pdf.Annotations.CircleAnnotationクラスのインスタンス）と形状を除いて同じです。
 
-Poly-ツールを使用して、ドキュメント上に任意の数の側面を持つ形状と輪郭を作成できます。
+### 円の注釈を追加する
 
-**ポリゴン注釈**はページ上のポリゴンを表します。任意の数の頂点が直線で接続されています。
-**ポリライン注釈**もポリゴンに似ていますが、最初と最後の頂点が暗黙的に接続されていない点が異なります。
+新しい円または楕円の注釈を描くには、新しいCircleAnnotationオブジェクトを作成する必要があります。`CircleAnnotation`クラスのコンストラクタは2つのパラメータを取ります：
 
-### ポリゴン注釈の追加
+* 注釈が追加されるページ。
+* 注釈の境界を定義する矩形。
 
-PolygonAnnotationはポリゴン注釈を担当します。PolygonAnnotationクラスのコンストラクタは三つのパラメータを取ります：
+また、`CircleAnnotation`オブジェクトのいくつかのプロパティ（タイトル、色、内部色、不透明度など）を設定できます。これらのプロパティは、PDFビューアで注釈がどのように表示され、動作するかを制御します。ここで、四角形の注釈においても、`InteriorColor`は塗りつぶしの色であり、`Color`は境界の色です。
 
-* 注釈が追加されるページ、
-* 注釈の境界を定義する矩形、
-* ポリゴンの頂点を定義する点の配列。
+### 四角形の注釈を追加する
 
-`Color`と`InteriorColor`はそれぞれ境界線と塗りつぶしの色に使用されます。
-
-### ポリライン注釈の追加
-### ポリライン注釈の追加
-
-PolygonAnnotationは、ポリゴン注釈を担当します。PolygonAnnotationクラスのコンストラクタは3つのパラメータを取ります：
-
-* 注釈が追加されるページ、
-* 注釈の境界を定義する矩形、
-* ポリゴンの頂点を定義する点の配列。
-
-`PolygonAnnotation`ではこの形状を塗りつぶすことができませんので、`InteriorColor`を使用する必要はありません。
-
-次のコードスニペットは、PDFファイルにポリゴンとポリライン注釈を追加する方法を示しています：
+矩形を描くことは、円を描くことと同じです。以下のコードスニペットは、PDFページに円と四角形の注釈を追加する方法を示しています。
 
 ```csharp
-// PDFファイルをロード
-Document document = new Document(System.IO.Path.Combine(dataDir, "appartments.pdf"));
-
-// ポリゴン注釈を作成
-var polygonAnnotation = new PolygonAnnotation(document.Pages[1],
-    new Rectangle(270, 193, 571, 383),
-    new Point[] {
-        new Point(274, 381),
-        new Point(555, 381),
-        new Point(555, 304),
-        new Point(570, 304),
-        new Point(570, 195),
-        new Point(274, 195)})
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddCircleAndSquareAnnotations()
 {
-    Title = "John Smith",
-    Color = Color.Blue,
-    InteriorColor = Color.BlueViolet,
-    Opacity = 0.25,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// ポリライン注釈を作成
-var polylineAnnotation = new PolylineAnnotation(document.Pages[1],
-    new Rectangle(270, 193, 571, 383),
-    new Point[] {
-        new Point(545,150),
-        new Point(545,190),
-        new Point(667,190),
-        new Point(667,110),
-        new Point(626,111)
-        })
-{
-    Title = "John Smith",
-    Color = Color.Red,
-    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 196, 1021, 338))
-};
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+    {
+        // Create Circle Annotation
+        var circleAnnotation = new Aspose.Pdf.Annotations.CircleAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(270, 160, 483, 383))
+        {
+            Title = "John Smith",
+            Subject = "Circle",
+            Color = Aspose.Pdf.Color.Red,
+            InteriorColor = Aspose.Pdf.Color.MistyRose,
+            Opacity = 0.5,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 316, 1021, 459))
+        };
 
-// ページに注釈を追加
-document.Pages[1].Annotations.Add(polygonAnnotation);
-document.Pages[1].Annotations.Add(polylineAnnotation);
-document.Save(System.IO.Path.Combine(dataDir, "appartments_mod.pdf"));
+        // Create Square Annotation
+        var squareAnnotation = new Aspose.Pdf.Annotations.SquareAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(67, 317, 261, 459))
+        {
+            Title = "John Smith",
+            Subject = "Rectangle",
+            Color = Aspose.Pdf.Color.Blue,
+            InteriorColor = Aspose.Pdf.Color.BlueViolet,
+            Opacity = 0.25,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 196, 1021, 338))
+        };
+
+        // Add annotations to the page
+        document.Pages[1].Annotations.Add(circleAnnotation);
+        document.Pages[1].Annotations.Add(squareAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddCircleAndSquareAnnotations_out.pdf");
+    }
+}
 ```
-## 図形の取得
 
-すべての注釈は`Annotations`コレクションに保存されます。どの注釈も`AnnotationType`プロパティを通じてそのタイプを示すことができます。したがって、望ましい注釈をフィルタリングするためにLINQクエリを作成することができます。
+例として、PDFドキュメントに四角形と円の注釈を追加した結果を示します：
 
-### 線の注釈の取得
+## 多角形およびポリラインの注釈を追加する
+
+ポリツールを使用すると、任意の数の辺を持つ形状や輪郭をドキュメントに作成できます。
+
+**多角形の注釈**は、ページ上の多角形を表します。任意の数の頂点を持ち、直線で接続されています。
+**ポリラインの注釈**も多角形に似ていますが、唯一の違いは、最初と最後の頂点が暗黙的に接続されていないことです。
+
+### 多角形の注釈を追加する
+
+PolygonAnnotationは多角形の注釈を担当します。PolygonAnnotationクラスのコンストラクタは3つのパラメータを取ります：
+
+* 注釈が追加されるページ。
+* 注釈の境界を定義する矩形。
+* 多角形の頂点を定義するポイントの配列。
+
+`Color`と`InteriorColor`は、それぞれ境界と塗りつぶしの色に使用されます。
+
+### ポリラインの注釈を追加する
+
+PolygonAnnotationは多角形の注釈を担当します。PolygonAnnotationクラスのコンストラクタは3つのパラメータを取ります：
+
+* 注釈が追加されるページ。
+* 注釈の境界を定義する矩形。
+* 多角形の頂点を定義するポイントの配列。
+
+`PolygonAnnotation`の代わりに、この形状を塗りつぶすことはできないため、`InteriorColor`を使用する必要はありません。
+
+以下のコードスニペットは、PDFファイルに多角形とポリラインの注釈を追加する方法を示しています：
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPolygonAndPolylineAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+    {
+        // Create Polygon Annotation
+        var polygonAnnotation = new Aspose.Pdf.Annotations.PolygonAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(270, 193, 571, 383),
+            new Aspose.Pdf.Point[] {
+                new Aspose.Pdf.Point(274, 381),
+                new Aspose.Pdf.Point(555, 381),
+                new Aspose.Pdf.Point(555, 304),
+                new Aspose.Pdf.Point(570, 304),
+                new Aspose.Pdf.Point(570, 195),
+                new Aspose.Pdf.Point(274, 195)
+            })
+        {
+            Title = "John Smith",
+            Color = Aspose.Pdf.Color.Blue,
+            InteriorColor = Aspose.Pdf.Color.BlueViolet,
+            Opacity = 0.25,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 196, 1021, 338))
+        };
+
+        // Create Polyline Annotation
+        var polylineAnnotation = new Aspose.Pdf.Annotations.PolylineAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(270, 193, 571, 383),
+            new Aspose.Pdf.Point[] {
+                new Aspose.Pdf.Point(545, 150),
+                new Aspose.Pdf.Point(545, 190),
+                new Aspose.Pdf.Point(667, 190),
+                new Aspose.Pdf.Point(667, 110),
+                new Aspose.Pdf.Point(626, 111)
+            })
+        {
+            Title = "John Smith",
+            Color = Aspose.Pdf.Color.Red,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 196, 1021, 338))
+        };
+
+        // Add annotations to the page
+        document.Pages[1].Annotations.Add(polygonAnnotation);
+        document.Pages[1].Annotations.Add(polylineAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddPolygonAndPolylineAnnotations_out.pdf");
+    }
+}
+```
+
+## 図を取得する
+
+すべての注釈は`Annotations`コレクションに保存されます。任意の注釈は、`AnnotationType`プロパティを通じてそのタイプを示すことができます。したがって、LINQクエリを作成して、必要な注釈をフィルタリングできます。
+
+### 線の注釈を取得する
 
 以下の例は、PDFドキュメントの最初のページからすべての線の注釈を取得する方法を説明しています。
 
 ```csharp
-// PDFファイルをロード
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var lineAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Line)
-    .Cast<LineAnnotation>();
-foreach (var la in lineAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReadLineAnnotations()
 {
-    Console.WriteLine($"[{la.Starting.X},{la.Starting.Y}]-[{la.Ending.X},{la.Ending.Y}]");
-}   
-```
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-### 円の注釈の取得
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all line annotations from the first page
+        var lineAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Line)
+            .Cast<Aspose.Pdf.Annotations.LineAnnotation>();
 
-以下の例は、PDFドキュメントの最初のページからすべてのポリライン注釈を取得する方法を説明しています。
-
-```csharp
-// PDFファイルをロード
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var circleAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Line)
-    .Cast<CircleAnnotation>();
-foreach (var ca in circleAnnotations)
-{
-    Console.WriteLine($"[{ca.Rect}]");
-}   
-```
-### 四角注釈の取得
-
-以下の例は、PDFドキュメントの最初のページからすべての四角注釈を取得する方法を説明しています。
-
-```csharp
-// PDFファイルを読み込む
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var squareAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Square)
-    .Cast<SquareAnnotation>();
-foreach (var sq in squareAnnotations)
-{
-    Console.WriteLine($"[{sq.Rect}]");
+        // Iterate through each line annotation and print its coordinates
+        foreach (var la in lineAnnotations)
+        {
+            Console.WriteLine($"[{la.Starting.X},{la.Starting.Y}]-[{la.Ending.X},{la.Ending.Y}]");
+        }
+    }
 }
 ```
 
-### 折れ線注釈の取得
+### 円の注釈を取得する
 
-以下の例は、PDFドキュメントの最初のページからすべての折れ線注釈を取得する方法を説明しています。
-
-```csharp
-// PDFファイルを読み込む
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var polyAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.PolyLine)
-    .Cast<PolylineAnnotation>();
-foreach (var pa in polyAnnotations)
-{
-    Console.WriteLine($"[{pa.Rect}]");
-}     
-```
-
-### 多角形注釈の取得
-以下の例は、PDFドキュメントの最初のページからすべてのポリゴンアノテーションを取得する方法を説明しています。
+以下の例は、PDFドキュメントの最初のページからすべてのポリラインの注釈を取得する方法を説明しています。
 
 ```csharp
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var polyAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Polygon)
-    .Cast<PolygonAnnotation>();
-foreach (var pa in polyAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReadCircleAnnotations()
 {
-    Console.WriteLine($"[{pa.Rect}]");
-} 
-```
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-## 図形の削除
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all circle annotations from the first page
+        var circleAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Circle)
+            .Cast<Aspose.Pdf.Annotations.CircleAnnotation>();
 
-PDFからアノテーションを削除する方法は非常にシンプルです：
-
-* 削除するアノテーションを選択（いくつかのコレクションを作成）
-* コレクションをforeachループを使用して反復処理し、Deleteメソッドを使用してアノテーションコレクションから各アノテーションを削除します。
-
-### 線のアノテーションの削除
-
-```csharp
-// PDFファイルを読み込む
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var lineAnnotations = document.Pages[1].Annotations
-    .Where(a => a.AnnotationType == AnnotationType.Line)
-    .Cast<LineAnnotation>();
-
-foreach (var la in lineAnnotations)
-{
-    document.Pages[1].Annotations.Delete(la);
+        // Iterate through each circle annotation and print its rectangle
+        foreach (var ca in circleAnnotations)
+        {
+            Console.WriteLine($"[{ca.Rect}]");
+        }
+    }
 }
 ```
-### 円と四角の注釈を削除
+
+### 四角形の注釈を取得する
+
+以下の例は、PDFドキュメントの最初のページからすべてのポリラインの注釈を取得する方法を説明しています。
 
 ```csharp
-// PDFファイルを読み込む
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var figures = document.Pages[1].Annotations
-    .Where(a =>
-        a.AnnotationType == AnnotationType.Circle
-        || a.AnnotationType == AnnotationType.Square);
-
-foreach (var fig in figures)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReadSquareAnnotations()
 {
-    document.Pages[1].Annotations.Delete(fig);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all square annotations from the first page
+        var squareAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Square)
+            .Cast<Aspose.Pdf.Annotations.SquareAnnotation>();
+
+        // Iterate through each square annotation and print its rectangle
+        foreach (var sq in squareAnnotations)
+        {
+            Console.WriteLine($"[{sq.Rect}]");
+        }
+    }
 }
-document.Save(System.IO.Path.Combine(_dataDir, "Appartments_del.pdf"));
 ```
 
-### 多角形と折れ線の注釈を削除
+### ポリラインの注釈を取得する
 
-PDFファイルから多角形と折れ線の注釈を削除する方法を示すコードスニペットです。
+以下の例は、PDFドキュメントの最初のページからすべてのポリラインの注釈を取得する方法を説明しています。
 
 ```csharp
-// PDFファイルを読み込む
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-var polyAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.PolyLine
-                || a.AnnotationType == AnnotationType.Polygon);
-
-foreach (var pa in polyAnnotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReadPolylineAnnotations()
 {
-    document.Pages[1].Annotations.Delete(pa);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all polyline annotations from the first page
+        var polyAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.PolyLine)
+            .Cast<Aspose.Pdf.Annotations.PolylineAnnotation>();
+
+        // Iterate through each polyline annotation and print its rectangle
+        foreach (var pa in polyAnnotations)
+        {
+            Console.WriteLine($"[{pa.Rect}]");
+        }
+    }
 }
-document.Save(System.IO.Path.Combine(_dataDir, "Appartments_del.pdf"));
 ```
+
+### 多角形の注釈を取得する
+
+以下の例は、PDFドキュメントの最初のページからすべての多角形の注釈を取得する方法を説明しています。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReadPolygonAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all polygon annotations from the first page
+        var polyAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Polygon)
+            .Cast<Aspose.Pdf.Annotations.PolygonAnnotation>();
+
+        // Iterate through each polygon annotation and print its rectangle
+        foreach (var pa in polyAnnotations)
+        {
+            Console.WriteLine($"[{pa.Rect}]");
+        }
+    }
+}
+```
+
+## 図を削除する
+
+PDFから注釈を削除するアプローチは非常にシンプルです：
+
+* 削除する注釈を選択します（コレクションを作成します）。
+* foreachループを使用してコレクションを反復処理し、Deleteメソッドを使用して各注釈を注釈コレクションから削除します。
+
+### 線の注釈を削除する
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteLineAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all line annotations from the first page
+        var lineAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Line)
+            .Cast<Aspose.Pdf.Annotations.LineAnnotation>();
+
+        // Iterate through each line annotation and delete it
+        foreach (var la in lineAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(la);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteLineAnnotations_out.pdf");
+    }
+}
+```
+
+### 円と四角形の注釈を削除する
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteCircleAndSquareAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all circle and square annotations from the first page
+        var figures = document.Pages[1].Annotations
+            .Where(a =>
+                a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Circle
+                || a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Square);
+
+        // Iterate through each figure annotation and delete it
+        foreach (var fig in figures)
+        {
+            document.Pages[1].Annotations.Delete(fig);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteCircleAndSquareAnnotations_out.pdf");
+    }
+}
+```
+
+### 多角形とポリラインの注釈を削除する
+
+以下のコードスニペットは、PDFファイルから多角形とポリラインの注釈を削除する方法を示しています。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeletePolylineAndPolygonAnnotations()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        // Get all polyline and polygon annotations from the first page
+        var polyAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.PolyLine
+                        || a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Polygon);
+
+        // Iterate through each polyline or polygon annotation and delete it
+        foreach (var pa in polyAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(pa);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + DeletePolylineAndPolygonAnnotations_out.pdf");
+    }
+}
+```
+
 ## PDFファイルにインク注釈を追加する方法
 
-インク注釈は、一つまたは複数の非連続パスで構成される自由形式の「落書き」を表します。開かれたとき、関連するノートのテキストを含むポップアップウィンドウが表示される必要があります。
+インク注釈は、1つ以上の離散的なパスで構成された手書きの「落書き」を表します。開くと、関連するメモのテキストを含むポップアップウィンドウが表示されます。
 
-[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) は、一つまたは複数の非連続点で構成される自由形式の落書きを表します。以下のコードスニペットを使用してPDFドキュメントにInkAnnotationを追加してみてください。
+[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation)は、1つ以上の離散的なポイントで構成された手書きの落書きを表します。以下のコードスニペットを使用して、PDFドキュメントにInkAnnotationを追加してみてください。
 
 ```csharp
-// PDFファイルをロードする
-Document document = new Document(System.IO.Path.Combine(_dataDir, "appartments.pdf"));
-Page page = document.Pages[1];
-
-Rectangle arect = new Rectangle(156.574, 521.316, 541.168, 575.703);
-
-IList<Point[]> inkList = new List<Point[]>();
-Point[] arrpt = new[]
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddInkAnnotation()
 {
-    new Point(209.727,542.263),
-    new Point(209.727,541.94),
-    new Point(209.727,541.616)
-};
-inkList.Add(arrpt);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-InkAnnotation ia = new InkAnnotation(page, arect, inkList)
-{
-    Title = "John Smith",
-    Subject = "Pencil",
-    Color = Color.LightBlue,
-    CapStyle = CapStyle.Rounded,
-    Opacity = 0.5
-};
-Border border = new Border(ia)
-{
-    Width = 25
-};
-ia.Border = border;
-page.Annotations.Add(ia);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "appartments.pdf"))
+    {
+        // Get first page
+        var page = document.Pages[1];
 
-// 出力ファイルを保存する
-document.Save(System.IO.Path.Combine(_dataDir, "appartments_mod.pdf"));
+        // Define the rectangle for the ink annotation
+        var arect = new Aspose.Pdf.Rectangle(156.574, 521.316, 541.168, 575.703);
+
+        // Create a list of ink paths
+        IList<Aspose.Pdf.Point[]> inkList = new List<Aspose.Pdf.Point[]>();
+        var arrpt = new[]
+        {
+            new Aspose.Pdf.Point(209.727, 542.263),
+            new Aspose.Pdf.Point(209.727, 541.94),
+            new Aspose.Pdf.Point(209.727, 541.616)
+        };
+        inkList.Add(arrpt);
+
+        // Create the ink annotation
+        var ia = new Aspose.Pdf.Annotations.InkAnnotation(page, arect, inkList)
+        {
+            Title = "John Smith",
+            Subject = "Pencil",
+            Color = Aspose.Pdf.Color.LightBlue,
+            CapStyle = Aspose.Pdf.Annotations.CapStyle.Rounded,
+            Opacity = 0.5
+        };
+
+        // Set the border for the annotation
+        var border = new Aspose.Pdf.Annotations.Border(ia)
+        {
+            Width = 25
+        };
+        ia.Border = border;
+
+        // Add the annotation to the page
+        page.Annotations.Add(ia);
+
+        // Save PDF document
+        document.Save(dataDir + "AddInkAnnotation_out.pdf");
+    }
+}
 ```
+
 ### InkAnnotationの線幅を設定する
 
-[InkAnnottion](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation) の線幅は、LineInfoおよびBorderオブジェクトを使用して変更できます。
+[InkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/inkannotation)の幅は、LineInfoおよびBorderオブジェクトを使用して変更できます。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// 文書ディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-Document doc = new Document();
-doc.Pages.Add();
-IList<Point[]> inkList = new List<Point[]>();
-LineInfo lineInfo = new LineInfo();
-lineInfo.VerticeCoordinate = new float[] { 55, 55, 70, 70, 70, 90, 150, 60 };
-lineInfo.Visibility = true;
-lineInfo.LineColor = System.Drawing.Color.Red;
-lineInfo.LineWidth = 2;
-int length = lineInfo.VerticeCoordinate.Length / 2;
-Aspose.Pdf.Point[] gesture = new Aspose.Pdf.Point[length];
-for (int i = 0; i < length; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddInkAnnotationWithLineWidth()
 {
-   gesture[i] = new Aspose.Pdf.Point(lineInfo.VerticeCoordinate[2 * i], lineInfo.VerticeCoordinate[2 * i + 1]);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create a list of ink paths
+        IList<Aspose.Pdf.Point[]> inkList = new List<Aspose.Pdf.Point[]>();
+
+        // Define line information
+        var lineInfo = new Aspose.Pdf.Facades.LineInfo
+        {
+            VerticeCoordinate = new float[] { 55, 55, 70, 70, 70, 90, 150, 60 },
+            Visibility = true,
+            LineColor = System.Drawing.Color.Red,
+            LineWidth = 2
+        };
+
+        // Convert line coordinates to Aspose.Pdf.Point array
+        int length = lineInfo.VerticeCoordinate.Length / 2;
+        var gesture = new Aspose.Pdf.Point[length];
+        for (int i = 0; i < length; i++)
+        {
+            gesture[i] = new Aspose.Pdf.Point(lineInfo.VerticeCoordinate[2 * i], lineInfo.VerticeCoordinate[2 * i + 1]);
+        }
+
+        // Add the gesture to the ink list
+        inkList.Add(gesture);
+
+        // Create the ink annotation
+        var a1 = new Aspose.Pdf.Annotations.InkAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList)
+        {
+            Subject = "Test",
+            Title = "Title",
+            Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green)
+        };
+
+        // Set the border for the annotation
+        var border = new Aspose.Pdf.Annotations.Border(a1)
+        {
+            Width = 3,
+            Effect = Aspose.Pdf.Annotations.BorderEffect.Cloudy,
+            Dash = new Aspose.Pdf.Annotations.Dash(1, 1),
+            Style = Aspose.Pdf.Annotations.BorderStyle.Solid
+        };
+        a1.Border = border;
+
+        // Add the annotation to the page
+        page.Annotations.Add(a1);
+
+        // Save PDF document
+        document.Save(dataDir + "lnkAnnotationLineWidth_out.pdf");
+    }
 }
+```
 
-inkList.Add(gesture);
-InkAnnotation a1 = new InkAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 100, 300, 300), inkList);
-a1.Subject = "テスト";
-a1.Title = "タイトル";
-a1.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-Border border = new Border(a1);
-border.Width = 3;
-border.Effect = BorderEffect.Cloudy;
-border.Dash = new Dash(1, 1);
-border.Style = BorderStyle.Solid;
-doc.Pages[1].Annotations.Add(a1);
+### 円の注釈を削除する
 
-dataDir = dataDir + "lnkAnnotationLineWidth_out.pdf";
-// 出力ファイルを保存する
-doc.Save(dataDir);
+以下のコードスニペットは、PDFファイルから円の注釈を削除する方法を示しています。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteCircleAnnotation()
+{
+	// The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+	
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments_mod.pdf"))
+    {
+        var circleAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == AnnotationType.Circle)
+            .Cast<Aspose.Pdf.Annotations.CircleAnnotation>();
+
+        foreach (var ca in circleAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(ca);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteCircleAnnotation_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -510,21 +720,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -535,7 +745,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -547,24 +757,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-### 円注釈を削除
-
-次のコードスニペットは、PDFファイルから円注釈を削除する方法を示しています。
-
-```csharp
-public static void DeleteCircleAnnotation()
-{
-    // PDFファイルを読み込む
-    Document document = new Document(System.IO.Path.Combine(dataDir, "Appartments_mod.pdf"));
-    var circleAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Circle)
-        .Cast<CircleAnnotation>();
-
-    foreach (var ca in circleAnnotations)
-    {
-        document.Pages[1].Annotations.Delete(ca);
-    }
-    document.Save(System.IO.Path.Combine(dataDir, "Appartments_del.pdf"));
-}
-```

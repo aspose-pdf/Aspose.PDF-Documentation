@@ -2,9 +2,11 @@
 title: PDF内のリンクをプログラムで操作する
 linktitle: リンク
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/links/
-description: このガイドでは、PDF内に内部ページリンクを追加する方法や、C#言語でPDFに外部ウェブサイトのハイパーリンクを挿入する方法について説明します。
+description: このガイドは、PDFに内部ページリンクを追加する方法や、C#言語でPDFに外部ウェブサイトのハイパーリンクを挿入する方法について説明しています。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF内のリンクをプログラムで操作する",
-    "alternativeHeadline": "PDFファイルのリンク操作",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "C#を使用してPDF文書内のリンクをプログラムで管理する新しい機能を発見してください。この機能により、内部ページリンクや外部ウェブサイトのハイパーリンクを簡単に追加でき、PDF内のナビゲーションとインタラクティビティが向上します。PDF管理プロセスを効率化したい開発者に最適です！",
     "author": {
         "@type": "Person",
-        "name":"アンドリー・アンドルホフスキー",
-        "givenName": "アンドリー",
-        "familyName": "アンドルホフスキー",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "PDF, C#, PDF内のリンク",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,14 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このガイドでは、PDF内に内部ページリンクを追加する方法や、C#言語でPDFに外部ウェブサイトのハイパーリンクを挿入する方法について説明します。"
+    "dateModified": "2024-11-25",
+    "description": "このガイドは、PDFに内部ページリンクを追加する方法や、C#言語でPDFに外部ウェブサイトのハイパーリンクを挿入する方法について説明しています。"
 }
 </script>
 
-- [リンクの作成](/pdf/ja/net/create-links/) - C#を使用してPDFファイルにリンクを作成する方法を学びます。
-- [リンクの更新](/pdf/ja/net/update-links/) - PDFにターゲットを設定し、リンクの目的地をウェブアドレスに設定し、リンクターゲットを別のPDFファイルに設定し、リンクテキストの色を更新してください。
-- [リンクの抽出](/pdf/ja/net/extract-links) - AnnotationSelectorクラスを使用してPDFファイルからリンクを抽出します。
+- [リンクを作成](/pdf/net/create-links/) - C#を使用してPDFファイルにリンクを作成する簡単な方法を学びます。
+- [リンクを更新](/pdf/net/update-links/) - PDFにターゲットを設定し、リンクの宛先をウェブアドレスに設定し、リンクのターゲットを別のPDFファイルに設定し、リンクのテキストカラーを更新します。
+- [リンクを抽出](/pdf/net/extract-links) - AnnotationSelectorクラスを使用してPDFファイルからリンクを抽出します。
 
 <script type="application/ld+json">
 {
@@ -143,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

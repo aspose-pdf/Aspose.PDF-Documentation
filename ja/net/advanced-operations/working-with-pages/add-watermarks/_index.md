@@ -2,34 +2,39 @@
 title: C#を使用してPDFに透かしを追加する
 linktitle: 透かしを追加
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /ja/net/add-watermarks/
-description: この記事は、C#をプログラムで使用してPDFで透かしを取得し、アーティファクトの操作の特徴について説明します。
+description: この記事では、C#を使用してプログラム的にPDF内のアーティファクトを操作し、透かしを取得する機能について説明します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /net/working-with-existing-watermarks/
+    - /net/adding-multi-line-watermark-to-existing-pdf/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#を使用してPDFに透かしを追加する",
-    "alternativeHeadline": "PDFに透かしを追加する方法",
+    "headline": "Add watermark to PDF using C#",
+    "alternativeHeadline": "Add Custom Watermarks to PDF with C#",
+    "abstract": "Aspose.PDF for .NETの新機能により、開発者はアーティファクト機能を使用してPDFドキュメントにカスタマイズ可能な透かしをプログラム的に追加できます。この機能は、タイプ、透明度、回転、テキストのカスタマイズなど、さまざまなアーティファクトプロパティをサポートすることで文書管理を強化し、ユーザーがプロフェッショナルで識別可能なPDFファイルを簡単に作成できるようにします。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "PDF, C#, 透かしを追加",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "wordcount": "462",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,66 +76,75 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-watermarks/"
     },
-    "dateModified": "2022-02-04",
-    "description": "この記事は、C#をプログラムで使用してPDFで透かしを取得し、アーティファクトの操作の特徴について説明します。"
+    "dateModified": "2024-11-26",
+    "description": "この記事では、C#を使用してプログラム的にPDF内のアーティファクトを操作し、透かしを取得する機能について説明します。"
 }
 </script>
 
-**Aspose.PDF for .NET** は、Artifactsを使用してPDFドキュメントにウォーターマークを追加することができます。この記事をチェックして、タスクを解決してください。
+**Aspose.PDF for .NET**は、アーティファクトを使用してPDFドキュメントに透かしを追加することを可能にします。このタスクを解決するためにこの記事を確認してください。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
 
-Adobe Acrobatで作成されたウォーターマークはアーティファクトと呼ばれます（PDF仕様の14.8.2.2 実際の内容とアーティファクトに記載）。アーティファクトを扱うために、Aspose.PDFには [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) クラスと [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection) クラスがあります。
+Adobe Acrobatで作成された透かしはアーティファクトと呼ばれます（PDF仕様の14.8.2.2の実際のコンテンツとアーティファクトに記載されています）。アーティファクトを操作するために、Aspose.PDFには2つのクラスがあります：[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact)と[ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)。
 
-特定のページのすべてのアーティファクトを取得するために、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) クラスには Artifacts プロパティがあります。このトピックでは、PDFファイルでアーティファクトを扱う方法について説明します。
+特定のページ上のすべてのアーティファクトを取得するには、[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスのArtifactsプロパティを使用します。このトピックでは、PDFファイル内のアーティファクトの操作方法について説明します。
 
 ## アーティファクトの操作
 
-[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) クラスには以下のプロパティが含まれています:
+[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact)クラスには次のプロパティがあります：
 
-**Artifact.Type** – アーティファクトのタイプを取得します（Artifact.ArtifactType 列挙の値をサポートしており、値には Background, Layout, Page, Pagination, Undefined が含まれます）。
-**Artifact.Type** – アーティファクトのタイプを取得します（Artifact.ArtifactType列挙型の値をサポートし、値にはBackground, Layout, Page, Pagination, Undefinedが含まれます）。
-**Artifact.Subtype** – アーティファクトのサブタイプを取得します（Artifact.ArtifactSubtype列挙型の値をサポートし、値にはBackground, Footer, Header, Undefined, Watermarkが含まれます）。
+- **Artifact.Type**: アーティファクトのタイプを取得します（Artifact.ArtifactType列挙型の値をサポートし、値にはBackground、Layout、Page、Pagination、Undefinedが含まれます）。
+- **Artifact.Subtype**: アーティファクトのサブタイプを取得します（Artifact.ArtifactSubtype列挙型の値をサポートし、値にはBackground、Footer、Header、Undefined、Watermarkが含まれます）。
 
 {{% alert color="primary" %}}
 
-Adobe Acrobatで作成された透かしは、タイプがPaginationでサブタイプがWatermarkです。
+Adobe Acrobatで作成された透かしは、タイプがPaginationでサブタイプがWatermarkであることに注意してください。
 
 {{% /alert %}}
 
-**Artifact.Contents** – アーティファクトの内部オペレータのコレクションを取得します。サポートされるタイプはSystem.Collections.ICollectionです。
-**Artifact.Form** – アーティファクトのXFormを取得します（XFormが使用されている場合）。透かし、ヘッダー、フッターのアーティファクトには、すべてのアーティファクト内容を示すXFormが含まれています。
-**Artifact.Image** – アーティファクトの画像を取得します（画像が存在する場合、それ以外の場合はnull）。
-**Artifact.Text** – アーティファクトのテキストを取得します。
-**Artifact.Rectangle** – ページ上のアーティファクトの位置を取得します。
-**Artifact.Rotation** – アーティファクトの回転を取得します（度数で、正の値は反時計回りの回転を示します）。
- **Artifact.Rotation** – アーティファクトの回転を取得します（度数で、正の値は反時計回りの回転を示します）。
-**Artifact.Opacity** – アーティファクトの不透明度を取得します。可能な値は0から1の範囲で、1は完全に不透明です。
+- **Artifact.Contents**: アーティファクト内部オペレーターのコレクションを取得します。サポートされているタイプはSystem.Collections.ICollectionです。
+- **Artifact.Form**: アーティファクトのXFormを取得します（XFormが使用されている場合）。透かし、ヘッダー、フッターのアーティファクトには、すべてのアーティファクト内容を示すXFormが含まれています。
+- **Artifact.Image**: アーティファクトの画像を取得します（画像が存在する場合、そうでない場合はnull）。
+- **Artifact.Text**: アーティファクトのテキストを取得します。
+- **Artifact.Rectangle**: ページ上のアーティファクトの位置を取得します。
+- **Artifact.Rotation**: アーティファクトの回転を取得します（度数で、正の値は反時計回りの回転を示します）。
+- **Artifact.Opacity**: アーティファクトの不透明度を取得します。可能な値は0から1の範囲で、1は完全に不透明です。
 
-## プログラミングサンプル：PDFファイルにウォーターマークを追加する方法
+## PDFファイルに透かしを追加する方法
 
-次のコードスニペットは、C#を使用してPDFファイルの最初のページにある各ウォーターマークを取得する方法を示しています。
+次のコードスニペットは、C#を使用してPDFファイルの最初のページにある各透かしを取得する方法を示しています。
 
 ```csharp
-public static void AddWatermarks()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarks()
 {
-    Document document = new Document(_dataDir + "text.pdf");
-    WatermarkArtifact artifact = new WatermarkArtifact();
-    artifact.SetTextAndState(
-        "WATERMARK",
-        new TextState()
-        {
-            FontSize = 72,
-            ForegroundColor = Color.Blue,
-            Font = FontRepository.FindFont("Courier")
-        });
-    artifact.ArtifactHorizontalAlignment = HorizontalAlignment.Center;
-    artifact.ArtifactVerticalAlignment = VerticalAlignment.Center;
-    artifact.Rotation = 45;
-    artifact.Opacity = 0.5;
-    artifact.IsBackground = true;
-    document.Pages[1].Artifacts.Add(artifact);
-    document.Save(_dataDir + "watermark.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddWatermarksInput.pdf"))
+    {
+        // Create a new watermark artifact
+        var artifact = new Aspose.Pdf.WatermarkArtifact();
+        artifact.SetTextAndState(
+            "WATERMARK",
+            new Aspose.Pdf.Text.TextState()
+            {
+                FontSize = 72,
+                ForegroundColor = Aspose.Pdf.Color.Blue,
+                Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier")
+            });
+        // Set watermark properties
+        artifact.ArtifactHorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        artifact.ArtifactVerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+        artifact.Rotation = 45;
+        artifact.Opacity = 0.5;
+        artifact.IsBackground = true;
+        // Add watermark artifact to the first page
+        document.Pages[1].Artifacts.Add(artifact);
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarks_out.pdf");
+    }
 }
 ```
 
@@ -160,23 +174,23 @@ public static void AddWatermarks()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -185,7 +199,7 @@ public static void AddWatermarks()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -197,5 +211,3 @@ public static void AddWatermarks()
     }
 }
 </script>
-```
-

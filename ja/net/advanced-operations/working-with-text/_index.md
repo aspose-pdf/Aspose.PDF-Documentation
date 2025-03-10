@@ -1,10 +1,12 @@
 ---
-title: PDF内のテキストをC#を使用して操作する
+title: C#を使用したPDF内のテキスト操作
 linktitle: テキスト操作
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/working-with-text/
-description: このセクションでは、テキスト処理のさまざまな技術について説明します。Aspose.PDFとC#を使用してテキストを追加、置換、回転、検索する方法を学びます。
+description: このセクションでは、テキスト処理のさまざまな技術について説明します。Aspose.PDFとC#を使用して、テキストを追加、置換、回転、検索する方法を学びます。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF内のテキストをC#を使用して操作する",
-    "alternativeHeadline": "PDFファイルでテキストを追加、回転、検索、削除する",
+    "headline": "Working with Text in PDF using C#",
+    "alternativeHeadline": "Enhanced Text Manipulation Features in PDF with C#",
+    "abstract": "Aspose.PDF for .NETを使用してPDF内の強力なテキスト操作機能を発見してください。この機能により、ユーザーはPDFドキュメント内でテキストをシームレスに追加、置換、回転、フォーマットでき、ドキュメントのインタラクティブ性とカスタマイズ性が向上します。C#開発者向けに調整された効率的な検索機能と柔軟なテキスト処理技術でアプリケーションを強化しましょう。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, テキストを追加, テキストを検索, テキストを削除, PDF内のテキストを操作",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "PDF manipulation, add text to PDF, rotate text in PDF, search text in PDF, replace text in PDF, text formatting inside PDF, Aspose.PDF for .NET, text handling techniques, PDF document generation, Floating Box tool",
+    "wordcount": "371",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,22 +74,23 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-text/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、テキスト処理のさまざまな技術について説明します。Aspose.PDFとC#を使用してテキストを追加、置換、回転、検索する方法を学びます。"
+    "dateModified": "2024-11-26",
+    "description": "このセクションでは、テキスト処理のさまざまな技術について説明します。Aspose.PDFとC#を使用して、テキストを追加、置換、回転、検索する方法を学びます。"
 }
 </script>
-私たちは時々PDFファイルにテキストを追加する必要があります。たとえば、メインテキストの下に翻訳を追加したい場合、画像の隣にキャプションを配置したい場合、または単に申請書に記入したい場合などです。すべてのテキスト要素を自分の望むスタイルでフォーマットできると便利です。PDFファイルで最も人気のあるテキスト操作には、PDFにテキストを追加する、PDFファイル内のテキストをフォーマットする、ドキュメント内のテキストを置換および回転するなどがあります。**Aspose.PDF for .NET**は、PDFコンテンツとの対話に必要なすべてを備えた最適なソリューションです。
 
-以下の操作が可能です：
+私たちは皆、時々PDFファイルにテキストを追加する必要があります。たとえば、メインテキストの下に翻訳を追加したり、画像の横にキャプションを配置したり、単に申請書に記入したりする場合です。また、すべてのテキスト要素を自分の希望するスタイルでフォーマットできると便利です。PDFファイル内で最も一般的なテキスト操作は、PDFにテキストを追加すること、PDFファイル内のテキストをフォーマットすること、ドキュメント内のテキストを置換および回転することです。**Aspose.PDF for .NET**は、PDFコンテンツと対話するために必要なすべてを備えた最良のソリューションです。
 
-- [PDFファイルにテキストを追加する](/pdf/ja/net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームとファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクなどを追加します。
-- [PDFツールチップ](/pdf/ja/net/pdf-tooltip/) - C#を使用して透明なボタンを追加することにより、検索されたテキストにツールチップを追加できます。
-- [PDF内のテキストフォーマット](/pdf/ja/net/text-formatting-inside-pdf/) - ドキュメントに追加できる多くの機能があります。
-- [PDF内のテキストフォーマット](/pdf/ja/net/text-formatting-inside-pdf/) - テキストのフォーマット時に文書に追加できる多くの機能。
-- [PDF内のテキストを置換する](/pdf/ja/net/replace-text-in-pdf/) - PDFドキュメントの全ページのテキストを置換するには、最初にTextFragmentAbsorberを使用する必要があります。
-- [PDF内のテキストを回転する](/pdf/ja/net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転します。
-- [PDFドキュメントのページからテキストを検索して取得する](/pdf/ja/net/search-and-get-text-from-pdf/) - ページからテキストを検索して取得するためにTextFragmentAbsorberクラスを使用できます。
-- [改行を特定する](/pdf/ja/net/determine-line-break/) - このトピックでは、複数行のテキストフラグメントの改行を追跡する方法について説明します。
+次のことができます：
+
+- [PDFファイルにテキストを追加](/pdf/net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。
+- [PDFツールチップ](/pdf/net/pdf-tooltip/) - C#を使用して、検索したテキストに不可視ボタンを追加することでツールチップを追加できます。
+- [PDF内のテキストフォーマット](/pdf/net/text-formatting-inside-pdf/) - テキストをフォーマットする際にドキュメントに追加できる多くの機能があります。行のインデントを追加し、テキストの境界線を追加し、下線付きテキストを追加し、Aspose.PDFライブラリを使用して改行を追加します。
+- [フローティングボックスの使用](/pdf/net/floating-box/) - フローティングボックスツールは、PDFページにテキストやその他のコンテンツを配置するための特別なツールです。
+- [PDF内のテキストを置換](/pdf/net/replace-text-in-pdf/) - PDFドキュメントのすべてのページでテキストを置換します。最初にTextFragmentAbsorberを使用する必要があります。
+- [PDF内のテキストを回転](/pdf/net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転します。
+- [PDFドキュメントのページからテキストを検索して取得](/pdf/net/search-and-get-text-from-pdf/) - TextFragmentAbsorberクラスを使用してページからテキストを検索して取得できます。
+- [行の改行を決定](/pdf/net/determine-line-break/) - このトピックでは、複数行のテキストフラグメントの行の改行を追跡する方法について説明します。
 
 <script type="application/ld+json">
 {
@@ -151,4 +155,3 @@ sitemap:
     }
 }
 </script>
-
