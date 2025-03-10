@@ -1,7 +1,9 @@
 ---
 title: PDF C#에 텍스트 스탬프 추가
-linktitle: PDF 파일에 텍스트 스탬프
+linktitle: PDF 파일의 텍스트 스탬프
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ko/net/text-stamps-in-the-pdf-file/
 description: Aspose.PDF for .NET 라이브러리를 사용하여 PDF 문서에 텍스트 스탬프를 추가합니다.
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF C#에 텍스트 스탬프 추가",
-    "alternativeHeadline": "PDF C#에 텍스트 스탬프 추가",
+    "headline": "Add Text stamps in PDF C#",
+    "alternativeHeadline": "Effortlessly Add Text Stamps in PDF Documents with C#",
+    "abstract": "Aspose.PDF for .NET의 새로운 TextStamp 기능을 사용하면 사용자가 PDF 문서에 사용자 정의 가능한 텍스트 스탬프를 손쉽게 추가할 수 있습니다. 글꼴 크기, 스타일 및 색상에 대한 속성과 정렬 옵션을 통해 이 기능은 PDF 파일 내에서 텍스트의 정확한 배치와 모양을 허용하여 문서 주석을 향상시킵니다.",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "pdf, c#, 문서 생성",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "wordcount": "765",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,119 +73,193 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Aspose.PDF for .NET 라이브러리를 사용하여 PDF 문서에 텍스트 스탬프를 추가합니다."
 }
 </script>
-## C#을 사용하여 텍스트 스탬프 추가
 
-[TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) 클래스를 사용하여 PDF 파일에 텍스트 스탬프를 추가할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등과 같이 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 텍스트 스탬프를 추가하려면 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그 후, PDF에 스탬프를 추가하기 위해 페이지의 AddStamp 메소드를 호출할 수 있습니다.
+## 텍스트 스탬프 추가
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+[TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) 클래스를 사용하여 PDF 파일에 텍스트 스탬프를 추가할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일 및 글꼴 색상 등 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 텍스트 스탬프를 추가하려면 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그 후, PDF에 스탬프를 추가하기 위해 Page의 AddStamp 메서드를 호출할 수 있습니다.
+
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 PDF 파일에 텍스트 스탬프를 추가하는 방법을 보여줍니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir+ "AddTextStamp.pdf");
-
-// 텍스트 스탬프 생성
-TextStamp textStamp = new TextStamp("Sample Stamp");
-// 스탬프가 배경인지 설정
-textStamp.Background = true;
-// 원점 설정
-textStamp.XIndent = 100;
-textStamp.YIndent = 100;
-// 스탬프 회전
-textStamp.Rotate = Rotation.on90;
-// 텍스트 속성 설정
-textStamp.TextState.Font = FontRepository.FindFont("Arial");
-textStamp.TextState.FontSize = 14.0F;
-textStamp.TextState.FontStyle = FontStyles.Bold;
-textStamp.TextState.FontStyle = FontStyles.Italic;
-textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Aqua);
-// 특정 페이지에 스탬프 추가
-pdfDocument.Pages[1].AddStamp(textStamp);
-
-dataDir = dataDir + "AddTextStamp_out.pdf";
-// 출력 문서 저장
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text stamp
+        var textStamp = new Aspose.Pdf.TextStamp("Sample Stamp");
+        // Set whether stamp is background
+        textStamp.Background = true;
+        // Set origin
+        textStamp.XIndent = 100;
+        textStamp.YIndent = 100;
+        // Rotate stamp
+        textStamp.Rotate = Rotation.on90;
+        // Set text properties
+        textStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        textStamp.TextState.FontSize = 14.0F;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(textStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddTextStamp_out.pdf");  
+    }
+}
 ```
+
 ## TextStamp 객체의 정렬 정의
 
-PDF 문서에 워터마크를 추가하는 것은 자주 요구되는 기능 중 하나이며 Aspose.PDF for .NET은 이미지뿐만 아니라 텍스트 워터마크를 추가할 수 있습니다. [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp)라는 클래스는 PDF 파일 위에 텍스트 스탬프를 추가하는 기능을 제공합니다. 최근에는 TextStamp 객체를 사용할 때 텍스트의 정렬을 지정하는 기능을 지원하는 요구사항이 있었습니다. 이 요구사항을 충족시키기 위해 TextStamp 클래스에 TextAlignment 속성을 도입했습니다. 이 속성을 사용하여 수평 텍스트 정렬을 지정할 수 있습니다.
+PDF 문서에 워터마크를 추가하는 것은 자주 요구되는 기능 중 하나이며 Aspose.PDF for .NET은 이미지 및 텍스트 워터마크를 추가하는 데 완벽하게 능숙합니다. 우리는 PDF 파일 위에 텍스트 스탬프를 추가하는 기능을 제공하는 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp)라는 클래스를 가지고 있습니다. 최근에 TextStamp 객체를 사용할 때 텍스트의 정렬을 지정하는 기능을 지원해야 한다는 요구가 있었습니다. 따라서 이 요구를 충족하기 위해 TextStamp 클래스에 TextAlignment 속성을 도입했습니다. 이 속성을 사용하여 수평 텍스트 정렬을 지정할 수 있습니다.
 
-다음 코드 스니펫은 기존 PDF 문서를 로드하고 그 위에 TextStamp를 추가하는 예를 보여줍니다.
+다음 코드 스니펫은 기존 PDF 문서를 로드하고 그 위에 TextStamp를 추가하는 방법을 보여줍니다.
 
 ```csharp
-// 전체 예제 및 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DefineAlignmentForTextStampObject()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// 입력 파일로 Document 객체를 인스턴스화합니다.
-Document doc = new Document(dataDir+ "DefineAlignment.pdf");
-// 샘플 문자열로 FormattedText 객체를 인스턴스화합니다.
-FormattedText text = new FormattedText("This");
-// FormattedText에 새 텍스트 라인을 추가합니다.
-text.AddNewLineText("is sample");
-text.AddNewLineText("Center Aligned");
-text.AddNewLineText("TextStamp");
-text.AddNewLineText("Object");
-// FormattedText를 사용하여 TextStamp 객체를 생성합니다.
-TextStamp stamp = new TextStamp(text);
-// 텍스트 스탬프의 수평 정렬을 중앙 정렬로 지정합니다.
-stamp.HorizontalAlignment = HorizontalAlignment.Center;
-// 텍스트 스탬프의 수직 정렬을 중앙 정렬로 지정합니다.
-stamp.VerticalAlignment = VerticalAlignment.Center;
-// TextStamp의 텍스트 수평 정렬을 중앙 정렬로 지정합니다.
-stamp.TextAlignment = HorizontalAlignment.Center;
-// 스탬프 객체에 위쪽 마진을 설정합니다.
-stamp.TopMargin = 20;
-// 문서의 첫 페이지에 스탬프 객체를 추가합니다.
-doc.Pages[1].AddStamp(stamp);
-
-dataDir = dataDir + "StampedPDF_out.pdf";
-// 업데이트된 문서를 저장합니다.
-doc.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Instantiate FormattedText object with sample string
+        var text = new Aspose.Pdf.Facades.FormattedText("This");
+        // Add new text line to FormattedText
+        text.AddNewLineText("is sample");
+        text.AddNewLineText("Center Aligned");
+        text.AddNewLineText("TextStamp");
+        text.AddNewLineText("Object");
+        // Create TextStamp object using FormattedText
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        // Specify the Horizontal Alignment of text stamp as Center aligned
+        stamp.HorizontalAlignment = HorizontalAlignment.Center;
+        // Specify the Vertical Alignment of text stamp as Center aligned
+        stamp.VerticalAlignment = VerticalAlignment.Center;
+        // Specify the Text Horizontal Alignment of TextStamp as Center aligned
+        stamp.TextAlignment = HorizontalAlignment.Center;
+        // Set top margin for stamp object
+        stamp.TopMargin = 20;
+        // Add the stamp object over first page of document
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "StampedPDF_out.pdf");
+    }
+}
 ```
-## PDF 파일에 스트로크 텍스트 스탬프 채우기
 
-텍스트 추가 및 편집 시나리오에 대한 렌더링 모드 설정을 구현했습니다. 스트로크 텍스트를 렌더링하려면 TextState 객체를 생성하고 RenderingMode를 TextRenderingMode.StrokeText로 설정한 다음 StrokingColor 속성에 대한 색상을 선택하십시오. 나중에 BindTextState() 메서드를 사용하여 스탬프에 TextState를 바인딩합니다.
+## PDF 파일에 스탬프로서 스트로크 텍스트 채우기
 
-다음 코드 스니펫은 스트로크 텍스트 채우기를 추가하는 방법을 보여줍니다:
+텍스트 추가 및 편집 시나리오에 대한 렌더링 모드 설정을 구현했습니다. 스트로크 텍스트를 렌더링하려면 TextState 객체를 생성하고 RenderingMode를 TextRenderingMode.StrokeText로 설정한 다음 StrokingColor 속성에 대한 색상을 선택하십시오. 이후 BindTextState() 메서드를 사용하여 TextState를 스탬프에 바인딩합니다.
+
+다음 코드 스니펫은 Fill Stroke Text를 추가하는 방법을 보여줍니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-// 고급 속성을 전달하는 TextState 객체를 생성합니다.
-TextState ts = new TextState();
-// 스트로크 색상 설정
-ts.StrokingColor = Color.Gray;
-// 텍스트 렌더링 모드 설정
-ts.RenderingMode = TextRenderingMode.StrokeText;
-// 입력 PDF 문서를 로드합니다.
-Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Aspose.Pdf.Document(dataDir + "input.pdf"));
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillStrokeTextAsStampInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Create TextState object to transfer advanced properties
+    var textState = new Aspose.Pdf.Text.TextState();
+    // Set color for stroke
+    textState.StrokingColor = Color.Gray;
+    // Set text rendering mode
+    textState.RenderingMode = Aspose.Pdf.Text.TextRenderingMode.StrokeText;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create PdfFileStamp
+        var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp(document);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Aspose.Pdf.Facades.EncodingType.Winansi, true, 78));
+        // Bind TextState
+        stamp.BindTextState(textState);
+        // Set X,Y origin
+        stamp.SetOrigin(100, 100);
+        stamp.Opacity = 5;
+        stamp.BlendingSpace = Aspose.Pdf.Facades.BlendingColorSpace.DeviceRGB;
+        stamp.Rotation = 45.0F;
+        stamp.IsBackground = false;
+        // Add Stamp
+        fileStamp.AddStamp(stamp);
+        // Save PDF document
+        fileStamp.Save(dataDir + "FillStrokeTextAsStampInPdfFile_out.pdf");
+        fileStamp.Close();
+    }
+}
+```
 
-Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-stamp.BindLogo(new Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Facades.EncodingType.Winansi, true, 78));
+## 텍스트 스탬프 추가 및 글꼴 크기 자동 조정
 
-// TextState 바인드
-stamp.BindTextState(ts);
-// X, Y 원점 설정
-stamp.SetOrigin(100, 100);
-stamp.Opacity = 5;
-stamp.BlendingSpace = Facades.BlendingColorSpace.DeviceRGB;
-stamp.Rotation = 45.0F;
-stamp.IsBackground = false;
-// 스탬프 추가
-fileStamp.AddStamp(stamp);
-fileStamp.Save(dataDir + "ouput_out.pdf");
-fileStamp.Close();
+다음 코드 스니펫은 PDF 파일에 텍스트 스탬프를 추가하고 스탬프 사각형에 맞게 글꼴 크기를 자동으로 조정하는 방법을 보여줍니다.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        stamp.Width = 400;
+        stamp.Height = 200;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStamp_out.pdf");
+    }
+}
+```
+다음 코드 스니펫은 PDF 파일에 텍스트 스탬프를 추가하고 스탬프 사각형에 맞게 글꼴 크기를 자동으로 조정하는 방법을 보여줍니다. 스탬프 사각형은 기본적으로 페이지 크기로 설정됩니다.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStampToFitPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStampToFItPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -212,23 +288,23 @@ fileStamp.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "영어"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "영어"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "영어"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -237,7 +313,7 @@ fileStamp.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET용 PDF 조작 라이브러리",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -249,5 +325,3 @@ fileStamp.Close();
     }
 }
 </script>
-```
-

@@ -1,10 +1,12 @@
 ---
-title: PDF에 배경 추가하기 C#
-linktitle: 배경 추가하기
+title: PDF에 배경 추가
+linktitle: 배경 추가
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /ko/net/add-backgrounds/
-description: C#을 사용하여 PDF 파일에 배경 이미지를 추가하세요. BackgroundArtifact 객체를 사용합니다.
+description: C#을 사용하여 PDF 파일에 배경 이미지를 추가합니다. BackgroundArtifact 객체를 사용하세요.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF에 배경 추가하기 C#",
-    "alternativeHeadline": "PDF에서 배경 작업하기",
+    "headline": "Add background to PDF",
+    "alternativeHeadline": "Add Custom Backgrounds to PDFs with C#",
+    "abstract": "C#을 사용하여 PDF 문서에 배경 이미지를 원활하게 통합할 수 있는 기능을 소개합니다. 이 기능은 BackgroundArtifact 객체를 활용하여 워터마크나 미세한 텍스처와 같은 향상된 디자인 옵션을 제공하며, 최소한의 노력으로 PDF를 돋보이게 만드는 데 적합합니다. 사용자 정의 배경을 손쉽게 추가하여 문서 레이아웃을 향상시키는 방법을 알아보세요.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "PDF, C#, PDF에서 배경",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "keywords": "Add background to PDF, BackgroundArtifact object, PDF manipulation, C# PDF library, watermark in PDF, Aspose.PDF for .NET, add background image, PDF document generation, PDF artifacts, document background settings",
+    "wordcount": "228",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,39 +74,43 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-backgrounds/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#을 사용하여 PDF 파일에 배경 이미지를 추가하세요. BackgroundArtifact 객체를 사용합니다."
+    "dateModified": "2024-11-26",
+    "description": "C#을 사용하여 PDF 파일에 배경 이미지를 추가합니다. BackgroundArtifact 객체를 사용하세요."
 }
 </script>
-배경 이미지는 워터마크 또는 문서에 섬세한 디자인을 추가하는 데 사용할 수 있습니다. Aspose.PDF for .NET에서 각 PDF 문서는 페이지의 모음이며 각 페이지는 아티팩트 모음을 포함하고 있습니다. [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) 클래스를 사용하여 페이지 객체에 배경 이미지를 추가할 수 있습니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+배경 이미지는 문서에 워터마크 또는 기타 미세한 디자인을 추가하는 데 사용할 수 있습니다. Aspose.PDF for .NET에서 각 PDF 문서는 페이지 모음이며 각 페이지는 아티팩트 모음을 포함합니다. [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) 클래스를 사용하여 페이지 객체에 배경 이미지를 추가할 수 있습니다.
 
-다음 코드 조각은 C#을 사용하여 PDF 페이지에 배경 이미지를 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+
+다음 코드 스니펫은 C#을 사용하여 BackgroundArtifact 객체로 PDF 페이지에 배경 이미지를 추가하는 방법을 보여줍니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하십시오.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// 새 Document 객체를 생성합니다.
-Document doc = new Document();
-
-// 문서 객체에 새 페이지를 추가합니다.
-Page page = doc.Pages.Add();
-
-// 배경 Artifact 객체를 생성합니다.
-BackgroundArtifact background = new BackgroundArtifact();
-
-// backgroundartifact 객체에 이미지를 지정합니다.
-background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg");
-
-// 페이지의 아티팩트 컬렉션에 backgroundartifact를 추가합니다.
-page.Artifacts.Add(background);
-
-dataDir = dataDir + "ImageAsBackground_out.pdf";
-// 문서를 저장합니다.
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBackgroundToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Image for background artifact object
+        using (var image = File.OpenRead(dataDir + "aspose-total-for-net.jpg"))
+        {
+            // Add page
+            Page page = document.Pages.Add();
+            // Create Background Artifact object
+            var background = new Aspose.Pdf.BackgroundArtifact();
+            // Specify the image for background artifact object
+            background.BackgroundImage = image;
+            // Add background artifact to artifacts collection of page
+            page.Artifacts.Add(background);
+            // Save PDF document
+            document.Save(dataDir + "ImageAsBackground_out.pdf");
+        }
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -132,23 +139,23 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "영업",
-                "areaServed": "미국",
-                "availableLanguage": "영어"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "영업",
-                "areaServed": "영국",
-                "availableLanguage": "영어"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
-                "areaServed": "호주",
-                "availableLanguage": "영어"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -157,7 +164,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET을 위한 PDF 조작 라이브러리",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -169,5 +176,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

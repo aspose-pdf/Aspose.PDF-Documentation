@@ -2,9 +2,11 @@
 title: 주석 추가, 삭제 및 가져오기
 linktitle: 주석 추가, 삭제 및 가져오기
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ko/net/add-delete-and-get-annotation/
-description: Aspose.PDF for .NET을 사용하면 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하세요.
+description: Aspose.PDF for .NET을 사용하여 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하십시오.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "주석 추가, 삭제 및 가져오기",
-    "alternativeHeadline": "PDF 파일에서 주석 작업",
+    "headline": "Add, Delete and Get Annotation",
+    "alternativeHeadline": "Manage PDF Annotations with Aspose.PDF for .NET",
+    "abstract": "Aspose.PDF for .NET의 새로운 주석 추가, 삭제 및 가져오기 기능으로 PDF 조작 능력을 향상시키십시오. 이 강력한 기능은 사용자가 PDF 파일 내에서 주석을 원활하게 관리할 수 있도록 하여 편집을 간소화하고 콘텐츠 상호작용을 개선합니다. 특정 문서 요구 사항을 충족하기 위해 다양한 유형의 주석을 사용하는 방법을 알아보십시오.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "PDF, C#, 주석 추가, 주석 가져오기, 주석 삭제",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "keywords": "add annotation, delete annotation, get annotation, Aspose.PDF for .NET, PDF document generation, PDF annotations, multimedia annotation, PDF text annotation, highlights annotation, PDF manipulation library",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,23 +74,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-delete-and-get-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET을 사용하면 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하세요."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET을 사용하여 PDF 파일에서 주석을 추가, 삭제 및 가져올 수 있습니다. 작업을 해결하기 위해 모든 주석 목록을 확인하십시오."
 }
 </script>
-**PDF 문서에서의 주석은 무엇입니까?**
 
-이것들은 텍스트의 내용을 확장하고, 수정하고, 다른 사용자를 위한 코멘트를 추가하기 위해 파일에 추가하는 추가 객체입니다. 또한 문서의 텍스트를 더 읽기 쉽게 만들고, 강조하고, 밑줄을 긋거나 완전히 새로운 텍스트를 추가할 수도 있습니다.
+**PDF 문서에서 주석이란 무엇인가요?**
 
-Aspose.PDF for .NET 라이브러리에서 사용 가능한 다양한 종류의 주석을 그룹으로 묶었습니다:
+주석은 파일에 추가하여 텍스트의 내용을 확장하고, 편집하고, 다른 사용자에게 댓글을 달기 위해 추가하는 추가 객체입니다. 문서의 텍스트를 더 읽기 쉽게 만들고, 강조 표시하고, 밑줄을 긋거나 완전히 새로운 텍스트를 추가하는 것도 가능합니다.
 
-- [PDF 텍스트 주석](/pdf/ko/net/text-annotation/)
-- [PDF 하이라이트 주석](/pdf/ko/net/highlights-annotation/)
-- [PDF 도형 주석](/pdf/ko/net/figures-annotation/)
-- [멀티미디어 주석](/pdf/ko/net/multimedia-annotation/)
-- [PDF 스티키 주석](/pdf/ko/net/sticky-annotations/)
-- [링크 주석](/pdf/ko/net/link-annotations/)
-- [추가 주석](/pdf/ko/net/extra-annotations/)
+우리는 Aspose.PDF for .NET 라이브러리에서 사용할 수 있는 다양한 종류의 주석을 그룹으로 통합했습니다:
+
+- [PDF 텍스트 주석](/pdf/net/text-annotation/)
+- [PDF 하이라이트 주석](/pdf/net/highlights-annotation/)
+- [PDF 도형 주석](/pdf/net/figures-annotation/)
+- [멀티미디어 주석](/pdf/net/multimedia-annotation/)
+- [PDF 스티키 주석](/pdf/net/sticky-annotations/)
+- [링크 주석](/pdf/net/link-annotations/)
+- [추가 주석](/pdf/net/extra-annotations/)
 
 <script type="application/ld+json">
 {
@@ -152,4 +156,3 @@ Aspose.PDF for .NET 라이브러리에서 사용 가능한 다양한 종류의 �
     }
 }
 </script>
-

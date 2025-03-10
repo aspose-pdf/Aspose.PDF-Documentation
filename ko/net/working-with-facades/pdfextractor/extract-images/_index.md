@@ -1,204 +1,311 @@
 ---
 title: PdfExtractor를 사용하여 이미지 추출
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ko/net/extract-images/
-description: 이 섹션은 PdfExtractor 클래스를 사용하여 Aspose.PDF Facades로 이미지를 추출하는 방법을 설명합니다.
+description: 이 섹션에서는 PdfExtractor 클래스를 사용하여 Aspose.PDF Facades로 이미지를 추출하는 방법을 설명합니다.
 lastmod: "2021-07-15"
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Images using PdfExtractor",
+    "alternativeHeadline": "Extract Images from PDF with PdfExtractor Class",
+    "abstract": "Aspose.PDF의 PdfExtractor 기능은 사용자가 PDF 문서에서 이미지를 효율적으로 추출할 수 있도록 하며, 전체 문서, 특정 페이지 또는 지정된 범위에서 이미지를 추출하는 여러 옵션을 제공합니다. 이미지를 파일이나 메모리 스트림에 직접 저장할 수 있어 PDF 자산을 다루는 개발자에게 유연성을 제공합니다. 이 강력한 기능은 이미지 추출 모드에 대한 정밀한 제어를 가능하게 하여 다양한 PDF 콘텐츠 유형을 처리하기 쉽게 만듭니다.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1789",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-images/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-images/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF는 간단하고 쉬운 작업뿐만 아니라 더 복잡한 목표도 처리할 수 있습니다. 고급 사용자 및 개발자를 위한 다음 섹션을 확인하세요."
+}
+</script>
 
 ## 전체 PDF에서 파일로 이미지 추출 (Facades)
 
-[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 PDF 파일에서 이미지를 추출할 수 있게 해줍니다.
-``` First off, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method.
-
-우선, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메소드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그런 다음 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 메모리에 모든 이미지를 추출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 얻을 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 디스크에 저장하려면 파일 경로를 인수로 사용하는 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 오버로드를 호출할 수 있습니다. 다음 코드 스니펫은 전체 PDF에서 파일로 이미지를 추출하는 방법을 보여줍니다.
+[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 PDF 파일에서 이미지를 추출할 수 있게 해줍니다. 먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 모든 이미지를 메모리로 추출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 가져올 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 디스크에 저장하려면 파일 경로를 인수로 받는 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 오버로드를 호출할 수 있습니다. 다음 코드 스니펫은 전체 PDF에서 파일로 이미지를 추출하는 방법을 보여줍니다.
 
 ```csharp
-   public static void ExtractImagesWholePDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesWholePDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
+    {
+        // Bind PDF document
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+
+        // Extract all the images
+        extractor.ExtractImage();
+
+        // Get all the extracted images
+        while (extractor.HasNextImage())
         {
-            // 입력 PDF 열기
-            PdfExtractor pdfExtractor = new PdfExtractor();
-            pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
-
-            // 모든 이미지 추출
-            pdfExtractor.ExtractImage();
-
-            // 모든 추출된 이미지 가져오기
-            while (pdfExtractor.HasNextImage())
-                pdfExtractor.GetNextImage(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
+            extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg");
         }
+    }
+}
 ```
-## Extract Images from the Whole PDF to Streams (Facades)
 
-[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 PDF 파일에서 이미지를 스트림으로 추출할 수 있도록 합니다. 
-우선, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다.
-``` 그 후, 모든 이미지를 메모리로 추출하기 위해 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출합니다. 이미지가 추출되면, [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 도움으로 이러한 이미지를 가져올 수 있습니다. while 루프를 사용하여 추출된 모든 이미지를 반복해야 합니다. 이미지를 스트림에 저장하기 위해 Stream을 인수로 받는 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 오버로드를 호출할 수 있습니다. 다음 코드 조각은 전체 PDF에서 이미지를 스트림으로 추출하는 방법을 보여줍니다.
+## 전체 PDF에서 스트림으로 이미지 추출 (Facades)
+
+[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 PDF 파일에서 이미지를 스트림으로 추출할 수 있게 해줍니다. 먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 모든 이미지를 메모리로 추출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 가져올 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 스트림에 저장하려면 Stream을 인수로 받는 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 오버로드를 호출할 수 있습니다. 다음 코드 스니펫은 전체 PDF에서 스트림으로 이미지를 추출하는 방법을 보여줍니다.
 
 ```csharp
-    public static void ExtractImagesWholePDFStreams()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesWholePDFStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
+    {
+        // Bind PDF document
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+
+        // Extract images
+        extractor.ExtractImage();
+        // Get all the extracted images
+        while (extractor.HasNextImage())
         {
-            // 입력 PDF 열기
-            PdfExtractor pdfExtractor = new PdfExtractor();
-            pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+            // Read image into memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            extractor.GetNextImage(memoryStream);
 
-            // 이미지 추출
-            pdfExtractor.ExtractImage();
-            // 모든 추출된 이미지 가져오기
-            while (pdfExtractor.HasNextImage())
+            // Write to disk, if you like, or use it otherwise
+            using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
             {
-                // 메모리 스트림으로 이미지 읽기
-                MemoryStream memoryStream = new MemoryStream();
-                pdfExtractor.GetNextImage(memoryStream);
-
-                // 디스크에 저장하거나 다른 용도로 사용
-                FileStream fileStream = new
-                FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
                 memoryStream.WriteTo(fileStream);
-                fileStream.Close();
             }
         }
-```
-## Extract Images from a Particular Page of a PDF (Facades)
-
-특정 페이지의 PDF 파일에서 이미지를 추출할 수 있습니다. In order to do that, you need to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties to the particular page you want to extract images from.
-
-그렇게 하려면 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 이미지 추출을 원하는 특정 페이지로 설정해야 합니다. 먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. Secondly, you have to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) * 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 설정해야 합니다. 그 후, [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 모든 이미지를 메모리에 추출합니다. 이미지가 추출되면, [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 이미지를 얻을 수 있습니다. while 루프를 사용하여 추출된 모든 이미지를 반복해야 합니다. 이미지를 디스크에 저장하거나 스트림에 저장할 수 있습니다. [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 적절한 오버로드를 호출하기만 하면 됩니다. 다음 코드 스니펫은 PDF의 특정 페이지에서 스트림으로 이미지를 추출하는 방법을 보여줍니다.
-
-```csharp
-public static void ExtractImagesParticularPage()
-{
-    // 입력 PDF 열기
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
-
-    // 추출하려는 페이지 번호에 StartPage 및 EndPage 속성 설정
-    pdfExtractor.StartPage = 2;
-    pdfExtractor.EndPage = 2;
-
-    // 이미지 추출
-    pdfExtractor.ExtractImage();
-    // 추출된 이미지 가져오기
-    while (pdfExtractor.HasNextImage())
-    {
-        // 메모리 스트림에 이미지를 읽습니다.
-        MemoryStream memoryStream = new MemoryStream();
-        pdfExtractor.GetNextImage(memoryStream);
-
-        // 원한다면 디스크에 쓰거나 다른 용도로 사용합니다.
-        FileStream fileStream = new
-        FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
-        memoryStream.WriteTo(fileStream);
-        fileStream.Close();
     }
 }
 ```
-## Extract Images from a Range of Pages of a PDF (Facades)
 
-PDF 파일의 여러 페이지 범위에서 이미지를 추출할 수 있습니다. In order to do that, you need to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage)  and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties to the range of pages you want to extract images from.
+## PDF의 특정 페이지에서 이미지 추출 (Facades)
 
-그렇게 하려면 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 이미지 추출을 원하는 페이지 범위로 설정해야 합니다. 첫째로, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인드해야 합니다. Secondly, you have to set [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage)  and [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) properties.
-
-둘째로, [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 설정해야 합니다. 그런 다음 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 모든 이미지를 메모리로 추출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 얻을 수 있습니다. while 루프를 사용하여 추출된 모든 이미지를 반복해야 합니다. 이미지를 디스크에 저장하거나 스트림으로 저장할 수 있습니다. [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 적절한 오버로드를 호출하기만 하면 됩니다. 다음 코드 조각은 PDF의 여러 페이지에서 스트림으로 이미지를 추출하는 방법을 보여줍니다.
+PDF 파일의 특정 페이지에서 이미지를 추출할 수 있습니다. 이를 위해 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 추출할 페이지로 설정해야 합니다. 먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 다음, [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 설정해야 합니다. 그 후, [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 모든 이미지를 메모리로 추출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 가져올 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 디스크나 스트림에 저장할 수 있습니다. 적절한 오버로드의 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 호출하기만 하면 됩니다. 다음 코드 스니펫은 PDF의 특정 페이지에서 스트림으로 이미지를 추출하는 방법을 보여줍니다.
 
 ```csharp
-public static void ExtractImagesRangePages()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesParticularPage()
 {
-    // 입력 PDF 열기
-    PdfExtractor pdfExtractor = new PdfExtractor();
-    pdfExtractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // StartPage 및 EndPage 속성을 페이지 번호로 설정하여
-    // 이미지 추출을 원하는 페이지
-    pdfExtractor.StartPage = 2;
-    pdfExtractor.EndPage = 2;
-
-    // 이미지 추출
-    pdfExtractor.ExtractImage();
-    // 추출된 이미지 가져오기
-    while (pdfExtractor.HasNextImage())
+    // Open PDF document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        // 메모리 스트림으로 이미지 읽기
-        MemoryStream memoryStream = new MemoryStream();
-        pdfExtractor.GetNextImage(memoryStream);
+        // Bind PDF document
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
 
-        // 디스크에 쓰거나 원하는 경우 사용하십시오.
-        FileStream fileStream = new
-        FileStream(_dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create);
-        memoryStream.WriteTo(fileStream);
-        fileStream.Close();
+        // Set StartPage and EndPage properties to the page number to
+        // You want to extract images from
+        extractor.StartPage = 2;
+        extractor.EndPage = 2;
+
+        // Extract images
+        extractor.ExtractImage();
+        // Get extracted images
+        while (extractor.HasNextImage())
+        {
+            // Read image into memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            extractor.GetNextImage(memoryStream);
+
+            // Write to disk, if you like, or use it otherwise
+            using (FileStream fileStream = new FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+            {
+                memoryStream.WriteTo(fileStream);
+            }
+        }
     }
 }
 ```
-## 이미지 추출 모드 사용하여 이미지 추출 (파사드)
 
-[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 PDF 파일에서 이미지를 추출할 수 있게 해줍니다. Aspose.PDF는 두 가지 추출 모드를 지원합니다. 첫 번째는 PDF 문서에 실제로 사용된 이미지를 추출하는 ActuallyUsedImage입니다. ```
-Second mode is [DefinedInResources](https://reference.aspose.com/pdf/net/aspose.pdf/extractimagemode) which extract the images defined in the resources of the PDF document (default extraction mode).
+## PDF의 페이지 범위에서 이미지 추출 (Facades)
+
+PDF 파일의 페이지 범위에서 이미지를 추출할 수 있습니다. 이를 위해 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 추출할 페이지 범위로 설정해야 합니다. 먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 다음, [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/startpage) 및 [EndPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/endpage) 속성을 설정해야 합니다. 그 후, [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 모든 이미지를 메모리로 추출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 가져올 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 디스크나 스트림에 저장할 수 있습니다. 적절한 오버로드의 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 호출하기만 하면 됩니다. 다음 코드 스니펫은 PDF의 페이지 범위에서 스트림으로 이미지를 추출하는 방법을 보여줍니다.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesRangePages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open input PDF
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
+    {
+        // Bind PDF document
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+
+        // Set StartPage and EndPage properties to the page number to
+        // You want to extract images from
+        extractor.StartPage = 2;
+        extractor.EndPage = 2;
+
+        // Extract images
+        extractor.ExtractImage();
+
+        // Get extracted images
+        while (extractor.HasNextImage())
+        {
+            // Read image into memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            extractor.GetNextImage(memoryStream);
+
+            // Write to disk, if you like, or use it otherwise
+            using (FileStream fileStream = new
+            FileStream(dataDir + DateTime.Now.Ticks.ToString() + "_out.jpg", FileMode.Create))
+            {
+                memoryStream.WriteTo(fileStream);
+            }
+        }
+    }
+}
 ```
 
-두 번째 모드는 PDF 문서의 리소스에 정의된 이미지를 추출하는 [DefinedInResources](https://reference.aspose.com/pdf/net/aspose.pdf/extractimagemode)입니다 (기본 추출 모드). First, you need to create an object of [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) class and bind input PDF file using [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) method.  
-먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메소드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그런 다음, [PdfExtractor.ExtractImageMode](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/extractimagemode) 속성을 사용하여 이미지 추출 모드를 지정하세요. 그런 다음 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출하여 지정한 모드에 따라 모든 이미지를 메모리로 추출합니다. 이미지가 추출되면, [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 이미지를 얻을 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 디스크에 저장하려면 파일 경로를 인수로 취하는 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 오버로드를 호출할 수 있습니다.
+## 이미지 추출 모드를 사용하여 이미지 추출 (Facades)
+
+[PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스는 PDF 파일에서 이미지를 추출할 수 있게 해줍니다. Aspose.PDF는 두 가지 추출 모드를 지원합니다. 첫 번째는 PDF 문서에서 실제로 사용된 이미지를 추출하는 ActuallyUsedImage입니다. 두 번째 모드는 PDF 문서의 리소스에 정의된 이미지를 추출하는 [DefinedInResources](https://reference.aspose.com/pdf/net/aspose.pdf/extractimagemode)입니다(기본 추출 모드). 먼저, [PdfExtractor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor) 클래스의 객체를 생성하고 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/bindpdf/index) 메서드를 사용하여 입력 PDF 파일을 바인딩해야 합니다. 그 후, [PdfExtractor.ExtractImageMode](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/properties/extractimagemode) 속성을 사용하여 이미지 추출 모드를 지정합니다. 그런 다음, 지정한 모드에 따라 모든 이미지를 메모리로 추출하기 위해 [ExtractImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/extractimage) 메서드를 호출합니다. 이미지가 추출되면 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfextractor/methods/hasnextimage) 및 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드를 사용하여 해당 이미지를 가져올 수 있습니다. while 루프를 사용하여 모든 추출된 이미지를 반복해야 합니다. 이미지를 디스크에 저장하려면 파일 경로를 인수로 받는 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfextractor/getnextimage/methods/1) 메서드의 오버로드를 호출할 수 있습니다.
 
 다음 코드 스니펫은 ExtractImageMode 옵션을 사용하여 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
+
 ```csharp
-public static void ExtractImagesImageExtractionMode()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesImageExtractionMode()
 {
-    // 입력 PDF 열기
-    PdfExtractor extractor = new PdfExtractor();
-    extractor.BindPdf(_dataDir + "sample_cats_dogs.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // 이미지 추출 모드 지정
-    //extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
-    extractor.ExtractImageMode = ExtractImageMode.DefinedInResources;
-
-    // 이미지 추출 모드에 따라 이미지 추출
-    extractor.ExtractImage();
-
-    // 추출된 모든 이미지 가져오기
-    while (extractor.HasNextImage())
+    // Open PDF document
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
     {
-        extractor.GetNextImage(_dataDir + DateTime.Now.Ticks.ToString() + "_out.png", System.Drawing.Imaging.ImageFormat.Png);
+        // Bind PDF document
+        extractor.BindPdf(dataDir + "sample_cats_dogs.pdf");
+
+        // Specify Image Extraction Mode
+        //extractor.ExtractImageMode = ExtractImageMode.ActuallyUsed;
+        extractor.ExtractImageMode = Aspose.Pdf.ExtractImageMode.DefinedInResources;
+
+        // Extract Images based on Image Extraction Mode
+        extractor.ExtractImage();
+
+        // Get all the extracted images
+        while (extractor.HasNextImage())
+        {
+            extractor.GetNextImage(dataDir + DateTime.Now.Ticks.ToString() + "_out.png", System.Drawing.Imaging.ImageFormat.Png);
+        }
     }
 }
 ```
 
-PDF가 텍스트 또는 이미지를 포함하는지 확인하려면 다음 코드 스니펫을 사용하십시오:
+PDF에 텍스트 또는 이미지가 포함되어 있는지 확인하려면 다음 코드 스니펫을 사용하세요:
 
 ```csharp
-public static void CheckIfPdfContainsTextOrImages()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckIfPdfContainsTextOrImages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Instantiate a memoryStream object to hold the extracted text from Document
+    MemoryStream ms = new MemoryStream();
+    // Instantiate PdfExtractor object
+    using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
+    {
+        // Bind PDF document
+        extractor.BindPdf(dataDir + "FilledForm.pdf");
+        // Extract text from the input PDF document
+        extractor.ExtractText();
+        // Save the extracted text to a text file
+        extractor.GetText(ms);
+        // Check if the MemoryStream length is greater than or equal to 1
+
+        bool containsText = ms.Length >= 1;
+
+        // Extract images from the input PDF document
+        extractor.ExtractImage();
+
+        // Calling HasNextImage method in while loop. When images will finish, loop will exit
+        bool containsImage = extractor.HasNextImage();
+
+        // Now find out whether this PDF is text only or image only
+
+        if (containsText && !containsImage)
         {
-            // 문서에서 추출된 텍스트를 보관할 memoryStream 객체 인스턴스화
-            MemoryStream ms = new MemoryStream();
-            // PdfExtractor 객체 인스턴스화
-            PdfExtractor extractor = new PdfExtractor();
-
-            // 입력 PDF 문서를 추출기에 바인딩
-            extractor.BindPdf(_dataDir + "FilledForm.pdf");
-            // 입력 PDF 문서에서 텍스트 추출
-            extractor.ExtractText();
-            // 추출된 텍스트를 텍스트 파일에 저장
-            extractor.GetText(ms);
-            // MemoryStream 길이가 1 이상인지 확인
-
-            bool containsText = ms.Length >= 1;
-
-            // 입력 PDF 문서에서 이미지 추출
-            extractor.ExtractImage();
-
-            // while 루프에서 HasNextImage 메서드 호출. 이미지가 끝나면 루프 종료
-            bool containsImage = extractor.HasNextImage();
-
-            // 이제 이 PDF가 텍스트만 포함하는지, 이미지만 포함하는지 확인
-
-            if (containsText && !containsImage)
-                Console.WriteLine("PDF는 텍스트만 포함합니다.");
-            else if (!containsText && containsImage)
-                Console.WriteLine("PDF는 이미지만 포함합니다.");
-            else if (containsText && containsImage)
-                Console.WriteLine("PDF는 텍스트와 이미지를 모두 포함합니다.");
-            else if (!containsText && !containsImage)
-                Console.WriteLine("PDF는 텍스트나 이미지를 포함하지 않습니다.");
+            Console.WriteLine("PDF contains text only");
         }
-
+        else if (!containsText && containsImage)
+        {
+            Console.WriteLine("PDF contains image only");
+        }
+        else if (containsText && containsImage)
+        {
+            Console.WriteLine("PDF contains both text and image");
+        }
+        else if (!containsText && !containsImage)
+        {
+            Console.WriteLine("PDF contains neither text or nor image");
+        }
     }
+}
 ```

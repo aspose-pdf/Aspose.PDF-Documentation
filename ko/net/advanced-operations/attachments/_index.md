@@ -1,35 +1,41 @@
 ---
-title: PDF에서 첨부 파일 다루기
-linktitle: 첨부 파일 다루기
+title: PDF에서 첨부파일 작업하기
+linktitle: 첨부파일 작업하기
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /ko/net/attachments/
-description: C# PDF API를 사용하여 애플리케이션 내에서 PDF 파일의 첨부 파일에 접근하고 추가 및 제거하는 방법을 안내합니다. C# 코드 샘플이 포함된 완벽한 가이드입니다.
+description: C# PDF API를 사용하여 애플리케이션 내에서 PDF 파일의 첨부파일에 접근하고, 추가하고, 제거하는 방법을 설명합니다. C# 코드 샘플이 포함된 완벽한 가이드입니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-attachments/
+    - /net/working-with-attachments-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF에서 첨부 파일 다루기",
-    "alternativeHeadline": "PDF 파일의 첨부 파일",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "강력한 C# PDF API를 사용하여 PDF 파일의 첨부파일을 효율적으로 관리하는 방법을 알아보세요. 이 기능은 개발자가 PDF에 첨부된 다양한 파일 유형에 접근하고, 추가하고, 제거할 수 있도록 하며, 애플리케이션에 원활하게 통합할 수 있는 자세한 C# 코드 샘플이 포함되어 있습니다. 이 포괄적인 가이드를 활용하여 PDF 조작 기능을 향상시키세요.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "PDF, C#, PDF의 첨부 파일",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,18 +77,19 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C# PDF API를 사용하여 애플리케이션 내에서 PDF 파일의 첨부 파일에 접근하고 추가 및 제거하는 방법을 안내합니다. C# 코드 샘플이 포함된 완벽한 가이드입니다."
+    "dateModified": "2024-11-25",
+    "description": "C# PDF API를 사용하여 애플리케이션 내에서 PDF 파일의 첨부파일에 접근하고, 추가하고, 제거하는 방법을 설명합니다. C# 코드 샘플이 포함된 완벽한 가이드입니다."
 }
 </script>
-이 섹션에서는 Aspose.PDF for .NET을 사용하여 PDF에서 첨부 파일을 다루는 방법을 설명합니다.
-첨부 파일은 부모 문서에 첨부된 추가 파일로, pdf, word, image 또는 기타 파일 유형일 수 있습니다.
-PDF에 첨부 파일을 추가하고, 첨부 파일 정보를 가져오고, 파일로 저장하고, C#을 사용하여 프로그래밍 방식으로 PDF에서 첨부 파일을 삭제하는 방법을 배우게 됩니다.
 
-- [PDF 문서에 첨부 파일 추가](/pdf/ko/net/add-attachment-to-pdf-document/)
-- [첨부 파일 추출 및 저장](/pdf/ko/net/extract-and-save-an-attachment/)
-- [기존 PDF에서 첨부 파일 제거](/pdf/ko/net/removing-attachment-from-an-existing-pdf/)
-- [포트폴리오](/pdf/ko/net/portfolio/)
+이 섹션에서는 Aspose.PDF for .NET을 사용하여 PDF에서 첨부파일 작업하는 방법을 설명합니다.
+첨부파일은 부모 문서에 첨부된 추가 파일로, pdf, word, 이미지 또는 기타 파일 유형이 될 수 있습니다.
+PDF에 첨부파일을 추가하고, 첨부파일 정보를 가져오고, 파일로 저장하고, C#을 사용하여 프로그래밍 방식으로 PDF에서 첨부파일을 삭제하는 방법을 배우게 됩니다.
+
+- [PDF 문서에 첨부파일 추가하기](/pdf/net/add-attachment-to-pdf-document/)
+- [첨부파일 추출 및 저장하기](/pdf/net/extract-and-save-an-attachment/)
+- [기존 PDF에서 첨부파일 제거하기](/pdf/net/removing-attachment-from-an-existing-pdf/)
+- [포트폴리오](/pdf/net/portfolio/)
 
 <script type="application/ld+json">
 {
@@ -147,4 +154,3 @@ PDF에 첨부 파일을 추가하고, 첨부 파일 정보를 가져오고, 파�
     }
 }
 </script>
-To provide a thorough translation, please include the document content that you need translated into Korean.

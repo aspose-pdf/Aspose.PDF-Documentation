@@ -1,35 +1,40 @@
 ---
-title: C#을 사용하여 PDF 크기 최적화, 압축 또는 축소
+title: C#에서 PDF 크기 최적화, 압축 또는 축소
 linktitle: PDF 최적화
 type: docs
-weight: 30
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 40
 url: /ko/net/optimize-pdf/
-description: PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 임베드되지 않은 글꼴 제거, C#을 사용하여 사용되지 않는 객체 제거.
+description: C#을 사용하여 PDF 파일을 최적화하고, 모든 이미지를 축소하고, PDF 크기를 줄이고, 글꼴을 언임베드하고, 사용하지 않는 객체를 제거합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /net/changing-page-sizes-in-a-pdf-file/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#을 사용한 PDF 최적화",
-    "alternativeHeadline": ".NET을 이용한 PDF 최적화 방법",
+    "headline": "Optimize, Compress or Reduce PDF Size in C#",
+    "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
+    "abstract": "C#의 새로운 PDF 최적화 기능은 개발자가 이미지를 압축하고, 글꼴을 언임베드하고, 사용하지 않는 객체를 제거하는 등 여러 전략을 사용하여 PDF 파일 크기를 크게 줄일 수 있도록 합니다. 이 개선은 웹 게시, 이메일 공유 및 저장을 위한 효율성을 향상시켜 대형 PDF 문서 관리를 위한 효과적인 솔루션을 제공합니다.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, c#, optimize pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
+    "genre": "pdf document generation",
+    "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
+    "wordcount": "2282",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,20 +76,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "PDF 파일 최적화, 모든 이미지 축소, PDF 크기 줄이기, 임베드되지 않은 글꼴 제거, C#을 사용하여 사용되지 않는 객체 제거."
+    "dateModified": "2024-11-25",
+    "description": "C#을 사용하여 PDF 파일을 최적화하고, 모든 이미지를 축소하고, PDF 크기를 줄이고, 글꼴을 언임베드하고, 사용하지 않는 객체를 제거합니다."
 }
 </script>
-PDF 문서에는 때때로 추가 데이터가 포함되어 있을 수 있습니다. PDF 파일의 크기를 줄이면 네트워크 전송 및 저장 공간을 최적화할 수 있습니다. 이는 웹 페이지에 게시하거나 소셜 네트워크에 공유하거나 이메일로 보내거나 저장소에 보관하는 경우 특히 유용합니다. PDF를 최적화하기 위해 여러 기술을 사용할 수 있습니다:
 
-- 온라인 탐색에 맞게 페이지 콘텐츠 최적화
-- 모든 이미지 축소 또는 압축
-- 페이지 콘텐츠 재사용 활성화
-- 중복 스트림 병합
-- 포함되지 않은 글꼴
-- 사용되지 않는 객체 제거
-- 평면화 폼 필드 제거
-- 주석 제거 또는 평면화
+PDF 문서에는 때때로 추가 데이터가 포함될 수 있습니다. PDF 파일의 크기를 줄이면 네트워크 전송 및 저장을 최적화하는 데 도움이 됩니다. 이는 웹 페이지에 게시하거나, 소셜 네트워크에서 공유하거나, 이메일로 전송하거나, 저장소에 보관할 때 특히 유용합니다. PDF를 최적화하기 위해 여러 기술을 사용할 수 있습니다:
+
+- 온라인 브라우징을 위한 페이지 콘텐츠 최적화.
+- 모든 이미지 축소 또는 압축.
+- 페이지 콘텐츠 재사용 활성화.
+- 중복 스트림 병합.
+- 글꼴 언임베드.
+- 사용하지 않는 객체 제거.
+- 평면화된 양식 필드 제거.
+- 주석 제거 또는 평면화.
 
 {{% alert color="primary" %}}
 
@@ -92,331 +98,432 @@ PDF 문서에는 때때로 추가 데이터가 포함되어 있을 수 있습니
 
 {{% /alert %}}
 
-## 웹용 PDF 문서 최적화
+## 웹을 위한 PDF 문서 최적화
 
-웹용 최적화 또는 선형화는 웹 브라우저를 사용하여 온라인 탐색에 적합한 PDF 파일을 만드는 과정을 말합니다. 파일을 웹 표시용으로 최적화하려면:
+웹을 위한 최적화 또는 선형화는 PDF 파일을 웹 브라우저에서 온라인 브라우징에 적합하도록 만드는 과정을 의미합니다. 웹 표시를 위해 파일을 최적화하려면:
 
-1. [문서](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체에서 입력 문서를 엽니다.
-1.
-1. 최적화된 문서를 [저장](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메소드를 사용하여 저장하세요.
+1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체에서 입력 문서를 엽니다.
+1. [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) 메서드를 사용합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 최적화된 문서를 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
 
-다음 코드 스니펫은 웹용 PDF 문서를 최적화하는 방법을 보여줍니다.
+다음 코드 스니펫은 웹을 위해 PDF 문서를 최적화하는 방법을 보여줍니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인해 주세요.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Optimize for web
+        document.Optimize();
 
-// 웹용 최적화
-pdfDocument.Optimize();
-
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-
-// 출력 문서 저장
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
 ## PDF 크기 줄이기
 
-[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) 메소드를 사용하면 필요하지 않은 정보를 제거함으로써 문서 크기를 줄일 수 있습니다.
-[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) 메소드를 사용하면 불필요한 정보를 제거하여 문서 크기를 줄일 수 있습니다.
+[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) 메서드는 불필요한 정보를 제거하여 문서 크기를 줄일 수 있습니다. 기본적으로 이 메서드는 다음과 같이 작동합니다:
 
-- 문서 페이지에서 사용되지 않는 리소스는 제거됩니다
-- 동등한 리소스는 하나의 객체로 합쳐집니다
-- 사용되지 않는 객체는 삭제됩니다
+- 문서 페이지에서 사용되지 않는 리소스가 제거됩니다.
+- 동일한 리소스가 하나의 객체로 결합됩니다.
+- 사용하지 않는 객체가 삭제됩니다.
 
-아래 스니펫은 예제입니다. 그러나 이 메서드가 문서 축소를 보장할 수 없다는 점에 유의하세요.
+아래 스니펫은 예시입니다. 그러나 이 메서드는 문서 축소를 보장할 수 없습니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "ShrinkDocument.pdf");
-// PDF 문서 최적화. 그러나 이 메서드가 문서 축소를 보장할 수 없다는 점에 유의하세요
-pdfDocument.OptimizeResources();
-dataDir = dataDir + "ShrinkDocument_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ShrinkDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
+    {
+        // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
+        document.OptimizeResources();
+
+        // Save PDF document
+        document.Save(dataDir + "ShrinkDocument_out.pdf");
+    }
+}
 ```
 
 ## 최적화 전략 관리
 
-최적화 전략을 사용자 정의할 수도 있습니다.
-우리는 최적화 전략을 사용자 정의할 수도 있습니다.
+최적화 전략을 사용자 정의할 수도 있습니다. 현재 [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) 메서드는 5가지 기술을 사용합니다. 이러한 기술은 [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions) 매개변수를 사용하여 OptimizeResources() 메서드에 적용할 수 있습니다.
 
 ### 모든 이미지 축소 또는 압축
 
-이미지를 다루는 두 가지 방법이 있습니다: 이미지 품질을 줄이거나 해상도를 변경합니다. 어떤 경우든 [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)를 적용해야 합니다. 다음 예제에서는 [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)를 50으로 줄여 이미지를 축소합니다.
+이미지와 작업하는 두 가지 방법이 있습니다: 이미지 품질을 줄이거나 해상도를 변경하는 것입니다. 어떤 경우든 [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions)를 적용해야 합니다. 다음 예제에서는 [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality)를 50으로 줄여 이미지를 축소합니다.
 
-`ImageQuality`는 JPEG 품질과 유사하게 작동하며, 값 0은 최저이고 값 100은 최고입니다.
-
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET을 참조하세요.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "Shrinkimage.pdf");
-// OptimizationOptions 초기화
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
-// CompressImages 옵션 설정
-optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// ImageQuality 옵션 설정
-optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "Shrinkimage_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
-```
-다른 방법은 이미지를 낮은 해상도로 크기를 조정하는 것입니다. 이 경우, ResizeImages를 true로 설정하고 MaxResolution을 적절한 값으로 설정해야 합니다.
+`ImageQuality`는 JPEG 품질과 유사하게 작동하며, 값 0은 가장 낮고 값 100은 가장 높습니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 시간 초기화
-var time = DateTime.Now.Ticks;
-// 문서 디렉토리 경로
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "ResizeImage.pdf");
-// OptimizationOptions 초기화
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
-// CompressImages 옵션 설정
-optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// ImageQuality 옵션 설정
-optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
-// ResizeImage 옵션 설정
-optimizeOptions.ImageCompressionOptions.ResizeImages = true;
-// MaxResolution 옵션 설정
-optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
-// OptimizationOptions 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "ResizeImages_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
-```
-또 다른 중요한 문제는 실행 시간입니다. 하지만 이 설정도 관리할 수 있습니다. 현재 우리는 두 가지 알고리즘 - 표준과 빠른 -을 사용할 수 있습니다. 실행 시간을 제어하려면 [버전](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) 속성을 설정해야 합니다. 다음 스니펫은 빠른 알고리즘을 보여줍니다:
-
-```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 시간 초기화
-var time = DateTime.Now.Ticks;
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "Shrinkimage.pdf");
-// OptimizationOptions 초기화
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
-// CompressImages 옵션 설정
-optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// ImageQuality 옵션 설정
-optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
-// 이미지 압축 버전을 빠르게 설정
-optimizeOptions.ImageCompressionOptions.Version = Pdf.Optimization.ImageCompressionVersion.Fast;
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "FastShrinkImages_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
-Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
-```
-### 사용되지 않는 객체 제거
-
-PDF 문서에는 문서의 다른 객체에서 참조하지 않는 PDF 객체가 포함되어 있을 수 있습니다. 예를 들어, 문서 페이지 트리에서 페이지가 제거되었지만 페이지 객체 자체는 제거되지 않은 경우가 이에 해당합니다. 이러한 객체를 제거하면 문서가 유효하지 않게 되는 것이 아니라 문서의 크기가 줄어듭니다.
-
-```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// RemoveUsedObject 옵션 설정
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ShrinkImage()
 {
-    RemoveUnusedObjects = true
-};
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
+
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "Shrinkimage_out.pdf");
+    }
+}
 ```
 
-### 사용되지 않는 스트림 제거
-
-문서에는 사용되지 않는 리소스 스트림이 포함되어 있을 때가 있습니다.
-문서에는 가끔 사용하지 않는 리소스 스트림이 포함되어 있습니다.
+또 다른 방법은 해상도를 낮춰 이미지를 크기 조정하는 것입니다. 이 경우, ResizeImages를 true로 설정하고 MaxResolution을 적절한 값으로 설정해야 합니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리로의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// RemoveUsedStreams 옵션 설정
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ResizeImages()
 {
-    RemoveUnusedStreams = true
-};
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
+
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+
+        // Set ResizeImage option
+        optimizeOptions.ImageCompressionOptions.ResizeImages = true;
+
+        // Set MaxResolution option
+        optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "ResizeImages_out.pdf");
+    }
+}
+```
+
+또한 실행 시간도 중요한 문제입니다. 그러나 이 설정도 관리할 수 있습니다. 현재 두 가지 알고리즘 - 표준 및 빠른을 사용할 수 있습니다. 실행 시간을 제어하려면 [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version) 속성을 설정해야 합니다. 다음 스니펫은 빠른 알고리즘을 보여줍니다:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FastShrinkImages()
+{
+    // Initialize Time
+    var time = DateTime.Now.Ticks;
+
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
+
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+
+        // Set Image Compression Version to fast
+        optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "FastShrinkImages_out.pdf");
+    }
+
+    // Output the time taken for the operation
+    Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
+}
+```
+
+### 사용하지 않는 객체 제거
+
+PDF 문서에는 때때로 문서의 다른 객체에서 참조되지 않는 PDF 객체가 포함될 수 있습니다. 예를 들어, 페이지가 문서 페이지 트리에서 제거되었지만 페이지 객체 자체는 제거되지 않은 경우에 발생할 수 있습니다. 이러한 객체를 제거하면 문서가 무효화되지 않고 오히려 축소됩니다.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set RemoveUsedObject option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedObjects = true
+        };
+        
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
+```
+
+### 사용하지 않는 스트림 제거
+
+때때로 문서에는 사용되지 않는 리소스 스트림이 포함됩니다. 이러한 스트림은 페이지 리소스 사전에서 참조되기 때문에 "사용하지 않는 객체"가 아닙니다. 따라서 "사용하지 않는 객체 제거" 메서드로 제거되지 않습니다. 그러나 이러한 스트림은 페이지 콘텐츠와 함께 사용되지 않습니다. 이는 이미지가 페이지에서 제거되었지만 페이지 리소스에서는 제거되지 않은 경우에 발생할 수 있습니다. 또한, 페이지가 문서에서 추출되고 문서 페이지가 "공통" 리소스, 즉 동일한 Resources 객체를 가질 때 이러한 상황이 자주 발생합니다. 리소스 스트림이 사용되었는지 여부를 결정하기 위해 페이지 콘텐츠가 분석됩니다. 사용하지 않는 스트림이 제거됩니다. 이는 때때로 문서 크기를 줄입니다. 이 기술의 사용은 이전 단계와 유사합니다:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set RemoveUsedStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedStreams = true
+        };
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
 ### 중복 스트림 연결
 
-일부 문서는 여러 개의 동일한 리소스 스트림(예를 들어 이미지와 같은)을 포함할 수 있습니다.
-어떤 문서들은 여러 개의 동일한 리소스 스트림(예를 들어 이미지와 같은)을 포함할 수 있습니다.
+일부 문서에는 여러 개의 동일한 리소스 스트림(예: 이미지)이 포함될 수 있습니다. 이는 문서가 자신과 연결될 때 발생할 수 있습니다. 출력 문서에는 동일한 리소스 스트림의 두 개의 독립적인 복사본이 포함됩니다. 우리는 모든 리소스 스트림을 분석하고 비교합니다. 스트림이 중복되면 병합되어 하나의 복사본만 남습니다. 참조는 적절하게 변경되고 객체의 복사본은 제거됩니다. 경우에 따라 이는 문서 크기를 줄이는 데 도움이 됩니다.
 
 ```csharp
-// 완전한 예제와 데이터 파일을 보려면 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 으로 이동해 주세요.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// LinkDuplcateStreams 옵션 설정
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 {
-    LinkDuplcateStreams = true
-};
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set LinkDuplicateStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            LinkDuplicateStreams = true
+        };
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
-또한, [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 설정을 사용할 수 있습니다.
-추가적으로, [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 설정을 사용할 수 있습니다.
+또한 [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent) 설정을 사용할 수 있습니다. 이 속성이 true로 설정되면 동일한 페이지에 대해 문서를 최적화할 때 페이지 콘텐츠가 재사용됩니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// AllowReusePageContent 옵션 설정
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocumentWithReusePageContent()
 {
-    AllowReusePageContent = true
-};
-Console.WriteLine("시작");
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("완료");
-var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("원본 파일 크기: {0}. 줄어든 파일 크기: {1}", fi1.Length, fi2.Length);
-```
-### 글꼴 임베딩 해제
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-문서가 임베딩된 글꼴을 사용하는 경우, 모든 글꼴 데이터가 문서에 저장됩니다. 이점은 사용자의 기기에 글꼴이 설치되어 있지 않아도 문서를 볼 수 있다는 것입니다. 하지만 글꼴을 임베딩하면 문서의 크기가 커집니다. 글꼴 임베딩 해제 방법은 모든 임베딩된 글꼴을 제거합니다. 따라서 문서 크기가 줄어들지만, 올바른 글꼴이 설치되어 있지 않으면 문서가 읽을 수 없게 될 수 있습니다.
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set AllowReusePageContent option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            AllowReusePageContent = true
+        };
+
+        Console.WriteLine("Start");
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+
+    Console.WriteLine("Finished");
+
+    // Calculate and display file sizes
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
+}
+```
+
+### 글꼴 언임베드
+
+문서에서 임베드된 글꼴을 사용하는 경우, 이는 모든 글꼴 데이터가 문서에 저장된다는 것을 의미합니다. 장점은 문서가 사용자의 컴퓨터에 글꼴이 설치되어 있든 없든 관계없이 볼 수 있다는 것입니다. 그러나 글꼴을 임베드하면 문서 크기가 커집니다. 글꼴 언임베드 메서드는 모든 임베드된 글꼴을 제거합니다. 따라서 문서 크기가 줄어들지만 올바른 글꼴이 설치되지 않은 경우 문서 자체가 읽을 수 없게 될 수 있습니다.
 
 ```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// 글꼴 임베딩 해제 옵션 설정
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocumentWithUnembedFonts()
 {
-    UnembedFonts = true
-};
-Console.WriteLine("시작");
-// OptimizationOptions를 사용하여 PDF 문서 최적화
-pdfDocument.OptimizeResources(optimizeOptions);
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("완료");
-var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("원본 파일 크기: {0}. 줄어든 파일 크기: {1}", fi1.Length, fi2.Length);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set UnembedFonts option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            UnembedFonts = true
+        };
+
+        Console.WriteLine("Start");
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");	
+    }
+	
+    Console.WriteLine("Finished");
+
+    // Calculate and display file sizes
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
+}
 ```
-최적화 리소스는 이러한 방법을 문서에 적용합니다. 이러한 방법 중 하나라도 적용되면 문서 크기가 대체로 감소할 것입니다. 이러한 방법 중 어느 것도 적용되지 않으면 문서 크기는 변하지 않을 것입니다.
+
+최적화 리소스는 이러한 방법을 문서에 적용합니다. 이러한 방법 중 하나라도 적용되면 문서 크기가 줄어들 가능성이 높습니다. 이러한 방법이 적용되지 않으면 문서 크기는 변경되지 않으며 이는 명백합니다.
 
 ## PDF 문서 크기를 줄이는 추가 방법
 
-### 주석 제거 또는 평탄화
+### 주석 제거 또는 평면화
 
-주석은 필요하지 않을 때 삭제할 수 있습니다. 편집이 필요하지 않지만 필요할 때는 평탄화할 수 있습니다. 이러한 기술은 파일 크기를 줄입니다.
+주석은 불필요할 때 삭제할 수 있습니다. 필요하지만 추가 편집이 필요하지 않은 경우 평면화할 수 있습니다. 이 두 가지 기술 모두 파일 크기를 줄입니다.
 
 ```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리의 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// 주석 평탄화
-foreach (var page in pdfDocument.Pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FlattenAnnotationsInPdfDocument()
 {
-    foreach (var annotation in page.Annotations)
-    {
-        annotation.Flatten();
-    }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Flatten annotations
+        foreach (var page in document.Pages)
+        {
+            foreach (var annotation in page.Annotations)
+            {
+                annotation.Flatten();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
 }
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
 ```
+
 ### 양식 필드 제거
 
-PDF 문서에 AcroForm이 포함되어 있는 경우, 양식 필드를 평탄화하여 파일 크기를 줄일 수 있습니다.
+PDF 문서에 AcroForms가 포함된 경우, 양식 필드를 평면화하여 파일 크기를 줄일 수 있습니다.
 
 ```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// 소스 PDF 양식 로드
-Document doc = new Document(dataDir + "input.pdf");
-
-// 평탄화 양식
-if (doc.Form.Fields.Count() > 0)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FlattenPdfForms()
 {
-    foreach (var item in doc.Form.Fields)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Load source PDF form
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        item.Flatten();
+        // Flatten Forms
+        if (document.Form.Fields.Lenght > 0)
+        {
+            foreach (var item in document.Form.Fields)
+            {
+                item.Flatten();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "FlattenForms_out.pdf");
     }
 }
-
-dataDir = dataDir + "FlattenForms_out.pdf";
-// 업데이트된 문서 저장
-doc.Save(dataDir);
 ```
 
-### RGB 색공간의 PDF를 회색조로 변환
+### PDF를 RGB 색상 공간에서 그레이스케일로 변환
 
-PDF 파일은 텍스트, 이미지, 첨부 파일, 주석, 그래프 및 기타 객체로 구성됩니다.
-PDF 파일은 텍스트, 이미지, 첨부 파일, 주석, 그래프 및 기타 객체로 구성됩니다.
+PDF 파일은 텍스트, 이미지, 첨부 파일, 주석, 그래프 및 기타 객체로 구성됩니다. PDF를 RGB 색상 공간에서 그레이스케일로 변환해야 할 필요가 있을 수 있습니다. 이렇게 하면 PDF 파일을 인쇄할 때 더 빨라질 수 있습니다. 또한, 파일이 그레이스케일로 변환되면 문서 크기도 줄어들지만 문서 품질이 저하될 수 있습니다. 이 기능은 현재 Adobe Acrobat의 Pre-Flight 기능에서 지원되지만, 오피스 자동화에 대해 이야기할 때 Aspose.PDF는 문서 조작을 위한 궁극적인 솔루션입니다. 이 요구 사항을 충족하기 위해 다음 코드 스니펫을 사용할 수 있습니다.
 
 ```csharp
-// 전체 예제와 데이터 파일을 보려면 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 를 방문하십시오.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// 원본 PDF 파일 로드
-using (Document document = new Document(dataDir + "input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertRgbToGrayScale()
 {
-    Aspose.Pdf.RgbToDeviceGrayConversionStrategy strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
-    for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // PDF 내 특정 페이지의 인스턴스를 가져옵니다.
-        Page page = document.Pages[idxPage];
-        // RGB 컬러스페이스 이미지를 그레이스케일 컬러스페이스로 변환
-        strategy.Convert(page);
+        // Create RGB to DeviceGray conversion strategy
+        var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
+
+        // Iterate through each page
+        for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
+        {
+            // Get instance of particular page inside PDF
+            var page = document.Pages[idxPage];
+
+            // Convert the RGB colorspace image to GrayScale colorspace
+            strategy.Convert(page);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TestGray_out.pdf");
     }
-    // 결과 파일 저장
-    document.Save(dataDir + "Test-gray_out.pdf");
 }
 ```
 
@@ -428,16 +535,87 @@ using (Document document = new Document(dataDir + "input.pdf"))
 
 {{% /alert %}}
 
-Aspose.PDF for .NET은 PDF 최적화 기능을 위한 FlateDecode 압축 지원을 제공합니다.
-Aspose.PDF for .NET은 PDF 최적화 기능에 대해 FlateDecode 압축 지원을 제공합니다.
+Aspose.PDF for .NET은 PDF 최적화 기능을 위한 FlateDecode 압축을 지원합니다. 아래의 코드 스니펫은 **FlateDecode** 압축으로 이미지를 저장하기 위해 최적화에서 옵션을 사용하는 방법을 보여줍니다:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-FlateDecodeCompression-1.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocumentImagesWithFlateCompression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-### **XImageCollection에 이미지 저장**
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizationOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-Aspose.PDF for .NET은 FlateDecode 압축으로 **XImageCollection**에 새 이미지를 저장할 수 있는 기능을 제공합니다. 이 옵션을 사용하려면 **ImageFilterType.Flate** 플래그를 사용할 수 있습니다. 다음 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다:
+        // To optimize images using FlateDecode compression, set optimization options to Flate
+        optimizationOptions.ImageCompressionOptions.Encoding = Aspose.Pdf.Optimization.ImageEncoding.Flate;
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-StoreImageInXImageCollection-1.cs" >}}
+        // Set optimization options
+        document.OptimizeResources(optimizationOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocumentImagesWithFlateCompression_out.pdf");
+    }
+}
+```
+
+### XImageCollection에 이미지 저장
+
+Aspose.PDF for .NET은 FlateDecode 압축으로 **XImageCollection**에 새 이미지를 저장할 수 있는 기능을 제공합니다. 이 옵션을 활성화하려면 **ImageFilterType.Flate** 플래그를 사용할 수 있습니다. 다음 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다:
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageToPdfWithFlateCompression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Open the image file stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the page resources with Flate compression
+            page.Resources.Images.Add(imageStream, Aspose.Pdf.ImageFilterType.Flate);
+        }
+
+        // Get the added image
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
+
+        // Save the current graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Set coordinates for the image placement
+        int lowerLeftX = 0;
+        int lowerLeftY = 0;
+        int upperRightX = 600;
+        int upperRightY = 600;
+
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY
+        });
+
+        // Use ConcatenateMatrix operator to define how the image must be placed
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+
+        // Restore the graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save the document
+        document.Save(dataDir + "AddImageToPdfWithFlateCompression_out.pdf");
+    }
+}
+```
 
 <script type="application/ld+json">
 {
@@ -502,5 +680,3 @@ Aspose.PDF for .NET은 FlateDecode 압축으로 **XImageCollection**에 새 이�
     }
 }
 </script>
-
-

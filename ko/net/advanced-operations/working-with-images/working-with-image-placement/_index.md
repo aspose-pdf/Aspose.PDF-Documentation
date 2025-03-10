@@ -1,32 +1,35 @@
 ---
-title: 이미지 배치 작업하기
-linktitle: 이미지 배치 작업하기
+title: 이미지 배치 작업
+linktitle: 이미지 배치 작업
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ko/net/working-with-image-placement/
-description: 이 섹션은 C# 라이브러리를 사용하여 PDF 파일에서 이미지 배치 작업의 기능에 대해 설명합니다.
+description: 이 섹션에서는 C# 라이브러리를 사용하여 이미지 배치 PDF 파일 작업의 기능을 설명합니다.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "이미지 배치 작업하기",
-    "alternativeHeadline": "PDF 파일에서 이미지의 위치를 얻는 방법",
+    "headline": "Working with Image Placement",
+    "alternativeHeadline": "Enhanced Image Placement in PDF",
+    "abstract": "Aspose.PDF for .NET의 새로운 이미지 배치 기능은 개발자가 PDF 문서 내에서 이미지를 효율적으로 배치하고 조작할 수 있도록 합니다. 이 기능에는 이미지의 치수와 해상도를 정확하게 검색할 수 있는 ImagePlacement 및 ImagePlacementAbsorber와 같은 클래스가 포함되어 있어 시각적 요소에 대한 더 큰 제어로 PDF 문서 생성 기능을 향상시킵니다.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "PDF, C#, PDF에서 이미지 배치",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "keywords": "Image Placement, C# library, Aspose.PDF, ImagePlacement, ImagePlacementAbsorber, PDF document generation, image resolution, image properties, bitmap scaling, PDF manipulation",
+    "wordcount": "306",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,51 +71,49 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/working-with-image-placement/"
     },
-    "dateModified": "2022-02-04",
-    "description": "이 섹션은 C# 라이브러리를 사용하여 PDF 파일에서 이미지 배치 작업의 기능에 대해 설명합니다."
+    "dateModified": "2024-11-26",
+    "description": "이 섹션에서는 C# 라이브러리를 사용하여 이미지 배치 PDF 파일 작업의 기능을 설명합니다."
 }
 </script>
-Aspose.PDF for .NET 7.0.0 버전이 출시되면서, PDF 문서에서 이미지의 해상도와 위치를 얻는 기능을 제공하는 [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber), [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) 같은 클래스를 도입했습니다.
 
-- ImagePlacementAbsorber는 ImagePlacement 객체 컬렉션으로 이미지 사용 검색을 수행합니다.
-- ImagePlacement은 실제 이미지 배치 값을 반환하는 Resolution 및 Rectangle 멤버를 제공합니다.
+Aspose.PDF for .NET 7.0.0의 출시와 함께, 우리는 PDF 문서에서 이미지의 해상도와 위치를 가져오는 유사한 기능을 제공하는 [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) 및 [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection)이라는 클래스를 도입했습니다.
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스와 함께 작동합니다.
+- ImagePlacementAbsorber는 ImagePlacement 객체 컬렉션과 같은 이미지 사용 검색을 수행합니다.
+- ImagePlacement는 실제 이미지 배치 값을 반환하는 Resolution 및 Rectangle 멤버를 제공합니다.
+
+다음 코드 스니펫은 [Aspose.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// 소스 PDF 문서를 로드합니다.
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "ImagePlacement.pdf");
-ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-
-// 첫 페이지의 내용을 로드합니다.
-doc.Pages[1].Accept(abs);
-foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractAndScaleImagesFromPDF()
 {
-    // 이미지 속성을 가져옵니다.
-    Console.Out.WriteLine("image width:" + imagePlacement.Rectangle.Width);
-    Console.Out.WriteLine("image height:" + imagePlacement.Rectangle.Height);
-    Console.Out.WriteLine("image LLX:" + imagePlacement.Rectangle.LLX);
-    Console.Out.WriteLine("image LLY:" + imagePlacement.Rectangle.LLY);
-    Console.Out.WriteLine("image horizontal resolution:" + imagePlacement.Resolution.X);
-    Console.Out.WriteLine("image vertical resolution:" + imagePlacement.Resolution.Y);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // 실제 크기의 이미지를 검색합니다.
-    Bitmap scaledImage;
-    using (MemoryStream imageStream = new MemoryStream())
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
     {
-        // 리소스에서 이미지를 검색합니다.
-        imagePlacement.Image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Png);
-        Bitmap resourceImage = (Bitmap)Bitmap.FromStream(imageStream);
-        // 실제 크기의 비트맵을 생성합니다.
-        scaledImage = new Bitmap(resourceImage, (int)imagePlacement.Rectangle.Width, (int)imagePlacement.Rectangle.Height);
+        var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+
+        // Load the contents of the first page
+        document.Pages[1].Accept(abs);
+
+        // Iterate through each image placement on the first page
+        foreach (var imagePlacement in abs.ImagePlacements)
+        {
+            // Get image properties
+            Console.Out.WriteLine("image width: " + imagePlacement.Rectangle.Width);
+            Console.Out.WriteLine("image height: " + imagePlacement.Rectangle.Height);
+            Console.Out.WriteLine("image LLX: " + imagePlacement.Rectangle.LLX);
+            Console.Out.WriteLine("image LLY: " + imagePlacement.Rectangle.LLY);
+            Console.Out.WriteLine("image horizontal resolution: " + imagePlacement.Resolution.X);
+            Console.Out.WriteLine("image vertical resolution: " + imagePlacement.Resolution.Y);
+        }
     }
 }
 ```
-```
+
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -139,21 +140,21 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -164,7 +165,7 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET을 위한 PDF 조작 라이브러리",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -176,5 +177,3 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
     }
 }
 </script>
-```
-

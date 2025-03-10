@@ -1,35 +1,40 @@
 ---
-title: PDF 문서에 첨부 파일 추가
-linktitle: PDF 문서에 첨부 파일 추가
+title: PDF 문서에 첨부파일 추가하기
+linktitle: PDF 문서에 첨부파일 추가하기
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ko/net/add-attachment-to-pdf-document/
-description: 이 페이지는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다.
+description: 이 페이지에서는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에 첨부파일을 추가하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/adding-to-a-pdf-document/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF 문서에 첨부 파일 추가",
-    "alternativeHeadline": "PDF에 첨부 파일 추가하는 방법",
+    "headline": "Adding Attachment to a PDF document",
+    "alternativeHeadline": "Easily Attach Files to Your PDF Documents",
+    "abstract": "Aspose.PDF for .NET는 사용자가 텍스트 파일 및 이미지와 같은 다양한 첨부파일을 원활하게 추가할 수 있도록 하여 PDF 문서를 향상시키는 효율적인 방법을 제공합니다. 이 기능은 PDF 내에 추가 정보를 포함하는 과정을 단순화하여 필수 데이터가 문서 내에서 쉽게 접근할 수 있도록 보장합니다. 이 강력한 기능으로 문서 관리를 최적화하고 모든 관련 리소스를 함께 유지하여 사용자 경험을 향상시키십시오.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "pdf, c#, pdf에서의 첨부 파일",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "keywords": "Adding attachments to PDF, PDF file types, Aspose.PDF for .NET, FileSpecification object, Document object, EmbeddedFiles collection, PDF document manipulation, C# PDF library, PDF attachment functionality, Aspose.Drawing integration",
+    "wordcount": "309",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,40 +76,43 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-attachment-to-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "이 페이지는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다."
+    "dateModified": "2024-11-25",
+    "description": "이 페이지에서는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에 첨부파일을 추가하는 방법을 설명합니다."
 }
 </script>
 
-첨부 파일에는 다양한 정보가 포함될 수 있으며, 다양한 파일 유형이 있을 수 있습니다. 이 문서는 PDF 파일에 첨부 파일을 추가하는 방법을 설명합니다.
+첨부파일은 다양한 정보와 다양한 파일 유형을 포함할 수 있습니다. 이 문서에서는 PDF 파일에 첨부파일을 추가하는 방법을 설명합니다.
 
-다음 코드 스니펫은 새로운 그래픽 [Aspose.Drawing](/pdf/ko/net/drawing/) 인터페이스에서도 작동합니다.
+다음 코드 스니펫은 [Aspose.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
 
-1. 새 C# 프로젝트를 생성합니다.
+1. 새 C# 프로젝트를 만듭니다.
 1. Aspose.PDF DLL에 대한 참조를 추가합니다.
 1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 생성합니다.
-1. 추가하는 파일과 파일 설명이 포함된 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 생성합니다.
-1. [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션에 추가 메소드를 사용하여 추가합니다.
+1. 추가할 파일과 파일 설명으로 [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 생성합니다.
+1. [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) 객체를 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션에 추가합니다. 컬렉션의 Add 메서드를 사용합니다.
 
-[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션에는 PDF 파일의 모든 첨부 파일이 포함되어 있습니다.
-[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션은 PDF 파일의 모든 첨부 파일을 포함하고 있습니다.
+[EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) 컬렉션은 PDF 파일의 모든 첨부파일을 포함합니다. 다음 코드 스니펫은 PDF 문서에 첨부파일을 추가하는 방법을 보여줍니다.
 
 ```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인해 주세요.
-// 문서 디렉토리의 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddEmbeddedFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "AddAttachment.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"))
+    {
+        // Setup new file to be added as attachment
+        Aspose.Pdf.FileSpecification fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "test.txt", "Sample text file");
 
-// 첨부 파일로 추가될 새 파일 설정
-FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "샘플 텍스트 파일");
+        // Add attachment to document's attachment collection
+        document.EmbeddedFiles.Add(fileSpecification);
 
-// 문서의 첨부 파일 컬렉션에 첨부 파일 추가
-pdfDocument.EmbeddedFiles.Add(fileSpecification);
-
-// 업데이트된 문서 저장
-pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AddAnnotations_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -170,4 +178,3 @@ pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
     }
 }
 </script>
-

@@ -1,10 +1,12 @@
 ---
-title: PDF에서 프로그래밍 방식으로 링크 다루기
+title: PDF에서 링크 작업하기
 linktitle: 링크
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ko/net/links/
-description: 이 가이드는 C# 언어로 PDF 내부 페이지 링크를 추가하거나 외부 웹사이트 하이퍼링크를 PDF에 삽입하는 방법에 대해 설명합니다.
+description: 이 가이드는 PDF에 내부 페이지 링크를 추가하거나 C# 언어로 PDF에 외부 웹사이트 하이퍼링크를 삽입하는 방법에 대해 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF에서 프로그래밍 방식으로 링크 다루기",
-    "alternativeHeadline": "PDF 파일에서 링크 조작",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "C#을 사용하여 PDF 문서 내에서 링크를 프로그래밍 방식으로 관리하는 새로운 기능을 발견하세요. 이 기능을 통해 내부 페이지 링크와 외부 웹사이트 하이퍼링크를 손쉽게 추가하여 PDF의 탐색 및 상호작용을 향상시킬 수 있습니다. PDF 관리 프로세스를 간소화하려는 개발자에게 완벽합니다!",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "pdf, c#, pdf 내 링크",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "이 가이드는 C# 언어로 PDF 내부 페이지 링크를 추가하거나 외부 웹사이트 하이퍼링크를 PDF에 삽입하는 방법에 대해 설명합니다."
+    "dateModified": "2024-11-25",
+    "description": "이 가이드는 PDF에 내부 페이지 링크를 추가하거나 C# 언어로 PDF에 외부 웹사이트 하이퍼링크를 삽입하는 방법에 대해 설명합니다."
 }
 </script>
-- [링크 생성](/pdf/ko/net/create-links/) - C#을 사용하여 PDF 파일에 링크를 생성하는 방법을 간단히 배워보세요.
-- [링크 업데이트](/pdf/ko/net/update-links/) - PDF를 대상으로 설정해 보세요, 웹 주소로 링크 목적지를 설정해 보세요, 다른 PDF 파일로 링크 대상을 설정해 보세요, 링크 텍스트 색상을 업데이트하세요.
-- [링크 추출](/pdf/ko/net/extract-links) - AnnotationSelector 클래스를 사용하여 PDF 파일에서 링크를 추출하세요.
+
+- [링크 만들기](/pdf/net/create-links/) - C#을 사용하여 PDF 파일에 링크를 만드는 간단한 방법을 배워보세요.
+- [링크 업데이트](/pdf/net/update-links/) - PDF에 대상을 설정하고, 링크 목적지를 웹 주소로 설정하고, 링크 대상을 다른 PDF 파일로 설정하고, 링크 텍스트 색상을 업데이트해 보세요.
+- [링크 추출하기](/pdf/net/extract-links) - AnnotationSelector 클래스를 사용하여 PDF 파일에서 링크를 추출하세요.
 
 <script type="application/ld+json">
 {
@@ -142,4 +146,3 @@ sitemap:
     }
 }
 </script>
-
