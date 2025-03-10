@@ -82,7 +82,7 @@ sitemap:
 
 Este tópico explica como mover uma página de um documento PDF para o final de outro documento usando C#.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Para mover uma página, devemos:
 

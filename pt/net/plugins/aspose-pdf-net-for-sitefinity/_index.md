@@ -13,4 +13,4 @@ sitemap:
 ---
 Esta seção tem os seguintes tópicos:
 
-- [Importação de PDF do Sitefinity](/pdf/net/sitefinity-pdf-import/)
+- [Importação de PDF do Sitefinity](/pdf/pt/net/sitefinity-pdf-import/)

@@ -81,7 +81,7 @@ sitemap:
 
 Uma das primeiras funcionalidades suportadas por Aspose.PDF for .NET é sua capacidade de Trabalhar com Tabelas e oferece um ótimo suporte para adicionar tabelas em arquivos PDF gerados do zero ou em qualquer arquivo PDF existente. Você também obtém a capacidade de Integrar Tabela com Banco de Dados (DOM) para criar tabelas dinâmicas com base no conteúdo do banco de dados. Nesta nova versão, implementamos um novo recurso de pesquisa e análise de tabelas simples que já existem na página do documento PDF. Uma nova classe chamada **Aspose.PDF.Text.TableAbsorber** fornece essas capacidades. O uso do TableAbsorber é muito semelhante à classe existente TextFragmentAbsorber. O seguinte trecho de código mostra os passos para atualizar o conteúdo em uma célula de tabela específica.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

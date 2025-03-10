@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/net/drawing/).
+O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/pt/net/drawing/).
 
 ## Salvar documento PDF no sistema de arquivos
 
@@ -125,7 +125,7 @@ private static void SaveDocumentStream()
 }
 ```
 
-Para uma explicação mais detalhada, siga para a seção [Showcase](/pdf/net/showcases/).
+Para uma explicação mais detalhada, siga para a seção [Showcase](/pdf/pt/net/showcases/).
 
 ## Salvar formato PDF/A ou PDF/X
 

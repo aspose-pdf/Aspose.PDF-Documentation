@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET permite criar uma tabela em documentos PDF marcados. Para trabalhar com tabelas, a API fornece a classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Para criar uma tabela, você pode usar o método [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) da interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Além disso, você pode usar os métodos [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) e [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) da classe TableElement para criar o Cabeçalho da Tabela, o Corpo da Tabela e o Rodapé da Tabela, respectivamente. Para criar uma linha de tabela, você pode usar o método [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) da classe [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Você também pode verificar se o documento PDF criado está em conformidade com PDF/UA usando o método Validate() da classe Document.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como criar uma tabela no documento PDF marcado:
 

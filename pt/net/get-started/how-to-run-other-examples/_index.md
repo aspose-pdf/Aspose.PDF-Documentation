@@ -85,7 +85,7 @@ Certifique-se de atender aos seguintes requisitos antes de baixar e executar os 
 1. Visual Studio 2010 ou superior.
 1. Gerenciador de Pacotes NuGet instalado no Visual Studio. Certifique-se de que a versão mais recente da API NuGet esteja instalada no Visual Studio. Para detalhes sobre como instalar o gerenciador de pacotes NuGet, consulte <https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools>.
 1. Vá para `Tools->Options->NuGet Package Manager->Package Sources` e certifique-se de que a opção **nuget.org** esteja marcada.
-1. O projeto de exemplo utiliza o recurso de Restauração Automática de Pacotes NuGet, portanto, você deve ter uma conexão de internet ativa. Se você não tiver uma conexão de internet ativa na máquina onde os exemplos serão executados, consulte [Instalação](/pdf/net/installation/) e adicione manualmente a referência ao Aspose.PDF.dll no projeto de exemplo.
+1. O projeto de exemplo utiliza o recurso de Restauração Automática de Pacotes NuGet, portanto, você deve ter uma conexão de internet ativa. Se você não tiver uma conexão de internet ativa na máquina onde os exemplos serão executados, consulte [Instalação](/pdf/pt/net/installation/) e adicione manualmente a referência ao Aspose.PDF.dll no projeto de exemplo.
 
 ## Baixar do GitHub
 

@@ -83,24 +83,24 @@ Investigue os recursos e requisitos mais básicos da biblioteca Aspose.PDF for .
 
 Para saber mais sobre Aspose.PDF, selecione a seção apropriada:
 
-- [Por que Aspose.PDF](/pdf/net/why-aspose-pdf/) – descreve as razões pelas quais pode ser melhor usar produtos Aspose em vez de outros produtos, por exemplo, Microsoft Office Automation ou Open XML SDK.
-- [Instalação](/pdf/net/installation/) – fornece informações sobre como instalar o Aspose.PDF.
-- [Requisitos do Sistema](/pdf/net/system-requirements/) – fornece informações sobre os requisitos do sistema e do ambiente de desenvolvimento.
-- [Hello World](/pdf/net/hello-world-example/) – fornece informações sobre como criar um documento PDF simples usando C# e Aspose.PDF.
-- [Como Executar os Exemplos](/pdf/net/how-to-run-other-examples/) – descreve como baixar e executar os exemplos e quais requisitos de software devem ser atendidos.
-- [PDF Complexo](/pdf/net/complex-pdf-example/) – descreve como criar um documento mais complexo com a biblioteca C#.
-- [Formatos de Documento Suportados](/pdf/net/supported-file-formats/) – fornece informações sobre os formatos suportados.
-- [Recursos Suportados](/pdf/net/key-features/) – fornece informações sobre quais recursos são suportados ao carregar ou salvar um documento em vários formatos.
-- [Licenciamento e Assinatura](/pdf/net/licensing/) – fornece informações sobre como aplicar uma licença e usar vários produtos Aspose.
-- [Suporte Técnico](/pdf/net/technical-support/) – Esta página oferece recomendações para resolver suas tarefas de forma rápida e com qualidade.
-- [Como Executar Aspose.PDF no Docker](/pdf/net/docker/) – fornece informações sobre como utilizar o Aspose.PDF em um contêiner Docker.
-- [Visão Geral do Aspose.PDF.Drawing para .NET](/pdf/net/drawing/) – fornece informações sobre como usar a biblioteca Aspose.Drawing em vez de System.Drawing.
-- [Fundamentos da API DOM do Aspose.PDF](/pdf/net/basics-of-dom-api/) – esta seção mostrará os recursos de trabalho com DOM, a forma de apresentação de documentos estruturados como modelo orientado a objetos.
-- [Recursos Avançados](/pdf/net/advanced-features/) – esta seção mostrará os recursos avançados de trabalho com PDF.
+- [Por que Aspose.PDF](/pdf/pt/net/why-aspose-pdf/) – descreve as razões pelas quais pode ser melhor usar produtos Aspose em vez de outros produtos, por exemplo, Microsoft Office Automation ou Open XML SDK.
+- [Instalação](/pdf/pt/net/installation/) – fornece informações sobre como instalar o Aspose.PDF.
+- [Requisitos do Sistema](/pdf/pt/net/system-requirements/) – fornece informações sobre os requisitos do sistema e do ambiente de desenvolvimento.
+- [Hello World](/pdf/pt/net/hello-world-example/) – fornece informações sobre como criar um documento PDF simples usando C# e Aspose.PDF.
+- [Como Executar os Exemplos](/pdf/pt/net/how-to-run-other-examples/) – descreve como baixar e executar os exemplos e quais requisitos de software devem ser atendidos.
+- [PDF Complexo](/pdf/pt/net/complex-pdf-example/) – descreve como criar um documento mais complexo com a biblioteca C#.
+- [Formatos de Documento Suportados](/pdf/pt/net/supported-file-formats/) – fornece informações sobre os formatos suportados.
+- [Recursos Suportados](/pdf/pt/net/key-features/) – fornece informações sobre quais recursos são suportados ao carregar ou salvar um documento em vários formatos.
+- [Licenciamento e Assinatura](/pdf/pt/net/licensing/) – fornece informações sobre como aplicar uma licença e usar vários produtos Aspose.
+- [Suporte Técnico](/pdf/pt/net/technical-support/) – Esta página oferece recomendações para resolver suas tarefas de forma rápida e com qualidade.
+- [Como Executar Aspose.PDF no Docker](/pdf/pt/net/docker/) – fornece informações sobre como utilizar o Aspose.PDF em um contêiner Docker.
+- [Visão Geral do Aspose.PDF.Drawing para .NET](/pdf/pt/net/drawing/) – fornece informações sobre como usar a biblioteca Aspose.Drawing em vez de System.Drawing.
+- [Fundamentos da API DOM do Aspose.PDF](/pdf/pt/net/basics-of-dom-api/) – esta seção mostrará os recursos de trabalho com DOM, a forma de apresentação de documentos estruturados como modelo orientado a objetos.
+- [Recursos Avançados](/pdf/pt/net/advanced-features/) – esta seção mostrará os recursos avançados de trabalho com PDF.
 
 ## Saiba mais sobre
 
-- [Fundamentos da API DOM](/pdf/net/basics-of-dom-api/)
-- [Exemplo "Hello, World" em C#](/pdf/net/hello-world-example/)
-- [PDF Complexo](/pdf/net/complex-pdf-example/)
-- [Como executar outros exemplos](/pdf/net/how-to-run-other-examples/)
+- [Fundamentos da API DOM](/pdf/pt/net/basics-of-dom-api/)
+- [Exemplo "Hello, World" em C#](/pdf/pt/net/hello-world-example/)
+- [PDF Complexo](/pdf/pt/net/complex-pdf-example/)
+- [Como executar outros exemplos](/pdf/pt/net/how-to-run-other-examples/)

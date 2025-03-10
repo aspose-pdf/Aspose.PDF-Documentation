@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** permite adicionar cabeçalho e rodapé ao seu arquivo PDF existente. Você pode adicionar imagens ou texto a um documento PDF. Além disso, tente adicionar diferentes cabeçalhos em um arquivo PDF com C#.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Adicionando Texto no Cabeçalho do Arquivo PDF
 

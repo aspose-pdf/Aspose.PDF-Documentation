@@ -83,7 +83,7 @@ sitemap:
 
 Anotação de Caret é um símbolo que indica edição de texto. Anotação de Caret também é uma anotação de marcação, portanto, a classe Caret deriva da classe Markup e também fornece funções para obter ou definir propriedades da Anotação de Caret e redefinir o fluxo da aparência da Anotação de Caret.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Passos com os quais criamos a anotação de Caret:
 

@@ -97,9 +97,9 @@ Os seguintes exemplos foram testados com:
 
 ### Gerar documento PDF usando ASP.NET Core Web App em contêiner Linux
 
-Usaremos o código do **Exemplo Complexo** neste aplicativo. Por favor, siga [este link](/pdf/net/complex-pdf-example/) para uma explicação mais detalhada.
+Usaremos o código do **Exemplo Complexo** neste aplicativo. Por favor, siga [este link](/pdf/pt/net/complex-pdf-example/) para uma explicação mais detalhada.
 
-1. Crie a pasta `images` na pasta `wwwroot` e coloque a imagem `logo.png`. Você pode baixar esta imagem [aqui](/pdf/net/docker/logo.png).
+1. Crie a pasta `images` na pasta `wwwroot` e coloque a imagem `logo.png`. Você pode baixar esta imagem [aqui](/pdf/pt/net/docker/logo.png).
 1. Crie a pasta `fonts` na pasta `wwwroot` e coloque as fontes [Roboto](https://fonts.google.com/specimen/Roboto) lá.
 1. Crie a pasta `samples` na pasta `wwwroot` e coloque os dados de exemplo lá.
 1. Substitua o código em `HomeController.cs` pelo seguinte trecho (observe que você pode ter outro namespace):

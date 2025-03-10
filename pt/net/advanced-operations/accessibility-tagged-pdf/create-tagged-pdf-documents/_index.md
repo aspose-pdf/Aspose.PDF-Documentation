@@ -81,7 +81,7 @@ sitemap:
 
 Criar um PDF Marcado significa adicionar (ou criar) certos elementos ao documento que permitirão que o documento seja validado de acordo com os requisitos do PDF/UA. Esses elementos são frequentemente chamados de Elementos de Estrutura.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Criando PDF Marcado (Cenário Simples)
 

@@ -82,7 +82,7 @@ sitemap:
 
 Este artigo explica como **converter vários outros tipos de formatos de arquivo para PDF usando C#**. Ele cobre os seguintes tópicos.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 _Formatação_: **EPUB**
 - [C# EPUB para PDF](#csharp-convert-epub-to-pdf)

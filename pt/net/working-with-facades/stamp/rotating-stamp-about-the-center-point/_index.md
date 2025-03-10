@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/net/) permite que você adicione um carimbo em um arquivo PDF existente. Às vezes, os usuários precisam rotacionar o carimbo. Neste artigo, veremos como rotacionar um carimbo em torno de seu ponto central.
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/pt/net/) permite que você adicione um carimbo em um arquivo PDF existente. Às vezes, os usuários precisam rotacionar o carimbo. Neste artigo, veremos como rotacionar um carimbo em torno de seu ponto central.
 
 {{% /alert %}}
 

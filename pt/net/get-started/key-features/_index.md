@@ -81,11 +81,11 @@ sitemap:
 
 ## Software multiplataforma
 
-Suporta várias plataformas e versões do .NET. Veja [Requisitos do Sistema](/pdf/net/system-requirements/) para detalhes.
+Suporta várias plataformas e versões do .NET. Veja [Requisitos do Sistema](/pdf/pt/net/system-requirements/) para detalhes.
 
 ## Recursos Gerais
 
-Aspose.PDF fornece um poderoso Modelo de Objeto de Documento (DOM) para explorar e modificar todos os tipos de conteúdo PDF. Suporta carregamento e salvamento em uma ampla lista de [formatos de arquivo](/pdf/net/supported-file-formats/).
+Aspose.PDF fornece um poderoso Modelo de Objeto de Documento (DOM) para explorar e modificar todos os tipos de conteúdo PDF. Suporta carregamento e salvamento em uma ampla lista de [formatos de arquivo](/pdf/pt/net/supported-file-formats/).
 
 ## Padrões PDF suportados
 

@@ -85,7 +85,7 @@ Ao assinar um documento PDF usando uma assinatura, você basicamente confirma se
 
 Em outras palavras, o documento ainda seria considerado como mantendo sua integridade e o destinatário ainda poderia confiar no documento. Para mais detalhes, visite Certificando e assinando um PDF. Em geral, certificar um documento pode ser comparado a Assinar um executável .NET.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Recursos de assinatura do Aspose.PDF for .NET
 

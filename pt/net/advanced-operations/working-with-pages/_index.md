@@ -87,18 +87,18 @@ Adicione o número da página usando a classe PageNumberStamp. Para adicionar um
 
 Você pode fazer o seguinte:
 
-- [Adicionar Páginas](/pdf/net/add-pages/) - adicione páginas na localização desejada ou ao final de um arquivo PDF e exclua uma página do seu documento.
-- [Mover Páginas](/pdf/net/move-pages/) - mova páginas de um documento para outro.
-- [Excluir Páginas](/pdf/net/delete-pages/) - exclua uma página do seu arquivo PDF usando a coleção PageCollection.
-- [Alterar Tamanho da Página](/pdf/net/change-page-size/) - você pode alterar o tamanho da página PDF com um trecho de código usando a biblioteca Aspose.PDF.
-- [Rotacionar Páginas](/pdf/net/rotate-pages/) - você pode alterar a orientação das páginas em um arquivo PDF existente.
-- [Dividir Páginas](/pdf/net/split-document/) - você pode dividir arquivos PDF em um ou vários PDFs.
-- [Adicionar Cabeçalhos e/ou Rodapés](/pdf/net/add-headers-and-footers-of-pdf-file/) - adicione texto ou imagens nos cabeçalhos e rodapés do seu arquivo PDF.
-- [Recortar Páginas](/pdf/net/crop-pages/) - você pode recortar páginas em um documento PDF programaticamente com diferentes Propriedades de Página.
-- [Adicionar Marcas d'água](/pdf/net/add-watermarks/) - adicione marcas d'água ao seu arquivo PDF com a Classe Artifact.
-- [Adicionar Numeração de Página em Arquivo PDF](/pdf/net/add-page-number/) - a classe PageNumberStamp ajudará você a adicionar um Número de Página em seu arquivo PDF.
-- [Adicionar Fundos](/pdf/net/add-backgrounds/) - imagens de fundo podem ser usadas para adicionar uma marca d'água.
-- [Carimbagem](/pdf/net/stamping/) - você pode usar a classe ImageStamp para adicionar um carimbo de imagem a um arquivo PDF e a classe TextStamp para adicionar um texto.
+- [Adicionar Páginas](/pdf/pt/net/add-pages/) - adicione páginas na localização desejada ou ao final de um arquivo PDF e exclua uma página do seu documento.
+- [Mover Páginas](/pdf/pt/net/move-pages/) - mova páginas de um documento para outro.
+- [Excluir Páginas](/pdf/pt/net/delete-pages/) - exclua uma página do seu arquivo PDF usando a coleção PageCollection.
+- [Alterar Tamanho da Página](/pdf/pt/net/change-page-size/) - você pode alterar o tamanho da página PDF com um trecho de código usando a biblioteca Aspose.PDF.
+- [Rotacionar Páginas](/pdf/pt/net/rotate-pages/) - você pode alterar a orientação das páginas em um arquivo PDF existente.
+- [Dividir Páginas](/pdf/pt/net/split-document/) - você pode dividir arquivos PDF em um ou vários PDFs.
+- [Adicionar Cabeçalhos e/ou Rodapés](/pdf/pt/net/add-headers-and-footers-of-pdf-file/) - adicione texto ou imagens nos cabeçalhos e rodapés do seu arquivo PDF.
+- [Recortar Páginas](/pdf/pt/net/crop-pages/) - você pode recortar páginas em um documento PDF programaticamente com diferentes Propriedades de Página.
+- [Adicionar Marcas d'água](/pdf/pt/net/add-watermarks/) - adicione marcas d'água ao seu arquivo PDF com a Classe Artifact.
+- [Adicionar Numeração de Página em Arquivo PDF](/pdf/pt/net/add-page-number/) - a classe PageNumberStamp ajudará você a adicionar um Número de Página em seu arquivo PDF.
+- [Adicionar Fundos](/pdf/pt/net/add-backgrounds/) - imagens de fundo podem ser usadas para adicionar uma marca d'água.
+- [Carimbagem](/pdf/pt/net/stamping/) - você pode usar a classe ImageStamp para adicionar um carimbo de imagem a um arquivo PDF e a classe TextStamp para adicionar um texto.
 
 <script type="application/ld+json">
 {

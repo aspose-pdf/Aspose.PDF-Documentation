@@ -82,7 +82,7 @@ sitemap:
 
 Os títulos são partes importantes de qualquer documento. Os escritores sempre tentam tornar os títulos mais proeminentes e significativos para seus leitores. Se houver mais de um título em um documento, um escritor tem várias opções para organizar esses títulos. Uma das abordagens mais comuns para organizar títulos é escrever títulos em Estilo de Numeração.
 
-[Aspose.PDF for .NET](/pdf/net/) oferece muitos estilos de numeração pré-definidos. Esses estilos de numeração pré-definidos são armazenados em uma enumeração, NumberingStyle. Os valores pré-definidos da enumeração NumberingStyle e suas descrições são dados abaixo:
+[Aspose.PDF for .NET](/pdf/pt/net/) oferece muitos estilos de numeração pré-definidos. Esses estilos de numeração pré-definidos são armazenados em uma enumeração, NumberingStyle. Os valores pré-definidos da enumeração NumberingStyle e suas descrições são dados abaixo:
 
 |**Tipos de Títulos**|**Descrição**|
 | :- | :- |
@@ -97,7 +97,7 @@ A propriedade **Style** da classe **Aspose.Pdf.Heading** é usada para definir o
 | :- |
 O código fonte, para obter a saída mostrada na figura acima, é dado abaixo no exemplo.
 
-O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/net/drawing/).
+O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

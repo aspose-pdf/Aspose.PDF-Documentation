@@ -84,7 +84,7 @@ url: /pt/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-Este é um aplicativo ASP simples que mostra como criar um arquivo PDF com texto de exemplo usando [Aspose.PDF for .NET](/pdf/net/) e VBScript via COM Interop.
+Este é um aplicativo ASP simples que mostra como criar um arquivo PDF com texto de exemplo usando [Aspose.PDF for .NET](/pdf/pt/net/) e VBScript via COM Interop.
 
 {{% /alert %}}
 

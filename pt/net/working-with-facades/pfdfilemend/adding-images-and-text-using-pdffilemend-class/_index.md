@@ -77,7 +77,7 @@ draft: false
 
 A classe [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) pode ajudá-lo a adicionar imagens e texto em um documento PDF existente, em um local especificado. Ela fornece dois métodos com os nomes [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) e [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). O método [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) permite adicionar imagens do tipo JPG, GIF, PNG e BMP. O método [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) recebe um argumento do tipo [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) e o adiciona no arquivo PDF existente. As imagens e o texto podem ser adicionados em uma região retangular especificada pelas coordenadas dos pontos inferior esquerdo e superior direito. Ao adicionar imagens, você pode especificar o caminho do arquivo da imagem ou um fluxo de um arquivo de imagem. Para especificar o número da página em que a imagem ou o texto precisa ser adicionado, ambos os métodos fornecem um argumento de número da página. Assim, você pode não apenas adicionar as imagens e o texto no local especificado, mas também em uma página específica.
 
-Imagens são uma parte importante do conteúdo de um documento PDF. Manipular imagens em um arquivo PDF existente é uma necessidade comum para as pessoas que trabalham com arquivos PDF. Neste artigo, exploraremos como as imagens podem ser manipuladas em um arquivo PDF existente, com a ajuda do [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) de [Aspose.PDF for .NET](/pdf/net/). Todas as operações relacionadas a imagens do [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) foram consolidadas neste artigo.
+Imagens são uma parte importante do conteúdo de um documento PDF. Manipular imagens em um arquivo PDF existente é uma necessidade comum para as pessoas que trabalham com arquivos PDF. Neste artigo, exploraremos como as imagens podem ser manipuladas em um arquivo PDF existente, com a ajuda do [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) de [Aspose.PDF for .NET](/pdf/pt/net/). Todas as operações relacionadas a imagens do [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) foram consolidadas neste artigo.
 
 ## Detalhes da implementação
 
@@ -122,7 +122,7 @@ private static void AddImage01()
 }
 ```
 
-![Adicionar Imagem](/pdf/net/images/add_image1.png)
+![Adicionar Imagem](/pdf/pt/net/images/add_image1.png)
 
 Com a ajuda de [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1), podemos sobrepor uma imagem sobre outra:
 
@@ -163,7 +163,7 @@ private static void AddImage02()
 }
 ```
 
-![Adicionar Imagem](/pdf/net/images/add_image2.png)
+![Adicionar Imagem](/pdf/pt/net/images/add_image2.png)
 
 Existem várias maneiras de armazenar uma imagem em um arquivo PDF. Vamos demonstrar uma delas no exemplo a seguir:
 
@@ -277,7 +277,7 @@ private static void AddText01()
 
 Veja como fica:
 
-![Adicionar Texto](/pdf/net/images/add_text.png)
+![Adicionar Texto](/pdf/pt/net/images/add_text.png)
 
 A segunda maneira de adicionar [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Além disso, indicamos um retângulo no qual nosso texto deve caber.
 

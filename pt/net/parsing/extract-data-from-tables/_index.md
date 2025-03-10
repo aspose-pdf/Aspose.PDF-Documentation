@@ -90,7 +90,7 @@ Aspose.PDF for .NET possui uma ferramenta para facilitar a recuperação de tabe
 1. `TableList` é uma lista de [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Para obter os dados, itere através de `TableList` e manipule [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) e [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
 1. Cada [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contém uma coleção de [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Você pode processá-la para seus próprios fins.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte exemplo mostra a extração de tabela de todas as páginas:
 
@@ -139,7 +139,7 @@ Cada tabela absorvida tem a propriedade [Rectangle](https://reference.aspose.com
 
 Se você precisar extrair tabelas localizadas em uma região específica, deve trabalhar com coordenadas específicas.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte exemplo mostra como extrair uma tabela marcada com Anotação Quadrada:
 
@@ -197,9 +197,9 @@ private static void ExtractMarkedTable()
 ## Extrair Dados da Tabela de PDF e armazená-los em arquivo CSV
 
 O seguinte exemplo mostra como extrair uma tabela e armazená-la como arquivo CSV.
-Para ver como converter PDF para Planilha Excel, consulte o artigo [Converter PDF para Excel](/pdf/net/convert-pdf-to-excel/).
+Para ver como converter PDF para Planilha Excel, consulte o artigo [Converter PDF para Excel](/pdf/pt/net/convert-pdf-to-excel/).
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

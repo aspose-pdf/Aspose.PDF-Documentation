@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API permite que você defina um nome de fonte padrão quando uma fonte não está disponível no documento. Você pode usar a propriedade DefaultFontName da classe RenderingOptions para definir o nome da fonte padrão. Caso DefaultFontName seja definido como nulo, a fonte **Times New Roman** será utilizada. O seguinte trecho de código mostra como definir um nome de fonte padrão ao salvar um PDF em uma imagem:
 
-O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/net/drawing/).
+O próximo trecho de código também funciona com a biblioteca [Aspose.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

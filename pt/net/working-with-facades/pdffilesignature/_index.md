@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Adicionar Assinatura em Arquivo PDF](/pdf/net/add-signature-in-pdf/)
-- [Remover Assinatura de Arquivo PDF](/pdf/net/remove-signature-from-pdf/)
-- [Verificar Assinatura em Arquivo PDF](/pdf/net/verify-signature-in-pdf/)
-- [Trabalhando com Assinatura em Arquivo PDF](/pdf/net/add-signature-in-pdf/)
+- [Adicionar Assinatura em Arquivo PDF](/pdf/pt/net/add-signature-in-pdf/)
+- [Remover Assinatura de Arquivo PDF](/pdf/pt/net/remove-signature-from-pdf/)
+- [Verificar Assinatura em Arquivo PDF](/pdf/pt/net/verify-signature-in-pdf/)
+- [Trabalhando com Assinatura em Arquivo PDF](/pdf/pt/net/add-signature-in-pdf/)

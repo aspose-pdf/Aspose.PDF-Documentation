@@ -78,32 +78,32 @@ sitemap:
 }
 </script>
 
-**Operações Avançadas** é uma seção sobre como lidar com arquivos PDF existentes programaticamente, sejam documentos criados com Aspose.PDF, conforme discutido em [Operações Básicas](/pdf/net/basic-operations/), ou PDFs criados com Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou qualquer outro produtor de PDF.
+**Operações Avançadas** é uma seção sobre como lidar com arquivos PDF existentes programaticamente, sejam documentos criados com Aspose.PDF, conforme discutido em [Operações Básicas](/pdf/pt/net/basic-operations/), ou PDFs criados com Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou qualquer outro produtor de PDF.
 
 Você aprenderá diferentes maneiras de:
 
-- [Trabalhar com Documentos](/pdf/net/working-with-documents/) - comprimir, dividir e mesclar documentos e realizar outras operações com o documento inteiro.
-- [Trabalhar com Páginas](/pdf/net/working-with-pages/) - adicionar, mover ou remover, recortar páginas, adicionar marcas d'água, carimbos.
-- [Trabalhar com Texto](/pdf/net/working-with-text/) - adicionar, formatar, pesquisar e substituir texto em PDF.
-- [Trabalhar com Imagens](/pdf/net/working-with-images/) - inserir, remover, extrair imagem no documento.
-- [Trabalhar com Tabelas](/pdf/net/working-with-tables/) - inserir, decorar tabela em PDF, extrair dados tabulares.
-- [Trabalhar com Formulários](/pdf/net/working-with-forms/) - lidar com documentos PDF interativos, adicionar campos de formulário, extrair dados.
-- [Trabalhar com Gráficos](/pdf/net/working-with-graphs/) - manipular formas na página.
-- [Trabalhar com XML](/pdf/net/working-with-xml) - construir documentos PDF com base na estrutura XML.
-- [Trabalhar com Operadores](/pdf/net/working-with-operators/) - realizar operações de baixo nível em PDF.
-- [Trabalhar com Gráficos Vetoriais](/pdf/net/working-with-vector-graphics) - descreve os recursos de trabalho com GraphicsAbsorber.
-- [Trabalhar com ZUGFeRD](/pdf/net/working-with-zugferd) - criar faturas PDF compatíveis com ZUGFeRD.
-- [Trabalhar com Javascript](/pdf/net/working-with-javascript) - adicionar, remover código Javascript em PDF.
-- [Comparar documentos PDF](/pdf/net/compare-pdf-documents/) - possível comparar o conteúdo de documentos PDF.
-- [Navegação e Interação](/pdf/net/navigation-and-interaction/) - lidar com ações, marcadores, navegar entre páginas.
-- [PDF AI Copilot](/pdf/net/ai-copilot/) - permite processar documentos PDF usando LLMs de diferentes provedores.
-- [Anotações](/pdf/net/annotations/) - Anotações permitem que os usuários adicionem conteúdo personalizado nas páginas PDF. Você pode adicionar, excluir e modificar a anotação dos documentos PDF.
-- [Artefatos](/pdf/net/artifacts/) - lidar com marcas d'água e outros objetos especiais em PDF.
-- [Acessibilidade. PDF Marcado](/pdf/net/accessibility-tagged-pdf/) - A marcação é essencial para a acessibilidade do PDF. Aspose.PDF permite adicionar tags ao PDF e estabelecer uma ordem de leitura lógica e fornecer um meio para indicar estrutura e tipo.
-- [Anexos](/pdf/net/attachments/) - Documentos PDF podem conter anexos de arquivos. Esses anexos podem ser outros documentos PDF ou qualquer tipo de arquivo, como arquivos de áudio, documentos do Microsoft Office, etc. Você aprenderá como adicionar anexos ao pdf, obter informações de um anexo e salvá-lo em um arquivo, excluir o anexo do PDF programaticamente com C#.
-- [Metadados em PDFs](/pdf/net/pdf-file-metadata/) - obter ou definir metadados em documentos, lidando com dados XMP.
-- [Segurança e Assinatura](/pdf/net/securing-and-signing/) - proteger e assinar seu documento PDF programaticamente.
-- [Imprimir Documento](/pdf/net/printing-document/) - imprimir PDFs em vários tipos de aplicativos (WinForms, WPF, etc.).
+- [Trabalhar com Documentos](/pdf/pt/net/working-with-documents/) - comprimir, dividir e mesclar documentos e realizar outras operações com o documento inteiro.
+- [Trabalhar com Páginas](/pdf/pt/net/working-with-pages/) - adicionar, mover ou remover, recortar páginas, adicionar marcas d'água, carimbos.
+- [Trabalhar com Texto](/pdf/pt/net/working-with-text/) - adicionar, formatar, pesquisar e substituir texto em PDF.
+- [Trabalhar com Imagens](/pdf/pt/net/working-with-images/) - inserir, remover, extrair imagem no documento.
+- [Trabalhar com Tabelas](/pdf/pt/net/working-with-tables/) - inserir, decorar tabela em PDF, extrair dados tabulares.
+- [Trabalhar com Formulários](/pdf/pt/net/working-with-forms/) - lidar com documentos PDF interativos, adicionar campos de formulário, extrair dados.
+- [Trabalhar com Gráficos](/pdf/pt/net/working-with-graphs/) - manipular formas na página.
+- [Trabalhar com XML](/pdf/pt/net/working-with-xml) - construir documentos PDF com base na estrutura XML.
+- [Trabalhar com Operadores](/pdf/pt/net/working-with-operators/) - realizar operações de baixo nível em PDF.
+- [Trabalhar com Gráficos Vetoriais](/pdf/pt/net/working-with-vector-graphics) - descreve os recursos de trabalho com GraphicsAbsorber.
+- [Trabalhar com ZUGFeRD](/pdf/pt/net/working-with-zugferd) - criar faturas PDF compatíveis com ZUGFeRD.
+- [Trabalhar com Javascript](/pdf/pt/net/working-with-javascript) - adicionar, remover código Javascript em PDF.
+- [Comparar documentos PDF](/pdf/pt/net/compare-pdf-documents/) - possível comparar o conteúdo de documentos PDF.
+- [Navegação e Interação](/pdf/pt/net/navigation-and-interaction/) - lidar com ações, marcadores, navegar entre páginas.
+- [PDF AI Copilot](/pdf/pt/net/ai-copilot/) - permite processar documentos PDF usando LLMs de diferentes provedores.
+- [Anotações](/pdf/pt/net/annotations/) - Anotações permitem que os usuários adicionem conteúdo personalizado nas páginas PDF. Você pode adicionar, excluir e modificar a anotação dos documentos PDF.
+- [Artefatos](/pdf/pt/net/artifacts/) - lidar com marcas d'água e outros objetos especiais em PDF.
+- [Acessibilidade. PDF Marcado](/pdf/pt/net/accessibility-tagged-pdf/) - A marcação é essencial para a acessibilidade do PDF. Aspose.PDF permite adicionar tags ao PDF e estabelecer uma ordem de leitura lógica e fornecer um meio para indicar estrutura e tipo.
+- [Anexos](/pdf/pt/net/attachments/) - Documentos PDF podem conter anexos de arquivos. Esses anexos podem ser outros documentos PDF ou qualquer tipo de arquivo, como arquivos de áudio, documentos do Microsoft Office, etc. Você aprenderá como adicionar anexos ao pdf, obter informações de um anexo e salvá-lo em um arquivo, excluir o anexo do PDF programaticamente com C#.
+- [Metadados em PDFs](/pdf/pt/net/pdf-file-metadata/) - obter ou definir metadados em documentos, lidando com dados XMP.
+- [Segurança e Assinatura](/pdf/pt/net/securing-and-signing/) - proteger e assinar seu documento PDF programaticamente.
+- [Imprimir Documento](/pdf/pt/net/printing-document/) - imprimir PDFs em vários tipos de aplicativos (WinForms, WPF, etc.).
 
 <script type="application/ld+json">
 {

@@ -84,11 +84,11 @@ As tabelas são parte de muitos formulários PDF. Você encontra tabelas em uma 
 
 Você pode fazer o seguinte:
 
-- [Criar ou Adicionar Tabela em Documento PDF Existente](/pdf/net/add-table-in-existing-pdf-document/) - crie sua tabela em um arquivo PDF unindo colunas ou linhas considerando bordas, margens e preenchimento.
-- [Extrair uma Tabela de Documento PDF Existente](/pdf/net/extract-table-from-existing-pdf-document/) - você pode extrair uma tabela de um arquivo PDF ou extrair a borda da tabela como imagem.
-- [Integrar Tabela com Fontes de Dados](/pdf/net/integrate-table/) - integrar tabela com Banco de Dados, integrar tabela com a fonte do Entity Framework usando a biblioteca .NET.
-- [Manipular Tabelas em PDF Existente](/pdf/net/manipulate-tables-in-existing-pdf/) - manipular tabelas em seu PDF usando TableAbsorber.
-- [Remover Tabelas de PDF Existente](/pdf/net/remove-tables-from-existing-pdf/) - remover tabela ou múltiplas tabelas de um documento PDF.
+- [Criar ou Adicionar Tabela em Documento PDF Existente](/pdf/pt/net/add-table-in-existing-pdf-document/) - crie sua tabela em um arquivo PDF unindo colunas ou linhas considerando bordas, margens e preenchimento.
+- [Extrair uma Tabela de Documento PDF Existente](/pdf/pt/net/extract-table-from-existing-pdf-document/) - você pode extrair uma tabela de um arquivo PDF ou extrair a borda da tabela como imagem.
+- [Integrar Tabela com Fontes de Dados](/pdf/pt/net/integrate-table/) - integrar tabela com Banco de Dados, integrar tabela com a fonte do Entity Framework usando a biblioteca .NET.
+- [Manipular Tabelas em PDF Existente](/pdf/pt/net/manipulate-tables-in-existing-pdf/) - manipular tabelas em seu PDF usando TableAbsorber.
+- [Remover Tabelas de PDF Existente](/pdf/pt/net/remove-tables-from-existing-pdf/) - remover tabela ou múltiplas tabelas de um documento PDF.
 
 <script type="application/ld+json">
 {

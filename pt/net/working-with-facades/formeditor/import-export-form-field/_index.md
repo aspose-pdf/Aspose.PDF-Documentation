@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF for .NET oferece grandes capacidades para criar/manipular campos de formulário dentro de documentos PDF. Usando esta API, você pode preencher programaticamente campos de formulário dentro de um arquivo PDF, preencher campos de formulário por [Importar Dados de FDF para um Arquivo PDF](/pdf/net/import-and-export-data/), [Importar Dados de XFDF para um Arquivo PDF](/pdf/net/import-and-export-data/), [Importar Dados de XML para um Arquivo PDF](/pdf/net/import-and-export-data/) ou até mesmo você pode importar dados de um objeto [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET oferece grandes capacidades para criar/manipular campos de formulário dentro de documentos PDF. Usando esta API, você pode preencher programaticamente campos de formulário dentro de um arquivo PDF, preencher campos de formulário por [Importar Dados de FDF para um Arquivo PDF](/pdf/pt/net/import-and-export-data/), [Importar Dados de XFDF para um Arquivo PDF](/pdf/pt/net/import-and-export-data/), [Importar Dados de XML para um Arquivo PDF](/pdf/pt/net/import-and-export-data/) ou até mesmo você pode importar dados de um objeto [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

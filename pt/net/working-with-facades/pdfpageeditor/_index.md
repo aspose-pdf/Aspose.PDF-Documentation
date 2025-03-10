@@ -14,7 +14,7 @@ sitemap:
 ---
 O **Editor de Página Pdf** destina-se a realizar várias manipulações com páginas:
 
-- [Rotacionar Página em Documento PDF](/pdf/net/working-with-page-rotation/)
-- [Aplicando Transições e outros Efeitos Visuais](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
-- [Mudando Tamanhos de Página em arquivo PDF](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-- [Manipular Propriedades da Página](/pdf/net/manipulate-page-properties/)
+- [Rotacionar Página em Documento PDF](/pdf/pt/net/working-with-page-rotation/)
+- [Aplicando Transições e outros Efeitos Visuais](/pdf/pt/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
+- [Mudando Tamanhos de Página em arquivo PDF](/pdf/pt/net/changing-page-sizes-in-a-pdf-file/)
+- [Manipular Propriedades da Página](/pdf/pt/net/manipulate-page-properties/)

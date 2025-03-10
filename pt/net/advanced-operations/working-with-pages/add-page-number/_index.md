@@ -82,7 +82,7 @@ sitemap:
 Todos os documentos devem ter números de página. O número da página facilita para o leitor localizar diferentes partes do documento.
 **Aspose.PDF for .NET** permite que você adicione números de página com PageNumberStamp.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Você pode usar a classe [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) para adicionar um carimbo de número de página em um arquivo PDF. A classe [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) fornece propriedades necessárias para criar um carimbo baseado em número de página, como formato, margens, alinhamentos, número inicial, etc. Para adicionar um carimbo de número de página, você precisa criar um objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) e um objeto [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) usando as propriedades necessárias. Depois disso, você pode chamar o método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) da [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) para adicionar o carimbo no PDF. Você também pode definir os atributos de fonte do carimbo de número de página. O seguinte trecho de código mostra como adicionar números de página em um arquivo PDF.
 

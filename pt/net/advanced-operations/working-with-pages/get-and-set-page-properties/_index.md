@@ -75,7 +75,7 @@ lastmod: "2022-02-17"
 
 Aspose.PDF for .NET permite que você leia e defina propriedades de páginas em um arquivo PDF em suas aplicações .NET. Esta seção mostra como obter o número de páginas em um arquivo PDF, obter informações sobre propriedades de página PDF, como cor, e definir propriedades de página. Os exemplos dados estão em C#, mas você pode usar qualquer linguagem .NET, como VB.NET, para alcançar o mesmo.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Obter Número de Páginas em um Arquivo PDF
 
@@ -188,7 +188,7 @@ private static void AccessingPageProperties()
 
 ## Obter uma Página Particular do Arquivo PDF
 
-Aspose.PDF permite que você [divida um PDF em páginas individuais](/pdf/net/split-pdf-document/) e as salve como arquivos PDF. Obter uma página especificada em um arquivo PDF e salvá-la como um novo PDF é uma operação muito semelhante: abra o documento de origem, acesse a página, crie um novo documento e adicione a página a este.
+Aspose.PDF permite que você [divida um PDF em páginas individuais](/pdf/pt/net/split-pdf-document/) e as salve como arquivos PDF. Obter uma página especificada em um arquivo PDF e salvá-la como um novo PDF é uma operação muito semelhante: abra o documento de origem, acesse a página, crie um novo documento e adicione a página a este.
 
 A coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) do objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contém as páginas no arquivo PDF. Para obter uma página particular dessa coleção:
 

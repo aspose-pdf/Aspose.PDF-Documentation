@@ -87,7 +87,7 @@ AcroForm é um tipo importante do documento PDF. Você pode não apenas criar e 
 
 ## Detalhes da implementação
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Neste artigo, tentamos criar um AcroForm usando o [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace). Também adicionamos um botão de envio e definimos sua URL de destino. Os seguintes trechos de código mostram como criar o formulário e, em seguida, receber os dados postados na página da web.
 

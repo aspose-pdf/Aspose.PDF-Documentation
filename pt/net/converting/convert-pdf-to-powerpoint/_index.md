@@ -93,7 +93,7 @@ _Formatação_: **PowerPoint**
 - [C# Converter PDF para PowerPoint](#csharp-pdf-to-powerpoint)
 - [C# Como converter arquivo PDF para PowerPoint](#csharp-pdf-to-powerpoint)
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Conversão de C# PDF para PowerPoint e PPTX
 

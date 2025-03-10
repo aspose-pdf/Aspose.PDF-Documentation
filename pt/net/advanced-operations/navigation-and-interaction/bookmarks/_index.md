@@ -82,8 +82,8 @@ sitemap:
 Os marcadores PDF são uma ferramenta útil e essencial quando se trata de ler arquivos PDF. Eles permitem que os usuários saltem rapidamente para outros lugares em um documento PDF, naveguem pelas páginas e visualizem rapidamente o conteúdo de um PDF, assim como um índice.
 Nesta seção, você aprenderá como:
 
-- [Adicionar e Excluir um Marcador](/pdf/net/add-and-delete-bookmark/)
-- [Obter, Atualizar e Expandir um Marcador](/pdf/net/get-update-and-expand-bookmark/)
+- [Adicionar e Excluir um Marcador](/pdf/pt/net/add-and-delete-bookmark/)
+- [Obter, Atualizar e Expandir um Marcador](/pdf/pt/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

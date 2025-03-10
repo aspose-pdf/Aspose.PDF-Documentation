@@ -87,7 +87,7 @@ _Formatação_: **HTML**
 - [C# Converter PDF para HTML](#csharp-pdf-to-html)
 - [C# Como converter arquivo PDF para HTML](#csharp-pdf-to-html)
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Converter PDF para HTML
 

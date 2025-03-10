@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET oferece a funcionalidade de adicionar assinaturas digitais a partir de uma localização de armazenamento de chaves. Você pode aplicar a assinatura aceitando o certificado fornecido pelo armazenamento de certificados, cartão inteligente ou [cartão PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) conectado ao sistema em tempo de execução.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 A seguir estão os trechos de código para assinar um documento PDF a partir de um cartão inteligente:
 

@@ -80,7 +80,7 @@ sitemap:
 
 Caso você queira obter todas as fontes de um documento PDF, você pode usar o método FontUtilities.GetAllFonts() fornecido na classe Document. Por favor, verifique o seguinte trecho de código para obter todas as fontes de um documento PDF existente:
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

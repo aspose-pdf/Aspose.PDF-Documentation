@@ -77,7 +77,7 @@ description: Explore como usar Aspose.PDF for .NET em aplicações VBScript util
 
 ## Pré-requisitos Por favor, registre Aspose.PDF for .NET com COM Interop, verifique o artigo intitulado
 
-[Use Aspose.pdf para .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+[Use Aspose.pdf para .NET via COM Interop](/pdf/pt/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

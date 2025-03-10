@@ -86,7 +86,7 @@ Aspose.PDF para NET permite que você extraia texto de anotações de carimbo. P
 1. Defina um novo objeto da classe `TextAbsorber`.
 1. Use o método visit do TextAbsorber para obter o Texto.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

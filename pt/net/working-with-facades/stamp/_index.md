@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Adicionando marca d'água de várias linhas a um PDF existente](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [Rotacionando o carimbo em torno do ponto central](/pdf/net/rotating-stamp-about-the-center-point/)
+- [Adicionando marca d'água de várias linhas a um PDF existente](/pdf/pt/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Rotacionando o carimbo em torno do ponto central](/pdf/pt/net/rotating-stamp-about-the-center-point/)

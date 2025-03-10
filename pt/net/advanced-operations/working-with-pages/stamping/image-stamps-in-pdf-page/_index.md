@@ -82,7 +82,7 @@ sitemap:
 
 Você pode usar a classe ImageStamp para adicionar um carimbo de imagem a um arquivo PDF. A classe ImageStamp fornece as propriedades necessárias para criar um carimbo baseado em imagem, como altura, largura, opacidade e assim por diante.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Para adicionar um carimbo de imagem:
 

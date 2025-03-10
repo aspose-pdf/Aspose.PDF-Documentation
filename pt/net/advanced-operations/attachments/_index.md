@@ -83,10 +83,10 @@ Nesta seção, explicaremos como trabalhar com anexos em PDF usando Aspose.PDF f
 Um anexo é um arquivo adicional que está anexado a um documento pai, pode ser uma variedade de tipos de arquivos, como pdf, word, imagem ou outros arquivos.
 Você aprenderá como adicionar anexos a pdf, obter as informações de um anexo e salvá-lo em arquivo, excluir o anexo de PDF programaticamente com C#.
 
-- [Adicionando anexo a um documento PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Extrair e salvar um anexo](/pdf/net/extract-and-save-an-attachment/)
-- [Removendo anexo de um PDF existente](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portfólio](/pdf/net/portfolio/)
+- [Adicionando anexo a um documento PDF](/pdf/pt/net/add-attachment-to-pdf-document/)
+- [Extrair e salvar um anexo](/pdf/pt/net/extract-and-save-an-attachment/)
+- [Removendo anexo de um PDF existente](/pdf/pt/net/removing-attachment-from-an-existing-pdf/)
+- [Portfólio](/pdf/pt/net/portfolio/)
 
 <script type="application/ld+json">
 {

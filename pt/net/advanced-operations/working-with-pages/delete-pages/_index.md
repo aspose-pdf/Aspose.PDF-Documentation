@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 Você pode excluir páginas de um arquivo PDF usando Aspose.PDF for .NET. Para excluir uma página específica da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

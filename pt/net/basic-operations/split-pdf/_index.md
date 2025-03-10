@@ -90,7 +90,7 @@ Este tópico mostra como dividir páginas PDF em arquivos PDF individuais em sua
 1. Para cada iteração, crie um novo objeto Document e adicione o objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) individual ao documento vazio.
 1. Salve o novo PDF usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Dividir PDF em vários arquivos ou PDFs separados
 

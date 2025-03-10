@@ -80,10 +80,10 @@ sitemap:
 
 **Analisar documentos PDF** é um termo relacionado à extração de vários tipos de informações de arquivos PDF. Esta seção cobre como:
 
-- [Extrair Texto de PDF](/pdf/net/extract-text-from-pdf/). A Análise ou Extração de Texto é a operação mais popular com PDFs prontos. Você aprenderá sobre a análise de texto de um documento inteiro, uma página específica ou uma região específica em uma página.
-- [Extrair Imagens de PDF](/pdf/net/extract-images-from-the-pdf-file/). A Extração de Imagens faz o mesmo para imagens que a operação acima faz para texto.
-- [Extrair Fontes de PDF](/pdf/net/extract-fonts-from-pdf/). A Extração de Fontes é uma operação específica com fontes em PDFs.
-- [Extrair Dados do Formulário](/pdf/net/extract-data-from-acroform/). Se você tiver um monte de documentos PDF com Formulários, provavelmente precisará obter os dados desses formulários. Este artigo ajudará a entender como extrair dados de AcroForms com Aspose.PDF for .NET.
-- [Extrair Texto de Carimbos](/pdf/net/extract-text-from-stamps/) - obtenha informações de texto do seu documento PDF.
-- [Extrair Dados de Tabela](/pdf/net/extract-data-from-table-in-pdf/) - obtenha dados de tabelas em documentos PDF.
-- [Extrair Dados Vetoriais de PDF](/pdf/net/extract-vector-data-from-pdf/) - você pode obter os dados vetoriais (caminho, polígono, polilinha), como posição, cor, largura da linha, etc.
+- [Extrair Texto de PDF](/pdf/pt/net/extract-text-from-pdf/). A Análise ou Extração de Texto é a operação mais popular com PDFs prontos. Você aprenderá sobre a análise de texto de um documento inteiro, uma página específica ou uma região específica em uma página.
+- [Extrair Imagens de PDF](/pdf/pt/net/extract-images-from-the-pdf-file/). A Extração de Imagens faz o mesmo para imagens que a operação acima faz para texto.
+- [Extrair Fontes de PDF](/pdf/pt/net/extract-fonts-from-pdf/). A Extração de Fontes é uma operação específica com fontes em PDFs.
+- [Extrair Dados do Formulário](/pdf/pt/net/extract-data-from-acroform/). Se você tiver um monte de documentos PDF com Formulários, provavelmente precisará obter os dados desses formulários. Este artigo ajudará a entender como extrair dados de AcroForms com Aspose.PDF for .NET.
+- [Extrair Texto de Carimbos](/pdf/pt/net/extract-text-from-stamps/) - obtenha informações de texto do seu documento PDF.
+- [Extrair Dados de Tabela](/pdf/pt/net/extract-data-from-table-in-pdf/) - obtenha dados de tabelas em documentos PDF.
+- [Extrair Dados Vetoriais de PDF](/pdf/pt/net/extract-vector-data-from-pdf/) - você pode obter os dados vetoriais (caminho, polígono, polilinha), como posição, cor, largura da linha, etc.

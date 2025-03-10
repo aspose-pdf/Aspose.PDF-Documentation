@@ -104,7 +104,7 @@ A otimização, ou linearização para a Web, refere-se ao processo de tornar um
 1. Use o método [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
 1. Salve o documento otimizado usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como otimizar um documento PDF para a web.
 

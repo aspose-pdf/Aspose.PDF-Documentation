@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Criptografar Arquivo PDF](/pdf/net/encrypt-pdf-file/)
-- [Descriptografar Arquivo PDF](/pdf/net/decrypt-pdf-file/)
-- [Controlar Exceção de Arquivo PDF](/pdf/net/control-exception/)
-- [Alterar Senha de Arquivo PDF](/pdf/net/change-password/)
-- [Definir Privilégios em um Arquivo PDF Existente](/pdf/net/set-privileges/)
+- [Criptografar Arquivo PDF](/pdf/pt/net/encrypt-pdf-file/)
+- [Descriptografar Arquivo PDF](/pdf/pt/net/decrypt-pdf-file/)
+- [Controlar Exceção de Arquivo PDF](/pdf/pt/net/control-exception/)
+- [Alterar Senha de Arquivo PDF](/pdf/pt/net/change-password/)
+- [Definir Privilégios em um Arquivo PDF Existente](/pdf/pt/net/set-privileges/)

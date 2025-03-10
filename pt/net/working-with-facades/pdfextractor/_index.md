@@ -12,7 +12,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-- [Extrair Texto](/pdf/net/extract-text/)
-- [Extrair Imagens](/pdf/net/extract-images/)
-- [Extrair Anexos](/pdf/net/extract-attachments/)
-- [Verificar se o arquivo PDF contém imagens ou apenas texto](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [Extrair Texto](/pdf/pt/net/extract-text/)
+- [Extrair Imagens](/pdf/pt/net/extract-images/)
+- [Extrair Anexos](/pdf/pt/net/extract-attachments/)
+- [Verificar se o arquivo PDF contém imagens ou apenas texto](/pdf/pt/net/find-whether-pdf-file-contains-images-or-text-only/)

@@ -90,7 +90,7 @@ Cada página em um arquivo PDF possui um número de propriedades, como largura, 
 - **Page.Rect**: a interseção (comumente retângulo visível) da MediaBox e DropBox. A imagem abaixo ilustra essas propriedades.
 Para mais detalhes, visite [esta página](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O trecho abaixo mostra como recortar a página:
 

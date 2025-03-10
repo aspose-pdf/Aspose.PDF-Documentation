@@ -72,5 +72,5 @@ url: /pt/net/integration-with-aspose-total-components/
 }
 </script>
 
-- [Converter Páginas PDF em Imagens e Reconhecer Códigos de Barras](/pdf/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
-- [Extrair Imagens de PDF e reconhecer Códigos de Barras](/pdf/net/extract-images-from-pdf-and-recognize-barcodes/)
+- [Converter Páginas PDF em Imagens e Reconhecer Códigos de Barras](/pdf/pt/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
+- [Extrair Imagens de PDF e reconhecer Códigos de Barras](/pdf/pt/net/extract-images-from-pdf-and-recognize-barcodes/)

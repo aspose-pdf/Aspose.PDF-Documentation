@@ -96,40 +96,40 @@ Aspose.PDF for .NET permite converter documentos PDF para vários formatos e tam
 
 Documentos do Word são os mais versáteis e editáveis possíveis. Converter PDF para Word manualmente é uma tarefa muito demorada. Neste artigo, você aprenderá como converter PDF para Word programaticamente em C#.
 
-- [Converter PDF para Microsoft Word](/pdf/net/convert-pdf-to-word/) - você pode converter seu documento PDF para o formato Word com C#.
+- [Converter PDF para Microsoft Word](/pdf/pt/net/convert-pdf-to-word/) - você pode converter seu documento PDF para o formato Word com C#.
 
 Formatos numéricos são necessários não apenas para tornar os dados na tabela mais fáceis de ler, mas também para tornar a tabela mais fácil de usar. Claro, se você precisar converter esses dados de um documento PDF para o formato Excel, use nossa biblioteca Aspose.PDF.
 
-- [Converter PDF para Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - esta seção descreve como converter um documento PDF para XLSX, ODS, CSV e SpreadSheetML.
+- [Converter PDF para Microsoft Excel](/pdf/pt/net/convert-pdf-to-excel/) - esta seção descreve como converter um documento PDF para XLSX, ODS, CSV e SpreadSheetML.
 
 O formato PowerPoint é usado para criar várias apresentações. Arquivos PPT contêm um grande número de slides ou páginas contendo várias informações.
 
-- [Converter PDF para Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - aqui estamos falando sobre a conversão de PDF para PowerPoint acompanhando o processo de conversão.
+- [Converter PDF para Microsoft PowerPoint](/pdf/pt/net/convert-pdf-to-powerpoint/) - aqui estamos falando sobre a conversão de PDF para PowerPoint acompanhando o processo de conversão.
 
 HyperText Markup Language é uma linguagem de descrição de documentos hipertexto, uma linguagem padrão para criar páginas da web. Com Aspose.PDF for .NET, você pode facilmente converter documentos HTML e vice-versa.
 
-- [Converter formato HTML para arquivo PDF](/pdf/net/convert-html-to-pdf/) - artigo sobre diferentes aspectos da conversão de HTML para PDF.
-- [Converter arquivo PDF para formato HTML](/pdf/net/convert-pdf-to-html/) - converta seus documentos PDF em arquivos HTML como páginas separadas ou como uma única página.
+- [Converter formato HTML para arquivo PDF](/pdf/pt/net/convert-html-to-pdf/) - artigo sobre diferentes aspectos da conversão de HTML para PDF.
+- [Converter arquivo PDF para formato HTML](/pdf/pt/net/convert-pdf-to-html/) - converta seus documentos PDF em arquivos HTML como páginas separadas ou como uma única página.
 
 Existem muitos formatos de imagem que precisam ser convertidos para PDF para diferentes propósitos. Aspose.PDF permite os formatos de imagem mais populares e vice-versa.
 
-- [Converter formatos de Imagens para arquivo PDF](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF permite que você converta diferentes formatos de imagens para arquivo PDF.
-- [Converter PDF para vários formatos de Imagens](/pdf/net/convert-pdf-to-images-format/) - converta páginas PDF como imagens em JPEG, PNG e outros formatos.
+- [Converter formatos de Imagens para arquivo PDF](/pdf/pt/net/convert-images-format-to-pdf/) - Aspose.PDF permite que você converta diferentes formatos de imagens para arquivo PDF.
+- [Converter PDF para vários formatos de Imagens](/pdf/pt/net/convert-pdf-to-images-format/) - converta páginas PDF como imagens em JPEG, PNG e outros formatos.
 
 Esta seção inclui formatos como: EPUB, Markdown, PCL, XPS, LATex/TeX, Texto e PostScript.
 
-- [Converter outros formatos de arquivo para PDF](/pdf/net/convert-other-files-to-pdf/) - este tópico descreve a conversão com vários formatos como EPUB, XPS, Postscript, texto e outros.
-- [Converter arquivo PDF para outros formatos](/pdf/net/convert-pdf-to-other-files/) - este tópico descreve a maneira de converter um documento PDF para vários formatos.
+- [Converter outros formatos de arquivo para PDF](/pdf/pt/net/convert-other-files-to-pdf/) - este tópico descreve a conversão com vários formatos como EPUB, XPS, Postscript, texto e outros.
+- [Converter arquivo PDF para outros formatos](/pdf/pt/net/convert-pdf-to-other-files/) - este tópico descreve a maneira de converter um documento PDF para vários formatos.
 
 PDF/A é uma versão do PDF projetada para o arquivamento de longo prazo de documentos eletrônicos.
 Sejamos honestos, externamente, é muito difícil determinar se é PDF ou PDF/A. Para verificar esse arquivo, são usados validadores. Confira os seguintes artigos para uma conversão de qualidade de PDF para PDF/A e vice-versa.
 
-- [Converter PDF para formatos PDF/A](/pdf/net/convert-pdf-to-pdfa/) - a biblioteca .NET da Aspose.PDF tem uma maneira fácil de converter PDF para PDF/A.
-- [Converter PDF/A para formato PDF](/pdf/net/convert-pdfa-to-pdf/) - converta PDF/A para formato PDF com C# de forma fácil, rápida e de alta qualidade.
+- [Converter PDF para formatos PDF/A](/pdf/pt/net/convert-pdf-to-pdfa/) - a biblioteca .NET da Aspose.PDF tem uma maneira fácil de converter PDF para PDF/A.
+- [Converter PDF/A para formato PDF](/pdf/pt/net/convert-pdfa-to-pdf/) - converta PDF/A para formato PDF com C# de forma fácil, rápida e de alta qualidade.
 
 PDF/X é um subconjunto do padrão PDF que facilita a troca de gráficos e possui uma série de requisitos relacionados à impressão que não se aplicam a arquivos PDF padrão.
 
-- [Converter PDF para formato de troca PDF/X](/pdf/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET permite a conversão para várias versões do padrão PDF/X
+- [Converter PDF para formato de troca PDF/X](/pdf/pt/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET permite a conversão para várias versões do padrão PDF/X
 
 ## Tente converter arquivos PDF online
 

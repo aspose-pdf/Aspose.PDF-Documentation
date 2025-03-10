@@ -91,7 +91,7 @@ O formato XML de saída é um formato personalizado da Aspose. O XML contém uma
 
 {{% /alert %}}
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como validar um documento PDF para PDF/A-1A.
 

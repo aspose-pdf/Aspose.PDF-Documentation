@@ -112,7 +112,7 @@ Para obter todas as Marcas d'Água em uma página específica, a classe [Page](h
 
 O seguinte trecho de código mostra como obter todas as marcas d'água na primeira página de um arquivo PDF.
 
-_Nota:_ Este código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Nota:_ Este código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

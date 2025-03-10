@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O método [Substituir](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) da coleção Imagens permite que você substitua uma imagem em um arquivo PDF existente.
 

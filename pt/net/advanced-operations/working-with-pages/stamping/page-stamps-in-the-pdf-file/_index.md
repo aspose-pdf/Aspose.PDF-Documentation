@@ -82,7 +82,7 @@ sitemap:
 
 Um [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) pode ser usado quando você precisa aplicar um carimbo composto contendo gráficos, texto e tabelas. O seguinte exemplo mostra como usar um carimbo para criar papelaria como no uso do Adobe InDesign, Illustrator, Microsoft Word. Suponha que temos um documento de entrada e queremos aplicar 2 tipos de borda com cores azul e ameixa.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

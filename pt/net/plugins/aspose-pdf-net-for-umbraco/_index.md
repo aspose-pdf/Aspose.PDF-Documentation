@@ -13,4 +13,4 @@ sitemap:
 ---
 Esta seção tem os seguintes tópicos:
 
-- [Módulo de Importação de PDF do Umbraco](/pdf/net/umbraco-pdf-import-module/)
+- [Módulo de Importação de PDF do Umbraco](/pdf/pt/net/umbraco-pdf-import-module/)

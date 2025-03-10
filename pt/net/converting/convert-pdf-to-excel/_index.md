@@ -82,7 +82,7 @@ sitemap:
 
 Este artigo explica como **converter PDF para formatos Excel usando C#**. Ele cobre os seguintes tópicos.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 _Formatação_: **XLS**
 

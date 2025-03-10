@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Adicionar campos de formulário](/pdf/net/add-form-fields/)
-- [Explorando recursos da classe FormEditor](/pdf/net/exploring-features-of-formeditor-class/)
-- [Decorar campo de formulário em PDF](/pdf/net/decorate-form-field/)
-- [Aparência e atributos do campo](/pdf/net/changing-field-appearance-and-attributes/)
-- [Trabalhando com item de lista](/pdf/net/working-with-list-item/)
-- [Copiar campo interno e externo](/pdf/net/copy-inner-and-outer-field/)
-- [Mover e remover campo de formulário](/pdf/net/move-remove-form-field/)
-- [Importar e exportar campo de formulário](/pdf/net/import-export-form-field/)
+- [Adicionar campos de formulário](/pdf/pt/net/add-form-fields/)
+- [Explorando recursos da classe FormEditor](/pdf/pt/net/exploring-features-of-formeditor-class/)
+- [Decorar campo de formulário em PDF](/pdf/pt/net/decorate-form-field/)
+- [Aparência e atributos do campo](/pdf/pt/net/changing-field-appearance-and-attributes/)
+- [Trabalhando com item de lista](/pdf/pt/net/working-with-list-item/)
+- [Copiar campo interno e externo](/pdf/pt/net/copy-inner-and-outer-field/)
+- [Mover e remover campo de formulário](/pdf/pt/net/move-remove-form-field/)
+- [Importar e exportar campo de formulário](/pdf/pt/net/import-export-form-field/)

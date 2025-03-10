@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/net/) oferece várias maneiras de preencher os formulários PDF. Você pode importar dados de arquivo XML, DFD, XFDF, usar API e até mesmo usar os dados da planilha do Excel.
+[Aspose.Pdf.Facades namespace](https://reference.aspose.com/pdf/net/aspose.pdf.facades) em [Aspose.PDF for .NET](/pdf/pt/net/) oferece várias maneiras de preencher os formulários PDF. Você pode importar dados de arquivo XML, DFD, XFDF, usar API e até mesmo usar os dados da planilha do Excel.
 Usaremos o método [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) da classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) para exportar os dados da planilha do Excel para um objeto DataTable. Em seguida, precisaremos importar esses dados para o formulário PDF usando o método [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) da classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Certifique-se de que o nome da coluna do DataTable seja o mesmo que o nome do campo no formulário PDF.
 
 {{% /alert %}}

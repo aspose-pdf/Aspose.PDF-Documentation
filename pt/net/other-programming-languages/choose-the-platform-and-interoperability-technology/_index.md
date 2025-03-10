@@ -76,7 +76,7 @@ url: /pt/net/choose-the-platform-and-interoperability-technology/
 
 **Existem três versões da biblioteca de classes Aspose.PDF:**
 
-[Aspose.PDF](/pdf/) é uma família de produtos que fornece funcionalidade para gerar documentos PDF do zero, bem como a capacidade de editar/manipular os existentes. Aspose.PDF está disponível em três produtos distintos: [Aspose.PDF for .NET](/pdf/net/), [Aspose.PDF para Java](/pdf/java/) e [Aspose.PDF para C++](/pdf/cpp/). Podemos dizer que o Aspose.PDF “suporta nativamente”:
+[Aspose.PDF](/pdf/) é uma família de produtos que fornece funcionalidade para gerar documentos PDF do zero, bem como a capacidade de editar/manipular os existentes. Aspose.PDF está disponível em três produtos distintos: [Aspose.PDF for .NET](/pdf/pt/net/), [Aspose.PDF para Java](/pdf/java/) e [Aspose.PDF para C++](/pdf/cpp/). Podemos dizer que o Aspose.PDF “suporta nativamente”:
 
 - O .NET Framework e todas as linguagens de programação que visam a plataforma .NET, como C# ou VB.NET.
 - A plataforma Java e a linguagem de programação Java.
@@ -84,7 +84,7 @@ url: /pt/net/choose-the-platform-and-interoperability-technology/
 
 {{% /alert %}}
 
-Observe que também é possível usar [Aspose.PDF for .NET](/pdf/net/) de muitas linguagens de programação, incluindo: ASP, C++, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
+Observe que também é possível usar [Aspose.PDF for .NET](/pdf/pt/net/) de muitas linguagens de programação, incluindo: ASP, C++, ColdFusion, Delphi, JavaScript, Perl, PHP, PowerBuilder, Python, VBScript etc.
 
 ## Suporte para outras linguagens
 
@@ -92,7 +92,7 @@ Observe que também é possível usar [Aspose.PDF for .NET](/pdf/net/) de muitas
 
 Esta seção contém sugestões e links de documentação sobre como usar o Aspose.PDF em diferentes linguagens de programação e cobre os seguintes tópicos:
 
-- Wrappers prontos disponíveis para [Aspose.PDF for .NET](/pdf/net/).
+- Wrappers prontos disponíveis para [Aspose.PDF for .NET](/pdf/pt/net/).
 - Como criar objetos, chamar métodos e acessar propriedades de objetos Aspose.PDF for .NET.
 
 Se você seguir os princípios descritos nesta seção, poderá empregar muitos dos recursos do Aspose.PDF em seus projetos.
@@ -111,7 +111,7 @@ A lista completa de produtos Aspose.PDF pode ser encontrada [na página](/pdf/).
 
 **Acessando objetos Aspose.PDF de outras linguagens**
 
-Usar Aspose.PDF de outras linguagens de programação requer uma *tecnologia de interoperabilidade*. Essa tecnologia deve permitir que sua linguagem chame uma biblioteca de classes escrita para .NET, Java ou C++. Sugerimos a tecnologia [COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/) com a biblioteca de classes [Aspose.PDF for .NET](/pdf/net/) para uso em várias linguagens de programação:
+Usar Aspose.PDF de outras linguagens de programação requer uma *tecnologia de interoperabilidade*. Essa tecnologia deve permitir que sua linguagem chame uma biblioteca de classes escrita para .NET, Java ou C++. Sugerimos a tecnologia [COM Interop](/pdf/pt/net/use-aspose-pdf-for-net-via-com-interop/) com a biblioteca de classes [Aspose.PDF for .NET](/pdf/pt/net/) para uso em várias linguagens de programação:
 - ASP.
 - Delphi.
 - Perl.
@@ -125,6 +125,6 @@ Informações sobre as tecnologias de interoperabilidade recomendadas para uso c
 ## Conclusão
 
 {{% alert color="primary" %}}
-O artigo acima mostra que o uso de [Aspose.PDF for .NET](/pdf/net/) vai além das linguagens de programação .NET.
+O artigo acima mostra que o uso de [Aspose.PDF for .NET](/pdf/pt/net/) vai além das linguagens de programação .NET.
 
 {{% /alert %}}

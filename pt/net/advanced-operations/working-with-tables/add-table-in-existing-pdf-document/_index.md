@@ -82,7 +82,7 @@ sitemap:
 
 Tabelas são importantes ao trabalhar com documentos PDF. Elas fornecem ótimos recursos para exibir informações de maneira sistemática. O namespace Aspose.PDF contém classes chamadas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) e [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) que oferecem funcionalidade para criar tabelas ao gerar documentos PDF do zero.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 A tabela pode ser criada criando um objeto da classe Table.
 

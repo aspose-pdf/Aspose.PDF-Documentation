@@ -97,7 +97,7 @@ Abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/n
 - PageLayout – O layout da página.
 - PageMode – Como o documento é exibido quando é aberto pela primeira vez. As opções são mostrar miniaturas, tela cheia, mostrar painel de anexos.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como obter as propriedades usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

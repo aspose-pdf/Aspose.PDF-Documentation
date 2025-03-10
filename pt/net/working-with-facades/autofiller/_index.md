@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Exportar dados da planilha do Excel para preencher o formulário PDF](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [Exportar dados da planilha do Excel para preencher o formulário PDF](/pdf/pt/net/export-excel-worksheet-data-to-fill-pdf-form/)

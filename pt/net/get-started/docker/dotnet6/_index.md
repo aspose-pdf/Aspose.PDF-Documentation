@@ -97,12 +97,12 @@ Os seguintes exemplos foram testados com:
 
 ### Gerar documento PDF usando ASP.NET Core Web App em contêiner Linux
 
-Usaremos o código do **Exemplo Complexo** neste aplicativo. Por favor, siga [este link](/pdf/net/complex-pdf-example/) para uma explicação mais detalhada.
+Usaremos o código do **Exemplo Complexo** neste aplicativo. Por favor, siga [este link](/pdf/pt/net/complex-pdf-example/) para uma explicação mais detalhada.
 
-1. Crie uma pasta `images` na pasta `wwwroot` e coloque a imagem `logo.png`. Você pode baixar esta imagem [aqui](/pdf/net/docker/logo.png).
+1. Crie uma pasta `images` na pasta `wwwroot` e coloque a imagem `logo.png`. Você pode baixar esta imagem [aqui](/pdf/pt/net/docker/logo.png).
 1. Substitua o código em `HomeController.cs` pelo seguinte trecho (observe que você pode ter outro namespace):
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```cs
 using Aspose.Pdf;
@@ -263,7 +263,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 Usaremos o mesmo código que no exemplo anterior.
 
-1. Crie uma pasta `images` na pasta `wwwroot` e coloque a imagem `logo.png`. Você pode baixar esta imagem [aqui](/pdf/net/docker/logo.png).
+1. Crie uma pasta `images` na pasta `wwwroot` e coloque a imagem `logo.png`. Você pode baixar esta imagem [aqui](/pdf/pt/net/docker/logo.png).
 1. Substitua o código em `HomeController.cs` pelo trecho acima.
 
 ```dockerfile

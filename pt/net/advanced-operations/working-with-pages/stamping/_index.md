@@ -83,9 +83,9 @@ Um carimbo em um documento PDF é análogo a aplicar um carimbo de borracha em u
 
 Verifique as seções a seguir para aprender como adicionar um carimbo com C#:
 
-- [Adicionar carimbos de imagem na página PDF](/pdf/net/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/net/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no arquivo PDF.
-- [Carimbos de página no arquivo PDF](/pdf/net/page-stamps-in-the-pdf-file/) - adicionar um carimbo de página ao documento PDF usando a classe PdfPageStamp.
+- [Adicionar carimbos de imagem na página PDF](/pdf/pt/net/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
+- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/net/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no arquivo PDF.
+- [Carimbos de página no arquivo PDF](/pdf/pt/net/page-stamps-in-the-pdf-file/) - adicionar um carimbo de página ao documento PDF usando a classe PdfPageStamp.
 
 <script type="application/ld+json">
 {

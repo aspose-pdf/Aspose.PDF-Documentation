@@ -82,7 +82,7 @@ sitemap:
 
 Mesclar PDFs em C# não é uma tarefa simples sem usar uma biblioteca de terceiros. Este artigo mostra como mesclar vários arquivos PDF em um único documento PDF usando Aspose.PDF for .NET. O exemplo é escrito em C#, mas a API pode ser usada em outras linguagens de programação .NET, como VB.NET. Os arquivos PDF são mesclados de forma que o primeiro seja adicionado ao final do outro documento.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Mesclar Arquivos PDF
 

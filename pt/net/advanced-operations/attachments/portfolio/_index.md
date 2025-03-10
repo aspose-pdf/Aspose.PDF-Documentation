@@ -87,7 +87,7 @@ O exemplo a seguir usa um arquivo Microsoft Excel, um documento Word e um arquiv
 
 O código abaixo resulta no seguinte portfólio.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ### Portfólio PDF criado com Aspose.PDF
 

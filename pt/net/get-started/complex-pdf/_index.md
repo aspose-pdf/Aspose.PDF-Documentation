@@ -78,8 +78,8 @@ sitemap:
 }
 </script>
 
-O exemplo [Hello, World](/pdf/net/hello-world-example/) mostrou passos simples para criar um documento PDF usando C# e Aspose.PDF. Neste artigo, vamos dar uma olhada em como criar um documento mais complexo com C# e Aspose.PDF for .NET. Como exemplo, pegaremos um documento de uma empresa fictícia que opera serviços de ferry para passageiros. 
-Nosso documento conterá uma imagem, dois fragmentos de texto (cabeçalho e parágrafo) e uma tabela. Para construir tal documento, usaremos uma abordagem baseada em DOM. Você pode ler mais na seção [Fundamentos da API DOM](/pdf/net/basics-of-dom-api/).
+O exemplo [Hello, World](/pdf/pt/net/hello-world-example/) mostrou passos simples para criar um documento PDF usando C# e Aspose.PDF. Neste artigo, vamos dar uma olhada em como criar um documento mais complexo com C# e Aspose.PDF for .NET. Como exemplo, pegaremos um documento de uma empresa fictícia que opera serviços de ferry para passageiros. 
+Nosso documento conterá uma imagem, dois fragmentos de texto (cabeçalho e parágrafo) e uma tabela. Para construir tal documento, usaremos uma abordagem baseada em DOM. Você pode ler mais na seção [Fundamentos da API DOM](/pdf/pt/net/basics-of-dom-api/).
 
 Se criarmos um documento do zero, precisamos seguir certas etapas:
 
@@ -94,7 +94,7 @@ Se criarmos um documento do zero, precisamos seguir certas etapas:
 1. Adicionar (tabela) aos [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) da página.
 1. Salvar um documento "Complex.pdf".
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

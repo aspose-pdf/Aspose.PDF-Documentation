@@ -100,14 +100,14 @@ AcroForms têm capacidades que não são encontradas em XFA e, inversamente, XFA
 
 Para um aprendizado mais detalhado das capacidades da biblioteca Java, veja os seguintes artigos:
 
-- [Criar AcroForm](/pdf/net/create-form) - criar formulário do zero com C#.
-- [Preencher AcroForm](/pdf/net/fill-form) - preencher campo de formulário no seu documento PDF.
-- [Extrair AcroForm](/pdf/net/extract-form) - obter valor de todos ou de um campo individual do documento PDF.
-- [Modificando AcroForm](/pdf/net/modifing-form) - obter ou definir FieldLimit, definir fonte do campo do formulário, etc.
-- [Postando Dados AcroForm](/pdf/net/posting-acroform-data/) - importar e exportar dados do formulário para um arquivo XML.
-- [Importar e Exportar Dados](/pdf/net/import-and-export-data/) - importar e exportar dados usando a Classe Form.
-- [Remover Formulários do PDF](/pdf/net/remove-form/) - remover texto com base em subtipo/formulário, excluir todos os formulários.
-- [Importar e Exportar Dados em JSON](/pdf/net/import-export-json/) - importar e exportar dados com JSON
+- [Criar AcroForm](/pdf/pt/net/create-form) - criar formulário do zero com C#.
+- [Preencher AcroForm](/pdf/pt/net/fill-form) - preencher campo de formulário no seu documento PDF.
+- [Extrair AcroForm](/pdf/pt/net/extract-form) - obter valor de todos ou de um campo individual do documento PDF.
+- [Modificando AcroForm](/pdf/pt/net/modifing-form) - obter ou definir FieldLimit, definir fonte do campo do formulário, etc.
+- [Postando Dados AcroForm](/pdf/pt/net/posting-acroform-data/) - importar e exportar dados do formulário para um arquivo XML.
+- [Importar e Exportar Dados](/pdf/pt/net/import-and-export-data/) - importar e exportar dados usando a Classe Form.
+- [Remover Formulários do PDF](/pdf/pt/net/remove-form/) - remover texto com base em subtipo/formulário, excluir todos os formulários.
+- [Importar e Exportar Dados em JSON](/pdf/pt/net/import-export-json/) - importar e exportar dados com JSON
 
 <script type="application/ld+json">
 {

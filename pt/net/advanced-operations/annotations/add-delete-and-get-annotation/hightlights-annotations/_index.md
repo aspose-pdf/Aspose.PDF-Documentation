@@ -89,7 +89,7 @@ Também é possível obter ou definir as configurações das anotações de tach
 
 A próxima funcionalidade é a capacidade de obter ou definir as configurações das anotações de sublinhado usando a propriedade underlineSettings. A propriedade underlineSettings é usada para definir as propriedades de cor, opacidade, autor, assunto, modifiedDate e isLocked das anotações de sublinhado.
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## Adicionar Anotação de Marcação de Texto
 

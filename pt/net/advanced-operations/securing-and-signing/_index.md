@@ -94,10 +94,10 @@ Algoritmos de resumo para PKCS7 destacado:
 
 É recomendado evitar assinaturas digitais com o algoritmo de resumo SHA-1 devido à sua insegurança.
 
-- [Assinar digitalmente arquivo PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extrair informações de imagem e assinatura](/pdf/net/extract-image-and-signature-information/)
-- [Assinar documento PDF de cartão inteligente](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Assinar digitalmente arquivo PDF](/pdf/pt/net/digitally-sign-pdf-file/)
+- [Definir privilégios, criptografar e descriptografar arquivo PDF](/pdf/pt/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extrair informações de imagem e assinatura](/pdf/pt/net/extract-image-and-signature-information/)
+- [Assinar documento PDF de cartão inteligente](/pdf/pt/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

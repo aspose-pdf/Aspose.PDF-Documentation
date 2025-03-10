@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 ## **Imprimir arquivo PDF em C# - Imprimir arquivo PDF na impressora padrão usando configurações de impressora e página**
 
