@@ -1,9 +1,12 @@
 ---
-title: إزالة الجداول من ملف PDF موجود
+title: إزالة الجداول من ملف PDF الموجود
 linktitle: إزالة الجداول
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ar/net/remove-tables-from-existing-pdf/
+description: فهم كيفية إزالة الجداول من مستند PDF باستخدام Aspose.PDF for .NET، مما يحسن وضوح المستند وبنيته.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إزالة الجداول من ملف PDF موجود",
-    "alternativeHeadline": "كيفية حذف الجداول من ملف PDF",
+    "headline": "Remove Tables from existing PDF",
+    "alternativeHeadline": "Effortlessly Eliminate Tables from Existing PDF Files",
+    "abstract": "تتيح ميزة إزالة الجداول في Aspose.PDF for .NET للمستخدمين إزالة كائنات الجدول بكفاءة من مستندات PDF الموجودة باستخدام فئة TableAbsorber. تبسط هذه الوظيفة عملية إدارة محتوى PDF من خلال توفير طرق بسيطة لتحديد وإزالة الجداول، مما يعزز قدرات تحرير المستندات",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, إزالة جدول, حذف جداول",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "494",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,88 +73,100 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/remove-tables-from-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-Aspose.PDF لـ NET يوفر القدرات لإدراج/إنشاء جدول داخل مستند PDF أثناء توليده من البداية أو يمكنك أيضًا إضافة كائن الجدول في أي مستند PDF موجود. قد تكون لديك متطلبات لـ [التلاعب بالجداول في مستند PDF موجود](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/) حيث يمكنك تحديث المحتويات في خلايا الجدول الموجودة. قد تصادف أيضًا متطلبات لإزالة كائنات الجدول من مستند PDF الموجود.
+تقدم Aspose.PDF لـ NET القدرات لإدراج/إنشاء جدول داخل مستند PDF أثناء إنشائه من الصفر أو يمكنك أيضًا إضافة كائن الجدول في أي مستند PDF موجود. ومع ذلك، قد يكون لديك متطلبات لـ [التلاعب بالجداول في PDF الموجود](https://docs.aspose.com/pdf/net/manipulate-tables-in-existing-pdf/) حيث يمكنك تحديث المحتويات في خلايا الجدول الموجودة. ومع ذلك، قد تواجه متطلبات لإزالة كائنات الجدول من مستند PDF الموجود.
 
 {{% /alert %}}
 
-لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للحصول على الجداول في PDF الموجود ثم استدعاء [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
+لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للسيطرة على الجداول في PDF الموجود ثم استدعاء [Remove](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber/methods/remove).
 
-يعمل أيضًا الشفرة التالية مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-## إزالة الجدول من مستند PDF
+## إزالة جدول من مستند PDF
 
-لقد أضفنا وظيفة جديدة أي.
-لقد أضفنا وظيفة جديدة ألا وهي:
+لقد أضفنا وظيفة جديدة، وهي Remove() إلى فئة TableAbsorber الموجودة من أجل إزالة الجدول من مستند PDF. بمجرد أن يجد الممتص الجداول بنجاح على الصفحة، يصبح قادرًا على إزالتها. يرجى مراجعة مقتطف الكود التالي الذي يوضح كيفية إزالة جدول من مستند PDF:
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// تحميل مستند PDF موجود
-Document pdfDocument = new Document(dataDir + "Table_input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// إنشاء كائن TableAbsorber للعثور على الجداول
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// زيارة الصفحة الأولى مع الامتصاص
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// الحصول على الجدول الأول في الصفحة
-AbsorbedTable table = absorber.TableList[0];
+        // Remove the table
+        absorber.Remove(table);
 
-// إزالة الجدول
-absorber.Remove(table);
-
-// حفظ PDF
-pdfDocument.Save(dataDir + "Table_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RemoveTable_out.pdf");
+    }
+}
 ```
 
-## إزالة الجداول المتعددة من مستند PDF
+## إزالة جداول متعددة من مستند PDF
 
-أحيانًا قد يحتوي مستند PDF على أكثر من جدول وقد تحتاج إلى إزالة الجداول المتعددة منه. لإزالة الجداول المتعددة من مستند PDF، يرجى استخدام الشريط التالي:
+أحيانًا قد يحتوي مستند PDF على أكثر من جدول وقد تواجه متطلبات لإزالة جداول متعددة منه. لإزالة جداول متعددة من مستند PDF، يرجى استخدام مقتطف الكود التالي:
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveMultipleTables()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// تحميل مستند PDF موجود
-Document pdfDocument = new Document(dataDir + "Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// إنشاء كائن TableAbsorber للعثور على الجداول
-TableAbsorber absorber = new TableAbsorber();
+        // Visit second page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// زيارة الصفحة الثانية مع الامتصاص
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get copy of table collection
+        Aspose.Pdf.Text.AbsorbedTable[] tables = new Aspose.Pdf.Text.AbsorbedTable[absorber.TableList.Count];
+        absorber.TableList.CopyTo(tables, 0);
 
-// الحصول على نسخة من مجموعة الجداول
-AbsorbedTable[] tables = new AbsorbedTable[absorber.TableList.Count];
-absorber.TableList.CopyTo(tables, 0);
+        // Loop through the copy of collection and removing tables
+        foreach (var table in tables)
+        {
+            absorber.Remove(table);
+        }
 
-// التكرار عبر نسخة من المجموعة وإزالة الجداول
-foreach (AbsorbedTable table in tables)
-    absorber.Remove(table);
-
-// حفظ المستند
-pdfDocument.Save(dataDir + "Table2_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "RemoveMultipleTables_out.pdf");
+    }
+}
 ```
 
 {{% alert color="primary" %}}
+
 يرجى أخذ في الاعتبار أن إزالة أو استبدال جدول يغير مجموعة TableList. لذلك، في حالة إزالة/استبدال الجداول في حلقة، فإن نسخ مجموعة TableList أمر ضروري.
+
 {{% /alert %}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF لمكتبة .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -173,21 +188,21 @@ pdfDocument.Save(dataDir + "Table2_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -198,7 +213,7 @@ pdfDocument.Save(dataDir + "Table2_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تلاعب PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -210,5 +225,3 @@ pdfDocument.Save(dataDir + "Table2_out.pdf");
     }
 }
 </script>
-```
-

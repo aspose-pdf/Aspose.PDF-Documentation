@@ -1,35 +1,39 @@
 ---
-title: حذف صفحات PDF برمجيًا C#
+title: حذف صفحات PDF برمجياً C#
 linktitle: حذف صفحات PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/delete-pages/
-description: يمكنك حذف صفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET.
+description: يمكنك حذف صفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/delete-pdf-pages/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "حذف صفحات PDF برمجيًا C#",
-    "alternativeHeadline": "كيفية إزالة صفحات PDF",
+    "headline": "Delete PDF Pages programmatically C#",
+    "alternativeHeadline": "Delete Specific Pages from PDF with C#",
+    "abstract": "مع مكتبة Aspose.PDF for .NET، يمكن للمستخدمين الآن إزالة صفحات معينة من مستندات PDF بكفاءة برمجياً باستخدام C#. تسهل هذه الميزة إدارة PDF، مما يسمح بإجراء تعديلات وتحديثات سريعة مصممة وفقًا لاحتياجات المستخدم، مما يعزز في النهاية تخصيص الوثائق والتحكم فيها.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, حذف صفحات pdf, إزالة صفحات pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "214",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,41 +75,42 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/delete-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يمكنك حذف صفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-26",
+    "description": "يمكنك حذف صفحات من ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF for .NET."
 }
 </script>
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-يمكنك حذف صفحات من ملف PDF باستخدام Aspose.PDF لـ .NET. لحذف صفحة معينة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+يمكنك حذف صفحات من ملف PDF باستخدام Aspose.PDF for .NET. لحذف صفحة معينة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 
 ## حذف صفحة من ملف PDF
 
-1. استدعِ الدالة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) وحدد فهرس الصفحة
-1. استدعِ الدالة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/save/methods/4) لحفظ ملف PDF المُحدث
-تظهر الشفرة التالية كيفية حذف صفحة معينة من ملف PDF باستخدام C#.
+1. استدعِ طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) وحدد فهرس الصفحة.
+1. استدعِ طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لحفظ ملف PDF المحدث.
+تظهر الشيفرة البرمجية التالية كيفية حذف صفحة معينة من ملف PDF باستخدام C#.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "DeleteParticularPage.pdf");
-
-// حذف صفحة معينة
-pdfDocument.Pages.Delete(2);
-
-dataDir = dataDir + "DeleteParticularPage_out.pdf";
-// حفظ PDF المُحدث
-pdfDocument.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeletePageFromPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularPage.pdf"))
+    {
+        // Delete a particular page
+        document.Pages.Delete(2);
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -127,21 +132,21 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -152,7 +157,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -164,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

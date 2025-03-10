@@ -1,7 +1,9 @@
 ---
-title: استخدام تلميح PDF باستخدام C#
-linktitle: تلميح PDF
+title: تلميحات PDF باستخدام C#
+linktitle: تلميحات PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/pdf-tooltip/
 description: تعلم كيفية إضافة تلميح إلى جزء النص في PDF باستخدام C# و Aspose.PDF
@@ -14,8 +16,9 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "استخدام تلميح PDF باستخدام C#",
-    "alternativeHeadline": "إضافة تلميح PDF إلى النص",
+    "headline": "PDF Tooltip using C#",
+    "alternativeHeadline": "Add Interactive Tooltips to PDF Text in C#",
+    "abstract": "قم بتحسين مستندات PDF الخاصة بك مع ميزة تلميحات PDF الجديدة باستخدام C#. تتيح لك هذه الوظيفة إضافة تلميحات بسلاسة إلى أجزاء النص في ملفات PDF، مما يوفر للمستخدمين معلومات إضافية عند التمرير فوقها. استخدم الأزرار غير المرئية وكتل النص المخفية لإنشاء تجربة قراءة ديناميكية وتفاعلية مع Aspose.PDF",
     "author": {
         "@type": "Person",
         "name": "Anastasiia Holub",
@@ -23,13 +26,12 @@ sitemap:
         "familyName": "Holub",
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثائق PDF",
-    "keywords": "pdf, c#, إضافة تلميح pdf",
-    "wordcount": "302",
-    "proficiencyLevel": "مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "1072",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,156 +73,170 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-tooltip/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "تعلم كيفية إضافة تلميح إلى جزء النص في PDF باستخدام C# و Aspose.PDF"
 }
 </script>
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-## إضافة تلميح للنص المبحوث عنه عن طريق إضافة زر غير مرئي
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
 
-غالباً ما يُطلب إضافة بعض التفاصيل لعبارة أو كلمة معينة كتلميح في مستند PDF بحيث يظهر عندما يمرر المستخدم مؤشر الفأرة فوق النص. يوفر Aspose.PDF لـ .NET هذه الميزة لإنشاء التلميحات عن طريق إضافة زر غير مرئي فوق النص المبحوث عنه. ستظهر لك الشفرة التالية الطريقة لتحقيق هذه الوظيفة:
+## إضافة تلميح إلى النص الذي تم البحث عنه عن طريق إضافة زر غير مرئي
+
+غالبًا ما يتطلب الأمر إضافة بعض التفاصيل لعبارة أو كلمة معينة كتلميح في مستند PDF بحيث يمكن أن يظهر عند تمرير مؤشر الماوس فوق النص. توفر Aspose.PDF for .NET هذه الميزة لإنشاء تلميحات عن طريق إضافة زر غير مرئي فوق النص الذي تم البحث عنه. ستظهر لك مقتطفات الشيفرة التالية الطريقة لتحقيق هذه الوظيفة:
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-string outputFile = dataDir + "Tooltip_out.pdf";
-
-// إنشاء مستند نموذجي بنص
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("حرك مؤشر الفأرة هنا لعرض تلميح"));
-doc.Pages[1].Paragraphs.Add(new TextFragment("حرك مؤشر الفأرة هنا لعرض تلميح طويل جداً"));
-doc.Save(outputFile);
-
-// فتح المستند بنص
-Document document = new Document(outputFile);
-// إنشاء كائن TextAbsorber للعثور على جميع العبارات التي تطابق التعبير النظامي
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("حرك مؤشر الفأرة هنا لعرض تلميح");
-// قبول الممتص لصفحات المستند
-document.Pages.Accept(absorber);
-// الحصول على فقرات النص المستخرجة
-TextFragmentCollection textFragments = absorber.TextFragments;
-
-// التكرار عبر الفقرات
-foreach (TextFragment fragment in textFragments)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTooltipToSearchedText()
 {
-    // إنشاء زر غير مرئي على موضع فقرة النص
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // سيتم عرض قيمة AlternateName كتلميح بواسطة تطبيق المشاهد
-    field.AlternateName = "تلميح للنص.";
-    // إضافة حقل الزر للمستند
-    document.Form.Add(field);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the extracted text fragments
+        var textFragments = absorber.TextFragments;
+
+        // Loop through the fragments
+        foreach (var fragment in textFragments)
+        {
+            // Create invisible button on text fragment position
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // AlternateName value will be displayed as tooltip by a viewer application
+            field.AlternateName = "Tooltip for text.";
+            // Add button field to the document
+            document.Form.Add(field);
+        }
+
+        absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
+        document.Pages.Accept(absorber);
+        textFragments = absorber.TextFragments;
+
+        foreach (var fragment in textFragments)
+        {
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // Set very long text
+            field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
+                                    " deserunt mollit anim id est laborum.";
+            document.Form.Add(field);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
 }
-
-// التالي سيكون نموذج لتلميح طويل جداً
-absorber = new TextFragmentAbsorber("حرك مؤشر الفأرة هنا لعرض تلميح طويل جداً");
-document.Pages.Accept(absorber);
-textFragments = absorber.TextFragments;
-
-foreach (TextFragment fragment in textFragments)
-{
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // تحديد نص طويل جداً
-    field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                            " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                            " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                            " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                            " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                            " deserunt mollit anim id est laborum.";
-    document.Form.Add(field);
-}
-
-// حفظ المستند
-document.Save(outputFile);
 ```
+
 {{% alert color="primary" %}}
 
-فيما يتعلق بطول التلميح، يحتوي نص التلميح في المستند PDF كنوع سلسلة PDF، خارج تيار المحتوى. لا توجد قيود فعالة على مثل هذه السلاسل في ملفات PDF (انظر ملحق مرجع PDF C.). ومع ذلك، فإن قارئ مطابق (مثل Adobe Acrobat) يعمل على معالج معين وفي بيئة تشغيل معينة لديه مثل هذا الحد. يرجى الرجوع إلى وثائق تطبيق قارئ PDF الخاص بك.
+فيما يتعلق بطول التلميح، يتم احتواء نص التلميح في مستند PDF كنوع سلسلة PDF، خارج تدفق المحتوى. لا توجد قيود فعالة على مثل هذه السلاسل في ملفات PDF (انظر ملحق C من مرجع PDF). ومع ذلك، فإن القارئ المتوافق (مثل Adobe Acrobat) الذي يعمل على معالج معين وفي بيئة تشغيل معينة لديه مثل هذا الحد. يرجى الرجوع إلى وثائق تطبيق قارئ PDF الخاص بك.
 
 {{% /alert %}}
 
 ## إنشاء كتلة نص مخفية وعرضها عند تمرير الماوس
 
-في Aspose.PDF، يتم تنفيذ ميزة لإخفاء الإجراءات بحيث يمكن إظهار/إخفاء حقل مربع النص (أو أي نوع آخر من التعليقات التوضيحية) عند دخول/خروج الماوس فوق زر غير مرئي. لهذا الغرض، يتم استخدام فئة Aspose.Pdf.Annotations.HideAction لتعيين إجراء الإخفاء/العرض لكتلة النص. يرجى استخدام الشظية البرمجية التالية لإظهار/إخفاء كتلة نص عند دخول/خروج الماوس.
+في Aspose.PDF، تم تنفيذ ميزة لإخفاء الإجراءات والتي من خلالها يمكن عرض/إخفاء حقل مربع النص (أو أي نوع آخر من التعليقات التوضيحية) عند دخول/خروج الماوس فوق بعض الأزرار غير المرئية. لهذا الغرض، يتم استخدام فئة Aspose.Pdf.Annotations.HideAction لتعيين إجراء الإخفاء/الإظهار إلى كتلة النص. يرجى استخدام مقتطف الشيفرة التالية لإظهار/إخفاء كتلة نص عند دخول/خروج الماوس.
 
-يرجى أيضًا أخذ في الاعتبار أن إجراءات PDF في المستندات تعمل بشكل جيد في القراء المطابقين (مثل
-يرجى أيضًا مراعاة أن إجراءات PDF في المستندات تعمل بشكل جيد في قارئات المتوافقة (على سبيل المثال
+يرجى أيضًا أخذ في الاعتبار أن إجراءات PDF في المستندات تعمل بشكل جيد في القراء المتوافقين (مثل Adobe Reader) ولكن لا توجد ضمانات للقراء الآخرين لملفات PDF (مثل مكونات متصفح الويب). لقد قمنا بتقديم تحقيق موجز ووجدنا:
 
-- تعمل جميع تنفيذات إجراء الإخفاء في مستندات PDF بشكل جيد في Internet Explorer الإصدار 11.0.
-- تعمل جميع تنفيذات إجراء الإخفاء أيضًا في Opera الإصدار 12.14، ولكننا نلاحظ بعض التأخير في الاستجابة عند الفتح الأول للمستند.
-- يعمل التنفيذ الوحيد باستخدام مُنشئ HideAction الذي يقبل اسم الحقل إذا كان Google Chrome الإصدار 61.0 يتصفح المستند؛ يرجى استخدام المُنشئين المناسبين إذا كان التصفح في Google Chrome مهمًا:
+- جميع تطبيقات إجراء الإخفاء في مستندات PDF تعمل بشكل جيد في Internet Explorer v.11.0.
+- جميع تطبيقات إجراء الإخفاء تعمل أيضًا في Opera v.12.14، ولكن لاحظنا بعض التأخير في الاستجابة عند فتح المستند لأول مرة.
+- فقط التطبيق الذي يستخدم مُنشئ HideAction الذي يقبل اسم الحقل يعمل إذا كان Google Chrome v.61.0 يتصفح المستند؛ يرجى استخدام المُنشئات المقابلة إذا كان التصفح في Google Chrome مهمًا:
 
 >buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateHiddenTextBlock()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-string outputFile = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add paragraph with text
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
+        // Save PDF document
+        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
+    }
 
-// إنشاء مستند عينة بنص
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("حرك مؤشر الماوس هنا لعرض النص المتحرك"));
-doc.Save(outputFile);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the first extracted text fragment
+        var textFragments = absorber.TextFragments;
+        var fragment = textFragments[1];
 
-// فتح مستند بنص
-Document document = new Document(outputFile);
-// إنشاء كائن TextAbsorber للعثور على جميع العبارات التي تطابق التعبير العادي
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("حرك مؤشر الماوس هنا لعرض النص المتحرك");
-// قبول الامتصاص لصفحات المستند
-document.Pages.Accept(absorber);
-// الحصول على أول نص مستخلص
-TextFragmentCollection textFragments = absorber.TextFragments;
-TextFragment fragment = textFragments[1];
+        // Create hidden text field for floating text in the specified rectangle of the page
+        var floatingField = new Aspose.Pdf.Forms.TextBoxField(fragment.Page, new Aspose.Pdf.Rectangle(100, 700, 220, 740));
+        // Set text to be displayed as field value
+        floatingField.Value = "This is the \"floating text field\".";
+        // We recommend to make field 'readonly' for this scenario
+        floatingField.ReadOnly = true;
+        // Set 'hidden' flag to make field invisible on document opening
+        floatingField.Flags |= Aspose.Pdf.Annotations.AnnotationFlags.Hidden;
 
-// إنشاء حقل نصي مخفي للنص المتحرك في المستطيل المحدد من الصفحة
-TextBoxField floatingField = new TextBoxField(fragment.Page, new Rectangle(100, 700, 220, 740));
-// تعيين النص ليظهر كقيمة الحقل
-floatingField.Value = "هذا هو \"حقل النص المتحرك\".";
-// نوصي بجعل الحقل 'للقراءة فقط' لهذا السيناريو
-floatingField.ReadOnly = true;
-// تعيين علم 'مخفي' لجعل الحقل غير مرئي عند فتح المستند
-floatingField.Flags |= AnnotationFlags.Hidden;
+        // Setting a unique field name isn't necessary but allowed
+        floatingField.PartialName = "FloatingField_1";
 
-// تعيين اسم حقل فريد ليس ضروريًا ولكن مسموح به
-floatingField.PartialName = "FloatingField_1";
+        // Setting characteristics of field appearance isn't necessary but makes it better
+        floatingField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
+        floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
+        floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
+        floatingField.Border = new Aspose.Pdf.Annotations.Border(floatingField);
+        floatingField.Border.Width = 1;
+        floatingField.Multiline = true;
 
-// تعيين خصائص مظهر الحقل ليس ضروريًا ولكن يجعله أفضل
-floatingField.DefaultAppearance = new DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
-floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
-floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
-floatingField.Border = new Border(floatingField);
-floatingField.Border.Width = 1;
-floatingField.Multiline = true;
+        // Add text field to the document
+        document.Form.Add(floatingField);
 
-// إضافة حقل النص إلى المستند
-document.Form.Add(floatingField);
+        // Create invisible button on text fragment position
+        var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+        // Create new hide action for specified field (annotation) and invisibility flag
+        // (You also may reffer floating field by the name if you specified it above)
+        // Add actions on mouse enter/exit at the invisible button field
+        buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
+        buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
 
-// إنشاء زر غير مرئي على موضع قطعة النص
-ButtonField buttonField = new ButtonField(fragment.Page, fragment.Rectangle);
-// إنشاء إجراء إخفاء جديد للحقل المحدد (التعليق التوضيحي) وعلم الإخفاء.
-// (يمكنك أيضاً الإشارة إلى الحقل المتحرك باسم إذا قمت بتحديده أعلاه.)
-// إضافة إجراءات عند دخول/خروج الماوس في حقل الزر غير المرئي
-buttonField.Actions.OnEnter = new HideAction(floatingField, false);
-buttonField.Actions.OnExit = new HideAction(floatingField);
+        // Add button field to the document
+        document.Form.Add(buttonField);
 
-// إضافة حقل الزر إلى المستند
-document.Form.Add(buttonField);
-
-// حفظ المستند
-document.Save(outputFile);
+        // Save PDF document
+        document.Save(dataDir + "CreateHiddenTextBlock_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -242,23 +258,23 @@ document.Save(outputFile);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "الإنجليزية"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "الإنجليزية"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "الإنجليزية"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -267,7 +283,7 @@ document.Save(outputFile);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -279,5 +295,3 @@ document.Save(outputFile);
     }
 }
 </script>
-```
-

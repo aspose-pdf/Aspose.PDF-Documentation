@@ -2,9 +2,11 @@
 title: العمل مع الجداول في PDF باستخدام C#
 linktitle: العمل مع الجداول
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ar/net/working-with-tables/
-description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب ودمج جدول باستخدام مكتبة C#.
+description: يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب بجدول ودمجه باستخدام مكتبة C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع الجداول في PDF باستخدام C#",
-    "alternativeHeadline": "كيفية التلاعب بالجداول في PDF",
+    "headline": "Working with Tables in PDF using C#",
+    "alternativeHeadline": "Enhanced Table Management in PDF with C#",
+    "abstract": "Aspose.PDF for .NET يسمح للمستخدمين بإنشاء واستخراج والتلاعب وإزالة الجداول داخل مستندات PDF بكفاءة. تعزز هذه الميزة قدرات تكامل البيانات من خلال تمكين التكامل السلس مع مصادر البيانات، مما يجعلها أداة أساسية للمطورين الذين يعملون مع البيانات الجدولية في PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, جداول في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "257",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,26 +73,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-tables/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب ودمج جدول باستخدام مكتبة C#."
+    "dateModified": "2024-11-26",
+    "description": "يصف هذا القسم كيفية إضافة واستخراج جدول، وكيفية التلاعب بجدول ودمجه باستخدام مكتبة C#."
 }
 </script>
 
 الجداول جزء من العديد من نماذج PDF. يمكنك العثور على الجداول في مجموعة متنوعة من النماذج.
 
-**Aspose.PDF لـ .NET** يتيح لك العمل مع الجداول في ملف PDF بشكل متقدم. هذه الأداة المثالية تساعد في التغلب على بساطة ملفات PDF من خلال استخراج الجداول الفعلية للبيانات. باستخدام مكتبة .NET، يمكنك بسهولة إنشاء أو إضافة جدول في مستند PDF موجود، استخراج جدول، دمج جدول مع مصادر البيانات، وإزالة الجداول من مستندات PDF الموجودة.
+**Aspose.PDF for .NET** يتيح لك العمل مع الجداول في ملف PDF بشكل متقدم. هذه الأداة المثالية تساعد في التغلب على بساطة PDF من خلال استخراج الجداول من البيانات الفعلية. مع مكتبة .NET يمكنك بسهولة إنشاء أو إضافة جدول في مستند PDF موجود، استخراج جدول، دمج جدول مع مصادر البيانات، وإزالة الجداول من PDF الموجودة.
 
-أنت قادر على القيام بما يلي:
+يمكنك القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/net/add-table-in-existing-pdf-document/) - أنشئ جدولك في ملف pdf مع دمج الأعمدة أو الصفوف مع الأخذ في الاعتبار الحدود، الهوامش، والتبطين.
-- [استخراج جدول من مستند PDF موجود](/pdf/ar/net/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
-- [دمج الجدول مع مصادر البيانات](/pdf/ar/net/integrate-table/) - دمج الجدول مع قاعدة البيانات، دمج الجدول مع مصدر إطار العمل الكياني باستخدام مكتبة .NET.
-- [التلاعب بالجداول في مستند PDF موجود](/pdf/ar/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في مستند PDF الخاص بك باستخدام TableAbsorber.
-
-type: docs
-changefreq: "monthly"
-- [التلاعب بالجداول في ملف PDF موجود](/pdf/ar/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في ملف PDF الخاص بك باستخدام TableAbsorber.
-- [إزالة الجداول من ملف PDF موجود](/pdf/ar/net/remove-tables-from-existing-pdf/) - إزالة جدول أو عدة جداول من مستند PDF.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/net/add-table-in-existing-pdf-document/) - إنشاء جدولك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
+- [استخراج جدول من مستند PDF موجود](/pdf/net/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
+- [دمج جدول مع مصادر البيانات](/pdf/net/integrate-table/) - دمج جدول مع قاعدة بيانات، دمج جدول مع مصدر Entity Framework باستخدام مكتبة .NET.
+- [التلاعب بالجداول في PDF الموجود](/pdf/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في PDF الخاص بك باستخدام TableAbsorber.
+- [إزالة الجداول من PDF الموجود](/pdf/net/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
 
 <script type="application/ld+json">
 {
@@ -155,4 +153,3 @@ changefreq: "monthly"
     }
 }
 </script>
-

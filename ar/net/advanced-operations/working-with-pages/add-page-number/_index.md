@@ -1,35 +1,40 @@
 ---
-title: إضافة رقم الصفحة إلى ملف PDF باستخدام C#
+title: إضافة رقم الصفحة إلى PDF
 linktitle: إضافة رقم الصفحة
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /ar/net/add-page-number/
-description: يتيح لك Aspose.PDF لـ .NET إضافة ختم رقم الصفحة إلى ملف PDF باستخدام فئة ختم رقم الصفحة.
+description: Aspose.PDF for .NET يتيح لك إضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام فئة PageNumber Stamp.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/get-and-set-page-properties/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة رقم الصفحة إلى ملف PDF باستخدام C#",
-    "alternativeHeadline": "كيفية إضافة ختم رقم الصفحة إلى ملف PDF",
+    "headline": "Add Page Number to PDF",
+    "alternativeHeadline": "Add Dynamic Page Numbering to PDF",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية لختم رقم الصفحة، مما يتيح دمج أرقام الصفحات بسلاسة في مستندات PDF. تعزز هذه الوظيفة من تنقل المستند وتنظيمه من خلال السماح للمستخدمين بتخصيص التنسيق والمحاذاة والتصميم لتحسين قابلية القراءة والعرض الاحترافي.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, ختم رقم الصفحة",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Add Page Number, PDF Stamp, Aspose.PDF for .NET, PageNumberStamp class, Document object, PageNumberStamp properties, Bates numbering, PDF document generation, Page number stamp, C# PDF manipulation",
+    "wordcount": "559",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +51,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,72 +76,86 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-page-number/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يتيح لك Aspose.PDF لـ .NET إضافة ختم رقم الصفحة إلى ملف PDF باستخدام فئة ختم رقم الصفحة."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF for .NET يتيح لك إضافة ختم رقم الصفحة إلى ملف PDF الخاص بك باستخدام فئة PageNumber Stamp."
 }
 </script>
-كل الوثائق يجب أن تحتوي على أرقام الصفحات فيها. يسهل رقم الصفحة على القارئ تحديد أجزاء مختلفة من الوثيقة.
-**Aspose.PDF لـ .NET** يتيح لك إضافة أرقام الصفحات مع PageNumberStamp.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يجب أن تحتوي جميع المستندات على أرقام صفحات. رقم الصفحة يسهل على القارئ تحديد أجزاء مختلفة من المستند.
+**Aspose.PDF for .NET** يتيح لك إضافة أرقام الصفحات باستخدام PageNumberStamp.
 
-يمكنك استخدام فئة [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) لإضافة ختم رقم الصفحة في ملف PDF.
-يمكنك استخدام فئة [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) لإضافة ختم رقم الصفحة في ملف PDF.
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+يمكنك استخدام فئة [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) لإضافة ختم رقم الصفحة في ملف PDF. توفر فئة [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) الخصائص اللازمة لإنشاء ختم يعتمد على رقم الصفحة مثل التنسيق، الهوامش، المحاذاة، الرقم الابتدائي، إلخ. لإضافة ختم رقم الصفحة، تحتاج إلى إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وكائن [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) من [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) لإضافة الختم في PDF. يمكنك أيضًا تعيين سمات الخط لختم رقم الصفحة. يوضح لك مقتطف الشيفرة التالي كيفية إضافة أرقام الصفحات في ملف PDF.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageNumberToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir+ "PageNumberStamp.pdf");
-
-// إنشاء ختم رقم الصفحة
-PageNumberStamp pageNumberStamp = new PageNumberStamp();
-// هل الختم هو خلفية
-pageNumberStamp.Background = false;
-pageNumberStamp.Format = "Page # of " + pdfDocument.Pages.Count;
-pageNumberStamp.BottomMargin = 10;
-pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
-pageNumberStamp.StartingNumber = 1;
-// تعيين خصائص النص
-pageNumberStamp.TextState.Font = FontRepository.FindFont("Arial");
-pageNumberStamp.TextState.FontSize = 14.0F;
-pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
-pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
-pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
-
-// إضافة الختم إلى صفحة معينة
-pdfDocument.Pages[1].AddStamp(pageNumberStamp);
-
-dataDir = dataDir + "PageNumberStamp_out.pdf";
-// حفظ المستند الناتج
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PageNumberStamp.pdf"))
+    {
+        // Create page number stamp
+        var pageNumberStamp = new Aspose.Pdf.PageNumberStamp();
+        // Whether the stamp is background
+        pageNumberStamp.Background = false;
+        pageNumberStamp.Format = "Page # of " + document.Pages.Count;
+        pageNumberStamp.BottomMargin = 10;
+        pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
+        pageNumberStamp.StartingNumber = 1;
+        // Set text properties
+        pageNumberStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        pageNumberStamp.TextState.FontSize = 14.0F;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(pageNumberStamp);
+        // Save PDF document
+        document.Save(dataDir + "PageNumberStamp_out.pdf");  
+    }
+}
 ```
+
 ## مثال حي
 
-[إضافة أرقام صفحات PDF](https://products.aspose.app/pdf/page-number) هو تطبيق ويب مجاني على الإنترنت يتيح لك استكشاف كيفية عمل إضافة أرقام الصفحات.
+[إضافة أرقام صفحات PDF](https://products.aspose.app/pdf/page-number) هو تطبيق ويب مجاني عبر الإنترنت يتيح لك استكشاف كيفية عمل وظيفة إضافة أرقام الصفحات.
 
-[![كيفية إضافة رقم صفحة في ملف PDF باستخدام C#](page_number.png)](https://products.aspose.app/pdf/page-number)
+[![كيفية إضافة رقم الصفحة في PDF باستخدام C#](page_number.png)](https://products.aspose.app/pdf/page-number)
 
-## إضافة/إزالة ترقيم بيتس
+## إضافة/إزالة ترقيم بايتس
 
-**ترقيم بيتس** (المعروف أيضًا باسم ختم بيتس) يستخدم في المجالات القانونية، والطبية، والتجارية لوضع أرقام تعريفية و/أو علامات التاريخ/الوقت على الصور والمستندات أثناء مسحها ضوئيًا أو معالجتها، على سبيل المثال، خلال مرحلة الاكتشاف استعدادًا للمحاكمة أو تحديد إيصالات الأعمال. يوفر هذا العملية التعريف، الحماية، والترقيم المتتابع التلقائي للصور أو المستندات.
+**ترقيم بايتس** (المعروف أيضًا بختم بايتس) يُستخدم في المجالات القانونية والطبية والتجارية لوضع أرقام تعريفية و/أو علامات تاريخ/وقت على الصور والمستندات أثناء مسحها أو معالجتها، على سبيل المثال، خلال مرحلة الاكتشاف من التحضيرات للمحاكمة أو تحديد إيصالات الأعمال. توفر هذه العملية التعريف والحماية والترقيم التلقائي المتسلسل للصور أو المستندات.
 
-Aspose.PDF لديه دعم محدود لترقيم بيتس الآن. سيتم تحديث هذه الوظيفة وفقًا لطلبات العملاء.
+تدعم Aspose.PDF حاليًا ترقيم بايتس بشكل محدود. سيتم تحديث هذه الوظيفة وفقًا لطلبات العملاء.
 
-### كيفية إزالة ترقيم بيتس
+### كيفية إزالة ترقيم بايتس
 
 ```csharp
-static void Demo03()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveBatesNumbering()
 {
-    Document doc = new Document(@"C:\Samples\Sample-Document03.pdf");
-    foreach (var page in doc.Pages)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))
     {
-        var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
-        page.Artifacts.Delete(batesNum);
+        foreach (var page in document.Pages)
+        {
+            // Remove bates numbering
+            var artifacts = page.Artifacts.Where(ar => ar.CustomSubtype == "BatesN");
+            foreach (var artifact in artifacts)
+            {
+                page.Artifacts.Delete(artifact);   
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "RemoveBatesNumbering_out.pdf");
     }
-    doc.Save(@"C:\Samples\Sample-Document04.pdf");
 }
 ```
 
@@ -144,7 +163,7 @@ static void Demo03()
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -166,23 +185,23 @@ static void Demo03()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة الأمريكية",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -191,7 +210,7 @@ static void Demo03()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -203,5 +222,3 @@ static void Demo03()
     }
 }
 </script>
-```
-

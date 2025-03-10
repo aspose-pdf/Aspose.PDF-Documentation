@@ -2,9 +2,11 @@
 title: إنشاء روابط في ملف PDF باستخدام C#
 linktitle: إنشاء روابط
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/create-links/
-description: توضح هذه القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C#.
+description: يشرح هذا القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إنشاء روابط في ملف PDF باستخدام C#",
-    "alternativeHeadline": "كيفية إنشاء روابط في PDF",
+    "headline": "Create Links in PDF file with C#",
+    "alternativeHeadline": "Create Interactive Links in PDFs Using C#",
+    "abstract": "تتيح الميزة الجديدة للمطورين إنشاء روابط تفاعلية بسلاسة داخل مستندات PDF باستخدام C#. تعزز هذه الوظيفة تفاعل المستخدم من خلال الربط بتطبيقات خارجية أو ملفات PDF أخرى، مما يتيح تجربة مستند أكثر ديناميكية وغنية بالميزات. مثالية للدروس وإرشاد المستخدمين، تمكّن هذه التكاملات المستخدمين من ربط المحتوى بشكل فعال.",
     "author": {
         "@type": "Person",
-        "name":"أنستاسيا هولوب",
-        "givenName": "أنستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, إنشاء رابط في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Create Links, PDF document, C#, LinkAnnotation, LaunchAction, GoToRemoteAction, Aspose.PDF, Document object, PDF manipulation, External link",
+    "wordcount": "690",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,83 +74,150 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "توضح هذه القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C#."
+    "dateModified": "2024-11-25",
+    "description": "يشرح هذا القسم كيفية إنشاء روابط في مستند PDF الخاص بك باستخدام C#."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-## إنشاء الروابط
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
 
-من خلال إضافة رابط إلى تطبيق في مستند، يصبح من الممكن الربط بالتطبيقات من خلال المستند. هذا مفيد عندما تريد من القراء اتخاذ إجراء معين في نقطة محددة في الدليل التعليمي، على سبيل المثال، أو لإنشاء مستند غني بالميزات. لإنشاء رابط تطبيق:
+## إنشاء روابط
 
-1. [إنشاء مستند](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
-1. احصل على [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد إضافة رابط إليها.
-1. إنشاء كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائني الصفحة و[المستطيل](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
-1. تعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. عند إنشاء كائن [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction)، حدد التطبيق الذي تريد تشغيله.
+من خلال إضافة رابط إلى تطبيق في مستند، من الممكن الربط بالتطبيقات من مستند. هذا مفيد عندما تريد من القراء اتخاذ إجراء معين في نقطة معينة في درس، على سبيل المثال، أو لإنشاء مستند غني بالميزات. لإنشاء رابط تطبيق:
+
+1. [إنشاء مستند](https://reference.aspose.com/pdf/net/aspose.pdf/document) كائن.
+1. احصل على [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد إضافة الرابط إليها.
+1. أنشئ كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات الصفحة و [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) .
+1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
+1. أيضًا، قم بتعيين خاصية Action لكائن [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) .
+1. عند إنشاء كائن [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) ، حدد التطبيق الذي تريد تشغيله.
 1. أضف الرابط إلى خاصية [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) لكائن الصفحة.
-1. أخيرًا، احفظ ملف PDF المُحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن الوثيقة.
+1. أخيرًا، احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن المستند.
 
-الشفرة البرمجية التالية توضح كيفية إنشاء رابط لتطبيق في ملف PDF.
+تظهر مقتطفات الشيفرة التالية كيفية إنشاء رابط لتطبيق في ملف PDF.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-// فتح المستند
-Document document = new Document(dataDir + "CreateApplicationLink.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
+        page.Annotations.Add(link);
 
-// إنشاء رابط
-Page page = document.Pages[1];
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-link.Action = new LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
-page.Annotations.Add(link);
-
-dataDir = dataDir + "CreateApplicationLink_out.pdf";
-// حفظ المستند المحدث
-document.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "CreateApplicationLink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
+
+    // Create link
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
+    page.Annotations.Add(link);
+
+    // Save PDF document
+    document.Save(dataDir + "CreateApplicationLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ### إنشاء رابط مستند PDF في ملف PDF
 
-يتيح لك Aspose.PDF لـ .NET إضافة رابط إلى ملف PDF خارجي بحيث يمكنك ربط عدة مستندات معًا. لإنشاء رابط مستند PDF:
+تتيح لك Aspose.PDF for .NET إضافة رابط إلى ملف PDF خارجي بحيث يمكنك ربط عدة مستندات معًا. لإنشاء رابط مستند PDF:
 
-1. أولاً، قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. ثم، احصل على [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) الذي تريد إضافة الرابط إليه.
-1. قم بإنشاء كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائني Page و [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
-1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. قم بتعيين خاصية العمل إلى كائن [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction).
-1. أضف الرابط إلى مجموعة التعليقات التوضيحية لكائن الصفحة.
-1. احفظ ملف PDF المُحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن الوثيقة.
+1. أولاً، أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. ثم، احصل على [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page) المحددة التي تريد إضافة الرابط إليها.
+1. أنشئ كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) باستخدام كائنات الصفحة و [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) .
+1. قم بتعيين خصائص الرابط باستخدام كائن [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
+1. قم بتعيين خاصية Action لكائن [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction) .
+1. أثناء إنشاء كائن GoToRemoteAction، حدد ملف PDF الذي يجب تشغيله، بالإضافة إلى رقم الصفحة التي يجب فتحها.
+1. أضف الرابط إلى مجموعة Annotations لكائن الصفحة.
+1. احفظ ملف PDF المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن المستند.
 
-الشفرة التالية توضح كيفية إنشاء رابط مستند PDF في ملف PDF.
+تظهر مقتطفات الشيفرة التالية كيفية إنشاء رابط مستند PDF في ملف PDF.
 
- ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// فتح الوثيقة
-Document document = new Document(dataDir+ "CreateDocumentLink.pdf");
-// إنشاء رابط
-Page page = document.Pages[1];
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
-page.Annotations.Add(link);
-dataDir = dataDir + "CreateDocumentLink_out.pdf";
-// حفظ الوثيقة المُحدثة
-document.Save(dataDir);
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
+        page.Annotations.Add(link);
+
+        // Save PDF document
+        document.Save(dataDir + "CreateDocumentLink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
 
-<script type="application/ld+json">
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
+
+    // Create link
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
+    page.Annotations.Add(link);
+
+    // Save PDF document
+    document.Save(dataDir + "CreateDocumentLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF لمكتبة .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -169,23 +239,23 @@ document.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "بريطانيا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -194,9 +264,9 @@ document.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أو إس، لينكس",
+    "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
@@ -206,4 +276,3 @@ document.Save(dataDir);
     }
 }
 </script>
-

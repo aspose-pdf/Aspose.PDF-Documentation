@@ -1,54 +1,24 @@
 ---
-title: الإضافات والتكامل مع لغات أخرى
+title: الإضافات
 linktitle: الإضافات
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /ar/net/plugins/
-description: تعلم كيفية استخدام مختلف الإضافات المعتمدة على Aspose.PDF
-lastmod: "2024-03-13"
+description: تعلم كيفية استخدام الإضافات المختلفة بناءً على Aspose.PDF
+lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-
 ## الإضافات
 
-### الإضافات المدمجة في المكتبة
+تحتوي هذه القسم على قائمة بالإضافات لأكثر تطبيقات الويب شعبية: DotNetNuke، Sitefinity، Umbraco، إلخ.
 
-* [ChatGPT لـ .NET](chatgpt/) هذه الإضافة تتيح إرسال الطلبات كرسائل واستقبال الردود محفوظة كملفات PDF أو عبر كائن ChatCompletion. تتكامل بسلاسة مع استخراج النصوص من الملفات المضافة إلى مجموعة رسائل الدردشة.
-* [Merger لـ .NET](merger/) تجربة توحيد المستندات بسلاسة مع إضافتنا! قم بدمج عدة مستندات PDF في ملف واحد موحد بكل سهولة، مما يبسط مهام إدارة المستندات والتنظيم.
-* [Splitter لـ .NET](splitter/) "حول تجربتك مع ملفات PDF بكل سهولة!
-* [Splitter for .NET](splitter/) "حول تجربة PDF الخاصة بك بسهولة!
-* [Optimizer for .NET](optimizer/) عزز تجربة PDF الخاصة بك مع هذا الإضافة المتعددة الاستخدامات، من خلال تدوير وتغيير حجم الصفحات بسلاسة ودقة. بالإضافة إلى ذلك، استمتع بميزات التحسين والضغط المحسنة لتنظيم مستنداتك كما لم يحدث من قبل. جربه الآن لإدارة PDF فعالة وسهلة!",
-* [HTML for .NET](html/) حول مستنداتك من PDF إلى HTML أو العكس بكل سهولة ودقة. استمتع براحة هذه الأداة القوية لتحويل المستندات بسلاسة لتلائم احتياجاتك. جربه الآن لفتح مرونة التحويل بين PDF وHTML!
-* [XLS for .NET](xls/) افتح تحويل البيانات بسهولة مع إضافتنا! قم بتحويل مستندات PDF إلى XLSX، CSV، ODS، والمزيد ببضع نقرات فقط. عزز تدفق عملك ووفر الوقت بالاستفادة من قوة محول الجداول الخاص بنا اليوم!
-* [DOC for .NET](doc/) تجربة تحويل المستندات بسلاسة مع إضافتنا!
-* [DOC for .NET](doc/) تجربة تحويل المستندات بدون عناء مع إضافتنا!
-* [JPEG for .NET](jpeg/) حول صفحات مستند PDF الخاصة بك إلى صور JPEG عالية الجودة بكل سهولة. تجربة تحويل سلسة لتحسين التوافق والاستخدام المتعدد. جربه الآن لاكتشاف عالم جديد من إمكانيات محتوى PDF الخاص بك!
-* [PNG for .NET](png/) حول صفحات مستند PDF الخاصة بك إلى صور PNG نابضة بالحياة بكل سهولة. استكشف التنوع الجديد والتوافق مع هذه الأداة السلسة للتحويل. حول محتوى PDF الخاص بك إلى PNGs ذات مظهر بصري مذهل بكل سهولة – جربه الآن وارتق بتجربة مستنداتك!
-* [TableGenerator for .NET](tablegenerator/) عزز قدراتك في تحرير PDF بكل سهولة من خلال إضافة أو إدراج جداول في أرقام صفحات محددة ضمن مستندك باستخدام هذه الإضافة البديهية.
-* [TocGenerator for .NET](tocgenerator/) رفع تنظيم مستند PDF الخاص بك بكل سهولة من خلال دمج فهرس المحتويات في بداية المستند باستخدام هذه الإضافة الملائمة.
-* [TocGenerator لـ .NET](tocgenerator/) رفع مستوى تنظيم مستند PDF الخاص بك من خلال دمج جدول المحتويات بسهولة في بداية المستند باستخدام هذا الإضافة المريحة.
-* [FormEditor لـ .NET](formeditor/) اكتشف مستوى جديد من الكفاءة مع حلنا المتطور الذي يمكنك من ملء وتعديل نماذج PDF بسهولة. سواء كنت تدير مستندات الأعمال أو تتعامل مع الأوراق الشخصية، يوفر أداتنا تجربة سلسة، تتيح لك التنقل وتعديل نماذج PDF بسهولة لا مثيل لها. رفع إنتاجيتك وتحويل الطريقة التي تتفاعل بها مع نماذج PDF!
-* [FormExporter لـ .NET](formexporter/) اطلق العنان لقوة تصدير البيانات بسلاسة مع حلنا المتطور!
-* [FormExporter for .NET](formexporter/) أطلق العنان لقوة تصدير البيانات بسلاسة مع حلولنا المتطورة!
-* [FormFlattener for .NET](formflattener/) حوّل نماذج PDF الخاصة بك بسهولة مع أداتنا، مما يجعلها غير قابلة للتعديل ويعزز أمان الوثيقة. من خلال استخدام حلنا، يمكنك بسهولة تسطيح نماذج PDF، مما يضمن بقاء المحتوى ثابتًا وآمنًا من التعديلات غير المصرح بها. قم بتبسيط إدارة المستندات لديك بالقدرة على جعل نماذج PDF غير قابلة للتعديل ببضع نقرات فقط.
-* [TextExtractor for .NET](textextractor/) إن TextExtractor من Aspose.PDF هو الحل الأمثل لتحليل واستخراج النص بسلاسة من ملفات PDF! تمامًا مثل مكتبة Aspose الأساسية، فهو يدعم ثلاثة أوضاع تشغيل متنوعة: النقي، الخام، والبسيط. استمتع بتجربة استخراج النصوص بدقة وسهولة باستخدام PDF.TextExtractor!
-* [ImageExractor for .NET](imageextractor/) افتح مستوى جديد من إمكانية الوصول إلى المحتوى المرئي مع أداتنا!
-* [ImageExractor لـ .NET](imageextractor/) "افتح مستوى جديد من إمكانية الوصول إلى المحتوى البصري مع أداتنا!
-
-### الإضافات لمختلف التطبيقات
-
-هذا القسم يحتوي على قائمة الإضافات لأكثر تطبيقات الويب شهرة: DotNetNuke، Sitefinity، Umbraco، وغيرها.
-
-* [Aspose.PDF .NET لـ DNN](/pdf/ar/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF .NET لـ Umbraco](/pdf/ar/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF .NET لـ VisualStudio](/pdf/ar/net/aspose-pdf-net-for-visualstudio/)
-* [Aspose.PDF .NET لـ CRM](/pdf/ar/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF .NET لـ Sitefinity](/pdf/ar/net/aspose-pdf-net-for-sitefinity/)
-
-### استخدام Aspose.PDF مع لغات أخرى
-
-* [استخدام Aspose.PDF لـ .NET مع Coldfusion](/pdf/ar/net/aspose-pdf-net-for-coldfusion/)
-
-
+* [Aspose.PDF for .NET مع Coldfusion](/pdf/net/using-aspose-pdf-for-net-with-coldfusion/)
+* [Aspose.PDF for .NET مع CRM](/pdf/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF for .NET مع DNN](/pdf/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF for .NET مع Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF for .NET مع Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF for .NET مع VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)

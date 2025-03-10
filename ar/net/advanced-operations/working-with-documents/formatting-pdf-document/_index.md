@@ -2,9 +2,11 @@
 title: تنسيق مستند PDF باستخدام C#
 linktitle: تنسيق مستند PDF
 type: docs
-weight: 11
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
 url: /ar/net/formatting-pdf-document/
-description: قم بإنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لـ .NET. استخدم الشفرة التالية لحل مهامك.
+description: إنشاء وتنسيق مستند PDF باستخدام Aspose.PDF for .NET. استخدم مقتطف الشيفرة التالي لحل مهامك.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "تنسيق مستند PDF باستخدام C#",
-    "alternativeHeadline": "كيفية تنسيق مستند PDF في .NET",
+    "headline": "Formatting Document using C#",
+    "alternativeHeadline": "Enhance PDF Formatting with Aspose.PDF for .NET",
+    "abstract": "اكتشف الميزة الجديدة القوية لـ Aspose.PDF for .NET التي تتيح للمستخدمين إنشاء وتنسيق مستندات PDF بسلاسة. مع التحكم الشامل في خصائص المستند مثل إعدادات عرض النافذة، خيارات تضمين الخطوط، وعوامل التكبير القابلة للتخصيص، يمكن للمطورين تحسين تجربة المستخدم والحفاظ على سلامة المستند عبر منصات مختلفة. قم بتحسين مهام معالجة PDF الخاصة بك مع هذه الوظيفة القوية التي تحسن بشكل كبير من كفاءة تطبيقات .NET الخاصة بك.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, dotnet, تنسيق مستند pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Formatting PDF Document, Aspose.PDF for .NET, PDF document properties, embed fonts, font substitution, set zoom factor, document window properties, PDF manipulation library, PDF document generation, C# PDF formatting",
+    "wordcount": "2526",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,381 +74,489 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/formatting-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "قم بإنشاء وتنسيق مستند PDF باستخدام Aspose.PDF لـ .NET. استخدم الشفرة التالية لحل مهامك."
+    "dateModified": "2024-11-25",
+    "description": "إنشاء وتنسيق مستند PDF باستخدام Aspose.PDF for .NET. استخدم مقتطف الشيفرة التالي لحل مهامك."
 }
 </script>
 
 ## تنسيق مستند PDF
 
-### الحصول على خصائص نافذة المستند وعرض الصفحات
+### الحصول على خصائص نافذة المستند وعرض الصفحة
 
-يساعدك هذا الموضوع على فهم كيفية الحصول على خصائص نافذة المستند، تطبيق المشاهدة، وكيفية عرض الصفحات. لضبط هذه الخصائص:
+تساعدك هذه الموضوعات على فهم كيفية الحصول على خصائص نافذة المستند، وتطبيق العرض، وكيفية عرض الصفحات. لتعيين هذه الخصائص:
 
-افتح ملف PDF باستخدام فئة [المستند](https://reference.aspose.com/pdf/net/aspose.pdf/document). الآن، يمكنك ضبط خصائص كائن المستند، مثل:
+افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. الآن، يمكنك تعيين خصائص كائن Document، مثل
 
-- CenterWindow – مركز نافذة المستند على الشاشة. الافتراضي: خطأ.
-- Direction – ترتيب القراءة. يحدد هذا كيفية ترتيب الصفحات عند عرضها جنبًا إلى جنب. الافتراضي: من اليسار إلى اليمين.
-- DisplayDocTitle – عرض عنوان المستند في شريط عنوان نافذة المستند. الافتراضي: خطأ (يتم عرض العنوان).
-- HideMenuBar – إخفاء أو عرض شريط قائمة نافذة المستند. الافتراضي: خطأ (يتم عرض شريط القائمة).
-- HideToolBar – إخفاء أو عرض شريط أدوات نافذة المستند. الافتراضي: خطأ (يتم عرض شريط الأدوات).
-- HideWindowUI – إخفاء أو عرض عناصر نافذة المستند مثل شريط التمرير.
-- HideWindowUI – إخفاء أو عرض عناصر نافذة المستند مثل شريط التمرير.
-- NonFullScreenPageMode – كيفية عرض المستند عندما لا يكون في وضع الصفحة الكاملة.
+- CenterWindow – مركز نافذة المستند على الشاشة. الافتراضي: false.
+- Direction – ترتيب القراءة. يحدد كيفية عرض الصفحات عند عرضها جنبًا إلى جنب. الافتراضي: من اليسار إلى اليمين.
+- DisplayDocTitle – عرض عنوان المستند في شريط عنوان نافذة المستند. الافتراضي: false (يتم عرض العنوان).
+- HideMenuBar – إخفاء أو عرض شريط قائمة نافذة المستند. الافتراضي: false (يتم عرض شريط القائمة).
+- HideToolBar – إخفاء أو عرض شريط أدوات نافذة المستند. الافتراضي: false (يتم عرض شريط الأدوات).
+- HideWindowUI – إخفاء أو عرض عناصر نافذة المستند مثل أشرطة التمرير. الافتراضي: false (يتم عرض عناصر واجهة المستخدم).
+- NonFullScreenPageMode – كيفية عرض المستند عندما لا يتم عرضه في وضع ملء الشاشة.
 - PageLayout – تخطيط الصفحة.
-- PageMode – كيفية عرض المستند عند فتحه لأول مرة. الخيارات هي عرض الصور المصغرة، الشاشة الكاملة، عرض لوحة المرفقات.
+- PageMode – كيفية عرض المستند عند فتحه لأول مرة. الخيارات هي عرض المصغرات، ملء الشاشة، عرض لوحة المرفقات.
 
-يعمل الكود التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-الكود التالي يوضح كيفية الحصول على الخصائص باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+يظهر مقتطف الشيفرة التالي كيفية الحصول على الخصائص باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetDocumentWindowProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetDocumentWindow.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
+    {
+        // Get different document properties
+        // Position of document's window - Default: false
+        Console.WriteLine("CenterWindow : {0}", document.CenterWindow);
 
-// الحصول على خصائص المستند المختلفة
-// موقع نافذة المستند - الافتراضي: false
-Console.WriteLine("CenterWindow : {0}", pdfDocument.CenterWindow);
+        // Predominant reading order; determines the position of page
+        // When displayed side by side - Default: L2R
+        Console.WriteLine("Direction : {0}", document.Direction);
 
-// ترتيب القراءة السائد؛ يحدد موقع الصفحة
-// عند عرضها جنبًا إلى جنب - الافتراضي: L2R
-Console.WriteLine("Direction : {0}", pdfDocument.Direction);
+        // Whether window's title bar should display document title
+        // If false, title bar displays PDF file name - Default: false
+        Console.WriteLine("DisplayDocTitle : {0}", document.DisplayDocTitle);
 
-// ما إذا كان شريط العنوان النافذة يجب أن يعرض عنوان المستند
-// إذا كان خطأ، يعرض شريط العنوان اسم ملف PDF - الافتراضي: false
-Console.WriteLine("DisplayDocTitle : {0}", pdfDocument.DisplayDocTitle);
+        // Whether to resize the document's window to fit the size of
+        // First displayed page - Default: false
+        Console.WriteLine("FitWindow : {0}", document.FitWindow);
 
-// ما إذا كان يجب تغيير حجم نافذة المستند لتناسب حجم
-// الصفحة الأولى المعروضة - الافتراضي: false
-Console.WriteLine("FitWindow : {0}", pdfDocument.FitWindow);
+        // Whether to hide menu bar of the viewer application - Default: false
+        Console.WriteLine("HideMenuBar : {0}", document.HideMenubar);
 
-// ما إذا كان يجب إخفاء شريط القوائم لتطبيق العارض - الافتراضي: false
-Console.WriteLine("HideMenuBar : {0}", pdfDocument.HideMenubar);
+        // Whether to hide tool bar of the viewer application - Default: false
+        Console.WriteLine("HideToolBar : {0}", document.HideToolBar);
 
-// ما إذا كان يجب إخفاء شريط الأدوات لتطبيق العارض - الافتراضي: false
-Console.WriteLine("HideToolBar : {0}", pdfDocument.HideToolBar);
+        // Whether to hide UI elements like scroll bars
+        // And leaving only the page contents displayed - Default: false
+        Console.WriteLine("HideWindowUI : {0}", document.HideWindowUI);
 
-// ما إذا كان يجب إخفاء عناصر واجهة المستخدم مثل شريط التمرير
-// وترك محتويات الصفحة فقط معروضة - الافتراضي: false
-Console.WriteLine("HideWindowUI : {0}", pdfDocument.HideWindowUI);
+        // Document's page mode. How to display document on exiting full-screen mode.
+        Console.WriteLine("NonFullScreenPageMode : {0}", document.NonFullScreenPageMode);
 
-// وضع صفحة المستند. كيفية عرض المستند عند الخروج من وضع الشاشة الكاملة.
-Console.WriteLine("NonFullScreenPageMode : {0}", pdfDocument.NonFullScreenPageMode);
+        // The page layout i.e. single page, one column
+        Console.WriteLine("PageLayout : {0}", document.PageLayout);
 
-// تخطيط الصفحة مثل صفحة واحدة، عمود واحد
-Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout);
-
-// كيف يجب أن يعرض المستند عند فتحه
-// أي عرض الصور المصغرة، الشاشة الكاملة، عرض لوحة المرفقات
-Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
+        // How the document should display when opened
+        // I.e. show thumbnails, full-screen, show attachment panel
+        Console.WriteLine("PageMode : {0}", document.PageMode);
+    }
+}
 ```
+
 ### تعيين خصائص نافذة المستند وعرض الصفحة
 
-يشرح هذا الموضوع كيفية تعيين خصائص نافذة المستند، تطبيق المشاهدة، وعرض الصفحة. لتعيين هذه الخصائص المختلفة:
+تشرح هذه الموضوعات كيفية تعيين خصائص نافذة المستند، وتطبيق العرض، وعرض الصفحة. لتعيين هذه الخصائص المختلفة:
 
-1. افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. اضبط خصائص كائن الوثيقة.
-1. احفظ ملف PDF المحدث باستخدام طريقة الحفظ.
+1. افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
+1. قم بتعيين خصائص كائن Document.
+1. احفظ ملف PDF المحدث باستخدام طريقة Save.
 
 الخصائص المتاحة هي:
 
-- مركز النافذة
-- الاتجاه
-- عرض عنوان الوثيقة
-- ملاءمة النافذة
-- إخفاء شريط القوائم
-- إخفاء شريط الأدوات
-- إخفاء واجهة المستخدم للنافذة
-- وضع الصفحة غير الملء الكامل
-- تخطيط الصفحة
-- وضع الصفحة
+- CenterWindow.
+- Direction.
+- DisplayDocTitle.
+- FitWindow.
+- HideMenuBar.
+- HideToolBar.
+- HideWindowUI.
+- NonFullScreenPageMode.
+- PageLayout.
+- PageMode.
 
-يتم استخدام كل منها ووصفها في الكود أدناه. يُظهر الكود التالي كيفية تعيين الخصائص باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+يتم استخدام كل منها ووصفها في الشيفرة أدناه. يظهر مقتطف الشيفرة التالي كيفية تعيين الخصائص باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetDocumentWindowProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "SetDocumentWindow.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
+    {
+        // Set different document properties
+        // Specify to position document's window - Default: false
+        document.CenterWindow = true;
 
-// تعيين خصائص مختلفة للمستند
-// تحديد لتموضع نافذة المستند - الافتراضي: خطأ
-pdfDocument.CenterWindow = true;
+        // Predominant reading order; determines the position of page
+        // When displayed side by side - Default: L2R
+        document.Direction = Aspose.Pdf.Direction.R2L;
 
-// ترتيب القراءة الغالب؛ يحدد موضع الصفحة
-// عند العرض جنبًا إلى جنب - الافتراضي: L2R
-pdfDocument.Direction = Direction.R2L;
+        // Specify whether window's title bar should display document title
+        // If false, title bar displays PDF file name - Default: false
+        document.DisplayDocTitle = true;
 
-// تحديد ما إذا كان يجب عرض عنوان الوثيقة في شريط عنوان النافذة
-// إذا كان خطأ، يعرض شريط العنوان اسم ملف PDF - الافتراضي: خطأ
-pdfDocument.DisplayDocTitle = true;
+        // Specify whether to resize the document's window to fit the size of
+        // First displayed page - Default: false
+        document.FitWindow = true;
 
-// تحديد ما إذا كان يجب تغيير حجم نافذة المستند لتناسب حجم
-// أول صفحة معروضة - الافتراضي: خطأ
-pdfDocument.FitWindow = true;
+        // Specify whether to hide menu bar of the viewer application - Default: false
+        document.HideMenubar = true;
 
-// تحديد ما إذا كان يجب إخفاء شريط القوائم لتطبيق المشاهدة - الافتراضي: خطأ
-pdfDocument.HideMenubar = true;
+        // Specify whether to hide tool bar of the viewer application - Default: false
+        document.HideToolBar = true;
 
-// تحديد ما إذا كان يجب إخفاء شريط الأدوات لتطبيق المشاهدة - الافتراضي: خطأ
-pdfDocument.HideToolBar = true;
+        // Specify whether to hide UI elements like scroll bars
+        // And leaving only the page contents displayed - Default: false
+        document.HideWindowUI = true;
 
-// تحديد ما إذا كان يجب إخفاء عناصر واجهة المستخدم مثل شريط التمرير
-// ويترك فقط محتويات الصفحة معروضة - الافتراضي: خطأ
-pdfDocument.HideWindowUI = true;
+        // Document's page mode. Specify how to display document on exiting full-screen mode.
+        document.NonFullScreenPageMode = Aspose.Pdf.PageMode.UseOC;
 
-// وضع صفحة المستند. تحديد كيفية عرض المستند عند الخروج من وضع ملء الشاشة.
-pdfDocument.NonFullScreenPageMode = PageMode.UseOC;
+        // Specify the page layout i.e. single page, one column
+        document.PageLayout = Aspose.Pdf.PageLayout.TwoColumnLeft;
 
-// تحديد تخطيط الصفحة مثل صفحة واحدة، عمود واحد
-pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
+        // Specify how the document should display when opened
+        // I.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseThumbs;
 
-// تحديد كيفية عرض المستند عند فتحه
-// مثل عرض الصور المصغرة، ملء الشاشة، عرض لوحة المرفقات
-pdfDocument.PageMode = PageMode.UseThumbs;
-
-dataDir = dataDir + "SetDocumentWindow_out.pdf";
-// حفظ ملف PDF المحدث
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "SetDocumentWindow_out.pdf");
+    }
+}
 ```
+
 ### تضمين الخطوط في ملف PDF موجود
 
-يدعم قارئات ملفات PDF [مجموعة أساسية من 14 خطًا](https://en.wikipedia.org/wiki/PDF#Text) حتى يمكن عرض الوثائق بنفس الطريقة بغض النظر عن المنصة التي يتم عرض الوثيقة عليها. عندما يحتوي ملف PDF على خط ليس من بين الخطوط الأساسية الـ 14، قم بتضمين الخط في ملف PDF لتجنب استبدال الخط.
+تدعم قارئات PDF [مجموعة أساسية من 14 خطًا](https://en.wikipedia.org/wiki/PDF#Text) بحيث يمكن عرض المستندات بنفس الطريقة بغض النظر عن النظام الأساسي الذي يتم عرض المستند عليه. عندما يحتوي PDF على خط ليس من بين الخطوط الأربعة عشر الأساسية، يجب تضمين الخط في ملف PDF لتجنب استبدال الخط.
 
-يدعم Aspose.PDF لـ .NET تضمين الخطوط في ملفات PDF الموجودة. يمكنك تضمين خط كامل أو جزء من الخط. لتضمين الخط، افتح ملف PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). ثم استخدم فئة [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) لتضمين الخط في ملف PDF. لتضمين الخط بالكامل، استخدم خاصية IsEmbeded في فئة الخط؛ لاستخدام جزء من الخط، استخدم خاصية IsSubset.
+يدعم Aspose.PDF for .NET تضمين الخطوط في ملفات PDF الموجودة. يمكنك تضمين خط كامل أو مجموعة فرعية من الخط. لتضمين الخط، افتح ملف PDF باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. ثم استخدم [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) class لتضمين الخط في ملف PDF. لتضمين الخط الكامل، استخدم خاصية IsEmbeded لفئة Font؛ لاستخدام مجموعة فرعية من الخط، استخدم خاصية IsSubset.
 
 {{% alert color="primary" %}}
 
-يضمن جزء الخط الأحرف المستخدمة فقط وهو مفيد حيث يتم استخدام الخطوط لجمل قصيرة أو شعارات، على سبيل المثال حيث يتم استخدام خط الشركة للشعار، ولكن ليس لنص الجسم.
-يُدمج جزء الخط فقط الأحرف المستخدمة وهو مفيد حيث يتم استخدام الخطوط للجمل القصيرة أو الشعارات، على سبيل المثال حيث يتم استخدام خط الشركة للشعار، ولكن لا يُستخدم لنص الجسم.
+تتضمن مجموعة فرعية من الخطوط فقط الأحرف المستخدمة وتكون مفيدة حيث يتم استخدام الخطوط لجمل قصيرة أو شعارات، على سبيل المثال حيث يتم استخدام خط الشركات لشعار، ولكن ليس لنص الجسم. يقلل استخدام مجموعة فرعية من حجم ملف PDF الناتج. ومع ذلك، إذا تم استخدام خط مخصص لنص الجسم، يجب تضمينه بالكامل.
 
 {{% /alert %}}
 
-يُظهر الشفرة التالية كيفية تضمين خط في ملف PDF.
+يظهر مقتطف الشيفرة التالي كيفية تضمين خط في ملف PDF.
 
-### تضمين خطوط النوع 1 القياسية
+### تضمين الخطوط القياسية من النوع 1
 
-تحتوي بعض مستندات PDF على خطوط من مجموعة خاصة من خطوط Adobe. تُعرف الخطوط من هذه المجموعة بـ "خطوط النوع 1 القياسية". تتضمن هذه المجموعة 14 خطًا ويتطلب تضمين هذا النوع من الخطوط استخدام علامات خاصة مثل [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). فيما يلي الشفرة التي يمكن استخدامها للحصول على مستند بجميع الخطوط المضمنة بما في ذلك خطوط النوع 1 القياسية:
+تحتوي بعض مستندات PDF على خطوط من مجموعة خطوط Adobe الخاصة. تُسمى الخطوط من هذه المجموعة "خطوط قياسية من النوع 1". تتضمن هذه المجموعة 14 خطًا ويتطلب تضمين هذا النوع من الخطوط استخدام علامات خاصة أي [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). فيما يلي مقتطف الشيفرة الذي يمكن استخدامه للحصول على مستند مع جميع الخطوط المضمنة بما في ذلك خطوط قياسية من النوع 1:
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// تحميل مستند PDF موجود
-Document pdfDocument = new Document(dataDir + "input.pdf");
-// تعيين خاصية EmbedStandardFonts للمستند
-pdfDocument.EmbedStandardFonts = true;
-foreach (Aspose.Pdf.Page page in pdfDocument.Pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void EmbedFontsType1ToPdf()
 {
-    if (page.Resources.Fonts != null)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        foreach (Aspose.Pdf.Text.Font pageFont in page.Resources.Fonts)
+        // Set EmbedStandardFonts property of document
+        document.EmbedStandardFonts = true;
+
+        // Iterate through each page
+        foreach (var page in document.Pages)
         {
-// التحقق إذا كان الخط مضمنًا بالفعل
-if (!pageFont.IsEmbedded)
-{
-    pageFont.IsEmbedded = true;
+            if (page.Resources.Fonts != null)
+            {
+                foreach (var pageFont in page.Resources.Fonts)
+                {
+                    // Check if font is already embedded
+                    if (!pageFont.IsEmbedded)
+                    {
+                        pageFont.IsEmbedded = true;
+                    }
+                }
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
+    }
 }
+```
+
+### تضمين الخطوط أثناء إنشاء PDF
+
+إذا كنت بحاجة إلى استخدام أي خط بخلاف الخطوط الأربعة عشر الأساسية المدعومة من Adobe Reader، يجب عليك تضمين وصف الخط أثناء إنشاء ملف PDF. إذا لم يتم تضمين معلومات الخط، سيأخذ Adobe Reader ذلك من نظام التشغيل إذا كان مثبتًا على النظام، أو سيقوم بإنشاء خط بديل وفقًا لوصف الخط في PDF.
+
+>يرجى ملاحظة أنه يجب تثبيت الخط المضمن على الجهاز المضيف أي في حالة الشيفرة التالية تم تثبيت خط "Univers Condensed" على النظام.
+
+نستخدم خاصية IsEmbedded لفئة Font لتضمين معلومات الخط في ملف PDF. تعيين قيمة هذه الخاصية إلى "True" سيقوم بتضمين ملف الخط الكامل في PDF، مع العلم أنه سيزيد من حجم ملف PDF. فيما يلي مقتطف الشيفرة الذي يمكن استخدامه لتضمين معلومات الخط في PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void EmbedFontWhileCreatingPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Create a section in the Pdf object
+        var page = document.Pages.Add();
+
+        // Create a TextFragment
+        var fragment = new Aspose.Pdf.Text.TextFragment("");
+
+        // Create a TextSegment with sample text
+        var segment = new Aspose.Pdf.Text.TextSegment(" This is a sample text using Custom font.");
+
+        // Create and configure TextState
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        ts.Font.IsEmbedded = true;
+        segment.TextState = ts;
+
+        // Add the segment to the fragment
+        fragment.Segments.Add(segment);
+
+        // Add the fragment to the page
+        page.Paragraphs.Add(fragment);
+
+        // Save PDF Document
+        document.Save(dataDir + "EmbedFontWhileDocCreation_out.pdf");
+    }
+}
+```
+
+### تعيين اسم الخط الافتراضي أثناء حفظ PDF
+
+عندما يحتوي مستند PDF على خطوط غير متاحة في المستند نفسه وعلى الجهاز، يقوم API باستبدال هذه الخطوط بالخط الافتراضي. عندما يكون الخط متاحًا (مثبت على الجهاز أو مضمن في المستند)، يجب أن يحتوي PDF الناتج على نفس الخط (يجب ألا يتم استبداله بالخط الافتراضي). يجب أن تحتوي قيمة الخط الافتراضي على اسم الخط (ليس مسار ملفات الخط). لقد قمنا بتنفيذ ميزة لتعيين اسم الخط الافتراضي أثناء حفظ مستند كـ PDF. يمكن استخدام مقتطف الشيفرة التالي لتعيين الخط الافتراضي:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetDefaultFontOnDocumentSave(string documentName, string newName)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var fs = new FileStream(dataDir + "GetDocumentWindow.pdf", FileMode.Open))
+    {
+        using (var document = new Aspose.Pdf.Document(fs))
+        {
+            // Create PdfSaveOptions and specify Default Font Name
+            var pdfSaveOptions = new Aspose.Pdf.PdfSaveOptions
+            {
+                DefaultFontName = newName
+            };
+
+            // Save PDF document
+            document.Save(dataDir + "DefaultFont_out.pdf", pdfSaveOptions);
         }
     }
 }
-pdfDocument.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
 ```
-### تضمين الخطوط عند إنشاء ملف PDF
 
-إذا كنت بحاجة إلى استخدام خط غير الخطوط الأساسية الـ 14 المدعومة من قبل Adobe Reader، يجب عليك تضمين وصف الخط أثناء توليد ملف الـ Pdf. إذا لم يتم تضمين معلومات الخط، سيأخذ Adobe Reader الخط من نظام التشغيل إذا كان مثبتًا على النظام، أو سيقوم بإنشاء خط بديل وفقًا لمواصفات الخط في الـ Pdf.
-
-> يرجى ملاحظة أنه يجب تثبيت الخط المضمن على جهاز المضيف، أي في حالة الكود التالي يكون خط 'Univers Condensed' مثبتًا على النظام.
-
-نستخدم خاصية IsEmbedded من فئة Font لتضمين معلومات الخط في ملف الـ Pdf. تعيين قيمة هذه الخاصية إلى 'True' سيؤدي إلى تضمين ملف الخط بالكامل في الـ Pdf، مع العلم أن ذلك سيزيد من حجم ملف الـ Pdf. فيما يلي مقتطف الكود الذي يمكن استخدامه لتضمين معلومات الخط في الـ Pdf.
-
-```csharp
-// للحصول على الأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// تجسيد كائن Pdf من خلال استدعاء المنشئ الفارغ
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-
-// إنشاء قسم في كائن Pdf
-Aspose.Pdf.Page page = doc.Pages.Add();
-
-Aspose.Pdf.Text.TextFragment fragment = new Aspose.Pdf.Text.TextFragment("");
-
-Aspose.Pdf.Text.TextSegment segment = new Aspose.Pdf.Text.TextSegment(" هذا نص تجريبي باستخدام خط مخصص.");
-Aspose.Pdf.Text.TextState ts = new Aspose.Pdf.Text.TextState();
-ts.Font = FontRepository.FindFont("Arial");
-ts.Font.IsEmbedded = true;
-segment.TextState = ts;
-fragment.Segments.Add(segment);
-page.Paragraphs.Add(fragment);
-
-dataDir = dataDir + "EmbedFontWhileDocCreation_out.pdf";
-// حفظ مستند PDF
-doc.Save(dataDir);
-```
-### تعيين اسم الخط الافتراضي عند حفظ PDF
-
-عندما يحتوي مستند PDF على خطوط غير متوفرة في المستند نفسه وعلى الجهاز، تقوم الواجهة البرمجية باستبدال هذه الخطوط بالخط الافتراضي. عندما يكون الخط متاحًا (مثبتًا على الجهاز أو مضمنًا في المستند)، يجب أن يحتوي ملف PDF الناتج على نفس الخط (لا ينبغي استبداله بالخط الافتراضي). يجب أن يحتوي قيمة الخط الافتراضي على اسم الخط (وليس مسار ملفات الخط). لقد قمنا بتنفيذ ميزة لتعيين اسم الخط الافتراضي أثناء حفظ المستند كـ PDF. يمكن استخدام قطعة الكود التالية لتعيين الخط الافتراضي:
-
-```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// تحميل مستند PDF موجود بخط مفقود
-string documentName = dataDir + "input.pdf";
-string newName = "Arial";
-using (System.IO.FileStream fs = new System.IO.FileStream(documentName, System.IO.FileMode.Open))
-using (Document document = new Document(fs))
-{
-    PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-    // تحديد اسم الخط الافتراضي
-    pdfSaveOptions.DefaultFontName = newName;
-    document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
-}
-```
 ### الحصول على جميع الخطوط من مستند PDF
 
-في حال أردت الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام طريقة FontUtilities.GetAllFonts() المتوفرة في فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). الرجاء التحقق من قطعة الكود التالية للحصول على جميع الخطوط من مستند PDF موجود:
+في حالة رغبتك في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام طريقة FontUtilities.GetAllFonts() المقدمة في [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class. يرجى مراجعة مقتطف الشيفرة التالي للحصول على جميع الخطوط من مستند PDF موجود:
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document doc = new Document(dataDir + "input.pdf");
-Aspose.Pdf.Text.Font[] fonts = doc.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllFontsFromPdf()
 {
-    Console.WriteLine(font.FontName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get all fonts used in the document
+        var fonts = document.FontUtilities.GetAllFonts();
+
+        // Iterate through each font and print its name
+        foreach (var font in fonts)
+        {
+            Console.WriteLine(font.FontName);
+        }
+    }
 }
 ```
 
-### الحصول على تحذيرات بخصوص استبدال الخط
+### الحصول على تحذيرات لاستبدال الخطوط
 
-Aspose.PDF for .NET يوفر طرقًا للحصول على إشعارات حول استبدال الخطوط للتعامل مع حالات استبدال الخطوط. تظهر قطع الكود أدناه كيفية استخدام الوظائف المقابلة.
-
-```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-Document doc = new Document(dataDir + "input.pdf");
-
-doc.FontSubstitution += new Document.FontSubstitutionHandler(OnFontSubstitution);
-```
-**طريقة OnFontSubstitution** مذكورة أدناه.
+يوفر Aspose.PDF for .NET طرقًا للحصول على إشعارات حول استبدال الخطوط للتعامل مع حالات استبدال الخطوط. تظهر مقتطفات الشيفرة أدناه كيفية استخدام الوظائف المقابلة.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-Console.WriteLine(string.Format("تم استبدال الخط '{0}' بخط آخر '{1}'",
-oldFont.FontName, newFont.FontName));
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void NotificationFontSubstitution()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Attach the FontSubstitution event handler
+        document.FontSubstitution += OnFontSubstitution;
+        // You can use lambda
+        // (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
+        //                                                                        oldFont.FontName, newFont.FontName));
+
+        // Save PDF document
+        document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
+    }
+}
 ```
 
-### تحسين تضمين الخطوط باستخدام استراتيجية FontSubsetStrategy
-
-يمكن إنجاز ميزة تضمين الخطوط كمجموعة جزئية باستخدام خاصية IsSubset، ولكن أحيانًا ترغب في تقليص مجموعة الخطوط المضمنة بالكامل إلى المجموعات الجزئية فقط التي تُستخدم في المستند. يحتوي مستند Aspose.Pdf على خاصية FontUtilities التي تتضمن طريقة SubsetFonts(FontSubsetStrategy subsetStrategy). في طريقة SubsetFonts()، يساعد المعامل subsetStrategy في ضبط استراتيجية المجموعة الجزئية. تدعم FontSubsetStrategy البديلين التاليين لتجميع الخطوط الجزئية:
-
-- SubsetAllFonts - سيتم تجميع جميع الخطوط المستخدمة في المستند.
-- SubsetEmbeddedFontsOnly - سيتم تجميع الخطوط المضمنة بالكامل في المستند فقط.
-
-يوضح الجزء التالي من الكود كيفية ضبط FontSubsetStrategy:
-شفرة البرمجة التالية تظهر كيفية تعيين استراتيجية FontSubsetStrategy:
+تظهر طريقة **OnFontSubstitution** كما هو مدرج أدناه.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document doc = new Document(dataDir + "input.pdf");
-// سيتم تضمين جميع الخطوط كمجموعة جزئية داخل الوثيقة في حالة SubsetAllFonts.
-doc.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetAllFonts);
-// سيتم تضمين مجموعة جزئية من الخطوط للخطوط المضمنة بالكامل ولكن الخطوط التي لم تُضمن في الوثيقة لن يتأثر بها.
-doc.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
-doc.Save(dataDir + "Output_out.pdf");
+private static void OnFontSubstitution(Aspose.Pdf.Text.Font oldFont, Aspose.Pdf.Text.Font newFont)
+{
+    // Handle the font substitution event here
+    Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
+        oldFont.FontName, newFont.FontName));
+}
 ```
 
-### الحصول على وضع عامل التكبير لملف PDF
+### تحسين تضمين الخطوط باستخدام FontSubsetStrategy
 
-أحيانًا، قد ترغب في تحديد ما هو عامل التكبير الحالي لمستند PDF. مع Aspose.Pdf، يمكنك معرفة القيمة الحالية وكذلك تعيين واحدة.
+يمكن تحقيق ميزة تضمين الخطوط كمجموعة فرعية باستخدام خاصية IsSubset، ولكن في بعض الأحيان تريد تقليل مجموعة الخطوط المضمنة بالكامل إلى فقط المجموعات الفرعية المستخدمة في المستند. تحتوي Aspose.Pdf.Document على خاصية FontUtilities التي تتضمن طريقة SubsetFonts(FontSubsetStrategy subsetStrategy). في طريقة SubsetFonts()، يساعد المعامل subsetStrategy في ضبط استراتيجية المجموعة الفرعية. تدعم FontSubsetStrategy نوعين من استبدال الخطوط.
 
-خاصية Destination لفئة [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) تتيح لك الحصول على قيمة التكبير المرتبطة بملف PDF.
-خاصية Destination في فئة [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) تمكنك من الحصول على قيمة التكبير المرتبطة بملف PDF.
+- SubsetAllFonts - ستقوم هذه بتضمين جميع الخطوط المستخدمة في المستند.
+- SubsetEmbeddedFontsOnly - ستقوم هذه بتضمين الخطوط التي تم تضمينها بالكامل في المستند فقط.
+
+يظهر مقتطف الشيفرة التالي كيفية تعيين FontSubsetStrategy:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFontSubsetStrategy()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // All fonts will be embedded as subset into document in case of SubsetAllFonts.
+        document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetAllFonts);
+
+        // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
+        document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+
+        // Save PDF document
+        document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
+    }
+}
+```
+
+### الحصول على تعيين عامل التكبير لملف PDF
+
+في بعض الأحيان، تريد تحديد ما هو عامل التكبير الحالي لمستند PDF. مع Aspose.Pdf، يمكنك معرفة القيمة الحالية وكذلك تعيين واحدة.
+
+تسمح خاصية Destination لفئة [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) بالحصول على قيمة التكبير المرتبطة بملف PDF. وبالمثل، يمكن استخدامها لتعيين عامل تكبير الملف.
 
 #### تعيين عامل التكبير
 
-يوضح الكود التالي كيفية تعيين عامل تكبير لملف PDF.
+يظهر مقتطف الشيفرة التالي كيفية تعيين عامل التكبير لملف PDF.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetZoomFactor()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// إنشاء كائن جديد للوثيقة
-Document doc = new Document(dataDir + "SetZoomFactor.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
+    {
+        // Create GoToAction with a specific zoom factor
+        var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
+        document.OpenAction = action;
 
-GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0, 0, .5));
-doc.OpenAction = action;
-dataDir = dataDir + "Zoomed_pdf_out.pdf";
-// حفظ الوثيقة
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ZoomFactor_out.pdf");
+    }
+}
 ```
 
 #### الحصول على عامل التكبير
 
-يوضح الكود التالي كيفية الحصول على عامل تكبير ملف PDF.
+يظهر مقتطف الشيفرة التالي كيفية الحصول على عامل التكبير لملف PDF.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// إنشاء كائن جديد للوثيقة
-Document doc = new Document(dataDir + "Zoomed_pdf.pdf");
-
-// إنشاء كائن GoToAction
-GoToAction action = doc.OpenAction as GoToAction;
-
-// الحصول على عامل التكبير لملف PDF
-System.Console.WriteLine((action.Destination as XYZExplicitDestination).Zoom); // قيمة تكبير الوثيقة;
-```
-### إعداد خصائص مربع حوار الطباعة المسبق
-
-يتيح Aspoose.PDF إعداد خصائص مربع حوار الطباعة المسبق لمستند PDF. يتيح لك تغيير خاصية DuplexMode لمستند PDF المضبوط افتراضيًا على simplex. يمكن تحقيق ذلك باستخدام منهجيتين مختلفتين كما هو موضح أدناه.
-
-```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-using (Document doc = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetZoomFactor()
 {
-    doc.Pages.Add();
-    doc.Duplex = PrintDuplex.DuplexFlipLongEdge;
-    doc.Save(dataDir + "35297_out.pdf", SaveFormat.Pdf);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
+    {
+        // Create GoToAction object
+        if (document.OpenAction is Aspose.Pdf.Annotations.GoToAction action)
+        {
+            // Get the Zoom factor of PDF file
+            if (action.Destination is Aspose.Pdf.Annotations.XYZExplicitDestination destination)
+            {
+                System.Console.WriteLine(destination.Zoom); // Document zoom value;
+            }
+        }
+    }
 }
 ```
 
-### إعداد خصائص مربع حوار الطباعة المسبق باستخدام محرر محتوى PDF
+### تعيين خصائص إعدادات طباعة الحوار
+
+يسمح Aspose.PDF بتعيين خصائص إعدادات طباعة الحوار لمستند PDF. يسمح لك بتغيير خاصية DuplexMode لمستند PDF والتي يتم تعيينها على simplex بشكل افتراضي. يمكن تحقيق ذلك باستخدام طريقتين مختلفتين كما هو موضح أدناه.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-string outputFile = dataDir + "input.pdf";
-using (PdfContentEditor ed = new PdfContentEditor())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrintDialogPresetProperties()
 {
-    ed.BindPdf(outputFile);
-    if ((ed.GetViewerPreference() & ViewerPreference.DuplexFlipShortEdge) > 0)
-    {
-        Console.WriteLine("الملف لديه تقليب ثنائي على الحافة القصيرة");
-    }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    ed.ChangeViewerPreference(ViewerPreference.DuplexFlipShortEdge);
-    ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        document.Pages.Add();
+
+        // Set duplex printing to DuplexFlipLongEdge
+        document.Duplex = Aspose.Pdf.PrintDuplex.DuplexFlipLongEdge;
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+    }
+}
+```
+
+### تعيين خصائص إعدادات طباعة الحوار باستخدام محرر محتوى PDF
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    string inputFile = dataDir + "input.pdf";
+
+    using (var ed = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind PDF document
+        ed.BindPdf(inputFile);
+
+        // Check if the file has duplex flip short edge
+        if ((ed.GetViewerPreference() & Aspose.Pdf.Facades.ViewerPreference.DuplexFlipShortEdge) > 0)
+        {
+            Console.WriteLine("The file has duplex flip short edge");
+        }
+
+        // Change the viewer preference to duplex flip short edge
+        ed.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.DuplexFlipShortEdge);
+
+        // Save PDF document
+        ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
+    }
 }
 ```
 
@@ -475,21 +586,21 @@ using (PdfContentEditor ed = new PdfContentEditor())
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -500,7 +611,7 @@ using (PdfContentEditor ed = new PdfContentEditor())
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -512,5 +623,3 @@ using (PdfContentEditor ed = new PdfContentEditor())
     }
 }
 </script>
-```
-

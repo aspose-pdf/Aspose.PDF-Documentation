@@ -1,10 +1,12 @@
 ---
-title: استخدام التعليقات التوضيحية للنص في ملف PDF
-linktitle: التعليقات التوضيحية للنص
+title: استخدام التعليق النصي لملف PDF
+linktitle: التعليق النصي
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/text-annotation/
-description: يتيح لك Aspose.PDF لـ .NET إضافة، والحصول على، وحذف التعليقات التوضيحية للنص من مستند PDF الخاص بك.
+description: Aspose.PDF for .NET يتيح لك إضافة، الحصول على، وحذف التعليق النصي من مستند PDF الخاص بك.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "استخدام التعليقات التوضيحية للنص في ملف PDF",
-    "alternativeHeadline": "كيفية إضافة التعليقات التوضيحية للنص في PDF",
+    "headline": "Using Text Annotation for PDF",
+    "alternativeHeadline": "Enhance PDFs with Dynamic Text Annotations",
+    "abstract": "Aspose.PDF for .NET يقدم قدرات متقدمة للتعليق النصي، مما يسمح للمستخدمين بإضافة، استرجاع، أو إزالة التعليقات النصية بسهولة داخل مستندات PDF. تعزز هذه الميزة عملية تحرير PDF من خلال تمكين وضع وتخصيص دقيق للتعليقات، مما يحسن من تفاعل المستند وسهولة استخدامه.",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, التعليقات التوضيحية للنص",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Text Annotation, PDF document generation, Aspose.PDF for .NET, Add Annotation, Delete Annotation, Free Text Annotation, Popup Annotation, StrikeOutAnnotation, AnnotationCollection, Aspose.PDF library",
+    "wordcount": "2636",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,182 +74,228 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يتيح لك Aspose.PDF لـ .NET إضافة، والحصول على، وحذف التعليقات التوضيحية للنص من مستند PDF الخاص بك."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET يتيح لك إضافة، الحصول على، وحذف التعليق النصي من مستند PDF الخاص بك."
 }
 </script>
+
 ## كيفية إضافة تعليق نصي إلى ملف PDF موجود
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-التعليق النصي هو تعليق مرتبط بموقع محدد في مستند PDF. عند إغلاق التعليق، يظهر كأيقونة؛ عند فتحه، يجب أن يعرض نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم الذي يختاره القارئ.
+التعليق النصي هو تعليق مرتبط بموقع معين في مستند PDF. عند إغلاقه، يتم عرض التعليق كأيقونة؛ عند فتحه، يجب أن يظهر نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم الذي اختاره القارئ.
 
-التعليقات محتواة بواسطة مجموعة [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) لصفحة معينة. تحتوي هذه المجموعة على التعليقات لتلك الصفحة فقط؛ كل صفحة لها مجموعة Annotations الخاصة بها.
+تحتوي التعليقات على مجموعة [التعليقات](https://reference.aspose.com/pdf/net/aspose.pdf.annotations) لصفحة معينة. تحتوي هذه المجموعة على التعليقات لتلك الصفحة الفردية فقط؛ كل صفحة لديها مجموعة التعليقات الخاصة بها.
 
-لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة Annotations الخاصة بتلك الصفحة باستخدام طريقة [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
+لإضافة تعليق إلى صفحة معينة، أضفه إلى مجموعة التعليقات الخاصة بتلك الصفحة باستخدام طريقة [Add](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection/methods/add).
 
-1. أولاً، قم بإنشاء تعليق تريد إضافته إلى ملف PDF.
-1. ثم افتح ملف PDF الذي تريد التعديل عليه.
-1.
+1. أولاً، أنشئ تعليقًا تريد إضافته إلى ملف PDF.
+1. ثم افتح ملف PDF المدخل.
+1. أضف التعليق إلى مجموعة التعليقات الخاصة بكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
 
-الشفرة التالية توضح لك كيفية إضافة تعليق توضيحي في صفحة PDF.
-
-```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "AddAnnotation.pdf");
-
-// إنشاء التعليق التوضيحي
-TextAnnotation textAnnotation = new TextAnnotation(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
-textAnnotation.Title = "عنوان التعليق التوضيحي";
-textAnnotation.Subject = "موضوع العينة";
-textAnnotation.State = AnnotationState.Accepted;
-textAnnotation.Contents = "محتويات العينة للتعليق التوضيحي";
-textAnnotation.Open = true;
-textAnnotation.Icon = TextIcon.Key;
-
-Border border = new Border(textAnnotation);
-border.Width = 5;
-border.Dash = new Dash(1, 1);
-textAnnotation.Border = border;
-textAnnotation.Rect = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
-
-// إضافة التعليق التوضيحي في مجموعة التعليقات التوضيحية للصفحة
-pdfDocument.Pages[1].Annotations.Add(textAnnotation);
-dataDir = dataDir + "AddAnnotation_out.pdf";
-// حفظ الملف الناتج
-pdfDocument.Save(dataDir);
-```
-## كيفية إضافة تعليق توضيحي منبثق
-
-يعرض التعليق التوضيحي المنبثق النص في نافذة منبثقة للإدخال والتحرير. لا يجب أن يظهر بمفرده بل يرتبط بتعليق توضيحي للعلامات، وهو التعليق التوضيحي الأم، ويجب استخدامه لتحرير نص الأم.
-
-لا يجب أن يكون له تيار ظهور أو أفعال مرتبطة خاصة به ويجب تحديده بواسطة إدخال Popup في قاموس التعليق التوضيحي الأم.
-
-يوضح الكود التالي كيفية إضافة [تعليق توضيحي منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال على إضافة [تعليق توضيحي للخط](/pdf/ar/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأم.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة تعليق في صفحة PDF.
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.Linq;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextAnnotationToPdf()
 {
-    class ExampleLineAnnotation
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
     {
-        // مسار دليل المستندات.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddLineAnnotation()
-        {
-            try
-            {
-                // تحميل ملف PDF
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "Appartments.pdf"));
+        // Create text annotation
+        var textAnnotation = new Aspose.Pdf.Annotations.TextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600));
+        textAnnotation.Title = "Sample Annotation Title";
+        textAnnotation.Subject = "Sample Subject";
+        textAnnotation.SetReviewState(Aspose.Pdf.Annotations.AnnotationState.Accepted);
+        textAnnotation.Contents = "Sample contents for the annotation";
+        textAnnotation.Open = true;
+        textAnnotation.Icon = Aspose.Pdf.Annotations.TextIcon.Key;
 
-                // إنشاء تعليق توضيحي للخط
-                var lineAnnotation = new LineAnnotation(
-                    document.Pages[1],
-                    new Rectangle(550, 93, 562, 439),
-                    new Point(556, 99), new Point(556, 443))
-                {
-                    Title = "John Smith",
-                    Color = Color.Red,
-                    Width = 3,
-                    StartingStyle = LineEnding.OpenArrow,
-                    EndingStyle = LineEnding.OpenArrow,
-                    Popup = new PopupAnnotation(document.Pages[1], new Rectangle(842, 124, 1021, 266))
-                };
+        // Set border for the annotation
+        var border = new Aspose.Pdf.Annotations.Border(textAnnotation);
+        border.Width = 5;
+        border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
+        textAnnotation.Border = border;
+        textAnnotation.Rect = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
 
-                // إضافة التعليق التوضيحي إلى الصفحة
-                document.Pages[1].Annotations.Add(lineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "Appartments_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-```
-## كيفية إضافة (أو إنشاء) تعليق نصي حر جديد
+        // Add annotation to the annotations collection of the page
+        document.Pages[1].Annotations.Add(textAnnotation);
 
-يعرض التعليق النصي الحر النص مباشرةً على الصفحة. تسمح طريقة [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) بإنشاء هذا النوع من التعليقات. في الجزء التالي، نضيف تعليقاً نصياً حراً فوق أول ظهور للسلسلة النصية.
-
-```csharp
-private static void AddFreeTextAnnotationDemo()
-{
-    _document = new Document(@"C:\tmp\pdf-sample.pdf");
-    var pdfContentEditor = new PdfContentEditor(_document);
-
-    tfa.Visit(_document.Pages[1]);
-    if (tfa.TextFragments.Count <= 0) return;
-    var rect = new System.Drawing.Rectangle
-    {
-        X = (int)tfa.TextFragments[1].Rectangle.LLX,
-        Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
-        Height = 18,
-        Width = 100
-    };
-
-    pdfContentEditor.CreateFreeText(rect, "Free Text Demo", 1); // last param is a page number
-    pdfContentEditor.Save(@"C:\tmp\pdf-sample-0.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AddAnnotation_out.pdf");
+    }
 }
 ```
 
-### تعيين خاصية الدعوة للتعليق النصي الحر
-### تعيين خاصية Callout لـ FreeTextAnnotation
+## كيفية إضافة تعليق منبثق
 
-لتكوين أكثر مرونة للتعليق التوضيحي في مستند PDF، يوفر Aspose.PDF لـ.NET خاصية [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) لفئة [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) التي تسمح بتحديد مصفوفة من نقاط خط الإشارة. يوضح الجزء التالي من الكود كيفية استخدام هذه الوظيفة:
+يعرض التعليق المنبثق النص في نافذة منبثقة للإدخال والتحرير. يجب ألا يظهر بمفرده ولكنه مرتبط بتعليق توضيحي، وهو التعليق الأب، ويجب استخدامه لتحرير نص الأب.
+
+يجب ألا يحتوي على تدفق مظهر أو إجراءات مرتبطة به ويجب التعرف عليه من خلال إدخال Popup في قاموس تعليق الأب.
+
+تظهر مقتطفات الشيفرة التالية كيفية إضافة [تعليق منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال لإضافة [تعليق خط](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأب.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-Document doc = new Document();
-Page page = doc.Pages.Add();
-DefaultAppearance da = new DefaultAppearance();
-da.TextColor = System.Drawing.Color.Red;
-da.FontSize = 10;
-FreeTextAnnotation fta = new FreeTextAnnotation(page, new Rectangle(422.25, 645.75, 583.5, 702.75), da);
-fta.Intent = FreeTextIntent.FreeTextCallout;
-fta.EndingStyle = LineEnding.OpenArrow;
-fta.Callout = new Point[]
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLineAnnotation()
 {
-    new Point(428.25,651.75), new Point(462.75,681.375), new Point(474,681.375)
-};
-page.Annotations.Add(fta);
-fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">This is a sample</span></p></body>";
-doc.Save(dataDir + "SetCalloutProperty.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Appartments.pdf"))
+    {
+        // Create Line Annotation
+        var lineAnnotation = new Aspose.Pdf.Annotations.LineAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(550, 93, 562, 439),
+            new Aspose.Pdf.Point(556, 99), new Aspose.Pdf.Point(556, 443))
+        {
+            Title = "John Smith",
+            Color = Aspose.Pdf.Color.Red,
+            Width = 3,
+            StartingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+            EndingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow,
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(842, 124, 1021, 266))
+        };
+
+        // Add annotation to the page
+        document.Pages[1].Annotations.Add(lineAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddLineAnnotation_out.pdf");
+    }
+}
 ```
+
+## كيفية إضافة (أو إنشاء) تعليق نصي مجاني جديد
+
+يعرض التعليق النصي المجاني النص مباشرة على الصفحة. تتيح طريقة [PdfContentEditor.CreateFreeText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/createfreetext) إنشاء هذا النوع من التعليقات. في المقتطف التالي، نضيف تعليق نصي مجاني فوق أول ظهور للسلسلة.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeTextAnnotationDemo()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
+    {
+        var pdfContentEditor = new Aspose.Pdf.Facades.PdfContentEditor(document);
+
+        // Assuming tfa is an instance of TextFragmentAbsorber or similar
+        var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        tfa.Visit(document.Pages[1]);
+
+        if (tfa.TextFragments.Count <= 0)
+        {
+            return;
+        }
+
+        // Define the rectangle for the free text annotation
+        var rect = new System.Drawing.Rectangle
+        {
+            X = (int)tfa.TextFragments[1].Rectangle.LLX,
+            Y = (int)tfa.TextFragments[1].Rectangle.URY + 5,
+            Height = 18,
+            Width = 100
+        };
+
+        // Create free text annotation
+        pdfContentEditor.CreateFreeText(rect, "Free Text Demo", 1); // Last param is the page number
+
+        // Save PDF document
+        pdfContentEditor.Save(dataDir + "pdf-sample-0.pdf");
+    }
+}
+```
+
+### تعيين خاصية Callout لتعليق FreeTextAnnotation
+
+لإعداد تكوين أكثر مرونة للتعليق في مستند PDF، يوفر Aspose.PDF for .NET خاصية [Callout](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation/properties/callout) لفئة [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) التي تسمح بتحديد مصفوفة من نقاط خط الاستدعاء. تظهر مقتطفات الشيفرة التالية كيفية استخدام هذه الوظيفة:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeTextCalloutAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create default appearance for the annotation
+        var da = new Aspose.Pdf.Annotations.DefaultAppearance();
+        da.TextColor = System.Drawing.Color.Red;
+        da.FontSize = 10;
+
+        // Create free text annotation with callout
+        var fta = new Aspose.Pdf.Annotations.FreeTextAnnotation(page, new Aspose.Pdf.Rectangle(422.25, 645.75, 583.5, 702.75), da);
+        fta.Intent = Aspose.Pdf.Annotations.FreeTextIntent.FreeTextCallout;
+        fta.EndingStyle = Aspose.Pdf.Annotations.LineEnding.OpenArrow;
+        fta.Callout = new Aspose.Pdf.Point[]
+        {
+            new Aspose.Pdf.Point(428.25, 651.75),
+            new Aspose.Pdf.Point(462.75, 681.375),
+            new Aspose.Pdf.Point(474, 681.375)
+        };
+
+        // Add the annotation to the page
+        page.Annotations.Add(fta);
+
+        // Set rich text for the annotation
+        fta.RichText = "<body xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:xfa=\"http://www.xfa.org/schema/xfa-data/1.0/\" xfa:APIVersion=\"Acrobat:11.0.23\" xfa:spec=\"2.0.2\"  style=\"color:#FF0000;font-weight:normal;font-style:normal;font-stretch:normal\"><p dir=\"ltr\"><span style=\"font-size:9.0pt;font-family:Helvetica\">This is a sample</span></p></body>";
+
+        // Save PDF document
+        document.Save(dataDir + "SetCalloutProperty_out.pdf");
+    }
+}
+```
+
 ### تعيين خاصية Callout لملف XFDF
 
-إذا كنت تستخدم الاستيراد من ملف XFDF، يرجى استخدام اسم خط الإشارة بدلاً من استخدام Callout فقط. يوضح الجزء التالي من الكود كيفية استخدام هذه الوظيفة:
+إذا كنت تستخدم الاستيراد من ملف XFDF، يرجى استخدام اسم خط الاستدعاء بدلاً من مجرد Callout. تظهر مقتطفات الشيفرة التالية كيفية استخدام هذه الوظيفة:
 
 ```csharp
-// لأمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-Document pdfDocument = new Document(dataDir + "AddAnnotation.pdf");
-StringBuilder Xfdf = new StringBuilder();
-Xfdf.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xfdf xmlns=\"http://ns.adobe.com/xfdf/\" xml:space=\"preserve\"><annots>");
-CreateXfdf(ref Xfdf);
-Xfdf.AppendLine("</annots></xfdf>");
-pdfDocument.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(Xfdf.ToString())));
-pdfDocument.Save(dataDir + "SetCalloutPropertyXFDF.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImportAnnotationsFromXfdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    {
+        // Create an XFDF string builder
+        var xfdf = new StringBuilder();
+        xfdf.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xfdf xmlns=\"http://ns.adobe.com/xfdf/\" xml:space=\"preserve\"><annots>");
+
+        // Call the method to create XFDF content
+        CreateXfdf(ref xfdf);
+
+        xfdf.AppendLine("</annots></xfdf>");
+
+        // Import annotations from the XFDF string
+        document.ImportAnnotationsFromXfdf(new MemoryStream(Encoding.UTF8.GetBytes(xfdf.ToString())));
+
+        // Save PDF document
+        document.Save(dataDir + "SetCalloutPropertyXfdf_out.pdf");
+    }
+}
 ```
 
-الطريقة التالية تستخدم لإنشاء Xfdf:
+تستخدم الطريقة التالية لإنشاء Xfdf:
 
 ```csharp
-/// <summary>
-/// إنشاء XFDF
-/// </summary>
-/// <param name="pXfdf"></param>
-
-static void CreateXfdf(ref StringBuilder pXfdf)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateXfdf(ref StringBuilder pXfdf)
 {
     pXfdf.Append("<freetext");
     pXfdf.Append(" page=\"0\"");
@@ -257,224 +306,371 @@ static void CreateXfdf(ref StringBuilder pXfdf)
     pXfdf.AppendLine(">");
     pXfdf.Append("<contents-richtext><body ");
     pXfdf.Append(" style=\"font-size:10.0pt;text-align:left;color:#FF0000;font-weight:normal;font-style:normal;font-family:Helvetica;font-stretch:normal\">");
-    pXfdf.Append("<p dir=\"ltr\">هذا مثال</p>");
+    pXfdf.Append("<p dir=\"ltr\">This is a sample</p>");
     pXfdf.Append("</body></contents-richtext>");
     pXfdf.AppendLine("<defaultappearance>/Helv 12 Tf 1 0 0 rg</defaultappearance>");
     pXfdf.AppendLine("</freetext>");
 }
 ```
-### اجعل التعليق التوضيحي للنص الحر غير مرئي
 
-في بعض الأحيان، قد يكون من الضروري إنشاء علامة مائية غير مرئية في الوثيقة عند عرضها ولكن يجب أن تكون مرئية عند طباعة الوثيقة. استخدم علامات التعليق التوضيحي لهذا الغرض. يوضح الجزء التالي من الكود كيفية ذلك.
+### جعل تعليق النص المجاني غير مرئي
+
+في بعض الأحيان، من الضروري إنشاء علامة مائية غير مرئية في المستند عند مشاهدته ولكن يجب أن تكون مرئية عند طباعة المستند. استخدم علامات التعليق لهذا الغرض. تظهر مقتطفات الشيفرة التالية كيفية القيام بذلك.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddInvisibleAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// فتح الوثيقة
-Document doc = new Document(dataDir + "input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create a free text annotation
+        var annotation = new Aspose.Pdf.Annotations.FreeTextAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(50, 600, 250, 650),
+            new Aspose.Pdf.Annotations.DefaultAppearance("Helvetica", 16, System.Drawing.Color.Red)
+        );
 
-FreeTextAnnotation annotation = new FreeTextAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(50, 600, 250, 650), new DefaultAppearance("Helvetica", 16, System.Drawing.Color.Red));
-annotation.Contents = "ABCDEFG";
-annotation.Characteristics.Border = System.Drawing.Color.Red;
-annotation.Flags = AnnotationFlags.Print | AnnotationFlags.NoView;
-doc.Pages[1].Annotations.Add(annotation);
+        annotation.Contents = "ABCDEFG";
+        annotation.Characteristics.Border = System.Drawing.Color.Red;
+        annotation.Flags = Aspose.Pdf.Annotations.AnnotationFlags.Print | Aspose.Pdf.Annotations.AnnotationFlags.NoView;
 
-dataDir = dataDir + "InvisibleAnnotation_out.pdf";
-// حفظ الملف الناتج
-doc.Save(dataDir);
+        // Add the annotation to the page
+        document.Pages[1].Annotations.Add(annotation);
+
+        // Save PDF document
+        document.Save(dataDir + "InvisibleAnnotation_out.pdf");
+    }
+}
 ```
-### تنسيق FreeTextAnnotation
 
-هذا الجزء ينظر في كيفية تنسيق النص في تعليق نصي حر.
+### تعيين تنسيق FreeTextAnnotation
 
-التعليقات موجودة في مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). عند إضافة [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) إلى مستند PDF، يمكنك تحديد معلومات التنسيق مثل الخط، الحجم، اللون وغيرها باستخدام فئة [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). من الممكن أيضًا تحديد معلومات التنسيق باستخدام خاصية TextStyle. علاوة على ذلك، يمكنك تحديث تنسيق أي FreeTextAnnotation موجود بالفعل في مستند PDF.
+تتناول هذه الجزء كيفية تنسيق النص في تعليق نصي مجاني.
 
-تدعم فئة [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) العمل مع مدخل النمط الافتراضي.
-الفئة [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) تدعم العمل مع إدخال النمط الافتراضي.
+تحتوي التعليقات على مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). عند إضافة [FreeTextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/freetextannotation) إلى مستند PDF، يمكنك تحديد معلومات التنسيق مثل الخط، الحجم، اللون، وما إلى ذلك باستخدام فئة [DefaultAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/defaultappearance/methods/index). من الممكن أيضًا تحديد معلومات التنسيق باستخدام خاصية TextStyle. علاوة على ذلك، يمكنك تحديث تنسيق أي FreeTextAnnotation موجود بالفعل في مستند PDF.
 
-- خاصية FontName تحصل أو تضبط اسم الخط (نص).
-- خاصية FontSize تحصل وتضبط حجم النص الافتراضي (مضاعف).
-- خاصية System.Drawing.Color تحصل وتضبط لون النص (لون).
-- خاصية TextAlignment تحصل وتضبط محاذاة نص الشارة (محاذاة).
+تدعم فئة [TextStyle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textstyle) العمل مع إدخال النمط الافتراضي. تتيح لك هذه الفئة تعيين اللون، حجم الخط واسم الخط:
 
-الشفرة التالية تظهر كيفية إضافة شارة نص حر مع تنسيق نص محدد.
+- خاصية FontName تحصل أو تعين اسم الخط (سلسلة).
+- خاصية FontSize تحصل وتعين حجم النص الافتراضي (مزدوج).
+- خاصية System.Drawing.Color تحصل وتعين لون النص (لون).
+- خاصية TextAlignment تحصل وتعين محاذاة نص التعليق (محاذاة).
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Annotations-SetFreeTextAnnotationFormatting-SetFreeTextAnnotationFormatting.cs" >}}
+تظهر مقتطفات الشيفرة التالية كيفية إضافة FreeTextAnnotation مع تنسيق نص محدد.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
+    {
+        // Instantiate DefaultAppearance object
+        var defaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Arial", 28, System.Drawing.Color.Red);
+
+        // Create annotation
+        var freetext = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 400, 400, 600), defaultAppearance);
+
+        // Specify the contents of annotation
+        freetext.Contents = "Free Text";
+
+        // Add annotation to annotations collection of page
+        document.Pages[1].Annotations.Add(freetext);
+
+        // Save PDF document
+        document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddFreeAnnotation(string fontName = "Arial", float fontSize = 28)
+{
+     // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+	
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFreeTextAnnotationFormatting.pdf"))
+    {
+        // Set default values
+        var textColor = System.Drawing.Color.Red;
+        var position = new Aspose.Pdf.Rectangle(200, 400, 400, 600);
+
+        // Instantiate DefaultAppearance object
+        Aspose.Pdf.Annotations.DefaultAppearance defaultAppearance = new(fontName, fontSize, textColor);
+        // Create annotation
+        var freetext = new Aspose.Pdf.Annotations.FreeTextAnnotation(document.Pages[1], position, defaultAppearance)
+        {
+            // Specify the contents of annotation
+            Contents = "Free Text"
+        };
+        // Add anootation to annotations collection of page
+        document.Pages[1].Annotations.Add(freetext);
+
+        // Save PDF document
+        document.Save(dataDir + "SetFreeTextAnnotationFormatting_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 {{% alert color="primary" %}}
 
-عندما تغير محتويات أو نمط نص شارة نص حر، يتم إعادة توليد مظهر الشارة ليعكس التغييرات.
+عند تغيير محتويات أو نمط نص التعليق النصي المجاني، يتم إعادة توليد مظهر التعليق لتعكس التغييرات.
 
 {{% /alert %}}
 
 ### شطب الكلمات باستخدام StrikeOutAnnotation
 
-Aspose.PDF لـ .NET يتيح لك إضافة، حذف وتحديث الشارات في مستندات PDF.
-Aspose.PDF لـ .NET يتيح لك إضافة، حذف وتحديث التعليقات التوضيحية في مستندات PDF.
+Aspose.PDF for .NET يتيح لك إضافة، حذف وتحديث التعليقات في مستندات PDF. واحدة من الفئات تتيح لك أيضًا شطب التعليقات. هذا مفيد عندما تريد شطب جزء أو أكثر من النص في مستند. يتم الاحتفاظ بالتعليقات في مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). يمكن استخدام فئة تسمى [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) لإضافة تعليقات شطب إلى مستند PDF.
 
-لشطب نص معين:
+لشطب جزء معين من TextFragment:
 
 1. ابحث عن TextFragment في ملف PDF.
 1. احصل على إحداثيات كائن TextFragment.
 1. استخدم الإحداثيات لإنشاء كائن StrikeOutAnnotation.
 
-يوضح الجزء التالي من الكود كيفية البحث عن TextFragment معين وإضافة StrikeOutAnnotation لذلك الكائن.
-
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Annotations-StrikeOutWords-StrikeOutWords.cs" >}}
-
-{{% alert color="primary" %}}
-
-هذه الميزة مدعومة بالإصدار 19.6 أو أعلى.
-
-{{% /alert %}}
-
-## حذف جميع التعليقات التوضيحية من صفحة ملف PDF
-
-مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) تحتوي على جميع التعليقات التوضيحية لتلك الصفحة بالذات.
-يحتوي مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page) على جميع التعليقات التوضيحية لتلك الصفحة المحددة.
-
-يوضح مقتطف الكود التالي كيفية حذف جميع التعليقات التوضيحية من صفحة معينة.
+تظهر مقتطفات الشيفرة التالية كيفية البحث عن TextFragment معين وإضافة StrikeOutAnnotation إلى ذلك الكائن.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private void StrikeOutTextInDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "DeleteAllAnnotationsFromPage.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "pdf-sample.pdf"))
+    {
+        // Create TextFragment Absorber instance to search for a particular text fragment
+        var textFragmentAbsorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Estoque");
 
-// حذف التعليق التوضيحي المحدد
-pdfDocument.Pages[1].Annotations.Delete();
+        // Iterate through pages of PDF document
+        foreach (var page in document.Pages)
+        {
+            // Accept the absorber for the current page
+            page.Accept(textFragmentAbsorber);
+        }
 
-dataDir = dataDir + "DeleteAllAnnotationsFromPage_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
+        // Get the collection of absorbed text fragments
+        var textFragmentCollection = textFragmentAbsorber.TextFragments;
+
+        // Iterate through the collection of text fragments
+        foreach (Aspose.Pdf.Text.TextFragment textFragment in textFragmentCollection)
+        {
+            // Get rectangular dimensions of the TextFragment object
+            var rect = new Aspose.Pdf.Rectangle(
+                (float)textFragment.Position.XIndent,
+                (float)textFragment.Position.YIndent,
+                (float)textFragment.Position.XIndent + (float)textFragment.Rectangle.Width,
+                (float)textFragment.Position.YIndent + (float)textFragment.Rectangle.Height);
+
+            // Instantiate StrikeOut Annotation instance
+            var strikeOut = new Aspose.Pdf.Annotations.StrikeOutAnnotation(textFragment.Page, rect)
+            {
+                // Set opacity for annotation
+                Opacity = 0.80f,
+
+                // Set the color of annotation
+                Color = Aspose.Pdf.Color.Red
+            };
+
+            // Set the border for annotation instance
+            strikeOut.Border = new Aspose.Pdf.Annotations.Border(strikeOut);
+
+            // Add annotation to the annotations collection of the TextFragment's page
+            textFragment.Page.Annotations.Add(strikeOut);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "StrikeOutWords_out.pdf");
+    }
+}
 ```
 
-## حذف تعليق توضيحي معين من ملف PDF
+## حذف جميع التعليقات من صفحة ملف PDF
+
+تحتوي مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على جميع التعليقات لتلك الصفحة المعينة. لحذف جميع التعليقات من صفحة، استدعِ طريقة *Delete* لمجموعة AnnotationCollectoin.
+
+تظهر مقتطفات الشيفرة التالية كيفية حذف جميع التعليقات من صفحة معينة.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAnnotationsFromPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAnnotationsFromPage.pdf"))
+    {
+        // Delete all annotations from the first page
+        document.Pages[1].Annotations.Delete();
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+    }
+}
+```
+
+## حذف تعليق معين من ملف PDF
 
 {{% alert color="primary" %}}
 
 يمكنك التحقق من جودة Aspose.PDF والحصول على النتائج عبر الإنترنت من خلال هذا الرابط:
 [products.aspose.app/pdf/annotation](https://products.aspose.app/pdf/annotation)
-[products.aspose.app/pdf/annotation](https://products.aspose.app/pdf/annotation)
 
 {{% /alert %}}
 
-Aspose.PDF يتيح لك إزالة تعليق توضيحي معين من ملف PDF. يشرح هذا الموضوع كيفية القيام بذلك.
+Aspose.PDF يتيح لك إزالة تعليق معين من ملف PDF. يشرح هذا الموضوع كيفية القيام بذلك.
 
-لحذف تعليق توضيحي معين من PDF، قم بالاتصال بطريقة الحذف في [مجموعة AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1)، والتي تنتمي إلى كائن [الصفحة](https://reference.aspose.com/pdf/net/aspose.pdf/page). تتطلب طريقة الحذف مؤشر التعليق التوضيحي الذي تريد حذفه. ثم، احفظ ملف PDF المُحدث. يوضح الجزء التالي من الكود كيفية حذف تعليق توضيحي معين.
-
-```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "DeleteParticularAnnotation.pdf");
-
-// حذف تعليق توضيحي معين
-pdfDocument.Pages[1].Annotations.Delete(1);
-
-dataDir = dataDir + "DeleteParticularAnnotation_out.pdf";
-// حفظ المستند المُحدث
-pdfDocument.Save(dataDir);
-```
-## الحصول على جميع التعليقات التوضيحية من صفحة في مستند PDF
-
-يتيح لك Aspose.PDF الحصول على التعليقات التوضيحية من مستند بأكمله، أو من صفحة معينة. للحصول على جميع التعليقات التوضيحية من صفحة في مستند PDF، قم بالتكرار عبر مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لموارد الصفحة المطلوبة. يوضح الجزء التالي من الشفرة كيفية الحصول على جميع التعليقات التوضيحية لصفحة.
+لحذف تعليق معين من PDF، استدعِ [طريقة Delete لمجموعة AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations.annotationcollection/delete/methods/1). تنتمي هذه المجموعة إلى كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). تتطلب طريقة Delete فهرس التعليق الذي تريد حذفه. ثم، احفظ ملف PDF المحدث. تظهر مقتطفات الشيفرة التالية كيفية حذف تعليق معين.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار لدليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetAllAnnotationsFromPage.pdf");
-
-// التكرار عبر جميع التعليقات التوضيحية
-foreach (MarkupAnnotation annotation in pdfDocument.Pages[1].Annotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteParticularAnnotation()
 {
-    // الحصول على خصائص التعليق التوضيحي
-    Console.WriteLine("Title : {0} ", annotation.Title);
-    Console.WriteLine("Subject : {0} ", annotation.Subject);
-    Console.WriteLine("Contents : {0} ", annotation.Contents);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularAnnotation.pdf"))
+    {
+        // Delete a particular annotation by index (e.g., the first annotation on the first page)
+        document.Pages[1].Annotations.Delete(1);
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularAnnotation_out.pdf");
+    }
 }
 ```
-يرجى ملاحظة أنه للحصول على جميع التعليقات التوضيحية من ملف PDF بأكمله، يجب عليك التكرار عبر مجموعة فئة PageCollection للمستند قبل التنقل عبر مجموعة فئة AnnotationCollection. يمكنك الحصول على كل تعليق توضيحي في المجموعة في نوع أساسي من التعليقات التوضيحية يسمى فئة MarkupAnnotation ثم عرض خصائصها.
 
-## الحصول على تعليق توضيحي معين من ملف PDF
+## الحصول على جميع التعليقات من صفحة مستند PDF
 
-التعليقات التوضيحية مرتبطة بصفحات فردية ومخزنة في مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
-التعليقات التوضيحية مرتبطة بصفحات فردية ومخزنة في مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) الخاصة بكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+Aspose.PDF يتيح لك الحصول على التعليقات من مستند كامل، أو من صفحة معينة. للحصول على جميع التعليقات من الصفحة في مستند PDF، قم بالتكرار عبر مجموعة [AnnotationCollection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لموارد الصفحة المطلوبة. تظهر مقتطفات الشيفرة التالية كيفية الحصول على جميع التعليقات من صفحة.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAnnotationsFromPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetParticularAnnotation.pdf");
-
-// الحصول على تعليق توضيحي محدد
-TextAnnotation textAnnotation = (TextAnnotation)pdfDocument.Pages[1].Annotations[1];
-
-// الحصول على خصائص التعليق التوضيحي
-Console.WriteLine("العنوان : {0} ", textAnnotation.Title);
-Console.WriteLine("الموضوع : {0} ", textAnnotation.Subject);
-Console.WriteLine("المحتويات : {0} ", textAnnotation.Contents);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAllAnnotationsFromPage.pdf"))
+    {
+        // Loop through all the annotations on the first page
+        foreach (Aspose.Pdf.Annotations.MarkupAnnotation annotation in document.Pages[1].Annotations)
+        {
+            // Get annotation properties
+            Console.WriteLine("Title : {0} ", annotation.Title);
+            Console.WriteLine("Subject : {0} ", annotation.Subject);
+            Console.WriteLine("Contents : {0} ", annotation.Contents);
+        }
+    }
+}
 ```
 
-## الحصول على مورد التعليق التوضيحي
+يرجى ملاحظة أنه للحصول على جميع التعليقات من ملف PDF بالكامل، يجب عليك التكرار عبر مجموعة فئة PageCollection الخاصة بالمستند قبل التنقل عبر مجموعة فئة AnnotationCollection. يمكنك الحصول على كل تعليق من المجموعة في نوع تعليق أساسي يسمى فئة MarkupAnnotation ثم عرض خصائصه.
 
-يتيح لك Aspose.PDF الحصول على مورد التعليق التوضيحي من مستند كامل، أو من صفحة معينة.
-Aspose.PDF يتيح لك الحصول على مورد التعليق التوضيحي من مستند بأكمله، أو من صفحة معينة.
+## الحصول على تعليق معين من ملف PDF
+
+التعليقات مرتبطة بالصفحات الفردية ومخزنة في مجموعة [AnnotationCOllection](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationcollection) لكائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). للحصول على تعليق معين، حدد فهرسه. هذا يعيد كائن [Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotation) الذي يحتاج إلى تحويله إلى نوع تعليق معين، على سبيل المثال [TextAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/textannotation). تظهر مقتطفات الشيفرة التالية كيفية الحصول على تعليق معين وخصائصه.
 
 ```csharp
-// لأمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-
-// فتح المستند
-Document doc = new Document(dataDir + "AddAnnotation.pdf");
-//إنشاء التعليق التوضيحي
-ScreenAnnotation sa = new ScreenAnnotation(doc.Pages[1], new Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
-doc.Pages[1].Annotations.Add(sa);
-// حفظ المستند
-doc.Save(dataDir + "GetResourceOfAnnotation_Out.pdf");
-
-// فتح المستند
-Document doc1 = new Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
-
-//الحصول على إجراء التعليق التوضيحي
-RenditionAction action = (doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction;
-
-//الحصول على العرض من إجراء العرض
-Rendition rendition = ((doc.Pages[1].Annotations[1] as ScreenAnnotation).Action as RenditionAction).Rendition;
-
-//مقطع الوسائط
-MediaClip clip = (rendition as MediaRendition).MediaClip;
-FileSpecification data = (clip as MediaClipData).Data;
-MemoryStream ms = new MemoryStream();
-byte[] buffer = new byte[1024];
-int read = 0;
-//بيانات الوسائط متاحة في FileSpecification.Contents
-Stream source = data.Contents;
-while ((read = source.Read(buffer, 0, buffer.Length)) > 0)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetParticularAnnotation()
 {
-    ms.Write(buffer, 0, read);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetParticularAnnotation.pdf"))
+    {
+        // Get a particular annotation by index (e.g., the first annotation on the first page)
+        var textAnnotation = (Aspose.Pdf.Annotations.TextAnnotation)document.Pages[1].Annotations[1];
+
+        // Get annotation properties
+        Console.WriteLine("Title : {0} ", textAnnotation.Title);
+        Console.WriteLine("Subject : {0} ", textAnnotation.Subject);
+        Console.WriteLine("Contents : {0} ", textAnnotation.Contents);
+    }
 }
-Console.WriteLine(rendition.Name);
-Console.WriteLine(action.RenditionOperation);
+```
+
+## الحصول على مورد التعليق
+
+Aspose.PDF يتيح لك الحصول على مورد التعليق من مستند كامل، أو من صفحة معينة. تظهر مقتطفات الشيفرة التالية كيفية الحصول على مورد التعليق ككائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) من ملف PDF المدخل.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddAndGetResourceOfAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAnnotation.pdf"))
+    {
+        // Create a screen annotation with a SWF file
+        var sa = new Aspose.Pdf.Annotations.ScreenAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(100, 400, 300, 600), dataDir + "AddSwfFileAsAnnotation.swf");
+        document.Pages[1].Annotations.Add(sa);
+
+        // Save PDF document with the new annotation
+        document.Save(dataDir + "GetResourceOfAnnotation_out.pdf");
+
+        // Open the updated document
+        var document1 = new Aspose.Pdf.Document(dataDir + "GetResourceOfAnnotation_Out.pdf");
+
+        // Get the action of the annotation
+        var action = (document1.Pages[1].Annotations[1] as Aspose.Pdf.Annotations.ScreenAnnotation).Action as Aspose.Pdf.Annotations.RenditionAction;
+
+        // Get the rendition of the rendition action
+        var rendition = action.Rendition;
+
+        // Get the media clip
+        var clip = (rendition as Aspose.Pdf.Annotations.MediaRendition).MediaClip;
+        var data = (clip as Aspose.Pdf.Annotations.MediaClipData).Data;
+
+        // Read the media data
+        using (var ms = new MemoryStream())
+        {
+            byte[] buffer = new byte[1024];
+            int read = 0;
+
+            // Data of media are accessible in FileSpecification.Contents
+            using (var source = data.Contents)
+            {
+                while ((read = source.Read(buffer, 0, buffer.Length)) > 0)
+                {
+                    ms.Write(buffer, 0, read);
+                }
+            }
+
+            Console.WriteLine(rendition.Name);
+            Console.WriteLine(action.RenditionOperation);
+        }
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -496,23 +692,23 @@ Console.WriteLine(action.RenditionOperation);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -521,9 +717,9 @@ Console.WriteLine(action.RenditionOperation);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أو إس، لينكس",
+    "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
@@ -533,5 +729,3 @@ Console.WriteLine(action.RenditionOperation);
     }
 }
 </script>
-```
-

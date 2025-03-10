@@ -1,10 +1,12 @@
 ---
-title: إضافة ختم نصي في PDF C#
-linktitle: ختم نصي في ملف PDF
+title: إضافة طوابع نصية في PDF C#
+linktitle: الطوابع النصية في ملف PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/text-stamps-in-the-pdf-file/
-description: أضف ختم نصي إلى مستند PDF باستخدام فئة TextStamp مع مكتبة Aspose.PDF لـ .NET.
+description: إضافة طابع نصي إلى مستند PDF باستخدام فئة TextStamp مع مكتبة Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة ختم نصي في PDF C#",
-    "alternativeHeadline": "إضافة ختم نصي في PDF C#",
+    "headline": "Add Text stamps in PDF C#",
+    "alternativeHeadline": "Effortlessly Add Text Stamps in PDF Documents with C#",
+    "abstract": "تتيح ميزة TextStamp الجديدة في Aspose.PDF for .NET للمستخدمين إضافة طوابع نصية قابلة للتخصيص إلى مستندات PDF بسهولة. مع خصائص لحجم الخط، النمط، واللون، بالإضافة إلى خيارات المحاذاة، تعزز هذه الوظيفة توضيح المستند من خلال السماح بوضع دقيق ومظهر للنص داخل ملفات PDF.",
     "author": {
         "@type": "Person",
-        "name":"أندري أندروخوفسكي",
-        "givenName": "أندري",
-        "familyName": "أندروخوفسكي",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, توليد المستندات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "765",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,126 +73,200 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/text-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "أضف ختم نصي إلى مستند PDF باستخدام فئة TextStamp مع مكتبة Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-26",
+    "description": "إضافة طابع نصي إلى مستند PDF باستخدام فئة TextStamp مع مكتبة Aspose.PDF for .NET."
 }
 </script>
-## إضافة ختم نصي باستخدام C#
 
-يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) لإضافة ختم نصي في ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء ختم نصي مثل حجم الخط، نمط الخط، ولون الخط وغيرها. لإضافة ختم نصي، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp للصفحة لإضافة الختم في ملف PDF.
+## إضافة طابع نصي
 
-يعمل الشفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) لإضافة طابع نصي في ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء طابع نصي مثل حجم الخط، نمط الخط، ولون الخط، إلخ. لإضافة طابع نصي، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp من Page لإضافة الطابع في PDF.
 
-يوضح الشفرة التالية كيفية إضافة ختم نصي في ملف PDF.
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+تظهر مقتطفات الكود التالية كيفية إضافة طابع نصي في ملف PDF.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir+ "AddTextStamp.pdf");
-
-// إنشاء ختم نصي
-TextStamp textStamp = new TextStamp("Sample Stamp");
-// تحديد ما إذا كان الختم في الخلفية
-textStamp.Background = true;
-// تعيين المنشأ
-textStamp.XIndent = 100;
-textStamp.YIndent = 100;
-// تدوير الختم
-textStamp.Rotate = Rotation.on90;
-// تعيين خصائص النص
-textStamp.TextState.Font = FontRepository.FindFont("Arial");
-textStamp.TextState.FontSize = 14.0F;
-textStamp.TextState.FontStyle = FontStyles.Bold;
-textStamp.TextState.FontStyle = FontStyles.Italic;
-textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Aqua);
-// إضافة ختم إلى صفحة محددة
-pdfDocument.Pages[1].AddStamp(textStamp);
-
-dataDir = dataDir + "AddTextStamp_out.pdf";
-// حفظ المستند الناتج
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text stamp
+        var textStamp = new Aspose.Pdf.TextStamp("Sample Stamp");
+        // Set whether stamp is background
+        textStamp.Background = true;
+        // Set origin
+        textStamp.XIndent = 100;
+        textStamp.YIndent = 100;
+        // Rotate stamp
+        textStamp.Rotate = Rotation.on90;
+        // Set text properties
+        textStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        textStamp.TextState.FontSize = 14.0F;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        textStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        textStamp.TextState.ForegroundColor = Aspose.Pdf.Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(textStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddTextStamp_out.pdf");  
+    }
+}
 ```
-## تعريف محاذاة لكائن TextStamp
 
-إضافة العلامات المائية إلى مستندات PDF هي واحدة من الميزات المطلوبة بشكل متكرر ويتمتع Aspose.PDF لـ .NET بالقدرة الكاملة على إضافة علامات مائية نصية وصورية. لدينا فئة تسمى [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) والتي توفر الميزة لإضافة طوابع نصية فوق ملف PDF. مؤخرًا، كان هناك متطلب لدعم ميزة تحديد محاذاة النص عند استخدام كائن TextStamp. لذا من أجل تلبية هذا المتطلب، قدمنا خاصية TextAlignment في فئة TextStamp. باستخدام هذه الخاصية، يمكننا تحديد محاذاة النص الأفقية.
+## تحديد المحاذاة لكائن TextStamp
 
-توضح الأجزاء التالية من الكود مثالاً على كيفية تحميل مستند PDF موجود وإضافة TextStamp فوقه.
+إضافة علامات مائية إلى مستندات PDF هي واحدة من الميزات المطلوبة بشكل متكرر و Aspose.PDF for .NET قادر تمامًا على إضافة علامات مائية نصية وصورية. لدينا فئة تُسمى [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/textstamp) التي توفر ميزة إضافة طوابع نصية فوق ملف PDF. مؤخرًا، كانت هناك حاجة لدعم ميزة تحديد محاذاة النص عند استخدام كائن TextStamp. لذلك، لتلبية هذه الحاجة، قدمنا خاصية TextAlignment في فئة TextStamp. باستخدام هذه الخاصية، يمكننا تحديد محاذاة النص الأفقية.
+
+تظهر مقتطفات الكود التالية مثالًا على كيفية تحميل مستند PDF موجود وإضافة TextStamp فوقه.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DefineAlignmentForTextStampObject()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// توثيق كائن المستند بملف الإدخال
-Document doc = new Document(dataDir+ "DefineAlignment.pdf");
-// توثيق كائن FormattedText بسلسلة عينة
-FormattedText text = new FormattedText("This");
-// إضافة سطر نص جديد إلى FormattedText
-text.AddNewLineText("is sample");
-text.AddNewLineText("Center Aligned");
-text.AddNewLineText("TextStamp");
-text.AddNewLineText("Object");
-// إنشاء كائن TextStamp باستخدام FormattedText
-TextStamp stamp = new TextStamp(text);
-// تحديد محاذاة النص الأفقية لطابع النص كمركز
-stamp.HorizontalAlignment = HorizontalAlignment.Center;
-// تحديد محاذاة النص العمودية لطابع النص كمركز
-stamp.VerticalAlignment = VerticalAlignment.Center;
-// تحديد محاذاة النص الأفقية لطابع النص كمركز
-stamp.TextAlignment = HorizontalAlignment.Center;
-// تعيين هامش علوي لكائن الطابع
-stamp.TopMargin = 20;
-// إضافة كائن الطابع فوق الصفحة الأولى من المستند
-doc.Pages[1].AddStamp(stamp);
-
-dataDir = dataDir + "StampedPDF_out.pdf";
-// حفظ المستند المحدث
-doc.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Instantiate FormattedText object with sample string
+        var text = new Aspose.Pdf.Facades.FormattedText("This");
+        // Add new text line to FormattedText
+        text.AddNewLineText("is sample");
+        text.AddNewLineText("Center Aligned");
+        text.AddNewLineText("TextStamp");
+        text.AddNewLineText("Object");
+        // Create TextStamp object using FormattedText
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        // Specify the Horizontal Alignment of text stamp as Center aligned
+        stamp.HorizontalAlignment = HorizontalAlignment.Center;
+        // Specify the Vertical Alignment of text stamp as Center aligned
+        stamp.VerticalAlignment = VerticalAlignment.Center;
+        // Specify the Text Horizontal Alignment of TextStamp as Center aligned
+        stamp.TextAlignment = HorizontalAlignment.Center;
+        // Set top margin for stamp object
+        stamp.TopMargin = 20;
+        // Add the stamp object over first page of document
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "StampedPDF_out.pdf");
+    }
+}
 ```
-## ملء النص المحاط بخط كختم في ملف PDF
 
-لقد قمنا بتنفيذ إعداد وضع العرض لسيناريوهات إضافة وتحرير النص. لتقديم نص محاط بخط، يرجى إنشاء كائن TextState وتعيين RenderingMode إلى TextRenderingMode.StrokeText واختيار لون لخاصية StrokingColor. بعد ذلك، قم بربط TextState بالختم باستخدام الطريقة BindTextState().
+## ملء نص السكتة الدماغية كطابع في ملف PDF
 
-يوضح الكود التالي إضافة نص ملء محاط بخط:
+لقد قمنا بتنفيذ إعداد وضع العرض لإضافة النص وتحريره. لرسم نص السكتة الدماغية، يرجى إنشاء كائن TextState وتعيين RenderingMode إلى TextRenderingMode.StrokeText واختيار اللون لخاصية StrokingColor. بعد ذلك، اربط TextState بالطابع باستخدام طريقة BindTextState().
+
+توضح مقتطفات الكود التالية كيفية إضافة نص السكتة الدماغية:
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-// إنشاء كائن TextState لنقل الخصائص المتقدمة
-TextState ts = new TextState();
-// تعيين لون للخط
-ts.StrokingColor = Color.Gray;
-// تعيين وضع عرض النص
-ts.RenderingMode = TextRenderingMode.StrokeText;
-// تحميل وثيقة PDF مدخلة
-Facades.PdfFileStamp fileStamp = new Facades.PdfFileStamp(new Aspose.Pdf.Document(dataDir + "input.pdf"));
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillStrokeTextAsStampInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    // Create TextState object to transfer advanced properties
+    var textState = new Aspose.Pdf.Text.TextState();
+    // Set color for stroke
+    textState.StrokingColor = Color.Gray;
+    // Set text rendering mode
+    textState.RenderingMode = Aspose.Pdf.Text.TextRenderingMode.StrokeText;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create PdfFileStamp
+        var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp(document);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Aspose.Pdf.Facades.EncodingType.Winansi, true, 78));
+        // Bind TextState
+        stamp.BindTextState(textState);
+        // Set X,Y origin
+        stamp.SetOrigin(100, 100);
+        stamp.Opacity = 5;
+        stamp.BlendingSpace = Aspose.Pdf.Facades.BlendingColorSpace.DeviceRGB;
+        stamp.Rotation = 45.0F;
+        stamp.IsBackground = false;
+        // Add Stamp
+        fileStamp.AddStamp(stamp);
+        // Save PDF document
+        fileStamp.Save(dataDir + "FillStrokeTextAsStampInPdfFile_out.pdf");
+        fileStamp.Close();
+    }
+}
+```
 
-Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-stamp.BindLogo(new Facades.FormattedText("PAID IN FULL", System.Drawing.Color.Gray, "Arial", Facades.EncodingType.Winansi, true, 78));
+## إضافة طابع نصي وضبط حجم الخط تلقائيًا
 
-// ربط TextState
-stamp.BindTextState(ts);
-// تعيين الأصل X,Y
-stamp.SetOrigin(100, 100);
-stamp.Opacity = 5;
-stamp.BlendingSpace = Facades.BlendingColorSpace.DeviceRGB;
-stamp.Rotation = 45.0F;
-stamp.IsBackground = false;
-// إضافة الختم
-fileStamp.AddStamp(stamp);
-fileStamp.Save(dataDir + "ouput_out.pdf");
-fileStamp.Close();
+توضح مقتطفات الكود التالية كيفية إضافة طابع نصي إلى ملف PDF وضبط حجم الخط تلقائيًا ليتناسب مع مستطيل الطابع.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        stamp.Width = 400;
+        stamp.Height = 200;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStamp_out.pdf");
+    }
+}
+```
+توضح مقتطفات الكود التالية كيفية إضافة طابع نصي إلى ملف PDF وضبط حجم الخط تلقائيًا ليتناسب مع مستطيل الطابع. يكون مستطيل الطابع افتراضيًا بحجم الصفحة.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutoSetTheFontSizeOfTextStampToFitPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextStampInput.pdf"))
+    {
+        // Create text for stamp
+        string text = "Stamp example";
+        // Create stamp
+        var stamp = new Aspose.Pdf.TextStamp(text);
+        stamp.AutoAdjustFontSizeToFitStampRectangle = true;
+        stamp.AutoAdjustFontSizePrecision = 0.01f;
+        stamp.WordWrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+        stamp.Scale = false;
+        //Add stamp
+        document.Pages[1].AddStamp(stamp);
+        // Save PDF document
+        document.Save(dataDir + "AutoSetTheFontSizeOfTextStampToFItPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -212,23 +288,23 @@ fileStamp.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
-                "areaServed": "بريطانيا العظمى",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -237,9 +313,9 @@ fileStamp.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التعامل مع ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أو إس، لينوكس",
+    "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
@@ -249,5 +325,3 @@ fileStamp.Close();
     }
 }
 </script>
-```
-Sure, I can help translate the document content to Arabic while preserving the markdown format and the specific instructions you provided. However, you'll need to provide the content of the document you want to translate. Please paste or describe the text, and I'll take care of the translation for you.

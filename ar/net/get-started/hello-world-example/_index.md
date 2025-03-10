@@ -1,10 +1,14 @@
 ---
-title: مثال على Hello World باستخدام لغة C#
-linktitle: مثال Hello World
+title: مثال على "مرحبا بالعالم" باستخدام لغة C#
+linktitle: مثال مرحبا بالعالم
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/hello-world-example/
-description: هذا المثال يوضح كيفية إنشاء مستند PDF بسيط يحتوي على نص Hello World باستخدام Aspose.PDF
+description: توضح هذه العينة كيفية إنشاء مستند PDF بسيط يحتوي على نص "مرحبا بالعالم" باستخدام Aspose.PDF
+aliases:
+    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"
@@ -14,21 +18,21 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "مثال على Hello World باستخدام لغة C#",
-    "alternativeHeadline": "مثال Aspose.PDF بلغة C#",
+    "headline": "Example of Hello World using C# language",
+    "alternativeHeadline": "Aspose.PDF C# example",
     "author": {
         "@type": "Person",
-        "givenName": "أندري",
-        "familyName": "أندروخوفسكي",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, c#, إنشاء مستندات",
+    "genre": "pdf document generation",
     "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF Doc Team",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -70,46 +74,44 @@ sitemap:
         "@type": "WebPage",
         "@id": "http://docs.aspose.com/pdf/net/hello-world-example/"
     },
-    "dateModified": "2022-02-04",
-    "description": "هذا المثال يوضح كيفية إنشاء مستند PDF بسيط يحتوي على نص Hello World باستخدام Aspose.PDF",
-    "articleBody": "يُستخدم مثال \"Hello World\" تقليديًا لتقديم ميزات لغة برمجة أو برنامج مع حالة استخدام بسيطة.\nAspose.PDF لـ .NET هو API غني بالميزات لـ PDF يسمح للمطورين بتضمين إمكانيات إنشاء، تManipulation وتحويل مستندات PDF في تطبيقات .NET الخاصة بهم. يدعم العمل مع العديد من صيغ الملفات الشهيرة بما في ذلك PDF، XFA، TXT، HTML، PCL، XML، XPS، EPUB، TEX وصيغ ملفات الصور. في هذه المقالة، نحن نقوم بإنشاء مستند PDF يحتوي على نص \"Hello World!\". بعد تثبيت Aspose.PDF لـ .NET في بيئتك، يمكنك تنفيذ عينة الكود أدناه لرؤية كيفية عمل API Aspose.PDF.\nيتبع جزء الكود أدناه هذه الخطوات:\n1. إنشاء كائن Document\n2. إضافة صفحة إلى كائن المستند\n3. إنشاء TextFragment\n4. إضافة TextFragment إلى مجموعة الفقرات في الصفحة\n5. حفظ المستند PDF الناتج\nجزء الكود التالي هو برنامج Hello World لعرض عمل API Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-26",
+    "description": "توضح هذه العينة كيفية إنشاء مستند PDF بسيط يحتوي على نص \"مرحبا بالعالم\" باستخدام Aspose.PDF",
+    "articleBody": "A \"Hello World\" example is traditionally used to introduce features of a programming language or software with a simple use case.\nAspose.PDF for .NET is a feature rich PDF API that allows the developers to embed PDF document creation, manipulation & conversion capabilities in their .NET applications. It supports working with many popular file formats including PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX and image file formats. In this article, we are creating a PDF document containing text \"Hello World!\". After installing Aspose.PDF for .NET in your environment, you can execute below code sample to see how Aspose.PDF API works.\nBelow code snippet follows these steps:\n1. // Create PDF document\n2. Add a Page to document object\n3. Create a TextFragment\n4. Add TextFragment to Paragraph collection of the page\n5. Save resultant PDF document\nFollowing code snippet is a Hello World program to exhibit working of Aspose.PDF for .NET API."
 }
 </script>
-مثال "Hello World" يستخدم تقليدياً لتقديم ميزات لغة برمجة أو برنامج بحالة استخدام بسيطة.
 
-Aspose.PDF لـ .NET هو API غني بالميزات يسمح للمطورين بتضمين إنشاء ومعالجة وتحويل مستندات PDF في تطبيقات .NET الخاصة بهم. يدعم العمل مع العديد من صيغ الملفات الشهيرة بما في ذلك PDF، XFA، TXT، HTML، PCL، XML، XPS، EPUB، TEX وصيغ ملفات الصور. في هذه المقالة، نحن نقوم بإنشاء مستند PDF يحتوي على نص "Hello World!". بعد تثبيت Aspose.PDF لـ .NET في بيئتك، يمكنك تنفيذ عينة الكود أدناه لرؤية كيفية عمل API Aspose.PDF.
+مثال "مرحبا بالعالم" يُستخدم تقليديًا لتقديم ميزات لغة برمجة أو برنامج مع حالة استخدام بسيطة.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+Aspose.PDF for .NET هو واجهة برمجة تطبيقات PDF غنية بالميزات تسمح للمطورين بإدماج قدرات إنشاء وتعديل وتحويل مستندات PDF في تطبيقاتهم .NET. يدعم العمل مع العديد من تنسيقات الملفات الشائعة بما في ذلك PDF و XFA و TXT و HTML و PCL و XML و XPS و EPUB و TEX وتنسيقات ملفات الصور. في هذه المقالة، نقوم بإنشاء مستند PDF يحتوي على نص "مرحبا بالعالم!". بعد تثبيت Aspose.PDF for .NET في بيئتك، يمكنك تنفيذ عينة الكود أدناه لرؤية كيفية عمل واجهة برمجة تطبيقات Aspose.PDF.
 
-تتبع شفرة البرنامج أدناه هذه الخطوات:
+عينة الكود التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
 
-1. استدعاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-1. إضافة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى كائن المستند
-1.
-1.
-1. أضف TextFragment إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) الخاصة بالصفحة
-1. [احفظ](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) المستند PDF الناتج
+عينة الكود التالية تتبع هذه الخطوات:
 
-الشفرة التالية هي برنامج مثالي لعرض كيفية عمل واجهة برمجة تطبيقات Aspose.PDF لـ .NET.
+1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. إضافة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) إلى كائن المستند.
+1. إنشاء كائن [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment).
+1. إضافة TextFragment إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) في الصفحة.
+1. [حفظ](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) مستند PDF الناتج.
+
+عينة الكود التالية هي برنامج مرحبا بالعالم لعرض عمل واجهة برمجة تطبيقات Aspose.PDF for .NET.
 
 ```csharp
-namespace Aspose.Pdf.Examples
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void HelloWorld()
 {
-    public static class ExampleGetStarted
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        private static readonly string _dataDir = "..\\..\\..\\Samples";
-        public static void HelloWorld()
-        {
-            // Initialize document object
-            Document document = new Document();
-            // Add page
-            Page page = document.Pages.Add();
-            // Add text to new page
-            page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
-            // Save updated PDF
-            var outputFileName = System.IO.Path.Combine(_dataDir, "HelloWorld_out.pdf");
-            document.Save( outputFileName );
-        }
+        // Add page
+        var page = document.Pages.Add();
+        // Add text to new page
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+        // Save PDF document
+        document.Save(dataDir + "HelloWorld_out.pdf");
     }
 }
 ```

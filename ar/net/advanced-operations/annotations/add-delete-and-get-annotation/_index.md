@@ -1,10 +1,12 @@
 ---
-title: إضافة، حذف، واسترجاع التعليقات التوضيحية
-linktitle: إضافة، حذف، واسترجاع التعليقات التوضيحية
+title: إضافة وحذف والحصول على التعليقات التوضيحية
+linktitle: إضافة وحذف والحصول على التعليقات التوضيحية
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/add-delete-and-get-annotation/
-description: مع Aspose.PDF لـ .NET، يمكنك إضافة، حذف، واسترجاع التعليقات التوضيحية من ملف PDF الخاص بك. تحقق من جميع قوائم التعليقات التوضيحية لحل مهمتك.
+description: مع Aspose.PDF for .NET يمكنك إضافة وحذف والحصول على التعليقات التوضيحية من ملف PDF الخاص بك. تحقق من جميع قوائم التعليقات التوضيحية لحل مهمتك.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة، حذف، واسترجاع التعليقات التوضيحية",
-    "alternativeHeadline": "التعامل مع التعليقات التوضيحية في ملف PDF",
+    "headline": "Add, Delete and Get Annotation",
+    "alternativeHeadline": "Manage PDF Annotations with Aspose.PDF for .NET",
+    "abstract": "قم بتحسين قدراتك في معالجة PDF مع ميزة إضافة وحذف والحصول على التعليقات التوضيحية الجديدة في Aspose.PDF for .NET. تتيح هذه الوظيفة القوية للمستخدمين إدارة التعليقات التوضيحية بسلاسة داخل ملفات PDF الخاصة بهم، مما يوفر تحريرًا مبسطًا وتحسينًا في تفاعل المحتوى. اكتشف كيفية العمل مع أنواع مختلفة من التعليقات التوضيحية لتلبية احتياجات مستنداتك المحددة.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, إضافة تعليق توضيحي, استرجاع تعليق توضيحي, حذف تعليق توضيحي",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "add annotation, delete annotation, get annotation, Aspose.PDF for .NET, PDF document generation, PDF annotations, multimedia annotation, PDF text annotation, highlights annotation, PDF manipulation library",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,23 +74,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-delete-and-get-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "مع Aspose.PDF لـ .NET، يمكنك إضافة، حذف، واسترجاع التعليقات التوضيحية من ملف PDF الخاص بك. تحقق من جميع قوائم التعليقات التوضيحية لحل مهمتك."
+    "dateModified": "2024-11-25",
+    "description": "مع Aspose.PDF for .NET يمكنك إضافة وحذف والحصول على التعليقات التوضيحية من ملف PDF الخاص بك. تحقق من جميع قوائم التعليقات التوضيحية لحل مهمتك."
 }
 </script>
+
 **ما هي التعليقات التوضيحية في مستندات PDF؟**
 
-هذه عبارة عن كائنات إضافية تضيفها إلى ملفك لتوسيع محتوى النص، إجراء التعديلات، والتعليقات لمستخدمين آخرين. من الممكن أيضًا جعل النص في المستند أكثر قابلية للقراءة، تمييزه، تحته أو إضافة نص جديد تمامًا.
+هذه هي كائنات إضافية تضيفها إلى ملفك لتوسيع محتوى النص، وإجراء تعديلات، وكتابة تعليقات لمستخدمين آخرين. من الممكن أيضًا جعل النص في المستند أكثر قابلية للقراءة، وتظليله، وتسطيره أو إضافة نص جديد تمامًا.
 
-لقد قمنا بتجميع أنواع التعليقات التوضيحية المتاحة لمكتبة Aspose.PDF لـ .NET في مجموعات:
+لقد جمعنا الأنواع المختلفة من التعليقات التوضيحية المتاحة لمكتبة Aspose.PDF for .NET في مجموعات:
 
-- [تعليق نصي PDF](/pdf/ar/net/text-annotation/)
-- [تعليق تمييز PDF](/pdf/ar/net/highlights-annotation/)
-- [تعليق الأشكال PDF](/pdf/ar/net/figures-annotation/)
-- [تعليق الوسائط المتعددة](/pdf/ar/net/multimedia-annotation/)
-- [تعليقات PDF اللاصقة](/pdf/ar/net/sticky-annotations/)
-- [تعليقات الروابط](/pdf/ar/net/link-annotations/)
-- [تعليقات إضافية](/pdf/ar/net/extra-annotations/)
+- [تعليق نص PDF](/pdf/net/text-annotation/)
+- [تعليق تمييز PDF](/pdf/net/highlights-annotation/)
+- [تعليق أشكال PDF](/pdf/net/figures-annotation/)
+- [تعليق وسائط متعددة](/pdf/net/multimedia-annotation/)
+- [تعليقات PDF اللاصقة](/pdf/net/sticky-annotations/)
+- [تعليقات الروابط](/pdf/net/link-annotations/)
+- [تعليقات إضافية](/pdf/net/extra-annotations/)
 
 <script type="application/ld+json">
 {
@@ -152,4 +156,3 @@ sitemap:
     }
 }
 </script>
-

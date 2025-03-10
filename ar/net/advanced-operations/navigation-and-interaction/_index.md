@@ -1,10 +1,12 @@
 ---
-title: التنقل والتفاعل في ملفات PDF
+title: التنقل والتفاعل في PDF
 linktitle: التنقل والتفاعل
 type: docs
-weight: 90
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 140
 url: /ar/net/navigation-and-interaction/
-description: تصف هذه القسم ميزات العمل مع الروابط والإجراءات والعلامات المرجعية.
+description: يصف هذا القسم ميزات العمل مع الروابط والإجراءات والإشارات المرجعية.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "التنقل والتفاعل في ملفات PDF",
-    "alternativeHeadline": "الروابط، الإجراءات والعلامات المرجعية في ملفات PDF",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "اكتشف القدرة الجديدة على إدارة الروابط برمجياً داخل مستندات PDF باستخدام C#. تتيح لك هذه الميزة إضافة روابط صفحات داخلية وروابط مواقع خارجية بسهولة، مما يعزز التنقل والتفاعل في ملفات PDF الخاصة بك. مثالي للمطورين الذين يتطلعون إلى تبسيط عمليات إدارة PDF الخاصة بهم!",
     "author": {
         "@type": "Person",
-        "name":"أناستازيا هولوب",
-        "givenName": "أناستازيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثائق PDF",
-    "keywords": "pdf, c#, links, actions, bookmarks in  pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/navigation-and-interaction/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تصف هذه القسم ميزات العمل مع الروابط والإجراءات والعلامات المرجعية."
+    "dateModified": "2024-11-25",
+    "description": "يصف هذا القسم ميزات العمل مع الروابط والإجراءات والإشارات المرجعية."
 }
 </script>
-- [روابط](/pdf/ar/net/links/) - يمكنك بسهولة إنشاء وتحديث واستخراج الروابط باستخدام C#.
-- [إجراءات](/pdf/ar/net/actions/) - من الممكن إضافة والحصول على روابط تشعبية لملفات PDF. أيضاً، في هذه المقالة، ستتعلم كيفية إزالة إجراء فتح المستند من ملف PDF وكيفية تحديد صفحة PDF عند عرض المستند.
-- [العلامات المرجعية](/pdf/ar/net/bookmarks/)- عادة ما تشتمل المنشورات الكبيرة على إطار من العلامات المرجعية التي يمكن مشاهدتها واختيارها بسهولة في لوحة العلامات المرجعية، مما يتيح لك النقر على علامة مرجعية للانتقال إلى الصفحة أو الفصل الذي تمثله. لوحة العلامات المرجعية هي عنصر يعي تواجد المحتوى، وتظهر في الشريط الجانبي فقط إذا كان المستند PDF المفتوح يحتوي على هيكل علامات مرجعية.
+
+- [الروابط](/pdf/net/links/) - يمكنك بسهولة إنشاء وتحديث واستخراج الروابط باستخدام C#.
+- [الإجراءات](/pdf/net/actions/) - من الممكن إضافة والحصول على، وإنشاء روابط لمستندات PDF. أيضًا، في هذه المقالة، ستتعلم كيفية إزالة إجراء فتح المستند من ملف PDF وكيفية تحديد صفحة PDF عند عرض المستند.
+- [الإشارات المرجعية](/pdf/net/bookmarks/) - عادةً ما تتضمن المنشورات الكبيرة إطارًا من الإشارات المرجعية التي يمكن عرضها واختيارها بسهولة في لوحة الإشارات المرجعية، مما يتيح لك النقر على إشارة مرجعية للانتقال إلى الصفحة أو الفصل الذي تمثله. لوحة الإشارات المرجعية هي عنصر واعي بالمحتوى، وتكون مرئية في الشريط الجانبي فقط إذا كان مستند PDF المفتوح يحتوي على هيكل إشارة مرجعية.
 
 <script type="application/ld+json">
 {
@@ -142,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

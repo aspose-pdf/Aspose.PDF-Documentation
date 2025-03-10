@@ -1,10 +1,12 @@
 ---
-title: العمل مع بيانات ملف PDF الوصفية | C#
-linktitle: بيانات ملف PDF الوصفية
+title: العمل مع بيانات التعريف لملف PDF في C#
+linktitle: بيانات التعريف لملف PDF
 type: docs
-weight: 140
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 200
 url: /ar/net/pdf-file-metadata/
-description: يشرح هذا القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP الوصفية من ملف PDF، وتعيين معلومات ملف PDF.
+description: استكشف كيفية استخراج وإدارة بيانات التعريف لملف PDF، مثل المؤلف والعنوان، في .NET باستخدام Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع بيانات ملف PDF الوصفية | C#",
-    "alternativeHeadline": "كيفية الحصول على بيانات ملف PDF الوصفية",
+    "headline": "Working with PDF File Metadata in C#",
+    "alternativeHeadline": "Extracting and Managing PDF Metadata in C#",
+    "abstract": "افتح قوة إدارة ملفات PDF مع ميزتنا الجديدة لمطوري C#، مما يتيح الوصول السلس إلى بيانات التعريف لملف PDF. احصل على رؤى حول خصائص الملف، واستخرج بيانات التعريف XMP، وقم بتحديث معلومات الوثيقة بسهولة، مما يبسط عملية التعامل مع مستنداتك. اختبر وظائف محسنة للحفاظ على بيانات التعريف لملف PDF والتلاعب بها بكفاءة.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, c#, بيانات ملف pdf الوصفية",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF file metadata, C# PDF manipulation, get PDF file information, set PDF file information, XMP metadata, Aspose.PDF for .NET, document properties, PDF metadata management",
+    "wordcount": "834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,141 +74,306 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-file-metadata/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يشرح هذا القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP الوصفية من ملف PDF، وتعيين معلومات ملف PDF."
+    "dateModified": "2024-11-25",
+    "description": "تشرح هذه القسم كيفية الحصول على معلومات ملف PDF، كيفية الحصول على بيانات التعريف XMP من ملف PDF، تعيين معلومات ملف PDF."
 }
 </script>
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
 
 ## الحصول على معلومات ملف PDF
 
-للحصول على معلومات محددة عن ملف PDF، عليك أولاً الحصول على كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) باستخدام خاصية [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). بمجرد استرجاع كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo)، يمكنك الحصول على قيم الخصائص الفردية. يوضح الكود التالي كيفية الحصول على معلومات ملف PDF.
+للحصول على معلومات محددة عن ملف PDF، تحتاج أولاً إلى الحصول على كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) باستخدام خاصية [Info](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/info) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) . بمجرد استرجاع كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) ، يمكنك الحصول على قيم الخصائص الفردية. يوضح مقتطف الشيفرة التالي كيفية الحصول على معلومات ملف PDF.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPDFFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetFileInfo.pdf");
-// الحصول على معلومات المستند
-DocumentInfo docInfo = pdfDocument.Info;
-// عرض معلومات المستند
-Console.WriteLine("المؤلف: {0}", docInfo.Author);
-Console.WriteLine("تاريخ الإنشاء: {0}", docInfo.CreationDate);
-Console.WriteLine("الكلمات الدلالية: {0}", docInfo.Keywords);
-Console.WriteLine("تاريخ التعديل: {0}", docInfo.ModDate);
-Console.WriteLine("الموضوع: {0}", docInfo.Subject);
-Console.WriteLine("العنوان: {0}", docInfo.Title);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf"))
+    {
+        // Get document information
+        var docInfo = document.Info;
+
+        // Display document information
+        Console.WriteLine("Author: {0}", docInfo.Author);
+        Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
+        Console.WriteLine("Keywords: {0}", docInfo.Keywords);
+        Console.WriteLine("Modify Date: {0}", docInfo.ModDate);
+        Console.WriteLine("Subject: {0}", docInfo.Subject);
+        Console.WriteLine("Title: {0}", docInfo.Title);
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPDFFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFileInfo.pdf"))
+    {
+        // Get document information
+        var docInfo = document.Info;
+        // Display document information
+        Console.WriteLine("Author: {0}", docInfo.Author);
+        Console.WriteLine("Creation Date: {0}", docInfo.CreationDate);
+        Console.WriteLine("Keywords: {0}", docInfo.Keywords);
+        Console.WriteLine("Modify Date: {0}", docInfo.ModDate);
+        Console.WriteLine("Subject: {0}", docInfo.Subject);
+        Console.WriteLine("Title: {0}", docInfo.Title);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## تعيين معلومات ملف PDF
 
-يتيح لك Aspose.PDF لـ.NET تعيين معلومات محددة لملف PDF، مثل الكاتب، تاريخ الإنشاء، الموضوع، والعنوان. لتعيين هذه المعلومات:
+Aspose.PDF for .NET يتيح لك تعيين معلومات محددة عن ملف PDF، مثل المؤلف، تاريخ الإنشاء، الموضوع، والعنوان. لتعيين هذه المعلومات:
 
-1. قم بإنشاء كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo).
+1. أنشئ كائن [DocumentInfo](https://reference.aspose.com/pdf/net/aspose.pdf/documentinfo) .
 1. قم بتعيين قيم الخصائص.
-1. احفظ المستند المحدث باستخدام طريقة Save الخاصة بفئة الوثيقة.
+1. احفظ المستند المحدث باستخدام طريقة Save لفئة Document.
 
 {{% alert color="primary" %}}
 
-يرجى ملاحظة أنه لا يمكنك تعيين قيم ضد حقول *Application* و *Producer*، لأنه سيتم عرض Aspose Ltd. و Aspose.PDF لـ.NET x.x.x ضد هذه الحقول.
+يرجى ملاحظة أنه لا يمكنك تعيين قيم ضد حقول *Application* و *Producer*، لأن Aspose Ltd. و Aspose.PDF for .NET x.x.x ستظهر ضد هذه الحقول.
 
 {{% /alert %}}
 
-يوضح الجزء التالي من الشفرة كيفية تعيين معلومات ملف PDF.
+يظهر مقتطف الشيفرة التالي كيفية تعيين معلومات ملف PDF.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "SetFileInfo.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFileInfo.pdf"))
+    {
+        // Specify document information
+        var docInfo = new Aspose.Pdf.DocumentInfo(document);
 
-// تحديد معلومات الوثيقة
-DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+        docInfo.Author = "Aspose";
+        docInfo.CreationDate = DateTime.Now;
+        docInfo.Keywords = "Aspose.Pdf, DOM, API";
+        docInfo.ModDate = DateTime.Now;
+        docInfo.Subject = "PDF Information";
+        docInfo.Title = "Setting PDF Document Information";
 
-docInfo.Author = "Aspose";
-docInfo.CreationDate = DateTime.Now;
-docInfo.Keywords = "Aspose.Pdf, DOM, API";
-docInfo.ModDate = DateTime.Now;
-docInfo.Subject = "معلومات PDF";
-docInfo.Title = "تعيين معلومات مستند PDF";
-
-dataDir = dataDir + "SetFileInfo_out.pdf";
-// حفظ المستند الناتج
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "SetFileInfo_out.pdf");
+    }
+}
 ```
-## الحصول على بيانات XMP الوصفية من ملف PDF
+{{< /tab >}}
 
-يتيح لك Aspose.PDF الوصول إلى بيانات XMP الوصفية لملف PDF. للحصول على بيانات ملف PDF الوصفية:
-
-1. قم بإنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وافتح ملف PDF الذي تريد.
-1. احصل على بيانات الوصفية للملف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
-
-يوضح الجزء التالي من الكود كيفية الحصول على البيانات الوصفية من ملف PDF.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFileInformation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetXMPMetadata.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetFileInfo.pdf"))
+    {
+        // Specify document information
+        var docInfo = new Aspose.Pdf.DocumentInfo(document);
 
-// الحصول على الخصائص
-Console.WriteLine(pdfDocument.Metadata["xmp:CreateDate"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:Nickname"]);
-Console.WriteLine(pdfDocument.Metadata["xmp:CustomProperty"]);
+        docInfo.Author = "Aspose";
+        docInfo.CreationDate = DateTime.Now;
+        docInfo.Keywords = "Aspose.Pdf, DOM, API";
+        docInfo.ModDate = DateTime.Now;
+        docInfo.Subject = "PDF Information";
+        docInfo.Title = "Setting PDF Document Information";
+
+        // Save PDF document
+        document.Save(dataDir + "SetFileInfo_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## تعيين بيانات XMP الوصفية في ملف PDF
+## الحصول على بيانات التعريف XMP من ملف PDF
 
-يتيح لك Aspose.PDF تعيين البيانات الوصفية في ملف PDF.
-Aspose.PDF يتيح لك تعيين البيانات الوصفية في ملف PDF.
+Aspose.PDF يتيح لك الوصول إلى بيانات التعريف XMP لملف PDF. للحصول على بيانات التعريف لملف PDF:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. تعيين قيم البيانات الوصفية باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata).
-1. حفظ المستند المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وافتح ملف PDF المدخل.
+1. احصل على بيانات التعريف للملف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) .
 
-يوضح الجزء التالي من الكود كيفية تعيين البيانات الوصفية في ملف PDF.
+يظهر مقتطف الشيفرة التالي كيفية الحصول على بيانات التعريف من ملف PDF.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// لأمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
-
-// تعيين الخصائص
-pdfDocument.Metadata["xmp:CreateDate"] = DateTime.Now;
-pdfDocument.Metadata["xmp:Nickname"] = "Nickname";
-pdfDocument.Metadata["xmp:CustomProperty"] = "Custom Value";
-
-dataDir = dataDir + "SetXMPMetadata_out.pdf";
-// حفظ المستند
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf"))
+    {
+        // Get and display properties
+        Console.WriteLine($"Create Date: {document.Metadata["xmp:CreateDate"]}");
+        Console.WriteLine($"Nickname: {document.Metadata["xmp:Nickname"]}");
+        Console.WriteLine($"Custom Property: {document.Metadata["xmp:CustomProperty"]}");
+    }
+}
 ```
-## إدراج بيانات الوصف مع بادئة
+{{< /tab >}}
 
-بعض المطورين يحتاجون إلى إنشاء فضاء أسماء جديد للبيانات الوصفية مع بادئة. يوضح الجزء التالي من الكود كيفية إدراج بيانات وصفية مع بادئة.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "SetXMPMetadata.pdf");
-pdfDocument.Metadata.RegisterNamespaceUri("xmp", "http:// Ns.adobe.com/xap/1.0/"); // تمت إزالة بادئة Xmlns
-pdfDocument.Metadata["xmp:ModifyDate"] = DateTime.Now;
-
-dataDir = dataDir + "SetPrefixMetadata_out.pdf";
-// حفظ المستند
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXMPMetadata.pdf"))
+    {
+        // Get and display properties
+        Console.WriteLine($"Create Date: {document.Metadata["xmp:CreateDate"]}");
+        Console.WriteLine($"Nickname: {document.Metadata["xmp:Nickname"]}");
+        Console.WriteLine($"Custom Property: {document.Metadata["xmp:CustomProperty"]}");
+    }
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
+## تعيين بيانات التعريف XMP في ملف PDF
+
+Aspose.PDF يتيح لك تعيين بيانات التعريف في ملف PDF. لتعيين بيانات التعريف:
+
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. قم بتعيين قيم بيانات التعريف باستخدام خاصية [Metadata](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/metadata) .
+1. احفظ المستند المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+
+يظهر مقتطف الشيفرة التالي كيفية تعيين بيانات التعريف في ملف PDF.
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Set properties
+        document.Metadata["xmp:CreateDate"] = DateTime.Now.ToString("o");
+        document.Metadata["xmp:Nickname"] = "Nickname";
+        document.Metadata["xmp:CustomProperty"] = "Custom Value";
+
+        // Save PDF document
+        document.Save(dataDir + "SetXMPMetadata_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetXMPMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Set properties
+        document.Metadata["xmp:CreateDate"] = DateTime.Now.ToString("o");
+        document.Metadata["xmp:Nickname"] = "Nickname";
+        document.Metadata["xmp:CustomProperty"] = "Custom Value";
+
+        // Save PDF document
+        document.Save(dataDir + "SetXMPMetadata_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## إدراج بيانات التعريف مع بادئة
+
+بعض المطورين يحتاجون إلى إنشاء مساحة أسماء جديدة لبيانات التعريف مع بادئة. يوضح مقتطف الشيفرة التالي كيفية إدراج بيانات التعريف مع بادئة.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrefixMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Register a namespace URI for the 'xmp' prefix
+        document.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+
+        // Set the metadata property using the registered prefix
+        document.Metadata["xmp:ModifyDate"] = DateTime.Now.ToString("o"); // ISO 8601 format for datetime
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrefixMetadata_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrefixMetadata()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetXMPMetadata.pdf"))
+    {
+        // Register a namespace URI for the 'xmp' prefix
+        document.Metadata.RegisterNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+
+        // Set the metadata property using the registered prefix
+        document.Metadata["xmp:ModifyDate"] = DateTime.Now.ToString("o"); // ISO 8601 format for datetime
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrefixMetadata_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -269,5 +437,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-
-

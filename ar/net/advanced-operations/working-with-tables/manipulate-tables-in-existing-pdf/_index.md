@@ -1,9 +1,12 @@
 ---
-title: التلاعب بالجداول في ملف PDF موجود
+title: التلاعب بالجداول في PDF موجود
 linktitle: التلاعب بالجداول
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/manipulate-tables-in-existing-pdf/
+description: تعلم كيفية العمل مع الجداول في ملفات PDF الموجودة باستخدام Aspose.PDF for .NET، مما يوفر مرونة في تعديل المستندات.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,21 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "التلاعب بالجداول في ملف PDF موجود",
-    "alternativeHeadline": "كيفية تحديث محتوى الجداول في ملف PDF موجود",
+    "headline": "Manipulate Tables in existing PDF",
+    "alternativeHeadline": "Enhance Table Editing in Existing PDF Documents",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية للتلاعب بجداول PDF الموجودة، مما يسمح للمستخدمين بالبحث وتحليل وتعديل محتوى الجدول بسهولة. تمكّن فئة TableAbsorber الجديدة التحديثات الديناميكية واستبدال الجداول مباشرة داخل مستندات PDF، مما يسهل عملية إدارة البيانات الجدولية في PDF لتحسين الوظائف. استكشف هذه القدرة المبتكرة لتحسين مهام تحرير PDF ودمج البيانات",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, التلاعب بالجداول",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +47,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,80 +72,92 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-tables-in-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
-## التعامل مع الجداول في ملفات PDF الموجودة
 
-أحد أقدم الميزات التي يدعمها Aspose.PDF لـ .NET هي قدراته في التعامل مع الجداول ويوفر دعمًا كبيرًا لإضافة جداول في ملفات PDF التي يتم إنشاؤها من الصفر أو أي ملفات PDF موجودة. تحصل أيضًا على القدرة على دمج الجدول مع قاعدة البيانات (DOM) لإنشاء جداول ديناميكية بناءً على محتويات قاعدة البيانات. في هذا الإصدار الجديد، قمنا بتنفيذ ميزة جديدة للبحث وتحليل الجداول البسيطة الموجودة بالفعل على صفحة من مستند PDF. توفر فئة جديدة تُدعى **Aspose.PDF.Text.TableAbsorber** هذه القدرات. استخدام TableAbsorber مشابه جدًا لفئة TextFragmentAbsorber الموجودة. يوضح الجزء التالي من الشفرة الخطوات لتحديث المحتويات في خلية جدول محددة.
+## التلاعب بالجداول في PDF موجود
 
-يعمل الجزء التالي من الشفرة أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+إحدى الميزات الأولى التي تدعمها Aspose.PDF for .NET هي قدراتها في العمل مع الجداول، وتوفر دعمًا كبيرًا لإضافة الجداول في ملفات PDF التي يتم إنشاؤها من الصفر أو أي ملفات PDF موجودة. كما تحصل على القدرة على دمج الجدول مع قاعدة البيانات (DOM) لإنشاء جداول ديناميكية بناءً على محتويات قاعدة البيانات. في هذا الإصدار الجديد، قمنا بتنفيذ ميزة جديدة للبحث وتحليل الجداول البسيطة التي توجد بالفعل في صفحة مستند PDF. توفر فئة جديدة تُدعى **Aspose.PDF.Text.TableAbsorber** هذه القدرات. استخدام TableAbsorber مشابه جدًا لفئة TextFragmentAbsorber الموجودة. يوضح مقتطف الكود التالي الخطوات لتحديث المحتويات في خلية جدول معينة.
+
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ManipulateTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// تحميل ملف PDF الموجود
-Document pdfDocument = new Document(dataDir + "input.pdf");
-// إنشاء كائن TableAbsorber للعثور على الجداول
-TableAbsorber absorber = new TableAbsorber();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// زيارة الصفحة الأولى بواسطة الجهاز
-absorber.Visit(pdfDocument.Pages[1]);
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// الحصول على الوصول إلى الجدول الأول على الصفحة، خليتهم الأولى والأجزاء النصية فيها
-TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
+        // Get access to first table on page, their first cell and text fragments in it
+        Aspose.Pdf.Text.TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
 
-// تغيير نص الجزء النصي الأول في الخلية
-fragment.Text = "مرحبا بالعالم";
-dataDir = dataDir + "ManipulateTable_out.pdf";
-pdfDocument.Save(dataDir);
+        // Change text of the first text fragment in the cell
+        fragment.Text = "hi world";
+
+        // Save PDF document
+        document.Save(dataDir + "ManipulateTable_out.pdf");
+    }
+}
 ```
-## استبدال جدول قديم بجدول جديد في مستند PDF
 
-في حالة الحاجة للعثور على جدول معين واستبداله بالجدول المطلوب، يمكنك استخدام الطريقة Replace() للفئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للقيام بذلك. يوضح المثال التالي الوظيفة لاستبدال الجدول داخل مستند PDF:
+## استبدال الجدول القديم بجدول جديد في مستند PDF
+
+في حال كنت بحاجة إلى العثور على جدول معين واستبداله بالجدول المطلوب، يمكنك استخدام طريقة Replace() من فئة [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) للقيام بذلك. يوضح المثال التالي الوظيفة لاستبدال الجدول داخل مستند PDF:
 
 ```csharp
-// للحصول على الأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// تحميل مستند PDF الحالي
-Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// إنشاء كائن TableAbsorber للعثور على الجداول
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// زيارة الصفحة الأولى بواسطة absorber
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// الحصول على أول جدول في الصفحة
-AbsorbedTable table = absorber.TableList[0];
+        // Create new table
+        var newTable = new Aspose.Pdf.Table();
+        newTable.ColumnWidths = "100 100 100";
+        newTable.DefaultCellBorder = new Aspose.Pdf.BorderInfo(BorderSide.All, 1F);
 
-// إنشاء جدول جديد
-Table newTable = new Table();
-newTable.ColumnWidths = "100 100 100";
-newTable.DefaultCellBorder = new BorderInfo(BorderSide.All, 1F);
+        Row row = newTable.Rows.Add();
+        row.Cells.Add("Col 1");
+        row.Cells.Add("Col 2");
+        row.Cells.Add("Col 3");
 
-Row row = newTable.Rows.Add();
-row.Cells.Add("العمود 1");
-row.Cells.Add("العمود 2");
-row.Cells.Add("العمود 3");
+        // Replace the table with new one
+        absorber.Replace(document.Pages[1], table, newTable);
 
-// استبدال الجدول بجدول جديد
-absorber.Replace(pdfDocument.Pages[1], table, newTable);
-
-// حفظ المستند
-pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTable_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -165,21 +179,21 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -190,7 +204,7 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -202,5 +216,3 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
     }
 }
 </script>
-```
-

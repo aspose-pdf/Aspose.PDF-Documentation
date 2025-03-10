@@ -1,8 +1,11 @@
 ---
-title: العمل مع العناوين في ملفات PDF
+title: العمل مع العناوين في PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 url: /ar/net/working-with-headings/
-description: إنشاء ترقيم في عناوين مستند PDF الخاص بك باستخدام C#. يقدم Aspose.PDF لـ .NET أنواعًا مختلفة من أنماط الترقيم.
+weight: 70
+description: إنشاء ترقيم في العنوان في مستند PDF الخاص بك باستخدام C#. Aspose.PDF for .NET يقدم أنواعًا مختلفة من أنماط الترقيم.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -12,22 +15,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع العناوين في ملفات PDF",
-    "alternativeHeadline": "إنشاء عناوين في ملفات PDF",
+    "headline": "Working with Headings in PDF",
+    "alternativeHeadline": "Enhance PDF Headings with Custom Numbering Styles",
+    "abstract": "قم بتحسين مستندات PDF الخاصة بك مع ترقيم العناوين القابل للتخصيص باستخدام Aspose.PDF for .NET. تتيح لك هذه الميزة الجديدة تطبيق أنماط ترقيم محددة مسبقًا، مثل الأرقام الرومانية والقوائم الأبجدية، لتنظيم عناوينك بشكل فعال، مما يحسن من قابلية قراءة المستند وبنيته. قم بتبسيط عملية إنشاء PDF الخاصة بك من خلال دمج هذه الوظيفة متعددة الاستخدامات في تطبيقات C# الخاصة بك",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, العناوين في ملفات pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF, C#, headings in PDF, numbering style, Aspose.PDF for .NET, pre-defined numbering styles, NumberingStyle enumeration, document generation, Heading class, pdf document manipulation",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -69,97 +73,103 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-headings/"
     },
-    "dateModified": "2022-02-04",
-    "description": "إنشاء ترقيم في عناوين مستند PDF الخاص بك باستخدام C#. يقدم Aspose.PDF لـ .NET أنواعًا مختلفة من أنماط الترقيم."
+    "dateModified": "2024-11-25",
+    "description": "إنشاء ترقيم في العنوان في مستند PDF الخاص بك باستخدام C#. Aspose.PDF for .NET يقدم أنواعًا مختلفة من أنماط الترقيم."
 }
 </script>
-## تطبيق نمط الترقيم في العناوين
 
-العناوين هي الأجزاء المهمة من أي مستند. يحاول الكتاب دائماً جعل العناوين أكثر بروزاً ومعنى لقرائهم. إذا كان هناك أكثر من عنوان في مستند، يمتلك الكاتب العديد من الخيارات لتنظيم هذه العناوين. أحد الأساليب الشائعة لتنظيم العناوين هو كتابتها بنمط الترقيم.
+## تطبيق نمط الترقيم في العنوان
 
-[Aspose.PDF for .NET](/pdf/ar/net/) يقدم العديد من أنماط الترقيم المعرفة مسبقاً. تُخزن هذه الأنماط المعرفة مسبقاً في تعداد، NumberingStyle. القيم المعرفة مسبقاً لتعداد NumberingStyle ووصفها موضحة أدناه:
+العناوين هي الأجزاء المهمة من أي مستند. يحاول الكتاب دائمًا جعل العناوين أكثر بروزًا ومعنى لقرائهم. إذا كان هناك أكثر من عنوان في مستند، فإن الكاتب لديه عدة خيارات لتنظيم هذه العناوين. واحدة من أكثر الطرق شيوعًا لتنظيم العناوين هي كتابة العناوين بنمط الترقيم.
+
+[Aspose.PDF for .NET](/pdf/net/) يقدم العديد من أنماط الترقيم المحددة مسبقًا. يتم تخزين هذه الأنماط المحددة مسبقًا في تعداد، NumberingStyle. القيم المحددة مسبقًا لتعداد NumberingStyle ووصفها موضحة أدناه:
 
 |**أنواع العناوين**|**الوصف**|
 | :- | :- |
-|NumeralsArabic|النوع العربي، على سبيل المثال، 1,1.1,...|
-|NumeralsRomanUppercase|النوع الروماني العلوي، على سبيل المثال، I,I.II, ...|
-|NumeralsRomanLowercase|النوع الروماني السفلي، على سبيل المثال، i,i.ii, ...|
-|LettersUppercase|النوع الإنجليزي العلوي، على سبيل المثال، A,A.B, ...|
-|LettersLowercase|النوع الإنجليزي السفلي، على سبيل المثال، a,a.b, ...|
-تُستخدم خاصية **Style** لفئة **Aspose.PDF.Heading** لتعيين أنماط الترقيم للعناوين.
-**خاصية** **الأنماط** في فئة **Aspose.PDF.Heading** تُستخدم لتحديد أنماط الترقيم للعناوين.
+|NumeralsArabic|نوع عربي، على سبيل المثال، 1، 1.1، ...|
+|NumeralsRomanUppercase|نوع روماني كبير، على سبيل المثال، I، I.II، ...|
+|NumeralsRomanLowercase|نوع روماني صغير، على سبيل المثال، i، i.ii، ...|
+|LettersUppercase|نوع إنجليزي كبير، على سبيل المثال، A، A.B، ...|
+|LettersLowercase|نوع إنجليزي صغير، على سبيل المثال، a، a.b، ...|
+تستخدم خاصية **Style** من فئة **Aspose.Pdf.Heading** لتعيين أنماط الترقيم للعناوين.
 
-|**الشكل: أنماط الترقيم المُعرّفة مسبقًا**|
+|**الشكل: أنماط الترقيم المحددة مسبقًا**|
 | :- |
-الكود المصدري للحصول على النتيجة المعروضة في الشكل أعلاه موضح أدناه في المثال.
+الكود المصدر، للحصول على المخرجات الموضحة في الشكل أعلاه، موضح أدناه في المثال.
 
-الشفرة التالية تعمل أيضًا مع واجهة رسومية جديدة [Aspose.Drawing](/pdf/ar/net/drawing/).
+تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.Drawing](/pdf/net/drawing/) .
 
 ```csharp
-// مسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Headings();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ApplyNumberStyleToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-Document pdfDoc = new Document();
-pdfDoc.PageInfo.Width = 612.0;
-pdfDoc.PageInfo.Height = 792.0;
-pdfDoc.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfDoc.PageInfo.Margin.Left = 72;
-pdfDoc.PageInfo.Margin.Right = 72;
-pdfDoc.PageInfo.Margin.Top = 72;
-pdfDoc.PageInfo.Margin.Bottom = 72;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.PageInfo.Width = 612.0;
+        document.PageInfo.Height = 792.0;
+        document.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        document.PageInfo.Margin.Left = 72;
+        document.PageInfo.Margin.Right = 72;
+        document.PageInfo.Margin.Top = 72;
+        document.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.Page pdfPage = pdfDoc.Pages.Add();
-pdfPage.PageInfo.Width = 612.0;
-pdfPage.PageInfo.Height = 792.0;
-pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfPage.PageInfo.Margin.Left = 72;
-pdfPage.PageInfo.Margin.Right = 72;
-pdfPage.PageInfo.Margin.Top = 72;
-pdfPage.PageInfo.Margin.Bottom = 72;
+        // Add page
+        var pdfPage = document.Pages.Add();
+        pdfPage.PageInfo.Width = 612.0;
+        pdfPage.PageInfo.Height = 792.0;
+        pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        pdfPage.PageInfo.Margin.Left = 72;
+        pdfPage.PageInfo.Margin.Right = 72;
+        pdfPage.PageInfo.Margin.Top = 72;
+        pdfPage.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox();
-floatBox.Margin = pdfPage.PageInfo.Margin;
+        // Create a floating box with the same margin as the page
+        var floatBox = new Aspose.Pdf.FloatingBox();
+        floatBox.Margin = pdfPage.PageInfo.Margin;
 
-pdfPage.Paragraphs.Add(floatBox);
+        // Add the floating box to the page
+        pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
+        // Add headings with numbering styles
+        var heading = new Aspose.Pdf.Heading(1);
+        heading.IsInList = true;
+        heading.StartNumber = 1;
+        heading.Text = "List 1";
+        heading.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading);
 
-Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
-heading.IsInList = true;
-heading.StartNumber = 1;
-heading.Text = "List 1";
-heading.Style = NumberingStyle.NumeralsRomanLowercase;
-heading.IsAutoSequence = true;
+        var heading2 = new Aspose.Pdf.Heading(1);
+        heading2.IsInList = true;
+        heading2.StartNumber = 13;
+        heading2.Text = "List 2";
+        heading2.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading2.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading2);
 
-floatBox.Paragraphs.Add(heading);
+        var heading3 = new Aspose.Pdf.Heading(2);
+        heading3.IsInList = true;
+        heading3.StartNumber = 1;
+        heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan on account of each allowed";
+        heading3.Style = Aspose.Pdf.NumberingStyle.LettersLowercase;
+        heading3.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading3);
 
-Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
-heading2.IsInList = true;
-heading2.StartNumber = 13;
-heading2.Text = "List 2";
-heading2.Style = NumberingStyle.NumeralsRomanLowercase;
-heading2.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading2);
-
-Aspose.Pdf.Heading heading3 = new Aspose.Pdf.Heading(2);
-heading3.IsInList = true;
-heading3.StartNumber = 1;
-heading3.Text = "القيمة، كما في تاريخ سريان الخطة، للممتلكات التي سيتم توزيعها بموجب الخطة بسبب كل موافقة";
-heading3.Style = NumberingStyle.LettersLowercase;
-heading3.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ApplyNumberStyle_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -181,21 +191,21 @@ pdfDoc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -206,7 +216,7 @@ pdfDoc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -218,5 +228,3 @@ pdfDoc.Save(dataDir);
     }
 }
 </script>
-```
-

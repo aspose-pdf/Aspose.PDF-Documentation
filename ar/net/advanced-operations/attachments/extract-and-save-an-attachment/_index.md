@@ -2,9 +2,11 @@
 title: استخراج وحفظ مرفق
 linktitle: استخراج وحفظ مرفق
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/extract-and-save-an-attachment/
-description: يتيح لك Aspose.PDF لـ .NET الحصول على جميع المرفقات من مستند PDF. كما يمكنك الحصول على مرفق فردي من مستندك.
+description: Aspose.PDF for .NET يتيح لك الحصول على جميع المرفقات من مستند PDF. أيضًا، يمكنك الحصول على مرفق فردي من مستندك.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,20 +15,24 @@ sitemap:
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "headline": "استخراج وحفظ مرفق",
-    "alternativeHeadline": "كيفية استخراج وحفظ المرفقات",
+    "@type": "TechArticle",
+    "headline": "Extract and Save an Attachment",
+    "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية تتيح للمستخدمين استخراج وحفظ المرفقات من مستندات PDF بسلاسة. تتيح هذه الوظيفة استرجاع جميع الملفات المدمجة أو مرفقات محددة، مما يعزز إدارة المستندات وسهولة الوصول للمطورين الذين يعملون مع ملفات PDF. قم بتحسين سير عمل PDF الخاص بك من خلال التعامل مع المرفقات بسهولة باستخدام هذه الأداة المبتكرة",
     "author": {
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, حفظ المرفقات, استخراج المرفقات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
+    "wordcount": "604",
+    "proficiencyLevel": "Beginner",
     "publisher": {
-        "name": "فريق توثيق Aspose.PDF",
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -41,18 +47,21 @@ sitemap:
         ],
         "contactPoint": [
             {
+                "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
                 "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
+                "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
                 "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
+                "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
                 "contactType": "sales",
                 "areaServed": "AU",
@@ -62,118 +71,129 @@ sitemap:
     },
     "url": "/net/extract-and-save-an-attachment/",
     "mainEntityOfPage": {
+        "@type": "WebPage",
         "@id": "/net/extract-and-save-an-attachment/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يتيح لك Aspose.PDF لـ .NET الحصول على جميع المرفقات من مستند PDF. كما يمكنك الحصول على مرفق فردي من مستندك."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET يتيح لك الحصول على جميع المرفقات من مستند PDF. أيضًا، يمكنك الحصول على مرفق فردي من مستندك."
 }
 </script>
-## الحصول على كل المرفقات
 
-مع Aspose.PDF، من الممكن الحصول على كل المرفقات من مستند PDF. هذا مفيد إما عندما تريد حفظ المستندات بشكل منفصل عن مستند PDF، أو إذا كنت بحاجة إلى إزالة المرفقات من مستند PDF.
+## الحصول على جميع المرفقات
 
-للحصول على كل المرفقات من ملف PDF:
+مع Aspose.PDF، من الممكن الحصول على جميع المرفقات من مستند PDF. هذا مفيد إما عندما تريد حفظ المستندات بشكل منفصل عن PDF، أو إذا كنت بحاجة إلى إزالة المرفقات من PDF.
 
-1. تصفح مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). تحتوي مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) على كل المرفقات. كل عنصر في هذه المجموعة يمثل كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). كل تكرار في حلقة foreach عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) يعيد كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
-1.
+للحصول على جميع المرفقات من ملف PDF:
 
-الشفرات التالية توضح كيفية الحصول على جميع المرفقات من مستند PDF.
+1. قم بالتكرار عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). تحتوي مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) على جميع المرفقات. يمثل كل عنصر في هذه المجموعة كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). كل تكرار في حلقة foreach عبر مجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) يعيد كائن [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. بمجرد توفر الكائن، استرجع إما جميع خصائص الملف المرفق أو الملف نفسه.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تظهر مقتطفات الشيفرة التالية كيفية الحصول على جميع المرفقات من مستند PDF.
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، الرجاء زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
-
-// الحصول على مجموعة الملفات المضمنة
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-
-// الحصول على عدد الملفات المضمنة
-Console.WriteLine("إجمالي الملفات : {0}", embeddedFiles.Count);
-
-int count = 1;
-
-// التكرار خلال المجموعة للحصول على جميع المرفقات
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAttachments()
 {
-    Console.WriteLine("الاسم: {0}", fileSpecification.Name);
-    Console.WriteLine("الوصف: {0}",
-    fileSpecification.Description);
-    Console.WriteLine("نوع MIME: {0}", fileSpecification.MIMEType);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-    // التحقق إذا كان الكائن العامل يحتوي على الأوامر
-    if (fileSpecification.Params != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
     {
-        Console.WriteLine("المجموع: {0}",
-        fileSpecification.Params.CheckSum);
-        Console.WriteLine("تاريخ الإنشاء: {0}",
-        fileSpecification.Params.CreationDate);
-        Console.WriteLine("تاريخ التعديل: {0}",
-        fileSpecification.Params.ModDate);
-        Console.WriteLine("الحجم: {0}", fileSpecification.Params.Size);
-    }
+        // Get embedded files collection
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
-    // الحصول على المرفق وكتابته إلى ملف أو تيار
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+        // Get count of the embedded files
+        Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+        int count = 1;
+
+        // Loop through the collection to get all the attachments
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            Console.WriteLine("Name: {0}", fileSpecification.Name);
+            Console.WriteLine("Description: {0}",
+            fileSpecification.Description);
+            Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+            // Check if parameter object contains the parameters
+            if (fileSpecification.Params != null)
+            {
+                Console.WriteLine("CheckSum: {0}",
+                fileSpecification.Params.CheckSum);
+                Console.WriteLine("Creation Date: {0}",
+                fileSpecification.Params.CreationDate);
+                Console.WriteLine("Modification Date: {0}",
+                fileSpecification.Params.ModDate);
+                Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+            }
+
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+            count += 1;
+        }
+    }
 }
 ```
+
 ## الحصول على مرفق فردي
 
-للحصول على مرفق فردي، يمكننا تحديد مؤشر المرفق في كائن `EmbeddedFiles` لمثيل المستند. يرجى استخدام قطعة الكود التالية.
+من أجل الحصول على مرفق فردي، يمكننا تحديد فهرس المرفق في كائن `EmbeddedFiles` لمثيل المستند. يرجى محاولة استخدام مقتطف الشيفرة التالي.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى مجلد المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
-
-// الحصول على الملف المضمن المحدد
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
-
-// الحصول على خصائص الملف
-Console.WriteLine("الاسم: {0}", fileSpecification.Name);
-Console.WriteLine("الوصف: {0}", fileSpecification.Description);
-Console.WriteLine("نوع MIME: {0}", fileSpecification.MIMEType);
-
-// التحقق إذا كان كائن البارامتر يحتوي على البارامترات
-if (fileSpecification.Params != null)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
 {
-    Console.WriteLine("التحقق: {0}",
-    fileSpecification.Params.CheckSum);
-    Console.WriteLine("تاريخ الإنشاء: {0}",
-    fileSpecification.Params.CreationDate);
-    Console.WriteLine("تاريخ التعديل: {0}",
-    fileSpecification.Params.ModDate);
-    Console.WriteLine("الحجم: {0}", fileSpecification.Params.Size);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf"))
+    {
+        // Get particular embedded file
+        Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+        // Get the file properties
+        Console.WriteLine("Name: {0}", fileSpecification.Name);
+        Console.WriteLine("Description: {0}", fileSpecification.Description);
+        Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+        // Check if parameter object contains the parameters
+        if (fileSpecification.Params != null)
+        {
+            Console.WriteLine("CheckSum: {0}",
+            fileSpecification.Params.CheckSum);
+            Console.WriteLine("Creation Date: {0}",
+            fileSpecification.Params.CreationDate);
+            Console.WriteLine("Modification Date: {0}",
+            fileSpecification.Params.ModDate);
+            Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+        }
+
+        // Get the attachment and write to file or stream
+        byte[] fileContent = new byte[fileSpecification.Contents.Length];
+        fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+
+        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+        {
+            fileStream.Write(fileContent, 0, fileContent.Length);
+        }
+    }
 }
-
-// الحصول على المرفق وكتابته إلى ملف أو تيار
-byte[] fileContent = new byte[fileSpecification.Contents.Length];
-fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -195,21 +215,21 @@ fileStream.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -220,7 +240,7 @@ fileStream.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التعامل مع ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -232,5 +252,3 @@ fileStream.Close();
     }
 }
 </script>
-```
-

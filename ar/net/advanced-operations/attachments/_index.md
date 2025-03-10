@@ -1,35 +1,41 @@
 ---
-title: العمل مع المرفقات في ملفات PDF
+title: العمل مع المرفقات في PDF
 linktitle: العمل مع المرفقات
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /ar/net/attachments/
-description: استخدم واجهة برمجة تطبيقات PDF بلغة C# للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام C# ضمن تطبيقاتك. دليل كامل مع أمثلة كود بلغة C#.
+description: استخدم واجهة برمجة تطبيقات PDF بلغة C# للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام C# من داخل تطبيقاتك. دليل كامل مع عينات من كود C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-attachments/
+    - /net/working-with-attachments-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع المرفقات في ملفات PDF",
-    "alternativeHeadline": "المرفقات في ملف PDF",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "اكتشف كيفية إدارة المرفقات في ملفات PDF بكفاءة باستخدام واجهة برمجة تطبيقات PDF بلغة C#. تتيح هذه الميزة للمطورين الوصول إلى أنواع ملفات مختلفة مرفقة بـ PDFs، مع عينات مفصلة من كود C# للتكامل السلس في التطبيقات. عزز قدراتك في معالجة PDF من خلال الاستفادة من هذا الدليل الشامل",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, المرفقات في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,18 +77,19 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "استخدم واجهة برمجة تطبيقات PDF بلغة C# للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام C# ضمن تطبيقاتك. دليل كامل مع أمثلة كود بلغة C#."
+    "dateModified": "2024-11-25",
+    "description": "استخدم واجهة برمجة تطبيقات PDF بلغة C# للوصول إلى المرفقات وإضافتها وإزالتها في ملفات PDF باستخدام C# من داخل تطبيقاتك. دليل كامل مع عينات من كود C#."
 }
 </script>
-في هذا القسم، سنشرح كيفية العمل مع المرفقات في PDF باستخدام Aspose.PDF لـ .NET.
-المرفق هو ملف إضافي مرتبط بمستند رئيسي، ويمكن أن يكون من مجموعة متنوعة من أنواع الملفات، مثل pdf، word، صورة، أو ملفات أخرى.
-ستتعلم كيفية إضافة المرفقات إلى pdf، الحصول على معلومات المرفق، وحفظها في ملف، حذف المرفق من PDF برمجيًا باستخدام C#.
 
-- [إضافة مرفق إلى مستند PDF](/pdf/ar/net/add-attachment-to-pdf-document/)
-- [استخراج وحفظ مرفق](/pdf/ar/net/extract-and-save-an-attachment/)
-- [إزالة مرفق من PDF موجود](/pdf/ar/net/removing-attachment-from-an-existing-pdf/)
-- [Portfolio](/pdf/ar/net/portfolio/)
+في هذا القسم، سنشرح كيفية العمل مع المرفقات في PDF باستخدام Aspose.PDF for .NET.
+المرفق هو ملف إضافي يتم إرفاقه بمستند رئيسي، ويمكن أن يكون مجموعة متنوعة من أنواع الملفات، مثل pdf، word، صورة، أو ملفات أخرى.
+ستتعلم كيفية إضافة مرفقات إلى pdf، والحصول على معلومات عن مرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام C#.
+
+- [إضافة مرفق إلى مستند PDF](/pdf/net/add-attachment-to-pdf-document/)
+- [استخراج وحفظ مرفق](/pdf/net/extract-and-save-an-attachment/)
+- [إزالة مرفق من PDF موجود](/pdf/net/removing-attachment-from-an-existing-pdf/)
+- [محفظة](/pdf/net/portfolio/)
 
 <script type="application/ld+json">
 {
@@ -135,7 +142,7 @@ sitemap:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التعامل مع PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -147,4 +154,3 @@ sitemap:
     }
 }
 </script>
-

@@ -1,10 +1,12 @@
 ---
-title: نقل صفحات PDF برمجيًا باستخدام C#
+title: نقل صفحات PDF برمجياً C#
 linktitle: نقل صفحات PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/move-pages/
-description: حاول نقل الصفحات إلى الموقع المطلوب أو في نهاية ملف PDF باستخدام Aspose.PDF لـ .NET.
+description: حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "نقل صفحات PDF برمجيًا باستخدام C#",
-    "alternativeHeadline": "كيفية نقل صفحات PDF باستخدام .NET",
+    "headline": "Move PDF Pages programmatically C#",
+    "alternativeHeadline": "Programmatically Rearrange PDF Pages with .NET",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة جديدة قوية تتيح للمستخدمين نقل صفحات PDF برمجياً بين المستندات أو إعادة ترتيبها داخل نفس المستند. تعزز هذه الوظيفة قدرات معالجة PDF من خلال تمكين المطورين من إدراج الصفحات في مواقع محددة وإدارة تنظيم الصفحات بسهولة مع الحفاظ على سلامة المستند.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثيقة PDF",
-    "keywords": "pdf, c#, نقل صفحة pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "668",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,91 +73,120 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/move-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "حاول نقل الصفحات إلى الموقع المطلوب أو في نهاية ملف PDF باستخدام Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-26",
+    "description": "حاول نقل الصفحات إلى الموقع المطلوب أو إلى نهاية ملف PDF باستخدام Aspose.PDF for .NET."
 }
 </script>
+
 ## نقل صفحة من مستند PDF إلى آخر
 
-هذا الموضوع يشرح كيفية نقل صفحة من مستند PDF إلى نهاية مستند آخر باستخدام C#.
+تشرح هذه الموضوع كيفية نقل صفحة من مستند PDF إلى نهاية مستند آخر باستخدام C#.
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-لنقل صفحة يجب أن:
+لنقل صفحة يجب علينا:
 
-1. ننشئ كائن فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) بملف PDF المصدر.
-1. ننشئ كائن فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) بملف PDF الوجهة.
-1. نحصل على صفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [نضيف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
-1. نحفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [نحذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في مستند المصدر.
-1.
-1.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المصدر.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF الوجهة.
+1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
+1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [حذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في المستند المصدر.
+1. حفظ ملف PDF المصدر باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-الشفرة التالية توضح لك كيفية نقل صفحة واحدة.
+تظهر مقتطفات الكود التالية كيفية نقل صفحة واحدة.
 
 ```csharp
-var srcFileName = "<أدخل اسم الملف>";
-var dstFileName = "<أدخل اسم الملف>";
-var srcDocument = new Document(srcFileName);
-var dstDocument = new Document();
-var page = srcDocument.Pages[2];
-dstDocument.Pages.Add(page);
-// حفظ الملف الناتج
-dstDocument.Save(srcFileName);
-srcDocument.Pages.Delete(2);
-srcDocument.Save(dstFileName);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingAPageFromOnePdfDocumentToAnother()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF documents
+    using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingPageInput.pdf"))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var page = srcDocument.Pages[2];
+            dstDocument.Pages.Add(page);
+            // Save PDF document
+            dstDocument.Save(dataDir + "MovingPage_out.pdf");
+            srcDocument.Pages.Delete(2);
+            // Save PDF document
+            srcDocument.Save(dataDir + "MovingPageInput_out.pdf");
+        }
+    }
+}
 ```
 
-## نقل مجموعة صفحات من مستند PDF إلى آخر
+## نقل مجموعة من الصفحات من مستند PDF إلى آخر
 
-1. إنشاء كائن فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) بملف PDF المصدر.
-1. إنشاء كائن فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) بملف PDF الوجهة.
-1. تعريف مصفوفة بأرقام الصفحات المراد نقلها.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المصدر.
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF الوجهة.
+1. تعريف مصفوفة بأرقام الصفحات التي سيتم نقلها.
 1. تشغيل حلقة عبر المصفوفة:
     1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. احفظ ملف PDF الناتج باستخدام طريقة [الحفظ](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
-1. [احذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) صفحة في المستند المصدر باستخدام مصفوفة.
-1. احفظ ملف PDF المصدر باستخدام طريقة [الحفظ](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+    1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى المستند الوجهة.
+1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
+1. [حذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/2) الصفحة في المستند المصدر باستخدام المصفوفة.
+1. حفظ ملف PDF المصدر باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-يوضح الكود التالي كيفية نقل مجموعة من الصفحات من مستند PDF إلى آخر.
+تظهر مقتطفات الكود التالية كيفية نقل مجموعة من الصفحات من مستند PDF إلى آخر.
 
 ```csharp
-var srcFileName = "<أدخل اسم الملف>";
-var dstFileName = "<أدخل اسم الملف>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
-var dstDocument = new Aspose.Pdf.Document();
-var pages = new []{ 1, 3 };
-foreach (var pageIndex in pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingBunchOfPagesFromOnePdfDocumentToAnother()
 {
-    var page = srcDocument.Pages[pageIndex];
-    dstDocument.Pages.Add(page);
-}                       
-// احفظ الملفات الناتجة
-dstDocument.Save(dstFileName);
-srcDocument.Pages.Delete(pages);
-srcDocument.Save(srcFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF documents
+    using (var srcDocument = new Aspose.Pdf.Document(dataDir + "MovingBunchOfPagesInput.pdf"))
+    {
+        using (var dstDocument = new Aspose.Pdf.Document())
+        {
+            var pages = new[] { 1, 3 };
+            foreach (int pageIndex in pages)
+            {
+                var page = srcDocument.Pages[pageIndex];
+                dstDocument.Pages.Add(page);
+            }
+            // Save PDF document
+            dstDocument.Save(dataDir + "MovingBunchOfPages_out.pdf");
+            srcDocument.Pages.Delete(pages);
+            // Save PDF document
+            srcDocument.Save(dataDir + "MovingBunchOfPagesInput_out.pdf";
+        }
+    }
+}
 ```
 
-## نقل صفحة في موقع جديد في مستند PDF الحالي
+## نقل صفحة إلى موقع جديد في مستند PDF الحالي
 
-1.
-1. الحصول على صفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
-1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى موقع جديد (مثلاً إلى النهاية).
+1. إنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المصدر.
+1. الحصول على الصفحة من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+1. [إضافة](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) الصفحة إلى الموقع الجديد (على سبيل المثال إلى النهاية).
 1. [حذف](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/delete/methods/1) الصفحة في الموقع السابق.
 1. حفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 ```csharp
-var srcFileName = "<enter file name>";
-var dstFileName = "<enter file name>";
-var srcDocument = new Aspose.Pdf.Document(srcFileName);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MovingAPageInNewLocationInTheCurrentPdfDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-var page = srcDocument.Pages[2];
-srcDocument.Pages.Add(page);
-srcDocument.Pages.Delete(2);          
-
-// Save output file
-srcDocument.Save(dstFileName);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocumentInput.pdf"))
+    {
+        var page = document.Pages[2];
+        document.Pages.Add(page);
+        document.Pages.Delete(2);
+        // Save PDF document
+        document.Save(dataDir + "MovingAPageInNewLocationInTheCurrentPdfDocument_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -221,4 +252,3 @@ srcDocument.Save(dstFileName);
     }
 }
 </script>
-

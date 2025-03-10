@@ -1,10 +1,12 @@
 ---
-title: استخدام تعليقات الرابط في PDF
-linktitle: تعليقات الرابط
+title: استخدام تعليقات الارتباط في PDF
+linktitle: تعليقات الارتباط
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ar/net/link-annotations/
-description: يسمح لك Aspose.PDF لـ .NET بإضافة، الحصول على، وحذف تعليق الرابط من مستند PDF الخاص بك.
+description: Aspose.PDF for .NET يتيح لك إضافة واسترجاع وحذف تعليق ارتباط من مستند PDF الخاص بك.
 lastmod: "2024-07-28"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "استخدام تعليق الرابط لـ PDF",
-    "alternativeHeadline": "كيفية إضافة تعليق الرابط في PDF",
+    "headline": "Using Link Annotation for PDF",
+    "alternativeHeadline": "How to add Link Annotation in PDF",
+    "abstract": "Aspose.PDF for .NET يقدم قدرات قوية لإدارة تعليقات الارتباط داخل مستندات PDF، مما يمكّن المستخدمين من إضافة واسترجاع وإزالة الروابط بسلاسة. تعزز هذه الميزة تفاعل المستند من خلال السماح للروابط بفتح صفحات معينة أو ملفات خارجية أو عناوين URL على الويب، جميعها قابلة للتخصيص بأنماط وإجراءات متنوعة. افتح إمكانيات جديدة للتنقل في PDF وتفاعل المستخدم مع هذه الوظيفة القوية للتعليقات.",
     "author": {
         "@type": "Person",
-        "name": "أناستازيا هولوب",
-        "givenName": "أناستازيا",
-        "familyName": "هولوب",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, تعليق نص",
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, text annotation",
     "wordcount": "302",
-    "proficiencyLevel": "مبتدئ",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF Doc Team",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -72,59 +75,79 @@ sitemap:
         "@id": "/net/link-annotation/"
     },
     "dateModified": "2022-02-04",
-    "description": "يسمح لك Aspose.PDF لـ .NET بإضافة، الحصول على، وحذف تعليق النص من مستند PDF الخاص بك."
+    "description": "Aspose.PDF for .NET يتيح لك إضافة واسترجاع وحذف تعليق نصي من مستند PDF الخاص بك."
 }
 </script>
-## إضافة توصيف الرابط في ملف PDF موجود
 
-> الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+## إضافة تعليق ارتباط إلى ملف PDF موجود
 
-يمثل [توصيف الرابط](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) رابطًا هايبرتكستيًا، ووجهة ما في مكان آخر، ومستندًا. وفقًا للمعيار PDF، يمكن استخدام توصيف الرابط في ثلاث حالات: فتح عرض الصفحة، فتح ملف، وفتح صفحة ويب.
+> تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-### استخدام توصيف الرابط لفتح عرض الصفحة
+يمثل [تعليق الارتباط](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) ارتباطًا تشعبيًا، وجهة في مكان آخر، ومستندًا. وفقًا لمعيار PDF، يمكن استخدام تعليق الارتباط في ثلاث حالات: فتح عرض الصفحة، فتح ملف، وفتح صفحة ويب.
 
-تم تنفيذ عدة خطوات إضافية لإنشاء التوصيف. استخدمنا TextFragmentAbsorber في حالتين للعثور على القطع للعرض. الأول لنص توصيف الرابط، والثاني يشير إلى بعض الأماكن في المستند.
+### استخدام تعليق الارتباط لفتح عرض الصفحة
+
+تم تنفيذ عدة خطوات إضافية لإنشاء التعليق. استخدمنا 2 TextFragmentAbsorbers للعثور على أجزاء للتجربة. الأول هو لتحديد نص تعليق الارتباط، والثاني يشير إلى بعض الأماكن في المستند.
 
 ```cs
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Link Annotation Demo.pdf"));
-
-var page = document.Pages[1];
-
-var regEx = new Regex(@"Link Annotation Demo \d");
-TextFragmentAbsorber textFragmentAbsorber1 = new TextFragmentAbsorber(regEx);
-textFragmentAbsorber1.Visit(document);
-
-regEx = new Regex(@"Sample text \d");
-TextFragmentAbsorber textFragmentAbsorber2 = new TextFragmentAbsorber(regEx);
-textFragmentAbsorber2.Visit(document);
-
-var linkFragments = textFragmentAbsorber1.TextFragments;
-var sampleTextFragments = textFragmentAbsorber2.TextFragments;
-
-var linkAnnotation1 = new LinkAnnotation(page, linkFragments[1].Rectangle)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLinkAnnotation()
 {
-    Action = new GoToAction(
-        new XYZExplicitDestination(
-            sampleTextFragments[1].Page,
-            sampleTextFragments[1].Rectangle.LLX,
-            sampleTextFragments[1].Rectangle.URX, 1.5))
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-page.Annotations.Add(linkAnnotation1);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Link Annotation Demo.pdf"))
+    {
+        // Get first page
+        var page = document.Pages[1];
 
-document.Save("test.pdf");
+        // Define regular expressions for text fragments
+        var regEx1 = new Regex(@"Link Annotation Demo \d");
+        var regEx2 = new Regex(@"Sample text \d");
+
+        // Create TextFragmentAbsorber for the first regular expression
+        var textFragmentAbsorber1 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx1);
+        textFragmentAbsorber1.Visit(document);
+
+        // Create TextFragmentAbsorber for the second regular expression
+        var textFragmentAbsorber2 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx2);
+        textFragmentAbsorber2.Visit(document);
+
+        // Get the text fragments for both absorbers
+        var linkFragments = textFragmentAbsorber1.TextFragments;
+        var sampleTextFragments = textFragmentAbsorber2.TextFragments;
+
+        // Create a LinkAnnotation
+        var linkAnnotation1 = new Aspose.Pdf.Annotations.LinkAnnotation(page, linkFragments[1].Rectangle)
+        {
+            Action = new Aspose.Pdf.Annotations.GoToAction(
+                new Aspose.Pdf.Annotations.XYZExplicitDestination(
+                    sampleTextFragments[1].Page,
+                    sampleTextFragments[1].Rectangle.LLX,
+                    sampleTextFragments[1].Rectangle.URX, 1.5))
+        };
+
+        // Add the link annotation to the page
+        page.Annotations.Add(linkAnnotation1);
+
+        // Save PDF document
+        document.Save(dataDir + "AddLinkAnnotation_out.pdf");
+    }
+}
 ```
-لإنشاء التعليق التوضيحي قمنا باتباع خطوات معينة:
 
-1. إنشاء `LinkAnnotation` ومرر كائن الصفحة ومستطيل جزء النص الذي يتوافق مع التعليق التوضيحي.
-1. تعيين `Action` كـ `GoToAction` ومرر `XYZExplicitDestination` كوجهة مرغوبة. لقد أنشأنا `XYZExplicitDestination` استنادًا إلى الصفحة وإحداثيات اليسار والأعلى والتكبير.
-1. إضافة التعليق التوضيحي إلى مجموعة تعليقات الصفحة.
-1. حفظ الوثيقة
+لإنشاء التعليق، اتبعنا خطوات معينة:
 
-### استخدام التعليق التوضيحي للوصلة مع وجهة مسماة
+1. إنشاء `LinkAnnotation` وتمرير كائن الصفحة ومستطيل جزء النص الذي يتوافق مع التعليق.
+1. تعيين `Action` كـ `GoToAction` وتمرير `XYZExplicitDestination` كوجهة مرغوبة. أنشأنا `XYZExplicitDestination` بناءً على الصفحة، والإحداثيات اليسرى والعلوية، والتكبير.
+1. إضافة التعليق إلى مجموعة تعليقات الصفحة.
+1. حفظ المستند.
 
-عند معالجة مستندات مختلفة، تنشأ موقف عندما تكون تكتب ولا تعرف إلى أين ستشير التعليق التوضيحي.
-في هذه الحالة يمكنك استخدام وجهة خاصة (مسماة) وسيكون الكود كما يظهر هنا:
+### استخدام تعليق الارتباط مع وجهة مسماة
+
+عند معالجة مستندات متنوعة، تظهر حالة عندما تكون تكتب ولا تعرف إلى أين ستشير التعليق.
+في هذه الحالة، يمكنك استخدام وجهة خاصة (مسمى) وستبدو الشيفرة هنا:
 
 ```cs
 var destinationName = "Link2";
@@ -134,7 +157,7 @@ var linkAnnotation2 = new LinkAnnotation(page, linkFragments[2].Rectangle)
 };
 ```
 
-في مكان آخر يمكنك إنشاء وجهة مسماة.
+في مكان آخر، يمكنك إنشاء وجهة مسماة.
 
 ```cs
 document.NamedDestinations.Add(destinationName,
@@ -143,9 +166,10 @@ document.NamedDestinations.Add(destinationName,
         sampleTextFragments[2].Rectangle.LLX,
         sampleTextFragments[2].Rectangle.URX, 1));
 ```
-### استخدام تعليق الرابط لفتح ملف
 
-يستخدم نفس النهج عند إنشاء تعليق لفتح ملف، كما في الأمثلة أعلاه.
+### استخدام تعليق الارتباط لفتح ملف
+
+نفس النهج مستخدم عند إنشاء تعليق لفتح ملف، كما في الأمثلة أعلاه.
 
 ```cs
 var linkAnnotation3 = new LinkAnnotation(page, linkFragments[3].Rectangle)
@@ -154,26 +178,27 @@ var linkAnnotation3 = new LinkAnnotation(page, linkFragments[3].Rectangle)
 };
 ```
 
-الفرق هو أننا سنستخدم `GoToRemoteAction` بدلاً من `GoToAction`. يأخذ بناء GoToRemoteAction معاملين: اسم الملف ورقم الصفحة.
-يمكنك أيضًا استخدام شكل آخر وتمرير اسم الملف وبعض الوجهات. بالطبع، تحتاج إلى إنشاء هذه الوجهة قبل استخدامها.
+الفرق هو أننا سنستخدم `GoToRemoteAction` بدلاً من `GoToAction`. يأخذ مُنشئ GoToRemoteAction معاملين: اسم الملف ورقم الصفحة.
+يمكنك أيضًا استخدام شكل آخر وتمرير اسم الملف وبعض الوجهة. من الواضح أنك بحاجة إلى إنشاء مثل هذه الوجهة قبل استخدامها.
 
-### استخدام تعليق الرابط لفتح صفحة ويب
+### استخدام تعليق الارتباط لفتح صفحة ويب
 
-لفتح صفحة ويب فقط قم بتعيين `Action` مع كائن `GoToURIAction`.
-يمكنك تمرير رابط هايبرتكست كمعامل بناء أو أي نوع آخر من URI. على سبيل المثال، يمكنك استخدام `callto` لتنفيذ الإجراء مع استدعاء رقم هاتف.
+لفتح صفحة ويب، فقط قم بتعيين `Action` مع كائن `GoToURIAction`.
+يمكنك تمرير ارتباط تشعبي كمعامل مُنشئ أو أي نوع آخر من URI. على سبيل المثال، يمكنك استخدام `callto` لتنفيذ إجراء مع رقم هاتف.
 
 ```cs
 var linkAnnotation4 = new LinkAnnotation(page, linkFragments[4].Rectangle)
 {
     Action = new GoToURIAction("https://products.aspose.com/pdf/net"),
-    // إنشاء تعليق الرابط وتعيين الإجراء لاستدعاء رقم هاتف
+    // Create Link Annotation and set the action to call a phone number
     //Action = new GoToURIAction("callto:678-555-0103")
     Color = Color.Blue
 };
 ```
-## إضافة تعليق توضيحي مزخرف للرابط
 
-يمكنك تخصيص التعليق التوضيحي للرابط باستخدام الحدود. في المثال أدناه سنقوم بإنشاء حد متقطع باللون الأزرق بعرض 3 نقاط.
+## إضافة تعليق ارتباط مزخرف
+
+يمكنك تخصيص تعليق الارتباط باستخدام الحدود. في المثال أدناه، سنقوم بإنشاء حد متقطع أزرق بعرض 3pt.
 
 ```cs
 var linkAnnotation4 = new LinkAnnotation(page, linkFragments[4].Rectangle)
@@ -190,7 +215,7 @@ linkAnnotation4.Border = new Border(linkAnnotation4)
 };
 ```
 
-مثال آخر يوضح كيفية محاكاة أسلوب المتصفح واستخدام خط تحتي للروابط.
+مثال آخر يظهر كيفية محاكاة نمط المتصفح واستخدام الخط السفلي للروابط.
 
 ```cs
 var linkAnnotation5 = new LinkAnnotation(page, linkFragments[5].Rectangle)
@@ -204,55 +229,69 @@ linkAnnotation5.Border = new Border(linkAnnotation5)
 };
 ```
 
-### الحصول على التعليقات التوضيحية للروابط
+### الحصول على تعليقات الارتباط
 
-يرجى محاولة استخدام الشفرة التالية للحصول على التعليق التوضيحي للرابط من مستند PDF.
+يرجى محاولة استخدام مقتطف الشيفرة التالية للحصول على LinkAnnotation من مستند PDF.
 
 ```csharp
-class ExampleLinkAnnotations
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetLinkAnnotations()
 {
-    // مسار مجلد المستندات.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    public static void GetLinkAnnotations()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
     {
-        // تحميل ملف PDF
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
-        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
+        // Get all Link annotations from the first page
+        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
+
+        // Iterate through each Link annotation
         foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
         {
-            // طباعة عنوان URL لكل تعليق توضيحي للرابط
-            Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
-            TextAbsorber absorber = new TextAbsorber();
+            // Print the URL of each Link Annotation
+            Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
+
+            // Create a TextAbsorber to extract text within the annotation's rectangle
+            var absorber = new Aspose.Pdf.Text.TextAbsorber();
             absorber.TextSearchOptions.LimitToPageBounds = true;
             absorber.TextSearchOptions.Rectangle = annot.Rect;
+
+            // Accept the absorber for the first page
             document.Pages[1].Accept(absorber);
+
+            // Extract and print the text associated with the hyperlink
             string extractedText = absorber.Text;
-            // طباعة النص المرتبط بالرابط الفائق
             Console.WriteLine(extractedText);
         }
     }
 }
 ```
-### حذف التعليقات التوضيحية للروابط
 
-يوضح الجزء التالي من الكود كيفية حذف التعليق التوضيحي للرابط من ملف PDF. لهذا نحتاج إلى العثور على وإزالة جميع التعليقات التوضيحية للروابط في الصفحة الأولى. بعد ذلك سنحفظ المستند بدون التعليق التوضيحي.
+### حذف تعليقات الارتباط
+
+تظهر مقتطف الشيفرة التالية كيفية حذف تعليق ارتباط من ملف PDF. لهذا، نحتاج إلى العثور على جميع تعليقات الارتباط وإزالتها في الصفحة الأولى. بعد ذلك، سنقوم بحفظ المستند مع التعليق المحذوف.
 
 ```csharp
-class ExampleLinkAnnotations
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteLinkAnnotations()
 {
-    // مسار دليل المستندات
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    public static void DeleteLinkAnnotations()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
     {
-        // تحميل ملف PDF
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
-        // العثور على وحذف جميع التعليقات التوضيحية للرابط في الصفحة الأولى
-        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
+        // Find and delete all link annotations on the 1st page
+        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
 
         foreach (var la in linkAnnotations)
+        {
             document.Pages[1].Annotations.Delete(la);
-        // حفظ المستند بعد إزالة التعليق التوضيحي
-        document.Save(System.IO.Path.Combine(_dataDir, "SimpleResume_del.pdf"));
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteLinkAnnotations_out.pdf");
     }
 }
 ```

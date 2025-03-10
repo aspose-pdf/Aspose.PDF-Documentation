@@ -1,10 +1,12 @@
 ---
-title: إضافة خلفية إلى ملف PDF باستخدام C#
+title: إضافة خلفية إلى PDF
 linktitle: إضافة خلفيات
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /ar/net/add-backgrounds/
-description: أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام C#. استخدم كائن BackgroundArtifact.
+description: إضافة صورة خلفية إلى ملف PDF الخاص بك باستخدام C#. استخدم كائن BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة خلفية إلى ملف PDF باستخدام C#",
-    "alternativeHeadline": "العمل مع الخلفية في PDF",
+    "headline": "Add background to PDF",
+    "alternativeHeadline": "Add Custom Backgrounds to PDFs with C#",
+    "abstract": "تقديم القدرة على دمج صور الخلفية بسلاسة في مستندات PDF الخاصة بك باستخدام C# مع Aspose.PDF for .NET. هذه الميزة تستخدم كائن BackgroundArtifact، مما يسمح بخيارات تصميم محسّنة مثل العلامات المائية أو التمويه الخفيف، مما يجعل PDFs الخاصة بك تبرز بأقل جهد. اكتشف كيفية رفع تخطيطات مستنداتك من خلال إضافة خلفيات مخصصة بسهولة.",
     "author": {
         "@type": "Person",
-        "name":"أناستازيا هولوب",
-        "givenName": "أناستازيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, الخلفية في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Add background to PDF, BackgroundArtifact object, PDF manipulation, C# PDF library, watermark in PDF, Aspose.PDF for .NET, add background image, PDF document generation, PDF artifacts, document background settings",
+    "wordcount": "228",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,46 +74,50 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-backgrounds/"
     },
-    "dateModified": "2022-02-04",
-    "description": "أضف صورة خلفية إلى ملف PDF الخاص بك باستخدام C#. استخدم كائن BackgroundArtifact."
+    "dateModified": "2024-11-26",
+    "description": "إضافة صورة خلفية إلى ملف PDF الخاص بك باستخدام C#. استخدم كائن BackgroundArtifact."
 }
 </script>
-يمكن استخدام الصور الخلفية لإضافة علامة مائية، أو تصميم خفي آخر، إلى المستندات. في Aspose.PDF لـ .NET، يتكون كل مستند PDF من مجموعة صفحات وكل صفحة تحتوي على مجموعة من الأدوات. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن صفحة.
 
-تعمل الشفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يمكن استخدام صور الخلفية لإضافة علامة مائية، أو تصميم خفيف آخر، إلى المستندات. في Aspose.PDF for .NET، كل مستند PDF هو مجموعة من الصفحات وكل صفحة تحتوي على مجموعة من الآثار. يمكن استخدام فئة [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) لإضافة صورة خلفية إلى كائن الصفحة.
 
-توضح الشفرة البرمجية التالية كيفية إضافة صورة خلفية إلى صفحات PDF باستخدام كائن BackgroundArtifact مع C#.
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+تظهر مقتطفات الشيفرة التالية كيفية إضافة صورة خلفية إلى صفحات PDF باستخدام كائن BackgroundArtifact مع C#.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// إنشاء كائن مستند جديد
-Document doc = new Document();
-
-// إضافة صفحة جديدة لكائن المستند
-Page page = doc.Pages.Add();
-
-// إنشاء كائن أداة الخلفية
-BackgroundArtifact background = new BackgroundArtifact();
-
-// تحديد الصورة لكائن أداة الخلفية
-background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg");
-
-// إضافة أداة الخلفية إلى مجموعة أدوات الصفحة
-page.Artifacts.Add(background);
-
-dataDir = dataDir + "ImageAsBackground_out.pdf";
-// حفظ المستند
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBackgroundToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Image for background artifact object
+        using (var image = File.OpenRead(dataDir + "aspose-total-for-net.jpg"))
+        {
+            // Add page
+            Page page = document.Pages.Add();
+            // Create Background Artifact object
+            var background = new Aspose.Pdf.BackgroundArtifact();
+            // Specify the image for background artifact object
+            background.BackgroundImage = image;
+            // Add background artifact to artifacts collection of page
+            page.Artifacts.Add(background);
+            // Save PDF document
+            document.Save(dataDir + "ImageAsBackground_out.pdf");
+        }
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -132,21 +139,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -157,7 +164,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -169,5 +176,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

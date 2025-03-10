@@ -1,10 +1,12 @@
 ---
-title: الوصول وملفات PDF الموسومة
-linktitle: الوصول. ملف PDF موسوم
+title: الوصول وملفات PDF المميزة
+linktitle: الوصول. ملف PDF المميز
 type: docs
-weight: 120
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 180
 url: /ar/net/accessibility-tagged-pdf/
-description: يوفر Aspose.PDF القدرة على إنشاء مستندات PDF موسومة، مما يتيح لك توسيم العناصر الهيكلية. تعرف على المزيد حول كيفية الحصول على ملفات PDF قابلة للوصول.
+description: اكتشف كيفية إنشاء ملفات PDF مميزة قابلة للوصول مع Aspose.PDF for .NET. الامتثال لمعايير الوصول لتصميم مستند شامل.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "الوصول وملفات PDF الموسومة",
-    "alternativeHeadline": "العمل مع ملفات PDF الموسومة",
+    "headline": "Accessibility and Tagged PDFs",
+    "alternativeHeadline": "Create accessible PDFs with new tagging features",
+    "abstract": "إنشاء ملفات PDF قابلة للوصول مع قدرات وسم محسّنة. تتيح هذه الميزة الجديدة التنقل والقراءة بسهولة أكبر بواسطة التقنيات المساعدة، مما يحسن الوصول للمستخدمين ذوي الإعاقة. تطوير مستندات PDF متوافقة وشاملة",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثيقة PDF",
-    "keywords": "موسوم، pdf، توليد الوثائق",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Tagged PDF, Accessible PDF, PDF Accessibility, Create Tagged PDF, Edit Tagged PDF, Extract Tagged Content, PDF Tags, Structure Elements",
+    "wordcount": "172",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,19 +74,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/accessibility-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يوفر Aspose.PDF القدرة على إنشاء مستندات PDF موسومة، مما يتيح لك توسيم العناصر الهيكلية. تعرف على المزيد حول كيفية الحصول على ملفات PDF قابلة للوصول."
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة، ولكن يمكنه أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
-يمكن الوصول إلى مستند PDF الموسوم من قبل الأشخاص ذوي الإعاقة. يجعل إضافة علامات الوصول إلى ملفات PDF من الأسهل على قارئات الشاشة والتقنيات المساعدة الأخرى قراءة المستند والتنقل فيه، مع وجود جداول المحتويات، والروابط التشعبية، والعلامات المرجعية، والنصوص البديلة، وما إلى ذلك.
 
-هذا القسم يغطي الموضوع التالي:
+يمكن الوصول إلى مستند PDF المميز من قبل الأشخاص ذوي الإعاقة. إن إضافة علامات الوصول إلى ملفات PDF تجعل من الأسهل على برامج قراءة الشاشة وغيرها من التقنيات المساعدة قراءة المستند والتنقل فيه، مع جداول المحتويات، والروابط التشعبية، والإشارات المرجعية، ونص بديل، وما إلى ذلك.
 
-- [إنشاء PDF موسوم](/pdf/ar/net/create-tagged-pdf/)
-- [استخراج المحتوى الموسوم من PDFs الموسومة](/pdf/ar/net/extract-tagged-content-from-tagged-pdfs/)
-- [ضبط خصائص عناصر الهيكل](/pdf/ar/net/setting-structure-elements-properties/)
-- [العمل مع الجدول في PDFs الموسومة](/pdf/ar/net/working-with-table-in-tagged-pdfs/)
-- [اختبار التوافق مع PDF-UA - قائمة الأخطاء](/pdf/ar/net/pdf-ua-compliance-test-errors-list/)
+يغطي هذا القسم الموضوعات التالية:
+
+- [إنشاء ملف PDF مميز](/pdf/net/create-tagged-pdf/)
+- [تحرير ملف PDF مميز](/pdf/net/edit-pdf-file-tags/)
+- [استخراج المحتوى المميز من ملفات PDF المميزة](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
+- [إعداد خصائص عناصر الهيكل](/pdf/net/setting-structure-elements-properties/)
+- [العمل مع الجدول في ملفات PDF المميزة](/pdf/net/working-with-table-in-tagged-pdfs/)
+- [اختبار الامتثال PDF-UA - قائمة الأخطاء](/pdf/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {
@@ -148,4 +153,3 @@ sitemap:
     }
 }
 </script>
-

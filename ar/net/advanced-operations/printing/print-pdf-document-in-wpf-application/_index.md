@@ -1,10 +1,12 @@
 ---
-title: طباعة مستند PDF في تطبيق WPF
+title: طباعة PDF في تطبيق WPF
 linktitle: طباعة مستند PDF في تطبيق WPF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ar/net/print-pdf-document-in-wpf-application/
-description: طباعة مستندات PDF من تطبيق WPF باستخدام C#. هذا المثال يوضح كيفية طباعة مستندات PDF من تطبيق WPF باستخدام C#.
+description: C# طباعة مستندات PDF من تطبيق WPF. توضح عينة الكود هذه كيفية طباعة مستندات PDF من تطبيق WPF باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "طباعة مستند PDF في تطبيق WPF",
-    "alternativeHeadline": "كيفية طباعة مستند PDF في تطبيق WPF",
+    "headline": "Print PDF in WPF application",
+    "alternativeHeadline": "Print PDF Documents Directly from WPF Applications",
+    "abstract": "تتيح الميزة الجديدة طباعة مستندات PDF بسلاسة مباشرة من تطبيق WPF باستخدام C#. تتيح هذه الوظيفة للمستخدمين تحويل ملفات PDF إلى تنسيق XPS وطباعة المستندات بكفاءة، مما يعزز قدرات إدارة المستندات داخل تطبيقاتهم. مع مثال كود بسيط، يمكن للمطورين تنفيذ هذه الميزة بسهولة لتبسيط عمليات طباعة PDF الخاصة بهم.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, pdf في تطبيق WPF",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Print PDF, WPF application, C# PDF printing, Aspose.PDF library, convert PDF to XPS, direct printing, view PDF document, DocViewer class, MemoryStream object, FixedDocumentSequence",
+    "wordcount": "406",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,74 +74,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/print-pdf-document-in-wpf-application/"
     },
-    "dateModified": "2022-02-04",
-    "description": "طباعة مستندات PDF من تطبيق WPF باستخدام C#. هذا المثال يوضح كيفية طباعة مستندات PDF من تطبيق WPF باستخدام C#."
+    "dateModified": "2024-11-25",
+    "description": "C# طباعة مستندات PDF من تطبيق WPF. توضح عينة الكود هذه كيفية طباعة مستندات PDF من تطبيق WPF باستخدام C#."
 }
 </script>
-تعمل الشظرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+تعمل عينة الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
 
 ## الطباعة المباشرة
 
-تمتلك مكتبة Aspose.PDF القدرة على تحويل ملفات PDF إلى XPS. يمكننا استخدام هذه الوظيفة لتنظيم طباعة الوثائق.
-لننظر في المثال للطباعة المباشرة:
+تمتلك مكتبة Aspose.PDF القدرة على تحويل ملفات PDF إلى XPS. يمكننا استخدام هذه الوظيفة لتنظيم طباعة المستندات.
+دعونا نعتبر المثال الخاص بالطباعة المباشرة:
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-    private void Print_OnClick(object sender, RoutedEventArgs e)
-    {
-        var openFileDialog = new OpenFileDialog
-        {
-            Filter = "PDF Documents|*.pdf"
-        };
-        openFileDialog.ShowDialog();
-
-        Aspose.Pdf.Document document = new Document(openFileDialog.FileName);
-        var memoryStream = new MemoryStream();
-        document.Save(memoryStream, SaveFormat.Xps);
-        var package = Package.Open(memoryStream);
-
-        //Create URI for Xps Package
-        //Any Uri will actually be fine here. It acts as a place holder for the
-        //Uri of the package inside of the PackageStore
-        var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
-        var packageUri = new Uri(inMemoryPackageName);
-
-        //Add package to PackageStore
-        PackageStore.AddPackage(packageUri, package);
-
-        var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
-        var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
-
-        var printDialog = new PrintDialog();
-        if (printDialog.ShowDialog() == true)
-        {
-            if (fixedDocumentSequence != null)
-                printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator, "A fixed document");
-            else
-                throw new NullReferenceException();
-        }
-        PackageStore.RemovePackage(packageUri);
-        xpsDoc.Close();
-
-    }
-```
-في هذه الحالة، سنتبع الخطوات التالية:
-
-1. فتح ملف PDF باستخدام OpenFileDialog
-1. تحويل PDF إلى XPS وتخزينه في كائن MemoryStream
-1. ربط كائن MemoryStream بحزمة Xps
-1. إضافة الحزمة إلى متجر الحزم
-1. إنشاء XpsDocument استنادًا إلى الحزمة
-1. الحصول على نسخة من FixedDocumentSequence
-1. إرسال هذه السلسلة إلى الطابعة باستخدام PrintDialog
-
-## عرض وطباعة المستند
-
-في العديد من الحالات، يرغب المستخدمون في رؤية المستند قبل الطباعة. لتنفيذ عرض، يمكننا استخدام فئة DocViewer.
-معظم الخطوات لتنفيذ هذا النهج مشابهة للمثال السابق.
-
-```csharp
-private void OpenFile_OnClick(object sender, RoutedEventArgs e)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DirectPrintWpf()
 {
+    // Select a PDF document to print
     var openFileDialog = new OpenFileDialog
     {
         Filter = "PDF Documents|*.pdf"
@@ -146,30 +100,220 @@ private void OpenFile_OnClick(object sender, RoutedEventArgs e)
 
     if (openFileDialog.ShowDialog() == true)
     {
-        var document = new Document(openFileDialog.FileName);
-        var memoryStream = new MemoryStream();
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document(openFileDialog.FileName))
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                // Convert the document to the XPS format
+                document.Save(memoryStream, SaveFormat.Xps);
+        
+                // Create XPS package
+                using (var package = Package.Open(memoryStream))
+                {
+                    //Create URI for the XPS package
+                    //Any Uri will actually be fine here. It acts as a placeholder for the
+                    //Uri of the package inside the PackageStore
+                    var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+                    var packageUri = new Uri(inMemoryPackageName);
+        
+                    //Add the package to PackageStore
+                    PackageStore.AddPackage(packageUri, package);
+        
+                    // Open the XPS document from the package
+                    using (var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName))
+                    {
+                        // Get the root document sequence
+                        var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
+        
+                        // Open a print dialog to set printing options
+                        var printDialog = new PrintDialog();
+                        if (printDialog.ShowDialog() == true)
+                        {
+                            if (fixedDocumentSequence != null)
+                            {
+                                // Print converted document
+                                printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator,
+                                    "A fixed document");
+                            }
+                        }
+        
+                        // Remove the package from the store and close the document after the print
+                        PackageStore.RemovePackage(packageUri);
+                    }
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DirectPrintWpf()
+{
+    // Select a PDF document to print
+    var openFileDialog = new OpenFileDialog
+    {
+        Filter = "PDF Documents|*.pdf"
+    };
+
+    if (openFileDialog.ShowDialog())
+    {
+        // Open PDF document
+        using var document = new Aspose.Pdf.Document(openFileDialog.FileName);
+        
+        // Convert the document to the XPS format
+        using var memoryStream = new MemoryStream();
+        document.Save(memoryStream, SaveFormat.Xps);
+        
+        // Create XPS package
+        using var package = Package.Open(memoryStream);
+        
+        //Create URI for the XPS package
+        //Any Uri will actually be fine here. It acts as a placeholder for the
+        //Uri of the package inside the PackageStore
+        var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+        var packageUri = new Uri(inMemoryPackageName);
+        
+        //Add the package to PackageStore
+        PackageStore.AddPackage(packageUri, package);
+        
+        // Open the XPS document from the package
+        using var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
+        
+        // Get the root document sequence
+        var fixedDocumentSequence = xpsDoc.GetFixedDocumentSequence();
+        
+        // Open a print dialog to set printing options
+        var printDialog = new PrintDialog();
+        if (printDialog.ShowDialog() == true)
+        {
+            if (fixedDocumentSequence != null)
+            {
+                // Print converted document
+                printDialog.PrintDocument(fixedDocumentSequence.DocumentPaginator,
+                    "A fixed document");
+            }
+        }
+        
+        // Remove the package from the store and close the document after the print
+        PackageStore.RemovePackage(packageUri);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+في هذه الحالة، سنتبع الخطوات التالية:
+
+1. فتح ملف PDF باستخدام OpenFileDialog.
+1. تحويل PDF إلى XPS وتخزينه في كائن MemoryStream.
+1. ربط كائن MemoryStream مع حزمة Xps.
+1. إضافة الحزمة إلى متجر الحزم.
+1. إنشاء XpsDocument بناءً على الحزمة.
+1. الحصول على نسخة من FixedDocumentSequence.
+1. إرسال هذه السلسلة إلى الطابعة باستخدام PrintDialog.
+
+## عرض وطباعة المستند
+
+في العديد من الحالات، يرغب المستخدمون في رؤية المستند قبل الطباعة. لتنفيذ العرض، يمكننا استخدام عنصر التحكم `DocumentViewer`.
+معظم الخطوات لتنفيذ هذا النهج مشابهة للمثال السابق.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
+{
+    // Select a PDF document to print
+    var openFileDialog = new OpenFileDialog
+    {
+        Filter = "PDF Documents|*.pdf"
+    };
+
+    if (openFileDialog.ShowDialog() == true)
+    {
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document(openFileDialog.FileName))
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                // Convert the document to the XPS format
+                document.Save(memoryStream, SaveFormat.Xps);
+
+                // Create XPS package
+                using (var package = Package.Open(memoryStream))
+                {
+                    //Create URI for the XPS package
+                    var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
+                    var packageUri = new Uri(inMemoryPackageName);
+
+                    //Add package to PackageStore
+                    PackageStore.AddPackage(packageUri, package);
+
+                    // Open the XPS document from the package
+                    using (var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName))
+                    {
+                        // Display the document in the DocumentViewer
+                        docViewer.Document = xpsDoc.GetFixedDocumentSequence();
+                    }
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PreviewDocumentWithDocumentViewer(DocumentViewer docViewer)
+{
+    // Select a PDF document to print
+    var openFileDialog = new OpenFileDialog
+    {
+        Filter = "PDF Documents|*.pdf"
+    };
+
+    if (openFileDialog.ShowDialog() == true)
+    {
+        // Open PDF document
+        using var document = new Aspose.Pdf.Document(openFileDialog.FileName);
+
+        // Convert the document to the XPS format
+        using var memoryStream = new MemoryStream();
         document.Save(memoryStream, SaveFormat.Xps);
 
-        var package = Package.Open(memoryStream);
+        // Create XPS package
+        using var package = Package.Open(memoryStream);
 
+        //Create URI for the XPS package
         var inMemoryPackageName = $"memorystream://{Guid.NewGuid()}.xps";
         var packageUri = new Uri(inMemoryPackageName);
 
-        // إضافة الحزمة إلى متجر الحزم
+        //Add package to PackageStore
         PackageStore.AddPackage(packageUri, package);
 
-        var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
-        DocViewer.Document = xpsDoc.GetFixedDocumentSequence();
-        xpsDoc.Close();
-    };
+        // Open the XPS document from the package
+        using var xpsDoc = new XpsDocument(package, CompressionOption.Maximum, inMemoryPackageName);
+
+        // Display the document in the DocumentViewer
+        docViewer.Document = xpsDoc.GetFixedDocumentSequence();
+    }
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -191,21 +335,21 @@ private void OpenFile_OnClick(object sender, RoutedEventArgs e)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "المبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -216,7 +360,7 @@ private void OpenFile_OnClick(object sender, RoutedEventArgs e)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تلاعب PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -228,5 +372,3 @@ private void OpenFile_OnClick(object sender, RoutedEventArgs e)
     }
 }
 </script>
-```
-

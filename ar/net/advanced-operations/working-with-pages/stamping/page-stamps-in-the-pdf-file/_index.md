@@ -1,10 +1,12 @@
 ---
-title: إضافة ختم صفحات PDF في PDF باستخدام C#
-linktitle: ختم الصفحات في ملف PDF
+title: إضافة طوابع صفحات PDF في PDF باستخدام C#
+linktitle: طوابع الصفحات في ملف PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/page-stamps-in-the-pdf-file/
-description: أضف ختم صفحة إلى مستند PDF باستخدام فئة PdfPageStamp مع مكتبة Aspose.PDF لـ .NET.
+description: أضف طابع صفحة إلى مستند PDF باستخدام فئة PdfPageStamp مع مكتبة Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة ختم صفحات PDF في PDF باستخدام C#",
-    "alternativeHeadline": "إضافة ختم صفحات PDF في PDF باستخدام C#",
+    "headline": "Add PDF Page Stamps in PDF using C#",
+    "alternativeHeadline": "Enhance PDFs with Custom Page Stamps in C#",
+    "abstract": "افتح إمكانيات تحرير PDF القوية مع ميزة طابع الصفحة الجديدة في Aspose.PDF for .NET. أضف بسهولة طوابع مركبة قابلة للتخصيص تتضمن الرسومات والنصوص والجداول مباشرة على مستندات PDF الخاصة بك، مما يعزز جاذبيتها البصرية ووظيفتها. مثالي لإنشاء تصاميم تشبه القرطاسية الاحترافية، تبسط هذه الميزة إنشاء المستندات والتلاعب بها في C#",
     "author": {
         "@type": "Person",
-        "name":"أندري أندروخوفسكي",
-        "givenName": "أندري",
-        "familyName": "أندروخوفسكي",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, توليد المستندات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "212",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,45 +73,38 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/page-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "أضف ختم صفحة إلى مستند PDF باستخدام فئة PdfPageStamp مع مكتبة Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-26",
+    "description": "أضف طابع صفحة إلى مستند PDF باستخدام فئة PdfPageStamp مع مكتبة Aspose.PDF for .NET."
 }
 </script>
-## إضافة ختم الصفحة مع C\#
 
-يمكن استخدام [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) عندما تحتاج إلى تطبيق ختم مركب يحتوي على رسومات، نصوص، جداول. يوضح المثال التالي كيفية استخدام الختم لإنشاء أوراق مكتبية مثل استخدام Adobe InDesign، Illustrator، Microsoft Word. لنفترض أن لدينا بعض المستندات الأولية ونريد تطبيق نوعين من الحدود باللون الأزرق واللون البرقوق.
+## إضافة طابع صفحة باستخدام C\#
 
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يمكن استخدام [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) عندما تحتاج إلى تطبيق طابع مركب يحتوي على الرسومات والنصوص والجداول. يوضح المثال التالي كيفية استخدام طابع لإنشاء قرطاسية كما في استخدام Adobe InDesign وIllustrator وMicrosoft Word. افترض أن لدينا مستند إدخال ونريد تطبيق نوعين من الحدود باللونين الأزرق والأرجواني.
+
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-public static void AddPageStamp()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStamp()
 {
-    var inputFileName = "sample-4pages.pdf";
-    var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "PageStamp.pdf";
-    var document = new Document(_dataDir + inputFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var bluePageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 1)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))
     {
-        Height = 800,
-        Background = true
-    };
-
-    var plumPageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 2)
-    {
-        Height = 800,
-        Background = true
-    };
-
-    for (int i = 1; i < 5; i++)
-    {
-        if (i % 2 == 0)
-            document.Pages[i].AddStamp(bluePageStamp);
-        else
-            document.Pages[i].AddStamp(plumPageStamp);
+        //Create PdfPageStamps
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + "AddPageStamp.pdf", 1)
+        {
+            Height = 800,
+            Background = true
+        };
+        // Add stamps
+        document.Pages[1].AddStamp(bluePageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddPageStamp_out.pdf");
     }
-
-    document.Save(_dataDir + outputFileName);
 }
 ```
 
@@ -117,7 +112,7 @@ public static void AddPageStamp()
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -139,34 +134,34 @@ public static void AddPageStamp()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
-                "areaServed": "الولايات المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
-                "areaServed": "المملكة المتحدة",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
-                "areaServed": "أستراليا",
-                "availableLanguage": "الإنجليزية"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
     "offers": {
         "@type": "Offer",
         "price": "1199",
-        "priceCurrency": "دولار أمريكي"
+        "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أو إس، لينوكس",
+    "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
@@ -176,5 +171,3 @@ public static void AddPageStamp()
     }
 }
 </script>
-```
-

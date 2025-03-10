@@ -2,9 +2,11 @@
 title: تغيير حجم صفحة PDF باستخدام C#
 linktitle: تغيير حجم صفحة PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/change-page-size/
-description: قم بتغيير حجم صفحة مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET.
+description: تغيير حجم الصفحة من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "تغيير حجم صفحة PDF باستخدام C#",
-    "alternativeHeadline": "تغيير حجم صفحة PDF باستخدام .NET",
+    "headline": "Change PDF Page Size with C#",
+    "alternativeHeadline": "Effortlessly Resize PDF Pages in C#",
+    "abstract": "تتيح الوظيفة الجديدة في Aspose.PDF for .NET للمطورين تغيير حجم صفحة مستندات PDF برمجيًا بسهولة. مع بضع سطور من التعليمات البرمجية، يمكن للمستخدمين تعديل أبعاد PDF الحالية، مما يعزز قدراتهم في إدارة المستندات ويضمن التوافق مع متطلبات التخطيط المختلفة. تسهل هذه الميزة عملية تغيير حجم صفحات PDF إلى التنسيقات المفضلة، مثل A4، مباشرة داخل تطبيقات .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, تغيير حجم pdf, تغيير حجم pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "300",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,40 +73,81 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/change-page-size/"
     },
-    "dateModified": "2022-02-04",
-    "description": "قم بتغيير حجم صفحة مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-26",
+    "description": "تغيير حجم الصفحة من مستند PDF الخاص بك باستخدام مكتبة Aspose.PDF for .NET."
 }
 </script>
+
 ## تغيير حجم صفحة PDF
 
-يتيح لك Aspose.PDF لـ .NET تغيير حجم صفحة PDF بأسطر بسيطة من الكود في تطبيقات .NET الخاصة بك. يشرح هذا الموضوع كيفية تحديث/تغيير أبعاد الصفحة (الحجم) لملف PDF موجود.
+تتيح لك Aspose.PDF for .NET تغيير حجم صفحة PDF باستخدام سطور بسيطة من التعليمات البرمجية في تطبيقات .NET الخاصة بك. يشرح هذا الموضوع كيفية تحديث/تغيير أبعاد الصفحة (الحجم) لملف PDF موجود.
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات التعليمات البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على طريقة SetPageSize(...) التي تتيح لك تعيين حجم الصفحة. يقوم الكود أدناه بتحديث أبعاد الصفحة في بضع خطوات سهلة:
+تحتوي فئة [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) على طريقة SetPageSize(...) التي تتيح لك تعيين حجم الصفحة. يقوم مقتطف التعليمات البرمجية أدناه بتحديث أبعاد الصفحة في بضع خطوات سهلة:
 
 1. تحميل ملف PDF المصدر.
 1. الحصول على الصفحات في كائن [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 1. الحصول على صفحة معينة.
 1. استدعاء طريقة SetPageSize(..) لتحديث أبعادها.
-1. استدعاء طريقة Save(..) لفئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) لإنشاء ملف PDF بأبعاد صفحة محدثة.
+1. استدعاء طريقة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) لحفظ(..) لتوليد ملف PDF بأبعاد صفحة محدثة.
 
 {{% alert color="primary" %}}
 
-يرجى ملاحظة أن خصائص الارتفاع والعرض تستخدم النقاط كوحدة أساسية، حيث 1 بوصة = 72 نقطة و1 سم = 1/2.54 بوصة = 0.3937 بوصة = 28.3 نقطة.
-يرجى ملاحظة أن خصائص الارتفاع والعرض تستخدم النقاط كوحدة أساسية، حيث 1 بوصة = 72 نقطة و1 سم = 1/2.54 بوصة = 0.3937 بوصة = 28.3 نقطة.
+يرجى ملاحظة أن خصائص الارتفاع والعرض تستخدم النقاط كوحدة أساسية، حيث 1 بوصة = 72 نقطة و 1 سم = 1/2.54 بوصة = 0.3937 بوصة = 28.3 نقطة.
 
 {{% /alert %}}
 
-الشفرة التالية توضح كيفية تغيير أبعاد صفحة PDF إلى حجم A4.
+تظهر مقتطفات التعليمات البرمجية التالية كيفية تغيير أبعاد صفحة PDF إلى حجم A4.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-UpdateDimensions-UpdateDimensions.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangePdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Get page collection
+        var pageCollection = document.Pages;
+        // Get particular page
+        var pdfPage = pageCollection[1];
+        // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
+        // So A4 dimensions in points will be (842.4, 597.6)
+        pdfPage.SetPageSize(597.6, 842.4);
+        // Save PDF document
+        document.Save(dataDir + "UpdateDimensions_out.pdf"); 
+    }
+}
+```
 
 ## الحصول على حجم صفحة PDF
 
-يمكنك قراءة حجم صفحة PDF لملف PDF موجود باستخدام Aspose.PDF لـ.NET. العينة البرمجية التالية تظهر كيفية قراءة أبعاد صفحة PDF باستخدام C#.
+يمكنك قراءة حجم صفحة PDF لملف PDF موجود باستخدام Aspose.PDF for .NET. يوضح نموذج التعليمات البرمجية التالي كيفية قراءة أبعاد صفحة PDF باستخدام C#.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetDimensions-GetDimensions.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Adds a blank page to pdf document
+        Page page = document.Pages.Count > 0 ? document.Pages[1] : document.Pages.Add();
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+        // Rotate page at 90 degree angle
+        page.Rotate = Rotation.on90;
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+    }
+}
+```
 
 <script type="application/ld+json">
 {
@@ -169,5 +212,3 @@ sitemap:
     }
 }
 </script>
-
-

@@ -1,35 +1,41 @@
 ---
-title: العمل مع العوامل
-linktitle: العمل مع العوامل
+title: العمل مع المشغلين
+linktitle: العمل مع المشغلين
 type: docs
-weight: 170
-url: /ar/net/operators/
-description: يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF. توفر فئات العوامل ميزات رائعة للتلاعب بملفات PDF.
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 90
+url: /ar/net/working-with-operators/
+description: يشرح هذا الموضوع كيفية استخدام المشغلين مع Aspose.PDF. توفر فئات المشغلين ميزات رائعة لمعالجة PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-operators/
+    - /net/operator/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع العوامل",
-    "alternativeHeadline": "كيفية استخدام عوامل PDF",
+    "headline": "Working with Operators",
+    "alternativeHeadline": "Empowered PDF Manipulation with Operators Integration",
+    "abstract": "تعمل ميزة المشغلين في Aspose.PDF for .NET على تعزيز قدرات معالجة PDF من خلال السماح للمستخدمين باستخدام فئات مشغل معينة لمهام مثل إضافة الصور وإزالة الرسومات. تبسط هذه الوظيفة عملية تعريف العناصر الرسومية وحالاتها داخل PDF، مما يوفر للمطورين أدوات قوية لتحرير المستندات ومعالجتها بدقة.",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثائق PDF",
-    "keywords": "pdf, c#, العوامل في pdf, استخدام عوامل pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "operators, Aspose.PDF, PDF manipulation, GSave operator, ConcatenateMatrix operator, Do operator, GRestore operator, graphics state, remove graphics",
+    "wordcount": "1233",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,188 +72,214 @@ sitemap:
             }
         ]
     },
-    "url": "/net/operators/",
+    "url": "/net/working-with-operators/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/operators/"
+        "@id": "/net/working-with-operators/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يشرح هذا الموضوع كيفية استخدام العوامل مع Aspose.PDF. توفر فئات العوامل ميزات رائعة للتلاعب بملفات PDF."
+    "dateModified": "2024-11-26",
+    "description": "يشرح هذا الموضوع كيفية استخدام المشغلين مع Aspose.PDF. توفر فئات المشغلين ميزات رائعة لمعالجة PDF."
 }
 </script>
-## مقدمة في مشغلات PDF واستخداماتها
 
-المشغل هو كلمة أساسية في PDF تحدد نوع الإجراء الذي يجب تنفيذه، مثل رسم شكل رسومي على الصفحة. تتميز كلمة المشغل الأساسية عن الكائن المسمى بعدم وجود حرف سلاش صلب أولي (2Fh). المشغلات ذات معنى فقط داخل تيار المحتوى.
+## مقدمة إلى مشغلات PDF واستخدامها
 
-تيار المحتوى هو كائن تيار PDF الذي تتكون بياناته من تعليمات تصف العناصر الرسومية التي سيتم رسمها على صفحة. يمكن العثور على المزيد من التفاصيل حول مشغلات PDF في [مواصفات PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
+المشغل هو كلمة مفتاحية في PDF تحدد بعض الإجراءات التي يجب تنفيذها، مثل رسم شكل رسومي على الصفحة. يتم تمييز كلمة المشغل عن كائن مسمى من خلال غياب حرف السوليدوس الأولي (2Fh). تكون المشغلين ذات معنى فقط داخل تدفق المحتوى.
+
+تدفق المحتوى هو كائن تدفق PDF تتكون بياناته من تعليمات تصف العناصر الرسومية التي يجب رسمها على الصفحة. يمكن العثور على مزيد من التفاصيل حول مشغلات PDF في [مواصفات PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
 
 ### تفاصيل التنفيذ
 
-يشرح هذا الموضوع كيفية استخدام المشغلات مع Aspose.PDF.
+يشرح هذا الموضوع كيفية استخدام المشغلين مع Aspose.PDF. يضيف المثال المختار صورة إلى ملف PDF لتوضيح المفهوم. لإضافة صورة في ملف PDF، هناك حاجة إلى مشغلين مختلفين. يستخدم هذا المثال [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28)، [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10)، [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14)، و [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
-هذا الموضوع يشرح كيفية استخدام العوامل مع Aspose.PDF.
-
-- يقوم العامل **GSave** بحفظ الحالة الرسومية الحالية لملف PDF.
-- يُستخدم العامل **ConcatenateMatrix** (مصفوفة الدمج) لتحديد كيفية وضع الصورة على صفحة PDF.
-- يقوم العامل **Do** برسم الصورة على الصفحة.
-- يعيد العامل **GRestore** الحالة الرسومية.
+- يقوم مشغل **GSave** بحفظ الحالة الرسومية الحالية لـ PDF.
+- يستخدم مشغل **ConcatenateMatrix** (دمج المصفوفة) لتحديد كيفية وضع الصورة على صفحة PDF.
+- يقوم مشغل **Do** برسم الصورة على الصفحة.
+- يقوم مشغل **GRestore** باستعادة الحالة الرسومية.
 
 لإضافة صورة إلى ملف PDF:
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وفتح مستند PDF الذي تم إدخاله.
-1. الحصول على الصفحة المعينة التي ستضاف إليها الصورة.
-1. إضافة الصورة إلى مجموعة موارد الصفحة.
-1. استخدام العوامل لوضع الصورة على الصفحة:
-   - أولاً، استخدام عامل GSave لحفظ الحالة الرسومية الحالية.
-   - ثم استخدام عامل ConcatenateMatrix لتحديد مكان وضع الصورة.
-   - استخدام عامل Do لرسم الصورة على الصفحة.
-1. أخيرًا، استخدام عامل GRestore لحفظ الحالة الرسومية المحدثة.
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وافتح مستند PDF المدخل.
+1. احصل على الصفحة المحددة التي ستتم إضافة الصورة إليها.
+1. أضف الصورة إلى مجموعة موارد الصفحة.
+1. استخدم المشغلين لوضع الصورة على الصفحة:
+   - أولاً، استخدم مشغل GSave لحفظ الحالة الرسومية الحالية.
+   - ثم استخدم مشغل ConcatenateMatrix لتحديد مكان وضع الصورة.
+   - استخدم مشغل Do لرسم الصورة على الصفحة.
+1. أخيرًا، استخدم مشغل GRestore لحفظ الحالة الرسومية المحدثة.
 
-هذه القطعة البرمجية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
-```
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-الشفرة التالية تظهر كيفية استخدام عوامل تشغيل PDF.
+تظهر مقتطفات الكود التالية كيفية استخدام مشغلات PDF.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
-
-// فتح الوثيقة
-Document pdfDocument = new Document(dataDir+ "PDFOperators.pdf");
-
-// تحديد الإحداثيات
-int lowerLeftX = 100;
-int lowerLeftY = 100;
-int upperRightX = 200;
-int upperRightY = 200;
-
-// الحصول على الصفحة التي يجب إضافة الصورة إليها
-Page page = pdfDocument.Pages[1];
-// تحميل الصورة في تيار
-FileStream imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open);
-// إضافة الصورة إلى مجموعة الصور في موارد الصفحة
-page.Resources.Images.Add(imageStream);
-// استخدام عامل التشغيل GSave: يحفظ هذا العامل حالة الرسومات الحالية
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-// إنشاء مستطيل وكائنات مصفوفة
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
-// استخدام عامل ConcatenateMatrix (دمج المصفوفة): يحدد كيف يجب وضع الصورة
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
-XImage ximage = page.Resources.Images[page.Resources.Images.Count];
-// استخدام عامل العمل Do: يرسم هذا العامل الصورة
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-// استخدام عامل GRestore: يستعيد هذا العامل حالة الرسومات
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-dataDir = dataDir + "PDFOperators_out.pdf";
-// حفظ الوثيقة المحدثة
-pdfDocument.Save(dataDir);
-```
-## رسم XForm على الصفحة باستخدام العوامل
-
-هذا الموضوع يوضح كيفية استخدام عوامل GSave/GRestore وعامل ContatenateMatrix لوضع xForm وعامل Do لرسم xForm على صفحة.
-
-الكود أدناه يلف محتويات ملف PDF الحالية بزوج العوامل GSave/GRestore. هذه الطريقة تساعد في الحصول على الحالة الرسومية الأولية في نهاية المحتويات الحالية. بدون هذه الطريقة، قد تبقى تحولات غير مرغوب فيها في نهاية سلسلة العوامل الحالية.
-
-```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
-
-
-string imageFile = dataDir+ "aspose-logo.jpg";
-string inFile = dataDir + "DrawXFormOnPage.pdf";
-string outFile = dataDir + "blank-sample2_out.pdf";
-
-using (Document doc = new Document(inFile))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageUsingPDFOperators()
 {
-    OperatorCollection pageContents = doc.Pages[1].Contents;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // العينة توضح
-    // استخدام عوامل GSave/GRestore
-    // استخدام عامل ContatenateMatrix لتحديد موقع xForm
-    // استخدام عامل Do لرسم xForm على الصفحة
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFOperators.pdf"))
+    {
+        // Set coordinates for the image placement
+        int lowerLeftX = 100;
+        int lowerLeftY = 100;
+        int upperRightX = 200;
+        int upperRightY = 200;
 
-    // لف المحتويات الحالية بزوج العوامل GSave/GRestore
-    //        هذا للحصول على الحالة الرسومية الأولية في نهاية المحتويات الحالية
-    //        وإلا قد تبقى بعض التحولات غير المرغوب فيها في نهاية سلسلة العوامل الحالية
-    pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Get the page where the image needs to be added
+        var page = document.Pages[1];
 
-    // إضافة عامل حفظ الحالة الرسومية لتنظيف الحالة الرسومية بشكل صحيح بعد الأوامر الجديدة
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        // Load the image into a file stream
+        using (var imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open))
+        {
+            // Add the image to the page's Resources collection
+            page.Resources.Images.Add(imageStream);
+        }
 
-    #region إنشاء xForm
+        // Save the current graphics state using the GSave operator
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
 
-    // إنشاء xForm
-    XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
-    doc.Pages[1].Resources.Forms.Add(form);
-    form.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    // تحديد عرض الصورة وارتفاعها
-    form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
-    // تحميل الصورة في تيار
-    Stream imageStream = new FileStream(imageFile, FileMode.Open);
-    // إضافة الصورة إلى مجموعة الصور في موارد XForm
-    form.Resources.Images.Add(imageStream);
-    XImage ximage = form.Resources.Images[form.Resources.Images.Count];
-    // استخدام عامل Do: هذا العامل يرسم الصورة
-    form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-    form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Create a rectangle and matrix for positioning the image
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0,
+            0, rectangle.URY - rectangle.LLY,
+            rectangle.LLX, rectangle.LLY
+        });
 
-    #endregion
+        // Define how the image must be placed using the ConcatenateMatrix operator
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-    // وضع النموذج على الإحداثيات x=100 y=500
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
-    // رسم النموذج باستخدام عامل Do
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Get the image from the Resources collection
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-    // وضع النموذج على الإحداثيات x=100 y=300
-    pageContents Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
-    // رسم النموذج باستخدام عامل Do
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Draw the image using the Do operator
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
 
-    // استعادة الحالة الرسومية بعد GSave باستخدام GRestore
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
-    doc.Save(outFile);
+        // Restore the graphics state using the GRestore operator
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save PDF document
+        document.Save(dataDir + "PDFOperators_out.pdf");
+    }
 }
 ```
-## إزالة الكائنات الرسومية باستخدام فئات المشغل
 
-توفر فئات المشغل ميزات رائعة للتلاعب بملفات PDF. عندما يحتوي ملف PDF على رسومات لا يمكن إزالتها باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) للفئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)، يمكن استخدام فئات المشغل لإزالتها بدلاً من ذلك.
+## رسم XForm على الصفحة باستخدام المشغلين
 
-يوضح الجزء التالي من الشفرة كيفية إزالة الرسومات. يرجى ملاحظة أنه إذا كان ملف PDF يحتوي على تسميات نصية للرسومات، فقد تظل مستمرة في ملف PDF، باستخدام هذه الطريقة. لذا ابحث عن مشغلات الرسومات لطريقة بديلة لحذف مثل هذه الصور.
+يظهر هذا الموضوع كيفية استخدام مشغلات GSave/GRestore، ومشغل ConcatenateMatrix لتحديد موقع xForm ومشغل Do لرسم xForm على الصفحة.
+
+تغلف الشيفرة أدناه محتويات ملف PDF الموجودة باستخدام زوج مشغلات GSave/GRestore. تساعد هذه الطريقة في الحصول على الحالة الرسومية الأولية في نهاية المحتويات الموجودة. بدون هذه الطريقة، قد تبقى تحويلات غير مرغوب فيها في نهاية سلسلة المشغلين الموجودة.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DrawXFormOnPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document doc = new Document(dataDir + "RemoveGraphicsObjects.pdf");
-Page page = doc.Pages[2];
-OperatorCollection oc = page.Contents;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DrawXFormOnPage.pdf"))
+    {
+        var pageContents = document.Pages[1].Contents;
 
-// المشغلات المستخدمة في طلاء المسار
-Operator[] operators = new Operator[] {
-        new Aspose.Pdf.Operators.Stroke(),
-        new Aspose.Pdf.Operators.ClosePathStroke(),
-        new Aspose.Pdf.Operators.Fill()
-};
+        // Wrap existing contents with GSave/GRestore operators to preserve graphics state
+        pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
-oc.Delete(operators);
-doc.Save(dataDir + "No_Graphics_out.pdf");
+        // Add GSave operator to start new graphics state
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Create an XForm
+        var form = Aspose.Pdf.XForm.CreateNewForm(document.Pages[1], document);
+        document.Pages[1].Resources.Forms.Add(form);
+
+        form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+        // Define image width and height
+        form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
+
+        // Load image into stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the XForm's resources
+            form.Resources.Images.Add(imageStream);
+        }
+
+        var ximage = form.Resources.Images[form.Resources.Images.Count];
+        // Draw the image on the XForm
+        form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+        form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Place and draw the XForm at two different coordinates
+
+        // Draw the XForm at (100, 500)
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
+        pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Draw the XForm at (100, 300)
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
+        pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Restore graphics state
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save PDF document
+        document.Save(dataDir + "DrawXFormOnPage_out.pdf");
+    }
+}
+```
+
+## إزالة كائنات الرسومات باستخدام فئات المشغلين
+
+توفر فئات المشغلين ميزات رائعة لمعالجة PDF. عندما يحتوي ملف PDF على رسومات لا يمكن إزالتها باستخدام طريقة [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) لفئة [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor)، يمكن استخدام فئات المشغلين لإزالتها بدلاً من ذلك.
+
+تظهر مقتطفات الكود التالية كيفية إزالة الرسومات. يرجى ملاحظة أنه إذا كان ملف PDF يحتوي على تسميات نصية للرسومات، فقد تستمر في ملف PDF باستخدام هذه الطريقة. لذلك ابحث عن مشغلات الرسومات للحصول على طريقة بديلة لحذف مثل هذه الصور.
+
+```csharp
+  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+  private static void RemoveGraphicsObjects()
+  {
+      // The path to the documents directory
+      var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+      // Open PDF document
+      using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphicsObjects.pdf"))
+      {
+          // Get the specific page (page 2 in this case)
+          var page = document.Pages[2];
+
+          // Get the operator collection from the page contents
+          var oc = page.Contents;
+
+          // Define the path-painting operators to be removed
+          var operators = new Aspose.Pdf.Operator[]
+          {
+              new Aspose.Pdf.Operators.Stroke(),
+              new Aspose.Pdf.Operators.ClosePathStroke(),
+              new Aspose.Pdf.Operators.Fill()
+          };
+
+          // Delete the specified operators from the page contents
+          oc.Delete(operators);
+
+          // Save PDF document
+          document.Save(dataDir + "NoGraphics_out.pdf");
+      }
+  }
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -269,21 +301,21 @@ doc.Save(dataDir + "No_Graphics_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -294,7 +326,7 @@ doc.Save(dataDir + "No_Graphics_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -306,5 +338,3 @@ doc.Save(dataDir + "No_Graphics_out.pdf");
     }
 }
 </script>
-```
-
