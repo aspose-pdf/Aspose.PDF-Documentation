@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF ファイル情報の設定](/pdf/net/set-pdf-file-information/)
-- [PDF ファイル情報の取得](/pdf/net/get-pdf-file-information/)
+- [PDF ファイル情報の設定](/pdf/ja/net/set-pdf-file-information/)
+- [PDF ファイル情報の取得](/pdf/ja/net/get-pdf-file-information/)

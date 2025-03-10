@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## 回転プロパティを使用してPDF内のテキストを回転させる
 

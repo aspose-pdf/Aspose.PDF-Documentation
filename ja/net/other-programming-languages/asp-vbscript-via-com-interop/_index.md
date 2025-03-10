@@ -84,7 +84,7 @@ url: /ja/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-これは、COM Interopを介して[Aspose.PDF for .NET](/pdf/net/)とVBScriptを使用してサンプルテキストを含むPDFファイルを作成する方法を示すシンプルなASPアプリケーションです。
+これは、COM Interopを介して[Aspose.PDF for .NET](/pdf/ja/net/)とVBScriptを使用してサンプルテキストを含むPDFファイルを作成する方法を示すシンプルなASPアプリケーションです。
 
 {{% /alert %}}
 

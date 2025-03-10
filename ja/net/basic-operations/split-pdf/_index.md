@@ -90,7 +90,7 @@ sitemap:
 1. 各イテレーションで、新しいDocumentオブジェクトを作成し、空のドキュメントに個別の[Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)オブジェクトを追加します。
 1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4)メソッドを使用して新しいPDFを保存します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## PDFを複数のファイルまたは別々のPDFに分割する
 

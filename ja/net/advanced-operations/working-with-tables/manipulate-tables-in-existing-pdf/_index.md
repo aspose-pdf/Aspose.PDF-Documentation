@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NETがサポートする最初の機能の1つは、テーブルを操作する能力であり、ゼロから生成されたPDFファイルや既存のPDFファイルにテーブルを追加するための優れたサポートを提供します。また、データベースの内容に基づいて動的なテーブルを作成するために、テーブルをデータベース（DOM）と統合する機能も得られます。この新しいリリースでは、PDFドキュメントのページに既に存在する単純なテーブルを検索および解析する新機能を実装しました。**Aspose.PDF.Text.TableAbsorber**という新しいクラスがこれらの機能を提供します。TableAbsorberの使用は、既存のTextFragmentAbsorberクラスと非常に似ています。以下のコードスニペットは、特定のテーブルセルの内容を更新する手順を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

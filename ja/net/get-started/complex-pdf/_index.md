@@ -78,8 +78,8 @@ sitemap:
 }
 </script>
 
-[こんにちは、世界](/pdf/net/hello-world-example/)の例では、C#とAspose.PDFを使用してPDFドキュメントを作成するための簡単な手順を示しました。この記事では、C#とAspose.PDF for .NETを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
-私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを構築するために、DOMベースのアプローチを使用します。詳細については、[DOM APIの基本](/pdf/net/basics-of-dom-api/)のセクションをお読みください。
+[こんにちは、世界](/pdf/ja/net/hello-world-example/)の例では、C#とAspose.PDFを使用してPDFドキュメントを作成するための簡単な手順を示しました。この記事では、C#とAspose.PDF for .NETを使用して、より複雑なドキュメントを作成する方法を見ていきます。例として、旅客フェリーサービスを運営する架空の会社のドキュメントを取り上げます。
+私たちのドキュメントには、画像、2つのテキストフラグメント（ヘッダーと段落）、およびテーブルが含まれます。このようなドキュメントを構築するために、DOMベースのアプローチを使用します。詳細については、[DOM APIの基本](/pdf/ja/net/basics-of-dom-api/)のセクションをお読みください。
 
 ゼロからドキュメントを作成する場合、特定の手順に従う必要があります：
 
@@ -94,7 +94,7 @@ sitemap:
 1. （テーブル）をページの[Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)に追加します。
 1. ドキュメントを「Complex.pdf」として保存します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

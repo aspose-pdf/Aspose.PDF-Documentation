@@ -87,7 +87,7 @@ PDF文書からテキストを抽出することは一般的な作業です。�
 
 **TextFragmentAbsorber**クラスを使用すると、見つかったテキストで何でもできるようになります。つまり、全体のテキストを単純に使用できます。次のコードスニペットを試してください：
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 または、**TextFragments**を個別に使用して、座標やサイズでソートするなど、さまざまな操作を行うことができます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

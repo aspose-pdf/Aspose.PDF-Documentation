@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間は、[Aspose.PDF for .NET](/pdf/net/)でAcroFormsを非常によくサポートしています。また、FDF、XFDF、XMLなどの異なるファイル形式へのフォームデータのインポートとエクスポートもサポートしています。しかし、時には開発者がある形式を別の形式に変換する必要があります。この記事では、FDF形式をXMLに変換する機能について見ていきます。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間は、[Aspose.PDF for .NET](/pdf/ja/net/)でAcroFormsを非常によくサポートしています。また、FDF、XFDF、XMLなどの異なるファイル形式へのフォームデータのインポートとエクスポートもサポートしています。しかし、時には開発者がある形式を別の形式に変換する必要があります。この記事では、FDF形式をXMLに変換する機能について見ていきます。
 
 {{% /alert %}}
 

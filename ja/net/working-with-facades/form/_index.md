@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [フォームフィールド名の特定](/pdf/net/identifying-form-fields-names/)
-- [テキストボックスフィールド内のテキストを整列させる](/pdf/net/justify-text-in-a-textbox-field/)
-- [XML、FDF、およびXFDFの違い](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [ボタンオプションの値を取得](/pdf/net/get-button-option-value/)
-- [データのインポートとエクスポート](/pdf/net/import-and-export-data/)
+- [フォームフィールド名の特定](/pdf/ja/net/identifying-form-fields-names/)
+- [テキストボックスフィールド内のテキストを整列させる](/pdf/ja/net/justify-text-in-a-textbox-field/)
+- [XML、FDF、およびXFDFの違い](/pdf/ja/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [ボタンオプションの値を取得](/pdf/ja/net/get-button-option-value/)
+- [データのインポートとエクスポート](/pdf/ja/net/import-and-export-data/)

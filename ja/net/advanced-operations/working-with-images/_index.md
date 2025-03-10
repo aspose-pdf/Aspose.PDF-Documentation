@@ -88,18 +88,18 @@ C#ライブラリを使用することは、レポートにチャートを挿入
 
 以下の操作が可能です：
 
-- [既存のPDFファイルに画像を追加](/pdf/net/add-image-to-existing-pdf-file/) - PDFドキュメントに画像と単一の画像の参照を追加し、その後品質を制御します。
-- [PDFファイルから画像を削除](/pdf/net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認してください。
-- [PDFファイルから画像を抽出](/pdf/net/extract-images-from-pdf-file/) - 画像コレクションを使用してPDFファイルから画像を抽出します。
-- [埋め込まれた画像の解像度と寸法を取得](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - 解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータークラスを使用します。
-- [画像の配置を操作](/pdf/net/working-with-image-placement/) - PDFドキュメント内の画像の解像度と位置を取得できます。
-- [PDFドキュメントから画像を検索して取得](/pdf/net/search-and-get-images-from-pdf-document/) - C#を使用して、個々のページから画像を取得し、すべてのページの画像を検索できます。
-- [既存のPDFファイル内の画像を置換](/pdf/net/replace-image-in-existing-pdf-file/) - PDFファイル内の画像を置換する方法を示すコードスニペットを確認してください。
-- [画像サイズを設定](/pdf/net/set-image-size/) - C#ライブラリを使用して画像のサイズを設定できます。
-- [デフォルトフォント名を設定](/pdf/net/set-default-font-name/) - 変換プロセスのためのデフォルトフォント名を設定します。
-- [PDFドキュメントからサムネイル画像を生成](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、その後Aspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示します。
-- DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療グラフィック標準の画像をサポートしています。Aspose.PDF for .NETは、DICOMおよびSVG画像を変換することができます。詳細は[Convert DICOM to PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf)セクションを確認してください。
-- [ベクターグラフィックスの操作](/pdf/net/working-with-vector-graphics) - このセクションでは、C#を使用したGraphicsAbsorberツールの操作機能について説明します。
+- [既存のPDFファイルに画像を追加](/pdf/ja/net/add-image-to-existing-pdf-file/) - PDFドキュメントに画像と単一の画像の参照を追加し、その後品質を制御します。
+- [PDFファイルから画像を削除](/pdf/ja/net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認してください。
+- [PDFファイルから画像を抽出](/pdf/ja/net/extract-images-from-pdf-file/) - 画像コレクションを使用してPDFファイルから画像を抽出します。
+- [埋め込まれた画像の解像度と寸法を取得](/pdf/ja/net/get-resolution-and-dimensions-of-embedded-images/) - 解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータークラスを使用します。
+- [画像の配置を操作](/pdf/ja/net/working-with-image-placement/) - PDFドキュメント内の画像の解像度と位置を取得できます。
+- [PDFドキュメントから画像を検索して取得](/pdf/ja/net/search-and-get-images-from-pdf-document/) - C#を使用して、個々のページから画像を取得し、すべてのページの画像を検索できます。
+- [既存のPDFファイル内の画像を置換](/pdf/ja/net/replace-image-in-existing-pdf-file/) - PDFファイル内の画像を置換する方法を示すコードスニペットを確認してください。
+- [画像サイズを設定](/pdf/ja/net/set-image-size/) - C#ライブラリを使用して画像のサイズを設定できます。
+- [デフォルトフォント名を設定](/pdf/ja/net/set-default-font-name/) - 変換プロセスのためのデフォルトフォント名を設定します。
+- [PDFドキュメントからサムネイル画像を生成](/pdf/ja/net/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、その後Aspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示します。
+- DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療グラフィック標準の画像をサポートしています。Aspose.PDF for .NETは、DICOMおよびSVG画像を変換することができます。詳細は[Convert DICOM to PDF](/pdf/ja/net/convert-images-format-to-pdf/#convert-dicom-to-pdf)セクションを確認してください。
+- [ベクターグラフィックスの操作](/pdf/ja/net/working-with-vector-graphics) - このセクションでは、C#を使用したGraphicsAbsorberツールの操作機能について説明します。
 
 <script type="application/ld+json">
 {

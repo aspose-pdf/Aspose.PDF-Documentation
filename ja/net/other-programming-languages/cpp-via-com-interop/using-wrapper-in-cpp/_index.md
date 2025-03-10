@@ -76,7 +76,7 @@ url: /ja/net/using-wrapper-in-cpp/
 
 {{% alert color="primary" %}}
 
-COM InteropでAspose.PDF for .NETを登録してください。詳細は、[COM Interopを介してAspose.pdf for .NETを使用する](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)という記事を確認してください。
+COM InteropでAspose.PDF for .NETを登録してください。詳細は、[COM Interopを介してAspose.pdf for .NETを使用する](/pdf/ja/net/use-aspose-pdf-for-net-via-com-interop/)という記事を確認してください。
 
 {{% /alert %}}
 

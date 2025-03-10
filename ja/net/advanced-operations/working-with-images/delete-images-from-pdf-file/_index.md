@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 PDFファイルから画像を削除するには：
 

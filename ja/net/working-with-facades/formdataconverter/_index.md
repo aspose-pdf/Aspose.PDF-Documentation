@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [FDF を XML 形式に変換する](/pdf/net/converting-an-fdf-to-xml-format/)
-- [XML を FDF 形式に変換する](/pdf/net/converting-an-xml-to-fdf-format/)
+- [FDF を XML 形式に変換する](/pdf/ja/net/converting-an-fdf-to-xml-format/)
+- [XML を FDF 形式に変換する](/pdf/ja/net/converting-an-xml-to-fdf-format/)

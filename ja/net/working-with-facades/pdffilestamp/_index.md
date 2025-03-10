@@ -9,6 +9,6 @@ description: このセクションでは、PDFを操作する際にAspose.PDF Fa
 lastmod: "2021-06-05"
 draft: false
 ---
-- [PDFページスタンプを追加](/pdf/net/add-pdf-page-stamp/)
-- [テキストと画像のスタンプを追加](/pdf/net/add-text-and-image-stamp/)
-- [ヘッダーとフッターを管理](/pdf/net/manage-header-and-footer/)
+- [PDFページスタンプを追加](/pdf/ja/net/add-pdf-page-stamp/)
+- [テキストと画像のスタンプを追加](/pdf/ja/net/add-text-and-image-stamp/)
+- [ヘッダーとフッターを管理](/pdf/ja/net/manage-header-and-footer/)

@@ -75,7 +75,7 @@ lastmod: "2022-02-17"
 
 Aspose.PDF for .NETを使用すると、.NETアプリケーション内のPDFファイルのページのプロパティを読み取り、設定できます。このセクションでは、PDFファイル内のページ数を取得し、色などのPDFページプロパティに関する情報を取得し、ページプロパティを設定する方法を示します。示されている例はC#ですが、VB.NETなどの他の.NET言語を使用して同じことを達成できます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ## PDFファイルのページ数を取得
 
@@ -188,7 +188,7 @@ private static void AccessingPageProperties()
 
 ## PDFファイルの特定のページを取得
 
-Aspose.PDFを使用すると、[PDFを個々のページに分割](/pdf/net/split-pdf-document/)し、それらをPDFファイルとして保存できます。PDFファイル内の指定されたページを取得し、新しいPDFとして保存することは非常に似た操作です：ソースドキュメントを開き、ページにアクセスし、新しいドキュメントを作成し、そのページを追加します。
+Aspose.PDFを使用すると、[PDFを個々のページに分割](/pdf/ja/net/split-pdf-document/)し、それらをPDFファイルとして保存できます。PDFファイル内の指定されたページを取得し、新しいPDFとして保存することは非常に似た操作です：ソースドキュメントを開き、ページにアクセスし、新しいドキュメントを作成し、そのページを追加します。
 
 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)オブジェクトの[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)は、PDFファイル内のページを保持します。このコレクションから特定のページを取得するには：
 

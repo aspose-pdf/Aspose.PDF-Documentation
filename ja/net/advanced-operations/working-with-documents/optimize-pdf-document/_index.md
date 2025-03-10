@@ -104,7 +104,7 @@ PDFドキュメントには、時折追加データが含まれることがあ�
 1. [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize)メソッドを使用します。
 1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save)メソッドを使用して最適化されたドキュメントを保存します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 以下のコードスニペットは、ウェブ用にPDFドキュメントを最適化する方法を示しています。
 

@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [指定されたタイプによるすべての注釈の削除 (ファサード)](/pdf/net/delete-annotations/)
-- [com.aspose.pdf.facades を使用して XFDF 形式に注釈をインポートおよびエクスポートする](/pdf/net/import-export-annotations/)
-- [注釈の抽出](/pdf/net/extract-annotation/)
-- [注釈のフラット化](/pdf/net/flatten-annotation/)
-- [注釈の修正](/pdf/net/modify-annotations/)
+- [指定されたタイプによるすべての注釈の削除 (ファサード)](/pdf/ja/net/delete-annotations/)
+- [com.aspose.pdf.facades を使用して XFDF 形式に注釈をインポートおよびエクスポートする](/pdf/ja/net/import-export-annotations/)
+- [注釈の抽出](/pdf/ja/net/extract-annotation/)
+- [注釈のフラット化](/pdf/ja/net/flatten-annotation/)
+- [注釈の修正](/pdf/ja/net/modify-annotations/)

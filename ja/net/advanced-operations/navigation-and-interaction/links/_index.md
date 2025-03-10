@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [リンクを作成](/pdf/net/create-links/) - C#を使用してPDFファイルにリンクを作成する簡単な方法を学びます。
-- [リンクを更新](/pdf/net/update-links/) - PDFにターゲットを設定し、リンクの宛先をウェブアドレスに設定し、リンクのターゲットを別のPDFファイルに設定し、リンクのテキストカラーを更新します。
-- [リンクを抽出](/pdf/net/extract-links) - AnnotationSelectorクラスを使用してPDFファイルからリンクを抽出します。
+- [リンクを作成](/pdf/ja/net/create-links/) - C#を使用してPDFファイルにリンクを作成する簡単な方法を学びます。
+- [リンクを更新](/pdf/ja/net/update-links/) - PDFにターゲットを設定し、リンクの宛先をウェブアドレスに設定し、リンクのターゲットを別のPDFファイルに設定し、リンクのテキストカラーを更新します。
+- [リンクを抽出](/pdf/ja/net/extract-links) - AnnotationSelectorクラスを使用してPDFファイルからリンクを抽出します。
 
 <script type="application/ld+json">
 {

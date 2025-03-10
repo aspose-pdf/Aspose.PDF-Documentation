@@ -14,7 +14,7 @@ sitemap:
 ---
 ## このセクションの記事
 
-- [Aspose.PDF エディタ](/pdf/net/aspose-pdf-editor/)
-- [WebForms DataGridViewをPDFにレンダリング](/pdf/net/render-webforms-datagridview-to-pdf/)
-- [データソースからテーブルをレンダリング](/pdf/net/render-table-from-the-data-source/)
-- [Entity Frameworkモデルをデータソースとして使用してテーブルをレンダリング](/pdf/net/render-table-using-entity-framework-model-as-data-source/)
+- [Aspose.PDF エディタ](/pdf/ja/net/aspose-pdf-editor/)
+- [WebForms DataGridViewをPDFにレンダリング](/pdf/ja/net/render-webforms-datagridview-to-pdf/)
+- [データソースからテーブルをレンダリング](/pdf/ja/net/render-table-from-the-data-source/)
+- [Entity Frameworkモデルをデータソースとして使用してテーブルをレンダリング](/pdf/ja/net/render-table-using-entity-framework-model-as-data-source/)

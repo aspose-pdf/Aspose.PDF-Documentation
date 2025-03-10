@@ -84,9 +84,9 @@ PDFファイルのスタンプは、他の人が使用できないようにPDF�
 
 C#を使用してスタンプを追加する方法を学ぶには、以下のセクションを確認してください：
 
-- [PDFページに画像スタンプを追加](/pdf/net/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
-- [PDFファイルにテキストスタンプを追加](/pdf/net/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFファイルにスタンプとしてストロークテキストを填充します。
-- [PDFファイルにページスタンプを追加](/pdf/net/page-stamps-in-the-pdf-file/) - PdfPageStampクラスを使用してPDFドキュメントにページスタンプを追加します。
+- [PDFページに画像スタンプを追加](/pdf/ja/net/image-stamps-in-pdf-page/) - 画像スタンプを追加し、画像の品質を制御し、PDFファイルの背景として画像スタンプを使用します。
+- [PDFファイルにテキストスタンプを追加](/pdf/ja/net/text-stamps-in-the-pdf-file/) - テキストスタンプを追加し、TextStampオブジェクトの配置を定義し、PDFファイルにスタンプとしてストロークテキストを填充します。
+- [PDFファイルにページスタンプを追加](/pdf/ja/net/page-stamps-in-the-pdf-file/) - PdfPageStampクラスを使用してPDFドキュメントにページスタンプを追加します。
 
 
 <script type="application/ld+json">

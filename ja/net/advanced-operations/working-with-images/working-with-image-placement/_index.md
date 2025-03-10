@@ -81,7 +81,7 @@ Aspose.PDF for .NET 7.0.0のリリースに伴い、[ImagePlacement](https://ref
 - ImagePlacementAbsorberは、ImagePlacementオブジェクトのコレクションとして画像使用検索を実行します。
 - ImagePlacementは、実際の画像配置値を返すメンバーResolutionとRectangleを提供します。
 
-次のコードスニペットは、[Aspose.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

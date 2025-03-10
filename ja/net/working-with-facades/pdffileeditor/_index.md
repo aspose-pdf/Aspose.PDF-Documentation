@@ -90,26 +90,26 @@ PdfFileEditor クラスには、個々のページを操作するのに役立つ
 
 このセクションでは、このクラスの機能を探り、そのメソッドの目的を説明します。
 
-- [PDF ドキュメントを連結する](/pdf/net/concatenate-pdf-documents/)
-- [PDF ページを抽出する](/pdf/net/extract-pdf-pages/)
-- [PDF ページを挿入する](/pdf/net/insert-pdf-pages/)
-- [PDF ページを削除する](/pdf/net/delete-pdf-pages/)
+- [PDF ドキュメントを連結する](/pdf/ja/net/concatenate-pdf-documents/)
+- [PDF ページを抽出する](/pdf/ja/net/extract-pdf-pages/)
+- [PDF ページを挿入する](/pdf/ja/net/insert-pdf-pages/)
+- [PDF ページを削除する](/pdf/ja/net/delete-pdf-pages/)
 
 ## ページブレークの使用
 
 ページブレークは、ドキュメントの再フローを可能にする特別な機能です。
 
-- [既存の PDF でのページブレーク](/pdf/net/page-break-in-existing-pdf/)
+- [既存の PDF でのページブレーク](/pdf/ja/net/page-break-in-existing-pdf/)
 
 ## PDF インポジション
 
 インポジションは、印刷前にページを正しく配置するプロセスです。`PdfFileEditor` は、この目的のために 2 つのメソッドを提供します。すなわち、`MakeBooklet` と `MakeNUp` です。MakeBooklet メソッドは、印刷後に折りたたんだり綴じたりしやすいようにページを配置するのに役立ちますが、MakeNUp メソッドは、PDF ファイルの 1 ページに複数のページを印刷することを可能にします。
 
-- [PDF のブックレットを作成する](/pdf/net/make-booklet-of-pdf/)
-- [PDF ファイルの NUp を作成する](/pdf/net/make-nup-of-pdf-files/)
+- [PDF のブックレットを作成する](/pdf/ja/net/make-booklet-of-pdf/)
+- [PDF ファイルの NUp を作成する](/pdf/ja/net/make-nup-of-pdf-files/)
 
 ## 分割
 
 分割機能を使用すると、既存の PDF ファイルを異なる部分に分割できます。PDF ファイルの前面部分または背面部分を分割できます。PdfFileEditor は、分割目的のためにさまざまなメソッドを提供しているため、ファイルを個々のページまたは複数ページのセットに分割することもできます。
 
-- [PDF ページを分割する](/pdf/net/split-pdf-pages/)
+- [PDF ページを分割する](/pdf/ja/net/split-pdf-pages/)

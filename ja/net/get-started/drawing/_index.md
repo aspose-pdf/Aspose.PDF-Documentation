@@ -138,7 +138,7 @@ PDFドキュメントの印刷にはSystem.Drawing.Commonが使用されるた�
 
 ## ライセンス
 
-Aspose.PDF.Drawingには追加のライセンスはなく、Aspose.PDFと同じライセンスを使用します。[Aspose PDFライセンス](/pdf/net/licensing/)セクションを確認してください。
+Aspose.PDF.Drawingには追加のライセンスはなく、Aspose.PDFと同じライセンスを使用します。[Aspose PDFライセンス](/pdf/ja/net/licensing/)セクションを確認してください。
 
 ## インストール
 
@@ -150,7 +150,7 @@ Aspose.PDF.Drawingで利用可能なクラスについては、[APIリファレ�
 
 さらに詳しく学ぶ：
 
-- [サポートされているファイル形式](/pdf/net/supported-file-formats/)
-- [システム要件](/pdf/net/system-requirements/)
-- [ライセンス](/pdf/net/licensing/)
-- [技術サポート](/pdf/net/technical-support/)
+- [サポートされているファイル形式](/pdf/ja/net/supported-file-formats/)
+- [システム要件](/pdf/ja/net/system-requirements/)
+- [ライセンス](/pdf/ja/net/licensing/)
+- [技術サポート](/pdf/ja/net/technical-support/)

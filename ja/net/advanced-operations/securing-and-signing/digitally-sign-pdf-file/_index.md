@@ -85,7 +85,7 @@ Aspose.PDF for .NETは、SignatureFieldクラスを使用してPDFファイル�
 
 言い換えれば、文書はその完全性を保持していると見なされ、受取人は文書を信頼できるままでいることができます。詳細については、PDFの認証と署名を参照してください。一般的に、文書の認証は.NET実行可能ファイルのコード署名に例えることができます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ## Aspose.PDF for .NETの署名機能
 

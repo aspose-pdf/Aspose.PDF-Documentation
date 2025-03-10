@@ -84,11 +84,11 @@ sitemap:
 
 次のことが可能です：
 
-- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/net/add-table-in-existing-pdf-document/) - 列や行を結合し、境界線、余白、パディングを考慮してPDFファイルにテーブルを作成します。
-- [既存のPDFドキュメントからテーブルを抽出する](/pdf/net/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出するか、テーブルの境界を画像として抽出できます。
-- [データソースとテーブルを統合する](/pdf/net/integrate-table/) - データベースとテーブルを統合し、.NETライブラリを使用してEntity Frameworkソースとテーブルを統合します。
-- [既存のPDF内のテーブルを操作する](/pdf/net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
-- [既存のPDFからテーブルを削除する](/pdf/net/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
+- [既存のPDFドキュメントにテーブルを作成または追加する](/pdf/ja/net/add-table-in-existing-pdf-document/) - 列や行を結合し、境界線、余白、パディングを考慮してPDFファイルにテーブルを作成します。
+- [既存のPDFドキュメントからテーブルを抽出する](/pdf/ja/net/extract-table-from-existing-pdf-document/) - PDFファイルからテーブルを抽出するか、テーブルの境界を画像として抽出できます。
+- [データソースとテーブルを統合する](/pdf/ja/net/integrate-table/) - データベースとテーブルを統合し、.NETライブラリを使用してEntity Frameworkソースとテーブルを統合します。
+- [既存のPDF内のテーブルを操作する](/pdf/ja/net/manipulate-tables-in-existing-pdf/) - TableAbsorberを使用してPDF内のテーブルを操作します。
+- [既存のPDFからテーブルを削除する](/pdf/ja/net/remove-tables-from-existing-pdf/) - PDFドキュメントからテーブルまたは複数のテーブルを削除します。
 
 <script type="application/ld+json">
 {

@@ -97,7 +97,7 @@ _形式_: **Word**
 - [C# PDFをWordに変換](#csharp-pdf-to-docx)
 - [C# PDFをWordに変換する方法](#csharp-pdf-to-doc)
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## PDFからDOCおよびDOCXへの変換
 
@@ -176,7 +176,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NETは、オンラインの無料アプリケーション["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)を提供しており、機能と品質を調査することができます。
 
-[![PDFをDOCに変換](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![PDFをDOCに変換](/pdf/ja/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## PDFをDOCX（Microsoft Word 2007-2024）ファイルに変換
@@ -240,7 +240,7 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NETは、オンラインの無料アプリケーション["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)を提供しており、機能と品質を調査することができます。
 
-[![Aspose.PDF PDFからWordへの変換無料アプリ](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF PDFからWordへの変換無料アプリ](/pdf/ja/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

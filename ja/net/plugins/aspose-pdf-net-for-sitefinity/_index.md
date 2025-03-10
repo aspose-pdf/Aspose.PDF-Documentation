@@ -13,4 +13,4 @@ sitemap:
 ---
 このセクションには以下のトピックがあります：
 
-- [Sitefinity PDF Import](/pdf/net/sitefinity-pdf-import/)
+- [Sitefinity PDF Import](/pdf/ja/net/sitefinity-pdf-import/)

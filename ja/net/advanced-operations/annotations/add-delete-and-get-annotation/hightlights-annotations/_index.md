@@ -89,7 +89,7 @@ PDFドキュメント内のテキストマークアップ注釈のプロパテ�
 
 次の機能は、underlineSettingsプロパティを使用して下線注釈の設定を取得または設定する能力です。underlineSettingsプロパティは、下線注釈の色、透明度、著者、件名、modifiedDate、およびisLockedプロパティを設定するために使用されます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## テキストマークアップ注釈を追加
 

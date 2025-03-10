@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 Imagesコレクションの[Replace](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index)メソッドを使用すると、既存のPDFファイル内の画像を置き換えることができます。
 

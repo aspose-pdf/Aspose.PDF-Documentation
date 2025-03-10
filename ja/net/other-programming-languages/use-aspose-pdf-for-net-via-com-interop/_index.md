@@ -75,7 +75,7 @@ description: COM Interopを介してAspose.PDF for .NETを使用して、非.NET
 
 {{% alert color="primary" %}}
 
-このトピックの情報は、次のプログラミング言語のいずれかでCOM Interopを介して[Aspose.PDF for .NET](/pdf/net/)を使用したいシナリオに適用されます：
+このトピックの情報は、次のプログラミング言語のいずれかでCOM Interopを介して[Aspose.PDF for .NET](/pdf/ja/net/)を使用したいシナリオに適用されます：
 
 - ASP
 - Delphi
@@ -94,7 +94,7 @@ description: COM Interopを介してAspose.PDF for .NETを使用して、非.NET
 
 Aspose.PDF for .NETは.NETフレームワークの制御下で実行され、これをマネージドコードと呼びます。上記のすべての言語で書かれたコードは.NETフレームワークの外で実行され、これをアンマネージドコードと呼びます。アンマネージドコードとAspose.PDFの間の相互作用は、COM Interopと呼ばれる.NETの機能を介して行われます。
 
-Aspose.PDFオブジェクトは.NETオブジェクトですが、COM Interopを介して使用されると、プログラミング言語内でCOMオブジェクトとして表示されます。したがって、[Aspose.PDF for .NET](/pdf/net/)を使用し始める前に、プログラミング言語でCOMオブジェクトを作成および使用する方法を知っておくことが最善です。
+Aspose.PDFオブジェクトは.NETオブジェクトですが、COM Interopを介して使用されると、プログラミング言語内でCOMオブジェクトとして表示されます。したがって、[Aspose.PDF for .NET](/pdf/ja/net/)を使用し始める前に、プログラミング言語でCOMオブジェクトを作成および使用する方法を知っておくことが最善です。
 
 {{% alert color="primary" %}}
 

@@ -83,10 +83,10 @@ sitemap:
 添付ファイルとは、親文書に添付された追加のファイルであり、pdf、word、画像、またはその他のファイルタイプなど、さまざまなファイルタイプが含まれます。
 PDFに添付ファイルを追加する方法、添付ファイルの情報を取得し、ファイルに保存する方法、C#を使用してプログラム的にPDFから添付ファイルを削除する方法を学びます。
 
-- [PDF文書に添付ファイルを追加する](/pdf/net/add-attachment-to-pdf-document/)
-- [添付ファイルを抽出して保存する](/pdf/net/extract-and-save-an-attachment/)
-- [既存のPDFから添付ファイルを削除する](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [ポートフォリオ](/pdf/net/portfolio/)
+- [PDF文書に添付ファイルを追加する](/pdf/ja/net/add-attachment-to-pdf-document/)
+- [添付ファイルを抽出して保存する](/pdf/ja/net/extract-and-save-an-attachment/)
+- [既存のPDFから添付ファイルを削除する](/pdf/ja/net/removing-attachment-from-an-existing-pdf/)
+- [ポートフォリオ](/pdf/ja/net/portfolio/)
 
 <script type="application/ld+json">
 {

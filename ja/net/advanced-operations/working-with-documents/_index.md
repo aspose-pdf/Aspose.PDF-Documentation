@@ -89,15 +89,15 @@ PDFは、現在国際標準化機構（ISO）によって維持されている�
 
 以下のことが可能です：
 
-- [PDF文書のフォーマット](/pdf/net/formatting-pdf-document/) - 文書を作成し、文書プロパティを取得および設定し、フォントを埋め込み、PDFファイルに関するその他の操作を行います。
-- [PDF文書の操作](/pdf/net/manipulate-pdf-document/) - PDF A標準に対してPDF文書を検証し、目次を操作し、PDFの有効期限を設定するなどの作業を行います。
-- [PDFの最適化](/pdf/net/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、成功した文書最適化のためにすべての画像を圧縮します。
-- [PDFのマージ](/pdf/net/merge-pdf-documents/) - 複数のPDFファイルをC#を使用して単一のPDF文書にマージします。
-- [PDFの分割](/pdf/net/split-document/) - PDFページを.NETアプリケーション内の個別のPDFファイルに分割します。
-- [フォルダー内のPDFファイルの連結](/pdf/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - PdfFileEditorクラスを使用して特定のフォルダー内のすべてのPDFファイルを連結します。
-- [MemoryStreamsを使用した複数のPDFファイルの連結](/pdf/net/concatenate-pdf-documents/) - C#を使用してMemoryStreamsを使用して複数のPDFファイルを連結する方法を学びます。
-- [クラッシュレポートの作成](/pdf/net/generate-crash-reports/) - C#を使用してクラッシュレポートを生成します。
-- [見出しの操作](/pdf/net/working-with-headings/) - C#を使用してPDF文書の見出しに番号を付けることができます。
+- [PDF文書のフォーマット](/pdf/ja/net/formatting-pdf-document/) - 文書を作成し、文書プロパティを取得および設定し、フォントを埋め込み、PDFファイルに関するその他の操作を行います。
+- [PDF文書の操作](/pdf/ja/net/manipulate-pdf-document/) - PDF A標準に対してPDF文書を検証し、目次を操作し、PDFの有効期限を設定するなどの作業を行います。
+- [PDFの最適化](/pdf/ja/net/optimize-pdf/) - ページコンテンツを最適化し、ファイルサイズを最適化し、未使用のオブジェクトを削除し、成功した文書最適化のためにすべての画像を圧縮します。
+- [PDFのマージ](/pdf/ja/net/merge-pdf-documents/) - 複数のPDFファイルをC#を使用して単一のPDF文書にマージします。
+- [PDFの分割](/pdf/ja/net/split-document/) - PDFページを.NETアプリケーション内の個別のPDFファイルに分割します。
+- [フォルダー内のPDFファイルの連結](/pdf/ja/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - PdfFileEditorクラスを使用して特定のフォルダー内のすべてのPDFファイルを連結します。
+- [MemoryStreamsを使用した複数のPDFファイルの連結](/pdf/ja/net/concatenate-pdf-documents/) - C#を使用してMemoryStreamsを使用して複数のPDFファイルを連結する方法を学びます。
+- [クラッシュレポートの作成](/pdf/ja/net/generate-crash-reports/) - C#を使用してクラッシュレポートを生成します。
+- [見出しの操作](/pdf/ja/net/working-with-headings/) - C#を使用してPDF文書の見出しに番号を付けることができます。
 
 <script type="application/ld+json">
 {

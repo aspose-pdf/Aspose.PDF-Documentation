@@ -78,7 +78,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-この記事では、[Aspose.PDF for .NET](/pdf/net/)コンポーネントの助けを借りて、複数のPDFドキュメントを1つのPDFドキュメントに[連結](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)する方法を説明します。[Aspose.PDF for .NET](/pdf/net/)は、この作業を簡単にします。
+この記事では、[Aspose.PDF for .NET](/pdf/ja/net/)コンポーネントの助けを借りて、複数のPDFドキュメントを1つのPDFドキュメントに[連結](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)する方法を説明します。[Aspose.PDF for .NET](/pdf/ja/net/)は、この作業を簡単にします。
 
 {{% /alert %}}
 

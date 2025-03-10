@@ -82,7 +82,7 @@ sitemap:
 
 PDF文書からテキストを抽出することは一般的な要件です。この例では、Aspose.PDF for .NETがPDF文書のすべてのページからテキストを抽出する方法を示します。**TextAbsorber**クラスのオブジェクトを作成する必要があります。その後、**Document**クラスを使用してPDFを開き、**Pages**コレクションの**Accept**メソッドを呼び出します。**TextAbsorber**クラスは文書からテキストを吸収し、**Text**プロパティで返します。以下のコードスニペットは、PDF文書のすべてのページからテキストを抽出する方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -115,7 +115,7 @@ private static void ExtractTextFromDocument()
 
 Documentオブジェクトの特定のページで**Accept**メソッドを呼び出します。インデックスは、テキストを抽出する必要がある特定のページ番号です。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -161,7 +161,7 @@ private static void ExtractTextFromPage()
 1. TextDeviceクラスのProcessメソッドを使用して内容をテキストに変換します。
 1. テキストを出力ファイルに保存します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -211,7 +211,7 @@ private static void ExtractTextFromPagesWithTextDevice()
 
 テキストを抽出するためにページの**Accept**メソッドが呼び出されます。**Document**と**TextAbsorber**クラスのオブジェクトを作成します。**Document**オブジェクトの個々のページに対して**Accept**メソッドを呼び出します。**Index**は、テキストを抽出する必要がある特定のページ番号です。**TextAbsorber**クラスの**Text**プロパティからテキストを取得できます。以下のコードスニペットは、個々のページからテキストを抽出する方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void ExtractTextFromParticularPageRegion()
 
 PDFファイルは、テキスト、画像、注釈、添付ファイル、グラフなどの要素で構成される場合があり、Aspose.PDF for .NETはこれらの要素を追加および操作する機能を提供します。このAPIは、PDF文書からのテキストの追加と抽出に関して優れており、PDF文書が複数のカラム（マルチカラム）で構成されているシナリオに直面することがあります。この場合、同じレイアウトを尊重しながらページの内容を抽出する必要があります。そのため、Aspose.PDF for .NETはこの要件を達成するための適切な選択です。一つのアプローチは、PDF文書内の内容のフォントサイズを減少させてからテキスト抽出を行うことです。以下のコードスニペットは、テキストサイズを減少させてからPDF文書からテキストを抽出する手順を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -296,7 +296,7 @@ private static void ExtractTextBasedOnColumns()
 
 大量のPDFファイルのテキストコンテンツ抽出を処理する際には、自動スケーリング（ScaleFactor = 0）の使用を提案します。または、グリッド幅の冗長な減少を手動で設定します（約ScaleFactor = 0.5）。ただし、具体的な文書に対してスケーリングが必要かどうかを判断する必要はありません。文書に対して冗長なグリッド幅の減少を設定した場合（それが必要ない場合）、抽出されたテキストコンテンツは完全に適切なままです。以下のコードスニペットを参照してください。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -333,7 +333,7 @@ private static void ExctractTextWithScaleFactor()
 
 PDF文書からのテキスト抽出のさまざまなシナリオにおいて、PDF文書からハイライトされたテキストのみを抽出する必要が生じることがあります。この機能を実装するために、APIにTextMarkupAnnotation.GetMarkedText()およびTextMarkupAnnotation.GetMarkedTextFragments()メソッドを追加しました。TextMarkupAnnotationをフィルタリングし、前述のメソッドを使用することで、PDF文書からハイライトされたテキストを抽出できます。以下のコードスニペットは、PDF文書からハイライトされたテキストを抽出する方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -369,7 +369,7 @@ private static void ExtractHighlightedTextFromDocument()
 
 時には、XMLから生成されたPDF文書を処理する際にTextFragmentまたはTextSegmentアイテムにアクセスする必要があります。Aspose.PDF for .NETは、名前でそのようなアイテムにアクセスする機能を提供します。以下のコードスニペットは、この機能を使用する方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

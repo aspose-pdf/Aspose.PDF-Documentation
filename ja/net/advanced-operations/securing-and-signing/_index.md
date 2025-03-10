@@ -94,10 +94,10 @@ PKCS7デタッチド用のダイジェストアルゴリズム：
 
 SHA-1ダイジェストアルゴリズムを使用したデジタル署名は、その安全性の低さから避けることをお勧めします。
 
-- [PDFファイルにデジタル署名する](/pdf/net/digitally-sign-pdf-file/)
-- [権限を設定し、PDFファイルを暗号化および復号化する](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [画像と署名情報を抽出する](/pdf/net/extract-image-and-signature-information/)
-- [スマートカードからPDFドキュメントに署名する](/pdf/net/sign-pdf-document-from-smart-card/)
+- [PDFファイルにデジタル署名する](/pdf/ja/net/digitally-sign-pdf-file/)
+- [権限を設定し、PDFファイルを暗号化および復号化する](/pdf/ja/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [画像と署名情報を抽出する](/pdf/ja/net/extract-image-and-signature-information/)
+- [スマートカードからPDFドキュメントに署名する](/pdf/ja/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

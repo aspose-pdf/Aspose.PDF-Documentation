@@ -90,7 +90,7 @@ PDF ファイルからすべての添付ファイルを取得するには：
 
 以下のコードスニペットは、PDF ドキュメントからすべての添付ファイルを取得する方法を示しています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

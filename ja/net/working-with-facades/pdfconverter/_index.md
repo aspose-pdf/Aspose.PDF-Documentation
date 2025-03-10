@@ -12,5 +12,5 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-- [画像をマージする](/pdf/net/merge-images/)
-- [PDF ファイルを変換する](/pdf/net/convert-pdf-file/)
+- [画像をマージする](/pdf/ja/net/merge-images/)
+- [PDF ファイルを変換する](/pdf/ja/net/convert-pdf-file/)

@@ -86,7 +86,7 @@ Aspose.PDF for NET を使用すると、スタンプ注釈からテキストを�
 1. `TextAbsorber` クラスの新しいオブジェクトを定義します。
 1. TextAbsorber の visit メソッドを使用してテキストを取得します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

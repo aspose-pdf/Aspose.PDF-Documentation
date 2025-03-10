@@ -89,10 +89,10 @@ PDFビューアは通常、テキストのハイライト、ノート、線、�
 
 以下の操作が可能です：
 
-- [注釈の概要](/pdf/net/overview-of-annotations/) - PDF仕様で定義されている注釈の種類と、Aspose.PDFがサポートしている内容を学びます。
-- [注釈の追加、削除、取得](/pdf/net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプの注釈を操作する方法を説明します。
-- [XFDF形式での注釈のインポートとエクスポート](/pdf/net/import-export-xfdf/) - Aspose.PDFライブラリは、XFDFファイルに注釈データをインポートおよびエクスポートするためのメソッドを提供します。
-- [FDF形式の注釈をPDFにインポート](/pdf/net/import-fdf/) - Aspose.PDFライブラリは、FDF形式の注釈をPDFファイルにインポートするためのメソッドを提供します。
+- [注釈の概要](/pdf/ja/net/overview-of-annotations/) - PDF仕様で定義されている注釈の種類と、Aspose.PDFがサポートしている内容を学びます。
+- [注釈の追加、削除、取得](/pdf/ja/net/add-delete-and-get-annotation/) - このセクションでは、許可されているすべてのタイプの注釈を操作する方法を説明します。
+- [XFDF形式での注釈のインポートとエクスポート](/pdf/ja/net/import-export-xfdf/) - Aspose.PDFライブラリは、XFDFファイルに注釈データをインポートおよびエクスポートするためのメソッドを提供します。
+- [FDF形式の注釈をPDFにインポート](/pdf/ja/net/import-fdf/) - Aspose.PDFライブラリは、FDF形式の注釈をPDFファイルにインポートするためのメソッドを提供します。
 
 <script type="application/ld+json">
 {

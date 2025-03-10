@@ -87,18 +87,18 @@ PageNumberStampクラスを使用してページ番号を追加します。文�
 
 以下のことができます：
 
-- [ページを追加](/pdf/net/add-pages/) - 希望の位置にページを追加したり、PDFファイルの末尾に追加したり、文書からページを削除します。
-- [ページを移動](/pdf/net/move-pages/) - 1つの文書から別の文書にページを移動します。
-- [ページを削除](/pdf/net/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
-- [ページサイズを変更](/pdf/net/change-page-size/) - Aspose.PDFライブラリを使用してコードスニペットでPDFページサイズを変更できます。
-- [ページを回転](/pdf/net/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。
-- [ページを分割](/pdf/net/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
-- [ヘッダーおよび/またはフッターを追加](/pdf/net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
-- [ページをトリミング](/pdf/net/crop-pages/) - 異なるページプロパティを使用してプログラム的にPDF文書のページをトリミングできます。
-- [透かしを追加](/pdf/net/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
-- [PDFファイルにページ番号を追加](/pdf/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
-- [背景を追加](/pdf/net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
-- [スタンピング](/pdf/net/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
+- [ページを追加](/pdf/ja/net/add-pages/) - 希望の位置にページを追加したり、PDFファイルの末尾に追加したり、文書からページを削除します。
+- [ページを移動](/pdf/ja/net/move-pages/) - 1つの文書から別の文書にページを移動します。
+- [ページを削除](/pdf/ja/net/delete-pages/) - PageCollectionコレクションを使用してPDFファイルからページを削除します。
+- [ページサイズを変更](/pdf/ja/net/change-page-size/) - Aspose.PDFライブラリを使用してコードスニペットでPDFページサイズを変更できます。
+- [ページを回転](/pdf/ja/net/rotate-pages/) - 既存のPDFファイル内のページの向きを変更できます。
+- [ページを分割](/pdf/ja/net/split-document/) - PDFファイルを1つまたは複数のPDFに分割できます。
+- [ヘッダーおよび/またはフッターを追加](/pdf/ja/net/add-headers-and-footers-of-pdf-file/) - PDFファイルのヘッダーとフッターにテキストや画像を追加します。
+- [ページをトリミング](/pdf/ja/net/crop-pages/) - 異なるページプロパティを使用してプログラム的にPDF文書のページをトリミングできます。
+- [透かしを追加](/pdf/ja/net/add-watermarks/) - Artifactクラスを使用してPDFファイルに透かしを追加します。
+- [PDFファイルにページ番号を追加](/pdf/ja/net/add-page-number/) - PageNumberStampクラスを使用してPDFファイルにページ番号を追加します。
+- [背景を追加](/pdf/ja/net/add-backgrounds/) - 背景画像を使用して透かしを追加できます。
+- [スタンピング](/pdf/ja/net/stamping/) - ImageStampクラスを使用してPDFファイルに画像スタンプを追加し、TextStampクラスを使用してテキストを追加できます。
 
 <script type="application/ld+json">
 {

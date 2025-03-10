@@ -81,7 +81,7 @@ XFDFはXML Forms Data Formatの略です。これはXMLベースのファイル�
 
 ## XFDFへの注釈のインポートとエクスポート
 
-[Aspose.PDF for .NET](/pdf/net/)は、PDF文書の編集に関して機能が豊富なコンポーネントです。XFDFはPDFフォーム操作の重要な側面であるため、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)はこれを非常によく考慮し、XFDFファイルに注釈データをインポートおよびエクスポートするためのメソッドを提供しています。
+[Aspose.PDF for .NET](/pdf/ja/net/)は、PDF文書の編集に関して機能が豊富なコンポーネントです。XFDFはPDFフォーム操作の重要な側面であるため、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)はこれを非常によく考慮し、XFDFファイルに注釈データをインポートおよびエクスポートするためのメソッドを提供しています。
 
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor)クラスには、XFDFファイルへの注釈のインポートとエクスポートに関する2つのメソッドがあります。[ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index)メソッドは、PDF文書からXFDFファイルに注釈をエクスポートする機能を提供し、[ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index)メソッドは、既存のXFDFファイルから注釈をインポートすることを可能にします。注釈をインポートまたはエクスポートするには、注釈タイプを指定する必要があります。これらのタイプを列挙型の形式で指定し、この列挙型をこれらのメソッドのいずれかに引数として渡すことができます。この方法で、指定されたタイプの注釈のみがXFDFファイルにインポートまたはエクスポートされます。
 

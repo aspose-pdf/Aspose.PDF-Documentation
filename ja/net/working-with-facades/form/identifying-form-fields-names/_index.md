@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/net/)は、PDFフォームを作成、編集、既に作成されたPDFフォームに記入する機能を提供します。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間には、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスが含まれており、[FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)という名前の関数があり、フィールド名とフィールド値の2つの引数を取ります。したがって、フォームフィールドに記入するには、正確なフォームフィールド名を知っている必要があります。
+[Aspose.PDF for .NET](/pdf/ja/net/)は、PDFフォームを作成、編集、既に作成されたPDFフォームに記入する機能を提供します。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades)名前空間には、[Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form)クラスが含まれており、[FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index)という名前の関数があり、フィールド名とフィールド値の2つの引数を取ります。したがって、フォームフィールドに記入するには、正確なフォームフィールド名を知っている必要があります。
 
 ## 実装の詳細
 

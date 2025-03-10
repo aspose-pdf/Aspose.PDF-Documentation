@@ -100,7 +100,7 @@ RichMediaAnnotationクラスの以下のメソッド/プロパティを使用で
 - void Update(): 注釈のデータ構造を作成します。このメソッドは最後に呼び出す必要があります。
 - void SetPoster(Stream): プレーヤーがアクティブでないときに表示される画像、すなわちビデオのポスターを設定します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 ## 画面注釈を追加
 
@@ -439,7 +439,7 @@ private static void AddNavigationButtons()
 }
 ```
 
-この機能の詳細情報と可能性については、[フォームの操作](/pdf/net/acroforms/)も参照してください。
+この機能の詳細情報と可能性については、[フォームの操作](/pdf/ja/net/acroforms/)も参照してください。
 
 PDFドキュメントでは、3D CADまたは3Dモデリングソフトウェアで作成された高品質の3Dコンテンツを表示および管理でき、PDFドキュメントに埋め込まれています。3D要素をすべての方向に回転させることができ、まるで手に持っているかのように操作できます。
 

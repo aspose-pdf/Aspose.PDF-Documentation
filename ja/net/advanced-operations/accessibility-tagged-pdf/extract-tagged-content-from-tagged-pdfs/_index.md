@@ -81,7 +81,7 @@ sitemap:
 
 この記事では、C#を使用してタグ付きコンテンツPDF文書を抽出する方法を学びます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## タグ付きPDFコンテンツの取得
 

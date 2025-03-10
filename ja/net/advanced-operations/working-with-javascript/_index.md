@@ -88,7 +88,7 @@ PDF文書は、Acrobatソフトウェア内およびWebブラウザ内の両方�
 - Acrobat JavaScriptは、HTMLページ内のオブジェクトにアクセスできません。同様に、HTML JavaScriptはPDFファイル内のオブジェクトにアクセスできません。
 - HTML JavaScriptは、Windowなどのオブジェクトを操作できます。Acrobat JavaScriptはこの特定のオブジェクトにアクセスできませんが、PDF特有のオブジェクトを操作できます。
 
-[Aspose.PDF for .NET](/pdf/net/)を使用して、文書およびページレベルの両方でJavaScriptを追加できます。JavaScriptを追加するには：
+[Aspose.PDF for .NET](/pdf/ja/net/)を使用して、文書およびページレベルの両方でJavaScriptを追加できます。JavaScriptを追加するには：
 
 ### 文書またはページアクションにJavaScriptを追加する
 

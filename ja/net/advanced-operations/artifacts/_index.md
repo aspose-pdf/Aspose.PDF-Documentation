@@ -112,7 +112,7 @@ Adobe Acrobatで作成されたウォーターマークはアーティファク�
 
 以下のコードスニペットは、PDFファイルの最初のページにあるすべてのウォーターマークを取得する方法を示しています。
 
-_注:_ このコードは[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+_注:_ このコードは[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

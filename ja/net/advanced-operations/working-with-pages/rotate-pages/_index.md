@@ -80,7 +80,7 @@ sitemap:
 
 このトピックでは、既存のPDFファイルのページの向きをC#でプログラム的に更新または変更する方法について説明します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## ページの向きを変更する
 

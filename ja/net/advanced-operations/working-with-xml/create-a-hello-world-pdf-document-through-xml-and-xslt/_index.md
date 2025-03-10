@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 既存のXMLファイルにアプリケーションデータが含まれていて、これらのファイルを使用してPDFレポートを生成したい場合があります。XSLTを使用して、既存のXMLドキュメントをAspose.Pdfの互換XMLドキュメントに変換し、その後PDFファイルを生成できます。XMLとXSLTを使用してPDFを生成するには、3つのステップがあります。
 

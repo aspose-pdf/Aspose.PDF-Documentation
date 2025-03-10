@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 PDFファイルに追加される画像のサイズを設定することが可能です。サイズを設定するには、Aspose.Pdf.ImageクラスのFixWidthおよびFixHeightプロパティを使用できます。次のコードスニペットは、画像のサイズを設定する方法を示しています。
 

@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF 印刷 - ファサードの操作](/pdf/net/working-with-pdf-printing-facades/)
+- [PDF 印刷 - ファサードの操作](/pdf/ja/net/working-with-pdf-printing-facades/)

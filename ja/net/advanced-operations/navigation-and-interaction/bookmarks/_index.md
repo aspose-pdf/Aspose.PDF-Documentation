@@ -82,8 +82,8 @@ sitemap:
 PDFのブックマークは、PDFファイルを読む際に便利で不可欠なツールです。これにより、ユーザーはPDF文書内の他の場所に迅速にジャンプし、ページをナビゲートし、目次のようにPDFの内容を迅速に表示できます。
 このセクションでは、次のことを学びます：
 
-- [ブックマークの追加と削除](/pdf/net/add-and-delete-bookmark/)
-- [ブックマークの取得、更新、展開](/pdf/net/get-update-and-expand-bookmark/)
+- [ブックマークの追加と削除](/pdf/ja/net/add-and-delete-bookmark/)
+- [ブックマークの取得、更新、展開](/pdf/ja/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

@@ -82,7 +82,7 @@ sitemap:
 
 Aspose.PDF for .NETを使用すると、.NETアプリケーション内で簡単なコード行でPDFページサイズを変更できます。このトピックでは、既存のPDFファイルのページ寸法（サイズ）を更新/変更する方法を説明します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)クラスには、ページサイズを設定するSetPageSize(...)メソッドがあります。以下のコードスニペットは、いくつかの簡単なステップでページ寸法を更新します：
 

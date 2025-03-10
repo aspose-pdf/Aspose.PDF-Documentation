@@ -82,7 +82,7 @@ sitemap:
 
 テーブルはPDFドキュメントを扱う際に重要です。情報を体系的に表示するための優れた機能を提供します。Aspose.PDF名前空間には、PDFドキュメントをゼロから生成する際にテーブルを作成する機能を提供する[Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)、および[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)という名前のクラスが含まれています。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 テーブルはTableクラスのオブジェクトを作成することで作成できます。
 

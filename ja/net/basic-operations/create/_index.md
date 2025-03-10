@@ -85,7 +85,7 @@ C#を使用してPDFファイルを作成するには、次の手順を使用で
 1. ページの[Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)コレクションに[TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment)を追加します。
 1. 結果のPDFドキュメントを保存します。
 
-次のコードスニペットは、[Aspose.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

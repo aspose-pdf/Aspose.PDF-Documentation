@@ -94,5 +94,5 @@ Aspose .NET は、Dynamics CRM と複数の方法で使用できます。ドキ�
 
 Aspose.PDF を使用して CRM 用に以下のプラグインを作成しました。
 
-- [OneClick PDF ドキュメントジェネレーター](/pdf/net/oneclick-pdf-document-generator/)
-- [OneClick PDF ドキュメントジェネレーターの使用](/pdf/net/using-oneclick-pdf-document-generator/)
+- [OneClick PDF ドキュメントジェネレーター](/pdf/ja/net/oneclick-pdf-document-generator/)
+- [OneClick PDF ドキュメントジェネレーターの使用](/pdf/ja/net/using-oneclick-pdf-document-generator/)

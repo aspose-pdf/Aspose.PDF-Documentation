@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [ブックマークの作成](/pdf/net/create-bookmarks/)
-- [ブックマークのインポートとエクスポート](/pdf/net/import-and-export-bookmarks/)
-- [ブックマークの更新、削除、取得](/pdf/net/update-delete-and-get-bookmarks/)
+- [ブックマークの作成](/pdf/ja/net/create-bookmarks/)
+- [ブックマークのインポートとエクスポート](/pdf/ja/net/import-and-export-bookmarks/)
+- [ブックマークの更新、削除、取得](/pdf/ja/net/update-delete-and-get-bookmarks/)

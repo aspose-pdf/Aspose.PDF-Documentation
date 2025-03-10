@@ -82,7 +82,7 @@ sitemap:
 
 この記事では、**C#を使用してPDFをExcel形式に変換する方法**について説明します。以下のトピックをカバーしています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 _形式_: **XLS**
 

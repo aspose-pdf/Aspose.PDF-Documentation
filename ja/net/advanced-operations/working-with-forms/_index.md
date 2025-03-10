@@ -81,8 +81,8 @@ sitemap:
 
 このセクションでは、Aspose.PDFを使用してPDFドキュメントをプログラム的に完成させるための迅速かつ簡単なアプローチについて説明します。このセクションでは、Aspose.PDF for .NETを使用して、AcroFormsを持つ既存のPDF内で利用可能なフィールドを発見し、マッピングする方法についても説明します。また、XMLに基づくプレゼンテーションフォームの別の技術であるXFAの操作方法についても学びます。
 
-- [AcroForms](/pdf/net/acroforms/) - フォームを作成し、フォームフィールドに入力し、フォームからデータを抽出し、.NETライブラリを使用してPDF内のフィールドを追加および削除します。
-- [XFAフォーム](/pdf/net/xfa-forms/) - XFAフィールドに入力し、XFAを変換し、XFAフィールドのプロパティを取得します。
+- [AcroForms](/pdf/ja/net/acroforms/) - フォームを作成し、フォームフィールドに入力し、フォームからデータを抽出し、.NETライブラリを使用してPDF内のフィールドを追加および削除します。
+- [XFAフォーム](/pdf/ja/net/xfa-forms/) - XFAフィールドに入力し、XFAを変換し、XFAフィールドのプロパティを取得します。
 
 <script type="application/ld+json">
 {

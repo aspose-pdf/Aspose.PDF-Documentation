@@ -82,28 +82,28 @@ sitemap:
 
 次のさまざまな方法を学びます：
 
-- [文書の操作](/pdf/net/working-with-documents/) - 文書を圧縮、分割、結合し、全体の文書で他の操作を行います。
-- [ページの操作](/pdf/net/working-with-pages/) - ページを追加、移動、削除し、トリミングし、ウォーターマークやスタンプを追加します。
-- [テキストの操作](/pdf/net/working-with-text/) - PDF内のテキストを追加、フォーマット、検索、置換します。
-- [画像の操作](/pdf/net/working-with-images/) - 文書に画像を挿入、削除、抽出します。
-- [表の操作](/pdf/net/working-with-tables/) - PDF内に表を挿入、装飾し、表形式のデータを抽出します。
-- [フォームの操作](/pdf/net/working-with-forms/) - インタラクティブなPDF文書を扱い、フォームフィールドを追加し、データを抽出します。
-- [グラフの操作](/pdf/net/working-with-graphs/) - ページ上の図形を操作します。
-- [XMLの操作](/pdf/net/working-with-xml) - XML構造に基づいてPDF文書を構築します。
-- [演算子の操作](/pdf/net/working-with-operators/) - PDF内で低レベルの操作を行います。
-- [ベクターグラフィックスの操作](/pdf/net/working-with-vector-graphics) - GraphicsAbsorberを使用した操作の機能を説明します。
-- [ZUGFeRDの操作](/pdf/net/working-with-zugferd) - ZUGFeRD準拠のPDF請求書を作成します。
-- [Javascriptの操作](/pdf/net/working-with-javascript) - PDF内にJavascriptコードを追加、削除します。
-- [PDF文書の比較](/pdf/net/compare-pdf-documents/) - PDF文書の内容を比較することができます。
-- [ナビゲーションとインタラクション](/pdf/net/navigation-and-interaction/) - アクション、ブックマークを扱い、ページをナビゲートします。
-- [PDF AIコパイロット](/pdf/net/ai-copilot/) - 異なるプロバイダーのLLMを使用してPDF文書を処理できるようにします。
-- [注釈](/pdf/net/annotations/) - 注釈を使用すると、ユーザーはPDFページにカスタムコンテンツを追加できます。PDF文書から注釈を追加、削除、変更できます。
-- [アーティファクト](/pdf/net/artifacts/) - PDF内のウォーターマークやその他の特別なオブジェクトを扱います。
-- [アクセシビリティ。タグ付きPDF](/pdf/net/accessibility-tagged-pdf/) - タグ付けはPDFのアクセシビリティに不可欠です。Aspose.PDFはPDFにタグを追加し、論理的な読み取り順序を確立し、構造とタイプを示す手段を提供します。
-- [添付ファイル](/pdf/net/attachments/) - PDF文書にはファイル添付が含まれる場合があります。これらの添付ファイルは、他のPDF文書や音声ファイル、Microsoft Office文書などの任意のファイルである可能性があります。PDFに添付ファイルを追加する方法、添付ファイルの情報を取得しファイルに保存する方法、C#を使用してPDFから添付ファイルをプログラムで削除する方法を学びます。
-- [PDFのメタデータ](/pdf/net/pdf-file-metadata/) - 文書内のメタデータを取得または設定し、XMPデータを扱います。
-- [セキュリティと署名](/pdf/net/securing-and-signing/) - PDF文書をプログラムで保護し、署名します。
-- [文書の印刷](/pdf/net/printing-document/) - 様々なタイプのアプリケーション（WinForms、WPFなど）でPDFを印刷します。
+- [文書の操作](/pdf/ja/net/working-with-documents/) - 文書を圧縮、分割、結合し、全体の文書で他の操作を行います。
+- [ページの操作](/pdf/ja/net/working-with-pages/) - ページを追加、移動、削除し、トリミングし、ウォーターマークやスタンプを追加します。
+- [テキストの操作](/pdf/ja/net/working-with-text/) - PDF内のテキストを追加、フォーマット、検索、置換します。
+- [画像の操作](/pdf/ja/net/working-with-images/) - 文書に画像を挿入、削除、抽出します。
+- [表の操作](/pdf/ja/net/working-with-tables/) - PDF内に表を挿入、装飾し、表形式のデータを抽出します。
+- [フォームの操作](/pdf/ja/net/working-with-forms/) - インタラクティブなPDF文書を扱い、フォームフィールドを追加し、データを抽出します。
+- [グラフの操作](/pdf/ja/net/working-with-graphs/) - ページ上の図形を操作します。
+- [XMLの操作](/pdf/ja/net/working-with-xml) - XML構造に基づいてPDF文書を構築します。
+- [演算子の操作](/pdf/ja/net/working-with-operators/) - PDF内で低レベルの操作を行います。
+- [ベクターグラフィックスの操作](/pdf/ja/net/working-with-vector-graphics) - GraphicsAbsorberを使用した操作の機能を説明します。
+- [ZUGFeRDの操作](/pdf/ja/net/working-with-zugferd) - ZUGFeRD準拠のPDF請求書を作成します。
+- [Javascriptの操作](/pdf/ja/net/working-with-javascript) - PDF内にJavascriptコードを追加、削除します。
+- [PDF文書の比較](/pdf/ja/net/compare-pdf-documents/) - PDF文書の内容を比較することができます。
+- [ナビゲーションとインタラクション](/pdf/ja/net/navigation-and-interaction/) - アクション、ブックマークを扱い、ページをナビゲートします。
+- [PDF AIコパイロット](/pdf/ja/net/ai-copilot/) - 異なるプロバイダーのLLMを使用してPDF文書を処理できるようにします。
+- [注釈](/pdf/ja/net/annotations/) - 注釈を使用すると、ユーザーはPDFページにカスタムコンテンツを追加できます。PDF文書から注釈を追加、削除、変更できます。
+- [アーティファクト](/pdf/ja/net/artifacts/) - PDF内のウォーターマークやその他の特別なオブジェクトを扱います。
+- [アクセシビリティ。タグ付きPDF](/pdf/ja/net/accessibility-tagged-pdf/) - タグ付けはPDFのアクセシビリティに不可欠です。Aspose.PDFはPDFにタグを追加し、論理的な読み取り順序を確立し、構造とタイプを示す手段を提供します。
+- [添付ファイル](/pdf/ja/net/attachments/) - PDF文書にはファイル添付が含まれる場合があります。これらの添付ファイルは、他のPDF文書や音声ファイル、Microsoft Office文書などの任意のファイルである可能性があります。PDFに添付ファイルを追加する方法、添付ファイルの情報を取得しファイルに保存する方法、C#を使用してPDFから添付ファイルをプログラムで削除する方法を学びます。
+- [PDFのメタデータ](/pdf/ja/net/pdf-file-metadata/) - 文書内のメタデータを取得または設定し、XMPデータを扱います。
+- [セキュリティと署名](/pdf/ja/net/securing-and-signing/) - PDF文書をプログラムで保護し、署名します。
+- [文書の印刷](/pdf/ja/net/printing-document/) - 様々なタイプのアプリケーション（WinForms、WPFなど）でPDFを印刷します。
 
 <script type="application/ld+json">
 {

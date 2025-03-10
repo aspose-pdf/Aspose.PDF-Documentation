@@ -13,5 +13,5 @@ sitemap:
 ---
 このセクションには以下のトピックがあります：
 
-- [Visual Studio Export GridView To PDF Control](/pdf/net/visual-studio-export-gridview-to-pdf-control/)
-- [Aspose.PDF Visual Studio Plugin](/pdf/net/aspose-pdf-visual-studio-plugin/)
+- [Visual Studio Export GridView To PDF Control](/pdf/ja/net/visual-studio-export-gridview-to-pdf-control/)
+- [Aspose.PDF Visual Studio Plugin](/pdf/ja/net/aspose-pdf-visual-studio-plugin/)

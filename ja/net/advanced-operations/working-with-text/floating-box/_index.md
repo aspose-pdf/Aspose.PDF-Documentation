@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-この機能は、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+この機能は、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## FloatingBoxツールの基本
 

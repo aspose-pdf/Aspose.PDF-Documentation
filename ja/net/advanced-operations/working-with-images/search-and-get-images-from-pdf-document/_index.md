@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ImagePlacementAbsorberを使用すると、PDFドキュメント内のすべてのページの画像を検索できます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ドキュメント全体で画像を検索するには：
 

@@ -76,7 +76,7 @@ url: /ja/net/choose-the-platform-and-interoperability-technology/
 
 **Aspose.PDFクラスライブラリには3つのバージョンがあります：**
 
-[Aspose.PDF](/pdf/)は、ゼロからPDFドキュメントを生成する機能と、既存のドキュメントを編集/操作する能力を提供する製品ファミリーです。Aspose.PDFは、[Aspose.PDF for .NET](/pdf/net/)、[Aspose.PDF for Java](/pdf/java/)、および[Aspose.PDF for C++](/pdf/cpp/)の3つの異なる製品で利用可能です。Aspose.PDFは「ネイティブに」次のものをサポートしていると言えます：
+[Aspose.PDF](/pdf/)は、ゼロからPDFドキュメントを生成する機能と、既存のドキュメントを編集/操作する能力を提供する製品ファミリーです。Aspose.PDFは、[Aspose.PDF for .NET](/pdf/ja/net/)、[Aspose.PDF for Java](/pdf/java/)、および[Aspose.PDF for C++](/pdf/cpp/)の3つの異なる製品で利用可能です。Aspose.PDFは「ネイティブに」次のものをサポートしていると言えます：
 
 - .NET FrameworkおよびC#やVB.NETなどの.NETプラットフォームを対象とするすべてのプログラミング言語。
 - JavaプラットフォームおよびJavaプログラミング言語。
@@ -84,7 +84,7 @@ url: /ja/net/choose-the-platform-and-interoperability-technology/
 
 {{% /alert %}}
 
-他のプログラミング言語からも[Aspose.PDF for .NET](/pdf/net/)を使用することが可能であることに注意してください。これには、ASP、C++、ColdFusion、Delphi、JavaScript、Perl、PHP、PowerBuilder、Python、VBScriptなどが含まれます。
+他のプログラミング言語からも[Aspose.PDF for .NET](/pdf/ja/net/)を使用することが可能であることに注意してください。これには、ASP、C++、ColdFusion、Delphi、JavaScript、Perl、PHP、PowerBuilder、Python、VBScriptなどが含まれます。
 
 ## 他の言語のサポート
 
@@ -92,7 +92,7 @@ url: /ja/net/choose-the-platform-and-interoperability-technology/
 
 このセクションには、異なるプログラミング言語でAspose.PDFを使用する方法に関する提案とドキュメントリンクが含まれており、以下のトピックをカバーしています：
 
-- [Aspose.PDF for .NET](/pdf/net/)のための利用可能な既製のラッパー。
+- [Aspose.PDF for .NET](/pdf/ja/net/)のための利用可能な既製のラッパー。
 - Aspose.PDF for .NETオブジェクトの作成、メソッドの呼び出し、およびプロパティへのアクセス方法。
 
 このセクションに示された原則に従えば、プロジェクトでAspose.PDFの多くの機能を利用できるようになります。
@@ -111,7 +111,7 @@ Aspose.PDF製品の完全なリストは[こちらのページ](/pdf/)で見つ�
 
 **他の言語からAspose.PDFオブジェクトにアクセスする**
 
-他のプログラミング言語からAspose.PDFを使用するには、*相互運用性技術*が必要です。この技術は、あなたの言語が.NET、Java、またはC++用に書かれたクラスライブラリを呼び出すことを可能にしなければなりません。さまざまなプログラミング言語で使用するために、[COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)技術と[Aspose.PDF for .NET](/pdf/net/)クラスライブラリを提案します：
+他のプログラミング言語からAspose.PDFを使用するには、*相互運用性技術*が必要です。この技術は、あなたの言語が.NET、Java、またはC++用に書かれたクラスライブラリを呼び出すことを可能にしなければなりません。さまざまなプログラミング言語で使用するために、[COM Interop](/pdf/ja/net/use-aspose-pdf-for-net-via-com-interop/)技術と[Aspose.PDF for .NET](/pdf/ja/net/)クラスライブラリを提案します：
 - ASP。
 - Delphi。
 - Perl。
@@ -125,6 +125,6 @@ Aspose.PDF製品の完全なリストは[こちらのページ](/pdf/)で見つ�
 ## 結論
 
 {{% alert color="primary" %}}
-上記の記事は、[Aspose.PDF for .NET](/pdf/net/)の使用が.NETプログラミング言語を超えていることを示しています。
+上記の記事は、[Aspose.PDF for .NET](/pdf/ja/net/)の使用が.NETプログラミング言語を超えていることを示しています。
 
 {{% /alert %}}

@@ -85,13 +85,13 @@ sitemap:
 
 私たちは、Aspose.PDF for .NETライブラリで利用可能なさまざまな種類の注釈をグループにまとめました：
 
-- [PDFテキスト注釈](/pdf/net/text-annotation/)
-- [PDFハイライト注釈](/pdf/net/highlights-annotation/)
-- [PDF図形注釈](/pdf/net/figures-annotation/)
-- [マルチメディア注釈](/pdf/net/multimedia-annotation/)
-- [PDFスティッキー注釈](/pdf/net/sticky-annotations/)
-- [リンク注釈](/pdf/net/link-annotations/)
-- [追加の注釈](/pdf/net/extra-annotations/)
+- [PDFテキスト注釈](/pdf/ja/net/text-annotation/)
+- [PDFハイライト注釈](/pdf/ja/net/highlights-annotation/)
+- [PDF図形注釈](/pdf/ja/net/figures-annotation/)
+- [マルチメディア注釈](/pdf/ja/net/multimedia-annotation/)
+- [PDFスティッキー注釈](/pdf/ja/net/sticky-annotations/)
+- [リンク注釈](/pdf/ja/net/link-annotations/)
+- [追加の注釈](/pdf/ja/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

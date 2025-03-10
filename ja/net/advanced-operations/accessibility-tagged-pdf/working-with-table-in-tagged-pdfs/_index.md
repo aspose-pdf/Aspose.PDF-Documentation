@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NETを使用すると、タグ付きPDFドキュメントにテーブルを作成できます。テーブルを操作するために、APIは[TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement)クラスを提供します。テーブルを作成するには、[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)インターフェースの[CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement)メソッドを使用できます。さらに、TableElementクラスの[CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)、[CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody)、および[CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot)メソッドを使用して、それぞれテーブルヘッダー、テーブルボディ、およびテーブルフッターを作成できます。テーブル行を作成するには、[TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement)クラスの[CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr)メソッドを使用できます。また、作成したPDFドキュメントがPDF/UAコンプライアンスであるかどうかを、DocumentクラスのValidate()メソッドを使用して確認できます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 以下のコードスニペットは、タグ付きPDFドキュメントにテーブルを作成する方法を示しています：
 

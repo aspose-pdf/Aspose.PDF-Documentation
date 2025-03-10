@@ -87,7 +87,7 @@ AcroFormはPDFドキュメントの重要なタイプです。[Aspose.Pdf.Facade
 
 ## 実装の詳細
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 この記事では、[Aspose.Pdf.Facades名前空間](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)を使用してAcroFormを作成しようとしました。また、送信ボタンを追加し、そのターゲットURLを設定しました。以下のコードスニペットは、フォームを作成し、ウェブページで投稿されたデータを受信する方法を示しています。
 

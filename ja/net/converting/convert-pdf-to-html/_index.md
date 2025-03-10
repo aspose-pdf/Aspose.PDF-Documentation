@@ -87,7 +87,7 @@ _形式_: **HTML**
 - [C# PDFをHTMLに変換する](#csharp-pdf-to-html)
 - [C# PDFファイルをHTMLに変換する方法](#csharp-pdf-to-html)
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## PDFをHTMLに変換
 

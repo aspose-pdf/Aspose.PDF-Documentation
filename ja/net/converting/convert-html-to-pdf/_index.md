@@ -82,7 +82,7 @@ sitemap:
 
 この記事では、**C#を使用してHTMLをPDFに変換する方法**を説明します。以下のトピックをカバーしています。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 _形式_: **HTML**
 - [C# HTMLをPDFに変換](#csharp-html-to-pdf)

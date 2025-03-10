@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/net/)でPDFフォームを埋めるためのさまざまな方法を提供します。XMLファイル、DFD、XFDFからデータをインポートしたり、APIを使用したり、Excelワークシートからデータを使用することもできます。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/ja/net/)でPDFフォームを埋めるためのさまざまな方法を提供します。XMLファイル、DFD、XFDFからデータをインポートしたり、APIを使用したり、Excelワークシートからデータを使用することもできます。
 私たちは、ExcelシートからDataTableオブジェクトにデータをエクスポートするために、[Aspose.Cells](https://docs.aspose.com//cells/net)の[Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells)クラスの[ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index)メソッドを使用します。次に、[AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller)クラスの[ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable)メソッドを使用して、このデータをPDFフォームにインポートします。DataTableの列名がPDFフォームのフィールド名と同じであることを確認してください。
 
 {{% /alert %}}

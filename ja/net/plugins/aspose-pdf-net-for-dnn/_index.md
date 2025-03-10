@@ -13,4 +13,4 @@ sitemap:
 ---
 このセクションには以下のトピックがあります：
 
-- [DNN PDFインポートモジュール](/pdf/net/dnn-pdf-import-module)
+- [DNN PDFインポートモジュール](/pdf/ja/net/dnn-pdf-import-module)

@@ -82,7 +82,7 @@ sitemap:
 
 Aspose.PDF for .NETは、開発者が.NETアプリケーションにPDFドキュメントの作成、操作、および変換機能を組み込むことを可能にする機能豊富なPDF APIです。PDF、XFA、TXT、HTML、PCL、XML、XPS、EPUB、TEX、および画像ファイル形式を含む多くの人気ファイル形式での作業をサポートしています。この記事では、「Hello World!」というテキストを含むPDFドキュメントを作成します。Aspose.PDF for .NETを環境にインストールした後、以下のコードサンプルを実行してAspose.PDF APIがどのように機能するかを確認できます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 以下のコードスニペットは、次の手順に従います：
 

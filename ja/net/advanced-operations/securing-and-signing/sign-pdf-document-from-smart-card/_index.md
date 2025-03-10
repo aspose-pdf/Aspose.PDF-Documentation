@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NETは、キーストアの場所からデジタル署名を追加する機能を提供します。システムに接続された証明書ストア、スマートカード、または[PIVカード](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card)によって提供された証明書を受け入れることで署名を適用できます。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 スマートカードからPDF文書に署名するためのコードスニペットは次のとおりです。
 

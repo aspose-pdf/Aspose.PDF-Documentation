@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET**を使用すると、既存のPDFファイルにヘッダーとフッターを追加できます。PDF文書に画像やテキストを追加することができます。また、C#を使用して1つのPDFファイルに異なるヘッダーを追加することも試してみてください。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## PDFファイルのヘッダーにテキストを追加
 

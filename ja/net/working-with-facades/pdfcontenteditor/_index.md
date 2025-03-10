@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [既存の PDF ファイルに Javascript アクションを追加する](/pdf/net/adding-javascript-actions/)
-- [既存の PDF ファイルにブックマークアクションを追加する](/pdf/net/how-to-create-nested-bookmarks/)
-- [画像を扱う](/pdf/net/working-with-images-in-pdf/)
-- [テキストを置き換える - ファサード](/pdf/net/replace-text-facades/)
-- [添付ファイルを扱う - ファサード](/pdf/net/working-with-attachments-facades/)
-- [既存の PDF ファイルのビューワー設定を変更する](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)
-- [既存の PDF ファイルのビューワー設定を取得する](/pdf/net/get-viewer-preference-of-an-existing-pdf-file/)
-- [既存の PDF ファイルに注釈を追加する](/pdf/net/adding-annotations-to-existing-pdf-file/)
+- [既存の PDF ファイルに Javascript アクションを追加する](/pdf/ja/net/adding-javascript-actions/)
+- [既存の PDF ファイルにブックマークアクションを追加する](/pdf/ja/net/how-to-create-nested-bookmarks/)
+- [画像を扱う](/pdf/ja/net/working-with-images-in-pdf/)
+- [テキストを置き換える - ファサード](/pdf/ja/net/replace-text-facades/)
+- [添付ファイルを扱う - ファサード](/pdf/ja/net/working-with-attachments-facades/)
+- [既存の PDF ファイルのビューワー設定を変更する](/pdf/ja/net/set-viewer-preference-of-an-existing-pdf-file/)
+- [既存の PDF ファイルのビューワー設定を取得する](/pdf/ja/net/get-viewer-preference-of-an-existing-pdf-file/)
+- [既存の PDF ファイルに注釈を追加する](/pdf/ja/net/adding-annotations-to-existing-pdf-file/)

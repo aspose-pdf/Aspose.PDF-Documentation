@@ -87,7 +87,7 @@ Aspose.PDFを使用すると、[Document](https://reference.aspose.com/pdf/net/a
 
 以下のコードは、次のポートフォリオを生成します。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ### Aspose.PDFで作成されたPDFポートフォリオ
 

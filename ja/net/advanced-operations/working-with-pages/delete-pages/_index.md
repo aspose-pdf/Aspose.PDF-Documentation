@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 Aspose.PDF for .NETを使用してPDFファイルからページを削除できます。[PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)コレクションから特定のページを削除します。
 

@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/net/)で既存のPDFファイルにスタンプを追加することを可能にします。時には、ユーザーがスタンプを回転させる必要があります。この記事では、スタンプを中心点の周りで回転させる方法を見ていきます。
+[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)は、[Aspose.PDF for .NET](/pdf/ja/net/)で既存のPDFファイルにスタンプを追加することを可能にします。時には、ユーザーがスタンプを回転させる必要があります。この記事では、スタンプを中心点の周りで回転させる方法を見ていきます。
 
 {{% /alert %}}
 

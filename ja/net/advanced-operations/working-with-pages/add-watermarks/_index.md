@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET**は、アーティファクトを使用してPDFドキュメントに透かしを追加することを可能にします。このタスクを解決するためにこの記事を確認してください。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 Adobe Acrobatで作成された透かしはアーティファクトと呼ばれます（PDF仕様の14.8.2.2の実際のコンテンツとアーティファクトに記載されています）。アーティファクトを操作するために、Aspose.PDFには2つのクラスがあります：[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact)と[ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)。
 

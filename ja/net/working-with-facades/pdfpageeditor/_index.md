@@ -14,7 +14,7 @@ sitemap:
 ---
 **PdfPage Editor** は、ページに対してさまざまな操作を行うことを目的としています：
 
-- [PDF ドキュメントのページを回転させる](/pdf/net/working-with-page-rotation/)
-- [トランジションやその他の視覚効果を適用する](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
-- [PDF ファイルのページサイズを変更する](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-- [ページプロパティを操作する](/pdf/net/manipulate-page-properties/)
+- [PDF ドキュメントのページを回転させる](/pdf/ja/net/working-with-page-rotation/)
+- [トランジションやその他の視覚効果を適用する](/pdf/ja/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
+- [PDF ファイルのページサイズを変更する](/pdf/ja/net/changing-page-sizes-in-a-pdf-file/)
+- [ページプロパティを操作する](/pdf/ja/net/manipulate-page-properties/)

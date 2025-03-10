@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [フォームフィールドを追加](/pdf/net/add-form-fields/)
-- [FormEditor クラスの機能を探る](/pdf/net/exploring-features-of-formeditor-class/)
-- [PDFのフォームフィールドを装飾する](/pdf/net/decorate-form-field/)
-- [フィールドの外観と属性](/pdf/net/changing-field-appearance-and-attributes/)
-- [リストアイテムで作業する](/pdf/net/working-with-list-item/)
-- [内側と外側のフィールドをコピー](/pdf/net/copy-inner-and-outer-field/)
-- [フォームフィールドを移動および削除](/pdf/net/move-remove-form-field/)
-- [フォームフィールドをインポートおよびエクスポート](/pdf/net/import-export-form-field/)
+- [フォームフィールドを追加](/pdf/ja/net/add-form-fields/)
+- [FormEditor クラスの機能を探る](/pdf/ja/net/exploring-features-of-formeditor-class/)
+- [PDFのフォームフィールドを装飾する](/pdf/ja/net/decorate-form-field/)
+- [フィールドの外観と属性](/pdf/ja/net/changing-field-appearance-and-attributes/)
+- [リストアイテムで作業する](/pdf/ja/net/working-with-list-item/)
+- [内側と外側のフィールドをコピー](/pdf/ja/net/copy-inner-and-outer-field/)
+- [フォームフィールドを移動および削除](/pdf/ja/net/move-remove-form-field/)
+- [フォームフィールドをインポートおよびエクスポート](/pdf/ja/net/import-export-form-field/)

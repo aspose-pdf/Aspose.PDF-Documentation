@@ -80,10 +80,10 @@ sitemap:
 
 **PDF文書の解析**は、PDFファイルからさまざまな情報を抽出することに関連する用語です。このセクションでは、以下の方法について説明します。
 
-- [PDFからテキストを抽出](/pdf/net/extract-text-from-pdf/)。テキストの解析または抽出は、既製のPDFで最も一般的な操作です。文書全体、特定のページ、またはページ内の特定の領域からのテキスト解析について学びます。
-- [PDFから画像を抽出](/pdf/net/extract-images-from-the-pdf-file/)。画像抽出は、テキストに対する上記の操作と同様に画像を処理します。
-- [PDFからフォントを抽出](/pdf/net/extract-fonts-from-pdf/)。フォント抽出は、PDF内のフォントに特化した操作です。
-- [フォームからデータを抽出](/pdf/net/extract-data-from-acroform/)。フォームを含むPDF文書が多数ある場合、これらのフォームからデータを取得する必要があるかもしれません。この記事では、Aspose.PDF for .NETを使用してAcroFormsデータを抽出する方法を理解するのに役立ちます。
-- [スタンプからテキストを抽出](/pdf/net/extract-text-from-stamps/) - PDF文書からテキスト情報を取得します。
-- [テーブルからデータを抽出](/pdf/net/extract-data-from-table-in-pdf/) - PDF文書内のテーブルからデータを取得します。
-- [PDFからベクターデータを抽出](/pdf/net/extract-vector-data-from-pdf/) - 位置、色、線幅などのベクターデータ（パス、ポリゴン、ポリライン）を取得できます。
+- [PDFからテキストを抽出](/pdf/ja/net/extract-text-from-pdf/)。テキストの解析または抽出は、既製のPDFで最も一般的な操作です。文書全体、特定のページ、またはページ内の特定の領域からのテキスト解析について学びます。
+- [PDFから画像を抽出](/pdf/ja/net/extract-images-from-the-pdf-file/)。画像抽出は、テキストに対する上記の操作と同様に画像を処理します。
+- [PDFからフォントを抽出](/pdf/ja/net/extract-fonts-from-pdf/)。フォント抽出は、PDF内のフォントに特化した操作です。
+- [フォームからデータを抽出](/pdf/ja/net/extract-data-from-acroform/)。フォームを含むPDF文書が多数ある場合、これらのフォームからデータを取得する必要があるかもしれません。この記事では、Aspose.PDF for .NETを使用してAcroFormsデータを抽出する方法を理解するのに役立ちます。
+- [スタンプからテキストを抽出](/pdf/ja/net/extract-text-from-stamps/) - PDF文書からテキスト情報を取得します。
+- [テーブルからデータを抽出](/pdf/ja/net/extract-data-from-table-in-pdf/) - PDF文書内のテーブルからデータを取得します。
+- [PDFからベクターデータを抽出](/pdf/ja/net/extract-vector-data-from-pdf/) - 位置、色、線幅などのベクターデータ（パス、ポリゴン、ポリライン）を取得できます。

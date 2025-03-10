@@ -80,7 +80,7 @@ sitemap:
 
 ## PDFにZUGFeRDを添付する
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ZUGFeRDをPDFに添付するための手順をお勧めします：
 

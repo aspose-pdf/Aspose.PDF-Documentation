@@ -90,7 +90,7 @@ PDFファイルの各ページには、幅、高さ、ブリード、クロッ�
 - **Page.Rect**: メディアボックスとドロップボックスの交差点（一般的に見える長方形）です。以下の図はこれらのプロパティを示しています。
 詳細については、[このページ](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)をご覧ください。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 以下のスニペットは、ページをトリミングする方法を示しています：
 

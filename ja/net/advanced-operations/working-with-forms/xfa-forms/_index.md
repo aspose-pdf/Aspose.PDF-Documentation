@@ -87,7 +87,7 @@ sitemap:
 
 Formクラスは、静的AcroFormを扱う機能を提供し、FormクラスのGetFieldFacade(..)メソッドを使用して特定のフィールドインスタンスを取得できます。ただし、XFAフィールドにはForm.GetFieldFacade(..)メソッドを介してアクセスできません。代わりに、[Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa)を使用してフィールド値を取得/設定し、XFAフィールドテンプレートを操作します（フィールドプロパティを設定します）。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## XFAフィールドの入力
 

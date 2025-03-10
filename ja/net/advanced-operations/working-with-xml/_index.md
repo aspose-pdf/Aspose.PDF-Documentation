@@ -80,9 +80,9 @@ sitemap:
 
 XML（拡張可能マークアップ言語）は、ファイル内のデータを再利用する方法や、1つのファイルのデータを別のファイルのデータで置き換えるプロセスを自動化する方法です。XMLスキーマを作成するのは難しく、拡張可能な複数の相互接続されたスキーマを作成するのはさらに難しいです。Aspose.PDFがXMLを操作するタスクにどのように対処するかを学びましょう。
 
-- [サポートされているXMLスキーマ](/pdf/net/supported-xml-schema/) - XMLドキュメントを操作するために以下のXMLスキーマを使用します。
-- [XMLとXSLTに基づくシンプルな「Hello World」例](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - XSLTを使用して既存のXMLドキュメントをPDFに変換します。
-- [XMLからPDFを生成](/pdf/net/generate-pdf-from-xml/) - Aspose.PDFにはXMLドキュメントに基づいてPDFを生成するためのいくつかの方法があります。
+- [サポートされているXMLスキーマ](/pdf/ja/net/supported-xml-schema/) - XMLドキュメントを操作するために以下のXMLスキーマを使用します。
+- [XMLとXSLTに基づくシンプルな「Hello World」例](/pdf/ja/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - XSLTを使用して既存のXMLドキュメントをPDFに変換します。
+- [XMLからPDFを生成](/pdf/ja/net/generate-pdf-from-xml/) - Aspose.PDFにはXMLドキュメントに基づいてPDFを生成するためのいくつかの方法があります。
 
 <script type="application/ld+json">
 {

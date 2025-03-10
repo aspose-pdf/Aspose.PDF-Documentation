@@ -83,24 +83,24 @@ Aspose.PDF for .NETライブラリの最も基本的な機能と要件をこの�
 
 Aspose.PDFについてさらに知るには、適切なセクションを選択してください：
 
-- [なぜAspose.PDFなのか](/pdf/net/why-aspose-pdf/) – Microsoft Office AutomationやOpen XML SDKなどの他の製品よりもAspose製品を使用する方が良い理由を説明します。
-- [インストール](/pdf/net/installation/) – Aspose.PDFのインストール方法に関する情報を提供します。
-- [システム要件](/pdf/net/system-requirements/) – システムおよび開発環境の要件に関する情報を提供します。
-- [Hello World](/pdf/net/hello-world-example/) – C#とAspose.PDFを使用してシンプルなPDFドキュメントを作成する方法に関する情報を提供します。
-- [例を実行する方法](/pdf/net/how-to-run-other-examples/) – 例をダウンロードして実行する方法と、必要なソフトウェア要件について説明します。
-- [複雑なPDF](/pdf/net/complex-pdf-example/) – C#ライブラリを使用してより複雑なドキュメントを作成する方法を説明します。
-- [サポートされているドキュメント形式](/pdf/net/supported-file-formats/) – サポートされている形式に関する情報を提供します。
-- [サポートされている機能](/pdf/net/key-features/) – 様々な形式でドキュメントを読み込んだり保存したりする際にサポートされている機能に関する情報を提供します。
-- [ライセンスとサブスクリプション](/pdf/net/licensing/) – ライセンスの適用方法と複数のAspose製品の使用に関する情報を提供します。
-- [技術サポート](/pdf/net/technical-support/) – このページでは、タスクを迅速かつ質の高い方法で解決するための推奨事項を提供します。
-- [DockerでAspose.PDFを実行する方法](/pdf/net/docker/) – Dockerコンテナ内でAspose.PDFを利用する方法に関する情報を提供します。
-- [Aspose.PDF.Drawing for .NETの概要](/pdf/net/drawing/) – System.Drawingの代わりにAspose.Drawingライブラリを使用する方法に関する情報を提供します。
-- [Aspose.PDF DOM APIの基本](/pdf/net/basics-of-dom-api/) – このセクションでは、DOMを使用する際の機能、構造化されたドキュメントをオブジェクト指向モデルとして表現する方法を示します。
-- [高度な機能](/pdf/net/advanced-features/) – このセクションでは、PDFを操作する際の高度な機能を示します。
+- [なぜAspose.PDFなのか](/pdf/ja/net/why-aspose-pdf/) – Microsoft Office AutomationやOpen XML SDKなどの他の製品よりもAspose製品を使用する方が良い理由を説明します。
+- [インストール](/pdf/ja/net/installation/) – Aspose.PDFのインストール方法に関する情報を提供します。
+- [システム要件](/pdf/ja/net/system-requirements/) – システムおよび開発環境の要件に関する情報を提供します。
+- [Hello World](/pdf/ja/net/hello-world-example/) – C#とAspose.PDFを使用してシンプルなPDFドキュメントを作成する方法に関する情報を提供します。
+- [例を実行する方法](/pdf/ja/net/how-to-run-other-examples/) – 例をダウンロードして実行する方法と、必要なソフトウェア要件について説明します。
+- [複雑なPDF](/pdf/ja/net/complex-pdf-example/) – C#ライブラリを使用してより複雑なドキュメントを作成する方法を説明します。
+- [サポートされているドキュメント形式](/pdf/ja/net/supported-file-formats/) – サポートされている形式に関する情報を提供します。
+- [サポートされている機能](/pdf/ja/net/key-features/) – 様々な形式でドキュメントを読み込んだり保存したりする際にサポートされている機能に関する情報を提供します。
+- [ライセンスとサブスクリプション](/pdf/ja/net/licensing/) – ライセンスの適用方法と複数のAspose製品の使用に関する情報を提供します。
+- [技術サポート](/pdf/ja/net/technical-support/) – このページでは、タスクを迅速かつ質の高い方法で解決するための推奨事項を提供します。
+- [DockerでAspose.PDFを実行する方法](/pdf/ja/net/docker/) – Dockerコンテナ内でAspose.PDFを利用する方法に関する情報を提供します。
+- [Aspose.PDF.Drawing for .NETの概要](/pdf/ja/net/drawing/) – System.Drawingの代わりにAspose.Drawingライブラリを使用する方法に関する情報を提供します。
+- [Aspose.PDF DOM APIの基本](/pdf/ja/net/basics-of-dom-api/) – このセクションでは、DOMを使用する際の機能、構造化されたドキュメントをオブジェクト指向モデルとして表現する方法を示します。
+- [高度な機能](/pdf/ja/net/advanced-features/) – このセクションでは、PDFを操作する際の高度な機能を示します。
 
 ## さらに学ぶ
 
-- [DOM APIの基本](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" C#の例](/pdf/net/hello-world-example/)
-- [複雑なPDF](/pdf/net/complex-pdf-example/)
-- [他の例を実行する方法](/pdf/net/how-to-run-other-examples/)
+- [DOM APIの基本](/pdf/ja/net/basics-of-dom-api/)
+- ["Hello, World" C#の例](/pdf/ja/net/hello-world-example/)
+- [複雑なPDF](/pdf/ja/net/complex-pdf-example/)
+- [他の例を実行する方法](/pdf/ja/net/how-to-run-other-examples/)

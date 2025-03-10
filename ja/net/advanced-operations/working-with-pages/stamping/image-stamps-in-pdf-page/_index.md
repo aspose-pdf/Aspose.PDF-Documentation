@@ -82,7 +82,7 @@ sitemap:
 
 ImageStampクラスを使用してPDFファイルに画像スタンプを追加できます。ImageStampクラスは、高さ、幅、不透明度など、画像ベースのスタンプを作成するために必要なプロパティを提供します。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 画像スタンプを追加するには：
 

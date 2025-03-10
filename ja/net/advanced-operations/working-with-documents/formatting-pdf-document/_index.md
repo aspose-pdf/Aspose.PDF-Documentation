@@ -97,7 +97,7 @@ sitemap:
 - PageLayout – ページレイアウト。
 - PageMode – ドキュメントが最初に開かれたときの表示方法。オプションは、サムネイルを表示、フルスクリーン、添付パネルを表示です。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 次のコードスニペットは、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)クラスを使用してプロパティを取得する方法を示しています。
 

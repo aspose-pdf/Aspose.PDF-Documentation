@@ -83,7 +83,7 @@ PDFドキュメントには、AcroFormとして知られるインタラクティ
 
 ## 実装の詳細
 
-開発者は、PDFドキュメントに新しいフォームやフォームフィールドを追加するだけでなく、既存のフィールドを編集するためにも[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用できます。この記事の範囲は、フォーム編集に関する[Aspose.PDF for .NET](/pdf/net/)の機能に限定されています。
+開発者は、PDFドキュメントに新しいフォームやフォームフィールドを追加するだけでなく、既存のフィールドを編集するためにも[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用できます。この記事の範囲は、フォーム編集に関する[Aspose.PDF for .NET](/pdf/ja/net/)の機能に限定されています。
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor)は、開発者がフォームフィールドを編集するためのメソッドとプロパティのほとんどを含むクラスです。新しいフィールドを追加するだけでなく、既存のフィールドを削除したり、フィールドを別の位置に移動したり、フィールド名や属性を変更したりすることもできます。このクラスが提供する機能のリストは非常に包括的であり、このクラスを使用してフォームフィールドを扱うのは非常に簡単です。
 

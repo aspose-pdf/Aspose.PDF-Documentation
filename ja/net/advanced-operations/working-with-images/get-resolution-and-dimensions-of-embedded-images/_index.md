@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 このトピックでは、画像を抽出せずに解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータクラスの使用方法を説明します。
 

@@ -82,7 +82,7 @@ sitemap:
 
 見出しは、どのドキュメントにおいても重要な部分です。作成者は常に見出しをより目立たせ、読者にとって意味のあるものにしようとします。ドキュメントに複数の見出しがある場合、作成者はこれらの見出しを整理するためのいくつかのオプションを持っています。見出しを整理する最も一般的なアプローチの1つは、番号スタイルで見出しを書くことです。
 
-[Aspose.PDF for .NET](/pdf/net/)は多くの事前定義された番号スタイルを提供しています。これらの事前定義された番号スタイルは、列挙型NumberingStyleに格納されています。NumberingStyle列挙型の事前定義された値とその説明は以下の通りです：
+[Aspose.PDF for .NET](/pdf/ja/net/)は多くの事前定義された番号スタイルを提供しています。これらの事前定義された番号スタイルは、列挙型NumberingStyleに格納されています。NumberingStyle列挙型の事前定義された値とその説明は以下の通りです：
 
 |**見出しの種類**|**説明**|
 | :- | :- |
@@ -97,7 +97,7 @@ sitemap:
 | :- |
 上記の図に示す出力を得るためのソースコードは、以下の例に示されています。
 
-次のコードスニペットは、[Aspose.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -92,7 +92,7 @@ PDFドキュメント管理アプリは、ドキュメントに注釈を付け�
 
 注釈を追加するアプローチは、どの注釈でも一般的です。
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 1. PDFファイルをロードするか、[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)を使用して新しいファイルを作成します。
 1. 新しい注釈を作成し、パラメータ（新しいRectangle、新しいPoint、タイトル、色、幅など）を設定します。

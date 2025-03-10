@@ -81,7 +81,7 @@ sitemap:
 
 ## 既存のPDFファイルにテキスト注釈を追加する方法
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 テキスト注釈は、PDFドキュメント内の特定の位置に添付された注釈です。閉じているとき、注釈はアイコンとして表示され、開くと、読者が選択したフォントとサイズでノートテキストを含むポップアップウィンドウが表示されるべきです。
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 独自の外観ストリームや関連するアクションを持たず、親の注釈辞書のPopupエントリによって識別されます。
 
-次のコードスニペットは、親の[Line annotation](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)を追加する例を使用して、PDFページに[Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)を追加する方法を示しています。
+次のコードスニペットは、親の[Line annotation](/pdf/ja/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)を追加する例を使用して、PDFページに[Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)を追加する方法を示しています。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

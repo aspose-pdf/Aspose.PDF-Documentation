@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Excel ワークシートデータをエクスポートして PDF フォームを埋める](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [Excel ワークシートデータをエクスポートして PDF フォームを埋める](/pdf/ja/net/export-excel-worksheet-data-to-fill-pdf-form/)

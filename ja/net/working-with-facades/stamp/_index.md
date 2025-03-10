@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [既存のPDFに複数行の透かしを追加する](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [中心点を中心にスタンプを回転させる](/pdf/net/rotating-stamp-about-the-center-point/)
+- [既存のPDFに複数行の透かしを追加する](/pdf/ja/net/adding-multi-line-watermark-to-existing-pdf/)
+- [中心点を中心にスタンプを回転させる](/pdf/ja/net/rotating-stamp-about-the-center-point/)

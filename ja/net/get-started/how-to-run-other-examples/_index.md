@@ -85,7 +85,7 @@ sitemap:
 1. Visual Studio 2010以降。
 1. Visual StudioにインストールされたNuGetパッケージマネージャー。最新のNuGet APIバージョンがVisual Studioにインストールされていることを確認してください。NuGetパッケージマネージャーのインストール方法については、<https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools>を確認してください。
 1. `Tools->Options->NuGet Package Manager->Package Sources`に移動し、**nuget.org**オプションがチェックされていることを確認してください。
-1. サンプルプロジェクトはNuGet自動パッケージ復元機能を使用しているため、アクティブなインターネット接続が必要です。例を実行するマシンにアクティブなインターネット接続がない場合は、[インストール](/pdf/net/installation/)を確認し、例プロジェクトにAspose.PDF.dllへの参照を手動で追加してください。
+1. サンプルプロジェクトはNuGet自動パッケージ復元機能を使用しているため、アクティブなインターネット接続が必要です。例を実行するマシンにアクティブなインターネット接続がない場合は、[インストール](/pdf/ja/net/installation/)を確認し、例プロジェクトにAspose.PDF.dllへの参照を手動で追加してください。
 
 ## GitHubからのダウンロード
 

@@ -80,7 +80,7 @@ sitemap:
 
 PDFドキュメントからすべてのフォントを取得したい場合は、Documentクラスで提供されているFontUtilities.GetAllFonts()メソッドを使用できます。 既存のPDFドキュメントからすべてのフォントを取得するためのコードスニペットを以下に示します：
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

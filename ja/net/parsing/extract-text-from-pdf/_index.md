@@ -14,6 +14,6 @@ sitemap:
 ---
 ## このセクションの記事
 
-- [PDFからテキストを抽出する](/pdf/net/extract-text-from-all-pdf/)
-- [PDFから段落を抽出する](/pdf/net/extract-paragraph-from-pdf/)
-- [PDFから上付き文字と下付き文字のテキストを抽出する](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [PDFからテキストを抽出する](/pdf/ja/net/extract-text-from-all-pdf/)
+- [PDFから段落を抽出する](/pdf/ja/net/extract-paragraph-from-pdf/)
+- [PDFから上付き文字と下付き文字のテキストを抽出する](/pdf/ja/net/extract-superscripts-subscripts-from-pdf/)

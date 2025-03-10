@@ -13,4 +13,4 @@ sitemap:
 ---
 このセクションには以下のトピックがあります：
 
-- [Umbraco PDFインポートモジュール](/pdf/net/umbraco-pdf-import-module/)
+- [Umbraco PDFインポートモジュール](/pdf/ja/net/umbraco-pdf-import-module/)

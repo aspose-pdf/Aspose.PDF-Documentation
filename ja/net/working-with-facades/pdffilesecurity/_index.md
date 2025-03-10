@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF ファイルを暗号化する](/pdf/net/encrypt-pdf-file/)
-- [PDF ファイルを復号化する](/pdf/net/decrypt-pdf-file/)
-- [例外 PDF ファイルを制御する](/pdf/net/control-exception/)
-- [PDF ファイルのパスワードを変更する](/pdf/net/change-password/)
-- [既存の PDF ファイルに権限を設定する](/pdf/net/set-privileges/)
+- [PDF ファイルを暗号化する](/pdf/ja/net/encrypt-pdf-file/)
+- [PDF ファイルを復号化する](/pdf/ja/net/decrypt-pdf-file/)
+- [例外 PDF ファイルを制御する](/pdf/ja/net/control-exception/)
+- [PDF ファイルのパスワードを変更する](/pdf/ja/net/change-password/)
+- [既存の PDF ファイルに権限を設定する](/pdf/ja/net/set-privileges/)

@@ -100,14 +100,14 @@ AcroFormsにはXFAにはない機能があり、逆にXFAにはAcroFormsには�
 
 Javaライブラリの機能について詳しく学ぶには、以下の記事を参照してください：
 
-- [AcroFormの作成](/pdf/net/create-form) - C#でゼロからフォームを作成します。
-- [AcroFormの入力](/pdf/net/fill-form) - PDFドキュメントのフォームフィールドに入力します。
-- [AcroFormの抽出](/pdf/net/extract-form) - PDFドキュメントのすべてまたは個々のフィールドから値を取得します。
-- [AcroFormの修正](/pdf/net/modifing-form) - FieldLimitを取得または設定し、フォームフィールドのフォントを設定します。
-- [AcroFormデータの投稿](/pdf/net/posting-acroform-data/) - フォームデータをXMLファイルにインポートおよびエクスポートします。
-- [データのインポートとエクスポート](/pdf/net/import-and-export-data/) - フォームクラスを使用してデータをインポートおよびエクスポートします。
-- [PDFからフォームを削除](/pdf/net/remove-form/) - サブタイプ/フォームに基づいてテキストを削除し、すべてのフォームを削除します。
-- [JSONでのデータのインポートとエクスポート](/pdf/net/import-export-json/) - JSONを使用してデータをインポートおよびエクスポートします。
+- [AcroFormの作成](/pdf/ja/net/create-form) - C#でゼロからフォームを作成します。
+- [AcroFormの入力](/pdf/ja/net/fill-form) - PDFドキュメントのフォームフィールドに入力します。
+- [AcroFormの抽出](/pdf/ja/net/extract-form) - PDFドキュメントのすべてまたは個々のフィールドから値を取得します。
+- [AcroFormの修正](/pdf/ja/net/modifing-form) - FieldLimitを取得または設定し、フォームフィールドのフォントを設定します。
+- [AcroFormデータの投稿](/pdf/ja/net/posting-acroform-data/) - フォームデータをXMLファイルにインポートおよびエクスポートします。
+- [データのインポートとエクスポート](/pdf/ja/net/import-and-export-data/) - フォームクラスを使用してデータをインポートおよびエクスポートします。
+- [PDFからフォームを削除](/pdf/ja/net/remove-form/) - サブタイプ/フォームに基づいてテキストを削除し、すべてのフォームを削除します。
+- [JSONでのデータのインポートとエクスポート](/pdf/ja/net/import-export-json/) - JSONを使用してデータをインポートおよびエクスポートします。
 
 <script type="application/ld+json">
 {

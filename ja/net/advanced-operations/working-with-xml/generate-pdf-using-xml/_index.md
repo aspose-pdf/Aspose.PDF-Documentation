@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも機能します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも機能します。
 
 XML文書からPDF文書を生成することは、XML文書が異なるコンテンツを記述できるため、簡単な作業ではありません。Aspose.PDF for .NETは、XML文書に基づいてPDFを生成するいくつかの方法を提供しています：
 

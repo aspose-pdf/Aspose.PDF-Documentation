@@ -83,28 +83,28 @@ sitemap:
 
 |**注釈タイプ**|**説明**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|テキスト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|リンク注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) フリーテキスト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) 線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) 四角形注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) 円注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) 多角形注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) ポリライン注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/net/highlights-annotation/)|(PDF 1.3) ハイライト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/net/highlights-annotation/)|(PDF 1.3) 下線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Squiggly](/pdf/net/highlights-annotation/)|(PDF 1.4) 波線下線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/net/highlights-annotation/)|(PDF 1.3) 打ち消し線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Stamp](/pdf/net/stamping/)|(PDF 1.3) ゴム印注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) キャレット注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ink](/pdf/net/figures-annotation/)|(PDF 1.3) インク注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Popup](/pdf/net/text-annotation/)|(PDF 1.3) ポップアップ注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/net/multimedia-annotation/)|(PDF 1.2) サウンド注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) 映画注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) ウィジェット注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) スクリーン注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) ウォーターマーク注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) レダクト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Text](/pdf/ja/net/text-annotation/)|テキスト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/ja/net/extra-annotations/)|リンク注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/ja/net/text-annotation/)|(PDF 1.3) フリーテキスト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/ja/net/figures-annotation/)|(PDF 1.3) 線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/ja/net/figures-annotation/)|(PDF 1.3) 四角形注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/ja/net/figures-annotation/)|(PDF 1.3) 円注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/ja/net/figures-annotation/)|(PDF 1.5) 多角形注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/ja/net/figures-annotation/)|(PDF 1.5) ポリライン注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/ja/net/highlights-annotation/)|(PDF 1.3) ハイライト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/ja/net/highlights-annotation/)|(PDF 1.3) 下線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/ja/net/highlights-annotation/)|(PDF 1.4) 波線下線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/ja/net/highlights-annotation/)|(PDF 1.3) 打ち消し線注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Stamp](/pdf/ja/net/stamping/)|(PDF 1.3) ゴム印注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/ja/net/extra-annotations/)|(PDF 1.5) キャレット注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ink](/pdf/ja/net/figures-annotation/)|(PDF 1.3) インク注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Popup](/pdf/ja/net/text-annotation/)|(PDF 1.3) ポップアップ注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/ja/net/multimedia-annotation/)|(PDF 1.2) サウンド注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/ja/net/multimedia-annotation/)|(PDF 1.2) 映画注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/ja/net/multimedia-annotation/)|(PDF 1.2) ウィジェット注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/ja/net/multimedia-annotation/)|(PDF 1.5) スクリーン注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/ja/net/sticky-annotations/)|(PDF 1.6) ウォーターマーク注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/ja/net/extra-annotations/)|(PDF 1.7) レダクト注釈|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

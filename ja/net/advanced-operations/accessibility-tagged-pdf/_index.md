@@ -83,12 +83,12 @@ sitemap:
 
 このセクションでは、以下のトピックを扱います：
 
-- [タグ付きPDFを作成](/pdf/net/create-tagged-pdf/)
-- [タグ付きPDFを編集](/pdf/net/edit-pdf-file-tags/)
-- [タグ付きPDFからタグ付きコンテンツを抽出](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [構造要素のプロパティを設定](/pdf/net/setting-structure-elements-properties/)
-- [タグ付きPDFのテーブルを操作](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [PDF-UA準拠テスト - エラーリスト](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [タグ付きPDFを作成](/pdf/ja/net/create-tagged-pdf/)
+- [タグ付きPDFを編集](/pdf/ja/net/edit-pdf-file-tags/)
+- [タグ付きPDFからタグ付きコンテンツを抽出](/pdf/ja/net/extract-tagged-content-from-tagged-pdfs/)
+- [構造要素のプロパティを設定](/pdf/ja/net/setting-structure-elements-properties/)
+- [タグ付きPDFのテーブルを操作](/pdf/ja/net/working-with-table-in-tagged-pdfs/)
+- [PDF-UA準拠テスト - エラーリスト](/pdf/ja/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

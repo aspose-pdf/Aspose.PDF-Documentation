@@ -91,7 +91,7 @@ PDFドキュメントをPDF/A-1aまたはPDF/A-1b互換性のために検証す�
 
 {{% /alert %}}
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 次のコードスニペットは、PDF/A-1AのPDFドキュメントを検証する方法を示しています。
 

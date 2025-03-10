@@ -75,7 +75,7 @@ description: COM Interopを通じてASPおよびJScriptアプリケーション�
 
 {{% alert color="primary" %}}
 
-これは、[Aspose.PDF for .NET](/pdf/net/)とCOM Interopを通じてPDFファイルに単純なテキスト文字列を追加する方法を示すシンプルなASPアプリケーションです。
+これは、[Aspose.PDF for .NET](/pdf/ja/net/)とCOM Interopを通じてPDFファイルに単純なテキスト文字列を追加する方法を示すシンプルなASPアプリケーションです。
 
 {{% /alert %}}
 

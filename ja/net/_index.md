@@ -103,25 +103,25 @@ Aspose.PDF for .NETは以下の主要機能を提供します：
 
 ## 章
 
-- [新機能](/pdf/net/whatsnew/)
-- [概要](/pdf/net/overview/)
-- [始める](/pdf/net/get-started/)
-- [基本操作](/pdf/net/basic-operations/)
-- [ドキュメントの変換](/pdf/net/converting/)
-- [PDFドキュメントの解析](/pdf/net/parsing/)
-- [高度な操作](/pdf/net/advanced-operations/)
-- [ファサードの使用](/pdf/net/working-with-facades)
-- [他の言語での使用](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [ショーケース](/pdf/net/showcases/)
-- [プラグイン](/pdf/net/plugins/)
-- [FAQ](/pdf/net/faq/)
+- [新機能](/pdf/ja/net/whatsnew/)
+- [概要](/pdf/ja/net/overview/)
+- [始める](/pdf/ja/net/get-started/)
+- [基本操作](/pdf/ja/net/basic-operations/)
+- [ドキュメントの変換](/pdf/ja/net/converting/)
+- [PDFドキュメントの解析](/pdf/ja/net/parsing/)
+- [高度な操作](/pdf/ja/net/advanced-operations/)
+- [ファサードの使用](/pdf/ja/net/working-with-facades)
+- [他の言語での使用](/pdf/ja/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [ショーケース](/pdf/ja/net/showcases/)
+- [プラグイン](/pdf/ja/net/plugins/)
+- [FAQ](/pdf/ja/net/faq/)
 - [リリースノート](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Aspose.PDF for .NET リソース
 
 以下は、タスクを達成するために必要な便利なリソースへのリンクです。
 
-- [Aspose.PDF for .NET 機能](/pdf/net/key-features/)
+- [Aspose.PDF for .NET 機能](/pdf/ja/net/key-features/)
 - [Aspose.PDF for .NET リリースノート](https://releases.aspose.com/pdf/net/release-notes/)
 - [Aspose.PDF for .NET 製品ページ](https://products.aspose.com/pdf/net/)
 - [Aspose.PDF for .NETをダウンロード](https://releases.aspose.com/pdf/net/)

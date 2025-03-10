@@ -83,14 +83,14 @@ sitemap:
 
 次のことができます：
 
-- [PDFファイルにテキストを追加](/pdf/net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。
-- [PDFツールチップ](/pdf/net/pdf-tooltip/) - C#を使用して、検索したテキストに不可視ボタンを追加することでツールチップを追加できます。
-- [PDF内のテキストフォーマット](/pdf/net/text-formatting-inside-pdf/) - テキストをフォーマットする際にドキュメントに追加できる多くの機能があります。行のインデントを追加し、テキストの境界線を追加し、下線付きテキストを追加し、Aspose.PDFライブラリを使用して改行を追加します。
-- [フローティングボックスの使用](/pdf/net/floating-box/) - フローティングボックスツールは、PDFページにテキストやその他のコンテンツを配置するための特別なツールです。
-- [PDF内のテキストを置換](/pdf/net/replace-text-in-pdf/) - PDFドキュメントのすべてのページでテキストを置換します。最初にTextFragmentAbsorberを使用する必要があります。
-- [PDF内のテキストを回転](/pdf/net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転します。
-- [PDFドキュメントのページからテキストを検索して取得](/pdf/net/search-and-get-text-from-pdf/) - TextFragmentAbsorberクラスを使用してページからテキストを検索して取得できます。
-- [行の改行を決定](/pdf/net/determine-line-break/) - このトピックでは、複数行のテキストフラグメントの行の改行を追跡する方法について説明します。
+- [PDFファイルにテキストを追加](/pdf/ja/net/add-text-to-pdf-file/) - PDFにテキストを追加し、ストリームやファイルからフォントを使用し、HTML文字列を追加し、ハイパーリンクを追加するなど。
+- [PDFツールチップ](/pdf/ja/net/pdf-tooltip/) - C#を使用して、検索したテキストに不可視ボタンを追加することでツールチップを追加できます。
+- [PDF内のテキストフォーマット](/pdf/ja/net/text-formatting-inside-pdf/) - テキストをフォーマットする際にドキュメントに追加できる多くの機能があります。行のインデントを追加し、テキストの境界線を追加し、下線付きテキストを追加し、Aspose.PDFライブラリを使用して改行を追加します。
+- [フローティングボックスの使用](/pdf/ja/net/floating-box/) - フローティングボックスツールは、PDFページにテキストやその他のコンテンツを配置するための特別なツールです。
+- [PDF内のテキストを置換](/pdf/ja/net/replace-text-in-pdf/) - PDFドキュメントのすべてのページでテキストを置換します。最初にTextFragmentAbsorberを使用する必要があります。
+- [PDF内のテキストを回転](/pdf/ja/net/rotate-text-inside-pdf/) - TextFragmentクラスの回転プロパティを使用してPDF内のテキストを回転します。
+- [PDFドキュメントのページからテキストを検索して取得](/pdf/ja/net/search-and-get-text-from-pdf/) - TextFragmentAbsorberクラスを使用してページからテキストを検索して取得できます。
+- [行の改行を決定](/pdf/ja/net/determine-line-break/) - このトピックでは、複数行のテキストフラグメントの行の改行を追跡する方法について説明します。
 
 <script type="application/ld+json">
 {

@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** APIを使用すると、ドキュメントにフォントがない場合にデフォルトフォント名を設定できます。RenderingOptionsクラスのDefaultFontNameプロパティを使用してデフォルトフォント名を設定できます。DefaultFontNameがnullに設定されている場合、**Times New Roman**フォントが使用されます。次のコードスニペットは、PDFを画像に保存する際にデフォルトフォント名を設定する方法を示しています。
 
-次のコードスニペットは、[Aspose.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

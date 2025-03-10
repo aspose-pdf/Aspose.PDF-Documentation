@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-次のコードスニペットは、[Aspose.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ## PDFドキュメントをファイルシステムに保存
 
@@ -125,7 +125,7 @@ private static void SaveDocumentStream()
 }
 ```
 
-詳細な説明については、[Showcase](/pdf/net/showcases/)セクションをご覧ください。
+詳細な説明については、[Showcase](/pdf/ja/net/showcases/)セクションをご覧ください。
 
 ## PDF/AまたはPDF/X形式で保存
 

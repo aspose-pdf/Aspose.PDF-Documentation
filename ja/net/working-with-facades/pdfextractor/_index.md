@@ -12,7 +12,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-- [テキストを抽出](/pdf/net/extract-text/)
-- [画像を抽出](/pdf/net/extract-images/)
-- [添付ファイルを抽出](/pdf/net/extract-attachments/)
-- [PDF ファイルに画像またはテキストのみが含まれているかを確認](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [テキストを抽出](/pdf/ja/net/extract-text/)
+- [画像を抽出](/pdf/ja/net/extract-images/)
+- [添付ファイルを抽出](/pdf/ja/net/extract-attachments/)
+- [PDF ファイルに画像またはテキストのみが含まれているかを確認](/pdf/ja/net/find-whether-pdf-file-contains-images-or-text-only/)

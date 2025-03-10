@@ -87,7 +87,7 @@ Aspose.PDF for .NETを使用すると、ファイル内の任意の位置にPDF�
 
 Aspose.PDF for .NETを使用すると、ファイル内の任意の位置にPDFドキュメントにページを挿入したり、PDFファイルの最後にページを追加したりできます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/net/drawing/)ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ### 所定の位置にPDFファイルに空白ページを挿入
 

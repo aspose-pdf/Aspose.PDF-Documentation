@@ -97,9 +97,9 @@ sitemap:
 
 ### Linuxコンテナ内のASP.NET Core Web Appを使用してPDFドキュメントを生成する
 
-このアプリでは、**複雑な例**のコードを使用します。詳細な説明については[こちらのリンク](/pdf/net/complex-pdf-example/)を参照してください。
+このアプリでは、**複雑な例**のコードを使用します。詳細な説明については[こちらのリンク](/pdf/ja/net/complex-pdf-example/)を参照してください。
 
-1. `wwwroot`フォルダ内に`images`フォルダを作成し、画像`logo.png`を置きます。この画像は[こちら](/pdf/net/docker/logo.png)からダウンロードできます。
+1. `wwwroot`フォルダ内に`images`フォルダを作成し、画像`logo.png`を置きます。この画像は[こちら](/pdf/ja/net/docker/logo.png)からダウンロードできます。
 1. `wwwroot`フォルダ内に`fonts`フォルダを作成し、[Roboto](https://fonts.google.com/specimen/Roboto)フォントをそこに置きます。
 1. `wwwroot`フォルダ内に`samples`フォルダを作成し、サンプルデータをそこに置きます。
 1. `HomeController.cs`内のコードを以下のスニペットに置き換えます（別の名前空間を持つことができますのでご注意ください）：

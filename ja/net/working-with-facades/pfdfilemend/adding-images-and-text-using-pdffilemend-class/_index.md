@@ -77,7 +77,7 @@ draft: false
 
 [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend)クラスは、既存のPDF文書に指定された位置で画像とテキストを追加するのに役立ちます。 [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)および[AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)という名前の2つのメソッドを提供します。[AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index)メソッドを使用すると、JPG、GIF、PNG、BMP形式の画像を追加できます。[AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index)メソッドは、[FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)クラスの引数を取り、既存のPDFファイルに追加します。画像とテキストは、左下と右上の座標で指定された矩形領域に追加できます。画像を追加する際には、画像ファイルのパスまたは画像ファイルのストリームを指定できます。画像またはテキストを追加するページ番号を指定するために、これらのメソッドはページ番号の引数を提供します。したがって、指定された位置だけでなく、指定されたページにも画像とテキストを追加できます。
 
-画像はPDF文書の内容の重要な部分です。既存のPDFファイル内の画像を操作することは、PDFファイルを扱う人々にとって一般的な要件です。この記事では、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用して、既存のPDFファイル内の画像を操作する方法を探ります。[Aspose.PDF for .NET](/pdf/net/)のすべての画像関連操作は、この文書にまとめられています。
+画像はPDF文書の内容の重要な部分です。既存のPDFファイル内の画像を操作することは、PDFファイルを扱う人々にとって一般的な要件です。この記事では、[Aspose.Pdf.Facades名前空間](https://reference.aspose.com/pdf/net/aspose.pdf.facades)を使用して、既存のPDFファイル内の画像を操作する方法を探ります。[Aspose.PDF for .NET](/pdf/ja/net/)のすべての画像関連操作は、この文書にまとめられています。
 
 ## 実装の詳細
 
@@ -122,7 +122,7 @@ private static void AddImage01()
 }
 ```
 
-![画像を追加](/pdf/net/images/add_image1.png)
+![画像を追加](/pdf/ja/net/images/add_image1.png)
 
 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)を使用すると、1つの画像を別の画像の上に重ねることができます：
 
@@ -163,7 +163,7 @@ private static void AddImage02()
 }
 ```
 
-![画像を追加](/pdf/net/images/add_image2.png)
+![画像を追加](/pdf/ja/net/images/add_image2.png)
 
 PDFファイルに画像を保存する方法はいくつかあります。次の例でそのうちの1つを示します：
 
@@ -277,7 +277,7 @@ private static void AddText01()
 
 どのように見えるか確認してください：
 
-![テキストを追加](/pdf/net/images/add_text.png)
+![テキストを追加](/pdf/ja/net/images/add_text.png)
 
 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)を追加する2番目の方法です。さらに、テキストが収まる矩形を指定します。
 
