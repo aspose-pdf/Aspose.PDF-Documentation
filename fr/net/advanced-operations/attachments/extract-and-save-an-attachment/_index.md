@@ -1,10 +1,12 @@
 ---
-title: Extraire et Sauvegarder une Pièce Jointe
-linktitle: Extraire et Sauvegarder une Pièce Jointe
+title: Extraire et enregistrer une pièce jointe
+linktitle: Extraire et enregistrer une pièce jointe
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /fr/net/extract-and-save-an-attachment/
-description: Aspose.PDF pour .NET vous permet de récupérer toutes les pièces jointes d'un document PDF. De plus, vous pouvez récupérer une pièce jointe individuelle de votre document.
+description: Aspose.PDF for .NET vous permet d'obtenir toutes les pièces jointes d'un document PDF. De plus, vous pouvez obtenir une pièce jointe individuelle de votre document.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extraire et Sauvegarder une Pièce Jointe",
-    "alternativeHeadline": "Comment extraire et sauvegarder une pièce jointe",
+    "headline": "Extract and Save an Attachment",
+    "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
+    "abstract": "Aspose.PDF for .NET introduit une fonctionnalité puissante qui permet aux utilisateurs d'extraire et d'enregistrer des pièces jointes de documents PDF sans effort. Cette fonctionnalité permet de récupérer tous les fichiers intégrés ou des pièces jointes spécifiques, améliorant la gestion des documents et l'accessibilité pour les développeurs travaillant avec des fichiers PDF. Optimisez vos flux de travail PDF en gérant sans effort les pièces jointes avec cet outil innovant",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, sauvegarder des pièces jointes, extraire des pièces jointes",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
+    "wordcount": "604",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,107 +74,119 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-and-save-an-attachment/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF pour .NET vous permet de récupérer toutes les pièces jointes d'un document PDF. De plus, vous pouvez récupérer une pièce jointe individuelle de votre document."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET vous permet d'obtenir toutes les pièces jointes d'un document PDF. De plus, vous pouvez obtenir une pièce jointe individuelle de votre document."
 }
 </script>
-## Obtenir Tous les Pièces Jointes
 
-Avec Aspose.PDF, il est possible d'obtenir toutes les pièces jointes d'un document PDF. Cela est utile soit lorsque vous souhaitez enregistrer les documents séparément du PDF, soit si vous avez besoin de retirer les pièces jointes d'un PDF.
+## Obtenir toutes les pièces jointes
+
+Avec Aspose.PDF, il est possible d'obtenir toutes les pièces jointes d'un document PDF. Cela est utile soit lorsque vous souhaitez enregistrer les documents séparément du PDF, soit si vous devez retirer un PDF de ses pièces jointes.
 
 Pour obtenir toutes les pièces jointes d'un fichier PDF :
 
-1. Parcourir la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). La collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contient toutes les pièces jointes. Chaque élément de cette collection représente un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Chaque itération de la boucle foreach à travers la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retourne un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Parcourez la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). La collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) contient toutes les pièces jointes. Chaque élément de cette collection représente un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Chaque itération de la boucle foreach à travers la collection [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) retourne un objet [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Une fois l'objet disponible, récupérez soit toutes les propriétés du fichier joint, soit le fichier lui-même.
+
 Les extraits de code suivants montrent comment obtenir toutes les pièces jointes d'un document PDF.
 
-L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
-
-// Obtenir la collection des fichiers intégrés
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-
-// Obtenir le nombre de fichiers intégrés
-Console.WriteLine("Nombre total de fichiers : {0}", embeddedFiles.Count);
-
-int count = 1;
-
-// Parcourir la collection pour obtenir toutes les pièces jointes
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAttachments()
 {
-    Console.WriteLine("Nom : {0}", fileSpecification.Name);
-    Console.WriteLine("Description : {0}",
-    fileSpecification.Description);
-    Console.WriteLine("Type MIME : {0}", fileSpecification.MIMEType);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-    // Vérifier si l'objet paramètre contient les paramètres
-    if (fileSpecification.Params != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
     {
-        Console.WriteLine("Somme de contrôle : {0}",
-        fileSpecification.Params.CheckSum);
-        Console.WriteLine("Date de création : {0}",
-        fileSpecification.Params.CreationDate);
-        Console.WriteLine("Date de modification : {0}",
-        fileSpecification.Params.ModDate);
-        Console.WriteLine("Taille : {0}", fileSpecification.Params.Size);
-    }
+        // Get embedded files collection
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
-    // Obtenir la pièce jointe et écrire dans un fichier ou un flux
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+        // Get count of the embedded files
+        Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+        int count = 1;
+
+        // Loop through the collection to get all the attachments
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            Console.WriteLine("Name: {0}", fileSpecification.Name);
+            Console.WriteLine("Description: {0}",
+            fileSpecification.Description);
+            Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+            // Check if parameter object contains the parameters
+            if (fileSpecification.Params != null)
+            {
+                Console.WriteLine("CheckSum: {0}",
+                fileSpecification.Params.CheckSum);
+                Console.WriteLine("Creation Date: {0}",
+                fileSpecification.Params.CreationDate);
+                Console.WriteLine("Modification Date: {0}",
+                fileSpecification.Params.ModDate);
+                Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+            }
+
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+            count += 1;
+        }
+    }
 }
 ```
+
 ## Obtenir une pièce jointe individuelle
 
-Pour obtenir une pièce jointe individuelle, nous pouvons spécifier l'index de la pièce jointe dans l'objet `EmbeddedFiles` d'une instance de Document. Veuillez essayer d'utiliser le morceau de code suivant.
+Pour obtenir une pièce jointe individuelle, nous pouvons spécifier l'index de la pièce jointe dans l'objet `EmbeddedFiles` de l'instance de Document. Veuillez essayer d'utiliser l'extrait de code suivant.
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
-
-// Obtenir un fichier embarqué particulier
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
-
-// Obtenir les propriétés du fichier
-Console.WriteLine("Nom : {0}", fileSpecification.Name);
-Console.WriteLine("Description : {0}", fileSpecification.Description);
-Console.WriteLine("Type MIME : {0}", fileSpecification.MIMEType);
-
-// Vérifier si l'objet paramètre contient les paramètres
-if (fileSpecification.Params != null)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
 {
-    Console.WriteLine("Somme de contrôle : {0}",
-    fileSpecification.Params.CheckSum);
-    Console.WriteLine("Date de création : {0}",
-    fileSpecification.Params.CreationDate);
-    Console.WriteLine("Date de modification : {0}",
-    fileSpecification.Params.ModDate);
-    Console.WriteLine("Taille : {0}", fileSpecification.Params.Size);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf"))
+    {
+        // Get particular embedded file
+        Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+        // Get the file properties
+        Console.WriteLine("Name: {0}", fileSpecification.Name);
+        Console.WriteLine("Description: {0}", fileSpecification.Description);
+        Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+        // Check if parameter object contains the parameters
+        if (fileSpecification.Params != null)
+        {
+            Console.WriteLine("CheckSum: {0}",
+            fileSpecification.Params.CheckSum);
+            Console.WriteLine("Creation Date: {0}",
+            fileSpecification.Params.CreationDate);
+            Console.WriteLine("Modification Date: {0}",
+            fileSpecification.Params.ModDate);
+            Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+        }
+
+        // Get the attachment and write to file or stream
+        byte[] fileContent = new byte[fileSpecification.Contents.Length];
+        fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+
+        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+        {
+            fileStream.Write(fileContent, 0, fileContent.Length);
+        }
+    }
 }
-
-// Obtenir la pièce jointe et écrire dans un fichier ou un flux
-byte[] fileContent = new byte[fileSpecification.Contents.Length];
-fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
 ```
 
 <script type="application/ld+json">
@@ -200,21 +215,21 @@ fileStream.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -225,7 +240,7 @@ fileStream.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -237,5 +252,3 @@ fileStream.Close();
     }
 }
 </script>
-```
-

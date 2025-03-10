@@ -1,7 +1,9 @@
 ---
-title: PDF Tooltip using C#
-linktitle: PDF Tooltip
+title: Infobulle PDF utilisant C#
+linktitle: Infobulle PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /fr/net/pdf-tooltip/
 description: Apprenez à ajouter une infobulle au fragment de texte dans un PDF en utilisant C# et Aspose.PDF
@@ -15,21 +17,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "PDF Tooltip using C#",
-    "alternativeHeadline": "Add PDF Tooltip to the Text",
+    "alternativeHeadline": "Add Interactive Tooltips to PDF Text in C#",
+    "abstract": "Améliorez vos documents PDF avec la nouvelle fonctionnalité d'infobulle PDF en utilisant C#. Cette fonctionnalité vous permet d'ajouter facilement des infobulles aux fragments de texte dans les fichiers PDF, fournissant aux utilisateurs des informations supplémentaires lors du survol. Utilisez des boutons invisibles et des blocs de texte cachés pour créer une expérience de lecture dynamique et interactive avec Aspose.PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, add pdf tooltip",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "1072",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,157 +73,170 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-tooltip/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Apprenez à ajouter une infobulle au fragment de texte dans un PDF en utilisant C# et Aspose.PDF"
 }
 </script>
-```
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Ajouter une infobulle au texte recherché en ajoutant un bouton invisible
 
-Il est souvent nécessaire d'ajouter des détails pour une phrase ou un mot spécifique sous forme d'infobulle dans le document PDF afin qu'elle apparaisse lorsque l'utilisateur passe le curseur de la souris sur le texte. Aspose.PDF pour .NET offre cette fonctionnalité de créer des infobulles en ajoutant un bouton invisible sur le texte recherché. Le fragment de code suivant vous montrera comment atteindre cette fonctionnalité :
+Il est souvent nécessaire d'ajouter des détails pour une phrase ou un mot spécifique en tant qu'infobulle dans le document PDF afin qu'elle puisse apparaître lorsque l'utilisateur survole le texte. Aspose.PDF for .NET fournit cette fonctionnalité pour créer des infobulles en ajoutant un bouton invisible sur le texte recherché. Le code suivant vous montrera comment réaliser cette fonctionnalité :
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-string outputFile = dataDir + "Tooltip_out.pdf";
-
-// Créer un document exemple avec texte
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Déplacez le curseur de la souris ici pour afficher une infobulle"));
-doc.Pages[1].Paragraphs.Add(new TextFragment("Déplacez le curseur de la souris ici pour afficher une infobulle très longue"));
-doc.Save(outputFile);
-
-// Ouvrir le document avec texte
-Document document = new Document(outputFile);
-// Créer un objet TextAbsorber pour trouver toutes les phrases correspondant à l'expression régulière
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("Déplacez le curseur de la souris ici pour afficher une infobulle");
-// Accepter l'absorbeur pour les pages du document
-document.Pages.Accept(absorber);
-// Obtenir les fragments de texte extraits
-TextFragmentCollection textFragments = absorber.TextFragments;
-
-// Boucle à travers les fragments
-foreach (TextFragment fragment in textFragments)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTooltipToSearchedText()
 {
-    // Créer un bouton invisible à la position du fragment de texte
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // La valeur AlternateName sera affichée comme infobulle par une application de visualisation
-    field.AlternateName = "Infobulle pour le texte.";
-    // Ajouter le champ bouton au document
-    document.Form.Add(field);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the extracted text fragments
+        var textFragments = absorber.TextFragments;
+
+        // Loop through the fragments
+        foreach (var fragment in textFragments)
+        {
+            // Create invisible button on text fragment position
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // AlternateName value will be displayed as tooltip by a viewer application
+            field.AlternateName = "Tooltip for text.";
+            // Add button field to the document
+            document.Form.Add(field);
+        }
+
+        absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
+        document.Pages.Accept(absorber);
+        textFragments = absorber.TextFragments;
+
+        foreach (var fragment in textFragments)
+        {
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // Set very long text
+            field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
+                                    " deserunt mollit anim id est laborum.";
+            document.Form.Add(field);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
 }
-
-// Ensuite sera un exemple d'infobulle très longue
-absorber = new TextFragmentAbsorber("Déplacez le curseur de la souris ici pour afficher une infobulle très longue");
-document.Pages.Accept(absorber);
-textFragments = absorber.TextFragments;
-
-foreach (TextFragment fragment in textFragments)
-{
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // Définir un texte très long
-    field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                            " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                            " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                            " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                            " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                            " deserunt mollit anim id est laborum.";
-    document.Form.Add(field);
-}
-
-// Sauvegarder le document
-document.Save(outputFile);
 ```
+
 {{% alert color="primary" %}}
 
-Concernant la longueur de l'infobulle, le texte de l'infobulle est contenu dans le document PDF sous forme de chaîne PDF, en dehors du flux de contenu. Il n'y a pas de restriction effective sur de telles chaînes dans les fichiers PDF (voir Annexe C de la référence PDF). Cependant, un lecteur conforme (par exemple, Adobe Acrobat) fonctionnant sur un processeur particulier et dans un environnement d'exploitation particulier a une telle limite. Veuillez vous référer à la documentation de votre application de lecteur PDF.
+Concernant la longueur de l'infobulle, le texte de l'infobulle est contenu dans le document PDF en tant que type de chaîne PDF, en dehors du flux de contenu. Il n'y a pas de restriction effective sur de telles chaînes dans les fichiers PDF (voir l'Annexe C de la référence PDF). Cependant, un lecteur conforme (par exemple, Adobe Acrobat) fonctionnant sur un processeur particulier et dans un environnement d'exploitation particulier a une telle limite. Veuillez vous référer à la documentation de votre application de lecteur PDF.
 
 {{% /alert %}}
 
-## Créer un Bloc de Texte Caché et l'Afficher au Survol de la Souris
+## Créer un bloc de texte caché et l'afficher au survol de la souris
 
-Dans Aspose.PDF, une fonctionnalité pour masquer des actions est implémentée par laquelle il est possible de montrer/masquer un champ de texte (ou tout autre type d'annotation) lors de l'entrée/sortie de la souris sur un bouton invisible. À cette fin, la classe Aspose.Pdf.Annotations.HideAction est utilisée pour assigner l'action de masquer/afficher au bloc de texte. Veuillez utiliser le fragment de code suivant pour Afficher/Masquer un Bloc de Texte à l'Entrée/Sortie de la Souris.
+Dans Aspose.PDF, une fonctionnalité pour cacher des actions est mise en œuvre par laquelle il est possible d'afficher/cacher un champ de zone de texte (ou tout autre type d'annotation) lors de l'entrée/sortie de la souris sur un bouton invisible. À cette fin, la classe Aspose.Pdf.Annotations.HideAction est utilisée pour assigner l'action de cacher/montrer au bloc de texte. Veuillez utiliser le code suivant pour afficher/cacher un bloc de texte lors de l'entrée/sortie de la souris.
 
-Veuillez également prendre en compte que les actions PDF dans les documents fonctionnent bien dans les lecteurs conformes (par exemple,
-Veuillez également prendre en compte que les actions PDF dans les documents fonctionnent correctement dans les lecteurs conformes (par exemple,
+Veuillez également prendre en compte que les actions PDF dans les documents fonctionnent bien dans les lecteurs conformes (par exemple, Adobe Reader) mais aucune garantie pour d'autres lecteurs PDF (par exemple, les plugins de navigateur web). Nous avons effectué une brève enquête et constaté :
 
-- Toutes les implémentations de l'action de masquage dans les documents PDF fonctionnent correctement dans Internet Explorer v.11.0.
-- Toutes les implémentations de l'action de masquage fonctionnent également dans Opera v.12.14, mais nous constatons un certain retard de réponse lors de la première ouverture du document.
-- Seule l'implémentation utilisant le constructeur HideAction acceptant le nom du champ fonctionne si Google Chrome v.61.0 parcourt le document ; Veuillez utiliser les constructeurs correspondants si la navigation dans Google Chrome est significative :
+- Toutes les implémentations de l'action de cacher dans les documents PDF fonctionnent bien dans Internet Explorer v.11.0.
+- Toutes les implémentations de l'action de cacher fonctionnent également dans Opera v.12.14, mais nous avons remarqué un certain délai de réponse lors de la première ouverture du document.
+- Seule l'implémentation utilisant le constructeur HideAction acceptant le nom du champ fonctionne si Google Chrome v.61.0 parcourt le document ; veuillez utiliser les constructeurs correspondants si la navigation dans Google Chrome est significative :
 
 >buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateHiddenTextBlock()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-string outputFile = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add paragraph with text
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
+        // Save PDF document
+        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
+    }
 
-// Créer un document exemple avec du texte
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Déplacez le curseur de la souris ici pour afficher le texte flottant"));
-doc.Save(outputFile);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the first extracted text fragment
+        var textFragments = absorber.TextFragments;
+        var fragment = textFragments[1];
 
-// Ouvrir le document avec le texte
-Document document = new Document(outputFile);
-// Créer un objet TextAbsorber pour trouver toutes les phrases correspondant à l'expression régulière
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("Déplacez le curseur de la souris ici pour afficher le texte flottant");
-// Accepter l'absorbeur pour les pages du document
-document.Pages.Accept(absorber);
-// Obtenir le premier fragment de texte extrait
-TextFragmentCollection textFragments = absorber.TextFragments;
-TextFragment fragment = textFragments[1];
+        // Create hidden text field for floating text in the specified rectangle of the page
+        var floatingField = new Aspose.Pdf.Forms.TextBoxField(fragment.Page, new Aspose.Pdf.Rectangle(100, 700, 220, 740));
+        // Set text to be displayed as field value
+        floatingField.Value = "This is the \"floating text field\".";
+        // We recommend to make field 'readonly' for this scenario
+        floatingField.ReadOnly = true;
+        // Set 'hidden' flag to make field invisible on document opening
+        floatingField.Flags |= Aspose.Pdf.Annotations.AnnotationFlags.Hidden;
 
-// Créer un champ de texte caché pour le texte flottant dans le rectangle spécifié de la page
-TextBoxField floatingField = new TextBoxField(fragment.Page, new Rectangle(100, 700, 220, 740));
-// Définir le texte à afficher comme valeur de champ
-floatingField.Value = "Ceci est le \"champ de texte flottant\".";
-// Nous recommandons de rendre le champ 'en lecture seule' pour ce scénario
-floatingField.ReadOnly = true;
-// Définir le drapeau 'caché' pour rendre le champ invisible à l'ouverture du document
-floatingField.Flags |= AnnotationFlags.Hidden;
+        // Setting a unique field name isn't necessary but allowed
+        floatingField.PartialName = "FloatingField_1";
 
-// Définir un nom de champ unique n'est pas nécessaire mais autorisé
-floatingField.PartialName = "FloatingField_1";
+        // Setting characteristics of field appearance isn't necessary but makes it better
+        floatingField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
+        floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
+        floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
+        floatingField.Border = new Aspose.Pdf.Annotations.Border(floatingField);
+        floatingField.Border.Width = 1;
+        floatingField.Multiline = true;
 
-// Définir les caractéristiques de l'apparence du champ n'est pas nécessaire mais le rend meilleur
-floatingField.DefaultAppearance = new DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
-floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
-floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
-floatingField.Border = new Border(floatingField);
-floatingField.Border.Width = 1;
-floatingField.Multiline = true;
+        // Add text field to the document
+        document.Form.Add(floatingField);
 
-// Ajouter le champ de texte au document
-document.Form.Add(floatingField);
+        // Create invisible button on text fragment position
+        var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+        // Create new hide action for specified field (annotation) and invisibility flag
+        // (You also may reffer floating field by the name if you specified it above)
+        // Add actions on mouse enter/exit at the invisible button field
+        buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
+        buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
 
-// Créer un bouton invisible sur la position du fragment de texte
-ButtonField buttonField = new ButtonField(fragment.Page, fragment.Rectangle);
-// Créer une nouvelle action de masquage pour le champ spécifié (annotation) et le drapeau d'invisibilité.
-// (Vous pouvez également référer le champ flottant par le nom si vous l'avez spécifié ci-dessus.)
-// Ajouter des actions à l'entrée/sortie de la souris sur le champ de bouton invisible
-buttonField.Actions.OnEnter = new HideAction(floatingField, false);
-buttonField.Actions.OnExit = new HideAction(floatingField);
+        // Add button field to the document
+        document.Form.Add(buttonField);
 
-// Ajouter le champ de bouton au document
-document.Form.Add(buttonField);
-
-// Sauvegarder le document
-document.Save(outputFile);
+        // Save PDF document
+        document.Save(dataDir + "CreateHiddenTextBlock_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -243,21 +258,21 @@ document.Save(outputFile);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -268,7 +283,7 @@ document.Save(outputFile);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -280,5 +295,3 @@ document.Save(outputFile);
     }
 }
 </script>
-```
-

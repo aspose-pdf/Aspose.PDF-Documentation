@@ -1,7 +1,9 @@
 ---
-title: Convertir HTML en PDF en .NET
+title: Convertir HTML en PDF dans .NET
 linktitle: Convertir un fichier HTML en PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /fr/net/convert-html-to-pdf/
 lastmod: "2021-11-01"
@@ -10,31 +12,96 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert HTML to PDF in .NET",
+    "alternativeHeadline": "Convert HTML and MHTML to PDF with C#",
+    "abstract": "La fonctionnalité de conversion dans Aspose.PDF for .NET permet la transformation transparente de documents HTML et MHTML en fichiers PDF de haute qualité. Avec des options de personnalisation avancées, les utilisateurs peuvent contrôler l'incorporation des polices, les requêtes multimédias et la gestion des ressources externes tout en s'assurant que les pages web ou les fichiers HTML locaux sont rendus avec précision au format PDF avec une flexibilité adaptée à leurs besoins spécifiques.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1889",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-html-to-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-html-to-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+}
+</script>
+
 ## Aperçu 
 
 Cet article explique comment **convertir HTML en PDF en utilisant C#**. Il couvre les sujets suivants.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-_Format_ : **HTML**
+_Format_: **HTML**
 - [C# HTML en PDF](#csharp-html-to-pdf)
 - [C# Convertir HTML en PDF](#csharp-html-to-pdf)
 - [C# Comment convertir HTML en PDF](#csharp-html-to-pdf)
 
-_Format_ : **MHTML**
+_Format_: **MHTML**
 - [C# MHTML en PDF](#csharp-mhtml-to-pdf)
 - [C# Convertir MHTML en PDF](#csharp-mhtml-to-pdf)
 - [C# Comment convertir MHTML en PDF](#csharp-mhtml-to-pdf)
 
-_Format_ : **Page Web**
-- [C# Page Web en PDF](#csharp-webpage-to-pdf)
-- [C# Convertir Page Web en PDF](#csharp-webpage-to-pdf)
-- [C# Comment convertir une Page Web en PDF](#csharp-webpage-to-pdf)
+_Format_: **WebPage**
+- [C# WebPage en PDF](#csharp-webpage-to-pdf)
+- [C# Convertir WebPage en PDF](#csharp-webpage-to-pdf)
+- [C# Comment convertir WebPage en PDF](#csharp-webpage-to-pdf)
 
-## Conversion de HTML en PDF en C#
-## Conversion de HTML en PDF en C#
+## Conversion C# HTML en PDF
 
-**Aspose.PDF pour .NET** est une API de manipulation de PDF qui vous permet de convertir tout document HTML existant en PDF de manière transparente. Le processus de conversion de HTML en PDF peut être personnalisé de manière flexible.
+**Aspose.PDF for .NET** est une API de manipulation PDF qui vous permet de convertir n'importe quel document HTML existant en PDF de manière transparente. Le processus de conversion de HTML en PDF peut être personnalisé de manière flexible.
 
 ## Convertir HTML en PDF
 
@@ -47,216 +114,292 @@ Le code C# suivant montre comment convertir un document HTML en PDF.
 3. Enregistrez le document PDF de sortie en appelant la méthode **Document.Save()**.
 
 ```csharp
-public static void ConvertHTMLtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertHTMLtoPDF()
 {
-    HtmlLoadOptions options= new HtmlLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "test.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the HTML file into a document using HtmlLoadOptions
+    var options = new Aspose.Pdf.HtmlLoadOptions();
+
+    // Open HTML document
+    using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertHTMLtoPDF_out.pdf");
+    }
 }
 ```
 
 {{% alert color="success" %}}
 **Essayez de convertir HTML en PDF en ligne**
 
-Aspose vous présente l'application gratuite en ligne ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), où vous pouvez explorer la fonctionnalité et la qualité de son fonctionnement.
+Aspose vous présente une application gratuite en ligne ["HTML en PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-Aspose vous présente une application gratuite en ligne ["HTML en PDF"](https://products.aspose.app/html/fr/conversion/html-to-pdf), où vous pouvez explorer la fonctionnalité et la qualité de son fonctionnement.
-
-[![Conversion Aspose.PDF HTML en PDF utilisant l'application gratuite](html.png)](https://products.aspose.app/html/fr/conversion/html-to-pdf)
+[![Aspose.PDF Conversion HTML en PDF utilisant l'application gratuite](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
 {{% /alert %}}
 
 ## Conversion avancée de HTML en PDF
 
-Le moteur de conversion HTML dispose de plusieurs options qui nous permettent de contrôler le processus de conversion.
+Le moteur de conversion HTML a plusieurs options qui nous permettent de contrôler le processus de conversion.
 
-### Support des requêtes média
+### Support des requêtes multimédias
 
-Les requêtes média sont une technique populaire pour fournir une feuille de style adaptée à différents appareils. Nous pouvons définir le type d'appareil en utilisant la propriété [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
+Les requêtes multimédias sont une technique populaire pour fournir une feuille de style adaptée à différents appareils. Nous pouvons définir le type d'appareil en utilisant la propriété [`HtmlMediaType`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/htmlmediatype).
 
 ```csharp
-public static void ConvertHTMLtoPDFAdvanced_MediaType()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertHTMLtoPDFAdvancedMediaType()
 {
-    HtmlLoadOptions options = new HtmlLoadOptions
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the HTML file into a document using HtmlLoadOptions with Print media type
+    var options = new HtmlLoadOptions
     {
-        // définir le mode Impression ou Écran
-        HtmlMediaType = HtmlMediaType.Print
+        // Set Print or Screen mode
+        HtmlMediaType = Aspose.Pdf.HtmlMediaType.Print
     };
-    Document pdfDocument= new Document(_dataDir + "test.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+
+    // Open HTML document
+    using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertHTMLtoPDFAdvancedMediaType_out.pdf");
+    }
 }
 ```
-### Activer (désactiver) l'incorporation de polices
 
-Les pages HTML utilisent souvent des polices (par exemple, des polices d'un dossier local, Google Fonts, etc.). Nous pouvons également contrôler l'incorporation de polices dans un document en utilisant la propriété [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
+### Activer (désactiver) l'incorporation des polices
+
+Les pages HTML utilisent souvent des polices (par exemple, des polices du dossier local, Google Fonts, etc.). Nous pouvons également contrôler l'incorporation des polices dans un document en utilisant la propriété [`IsEmbedFonts`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/properties/isembedfonts).
 
 ```csharp
-public static void ConvertHTMLtoPDFAdvanced_EmbedFonts()
-{
-    // Désactivation de l'incorporation des polices
-    HtmlLoadOptions options = new HtmlLoadOptions {IsEmbedFonts = false};
-    Document pdfDocument= new Document(_dataDir + "test_fonts.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
-}
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ private static void ConvertHTMLtoPDFAdvancedEmbedFonts()
+ {
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+     // Load the HTML file into a document using HtmlLoadOptions with the font embedding option set
+     var options = new Aspose.Pdf.HtmlLoadOptions
+     {
+         // Disable font embedding
+         IsEmbedFonts = false
+     };
+
+     // Open HTML document
+     using (var document = new Aspose.Pdf.Document(dataDir + "test_fonts.html", options))
+     {
+         // Save PDF document
+         document.Save(dataDir + "ConvertHTMLtoPDFAdvanced_EmbedFonts_out.pdf");
+     }
+ }
 ```
 
 ### Gérer le chargement des ressources externes
 
-Le moteur de conversion fournit un mécanisme qui vous permet de contrôler le chargement de certaines ressources associées au document HTML.
-La classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) possède la propriété [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) avec laquelle nous pouvons définir le comportement du chargeur de ressources.
-La classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) possède la propriété [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) avec laquelle nous pouvons définir le comportement du chargeur de ressources.
-Supposons que nous devons remplacer toutes les images PNG par une image unique `test.jpg` et remplacer l'URL externe par une URL interne pour d'autres ressources.
-Pour ce faire, nous pouvons définir un chargeur personnalisé `SamePictureLoader` et diriger [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) vers ce nom.
+Le moteur de conversion fournit un mécanisme qui vous permet de contrôler le chargement de certaines ressources associées au document HTML. La classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) a la propriété [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) avec laquelle nous pouvons définir le comportement du chargeur de ressources. Supposons que nous devions remplacer toutes les images PNG par une seule image `test.jpg` et remplacer l'URL externe par interne pour d'autres ressources. Pour ce faire, nous pouvons définir un chargeur personnalisé `SamePictureLoader` et pointer [`CustomLoaderOfExternalResources`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/customloaderofexternalresources) vers ce nom.
 
 ```csharp
-public static void ConvertHTMLtoPDFAdvanced_DummyImage()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertHTMLtoPDFAdvanced_DummyImage()
 {
-    HtmlLoadOptions options = new HtmlLoadOptions
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Load the HTML file into a document with a custom resource loader for external images
+    var options = new Aspose.Pdf.HtmlLoadOptions
     {
         CustomLoaderOfExternalResources = SamePictureLoader
     };
-    Document pdfDocument = new Document(_dataDir + "test.html", options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+
+    // Open HTML document
+    using (var document = new Aspose.Pdf.Document(dataDir + "test.html", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "html_test.pdf");
+    }
 }
 
-private static LoadOptions.ResourceLoadingResult SamePictureLoader(string resourceURI)
+private static Aspose.Pdf.LoadOptions.ResourceLoadingResult SamePictureLoader(string resourceURI)
 {
-    LoadOptions.ResourceLoadingResult result;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+    Aspose.Pdf.LoadOptions.ResourceLoadingResult result;
 
     if (resourceURI.EndsWith(".png"))
     {
-        byte[] resultBytes = File.ReadAllBytes(_dataDir + "test.jpg");
-        result = new LoadOptions.ResourceLoadingResult(resultBytes)
+        byte[] resultBytes = File.ReadAllBytes(dataDir + "test.jpg");
+        result = new Aspose.Pdf.LoadOptions.ResourceLoadingResult(resultBytes)
         {
-            //Définir le type MIME
+            // Set MIME Type
             MIMETypeIfKnown = "image/jpeg"
         };
     }
     else
     {
-        result = new LoadOptions.ResourceLoadingResult(GetContentFromUrl(resourceURI));
+        result = new Aspose.Pdf.LoadOptions.ResourceLoadingResult(GetContentFromUrl(resourceURI));
     }
     return result;
 }
 
 private static byte[] GetContentFromUrl(string url)
 {
-    var httpClient = new HttpClient();
+    var httpClient = new System.Net.Http.HttpClient();
     return httpClient.GetByteArrayAsync(url).GetAwaiter().GetResult();
 }
 ```
+
 ## Convertir une page Web en PDF
 
-Convertir une page Web est légèrement différent de convertir un document HTML local. Pour convertir le contenu d'une page Web en format PDF, nous pouvons d'abord récupérer le contenu de la page HTML en utilisant une instance HttpClient, créer un objet Stream, passer les contenus à l'objet Document et rendre la sortie en format PDF.
+La conversion d'une page Web est légèrement différente de la conversion d'un document HTML local. Pour convertir le contenu d'une page Web en format PDF, nous pouvons d'abord récupérer le contenu de la page HTML en utilisant une instance HttpClient, créer un objet Stream, passer le contenu à l'objet Document et rendre la sortie au format PDF.
 
-Lors de la conversion d'une page Web hébergée sur un serveur web en PDF :
+Lors de la conversion d'une page Web hébergée sur un serveur Web en PDF :
 
-<a name="csharp-webpage-to-pdf"><strong>Étapes : Convertir une page Web en PDF en C#</strong></a>
+<a name="csharp-webpage-to-pdf"><strong>Étapes : Convertir WebPage en PDF en C#</strong></a>
 
-1. Lire le contenu de la page en utilisant un objet HttpClient.
-1. Instancier l'objet [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) et définir l'URL de base.
-1. Initialiser un objet Document en passant l'objet stream.
-1. Facultativement, définir la taille de la page et/ou l'orientation.
+1. Lisez le contenu de la page en utilisant un objet HttpClient.
+1. Instanciez l'objet [HtmlLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions) et définissez l'URL de base.
+1. Initialisez un objet Document tout en passant l'objet stream.
+1. Optionnellement, définissez la taille de la page et/ou l'orientation.
 
 ```csharp
-public static void ConvertHTMLtoPDFAdvanced_WebPage()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertHTMLtoPDFAdvanced_WebPage()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
     const string url = "https://en.wikipedia.org/wiki/Aspose_API";
-    // Définir la taille de la page A3 et l'orientation Paysage;   
-    HtmlLoadOptions options = new HtmlLoadOptions(url)
+
+    // Set page size A3 and Landscape orientation;   
+    var options = new Aspose.Pdf.HtmlLoadOptions(url)
     {
-        PageInfo = {Width = 842, Height = 1191, IsLandscape = true}
+        PageInfo =
+        {
+            Width = 842,
+            Height = 1191,
+            IsLandscape = true
+        }
     };
-    Document pdfDocument= new Document(GetContentFromUrlAsStream(url), options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
+
+    // Load the web page content as a stream and create a PDF document
+    using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "html_test.pdf");
+    }
 }
 
-private static Stream GetContentFromUrlAsStream(string url, ICredentials credentials = null)
+private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
 {
-    using (var handler = new HttpClientHandler { Credentials = credentials })
-    using (var httpClient = new HttpClient(handler))
+    using (var handler = new System.Net.Http.HttpClientHandler { Credentials = credentials })
+    using (var httpClient = new System.Net.Http.HttpClient(handler))
     {
         return httpClient.GetStreamAsync(url).GetAwaiter().GetResult();
     }
 }
 ```
-### Fournir des identifiants pour la conversion de pages Web en PDF
 
-Parfois, nous devons effectuer la conversion de fichiers HTML qui nécessitent une authentification et des privilèges d'accès, afin que seuls les utilisateurs authentiques puissent récupérer le contenu de la page. Cela inclut également le scénario où certaines ressources/données référencées à l'intérieur de l'HTML sont extraites d'un serveur externe qui nécessite une authentification et, pour répondre à cette exigence, la propriété [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) est ajoutée à la classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions). Le morceau de code suivant montre les étapes pour passer des identifiants à la requête HTML et ses ressources respectives lors de la conversion du fichier HTML en PDF.
+### Fournir des identifiants pour la conversion de page Web en PDF
+
+Parfois, nous devons effectuer la conversion de fichiers HTML qui nécessitent une authentification et des privilèges d'accès, afin que seuls les utilisateurs authentiques puissent récupérer le contenu de la page. Cela inclut également le scénario où certaines ressources/données référencées à l'intérieur de HTML sont récupérées depuis un serveur externe qui nécessite une authentification et afin de répondre à cette exigence, la propriété [`ExternalResourcesCredentials`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions/fields/externalresourcescredentials) a été ajoutée à la classe [`HtmlLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlloadoptions). Le code suivant montre les étapes pour passer des identifiants afin de demander HTML et ses ressources respectives lors de la conversion d'un fichier HTML en PDF.
 
 ```csharp
-public static void ConvertHTMLtoPDFAdvanced_Authorized()
-{
-    const string url = "http://httpbin.org/basic-auth/user1/password1";
-    var credentials = new NetworkCredential("user1", "password1");
-    HtmlLoadOptions options = new HtmlLoadOptions(url)
-    {
-        ExternalResourcesCredentials = credentials
-    };
-    Document pdfDocument= new Document(GetContentFromUrlAsStream(url, credentials), options);
-    pdfDocument.Save(_dataDir + "html_test.PDF");
-}
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ private static void ConvertHTMLtoPDFAdvancedAuthorized()
+ {
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-private static Stream GetContentFromUrlAsStream(string url, ICredentials credentials = null)
+     const string url = "http://httpbin.org/basic-auth/user1/password1";
+     var credentials = new System.Net.NetworkCredential("user1", "password1");
+
+     var options = new Aspose.Pdf.HtmlLoadOptions(url)
+     {
+         ExternalResourcesCredentials = credentials
+     };
+
+     using (var document = new Aspose.Pdf.Document(GetContentFromUrlAsStream(url, credentials), options))
+     {
+         // Save PDF document
+         document.Save(dataDir + "HtmlTest_out.pdf");
+     }
+ }
+
+private static Stream GetContentFromUrlAsStream(string url, System.Net.ICredentials credentials = null)
 {
-    using (var handler = new HttpClientHandler { Credentials = credentials })
-    using (var httpClient = new HttpClient(handler))
+    using (var handler = new System.Net.Http.HttpClientHandler { Credentials = credentials })
+    using (var httpClient = new System.Net.Http.HttpClient(handler))
     {
         return httpClient.GetStreamAsync(url).GetAwaiter().GetResult();
     }
 }
 ```
+
 ### Rendre tout le contenu HTML sur une seule page
 
-Aspose.PDF pour .NET offre la capacité de rendre tout le contenu sur une seule page lors de la conversion d'un fichier HTML en format PDF. Par exemple, si vous avez un contenu HTML dont la taille de sortie est supérieure à une page, vous pouvez utiliser l'option de rendu des données de sortie sur une seule page PDF. Pour utiliser cette option, la classe HtmlLoadOptions a été étendue par le drapeau IsRenderToSinglePage. Le fragment de code ci-dessous montre comment utiliser cette fonctionnalité.
+Aspose.PDF for .NET offre la possibilité de rendre tout le contenu sur une seule page lors de la conversion d'un fichier HTML en format PDF. Par exemple, si vous avez un contenu HTML dont la taille de sortie est supérieure à une page, vous pouvez utiliser l'option pour rendre les données de sortie sur une seule page PDF. Pour utiliser cette option, la classe HtmlLoadOptions a été étendue par le drapeau IsRenderToSinglePage. Le code ci-dessous montre comment utiliser cette fonctionnalité.
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Initialiser les options HTMLLoadSave
-HtmlLoadOptions options = new HtmlLoadOptions();
-// Définir la propriété de rendu sur une seule page
-options.IsRenderToSinglePage = true;
-// Charger le document
-Document pdfDocument= new Document(dataDir + "HTMLToPDF.html", options);
-// Sauvegarder
-pdfDocument.Save(dataDir + "RenderContentToSamePage.pdf");
+ // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+ private static void ConvertHTMLtoPDFAdvancedSinglePageRendering()
+ {
+     // The path to the documents directory
+     var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+     // Initialize HtmlLoadOptions
+     var options = new Aspose.Pdf.HtmlLoadOptions
+     {
+         // Set Render to single page property
+         IsRenderToSinglePage = true
+     };
+
+     // Open PDF document
+     using (var document = new Aspose.Pdf.Document(dataDir + "HTMLToPDF.html", options))
+     {
+         // Save PDF document
+         document.Save(dataDir + "RenderContentToSamePage_out.pdf");
+     }
+ }
 ```
 
-### Rendre le HTML avec des données SVG
-### Rendu HTML avec données SVG
+### Rendre HTML avec des données SVG
 
-Aspose.PDF pour .NET permet de convertir une page HTML en document PDF. Étant donné que HTML permet d'ajouter un élément graphique SVG comme balise dans la page, Aspose.PDF prend également en charge la conversion de ces données dans le fichier PDF résultant. Le fragment de code suivant montre comment convertir des fichiers HTML avec des balises graphiques SVG en documents PDF balisés.
+Aspose.PDF for .NET offre la possibilité de convertir une page HTML en document PDF. Étant donné que HTML permet d'ajouter des éléments graphiques SVG en tant que balise dans la page, Aspose.PDF prend également en charge la conversion de telles données dans le fichier PDF résultant. Le code suivant montre comment convertir des fichiers HTML avec des balises graphiques SVG en documents PDF tagués.
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Définir le chemin du fichier d'entrée
-string inFile = dataDir + "HTMLSVG.html";
-// Définir le chemin du fichier de sortie
-string outFile = dataDir + "RenderHTMLwithSVGData.pdf";
-// Initialiser HtmlLoadOptions
-HtmlLoadOptions options = new HtmlLoadOptions(Path.GetDirectoryName(inFile));
-// Initialiser l'objet Document
-Document pdfDocument = new Document(inFile, options);
-// sauvegarder
-pdfDocument.Save(outFile);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertHTMLtoPDFWithSVG()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Initialize HtmlLoadOptions
+    var options = new Aspose.Pdf.HtmlLoadOptions(Path.GetDirectoryName(dataDir + "HTMLSVG.html"));
+
+    // Initialize Document object
+    using (var document = new Aspose.Pdf.Document(dataDir + "HTMLSVG.html", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "RenderHTMLwithSVGData_out.pdf");
+    }
+}
 ```
 
-## Convertir MHTML en PDF
+## Convertir MHTML en PDF 
 
 {{% alert color="success" %}}
 **Essayez de convertir MHTML en PDF en ligne**
-**Essayez de convertir MHTML en PDF en ligne**
 
-Aspose.PDF pour .NET vous présente une application gratuite en ligne ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
+Aspose.PDF for .NET vous présente une application gratuite en ligne ["MHTML en PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
 [![Aspose.PDF Conversion MHTML en PDF utilisant l'application gratuite](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
 {{% /alert %}}
 
-<abbr title="Encapsulation MIME de documents HTML agrégés">MHTML</abbr>, abrégé pour MIME HTML, est un format d'archive de page web utilisé pour combiner des ressources qui sont généralement représentées par des liens externes (tels que des images, des animations Flash, des applets Java et des fichiers audio) avec du code HTML dans un seul fichier.
-<abbr title="Encapsulation MIME de documents HTML agrégés">MHTML</abbr>, abréviation de MIME HTML, est un format d'archive de page web utilisé pour combiner des ressources qui sont généralement représentées par des liens externes (tels que des images, des animations Flash, des applets Java et des fichiers audio) avec du code HTML dans un seul fichier.
+<abbr title="Encapsulation MIME de documents HTML agrégés">MHTML</abbr>, abréviation de MIME HTML, est un format d'archive de page Web utilisé pour combiner des ressources qui sont généralement représentées par des liens externes (tels que des images, des animations Flash, des applets Java et des fichiers audio) avec du code HTML dans un seul fichier. Le contenu d'un fichier MHTML est encodé comme s'il s'agissait d'un message email HTML, en utilisant le type MIME multipart/related. Aspose.PDF for .NET peut convertir des fichiers HTML en format PDF et avec la sortie de Aspose.PDF for .NET 9.0.0, nous avons introduit une nouvelle fonctionnalité qui vous permet de convertir des fichiers MHTML en format PDF. Le code suivant montre comment convertir des fichiers MHTML en format PDF avec C# :
 
 <a name="csharp-mhtml-to-pdf"><strong>Étapes : Convertir MHTML en PDF en C#</strong></a>
 
@@ -265,49 +408,57 @@ Aspose.PDF pour .NET vous présente une application gratuite en ligne ["MHTML to
 3. Enregistrez le document PDF de sortie en appelant la méthode **Document.Save()**.
 
 ```csharp
-public static void ConvertMHTtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertMHTtoPDF()
 {
-    MhtLoadOptions options = new MhtLoadOptions()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Initialize MhtLoadOptions with page setup
+    var options = new Aspose.Pdf.MhtLoadOptions()
     {
-        PageInfo = { Width = 842, Height = 1191, IsLandscape = true}
+        PageInfo = { Width = 842, Height = 1191, IsLandscape = true }
     };
-    Document pdfDocument= new Document(_dataDir + "fileformatinfo.mht", options);
-    pdfDocument.Save(_dataDir + "mhtml_test.PDF");
+
+    // Initialize Document object using the MHT file and options
+    using (var document = new Aspose.Pdf.Document(dataDir + "fileformatinfo.mht", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "MhtmlTest_out.pdf");
+    }
 }
 ```
 
-## Voir aussi
+## Voir aussi 
 
-Cet article couvre également ces sujets.
-Cet article couvre également ces sujets.
+Cet article couvre également ces sujets. Les codes sont les mêmes que ci-dessus.
 
-_Format_ : **HTML**
-- [Code C# HTML vers PDF](#csharp-html-to-pdf)
-- [API C# HTML vers PDF](#csharp-html-to-pdf)
-- [C# HTML vers PDF Programmation](#csharp-html-to-pdf)
-- [Bibliothèque C# HTML vers PDF](#csharp-html-to-pdf)
-- [C# Enregistrer HTML comme PDF](#csharp-html-to-pdf)
-- [C# Générer un PDF à partir de HTML](#csharp-html-to-pdf)
-- [C# Créer un PDF à partir de HTML](#csharp-html-to-pdf)
-- [Convertisseur C# HTML vers PDF](#csharp-html-to-pdf)
+_Format_: **HTML**
+- [C# Code HTML en PDF](#csharp-html-to-pdf)
+- [C# API HTML en PDF](#csharp-html-to-pdf)
+- [C# HTML en PDF par programmation](#csharp-html-to-pdf)
+- [C# Bibliothèque HTML en PDF](#csharp-html-to-pdf)
+- [C# Enregistrer HTML en tant que PDF](#csharp-html-to-pdf)
+- [C# Générer PDF à partir de HTML](#csharp-html-to-pdf)
+- [C# Créer PDF à partir de HTML](#csharp-html-to-pdf)
+- [C# Convertisseur HTML en PDF](#csharp-html-to-pdf)
 
-_Format_ : **MHTML**
-- [Code C# MHTML vers PDF](#csharp-mhtml-to-pdf)
-- [API C# MHTML vers PDF](#csharp-mhtml-to-pdf)
-- [C# MHTML vers PDF Programmation](#csharp-mhtml-to-pdf)
-- [Bibliothèque C# MHTML vers PDF](#csharp-mhtml-to-pdf)
-- [C# Enregistrer MHTML comme PDF](#csharp-mhtml-to-pdf)
-- [C# Générer un PDF à partir de MHTML](#csharp-mhtml-to-pdf)
-- [C# Créer un PDF à partir de MHTML](#csharp-mhtml-to-pdf)
-- [Convertisseur C# MHTML vers PDF](#csharp-mhtml-to-pdf)
+_Format_: **MHTML**
+- [C# Code MHTML en PDF](#csharp-mhtml-to-pdf)
+- [C# API MHTML en PDF](#csharp-mhtml-to-pdf)
+- [C# MHTML en PDF par programmation](#csharp-mhtml-to-pdf)
+- [C# Bibliothèque MHTML en PDF](#csharp-mhtml-to-pdf)
+- [C# Enregistrer MHTML en tant que PDF](#csharp-mhtml-to-pdf)
+- [C# Générer PDF à partir de MHTML](#csharp-mhtml-to-pdf)
+- [C# Créer PDF à partir de MHTML](#csharp-mhtml-to-pdf)
+- [C# Convertisseur MHTML en PDF](#csharp-mhtml-to-pdf)
 
-_Format_ : **WebPage**
-- [Code C# WebPage vers PDF](#csharp-webpage-to-pdf)
-- [API C# WebPage vers PDF](#csharp-webpage-to-pdf)
-- [C# WebPage vers PDF Programmation](#csharp-webpage-to-pdf)
-- [C# Page Web en PDF Programmatically](#csharp-webpage-to-pdf)
-- [C# Bibliothèque pour convertir une Page Web en PDF](#csharp-webpage-to-pdf)
-- [C# Enregistrer une Page Web en tant que PDF](#csharp-webpage-to-pdf)
-- [C# Générer un PDF à partir d'une Page Web](#csharp-webpage-to-pdf)
-- [C# Créer un PDF à partir d'une Page Web](#csharp-webpage-to-pdf)
-- [C# Convertisseur de Page Web en PDF](#csharp-webpage-to-pdf)
+_Format_: **WebPage**
+- [C# Code WebPage en PDF](#csharp-webpage-to-pdf)
+- [C# API WebPage en PDF](#csharp-webpage-to-pdf)
+- [C# WebPage en PDF par programmation](#csharp-webpage-to-pdf)
+- [C# Bibliothèque WebPage en PDF](#csharp-webpage-to-pdf)
+- [C# Enregistrer WebPage en tant que PDF](#csharp-webpage-to-pdf)
+- [C# Générer PDF à partir de WebPage](#csharp-webpage-to-pdf)
+- [C# Créer PDF à partir de WebPage](#csharp-webpage-to-pdf)
+- [C# Convertisseur WebPage en PDF](#csharp-webpage-to-pdf)

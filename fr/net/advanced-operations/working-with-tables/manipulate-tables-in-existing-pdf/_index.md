@@ -1,9 +1,12 @@
 ---
-title: Manipuler les tables dans un PDF existant
-linktitle: Manipuler les tables
+title: Manipuler des tableaux dans un PDF existant
+linktitle: Manipuler des tableaux
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /fr/net/manipulate-tables-in-existing-pdf/
+description: Apprenez à travailler avec des tableaux dans des PDF existants en utilisant Aspose.PDF for .NET, offrant une flexibilité dans la modification des documents.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,21 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Manipuler les tables dans un PDF existant",
-    "alternativeHeadline": "Comment mettre à jour le contenu des tables dans un PDF existant",
+    "headline": "Manipulate Tables in existing PDF",
+    "alternativeHeadline": "Enhance Table Editing in Existing PDF Documents",
+    "abstract": "Aspose.PDF for .NET introduit une fonctionnalité puissante pour manipuler des tableaux PDF existants, permettant aux utilisateurs de rechercher, analyser et modifier le contenu des tableaux avec facilité. La nouvelle classe TableAbsorber permet des mises à jour et des remplacements dynamiques de tableaux directement dans les documents PDF, rationalisant le processus de gestion des données tabulaires dans les PDF pour une fonctionnalité améliorée. Explorez cette capacité innovante pour optimiser vos tâches d'édition PDF et d'intégration de données.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de document PDF",
-    "keywords": "pdf, c#, manipuler les tables",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +47,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,80 +72,92 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-tables-in-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
-## Manipuler des tables dans des PDF existants
 
-L'une des premières fonctionnalités prises en charge par Aspose.PDF pour .NET est ses capacités de travail avec les tables et il offre un excellent support pour l'ajout de tables dans des fichiers PDF générés à partir de zéro ou dans n'importe quel fichier PDF existant. Vous obtenez également la capacité d'intégrer une table avec une base de données (DOM) pour créer des tables dynamiques basées sur le contenu de la base de données. Dans cette nouvelle version, nous avons implémenté une nouvelle fonctionnalité de recherche et d'analyse de tables simples qui existent déjà sur la page du document PDF. Une nouvelle classe nommée **Aspose.PDF.Text.TableAbsorber** offre ces capacités. L'utilisation de TableAbsorber est très similaire à la classe TextFragmentAbsorber existante. Le code suivant montre les étapes pour mettre à jour le contenu dans une cellule de table particulière.
+## Manipuler des tableaux dans un PDF existant
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+L'une des premières fonctionnalités prises en charge par Aspose.PDF for .NET est ses capacités de travail avec des tableaux et elle offre un excellent support pour ajouter des tableaux dans des fichiers PDF générés à partir de zéro ou de tout fichier PDF existant. Vous obtenez également la capacité d'intégrer un tableau avec une base de données (DOM) pour créer des tableaux dynamiques basés sur le contenu de la base de données. Dans cette nouvelle version, nous avons mis en œuvre une nouvelle fonctionnalité de recherche et d'analyse de tableaux simples qui existent déjà sur la page du document PDF. Une nouvelle classe nommée **Aspose.PDF.Text.TableAbsorber** fournit ces capacités. L'utilisation de TableAbsorber est très similaire à celle de la classe TextFragmentAbsorber existante. L'extrait de code suivant montre les étapes pour mettre à jour le contenu d'une cellule de tableau particulière.
+
+L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ManipulateTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Charger un fichier PDF existant
-Document pdfDocument = new Document(dataDir + "input.pdf");
-// Créer un objet TableAbsorber pour trouver les tables
-TableAbsorber absorber = new TableAbsorber();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Visiter la première page avec l'absorbeur
-absorber.Visit(pdfDocument.Pages[1]);
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Accéder à la première table de la page, leur première cellule et les fragments de texte à l'intérieur
-TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
+        // Get access to first table on page, their first cell and text fragments in it
+        Aspose.Pdf.Text.TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
 
-// Changer le texte du premier fragment de texte dans la cellule
-fragment.Text = "salut monde";
-dataDir = dataDir + "ManipulateTable_out.pdf";
-pdfDocument.Save(dataDir);
+        // Change text of the first text fragment in the cell
+        fragment.Text = "hi world";
+
+        // Save PDF document
+        document.Save(dataDir + "ManipulateTable_out.pdf");
+    }
+}
 ```
-## Remplacer une ancienne table par une nouvelle dans un document PDF
 
-Si vous avez besoin de trouver une table particulière et de la remplacer par celle souhaitée, vous pouvez utiliser la méthode Replace() de la classe [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) pour le faire. L'exemple suivant démontre la fonctionnalité pour remplacer la table à l'intérieur du document PDF :
+## Remplacer un ancien tableau par un nouveau dans un document PDF
+
+Dans le cas où vous devez trouver un tableau particulier et le remplacer par celui souhaité, vous pouvez utiliser la méthode Replace() de la classe [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) pour ce faire. L'exemple suivant démontre la fonctionnalité de remplacement du tableau à l'intérieur du document PDF :
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez visiter https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Charger le document PDF existant
-Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Créer un objet TableAbsorber pour trouver les tables
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Visiter la première page avec l'absorbeur
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// Obtenir la première table de la page
-AbsorbedTable table = absorber.TableList[0];
+        // Create new table
+        var newTable = new Aspose.Pdf.Table();
+        newTable.ColumnWidths = "100 100 100";
+        newTable.DefaultCellBorder = new Aspose.Pdf.BorderInfo(BorderSide.All, 1F);
 
-// Créer une nouvelle table
-Table newTable = new Table();
-newTable.ColumnWidths = "100 100 100";
-newTable.DefaultCellBorder = new BorderInfo(BorderSide.All, 1F);
+        Row row = newTable.Rows.Add();
+        row.Cells.Add("Col 1");
+        row.Cells.Add("Col 2");
+        row.Cells.Add("Col 3");
 
-Row row = newTable.Rows.Add();
-row.Cells.Add("Col 1");
-row.Cells.Add("Col 2");
-row.Cells.Add("Col 3");
+        // Replace the table with new one
+        absorber.Replace(document.Pages[1], table, newTable);
 
-// Remplacer la table par la nouvelle
-absorber.Replace(pdfDocument.Pages[1], table, newTable);
-
-// Enregistrer le document
-pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTable_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -165,21 +179,21 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -190,7 +204,7 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -202,5 +216,3 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
     }
 }
 </script>
-```
-

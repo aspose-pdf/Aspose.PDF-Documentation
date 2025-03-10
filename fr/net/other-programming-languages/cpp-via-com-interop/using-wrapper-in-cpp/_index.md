@@ -1,49 +1,116 @@
 ---
-title: Utilisation d'un wrapper en CPP
+title: Utilisation du wrapper en CPP
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/using-wrapper-in-cpp/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Using wrapper in CPP",
+    "alternativeHeadline": "Effortlessly Extract Text from PDF Using Wrapper",
+    "abstract": "La nouvelle fonctionnalité de wrapper en C permet aux utilisateurs d'extraire facilement du texte des documents PDF en utilisant Aspose.PDF for .NET via COM Interop. Cette fonctionnalité simplifie le processus de récupération de contenu en permettant une interaction directe avec les fichiers PDF grâce à une assembly wrapper accessible et efficace. Améliorez vos applications avec cette puissante capacité de récupération de texte tout en garantissant une intégration fluide au sein de l'écosystème .NET",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "194",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/using-wrapper-in-cpp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/using-wrapper-in-cpp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés."
+}
+</script>
 
 ## Prérequis
 
 {{% alert color="primary" %}}
 
-Veuillez enregistrer Aspose.PDF pour .NET avec COM Interop, veuillez consulter l'article intitulé [Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/fr/net/use-aspose-pdf-for-net-via-com-interop/).
+Veuillez enregistrer Aspose.PDF for .NET avec COM Interop, veuillez consulter l'article intitulé [Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 
-## Implémentation
+## Détails de mise en œuvre
 
 {{% alert color="primary" %}}
 
-Nous utiliserons un [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) pour récupérer le texte des documents PDF.
+Nous allons utiliser un [wrapper](https://docs.aspose.com/pdf/net/creating-a-wrapper-assembly/) pour récupérer du texte à partir de documents PDF.
 
 {{% /alert %}}
 
 ```cpp
+#include "pch.h"
+#include <comdef.h>
 
-#include "stdafx.h"
-#import "C:\\Temp\\PdfText.tlb"
+#import "TextRetriever.tlb"
 using namespace System;
 
 String^ wrapper(String^ file)
 {
     String^ text;
-    // créer ComHelper
 
-    PdfText::IPetrieverPtr retrieverPtr;
-    HRESULT hr = retrieverPtr.CreateInstance(__uuidof(PdfText::Petriever));
+    TextRetriever::IRetrieverPtr retrieverPtr;
+    HRESULT hr = retrieverPtr.CreateInstance(__uuidof(TextRetriever::Retriever));
 
     if (FAILED(hr))
     {
-        Console::WriteLine(L"Une erreur est survenue");
+        Console::WriteLine(L"Error occured");
     }
     else
     {
-        // définir la licence
-        retrieverPtr->SetLicense("C:\\Temp\\Aspose.PDF.lic");
-        // récupérer le texte
+        // set license
+        retrieverPtr->SetLicense("Aspose.PDF.lic");
+        // retrieve text
 
         BSTR extractedText = retrieverPtr->GetText((BSTR)System::Runtime::InteropServices::Marshal::StringToBSTR(file).ToPointer());
         text = gcnew String(extractedText);
@@ -52,22 +119,20 @@ String^ wrapper(String^ file)
     return text;
 }
 
-int main(array<System::String ^> ^args)
+int main(array<System::String^>^ args)
 {
     CoInitialize(NULL);
     if (args->Length != 1)
     {
-        Console::WriteLine("Paramètres manquants\nUsage:testCOM <fichier pdf>");
+        Console::WriteLine("Missing parameters\nUsage:testCOM <pdf file>");
         return 0;
     }
 
-    String ^text = wrapper(args[0]);
+    String^ text = wrapper(args[0]);
     CoUninitialize();
-    Console::WriteLine("Texte extrait:");
-    Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<vide>");
+    Console::WriteLine("Extracted text:");
+    Console::WriteLine("---\n{0}", text != nullptr ? text->Trim() : "<empty>");
     Console::WriteLine("---");
     return 0;
 }
-
 ```
-

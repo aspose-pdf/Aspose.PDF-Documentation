@@ -2,10 +2,12 @@
 title: Opérations avancées
 linktitle: Opérations avancées
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /fr/net/advanced-operations/
-description: Aspose.PDF peut réaliser non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs.
-lastmod: "2022-02-17"
+description: Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés.
+lastmod: "2024-10-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Opérations avancées",
-    "alternativeHeadline": "Utilisation des fonctionnalités avancées dans le travail avec les PDF",
+    "headline": "Advanced operations",
+    "alternativeHeadline": "Unlock Complex PDF Manipulation with New Features in C#",
+    "abstract": "Découvrez les puissantes capacités des opérations avancées, conçues pour les développeurs novices et expérimentés. Cette fonctionnalité permet des manipulations complexes de fichiers PDF, allant de la compression et de la fusion de documents à des recherches de texte complexes et à la gestion de formulaires, tout en maintenant une intégration transparente avec diverses sources PDF comme Adobe Acrobat et Microsoft Office. Débloquez un nouveau niveau d'efficacité dans la gestion et la manipulation des documents avec cet ensemble d'outils polyvalent.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, opérations avancées dans pdf, créer pdf, supprimer pdf, manipuler pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "521",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,34 +73,37 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/advanced-operations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF peut réaliser non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés."
 }
 </script>
-**Opérations Avancées** est une section sur la manière de traiter avec des fichiers PDF existants de manière programmatique, qu'il s'agisse de documents créés avec Aspose.PDF comme discuté dans [Opérations de Base](/pdf/fr/net/basic-operations/), ou de PDF créés avec Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou tout autre producteur de PDF.
 
-Vous apprendrez différentes méthodes pour :
+**Opérations Avancées** est une section sur la manière de traiter des fichiers PDF existants de manière programmatique, qu'il s'agisse de documents créés avec Aspose.PDF comme discuté dans [Opérations de base](/pdf/net/basic-operations/), ou de PDF créés avec Adobe Acrobat, Google Docs, Microsoft Office, Open Office ou tout autre producteur de PDF.
 
-- [Travailler avec les Documents](/pdf/fr/net/working-with-documents/) - compresser, diviser et fusionner des documents et effectuer d'autres opérations sur l'ensemble du document
-- [Travailler avec les Pages](/pdf/fr/net/working-with-pages/) - ajouter, déplacer ou supprimer, rogner des pages, ajouter des filigranes, des tampons
-- [Travailler avec le Texte](/pdf/fr/net/working-with-text/) - ajouter, formater, rechercher et remplacer du texte dans un PDF
-- [Travailler avec les Images](/pdf/fr/net/working-with-images/) - insérer, retirer, extraire une image dans le document
-- [Travailler avec les Tableaux](/pdf/fr/net/working-with-tables/) - insérer, décorer un tableau dans un PDF, extraire des données tabulaires
-- [Travailler avec les Formulaires](/pdf/fr/net/working-with-forms/) - gérer des documents PDF interactifs, ajouter des champs de formulaire, extraire des données
-- [Travailler avec les formulaires](/pdf/fr/net/working-with-forms/) - interagir avec les documents PDF, ajouter des champs de formulaire, extraire des données
-- [Travailler avec les graphiques](/pdf/fr/net/graphs/) - manipuler les formes sur la page
-- [Travailler avec XML](/pdf/fr/net/working-with-xml) - construire des documents PDF basés sur la structure XML
-- [Comparer des documents PDF](/pdf/fr/net/compare-pdf-documents/) - comparer le contenu des documents PDF
-- [Navigation et interaction](/pdf/fr/net/navigation-and-interaction/) - gérer les actions, les signets, naviguer entre les pages
-- [Annotations](/pdf/fr/net/annotations/) - Les annotations permettent aux utilisateurs d'ajouter un contenu personnalisé sur les pages PDF. Vous pouvez ajouter, supprimer et modifier les annotations des documents PDF.
-- [Artéfacts](/pdf/fr/net/artifacts/) - gérer les filigranes et autres objets spéciaux dans les PDF
-- [Accessibilité. PDF balisé](/pdf/fr/net/accessibility-tagged-pdf/) - Le balisage est essentiel pour l'accessibilité des PDF. Aspose.PDF permet d'ajouter des balises dans les PDF et d'établir un ordre de lecture logique et de fournir un moyen d'indiquer la structure et le type.
-- [Pièces jointes](/pdf/fr/net/attachments/) - Les documents PDF peuvent contenir des pièces jointes.
-- [Pièces jointes](/pdf/fr/net/attachments/) - Les documents PDF peuvent contenir des pièces jointes.
-- [Métadonnées dans les PDFs](/pdf/fr/net/pdf-file-metadata/) - obtenir ou définir les métadonnées dans les documents, en traitant les données XMP.
-- [Sécurisation et signature](/pdf/fr/net/securing-and-signing/) - protéger et signer votre document PDF de manière programmée
-- [Impression de document](/pdf/fr/net/printing-document/) - imprimer des PDFs dans divers types d'applications (WinForms, WPF, etc.)
-- [Opérateurs](/pdf/fr/net/operators/) - effectuer des opérations de bas niveau dans PDF
+Vous apprendrez différentes manières de :
+
+- [Travailler avec des documents](/pdf/net/working-with-documents/) - compresser, diviser et fusionner des documents et effectuer d'autres opérations sur l'ensemble du document.
+- [Travailler avec des pages](/pdf/net/working-with-pages/) - ajouter, déplacer ou supprimer, recadrer des pages, ajouter des filigranes, des tampons.
+- [Travailler avec du texte](/pdf/net/working-with-text/) - ajouter, formater, rechercher et remplacer du texte dans un PDF.
+- [Travailler avec des images](/pdf/net/working-with-images/) - insérer, supprimer, extraire des images dans le document.
+- [Travailler avec des tableaux](/pdf/net/working-with-tables/) - insérer, décorer un tableau dans un PDF, extraire des données tabulaires.
+- [Travailler avec des formulaires](/pdf/net/working-with-forms/) - traiter des documents PDF interactifs, ajouter des champs de formulaire, extraire des données.
+- [Travailler avec des graphiques](/pdf/net/working-with-graphs/) - manipuler des formes sur la page.
+- [Travailler avec XML](/pdf/net/working-with-xml) - construire des documents PDF basés sur la structure XML.
+- [Travailler avec des opérateurs](/pdf/net/working-with-operators/) - effectuer des opérations de bas niveau dans un PDF.
+- [Travailler avec des graphiques vectoriels](/pdf/net/working-with-vector-graphics) - décrit les fonctionnalités de travail avec GraphicsAbsorber.
+- [Travailler avec ZUGFeRD](/pdf/net/working-with-zugferd) - créer des factures PDF conformes à ZUGFeRD.
+- [Travailler avec Javascript](/pdf/net/working-with-javascript) - ajouter, supprimer du code Javascript dans un PDF.
+- [Comparer des documents PDF](/pdf/net/compare-pdf-documents/) - il est possible de comparer le contenu des documents PDF.
+- [Navigation et interaction](/pdf/net/navigation-and-interaction/) - traiter des actions, des signets, naviguer dans les pages.
+- [PDF AI Copilot](/pdf/net/ai-copilot/) - permet de traiter des documents PDF en utilisant des LLMs de différents fournisseurs.
+- [Annotations](/pdf/net/annotations/) - Les annotations permettent aux utilisateurs d'ajouter du contenu personnalisé sur les pages PDF. Vous pouvez ajouter, supprimer et modifier l'annotation des documents PDF.
+- [Artifacts](/pdf/net/artifacts/) - traiter des filigranes et d'autres objets spéciaux dans un PDF.
+- [Accessibilité. PDF tagué](/pdf/net/accessibility-tagged-pdf/) - Le balisage est essentiel pour l'accessibilité des PDF. Aspose.PDF permet d'ajouter des balises dans le PDF et d'établir un ordre de lecture logique et de fournir un moyen d'indiquer la structure et le type.
+- [Pièces jointes](/pdf/net/attachments/) - Les documents PDF peuvent contenir des pièces jointes. Ces pièces jointes peuvent être d'autres documents PDF ou tout type de fichier, comme des fichiers audio, des documents Microsoft Office, etc. Vous apprendrez comment ajouter des pièces jointes à un PDF, obtenir les informations d'une pièce jointe et l'enregistrer dans un fichier, supprimer la pièce jointe d'un PDF de manière programmatique avec C#.
+- [Métadonnées dans les PDF](/pdf/net/pdf-file-metadata/) - obtenir ou définir des métadonnées dans des documents, traiter des données XMP.
+- [Sécurisation et signature](/pdf/net/securing-and-signing/) - protéger et signer votre document PDF de manière programmatique.
+- [Impression de documents](/pdf/net/printing-document/) - imprimer des PDF dans divers types d'applications (WinForms, WPF, etc.).
 
 <script type="application/ld+json">
 {
@@ -163,4 +168,3 @@ Vous apprendrez différentes méthodes pour :
     }
 }
 </script>
-

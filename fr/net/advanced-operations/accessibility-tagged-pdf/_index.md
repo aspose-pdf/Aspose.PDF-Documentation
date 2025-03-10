@@ -1,10 +1,12 @@
 ---
-title: Accessibilité et PDF balisés
-linktitle: Accessibilité. PDF balisé
+title: Accessibilité et PDF tagués
+linktitle: Accessibilité. PDF tagué
 type: docs
-weight: 120
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 180
 url: /fr/net/accessibility-tagged-pdf/
-description: Aspose.PDF permet de créer des documents PDF balisés, vous permettant de baliser les éléments structurels. En savoir plus sur comment obtenir des PDF accessibles.
+description: Découvrez comment générer des PDF tagués accessibles avec Aspose.PDF for .NET. Respectez les normes d'accessibilité pour un design de document inclusif.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Accessibilité et PDF balisés",
-    "alternativeHeadline": "Travailler avec des PDF balisés",
+    "headline": "Accessibility and Tagged PDFs",
+    "alternativeHeadline": "Create accessible PDFs with new tagging features",
+    "abstract": "Créez des PDF accessibles avec des capacités de balisage améliorées. Cette nouvelle fonctionnalité permet une navigation et une lisibilité plus faciles par les technologies d'assistance, améliorant l'accessibilité pour les utilisateurs handicapés. Développez des documents PDF conformes et inclusifs.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "balisé, pdf, génération de documents",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "Tagged PDF, Accessible PDF, PDF Accessibility, Create Tagged PDF, Edit Tagged PDF, Extract Tagged Content, PDF Tags, Structure Elements",
+    "wordcount": "172",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,20 +74,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/accessibility-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF permet de créer des documents PDF balisés, vous permettant de baliser les éléments structurels. En savoir plus sur comment obtenir des PDF accessibles."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
 }
 </script>
 
-Un document PDF balisé peut être consulté par des personnes handicapées. L'ajout de balises d'accessibilité aux fichiers PDF facilite la lecture et la navigation dans un document pour les lecteurs d'écran et autres technologies d'assistance, avec des tables des matières, des hyperliens, des signets, du texte alternatif, etc.
+Un document PDF tagué peut être accessible aux personnes handicapées. Ajouter des balises d'accessibilité aux fichiers PDF facilite la lecture et la navigation d'un document par les lecteurs d'écran et d'autres technologies d'assistance, avec des tables des matières, des hyperliens, des signets, du texte alternatif, etc.
 
-Cette section couvre le sujet suivant :
+Cette section couvre les sujets suivants :
 
-- [Créer un PDF balisé](/pdf/fr/net/create-tagged-pdf/)
-- [Extraire le contenu balisé des PDF balisés](/pdf/fr/net/extract-tagged-content-from-tagged-pdfs/)
-- [Définir les propriétés des éléments de structure](/pdf/fr/net/setting-structure-elements-properties/)
-- [Travailler avec des tables dans des PDF balisés](/pdf/fr/net/working-with-table-in-tagged-pdfs/)
-- [Test de conformité PDF-UA - Liste des erreurs](/pdf/fr/net/pdf-ua-compliance-test-errors-list/)
+- [Créer un PDF tagué](/pdf/net/create-tagged-pdf/)
+- [Éditer un PDF tagué](/pdf/net/edit-pdf-file-tags/)
+- [Extraire le contenu tagué des PDF tagués](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
+- [Définir les propriétés des éléments de structure](/pdf/net/setting-structure-elements-properties/)
+- [Travailler avec des tableaux dans des PDF tagués](/pdf/net/working-with-table-in-tagged-pdfs/)
+- [Test de conformité PDF-UA - Liste des erreurs](/pdf/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {
@@ -149,5 +153,3 @@ Cette section couvre le sujet suivant :
     }
 }
 </script>
-
-

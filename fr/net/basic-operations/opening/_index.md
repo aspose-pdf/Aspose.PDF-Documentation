@@ -1,72 +1,152 @@
 ---
-title: Ouvrir un document PDF de manière programmable
+title: Ouvrir un document PDF par programmation
 linktitle: Ouvrir PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /fr/net/open-pdf-document/
-description: Apprenez comment ouvrir un fichier PDF en C# avec la bibliothèque Aspose.PDF pour .NET. Vous pouvez ouvrir un PDF existant, un document depuis un flux et un document PDF crypté.
+description: Apprenez à ouvrir un fichier PDF dans la bibliothèque PDF Aspose.PDF for .NET en C#. Vous pouvez ouvrir un PDF existant, un document à partir d'un flux et un document PDF chiffré.
+aliases:
+    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Open PDF document programmatically",
+    "alternativeHeadline": "Programmatically Open and Access Various PDF Documents with C#",
+    "abstract": "Découvrez comment ouvrir des documents PDF avec la bibliothèque Aspose.PDF for .NET. Cette fonctionnalité permet aux développeurs d'accéder facilement aux PDF existants, de charger des documents à partir de flux et de gérer des fichiers chiffrés avec aisance, améliorant ainsi l'efficacité du flux de travail et élargissant les capacités de manipulation des PDF en C#",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "238",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/open-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/open-pdf-document/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+}
+</script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Ouvrir un document PDF existant
 
 Il existe plusieurs façons d'ouvrir un document. La plus simple est de spécifier un nom de fichier.
 
 ```csharp
-public static void OpenDocument()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocument()
 {
-    var fileName = @"C:\tmp\tourguidev2_gb_tags.pdf";
-    using (var pdfDocument = new Aspose.Pdf.Document(fileName))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
     {
-        Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
+        Console.WriteLine("Pages " + document.Pages.Count);
     }
 }
 ```
 
-## Ouvrir un document PDF existant depuis un flux
+## Ouvrir un document PDF existant à partir d'un flux
 
 ```csharp
-public static void OpenDocumentStream()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocumentStream()
 {
-    const string fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
+    var fileName = "SJPR0033_Folder_Utland_16sid_ENG_web3.pdf";
     var remoteUri = "https://www.sj.se/content/dam/SJ/pdf/Engelska/";
-    // Créez une nouvelle instance de WebClient.
-    var webClient = new WebClient();
-    // Concaténez le domaine avec le nom du fichier ressource Web.
+    // Create a new WebClient instance
+    var webClient = new System.Net.WebClient();
+    // Concatenate the domain with the Web resource filename
     var strWebResource = remoteUri + fileName;
-    Console.WriteLine("Téléchargement du fichier \"{0}\" depuis \"{1}\" .......\n\n", fileName, strWebResource);
+    Console.WriteLine("Downloading File \"{0}\" from \"{1}\" .......\n\n", fileName, strWebResource);
 
     var stream = new MemoryStream();
     webClient.OpenRead(strWebResource)?.CopyTo(stream);
 
-    using (var pdfDocument = new Aspose.Pdf.Document(stream))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(stream))
     {
-        Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
+        Console.WriteLine("Pages " + document.Pages.Count);
     }
 }
 ```
-## Ouvrir un document PDF crypté
+
+## Ouvrir un document PDF chiffré
 
 ```csharp
-    public static void OpenDocumentWithPassword()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OpenDocumentWithPassword()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+
+    const string password = "Aspose2020";
+    try
     {
-        const string fileName = @"C:\tmp\DocSite.pdf";
-        const string password = "Aspose2020";
-        try
+        // Open PDF document
+        using (var document = new Aspose.Pdf.Document(dataDir + "DocSite.pdf", password))
         {
-            using (var pdfDocument = new Aspose.Pdf.Document(fileName, password))
-            {
-                Console.WriteLine($"Pages {pdfDocument.Pages.Count}");
-            }
-        }
-        catch (InvalidPasswordException e)
-        {
-            Console.WriteLine(e);
+            Console.WriteLine("Pages " + document.Pages.Count);
         }
     }
+    catch (Aspose.Pdf.InvalidPasswordException e)
+    {
+        Console.WriteLine(e);
+    }
+}
 ```

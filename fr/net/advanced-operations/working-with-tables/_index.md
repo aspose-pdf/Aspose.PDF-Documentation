@@ -1,7 +1,9 @@
 ---
-title: Travailler avec des tableaux dans les PDF en utilisant C#
+title: Travailler avec des tableaux dans PDF en utilisant C#
 linktitle: Travailler avec des tableaux
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /fr/net/working-with-tables/
 description: Cette section décrit comment ajouter et extraire un tableau, comment manipuler et intégrer un tableau en utilisant la bibliothèque C#.
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Travailler avec des tableaux dans les PDF en utilisant C#",
-    "alternativeHeadline": "Comment manipuler des tableaux dans les PDF",
+    "headline": "Working with Tables in PDF using C#",
+    "alternativeHeadline": "Enhanced Table Management in PDF with C#",
+    "abstract": "Aspose.PDF for .NET permet aux utilisateurs de créer, extraire, manipuler et supprimer efficacement des tableaux dans des documents PDF. Cette fonctionnalité améliore les capacités d'intégration des données en permettant une intégration transparente avec des sources de données, ce qui en fait un outil essentiel pour les développeurs travaillant avec des données tabulaires dans les PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, tableaux dans pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "257",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe doc Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,25 +73,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-tables/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Cette section décrit comment ajouter et extraire un tableau, comment manipuler et intégrer un tableau en utilisant la bibliothèque C#."
 }
 </script>
-Les tables font partie de nombreux formulaires PDF. Vous trouvez des tables dans une variété de formulaires.
 
-**Aspose.PDF pour .NET** vous permet de travailler de manière avancée avec les tables dans les fichiers PDF. Cet outil parfait aide à lutter contre la simplicité des PDF en extrayant des tables de données réelles. Avec la ressource de bibliothèque .NET, vous pouvez facilement créer ou ajouter une table dans un document PDF existant, extraire une table, intégrer une table avec des sources de données et supprimer des tables de PDF existants.
+Les tableaux font partie de nombreux formulaires PDF. Vous trouvez des tableaux dans une variété de formulaires.
+
+**Aspose.PDF for .NET** vous permet de travailler avec des tableaux dans des fichiers PDF de manière avancée. Cet outil parfait aide à surmonter la simplicité des PDF en extrayant des tableaux de données réelles. Avec la ressource de la bibliothèque .NET, vous pouvez facilement créer ou ajouter un tableau dans un document PDF existant, extraire un tableau, intégrer un tableau avec des sources de données et supprimer des tableaux de PDF existants.
 
 Vous êtes capable de faire ce qui suit :
 
-- [Créer ou Ajouter une Table dans un Document PDF existant](/pdf/fr/net/add-table-in-existing-pdf-document/) - créez votre table dans le fichier pdf en fusionnant les colonnes ou les rangées en considérant les bordures, les marges et le padding.
-- [Extraire une Table d'un Document PDF existant](/pdf/fr/net/extract-table-from-existing-pdf-document/) - vous pouvez extraire une table du fichier PDF ou extraire la bordure de la table sous forme d'Image.
-- [Intégrer une Table avec des Sources de Données](/pdf/fr/net/integrate-table/) - intégrer une table avec une Base de Données, intégrer une table avec la source du Entity Framework en utilisant la bibliothèque .NET.
-- [Manipuler les Tables dans un PDF existant](/pdf/fr/net/manipulate-tables-in-existing-pdf/) - manipulez les tables dans votre PDF en utilisant TableAbsorber.
-
-type: docs
-changefreq: "monthly"
-- [Manipuler les tableaux dans un PDF existant](/pdf/fr/net/manipulate-tables-in-existing-pdf/) - manipuler les tableaux dans votre PDF en utilisant TableAbsorber.
-- [Supprimer les tableaux d'un PDF existant](/pdf/fr/net/remove-tables-from-existing-pdf/) - supprimer un tableau ou plusieurs tableaux d'un document PDF.
+- [Créer ou ajouter un tableau dans un document PDF existant](/pdf/net/add-table-in-existing-pdf-document/) - créez votre tableau dans le fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, des marges et du rembourrage.
+- [Extraire un tableau d'un document PDF existant](/pdf/net/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF ou extraire la bordure du tableau en tant qu'image.
+- [Intégrer un tableau avec des sources de données](/pdf/net/integrate-table/) - intégrer un tableau avec une base de données, intégrer un tableau avec la source Entity Framework en utilisant la bibliothèque .NET.
+- [Manipuler des tableaux dans un PDF existant](/pdf/net/manipulate-tables-in-existing-pdf/) - manipuler des tableaux dans votre PDF en utilisant TableAbsorber.
+- [Supprimer des tableaux d'un PDF existant](/pdf/net/remove-tables-from-existing-pdf/) - supprimer un tableau ou plusieurs tableaux d'un document PDF.
 
 <script type="application/ld+json">
 {
@@ -154,5 +153,3 @@ changefreq: "monthly"
     }
 }
 </script>
-
-

@@ -1,138 +1,220 @@
 ---
-title: Exporter les données Excel pour remplir le formulaire PDF
+title: Exporter les données Excel pour remplir un formulaire PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /fr/net/export-excel-worksheet-data-to-fill-pdf-form/
-description: Cette section explique comment vous pouvez exporter les données de la feuille de calcul Excel pour remplir le formulaire PDF en utilisant la classe AutoFiller.
+description: Cette section explique comment vous pouvez exporter les données d'une feuille de calcul Excel pour remplir un formulaire PDF en utilisant la classe AutoFiller.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Export Excel data to fill PDF form",
+    "alternativeHeadline": "Export Excel Data to Auto-Fill PDF Forms",
+    "abstract": "La fonctionnalité dans Aspose.PDF for .NET permet aux utilisateurs d'exporter sans effort des données des feuilles de calcul Excel vers des formulaires PDF en utilisant la classe AutoFiller. En utilisant la méthode ExportDataTable, les utilisateurs peuvent transformer les données Excel en un DataTable et remplir efficacement les formulaires PDF, rationalisant ainsi le processus de saisie des données et augmentant la productivité. Cette fonctionnalité garantit que les formulaires PDF sont remplis avec précision et automatiquement en fonction de la structure des données dans Excel.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "908",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/export-excel-worksheet-data-to-fill-pdf-form/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/export-excel-worksheet-data-to-fill-pdf-form/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+}
+</script>
 
 {{% alert color="primary" %}}
 
-Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) offre diverses façons de remplir les formulaires Pdf. Vous pouvez importer des données à partir d'un fichier XML, DFD, XFDF, utiliser l'API et même utiliser les données de la feuille de calcul Excel. Nous utiliserions la méthode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) pour exporter les données de la feuille Excel dans un objet DataTable. Ensuite, nous devons importer ces données sous forme de Pdf en utilisant la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Assurez-vous que le nom de colonne de DataTable est identique au nom du champ sur le formulaire PDF.
+[L'espace de noms Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/net/) offre diverses façons de remplir les formulaires PDF. Vous pouvez importer des données à partir d'un fichier XML, DFD, XFDF, utiliser l'API et même utiliser les données d'une feuille de calcul Excel.
+Nous utiliserions la méthode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la classe [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) pour exporter les données de la feuille Excel dans un objet DataTable. Ensuite, nous devrions importer ces données dans le formulaire PDF en utilisant la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Assurez-vous que le nom de la colonne du DataTable est le même que le nom du champ dans le formulaire PDF.
 
 {{% /alert %}}
 
-## Détails de l'implémentation
+## Détails de mise en œuvre
 
-Dans le scénario suivant, nous allons utiliser un formulaire PDF, qui contient trois champs de formulaire nommés ID, Nom et Sexe.
+Dans le scénario suivant, nous allons utiliser un formulaire PDF, qui contient trois champs de formulaire nommés ID, Nom et Genre.
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_1.png)
 
-Dans le formulaire spécifié ci-dessus, il y a une page, avec trois champs nommés respectivement "ID", "Nom" et "Sexe". Nous extrairons les données de la feuille Excel suivante dans l'objet DataTable.
+Le formulaire spécifié ci-dessus a une page, avec trois champs nommés "ID", "Nom" et "Genre" respectivement. Nous allons extraire les données de la feuille Excel suivante dans un objet DataTable.
 
 ![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
 
-Nous devons créer un objet de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) et lier le formulaire PDF présent dans les images ci-dessus et utiliser la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) pour remplir les champs du formulaire en utilisant les données présentes dans l'objet DataTable.Une fois la méthode appelée, un nouveau fichier de formulaire Pdf est généré, qui contient cinq pages avec le formulaire rempli basé sur les données de la feuille Excel. Le formulaire Pdf d'entrée était d'une seule page et le résultat est de cinq pages, parce que le nombre de lignes de données dans la feuille Excel est de 5. La classe DataTable offre la capacité d'utiliser la première ligne de la feuille comme ColumnName.
+Nous devons créer un objet de la classe [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) et lier le formulaire PDF présent dans les images ci-dessus et utiliser la méthode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) pour remplir les champs du formulaire en utilisant les données présentes dans l'objet DataTable.
+Une fois la méthode appelée, un nouveau fichier de formulaire PDF est généré, qui contient cinq pages avec le formulaire rempli en fonction des données de la feuille Excel. Le formulaire PDF d'entrée était une seule page et le résultat est cinq pages, car le nombre de lignes de données dans la feuille Excel est de 5. La classe DataTable offre la capacité d'utiliser la première ligne de la feuille comme nom de colonne.
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
 | :- | :- |
 |![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_5.png)|![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_6.png)|
 
 ```csharp
-Workbook workbook = new Workbook();
-// Création d'un flux de fichiers contenant le fichier Excel à ouvrir
-FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open);
-// Ouverture du fichier Excel via le flux de fichiers
-workbook.Open(fstream);
-// Accès à la première feuille de calcul dans le fichier Excel
-Worksheet worksheet = workbook.Worksheets[0];
-// Exportation du contenu de 7 lignes et 2 colonnes à partir de la 1ère cellule vers DataTable
-DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
-// Fermeture du flux de fichiers pour libérer toutes les ressources
-fstream.Close();
-// Créer un objet de la classe AutoFiller
-AutoFiller autoFiller = new AutoFiller();
-// Le fichier pdf d'entrée qui contient les champs de formulaire
-autoFiller.InputFileName = "d:\\pdftest\\DataTableExample.pdf";
-// Le pdf résultant, qui contiendra les champs de formulaire remplis avec les informations de DataTable
-autoFiller.OutputFileName = "D:\\pdftest\\DataTableExample_Filled.pdf";
-// Appeler la méthode pour importer les données de l'objet DataTable dans les champs de formulaire Pdf.
-autoFiller.ImportDataTable(dataTable);
-// Appeler la méthode de sauvegarde pour générer le fichier pdf
-autoFiller.Save();
-```
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportExcelToPdfForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
 
-Pour remplir depuis XLSX, veuillez utiliser l'extrait de code suivant :
-
-```csharp
-internal static void FillFromXLSX()
+    var workbook = new Workbook();
+    // Creating a file stream containing the Excel file to be opened
+    using (FileStream fstream = new FileStream(dataDir + "newBook1.xls", FileMode.Open))
+    {
+        // Opening the Excel file through the file stream
+        workbook.Open(fstream);
+        // Accessing the first worksheet in the Excel file
+        var worksheet = workbook.Worksheets[0];
+        // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
+        System.Data.DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
+        // Create an object of AutoFiller class
+        using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
         {
-            // Créer un objet de la classe AutoFiller
-            AutoFiller autoFiller = new AutoFiller();
-            // Le fichier PDF d'entrée qui contient les champs de formulaire
-            autoFiller.BindPdf(@"C:\Samples\Facades\Autofiller\Sample-Form-01.pdf");
-
-            DataTable dataTable = GenerateDataTable();
-
-            // Appeler la méthode pour importer les données de l'objet DataTable dans les champs de formulaire PDF.
+            // The input pdf file that contains form fields
+            autoFiller.InputFileName = dataDir + "DataTableExample.pdf";
+            // The resultant pdf, that will contain the form fields filled with information from DataTable
+            autoFiller.OutputFileName = dataDir + "DataTableExample_out.pdf";
+            // Call the method to import the data from DataTable object into Pdf form fields
             autoFiller.ImportDataTable(dataTable);
-
-            // Le PDF résultant, qui contiendra les champs de formulaire remplis avec les informations de DataTable
-            autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
-
+            // Save PDF document
+            autoFiller.Save();
         }
+    }
+}
 ```
 
-Aspose.PDF pour .NET vous permet de générer une table de données dans un document PDF :
+Pour remplir à partir de XLSX, veuillez utiliser le prochain extrait de code :
 
 ```csharp
-private static DataTable GenerateDataTable()
-        {
-            string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
-            // Créer un nouveau DataTable.
-            System.Data.DataTable table = new DataTable("Students");
-            // Déclarer des variables pour les objets DataColumn et DataRow.
-            DataColumn column;
-            DataRow row;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillFromXLSX()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
 
-            // Créer un nouveau DataColumn, définir le DataType,
-            // ColumnName et ajouter à DataTable.
-            column = new DataColumn
-            {
-                DataType = System.Type.GetType("System.Int32"),
-                ColumnName = "id",
-                ReadOnly = true,
-                Unique = true
-            };
-            // Ajouter la colonne à DataColumnCollection.
-            table.Columns.Add(column);
+    // Create an object of AutoFiller class
+    using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
+    {
+        // Bind PDF document
+        autoFiller.BindPdf(dataDir + "Sample-Form-01.pdf");
 
-            // Créer la deuxième colonne.
-            column = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "First Name",
-                AutoIncrement = false,
-                Caption = "First Name",
-                ReadOnly = false,
-                Unique = false
-            };
-            // Ajouter la colonne au tableau.
-            table.Columns.Add(column);
+        System.Data.DataTable dataTable = GenerateDataTable();
 
-            // Faire de la colonne ID la colonne clé primaire.
-            DataColumn[] PrimaryKeyColumns = new DataColumn[1];
-            PrimaryKeyColumns[0] = table.Columns["id"];
-            table.PrimaryKey = PrimaryKeyColumns;
+        // Call the method to import the data from DataTable object into Pdf form fields
+        autoFiller.ImportDataTable(dataTable);
 
-            // Créer trois nouveaux objets DataRow et les ajouter
-            // au DataTable
-            var rand = new Random();
-            for (int i = 1; i <= 4; i++)
-            {
-                row = table.NewRow();
-                row["id"] = i;
-                row["First Name"] = names[rand.Next(names.Length)];
-                table.Rows.Add(row);
-            }
-            return table;
-        }
+        // Save PDF document
+        autoFiller.Save(dataDir + "Sample-Form-01_out.pdf");
+    }
+}
+```
+
+Aspose.PDF for .NET vous permet de générer un tableau de données dans un document PDF :
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static System.Data.DataTable GenerateDataTable()
+{
+    string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
+    // Create a new DataTable
+    var table = new System.Data.DataTable("Students");
+
+    // Create new DataColumn, set DataType,
+    // ColumnName and add to DataTable
+    var column = new System.Data.DataColumn
+    {
+        DataType = System.Type.GetType("System.Int32"),
+        ColumnName = "id",
+        ReadOnly = true,
+        Unique = true
+    };
+    // Add the Column to the DataColumnCollection
+    table.Columns.Add(column);
+
+    // Create second column
+    column = new System.Data.DataColumn
+    {
+        DataType = System.Type.GetType("System.String"),
+        ColumnName = "First Name",
+        AutoIncrement = false,
+        Caption = "First Name",
+        ReadOnly = false,
+        Unique = false
+    };
+    // Add the column to the table
+    table.Columns.Add(column);
+
+    // Make the ID column the primary key column
+    var primaryKeyColumns = new System.Data.DataColumn[1];
+    primaryKeyColumns[0] = table.Columns["id"];
+    table.PrimaryKey = primaryKeyColumns;
+
+    // Create three new DataRow objects and add
+    // them to the DataTable
+    var rand = new Random();
+    System.Data.DataRow row;
+    for (int i = 1; i <= 4; i++)
+    {
+        row = table.NewRow();
+        row["id"] = i;
+        row["First Name"] = names[rand.Next(names.Length)];
+        table.Rows.Add(row);
+    }
+    return table;
+}
 ```
 
 ## Conclusion
 
 {{% alert color="primary" %}}
-[Aspose.PDF.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) offre également la capacité de remplir un formulaire PDF en utilisant des données provenant d'une base de données, mais cette fonctionnalité est actuellement prise en charge dans la version .Net.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) offre également la possibilité de remplir un formulaire PDF en utilisant des données provenant d'une base de données, mais cette fonctionnalité est actuellement prise en charge dans la version .NET.
 {{% /alert %}}

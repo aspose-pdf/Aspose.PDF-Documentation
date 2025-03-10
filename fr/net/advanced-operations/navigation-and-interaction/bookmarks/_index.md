@@ -1,35 +1,41 @@
 ---
-title: Travailler avec les signets dans les PDF en utilisant C#
+title: Travailler avec des signets dans PDF en utilisant C#
 linktitle: Signets
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/bookmarks/
-description: Cette section explique comment ajouter, supprimer et récupérer un signet avec Aspose.PDF pour .NET.
+description: Découvrez comment travailler avec des signets PDF en .NET en utilisant Aspose.PDF pour une navigation et une organisation faciles des documents.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-bookmarks/
+    - /net/working-with-bookmarks-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Travailler avec les signets dans les PDF en utilisant C#",
-    "alternativeHeadline": "Comment ajouter des signets dans les PDF",
+    "headline": "Working with Bookmarks in PDF using C#",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks with C#",
+    "abstract": "Découvrez les nouvelles capacités de Aspose.PDF for .NET, permettant aux utilisateurs de gérer efficacement les signets dans les documents PDF. Cette fonctionnalité permet l'ajout, la suppression et la récupération de signets, améliorant la navigation et l'accessibilité au sein des fichiers PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, signets dans pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "Bookmarks, PDF, C#, Aspose.PDF, add bookmark, delete bookmark, get bookmark, update bookmark, expand bookmark, PDF manipulation",
+    "wordcount": "130",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,15 +77,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/bookmarks/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cette section explique comment ajouter, supprimer et récupérer un signet avec Aspose.PDF pour .NET."
+    "dateModified": "2024-11-25",
+    "description": "Cette section explique comment ajouter, supprimer et obtenir un signet avec Aspose.PDF for .NET."
 }
 </script>
+
 Les signets PDF sont un outil pratique et essentiel lorsqu'il s'agit de lire des fichiers PDF. Ils permettent aux utilisateurs de sauter rapidement à d'autres endroits dans un document PDF, de naviguer à travers les pages et de visualiser rapidement le contenu d'un PDF, tout comme une table des matières.
 Dans cette section, vous apprendrez comment :
 
-- [Ajouter et supprimer un signet](/pdf/fr/net/add-and-delete-bookmark/)
-- [Obtenir, mettre à jour et développer un signet](/pdf/fr/net/get-update-and-expand-bookmark/)
+- [Ajouter et supprimer un signet](/pdf/net/add-and-delete-bookmark/)
+- [Obtenir, mettre à jour et développer un signet](/pdf/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {
@@ -144,4 +151,3 @@ Dans cette section, vous apprendrez comment :
     }
 }
 </script>
-

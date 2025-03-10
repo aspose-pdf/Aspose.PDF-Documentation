@@ -1,82 +1,159 @@
 ---
-title: Sauvegarder un document PDF de manière programmatique
-linktitle: Sauvegarder PDF
+title: Enregistrer un document PDF par programmation
+linktitle: Enregistrer PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/save-pdf-document/
-description: Apprenez à sauvegarder un fichier PDF en C# avec la bibliothèque PDF Aspose.PDF pour .NET. Sauvegardez le document PDF sur le système de fichiers, dans un flux, et dans des applications Web.
+description: Apprenez à enregistrer un fichier PDF dans la bibliothèque PDF C# Aspose.PDF for .NET. Enregistrez le document PDF dans le système de fichiers, dans un flux et dans des applications Web.
+aliases:
+    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Save PDF document programmatically",
+    "alternativeHeadline": "Programmatic PDF Saving with C#",
+    "abstract": "Découvrez comment les développeurs enregistrent par programmation des documents PDF avec facilité en utilisant Aspose.PDF for .NET. Cette fonctionnalité prend en charge l'enregistrement des PDF dans le système de fichiers, les flux et directement dans les applications Web, s'adaptant à divers cas d'utilisation tout en garantissant la conformité aux normes PDF/A et PDF/X pour l'archivage à long terme et l'échange graphique. Optimisez vos capacités de gestion des PDF avec ce mécanisme d'enregistrement robuste.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "471",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/save-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/save-pdf-document/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés."
+}
+</script>
 
-Le prochain extrait de code fonctionne également avec une nouvelle interface graphique [Aspose.Drawing](/pdf/fr/net/drawing/).
+Le prochain extrait de code fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/net/drawing/).
 
-## Sauvegarder un document PDF sur le système de fichiers
+## Enregistrer un document PDF dans le système de fichiers
 
-Vous pouvez sauvegarder le document PDF créé ou manipulé sur le système de fichiers en utilisant la méthode `Save` de la classe `Document`.
-Lorsque vous ne fournissez pas le type de format (options), le document est sauvegardé au format Aspose.PDF v.1.7 (*.pdf).
+Vous pouvez enregistrer le document PDF créé ou manipulé dans le système de fichiers en utilisant la méthode `Save` de la classe `Document`.
+Lorsque vous ne fournissez pas le type de format (options), le document est enregistré au format Aspose.PDF v.1.7 (*.pdf).
 
 ```csharp
-public static void SaveDocument()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocument()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-    // faire quelques manipulations, par exemple ajouter une nouvelle page vide
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(modifiedFileName);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_out.pdf");
+    }
 }
 ```
-## Enregistrer le document PDF dans un flux
+
+## Enregistrer un document PDF dans un flux
 
 Vous pouvez également enregistrer le document PDF créé ou manipulé dans un flux en utilisant les surcharges des méthodes `Save`.
 
 ```csharp
-public static void SaveDocumentStream()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentStream()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-    // faire quelques manipulations, par exemple ajouter une nouvelle page vide
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(System.IO.File.OpenWrite(modifiedFileName));
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_out.pdf");
+    }
 }
 ```
 
-## Enregistrer le document PDF dans les applications Web
-
-Pour enregistrer des documents dans les applications Web, vous pouvez utiliser les méthodes proposées ci-dessus. De plus, la classe `Document` dispose d'une méthode surchargée `Save` pour une utilisation avec la classe [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8).
-
-```csharp
-var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-// faire quelques manipulations, par exemple ajouter une nouvelle page vide
-pdfDocument.Pages.Add();
-pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
-```
-
-Pour une explication plus détaillée, veuillez suivre la section [Vitrine](/pdf/fr/net/showcases/).
+Pour une explication plus détaillée, veuillez vous rendre à la section [Showcase](/pdf/net/showcases/).
 
 ## Enregistrer au format PDF/A ou PDF/X
 
-Le PDF/A est une version normalisée ISO du format de document portable (PDF) utilisée pour l'archivage et la conservation à long terme des documents électroniques.
-Le PDF/A se distingue du PDF en ce qu'il interdit les fonctionnalités non adaptées à l'archivage à long terme, telles que la liaison de polices (par opposition à l'incorporation de polices) et le chiffrement. Les exigences de l'ISO pour les visionneuses PDF/A comprennent des directives de gestion des couleurs, la prise en charge des polices incorporées et une interface utilisateur pour la lecture des annotations incorporées.
+PDF/A est une version normalisée ISO du format de document portable (PDF) à utiliser dans l'archivage et la préservation à long terme des documents électroniques.
+PDF/A diffère du PDF en ce qu'il interdit les fonctionnalités non adaptées à l'archivage à long terme, telles que le lien de police (par opposition à l'incorporation de police) et le cryptage. Les exigences ISO pour les visionneuses PDF/A incluent des directives de gestion des couleurs, un support des polices intégrées et une interface utilisateur pour lire les annotations intégrées.
 
-Le PDF/X est un sous-ensemble de la norme ISO PDF. Le but du PDF/X est de faciliter l'échange de graphiques, et il a donc une série d'exigences liées à l'impression qui ne s'appliquent pas aux fichiers PDF standard.
+PDF/X est un sous-ensemble de la norme ISO PDF. Le but de PDF/X est de faciliter l'échange graphique, et il a donc une série d'exigences liées à l'impression qui ne s'appliquent pas aux fichiers PDF standard.
 
-Dans les deux cas, la méthode `Save` est utilisée pour stocker les documents, tandis que les documents doivent être préparés à l'aide de la méthode `Convert`.
+Dans les deux cas, la méthode `Save` est utilisée pour stocker les documents, tandis que les documents doivent être préparés en utilisant la méthode `Convert`.
 
 ```csharp
-public static void SaveDocumentAsPDFx()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentAsPDFx()
 {
-    var pdfDocument = new Aspose.Pdf.Document("..\\..\\..\\Samples\\SimpleResume.pdf");
-    pdfDocument.Pages.Add();
-    pdfDocument.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-    pdfDocument.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Add page
+        document.Pages.Add();
+        // Convert a document to a PDF/X-3 format
+        document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_X3.pdf");
+    }
 }
 ```
-

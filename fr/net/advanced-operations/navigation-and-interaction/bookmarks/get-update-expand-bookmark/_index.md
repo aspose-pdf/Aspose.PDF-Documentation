@@ -1,10 +1,12 @@
 ---
-title: Ajouter et supprimer un signet
-linktitle: Ajouter et supprimer un signet
+title: Obtenir, Mettre à Jour et Développer un Signet
+linktitle: Obtenir, Mettre à Jour et Développer un Signet
 type: docs
-weight: 10
-url: /fr/net/add-and-delete-bookmark/
-description: Vous pouvez ajouter un signet à un document PDF avec C#. Il est possible de supprimer tous les signets ou des signets particuliers d'un document PDF.
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
+url: /fr/net/get-update-and-expand-bookmark/
+description: Cet article décrit comment utiliser des signets dans un fichier PDF avec notre bibliothèque Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Ajouter et supprimer un signet",
-    "alternativeHeadline": "Comment ajouter et supprimer un signet d'un PDF",
+    "headline": "Get, Update and Expand a Bookmark",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks",
+    "abstract": "La nouvelle fonctionnalité Obtenir, Mettre à Jour et Développer un Signet améliore la bibliothèque Aspose.PDF for .NET en offrant aux utilisateurs la possibilité de récupérer, modifier et développer visuellement des signets dans des documents PDF. Cette fonctionnalité permet une navigation et une organisation efficaces du contenu PDF, facilitant la gestion de documents complexes avec des structures de signets hiérarchiques.",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de document PDF",
-    "keywords": "pdf, c#, supprimer un signet, ajouter un signet",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "get bookmarks, update bookmarks, expand bookmarks, PDF bookmarks, Aspose.PDF for .NET, OutlineCollection, OutlineItemCollection, child bookmarks",
+    "wordcount": "1050",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,151 +69,420 @@ sitemap:
             }
         ]
     },
-    "url": "/net/add-and-delete-bookmark/",
+    "url": "/net/get-update-and-expand-bookmark/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/add-and-delete-bookmark/"
+        "@id": "/net/get-update-and-expand-bookmark/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Vous pouvez ajouter un signet à un document PDF avec C#. Il est possible de supprimer tous les signets ou des signets particuliers d'un document PDF."
+    "dateModified": "2024-11-25",
+    "description": "Cet article décrit comment utiliser des signets dans un fichier PDF avec notre bibliothèque Aspose.PDF for .NET."
 }
 </script>
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-## Ajouter un Signet à un Document PDF
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Les signets sont conservés dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) de l'objet Document, elle-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+## Obtenir des Signets
 
-Pour ajouter un signet à un PDF :
+La collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) contient tous les signets d'un fichier PDF. Cet article explique comment obtenir des signets d'un fichier PDF et comment savoir sur quelle page se trouve un signet particulier.
 
-1. Ouvrir un document PDF en utilisant l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Créer un signet et définir ses propriétés.
-1. Ajouter la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) à la collection des contours.
+Pour obtenir les signets, parcourez la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) et obtenez chaque signet dans l'OutlineItemCollection. L'OutlineItemCollection donne accès à tous les attributs du signet. Le code suivant vous montre comment obtenir des signets à partir du fichier PDF.
 
-Le code suivant vous montre comment ajouter un signet dans un document PDF.
-
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
-
-// Créer un objet signet
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Test Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-// Définir le numéro de la page de destination
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
-// Ajouter le signet dans la collection de contours du document.
-pdfDocument.Outlines.Add(pdfOutline);
-
-dataDir = dataDir + "AddBookmark_out.pdf";
-// Sauvegarder le résultat
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+        }
+    }
+}
 ```
-## Ajouter un signet enfant au document PDF
+{{< /tab >}}
 
-Les signets peuvent être imbriqués, indiquant une relation hiérarchique avec des signets parent et enfant. Cet article explique comment ajouter un signet enfant, c'est-à-dire un signet de deuxième niveau, à un PDF.
-
-Pour ajouter un signet enfant à un fichier PDF, commencez d'abord par ajouter un signet parent :
-
-1. Ouvrir un document.
-1. Ajouter un signet à la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), en définissant ses propriétés.
-1. Ajouter la OutlineItemCollection à la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) de l'objet Document.
-
-Le signet enfant est créé de la même manière que le signet parent, expliqué ci-dessus, mais est ajouté à la collection Outlines du signet parent.
-
-Les extraits de code suivants montrent comment ajouter un signet enfant à un document PDF.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf");
 
-// Créer un objet signet parent
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Parent Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-
-// Créer un objet signet enfant
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfChildOutline.Title = "Child Outline";
-pdfChildOutline.Italic = true;
-pdfChildOutline.Bold = true;
-
-// Ajouter un signet enfant dans la collection du signet parent
-pdfOutline.Add(pdfChildOutline);
-// Ajouter un signet parent dans la collection de contours du document.
-pdfDocument.Outlines.Add(pdfOutline);
-
-dataDir = dataDir + "AddChildBookmark_out.pdf";
-// Sauvegarder la sortie
-pdfDocument.Save(dataDir);
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+    }
+}
 ```
-## Supprimer tous les signets d'un document PDF
+{{< /tab >}}
+{{< /tabs >}}
 
-Tous les signets dans un PDF sont contenus dans la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Cet article explique comment supprimer tous les signets d'un fichier PDF.
+## Obtenir le Numéro de Page d'un Signet
 
-Pour supprimer tous les signets d'un fichier PDF :
+Une fois que vous avez ajouté un signet, vous pouvez découvrir sur quelle page il se trouve en obtenant le numéro de page de destination associé à l'objet Bookmark.
 
-1. Appelez la méthode Delete de la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Enregistrez le fichier modifié en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) de l'objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-
-Les extraits de code suivants montrent comment supprimer tous les signets d'un document PDF.
-
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Bind PDF document
+        bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
-// Supprimer tous les signets
-pdfDocument.Outlines.Delete();
+        // Extract bookmarks
+        Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
 
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
-// Enregistrer le fichier mis à jour
-pdfDocument.Save(dataDir);
+        foreach (var bookmark in bookmarks)
+        {
+            string strLevelSeparator = string.Empty;
+
+            for (int i = 1; i < bookmark.Level; i++)
+            {
+                strLevelSeparator += "----";
+            }
+
+            Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+            Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+            Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+        }
+    }
+}
 ```
-## Supprimer un signet particulier d'un document PDF
+{{< /tab >}}
 
-Pour supprimer un signet particulier d'un fichier PDF :
-
-1. Passez le titre du signet en paramètre à la méthode Delete de la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. Ensuite, enregistrez le fichier mis à jour avec la méthode Save de l'objet Document.
-
-La classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) fournit la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). La méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) supprime tout signet dont le titre est passé à la méthode.
-
-Les extraits de code suivants montrent comment supprimer un signet particulier du document PDF.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+    // Create PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-// Supprimer un contour particulier par Titre
-pdfDocument.Outlines.Delete("Child Outline");
+    // Bind PDF document
+    bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
-// Enregistrer le fichier mis à jour
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+    // Extract bookmarks
+    Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+    foreach (var bookmark in bookmarks)
+    {
+        string strLevelSeparator = string.Empty;
+
+        for (int i = 1; i < bookmark.Level; i++)
+        {
+            strLevelSeparator += "----";
+        }
+
+        Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+        Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+        Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+    }
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Obtenir des Signets Enfants d'un Document PDF
+
+Les signets peuvent être organisés dans une structure hiérarchique, avec des parents et des enfants. Pour obtenir tous les signets, parcourez les collections Outlines de l'objet Document. Cependant, pour obtenir également les signets enfants, parcourez tous les signets dans chaque objet [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) obtenu dans la première boucle. Les extraits de code suivants montrent comment obtenir des signets enfants d'un document PDF.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+
+            if (outlineItem.Count > 0)
+            {
+                Console.WriteLine("Child Bookmarks");
+
+                // There are child bookmarks then loop through that as well
+                foreach (var childOutline in outlineItem)
+                {
+                    Console.WriteLine(childOutline.Title);
+                    Console.WriteLine(childOutline.Italic);
+                    Console.WriteLine(childOutline.Bold);
+                    Console.WriteLine(childOutline.Color);
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf");
+
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+
+        if (outlineItem.Count > 0)
+        {
+            Console.WriteLine("Child Bookmarks");
+
+            // There are child bookmarks then loop through that as well
+            foreach (var childOutline in outlineItem)
+            {
+                Console.WriteLine(childOutline.Title);
+                Console.WriteLine(childOutline.Italic);
+                Console.WriteLine(childOutline.Bold);
+                Console.WriteLine(childOutline.Color);
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Mettre à Jour des Signets dans un Document PDF
+
+Pour mettre à jour un signet dans un fichier PDF, d'abord, obtenez le signet particulier de la collection OutlineColletion de l'objet Document en spécifiant l'index du signet. Une fois que vous avez récupéré le signet dans l'objet [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), vous pouvez mettre à jour ses propriétés et ensuite enregistrer le fichier PDF mis à jour en utilisant la méthode Save. Les extraits de code suivants montrent comment mettre à jour des signets dans un document PDF.
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+        pdfOutline.Title = "Updated Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+    pdfOutline.Title = "Updated Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Mettre à Jour des Signets Enfants dans un Document PDF
+
+Pour mettre à jour un signet enfant :
+
+1. Récupérez le signet enfant que vous souhaitez mettre à jour à partir du fichier PDF en obtenant d'abord le signet parent puis le signet enfant en utilisant les valeurs d'index appropriées.
+1. Enregistrez le fichier PDF mis à jour en utilisant la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1).
+
+{{% alert color="primary" %}}
+
+Obtenez un signet de la collection OutlineCollection de l'objet Document en spécifiant l'index du signet, puis obtenez le signet enfant en spécifiant l'index de ce signet parent.
+
+{{% /alert %}}
+
+Le code suivant vous montre comment mettre à jour des signets enfants dans un document PDF.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+
+        // Get child bookmark object
+        Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+        childOutline.Title = "Updated Outline";
+        childOutline.Italic = true;
+        childOutline.Bold = true;
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+
+    // Get child bookmark object
+    Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+    childOutline.Title = "Updated Outline";
+    childOutline.Italic = true;
+    childOutline.Bold = true;
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Signets Développés lors de la Visualisation du Document
+
+Les signets sont conservés dans la collection [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) de l'objet Document, lui-même dans la collection [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Cependant, nous pouvons avoir besoin que tous les signets soient développés lors de la visualisation du fichier PDF.
+
+Pour répondre à cette exigence, nous pouvons définir le statut d'ouverture pour chaque élément de signet comme Ouvert. Le code suivant vous montre comment définir le statut d'ouverture pour chaque signet comme développé dans un document PDF.
+
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+        // Traverse through each Outline item in outlines collection of PDF file
+        foreach (var item in document.Outlines)
+        {
+            // Set open status for outline item
+            item.Open = true;
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ExpandBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+    document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+    // Traverse through each Outline item in outlines collection of PDF file
+    foreach (var item in document.Outlines)
+    {
+        // Set open status for outline item
+        item.Open = true;
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "ExpandBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -232,21 +504,21 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -257,7 +529,7 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -269,5 +541,3 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
 </script>
-```
-

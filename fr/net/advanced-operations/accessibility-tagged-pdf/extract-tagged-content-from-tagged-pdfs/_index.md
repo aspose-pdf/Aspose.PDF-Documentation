@@ -1,10 +1,12 @@
 ---
-title: Extraire le contenu tagué à partir d'un PDF
-linktitle: Extraire le contenu tagué
+title: Extraire le contenu étiqueté d'un PDF
+linktitle: Extraire le contenu étiqueté
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /fr/net/extract-tagged-content-from-tagged-pdfs/
-description: Cet article explique comment extraire le contenu tagué d'un document PDF en utilisant Aspose.PDF pour .NET
+description: Cet article explique comment extraire le contenu étiqueté d'un document PDF en utilisant Aspose.PDF for .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extraire le contenu tagué à partir d'un PDF",
-    "alternativeHeadline": "Comment taguer une image dans un PDF",
+    "headline": "Extract Tagged Content from PDF",
+    "alternativeHeadline": "Extract Content from Tagged PDFs Effortlessly",
+    "abstract": "La nouvelle fonctionnalité Extraire le contenu étiqueté d'un PDF dans Aspose.PDF for .NET permet aux utilisateurs d'extraire et de manipuler efficacement le contenu étiqueté des documents PDF en utilisant C#. Cette fonctionnalité améliore l'accessibilité et la conformité des PDF en fournissant un accès fluide à la structure du document, permettant aux développeurs de gérer programmatique le texte, les images et les métadonnées au sein des PDF étiquetés.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "tag, pdf, extract",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "Extract, Tagged Content, PDF Document, Aspose.PDF, C#, Root Structure, Child Elements, Tagging Images, PDF/UA Compliance, StructureElement",
+    "wordcount": "872",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,184 +74,365 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-tagged-content-from-tagged-pdfs/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cet article explique comment extraire le contenu tagué d'un document PDF en utilisant Aspose.PDF pour .NET"
+    "dateModified": "2022-11-25",
+    "description": "Cet article explique comment extraire le contenu étiqueté d'un document PDF en utilisant Aspose.PDF for .NET"
 }
 </script>
 
-Dans cet article, vous apprendrez comment extraire le contenu tagué d'un document PDF en utilisant C#.
+Dans cet article, vous apprendrez comment extraire le contenu étiqueté d'un document PDF en utilisant C#.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-## Obtenir le contenu PDF Tagué
+## Obtenir le contenu PDF étiqueté
 
-Pour obtenir le contenu d'un document PDF avec du texte tagué, Aspose.PDF offre la propriété [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) de la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Pour obtenir le contenu d'un document PDF avec du texte étiqueté, Aspose.PDF propose la propriété [TaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/taggedcontent) de la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
-Le code suivant montre comment obtenir le contenu d'un document PDF avec du texte tagué :
+Le code suivant montre comment obtenir le contenu d'un document PDF avec du texte étiqueté :
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Créer un document Pdf
-Document document = new Document();
-
-// Obtenir le contenu pour travailler avec TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
-
-//
-// Travailler avec le contenu Pdf tagué
-//
-
-// Définir le titre et la langue pour le document
-taggedContent.SetTitle("Simple Tagged Pdf Document");
-taggedContent.SetLanguage("en-US");
-
-// Sauvegarder le document PDF tagué
-document.Save(dataDir + "TaggedPDFContent.pdf");
-```
-## Obtention de la structure racine
-
-Pour obtenir la structure racine d'un document PDF balisé, Aspose.PDF propose la propriété [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) de l'interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) et [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Le fragment de code suivant montre comment obtenir la structure racine d'un document PDF balisé :
-
-```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Créer un document PDF
-Document document = new Document();
-
-// Obtenir le contenu pour travailler avec TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
-
-// Définir le titre et la langue du document
-taggedContent.SetTitle("Document PDF balisé");
-taggedContent.SetLanguage("en-US");
-
-// Les propriétés StructTreeRootElement et RootElement sont utilisées pour accéder à
-// l'objet StructTreeRoot du document pdf et à l'élément de structure racine (élément de structure du document).
-StructTreeRootElement structTreeRootElement = taggedContent.StructTreeRootElement;
-StructureElement rootElement = taggedContent.RootElement;
-```
-## Accès aux éléments enfants
-
-Pour accéder aux éléments enfants d'un document PDF balisé, Aspose.PDF propose la classe [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist). Le fragment de code suivant montre comment accéder aux éléments enfants d'un document PDF balisé :
-
-```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Ouvrir le document PDF
-Document document = new Document(dataDir + "StructureElementsTree.pdf");
-
-// Obtenir le contenu pour travailler avec TaggedPdf
-ITaggedContent taggedContent = document.TaggedContent;
-
-// Accès à l'élément racine
-ElementList elementList = taggedContent.StructTreeRootElement.ChildElements;
-foreach (Element element in elementList)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetTaggedContent()
 {
-    if (element is StructureElement)
-    {
-        StructureElement structureElement = element as StructureElement;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-        // Obtenir les propriétés
-        string title = structureElement.Title;
-        string language = structureElement.Language;
-        string actualText = structureElement.ActualText;
-        string expansionText = structureElement.ExpansionText;
-        string alternativeText = structureElement.AlternativeText;
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Work with Tagged PDF content
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Simple Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "TaggedPDFContent_out.pdf");
     }
 }
+```
+{{< /tab >}}
 
-// Accès aux éléments enfants du premier élément dans l'élément racine
-elementList = taggedContent.RootElement.ChildElements[1].ChildElements;
-foreach (Element element in elementList)
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetTaggedContent()
 {
-    if (element is StructureElement)
-    {
-        StructureElement structureElement = element as StructureElement;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-        // Définir les propriétés
-        structureElement.Title = "titre";
-        structureElement.Language = "fr-FR";
-        structureElement.ActualText = "texte actuel";
-        structureElement.ExpansionText = "exp";
-        structureElement.AlternativeText = "alt";
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with TaggedPdf
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Work with Tagged PDF content
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Simple Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "TaggedPDFContent_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Obtenir la structure racine
+
+Pour obtenir la structure racine d'un document PDF étiqueté, Aspose.PDF propose la propriété [StructTreeRootElement](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/properties/structtreerootelement) de l'interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) et [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Le code suivant montre comment obtenir la structure racine d'un document PDF étiqueté :
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetRootStructure()
+{
+    // Create PDF Document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Set Title and Language for Document
+        taggedContent.SetTitle("Tagged Pdf Document");
+        taggedContent.SetLanguage("en-US");
+
+        // Properties StructTreeRootElement and RootElement are used for access to
+        // StructTreeRoot object of pdf document and to root structure element (Document structure element).
+        Aspose.Pdf.LogicalStructure.StructTreeRootElement structTreeRootElement = taggedContent.StructTreeRootElement;
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
     }
 }
-
-// Sauvegarder le document PDF balisé
-document.Save(dataDir + "AccessChildElements.pdf");
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetRootStructure()
+{
+    // Create PDF Document
+    using var document = new Aspose.Pdf.Document();
+
+    // Get Content for work with Tagged PDF
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Set Title and Language for Document
+    taggedContent.SetTitle("Tagged Pdf Document");
+    taggedContent.SetLanguage("en-US");
+
+    // Properties StructTreeRootElement and RootElement are used for access to
+    // StructTreeRoot object of pdf document and to root structure element (Document structure element).
+    Aspose.Pdf.LogicalStructure.StructTreeRootElement structTreeRootElement = taggedContent.StructTreeRootElement;
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Accéder aux éléments enfants
+
+Pour accéder aux éléments enfants d'un document PDF étiqueté, Aspose.PDF propose la classe [ElementList](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/elementlist). Le code suivant montre comment accéder aux éléments enfants d'un document PDF étiqueté :
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AccessChildElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF Document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf"))
+    {
+        // Get Content for work with Tagged PDF
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+        // Access to root element(s)
+        Aspose.Pdf.LogicalStructure.ElementList elementList = taggedContent.StructTreeRootElement.ChildElements;
+
+        foreach (Aspose.Pdf.LogicalStructure.Element element in elementList)
+        {
+            if (element is Aspose.Pdf.LogicalStructure.StructureElement)
+            {
+                var structureElement = element as Aspose.Pdf.LogicalStructure.StructureElement;
+
+                // Get properties
+                string title = structureElement.Title;
+                string language = structureElement.Language;
+                string actualText = structureElement.ActualText;
+                string expansionText = structureElement.ExpansionText;
+                string alternativeText = structureElement.AlternativeText;
+            }
+        }
+
+        // Access to child elements of first element in root element
+        elementList = taggedContent.RootElement.ChildElements[1].ChildElements;
+
+        foreach (Aspose.Pdf.LogicalStructure.Element element in elementList)
+        {
+            if (element is Aspose.Pdf.LogicalStructure.StructureElement)
+            {
+                var structureElement = element as Aspose.Pdf.LogicalStructure.StructureElement;
+
+                // Set properties
+                structureElement.Title = "title";
+                structureElement.Language = "fr-FR";
+                structureElement.ActualText = "actual text";
+                structureElement.ExpansionText = "exp";
+                structureElement.AlternativeText = "alt";
+            }
+        }
+
+        // Save Tagged PDF Document
+        document.Save(dataDir + "AccessChildElements_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AccessChildElements()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF Document
+    using var document = new Aspose.Pdf.Document(dataDir + "StructureElementsTree.pdf");
+
+    // Get Content for work with Tagged PDF
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document.TaggedContent;
+
+    // Access to root element(s)
+    Aspose.Pdf.LogicalStructure.ElementList elementList = taggedContent.StructTreeRootElement.ChildElements;
+
+    foreach (Aspose.Pdf.LogicalStructure.Element element in elementList)
+    {
+        if (element is Aspose.Pdf.LogicalStructure.StructureElement)
+        {
+            var structureElement = element as Aspose.Pdf.LogicalStructure.StructureElement;
+
+            // Get properties
+            string title = structureElement.Title;
+            string language = structureElement.Language;
+            string actualText = structureElement.ActualText;
+            string expansionText = structureElement.ExpansionText;
+            string alternativeText = structureElement.AlternativeText;
+        }
+    }
+
+    // Access to child elements of first element in root element
+    elementList = taggedContent.RootElement.ChildElements[1].ChildElements;
+
+    foreach (Aspose.Pdf.LogicalStructure.Element element in elementList)
+    {
+        if (element is Aspose.Pdf.LogicalStructure.StructureElement)
+        {
+            var structureElement = element as Aspose.Pdf.LogicalStructure.StructureElement;
+
+            // Set properties
+            structureElement.Title = "title";
+            structureElement.Language = "fr-FR";
+            structureElement.ActualText = "actual text";
+            structureElement.ExpansionText = "exp";
+            structureElement.AlternativeText = "alt";
+        }
+    }
+
+    // Save Tagged PDF Document
+    document.Save(dataDir + "AccessChildElements_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Étiquetage des images dans un PDF existant
 
-Pour étiqueter les images dans un document PDF existant, Aspose.PDF propose la méthode [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) de la classe [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Vous pouvez ajouter un texte alternatif pour les figures en utilisant la propriété [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) de la classe [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement).
+Pour étiqueter des images dans un document PDF existant, Aspose.PDF propose la méthode [FindElements](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/element/methods/findelements/_1) de la classe [StructureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement). Vous pouvez ajouter un texte alternatif pour les figures en utilisant la propriété [AlternativeText](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/structureelement/properties/alternativetext) de la classe [FigureElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/figureelement).
 
-Le fragment de code suivant montre comment étiqueter les images dans un document PDF existant :
+Le code suivant montre comment étiqueter des images dans un document PDF existant :
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller sur https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-string inFile = dataDir + "TH.pdf";
-string outFile = dataDir + "TH_out.pdf";
-string logFile = dataDir + "TH_out.xml";
-
-// Ouvrir le document
-Document document = new Document(inFile);
-
-// Obtient le contenu étiqueté et l'élément de structure racine
-ITaggedContent taggedContent = document.TaggedContent;
-StructureElement rootElement = taggedContent.RootElement;
-
-// Définir le titre pour le document PDF étiqueté
-taggedContent.SetTitle("Document avec images");
-
-foreach (FigureElement figureElement in rootElement.FindElements<FigureElement>(true))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TagImages()
 {
-    // Définir le texte alternatif pour la figure
-    figureElement.AlternativeText = "Texte alternatif de la figure (technique 2)";
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
+    // Open PDF document
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "TH.pdf"))
+    {
+        // Gets tagged content and root structure element
+        Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+        Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
 
-    // Créer et définir l'attribut BBox
-    StructureAttribute bboxAttribute = new StructureAttribute(AttributeKey.BBox);
-    bboxAttribute.SetRectangleValue(new Rectangle(0.0, 0.0, 100.0, 100.0));
+        // Set title for tagged PDF document
+        taggedContent.SetTitle("Document with images");
 
-    StructureAttributes figureLayoutAttributes = figureElement.Attributes.GetAttributes(AttributeOwnerStandard.Layout);
-    figureLayoutAttributes.SetAttribute(bboxAttribute);
+        foreach (Aspose.Pdf.LogicalStructure.FigureElement figureElement in rootElement.FindElements<Aspose.Pdf.LogicalStructure.FigureElement>(true))
+        {
+            // Set AlternativeText for Figure
+            figureElement.AlternativeText = "Figure alternative text (technique 2)";
+
+            // Create and Set BBox Attribute
+            var bboxAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.BBox);
+            bboxAttribute.SetRectangleValue(new Aspose.Pdf.Rectangle(0.0, 0.0, 100.0, 100.0));
+
+            Aspose.Pdf.LogicalStructure.StructureAttributes figureLayoutAttributes = figureElement.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
+            figureLayoutAttributes.SetAttribute(bboxAttribute);
+        }
+
+        // Move Span Element into Paragraph (find wrong span and paragraph in first TD)
+        Aspose.Pdf.LogicalStructure.TableElement tableElement = rootElement.FindElements<Aspose.Pdf.LogicalStructure.TableElement>(true)[0];
+        Aspose.Pdf.LogicalStructure.SpanElement spanElement = tableElement.FindElements<Aspose.Pdf.LogicalStructure.SpanElement>(true)[0];
+        Aspose.Pdf.LogicalStructure.TableTDElement firstTdElement = tableElement.FindElements<Aspose.Pdf.LogicalStructure.TableTDElement>(true)[0];
+        Aspose.Pdf.LogicalStructure.ParagraphElement paragraph = firstTdElement.FindElements<Aspose.Pdf.LogicalStructure.ParagraphElement>(true)[0];
+
+        // Move Span Element into Paragraph
+        spanElement.ChangeParentElement(paragraph);
+
+        // Save PDF document
+        document1.Save(dataDir + "TH_out.pdf");
+    }
+
+    // Check PDF/UA Compliance for out document
+    using (var document2 = new Aspose.Pdf.Document(dataDir + "TH_out.pdf"))
+    {
+        bool isPdfUaCompliance = document2.Validate(dataDir + "TH_out.xml", Aspose.Pdf.PdfFormat.PDF_UA_1);
+        Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+    }
 }
-
-// Déplacer l'élément Span dans le paragraphe (trouver le mauvais span et paragraphe dans le premier TD)
-TableElement tableElement = rootElement.FindElements<TableElement>(true)[0];
-SpanElement spanElement = tableElement.FindElements<SpanElement>(true)[0];
-TableTDElement firstTdElement = tableElement.FindElements<TableTDElement>(true)[0];
-ParagraphElement paragraph = firstTdElement.FindElements<ParagraphElement>(true)[0];
-
-// Déplacer l'élément Span dans le paragraphe
-spanElement.ChangeParentElement(paragraph);
-
-
-// Sauvegarder le document
-document.Save(outFile);
-
-
-
-// Vérification de la conformité PDF/UA pour le document sortant
-document = new Document(outFile);
-
-bool isPdfUaCompliance = document.Validate(logFile, PdfFormat.PDF_UA_1);
-Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void TagImages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using var document1 = new Aspose.Pdf.Document(dataDir + "TH.pdf");
+
+    // Gets tagged content and root structure element
+    Aspose.Pdf.Tagged.ITaggedContent taggedContent = document1.TaggedContent;
+    Aspose.Pdf.LogicalStructure.StructureElement rootElement = taggedContent.RootElement;
+
+    // Set title for tagged PDF document
+    taggedContent.SetTitle("Document with images");
+
+    foreach (Aspose.Pdf.LogicalStructure.FigureElement figureElement in rootElement.FindElements<Aspose.Pdf.LogicalStructure.FigureElement>(true))
+    {
+        // Set AlternativeText for Figure
+        figureElement.AlternativeText = "Figure alternative text (technique 2)";
+
+        // Create and Set BBox Attribute
+        var bboxAttribute = new Aspose.Pdf.LogicalStructure.StructureAttribute(Aspose.Pdf.LogicalStructure.AttributeKey.BBox);
+        bboxAttribute.SetRectangleValue(new Aspose.Pdf.Rectangle(0.0, 0.0, 100.0, 100.0));
+
+        Aspose.Pdf.LogicalStructure.StructureAttributes figureLayoutAttributes = figureElement.Attributes.GetAttributes(Aspose.Pdf.LogicalStructure.AttributeOwnerStandard.Layout);
+        figureLayoutAttributes.SetAttribute(bboxAttribute);
+    }
+
+    // Move Span Element into Paragraph (find wrong span and paragraph in first TD)
+    Aspose.Pdf.LogicalStructure.TableElement tableElement = rootElement.FindElements<Aspose.Pdf.LogicalStructure.TableElement>(true)[0];
+    Aspose.Pdf.LogicalStructure.SpanElement spanElement = tableElement.FindElements<Aspose.Pdf.LogicalStructure.SpanElement>(true)[0];
+    Aspose.Pdf.LogicalStructure.TableTDElement firstTdElement = tableElement.FindElements<Aspose.Pdf.LogicalStructure.TableTDElement>(true)[0];
+    Aspose.Pdf.LogicalStructure.ParagraphElement paragraph = firstTdElement.FindElements<Aspose.Pdf.LogicalStructure.ParagraphElement>(true)[0];
+
+    // Move Span Element into Paragraph
+    spanElement.ChangeParentElement(paragraph);
+
+    // Save PDF document
+    document1.Save(dataDir + "TH_out.pdf");
+
+    // Check PDF/UA Compliance for out document
+    using var document2 = new Aspose.Pdf.Document(dataDir + "TH_out.pdf");
+
+    bool isPdfUaCompliance = document2.Validate(dataDir + "TH_out.pdf", Aspose.Pdf.PdfFormat.PDF_UA_1);
+    Console.WriteLine(String.Format("PDF/UA compliance: {0}", isPdfUaCompliance));
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Bibliothèque Aspose.PDF pour .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -270,21 +454,21 @@ Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -295,7 +479,7 @@ Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -307,5 +491,3 @@ Console.WriteLine(String.Format("Conformité PDF/UA : {0}", isPdfUaCompliance));
     }
 }
 </script>
-```
-
