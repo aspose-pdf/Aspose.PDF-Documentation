@@ -1,35 +1,38 @@
 ---
-title: 从XML生成PDF
-linktitle: 从XML生成PDF
+title: 从 XML 生成 PDF
+linktitle: 从 XML 生成 PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/generate-pdf-from-xml
-description: Aspose.PDF for .NET 提供了多种方法将XML文件转换为PDF文档，要求输入的XML文件。
+description: Aspose.PDF for .NET 提供了几种将 XML 文件转换为 PDF 文档的方法，要求输入 XML 文件。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "从XML生成PDF",
-    "alternativeHeadline": "将XML转换为PDF",
+    "headline": "Generate PDF from XML",
+    "alternativeHeadline": "Generate PDF directly from XML data",
+    "abstract": "Aspose.PDF for .NET 现在通过多种方法直接从 XML 数据生成 PDF：XSLT 转换、XSL-FO 标记和自定义 Aspose.PDF XML 架构。此新功能提供了从多种 XML 结构灵活创建 PDF 的能力，简化了文档生成工作流程。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf 文档生成",
-    "keywords": "pdf, c#, 生成 pdf 从 xml, 将 xml 转换为 pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "genre": "pdf document generation",
+    "wordcount": "3834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 文档团队",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +74,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/generate-pdf-from-xml"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET 提供了多种方法将XML文件转换为PDF文档，要求输入的XML文件。"
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF for .NET 提供了几种将 XML 文件转换为 PDF 文档的方法，要求输入 XML 文件。"
 }
 </script>
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
 
-从XML文档生成PDF文档并不是一项简单的任务，因为XML文档可以描述不同的内容。Aspose.PDF for .NET 有几种基于XML文档生成PDF的方法：
+从 XML 文档生成 PDF 文档并不是一项简单的任务，因为 XML 文档可以描述不同的内容。Aspose.PDF for .NET 有几种基于 XML 文档生成 PDF 的方法：
 
-- 使用XSLT转换
-- 使用XSL-FO（XSL格式化对象）标记
-- 使用自己的Aspose.PDF XML Schema
+- 使用 XSLT 转换
+- 使用 XSL-FO（XSL 格式对象）标记
+- 使用自有的 Aspose.PDF XML 架构
 
-## 使用XSLT转换生成PDF文档
+## 使用 XSLT 转换生成 PDF 文档
 
-XSL（可扩展样式表语言）是一种用于将XML文档转换为其他XML文档或HTML的样式语言。在我们的情况下，我们可以使用XML到HTML的转换，然后基于HTML数据创建PDF。
+XSL（可扩展样式表语言）是一种用于将 XML 文档转换为其他 XML 文档或 HTML 的样式语言。在我们的案例中，我们可以使用 XML 到 HTML 的转换，然后基于 HTML 数据创建 PDF。
 
-假设我们有一个简单的CD目录的XML文件（见下文）。
+假设我们有一个简单的 CD 目录的 XML 文件（见下文）。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -304,7 +307,7 @@ XSL（可扩展样式表语言）是一种用于将XML文档转换为其他XML�
 </catalog>
 ```
 
-要将此文件转换为PDF，我们应该创建一个带有HTML布局的XSL。让我们将数据渲染在表格中。帮助我们做到这一点的XSL文件可能看起来像这样：
+要将此文件转换为 PDF，我们应该创建一个带有 HTML 布局的 XSL。让我们在表格中呈现我们的数据。帮助我们做到这一点的 XSL 文件可能看起来像这样：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -313,11 +316,11 @@ XSL（可扩展样式表语言）是一种用于将XML文档转换为其他XML�
   <xsl:template match="/">
     <html>
       <body>
-        <h2>我的CD收藏</h2>
+        <h2>My CD Collection</h2>
         <table border="1">
           <tr bgcolor="#9acd32">
-            <th style="text-align:left">标题</th>
-            <th style="text-align:left">艺术家</th>
+            <th style="text-align:left">Title</th>
+            <th style="text-align:left">Artist</th>
           </tr>
           <xsl:for-each select="catalog/cd">
             <tr>
@@ -336,44 +339,104 @@ XSL（可扩展样式表语言）是一种用于将XML文档转换为其他XML�
 </xsl:stylesheet>
 ```
 
-因此，我们需要转换XML并加载到PDF文档中。 以下示例展示了这种方式：
+因此，我们需要转换 XML 并加载到 PDF 文档中。以下示例展示了这种方法：
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void ExampleXSLTtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var XmlContent = File.ReadAllText(@"XMLFile1.xml");
-    var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
-    // 设置页面大小为A5
+
+    // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var pdfDocument = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLT_out.pdf");
+    }
 }
 
-public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
 {
     var transform = new XslCompiledTransform();
+
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
     }
+
     var memoryStream = new MemoryStream();
     var results = new StreamWriter(memoryStream);
+
     using (var reader = XmlReader.Create(new StringReader(inputXml)))
     {
         transform.Transform(reader, null, results);
     }
+
     memoryStream.Position = 0;
     return memoryStream;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
+    var options = new Aspose.Pdf.HtmlLoadOptions();
+
+    // set page size to A5
+    options.PageInfo.Height = 595;
+    options.PageInfo.Width = 420;
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLT_out.pdf");
+}
+
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, null, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## 使用 XSL-FO 标记生成 PDF 文档
 
-XSL-FO 是一种基于 XML 的标记语言，用于描述 XML 数据的格式，以输出到屏幕、纸张或其他媒体。Aspose.PDF 有一个特殊的类，可以应用 XSL-FO 标记并生成 PDF 文档。
+XSL-FO 是一种基于 XML 的标记语言，用于描述 XML 数据的格式，以便输出到屏幕、纸张或其他媒体。Aspose.PDF 有一个特殊的类，可以应用 XSL-FO 标记并获取 PDF 文档。
 
-让我们来看一个例子。这是一个包含员工示例数据的 XML 文件。
+让我们举个例子。这里是一个包含员工样本数据的 XML 文件。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -399,7 +462,7 @@ XSL-FO 是一种基于 XML 的标记语言，用于描述 XML 数据的格式，
 </employees>
 ```
 
-让我们创建另一个文件——XSL-FO 标记文件，将员工数据转换为表格。
+让我们再创建一个文件 - XSL-FO 标记文件，以将员工数据转换为表格。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -415,7 +478,7 @@ XSL-FO 是一种基于 XML 的标记语言，用于描述 XML 数据的格式，
             <fo:page-sequence master-reference="simpleA4">
                 <fo:flow flow-name="xsl-region-body">
                     <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
-                        公司名称: <xsl:value-of select="companyname"/>
+                        Company Name: <xsl:value-of select="companyname"/>
                     </fo:block>
                     <fo:block font-size="10pt">
                         <fo:table table-layout="fixed" width="100%" border-collapse="separate">
@@ -457,25 +520,57 @@ XSL-FO 是一种基于 XML 的标记语言，用于描述 XML 数据的格式，
 </xsl:stylesheet>
 ```
 
-Aspose.PDF 有一个特殊的 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 类，它允许应用 XSL-FO 转换。以下代码片段展示了如何使用上述示例文件中的这个类。
+Aspose.PDF 有一个特殊的 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 类，允许应用 XSL-FO 转换。
+以下代码片段展示了如何使用这个类与上述示例文件。
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    // 实例化 XslFoLoadOption 对象
-    var options = new Pdf.XslFoLoadOptions("employees.xslt");
-    // 创建 Document 对象
-    var pdfDocument = new Aspose.Pdf.Document("employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### 使用 XSL-FO 标记和 XSL 参数生成 PDF 文档
 
-有时我们需要使用 [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param)。`<xsl:param>` 元素通过名称建立一个参数，并可选择为该参数设定一个默认值。
+有时我们需要使用 [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param)。`<xsl:param>` 元素通过名称建立一个参数，并可选地为该参数设置默认值。
 
-让我们使用与前一个案例相同的示例，但做一些小改动（添加参数）。包含示例数据的 XML 文件保持不变，...
+让我们以之前的例子为例，但稍作修改（添加参数）。样本数据的 XML 文件保持不变，...
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -501,74 +596,224 @@ public static void Example_XSLFO_to_PDF()
 </employees>
 ```
 
-在 XSL-FO 标记文件中，我们将添加参数：`<xsl:param name="isBoldName"></xsl:param>` 并将其应用到 `Name` 列。
+但在 XSL-FO 标记文件中，我们将添加参数：`<xsl:param name="isBoldName"></xsl:param>` 并将其应用于 `Name` 列。
 
-要添加 XSL 参数，我们需要创建自己的 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) 并在 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 中设置为属性。以下代码片段展示了如何使用上述示例文件的该类。
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format" exclude-result-prefixes="fo">
 
+ <xsl:param name="isBoldName"></xsl:param>
+
+ <xsl:template match="employees">
+  <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <fo:layout-master-set>
+    <fo:simple-page-master master-name="simpleA4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="2cm" margin-right="2cm">
+     <fo:region-body/>
+    </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="simpleA4">
+    <fo:flow flow-name="xsl-region-body">
+     <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
+      Company Name: <xsl:value-of select="companyname"/>
+     </fo:block>
+     <fo:block font-size="10pt">
+      <fo:table table-layout="fixed" width="100%" border-collapse="separate">
+              <fo:table-column column-width="4cm"/>
+       <fo:table-column column-width="4cm"/>
+       <fo:table-column column-width="5cm"/>
+       <fo:table-body>
+        <xsl:apply-templates select="employee"/>
+       </fo:table-body>
+      </fo:table>
+     </fo:block>
+    </fo:flow>
+   </fo:page-sequence>
+  </fo:root>
+ </xsl:template>
+ <xsl:template match="employee">
+  <fo:table-row>
+   <xsl:if test="designation = 'Manager'">
+    <xsl:attribute name="font-weight">bold</xsl:attribute>
+   </xsl:if>
+   <fo:table-cell>
+    <fo:block>
+     <xsl:value-of select="id"/>
+    </fo:block>
+   </fo:table-cell>
+
+   <fo:table-cell>
+    <xsl:if test="$isBoldName='yes'">
+     <xsl:attribute name="font-weight">bold</xsl:attribute>
+    </xsl:if>
+    <fo:block>
+     <xsl:value-of select="name"/>
+    </fo:block>
+   </fo:table-cell>
+   <fo:table-cell>
+    <fo:block>
+     <xsl:value-of select="designation"/>
+    </fo:block>
+   </fo:table-cell>
+  </fo:table-row>
+ </xsl:template>
+</xsl:stylesheet>
+```
+
+要添加 XSL 参数，我们需要创建自己的 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) 并将其设置为 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 中的属性。
+以下代码片段展示了如何使用这个类与上述示例文件。
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF_Param_21_7()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
 {
-  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
-  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
-  string outputFile = Path.Combine(_dataDir, "out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-  XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  options.XsltArgumentList = new XsltArgumentList();
-  options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-  Document document = new Document(xmlInputFile, options);
-  document.Save(outputFile);
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-如果您使用的是 21.7 之前的版本，请使用以下技术：
-
+{{< tab tabNum="2" >}}
 ```csharp
-  public static void Example_XSLFO_to_PDF_Param_21_6()
-  {
-      var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-      var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-      var options = new Aspose.Pdf.XslFoLoadOptions();
-      var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-      pdfDocument.Save(_dataDir + "data_xml.pdf");
-  }
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  public static MemoryStream TransformXSL(string inputXml, string xsltString)
-  {
-      var transform = new XslCompiledTransform();
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-      //创建自己的 XsltArgumentList
-      XsltArgumentList argsList = new XsltArgumentList();
-      argsList.AddParam("isBoldName", "", "no");
-      //---------------------
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
 
-      using (var reader = XmlReader.Create(new StringReader(xsltString)))
-      {
-          transform.Load(reader);
-      }
-      var memoryStream = new MemoryStream();
-
-      var results = new StreamWriter(memoryStream);
-      using (var reader = XmlReader.Create(new StringReader(inputXml)))
-      {
-          transform.Transform(reader, argsList, results);
-      }
-
-      memoryStream.Position = 0;
-      return memoryStream;
-  }
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-## 基于 Aspose.PDF XML Schema 生成 PDF 文档
+如果您使用的是早于 21.7 的版本，请使用以下技术：
 
-另一种从 XML 创建 PDF 文档的方法是使用 Aspose.PDF XML Schema。使用此图表，您可以像在 HTML 中使用表格布局一样描述页面布局。让我们更详细地考虑此方法的工作原理。
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using (var reader = XmlReader.Create(new StringReader(xsltString)))
+    {
+        transform.Load(reader);
+    }
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using (var reader = XmlReader.Create(new StringReader(inputXml)))
+    {
+        transform.Transform(reader, argsList, results);
+    }
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf_Param_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, argsList, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## 基于 Aspose.PDF XML 架构生成 PDF 文档
+
+从 XML 创建 PDF 文档的另一种方法是使用 Aspose.PDF XML 架构。使用此图，您可以以与在 HTML 中使用表格布局相同的方式描述页面布局。让我们更详细地考虑这种方法的工作原理。
 
 ### 定义页面
 
-让我们定义默认参数的页面。我们的页面将具有 A4 页面大小，并且只包含一段文本。
+让我们用默认参数定义页面。我们的页面将具有 A4 页面大小，并仅包含一段文本。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -583,17 +828,50 @@ public static void Example_XSLFO_to_PDF_Param_21_7()
 
 要生成 PDF 文档，我们将使用 [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) 方法。
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void Example_XML_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file to the document
+        document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+        // Save PDF document
+        document.Save(dataDir + "XML_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-要定义新的页面大小，我们应该添加一个 `PageInfo` 元素。在下面的示例中，我们设置了 A5 页面大小和边距 25mm 和 10mm。
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML file to the document
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+    // Save PDF document
+    document.Save(dataDir + "XML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+要定义新的页面大小，我们应该添加一个 `PageInfo` 元素。在以下示例中，我们设置了 A5 页面大小和 25mm 和 10mm 的边距。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -611,7 +889,7 @@ private static void Example_XML_to_PDF()
 
 ### 在 XML 文件中添加 HtmlFragment 元素
 
-由于 HTML 包含类似于 XML 的标签，因此当您在任何 XML 标签内编写 HTML 时，解析器将其视为 XML 标记，并且它们不能被识别为 XML 标签。 问题可以通过在 XML 中使用 "CDATA" 部分来解决。CDATA 部分包含的文本不会被解析器解析，换句话说，它不被视为 XML 标记。以下示例 XML 模板展示了如何通过使用 CDATA 在 XML 标记中添加 HtmlFragment。
+由于 HTML 包含与 XML 类似的标签，因此当您在任何 XML 标签内编写 HTML 时，解析器将其视为 XML 标记，并且它们根本无法被识别为 XML 标签。可以通过在 XML 中使用 "CDATA" 部分来克服此问题。CDATA 部分包含未被解析器解析的文本，换句话说，它不被视为 XML 标记。以下示例 XML 模板展示了如何通过使用 CDATA 在 XML 标记中添加 HtmlFragment。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -626,14 +904,15 @@ private static void Example_XML_to_PDF()
 </Document>
 ```
 
-### 在 XML 文件中添加表格元素
+### 在 XML 文件中添加 Table 元素
 
-元素 `Table`、`Row`、`Cell` 用于描述表格。以下代码段展示了如何使用一个简单的表格。在此示例中，某些单元格具有 `Alignment` 属性，并且该属性具有数值：
+元素 `Table`、`Row`、`Cell` 用于描述表格。以下代码片段展示了如何使用简单的表格。在此示例中，一些单元格具有 `Alignment` 属性，并且该属性具有数值：
 
 1. 左对齐
 1. 居中对齐
 1. 右对齐
-1. 两端对齐。文本将同时对齐到左边距和右边距。 完全对齐。类似于“对齐”模式，除了在“对齐”模式下最后一行仅为左对齐，而在“完全对齐”模式下所有行将左右对齐。
+1. 两端对齐。文本将在左右边距上对齐。
+1. 完全对齐。与 'Justify' 对齐类似，除了最后一行将在 'Justify' 模式下仅左对齐，而在 'FullJustify' 模式下，所有行将左右对齐。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -644,11 +923,11 @@ private static void Example_XML_to_PDF()
     </PageInfo>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">绿镇到蓝山路线的时间表</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
-      <TextSegment>4.1.-28.3.2021 | 绿镇 → 蓝山</TextSegment>
+      <TextSegment>4.1.-28.3.2021 | GREENTOWN → BLUEBERG</TextSegment>
     </TextFragment>
     <Table ColumnAdjustment="AutoFitToWindow" ColumnWidths ="10 10 10 10">
       <DefaultCellPadding Top="5" Left="0" Right="0" Bottom="5" />
@@ -665,22 +944,22 @@ private static void Example_XML_to_PDF()
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>出发</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>到达</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>工作日</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>船只</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -697,12 +976,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>周一至周六</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>星号</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -719,12 +998,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>巨星</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -741,12 +1020,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>星号</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -763,12 +1042,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>巨星</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -785,12 +1064,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>星号</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -807,12 +1086,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>周一至周五，周日</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>巨星</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -820,7 +1099,8 @@ private static void Example_XML_to_PDF()
   </Page>
 </Document>
 ```
-表格用于文档布局。例如，我们可以自定义页面页眉。在这种情况下，表格用于将页眉分为两列。
+
+表格用于文档的布局。例如，我们可以自定义页面标题。在这种情况下，表格用于将标题分为 2 列。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -835,12 +1115,12 @@ private static void Example_XML_to_PDF()
             <Row>
                 <Cell Alignment="1">
                     <TextFragment>
-                        <TextSegment>日期: 01/01/2021</TextSegment>
+                        <TextSegment>Date: 01/01/2021</TextSegment>
                     </TextFragment>
                 </Cell>
                 <Cell Alignment="3">
                     <TextFragment>
-                        <TextSegment>页 $p / $P</TextSegment>
+                        <TextSegment>Page $p / $P</TextSegment>
                     </TextFragment>
                 </Cell>
             </Row>
@@ -848,11 +1128,11 @@ private static void Example_XML_to_PDF()
     </Header>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">格林镇-蓝堡路线时刻表</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
-      <TextSegment>4.1.-28.3.2021 | 格林镇 → 蓝堡</TextSegment>
+      <TextSegment>4.1.-28.3.2021 | GREENTOWN → BLUEBERG</TextSegment>
     </TextFragment>
     <Table ColumnAdjustment="AutoFitToWindow" ColumnWidths ="10 10 10 10">
       <DefaultCellPadding Top="5" Left="0" Right="0" Bottom="5" />
@@ -869,22 +1149,22 @@ private static void Example_XML_to_PDF()
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>出发</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>到达</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>工作日</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>船只</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -901,12 +1181,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>周一至周六</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>星号</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -923,12 +1203,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>超级明星</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -945,12 +1225,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>星号</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -967,12 +1247,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>超级明星</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -989,12 +1269,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>每天</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>星号</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1011,12 +1291,12 @@ private static void Example_XML_to_PDF()
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>周一至周五，周日</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>超级明星</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1027,7 +1307,7 @@ private static void Example_XML_to_PDF()
 
 ### 动态更新内容
 
-BindXML() 方法提供了加载 XML 文件内容的功能，并且可以使用 Document.save() 方法将输出保存为 PDF 格式。然而，在转换过程中，我们还可以访问 XML 内部的各个元素，并将 XML 用作模板。以下代码片段展示了从 XML 文件访问 TextSegments 的步骤。
+BindXML() 方法提供了加载 XML 文件内容的功能，而 Document.save() 方法可用于将输出保存为 PDF 格式。然而，在转换过程中，我们还可以访问 XML 内的单个元素，并使用 XML 作为模板。以下代码片段展示了访问 XML 文件中的 TextSegments 的步骤。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1043,28 +1323,70 @@ BindXML() 方法提供了加载 XML 文件内容的功能，并且可以使用 D
 </Document>
 ```
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 有关完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// 实例化 Document 对象
-Document doc = new Document();
-// 绑定源 XML 文件
-doc.BindXml( dataDir + "log.xml");
-// 从 XML 获取页面对象的引用
-Page page = (Page)doc.GetObjectById("mainSection");
-// 获取 ID 为 boldHtml 的第一个 TextSegment 的引用
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-// 获取 ID 为 strongHtml 的第二个 TextSegment 的引用
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-// 保存结果 PDF 文件
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "log.xml");
+
+        // Get reference of page object from XML
+        var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+        // Get reference of first TextSegment with ID boldHtml
+        var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+        // Get reference of second TextSegment with ID strongHtml
+        segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+        // Save PDF document
+        document.Save(dataDir + "XMLToPDF_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "log.xml");
+
+    // Get reference of page object from XML
+    var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+    // Get reference of first TextSegment with ID boldHtml
+    var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+    // Get reference of second TextSegment with ID strongHtml
+    segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+    // Save PDF document
+    document.Save(dataDir + "XMLToPDF_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### 向页面添加图形元素
 
-我们可以向 XML 文档添加其他附加元素：图像或图形对象。以下代码片段显示了如何将这些元素添加到文档中
+我们可以向 XML 文档添加其他附加元素：图像或图形对象。以下代码片段展示了如何将这些元素添加到文档中。
 
 ```xml
 <Graph Width="20" Height="20">
@@ -1078,7 +1400,7 @@ doc.Save(dataDir + "XMLToPDF_out.pdf");
 
 ### 在将 XML 转换为 PDF 时设置图像路径
 
-以下 XML 模板中包含一个 ID 为 "testImg" 的 `<Image>` 标签。如果您希望从代码中设置图像路径，可以在转换过程中从 XML 模板中访问 Image 元素，并将路径设置为您想要的图像地址。
+以下 XML 模板包含一个 ID 为 "testImg" 的 `<Image>` 标签。如果您想从代码中设置图像路径，可以在转换过程中访问 XML 模板中的图像元素，并将路径设置为您所需的地址。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1126,20 +1448,62 @@ doc.Save(dataDir + "XMLToPDF_out.pdf");
 </Document>
 ```
 
-将图像路径设置在XML模板中的代码如下：
+在 XML 模板中设置图像路径的代码如下：
 
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-string inXml = dataDir + "input.xml";
-string inFile = dataDir + "aspose-logo.jpg";
-string outFile = dataDir + "output_out.pdf";
-Document doc = new Document();
-doc.BindXml(inXml);
-Image image = (Image)doc.GetObjectById("testImg");
-image.File = inFile;
-doc.Save(outFile);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "input.xml");
+
+        // Get reference of Image with ID testImg
+        var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+        // Set image file
+        image.File = dataDir + "aspose-logo.jpg";
+
+        // Save PDF document
+        document.Save(dataDir + "output_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "input.xml");
+
+    // Get reference of Image with ID testImg
+    var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+    // Set image file
+    image.File = dataDir + "aspose-logo.jpg";
+
+    // Save PDF document
+    document.Save(dataDir + "output_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {

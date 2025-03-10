@@ -1,37 +1,111 @@
 ---
-title:  使用 C# 从 AcroForm 提取数据
-linktitle:  从 AcroForm 提取数据
+title: 使用 C# 从 AcroForm 提取数据
+linktitle: 从 AcroForm 提取数据
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /zh/net/extract-data-from-acroform/
-description: Aspose.PDF 可以轻松地从 PDF 文件中提取表单字段数据。了解如何从 AcroForms 提取数据并将其保存为 JSON、XML 或 FDF 格式。
+description: Aspose.PDF 使从 PDF 文件中提取表单字段数据变得简单。了解如何从 AcroForms 中提取数据并将其保存为 JSON、XML 或 FDF 格式。
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Data from AcroForm using C#",
+    "alternativeHeadline": "Effortlessly Extract Acrobat Form Data with C#",
+    "abstract": "发现 Aspose.PDF for .NET 中的新功能，简化了从 PDF 文档中的 AcroForms 提取表单字段数据的过程。通过将数据导出为 JSON、XML、FDF 和 XFDF 格式，用户可以高效管理表单数据，同时利用简洁的代码示例无缝集成到应用程序中。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "826",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-data-from-acroform/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-data-from-acroform/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+}
+</script>
 
-## 从 PDF 文档提取表单字段
+## 从 PDF 文档中提取表单字段
 
-Aspose.PDF for .NET 不仅可以帮助您生成表单字段和填充表单字段，还可以轻松地从 PDF 文件中提取表单字段数据或表单字段的信息。
+除了使您能够生成表单字段和填写表单字段外，Aspose.PDF for .NET 还使从 PDF 文件中提取表单字段数据或有关表单字段的信息变得简单。
 
-在下面的示例代码中，我们演示了如何遍历 PDF 中的每个页面以提取有关 PDF 中所有 AcroForm 的信息以及表单字段值。此示例代码假设您事先不知道表单字段的名称。
+在下面的示例代码中，我们演示了如何遍历 PDF 中的每一页，以提取有关 PDF 中所有 AcroForm 的信息以及表单字段值。此示例代码假定您事先不知道表单字段的名称。
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
 
 ```csharp
-public static void ExtractFormFields()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractFormFields()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
-    // 从所有字段获取值
-    foreach (Field formField in document.Form)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
     {
-        Console.WriteLine("字段名称 : {0} ", formField.PartialName);
-        Console.WriteLine("值 : {0} ", formField.Value);
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
     }
 }
 ```
-如果您知道希望从中提取值的表单字段的名称，则可以使用 Documents.Form 集合中的索引器快速检索此数据。请查看本文底部的示例代码，了解如何使用该功能。
+
+如果您知道要提取值的表单字段名称，则可以使用 Documents.Form 集合中的索引器快速检索此数据。请查看本文底部的示例代码，了解如何使用该功能。
 
 ## 按标题检索表单字段值
 
@@ -39,93 +113,116 @@ public static void ExtractFormFields()
 
 ## 从 PDF 文档提取表单字段到 JSON
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
 
 ```csharp
-public static void ExtractFormFieldsToJson()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractFormFieldsToJson()
 {
-    var document = new Aspose.Pdf.Document(Path.Combine(_dataDir, "StudentInfoFormElectronic.pdf"));
-    var formData = document.Form.Cast<Field>().Select(f => new { Name = f.PartialName, f.Value });
-    string jsonString = JsonSerializer.Serialize(formData);
-    Console.WriteLine(jsonString);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "StudentInfoFormElectronic.pdf"))
+    {
+        // Extract form fields and convert to JSON
+        var formData = document.Form.Cast<Aspose.Pdf.Forms.Field>().Select(f => new { Name = f.PartialName, f.Value });
+        string jsonString = System.Text.Json.JsonSerializer.Serialize(formData);
+
+        // Output the JSON string
+        Console.WriteLine(jsonString);
+    }
 }
 ```
-## 从 PDF 文件提取数据到 XML 文件
 
-Form 类允许您使用 ExportXml 方法从 PDF 文件导出数据到 XML 文件。为了导出数据到 XML，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportXml 方法。最后，您可以关闭 FileStream 对象并释放 Form 对象。以下代码片段展示了如何导出数据到 XML 文件。
+## 从 PDF 文件导出数据到 XML
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
+Form 类允许您使用 ExportXml 方法将数据从 PDF 文件导出到 XML 文件。为了将数据导出到 XML，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportXml 方法。最后，您可以关闭 FileStream 对象并释放 Form 对象。以下代码片段向您展示如何将数据导出到 XML 文件。
 
-```csharp
-// 完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
-
-// 打开文档
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-form.BindPdf(dataDir + "input.pdf");
-// 创建 xml 文件。
-System.IO.FileStream xmlOutputStream = new FileStream( dataDir + "input.xml", FileMode.Create);
-// 导出数据
-form.ExportXml(xmlOutputStream);
-// 关闭文件流
-xmlOutputStream.Close();
-
-// 关闭文档
-form.Dispose();
-```
-## 从 PDF 文件导出数据到 FDF 文件
-
-Form 类允许您使用 ExportFdf 方法从 PDF 文件导出数据到 FDF 文件。为了将数据导出到 FDF，您需要创建 Form 类的一个对象，然后使用 FileStream 对象调用 ExportFdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段向您展示了如何导出数据到 FDF 文件。
-
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
 
 ```csharp
-// 完整的示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportFormDataToXml()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// 打开文档
-form.BindPdf(dataDir + "input.pdf");
+    // Create form
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-// 创建 fdf 文件。
-System.IO.FileStream fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create);
-
-// 导出数据
-form.ExportFdf(fdfOutputStream);
-
-// 关闭文件流
-fdfOutputStream.Close();
-
-// 保存更新的文档
-form.Save(dataDir + "ExportDataToPdf_out.pdf");
+        // Create XML file
+        using (var xmlOutputStream = new FileStream(dataDir + "input.xml", FileMode.Create))
+        {
+            // Export data
+            form.ExportXml(xmlOutputStream);
+        }
+    }
+}
 ```
-## 将数据从 PDF 文件导出到 XFDF
 
-Form 类允许您使用 ExportXfdf 方法从 PDF 文件导出数据到 XFDF 文件。为了导出数据到 XFDF，您需要创建 Form 类的一个对象，然后使用 FileStream 对象调用 ExportXfdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段展示了如何将数据导出到 XFDF 文件。
+## 从 PDF 文件导出数据到 FDF
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
+Form 类允许您使用 ExportFdf 方法将数据从 PDF 文件导出到 FDF 文件。为了将数据导出到 FDF，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportFdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段向您展示如何将数据导出到 FDF 文件。
+
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
 
 ```csharp
-// 完整示例和数据文件，请访问 https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
-// 文档目录的路径。
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportDataToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-// 打开文档
-form.BindPdf(dataDir + "input.pdf");
+    // Create form
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-// 创建 xfdf 文件。
-System.IO.FileStream xfdfOutputStream = new FileStream("student1.xfdf", FileMode.Create);
+        // Create fdf file
+        using (var fdfOutputStream = new FileStream(dataDir + "student.fdf", FileMode.Create))
+        {
+            // Export data
+            form.ExportFdf(fdfOutputStream);
+        }
 
-// 导出数据
-form.ExportXfdf(xfdfOutputStream);
-
-// 关闭文件流
-xfdfOutputStream.Close();
-
-// 保存更新的文档
-form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+        // Save PDF document
+        form.Save(dataDir + "ExportDataToPdf_out.pdf");
+    }
+}
 ```
 
+## 从 PDF 文件导出数据到 XFDF
+
+Form 类允许您使用 ExportXfdf 方法将数据从 PDF 文件导出到 XFDF 文件。为了将数据导出到 XFDF，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportXfdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段向您展示如何将数据导出到 XFDF 文件。
+
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportDataToXFDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    // Create form
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
+
+        // Create xfdf file
+        using (var xfdfOutputStream = new FileStream(dataDir + "student1.xfdf", FileMode.Create))
+        {
+            // Export data
+            form.ExportXfdf(xfdfOutputStream);
+        }
+
+        // Save PDF document
+        form.Save(dataDir + "ExportDataToXFDF_out.pdf");
+    }
+}
+```
