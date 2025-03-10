@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /zh/net/save-pdf-document/
 description: 了解如何在 C# Aspose.PDF for .NET PDF 库中保存 PDF 文件。将 PDF 文档保存到文件系统、流和 Web 应用程序中。
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

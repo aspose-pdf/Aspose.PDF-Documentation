@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /pt/net/complex-pdf-example/
 description: Aspose.PDF para NET permite que você crie documentos mais complexos que contêm imagens, fragmentos de texto e tabelas em um único documento.
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

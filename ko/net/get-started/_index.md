@@ -8,8 +8,6 @@ weight: 30
 url: /ko/net/get-started/
 description: 이 섹션에서는 DOM API의 기본 작업 원칙과 사용 방법을 설명합니다. 또한 PDF 문서를 생성하기 위한 간단하고 복잡한 예제를 보여줍니다.
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"

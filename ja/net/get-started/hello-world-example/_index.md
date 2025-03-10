@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ja/net/hello-world-example/
 description: このサンプルは、Aspose.PDFを使用して「Hello World」というテキストを含むシンプルなPDFドキュメントを作成する方法を示しています。
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

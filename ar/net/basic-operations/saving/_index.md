@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/save-pdf-document/
 description: تعلم كيفية حفظ ملف PDF في مكتبة C# Aspose.PDF for .NET. حفظ مستند PDF في نظام الملفات، إلى دفق، وفي تطبيقات الويب.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

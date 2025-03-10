@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /zh/net/complex-pdf-example/
 description: Aspose.PDF for NET 允许您创建包含图像、文本片段和表格的更复杂的文档。
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

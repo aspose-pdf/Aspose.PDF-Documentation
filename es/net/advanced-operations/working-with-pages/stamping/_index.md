@@ -11,12 +11,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/adding-stamp-in-a-pdf-file/
-    - /net/adding-text-stamp-watermark/
-    - /net/add-text-and-image-stamp/
-    - /net/add-pdf-page-stamp/
-    - /net/extract-image-and-change-position-of-a-stamp/
 ---
 <script type="application/ld+json">
 {

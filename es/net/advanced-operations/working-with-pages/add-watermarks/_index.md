@@ -11,9 +11,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-aliases:
-    - /net/working-with-existing-watermarks/
-    - /net/adding-multi-line-watermark-to-existing-pdf/
 ---
 <script type="application/ld+json">
 {

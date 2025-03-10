@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /zh/net/hello-world-example/
 description: 此示例演示如何使用 Aspose.PDF 创建一个简单的包含文本 Hello World 的 PDF 文档
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

@@ -10,9 +10,6 @@ url: /ru/net/
 is_root: true
 lastmod: "2024-10-16"
 description: Узнайте, как использовать Aspose.PDF .NET для создания приложений для обработки PDF-документов на любой платформе с помощью C# или VB. Ознакомьтесь с учебными пособиями, примерами кода и многим другим.
-aliases:
-    - /net/working-with-aspose-pdf/
-    - /net/developer-guide/
 sitemap:
     changefreq: "monthly"
     priority: 0.7

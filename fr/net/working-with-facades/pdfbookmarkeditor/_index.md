@@ -11,8 +11,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 - [Créer des signets](/pdf/net/create-bookmarks/)
 - [Importer et exporter des signets](/pdf/net/import-and-export-bookmarks/)

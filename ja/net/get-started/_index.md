@@ -8,8 +8,6 @@ weight: 30
 url: /ja/net/get-started/
 description: このセクションでは、作業の基本原則とDOM APIの使用について説明します。また、PDFドキュメントを作成するための簡単な例と複雑な例を示します。
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"

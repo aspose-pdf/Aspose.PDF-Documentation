@@ -11,8 +11,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 - [创建书签](/pdf/net/create-bookmarks/)
 - [导入和导出书签](/pdf/net/import-and-export-bookmarks/)

@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ja/net/save-pdf-document/
 description: C# Aspose.PDF for .NET PDFライブラリを使用してPDFファイルを保存する方法を学びます。PDFドキュメントをファイルシステム、ストリーム、およびWebアプリケーションに保存します。
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

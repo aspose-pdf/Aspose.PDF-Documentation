@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ru/net/save-pdf-document/
 description: Узнайте, как сохранить PDF-файл в библиотеке C# Aspose.PDF for .NET. Сохраняйте PDF-документ в файловой системе, в потоке и в веб-приложениях.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

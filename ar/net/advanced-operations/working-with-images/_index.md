@@ -11,8 +11,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/manipulate-images/
 ---
 <script type="application/ld+json">
 {

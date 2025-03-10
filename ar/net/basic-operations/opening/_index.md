@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF في مكتبة C# Aspose.PDF for .NET. يمكنك فتح PDF موجود، مستند من دفق، ومستند PDF مشفر.
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

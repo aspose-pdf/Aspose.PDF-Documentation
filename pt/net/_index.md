@@ -10,9 +10,6 @@ url: /pt/net/
 is_root: true
 lastmod: "2024-10-16"
 description: Aprenda a usar Aspose.PDF .NET para criar aplicações para processamento de documentos PDF em qualquer plataforma usando C#, VB. Navegue por tutoriais, código de exemplo e mais.
-aliases:
-    - /net/working-with-aspose-pdf/
-    - /net/developer-guide/
 sitemap:
     changefreq: "monthly"
     priority: 0.7

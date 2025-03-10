@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/save-pdf-document/
 description: Apprenez à enregistrer un fichier PDF dans la bibliothèque PDF C# Aspose.PDF for .NET. Enregistrez le document PDF dans le système de fichiers, dans un flux et dans des applications Web.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

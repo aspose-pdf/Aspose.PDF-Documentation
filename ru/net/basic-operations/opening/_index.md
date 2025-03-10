@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/open-pdf-document/
 description: Узнайте, как открыть PDF-файл в библиотеке C# Aspose.PDF for .NET. Вы можете открыть существующий PDF-документ, документ из потока и зашифрованный PDF-документ.
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

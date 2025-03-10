@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /pt/net/hello-world-example/
 description: Este exemplo demonstra como criar um documento PDF simples com o texto Hello World usando Aspose.PDF
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

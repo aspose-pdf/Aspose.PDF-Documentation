@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/hello-world-example/
 description: توضح هذه العينة كيفية إنشاء مستند PDF بسيط يحتوي على نص "مرحبا بالعالم" باستخدام Aspose.PDF
-aliases:
-    - /net/hello-world/
 lastmod: "2022-02-04"
 sitemap:
     changefreq: "monthly"

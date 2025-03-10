@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /ja/net/complex-pdf-example/
 description: Aspose.PDF for NETを使用すると、画像、テキストフラグメント、およびテーブルを含むより複雑なドキュメントを1つのドキュメントに作成できます。
-aliases:
-    - /net/complex-pdf/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

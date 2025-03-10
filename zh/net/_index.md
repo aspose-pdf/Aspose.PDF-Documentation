@@ -10,9 +10,6 @@ url: /zh/net/
 is_root: true
 lastmod: "2024-10-16"
 description: 学习如何使用 Aspose.PDF .NET 在任何平台上使用 C#、VB 创建 PDF 文档处理应用程序。浏览教程、示例代码等。
-aliases:
-    - /net/working-with-aspose-pdf/
-    - /net/developer-guide/
 sitemap:
     changefreq: "monthly"
     priority: 0.7

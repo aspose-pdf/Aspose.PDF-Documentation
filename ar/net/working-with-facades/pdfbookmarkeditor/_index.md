@@ -11,8 +11,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 - [إنشاء إشارات مرجعية](/pdf/net/create-bookmarks/)
 - [استيراد وتصدير الإشارات المرجعية](/pdf/net/import-and-export-bookmarks/)

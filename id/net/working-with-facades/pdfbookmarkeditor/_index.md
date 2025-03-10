@@ -11,8 +11,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 - [Buat Bookmark](/pdf/net/create-bookmarks/)
 - [Impor dan Ekspor Bookmark](/pdf/net/import-and-export-bookmarks/)

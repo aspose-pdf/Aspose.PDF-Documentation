@@ -11,8 +11,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 - [Создание закладок](/pdf/net/создание-закладок/)
 - [Импорт и экспорт закладок](/pdf/net/импорт-и-экспорт-закладок/)

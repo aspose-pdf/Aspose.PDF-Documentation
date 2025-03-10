@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/open-pdf-document/
 description: C# Aspose.PDF for .NET PDFライブラリでPDFファイルを開く方法を学びます。既存のPDF、ストリームからのドキュメント、および暗号化されたPDFドキュメントを開くことができます。
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

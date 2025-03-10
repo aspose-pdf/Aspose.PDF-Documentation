@@ -8,8 +8,6 @@ weight: 80
 url: /es/net/key-features/
 description: Aspose.PDF for .NET demuestra sus características generales. Muestra las versiones de PDF compatibles y todas las manipulaciones que podemos hacer con PDF.
 lastmod: "2021-06-05"
-aliases:
-    - /net/feature-list/
 sitemap:
     changefreq: "weekly"
     priority: 0.7

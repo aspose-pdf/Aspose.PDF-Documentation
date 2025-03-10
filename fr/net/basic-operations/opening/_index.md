@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /fr/net/open-pdf-document/
 description: Apprenez à ouvrir un fichier PDF dans la bibliothèque PDF Aspose.PDF for .NET en C#. Vous pouvez ouvrir un PDF existant, un document à partir d'un flux et un document PDF chiffré.
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

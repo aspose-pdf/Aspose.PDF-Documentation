@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/open-pdf-document/
 description: Pelajari cara membuka file PDF di C# Aspose.PDF for .NET pustaka PDF. Anda dapat membuka PDF yang ada, dokumen dari aliran, dan dokumen PDF yang terenkripsi.
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -10,9 +10,6 @@ url: /ja/net/
 is_root: true
 lastmod: "2024-10-16"
 description: Aspose.PDF .NETを使用して、C#やVBを使ってあらゆるプラットフォームでPDFドキュメント処理のアプリケーションを作成する方法を学びます。チュートリアル、サンプルコードなどをブラウズしてください。
-aliases:
-    - /net/working-with-aspose-pdf/
-    - /net/developer-guide/
 sitemap:
     changefreq: "monthly"
     priority: 0.7

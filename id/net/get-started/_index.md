@@ -8,8 +8,6 @@ weight: 30
 url: /id/net/get-started/
 description: Bagian ini menjelaskan prinsip dasar kerja dan penggunaan API DOM. Juga menunjukkan contoh sederhana dan kompleks untuk membuat dokumen PDF.
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"

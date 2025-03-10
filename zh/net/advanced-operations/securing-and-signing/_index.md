@@ -11,8 +11,6 @@ lastmod: "2024-02-07"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - net/working-with-security-and-signatures/
 ---
 <script type="application/ld+json">
 {

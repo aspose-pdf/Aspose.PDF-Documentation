@@ -11,8 +11,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-aliases:
-    - /net/replace-text-in-a-pdf-document/
 ---
 <script type="application/ld+json">
 {

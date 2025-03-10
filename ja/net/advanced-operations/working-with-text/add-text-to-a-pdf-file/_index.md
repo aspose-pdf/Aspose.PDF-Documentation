@@ -11,8 +11,6 @@ lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-aliases:
-    - /net/add-text-to-a-pdf-file/
 ---
 <script type="application/ld+json">
 {

@@ -8,8 +8,6 @@ weight: 30
 url: /ar/net/get-started/
 description: يصف هذا القسم المبادئ الأساسية للعمل واستخدام واجهة برمجة التطبيقات DOM. كما يعرض أمثلة بسيطة ومعقدة لإنشاء مستند PDF.
 is_node: true
-aliases:
-    - /net/getting-started/
 lastmod: "2024-11-21"
 sitemap:
     changefreq: "monthly"

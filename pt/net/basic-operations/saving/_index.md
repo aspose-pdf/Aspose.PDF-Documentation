@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/save-pdf-document/
 description: Aprenda como salvar arquivos PDF na biblioteca PDF C# Aspose.PDF for .NET. Salve documentos PDF no sistema de arquivos, em streams e em aplicações web.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"

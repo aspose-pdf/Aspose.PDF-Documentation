@@ -11,8 +11,6 @@ draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
-aliases:
-    - /net/pdfbookmarkeditor-class/
 ---
 - [ブックマークの作成](/pdf/net/create-bookmarks/)
 - [ブックマークのインポートとエクスポート](/pdf/net/import-and-export-bookmarks/)

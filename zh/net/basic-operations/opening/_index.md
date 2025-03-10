@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /zh/net/open-pdf-document/
 description: 了解如何在 C# Aspose.PDF for .NET PDF 库中打开 PDF 文件。您可以打开现有 PDF、从流中加载文档以及处理加密的 PDF 文档。
-aliases:
-    - /net/opening-a-pdf-document/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"

@@ -7,8 +7,6 @@ ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/save-pdf-document/
 description: Pelajari cara menyimpan file PDF di C# Aspose.PDF for .NET pustaka PDF. Simpan dokumen PDF ke sistem file, ke aliran, dan dalam aplikasi Web.
-aliases:
-    - /net/saving/
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
