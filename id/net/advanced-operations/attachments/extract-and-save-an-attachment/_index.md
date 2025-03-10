@@ -2,9 +2,11 @@
 title: Ekstrak dan Simpan Lampiran
 linktitle: Ekstrak dan Simpan Lampiran
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/extract-and-save-an-attachment/
-description: Aspose.PDF untuk .NET memungkinkan Anda untuk mendapatkan semua lampiran dari dokumen PDF. Selain itu, Anda juga dapat mendapatkan lampiran individu dari dokumen Anda.
+description: Aspose.PDF for .NET memungkinkan Anda untuk mendapatkan semua lampiran dari dokumen PDF. Selain itu, Anda dapat mendapatkan lampiran individu dari dokumen Anda.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Ekstrak dan Simpan Lampiran",
-    "alternativeHeadline": "Bagaimana cara mengekstrak dan menyimpan lampiran",
+    "headline": "Extract and Save an Attachment",
+    "alternativeHeadline": "Extract Attachments from PDF Documents with Ease",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur kuat yang memungkinkan pengguna untuk dengan mudah mengekstrak dan menyimpan lampiran dari dokumen PDF. Fungsionalitas ini memungkinkan pengambilan semua file yang disematkan atau lampiran tertentu, meningkatkan manajemen dokumen dan aksesibilitas bagi pengembang yang bekerja dengan file PDF. Optimalkan alur kerja PDF Anda dengan menangani lampiran dengan mudah menggunakan alat inovatif ini",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, simpan lampiran, ekstrak lampiran",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "extract attachments, save attachments, Aspose.PDF for .NET, PDF document, individual attachment, embedded files collection, FileSpecification object, PDF manipulation, document instance, get all attachments",
+    "wordcount": "604",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dokumentasi Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,108 +74,119 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-and-save-an-attachment/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF untuk .NET memungkinkan Anda untuk mendapatkan semua lampiran dari dokumen PDF. Selain itu, Anda juga dapat mendapatkan lampiran individu dari dokumen Anda."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET memungkinkan Anda untuk mendapatkan semua lampiran dari dokumen PDF. Selain itu, Anda dapat mendapatkan lampiran individu dari dokumen Anda."
 }
 </script>
+
 ## Dapatkan Semua Lampiran
 
-Dengan Aspose.PDF, memungkinkan untuk mendapatkan semua lampiran dari dokumen PDF. Ini berguna baik ketika Anda ingin menyimpan dokumen secara terpisah dari PDF, atau jika Anda perlu menghilangkan lampiran dari PDF.
+Dengan Aspose.PDF, dimungkinkan untuk mendapatkan semua lampiran dari dokumen PDF. Ini berguna baik ketika Anda ingin menyimpan dokumen secara terpisah dari PDF, atau jika Anda perlu menghapus lampiran dari PDF.
 
 Untuk mendapatkan semua lampiran dari file PDF:
 
-1. Melakukan perulangan melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) pada objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran. Setiap elemen dari koleksi ini mewakili objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Setiap iterasi dari perulangan foreach melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) menghasilkan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
-Potongan kode berikut menunjukkan bagaimana mendapatkan semua lampiran dari dokumen PDF.
+1. Loop melalui koleksi [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) objek [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection). Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran. Setiap elemen dari koleksi ini mewakili objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Setiap iterasi dari loop foreach melalui koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) mengembalikan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification).
+1. Setelah objek tersedia, ambil baik semua properti file yang terlampir atau file itu sendiri.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut menunjukkan cara mendapatkan semua lampiran dari dokumen PDF.
+
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetAlltheAttachments.pdf");
-
-// Dapatkan koleksi file yang tertanam
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-
-// Dapatkan jumlah file yang tertanam
-Console.WriteLine("Total files : {0}", embeddedFiles.Count);
-
-int count = 1;
-
-// Loop melalui koleksi untuk mendapatkan semua lampiran
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllAttachments()
 {
-    Console.WriteLine("Name: {0}", fileSpecification.Name);
-    Console.WriteLine("Description: {0}",
-    fileSpecification.Description);
-    Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-    // Periksa jika objek parameter mengandung parameter
-    if (fileSpecification.Params != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetAlltheAttachments.pdf"))
     {
-        Console.WriteLine("CheckSum: {0}",
-        fileSpecification.Params.CheckSum);
-        Console.WriteLine("Creation Date: {0}",
-        fileSpecification.Params.CreationDate);
-        Console.WriteLine("Modification Date: {0}",
-        fileSpecification.Params.ModDate);
-        Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
-    }
+        // Get embedded files collection
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
 
-    // Dapatkan lampiran dan tulis ke file atau aliran
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0,
-    fileContent.Length);
-    FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt",
-    FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    fileStream.Close();
-    count+=1;
+        // Get count of the embedded files
+        Console.WriteLine("Total files : {0}", embeddedFiles.Count);
+
+        int count = 1;
+
+        // Loop through the collection to get all the attachments
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            Console.WriteLine("Name: {0}", fileSpecification.Name);
+            Console.WriteLine("Description: {0}",
+            fileSpecification.Description);
+            Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+            // Check if parameter object contains the parameters
+            if (fileSpecification.Params != null)
+            {
+                Console.WriteLine("CheckSum: {0}",
+                fileSpecification.Params.CheckSum);
+                Console.WriteLine("Creation Date: {0}",
+                fileSpecification.Params.CreationDate);
+                Console.WriteLine("Modification Date: {0}",
+                fileSpecification.Params.ModDate);
+                Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+            }
+
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            using (FileStream fileStream = new FileStream(dataDir + count + "_out" + ".txt", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+            count += 1;
+        }
+    }
 }
 ```
+
 ## Dapatkan Lampiran Individu
 
-Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instansi Dokumen. Silakan coba menggunakan potongan kode berikut.
+Untuk mendapatkan lampiran individu, kita dapat menentukan indeks lampiran dalam objek `EmbeddedFiles` dari instance Dokumen. Silakan coba menggunakan potongan kode berikut.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetIndividualAttachment.pdf");
-
-// Dapatkan file tertanam tertentu
-FileSpecification fileSpecification = pdfDocument.EmbeddedFiles[1];
-
-// Dapatkan properti file
-Console.WriteLine("Nama: {0}", fileSpecification.Name);
-Console.WriteLine("Deskripsi: {0}", fileSpecification.Description);
-Console.WriteLine("Tipe MIME: {0}", fileSpecification.MIMEType);
-
-// Periksa apakah objek parameter berisi parameter
-if (fileSpecification.Params != null)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetIndividualAttachment()
 {
-    Console.WriteLine("Checksum: {0}",
-    fileSpecification.Params.CheckSum);
-    Console.WriteLine("Tanggal Pembuatan: {0}",
-    fileSpecification.Params.CreationDate);
-    Console.WriteLine("Tanggal Modifikasi: {0}",
-    fileSpecification.Params.ModDate);
-    Console.WriteLine("Ukuran: {0}", fileSpecification.Params.Size);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetIndividualAttachment.pdf"))
+    {
+        // Get particular embedded file
+        Aspose.Pdf.FileSpecification fileSpecification = document.EmbeddedFiles[1];
+
+        // Get the file properties
+        Console.WriteLine("Name: {0}", fileSpecification.Name);
+        Console.WriteLine("Description: {0}", fileSpecification.Description);
+        Console.WriteLine("Mime Type: {0}", fileSpecification.MIMEType);
+
+        // Check if parameter object contains the parameters
+        if (fileSpecification.Params != null)
+        {
+            Console.WriteLine("CheckSum: {0}",
+            fileSpecification.Params.CheckSum);
+            Console.WriteLine("Creation Date: {0}",
+            fileSpecification.Params.CreationDate);
+            Console.WriteLine("Modification Date: {0}",
+            fileSpecification.Params.ModDate);
+            Console.WriteLine("Size: {0}", fileSpecification.Params.Size);
+        }
+
+        // Get the attachment and write to file or stream
+        byte[] fileContent = new byte[fileSpecification.Contents.Length];
+        fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+
+        using (FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create))
+        {
+            fileStream.Write(fileContent, 0, fileContent.Length);
+        }
+    }
 }
-
-
-// Dapatkan lampiran dan tulis ke file atau stream
-byte[] fileContent = new byte[fileSpecification.Contents.Length];
-fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-
-FileStream fileStream = new FileStream(dataDir + "test_out" + ".txt", FileMode.Create);
-fileStream.Write(fileContent, 0, fileContent.Length);
-fileStream.Close();
 ```
 
 <script type="application/ld+json">
@@ -201,21 +215,21 @@ fileStream.Close();
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -226,7 +240,7 @@ fileStream.Close();
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -238,5 +252,3 @@ fileStream.Close();
     }
 }
 </script>
-```
-

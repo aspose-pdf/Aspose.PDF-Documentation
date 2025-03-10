@@ -1,7 +1,9 @@
 ---
 title: Mencetak PDF ke Printer XPS
-linktitle: Mencetak PDF ke Printer XPS (Facades)
+linktitle: Mencetak PDF ke Printer XPS (Fasad)
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/printing-pdf-to-an-xps-printer-facades/
 description: Halaman ini menunjukkan cara mencetak PDF ke printer XPS menggunakan kelas PdfViewer.
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Mencetak PDF ke Printer XPS",
-    "alternativeHeadline": "Cara mencetak PDF ke Printer XPS",
+    "headline": "Printing PDF to an XPS Printer",
+    "alternativeHeadline": "Print PDFs Directly to XPS Printers with Ease",
+    "abstract": "Fitur baru ini memungkinkan pencetakan dokumen PDF secara langsung ke printer XPS menggunakan kelas PdfViewer di C#. Fungsionalitas ini mendukung konfigurasi berbagai pengaturan cetak, memungkinkan kontrol yang lebih baik atas proses pencetakan, termasuk penyesuaian ukuran otomatis dan rotasi. Ideal untuk pengembang, fitur ini menyederhanakan integrasi kemampuan pencetakan PDF ke dalam aplikasi .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, pdf ke printer XPS",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "print pdf to xps, PdfViewer class, print document settings, C# PDF printing, XPS printer, printer settings, page settings, choose paper tray, soft printer, Aspose.PDF library",
+    "wordcount": "458",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,54 +74,161 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-pdf-to-an-xps-printer-facades/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "Halaman ini menunjukkan cara mencetak PDF ke printer XPS menggunakan kelas PdfViewer."
 }
 </script>
-Kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-## **Mencetak PDF ke printer XPS dalam C#**
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/) .
 
-Anda dapat mencetak file PDF ke printer XPS, atau printer lunak lainnya, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer). Untuk melakukan itu, buat objek dari kelas PdfViewer dan buka file PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2). Anda dapat mengatur berbagai pengaturan cetak menggunakan kelas PrinterSettings dan PageSettings. Anda juga perlu mengatur properti PrinterName ke printer XPS atau printer lunak lain yang telah Anda instal.
+## **Mencetak PDF ke printer XPS di C#**
 
-Akhirnya, gunakan metode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) untuk mencetak PDF ke XPS atau printer lunak lainnya. Kode berikut menunjukkan cara mencetak file PDF ke printer XPS.
+Anda dapat mencetak file PDF ke printer XPS, atau beberapa printer lunak lainnya, menggunakan kelas [PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) . Untuk melakukan itu, buat objek dari kelas PdfViewer dan buka file PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) . Anda dapat mengatur berbagai pengaturan cetak menggunakan kelas [PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/) dan [PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/) . Anda juga perlu mengatur properti [PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/) ke printer XPS atau printer lunak lainnya yang telah Anda instal.
 
+Akhirnya, gunakan metode [PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) untuk mencetak PDF ke XPS atau printer lunak lainnya. Potongan kode berikut menunjukkan cara mencetak file PDF ke printer XPS.
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void PrintToXpsPrinter()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintToXpsPrinter()
 {
-    // Buat objek PdfViewer
-    PdfViewer viewer = new PdfViewer();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // Buka file PDF masukan
-    viewer.BindPdf(_dataDir + "input.pdf");
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-    // Atur atribut untuk pencetakan
-    viewer.AutoResize = true;         // Cetak file dengan ukuran yang disesuaikan
-    viewer.AutoRotate = true;         // Cetak file dengan rotasi yang disesuaikan
-    viewer.PrintPageDialog = false;   // Jangan tampilkan dialog nomor halaman saat mencetak
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
-    // Buat objek untuk pengaturan printer dan halaman serta PrintDocument
-    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+        // Create objects for printer and page settings and PrintDocument
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-    // Atur nama printer XPS/PDF
-    ps.PrinterName = "Microsoft XPS Document Writer";
-    // Atau atur printer PDF
-    // Ps.PrinterName = "Adobe PDF";
+        // Set XPS/PDF printer name
+        ps.PrinterName = "Microsoft XPS Document Writer";
+        // Or set the PDF printer
+        // ps.PrinterName = "Adobe PDF";
 
-    // Atur UkuranHalaman (jika diperlukan)
-    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-    // Atur MarginHalaman (jika diperlukan)
-    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-    // Cetak dokumen menggunakan pengaturan printer dan halaman
-    viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // Tutup file PDF setelah pencetakan
-    viewer.Close();
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintToXpsPrinter()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Create objects for printer and page settings and PrintDocument
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set XPS/PDF printer name
+    ps.PrinterName = "Microsoft XPS Document Writer";
+    // Or set the PDF printer
+    // ps.PrinterName = "Adobe PDF";
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Memilih sumber kertas berdasarkan ukuran halaman PDF
+
+Sejak rilis 24.4, memilih sumber kertas berdasarkan ukuran halaman PDF di dialog cetak adalah mungkin. Potongan kode berikut memungkinkan pemilihan baki printer berdasarkan ukuran halaman PDF.
+
+Preferensi ini dapat diaktifkan dan dinonaktifkan menggunakan fasad [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/) .
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSizeFacade()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the PdfContentEditor facade
+    using (var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind PDF document
+        contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set the flag to choose a paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+
+        // Save PDF document
+        contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSizeFacade()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the PdfContentEditor facade
+    using var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
+    contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set the flag to choose a paper tray using the PDF page size
+    contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+    // Save PDF document
+    contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -146,21 +256,21 @@ public static void PrintToXpsPrinter()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -171,7 +281,7 @@ public static void PrintToXpsPrinter()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -183,5 +293,3 @@ public static void PrintToXpsPrinter()
     }
 }
 </script>
-```
-

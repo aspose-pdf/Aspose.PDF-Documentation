@@ -2,31 +2,34 @@
 title: Dapatkan Resolusi dan Dimensi Gambar
 linktitle: Dapatkan Resolusi dan Dimensi
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /id/net/get-resolution-and-dimensions-of-embedded-images/
-description: Bagian ini menunjukkan detail dalam mendapatkan resolusi dan dimensi Gambar Tersemat
+description: Pelajari cara mengambil resolusi dan dimensi gambar yang disematkan dari PDF di .NET menggunakan Aspose.PDF.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Dapatkan Resolusi dan Dimensi Gambar",
-    "alternativeHeadline": "Cara mendapatkan Resolusi dan Dimensi Gambar Tersemat",
+    "headline": "Get Resolution and Dimensions of Images",
+    "alternativeHeadline": "Extract Image Resolution and Dimensions Efficiently",
+    "abstract": "Temukan cara untuk secara efisien memperoleh resolusi dan dimensi gambar yang disematkan dalam dokumen PDF menggunakan pustaka Aspose.PDF. Fitur ini memungkinkan pengembang untuk mengakses properti gambar secara langsung tanpa ekstraksi, menyederhanakan proses manipulasi gambar dalam file PDF sambil meningkatkan fungsionalitas dan kontrol atas data gambar.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, dapatkan resolusi, dapatkan dimensi",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Get Resolution, Dimensions of Images, Embedded Images, Aspose.PDF.Drawing, ArrayList, Image Placement Classes, ConcatenateMatrix, XImage, PDF Manipulation Library, Image Resolution Computation",
+    "wordcount": "827",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,127 +71,131 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-resolution-and-dimensions-of-embedded-images/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menunjukkan detail dalam mendapatkan resolusi dan dimensi Gambar Tersemat"
+    "dateModified": "2024-11-26",
+    "description": "Bagian ini menunjukkan detail dalam mendapatkan resolusi dan dimensi Gambar Tertanam"
 }
 </script>
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Topik ini menjelaskan cara menggunakan kelas operator dalam ruang nama Aspose.PDF yang memberikan kemampuan untuk mendapatkan informasi resolusi dan dimensi tentang gambar tanpa harus mengekstraknya.
+Topik ini menjelaskan cara menggunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi tentang gambar tanpa harus mengekstraknya.
 
-Ada beberapa cara untuk mencapai ini. Artikel ini menjelaskan cara menggunakan `arraylist` dan [kelas penempatan gambar](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
+Ada berbagai cara untuk mencapai ini. Artikel ini menjelaskan cara menggunakan `arraylist` dan [kelas penempatan gambar](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
 
 1. Pertama, muat file PDF sumber (dengan gambar).
-1. Kemudian buat objek ArrayList untuk menampung nama-nama gambar dalam dokumen.
+1. Kemudian buat objek ArrayList untuk menyimpan nama-nama gambar dalam dokumen.
 1. Dapatkan gambar menggunakan properti Page.Resources.Images.
-1. Buat objek tumpukan untuk menampung keadaan grafis gambar dan gunakan untuk melacak berbagai keadaan gambar.
-1.
-1. Karena kita dapat memodifikasi matriks dengan ConcatenateMatrix, kita mungkin juga perlu kembali ke keadaan gambar asli. Gunakan operator GSave dan GRestore. Operator ini dipasangkan sehingga harus dipanggil bersamaan. Sebagai contoh, jika Anda melakukan pekerjaan grafis dengan transformasi yang kompleks dan akhirnya mengembalikan transformasi kembali ke keadaan awal, pendekatannya akan seperti ini:
+1. Buat objek stack untuk menyimpan status grafik gambar dan gunakan untuk melacak berbagai status gambar.
+1. Buat objek ConcatenateMatrix yang mendefinisikan transformasi saat ini. Ini juga mendukung penskalaan, rotasi, dan skewing konten apa pun. Ini menggabungkan matriks baru dengan yang sebelumnya. Harap dicatat bahwa kita tidak dapat mendefinisikan transformasi dari awal tetapi hanya memodifikasi transformasi yang ada.
+1. Karena kita dapat memodifikasi matriks dengan ConcatenateMatrix, kita mungkin juga perlu kembali ke status gambar asli. Gunakan operator GSave dan GRestore. Operator ini berpasangan sehingga harus dipanggil bersama. Misalnya, jika Anda melakukan beberapa pekerjaan grafik dengan transformasi kompleks dan akhirnya mengembalikan transformasi kembali ke status awal, pendekatannya akan seperti ini:
 
 ```csharp
-// Menggambar beberapa teks
+// Draw some text
 GSave
 
-ConcatenateMatrix  // memutar isi setelah operator
+ConcatenateMatrix  // rotate contents after the operator
 
-// Beberapa pekerjaan grafis
+// Some graphics work
 
-ConcatenateMatrix // mengubah skala (dengan rotasi sebelumnya) isi setelah operator
+ConcatenateMatrix // scale (with previous rotation) contents after the operator
 
-// Beberapa pekerjaan grafis lainnya
+// Some other graphics work
 
 GRestore
 
-// Menggambar beberapa teks
+// Draw some text
 ```
 
-Sebagai hasilnya, teks digambar dalam bentuk reguler tetapi beberapa transformasi dilakukan di antara operator teks. Untuk menampilkan gambar atau untuk menggambar objek bentuk dan gambar, kita perlu menggunakan operator Do.
+Sebagai hasilnya, teks digambar dalam bentuk biasa tetapi beberapa transformasi dilakukan di antara operator teks. Untuk menampilkan gambar atau menggambar objek dan gambar bentuk, kita perlu menggunakan operator Do.
 
 Kami juga memiliki kelas bernama XImage yang menyediakan dua properti, Width dan Height, yang dapat digunakan untuk mendapatkan dimensi gambar.
 
-
+1. Lakukan beberapa perhitungan untuk menghitung resolusi gambar.
 1. Tampilkan informasi di Command Prompt bersama dengan nama gambar.
 
-Kode berikut menunjukkan cara mendapatkan dimensi dan resolusi gambar tanpa mengeluarkan gambar dari dokumen PDF.
+Potongan kode berikut menunjukkan kepada Anda cara mendapatkan dimensi dan resolusi gambar tanpa mengekstrak gambar dari dokumen PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Muat file PDF sumber
-Document doc = new Document(dataDir+ "ImageInformation.pdf");
-
-// Tentukan resolusi default untuk gambar
-int defaultResolution = 72;
-System.Collections.Stack graphicsState = new System.Collections.Stack();
-// Tentukan objek daftar array yang akan menyimpan nama gambar
-System.Collections.ArrayList imageNames = new System.Collections.ArrayList(doc.Pages[1].Resources.Images.Names);
-// Masukkan objek ke tumpukan
-graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
-
-// Dapatkan semua operator di halaman pertama dokumen
-foreach (Operator op in doc.Pages[1].Contents)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageInformationFromPDF()
 {
-    // Gunakan operator GSave/GRestore untuk mengembalikan transformasi ke set sebelumnya
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-    // Instansiasi objek ConcatenateMatrix karena mendefinisikan matriks transformasi saat ini.
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-    // Buat operator Do yang menggambar objek dari sumber daya. Ini menggambar objek Form dan objek Gambar
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    if (opSaveState != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageInformation.pdf"))
     {
-        // Simpan keadaan sebelumnya dan dorong keadaan saat ini ke atas tumpukan
-        graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
-    }
-    else if (opRestoreState != null)
-    {
-        // Buang keadaan saat ini dan kembalikan keadaan sebelumnya
-        graphicsState.Pop();
-    }
-    else if (opCtm != null)
-    {
-        System.Drawing.Drawing2D.Matrix cm = new System.Drawing.Drawing2D.Matrix(
-           (float)opCtm.Matrix.A,
-           (float)opCtm.Matrix.B,
-           (float)opCtm.Matrix.C,
-           (float)opCtm.Matrix.D,
-           (float)opCtm.Matrix.E,
-           (float)opCtm.Matrix.F);
+        // Define the default resolution for image
+        int defaultResolution = 72;
+        var graphicsState = new Stack();
 
-        // Kalikan matriks saat ini dengan matriks keadaan
-        ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
+        // Define list which will hold image names
+        var imageNames = new List<string>(document.Pages[1].Resources.Images.Names);
 
-        continue;
-    }
-    else if (opDo != null)
-    {
-        // Dalam kasus ini adalah operator penggambaran gambar
-        if (imageNames.Contains(opDo.Name))
+        // Insert an object to stack
+        graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
+
+        // Get all the operators on first page of document
+        foreach (var op in document.Pages[1].Contents)
         {
-            System.Drawing.Drawing2D.Matrix lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-            // Buat objek XImage untuk menampung gambar dari halaman pdf pertama
-            XImage image = doc.Pages[1].Resources.Images[opDo.Name];
+            // Use GSave/GRestore operators to revert the transformations back to previously set
+            var opSaveState = op as Aspose.Pdf.Operators.GSave;
+            var opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+            var opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+            var opDo = op as Aspose.Pdf.Operators.Do;
 
-            // Dapatkan dimensi gambar
-            double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
-            double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
-            // Dapatkan informasi Tinggi dan Lebar gambar
-            double originalWidth = image.Width;
-            double originalHeight = image.Height;
+            if (opSaveState != null)
+            {
+                // Save previous state and push current state to the top of the stack
+                graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
+            }
+            else if (opRestoreState != null)
+            {
+                // Throw away current state and restore previous one
+                graphicsState.Pop();
+            }
+            else if (opCtm != null)
+            {
+                var cm = new System.Drawing.Drawing2D.Matrix(
+                   (float)opCtm.Matrix.A,
+                   (float)opCtm.Matrix.B,
+                   (float)opCtm.Matrix.C,
+                   (float)opCtm.Matrix.D,
+                   (float)opCtm.Matrix.E,
+                   (float)opCtm.Matrix.F);
 
-            // Hitung resolusi berdasarkan informasi di atas
-            double resHorizontal = originalWidth * defaultResolution / scaledWidth;
-            double resVertical = originalHeight * defaultResolution / scaledHeight;
+                // Multiply current matrix with the state matrix
+                ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
 
-            // Tampilkan informasi Dimensi dan Resolusi dari setiap gambar
-            Console.Out.WriteLine(
-                    string.Format(dataDir + "gambar {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
-                                 opDo.Name, scaledWidth, scaledHeight, resHorizontal,
-                                 resVertical));
+                continue;
+            }
+            else if (opDo != null)
+            {
+                // In case this is an image drawing operator
+                if (imageNames.Contains(opDo.Name))
+                {
+                    var lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    // Create XImage object to hold images of first pdf page
+                    var image = document.Pages[1].Resources.Images[opDo.Name];
+
+                    // Get image dimensions
+                    double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
+                    double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
+                    // Get Height and Width information of image
+                    double originalWidth = image.Width;
+                    double originalHeight = image.Height;
+
+                    // Compute resolution based on above information
+                    double resHorizontal = originalWidth * defaultResolution / scaledWidth;
+                    double resVertical = originalHeight * defaultResolution / scaledHeight;
+
+                    // Display Dimension and Resolution information of each image
+                    Console.Out.WriteLine(
+                            string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
+                                         opDo.Name, scaledWidth, scaledHeight, resHorizontal,
+                                         resVertical));
+                }
+            }
         }
     }
 }
@@ -198,7 +205,7 @@ foreach (Operator op in doc.Pages[1].Contents)
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -220,23 +227,23 @@ foreach (Operator op in doc.Pages[1].Contents)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "id"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "id"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "id"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -245,7 +252,7 @@ foreach (Operator op in doc.Pages[1].Contents)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -257,5 +264,3 @@ foreach (Operator op in doc.Pages[1].Contents)
     }
 }
 </script>
-```
-

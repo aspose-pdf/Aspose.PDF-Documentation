@@ -1,10 +1,12 @@
 ---
-title: Mengubah Ukuran Halaman PDF dengan C#
-linktitle: Mengubah Ukuran Halaman PDF
+title: Ubah Ukuran Halaman PDF dengan C#
+linktitle: Ubah Ukuran Halaman PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /id/net/change-page-size/
-description: Mengubah ukuran halaman dari dokumen PDF Anda menggunakan perpustakaan Aspose.PDF untuk .NET.
+description: Ubah Ukuran Halaman dari dokumen PDF Anda menggunakan pustaka Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Mengubah Ukuran Halaman PDF dengan C#",
-    "alternativeHeadline": "Mengubah Ukuran Halaman PDF dengan .NET",
+    "headline": "Change PDF Page Size with C#",
+    "alternativeHeadline": "Effortlessly Resize PDF Pages in C#",
+    "abstract": "Fungsi baru dalam Aspose.PDF for .NET memungkinkan pengembang untuk dengan mudah mengubah ukuran halaman dokumen PDF secara programatis. Dengan hanya beberapa baris kode, pengguna dapat memodifikasi dimensi PDF yang ada, meningkatkan kemampuan manajemen dokumen mereka dan memastikan kompatibilitas dengan berbagai persyaratan tata letak. Fitur ini menyederhanakan proses pengubahan ukuran halaman PDF ke format yang diinginkan, seperti A4, langsung dalam aplikasi .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, mengubah ukuran pdf, mengubah ukuran pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "wordcount": "300",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,40 +73,81 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/change-page-size/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Mengubah ukuran halaman dari dokumen PDF Anda menggunakan perpustakaan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-26",
+    "description": "Ubah Ukuran Halaman dari dokumen PDF Anda menggunakan pustaka Aspose.PDF for .NET."
 }
 </script>
-## Mengubah Ukuran Halaman PDF
 
-Aspose.PDF untuk .NET memungkinkan Anda mengubah ukuran halaman PDF dengan beberapa baris kode dalam aplikasi .NET Anda. Topik ini menjelaskan cara memperbarui/mengubah dimensi halaman (ukuran) dari file PDF yang sudah ada.
+## Ubah Ukuran Halaman PDF
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Aspose.PDF for .NET memungkinkan Anda mengubah ukuran halaman PDF dengan baris kode sederhana dalam aplikasi .NET Anda. Topik ini menjelaskan cara memperbarui/mengubah dimensi halaman (ukuran) dari file PDF yang ada.
 
-Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) mengandung metode SetPageSize(...) yang memungkinkan Anda mengatur ukuran halaman. Potongan kode di bawah ini memperbarui dimensi halaman dalam beberapa langkah mudah:
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+Kelas [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) berisi metode SetPageSize(...) yang memungkinkan Anda mengatur ukuran halaman. Potongan kode di bawah ini memperbarui dimensi halaman dalam beberapa langkah mudah:
 
 1. Muat file PDF sumber.
 1. Dapatkan halaman ke dalam objek [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 1. Dapatkan halaman tertentu.
 1. Panggil metode SetPageSize(..) untuk memperbarui dimensinya.
-1. Panggil metode Save(..) kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) untuk menghasilkan file PDF dengan dimensi halaman yang diperbarui.
+1. Panggil metode Save(..) dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) untuk menghasilkan file PDF dengan dimensi halaman yang diperbarui.
 
 {{% alert color="primary" %}}
 
-Harap dicatat bahwa properti tinggi dan lebar menggunakan poin sebagai unit dasar, di mana 1 inci = 72 poin dan 1 cm = 1/2.54 inci = 0.3937 inci = 28.3 poin.
-Silakan perhatikan bahwa properti tinggi dan lebar menggunakan poin sebagai satuan dasar, dimana 1 inci = 72 poin dan 1 cm = 1/2.54 inci = 0.3937 inci = 28.3 poin.
+Harap dicatat bahwa properti tinggi dan lebar menggunakan poin sebagai satuan dasar, di mana 1 inci = 72 poin dan 1 cm = 1/2.54 inci = 0.3937 inci = 28.3 poin.
 
 {{% /alert %}}
 
 Potongan kode berikut menunjukkan cara mengubah dimensi halaman PDF menjadi ukuran A4.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-UpdateDimensions-UpdateDimensions.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangePdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Get page collection
+        var pageCollection = document.Pages;
+        // Get particular page
+        var pdfPage = pageCollection[1];
+        // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
+        // So A4 dimensions in points will be (842.4, 597.6)
+        pdfPage.SetPageSize(597.6, 842.4);
+        // Save PDF document
+        document.Save(dataDir + "UpdateDimensions_out.pdf"); 
+    }
+}
+```
 
 ## Dapatkan Ukuran Halaman PDF
 
-Anda dapat membaca ukuran halaman PDF dari file PDF yang ada menggunakan Aspose.PDF untuk .NET. Contoh kode berikut menunjukkan cara membaca dimensi halaman PDF menggunakan C#.
+Anda dapat membaca ukuran halaman PDF dari file PDF yang ada menggunakan Aspose.PDF for .NET. Contoh kode berikut menunjukkan cara membaca dimensi halaman PDF menggunakan C#.
 
-{{< gist "aspose-pdf" "7e1330795d76012fcb04248bb81d45b3" "Examples-CSharp-AsposePDF-Pages-GetDimensions-GetDimensions.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetPdfPageSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateDimensions.pdf"))
+    {
+        // Adds a blank page to pdf document
+        Page page = document.Pages.Count > 0 ? document.Pages[1] : document.Pages.Add();
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+        // Rotate page at 90 degree angle
+        page.Rotate = Rotation.on90;
+        // Get page height and width information
+        Console.WriteLine(page.GetPageRect(true).Width.ToString() + ":" + page.GetPageRect(true).Height);
+    }
+}
+```
 
 <script type="application/ld+json">
 {
@@ -169,5 +212,3 @@ Anda dapat membaca ukuran halaman PDF dari file PDF yang ada menggunakan Aspose.
     }
 }
 </script>
-
-

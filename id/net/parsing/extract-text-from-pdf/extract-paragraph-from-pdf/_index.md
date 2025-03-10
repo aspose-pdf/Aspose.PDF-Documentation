@@ -2,51 +2,122 @@
 title: Ekstrak Paragraf dari PDF C#
 linktitle: Ekstrak Paragraf dari PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/extract-paragraph-from-pdf/
-description: Artikel ini menjelaskan cara menggunakan ParagraphAbsorber - alat khusus di Aspose.PDF untuk mengekstrak teks dari dokumen PDF.
+description: Pelajari cara mengekstrak paragraf dari dokumen PDF di .NET menggunakan Aspose.PDF untuk pengambilan teks terstruktur.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Extract Paragraph from PDF C#",
+    "alternativeHeadline": "Extract Text from PDF as Paragraphs Efficiently",
+    "abstract": "Fitur baru ParagraphAbsorber di Aspose.PDF memungkinkan pengembang untuk secara efisien mengekstrak dan memanipulasi paragraf dari dokumen PDF. Dengan alat ini, pengguna tidak hanya dapat mengambil teks dalam format paragraf yang terorganisir tetapi juga memvisualisasikan bagian melalui batas yang dapat disesuaikan, meningkatkan presisi ekstraksi teks PDF. Fungsionalitas ini menyederhanakan kerja dengan data PDF terstruktur, menjadikannya sangat berharga untuk aplikasi yang memerlukan analisis teks mendalam.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "590",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/extract-paragraph-from-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/extract-paragraph-from-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
-## Ekstrak Teks dari Dokumen PDF dalam Bentuk Paragraf
+## Ekstrak Teks dari dokumen PDF dalam bentuk Paragraf
 
-Kita dapat mendapatkan teks dari dokumen PDF dengan mencari teks tertentu (menggunakan "teks biasa" atau "ekspresi reguler") dari satu halaman atau seluruh dokumen, atau kita dapat mendapatkan teks lengkap dari satu halaman, rentang halaman atau dokumen lengkap.
-Kita dapat mengambil teks dari dokumen PDF dengan mencari teks tertentu (menggunakan "teks biasa" atau "ekspresi reguler") dari satu halaman atau seluruh dokumen, atau kita dapat mengambil teks lengkap dari satu halaman, rentang halaman atau dokumen lengkap.
+Kita dapat mengambil teks dari dokumen PDF dengan mencari teks tertentu (menggunakan "teks biasa" atau "ekspresi reguler") dari satu halaman atau seluruh dokumen, atau kita dapat mengambil teks lengkap dari satu halaman, rentang halaman, atau dokumen lengkap. Namun, dalam beberapa kasus, Anda perlu mengekstrak paragraf dari dokumen PDF atau teks dalam bentuk Paragraf. Kami telah menerapkan fungsionalitas untuk mencari bagian dan paragraf dalam teks halaman dokumen PDF. Kami telah memperkenalkan Kelas ParagraphAbsorber (seperti TextFragmentAbsorber dan TextAbsorber), yang dapat digunakan untuk mengekstrak paragraf dari dokumen PDF. Ada dua cara berikut di mana Anda dapat menggunakan ParagraphAbsorber:
 
-**1- Dengan menggambar batas bagian dan paragraf teks pada halaman PDF:**
+**Dengan menggambar batas bagian dan paragraf teks di halaman PDF:**
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-private static void ExtractParagraph()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractParagraphWithDrawingTheBorder()
 {
-    // Jalur ke direktori dokumen.
-    string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-    Document doc = new Document(dataDir + "input.pdf");
-    Page page = doc.Pages[2];
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    ParagraphAbsorber absorber = new ParagraphAbsorber();
-    absorber.Visit(page);
-
-    PageMarkup markup = absorber.PageMarkups[0];
-
-    foreach (MarkupSection section in markup.Sections)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
-        DrawRectangleOnPage(section.Rectangle, page);
-        foreach (MarkupParagraph paragraph in section.Paragraphs)
-        {
-            DrawPolygonOnPage(paragraph.Points, page);
-        }
-    }
+        var page = document.Pages[2];
 
-    doc.Save(dataDir + "output_out.pdf");
+        var absorber = new Aspose.Pdf.Text.ParagraphAbsorber();
+        absorber.Visit(page);
+
+        Aspose.Pdf.Text.PageMarkup markup = absorber.PageMarkups[0];
+
+        foreach (Aspose.Pdf.Text.MarkupSection section in markup.Sections)
+        {
+            DrawRectangleOnPage(section.Rectangle, page);
+            foreach (Aspose.Pdf.Text.MarkupParagraph paragraph in section.Paragraphs)
+            {
+                DrawPolygonOnPage(paragraph.Points, page);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DocumentWithBorder_out.pdf");
+    }
 }
 
-private static void DrawRectangleOnPage(Rectangle rectangle, Page page)
+private static void DrawRectangleOnPage(Aspose.Pdf.Rectangle rectangle, Aspose.Pdf.Page page)
 {
     page.Contents.Add(new Aspose.Pdf.Operators.GSave());
     page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
@@ -61,7 +132,7 @@ private static void DrawRectangleOnPage(Rectangle rectangle, Page page)
     page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 }
 
-private static void DrawPolygonOnPage(Point[] polygon, Page page)
+private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Page page)
 {
     page.Contents.Add(new Aspose.Pdf.Operators.GSave());
     page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 0, 0));
@@ -77,48 +148,52 @@ private static void DrawPolygonOnPage(Point[] polygon, Page page)
     page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 }
 ```
-**2- Dengan mengulang koleksi paragraf dan mendapatkan teks dari mereka:**
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+**Dengan mengiterasi koleksi paragraf dan mendapatkan teks dari mereka:**
+
+Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Buka file PDF yang sudah ada
-Document doc = new Document(dataDir + "input.pdf");
-// Instansiasi ParagraphAbsorber
-ParagraphAbsorber absorber = new ParagraphAbsorber();
-absorber.Visit(doc);
-
-foreach (PageMarkup markup in absorber.PageMarkups)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractParagraphByIteratingThroughParagraphsCollection()
 {
-    int i = 1;
-    foreach (MarkupSection section in markup.Sections)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DocumentForExtract.pdf"))
     {
-        int j = 1;
+        // Instantiate ParagraphAbsorber
+        var absorber = new Aspose.Pdf.Text.ParagraphAbsorber();
+        absorber.Visit(document);
 
-        foreach (MarkupParagraph paragraph in section.Paragraphs)
+        foreach (Aspose.Pdf.Text.PageMarkup markup in absorber.PageMarkups)
         {
-            StringBuilder paragraphText = new StringBuilder();
-
-            foreach (List<TextFragment> line in paragraph.Lines)
+            int i = 1;
+            foreach (Aspose.Pdf.Text.MarkupSection section in markup.Sections)
             {
-                foreach (TextFragment fragment in line)
+                int j = 1;
+                foreach (Aspose.Pdf.Text.MarkupParagraph paragraph in section.Paragraphs)
                 {
-                    paragraphText.Append(fragment.Text);
+                    StringBuilder paragraphText = new StringBuilder();
+                    foreach (List<Aspose.Pdf.Text.TextFragment> line in paragraph.Lines)
+                    {
+                        foreach (Aspose.Pdf.Text.TextFragment fragment in line)
+                        {
+                            paragraphText.Append(fragment.Text);
+                        }
+                        paragraphText.Append("\r\n");
+                    }
+                    paragraphText.Append("\r\n");
+
+                    Console.WriteLine("Paragraph {0} of section {1} on page {2}:", j, i, markup.Number);
+                    Console.WriteLine(paragraphText.ToString());
+
+                    j++;
                 }
-                paragraphText.Append("\r\n");
+                i++;
             }
-            paragraphText.Append("\r\n");
-
-            Console.WriteLine("Paragraf {0} dari bagian {1} di halaman {2}:", j, i, markup.Number);
-            Console.WriteLine(paragraphText.ToString());
-
-            j++;
         }
-        i++;
     }
 }
 ```
-

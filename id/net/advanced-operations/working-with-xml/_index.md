@@ -2,9 +2,11 @@
 title: Bekerja dengan XML menggunakan C#
 linktitle: Bekerja dengan XML
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /id/net/working-with-xml/
-description: Pelajari cara menghasilkan dokumen PDF dari XML di Aspose.PDF untuk .NET
+description: Pelajari cara menghasilkan dokumen PDF dari XML di Aspose.PDF for .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Bekerja dengan XML menggunakan C#",
-    "alternativeHeadline": "Cara menghasilkan dokumen PDF dari XML ",
+    "headline": "Working with XML using C#",
+    "alternativeHeadline": "Generate PDF from XML effortlessly with C#",
+    "abstract": "Temukan kemampuan kuat untuk menghasilkan dokumen PDF langsung dari XML menggunakan Aspose.PDF for .NET. Fitur ini menyederhanakan proses manipulasi data XML, memungkinkan konversi dokumen yang mulus yang meningkatkan produktivitas dan efisiensi dalam aplikasi Anda. Manfaatkan fungsionalitas ini untuk memperlancar alur kerja Anda dan meningkatkan presentasi data",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, xml dalam pdf, menghasilkan pdf dari xml",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "wordcount": "178",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,16 +73,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-xml/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Pelajari cara menghasilkan dokumen PDF dari XML di Aspose.PDF untuk .NET"
+    "dateModified": "2024-11-25",
+    "description": "Pelajari cara menghasilkan dokumen PDF dari XML di Aspose.PDF for .NET"
 }
 </script>
 
-XML (Extensible Markup Language) adalah cara untuk menggunakan ulang data dalam sebuah file atau mengotomatisasi proses menggantikan data dalam satu file dengan data dari file lain. Membuat skema XML yang benar sangat sulit; membuat beberapa skema yang saling terkait yang dapat diperluas bahkan lebih sulit. Mari kita pelajari bagaimana Aspose.PDF menghadapi tugas bekerja dengan XML.
+XML (Extensible Markup Language) adalah cara untuk memanfaatkan kembali data dalam sebuah file atau mengotomatiskan proses penggantian data dalam satu file dengan data dari file lain. Membuat skema XML sulit untuk dilakukan dengan benar; membuat beberapa skema yang saling terkait yang dapat diperluas bahkan lebih sulit. Mari kita pelajari bagaimana Aspose.PDF menangani tugas bekerja dengan XML.
 
-- [Skema XML yang Didukung](/pdf/id/net/supported-xml-schema/) - gunakan skema XML berikut untuk bekerja dengan dokumen XML.
-- [Contoh 'Hello World' sederhana berdasarkan XML dan XSLT](/pdf/id/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - gunakan XSLT untuk mengubah dokumen XML Anda yang ada menjadi PDF.
-- [Menghasilkan PDF dari XML](/pdf/id/net/generate-pdf-from-xml/) - Aspose.PDF memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML.
+- [Skema XML yang Didukung](/pdf/net/supported-xml-schema/) - gunakan skema XML berikut untuk bekerja dengan dokumen XML.
+- [Contoh 'Hello World' sederhana berdasarkan XML dan XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - gunakan XSLT untuk mengubah dokumen XML Anda yang ada menjadi PDF.
+- [Hasilkan PDF dari XML](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML.
 
 <script type="application/ld+json">
 {

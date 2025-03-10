@@ -1,10 +1,12 @@
 ---
-title: PDF Tooltip menggunakan C#
+title: Tooltip PDF menggunakan C#
 linktitle: PDF Tooltip
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/pdf-tooltip/
-description: Pelajari cara menambahkan tooltip pada fragmen teks dalam PDF menggunakan C# dan Aspose.PDF
+description: Pelajari cara menambahkan tooltip ke fragmen teks dalam PDF menggunakan C# dan Aspose.PDF
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF Tooltip menggunakan C#",
-    "alternativeHeadline": "Tambahkan PDF Tooltip pada Teks",
+    "headline": "PDF Tooltip using C#",
+    "alternativeHeadline": "Add Interactive Tooltips to PDF Text in C#",
+    "abstract": "Tingkatkan dokumen PDF Anda dengan fitur Tooltip PDF baru menggunakan C#. Fungsionalitas ini memungkinkan Anda untuk dengan mudah menambahkan tooltip ke fragmen teks dalam file PDF, memberikan pengguna informasi tambahan saat mengarahkan kursor mouse. Manfaatkan tombol tak terlihat dan blok teks tersembunyi untuk menciptakan pengalaman membaca yang dinamis dan interaktif dengan Aspose.PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, tambahkan pdf tooltip",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "wordcount": "1072",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,151 +73,165 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-tooltip/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Pelajari cara menambahkan tooltip pada fragmen teks dalam PDF menggunakan C# dan Aspose.PDF"
+    "dateModified": "2024-11-26",
+    "description": "Pelajari cara menambahkan tooltip ke fragmen teks dalam PDF menggunakan C# dan Aspose.PDF"
 }
 </script>
-Kode berikut juga dapat digunakan dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-## Tambahkan Tooltip pada Teks yang Dicari dengan Menambahkan Tombol Tak Terlihat
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-Sering kali diperlukan untuk menambahkan beberapa detail untuk frasa atau kata tertentu sebagai tooltip dalam dokumen PDF sehingga dapat muncul ketika pengguna mengarahkan kursor mouse ke atas teks. Aspose.PDF untuk .NET menyediakan fitur ini untuk membuat tooltip dengan menambahkan tombol tak terlihat di atas teks yang dicari. Potongan kode berikut akan menunjukkan cara untuk mencapai fungsionalitas ini:
+## Tambahkan Tooltip ke Teks yang Dicari dengan Menambahkan Tombol Tak Terlihat
+
+Sering kali diperlukan untuk menambahkan beberapa detail untuk frasa atau kata tertentu sebagai tooltip dalam dokumen PDF sehingga dapat muncul saat pengguna mengarahkan kursor mouse ke teks. Aspose.PDF for .NET menyediakan fitur ini untuk membuat tooltip dengan menambahkan tombol tak terlihat di atas teks yang dicari. Potongan kode berikut akan menunjukkan cara mencapai fungsionalitas ini:
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-string outputFile = dataDir + "Tooltip_out.pdf";
-
-// Buat dokumen contoh dengan teks
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Arahkan kursor mouse ke sini untuk menampilkan tooltip"));
-doc.Pages[1].Paragraphs.Add(new TextFragment("Arahkan kursor mouse ke sini untuk menampilkan tooltip yang sangat panjang"));
-doc.Save(outputFile);
-
-// Buka dokumen dengan teks
-Document document = new Document(outputFile);
-// Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("Arahkan kursor mouse ke sini untuk menampilkan tooltip");
-// Terima absorber untuk halaman dokumen
-document.Pages.Accept(absorber);
-// Dapatkan fragmen teks yang diekstraksi
-TextFragmentCollection textFragments = absorber.TextFragments;
-
-// Loop melalui fragmen
-foreach (TextFragment fragment in textFragments)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTooltipToSearchedText()
 {
-    // Buat tombol tak terlihat pada posisi fragmen teks
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // Nilai AlternateName akan ditampilkan sebagai tooltip oleh aplikasi penampil
-    field.AlternateName = "Tooltip untuk teks.";
-    // Tambahkan bidang tombol ke dokumen
-    document.Form.Add(field);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the extracted text fragments
+        var textFragments = absorber.TextFragments;
+
+        // Loop through the fragments
+        foreach (var fragment in textFragments)
+        {
+            // Create invisible button on text fragment position
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // AlternateName value will be displayed as tooltip by a viewer application
+            field.AlternateName = "Tooltip for text.";
+            // Add button field to the document
+            document.Form.Add(field);
+        }
+
+        absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
+        document.Pages.Accept(absorber);
+        textFragments = absorber.TextFragments;
+
+        foreach (var fragment in textFragments)
+        {
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // Set very long text
+            field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
+                                    " deserunt mollit anim id est laborum.";
+            document.Form.Add(field);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
 }
-
-// Berikutnya akan menjadi contoh tooltip yang sangat panjang
-absorber = new TextFragmentAbsorber("Arahkan kursor mouse ke sini untuk menampilkan tooltip yang sangat panjang");
-document.Pages.Accept(absorber);
-textFragments = absorber.TextFragments;
-
-foreach (TextFragment fragment in textFragments)
-{
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // Atur teks yang sangat panjang
-    field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                            " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                            " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                            " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                            " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                            " deserunt mollit anim id est laborum.";
-    document.Form.Add(field);
-}
-
-// Simpan dokumen
-document.Save(outputFile);
 ```
+
 {{% alert color="primary" %}}
 
-Mengenai panjang tooltip, teks tooltip terdapat dalam dokumen PDF sebagai tipe string PDF, di luar aliran konten. Tidak ada pembatasan efektif pada string semacam ini dalam file PDF (Lihat Referensi PDF Lampiran C.). Namun, pembaca yang mematuhi (mis. Adobe Acrobat) yang berjalan pada prosesor tertentu dan dalam lingkungan operasional tertentu memang memiliki batasan tersebut. Silakan merujuk pada dokumentasi aplikasi pembaca PDF Anda.
+Mengenai panjang tooltip, teks tooltip terkandung dalam dokumen PDF sebagai tipe string PDF, di luar aliran konten. Tidak ada batasan efektif pada string semacam itu dalam file PDF (Lihat Referensi PDF Lampiran C.). Namun, pembaca yang sesuai (misalnya Adobe Acrobat) yang berjalan di prosesor tertentu dan dalam lingkungan operasi tertentu memang memiliki batasan semacam itu. Silakan merujuk ke dokumentasi aplikasi pembaca PDF Anda.
 
 {{% /alert %}}
 
-## Membuat Blok Teks Tersembunyi dan Menampilkannya saat Mouse Diarahkan
+## Buat Blok Teks Tersembunyi dan Tampilkan Saat Mouse Melintas
 
-Dalam Aspose.PDF, fitur untuk menyembunyikan tindakan diimplementasikan dimana dimungkinkan untuk menampilkan/menyembunyikan kolom teks (atau jenis anotasi lainnya) saat mouse masuk/keluar di atas tombol yang tidak terlihat. Untuk tujuan ini, Kelas Aspose.Pdf.Annotations.HideAction digunakan untuk menetapkan tindakan menampilkan/menyembunyikan pada blok teks. Silakan gunakan cuplikan kode berikut untuk Menampilkan/Menyembunyikan Blok Teks saat Mouse Masuk/Keluar.
+Dalam Aspose.PDF, fitur untuk menyembunyikan aksi diimplementasikan di mana dimungkinkan untuk menampilkan/menghapus blok teks (atau jenis anotasi lainnya) saat mouse masuk/keluar di atas beberapa tombol tak terlihat. Untuk tujuan ini, Kelas Aspose.Pdf.Annotations.HideAction digunakan untuk menetapkan aksi sembunyi/tampilkan ke blok teks. Silakan gunakan potongan kode berikut untuk Menampilkan/Menyembunyikan Blok Teks saat Mouse Masuk/Keluar.
 
-Harap juga diperhatikan bahwa tindakan PDF dalam dokumen bekerja dengan baik dalam pembaca yang mematuhi (mis.
-Harap diperhatikan bahwa tindakan PDF dalam dokumen berfungsi dengan baik pada pembaca yang sesuai (misalnya.
+Silakan juga perhatikan bahwa aksi PDF dalam dokumen berfungsi dengan baik di pembaca yang sesuai (misalnya Adobe Reader) tetapi tidak ada jaminan untuk pembaca PDF lainnya (misalnya plugin browser web). Kami telah melakukan penyelidikan singkat dan menemukan:
 
-- Semua implementasi tindakan sembunyi dalam dokumen PDF berfungsi dengan baik di Internet Explorer v.11.0.
-- Semua implementasi tindakan sembunyi juga berfungsi di Opera v.12.14, tetapi kami melihat beberapa penundaan respons pada pembukaan dokumen pertama.
+- Semua implementasi aksi sembunyi dalam dokumen PDF berfungsi dengan baik di Internet Explorer v.11.0.
+- Semua implementasi aksi sembunyi juga berfungsi di Opera v.12.14, tetapi kami menemukan beberapa keterlambatan respons saat pertama kali membuka dokumen.
 - Hanya implementasi yang menggunakan konstruktor HideAction yang menerima nama bidang yang berfungsi jika Google Chrome v.61.0 menjelajahi dokumen; Silakan gunakan konstruktor yang sesuai jika menjelajahi di Google Chrome signifikan:
 
 >buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateHiddenTextBlock()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-string outputFile = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add paragraph with text
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
+        // Save PDF document
+        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
+    }
 
-// Membuat dokumen sampel dengan teks
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("Gerakkan kursor mouse ke sini untuk menampilkan teks mengambang"));
-doc.Save(outputFile);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the first extracted text fragment
+        var textFragments = absorber.TextFragments;
+        var fragment = textFragments[1];
 
-// Membuka dokumen dengan teks
-Document document = new Document(outputFile);
-// Membuat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("Gerakkan kursor mouse ke sini untuk menampilkan teks mengambang");
-// Menerima absorber untuk halaman dokumen
-document.Pages.Accept(absorber);
-// Mendapatkan fragmen teks yang diekstrak pertama
-TextFragmentCollection textFragments = absorber.TextFragments;
-TextFragment fragment = textFragments[1];
+        // Create hidden text field for floating text in the specified rectangle of the page
+        var floatingField = new Aspose.Pdf.Forms.TextBoxField(fragment.Page, new Aspose.Pdf.Rectangle(100, 700, 220, 740));
+        // Set text to be displayed as field value
+        floatingField.Value = "This is the \"floating text field\".";
+        // We recommend to make field 'readonly' for this scenario
+        floatingField.ReadOnly = true;
+        // Set 'hidden' flag to make field invisible on document opening
+        floatingField.Flags |= Aspose.Pdf.Annotations.AnnotationFlags.Hidden;
 
-// Membuat bidang teks tersembunyi untuk teks mengambang di persegi panjang yang ditentukan dari halaman
-TextBoxField floatingField = new TextBoxField(fragment.Page, new Rectangle(100, 700, 220, 740));
-// Mengatur teks yang akan ditampilkan sebagai nilai bidang
-floatingField.Value = "Ini adalah \"bidang teks mengambang\".";
-// Kami merekomendasikan untuk membuat bidang 'readonly' untuk skenario ini
-floatingField.ReadOnly = true;
-// Mengatur bendera 'tersembunyi' untuk membuat bidang tidak terlihat saat pembukaan dokumen
-floatingField.Flags |= AnnotationFlags.Hidden;
+        // Setting a unique field name isn't necessary but allowed
+        floatingField.PartialName = "FloatingField_1";
 
-// Mengatur nama bidang unik tidak diperlukan tetapi diizinkan
-floatingField.PartialName = "FloatingField_1";
+        // Setting characteristics of field appearance isn't necessary but makes it better
+        floatingField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
+        floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
+        floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
+        floatingField.Border = new Aspose.Pdf.Annotations.Border(floatingField);
+        floatingField.Border.Width = 1;
+        floatingField.Multiline = true;
 
-// Mengatur karakteristik penampilan bidang tidak diperlukan tetapi membuatnya lebih baik
-floatingField.DefaultAppearance = new DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
-floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
-floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
-floatingField.Border = new Border(floatingField);
-floatingField.Border.Width = 1;
-floatingField.Multiline = true;
+        // Add text field to the document
+        document.Form.Add(floatingField);
 
-// Menambahkan bidang teks ke dokumen
-document.Form.Add(floatingField);
+        // Create invisible button on text fragment position
+        var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+        // Create new hide action for specified field (annotation) and invisibility flag
+        // (You also may reffer floating field by the name if you specified it above)
+        // Add actions on mouse enter/exit at the invisible button field
+        buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
+        buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
 
-// Membuat tombol tak terlihat pada posisi fragmen teks
-ButtonField buttonField = new ButtonField(fragment.Page, fragment.Rectangle);
-// Membuat tindakan sembunyi baru untuk bidang yang ditentukan (anotasi) dan bendera ketidakmampuan.
-// (Anda juga dapat merujuk bidang mengambang dengan nama jika Anda menentukannya di atas.)
-// Menambahkan tindakan pada saat mouse masuk/keluar di bidang tombol tak terlihat
-buttonField.Actions.OnEnter = new HideAction(floatingField, false);
-buttonField.Actions.OnExit = new HideAction(floatingField);
+        // Add button field to the document
+        document.Form.Add(buttonField);
 
-// Menambahkan bidang tombol ke dokumen
-document.Form.Add(buttonField);
-
-// Menyimpan dokumen
-document.Save(outputFile);
+        // Save PDF document
+        document.Save(dataDir + "CreateHiddenTextBlock_out.pdf");
+    }
+}
 ```
-```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -242,21 +258,21 @@ document.Save(outputFile);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -267,7 +283,7 @@ document.Save(outputFile);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -279,5 +295,3 @@ document.Save(outputFile);
     }
 }
 </script>
-```
-

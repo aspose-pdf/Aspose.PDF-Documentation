@@ -1,10 +1,12 @@
 ---
-title: Aksesibilitas dan PDF Bertag
-linktitle: Aksesibilitas. PDF Bertag
+title: Aksesibilitas dan PDF Berlabel
+linktitle: Aksesibilitas. PDF Berlabel
 type: docs
-weight: 120
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 180
 url: /id/net/accessibility-tagged-pdf/
-description: Aspose.PDF menyediakan kemampuan untuk membuat dokumen PDF Bertag, memungkinkan Anda menandai elemen struktural. Pelajari lebih lanjut tentang cara mendapatkan PDF yang dapat diakses.
+description: Temukan cara untuk menghasilkan PDF Berlabel yang dapat diakses dengan Aspose.PDF for .NET. Patuhi standar aksesibilitas untuk desain dokumen yang inklusif.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Aksesibilitas dan PDF Bertag",
-    "alternativeHeadline": "Bekerja dengan PDF bertag",
+    "headline": "Accessibility and Tagged PDFs",
+    "alternativeHeadline": "Create accessible PDFs with new tagging features",
+    "abstract": "Buat PDF yang dapat diakses dengan kemampuan penandaan yang ditingkatkan. Fitur baru ini memungkinkan navigasi dan keterbacaan yang lebih mudah oleh teknologi bantu, meningkatkan aksesibilitas bagi pengguna dengan disabilitas. Kembangkan dokumen PDF yang patuh dan inklusif",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "bertag, pdf, pembuatan dokumen",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Tagged PDF, Accessible PDF, PDF Accessibility, Create Tagged PDF, Edit Tagged PDF, Extract Tagged Content, PDF Tags, Structure Elements",
+    "wordcount": "172",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,20 +74,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/accessibility-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF menyediakan kemampuan untuk membuat dokumen PDF Bertag, memungkinkan Anda menandai elemen struktural. Pelajari lebih lanjut tentang cara mendapatkan PDF yang dapat diakses."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
-Dokumen PDF Bertag dapat diakses oleh orang dengan disabilitas. Menambahkan tag aksesibilitas ke file PDF memudahkan pembaca layar dan teknologi bantu lainnya untuk membaca dan menavigasi dokumen, termasuk Daftar Isi, hyperlink, bookmark, teks alt, dan sebagainya.
+Dokumen PDF Berlabel dapat diakses oleh orang dengan disabilitas. Menambahkan tag aksesibilitas ke file PDF memudahkan pembaca layar dan teknologi bantu lainnya untuk membaca dan menavigasi dokumen, dengan Daftar Isi, hyperlink, bookmark, teks alternatif, dan sebagainya.
 
 Bagian ini mencakup topik berikut:
 
-- [Buat PDF Bertag](/pdf/id/net/create-tagged-pdf/)
-- [Ekstrak Konten Bertag dari PDF Bertag](/pdf/id/net/extract-tagged-content-from-tagged-pdfs/)
-- [Pengaturan Properti Elemen Struktur](/pdf/id/net/setting-structure-elements-properties/)
-- [Bekerja dengan Tabel dalam PDF Bertag](/pdf/id/net/working-with-table-in-tagged-pdfs/)
-- [Tes Kepatuhan PDF-UA - Daftar Kesalahan](/pdf/id/net/pdf-ua-compliance-test-errors-list/)
+- [Buat PDF Berlabel](/pdf/net/create-tagged-pdf/)
+- [Edit PDF Berlabel](/pdf/net/edit-pdf-file-tags/)
+- [Ekstrak Konten Berlabel dari PDF Berlabel](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
+- [Mengatur Properti Elemen Struktur](/pdf/net/setting-structure-elements-properties/)
+- [Bekerja dengan Tabel di PDF Berlabel](/pdf/net/working-with-table-in-tagged-pdfs/)
+- [Uji Kepatuhan PDF-UA - Daftar Kesalahan](/pdf/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {
@@ -149,5 +153,3 @@ Bagian ini mencakup topik berikut:
     }
 }
 </script>
-
-

@@ -1,35 +1,41 @@
 ---
-title: Working with Operators
-linktitle: Working with Operators
+title: Bekerja dengan Operator
+linktitle: Bekerja dengan Operator
 type: docs
-weight: 170
-url: /id/net/operators/
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 90
+url: /id/net/working-with-operators/
 description: Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Kelas operator menyediakan fitur hebat untuk manipulasi PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-operators/
+    - /net/operator/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Working with Operators",
-    "alternativeHeadline": "How to use PDF operators",
+    "alternativeHeadline": "Empowered PDF Manipulation with Operators Integration",
+    "abstract": "Fitur Operator dalam Aspose.PDF for .NET meningkatkan kemampuan manipulasi PDF dengan memungkinkan pengguna untuk memanfaatkan kelas operator tertentu untuk tugas seperti menambahkan gambar dan menghapus grafik. Fungsionalitas ini menyederhanakan proses mendefinisikan elemen grafis dan statusnya dalam PDF, memberikan pengembang alat yang kuat untuk pengeditan dan pemrosesan dokumen yang lebih halus.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, operators in pdf, use pdf operators",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "operators, Aspose.PDF, PDF manipulation, GSave operator, ConcatenateMatrix operator, Do operator, GRestore operator, graphics state, remove graphics",
+    "wordcount": "1233",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,187 +72,214 @@ sitemap:
             }
         ]
     },
-    "url": "/net/operators/",
+    "url": "/net/working-with-operators/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/operators/"
+        "@id": "/net/working-with-operators/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Kelas operator menyediakan fitur hebat untuk manipulasi PDF."
 }
 </script>
 
-## Pengenalan terhadap Operator PDF dan Penggunaannya
+## Pengenalan Operator PDF dan Penggunaannya
 
-Operator adalah kata kunci PDF yang menentukan tindakan tertentu yang harus dilakukan, seperti melukis bentuk grafis di halaman. Kata kunci operator dibedakan dari objek bernama dengan tidak adanya karakter solidus awal (2Fh). Operator hanya bermakna di dalam aliran konten.
+Operator adalah kata kunci PDF yang menentukan beberapa tindakan yang akan dilakukan, seperti melukis bentuk grafis di halaman. Kata kunci operator dibedakan dari objek bernama dengan tidak adanya karakter solidus awal (2Fh). Operator hanya berarti di dalam aliran konten.
 
-Aliran konten adalah objek aliran PDF yang datanya terdiri dari instruksi yang menggambarkan elemen grafis yang akan dilukis di halaman. Informasi lebih lanjut tentang operator PDF dapat ditemukan di [spesifikasi PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
+Aliran konten adalah objek aliran PDF yang datanya terdiri dari instruksi yang menggambarkan elemen grafis yang akan dilukis di halaman. Detail lebih lanjut tentang operator PDF dapat ditemukan di [spesifikasi PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/).
 
 ### Detail Implementasi
 
-Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF.
-Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF.
+Topik ini menjelaskan cara menggunakan operator dengan Aspose.PDF. Contoh yang dipilih menambahkan gambar ke dalam file PDF untuk menggambarkan konsep tersebut. Untuk menambahkan gambar dalam file PDF, operator yang berbeda diperlukan. Contoh ini menggunakan [GSave](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/28), [ConcatenateMatrix](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/10), [Do](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/14), dan [GRestore](https://reference.aspose.com/pdf/net/aspose.pdf.ioperatorselector/visit/methods/26).
 
-- Operator **GSave** menyimpan keadaan grafis saat ini dari PDF.
-- Operator **ConcatenateMatrix** (matriks konkatenasi) digunakan untuk menentukan bagaimana gambar harus diletakkan di halaman PDF.
+- Operator **GSave** menyimpan status grafis saat ini dari PDF.
+- Operator **ConcatenateMatrix** (matriks gabungan) digunakan untuk menentukan bagaimana gambar harus ditempatkan di halaman PDF.
 - Operator **Do** menggambar gambar di halaman.
-- Operator **GRestore** mengembalikan keadaan grafis.
+- Operator **GRestore** mengembalikan status grafis.
 
 Untuk menambahkan gambar ke dalam file PDF:
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dan buka dokumen PDF yang diinginkan.
-1. Dapatkan halaman tertentu yang akan ditambahkan gambar.
-1. Tambahkan gambar ke dalam koleksi Sumber daya halaman.
-1. Gunakan operator untuk meletakkan gambar di halaman:
-   - Pertama, gunakan operator GSave untuk menyimpan keadaan grafis saat ini.
-   - Kemudian gunakan operator ConcatenateMatrix untuk menentukan di mana gambar akan diletakkan.
+1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dan buka dokumen PDF input.
+1. Dapatkan halaman tertentu tempat gambar akan ditambahkan.
+1. Tambahkan gambar ke dalam koleksi Sumber halaman.
+1. Gunakan operator untuk menempatkan gambar di halaman:
+   - Pertama, gunakan operator GSave untuk menyimpan status grafis saat ini.
+   - Kemudian gunakan operator ConcatenateMatrix untuk menentukan di mana gambar akan ditempatkan.
    - Gunakan operator Do untuk menggambar gambar di halaman.
-1. Akhirnya, gunakan operator GRestore untuk menyimpan keadaan grafis yang telah diperbarui.
+1. Terakhir, gunakan operator GRestore untuk menyimpan status grafis yang diperbarui.
 
-Potongan kode berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
-Kode berikut juga dapat bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Kode berikut menunjukkan cara menggunakan operator PDF.
+Potongan kode berikut menunjukkan cara menggunakan operator PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageUsingPDFOperators()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir+ "PDFOperators.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFOperators.pdf"))
+    {
+        // Set coordinates for the image placement
+        int lowerLeftX = 100;
+        int lowerLeftY = 100;
+        int upperRightX = 200;
+        int upperRightY = 200;
 
-// Atur koordinat
-int lowerLeftX = 100;
-int lowerLeftY = 100;
-int upperRightX = 200;
-int upperRightY = 200;
+        // Get the page where the image needs to be added
+        var page = document.Pages[1];
 
-// Dapatkan halaman dimana gambar perlu ditambahkan
-Page page = pdfDocument.Pages[1];
-// Muat gambar ke dalam stream
-FileStream imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open);
-// Tambahkan gambar ke koleksi Gambar dari Sumber Daya Halaman
-page.Resources.Images.Add(imageStream);
-// Menggunakan operator GSave: operator ini menyimpan status grafis saat ini
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-// Buat objek Rectangle dan Matrix
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
-// Menggunakan ConcatenateMatrix (menggabungkan matriks) operator: mendefinisikan bagaimana gambar harus ditempatkan
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
-XImage ximage = page.Resources.Images[page.Resources.Images.Count];
-// Menggunakan operator Do: operator ini menggambar gambar
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-// Menggunakan operator GRestore: operator ini mengembalikan status grafis
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-dataDir = dataDir + "PDFOperators_out.pdf";
-// Simpan dokumen yang telah diperbarui
-pdfDocument.Save(dataDir);
+        // Load the image into a file stream
+        using (var imageStream = new FileStream(dataDir + "PDFOperators.jpg", FileMode.Open))
+        {
+            // Add the image to the page's Resources collection
+            page.Resources.Images.Add(imageStream);
+        }
+
+        // Save the current graphics state using the GSave operator
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Create a rectangle and matrix for positioning the image
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0,
+            0, rectangle.URY - rectangle.LLY,
+            rectangle.LLX, rectangle.LLY
+        });
+
+        // Define how the image must be placed using the ConcatenateMatrix operator
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+
+        // Get the image from the Resources collection
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
+
+        // Draw the image using the Do operator
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+
+        // Restore the graphics state using the GRestore operator
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save PDF document
+        document.Save(dataDir + "PDFOperators_out.pdf");
+    }
+}
 ```
-## Menggambar XForm pada Halaman menggunakan Operator
+
+## Menggambar XForm di Halaman menggunakan Operator
 
 Topik ini menunjukkan cara menggunakan operator GSave/GRestore, operator ContatenateMatrix untuk memposisikan xForm dan operator Do untuk menggambar xForm di halaman.
 
-Kode di bawah ini membungkus konten yang sudah ada di file PDF dengan pasangan operator GSave/GRestore. Pendekatan ini membantu mendapatkan keadaan grafis awal di akhir konten yang sudah ada. Tanpa pendekatan ini, transformasi yang tidak diinginkan mungkin tetap ada di akhir rantai operator yang ada.
+Kode di bawah ini membungkus konten yang ada dari file PDF dengan pasangan operator GSave/GRestore. Pendekatan ini membantu mendapatkan status grafis awal di akhir konten yang ada. Tanpa pendekatan ini, transformasi yang tidak diinginkan mungkin tetap ada di akhir rantai operator yang ada.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
-
-
-string imageFile = dataDir+ "aspose-logo.jpg";
-string inFile = dataDir + "DrawXFormOnPage.pdf";
-string outFile = dataDir + "blank-sample2_out.pdf";
-
-using (Document doc = new Document(inFile))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DrawXFormOnPage()
 {
-    OperatorCollection pageContents = doc.Pages[1].Contents;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    // Contoh ini menunjukkan
-    // penggunaan operator GSave/GRestore
-    // penggunaan operator ContatenateMatrix untuk memposisikan xForm
-    // penggunaan operator Do untuk menggambar xForm di halaman
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DrawXFormOnPage.pdf"))
+    {
+        var pageContents = document.Pages[1].Contents;
 
-    // Membungkus konten yang ada dengan pasangan operator GSave/GRestore
-    //        ini untuk mendapatkan keadaan grafis awal di akhir konten yang ada
-    //        jika tidak, mungkin masih ada beberapa transformasi yang tidak diinginkan di akhir rantai operator yang ada
-    pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Wrap existing contents with GSave/GRestore operators to preserve graphics state
+        pageContents.Insert(1, new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
 
-    // Tambahkan operator menyimpan keadaan grafis untuk benar-benar membersihkan keadaan grafis setelah perintah baru
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        // Add GSave operator to start new graphics state
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
 
-    #region create xForm
+        // Create an XForm
+        var form = Aspose.Pdf.XForm.CreateNewForm(document.Pages[1], document);
+        document.Pages[1].Resources.Forms.Add(form);
 
-    // Buat xForm
-    XForm form = XForm.CreateNewForm(doc.Pages[1], doc);
-    doc.Pages[1].Resources.Forms.Add(form);
-    form.Contents.Add(new Aspose.Pdf.Operators.GSave());
-    // Tentukan lebar dan tinggi gambar
-    form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
-    // Muat gambar ke dalam stream
-    Stream imageStream = new FileStream(imageFile, FileMode.Open);
-    // Tambahkan gambar ke koleksi Gambar dari Sumber Daya XForm
-    form.Resources.Images.Add(imageStream);
-    XImage ximage = form.Resources.Images[form.Resources.Images.Count];
-    // Menggunakan operator Do: operator ini menggambar gambar
-    form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-    form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+        form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+        // Define image width and height
+        form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(200, 0, 0, 200, 0, 0));
 
-    #endregion
+        // Load image into stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the XForm's resources
+            form.Resources.Images.Add(imageStream);
+        }
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-    // Tempatkan formulir ke koordinat x=100 y=500
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
-    // Gambar formulir dengan operator Do
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        var ximage = form.Resources.Images[form.Resources.Images.Count];
+        // Draw the image on the XForm
+        form.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+        form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
 
-    pageContents.Add(new Aspose.Pdf.Operators.GSave());
-    // Tempatkan formulir ke koordinat x=100 y=300
-    pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
-    // Gambar formulir dengan operator Do
-    pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+        // Place and draw the XForm at two different coordinates
 
-    // Kembalikan keadaan grafis dengan GRestore setelah GSave
-    pageContents.Add(new Aspose.Pdf.Operators.GRestore());
-    doc.Save(outFile);
+        // Draw the XForm at (100, 500)
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 500));
+        pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Draw the XForm at (100, 300)
+        pageContents.Add(new Aspose.Pdf.Operators.GSave());
+        pageContents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(1, 0, 0, 1, 100, 300));
+        pageContents.Add(new Aspose.Pdf.Operators.Do(form.Name));
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Restore graphics state
+        pageContents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save PDF document
+        document.Save(dataDir + "DrawXFormOnPage_out.pdf");
+    }
 }
 ```
-## Menghapus Objek Grafis menggunakan Kelas Operator
 
-Kelas operator menyediakan fitur hebat untuk manipulasi PDF. Ketika file PDF mengandung grafik yang tidak dapat dihapus menggunakan metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), kelas operator dapat digunakan sebagai alternatif untuk menghapusnya.
+## Menghapus Objek Grafik menggunakan Kelas Operator
 
-Potongan kode berikut menunjukkan cara menghapus grafik. Perlu dicatat bahwa jika file PDF mengandung label teks untuk grafis, label tersebut mungkin masih bertahan dalam file PDF, dengan menggunakan pendekatan ini. Oleh karena itu, cari operator grafik untuk metode alternatif dalam menghapus gambar tersebut.
+Kelas operator menyediakan fitur hebat untuk manipulasi PDF. Ketika file PDF berisi grafik yang tidak dapat dihapus menggunakan metode [DeleteImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/methods/deleteimage) dari kelas [PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor), kelas operator dapat digunakan untuk menghapusnya sebagai gantinya.
+
+Potongan kode berikut menunjukkan cara menghapus grafik. Harap dicatat bahwa jika file PDF berisi label teks untuk grafik, mereka mungkin tetap ada di file PDF, menggunakan pendekatan ini. Oleh karena itu, cari operator grafik untuk metode alternatif untuk menghapus gambar semacam itu.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Operators();
+  // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+  private static void RemoveGraphicsObjects()
+  {
+      // The path to the documents directory
+      var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document doc = new Document(dataDir+ "RemoveGraphicsObjects.pdf");
-Page page = doc.Pages[2];
-OperatorCollection oc = page.Contents;
+      // Open PDF document
+      using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphicsObjects.pdf"))
+      {
+          // Get the specific page (page 2 in this case)
+          var page = document.Pages[2];
 
-// Menggunakan operator pewarnaan jalur
-Operator[] operators = new Operator[] {
-        new Aspose.Pdf.Operators.Stroke(),
-        new Aspose.Pdf.Operators.ClosePathStroke(),
-        new Aspose.Pdf.Operators.Fill()
-};
+          // Get the operator collection from the page contents
+          var oc = page.Contents;
 
-oc.Delete(operators);
-doc.Save(dataDir+ "No_Graphics_out.pdf");
+          // Define the path-painting operators to be removed
+          var operators = new Aspose.Pdf.Operator[]
+          {
+              new Aspose.Pdf.Operators.Stroke(),
+              new Aspose.Pdf.Operators.ClosePathStroke(),
+              new Aspose.Pdf.Operators.Fill()
+          };
+
+          // Delete the specified operators from the page contents
+          oc.Delete(operators);
+
+          // Save PDF document
+          document.Save(dataDir + "NoGraphics_out.pdf");
+      }
+  }
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Perpustakaan .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -268,23 +301,23 @@ doc.Save(dataDir+ "No_Graphics_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
-                "areaServed": "AS",
-                "availableLanguage": "Inggris"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
-                "areaServed": "Inggris Raya",
-                "availableLanguage": "Inggris"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
-                "areaServed": "Australia",
-                "availableLanguage": "Inggris"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -293,7 +326,7 @@ doc.Save(dataDir+ "No_Graphics_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -305,5 +338,3 @@ doc.Save(dataDir+ "No_Graphics_out.pdf");
     }
 }
 </script>
-```
-

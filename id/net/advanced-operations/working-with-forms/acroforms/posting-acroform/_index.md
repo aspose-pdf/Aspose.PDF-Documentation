@@ -1,10 +1,12 @@
 ---
-title: Posting AcroForm Data
-linktitle: Posting AcroForm
+title: Mengirim Data AcroForm
+linktitle: Mengirim AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /id/net/posting-acroform-data/
-description: Anda dapat mengimpor dan mengekspor data formulir ke dan dari file XML dengan namespace Aspose.Pdf.Facades di Aspose.PDF untuk .NET.
+description: Anda dapat mengimpor dan mengekspor data formulir ke dan dari file XML dengan namespace Aspose.Pdf.Facades di Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Posting AcroForm Data",
-    "alternativeHeadline": "Import and Export form data to XML file",
+    "alternativeHeadline": "Post AcroForm Data",
+    "abstract": "Memperkenalkan fitur baru yang kuat di Aspose.PDF for .NET, kemampuan untuk mengirim data AcroForm. Fungsionalitas ini memungkinkan pengembang untuk tidak hanya membuat dan mengedit AcroForms tetapi juga dengan mudah mengimpor dan mengekspor data formulir ke file XML, meningkatkan kemampuan pemrosesan dan penyimpanan data dalam aplikasi.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, posting acroform data",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Posting AcroForm Data, Import and Export Form Data, Aspose.PDF for .NET, AcroForm Fields, Submit Button, External Web Page Integration, Form Data Posting, XML File Handling, FieldType.Text, Database Saving",
+    "wordcount": "400",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,46 +74,54 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/posting-acroform-data/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Anda dapat mengimpor dan mengekspor data formulir ke dan dari file XML dengan namespace Aspose.Pdf.Facades di Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-25",
+    "description": "Anda dapat mengimpor dan mengekspor data formulir ke dan dari file XML dengan namespace Aspose.Pdf.Facades di Aspose.PDF for .NET."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-AcroForm adalah tipe penting dari dokumen PDF. Anda tidak hanya dapat membuat dan mengedit AcroForm menggunakan [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace), tetapi juga mengimpor dan mengekspor data formulir ke dan dari file XML. Namespace Aspose.Pdf.Facades dalam Aspose.PDF untuk .NET memungkinkan Anda mengimplementasikan fitur lain dari AcroForm, yang membantu Anda mengirimkan data AcroForm ke halaman web eksternal. Halaman web ini kemudian membaca variabel post dan menggunakan data ini untuk pemrosesan lebih lanjut. Fitur ini berguna dalam kasus ketika Anda tidak hanya ingin menyimpan data dalam file PDF, melainkan Anda ingin mengirimkannya ke server Anda dan kemudian menyimpannya dalam database, dll.
+AcroForm adalah jenis penting dari dokumen PDF. Anda tidak hanya dapat membuat dan mengedit AcroForm menggunakan [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace), tetapi juga mengimpor dan mengekspor data formulir ke dan dari file XML. Namespace Aspose.Pdf.Facades di Aspose.PDF for .NET memungkinkan Anda untuk menerapkan fitur lain dari AcroForm, yang membantu Anda mengirim data AcroForm ke halaman web eksternal. Halaman web ini kemudian membaca variabel yang dikirim dan menggunakan data ini untuk pemrosesan lebih lanjut. Fitur ini berguna dalam kasus ketika Anda tidak hanya ingin menyimpan data di file PDF, tetapi juga ingin mengirimnya ke server Anda dan kemudian menyimpannya di database, dll.
 
 {{% /alert %}}
 
 ## Detail Implementasi
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Dalam artikel ini, kami telah mencoba membuat AcroForm menggunakan [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
-Dalam artikel ini, kami telah mencoba membuat AcroForm menggunakan [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
+Dalam artikel ini, kami telah mencoba untuk membuat AcroForm menggunakan [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace). Kami juga telah menambahkan tombol kirim dan mengatur URL targetnya. Potongan kode berikut menunjukkan kepada Anda bagaimana cara membuat formulir dan kemudian menerima data yang dikirim di halaman web.
 
 ```csharp
-// Buat sebuah instance dari kelas FormEditor dan ikat file pdf input dan output
-Aspose.Pdf.Facades.FormEditor editor = new Aspose.Pdf.Facades.FormEditor("input.pdf","output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAcroFormWithFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Buat field AcroForm - Saya hanya membuat dua field untuk kesederhanaan
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
+    // Create an instance of FormEditor class and bind input and output pdf files
+    using (var editor = new Aspose.Pdf.Facades.FormEditor(dataDir + "input.pdf", dataDir + "output.pdf"))
+    {
+        // Create AcroForm fields - I have created only two fields for simplicity
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
 
-// Tambahkan tombol submit dan atur URL target
-editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+        // Add a submit button and set target URL
+        editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
 
-// Simpan file pdf output
-editor.Save();
+        // Save PDF document
+        editor.Save();
+    }
+}
 ```
 
 {{% alert color="primary" %}}
 
-Potongan kode berikut menunjukkan bagaimana Anda menerima nilai yang diposting di halaman web target.
-Potongan kode berikut menunjukkan cara menerima nilai yang diposting di halaman web tujuan.
+Potongan kode berikut menunjukkan kepada Anda bagaimana menerima nilai yang dikirim di halaman web target. Dalam contoh ini, saya telah menggunakan halaman bernama Show.aspx, dan saya telah menambahkan kode satu baris sederhana di metode pemuatan halaman.
+
 {{% /alert %}}
 
 ```csharp
-// Tampilkan nilai yang diposting di halaman web tujuan
+// Show the posted values on the target web page
 Response.Write("Hello " + Request.Form.Get("firstname") + " " + Request.Form.Get("lastname"));
 ```
 
@@ -177,5 +188,3 @@ Response.Write("Hello " + Request.Form.Get("firstname") + " " + Request.Form.Get
     }
 }
 </script>
-
-

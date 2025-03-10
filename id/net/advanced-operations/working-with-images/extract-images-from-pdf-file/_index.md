@@ -2,31 +2,34 @@
 title: Ekstrak Gambar dari File PDF
 linktitle: Ekstrak Gambar
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/extract-images-from-pdf-file/
-description: Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan perpustakaan C#.
+description: Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Ekstrak Gambar dari File PDF",
-    "alternativeHeadline": "Cara mengekstrak Gambar dari PDF",
+    "headline": "Extract Images from PDF File",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Files",
+    "abstract": "Fitur baru untuk mengekstrak gambar dari file PDF menggunakan pustaka C# memungkinkan pengembang untuk dengan mudah mengambil dan menyimpan gambar yang terdapat dalam dokumen PDF. Dengan memanfaatkan pustaka Aspose.PDF, pengguna dapat mengakses gambar tertentu dari halaman mana pun dan mengekspornya dalam berbagai format, menyederhanakan alur kerja mereka untuk mengelola konten PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, ekstrak gambar dari pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Extract images, PDF file, C# library, images collection, extract images from PDF, XImage object, save extracted image, PDF manipulation, Aspose.PDF for .NET, document resources",
+    "wordcount": "227",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,38 +71,39 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/extract-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan perpustakaan C#."
+    "dateModified": "2024-11-26",
+    "description": "Bagian ini menunjukkan cara mengekstrak gambar dari file PDF menggunakan pustaka C#."
 }
 </script>
 
-Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) setiap halaman di koleksi [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, kemudian dapatkan gambar dari koleksi Images menggunakan indeks gambar yang spesifik.
+Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) dari setiap halaman dalam koleksi [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, ambil gambar dari koleksi Images menggunakan indeks tertentu dari gambar tersebut.
 
 Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Objek ini menyediakan metode Save yang dapat digunakan untuk menyimpan gambar yang diekstrak. Potongan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir+ "ExtractImages.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
+    {
+        // Extract a particular image
+        var xImage = document.Pages[1].Resources.Images[1];
+        using (var outputImage = new FileStream(dataDir + "ExtractedImage.jpg", FileMode.Create))
+        {
+            // Save PDF document image
+            xImage.Save(outputImage, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
 
-// Ekstrak gambar tertentu
-XImage xImage = pdfDocument.Pages[1].Resources.Images[1];
-
-FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create);
-
-// Simpan gambar keluaran
-xImage.Save(outputImage, ImageFormat.Jpeg);
-outputImage.Close();
-
-dataDir = dataDir + "ExtractImages_out.pdf";
-
-// Simpan file PDF yang telah diperbarui
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ExtractImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -128,21 +132,21 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -153,7 +157,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -165,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

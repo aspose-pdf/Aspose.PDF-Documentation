@@ -1,35 +1,40 @@
 ---
-title: Menambahkan Lampiran pada Dokumen PDF
-linktitle: Menambahkan Lampiran pada Dokumen PDF
+title: Menambahkan Lampiran ke Dokumen PDF
+linktitle: Menambahkan Lampiran ke Dokumen PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/add-attachment-to-pdf-document/
-description: Halaman ini menjelaskan cara menambahkan lampiran pada file PDF dengan library Aspose.PDF untuk .NET
+description: Halaman ini menjelaskan cara menambahkan lampiran ke file PDF dengan pustaka Aspose.PDF untuk .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/adding-to-a-pdf-document/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Menambahkan Lampiran pada Dokumen PDF",
-    "alternativeHeadline": "Cara menambahkan lampiran pada PDF",
+    "headline": "Adding Attachment to a PDF document",
+    "alternativeHeadline": "Easily Attach Files to Your PDF Documents",
+    "abstract": "Aspose.PDF for .NET sekarang menawarkan cara yang efisien untuk meningkatkan dokumen PDF Anda dengan memungkinkan pengguna untuk dengan mudah menambahkan berbagai lampiran, termasuk file teks dan gambar. Fungsionalitas ini menyederhanakan proses menyematkan informasi tambahan dalam PDF, memastikan data penting dapat diakses dengan mudah dalam dokumen Anda. Optimalkan manajemen dokumen Anda dengan fitur kuat ini dan tingkatkan pengalaman pengguna dengan menjaga semua sumber daya yang relevan bersama-sama",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen PDF",
-    "keywords": "pdf, c#, lampiran dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Adding attachments to PDF, PDF file types, Aspose.PDF for .NET, FileSpecification object, Document object, EmbeddedFiles collection, PDF document manipulation, C# PDF library, PDF attachment functionality, Aspose.Drawing integration",
+    "wordcount": "309",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,39 +76,43 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-attachment-to-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Halaman ini menjelaskan cara menambahkan lampiran pada file PDF dengan library Aspose.PDF untuk .NET"
+    "dateModified": "2024-11-25",
+    "description": "Halaman ini menjelaskan cara menambahkan lampiran ke file PDF dengan pustaka Aspose.PDF untuk .NET"
 }
 </script>
-Lampiran dapat mengandung berbagai informasi dan dapat berupa berbagai jenis file. Artikel ini menjelaskan cara menambahkan lampiran ke file PDF.
 
-Potongan kode berikut juga berfungsi dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
+Lampiran dapat berisi berbagai informasi dan dapat berupa berbagai jenis file. Artikel ini menjelaskan cara menambahkan lampiran ke file PDF.
+
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/net/drawing/).
 
 1. Buat proyek C# baru.
-1. Tambahkan referensi ke Aspose.PDF DLL.
+1. Tambahkan referensi ke DLL Aspose.PDF.
 1. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Buat objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) dengan file yang Anda tambahkan, dan deskripsi file.
-1. Tambahkan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) ke koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dengan metode Add koleksi tersebut.
+1. Tambahkan objek [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) ke koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), dengan metode Add koleksi tersebut.
 
-Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran dalam file PDF.
-Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran dalam file PDF.
+Koleksi [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) berisi semua lampiran dalam file PDF. Potongan kode berikut menunjukkan cara menambahkan lampiran dalam dokumen PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddEmbeddedFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "AddAttachment.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"))
+    {
+        // Setup new file to be added as attachment
+        Aspose.Pdf.FileSpecification fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "test.txt", "Sample text file");
 
-// Siapkan file baru untuk ditambahkan sebagai lampiran
-FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "File teks contoh");
+        // Add attachment to document's attachment collection
+        document.EmbeddedFiles.Add(fileSpecification);
 
-// Tambahkan lampiran ke koleksi lampiran dokumen
-pdfDocument.EmbeddedFiles.Add(fileSpecification);
-
-// Simpan dokumen yang telah diperbarui
-pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AddAnnotations_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -169,5 +178,3 @@ pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
     }
 }
 </script>
-
-

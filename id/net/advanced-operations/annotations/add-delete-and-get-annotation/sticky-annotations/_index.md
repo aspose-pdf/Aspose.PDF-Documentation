@@ -1,10 +1,12 @@
 ---
-title: Anotasi Sticky PDF menggunakan C#
-linktitle: Anotasi Sticky
+title: Anotasi Lengket PDF menggunakan C#
+linktitle: Anotasi Lengket
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /id/net/sticky-annotations/
-description: Topik ini tentang anotasi sticky, sebagai contoh kami menampilkan Anotasi Watermark dalam teks.
+description: Pelajari cara membuat anotasi lengket, seperti catatan dan sorotan, dalam PDF menggunakan Aspose.PDF di .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Anotasi Sticky PDF menggunakan C#",
-    "alternativeHeadline": "Cara Menambahkan Anotasi Sticky di PDF",
+    "headline": "PDF sticky Annotations using C#",
+    "alternativeHeadline": "Add Sticky Watermark Annotations to PDF with C#",
+    "abstract": "Memperkenalkan fitur Anotasi Lengket PDF baru di C#, yang memungkinkan pengguna untuk membuat dan menyesuaikan anotasi watermark langsung di dalam dokumen PDF. Fungsionalitas ini mendukung pengaturan posisi teks tertentu, mengontrol opasitas, dan secara efisien menggunakan kembali gambar, meningkatkan presentasi dokumen secara keseluruhan sambil mengoptimalkan ukuran file",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, anotasi sticky, anotasi watermark",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "PDF sticky annotations, C# sticky annotations, Watermark Annotation, Aspose.PDF.Drawing, PDF document generation, opacity property, XImageCollection, optimize PDF size",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,87 +74,118 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/sticky-annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Topik ini tentang anotasi sticky, sebagai contoh kami menampilkan Anotasi Watermark dalam teks."
+    "dateModified": "2024-11-25",
+    "description": "Topik ini tentang anotasi lengket, sebagai contoh kami menunjukkan Anotasi Watermark dalam teks."
 }
 </script>
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
 ## Tambahkan Anotasi Watermark
 
-Anotasi watermark harus digunakan untuk mewakili grafis yang harus dicetak dengan ukuran dan posisi tetap di halaman, terlepas dari dimensi halaman yang dicetak.
+Anotasi watermark harus digunakan untuk mewakili grafik yang akan dicetak pada ukuran dan posisi tetap di halaman, terlepas dari dimensi halaman yang dicetak.
 
-Anda dapat menambahkan Teks Watermark menggunakan [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) pada posisi tertentu dari halaman PDF. Kegelapan Watermark juga dapat dikontrol dengan menggunakan properti kegelapan.
+Anda dapat menambahkan Teks Watermark menggunakan [WatermarkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/watermarkannotation) pada posisi tertentu di halaman PDF. Opasitas Watermark juga dapat dikontrol dengan menggunakan properti opasitas.
 
 Silakan periksa potongan kode berikut untuk menambahkan WatermarkAnnotation.
 
 ```csharp
- //Muat Dokumen
-Aspose.PDF.Document doc = new Aspose.PDF.Document("source.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-//Muat objek Halaman untuk menambahkan Anotasi
-Page page = doc.Pages[1];
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "source.pdf"))
+    {
+        // Load Page object to add Annotation
+        var page = document.Pages[1];
 
-//Buat Anotasi
-WatermarkAnnotation wa = new WatermarkAnnotation(page, new Aspose.PDF.Rectangle(100, 500, 400, 600));
+        // Create Watermark Annotation
+        var wa = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 400, 600));
 
-//Tambahkan anotasi ke dalam koleksi Anotasi Halaman
-page.Annotations.Add(wa);
+        // Add annotation into Annotation collection of Page
+        page.Annotations.Add(wa);
 
-//Buat TextState untuk pengaturan Font
-Aspose.PDF.Text.TextState ts = new Aspose.PDF.Text.TextState();
+        // Create TextState for Font settings
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.ForegroundColor = Aspose.Pdf.Color.Blue;
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Times New Roman");
+        ts.FontSize = 32;
 
-ts.ForegroundColor = Aspose.PDF.Color.Blue;
-ts.Font = FontRepository.FindFont("Times New Roman");
+        // Set opacity level of Annotation Text
+        wa.Opacity = 0.5;
 
-ts.FontSize = 32;
+        // Add Text in Annotation
+        wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
 
-//Atur tingkat kegelapan teks Anotasi
-
-wa.Opacity = 0.5;
-//Tambahkan Teks dalam Anotasi
-
-wa.SetTextAndState(new string[] { "HELLO", "Line 1", "Line 2" }, ts);
-
-//Simpan Dokumen
-doc.Save("Output.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotation_out.pdf");
+    }
+}
 ```
-## Menambahkan Referensi dari satu Gambar berulang kali dalam Dokumen PDF
 
-Terkadang kita memiliki kebutuhan untuk menggunakan gambar yang sama beberapa kali dalam dokumen PDF. Menambahkan instansi baru meningkatkan ukuran dokumen PDF hasilnya. Kami telah menambahkan metode baru XImageCollection.Add(XImage) di Aspose.PDF untuk .NET 17.1.0. Metode ini memungkinkan untuk menambahkan referensi ke objek PDF yang sama seperti gambar asli yang mengoptimalkan ukuran Dokumen PDF.
+## Tambahkan Referensi dari Satu Gambar Beberapa Kali dalam Dokumen PDF
+
+Terkadang kita memiliki kebutuhan untuk menggunakan gambar yang sama beberapa kali dalam dokumen PDF. Menambahkan instance baru meningkatkan dokumen PDF yang dihasilkan. Kami telah menambahkan metode baru XImageCollection.Add(XImage) di Aspose.PDF for .NET 17.1.0. Metode ini memungkinkan untuk menambahkan referensi ke objek PDF yang sama sebagai gambar asli yang mengoptimalkan ukuran Dokumen PDF.
 
 ```csharp
- Aspose.PDF.Rectangle imageRectangle = new Aspose.PDF.Rectangle(0, 0, 30, 15);
-
-using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarkAnnotationWithImage()
 {
-    using (var imageStream = File.Open("icon.png", FileMode.Open))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Define the rectangle for the image
+    var imageRectangle = new Aspose.Pdf.Rectangle(0, 0, 30, 15);
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        XImage image = null;
-        foreach (Page page in document.Pages)
+        // Open the image stream
+        using (var imageStream = File.Open(dataDir + "icon.png", FileMode.Open))
         {
-            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.Rect);
-            XForm form = annotation.Appearance["N"];
-            form.BBox = page.Rect;
-            string name;
-            if (image == null)
+            XImage image = null;
+
+            // Iterate through each page in the document
+            foreach (Page page in document.Pages)
             {
-                name = form.Resources.Images.Add(imageStream);
-                image = form.Resources.Images[name];
+                // Create a Watermark Annotation
+                var annotation = new Aspose.Pdf.Annotations.WatermarkAnnotation(page, page.Rect);
+                XForm form = annotation.Appearance["N"];
+                form.BBox = page.Rect;
+
+                string name;
+
+                // Add the image to the form resources if it hasn't been added yet
+                if (image == null)
+                {
+                    name = form.Resources.Images.Add(imageStream);
+                    image = form.Resources.Images[name];
+                }
+                else
+                {
+                    name = form.Resources.Images.Add(image);
+                }
+
+                // Add operators to the form contents to place the image
+                form.Contents.Add(new Aspose.Pdf.Operators.GSave());
+                form.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(new Aspose.Pdf.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
+                form.Contents.Add(new Aspose.Pdf.Operators.Do(name));
+                form.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+                // Add the annotation to the page
+                page.Annotations.Add(annotation, false);
+
+                // Adjust the image rectangle size for the next iteration
+                imageRectangle = new Aspose.Pdf.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
             }
-            else
-            {
-                name = form.Resources.Images.Add(image);
-            }
-            form.Contents.Add(new Operator.GSave());
-            form.Contents.Add(new Operator.ConcatenateMatrix(new Aspose.PDF.Matrix(imageRectangle.Width, 0, 0, imageRectangle.Height, 0, 0)));
-            form.Contents.Add(new Operator.Do(name));
-            form.Contents.Add(new Operator.GRestore());
-            page.Annotations.Add(annotation, false);
-            imageRectangle = new Aspose.PDF.Rectangle(0, 0, imageRectangle.Width * 1.01, imageRectangle.Height * 1.01);
         }
+
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarkAnnotationWithImage_out.pdf");
     }
-    document.Save("output.pdf");
 }
 ```
 
@@ -181,21 +215,21 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -206,7 +240,7 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -218,5 +252,3 @@ using (Aspose.PDF.Document document = new Aspose.PDF.Document("input.pdf"))
     }
 }
 </script>
-```
-

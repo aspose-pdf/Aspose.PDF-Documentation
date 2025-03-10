@@ -1,35 +1,39 @@
 ---
-title: Replace Text in PDF
-linktitle: Replace Text in PDF
+title: Ganti Teks di PDF
+linktitle: Ganti Teks di PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /id/net/replace-text-in-pdf/
-description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari perpustakaan Aspose.PDF untuk .NET.
+description: Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari Aspose.PDF for .NET library.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+aliases:
+    - /net/replace-text-in-a-pdf-document/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Replace Text in PDF",
-    "alternativeHeadline": "Replacing and Removing Text in PDF File",
+    "alternativeHeadline": "Efficiently Modify Text Across PDF Pages with Ease",
+    "abstract": "Fitur Ganti Teks di PDF dalam Aspose.PDF for .NET memungkinkan pengguna untuk dengan efisien menemukan dan mengganti teks di seluruh dokumen PDF atau dalam wilayah halaman tertentu. Ini mendukung kemampuan lanjutan, termasuk penggantian teks berdasarkan ekspresi reguler, pengaturan ulang konten halaman secara otomatis setelah penggantian, dan kemampuan untuk menghapus font yang tidak terpakai, meningkatkan pengalaman pengeditan dokumen.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, dreplace text, remove text",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2744",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,414 +75,481 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/replace-text-in-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari perpustakaan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-26",
+    "description": "Pelajari lebih lanjut tentang berbagai cara mengganti dan menghapus teks dari Aspose.PDF for .NET library."
 }
 </script>
 
-Kode snippet berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
 
-## Mengganti Teks di semua halaman dokumen PDF
+## Ganti Teks di semua halaman dokumen PDF
 
 {{% alert color="primary" %}}
 
-Anda dapat mencoba untuk menemukan dan mengganti teks dalam dokumen menggunakan Aspose.PDF dan mendapatkan hasilnya secara online di [link](https://products.aspose.app/pdf/redaction) ini
+Anda dapat mencoba menemukan dan mengganti teks dalam dokumen menggunakan Aspose.PDF dan mendapatkan hasilnya secara online di [tautan ini](https://products.aspose.app/pdf/redaction)
 
 {{% /alert %}}
 
-Untuk mengganti teks di semua halaman dokumen PDF, Anda pertama-tama perlu menggunakan TextFragmentAbsorber untuk menemukan frase tertentu yang ingin Anda ganti. Setelah itu, Anda perlu melewati semua TextFragments untuk mengganti teks dan mengubah atribut lainnya. Setelah Anda melakukan itu, Anda hanya perlu menyimpan PDF keluaran menggunakan metode Save dari objek Document. Kode snippet berikut menunjukkan cara mengganti teks di semua halaman dokumen PDF.
+Untuk mengganti teks di semua halaman dokumen PDF, Anda pertama-tama perlu menggunakan TextFragmentAbsorber untuk menemukan frasa tertentu yang ingin Anda ganti. Setelah itu, Anda perlu melalui semua TextFragments untuk mengganti teks dan mengubah atribut lainnya. Setelah Anda melakukannya, Anda hanya perlu menyimpan PDF keluaran menggunakan metode Save dari objek Document. Potongan kode berikut menunjukkan cara mengganti teks di semua halaman dokumen PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "ReplaceTextAll.pdf");
-
-// Buat objek TextAbsorber untuk menemukan semua contoh frase pencarian masukan
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("text");
-
-// Terima absorber untuk semua halaman
-pdfDocument.Pages.Accept(textFragmentAbsorber);
-
-// Dapatkan fragmen teks yang diekstrak
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Loop melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextInAllPages()
 {
-    // Perbarui teks dan properti lainnya
-    textFragment.Text = "TEXT";
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-dataDir = dataDir + "ReplaceTextAll_out.pdf";
-// Simpan dokumen PDF hasil.
-pdfDocument.Save(dataDir);
-```
-## Mengganti Teks di Area Halaman Tertentu
-
-Untuk mengganti teks di area halaman tertentu, pertama-tama kita perlu menginstansiasi objek TextFragmentAbsorber, menentukan area halaman menggunakan properti TextSearchOptions.Rectangle dan kemudian mengulang semua TextFragments untuk mengganti teks tersebut. Setelah operasi ini selesai, kita hanya perlu menyimpan PDF keluaran menggunakan metode Save dari objek Document. Potongan kode berikut menunjukkan cara mengganti teks di semua halaman dokumen PDF.
-
-```csharp
-// memuat file PDF
-Aspose.PDF.Document pdf  = new Aspose.PDF.Document("c:/pdftest/programaticallyproducedpdf.pdf");
-
-// menginstansiasi objek TextFragment Absorber
-Aspose.PDF.Text.TextFragmentAbsorber TextFragmentAbsorberAddress = new Aspose.PDF.Text.TextFragmentAbsorber();
-
-// mencari teks dalam batas halaman
-TextFragmentAbsorberAddress.TextSearchOptions.LimitToPageBounds = true;
-
-// menentukan area halaman untuk Opsi Pencarian Teks
-TextFragmentAbsorberAddress.TextSearchOptions.Rectangle = new Aspose.PDF.Rectangle(100, 100, 200, 200);
-
-// mencari teks dari halaman pertama file PDF
-pdf.Pages[1].Accept(TextFragmentAbsorberAddress);
-
-// mengulang setiap TextFragment
-foreach( Aspose.PDF.Text.TextFragment tf in TextFragmentAbsorberAddress.TextFragments)
-{
-    // memperbarui teks menjadi karakter kosong
-    tf.Text = "";
-}
-
-// menyimpan file PDF yang telah diperbarui setelah penggantian teks
-pdf.Save("c:/pdftest/TextUpdated.pdf");
-```
-## Mengganti Teks Berdasarkan Ekspresi Reguler
-
-Jika Anda ingin mengganti beberapa frasa berdasarkan ekspresi reguler, Anda pertama-tama perlu menemukan semua frasa yang cocok dengan ekspresi reguler tertentu menggunakan TextFragmentAbsorber. Anda harus memasukkan ekspresi reguler sebagai parameter ke konstruktor TextFragmentAbsorber. Anda juga perlu membuat objek TextSearchOptions yang menentukan apakah ekspresi reguler digunakan atau tidak. Setelah Anda mendapatkan frasa yang cocok dalam TextFragments, Anda perlu mengulang semuanya dan memperbaruinya sesuai kebutuhan. Akhirnya, Anda perlu menyimpan PDF yang telah diperbarui menggunakan metode Save dari objek Dokumen. Potongan kode berikut menunjukkan cara mengganti teks berdasarkan ekspresi reguler.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "SearchRegularExpressionPage.pdf");
-
-// Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // Seperti 1999-2000
-
-// Tetapkan opsi pencarian teks untuk menentukan penggunaan ekspresi reguler
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.TextSearchOptions = textSearchOptions;
-
-// Terima absorber untuk satu halaman
-pdfDocument.Pages[1].Accept(textFragmentAbsorber);
-
-// Dapatkan fragmen teks yang diekstrak
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.TextFragments;
-
-// Ulangi melalui fragmen
-foreach (TextFragment textFragment in textFragmentCollection)
-{
-    // Perbarui teks dan properti lainnya
-    textFragment.Text = "Frasa Baru";
-    // Tetapkan ke instansi dari sebuah objek.
-    textFragment.TextState.Font = FontRepository.FindFont("Verdana");
-    textFragment.TextState.FontSize = 22;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
-    textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-}
-dataDir = dataDir + "ReplaceTextonRegularExpression_out.pdf";
-pdfDocument.Save(dataDir);
-```
-## Mengganti Font dalam File PDF yang Ada
-
-Aspose.PDF untuk .NET mendukung kemampuan untuk menggantikan teks dalam dokumen PDF. Namun, terkadang Anda memiliki kebutuhan untuk hanya mengganti font yang digunakan di dalam dokumen PDF. Jadi, alih-alih mengganti teks, hanya font yang digunakan yang diganti. Salah satu overload dari konstruktor TextFragmentAbsorber menerima objek TextEditOptions sebagai argumen dan kita dapat menggunakan nilai RemoveUnusedFonts dari enumerasi TextEditOptions.FontReplace untuk memenuhi kebutuhan kita. Potongan kode berikut menunjukkan cara mengganti font di dalam dokumen PDF.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Muat file PDF sumber
-Document pdfDocument = new Document(dataDir + "ReplaceTextPage.pdf");
-// Cari fragmen teks dan atur opsi edit sebagai hapus font yang tidak digunakan
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-
-// Terima absorber untuk semua halaman
-pdfDocument.Pages.Accept(absorber);
-// Melintasi semua Fragmen Teks
-foreach (TextFragment textFragment in absorber.TextFragments)
-{
-    // Jika nama font adalah ArialMT, ganti nama font dengan Arial
-    if (textFragment.TextState.Font.FontName == "Arial,Bold")
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextAll.pdf"))
     {
-        textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    }
+        // Create TextAbsorber object to find all instances of the input search phrase
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("text");
 
-}
+        // Accept the absorber for all the pages
+        document.Pages.Accept(absorber);
 
-dataDir = dataDir + "ReplaceFonts_out.pdf";
-// Simpan dokumen yang telah diperbarui
-pdfDocument.Save(dataDir);
-```
-## Penggantian Teks Harus Secara Otomatis Mengatur Ulang Konten Halaman
+        // Get the extracted text fragments
+        var textFragmentCollection = absorber.TextFragments;
 
-Aspose.PDF untuk .NET mendukung fitur untuk mencari dan mengganti teks di dalam file PDF. Namun, baru-baru ini beberapa pelanggan mengalami masalah selama penggantian teks ketika TextFragment tertentu diganti dengan konten yang lebih kecil dan beberapa spasi ekstra ditampilkan di PDF hasil atau jika TextFragment diganti dengan string yang lebih panjang, maka kata-kata tumpang tindih dengan konten halaman yang ada. Oleh karena itu, kebutuhan muncul untuk memperkenalkan mekanisme yang sekali teks di dalam dokumen PDF diganti, kontennya harus diatur ulang.
+        // Loop through the fragments
+        foreach (var textFragment in textFragmentCollection)
+        {
+            // Update text and other properties
+            textFragment.Text = "TEXT";
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+            textFragment.TextState.FontSize = 22;
+            textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+            textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        }
 
-Untuk mengatasi skenario yang disebutkan di atas, Aspose.PDF untuk .NET telah ditingkatkan sehingga tidak ada masalah seperti itu muncul ketika mengganti teks di dalam file PDF. Potongan kode berikut menunjukkan cara mengganti teks di dalam file PDF dan konten halaman harus diatur ulang secara otomatis.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Muat file PDF sumber
-Document doc = new Document(dataDir + "ExtractTextPage.pdf");
-// Buat objek TextFragment Absorber dengan ekspresi reguler
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
-doc.Pages.Accept(textFragmentAbsorber);
-// Ganti setiap TextFragment
-foreach (TextFragment textFragment in textFragmentAbsorber.TextFragments)
-{
-    // Atur font dari fragmen teks yang diganti
-    textFragment.TextState.Font = FontRepository.FindFont("Arial");
-    // Atur ukuran font
-    textFragment.TextState.FontSize = 12;
-    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
-    // Ganti teks dengan string yang lebih besar dari placeholder
-    textFragment.Text = "Ini adalah String Lebih Besar untuk Pengujian masalah ini";
-}
-dataDir = dataDir + "RearrangeContentsUsingTextReplacement_out.pdf";
-// Simpan PDF hasil
-doc.Save(dataDir);
-```
-## Rendering Simbol yang Dapat Diganti Saat Pembuatan PDF
-
-Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat digantikan dengan konten yang sesuai pada saat runtime. Simbol yang dapat diganti yang saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p`, `\n`, `\r`. `$p` dan `$P` digunakan untuk menangani penomoran halaman pada saat runtime. `$p` digantikan dengan nomor halaman tempat kelas Paragraf saat ini berada. `$P` digantikan dengan jumlah total halaman dalam dokumen. Saat menambahkan `TextFragment` ke koleksi paragraf dokumen PDF, ini tidak mendukung umpan baris di dalam teks. Namun, untuk menambahkan teks dengan umpan baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
-
-- gunakan "\r\n" atau Environment.NewLine dalam TextFragment alih-alih "\n" tunggal;
-- buat objek TextParagraph. Ini akan menambahkan teks dengan pemisahan baris;
-- tambahkan TextFragment dengan TextParagraph.AppendLine;
-- tambahkan TextParagraph dengan TextBuilder.AppendParagraph.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Aspose.Pdf.Document pdfApplicationDoc = new Aspose.Pdf.Document();
-Aspose.Pdf.Page applicationFirstPage = (Aspose.Pdf.Page)pdfApplicationDoc.Pages.Add();
-
-// Inisialisasi TextFragment baru dengan teks yang mengandung penanda baris baru yang diperlukan
-Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Nama Pemohon: " + Environment.NewLine + " Joe Smoe");
-
-// Atur properti fragmen teks jika perlu
-textFragment.TextState.FontSize = 12;
-textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
-textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
-textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
-
-// Buat objek TextParagraph
-TextParagraph par = new TextParagraph();
-
-// Tambahkan TextFragment baru ke paragraf
-par.AppendLine(textFragment);
-
-// Atur posisi paragraf
-par.Position = new Aspose.Pdf.Text.Position(100, 600);
-
-// Buat objek TextBuilder
-TextBuilder textBuilder = new TextBuilder(applicationFirstPage);
-// Tambahkan TextParagraph menggunakan TextBuilder
-textBuilder.AppendParagraph(par);
-
-dataDir = dataDir + "RenderingReplaceableSymbols_out.pdf";
-pdfApplicationDoc.Save(dataDir);
-```
-## Simbol yang Dapat Diganti di Area Header/Footer
-
-Simbol yang dapat diganti juga dapat ditempatkan di dalam bagian Header/Footer dari file PDF. Silakan lihat potongan kode berikut untuk detail tentang cara menambahkan simbol yang dapat diganti di bagian footer.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-Document doc = new Document();
-Page page = doc.Pages.Add();
-
-MarginInfo marginInfo = new MarginInfo();
-marginInfo.Top = 90;
-marginInfo.Bottom = 50;
-marginInfo.Left = 50;
-marginInfo.Right = 50;
-// Tetapkan instance marginInfo ke properti Margin dari sec1.PageInfo
-page.PageInfo.Margin = marginInfo;
-
-HeaderFooter hfFirst = new HeaderFooter();
-page.Header = hfFirst;
-hfFirst.Margin.Left = 50;
-hfFirst.Margin.Right = 50;
-
-// Instansiasi paragraf Teks yang akan menyimpan konten untuk ditampilkan sebagai header
-TextFragment t1 = new TextFragment("judul laporan");
-t1.TextState.Font = FontRepository.FindFont("Arial");
-t1.TextState.FontSize = 16;
-t1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t1.TextState.FontStyle = FontStyles.Bold;
-t1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t1.TextState.LineSpacing = 5f;
-hfFirst.Paragraphs.Add(t1);
-
-TextFragment t2 = new TextFragment("Nama_Laporan");
-t2.TextState.Font = FontRepository.FindFont("Arial");
-t2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
-t2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-t2.TextState.LineSpacing = 5f;
-t2.TextState.FontSize = 12;
-hfFirst.Paragraphs.Add(t2);
-
-// Membuat objek HeaderFooter untuk bagian tersebut
-HeaderFooter hfFoot = new HeaderFooter();
-// Setel objek HeaderFooter ke footer ganjil & genap
-page.Footer = hfFoot;
-hfFoot.Margin.Left = 50;
-hfFoot.Margin.Right = 50;
-
-// Tambahkan paragraf teks yang berisi nomor halaman saat ini dari jumlah total halaman
-TextFragment t3 = new TextFragment("Dibuat pada tanggal tes");
-TextFragment t4 = new TextFragment("nama laporan ");
-TextFragment t5 = new TextFragment("Halaman $p dari $P");
-
-// Instansiasi objek tabel
-Table tab2 = new Table();
-
-// Tambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
-hfFoot.Paragraphs.Add(tab2);
-
-// Setel lebar kolom tabel
-tab2.ColumnWidths = "165 172 165";
-
-// Buat baris dalam tabel lalu sel dalam baris
-Row row3 = tab2.Rows.Add();
-
-row3.Cells.Add();
-row3.Cells.Add();
-row3.Cells.Add();
-
-// Setel perataan vertikal teks sebagai terpusat
-row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
-row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
-row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
-
-row3.Cells[0].Paragraphs.Add(t3);
-row3.Cells[1].Paragraphs.Add(t4);
-row3.Cells[2].Paragraphs.Add(t5);
-
-Table table = new Table();
-
-table.ColumnWidths = "33% 33% 34%";
-table.DefaultCellPadding = new MarginInfo();
-table.DefaultCellPadding.Top = 10;
-table.DefaultCellPadding.Bottom = 10;
-
-// Tambahkan tabel dalam koleksi paragraf dari bagian yang diinginkan
-page.Paragraphs.Add(table);
-
-// Setel batas sel default menggunakan objek BorderInfo
-table.DefaultCellBorder = new BorderInfo(BorderSide.All, 0.1f);
-
-// Setel batas tabel menggunakan objek BorderInfo yang disesuaikan lainnya
-table.Border = new BorderInfo(BorderSide.All, 1f);
-
-table.RepeatingRowsCount = 1;
-
-// Buat baris dalam tabel lalu sel dalam baris
-Row row1 = table.Rows.Add();
-
-row1.Cells.Add("kol1");
-row1.Cells.Add("kol2");
-row1.Cells.Add("kol3");
-const string CRLF = "\r\n";
-for (int i = 0; i <= 10; i++)
-{
-    Row row = table.Rows.Add();
-    row.IsRowBroken = true;
-    for (int c = 0; c <= 2; c++)
-    {
-        Cell c1;
-        if (c == 2)
-            c1 = row.Cells.Add("Aspose.Total untuk Java adalah kompilasi dari setiap komponen Java yang ditawarkan oleh Aspose. Ini dikompilasi pada" + CRLF + "dasar harian untuk memastikan itu berisi versi terbaru dari masing-masing komponen Java kami. " + CRLF + "dasar harian untuk memastikan itu berisi versi terbaru dari masing-masing komponen Java kami. " + CRLF + "Menggunakan Aspose.Total untuk pengembang Java dapat membuat berbagai aplikasi.");
-        else
-            c1 = row.Cells.Add("item1" + c);
-        c1.Margin = new MarginInfo();
-        c1.Margin.Left = 30;
-        c1.Margin.Top = 10;
-        c1.Margin.Bottom = 10;
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTextInAllPages_out.pdf");
     }
 }
-
-dataDir = dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf";
-doc.Save(dataDir);
 ```
+
+## Ganti Teks di wilayah halaman tertentu
+
+Untuk mengganti teks di wilayah halaman tertentu, pertama, kita perlu menginstansiasi objek TextFragmentAbsorber, menentukan wilayah halaman menggunakan properti TextSearchOptions.Rectangle dan kemudian iterasi melalui semua TextFragments untuk mengganti teks. Setelah operasi ini selesai, kita hanya perlu menyimpan PDF keluaran menggunakan metode Save dari objek Document. Potongan kode berikut menunjukkan cara mengganti teks di semua halaman dokumen PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextInParticularPageRegion()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "programaticallyproducedpdf.pdf"))
+    {
+        // instantiate TextFragment Absorber object
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+
+        // search text within page bound
+        absorber.TextSearchOptions.LimitToPageBounds = true;
+
+        // specify the page region for TextSearch Options
+        absorber.TextSearchOptions.Rectangle = new Aspose.Pdf.Rectangle(100, 100, 200, 200);
+
+        // search text from first page of PDF file
+        document.Pages[1].Accept(absorber);
+
+        // iterate through individual TextFragment
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            // update text to blank characters
+            textFragment.Text = "";
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTextInParticularPageRegion_out.pdf");
+    }
+}
+```
+
+## Ganti Teks Berdasarkan Ekspresi Reguler
+
+Jika Anda ingin mengganti beberapa frasa berdasarkan ekspresi reguler, Anda pertama-tama perlu menemukan semua frasa yang cocok dengan ekspresi reguler tertentu menggunakan TextFragmentAbsorber. Anda harus melewatkan ekspresi reguler sebagai parameter ke konstruktor TextFragmentAbsorber. Anda juga perlu membuat objek TextSearchOptions yang menentukan apakah ekspresi reguler sedang digunakan atau tidak. Setelah Anda mendapatkan frasa yang cocok dalam TextFragments, Anda perlu melakukan loop melalui semuanya dan memperbarui sesuai kebutuhan. Akhirnya, Anda perlu menyimpan PDF yang diperbarui menggunakan metode Save dari objek Document. Potongan kode berikut menunjukkan cara mengganti teks berdasarkan ekspresi reguler.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTextBasedOnARegularExpression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchRegularExpressionPage.pdf"))
+    {
+
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("\\d{4}-\\d{4}"); // Like 1999-2000
+
+        // Set text search option to specify regular expression usage
+        absorber.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(true);
+
+        // Accept the absorber for a single page
+        document.Pages[1].Accept(absorber);
+
+        // Get the extracted text fragments
+        var collection = absorber.TextFragments;
+
+        // Loop through the fragments
+        foreach (var textFragment in collection)
+        {
+            // Update text and other properties
+            textFragment.Text = "New Phrase";
+            // Set to an instance of an object.
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Verdana");
+            textFragment.TextState.FontSize = 22;
+            textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Blue);
+            textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTextonRegularExpression_out.pdf");
+    }
+}
+```
+
+## Ganti font di file PDF yang ada
+
+Aspose.PDF for .NET mendukung kemampuan untuk mengganti teks di dokumen PDF. Namun, terkadang Anda memiliki kebutuhan untuk hanya mengganti font yang digunakan di dalam dokumen PDF. Jadi alih-alih mengganti teks, hanya font yang digunakan yang diganti. Salah satu overload dari konstruktor TextFragmentAbsorber menerima objek TextEditOptions sebagai argumen dan kita dapat menggunakan nilai RemoveUnusedFonts dari enumerasi TextEditOptions.FontReplace untuk memenuhi kebutuhan kita. Potongan kode berikut menunjukkan cara mengganti font di dalam dokumen PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceFonts()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextPage.pdf"))
+    {
+        // Create text edit options
+        var options = new Aspose.Pdf.Text.TextEditOptions(Aspose.Pdf.Text.TextEditOptions.FontReplace.RemoveUnusedFonts);
+
+        // Search text fragments and set edit option as remove unused fonts
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber(options);
+
+        // Accept the absorber for all the pages
+        document.Pages.Accept(absorber);
+
+        // Traverse through all the TextFragments
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            // If the font name is ArialMT, replace font name with Arial
+            if (textFragment.TextState.Font.FontName == "Arial,Bold")
+            {
+                textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceFonts_out.pdf");
+    }
+}
+```
+
+## Penggantian Teks harus secara otomatis mengatur ulang Konten Halaman
+
+Aspose.PDF for .NET mendukung fitur untuk mencari dan mengganti teks di dalam file PDF. Namun baru-baru ini beberapa pelanggan mengalami masalah selama penggantian teks ketika TextFragment tertentu diganti dengan konten yang lebih kecil dan beberapa ruang ekstra ditampilkan di PDF hasil atau jika TextFragment diganti dengan string yang lebih panjang, maka kata-kata tumpang tindih dengan konten halaman yang ada. Jadi, kebutuhan adalah untuk memperkenalkan mekanisme yang setelah teks di dalam dokumen PDF diganti, konten harus diatur ulang.
+
+Untuk memenuhi skenario yang disebutkan di atas, Aspose.PDF for .NET telah ditingkatkan sehingga tidak ada masalah seperti itu muncul saat mengganti teks di dalam file PDF. Potongan kode berikut menunjukkan cara mengganti teks di dalam file PDF dan konten halaman harus diatur ulang secara otomatis.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AutomaticallyReArrangePageContents()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractTextPage.pdf"))
+    {
+        // Create TextFragment Absorber object with regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("[TextFragmentAbsorber,companyname,Textbox,50]");
+        document.Pages.Accept(absorber);
+
+        // Replace each TextFragment
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            // Set font of text fragment being replaced
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+            // Set font size
+            textFragment.TextState.FontSize = 12;
+            textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Navy;
+            // Replace the text with larger string than placeholder
+            textFragment.Text = "This is a Larger String for the Testing of this issue";
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AutomaticallyReArrangePageContents_out.pdf");
+    }
+}
+```
+
+## Merender Simbol yang Dapat Diganti selama pembuatan PDF
+
+Simbol yang dapat diganti adalah simbol khusus dalam string teks yang dapat diganti dengan konten yang sesuai pada waktu berjalan. Simbol yang dapat diganti saat ini didukung oleh Model Objek Dokumen baru dari namespace Aspose.PDF adalah `$P`, `$p,` `\n`, `\r`. `$p` digunakan untuk menangani penomoran halaman pada waktu berjalan. `$p` diganti dengan nomor halaman tempat kelas Paragraph saat ini berada. `$P` diganti dengan total jumlah halaman dalam dokumen. Saat menambahkan `TextFragment` ke koleksi paragraf dokumen PDF, tidak mendukung pemisahan baris di dalam teks. Namun untuk menambahkan teks dengan pemisahan baris, silakan gunakan `TextFragment` dengan `TextParagraph`:
+
+- Gunakan "\r\n" atau Environment.NewLine di TextFragment alih-alih "\n" tunggal.
+- Buat objek TextParagraph. Ini akan menambahkan teks dengan pemisahan baris.
+- Tambahkan TextFragment dengan TextParagraph.AppendLine.
+- Tambahkan TextParagraph dengan TextBuilder.AppendParagraph.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RenderingReplaceableSymbols()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        // Initialize new TextFragment with text containing required newline markers
+        Aspose.Pdf.Text.TextFragment textFragment = new Aspose.Pdf.Text.TextFragment("Applicant Name: " + Environment.NewLine + " Joe Smoe");
+
+        // Set text fragment properties if necessary
+        textFragment.TextState.FontSize = 12;
+        textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("TimesNewRoman");
+        textFragment.TextState.BackgroundColor = Aspose.Pdf.Color.LightGray;
+        textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+
+        // Create TextParagraph object
+        var par = new Aspose.Pdf.Text.TextParagraph();
+
+        // Add new TextFragment to paragraph
+        par.AppendLine(textFragment);
+
+        // Set paragraph position
+        par.Position = new Aspose.Pdf.Text.Position(100, 600);
+
+        // Create TextBuilder object
+        var textBuilder = new Aspose.Pdf.Text.TextBuilder(page);
+
+        // Add the TextParagraph using TextBuilder
+        textBuilder.AppendParagraph(par);
+
+        // Save PDF document
+        document.Save(dataDir + "RenderingReplaceableSymbols_out.pdf");
+    }
+}
+```
+
+## Simbol yang dapat diganti di area Header/Footer
+
+Simbol yang dapat diganti juga dapat ditempatkan di dalam bagian Header/Footer file PDF. Silakan lihat potongan kode berikut untuk detail tentang cara menambahkan simbol yang dapat diganti di bagian footer.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceableSymbolsInHeaderOrFooterArea()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+
+        // Create margin info
+        var marginInfo = new Aspose.Pdf.MarginInfo();
+        marginInfo.Top = 90;
+        marginInfo.Bottom = 50;
+        marginInfo.Left = 50;
+        marginInfo.Right = 50;
+        // Assign the marginInfo instance to Margin property of sec1.PageInfo
+        page.PageInfo.Margin = marginInfo;
+
+        var headerFooterFirst = new Aspose.Pdf.HeaderFooter();
+        page.Header = headerFooterFirst;
+        headerFooterFirst.Margin.Left = 50;
+        headerFooterFirst.Margin.Right = 50;
+
+        // Instantiate a Text paragraph that will store the content to show as header
+        var fragment1 = new Aspose.Pdf.Text.TextFragment("report title");
+        fragment1.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        fragment1.TextState.FontSize = 16;
+        fragment1.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
+        fragment1.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        fragment1.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        fragment1.TextState.LineSpacing = 5f;
+        headerFooterFirst.Paragraphs.Add(fragment1);
+
+        var fragment2 = new Aspose.Pdf.Text.TextFragment("Report_Name");
+        fragment2.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        fragment2.TextState.ForegroundColor = Aspose.Pdf.Color.Black;
+        fragment2.TextState.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        fragment2.TextState.LineSpacing = 5f;
+        fragment2.TextState.FontSize = 12;
+        headerFooterFirst.Paragraphs.Add(fragment2);
+
+        // Create a HeaderFooter object for the section
+        var headerFooterFoot = new Aspose.Pdf.HeaderFooter();
+
+        // Set the HeaderFooter object to odd & even footer
+        page.Footer = headerFooterFoot;
+        headerFooterFoot.Margin.Left = 50;
+        headerFooterFoot.Margin.Right = 50;
+
+        // Add a text paragraph containing current page number of total number of pages
+        var fragment3 = new Aspose.Pdf.Text.TextFragment("Generated on test date");
+        var fragment4 = new Aspose.Pdf.Text.TextFragment("report name ");
+        var fragment5 = new Aspose.Pdf.Text.TextFragment("Page $p of $P");
+
+        // Instantiate a table object
+        var table2 = new Aspose.Pdf.Table();
+
+        // Add the table in paragraphs collection of the desired section
+        headerFooterFoot.Paragraphs.Add(table2);
+
+        // Set with column widths of the table
+        table2.ColumnWidths = "165 172 165";
+
+        // Create rows in the table and then cells in the rows
+        var row3 = table2.Rows.Add();
+
+        row3.Cells.Add();
+        row3.Cells.Add();
+        row3.Cells.Add();
+
+        // Set the vertical allignment of the text as center alligned
+        row3.Cells[0].Alignment = Aspose.Pdf.HorizontalAlignment.Left;
+        row3.Cells[1].Alignment = Aspose.Pdf.HorizontalAlignment.Center;
+        row3.Cells[2].Alignment = Aspose.Pdf.HorizontalAlignment.Right;
+
+        row3.Cells[0].Paragraphs.Add(fragment3);
+        row3.Cells[1].Paragraphs.Add(fragment4);
+        row3.Cells[2].Paragraphs.Add(fragment5);
+
+        // Sec1.Paragraphs.Add(New Text("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL #$NP" + "Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a#$NL" + "daily basis to ensure it contains the most up to date versions of each of our Java components. #$NL " + "Using Aspose.Total for Java developers can create a wide range of applications. #$NL #$NL"))
+        var table = new Aspose.Pdf.Table();
+
+        table.ColumnWidths = "33% 33% 34%";
+        table.DefaultCellPadding = new Aspose.Pdf.MarginInfo();
+        table.DefaultCellPadding.Top = 10;
+        table.DefaultCellPadding.Bottom = 10;
+
+        // Add the table in paragraphs collection of the desired section
+        page.Paragraphs.Add(table);
+
+        // Set default cell border using BorderInfo object
+        table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1f);
+
+        // Set table border using another customized BorderInfo object
+        table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1f);
+
+        table.RepeatingRowsCount = 1;
+
+        // Create rows in the table and then cells in the rows
+        var row1 = table.Rows.Add();
+
+        row1.Cells.Add("col1");
+        row1.Cells.Add("col2");
+        row1.Cells.Add("col3");
+        const string CRLF = "\r\n";
+        for (int i = 0; i <= 10; i++)
+        {
+            var row = table.Rows.Add();
+            row.IsRowBroken = true;
+            for (int c = 0; c <= 2; c++)
+            {
+                Aspose.Pdf.Cell c1;
+                if (c == 2)
+                {
+                    c1 = row.Cells.Add("Aspose.Total for Java is a compilation of every Java component offered by Aspose. It is compiled on a" + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "daily basis to ensure it contains the most up to date versions of each of our Java components. " + CRLF + "Using Aspose.Total for Java developers can create a wide range of applications.");
+                }
+                else
+                {
+                    c1 = row.Cells.Add("item1" + c);
+                }
+                c1.Margin = new Aspose.Pdf.MarginInfo();
+                c1.Margin.Left = 30;
+                c1.Margin.Top = 10;
+                c1.Margin.Bottom = 10;
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceableSymbolsInHeaderFooter_out.pdf");
+    }
+}
+```
+
 ## Hapus Font yang Tidak Digunakan dari File PDF
 
-Aspose.PDF untuk .NET mendukung fitur untuk menyematkan font saat membuat dokumen PDF, serta kemampuan untuk menyematkan font dalam file PDF yang sudah ada. Mulai dari Aspose.PDF untuk .NET 7.3.0, ini juga memungkinkan Anda menghapus font duplikat atau yang tidak digunakan dari dokumen PDF.
+Aspose.PDF for .NET mendukung fitur untuk menyematkan font saat membuat dokumen PDF, serta kemampuan untuk menyematkan font di file PDF yang ada. Dari Aspose.PDF for .NET 7.3.0, ini juga memungkinkan Anda untuk menghapus font duplikat atau yang tidak terpakai dari dokumen PDF.
 
 Untuk mengganti font, gunakan pendekatan berikut:
 
 1. Panggil kelas [TextFragmentAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragmentabsorber).
-1. Panggil parameter TextFragmentAbsorber class’ TextEditOptions.FontReplace.RemoveUnusedFonts. (Ini menghapus font yang menjadi tidak terpakai selama penggantian font).
-1. Tetapkan font secara individu untuk setiap fragmen teks.
+1. Panggil parameter TextFragmentAbsorber kelas’ TextEditOptions.FontReplace.RemoveUnusedFonts. (Ini menghapus font yang telah menjadi tidak terpakai selama penggantian font).
+1. Atur font secara individu untuk setiap fragmen teks.
 
-Potongan kode berikut menggantikan font untuk semua fragmen teks dari semua halaman dokumen dan menghapus font yang tidak digunakan.
+Potongan kode berikut mengganti font untuk semua fragmen teks dari semua halaman dokumen dan menghapus font yang tidak terpakai.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Muat file PDF sumber
-Document doc = new Document(dataDir + "ReplaceTextPage.pdf");
-TextFragmentAbsorber absorber = new TextFragmentAbsorber(new TextEditOptions(TextEditOptions.FontReplace.RemoveUnusedFonts));
-doc.Pages.Accept(absorber);
-
-// Iterasi melalui semua TextFragments
-foreach (TextFragment textFragment in absorber.TextFragments)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveUnusedFonts()
 {
-    textFragment.TextState.Font = FontRepository.FindFont("Arial, Bold");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceTextPage.pdf"))
+    {
+        var options = new Aspose.Pdf.Text.TextEditOptions(Aspose.Pdf.Text.TextEditOptions.FontReplace.RemoveUnusedFonts);
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber();
+        document.Pages.Accept(absorber);
+
+        // Iterate through all the TextFragments
+        foreach (var textFragment in absorber.TextFragments)
+        {
+            textFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial, Bold");
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "RemoveUnusedFonts_out.pdf");
+    }
 }
-
-dataDir = dataDir + "RemoveUnusedFonts_out.pdf";
-// Simpan dokumen yang telah diperbarui
-doc.Save(dataDir);
 ```
-## Menghapus Semua Teks dari Dokumen PDF
 
-### Menghapus Semua Teks Menggunakan Operator
+## Hapus Semua Teks dari Dokumen PDF
 
-Dalam beberapa operasi teks, Anda perlu menghapus semua teks dari dokumen PDF dan untuk itu, Anda perlu mengatur teks yang ditemukan sebagai nilai string kosong biasanya. Intinya adalah mengubah teks untuk banyak fragmen teks memicu sejumlah operasi pemeriksaan dan penyesuaian posisi teks. Hal-hal tersebut sangat penting dalam skenario pengeditan teks. Kesulitannya adalah Anda tidak dapat menentukan berapa banyak fragmen teks yang akan dihapus dalam skenario di mana mereka diproses dalam loop.
+### Hapus Semua Teks menggunakan Operator
+
+Dalam beberapa operasi teks, Anda perlu menghapus semua teks dari dokumen PDF dan untuk itu, Anda perlu mengatur teks yang ditemukan sebagai nilai string kosong biasanya. Intinya adalah bahwa mengubah teks untuk banyak fragmen teks memicu sejumlah pemeriksaan dan penyesuaian posisi teks. Mereka penting dalam skenario pengeditan teks. Kesulitannya adalah Anda tidak dapat menentukan berapa banyak fragmen teks yang akan dihapus dalam skenario di mana mereka diproses dalam loop.
 
 Oleh karena itu, kami merekomendasikan menggunakan pendekatan lain untuk skenario menghapus semua teks dari halaman PDF. Silakan pertimbangkan potongan kode berikut yang bekerja sangat cepat.
 
 ```csharp
-// Untuk contoh lengkap dan berkas data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "RemoveAllText.pdf");
-// Loop melalui semua halaman Dokumen PDF
-for (int i = 1; i <= pdfDocument.Pages.Count; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveAllTextFromDocument()
 {
-    Page page = pdfDocument.Pages[i];
-    OperatorSelector operatorSelector = new OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
-    // Pilih semua teks di halaman
-    page.Contents.Accept(operatorSelector);
-    // Hapus semua teks
-    page.Contents.Delete(operatorSelector.Selected);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveAllText.pdf"))
+    {
+        // Loop through all pages of PDF Document
+        for (int i = 1; i <= document.Pages.Count; i++)
+        {
+            var page = document.Pages[i];
+            var operatorSelector = new Aspose.Pdf.OperatorSelector(new Aspose.Pdf.Operators.TextShowOperator());
+            // Select all text on the page
+            page.Contents.Accept(operatorSelector);
+            // Delete all text
+            page.Contents.Delete(operatorSelector.Selected);
+        }
+        // Save PDF document
+        document.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+    }
 }
-// Simpan dokumen
-pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
 ```
 
 <script type="application/ld+json">
@@ -497,7 +568,7 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
             "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/tampilan",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
             "https://www.linkedin.com/company/aspose",
             "https://stackoverflow.com/questions/tagged/aspose",
             "https://aspose.quora.com/",
@@ -507,21 +578,21 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -532,7 +603,7 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -544,5 +615,3 @@ pdfDocument.Save(dataDir + "RemoveAllText_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
     }
 }
 </script>
-```
-

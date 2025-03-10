@@ -1,10 +1,12 @@
 ---
-title: Tinjauan Anotasi yang Didukung
-linktitle: Tinjauan Anotasi
+title: Ikhtisar Anotasi yang Didukung
+linktitle: Ikhtisar Anotasi
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/overview-of-annotations/
-description: Lihat daftar anotasi yang mungkin bisa Anda gunakan dengan menggunakan Aspose.PDF untuk .NET.
+description: Lihat daftar anotasi yang mungkin Anda kerjakan menggunakan Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Tinjauan Anotasi yang Didukung",
-    "alternativeHeadline": "Daftar Anotasi yang Didukung",
+    "headline": "Overview of supported Annotations",
+    "alternativeHeadline": "Comprehensive List of Aspose.PDF Annotations",
+    "abstract": "Temukan daftar komprehensif anotasi yang didukung yang tersedia di Aspose.PDF for .NET, memungkinkan pengembang untuk meningkatkan dokumen PDF dengan berbagai fitur. Fungsionalitas ini mencakup berbagai jenis anotasi, seperti teks, tautan, sorotan, dan multimedia, memberikan opsi yang kuat untuk manipulasi dan kustomisasi PDF. Jelajahi bagaimana anotasi ini dapat meningkatkan aplikasi .NET Anda dan meningkatkan keterlibatan pengguna dengan konten PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, anotasi yang didukung",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Aspose.PDF, supported annotations, PDF document generation, .NET Framework, .NET Core, Text annotation, Link annotations, Free text annotation, Highlight annotation, Watermark annotation",
+    "wordcount": "370",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,39 +74,37 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/overview-of-annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Lihat daftar anotasi yang mungkin bisa Anda gunakan dengan menggunakan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-25",
+    "description": "Lihat daftar anotasi yang mungkin Anda kerjakan menggunakan Aspose.PDF for .NET."
 }
 </script>
 
-Tabel berikut menunjukkan jenis Anotasi yang didukung oleh Aspose.PDF untuk .NET.
+Tabel berikut menunjukkan jenis Anotasi yang didukung oleh Aspose.PDF for .NET.
 
 |**Jenis Anotasi**|**Deskripsi**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Teks](/pdf/id/net/text-annotation/)|Anotasi teks|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Tautan](/pdf/id/net/extra-annotations/)|Anotasi tautan|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Teks Bebas](/pdf/id/net/text-annotation/)|(PDF 1.3) Anotasi teks bebas|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Garis](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi garis|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Persegi](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi persegi|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Lingkaran](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi lingkaran|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Poligon](/pdf/id/net/figures-annotation/)|(PDF 1.5) Anotasi poligon|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Garis Poli](/pdf/id/net/figures-annotation/)|(PDF 1.5) Anotasi garis poli|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-| [PolyLine](/pdf/id/net/figures-annotation/) | (PDF 1.5) Anotasi polyline | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Highlight](/pdf/id/net/highlights-annotation/) | (PDF 1.3) Anotasi penyorotan | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Underline](/pdf/id/net/highlights-annotation/) | (PDF 1.3) Anotasi garis bawah | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Squiggly](/pdf/id/net/highlights-annotation/) | (PDF 1.4) Anotasi garis bawah bergelombang | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [StrikeOut](/pdf/id/net/highlights-annotation/) | (PDF 1.3) Anotasi coretan | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Stamp](/pdf/id/net/stamping/) | (PDF 1.3) Anotasi stempel karet | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Caret](/pdf/id/net/extra-annotations/) | (PDF 1.5) Anotasi caret | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Ink](/pdf/id/net/figures-annotation/) | (PDF 1.3) Anotasi tinta | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/id/net/text-annotation/) | (PDF 1.3) Anotasi pop-up | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Popup](/pdf/id/net/text-annotation/) | (PDF 1.3) Anotasi Pop-up | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Sound](/pdf/id/net/multimedia-annotation/) | (PDF 1.2) Anotasi Suara | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Movie](/pdf/id/net/multimedia-annotation/) | (PDF 1.2) Anotasi Film | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Widget](/pdf/id/net/multimedia-annotation/) | (PDF 1.2) Anotasi Widget | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Screen](/pdf/id/net/multimedia-annotation/) | (PDF 1.5) Anotasi Layar | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Watermark](/pdf/id/net/sticky-annotations/) | (PDF 1.6) Anotasi Watermark | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
-| [Redact](/pdf/id/net/extra-annotations/) | (PDF 1.7) Anotasi Redaksi | {{< emoticons/tick >}} | {{< emoticons/tick >}} |
+|[Teks](/pdf/net/text-annotation/)|Anotasi teks|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Tautan](/pdf/net/extra-annotations/)|Anotasi tautan|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[TeksBebas](/pdf/net/text-annotation/)|(PDF 1.3) Anotasi teks bebas|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Garis](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi garis|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Persegi](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi persegi|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Lingkaran](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi lingkaran|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Poligon](/pdf/net/figures-annotation/)|(PDF 1.5) Anotasi poligon|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[GarisPoli](/pdf/net/figures-annotation/)|(PDF 1.5) Anotasi garis poli|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sorotan](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotasi sorotan|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[GarisBawah](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotasi garis bawah|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Bergelombang](/pdf/net/highlights-annotation/)|(PDF 1.4) Anotasi garis bawah bergelombang|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Coret](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotasi coret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Cap](/pdf/net/stamping/)|(PDF 1.3) Anotasi cap karet|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) Anotasi caret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Tinta](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi tinta|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Pop-up](/pdf/net/text-annotation/)|(PDF 1.3) Anotasi pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Suara](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotasi suara|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Film](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotasi film|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotasi widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Layar](/pdf/net/multimedia-annotation/)|(PDF 1.5) Anotasi layar|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) Anotasi watermark|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) Anotasi redact|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {
@@ -168,4 +169,3 @@ Tabel berikut menunjukkan jenis Anotasi yang didukung oleh Aspose.PDF untuk .NET
     }
 }
 </script>
-

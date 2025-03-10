@@ -1,8 +1,11 @@
 ---
 title: Bekerja dengan Judul di PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 url: /id/net/working-with-headings/
-description: Membuat penomoran dalam judul dokumen PDF Anda dengan C#. Aspose.PDF untuk .NET menawarkan berbagai gaya penomoran.
+weight: 70
+description: Buat penomoran di judul dokumen PDF Anda dengan C#. Aspose.PDF for .NET menawarkan berbagai jenis gaya penomoran.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -12,22 +15,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Bekerja dengan Judul di PDF",
-    "alternativeHeadline": "Membuat Judul di PDF",
+    "headline": "Working with Headings in PDF",
+    "alternativeHeadline": "Enhance PDF Headings with Custom Numbering Styles",
+    "abstract": "Tingkatkan dokumen PDF Anda dengan penomoran judul yang dapat disesuaikan menggunakan Aspose.PDF for .NET. Fitur baru ini memungkinkan Anda menerapkan berbagai gaya penomoran yang telah ditentukan sebelumnya, seperti angka Romawi dan daftar alfabet, untuk mengatur judul Anda secara efektif, meningkatkan keterbacaan dan struktur dokumen. Permudah proses pembuatan PDF Anda dengan mengintegrasikan fungsionalitas serbaguna ini ke dalam aplikasi C# Anda",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, judul dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "PDF, C#, headings in PDF, numbering style, Aspose.PDF for .NET, pre-defined numbering styles, NumberingStyle enumeration, document generation, Heading class, pdf document manipulation",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -69,98 +73,103 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-headings/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Membuat penomoran dalam judul dokumen PDF Anda dengan C#. Aspose.PDF untuk .NET menawarkan berbagai gaya penomoran."
+    "dateModified": "2024-11-25",
+    "description": "Buat penomoran di judul dokumen PDF Anda dengan C#. Aspose.PDF for .NET menawarkan berbagai jenis gaya penomoran."
 }
 </script>
 
-## Terapkan Gaya Penomoran dalam Judul
+## Terapkan Gaya Penomoran di Judul
 
-Judul adalah bagian penting dari setiap dokumen. Penulis selalu berusaha membuat judul lebih menonjol dan bermakna bagi pembacanya. Jika ada lebih dari satu judul dalam dokumen, penulis memiliki beberapa opsi untuk mengorganisir judul-judul tersebut. Salah satu pendekatan yang paling umum untuk mengorganisir judul adalah menulis judul dalam Gaya Penomoran.
+Judul adalah bagian penting dari dokumen apa pun. Penulis selalu berusaha untuk membuat judul lebih menonjol dan bermakna bagi pembacanya. Jika ada lebih dari satu judul dalam sebuah dokumen, penulis memiliki beberapa opsi untuk mengatur judul-judul ini. Salah satu pendekatan yang paling umum untuk mengatur judul adalah dengan menulis judul dalam Gaya Penomoran.
 
-[Aspose.PDF for .NET](/pdf/id/net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan ini disimpan dalam sebuah enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
+[Aspose.PDF for .NET](/pdf/net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan sebelumnya ini disimpan dalam sebuah enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan sebelumnya dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
 
 |**Tipe Judul**|**Deskripsi**|
 | :- | :- |
-|NumeralsArabic|Tipe Arab, contohnya, 1,1.1,...|
-|NumeralsRomanUppercase|Tipe Romawi atas, contohnya, I,I.II, ...|
-|NumeralsRomanLowercase|Tipe Romawi bawah, contohnya, i,i.ii, ...|
-|LettersUppercase|Tipe Inggris atas, contohnya, A,A.B, ...|
-|LettersLowercase|Tipe Inggris bawah, contohnya, a,a.b, ...|
-Properti **Style** dari kelas **Aspose.PDF.Heading** digunakan untuk mengatur gaya penomoran dari judul.
-Properti **Style** dari kelas **Aspose.PDF.Heading** digunakan untuk mengatur gaya penomoran dari judul.
+|NumeralsArabic|Tipe Arab, misalnya, 1,1.1,...|
+|NumeralsRomanUppercase|Tipe Romawi besar, misalnya, I,I.II, ...|
+|NumeralsRomanLowercase|Tipe Romawi kecil, misalnya, i,i.ii, ...|
+|LettersUppercase|Tipe Inggris besar, misalnya, A,A.B, ...|
+|LettersLowercase|Tipe Inggris kecil, misalnya, a,a.b, ...|
+Properti **Style** dari kelas **Aspose.Pdf.Heading** digunakan untuk mengatur gaya penomoran dari judul-judul.
 
-|**Gambar: Gaya penomoran yang telah ditentukan**|
+|**Gambar: Gaya penomoran yang telah ditentukan sebelumnya**|
 | :- |
-Kode sumber, untuk mendapatkan hasil seperti yang ditunjukkan pada gambar di atas, diberikan di bawah ini dalam contoh.
+Kode sumber, untuk mendapatkan output yang ditunjukkan dalam gambar di atas, diberikan di bawah ini dalam contoh.
 
-Potongan kode berikutnya juga bekerja dengan antarmuka grafis [Aspose.Drawing](/pdf/id/net/drawing/) yang baru.
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Headings();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ApplyNumberStyleToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-Document pdfDoc = new Document();
-pdfDoc.PageInfo.Width = 612.0;
-pdfDoc.PageInfo.Height = 792.0;
-pdfDoc.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfDoc.PageInfo.Margin.Left = 72;
-pdfDoc.PageInfo.Margin.Right = 72;
-pdfDoc.PageInfo.Margin.Top = 72;
-pdfDoc.PageInfo.Margin.Bottom = 72;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.PageInfo.Width = 612.0;
+        document.PageInfo.Height = 792.0;
+        document.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        document.PageInfo.Margin.Left = 72;
+        document.PageInfo.Margin.Right = 72;
+        document.PageInfo.Margin.Top = 72;
+        document.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.Page pdfPage = pdfDoc.Pages.Add();
-pdfPage.PageInfo.Width = 612.0;
-pdfPage.PageInfo.Height = 792.0;
-pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfPage.PageInfo.Margin.Left = 72;
-pdfPage.PageInfo.Margin.Right = 72;
-pdfPage.PageInfo.Margin.Top = 72;
-pdfPage.PageInfo.Margin.Bottom = 72;
+        // Add page
+        var pdfPage = document.Pages.Add();
+        pdfPage.PageInfo.Width = 612.0;
+        pdfPage.PageInfo.Height = 792.0;
+        pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        pdfPage.PageInfo.Margin.Left = 72;
+        pdfPage.PageInfo.Margin.Right = 72;
+        pdfPage.PageInfo.Margin.Top = 72;
+        pdfPage.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox();
-floatBox.Margin = pdfPage.PageInfo.Margin;
+        // Create a floating box with the same margin as the page
+        var floatBox = new Aspose.Pdf.FloatingBox();
+        floatBox.Margin = pdfPage.PageInfo.Margin;
 
-pdfPage.Paragraphs.Add(floatBox);
+        // Add the floating box to the page
+        pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
+        // Add headings with numbering styles
+        var heading = new Aspose.Pdf.Heading(1);
+        heading.IsInList = true;
+        heading.StartNumber = 1;
+        heading.Text = "List 1";
+        heading.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading);
 
-Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
-heading.IsInList = true;
-heading.StartNumber = 1;
-heading.Text = "Daftar 1";
-heading.Style = NumberingStyle.NumeralsRomanLowercase;
-heading.IsAutoSequence = true;
+        var heading2 = new Aspose.Pdf.Heading(1);
+        heading2.IsInList = true;
+        heading2.StartNumber = 13;
+        heading2.Text = "List 2";
+        heading2.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading2.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading2);
 
-floatBox.Paragraphs.Add(heading);
+        var heading3 = new Aspose.Pdf.Heading(2);
+        heading3.IsInList = true;
+        heading3.StartNumber = 1;
+        heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan on account of each allowed";
+        heading3.Style = Aspose.Pdf.NumberingStyle.LettersLowercase;
+        heading3.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading3);
 
-Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
-heading2.IsInList = true;
-heading2.StartNumber = 13;
-heading2.Text = "Daftar 2";
-heading2.Style = NumberingStyle.NumeralsRomanLowercase;
-heading2.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading2);
-
-Aspose.Pdf.Heading heading3 = new Aspose.Pdf.Heading(2);
-heading3.IsInList = true;
-heading3.StartNumber = 1;
-heading3.Text = "nilai, pada tanggal efektif dari rencana, dari properti yang akan didistribusikan di bawah rencana atas setiap yang diizinkan";
-heading3.Style = NumberingStyle.LettersLowercase;
-heading3.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ApplyNumberStyle_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -182,21 +191,21 @@ pdfDoc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -207,7 +216,7 @@ pdfDoc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -219,5 +228,3 @@ pdfDoc.Save(dataDir);
     }
 }
 </script>
-```
-

@@ -2,51 +2,107 @@
 title: Memulai
 linktitle: Memulai
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/get-started/
-description: Bagian ini menjelaskan prinsip dasar kerja dan penggunaan DOM API. Juga menunjukkan contoh sederhana dan kompleks untuk membuat dokumen PDF.
+description: Bagian ini menjelaskan prinsip dasar kerja dan penggunaan API DOM. Juga menunjukkan contoh sederhana dan kompleks untuk membuat dokumen PDF.
 is_node: true
-lastmod: "2021-06-05"
+aliases:
+    - /net/getting-started/
+lastmod: "2024-11-21"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Get Started",
+    "alternativeHeadline": "Getting Started with Aspose.PDF for .NET Library",
+    "abstract": "Temukan hal-hal penting dari pustaka Aspose.PDF for .NET di bagian Memulai, yang memberikan gambaran menyeluruh tentang API DOM dan menampilkan contoh untuk pembuatan dokumen PDF sederhana dan kompleks. Tingkatkan proses pengembangan Anda dengan panduan yang jelas tentang instalasi, persyaratan sistem, dan contoh kode praktis yang disesuaikan untuk C#",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "397",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/get-started/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/get-started/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
-Telusuri fitur dasar dan persyaratan dari perpustakaan Aspose.PDF untuk .NET di bagian Memulai ini.
+Selidiki fitur dan persyaratan paling dasar dari pustaka Aspose.PDF for .NET di bagian Memulai ini.
 
 Untuk mengetahui lebih lanjut tentang Aspose.PDF, pilih bagian yang sesuai:
 
-[Why Aspose.PDF](/pdf/id/net/why-aspose-pdf/) – menjelaskan alasan mengapa mungkin lebih baik menggunakan produk Aspose daripada produk lain, seperti Microsoft Office Automation atau Open XML SDK
+- [Mengapa Aspose.PDF](/pdf/net/why-aspose-pdf/) – menjelaskan alasan mengapa mungkin lebih baik menggunakan produk Aspose daripada produk lain, misalnya, Microsoft Office Automation atau Open XML SDK.
+- [Instalasi](/pdf/net/installation/) – memberikan informasi tentang cara menginstal Aspose.PDF.
+- [Persyaratan Sistem](/pdf/net/system-requirements/) – memberikan informasi tentang persyaratan sistem dan lingkungan pengembangan.
+- [Hello World](/pdf/net/hello-world-example/) – memberikan informasi tentang cara membuat dokumen PDF sederhana menggunakan C# dan Aspose.PDF.
+- [Cara Menjalankan Contoh](/pdf/net/how-to-run-other-examples/) – menjelaskan cara mengunduh dan menjalankan contoh serta persyaratan perangkat lunak yang harus ada.
+- [PDF Kompleks](/pdf/net/complex-pdf-example/) – menjelaskan cara membuat dokumen yang lebih kompleks dengan pustaka C#.
+- [Format Dokumen yang Didukung](/pdf/net/supported-file-formats/) – memberikan informasi tentang format yang didukung.
+- [Fitur yang Didukung](/pdf/net/key-features/) – memberikan informasi tentang fitur apa yang didukung saat memuat atau menyimpan dokumen dalam berbagai format.
+- [Lisensi dan Langganan](/pdf/net/licensing/) – memberikan informasi tentang penerapan lisensi dan penggunaan beberapa produk Aspose.
+- [Dukungan Teknis](/pdf/net/technical-support/) – Halaman ini memberikan rekomendasi untuk menyelesaikan tugas Anda dengan cepat dan berkualitas.
+- [Cara Menjalankan Aspose.PDF di Docker](/pdf/net/docker/) – memberikan informasi tentang cara memanfaatkan Aspose.PDF dalam kontainer Docker.
+- [Ikhtisar Aspose.PDF.Drawing untuk .NET](/pdf/net/drawing/) – memberikan informasi tentang cara menggunakan pustaka Aspose.Drawing sebagai pengganti System.Drawing.
+- [Dasar-Dasar API DOM Aspose.PDF](/pdf/net/basics-of-dom-api/) – bagian ini akan menunjukkan fitur-fitur bekerja dengan DOM, bentuk presentasi dokumen terstruktur sebagai model berorientasi objek.
+- [Fitur Lanjutan](/pdf/net/advanced-features/) – bagian ini akan menunjukkan fitur-fitur lanjutan dalam bekerja dengan PDF.
 
-[Installation](/pdf/id/net/installation/) – menyediakan informasi tentang cara menginstal Aspose.PDF
+## Pelajari lebih lanjut tentang
 
-[System Requirements](/pdf/id/net/system-requirements/) – menyediakan informasi tentang kebutuhan sistem dan lingkungan pengembangan
-
-[Hello World](/pdf/id/net/hello-world-example/) – menyediakan informasi tentang cara membuat dokumen PDF sederhana menggunakan C# dan Aspose.PDF
-[Hello World](/pdf/id/net/hello-world-example/) – memberikan informasi tentang cara membuat dokumen PDF sederhana menggunakan C# dan Aspose.PDF
-
-[How to Run the Examples](/pdf/id/net/how-to-run-other-examples/) – menjelaskan bagaimana cara mengunduh dan menjalankan contoh-contoh serta apa saja kebutuhan perangkat lunak yang harus dipenuhi
-
-[Complex PDF](/pdf/id/net/complex-pdf-example/) – menjelaskan cara membuat dokumen yang lebih kompleks dengan perpustakaan C#
-
-[Supported Document Formats](/pdf/id/net/supported-file-formats/) – memberikan informasi tentang format-format yang didukung
-
-[Supported Features](/pdf/id/net/key-features/) – memberikan informasi tentang fitur-fitur apa saja yang didukung saat memuat atau menyimpan dokumen dalam berbagai format
-
-[Licensing and Subscription](/pdf/id/net/licensing/) – memberikan informasi tentang cara menerapkan lisensi dan menggunakan beberapa produk Aspose
-
-[Technical Support](/pdf/id/net/technical-support/) – Halaman ini memberikan rekomendasi untuk penyelesaian tugas yang cepat dan berkualitas
-
-[How to Run Aspose.PDF in Docker](/pdf/id/net/docker/) – memberikan informasi tentang cara menggunakan Aspose.PDF dalam kontainer Docker
-[Bagaimana Menjalankan Aspose.PDF di Docker](/pdf/id/net/docker/) – memberikan informasi tentang cara menggunakan Aspose.PDF dalam wadah Docker
-
-[Overview Aspose.PDF.Drawing untuk .NET](/pdf/id/net/drawing/) – memberikan informasi tentang cara menggunakan antarmuka grafis Aspose.Drawing yang baru sebagai pengganti System.Drawing
-
-[Dasar-dasar Aspose.PDF DOM API](/pdf/id/net/basics-of-dom-api/) – bagian ini akan menunjukkan fitur-fitur kerja dengan DOM, bentuk penyajian dokumen terstruktur sebagai model berorientasi objek
-
-### Pelajari lebih lanjut tentang:
-
-- [Dasar-dasar DOM API](/pdf/id/net/basics-of-dom-api/)
-- [Contoh C# "Hello, World"](/pdf/id/net/hello-world-example/)
-- [PDF Kompleks](/pdf/id/net/complex-pdf-example/)
-- [Cara menjalankan contoh lainnya](/pdf/id/net/how-to-run-other-examples/)
+- [Dasar-Dasar API DOM](/pdf/net/basics-of-dom-api/)
+- [Contoh C# "Hello, World"](/pdf/net/hello-world-example/)
+- [PDF Kompleks](/pdf/net/complex-pdf-example/)
+- [Cara menjalankan contoh lain](/pdf/net/how-to-run-other-examples/)
