@@ -118,7 +118,7 @@ private static void SplitPdfPagesFromFirstUsingFileStreams()
 
 ## Dividir Páginas PDF a Granel Usando Rutas de Archivos
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/methods/splittobulks/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el archivo PDF en múltiples conjuntos de páginas. En este ejemplo, requerimos dos conjuntos de páginas (1, 2) y (5, 6). Si deseas acceder al archivo PDF desde el disco, necesitas pasar el PDF de entrada como ruta de archivo. Este método devuelve un arreglo de MemoryStream. Puedes recorrer este arreglo y guardar los conjuntos individuales de páginas como archivos separados. El siguiente fragmento de código te muestra cómo dividir páginas PDF a granel usando rutas de archivos.
+[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el archivo PDF en múltiples conjuntos de páginas. En este ejemplo, requerimos dos conjuntos de páginas (1, 2) y (5, 6). Si deseas acceder al archivo PDF desde el disco, necesitas pasar el PDF de entrada como ruta de archivo. Este método devuelve un arreglo de MemoryStream. Puedes recorrer este arreglo y guardar los conjuntos individuales de páginas como archivos separados. El siguiente fragmento de código te muestra cómo dividir páginas PDF a granel usando rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -147,7 +147,7 @@ private static void SplitPdfPagesToBulkUsingFilePaths()
 
 ## Dividir Páginas PDF a Granel Usando Flujos
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/methods/splittobulks/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el archivo PDF en múltiples conjuntos de páginas. En este ejemplo, requerimos dos conjuntos de páginas (1, 2) y (5, 6). Puedes pasar un flujo a este método en lugar de acceder al archivo desde el disco. Este método devuelve un arreglo de MemoryStream. Puedes recorrer este arreglo y guardar los conjuntos individuales de páginas como archivos separados. El siguiente fragmento de código te muestra cómo dividir páginas PDF a granel usando flujos.
+[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el archivo PDF en múltiples conjuntos de páginas. En este ejemplo, requerimos dos conjuntos de páginas (1, 2) y (5, 6). Puedes pasar un flujo a este método en lugar de acceder al archivo desde el disco. Este método devuelve un arreglo de MemoryStream. Puedes recorrer este arreglo y guardar los conjuntos individuales de páginas como archivos separados. El siguiente fragmento de código te muestra cómo dividir páginas PDF a granel usando flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -180,7 +180,7 @@ private static void SplitPdfPagesToBulkUsingStreams()
 
 ## Dividir Páginas PDF hasta el Final Usando Rutas de Archivos
 
-[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/methods/splittoend/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el PDF desde el número de página especificado hasta el final del archivo PDF y guardarlo como un nuevo PDF. Para hacer esto, usando rutas de archivos, necesitas pasar las rutas de archivo de entrada y salida y el número de página desde donde se debe iniciar la división. El PDF de salida se guardará en el disco. El siguiente fragmento de código te muestra cómo dividir páginas PDF hasta el final usando rutas de archivos.
+[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el PDF desde el número de página especificado hasta el final del archivo PDF y guardarlo como un nuevo PDF. Para hacer esto, usando rutas de archivos, necesitas pasar las rutas de archivo de entrada y salida y el número de página desde donde se debe iniciar la división. El PDF de salida se guardará en el disco. El siguiente fragmento de código te muestra cómo dividir páginas PDF hasta el final usando rutas de archivos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -197,7 +197,7 @@ private static void SplitPdfPagesToEndUsingFilePaths()
 
 ## Dividir Páginas PDF hasta el Final Usando Flujos
 
-[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/methods/splittoend/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el PDF desde el número de página especificado hasta el final del archivo PDF y guardarlo como un nuevo PDF. Para hacer esto, usando flujos, necesitas pasar flujos de entrada y salida y el número de página desde donde se debe iniciar la división. El PDF de salida se guardará en el flujo de salida. El siguiente fragmento de código te muestra cómo dividir páginas PDF hasta el final usando flujos.
+[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) método de la clase [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) permite dividir el PDF desde el número de página especificado hasta el final del archivo PDF y guardarlo como un nuevo PDF. Para hacer esto, usando flujos, necesitas pasar flujos de entrada y salida y el número de página desde donde se debe iniciar la división. El PDF de salida se guardará en el flujo de salida. El siguiente fragmento de código te muestra cómo dividir páginas PDF hasta el final usando flujos.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
