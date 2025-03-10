@@ -84,11 +84,11 @@ sitemap:
 
 您可以执行以下操作：
 
-- [在现有 PDF 文档中创建或添加表格](/pdf/net/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格，合并列或行，考虑边框、边距和填充。
-- [从现有 PDF 文档中提取表格](/pdf/net/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格或将表格边框提取为图像。
-- [将表格与数据源集成](/pdf/net/integrate-table/) - 将表格与数据库集成，使用 .NET 库将表格与实体框架源集成。
-- [在现有 PDF 中操作表格](/pdf/net/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 在您的 PDF 中操作表格。
-- [从现有 PDF 中删除表格](/pdf/net/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除表格或多个表格。
+- [在现有 PDF 文档中创建或添加表格](/pdf/zh/net/add-table-in-existing-pdf-document/) - 在 PDF 文件中创建表格，合并列或行，考虑边框、边距和填充。
+- [从现有 PDF 文档中提取表格](/pdf/zh/net/extract-table-from-existing-pdf-document/) - 您可以从 PDF 文件中提取表格或将表格边框提取为图像。
+- [将表格与数据源集成](/pdf/zh/net/integrate-table/) - 将表格与数据库集成，使用 .NET 库将表格与实体框架源集成。
+- [在现有 PDF 中操作表格](/pdf/zh/net/manipulate-tables-in-existing-pdf/) - 使用 TableAbsorber 在您的 PDF 中操作表格。
+- [从现有 PDF 中删除表格](/pdf/zh/net/remove-tables-from-existing-pdf/) - 从 PDF 文档中删除表格或多个表格。
 
 <script type="application/ld+json">
 {

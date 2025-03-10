@@ -103,25 +103,25 @@ Aspose.PDF for .NET 提供以下关键功能：
 
 ## 章节
 
-- [新功能](/pdf/net/whatsnew/)
-- [概述](/pdf/net/overview/)
-- [开始使用](/pdf/net/get-started/)
-- [基本操作](/pdf/net/basic-operations/)
-- [文档转换](/pdf/net/converting/)
-- [解析 PDF 文档](/pdf/net/parsing/)
-- [高级操作](/pdf/net/advanced-operations/)
-- [与外观一起工作](/pdf/net/working-with-facades)
-- [在其他语言中使用](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [展示](/pdf/net/showcases/)
-- [插件](/pdf/net/plugins/)
-- [常见问题](/pdf/net/faq/)
+- [新功能](/pdf/zh/net/whatsnew/)
+- [概述](/pdf/zh/net/overview/)
+- [开始使用](/pdf/zh/net/get-started/)
+- [基本操作](/pdf/zh/net/basic-operations/)
+- [文档转换](/pdf/zh/net/converting/)
+- [解析 PDF 文档](/pdf/zh/net/parsing/)
+- [高级操作](/pdf/zh/net/advanced-operations/)
+- [与外观一起工作](/pdf/zh/net/working-with-facades)
+- [在其他语言中使用](/pdf/zh/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [展示](/pdf/zh/net/showcases/)
+- [插件](/pdf/zh/net/plugins/)
+- [常见问题](/pdf/zh/net/faq/)
 - [发布说明](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Aspose.PDF for .NET 资源
 
 以下是一些您可能需要的有用资源链接，以完成您的任务。
 
-- [Aspose.PDF for .NET 功能](/pdf/net/key-features/)
+- [Aspose.PDF for .NET 功能](/pdf/zh/net/key-features/)
 - [Aspose.PDF for .NET 发布说明](https://releases.aspose.com/pdf/net/release-notes/)
 - [Aspose.PDF for .NET 产品页面](https://products.aspose.com/pdf/net/)
 - [下载 Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/)

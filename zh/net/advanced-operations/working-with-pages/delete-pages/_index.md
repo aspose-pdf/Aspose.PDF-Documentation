@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 您可以使用 Aspose.PDF for .NET 从 PDF 文件中删除页面。要从 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 集合中删除特定页面。
 

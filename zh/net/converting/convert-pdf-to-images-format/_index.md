@@ -119,7 +119,7 @@ _图像格式_：**SVG**
 
 ## C# 将 PDF 转换为图像
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 **Aspose.PDF for .NET** 使用几种方法将 PDF 转换为图像。一般来说，我们使用两种方法：使用设备方法进行转换和使用 SaveOption 进行转换。本节将向您展示如何使用这些方法之一将 PDF 文档转换为 BMP、JPEG、GIF、PNG、EMF、TIFF 和 SVG 格式的图像。
 

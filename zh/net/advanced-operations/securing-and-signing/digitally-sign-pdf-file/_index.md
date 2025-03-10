@@ -85,7 +85,7 @@ Aspose.PDF for .NET 支持使用 SignatureField 类数字签名 PDF 文件。您
 
 换句话说，文档仍然被认为保持其完整性，接收者仍然可以信任该文档。有关更多详细信息，请访问认证和签署 PDF。一般来说，认证文档可以与对 .NET 可执行文件的代码签名进行比较。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## Aspose.PDF for .NET 签名功能
 

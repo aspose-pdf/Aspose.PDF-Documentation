@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET允许在标记的PDF文档中创建表格。为了处理表格，API提供了[TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement)类。为了创建表格，您可以使用[ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent)接口的[CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement)方法。此外，您可以使用TableElement类的[CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)、[CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody)和[CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot)方法分别创建表头、表体和表脚。要创建表格行，您可以使用[TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement)类的[CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr)方法。您还可以使用Document类的Validate()方法检查创建的PDF文档是否符合PDF/UA标准。
 
-以下代码片段还可以与[Aspose.PDF.Drawing](/pdf/net/drawing/)库一起使用。
+以下代码片段还可以与[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库一起使用。
 
 以下代码片段展示了如何在标记的PDF文档中创建表格：
 

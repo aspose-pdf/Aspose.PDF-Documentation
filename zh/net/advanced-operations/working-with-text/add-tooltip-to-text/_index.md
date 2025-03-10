@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 通过添加隐形按钮为搜索文本添加工具提示
 

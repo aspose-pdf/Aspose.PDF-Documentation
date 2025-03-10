@@ -87,7 +87,7 @@ _格式_: **HTML**
 - [C# 将 PDF 转换为 HTML](#csharp-pdf-to-html)
 - [C# 如何将 PDF 文件转换为 HTML](#csharp-pdf-to-html)
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 将 PDF 转换为 HTML
 

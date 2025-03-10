@@ -87,7 +87,7 @@ sitemap:
 
 表单类提供了处理静态 AcroForm 的能力，您可以使用 Form 类的 GetFieldFacade(..) 方法获取特定字段实例。然而，XFA 字段无法通过 Form.GetFieldFacade(..) 方法访问。相反，请使用 [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) 来获取/设置字段值并操作 XFA 字段模板（设置字段属性）。
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ## 填写 XFA 字段
 

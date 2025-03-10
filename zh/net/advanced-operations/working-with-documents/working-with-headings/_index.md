@@ -82,7 +82,7 @@ sitemap:
 
 标题是任何文档的重要部分。作者总是试图使标题对读者更加突出和有意义。如果文档中有多个标题，作者有几种选择来组织这些标题。组织标题的最常见方法之一是以编号样式书写标题。
 
-[Aspose.PDF for .NET](/pdf/net/) 提供许多预定义的编号样式。这些预定义的编号样式存储在一个枚举中，NumberingStyle。NumberingStyle 枚举的预定义值及其描述如下：
+[Aspose.PDF for .NET](/pdf/zh/net/) 提供许多预定义的编号样式。这些预定义的编号样式存储在一个枚举中，NumberingStyle。NumberingStyle 枚举的预定义值及其描述如下：
 
 |**标题类型**|**描述**|
 | :- | :- |
@@ -97,7 +97,7 @@ sitemap:
 | :- |
 获取上图所示输出的源代码如下所示。
 
-下一个代码片段也与 [Aspose.Drawing](/pdf/net/drawing/) 库一起使用。
+下一个代码片段也与 [Aspose.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

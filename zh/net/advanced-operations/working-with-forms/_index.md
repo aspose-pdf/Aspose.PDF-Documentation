@@ -82,8 +82,8 @@ sitemap:
 本节描述了一种通过使用 Aspose.PDF 以编程方式完成 PDF 文档的快速简便方法。本节还讨论了如何使用 Aspose.PDF for .NET 来发现和映射现有 PDF 中的 AcroForms 可用字段。
 此外，您将学习如何使用 XFA - 另一种基于 XML 的演示表单技术。
 
-- [AcroForms](/pdf/net/acroforms/) - 创建表单，填写表单字段，从表单中提取数据，使用 .NET 库在您的 PDF 中添加和删除字段。
-- [XFA Forms](/pdf/net/xfa-forms/) - 填写 XFA 字段，转换 XFA，获取 XFA 字段属性。
+- [AcroForms](/pdf/zh/net/acroforms/) - 创建表单，填写表单字段，从表单中提取数据，使用 .NET 库在您的 PDF 中添加和删除字段。
+- [XFA Forms](/pdf/zh/net/xfa-forms/) - 填写 XFA 字段，转换 XFA，获取 XFA 字段属性。
 
 <script type="application/ld+json">
 {

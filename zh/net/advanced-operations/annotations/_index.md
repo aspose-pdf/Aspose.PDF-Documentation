@@ -89,10 +89,10 @@ PDF查看器通常允许创建和编辑各种注释类型，例如文本高亮�
 
 您可以执行以下操作：
 
-- [注释概述](/pdf/net/overview-of-annotations/) - 了解PDF规范定义的注释类型，以及Aspose.PDF支持的内容。
-- [添加、删除和获取注释](/pdf/net/add-delete-and-get-annotation/) - 本节解释如何处理所有允许的注释类型。
-- [使用XFDF格式导入和导出注释](/pdf/net/import-export-xfdf/) - Aspose.PDF库提供的方法将注释数据导入和导出到XFDF文件。
-- [将FDF格式注释导入PDF](/pdf/net/import-fdf/) - Aspose.PDF库提供的方法将FDF格式注释导入PDF文件。
+- [注释概述](/pdf/zh/net/overview-of-annotations/) - 了解PDF规范定义的注释类型，以及Aspose.PDF支持的内容。
+- [添加、删除和获取注释](/pdf/zh/net/add-delete-and-get-annotation/) - 本节解释如何处理所有允许的注释类型。
+- [使用XFDF格式导入和导出注释](/pdf/zh/net/import-export-xfdf/) - Aspose.PDF库提供的方法将注释数据导入和导出到XFDF文件。
+- [将FDF格式注释导入PDF](/pdf/zh/net/import-fdf/) - Aspose.PDF库提供的方法将FDF格式注释导入PDF文件。
 
 <script type="application/ld+json">
 {

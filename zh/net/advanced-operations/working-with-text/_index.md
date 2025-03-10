@@ -83,14 +83,14 @@ sitemap:
 
 您可以执行以下操作：
 
-- [向 PDF 文件添加文本](/pdf/net/add-text-to-pdf-file/) - 向您的 PDF 添加文本，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。
-- [PDF 工具提示](/pdf/net/pdf-tooltip/) - 您可以通过使用 C# 添加一个不可见的按钮来为搜索的文本添加工具提示。
-- [PDF 内部文本格式化](/pdf/net/text-formatting-inside-pdf/) - 在格式化文本时，您可以向文档添加许多功能。使用 Aspose.PDF 库添加行缩进、添加文本边框、添加下划线文本、添加换行符。
-- [使用浮动框](/pdf/net/floating-box/) - 浮动框工具是一个特殊工具，用于在 PDF 页面上放置文本和其他内容。
-- [在 PDF 中替换文本](/pdf/net/replace-text-in-pdf/) - 在 PDF 文档的所有页面中替换文本。您首先需要使用 TextFragmentAbsorber。
-- [在 PDF 中旋转文本](/pdf/net/rotate-text-inside-pdf/) - 使用 TextFragment 类的旋转属性在 PDF 中旋转文本。
-- [搜索并获取 PDF 文档页面中的文本](/pdf/net/search-and-get-text-from-pdf/) - 您可以使用 TextFragmentAbsorber 类搜索并获取页面中的文本。
-- [确定换行](/pdf/net/determine-line-break/) - 本主题解释如何跟踪多行文本片段的换行。
+- [向 PDF 文件添加文本](/pdf/zh/net/add-text-to-pdf-file/) - 向您的 PDF 添加文本，使用流和文件中的字体，添加 HTML 字符串，添加超链接等。
+- [PDF 工具提示](/pdf/zh/net/pdf-tooltip/) - 您可以通过使用 C# 添加一个不可见的按钮来为搜索的文本添加工具提示。
+- [PDF 内部文本格式化](/pdf/zh/net/text-formatting-inside-pdf/) - 在格式化文本时，您可以向文档添加许多功能。使用 Aspose.PDF 库添加行缩进、添加文本边框、添加下划线文本、添加换行符。
+- [使用浮动框](/pdf/zh/net/floating-box/) - 浮动框工具是一个特殊工具，用于在 PDF 页面上放置文本和其他内容。
+- [在 PDF 中替换文本](/pdf/zh/net/replace-text-in-pdf/) - 在 PDF 文档的所有页面中替换文本。您首先需要使用 TextFragmentAbsorber。
+- [在 PDF 中旋转文本](/pdf/zh/net/rotate-text-inside-pdf/) - 使用 TextFragment 类的旋转属性在 PDF 中旋转文本。
+- [搜索并获取 PDF 文档页面中的文本](/pdf/zh/net/search-and-get-text-from-pdf/) - 您可以使用 TextFragmentAbsorber 类搜索并获取页面中的文本。
+- [确定换行](/pdf/zh/net/determine-line-break/) - 本主题解释如何跟踪多行文本片段的换行。
 
 <script type="application/ld+json">
 {

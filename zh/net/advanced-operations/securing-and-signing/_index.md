@@ -94,10 +94,10 @@ PKCS7 分离的摘要算法：
 
 建议避免使用 SHA-1 摘要算法的数字签名，因为其不安全。
 
-- [数字签署 PDF 文件](/pdf/net/digitally-sign-pdf-file/)
-- [设置权限，加密和解密 PDF 文件](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [提取图像和签名信息](/pdf/net/extract-image-and-signature-information/)
-- [从智能卡签署 PDF 文档](/pdf/net/sign-pdf-document-from-smart-card/)
+- [数字签署 PDF 文件](/pdf/zh/net/digitally-sign-pdf-file/)
+- [设置权限，加密和解密 PDF 文件](/pdf/zh/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [提取图像和签名信息](/pdf/zh/net/extract-image-and-signature-information/)
+- [从智能卡签署 PDF 文档](/pdf/zh/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

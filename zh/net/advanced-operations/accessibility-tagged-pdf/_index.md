@@ -83,12 +83,12 @@ sitemap:
 
 本节涵盖以下主题：
 
-- [创建标记PDF](/pdf/net/create-tagged-pdf/)
-- [编辑标记PDF](/pdf/net/edit-pdf-file-tags/)
-- [从标记PDF中提取标记内容](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [设置结构元素属性](/pdf/net/setting-structure-elements-properties/)
-- [在标记PDF中处理表格](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [PDF-UA合规性测试 - 错误列表](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [创建标记PDF](/pdf/zh/net/create-tagged-pdf/)
+- [编辑标记PDF](/pdf/zh/net/edit-pdf-file-tags/)
+- [从标记PDF中提取标记内容](/pdf/zh/net/extract-tagged-content-from-tagged-pdfs/)
+- [设置结构元素属性](/pdf/zh/net/setting-structure-elements-properties/)
+- [在标记PDF中处理表格](/pdf/zh/net/working-with-table-in-tagged-pdfs/)
+- [PDF-UA合规性测试 - 错误列表](/pdf/zh/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

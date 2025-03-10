@@ -86,7 +86,7 @@ Aspose.PDF for NET 允许您从印章注释中提取文本。要从 PDF 中的�
 1. 定义一个新的 `TextAbsorber` 类对象。
 1. 使用 TextAbsorber 的访问方法获取文本。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

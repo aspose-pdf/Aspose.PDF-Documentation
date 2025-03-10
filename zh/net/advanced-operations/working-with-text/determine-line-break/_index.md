@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 跟踪多行 TextFragment 的换行
 

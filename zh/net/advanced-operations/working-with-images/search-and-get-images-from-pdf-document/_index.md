@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ImagePlacementAbsorber允许您在PDF文档的所有页面中搜索图像。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 要在整个文档中搜索图像：
 

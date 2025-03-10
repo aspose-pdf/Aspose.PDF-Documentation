@@ -82,7 +82,7 @@ sitemap:
 
 Aspose.PDF for .NET 让您可以在 .NET 应用程序中通过简单的代码行更改 PDF 页面大小。 本主题解释了如何更新/更改现有 PDF 文件的页面尺寸（大小）。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 类包含 SetPageSize(...) 方法，允许您设置页面大小。以下代码片段通过几个简单的步骤更新页面尺寸：
 

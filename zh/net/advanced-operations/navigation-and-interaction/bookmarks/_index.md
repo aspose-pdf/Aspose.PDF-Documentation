@@ -82,8 +82,8 @@ sitemap:
 PDF 书签是阅读 PDF 文件时方便且必不可少的工具。它们允许用户快速跳转到 PDF 文档中的其他位置，浏览页面，并快速查看 PDF 的内容，就像目录一样。
 在本节中，您将学习如何：
 
-- [添加和删除书签](/pdf/net/add-and-delete-bookmark/)
-- [获取、更新和展开书签](/pdf/net/get-update-and-expand-bookmark/)
+- [添加和删除书签](/pdf/zh/net/add-and-delete-bookmark/)
+- [获取、更新和展开书签](/pdf/zh/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

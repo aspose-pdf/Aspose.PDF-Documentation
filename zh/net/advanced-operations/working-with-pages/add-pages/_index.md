@@ -87,7 +87,7 @@ Aspose.PDF for .NET允许您在文件的任何位置向PDF文档插入页面，�
 
 Aspose.PDF for .NET允许您在文件的任何位置向PDF文档插入页面，以及将页面添加到PDF文件的末尾。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ### 在所需位置的PDF文件中插入空白页面
 

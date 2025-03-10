@@ -90,7 +90,7 @@ sitemap:
 1. 在每次迭代中，创建一个新的 Document 对象，并将单个 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 对象添加到空文档中。
 1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 方法保存新的 PDF。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 将 PDF 拆分为多个文件或单独的 pdf
 

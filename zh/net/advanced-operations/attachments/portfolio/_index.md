@@ -87,7 +87,7 @@ Aspose.PDF 允许使用 [Document](https://reference.aspose.com/pdf/net/aspose.
 
 下面的代码生成以下投资组合。
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ### 使用 Aspose.PDF 创建的 PDF 投资组合
 

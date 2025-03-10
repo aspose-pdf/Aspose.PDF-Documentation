@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [使用可扩展元数据平台 - XMP](/pdf/net/working-with-extensible-metadata-platform-xmp/)
-- [设置现有 PDF 的 XMP 元数据](/pdf/net/set-xmp-metadata-of-an-existing-pdf/)
-- [获取现有 PDF 文件的 XMP 元数据](/pdf/net/get-xmp-metadata-of-an-existing-pdf-file/)
+- [使用可扩展元数据平台 - XMP](/pdf/zh/net/working-with-extensible-metadata-platform-xmp/)
+- [设置现有 PDF 的 XMP 元数据](/pdf/zh/net/set-xmp-metadata-of-an-existing-pdf/)
+- [获取现有 PDF 文件的 XMP 元数据](/pdf/zh/net/get-xmp-metadata-of-an-existing-pdf-file/)

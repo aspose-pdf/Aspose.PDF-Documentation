@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 有时您可能会有现有的 XML 文件，其中包含应用程序数据，您希望使用这些文件生成 PDF 报告。您可以使用 XSLT 将现有的 XML 文档转换为 Aspose.Pdf 兼容的 XML 文档，然后生成 PDF 文件。使用 XML 和 XSLT 生成 PDF 有 3 个步骤。
 

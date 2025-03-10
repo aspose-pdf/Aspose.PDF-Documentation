@@ -100,14 +100,14 @@ AcroForms 具有 XFA 中没有的功能，反之亦然，XFA 也具有 AcroForms
 
 有关 Java 库功能的更详细学习，请参阅以下文章：
 
-- [创建 AcroForm](/pdf/net/create-form) - 使用 C# 从头创建表单。
-- [填写 AcroForm](/pdf/net/fill-form) - 在您的 PDF 文档中填写表单字段。
-- [提取 AcroForm](/pdf/net/extract-form) - 从 PDF 文档的所有或单个字段获取值。
-- [修改 AcroForm](/pdf/net/modifing-form) - 获取或设置 FieldLimit，设置表单字段字体等。
-- [发布 AcroForm 数据](/pdf/net/posting-acroform-data/) - 将表单数据导入和导出到 XML 文件。
-- [导入和导出数据](/pdf/net/import-and-export-data/) - 使用表单类导入和导出数据。
-- [从 PDF 中删除表单](/pdf/net/remove-form/) - 根据子类型/表单删除文本，删除所有表单。
-- [以 JSON 导入和导出数据](/pdf/net/import-export-json/) - 使用 JSON 导入和导出数据。
+- [创建 AcroForm](/pdf/zh/net/create-form) - 使用 C# 从头创建表单。
+- [填写 AcroForm](/pdf/zh/net/fill-form) - 在您的 PDF 文档中填写表单字段。
+- [提取 AcroForm](/pdf/zh/net/extract-form) - 从 PDF 文档的所有或单个字段获取值。
+- [修改 AcroForm](/pdf/zh/net/modifing-form) - 获取或设置 FieldLimit，设置表单字段字体等。
+- [发布 AcroForm 数据](/pdf/zh/net/posting-acroform-data/) - 将表单数据导入和导出到 XML 文件。
+- [导入和导出数据](/pdf/zh/net/import-and-export-data/) - 使用表单类导入和导出数据。
+- [从 PDF 中删除表单](/pdf/zh/net/remove-form/) - 根据子类型/表单删除文本，删除所有表单。
+- [以 JSON 导入和导出数据](/pdf/zh/net/import-export-json/) - 使用 JSON 导入和导出数据。
 
 <script type="application/ld+json">
 {

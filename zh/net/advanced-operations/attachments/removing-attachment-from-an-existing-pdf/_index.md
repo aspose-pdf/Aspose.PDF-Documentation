@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF可以从PDF文件中删除附件。PDF文档的附件保存在Document对象的EmbeddedFiles集合中。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 要删除与PDF文件关联的所有附件：
 

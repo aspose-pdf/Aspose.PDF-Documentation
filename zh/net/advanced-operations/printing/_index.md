@@ -81,11 +81,11 @@ sitemap:
 
 ## 如何在 C# 中打印 PDF 文件
 
-- [在 .NET Framework 中打印 PDF](/pdf/net/printing-pdf-in-net-framework/)
-- [将 PDF 打印到 XPS 打印机 (外观)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [PDF 转 PostScript 转换，检查打印作业状态](/pdf/net/pdf-to-postscript-conversion/)
-- [在 .NET Core 中打印 PDF](/pdf/net/print-dotnetcore/)
-- [在 WPF 应用程序中打印 PDF 文档](/pdf/net/print-pdf-document-in-wpf-application/)
+- [在 .NET Framework 中打印 PDF](/pdf/zh/net/printing-pdf-in-net-framework/)
+- [将 PDF 打印到 XPS 打印机 (外观)](/pdf/zh/net/printing-pdf-to-an-xps-printer-facades/)
+- [PDF 转 PostScript 转换，检查打印作业状态](/pdf/zh/net/pdf-to-postscript-conversion/)
+- [在 .NET Core 中打印 PDF](/pdf/zh/net/print-dotnetcore/)
+- [在 WPF 应用程序中打印 PDF 文档](/pdf/zh/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

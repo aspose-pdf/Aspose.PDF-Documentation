@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 本主题解释了如何使用 Aspose.PDF 命名空间中的操作符类，这些类提供了获取图像的分辨率和尺寸信息的能力，而无需提取它们。
 

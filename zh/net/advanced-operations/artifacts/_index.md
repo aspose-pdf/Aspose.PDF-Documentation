@@ -112,7 +112,7 @@ PDF 中工件的目的是允许区分内容和非内容元素。这对于可访�
 
 以下代码片段演示如何获取 PDF 文件第一页上的所有水印。
 
-_注意：_ 此代码也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+_注意：_ 此代码也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

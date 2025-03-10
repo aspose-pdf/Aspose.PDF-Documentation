@@ -10,8 +10,8 @@ url: /zh/net/cpp-via-com-interop/
 
 本节包含以下主题
 
-- [在 C++ 中使用早期绑定](/pdf/net/using-early-binding-in-cpp/)
-- [在 C++ 中使用晚期绑定](/pdf/net/using-late-binding-in-cpp/)
-- [在 C++ 中使用包装器](/pdf/net/using-wrapper-in-cpp/)
+- [在 C++ 中使用早期绑定](/pdf/zh/net/using-early-binding-in-cpp/)
+- [在 C++ 中使用晚期绑定](/pdf/zh/net/using-late-binding-in-cpp/)
+- [在 C++ 中使用包装器](/pdf/zh/net/using-wrapper-in-cpp/)
 
 {{% /alert %}}

@@ -75,7 +75,7 @@ description: 了解如何通过 COM Interop 使用 Aspose.PDF for .NET，以便�
 
 {{% alert color="primary" %}}
 
-本主题中的信息适用于您希望在以下任何编程语言中通过 COM Interop 使用 [Aspose.PDF for .NET](/pdf/net/) 的场景：
+本主题中的信息适用于您希望在以下任何编程语言中通过 COM Interop 使用 [Aspose.PDF for .NET](/pdf/zh/net/) 的场景：
 
 - ASP
 - Delphi
@@ -94,7 +94,7 @@ description: 了解如何通过 COM Interop 使用 Aspose.PDF for .NET，以便�
 
 Aspose.PDF for .NET 在 .NET 框架的控制下执行，这称为托管代码。用上述所有语言编写的代码在 .NET 框架之外运行，这称为非托管代码。非托管代码与 Aspose.PDF 之间的交互通过称为 COM Interop 的 .NET 功能进行。
 
-Aspose.PDF 对象是 .NET 对象，但在通过 COM Interop 使用时，它们在您的编程语言中表现为 COM 对象。因此，在开始使用 [Aspose.PDF for .NET](/pdf/net/) 之前，最好确保您知道如何在您的编程语言中创建和使用 COM 对象。
+Aspose.PDF 对象是 .NET 对象，但在通过 COM Interop 使用时，它们在您的编程语言中表现为 COM 对象。因此，在开始使用 [Aspose.PDF for .NET](/pdf/zh/net/) 之前，最好确保您知道如何在您的编程语言中创建和使用 COM 对象。
 
 {{% alert color="primary" %}}
 

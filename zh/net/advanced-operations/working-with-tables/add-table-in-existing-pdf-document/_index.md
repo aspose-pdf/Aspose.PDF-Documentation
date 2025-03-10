@@ -82,7 +82,7 @@ sitemap:
 
 在处理 PDF 文档时，表格非常重要。它们提供了以系统化方式显示信息的良好功能。Aspose.PDF 命名空间包含名为 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)、[Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) 和 [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) 的类，这些类提供了在从头生成 PDF 文档时创建表格的功能。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 可以通过创建 Table 类的对象来创建表格。
 

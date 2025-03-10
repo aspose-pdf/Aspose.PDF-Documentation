@@ -84,7 +84,7 @@ sitemap:
 
 在下面的示例代码中，我们演示了如何遍历 PDF 中的每一页，以提取有关 PDF 中所有 AcroForm 的信息以及表单字段值。此示例代码假定您事先不知道表单字段的名称。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractFormFields()
 
 ## 从 PDF 文档提取表单字段到 JSON
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -138,7 +138,7 @@ private static void ExtractFormFieldsToJson()
 
 Form 类允许您使用 ExportXml 方法将数据从 PDF 文件导出到 XML 文件。为了将数据导出到 XML，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportXml 方法。最后，您可以关闭 FileStream 对象并释放 Form 对象。以下代码片段向您展示如何将数据导出到 XML 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void ExportFormDataToXml()
 
 Form 类允许您使用 ExportFdf 方法将数据从 PDF 文件导出到 FDF 文件。为了将数据导出到 FDF，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportFdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段向您展示如何将数据导出到 FDF 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void ExportDataToPdf()
 
 Form 类允许您使用 ExportXfdf 方法将数据从 PDF 文件导出到 XFDF 文件。为了将数据导出到 XFDF，您需要创建一个 Form 类的对象，然后使用 FileStream 对象调用 ExportXfdf 方法。最后，您可以使用 Form 类的 Save 方法保存 PDF 文件。以下代码片段向您展示如何将数据导出到 XFDF 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -82,7 +82,7 @@ sitemap:
 
 您可以使用 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) 类在 PDF 文件中添加文本印章。TextStamp 类提供了创建基于文本的印章所需的属性，如字体大小、字体样式和字体颜色等。为了添加文本印章，您需要使用所需的属性创建一个 Document 对象和一个 TextStamp 对象。之后，您可以调用 Page 的 AddStamp 方法将印章添加到 PDF 中。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下代码片段演示了如何在 PDF 文件中添加文本印章。
 

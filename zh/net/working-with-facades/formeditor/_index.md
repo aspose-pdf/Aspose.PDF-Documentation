@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [添加表单字段](/pdf/net/add-form-fields/)
-- [探索 FormEditor 类的功能](/pdf/net/exploring-features-of-formeditor-class/)
-- [在 PDF 中装饰表单字段](/pdf/net/decorate-form-field/)
-- [字段外观和属性](/pdf/net/changing-field-appearance-and-attributes/)
-- [处理列表项](/pdf/net/working-with-list-item/)
-- [复制内部和外部字段](/pdf/net/copy-inner-and-outer-field/)
-- [移动和删除表单字段](/pdf/net/move-remove-form-field/)
-- [导入和导出表单字段](/pdf/net/import-export-form-field/)
+- [添加表单字段](/pdf/zh/net/add-form-fields/)
+- [探索 FormEditor 类的功能](/pdf/zh/net/exploring-features-of-formeditor-class/)
+- [在 PDF 中装饰表单字段](/pdf/zh/net/decorate-form-field/)
+- [字段外观和属性](/pdf/zh/net/changing-field-appearance-and-attributes/)
+- [处理列表项](/pdf/zh/net/working-with-list-item/)
+- [复制内部和外部字段](/pdf/zh/net/copy-inner-and-outer-field/)
+- [移动和删除表单字段](/pdf/zh/net/move-remove-form-field/)
+- [导入和导出表单字段](/pdf/zh/net/import-export-form-field/)

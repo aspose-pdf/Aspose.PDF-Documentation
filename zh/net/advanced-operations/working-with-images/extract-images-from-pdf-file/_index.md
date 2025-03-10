@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 图像保存在每个页面的 [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) 集合的 [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) 集合中。要提取特定页面，然后使用图像的特定索引从 Images 集合中获取图像。
 

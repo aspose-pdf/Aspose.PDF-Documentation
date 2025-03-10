@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [使用 PdfFileMend 类添加图像和文本](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
+- [使用 PdfFileMend 类添加图像和文本](/pdf/zh/net/adding-images-and-text-using-pdffilemend-class/)

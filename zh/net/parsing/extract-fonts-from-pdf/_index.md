@@ -80,7 +80,7 @@ sitemap:
 
 如果您想从 PDF 文档中获取所有字体，可以使用 Document 类中提供的 FontUtilities.GetAllFonts() 方法。请查看以下代码片段以获取现有 PDF 文档中的所有字体：
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

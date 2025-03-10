@@ -89,7 +89,7 @@ XFDF 代表 XML 表单数据格式。它是一种基于 XML 的文件格式。�
 
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 类包含两个方法，用于处理注释的导入和导出到 XFDF 文件。[ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) 方法提供了将注释从 PDF 文档导出到 XFDF 文件的功能，而 [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) 方法允许您从现有的 XFDF 文件导入注释。为了导入或导出注释，我们需要指定注释类型。我们可以以枚举的形式指定这些类型，然后将此枚举作为参数传递给这些方法中的任何一个。这样，只有指定类型的注释才会被导入或导出到 XFDF 文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下代码片段向您展示了如何将注释导出到 XFDF 文件：
 

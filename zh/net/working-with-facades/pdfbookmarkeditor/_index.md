@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [创建书签](/pdf/net/create-bookmarks/)
-- [导入和导出书签](/pdf/net/import-and-export-bookmarks/)
-- [更新、删除和获取书签](/pdf/net/update-delete-and-get-bookmarks/)
+- [创建书签](/pdf/zh/net/create-bookmarks/)
+- [导入和导出书签](/pdf/zh/net/import-and-export-bookmarks/)
+- [更新、删除和获取书签](/pdf/zh/net/update-delete-and-get-bookmarks/)

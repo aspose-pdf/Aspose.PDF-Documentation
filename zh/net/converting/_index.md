@@ -96,40 +96,40 @@ Aspose.PDF for .NET 允许将 PDF 文档转换为各种格式，也允许从其�
 
 Word 文档是最通用和可编辑的格式。手动将 PDF 转换为 Word 是一项非常耗时的任务。在本文中，您将学习如何在 C# 中以编程方式将 PDF 转换为 Word。
 
-- [将 PDF 转换为 Microsoft Word](/pdf/net/convert-pdf-to-word/) - 您可以使用 C# 将 PDF 文档转换为 Word 格式。
+- [将 PDF 转换为 Microsoft Word](/pdf/zh/net/convert-pdf-to-word/) - 您可以使用 C# 将 PDF 文档转换为 Word 格式。
 
 数字格式不仅用于使表格中的数据更易于阅读，还用于使表格更易于使用。当然，如果您需要将此类数据从 PDF 文档转换为 Excel 格式，请使用我们的 Aspose.PDF 库。
 
-- [将 PDF 转换为 Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - 本节描述如何将 PDF 文档转换为 XLSX、ODS、CSV 和 SpreadSheetML。
+- [将 PDF 转换为 Microsoft Excel](/pdf/zh/net/convert-pdf-to-excel/) - 本节描述如何将 PDF 文档转换为 XLSX、ODS、CSV 和 SpreadSheetML。
 
 PowerPoint 格式用于创建各种演示文稿。PPT 文件包含大量幻灯片或页面，包含各种信息。
 
-- [将 PDF 转换为 Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - 这里我们讨论通过跟踪转换过程将 PDF 转换为 PowerPoint。
+- [将 PDF 转换为 Microsoft PowerPoint](/pdf/zh/net/convert-pdf-to-powerpoint/) - 这里我们讨论通过跟踪转换过程将 PDF 转换为 PowerPoint。
 
 超文本标记语言是一种超文本文档描述语言，是创建网页的标准语言。使用 Aspose.PDF for .NET，您可以轻松地将 HTML 文档转换为 PDF，反之亦然。
 
-- [将 HTML 格式转换为 PDF 文件](/pdf/net/convert-html-to-pdf/) - 关于 HTML 转 PDF 转换的不同方面的文章。
-- [将 PDF 文件转换为 HTML 格式](/pdf/net/convert-pdf-to-html/) - 将您的 PDF 文档转换为 HTML 文件，作为单独的页面或作为单个页面。
+- [将 HTML 格式转换为 PDF 文件](/pdf/zh/net/convert-html-to-pdf/) - 关于 HTML 转 PDF 转换的不同方面的文章。
+- [将 PDF 文件转换为 HTML 格式](/pdf/zh/net/convert-pdf-to-html/) - 将您的 PDF 文档转换为 HTML 文件，作为单独的页面或作为单个页面。
 
 有许多图像格式需要转换为 PDF 以满足不同的目的。Aspose.PDF 允许最流行的图像格式及反之亦然。
 
-- [将图像格式转换为 PDF 文件](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF 允许您将不同格式的图像转换为 PDF 文件。
-- [将 PDF 转换为各种图像格式](/pdf/net/convert-pdf-to-images-format/) - 将 PDF 页面转换为 JPEG、PNG 和其他格式的图像。
+- [将图像格式转换为 PDF 文件](/pdf/zh/net/convert-images-format-to-pdf/) - Aspose.PDF 允许您将不同格式的图像转换为 PDF 文件。
+- [将 PDF 转换为各种图像格式](/pdf/zh/net/convert-pdf-to-images-format/) - 将 PDF 页面转换为 JPEG、PNG 和其他格式的图像。
 
 本节包括 EPUB、Markdown、PCL、XPS、LATex/TeX、文本和 PostScript 等格式。
 
-- [将其他文件格式转换为 PDF](/pdf/net/convert-other-files-to-pdf/) - 本主题描述了与 EPUB、XPS、Postscript、文本等各种格式的转换。
-- [将 PDF 文件转换为其他格式](/pdf/net/convert-pdf-to-other-files/) - 本主题描述了将 PDF 文档转换为各种格式的方法。
+- [将其他文件格式转换为 PDF](/pdf/zh/net/convert-other-files-to-pdf/) - 本主题描述了与 EPUB、XPS、Postscript、文本等各种格式的转换。
+- [将 PDF 文件转换为其他格式](/pdf/zh/net/convert-pdf-to-other-files/) - 本主题描述了将 PDF 文档转换为各种格式的方法。
 
 PDF/A 是一种旨在长期归档电子文档的 PDF 版本。
 老实说，从外观上很难判断它是 PDF 还是 PDF/A。要检查此文件，使用验证器。请查看以下文章以获取将 PDF 转换为 PDF/A 及反之的高质量转换。
 
-- [将 PDF 转换为 PDF/A 格式](/pdf/net/convert-pdf-to-pdfa/) - Aspose.PDF 的 .NET 库提供了一种简单的方法将 PDF 转换为 PDF/A。
-- [将 PDF/A 转换为 PDF 格式](/pdf/net/convert-pdfa-to-pdf/) - 使用 C# 轻松、快速且高质量地将 PDF/A 转换为 PDF 格式。
+- [将 PDF 转换为 PDF/A 格式](/pdf/zh/net/convert-pdf-to-pdfa/) - Aspose.PDF 的 .NET 库提供了一种简单的方法将 PDF 转换为 PDF/A。
+- [将 PDF/A 转换为 PDF 格式](/pdf/zh/net/convert-pdfa-to-pdf/) - 使用 C# 轻松、快速且高质量地将 PDF/A 转换为 PDF 格式。
 
 PDF/X 是 PDF 标准的一个子集，促进图形交换，并具有一系列不适用于标准 PDF 文件的与打印相关的要求。
 
-- [将 PDF 转换为 PDF/X 交换格式](/pdf/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET 使转换为各种 PDF/X 标准版本成为可能。
+- [将 PDF 转换为 PDF/X 交换格式](/pdf/zh/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET 使转换为各种 PDF/X 标准版本成为可能。
 
 ## 尝试在线转换 PDF 文件
 

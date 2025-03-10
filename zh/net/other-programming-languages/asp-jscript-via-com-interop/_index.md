@@ -75,7 +75,7 @@ description: 学习如何通过 COM 互操作在 ASP 和 JScript 应用程序中
 
 {{% alert color="primary" %}}
 
-这是一个简单的 ASP 应用程序，向您展示如何使用 [Aspose.PDF for .NET](/pdf/net/) 和 JScript 通过 COM 互操作将简单文本字符串添加到 PDF 文件中。
+这是一个简单的 ASP 应用程序，向您展示如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 和 JScript 通过 COM 互操作将简单文本字符串添加到 PDF 文件中。
 
 {{% /alert %}}
 

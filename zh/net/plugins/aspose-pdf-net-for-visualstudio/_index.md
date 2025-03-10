@@ -13,5 +13,5 @@ sitemap:
 ---
 本节包含以下主题：
 
-- [Visual Studio 导出 GridView 到 PDF 控件](/pdf/net/visual-studio-export-gridview-to-pdf-control/)
-- [Aspose.PDF Visual Studio 插件](/pdf/net/aspose-pdf-visual-studio-plugin/)
+- [Visual Studio 导出 GridView 到 PDF 控件](/pdf/zh/net/visual-studio-export-gridview-to-pdf-control/)
+- [Aspose.PDF Visual Studio 插件](/pdf/zh/net/aspose-pdf-visual-studio-plugin/)

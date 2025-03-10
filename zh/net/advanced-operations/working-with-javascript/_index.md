@@ -88,7 +88,7 @@ PDF 文档具有很大的灵活性，因为它们可以在 Acrobat 软件和 Web
 - Acrobat JavaScript 无法访问 HTML 页面中的对象。同样，HTML JavaScript 也无法访问 PDF 文件中的对象。
 - HTML JavaScript 能够操作诸如 Window 的对象。Acrobat JavaScript 无法访问此特定对象，但可以操作 PDF 特定的对象。
 
-您可以在文档和页面级别添加 JavaScript，使用 [Aspose.PDF for .NET](/pdf/net/)。要添加 JavaScript：
+您可以在文档和页面级别添加 JavaScript，使用 [Aspose.PDF for .NET](/pdf/zh/net/)。要添加 JavaScript：
 
 ### 将 JavaScript 添加到文档或页面操作
 

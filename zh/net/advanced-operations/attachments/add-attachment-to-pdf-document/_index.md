@@ -81,7 +81,7 @@ sitemap:
 
 附件可以包含各种信息，并且可以是多种文件类型。本文解释了如何将附件添加到 PDF 文件。
 
-下一个代码片段也适用于 [Aspose.Drawing](/pdf/net/drawing/) 库。
+下一个代码片段也适用于 [Aspose.Drawing](/pdf/zh/net/drawing/) 库。
 
 1. 创建一个新的 C# 项目。
 1. 添加对 Aspose.PDF DLL 的引用。

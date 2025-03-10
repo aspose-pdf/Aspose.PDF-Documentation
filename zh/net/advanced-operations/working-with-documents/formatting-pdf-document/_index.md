@@ -97,7 +97,7 @@ sitemap:
 - PageLayout – 页面布局。
 - PageMode – 文档首次打开时的显示方式。选项包括显示缩略图、全屏、显示附件面板。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下代码片段演示了如何使用 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 类获取属性。
 

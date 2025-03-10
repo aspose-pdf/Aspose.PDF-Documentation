@@ -91,7 +91,7 @@ sitemap:
 
 {{% /alert %}}
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 以下代码片段演示了如何验证 PDF 文档是否符合 PDF/A-1A。
 

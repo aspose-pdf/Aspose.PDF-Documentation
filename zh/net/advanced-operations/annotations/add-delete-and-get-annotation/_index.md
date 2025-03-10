@@ -85,13 +85,13 @@ sitemap:
 
 我们将 Aspose.PDF for .NET 库中可用的不同类型的注释分为几组：
 
-- [PDF 文本注释](/pdf/net/text-annotation/)
-- [PDF 高亮注释](/pdf/net/highlights-annotation/)
-- [PDF 图形注释](/pdf/net/figures-annotation/)
-- [多媒体注释](/pdf/net/multimedia-annotation/)
-- [PDF 便签注释](/pdf/net/sticky-annotations/)
-- [链接注释](/pdf/net/link-annotations/)
-- [额外注释](/pdf/net/extra-annotations/)
+- [PDF 文本注释](/pdf/zh/net/text-annotation/)
+- [PDF 高亮注释](/pdf/zh/net/highlights-annotation/)
+- [PDF 图形注释](/pdf/zh/net/figures-annotation/)
+- [多媒体注释](/pdf/zh/net/multimedia-annotation/)
+- [PDF 便签注释](/pdf/zh/net/sticky-annotations/)
+- [链接注释](/pdf/zh/net/link-annotations/)
+- [额外注释](/pdf/zh/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

@@ -81,7 +81,7 @@ sitemap:
 
 在本文中，您将学习如何使用C#提取标记内容的PDF文档。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ## 获取标记PDF内容
 

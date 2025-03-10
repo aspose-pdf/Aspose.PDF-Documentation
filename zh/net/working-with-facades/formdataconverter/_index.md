@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [将 FDF 转换为 XML 格式](/pdf/net/converting-an-fdf-to-xml-format/)
-- [将 XML 转换为 FDF 格式](/pdf/net/converting-an-xml-to-fdf-format/)
+- [将 FDF 转换为 XML 格式](/pdf/zh/net/converting-an-fdf-to-xml-format/)
+- [将 XML 转换为 FDF 格式](/pdf/zh/net/converting-an-xml-to-fdf-format/)

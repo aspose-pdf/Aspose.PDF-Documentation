@@ -75,7 +75,7 @@ lastmod: "2022-02-17"
 
 Aspose.PDF for .NET 让您在 .NET 应用程序中读取和设置 PDF 文件中页面的属性。本节展示了如何获取 PDF 文件中的页面数量，获取有关 PDF 页面属性的信息，例如颜色，并设置页面属性。给出的示例是 C# 语言，但您可以使用任何 .NET 语言，例如 VB.NET 来实现相同的功能。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 获取 PDF 文件中的页面数量
 
@@ -188,7 +188,7 @@ private static void AccessingPageProperties()
 
 ## 获取 PDF 文件的特定页面
 
-Aspose.PDF 允许您 [将 PDF 拆分为单个页面](/pdf/net/split-pdf-document/) 并将其保存为 PDF 文件。获取 PDF 文件中的指定页面并将其保存为新 PDF 是一个非常相似的操作：打开源文档，访问页面，创建新文档并将页面添加到此文档中。
+Aspose.PDF 允许您 [将 PDF 拆分为单个页面](/pdf/zh/net/split-pdf-document/) 并将其保存为 PDF 文件。获取 PDF 文件中的指定页面并将其保存为新 PDF 是一个非常相似的操作：打开源文档，访问页面，创建新文档并将页面添加到此文档中。
 
 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 对象的 [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) 保存 PDF 文件中的页面。要从此集合中获取特定页面：
 

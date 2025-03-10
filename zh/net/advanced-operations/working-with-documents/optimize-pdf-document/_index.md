@@ -104,7 +104,7 @@ PDF 文档有时可能包含额外的数据。减少 PDF 文件的大小将帮�
 1. 使用 [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) 方法。
 1. 使用 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 方法保存优化后的文档。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下代码片段演示了如何为网络优化 PDF 文档。
 

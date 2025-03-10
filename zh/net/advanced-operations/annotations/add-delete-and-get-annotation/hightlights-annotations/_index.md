@@ -89,7 +89,7 @@ PDF 文档中的文本标记注释的属性可以使用 PDF 查看控件提供�
 
 下一个功能是使用 underlineSettings 属性获取或设置下划线注释的设置。underlineSettings 属性用于设置下划线注释的颜色、不透明度、作者、主题、修改日期和锁定状态属性。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 添加文本标记注释
 

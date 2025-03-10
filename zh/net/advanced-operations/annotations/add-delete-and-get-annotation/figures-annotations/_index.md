@@ -92,7 +92,7 @@ PDF 文档管理应用程序提供了多种工具用于注释文档。从 PDF �
 
 添加注释的方法对于它们中的任何一种都是典型的。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 1. 加载 PDF 文件或通过 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 创建新文件。
 1. 创建新的注释并设置参数（新的矩形、新的点、标题、颜色、宽度等）。

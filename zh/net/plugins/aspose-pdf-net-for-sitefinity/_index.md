@@ -13,4 +13,4 @@ sitemap:
 ---
 本节包含以下主题：
 
-- [Sitefinity PDF 导入](/pdf/net/sitefinity-pdf-import/)
+- [Sitefinity PDF 导入](/pdf/zh/net/sitefinity-pdf-import/)

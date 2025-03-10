@@ -16,9 +16,9 @@ sitemap:
 
 本节包含最流行的网络应用程序的插件列表：DotNetNuke、Sitefinity、Umbraco 等。
 
-* [Aspose.PDF for .NET 与 Coldfusion](/pdf/net/using-aspose-pdf-for-net-with-coldfusion/)
-* [Aspose.PDF for .NET 与 CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF for .NET 与 DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF for .NET 与 Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
-* [Aspose.PDF for .NET 与 Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF for .NET 与 VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF for .NET 与 Coldfusion](/pdf/zh/net/using-aspose-pdf-for-net-with-coldfusion/)
+* [Aspose.PDF for .NET 与 CRM](/pdf/zh/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF for .NET 与 DNN](/pdf/zh/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF for .NET 与 Sitefinity](/pdf/zh/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF for .NET 与 Umbraco](/pdf/zh/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF for .NET 与 VisualStudio](/pdf/zh/net/aspose-pdf-net-for-visualstudio/)

@@ -122,7 +122,7 @@ private static void AddImage01()
 }
 ```
 
-![添加图像](/pdf/net/images/add_image1.png)
+![添加图像](/pdf/zh/net/images/add_image1.png)
 
 借助 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)，我们可以将一张图像叠加在另一张图像上：
 
@@ -163,7 +163,7 @@ private static void AddImage02()
 }
 ```
 
-![添加图像](/pdf/net/images/add_image2.png)
+![添加图像](/pdf/zh/net/images/add_image2.png)
 
 在 PDF 文件中存储图像有几种方法。我们将在以下示例中演示其中一种：
 
@@ -277,7 +277,7 @@ private static void AddText01()
 
 查看效果：
 
-![添加文本](/pdf/net/images/add_text.png)
+![添加文本](/pdf/zh/net/images/add_text.png)
 
 第二种添加 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) 的方法。此外，我们指明一个矩形，以便我们的文本适合其中。
 

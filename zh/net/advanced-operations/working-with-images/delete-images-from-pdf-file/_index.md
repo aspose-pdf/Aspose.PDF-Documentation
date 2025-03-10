@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 要从PDF文件中删除图像：
 

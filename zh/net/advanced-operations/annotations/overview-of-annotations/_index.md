@@ -83,28 +83,28 @@ sitemap:
 
 |**注释类型**|**描述**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|文本注释|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|链接注释|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) 自由文本注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) 线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) 正方形注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) 圆形注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) 多边形注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) 折线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/net/highlights-annotation/)|(PDF 1.3) 高亮注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/net/highlights-annotation/)|(PDF 1.3) 下划线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Squiggly](/pdf/net/highlights-annotation/)|(PDF 1.4) 波浪下划线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/net/highlights-annotation/)|(PDF 1.3) 删除线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Stamp](/pdf/net/stamping/)|(PDF 1.3) 橡皮章注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) 插入符号注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ink](/pdf/net/figures-annotation/)|(PDF 1.3) 墨水注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Popup](/pdf/net/text-annotation/)|(PDF 1.3) 弹出注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/net/multimedia-annotation/)|(PDF 1.2) 声音注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) 电影注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) 小部件注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) 屏幕注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) 水印注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) 涂黑注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Text](/pdf/zh/net/text-annotation/)|文本注释|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/zh/net/extra-annotations/)|链接注释|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/zh/net/text-annotation/)|(PDF 1.3) 自由文本注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/zh/net/figures-annotation/)|(PDF 1.3) 线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/zh/net/figures-annotation/)|(PDF 1.3) 正方形注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/zh/net/figures-annotation/)|(PDF 1.3) 圆形注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/zh/net/figures-annotation/)|(PDF 1.5) 多边形注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/zh/net/figures-annotation/)|(PDF 1.5) 折线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/zh/net/highlights-annotation/)|(PDF 1.3) 高亮注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/zh/net/highlights-annotation/)|(PDF 1.3) 下划线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/zh/net/highlights-annotation/)|(PDF 1.4) 波浪下划线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/zh/net/highlights-annotation/)|(PDF 1.3) 删除线注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Stamp](/pdf/zh/net/stamping/)|(PDF 1.3) 橡皮章注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/zh/net/extra-annotations/)|(PDF 1.5) 插入符号注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ink](/pdf/zh/net/figures-annotation/)|(PDF 1.3) 墨水注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Popup](/pdf/zh/net/text-annotation/)|(PDF 1.3) 弹出注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/zh/net/multimedia-annotation/)|(PDF 1.2) 声音注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/zh/net/multimedia-annotation/)|(PDF 1.2) 电影注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/zh/net/multimedia-annotation/)|(PDF 1.2) 小部件注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/zh/net/multimedia-annotation/)|(PDF 1.5) 屏幕注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/zh/net/sticky-annotations/)|(PDF 1.6) 水印注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/zh/net/extra-annotations/)|(PDF 1.7) 涂黑注释|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

@@ -90,7 +90,7 @@ sitemap:
 - **Page.Rect**：媒体框和出血框的交集（通常可见的矩形）。下图说明了这些属性。
 有关更多详细信息，请访问 [此页面](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 下面的代码片段演示了如何裁剪页面：
 

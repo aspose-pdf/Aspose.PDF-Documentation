@@ -105,7 +105,7 @@ sitemap:
    - 使用 Do 操作符在页面上绘制图像。
 1. 最后，使用 GRestore 操作符保存更新后的图形状态。
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 以下代码片段演示了如何使用 PDF 操作符。
 

@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [导出 Excel 工作表数据以填充 PDF 表单](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [导出 Excel 工作表数据以填充 PDF 表单](/pdf/zh/net/export-excel-worksheet-data-to-fill-pdf-form/)

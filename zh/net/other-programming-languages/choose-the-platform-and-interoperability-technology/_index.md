@@ -76,7 +76,7 @@ url: /zh/net/choose-the-platform-and-interoperability-technology/
 
 **Aspose.PDF 类库有三个版本：**
 
-[Aspose.PDF](/pdf/) 是一个产品系列，提供从头生成 PDF 文档的功能，以及编辑/操作现有文档的能力。Aspose.PDF 有三个不同的产品：[Aspose.PDF for .NET](/pdf/net/)、[Aspose.PDF for Java](/pdf/java/) 和 [Aspose.PDF for C++](/pdf/cpp/)。我们可以说 Aspose.PDF “原生”支持：
+[Aspose.PDF](/pdf/) 是一个产品系列，提供从头生成 PDF 文档的功能，以及编辑/操作现有文档的能力。Aspose.PDF 有三个不同的产品：[Aspose.PDF for .NET](/pdf/zh/net/)、[Aspose.PDF for Java](/pdf/java/) 和 [Aspose.PDF for C++](/pdf/cpp/)。我们可以说 Aspose.PDF “原生”支持：
 
 - .NET Framework 及所有针对 .NET 平台的编程语言，如 C# 或 VB.NET。
 - Java 平台和 Java 编程语言。
@@ -84,7 +84,7 @@ url: /zh/net/choose-the-platform-and-interoperability-technology/
 
 {{% /alert %}}
 
-请注意，还可以从许多编程语言中使用 [Aspose.PDF for .NET](/pdf/net/)，包括：ASP、C++、ColdFusion、Delphi、JavaScript、Perl、PHP、PowerBuilder、Python、VBScript 等。
+请注意，还可以从许多编程语言中使用 [Aspose.PDF for .NET](/pdf/zh/net/)，包括：ASP、C++、ColdFusion、Delphi、JavaScript、Perl、PHP、PowerBuilder、Python、VBScript 等。
 
 ## 对其他语言的支持
 
@@ -92,7 +92,7 @@ url: /zh/net/choose-the-platform-and-interoperability-technology/
 
 本节包含有关如何在不同编程语言中使用 Aspose.PDF 的建议和文档链接，涵盖以下主题：
 
-- 可用的现成包装器 [Aspose.PDF for .NET](/pdf/net/)。
+- 可用的现成包装器 [Aspose.PDF for .NET](/pdf/zh/net/)。
 - 如何创建对象、调用方法和访问 Aspose.PDF for .NET 对象的属性。
 
 如果您遵循本节中概述的原则，您将能够在项目中使用 Aspose.PDF 的许多功能。
@@ -111,7 +111,7 @@ Aspose.PDF 产品的完整列表可以在 [此页面](/pdf/) 找到。它包括�
 
 **从其他语言访问 Aspose.PDF 对象**
 
-从其他编程语言使用 Aspose.PDF 需要一种 *互操作性技术*。该技术必须使您的语言能够调用为 .NET、Java 或 C++ 编写的类库。我们建议使用 [COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/) 技术与 [Aspose.PDF for .NET](/pdf/net/) 类库结合使用，以适用于多种编程语言：
+从其他编程语言使用 Aspose.PDF 需要一种 *互操作性技术*。该技术必须使您的语言能够调用为 .NET、Java 或 C++ 编写的类库。我们建议使用 [COM Interop](/pdf/zh/net/use-aspose-pdf-for-net-via-com-interop/) 技术与 [Aspose.PDF for .NET](/pdf/zh/net/) 类库结合使用，以适用于多种编程语言：
 - ASP。
 - Delphi。
 - Perl。
@@ -125,6 +125,6 @@ Aspose.PDF 产品的完整列表可以在 [此页面](/pdf/) 找到。它包括�
 ## 结论
 
 {{% alert color="primary" %}}
-上述文章表明，使用 [Aspose.PDF for .NET](/pdf/net/) 超越了 .NET 编程语言。
+上述文章表明，使用 [Aspose.PDF for .NET](/pdf/zh/net/) 超越了 .NET 编程语言。
 
 {{% /alert %}}

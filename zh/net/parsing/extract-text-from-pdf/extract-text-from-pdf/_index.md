@@ -82,7 +82,7 @@ sitemap:
 
 从 PDF 文档中提取文本是一个常见的需求。在这个例子中，您将看到 Aspose.PDF for .NET 如何允许从 PDF 文档的所有页面提取文本。您需要创建一个 **TextAbsorber** 类的对象。之后，使用 **Document** 类打开 PDF 并调用 **Pages** 集合的 **Accept** 方法。**TextAbsorber** 类从文档中吸收文本并在 **Text** 属性中返回。以下代码片段向您展示了如何从 PDF 文档的所有页面提取文本。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -115,7 +115,7 @@ private static void ExtractTextFromDocument()
 
 在 Document 对象的特定页面上调用 **Accept** 方法。索引是需要提取文本的特定页面编号。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -161,7 +161,7 @@ private static void ExtractTextFromPage()
 1. 使用 TextDevice 类的 Process 方法将内容转换为文本。
 1. 将文本保存到输出文件。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -211,7 +211,7 @@ private static void ExtractTextFromPagesWithTextDevice()
 
 调用页面的 **Accept** 方法以提取文本。创建 **Document** 和 **TextAbsorber** 类的对象。在 **Document** 对象的单个页面上调用 **Accept** 方法，作为 **Page** 索引。**Index** 是需要提取文本的特定页面编号。您可以从 **TextAbsorber** 类的 **Text** 属性中获取文本。以下代码片段向您展示了如何从单个页面提取文本。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void ExtractTextFromParticularPageRegion()
 
 PDF 文件可能包含文本、图像、注释、附件、图表等元素，而 Aspose.PDF for .NET 提供了添加和操作所有这些元素的功能。该 API 在 PDF 文档中添加和提取文本时表现出色，我们可能会遇到一个场景，其中 PDF 文档包含多个列（多列）PDF 文档，我们需要在保持相同布局的情况下提取页面内容，那么 Aspose.PDF for .NET 是实现此需求的正确选择。一种方法是减少 PDF 文档中内容的字体大小，然后执行文本提取。以下代码片段展示了减少文本大小的步骤，然后尝试从 PDF 文档中提取文本。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -296,7 +296,7 @@ private static void ExtractTextBasedOnColumns()
 
 我们建议在处理大量 PDF 文件以提取文本内容时使用自动缩放（ScaleFactor = 0）。或者手动设置冗余的网格宽度缩小（约 ScaleFactor = 0.5）。但是，您必须确定是否需要对具体文档进行缩放。如果您为不需要缩放的文档设置冗余的网格宽度缩小，提取的文本内容将保持完全适当。请查看以下代码片段。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -333,7 +333,7 @@ private static void ExctractTextWithScaleFactor()
 
 在从 PDF 文档提取文本的各种场景中，您可能会遇到仅提取 PDF 文档中高亮文本的需求。为了实现此功能，我们在 API 中添加了 TextMarkupAnnotation.GetMarkedText() 和 TextMarkupAnnotation.GetMarkedTextFragments() 方法。您可以通过过滤 TextMarkupAnnotation 并使用上述方法从 PDF 文档中提取高亮文本。以下代码片段展示了如何从 PDF 文档中提取高亮文本。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -369,7 +369,7 @@ private static void ExtractHighlightedTextFromDocument()
 
 有时在处理从 XML 生成的 PDF 文档时，我们需要访问 TextFragment 或 TextSegment 项。Aspose.PDF for .NET 通过名称提供对这些项的访问。下面的代码片段展示了如何使用此功能。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

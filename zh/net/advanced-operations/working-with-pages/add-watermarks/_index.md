@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** 允许使用 Artifacts 向您的 PDF 文档添加水印。请查看本文以解决您的任务。
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 使用 Adobe Acrobat 创建的水印称为工件（如 PDF 规范中的 14.8.2.2 真实内容和工件所述）。为了处理工件，Aspose.PDF 有两个类：[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 和 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection)。
 

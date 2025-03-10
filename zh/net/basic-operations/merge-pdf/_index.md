@@ -83,7 +83,7 @@ sitemap:
 在 C# 中合并 PDF 不是一项简单的任务，除非使用第三方库。
 本文展示了如何使用 Aspose.PDF for .NET 将多个 PDF 文件合并为一个单一的 PDF 文档。示例使用 C# 编写，但该 API 也可以在其他 .NET 编程语言中使用，例如 VB.NET。PDF 文件的合并方式是将第一个文件连接到其他文档的末尾。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 合并 PDF 文件
 

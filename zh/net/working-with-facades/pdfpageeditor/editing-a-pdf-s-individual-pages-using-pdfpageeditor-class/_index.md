@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Aspose.Pdf.Facades 命名空间在 [Aspose.PDF for .NET](/pdf/net/) 中允许您操作 PDF 文件中的单独页面。此功能帮助您处理页面显示、对齐和过渡等。PdfpageEditor 类帮助实现此功能。在本文中，我们将探讨此类提供的属性和方法以及这些方法的工作原理。
+Aspose.Pdf.Facades 命名空间在 [Aspose.PDF for .NET](/pdf/zh/net/) 中允许您操作 PDF 文件中的单独页面。此功能帮助您处理页面显示、对齐和过渡等。PdfpageEditor 类帮助实现此功能。在本文中，我们将探讨此类提供的属性和方法以及这些方法的工作原理。
 
 {{% /alert %}}
 

@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [创建链接](/pdf/net/create-links/) - 学习如何使用C#在PDF文件中简单地创建链接。
-- [更新链接](/pdf/net/update-links/) - 尝试将目标设置为PDF，尝试将链接目标设置为网页地址，尝试将链接目标设置为另一个PDF文件，更新链接文本颜色。
-- [提取链接](/pdf/net/extract-links) - 使用AnnotationSelector类从PDF文件中提取链接。
+- [创建链接](/pdf/zh/net/create-links/) - 学习如何使用C#在PDF文件中简单地创建链接。
+- [更新链接](/pdf/zh/net/update-links/) - 尝试将目标设置为PDF，尝试将链接目标设置为网页地址，尝试将链接目标设置为另一个PDF文件，更新链接文本颜色。
+- [提取链接](/pdf/zh/net/extract-links) - 使用AnnotationSelector类从PDF文件中提取链接。
 
 <script type="application/ld+json">
 {

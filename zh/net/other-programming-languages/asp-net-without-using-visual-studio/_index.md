@@ -75,7 +75,7 @@ description: 学习如何在 ASP.NET 项目中使用 Aspose.PDF for .NET，而�
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/) 可用于开发不使用 Visual Studio 的 ASP.NET 页面或应用程序。在此示例中，我们将在单个 .aspx 文件中编写 HTML 和 C# 或 VB.NET 代码；这通常被称为即时 ASP.NET。
+[Aspose.PDF for .NET](/pdf/zh/net/) 可用于开发不使用 Visual Studio 的 ASP.NET 页面或应用程序。在此示例中，我们将在单个 .aspx 文件中编写 HTML 和 C# 或 VB.NET 代码；这通常被称为即时 ASP.NET。
 
 {{% /alert %}}
 
@@ -84,7 +84,7 @@ description: 学习如何在 ASP.NET 项目中使用 Aspose.PDF for .NET，而�
 {{% alert color="primary" %}}
 
 创建一个示例 web 应用程序，并将 Aspose.PDF.dll 复制到您网站目录中名为 "Bin" 的目录中（*如果 bin 文件夹不存在，请创建一个*）。然后创建您的 .aspx 页面并将以下代码复制到其中。
-此示例演示如何在 ASP.NET 页面中使用 [Aspose.PDF for .NET](/pdf/net/) 和内联代码，以创建一个包含一些示例文本的简单 PDF 文档。
+此示例演示如何在 ASP.NET 页面中使用 [Aspose.PDF for .NET](/pdf/zh/net/) 和内联代码，以创建一个包含一些示例文本的简单 PDF 文档。
 {{% /alert %}}
 
 ```cs

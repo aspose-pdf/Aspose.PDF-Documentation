@@ -81,7 +81,7 @@ XFDF 代表 XML 表单数据格式。它是一种基于 XML 的文件格式。�
 
 ## 导入和导出注释到 XFDF
 
-[Aspose.PDF for .NET](/pdf/net/) 是一个功能丰富的组件，涉及 PDF 文档的编辑。正如我们所知，XFDF 是 PDF 表单操作的重要方面，[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/net/) 中对此进行了很好的考虑，并提供了将注释数据导入和导出到 XFDF 文件的方法。
+[Aspose.PDF for .NET](/pdf/zh/net/) 是一个功能丰富的组件，涉及 PDF 文档的编辑。正如我们所知，XFDF 是 PDF 表单操作的重要方面，[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中对此进行了很好的考虑，并提供了将注释数据导入和导出到 XFDF 文件的方法。
 
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 类包含两个方法，用于处理注释的导入和导出到 XFDF 文件。[ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) 方法提供了将注释从 PDF 文档导出到 XFDF 文件的功能，而 [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) 方法允许您从现有的 XFDF 文件导入注释。为了导入或导出注释，我们需要指定注释类型。我们可以以枚举的形式指定这些类型，然后将该枚举作为参数传递给这些方法中的任何一个。这样，只有指定类型的注释才会被导入或导出到 XFDF 文件。
 

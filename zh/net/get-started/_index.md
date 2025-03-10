@@ -83,24 +83,24 @@ sitemap:
 
 要了解更多关于 Aspose.PDF 的信息，请选择相应的部分：
 
-- [为什么选择 Aspose.PDF](/pdf/net/why-aspose-pdf/) – 描述了为什么使用 Aspose 产品可能比其他产品更好的原因，例如 Microsoft Office 自动化或 Open XML SDK。
-- [安装](/pdf/net/installation/) – 提供有关如何安装 Aspose.PDF 的信息。
-- [系统要求](/pdf/net/system-requirements/) – 提供有关系统和开发环境要求的信息。
-- [Hello World](/pdf/net/hello-world-example/) – 提供有关如何使用 C# 和 Aspose.PDF 创建简单 PDF 文档的信息。
-- [如何运行示例](/pdf/net/how-to-run-other-examples/) – 描述如何下载和运行示例以及必须满足的软件要求。
-- [复杂 PDF](/pdf/net/complex-pdf-example/) – 描述如何使用 C# 库创建更复杂的文档。
-- [支持的文档格式](/pdf/net/supported-file-formats/) – 提供有关支持的格式的信息。
-- [支持的功能](/pdf/net/key-features/) – 提供有关在各种格式中加载或保存文档时支持的功能的信息。
-- [许可和订阅](/pdf/net/licensing/) – 提供有关应用许可证和使用多个 Aspose 产品的信息。
-- [技术支持](/pdf/net/technical-support/) – 本页面提供快速和高质量解决任务的建议。
-- [如何在 Docker 中运行 Aspose.PDF](/pdf/net/docker/) – 提供有关如何在 Docker 容器中使用 Aspose.PDF 的信息。
-- [Aspose.PDF.Drawing for .NET 概述](/pdf/net/drawing/) – 提供有关如何使用 Aspose.Drawing 库而不是 System.Drawing 的信息。
-- [Aspose.PDF DOM API 基础](/pdf/net/basics-of-dom-api/) – 本节将展示使用 DOM 的功能，结构化文档作为面向对象模型的表现形式。
-- [高级功能](/pdf/net/advanced-features/) – 本节将展示使用 PDF 的高级功能。
+- [为什么选择 Aspose.PDF](/pdf/zh/net/why-aspose-pdf/) – 描述了为什么使用 Aspose 产品可能比其他产品更好的原因，例如 Microsoft Office 自动化或 Open XML SDK。
+- [安装](/pdf/zh/net/installation/) – 提供有关如何安装 Aspose.PDF 的信息。
+- [系统要求](/pdf/zh/net/system-requirements/) – 提供有关系统和开发环境要求的信息。
+- [Hello World](/pdf/zh/net/hello-world-example/) – 提供有关如何使用 C# 和 Aspose.PDF 创建简单 PDF 文档的信息。
+- [如何运行示例](/pdf/zh/net/how-to-run-other-examples/) – 描述如何下载和运行示例以及必须满足的软件要求。
+- [复杂 PDF](/pdf/zh/net/complex-pdf-example/) – 描述如何使用 C# 库创建更复杂的文档。
+- [支持的文档格式](/pdf/zh/net/supported-file-formats/) – 提供有关支持的格式的信息。
+- [支持的功能](/pdf/zh/net/key-features/) – 提供有关在各种格式中加载或保存文档时支持的功能的信息。
+- [许可和订阅](/pdf/zh/net/licensing/) – 提供有关应用许可证和使用多个 Aspose 产品的信息。
+- [技术支持](/pdf/zh/net/technical-support/) – 本页面提供快速和高质量解决任务的建议。
+- [如何在 Docker 中运行 Aspose.PDF](/pdf/zh/net/docker/) – 提供有关如何在 Docker 容器中使用 Aspose.PDF 的信息。
+- [Aspose.PDF.Drawing for .NET 概述](/pdf/zh/net/drawing/) – 提供有关如何使用 Aspose.Drawing 库而不是 System.Drawing 的信息。
+- [Aspose.PDF DOM API 基础](/pdf/zh/net/basics-of-dom-api/) – 本节将展示使用 DOM 的功能，结构化文档作为面向对象模型的表现形式。
+- [高级功能](/pdf/zh/net/advanced-features/) – 本节将展示使用 PDF 的高级功能。
 
 ## 了解更多关于
 
-- [DOM API 基础](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" C# 示例](/pdf/net/hello-world-example/)
-- [复杂 PDF](/pdf/net/complex-pdf-example/)
-- [如何运行其他示例](/pdf/net/how-to-run-other-examples/)
+- [DOM API 基础](/pdf/zh/net/basics-of-dom-api/)
+- ["Hello, World" C# 示例](/pdf/zh/net/hello-world-example/)
+- [复杂 PDF](/pdf/zh/net/complex-pdf-example/)
+- [如何运行其他示例](/pdf/zh/net/how-to-run-other-examples/)

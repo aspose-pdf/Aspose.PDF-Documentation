@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [设置 PDF 文件信息](/pdf/net/set-pdf-file-information/)
-- [获取 PDF 文件信息](/pdf/net/get-pdf-file-information/)
+- [设置 PDF 文件信息](/pdf/zh/net/set-pdf-file-information/)
+- [获取 PDF 文件信息](/pdf/zh/net/get-pdf-file-information/)

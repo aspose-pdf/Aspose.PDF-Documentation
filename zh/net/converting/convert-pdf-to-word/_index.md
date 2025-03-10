@@ -100,7 +100,7 @@ _格式_: **Word**
 - [C# 将 PDF 转换为 Word](#csharp-pdf-to-doc)
 - [C# 如何将 PDF 文件转换为 Word](#csharp-pdf-to-docx)
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## PDF 转 DOC 和 DOCX 转换
 
@@ -179,7 +179,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)，您可以尝试探索其功能和工作质量。
 
-[![将 PDF 转换为 DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![将 PDF 转换为 DOC](/pdf/zh/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## 将 PDF 转换为 DOCX (Microsoft Word 2007-2024) 文件
@@ -243,7 +243,7 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NET 为您提供在线免费应用程序 ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)，您可以尝试探索其功能和工作质量。
 
-[![Aspose.PDF 将 PDF 转换为 Word 免费应用](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF 将 PDF 转换为 Word 免费应用](/pdf/zh/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET**允许您在现有的PDF文件中添加页眉和页脚。您可以向PDF文档添加图像或文本。此外，尝试使用C#在一个PDF文件中添加不同的页眉。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ## 在PDF文件的页眉中添加文本
 

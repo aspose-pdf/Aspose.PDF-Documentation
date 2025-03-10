@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 可以设置添加到 PDF 文件中的图像的大小。为了设置大小，可以使用 Aspose.Pdf.Image 类的 FixWidth 和 FixHeight 属性。以下代码片段演示了如何设置图像的大小：
 

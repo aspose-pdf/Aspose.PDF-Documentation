@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-此功能也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+此功能也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 使用 FloatingBox 工具的基础知识
 

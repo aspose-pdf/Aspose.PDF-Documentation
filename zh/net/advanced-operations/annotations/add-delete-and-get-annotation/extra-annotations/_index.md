@@ -83,7 +83,7 @@ sitemap:
 
 插入符注释是指示文本编辑的符号。插入符注释也是标记注释，因此插入符类派生自标记类，并提供获取或设置插入符注释属性以及重置插入符注释外观流的功能。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 创建插入符注释的步骤：
 

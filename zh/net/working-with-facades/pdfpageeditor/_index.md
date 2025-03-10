@@ -14,7 +14,7 @@ sitemap:
 ---
 **PdfPage Editor** 旨在对页面进行各种操作：
 
-- [在 PDF 文档中旋转页面](/pdf/net/working-with-page-rotation/)
-- [应用过渡和其他视觉效果](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
-- [更改 PDF 文件中的页面大小](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-- [操作页面属性](/pdf/net/manipulate-page-properties/)
+- [在 PDF 文档中旋转页面](/pdf/zh/net/working-with-page-rotation/)
+- [应用过渡和其他视觉效果](/pdf/zh/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
+- [更改 PDF 文件中的页面大小](/pdf/zh/net/changing-page-sizes-in-a-pdf-file/)
+- [操作页面属性](/pdf/zh/net/manipulate-page-properties/)

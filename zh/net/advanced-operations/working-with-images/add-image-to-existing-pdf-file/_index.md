@@ -80,7 +80,7 @@ lastmod: "2022-02-17"
 
 每个 PDF 页面包含资源和内容属性。资源可以是图像和表单，而内容由一组 PDF 操作符表示。每个操作符都有其名称和参数。此示例使用操作符将图像添加到 PDF 文件中。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 要将图像添加到现有 PDF 文件中：
 

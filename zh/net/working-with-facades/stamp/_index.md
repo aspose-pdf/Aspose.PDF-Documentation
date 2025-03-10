@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [向现有 PDF 添加多行水印](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [围绕中心点旋转印章](/pdf/net/rotating-stamp-about-the-center-point/)
+- [向现有 PDF 添加多行水印](/pdf/zh/net/adding-multi-line-watermark-to-existing-pdf/)
+- [围绕中心点旋转印章](/pdf/zh/net/rotating-stamp-about-the-center-point/)

@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [处理 PDF 打印 - 外观](/pdf/net/working-with-pdf-printing-facades/)
+- [处理 PDF 打印 - 外观](/pdf/zh/net/working-with-pdf-printing-facades/)

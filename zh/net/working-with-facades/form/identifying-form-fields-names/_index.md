@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/net/) 提供创建、编辑和填写已创建的 Pdf 表单的能力。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 命名空间包含 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) 类，该类包含名为 [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) 的函数，它接受两个参数，即字段名称和字段值。因此，为了填写表单字段，您必须知道确切的表单字段名称。
+[Aspose.PDF for .NET](/pdf/zh/net/) 提供创建、编辑和填写已创建的 Pdf 表单的能力。[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 命名空间包含 [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) 类，该类包含名为 [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) 的函数，它接受两个参数，即字段名称和字段值。因此，为了填写表单字段，您必须知道确切的表单字段名称。
 
 ## 实现细节
 

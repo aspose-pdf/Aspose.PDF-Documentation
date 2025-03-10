@@ -82,7 +82,7 @@ sitemap:
 
 当您需要应用包含图形、文本、表格的复合印章时，可以使用 [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp)。以下示例演示了如何使用印章创建类似于 Adobe InDesign、Illustrator、Microsoft Word 的文具。假设我们有一些输入文档，并希望应用两种蓝色和梅子色的边框。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

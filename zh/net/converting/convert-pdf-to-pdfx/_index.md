@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** 使您能够将 PDF 文件转换为符合 <abbr title="Portable Document Format eXchange">PDF/X</abbr> 的 PDF 文件。本文将解释如何进行转换。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 支持的标准
 **Aspose.PDF for .NET** 支持以下标准：PDF/X-1a:2001、PDF/X-1a:2003、PDF/X-3:2003、PDF/X-4。

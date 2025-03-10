@@ -80,7 +80,7 @@ sitemap:
 
 本主题描述了如何使用 C# 程序化地更新或更改现有 PDF 文件中页面的方向。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 更改页面方向
 

@@ -89,15 +89,15 @@ PDF是一项开放标准，由国际标准化组织（ISO）维护。
 
 你可以执行以下操作：
 
-- [Formatting PDF Document](/pdf/net/formatting-pdf-document/) - 创建文档、获取和设置文档属性、嵌入字体以及对PDF文件的其他操作。
-- [Manipulate PDF Document](/pdf/net/manipulate-pdf-document/) - 验证PDF文档是否符合PDF A标准、处理目录、设置PDF过期日期等。
-- [Optimize PDF](/pdf/net/optimize-pdf/) - 优化页面内容、优化文件大小、移除未使用的对象、压缩所有图像以实现文档优化。
-- [Merge PDF](/pdf/net/merge-pdf-documents/) - 使用C#将多个PDF文件合并为一个PDF文档。
-- [Split PDF](/pdf/net/split-document/) - 在你的.NET应用程序中将PDF页面拆分为独立的PDF文件。
-- [Concatenate PDF files in folder](/pdf/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - 使用PdfFileEditor类合并特定文件夹中的所有PDF文件。
-- [Concatenate multiple PDF files using MemoryStreams](/pdf/net/concatenate-pdf-documents/) - 你将学习如何使用C#中的MemoryStreams合并多个PDF文件。
-- [Create Crash Reports](/pdf/net/generate-crash-reports/) - 使用C#生成崩溃报告。
-- [Working with Headings](/pdf/net/working-with-headings/) - 你可以使用C#在PDF文档的标题中创建编号。
+- [Formatting PDF Document](/pdf/zh/net/formatting-pdf-document/) - 创建文档、获取和设置文档属性、嵌入字体以及对PDF文件的其他操作。
+- [Manipulate PDF Document](/pdf/zh/net/manipulate-pdf-document/) - 验证PDF文档是否符合PDF A标准、处理目录、设置PDF过期日期等。
+- [Optimize PDF](/pdf/zh/net/optimize-pdf/) - 优化页面内容、优化文件大小、移除未使用的对象、压缩所有图像以实现文档优化。
+- [Merge PDF](/pdf/zh/net/merge-pdf-documents/) - 使用C#将多个PDF文件合并为一个PDF文档。
+- [Split PDF](/pdf/zh/net/split-document/) - 在你的.NET应用程序中将PDF页面拆分为独立的PDF文件。
+- [Concatenate PDF files in folder](/pdf/zh/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - 使用PdfFileEditor类合并特定文件夹中的所有PDF文件。
+- [Concatenate multiple PDF files using MemoryStreams](/pdf/zh/net/concatenate-pdf-documents/) - 你将学习如何使用C#中的MemoryStreams合并多个PDF文件。
+- [Create Crash Reports](/pdf/zh/net/generate-crash-reports/) - 使用C#生成崩溃报告。
+- [Working with Headings](/pdf/zh/net/working-with-headings/) - 你可以使用C#在PDF文档的标题中创建编号。
 
 <script type="application/ld+json">
 {

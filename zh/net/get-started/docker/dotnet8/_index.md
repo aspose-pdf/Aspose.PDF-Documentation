@@ -97,9 +97,9 @@ sitemap:
 
 ### 在 Linux 容器中使用 ASP.NET Core Web App 生成 PDF 文档
 
-我们将在此应用程序中使用 **复杂示例** 的代码。请按照 [此链接](/pdf/net/complex-pdf-example/) 获取更详细的说明。
+我们将在此应用程序中使用 **复杂示例** 的代码。请按照 [此链接](/pdf/zh/net/complex-pdf-example/) 获取更详细的说明。
 
-1. 在 `wwwroot` 文件夹中创建 `images` 文件夹并放入图像 `logo.png`。您可以从 [这里](/pdf/net/docker/logo.png) 下载此图像。
+1. 在 `wwwroot` 文件夹中创建 `images` 文件夹并放入图像 `logo.png`。您可以从 [这里](/pdf/zh/net/docker/logo.png) 下载此图像。
 1. 在 `wwwroot` 文件夹中创建 `fonts` 文件夹并将 [Roboto](https://fonts.google.com/specimen/Roboto) 字体放入其中。
 1. 在 `wwwroot` 文件夹中创建 `samples` 文件夹并将示例数据放入其中。
 1. 用以下代码替换 `HomeController.cs` 中的代码（请注意，您可以有其他命名空间）：

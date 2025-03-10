@@ -81,7 +81,7 @@ sitemap:
 
 创建标记 PDF 意味着向文档添加（或创建）某些元素，以使文档能够根据 PDF/UA 要求进行验证。这些元素通常称为结构元素。
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ## 创建标记 PDF（简单场景）
 

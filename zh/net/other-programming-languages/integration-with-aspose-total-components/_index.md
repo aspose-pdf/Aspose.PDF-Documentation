@@ -72,5 +72,5 @@ url: /zh/net/integration-with-aspose-total-components/
 }
 </script>
 
-- [将 PDF 页面转换为图像并识别条形码](/pdf/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
-- [从 PDF 中提取图像并识别条形码](/pdf/net/extract-images-from-pdf-and-recognize-barcodes/)
+- [将 PDF 页面转换为图像并识别条形码](/pdf/zh/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
+- [从 PDF 中提取图像并识别条形码](/pdf/zh/net/extract-images-from-pdf-and-recognize-barcodes/)

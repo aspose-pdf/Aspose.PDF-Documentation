@@ -81,7 +81,7 @@ sitemap:
 
 ## 将链接注释添加到现有PDF文件
 
-> 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+> 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 一个 [链接注释](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) 代表一个超链接、一个其他地方的目标和一个文档。根据PDF标准，链接注释可以在三种情况下使用：打开页面视图、打开文件和打开网页。
 

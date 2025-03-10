@@ -84,7 +84,7 @@ url: /zh/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-这是一个简单的 ASP 应用程序，向您展示如何使用 [Aspose.PDF for .NET](/pdf/net/) 和 VBScript 通过 COM 互操作创建带有示例文本的 PDF 文件。
+这是一个简单的 ASP 应用程序，向您展示如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 和 VBScript 通过 COM 互操作创建带有示例文本的 PDF 文件。
 
 {{% /alert %}}
 

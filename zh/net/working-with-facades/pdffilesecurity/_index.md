@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [加密 PDF 文件](/pdf/net/encrypt-pdf-file/)
-- [解密 PDF 文件](/pdf/net/decrypt-pdf-file/)
-- [控制异常 PDF 文件](/pdf/net/control-exception/)
-- [更改 PDF 文件的密码](/pdf/net/change-password/)
-- [在现有 PDF 文件上设置权限](/pdf/net/set-privileges/)
+- [加密 PDF 文件](/pdf/zh/net/encrypt-pdf-file/)
+- [解密 PDF 文件](/pdf/zh/net/decrypt-pdf-file/)
+- [控制异常 PDF 文件](/pdf/zh/net/control-exception/)
+- [更改 PDF 文件的密码](/pdf/zh/net/change-password/)
+- [在现有 PDF 文件上设置权限](/pdf/zh/net/set-privileges/)

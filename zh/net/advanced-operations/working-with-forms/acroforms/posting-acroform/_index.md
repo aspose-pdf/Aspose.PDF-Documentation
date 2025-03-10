@@ -87,7 +87,7 @@ AcroForm 是 PDF 文档的一种重要类型。您不仅可以使用 [Aspose.Pdf
 
 ## 实现细节
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 在本文中，我们尝试使用 [Aspose.Pdf.Facades 命名空间](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace) 创建一个 AcroForm。我们还添加了一个提交按钮并设置了其目标 URL。以下代码片段向您展示了如何创建表单，然后在网页上接收发布的数据。
 

@@ -96,7 +96,7 @@ Aspose.PDF for .NET 为您提供了在线免费应用程序 ["PDF 到 PDF/A-1A"]
 [![Aspose.PDF 将 PDF 转换为 PDF/A 的免费应用](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 支持的标准
 我们支持以下标准：PDF/A-1b、PDF/A-1a、PDF/A-2b、PDF/A-2u、PDF/A-2a、PDF/A-3b、PDF/A-3u、PDF/A-3a、PDF/A-4、PDF/A-4e、PDF/A-4f。

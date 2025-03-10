@@ -84,7 +84,7 @@ sitemap:
 
 **通过在 PDF 页面上绘制文本的部分和段落的边框：**
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Pag
 
 **通过迭代段落集合并获取它们的文本：**
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

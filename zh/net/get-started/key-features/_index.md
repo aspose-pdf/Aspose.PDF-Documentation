@@ -81,11 +81,11 @@ sitemap:
 
 ## 跨平台软件
 
-支持各种平台和 .NET 版本。有关详细信息，请参见 [系统要求](/pdf/net/system-requirements/)。
+支持各种平台和 .NET 版本。有关详细信息，请参见 [系统要求](/pdf/zh/net/system-requirements/)。
 
 ## 一般功能
 
-Aspose.PDF 提供强大的文档对象模型 (DOM)，以探索和修改所有类型的 PDF 内容。支持从广泛的 [文件格式](/pdf/net/supported-file-formats/) 加载和保存。
+Aspose.PDF 提供强大的文档对象模型 (DOM)，以探索和修改所有类型的 PDF 内容。支持从广泛的 [文件格式](/pdf/zh/net/supported-file-formats/) 加载和保存。
 
 ## 支持的 PDF 标准
 

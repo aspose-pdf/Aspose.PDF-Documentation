@@ -78,8 +78,8 @@ sitemap:
 }
 </script>
 
-[Hello, World](/pdf/net/hello-world-example/) 示例展示了使用 C# 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 C# 和 Aspose.PDF for .NET 创建更复杂的文档。作为示例，我们将使用一家虚构公司的文档，该公司经营客运渡轮服务。
-我们的文档将包含一张图像、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于DOM的方法。您可以在 [DOM API 基础知识](/pdf/net/basics-of-dom-api/) 部分中阅读更多内容。
+[Hello, World](/pdf/zh/net/hello-world-example/) 示例展示了使用 C# 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将看看如何使用 C# 和 Aspose.PDF for .NET 创建更复杂的文档。作为示例，我们将使用一家虚构公司的文档，该公司经营客运渡轮服务。
+我们的文档将包含一张图像、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于DOM的方法。您可以在 [DOM API 基础知识](/pdf/zh/net/basics-of-dom-api/) 部分中阅读更多内容。
 
 如果我们从头开始创建文档，我们需要遵循以下步骤：
 
@@ -94,7 +94,7 @@ sitemap:
 1. 将（表格）添加到页面的 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)。
 1. 保存文档为 "Complex.pdf"。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

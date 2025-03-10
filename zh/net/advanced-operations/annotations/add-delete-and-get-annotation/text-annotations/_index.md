@@ -81,7 +81,7 @@ sitemap:
 
 ## 如何将文本注释添加到现有PDF文件
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 文本注释是附加到PDF文档中特定位置的注释。关闭时，注释显示为图标；打开时，应显示一个弹出窗口，其中包含读者选择的字体和大小的注释文本。
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 它不应具有自己的外观流或相关操作，并应通过父注释字典中的Popup条目进行标识。
 
-以下代码片段演示了如何在PDF页面中添加 [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)，以添加父注释的 [Line annotation](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) 为例。
+以下代码片段演示了如何在PDF页面中添加 [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)，以添加父注释的 [Line annotation](/pdf/zh/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) 为例。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

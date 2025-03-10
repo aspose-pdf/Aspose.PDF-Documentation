@@ -82,7 +82,7 @@ sitemap:
 
 本主题解释了如何使用 C# 将页面从一个 PDF 文档移动到另一个文档的末尾。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 要移动页面，我们应该：
 

@@ -13,4 +13,4 @@ sitemap:
 ---
 本节包含以下主题：
 
-- [DNN PDF 导入模块](/pdf/net/dnn-pdf-import-module)
+- [DNN PDF 导入模块](/pdf/zh/net/dnn-pdf-import-module)

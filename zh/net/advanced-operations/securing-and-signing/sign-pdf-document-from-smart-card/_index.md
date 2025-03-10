@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET提供从密钥存储位置添加数字签名的功能。您可以通过接受证书存储、智能卡或在运行时连接到系统的[PIV卡](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card)提供的证书来应用签名。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 以下是从智能卡签署PDF文档的代码片段：
 

@@ -80,9 +80,9 @@ sitemap:
 
 XML（可扩展标记语言）是一种重新利用文件中数据或自动化将一个文件中的数据替换为另一个文件中数据的方式。创建 XML 架构很难做到正确；创建多个可以扩展的互锁架构更是困难。让我们学习 Aspose.PDF 如何处理 XML 工作的任务。
 
-- [支持的 XML 架构](/pdf/net/supported-xml-schema/) - 使用以下 XML 架构处理 XML 文档。
-- [基于 XML 和 XSLT 的简单“Hello World”示例](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - 使用 XSLT 将您现有的 XML 文档转换为 PDF。
-- [从 XML 生成 PDF](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF 有多种方法可以基于 XML 文档生成 PDF。
+- [支持的 XML 架构](/pdf/zh/net/supported-xml-schema/) - 使用以下 XML 架构处理 XML 文档。
+- [基于 XML 和 XSLT 的简单“Hello World”示例](/pdf/zh/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - 使用 XSLT 将您现有的 XML 文档转换为 PDF。
+- [从 XML 生成 PDF](/pdf/zh/net/generate-pdf-from-xml/) - Aspose.PDF 有多种方法可以基于 XML 文档生成 PDF。
 
 <script type="application/ld+json">
 {

@@ -87,18 +87,18 @@ sitemap:
 
 您可以执行以下操作：
 
-- [将图像添加到现有 PDF 文件](/pdf/net/add-image-to-existing-pdf-file/) - 在 PDF 文档中添加图像和单个图像的引用，然后控制质量。
-- [从 PDF 文件中删除图像](/pdf/net/delete-images-from-pdf-file/) - 检查删除 PDF 文件中图像的代码片段。
-- [从 PDF 文件中提取图像](/pdf/net/extract-images-from-pdf-file/) - 使用图像集合从 PDF 文件中提取图像。
-- [获取嵌入图像的分辨率和尺寸](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - 使用 Aspose.PDF 命名空间中的操作类获取分辨率和尺寸信息。
-- [处理图像放置](/pdf/net/working-with-image-placement/) - 可以获取 PDF 文档中图像的分辨率和位置。
-- [搜索并获取 PDF 文档中的图像](/pdf/net/search-and-get-images-from-pdf-document/) - 您可以从单个页面获取图像，并使用 C# 在所有页面中搜索图像。
-- [替换现有 PDF 文件中的图像](/pdf/net/replace-image-in-existing-pdf-file/) - 检查我们的代码片段，它向您展示如何替换 PDF 文件中的图像。
-- [设置图像大小](/pdf/net/set-image-size/) - C# 库允许您设置图像的大小。
-- [设置默认字体名称](/pdf/net/set-default-font-name/) - 设置转换过程的默认字体名称。
-- [从 PDF 文档生成缩略图](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - 下一篇文章展示如何使用 Acrobat SDK 和 Aspose.PDF 从 PDF 文档生成缩略图。
-- DICOM 图像支持 - Aspose.PDF for .NET 支持特殊的医学图像标准。Aspose.PDF for .NET 允许您转换 DICOM 和 SVG 图像。请查看 [将 DICOM 转换为 PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) 部分。
-- [处理矢量图形](/pdf/net/working-with-vector-graphics) - 本节描述了使用 C# 的 GraphicsAbsorber 工具的功能。
+- [将图像添加到现有 PDF 文件](/pdf/zh/net/add-image-to-existing-pdf-file/) - 在 PDF 文档中添加图像和单个图像的引用，然后控制质量。
+- [从 PDF 文件中删除图像](/pdf/zh/net/delete-images-from-pdf-file/) - 检查删除 PDF 文件中图像的代码片段。
+- [从 PDF 文件中提取图像](/pdf/zh/net/extract-images-from-pdf-file/) - 使用图像集合从 PDF 文件中提取图像。
+- [获取嵌入图像的分辨率和尺寸](/pdf/zh/net/get-resolution-and-dimensions-of-embedded-images/) - 使用 Aspose.PDF 命名空间中的操作类获取分辨率和尺寸信息。
+- [处理图像放置](/pdf/zh/net/working-with-image-placement/) - 可以获取 PDF 文档中图像的分辨率和位置。
+- [搜索并获取 PDF 文档中的图像](/pdf/zh/net/search-and-get-images-from-pdf-document/) - 您可以从单个页面获取图像，并使用 C# 在所有页面中搜索图像。
+- [替换现有 PDF 文件中的图像](/pdf/zh/net/replace-image-in-existing-pdf-file/) - 检查我们的代码片段，它向您展示如何替换 PDF 文件中的图像。
+- [设置图像大小](/pdf/zh/net/set-image-size/) - C# 库允许您设置图像的大小。
+- [设置默认字体名称](/pdf/zh/net/set-default-font-name/) - 设置转换过程的默认字体名称。
+- [从 PDF 文档生成缩略图](/pdf/zh/net/generate-thumbnail-images-from-pdf-documents/) - 下一篇文章展示如何使用 Acrobat SDK 和 Aspose.PDF 从 PDF 文档生成缩略图。
+- DICOM 图像支持 - Aspose.PDF for .NET 支持特殊的医学图像标准。Aspose.PDF for .NET 允许您转换 DICOM 和 SVG 图像。请查看 [将 DICOM 转换为 PDF](/pdf/zh/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) 部分。
+- [处理矢量图形](/pdf/zh/net/working-with-vector-graphics) - 本节描述了使用 C# 的 GraphicsAbsorber 工具的功能。
 
 <script type="application/ld+json">
 {

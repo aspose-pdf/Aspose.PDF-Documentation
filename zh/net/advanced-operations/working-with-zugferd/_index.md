@@ -93,7 +93,7 @@ ZUGFeRD 是德国电子发票的标准。它代表“Zentraler User Guide des Fo
 它还符合长期存档和税务合规的法律要求。ZUGFeRD 有不同的版本和配置文件，适合不同的需求和场景。最新版本是 ZUGFeRD 2.0，兼容欧洲电子发票标准 EN 16931。
 ZUGFeRD 为用户提供了许多好处和成本节约，例如更快的处理速度、减少错误、改善现金流和降低环境影响。
 
-* [在 C# 中创建 PDF/3-A 合规的 PDF 并附加 ZUGFeRD 发票](/pdf/net/attach-zugferd/)
+* [在 C# 中创建 PDF/3-A 合规的 PDF 并附加 ZUGFeRD 发票](/pdf/zh/net/attach-zugferd/)
 
 ## 另请参见
 

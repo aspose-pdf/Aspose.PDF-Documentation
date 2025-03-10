@@ -81,7 +81,7 @@ sitemap:
 
 背景图像可用于向文档添加水印或其他细腻的设计。在Aspose.PDF for .NET中，每个PDF文档都是页面的集合，每个页面包含一组工件。可以使用[BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact)类将背景图像添加到页面对象。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 以下代码片段演示了如何使用BackgroundArtifact对象和C#向PDF页面添加背景图像。
 

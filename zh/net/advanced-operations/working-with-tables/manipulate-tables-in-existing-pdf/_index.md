@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET支持的最早功能之一是其处理表格的能力，它为从头生成的PDF文件或任何现有PDF文件中添加表格提供了很好的支持。您还可以将表格与数据库（DOM）集成，以根据数据库内容创建动态表格。在这个新版本中，我们实现了搜索和解析PDF文档页面上已存在的简单表格的新功能。一个名为**Aspose.PDF.Text.TableAbsorber**的新类提供了这些功能。TableAbsorber的使用与现有的TextFragmentAbsorber类非常相似。以下代码片段展示了更新特定表格单元格内容的步骤。
 
-以下代码片段也可以与[Aspose.PDF.Drawing](/pdf/net/drawing/)库一起使用。
+以下代码片段也可以与[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库一起使用。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

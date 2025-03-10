@@ -80,7 +80,7 @@ sitemap:
 
 ## 将 ZUGFeRD 附加到 PDF
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 我们建议按照以下步骤将 ZUGFeRD 附加到 PDF：
 

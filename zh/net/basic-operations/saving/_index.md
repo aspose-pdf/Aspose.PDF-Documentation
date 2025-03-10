@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-下一个代码片段也适用于 [Aspose.Drawing](/pdf/net/drawing/) 库。
+下一个代码片段也适用于 [Aspose.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 将 PDF 文档保存到文件系统
 
@@ -125,7 +125,7 @@ private static void SaveDocumentStream()
 }
 ```
 
-有关更详细的说明，请访问 [Showcase](/pdf/net/showcases/) 部分。
+有关更详细的说明，请访问 [Showcase](/pdf/zh/net/showcases/) 部分。
 
 ## 保存 PDF/A 或 PDF/X 格式
 

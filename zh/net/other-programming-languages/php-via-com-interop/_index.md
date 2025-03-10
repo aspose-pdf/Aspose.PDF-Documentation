@@ -77,14 +77,14 @@ description: 使用 COM 互操作将 Aspose.PDF for .NET 集成到 PHP 应用程
 ## 前提条件
 
 {{% alert color="primary" %}}
-配置您的 PHP 以与 COM 一起工作。请参见 <http://www.php.net/manual/en/ref.com.php>。有关更多信息，请查看名为 [通过 COM 互操作使用 Aspose.pdf for .NET](/pdf/net/use-aspose-pdf-for-net-via-com-interop/) 的文章。
+配置您的 PHP 以与 COM 一起工作。请参见 <http://www.php.net/manual/en/ref.com.php>。有关更多信息，请查看名为 [通过 COM 互操作使用 Aspose.pdf for .NET](/pdf/zh/net/use-aspose-pdf-for-net-via-com-interop/) 的文章。
 
 {{% /alert %}}
 
 ## Hello World! 示例
 
 {{% alert color="primary" %}}
-这是一个简单的应用程序，向您展示如何使用 [Aspose.PDF for .NET](/pdf/net/) 在 PHP 中通过 COM 互操作创建一个新的 PDF 文件并向 PDF 文件添加文本。
+这是一个简单的应用程序，向您展示如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 在 PHP 中通过 COM 互操作创建一个新的 PDF 文件并向 PDF 文件添加文本。
 
 {{% /alert %}}
 

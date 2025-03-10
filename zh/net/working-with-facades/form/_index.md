@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [识别表单字段名称](/pdf/net/identifying-form-fields-names/)
-- [在文本框字段中对齐文本](/pdf/net/justify-text-in-a-textbox-field/)
-- [XML、FDF和XFDF之间有什么区别](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [获取按钮选项值](/pdf/net/get-button-option-value/)
-- [导入和导出数据](/pdf/net/import-and-export-data/)
+- [识别表单字段名称](/pdf/zh/net/identifying-form-fields-names/)
+- [在文本框字段中对齐文本](/pdf/zh/net/justify-text-in-a-textbox-field/)
+- [XML、FDF和XFDF之间有什么区别](/pdf/zh/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [获取按钮选项值](/pdf/zh/net/get-button-option-value/)
+- [导入和导出数据](/pdf/zh/net/import-and-export-data/)

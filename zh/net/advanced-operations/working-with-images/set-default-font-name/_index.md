@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API 允许您在文档中字体不可用时设置默认字体名称。您可以使用 RenderingOptions 类的 DefaultFontName 属性来设置默认字体名称。如果 DefaultFontName 设置为 null，则将使用 **Times New Roman** 字体。以下代码片段演示了如何在将 PDF 保存为图像时设置默认字体名称：
 
-下一个代码片段也适用于 [Aspose.Drawing](/pdf/net/drawing/) 库。
+下一个代码片段也适用于 [Aspose.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

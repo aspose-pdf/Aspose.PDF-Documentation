@@ -78,7 +78,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-本文描述了如何使用 [Aspose.PDF for .NET](/pdf/net/) 组件将多个 PDF 文档 [合并](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 为一个单一的 PDF 文档。[Aspose.PDF for .NET](/pdf/net/) 使这项工作变得轻而易举。
+本文描述了如何使用 [Aspose.PDF for .NET](/pdf/zh/net/) 组件将多个 PDF 文档 [合并](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) 为一个单一的 PDF 文档。[Aspose.PDF for .NET](/pdf/zh/net/) 使这项工作变得轻而易举。
 
 {{% /alert %}}
 

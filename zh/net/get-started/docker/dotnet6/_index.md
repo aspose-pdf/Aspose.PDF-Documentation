@@ -97,12 +97,12 @@ sitemap:
 
 ### 在 Linux 容器中使用 ASP.NET Core Web App 生成 PDF 文档
 
-我们将在此应用程序中使用 **复杂示例** 的代码。请按照 [此链接](/pdf/net/complex-pdf-example/) 获取更详细的说明。
+我们将在此应用程序中使用 **复杂示例** 的代码。请按照 [此链接](/pdf/zh/net/complex-pdf-example/) 获取更详细的说明。
 
-1. 在 `wwwroot` 文件夹中创建一个 `images` 文件夹，并放入图像 `logo.png`。您可以从 [这里](/pdf/net/docker/logo.png) 下载此图像。
+1. 在 `wwwroot` 文件夹中创建一个 `images` 文件夹，并放入图像 `logo.png`。您可以从 [这里](/pdf/zh/net/docker/logo.png) 下载此图像。
 1. 用以下代码片段替换 `HomeController.cs` 中的代码（请注意，您可以有其他命名空间）：
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```cs
 using Aspose.Pdf;
@@ -263,7 +263,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 我们将使用与前一个示例相同的代码。
 
-1. 在 `wwwroot` 文件夹中创建一个 `images` 文件夹，并放入图像 `logo.png`。您可以从 [这里](/pdf/net/docker/logo.png) 下载此图像。
+1. 在 `wwwroot` 文件夹中创建一个 `images` 文件夹，并放入图像 `logo.png`。您可以从 [这里](/pdf/zh/net/docker/logo.png) 下载此图像。
 1. 用上面的代码片段替换 `HomeController.cs` 中的代码。
 
 ```dockerfile

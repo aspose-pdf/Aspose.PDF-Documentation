@@ -82,7 +82,7 @@ sitemap:
 
 您可以使用 ImageStamp 类向 PDF 文件添加图像印章。ImageStamp 类提供了创建基于图像的印章所需的属性，如高度、宽度、不透明度等。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 要添加图像印章：
 

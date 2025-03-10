@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 命名空间在 [Aspose.PDF for .NET](/pdf/net/) 中对 AcroForms 的支持非常好。它还支持将表单数据导入和导出到不同的文件格式，如 FDF、XFDF 和 XML。然而，有时开发人员需要将一种格式转换为另一种格式。在本文中，我们将探讨允许我们将 FDF 格式转换为 XML 的功能。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 命名空间在 [Aspose.PDF for .NET](/pdf/zh/net/) 中对 AcroForms 的支持非常好。它还支持将表单数据导入和导出到不同的文件格式，如 FDF、XFDF 和 XML。然而，有时开发人员需要将一种格式转换为另一种格式。在本文中，我们将探讨允许我们将 FDF 格式转换为 XML 的功能。
 
 {{% /alert %}}
 

@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 DICOM 标准由国家电气制造商协会制定。该格式涵盖创建、存储、传输和打印单个图像帧、帧系列、患者信息、研究、设备、机构、进行检查的医疗人员等功能。
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 **Aspose.PDF for .NET** 支持将 DICOM 图像添加到 PDF 文档的功能。以下代码片段演示了如何使用此功能。
 

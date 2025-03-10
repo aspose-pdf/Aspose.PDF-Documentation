@@ -14,6 +14,6 @@ sitemap:
 ---
 ## 本节中的文章
 
-- [从 PDF 中提取文本](/pdf/net/extract-text-from-all-pdf/)
-- [从 PDF 中提取段落](/pdf/net/extract-paragraph-from-pdf/)
-- [从 PDF 中提取上标和下标文本](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [从 PDF 中提取文本](/pdf/zh/net/extract-text-from-all-pdf/)
+- [从 PDF 中提取段落](/pdf/zh/net/extract-paragraph-from-pdf/)
+- [从 PDF 中提取上标和下标文本](/pdf/zh/net/extract-superscripts-subscripts-from-pdf/)

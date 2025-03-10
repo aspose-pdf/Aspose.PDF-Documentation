@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/net/) 中允许您在现有PDF文件中添加印章。有时，用户确实需要旋转印章。在本文中，我们将看到如何围绕其中心点旋转印章。
+[Aspose.Pdf.Facades命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中允许您在现有PDF文件中添加印章。有时，用户确实需要旋转印章。在本文中，我们将看到如何围绕其中心点旋转印章。
 
 {{% /alert %}}
 

@@ -80,10 +80,10 @@ sitemap:
 
 **解析 PDF** 文档是一个与从 PDF 文件中提取各种信息相关的术语。本节涵盖如何：
 
-- [从 PDF 中提取文本](/pdf/net/extract-text-from-pdf/)。文本解析或提取是处理现成 PDF 的最常见操作。您将学习如何从整个文档、特定页面或页面中的特定区域解析文本。
-- [从 PDF 中提取图像](/pdf/net/extract-images-from-the-pdf-file/)。图像提取对图像执行与上述文本相同的操作。
-- [从 PDF 中提取字体](/pdf/net/extract-fonts-from-pdf/)。字体提取是处理 PDF 中字体的特定操作。
-- [从表单中提取数据](/pdf/net/extract-data-from-acroform/)。如果您有一堆带有表单的 PDF 文档，您可能需要从这些表单中获取数据。本文将帮助您了解如何使用 Aspose.PDF for .NET 提取 AcroForms 数据。
-- [从印章中提取文本](/pdf/net/extract-text-from-stamps/) - 从您的 PDF 文档中获取文本信息。
-- [从表格中提取数据](/pdf/net/extract-data-from-table-in-pdf/) - 从 PDF 文档中的表格中获取数据。
-- [从 PDF 中提取矢量数据](/pdf/net/extract-vector-data-from-pdf/) - 您可以获取矢量数据（路径、多边形、多线段），例如位置、颜色、线宽等。
+- [从 PDF 中提取文本](/pdf/zh/net/extract-text-from-pdf/)。文本解析或提取是处理现成 PDF 的最常见操作。您将学习如何从整个文档、特定页面或页面中的特定区域解析文本。
+- [从 PDF 中提取图像](/pdf/zh/net/extract-images-from-the-pdf-file/)。图像提取对图像执行与上述文本相同的操作。
+- [从 PDF 中提取字体](/pdf/zh/net/extract-fonts-from-pdf/)。字体提取是处理 PDF 中字体的特定操作。
+- [从表单中提取数据](/pdf/zh/net/extract-data-from-acroform/)。如果您有一堆带有表单的 PDF 文档，您可能需要从这些表单中获取数据。本文将帮助您了解如何使用 Aspose.PDF for .NET 提取 AcroForms 数据。
+- [从印章中提取文本](/pdf/zh/net/extract-text-from-stamps/) - 从您的 PDF 文档中获取文本信息。
+- [从表格中提取数据](/pdf/zh/net/extract-data-from-table-in-pdf/) - 从 PDF 文档中的表格中获取数据。
+- [从 PDF 中提取矢量数据](/pdf/zh/net/extract-vector-data-from-pdf/) - 您可以获取矢量数据（路径、多边形、多线段），例如位置、颜色、线宽等。

@@ -81,7 +81,7 @@ sitemap:
 
 我们始终在寻找一种方法，以更准确、精确和有效的方式在 C# 项目中生成 PDF 文档并与之协作。使用库中的易用函数使我们能够跟踪更多的工作，而不是在生成 PDF 的耗时细节上花费时间，无论是在 .NET 中。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ## 使用 C# 语言创建（或生成）PDF 文档
 

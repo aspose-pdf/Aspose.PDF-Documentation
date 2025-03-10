@@ -90,7 +90,7 @@ Aspose.PDF for .NET 提供了一种工具，使检索表格变得简单。要提
 1. `TableList` 是一个 [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable) 的列表。要获取数据，请遍历 `TableList` 并处理 [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) 和 [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist)。
 1. 每个 [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) 包含 [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments) 集合。您可以根据自己的需要处理它。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下示例显示了如何从所有页面提取表格：
 
@@ -139,7 +139,7 @@ private static void ExtractTable()
 
 如果您需要提取位于特定区域的表格，您必须使用特定坐标。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 以下示例显示了如何提取带有方形注释的表格：
 
@@ -197,9 +197,9 @@ private static void ExtractMarkedTable()
 ## 从 PDF 中提取表格数据并将其存储在 CSV 文件中
 
 以下示例显示了如何提取表格并将其存储为 CSV 文件。
-要查看如何将 PDF 转换为 Excel 电子表格，请参阅 [将 PDF 转换为 Excel](/pdf/net/convert-pdf-to-excel/) 文章。
+要查看如何将 PDF 转换为 Excel 电子表格，请参阅 [将 PDF 转换为 Excel](/pdf/zh/net/convert-pdf-to-excel/) 文章。
 
-以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库。
+以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

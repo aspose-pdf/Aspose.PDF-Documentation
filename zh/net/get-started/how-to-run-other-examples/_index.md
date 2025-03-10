@@ -85,7 +85,7 @@ sitemap:
 1. Visual Studio 2010 或更高版本。
 1. 在 Visual Studio 中安装 NuGet 包管理器。确保在 Visual Studio 中安装了最新的 NuGet API 版本。有关如何安装 NuGet 包管理器的详细信息，请查看 <https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools>。
 1. 转到 `Tools->Options->NuGet Package Manager->Package Sources` 并确保选中 **nuget.org** 选项。
-1. 示例项目使用 NuGet 自动包还原功能，因此您应该有一个活动的互联网连接。如果您在要执行示例的机器上没有活动的互联网连接，请查看 [安装](/pdf/net/installation/) 并手动在示例项目中添加对 Aspose.PDF.dll 的引用。
+1. 示例项目使用 NuGet 自动包还原功能，因此您应该有一个活动的互联网连接。如果您在要执行示例的机器上没有活动的互联网连接，请查看 [安装](/pdf/zh/net/installation/) 并手动在示例项目中添加对 Aspose.PDF.dll 的引用。
 
 ## 从 GitHub 下载
 

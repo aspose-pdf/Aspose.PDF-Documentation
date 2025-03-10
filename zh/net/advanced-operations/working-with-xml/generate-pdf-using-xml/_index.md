@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 从 XML 文档生成 PDF 文档并不是一项简单的任务，因为 XML 文档可以描述不同的内容。Aspose.PDF for .NET 有几种基于 XML 文档生成 PDF 的方法：
 

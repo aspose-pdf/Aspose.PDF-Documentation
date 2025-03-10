@@ -84,9 +84,9 @@ PDF 文件中的印章提供了额外的信息，例如保护 PDF 文件不被�
 
 请查看以下部分以了解如何使用 C# 添加印章：
 
-- [在 PDF 页面中添加图像印章](/pdf/net/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，将图像印章作为 PDF 文件的背景。
-- [在 PDF 文件中添加文本印章](/pdf/net/text-stamps-in-the-pdf-file/) - 添加文本印章，为 TextStamp 对象定义对齐方式，在 PDF 文件中填充描边文本作为印章。
-- [在 PDF 文件中添加页面印章](/pdf/net/page-stamps-in-the-pdf-file/) - 使用 PdfPageStamp 类向 PDF 文档添加页面印章。
+- [在 PDF 页面中添加图像印章](/pdf/zh/net/image-stamps-in-pdf-page/) - 添加图像印章，控制图像质量，将图像印章作为 PDF 文件的背景。
+- [在 PDF 文件中添加文本印章](/pdf/zh/net/text-stamps-in-the-pdf-file/) - 添加文本印章，为 TextStamp 对象定义对齐方式，在 PDF 文件中填充描边文本作为印章。
+- [在 PDF 文件中添加页面印章](/pdf/zh/net/page-stamps-in-the-pdf-file/) - 使用 PdfPageStamp 类向 PDF 文档添加页面印章。
 
 
 <script type="application/ld+json">

@@ -14,7 +14,7 @@ sitemap:
 ---
 ## 本节中的文章
 
-- [Aspose.PDF 编辑器](/pdf/net/aspose-pdf-editor/)
-- [将 WebForms DataGridView 渲染为 PDF](/pdf/net/render-webforms-datagridview-to-pdf/)
-- [从数据源渲染表格](/pdf/net/render-table-from-the-data-source/)
-- [使用 Entity Framework 模型作为数据源渲染表格](/pdf/net/render-table-using-entity-framework-model-as-data-source/)
+- [Aspose.PDF 编辑器](/pdf/zh/net/aspose-pdf-editor/)
+- [将 WebForms DataGridView 渲染为 PDF](/pdf/zh/net/render-webforms-datagridview-to-pdf/)
+- [从数据源渲染表格](/pdf/zh/net/render-table-from-the-data-source/)
+- [使用 Entity Framework 模型作为数据源渲染表格](/pdf/zh/net/render-table-using-entity-framework-model-as-data-source/)

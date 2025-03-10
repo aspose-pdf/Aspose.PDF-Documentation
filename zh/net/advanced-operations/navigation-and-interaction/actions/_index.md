@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段还可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ## 在 PDF 文件中添加超链接
 

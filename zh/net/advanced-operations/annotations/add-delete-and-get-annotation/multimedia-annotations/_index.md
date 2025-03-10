@@ -100,7 +100,7 @@ RichMediaAnnotation 类的以下方法/属性可以使用。
 - void Update(): 创建注释的数据结构。此方法应最后调用。
 - void SetPoster(Stream): 设置视频的海报，即播放器未激活时显示的图片。
 
-以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/net/drawing/) 库一起使用。
+以下代码片段也可以与 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库一起使用。
 
 ## 添加屏幕注释
 
@@ -439,7 +439,7 @@ private static void AddNavigationButtons()
 }
 ```
 
-有关此功能的更多详细信息和可能性，请参见 [处理表单](/pdf/net/acroforms/)。
+有关此功能的更多详细信息和可能性，请参见 [处理表单](/pdf/zh/net/acroforms/)。
 
 在 PDF 文档中，您可以查看和管理使用 3D CAD 或 3D 建模软件创建并嵌入 PDF 文档中的高质量 3D 内容。可以在所有方向上旋转 3D 元素，就像您手中握着它们一样。
 

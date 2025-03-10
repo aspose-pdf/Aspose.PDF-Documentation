@@ -13,4 +13,4 @@ sitemap:
 ---
 本节包含以下主题：
 
-- [Umbraco PDF 导入模块](/pdf/net/umbraco-pdf-import-module/)
+- [Umbraco PDF 导入模块](/pdf/zh/net/umbraco-pdf-import-module/)

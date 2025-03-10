@@ -83,10 +83,10 @@ sitemap:
 附件是附加到父文档的附加文件，可以是多种文件类型，例如 pdf、word、图像或其他文件。
 您将学习如何向 pdf 添加附件，获取附件的信息，并将其保存到文件中，使用 C# 程序化地从 PDF 中删除附件。
 
-- [向 PDF 文档添加附件](/pdf/net/add-attachment-to-pdf-document/)
-- [提取并保存附件](/pdf/net/extract-and-save-an-attachment/)
-- [从现有 PDF 中删除附件](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [投资组合](/pdf/net/portfolio/)
+- [向 PDF 文档添加附件](/pdf/zh/net/add-attachment-to-pdf-document/)
+- [提取并保存附件](/pdf/zh/net/extract-and-save-an-attachment/)
+- [从现有 PDF 中删除附件](/pdf/zh/net/removing-attachment-from-an-existing-pdf/)
+- [投资组合](/pdf/zh/net/portfolio/)
 
 <script type="application/ld+json">
 {

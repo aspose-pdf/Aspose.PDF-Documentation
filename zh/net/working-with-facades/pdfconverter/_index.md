@@ -12,5 +12,5 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-- [合并图像](/pdf/net/merge-images/)
-- [转换 PDF 文件](/pdf/net/convert-pdf-file/)
+- [合并图像](/pdf/zh/net/merge-images/)
+- [转换 PDF 文件](/pdf/zh/net/convert-pdf-file/)

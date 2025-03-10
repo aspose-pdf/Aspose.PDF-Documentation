@@ -87,7 +87,7 @@ sitemap:
 
 使用**TextFragmentAbsorber**类，您可以对找到的文本进行任何操作，即您可以简单地使用整个文本。尝试下一个代码片段：
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 或者单独使用**TextFragments**，对它们进行各种操作，例如按坐标或大小排序。
 
-以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/net/drawing/)库。
+以下代码片段也适用于[Aspose.PDF.Drawing](/pdf/zh/net/drawing/)库。
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

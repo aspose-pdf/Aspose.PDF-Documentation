@@ -102,7 +102,7 @@ _此页面概述了 Aspose.PDF for .NET 的特性。_
 - 将图像存储在 XImageCollection（可重用图像）中。
 - 将 PDF 从 RGB 颜色空间转换为灰度。
 
-让我们查看文档页面以获取更多详细信息：[优化 PDF](/pdf/net/optimize-pdf/)
+让我们查看文档页面以获取更多详细信息：[优化 PDF](/pdf/zh/net/optimize-pdf/)
 
 ### 表格创建和操作
 
@@ -110,14 +110,14 @@ _此页面概述了 Aspose.PDF for .NET 的特性。_
 
 使用 **Aspose.PDF for .NET** 在 PDF 文档中创建和操作表格提供了许多优势，包括改善数据组织、增强可读性、更好的分析能力和在有效呈现信息方面的灵活性。
 
-让我们查看下一部分以获取更多详细信息：[处理表格](/pdf/net/working-with-tables/)
+让我们查看下一部分以获取更多详细信息：[处理表格](/pdf/zh/net/working-with-tables/)
 
 ### 对图形对象的支持
 
 **Aspose.PDF for .NET** 支持向 PDF 文档添加图形。为此任务提供了 Graph 类。
 向 PDF 文档添加图形可以改善数据可视化、增强清晰度和理解力、提供更好的决策支持，并增加与读者的互动。
 
-让我们查看文档页面以获取更多详细信息：[处理图形](/pdf/net/working-with-graphs/)
+让我们查看文档页面以获取更多详细信息：[处理图形](/pdf/zh/net/working-with-graphs/)
 
 ### 广泛的超链接功能
 
@@ -125,7 +125,7 @@ _此页面概述了 Aspose.PDF for .NET 的特性。_
 
 **Aspose.PDF for .NET** 提供了许多优势，包括改善导航、交叉引用、访问外部资源、互动性和增强的沟通。它们为用户提供了更具吸引力、信息丰富和可访问的阅读体验。
 
-让我们查看下一部分以获取更多详细信息：[操作](/pdf/net/actions/)
+让我们查看下一部分以获取更多详细信息：[操作](/pdf/zh/net/actions/)
 
 ### 扩展的安全控制
 
@@ -133,7 +133,7 @@ _此页面概述了 Aspose.PDF for .NET 的特性。_
 
 使用 **Aspose.PDF for .NET** 可以从智能卡签署 PDF、加密和解密文件、提取图像和签名信息等。
 
-让我们查看文档页面以获取更多详细信息：[安全和签名](/pdf/net/securing-and-signing/)
+让我们查看文档页面以获取更多详细信息：[安全和签名](/pdf/zh/net/securing-and-signing/)
 
 ### 添加或删除书签
 
@@ -141,20 +141,20 @@ _此页面概述了 Aspose.PDF for .NET 的特性。_
 
 使用 **Aspose.PDF for .NET** 库，您可以向 PDF 文件添加书签、添加子书签或从文档中删除所有或特定书签。
 
-让我们查看下一部分以获取更多详细信息：[书签](/pdf/net/add-and-delete-bookmark/)
+让我们查看下一部分以获取更多详细信息：[书签](/pdf/zh/net/add-and-delete-bookmark/)
 
 ### 创建目录
 
 目录为用户提供了一种快速有效的方式来浏览 PDF 文档的内容。通过列出主要部分、章节或主题及其对应的页码，用户可以轻松找到并访问文档中的特定信息。
 **Aspose.PDF for .NET** 库解释了如何将目录添加到现有 PDF 文件中，使用 Aspose.Pdf 命名空间中的 Heading 类。
 
-让我们查看文档页面以获取更多详细信息：[处理目录](/pdf/net/manipulate-pdf-document/)
+让我们查看文档页面以获取更多详细信息：[处理目录](/pdf/zh/net/manipulate-pdf-document/)
 
 ### 添加、更新、删除附件和注释
 
 添加附件和注释使 PDF 文档对读者更具互动性和吸引力。用户可以与嵌入在文档中的附加内容（如多媒体文件、链接或评论）进行交互，从而增强他们的阅读体验。
 
-Aspose.PDF for .NET 库提供了与 [注释](/pdf/net/annotations/) 的不同操作。您可以添加以下类型：
+Aspose.PDF for .NET 库提供了与 [注释](/pdf/zh/net/annotations/) 的不同操作。您可以添加以下类型：
 
 - 文本注释。
 - 高亮注释。
@@ -164,7 +164,7 @@ Aspose.PDF for .NET 库提供了与 [注释](/pdf/net/annotations/) 的不同操
 - 额外注释。
 
 此外，我们的库允许您添加、提取和删除 PDF 中的附件。
-有关更多详细信息，请查看下一 [文档页面](/pdf/net/attachments/)。
+有关更多详细信息，请查看下一 [文档页面](/pdf/zh/net/attachments/)。
 
 ### PDF 文件元数据
 
@@ -172,7 +172,7 @@ Aspose.PDF for .NET 库提供了与 [注释](/pdf/net/annotations/) 的不同操
 
 PDF 文件元数据具有多种用途，包括文档识别、归属、版本跟踪、描述、可搜索性、可访问性、安全性、互操作性、保存和合规性。
 
-使用 **Aspose.PDF for .NET** 库轻松快速地管理 PDF 文档中的 [元数据](/pdf/net/pdf-file-metadata/)。
+使用 **Aspose.PDF for .NET** 库轻松快速地管理 PDF 文档中的 [元数据](/pdf/zh/net/pdf-file-metadata/)。
 
 ### 添加、替换或删除文本和图像
 
@@ -180,11 +180,11 @@ PDF 文件元数据具有多种用途，包括文档识别、归属、版本跟�
 
 使用 Aspose.PDF，您可以编辑 PDF 中的文本，替换或旋转文本，搜索或获取 PDF 中的文本。
 
-您还可以添加、改变位置、删除图像，并对 PDF 中的图像进行更多 [复杂操作](/pdf/net/working-with-images/)。
+您还可以添加、改变位置、删除图像，并对 PDF 中的图像进行更多 [复杂操作](/pdf/zh/net/working-with-images/)。
 
 ### 拆分、合并、提取或插入页面
 
-文档中的 [处理 PDF 页面](/pdf/net/working-with-pages/) 部分解释了如何添加、移动、删除、旋转或拆分 PDF 页面。
+文档中的 [处理 PDF 页面](/pdf/zh/net/working-with-pages/) 部分解释了如何添加、移动、删除、旋转或拆分 PDF 页面。
 
 拆分、合并、提取或插入页面有助于用户更有效地管理 PDF 文档。用户可以组织、重新排列或合并页面以创建新文档，从而改善文档的组织和可访问性。
 
@@ -202,7 +202,7 @@ Aspose.PDF 允许使用 C# 将 PDF 转换为不同的图像格式。包括：
 - GIF。
 - SVG。
 
-Aspose.PDF 库使用 DocumentDevice 或 ImageDevice 类进行 PDF 到图像的转换。[将 PDF 转换为不同的图像格式](/pdf/net/convert-pdf-to-images-format/)。
+Aspose.PDF 库使用 DocumentDevice 或 ImageDevice 类进行 PDF 到图像的转换。[将 PDF 转换为不同的图像格式](/pdf/zh/net/convert-pdf-to-images-format/)。
 
 ### 打印 PDF 文档
 
@@ -216,24 +216,24 @@ Aspose.PDF for .NET 提供了多种打印 PDF 文件的方法：
 - 在 WPF 应用程序中打印 PDF。
 - 各种附加操作，如 PDF 到 PostScript 转换、检查打印作业状态等。
 
-让我们查看下一部分以获取更多详细信息：[打印 PDF 文档](/pdf/net/printing-document/)。
+让我们查看下一部分以获取更多详细信息：[打印 PDF 文档](/pdf/zh/net/printing-document/)。
 
 此外，Aspose.PDF for .NET 可以轻松将文本、图像、SVG、HTML 转换为 PDF，并以出色的性能和良好的质量将 PDF 转换为各种文档格式。
 
 ## 定价和政策
 
-请访问 [许可](/pdf/net/licensing/) 页面以获取有关许可证的信息，并查看 [定价信息](https://purchase.aspose.com/pricing/pdf/net/) 页面以获取有关定价的详细信息。
+请访问 [许可](/pdf/zh/net/licensing/) 页面以获取有关许可证的信息，并查看 [定价信息](https://purchase.aspose.com/pricing/pdf/net/) 页面以获取有关定价的详细信息。
 
 ## 技术支持
 
-有关 Aspose.PDF 技术支持的更多信息，请查看 [支持页面](/pdf/net/technical-support/)。
+有关 Aspose.PDF 技术支持的更多信息，请查看 [支持页面](/pdf/zh/net/technical-support/)。
 
 了解更多关于：
 
-- [支持的文件格式](/pdf/net/supported-file-formats/)
-- [Aspose.PDF 的关键特性](/pdf/net/key-features/)
-- [系统要求](/pdf/net/system-requirements/)
-- [安装](/pdf/net/installation/)
-- [许可](/pdf/net/licensing/)
-- [Aspose.PDF.Drawing for .NET](/pdf/net/drawing/)
-- [技术支持](/pdf/net/technical-support/)
+- [支持的文件格式](/pdf/zh/net/supported-file-formats/)
+- [Aspose.PDF 的关键特性](/pdf/zh/net/key-features/)
+- [系统要求](/pdf/zh/net/system-requirements/)
+- [安装](/pdf/zh/net/installation/)
+- [许可](/pdf/zh/net/licensing/)
+- [Aspose.PDF.Drawing for .NET](/pdf/zh/net/drawing/)
+- [技术支持](/pdf/zh/net/technical-support/)
