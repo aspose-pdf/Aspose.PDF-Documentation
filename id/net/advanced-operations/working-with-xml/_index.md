@@ -80,9 +80,9 @@ sitemap:
 
 XML (Extensible Markup Language) adalah cara untuk memanfaatkan kembali data dalam sebuah file atau mengotomatiskan proses penggantian data dalam satu file dengan data dari file lain. Membuat skema XML sulit untuk dilakukan dengan benar; membuat beberapa skema yang saling terkait yang dapat diperluas bahkan lebih sulit. Mari kita pelajari bagaimana Aspose.PDF menangani tugas bekerja dengan XML.
 
-- [Skema XML yang Didukung](/pdf/net/supported-xml-schema/) - gunakan skema XML berikut untuk bekerja dengan dokumen XML.
-- [Contoh 'Hello World' sederhana berdasarkan XML dan XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - gunakan XSLT untuk mengubah dokumen XML Anda yang ada menjadi PDF.
-- [Hasilkan PDF dari XML](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML.
+- [Skema XML yang Didukung](/pdf/id/net/supported-xml-schema/) - gunakan skema XML berikut untuk bekerja dengan dokumen XML.
+- [Contoh 'Hello World' sederhana berdasarkan XML dan XSLT](/pdf/id/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - gunakan XSLT untuk mengubah dokumen XML Anda yang ada menjadi PDF.
+- [Hasilkan PDF dari XML](/pdf/id/net/generate-pdf-from-xml/) - Aspose.PDF memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML.
 
 <script type="application/ld+json">
 {

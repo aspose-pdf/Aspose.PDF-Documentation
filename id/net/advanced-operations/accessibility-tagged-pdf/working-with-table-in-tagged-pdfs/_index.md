@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET memungkinkan pembuatan tabel di dokumen PDF Berlabel. Untuk bekerja dengan tabel, API menyediakan kelas [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Untuk membuat tabel, Anda dapat menggunakan metode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) dari antarmuka [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Selain itu, Anda dapat menggunakan metode [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) dan [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) dari kelas TableElement untuk membuat Table Head, Table Body, dan Table Foot masing-masing. Untuk membuat baris tabel, Anda dapat menggunakan metode [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) dari kelas [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Anda juga dapat memeriksa apakah dokumen PDF yang dibuat memenuhi kepatuhan PDF/UA menggunakan metode Validate() dari kelas Document.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara membuat tabel di dokumen PDF Berlabel:
 

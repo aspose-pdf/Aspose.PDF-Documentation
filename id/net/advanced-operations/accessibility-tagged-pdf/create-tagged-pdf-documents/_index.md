@@ -81,7 +81,7 @@ sitemap:
 
 Membuat PDF berlabel berarti menambahkan (atau membuat) elemen tertentu ke dokumen yang akan memungkinkan dokumen tersebut divalidasi sesuai dengan persyaratan PDF/UA. Elemen-elemen ini sering disebut Elemen Struktur.
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Membuat PDF Berlabel (Skenario Sederhana)
 

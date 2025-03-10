@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## **Cetak File Pdf di C# - Cetak File PDF ke Printer Default menggunakan Pengaturan Printer dan Halaman**
 

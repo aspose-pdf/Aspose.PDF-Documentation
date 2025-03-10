@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) dari setiap halaman dalam koleksi [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Untuk mengekstrak halaman tertentu, ambil gambar dari koleksi Images menggunakan indeks tertentu dari gambar tersebut.
 

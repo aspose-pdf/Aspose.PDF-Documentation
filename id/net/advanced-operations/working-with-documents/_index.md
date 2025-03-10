@@ -89,15 +89,15 @@ Namun **Aspose.PDF for .NET** dapat membantu Anda mengatasi sebagian besar tugas
 
 Anda dapat melakukan hal berikut:
 
-- [Format Dokumen PDF](/pdf/net/formatting-pdf-document/) - membuat dokumen, mendapatkan dan mengatur properti dokumen, menyematkan font, dan operasi lainnya dengan file PDF.
-- [Manipulasi Dokumen PDF](/pdf/net/manipulate-pdf-document/) - memvalidasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
-- [Optimalkan PDF](/pdf/net/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimasi dokumen yang sukses.
-- [Gabungkan PDF](/pdf/net/merge-pdf-documents/) - menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan C#.
-- [Pisahkan PDF](/pdf/net/split-document/) - memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda.
-- [Gabungkan file PDF dalam folder](/pdf/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - menggabungkan semua file PDF dalam folder tertentu menggunakan kelas PdfFileEditor.
-- [Gabungkan beberapa file PDF menggunakan MemoryStreams](/pdf/net/concatenate-pdf-documents/) - Anda akan belajar bagaimana menggabungkan beberapa file PDF menggunakan MemoryStreams dengan C#.
-- [Buat Laporan Kerusakan](/pdf/net/generate-crash-reports/) - menghasilkan laporan kerusakan menggunakan C#.
-- [Bekerja dengan Judul](/pdf/net/working-with-headings/) - Anda dapat membuat penomoran di judul dokumen PDF Anda dengan C#.
+- [Format Dokumen PDF](/pdf/id/net/formatting-pdf-document/) - membuat dokumen, mendapatkan dan mengatur properti dokumen, menyematkan font, dan operasi lainnya dengan file PDF.
+- [Manipulasi Dokumen PDF](/pdf/id/net/manipulate-pdf-document/) - memvalidasi dokumen PDF untuk standar PDF A, bekerja dengan TOC, mengatur tanggal kedaluwarsa PDF, dan lain-lain.
+- [Optimalkan PDF](/pdf/id/net/optimize-pdf/) - mengoptimalkan konten halaman, mengoptimalkan ukuran file, menghapus objek yang tidak digunakan, mengompres semua gambar untuk optimasi dokumen yang sukses.
+- [Gabungkan PDF](/pdf/id/net/merge-pdf-documents/) - menggabungkan beberapa file PDF menjadi satu dokumen PDF menggunakan C#.
+- [Pisahkan PDF](/pdf/id/net/split-document/) - memisahkan halaman PDF menjadi file PDF individu dalam aplikasi .NET Anda.
+- [Gabungkan file PDF dalam folder](/pdf/id/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - menggabungkan semua file PDF dalam folder tertentu menggunakan kelas PdfFileEditor.
+- [Gabungkan beberapa file PDF menggunakan MemoryStreams](/pdf/id/net/concatenate-pdf-documents/) - Anda akan belajar bagaimana menggabungkan beberapa file PDF menggunakan MemoryStreams dengan C#.
+- [Buat Laporan Kerusakan](/pdf/id/net/generate-crash-reports/) - menghasilkan laporan kerusakan menggunakan C#.
+- [Bekerja dengan Judul](/pdf/id/net/working-with-headings/) - Anda dapat membuat penomoran di judul dokumen PDF Anda dengan C#.
 
 <script type="application/ld+json">
 {

@@ -78,7 +78,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Artikel ini menjelaskan bagaimana Anda dapat [Menggabungkan](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) beberapa Dokumen PDF menjadi Satu Dokumen PDF dengan bantuan Komponen [Aspose.PDF for .NET](/pdf/net/). [Aspose.PDF for .NET](/pdf/net/) membuat pekerjaan ini seperti sepotong kue.
+Artikel ini menjelaskan bagaimana Anda dapat [Menggabungkan](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) beberapa Dokumen PDF menjadi Satu Dokumen PDF dengan bantuan Komponen [Aspose.PDF for .NET](/pdf/id/net/). [Aspose.PDF for .NET](/pdf/id/net/) membuat pekerjaan ini seperti sepotong kue.
 
 {{% /alert %}}
 

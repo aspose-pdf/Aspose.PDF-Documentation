@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) perpustakaan.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) perpustakaan.
 
 Aspose.PDF for .NET menggunakan skema XML berikut untuk bekerja dengan dokumen XML:
 

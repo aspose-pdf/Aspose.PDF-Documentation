@@ -81,7 +81,7 @@ sitemap:
 
 Salah satu fitur awal yang didukung oleh Aspose.PDF for .NET adalah kemampuannya dalam Bekerja dengan Tabel dan memberikan dukungan besar untuk menambahkan tabel dalam file PDF yang dihasilkan dari awal atau file PDF yang ada. Anda juga mendapatkan kemampuan untuk Mengintegrasikan Tabel dengan Database (DOM) untuk membuat tabel dinamis berdasarkan konten database. Dalam rilis baru ini, kami telah menerapkan fitur baru untuk mencari dan mengurai tabel sederhana yang sudah ada di halaman dokumen PDF. Kelas baru bernama **Aspose.PDF.Text.TableAbsorber** menyediakan kemampuan ini. Penggunaan TableAbsorber sangat mirip dengan kelas TextFragmentAbsorber yang ada. Cuplikan kode berikut menunjukkan langkah-langkah untuk memperbarui konten dalam sel tabel tertentu.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

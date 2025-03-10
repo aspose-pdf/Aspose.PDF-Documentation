@@ -77,7 +77,7 @@ draft: false
 
 [Kelas PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) dapat membantu Anda menambahkan gambar dan teks dalam dokumen PDF yang ada, di lokasi yang ditentukan. Ini menyediakan dua metode dengan nama [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) dan [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). Metode [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) memungkinkan Anda menambahkan gambar dengan tipe JPG, GIF, PNG, dan BMP. Metode [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) mengambil argumen dari kelas [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) dan menambahkannya ke dalam file PDF yang ada. Gambar dan teks dapat ditambahkan dalam wilayah persegi panjang yang ditentukan oleh koordinat titik kiri bawah dan kanan atas. Saat menambahkan gambar, Anda dapat menentukan baik jalur file gambar atau aliran file gambar. Untuk menentukan nomor halaman di mana gambar atau teks perlu ditambahkan, kedua metode ini menyediakan argumen nomor halaman. Jadi, Anda tidak hanya dapat menambahkan gambar dan teks di lokasi yang ditentukan tetapi juga di halaman yang ditentukan.
 
-Gambar adalah bagian penting dari konten dokumen PDF. Memanipulasi gambar dalam file PDF yang ada adalah kebutuhan umum bagi orang-orang yang bekerja dengan file PDF. Dalam artikel ini, kita akan menjelajahi bagaimana gambar dapat dimanipulasi, dalam file PDF yang ada, dengan bantuan [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dari [Aspose.PDF for .NET](/pdf/net/). Semua operasi terkait gambar dari [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) telah dikonsolidasikan dalam artikel ini.
+Gambar adalah bagian penting dari konten dokumen PDF. Memanipulasi gambar dalam file PDF yang ada adalah kebutuhan umum bagi orang-orang yang bekerja dengan file PDF. Dalam artikel ini, kita akan menjelajahi bagaimana gambar dapat dimanipulasi, dalam file PDF yang ada, dengan bantuan [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dari [Aspose.PDF for .NET](/pdf/id/net/). Semua operasi terkait gambar dari [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) telah dikonsolidasikan dalam artikel ini.
 
 ## Detail Implementasi
 
@@ -122,7 +122,7 @@ private static void AddImage01()
 }
 ```
 
-![Tambahkan Gambar](/pdf/net/images/add_image1.png)
+![Tambahkan Gambar](/pdf/id/net/images/add_image1.png)
 
 Dengan bantuan [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1), kita dapat menumpuk satu gambar di atas gambar lainnya:
 
@@ -163,7 +163,7 @@ private static void AddImage02()
 }
 ```
 
-![Tambahkan Gambar](/pdf/net/images/add_image2.png)
+![Tambahkan Gambar](/pdf/id/net/images/add_image2.png)
 
 Ada beberapa cara untuk menyimpan gambar dalam file PDF. Kami akan mendemonstrasikan salah satunya dalam contoh berikut:
 
@@ -277,7 +277,7 @@ private static void AddText01()
 
 Periksa bagaimana tampilannya:
 
-![Tambahkan Teks](/pdf/net/images/add_text.png)
+![Tambahkan Teks](/pdf/id/net/images/add_text.png)
 
 Cara kedua untuk menambahkan [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Selain itu, kita menunjukkan sebuah persegi panjang di mana teks kita harus muat.
 

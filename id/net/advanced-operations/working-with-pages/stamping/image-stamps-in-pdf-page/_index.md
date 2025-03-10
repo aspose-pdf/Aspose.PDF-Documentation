@@ -82,7 +82,7 @@ sitemap:
 
 Anda dapat menggunakan kelas ImageStamp untuk menambahkan stempel gambar ke file PDF. Kelas ImageStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis gambar, seperti tinggi, lebar, opasitas, dan sebagainya.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk menambahkan stempel gambar:
 

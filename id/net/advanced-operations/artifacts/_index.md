@@ -112,7 +112,7 @@ Untuk mendapatkan semua Watermark di halaman tertentu, kelas [Halaman](https://r
 
 Cuplikan kode berikut menunjukkan cara mendapatkan semua watermark di halaman pertama dari file PDF.
 
-_Catatan:_ Kode ini juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Catatan:_ Kode ini juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

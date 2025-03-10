@@ -90,7 +90,7 @@ Aspose.PDF for .NET memiliki alat untuk memudahkan pengambilan tabel. Untuk meng
 1. `TableList` adalah daftar dari [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Untuk mendapatkan data, iterasi melalui `TableList` dan tangani [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) dan [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
 1. Setiap [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) berisi koleksi [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Anda dapat memprosesnya untuk tujuan Anda sendiri.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Contoh berikut menunjukkan ekstraksi tabel dari semua halaman:
 
@@ -139,7 +139,7 @@ Setiap tabel yang diserap memiliki properti [Rectangle](https://reference.aspose
 
 Jika Anda perlu mengekstrak tabel yang terletak di wilayah tertentu, Anda harus bekerja dengan koordinat tertentu.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Contoh berikut menunjukkan cara mengekstrak tabel yang ditandai dengan Anotasi Persegi:
 
@@ -197,9 +197,9 @@ private static void ExtractMarkedTable()
 ## Ekstrak Data Tabel dari PDF dan simpan dalam file CSV
 
 Contoh berikut menunjukkan cara mengekstrak tabel dan menyimpannya sebagai file CSV.
-Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan merujuk ke artikel [Convert PDF to Excel](/pdf/net/convert-pdf-to-excel/).
+Untuk melihat cara mengonversi PDF ke Spreadsheet Excel, silakan merujuk ke artikel [Convert PDF to Excel](/pdf/id/net/convert-pdf-to-excel/).
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

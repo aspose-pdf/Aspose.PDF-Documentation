@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) perpustakaan.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) perpustakaan.
 
 Untuk menambahkan teks ke file PDF yang ada:
 

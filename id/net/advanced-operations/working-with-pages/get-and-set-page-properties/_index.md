@@ -75,7 +75,7 @@ lastmod: "2022-02-17"
 
 Aspose.PDF for .NET memungkinkan Anda membaca dan mengatur properti halaman dalam file PDF di aplikasi .NET Anda. Bagian ini menunjukkan cara mendapatkan jumlah halaman dalam file PDF, mendapatkan informasi tentang properti halaman PDF seperti warna dan mengatur properti halaman. Contoh yang diberikan dalam C# tetapi Anda dapat menggunakan bahasa .NET lainnya seperti VB.NET untuk mencapai hal yang sama.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Dapatkan Jumlah Halaman dalam File PDF
 
@@ -188,7 +188,7 @@ private static void AccessingPageProperties()
 
 ## Dapatkan Halaman Tertentu dari File PDF
 
-Aspose.PDF memungkinkan Anda [memisahkan PDF menjadi halaman individual](/pdf/net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dokumen ini.
+Aspose.PDF memungkinkan Anda [memisahkan PDF menjadi halaman individual](/pdf/id/net/split-pdf-document/) dan menyimpannya sebagai file PDF. Mendapatkan halaman tertentu dalam file PDF dan menyimpannya sebagai PDF baru adalah operasi yang sangat mirip: buka dokumen sumber, akses halaman, buat dokumen baru dan tambahkan halaman ke dokumen ini.
 
 Koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) dari objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyimpan halaman-halaman dalam file PDF. Untuk mendapatkan halaman tertentu dari koleksi ini:
 

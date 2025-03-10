@@ -138,7 +138,7 @@ Untuk mencetak dokumen PDF, System.Drawing.Common digunakan, jadi itu hanya akan
 
 ## Lisensi
 
-Tidak ada lisensi tambahan untuk Aspose.PDF.Drawing, gunakan yang sama seperti untuk Aspose.PDF. Periksa bagian [Lisensi Aspose PDF](/pdf/net/licensing/).
+Tidak ada lisensi tambahan untuk Aspose.PDF.Drawing, gunakan yang sama seperti untuk Aspose.PDF. Periksa bagian [Lisensi Aspose PDF](/pdf/id/net/licensing/).
 
 ## Instalasi
 
@@ -150,7 +150,7 @@ Pelajari kelas yang tersedia di Aspose.PDF.Drawing di situs [Referensi API](http
 
 Pelajari lebih lanjut tentang:
 
-- [Format File yang Didukung](/pdf/net/supported-file-formats/)
-- [Persyaratan Sistem](/pdf/net/system-requirements/)
-- [Lisensi](/pdf/net/licensing/)
-- [Dukungan Teknis](/pdf/net/technical-support/)
+- [Format File yang Didukung](/pdf/id/net/supported-file-formats/)
+- [Persyaratan Sistem](/pdf/id/net/system-requirements/)
+- [Lisensi](/pdf/id/net/licensing/)
+- [Dukungan Teknis](/pdf/id/net/technical-support/)

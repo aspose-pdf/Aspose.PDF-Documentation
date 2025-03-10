@@ -84,7 +84,7 @@ Kita dapat mengambil teks dari dokumen PDF dengan mencari teks tertentu (menggun
 
 **Dengan menggambar batas bagian dan paragraf teks di halaman PDF:**
 
-Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Pag
 
 **Dengan mengiterasi koleksi paragraf dan mendapatkan teks dari mereka:**
 
-Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Cuplikan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

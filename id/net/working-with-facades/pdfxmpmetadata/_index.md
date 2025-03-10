@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Bekerja dengan Platform Metadata Ekstensible - XMP](/pdf/net/working-with-extensible-metadata-platform-xmp/)
-- [Setel Metadata XMP dari PDF yang ada](/pdf/net/set-xmp-metadata-of-an-existing-pdf/)
-- [Dapatkan Metadata XMP dari File PDF yang Ada](/pdf/net/get-xmp-metadata-of-an-existing-pdf-file/)
+- [Bekerja dengan Platform Metadata Ekstensible - XMP](/pdf/id/net/working-with-extensible-metadata-platform-xmp/)
+- [Setel Metadata XMP dari PDF yang ada](/pdf/id/net/set-xmp-metadata-of-an-existing-pdf/)
+- [Dapatkan Metadata XMP dari File PDF yang Ada](/pdf/id/net/get-xmp-metadata-of-an-existing-pdf-file/)

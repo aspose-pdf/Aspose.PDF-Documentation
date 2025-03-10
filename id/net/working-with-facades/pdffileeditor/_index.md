@@ -90,26 +90,26 @@ Fitur yang dapat kami sertakan dalam bagian ini adalah Sisipkan, Tambahkan, Hapu
 
 Bagian ini menjelajahi kemampuan kelas ini dan menjelaskan tujuan dari metodenya.
 
-- [Gabungkan dokumen PDF](/pdf/net/concatenate-pdf-documents/)
-- [Ekstrak halaman PDF](/pdf/net/extract-pdf-pages/)
-- [Sisipkan halaman PDF](/pdf/net/insert-pdf-pages/)
-- [Hapus halaman PDF](/pdf/net/delete-pdf-pages/)
+- [Gabungkan dokumen PDF](/pdf/id/net/concatenate-pdf-documents/)
+- [Ekstrak halaman PDF](/pdf/id/net/extract-pdf-pages/)
+- [Sisipkan halaman PDF](/pdf/id/net/insert-pdf-pages/)
+- [Hapus halaman PDF](/pdf/id/net/delete-pdf-pages/)
 
 ## Menggunakan Pemisah Halaman
 
 Pemisah Halaman adalah fitur khusus yang memungkinkan aliran dokumen.
 
-- [Pemisah Halaman dalam PDF yang ada](/pdf/net/page-break-in-existing-pdf/)
+- [Pemisah Halaman dalam PDF yang ada](/pdf/id/net/page-break-in-existing-pdf/)
 
 ## Imposition PDF
 
 Imposition adalah proses mengatur halaman dengan benar sebelum mencetak. `PdfFileEditor` menyediakan dua metode untuk tujuan ini yaitu `MakeBooklet` dan `MakeNUp`. Metode MakeBooklet membantu mengatur halaman sehingga akan mudah untuk dilipat atau dijilid setelah dicetak, namun, metode MakeNUp memungkinkan untuk mencetak beberapa halaman pada satu halaman file PDF.
 
-- [Buat Buku PDF](/pdf/net/make-booklet-of-pdf/)
-- [Buat NUp dari file PDF](/pdf/net/make-nup-of-pdf-files/)
+- [Buat Buku PDF](/pdf/id/net/make-booklet-of-pdf/)
+- [Buat NUp dari file PDF](/pdf/id/net/make-nup-of-pdf-files/)
 
 ## Pembagian
 
 Fitur pembagian memungkinkan Anda untuk membagi file PDF yang ada menjadi bagian-bagian yang berbeda. Anda dapat membagi bagian depan file PDF atau bagian belakang. Karena PdfFileEditor menyediakan berbagai metode untuk tujuan pembagian, Anda juga dapat membagi file menjadi halaman individual atau banyak set halaman ganda.
 
-- [Bagi halaman PDF](/pdf/net/split-pdf-pages/)
+- [Bagi halaman PDF](/pdf/id/net/split-pdf-pages/)

@@ -85,13 +85,13 @@ Ini adalah objek tambahan yang Anda tambahkan ke file Anda untuk memperluas kont
 
 Kami telah menggabungkan berbagai jenis anotasi yang tersedia untuk perpustakaan Aspose.PDF for .NET ke dalam kelompok:
 
-- [Anotasi Teks PDF](/pdf/net/text-annotation/)
-- [Anotasi Sorotan PDF](/pdf/net/highlights-annotation/)
-- [Anotasi Gambar PDF](/pdf/net/figures-annotation/)
-- [Anotasi Multimedia](/pdf/net/multimedia-annotation/)
-- [Anotasi Tempel PDF](/pdf/net/sticky-annotations/)
-- [Anotasi Tautan](/pdf/net/link-annotations/)
-- [Anotasi Ekstra](/pdf/net/extra-annotations/)
+- [Anotasi Teks PDF](/pdf/id/net/text-annotation/)
+- [Anotasi Sorotan PDF](/pdf/id/net/highlights-annotation/)
+- [Anotasi Gambar PDF](/pdf/id/net/figures-annotation/)
+- [Anotasi Multimedia](/pdf/id/net/multimedia-annotation/)
+- [Anotasi Tempel PDF](/pdf/id/net/sticky-annotations/)
+- [Anotasi Tautan](/pdf/id/net/link-annotations/)
+- [Anotasi Ekstra](/pdf/id/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

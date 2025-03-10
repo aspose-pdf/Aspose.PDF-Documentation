@@ -87,7 +87,7 @@ AcroForm adalah jenis penting dari dokumen PDF. Anda tidak hanya dapat membuat d
 
 ## Detail Implementasi
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Dalam artikel ini, kami telah mencoba untuk membuat AcroForm menggunakan [namespace Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace). Kami juga telah menambahkan tombol kirim dan mengatur URL targetnya. Potongan kode berikut menunjukkan kepada Anda bagaimana cara membuat formulir dan kemudian menerima data yang dikirim di halaman web.
 

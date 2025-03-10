@@ -82,8 +82,8 @@ sitemap:
 Bagian ini menggambarkan pendekatan cepat dan sederhana untuk menyelesaikan dokumen PDF secara programatik melalui penggunaan Aspose.PDF. Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF for .NET untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang ada dengan AcroForms. 
 Selain itu, Anda akan belajar cara bekerja dengan XFA - teknologi lain untuk formulir presentasi berbasis XML.
 
-- [AcroForms](/pdf/net/acroforms/) - buat formulir, isi bidang formulir, ekstrak data dari formulir, tambahkan dan hapus bidang dalam PDF Anda dengan pustaka .NET.
-- [XFA Forms](/pdf/net/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.
+- [AcroForms](/pdf/id/net/acroforms/) - buat formulir, isi bidang formulir, ekstrak data dari formulir, tambahkan dan hapus bidang dalam PDF Anda dengan pustaka .NET.
+- [XFA Forms](/pdf/id/net/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.
 
 <script type="application/ld+json">
 {

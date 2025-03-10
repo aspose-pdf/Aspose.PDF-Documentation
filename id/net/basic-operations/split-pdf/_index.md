@@ -90,7 +90,7 @@ Topik ini menunjukkan cara memisahkan halaman PDF menjadi file PDF individu dala
 1. Untuk setiap iterasi, buat objek Document baru dan tambahkan objek [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) individu ke dalam dokumen kosong.
 1. Simpan PDF baru menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Memisahkan PDF menjadi beberapa file atau pdf terpisah
 

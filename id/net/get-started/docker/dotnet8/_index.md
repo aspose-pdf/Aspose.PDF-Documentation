@@ -97,9 +97,9 @@ Contoh berikut diuji dengan:
 
 ### Hasilkan dokumen PDF menggunakan Aplikasi Web ASP.NET Core di kontainer Linux
 
-Kami akan menggunakan kode dari **Contoh Kompleks** dalam aplikasi ini. Silakan ikuti [tautan ini](/pdf/net/complex-pdf-example/) untuk penjelasan yang lebih rinci.
+Kami akan menggunakan kode dari **Contoh Kompleks** dalam aplikasi ini. Silakan ikuti [tautan ini](/pdf/id/net/complex-pdf-example/) untuk penjelasan yang lebih rinci.
 
-1. Buat folder `images` di folder `wwwroot` dan letakkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/net/docker/logo.png).
+1. Buat folder `images` di folder `wwwroot` dan letakkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/id/net/docker/logo.png).
 1. Buat folder `fonts` di folder `wwwroot` dan letakkan font [Roboto](https://fonts.google.com/specimen/Roboto) di sana.
 1. Buat folder `samples` di folder `wwwroot` dan letakkan data contoh di sana.
 1. Ganti kode di `HomeController.cs` dengan cuplikan berikut (harap dicatat bahwa Anda dapat memiliki namespace lain):

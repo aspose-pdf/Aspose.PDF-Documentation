@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Atur Informasi File PDF](/pdf/net/set-pdf-file-information/)
-- [Dapatkan informasi file PDF](/pdf/net/get-pdf-file-information/)
+- [Atur Informasi File PDF](/pdf/id/net/set-pdf-file-information/)
+- [Dapatkan informasi file PDF](/pdf/id/net/get-pdf-file-information/)

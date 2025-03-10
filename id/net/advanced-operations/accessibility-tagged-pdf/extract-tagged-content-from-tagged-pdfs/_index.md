@@ -81,7 +81,7 @@ sitemap:
 
 Dalam artikel ini Anda akan belajar cara mengekstrak konten berlabel dari dokumen PDF menggunakan C#.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mendapatkan Konten PDF Berlabel
 

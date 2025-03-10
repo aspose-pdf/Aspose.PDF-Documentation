@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET menawarkan fungsionalitas untuk menambahkan tanda tangan digital dari lokasi penyimpanan kunci. Anda dapat menerapkan tanda tangan dengan menerima sertifikat yang disediakan oleh penyimpanan sertifikat, kartu pintar atau [kartu PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) yang terhubung ke sistem saat waktu berjalan.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Berikut adalah potongan kode untuk menandatangani dokumen PDF dari kartu pintar:
 

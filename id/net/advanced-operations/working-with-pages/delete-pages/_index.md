@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF for .NET. Untuk menghapus halaman tertentu dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

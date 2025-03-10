@@ -91,7 +91,7 @@ Format XML keluaran adalah format khusus Aspose. XML ini berisi koleksi tag deng
 
 {{% /alert %}}
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara memvalidasi dokumen PDF untuk PDF/A-1A.
 

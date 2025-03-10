@@ -86,7 +86,7 @@ Aspose.PDF untuk NET memungkinkan Anda mengekstrak teks dari anotasi stempel. Un
 1. Definisikan objek baru dari kelas `TextAbsorber`.
 1. Gunakan metode kunjungan TextAbsorber untuk mendapatkan Teks.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

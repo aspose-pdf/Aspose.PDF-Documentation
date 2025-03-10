@@ -76,7 +76,7 @@ url: /id/net/using-late-binding-in-cpp/
 
 {{% alert color="primary" %}}
 
-Silakan daftarkan Aspose.PDF for .NET dengan COM Interop, silakan periksa artikel yang berjudul [Gunakan Aspose.pdf untuk .NET melalui COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+Silakan daftarkan Aspose.PDF for .NET dengan COM Interop, silakan periksa artikel yang berjudul [Gunakan Aspose.pdf untuk .NET melalui COM Interop](/pdf/id/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

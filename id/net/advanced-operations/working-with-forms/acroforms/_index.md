@@ -100,14 +100,14 @@ AcroForms memiliki kemampuan yang tidak ditemukan di XFA dan sebaliknya XFA memi
 
 Untuk pembelajaran yang lebih mendetail tentang kemampuan pustaka Java, lihat artikel berikut:
 
-- [Buat AcroForm](/pdf/net/create-form) - buat formulir dari awal dengan C#.
-- [Isi AcroForm](/pdf/net/fill-form) - isi kolom formulir dalam dokumen PDF Anda.
-- [Ekstrak AcroForm](/pdf/net/extract-form) - dapatkan nilai dari semua atau kolom individu dokumen PDF.
-- [Modifikasi AcroForm](/pdf/net/modifing-form) - dapatkan atau atur FieldLimit, atur font kolom formulir, dan lain-lain.
-- [Posting Data AcroForm](/pdf/net/posting-acroform-data/) - impor dan ekspor data formulir ke dan dari file XML.
-- [Impor dan Ekspor Data](/pdf/net/import-and-export-data/) - impor dan ekspor data menggunakan Kelas Formulir.
-- [Hapus Formulir dari PDF](/pdf/net/remove-form/) - hapus Teks berdasarkan subtype/form, hapus semua formulir.
-- [Impor dan Ekspor Data dalam JSON](/pdf/net/import-export-json/) - impor dan ekspor data dengan JSON
+- [Buat AcroForm](/pdf/id/net/create-form) - buat formulir dari awal dengan C#.
+- [Isi AcroForm](/pdf/id/net/fill-form) - isi kolom formulir dalam dokumen PDF Anda.
+- [Ekstrak AcroForm](/pdf/id/net/extract-form) - dapatkan nilai dari semua atau kolom individu dokumen PDF.
+- [Modifikasi AcroForm](/pdf/id/net/modifing-form) - dapatkan atau atur FieldLimit, atur font kolom formulir, dan lain-lain.
+- [Posting Data AcroForm](/pdf/id/net/posting-acroform-data/) - impor dan ekspor data formulir ke dan dari file XML.
+- [Impor dan Ekspor Data](/pdf/id/net/import-and-export-data/) - impor dan ekspor data menggunakan Kelas Formulir.
+- [Hapus Formulir dari PDF](/pdf/id/net/remove-form/) - hapus Teks berdasarkan subtype/form, hapus semua formulir.
+- [Impor dan Ekspor Data dalam JSON](/pdf/id/net/import-export-json/) - impor dan ekspor data dengan JSON
 
 <script type="application/ld+json">
 {

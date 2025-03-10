@@ -90,7 +90,7 @@ Untuk mendapatkan semua lampiran dari file PDF:
 
 Potongan kode berikut menunjukkan cara mendapatkan semua lampiran dari dokumen PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Fitur ini juga berfungsi di [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Fitur ini juga berfungsi di [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 ## Dasar-dasar menggunakan alat FloatingBox
 

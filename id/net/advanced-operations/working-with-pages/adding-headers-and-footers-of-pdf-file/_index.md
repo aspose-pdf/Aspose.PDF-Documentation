@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** memungkinkan Anda untuk menambahkan header dan footer di file PDF yang sudah ada. Anda dapat menambahkan gambar atau teks ke dokumen PDF. Juga, coba tambahkan berbagai header dalam satu file PDF dengan C#.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Menambahkan Teks di Header File PDF
 

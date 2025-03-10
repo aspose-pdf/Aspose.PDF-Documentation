@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) pustaka.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
 Menghasilkan dokumen PDF dari dokumen XML bukanlah tugas yang sepele karena dokumen XML dapat menggambarkan konten yang berbeda. Aspose.PDF for .NET memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML:
 

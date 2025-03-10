@@ -12,7 +12,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-- [Ekstrak Teks](/pdf/net/extract-text/)
-- [Ekstrak Gambar](/pdf/net/extract-images/)
-- [Ekstrak Lampiran](/pdf/net/extract-attachments/)
-- [Cari apakah file PDF hanya berisi gambar atau teks](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [Ekstrak Teks](/pdf/id/net/extract-text/)
+- [Ekstrak Gambar](/pdf/id/net/extract-images/)
+- [Ekstrak Lampiran](/pdf/id/net/extract-attachments/)
+- [Cari apakah file PDF hanya berisi gambar atau teks](/pdf/id/net/find-whether-pdf-file-contains-images-or-text-only/)

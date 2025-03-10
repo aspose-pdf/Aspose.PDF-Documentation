@@ -12,5 +12,5 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-- [Gabungkan Gambar](/pdf/net/merge-images/)
-- [Konversi File PDF](/pdf/net/convert-pdf-file/)
+- [Gabungkan Gambar](/pdf/id/net/merge-images/)
+- [Konversi File PDF](/pdf/id/net/convert-pdf-file/)

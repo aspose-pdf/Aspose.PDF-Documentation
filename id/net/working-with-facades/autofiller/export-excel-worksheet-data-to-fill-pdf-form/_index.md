@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Nama ruang Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) di [Aspose.PDF for .NET](/pdf/net/) menawarkan berbagai cara untuk mengisi formulir PDF. Anda dapat mengimpor data dari file XML, DFD, XFDF, menggunakan API dan bahkan dapat menggunakan data dari lembar kerja Excel.
+[Nama ruang Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) di [Aspose.PDF for .NET](/pdf/id/net/) menawarkan berbagai cara untuk mengisi formulir PDF. Anda dapat mengimpor data dari file XML, DFD, XFDF, menggunakan API dan bahkan dapat menggunakan data dari lembar kerja Excel.
 Kami akan menggunakan metode [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) dari kelas [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) dari [Aspose.Cells](https://docs.aspose.com//cells/net) untuk mengekspor data dari lembar Excel ke objek DataTable. Kemudian kami perlu mengimpor data ini ke dalam formulir PDF menggunakan metode [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) dari kelas [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Pastikan bahwa nama Kolom dari DataTable sama dengan nama field di formulir PDF.
 
 {{% /alert %}}

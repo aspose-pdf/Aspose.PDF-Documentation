@@ -105,7 +105,7 @@ Untuk menambahkan gambar ke dalam file PDF:
    - Gunakan operator Do untuk menggambar gambar di halaman.
 1. Terakhir, gunakan operator GRestore untuk menyimpan status grafis yang diperbarui.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara menggunakan operator PDF.
 

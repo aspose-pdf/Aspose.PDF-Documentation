@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Namespace Aspose.Pdf.Facades dalam [Aspose.PDF for .NET](/pdf/net/) memungkinkan Anda untuk memanipulasi halaman individu dalam file PDF. Fitur ini membantu Anda bekerja dengan tampilan halaman, penyelarasan, dan transisi, dll. Kelas PdfPageEditor membantu mencapai fungsionalitas ini. Dalam artikel ini, kita akan melihat properti dan metode yang disediakan oleh kelas ini serta cara kerja metode tersebut.
+Namespace Aspose.Pdf.Facades dalam [Aspose.PDF for .NET](/pdf/id/net/) memungkinkan Anda untuk memanipulasi halaman individu dalam file PDF. Fitur ini membantu Anda bekerja dengan tampilan halaman, penyelarasan, dan transisi, dll. Kelas PdfPageEditor membantu mencapai fungsionalitas ini. Dalam artikel ini, kita akan melihat properti dan metode yang disediakan oleh kelas ini serta cara kerja metode tersebut.
 
 {{% /alert %}}
 

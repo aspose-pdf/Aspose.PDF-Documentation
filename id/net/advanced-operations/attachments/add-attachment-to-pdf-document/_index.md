@@ -81,7 +81,7 @@ sitemap:
 
 Lampiran dapat berisi berbagai informasi dan dapat berupa berbagai jenis file. Artikel ini menjelaskan cara menambahkan lampiran ke file PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/id/net/drawing/).
 
 1. Buat proyek C# baru.
 1. Tambahkan referensi ke DLL Aspose.PDF.

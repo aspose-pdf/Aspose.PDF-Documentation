@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Topik ini menjelaskan cara menggunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi tentang gambar tanpa harus mengekstraknya.
 

@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/net/) memungkinkan Anda untuk menambahkan cap dalam file PDF yang ada. Terkadang, pengguna perlu memutar cap. Dalam artikel ini, kita akan melihat cara memutar cap tentang titik pusatnya.
+[Namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dalam [Aspose.PDF for .NET](/pdf/id/net/) memungkinkan Anda untuk menambahkan cap dalam file PDF yang ada. Terkadang, pengguna perlu memutar cap. Dalam artikel ini, kita akan melihat cara memutar cap tentang titik pusatnya.
 
 {{% /alert %}}
 

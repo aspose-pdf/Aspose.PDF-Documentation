@@ -82,7 +82,7 @@ sitemap:
 
 Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) untuk menambahkan stempel teks di file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan stempel teks, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan stempel di PDF.
 
-Potongan kode berikut juga bekerja dengan library [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan library [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara menambahkan stempel teks di file PDF.
 

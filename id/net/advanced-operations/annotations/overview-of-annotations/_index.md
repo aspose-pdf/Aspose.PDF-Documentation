@@ -83,28 +83,28 @@ Tabel berikut menunjukkan jenis Anotasi yang didukung oleh Aspose.PDF for .NET.
 
 |**Jenis Anotasi**|**Deskripsi**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Teks](/pdf/net/text-annotation/)|Anotasi teks|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Tautan](/pdf/net/extra-annotations/)|Anotasi tautan|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[TeksBebas](/pdf/net/text-annotation/)|(PDF 1.3) Anotasi teks bebas|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Garis](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi garis|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Persegi](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi persegi|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Lingkaran](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi lingkaran|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Poligon](/pdf/net/figures-annotation/)|(PDF 1.5) Anotasi poligon|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[GarisPoli](/pdf/net/figures-annotation/)|(PDF 1.5) Anotasi garis poli|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sorotan](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotasi sorotan|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[GarisBawah](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotasi garis bawah|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Bergelombang](/pdf/net/highlights-annotation/)|(PDF 1.4) Anotasi garis bawah bergelombang|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Coret](/pdf/net/highlights-annotation/)|(PDF 1.3) Anotasi coret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Cap](/pdf/net/stamping/)|(PDF 1.3) Anotasi cap karet|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) Anotasi caret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Tinta](/pdf/net/figures-annotation/)|(PDF 1.3) Anotasi tinta|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Pop-up](/pdf/net/text-annotation/)|(PDF 1.3) Anotasi pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Suara](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotasi suara|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Film](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotasi film|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) Anotasi widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Layar](/pdf/net/multimedia-annotation/)|(PDF 1.5) Anotasi layar|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) Anotasi watermark|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) Anotasi redact|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Teks](/pdf/id/net/text-annotation/)|Anotasi teks|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Tautan](/pdf/id/net/extra-annotations/)|Anotasi tautan|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[TeksBebas](/pdf/id/net/text-annotation/)|(PDF 1.3) Anotasi teks bebas|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Garis](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi garis|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Persegi](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi persegi|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Lingkaran](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi lingkaran|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Poligon](/pdf/id/net/figures-annotation/)|(PDF 1.5) Anotasi poligon|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[GarisPoli](/pdf/id/net/figures-annotation/)|(PDF 1.5) Anotasi garis poli|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sorotan](/pdf/id/net/highlights-annotation/)|(PDF 1.3) Anotasi sorotan|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[GarisBawah](/pdf/id/net/highlights-annotation/)|(PDF 1.3) Anotasi garis bawah|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Bergelombang](/pdf/id/net/highlights-annotation/)|(PDF 1.4) Anotasi garis bawah bergelombang|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Coret](/pdf/id/net/highlights-annotation/)|(PDF 1.3) Anotasi coret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Cap](/pdf/id/net/stamping/)|(PDF 1.3) Anotasi cap karet|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/id/net/extra-annotations/)|(PDF 1.5) Anotasi caret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Tinta](/pdf/id/net/figures-annotation/)|(PDF 1.3) Anotasi tinta|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Pop-up](/pdf/id/net/text-annotation/)|(PDF 1.3) Anotasi pop-up|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Suara](/pdf/id/net/multimedia-annotation/)|(PDF 1.2) Anotasi suara|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Film](/pdf/id/net/multimedia-annotation/)|(PDF 1.2) Anotasi film|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/id/net/multimedia-annotation/)|(PDF 1.2) Anotasi widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Layar](/pdf/id/net/multimedia-annotation/)|(PDF 1.5) Anotasi layar|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/id/net/sticky-annotations/)|(PDF 1.6) Anotasi watermark|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/id/net/extra-annotations/)|(PDF 1.7) Anotasi redact|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

@@ -81,7 +81,7 @@ sitemap:
 
 ## Cara menambahkan Anotasi Teks ke file PDF yang ada
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Anotasi Teks adalah anotasi yang dilampirkan pada lokasi tertentu dalam dokumen PDF. Ketika ditutup, anotasi ditampilkan sebagai ikon; ketika dibuka, harus menampilkan jendela pop-up yang berisi teks catatan dalam font dan ukuran yang dipilih oleh pembaca.
 
@@ -136,7 +136,7 @@ Anotasi Pop-up menampilkan teks dalam jendela pop-up untuk entri dan pengeditan.
 
 Ini tidak boleh memiliki aliran penampilan atau tindakan terkait sendiri dan harus diidentifikasi oleh entri Popup dalam kamus anotasi induknya.
 
-Potongan kode berikut menunjukkan cara menambahkan [Anotasi Pop-up](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan [anotasi Garis](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) induk.
+Potongan kode berikut menunjukkan cara menambahkan [Anotasi Pop-up](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) di halaman PDF menggunakan contoh menambahkan [anotasi Garis](/pdf/id/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) induk.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -87,7 +87,7 @@ Contoh berikut menggunakan File Microsoft Excel, dokumen Word, dan file gambar u
 
 Kode di bawah ini menghasilkan portofolio berikut.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ### Portofolio PDF yang dibuat dengan Aspose.PDF
 

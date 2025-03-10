@@ -82,7 +82,7 @@ sitemap:
 
 Judul adalah bagian penting dari dokumen apa pun. Penulis selalu berusaha untuk membuat judul lebih menonjol dan bermakna bagi pembacanya. Jika ada lebih dari satu judul dalam sebuah dokumen, penulis memiliki beberapa opsi untuk mengatur judul-judul ini. Salah satu pendekatan yang paling umum untuk mengatur judul adalah dengan menulis judul dalam Gaya Penomoran.
 
-[Aspose.PDF for .NET](/pdf/net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan sebelumnya ini disimpan dalam sebuah enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan sebelumnya dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
+[Aspose.PDF for .NET](/pdf/id/net/) menawarkan banyak gaya penomoran yang telah ditentukan sebelumnya. Gaya penomoran yang telah ditentukan sebelumnya ini disimpan dalam sebuah enumerasi, NumberingStyle. Nilai-nilai yang telah ditentukan sebelumnya dari enumerasi NumberingStyle dan deskripsinya diberikan di bawah ini:
 
 |**Tipe Judul**|**Deskripsi**|
 | :- | :- |
@@ -97,7 +97,7 @@ Properti **Style** dari kelas **Aspose.Pdf.Heading** digunakan untuk mengatur ga
 | :- |
 Kode sumber, untuk mendapatkan output yang ditunjukkan dalam gambar di atas, diberikan di bawah ini dalam contoh.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

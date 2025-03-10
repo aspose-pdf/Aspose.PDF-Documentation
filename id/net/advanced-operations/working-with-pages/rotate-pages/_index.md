@@ -80,7 +80,7 @@ sitemap:
 
 Topik ini menjelaskan cara memperbarui atau mengubah orientasi halaman dari halaman dalam file PDF yang ada secara programatis dengan C#.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Mengubah Orientasi Halaman
 

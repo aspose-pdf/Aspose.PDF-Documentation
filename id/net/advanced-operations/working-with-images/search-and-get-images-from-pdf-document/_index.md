@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ImagePlacementAbsorber memungkinkan Anda untuk mencari di antara gambar di semua halaman dalam dokumen PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Untuk mencari seluruh dokumen untuk gambar:
 

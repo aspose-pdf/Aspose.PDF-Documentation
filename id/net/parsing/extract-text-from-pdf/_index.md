@@ -14,6 +14,6 @@ sitemap:
 ---
 ## Artikel di bagian ini
 
-- [Ekstrak Teks dari PDF](/pdf/net/extract-text-from-all-pdf/)
-- [Ekstrak Paragraf dari PDF](/pdf/net/extract-paragraph-from-pdf/)
-- [Ekstrak Teks SuperScripts dan SubScripts dari PDF](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [Ekstrak Teks dari PDF](/pdf/id/net/extract-text-from-all-pdf/)
+- [Ekstrak Paragraf dari PDF](/pdf/id/net/extract-paragraph-from-pdf/)
+- [Ekstrak Teks SuperScripts dan SubScripts dari PDF](/pdf/id/net/extract-superscripts-subscripts-from-pdf/)

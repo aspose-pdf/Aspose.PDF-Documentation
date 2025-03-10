@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Menambahkan watermark multi baris ke PDF yang ada](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [Memutar stamp tentang titik pusat](/pdf/net/rotating-stamp-about-the-center-point/)
+- [Menambahkan watermark multi baris ke PDF yang ada](/pdf/id/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Memutar stamp tentang titik pusat](/pdf/id/net/rotating-stamp-about-the-center-point/)

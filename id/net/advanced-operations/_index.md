@@ -78,32 +78,32 @@ sitemap:
 }
 </script>
 
-**Operasi Lanjutan** adalah bagian tentang bagaimana menangani file PDF yang ada secara programatis, baik itu dokumen yang dibuat dengan Aspose.PDF seperti yang dibahas di [Operasi Dasar](/pdf/net/basic-operations/), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office atau produsen PDF lainnya.
+**Operasi Lanjutan** adalah bagian tentang bagaimana menangani file PDF yang ada secara programatis, baik itu dokumen yang dibuat dengan Aspose.PDF seperti yang dibahas di [Operasi Dasar](/pdf/id/net/basic-operations/), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office atau produsen PDF lainnya.
 
 Anda akan belajar berbagai cara untuk:
 
-- [Bekerja dengan Dokumen](/pdf/net/working-with-documents/) - mengompresi, membagi, dan menggabungkan dokumen serta melakukan operasi lain dengan seluruh dokumen.
-- [Bekerja dengan Halaman](/pdf/net/working-with-pages/) - menambahkan, memindahkan atau menghapus, memotong halaman, menambahkan watermark, stempel.
-- [Bekerja dengan Teks](/pdf/net/working-with-text/) - menambahkan, memformat, mencari dan mengganti teks dalam PDF.
-- [Bekerja dengan Gambar](/pdf/net/working-with-images/) - menyisipkan, menghapus, mengekstrak gambar dalam dokumen.
-- [Bekerja dengan Tabel](/pdf/net/working-with-tables/) - menyisipkan, menghias tabel dalam PDF, mengekstrak data tabel.
-- [Bekerja dengan Formulir](/pdf/net/working-with-forms/) - menangani dokumen PDF interaktif, menambahkan field formulir, mengekstrak data.
-- [Bekerja dengan Grafik](/pdf/net/working-with-graphs/) - memanipulasi bentuk di halaman.
-- [Bekerja dengan XML](/pdf/net/working-with-xml) - membangun dokumen PDF berdasarkan struktur XML.
-- [Bekerja dengan Operator](/pdf/net/working-with-operators/) - melakukan operasi tingkat rendah dalam PDF.
-- [Bekerja dengan Grafik Vektor](/pdf/net/working-with-vector-graphics) - menjelaskan fitur bekerja dengan GraphicsAbsorber.
-- [Bekerja dengan ZUGFeRD](/pdf/net/working-with-zugferd) - membuat faktur PDF yang sesuai dengan ZUGFeRD.
-- [Bekerja dengan Javascript](/pdf/net/working-with-javascript) - menambahkan, menghapus kode Javascript dalam PDF.
-- [Bandingkan dokumen PDF](/pdf/net/compare-pdf-documents/) - memungkinkan untuk membandingkan konten dokumen PDF.
-- [Navigasi dan Interaksi](/pdf/net/navigation-and-interaction/) - menangani tindakan, bookmark, menavigasi halaman.
-- [PDF AI Copilot](/pdf/net/ai-copilot/) - memungkinkan untuk memproses dokumen PDF menggunakan LLM dari berbagai penyedia.
-- [Anotasi](/pdf/net/annotations/) - Anotasi memungkinkan pengguna untuk menambahkan konten kustom di halaman PDF. Anda dapat menambahkan, menghapus, dan memodifikasi anotasi dari dokumen PDF.
-- [Artefak](/pdf/net/artifacts/) - menangani watermark dan objek khusus lainnya dalam PDF.
-- [Aksesibilitas. PDF Berlabel](/pdf/net/accessibility-tagged-pdf/) - Pelabelan sangat penting untuk aksesibilitas PDF. Aspose.PDF memungkinkan untuk menambahkan label ke dalam PDF dan menetapkan urutan bacaan logis serta menyediakan cara untuk menunjukkan struktur dan jenis.
-- [Lampiran](/pdf/net/attachments/) - Dokumen PDF dapat berisi lampiran file. Lampiran ini dapat berupa dokumen PDF lainnya, atau jenis file apa pun, seperti file audio, dokumen Microsoft Office, dll. Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan C#.
-- [Metadata dalam PDF](/pdf/net/pdf-file-metadata/) - mendapatkan atau menetapkan metadata dalam dokumen, menangani data XMP.
-- [Mengamankan dan Menandatangani](/pdf/net/securing-and-signing/) - melindungi dan menandatangani dokumen PDF Anda secara programatis.
-- [Mencetak Dokumen](/pdf/net/printing-document/) - mencetak PDF dalam berbagai jenis aplikasi (WinForms, WPF, dll.).
+- [Bekerja dengan Dokumen](/pdf/id/net/working-with-documents/) - mengompresi, membagi, dan menggabungkan dokumen serta melakukan operasi lain dengan seluruh dokumen.
+- [Bekerja dengan Halaman](/pdf/id/net/working-with-pages/) - menambahkan, memindahkan atau menghapus, memotong halaman, menambahkan watermark, stempel.
+- [Bekerja dengan Teks](/pdf/id/net/working-with-text/) - menambahkan, memformat, mencari dan mengganti teks dalam PDF.
+- [Bekerja dengan Gambar](/pdf/id/net/working-with-images/) - menyisipkan, menghapus, mengekstrak gambar dalam dokumen.
+- [Bekerja dengan Tabel](/pdf/id/net/working-with-tables/) - menyisipkan, menghias tabel dalam PDF, mengekstrak data tabel.
+- [Bekerja dengan Formulir](/pdf/id/net/working-with-forms/) - menangani dokumen PDF interaktif, menambahkan field formulir, mengekstrak data.
+- [Bekerja dengan Grafik](/pdf/id/net/working-with-graphs/) - memanipulasi bentuk di halaman.
+- [Bekerja dengan XML](/pdf/id/net/working-with-xml) - membangun dokumen PDF berdasarkan struktur XML.
+- [Bekerja dengan Operator](/pdf/id/net/working-with-operators/) - melakukan operasi tingkat rendah dalam PDF.
+- [Bekerja dengan Grafik Vektor](/pdf/id/net/working-with-vector-graphics) - menjelaskan fitur bekerja dengan GraphicsAbsorber.
+- [Bekerja dengan ZUGFeRD](/pdf/id/net/working-with-zugferd) - membuat faktur PDF yang sesuai dengan ZUGFeRD.
+- [Bekerja dengan Javascript](/pdf/id/net/working-with-javascript) - menambahkan, menghapus kode Javascript dalam PDF.
+- [Bandingkan dokumen PDF](/pdf/id/net/compare-pdf-documents/) - memungkinkan untuk membandingkan konten dokumen PDF.
+- [Navigasi dan Interaksi](/pdf/id/net/navigation-and-interaction/) - menangani tindakan, bookmark, menavigasi halaman.
+- [PDF AI Copilot](/pdf/id/net/ai-copilot/) - memungkinkan untuk memproses dokumen PDF menggunakan LLM dari berbagai penyedia.
+- [Anotasi](/pdf/id/net/annotations/) - Anotasi memungkinkan pengguna untuk menambahkan konten kustom di halaman PDF. Anda dapat menambahkan, menghapus, dan memodifikasi anotasi dari dokumen PDF.
+- [Artefak](/pdf/id/net/artifacts/) - menangani watermark dan objek khusus lainnya dalam PDF.
+- [Aksesibilitas. PDF Berlabel](/pdf/id/net/accessibility-tagged-pdf/) - Pelabelan sangat penting untuk aksesibilitas PDF. Aspose.PDF memungkinkan untuk menambahkan label ke dalam PDF dan menetapkan urutan bacaan logis serta menyediakan cara untuk menunjukkan struktur dan jenis.
+- [Lampiran](/pdf/id/net/attachments/) - Dokumen PDF dapat berisi lampiran file. Lampiran ini dapat berupa dokumen PDF lainnya, atau jenis file apa pun, seperti file audio, dokumen Microsoft Office, dll. Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan C#.
+- [Metadata dalam PDF](/pdf/id/net/pdf-file-metadata/) - mendapatkan atau menetapkan metadata dalam dokumen, menangani data XMP.
+- [Mengamankan dan Menandatangani](/pdf/id/net/securing-and-signing/) - melindungi dan menandatangani dokumen PDF Anda secara programatis.
+- [Mencetak Dokumen](/pdf/id/net/printing-document/) - mencetak PDF dalam berbagai jenis aplikasi (WinForms, WPF, dll.).
 
 <script type="application/ld+json">
 {

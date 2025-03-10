@@ -72,5 +72,5 @@ url: /id/net/integration-with-aspose-total-components/
 }
 </script>
 
-- [Konversi Halaman PDF ke Gambar dan Pengenalan Barcode](/pdf/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
-- [Ekstrak Gambar dari PDF dan kenali Barcode](/pdf/net/extract-images-from-pdf-and-recognize-barcodes/)
+- [Konversi Halaman PDF ke Gambar dan Pengenalan Barcode](/pdf/id/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
+- [Ekstrak Gambar dari PDF dan kenali Barcode](/pdf/id/net/extract-images-from-pdf-and-recognize-barcodes/)

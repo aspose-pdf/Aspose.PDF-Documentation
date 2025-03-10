@@ -87,7 +87,7 @@ Dalam salah satu rilis terbaru, pustaka **Aspose.PDF for .NET** menambahkan duku
 
 Gunakan kelas **TextFragmentAbsorber** dan Anda sudah bisa melakukan apa saja dengan teks yang ditemukan, yaitu, Anda bisa menggunakan seluruh teks. Cobalah cuplikan kode berikut:
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 Atau gunakan **TextFragments** secara terpisah dan lakukan berbagai manipulasi dengan mereka, misalnya, urutkan berdasarkan koordinat atau berdasarkan ukuran.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

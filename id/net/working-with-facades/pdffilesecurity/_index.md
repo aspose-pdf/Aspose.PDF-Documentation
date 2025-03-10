@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Enkripsi File PDF](/pdf/net/encrypt-pdf-file/)
-- [Dekripsi File PDF](/pdf/net/decrypt-pdf-file/)
-- [Kontrol File PDF Pengecualian](/pdf/net/control-exception/)
-- [Ubah Kata Sandi File PDF](/pdf/net/change-password/)
-- [Atur Hak Istimewa pada File PDF yang Ada](/pdf/net/set-privileges/)
+- [Enkripsi File PDF](/pdf/id/net/encrypt-pdf-file/)
+- [Dekripsi File PDF](/pdf/id/net/decrypt-pdf-file/)
+- [Kontrol File PDF Pengecualian](/pdf/id/net/control-exception/)
+- [Ubah Kata Sandi File PDF](/pdf/id/net/change-password/)
+- [Atur Hak Istimewa pada File PDF yang Ada](/pdf/id/net/set-privileges/)

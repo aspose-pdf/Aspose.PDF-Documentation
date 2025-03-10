@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Menambahkan Gambar dan Teks menggunakan kelas PdfFileMend](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
+- [Menambahkan Gambar dan Teks menggunakan kelas PdfFileMend](/pdf/id/net/adding-images-and-text-using-pdffilemend-class/)

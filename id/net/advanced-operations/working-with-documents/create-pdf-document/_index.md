@@ -81,7 +81,7 @@ sitemap:
 
 Kami selalu mencari cara untuk menghasilkan dokumen PDF dan bekerja dengan mereka dalam proyek C# dengan lebih tepat, akurat, dan efektif. Memiliki fungsi yang mudah digunakan dari sebuah pustaka memungkinkan kami untuk melacak lebih banyak pekerjaan, dan lebih sedikit pada rincian yang memakan waktu untuk mencoba menghasilkan PDF, baik dalam .NET.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Buat (atau Hasilkan) dokumen PDF menggunakan bahasa C#
 

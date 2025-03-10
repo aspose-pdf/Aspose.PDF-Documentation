@@ -104,7 +104,7 @@ Optimasi, atau linearization untuk Web, mengacu pada proses membuat file PDF coc
 1. Gunakan metode [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
 1. Simpan dokumen yang telah dioptimalkan menggunakan metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan cara mengoptimalkan dokumen PDF untuk web.
 

@@ -104,25 +104,25 @@ dan banyak lagi.
 
 ## Bab
 
-- [Apa yang baru](/pdf/net/whatsnew/)
-- [Ikhtisar](/pdf/net/overview/)
-- [Mulai](/pdf/net/get-started/)
-- [Operasi dasar](/pdf/net/basic-operations/)
-- [Mengonversi dokumen](/pdf/net/converting/)
-- [Menganalisis dokumen PDF](/pdf/net/parsing/)
-- [Operasi lanjutan](/pdf/net/advanced-operations/)
-- [Bekerja dengan Facades](/pdf/net/working-with-facades)
-- [Menggunakan dalam bahasa lain](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [Pameran](/pdf/net/showcases/)
-- [Plugin](/pdf/net/plugins/)
-- [FAQ](/pdf/net/faq/)
+- [Apa yang baru](/pdf/id/net/whatsnew/)
+- [Ikhtisar](/pdf/id/net/overview/)
+- [Mulai](/pdf/id/net/get-started/)
+- [Operasi dasar](/pdf/id/net/basic-operations/)
+- [Mengonversi dokumen](/pdf/id/net/converting/)
+- [Menganalisis dokumen PDF](/pdf/id/net/parsing/)
+- [Operasi lanjutan](/pdf/id/net/advanced-operations/)
+- [Bekerja dengan Facades](/pdf/id/net/working-with-facades)
+- [Menggunakan dalam bahasa lain](/pdf/id/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [Pameran](/pdf/id/net/showcases/)
+- [Plugin](/pdf/id/net/plugins/)
+- [FAQ](/pdf/id/net/faq/)
 - [Catatan Rilis](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Sumber Daya Aspose.PDF for .NET
 
 Berikut adalah tautan ke beberapa sumber daya berguna yang mungkin Anda perlukan untuk menyelesaikan tugas Anda.
 
-- [Fitur Aspose.PDF for .NET](/pdf/net/key-features/)
+- [Fitur Aspose.PDF for .NET](/pdf/id/net/key-features/)
 - [Catatan Rilis Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/release-notes/)
 - [Halaman Produk Aspose.PDF for .NET](https://products.aspose.com/pdf/net/)
 - [Unduh Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/)

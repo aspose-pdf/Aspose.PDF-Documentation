@@ -77,7 +77,7 @@ draft: false
 
 ## Verifikasi Apakah File PDF Ditandatangani Menggunakan Tanda Tangan
 
-Untuk memverifikasi apakah file PDF ditandatangani menggunakan [tanda tangan tertentu](/pdf/net/working-with-signature-in-a-pdf-file/), gunakan metode VerifySigned dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Metode ini memerlukan nama tanda tangan dan mengembalikan true jika PDF ditandatangani menggunakan nama tanda tangan tersebut. Juga dimungkinkan untuk memverifikasi bahwa [PDF ditandatangani](/pdf/net/working-with-signature-in-a-pdf-file/), tanpa memverifikasi tanda tangan mana yang digunakan.
+Untuk memverifikasi apakah file PDF ditandatangani menggunakan [tanda tangan tertentu](/pdf/id/net/working-with-signature-in-a-pdf-file/), gunakan metode VerifySigned dari kelas [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Metode ini memerlukan nama tanda tangan dan mengembalikan true jika PDF ditandatangani menggunakan nama tanda tangan tersebut. Juga dimungkinkan untuk memverifikasi bahwa [PDF ditandatangani](/pdf/id/net/working-with-signature-in-a-pdf-file/), tanpa memverifikasi tanda tangan mana yang digunakan.
 
 ### Memverifikasi bahwa PDF Ditandatangani dengan Tanda Tangan Tertentu
 

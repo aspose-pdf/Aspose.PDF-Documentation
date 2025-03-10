@@ -83,10 +83,10 @@ Dalam bagian ini, kami akan menjelaskan cara bekerja dengan lampiran di PDF meng
 Lampiran adalah file tambahan yang dilampirkan ke dokumen induk, bisa berupa berbagai jenis file, seperti pdf, word, gambar, atau file lainnya.
 Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi tentang lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan C#.
 
-- [Menambahkan lampiran ke dokumen PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Ekstrak dan simpan lampiran](/pdf/net/extract-and-save-an-attachment/)
-- [Menghapus lampiran dari PDF yang ada](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portofolio](/pdf/net/portfolio/)
+- [Menambahkan lampiran ke dokumen PDF](/pdf/id/net/add-attachment-to-pdf-document/)
+- [Ekstrak dan simpan lampiran](/pdf/id/net/extract-and-save-an-attachment/)
+- [Menghapus lampiran dari PDF yang ada](/pdf/id/net/removing-attachment-from-an-existing-pdf/)
+- [Portofolio](/pdf/id/net/portfolio/)
 
 <script type="application/ld+json">
 {

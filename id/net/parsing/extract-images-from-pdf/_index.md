@@ -82,7 +82,7 @@ Gambar disimpan dalam koleksi [Resources](https://reference.aspose.com/pdf/net/a
 
 Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Objek ini menyediakan metode Save yang dapat digunakan untuk menyimpan gambar yang diekstrak. Potongan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

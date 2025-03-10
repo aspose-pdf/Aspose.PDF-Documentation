@@ -77,7 +77,7 @@ description: Jelajahi cara menggunakan Aspose.PDF for .NET dalam aplikasi VBScri
 
 ## Prasyarat Silakan daftarkan Aspose.PDF for .NET dengan COM Interop, silakan periksa artikel yang bernama
 
-[Gunakan Aspose.pdf untuk .NET melalui COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+[Gunakan Aspose.pdf untuk .NET melalui COM Interop](/pdf/id/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

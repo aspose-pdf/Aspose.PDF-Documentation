@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) di [Aspose.PDF for .NET](/pdf/net/) mendukung AcroForms dengan sangat baik. Ini juga mendukung impor dan ekspor data formulir ke berbagai format file seperti FDF, XFDF, dan XML. Namun, terkadang pengembang mungkin perlu mengonversi satu format ke format lainnya. Artikel ini melihat fitur yang mengonversi FDF menjadi XML.
+Namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) di [Aspose.PDF for .NET](/pdf/id/net/) mendukung AcroForms dengan sangat baik. Ini juga mendukung impor dan ekspor data formulir ke berbagai format file seperti FDF, XFDF, dan XML. Namun, terkadang pengembang mungkin perlu mengonversi satu format ke format lainnya. Artikel ini melihat fitur yang mengonversi FDF menjadi XML.
 
 {{% /alert %}}
 

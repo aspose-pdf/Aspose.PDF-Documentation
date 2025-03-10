@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) pustaka.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
 ## Memperbarui Tautan di File PDF
 

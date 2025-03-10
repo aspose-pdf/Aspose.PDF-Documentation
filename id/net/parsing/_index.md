@@ -80,10 +80,10 @@ sitemap:
 
 **Mengurai PDF** dokumen adalah istilah yang terkait dengan ekstraksi berbagai jenis informasi dari file PDF. Bagian ini mencakup cara untuk:
 
-- [Ekstrak Teks dari PDF](/pdf/net/extract-text-from-pdf/). Penguraian atau Ekstraksi Teks adalah operasi yang paling populer dengan PDF yang sudah jadi. Anda akan belajar tentang penguraian teks dari seluruh dokumen, halaman tertentu, atau wilayah tertentu di halaman.
-- [Ekstrak Gambar dari PDF](/pdf/net/extract-images-from-the-pdf-file/). Ekstraksi Gambar melakukan hal yang sama untuk gambar seperti operasi di atas untuk teks.
-- [Ekstrak Font dari PDF](/pdf/net/extract-fonts-from-pdf/). Ekstraksi Font adalah operasi spesifik dengan font di PDF.
-- [Ekstrak Data dari Formulir](/pdf/net/extract-data-from-acroform/). Jika Anda memiliki banyak dokumen PDF dengan Formulir, mungkin Anda perlu mengambil data dari formulir tersebut. Artikel ini akan membantu memahami cara mengekstrak data AcroForms dengan Aspose.PDF for .NET.
-- [Ekstrak Teks Dari Stempel](/pdf/net/extract-text-from-stamps/) - dapatkan informasi teks dari dokumen PDF Anda.
-- [Ekstrak Data dari Tabel](/pdf/net/extract-data-from-table-in-pdf/) - dapatkan data dari tabel dalam dokumen PDF.
-- [Ekstrak Data Vektor dari PDF](/pdf/net/extract-vector-data-from-pdf/) - Anda dapat mendapatkan data vektor (jalur, poligon, polilin), seperti posisi, warna, lebar garis, dll.
+- [Ekstrak Teks dari PDF](/pdf/id/net/extract-text-from-pdf/). Penguraian atau Ekstraksi Teks adalah operasi yang paling populer dengan PDF yang sudah jadi. Anda akan belajar tentang penguraian teks dari seluruh dokumen, halaman tertentu, atau wilayah tertentu di halaman.
+- [Ekstrak Gambar dari PDF](/pdf/id/net/extract-images-from-the-pdf-file/). Ekstraksi Gambar melakukan hal yang sama untuk gambar seperti operasi di atas untuk teks.
+- [Ekstrak Font dari PDF](/pdf/id/net/extract-fonts-from-pdf/). Ekstraksi Font adalah operasi spesifik dengan font di PDF.
+- [Ekstrak Data dari Formulir](/pdf/id/net/extract-data-from-acroform/). Jika Anda memiliki banyak dokumen PDF dengan Formulir, mungkin Anda perlu mengambil data dari formulir tersebut. Artikel ini akan membantu memahami cara mengekstrak data AcroForms dengan Aspose.PDF for .NET.
+- [Ekstrak Teks Dari Stempel](/pdf/id/net/extract-text-from-stamps/) - dapatkan informasi teks dari dokumen PDF Anda.
+- [Ekstrak Data dari Tabel](/pdf/id/net/extract-data-from-table-in-pdf/) - dapatkan data dari tabel dalam dokumen PDF.
+- [Ekstrak Data Vektor dari PDF](/pdf/id/net/extract-vector-data-from-pdf/) - Anda dapat mendapatkan data vektor (jalur, poligon, polilin), seperti posisi, warna, lebar garis, dll.

@@ -82,8 +82,8 @@ sitemap:
 Bookmark PDF adalah alat yang berguna dan penting ketika membaca file PDF. Mereka memungkinkan pengguna untuk dengan cepat melompat ke tempat lain dalam dokumen PDF, menavigasi melalui halaman, dan dengan cepat melihat isi PDF, seperti daftar isi.
 Dalam bagian ini Anda akan belajar bagaimana:
 
-- [Menambahkan dan Menghapus Bookmark](/pdf/net/add-and-delete-bookmark/)
-- [Mendapatkan, Memperbarui, dan Memperluas Bookmark](/pdf/net/get-update-and-expand-bookmark/)
+- [Menambahkan dan Menghapus Bookmark](/pdf/id/net/add-and-delete-bookmark/)
+- [Mendapatkan, Memperbarui, dan Memperluas Bookmark](/pdf/id/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

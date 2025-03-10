@@ -96,40 +96,40 @@ Aspose.PDF for .NET memungkinkan mengonversi dokumen PDF ke berbagai format dan 
 
 Dokumen Word adalah yang paling serbaguna dan dapat diedit. Mengonversi PDF ke Word secara manual adalah tugas yang sangat memakan waktu. Dalam artikel ini, Anda akan belajar bagaimana mengonversi PDF ke Word secara programatis dalam C#.
 
-- [Mengonversi PDF ke Microsoft Word](/pdf/net/convert-pdf-to-word/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan C#.
+- [Mengonversi PDF ke Microsoft Word](/pdf/id/net/convert-pdf-to-word/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan C#.
 
 Format angka diperlukan tidak hanya untuk membuat data dalam tabel lebih mudah dibaca, tetapi juga untuk membuat tabel lebih mudah digunakan. Tentu saja, jika Anda perlu mengonversi data semacam itu dari dokumen PDF ke format Excel, gunakan perpustakaan Aspose.PDF kami.
 
-- [Mengonversi PDF ke Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, ODS, CSV, dan SpreadSheetML.
+- [Mengonversi PDF ke Microsoft Excel](/pdf/id/net/convert-pdf-to-excel/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, ODS, CSV, dan SpreadSheetML.
 
 Format PowerPoint digunakan untuk membuat berbagai presentasi. File PPT berisi sejumlah besar slide atau halaman yang berisi berbagai informasi.
 
-- [Mengonversi PDF ke Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi.
+- [Mengonversi PDF ke Microsoft PowerPoint](/pdf/id/net/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi.
 
 HyperText Markup Language adalah bahasa deskripsi dokumen hypertext, bahasa standar untuk membuat halaman web. Dengan Aspose.PDF for .NET Anda dapat dengan mudah mengonversi dokumen HTML dan sebaliknya.
 
-- [Mengonversi format HTML ke file PDF](/pdf/net/convert-html-to-pdf/) - artikel tentang berbagai aspek konversi HTML ke PDF.
-- [Mengonversi file PDF ke format HTML](/pdf/net/convert-pdf-to-html/) - mengonversi dokumen PDF Anda ke file HTML sebagai halaman terpisah atau sebagai satu halaman.
+- [Mengonversi format HTML ke file PDF](/pdf/id/net/convert-html-to-pdf/) - artikel tentang berbagai aspek konversi HTML ke PDF.
+- [Mengonversi file PDF ke format HTML](/pdf/id/net/convert-pdf-to-html/) - mengonversi dokumen PDF Anda ke file HTML sebagai halaman terpisah atau sebagai satu halaman.
 
 Ada banyak format gambar yang perlu dikonversi ke PDF untuk berbagai tujuan. Aspose.PDF memungkinkan format gambar yang paling populer dan sebaliknya.
 
-- [Mengonversi format Gambar ke file PDF](/pdf/net/convert-images-format-to-pdf/) - Aspose.PDF memungkinkan Anda mengonversi berbagai format gambar ke file PDF.
-- [Mengonversi PDF ke berbagai format Gambar](/pdf/net/convert-pdf-to-images-format/) - mengonversi halaman PDF sebagai gambar dalam format JPEG, PNG, dan lainnya.
+- [Mengonversi format Gambar ke file PDF](/pdf/id/net/convert-images-format-to-pdf/) - Aspose.PDF memungkinkan Anda mengonversi berbagai format gambar ke file PDF.
+- [Mengonversi PDF ke berbagai format Gambar](/pdf/id/net/convert-pdf-to-images-format/) - mengonversi halaman PDF sebagai gambar dalam format JPEG, PNG, dan lainnya.
 
 Bagian ini mencakup format-format seperti: EPUB, Markdown, PCL, XPS, LATex/TeX, Teks, dan PostScript.
 
-- [Mengonversi format file lain ke PDF](/pdf/net/convert-other-files-to-pdf/) - topik ini menjelaskan konversi dengan berbagai format seperti EPUB, XPS, Postscript, teks, dan lainnya.
-- [Mengonversi file PDF ke format lain](/pdf/net/convert-pdf-to-other-files/) - topik ini menjelaskan cara mengonversi dokumen PDF ke berbagai format.
+- [Mengonversi format file lain ke PDF](/pdf/id/net/convert-other-files-to-pdf/) - topik ini menjelaskan konversi dengan berbagai format seperti EPUB, XPS, Postscript, teks, dan lainnya.
+- [Mengonversi file PDF ke format lain](/pdf/id/net/convert-pdf-to-other-files/) - topik ini menjelaskan cara mengonversi dokumen PDF ke berbagai format.
 
 PDF/A adalah versi PDF yang dirancang untuk pengarsipan jangka panjang dokumen elektronik.
 Jika jujur, secara eksternal, sangat sulit untuk menentukan apakah itu PDF atau PDF/A. Untuk memeriksa file ini, validator digunakan. Periksa artikel berikut untuk konversi berkualitas dari PDF ke PDF/A dan sebaliknya.
 
-- [Mengonversi PDF ke format PDF/A](/pdf/net/convert-pdf-to-pdfa/) - perpustakaan .NET oleh Aspose.PDF memiliki cara yang mudah untuk mengonversi PDF ke PDF/A.
-- [Mengonversi PDF/A ke format PDF](/pdf/net/convert-pdfa-to-pdf/) - mengonversi PDF/A ke format PDF dengan C# mudah, cepat, dan berkualitas tinggi.
+- [Mengonversi PDF ke format PDF/A](/pdf/id/net/convert-pdf-to-pdfa/) - perpustakaan .NET oleh Aspose.PDF memiliki cara yang mudah untuk mengonversi PDF ke PDF/A.
+- [Mengonversi PDF/A ke format PDF](/pdf/id/net/convert-pdfa-to-pdf/) - mengonversi PDF/A ke format PDF dengan C# mudah, cepat, dan berkualitas tinggi.
 
 PDF/X adalah subset dari standar PDF yang memfasilitasi pertukaran grafik dan memiliki serangkaian persyaratan terkait pencetakan yang tidak berlaku untuk file PDF standar.
 
-- [Mengonversi PDF ke format pertukaran PDF/X](/pdf/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET memungkinkan konversi ke berbagai versi standar PDF/X.
+- [Mengonversi PDF ke format pertukaran PDF/X](/pdf/id/net/convert-pdf-to-pdfx/) - Aspose.PDF for .NET memungkinkan konversi ke berbagai versi standar PDF/X.
 
 ## Coba mengonversi file PDF secara online
 

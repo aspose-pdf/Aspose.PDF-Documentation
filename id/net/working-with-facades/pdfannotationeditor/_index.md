@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Hapus Semua Anotasi berdasarkan Tipe yang Ditentukan (facades)](/pdf/net/delete-annotations/)
-- [Impor dan Ekspor Anotasi ke format XFDF menggunakan com.aspose.pdf.facades](/pdf/net/import-export-annotations/)
-- [Ekstrak Anotasi](/pdf/net/extract-annotation/)
-- [Ratakan Anotasi](/pdf/net/flatten-annotation/)
-- [Modifikasi Anotasi](/pdf/net/modify-annotations/)
+- [Hapus Semua Anotasi berdasarkan Tipe yang Ditentukan (facades)](/pdf/id/net/delete-annotations/)
+- [Impor dan Ekspor Anotasi ke format XFDF menggunakan com.aspose.pdf.facades](/pdf/id/net/import-export-annotations/)
+- [Ekstrak Anotasi](/pdf/id/net/extract-annotation/)
+- [Ratakan Anotasi](/pdf/id/net/flatten-annotation/)
+- [Modifikasi Anotasi](/pdf/id/net/modify-annotations/)

@@ -13,4 +13,4 @@ sitemap:
 ---
 Bagian ini memiliki topik berikut:
 
-- [Modul Impor PDF DNN](/pdf/net/dnn-pdf-import-module)
+- [Modul Impor PDF DNN](/pdf/id/net/dnn-pdf-import-module)

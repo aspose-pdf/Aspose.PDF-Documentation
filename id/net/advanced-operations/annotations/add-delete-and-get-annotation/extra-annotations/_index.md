@@ -83,7 +83,7 @@ sitemap:
 
 Anotasi Caret adalah simbol yang menunjukkan pengeditan teks. Anotasi Caret juga merupakan anotasi markup, sehingga kelas Caret diturunkan dari kelas Markup dan juga menyediakan fungsi untuk mendapatkan atau mengatur properti Anotasi Caret dan mengatur ulang aliran tampilan Anotasi Caret.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Langkah-langkah untuk membuat anotasi Caret:
 

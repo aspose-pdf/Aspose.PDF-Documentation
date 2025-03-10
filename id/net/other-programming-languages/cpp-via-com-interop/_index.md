@@ -10,8 +10,8 @@ url: /id/net/cpp-via-com-interop/
 
 Bagian ini berisi topik berikut
 
-- [Menggunakan binding awal di C++](/pdf/net/using-early-binding-in-cpp/)
-- [Menggunakan binding terlambat di C++](/pdf/net/using-late-binding-in-cpp/)
-- [Menggunakan wrapper di C++](/pdf/net/using-wrapper-in-cpp/)
+- [Menggunakan binding awal di C++](/pdf/id/net/using-early-binding-in-cpp/)
+- [Menggunakan binding terlambat di C++](/pdf/id/net/using-late-binding-in-cpp/)
+- [Menggunakan wrapper di C++](/pdf/id/net/using-wrapper-in-cpp/)
 
 {{% /alert %}}

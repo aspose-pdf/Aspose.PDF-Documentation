@@ -13,4 +13,4 @@ sitemap:
 ---
 Bagian ini memiliki topik berikut:
 
-- [Impor PDF Sitefinity](/pdf/net/sitefinity-pdf-import/)
+- [Impor PDF Sitefinity](/pdf/id/net/sitefinity-pdf-import/)

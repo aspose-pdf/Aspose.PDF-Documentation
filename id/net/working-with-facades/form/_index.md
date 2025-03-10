@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Mengidentifikasi nama bidang formulir](/pdf/net/identifying-form-fields-names/)
-- [Menyelaraskan Teks dalam Bidang Textbox](/pdf/net/justify-text-in-a-textbox-field/)
-- [Apa Perbedaan Antara XML, FDF dan XFDF](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [Dapatkan Nilai Opsi Tombol](/pdf/net/get-button-option-value/)
-- [Impor dan Ekspor Data](/pdf/net/import-and-export-data/)
+- [Mengidentifikasi nama bidang formulir](/pdf/id/net/identifying-form-fields-names/)
+- [Menyelaraskan Teks dalam Bidang Textbox](/pdf/id/net/justify-text-in-a-textbox-field/)
+- [Apa Perbedaan Antara XML, FDF dan XFDF](/pdf/id/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [Dapatkan Nilai Opsi Tombol](/pdf/id/net/get-button-option-value/)
+- [Impor dan Ekspor Data](/pdf/id/net/import-and-export-data/)

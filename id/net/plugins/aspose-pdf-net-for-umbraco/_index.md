@@ -13,4 +13,4 @@ sitemap:
 ---
 Bagian ini memiliki topik berikut:
 
-- [Modul Impor PDF Umbraco](/pdf/net/umbraco-pdf-import-module/)
+- [Modul Impor PDF Umbraco](/pdf/id/net/umbraco-pdf-import-module/)

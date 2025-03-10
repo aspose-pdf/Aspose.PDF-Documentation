@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** memungkinkan menambahkan watermark ke dokumen PDF Anda menggunakan Artefak. Silakan periksa artikel ini untuk menyelesaikan tugas Anda.
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 Watermark yang dibuat dengan Adobe Acrobat disebut artefak (seperti yang dijelaskan dalam 14.8.2.2 Konten Nyata dan Artefak dari spesifikasi PDF). Untuk bekerja dengan artefak, Aspose.PDF memiliki dua kelas: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) dan [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

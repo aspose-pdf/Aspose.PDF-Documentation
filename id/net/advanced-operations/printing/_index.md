@@ -81,11 +81,11 @@ sitemap:
 
 ## Cara mencetak file PDF di C#
 
-- [Mencetak PDF dalam .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [Mencetak PDF ke Printer XPS (Facade)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [Konversi PDF ke PostScript, Memeriksa Status Pekerjaan Cetak](/pdf/net/pdf-to-postscript-conversion/)
-- [Mencetak PDF dalam .NET Core](/pdf/net/print-dotnetcore/)
-- [Mencetak dokumen PDF dalam aplikasi WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [Mencetak PDF dalam .NET Framework](/pdf/id/net/printing-pdf-in-net-framework/)
+- [Mencetak PDF ke Printer XPS (Facade)](/pdf/id/net/printing-pdf-to-an-xps-printer-facades/)
+- [Konversi PDF ke PostScript, Memeriksa Status Pekerjaan Cetak](/pdf/id/net/pdf-to-postscript-conversion/)
+- [Mencetak PDF dalam .NET Core](/pdf/id/net/print-dotnetcore/)
+- [Mencetak dokumen PDF dalam aplikasi WPF](/pdf/id/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

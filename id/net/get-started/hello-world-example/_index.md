@@ -82,7 +82,7 @@ Contoh "Hello World" secara tradisional digunakan untuk memperkenalkan fitur dar
 
 Aspose.PDF for .NET adalah API PDF yang kaya fitur yang memungkinkan pengembang untuk menyematkan kemampuan pembuatan, manipulasi & konversi dokumen PDF dalam aplikasi .NET mereka. Ini mendukung bekerja dengan banyak format file populer termasuk PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX dan format file gambar. Dalam artikel ini, kami membuat dokumen PDF yang berisi teks "Hello World!". Setelah menginstal Aspose.PDF for .NET di lingkungan Anda, Anda dapat mengeksekusi contoh kode di bawah ini untuk melihat bagaimana API Aspose.PDF bekerja.
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) pustaka.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
 Potongan kode di bawah ini mengikuti langkah-langkah ini:
 

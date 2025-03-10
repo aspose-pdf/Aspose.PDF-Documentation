@@ -145,4 +145,4 @@ private static void ConvertPdfPagesToImages02()
 
 ## Lihat juga
 
-Aspose.PDF for .NET memungkinkan mengonversi dokumen PDF ke berbagai format dan juga mengonversi dari format lain ke PDF. Juga, Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online dengan aplikasi konverter Aspose.PDF. Pelajari bagian [Mengonversi](/pdf/net/converting/) untuk menyelesaikan tugas Anda.
+Aspose.PDF for .NET memungkinkan mengonversi dokumen PDF ke berbagai format dan juga mengonversi dari format lain ke PDF. Juga, Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online dengan aplikasi konverter Aspose.PDF. Pelajari bagian [Mengonversi](/pdf/id/net/converting/) untuk menyelesaikan tugas Anda.

@@ -87,7 +87,7 @@ Bagian ini menunjukkan cara menambahkan halaman ke PDF menggunakan C#.
 
 Aspose.PDF for .NET memungkinkan Anda untuk menyisipkan halaman ke dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ### Sisipkan Halaman Kosong dalam File PDF di Lokasi yang Diinginkan
 

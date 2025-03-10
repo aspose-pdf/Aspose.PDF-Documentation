@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Adalah mungkin untuk mengatur ukuran gambar yang ditambahkan ke file PDF. Untuk mengatur ukuran, Anda dapat menggunakan properti FixWidth dan FixHeight dari Kelas Aspose.Pdf.Image. Potongan kode berikut menunjukkan cara mengatur ukuran gambar:
 

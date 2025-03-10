@@ -80,7 +80,7 @@ sitemap:
 
 ## Lampirkan ZUGFeRD ke PDF
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
 
 Kami merekomendasikan langkah-langkah berikut untuk melampirkan ZUGFeRD ke PDF:
 

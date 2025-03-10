@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan [Aspose.Drawing](/pdf/net/drawing/) pustaka.
+Potongan kode berikut juga bekerja dengan [Aspose.Drawing](/pdf/id/net/drawing/) pustaka.
 
 ## Simpan dokumen PDF ke sistem file
 
@@ -125,7 +125,7 @@ private static void SaveDocumentStream()
 }
 ```
 
-Untuk penjelasan yang lebih rinci, silakan ikuti bagian [Showcase](/pdf/net/showcases/).
+Untuk penjelasan yang lebih rinci, silakan ikuti bagian [Showcase](/pdf/id/net/showcases/).
 
 ## Simpan format PDF/A atau PDF/X
 

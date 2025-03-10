@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Kadang-kadang Anda mungkin memiliki file XML yang ada yang berisi data aplikasi dan Anda ingin menghasilkan laporan PDF menggunakan file-file ini. Anda dapat menggunakan XSLT untuk mengubah dokumen XML yang ada menjadi dokumen XML yang kompatibel dengan Aspose.Pdf dan kemudian menghasilkan file PDF. Ada 3 langkah untuk menghasilkan PDF menggunakan XML dan XSLT.
 

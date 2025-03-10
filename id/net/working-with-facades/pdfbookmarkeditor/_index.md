@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Buat Bookmark](/pdf/net/create-bookmarks/)
-- [Impor dan Ekspor Bookmark](/pdf/net/import-and-export-bookmarks/)
-- [Perbarui, Hapus, dan Dapatkan Bookmark](/pdf/net/update-delete-and-get-bookmarks/)
+- [Buat Bookmark](/pdf/id/net/create-bookmarks/)
+- [Impor dan Ekspor Bookmark](/pdf/id/net/import-and-export-bookmarks/)
+- [Perbarui, Hapus, dan Dapatkan Bookmark](/pdf/id/net/update-delete-and-get-bookmarks/)

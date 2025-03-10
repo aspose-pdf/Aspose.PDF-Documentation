@@ -75,7 +75,7 @@ description: Pelajari cara menggunakan Aspose.PDF for .NET dalam aplikasi ASP da
 
 {{% alert color="primary" %}}
 
-Ini adalah aplikasi ASP sederhana yang menunjukkan kepada Anda cara menambahkan string teks sederhana ke file PDF menggunakan [Aspose.PDF for .NET](/pdf/net/) dan JScript melalui COM Interop.
+Ini adalah aplikasi ASP sederhana yang menunjukkan kepada Anda cara menambahkan string teks sederhana ke file PDF menggunakan [Aspose.PDF for .NET](/pdf/id/net/) dan JScript melalui COM Interop.
 
 {{% /alert %}}
 

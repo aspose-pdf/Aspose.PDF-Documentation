@@ -83,12 +83,12 @@ Dokumen PDF Berlabel dapat diakses oleh orang dengan disabilitas. Menambahkan ta
 
 Bagian ini mencakup topik berikut:
 
-- [Buat PDF Berlabel](/pdf/net/create-tagged-pdf/)
-- [Edit PDF Berlabel](/pdf/net/edit-pdf-file-tags/)
-- [Ekstrak Konten Berlabel dari PDF Berlabel](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Mengatur Properti Elemen Struktur](/pdf/net/setting-structure-elements-properties/)
-- [Bekerja dengan Tabel di PDF Berlabel](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Uji Kepatuhan PDF-UA - Daftar Kesalahan](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Buat PDF Berlabel](/pdf/id/net/create-tagged-pdf/)
+- [Edit PDF Berlabel](/pdf/id/net/edit-pdf-file-tags/)
+- [Ekstrak Konten Berlabel dari PDF Berlabel](/pdf/id/net/extract-tagged-content-from-tagged-pdfs/)
+- [Mengatur Properti Elemen Struktur](/pdf/id/net/setting-structure-elements-properties/)
+- [Bekerja dengan Tabel di PDF Berlabel](/pdf/id/net/working-with-table-in-tagged-pdfs/)
+- [Uji Kepatuhan PDF-UA - Daftar Kesalahan](/pdf/id/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

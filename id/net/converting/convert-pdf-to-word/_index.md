@@ -100,7 +100,7 @@ _Format_: **Word**
 - [C# Mengonversi PDF ke Word](#csharp-pdf-to-doc)
 - [C# Cara mengonversi file PDF ke Word](#csharp-pdf-to-docx)
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Konversi PDF ke DOC dan DOCX
 
@@ -179,7 +179,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Mengonversi PDF ke DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Mengonversi PDF ke DOC](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Mengonversi PDF ke file DOCX (Microsoft Word 2007-2024)
@@ -243,7 +243,7 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Aplikasi Gratis Konversi PDF ke Word Aspose.PDF](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aplikasi Gratis Konversi PDF ke Word Aspose.PDF](/pdf/id/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

@@ -83,14 +83,14 @@ Kita semua kadang-kadang perlu menambahkan teks ke file PDF. Misalnya, ketika An
 
  Anda dapat melakukan hal-hal berikut:
 
-- [Menambahkan Teks ke file PDF](/pdf/net/add-text-to-pdf-file/) - menambahkan teks ke PDF Anda, menggunakan font dari stream dan file, menambahkan string HTML, menambahkan hyperlink, dll.
-- [Tooltip PDF](/pdf/net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan C#.
-- [Pemformatan Teks di dalam PDF](/pdf/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya. Tambahkan indentasi baris, tambahkan batas teks, tambahkan teks garis bawah, tambahkan umpan baris baru dengan pustaka Aspose.PDF.
-- [Menggunakan FloatingBox](/pdf/net/floating-box/) - alat Floating Box adalah alat khusus untuk menempatkan teks dan konten lainnya di halaman PDF.
-- [Mengganti Teks di PDF](/pdf/net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
-- [Memutar Teks di Dalam PDF](/pdf/net/rotate-text-inside-pdf/) - memutar teks di dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
-- [Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF](/pdf/net/search-and-get-text-from-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
-- [Menentukan Pemutusan Baris](/pdf/net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari fragmen teks multi-baris.
+- [Menambahkan Teks ke file PDF](/pdf/id/net/add-text-to-pdf-file/) - menambahkan teks ke PDF Anda, menggunakan font dari stream dan file, menambahkan string HTML, menambahkan hyperlink, dll.
+- [Tooltip PDF](/pdf/id/net/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan C#.
+- [Pemformatan Teks di dalam PDF](/pdf/id/net/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya. Tambahkan indentasi baris, tambahkan batas teks, tambahkan teks garis bawah, tambahkan umpan baris baru dengan pustaka Aspose.PDF.
+- [Menggunakan FloatingBox](/pdf/id/net/floating-box/) - alat Floating Box adalah alat khusus untuk menempatkan teks dan konten lainnya di halaman PDF.
+- [Mengganti Teks di PDF](/pdf/id/net/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
+- [Memutar Teks di Dalam PDF](/pdf/id/net/rotate-text-inside-pdf/) - memutar teks di dalam PDF menggunakan properti rotasi dari Kelas TextFragment.
+- [Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF](/pdf/id/net/search-and-get-text-from-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
+- [Menentukan Pemutusan Baris](/pdf/id/net/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan baris dari fragmen teks multi-baris.
 
 <script type="application/ld+json">
 {

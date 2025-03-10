@@ -94,10 +94,10 @@ Algoritma digest untuk PKCS7 terpisah:
 
 Disarankan untuk menghindari tanda tangan digital dengan algoritma digest SHA-1 karena ketidakamanannya.
 
-- [Menandatangani file PDF secara digital](/pdf/net/digitally-sign-pdf-file/)
-- [Atur Hak Istimewa, Enkripsi dan Dekripsi File PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/net/extract-image-and-signature-information/)
-- [Tandatangani Dokumen PDF Dari Kartu Pintar](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Menandatangani file PDF secara digital](/pdf/id/net/digitally-sign-pdf-file/)
+- [Atur Hak Istimewa, Enkripsi dan Dekripsi File PDF](/pdf/id/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Ekstrak Informasi Gambar dan Tanda Tangan](/pdf/id/net/extract-image-and-signature-information/)
+- [Tandatangani Dokumen PDF Dari Kartu Pintar](/pdf/id/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

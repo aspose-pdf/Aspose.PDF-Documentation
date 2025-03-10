@@ -89,7 +89,7 @@ Juga mungkin untuk mendapatkan atau mengatur pengaturan anotasi coretan mengguna
 
 Fitur berikutnya adalah kemampuan untuk mendapatkan atau mengatur pengaturan anotasi garis bawah menggunakan properti underlineSettings. Properti underlineSettings digunakan untuk mengatur warna, opasitas, penulis, subjek, modifiedDate, dan isLocked dari anotasi garis bawah.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Anotasi Markup Teks
 

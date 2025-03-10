@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 Standar DICOM dikembangkan oleh Asosiasi Produsen Listrik Nasional. Format ini mencakup fungsi untuk membuat, menyimpan, mentransfer, dan mencetak bingkai gambar individu, serangkaian bingkai, informasi pasien, penelitian, peralatan, institusi, dan tenaga medis yang melakukan pemeriksaan, dan sebagainya.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 **Aspose.PDF for .NET** mendukung fungsionalitas untuk menambahkan gambar DICOM ke dokumen PDF. Cuplikan kode berikut menunjukkan cara menggunakan fungsionalitas ini.
 

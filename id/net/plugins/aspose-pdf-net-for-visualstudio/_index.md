@@ -13,5 +13,5 @@ sitemap:
 ---
 Bagian ini memiliki topik berikut:
 
-- [Ekspor GridView Visual Studio ke Kontrol PDF](/pdf/net/visual-studio-export-gridview-to-pdf-control/)
-- [Plugin Aspose.PDF Visual Studio](/pdf/net/aspose-pdf-visual-studio-plugin/)
+- [Ekspor GridView Visual Studio ke Kontrol PDF](/pdf/id/net/visual-studio-export-gridview-to-pdf-control/)
+- [Plugin Aspose.PDF Visual Studio](/pdf/id/net/aspose-pdf-visual-studio-plugin/)

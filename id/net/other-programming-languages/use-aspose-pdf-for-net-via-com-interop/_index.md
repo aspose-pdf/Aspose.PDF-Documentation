@@ -75,7 +75,7 @@ description: Temukan cara menggunakan Aspose.PDF for .NET melalui COM Interop un
 
 {{% alert color="primary" %}}
 
-Informasi dalam topik ini berlaku untuk skenario di mana Anda ingin menggunakan [Aspose.PDF for .NET](/pdf/net/) melalui COM Interop dalam salah satu bahasa pemrograman berikut:
+Informasi dalam topik ini berlaku untuk skenario di mana Anda ingin menggunakan [Aspose.PDF for .NET](/pdf/id/net/) melalui COM Interop dalam salah satu bahasa pemrograman berikut:
 
 - ASP
 - Delphi
@@ -94,7 +94,7 @@ Informasi dalam topik ini berlaku untuk skenario di mana Anda ingin menggunakan 
 
 Aspose.PDF for .NET dijalankan di bawah kendali .NET Framework dan ini disebut kode terkelola. Kode yang ditulis dalam semua bahasa di atas berjalan di luar .NET Framework dan disebut kode tidak terkelola. Interaksi antara kode tidak terkelola dan Aspose.PDF terjadi melalui fasilitas .NET yang disebut COM Interop.
 
-Objek Aspose.PDF adalah objek .NET, tetapi ketika digunakan melalui COM Interop, mereka muncul sebagai objek COM dalam bahasa pemrograman Anda. Oleh karena itu, sebaiknya pastikan Anda tahu cara membuat dan menggunakan objek COM dalam bahasa pemrograman Anda, sebelum Anda mulai menggunakan [Aspose.PDF for .NET](/pdf/net/).
+Objek Aspose.PDF adalah objek .NET, tetapi ketika digunakan melalui COM Interop, mereka muncul sebagai objek COM dalam bahasa pemrograman Anda. Oleh karena itu, sebaiknya pastikan Anda tahu cara membuat dan menggunakan objek COM dalam bahasa pemrograman Anda, sebelum Anda mulai menggunakan [Aspose.PDF for .NET](/pdf/id/net/).
 
 {{% alert color="primary" %}}
 

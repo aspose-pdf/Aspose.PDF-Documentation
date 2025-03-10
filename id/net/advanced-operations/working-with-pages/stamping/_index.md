@@ -83,9 +83,9 @@ Cap dalam dokumen PDF adalah analog dengan menerapkan cap karet pada dokumen ker
 
 Periksa bagian berikut untuk mempelajari cara menambahkan cap dengan C#:
 
-- [Tambahkan cap gambar di halaman PDF](/pdf/net/image-stamps-in-pdf-page/) - tambahkan cap gambar, kontrol kualitas gambar, cap gambar sebagai latar belakang file PDF Anda.
-- [Tambahkan cap teks di File PDF](/pdf/net/text-stamps-in-the-pdf-file/) - tambahkan cap teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai cap dalam file PDF.
-- [Cap halaman di File PDF](/pdf/net/page-stamps-in-the-pdf-file/) - tambahkan cap halaman ke dokumen PDF menggunakan kelas PdfPageStamp.
+- [Tambahkan cap gambar di halaman PDF](/pdf/id/net/image-stamps-in-pdf-page/) - tambahkan cap gambar, kontrol kualitas gambar, cap gambar sebagai latar belakang file PDF Anda.
+- [Tambahkan cap teks di File PDF](/pdf/id/net/text-stamps-in-the-pdf-file/) - tambahkan cap teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai cap dalam file PDF.
+- [Cap halaman di File PDF](/pdf/id/net/page-stamps-in-the-pdf-file/) - tambahkan cap halaman ke dokumen PDF menggunakan kelas PdfPageStamp.
 
 
 <script type="application/ld+json">

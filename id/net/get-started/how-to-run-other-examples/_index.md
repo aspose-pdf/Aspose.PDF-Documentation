@@ -85,7 +85,7 @@ Silakan pastikan Anda memenuhi persyaratan berikut sebelum mengunduh dan menjala
 1. Visual Studio 2010 atau lebih tinggi.
 1. NuGet Package Manager terinstal di Visual Studio. Pastikan bahwa versi API NuGet terbaru terinstal di Visual Studio. Untuk detail tentang cara menginstal manajer paket NuGet, silakan periksa <https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools>.
 1. Pergi ke `Tools->Options->NuGet Package Manager->Package Sources` dan pastikan bahwa opsi **nuget.org** dicentang.
-1. Proyek contoh menggunakan fitur Pemulihan Paket Otomatis NuGet, oleh karena itu Anda harus memiliki koneksi internet aktif. Jika Anda tidak memiliki koneksi internet aktif di mesin tempat contoh akan dieksekusi, silakan periksa [Instalasi](/pdf/net/installation/) dan tambahkan referensi secara manual ke Aspose.PDF.dll di proyek contoh.
+1. Proyek contoh menggunakan fitur Pemulihan Paket Otomatis NuGet, oleh karena itu Anda harus memiliki koneksi internet aktif. Jika Anda tidak memiliki koneksi internet aktif di mesin tempat contoh akan dieksekusi, silakan periksa [Instalasi](/pdf/id/net/installation/) dan tambahkan referensi secara manual ke Aspose.PDF.dll di proyek contoh.
 
 ## Unduh dari GitHub
 

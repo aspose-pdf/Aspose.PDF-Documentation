@@ -92,7 +92,7 @@ Aplikasi manajemen dokumen PDF menyediakan berbagai alat untuk memberi anotasi p
 
 Pendekatan untuk menambahkan anotasi adalah tipikal untuk salah satu dari mereka.
 
-Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/net/drawing/) pustaka.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
 1. Muat file PDF atau buat baru dengan [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Buat anotasi baru dan atur parameter (Rectangle baru, Point baru, judul, warna, lebar, dll).

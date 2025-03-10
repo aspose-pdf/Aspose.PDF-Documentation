@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Tambahkan Tanda Tangan di File PDF](/pdf/net/add-signature-in-pdf/)
-- [Hapus Tanda Tangan dari File PDF](/pdf/net/remove-signature-from-pdf/)
-- [Verifikasi Tanda Tangan di File PDF](/pdf/net/verify-signature-in-pdf/)
-- [Bekerja dengan Tanda Tangan di File PDF](/pdf/net/add-signature-in-pdf/)
+- [Tambahkan Tanda Tangan di File PDF](/pdf/id/net/add-signature-in-pdf/)
+- [Hapus Tanda Tangan dari File PDF](/pdf/id/net/remove-signature-from-pdf/)
+- [Verifikasi Tanda Tangan di File PDF](/pdf/id/net/verify-signature-in-pdf/)
+- [Bekerja dengan Tanda Tangan di File PDF](/pdf/id/net/add-signature-in-pdf/)

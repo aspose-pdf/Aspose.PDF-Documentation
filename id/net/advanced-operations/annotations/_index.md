@@ -89,10 +89,10 @@ Anotasi adalah bagian penting dari file PDF. Menggunakan Aspose.PDF for .NET And
 
 Anda dapat melakukan hal berikut:
 
-- [Ikhtisar Anotasi](/pdf/net/overview-of-annotations/) - pelajari jenis anotasi apa yang didefinisikan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
-- [Tambahkan, Hapus dan Dapatkan Anotasi](/pdf/net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
-- [Impor dan ekspor anotasi dengan format XFDF](/pdf/net/import-export-xfdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
-- [Impor anotasi format FDF ke PDF](/pdf/net/import-fdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor anotasi format FDF ke file PDF.
+- [Ikhtisar Anotasi](/pdf/id/net/overview-of-annotations/) - pelajari jenis anotasi apa yang didefinisikan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
+- [Tambahkan, Hapus dan Dapatkan Anotasi](/pdf/id/net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
+- [Impor dan ekspor anotasi dengan format XFDF](/pdf/id/net/import-export-xfdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
+- [Impor anotasi format FDF ke PDF](/pdf/id/net/import-fdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor anotasi format FDF ke file PDF.
 
 <script type="application/ld+json">
 {

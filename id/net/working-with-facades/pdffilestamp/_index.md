@@ -9,6 +9,6 @@ description: Bagian ini menjelaskan bagaimana Anda dapat menggunakan Kelas PdfFi
 lastmod: "2021-06-05"
 draft: false
 ---
-- [Tambahkan Stempel Halaman PDF](/pdf/net/add-pdf-page-stamp/)
-- [Tambahkan Stempel Teks dan Gambar](/pdf/net/add-text-and-image-stamp/)
-- [Kelola Header dan Footer](/pdf/net/manage-header-and-footer/)
+- [Tambahkan Stempel Halaman PDF](/pdf/id/net/add-pdf-page-stamp/)
+- [Tambahkan Stempel Teks dan Gambar](/pdf/id/net/add-text-and-image-stamp/)
+- [Kelola Header dan Footer](/pdf/id/net/manage-header-and-footer/)

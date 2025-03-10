@@ -16,9 +16,9 @@ sitemap:
 
 Bagian ini berisi daftar plugin untuk aplikasi web yang paling populer: DotNetNuke, Sitefinity, Umbraco, dll.
 
-* [Aspose.PDF for .NET dengan Coldfusion](/pdf/net/using-aspose-pdf-for-net-with-coldfusion/)
-* [Aspose.PDF for .NET dengan CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF for .NET dengan DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF for .NET dengan Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
-* [Aspose.PDF for .NET dengan Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF for .NET dengan VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF for .NET dengan Coldfusion](/pdf/id/net/using-aspose-pdf-for-net-with-coldfusion/)
+* [Aspose.PDF for .NET dengan CRM](/pdf/id/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF for .NET dengan DNN](/pdf/id/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF for .NET dengan Sitefinity](/pdf/id/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF for .NET dengan Umbraco](/pdf/id/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF for .NET dengan VisualStudio](/pdf/id/net/aspose-pdf-net-for-visualstudio/)

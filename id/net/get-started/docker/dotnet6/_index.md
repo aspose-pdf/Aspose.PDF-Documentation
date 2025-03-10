@@ -97,12 +97,12 @@ Contoh berikut diuji dengan:
 
 ### Hasilkan dokumen PDF menggunakan ASP.NET Core Web App di kontainer Linux
 
-Kami akan menggunakan kode dari **Contoh Kompleks** dalam aplikasi ini. Silakan ikuti [tautan ini](/pdf/net/complex-pdf-example/) untuk penjelasan yang lebih rinci.
+Kami akan menggunakan kode dari **Contoh Kompleks** dalam aplikasi ini. Silakan ikuti [tautan ini](/pdf/id/net/complex-pdf-example/) untuk penjelasan yang lebih rinci.
 
-1. Buat folder `images` di folder `wwwroot` dan letakkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/net/docker/logo.png).
+1. Buat folder `images` di folder `wwwroot` dan letakkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/id/net/docker/logo.png).
 1. Ganti kode di `HomeController.cs` dengan cuplikan berikut (harap dicatat bahwa Anda dapat memiliki namespace lain):
 
-Cuplikan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga berfungsi dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```cs
 using Aspose.Pdf;
@@ -263,7 +263,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 Kami akan menggunakan kode yang sama seperti di contoh sebelumnya.
 
-1. Buat folder `images` di folder `wwwroot` dan letakkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/net/docker/logo.png).
+1. Buat folder `images` di folder `wwwroot` dan letakkan gambar `logo.png`. Anda dapat mengunduh gambar ini dari [sini](/pdf/id/net/docker/logo.png).
 1. Ganti kode di `HomeController.cs` dengan cuplikan di atas.
 
 ```dockerfile

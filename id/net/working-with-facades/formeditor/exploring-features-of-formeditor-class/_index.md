@@ -83,7 +83,7 @@ Dokumen PDF terkadang mengandung formulir interaktif, yang dikenal sebagai AcroF
 
 ## Rincian implementasi
 
-Pengembang dapat menggunakan [ruang nama Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) tidak hanya untuk menambahkan formulir baru dan bidang formulir dalam dokumen PDF, tetapi juga memungkinkan Anda untuk mengedit bidang yang ada. Ruang lingkup artikel ini terbatas pada fitur-fitur dari [Aspose.PDF for .NET](/pdf/net/) yang berhubungan dengan pengeditan formulir.
+Pengembang dapat menggunakan [ruang nama Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) tidak hanya untuk menambahkan formulir baru dan bidang formulir dalam dokumen PDF, tetapi juga memungkinkan Anda untuk mengedit bidang yang ada. Ruang lingkup artikel ini terbatas pada fitur-fitur dari [Aspose.PDF for .NET](/pdf/id/net/) yang berhubungan dengan pengeditan formulir.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) adalah kelas yang berisi sebagian besar metode dan properti yang memungkinkan pengembang untuk mengedit bidang formulir. Anda tidak hanya dapat menambahkan bidang baru, tetapi juga menghapus bidang yang ada, memindahkan satu bidang ke posisi lain, mengubah nama bidang, atau atribut, dll. Daftar fitur yang disediakan oleh kelas ini cukup komprehensif, dan sangat mudah untuk bekerja dengan bidang formulir menggunakan kelas ini.
 

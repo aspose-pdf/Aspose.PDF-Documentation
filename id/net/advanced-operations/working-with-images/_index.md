@@ -88,18 +88,18 @@ Menggunakan pustaka C# kami juga merupakan opsi yang berguna jika Anda perlu men
 
 Anda dapat melakukan hal-hal berikut:
 
-- [Tambahkan Gambar ke File PDF yang Ada](/pdf/net/add-image-to-existing-pdf-file/) - tambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kontrol kualitas.
-- [Hapus Gambar dari File PDF](/pdf/net/delete-images-from-pdf-file/) - periksa cuplikan kode untuk menghapus gambar dari file PDF.
-- [Ekstrak Gambar dari File PDF](/pdf/net/extract-images-from-pdf-file/) - gunakan koleksi Gambar untuk mengekstrak gambar dari file PDF.
-- [Dapatkan Resolusi dan Dimensi Gambar Tertanam](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - gunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi.
-- [Bekerja dengan Penempatan Gambar](/pdf/net/working-with-image-placement/) - dimungkinkan untuk mendapatkan resolusi dan posisi gambar dalam dokumen PDF.
-- [Cari dan Dapatkan Gambar dari Dokumen PDF](/pdf/net/search-and-get-images-from-pdf-document/) - Anda dapat mendapatkan gambar dari halaman individu dan mencari di antara gambar di semua halaman dengan C#.
-- [Ganti Gambar di File PDF yang Ada](/pdf/net/replace-image-in-existing-pdf-file/) - periksa cuplikan kode kami, ini menunjukkan kepada Anda cara mengganti gambar dalam file PDF.
-- [Atur Ukuran Gambar](/pdf/net/set-image-size/) - pustaka C# memungkinkan Anda untuk mengatur ukuran gambar.
-- [Atur Nama Font Default](/pdf/net/set-default-font-name/) - Mengatur Nama Font Default untuk proses konversi.
-- [Hasilkan Gambar Thumbnail dari Dokumen PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - artikel berikut menunjukkan cara menghasilkan gambar thumbnail dari dokumen PDF menggunakan pertama SDK Acrobat dan kemudian Aspose.PDF.
-- Dukungan untuk Gambar DICOM - Aspose.PDF for .NET mendukung standar grafik medis khusus untuk gambar. Aspose.PDF for .NET memungkinkan Anda untuk mengonversi gambar DICOM dan SVG. Silakan periksa bagian [Konversi DICOM ke PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
-- [Bekerja dengan Grafik Vektor](/pdf/net/working-with-vector-graphics) - bagian ini menjelaskan fitur-fitur bekerja dengan alat GraphicsAbsorber menggunakan C#.
+- [Tambahkan Gambar ke File PDF yang Ada](/pdf/id/net/add-image-to-existing-pdf-file/) - tambahkan gambar dan referensi dari satu gambar dalam dokumen PDF, setelah itu kontrol kualitas.
+- [Hapus Gambar dari File PDF](/pdf/id/net/delete-images-from-pdf-file/) - periksa cuplikan kode untuk menghapus gambar dari file PDF.
+- [Ekstrak Gambar dari File PDF](/pdf/id/net/extract-images-from-pdf-file/) - gunakan koleksi Gambar untuk mengekstrak gambar dari file PDF.
+- [Dapatkan Resolusi dan Dimensi Gambar Tertanam](/pdf/id/net/get-resolution-and-dimensions-of-embedded-images/) - gunakan kelas operator dalam namespace Aspose.PDF yang menyediakan kemampuan untuk mendapatkan informasi resolusi dan dimensi.
+- [Bekerja dengan Penempatan Gambar](/pdf/id/net/working-with-image-placement/) - dimungkinkan untuk mendapatkan resolusi dan posisi gambar dalam dokumen PDF.
+- [Cari dan Dapatkan Gambar dari Dokumen PDF](/pdf/id/net/search-and-get-images-from-pdf-document/) - Anda dapat mendapatkan gambar dari halaman individu dan mencari di antara gambar di semua halaman dengan C#.
+- [Ganti Gambar di File PDF yang Ada](/pdf/id/net/replace-image-in-existing-pdf-file/) - periksa cuplikan kode kami, ini menunjukkan kepada Anda cara mengganti gambar dalam file PDF.
+- [Atur Ukuran Gambar](/pdf/id/net/set-image-size/) - pustaka C# memungkinkan Anda untuk mengatur ukuran gambar.
+- [Atur Nama Font Default](/pdf/id/net/set-default-font-name/) - Mengatur Nama Font Default untuk proses konversi.
+- [Hasilkan Gambar Thumbnail dari Dokumen PDF](/pdf/id/net/generate-thumbnail-images-from-pdf-documents/) - artikel berikut menunjukkan cara menghasilkan gambar thumbnail dari dokumen PDF menggunakan pertama SDK Acrobat dan kemudian Aspose.PDF.
+- Dukungan untuk Gambar DICOM - Aspose.PDF for .NET mendukung standar grafik medis khusus untuk gambar. Aspose.PDF for .NET memungkinkan Anda untuk mengonversi gambar DICOM dan SVG. Silakan periksa bagian [Konversi DICOM ke PDF](/pdf/id/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
+- [Bekerja dengan Grafik Vektor](/pdf/id/net/working-with-vector-graphics) - bagian ini menjelaskan fitur-fitur bekerja dengan alat GraphicsAbsorber menggunakan C#.
 
 <script type="application/ld+json">
 {

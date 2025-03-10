@@ -85,7 +85,7 @@ Saat menandatangani dokumen PDF menggunakan tanda tangan, Anda pada dasarnya men
 
 Dengan kata lain, dokumen tersebut masih dianggap mempertahankan integritasnya dan penerima masih dapat mempercayai dokumen tersebut. Untuk detail lebih lanjut, silakan kunjungi Mengesahkan dan menandatangani PDF. Secara umum, mengesahkan dokumen dapat dibandingkan dengan Penandatanganan Kode pada executable .NET.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Fitur penandatanganan Aspose.PDF for .NET
 

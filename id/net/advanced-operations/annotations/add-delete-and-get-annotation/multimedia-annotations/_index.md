@@ -100,7 +100,7 @@ Metode/properti berikut dari kelas RichMediaAnnotation dapat digunakan.
 - void Update(): Buat struktur data dari anotasi. Metode ini harus dipanggil terakhir.
 - void SetPoster(Stream): Set poster video yaitu gambar yang ditampilkan ketika pemutar tidak aktif.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Tambahkan Anotasi Layar
 
@@ -439,7 +439,7 @@ private static void AddNavigationButtons()
 }
 ```
 
-Untuk informasi lebih rinci dan kemungkinan fitur ini lihat juga [Bekerja dengan Formulir](/pdf/net/acroforms/).
+Untuk informasi lebih rinci dan kemungkinan fitur ini lihat juga [Bekerja dengan Formulir](/pdf/id/net/acroforms/).
 
 Dalam dokumen PDF, Anda dapat melihat dan mengelola konten 3D berkualitas tinggi yang dibuat dengan perangkat lunak CAD 3D atau pemodelan 3D dan disematkan dalam dokumen PDF. Dapat memutar elemen 3D ke segala arah seolah-olah Anda memegangnya di tangan Anda.
 

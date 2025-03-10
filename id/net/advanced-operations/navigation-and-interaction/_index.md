@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [Tautan](/pdf/net/links/) - Anda dapat dengan mudah membuat, memperbarui, dan mengekstrak tautan dengan C#.
-- [Tindakan](/pdf/net/actions/) - dimungkinkan untuk menambahkan dan mendapatkan, membuat hyperlink ke file PDF. Juga, dalam artikel ini, Anda akan belajar bagaimana menghapus Tindakan Buka Dokumen dari File PDF dan bagaimana Menentukan Halaman PDF saat Melihat Dokumen.
-- [Bookmark](/pdf/net/bookmarks/) - publikasi besar biasanya menyertakan kerangka bookmark yang dapat dengan mudah dilihat dan dipilih di Panel Bookmark, memungkinkan Anda untuk mengklik bookmark untuk melompat ke halaman atau bab yang diwakilinya. Panel Bookmark adalah elemen yang sadar konten, dan terlihat di bilah samping hanya jika dokumen PDF yang dibuka mengandung struktur bookmark.
+- [Tautan](/pdf/id/net/links/) - Anda dapat dengan mudah membuat, memperbarui, dan mengekstrak tautan dengan C#.
+- [Tindakan](/pdf/id/net/actions/) - dimungkinkan untuk menambahkan dan mendapatkan, membuat hyperlink ke file PDF. Juga, dalam artikel ini, Anda akan belajar bagaimana menghapus Tindakan Buka Dokumen dari File PDF dan bagaimana Menentukan Halaman PDF saat Melihat Dokumen.
+- [Bookmark](/pdf/id/net/bookmarks/) - publikasi besar biasanya menyertakan kerangka bookmark yang dapat dengan mudah dilihat dan dipilih di Panel Bookmark, memungkinkan Anda untuk mengklik bookmark untuk melompat ke halaman atau bab yang diwakilinya. Panel Bookmark adalah elemen yang sadar konten, dan terlihat di bilah samping hanya jika dokumen PDF yang dibuka mengandung struktur bookmark.
 
 <script type="application/ld+json">
 {

@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/net/) menyediakan kemampuan untuk membuat, mengedit, dan mengisi formulir Pdf yang sudah dibuat. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace berisi kelas [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), yang memiliki fungsi bernama [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) dan mengambil dua argumen yaitu nama bidang dan nilai bidang. Jadi, untuk mengisi bidang formulir, Anda harus mengetahui nama bidang formulir yang tepat.
+[Aspose.PDF for .NET](/pdf/id/net/) menyediakan kemampuan untuk membuat, mengedit, dan mengisi formulir Pdf yang sudah dibuat. [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) namespace berisi kelas [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), yang memiliki fungsi bernama [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) dan mengambil dua argumen yaitu nama bidang dan nilai bidang. Jadi, untuk mengisi bidang formulir, Anda harus mengetahui nama bidang formulir yang tepat.
 
 ## Detail implementasi
 

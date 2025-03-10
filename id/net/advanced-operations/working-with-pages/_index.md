@@ -87,18 +87,18 @@ Tambahkan nomor halaman menggunakan kelas PageNumberStamp. Untuk menambahkan Ste
 
 Anda dapat melakukan hal-hal berikut:
 
-- [Tambahkan Halaman](/pdf/net/add-pages/) - tambahkan halaman di lokasi yang diinginkan atau ke akhir file PDF dan hapus halaman dari dokumen Anda.
-- [Pindahkan Halaman](/pdf/net/move-pages/) - pindahkan halaman dari satu dokumen ke dokumen lain.
-- [Hapus Halaman](/pdf/net/delete-pages/) - hapus halaman dari file PDF Anda menggunakan koleksi PageCollection.
-- [Ubah Ukuran Halaman](/pdf/net/change-page-size/) - Anda dapat mengubah ukuran halaman PDF dengan cuplikan kode menggunakan pustaka Aspose.PDF.
-- [Putar Halaman](/pdf/net/rotate-pages/) - Anda dapat mengubah orientasi halaman dari halaman dalam file PDF yang ada.
-- [Pecah Halaman](/pdf/net/split-document/) - Anda dapat membagi file PDF menjadi satu atau beberapa PDF.
-- [Tambahkan Header dan/atau Footer](/pdf/net/add-headers-and-footers-of-pdf-file/) - tambahkan teks atau gambar di header dan footer file PDF Anda.
-- [Potong Halaman](/pdf/net/crop-pages/) - Anda dapat memotong halaman dalam dokumen PDF secara programatis dengan berbagai Properti Halaman.
-- [Tambahkan Watermark](/pdf/net/add-watermarks/) - tambahkan watermark dalam file PDF Anda dengan Kelas Artifact.
-- [Tambahkan Penomoran Halaman dalam File PDF](/pdf/net/add-page-number/) - Kelas PageNumberStamp akan membantu Anda menambahkan Nomor Halaman dalam file PDF Anda.
-- [Tambahkan Latar Belakang](/pdf/net/add-backgrounds/) - gambar latar belakang dapat digunakan untuk menambahkan watermark.
-- [Stempel](/pdf/net/stamping/) - Anda dapat menggunakan kelas ImageStamp untuk menambahkan stempel gambar ke file PDF dan kelas TextStamp untuk menambahkan teks.
+- [Tambahkan Halaman](/pdf/id/net/add-pages/) - tambahkan halaman di lokasi yang diinginkan atau ke akhir file PDF dan hapus halaman dari dokumen Anda.
+- [Pindahkan Halaman](/pdf/id/net/move-pages/) - pindahkan halaman dari satu dokumen ke dokumen lain.
+- [Hapus Halaman](/pdf/id/net/delete-pages/) - hapus halaman dari file PDF Anda menggunakan koleksi PageCollection.
+- [Ubah Ukuran Halaman](/pdf/id/net/change-page-size/) - Anda dapat mengubah ukuran halaman PDF dengan cuplikan kode menggunakan pustaka Aspose.PDF.
+- [Putar Halaman](/pdf/id/net/rotate-pages/) - Anda dapat mengubah orientasi halaman dari halaman dalam file PDF yang ada.
+- [Pecah Halaman](/pdf/id/net/split-document/) - Anda dapat membagi file PDF menjadi satu atau beberapa PDF.
+- [Tambahkan Header dan/atau Footer](/pdf/id/net/add-headers-and-footers-of-pdf-file/) - tambahkan teks atau gambar di header dan footer file PDF Anda.
+- [Potong Halaman](/pdf/id/net/crop-pages/) - Anda dapat memotong halaman dalam dokumen PDF secara programatis dengan berbagai Properti Halaman.
+- [Tambahkan Watermark](/pdf/id/net/add-watermarks/) - tambahkan watermark dalam file PDF Anda dengan Kelas Artifact.
+- [Tambahkan Penomoran Halaman dalam File PDF](/pdf/id/net/add-page-number/) - Kelas PageNumberStamp akan membantu Anda menambahkan Nomor Halaman dalam file PDF Anda.
+- [Tambahkan Latar Belakang](/pdf/id/net/add-backgrounds/) - gambar latar belakang dapat digunakan untuk menambahkan watermark.
+- [Stempel](/pdf/id/net/stamping/) - Anda dapat menggunakan kelas ImageStamp untuk menambahkan stempel gambar ke file PDF dan kelas TextStamp untuk menambahkan teks.
 
 <script type="application/ld+json">
 {

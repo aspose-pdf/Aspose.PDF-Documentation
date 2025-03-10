@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Bekerja dengan pencetakan PDF - Facades](/pdf/net/working-with-pdf-printing-facades/)
+- [Bekerja dengan pencetakan PDF - Facades](/pdf/id/net/working-with-pdf-printing-facades/)

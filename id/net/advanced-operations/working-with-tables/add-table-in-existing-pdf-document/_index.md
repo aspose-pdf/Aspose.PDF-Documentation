@@ -82,7 +82,7 @@ sitemap:
 
 Tabel sangat penting saat bekerja dengan dokumen PDF. Mereka menyediakan fitur hebat untuk menampilkan informasi secara sistematis. Ruang nama Aspose.PDF berisi kelas-kelas bernama [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), dan [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) yang menyediakan fungsionalitas untuk membuat tabel saat menghasilkan dokumen PDF dari awal.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Tabel dapat dibuat dengan membuat objek dari Kelas Tabel.
 

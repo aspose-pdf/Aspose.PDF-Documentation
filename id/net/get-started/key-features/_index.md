@@ -81,11 +81,11 @@ sitemap:
 
 ## Perangkat lunak lintas platform
 
-Mendukung berbagai platform dan versi .NET. Lihat [Persyaratan Sistem](/pdf/net/system-requirements/) untuk detailnya.
+Mendukung berbagai platform dan versi .NET. Lihat [Persyaratan Sistem](/pdf/id/net/system-requirements/) untuk detailnya.
 
 ## Fitur Umum
 
-Aspose.PDF menyediakan Model Objek Dokumen (DOM) yang kuat untuk menjelajahi dan memodifikasi semua jenis konten PDF. Mendukung pemuatan dari dan penyimpanan ke daftar [format file](/pdf/net/supported-file-formats/) yang luas.
+Aspose.PDF menyediakan Model Objek Dokumen (DOM) yang kuat untuk menjelajahi dan memodifikasi semua jenis konten PDF. Mendukung pemuatan dari dan penyimpanan ke daftar [format file](/pdf/id/net/supported-file-formats/) yang luas.
 
 ## Standar PDF yang Didukung
 

@@ -93,7 +93,7 @@ Format ini menggabungkan dokumen PDF yang dapat dibaca manusia dan file data XML
 Ini juga mematuhi persyaratan hukum untuk pengarsipan jangka panjang dan kepatuhan pajak. ZUGFeRD memiliki berbagai versi dan profil yang sesuai dengan berbagai kebutuhan dan skenario. Versi terbaru adalah ZUGFeRD 2.0, yang kompatibel dengan standar Eropa EN 16931 untuk e-invoicing.
 ZUGFeRD menawarkan banyak manfaat dan penghematan biaya bagi pengguna, seperti pemrosesan yang lebih cepat, pengurangan kesalahan, peningkatan arus kas, dan dampak lingkungan yang lebih rendah.
 
-* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di C#](/pdf/net/attach-zugferd/)
+* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di C#](/pdf/id/net/attach-zugferd/)
 
 ## Lihat juga
 

@@ -97,7 +97,7 @@ Buka file PDF menggunakan kelas [Document](https://reference.aspose.com/pdf/net/
 - PageLayout – Tata letak halaman.
 - PageMode – Cara dokumen ditampilkan saat pertama kali dibuka. Opsi yang tersedia adalah menampilkan thumbnail, layar penuh, menampilkan panel lampiran.
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Cuplikan kode berikut menunjukkan cara mendapatkan properti menggunakan kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

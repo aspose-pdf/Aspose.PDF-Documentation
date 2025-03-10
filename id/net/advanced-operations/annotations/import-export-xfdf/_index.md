@@ -89,7 +89,7 @@ XFDF adalah singkatan dari XML Forms Data Format. Ini adalah format file berbasi
 
 Kelas [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) berisi dua metode untuk bekerja dengan impor dan ekspor anotasi ke file XFDF. Metode [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) menyediakan fungsionalitas untuk mengekspor anotasi dari dokumen PDF ke file XFDF, sementara metode [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) memungkinkan Anda untuk mengimpor anotasi dari file XFDF yang ada. Untuk mengimpor atau mengekspor anotasi, kita perlu menentukan jenis anotasi. Kita dapat menentukan jenis ini dalam bentuk enumerasi dan kemudian mengoper enumerasi ini sebagai argumen ke salah satu metode ini. Dengan cara ini, anotasi dari jenis yang ditentukan hanya akan diimpor atau diekspor ke file XFDF.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 Potongan kode berikut menunjukkan kepada Anda bagaimana mengekspor anotasi ke file XFDF:
 

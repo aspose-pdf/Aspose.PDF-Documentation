@@ -80,7 +80,7 @@ sitemap:
 
 Jika Anda ingin mendapatkan semua font dari dokumen PDF, Anda dapat menggunakan metode FontUtilities.GetAllFonts() yang disediakan dalam kelas Document. Silakan periksa cuplikan kode berikut untuk mendapatkan semua font dari dokumen PDF yang ada:
 
-Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/net/drawing/). 
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/). 
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
