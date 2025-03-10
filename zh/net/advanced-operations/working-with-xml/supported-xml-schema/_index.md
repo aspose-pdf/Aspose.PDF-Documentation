@@ -1,10 +1,12 @@
 ---
-title: XML Schema of Aspose.PDF
-linktitle: Supported XML Schema
+title: Aspose.PDF 的 XML 架构
+linktitle: 支持的 XML 架构
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
-url: zhnet/supported-xml-schema/
-description: 本文描述了在 Aspose.PDF for .NET 中使用 XML 文档的 XML 架构
+url: /zhnet/supported-xml-schema/
+description: 本文描述了用于在 Aspose.PDF for .NET 中处理 XML 文档的 XML 架构
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "XML Schema of Aspose.PDF",
-    "alternativeHeadline": "How to work with XML Schema in PDF ",
+    "alternativeHeadline": "Enhanced XML Schema Support in C#",
+    "abstract": "介绍用于 Aspose.PDF for .NET 的 XML 架构，这是一个强大的新功能，增强了您在 .NET 应用程序中处理 XML 文档的能力。该架构提供了一种结构化的方法来定义和操作 PDF 对象，允许对文档设计和布局进行高级自定义和控制，使其成为希望优化 PDF 生成过程的开发人员的必备工具。了解此功能如何简化您的开发工作流程并改善您的应用程序 PDF 处理能力",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, XML schema",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2078",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,15 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "net/supported-xml-schema/"
     },
-    "dateModified": "2022-02-04",
-    "description": "本文描述了在 Aspose.PDF for .NET 中使用 XML 文档的 XML 架构"
+    "dateModified": "2024-11-26",
+    "description": "本文描述了用于在 Aspose.PDF for .NET 中处理 XML 文档的 XML 架构"
 }
 </script>
-```
 
 以下代码片段也适用于 [Aspose.PDF.Drawing](/pdf/zh/net/drawing/) 库。
 
-Aspose.PDF for .NET 使用以下 XML 模式来处理 XML 文档：
+Aspose.PDF for .NET 使用以下 XML 架构来处理 XML 文档：
 
 ```xml
 <?xml version="1.0"?>
@@ -316,14 +317,68 @@ Aspose.PDF for .NET 使用以下 XML 模式来处理 XML 文档：
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute type="xs:byte" name="Left" use="optional"/>
-    <xs:attribute type="xs:byte"
-
+    <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+    <xs:attribute type="xs:byte" name="Width" use="optional"/>
+    <xs:attribute type="xs:byte" name="Height" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="TextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Text" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NoteType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextType" name="Text"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment"/>
+      <xs:element type="xs:string" name="HtmlFragment"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeadingType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TextSegment"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Level" use="optional"/>
+    <xs:attribute type="xs:string" name="IsAutoSequence" use="optional"/>
+    <xs:attribute type="xs:byte" name="Style" use="optional"/>
+    <xs:attribute type="xs:byte" name="StartNumber" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RectangleType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+        <xs:attribute type="xs:byte" name="Height" use="optional"/>
+        <xs:attribute type="xs:byte" name="Left" use="optional"/>
+        <xs:attribute type="xs:byte" name="Width" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CurveType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="PositionArray"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:PageType" name="Page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET 库",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -370,7 +425,7 @@ Aspose.PDF for .NET 使用以下 XML 模式来处理 XML 文档：
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "用于 .NET 的 PDF 操作库",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -382,4 +437,3 @@ Aspose.PDF for .NET 使用以下 XML 模式来处理 XML 文档：
     }
 }
 </script>
-```

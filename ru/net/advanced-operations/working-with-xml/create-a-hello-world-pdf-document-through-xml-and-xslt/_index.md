@@ -2,9 +2,11 @@
 title: Создание PDF из XML с использованием XSLT
 linktitle: Создать PDF из XML с использованием XSLT
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
-description: Библиотека C# предоставляет возможность преобразования XML-файла в PDF-документ, при этом входной XML-файл должен соответствовать схеме Aspose.PDF.
+description: Библиотека C# предоставляет возможность конвертировать XML файл в PDF документ, при этом входной XML файл должен соответствовать схеме Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Создание PDF из XML с использованием XSLT",
-    "alternativeHeadline": "Как создать PDF из XML с использованием XSLT",
+    "headline": "Creating PDF from XML using XSLT",
+    "alternativeHeadline": "Generate PDF from XML using XSLT and C#",
+    "abstract": "Генерируйте PDF файлы непосредственно из XML файлов с использованием XSLT и библиотеки C#. Эта новая функция упрощает генерацию отчетов, преобразуя существующие XML данные в формат, совместимый с PDF. Процесс использует XSLT для преобразования и требует соблюдения схемы Aspose.PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, c#, создание pdf xml, pdf с xslt",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "genre": "pdf document generation",
+    "wordcount": "323",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,23 +73,23 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-a-hello-world-pdf-document-through-xml-and-xslt/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Библиотека C# предоставляет возможность преобразования XML-файла в PDF-документ, при этом входной XML-файл должен соответствовать схеме Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "Библиотека C# предоставляет возможность конвертировать XML файл в PDF документ, при этом входной XML файл должен соответствовать схеме Aspose.PDF."
 }
 </script>
-```
-The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ru/net/drawing/) library.
 
-Иногда у вас могут быть существующие XML-файлы, содержащие данные приложения, и вы хотите создать PDF-отчет, используя эти файлы. Вы можете использовать XSLT для преобразования вашего существующего XML-документа в совместимый с Aspose.Pdf XML-документ, а затем создать PDF-файл. Существует 3 шага для создания PDF, используя XML и XSLT.
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Пожалуйста, выполните следующие шаги для преобразования XML-файла в PDF-документ с помощью XSLT:
+Иногда у вас могут быть существующие XML файлы, которые содержат данные приложения, и вы хотите сгенерировать PDF отчет, используя эти файлы. Вы можете использовать XSLT для преобразования вашего существующего XML документа в совместимый с Aspose.Pdf XML документ, а затем сгенерировать PDF файл. Существует 3 шага для генерации PDF с использованием XML и XSLT.
 
-* Создайте экземпляр класса PDF, который представляет PDF-документ
-* Если вы приобрели лицензию, то также следует встроить код для использования этой лицензии с помощью класса License в пространстве имен Aspose.Pdf
+Пожалуйста, выполните следующие шаги, чтобы конвертировать XML файл в PDF документ с использованием XSLT:
+
+* Создайте экземпляр класса PDF, который представляет PDF документ
+* Если вы приобрели лицензию, то вам также следует встроить код для использования этой лицензии с помощью класса License в пространстве имен Aspose.Pdf
 * Привяжите входные XML и XSLT файлы к экземпляру класса PDF, вызвав его метод BindXML
-* Сохраните привязанный XML с экземпляром PDF как PDF-документ
+* Сохраните привязанный XML с экземпляром PDF как PDF документ
 
-## Input XML File
+## Входной XML файл
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -96,7 +98,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ru/net/drawi
 </Contents>
 ```
 
-## Input XSLT File
+## Входной XSLT файл
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -122,7 +124,49 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ru/net/drawi
 </xsl:template>
 </xsl:stylesheet>
 ```
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Working-Document-HelloWorldPDFUsingXmlAndXslt-HelloWorldPDFUsingXmlAndXslt.cs" >}}
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Bind XML and XSLT files to the document
+        document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+        // Save PDF document
+        document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML and XSLT files to the document
+    document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+    // Save PDF document
+    document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -150,21 +194,21 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ru/net/drawi
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -175,7 +219,7 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ru/net/drawi
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -187,94 +231,3 @@ The following code snippet also work with [Aspose.PDF.Drawing](/pdf/ru/net/drawi
     }
 }
 </script>
-
----
-sidebar_position: 1
-sidebar_label: 'Начало работы'
-slug: / 
-title: Начало работы
-pagination_next: null
-pagination_prev: null
----
-
-# Начало работы 
-
-## Описание
-
-`docusaurus-plugin-openapi-docs` упрощает создание документации для OpenAPI с использованием Docusaurus. Этот плагин генерирует документацию из спецификаций OpenAPI.
-
-## Установка
-
-```bash
-npm install docusaurus-plugin-openapi-docs
-```
-
-## Конфигурация
-
-```js
-// docusaurus.config.js
-module.exports = {
-  // ...
-  plugins: [
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        // ключи и их значения
-      },
-    ],
-  ],
-};
-```
-
-## Использование
-
-```md
----
-id: 'openapi'
-title: 'OpenAPI Документация'
-sidebar_label: 'API'
-sidebar_position: 2
----
-
-import { RedocStandalone } from 'redoc';
-
-<RedocStandalone specUrl="/api/openapi.yaml" />
-```
-
-## Настройки
-
-- `specPath`: Путь к файлу спецификации OpenAPI.
-- `outputDir`: Директория для сохранения сгенерированной документации.
-- `sidebarOptions`: Опции для конфигурирования боковой панели.
-
-## Сторонние зависимости
-
-Плагин использует `redoc` для рендеринга документации OpenAPI.
-
-## Обновление документации
-
-Не забывайте периодически обновлять вашу OpenAPI спецификацию и регенерировать документацию с помощью этого плагина.
-
-## Пример конфигурации
-
-```js
-// docusaurus.config.js
-module.exports = {
-  // ...
-  plugins: [
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: 'openapi',
-        specPath: 'api/openapi.yaml',
-        outputDir: 'docs/api',
-        sidebarOptions: {
-          groupPathsBy: 'tag',
-          changefreq: "monthly",
-        },
-      },
-    ],
-  ],
-};
-```
-```

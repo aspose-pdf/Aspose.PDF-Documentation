@@ -1,10 +1,12 @@
 ---
-title: Menambah, Menghapus, dan Mendapatkan Anotasi
-linktitle: Menambah, Menghapus, dan Mendapatkan Anotasi
+title: Tambah, Hapus dan Dapatkan Anotasi
+linktitle: Tambah, Hapus dan Dapatkan Anotasi
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/add-delete-and-get-annotation/
-description: Dengan Aspose.PDF untuk .NET Anda dapat menambah, menghapus, dan mendapatkan anotasi dari file PDF Anda. Periksa semua daftar anotasi untuk menyelesaikan tugas Anda.
+description: Dengan Aspose.PDF for .NET Anda dapat menambah, menghapus, dan mendapatkan anotasi dari file PDF Anda. Periksa semua daftar anotasi untuk menyelesaikan tugas Anda.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Menambah, Menghapus, dan Mendapatkan Anotasi",
-    "alternativeHeadline": "Bekerja dengan Anotasi dalam file PDF",
+    "headline": "Add, Delete and Get Annotation",
+    "alternativeHeadline": "Manage PDF Annotations with Aspose.PDF for .NET",
+    "abstract": "Tingkatkan kemampuan manipulasi PDF Anda dengan fitur Tambah, Hapus, dan Dapatkan Anotasi yang baru di Aspose.PDF for .NET. Fungsionalitas yang kuat ini memungkinkan pengguna untuk mengelola anotasi dalam file PDF mereka dengan lancar, menawarkan pengeditan yang lebih efisien dan interaksi konten yang lebih baik. Temukan cara bekerja dengan berbagai jenis anotasi untuk memenuhi kebutuhan dokumen spesifik Anda",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, menambah anotasi, mendapatkan anotasi, menghapus anotasi",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "add annotation, delete annotation, get annotation, Aspose.PDF for .NET, PDF document generation, PDF annotations, multimedia annotation, PDF text annotation, highlights annotation, PDF manipulation library",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +74,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-delete-and-get-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Dengan Aspose.PDF untuk .NET Anda dapat menambah, menghapus, dan mendapatkan anotasi dari file PDF Anda. Periksa semua daftar anotasi untuk menyelesaikan tugas Anda."
+    "dateModified": "2024-11-25",
+    "description": "Dengan Aspose.PDF for .NET Anda dapat menambah, menghapus, dan mendapatkan anotasi dari file PDF Anda. Periksa semua daftar anotasi untuk menyelesaikan tugas Anda."
 }
 </script>
 
 **Apa itu anotasi dalam dokumen PDF?**
 
-Ini adalah objek tambahan yang Anda tambahkan ke file Anda untuk memperluas konten teks, melakukan edit, komentar untuk pengguna lain. Juga dimungkinkan untuk membuat teks dalam dokumen lebih mudah dibaca, menyorotinya, menggarisbawahi atau menambahkan teks yang sepenuhnya baru.
+Ini adalah objek tambahan yang Anda tambahkan ke file Anda untuk memperluas konten teks, membuat editan, komentar untuk pengguna lain. Juga dimungkinkan untuk membuat teks dalam dokumen lebih mudah dibaca, menyorotnya, menggarisbawahi, atau menambahkan teks yang benar-benar baru.
 
-Kami telah menggabungkan berbagai jenis anotasi yang tersedia untuk perpustakaan Aspose.PDF untuk .NET menjadi kelompok:
+Kami telah menggabungkan berbagai jenis anotasi yang tersedia untuk perpustakaan Aspose.PDF for .NET ke dalam kelompok:
 
 - [Anotasi Teks PDF](/pdf/id/net/text-annotation/)
 - [Anotasi Sorotan PDF](/pdf/id/net/highlights-annotation/)
 - [Anotasi Gambar PDF](/pdf/id/net/figures-annotation/)
 - [Anotasi Multimedia](/pdf/id/net/multimedia-annotation/)
-- [Anotasi Lengket PDF](/pdf/id/net/sticky-annotations/)
+- [Anotasi Tempel PDF](/pdf/id/net/sticky-annotations/)
 - [Anotasi Tautan](/pdf/id/net/link-annotations/)
-- [Anotasi Tambahan](/pdf/id/net/extra-annotations/)
+- [Anotasi Ekstra](/pdf/id/net/extra-annotations/)
 
 <script type="application/ld+json">
 {
@@ -153,4 +156,3 @@ Kami telah menggabungkan berbagai jenis anotasi yang tersedia untuk perpustakaan
     }
 }
 </script>
-

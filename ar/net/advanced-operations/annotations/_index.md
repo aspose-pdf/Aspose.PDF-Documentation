@@ -1,10 +1,12 @@
 ---
 title: العمل مع التعليقات التوضيحية
-linktitle: التعليقات التوضيحية في ملفات PDF
+linktitle: التعليقات التوضيحية في PDF
 type: docs
-weight: 100
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 160
 url: /ar/net/annotations/
-description: توضح هذه القسم كيفية استخدام جميع أنواع التعليقات التوضيحية على ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF.
+description: تعلم كيفية العمل مع التعليقات التوضيحية في ملفات PDF باستخدام Aspose.PDF في .NET، بما في ذلك إضافة التعليقات، والتظليل، والتعليقات التوضيحية الأخرى.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "تعليقات توضيحية على PDF",
-    "alternativeHeadline": "العمل مع التعليقات التوضيحية في ملفات PDF",
+    "headline": "Working with Annotations",
+    "alternativeHeadline": "Enhance PDFs with Comprehensive Annotation Capabilities",
+    "abstract": "قم بتحسين مستندات PDF الخاصة بك بقدرات التعليقات التوضيحية القوية لمكتبة Aspose.PDF. تتيح هذه الميزة للمستخدمين إضافة وتحرير وحذف أنواع مختلفة من التعليقات التوضيحية بسهولة، بما في ذلك التظليل، والملاحظات، والأشكال، مع الحفاظ على التوافق الكامل مع عارضات PDF. اكتشف كيفية إدارة التعليقات التوضيحية بسلاسة واستيراد/تصدير البيانات بتنسيقات XFDF وFDF من أجل معالجة فعالة لمستندات PDF.",
     "author": {
         "@type": "Person",
-        "name":"أناستازيا هولوب",
-        "givenName": "أناستازيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثائق PDF",
-    "keywords": "pdf, c#, التعليقات التوضيحية",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF Annotations, Aspose.PDF, annotations, XFDF format, FDF format, edit annotations, add annotations, delete annotations, PDF manipulation, interactive features",
+    "wordcount": "294",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +74,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "توضح هذه القسم كيفية استخدام جميع أنواع التعليقات التوضيحية على ملف PDF الخاص بك باستخدام مكتبة Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "يمكن لمكتبة Aspose.PDF أداء المهام البسيطة والسلسة، ولكنها أيضًا قادرة على التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
 }
 </script>
-محتوى الصفحة داخل ملف PDF صعب التعديل، لكن مواصفات PDF تحدد مجموعة كاملة من الكائنات التي يمكن إضافتها إلى صفحات PDF دون تغيير محتوى الصفحة.
 
-هذه الكائنات تُسمى التعليقات التوضيحية، وتتراوح أغراضها من تمييز محتوى الصفحة إلى تنفيذ ميزات تفاعلية مثل النماذج.
+المحتوى داخل صفحة PDF من الصعب تحريره، ولكن مواصفات PDF تحدد مجموعة كاملة من الكائنات التي يمكن إضافتها إلى صفحات PDF دون تغيير محتوى الصفحة.
 
-عادةً ما تسمح برامج عرض PDF بإنشاء وتعديل أنواع مختلفة من التعليقات التوضيحية، مثل تمييز النصوص، الملاحظات، الخطوط، أو الأشكال. بغض النظر عن أنواع التعليقات التوضيحية التي يمكن إنشاؤها، يجب أن تدعم برامج عرض PDF التي تتوافق مع مواصفات PDF أيضًا عرض جميع أنواع التعليقات التوضيحية.
+تسمى هذه الكائنات بالتعليقات التوضيحية، والغرض منها يتراوح بين وضع علامات على محتوى الصفحة إلى تنفيذ ميزات تفاعلية مثل النماذج.
 
-التعليق التوضيحي هو جزء مهم من ملف PDF. باستخدام Aspose.PDF لـ .NET يمكنك إضافة تعليق توضيحي جديد، تعديل تعليق توضيحي موجود وحذف التعليقات التوضيحية وما إلى ذلك. تغطي هذه القسم الموضوع التالي:
+عادةً ما تسمح عارضات PDF بإنشاء وتحرير أنواع مختلفة من التعليقات التوضيحية، مثل التظليل النصي، والملاحظات، والخطوط، أو الأشكال. بغض النظر عن أنواع التعليقات التوضيحية التي يمكن إنشاؤها، يجب أن تدعم عارضات PDF المتوافقة مع مواصفات PDF أيضًا عرض جميع أنواع التعليقات التوضيحية.
 
-أنت قادر على القيام بما يلي:
+التعليق التوضيحي هو جزء مهم من ملف PDF. باستخدام Aspose.PDF for .NET يمكنك إضافة تعليق توضيحي جديد، وتحرير تعليق توضيحي موجود، وحذف التعليقات التوضيحية، وهكذا. في هذا القسم يتم تناول الموضوعات التالية:
 
-- [نظرة عامة على التعليقات التوضيحية](/pdf/ar/net/overview-of-annotations/) - تعرف على أنواع التعليقات التوضيحية التي تحددها مواصفات PDF، وما يدعمه Aspose.PDF.
-- [إضافة، حذف والحصول على التعليق التوضيحي](/pdf/ar/net/add-delete-and-get-annotation/) - تشرح هذه القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
-- [إضافة، حذف والحصول على التعليق التوضيحي](/pdf/ar/net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية التعامل مع جميع أنواع التعليقات التوضيحية المسموح بها.
-- [استيراد وتصدير التعليق التوضيحي بتنسيق XFDF](/pdf/ar/net/import-export-xfdf/) - توفر مكتبة Aspose.PDF طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
+يمكنك القيام بما يلي:
+
+- [نظرة عامة على التعليقات التوضيحية](/pdf/ar/net/overview-of-annotations/) - تعرف على أنواع التعليقات التوضيحية التي تحددها مواصفات PDF، وما تدعمه Aspose.PDF.
+- [إضافة وحذف والحصول على التعليق التوضيحي](/pdf/ar/net/add-delete-and-get-annotation/) - يشرح هذا القسم كيفية العمل مع جميع أنواع التعليقات التوضيحية المسموح بها.
+- [استيراد وتصدير التعليقات التوضيحية بتنسيق XFDF](/pdf/ar/net/import-export-xfdf/) - توفر مكتبة Aspose.PDF طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
+- [استيراد التعليقات التوضيحية بتنسيق FDF إلى PDF](/pdf/ar/net/import-fdf/) - توفر مكتبة Aspose.PDF طريقة لاستيراد التعليقات التوضيحية بتنسيق FDF إلى ملفات PDF.
 
 <script type="application/ld+json">
 {
@@ -153,4 +157,3 @@ sitemap:
     }
 }
 </script>
-

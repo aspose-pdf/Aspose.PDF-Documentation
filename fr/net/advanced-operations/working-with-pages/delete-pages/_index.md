@@ -1,10 +1,12 @@
 ---
-title: Supprimer des pages PDF de manière programmatique en C#
+title: Supprimer des pages PDF par programmation C#
 linktitle: Supprimer des pages PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/delete-pages/
-description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF pour .NET.
+description: Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Supprimer des pages PDF de manière programmatique en C#",
-    "alternativeHeadline": "Comment supprimer des pages PDF",
+    "headline": "Delete PDF Pages programmatically C#",
+    "alternativeHeadline": "Delete Specific Pages from PDF with C#",
+    "abstract": "Avec la bibliothèque Aspose.PDF for .NET, les utilisateurs peuvent désormais supprimer efficacement des pages spécifiques des documents PDF par programmation en utilisant C#. Cette fonctionnalité simplifie la gestion des PDF, permettant des modifications et des mises à jour rapides adaptées aux besoins des utilisateurs, améliorant ainsi la personnalisation et le contrôle des documents.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, supprimer des pages pdf, enlever des pages pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "214",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,42 +73,44 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/delete-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF pour .NET."
+    "dateModified": "2024-11-26",
+    "description": "Vous pouvez supprimer des pages de votre fichier PDF en utilisant la bibliothèque Aspose.PDF for .NET."
 }
 </script>
 
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
-Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF pour .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF for .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 
-## Supprimer une page du fichier PDF
+## Supprimer une page d'un fichier PDF
 
-1. Appelez la méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) et spécifiez l'index de la page
-1. Appelez la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) pour enregistrer le fichier PDF mis à jour
+1. Appelez la méthode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) et spécifiez l'index de la page.
+1. Appelez la méthode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) pour enregistrer le fichier PDF mis à jour.
 Le code suivant montre comment supprimer une page particulière du fichier PDF en utilisant C#.
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez aller à https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Ouvrir le document
-Document pdfDocument = new Document(dataDir + "DeleteParticularPage.pdf");
-
-// Supprimer une page particulière
-pdfDocument.Pages.Delete(2);
-
-dataDir = dataDir + "DeleteParticularPage_out.pdf";
-// Enregistrer le PDF mis à jour
-pdfDocument.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeletePageFromPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularPage.pdf"))
+    {
+        // Delete a particular page
+        document.Pages.Delete(2);
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF pour la bibliothèque .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -128,21 +132,21 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -153,7 +157,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -165,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

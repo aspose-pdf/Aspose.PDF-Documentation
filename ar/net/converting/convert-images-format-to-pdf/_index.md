@@ -1,36 +1,102 @@
 ---
-title: تحويل صيغ الصور المختلفة إلى PDF في .NET
+title: تحويل تنسيقات الصور المختلفة إلى PDF في .NET
 linktitle: تحويل الصور إلى PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /ar/net/convert-images-format-to-pdf/
 lastmod: "2021-11-01"
-description: تحويل صيغ الصور المختلفة مثل BMP، CGM، JPEG، DICOM، PNG، TIFF، EMF و SVG إلى PDF باستخدام C# .NET.
+description: تحويل تنسيقات الصور المختلفة مثل CDR و DJVU و BMP و CGM و JPEG و DICOM و PNG و TIFF و EMF و SVG إلى PDF باستخدام C# .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert various Images formats to PDF in .NET",
+    "alternativeHeadline": "Convert Multiple Image Formats to PDF with C#",
+    "abstract": "تقديم ميزة قوية في Aspose.PDF for .NET التي تتيح تحويل تنسيقات الصور المختلفة بسلاسة بما في ذلك BMP و CGM و DICOM و EMF و JPG و PNG و SVG و TIFF و CDR و DJVU إلى مستندات PDF عالية الجودة. توفر هذه الوظيفة طريقة مباشرة لدمج تحويلات الصور إلى PDF داخل تطبيقات .NET الخاصة بك، مما يضمن التعامل الفعال مع محتوى الرسوم المتنوعة.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "5228",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-images-format-to-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-images-format-to-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
 
 ## نظرة عامة
 
-هذا المقال يشرح كيفية تحويل صيغ الصور المختلفة إلى PDF باستخدام C#. يغطي الموضوعات التالية.
+تشرح هذه المقالة كيفية تحويل تنسيقات الصور المختلفة إلى PDF باستخدام C#. تغطي هذه المواضيع.
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-_الصيغة_: **BMP**
+_التنسيق_: **BMP**
 - [C# BMP إلى PDF](#csharp-bmp-to-pdf)
 - [C# تحويل BMP إلى PDF](#csharp-bmp-to-pdf)
 - [C# كيفية تحويل صورة BMP إلى PDF](#csharp-bmp-to-pdf)
 
-_الصيغة_: **CGM**
+_التنسيق_: **CGM**
 - [C# CGM إلى PDF](#csharp-cgm-to-pdf)
 - [C# تحويل CGM إلى PDF](#csharp-cgm-to-pdf)
 - [C# كيفية تحويل صورة CGM إلى PDF](#csharp-cgm-to-pdf)
 
-_الصيغة_: **DICOM**
+_التنسيق_: **DICOM**
 - [C# DICOM إلى PDF](#csharp-dicom-to-pdf)
 - [C# تحويل DICOM إلى PDF](#csharp-dicom-to-pdf)
-- [C# كيفية تحويل صورة DICOM إلى PDF](#csharp-dicom-to-pdf)
 - [C# كيفية تحويل صورة DICOM إلى PDF](#csharp-dicom-to-pdf)
 
 _التنسيق_: **EMF**
@@ -62,425 +128,478 @@ _التنسيق_: **TIFF**
 - [C# TIFF إلى PDF](#csharp-tiff-to-pdf)
 - [C# تحويل TIFF إلى PDF](#csharp-tiff-to-pdf)
 - [C# كيفية تحويل صورة TIFF إلى PDF](#csharp-tiff-to-pdf)
-- [C# كيفية تحويل صورة TIFF إلى PDF](#csharp-tiff-to-pdf)
+
+_التنسيق_: **CDR**
+- [C# CDR إلى PDF](#csharp-cdr-to-pdf)
+- [C# تحويل CDR إلى PDF](#csharp-cdr-to-pdf)
+- [C# كيفية تحويل صورة CDR إلى PDF](#csharp-cdr-to-pdf)
+
+_التنسيق_: **DJVU**
+- [C# DJVU إلى PDF](#csharp-djvu-to-pdf)
+- [C# تحويل DJVU إلى PDF](#csharp-djvu-to-pdf)
+- [C# كيفية تحويل صورة DJVU إلى PDF](#csharp-djvu-to-pdf)
 
 مواضيع أخرى تغطيها هذه المقالة
-- [انظر أيضا](#see-also)
+- [انظر أيضًا](#see-also)
 
-## تحويلات صور C# إلى PDF
+## تحويل الصور إلى PDF باستخدام C#
 
-**Aspose.PDF لـ .NET** يتيح لك تحويل صيغ مختلفة من الصور إلى ملفات PDF. توضح مكتبتنا أكواد لتحويل أشهر صيغ الصور، مثل - BMP، CGM، DICOM، EMF، JPG، PNG، SVG و TIFF.
+**Aspose.PDF for .NET** يتيح لك تحويل تنسيقات مختلفة من الصور إلى ملفات PDF. توضح مكتبتنا مقتطفات الشيفرة لتحويل أكثر تنسيقات الصور شيوعًا، مثل - BMP و CGM و DICOM و EMF و JPG و PNG و SVG و TIFF.
 
 ## تحويل BMP إلى PDF
 
-تحويل ملفات BMP إلى مستند PDF باستخدام مكتبة **Aspose.PDF لـ .NET**.
+قم بتحويل ملفات BMP إلى مستند PDF باستخدام مكتبة **Aspose.PDF for .NET**.
 
-<abbr title="ملف صورة البت">BMP</abbr> الصور هي ملفات لها امتداد .BMP تمثل ملفات صور البتماب المستخدمة لتخزين الصور الرقمية البتماب. هذه الصور مستقلة عن محول الرسوميات وتُعرف أيضًا باسم تنسيق ملف البتماب المستقل عن الجهاز (DIB).
-يمكنك تحويل صور BMP إلى ملفات PDF باستخدام API **Aspose.PDF لـ .NET**. وعليه، يمكنك اتباع الخطوات التالية لتحويل صور BMP:
+<abbr title="ملف صورة بتنسيق Bitmap">BMP</abbr> هي ملفات تحمل الامتداد. تمثل BMP ملفات صورة بتنسيق Bitmap تُستخدم لتخزين الصور الرقمية بتنسيق bitmap. هذه الصور مستقلة عن محول الرسوميات وتسمى أيضًا تنسيق ملف bitmap المستقل عن الجهاز (DIB).
+يمكنك تحويل BMP إلى ملفات PDF باستخدام واجهة برمجة التطبيقات Aspose.PDF for .NET. لذلك، يمكنك اتباع الخطوات التالية لتحويل صور BMP:
 
 <a name="csharp-bmp-to-pdf" id="csharp-bmp-to-pdf"><strong>الخطوات: تحويل BMP إلى PDF في C#</strong></a>
 
-1.
-1.
-2. قم بتحميل صورة **BMP**.
-3. أخيرًا، احفظ الملف بصيغة PDF.
+1. قم بتهيئة كائن جديد من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+2. قم بتحميل صورة **BMP** المدخلة.
+3. أخيرًا، احفظ ملف PDF الناتج.
 
-يتبع الكود التالي هذه الخطوات ويوضح كيفية تحويل BMP إلى PDF باستخدام C#:
+لذا فإن مقتطف الشيفرة التالي يتبع هذه الخطوات ويظهر كيفية تحويل BMP إلى PDF باستخدام C#:
 
 ```csharp
-//Initialize empty PDF document
-using (Document pdfDocument = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertBMPtoPDF()
 {
-    pdfDocument.Pages.Add();
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load sample BMP image file
-    image.File = dataDir + "Sample.bmp";
-    pdfDocument.Pages[1].Paragraphs.Add(image);
-
-    // Save output PDF document
-    pdfDocument.Save(dataDir + "BMPtoPDF.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        
+        // Load BMP file
+        image.File = dataDir + "BMPtoPDF.bmp";
+        page.Paragraphs.Add(image);
+        
+        // Save PDF document
+        document.Save(dataDir + "BMPtoPDF_out.pdf");
+    }
 }
 ```
 
 {{% alert color="success" %}}
-**جرب تحويل BMP إلى PDF عبر الإنترنت**
+**حاول تحويل BMP إلى PDF عبر الإنترنت**
 
-تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["BMP إلى PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)، حيث يمكنك تجربة الوظائف وجودة العمل.
+تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["BMP إلى PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-[![Aspose.PDF Convertion BMP to PDF using Free App](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
+[![تحويل Aspose.PDF BMP إلى PDF باستخدام التطبيق المجاني](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
 {{% /alert %}}
 
 ## تحويل CGM إلى PDF
 
-<abbr title="Computer Graphics Metafile">CGM</abbr> هو امتداد ملف لتنسيق ملف الرسومات الحاسوبية والذي يستخدم عادة في تطبيقات التصميم بمساعدة الكمبيوتر (CAD) والرسومات التقديمية.
-<abbr title="ملف الرسوميات الحاسوبية">CGM</abbr> هو امتداد ملف لتنسيق ملف الرسوميات الحاسوبية الذي يستخدم عادة في تطبيقات التصميم بمساعدة الكمبيوتر (CAD) ورسومات العروض التقديمية.
+<abbr title="ملف رسومات الكمبيوتر">CGM</abbr> هو امتداد ملف لتنسيق ملف رسومات الكمبيوتر المستخدم عادةً في تطبيقات CAD (التصميم بمساعدة الكمبيوتر) والرسوم التقديمية. CGM هو تنسيق رسومات متجهة يدعم ثلاث طرق ترميز مختلفة: ثنائي (الأفضل لسرعة قراءة البرنامج)، قائم على الأحرف (ينتج أصغر حجم ملف ويسمح بنقل البيانات بشكل أسرع) أو ترميز نصي واضح (يسمح للمستخدمين بقراءة وتعديل الملف باستخدام محرر نصوص).
 
-راجع الشفرة التالية لتحويل ملفات CGM إلى تنسيق PDF.
+تحقق من مقتطف الشيفرة التالي لتحويل ملفات CGM إلى تنسيق PDF.
 
 <a name="csharp-cgm-to-pdf" id="csharp-cgm-to-pdf"><strong>الخطوات: تحويل CGM إلى PDF في C#</strong></a>
 
-1. إنشاء نسخة من الفئة [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions).
-2. إنشاء نسخة من الفئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
-3. حفظ المستند بالاسم المطلوب.
+1. أنشئ مثيلًا من فئة [CgmLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cgmloadoptions).
+2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+3. احفظ المستند بالاسم المطلوب.
 
 ```csharp
-public static void ConvertCGMtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertCGMtoPDF()
 {
-    CgmLoadOptions option = new CgmLoadOptions();
-    Document pdfDocument= new Document(_dataDir+"corvette.cgm", option);
-    pdfDocument.Save(_dataDir+"CGMtoPDF.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    var option = new Aspose.Pdf.CgmLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CGMtoPDF.cgm", option))
+    {
+        // Save PDF document
+        document.Save(dataDir + "CGMtoPDF_out.pdf");
+    }
 }
 ```
 
 ## تحويل DICOM إلى PDF
 
-<abbr title="التصوير الرقمي والاتصالات في الطب">DICOM</abbr> هو المعيار الصناعي في المجال الطبي لإنشاء وتخزين ونقل وتصور الصور الطبية الرقمية ووثائق الفحص للمرضى.
-<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> هو المعيار الصناعي في الصناعة الطبية لإنشاء، تخزين، نقل، وتصور الصور الطبية الرقمية ووثائق المرضى المفحوصين.
+<abbr title="تصوير الطب الرقمي والاتصالات">DICOM</abbr> هو معيار الصناعة الطبية لإنشاء وتخزين ونقل وعرض الصور الطبية الرقمية والمستندات للمرضى الذين تم فحصهم.
 
-**Aspsoe.PDF for .NET** يتيح لك تحويل صور DICOM وSVG، ولكن لأسباب فنية لإضافة الصور تحتاج إلى تحديد نوع الملف الذي سيتم إضافته إلى PDF:
+**Aspose.PDF لـ .NET** يتيح لك تحويل صور DICOM و SVG، ولكن لأسباب تقنية لإضافة الصور تحتاج إلى تحديد نوع الملف الذي سيتم إضافته إلى PDF:
 
 <a name="csharp-dicom-to-pdf" id="csharp-dicom-to-pdf"><strong>الخطوات: تحويل DICOM إلى PDF في C#</strong></a>
 
-1. إنشاء كائن من فئة الصورة.
-2. إضافة الصورة إلى مجموعة Paragraphs لصفحة.
+1. أنشئ كائنًا من فئة Image.
+2. أضف الصورة إلى مجموعة الفقرات في الصفحة.
 3. حدد خاصية [FileType](https://reference.aspose.com/pdf/net/aspose.pdf/image/properties/filetype).
 4. حدد مسار الملف أو المصدر.
-    - إذا كانت الصورة موجودة في موقع على القرص الصلب، حدد موقع المسار باستخدام خاصية Image.File.
-    - إذا كانت الصورة موضوعة في MemoryStream، انقل الكائن الذي يحمل الصورة إلى خاصية Image.ImageStream.
+    - إذا كانت الصورة في موقع على القرص الصلب، حدد موقع المسار باستخدام خاصية Image.File.
+    - إذا كانت الصورة موجودة في MemoryStream، مرر الكائن الذي يحمل الصورة إلى خاصية Image.ImageStream.
 
-يوضح الكود التالي كيفية تحويل ملفات DICOM إلى تنسيق PDF باستخدام Aspose.PDF.
-الشفرة التالية توضح كيفية تحويل ملفات DICOM إلى صيغة PDF باستخدام Aspose.PDF.
+يظهر مقتطف الشيفرة التالي كيفية تحويل ملفات DICOM إلى تنسيق PDF باستخدام Aspose.PDF. يجب عليك تحميل صورة DICOM، وضع الصورة على صفحة في ملف PDF وحفظ الناتج كملف PDF.
 
 ```csharp
-private const string _dataDir = "..\\..\\..\\..\\Samples";
-// تحويل صور DICOM إلى PDF باستخدام فئة الصورة
-public static void ConvertDICOMtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertDICOMtoPDF()
 {
-    // إنشاء كائن المستند
-    Document pdfDocument = new Document();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // إضافة صفحة إلى مجموعة الصفحات في المستند
-    Page page = pdfDocument.Pages.Add();
-
-    Image image = new Image
+    // Create PDF document 
+    using (var document = new Aspose.Pdf.Document())
     {
-        FileType = ImageFileType.Dicom,
-        File = System.IO.Path.Combine(_dataDir,"bmode.dcm")
-    };
-    pdfDocument.Pages[1].Paragraphs.Add(image);
-    // حفظ النتيجة بصيغة PDF
-    pdfDocument.Save(System.IO.Path.Combine(_dataDir,"PDFWithDicomImage_out.pdf"));
+        // Add page
+        var page = document.Pages.Add();
+        
+        var image = new Aspose.Pdf.Image
+        {
+            FileType = ImageFileType.Dicom,
+            File = dataDir + "DICOMtoPDF.dcm"
+        };
+        page.Paragraphs.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "DICOMtoPDF_out.pdf");
+    }
 }
 ```
 
 {{% alert color="success" %}}
-**جرب تحويل DICOM إلى PDF عبر الإنترنت**
+**حاول تحويل DICOM إلى PDF عبر الإنترنت**
 
-تقدم لك Aspose تطبيقا مجانيا عبر الإنترنت ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)، حيث يمكنك استكشاف الوظائف وجودة عمله.
+تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["DICOM إلى PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-[![Aspose.PDF تحويل DICOM إلى PDF باستخدام التطبيق المجاني](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 [![تحويل Aspose.PDF DICOM إلى PDF باستخدام التطبيق المجاني](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
 {{% /alert %}}
 
 ## تحويل EMF إلى PDF
 
-<abbr title="تنسيق ملف الصور المعزز">EMF</abbr> يخزن EMF الصور الرسومية بشكل مستقل عن الجهاز. تتكون الملفات المؤقتة لـ EMF من سجلات متغيرة الطول بترتيب زمني يمكن أن تقوم بتقديم الصورة المخزنة بعد التحليل على أي جهاز إخراج. علاوة على ذلك، يمكنك تحويل صورة EMF إلى PDF باستخدام الخطوات التالية:
+<abbr title="تنسيق ملف ميتا معزز">EMF</abbr> يخزن الصور الرسومية بشكل مستقل عن الجهاز. تتكون ملفات EMF من سجلات بطول متغير بترتيب زمني يمكن أن تعرض الصورة المخزنة بعد تحليلها على أي جهاز إخراج. علاوة على ذلك، يمكنك تحويل EMF إلى صورة PDF باستخدام الخطوات أدناه:
 
 <a name="csharp-emf-to-pdf" id="csharp-emf-to-pdf"><strong>الخطوات: تحويل EMF إلى PDF في C#</strong></a>
 
-1. أولاً، قم بتهيئة كائن الفئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-2. تحميل ملف صورة **EMF**.
-3. إضافة صورة EMF المحملة إلى صفحة.
-4. حفظ مستند PDF.
+1. أولاً، قم بتهيئة كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+2. قم بتحميل ملف صورة **EMF**.
+3. أضف صورة EMF المحملة إلى صفحة.
+4. احفظ مستند PDF.
 
-علاوة على ذلك، يوضح الجزء التالي من الكود كيفية تحويل EMF إلى PDF باستخدام C# في جزء الكود الخاص بـ .NET:
-
-```csharp
-// تهيئة مستند PDF جديد
-var doc = new Document();
-
-// تحديد مسار ملف صورة EMF الداخلي
-var imageFile = dataDir + "drawing.emf";
-var page = doc.Pages.Add();
-string file = imageFile;
-FileStream filestream = new FileStream(file, FileMode.Open, FileAccess.Read);
-BinaryReader reader = new BinaryReader(filestream);
-long numBytes = new FileInfo(file).Length;
-byte[] bytearray = reader.ReadBytes((int)numBytes);
-Stream stream = new MemoryStream(bytearray);
-var b = new Bitmap(stream);
-
-// تحديد خصائص أبعاد الصفحة
-page.PageInfo.Margin.Bottom = 0;
-page.PageInfo.Margin.Top = 0;
-page.PageInfo.Margin.Left = 0;
-page.PageInfo.Margin.Right = 0;
-page.PageInfo.Width = b.Width;
-page.PageInfo.Height = b.Height;
-var image = new Aspose.Pdf.Image();
-image.File = imageFile;
-page.Paragraphs.Add(image);
-
-// حفظ مستند PDF الناتج
-doc.Save(dataDir + "EMFtoPDF.pdf");
-```
-{{% alert color="success" %}}
-**جرب تحويل EMF إلى PDF عبر الإنترنت**
-
-تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["EMF إلى PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![تحويل Aspose.PDF لـ EMF إلى PDF باستخدام التطبيق المجاني](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
-{{% /alert %}}
-
-## تحويل GIF إلى PDF
-
-قم بتحويل ملفات GIF إلى مستند PDF باستخدام مكتبة **Aspose.PDF لـ .NET**.
-
-<abbr title="Graphics Interchange Format">GIF</abbr> قادر على تخزين البيانات المضغوطة دون فقدان الجودة في تنسيق لا يزيد عن 256 لونًا. تم تطوير تنسيق GIF المستقل عن الأجهزة في عام 1987 (GIF87a) بواسطة CompuServe لنقل الصور النقطية عبر الشبكات.
-يمكنك تحويل ملفات GIF إلى ملفات PDF باستخدام واجهة برمجة تطبيقات Aspose.PDF لـ .NET. لذلك، يمكنك اتباع الخطوات التالية لتحويل صور GIF:
-
-<a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>الخطوات: تحويل GIF إلى PDF في C#</strong></a>
-
-1.
-1.
-2. تحميل صورة **GIF** الأولية.
-3. أخيرًا، احفظ ملف PDF الناتج.
-
-فيما يلي قطعة الكود التالية تتبع هذه الخطوات وتوضح كيفية تحويل BMP إلى PDF باستخدام C#:
+علاوة على ذلك، يظهر مقتطف الشيفرة التالي كيفية تحويل EMF إلى PDF باستخدام C# في مقتطف الشيفرة الخاص بك في .NET:
 
 ```csharp
-// تهيئة وثيقة PDF فارغة
-using (Document pdfDocument = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertEMFtoPDF()
 {
-    pdfDocument.Pages.Add();
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // تحميل ملف صورة GIF نموذجي
-    image.File = dataDir + "Sample.gif";
-    pdfDocument.Pages[1].Paragraphs.Add(image);
+    // Create PDF document 
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        // Load EMF file
+        image.File = dataDir + "EMFtoPDF.emf";
 
-    // حفظ وثيقة PDF الناتجة
-    pdfDocument.Save(dataDir + "GIFtoPDF.pdf");
+        // Specify page dimension properties
+        page.PageInfo.Margin.Bottom = 0;
+        page.PageInfo.Margin.Top = 0;
+        page.PageInfo.Margin.Left = 0;
+        page.PageInfo.Margin.Right = 0;
+        page.PageInfo.Width = image.BitmapSize.Width;
+        page.PageInfo.Height = image.BitmapSize.Height;
+
+        page.Paragraphs.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "EMFtoPDF_out.pdf");
+    }
 }
 ```
 
 {{% alert color="success" %}}
-**جرب تحويل GIF إلى PDF عبر الإنترنت**
+**حاول تحويل EMF إلى PDF عبر الإنترنت**
 
-تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["GIF to PDF"](https://products.aspose.app/pdf/conversion/gif-to-pdf/)، حيث يمكنك تجربة استكشاف الوظائف وجودة عمله.
+تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["EMF إلى PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-[![Aspose.PDF تحويل GIF إلى PDF باستخدام التطبيق المجاني](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/gif-to-pdf/)
+[![تحويل Aspose.PDF EMF إلى PDF باستخدام التطبيق المجاني](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
+{{% /alert %}}
+
+## تحويل GIF إلى PDF
+
+قم بتحويل ملفات GIF إلى مستند PDF باستخدام مكتبة **Aspose.PDF for .NET**.
+
+<abbr title="تنسيق تبادل الرسومات">GIF</abbr> قادر على تخزين بيانات مضغوطة دون فقدان الجودة في تنسيق لا يزيد عن 256 لونًا. تم تطوير تنسيق GIF المستقل عن الأجهزة في عام 1987 (GIF87a) بواسطة CompuServe لنقل الصور بتنسيق bitmap عبر الشبكات.
+يمكنك تحويل GIF إلى ملفات PDF باستخدام واجهة برمجة التطبيقات Aspose.PDF for .NET. لذلك، يمكنك اتباع الخطوات التالية لتحويل صور GIF:
+
+<a name="csharp-gif-to-pdf" id="csharp-gif-to-pdf"><strong>الخطوات: تحويل GIF إلى PDF في C#</strong></a>
+
+1. قم بتهيئة كائن جديد من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+2. قم بتحميل صورة **GIF** المدخلة.
+3. أخيرًا، احفظ ملف PDF الناتج.
+
+لذا فإن مقتطف الشيفرة التالي يتبع هذه الخطوات ويظهر كيفية تحويل BMP إلى PDF باستخدام C#:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertGIFtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        
+        // Load sample GIF image file
+        image.File = dataDir + "GIFtoPDF.gif";
+        page.Paragraphs.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "GIFtoPDF_out.pdf");
+    }
+}
+```
+
+{{% alert color="success" %}}
+**حاول تحويل GIF إلى PDF عبر الإنترنت**
+
+تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["GIF إلى PDF"](https://products.aspose.app/pdf/conversion/gif-to-pdf/) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
+
+[![تحويل Aspose.PDF GIF إلى PDF باستخدام التطبيق المجاني](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/gif-to-pdf/)
 {{% /alert %}}
 
 ## تحويل JPG إلى PDF
 
-لا داعي للتساؤل كيفية تحويل JPG إلى PDF، لأن مكتبة **Apose.PDF لـ .NET** لديها الحل الأمثل.
-لا حاجة للتساؤل حول كيفية تحويل JPG إلى PDF، لأن مكتبة **Apose.PDF for .NET** لديها الحل الأمثل.
+لا داعي للتساؤل عن كيفية تحويل JPG إلى PDF، لأن مكتبة **Apose.PDF لـ .NET** لديها أفضل حل.
 
-يمكنك بسهولة تحويل صور JPG إلى PDF باستخدام Aspose.PDF for .NET باتباع الخطوات التالية:
+يمكنك بسهولة تحويل صور JPG إلى PDF باستخدام Aspose.PDF for .NET من خلال اتباع الخطوات:
 
 <a name="csharp-jpg-to-pdf" id="csharp-jpg-to-pdf"><strong>الخطوات: تحويل JPG إلى PDF في C#</strong></a>
 
-1. تهيئة كائن من فئة [Document](https://reference.aspose.com/page/net/aspose.page/document).
-2. إضافة صفحة جديدة إلى مستند PDF.
-3. تحميل صورة **JPG** وإضافتها إلى الفقرة.
-4. حفظ ملف PDF الناتج.
+1. قم بتهيئة كائن من فئة [Document](https://reference.aspose.com/page/net/aspose.page/document).
+2. أضف صفحة جديدة إلى مستند PDF.
+3. قم بتحميل صورة **JPG** وأضفها إلى الفقرة.
+4. احفظ ملف PDF الناتج.
 
-يوضح مقتطف الكود أدناه كيفية تحويل صورة JPG إلى PDF باستخدام C#:
-
-```csharp
-// تحميل ملف JPG الإدخال
-String path = dataDir + "Aspose.jpg";
-
-// تهيئة مستند PDF جديد
-Document doc = new Document();
-
-// إضافة صفحة فارغة في المستند الفارغ
-Page page = doc.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = (path);
-
-// إضافة الصورة على صفحة
-page.Paragraphs.Add(image);
-
-// حفظ ملف PDF الناتج
-doc.Save(dataDir + "ImagetoPDF.pdf");
-```
-
-ثم يمكنك معرفة كيفية تحويل صورة إلى PDF بنفس الارتفاع والعرض للصفحة.
-ثم يمكنك مشاهدة كيفية تحويل صورة إلى PDF بنفس ارتفاع وعرض الصفحة.
-
-1. تحميل ملف الصورة الأولية
-1. الحصول على ارتفاع وعرض الصورة
-1. تعيين ارتفاع وعرض وهوامش الصفحة
-1. حفظ ملف PDF الناتج
-
-يوضح الكود التالي كيفية تحويل صورة إلى PDF بنفس ارتفاع وعرض الصفحة باستخدام C#:
+يظهر مقتطف الشيفرة أدناه كيفية تحويل صورة JPG إلى PDF باستخدام C#:
 
 ```csharp
-// تحميل ملف صورة JPG الأولية
-String path = dataDir + "Aspose.jpg";
-System.Drawing.Image srcImage = System.Drawing.Image.FromFile(path);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertJPGtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// قراءة ارتفاع الصورة الأولية
-int h = srcImage.Height;
-
-// قراءة عرض الصورة الأولية
-int w = srcImage.Width;
-
-// تهيئة مستند PDF جديد
-Document doc = new Document();
-
-// إضافة صفحة فارغة
-Page page = doc.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = (path);
-
-// تعيين أبعاد الصفحة والهوامش
-page.PageInfo.Height = (h);
-page.PageInfo.Width = (w);
-page.PageInfo.Margin.Bottom = (0);
-page.PageInfo.Margin.Top = (0);
-page.PageInfo.Margin.Right = (0);
-page.PageInfo.Margin.Left = (0);
-page.Paragraphs.Add(image);
-
-// حفظ ملف PDF الناتج
-doc.Save(dataDir + "ImagetoPDF_HeightWidth.pdf");
+    // Create PDF document 
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        // Load input JPG file
+        image.File = dataDir + "JPGtoPDF.jpg";
+        
+        // Add image on a page
+        page.Paragraphs.Add(image);
+        
+        // Save PDF document
+        document.Save(dataDir + "JPGtoPDF_out.pdf");
+    }
+}
 ```
+
+ثم يمكنك رؤية كيفية تحويل صورة إلى PDF بنفس ارتفاع وعرض الصفحة. سنقوم بالحصول على أبعاد الصورة وضبط أبعاد صفحة مستند PDF وفقًا لذلك باستخدام الخطوات أدناه:
+
+1. قم بتحميل ملف الصورة المدخلة.
+1. قم بتعيين الارتفاع والعرض والهوامش للصفحة.
+1. احفظ ملف PDF الناتج.
+
+يظهر مقتطف الشيفرة التالي كيفية تحويل صورة إلى PDF بنفس ارتفاع وعرض الصفحة باستخدام C#:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertJPGtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        // Load JPEG file
+        image.File = dataDir + "JPGtoPDF.jpg";
+        
+        // Read Height of input image
+        page.PageInfo.Height = image.BitmapSize.Height;
+        // Read Width of input image
+        page.PageInfo.Width = image.BitmapSize.Width;
+        page.PageInfo.Margin.Bottom = 0;
+        page.PageInfo.Margin.Top = 0;
+        page.PageInfo.Margin.Right = 0;
+        page.PageInfo.Margin.Left = 0;
+        page.Paragraphs.Add(image);
+        
+        // Save PDF document
+        document.Save(dataDir + "JPGtoPDF_out.pdf");
+    }
+}
+```
+
 {{% alert color="success" %}}
-**جرب تحويل JPG إلى PDF عبر الإنترنت**
+**حاول تحويل JPG إلى PDF عبر الإنترنت**
 
-تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["JPG إلى PDF"](https://products.aspose.app/pdf/conversion/jpg-to-pdf/)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["JPG إلى PDF"](https://products.aspose.app/pdf/conversion/jpg-to-pdf/) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-[![تحويل Aspose.PDF من JPG إلى PDF باستخدام التطبيق المجاني](jpg_to_pdf.png)](https://products.aspose.app/pdf/conversion/jpg-to-pdf/)
+[![تحويل Aspose.PDF JPG إلى PDF باستخدام التطبيق المجاني](jpg_to_pdf.png)](https://products.aspose.app/pdf/conversion/jpg-to-pdf/)
 {{% /alert %}}
 
 ## تحويل PNG إلى PDF
 
-**Aspose.PDF لـ .NET** يدعم ميزة تحويل صور PNG إلى تنسيق PDF. تحقق من الشفرة التالية لتحقيق مهمتك.
+**Aspose.PDF for .NET** يدعم ميزة تحويل صور PNG إلى تنسيق PDF. تحقق من مقتطف الشيفرة التالي لتحقيق مهمتك.
 
-<abbr title="Portable Network Graphics">PNG</abbr> يشير إلى نوع من تنسيقات ملفات الصور النقطية التي تستخدم ضغطًا بدون فقدان، مما يجعلها شائعة بين المستخدمين.
+<abbr title="رسومات الشبكة القابلة للنقل">PNG</abbr> تشير إلى نوع من تنسيق ملفات الصور النقطية التي تستخدم ضغطًا بدون فقد، مما يجعلها شائعة بين مستخدميها.
 
-يمكنك تحويل صورة PNG إلى PDF باستخدام الخطوات التالية:
+يمكنك تحويل PNG إلى صورة PDF باستخدام الخطوات أدناه:
 
 <a name="csharp-png-to-pdf" id="csharp-png-to-pdf"><strong>الخطوات: تحويل PNG إلى PDF في C#</strong></a>
 
-1. تحميل صورة **PNG** الأصلية.
-2. قراءة قيم الارتفاع والعرض.
-3.
-3.
-4. حدد أبعاد الصفحة.
+1. قم بتحميل صورة **PNG** المدخلة.
+2. اقرأ قيم الارتفاع والعرض.
+3. أنشئ كائن جديد من فئة [Document](https://reference.aspose.com/page/net/aspose.page/document) وأضف صفحة.
+4. قم بتعيين أبعاد الصفحة.
 5. احفظ الملف الناتج.
 
-علاوة على ذلك، يوضح مقتطف الكود أدناه كيفية تحويل PNG إلى PDF باستخدام C# في تطبيقات .NET الخاصة بك:
+علاوة على ذلك، يظهر مقتطف الشيفرة أدناه كيفية تحويل PNG إلى PDF باستخدام C# في تطبيقات .NET الخاصة بك:
 
 ```csharp
-// تحميل ملف PNG الإدخال
-String path = dataDir + "Aspose.png";
-System.Drawing.Image srcImage = System.Drawing.Image.FromFile(path);
-int h = srcImage.Height;
-int w = srcImage.Width;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPNGtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// تهيئة مستند جديد
-Document doc = new Document();
-Page page = doc.Pages.Add();
-Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-image.File = (path);
-
-// حدد أبعاد الصفحة
-page.PageInfo.Height = (h);
-page.PageInfo.Width = (w);
-page.PageInfo.Margin.Bottom = (0);
-page.PageInfo.Margin.Top = (0);
-page.PageInfo.Margin.Right = (0);
-page.PageInfo.Margin.Left = (0);
-page.Paragraphs.Add(image);
-
-// احفظ PDF الناتج
-doc.Save(dataDir + "ImagetoPDF.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        // Load PNG file
+        image.File = dataDir + "PNGtoPDF.png";
+        
+        // Read Height of input image
+        page.PageInfo.Height = image.BitmapSize.Height;
+        // Read Width of input image
+        page.PageInfo.Width = image.BitmapSize.Width;
+        page.PageInfo.Margin.Bottom = 0;
+        page.PageInfo.Margin.Top = 0;
+        page.PageInfo.Margin.Right = 0;
+        page.PageInfo.Margin.Left = 0;
+        page.Paragraphs.Add(image);
+        
+        // Save PDF document
+        document.Save(dataDir + "PNGtoPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
-**جرب تحويل PNG إلى PDF عبر الإنترنت**
+**حاول تحويل PNG إلى PDF عبر الإنترنت**
 
-تقدم لك Aspose تطبيقًا مجانيًا على الإنترنت ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/)، حيث يمكنك تجربة استكشاف الوظائف وجودة العمل.
+تقدم لك Aspose تطبيقًا مجانيًا عبر الإنترنت ["PNG إلى PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-Aspose يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PNG إلى PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/)، حيث يمكنك تجربة استكشاف وظائفه وجودة عمله.
-
-[![تحويل Aspose.PDF لصور PNG إلى PDF باستخدام التطبيق المجاني](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
+[![تحويل Aspose.PDF PNG إلى PDF باستخدام التطبيق المجاني](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
 {{% /alert %}}
 
 ## تحويل SVG إلى PDF
 
-**Aspose.PDF لـ .NET** يشرح كيفية تحويل صور SVG إلى تنسيق PDF وكيفية الحصول على أبعاد ملف <abbr title="رسومات متجهة قابلة للتوسيع">SVG</abbr> المصدر.
+**Aspose.PDF for .NET** يوضح كيفية تحويل صور SVG إلى تنسيق PDF وكيفية الحصول على أبعاد ملف <abbr title="رسومات متجهة قابلة للتطوير">SVG</abbr> المصدر.
 
-رسومات متجهة قابلة للتوسيع (SVG) هي عائلة من المواصفات لتنسيق ملف قائم على XML للرسومات المتجهة ثنائية الأبعاد، سواء كانت ثابتة أو ديناميكية (تفاعلية أو متحركة). مواصفات SVG هي معيار مفتوح تم تطويره من قبل كونسورتيوم الشبكة العالمية (W3C) منذ عام 1999.
+تعد الرسومات المتجهة القابلة للتطوير (SVG) عائلة من المواصفات لتنسيق ملف قائم على XML للرسومات المتجهة ثنائية الأبعاد، سواء الثابتة أو الديناميكية (التفاعلية أو المتحركة). تعتبر مواصفة SVG معيارًا مفتوحًا تم تطويره بواسطة اتحاد الويب العالمي (W3C) منذ عام 1999.
 
-تُعرَّف صور SVG وسلوكياتها في ملفات نصية XML.
-```
-تُعرف صور SVG وسلوكياتها في ملفات نصية XML.
+تُعرف صور SVG وسلوكياتها في ملفات نصية XML. وهذا يعني أنه يمكن البحث عنها وفهرستها وبرمجتها، وإذا لزم الأمر، ضغطها. كملفات XML، يمكن إنشاء وتحرير صور SVG باستخدام أي محرر نصوص، ولكن من الأكثر ملاءمة غالبًا إنشاؤها باستخدام برامج الرسم مثل Inkscape.
 
 {{% alert color="success" %}}
-**حاول تحويل صيغة SVG إلى PDF عبر الإنترنت**
+**حاول تحويل تنسيق SVG إلى PDF عبر الإنترنت**
 
-يقدم لك Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["SVG إلى PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
+تقدم لك Aspose.PDF for .NET تطبيقًا مجانيًا عبر الإنترنت ["SVG إلى PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf) حيث يمكنك محاولة استكشاف الوظائف وجودة العمل.
 
-[![تحويل Aspose.PDF SVG إلى PDF بتطبيق مجاني](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
+[![تحويل Aspose.PDF SVG إلى PDF باستخدام التطبيق المجاني](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
 {{% /alert %}}
 
-لتحويل ملفات SVG إلى PDF، استخدم الصف المسمى [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) الذي يُستخدم لتهيئة الكائن [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions). فيما بعد، يتم تمرير هذا الكائن كحجة أثناء تهيئة كائن الوثيقة ويساعد محرك عرض PDF على تحديد صيغة المستند المصدر.
+لتحويل ملفات SVG إلى PDF، استخدم الفئة المسماة [SvgLoadOptions](https://reference.aspose.com/net/pdf/aspose.pdf/svgloadoptions) التي تُستخدم لتهيئة كائن [`LoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions). لاحقًا، يتم تمرير هذا الكائن كوسيط أثناء تهيئة كائن Document ويساعد محرك عرض PDF في تحديد تنسيق الإدخال للمستند المصدر.
 
 <a name="csharp-svg-to-pdf" id="csharp-svg-to-pdf"><strong>الخطوات: تحويل SVG إلى PDF في C#</strong></a>
 
-1.
-1.
-2. قم بإنشاء مثيل من الفئة [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع تحديد اسم الملف المصدر والخيارات.
-3. احفظ المستند بالاسم المطلوب للملف.
+1. أنشئ مثيلًا من فئة [`SvgLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions).
+2. أنشئ مثيلًا من فئة [`Document`](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+3. احفظ المستند بالاسم المطلوب.
 
-الشفرة التالية توضح عملية تحويل ملف SVG إلى تنسيق PDF باستخدام Aspose.PDF لـ .NET.
+يظهر مقتطف الشيفرة التالي عملية تحويل ملف SVG إلى تنسيق PDF باستخدام Aspose.PDF for .NET.
 
 ```csharp
-public static void ConvertSVGtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertSVGtoPDF()
 {
-    SvgLoadOptions option = new SvgLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "car.svg", option);
-    pdfDocument.Save(_dataDir + "svgtest.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    var option = new Aspose.Pdf.SvgLoadOptions();
+    // Open SVG file 
+    using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", option))
+    {
+        // Save PDF document
+        document.Save(dataDir + "SVGtoPDF_out.pdf");
+    }
 }
 ```
 
 ## الحصول على أبعاد SVG
 
-من الممكن أيضًا الحصول على أبعاد ملف SVG المصدر. قد تكون هذه المعلومات مفيدة إذا أردنا أن يغطي SVG الصفحة بأكملها من PDF المخرج. خاصية AdjustPageSize في فئة ScgLoadOption تلبي هذا الشرط. القيمة الافتراضية لهذه الخاصية هي false. إذا تم ضبط القيمة على true، سيكون لملف PDF المخرج نفس الحجم (الأبعاد) كملف SVG المصدر.
+من الممكن أيضًا الحصول على أبعاد ملف SVG المصدر. يمكن أن تكون هذه المعلومات مفيدة إذا أردنا أن تغطي SVG الصفحة بالكامل من ملف PDF الناتج. تلبي خاصية AdjustPageSize لفئة SvgLoadOption هذا المتطلب. القيمة الافتراضية لهذه الخاصية هي false. إذا تم تعيين القيمة إلى true، سيكون لملف PDF الناتج نفس الحجم (الأبعاد) مثل SVG المصدر.
 
-الشفرة التالية توضح عملية الحصول على أبعاد ملف SVG المصدر وإنتاج ملف PDF.
-يوضح الجزء التالي من الشيفرة عملية الحصول على أبعاد ملف SVG المصدر وتوليد ملف PDF.
+يظهر مقتطف الشيفرة التالي عملية الحصول على أبعاد ملف SVG المصدر وتوليد ملف PDF.
 
 ```csharp
-public static void ConvertSVGtoPDF_Advanced()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertSVGtoPDF()
 {
-    // للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-    // المسار إلى دليل المستندات.
-    string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-    var loadopt = new SvgLoadOptions();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    var loadopt = new Aspose.Pdf.SvgLoadOptions();
     loadopt.AdjustPageSize = true;
-    var svgDoc = new Document(dataDir + "GetSVGDimensions.svg", loadopt);
-    svgDoc.Pages[1].PageInfo.Margin.Top = 0;
-    svgDoc.Pages[1].PageInfo.Margin.Left = 0;
-    svgDoc.Pages[1].PageInfo.Margin.Bottom = 0;
-    svgDoc.Pages[1].PageInfo.Margin.Right = 0;
-    svgDoc.Save(dataDir + "GetSVGDimensions_out.pdf");
+    // Open SVG file
+    using (var document = new Aspose.Pdf.Document(dataDir + "SVGtoPDF.svg", loadopt))
+    {
+        document.Pages[1].PageInfo.Margin.Top = 0;
+        document.Pages[1].PageInfo.Margin.Left = 0;
+        document.Pages[1].PageInfo.Margin.Bottom = 0;
+        document.Pages[1].PageInfo.Margin.Right = 0;
+
+        // Save PDF document
+        document.Save(dataDir + "SVGtoPDF_out.pdf");
+    }
+    
 }
 ```
 
-### الميزات المدعومة في SVG
+### ميزات SVG المدعومة
 
 <table>
     <thead>
         <tr>
             <th>
-                <p>وسم SVG</p>
+                <p>علامة SVG</p>
             </th>
             <th>
                 <p>استخدام عينة</p>
@@ -488,32 +607,28 @@ public static void ConvertSVGtoPDF_Advanced()
         </tr>
     </thead>
     <tbody>
-<tbody>
-   <tr>
-       <td>
-           <p>دائرة</p>
-       </td>
-       <td>
-           <code><pre>&lt;circle id="r2" cx="10" cy="10" r="10" stroke="blue" stroke-width="2"&gt;</pre></code>
-       </td>
-   </tr>
-   <tr>
-       <td>
-           <p>تعاريف</p>
-       </td>
-       <td>
-           <code>&lt;defs&gt;&nbsp; <br> &lt;rect id="r1" width="15" height="15"
-               stroke="blue" stroke-width="2" /&gt;&nbsp; <br> &lt;circle id="r2"
-               cx="10" cy="10" r="10" stroke="blue" stroke-width="2"/&gt;&nbsp; <br>
-               &lt;circle id="r3" cx="10" cy="10" r="10" stroke="blue" stroke-width="3"/&gt;&nbsp; <br> &lt;/defs&gt;&nbsp; <br> &lt;use
-               x="25" y="40" xlink:href="#r1" fill="red"/&gt;&nbsp; <br> &lt;use
-               x="35" y="15" xlink:href="#r2" fill="green"/&gt;&nbsp; <br> &lt;use
-               x="58" y="50" xlink:href="#r3" fill="blue"/&gt;</code>
-       </td>
-   </tr>
-</tbody>
-
-         </tr>
+        <tr>
+            <td>
+                <p>circle</p>
+            </td>
+            <td>
+                <code><pre>&lt circle id="r2" cx="10" cy="10" r="10" stroke="blue" stroke-width="2"&gt </pre></code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>defs</p>
+            </td>
+            <td>
+                <code>&lt;defs&gt;&nbsp; <br> &lt;rect id="r1" width="15" height="15"
+                    stroke="blue" stroke-width="2" /&gt;&nbsp; <br> &lt;circle id="r2"
+                    cx="10" cy="10" r="10" stroke="blue" stroke-width="2"/&gt;&nbsp; <br>
+                    &lt;circle id="r3" cx="10" cy="10" r="10" stroke="blue" stroke-width="3"/&gt;&nbsp; <br> &lt;/defs&gt;&nbsp; <br> &lt;use
+                    x="25" y="40" xlink:href="#r1" fill="red"/&gt;&nbsp; <br> &lt;use
+                    x="35" y="15" xlink:href="#r2" fill="green"/&gt;&nbsp; <br> &lt;use
+                    x="58" y="50" xlink:href="#r3" fill="blue"/&gt;</code>
+            </td>
+        </tr>
         <tr>
             <td>
                 <p>tref</p>
@@ -521,7 +636,7 @@ public static void ConvertSVGtoPDF_Advanced()
             <td>
                 <p>&lt;defs&gt;&nbsp; <br> &nbsp;&nbsp;&nbsp; &lt;text
                     id="ReferencedText"&gt;&nbsp; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    بيانات الحروف المرجعية&nbsp; <br> &nbsp;&nbsp;&nbsp;
+                    بيانات الأحرف المرجعية&nbsp; <br> &nbsp;&nbsp;&nbsp;
                     &lt;/text&gt;&nbsp; <br> &lt;/defs&gt;&nbsp; <br
                         class="atl-forced-newline"> &lt;text x="10" y="100" font-size="15" fill="red" &gt;&nbsp; <br
                         class="atl-forced-newline"> &nbsp;&nbsp;&nbsp; &lt;tref
@@ -536,136 +651,120 @@ public static void ConvertSVGtoPDF_Advanced()
                 <p>&lt;defs&gt;&nbsp; <br> &nbsp;&nbsp;&nbsp; &lt;text id="Text" x="400"
                     y="200"&nbsp; <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-family="Verdana" font-size="100"
-```
-
-```
-    font-family="Verdana" font-size="100"
-    text-anchor="middle" &gt; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    نص مخفي <br> &nbsp;&nbsp;&nbsp; &lt;/text&gt;&nbsp; <br
-        class="atl-forced-newline"> &lt;use xlink:href="#Text" fill="blue"&nbsp; /&gt;</p>
-</td>
-</tr>
-<tr>
-<td>
-    <p>بيضاوي</p>
-</td>
-<td>
-    <p>&lt;ellipse cx="2.5" cy="1.5" rx="2" ry="1" fill="red" /&gt;</p>
-</td>
-</tr>
-<tr>
-<td>
-    <p>g</p>
-</td>
-<td>
-    <p>&lt;g fill="none" stroke="dimgray" stroke-width="1.5" &gt; <br>
-        &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;line x1="-7"
-        y1="-7" x2="-3" y2="-3"/&gt;&nbsp; <br> &nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;line x1="7" y1="7" x2="3"
-```
-
-# ترجمة المستند
-
-<line x1="7" y1="7" x2="3" y2="3"/>  
-<line x1="-7" y1="7" x2="-3" y2="3"/>  
-<line x1="7" y1="-7" x2="3" y2="-3"/>  
-</g>  
-
-| الصورة   |
-| --------- |
-| <image id="ShadedRelief" x="24" y="4" width="64" height="82" xlink:href="relief.jpg"/> |
-
-| الخط     |
-| --------- |
-| <line style="stroke:#eea;stroke-width:8" x1="10" y1="30" x2="260" y2="100"/> |
-```
-
-<tr>
-    <td>
-        <p>خط</p>
-    </td>
-    <td>
-        <p>&lt;line style="stroke:#eea;stroke-width:8" x1="10" y1="30" x2="260" y2="100"/&gt;&nbsp;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>مسار</p>
-    </td>
-    <td>
-        <p>&lt;path style="fill:#daa;fill-rule:evenodd;stroke:red" d="M 230,150 C 290,30 10,255 110,140 z
-            "/&gt;&nbsp;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>أنماط</p>
-    </td>
-    <td>
-        <p>&lt;path style="fill:#daa;fill-rule:evenodd;stroke:red" d="M 230,150 C 290,30 10,255 110,140 z
-            "/&gt;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>مضلع</p>
-    </td>
-    <td>
-        <p>&lt;polygon style="stroke:#24a;stroke-width:1.5;fill:#eefefe" points="10,10 180,10 10,250 10,10"
-            /&gt;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>خط متعدد</p>
-    </td>
-```
-
-<tr>
-    <td>
-        <p>خط متعدد الأضلاع</p>
-    </td>
-    <td>
-        <p>&lt;polyline fill="none" stroke="dimgray" stroke-width="1" points="-3,-6 3,-6 3,1 5,1 0,7 -5,1
-            -3,1 -3,-5"/&gt;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>مستطيل</p>
-    </td>
-    <td>
-        <p>&lt;rect x="0" y="0" width="400" height="600" stroke="none" fill="aliceblue" /&gt;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>svg</p>
-    </td>
-    <td>
-        <p>&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10cm" height="5cm" &gt;</p>
-    </td>
-</tr>
-<tr>
-    <td>
-        <p>نص</p>
-    </td>
-    <td>
-        <p>&lt;text font-family="sans-serif" fill="dimgray" font-size="22px" font-weight="bold" x="58"
-            y="30" pointer-events="none"&gt;عنوان الخريطة&lt;/text&gt;</p>
-    </td>
-</tr>
-```
-
-<table>
-    <tbody>
+                    text-anchor="middle" &gt;&nbsp; <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    نص مقنع&nbsp; <br> &nbsp;&nbsp;&nbsp; &lt;/text&gt;&nbsp; <br
+                        class="atl-forced-newline"> &lt;use xlink:href="#Text" fill="blue"&nbsp; /&gt;</p>
+            </td>
+        </tr>
         <tr>
             <td>
-                <p>خط</p>
+                <p>ellipse&nbsp;</p>
+            </td>
+            <td>
+                <p>&lt;ellipse cx="2.5" cy="1.5" rx="2" ry="1" fill="red" /&gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>g&nbsp;</p>
+            </td>
+            <td>
+                <p>&lt;g fill="none" stroke="dimgray" stroke-width="1.5" &gt;&nbsp; <br>
+                    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;line x1="-7"
+                    y1="-7" x2="-3" y2="-3"/&gt;&nbsp; <br> &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;line x1="7" y1="7" x2="3"
+                    y2="3"/&gt;&nbsp; <br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;line x1="-7" y1="7" x2="-3" y2="3"/&gt;&nbsp;
+                    <br> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp; &nbsp;&lt;line x1="7" y1="-7" x2="3" y2="-3"/&gt;&nbsp; <br
+                        class="atl-forced-newline"> &lt;/g&gt;&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>image</p>
+            </td>
+            <td>
+                <p>&lt;image id="ShadedRelief" x="24" y="4" width="64" height="82" xlink:href="relief.jpg"
+                    /&gt;&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>line</p>
+            </td>
+            <td>
+                <p>&lt;line style="stroke:#eea;stroke-width:8" x1="10" y1="30" x2="260" y2="100"/&gt;&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>path</p>
+            </td>
+            <td>
+                <p>&lt;path style="fill:#daa;fill-rule:evenodd;stroke:red" d="M 230,150 C 290,30 10,255 110,140 z
+                    "/&gt;&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>style</p>
+            </td>
+            <td>
+                <p>&lt;path style="fill:#daa;fill-rule:evenodd;stroke:red" d="M 230,150 C 290,30 10,255 110,140 z
+                    "/&gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>polygon</p>
+            </td>
+            <td>
+                <p>&lt;polygon style="stroke:#24a;stroke-width:1.5;fill:#eefefe" points="10,10 180,10 10,250 10,10"
+                    /&gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>polyline</p>
+            </td>
+            <td>
+                <p>&lt;polyline fill="none" stroke="dimgray" stroke-width="1" points="-3,-6 3,-6 3,1 5,1 0,7 -5,1
+                    -3,1 -3,-5"/&gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>rect&nbsp;</p>
+            </td>
+            <td>
+                <p>&lt;rect x="0" y="0" width="400" height="600" stroke="none" fill="aliceblue" /&gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>svg</p>
+            </td>
+            <td>
+                <p>&lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="10cm" height="5cm" &gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>text</p>
+            </td>
+            <td>
+                <p>&lt;text font-family="sans-serif" fill="dimgray" font-size="22px" font-weight="bold" x="58"
+                    y="30" pointer-events="none"&gt;عنوان الخريطة&lt;/text&gt;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>font</p>
             </td>
             <td>
                 <p>&lt;text x="10" y="100" font-size="15" fill="red" &gt;&nbsp; <br>
-                    &nbsp;&nbsp;&nbsp; نص نموذجي&nbsp; <br> &lt;/text&gt;</p>
+                    &nbsp;&nbsp;&nbsp; نص عينة&nbsp; <br> &lt;/text&gt;</p>
             </td>
         </tr>
         <tr>
@@ -673,7 +772,7 @@ public static void ConvertSVGtoPDF_Advanced()
                 <p>tspan</p>
             </td>
             <td>
-                <p>&lt;tspan dy="25" x="25"&gt;ستة ألوان حبر قيمة الإدخال. هنا سوف &lt;/tspan&gt;</p>
+                <p>&lt;tspan dy="25" x="25"&gt;ستة قيم إدخال لون الحبر. هنا سيكون &lt;/tspan&gt;</p>
             </td>
         </tr>
     </tbody>
@@ -681,134 +780,263 @@ public static void ConvertSVGtoPDF_Advanced()
 
 ## تحويل TIFF إلى PDF
 
-**Aspose.PDF** يدعم صيغة الملف، سواء كان إطارًا واحدًا أو إطارات متعددة <abbr title="Tag Image File Format">TIFF</abbr>. هذا يعني أن بإمكانك تحويل صورة TIFF إلى PDF في تطبيقات .NET الخاصة بك.
+يدعم تنسيق ملف **Aspose.PDF**، سواء كان صورة TIFF بإطار واحد أو متعدد الإطارات <abbr title="تنسيق ملف الصورة المميزة">TIFF</abbr>. وهذا يعني أنه يمكنك تحويل صورة TIFF إلى PDF في تطبيقات .NET الخاصة بك.
 
-TIFF أو TIF، تنسيق ملف الصورة الموسومة، يمثل الصور النقطية التي تُستخدم على مجموعة متنوعة من الأجهزة التي تتوافق مع هذا المعيار لتنسيق الملفات.
-```
+يمثل TIFF أو TIF، تنسيق ملف الصورة المميزة، الصور النقطية التي تهدف للاستخدام على مجموعة متنوعة من الأجهزة التي تتوافق مع معيار تنسيق الملف هذا. يمكن أن تحتوي صورة TIFF على عدة إطارات مع صور مختلفة. كما أن تنسيق ملف Aspose.PDF مدعوم، سواء كان صورة TIFF بإطار واحد أو متعدد الإطارات.
 
-TIFF أو TIF، تنسيق ملف الصورة الموسومة، يمثل الصور النقطية المخصصة للاستخدام على مجموعة متنوعة من الأجهزة التي تتوافق مع معيار تنسيق الملف هذا.
-
-يمكنك تحويل TIFF إلى PDF بنفس الطريقة كما في تنسيقات ملفات الرسوم النقطية الأخرى:
+يمكنك تحويل TIFF إلى PDF بنفس الطريقة التي يتم بها تحويل باقي تنسيقات ملفات الرسوميات النقطية:
 
 <a name="csharp-tiff-to-pdf" id="csharp-tiff-to-pdf"><strong>الخطوات: تحويل TIFF إلى PDF في C#</strong></a>
 
-1. إنشاء كائن جديد من فئة [الوثيقة](https://reference.aspose.com/pdf/net/aspose.pdf/document) وإضافة صفحة.
-2. تحميل صورة **TIFF** المدخلة.
-3. حفظ مستند PDF.
+1. أنشئ كائن جديد من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وأضف صفحة.
+2. قم بتحميل صورة **TIFF** المدخلة.
+3. احفظ مستند PDF.
 
 ```csharp
-Initialize empty PDF document
-using (Document pdfDocument = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertTIFFtoPDF()
 {
-    pdfDocument.Pages.Add();
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Load sample Tiff image file
-    image.File = dataDir + "sample.tiff";
-    pdfDocument.Pages[1].Paragraphs.Add(image);
-
-    // Save output PDF document
-    pdfDocument.Save(dataDir + "TIFFtoPDF.pdf");
-}
-```
-
-في حالة الحاجة لتحويل صورة TIFF متعددة الصفحات إلى مستند PDF متعدد الصفحات والتحكم في بعض البارامترات، مثل.
-في حالة الحاجة إلى تحويل صورة TIFF متعددة الصفحات إلى مستند PDF متعدد الصفحات والتحكم في بعض الإعدادات، على سبيل المثال:
-
-1. إنشاء نموذج من فئة الوثيقة
-1. تحميل صورة TIFF الأصلية
-1. الحصول على أبعاد الإطارات
-1. إضافة صفحة جديدة لكل إطار
-1. في النهاية، حفظ الصور في صفحات PDF
-
-يظهر المقتطف الكودي التالي كيفية تحويل صورة TIFF متعددة الصفحات أو متعددة الإطارات إلى PDF باستخدام C#:
-
-```csharp
-public static void TiffToPDF2()
-{
-    // تهيئة وثيقة جديدة
-    Document pdf = new Document();
-
-    // تحميل صورة TIFF إلى التيار
-    Bitmap bitmap = new Bitmap(File.OpenRead(_dataDir+"multipage.tif"));
-    // تحويل TIFF متعدد الصفحات أو متعدد الإطارات إلى PDF
-    FrameDimension dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
-    int frameCount = bitmap.GetFrameCount(dimension);
-
-    // تكرار عبر كل إطار
-    for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        Page page = pdf.Pages.Add();
-
-        bitmap.SelectActiveFrame(dimension, frameIdx);
-
-        MemoryStream currentImage = new MemoryStream();
-        bitmap.Save(currentImage, ImageFormat.Tiff);
-
-        Aspose.Pdf.Image imageht = new Aspose.Pdf.Image
-        {
-            ImageStream = currentImage,
-            // تطبيق بعض الخيارات الأخرى
-            // ImageScale = 0.5
-        };
-        page.Paragraphs.Add(imageht);
+        document.Pages.Add();
+        var image = new Aspose.Pdf.Image();
+        
+        // Load sample Tiff image file
+        image.File = dataDir + "TIFFtoPDF.tiff";
+        document.Pages[1].Paragraphs.Add(image);
+        
+        // Save PDF document
+        document.Save(dataDir + "TIFFtoPDF_out.pdf");
     }
-
-    // حفظ ملف PDF الناتج
-    pdf.Save(_dataDir + "TifftoPDF.pdf");
 }
 ```
+
+في حال كنت بحاجة إلى تحويل صورة TIFF متعددة الصفحات إلى مستند PDF متعدد الصفحات والتحكم في بعض المعلمات، مثل العرض أو نسبة العرض إلى الارتفاع، يرجى اتباع الخطوات التالية:
+
+1. قم بإنشاء مثيل من فئة Document.
+1. قم بتحميل صورة TIFF المدخلة.
+1. احصل على FrameDimension للإطارات.
+1. أضف صفحة جديدة لكل إطار.
+1. أخيرًا، احفظ الصور في صفحات PDF.
+
+يظهر مقتطف الشيفرة التالي كيفية تحويل صورة TIFF متعددة الصفحات أو متعددة الإطارات إلى PDF باستخدام C#:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertTIFFtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        using (var bitmap = new System.Drawing.Bitmap(File.OpenRead(dataDir + "TIFFtoPDF.tif")))
+        {
+            // Convert multi page or multi frame TIFF to PDF
+            var dimension = new FrameDimension(bitmap.FrameDimensionsList[0]);
+            var frameCount = bitmap.GetFrameCount(dimension);
+
+            // Iterate through each frame
+            for (int frameIdx = 0; frameIdx <= frameCount - 1; frameIdx++)
+            {
+                var page = document.Pages.Add();
+
+                bitmap.SelectActiveFrame(dimension, frameIdx);
+
+                using (var currentImage = new MemoryStream())
+                {
+                    bitmap.Save(currentImage, ImageFormat.Tiff);
+
+                    var imageht = new Aspose.Pdf.Image
+                    {
+                        ImageStream = currentImage,
+                        //Apply some other options
+                        //ImageScale = 0.5
+                    };
+                    page.Paragraphs.Add(imageht);
+                }
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TIFFtoPDF_out.pdf");
+    }
+}
+```
+
+## تحويل CDR إلى PDF
+
+<abbr title="CDR">CDR</abbr> هو تنسيق ملف تم تطويره بواسطة شركة Corel ويستخدم بشكل رئيسي للصور والرسومات المتجهة. يتم التعرف على تنسيق ملف CDR من قبل معظم برامج تحرير الصور. يعد تنسيق CDR هو التنسيق الافتراضي لتطبيقات Corel Draw.
+
+تحقق من مقتطف الشيفرة التالي لتحويل ملفات CDR إلى تنسيق PDF.
+
+<a name="csharp-cdr-to-pdf" id="csharp-cdr-to-pdf"><strong>الخطوات: تحويل CDR إلى PDF في C#</strong></a>
+
+1. أنشئ مثيلًا من فئة [CdrLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/cdrloadoptions/) .
+2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+3. احفظ المستند بالاسم المطلوب.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertCDRtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open CDR file
+    using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.cdr", new CdrLoadOptions()))
+    {
+        // Save PDF document
+        document.Save(dataDir + "CDRtoPDF_out.pdf");
+    }
+}
+```
+
+## تحويل DJVU إلى PDF
+
+<abbr title="DJVU">DjVu</abbr> هو تنسيق صورة مضغوط تم تطويره بواسطة LizardTech. تم تصميم هذا التنسيق بشكل أساسي لتخزين أنواع مختلفة من المستندات الممسوحة ضوئيًا؛ خاصة المستندات التي تحتوي على مزيج من النصوص والصور والصور الملونة المفهرسة والرسومات الخطية.
+
+تحقق من مقتطف الشيفرة التالي لتحويل ملفات DJVU إلى تنسيق PDF.
+
+<a name="csharp-djvu-to-pdf" id="csharp-djvu-to-pdf"><strong>الخطوات: تحويل DJVU إلى PDF في C#</strong></a>
+
+1. أنشئ مثيلًا من فئة [DjvuLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/djvuloadoptions/) .
+2. أنشئ مثيلًا من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ذكر اسم الملف المصدر والخيارات.
+3. احفظ المستند بالاسم المطلوب.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertDJVUtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+    
+    // Open DJVU file
+    using (var document = new Aspose.Pdf.Document(dataDir + "CDRtoPDF.djvu", new DjvuLoadOptions()))
+    {
+        // Save PDF document
+        document.Save(dataDir + "CDRtoPDF_out.pdf");
+    }
+}
+```
+
+## تحويل HEIC إلى PDF
+
+ملف HEIC هو تنسيق ملف صورة حاوية عالية الكفاءة يمكن أن يخزن صورًا متعددة كمجموعة في ملف واحد.
+لتحميل صور heic، تحتاج إلى إضافة مرجع إلى حزمة nuget https://www.nuget.org/packages/FileFormat.Heic/.
+قم بتحويل صور HEIC إلى PDF باستخدام Aspose.PDF:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertHEICtoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open HEIC file
+    using (var fs = new FileStream(dataDir + "HEICtoPDF.heic", FileMode.Open))
+    {
+        var image = FileFormat.Heic.Decoder.HeicImage.Load(fs);
+        var pixels = image.GetByteArray(PixelFormat.Rgb24);
+        var width = (int)image.Width;
+        var height = (int)image.Height;
+
+        using (var document = new Aspose.Pdf.Document())
+        {
+            var page = document.Pages.Add();
+            var asposeImage = new Aspose.Pdf.Image();
+            asposeImage.BitmapInfo = new Aspose.Pdf.BitmapInfo(pixels, width, height, Aspose.Pdf.BitmapInfo.PixelFormat.Rgb24);
+            page.PageInfo.Height = height;
+            page.PageInfo.Width = width;
+            page.PageInfo.Margin.Bottom = 0;
+            page.PageInfo.Margin.Top = 0;
+            page.PageInfo.Margin.Right = 0;
+            page.PageInfo.Margin.Left = 0;
+
+            page.Paragraphs.Add(asposeImage);
+
+            // Save PDF document
+            document.Save(dataDir + "HEICtoPDF_out.pdf");
+        }
+    }
+}
+```
+
 ## ينطبق على
 
-|**المنصة**|**الدعم**|**التعليقات**|
+|**المنصة**|**مدعوم**|**تعليقات**|
 | :- | :- |:- |
-|ويندوز .NET Framework|2.0-4.6| |
-|ويندوز .NET Core |2.0-3.1| |
-|.NET 5 ويندوز| |
-|لينكس .NET Core|2.0-3.1 | |
-|.NET 5 لينكس | |
+|Windows .NET Framework|2.0-4.6| |
+|Windows .NET Core |2.0-3.1| |
+|.NET 5 Windows| |
+|Linux .NET Core|2.0-3.1 | |
+|.NET 5 Linux | |
 
 ## انظر أيضًا
 
-هذه المقالة تغطي أيضًا هذه الموضوعات. الأكواد هي نفسها كما أعلاه.
+تغطي هذه المقالة أيضًا هذه المواضيع. الشيفرات هي نفسها كما هو مذكور أعلاه.
 
 _التنسيق_: **BMP**
-- [كود C# BMP إلى PDF](#csharp-bmp-to-pdf)
-- [API C# BMP إلى PDF](#csharp-bmp-to-pdf)
-- [برمجياً C# BMP إلى PDF](#csharp-bmp-to-pdf)
-- [مكتبة C# BMP إلى PDF](#csharp-bmp-to-pdf)
-- [حفظ C# BMP كـ PDF](#csharp-bmp-to-pdf)
-- [توليد C# PDF من BMP](#csharp-bmp-to-pdf)
-- [إنشاء C# PDF من BMP](#csharp-bmp-to-pdf)
-- [محول C# BMP إلى PDF](#csharp-bmp-to-pdf)
+- [C# BMP إلى PDF الشيفرة](#csharp-bmp-to-pdf)
+- [C# BMP إلى PDF واجهة برمجة التطبيقات](#csharp-bmp-to-pdf)
+- [C# BMP إلى PDF برمجيًا](#csharp-bmp-to-pdf)
+- [C# BMP إلى PDF مكتبة](#csharp-bmp-to-pdf)
+- [C# حفظ BMP كـ PDF](#csharp-bmp-to-pdf)
+- [C# توليد PDF من BMP](#csharp-bmp-to-pdf)
+- [C# إنشاء PDF من BMP](#csharp-bmp-to-pdf)
+- [C# محول BMP إلى PDF](#csharp-bmp-to-pdf)
 
 _التنسيق_: **CGM**
-- [كود C# CGM إلى PDF](#csharp-cgm-to-pdf)
-- [API C# CGM إلى PDF](#csharp-cgm-to-pdf)
-- [برمجياً C# CGM إلى PDF](#csharp-cgm-to-pdf)
-- [مكتبة C# CGM إلى PDF](#csharp-cgm-to-pdf)
-- [حفظ C# CGM كـ PDF](#csharp-cgm-to-pdf)
-- [توليد C# PDF من CGM](#csharp-cgm-to-pdf)
-- [إنشاء C# PDF من CGM](#csharp-cgm-to-pdf)
-- [محول C# CGM إلى PDF](#csharp-cgm-to-pdf)
-- [محول C# CGM إلى PDF](#csharp-cgm-to-pdf)
+- [C# CGM إلى PDF الشيفرة](#csharp-cgm-to-pdf)
+- [C# CGM إلى PDF واجهة برمجة التطبيقات](#csharp-cgm-to-pdf)
+- [C# CGM إلى PDF برمجيًا](#csharp-cgm-to-pdf)
+- [C# CGM إلى PDF مكتبة](#csharp-cgm-to-pdf)
+- [C# حفظ CGM كـ PDF](#csharp-cgm-to-pdf)
+- [C# توليد PDF من CGM](#csharp-cgm-to-pdf)
+- [C# إنشاء PDF من CGM](#csharp-cgm-to-pdf)
+- [C# محول CGM إلى PDF](#csharp-cgm-to-pdf)
 
 _التنسيق_: **DICOM**
-- [كود C# DICOM إلى PDF](#csharp-dicom-to-pdf)
-- [واجهة برمجة التطبيقات C# DICOM إلى PDF](#csharp-dicom-to-pdf)
-- [برمجياً C# DICOM إلى PDF](#csharp-dicom-to-pdf)
-- [مكتبة C# DICOM إلى PDF](#csharp-dicom-to-pdf)
-- [حفظ C# DICOM كـ PDF](#csharp-dicom-to-pdf)
-- [توليد C# PDF من DICOM](#csharp-dicom-to-pdf)
-- [إنشاء C# PDF من DICOM](#csharp-dicom-to-pdf)
-- [محول C# DICOM إلى PDF](#csharp-dicom-to-pdf)
+- [C# DICOM إلى PDF الشيفرة](#csharp-dicom-to-pdf)
+- [C# DICOM إلى PDF واجهة برمجة التطبيقات](#csharp-dicom-to-pdf)
+- [C# DICOM إلى PDF برمجيًا](#csharp-dicom-to-pdf)
+- [C# DICOM إلى PDF مكتبة](#csharp-dicom-to-pdf)
+- [C# حفظ DICOM كـ PDF](#csharp-dicom-to-pdf)
+- [C# توليد PDF من DICOM](#csharp-dicom-to-pdf)
+- [C# إنشاء PDF من DICOM](#csharp-dicom-to-pdf)
+- [C# محول DICOM إلى PDF](#csharp-dicom-to-pdf)
 
 _التنسيق_: **EMF**
-- [كود C# EMF إلى PDF](#csharp-emf-to-pdf)
-- [واجهة برمجة التطبيقات C# EMF إلى PDF](#csharp-emf-to-pdf)
-- [برمجياً C# EMF إلى PDF](#csharp-emf-to-pdf)
-- [مكتبة C# EMF إلى PDF](#csharp-emf-to-pdf)
-- [حفظ C# EMF كـ PDF](#csharp-emf-to-pdf)
-- [توليد C# PDF من EMF](#csharp-emf-to-pdf)
-- [إنشاء C# PDF من EMF](#csharp-emf-to-pdf)
-- [محول C# EMF إلى PDF](#csharp-emf-to-pdf)
+- [C# EMF إلى PDF الشيفرة](#csharp-emf-to-pdf)
+- [C# EMF إلى PDF واجهة برمجة التطبيقات](#csharp-emf-to-pdf)
+- [C# EMF إلى PDF برمجيًا](#csharp-emf-to-pdf)
+- [C# EMF إلى PDF مكتبة](#csharp-emf-to-pdf)
+- [C# حفظ EMF كـ PDF](#csharp-emf-to-pdf)
+- [C# توليد PDF من EMF](#csharp-emf-to-pdf)
+- [C# إنشاء PDF من EMF](#csharp-emf-to-pdf)
+- [C# محول EMF إلى PDF](#csharp-emf-to-pdf)
+
+_التنسيق_: **DjVu**
+- [C# DjVu إلى PDF الشيفرة](#csharp-djvu-to-pdf)
+- [C# DjVu إلى PDF واجهة برمجة التطبيقات](#csharp-djvu-to-pdf)
+- [C# DjVu إلى PDF برمجيًا](#csharp-djvu-to-pdf)
+- [C# DjVu إلى PDF مكتبة](#csharp-djvu-to-pdf)
+- [C# حفظ DjVu كـ PDF](#csharp-djvu-to-pdf)
+- [C# توليد PDF من DjVu](#csharp-djvu-to-pdf)
+- [C# إنشاء PDF من DjVu](#csharp-djvu-to-pdf)
+- [C# محول DjVu إلى PDF](#csharp-djvu-to-pdf)
+
+_التنسيق_: **CDR**
+- [C# CDR إلى PDF الشيفرة](#csharp-cdr-to-pdf)
+- [C# CDR إلى PDF واجهة برمجة التطبيقات](#csharp-cdr-to-pdf)
+- [C# CDR إلى PDF برمجيًا](#csharp-cdr-to-pdf)
+- [C# CDR إلى PDF مكتبة](#csharp-cdr-to-pdf)
+- [C# حفظ CDR كـ PDF](#csharp-cdr-to-pdf)
+- [C# توليد PDF من CDR](#csharp-cdr-to-pdf)
+- [C# إنشاء PDF من CDR](#csharp-cdr-to-pdf)
+- [C# محول CDR إلى PDF](#csharp-cdr-to-pdf)

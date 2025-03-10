@@ -2,9 +2,11 @@
 title: Bekerja dengan Formulir
 linktitle: Bekerja dengan Formulir
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /id/net/working-with-forms/
-description: Bagian ini menjelaskan bagaimana cara bekerja dengan AcroForms dan Formulir XFA dalam dokumen PDF Anda dengan Aspose.PDF untuk .NET.
+description: Bagian ini menjelaskan cara bekerja dengan AcroForms dan XFA Forms dalam dokumen PDF Anda dengan Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Bekerja dengan Formulir",
-    "alternativeHeadline": "Cara bekerja dengan AcroForms dan Formulir XFA",
+    "headline": "Working with Forms",
+    "alternativeHeadline": "Effortlessly Manage AcroForms and XFA in PDFs",
+    "abstract": "Temukan fungsionalitas baru dari Aspose.PDF for .NET, yang memungkinkan interaksi tanpa hambatan dengan AcroForms dan XFA Forms langsung dalam dokumen PDF Anda. Fitur kuat ini menyederhanakan proses pemetaan dan penyelesaian formulir secara programatik, meningkatkan kemampuan manipulasi dokumen untuk pengembang C#. Buka kunci penanganan formulir PDF yang canggih hari ini!",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "penghasilan dokumen pdf",
-    "keywords": "pdf, c#, acroforms, xfa forms",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "AcroForms, XFA Forms, Aspose.PDF, PDF document generation, fill form fields, extract data from form, map PDF fields, programmatically complete PDF, XML presentation forms",
+    "wordcount": "153",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,16 +74,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menjelaskan bagaimana cara bekerja dengan AcroForms dan Formulir XFA dalam dokumen PDF Anda dengan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-25",
+    "description": "Bagian ini menjelaskan cara bekerja dengan AcroForms dan XFA Forms dalam dokumen PDF Anda dengan Aspose.PDF for .NET."
 }
 </script>
 
-Bagian ini menjelaskan pendekatan cepat dan sederhana untuk secara programatis melengkapi dokumen PDF melalui penggunaan Aspose.PDF. Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF untuk .NET untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang ada dengan AcroForms.
+Bagian ini menggambarkan pendekatan cepat dan sederhana untuk menyelesaikan dokumen PDF secara programatik melalui penggunaan Aspose.PDF. Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF for .NET untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang ada dengan AcroForms. 
 Selain itu, Anda akan belajar cara bekerja dengan XFA - teknologi lain untuk formulir presentasi berbasis XML.
 
-- [AcroForms](/pdf/id/net/acroforms/) - membuat formulir, mengisi bidang formulir, mengekstrak data dari formulir, menambah dan menghapus bidang di PDF Anda dengan perpustakaan .NET.
-- [XFA Forms](/pdf/id/net/xfa-forms/) - mengisi bidang XFA, mengonversi XFA, mendapatkan properti bidang XFA.
+- [AcroForms](/pdf/id/net/acroforms/) - buat formulir, isi bidang formulir, ekstrak data dari formulir, tambahkan dan hapus bidang dalam PDF Anda dengan pustaka .NET.
+- [XFA Forms](/pdf/id/net/xfa-forms/) - isi bidang XFA, konversi XFA, dapatkan properti bidang XFA.
 
 <script type="application/ld+json">
 {
@@ -145,5 +148,3 @@ Selain itu, Anda akan belajar cara bekerja dengan XFA - teknologi lain untuk for
     }
 }
 </script>
-
-

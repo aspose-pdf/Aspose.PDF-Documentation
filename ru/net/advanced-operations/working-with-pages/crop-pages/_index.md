@@ -1,10 +1,12 @@
 ---
-title: Обрезка страниц PDF программно на C#
-linktitle: Обрезка страниц
+title: Программное кадрирование страниц PDF на C#
+linktitle: Кадрирование страниц
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ru/net/crop-pages/
-description: Вы можете получить свойства страницы, такие как ширина, высота, поля обрезки и области обрезки с помощью Aspose.PDF для .NET.
+description: Можно получить свойства страницы, такие как ширина, высота, область для обрезки, а также область для полей и область обрезки, используя Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Обрезка страниц PDF программно на C#",
-    "alternativeHeadline": "Как обрезать страницы PDF в .NET",
+    "headline": "Crop PDF Pages programmatically C#",
+    "alternativeHeadline": "Crop PDF Pages Easily with Aspose.PDF for .NET",
+    "abstract": "Aspose.PDF для .NET представляет новую мощную функцию, которая позволяет разработчикам программно получать доступ к различным свойствам страницы PDF-файла и управлять ими, включая область содержимого, область обрезки, область под обрез, область иллюстраций и область обрезки. Эта функция упрощает процесс настройки макетов PDF-файлов, обеспечивая точность представления документов и улучшая качество печати при минимальном количестве белых полей. С помощью простых в использовании фрагментов кода пользователи могут легко интегрировать эти возможности в свои приложения, улучшая управление PDF-файлами и их обработку.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, обрезка страниц pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "wordcount": "494",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,52 +73,57 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/crop-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Вы можете получить свойства страницы, такие как ширина, высота, поля обрезки и области обрезки с помощью Aspose.PDF для .NET."
+    "dateModified": "2024-11-26",
+    "description": "Вы можете получить свойства страницы, такие как ширина, высота, поля обрезки и область обрезки, используя Aspose.PDF для .NET"
 }
 </script>
+
 ## Получение свойств страницы
 
-Каждая страница в файле PDF имеет ряд свойств, таких как ширина, высота, поля для обрезки, поля для кадрирования и поля для обрезки окончательного размера. Aspose.PDF позволяет получить доступ к этим свойствам.
+Каждая страница в PDF-файле имеет ряд свойств, таких как ширина, высота, область для обрезки и область для полей. Aspose.PDF позволяет получить доступ к этим свойствам.
 
-- **Media box**: Media box — это самая большая область страницы. Она соответствует размеру страницы (например, A4, A5, US Letter и т.д.), выбранному при печати документа в PostScript или PDF. Другими словами, media box определяет физический размер носителя, на котором отображается или печатается документ PDF.
-- **Bleed box**: Если документ содержит поле для обрезки, в PDF также будет bleed box. Поле для обрезки — это количество цвета (или изображения), выходящее за край страницы. Оно используется для того, чтобы убедиться, что когда документ печатается и обрезается до нужного размера ("подрезается"), краска доходит до края страницы. Даже если страница подрезана немного не по меткам обреза - на странице не появятся белые края.
-- **Trim box**: Trim box указывает окончательный размер документа после печати и обрезки.
-- **Art box**: Art box — это область, нарисованная вокруг фактического содержимого страниц в ваших документах.
-- **Art box**: Art box - это рамка, нарисованная вокруг фактического содержимого страниц в ваших документах.
-- **Crop box**: Crop box - это размер "страницы", в котором ваш PDF-документ отображается в Adobe Acrobat. В обычном режиме в Adobe Acrobat отображается только содержимое crop box. Для подробного описания этих свойств читайте спецификацию Adobe.Pdf, особенно 10.10.1 Границы страниц.
-- **Page.Rect**: пересечение (обычно видимый прямоугольник) MediaBox и DropBox. Ниже приведена иллюстрация этих свойств.
-Для получения дополнительной информации, пожалуйста, посетите [эту страницу](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
+- **Область для печати**: Область для печати является самой большой областью страницы. Она соответствует размеру страницы (например, A4, A5, US Letter и т. д.), выбранному при печати документа на PostScript или PDF. Другими словами, область для печати определяет физический размер носителя, на котором отображается или печатается PDF-документ.
+- **Область для полей**: Если в документе есть поля, то в PDF также будет область для полей. Поля — это количество цвета (или изображения), которое выходит за край страницы. Они используются для того, чтобы при печати и обрезке документа («обрезке») чернила доходили до самого края страницы. Даже если страница обрезана неправильно — обрезана немного не по меткам — на странице не появятся белые поля.
+- **Область обрезки**: Область обрезки указывает окончательный размер документа после печати и обрезки.
+- **Область изображения**: Область изображения — это область, обведённая вокруг фактического содержимого страниц в ваших документах. Эта область страницы используется при импорте PDF-документов в другие приложения.
+- **Область кадрирования**: Область кадрирования — это размер «страницы», который отображается в Adobe Acrobat. В обычном режиме в Adobe Acrobat отображается только содержимое области кадрирования. Для получения подробных описаний этих свойств ознакомьтесь со спецификацией Adobe.Pdf, особенно с разделом 10.10.1 Границы страницы.
+- **Page.Rect**: пересечение (обычно видимый прямоугольник) области для печати и области для полей. На рисунке ниже проиллюстрированы эти свойства.
+Для получения более подробной информации посетите [эту страницу](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-Ниже приведен код, также работающий с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Ниже приведен пример кода, показывающий, как обрезать страницу:
+Приведённый ниже фрагмент показывает, как обрезать страницу:
 
 ```csharp
-public static void CropPagesPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CropPage()
 {
-    var pdfDocument1 = new Aspose.Pdf.Document("crop_page.pdf");
-    Console.WriteLine(pdfDocument1.Pages[1].CropBox);
-    Console.WriteLine(pdfDocument1.Pages[1].TrimBox);
-    Console.WriteLine(pdfDocument1.Pages[1].ArtBox);
-    Console.WriteLine(pdfDocument1.Pages[1].BleedBox);
-    Console.WriteLine(pdfDocument1.Pages[1].MediaBox);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-    // Создать новый прямоугольник Box
-    var newBox = new Rectangle(200, 220, 2170, 1520);
-    pdfDocument1.Pages[1].CropBox = newBox;
-    pdfDocument1.Pages[1].TrimBox = newBox;
-    pdfDocument1.Pages[1].ArtBox = newBox;
-    pdfDocument1.Pages[1].BleedBox = newBox;
-   
-    pdfDocument1.Save("crop_page_modified.pdf");           
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CropPageInput.pdf"))
+    {
+        Console.WriteLine(document.Pages[1].CropBox);
+        Console.WriteLine(document.Pages[1].TrimBox);
+        Console.WriteLine(document.Pages[1].ArtBox);
+        Console.WriteLine(document.Pages[1].BleedBox);
+        Console.WriteLine(document.Pages[1].MediaBox);
+        // Create new Box rectangle
+        var newBox = new Rectangle(200, 220, 2170, 1520);
+        document.Pages[1].CropBox = newBox;
+        document.Pages[1].TrimBox = newBox;
+        document.Pages[1].ArtBox = newBox;
+        document.Pages[1].BleedBox = newBox;
+        // Save PDF document
+        document.Save(dataDir + "CropPage_out.pdf");  
+    }
 }
 ```
-В этом примере мы использовали образец файла [здесь](crop_page.pdf). Изначально наша страница выглядит как показано на Рисунке 1.
-![Рисунок 1. Обрезанная страница](crop_page.png)
 
-После изменения страница будет выглядеть как Рисунок 2.
-![Рисунок 2. Обрезанная страница](crop_page2.png)
+В этом примере мы использовали образец файла [здесь](crop_page.pdf). Изначально наша страница выглядит так, как показано на рисунке 1.
+
+После изменения страница будет выглядеть как на рисунке 2.
 
 <script type="application/ld+json">
 {
@@ -181,4 +188,3 @@ public static void CropPagesPDF()
     }
 }
 </script>
-

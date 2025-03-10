@@ -1,168 +1,245 @@
 ---
-title: Tambahkan Cap Halaman PDF
+title: Tambahkan Stempel Halaman PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/add-pdf-page-stamp/
-description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan Kelas PdfFileStamp.
+description: Temukan cara menambahkan stempel ke halaman PDF di .NET, termasuk teks dan gambar, untuk watermarking atau branding menggunakan Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add PDF Page Stamp",
+    "alternativeHeadline": "Enhance PDFs with Custom Stamps and Page Numbers",
+    "abstract": "Memperkenalkan fitur Stempel Halaman PDF yang memungkinkan pengguna untuk dengan mudah menambahkan stempel kustom pada semua atau halaman tertentu dari dokumen PDF menggunakan kelas PdfFileStamp. Fungsionalitas ini meningkatkan personalisasi dokumen dengan memungkinkan berbagai atribut seperti rotasi, latar belakang, dan gaya penomoran kustom untuk stempel halaman, menjadikan file PDF Anda tidak hanya unik tetapi juga terlihat profesional.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1309",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-pdf-page-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-pdf-page-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF tidak hanya dapat melakukan tugas sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
-## Tambahkan Cap Halaman PDF pada Semua Halaman di File PDF
+## Tambahkan Stempel Halaman PDF di Semua Halaman dalam File PDF
 
-Kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) memungkinkan Anda menambahkan cap halaman PDF pada semua halaman dari file PDF. Untuk menambahkan stempel halaman PDF, pertama-tama Anda perlu membuat objek dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dan [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Anda juga perlu membuat stempel halaman PDF menggunakan metode [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dari kelas [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Anda dapat mengatur atribut lain seperti asal, rotasi, latar belakang, dll. menggunakan objek [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) juga. Kemudian Anda dapat menambahkan stempel dalam file PDF menggunakan metode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Terakhir, simpan file PDF keluaran menggunakan metode [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan stempel halaman PDF pada semua halaman dalam file PDF.
+Kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) memungkinkan Anda untuk menambahkan stempel halaman PDF di semua halaman file PDF. Untuk menambahkan stempel halaman PDF, Anda pertama-tama perlu membuat objek dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dan [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Anda juga perlu membuat stempel halaman PDF menggunakan metode [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dari kelas [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Anda dapat mengatur atribut lain seperti asal, rotasi, latar belakang, dll. menggunakan objek [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) juga. Kemudian Anda dapat menambahkan stempel ke dalam file PDF menggunakan metode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Terakhir, simpan file PDF keluaran menggunakan metode [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Potongan kode berikut menunjukkan kepada Anda cara menambahkan stempel halaman PDF di semua halaman dalam file PDF.
 
 ```csharp
-public static void AddPageStampOnAllPages()
-        {
-            // Buat objek PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStampOnAllPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Buka Dokumen
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-            // Buat stempel
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
+        stamp.BindPdf(dataDir + "AddPageStampOnAllPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // Tambahkan stempel ke file PDF
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Simpan file PDF yang diperbarui
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
-
-            // Tutup fileStamp
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "PageStampOnAllPages_out.pdf");
+    }
+}
 ```
-## Tambahkan Stempel Halaman PDF pada Halaman Tertentu dalam File PDF
 
-Kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) memungkinkan Anda untuk menambahkan stempel halaman PDF pada halaman tertentu dari file PDF. 
-Untuk menambahkan stempel halaman PDF, Anda pertama-tama perlu membuat objek dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dan [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp).
-``` 
-Anda juga perlu membuat cap halaman PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) dari kelas [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp).
-``` You can set other attributes like origin, rotation, background etc.  
-Anda dapat mengatur atribut lain seperti asal, rotasi, latar belakang dll. 
-menggunakan objek [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) juga.
-``` As Anda ingin menambahkan cap halaman PDF pada halaman tertentu dari file PDF, Anda juga perlu mengatur properti [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) dari kelas [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Properti ini memerlukan array integer yang berisi nomor halaman yang ingin Anda tambahkan capnya. Kemudian Anda dapat menambahkan cap pada file PDF menggunakan metode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Terakhir, simpan file PDF keluaran menggunakan metode [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan cap halaman PDF pada halaman tertentu dalam file PDF.
+## Tambahkan Stempel Halaman PDF di Halaman Tertentu dalam File PDF
+
+Kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) memungkinkan Anda untuk menambahkan stempel halaman PDF di halaman tertentu dari file PDF. Untuk menambahkan stempel halaman PDF, Anda pertama-tama perlu membuat objek dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) dan [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Anda juga perlu membuat stempel halaman PDF menggunakan metode [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) dari kelas [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Anda dapat mengatur atribut lain seperti asal, rotasi, latar belakang, dll. menggunakan objek [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) juga. Karena Anda ingin menambahkan stempel halaman PDF di halaman tertentu dari file PDF, Anda juga perlu mengatur properti [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) dari kelas [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Properti ini memerlukan array integer yang berisi nomor halaman di mana Anda ingin menambahkan stempel. Kemudian Anda dapat menambahkan stempel ke dalam file PDF menggunakan metode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Terakhir, simpan file PDF keluaran menggunakan metode [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Potongan kode berikut menunjukkan kepada Anda cara menambahkan stempel halaman PDF di halaman tertentu dalam file PDF.
 
 ```csharp
-public static void AddPageStampOnCertainPages()
-        {
-            // Buat objek PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStampOnCertainPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Buka Dokumen
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "SourcePDF.pdf");
 
-            // Buat cap
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindPdf(_dataDir + "pagestamp.pdf", 1);
-            stamp.SetOrigin(20, 20);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
-            stamp.Pages = new[] { 1, 3 };
-            // Tambahkan cap ke file PDF
-            fileStamp.AddStamp(stamp);
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        // Bind PDF document
+        stamp.BindPdf(dataDir + "PageStampOnCertainPages.pdf", 1);
+        stamp.SetOrigin(20, 20);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
+        stamp.Pages = new[] { 1, 3 };  // Apply stamp to specific pages (1 and 3)
 
-            // Simpan file PDF yang diperbarui
-            fileStamp.Save(_dataDir + "PageStampOnAllPages.pdf");
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Tutup fileStamp
-            fileStamp.Close();
-        }
-
-        // Tambahkan Nomor Halaman PDF
-        public enum PageNumPosition
-        {
-            PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "PageStampOnCertainPages_out.pdf");
+    }
+}
 ```
+
 ## Tambahkan Nomor Halaman dalam File PDF
 
-Kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) memungkinkan Anda menambahkan nomor halaman dalam file PDF. ```
-Untuk menambahkan nomor halaman, Anda perlu terlebih dahulu membuat objek dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp).
-``` If you want to show page number like “Page X of N” while X being the current page number and N the total number of pages in the PDF file then you first need to get the page count using [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) property of [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo) class.
-
-Jika Anda ingin menampilkan nomor halaman seperti "Halaman X dari N" di mana X adalah nomor halaman saat ini dan N adalah jumlah total halaman dalam file PDF, maka Anda perlu mendapatkan jumlah halaman menggunakan properti [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) dari kelas [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). Untuk mendapatkan nomor halaman saat ini, Anda dapat menggunakan tanda **#** di teks Anda di mana saja Anda suka. Anda dapat memformat teks nomor halaman menggunakan kelas [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Jika Anda ingin memulai penomoran halaman dari nomor tertentu, Anda dapat mengatur properti [StartingNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/properties/startingnumber). Setelah Anda siap untuk menambahkan nomor halaman ke dalam file, Anda perlu memanggil metode [AddPageNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addpagenumber/methods/7) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp). Akhirnya, simpan file PDF keluaran menggunakan metode [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp). Kode berikut menunjukkan kepada Anda cara menambahkan nomor halaman dalam file PDF.
+Kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) memungkinkan Anda untuk menambahkan nomor halaman dalam file PDF. Untuk menambahkan nomor halaman, Anda pertama-tama perlu membuat objek dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Jika Anda ingin menampilkan nomor halaman seperti “Halaman X dari N” di mana X adalah nomor halaman saat ini dan N adalah total jumlah halaman dalam file PDF, maka Anda pertama-tama perlu mendapatkan jumlah halaman menggunakan properti [NumberOfpages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo/properties/numberofpages) dari kelas [PdfFileInfo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileinfo). Untuk mendapatkan nomor halaman saat ini, Anda dapat menggunakan tanda **#** di teks Anda di mana saja Anda suka. Anda dapat memformat teks nomor halaman menggunakan kelas [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). Jika Anda ingin memulai penomoran halaman dari nomor tertentu, maka Anda dapat mengatur properti [StartingNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/properties/startingnumber). Setelah Anda siap untuk menambahkan nomor halaman dalam file, Anda perlu memanggil metode [AddPageNumber](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilestamp/addpagenumber/methods/7) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Terakhir, simpan file PDF keluaran menggunakan metode [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) dari kelas [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Potongan kode berikut menunjukkan kepada Anda cara menambahkan nomor halaman dalam file PDF.
 
 ```csharp
- public static void AddPageNumberInPdfFile()
-        {
-            // Membuat objek PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageNumberInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Buka Dokumen
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-            // Dapatkan total jumlah halaman
-            int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-            // Membuat teks yang diformat untuk nomor halaman
-            FormattedText formattedText = new FormattedText($"Halaman # dari {totalPages}",
-                System.Drawing.Color.AntiqueWhite,
-                System.Drawing.Color.Gray,
-                FontStyle.TimesBoldItalic,
-                EncodingType.Winansi, false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            false, 12);
 
-            // Tetapkan nomor awal untuk halaman pertama; Anda mungkin ingin memulai dari 2 atau lebih
-            fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-            // Tambahkan nomor halaman
-            fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddPageNumber_out.pdf");
+    }
+}
 
-            // Simpan file PDF yang diperbarui
-            fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
-
-            // Tutup fileStamp
-            fileStamp.Close();
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```
+
 ### Gaya Penomoran Kustom
 
-Kelas PdfFileStamp menawarkan fitur untuk menambahkan informasi Nomor Halaman sebagai objek stempel di dalam dokumen PDF. Sebelum rilis ini, kelas hanya mendukung 1,2,3,4 sebagai gaya penomoran halaman. Namun, ada permintaan dari beberapa pelanggan untuk menggunakan gaya penomoran kustom saat menempatkan stempel nomor halaman di dalam dokumen PDF. Untuk memenuhi persyaratan ini, properti [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) telah diperkenalkan, yang menerima nilai dari enumerasi [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle). Di bawah ini adalah nilai-nilai yang ditawarkan dalam enumerasi ini.
+Kelas PdfFileStamp menawarkan fitur untuk menambahkan informasi Nomor Halaman sebagai objek stempel di dalam dokumen PDF. Sebelum rilis ini, kelas hanya mendukung gaya penomoran halaman 1,2,3,4. Namun, ada permintaan dari beberapa pelanggan untuk menggunakan gaya penomoran kustom saat menempatkan stempel nomor halaman di dalam dokumen PDF. Untuk memenuhi permintaan ini, properti [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle) telah diperkenalkan, yang menerima nilai dari enumerasi [NumberingStyle](https://reference.aspose.com/pdf/net/aspose.pdf/numberingstyle). Nilai yang ditentukan di bawah ini adalah nilai yang ditawarkan dalam enumerasi ini.
 
-- LettersLowercase
-- LettersUppercase
-- NumeralsArabic
-- NumeralsRomanLowercase
-- NumeralsRomanUppercase
+- HurufKecil.
+- HurufBesar.
+- AngkaArab.
+- AngkaRomawiKecil.
+- AngkaRomawiBesar.
 
 ```csharp
- public static void AddCustomPageNumberInPdfFile()
-        {
-            // Buat objek PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddCustomPageNumberInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Buka Dokumen
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "StampPDF.pdf");
 
-            // Dapatkan jumlah total halaman
-            int totalPages = new PdfFileInfo(_dataDir + "sample.pdf").NumberOfPages;
+        // Get total number of pages
+        int totalPages = new Aspose.Pdf.Facades.PdfFileInfo(dataDir + "StampPDF.pdf").NumberOfPages;
 
-            // Buat teks yang diformat untuk nomor halaman
-            FormattedText formattedText = new FormattedText($"Page # of {totalPages}",
-                System.Drawing.Color.AntiqueWhite,
-                System.Drawing.Color.Gray,
-                FontStyle.TimesBoldItalic,
-                EncodingType.Winansi, false, 12);
+        // Create formatted text for page number
+        var formattedText = new Aspose.Pdf.Facades.FormattedText($"Page # of {totalPages}",
+            System.Drawing.Color.AntiqueWhite,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.TimesBoldItalic,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            false, 12);
 
-            // Tentukan gaya penomoran sebagai Numerals Roman UpperCase
-            fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
+        // Specify numbering style as Numerals Roman UpperCase
+        fileStamp.NumberingStyle = Aspose.Pdf.NumberingStyle.NumeralsRomanUppercase;
 
-            // Tetapkan nomor awal untuk halaman pertama; Anda mungkin ingin memulai dari 2 atau lebih
-            fileStamp.StartingNumber = 1;
+        // Set starting number for first page; you might want to start from 2 or more
+        fileStamp.StartingNumber = 1;
 
-            // Tambahkan nomor halaman
-            fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
+        // Add page number in upper right corner
+        fileStamp.AddPageNumber(formattedText, (int)PageNumPosition.PosUpperRight);
 
-            // Simpan file PDF yang diperbarui
-            fileStamp.Save(_dataDir + "AddPageNumber_out.pdf");
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddCustomPageNumber_out.pdf");
+    }
+}
 
-            // Tutup fileStamp
-            fileStamp.Close();
-        }
+// Add PDF Page Numbers
+public enum PageNumPosition
+{
+    PosBottomMiddle, PosBottomRight, PosUpperRight, PosSidesRight, PosUpperMiddle, PosBottomLeft, PosSidesLeft, PosUpperLeft
+}
 ```

@@ -1,10 +1,12 @@
 ---
-title: Добавление номера страницы в PDF с помощью C#
+title: Добавление номера страницы в PDF
 linktitle: Добавить номер страницы
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /ru/net/add-page-number/
-description: Aspose.PDF для .NET позволяет добавлять штамп с номером страницы в ваш PDF-файл с использованием класса PageNumber Stamp.
+description: Aspose.PDF for .NET позволяет добавлять штамп с номерами страниц в ваш PDF-файл с помощью класса PageNumber Stamp.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Добавление номера страницы в PDF с помощью C#",
-    "alternativeHeadline": "Как добавить штамп с номером страницы в PDF",
+    "headline": "Add Page Number to PDF",
+    "alternativeHeadline": "Add Dynamic Page Numbering to PDF",
+    "abstract": "Aspose.PDF для .NET представляет функцию «Печать номера страницы», которая позволяет легко добавлять номера страниц в PDF-документы. Эта функция улучшает навигацию и организацию документов, позволяя пользователям настраивать формат, выравнивание и стиль для лучшей читаемости и профессионального оформления.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, штамп с номером страницы",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Add Page Number, PDF Stamp, Aspose.PDF for .NET, PageNumberStamp class, Document object, PageNumberStamp properties, Bates numbering, PDF document generation, Page number stamp, C# PDF manipulation",
+    "wordcount": "559",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,73 +74,86 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-page-number/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF для .NET позволяет добавлять штамп с номером страницы в ваш PDF-файл с использованием класса PageNumber Stamp."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF для .NET позволяет добавить штамп с номерами страниц в ваш PDF-файл с помощью класса PageNumber Stamp."
 }
 </script>
 
-Все документы должны иметь номера страниц. Номера страниц облегчают читателю поиск различных частей документа.
-**Aspose.PDF для .NET** позволяет добавлять номера страниц с помощью PageNumberStamp.
+Все документы должны иметь номера страниц. Номер страницы облегчает читателю поиск различных частей документа.
+**Aspose.PDF for .NET** позволяет добавлять номера страниц с помощью PageNumberStamp.
 
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Вы можете использовать класс [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp), чтобы добавить штамп с номером страницы в файл PDF.
-Вы можете использовать класс [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) для добавления штампа с номером страницы в PDF-файл.
+Вы можете использовать класс [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp), чтобы добавить штамп с номером страницы в файл PDF. Класс [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) предоставляет свойства, необходимые для создания штампа на основе номера страницы, такие как формат, поля, выравнивания, начальный номер и т.д. Чтобы добавить штамп номера страницы, вам нужно создать объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и объект [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp), используя необходимые свойства. После этого вы можете вызвать метод [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) объекта [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page), чтобы добавить штамп в PDF. Вы также можете установить атрибуты шрифта штампа номера страницы. Следующий фрагмент кода показывает, как добавлять номера страниц в файл PDF.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageNumberToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir+ "PageNumberStamp.pdf");
-
-// Создать штамп с номером страницы
-PageNumberStamp pageNumberStamp = new PageNumberStamp();
-// Является ли штамп фоновым
-pageNumberStamp.Background = false;
-pageNumberStamp.Format = "Страница # из " + pdfDocument.Pages.Count;
-pageNumberStamp.BottomMargin = 10;
-pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
-pageNumberStamp.StartingNumber = 1;
-// Установить свойства текста
-pageNumberStamp.TextState.Font = FontRepository.FindFont("Arial");
-pageNumberStamp.TextState.FontSize = 14.0F;
-pageNumberStamp.TextState.FontStyle = FontStyles.Bold;
-pageNumberStamp.TextState.FontStyle = FontStyles.Italic;
-pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
-
-// Добавить штамп на определённую страницу
-pdfDocument.Pages[1].AddStamp(pageNumberStamp);
-
-dataDir = dataDir + "PageNumberStamp_out.pdf";
-// Сохранить выходной документ
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PageNumberStamp.pdf"))
+    {
+        // Create page number stamp
+        var pageNumberStamp = new Aspose.Pdf.PageNumberStamp();
+        // Whether the stamp is background
+        pageNumberStamp.Background = false;
+        pageNumberStamp.Format = "Page # of " + document.Pages.Count;
+        pageNumberStamp.BottomMargin = 10;
+        pageNumberStamp.HorizontalAlignment = HorizontalAlignment.Center;
+        pageNumberStamp.StartingNumber = 1;
+        // Set text properties
+        pageNumberStamp.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        pageNumberStamp.TextState.FontSize = 14.0F;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        pageNumberStamp.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Italic;
+        pageNumberStamp.TextState.ForegroundColor = Color.Aqua;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(pageNumberStamp);
+        // Save PDF document
+        document.Save(dataDir + "PageNumberStamp_out.pdf");  
+    }
+}
 ```
-## Пример вживую
 
-[Добавление номеров страниц в PDF](https://products.aspose.app/pdf/page-number) - это бесплатное онлайн-приложение, которое позволяет изучить функциональность добавления номеров страниц.
+## Живой пример
 
-[![Как добавить номер страницы в pdf с использованием C#](page_number.png)](https://products.aspose.app/pdf/page-number)
+[Добавить номера страниц PDF](https://products.aspose.app/pdf/page-number) — это бесплатное онлайн-приложение, которое позволяет вам понять, как работает функция добавления номеров страниц.
 
-## Добавление/Удаление нумерации Бейтса
+[![Как добавить номер страницы в pdf с помощью C#](page_number.png)](https://products.aspose.app/pdf/page-number)
 
-**Нумерация Бейтса** (также известная как штамповка Бейтса) используется в юридической, медицинской и бизнес-сферах для размещения идентификационных номеров и/или отметок даты/времени на изображениях и документах во время их сканирования или обработки, например, на стадии подготовки к судебному разбирательству или идентификации бизнес-квитанций. Этот процесс обеспечивает идентификацию, защиту и автоматическую последовательную нумерацию изображений или документов.
+## Добавление/удаление нумерации Бейтса
 
-В настоящее время Aspose.PDF имеет ограниченную поддержку нумерации Бейтса. Эта функциональность будет обновлена согласно запросам клиентов.
+**Нумерация Бейтса** (также известная как штамповка Бейтса) используется в юридической, медицинской и деловой сферах для размещения идентификационных номеров и/или отметок даты и времени на изображениях и документах при их сканировании или обработке, например, на этапе подготовки к судебному разбирательству или при идентификации деловых квитанций. Этот процесс обеспечивает идентификацию, защиту и автоматическую последовательную нумерацию изображений или документов.
+
+Aspose.PDF имеет ограниченную поддержку нумерации Бейтса на данный момент. Эта функциональность будет обновлена в соответствии с запросами клиентов.
 
 ### Как удалить нумерацию Бейтса
 
 ```csharp
-static void Demo03()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveBatesNumbering()
 {
-    Document doc = new Document(@"C:\Samples\Sample-Document03.pdf");
-    foreach (var page in doc.Pages)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveBatesNumberingInput.pdf"))
     {
-        var batesNum = page.Artifacts.First(ar => ar.CustomSubtype == "BatesN");
-        page.Artifacts.Delete(batesNum);
+        foreach (var page in document.Pages)
+        {
+            // Remove bates numbering
+            var artifacts = page.Artifacts.Where(ar => ar.CustomSubtype == "BatesN");
+            foreach (var artifact in artifacts)
+            {
+                page.Artifacts.Delete(artifact);   
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "RemoveBatesNumbering_out.pdf");
     }
-    doc.Save(@"C:\Samples\Sample-Document04.pdf");
 }
 ```
 
@@ -145,7 +161,7 @@ static void Demo03()
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET библиотеки",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -167,23 +183,23 @@ static void Demo03()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -192,7 +208,7 @@ static void Demo03()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипулирования PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -204,5 +220,3 @@ static void Demo03()
     }
 }
 </script>
-```
-

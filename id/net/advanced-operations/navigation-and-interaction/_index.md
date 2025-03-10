@@ -1,10 +1,12 @@
 ---
-title: Navigasi dan Interaksi dalam PDF
+title: Navigasi dan Interaksi di PDF
 linktitle: Navigasi dan interaksi
 type: docs
-weight: 90
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 140
 url: /id/net/navigation-and-interaction/
-description: Bagian ini menjelaskan fitur kerja dengan tautan, aksi, dan penanda.
+description: Bagian ini menjelaskan fitur kerja dengan tautan, tindakan, dan bookmark.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Navigasi dan Interaksi dalam PDF",
-    "alternativeHeadline": "Tautan, Aksi dan Penanda dalam PDF",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "Temukan kemampuan baru untuk mengelola tautan dalam dokumen PDF secara programatis menggunakan C#. Fitur ini memungkinkan Anda untuk dengan mudah menambahkan tautan halaman internal dan hyperlink situs web eksternal, meningkatkan navigasi dan interaktivitas dalam PDF Anda. Sempurna untuk pengembang yang ingin menyederhanakan proses manajemen PDF mereka!",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, tautan, aksi, penanda dalam pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,14 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/navigation-and-interaction/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menjelaskan fitur kerja dengan tautan, aksi, dan penanda."
+    "dateModified": "2024-11-25",
+    "description": "Bagian ini menjelaskan fitur kerja dengan tautan, tindakan, dan bookmark."
 }
 </script>
 
 - [Tautan](/pdf/id/net/links/) - Anda dapat dengan mudah membuat, memperbarui, dan mengekstrak tautan dengan C#.
-- [Aksi](/pdf/id/net/actions/) - memungkinkan untuk menambahkan dan mendapatkan, membuat tautan hiperteks ke file PDF. Selain itu, dalam artikel ini, Anda akan belajar cara menghapus Aksi Buka Dokumen dari file PDF dan cara Menentukan Halaman PDF saat Melihat Dokumen.
-- [Penanda](/pdf/id/net/bookmarks/)- publikasi besar biasanya mencakup kerangka penanda yang dapat dengan mudah dilihat dan dipilih di Panel Penanda, memungkinkan Anda mengklik penanda untuk melompat ke halaman atau bab yang diwakilinya. Panel Penanda adalah elemen yang sadar konten, dan hanya terlihat di bilah samping jika dokumen PDF yang terbuka mengandung struktur penanda.
+- [Tindakan](/pdf/id/net/actions/) - dimungkinkan untuk menambahkan dan mendapatkan, membuat hyperlink ke file PDF. Juga, dalam artikel ini, Anda akan belajar bagaimana menghapus Tindakan Buka Dokumen dari File PDF dan bagaimana Menentukan Halaman PDF saat Melihat Dokumen.
+- [Bookmark](/pdf/id/net/bookmarks/) - publikasi besar biasanya menyertakan kerangka bookmark yang dapat dengan mudah dilihat dan dipilih di Panel Bookmark, memungkinkan Anda untuk mengklik bookmark untuk melompat ke halaman atau bab yang diwakilinya. Panel Bookmark adalah elemen yang sadar konten, dan terlihat di bilah samping hanya jika dokumen PDF yang dibuka mengandung struktur bookmark.
 
 <script type="application/ld+json">
 {
@@ -143,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

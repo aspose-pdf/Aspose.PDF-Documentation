@@ -2,9 +2,11 @@
 title: Adicionar Páginas ao Documento PDF
 linktitle: Adicionar Páginas
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /pt/net/add-pages/
-description: Este artigo ensina como inserir (adicionar) uma página na localização desejada no arquivo PDF. Aprenda como mover, remover (deletar) páginas de um arquivo PDF usando C#.
+description: Explore como adicionar páginas a um PDF existente em .NET com Aspose.PDF para aprimorar e expandir seus documentos.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Adicionar Páginas em PDF com C#",
-    "alternativeHeadline": "Como adicionar Páginas em um documento PDF",
+    "headline": "Add Pages to PDF Document",
+    "alternativeHeadline": "Insert and Manage Pages in PDF Easily with C#",
+    "abstract": "O recurso em Aspose.PDF for .NET permite que os usuários insiram facilmente páginas em um documento PDF em qualquer local especificado, aprimorando a flexibilidade e a organização do documento. Essa funcionalidade não apenas suporta a adição de páginas, mas também inclui opções para mover ou remover páginas existentes usando C#. Simplifique sua gestão de PDF com essa adição intuitiva ao seu kit de ferramentas de desenvolvimento",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, adicionar página pdf, inserir página pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Add Pages to PDF, insert PDF page, empty page PDF, C# PDF manipulation, PDF document generation, PageCollection, Aspose.PDF for .NET, move PDF pages, remove PDF pages, add pages to PDF",
+    "wordcount": "651",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,80 +74,94 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Este artigo ensina como inserir (adicionar) uma página na localização desejada no arquivo PDF. Aprenda como mover, remover (deletar) páginas de um arquivo PDF usando C#."
+    "dateModified": "2024-11-26",
+    "description": "Este artigo ensina como inserir (adicionar) uma página na localização desejada do arquivo PDF. Aprenda como mover, remover (excluir) páginas de um arquivo PDF usando C#."
 }
 </script>
-Aspose.PDF para .NET API oferece total flexibilidade para trabalhar com páginas em um documento PDF usando C# ou qualquer outra linguagem .NET. Ele mantém todas as páginas de um documento PDF em [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) que pode ser usado para trabalhar com páginas PDF.
-Aspose.PDF para .NET permite inserir uma página em um documento PDF em qualquer local do arquivo, bem como adicionar páginas ao final de um arquivo PDF.
+
+Aspose.PDF for .NET API fornece total flexibilidade para trabalhar com páginas em um documento PDF usando C# ou qualquer outra linguagem .NET. Ele mantém todas as páginas de um documento PDF na [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) que pode ser usada para trabalhar com páginas PDF.
+Aspose.PDF for .NET permite que você insira uma página em um documento PDF em qualquer local do arquivo, bem como adicione páginas ao final de um arquivo PDF.
 Esta seção mostra como adicionar páginas a um PDF usando C#.
 
 ## Adicionar ou Inserir Página em um Arquivo PDF
 
-Aspose.PDF para .NET permite inserir uma página em um documento PDF em qualquer local do arquivo, bem como adicionar páginas ao final de um arquivo PDF.
+Aspose.PDF for .NET permite que você insira uma página em um documento PDF em qualquer local do arquivo, bem como adicione páginas ao final de um arquivo PDF.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-### Inserir Página Vazia em um Arquivo PDF no Local Desejado
+### Inserir Página Vazia em um Arquivo PDF na Localização Desejada
 
 Para inserir uma página vazia em um arquivo PDF:
 
 1. Crie um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de entrada.
-1.
+1. Chame o método [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) com o índice especificado.
 1. Salve o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
 O seguinte trecho de código mostra como inserir uma página em um arquivo PDF.
 
 ```cs
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "InsertEmptyPage.pdf");
-
-// Inserir uma página vazia no PDF
-pdfDocument.Pages.Insert(2);
-// Salvar arquivo de saída
-pdfDocument.Save(dataDir + "InsertEmptyPage_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
+    {
+       // Insert an empty page in a PDF
+       document.Pages.Insert(2);
+        // Save PDF document
+       document.Save(dataDir + "InsertEmptyPage_out.pdf");
+    }
+}
 ```
 
-No exemplo acima, adicionamos uma página vazia com parâmetros padrão. Se você precisar fazer com que o tamanho da página seja o mesmo que outra página no documento, você deve adicionar algumas linhas de código:
+No exemplo acima, adicionamos uma página vazia com parâmetros padrão. Se você precisar fazer o tamanho da página igual ao de outra página no documento, deve adicionar
+algumas linhas de código:
 
 ```cs
-var page = pdfDocument.Pages.Insert(2);
-//copiar parâmetros de página da página 1
-page.ArtBox = pdfDocument.Pages[1].ArtBox;
-page.BleedBox = pdfDocument.Pages[1].BleedBox;
-page.CropBox = pdfDocument.Pages[1].CropBox;
-page.MediaBox = pdfDocument.Pages[1].MediaBox;
-page.TrimBox = pdfDocument.Pages[1].TrimBox;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageWithParameters()
+{
+    var page = document.Pages.Insert(2);
+    //copy page parameters from page 1
+    page.ArtBox = document.Pages[1].ArtBox;
+    page.BleedBox = document.Pages[1].BleedBox;
+    page.CropBox = document.Pages[1].CropBox;
+    page.MediaBox = document.Pages[1].MediaBox;
+    page.TrimBox = document.Pages[1].TrimBox;
+}
 ```
+
 ### Adicionar uma Página Vazia ao Final de um Arquivo PDF
 
-Às vezes, você deseja garantir que um documento termine em uma página vazia. Este tópico explica como inserir uma página vazia no final do documento PDF.
+Às vezes, você quer garantir que um documento termine em uma página vazia. Este tópico explica como inserir uma página vazia ao final do documento PDF.
 
-Para inserir uma página vazia no final de um arquivo PDF:
+Para inserir uma página vazia ao final de um arquivo PDF:
 
 1. Crie um objeto da classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) com o arquivo PDF de entrada.
-1. Chame o método [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), sem nenhum parâmetro.
+1. Chame o método [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) da coleção [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection), sem parâmetros.
 1. Salve o PDF de saída usando o método [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-O seguinte trecho de código mostra como inserir uma página vazia no final de um arquivo PDF.
+O seguinte trecho de código mostra como inserir uma página vazia ao final de um arquivo PDF.
 
 ```cs
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "InsertEmptyPageAtEnd.pdf");
-
-// Inserir uma página vazia no final de um arquivo PDF
-pdfDocument.Pages.Add();
-
-// Salvar o arquivo de saída
-pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageAtTheEnd()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))
+    {
+        // Insert an empty page at the end of a PDF file
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -173,21 +190,21 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -198,7 +215,7 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -210,5 +227,3 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
     }
 }
 </script>
-```
-

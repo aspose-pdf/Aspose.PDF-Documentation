@@ -2,6 +2,8 @@
 title: استخدام FloatingBox لتوليد النص
 linktitle: استخدام FloatingBox
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/floating-box/
 description: تشرح هذه الصفحة كيفية تنسيق النص داخل صندوق عائم.
@@ -10,154 +12,289 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Using FloatingBox for text generation",
+    "alternativeHeadline": "FloatingBox Enhances PDF Text Layout Options",
+    "abstract": "تعمل ميزة FloatingBox على تحسين تنسيق نص PDF من خلال السماح للمستخدمين بإدارة موضع النص بدقة، بما في ذلك تخطيطات متعددة الأعمدة وإزاحات قابلة للتعديل. تدعم قص النصوص، وألوان الخلفية، وخيارات لتكرار المحتوى عبر الصفحات، مما يجعلها أداة متعددة الاستخدامات لإنشاء مستندات منظمة وجذابة بصريًا.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "682",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/floating-box/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/floating-box/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
 
-هذه الميزة تعمل أيضًا في مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل هذه الميزة أيضًا في مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## أساسيات استخدام أداة FloatingBox
 
-أداة Floating Box هي أداة خاصة لوضع النصوص والمحتويات الأخرى على صفحة PDF. الميزة الرئيسية لها هي قص النص عندما يتداخل مع حجم الـFloatingBox.
+أداة Floating Box هي أداة خاصة لوضع النص والمحتوى الآخر على صفحة PDF. تتمثل ميزتها الرئيسية في قص النص عندما يتجاوز حجم FloatingBox.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-var box = new FloatingBox(400, 30)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAndAddFloatingBox()
 {
-    Border = new BorderInfo(BorderSide.All, 1.5f, Color.DarkGreen),
-    IsNeedRepeating = false,
-};
-var text = LoremNET.Lorem.Paragraph(20, 6);
-box.Paragraphs.Add(new TextFragment(text));
-page.Paragraphs.Add(box);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+        // Create and fill box
+        var box = new Aspose.Pdf.FloatingBox(400, 30)
+        {
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen),
+            IsNeedRepeating = false,
+        };
+        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example"));
+        // Add box
+        page.Paragraphs.Add(box);
+    }
+}
 ```  
 
-في المثال أعلاه، نحن نقوم بإنشاء FloatingBox بعرض 400 نقطة وارتفاع 30 نقطة.
-أيضًا، في هذا المثال، تم إنشاء نص أكثر مما يمكن أن يتسع في الحجم المحدد.
+في المثال أعلاه، نقوم بإنشاء FloatingBox بعرض 400 نقطة وارتفاع 30 نقطة.
+أيضًا، في هذا المثال، تم إنشاء نص أكثر عمدًا مما يمكن أن يتناسب مع الحجم المحدد.
 نتيجة لذلك، تم قطع النص.
 
-![Image 1](image01.png)
+![صورة 1](image01.png)
 
-خاصية `IsNeedRepeating` بقيمة `false` تحد من النص بصفحة واحدة.
+تحدد خاصية `IsNeedRepeating` بقيمة `false` النص بصفحة واحدة.
 
-إذا قمنا بتعيين هذه الخاصية إلى `true` فسيتم إعادة تدفق النص إلى الصفحة التالية في نفس الموضع.
+إذا قمنا بتعيين هذه الخاصية إلى `true`، سيتم إعادة تدفق النص إلى الصفحة التالية في نفس الموضع.
 
-![Image 2](image02.png)
+![صورة 2](image02.png)
 
-## ميزات متقدمة لـFloatingBox
+## الميزات المتقدمة لـ FloatingBox
 
-### دعم متعدد الأعمدة
+### دعم الأعمدة المتعددة
 
 #### تخطيط متعدد الأعمدة (حالة بسيطة)
 
-`FloatingBox` يدعم تخطيط متعدد الأعمدة. لإنشاء مثل هذا التخطيط، يجب تحديد قيم خصائص ColumnInfo.
+يدعم `FloatingBox` تخطيط الأعمدة المتعددة. لإنشاء مثل هذا التخطيط، يجب عليك تحديد قيم خصائص ColumnInfo.
 
-* `ColumnWidths` هي سلسلة بتعداد العرض بالنقاط.
-* `ColumnSpacing` هي سلسلة بعرض الفجوة بين الأعمدة.
+* `ColumnWidths` هو سلسلة تحتوي على تعداد العرض بالنقاط.
+* `ColumnSpacing` هو سلسلة تحتوي على عرض الفجوة بين الأعمدة.
 * `ColumnCount` هو عدد الأعمدة.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-page.PageInfo.Margin = new MarginInfo(36, 18, 36, 18);
-var columnCount = 3;
-var spacing = 10;
-var width = page.PageInfo.Width 
-    - page.PageInfo.Margin.Left 
-    - page.PageInfo.Margin.Right 
-    - (columnCount - 1) * spacing;
-var columnWidth = width / 3;
-var box = a FloatingBox()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MultiColumnLayout()
 {
-    IsNeedRepeating = true
-};
-box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
-box.ColumnInfo.ColumnSpacing = "{spacing}";
-box.ColumnInfo.ColumnCount = columnCount;
-var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 20);
-foreach (var paragraph in paragraphs)
-{
-    box.Paragraphs.Add(new TextFragment(paragraph));
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Set margin settings
+        page.PageInfo.Margin = new Aspose.Pdf.MarginInfo(36, 18, 36, 18);
+        var columnCount = 3;
+        var spacing = 10;
+        var width = page.PageInfo.Width
+            - page.PageInfo.Margin.Left
+            - page.PageInfo.Margin.Right
+            - (columnCount - 1) * spacing;
+        var columnWidth = width / 3;
+        // Create FloatingBox
+        var box = new Aspose.Pdf.FloatingBox()
+        {
+            IsNeedRepeating = true
+        };
+        box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
+        box.ColumnInfo.ColumnSpacing = $"{spacing}";
+        box.ColumnInfo.ColumnCount = 3;
+
+        var phrase = "text example";
+        var paragraphs = new string[10]
+        {
+            phrase, phrase, phrase, phrase, phrase,
+            phrase, phrase, phrase, phrase, phrase,
+        };
+        foreach (var paragraph in paragraphs)
+        {
+            box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(paragraph));
+        }
+        // Add a box to a page
+        page.Paragraphs.Add(box);
+        // Save PDF document
+        document.Save(dataDir + "MultiColumnLayout_out.pdf");
+    }
 }
-
-page.Paragraphs.Add(box);
-
-document.Save("sample.pdf");
 ```
-لقد استخدمنا مكتبة إضافية تُسمى LoremNET في المثال أعلاه وقمنا بإنشاء 20 فقرة. تم تقسيم هذه الفقرات إلى ثلاثة أعمدة وملأت الصفحات التالية حتى نفد النص.
 
-#### تخطيط متعدد الأعمدة مع بدء العمود الإجباري
+استخدمنا المكتبة الإضافية LoremNET في المثال أعلاه وأنشأنا 20 فقرة. تم تقسيم هذه الفقرات إلى ثلاثة أعمدة وملأت الصفحات التالية حتى نفاد النص.
 
-سنقوم بنفس الأمر في المثال التالي كما في السابق. الفرق هو أننا أنشأنا 3 فقرات. يمكننا إجبار FloatingBox على تقديم كل فقرة في عمود جديد. للقيام بذلك، نحتاج إلى تعيين `IsFirstParagraphInColumn` عند إضافة النص إلى كائن FloatingBox.
+#### تخطيط متعدد الأعمدة مع بدء عمود قسري
+
+سنقوم بنفس الشيء مع المثال التالي كما في السابق. الفرق هو أننا أنشأنا 3 فقرات. يمكننا إجبار FloatingBox على عرض كل فقرة في عمود جديد. للقيام بذلك، نحتاج إلى تعيين `IsFirstParagraphInColumn` عند إضافة نص إلى كائن FloatingBox.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-page.PageInfo.Margin = new MarginInfo(36, 18, 36, 18);
-var columnCount = 3;
-var spacing = 10;
-var width = page.PageInfo.Width 
-    - page.PageInfo.Margin.Left 
-    - page.PageInfo.Margin.Right 
-    - (columnCount - 1) * spacing;
-var columnWidth = width / 3;
-var box = new FloatingBox()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MultiColumnLayout2()
 {
-    IsNeedRepeating = true
-};
-box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
-box.ColumnInfo.ColumnSpacing = "{spacing}";
-box.ColumnInfo.ColumnCount = 3;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tooltip();
 
-var paragraphs = LoremNET.Lorem.Paragraphs(20, 8, 3);
-foreach (var paragraph in paragraphs)
-{
-    var text = new TextFragment(paragraph)
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        IsFirstParagraphInColumn = true
-    };
-    box.Paragraphs.Add(text);
+        // Add page
+        var page = document.Pages.Add();
+        // Set margin settings
+        page.PageInfo.Margin = new Aspose.Pdf.MarginInfo(36, 18, 36, 18);
+        var columnCount = 3;
+        var spacing = 10;
+        var width = page.PageInfo.Width
+            - page.PageInfo.Margin.Left
+            - page.PageInfo.Margin.Right
+            - (columnCount - 1) * spacing;
+        var columnWidth = width / 3;
+        // Create the FloatingBox
+        var box = new Aspose.Pdf.FloatingBox()
+        {
+            IsNeedRepeating = true
+        };
+        box.ColumnInfo.ColumnWidths = $"{columnWidth} {columnWidth} {columnWidth}";
+        box.ColumnInfo.ColumnSpacing = $"{spacing}";
+        box.ColumnInfo.ColumnCount = 3;
+
+        var phrase = "text example";
+        var paragraphs = new string[10]
+        {
+            phrase, phrase, phrase, phrase, phrase,
+            phrase, phrase, phrase, phrase, phrase,
+        };
+        foreach (var paragraph in paragraphs)
+        {
+            var text = new Aspose.Pdf.Text.TextFragment(paragraph)
+            {
+                IsFirstParagraphInColumn = true
+            };
+            box.Paragraphs.Add(text);
+        }
+
+        // Add a box to a page
+        page.Paragraphs.Add(box);
+        // Save PDF document
+        document.Save(dataDir + "MultiColumnLayout2_out.pdf");
+    }
 }
-
-page.Paragraphs.Add(box);
-
-document.Save("sample.pdf");
 ```
+
 ### دعم الخلفية
 
 يمكنك تعيين لون الخلفية المطلوب باستخدام خاصية `BackgroundColor`.
 
 ```cs
-// تهيئة كائن المستند
-Document document = new Document();
-Page page = document.Pages.Add();
-var box = new FloatingBox(400, 60)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void BackgroundSupport()
 {
-    IsNeedRepeating = false,
-    BackgroundColor = Color.LightGreen,
-};
-var text = LoremNET.Lorem.Paragraph(20, 6);
-box.Paragraphs.Add(new TextFragment(text));
-page.Paragraphs.Add(box);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var page = document.Pages.Add();
+        var box = new Aspose.Pdf.FloatingBox(400, 60)
+        {
+            IsNeedRepeating = false,
+            BackgroundColor = Aspose.Pdf.Color.LightGreen,
+        };
+        var text = "text example";
+        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment(text));
+        page.Paragraphs.Add(box);
+    }
+}
 ```
 
-### دعم الإزاحة
+### دعم التمركز
 
-يمكن تحريك FloatingBox إلى موقع آخر بضبط قيم `Top` و `Left`.
+يتم تحديد موقع FloatingBox على الصفحة المولدة بواسطة خصائص `PositioningMode` و `Left` و `Top`.
+عندما تكون قيمة `PositioningMode` هي
+- `ParagraphPositioningMode.Default` (القيمة الافتراضية)
+	يتم تحديد الموقع بواسطة العناصر الموضوعة مسبقًا.
+	يتم أخذ إضافة عنصر في الاعتبار عند تحديد موقع العناصر اللاحقة.
+	إذا كانت قيمة أي من خصائص Left أو Top ليست صفرًا، فسيتم أخذها أيضًا في الاعتبار، ولكن هذا يستخدم منطقًا ليس واضحًا تمامًا ومن الأفضل عدم استخدامه.
+
+- `ParagraphPositioningMode.Absolute`
+	يتم تحديد الموقع بواسطة قيم Left و Top، ولا يعتمد على العناصر السابقة ولا يؤثر على موقع العناصر اللاحقة.
 
 ```cs
-Document document = new Document();
-Page page = document.Pages.Add();
-
-var box = new FloatingBox()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OffsetSupport()
 {
-    Top = -45,
-    Left = 15,
-    Border = new BorderInfo(BorderSide.All, 1.5f, Color.DarkGreen)
-};
-var text = LoremNET.Lorem.Paragraph(20, 6);
-box.Paragraphs.Add(new TextFragment(text));
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create FloatingBox
+        var box = new Aspose.Pdf.FloatingBox()
+        {
+            Top = 45,
+            Left = 15,
+            PositioningMode = Aspose.Pdf.ParagraphPositioningMode.Absolute
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1.5f, Aspose.Pdf.Color.DarkGreen)
+        };
+        box.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 1"));
 
-page.Paragraphs.Add(new TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
-page.Paragraphs.Add(box);            
-page.Paragraphs.Add(new TextFragment(LoremNET.Lorem.Paragraph(20, 6)));
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 2"));
+        // Add the box to the page
+        page.Paragraphs.Add(box);
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("text example 3"));
+    }
+}
 ```
-

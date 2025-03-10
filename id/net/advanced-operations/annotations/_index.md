@@ -2,9 +2,11 @@
 title: Bekerja dengan Anotasi
 linktitle: Anotasi dalam PDF
 type: docs
-weight: 100
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 160
 url: /id/net/annotations/
-description: Bagian ini menunjukkan cara menggunakan berbagai jenis anotasi pada file PDF Anda dengan perpustakaan Aspose.PDF.
+description: Pelajari cara bekerja dengan anotasi dalam file PDF menggunakan Aspose.PDF di .NET, termasuk menambahkan komentar, sorotan, dan anotasi lainnya.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Anotasi PDF",
-    "alternativeHeadline": "Bekerja dengan Anotasi dalam PDF",
+    "headline": "Working with Annotations",
+    "alternativeHeadline": "Enhance PDFs with Comprehensive Annotation Capabilities",
+    "abstract": "Tingkatkan dokumen PDF Anda dengan kemampuan anotasi yang kuat dari pustaka Aspose.PDF. Fitur ini memungkinkan pengguna untuk dengan mudah menambahkan, mengedit, dan menghapus berbagai jenis anotasi, termasuk sorotan, catatan, dan bentuk, sambil mempertahankan kompatibilitas penuh dengan penampil PDF. Temukan cara mengelola anotasi dengan mulus dan mengimpor/mengekspor data dalam format XFDF dan FDF untuk manipulasi dokumen PDF yang efisien.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen PDF",
-    "keywords": "pdf, c#, anotasi",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "PDF Annotations, Aspose.PDF, annotations, XFDF format, FDF format, edit annotations, add annotations, delete annotations, PDF manipulation, interactive features",
+    "wordcount": "294",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dokumen Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +74,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Bagian ini menunjukkan cara menggunakan berbagai jenis anotasi pada file PDF Anda dengan perpustakaan Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
-Konten di dalam halaman PDF sulit untuk diedit, namun spesifikasi PDF mendefinisikan seperangkat objek lengkap yang dapat ditambahkan ke halaman PDF tanpa mengubah isi halaman.
 
-Objek-objek ini disebut anotasi, dan tujuannya bervariasi mulai dari menandai isi halaman hingga mengimplementasikan fitur interaktif seperti formulir.
+Konten di dalam halaman PDF sulit untuk diedit, tetapi spesifikasi PDF mendefinisikan satu set objek lengkap yang dapat ditambahkan ke halaman PDF tanpa mengubah konten halaman.
 
-Penampil PDF biasanya memungkinkan pembuatan dan pengeditan berbagai jenis anotasi, misalnya penyorotan teks, catatan, garis, atau bentuk. Terlepas dari jenis anotasi yang dapat dibuat, penampil PDF yang sesuai dengan spesifikasi PDF juga harus mendukung rendering untuk semua jenis anotasi.
+Objek ini disebut anotasi, dan tujuannya berkisar dari menandai konten halaman hingga menerapkan fitur interaktif seperti formulir.
 
-Anotasi adalah bagian penting dari file PDF. Menggunakan Aspose.PDF untuk .NET Anda dapat menambahkan anotasi baru, mengedit anotasi yang ada dan menghapus anotasi dan lainnya. Bagian ini mencakup topik berikut:
+Penampil PDF biasanya memungkinkan pembuatan dan pengeditan berbagai jenis anotasi, misalnya sorotan teks, catatan, garis, atau bentuk. Terlepas dari jenis anotasi yang dapat dibuat, penampil PDF yang sesuai dengan spesifikasi PDF juga harus mendukung rendering untuk semua jenis anotasi.
 
-Anda dapat melakukan hal-hal berikut:
+Anotasi adalah bagian penting dari file PDF. Menggunakan Aspose.PDF for .NET Anda dapat menambahkan anotasi baru, mengedit anotasi yang ada, dan menghapus anotasi, dan seterusnya. Di bagian ini mencakup topik berikut:
 
-- [Ikhtisar Anotasi](/pdf/id/net/overview-of-annotations/) - pelajari jenis anotasi apa saja yang didefinisikan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
-- [Tambah, Hapus dan Dapatkan Anotasi](/pdf/id/net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
-- [Tambah, Hapus dan Dapatkan Anotasi](/pdf/id/net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
-- [Impor dan ekspor anotasi dengan format XFDF](/pdf/id/net/import-export-xfdf/) - Perpustakaan Aspose.PDF menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
+Anda dapat melakukan hal berikut:
+
+- [Ikhtisar Anotasi](/pdf/id/net/overview-of-annotations/) - pelajari jenis anotasi apa yang didefinisikan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
+- [Tambahkan, Hapus dan Dapatkan Anotasi](/pdf/id/net/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
+- [Impor dan ekspor anotasi dengan format XFDF](/pdf/id/net/import-export-xfdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
+- [Impor anotasi format FDF ke PDF](/pdf/id/net/import-fdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor anotasi format FDF ke file PDF.
 
 <script type="application/ld+json">
 {
@@ -153,5 +157,3 @@ Anda dapat melakukan hal-hal berikut:
     }
 }
 </script>
-
-

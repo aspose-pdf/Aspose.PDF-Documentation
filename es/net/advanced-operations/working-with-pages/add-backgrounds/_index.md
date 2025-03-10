@@ -1,10 +1,12 @@
 ---
-title: Añadir fondo a PDF con C#
-linktitle: Añadir fondos
+title: Agregar fondo a PDF
+linktitle: Agregar fondos
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /es/net/add-backgrounds/
-description: Añade una imagen de fondo a tu archivo PDF con C#. Utiliza el objeto BackgroundArtifact.
+description: Agregar imagen de fondo a su archivo PDF con C#. Utilice el objeto BackgroundArtifact.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Añadir fondo a PDF con C#",
-    "alternativeHeadline": "Trabajando con fondo en PDF",
+    "headline": "Add background to PDF",
+    "alternativeHeadline": "Add Custom Backgrounds to PDFs with C#",
+    "abstract": "Presentando la capacidad de integrar sin problemas imágenes de fondo en sus documentos PDF utilizando C# con Aspose.PDF for .NET. Esta función utiliza el objeto BackgroundArtifact, lo que permite opciones de diseño mejoradas como marcas de agua o texturización sutil, perfecto para hacer que sus PDFs se destaquen con un esfuerzo mínimo. Descubra cómo elevar el diseño de sus documentos agregando fondos personalizados sin esfuerzo.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, fondo en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Add background to PDF, BackgroundArtifact object, PDF manipulation, C# PDF library, watermark in PDF, Aspose.PDF for .NET, add background image, PDF document generation, PDF artifacts, document background settings",
+    "wordcount": "228",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,47 +74,50 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-backgrounds/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Añade una imagen de fondo a tu archivo PDF con C#. Utiliza el objeto BackgroundArtifact."
+    "dateModified": "2024-11-26",
+    "description": "Agregar imagen de fondo a su archivo PDF con C#. Utilice el objeto BackgroundArtifact."
 }
 </script>
 
-Las imágenes de fondo se pueden utilizar para agregar una marca de agua u otro diseño sutil a los documentos. En Aspose.PDF para .NET, cada documento PDF es una colección de páginas y cada página contiene una colección de artefactos. La clase [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) se puede usar para agregar una imagen de fondo a un objeto de página.
+Las imágenes de fondo se pueden utilizar para agregar una marca de agua u otro diseño sutil a los documentos. En Aspose.PDF for .NET, cada documento PDF es una colección de páginas y cada página contiene una colección de artefactos. La clase [BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) se puede utilizar para agregar una imagen de fondo a un objeto de página.
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código muestra cómo agregar una imagen de fondo a las páginas PDF utilizando el objeto BackgroundArtifact con C#.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Crear un nuevo objeto Document
-Document doc = new Document();
-
-// Agregar una nueva página al objeto documento
-Page page = doc.Pages.Add();
-
-// Crear objeto Background Artifact
-BackgroundArtifact background = new BackgroundArtifact();
-
-// Especificar la imagen para el objeto backgroundartifact
-background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg");
-
-// Agregar backgroundartifact a la colección de artefactos de la página
-page.Artifacts.Add(background);
-
-dataDir = dataDir + "ImageAsBackground_out.pdf";
-// Guardar el documento
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBackgroundToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Image for background artifact object
+        using (var image = File.OpenRead(dataDir + "aspose-total-for-net.jpg"))
+        {
+            // Add page
+            Page page = document.Pages.Add();
+            // Create Background Artifact object
+            var background = new Aspose.Pdf.BackgroundArtifact();
+            // Specify the image for background artifact object
+            background.BackgroundImage = image;
+            // Add background artifact to artifacts collection of page
+            page.Artifacts.Add(background);
+            // Save PDF document
+            document.Save(dataDir + "ImageAsBackground_out.pdf");
+        }
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para la biblioteca .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -133,21 +139,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -158,7 +164,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -170,5 +176,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

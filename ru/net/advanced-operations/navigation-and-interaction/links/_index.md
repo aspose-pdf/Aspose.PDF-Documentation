@@ -2,9 +2,11 @@
 title: Работа с ссылками в PDF программно
 linktitle: Ссылки
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/links/
-description: Это руководство о том, как добавить внутреннюю ссылку на страницу в PDF или вставить гиперссылку на внешний веб-сайт в PDF на языке C#.
+description: Этот гид о том, как добавить внутреннюю ссылку на страницу в PDF или вставить гиперссылку на внешний веб-сайт в PDF на языке C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с ссылками в PDF программно",
-    "alternativeHeadline": "Манипуляции с ссылками в PDF файле",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "Откройте для себя новую возможность программно управлять ссылками в PDF документах с помощью C#. Эта функция позволяет вам без усилий добавлять внутренние ссылки на страницы и гиперссылки на внешние веб-сайты, улучшая навигацию и интерактивность в ваших PDF. Идеально подходит для разработчиков, стремящихся оптимизировать свои процессы управления PDF!",
     "author": {
         "@type": "Person",
-        "name":"Андрий Андруховский",
-        "givenName": "Андрий",
-        "familyName": "Андруховский",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, ссылка в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Это руководство о том, как добавить внутреннюю ссылку на страницу в PDF или вставить гиперссылку на внешний веб-сайт в PDF на языке C#."
+    "dateModified": "2024-11-25",
+    "description": "Этот гид о том, как добавить внутреннюю ссылку на страницу в PDF или вставить гиперссылку на внешний веб-сайт в PDF на языке C#."
 }
 </script>
-- [Создание ссылок](/pdf/ru/net/create-links/) - изучите простой способ создания ссылок в вашем PDF файле с помощью C#.
-- [Обновление ссылок](/pdf/ru/net/update-links/) - попробуйте установить цель для PDF, попробуйте установить место назначения ссылки на веб-адрес, попробуйте установить цель ссылки на другой PDF файл, обновите цвет текста ссылки.
-- [Извлечение ссылок](/pdf/ru/net/extract-links) - извлеките ссылки из PDF файла с помощью класса AnnotationSelector.
+
+- [Создать ссылки](/pdf/ru/net/create-links/) - узнайте простой способ создания ссылок в вашем PDF файле с использованием C#.
+- [Обновить ссылки](/pdf/ru/net/update-links/) - попробуйте установить цель для PDF, попробуйте установить назначение ссылки на веб-адрес, попробуйте установить цель ссылки на другой PDF файл, обновить цвет текста ссылки.
+- [Извлечь ссылки](/pdf/ru/net/extract-links) - извлеките ссылки из PDF файла с помощью класса AnnotationSelector.
 
 <script type="application/ld+json">
 {
@@ -142,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

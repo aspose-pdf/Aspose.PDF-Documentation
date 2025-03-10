@@ -2,31 +2,34 @@
 title: ベクターグラフィックスの操作
 linktitle: ベクターグラフィックスの操作
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /ja/net/working-with-vector-graphics/
-description: この記事では、C#を使用してGraphicsAbsorberツールを使用する機能について説明します。
+description: この文書では、C#を使用したGraphicsAbsorberツールの操作機能について説明します。
 lastmod: "2024-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "GraphicsAbsorberの操作",
-    "alternativeHeadline": "PDFファイル内の画像の位置を取得する方法",
+    "headline": "Working with Vector Graphics in PDF",
+    "alternativeHeadline": "Programmatically manipulate PDF vector graphics",
+    "abstract": "新しいGraphicsAbsorberクラスを使用して、PDF文書内のベクターグラフィックスをプログラムで操作します。Aspose.PDF for .NET C#ライブラリは、グラフィック要素を正確に制御できるようにし、グラフィックスを移動、削除、追加するなどのアクションを可能にします。このツールは、最適なパフォーマンスのために個別および一括操作メソッドを提供します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "PDF, C#, PDF内のGraphicsAbsorber",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "GraphicsAbsorber, Vector Graphics, PDF Manipulation, C# library, Aspose.PDF, Move Graphics, Remove Graphics, Add Graphics, PDF Vector Graphics",
+    "wordcount": "967",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,194 +71,306 @@ lastmod: "2024-02-17"
         "@type": "WebPage",
         "@id": "/net/working-with-vector-graphics/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、C#ライブラリを使用してPDFファイルでGraphicsAbsorberを操作する機能について説明します。"
+    "dateModified": "2024-11-26",
+    "description": "このセクションでは、C#ライブラリを使用したGraphicsAbsorber PDFファイルの操作機能について説明します。"
 }
 </script>
-この章では、PDFドキュメント内のベクターグラフィックスと対話するために強力な`GraphicsAbsorber`クラスの使用方法について探求します。グラフィックを移動、削除、または追加する必要がある場合、このガイドはこれらのタスクを効果的に実行する方法を示します。さあ、始めましょう！
+
+この章では、PDF文書内のベクターグラフィックスと対話するために強力な`GraphicsAbsorber`クラスを使用する方法を探ります。グラフィックスを移動、削除、または追加する必要がある場合でも、このガイドではこれらのタスクを効果的に実行する方法を示します。それでは始めましょう！
 
 ## はじめに<a name="introduction"></a>
 
-ベクターグラフィックスは、多くのPDFドキュメントで重要なコンポーネントであり、画像、形状、その他のグラフィカル要素を表現するために使用されます。Aspose.PDFは`GraphicsAbsorber`クラスを提供しており、開発者がこれらのグラフィックスにプログラムでアクセスして操作できるようにします。`GraphicsAbsorber`の`Visit`メソッドを使用することで、指定されたページからベクターグラフィックスを抽出し、移動、削除、または他のページへのコピーなどのさまざまな操作を実行できます。
+ベクターグラフィックスは、多くのPDF文書の重要な要素であり、画像、形状、その他のグラフィカル要素を表現するために使用されます。Aspose.PDFは、開発者がこれらのグラフィックスにプログラムでアクセスし操作できる`GraphicsAbsorber`クラスを提供します。`GraphicsAbsorber`の`Visit`メソッドを使用することで、指定されたページからベクターグラフィックスを抽出し、移動、削除、または他のページにコピーするなどのさまざまな操作を実行できます。
 
-## 1. `GraphicsAbsorber`を使ったグラフィックの抽出<a name="extracting-graphics"></a>
+## 1. `GraphicsAbsorber`を使用したグラフィックスの抽出<a name="extracting-graphics"></a>
 
-ベクターグラフィックスを扱う最初のステップは、PDFドキュメントからそれらを抽出することです。ここでは`GraphicsAbsorber`クラスを使用してこれを行う方法を紹介します：
+ベクターグラフィックスを操作する最初のステップは、PDF文書からそれらを抽出することです。以下は、`GraphicsAbsorber`クラスを使用してこれを行う方法です：
 
 ```csharp
-public static void UsingGraphicsAbsorber()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UsingGraphicsAbsorber()
 {
-    // ステップ 1: Documentオブジェクトを作成します。
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // ステップ 2: GraphicsAbsorberのインスタンスを作成します。
-    var graphicsAbsorber = new GraphicsAbsorber();
-
-    // ドキュメントの最初のページを選択します。
-    var page = document.Pages[1];
-
-    // ステップ 3: `Visit`メソッドを使用してページからグラフィックを抽出します。
-    graphicsAbsorber.Visit(page);
-
-    // 抽出された要素に関する情報を表示します。
-    foreach (var element in graphicsAbsorber.Elements)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Sample-Document-01.pdf"))
     {
-        Console.WriteLine($"ページ番号: {element.SourcePage.Number}");
-        Console.WriteLine($"位置: ({element.Position.X}, {element.Position.Y})");
-        Console.WriteLine($"オペレーターの数: {element.Operators.Count}");
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Select the first page of the document
+            var page = document.Pages[1];
+
+            // Use the `Visit` method to extract graphics from the page
+            graphicsAbsorber.Visit(page);
+
+            // Display information about the extracted elements
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                Console.WriteLine($"Page Number: {element.SourcePage.Number}");
+                Console.WriteLine($"Position: ({element.Position.X}, {element.Position.Y})");
+                Console.WriteLine($"Number of Operators: {element.Operators.Count}");
+            }
+        }
     }
 }
-```
-### 説明:
 
-1. **ドキュメントオブジェクトを作成する**: 新しい`Document`オブジェクトがターゲットPDFファイルへのパスでインスタンス化されます。
-2. **`GraphicsAbsorber`のインスタンスを作成する**: このクラスは指定されたページからすべてのグラフィック要素をキャプチャします。
-3. **訪問方法**: `GraphicsAbsorber`がベクターグラフィックスを吸収することを可能にするために、最初のページで`Visit`メソッドが呼び出されます。
-4. **抽出された要素を通して反復する**: コードは各抽出された要素をループし、ページ番号、位置、および関与する描画オペレータの数などの情報を印刷します。
+```
+
+### 説明：
+
+1. **ドキュメントオブジェクトの作成**: 対象のPDFファイルへのパスを指定して新しい`Document`オブジェクトをインスタンス化します。
+2. **`GraphicsAbsorber`のインスタンスを作成**: このクラスは、指定されたページからすべてのグラフィック要素をキャプチャします。
+3. **Visitメソッド**: 最初のページで`Visit`メソッドを呼び出し、`GraphicsAbsorber`がベクターグラフィックスを吸収できるようにします。
+4. **抽出された要素を反復処理**: コードは、抽出された各要素をループし、ページ番号、位置、関与する描画オペレーターの数などの情報を印刷します。
 
 ## 2. グラフィックスの移動<a name="moving-graphics"></a>
 
-グラフィックを抽出したら、同じページの異なる位置に移動できます。これを実現する方法は次のとおりです：
+グラフィックスを抽出したら、同じページの別の位置に移動できます。以下は、これを達成する方法です：
 
 ```csharp
-public static void MoveGraphics()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void MoveGraphics()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page = document.Pages[1];
-    graphicsAbsorber.Visit(page);
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // パフォーマンスを向上させるために一時的に更新を停止します。
-    graphicsAbsorber.SuppressUpdate();
-
-    foreach (var element in graphicsAbsorber.Elements)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "MoveGraphics.pdf"))
     {
-        var position = element.Position;
-        // XおよびY座標をシフトしてグラフィックを移動します。
-        element.Position = new Point(position.X + 150, position.Y - 10);
-    }
-
-    // 更新を再開して変更を適用します。
-    graphicsAbsorber.ResumeUpdate();
-    document.Save("test.pdf");
-}
-```
-### 主要なポイント:
-
-- **SuppressUpdate**: このメソッドは、複数の変更を行う場合にパフォーマンスを向上させるために一時的に更新を停止します。
-- **ResumeUpdate**: このメソッドは更新を再開し、グラフィックの位置に対して行われた変更を適用します。
-- **要素の位置決め**: 各グラフィックの位置は、その `X` と `Y` 座標を変更することによって調整されます。
-
-## 3. グラフィックの削除<a name="removing-graphics"></a>
-
-特定のグラフィックをページから削除したい場合があります。Aspose.PDFはこれを実現するための2つの方法を提供しています:
-
-### 方法 1: 矩形の境界を使用する
-
-```csharp
-public static void RemoveGraphicsMethod1()
-{
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page = document.Pages[1];
-    graphicsAbsorber.Visit(page);
-    var rectangle = new Rectangle(70, 248, 170, 252);
-
-    graphicsAbsorber.SuppressUpdate();
-    foreach (var element in graphicsAbsorber.Elements)
-    {
-        // グラフィックの位置が矩形内にあるかどうかを確認します。
-        if (rectangle.Contains(element.Position))
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
         {
-            element.Remove(); // グラフィック要素を削除します。
+            // Get the first page of the document
+            var page = document.Pages[1];
+
+            // Use the `Visit` method to extract graphics from the page
+            graphicsAbsorber.Visit(page);
+
+            // Temporarily suspend updates to improve performance
+            graphicsAbsorber.SuppressUpdate();
+
+            // Move graphics by shifting their X and Y coordinates
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                var position = element.Position;
+                element.Position = new Aspose.Pdf.Point(position.X + 150, position.Y - 10);
+            }
+
+            // Resume updates and apply changes
+            graphicsAbsorber.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "MoveGraphics_out.pdf");
         }
     }
-    graphicsAbsorber.ResumeUpdate();
-    document.Save("test.pdf");
 }
 ```
-### 方法2：削除された要素のコレクションを使用する
+
+### 重要なポイント：
+
+- **SuppressUpdate**: このメソッドは、複数の変更を行う際にパフォーマンスを向上させるために更新を一時的に停止します。
+- **ResumeUpdate**: このメソッドは、更新を再開し、グラフィックスの位置に対する変更を適用します。
+- **要素の位置決め**: 各グラフィックの位置は、その`X`および`Y`座標を変更することで調整されます。
+
+## 3. グラフィックスの削除<a name="removing-graphics"></a>
+
+特定のグラフィックスをページから削除したい場合があります。Aspose.PDFは、これを達成するための2つのメソッドを提供します：
+
+### メソッド1: 矩形境界を使用
 
 ```csharp
-public static void RemoveGraphicsMethod2()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveGraphicsMethod1()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page = document.Pages[1];
-    var rectangle = new Rectangle(70, 248, 170, 252);
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.Visit(page);
-    var removedElementsCollection = new GraphicElementCollection();
-    foreach (var item in graphicsAbsorber.Elements.Where(el => rectangle.Contains(el.Position)))
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        removedElementsCollection.Add(item);
-    }
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the first page of the document
+            var page = document.Pages[1];
 
-    page.Contents.SuppressUpdate();
-    page.DeleteGraphics(removedElementsCollection);
-    page.Contents.ResumeUpdate();
-    document.Save("test.pdf");
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
+
+            // Define the rectangle within which graphics will be removed
+            var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
+
+            // Temporarily suppress updates for better performance
+            graphicsAbsorber.SuppressUpdate();
+
+            // Iterate through the extracted graphic elements and remove those inside the rectangle
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                if (rectangle.Contains(element.Position))
+                {
+                    element.Remove(); // Remove the graphic element
+                }
+            }
+
+            // Resume updates and apply changes
+            graphicsAbsorber.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "RemoveGraphics_out.pdf");
+        }
+    }
 }
 ```
 
-### 説明:
-
-- **矩形の境界**: 削除するグラフィックスを指定する矩形エリアを定義する。
-- **更新の抑制と再開**: 中間レンダリングなしで効率的な削除を保証する。
-
-## 4. 別のページへのグラフィックスの追加<a name="adding-graphics"></a>
-
-一つのページから吸収したグラフィックスは、同じドキュメント内の別のページに追加することができる。
-1ページから取得したグラフィックを同じドキュメントの別のページに追加することができます。
-
-### メソッド1：グラフィックを個別に追加
+### メソッド2: 削除された要素のコレクションを使用
 
 ```csharp
-public static void AddToAnotherPageMethod1()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveGraphicsMethod2()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page1 = document.Pages[1];
-    var page2 = document.Pages[2];
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.Visit(page1);
-    page2.Contents.SuppressUpdate();
-    foreach (var element in graphicsAbsorber.Elements)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RemoveGraphics.pdf"))
     {
-        element.AddOnPage(page2); // 各グラフィック要素を2ページ目に追加します。
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the first page of the document
+            var page = document.Pages[1];
+
+            // Define the rectangle within which graphics will be removed
+            var rectangle = new Aspose.Pdf.Rectangle(70, 248, 170, 252);
+
+            // Extract graphic elements from the page
+            graphicsAbsorber.Visit(page);
+
+            // Create a collection to store the removed elements
+            var removedElementsCollection = new Aspose.Pdf.Vector.GraphicElementCollection();
+
+            // Iterate through the extracted elements and add those inside the rectangle to the collection
+            foreach (var item in graphicsAbsorber.Elements.Where(el => rectangle.Contains(el.Position)))
+            {
+                removedElementsCollection.Add(item);
+            }
+
+            // Temporarily suppress updates for better performance
+            page.Contents.SuppressUpdate();
+
+            // Delete the graphics elements from the page
+            page.DeleteGraphics(removedElementsCollection);
+
+            // Resume updates and apply changes
+            page.Contents.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "RemoveGraphics_out.pdf");
+        }
     }
-    page2.Contents.ResumeUpdate();
-    document.Save("test.pdf");
 }
 ```
 
-### メソッド2：グラフィックをコレクションとして追加
+### 説明：
+
+- **矩形境界**: どのグラフィックスを削除するかを指定するために矩形領域を定義します。
+- **更新の抑制と再開**: 中間レンダリングなしで効率的に削除を行うことを確認します。
+
+## 4. 別のページにグラフィックスを追加<a name="adding-graphics"></a>
+
+1ページから吸収されたグラフィックスは、同じ文書内の別のページに追加できます。これを達成するための2つの方法は次のとおりです：
+
+### メソッド1: グラフィックスを個別に追加
 
 ```csharp
-public static void AddToAnotherPageMethod2()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddToAnotherPageMethod1()
 {
-    var document = new Document(@"C:\Samples\Sample-Document-01.pdf");
-    var graphicsAbsorber = new GraphicsAbsorber();
-    var page1 = document.Pages[1];
-    var page2 = document.Pages[2];
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    graphicsAbsorber.Visit(page1);
-    page2.Contents.SuppressUpdate();
-    page2.AddGraphics(graphicsAbsorber.Elements); // 一度にすべてのグラフィックを追加します。
-    page2.Contents.ResumeUpdate();
-    document.Save("test.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
+    {
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the pages from the document
+            var page1 = document.Pages[1];
+            var page2 = document.Pages[2];
+
+            // Extract graphics from the first page
+            graphicsAbsorber.Visit(page1);
+
+            // Temporarily suppress updates for better performance
+            page2.Contents.SuppressUpdate();
+
+            // Add each graphic element to the second page
+            foreach (var element in graphicsAbsorber.Elements)
+            {
+                element.AddOnPage(page2); // Add each graphic element to the second page
+            }
+
+            // Resume updates and apply changes
+            page2.Contents.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "AddToAnotherPage_out.pdf");
+        }
+    }
 }
 ```
-### 主要ポイント:
 
-- **SuppressUpdate と ResumeUpdate**: これらのメソッドは、一括変更を行う際にパフォーマンスを維持するのに役立ちます。
-- **AddOnPage と AddGraphics**: `AddOnPage` は個別の追加に使用し、`AddGraphics` は一括追加に使用します。
+### メソッド2: グラフィックスをコレクションとして追加
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddToAnotherPageMethod2()
+{
+    // The path to the documents directory directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddToAnotherPage.pdf"))
+    {
+        // Create an instance of GraphicsAbsorber
+        using (var graphicsAbsorber = new Aspose.Pdf.Vector.GraphicsAbsorber())
+        {
+            // Get the pages from the document
+            var page1 = document.Pages[1];
+            var page2 = document.Pages[2];
+
+            // Extract graphics from the first page
+            graphicsAbsorber.Visit(page1);
+
+            // Temporarily suppress updates for better performance
+            page2.Contents.SuppressUpdate();
+
+            // Add all graphics elements to the second page at once
+            page2.AddGraphics(graphicsAbsorber.Elements);
+
+            // Resume updates and apply changes
+            page2.Contents.ResumeUpdate();
+
+            // Save PDF document
+            document.Save(dataDir + "AddToAnotherPage_out.pdf");
+        }
+    }
+}
+```
+
+### 重要なポイント：
+
+- **SuppressUpdateおよびResumeUpdate**: これらのメソッドは、一括変更を行う際のパフォーマンスを維持するのに役立ちます。
+- **AddOnPageとAddGraphics**: 個別の追加には`AddOnPage`を使用し、一括追加には`AddGraphics`を使用します。
 
 ## 結論
 
-この章では、Aspose.PDF を使用して PDF ドキュメント内のベクターグラフィックスを抽出、移動、削除、追加する方法を探りました。これらの技術をマスターすることで、PDF の視覚的プレゼンテーションを大幅に向上させ、ダイナミックで視覚的に魅力的なドキュメントを作成することができます。
+この章では、Aspose.PDFを使用してPDF文書内のベクターグラフィックスを抽出、移動、削除、追加するために`GraphicsAbsorber`クラスを使用する方法を探りました。これらの技術を習得することで、PDFの視覚的プレゼンテーションを大幅に向上させ、動的で視覚的に魅力的な文書を作成できます。
 
-コード例を実験して、特定のユースケースに合わせて適応させてください。ハッピーコーディング!
+コード例を試してみて、特定の使用ケースに合わせて適応させてください。コーディングを楽しんでください！
 
 <script type="application/ld+json">
 {
@@ -320,5 +435,3 @@ public static void AddToAnotherPageMethod2()
     }
 }
 </script>
-
-

@@ -2,9 +2,11 @@
 title: Печать PDF документов
 linktitle: Печать документа
 type: docs
-weight: 160
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 220
 url: /ru/net/printing-document/
-description: Техники печати PDF в C# и руководство по настройкам принтера PDF в C# и советы для проектов .NET
+description: Техники печати PDF на C# и пошаговое руководство по настройкам PDF-принтера C# и советам по проектам .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Печать PDF документов",
-    "alternativeHeadline": "Как печатать PDF документы",
+    "headline": "Printing PDF documents",
+    "alternativeHeadline": "Streamlined C# PDF Printing Techniques and Settings",
+    "abstract": "Откройте для себя новую функциональность печати PDF документов с использованием C# с нашим полным руководством. Эта функция предоставляет основные техники и советы по настройке параметров PDF-принтера в проектах .NET, улучшая ваши возможности работы с документами. Идеально подходит для разработчиков, стремящихся оптимизировать свои процессы печати в приложениях .NET",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, c#, печать pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Printing PDF, C# PDF printer settings, .NET project tips, PDF document generation, print PDF document in WPF application, printing PDF in .NET Framework, Aspose.PDF for .NET Library, PDF to PostScript conversion, check print job status, printing PDF in .NET Core",
+    "wordcount": "120",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,17 +74,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Техники печати PDF в C# и руководство по настройкам принтера PDF в C# и советы для проектов .NET"
+    "dateModified": "2024-11-25",
+    "description": "Техники печати PDF на C# и пошаговое руководство по настройкам PDF-принтера C# и советам по проектам .NET"
 }
 </script>
-## Как печатать PDF-файлы в C#
+
+## Как печатать PDF файлы на C#
 
 - [Печать PDF в .NET Framework](/pdf/ru/net/printing-pdf-in-net-framework/)
-- [Печать PDF на XPS принтере (Facades)](/pdf/ru/net/printing-pdf-to-an-xps-printer-facades/)
-- [Конвертация PDF в PostScript, Проверка статуса задания печати](/pdf/ru/net/pdf-to-postscript-conversion/)
+- [Печать PDF на принтер XPS (Фасады)](/pdf/ru/net/printing-pdf-to-an-xps-printer-facades/)
+- [Конвертация PDF в PostScript, Проверка статуса задания на печать](/pdf/ru/net/pdf-to-postscript-conversion/)
 - [Печать PDF в .NET Core](/pdf/ru/net/print-dotnetcore/)
-- [Печать PDF-документа в приложении WPF](/pdf/ru/net/print-pdf-document-in-wpf-application/)
+- [Печать PDF документа в приложении WPF](/pdf/ru/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {
@@ -134,7 +138,7 @@ sitemap:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF в .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -146,5 +150,3 @@ sitemap:
     }
 }
 </script>
-
-

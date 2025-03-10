@@ -2,9 +2,11 @@
 title: استخراج الروابط من ملف PDF
 linktitle: استخراج الروابط
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/extract-links/
-description: استخراج الروابط من ملف PDF باستخدام C#. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector.
+description: اكتشف كيفية استخراج الروابط التشعبية من مستندات PDF في .NET باستخدام Aspose.PDF لإدارة المحتوى وتحليل الروابط.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "استخراج الروابط من ملف PDF",
-    "alternativeHeadline": "كيفية استخراج الروابط من ملف PDF",
+    "headline": "Extract Links from the PDF File",
+    "alternativeHeadline": "Effortlessly Extract Links from PDF Files",
+    "abstract": "استخرج الروابط من ملفات PDF بسلاسة باستخدام C# مع فئة AnnotationSelector الجديدة. تتيح هذه الميزة للمطورين التعرف بسهولة على روابط التعليقات التوضيحية واستخراجها من صفحات محددة من مستند PDF، مما يعزز قدرات معالجة PDF للتطبيقات التي تتطلب استخراج روابط دقيق.",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, استخراج الرابط من pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Extract Links, PDF extraction, C# PDF library, AnnotationSelector class, LinkAnnotation objects, PDF document manipulation, Aspose.PDF library, extract links from PDF",
+    "wordcount": "303",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,40 +74,75 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "استخراج الروابط من ملف PDF باستخدام C#. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector."
+    "dateModified": "2024-11-25",
+    "description": "استخرج الروابط من PDF باستخدام C#. يشرح هذا الموضوع كيفية استخراج الروابط باستخدام فئة AnnotationSelector."
 }
 </script>
-يعمل الكود التالي أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## استخراج الروابط من ملف PDF
 
-الروابط ممثلة كتعليقات في ملف PDF، لذا لاستخراج الروابط، استخرج جميع الكائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+تمثل الروابط كتعليقات توضيحية في ملف PDF، لذا لاستخراج الروابط، استخرج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) .
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. الحصول على [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد استخراج الروابط منها.
+1. أنشئ كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. احصل على [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) التي تريد استخراج الروابط منها.
 1. استخدم فئة [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) لاستخراج جميع كائنات [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) من الصفحة المحددة.
-1. مرر كائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) إلى طريقة Accept الخاصة بكائن الصفحة.
-1.
+1. مرر كائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) إلى طريقة Accept الخاصة بكائن Page.
+1. احصل على جميع تعليقات الروابط المحددة في كائن IList باستخدام خاصية Selected الخاصة بكائن [AnnotationSelector](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/annotationselector) .
 
-يوضح مقتطف الكود التالي كيفية استخراج الروابط من ملف PDF.
+تظهر مقتطفات الشيفرة التالية كيفية استخراج الروابط من ملف PDF.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// فتح المستند
-Document document = new Document(dataDir+ "ExtractLinks.pdf");
-// استخراج الإجراءات
-Page page = document.Pages[1];
-AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
-page.Accept(selector);
-IList<Annotation> list = selector.Selected;
-Annotation annotation = (Annotation)list[0];
-dataDir = dataDir + "ExtractLinks_out.pdf";
-// حفظ المستند المحدث
-document.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf"))
+    {
+        // Extract actions
+        var page = document.Pages[1];
+        var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+        page.Accept(selector);
+        var list = selector.Selected;
+        var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+
+        // Save PDF document
+        document.Save(dataDir + "ExtractLinks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "ExtractLinks.pdf");
+
+    // Extract actions
+    var page = document.Pages[1];
+    var selector = new Aspose.Pdf.Annotations.AnnotationSelector(new Aspose.Pdf.Annotations.LinkAnnotation(page, Aspose.Pdf.Rectangle.Trivial));
+    page.Accept(selector);
+    var list = selector.Selected;
+    var annotation = (Aspose.Pdf.Annotations.Annotation)list[0];
+
+    // Save PDF document
+    document.Save(dataDir + "ExtractLinks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -169,5 +207,3 @@ document.Save(dataDir);
     }
 }
 </script>
-
-

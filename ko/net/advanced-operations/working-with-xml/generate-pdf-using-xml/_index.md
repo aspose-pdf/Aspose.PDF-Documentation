@@ -2,9 +2,11 @@
 title: XML에서 PDF 생성
 linktitle: XML에서 PDF 생성
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ko/net/generate-pdf-from-xml
-description: Aspose.PDF for .NET은 입력 XML 파일이 필요한 PDF 문서로 변환하는 여러 가지 방법을 제공합니다.
+description: Aspose.PDF for .NET는 입력 XML 파일이 필요한 XML 파일을 PDF 문서로 변환하는 여러 가지 방법을 제공합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "XML에서 PDF 생성",
-    "alternativeHeadline": "XML을 PDF로 변환",
+    "headline": "Generate PDF from XML",
+    "alternativeHeadline": "Generate PDF directly from XML data",
+    "abstract": "Aspose.PDF for .NET는 이제 여러 방법을 사용하여 XML 데이터에서 직접 PDF를 생성합니다: XSLT 변환, XSL-FO 마크업 및 사용자 정의 Aspose.PDF XML 스키마. 이 새로운 기능은 다양한 XML 구조에서 유연한 PDF 생성을 제공하여 문서 생성 워크플로를 간소화합니다.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, generate pdf form xml, convert xml to pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "3834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,14 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/generate-pdf-from-xml"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET은 입력 XML 파일이 필요한 PDF 문서로 변환하는 여러 가지 방법을 제공합니다."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF for .NET는 입력 XML 파일이 필요한 XML 파일을 PDF 문서로 변환하는 여러 가지 방법을 제공합니다."
 }
 </script>
-```
+
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-XML 문서에서 PDF 문서를 생성하는 것은 간단한 작업이 아닙니다. XML 문서는 다양한 콘텐츠를 설명할 수 있기 때문입니다. Aspose.PDF for .NET은 XML 문서를 기반으로 PDF를 생성하는 여러 가지 방법을 제공합니다:
+XML 문서에서 PDF 문서를 생성하는 것은 XML 문서가 다양한 내용을 설명할 수 있기 때문에 간단한 작업이 아닙니다. Aspose.PDF for .NET는 XML 문서를 기반으로 PDF를 생성하는 여러 가지 방법을 제공합니다:
 
 - XSLT 변환 사용
 - XSL-FO (XSL Formatting Objects) 마크업 사용
@@ -86,9 +88,9 @@ XML 문서에서 PDF 문서를 생성하는 것은 간단한 작업이 아닙니
 
 ## XSLT 변환을 사용하여 PDF 문서 생성
 
-XSL (eXtensible Stylesheet Language)은 XML 문서를 다른 XML 문서나 HTML로 변환하기 위한 스타일링 언어입니다. 우리의 경우, XML을 HTML로 변환한 다음 HTML 데이터를 기반으로 PDF를 생성할 수 있습니다.
+XSL (eXtensible Stylesheet Language)은 XML 문서를 다른 XML 문서나 HTML로 변환하기 위한 스타일링 언어입니다. 우리의 경우 XML을 HTML로 변환한 다음 HTML 데이터를 기반으로 PDF를 생성할 수 있습니다.
 
-간단한 CD 카탈로그가 있는 XML 파일이 있다고 가정합니다 (아래 참조).
+간단한 CD 카탈로그가 포함된 XML 파일이 있다고 가정해 보겠습니다 (아래 참조).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -303,7 +305,8 @@ XSL (eXtensible Stylesheet Language)은 XML 문서를 다른 XML 문서나 HTML�
   </cd>
 </catalog>
 ```
-To convert this file to PDF we should create an XSL with HTML layout. Let's render our data in table. The XSL file that will help us do this might look something like this:
+
+이 파일을 PDF로 변환하려면 HTML 레이아웃이 있는 XSL을 생성해야 합니다. 데이터를 테이블로 렌더링해 보겠습니다. 이를 도와줄 XSL 파일은 다음과 같을 수 있습니다:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -312,11 +315,11 @@ To convert this file to PDF we should create an XSL with HTML layout. Let's rend
   <xsl:template match="/">
     <html>
       <body>
-        <h2>내 CD 컬렉션</h2>
+        <h2>My CD Collection</h2>
         <table border="1">
           <tr bgcolor="#9acd32">
-            <th style="text-align:left">제목</th>
-            <th style="text-align:left">아티스트</th>
+            <th style="text-align:left">Title</th>
+            <th style="text-align:left">Artist</th>
           </tr>
           <xsl:for-each select="catalog/cd">
             <tr>
@@ -335,44 +338,102 @@ To convert this file to PDF we should create an XSL with HTML layout. Let's rend
 </xsl:stylesheet>
 ```
 
-So, we need to transform XML and load into PDF document.
+따라서 XML을 변환하고 PDF 문서에 로드해야 합니다. 다음 예제는 이 방법을 보여줍니다:
 
-우리는 XML을 변환하여 PDF 문서에 로드해야 합니다.
-
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void ExampleXSLTtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var XmlContent = File.ReadAllText(@"XMLFile1.xml");
-    var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
-    // 페이지 크기를 A5로 설정
+
+    // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var pdfDocument = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLT_out.pdf");
+    }
 }
 
-public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
 {
     var transform = new XslCompiledTransform();
+
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
     }
+
     var memoryStream = new MemoryStream();
     var results = new StreamWriter(memoryStream);
+
     using (var reader = XmlReader.Create(new StringReader(inputXml)))
     {
         transform.Transform(reader, null, results);
     }
+
     memoryStream.Position = 0;
     return memoryStream;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
+    var options = new Aspose.Pdf.HtmlLoadOptions();
+
+    // set page size to A5
+    options.PageInfo.Height = 595;
+    options.PageInfo.Width = 420;
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLT_out.pdf");
+}
+
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, null, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## XSL-FO 마크업을 사용하여 PDF 문서 생성
 
-XSL-FO는 XML 데이터를 화면, 종이 또는 기타 미디어로 출력하기 위한 포맷을 설명하는 XML 기반 마크업 언어입니다. Aspose.PDF는 XSL-FO 마크업을 적용하고 PDF 문서를 얻을 수 있는 특별한 클래스를 가지고 있습니다.
+XSL-FO는 XML 데이터를 화면, 종이 또는 기타 매체로 출력하기 위한 형식을 설명하는 XML 기반 마크업 언어입니다. Aspose.PDF에는 XSL-FO 마크업을 적용하고 PDF 문서를 얻을 수 있는 특별한 클래스가 있습니다.
 
 예를 들어 보겠습니다. 다음은 직원의 샘플 데이터가 포함된 XML 파일입니다.
 
@@ -400,7 +461,7 @@ XSL-FO는 XML 데이터를 화면, 종이 또는 기타 미디어로 출력하�
 </employees>
 ```
 
-이제 직원 데이터를 테이블로 변환하기 위한 XSL-FO 마크업 파일을 하나 더 만들어 보겠습니다.
+직원 데이터를 테이블로 변환하기 위해 또 다른 파일인 XSL-FO 마크업 파일을 생성해 보겠습니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -457,28 +518,59 @@ XSL-FO는 XML 데이터를 화면, 종이 또는 기타 미디어로 출력하�
     </xsl:template>
 </xsl:stylesheet>
 ```
-Aspose.PDF에는 XSL-FO 변환을 적용할 수 있는 특별한 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 클래스가 있습니다.
-다음 스니펫은 위에 설명된 샘플 파일을 사용하여 이 클래스를 사용하는 방법을 보여줍니다.
 
+Aspose.PDF에는 XSL-FO 변환을 적용할 수 있는 특별한 [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) 클래스가 있습니다.
+다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
 {
-    var _dataDir = @"C:\tmp\";
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
     // Instantiate XslFoLoadOption object
-    var options = new Pdf.XslFoLoadOptions("employees.xslt");
-    // Create Document object
-    var pdfDocument = new Aspose.Pdf.Document("employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-### XSL-FO 마크업 및 XSL params를 사용하여 PDF 문서 생성
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-때때로 우리는 [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param)을 사용해야 합니다. `<xsl:param>` 요소는 이름으로 매개변수를 설정하며, 선택적으로 해당 매개변수의 기본 값을 설정합니다.
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-이전 경우와 동일한 예를 들되, 약간의 변경(매개변수 추가)을 합니다. 샘플 데이터가 포함된 XML 파일은 그대로 유지하고, ...
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
 
-```xml
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### XSL-FO 마크업 및 XSL 매개변수를 사용하여 PDF 문서 생성
+
+때때로 [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param)을 사용해야 합니다. `<xsl:param>` 요소는 이름으로 매개변수를 설정하고 선택적으로 해당 매개변수의 기본값을 설정합니다.
+
+이전 사례와 동일한 예를 사용하되 약간의 변경(매개변수 추가)을 하겠습니다. 샘플 데이터가 포함된 XML 파일은 변경되지 않고 ...
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <employees>
@@ -486,22 +578,24 @@ public static void Example_XSLFO_to_PDF()
     <employee>
         <id>101</id>
         <name>Andrew</name>
-        <designation>관리자</designation>
+        <designation>Manager</designation>
     </employee>
 
     <employee>
         <id>102</id>
         <name>Eduard</name>
-        <designation>임원</designation>
+        <designation>Executive</designation>
     </employee>
 
     <employee>
         <id>103</id>
         <name>Peter</name>
-        <designation>임원</designation>
+        <designation>Executive</designation>
     </employee>
 </employees>
 ```
+
+하지만 XSL-FO 마크업 파일에서는 매개변수를 추가합니다: `<xsl:param name="isBoldName"></xsl:param>` 그리고 이를 `Name` 열에 적용합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -520,7 +614,7 @@ public static void Example_XSLFO_to_PDF()
    <fo:page-sequence master-reference="simpleA4">
     <fo:flow flow-name="xsl-region-body">
      <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
-      회사 이름: <xsl:value-of select="companyname"/>
+      Company Name: <xsl:value-of select="companyname"/>
      </fo:block>
      <fo:block font-size="10pt">
       <fo:table table-layout="fixed" width="100%" border-collapse="separate">
@@ -538,7 +632,7 @@ public static void Example_XSLFO_to_PDF()
  </xsl:template>
  <xsl:template match="employee">
   <fo:table-row>
-   <xsl:if test="designation = '관리자'">
+   <xsl:if test="designation = 'Manager'">
     <xsl:attribute name="font-weight">bold</xsl:attribute>
    </xsl:if>
    <fo:table-cell>
@@ -564,73 +658,162 @@ public static void Example_XSLFO_to_PDF()
  </xsl:template>
 </xsl:stylesheet>
 ```
-To add XSL params we need to create own [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) and
-set as property in [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
-The following snippet shows how to use this class with the sample files described above.
 
+XSL 매개변수를 추가하려면 자체 [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0)를 생성하고
+[XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions)에서 속성으로 설정해야 합니다.
+다음 스니펫은 위에서 설명한 샘플 파일과 함께 이 클래스를 사용하는 방법을 보여줍니다.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF_Param_21_7()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
 {
-  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
-  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
-  string outputFile = Path.Combine(_dataDir, "out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-  XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  options.XsltArgumentList = new XsltArgumentList();
-  options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-  Document document = new Document(xmlInputFile, options);
-  document.Save(outputFile);
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-If you use version earlier than 21.7, please use following techinque:
-
+{{< tab tabNum="2" >}}
 ```csharp
-  public static void Example_XSLFO_to_PDF_Param_21_6()
-  {
-      var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-      var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-      var options = new Aspose.Pdf.XslFoLoadOptions();
-      var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-      pdfDocument.Save(_dataDir + "data_xml.pdf");
-  }
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  public static MemoryStream TransformXSL(string inputXml, string xsltString)
-  {
-      var transform = new XslCompiledTransform();
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-      //Create own XsltArgumentList
-      XsltArgumentList argsList = new XsltArgumentList();
-      argsList.AddParam("isBoldName", "", "no");
-      //---------------------
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
 
-      using (var reader = XmlReader.Create(new StringReader(xsltString)))
-      {
-          transform.Load(reader);
-      }
-      var memoryStream = new MemoryStream();
-
-      var results = new StreamWriter(memoryStream);
-      using (var reader = XmlReader.Create(new StringReader(inputXml)))
-      {
-          transform.Transform(reader, argsList, results);
-      }
-
-      memoryStream.Position = 0;
-      return memoryStream;
-  }
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
 }
 ```
-## Generating PDF document based on Aspose.PDF XML Schema
+{{< /tab >}}
+{{< /tabs >}}
 
-XML을 기반으로 PDF 문서를 생성하는 또 다른 방법은 Aspose.PDF XML Schema를 사용하는 것입니다. 이 다이어그램을 사용하면 HTML에서 테이블 레이아웃을 사용하는 것처럼 페이지 레이아웃을 설명할 수 있습니다. 이 방법의 작동을 더 자세히 살펴보겠습니다.
+21.7 이전 버전을 사용하는 경우 다음 기술을 사용하십시오:
 
-### Defining page
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-기본 매개변수로 페이지를 정의해 보겠습니다. 우리의 페이지는 A4 크기의 페이지이며 하나의 텍스트만 포함합니다.
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using (var reader = XmlReader.Create(new StringReader(xsltString)))
+    {
+        transform.Load(reader);
+    }
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using (var reader = XmlReader.Create(new StringReader(inputXml)))
+    {
+        transform.Transform(reader, argsList, results);
+    }
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf_Param_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, argsList, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Aspose.PDF XML 스키마를 기반으로 PDF 문서 생성
+
+XML에서 PDF 문서를 생성하는 또 다른 방법은 Aspose.PDF XML 스키마를 사용하는 것입니다. 이 다이어그램을 사용하여 HTML에서 테이블 레이아웃을 사용하는 것처럼 페이지 레이아웃을 설명할 수 있습니다. 이 방법의 작동 방식을 좀 더 자세히 살펴보겠습니다.
+
+### 페이지 정의
+
+기본 매개변수로 페이지를 정의해 보겠습니다. 우리의 페이지는 A4 페이지 크기를 가지며 텍스트 한 조각만 포함됩니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -645,17 +828,50 @@ XML을 기반으로 PDF 문서를 생성하는 또 다른 방법은 Aspose.PDF X
 
 PDF 문서를 생성하기 위해 [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index) 메서드를 사용할 것입니다.
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void Example_XML_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file to the document
+        document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+        // Save PDF document
+        document.Save(dataDir + "XML_out.pdf");
+    }
 }
 ```
- 
-새 페이지 크기를 정의하려면 `PageInfo` 요소를 추가해야 합니다. 다음 예에서는 A5 페이지 크기와 여백 25mm 및 10mm를 설정했습니다.
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML file to the document
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+    // Save PDF document
+    document.Save(dataDir + "XML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+새 페이지 크기를 정의하려면 `PageInfo` 요소를 추가해야 합니다. 다음 예제에서는 A5 페이지 크기와 25mm 및 10mm의 여백을 설정했습니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -673,10 +889,7 @@ private static void Example_XML_to_PDF()
 
 ### XML 파일에 HtmlFragment 요소 추가
 
-HTML은 XML과 유사한 태그를 포함하고 있기 때문에, HTML을 XML 태그 내에 작성하면 파서가 이를 XML 마크업으로 처리하여 단순히 XML 태그로 인식할 수 없습니다.
-
-
-HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안에 HTML을 작성하면 파서가 이를 XML 마크업으로 처리하여 XML 태그로 인식할 수 없습니다.
+HTML은 XML과 유사한 태그를 포함하고 있으므로 XML 태그 내에 HTML을 작성할 때 파서는 이를 XML 마크업으로 처리하며 단순히 XML 태그로 인식할 수 없습니다. 이 문제는 XML에서 "CDATA" 섹션을 사용하여 해결할 수 있습니다. CDATA 섹션은 파서에 의해 구문 분석되지 않는 텍스트를 포함하며, 다른 말로 하면 XML 마크업으로 처리되지 않습니다. 다음 샘플 XML 템플릿은 CDATA를 사용하여 XML 마크업 내에 HtmlFragment를 추가하는 방법을 보여줍니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -691,15 +904,16 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
 </Document>
 ```
 
-### XML 파일에 테이블 요소 추가
+### XML 파일에 Table 요소 추가
 
-`Table`, `Row`, `Cell` 요소는 테이블을 설명하는 데 사용됩니다. 다음 예제는 간단한 테이블을 사용하는 방법을 보여줍니다. 이 예제에서 일부 셀은 `Alignment` 속성을 가지고 있으며 이 속성은 숫자 값을 가집니다:
+`Table`, `Row`, `Cell` 요소는 테이블을 설명하는 데 사용됩니다. 다음 스니펫은 간단한 테이블을 사용하는 방법을 보여줍니다. 이 예제에서는 일부 셀에 `Alignment` 속성이 있으며 이 속성은 숫자 값을 가집니다:
 
 1. 왼쪽 정렬
 1. 가운데 정렬
 1. 오른쪽 정렬
-1. 양쪽 정렬. 텍스트는 왼쪽 및 오른쪽 여백에 맞춰집니다.
-```
+1. 양쪽 정렬. 텍스트는 왼쪽 및 오른쪽 여백에 정렬됩니다.
+1. 전체 정렬. '양쪽 정렬'과 유사하지만 마지막 줄은 '양쪽 정렬' 모드에서만 왼쪽 정렬되고, '전체 정렬' 모드에서는 모든 줄이 왼쪽 및 오른쪽 정렬됩니다.
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Document xmlns="Aspose.Pdf">
@@ -709,11 +923,11 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
     </PageInfo>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">그린타운-블루버그 경로의 시간표</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
-      <TextSegment>4.1.-28.3.2021 | 그린타운 → 블루버그</TextSegment>
+      <TextSegment>4.1.-28.3.2021 | GREENTOWN → BLUEBERG</TextSegment>
     </TextFragment>
     <Table ColumnAdjustment="AutoFitToWindow" ColumnWidths ="10 10 10 10">
       <DefaultCellPadding Top="5" Left="0" Right="0" Bottom="5" />
@@ -730,22 +944,22 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>출발</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>도착</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>요일</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>배</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -762,12 +976,12 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>월-토</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>스타</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -784,12 +998,12 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>메가스타</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -806,12 +1020,12 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>스타</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -828,12 +1042,12 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>메가스타</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -850,12 +1064,12 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>스타</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -872,12 +1086,12 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>월-금, 일</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>메가스타</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -885,7 +1099,8 @@ HTML은 XML과 유사한 태그를 포함하고 있기 때문에, XML 태그 안
   </Page>
 </Document>
 ```
-Tables are used for layout of documents. For example, we can customize a page header. In this case, table were used to divide the header into 2 columns.
+
+테이블은 문서 레이아웃에 사용됩니다. 예를 들어 페이지 헤더를 사용자 정의할 수 있습니다. 이 경우 테이블을 사용하여 헤더를 2열로 나누었습니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -900,12 +1115,12 @@ Tables are used for layout of documents. For example, we can customize a page he
             <Row>
                 <Cell Alignment="1">
                     <TextFragment>
-                        <TextSegment>날짜: 01/01/2021</TextSegment>
+                        <TextSegment>Date: 01/01/2021</TextSegment>
                     </TextFragment>
                 </Cell>
                 <Cell Alignment="3">
                     <TextFragment>
-                        <TextSegment>페이지 $p / $P</TextSegment>
+                        <TextSegment>Page $p / $P</TextSegment>
                     </TextFragment>
                 </Cell>
             </Row>
@@ -913,11 +1128,11 @@ Tables are used for layout of documents. For example, we can customize a page he
     </Header>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">그린타운-블루버그 노선 시간표</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
-      <TextSegment>4.1.-28.3.2021 | 그린타운 → 블루버그</TextSegment>
+      <TextSegment>4.1.-28.3.2021 | GREENTOWN → BLUEBERG</TextSegment>
     </TextFragment>
     <Table ColumnAdjustment="AutoFitToWindow" ColumnWidths ="10 10 10 10">
       <DefaultCellPadding Top="5" Left="0" Right="0" Bottom="5" />
@@ -934,22 +1149,22 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>출발</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>도착</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>평일</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>선박</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -966,12 +1181,12 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>월-토</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>스타</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -988,12 +1203,12 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>메가스타</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1010,12 +1225,12 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>스타</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1032,12 +1247,12 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>메가스타</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1054,12 +1269,12 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>매일</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>스타</TextSegment>
+            <TextSegment>Star</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1076,12 +1291,12 @@ Tables are used for layout of documents. For example, we can customize a page he
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>월-금, 일</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>메가스타</TextSegment>
+            <TextSegment>Megastar</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -1089,9 +1304,10 @@ Tables are used for layout of documents. For example, we can customize a page he
   </Page>
 </Document>
 ```
-### 동적으로 콘텐츠 업데이트
 
-BindXML() 메서드는 XML 파일 내용을 로드하는 기능을 제공하며 Document.save() 메서드는 출력을 PDF 형식으로 저장하는 데 사용할 수 있습니다. 그러나 변환하는 동안 XML 내부의 개별 요소에 접근하고 XML을 템플릿으로 사용할 수도 있습니다. 다음 코드 스니펫은 XML 파일에서 TextSegments에 접근하는 단계를 보여줍니다.
+### 콘텐츠 동적으로 업데이트
+
+BindXML() 메서드는 XML 파일 내용을 로드하는 기능을 제공하며 Document.save() 메서드는 출력을 PDF 형식으로 저장하는 데 사용할 수 있습니다. 그러나 변환 중에 XML 내부의 개별 요소에 접근하고 XML을 템플릿으로 사용할 수도 있습니다. 다음 코드 스니펫은 XML 파일에서 TextSegments에 접근하는 단계를 보여줍니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1107,28 +1323,70 @@ BindXML() 메서드는 XML 파일 내용을 로드하는 기능을 제공하며 
 </Document>
 ```
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// Instantiate Document object
-Document doc = new Document();
-// Bind source XML file
-doc.BindXml( dataDir + "log.xml");
-// Get reference of page object from XML
-Page page = (Page)doc.GetObjectById("mainSection");
-// Get reference of first TextSegment with ID boldHtml
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-// Get reference of second TextSegment with ID strongHtml
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-// Save resultant PDF file
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "log.xml");
+
+        // Get reference of page object from XML
+        var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+        // Get reference of first TextSegment with ID boldHtml
+        var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+        // Get reference of second TextSegment with ID strongHtml
+        segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+        // Save PDF document
+        document.Save(dataDir + "XMLToPDF_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "log.xml");
+
+    // Get reference of page object from XML
+    var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+    // Get reference of first TextSegment with ID boldHtml
+    var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+    // Get reference of second TextSegment with ID strongHtml
+    segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+    // Save PDF document
+    document.Save(dataDir + "XMLToPDF_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### 페이지에 그래픽 요소 추가
 
-우리는 XML 문서에 추가적인 요소들을 추가할 수 있습니다: Image 또는 Graph 객체. 다음 코드는 문서에 이러한 요소들을 추가하는 방법을 보여줍니다.
+XML 문서에 이미지 또는 그래프 객체와 같은 추가 요소를 추가할 수 있습니다. 다음 스니펫은 이러한 요소를 문서에 추가하는 방법을 보여줍니다.
 
 ```xml
 <Graph Width="20" Height="20">
@@ -1142,7 +1400,7 @@ doc.Save(dataDir + "XMLToPDF_out.pdf");
 
 ### XML을 PDF로 변환할 때 이미지 경로 설정
 
-다음 XML 템플릿은 ID가 "testImg"인 `<Image>` 태그를 포함하고 있습니다. 코드에서 이미지 경로를 설정하려는 경우 변환 과정 중 XML 템플릿에서 Image 요소에 접근하여 원하는 이미지 주소로 경로를 설정할 수 있습니다.
+다음 XML 템플릿에는 ID "testImg"가 있는 `<Image>` 태그가 포함되어 있습니다. 코드에서 이미지 경로를 설정하려는 경우 변환 과정에서 XML 템플릿에서 이미지 요소에 접근하고 원하는 주소로 경로를 설정할 수 있습니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1189,21 +1447,63 @@ doc.Save(dataDir + "XMLToPDF_out.pdf");
  </Page>
 </Document>
 ```
-```
-Code to set image path in XML template is as follows:
 
+XML 템플릿에서 이미지 경로를 설정하는 코드는 다음과 같습니다:
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-string inXml = dataDir + "input.xml";
-string inFile = dataDir + "aspose-logo.jpg";
-string outFile = dataDir + "output_out.pdf";
-Document doc = new Document();
-doc.BindXml(inXml);
-Image image = (Image)doc.GetObjectById("testImg");
-image.File = inFile;
-doc.Save(outFile);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "input.xml");
+
+        // Get reference of Image with ID testImg
+        var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+        // Set image file
+        image.File = dataDir + "aspose-logo.jpg";
+
+        // Save PDF document
+        document.Save(dataDir + "output_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "input.xml");
+
+    // Get reference of Image with ID testImg
+    var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+    // Set image file
+    image.File = dataDir + "aspose-logo.jpg";
+
+    // Save PDF document
+    document.Save(dataDir + "output_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -1268,65 +1568,3 @@ doc.Save(outFile);
     }
 }
 </script>
-
----
-sidebar_position: 1
-changefreq: "monthly"
-type: docs
----
-
-# 빠른 시작
-
-이 가이드는 이 프로젝트를 신속하게 시작하는 데 도움이 될 것입니다.
-
-## 필수 조건
-
-- Node.js 14.x 이상
-- npm 6.x 이상
-
-## 설치
-
-프로젝트를 클론하고 필요한 종속성을 설치하십시오.
-
-```bash
-git clone https://github.com/your-repo/project-name.git
-cd project-name
-npm install
-```
-
-## 개발 서버 실행
-
-개발 서버를 시작하려면 다음 명령을 실행하십시오.
-
-```bash
-npm start
-```
-
-브라우저에서 `http://localhost:3000`을 열어 응용 프로그램을 확인하십시오.
-
-## 빌드
-
-응용 프로그램을 빌드하려면 다음 명령을 실행하십시오.
-
-```bash
-npm run build
-```
-
-빌드된 파일은 `build` 디렉토리에 저장됩니다.
-
-## 테스트
-
-테스트를 실행하려면 다음 명령을 실행하십시오.
-
-```bash
-npm test
-```
-
-## 배포
-
-응용 프로그램을 배포하려면 다음 명령을 실행하십시오.
-
-```bash
-npm run deploy
-```
-```

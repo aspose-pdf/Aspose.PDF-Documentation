@@ -1,8 +1,11 @@
 ---
-title: PDFでの見出しの操作
+title: PDFの見出しの操作
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 url: /ja/net/working-with-headings/
-description: C#を使用してPDFドキュメントの見出しに番号を付ける。Aspose.PDF for .NETは、さまざまな種類の番号付けスタイルを提供します。
+weight: 70
+description: C#を使用してPDFドキュメントの見出しに番号を付けます。Aspose.PDF for .NETはさまざまな種類の番号スタイルを提供します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -12,22 +15,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFでの見出しの操作",
-    "alternativeHeadline": "PDFで見出しを作成する",
+    "headline": "Working with Headings in PDF",
+    "alternativeHeadline": "Enhance PDF Headings with Custom Numbering Styles",
+    "abstract": "Aspose.PDF for .NETを使用してカスタマイズ可能な見出し番号でPDFドキュメントを強化します。この新機能により、ローマ数字やアルファベットリストなど、さまざまな事前定義された番号スタイルを適用して見出しを効果的に整理し、ドキュメントの可読性と構造を向上させることができます。この多用途な機能をC#アプリケーションに統合して、PDF作成プロセスを効率化します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, pdfの見出し",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "PDF, C#, headings in PDF, numbering style, Aspose.PDF for .NET, pre-defined numbering styles, NumberingStyle enumeration, document generation, Heading class, pdf document manipulation",
+    "wordcount": "453",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -69,91 +73,96 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-headings/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#を使用してPDFドキュメントの見出しに番号を付ける。Aspose.PDF for .NETは、さまざまな種類の番号付けスタイルを提供します。"
+    "dateModified": "2024-11-25",
+    "description": "C#を使用してPDFドキュメントの見出しに番号を付けます。Aspose.PDF for .NETはさまざまな種類の番号スタイルを提供します。"
 }
 </script>
+
 ## 見出しに番号スタイルを適用する
 
-見出しはどのドキュメントにとっても重要な部分です。ライターは常に、見出しを読者にとってより目立つようにし、意味のあるものにしようと努力します。ドキュメントに複数の見出しがある場合、ライターにはこれらの見出しを整理するいくつかの方法があります。最も一般的な方法の一つは、番号スタイルで見出しを書くことです。
+見出しは、どのドキュメントにおいても重要な部分です。作成者は常に見出しをより目立たせ、読者にとって意味のあるものにしようとします。ドキュメントに複数の見出しがある場合、作成者はこれらの見出しを整理するためのいくつかのオプションを持っています。見出しを整理する最も一般的なアプローチの1つは、番号スタイルで見出しを書くことです。
 
-[Aspose.PDF for .NET](/pdf/ja/net/)は、多くの事前定義された番号スタイルを提供しています。これらの事前定義された番号スタイルは、NumberingStyleという列挙に保存されています。NumberingStyle列挙の事前定義された値とその説明は以下の通りです：
+[Aspose.PDF for .NET](/pdf/ja/net/)は多くの事前定義された番号スタイルを提供しています。これらの事前定義された番号スタイルは、列挙型NumberingStyleに格納されています。NumberingStyle列挙型の事前定義された値とその説明は以下の通りです：
 
-|**見出しタイプ**|**説明**|
+|**見出しの種類**|**説明**|
 | :- | :- |
-|NumeralsArabic|アラビア語のタイプ、例えば、1,1.1,...|
-|NumeralsRomanUppercase|ローマ数字の大文字タイプ、例えば、I,I.II, ...|
-|NumeralsRomanLowercase|ローマ数字の小文字タイプ、例えば、i,i.ii, ...|
-|LettersUppercase|英語の大文字タイプ、例えば、A,A.B, ...|
-|LettersLowercase|英語の小文字タイプ、例えば、a,a.b, ...|
+|NumeralsArabic|アラビア数字タイプ、例えば、1,1.1,...|
+|NumeralsRomanUppercase|ローマ数字大文字タイプ、例えば、I,I.II,...|
+|NumeralsRomanLowercase|ローマ数字小文字タイプ、例えば、i,i.ii,...|
+|LettersUppercase|英語大文字タイプ、例えば、A,A.B,...|
+|LettersLowercase|英語小文字タイプ、例えば、a,a.b,...|
+**Aspose.Pdf.Heading**クラスの**Style**プロパティは、見出しの番号スタイルを設定するために使用されます。
 
-**Aspose.PDF.Heading** クラスの **Style** プロパティは、見出しの番号スタイルを設定するために使用されます。
-**Style** プロパティは **Aspose.PDF.Heading** クラスの見出しの番号スタイルを設定するために使用されます。
-
-|**図: 定義済みの番号スタイル**|
+|**図：事前定義された番号スタイル**|
 | :- |
-上の図に示された出力を得るためのソースコードは、以下の例に示されています。
+上記の図に示す出力を得るためのソースコードは、以下の例に示されています。
 
-次のコードスニペットは、新しいグラフィカル [Aspose.Drawing](/pdf/ja/net/drawing/) インターフェイスでも動作します。
+次のコードスニペットは、[Aspose.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 ```csharp
-// 文書ディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Headings();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ApplyNumberStyleToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-Document pdfDoc = new Document();
-pdfDoc.PageInfo.Width = 612.0;
-pdfDoc.PageInfo.Height = 792.0;
-pdfDoc.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfDoc.PageInfo.Margin.Left = 72;
-pdfDoc.PageInfo.Margin.Right = 72;
-pdfDoc.PageInfo.Margin.Top = 72;
-pdfDoc.PageInfo.Margin.Bottom = 72;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.PageInfo.Width = 612.0;
+        document.PageInfo.Height = 792.0;
+        document.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        document.PageInfo.Margin.Left = 72;
+        document.PageInfo.Margin.Right = 72;
+        document.PageInfo.Margin.Top = 72;
+        document.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.Page pdfPage = pdfDoc.Pages.Add();
-pdfPage.PageInfo.Width = 612.0;
-pdfPage.PageInfo.Height = 792.0;
-pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
-pdfPage.PageInfo.Margin.Left = 72;
-pdfPage.PageInfo.Margin.Right = 72;
-pdfPage.PageInfo.Margin.Top = 72;
-pdfPage.PageInfo.Margin.Bottom = 72;
+        // Add page
+        var pdfPage = document.Pages.Add();
+        pdfPage.PageInfo.Width = 612.0;
+        pdfPage.PageInfo.Height = 792.0;
+        pdfPage.PageInfo.Margin = new Aspose.Pdf.MarginInfo();
+        pdfPage.PageInfo.Margin.Left = 72;
+        pdfPage.PageInfo.Margin.Right = 72;
+        pdfPage.PageInfo.Margin.Top = 72;
+        pdfPage.PageInfo.Margin.Bottom = 72;
 
-Aspose.Pdf.FloatingBox floatBox = new Aspose.Pdf.FloatingBox();
-floatBox.Margin = pdfPage.PageInfo.Margin;
+        // Create a floating box with the same margin as the page
+        var floatBox = new Aspose.Pdf.FloatingBox();
+        floatBox.Margin = pdfPage.PageInfo.Margin;
 
-pdfPage.Paragraphs.Add(floatBox);
+        // Add the floating box to the page
+        pdfPage.Paragraphs.Add(floatBox);
 
-TextFragment textFragment = new TextFragment();
-TextSegment segment = new TextSegment();
+        // Add headings with numbering styles
+        var heading = new Aspose.Pdf.Heading(1);
+        heading.IsInList = true;
+        heading.StartNumber = 1;
+        heading.Text = "List 1";
+        heading.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading);
 
-Aspose.Pdf.Heading heading = new Aspose.Pdf.Heading(1);
-heading.IsInList = true;
-heading.StartNumber = 1;
-heading.Text = "List 1";
-heading.Style = NumberingStyle.NumeralsRomanLowercase;
-heading.IsAutoSequence = true;
+        var heading2 = new Aspose.Pdf.Heading(1);
+        heading2.IsInList = true;
+        heading2.StartNumber = 13;
+        heading2.Text = "List 2";
+        heading2.Style = Aspose.Pdf.NumberingStyle.NumeralsRomanLowercase;
+        heading2.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading2);
 
-floatBox.Paragraphs.Add(heading);
+        var heading3 = new Aspose.Pdf.Heading(2);
+        heading3.IsInList = true;
+        heading3.StartNumber = 1;
+        heading3.Text = "the value, as of the effective date of the plan, of property to be distributed under the plan on account of each allowed";
+        heading3.Style = Aspose.Pdf.NumberingStyle.LettersLowercase;
+        heading3.IsAutoSequence = true;
+        floatBox.Paragraphs.Add(heading3);
 
-Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
-heading2.IsInList = true;
-heading2.StartNumber = 13;
-heading2.Text = "List 2";
-heading2.Style = NumberingStyle.NumeralsRomanLowercase;
-heading2.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading2);
-
-Aspose.Pdf.Heading heading3 = new Aspose.Pdf.Heading(2);
-heading3.IsInList = true;
-heading3.StartNumber = 1;
-heading3.Text = "計画の発効日現在の計画に基づいて分配される財産の価値";
-heading3.Style = NumberingStyle.LettersLowercase;
-heading3.IsAutoSequence = true;
-
-floatBox.Paragraphs.Add(heading3);
-dataDir = dataDir + "ApplyNumberStyle_out.pdf";
-pdfDoc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ApplyNumberStyle_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -182,23 +191,23 @@ pdfDoc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -207,7 +216,7 @@ pdfDoc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "PDF 操作ライブラリ for .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -219,5 +228,3 @@ pdfDoc.Save(dataDir);
     }
 }
 </script>
-```
-

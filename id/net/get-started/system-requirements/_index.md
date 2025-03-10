@@ -2,71 +2,136 @@
 title: Persyaratan Sistem
 linktitle: Persyaratan Sistem
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/system-requirements/
-description: Bagian ini mencantumkan sistem operasi yang didukung yang dibutuhkan oleh pengembang untuk bekerja dengan sukses dengan Aspose.PDF untuk .NET.
-lastmod: "2023-05-12"
+description: Bagian ini mencantumkan sistem operasi yang didukung yang diperlukan oleh pengembang untuk berhasil bekerja dengan Aspose.PDF for .NET.
+lastmod: "2024-09-04"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "System Requirements",
+    "alternativeHeadline": "Comprehensive OS Support for Aspose.PDF in .NET",
+    "abstract": "Aspose.PDF for .NET sekarang menawarkan kompatibilitas luas dengan berbagai sistem operasi, memungkinkan pengembang untuk membuat dan memanipulasi dokumen PDF tanpa memerlukan Adobe Acrobat untuk pemrosesan awal. Pengguna dapat beroperasi di sistem mana pun yang mendukung .NET Standard 2.0 dan yang lebih baru, memastikan pengalaman pengembangan yang serbaguna di seluruh platform Windows, macOS, Linux, dan Android. Fitur ini meningkatkan aksesibilitas bagi pengembang, memungkinkan mereka untuk bekerja tanpa hambatan di lingkungan yang mereka pilih.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "415",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/system-requirements/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/system-requirements/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
 ## Ikhtisar
-Untuk menghasilkan dan memanipulasi dokumen PDF, mesin tempat Aspose.PDF untuk .NET berjalan tidak perlu memiliki Adobe Acrobat terinstal: Aspose.PDF untuk .NET adalah mesin pembuatan dokumen PDF. Namun, untuk melihat dokumen PDF yang dihasilkan oleh Aspose.PDF untuk .NET, mesin tersebut memerlukan setidaknya Adobe Acrobat Reader. Ini dapat diunduh secara gratis.
+API dapat digunakan untuk membangun aplikasi di sistem operasi mana pun yang mendukung .NET Standard 2.0 dan yang lebih baru atau .NET Framework 4.0.
+
+Untuk menghasilkan dan memanipulasi dokumen PDF, mesin tempat Aspose.PDF for .NET berjalan tidak perlu memiliki Adobe Acrobat terinstal: Aspose.PDF for .NET adalah mesin pembuatan dokumen PDF. Namun, untuk melihat dokumen PDF yang dihasilkan oleh Aspose.PDF for .NET, mesin tersebut setidaknya memerlukan Adobe Acrobat Reader. Ini dapat diunduh secara gratis.
 
 ## Sistem Operasi yang Didukung
 
 ### Windows
-- Microsoft Windows 2003 Server (x64, x86)
-- Microsoft Windows 2008 Server (x64, x86)
-- Microsoft Windows 2012 Server (x64, x86)
-- Microsoft Windows 2012 R2 Server (x64, x86)
-- Microsoft Windows 2016 Server (x64, x86)
-- Microsoft Windows 2019 Server (x64, x86)
-- Microsoft Windows Vista (x64, x86)
-- Microsoft Windows XP (x64, x86)
-- Microsoft Windows XP (x64, x86)
-- Microsoft Windows 7 (x64, x86)
-- Microsoft Windows 8, 8.1 (x64, x86)
-- Microsoft Windows 10 (x64, x86)
-- Microsoft Windows 11 (x64, x86)
-- Microsoft Azure
+- Microsoft Windows 2003 Server (x64, x86) SP2[^1].
+- Microsoft Windows 2008 Server (x64, x86)[^1].
+- Microsoft Windows 2012 Server (x64, x86)[^1].
+- Microsoft Windows 2012 R2 Server (x64, x86)[^1].
+- Microsoft Windows 2016 Server (x64, x86)[^1].
+- Microsoft Windows 2019 Server (x64, x86)[^1].
+- Microsoft Windows 2020 Server (x64, x86).
+- Microsoft Windows 2022 Server (x64, x86).
+- Microsoft Windows Vista (x64, x86)[^1].
+- Microsoft Windows XP (x64, x86)[^1].
+- Microsoft Windows 7 (x64, x86)[^1].
+- Microsoft Windows 8, 8.1 (x64, x86)[^1].
+- Microsoft Windows 10 (x64, x86).
+- Microsoft Windows 11 (x64, x86).
+- Microsoft Azure.
 
 ### macOS
-- Mac OS X x64 (10.12+)
+- Mac OS X x64 (10.12+).
 
 ### Linux
-- Linux x64 (6, 7, 27, 9, 8.7+, 18.04, 16.04, 14.04, 18, 17, 42.3+, 12 SP2+)
+- Linux x64 (6, 7, 27, 9, 8.7+, 18.04, 16.04, 14.04, 18, 17, 42.3+, 12 SP2+).
+
+### Android
+- Android (8.0, 10, 11, 12, 13, 14, 15).
 
 ## Lingkungan Pengembangan
-Anda dapat menggunakan Aspose.PDF untuk .NET untuk mengembangkan aplikasi di lingkungan pengembangan apa pun yang menargetkan platform .NET, tetapi lingkungan berikut secara eksplisit didukung:
+Anda dapat menggunakan Aspose.PDF for .NET untuk mengembangkan aplikasi di lingkungan pengembangan mana pun yang menargetkan platform .NET, tetapi lingkungan berikut secara eksplisit didukung:
 
-- Microsoft Visual Studio 2010
-- Microsoft Visual Studio 2011
-- Microsoft Visual Studio 2012
-- Microsoft Visual Studio 2013
-- Microsoft Visual Studio 2015
-- Microsoft Visual Studio 2017
-- Microsoft Visual Studio 2019
-- Microsoft Visual Studio 2022
+- Microsoft Visual Studio 2010[^1].
+- Microsoft Visual Studio 2011[^1].
+- Microsoft Visual Studio 2012[^1].
+- Microsoft Visual Studio 2013[^1].
+- Microsoft Visual Studio 2015[^1].
+- Microsoft Visual Studio 2017[^1].
+- Microsoft Visual Studio 2019.
+- Microsoft Visual Studio 2022.
+- Microsoft Visual Studio Code.
 
-## Framework yang Didukung
-Versi .NET Framework berikut ini didukung:
+## Kerangka Kerja yang Didukung
+Versi .NET Framework berikut didukung:
 
-- .NET Framework 4.0
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.5.2
-- .NET Framework 4.6.0
-- .NET Framework 4.6.2
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.5.1
-- .NET Framework 4.6.0
-- .NET Framework 4.6.2
-- .NET Framework 4.7
-- .NET Framework 4.7.2
-- .NET Framework 4.8.1
-- .NET Standard 2.0 (.NET Core 3.1+)
-- .NET 6.0
-- .NET 7.0
+- .NET Framework 4.0.
+- .NET Framework 4.8.1.
+- .NET Standard 2.0 (.NET Core 3.1+).
+- .NET 6.0.
+- .NET 7.0.
+- .NET 8.0.
+
+[^1]: Aspose.PDF for .NET didukung dengan .NET Framework 4.0. Namun, karena .NET Framework 4.0 sudah usang, dukungan ini diberikan semata-mata untuk tujuan kompatibilitas. Harap dicatat bahwa kami berhak untuk menghentikan publikasi assembly untuk .NET Framework 4.0 kapan saja.

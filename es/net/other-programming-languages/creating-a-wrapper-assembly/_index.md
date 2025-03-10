@@ -1,31 +1,96 @@
 ---
-title: Creando un Ensamblado Contenedor
+title: Creando un Ensamblaje Wrapper
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /es/net/creating-a-wrapper-assembly/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Creating a Wrapper Assembly",
+    "alternativeHeadline": "Simplify COM Interop with Wrapper Assemblies",
+    "abstract": "La nueva función de Ensamblaje Wrapper para Aspose.PDF for .NET permite a los desarrolladores crear una interfaz simplificada para interactuar con las clases, métodos y propiedades de Aspose.PDF desde código no administrado. Al encapsular la complejidad de COM Interop, esta funcionalidad agiliza el desarrollo del proyecto, facilitando la gestión y utilización de las funcionalidades de PDF sin necesidad de habilidades avanzadas en programación .NET",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "244",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/creating-a-wrapper-assembly/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/creating-a-wrapper-assembly/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
+}
+</script>
 
 {{% alert color="primary" %}}
 
-Si necesita utilizar muchas clases, métodos y propiedades de Aspose.PDF para .NET, considere crear un ensamblado contenedor (usando C# u otro lenguaje de programación .NET). Los ensamblados contenedores ayudan a evitar el uso directo de Aspose.PDF para .NET desde código no administrado.
+Si necesitas usar muchas de las clases, métodos y propiedades de Aspose.PDF for .NET, considera crear un ensamblaje wrapper (usando C# o cualquier otro lenguaje de programación .NET). Los ensamblajes wrapper ayudan a evitar el uso de Aspose.PDF for .NET directamente desde código no administrado.
 
-Un buen enfoque es desarrollar un ensamblado .NET que haga referencia a Aspose.PDF para .NET y realice todo el trabajo con él, y solo exponga un conjunto mínimo de clases y métodos al código no administrado. Su aplicación entonces debería trabajar solo con su biblioteca contenedora.
+Un buen enfoque es desarrollar un ensamblaje .NET que haga referencia a Aspose.PDF for .NET y realice todo el trabajo con él, y solo exponga un conjunto mínimo de clases y métodos al código no administrado. Tu aplicación debería trabajar solo con tu biblioteca wrapper.
 
-Reducir el número de clases y métodos que necesita invocar a través de COM Interop simplifica el proyecto. Usar clases .NET a través de COM Interop a menudo requiere habilidades avanzadas.
+Reducir el número de clases y métodos que necesitas invocar a través de COM Interop simplifica el proyecto. Usar clases .NET a través de COM Interop a menudo requiere habilidades avanzadas.
 
 {{% /alert %}}
 
-## Envoltorio Aspose.PDF para .NET
+## Ensamblaje Wrapper de Aspose.PDF for .NET
 
 ```csharp
-
-using System;
 using System.Runtime.InteropServices;
-namespace PdfText
+
+namespace TextRetriever
 {
-    [Guid("FC969AC9-6591-46FB-A4AB-DB12A776F3BF")]
     [InterfaceType(ComInterfaceType.InterfaceIsIDispatch)]
-    public interface IPetriever
+    public interface IRetriever
     {
         [DispId(1)]
         void SetLicense(string file);
@@ -34,37 +99,33 @@ namespace PdfText
         string GetText(string file);
     }
 
-    [Guid("3D59100F-3CC5-463D-B509-58FA0520B436")]
     [ClassInterface(ClassInterfaceType.None)]
-
-    [ComSourceInterfaces(typeof(IPetriever))]
-
-    public class Petriever : IPetriever
+    [ComSourceInterfaces(typeof(IRetriever))]
+    public class Retriever : IRetriever
     {
         public void SetLicense(string file)
         {
-            License lic = new License();
+            var lic = new Aspose.Pdf.License();
             lic.SetLicense(file);
         }
 
         public string GetText(string file)
         {
-            // abrir documento
-            Document doc = new Document(file);
+            // Open PDF document
+            using (var document = new Aspose.Pdf.Document(file))
+            {
+                // Create TextAbsorber object to extract text
+                var absorber = new Aspose.Pdf.Text.TextAbsorber();
 
-            // crear objeto TextAbsorber para extraer texto
-            TextAbsorber absorber = new TextAbsorber();
+                // Accept the absorber for all document's pages
+                document.Pages.Accept(absorber);
 
-            // aceptar el absorber para todas las páginas del documento
-            doc.Pages.Accept(absorber);
+                // Get the extracted text
+                string text = absorber.Text;
 
-            // obtener el texto extraído
-            string text = absorber.Text;
-            return text;
-
+                return text;
+            }
         }
     }
 }
-
 ```
-

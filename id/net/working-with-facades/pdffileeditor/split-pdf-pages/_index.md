@@ -1,63 +1,284 @@
 ---
 title: Memisahkan Halaman PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /id/net/split-pdf-pages/
 description: Bagian ini menjelaskan cara memisahkan halaman PDF dengan Aspose.PDF Facades menggunakan kelas PdfFileEditor.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Split PDF pages",
+    "alternativeHeadline": "Effortlessly Split PDF Pages via File Paths and Streams",
+    "abstract": "Fitur Memisahkan Halaman PDF yang baru di Aspose.PDF for .NET memungkinkan pengguna untuk secara efisien membagi dokumen PDF menjadi berbagai segmen menggunakan kelas PdfFileEditor. Fungsionalitas ini mendukung pemisahan dari halaman pertama hingga halaman yang ditentukan, pemisahan menjadi set besar, dan bahkan mengisolasi halaman individu, semua melalui jalur file atau aliran, memberikan opsi yang serbaguna untuk manipulasi PDF.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1017",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/split-pdf-pages/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/split-pdf-pages/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
-## Memisahkan Halaman PDF dari Pertama Menggunakan Jalur Berkas
+## Memisahkan Halaman PDF dari Pertama Menggunakan Jalur File
 
-Metode [SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor) memungkinkan Anda untuk memisahkan berkas PDF mulai dari halaman pertama dan berakhir pada nomor halaman yang ditentukan. Jika Anda ingin memanipulasi berkas PDF dari disk, Anda dapat memberikan jalur berkas dari berkas PDF input dan output ke metode ini. Potongan kode berikut menunjukkan cara memisahkan halaman PDF dari pertama menggunakan jalur berkas.
+[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk memisahkan file PDF mulai dari halaman pertama dan berakhir di nomor halaman yang ditentukan. Jika Anda ingin memanipulasi file PDF dari disk, Anda dapat mengirimkan jalur file dari file PDF input dan output ke metode ini. Potongan kode berikut menunjukkan cara memisahkan halaman PDF dari pertama menggunakan jalur file.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesUsingPaths-SplitPagesUsingPaths.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfPagesFromFirstUsingFilePaths()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Split pages
+    pdfEditor.SplitFromFirst(dataDir + "MultiplePages.pdf", 3, dataDir + "SplitPagesUsingPaths_out.pdf");
+}
+```
 
-## Memisahkan Halaman PDF dari Pertama Menggunakan Aliran Berkas
+## Memisahkan Halaman PDF dari Pertama Menggunakan Aliran File
 
-[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor) memungkinkan Anda untuk membagi file PDF mulai dari halaman pertama dan berakhir pada nomor halaman yang ditentukan. Jika Anda ingin memanipulasi file PDF dari aliran, Anda dapat memasukkan aliran PDF input dan output ke metode ini. Cuplikan kode berikut menunjukkan cara membagi halaman PDF dari yang pertama menggunakan aliran file.
+[SplitFromFirst](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/splitfromfirst/methods/1) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk memisahkan file PDF mulai dari halaman pertama dan berakhir di nomor halaman yang ditentukan. Jika Anda ingin memanipulasi file PDF dari aliran, Anda dapat mengirimkan aliran PDF input dan output ke metode ini. Potongan kode berikut menunjukkan cara memisahkan halaman PDF dari pertama menggunakan aliran file.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesUsingStreams-SplitPagesUsingStreams.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfPagesFromFirstUsingFileStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "SplitPagesUsingStreams_out.pdf", FileMode.Create))
+        {
+            // Split pages
+            pdfEditor.SplitFromFirst(inputStream, 3, outputStream);
+        }
+    }
+}
+```
 
-## Membagi Halaman PDF ke Dalam Jumlah Besar Menggunakan Jalur File
+## Memisahkan Halaman PDF ke Set Besar Menggunakan Jalur File
 
-[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor/methods/splittobulks/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffileeditor) memungkinkan Anda untuk membagi file PDF menjadi beberapa set halaman. Dalam contoh ini, kami memerlukan dua set halaman (1, 2) dan (5, 6). Jika Anda ingin mengakses file PDF dari disk, Anda perlu memasukkan PDF sebagai jalur file. Metode ini mengembalikan array MemoryStream. Anda dapat melakukan loop melalui array ini dan menyimpan set halaman individu sebagai file terpisah. Potongan kode berikut menunjukkan kepada Anda cara membagi halaman PDF secara massal menggunakan jalur file.
+[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk memisahkan file PDF menjadi beberapa set halaman. Dalam contoh ini, kami memerlukan dua set halaman (1, 2) dan (5, 6). Jika Anda ingin mengakses file PDF dari disk, Anda perlu mengirimkan PDF input sebagai jalur file. Metode ini mengembalikan array MemoryStream. Anda dapat melakukan loop melalui array ini dan menyimpan set halaman individu sebagai file terpisah. Potongan kode berikut menunjukkan cara memisahkan halaman PDF ke set besar menggunakan jalur file.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesToBulkUsingPaths-SplitPagesToBulkUsingPaths.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfPagesToBulkUsingFilePaths()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    var fileNumber = 1;
+    // Create array of pages to split
+    var numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+    // Split to bulk
+    var outBuffer = pdfEditor.SplitToBulks(dataDir + "MultiplePages.pdf", numberOfPages);
+    // Save individual files
+    foreach (var outStream in outBuffer)
+    {
+        using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
+        {
+            outStream.WriteTo(outFileStream);
+            fileNumber++;
+        }
+    }
+}
+```
 
-## Membagi Halaman PDF Secara Massal Menggunakan Streams
+## Memisahkan Halaman PDF ke Set Besar Menggunakan Aliran
 
-Metode [SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membagi file PDF menjadi beberapa set halaman. Dalam contoh ini, kami memerlukan dua set halaman (1, 2) dan (5, 6). Anda dapat mengoper aliran ke metode ini alih-alih mengakses file dari disk. Metode ini mengembalikan array dari MemoryStream. Anda dapat melakukan loop melalui array ini dan menyimpan set halaman individual sebagai file terpisah. Cuplikan kode berikut menunjukkan cara membagi halaman PDF secara massal menggunakan aliran.
+[SplitToBulks](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittobulks/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk memisahkan file PDF menjadi beberapa set halaman. Dalam contoh ini, kami memerlukan dua set halaman (1, 2) dan (5, 6). Anda dapat mengirimkan aliran ke metode ini sebagai pengganti mengakses file dari disk. Metode ini mengembalikan array MemoryStream. Anda dapat melakukan loop melalui array ini dan menyimpan set halaman individu sebagai file terpisah. Potongan kode berikut menunjukkan cara memisahkan halaman PDF ke set besar menggunakan aliran.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesToBulkUsingStreams-SplitPagesToBulkUsingStreams.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfPagesToBulkUsingStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create input stream
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    {
+        var fileNumber = 1;
+        // Create array of pages to split
+        var numberOfPages = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } };
+        // Split to bulk
+        var outBuffer = pdfEditor.SplitToBulks(inputStream, numberOfPages);
+        // Save individual files
+        foreach (var outStream in outBuffer)
+        {
+            using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
+            {
+                outStream.WriteTo(outFileStream);
+                fileNumber++;
+            }
+        }
+    }
+}
+```
 
-## Membagi Halaman PDF Hingga Akhir Menggunakan Jalur File
+## Memisahkan Halaman PDF ke Akhir Menggunakan Jalur File
 
-Metode [SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk membagi PDF dari nomor halaman yang ditentukan hingga akhir file PDF dan menyimpannya sebagai PDF baru. Untuk melakukan ini, menggunakan jalur file, Anda perlu memberikan jalur file input dan output serta nomor halaman dari mana pemisahan perlu dimulai. PDF output akan disimpan ke disk. Cuplikan kode berikut menunjukkan cara memisahkan halaman PDF hingga akhir menggunakan jalur file.
+[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk memisahkan PDF dari nomor halaman yang ditentukan hingga akhir file PDF dan menyimpannya sebagai PDF baru. Untuk melakukan ini, menggunakan jalur file, Anda perlu mengirimkan jalur file input dan output serta nomor halaman dari mana pemisahan perlu dimulai. PDF output akan disimpan ke disk. Potongan kode berikut menunjukkan cara memisahkan halaman PDF ke akhir menggunakan jalur file.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesToEndUsingPaths-SplitPagesToEndUsingPaths.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfPagesToEndUsingFilePaths()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Split pages
+    pdfEditor.SplitToEnd(dataDir + "MultiplePages.pdf", 3, dataDir + "SplitPagesToEndUsingPaths_out.pdf");
+}
+```
 
-## Memisahkan Halaman PDF Hingga Akhir Menggunakan Streams
+## Memisahkan Halaman PDF ke Akhir Menggunakan Aliran
 
-Metode [SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda memisahkan PDF dari nomor halaman yang ditentukan hingga akhir file PDF dan menyimpannya sebagai PDF baru. Untuk melakukan ini, menggunakan streams, Anda perlu melewatkan input dan output streams serta nomor halaman dari mana pemisahan perlu dimulai. PDF output akan disimpan ke output stream. Cuplikan kode berikut menunjukkan cara membagi halaman PDF hingga akhir menggunakan streams.
+[SplitToEnd](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittoend/index) metode dari kelas [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) memungkinkan Anda untuk memisahkan PDF dari nomor halaman yang ditentukan hingga akhir file PDF dan menyimpannya sebagai PDF baru. Untuk melakukan ini, menggunakan aliran, Anda perlu mengirimkan aliran input dan output serta nomor halaman dari mana pemisahan perlu dimulai. PDF output akan disimpan ke aliran output. Potongan kode berikut menunjukkan cara memisahkan halaman PDF ke akhir menggunakan aliran.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitPagesToEndUsingStreams-SplitPagesToEndUsingStreams.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfPagesToEndUsingStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create streams
+    using (var inputStream = new FileStream(dataDir + "MultiplePages.pdf", FileMode.Open))
+    {
+        using (var outputStream = new FileStream(dataDir + "SplitPagesToEndUsingStreams_out.pdf", FileMode.Create))
+        {
+            // Split pages
+            pdfEditor.SplitToEnd(inputStream, 3, outputStream);   
+        }
+    }
+}
+```
 
-## Membagi PDF Menjadi Halaman Individual Menggunakan Jalur File
+## Memisahkan PDF ke Halaman Individu Menggunakan Jalur File
 
 {{% alert color="primary" %}}
 
-Anda dapat mencoba membagi dokumen PDF dan melihat hasilnya secara online di tautan ini:
+Anda dapat mencoba memisahkan dokumen PDF dan melihat hasilnya secara online di tautan ini:
 
 [products.aspose.app/pdf/splitter](https://products.aspose.app/pdf/splitter) {{% /alert %}}
 
-Untuk membagi file PDF menjadi halaman individual, Anda perlu melewatkan PDF sebagai jalur file ke metode [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Metode ini akan mengembalikan array MemoryStream yang berisi halaman-halaman individual dari file PDF. Anda dapat melakukan iterasi melalui array MemoryStream ini dan menyimpan halaman-halaman individual sebagai file PDF individual di disk. Cuplikan kode berikut menunjukkan kepada Anda cara membagi PDF menjadi halaman-halaman individual menggunakan jalur file.
+Untuk memisahkan file PDF ke halaman individu, Anda perlu mengirimkan PDF sebagai jalur file ke metode [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Metode ini akan mengembalikan array MemoryStream yang berisi halaman-halaman individu dari file PDF. Anda dapat melakukan loop melalui array MemoryStream ini dan menyimpan halaman-halaman individu sebagai file PDF terpisah di disk. Potongan kode berikut menunjukkan cara memisahkan PDF ke halaman individu menggunakan jalur file.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitToIndividualPagesUsingPaths-SplitToIndividualPagesUsingPaths.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfToIndividualPagesUsingFilePaths()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    var fileNumber = 1;
+    // Split to pages
+    var outBuffer = pdfEditor.SplitToPages(dataDir + "splitPdfToIndividualPagesInput.pdf");
+    // Save individual files
+    foreach (var outStream in outBuffer)
+    {
+        using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
+        {
+            outStream.WriteTo(outFileStream);
+            fileNumber++;
+        }
+    }
+}
+```
 
-## Membagi PDF Menjadi Halaman-Halaman Individual Menggunakan Stream
+## Memisahkan PDF ke Halaman Individu Menggunakan Aliran
 
-Untuk membagi file PDF menjadi halaman-halaman individual, Anda perlu mengirimkan PDF sebagai stream ke metode [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Metode ini akan mengembalikan array MemoryStream yang berisi halaman individu dari file PDF. Anda dapat melakukan loop melalui array MemoryStream ini dan menyimpan halaman individu sebagai file PDF individu di disk, atau Anda dapat menyimpan halaman individu ini dalam memory stream untuk digunakan nanti dalam aplikasi Anda. Cuplikan kode berikut menunjukkan cara membagi PDF menjadi halaman individu menggunakan stream.
+Untuk memisahkan file PDF ke halaman individu, Anda perlu mengirimkan PDF sebagai aliran ke metode [SplitToPages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/splittopages/index). Metode ini akan mengembalikan array MemoryStream yang berisi halaman-halaman individu dari file PDF. Anda dapat melakukan loop melalui array MemoryStream ini dan menyimpan halaman-halaman individu sebagai file PDF terpisah di disk, atau Anda dapat menyimpan halaman-halaman individu ini dalam aliran memori untuk digunakan nanti dalam aplikasi Anda. Potongan kode berikut menunjukkan cara memisahkan PDF ke halaman individu menggunakan aliran.
 
-{{< gist "aspose-pdf" "4a12f0ebd453e7f0d552ed6658ed3253" "Examples-CSharp-AsposePdfFacades-Pages-SplitPages-SplitToIndividualPagesUsingStreams-SplitToIndividualPagesUsingStreams.cs" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SplitPdfToIndividualPagesUsingStreams()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Pages();
+    // Create PdfFileEditor object
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    // Create input stream
+    using (var inputStream = new FileStream(dataDir + "splitPdfToIndividualPagesInput.pdf", FileMode.Open))
+    {
+        var fileNumber = 1;
+        // Split to pages
+        var outBuffer = pdfEditor.SplitToPages(inputStream);
+        // Save individual files
+        foreach (var outStream in outBuffer)
+        {
+            using (var outFileStream = new FileStream(dataDir + "File_" + fileNumber.ToString() + "_out.pdf", FileMode.Create))
+            {
+                outStream.WriteTo(outFileStream);
+                fileNumber++;
+            }
+        }
+    }
+}
+```

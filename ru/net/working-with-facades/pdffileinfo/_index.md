@@ -1,15 +1,16 @@
 ---
-title: PdfFileInfo Class
+title: Класс PdfFileInfo
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /ru/net/pdffileinfo-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfFileInfo.
+description: Узнайте, как управлять информацией о PDF-файле, такой как свойства и метаданные, с помощью класса PDFFileInfo в .NET.
 lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Установить информацию о PDF файле](/pdf/ru/net/set-pdf-file-information/)
-- [Получить информацию о PDF файле](/pdf/ru/net/get-pdf-file-information/)
+- [Установка информации о PDF-файле](/pdf/ru/net/set-pdf-file-information/)
+- [Получение информации о PDF-файле](/pdf/ru/net/get-pdf-file-information/)

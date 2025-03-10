@@ -2,9 +2,11 @@
 title: مخطط XML لـ Aspose.PDF
 linktitle: مخطط XML المدعوم
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
-url: arnet/supported-xml-schema/
-description: هذه المقالة تصف مخطط XML للعمل مع مستندات XML في Aspose.PDF لـ .NET
+url: /arnet/supported-xml-schema/
+description: تصف هذه المقالة مخطط XML للعمل مع مستندات XML في Aspose.PDF for .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "مخطط XML لـ Aspose.PDF",
-    "alternativeHeadline": "كيفية العمل مع مخطط XML في PDF",
+    "headline": "XML Schema of Aspose.PDF",
+    "alternativeHeadline": "Enhanced XML Schema Support in C#",
+    "abstract": "تقديم مخطط XML لـ Aspose.PDF for .NET، ميزة جديدة قوية تعزز قدرتك على العمل مع مستندات XML في تطبيقات .NET. يوفر هذا المخطط طريقة منظمة لتعريف والتلاعب بأشياء PDF، مما يسمح بتخصيص متقدم والتحكم في تصميم المستند وتخطيطه، مما يجعله أداة أساسية للمطورين الذين يسعون لتحسين عمليات إنشاء PDF الخاصة بهم. اكتشف كيف يمكن أن تسهل هذه الميزة سير عمل تطويرك وتحسن من قدرات تطبيقك في التعامل مع PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, XML schema",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2078",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,14 +73,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "net/supported-xml-schema/"
     },
-    "dateModified": "2022-02-04",
-    "description": "هذه المقالة تصف مخطط XML للعمل مع مستندات XML في Aspose.PDF لـ .NET"
+    "dateModified": "2024-11-26",
+    "description": "تصف هذه المقالة مخطط XML للعمل مع مستندات XML في Aspose.PDF for .NET"
 }
 </script>
 
-المقطع البرمجي التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-تستخدم Aspose.PDF لـ .NET مخطط XML التالي للعمل مع مستندات XML:
+تستخدم Aspose.PDF for .NET المخطط XML التالي للعمل مع مستندات XML:
 
 ```xml
 <?xml version="1.0"?>
@@ -315,9 +317,63 @@ sitemap:
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute type="xs:byte" name="Left" use="optional"/>
-    <xs:attribute type="
+    <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+    <xs:attribute type="xs:byte" name="Width" use="optional"/>
+    <xs:attribute type="xs:byte" name="Height" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="TextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Text" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NoteType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextType" name="Text"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment"/>
+      <xs:element type="xs:string" name="HtmlFragment"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeadingType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TextSegment"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Level" use="optional"/>
+    <xs:attribute type="xs:string" name="IsAutoSequence" use="optional"/>
+    <xs:attribute type="xs:byte" name="Style" use="optional"/>
+    <xs:attribute type="xs:byte" name="StartNumber" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RectangleType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+        <xs:attribute type="xs:byte" name="Height" use="optional"/>
+        <xs:attribute type="xs:byte" name="Left" use="optional"/>
+        <xs:attribute type="xs:byte" name="Width" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CurveType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="PositionArray"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:PageType" name="Page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+```
 
-```html
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -369,9 +425,9 @@ sitemap:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة معالجة PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
-    "operatingSystem": "ويندوز، ماك أو إس، لينكس",
+    "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
@@ -381,4 +437,3 @@ sitemap:
     }
 }
 </script>
-```

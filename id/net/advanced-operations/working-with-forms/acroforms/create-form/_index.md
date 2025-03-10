@@ -1,10 +1,12 @@
 ---
-title: Membuat AcroForm - Membuat PDF yang Dapat Diisi di C#
-linktitle: Membuat AcroForm
+title: Buat AcroForm - Buat PDF yang Dapat Diisi di C#
+linktitle: Buat AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/create-form/
-description: Dengan Aspose.PDF untuk .NET Anda dapat membuat formulir dari awal di file PDF Anda
+description: Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Membuat AcroForm",
-    "alternativeHeadline": "Cara membuat AcroForm di PDF",
+    "headline": "Create AcroForm - Create Fillable PDF in C#",
+    "alternativeHeadline": "Create Interactive Forms in PDF with C#",
+    "abstract": "Aspose.PDF for .NET memperkenalkan kemampuan untuk membuat formulir PDF yang dapat diisi dari awal, memungkinkan pengembang untuk mengintegrasikan bidang formulir yang dapat disesuaikan seperti kotak teks, tombol radio, dan kotak kombo ke dalam PDF mereka. Fungsionalitas ini memberdayakan pengguna untuk meningkatkan interaktivitas dokumen dan memperbaiki pengumpulan data dalam aplikasi mereka",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, membuat acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "Create AcroForm, fillable PDF, C#, Aspose.PDF, form fields, TextBoxField, RadioButtonField, ComboBoxField, add tooltip, PDF document generation",
+    "wordcount": "1125",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,21 +74,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-form/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Dengan Aspose.PDF untuk .NET Anda dapat membuat formulir dari awal di file PDF Anda"
+    "dateModified": "2024-11-25",
+    "description": "Dengan Aspose.PDF for .NET Anda dapat membuat formulir dari awal di file PDF Anda"
 }
 </script>
-Snippet kode berikut juga dapat bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Buat formulir dari awal
 
-### Tambahkan Form Field dalam Dokumen PDF
+### Tambahkan Bidang Formulir di Dokumen PDF
 
-Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola form field dalam dokumen PDF.
+Kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menyediakan koleksi bernama [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form) yang membantu Anda mengelola bidang formulir dalam dokumen PDF.
 
-Untuk menambahkan form field:
+Untuk menambahkan bidang formulir:
 
-1. Buat form field yang ingin Anda tambahkan.
+1. Buat bidang formulir yang ingin Anda tambahkan.
 1. Panggil metode Add dari koleksi [Form](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/form).
 
 ### Menambahkan TextBoxField
@@ -93,224 +97,393 @@ Untuk menambahkan form field:
 Contoh di bawah ini menunjukkan cara menambahkan [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield).
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "TextField.pdf");
-
-// Buat sebuah field
-TextBoxField textBoxField = new TextBoxField(pdfDocument.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
-textBoxField.PartialName = "textbox1";
-textBoxField.Value = "Text Box";
-
-// TextBoxField.Border = new Border(
-Border border = new Border(textBoxField);
-border.Width = 5;
-border.Dash = new Dash(1, 1);
-textBoxField.Border = border;
-
-textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-
-// Tambahkan field ke dokumen
-pdfDocument.Form.Add(textBoxField, 1);
-
-dataDir = dataDir + "TextBox_out.pdf";
-// Simpan PDF yang dimodifikasi
-pdfDocument.Save(dataDir);
-```
-### Menambahkan RadioButtonField
-
-Berikut ini adalah cuplikan kode yang menunjukkan cara menambahkan [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) dalam dokumen PDF.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Instansiasi objek Document
-Document pdfDocument = new Document();
-// Tambahkan halaman ke file PDF
-pdfDocument.Pages.Add();
-// Instansiasi objek RadioButtonField dengan nomor halaman sebagai argumen
-RadioButtonField radio = new RadioButtonField(pdfDocument.Pages[1]);
-// Tambahkan opsi tombol radio pertama dan juga tentukan asalnya menggunakan objek Rectangle
-radio.AddOption("Test", new Rectangle(0, 0, 20, 20));
-// Tambahkan opsi tombol radio kedua
-radio.AddOption("Test1", new Rectangle(20, 20, 40, 40));
-// Tambahkan tombol radio ke objek formulir dari objek Dokumen
-pdfDocument.Form.Add(radio);
-
-dataDir = dataDir + "RadioButton_out.pdf";
-// Simpan file PDF
-pdfDocument.Save(dataDir);
-```
-Potongan kode berikut menunjukkan langkah-langkah untuk menambahkan RadioButtonField dengan tiga opsi dan menempatkannya di dalam sel tabel.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-Document doc = new Document();
-Page page = doc.Pages.Add();
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-table.ColumnWidths = "120 120 120";
-page.Paragraphs.Add(table);
-Row r1 = table.Rows.Add();
-Cell c1 = r1.Cells.Add();
-Cell c2 = r1.Cells.Add();
-Cell c3 = r1.Cells.Add();
-
-RadioButtonField rf = new RadioButtonField(page);
-rf.PartialName = "radio";
-doc.Form.Add(rf, 1);
-
-RadioButtonOptionField opt1 = new RadioButtonOptionField();
-RadioButtonOptionField opt2 = new RadioButtonOptionField();
-RadioButtonOptionField opt3 = new RadioButtonOptionField();
-
-opt1.OptionName = "Item1";
-opt2.OptionName = "Item2";
-opt3.OptionName = "Item3";
-
-opt1.Width = 15;
-opt1.Height = 15;
-opt2.Width = 15;
-opt2.Height = 15;
-opt3.Width = 15;
-opt3.Height = 15;
-
-rf.Add(opt1);
-rf.Add(opt2);
-rf.Add(opt3);
-
-opt1.Border = new Border(opt1);
-opt1.Border.Width = 1;
-opt1.Border.Style = BorderStyle.Solid;
-opt1.Characteristics.Border = System.Drawing.Color.Black;
-opt1.DefaultAppearance.TextColor = System.Drawing.Color.Red;
-opt1.Caption = new TextFragment("Item1");
-opt2.Border = new Border(opt1);
-opt2.Border.Width = 1;
-opt2.Border.Style = BorderStyle.Solid;
-opt2.Characteristics.Border = System.Drawing.Color.Black;
-opt2.DefaultAppearance.TextColor = System.Drawing.Color.Red;
-opt2.Caption = new TextFragment("Item2");
-opt3.Border = new Border(opt1);
-opt3.Border.Width = 1;
-opt3.Border.Style = BorderStyle.Solid;
-opt3.Characteristics.Border = System.Drawing.Color.Black;
-opt3.DefaultAppearance.TextColor = System.Drawing.Color.Red;
-opt3.Caption = new TextFragment("Item3");
-c1.Paragraphs.Add(opt1);
-c2.Paragraphs.Add(opt2);
-c3.Paragraphs.Add(opt3);
-
-dataDir = dataDir + "RadioButtonWithOptions_out.pdf";
-// Simpan file PDF
-doc.Save(dataDir);
-```
-### Menambahkan Keterangan pada RadioButtonField
-
-Potongan kode berikut menunjukkan cara menambahkan keterangan yang akan dikaitkan dengan RadioButtonField:
-
-```csharp
-// Untuk contoh lengkap dan file data, silahkan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Memuat formulir PDF sumber
-Aspose.Pdf.Facades.Form form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf");
-Document PDF_Template_PDF_HTML = new Document(dataDir + "RadioButtonField.pdf");
-foreach (var item in form1.FieldNames)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextBoxFieldToPdf()
 {
-    Console.WriteLine(item.ToString());
-    Dictionary<string, string> radioOptions = form1.GetButtonOptionValues(item);
-    if (item.Contains("radio1"))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextField.pdf"))
     {
-        Aspose.Pdf.Forms.RadioButtonField field0 = PDF_Template_PDF_HTML.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
-        Aspose.Pdf.Forms.RadioButtonOptionField fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
-        fieldoption.OptionName = "Yes";
-        fieldoption.PartialName = "Yesname";
+        // Create a field
+        var textBoxField = new Aspose.Pdf.Forms.TextBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 200, 300, 300));
+        textBoxField.PartialName = "textbox1";
+        textBoxField.Value = "Text Box";
 
-        var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
-        updatedFragment.TextState.Font = FontRepository.FindFont("Arial");
-        updatedFragment.TextState.FontSize = 10;
-        updatedFragment.TextState.LineSpacing = 6.32f;
+        // Configure border
+        var border = new Aspose.Pdf.Annotations.Border(textBoxField);
+        border.Width = 5;
+        border.Dash = new Aspose.Pdf.Annotations.Dash(1, 1);
+        textBoxField.Border = border;
 
-        // Membuat objek TextParagraph
-        TextParagraph par = new TextParagraph();
+        // Set color
+        textBoxField.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
 
-        // Mengatur posisi paragraf
-        par.Position = new Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
-        // Menentukan mode pembungkusan kata
-        par.FormattingOptions.WrapMode = TextFormattingOptions.WordWrapMode.ByWords;
+        // Add field to the document
+        document.Form.Add(textBoxField, 1);
 
-        // Menambahkan TextFragment baru ke paragraf
-        par.AppendLine(updatedFragment);
-
-        // Menambahkan TextParagraph menggunakan TextBuilder
-        TextBuilder textBuilder = new TextBuilder(PDF_Template_PDF_HTML.Pages[1]);
-        textBuilder.AppendParagraph(par);
-
-        field0.DeleteOption("item1");
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
     }
 }
-PDF_Template_PDF_HTML.Save(dataDir + "RadioButtonField_out.pdf");
 ```
-### Menambahkan Bidang ComboBox
+
+### Menambahkan RadioButtonField
+
+Potongan kode berikut menunjukkan cara menambahkan [RadioButtonField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/radiobuttonfield) dalam dokumen PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddRadioButtonToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to PDF file
+        document.Pages.Add();
+
+        // Instantiate RadioButtonField object with page number as argument
+        var radio = new Aspose.Pdf.Forms.RadioButtonField(document.Pages[1]);
+
+        // Add first radio button option and also specify its origin using Rectangle object
+        radio.AddOption("Test", new Aspose.Pdf.Rectangle(0, 0, 20, 20));
+
+        // Add second radio button option
+        radio.AddOption("Test1", new Aspose.Pdf.Rectangle(20, 20, 40, 40));
+
+        // Add radio button to form object of Document object
+        document.Form.Add(radio);
+
+        // Save PDF document
+        document.Save(dataDir + "RadioButton_out.pdf");
+    }
+}
+```
+
+[TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) dapat ditambahkan dengan beberapa anotasi widget.
+```csharp
+// For complete examples and data files, please visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextBoxFieldToPdf()
+{
+    // The path to the documents directory
+    string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a new page in the created document
+        var page = document.Pages.Add();
+
+        // Defining an array with rectangle data for widget annotations. 
+        // The number of elements in the array determines the number of widget annotations to add.
+        var rects = new Rectangle[]
+        {
+            new Rectangle(10, 600, 110, 620),
+            new Rectangle(10, 630, 110, 650),
+            new Rectangle(10, 660, 110, 680)
+        };
+
+        // Defining an array with DefaultAppearance used to specify how widget annotations are displayed in the added field.
+        var defaultAppearances = new DefaultAppearance[]
+        {
+            new DefaultAppearance("Arial", 10, System.Drawing.Color.DarkBlue),
+            new DefaultAppearance("Helvetica", 12, System.Drawing.Color.DarkGreen),
+            new DefaultAppearance(FontRepository.FindFont("TimesNewRoman"), 14, System.Drawing.Color.DarkMagenta)
+        };
+
+        // Create a field
+        var textBoxField = new TextBoxField(page, rects);
+
+        // Setting the appearances of widget annotations
+        short i = 0;
+        foreach (WidgetAnnotation wa in textBoxField)
+        {
+            wa.DefaultAppearance = defaultAppearances[i++];
+        }
+        textBoxField.Value = "Text";
+
+        // Add field to the document
+        document.Form.Add(textBoxField);
+
+        // Save PDF document
+        document.Save(dataDir + "TextBox_out.pdf");
+    }
+}
+```
+
+Potongan kode berikut menunjukkan langkah-langkah untuk menambahkan RadioButtonField dengan tiga opsi dan menempatkannya di dalam sel Tabel.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddRadioButtonWithOptionsToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a page to PDF file
+        var page = document.Pages.Add();
+
+        // Create a table
+        var table = new Aspose.Pdf.Table();
+        table.ColumnWidths = "120 120 120";
+        page.Paragraphs.Add(table);
+
+        // Add a row to the table
+        var r1 = table.Rows.Add();
+
+        // Add cells to the row
+        var c1 = r1.Cells.Add();
+        var c2 = r1.Cells.Add();
+        var c3 = r1.Cells.Add();
+
+        // Create a RadioButtonField
+        var rf = new Aspose.Pdf.Forms.RadioButtonField(page);
+        rf.PartialName = "radio";
+        document.Form.Add(rf, 1);
+
+        // Create RadioButtonOptionField options
+        var opt1 = new Aspose.Pdf.Forms.RadioButtonOptionField();
+        var opt2 = new Aspose.Pdf.Forms.RadioButtonOptionField();
+        var opt3 = new Aspose.Pdf.Forms.RadioButtonOptionField();
+
+        opt1.OptionName = "Item1";
+        opt2.OptionName = "Item2";
+        opt3.OptionName = "Item3";
+
+        opt1.Width = 15;
+        opt1.Height = 15;
+        opt2.Width = 15;
+        opt2.Height = 15;
+        opt3.Width = 15;
+        opt3.Height = 15;
+
+        rf.Add(opt1);
+        rf.Add(opt2);
+        rf.Add(opt3);
+
+        // Configure borders and captions for options
+        opt1.Border = new Aspose.Pdf.Annotations.Border(opt1);
+        opt1.Border.Width = 1;
+        opt1.Border.Style = Aspose.Pdf.Annotations.BorderStyle.Solid;
+        opt1.Characteristics.Border = System.Drawing.Color.Black;
+        opt1.DefaultAppearance.TextColor = System.Drawing.Color.Red;
+        opt1.Caption = new Aspose.Pdf.Text.TextFragment("Item1");
+
+        opt2.Border = new Aspose.Pdf.Annotations.Border(opt2);
+        opt2.Border.Width = 1;
+        opt2.Border.Style = Aspose.Pdf.Annotations.BorderStyle.Solid;
+        opt2.Characteristics.Border = System.Drawing.Color.Black;
+        opt2.DefaultAppearance.TextColor = System.Drawing.Color.Red;
+        opt2.Caption = new Aspose.Pdf.Text.TextFragment("Item2");
+
+        opt3.Border = new Aspose.Pdf.Annotations.Border(opt3);
+        opt3.Border.Width = 1;
+        opt3.Border.Style = Aspose.Pdf.Annotations.BorderStyle.Solid;
+        opt3.Characteristics.Border = System.Drawing.Color.Black;
+        opt3.DefaultAppearance.TextColor = System.Drawing.Color.Red;
+        opt3.Caption = new Aspose.Pdf.Text.TextFragment("Item3");
+
+        // Add options to the cells
+        c1.Paragraphs.Add(opt1);
+        c2.Paragraphs.Add(opt2);
+        c3.Paragraphs.Add(opt3);
+
+        // Save PDF document
+        document.Save(dataDir + "RadioButtonWithOptions_out.pdf");
+    }
+}
+```
+
+### Menambahkan Keterangan ke RadioButtonField
+
+Potongan kode berikut menunjukkan cara menambahkan keterangan yang akan terkait dengan RadioButtonField:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingCaptionToRadioButtonField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Load source PDF form
+    using (var form1 = new Aspose.Pdf.Facades.Form(dataDir + "RadioButtonField.pdf"))
+    {
+        using (var document = new Aspose.Pdf.Document(dataDir + "RadioButtonField.pdf"))
+        {
+            foreach (var item in form1.FieldNames)
+            {
+                Console.WriteLine(item.ToString());
+                var radioOptions = form1.GetButtonOptionValues(item);
+
+                if (item.Contains("radio1"))
+                {
+                    var field0 = document.Form[item] as Aspose.Pdf.Forms.RadioButtonField;
+                    var fieldoption = new Aspose.Pdf.Forms.RadioButtonOptionField();
+                    fieldoption.OptionName = "Yes";
+                    fieldoption.PartialName = "Yesname";
+
+                    var updatedFragment = new Aspose.Pdf.Text.TextFragment("test123");
+                    updatedFragment.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+                    updatedFragment.TextState.FontSize = 10;
+                    updatedFragment.TextState.LineSpacing = 6.32f;
+
+                    // Create TextParagraph object
+                    var par = new Aspose.Pdf.Text.TextParagraph();
+
+                    // Set paragraph position
+                    par.Position = new Aspose.Pdf.Text.Position(field0.Rect.LLX, field0.Rect.LLY + updatedFragment.TextState.FontSize);
+                    // Specify word wraping mode
+                    par.FormattingOptions.WrapMode = Aspose.Pdf.Text.TextFormattingOptions.WordWrapMode.ByWords;
+
+                    // Add new TextFragment to paragraph
+                    par.AppendLine(updatedFragment);
+
+                    // Add the TextParagraph using TextBuilder
+                    var textBuilder = new Aspose.Pdf.Text.TextBuilder(document.Pages[1]);
+                    textBuilder.AppendParagraph(par);
+
+                    field0.DeleteOption("item1");
+                }
+            }
+
+            // Save PDF document
+            document.Save(dataDir + "RadioButtonField_out.pdf");
+        }
+    }
+}
+```
+
+### Menambahkan bidang ComboBox
 
 Potongan kode berikut menunjukkan cara menambahkan bidang ComboBox dalam dokumen PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silahkan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddComboBoxToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Buat objek Dokumen
-Document doc = new Document();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to document object
+        document.Pages.Add();
 
-// Tambahkan halaman ke objek dokumen
-doc.Pages.Add();
+        // Instantiate ComboBox Field object
+        var combo = new Aspose.Pdf.Forms.ComboBoxField(document.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
 
-// Instansiasi objek Bidang ComboBox
-ComboBoxField combo = new ComboBoxField(doc.Pages[1], new Aspose.Pdf.Rectangle(100, 600, 150, 616));
+        // Add options to ComboBox
+        combo.AddOption("Red");
+        combo.AddOption("Yellow");
+        combo.AddOption("Green");
+        combo.AddOption("Blue");
 
-// Tambahkan opsi ke ComboBox
-combo.AddOption("Red");
-combo.AddOption("Yellow");
-combo.AddOption("Green");
-combo.AddOption("Blue");
+        // Add combo box object to form fields collection of document object
+        document.Form.Add(combo);
 
-// Tambahkan objek combo box ke koleksi bidang formulir dari objek dokumen
-doc.Form.Add(combo);
-dataDir = dataDir + "ComboBox_out.pdf";
-// Simpan dokumen PDF
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ComboBox_out.pdf");
+    }
+}
 ```
 
-### Menambahkan Tooltip ke Bidang Formulir
+### Tambahkan Tooltip ke Bidang Formulir
 
-Kelas Dokumen menyediakan koleksi bernama Form yang mengelola bidang formulir dalam dokumen PDF.
-Kelas Document menyediakan koleksi bernama Form yang mengelola bidang formulir dalam dokumen PDF.
+Kelas Document menyediakan koleksi bernama Form yang mengelola bidang formulir dalam dokumen PDF. Untuk menambahkan tooltip ke bidang formulir, gunakan kelas Field AlternateName. Adobe Acrobat menggunakan 'nama alternatif' sebagai tooltip bidang.
 
-Potongan kode berikut menunjukkan cara menambahkan tooltip ke bidang formulir, pertama menggunakan C# dan kemudian Visual Basic.
+Potongan kode yang mengikuti menunjukkan cara menambahkan tooltip ke bidang formulir, pertama menggunakan C# dan kemudian Visual Basic.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTooltipToField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Memuat formulir PDF sumber
-Document doc = new Document(dataDir + "AddTooltipToField.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTooltipToField.pdf"))
+    {
+        // Set the tooltip for textfield
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
+        {
+            field.AlternateName = "Text box tool tip";
+        }
 
-// Mengatur tooltip untuk textfield
-(doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
-
-dataDir = dataDir + "AddTooltipToField_out.pdf";
-// Menyimpan dokumen yang telah diperbarui
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddTooltipToField_out.pdf");
+    }
+}
 ```
 
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

@@ -2,9 +2,11 @@
 title: Trabalhando com Marcadores em PDF usando C#
 linktitle: Marcadores
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /pt/net/bookmarks/
-description: Esta seção explica como adicionar, deletar e obter marcadores com Aspose.PDF para .NET.
+description: Descubra como trabalhar com marcadores PDF no .NET usando Aspose.PDF para fácil navegação e organização de documentos.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabalhando com Marcadores em PDF usando C#",
-    "alternativeHeadline": "Como adicionar Marcadores em PDF",
+    "headline": "Working with Bookmarks in PDF using C#",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks with C#",
+    "abstract": "Descubra as novas capacidades de Aspose.PDF for .NET, permitindo que os usuários gerenciem eficientemente marcadores em documentos PDF. Este recurso permite a adição, exclusão e recuperação de marcadores de forma contínua, melhorando a navegação e acessibilidade dentro dos arquivos PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, c#, marcadores em pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Bookmarks, PDF, C#, Aspose.PDF, add bookmark, delete bookmark, get bookmark, update bookmark, expand bookmark, PDF manipulation",
+    "wordcount": "130",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação do Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,16 +74,15 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/bookmarks/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta seção explica como adicionar, deletar e obter marcadores com Aspose.PDF para .NET."
+    "dateModified": "2024-11-25",
+    "description": "Esta seção explica como adicionar, excluir e obter marcadores com Aspose.PDF for .NET."
 }
 </script>
 
-Marcadores de PDF são úteis e essenciais quando se trata de ler arquivos PDF. Eles permitem que os usuários pulem rapidamente para outros lugares em um documento PDF, naveguem pelas páginas e visualizem rapidamente o conteúdo de um PDF, assim como um índice.
+Os marcadores PDF são uma ferramenta útil e essencial quando se trata de ler arquivos PDF. Eles permitem que os usuários saltem rapidamente para outros lugares em um documento PDF, naveguem pelas páginas e visualizem rapidamente o conteúdo de um PDF, assim como um índice.
+Nesta seção, você aprenderá como:
 
-Nesta seção você aprenderá como:
-
-- [Adicionar e Deletar um Marcador](/pdf/pt/net/add-and-delete-bookmark/)
+- [Adicionar e Excluir um Marcador](/pdf/pt/net/add-and-delete-bookmark/)
 - [Obter, Atualizar e Expandir um Marcador](/pdf/pt/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
@@ -146,5 +148,3 @@ Nesta seção você aprenderá como:
     }
 }
 </script>
-
-

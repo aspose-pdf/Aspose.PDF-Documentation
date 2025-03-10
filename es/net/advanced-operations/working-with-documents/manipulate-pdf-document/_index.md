@@ -1,10 +1,12 @@
 ---
-title: Manipular Documento PDF en C#
-linktitle: Manipular Documento PDF
+title: Manipular documento PDF en C#
+linktitle: Manipular documento PDF
 type: docs
-weight: 20
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 30
 url: /es/net/manipulate-pdf-document/
-description: Este artículo contiene información sobre cómo validar un Documento PDF para el Estándar PDF A, cómo trabajar con TOC, cómo establecer la fecha de expiración de un PDF, etc.
+description: Este artículo contiene información sobre cómo validar un documento PDF para el estándar PDF A, cómo trabajar con el TOC, cómo establecer la fecha de caducidad del PDF, etc.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Manipular Documento PDF",
-    "alternativeHeadline": "Cómo manipular un archivo PDF",
+    "headline": "Manipulate PDF Document in C#",
+    "alternativeHeadline": "Enhanced PDF Manipulation Features in C# Library",
+    "abstract": "Descubre las poderosas capacidades de manipulación de documentos PDF en C#, incluyendo la validación para estándares PDF/A, la capacidad de crear y personalizar tablas de contenido, y establecer fechas de caducidad para documentos. Esta característica no solo mejora la gestión de documentos, sino que también asegura el cumplimiento de los estándares de la industria, haciéndola esencial para los desarrolladores que buscan soluciones robustas para el manejo de PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, dotnet, manipular archivo pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "manipulate PDF, C#, validate PDF/A, TOC, set PDF expiry date, flatten fillable PDF, Aspose.PDF, PDF generation progress, customize page numbers, PDF encryption",
+    "wordcount": "2170",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,364 +74,462 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Este artículo contiene información sobre cómo validar un Documento PDF para el Estándar PDF A, cómo trabajar con TOC, cómo establecer la fecha de expiración de un PDF, etc."
+    "dateModified": "2024-11-25",
+    "description": "Este artículo contiene información sobre cómo validar un documento PDF para el estándar PDF A, cómo trabajar con el TOC, cómo establecer la fecha de caducidad del PDF, etc."
 }
 </script>
-## **Manipular Documento PDF en C#**
 
-## Validar Documento PDF para el Estándar PDF A (A 1A y A 1B)
+## **Manipular documento PDF en C#**
 
-Para validar un documento PDF para la compatibilidad PDF/A-1a o PDF/A-1b, utiliza el método Validate de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Este método te permite especificar el nombre del archivo en el que se guardará el resultado y el tipo de validación requerido en la enumeración [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A o PDF_A_1B.
+## Validar documento PDF para el estándar PDF A (A 1A y A 1B)
+
+Para validar un documento PDF para la compatibilidad con PDF/A-1a o PDF/A-1b, utiliza el método Validate de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Este método te permite especificar el nombre del archivo en el que se guardará el resultado y el tipo de validación requerida de la enumeración [PdfFormat](https://reference.aspose.com/pdf/net/aspose.pdf/pdfformat): PDF_A_1A o PDF_A_1B.
 
 {{% alert color="primary" %}}
 
-El formato XML de salida es un formato personalizado de Aspose. El XML contiene una colección de etiquetas con el nombre Problem; cada etiqueta contiene los detalles de un problema particular. El atributo ObjectID de la etiqueta Problem representa la ID del objeto particular al que está relacionado este problema. El atributo Clause representa una regla correspondiente en la especificación del PDF.
+El formato XML de salida es un formato personalizado de Aspose. El XML contiene una colección de etiquetas con el nombre Problem; cada etiqueta contiene los detalles de un problema particular. El atributo ObjectID de la etiqueta Problem representa el ID del objeto particular al que se relaciona este problema. El atributo Clause representa una regla correspondiente en la especificación PDF.
 
 {{% /alert %}}
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1A.
 El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1A.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ValidateToPdfA1aStandard()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
-
-// Validar PDF para PDF/A-1a
-pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1A);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
+    {
+        // Validate PDF for PDF/A-1a
+        document.Validate(dataDir + "validation-result-A1A.xml", Aspose.Pdf.PdfFormat.PDF_A_1A);
+    }
+}
 ```
 
-El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1B.
+El siguiente fragmento de código te muestra cómo validar un documento PDF para PDF/A-1b.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ValidateToPdfA1bStandard()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "ValidatePDFAStandard.pdf");
-
-// Validar PDF para PDF/A-1a
-pdfDocument.Validate(dataDir + "validation-result-A1A.xml", PdfFormat.PDF_A_1B);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ValidatePDFAStandard.pdf"))
+    {
+        // Validate PDF for PDF/A-1b
+        document.Validate(dataDir + "validation-result-A1B.xml", Aspose.Pdf.PdfFormat.PDF_A_1B);
+    }
+}
 ```
+
 {{% alert color="primary" %}}
 
-Aspose.PDF para .NET se puede utilizar para determinar si el documento cargado es un PDF válido y también [si está encriptado o no](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). Para ampliar aún más las capacidades de la clase Document, se ha añadido la propiedad *IsPdfaCompliant* para determinar si el archivo de entrada cumple con PDF/A y una propiedad llamada *PdfaFormat* para identificar el formato PDF/A introducido.
+Aspose.PDF for .NET se puede utilizar para determinar si el documento cargado es un PDF válido y también [si está cifrado o no](https://docs.aspose.com/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/). Para ampliar aún más las capacidades de la clase Document, se ha añadido la propiedad *IsPdfaCompliant* para determinar si el archivo de entrada es compatible con PDF/A y se ha introducido una propiedad llamada *PdfaFormat* para identificar el formato PDF/A.
 
 {{% /alert %}}
 
 ## Trabajando con TOC
 
-### Agregar TOC a un PDF Existente
+### Agregar TOC a PDF existente
 
-La API de Aspose.PDF le permite agregar una tabla de contenido ya sea al crear un PDF o a un archivo existente. La clase ListSection en el espacio de nombres Aspose.Pdf.Generator le permite crear una tabla de contenidos al crear un PDF desde cero. Para agregar encabezados, que son elementos del TOC, use la clase Aspose.Pdf.Generator.Heading.
+La API de Aspose.PDF te permite agregar una tabla de contenido ya sea al crear un PDF o a un archivo existente. La clase ListSection en el espacio de nombres Aspose.Pdf.Generator te permite crear una tabla de contenido al crear un PDF desde cero. Para agregar encabezados, que son elementos del TOC, utiliza la clase Aspose.Pdf.Generator.Heading.
 
-Para agregar un TOC a un archivo PDF existente, use la clase Heading en el espacio de nombres Aspose.Pdf.
-Para agregar un TOC a un archivo PDF existente, utilice la clase Heading en el espacio de nombres Aspose.Pdf.
+Para agregar un TOC a un archivo PDF existente, utiliza la clase Heading en el espacio de nombres Aspose.PDF. El espacio de nombres Aspose.Pdf puede crear nuevos archivos PDF y manipular archivos PDF existentes. Para agregar un TOC a un PDF existente, utiliza el espacio de nombres Aspose.PDF. El siguiente fragmento de código muestra cómo crear una tabla de contenido dentro de un archivo PDF existente.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Cargar un archivo PDF existente
-Document doc = new Document(dataDir + "AddTOC.pdf");
-
-// Obtener acceso a la primera página del archivo PDF
-Page tocPage = doc.Pages.Insert(1);
-
-// Crear objeto para representar la información de TOC
-TocInfo tocInfo = new TocInfo();
-TextFragment title = new TextFragment("Índice de Contenidos");
-title.TextState.FontSize = 20;
-title.TextState.FontStyle = FontStyles.Bold;
-
-// Establecer el título para TOC
-tocInfo.Title = title;
-tocPage.TocInfo = tocInfo;
-
-// Crear objetos de cadena que se utilizarán como elementos de TOC
-string[] titles = new string[4];
-titles[0] = "Primera página";
-titles[1] = "Segunda página";
-titles[2] = "Tercera página";
-titles[3] = "Cuarta página";
-for (int i = 0; i < 2; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTOCToPdf()
 {
-    // Crear objeto Heading
-    Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
-    TextSegment segment2 = new TextSegment();
-    heading2.TocPage = tocPage;
-    heading2.Segments.Add(segment2);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    // Especificar la página de destino para el objeto de encabezado
-    heading2.DestinationPage = doc.Pages[i + 2];
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
+    {
+        // Get access to the first page of PDF file
+        var tocPage = document.Pages.Insert(1);
 
-    // Página de destino
-    heading2.Top = doc.Pages[i + 2].Rect.Height;
+        // Create an object to represent TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 20;
+        title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
 
-    // Coordenada de destino
-    segment2.Text = titles[i];
+        // Set the title for TOC
+        tocInfo.Title = title;
+        tocPage.TocInfo = tocInfo;
 
-    // Añadir encabezado a la página que contiene TOC
-    tocPage.Paragraphs.Add(heading2);
+        // Create string objects which will be used as TOC elements
+        string[] titles = { "First page", "Second page", "Third page", "Fourth page" };
+
+        for (int i = 0; i < 2; i++)
+        {
+            // Create Heading object
+            var heading = new Aspose.Pdf.Heading(1);
+            var segment = new Aspose.Pdf.Text.TextSegment();
+            heading.TocPage = tocPage;
+            heading.Segments.Add(segment);
+
+            // Specify the destination page for the heading object
+            heading.DestinationPage = document.Pages[i + 2];
+
+            // Destination page
+            heading.Top = document.Pages[i + 2].Rect.Height;
+
+            // Destination coordinate
+            segment.Text = titles[i];
+
+            // Add heading to the page containing TOC
+            tocPage.Paragraphs.Add(heading);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TOC_out.pdf");
+    }
 }
-dataDir = dataDir + "TOC_out.pdf";
-// Guardar el documento actualizado
-doc.Save(dataDir);
 ```
-### Establecer diferentes tipos de TabLeader para diferentes niveles de TOC
 
-Aspose.PDF también permite establecer diferentes tipos de TabLeader para diferentes niveles de TOC. Necesitas configurar la propiedad LineDash de FormatArray con el valor apropiado del enumerado TabLeaderType como sigue.
+### Establecer diferentes TabLeaderType para diferentes niveles de TOC
+
+Aspose.PDF también permite establecer diferentes TabLeaderType para diferentes niveles de TOC. Necesitas establecer la propiedad LineDash de FormatArray con el valor apropiado de la enumeración TabLeaderType como sigue.
 
 ```csharp
- string outFile = "TOC.pdf";
-
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-Page tocPage = doc.Pages.Add();
-TocInfo tocInfo = new TocInfo();
-
-//establecer LeaderType
-tocInfo.LineDash = TabLeaderType.Solid;
-TextFragment title = new TextFragment("Tabla de Contenidos");
-title.TextState.FontSize = 30;
-tocInfo.Title = title;
-
-//Añadir la sección de lista a la colección de secciones del documento Pdf
-tocPage.TocInfo = tocInfo;
-//Definir el formato de los cuatro niveles de lista configurando los márgenes izquierdos
-//y
-//configuraciones de formato de texto de cada nivel
-
-tocInfo.FormatArrayLength = 4;
-tocInfo.FormatArray[0].Margin.Left = 0;
-tocInfo.FormatArray[0].Margin.Right = 30;
-tocInfo.FormatArray[0].LineDash = TabLeaderType.Dot;
-tocInfo.FormatArray[0].TextState.FontStyle = FontStyles.Bold | FontStyles.Italic;
-tocInfo.FormatArray[1].Margin.Left = 10;
-tocInfo.FormatArray[1].Margin.Right = 30;
-tocInfo.FormatArray[1].LineDash = TabLeaderType.None;
-tocInfo.FormatArray[1].TextState.FontSize = 10;
-tocInfo.FormatArray[2].Margin.Left = 20;
-tocInfo.FormatArray[2].Margin.Right = 30;
-tocInfo.FormatArray[2].TextState.FontStyle = FontStyles.Bold;
-tocInfo.FormatArray[3].LineDash = TabLeaderType.Solid;
-tocInfo.FormatArray[3].Margin.Left = 30;
-tocInfo.FormatArray[3].Margin.Right = 30;
-tocInfo.FormatArray[3].TextState.FontStyle = FontStyles.Bold;
-
-//Crear una sección en el documento Pdf
-Page page = doc.Pages.Add();
-
-//Añadir cuatro encabezados en la sección
-for (int Level = 1; Level <= 4; Level++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTocWithCustomFormatting()
 {
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(Level);
-    TextSegment segment2 = new TextSegment();
-    heading2.Segments.Add(segment2);
-    heading2.IsAutoSequence = true;
-    heading2.TocPage = tocPage;
-    segment2.Text = "Encabezado de Muestra" + Level;
-    heading2.TextState.Font = FontRepository.FindFont("Arial Unicode MS");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a TOC page
+        var tocPage = document.Pages.Add();
 
-    //Añadir el encabezado en la Tabla de Contenidos.
-    heading2.IsInList = true;
-    page.Paragraphs.Add(heading2);
+        // Create TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
+
+        // Set LeaderType
+        tocInfo.LineDash = Aspose.Pdf.Text.TabLeaderType.Solid;
+
+        // Set the title for TOC
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 30;
+        tocInfo.Title = title;
+
+        // Add the TOC section to the document
+        tocPage.TocInfo = tocInfo;
+
+        // Define the format of the four levels list by setting the left margins
+        // and text format settings of each level
+        tocInfo.FormatArrayLength = 4;
+
+        // Level 1
+        tocInfo.FormatArray[0].Margin.Left = 0;
+        tocInfo.FormatArray[0].Margin.Right = 30;
+        tocInfo.FormatArray[0].LineDash = Aspose.Pdf.Text.TabLeaderType.Dot;
+        tocInfo.FormatArray[0].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
+
+        // Level 2
+        tocInfo.FormatArray[1].Margin.Left = 10;
+        tocInfo.FormatArray[1].Margin.Right = 30;
+        tocInfo.FormatArray[1].LineDash = Aspose.Pdf.Text.TabLeaderType.None;
+        tocInfo.FormatArray[1].TextState.FontSize = 10;
+
+        // Level 3
+        tocInfo.FormatArray[2].Margin.Left = 20;
+        tocInfo.FormatArray[2].Margin.Right = 30;
+        tocInfo.FormatArray[2].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+
+        // Level 4
+        tocInfo.FormatArray[3].LineDash = Aspose.Pdf.Text.TabLeaderType.Solid;
+        tocInfo.FormatArray[3].Margin.Left = 30;
+        tocInfo.FormatArray[3].Margin.Right = 30;
+        tocInfo.FormatArray[3].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+
+        // Create a section in the Pdf document
+        var page = document.Pages.Add();
+
+        // Add four headings in the section
+        for (int level = 1; level <= 4; level++)
+        {
+            var heading = new Aspose.Pdf.Heading(level);
+            var segment = new Aspose.Pdf.Text.TextSegment();
+            heading.Segments.Add(segment);
+            heading.IsAutoSequence = true;
+            heading.TocPage = tocPage;
+            segment.Text = "Sample Heading " + level;
+            heading.TextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial Unicode MS");
+
+            // Add the heading into Table Of Contents.
+            heading.IsInList = true;
+            page.Paragraphs.Add(heading);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TOC_out.pdf");
+    }
 }
-
-// guardar el Pdf
-
-doc.Save(outFile);
 ```
-### Ocultar Números de Página en el TOC
 
-En caso de que no desee mostrar los números de página, junto con los encabezados en el TOC, puede usar la propiedad [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) de la Clase [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) como false. Por favor, consulte el siguiente fragmento de código para ocultar los números de página en la tabla de contenidos:
+### Ocultar números de página en TOC
+
+En caso de que no desees mostrar números de página, junto con los encabezados en el TOC, puedes utilizar la propiedad [IsShowPageNumbers](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo/properties/isshowpagenumbers) de la clase [TOCInfo](https://reference.aspose.com/pdf/net/aspose.pdf/tocinfo) como falsa. Por favor, revisa el siguiente fragmento de código para ocultar números de página en la tabla de contenido:
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-string outFile = dataDir + "HiddenPageNumbers_out.pdf";
-Document doc = new Document();
-Page tocPage = doc.Pages.Add();
-TocInfo tocInfo = new TocInfo();
-TextFragment title = new TextFragment("Tabla de Contenidos");
-title.TextState.FontSize = 20;
-title.TextState.FontStyle = FontStyles.Bold;
-tocInfo.Title = title;
-//Añadir la sección de lista a la colección de secciones del documento Pdf
-tocPage.TocInfo = tocInfo;
-//Definir el formato de los cuatro niveles de lista ajustando los márgenes izquierdos y
-//configuraciones de formato de texto de cada nivel
-
-tocInfo.IsShowPageNumbers = false;
-tocInfo.FormatArrayLength = 4;
-tocInfo.FormatArray[0].Margin.Right = 0;
-tocInfo.FormatArray[0].TextState.FontStyle = FontStyles.Bold | FontStyles.Italic;
-tocInfo.FormatArray[1].Margin.Left = 30;
-tocInfo.FormatArray[1].TextState.Underline = true;
-tocInfo.FormatArray[1].TextState.FontSize = 10;
-tocInfo.FormatArray[2].TextState.FontStyle = FontStyles.Bold;
-tocInfo.FormatArray[3].TextState.FontStyle = FontStyles.Bold;
-Page page = doc.Pages.Add();
-//Añadir cuatro encabezados en la sección
-for (int Level = 1; Level != 5; Level++)
-
-{ Heading heading2 = new Heading(Level); TextSegment segment2 = new TextSegment(); heading2.TocPage = tocPage; heading2.Segments.Add(segment2); heading2.IsAutoSequence = true; segment2.Text = "este es un encabezado de nivel " + Level; heading2.IsInList = true; page.Paragraphs.Add(heading2); }
-doc.Save(outFile);
-```
-### Personalizar Números de Página al agregar TOC
-
-Es común personalizar la numeración de páginas en el TOC al agregar un TOC en un documento PDF. Por ejemplo, podemos necesitar agregar algún prefijo antes del número de página como P1, P2, P3, etc. En tal caso, Aspose.PDF para .NET proporciona la propiedad PageNumbersPrefix de la clase TocInfo que se puede utilizar para personalizar los números de página como se muestra en el siguiente ejemplo de código.
-
-```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string inFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "42824.pdf";
-string outFile = RunExamples.GetDataDir_AsposePdf_WorkingDocuments() + "42824_out.pdf";
-// Cargar un archivo PDF existente
-Document doc = new Document(inFile);
-// Acceder a la primera página del archivo PDF
-Aspose.Pdf.Page tocPage = doc.Pages.Insert(1);
-// Crear objeto para representar la información de TOC
-TocInfo tocInfo = new TocInfo();
-TextFragment title = new TextFragment("Índice de Contenidos");
-title.TextState.FontSize = 20;
-title.TextState.FontStyle = FontStyles.Bold;
-// Establecer el título para TOC
-tocInfo.Title = title;
-tocInfo.PageNumbersPrefix = "P";
-tocPage.TocInfo = tocInfo;
-for (int i = 1; i<doc.Pages.Count; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTocWithHiddenPageNumbers()
 {
-    // Crear objeto Heading
-    Aspose.Pdf.Heading heading2 = new Aspose.Pdf.Heading(1);
-    TextSegment segment2 = new TextSegment();
-    heading2.TocPage = tocPage;
-    heading2.Segments.Add(segment2);
-    // Especificar la página de destino para el objeto de encabezado
-    heading2.DestinationPage = doc.Pages[i + 1];
-    // Página de destino
-    heading2.Top = doc.Pages[i + 1].Rect.Height;
-    // Coordenada de destino
-    segment2.Text = "Página " + i.ToString();
-    // Agregar encabezado a la página que contiene TOC
-    tocPage.Paragraphs.Add(heading2);
-}
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Guardar el documento actualizado
-doc.Save(outFile);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add a TOC page
+        var tocPage = document.Pages.Add();
+
+        // Create TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
+
+        // Set the title for TOC
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 20;
+        title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+        tocInfo.Title = title;
+
+        // Add the TOC section to the document
+        tocPage.TocInfo = tocInfo;
+
+        // Hide page numbers in TOC
+        tocInfo.IsShowPageNumbers = false;
+
+        // Define the format of the four levels list by setting the left margins and
+        // text format settings of each level
+        tocInfo.FormatArrayLength = 4;
+
+        // Level 1
+        tocInfo.FormatArray[0].Margin.Right = 0;
+        tocInfo.FormatArray[0].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold | Aspose.Pdf.Text.FontStyles.Italic;
+
+        // Level 2
+        tocInfo.FormatArray[1].Margin.Left = 30;
+        tocInfo.FormatArray[1].TextState.Underline = true;
+        tocInfo.FormatArray[1].TextState.FontSize = 10;
+
+        // Level 3
+        tocInfo.FormatArray[2].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+
+        // Level 4
+        tocInfo.FormatArray[3].TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+
+        // Create a section in the Pdf document
+        var page = document.Pages.Add();
+
+        // Add four headings in the section
+        for (int level = 1; level <= 4; level++)
+        {
+            var heading = new Aspose.Pdf.Heading(level);
+            var segment = new Aspose.Pdf.Text.TextSegment();
+            heading.TocPage = tocPage;
+            heading.Segments.Add(segment);
+            heading.IsAutoSequence = true;
+            segment.Text = "this is heading of level " + level;
+            heading.IsInList = true;
+            page.Paragraphs.Add(heading);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TOC_out.pdf");
+    }
+}
 ```
+
+### Personalizar números de página al agregar TOC
+
+Es común personalizar la numeración de páginas en el TOC al agregar TOC en un documento PDF. Por ejemplo, podemos necesitar agregar algún prefijo antes del número de página como P1, P2, P3, etc. En tal caso, Aspose.PDF for .NET proporciona la propiedad PageNumbersPrefix de la clase TocInfo que se puede utilizar para personalizar los números de página como se muestra en el siguiente ejemplo de código.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CustomizePageNumbersAddingToC()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CustomizePageNumbersAddingToC.pdf"))
+    {
+        // Get access to first page of PDF file
+        Page tocPage = document.Pages.Insert(1);
+
+        // Create object to represent TOC information
+        var tocInfo = new Aspose.Pdf.TocInfo();
+        var title = new Aspose.Pdf.Text.TextFragment("Table Of Contents");
+        title.TextState.FontSize = 20;
+        title.TextState.FontStyle = Aspose.Pdf.Text.FontStyles.Bold;
+
+        // Set the title for TOC
+        tocInfo.Title = title;
+        tocInfo.PageNumbersPrefix = "P";
+        tocPage.TocInfo = tocInfo;
+
+        // Loop through the pages to create TOC entries
+        for (int i = 1; i < document.Pages.Count; i++)
+        {
+            // Create Heading object
+            var heading2 = new Aspose.Pdf.Heading(1);
+            var segment2 = new Aspose.Pdf.Text.TextSegment();
+            heading2.TocPage = tocPage;
+            heading2.Segments.Add(segment2);
+
+            // Specify the destination page for heading object
+            heading2.DestinationPage = document.Pages[i + 1];
+
+            // Destination page
+            heading2.Top = document.Pages[i + 1].Rect.Height;
+
+            // Destination coordinate
+            segment2.Text = "Page " + i.ToString();
+
+            // Add heading to page containing TOC
+            tocPage.Paragraphs.Add(heading2);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "CustomizePageNumbersAddingToC_out.pdf");
+    }
+}
+```
+
 ## Cómo establecer la fecha de caducidad del PDF
 
-Aplicamos privilegios de acceso en archivos PDF para que un cierto grupo de usuarios pueda acceder a características/objetos particulares de documentos PDF. Con el fin de restringir el acceso al archivo PDF, generalmente aplicamos encriptación y podemos tener el requisito de establecer una fecha de caducidad del archivo PDF, de modo que el usuario que acceda/visualice el documento reciba un aviso válido respecto a la caducidad del archivo PDF.
+Aplicamos privilegios de acceso en archivos PDF para que un cierto grupo de usuarios pueda acceder a características/objetos particulares de los documentos PDF. Para restringir el acceso al archivo PDF, generalmente aplicamos cifrado y podemos tener un requisito para establecer la caducidad del archivo PDF, de modo que el usuario que accede/visualiza el documento reciba un aviso válido sobre la caducidad del archivo PDF.
 
-Para lograr el requisito mencionado anteriormente, podemos usar el objeto *JavascriptAction*. Por favor, eche un vistazo al siguiente fragmento de código.
+Para cumplir con el requisito mencionado anteriormente, podemos utilizar el objeto *JavascriptAction*. Por favor, echa un vistazo al siguiente fragmento de código.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetExpiryDate()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Instanciar objeto Document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-// Añadir página a la colección de páginas del archivo PDF
-doc.Pages.Add();
-// Añadir fragmento de texto a la colección de párrafos del objeto de página
-doc.Pages[1].Paragraphs.Add(new TextFragment("Hola Mundo..."));
-// Crear objeto JavaScript para establecer la fecha de caducidad del PDF
-JavascriptAction javaScript = new JavascriptAction(
-"var year=2017;"
-+ "var month=5;"
-+ "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());"
-+ "expiry = new Date(year, month);"
-+ "if (today.getTime() > expiry.getTime())"
-+ "app.alert('El archivo ha caducado. Necesitas uno nuevo.');");
-// Establecer JavaScript como acción de apertura de PDF
-doc.OpenAction = javaScript;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
 
-dataDir = dataDir + "SetExpiryDate_out.pdf";
-// Guardar documento PDF
-doc.Save(dataDir);
+        // Add text fragment to paragraphs collection of page object
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World..."));
+
+        // Create JavaScript object to set PDF expiry date
+        var javaScript = new Aspose.Pdf.Annotations.JavascriptAction(
+            "var year=2017;" +
+            "var month=5;" +
+            "today = new Date(); today = new Date(today.getFullYear(), today.getMonth());" +
+            "expiry = new Date(year, month);" +
+            "if (today.getTime() > expiry.getTime())" +
+            "app.alert('The file is expired. You need a new one.');"
+        );
+
+        // Set JavaScript as PDF open action
+        document.OpenAction = javaScript;
+
+        // Save PDF Document
+        document.Save(dataDir + "SetExpiryDate_out.pdf");
+    }
+}
 ```
-## Determinar el Progreso de la Generación de Archivos PDF
 
-Un cliente nos pidió agregar una característica que permita a los desarrolladores determinar el progreso de la generación de archivos PDF. Aquí está la respuesta a esa solicitud.
+## Determinar el progreso de la generación del archivo PDF
 
-El campo [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) de la clase [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) le permite determinar cómo va la generación del PDF. El manejador tiene los siguientes tipos:
+Un cliente nos pidió que agregáramos una función que permita a los desarrolladores determinar el progreso de la generación del archivo PDF. Aquí está la respuesta a esa solicitud.
 
-- DocSaveOptions.ConversionProgessEventHandler
-- DocSaveOptions.ProgressEventHandlerInfo
-- DocSaveOptions.ProgressEventType
+El campo [CustomerProgressHandler](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions/fields/customprogresshandler) de la clase [DocSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/docsaveoptions) te permite determinar cómo va la generación del PDF. El controlador tiene los siguientes tipos:
 
-Los fragmentos de código a continuación muestran cómo usar CustomerProgressHandler.
+- DocSaveOptions.ConversionProgessEventHandler.
+- DocSaveOptions.ProgressEventHandlerInfo.
+- DocSaveOptions.ProgressEventType.
+
+Los fragmentos de código a continuación muestran cómo utilizar CustomerProgressHandler.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DetermineProgress()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "AddTOC.pdf");
-DocSaveOptions saveOptions = new DocSaveOptions();
-saveOptions.CustomProgressHandler = new UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTOC.pdf"))
+    {
+        // Create DocSaveOptions instance and set custom progress handler
+        var saveOptions = new Aspose.Pdf.DocSaveOptions();
+        saveOptions.CustomProgressHandler = new Aspose.Pdf.UnifiedSaveOptions.ConversionProgressEventHandler(ShowProgressOnConsole);
 
-dataDir = dataDir + "DetermineProgress_out.pdf";
-pdfDocument.Save(dataDir, saveOptions);
-Console.ReadLine();
-```
-```csharp
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-public static void ShowProgressOnConsole(DocSaveOptions.ProgressEventHandlerInfo eventInfo)
+        // Save PDF Document
+        document.Save(dataDir + "DetermineProgress_out.pdf", saveOptions);
+    }
+}
+
+// Method to handle progress and display it on the console
+private static void ShowProgressOnConsole(Aspose.Pdf.UnifiedSaveOptions.ProgressEventHandlerInfo eventInfo)
 {
     switch (eventInfo.EventType)
     {
-        case DocSaveOptions.ProgressEventType.TotalProgress:
-            Console.WriteLine(String.Format("{0}  - Progreso de conversión: {1}% .", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString()));
+        case Aspose.Pdf.ProgressEventType.TotalProgress:
+            Console.WriteLine(String.Format("{0}  - Conversion progress : {1}% .", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString()));
             break;
-        case DocSaveOptions.ProgressEventType.SourcePageAnalized:
-            Console.WriteLine(String.Format("{0}  - Página fuente {1} de {2} analizada.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
+        case Aspose.Pdf.ProgressEventType.SourcePageAnalysed:
+            Console.WriteLine(String.Format("{0}  - Source page {1} of {2} analyzed.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
-        case DocSaveOptions.ProgressEventType.ResultPageCreated:
-            Console.WriteLine(String.Format("{0}  - Diseño de página resultado {1} de {2} creado.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
+        case Aspose.Pdf.ProgressEventType.ResultPageCreated:
+            Console.WriteLine(String.Format("{0}  - Result page's {1} of {2} layout created.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
-        case DocSaveOptions.ProgressEventType.ResultPageSaved:
-            Console.WriteLine(String.Format("{0}  - Página resultado {1} de {2} exportada.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
+        case Aspose.Pdf.ProgressEventType.ResultPageSaved:
+            Console.WriteLine(String.Format("{0}  - Result page {1} of {2} exported.", DateTime.Now.ToLongTimeString(), eventInfo.Value.ToString(), eventInfo.MaxValue.ToString()));
             break;
         default:
             break;
     }
-
 }
 ```
-## Aplanar PDF Rellenable en C#
 
-Los documentos PDF a menudo incluyen formularios con widgets rellenables interactivos como botones de radio, casillas de verificación, cajas de texto, listas, etc. Para hacerlo no editable para varios propósitos de aplicación, necesitamos aplanar el archivo PDF.
-Aspose.PDF proporciona la función para aplanar tu PDF en C# con solo unas pocas líneas de código:
+## Aplanar PDF rellenable
+
+Los documentos PDF a menudo incluyen formularios con widgets rellenables interactivos como botones de opción, casillas de verificación, cuadros de texto, listas, etc. Para hacer que no se pueda editar para diversos propósitos de aplicación, necesitamos aplanar el archivo PDF. Aspose.PDF proporciona la función para aplanar tu PDF en C# con solo unas pocas líneas de código:
 
 ```csharp
-
-// Cargar el formulario PDF fuente
-Document doc = new Document(dataDir + "input.pdf");
-
-// Aplanar PDF Rellenable
-if (doc.Form.Fields.Count() > 0)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FlattenForms()
 {
-    foreach (var item in doc.Form.Fields)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        item.Flatten();
+        // Flatten Fillable PDF
+        if (document.Form.Fields.Count() > 0)
+        {
+            foreach (var item in document.Form.Fields)
+            {
+                item.Flatten();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "FlattenForms_out.pdf");
     }
 }
-
-dataDir = dataDir + "FlattenForms_out.pdf";
-// Guardar el documento actualizado
-doc.Save(dataDir);
 ```
 
 <script type="application/ld+json">
@@ -494,5 +595,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-
-

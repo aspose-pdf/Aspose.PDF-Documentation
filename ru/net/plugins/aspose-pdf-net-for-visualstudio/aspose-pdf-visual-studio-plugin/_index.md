@@ -1,145 +1,154 @@
 ---
-title: Aspose.PDF Visual Studio Plugin
+title: Плагин Aspose.PDF для Visual Studio
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/aspose-pdf-visual-studio-plugin/
-description: Узнайте, как использовать модуль импорта PDF Umbraco
+description: Узнайте, как использовать модуль импорта PDF в Umbraco
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Aspose.PDF Visual Studio Plugin",
+    "alternativeHeadline": "Seamless Integration of PDF Examples in Visual Studio",
+    "abstract": "Плагин Aspose.PDF для .NET для Visual Studio расширяет возможности разработки на .NET, позволяя легко интегрировать функции работы с PDF-документами в Visual Studio. Этот инновационный инструмент упрощает процесс доступа к примерам проектов и их изучения, позволяет быстро выбирать и загружать последние версии библиотек API, а также поддерживает C# и VB.NET, что делает его незаменимым ресурсом для разработчиков, стремящихся оптимизировать свой рабочий процесс",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1013",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/aspose-pdf-visual-studio-plugin/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/aspose-pdf-visual-studio-plugin/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+}
+</script>
 
 ## Введение
 
-Microsoft Visual Studio — это интегрированная среда разработки (IDE) от Microsoft. Она используется для разработки компьютерных программ для Microsoft Windows, а также веб-сайтов, веб-приложений и веб-сервисов. Visual Studio использует платформы разработки программного обеспечения Microsoft, такие как Windows API, Windows Forms, Windows Presentation Foundation, Windows Store и Microsoft Silverlight. Среда может создавать как нативный, так и управляемый код.
+Microsoft Visual Studio — это интегрированная среда разработки (IDE) от Microsoft, используемая для создания компьютерных программ для Microsoft Windows, а также веб-сайтов, веб-приложений и веб-сервисов. Visual Studio использует платформы разработки программного обеспечения Microsoft, такие как Windows API, Windows Forms, Windows Presentation Foundation, Windows Store и Microsoft Silverlight. Она может создавать как собственный код, так и управляемый код.
 
-### Aspose.PDF для .NET
+### Aspose.PDF for .NET
 
-Aspose.PDF для .NET — это компонент для создания и манипуляции документами PDF, который позволяет вашим приложениям .NET читать, записывать и манипулировать существующими документами PDF без использования Adobe Acrobat.
+Aspose.PDF for .NET — это компонент создания и управления PDF-документами, который позволяет вашим .NET-приложениям читать, записывать и управлять существующими PDF-документами без использования Adobe Acrobat.
 
-Для получения дополнительной информации о [API Aspose.PDF для .NET](http://www.aspose.com/.net/Pdf-component.aspx)
+Подробнее об API Aspose.PDF for .NET (https://products.aspose.com/pdf/net/).
 
-### Изучите примеры Aspose.PDF для .NET, используя Visual Studio
-### Исследуйте примеры Aspose.PDF для .NET с помощью Visual Studio
+### Изучение примеров Aspose.PDF for .NET с помощью Visual Studio
 
-Плагин Aspose для Visual Studio - **Исследуйте примеры Aspose.PDF для .NET** - отличный инструмент для быстрой загрузки и изучения примеров API Aspose.PDF для .NET. Он экономит много времени и усилий, предоставляя очень простую возможность без труда выбирать, загружать и открывать последние проекты примеров, не покидая вашу среду Visual Studio.
+Плагин Visual Studio от Aspose — **Изучение примеров Aspose.PDF for .NET** — это отличный инструмент для быстрой загрузки и изучения примеров API Aspose.PDF for .NET. Он экономит много времени и усилий, предоставляя простую возможность легко выбирать, загружать и открывать последние примеры проектов, не покидая Visual Studio.
 
-Эта версия предоставляет следующие функции:
+Эта версия предоставляет следующие возможности:
 
-- Поддерживает Visual Studio 2010, Visual Studio 2012 и Visual Studio 2013.
-- Легко запускается из меню **Файл > Aspose** в Visual Studio
-- Экономит время и сокращает кривую обучения.
-- Позволяет выбирать и открывать последние примеры API Aspose.PDF для .NET, размещенные на Github.com.
-- Позволяет открывать проекты примеров на **C#** или **VB.NET**
-- Выбранный проект автоматически открывается в Visual Studio со всеми необходимыми ссылками, создавая готовую к запуску и изучению среду.
-- Автоматически загружает последние библиотеки API с **NuGet** и примеры с **GitHub**.
-- Автоматически загружает последние библиотеки API из **NuGet** и примеры из **GitHub**.
+* Поддержка Visual Studio 2010, Visual Studio 2012 и Visual Studio 2013.
+* Простота запуска из меню **Файл > Aspose** в Visual Studio.
+* Экономия времени и снижение кривой обучения.
+* Возможность выбора и открытия последних примеров API Aspose.PDF for .NET, размещённых на Github.com.
+* Открытие примеров проектов на **C#** или **VB.NET**.
+* Автоматическое открытие выбранного проекта в Visual Studio со всеми необходимыми ссылками, чтобы предоставить вам готовую среду для запуска и изучения.
+* Автоматическая загрузка последних библиотек API из **NuGet** и примеров из **GitHub**.
 
-![Aspose.PDF для пакета примеров .NET](aspose-pdf-visual-studio-plugin_1.png)
+![Пакет примеров Aspose.PDF for .NET](aspose-pdf-visual-studio-plugin_1.png)
 
 ## Системные требования и поддерживаемые платформы
 
-Для установки и использования плагина Aspose Visual Studio необходимо иметь установленную одну из следующих версий Visual Studio
+Для установки и использования плагина Visual Studio Aspose необходимо установить одну из следующих версий Visual Studio:
 
-- Visual Studio 2010, 2012, 2013
+* Visual Studio 2010, 2012, 2013.
 
-Пожалуйста, не стесняйтесь обращаться к нам, если у вас возникнут проблемы с установкой или использованием этого плагина.
+Пожалуйста, свяжитесь с нами, если у вас возникнут проблемы с установкой или использованием этого плагина.
 
-## Скачивание
+## Загрузка
 
-Вы можете скачать плагин Aspose Visual Studio с одного из следующих мест
+Вы можете загрузить плагин Visual Studio Aspose из одного из следующих источников:
 
-- [CodePlex](https://asposePdfvs.codeplex.com/releases)
-- [Code.MSDN](https://code.msdn.microsoft.com/Explore-AsposePdf-for-NET-58ac45ed)
-- [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/b45659c0-9414-4ede-aed2-acc0c27a6b15)
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposePdfExamplesVSPlugin)
+* [Галерея Visual Studio](https://marketplace.visualstudio.com/items?itemName=AsposeMarketplace.AsposePdfforNET).
+* [Github](https://github.com/aspose-pdf/Aspose.PDF-for-.NET/releases/tag/AsposePdfExamplesVSPlugin).
 
 ## Установка
 
-Установка плагина Aspose Visual Studio очень проста и легка, пожалуйста, следуйте этим простым шагам
-Установка плагина Aspose для Visual Studio очень проста и легка, пожалуйста, следуйте этим простым шагам:
+Установить плагин Visual Studio Aspose очень просто, выполните следующие действия:
 
-- Дважды щелкните загруженный файл msi
-- Следуйте инструкциям, вы можете просто нажимать Далее на каждом экране, чтобы установить его с использованием стандартных настроек.
+* Дважды щелкните загруженный файл msi.
+* Следуйте инструкциям, вы можете просто нажимать «Далее» на каждом экране, чтобы установить его, используя стандартные настройки.
 
-После завершения установки появится диалоговое окно об успешном завершении.
+После завершения установки вы увидите диалоговое окно с сообщением об успешном выполнении.
 
-![Диалоговое окно установки Aspose.PDF для примеров .NET](aspose-pdf-visual-studio-plugin_2.png)
+![Диалоговое окно установки примеров Aspose.PDF for .NET](aspose-pdf-visual-studio-plugin_2.png)
 
-**Примечание:** Пожалуйста, убедитесь, что вы перезагрузили Visual Studio для вступления изменений в силу.
+**Примечание:** После установки обязательно перезапустите Visual Studio, чтобы изменения вступили в силу.
 
 ## Использование
 
 После установки вы можете легко запустить и использовать интерактивный плагин, как описано ниже:
-**1.** Откройте плагин, выбрав **Файл > Aspose**, затем **Новый проект примера Aspose.PDF** в Visual Studio.
 
-![Диалоговое окно нового проекта примера Aspose.PDF](aspose-pdf-visual-studio-plugin_3.png)
+1. Откройте плагин, выбрав **Файл > Aspose**, а затем **Новый пример проекта Aspose.PDF** в Visual Studio.
 
-**2.** При первом открытии плагина вы увидите диалог выбора API, как показано ниже. На загрузку последних API и их библиотек из **NuGet** и последнего исходного кода примеров с **GitHub** уйдет несколько минут.
+![Диалоговое окно «Новый пример проекта Aspose.PDF»](aspose-pdf-visual-studio-plugin_3.png)
 
-![Диалоговое окно загрузки примера Aspose.PDF](aspose-pdf-visual-studio-plugin_4.png)
-![Aspose.PDF Пример диалога загрузки](aspose-pdf-visual-studio-plugin_4.png)
+2. При первом открытии плагина вы увидите диалоговое окно выбора API, как показано ниже. Загрузка последних API и их библиотек из **NuGet**, а также последних исходных кодов примеров с **GitHub** займет несколько минут.
 
-**3.** В диалоговом окне Выбор API для просмотра примеров выберите или измените местоположение, где будут создаваться примеры проектов, а также выберите или измените тип проекта примеров на **C#** или **VB.NET** и нажмите **Продолжить**, чтобы открыть проект примера в Visual Studio.
+![Диалоговое окно загрузки примеров Aspose.PDF](aspose-pdf-visual-studio-plugin_4.png)
 
-![Aspose.PDF Пример диалога выбора папки проекта](aspose-pdf-visual-studio-plugin_1.png)
+3. В диалоговом окне «Выбор API для просмотра примеров» выберите или измените расположение, в котором будут создаваться примеры проектов, а также выберите или измените тип проекта примера как **C#** или **VB.NET** и нажмите «Продолжить», чтобы открыть пример проекта в Visual Studio.
 
-**4.** Новые проекты примеров в зависимости от выбора типа проекта **C#** или **VB.NET** в Visual Studio.
+![Диалоговое окно выбора папки для примеров Aspose.PDF](aspose-pdf-visual-studio-plugin_1.png)
 
-|**Примеры на C#**|**Примеры на VB.NET**|
+4. Новые примеры проектов в соответствии с выбранным типом проекта **C#** или **VB.NET** в Visual Studio.
+
+|**Примеры C#**|**Примеры VB.NET**|
 | :- | :- |
-|![Примеры на C#](aspose-pdf-visual-studio-plugin_6.png)|![Примеры на VB.NET](aspose-pdf-visual-studio-plugin_7.png)|
-
-## Видео демонстрация
-
-Пожалуйста, посмотрите [видео](https://www.youtube.com/watch?v=FyJ2TFlbLE4) ниже, чтобы увидеть модуль в действии.
-
-## Поддержка, Расширение и Вклад
-
-### Поддержка
-
-С самых первых дней Aspose мы знали, что просто предоставление нашим клиентам хороших продуктов будет недостаточно.
-С самых первых дней работы Aspose мы знали, что просто предоставление нашим клиентам хороших продуктов будет недостаточно.
-
-Именно поэтому мы предлагаем бесплатную поддержку. Каждый, кто использует наш продукт, независимо от того, купил ли он его или использует оценочную версию, заслуживает нашего полного внимания и уважения.
-
-Вы можете сообщить о любых проблемах или предложениях, связанных с плагином Aspose Visual Studio, используя любую из следующих платформ
-
-- [CodePlex](https://asposePdfvs.codeplex.com/workitem/list/basic)
-- [Visual Studio Gallery - Q and A](https://visualstudiogallery.msdn.microsoft.com/b45659c0-9414-4ede-aed2-acc0c27a6b15)
-- [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET/issues)
-- [Microsoft Developer Network - Q and A](https://code.msdn.microsoft.com/Explore-AsposePdf-for-NET-58ac45ed/view/Discussions#content)
-
-### Расширьте и внесите свой вклад
-
-**Изучите примеры Aspose.PDF для .NET** для Visual Studio, он открыт и его исходный код доступен на крупнейших социальных платформах кодирования, перечисленных ниже.
-**Исследуйте примеры Aspose.PDF для .NET** для Visual Studio, который является открытым исходным кодом, доступным на основных сайтах социального кодирования, перечисленных ниже.
-
-#### Исходный код
-
-Вы можете получить последний исходный код из одного из следующих мест:
-
-- [CodePlex](https://asposePdfvs.codeplex.com/SourceControl/latest)
-- [Github](https://github.com/asposePdf/Aspose.PDF-for-.NET)
-- [Microsoft Developer Network](https://code.msdn.microsoft.com/Explore-AsposePdf-for-NET-58ac45ed)
-
-#### Конфигурирование исходного кода
-
-Для открытия и расширения исходного кода вам необходимо установить следующее:
-
-- Visual Studio 2010
-
-Пожалуйста, следуйте этим простым шагам, чтобы начать работу:
-
-1. Скачайте/Клонируйте исходный код.
-1. Откройте Visual Studio 2010 и выберите **Файл** > **Открыть проект**
-1. Перейдите к последнему скачанному исходному коду и откройте **AsposeVisualStudioPlugin.sln**
-
-#### Обзор исходного кода
-
-В решении есть два проекта:
-
-- **AsposeVisualStudioPlugin** - Содержит интеграцию с Visual Studio, выбор и автоматическую загрузку API и примеров Aspose.
-- **AsposeVisualStudioPlugin** - Содержит интеграцию с Visual Studio, выбор и автоматическую загрузку Aspose API и примеров.
-- **Installer** - Проект установщика Wix для генерации файла установщика msi для плагина.
+|![Примеры C#](aspose-pdf-visual-studio-plugin_6.png)|![Примеры VB.NET](as

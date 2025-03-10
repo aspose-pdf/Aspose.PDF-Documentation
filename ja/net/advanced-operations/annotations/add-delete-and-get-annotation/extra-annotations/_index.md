@@ -1,10 +1,12 @@
 ---
-title: C#を使用した追加の注釈
-linktitle: 追加の注釈
+title: C#を使用した追加注釈
+linktitle: 追加注釈
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /ja/net/extra-annotations/
-description: このセクションでは、PDFドキュメントから追加の種類の注釈を追加、取得、削除する方法について説明します。
+description: Aspose.PDFを使用して.NETでPDFファイルに追加の注釈を追加する方法を学びます。
 lastmod: "2023-09-12"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#を使用した追加の注釈",
-    "alternativeHeadline": "PDFに追加注釈を追加する方法",
+    "headline": "Extra Annotations using C#",
+    "alternativeHeadline": "Enhance PDF Annotations with C#",
+    "abstract": "C#の追加注釈機能を紹介します。これにより、開発者はPDFドキュメントからさまざまな注釈をシームレスに追加、取得、削除できます。この堅牢な機能は、正確なテキスト編集とドキュメント操作を可能にし、キャレットおよび削除注釈を効果的に追加する能力を含むことで、PDFのインタラクションを強化します。直感的なドキュメント管理のために設計されたこれらの高度な機能を使用して、PDFの取り扱いを最適化してください。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, リンク注釈, キャレット注釈",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Extra Annotations, Caret Annotation, PDF document manipulation, Aspose.PDF for .NET, Redaction Annotation, Markup annotation, Delete Caret Annotation, Get Caret Annotation, StrikeOutAnnotation, PdfAnnotationEditor",
+    "wordcount": "929",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,98 +74,105 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extra-annotations/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "このセクションでは、PDFドキュメントから追加の種類の注釈を追加、取得、削除する方法について説明します。"
 }
 </script>
 
 ## 既存のPDFファイルにキャレット注釈を追加する方法
 
-キャレット注釈は、テキスト編集を示す記号です。キャレット注釈はマークアップ注釈でもあるため、CaretクラスはMarkupクラスから派生し、キャレット注釈のプロパティを取得または設定し、キャレット注釈の外観の流れをリセットする機能も提供します。
+キャレット注釈は、テキスト編集を示す記号です。キャレット注釈はマークアップ注釈でもあるため、キャレットクラスはマークアップクラスから派生し、キャレット注釈のプロパティを取得または設定する機能を提供し、キャレット注釈の外観の流れをリセットします。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
 キャレット注釈を作成する手順：
 
-1. PDFファイルを読み込む - 新しい [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
-1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation) を作成し、キャレットパラメーター（新しいRectangle、タイトル、サブジェクト、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈はテキストの挿入を示すために使用されます。
-1. 新しい[StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)を作成し、パラメーターを設定します（新しいRectangle、タイトル、色、新しいQuadPointsと新しいポイント、Subject、InReplyTo、ReplyType）。
-1. その後、ページにアノテーションを追加できます。
+1. PDFファイルをロードします - 新しい [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)。
+1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation)を作成し、キャレットパラメータ（新しいRectangle、タイトル、件名、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈は、テキストの挿入を示すために使用されます。
+1. 新しい [Caret Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/caretannotation)を作成し、キャレットパラメータ（新しいRectangle、タイトル、件名、フラグ、色、幅、StartingStyleおよびEndingStyle）を設定します。この注釈は、テキストの置き換えを示すために使用されます。
+1. 新しい [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation)を作成し、パラメータ（新しいRectangle、タイトル、色、新しいQuadPointsおよび新しいポイント、件名、InReplyTo、ReplyType）を設定します。
+1. その後、ページに注釈を追加できます。
 
-以下のコードスニペットは、PDFファイルにCaret Annotationを追加する方法を示しています：
+次のコードスニペットは、PDFファイルにキャレット注釈を追加する方法を示しています：
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddCaretAnnotations()
 {
-    class ExampleCaretAnnotation
-    {
-        // ドキュメントディレクトリへのパス。
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddCaretAnnotation()
-        {
-            // PDFファイルを読み込む
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
-            // このアノテーションはテキストの挿入を示すために使用されます
-            var caretAnnotation1 = new CaretAnnotation(document.Pages[1], new Rectangle(299.988, 713.664, 308.708, 720.769))
-            {
-                Title = "Aspose User",
-                Subject = "Inserted text 1",
-                Flags = AnnotationFlags.Print,
-                Color = Color.Blue
-            };
-            // このアノテーションはテキストの置換を示すために使用されます
-            var caretAnnotation2 = new CaretAnnotation(document.Pages[1], new Rectangle(361.246, 727.908, 370.081, 735.107))
-            {
-                Flags = AnnotationFlags.Print,
-                Subject = "Inserted text 2",
-                Title = "Aspose User",
-                Color = Color.Blue
-            };
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-            var strikeOutAnnotation = new StrikeOutAnnotation(document.Pages[1],
-                new Rectangle(318.407, 727.826, 368.916, 740.098))
-            {
-                Color = Color.Blue,
-                QuadPoints = new[] {
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    {
+        // Create Caret Annotation for text insertion
+        var caretAnnotation1 = new Aspose.Pdf.Annotations.CaretAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(299.988, 713.664, 308.708, 720.769))
+        {
+            Title = "Aspose User",
+            Subject = "Inserted text 1",
+            Flags = Aspose.Pdf.Annotations.AnnotationFlags.Print,
+            Color = Aspose.Pdf.Color.Blue
+        };
+
+        // Create Caret Annotation for text replacement
+        var caretAnnotation2 = new Aspose.Pdf.Annotations.CaretAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(361.246, 727.908, 370.081, 735.107))
+        {
+            Flags = Aspose.Pdf.Annotations.AnnotationFlags.Print,
+            Subject = "Inserted text 2",
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Blue
+        };
+
+        // Create StrikeOut Annotation
+        var strikeOutAnnotation = new Aspose.Pdf.Annotations.StrikeOutAnnotation(document.Pages[1],
+            new Rectangle(318.407, 727.826, 368.916, 740.098))
+        {
+            Color = Aspose.Pdf.Color.Blue,
+            QuadPoints = new[] {
                 new Point(321.66, 739.416),
                 new Point(365.664, 739.416),
                 new Point(321.66, 728.508),
                 new Point(365.664, 728.508)
             },
-                Subject = "Cross-out",
-                InReplyTo = caretAnnotation2,
-                ReplyType = ReplyType.Group
-            };
+            Subject = "Cross-out",
+            InReplyTo = caretAnnotation2,
+            ReplyType = Aspose.Pdf.Annotations.ReplyType.Group
+        };
 
-            document.Pages[1].Annotations.Add(caretAnnotation1);
-            document.Pages[1].Annotations.Add(caretAnnotation2);
-            document.Pages[1].Annotations.Add(strikeOutAnnotation);
+        document.Pages[1].Annotations.Add(caretAnnotation1);
+        document.Pages[1].Annotations.Add(caretAnnotation2);
+        document.Pages[1].Annotations.Add(strikeOutAnnotation);
 
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
-        }
+        // Save PDF document
+        document.Save(dataDir + "AddCaretAnnotations_out.pdf");
+    }
+}
 ```
+
 ### キャレット注釈を取得する
 
-次のコードスニペットを使用して、PDFドキュメントでキャレット注釈を取得してください。
+次のコードスニペットを使用して、PDFドキュメント内のキャレット注釈を取得してみてください：
 
 ```csharp
-public static void GetCaretAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetCaretAnnotation()
 {
-    // PDFファイルをロードする
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
-    var caretAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Caret)
-        .Cast<CaretAnnotation>();
-    foreach (var ca in caretAnnotations)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
     {
-        Console.WriteLine($"{ca.Rect}");
+        // Get Caret annotations from the first page
+        var caretAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Caret)
+            .Cast<Aspose.Pdf.Annotations.CaretAnnotation>();
+
+        // Iterate through the annotations and print their details
+        foreach (var ca in caretAnnotations)
+        {
+            Console.WriteLine($"{ca.Rect}");
+        }
     }
 }
 ```
@@ -172,64 +182,95 @@ public static void GetCaretAnnotation()
 次のコードスニペットは、PDFファイルからキャレット注釈を削除する方法を示しています。
 
 ```csharp
-public static void DeleteCaretAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteCaretAnnotation()
 {
-    // PDFファイルをロードする
-    Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_caret.pdf"));
-    var caretAnnotations = document.Pages[1].Annotations
-        .Where(a => a.AnnotationType == AnnotationType.Caret)
-        .Cast<CaretAnnotation>();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-    foreach (var ca in caretAnnotations)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_caret.pdf"))
     {
-        document.Pages[1].Annotations.Delete(ca);
+        // Get Caret annotations from the first page
+        var caretAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Caret)
+            .Cast<Aspose.Pdf.Annotations.CaretAnnotation>();
+
+        // Delete each Caret annotation
+        foreach (var ca in caretAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(ca);
+        }
+
+        // Save PDF document after deleting annotations
+        document.Save(dataDir + "DeleteCaretAnnotation_out.pdf");
     }
-    document.Save(System.IO.Path.Combine(_dataDir, "sample_caret_del.pdf"));
 }
 ```
-## 特定のページ領域をRedaction Annotationで塗りつぶす方法 - Aspose.PDF for .NET
 
-Aspose.PDF for .NETは、既存のPDFファイルでアノテーションを追加および操作する機能をサポートしています。最近、いくつかのお客様からPDFドキュメントの特定のページ領域からテキストや画像などの要素を削除する（塗りつぶす）要望がありました。この要求を満たすために、特定のページ領域を塗りつぶすために使用できるRedactionAnnotationというクラスが提供されています。また、既存のRedactionAnnotationsを操作して塗りつぶすこともできます（つまり、アノテーションをフラット化し、その下のテキストを削除します）。
+## Aspose.PDF for .NETを使用して特定のページ領域を削除注釈で削除する
+
+Aspose.PDF for .NETは、既存のPDFファイルに注釈を追加および操作する機能をサポートしています。最近、顧客の一部がPDFドキュメントの特定のページ領域からテキスト、画像などの要素を削除する必要があると投稿しました。この要件を満たすために、RedactionAnnotationというクラスが提供されており、特定のページ領域を削除するために使用することができ、既存のRedactionAnnotationsを操作して削除することもできます（つまり、注釈をフラット化し、その下のテキストを削除します）。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RedactPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-// ドキュメントを開く
-Document doc = new Document(dataDir + "input.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create RedactionAnnotation instance for a specific page region
+        var annot = new Aspose.Pdf.Annotations.RedactionAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
+        annot.FillColor = Aspose.Pdf.Color.Green;
+        annot.BorderColor = Aspose.Pdf.Color.Yellow;
+        annot.Color = Aspose.Pdf.Color.Blue;
 
-// 特定のページ領域のRedactionAnnotationインスタンスを作成
-RedactionAnnotation annot = new RedactionAnnotation(doc.Pages[1], new Aspose.Pdf.Rectangle(200, 500, 300, 600));
-annot.FillColor = Aspose.Pdf.Color.Green;
-annot.BorderColor = Aspose.Pdf.Color.Yellow;
-annot.Color = Aspose.Pdf.Color.Blue;
-// 塗りつぶしアノテーションに印刷されるテキスト
-annot.OverlayText = "REDACTED";
-annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// 塗りつぶしアノテーションにオーバーレイテキストを繰り返す
-annot.Repeat = true;
-// アノテーションを最初のページのアノテーションコレクションに追加
-doc.Pages[1].Annotations.Add(annot);
-// アノテーションをフラット化し、ページの内容（テキストや画像を削除）を塗りつぶす
-annot.Redact();
-dataDir = dataDir + "RedactPage_out.pdf";
-doc.Save(dataDir);
+        // Text to be printed on the redact annotation
+        annot.OverlayText = "REDACTED";
+        annot.TextAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+
+        // Repeat Overlay text over the redact Annotation
+        annot.Repeat = true;
+
+        // Add annotation to the annotations collection of the first page
+        document.Pages[1].Annotations.Add(annot);
+
+        // Flattens annotation and redacts page contents (i.e., removes text and image under the redacted annotation)
+        annot.Redact();
+
+        // Save the result document
+        document.Save(dataDir + "RedactPage_out.pdf");
+    }
+}
 ```
+
 ### ファサードアプローチ
 
-Aspose.PDF.Facades 名前空間には、PDFファイル内の既存のアノテーションを操作する機能を提供する [PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) というクラスもあります。このクラスには、特定のページ領域を削除する機能を提供する [RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea) というメソッドが含まれています。
+Aspose.Pdf.Facades名前空間には、PDFファイル内の既存の注釈を操作する機能を提供する[PdfAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor)というクラスもあります。このクラスには、特定のページ領域を削除する機能を提供する[RedactArea(..)](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/redactarea)というメソッドが含まれています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RedactPageWithFacadesApproach()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-Aspose.Pdf.Facades.PdfAnnotationEditor editor = new Aspose.Pdf.Facades.PdfAnnotationEditor();
-// 特定のページ領域を隠蔽
-editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
-editor.BindPdf(dataDir + "input.pdf");
-editor.Save(dataDir + "FacadesApproach_out.pdf");
+    // Create an instance of PdfAnnotationEditor
+    using (var editor = new Aspose.Pdf.Facades.PdfAnnotationEditor())
+    {
+        // Redact a specific page region
+        editor.RedactArea(1, new Aspose.Pdf.Rectangle(100, 100, 20, 70), System.Drawing.Color.White);
+
+        // Bind PDF document
+        editor.BindPdf(dataDir + "input.pdf");
+
+        // Save the result document
+        editor.Save(dataDir + "FacadesApproach_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -258,23 +299,23 @@ editor.Save(dataDir + "FacadesApproach_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -283,7 +324,7 @@ editor.Save(dataDir + "FacadesApproach_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -295,5 +336,3 @@ editor.Save(dataDir + "FacadesApproach_out.pdf");
     }
 }
 </script>
-```
-

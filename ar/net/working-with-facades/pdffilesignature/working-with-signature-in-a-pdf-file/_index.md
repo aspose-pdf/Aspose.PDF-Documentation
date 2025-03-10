@@ -1,188 +1,280 @@
 ---
 title: العمل مع التوقيع في ملف PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/working-with-signature-in-a-pdf-file/
-description: يشرح هذا القسم كيفية استخراج معلومات التوقيع، استخراج الصورة من التوقيع، تغيير اللغة، وغيرها باستخدام فئة PdfFileSignature.
+description: يشرح هذا القسم كيفية استخراج معلومات التوقيع، استخراج الصورة من التوقيع، تغيير اللغة، وما إلى ذلك باستخدام فئة PdfFileSignature.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Working with Signature in PDF File",
+    "alternativeHeadline": "Extract Signature Details and Images from PDFs",
+    "abstract": "تعمل الوظيفة الجديدة في Aspose.PDF for .NET على تعزيز أمان مستندات PDF من خلال السماح للمستخدمين باستخراج معلومات التوقيع والصور باستخدام فئة PdfFileSignature. تتضمن هذه الميزة أيضًا القدرة على تخصيص التوقيعات الرقمية، وإخفاء معلومات معينة مثل الموقع والسبب، وتغيير إعدادات اللغة لنص التوقيع، مما يوفر مجموعة أدوات شاملة لإدارة توقيعات PDF بكفاءة.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "878",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/working-with-signature-in-a-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/working-with-signature-in-a-pdf-file/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
 
 ## كيفية استخراج معلومات التوقيع
 
-تدعم Aspose.PDF لـ .NET ميزة توقيع ملفات PDF رقميًا باستخدام فئة PdfFileSignature. حاليًا، من الممكن أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بالكامل. المعلومات التي يمكن استخراجها هي المفتاح العام، البصمة، والجهة المصدرة، إلخ.
+يدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة PdfFileSignature. حاليًا، من الممكن أيضًا تحديد صلاحية الشهادة ولكن لا يمكننا استخراج الشهادة بالكامل. المعلومات التي يمكن استخراجها هي المفتاح العام، بصمة الإصبع، والجهة المصدرة، وما إلى ذلك.
 
-لاستخراج معلومات التوقيع، قمنا بإدخال الطريقة ExtractCertificate(..) إلى فئة PdfFileSignature. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يوضح الخطوات لاستخراج الشهادة من كائن PdfFileSignature:
+لاستخراج معلومات التوقيع، قمنا بإدخال طريقة ExtractCertificate(..) إلى فئة PdfFileSignature. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يوضح الخطوات لاستخراج الشهادة من كائن PdfFileSignature:
 
 ```csharp
-public static void ExtractSignatureInfo()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractSignatureInfo()
+{ 
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "signed_rsa.pdf");
+        // Get list of signature names
+        var sigNames = pdfFileSignature.GetSignatureNames();
+        if (sigNames.Count > 0)
         {
-            string input = _dataDir + "DigitallySign.pdf";
-            string certificateFileName = "extracted_cert.pfx";
-            using (PdfFileSignature pdfFileSignature = new PdfFileSignature())
+            SignatureName sigName = sigNames[0];            
+            // Extract signature certificate
+            Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
+            if (cerStream != null)
             {
-                pdfFileSignature.BindPdf(input);
-                var sigNames = pdfFileSignature.GetSignNames();
-                if (sigNames.Count > 0)
+                using (cerStream)
                 {
-                    string sigName = sigNames[0];
-                    if (!string.IsNullOrEmpty(sigName))
+                    using (FileStream fs = new FileStream(dataDir + "extracted_cert.pfx", FileMode.CreateNew))
                     {
-                        Stream cerStream = pdfFileSignature.ExtractCertificate(sigName);
-                        if (cerStream != null)
-                        {
-                            using (cerStream)
-                            {
-                                using (FileStream fs = new FileStream(_dataDir + certificateFileName, FileMode.CreateNew))
-                                {
-                                    cerStream.CopyTo(fs);
-                                }
-                            }
-                        }
+                        cerStream.CopyTo(fs);
                     }
                 }
             }
+            
         }
-```
+    }
+}
 ```
 
 ## استخراج الصورة من حقل التوقيع (PdfFileSignature)
 
-تدعم Aspose.PDF لـ .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة PdfFileSignature وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لمظهر التوقيع. الآن يوفر هذا API أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
+يدعم Aspose.PDF for .NET ميزة التوقيع الرقمي لملفات PDF باستخدام فئة PdfFileSignature وأثناء توقيع المستند، يمكنك أيضًا تعيين صورة لمظهر التوقيع. الآن توفر هذه الواجهة البرمجية أيضًا القدرة على استخراج معلومات التوقيع بالإضافة إلى الصورة المرتبطة بحقل التوقيع.
 
-من أجل استخراج معلومات التوقيع، قمنا بإدخال طريقة ExtractImage(..) إلى فئة PdfFileSignature. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يوضح الخطوات لاستخراج الصورة من كائن PdfFileSignature:
+لاستخراج معلومات التوقيع، قمنا بإدخال طريقة ExtractImage(..) إلى فئة PdfFileSignature. يرجى إلقاء نظرة على مقتطف الكود التالي الذي يوضح الخطوات لاستخراج الصورة من كائن PdfFileSignature:
 
 ```csharp
-public static void ExtractSignatureImage()
-        {
-            using (PdfFileSignature signature = new PdfFileSignature())
-            {
-                signature.BindPdf(_dataDir + "DigitallySign.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractSignatureImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var signature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        signature.BindPdf(dataDir + "ExtractingImage.pdf");
 
-                if (signature.ContainsSignature())
+        if (signature.ContainsSignature())
+        {
+            // Get list of signature names
+            foreach (string sigName in signature.GetSignatureNames())
+            {                
+                // Extract signature image
+                using (Stream imageStream = signature.ExtractImage(sigName))
                 {
-                    foreach (string sigName in signature.GetSignNames())
+                    if (imageStream != null)
                     {
-                        string outFile = _dataDir + "ExtractImages_out.jpg";
-                        using (Stream imageStream = signature.ExtractImage(sigName))
+                        imageStream.Position = 0;
+                        using (FileStream fs = new FileStream(dataDir + "ExtractImages_out.jpg", FileMode.OpenOrCreate))
                         {
-                            if (imageStream != null)
-                            {
-                                imageStream.Position = 0;
-                                using (FileStream fs = new FileStream(outFile, FileMode.OpenOrCreate))
-                                {
-                                    imageStream.CopyTo(fs);
-                                }
-                            }
+                            imageStream.CopyTo(fs);
                         }
                     }
                 }
             }
         }
+    }
+}
 ```
 
-## قمع الموقع والسبب
+## إخفاء الموقع والسبب
 
-تتيح وظيفة Aspose.PDF تكوينًا مرنًا لتوقيع النسخة الرقمية. توفر فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) القدرة على توقيع ملف PDF. يتيح تنفيذ طريقة التوقيع توقيع ملف PDF وتمرير كائن التوقيع المحدد إلى هذه الفئة. تحتوي طريقة التوقيع على مجموعة من السمات لتخصيص توقيع النسخة الرقمية النهائية. في حالة الحاجة إلى قمع بعض السمات النصية من توقيع النسخة النهائية، يمكنك تركها فارغة. يوضح مقتطف الشيفرة التالي كيفية قمع سطرين "الموقع" و"السبب" من كتلة التوقيع:
+تسمح وظيفة Aspose.PDF بتكوين مرن لنسخة التوقيع الرقمية. توفر فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) القدرة على توقيع ملف PDF. يسمح تنفيذ طريقة التوقيع بتوقيع PDF وتمرير كائن التوقيع المحدد إلى هذه الفئة. تحتوي طريقة التوقيع على مجموعة من الخصائص لتخصيص التوقيع الرقمي الناتج. في حالة الحاجة إلى إخفاء بعض الخصائص النصية من نتيجة التوقيع، يمكنك تركها فارغة. يوضح مقتطف الكود التالي كيفية إخفاء موقع وسبب السطرين من كتلة التوقيع:
 
 ```csharp
-public static void SupressLocationReason()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SupressLocationReason()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
 
-            // Create a rectangle for signature location
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
-            // Set signature appearance
-            pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
+        // Create a rectangle for signature location
+        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+        // Set signature appearance
+        pdfFileSignature.SignatureAppearance = dataDir + "aspose-logo.png";
 
-            // Create any of the three signature types
-            PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
+        // Create any of the three signature types
+        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
-            pdfSign.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+        pdfFileSignature.Sign(1, string.Empty, "test01@aspose-pdf-demo.local", string.Empty, true, rect, signature);
+        // Save PDF document
+        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+    }
+}
 ```
 
 ## ميزات التخصيص للتوقيع الرقمي
 
-Aspose.PDF لـ .NET يسمح بميزات التخصيص للتوقيع الرقمي. تقوم طريقة Sign التابعة لفئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) بالتنفيذ مع 6 تحميلات زائدة لاستخدامك المريح. على سبيل المثال، يمكنك تكوين التوقيع الناتج فقط بواسطة مثيل فئة SignatureCustomAppearance وقيم خصائصها. يوضح مقطع الشيفرة التالي كيفية إخفاء التسمية "موقعة رقميًا بواسطة" من توقيعك الرقمي الناتج لملف PDF الخاص بك.
+يتيح Aspose.PDF for .NET ميزات التخصيص لتوقيع رقمي. تحتوي طريقة التوقيع في فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) على 6 تحميلات مفرطة لراحتك. على سبيل المثال، يمكنك تكوين التوقيع الناتج فقط من خلال مثيل فئة SignatureCustomAppearance وقيم خصائصها. يوضح مقتطف الكود التالي كيفية إخفاء عنوان "تم التوقيع رقميًا بواسطة" من التوقيع الرقمي الناتج لملف PDF الخاص بك.
 
 ```csharp
-  public static void CustomizationFeaturesForDigitalSign()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CustomizationFeaturesForDigitalSign()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
+
+        // Create a rectangle for signature location
+        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+
+        // Create any of the three signature types
+        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
+        // Create signature appearance
+        var signatureCustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
         {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+            FontSize = 6,
+            FontFamilyName = "Times New Roman",
+            DigitalSignedLabel = "Signed by:"
+        };
+        // Set signature appearance
+        signature.CustomAppearance = signatureCustomAppearance;
 
-            // Create a rectangle for signature location
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
-
-            // Create any of the three signature types
-            PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
-
-            SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
-            {
-                FontSize = 6,
-                FontFamilyName = "Times New Roman",
-                DigitalSignedLabel = "Signed by:"
-            };
-            signature.CustomAppearance = signatureCustomAppearance;
-
-            pdfSign.Sign(1, true, rect, signature);
-            // Save output PDF file
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+        pdfFileSignature.Sign(1, true, rect, signature);
+        // Save PDF document
+        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+    }
+}
 ```
-
 
 ## تغيير اللغة في نص التوقيع الرقمي
 
-باستخدام Aspose.PDF لواجهة برمجة التطبيقات .NET، يمكنك توقيع ملف PDF باستخدام أي من أنواع التوقيعات الثلاثة التالية:
+باستخدام واجهة برمجة التطبيقات Aspose.PDF for .NET، يمكنك توقيع ملف PDF باستخدام أي من الأنواع الثلاثة التالية من التوقيعات:
 
-- PKCS#1
-- PKCS#7
-- PKCS#7
+- PKCS#1.
+- PKCS#7.
+- PKCS#12.
 
-كل من التوقيعات المقدمة يحتوي على مجموعة من خصائص التكوين التي تم تنفيذها لراحتك (التوطين، تنسيق التاريخ والوقت، عائلة الخطوط إلخ). توفر فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) الوظائف المقابلة. يوضح المقتطف البرمجي التالي كيفية تغيير اللغة في نص التوقيع الرقمي:
+تحتوي كل من التوقيعات المقدمة على مجموعة من خصائص التكوين المطبقة لراحتك (التعريب، تنسيق التاريخ والوقت، عائلة الخط، إلخ). توفر فئة [SignatureCustomAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.forms/signaturecustomappearance) الوظيفة المقابلة. يوضح مقتطف الكود التالي كيفية تغيير اللغة في نص التوقيع الرقمي: 
 
 ```csharp
-     public static void ChangeLanguageInDigitalSignText()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ChangeLanguageInDigitalSignText()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();   
+    
+    using (var pdfFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
+        // Create a rectangle for signature location
+        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
+
+        // Create any of the three signature types
+        var pkcs = new Aspose.Pdf.Forms.PKCS7(dataDir + "rsa_cert.pfx", "12345")
         {
-            string inFile = _dataDir + "sample01.pdf";
-            string outFile = _dataDir + "DigitallySign.pdf";
-
-            using (Aspose.Pdf.Facades.PdfFileSignature pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
-            {
-                pdfSign.BindPdf(inFile);
-                //create a rectangle for signature location
-                System.Drawing.Rectangle rect = new System.Drawing.Rectangle(310, 45, 200, 50);
-
-                //create any of the three signature types
-                PKCS7 pkcs = new PKCS7(_dataDir + "test01.pfx", "Aspose2021")
-                {
-                    Reason = "Pruebas Firma",
-                    ContactInfo = "Contacto Pruebas",
-                    Location = "Población (Provincia)",
-                    Date = DateTime.Now
-                };
-                SignatureCustomAppearance signatureCustomAppearance = new SignatureCustomAppearance
-                {
-                    DateSignedAtLabel = "Fecha",
-                    DigitalSignedLabel = "Digitalmente firmado por",
-                    ReasonLabel = "Razón",
-                    LocationLabel = "Localización",
-                    FontFamilyName = "Arial",
-                    FontSize = 10d,
-                    Culture = System.Globalization.CultureInfo.InvariantCulture,
-                    DateTimeFormat = "yyyy.MM.dd HH:mm:ss"
-                };
-                pkcs.CustomAppearance = signatureCustomAppearance;
-                // sign the PDF file
-                pdfSign.Sign(1, true, rect, pkcs);
-                //save output PDF file
-                pdfSign.Save(outFile);
-            }
-        }
-```
+            Reason = "Pruebas Firma",
+            ContactInfo = "Contacto Pruebas",
+            Location = "Población (Provincia)",
+            Date = DateTime.Now
+        };
+        
+        var signatureCustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
+        {
+            DateSignedAtLabel = "Fecha",
+            DigitalSignedLabel = "Digitalmente firmado por",
+            ReasonLabel = "Razón",
+            LocationLabel = "Localización",
+            FontFamilyName = "Arial",
+            FontSize = 10d,
+            Culture = System.Globalization.CultureInfo.InvariantCulture,
+            DateTimeFormat = "yyyy.MM.dd HH:mm:ss"
+        };
+        // Set signature appearance
+        pkcs.CustomAppearance = signatureCustomAppearance;
+        // Sign the PDF file
+        pdfFileSignature.Sign(1, true, rect, pkcs);
+        // Save PDF document
+        pdfFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+    }
+}
 ```

@@ -1,9 +1,11 @@
 ---
-title: PdfConverter Class
+title: Класс PdfConverter
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ru/net/pdfconverter-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfConverter.
+description: Узнайте, как использовать класс PDFConverter в .NET для преобразования PDF-документов в различные форматы с помощью Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:
@@ -12,4 +14,4 @@ sitemap:
 ---
 
 - [Объединение изображений](/pdf/ru/net/merge-images/)
-- [Конвертировать PDF файл](/pdf/ru/net/convert-pdf-file/)
+- [Преобразование PDF-файла](/pdf/ru/net/convert-pdf-file/)

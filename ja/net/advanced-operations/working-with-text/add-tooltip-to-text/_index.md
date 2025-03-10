@@ -2,9 +2,11 @@
 title: C#を使用したPDFツールチップ
 linktitle: PDFツールチップ
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/pdf-tooltip/
-description: C#とAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学ぶ
+description: C#とAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学びます
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#を使用したPDFツールチップ",
-    "alternativeHeadline": "テキストにPDFツールチップを追加",
+    "headline": "PDF Tooltip using C#",
+    "alternativeHeadline": "Add Interactive Tooltips to PDF Text in C#",
+    "abstract": "C#を使用して新しいPDFツールチップ機能でPDFドキュメントを強化します。この機能により、PDFファイルのテキストフラグメントにツールチップをシームレスに追加でき、ユーザーはマウスをテキストの上に置くことで追加情報を得ることができます。目に見えないボタンと隠れたテキストブロックを利用して、Aspose.PDFを使用した動的でインタラクティブな読書体験を作成します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, add pdf tooltip",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "wordcount": "1072",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,150 +73,163 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/pdf-tooltip/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#とAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学ぶ"
+    "dateModified": "2024-11-26",
+    "description": "C#とAspose.PDFを使用してPDFのテキストフラグメントにツールチップを追加する方法を学びます"
 }
 </script>
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-## 検索したテキストに見えないボタンを追加してツールチップを追加する
+## 見えないボタンを追加して検索されたテキストにツールチップを追加する
 
-PDFドキュメントにフレーズや特定の単語に詳細をツールチップとして追加することがよく求められます。これにより、ユーザーがマウスカーソルをテキスト上にホバーしたときにポップアップが表示されます。Aspose.PDF for .NETは、検索されたテキストの上に見えないボタンを追加することでツールチップを作成する機能を提供します。次のコードスニペットは、この機能を実現する方法を示しています：
+PDFドキュメント内のフレーズや特定の単語にツールチップとして詳細を追加することがしばしば必要です。これにより、ユーザーがテキストの上にマウスカーソルを置いたときにポップアップします。Aspose.PDF for .NETは、検索されたテキストの上に見えないボタンを追加することでツールチップを作成するこの機能を提供します。次のコードスニペットは、この機能を実現する方法を示します。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-string outputFile = dataDir + "Tooltip_out.pdf";
-
-// テキストを含むサンプルドキュメントを作成する
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("マウスカーソルをここに移動してツールチップを表示します"));
-doc.Pages[1].Paragraphs.Add(new TextFragment("マウスカーソルをここに移動して非常に長いツールチップを表示します"));
-doc.Save(outputFile);
-
-// テキストを含むドキュメントを開く
-Document document = new Document(outputFile);
-// すべてのフレーズを見つけるためのTextAbsorberオブジェクトを作成する
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("マウスカーソルをここに移動してツールチップを表示します");
-// ドキュメントページでabsorberを受け入れる
-document.Pages.Accept(absorber);
-// 抽出されたテキストフラグメントを取得する
-TextFragmentCollection textFragments = absorber.TextFragments;
-
-// フラグメントをループする
-foreach (TextFragment fragment in textFragments)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTooltipToSearchedText()
 {
-    // テキストフラグメントの位置に見えないボタンを作成する
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // AlternateNameの値がビューアーアプリケーションによってツールチップとして表示される
-    field.AlternateName = "テキストのためのツールチップ。";
-    // ドキュメントにボタンフィールドを追加する
-    document.Form.Add(field);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.Pages[1].Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Tooltip_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a tooltip");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the extracted text fragments
+        var textFragments = absorber.TextFragments;
+
+        // Loop through the fragments
+        foreach (var fragment in textFragments)
+        {
+            // Create invisible button on text fragment position
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // AlternateName value will be displayed as tooltip by a viewer application
+            field.AlternateName = "Tooltip for text.";
+            // Add button field to the document
+            document.Form.Add(field);
+        }
+
+        absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
+        document.Pages.Accept(absorber);
+        textFragments = absorber.TextFragments;
+
+        foreach (var fragment in textFragments)
+        {
+            var field = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+            // Set very long text
+            field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
+                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
+                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
+                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
+                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
+                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
+                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
+                                    " deserunt mollit anim id est laborum.";
+            document.Form.Add(field);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "Tooltip_out.pdf");
+    }
 }
-
-// 次に非常に長いツールチップのサンプルが続きます
-absorber = new TextFragmentAbsorber("マウスカーソルをここに移動して非常に長いツールチップを表示します");
-document.Pages.Accept(absorber);
-textFragments = absorber.TextFragments;
-
-foreach (TextFragment fragment in textFragments)
-{
-    ButtonField field = new ButtonField(fragment.Page, fragment.Rectangle);
-    // 非常に長いテキストを設定する
-    field.AlternateName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                            " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                            " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                            " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                            " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                            " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                            " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                            " deserunt mollit anim id est laborum.";
-    document.Form.Add(field);
-}
-
-// ドキュメントを保存する
-document.Save(outputFile);
 ```
+
 {{% alert color="primary" %}}
 
-ツールチップの長さに関して、ツールチップテキストはPDFドキュメント内のPDF文字列タイプとしてコンテンツストリームの外に含まれています。PDFファイルではこのような文字列に効果的な制限はありません（PDFリファレンス付録Cを参照）。ただし、特定のプロセッサーおよび特定の運用環境で実行される準拠リーダー（例：Adobe Acrobat）にはそのような制限があります。PDFリーダーアプリケーションのドキュメントを参照してください。
+ツールチップの長さに関して、ツールチップテキストはPDFドキュメント内にPDF文字列タイプとして含まれており、コンテンツストリームの外にあります。このような文字列に対する効果的な制限はPDFファイルにはありません（PDFリファレンス付録Cを参照）。ただし、特定のプロセッサおよび特定のオペレーティング環境で動作する準拠リーダー（例：Adobe Acrobat）には、そのような制限があります。PDFリーダーアプリケーションのドキュメントを参照してください。
 
 {{% /alert %}}
 
-## マウスオーバーで表示される隠しテキストブロックを作成する
+## 隠れたテキストブロックを作成し、マウスオーバーで表示する
 
-Aspose.PDFでは、テキストボックスフィールド（またはその他のタイプの注釈）を隠す/表示するアクションを割り当てるために、Aspose.Pdf.Annotations.HideAction クラスが使用されます。以下のコードスニペットを使用して、マウスの入力/退出時にテキストブロックを表示/非表示にしてください。
+Aspose.PDFでは、アクションを隠す機能が実装されており、目に見えないボタンの上でマウスが入る/出るとテキストボックスフィールド（または他のタイプの注釈）を表示/非表示にすることができます。この目的のために、Aspose.Pdf.Annotations.HideActionクラスを使用して、テキストブロックの表示/非表示のアクションを割り当てます。次のコードスニペットを使用して、マウスの入出に応じてテキストブロックを表示/非表示にしてください。
 
-PDFドキュメント内のPDFアクションは、準拠しているリーダー（例：Adobe Acrobat）で問題なく動作します。
-PDFドキュメントでの動作が適合するリーダーで正常に機能することを考慮してください。
+また、ドキュメント内のPDFアクションは準拠リーダー（例：Adobe Reader）では正常に動作しますが、他のPDFリーダー（例：ウェブブラウザプラグイン）には保証がありません。簡単な調査を行い、次のことがわかりました：
 
-- Internet Explorer v.11.0でのPDFドキュメントの隠すアクションの全実装は問題なく機能します。
-- Opera v.12.14でも隠すアクションの全実装は機能しますが、ドキュメントを初めて開いたときに少し反応が遅れることがあります。
-- Google Chrome v.61.0でドキュメントを閲覧する場合、フィールド名を受け入れるHideActionコンストラクタを使用する実装のみが機能します。Google Chromeでの閲覧が重要な場合は、対応するコンストラクタを使用してください：
+- PDFドキュメント内の隠すアクションのすべての実装は、Internet Explorer v.11.0で正常に動作します。
+- 隠すアクションのすべての実装もOpera v.12.14で動作しますが、ドキュメントを最初に開くときに応答の遅延が見られます。
+- Google Chrome v.61.0でドキュメントを閲覧する場合、フィールド名を受け入れるHideActionコンストラクタを使用した実装のみが機能します。Google Chromeでの閲覧が重要な場合は、対応するコンストラクタを使用してください：
 
 >buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
 >buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
 
 ```csharp
-// 完全な例やデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateHiddenTextBlock()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-string outputFile = dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add paragraph with text
+        document.Pages.Add().Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Move the mouse cursor here to display floating text"));
+        // Save PDF document
+        document.Save(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf");
+    }
 
-// テキストを含むサンプルドキュメントを作成する
-Document doc = new Document();
-doc.Pages.Add().Paragraphs.Add(new TextFragment("マウスカーソルをここに移動して浮動テキストを表示"));
-doc.Save(outputFile);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf"))
+    {
+        // Create TextAbsorber object to find all the phrases matching the regular expression
+        var absorber = new Aspose.Pdf.Text.TextFragmentAbsorber("Move the mouse cursor here to display floating text");
+        // Accept the absorber for the document pages
+        document.Pages.Accept(absorber);
+        // Get the first extracted text fragment
+        var textFragments = absorber.TextFragments;
+        var fragment = textFragments[1];
 
-// テキストを含むドキュメントを開く
-Document document = new Document(outputFile);
-// すべてのフレーズを見つけるためのTextAbsorberオブジェクトを作成
-TextFragmentAbsorber absorber = new TextFragmentAbsorber("マウスカーソルをここに移動して浮動テキストを表示");
-// ドキュメントページのためにabsorberを受け入れる
-document.Pages.Accept(absorber);
-// 最初に抽出されたテキストフラグメントを取得
-TextFragmentCollection textFragments = absorber.TextFragments;
-TextFragment fragment = textFragments[1];
+        // Create hidden text field for floating text in the specified rectangle of the page
+        var floatingField = new Aspose.Pdf.Forms.TextBoxField(fragment.Page, new Aspose.Pdf.Rectangle(100, 700, 220, 740));
+        // Set text to be displayed as field value
+        floatingField.Value = "This is the \"floating text field\".";
+        // We recommend to make field 'readonly' for this scenario
+        floatingField.ReadOnly = true;
+        // Set 'hidden' flag to make field invisible on document opening
+        floatingField.Flags |= Aspose.Pdf.Annotations.AnnotationFlags.Hidden;
 
-// ページの指定された矩形に浮動テキストの非表示テキストフィールドを作成
-TextBoxField floatingField = new TextBoxField(fragment.Page, new Rectangle(100, 700, 220, 740));
-// フィールド値として表示されるテキストを設定
-floatingField.Value = "これは「浮動テキストフィールド」です。";
-// このシナリオではフィールドを'readonly'にすることをお勧めします
-floatingField.ReadOnly = true;
-// ドキュメントを開いたときにフィールドを見えなくするために'hidden'フラグを設定
-floatingField.Flags |= AnnotationFlags.Hidden;
+        // Setting a unique field name isn't necessary but allowed
+        floatingField.PartialName = "FloatingField_1";
 
-// フィールド名を一意に設定する必要はありませんが、許可されています
-floatingField.PartialName = "FloatingField_1";
+        // Setting characteristics of field appearance isn't necessary but makes it better
+        floatingField.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
+        floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
+        floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
+        floatingField.Border = new Aspose.Pdf.Annotations.Border(floatingField);
+        floatingField.Border.Width = 1;
+        floatingField.Multiline = true;
 
-// フィールドの外観特性を設定する必要はありませんが、それによりより良くなります
-floatingField.DefaultAppearance = new DefaultAppearance("Helv", 10, System.Drawing.Color.Blue);
-floatingField.Characteristics.Background = System.Drawing.Color.LightBlue;
-floatingField.Characteristics.Border = System.Drawing.Color.DarkBlue;
-floatingField.Border = new Border(floatingField);
-floatingField.Border.Width = 1;
-floatingField.Multiline = true;
+        // Add text field to the document
+        document.Form.Add(floatingField);
 
-// ドキュメントにテキストフィールドを追加
-document.Form.Add(floatingField);
+        // Create invisible button on text fragment position
+        var buttonField = new Aspose.Pdf.Forms.ButtonField(fragment.Page, fragment.Rectangle);
+        // Create new hide action for specified field (annotation) and invisibility flag
+        // (You also may reffer floating field by the name if you specified it above)
+        // Add actions on mouse enter/exit at the invisible button field
+        buttonField.Actions.OnEnter = new Aspose.Pdf.Annotations.HideAction(floatingField, false);
+        buttonField.Actions.OnExit = new Aspose.Pdf.Annotations.HideAction(floatingField);
 
-// テキストフラグメントの位置に見えないボタンを作成
-ButtonField buttonField = new ButtonField(fragment.Page, fragment.Rectangle);
-// 指定されたフィールド（アノテーション）および不可視フラグの新しい隠すアクションを作成。
-// （上記で名前を指定した場合、浮動フィールドを名前で参照することもできます。）
-// 見えないボタンフィールドでマウスが入る/出るときのアクションを追加
-buttonField.Actions.OnEnter = new HideAction(floatingField, false);
-buttonField.Actions.OnExit = new HideAction(floatingField);
+        // Add button field to the document
+        document.Form.Add(buttonField);
 
-// ドキュメントにボタンフィールドを追加
-document.Form.Add(buttonField);
-
-// ドキュメントを保存
-document.Save(outputFile);
+        // Save PDF document
+        document.Save(dataDir + "CreateHiddenTextBlock_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -243,23 +258,23 @@ document.Save(outputFile);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -268,7 +283,7 @@ document.Save(outputFile);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -280,5 +295,3 @@ document.Save(outputFile);
     }
 }
 </script>
-```
-

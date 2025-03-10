@@ -1,10 +1,12 @@
 ---
-title: Set Default Font Name
-linktitle: Set Default Font Name
+title: تعيين اسم الخط الافتراضي
+linktitle: تعيين اسم الخط الافتراضي
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /ar/net/set-default-font-name/
-description: تصف هذه القسم كيفية تعيين اسم الخط الافتراضي أثناء عملية التحويل من PDF إلى صورة.
+description: يصف هذا القسم كيفية تعيين اسم الخط الافتراضي أثناء عملية التحويل من PDF إلى صورة.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -12,21 +14,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Default Font Name",
-    "alternativeHeadline": "How to Set Default Font Name in PDF",
+    "alternativeHeadline": "Customize PDF to image conversion with default font",
+    "abstract": "حدد خطوط افتراضية مخصصة لتحويل PDF إلى صورة باستخدام Aspose.PDF for .NET. خاصية DefaultFontName تتيح لك اختيار خط بديل عندما يكون الخط الأصلي غير متوفر، مما يحسن من اتساق العرض. هذه الميزة الجديدة تعزز التحكم في مظهر الصورة الناتجة",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, .net, set default font name",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Default Font Name, PDF to image conversion, Aspose.PDF for .NET, RenderingOptions, DefaultFontName property, .NET API",
+    "wordcount": "198",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,29 +71,42 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/set-default-font-name/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تصف هذه القسم كيفية تعيين اسم الخط الافتراضي أثناء عملية التحويل من PDF إلى صورة."
+    "dateModified": "2024-11-26",
+    "description": "يصف هذا القسم كيفية تعيين اسم الخط الافتراضي أثناء عملية التحويل من PDF إلى صورة."
 }
 </script>
-**Aspose.PDF لـ .NET** API يتيح لك تعيين اسم خط افتراضي عندما لا يكون الخط متوفرًا في المستند. يمكنك استخدام خاصية DefaultFontName من فئة RenderingOptions لتعيين اسم الخط الافتراضي. في حال تم تعيين DefaultFontName على null سيتم استخدام خط **Times New Roman**. يظهر الجزء التالي من الشفرة كيفية تعيين اسم الخط الافتراضي عند حفظ PDF في صورة:
 
-يعمل الجزء التالي من الشفرة أيضًا مع واجهة [Aspose.Drawing](/pdf/ar/net/drawing/) الرسومية الجديدة.
+**Aspose.PDF for .NET** API يسمح لك بتعيين اسم خط افتراضي عندما لا يكون الخط متاحًا في المستند. يمكنك استخدام خاصية DefaultFontName من فئة RenderingOptions لتعيين اسم الخط الافتراضي. في حالة تعيين DefaultFontName إلى null، سيتم استخدام خط **Times New Roman**. يوضح مقتطف الكود التالي كيفية تعيين اسم خط افتراضي عند حفظ PDF كصورة:
+
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-
-using (Document pdfDocument = new Document(dataDir + "input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPdfToImageWithDefaultFont()
 {
-    using (FileStream imageStream = new FileStream(dataDir + "SetDefaultFontName.png", FileMode.Create))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PdfToImageWithDefaultFont.pdf"))
     {
-        Resolution resolution = new Resolution(300);
-        PngDevice pngDevice = new PngDevice(resolution);
-        RenderingOptions ro = new RenderingOptions();
-        ro.DefaultFontName = "Arial";
-        pngDevice.RenderingOptions = ro;
-        pngDevice.Process(pdfDocument.Pages[1], imageStream);
+        // Open the image stream
+        using (var imageStream = new FileStream(dataDir + "SetDefaultFontName.png", FileMode.Create))
+        {
+            // Set the resolution for the image
+            var resolution = new Aspose.Pdf.Devices.Resolution(300);
+
+            // Create the PNG device and set rendering options
+            var pngDevice = new Aspose.Pdf.Devices.PngDevice(resolution);
+            var ro = new Aspose.Pdf.RenderingOptions
+            {
+                DefaultFontName = "Arial"
+            };
+            pngDevice.RenderingOptions = ro;
+
+            // Process the first page of the document and save it as an image
+            pngDevice.Process(document.Pages[1], imageStream);
+        }
     }
 }
 ```
@@ -99,7 +115,7 @@ using (Document pdfDocument = new Document(dataDir + "input.pdf"))
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -121,21 +137,21 @@ using (Document pdfDocument = new Document(dataDir + "input.pdf"))
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -146,7 +162,7 @@ using (Document pdfDocument = new Document(dataDir + "input.pdf"))
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة للتعامل مع ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -158,5 +174,3 @@ using (Document pdfDocument = new Document(dataDir + "input.pdf"))
     }
 }
 </script>
-```
-

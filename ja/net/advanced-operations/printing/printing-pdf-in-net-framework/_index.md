@@ -1,10 +1,12 @@
 ---
-title: .NET FrameworkでPDFを印刷する
-linktitle: .NET FrameworkでPDFを印刷する
+title: PDFの印刷 in .NET Framework
+linktitle: PDFの印刷 in .NET Framework
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ja/net/printing-pdf-in-net-framework/
-description: プリンターとページ設定を使用して、C#でPDFファイルをデフォルトプリンターに印刷することができます。
+description: C#を使用して、デフォルトのプリンターにPDFファイルを印刷できます。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": ".NET FrameworkでPDFを印刷する",
-    "alternativeHeadline": ".NET FrameworkでPDFを印刷する方法",
+    "headline": "Printing PDF in .NET Framework",
+    "alternativeHeadline": "Print PDF Files Easily with C# in .NET Framework",
+    "abstract": "C#を使用してデフォルトのプリンターにPDFファイルをシームレスに印刷する新機能を紹介します。カスタマイズ可能なプリンターおよびページ設定により、開発者は印刷オプションを簡単に管理し、PDFページサイズに基づいて出力を最適化し、運用効率とユーザーエクスペリエンスを向上させることができます。この機能により、PDF印刷機能を.NETアプリケーションに統合するプロセスが簡素化されます。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, pdf in .NET Framework",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "print pdf, C# print pdf, .NET Framework, PdfViewer class, Printer and Page Settings, PrintDocumentWithSettings, choose paper source, PDF page size, Aspose.PDF, document printing",
+    "wordcount": "503",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,64 +74,245 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-pdf-in-net-framework/"
     },
-    "dateModified": "2022-02-04",
-    "description": "プリンターとページ設定を使用して、C#でPDFファイルをデフォルトプリンターに印刷することができます。"
+    "dateModified": "2024-11-25",
+    "description": "C#を使用して、デフォルトのプリンターにPDFファイルを印刷できます。"
 }
 </script>
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
 
-## **C#でPDFファイルを印刷 - プリンターとページ設定を使用してデフォルトプリンターにPDFファイルを印刷する**
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-この記事では、C#でプリンターとページ設定を使用してデフォルトプリンターにPDFファイルを印刷する方法について説明します。
+## **C#でPDFファイルを印刷 - プリンターおよびページ設定を使用してデフォルトプリンターにPDFファイルを印刷**
 
-[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) クラスを使用すると、PDFファイルをデフォルトプリンターに印刷できます。PdfViewerオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) メソッドを使用してPDFを開きます。異なる印刷設定を指定するには、`PageSettings` と `PrinterSettings` クラスを使用します。最後に、[PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) メソッドを呼び出して、プリンターとページ設定を使用してPDFをデフォルトプリンターに印刷します。次のコードスニペットは、プリンターとページ設定を使用してデフォルトプリンターにPDFを印刷する方法を示しています。
+この記事では、C#を使用してデフォルトプリンターにPDFファイルを印刷する方法について説明します。
 
+[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)クラスを使用すると、PDFファイルをデフォルトプリンターに印刷できます。PdfViewerオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2)メソッドを使用してPDFを開く必要があります。異なる印刷設定を指定するには、[PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/)および[PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/)クラスを使用します。最後に、[PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings)メソッドを呼び出して、PDFをデフォルトプリンターに印刷します。次のコードスニペットは、プリンターおよびページ設定を使用してPDFをデフォルトプリンターに印刷する方法を示しています。
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void SimplePrint()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SimplePrint()
 {
-    // PdfViewerオブジェクトを作成
-    PdfViewer viewer = new PdfViewer();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // 入力PDFファイルを開く
-    viewer.BindPdf(System.IO.Path.Combine(_dataDir, "input.pdf"));
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-    // 印刷のための属性を設定
-    viewer.AutoResize = true;         // サイズを調整してファイルを印刷
-    viewer.AutoRotate = true;         // 回転を調整してファイルを印刷
-    viewer.PrintPageDialog = false;   // 印刷時にページ番号ダイアログを表示しない
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
-    // プリンターとページ設定およびPrintDocumentのオブジェクトを作成
-    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
-    System.Drawing.Printing.PrintDocument prtdoc = new System.Drawing.Printing.PrintDocument();
+        // Create objects for printer and page settings and PrintDocument
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
+        var prtdoc = new System.Drawing.Printing.PrintDocument();
 
-    // プリンター名を設定
+        // Set printer name
+        ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
+
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SimplePrint()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Create objects for printer and page settings and PrintDocument
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+    var prtdoc = new System.Drawing.Printing.PrintDocument();
+
+    // Set printer name
     ps.PrinterName = prtdoc.PrinterSettings.PrinterName;
 
-    // 必要に応じてPageSizeを設定
-    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-    // 必要に応じてPageMarginsを設定
-    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-    // プリンターとページ設定を使用して文書を印刷
+    // Print document using printer and page settings
     viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // 印刷後にPDFファイルを閉じる
-    viewer.Close();
 }
 ```
-印刷ダイアログを表示するには、次のコードスニペットを使用してみてください：
+{{< /tab >}}
+{{< /tabs >}}
 
+印刷ダイアログを表示するには、次のコードスニペットを使用してみてください。
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-System.Windows.Forms.PrintDialog printDialog = new System.Windows.Forms.PrintDialog();
-if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintWithPrintDialog()
 {
-    // ドキュメント印刷コードはここに記述
-    // プリンタとページ設定を使用してドキュメントを印刷
-    viewer.PrintDocumentWithSettings(pgs, ps);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
+
+        var printDialog = new System.Windows.Forms.PrintDialog();
+        if (printDialog.ShowDialog() == DialogResult.OK)
+        {
+            // Document printing code goes here
+
+            // Convert PrinterSettings and PageSettings to Aspose.PDF counterparts via extension methods
+            // provided in the Aspose.Pdf.Printing namespace
+            Aspose.Pdf.Printing.PrinterSettings ps = printDialog.PrinterSettings.ToAsposePrinterSettings();
+            Aspose.Pdf.Printing.PageSettings pgs = printDialog.PrinterSettings.DefaultPageSettings.ToAsposePageSettings();
+
+            // Print document using printer and page settings
+            viewer.PrintDocumentWithSettings(pgs, ps);
+        }
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintWithPrintDialog()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    var printDialog = new System.Windows.Forms.PrintDialog();
+    if (printDialog.ShowDialog() == DialogResult.OK)
+    {
+        // Document printing code goes here
+
+        // Convert PrinterSettings and PageSettings to Aspose.PDF counterparts via extension methods
+        // provided in the Aspose.Pdf.Printing namespace
+        Aspose.Pdf.Printing.PrinterSettings ps = printDialog.PrinterSettings.ToAsposePrinterSettings();
+        Aspose.Pdf.Printing.PageSettings pgs = printDialog.PrinterSettings.DefaultPageSettings.ToAsposePageSettings();
+
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## PDFページサイズによる用紙ソースの選択
+ 
+24.4リリース以降、印刷ダイアログでPDFページサイズによる用紙ソースの選択が可能になりました。次のコードスニペットは、PDFのページサイズに基づいてプリンタートレイを選択することを可能にします。
+
+この設定は、[Document.PickTrayByPdfSize](https://reference.aspose.com/pdf/net/aspose.pdf/document/picktraybypdfsize/)プロパティを使用してオンまたはオフに切り替えることができます。
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
+
+        // Set the flag to choose a paper tray using the PDF page size
+        document.PickTrayByPdfSize = true;
+
+        // Save PDF document
+        document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSize()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Add page
+    var page = document.Pages.Add();
+    page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello world!"));
+
+    // Set the flag to choose a paper tray using the PDF page size
+    document.PickTrayByPdfSize = true;
+
+    // Save PDF document
+    document.Save(dataDir + "PickTrayByPdfSize_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -193,5 +377,3 @@ if (printDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
     }
 }
 </script>
-
-

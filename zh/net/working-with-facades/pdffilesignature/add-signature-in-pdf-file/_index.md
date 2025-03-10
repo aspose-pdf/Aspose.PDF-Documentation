@@ -1,135 +1,230 @@
 ---
 title: 在 PDF 文件中添加签名
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/add-signature-in-pdf/
-description: 本节介绍如何使用 PdfFileSignature 类向 PDF 文件添加签名。
+description: 本节解释如何使用 PdfFileSignature 类向 PDF 文件添加签名。
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Signature in PDF File",
+    "alternativeHeadline": "Add Custom Digital Signatures to PDF Files",
+    "abstract": "通过使用 PdfFileSignature 类增强您的 PDF 文档，新增添加数字签名的功能。此功能允许用户应用多种签名类型，包括 PKCS#1、PKCS#7 和 PKCS#7Detached，同时可以使用图像和特定属性自定义签名外观。通过轻松在不同页面上合并多个签名，简化您的文档验证过程。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "838",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-signature-in-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-signature-in-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF 不仅可以执行简单易行的任务，还可以应对更复杂的目标。请查看下一节以获取高级用户和开发者的信息。"
+}
+</script>
 
 ## 在 PDF 文件中添加数字签名
 
-[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类允许您在 PDF 文件中添加签名。 你需要使用输入和输出 PDF 文件创建一个 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的对象。你还需要创建一个 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 对象，在你想要添加签名的位置，并且为了设置外观，你可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 对象的 [SignatureAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance) 属性指定一个图像。Aspose.Pdf.Facades 还提供不同种类的签名，如 PKCS#1、PKCS#7 和 PKCS#7Detached。为了创建特定类型的签名，你需要使用证书文件和密码创建特定类的对象，比如 **PKCS1**、**PKCS7** 或 **PKCS7Detached**。
+[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类允许您在 PDF 文件中添加签名。您需要使用输入和输出 PDF 文件创建 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的对象。您还需要创建一个 [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle) 对象，以指定您希望添加签名的位置，并且为了设置外观，您可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 对象的 [SignatureAppearance](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/properties/signatureappearance) 属性指定图像。Aspose.Pdf.Facades 还提供不同类型的签名，如 PKCS#1、PKCS#7 和 PKCS#7Detached。为了创建特定类型的签名，您需要使用证书文件和密码创建特定类的对象，如 **PKCS1**、**PKCS7** 或 **PKCS7Detached**。
 
-一旦创建了特定签名类型的对象，你可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [Sign](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) 方法来签署 PDF，并将特定的签名对象传递给这个类。 你还可以为此方法指定其他属性。最后，您需要使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存已签名的 PDF。以下代码片段展示了如何在 PDF 文件中添加签名。
-
-```csharp
-public static void AddPdfFileSignature()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
-
-            // 为签名位置创建一个矩形
-            System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
-            // 设置签名外观
-            pdfSign.SignatureAppearance = _dataDir + "aspose-logo.png";
-
-            // 创建三种签名类型之一
-            PKCS1 signature = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
-
-            pdfSign.Sign(1, "我是文档作者", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
-            // 保存输出的 PDF 文件
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
-```
-以下代码示例展示了我们在文档上签署两个签名的能力。在我们的示例中，我们在第一页上放置第一个签名，在第二页上放置第二个签名。您可以指定您需要的页面。
+一旦创建了特定签名类型的对象，您可以使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [Sign](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature/methods/sign/index) 方法对 PDF 进行签名，并将特定签名对象传递给该类。您还可以为此方法指定其他属性。最后，您需要使用 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的 [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) 方法保存签名后的 PDF。以下代码片段向您展示了如何在 PDF 文件中添加签名。
 
 ```csharp
- public static void AddTwoSignature()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPdfFileSignature()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-            // 使用第一个签名
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdFileSignature.BindPdf(dataDir + "input.pdf");
 
-            pdfSign.BindPdf(_dataDir + "sample01.pdf");
+        // Create a rectangle for signature location
+        System.Drawing.Rectangle rect = new System.Drawing.Rectangle(10, 10, 300, 50);
+    
+        // Set signature appearance
+        pdFileSignature.SignatureAppearance = dataDir + "aspose-logo.png";
 
-            // 为第一个签名位置创建一个矩形
-            System.Drawing.Rectangle rect1 = new System.Drawing.Rectangle(10, 10, 300, 50);
+        // Create any of the three signature types
+        var signature = new PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
 
-            // 创建第一个签名对象
-            PKCS1 signature1 = new PKCS1(_dataDir + "test01.pfx", "Aspose2021"); // PKCS#1
-
-            pdfSign.Sign(1, "我是文档作者", "test@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect1, signature1);
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-
-
-            // 使用第二个签名
-
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
-
-            // 为第二个签名位置创建一个矩形
-            System.Drawing.Rectangle rect2 = new System.Drawing.Rectangle(10, 10, 300, 50);
-
-            // 创建第二个签名对象
-            PKCS1 signature2 = new PKCS1(_dataDir + "test02.pfx", "Aspose2021"); // PKCS#1
-
-            pdfSign.Sign(2, "我是文档审阅者", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
-
-            // 保存输出 PDF 文件
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+        pdFileSignature.Sign(1, "I'm document author", "test01@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect, signature);
+        // Save PDF document
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+    }
+}
 ```
 
-对于需要签名的包含表单或acroforms的文档，请参见以下示例。
-您需要使用输入和输出PDF文件创建一个[PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature)类的对象。使用[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1)进行绑定。创建一个可以添加所需属性的签名。在我们的示例中，它们是“Reason”和“CustomAppearance”。
+以下代码示例展示了用两个签名签署文档的能力。在我们的示例中，我们将第一个签名放在第一页，第二个签名放在第二页。您可以指定所需的页面。
 
 ```csharp
- public static void AddPdfFileSignatureField()
-        {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample02.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTwoSignature()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
 
-            // 创建任意三种签名类型之一
-            PKCS1 signature = new PKCS1(_dataDir + "test02.pfx", "Aspose2021")
-            {
-                Reason = "签名为作者",
-                CustomAppearance = new SignatureCustomAppearance
-                {
-                    FontSize = 6,
-                    FontFamilyName = "Calibri"
-                }
-            }; // PKCS#1
-            pdfSign.Sign("Signature1", signature);
-            // 保存输出PDF文件
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdFileSignature.BindPdf(dataDir + "input.pdf");
+
+        // Create a rectangle for 1st signature location
+        System.Drawing.Rectangle rect1 = new System.Drawing.Rectangle(10, 10, 300, 50);
+
+        // Create 1st signature object
+        var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
+
+        pdFileSignature.Sign(1, "I'm document author", "test@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect1, signature1);
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+
+        // Sign with 2nd signature
+        // Bind PDF document
+        pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
+
+        // Create a rectangle for 2nd signature location
+        System.Drawing.Rectangle rect2 = new System.Drawing.Rectangle(10, 10, 300, 50);
+
+        // Create 2nd signature object
+        var signature2 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345"); // PKCS#1
+
+        pdFileSignature.Sign(2, "I'm document reviewer", "test02@aspose-pdf-demo.local", "Aspose Pdf Demo, Australia", true, rect2, signature2);
+
+        // Save PDF document
+        pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
+    }
+}
 ```
 
-如果我们的文档有两个字段，签署它的算法类似于第一个例子。
+对于需要签名的表单或 acroforms 文档，请参见以下示例。
+您需要使用输入和输出 PDF 文件创建 [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature) 类的对象。使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilesignature/bindpdf/methods/1) 进行绑定。创建一个签名，并能够添加所需的属性。在我们的示例中，它们是 'Reason' 和 'CustomAppearance'。
 
 ```csharp
-public static void AddPdfFileSignatureField2()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPdfFileSignatureField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdFileSignature.BindPdf(dataDir + "input.pdf");
+
+        // Create any of the three signature types
+        var signature = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
         {
-            PdfFileSignature pdfSign = new PdfFileSignature();
-            pdfSign.BindPdf(_dataDir + "sample03.pdf");
-
-            // 创建三种签名类型中的任意一种
-            PKCS1 signature1 = new PKCS1(_dataDir + "test01.pfx", "Aspose2021")
+            Reason = "Sign as Author",
+            CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
             {
-                Reason = "作为作者签名",
-                CustomAppearance = new SignatureCustomAppearance
-                {
-                    FontSize = 6
-                }
-            }; // PKCS#1
-            pdfSign.Sign("Signature1", signature1);
-            // 保存输出的 PDF 文件
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
+                FontSize = 6,
+                FontFamilyName = "Calibri"
+            }
+        }; // PKCS#1
+        
+        pdFileSignature.Sign("Signature1", signature);
+        // Save PDF document
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+    }
+}
+```
 
-            pdfSign.BindPdf(_dataDir + "DigitallySign.pdf");
+如果我们的文档有两个字段，签署它的算法与第一个示例类似。
 
-            // 创建三种签名类型中的任意一种
-            PKCS1 signature2 = new PKCS1(_dataDir + "test02.pfx", "Aspose2021")
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPdfFileSignatureField2()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+
+    using (var pdFileSignature = new Aspose.Pdf.Facades.PdfFileSignature())
+    {
+        // Bind PDF document
+        pdfFileSignature.BindPdf(dataDir + "input.pdf");
+
+        // Create any of the three signature types
+        var signature1 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
+        {
+            Reason = "Sign as Author",
+            CustomAppearance = new Aspose.Pdf.Forms.SignatureCustomAppearance
             {
-                Reason = "作为审阅者签名",
-                CustomAppearance = new SignatureCustomAppearance
-                {
-                    FontSize = 6
-                }
-            }; // PKCS#1
-            pdfSign.Sign("Signature2", signature2);
-            // 保存输出的 PDF 文件
-            pdfSign.Save(_dataDir + "DigitallySign.pdf");
-        }
+                FontSize = 6
+            }
+        }; // PKCS#1
+        pdFileSignature.Sign("Signature1", signature1);
+        // Save PDF document
+        pdFileSignature.Save(dataDir + "DigitallySign_out.pdf");
+        // Bind PDF document
+        pdFileSignature.BindPdf(dataDir + "DigitallySign_out.pdf");
+
+        // Create any of the three signature types
+        var signature2 = new Aspose.Pdf.Forms.PKCS1(dataDir + "rsa_cert.pfx", "12345")
+        {
+            Reason = "Sign as Reviwer",
+            CustomAppearance = new SignatureCustomAppearance
+            {
+                FontSize = 6
+            }
+        }; // PKCS#1
+        
+        pdFileSignature.Sign("Signature2", signature2);
+        // Save PDF document
+        pdFileSignature.Save(dataDir + "DigitallySign2_out.pdf");
+    }
+}
 ```

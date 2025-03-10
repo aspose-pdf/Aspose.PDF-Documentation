@@ -2,9 +2,11 @@
 title: Работа с аннотациями
 linktitle: Аннотации в PDF
 type: docs
-weight: 100
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 160
 url: /ru/net/annotations/
-description: Этот раздел демонстрирует, как использовать все виды аннотаций в вашем PDF-файле с помощью библиотеки Aspose.PDF.
+description: Узнайте, как работать с аннотациями в файлах PDF с помощью Aspose.PDF в .NET, включая добавление комментариев, выделений и других аннотаций.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Аннотации PDF",
-    "alternativeHeadline": "Работа с аннотациями в PDF",
+    "headline": "Working with Annotations",
+    "alternativeHeadline": "Enhance PDFs with Comprehensive Annotation Capabilities",
+    "abstract": "Улучшайте свои PDF-документы с помощью мощных возможностей аннотирования библиотеки Aspose.PDF. Эта функция позволяет пользователям легко добавлять, редактировать и удалять различные типы аннотаций, включая выделение, заметки и фигуры, сохраняя при этом полную совместимость с программами для просмотра PDF-файлов. Узнайте, как без проблем управлять аннотациями и импортировать/экспортировать данные в форматах XFDF и FDF для эффективного управления PDF-документами",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, аннотации",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "PDF Annotations, Aspose.PDF, annotations, XFDF format, FDF format, edit annotations, add annotations, delete annotations, PDF manipulation, interactive features",
+    "wordcount": "294",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,24 +74,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/annotations/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел демонстрирует, как использовать все виды аннотаций в вашем PDF-файле с помощью библиотеки Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
 }
 </script>
-Содержимое внутри страницы PDF трудно редактировать, но спецификация PDF определяет полный набор объектов, которые можно добавлять на страницы PDF без изменения содержимого страницы.
 
-Эти объекты называются аннотациями, и их цель варьируется от разметки содержимого страницы до реализации интерактивных функций, таких как формы.
+Содержание внутри страницы PDF трудно редактировать, но спецификация PDF определяет полный набор объектов, которые можно добавлять на страницы PDF без изменения содержимого страницы.
 
-Просмотрщики PDF обычно позволяют создавать и редактировать различные типы аннотаций, например, выделения текста, заметки, линии или фигуры. Независимо от типов аннотаций, которые могут быть созданы, просмотрщики PDF, соответствующие спецификации PDF, также должны поддерживать отображение всех типов аннотаций.
+Эти объекты называются аннотациями, и их назначение варьируется от разметки содержимого страницы до реализации интерактивных функций, таких как формы.
 
-Аннотация является важной частью файла PDF. Используя Aspose.PDF для .NET, вы можете добавить новую аннотацию, отредактировать существующую аннотацию и удалить аннотации и так далее. В этом разделе рассматривается следующая тема:
+Просмотрщики PDF обычно позволяют создавать и редактировать различные типы аннотаций, например, выделение текста, заметки, линии или фигуры. Независимо от типов аннотаций, которые могут быть созданы, просмотрщики PDF, соответствующие спецификации PDF, также должны поддерживать рендеринг для всех типов аннотаций.
 
-Вы можете делать следующее:
+Аннотация является важной частью файла PDF. Используя Aspose.PDF for .NET, вы можете добавить новую аннотацию, отредактировать существующую аннотацию, удалить аннотации и так далее. В этом разделе рассматриваются следующие темы:
 
-- [Обзор аннотаций](/pdf/ru/net/overview-of-annotations/) - узнайте, какие типы аннотаций определены спецификацией PDF, и что поддерживает Aspose.PDF.
-- [Добавить, удалить и получить аннотацию](/pdf/ru/net/add-delete-and-get-annotation/) - этот раздел объясняет, как работать со всеми типами разрешенных аннотаций.
-- [Добавление, удаление и получение аннотаций](/pdf/ru/net/add-delete-and-get-annotation/) - этот раздел объясняет, как работать со всеми типами разрешенных аннотаций.
-- [Импорт и экспорт аннотаций в формате XFDF](/pdf/ru/net/import-export-xfdf/) - библиотека Aspose.PDF предоставляет методы для импорта и экспорта данных аннотаций в файлы XFDF.
+Вы можете сделать следующее:
+
+- [Обзор аннотаций](/pdf/ru/net/overview-of-annotations/) — узнайте, какие типы аннотаций определены спецификацией PDF и что поддерживает Aspose.PDF.
+- [Добавление, удаление и получение аннотации](/pdf/ru/net/add-delete-and-get-annotation/) — в этом разделе объясняется, как работать со всеми типами разрешённых аннотаций.
+- [Импорт и экспорт аннотаций в формате XFDF](/pdf/ru/net/import-export-xfdf/) — библиотека Aspose.PDF предоставляет методы для импорта и экспорта данных аннотаций в файлы XFDF.
+- [Импорт аннотаций формата FDF в PDF](/pdf/ru/net/import-fdf/) — библиотека Aspose.PDF предоставила метод импорта аннотаций формата FDF в файлы PDF.
 
 <script type="application/ld+json">
 {
@@ -153,4 +157,3 @@ sitemap:
     }
 }
 </script>
-

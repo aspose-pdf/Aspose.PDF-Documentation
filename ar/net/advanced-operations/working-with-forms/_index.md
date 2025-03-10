@@ -2,9 +2,11 @@
 title: العمل مع النماذج
 linktitle: العمل مع النماذج
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /ar/net/working-with-forms/
-description: تشرح هذه القسم كيفية العمل مع نماذج AcroForms و XFA في مستندات PDF الخاصة بك مع Aspose.PDF لـ .NET.
+description: يشرح هذا القسم كيفية العمل مع AcroForms و XFA Forms في مستندات PDF الخاصة بك مع Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع النماذج",
-    "alternativeHeadline": "كيفية العمل مع نماذج AcroForms و XFA",
+    "headline": "Working with Forms",
+    "alternativeHeadline": "Effortlessly Manage AcroForms and XFA in PDFs",
+    "abstract": "اكتشف الوظيفة الجديدة لـ Aspose.PDF for .NET، مما يتيح التفاعل السلس مع AcroForms و XFA Forms مباشرة داخل مستندات PDF الخاصة بك. تسهل هذه الميزة القوية عملية رسم الخرائط وإكمال النماذج برمجياً، مما يعزز قدرات معالجة المستندات لمطوري C#. افتح إمكانيات التعامل مع نماذج PDF المتقدمة اليوم!",
     "author": {
         "@type": "Person",
-        "name": "أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستندات PDF",
-    "keywords": "pdf, c#, acroforms, xfa forms",
-    "wordcount": "302",
-    "proficiencyLevel": "مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "AcroForms, XFA Forms, Aspose.PDF, PDF document generation, fill form fields, extract data from form, map PDF fields, programmatically complete PDF, XML presentation forms",
+    "wordcount": "153",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,14 +74,15 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تشرح هذه القسم كيفية العمل مع نماذج AcroForms و XFA في مستندات PDF الخاصة بك مع Aspose.PDF لـ .NET."
+    "dateModified": "2024-11-25",
+    "description": "يشرح هذا القسم كيفية العمل مع AcroForms و XFA Forms في مستندات PDF الخاصة بك مع Aspose.PDF for .NET."
 }
 </script>
-هذا القسم يصف طريقة سريعة وبسيطة لإكمال مستند PDF برمجيًا من خلال استخدام Aspose.PDF. القسم يناقش أيضا كيف يمكن المضي قدماً في استخدام Aspose.PDF لـ .NET لاكتشاف ورسم خرائط الحقول المتاحة ضمن PDF موجود مع AcroForms.
-كذلك، ستتعلم كيفية العمل مع XFA - تقنية أخرى لعرض النماذج المبنية على XML.
 
-- [AcroForms](/pdf/ar/net/acroforms/) - إنشاء نموذج، ملء حقل النموذج، استخراج البيانات من النموذج، إضافة وإزالة الحقول في PDF الخاص بك مع مكتبة .NET.
+يصف هذا القسم نهجاً سريعاً وبسيطاً لإكمال مستند PDF برمجياً من خلال استخدام Aspose.PDF. يناقش القسم أيضًا كيفية استخدام Aspose.PDF for .NET لاكتشاف ورسم الخرائط للحقول المتاحة داخل PDF موجود مع AcroForms.
+أيضًا، ستتعلم كيفية العمل مع XFA - تقنية أخرى لنماذج العرض المعتمدة على XML.
+
+- [AcroForms](/pdf/ar/net/acroforms/) - إنشاء نموذج، ملء حقل النموذج، استخراج البيانات من النموذج، إضافة وإزالة الحقول في PDF الخاص بك باستخدام مكتبة .NET.
 - [XFA Forms](/pdf/ar/net/xfa-forms/) - ملء حقول XFA، تحويل XFA، الحصول على خصائص حقول XFA.
 
 <script type="application/ld+json">
@@ -144,4 +148,3 @@ sitemap:
     }
 }
 </script>
-

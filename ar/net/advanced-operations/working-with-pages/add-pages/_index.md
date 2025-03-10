@@ -2,9 +2,11 @@
 title: إضافة صفحات إلى مستند PDF
 linktitle: إضافة صفحات
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/add-pages/
-description: هذا المقال يعلم كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعلم كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام C#.
+description: استكشف كيفية إضافة صفحات إلى PDF موجود في .NET باستخدام Aspose.PDF لتعزيز وتوسيع مستنداتك.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة صفحات في PDF باستخدام C#",
-    "alternativeHeadline": "كيفية إضافة صفحات في مستند PDF",
+    "headline": "Add Pages to PDF Document",
+    "alternativeHeadline": "Insert and Manage Pages in PDF Easily with C#",
+    "abstract": "تتيح الميزة في Aspose.PDF for .NET للمستخدمين إدراج الصفحات بسهولة في مستند PDF في أي موقع محدد، مما يعزز مرونة المستند وتنظيمه. لا تدعم هذه الوظيفة إضافة الصفحات فحسب، بل تشمل أيضًا خيارات لنقل أو إزالة الصفحات الموجودة باستخدام C#. قم بتبسيط إدارة PDF الخاصة بك مع هذه الإضافة البديهية إلى مجموعة أدوات التطوير الخاصة بك",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, إضافة صفحة pdf, إدراج صفحة pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Add Pages to PDF, insert PDF page, empty page PDF, C# PDF manipulation, PDF document generation, PageCollection, Aspose.PDF for .NET, move PDF pages, remove PDF pages, add pages to PDF",
+    "wordcount": "651",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق Aspose.PDF Doc",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,87 +74,101 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "هذا المقال يعلم كيفية إدراج (إضافة) صفحة في الموقع المطلوب في ملف PDF. تعلم كيفية نقل، إزالة (حذف) الصفحات من ملف PDF باستخدام C#."
+    "dateModified": "2024-11-26",
+    "description": "تعلّم في هذه المقالة كيفية إدراج (إضافة) صفحة في الموقع المطلوب من ملف PDF. تعلم كيفية نقل وإزالة (حذف) الصفحات من ملف PDF باستخدام C#."
 }
 </script>
 
-Aspose.PDF لـ .NET API يوفر مرونة كاملة للعمل مع الصفحات في مستند PDF باستخدام C# أو أي لغة .NET أخرى. يحافظ على جميع صفحات مستند PDF في [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) التي يمكن استخدامها للعمل مع صفحات PDF.
-Aspose.PDF لـ .NET يتيح لك إدراج صفحة في مستند PDF في أي مكان في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
-هذا القسم يوضح كيفية إضافة صفحات إلى PDF باستخدام C#.
+Aspose.PDF for .NET API يوفر مرونة كاملة للعمل مع الصفحات في مستند PDF باستخدام C# أو أي لغة .NET أخرى. يحتفظ بجميع صفحات مستند PDF في [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) التي يمكن استخدامها للعمل مع صفحات PDF.
+تتيح لك Aspose.PDF for .NET إدراج صفحة في مستند PDF في أي موقع في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
+توضح هذه القسم كيفية إضافة صفحات إلى PDF باستخدام C#.
 
 ## إضافة أو إدراج صفحة في ملف PDF
 
-Aspose.PDF لـ .NET يتيح لك إدراج صفحة في مستند PDF في أي مكان في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
+تتيح لك Aspose.PDF for .NET إدراج صفحة في مستند PDF في أي موقع في الملف بالإضافة إلى إضافة صفحات إلى نهاية ملف PDF.
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ### إدراج صفحة فارغة في ملف PDF في الموقع المطلوب
 
 لإدراج صفحة فارغة في ملف PDF:
 
-1. إنشاء كائن الفئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المدخل.
-1.
+1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) باستخدام ملف PDF المدخل.
+1. استدعِ طريقة [Insert](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/insert) لمجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) مع الفهرس المحدد.
 1. احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-يوضح الجزء التالي من الشفرة كيف يمكنك إدراج صفحة في ملف PDF.
+توضح مقتطفات الكود التالية كيفية إدراج صفحة في ملف PDF.
 
 ```cs
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "InsertEmptyPage.pdf");
-
-// إدراج صفحة فارغة في PDF
-pdfDocument.Pages.Insert(2);
-// حفظ الملف الناتج
-pdfDocument.Save(dataDir + "InsertEmptyPage_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPage.pdf"))
+    {
+       // Insert an empty page in a PDF
+       document.Pages.Insert(2);
+        // Save PDF document
+       document.Save(dataDir + "InsertEmptyPage_out.pdf");
+    }
+}
 ```
 
-في المثال أعلاه، أضفنا صفحة فارغة بالمعايير الافتراضية. إذا كنت بحاجة لجعل حجم الصفحة مماثل لصفحة أخرى في المستند يجب إضافة بعض الأسطر من الشفرة:
+في المثال أعلاه، أضفنا صفحة فارغة مع المعلمات الافتراضية. إذا كنت بحاجة إلى جعل حجم الصفحة مماثلاً لصفحة أخرى في المستند، يجب عليك إضافة
+بضع سطور من الكود:
 
 ```cs
-var page = pdfDocument.Pages.Insert(2);
-// نسخ معايير الصفحة من الصفحة 1
-page.ArtBox = pdfDocument.Pages[1].ArtBox;
-page.BleedBox = pdf.Document.Pages[1].BleedBox;
-page.CropBox = pdf.Document.Pages[1].CropBox;
-page.MediaBox = pdf.Document.Pages[1].MediaBox;
-page.TrimBox = pdf.Document.Pages[1].TrimBox;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageWithParameters()
+{
+    var page = document.Pages.Insert(2);
+    //copy page parameters from page 1
+    page.ArtBox = document.Pages[1].ArtBox;
+    page.BleedBox = document.Pages[1].BleedBox;
+    page.CropBox = document.Pages[1].CropBox;
+    page.MediaBox = document.Pages[1].MediaBox;
+    page.TrimBox = document.Pages[1].TrimBox;
+}
 ```
+
 ### إضافة صفحة فارغة في نهاية ملف PDF
 
-أحيانًا، قد ترغب في التأكد من أن المستند ينتهي بصفحة فارغة. يشرح هذا الموضوع كيفية إدراج صفحة فارغة في نهاية مستند PDF.
+أحيانًا، تريد التأكد من أن المستند ينتهي بصفحة فارغة. تشرح هذه الموضوع كيفية إدراج صفحة فارغة في نهاية مستند PDF.
 
 لإدراج صفحة فارغة في نهاية ملف PDF:
 
-1. قم بإنشاء كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مع ملف PDF المدخل.
-1. استدعي طريقة [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) من مجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection)، بدون أي معاملات.
+1. أنشئ كائن من فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) باستخدام ملف PDF المدخل.
+1. استدعِ طريقة [Add](https://reference.aspose.com/pdf/net/aspose.pdf.pagecollection/add/methods/1) لمجموعة [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection) بدون أي معلمات.
 1. احفظ ملف PDF الناتج باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-يوضح الجزء التالي من الشفرة كيفية إدراج صفحة فارغة في نهاية ملف PDF.
+توضح مقتطفات الكود التالية كيفية إدراج صفحة فارغة في نهاية ملف PDF.
 
 ```cs
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "InsertEmptyPageAtEnd.pdf");
-
-// إدراج صفحة فارغة في نهاية ملف PDF
-pdfDocument.Pages.Add();
-
-// حفظ الملف الناتج
-pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertAnEmptyPageAtTheEnd()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "InsertEmptyPageAtEnd.pdf"))
+    {
+        // Insert an empty page at the end of a PDF file
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
+    }
+}
 ```
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -173,21 +190,21 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -198,7 +215,7 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -210,4 +227,3 @@ pdfDocument.Save(dataDir + "InsertEmptyPageAtEnd_out.pdf");
     }
 }
 </script>
-

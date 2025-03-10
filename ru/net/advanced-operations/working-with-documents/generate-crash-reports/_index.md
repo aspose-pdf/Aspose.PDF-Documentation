@@ -1,0 +1,201 @@
+---
+title: Генерация отчётов о сбоях с помощью C#
+linktitle: Создание отчёта о сбое
+type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 60
+url: /ru/net/generate-crash-reports/
+description: Основная цель следующих фрагментов кода — обработка исключения и создание отчёта о сбое, который регистрирует подробности исключения с использованием Aspose.PDF for .NET.
+lastmod: "2024-09-17"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Generate Crash Reports С#",
+    "alternativeHeadline": "Automated Crash Report Generation in C#",
+    "abstract": "Новый функционал позволяет разработчикам эффективно создавать подробные отчёты об ошибках в C#, используя Aspose.PDF для .NET. Обрабатывая исключения и настраивая параметры отчёта, такие как каталог и имя файла, пользователи могут оптимизировать диагностику ошибок и улучшить процессы отладки, обеспечивая фиксацию важных деталей для эффективного решения проблем",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "Generate Crash Reports, C#, Aspose.PDF for .NET, Exception handling, PdfException.GenerateCrashReport, CrashReportOptions, Error Handling, Crash Report Generation, CustomMessage field, Crash Report Directory",
+    "wordcount": "395",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/generate-crash-reports/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/generate-crash-reports/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+}
+</script>
+
+## Генерация отчётов о сбоях
+
+Эти фрагменты кода предназначены для обработки исключения и создания отчёта о сбое при возникновении ошибки.
+
+Вот подробные шаги примера:
+
+1. Блок try содержит код, который может вызвать ошибку. В этом случае он намеренно генерирует новое исключение с сообщением «message» и внутренним исключением с сообщением «внутреннее сообщение». Внутреннее исключение предоставляет больше информации о причине ошибки.
+
+1. Блок catch. Когда в блоке try генерируется исключение, блок catch перехватывает его как объект Exception (ex).
+Внутри блока catch вызывается метод PdfException.GenerateCrashReport(). Этот метод отвечает за создание отчёта о сбое. Объект CrashReportOptions инициализируется с помощью перехваченного исключения (ex) и передаётся методу GenerateCrashReport в качестве параметра.
+
+1. Обработка ошибок. Перехватываются исключения, которые могут возникнуть во время выполнения кода.
+
+1. Генерация отчёта о сбое. При возникновении ошибки автоматически создаётся отчёт о сбое, который можно использовать для отладки или диагностики проблемы позже.
+
+**Основной рабочий процесс:**
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GenerateCrashReportExample()
+{
+    try
+    {
+        // some code
+        // ....
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(new Aspose.Pdf.CrashReportOptions(ex));
+    }
+}
+```
+
+**Задайте каталог, в котором будет генерироваться отчёт о сбое:**
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GenerateCrashReportInCustomDirectory()
+{
+    try
+    {
+        // some code
+        // ...
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Create crash report options
+        var options = new Aspose.Pdf.CrashReportOptions(ex);
+
+        // Set custom crash report directory
+        options.CrashReportDirectory = @"C:\Temp";
+
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(options);
+    }
+}
+```
+
+**Установите собственное имя отчёта о сбое:**
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GenerateCrashReportWithCustomFilename()
+{
+    try
+    {
+        // some code
+        // ...
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Create crash report options
+        var options = new Aspose.Pdf.CrashReportOptions(ex);
+
+        // Set custom crash report filename
+        options.CrashReportFilename = "custom_crash_report_name.html";
+
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(options);
+    }
+}
+```
+
+**Предоставьте дополнительную информацию об исключительных обстоятельствах в поле CustomMessage:**
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GenerateCrashReportWithCustomMessage()
+{
+    try
+    {
+        // some code
+        // ...
+
+        // Simulate an exception with an inner exception
+        throw new Exception("message", new Exception("inner message"));
+    }
+    catch (Exception ex)
+    {
+        // Create crash report options
+        var options = new Aspose.Pdf.CrashReportOptions(ex);
+
+        // Set custom message for the crash report
+        options.CustomMessage = "Exception occurred while processing PDF files with XFA formatted forms";
+
+        // Generate a crash report using PdfException
+        Aspose.Pdf.PdfException.GenerateCrashReport(options);
+    }
+}
+```

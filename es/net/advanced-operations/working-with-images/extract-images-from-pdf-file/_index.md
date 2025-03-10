@@ -2,6 +2,8 @@
 title: Extraer Imágenes de un Archivo PDF
 linktitle: Extraer Imágenes
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /es/net/extract-images-from-pdf-file/
 description: Esta sección muestra cómo extraer imágenes de un archivo PDF utilizando la biblioteca C#.
@@ -11,22 +13,23 @@ lastmod: "2022-02-17"
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extraer Imágenes de un Archivo PDF",
-    "alternativeHeadline": "Cómo extraer Imágenes de un PDF",
+    "headline": "Extract Images from PDF File",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Files",
+    "abstract": "La nueva función para extraer imágenes de archivos PDF utilizando la biblioteca C# permite a los desarrolladores recuperar y guardar fácilmente las imágenes contenidas en documentos PDF. Al aprovechar la biblioteca Aspose.PDF, los usuarios pueden acceder a imágenes específicas de cualquier página y exportarlas en varios formatos, optimizando su flujo de trabajo para gestionar contenido PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, extraer imagen de pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Extract images, PDF file, C# library, images collection, extract images from PDF, XImage object, save extracted image, PDF manipulation, Aspose.PDF for .NET, document resources",
+    "wordcount": "227",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,45 +71,46 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/extract-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-26",
     "description": "Esta sección muestra cómo extraer imágenes de un archivo PDF utilizando la biblioteca C#."
 }
 </script>
 
 El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-Las imágenes se almacenan en la colección [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de cada página, en la colección [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Para extraer una imagen particular, primero obtén la imagen de la colección Images utilizando el índice específico de la imagen.
+Las imágenes se encuentran en la colección [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de cada página en la colección [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Para extraer una página en particular, obtenga la imagen de la colección Images utilizando el índice particular de la imagen.
 
-El índice de la imagen devuelve un objeto [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Este objeto proporciona un método Save que se puede usar para guardar la imagen extraída. El siguiente fragmento de código muestra cómo extraer imágenes de un archivo PDF.
+El índice de la imagen devuelve un objeto [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Este objeto proporciona un método Save que se puede utilizar para guardar la imagen extraída. El siguiente fragmento de código muestra cómo extraer imágenes de un archivo PDF.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir+ "ExtractImages.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
+    {
+        // Extract a particular image
+        var xImage = document.Pages[1].Resources.Images[1];
+        using (var outputImage = new FileStream(dataDir + "ExtractedImage.jpg", FileMode.Create))
+        {
+            // Save PDF document image
+            xImage.Save(outputImage, System.Drawing.Imaging.ImageFormat.Jpeg);
+        }
 
-// Extraer una imagen particular
-XImage xImage = pdfDocument.Pages[1].Resources.Images[1];
-
-FileStream outputImage = new FileStream(dataDir + "output.jpg", FileMode.Create);
-
-// Guardar imagen de salida
-xImage.Save(outputImage, ImageFormat.Jpeg);
-outputImage.Close();
-
-dataDir = dataDir + "ExtractImages_out.pdf";
-
-// Guardar archivo PDF actualizado
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ExtractImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -118,7 +122,7 @@ pdfDocument.Save(dataDir);
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
             "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/destacado",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
             "https://www.linkedin.com/company/aspose",
             "https://stackoverflow.com/questions/tagged/aspose",
             "https://aspose.quora.com/",
@@ -128,21 +132,21 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -153,10 +157,10 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
-    "screenshot": "https://docs.aspose.com/pdf/net/crear-documento-pdf/screenshot.png",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
     "softwareVersion": "2022.1",
     "aggregateRating": {
         "@type": "AggregateRating",
@@ -165,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

@@ -1,9 +1,11 @@
 ---
-title: PdfFileMend Class
+title: Класс PdfFileMend
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/pdffilemend-class/
-description: Этот раздел объясняет, как работать с фасадами Aspose.PDF, используя класс PdfFileMend.
+description: Узнайте, как использовать класс PDFFileMend в .NET для восстановления повреждённых PDF-файлов с помощью Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:

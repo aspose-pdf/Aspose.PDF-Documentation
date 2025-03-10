@@ -1,10 +1,12 @@
 ---
-title: 북마크 추가 및 삭제
-linktitle: 북마크 추가 및 삭제
+title: 북마크 가져오기, 업데이트 및 확장
+linktitle: 북마크 가져오기, 업데이트 및 확장
 type: docs
-weight: 10
-url: /ko/net/add-and-delete-bookmark/
-description: PDF 문서에 C#을 사용하여 북마크를 추가할 수 있습니다. PDF 문서에서 모든 북마크 또는 특정 북마크를 삭제할 수 있습니다.
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
+url: /ko/net/get-update-and-expand-bookmark/
+description: 이 문서에서는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에서 북마크를 사용하는 방법을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "북마크 추가 및 삭제",
-    "alternativeHeadline": "PDF에서 북마크 추가 및 삭제 방법",
+    "headline": "Get, Update and Expand a Bookmark",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks",
+    "abstract": "새로운 북마크 가져오기, 업데이트 및 확장 기능은 사용자가 PDF 문서 내에서 북마크를 검색, 수정 및 시각적으로 확장할 수 있는 기능을 제공하여 Aspose.PDF for .NET 라이브러리를 향상시킵니다. 이 기능은 PDF 콘텐츠의 효율적인 탐색 및 조직을 가능하게 하여 계층적 북마크 구조를 가진 복잡한 문서를 관리하기 쉽게 만듭니다.",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf 문서 생성",
-    "keywords": "pdf, c#, 북마크 삭제, 북마크 추가",
-    "wordcount": "302",
-    "proficiencyLevel":"초급",
+    "genre": "pdf document generation",
+    "keywords": "get bookmarks, update bookmarks, expand bookmarks, PDF bookmarks, Aspose.PDF for .NET, OutlineCollection, OutlineItemCollection, child bookmarks",
+    "wordcount": "1050",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,151 +69,420 @@ sitemap:
             }
         ]
     },
-    "url": "/net/add-and-delete-bookmark/",
+    "url": "/net/get-update-and-expand-bookmark/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/add-and-delete-bookmark/"
+        "@id": "/net/get-update-and-expand-bookmark/"
     },
-    "dateModified": "2022-02-04",
-    "description": "PDF 문서에 C#을 사용하여 북마크를 추가할 수 있습니다. PDF 문서에서 모든 북마크 또는 특정 북마크를 삭제할 수 있습니다."
+    "dateModified": "2024-11-25",
+    "description": "이 문서에서는 Aspose.PDF for .NET 라이브러리를 사용하여 PDF 파일에서 북마크를 사용하는 방법을 설명합니다."
 }
 </script>
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-## PDF 문서에 즐겨찾기 추가하기
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-즐겨찾기는 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 컬렉션의 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에 저장됩니다.
+## 북마크 가져오기
 
-PDF에 즐겨찾기를 추가하려면:
+[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에는 PDF 파일의 모든 북마크가 포함되어 있습니다. 이 문서에서는 PDF 파일에서 북마크를 가져오는 방법과 특정 북마크가 있는 페이지를 가져오는 방법을 설명합니다.
 
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체를 사용하여 PDF 문서를 엽니다.
-1. 즐겨찾기를 생성하고 그 속성을 정의합니다.
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 컬렉션을 Outlines 컬렉션에 추가합니다.
+북마크를 가져오려면 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션을 반복하여 OutlineItemCollection의 각 북마크를 가져옵니다. OutlineItemCollection은 모든 북마크의 속성에 대한 액세스를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 북마크를 가져오는 방법을 보여줍니다.
 
-다음 코드 조각은 PDF 문서에 즐겨찾기를 추가하는 방법을 보여줍니다.
-
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 완전한 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
-
-// 즐겨찾기 객체 생성
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Test Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-// 목적지 페이지 번호 설정
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
-// 문서의 즐겨찾기 컬렉션에 추가
-pdfDocument.Outlines.Add(pdfOutline);
-
-dataDir = dataDir + "AddBookmark_out.pdf";
-// 출력 저장
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+        }
+    }
+}
 ```
-## PDF 문서에 자식 즐겨찾기 추가
+{{< /tab >}}
 
-즐겨찾기는 중첩될 수 있으며, 부모 즐겨찾기와 자식 즐겨찾기 간의 계층적 관계를 나타낼 수 있습니다. 이 문서에서는 PDF에 두 번째 수준의 즐겨찾기인 자식 즐겨찾기를 추가하는 방법을 설명합니다.
-
-PDF 파일에 자식 즐겨찾기를 추가하려면 먼저 부모 즐겨찾기를 추가하세요:
-
-1. 문서를 엽니다.
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)에 즐겨찾기를 추가하고, 그 속성을 정의합니다.
-1. OutlineItemCollection을 문서 객체의 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에 추가합니다.
-
-자식 즐겨찾기는 위에서 설명한 부모 즐겨찾기와 같은 방식으로 생성되지만, 부모 즐겨찾기의 Outlines 컬렉션에 추가됩니다.
-
-다음 코드 스니펫은 PDF 문서에 자식 즐겨찾기를 추가하는 방법을 보여줍니다.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Open document
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetBookmarks.pdf");
 
-// Create a parent bookmark object
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Parent Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-
-// Create a child bookmark object
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfChildOutline.Title = "Child Outline";
-pdfChildOutline.Italic = true;
-pdfChildOutline.Bold = true;
-
-// Add child bookmark in parent bookmark's collection
-pdfOutline.Add(pdfChildOutline);
-// Add parent bookmark in the document's outline collection.
-pdfDocument.Outlines.Add(pdfOutline);
-
-dataDir = dataDir + "AddChildBookmark_out.pdf";
-// Save output
-pdfDocument.Save(dataDir);
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+    }
+}
 ```
-## PDF 문서에서 모든 북마크 삭제하기
+{{< /tab >}}
+{{< /tabs >}}
 
-PDF의 모든 북마크는 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션에 저장됩니다. 이 문서는 PDF 파일에서 모든 북마크를 삭제하는 방법을 설명합니다.
+## 북마크의 페이지 번호 가져오기
 
-PDF 파일에서 모든 북마크를 삭제하려면:
+북마크를 추가한 후에는 북마크 객체와 연결된 목적지 PageNumber를 가져와서 해당 페이지를 확인할 수 있습니다.
 
-1. [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션의 Delete 메서드를 호출합니다.
-1. [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체의 [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) 메서드를 사용하여 수정된 파일을 저장합니다.
-
-다음 코드 스니펫은 PDF 문서에서 모든 북마크를 삭제하는 방법을 보여줍니다.
-
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인해 주세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+    // Create PdfBookmarkEditor
+    using (var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor())
+    {
+        // Bind PDF document
+        bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
-// 모든 북마크 삭제
-pdfDocument.Outlines.Delete();
+        // Extract bookmarks
+        Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
 
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
-// 업데이트된 파일 저장
-pdfDocument.Save(dataDir);
+        foreach (var bookmark in bookmarks)
+        {
+            string strLevelSeparator = string.Empty;
+
+            for (int i = 1; i < bookmark.Level; i++)
+            {
+                strLevelSeparator += "----";
+            }
+
+            Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+            Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+            Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+        }
+    }
+}
 ```
-## PDF 문서에서 특정 북마크 삭제하기
+{{< /tab >}}
 
-PDF 파일에서 특정 북마크를 삭제하려면:
-
-1. 북마크의 제목을 매개변수로 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션의 Delete 메소드에 전달합니다.
-1. 그 다음, Document 객체의 Save 메소드로 업데이트된 파일을 저장합니다.
-
-[Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스는 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션을 제공합니다. [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) 메소드는 메소드에 전달된 제목을 가진 북마크를 제거합니다.
-
-다음 코드 스니펫은 PDF 문서에서 특정 북마크를 삭제하는 방법을 보여줍니다.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// 전체 예제 및 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인할 수 있습니다.
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetBookmarkPageNumber()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// 문서 열기
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+    // Create PdfBookmarkEditor
+    using var bookmarkEditor = new Aspose.Pdf.Facades.PdfBookmarkEditor();
 
-// 제목으로 특정 개요 삭제
-pdfDocument.Outlines.Delete("Child Outline");
+    // Bind PDF document
+    bookmarkEditor.BindPdf(dataDir + "GetBookmarks.pdf");
 
-// 업데이트된 파일 저장
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+    // Extract bookmarks
+    Aspose.Pdf.Facades.Bookmarks bookmarks = bookmarkEditor.ExtractBookmarks();
+
+    foreach (var bookmark in bookmarks)
+    {
+        string strLevelSeparator = string.Empty;
+
+        for (int i = 1; i < bookmark.Level; i++)
+        {
+            strLevelSeparator += "----";
+        }
+
+        Console.WriteLine("{0}Title: {1}", strLevelSeparator, bookmark.Title);
+        Console.WriteLine("{0}Page Number: {1}", strLevelSeparator, bookmark.PageNumber);
+        Console.WriteLine("{0}Page Action: {1}", strLevelSeparator, bookmark.Action);
+    }
+}
 ```
+{{< /tab >}}
+{{< /tabs >}}
+
+## PDF 문서에서 자식 북마크 가져오기
+
+북마크는 부모와 자식으로 계층 구조로 구성될 수 있습니다. 모든 북마크를 가져오려면 Document 객체의 Outlines 컬렉션을 반복합니다. 그러나 자식 북마크도 가져오려면 첫 번째 루프에서 얻은 각 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 객체의 모든 북마크를 반복해야 합니다. 다음 코드 스니펫은 PDF 문서에서 자식 북마크를 가져오는 방법을 보여줍니다.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf"))
+    {
+        // Loop through all the bookmarks
+        foreach (var outlineItem in document.Outlines)
+        {
+            Console.WriteLine(outlineItem.Title);
+            Console.WriteLine(outlineItem.Italic);
+            Console.WriteLine(outlineItem.Bold);
+            Console.WriteLine(outlineItem.Color);
+
+            if (outlineItem.Count > 0)
+            {
+                Console.WriteLine("Child Bookmarks");
+
+                // There are child bookmarks then loop through that as well
+                foreach (var childOutline in outlineItem)
+                {
+                    Console.WriteLine(childOutline.Title);
+                    Console.WriteLine(childOutline.Italic);
+                    Console.WriteLine(childOutline.Bold);
+                    Console.WriteLine(childOutline.Color);
+                }
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "GetChildBookmarks.pdf");
+
+    // Loop through all the bookmarks
+    foreach (var outlineItem in document.Outlines)
+    {
+        Console.WriteLine(outlineItem.Title);
+        Console.WriteLine(outlineItem.Italic);
+        Console.WriteLine(outlineItem.Bold);
+        Console.WriteLine(outlineItem.Color);
+
+        if (outlineItem.Count > 0)
+        {
+            Console.WriteLine("Child Bookmarks");
+
+            // There are child bookmarks then loop through that as well
+            foreach (var childOutline in outlineItem)
+            {
+                Console.WriteLine(childOutline.Title);
+                Console.WriteLine(childOutline.Italic);
+                Console.WriteLine(childOutline.Bold);
+                Console.WriteLine(childOutline.Color);
+            }
+        }
+    }
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## PDF 문서에서 북마크 업데이트하기
+
+PDF 파일에서 북마크를 업데이트하려면 먼저 북마크의 인덱스를 지정하여 Document 객체의 OutlineColletion 컬렉션에서 특정 북마크를 가져옵니다. [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 객체로 북마크를 검색한 후에는 해당 속성을 업데이트하고 Save 메서드를 사용하여 업데이트된 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 북마크를 업데이트하는 방법을 보여줍니다.
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+        pdfOutline.Title = "Updated Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+    pdfOutline.Title = "Updated Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## PDF 문서에서 자식 북마크 업데이트하기
+
+자식 북마크를 업데이트하려면:
+
+1. 먼저 부모 북마크를 가져온 다음 적절한 인덱스 값을 사용하여 업데이트할 자식 북마크를 PDF 파일에서 검색합니다.
+1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/1) 메서드를 사용하여 업데이트된 PDF 파일을 저장합니다.
+
+{{% alert color="primary" %}}
+
+Document 객체의 OutlineCollection 컬렉션에서 북마크의 인덱스를 지정하여 북마크를 가져온 다음, 이 부모 북마크의 인덱스를 지정하여 자식 북마크를 가져옵니다.
+
+{{% /alert %}}
+
+다음 코드 스니펫은 PDF 문서에서 자식 북마크를 업데이트하는 방법을 보여줍니다.
+
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf"))
+    {
+        // Get a bookmark object
+        var pdfOutline = document.Outlines[1];
+
+        // Get child bookmark object
+        Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+        childOutline.Title = "Updated Outline";
+        childOutline.Italic = true;
+        childOutline.Bold = true;
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateChildBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateChildBookmarks.pdf");
+
+    // Get a bookmark object
+    var pdfOutline = document.Outlines[1];
+
+    // Get child bookmark object
+    Aspose.Pdf.OutlineItemCollection childOutline = pdfOutline[1];
+    childOutline.Title = "Updated Outline";
+    childOutline.Italic = true;
+    childOutline.Bold = true;
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateChildBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## 문서 보기 시 확장된 북마크
+
+북마크는 Document 객체의 [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) 컬렉션에 보관되며, 이는 [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) 컬렉션 내에 있습니다. 그러나 PDF 파일을 볼 때 모든 북마크가 확장된 상태여야 할 필요가 있을 수 있습니다.
+
+이 요구 사항을 충족하기 위해 각 개요/북마크 항목의 열기 상태를 Open으로 설정할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 각 북마크의 열기 상태를 확장된 상태로 설정하는 방법을 보여줍니다.
+
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+        // Traverse through each Outline item in outlines collection of PDF file
+        foreach (var item in document.Outlines)
+        {
+            // Set open status for outline item
+            item.Open = true;
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "ExpandBookmarks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExpandBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "input.pdf");
+
+    // Set page view mode i.e. show thumbnails, full-screen, show attachment panel
+    document.PageMode = Aspose.Pdf.PageMode.UseOutlines;
+
+    // Traverse through each Outline item in outlines collection of PDF file
+    foreach (var item in document.Outlines)
+    {
+        // Set open status for outline item
+        item.Open = true;
+    }
+
+    // Save PDF document
+    document.Save(dataDir + "ExpandBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NET 라이브러리",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -232,21 +504,21 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -257,7 +529,7 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET용 PDF 조작 라이브러리",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -269,5 +541,3 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
 </script>
-```
-

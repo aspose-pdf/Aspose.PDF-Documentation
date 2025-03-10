@@ -1,10 +1,12 @@
 ---
-title: XML Schema of Aspose.PDF
-linktitle: Supported XML Schema
+title: Aspose.PDF의 XML 스키마
+linktitle: 지원되는 XML 스키마
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
-url: konet/supported-xml-schema/
-description: 이 문서에서는 Aspose.PDF for .NET에서 XML 문서를 다루기 위한 XML 스키마를 설명합니다.
+url: /konet/supported-xml-schema/
+description: 이 문서에서는 Aspose.PDF for .NET에서 XML 문서 작업을 위한 XML 스키마를 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "XML Schema of Aspose.PDF",
-    "alternativeHeadline": "How to work with XML Schema in PDF ",
+    "alternativeHeadline": "Enhanced XML Schema Support in C#",
+    "abstract": "Aspose.PDF for .NET을 위한 XML 스키마를 소개합니다. 이는 .NET 애플리케이션에서 XML 문서 작업 능력을 향상시키는 강력한 새로운 기능입니다. 이 스키마는 PDF 객체를 정의하고 조작하는 구조화된 방법을 제공하여 문서 디자인 및 레이아웃에 대한 고급 사용자 정의 및 제어를 가능하게 하며, PDF 생성 프로세스를 최적화하려는 개발자에게 필수 도구입니다. 이 기능이 개발 워크플로를 어떻게 간소화하고 애플리케이션의 PDF 처리 능력을 향상시킬 수 있는지 알아보세요.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, XML schema",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "2078",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,8 +73,8 @@ sitemap:
         "@type": "WebPage",
         "@id": "net/supported-xml-schema/"
     },
-    "dateModified": "2022-02-04",
-    "description": "이 문서에서는 Aspose.PDF for .NET에서 XML 문서를 다루기 위한 XML 스키마를 설명합니다."
+    "dateModified": "2024-11-26",
+    "description": "이 문서에서는 Aspose.PDF for .NET에서 XML 문서 작업을 위한 XML 스키마를 설명합니다."
 }
 </script>
 
@@ -314,9 +316,65 @@ Aspose.PDF for .NET은 XML 문서 작업을 위해 다음 XML 스키마를 사�
     <xs:sequence>
       <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphInfoType" name="GraphInfo" minOccurs="0"/>
     </xs:sequence>
-    <xs:attribute type="xs:byte" name="Left" use="
+    <xs:attribute type="xs:byte" name="Left" use="optional"/>
+    <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+    <xs:attribute type="xs:byte" name="Width" use="optional"/>
+    <xs:attribute type="xs:byte" name="Height" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="TextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="Text" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="NoteType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextType" name="Text"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TableType" name="Table"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:ImageType" name="Image"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:GraphType" name="Graph"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:FloatingBoxType" name="FloatingBox"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:TextFragmentType" name="TextFragment"/>
+      <xs:element type="xs:string" name="HtmlFragment"/>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:HeadingType" name="Heading"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HeadingType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TextSegment"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="Level" use="optional"/>
+    <xs:attribute type="xs:string" name="IsAutoSequence" use="optional"/>
+    <xs:attribute type="xs:byte" name="Style" use="optional"/>
+    <xs:attribute type="xs:byte" name="StartNumber" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RectangleType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:byte" name="Bottom" use="optional"/>
+        <xs:attribute type="xs:byte" name="Height" use="optional"/>
+        <xs:attribute type="xs:byte" name="Left" use="optional"/>
+        <xs:attribute type="xs:byte" name="Width" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CurveType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="PositionArray"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element xmlns:asp="Aspose.Pdf" type="asp:PageType" name="Page" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+```
 
-```json
+<script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
@@ -367,7 +425,7 @@ Aspose.PDF for .NET은 XML 문서 작업을 위해 다음 XML 스키마를 사�
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "PDF 조작 라이브러리 for .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -378,4 +436,4 @@ Aspose.PDF for .NET은 XML 문서 작업을 위해 다음 XML 스키마를 사�
         "ratingCount": "16"
     }
 }
-```
+</script>

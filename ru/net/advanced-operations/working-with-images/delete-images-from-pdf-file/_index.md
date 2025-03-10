@@ -1,32 +1,35 @@
 ---
-title: Удаление изображений из файла PDF
-linktitle: Удаление изображений
+title: Удаление изображений из PDF-файла
+linktitle: Удалить изображения
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/delete-images-from-pdf-file/
-description: Этот раздел объясняет, как удалить изображения из файла PDF с использованием Aspose.PDF для .NET.
+description: В этом разделе объясняется, как удалить изображения из PDF-файла с помощью Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Удаление изображений из файла PDF",
-    "alternativeHeadline": "Как удалить изображения из PDF",
+    "headline": "Delete Images from PDF File",
+    "alternativeHeadline": "Seamlessly Remove Images from Your PDF Files",
+    "abstract": "Новая функция в Aspose.PDF для .NET позволяет пользователям эффективно удалять изображения из PDF-файлов. Эта функциональность упрощает управление документами, предоставляя простой способ удаления нежелательных визуальных элементов, улучшая общее представление содержимого.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, удаление, удалить изображение из pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Delete Images, PDF manipulation, Aspose.PDF for .NET, remove image from PDF, document object, images collection, delete method, save updated PDF, PDF file handling, image deletion in PDF",
+    "wordcount": "198",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,23 +46,23 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -68,43 +71,47 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/delete-images-from-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел объясняет, как удалить изображения из файла PDF с использованием Aspose.PDF для .NET."
+    "dateModified": "2024-11-26",
+    "description": "Этот раздел объясняет, как удалить изображения из PDF-файла с помощью Aspose.PDF для .NET."
 }
 </script>
+
 Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Для удаления изображения из файла PDF:
+Чтобы удалить изображение из файла PDF:
 
-1. Создайте объект Document и откройте входной файл PDF.
-1. Получите страницу, которая содержит изображение из коллекции страниц объекта Document.
-1. Изображения находятся в коллекции Images, которая находится в коллекции Resources страницы.
+1. Создайте объект Document и откройте входной PDF-файл.
+1. Получите страницу, содержащую изображение, из коллекции Pages объекта Document.
+1. Изображения хранятся в коллекции Images, которая находится в коллекции Resources страницы.
 1. Удалите изображение с помощью метода Delete коллекции Images.
-1. Сохраните результат с помощью метода Save объекта Document.
+1. Сохраните результат, используя метод Save объекта Document.
 
 Следующий фрагмент кода показывает, как удалить изображение из файла PDF.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteImageFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir+ "DeleteImages.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteImages.pdf"))
+    {
+        // Delete a particular image
+        document.Pages[1].Resources.Images.Delete(1);
 
-// Удалить конкретное изображение
-pdfDocument.Pages[1].Resources.Images.Delete(1);
-
-dataDir = dataDir + "DeleteImages_out.pdf";
-// Сохранить обновленный файл PDF
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "DeleteImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Библиотека Aspose.PDF для .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -126,23 +133,23 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -151,7 +158,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -163,5 +170,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

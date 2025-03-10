@@ -1,10 +1,12 @@
 ---
-title: C#を使用してPDFに背景を追加
-linktitle: 背景の追加
+title: PDFに背景を追加
+linktitle: 背景を追加
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 110
 url: /ja/net/add-backgrounds/
-description: C#を使用してPDFファイルに背景画像を追加します。BackgroundArtifactオブジェクトを使用してください。
+description: C#を使用してPDFファイルに背景画像を追加します。BackgroundArtifactオブジェクトを使用します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#を使用してPDFに背景を追加",
-    "alternativeHeadline": "PDFでの背景作業",
+    "headline": "Add background to PDF",
+    "alternativeHeadline": "Add Custom Backgrounds to PDFs with C#",
+    "abstract": "C#を使用してPDF文書に背景画像をシームレスに統合する機能を紹介します。この機能はBackgroundArtifactオブジェクトを利用しており、ウォーターマークや微妙なテクスチャなどのデザインオプションを強化し、最小限の労力でPDFを際立たせるのに最適です。カスタマイズされた背景を簡単に追加することで、文書のレイアウトを向上させる方法を発見してください。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pdf文書生成",
-    "keywords": "pdf, c#, pdf内の背景",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Add background to PDF, BackgroundArtifact object, PDF manipulation, C# PDF library, watermark in PDF, Aspose.PDF for .NET, add background image, PDF document generation, PDF artifacts, document background settings",
+    "wordcount": "228",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,39 +74,43 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-backgrounds/"
     },
-    "dateModified": "2022-02-04",
-    "description": "C#を使用してPDFファイルに背景画像を追加します。BackgroundArtifactオブジェクトを使用してください。"
+    "dateModified": "2024-11-26",
+    "description": "C#を使用してPDFファイルに背景画像を追加します。BackgroundArtifactオブジェクトを使用します。"
 }
 </script>
-背景画像は、ウォーターマークやその他の控えめなデザインをドキュメントに追加するために使用できます。Aspose.PDF for .NETでは、各PDFドキュメントはページのコレクションであり、各ページにはアーティファクトのコレクションが含まれています。[BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact) クラスを使用して、ページオブジェクトに背景画像を追加することができます。
 
-次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリとも連携します。
+背景画像は、文書にウォーターマークやその他の微妙なデザインを追加するために使用できます。Aspose.PDF for .NETでは、各PDF文書はページのコレクションであり、各ページはアーティファクトのコレクションを含んでいます。[BackgroundArtifact](https://reference.aspose.com/pdf/net/aspose.pdf/backgroundartifact)クラスを使用して、ページオブジェクトに背景画像を追加できます。
 
-次のコードスニペットは、C#を使用してPDFページに背景画像を追加する方法を示しています。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
+
+次のコードスニペットは、C#を使用してBackgroundArtifactオブジェクトでPDFページに背景画像を追加する方法を示しています。
 
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// 新しいDocumentオブジェクトを作成する
-Document doc = new Document();
-
-// ドキュメントオブジェクトに新しいページを追加する
-Page page = doc.Pages.Add();
-
-// Background Artifactオブジェクトを作成する
-BackgroundArtifact background = new BackgroundArtifact();
-
-// backgroundartifactオブジェクトの画像を指定する
-background.BackgroundImage = File.OpenRead(dataDir + "aspose-total-for-net.jpg");
-
-// ページのアーティファクトコレクションにbackgroundartifactを追加する
-page.Artifacts.Add(background);
-
-dataDir = dataDir + "ImageAsBackground_out.pdf";
-// ドキュメントを保存する
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBackgroundToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Image for background artifact object
+        using (var image = File.OpenRead(dataDir + "aspose-total-for-net.jpg"))
+        {
+            // Add page
+            Page page = document.Pages.Add();
+            // Create Background Artifact object
+            var background = new Aspose.Pdf.BackgroundArtifact();
+            // Specify the image for background artifact object
+            background.BackgroundImage = image;
+            // Add background artifact to artifacts collection of page
+            page.Artifacts.Add(background);
+            // Save PDF document
+            document.Save(dataDir + "ImageAsBackground_out.pdf");
+        }
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -132,21 +139,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -157,7 +164,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -169,5 +176,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

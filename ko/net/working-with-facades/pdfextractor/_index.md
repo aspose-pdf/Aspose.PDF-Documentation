@@ -1,16 +1,17 @@
 ---
-title: PdfExtractor Class
+title: PdfExtractor 클래스
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ko/net/pdfextractor-class/
-description: 이 섹션에서는 PdfExtractor 클래스를 사용하여 Aspose.PDF Facades를 사용하는 방법을 설명합니다.
+description: Aspose.PDF를 사용하여 .NET에서 PDFExtractor 클래스를 사용하여 텍스트 및 이미지와 같은 콘텐츠를 추출하는 방법을 배우십시오.
 lastmod: "2021-07-15"
 draft: false
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 - [텍스트 추출](/pdf/ko/net/extract-text/)
 - [이미지 추출](/pdf/ko/net/extract-images/)
 - [첨부 파일 추출](/pdf/ko/net/extract-attachments/)

@@ -2,6 +2,8 @@
 title: إضافة وحذف إشارة مرجعية
 linktitle: إضافة وحذف إشارة مرجعية
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/add-and-delete-bookmark/
 description: يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام C#. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF.
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة وحذف إشارة مرجعية",
-    "alternativeHeadline": "كيفية إضافة وحذف إشارة مرجعية من PDF",
+    "headline": "Add and Delete a Bookmark",
+    "alternativeHeadline": "Manage PDF Bookmarks: Add and Delete with Ease",
+    "abstract": "تتيح الميزة الجديدة للمستخدمين إدارة الإشارات المرجعية بكفاءة داخل مستندات PDF باستخدام C#. يمكنك بسهولة إضافة إشارات مرجعية جديدة أو حذف الموجودة، سواء كنت ترغب في إزالة جميع الإشارات المرجعية أو استهداف إدخالات معينة. تعزز هذه الوظيفة التنقل في المستند وتنظيمه لتحسين تجربة المستخدم",
     "author": {
         "@type": "Person",
-        "name":"أندري أندروخوفسكي",
-        "givenName": "أندري",
-        "familyName": "أندروخوفسكي",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, حذف إشارة مرجعية, إضافة إشارة مرجعية",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "add bookmark, delete bookmark, PDF document, C# programming, OutlineItemCollection, OutlineCollection, child bookmark, parent bookmark",
+    "wordcount": "851",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,147 +74,286 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-and-delete-bookmark/"
     },
-    "dateModified": "2022-02-04",
+    "dateModified": "2024-11-25",
     "description": "يمكنك إضافة إشارة مرجعية إلى مستند PDF باستخدام C#. من الممكن حذف جميع الإشارات المرجعية أو إشارات مرجعية معينة من مستند PDF."
 }
 </script>
-يعمل الجزء التالي من الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## إضافة إشارة مرجعية إلى مستند PDF
 
-تُحفظ الإشارات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) الخاصة بكائن الوثيقة، وهي ضمن مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+تحتفظ إشارات مرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) الخاصة بكائن Document، والتي توجد في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) .
 
-لإضافة إشارة مرجعية إلى مستند PDF:
+لإضافة إشارة مرجعية إلى PDF:
 
-1. افتح مستند PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. قم بإنشاء إشارة مرجعية وحدد خصائصها.
-1. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) إلى مجموعة العناوين.
+1. افتح مستند PDF باستخدام كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
+1. أنشئ إشارة مرجعية وحدد خصائصها.
+1. أضف مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) إلى مجموعة Outlines.
 
-يوضح الجزء التالي من الكود كيفية إضافة إشارة مرجعية في مستند PDF.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة إشارة مرجعية في مستند PDF.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf"))
+    {
+        // Create a bookmark object
+        var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfOutline.Title = "Test Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// إنشاء كائن الإشارة المرجعية
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Test Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-// تحديد رقم صفحة الوجهة
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
-// إضافة الإشارة المرجعية في مجموعة عناوين الوثيقة.
-pdfDocument.Outlines.Add(pdfOutline);
+        // Set the destination page number
+        pdfOutline.Action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[1]);
 
-dataDir = dataDir + "AddBookmark_out.pdf";
-// حفظ الناتج
-pdfDocument.Save(dataDir);
+        // Add bookmark in the document's outline collection.
+        document.Outlines.Add(pdfOutline);
+
+        // Save PDF document
+        document.Save(dataDir + "AddBookmark_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf");
+
+    // Create a bookmark object
+    var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfOutline.Title = "Test Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Set the destination page number
+    pdfOutline.Action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[1]);
+
+    // Add bookmark in the document's outline collection.
+    document.Outlines.Add(pdfOutline);
+
+    // Save PDF document
+    document.Save(dataDir + "AddBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ## إضافة إشارة مرجعية فرعية إلى مستند PDF
 
-يمكن تداخل الإشارات المرجعية، مما يشير إلى علاقة تسلسلية بين الإشارات المرجعية الأبوية والفرعية. يشرح هذا المقال كيفية إضافة إشارة مرجعية فرعية، أي إشارة مرجعية من المستوى الثاني، إلى ملف PDF.
+يمكن أن تكون الإشارات المرجعية متداخلة، مما يشير إلى علاقة هرمية مع الإشارات المرجعية الرئيسية والفرعية. يشرح هذا المقال كيفية إضافة إشارة مرجعية فرعية، أي إشارة مرجعية من المستوى الثاني، إلى PDF.
 
-لإضافة إشارة مرجعية فرعية إلى ملف PDF، أولاً أضف إشارة مرجعية أبوية:
+لإضافة إشارة مرجعية فرعية إلى ملف PDF، أضف أولاً إشارة مرجعية رئيسية:
 
 1. افتح مستندًا.
-1. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection)، مع تحديد خصائصها.
-1. أضف مجموعة OutlineItemCollection إلى مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) الخاصة بكائن المستند.
+1. أضف إشارة مرجعية إلى [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) ، مع تحديد خصائصها.
+1. أضف OutlineItemCollection إلى مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) الخاصة بكائن Document.
 
-تُنشأ الإشارة المرجعية الفرعية بنفس طريقة الإشارة المرجعية الأبوية، كما هو موضح أعلاه، لكن يتم إضافتها إلى مجموعة الإشارات المرجعية للإشارة الأبوية
+تُنشأ الإشارة المرجعية الفرعية تمامًا مثل الإشارة المرجعية الرئيسية، كما هو موضح أعلاه، ولكن يتم إضافتها إلى مجموعة Outlines الخاصة بالإشارة المرجعية الرئيسية.
 
-تظهر الأجزاء التالية من الكود كيفية إضافة إشارة مرجعية فرعية إلى مستند PDF.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة إشارة مرجعية فرعية إلى مستند PDF.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddChildBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf"))
+    {
+        // Create a parent bookmark object
+        var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfOutline.Title = "Parent Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// إنشاء كائن إشارة مرجعية أبوية
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Parent Outline";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
+        // Create a child bookmark object
+        var pdfChildOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfChildOutline.Title = "Child Outline";
+        pdfChildOutline.Italic = true;
+        pdfChildOutline.Bold = true;
 
-// إنشاء كائن إشارة مرجعية فرعية
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfChildOutline.Title = "Child Outline";
-pdfChildOutline.Italic = true;
-pdfChildOutline.Bold = true;
+        // Add child bookmark in parent bookmark's collection
+        pdfOutline.Add(pdfChildOutline);
 
-// إضافة الإشارة المرجعية الفرعية في مجموعة الإشارة الأبوية
-pdfOutline.Add(pdfChildOutline);
-// إضافة الإشارة المرجعية الأبوية في مجموعة الإشارات المرجعية للمستند.
-pdfDocument.Outlines.Add(pdfOutline);
+        // Add parent bookmark in the document's outline collection.
+        document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddChildBookmark_out.pdf";
-// حفظ الناتج
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddChildBookmark_out.pdf");
+    }
+}
 ```
-## حذف جميع العلامات المرجعية من مستند PDF
+{{< /tab >}}
 
-جميع العلامات المرجعية في ملف PDF موجودة في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). يشرح هذا المقال كيفية حذف جميع العلامات المرجعية من ملف PDF.
-
-لحذف جميع العلامات المرجعية من ملف PDF:
-
-1. استدعاء طريقة الحذف لمجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. حفظ الملف المعدل باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-
-تظهر الأجزاء التالية من الشفرة كيفية حذف جميع العلامات المرجعية من مستند PDF.
-
+{{< tab tabNum="2" >}}
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddChildBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf");
 
-// حذف جميع العلامات المرجعية
-pdfDocument.Outlines.Delete();
+    // Create a parent bookmark object
+    var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfOutline.Title = "Parent Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
 
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
-// حفظ الملف المحدث
-pdfDocument.Save(dataDir);
+    // Create a child bookmark object
+    var pdfChildOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfChildOutline.Title = "Child Outline";
+    pdfChildOutline.Italic = true;
+    pdfChildOutline.Bold = true;
+
+    // Add child bookmark in parent bookmark's collection
+    pdfOutline.Add(pdfChildOutline);
+
+    // Add parent bookmark in the document's outline collection.
+    document.Outlines.Add(pdfOutline);
+
+    // Save PDF document
+    document.Save(dataDir + "AddChildBookmark_out.pdf");
+}
 ```
-## حذف علامة مرجعية معينة من مستند PDF
+{{< /tab >}}
+{{< /tabs >}}
 
-لحذف علامة مرجعية معينة من ملف PDF:
+## حذف جميع الإشارات المرجعية من مستند PDF
 
-1. قم بتمرير عنوان العلامة المرجعية كمعامل إلى طريقة حذف مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
-1. ثم احفظ الملف المُحدث باستخدام طريقة حفظ الكائن Document.
+تحتفظ جميع الإشارات المرجعية في PDF في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) . يشرح هذا المقال كيفية حذف جميع الإشارات المرجعية من ملف PDF.
 
-توفر فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). تقوم طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) بإزالة أي علامة مرجعية يتم تمرير عنوانها إلى الطريقة.
+لحذف جميع الإشارات المرجعية من ملف PDF:
 
-توضح أجزاء الكود التالية كيفية حذف علامة مرجعية معينة من مستند PDF.
+1. استدعِ طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) .
+1. احفظ الملف المعدل باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) الخاصة بكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) .
 
+تظهر مقتطفات الشيفرة التالية كيفية حذف جميع الإشارات المرجعية من مستند PDF.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، الرجاء التوجه إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf"))
+    {
+        // Delete all bookmarks
+        document.Outlines.Delete();
 
-// حذف علامة مرجعية معينة بالعنوان
-pdfDocument.Outlines.Delete("Child Outline");
-
-// حفظ الملف المُحدث
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf");
+
+    // Delete all bookmarks
+    document.Outlines.Delete();
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## حذف إشارة مرجعية معينة من مستند PDF
+
+لحذف إشارة مرجعية معينة من ملف PDF:
+
+1. مرر عنوان الإشارة المرجعية كمعامل إلى طريقة Delete الخاصة بمجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) .
+1. ثم احفظ الملف المحدث باستخدام طريقة Save الخاصة بكائن Document.
+
+توفر فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) مجموعة [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) . تقوم طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) بإزالة أي إشارة مرجعية بعنوان تم تمريره إلى الطريقة.
+
+تظهر مقتطفات الشيفرة التالية كيفية حذف إشارة مرجعية معينة من مستند PDF.
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf"))
+    {
+        // Delete particular outline by Title
+        document.Outlines.Delete("Child Outline");
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf");
+
+    // Delete particular outline by Title
+    document.Outlines.Delete("Child Outline");
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -233,21 +375,21 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -258,7 +400,7 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -270,5 +412,3 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
 </script>
-```
-

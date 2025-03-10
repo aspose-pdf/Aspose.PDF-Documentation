@@ -2,9 +2,11 @@
 title: Acessibilidade e PDFs Marcados
 linktitle: Acessibilidade. PDF Marcado
 type: docs
-weight: 120
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 180
 url: /pt/net/accessibility-tagged-pdf/
-description: Aspose.PDF oferece a capacidade de criar documentos PDF marcados, permitindo que você marque os elementos estruturais. Saiba mais sobre como obter PDFs acessíveis.
+description: Descubra como gerar PDFs Marcados acessíveis com Aspose.PDF for .NET. Atenda aos padrões de acessibilidade para um design de documento inclusivo.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Acessibilidade e PDFs Marcados",
-    "alternativeHeadline": "Trabalhando com PDFs marcados",
+    "headline": "Accessibility and Tagged PDFs",
+    "alternativeHeadline": "Create accessible PDFs with new tagging features",
+    "abstract": "Crie PDFs acessíveis com capacidades de marcação aprimoradas. Este novo recurso permite uma navegação e legibilidade mais fáceis por tecnologias assistivas, melhorando a acessibilidade para usuários com deficiências. Desenvolva documentos PDF inclusivos e em conformidade.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "marcado, pdf, geração de documentos",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Tagged PDF, Accessible PDF, PDF Accessibility, Create Tagged PDF, Edit Tagged PDF, Extract Tagged Content, PDF Tags, Structure Elements",
+    "wordcount": "172",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,18 +74,19 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/accessibility-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF oferece a capacidade de criar documentos PDF marcados, permitindo que você marque os elementos estruturais. Saiba mais sobre como obter PDFs acessíveis."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
 }
 </script>
 
-Um documento PDF marcado pode ser acessado por pessoas com deficiências. Adicionar tags de acessibilidade aos arquivos PDF facilita para que leitores de tela e outras tecnologias assistivas leiam e naveguem por um documento, incluindo Sumários, hiperlinks, marcadores, texto alternativo, e assim por diante.
+Um documento PDF Marcado pode ser acessado por pessoas com deficiências. Adicionar tags de acessibilidade a arquivos PDF facilita a leitura e navegação de um documento por leitores de tela e outras tecnologias assistivas, com Tabelas de Conteúdo, hyperlinks, marcadores, texto alternativo, e assim por diante.
 
-Esta seção abrange o seguinte tópico:
+Esta seção cobre os seguintes tópicos:
 
 - [Criar PDF Marcado](/pdf/pt/net/create-tagged-pdf/)
+- [Editar PDF Marcado](/pdf/pt/net/edit-pdf-file-tags/)
 - [Extrair Conteúdo Marcado de PDFs Marcados](/pdf/pt/net/extract-tagged-content-from-tagged-pdfs/)
-- [Configurando Propriedades dos Elementos de Estrutura](/pdf/pt/net/setting-structure-elements-properties/)
+- [Definindo Propriedades de Elementos de Estrutura](/pdf/pt/net/setting-structure-elements-properties/)
 - [Trabalhando com Tabela em PDFs Marcados](/pdf/pt/net/working-with-table-in-tagged-pdfs/)
 - [Teste de Conformidade PDF-UA - Lista de Erros](/pdf/pt/net/pdf-ua-compliance-test-errors-list/)
 
@@ -149,4 +153,3 @@ Esta seção abrange o seguinte tópico:
     }
 }
 </script>
-

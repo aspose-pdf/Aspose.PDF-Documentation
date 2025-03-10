@@ -1,10 +1,12 @@
 ---
-title: Formatação de Documento PDF usando C#
-linktitle: Formatação de Documento PDF
+title: Formatando Documento PDF usando C#
+linktitle: Formatando Documento PDF
 type: docs
-weight: 11
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 20
 url: /pt/net/formatting-pdf-document/
-description: Crie e formate o Documento PDF com Aspose.PDF para .NET. Use o próximo trecho de código para resolver suas tarefas.
+description: Crie e formate o Documento PDF com Aspose.PDF for .NET. Use o próximo trecho de código para resolver suas tarefas.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Formatação de Documento PDF usando C#",
-    "alternativeHeadline": "Como formatar Documento PDF em .NET",
+    "headline": "Formatting Document using C#",
+    "alternativeHeadline": "Enhance PDF Formatting with Aspose.PDF for .NET",
+    "abstract": "Descubra o poderoso novo recurso de Aspose.PDF for .NET que permite aos usuários criar e formatar documentos PDF de forma contínua. Com controle abrangente sobre propriedades do documento, como configurações de exibição da janela, opções de incorporação de fontes e fatores de zoom personalizáveis, os desenvolvedores podem melhorar a experiência do usuário e manter a integridade do documento em diferentes plataformas. Otimize suas tarefas de manipulação de PDF com essa funcionalidade robusta que melhora significativamente a eficiência de suas aplicações .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, dotnet, formatar documento pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "keywords": "Formatting PDF Document, Aspose.PDF for .NET, PDF document properties, embed fonts, font substitution, set zoom factor, document window properties, PDF manipulation library, PDF document generation, C# PDF formatting",
+    "wordcount": "2526",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,159 +74,166 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/formatting-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Crie e formate o Documento PDF com Aspose.PDF para .NET. Use o próximo trecho de código para resolver suas tarefas."
+    "dateModified": "2024-11-25",
+    "description": "Crie e formate o Documento PDF com Aspose.PDF for .NET. Use o próximo trecho de código para resolver suas tarefas."
 }
 </script>
 
-## Formatação de Documento PDF
+## Formatando Documento PDF
 
-### Obter Propriedades da Janela do Documento e da Exibição de Páginas
+### Obter Propriedades da Janela do Documento e Exibição da Página
 
 Este tópico ajuda você a entender como obter propriedades da janela do documento, aplicativo visualizador e como as páginas são exibidas. Para definir essas propriedades:
 
-Abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Agora, você pode definir as propriedades do objeto Document, como:
+Abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Agora, você pode definir as propriedades do objeto Document, como
 
-- CenterWindow – Centraliza a janela do documento na tela. Padrão: false.
-- Direction – Ordem de leitura. Isso determina como as páginas são organizadas quando exibidas lado a lado. Padrão: da esquerda para a direita.
-- DisplayDocTitle – Exibe o título do documento na barra de título da janela do documento. Padrão: false (o título é exibido).
-- HideMenuBar – Oculta ou exibe a barra de menu da janela do documento. Padrão: false (a barra de menu é exibida).
-- HideToolBar – Oculta ou exibe a barra de ferramentas da janela do documento. Padrão: false (a barra de ferramentas é exibida).
-- HideWindowUI – Oculta ou exibe elementos da janela do documento como barras de rolagem. Padrão: false (elementos da janela são exibidos).
-- HideWindowUI – Ocultar ou exibir elementos da janela do documento como barras de rolagem.
-- NonFullScreenPageMode – Como o documento é exibido quando não está em modo de página inteira.
+- CenterWindow – Centraliza a janela do documento na tela. Padrão: falso.
+- Direction – Ordem de leitura. Isso determina como as páginas são dispostas quando exibidas lado a lado. Padrão: da esquerda para a direita.
+- DisplayDocTitle – Exibe o título do documento na barra de título da janela do documento. Padrão: falso (o título é exibido).
+- HideMenuBar – Oculta ou exibe a barra de menu da janela do documento. Padrão: falso (a barra de menu é exibida).
+- HideToolBar – Oculta ou exibe a barra de ferramentas da janela do documento. Padrão: falso (a barra de ferramentas é exibida).
+- HideWindowUI – Oculta ou exibe elementos da janela do documento, como barras de rolagem. Padrão: falso (os elementos da interface do usuário são exibidos).
+- NonFullScreenPageMode – Como o documento é exibido quando não está em modo de página cheia.
 - PageLayout – O layout da página.
-- PageMode – Como o documento é exibido quando aberto pela primeira vez. As opções são mostrar miniaturas, tela cheia, mostrar painel de anexos.
+- PageMode – Como o documento é exibido quando é aberto pela primeira vez. As opções são mostrar miniaturas, tela cheia, mostrar painel de anexos.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
 O seguinte trecho de código mostra como obter as propriedades usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetDocumentWindowProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "GetDocumentWindow.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetDocumentWindow.pdf"))
+    {
+        // Get different document properties
+        // Position of document's window - Default: false
+        Console.WriteLine("CenterWindow : {0}", document.CenterWindow);
 
-// Obter diferentes propriedades do documento
-// Posição da janela do documento - Padrão: false
-Console.WriteLine("CenterWindow : {0}", pdfDocument.CenterWindow);
+        // Predominant reading order; determines the position of page
+        // When displayed side by side - Default: L2R
+        Console.WriteLine("Direction : {0}", document.Direction);
 
-// Ordem de leitura predominante; determina a posição da página
-// Quando exibidas lado a lado - Padrão: L2R
-Console.WriteLine("Direction : {0}", pdfDocument.Direction);
+        // Whether window's title bar should display document title
+        // If false, title bar displays PDF file name - Default: false
+        Console.WriteLine("DisplayDocTitle : {0}", document.DisplayDocTitle);
 
-// Se a barra de título da janela deve exibir o título do documento
-// Se falso, a barra de título exibe o nome do arquivo PDF - Padrão: false
-Console.WriteLine("DisplayDocTitle : {0}", pdfDocument.DisplayDocTitle);
+        // Whether to resize the document's window to fit the size of
+        // First displayed page - Default: false
+        Console.WriteLine("FitWindow : {0}", document.FitWindow);
 
-// Se redimensionar a janela do documento para ajustar o tamanho da
-// Primeira página exibida - Padrão: false
-Console.WriteLine("FitWindow : {0}", pdfDocument.FitWindow);
+        // Whether to hide menu bar of the viewer application - Default: false
+        Console.WriteLine("HideMenuBar : {0}", document.HideMenubar);
 
-// Se ocultar a barra de menu da aplicação visualizadora - Padrão: false
-Console.WriteLine("HideMenuBar : {0}", pdfDocument.HideMenubar);
+        // Whether to hide tool bar of the viewer application - Default: false
+        Console.WriteLine("HideToolBar : {0}", document.HideToolBar);
 
-// Se ocultar a barra de ferramentas da aplicação visualizadora - Padrão: false
-Console.WriteLine("HideToolBar : {0}", pdfDocument.HideToolBar);
+        // Whether to hide UI elements like scroll bars
+        // And leaving only the page contents displayed - Default: false
+        Console.WriteLine("HideWindowUI : {0}", document.HideWindowUI);
 
-// Se ocultar elementos da interface do usuário como barras de rolagem
-// E deixando apenas o conteúdo da página exibido - Padrão: false
-Console.WriteLine("HideWindowUI : {0}", pdfDocument.HideWindowUI);
+        // Document's page mode. How to display document on exiting full-screen mode.
+        Console.WriteLine("NonFullScreenPageMode : {0}", document.NonFullScreenPageMode);
 
-// Modo de página do documento. Como exibir o documento ao sair do modo tela cheia.
-Console.WriteLine("NonFullScreenPageMode : {0}", pdfDocument.NonFullScreenPageMode);
+        // The page layout i.e. single page, one column
+        Console.WriteLine("PageLayout : {0}", document.PageLayout);
 
-// O layout da página, por exemplo, página única, uma coluna
-Console.WriteLine("PageLayout : {0}", pdfDocument.PageLayout);
-
-// Como o documento deve ser exibido quando aberto
-// Por exemplo, mostrar miniaturas, tela cheia, mostrar painel de anexos
-Console.WriteLine("pageMode : {0}", pdfDocument.PageMode);
+        // How the document should display when opened
+        // I.e. show thumbnails, full-screen, show attachment panel
+        Console.WriteLine("PageMode : {0}", document.PageMode);
+    }
+}
 ```
-### Definir Propriedades da Janela do Documento e Exibição de Página
 
-Este tópico explica como configurar as propriedades da janela do documento, aplicativo de visualização e exibição de página. Para configurar essas diferentes propriedades:
+### Definir Propriedades da Janela do Documento e Exibição da Página
+
+Este tópico explica como definir as propriedades da janela do documento, aplicativo visualizador e exibição da página. Para definir essas diferentes propriedades:
 
 1. Abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Defina as propriedades do objeto Document.
 1. Salve o arquivo PDF atualizado usando o método Save.
 
-Propriedades disponíveis são:
+As propriedades disponíveis são:
 
-- CenterWindow
-- Direction
-- DisplayDocTitle
-- FitWindow
-- HideMenuBar
-- HideToolBar
-- HideWindowUI
-- NonFullScreenPageMode
-- PageLayout
-- PageMode
+- CenterWindow.
+- Direction.
+- DisplayDocTitle.
+- FitWindow.
+- HideMenuBar.
+- HideToolBar.
+- HideWindowUI.
+- NonFullScreenPageMode.
+- PageLayout.
+- PageMode.
 
-Cada uma é usada e descrita no código abaixo. O seguinte trecho de código mostra como configurar as propriedades usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+Cada uma é usada e descrita no código abaixo. O seguinte trecho de código mostra como definir as propriedades usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetDocumentWindowProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "SetDocumentWindow.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetDocumentWindow.pdf"))
+    {
+        // Set different document properties
+        // Specify to position document's window - Default: false
+        document.CenterWindow = true;
 
-// Definir diferentes propriedades do documento
-// Especificar para posicionar a janela do documento - Padrão: false
-pdfDocument.CenterWindow = true;
+        // Predominant reading order; determines the position of page
+        // When displayed side by side - Default: L2R
+        document.Direction = Aspose.Pdf.Direction.R2L;
 
-// Ordem de leitura predominante; determina a posição da página
-// Quando exibido lado a lado - Padrão: L2R
-pdfDocument.Direction = Direction.R2L;
+        // Specify whether window's title bar should display document title
+        // If false, title bar displays PDF file name - Default: false
+        document.DisplayDocTitle = true;
 
-// Especificar se a barra de título da janela deve exibir o título do documento
-// Se falso, a barra de título exibe o nome do arquivo PDF - Padrão: false
-pdfDocument.DisplayDocTitle = true;
+        // Specify whether to resize the document's window to fit the size of
+        // First displayed page - Default: false
+        document.FitWindow = true;
 
-// Especificar se redimensionar a janela do documento para caber no tamanho da
-// Primeira página exibida - Padrão: false
-pdfDocument.FitWindow = true;
+        // Specify whether to hide menu bar of the viewer application - Default: false
+        document.HideMenubar = true;
 
-// Especificar se ocultar a barra de menus do aplicativo visualizador - Padrão: false
-pdfDocument.HideMenubar = true;
+        // Specify whether to hide tool bar of the viewer application - Default: false
+        document.HideToolBar = true;
 
-// Especificar se ocultar a barra de ferramentas do aplicativo visualizador - Padrão: false
-pdfDocument.HideToolBar = true;
+        // Specify whether to hide UI elements like scroll bars
+        // And leaving only the page contents displayed - Default: false
+        document.HideWindowUI = true;
 
-// Especificar se ocultar elementos da interface do usuário como barras de rolagem
-// E deixar apenas o conteúdo da página exibido - Padrão: false
-pdfDocument.HideWindowUI = true;
+        // Document's page mode. Specify how to display document on exiting full-screen mode.
+        document.NonFullScreenPageMode = Aspose.Pdf.PageMode.UseOC;
 
-// Modo de página do documento. especificar como exibir o documento ao sair do modo tela cheia.
-pdfDocument.NonFullScreenPageMode = PageMode.UseOC;
+        // Specify the page layout i.e. single page, one column
+        document.PageLayout = Aspose.Pdf.PageLayout.TwoColumnLeft;
 
-// Especificar o layout da página, ou seja, página única, uma coluna
-pdfDocument.PageLayout = PageLayout.TwoColumnLeft;
+        // Specify how the document should display when opened
+        // I.e. show thumbnails, full-screen, show attachment panel
+        document.PageMode = Aspose.Pdf.PageMode.UseThumbs;
 
-// Especificar como o documento deve ser exibido quando aberto
-// Ou seja, mostrar miniaturas, tela cheia, mostrar painel de anexos
-pdfDocument.PageMode = PageMode.UseThumbs;
-
-dataDir = dataDir + "SetDocumentWindow_out.pdf";
-// Salvar arquivo PDF atualizado
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "SetDocumentWindow_out.pdf");
+    }
+}
 ```
+
 ### Incorporando Fontes em um arquivo PDF existente
 
-Leitores de PDF suportam [um núcleo de 14 fontes](https://en.wikipedia.org/wiki/PDF#Text) para que os documentos possam ser exibidos da mesma maneira, independentemente da plataforma em que o documento está sendo visualizado. Quando um PDF contém uma fonte que não é uma das 14 fontes principais, incorpore a fonte ao arquivo PDF para evitar a substituição da fonte.
+Leitores de PDF suportam [um núcleo de 14 fontes](https://en.wikipedia.org/wiki/PDF#Text) para que os documentos possam ser exibidos da mesma forma, independentemente da plataforma em que o documento é exibido. Quando um PDF contém uma fonte que não é uma das 14 fontes principais, incorpore a fonte no arquivo PDF para evitar a substituição de fontes.
 
-Aspose.PDF para .NET suporta a incorporação de fontes em arquivos PDF existentes. Você pode incorporar uma fonte completa ou um subconjunto da fonte. Para incorporar a fonte, abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Em seguida, use a classe [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) para incorporar a fonte no arquivo PDF. Para incorporar a fonte completa, use a propriedade IsEmbeded da classe Font; para usar um subconjunto da fonte, use a propriedade IsSubset.
+Aspose.PDF for .NET suporta a incorporação de fontes em arquivos PDF existentes. Você pode incorporar uma fonte completa ou um subconjunto da fonte. Para incorporar a fonte, abra o arquivo PDF usando a classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Em seguida, use a classe [Aspose.Pdf.Text.Font](https://reference.aspose.com/pdf/net/aspose.pdf.text) para incorporar a fonte no arquivo PDF. Para incorporar a fonte completa, use a propriedade IsEmbeded da classe Font; para usar um subconjunto da fonte, use a propriedade IsSubset.
 
 {{% alert color="primary" %}}
 
-Um subconjunto de fonte incorpora apenas os caracteres que são usados e é útil onde as fontes são usadas para frases curtas ou slogans, por exemplo, onde uma fonte corporativa é usada para um logotipo, mas não para o texto principal.
-Um subconjunto de fontes incorpora apenas os caracteres que são utilizados e é útil onde as fontes são usadas para frases curtas ou slogans, por exemplo, onde uma fonte corporativa é usada para um logotipo, mas não para o texto principal.
+Um subconjunto de fonte incorpora apenas os caracteres que são usados e é útil onde as fontes são usadas para frases curtas ou slogans, por exemplo, onde uma fonte corporativa é usada para um logotipo, mas não para o texto do corpo. Usar um subconjunto reduz o tamanho do arquivo do PDF de saída. No entanto, se uma fonte personalizada for usada para o texto do corpo, incorpore-a na íntegra.
 
 {{% /alert %}}
 
@@ -231,222 +241,322 @@ O seguinte trecho de código mostra como incorporar uma fonte em um arquivo PDF.
 
 ### Incorporando Fontes Padrão Tipo 1
 
-Alguns documentos PDF possuem fontes de um conjunto especial da Adobe. Fontes deste conjunto são chamadas de “Fontes Padrão Tipo 1”. Este conjunto inclui 14 fontes e a incorporação deste tipo de fontes requer o uso de sinalizadores especiais, ou seja [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). A seguir está o trecho de código que pode ser usado para obter um documento com todas as fontes incorporadas, incluindo Fontes Padrão Tipo 1:
+Alguns documentos PDF têm fontes de um conjunto especial de fontes da Adobe. Fontes desse conjunto são chamadas de “Fontes Padrão Tipo 1”. Este conjunto inclui 14 fontes e a incorporação desse tipo de fontes requer o uso de flags especiais, ou seja, [Aspose.Pdf.Document.EmbedStandardFonts](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/embedstandardfonts). A seguir está o trecho de código que pode ser usado para obter um documento com todas as fontes incorporadas, incluindo Fontes Padrão Tipo 1:
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Text();
-// Carregar um Documento PDF existente
-Document pdfDocument = new Document(dataDir + "input.pdf");
-// Definir a propriedade EmbedStandardFonts do documento
-pdfDocument.EmbedStandardFonts = true;
-foreach (Aspose.Pdf.Page page in pdfDocument.Pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void EmbedFontsType1ToPdf()
 {
-    if (page.Resources.Fonts != null)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        foreach (Aspose.Pdf.Text.Font pageFont in page.Resources.Fonts)
+        // Set EmbedStandardFonts property of document
+        document.EmbedStandardFonts = true;
+
+        // Iterate through each page
+        foreach (var page in document.Pages)
         {
-// Verificar se a fonte já está incorporada
-if (!pageFont.IsEmbedded)
-{
-    pageFont.IsEmbedded = true;
+            if (page.Resources.Fonts != null)
+            {
+                foreach (var pageFont in page.Resources.Fonts)
+                {
+                    // Check if font is already embedded
+                    if (!pageFont.IsEmbedded)
+                    {
+                        pageFont.IsEmbedded = true;
+                    }
+                }
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "EmbeddedFontsUpdated_out.pdf");
+    }
 }
+```
+
+### Incorporando Fontes ao criar PDF
+
+Se você precisar usar qualquer fonte além das 14 fontes principais suportadas pelo Adobe Reader, deve incorporar a descrição da fonte ao gerar o arquivo PDF. Se as informações da fonte não forem incorporadas, o Adobe Reader as obterá do sistema operacional se estiver instalado no sistema, ou construirá uma fonte substituta de acordo com o descritor da fonte no PDF.
+
+>Por favor, note que a fonte incorporada deve estar instalada na máquina host, ou seja, no caso do seguinte código, a fonte ‘Univers Condensed’ está instalada no sistema.
+
+Usamos a propriedade IsEmbedded da classe Font para incorporar as informações da fonte no arquivo PDF. Definir o valor dessa propriedade como ‘True’ incorporará o arquivo de fonte completo no PDF, sabendo que isso aumentará o tamanho do arquivo PDF. A seguir está o trecho de código que pode ser usado para incorporar as informações da fonte no PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void EmbedFontWhileCreatingPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Create a section in the Pdf object
+        var page = document.Pages.Add();
+
+        // Create a TextFragment
+        var fragment = new Aspose.Pdf.Text.TextFragment("");
+
+        // Create a TextSegment with sample text
+        var segment = new Aspose.Pdf.Text.TextSegment(" This is a sample text using Custom font.");
+
+        // Create and configure TextState
+        var ts = new Aspose.Pdf.Text.TextState();
+        ts.Font = Aspose.Pdf.Text.FontRepository.FindFont("Arial");
+        ts.Font.IsEmbedded = true;
+        segment.TextState = ts;
+
+        // Add the segment to the fragment
+        fragment.Segments.Add(segment);
+
+        // Add the fragment to the page
+        page.Paragraphs.Add(fragment);
+
+        // Save PDF Document
+        document.Save(dataDir + "EmbedFontWhileDocCreation_out.pdf");
+    }
+}
+```
+
+### Definir Nome da Fonte Padrão ao Salvar PDF
+
+Quando um documento PDF contém fontes que não estão disponíveis no próprio documento e no dispositivo, a API substitui essas fontes pela fonte padrão. Quando a fonte está disponível (está instalada no dispositivo ou está incorporada no documento), o PDF de saída deve ter a mesma fonte (não deve ser substituída pela fonte padrão). O valor da fonte padrão deve conter o nome da fonte (não o caminho para os arquivos de fonte). Implementamos um recurso para definir o nome da fonte padrão ao salvar um documento como PDF. O seguinte trecho de código pode ser usado para definir a fonte padrão:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetDefaultFontOnDocumentSave(string documentName, string newName)
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var fs = new FileStream(dataDir + "GetDocumentWindow.pdf", FileMode.Open))
+    {
+        using (var document = new Aspose.Pdf.Document(fs))
+        {
+            // Create PdfSaveOptions and specify Default Font Name
+            var pdfSaveOptions = new Aspose.Pdf.PdfSaveOptions
+            {
+                DefaultFontName = newName
+            };
+
+            // Save PDF document
+            document.Save(dataDir + "DefaultFont_out.pdf", pdfSaveOptions);
         }
     }
 }
-pdfDocument.Save(dataDir + "EmbeddedFonts-updated_out.pdf");
 ```
-### Incorporando Fontes ao criar PDF
 
-Se você precisar usar qualquer fonte além das 14 fontes principais suportadas pelo Adobe Reader, você deve incorporar a descrição da fonte ao gerar o arquivo PDF. Se as informações da fonte não forem incorporadas, o Adobe Reader as obterá do Sistema Operacional, se estiver instalado no sistema, ou construirá uma fonte substituta de acordo com o descritor de fonte no PDF.
+### Obter Todas as Fontes do Documento PDF
 
->Observe que a fonte incorporada deve estar instalada na máquina hospedeira, ou seja, no caso do seguinte código, a fonte ‘Univers Condensed’ está instalada no sistema.
-
-Usamos a propriedade IsEmbedded da classe Font para incorporar as informações da fonte no arquivo PDF. Definir o valor desta propriedade como ‘True’ incorporará o arquivo de fonte completo no PDF, sabendo que isso aumentará o tamanho do arquivo PDF. A seguir está o trecho de código que pode ser usado para incorporar as informações da fonte no PDF.
+Caso você queira obter todas as fontes de um documento PDF, pode usar o método FontUtilities.GetAllFonts() fornecido na classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Por favor, verifique o seguinte trecho de código para obter todas as fontes de um documento PDF existente:
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Instancia um objeto Pdf chamando seu construtor vazio
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-
-// Cria uma seção no objeto Pdf
-Aspose.Pdf.Page page = doc.Pages.Add();
-
-Aspose.Pdf.Text.TextFragment fragment = new Aspose.Pdf.Text.TextFragment("");
-
-Aspose.Pdf.Text.TextSegment segment = new Aspose.Pdf.Text.TextSegment(" Este é um texto de exemplo usando fonte personalizada.");
-Aspose.Pdf.Text.TextState ts = new Aspose.Pdf.Text.TextState();
-ts.Font = FontRepository.FindFont("Arial");
-ts.Font.IsEmbedded = true;
-segment.TextState = ts;
-fragment.Segments.Add(segment);
-page.Paragraphs.Add(fragment);
-
-dataDir = dataDir + "EmbedFontWhileDocCreation_out.pdf";
-// Salva o Documento PDF
-doc.Save(dataDir);
-```
-### Definir Nome da Fonte Padrão ao Salvar PDF
-
-Quando um documento PDF contém fontes que não estão disponíveis no próprio documento e no dispositivo, a API substitui essas fontes pela fonte padrão. Quando a fonte está disponível (está instalada no dispositivo ou está embutida no documento), o PDF resultante deve manter a mesma fonte (não deve ser substituída pela fonte padrão). O valor da fonte padrão deve conter o nome da fonte (não o caminho para os arquivos de fonte). Implementamos um recurso para definir o nome da fonte padrão ao salvar um documento como PDF. O seguinte trecho de código pode ser usado para definir a fonte padrão:
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// Carregar um documento PDF existente com fonte faltando
-string documentName = dataDir + "input.pdf";
-string newName = "Arial";
-using (System.IO.FileStream fs = new System.IO.FileStream(documentName, System.IO.FileMode.Open))
-using (Document document = new Document(fs))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetAllFontsFromPdf()
 {
-    PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-    // Especificar Nome da Fonte Padrão
-    pdfSaveOptions.DefaultFontName = newName;
-    document.Save(dataDir + "output_out.pdf", pdfSaveOptions);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Get all fonts used in the document
+        var fonts = document.FontUtilities.GetAllFonts();
+
+        // Iterate through each font and print its name
+        foreach (var font in fonts)
+        {
+            Console.WriteLine(font.FontName);
+        }
+    }
 }
 ```
 
-### Obter Todas as Fontes de um Documento PDF
+### Obter Avisos para Substituição de Fontes
 
-Caso você queira obter todas as fontes de um documento PDF, você pode usar o método FontUtilities.GetAllFonts() fornecido na classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Por favor, verifique o trecho de código a seguir para obter todas as fontes de um documento PDF existente:
+Aspose.PDF for .NET fornece métodos para obter notificações sobre substituição de fontes para lidar com casos de substituição de fontes. Os trechos de código abaixo mostram como usar a funcionalidade correspondente.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document doc = new Document(dataDir + "input.pdf");
-Aspose.Pdf.Text.Font[] fonts = doc.FontUtilities.GetAllFonts();
-foreach (Aspose.Pdf.Text.Font font in fonts)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void NotificationFontSubstitution()
 {
-    Console.WriteLine(font.FontName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Attach the FontSubstitution event handler
+        document.FontSubstitution += OnFontSubstitution;
+        // You can use lambda
+        // (oldFont, newFont) => Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
+        //                                                                        oldFont.FontName, newFont.FontName));
+
+        // Save PDF document
+        document.Save(dataDir + "NotificationFontSubstitution_out.pdf");
+    }
 }
 ```
 
-### Obter Avisos para Substituição de Fonte
-
-Aspose.PDF para .NET oferece métodos para obter notificações sobre substituição de fonte para lidar com casos de substituição de fonte. Os trechos de código abaixo mostram como usar a funcionalidade correspondente.
+O **OnFontSubstitution** método é conforme listado abaixo.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-Document doc = new Document(dataDir + "input.pdf");
-
-doc.FontSubstitution += new Document.FontSubstitutionHandler(OnFontSubstitution);
-```
-O método **OnFontSubstitution** é listado abaixo.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-Console.WriteLine(string.Format("A fonte '{0}' foi substituída por outra fonte '{1}'",
-oldFont.FontName, newFont.FontName));
+private static void OnFontSubstitution(Aspose.Pdf.Text.Font oldFont, Aspose.Pdf.Text.Font newFont)
+{
+    // Handle the font substitution event here
+    Console.WriteLine(string.Format("Font '{0}' was substituted with another font '{1}'",
+        oldFont.FontName, newFont.FontName));
+}
 ```
 
 ### Melhorar a Incorporação de Fontes usando FontSubsetStrategy
 
-A funcionalidade de incorporar as fontes como um subconjunto pode ser realizada usando a propriedade IsSubset, mas às vezes você deseja reduzir um conjunto de fontes totalmente incorporado apenas para os subconjuntos que são usados no documento. Aspose.Pdf.Document possui a propriedade FontUtilities que inclui o método SubsetFonts(FontSubsetStrategy subsetStrategy). No método SubsetFonts(), o parâmetro subsetStrategy ajuda a ajustar a estratégia de subconjunto. FontSubsetStrategy suporta as duas seguintes variantes de subconjunto de fontes.
+O recurso para incorporar as fontes como um subconjunto pode ser realizado usando a propriedade IsSubset, mas às vezes você deseja reduzir um conjunto de fontes totalmente incorporadas apenas para subconjuntos que são usados no documento. Aspose.Pdf.Document tem a propriedade FontUtilities que inclui o método SubsetFonts(FontSubsetStrategy subsetStrategy). No método SubsetFonts(), o parâmetro subsetStrategy ajuda a ajustar a estratégia de subconjunto. FontSubsetStrategy suporta duas variantes seguintes de subconjunto de fontes.
 
-- SubsetAllFonts - Isso irá criar um subconjunto de todas as fontes, usadas no documento.
-- SubsetEmbeddedFontsOnly - Isso irá criar um subconjunto apenas daquelas fontes que estão totalmente incorporadas no documento.
+- SubsetAllFonts - Isso irá subdefinir todas as fontes usadas em um documento.
+- SubsetEmbeddedFontsOnly - Isso irá subdefinir apenas aquelas fontes que estão totalmente incorporadas no documento.
 
 O seguinte trecho de código mostra como definir FontSubsetStrategy:
-O seguinte trecho de código mostra como configurar FontSubsetStrategy:
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-Document doc = new Document(dataDir + "input.pdf");
-// Todas as fontes serão incorporadas como subconjunto no documento em caso de SubsetAllFonts.
-doc.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetAllFonts);
-// O subconjunto de fontes será incorporado para fontes totalmente incorporadas, mas as fontes que não estão incorporadas no documento não serão afetadas.
-doc.FontUtilities.SubsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
-doc.Save(dataDir + "Output_out.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFontSubsetStrategy()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // All fonts will be embedded as subset into document in case of SubsetAllFonts.
+        document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetAllFonts);
+
+        // Font subset will be embedded for fully embedded fonts but fonts which are not embedded into document will not be affected.
+        document.FontUtilities.SubsetFonts(Aspose.Pdf.FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+
+        // Save PDF document
+        document.Save(dataDir + "SetFontSubsetStrategy_out.pdf");
+    }
+}
 ```
 
-### Obter-Definir Fator de Zoom de Arquivo PDF
+### Obter-Definir Fator de Zoom do Arquivo PDF
 
-Às vezes, você deseja determinar qual é o fator de zoom atual de um documento PDF. Com Aspose.Pdf, você pode descobrir o valor atual e também definir um.
+Às vezes, você deseja determinar qual é o fator de zoom atual de um documento PDF. Com Aspose.Pdf, você pode descobrir o valor atual, bem como definir um.
 
-A propriedade Destination da classe [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) permite que você obtenha o valor de zoom associado a um arquivo PDF.
-A propriedade Destination da classe [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) permite que você obtenha o valor de zoom associado a um arquivo PDF.
+A propriedade Destination da classe [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) permite que você obtenha o valor de zoom associado a um arquivo PDF. Da mesma forma, pode ser usada para definir o fator de zoom de um arquivo.
 
-#### Definir fator de zoom
+#### Definir Fator de Zoom
 
 O seguinte trecho de código mostra como definir o fator de zoom de um arquivo PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetZoomFactor()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Instanciar novo objeto Document
-Document doc = new Document(dataDir + "SetZoomFactor.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SetZoomFactor.pdf"))
+    {
+        // Create GoToAction with a specific zoom factor
+        var action = new Aspose.Pdf.Annotations.GoToAction(new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 0, 0, 0.5));
+        document.OpenAction = action;
 
-GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0, 0, .5));
-doc.OpenAction = action;
-dataDir = dataDir + "Zoomed_pdf_out.pdf";
-// Salvar o documento
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "ZoomFactor_out.pdf");
+    }
+}
 ```
 
-#### Obter fator de zoom
+#### Obter Fator de Zoom
 
 O seguinte trecho de código mostra como obter o fator de zoom de um arquivo PDF.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// Instanciar novo objeto Document
-Document doc = new Document(dataDir + "Zoomed_pdf.pdf");
-
-// Criar objeto GoToAction
-GoToAction action = doc.OpenAction as GoToAction;
-
-// Obter o fator de zoom do arquivo PDF
-System.Console.WriteLine((action.Destination as XYZExplicitDestination).Zoom); // Valor de zoom do documento;
-```
-### Configurando Propriedades Predefinidas do Diálogo de Impressão
-
-Aspoose.PDF permite configurar as propriedades Predefinidas do Diálogo de Impressão de um documento PDF. Ele permite que você altere a propriedade DuplexMode de um documento PDF, que é definida como simplex por padrão. Isso pode ser alcançado usando duas metodologias diferentes, conforme mostrado abaixo.
-
-```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-using (Document doc = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetZoomFactor()
 {
-    doc.Pages.Add();
-    doc.Duplex = PrintDuplex.DuplexFlipLongEdge;
-    doc.Save(dataDir + "35297_out.pdf", SaveFormat.Pdf);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Zoomed_pdf.pdf"))
+    {
+        // Create GoToAction object
+        if (document.OpenAction is Aspose.Pdf.Annotations.GoToAction action)
+        {
+            // Get the Zoom factor of PDF file
+            if (action.Destination is Aspose.Pdf.Annotations.XYZExplicitDestination destination)
+            {
+                System.Console.WriteLine(destination.Zoom); // Document zoom value;
+            }
+        }
+    }
 }
 ```
 
-### Configurando Propriedades Predefinidas do Diálogo de Impressão usando o Editor de Conteúdo PDF
+### Definindo Propriedades de Predefinição do Diálogo de Impressão
+
+Aspose.PDF permite definir as propriedades de predefinição do diálogo de impressão de um documento PDF. Ele permite que você altere a propriedade DuplexMode para um documento PDF que é definido como simplex por padrão. Isso pode ser alcançado usando duas metodologias diferentes, conforme mostrado abaixo.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-string outputFile = dataDir + "input.pdf";
-using (PdfContentEditor ed = new PdfContentEditor())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrintDialogPresetProperties()
 {
-    ed.BindPdf(outputFile);
-    if ((ed.GetViewerPreference() & ViewerPreference.DuplexFlipShortEdge) > 0)
-    {
-        Console.WriteLine("O arquivo tem duplex flip short edge");
-    }
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    ed.ChangeViewerPreference(ViewerPreference.DuplexFlipShortEdge);
-    ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        document.Pages.Add();
+
+        // Set duplex printing to DuplexFlipLongEdge
+        document.Duplex = Aspose.Pdf.PrintDuplex.DuplexFlipLongEdge;
+
+        // Save PDF document
+        document.Save(dataDir + "SetPrintDlgPresetProperties_out.pdf", Aspose.Pdf.SaveFormat.Pdf);
+    }
+}
+```
+
+### Definindo Propriedades de Predefinição do Diálogo de Impressão usando Editor de Conteúdo PDF
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrintDialogPresetPropertiesUsingPdfContentEditor()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    string inputFile = dataDir + "input.pdf";
+
+    using (var ed = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind PDF document
+        ed.BindPdf(inputFile);
+
+        // Check if the file has duplex flip short edge
+        if ((ed.GetViewerPreference() & Aspose.Pdf.Facades.ViewerPreference.DuplexFlipShortEdge) > 0)
+        {
+            Console.WriteLine("The file has duplex flip short edge");
+        }
+
+        // Change the viewer preference to duplex flip short edge
+        ed.ChangeViewerPreference(Aspose.Pdf.Facades.ViewerPreference.DuplexFlipShortEdge);
+
+        // Save PDF document
+        ed.Save(dataDir + "SetPrintDlgPropertiesUsingPdfContentEditor_out.pdf");
+    }
 }
 ```
 
@@ -476,21 +586,21 @@ using (PdfContentEditor ed = new PdfContentEditor())
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -501,7 +611,7 @@ using (PdfContentEditor ed = new PdfContentEditor())
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -513,5 +623,3 @@ using (PdfContentEditor ed = new PdfContentEditor())
     }
 }
 </script>
-```
-

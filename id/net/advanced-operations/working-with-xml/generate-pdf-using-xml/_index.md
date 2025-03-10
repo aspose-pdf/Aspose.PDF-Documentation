@@ -1,10 +1,12 @@
 ---
-title: Generate PDF from XML
-linktitle: Generate PDF from XML
+title: Menghasilkan PDF dari XML
+linktitle: Menghasilkan PDF dari XML
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/generate-pdf-from-xml
-description: Aspose.PDF untuk .NET menyediakan beberapa cara untuk mengonversi file XML menjadi dokumen PDF yang memerlukan file XML input.
+description: Aspose.PDF for .NET menyediakan beberapa cara untuk mengonversi file XML menjadi dokumen PDF yang memerlukan file XML input.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,21 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Generate PDF from XML",
-    "alternativeHeadline": "Convert XML into PDF",
+    "alternativeHeadline": "Generate PDF directly from XML data",
+    "abstract": "Aspose.PDF for .NET sekarang menghasilkan PDF langsung dari data XML menggunakan beberapa metode: transformasi XSLT, markup XSL-FO, dan skema XML Aspose.PDF kustom. Fungsionalitas baru ini menawarkan pembuatan PDF yang fleksibel dari berbagai struktur XML, menyederhanakan alur kerja pembuatan dokumen",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, generate pdf form xml, convert xml to pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "wordcount": "3834",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,24 +73,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/generate-pdf-from-xml"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF untuk .NET menyediakan beberapa cara untuk mengonversi file XML menjadi dokumen PDF yang memerlukan file XML input."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF for .NET menyediakan beberapa cara untuk mengonversi file XML menjadi dokumen PDF yang memerlukan file XML input."
 }
 </script>
 
-Berikut cuplikan kode juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) library.
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
-Menghasilkan dokumen PDF dari dokumen XML bukanlah tugas yang sepele karena dokumen XML dapat menggambarkan konten yang berbeda. Aspose.PDF untuk .NET memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML:
+Menghasilkan dokumen PDF dari dokumen XML bukanlah tugas yang sepele karena dokumen XML dapat menggambarkan konten yang berbeda. Aspose.PDF for .NET memiliki beberapa cara untuk menghasilkan PDF berdasarkan dokumen XML:
 
 - menggunakan transformasi XSLT
 - menggunakan markup XSL-FO (XSL Formatting Objects)
-- menggunakan Skema XML Aspose.PDF sendiri
+- menggunakan skema XML Aspose.PDF sendiri
 
 ## Menghasilkan dokumen PDF menggunakan transformasi XSLT
 
-XSL (eXtensible Stylesheet Language) adalah bahasa styling untuk mengubah dokumen XML menjadi dokumen XML lainnya atau HTML. Dalam kasus kami, kami dapat menggunakan transformasi XML ke HTML dan kemudian membuat PDF berdasarkan data HTML.
+XSL (eXtensible Stylesheet Language) adalah bahasa gaya untuk mengubah dokumen XML menjadi dokumen XML lain atau HTML. Dalam kasus kami, kami dapat menggunakan transformasi XML ke HTML dan kemudian membuat PDF berdasarkan data HTML.
 
-Asumsikan kita memiliki file XML dengan katalog CD sederhana (lihat di bawah).
+Misalkan kami memiliki file XML dengan katalog CD sederhana (lihat di bawah).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -303,7 +305,8 @@ Asumsikan kita memiliki file XML dengan katalog CD sederhana (lihat di bawah).
   </cd>
 </catalog>
 ```
-To convert this file to PDF kita harus membuat XSL dengan layout HTML. Mari kita render data kita dalam tabel. File XSL yang akan membantu kita melakukan ini mungkin terlihat seperti ini:
+
+Untuk mengonversi file ini ke PDF, kami harus membuat XSL dengan tata letak HTML. Mari kita render data kami dalam tabel. File XSL yang akan membantu kami melakukan ini mungkin terlihat seperti ini:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -312,11 +315,11 @@ To convert this file to PDF kita harus membuat XSL dengan layout HTML. Mari kita
   <xsl:template match="/">
     <html>
       <body>
-        <h2>Koleksi CD Saya</h2>
+        <h2>My CD Collection</h2>
         <table border="1">
           <tr bgcolor="#9acd32">
-            <th style="text-align:left">Judul</th>
-            <th style="text-align:left">Artis</th>
+            <th style="text-align:left">Title</th>
+            <th style="text-align:left">Artist</th>
           </tr>
           <xsl:for-each select="catalog/cd">
             <tr>
@@ -335,46 +338,104 @@ To convert this file to PDF kita harus membuat XSL dengan layout HTML. Mari kita
 </xsl:stylesheet>
 ```
 
-Jadi, kita perlu mengubah XML dan memuatnya ke dalam dokumen PDF.
- 
-Jadi, kita perlu mengubah XML dan memuatnya ke dalam dokumen PDF.
+Jadi, kami perlu mengubah XML dan memuatnya ke dalam dokumen PDF. Contoh berikut menunjukkan cara ini:
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void ExampleXSLTtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var XmlContent = File.ReadAllText(@"XMLFile1.xml");
-    var XsltContent = File.ReadAllText(@"XSLTFile1.xslt");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
     var options = new Aspose.Pdf.HtmlLoadOptions();
+
     // set page size to A5
     options.PageInfo.Height = 595;
     options.PageInfo.Width = 420;
-    var pdfDocument = new Aspose.Pdf.Document(TransformXmltoHtml(XmlContent, XsltContent), options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLT_out.pdf");
+    }
 }
 
-public static MemoryStream TransformXmltoHtml(string inputXml, string xsltString)
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
 {
     var transform = new XslCompiledTransform();
+
     using (var reader = XmlReader.Create(new StringReader(xsltString)))
     {
         transform.Load(reader);
     }
+
     var memoryStream = new MemoryStream();
     var results = new StreamWriter(memoryStream);
+
     using (var reader = XmlReader.Create(new StringReader(inputXml)))
     {
         transform.Transform(reader, null, results);
     }
+
     memoryStream.Position = 0;
     return memoryStream;
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXsltToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var XmlContent = File.ReadAllText(dataDir + "XMLFile1.xml");
+    var XsltContent = File.ReadAllText(dataDir + "XSLTFile1.xslt");
+    var options = new Aspose.Pdf.HtmlLoadOptions();
+
+    // set page size to A5
+    options.PageInfo.Height = 595;
+    options.PageInfo.Width = 420;
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(TransformXmlToHtml(XmlContent, XsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLT_out.pdf");
+}
+
+public static MemoryStream TransformXmlToHtml(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, null, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Menghasilkan dokumen PDF menggunakan markup XSL-FO
 
-XSL-FO adalah bahasa markup berbasis XML yang menggambarkan pemformatan data XML untuk output ke layar, kertas, atau media lainnya. Aspose.PDF memiliki kelas khusus yang memungkinkan untuk menerapkan markup XSL-FO dan mendapatkan dokumen PDF.
+XSL-FO adalah bahasa markup berbasis XML yang menggambarkan pemformatan data XML untuk output ke layar, kertas, atau media lainnya. Aspose.PDF memiliki kelas khusus yang memungkinkan penerapan markup XSL-FO dan mendapatkan dokumen PDF.
 
-Mari kita ambil contoh. Berikut adalah file XML dengan data sampel karyawan.
+Mari kita ambil contoh. Berikut adalah file XML dengan data contoh karyawan.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -400,7 +461,7 @@ Mari kita ambil contoh. Berikut adalah file XML dengan data sampel karyawan.
 </employees>
 ```
 
-Mari kita buat file lain - file markup XSL-FO untuk mengubah data karyawan menjadi tabel.
+Mari kita buat satu file lagi - file markup XSL-FO untuk mengubah data karyawan menjadi tabel.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -416,7 +477,7 @@ Mari kita buat file lain - file markup XSL-FO untuk mengubah data karyawan menja
             <fo:page-sequence master-reference="simpleA4">
                 <fo:flow flow-name="xsl-region-body">
                     <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
-                        Nama Perusahaan: <xsl:value-of select="companyname"/>
+                        Company Name: <xsl:value-of select="companyname"/>
                     </fo:block>
                     <fo:block font-size="10pt">
                         <fo:table table-layout="fixed" width="100%" border-collapse="separate">
@@ -457,28 +518,59 @@ Mari kita buat file lain - file markup XSL-FO untuk mengubah data karyawan menja
     </xsl:template>
 </xsl:stylesheet>
 ```
-Aspose.PDF memiliki kelas khusus [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) yang memungkinkan untuk menerapkan transformasi XSL-FO.
-Potongan kode berikut menunjukkan cara menggunakan kelas ini dengan file sampel yang dijelaskan di atas.
 
+Aspose.PDF memiliki [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions) kelas khusus yang memungkinkan penerapan transformasi XSL-FO.
+Potongan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    // Instansiasi objek XslFoLoadOption
-    var options = new Pdf.XslFoLoadOptions("employees.xslt");
-    // Buat objek Document
-    var pdfDocument = new Aspose.Pdf.Document("employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 ### Menghasilkan dokumen PDF menggunakan markup XSL-FO dan parameter XSL
 
-Terkadang kita perlu menggunakan [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param). Elemen `<xsl:param>` menetapkan parameter berdasarkan nama dan, opsional, nilai default untuk parameter tersebut.
+Terkadang kami perlu menggunakan [XSL:param](https://developer.mozilla.org/en-US/docs/Web/XSLT/Element/param). Elemen `<xsl:param>` menetapkan parameter berdasarkan nama dan, jika perlu, nilai default untuk parameter tersebut.
 
-Mari kita ambil contoh yang sama seperti pada kasus sebelumnya, tetapi dengan sedikit perubahan (menambahkan parameter). File XML dengan data sampel tetap tidak berubah, ...
+Mari kita ambil contoh yang sama seperti pada kasus sebelumnya, tetapi dengan perubahan kecil (menambahkan parameter). File XML dengan data contoh tetap tidak tersentuh, ...
 
-```xml
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <employees>
@@ -486,22 +578,24 @@ Mari kita ambil contoh yang sama seperti pada kasus sebelumnya, tetapi dengan se
     <employee>
         <id>101</id>
         <name>Andrew</name>
-        <designation>Manajer</designation>
+        <designation>Manager</designation>
     </employee>
 
     <employee>
         <id>102</id>
         <name>Eduard</name>
-        <designation>Eksekutif</designation>
+        <designation>Executive</designation>
     </employee>
 
     <employee>
         <id>103</id>
         <name>Peter</name>
-        <designation>Eksekutif</designation>
+        <designation>Executive</designation>
     </employee>
 </employees>
 ```
+
+tetapi dalam file markup XSL-FO kami akan menambahkan parameter: `<xsl:param name="isBoldName"></xsl:param>` dan akan menerapkannya ke kolom `Name`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -520,7 +614,7 @@ Mari kita ambil contoh yang sama seperti pada kasus sebelumnya, tetapi dengan se
    <fo:page-sequence master-reference="simpleA4">
     <fo:flow flow-name="xsl-region-body">
      <fo:block font-size="16pt" font-weight="bold" space-after="5mm">
-      Nama Perusahaan: <xsl:value-of select="companyname"/>
+      Company Name: <xsl:value-of select="companyname"/>
      </fo:block>
      <fo:block font-size="10pt">
       <fo:table table-layout="fixed" width="100%" border-collapse="separate">
@@ -538,7 +632,7 @@ Mari kita ambil contoh yang sama seperti pada kasus sebelumnya, tetapi dengan se
  </xsl:template>
  <xsl:template match="employee">
   <fo:table-row>
-   <xsl:if test="designation = 'Manajer'">
+   <xsl:if test="designation = 'Manager'">
     <xsl:attribute name="font-weight">bold</xsl:attribute>
    </xsl:if>
    <fo:table-cell>
@@ -564,75 +658,162 @@ Mari kita ambil contoh yang sama seperti pada kasus sebelumnya, tetapi dengan se
  </xsl:template>
 </xsl:stylesheet>
 ```
- 
- 
-Untuk menambahkan parameter XSL, kita perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan
-menetapkannya sebagai properti dalam [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
-Cuplikan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
 
+Untuk menambahkan parameter XSL, kami perlu membuat [XsltArgumentList](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xsl.xsltargumentlist?view=net-5.0) sendiri dan
+mengatur sebagai properti di [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions).
+Potongan berikut menunjukkan cara menggunakan kelas ini dengan file contoh yang dijelaskan di atas.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void Example_XSLFO_to_PDF_Param_21_7()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
 {
-  string xmlInputFile = Path.Combine(_dataDir, "employees.xml");
-  string xsltInputFile = Path.Combine(_dataDir, "employees.xslt");
-  string outputFile = Path.Combine(_dataDir, "out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-  XslFoLoadOptions options = new XslFoLoadOptions(xsltInputFile);
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
 
-  options.XsltArgumentList = new XsltArgumentList();
-  options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
 
-  Document document = new Document(xmlInputFile, options);
-  document.Save(outputFile);
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_7()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Instantiate XslFoLoadOption object
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "employees.xslt");
+
+    options.XsltArgumentList = new XsltArgumentList();
+    options.XsltArgumentList.AddParam("isBoldName", "", "yes");
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(dataDir + "employees.xml", options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 Jika Anda menggunakan versi lebih awal dari 21.7, silakan gunakan teknik berikut:
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-  public static void Example_XSLFO_to_PDF_Param_21_6()
-  {
-      var XmlContent = File.ReadAllText(_dataDir + "employees.xml");
-      var XsltContent = File.ReadAllText(_dataDir + "employees.xslt");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdfParam_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-      var options = new Aspose.Pdf.XslFoLoadOptions();
-      var pdfDocument = new Aspose.Pdf.Document(TransformXSL(XmlContent, XsltContent), options);
-      pdfDocument.Save(_dataDir + "data_xml.pdf");
-  }
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
 
-  public static MemoryStream TransformXSL(string inputXml, string xsltString)
-  {
-      var transform = new XslCompiledTransform();
+    var options = new Aspose.Pdf.XslFoLoadOptions();
 
-      //Buat XsltArgumentList sendiri
-      XsltArgumentList argsList = new XsltArgumentList();
-      argsList.AddParam("isBoldName", "", "no");
-      //---------------------
+    // Open XML file
+    using (var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFO_out.pdf");
+    }
+}
 
-      using (var reader = XmlReader.Create(new StringReader(xsltString)))
-      {
-          transform.Load(reader);
-      }
-      var memoryStream = new MemoryStream();
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
 
-      var results = new StreamWriter(memoryStream);
-      using (var reader = XmlReader.Create(new StringReader(inputXml)))
-      {
-          transform.Transform(reader, argsList, results);
-      }
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
 
-      memoryStream.Position = 0;
-      return memoryStream;
-  }
+    using (var reader = XmlReader.Create(new StringReader(xsltString)))
+    {
+        transform.Load(reader);
+    }
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using (var reader = XmlReader.Create(new StringReader(inputXml)))
+    {
+        transform.Transform(reader, argsList, results);
+    }
+
+    memoryStream.Position = 0;
+    return memoryStream;
 }
 ```
-## Menghasilkan Dokumen PDF berdasarkan Skema XML Aspose.PDF
+{{< /tab >}}
 
-Cara lain untuk membuat dokumen PDF dari XML adalah menggunakan Skema XML Aspose.PDF. Menggunakan diagram ini, Anda dapat menjelaskan tata letak halaman dengan cara yang sama seperti jika Anda menggunakan tata letak tabel di HTML. Mari kita pertimbangkan cara kerja metode ini lebih detail.
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXslfoToPdf_Param_21_6()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    var xmlContent = File.ReadAllText(dataDir + "employees.xml");
+    var xsltContent = File.ReadAllText(dataDir + "employees.xslt");
+
+    var options = new Aspose.Pdf.XslFoLoadOptions();
+
+    // Open XML file
+    using var document = new Aspose.Pdf.Document(TransformXsl(xmlContent, xsltContent), options);
+
+    // Save PDF document
+    document.Save(dataDir + "XSLFO_out.pdf");
+}
+
+public static MemoryStream TransformXsl(string inputXml, string xsltString)
+{
+    var transform = new XslCompiledTransform();
+
+    // Create own XsltArgumentList
+    var argsList = new XsltArgumentList();
+    argsList.AddParam("isBoldName", "", "no");
+
+    using var reader1 = XmlReader.Create(new StringReader(xsltString));
+    transform.Load(reader1);
+
+    var memoryStream = new MemoryStream();
+    var results = new StreamWriter(memoryStream);
+
+    using var reader2 = XmlReader.Create(new StringReader(inputXml));
+    transform.Transform(reader2, argsList, results);
+
+    memoryStream.Position = 0;
+    return memoryStream;
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Menghasilkan dokumen PDF berdasarkan Skema XML Aspose.PDF
+
+Cara lain untuk membuat dokumen PDF dari XML adalah menggunakan Skema XML Aspose.PDF. Menggunakan diagram ini, Anda dapat menggambarkan tata letak halaman dengan cara yang sama seolah-olah Anda menggunakan tata letak tabel dalam HTML. Mari kita pertimbangkan cara kerja metode ini lebih detail.
 
 ### Mendefinisikan halaman
 
-Mari kita definisikan halaman dengan parameter default. Halaman kita akan memiliki ukuran halaman A4 dan hanya berisi satu bagian teks.
+Mari kita definisikan halaman dengan parameter default. Halaman kami akan memiliki ukuran halaman A4 dan hanya berisi satu potong teks.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -645,19 +826,52 @@ Mari kita definisikan halaman dengan parameter default. Halaman kita akan memili
 </Document>
 ```
 
-Untuk menghasilkan dokumen PDF kita akan menggunakan metode [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
+Untuk menghasilkan dokumen PDF, kami akan menggunakan metode [BindXml](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/bindxml/index).
 
+{{< tabs tabID="5" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-private static void Example_XML_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
 {
-    var _dataDir = @"C:\tmp\";
-    var pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.BindXml(_dataDir + "aspose_pdf_demo.xml");
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file to the document
+        document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+        // Save PDF document
+        document.Save(dataDir + "XML_out.pdf");
+    }
 }
 ```
+{{< /tab >}}
 
-Untuk mendefinisikan ukuran halaman baru, kita harus menambahkan elemen `PageInfo`. Dalam contoh berikut, kami menetapkan ukuran halaman A5 dan margin 25mm dan 10mm.
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExampleXmlToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML file to the document
+    document.BindXml(dataDir + "aspose_pdf_demo.xml");
+
+    // Save PDF document
+    document.Save(dataDir + "XML_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+Untuk mendefinisikan ukuran halaman baru, kami harus menambahkan elemen `PageInfo`. Dalam contoh berikut, kami mengatur ukuran halaman A5 dan margin 25mm dan 10mm.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -675,10 +889,7 @@ Untuk mendefinisikan ukuran halaman baru, kita harus menambahkan elemen `PageInf
 
 ### Menambahkan elemen HtmlFragment dalam file XML
 
-Karena HTML mengandung tag yang mirip dengan XML, jadi ketika Anda menulis HTML di dalam tag XML apa pun, parser memperlakukannya sebagai markup XML dan mereka tidak dapat dikenali sebagai tag XML.
-```
-
-Karena HTML mengandung tag yang mirip dengan XML, ketika Anda menulis HTML di dalam tag XML, parser memperlakukannya sebagai markup XML dan mereka tidak dapat dikenali sebagai tag XML.
+Karena HTML mengandung tag yang mirip dengan XML, ketika Anda menulis HTML di dalam tag XML mana pun, parser memperlakukannya sebagai markup XML dan mereka tidak dapat dikenali sebagai tag XML. Masalah ini dapat diatasi dengan menggunakan "Bagian CDATA" dalam XML. Bagian CDATA berisi teks yang tidak diparsing oleh parser atau dengan kata lain, tidak diperlakukan sebagai markup XML. Template XML contoh berikut menunjukkan cara menambahkan HtmlFragment di dalam markup XML dengan menggunakan CDATA.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -686,7 +897,7 @@ Karena HTML mengandung tag yang mirip dengan XML, ketika Anda menulis HTML di da
   <Page id="mainSection">
     <HtmlFragment>
       <![CDATA[
-        <font style="font-family:Tahoma; font-size:40px;">Ini adalah String Html.</font>
+        <font style="font-family:Tahoma; font-size:40px;">This is Html String.</font>
         ]]>
     </HtmlFragment>
   </Page>
@@ -695,14 +906,14 @@ Karena HTML mengandung tag yang mirip dengan XML, ketika Anda menulis HTML di da
 
 ### Menambahkan elemen Tabel dalam file XML
 
-Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan berikut menunjukkan penggunaan tabel sederhana. Dalam contoh ini beberapa sel memiliki atribut `Alignment` dan atribut ini memiliki nilai numerik:
+Elemen `Table`, `Row`, `Cell` digunakan untuk menggambarkan tabel. Potongan berikut menunjukkan penggunaan tabel sederhana. Dalam contoh ini, beberapa sel memiliki atribut `Alignment` dan atribut ini memiliki nilai numerik:
 
-1. Perataan kiri
-1. Perataan tengah
-1. Perataan kanan.
-1. Perataan justify. Teks akan diratakan pada margin kiri dan kanan.
-1.
-```
+1. Penyelarasan kiri
+1. Penyelarasan tengah
+1. Penyelarasan kanan.
+1. Penyelarasan justify. Teks akan disejajarkan di kedua margin kiri dan kanan.
+1. Justifikasi penuh. Mirip dengan penyelarasan 'Justify', kecuali bahwa baris terakhir hanya akan disejajarkan ke kiri dalam mode 'Justify', sementara dalam mode 'FullJustify' semua baris akan disejajarkan ke kiri dan kanan.
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Document xmlns="Aspose.Pdf">
@@ -712,7 +923,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
     </PageInfo>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">JADWAL DI RUTE GREENTOWN-BLUEBERG</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
@@ -733,22 +944,22 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>Keberangkatan</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Kedatangan</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Hari Kerja</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Kapal</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -765,7 +976,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Sen-Sab</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -787,7 +998,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -809,7 +1020,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -831,7 +1042,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -853,7 +1064,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -875,7 +1086,7 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Sen-Jum, Min</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -888,7 +1099,8 @@ Elemen `Table`, `Row`, `Cell` digunakan untuk mendeskripsikan tabel. Cuplikan be
   </Page>
 </Document>
 ```
-Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaikan header halaman. Dalam hal ini, tabel digunakan untuk membagi header menjadi 2 kolom.
+
+Tabel digunakan untuk tata letak dokumen. Misalnya, kami dapat menyesuaikan header halaman. Dalam hal ini, tabel digunakan untuk membagi header menjadi 2 kolom.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -903,12 +1115,12 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
             <Row>
                 <Cell Alignment="1">
                     <TextFragment>
-                        <TextSegment>Tanggal: 01/01/2021</TextSegment>
+                        <TextSegment>Date: 01/01/2021</TextSegment>
                     </TextFragment>
                 </Cell>
                 <Cell Alignment="3">
                     <TextFragment>
-                        <TextSegment>Halaman $p / $P</TextSegment>
+                        <TextSegment>Page $p / $P</TextSegment>
                     </TextFragment>
                 </Cell>
             </Row>
@@ -916,7 +1128,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
     </Header>
     <HtmlFragment>
       <![CDATA[
-        <h1 style="font-family:Tahoma; font-size:16pt;">JADWAL DI RUTE GREENTOWN-BLUEBERG</h1>
+        <h1 style="font-family:Tahoma; font-size:16pt;">TIMETABLES ON GREENTOWN-BLUEBERG ROUTE</h1>
         ]]>
     </HtmlFragment>
     <TextFragment>
@@ -937,22 +1149,22 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Border>
         <Cell Alignment="2">
           <TextFragment>
-            <TextSegment>Keberangkatan</TextSegment>
+            <TextSegment>Departure</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Kedatangan</TextSegment>
+            <TextSegment>Arrival</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Hari Kerja</TextSegment>
+            <TextSegment>Weekday</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Kapal</TextSegment>
+            <TextSegment>Ship</TextSegment>
           </TextFragment>
         </Cell>
       </Row>
@@ -969,7 +1181,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Sen-Sab</TextSegment>
+            <TextSegment>Mon-Sat</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -991,7 +1203,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1013,7 +1225,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1035,7 +1247,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1057,7 +1269,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>setiap hari</TextSegment>
+            <TextSegment>every day</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1079,7 +1291,7 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
         </Cell>
         <Cell>
           <TextFragment>
-            <TextSegment>Sen-Jum, Min</TextSegment>
+            <TextSegment>Mon-Fri, Sun</TextSegment>
           </TextFragment>
         </Cell>
         <Cell>
@@ -1092,9 +1304,10 @@ Tables digunakan untuk tata letak dokumen. Sebagai contoh, kita bisa menyesuaika
   </Page>
 </Document>
 ```
+
 ### Memperbarui konten secara dinamis
 
-Metode BindXML() menawarkan fitur untuk memuat konten file XML dan metode Document.save() dapat digunakan untuk menyimpan output dalam format PDF. Namun selama konversi, kita juga dapat mengakses elemen individu di dalam XML dan menggunakan XML sebagai template. Cuplikan kode berikut menunjukkan langkah-langkah untuk mengakses TextSegments dari file XML.
+Metode BindXML() menawarkan fitur untuk memuat konten file XML dan metode Document.save() dapat digunakan untuk menyimpan output dalam format PDF. Namun selama konversi, kami juga dapat mengakses elemen individu di dalam XML dan menggunakan XML sebagai template. Potongan kode berikut menunjukkan langkah-langkah untuk mengakses TextSegments dari file XML.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1110,32 +1323,75 @@ Metode BindXML() menawarkan fitur untuk memuat konten file XML dan metode Docume
 </Document>
 ```
 
+{{< tabs tabID="6" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// Instansiasi objek Dokumen
-Document doc = new Document();
-// Mengikat file XML sumber
-doc.BindXml(dataDir + "log.xml");
-// Dapatkan referensi objek halaman dari XML
-Page page = (Page)doc.GetObjectById("mainSection");
-// Dapatkan referensi TextSegment pertama dengan ID boldHtml
-TextSegment segment = (TextSegment)doc.GetObjectById("boldHtml");
-// Dapatkan referensi TextSegment kedua dengan ID strongHtml
-segment = (TextSegment)doc.GetObjectById("strongHtml");
-// Simpan file PDF yang dihasilkan
-doc.Save(dataDir + "XMLToPDF_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "log.xml");
+
+        // Get reference of page object from XML
+        var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+        // Get reference of first TextSegment with ID boldHtml
+        var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+        // Get reference of second TextSegment with ID strongHtml
+        segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+        // Save PDF document
+        document.Save(dataDir + "XMLToPDF_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "log.xml");
+
+    // Get reference of page object from XML
+    var page = (Aspose.Pdf.Page)document.GetObjectById("mainSection");
+
+    // Get reference of first TextSegment with ID boldHtml
+    var segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("boldHtml");
+
+    // Get reference of second TextSegment with ID strongHtml
+    segment = (Aspose.Pdf.Text.TextSegment)document.GetObjectById("strongHtml");
+
+    // Save PDF document
+    document.Save(dataDir + "XMLToPDF_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
 ### Menambahkan elemen grafis ke halaman
 
-Kita dapat menambahkan elemen tambahan lainnya ke dokumen XML: objek Gambar atau Grafik. Cuplikan berikut menunjukkan cara menambahkan elemen-elemen tersebut ke dalam dokumen
+Kami dapat menambahkan elemen tambahan lainnya ke dokumen XML: objek Gambar atau Grafik. Potongan berikut menunjukkan cara menambahkan elemen tersebut ke dokumen
 
 ```xml
 <Graph Width="20" Height="20">
   <Circle PosX="30" PosY="30" Radius="10">
-    <GraphInfo Color="Merah" FillColor="Biru"></GraphInfo>
+    <GraphInfo Color="Red" FillColor="Blue"></GraphInfo>
   </Circle>
 </Graph>
 
@@ -1144,7 +1400,7 @@ Kita dapat menambahkan elemen tambahan lainnya ke dokumen XML: objek Gambar atau
 
 ### Mengatur Jalur Gambar Saat Mengonversi XML ke PDF
 
-Templat XML berikut mengandung tag `<Image>` di dalamnya dengan ID "testImg". Jika Anda ingin mengatur jalur gambar dari kode Anda, Anda dapat mengakses elemen Gambar dari templat XML selama proses konversi dan mengatur jalur ke alamat yang Anda inginkan untuk gambar.
+Template XML berikut berisi tag `<Image>` di dalamnya dengan ID "testImg". Jika Anda ingin mengatur jalur gambar dari kode Anda, Anda dapat mengakses elemen Gambar dari template XML selama proses konversi dan mengatur jalur ke alamat yang Anda inginkan untuk gambar.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1162,7 +1418,7 @@ Templat XML berikut mengandung tag `<Image>` di dalamnya dengan ID "testImg". Ji
                 </Cell>
                 <Cell Alignment="3">
                     <TextFragment>
-                        <TextSegment>Halaman $p / $P</TextSegment>
+                        <TextSegment>Page $p / $P</TextSegment>
                     </TextFragment>
                 </Cell>
             </Row>
@@ -1175,14 +1431,14 @@ Templat XML berikut mengandung tag `<Image>` di dalamnya dengan ID "testImg". Ji
         <Cell Alignment="1">
         <!--Logo-->
             <TextFragment>
-                <TextSegment> ID Permintaan</TextSegment>
+                <TextSegment> Request ID</TextSegment>
                 <TextState FontSize="14" ForegroundColor="#0e4f9c" FontStyle="1" />
             </TextFragment>
             <TextFragment>
                 <TextSegment></TextSegment>
             </TextFragment>
             <TextFragment>
-                <TextSegment id="boldtext">Beberapa Teks Tebal</TextSegment>
+                <TextSegment id="boldtext">Some Bold Text</TextSegment>
                 <TextState FontSize="14" FontStyle="1"></TextState>
             </TextFragment>
         </Cell>
@@ -1191,20 +1447,63 @@ Templat XML berikut mengandung tag `<Image>` di dalamnya dengan ID "testImg". Ji
  </Page>
 </Document>
 ```
-Code untuk mengatur jalur gambar dalam template XML adalah sebagai berikut:
 
+Kode untuk mengatur jalur gambar dalam template XML adalah sebagai berikut:
+
+{{< tabs tabID="7" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// The path to the documents directory.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-string inXml = dataDir + "input.xml";
-string inFile = dataDir + "aspose-logo.jpg";
-string outFile = dataDir + "output_out.pdf";
-Document doc = new Document();
-doc.BindXml(inXml);
-Image image = (Image)doc.GetObjectById("testImg");
-image.File = inFile;
-doc.Save(outFile);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Bind XML file
+        document.BindXml(dataDir + "input.xml");
+
+        // Get reference of Image with ID testImg
+        var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+        // Set image file
+        image.File = dataDir + "aspose-logo.jpg";
+
+        // Save PDF document
+        document.Save(dataDir + "output_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Create PDF document
+    using var document = new Aspose.Pdf.Document();
+
+    // Bind XML file
+    document.BindXml(dataDir + "input.xml");
+
+    // Get reference of Image with ID testImg
+    var image = (Aspose.Pdf.Image)document.GetObjectById("testImg");
+
+    // Set image file
+    image.File = dataDir + "aspose-logo.jpg";
+
+    // Save PDF document
+    document.Save(dataDir + "output_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -1269,84 +1568,3 @@ doc.Save(outFile);
     }
 }
 </script>
-
----
-id: "create-plugin"
-title: "Membuat Plugin"
-sidebar_label: "Membuat Plugin"
-changefreq: "monthly"
-type: docs
----
-
-### Pengantar
-
-Membuat plugin memungkinkan Anda untuk menambahkan fungsionalitas khusus ke aplikasi Anda.
-
-### Langkah-langkah Membuat Plugin
-
-1. **Buat Direktori Plugin:**
-
-   Buat direktori baru di dalam folder `plugins` proyek Anda. Nama direktori ini harus sesuai dengan nama plugin Anda.
-
-   ```bash
-   mkdir plugins/nama-plugin-anda
-   ```
-
-2. **Buat File Utama Plugin:**
-
-   Di dalam direktori plugin, buat file utama untuk plugin Anda. Biasanya, file ini dinamakan `index.js` atau `main.js`.
-
-   ```javascript
-   // plugins/nama-plugin-anda/index.js
-   module.exports = function() {
-     console.log("Plugin Anda telah berhasil diinisialisasi!");
-   };
-   ```
-
-3. **Tambahkan Konfigurasi Plugin:**
-
-   Tambahkan konfigurasi plugin di file konfigurasi utama aplikasi Anda, biasanya `config.js` atau `app.js`.
-
-   ```javascript
-   const namaPluginAnda = require('./plugins/nama-plugin-anda');
-
-   namaPluginAnda();
-   ```
-
-### Contoh Plugin
-
-Berikut adalah contoh plugin sederhana yang menambahkan middleware ke aplikasi Express.js.
-
-```javascript
-// plugins/logger/index.js
-module.exports = function(app) {
-  app.use((req, res, next) => {
-    console.log(`${req.method} ${req.url}`);
-    next();
-  });
-};
-```
-
-Untuk menggunakan plugin ini dalam aplikasi Express.js Anda:
-
-```javascript
-const express = require('express');
-const logger = require('./plugins/logger');
-
-const app = express();
-
-logger(app);
-
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
-
-app.listen(3000, () => {
-  console.log('Server berjalan di port 3000');
-});
-```
-
-### Kesimpulan
-
-Dengan mengikuti langkah-langkah di atas, Anda dapat membuat dan mengintegrasikan plugin ke dalam aplikasi Anda. Plugin dapat membantu memisahkan logika spesifik dari kode utama aplikasi Anda, membuatnya lebih modular dan mudah dikelola.
-```

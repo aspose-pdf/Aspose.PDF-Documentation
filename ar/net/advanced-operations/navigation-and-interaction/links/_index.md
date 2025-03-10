@@ -1,10 +1,12 @@
 ---
-title: العمل مع الروابط في ملفات PDF برمجيًا
+title: العمل مع الروابط في PDF برمجياً
 linktitle: الروابط
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/links/
-description: هذا الدليل يتناول كيفية إضافة رابط صفحة داخلية في ملف PDF أو إدراج رابط تشعبي لموقع خارجي في ملف PDF بلغة C#.
+description: هذه الدليل يتحدث عن كيفية إضافة رابط صفحة داخلي في PDF أو إدراج رابط موقع خارجي في PDF بلغة C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع الروابط في ملفات PDF برمجيًا",
-    "alternativeHeadline": "التلاعب بالروابط في ملف PDF",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "اكتشف القدرة الجديدة على إدارة الروابط داخل مستندات PDF برمجياً باستخدام C#. تتيح لك هذه الميزة إضافة روابط صفحات داخلية وروابط مواقع خارجية بسهولة، مما يعزز التنقل والتفاعل في ملفات PDF الخاصة بك. مثالي للمطورين الذين يتطلعون إلى تبسيط عمليات إدارة PDF الخاصة بهم!",
     "author": {
         "@type": "Person",
-        "name":"أندريي أندروخوفسكي",
-        "givenName": "أندريي",
-        "familyName": "أندروخوفسكي",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF",
-    "keywords": "pdf, c#, link in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "هذا الدليل يتناول كيفية إضافة رابط صفحة داخلية في ملف PDF أو إدراج رابط تشعبي لموقع خارجي في ملف PDF بلغة C#."
+    "dateModified": "2024-11-25",
+    "description": "هذه الدليل يتحدث عن كيفية إضافة رابط صفحة داخلي في PDF أو إدراج رابط موقع خارجي في PDF بلغة C#."
 }
 </script>
-- [إنشاء روابط](/pdf/ar/net/create-links/) - تعلم طريقة بسيطة لإنشاء روابط في ملف PDF باستخدام C#.
+
+- [إنشاء روابط](/pdf/ar/net/create-links/) - تعلم ببساطة كيفية إنشاء روابط في ملف PDF الخاص بك باستخدام C#.
 - [تحديث الروابط](/pdf/ar/net/update-links/) - حاول تعيين الهدف إلى PDF، حاول تعيين وجهة الرابط إلى عنوان ويب، حاول تعيين هدف الرابط إلى ملف PDF آخر، تحديث لون نص الرابط.
-- [استخراج الروابط](/pdf/ar/net/extract-links) - استخرج الروابط من ملف PDF باستخدام فئة AnnotationSelector.
+- [استخراج الروابط](/pdf/ar/net/extract-links) - استخراج الروابط من ملف PDF باستخدام فئة AnnotationSelector.
 
 <script type="application/ld+json">
 {
@@ -142,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

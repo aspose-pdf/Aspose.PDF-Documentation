@@ -1,9 +1,12 @@
 ---
-title: Memanipulasi Tabel di PDF yang Ada
+title: Memanipulasi Tabel dalam PDF yang Ada
 linktitle: Memanipulasi Tabel
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /id/net/manipulate-tables-in-existing-pdf/
+description: Pelajari cara bekerja dengan tabel dalam PDF yang ada menggunakan Aspose.PDF for .NET, memberikan fleksibilitas dalam modifikasi dokumen.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,21 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Memanipulasi Tabel di PDF yang Ada",
-    "alternativeHeadline": "Cara memperbarui konten Tabel di PDF yang ada",
+    "headline": "Manipulate Tables in existing PDF",
+    "alternativeHeadline": "Enhance Table Editing in Existing PDF Documents",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur kuat untuk memanipulasi tabel PDF yang ada, memungkinkan pengguna untuk mencari, mengurai, dan memodifikasi konten tabel dengan mudah. Kelas TableAbsorber yang baru memungkinkan pembaruan dan penggantian tabel secara dinamis langsung dalam dokumen PDF, menyederhanakan proses pengelolaan data tabular dalam PDF untuk fungsionalitas yang lebih baik. Jelajahi kemampuan inovatif ini untuk mengoptimalkan tugas pengeditan PDF dan integrasi data Anda.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, memanipulasi tabel",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +47,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,81 +72,92 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-tables-in-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
 }
 </script>
 
-## Manipulasi tabel di PDF yang ada
+## Memanipulasi tabel dalam PDF yang ada
 
-Salah satu fitur terawal yang didukung oleh Aspose.PDF untuk .NET adalah kemampuannya dalam Bekerja dengan Tabel dan ini memberikan dukungan yang besar untuk menambahkan tabel dalam file PDF yang dihasilkan dari awal atau file PDF yang sudah ada. Anda juga mendapatkan kemampuan untuk Mengintegrasikan Tabel dengan Database (DOM) untuk membuat tabel dinamis berdasarkan konten database. Dalam rilis baru ini, kami telah mengimplementasikan fitur baru dalam mencari dan mem-parse tabel sederhana yang sudah ada di halaman dokumen PDF. Kelas baru bernama **Aspose.PDF.Text.TableAbsorber** menyediakan kemampuan ini. Penggunaan TableAbsorber sangat mirip dengan kelas TextFragmentAbsorber yang sudah ada. Potongan kode berikut menunjukkan langkah-langkah untuk memperbarui konten dalam sel tabel tertentu.
+Salah satu fitur awal yang didukung oleh Aspose.PDF for .NET adalah kemampuannya dalam Bekerja dengan Tabel dan memberikan dukungan besar untuk menambahkan tabel dalam file PDF yang dihasilkan dari awal atau file PDF yang ada. Anda juga mendapatkan kemampuan untuk Mengintegrasikan Tabel dengan Database (DOM) untuk membuat tabel dinamis berdasarkan konten database. Dalam rilis baru ini, kami telah menerapkan fitur baru untuk mencari dan mengurai tabel sederhana yang sudah ada di halaman dokumen PDF. Kelas baru bernama **Aspose.PDF.Text.TableAbsorber** menyediakan kemampuan ini. Penggunaan TableAbsorber sangat mirip dengan kelas TextFragmentAbsorber yang ada. Cuplikan kode berikut menunjukkan langkah-langkah untuk memperbarui konten dalam sel tabel tertentu.
 
-Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+Cuplikan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ManipulateTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Muat file PDF yang ada
-Document pdfDocument = new Document(dataDir + "input.pdf");
-// Buat objek TableAbsorber untuk menemukan tabel
-TableAbsorber absorber = new TableAbsorber();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Kunjungi halaman pertama dengan absorber
-absorber.Visit(pdfDocument.Pages[1]);
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Dapatkan akses ke tabel pertama di halaman, sel pertama mereka dan fragmen teks di dalamnya
-TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
+        // Get access to first table on page, their first cell and text fragments in it
+        Aspose.Pdf.Text.TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
 
-// Ubah teks dari fragmen teks pertama di sel
-fragment.Text = "hi world";
-dataDir = dataDir + "ManipulateTable_out.pdf";
-pdfDocument.Save(dataDir);
+        // Change text of the first text fragment in the cell
+        fragment.Text = "hi world";
+
+        // Save PDF document
+        document.Save(dataDir + "ManipulateTable_out.pdf");
+    }
+}
 ```
-## Ganti Tabel Lama dengan Tabel Baru dalam Dokumen PDF
 
-Jika Anda perlu menemukan tabel tertentu dan menggantinya dengan yang diinginkan, Anda dapat menggunakan metode Replace() dari Kelas [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) untuk melakukan hal tersebut. Contoh berikut menunjukkan fungsionalitas untuk mengganti tabel di dalam dokumen PDF:
+## Ganti Tabel Lama dengan yang Baru dalam Dokumen PDF
+
+Jika Anda perlu menemukan tabel tertentu dan menggantinya dengan yang diinginkan, Anda dapat menggunakan metode Replace() dari Kelas [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) untuk melakukannya. Contoh berikut menunjukkan fungsionalitas untuk mengganti tabel di dalam dokumen PDF:
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Muat dokumen PDF yang ada
-Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Buat objek TableAbsorber untuk menemukan tabel
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Kunjungi halaman pertama dengan absorber
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// Dapatkan tabel pertama di halaman
-AbsorbedTable table = absorber.TableList[0];
+        // Create new table
+        var newTable = new Aspose.Pdf.Table();
+        newTable.ColumnWidths = "100 100 100";
+        newTable.DefaultCellBorder = new Aspose.Pdf.BorderInfo(BorderSide.All, 1F);
 
-// Buat tabel baru
-Table newTable = new Table();
-newTable.ColumnWidths = "100 100 100";
-newTable.DefaultCellBorder = new BorderInfo(BorderSide.All, 1F);
+        Row row = newTable.Rows.Add();
+        row.Cells.Add("Col 1");
+        row.Cells.Add("Col 2");
+        row.Cells.Add("Col 3");
 
-Row row = newTable.Rows.Add();
-row.Cells.Add("Kol 1");
-row.Cells.Add("Kol 2");
-row.Cells.Add("Kol 3");
+        // Replace the table with new one
+        absorber.Replace(document.Pages[1], table, newTable);
 
-// Ganti tabel dengan yang baru
-absorber.Replace(pdfDocument.Pages[1], table, newTable);
-
-// Simpan dokumen
-pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTable_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -166,23 +179,23 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "Inggris"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "Inggris"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "Inggris"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -191,7 +204,7 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -203,5 +216,3 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
     }
 }
 </script>
-```
-

@@ -2,9 +2,11 @@
 title: العمل مع النص في PDF باستخدام C#
 linktitle: العمل مع النص
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/working-with-text/
-description: تشرح هذه القسم مختلف تقنيات التعامل مع النصوص. تعلم كيفية إضافة، استبدال، تدوير، البحث عن النص باستخدام Aspose.PDF و C#.
+description: يشرح هذا القسم تقنيات مختلفة للتعامل مع النص. تعلم كيفية إضافة، استبدال، تدوير، البحث عن النص باستخدام Aspose.PDF و C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع النص في PDF باستخدام C#",
-    "alternativeHeadline": "إضافة، تدوير، البحث وحذف النص في ملف PDF",
+    "headline": "Working with Text in PDF using C#",
+    "alternativeHeadline": "Enhanced Text Manipulation Features in PDF with C#",
+    "abstract": "اكتشف قدرات قوية لمعالجة النص في ملفات PDF باستخدام Aspose.PDF for .NET. تتيح هذه الميزة للمستخدمين إضافة، استبدال، تدوير، وتنسيق النص داخل مستندات PDF بسلاسة، مما يعزز تفاعل المستندات وتخصيصها. قم بتمكين تطبيقاتك مع وظائف بحث فعالة وتقنيات معالجة نص مرنة مصممة لمطوري C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, إضافة نص, البحث عن نص, حذف نص, التلاعب بالنص في pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF manipulation, add text to PDF, rotate text in PDF, search text in PDF, replace text in PDF, text formatting inside PDF, Aspose.PDF for .NET, text handling techniques, PDF document generation, Floating Box tool",
+    "wordcount": "371",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,23 +74,23 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-text/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تشرح هذه القسم مختلف تقنيات التعامل مع النصوص. تعلم كيفية إضافة، استبدال، تدوير، البحث عن النص باستخدام Aspose.PDF و C#."
+    "dateModified": "2024-11-26",
+    "description": "يشرح هذا القسم تقنيات مختلفة للتعامل مع النص. تعلم كيفية إضافة، استبدال، تدوير، البحث عن النص باستخدام Aspose.PDF و C#."
 }
 </script>
 
-نحن جميعًا نحتاج أحيانًا إلى إضافة نص إلى ملف PDF. على سبيل المثال، عندما تريد إضافة ترجمة أسفل النص الرئيسي، وضع تعليق بجانب صورة، أو مجرد تعبئة استمارة طلب. كما أنه مفيد إذا كان بالإمكان تنسيق جميع عناصر النص حسب الأسلوب الذي تفضله. أكثر التلاعبات شيوعًا بالنصوص في ملف PDF الخاص بك هي: إضافة نص إلى PDF، تنسيق النص داخل ملف PDF، استبدال وتدوير النص في مستندك. **Aspose.PDF for .NET** هو الحل الأفضل الذي يوفر كل ما تحتاجه للتفاعل مع محتوى PDF.
+نحن جميعًا بحاجة أحيانًا إلى إضافة نص إلى ملف PDF. على سبيل المثال، عندما تريد إضافة ترجمة أسفل النص الرئيسي، أو وضع عنوان بجانب صورة، أو مجرد ملء نموذج طلب. من المفيد أيضًا إذا كان يمكن تنسيق جميع عناصر النص بأسلوبك المفضل. أكثر عمليات معالجة النص شيوعًا في ملف PDF الخاص بك هي: إضافة نص إلى PDF، تنسيق النص داخل ملف PDF، استبدال وتدوير النص في مستندك. **Aspose.PDF for .NET** هو أفضل حل يحتوي على كل ما تحتاجه للتفاعل مع محتوى PDF.
 
-أنت قادر على القيام بما يلي:
+ يمكنك القيام بما يلي:
 
-- [إضافة نص إلى ملف PDF](/pdf/ar/net/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام الخطوط من الدفق والملفات، إضافة سلسلة HTML، إضافة رابط تشعبي، إلخ.
-- [تلميح PDF](/pdf/ar/net/pdf-tooltip/) - يمكنك إضافة تلميح إلى نص تم البحث عنه من خلال إضافة زر غير مرئي باستخدام C#.
-- [تنسيق النص داخل PDF](/pdf/ar/net/text-formatting-inside-pdf/) - العديد من الميزات التي يمكنك إضافتها إلى مستندك عند تنسيق النص داخله.
-- [تنسيق النص داخل ملف PDF](/pdf/ar/net/text-formatting-inside-pdf/) - العديد من المزايا التي يمكنك إضافتها إلى مستندك عند تنسيق النص داخله.
-- [استبدال النص في ملف PDF](/pdf/ar/net/replace-text-in-pdf/) - لاستبدال النص في جميع صفحات مستند PDF. أولاً يجب عليك استخدام TextFragmentAbsorber.
-- [تدوير النص داخل ملف PDF](/pdf/ar/net/rotate-text-inside-pdf/) - تدوير النص داخل PDF باستخدام خاصية الدوران لفئة TextFragment.
-- [البحث عن النص واستخراجه من صفحات مستند PDF](/pdf/ar/net/search-and-get-text-from-pdf/) - يمكنك استخدام فئة TextFragmentAbsorber للبحث واستخراج النص من الصفحات.
-- [تحديد فاصل الأسطر](/pdf/ar/net/determine-line-break/) - يشرح هذا الموضوع كيفية تتبع كسر الأسطر لأجزاء النص المتعددة الخطوط.
+- [إضافة نص إلى ملف PDF](/pdf/ar/net/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام خطوط من التدفق والملفات، إضافة سلسلة HTML، إضافة رابط، إلخ.
+- [تلميح PDF](/pdf/ar/net/pdf-tooltip/) - يمكنك إضافة تلميح إلى النص الذي تم البحث عنه عن طريق إضافة زر غير مرئي باستخدام C#.
+- [تنسيق النص داخل PDF](/pdf/ar/net/text-formatting-inside-pdf/) - العديد من الميزات يمكنك إضافتها إلى مستندك عند تنسيق النص داخله. إضافة مسافة بادئة، إضافة حدود للنص، إضافة نص تحت الخط، إضافة تغذية سطر جديد باستخدام مكتبة Aspose.PDF.
+- [استخدام FloatingBox](/pdf/ar/net/floating-box/) - أداة Floating Box هي أداة خاصة لوضع النص ومحتويات أخرى على صفحة PDF.
+- [استبدال النص في PDF](/pdf/ar/net/replace-text-in-pdf/) - لاستبدال النص في جميع صفحات مستند PDF. تحتاج أولاً إلى استخدام TextFragmentAbsorber.
+- [تدوير النص داخل PDF](/pdf/ar/net/rotate-text-inside-pdf/) - تدوير النص داخل PDF باستخدام خاصية الدوران من فئة TextFragment.
+- [البحث والحصول على نص من صفحات مستند PDF](/pdf/ar/net/search-and-get-text-from-pdf/) - يمكنك استخدام فئة TextFragmentAbsorber للبحث والحصول على نص من الصفحات.
+- [تحديد فواصل الأسطر](/pdf/ar/net/determine-line-break/) - يشرح هذا الموضوع كيفية تتبع فواصل الأسطر لقطع النص متعددة الأسطر.
 
 <script type="application/ld+json">
 {
@@ -152,4 +155,3 @@ sitemap:
     }
 }
 </script>
-

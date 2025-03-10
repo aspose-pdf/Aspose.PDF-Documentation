@@ -1,32 +1,35 @@
 ---
-title: Obtenir la Résolution et les Dimensions des Images
-linktitle: Obtenir la Résolution et les Dimensions
+title: Obtenir la résolution et les dimensions des images
+linktitle: Obtenir la résolution et les dimensions
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /fr/net/get-resolution-and-dimensions-of-embedded-images/
-description: Cette section présente les détails pour obtenir la résolution et les dimensions des Images Intégrées
+description: Apprenez à récupérer la résolution et les dimensions des images intégrées à un PDF en .NET en utilisant Aspose.PDF.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Obtenir la Résolution et les Dimensions des Images",
-    "alternativeHeadline": "Comment obtenir la Résolution et les Dimensions des Images Intégrées",
+    "headline": "Get Resolution and Dimensions of Images",
+    "alternativeHeadline": "Extract Image Resolution and Dimensions Efficiently",
+    "abstract": "Découvrez comment obtenir efficacement la résolution et les dimensions des images intégrées dans des documents PDF en utilisant la bibliothèque Aspose.PDF. Cette fonctionnalité permet aux développeurs d'accéder directement aux propriétés des images sans extraction, simplifiant ainsi le processus de manipulation des images dans les fichiers PDF tout en améliorant la fonctionnalité et le contrôle sur les données d'image.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, obtenir résolution, obtenir dimensions",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "keywords": "Get Resolution, Dimensions of Images, Embedded Images, Aspose.PDF.Drawing, ArrayList, Image Placement Classes, ConcatenateMatrix, XImage, PDF Manipulation Library, Image Resolution Computation",
+    "wordcount": "827",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de Documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,127 +71,131 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-resolution-and-dimensions-of-embedded-images/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cette section présente les détails pour obtenir la résolution et les dimensions des Images Intégrées"
+    "dateModified": "2024-11-26",
+    "description": "Cette section montre les détails pour obtenir la résolution et les dimensions des images intégrées."
 }
 </script>
+
 Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Ce sujet explique comment utiliser les classes d'opérateurs dans l'espace de noms Aspose.PDF qui fournissent la capacité d'obtenir des informations sur la résolution et les dimensions des images sans avoir à les extraire.
 
-Il existe différentes manières d'atteindre cet objectif. Cet article explique comment utiliser une `arraylist` et [les classes de placement d'images](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
+Il existe différentes manières d'y parvenir. Cet article explique comment utiliser un `arraylist` et [les classes de placement d'images](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
 
-1. D'abord, chargez le fichier PDF source (contenant des images).
+1. Tout d'abord, chargez le fichier PDF source (avec des images).
 1. Ensuite, créez un objet ArrayList pour contenir les noms de toutes les images dans le document.
 1. Obtenez les images en utilisant la propriété Page.Resources.Images.
-1. Créez un objet stack pour contenir l'état graphique de l'image et utilisez-le pour suivre les différents états des images.
-1.
-1. Étant donné que nous pouvons modifier la matrice avec ConcatenateMatrix, nous pourrions également avoir besoin de revenir à l'état original de l'image. Utilisez les opérateurs GSave et GRestore. Ces opérateurs sont appariés et doivent donc être appelés ensemble. Par exemple, si vous effectuez un travail graphique avec des transformations complexes et que finalement vous revenez aux transformations initiales, l'approche sera la suivante :
+1. Créez un objet stack pour contenir l'état graphique de l'image et utilisez-le pour suivre les différents états d'image.
+1. Créez un objet ConcatenateMatrix qui définit la transformation actuelle. Il prend également en charge le redimensionnement, la rotation et l'inclinaison de tout contenu. Il concatène la nouvelle matrice avec la précédente. Veuillez noter que nous ne pouvons pas définir la transformation à partir de zéro, mais seulement modifier la transformation existante.
+1. Comme nous pouvons modifier la matrice avec ConcatenateMatrix, nous pourrions également avoir besoin de revenir à l'état d'image d'origine. Utilisez les opérateurs GSave et GRestore. Ces opérateurs sont appariés, donc ils doivent être appelés ensemble. Par exemple, si vous effectuez des travaux graphiques avec des transformations complexes et que vous revenez finalement aux transformations à l'état initial, l'approche sera quelque chose comme ceci :
 
 ```csharp
-// Dessiner du texte
+// Draw some text
 GSave
 
-ConcatenateMatrix  // tourner le contenu après l'opérateur
+ConcatenateMatrix  // rotate contents after the operator
 
-// Un travail graphique
+// Some graphics work
 
-ConcatenateMatrix // mettre à l'échelle (avec la rotation précédente) le contenu après l'opérateur
+ConcatenateMatrix // scale (with previous rotation) contents after the operator
 
-// Un autre travail graphique
+// Some other graphics work
 
 GRestore
 
-// Dessiner du texte
+// Draw some text
 ```
 
-En conséquence, le texte est dessiné sous forme régulière mais certaines transformations sont effectuées entre les opérateurs de texte. Pour afficher l'image ou pour dessiner des formes et des images, nous devons utiliser l'opérateur Do.
+En conséquence, le texte est dessiné sous forme régulière, mais certaines transformations sont effectuées entre les opérateurs de texte. Pour afficher l'image ou dessiner des objets de forme et des images, nous devons utiliser l'opérateur Do.
 
-Nous avons également une classe nommée XImage qui offre deux propriétés, Width et Height, qui peuvent être utilisées pour obtenir les dimensions de l'image.
+Nous avons également une classe nommée XImage qui fournit deux propriétés, Width et Height, qui peuvent être utilisées pour obtenir les dimensions de l'image.
 
-1.
-1.
-1. Afficher les informations dans une invite de commande avec le nom de l'image.
+1. Effectuez quelques calculs pour calculer la résolution de l'image.
+1. Affichez les informations dans une invite de commande avec le nom de l'image.
 
 Le code suivant vous montre comment obtenir les dimensions et la résolution d'une image sans extraire l'image du document PDF.
 
 ```csharp
-// Pour des exemples complets et des fichiers de données, veuillez visiter https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Le chemin vers le répertoire des documents.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Charger le fichier PDF source
-Document doc = new Document(dataDir+ "ImageInformation.pdf");
-
-// Définir la résolution par défaut pour l'image
-int defaultResolution = 72;
-System.Collections.Stack graphicsState = new System.Collections.Stack();
-// Définir un objet liste qui contiendra les noms des images
-System.Collections.ArrayList imageNames = new System.Collections.ArrayList(doc.Pages[1].Resources.Images.Names);
-// Insérer un objet dans la pile
-graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
-
-// Obtenir tous les opérateurs de la première page du document
-foreach (Operator op in doc.Pages[1].Contents)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageInformationFromPDF()
 {
-    // Utiliser les opérateurs GSave/GRestore pour rétablir les transformations précédemment définies
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-    // Instancier l'objet ConcatenateMatrix car il définit la matrice de transformation actuelle.
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-    // Créer l'opérateur Do qui dessine des objets à partir des ressources. Il dessine des objets Form et des objets Image
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    if (opSaveState != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageInformation.pdf"))
     {
-        // Sauvegarder l'état précédent et pousser l'état actuel au sommet de la pile
-        graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
-    }
-    else if (opRestoreState != null)
-    {
-        // Jeter l'état actuel et restaurer l'état précédent
-        graphicsState.Pop();
-    }
-    else if (opCtm != null)
-    {
-        System.Drawing.Drawing2D.Matrix cm = new System.Drawing.Drawing2D.Matrix(
-           (float)opCtm.Matrix.A,
-           (float)opCtm.Matrix.B,
-           (float)opCtm.Matrix.C,
-           (float)opCtm.Matrix.D,
-           (float)opCtm.Matrix.E,
-           (float)opCtm.Matrix.F);
+        // Define the default resolution for image
+        int defaultResolution = 72;
+        var graphicsState = new Stack();
 
-        // Multiplier la matrice actuelle avec la matrice d'état
-        ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
+        // Define list which will hold image names
+        var imageNames = new List<string>(document.Pages[1].Resources.Images.Names);
 
-        continue;
-    }
-    else if (opDo != null)
-    {
-        // Dans le cas où il s'agit d'un opérateur de dessin d'image
-        if (imageNames.Contains(opDo.Name))
+        // Insert an object to stack
+        graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
+
+        // Get all the operators on first page of document
+        foreach (var op in document.Pages[1].Contents)
         {
-            System.Drawing.Drawing2D.Matrix lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-            // Créer un objet XImage pour contenir les images de la première page du PDF
-            XImage image = doc.Pages[1].Resources.Images[opDo.Name];
+            // Use GSave/GRestore operators to revert the transformations back to previously set
+            var opSaveState = op as Aspose.Pdf.Operators.GSave;
+            var opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+            var opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+            var opDo = op as Aspose.Pdf.Operators.Do;
 
-            // Obtenir les dimensions de l'image
-            double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
-            double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
-            // Obtenir les informations de hauteur et de largeur de l'image
-            double originalWidth = image.Width;
-            double originalHeight = image.Height;
+            if (opSaveState != null)
+            {
+                // Save previous state and push current state to the top of the stack
+                graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
+            }
+            else if (opRestoreState != null)
+            {
+                // Throw away current state and restore previous one
+                graphicsState.Pop();
+            }
+            else if (opCtm != null)
+            {
+                var cm = new System.Drawing.Drawing2D.Matrix(
+                   (float)opCtm.Matrix.A,
+                   (float)opCtm.Matrix.B,
+                   (float)opCtm.Matrix.C,
+                   (float)opCtm.Matrix.D,
+                   (float)opCtm.Matrix.E,
+                   (float)opCtm.Matrix.F);
 
-            // Calculer la résolution à partir des informations ci-dessus
-            double resHorizontal = originalWidth * defaultResolution / scaledWidth;
-            double resVertical = originalHeight * defaultResolution / scaledHeight;
+                // Multiply current matrix with the state matrix
+                ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
 
-            // Afficher les informations de dimension et de résolution de chaque image
-            Console.Out.WriteLine(
-                    string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
-                                 opDo.Name, scaledWidth, scaledHeight, resHorizontal,
-                                 resVertical));
+                continue;
+            }
+            else if (opDo != null)
+            {
+                // In case this is an image drawing operator
+                if (imageNames.Contains(opDo.Name))
+                {
+                    var lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    // Create XImage object to hold images of first pdf page
+                    var image = document.Pages[1].Resources.Images[opDo.Name];
+
+                    // Get image dimensions
+                    double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
+                    double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
+                    // Get Height and Width information of image
+                    double originalWidth = image.Width;
+                    double originalHeight = image.Height;
+
+                    // Compute resolution based on above information
+                    double resHorizontal = originalWidth * defaultResolution / scaledWidth;
+                    double resVertical = originalHeight * defaultResolution / scaledHeight;
+
+                    // Display Dimension and Resolution information of each image
+                    Console.Out.WriteLine(
+                            string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
+                                         opDo.Name, scaledWidth, scaledHeight, resHorizontal,
+                                         resVertical));
+                }
+            }
         }
     }
 }
@@ -198,7 +205,7 @@ foreach (Operator op in doc.Pages[1].Contents)
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Bibliothèque Aspose.PDF pour .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -220,21 +227,21 @@ foreach (Operator op in doc.Pages[1].Contents)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -245,7 +252,7 @@ foreach (Operator op in doc.Pages[1].Contents)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -257,5 +264,3 @@ foreach (Operator op in doc.Pages[1].Contents)
     }
 }
 </script>
-```
-

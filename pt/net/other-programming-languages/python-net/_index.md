@@ -1,7 +1,9 @@
 ---
-title: Usando Aspose.PDF para .NET com Python
+title: Usando Aspose.PDF for .NET com Python
 linktitle: Integração com Python
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /pt/net/python-net/
 description: Neste tutorial, você explorará as diferentes maneiras de criar e modificar arquivos PDF em Python.
@@ -10,12 +12,77 @@ sitemap:
     changefreq: "weekly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Using Aspose.PDF for .NET with Python",
+    "alternativeHeadline": "Integrate Aspose.PDF for .NET with Python Effortlessly",
+    "abstract": "Descubra a poderosa integração de Aspose.PDF for .NET com Python, permitindo que os usuários criem e modifiquem documentos PDF com facilidade. Este recurso oferece exemplos simples para gerar PDFs simples e complexos, mostrando funcionalidades como adicionar texto, imagens e tabelas, enquanto aproveita as robustas capacidades da biblioteca .NET em um ambiente Python. Desbloqueie novas possibilidades para manipulação e geração de PDFs de forma eficiente com esta integração inovadora",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "681",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/python-net/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/python-net/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF pode realizar não apenas tarefas simples e fáceis, mas também lidar com objetivos mais complexos. Confira a próxima seção para usuários e desenvolvedores avançados."
+}
+</script>
 
-Este artigo descreve breves exemplos de como criar PDF usando a integração do Aspose.PDF para .NET com Python.
+Este artigo descreve exemplos curtos de como criar PDF usando a integração Aspose.PDF for .NET com Python.
 
 ## Pré-requisitos
 
-Para usar Aspose.PDF para .NET em Python, por favor, use o seguinte `requirments.txt`:
+Para usar Aspose.PDF for .NET em Python, por favor, use o seguinte `requirments.txt`:
 
 ```bash
 pip==21.3.1
@@ -24,11 +91,11 @@ pythonnet==2.5.2
 setuptools==60.1.0
 ```
 
-Também, você deve colocar `Aspose.PDF.dll` na pasta desejada.
+Além disso, você deve colocar `Aspose.PDF.dll` na pasta desejada.
 
-## Criando um PDF Simples usando Python
+## Criando PDF Simples usando Python
 
-Para trabalhar, precisaremos integrar o [PythonNet](https://github.com/pythonnet/pythonnet) à nossa aplicação e fazer algumas configurações.
+Para trabalhar, precisaremos integrar [PythonNet](https://github.com/pythonnet/pythonnet) em nossa aplicação e fazer algumas configurações.
 
 ```python
 import clr
@@ -41,9 +108,10 @@ from Aspose.Pdf import Document, Color, License, BorderInfo, BorderSide, Rectang
 from Aspose.Pdf import Table, MarginInfo
 from Aspose.Pdf.Text import TextFragment, Position, TextBuilder,FontRepository
 ```
+
 ### Gerar documento simples
 
-Vamos criar um PDF simples com o texto clássico "Hello, world". Para uma explicação mais detalhada, por favor siga para [esta página](https://docs.aspose.com/pdf/net/hello-world-example/)
+Vamos fazer um PDF simples com o texto clássico "Olá, mundo". Para uma explicação mais detalhada, siga [esta página](https://docs.aspose.com/pdf/net/hello-world-example/)
 
 ```python
 class HelloWorld(object):
@@ -56,11 +124,11 @@ class HelloWorld(object):
 
     def run_simple(self):
 
-        # Inicializar o objeto de documento
+        # Create PDF document
         document = Document()
-        # Adicionar página
+        # Add page
         page = document.Pages.Add()
-        # Adicionar texto à nova página
+        # Add text to new page
         textFragment = TextFragment("Hello,world!")
         textFragment.Position = Position(100, 600)
 
@@ -69,21 +137,23 @@ class HelloWorld(object):
         textFragment.TextState.BackgroundColor = Color.Blue
         textFragment.TextState.ForegroundColor = Color.Yellow
 
-        # Criar objeto TextBuilder
+        # Create TextBuilder object
         textBuilder = TextBuilder(page)
 
-        # Anexar o fragmento de texto à página PDF
+        # Append the text fragment to the PDF page
         textBuilder.AppendText(textFragment)
 
+        # Save PDF document
         document.Save("HelloWorld_out.pdf")
 ```
+
 ## Criando PDF Complexo usando Python
 
-Os próximos exemplos mostram como podemos criar um documento PDF complexo com imagens e tabelas. Este exemplo é baseado na [página seguinte](https://docs.aspose.com/pdf/net/complex-pdf-example/).
+Os próximos exemplos mostram como podemos criar um documento PDF complexo com imagens e tabelas. Este exemplo é baseado na [seguinte página](https://docs.aspose.com/pdf/net/complex-pdf-example/).
 
 ```python
 class HelloWorld(object):
-    def __init__(self, licence_path):
+    def __init__(self,licence_path):
         self.dataDir = "C:\\Samples\\"
         if licence_path:
             self.licence_path = licence_path
@@ -91,39 +161,38 @@ class HelloWorld(object):
             self.aspose_license.SetLicense(self.licence_path)
 
     def run_simple(self):
-    # ... omitido ...
+    # ... skipped ...
 
-    # Criar um Documento Complexo
+    # Make a Complex Document
     def run_complex(self):
 
-        # Inicializar objeto do documento
+        # Create PDF document
         document = Document()
-        # Adicionar página
+        # Add page
         page = document.Pages.Add()
 
-        # Adicionar imagem
+        # Add image
         imageFileName = self.dataDir + "logo.png"
         page.AddImage(imageFileName, Rectangle(20, 730, 120, 830))
 
-        # Adicionar Cabeçalho
-        header = TextFragment("Novas rotas de ferry no Outono de 2020")
+        # Add Header
+        header = TextFragment("New ferry routes in Fall 2020")
         header.TextState.Font = FontRepository.FindFont("Arial")
         header.TextState.FontSize = 24
         header.HorizontalAlignment = HorizontalAlignment.Center
         header.Position = Position(130, 720)
         page.Paragraphs.Add(header)
 
-        # Adicionar descrição
-        descriptionText = "Os visitantes devem comprar bilhetes online e os bilhetes são limitados a 5.000 por dia. \
-        O serviço de ferry está operando com metade da capacidade e em um horário reduzido. Espere filas."
+        # Add description
+        descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. \
+        Ferry service is operating at half capacity and on a reduced schedule. Expect lineups."
         description = TextFragment(descriptionText)
         description.TextState.Font = FontRepository.FindFont("Times New Roman")
         description.TextState.FontSize = 14
         description.HorizontalAlignment = HorizontalAlignment.Left
         page.Paragraphs.Add(description)
 
-
-        # Adicionar tabela
+        # Add table
         table = Table()
 
         table.ColumnWidths = "200"
@@ -134,8 +203,8 @@ class HelloWorld(object):
         table.DefaultCellTextState.Font =  FontRepository.FindFont("Helvetica")
 
         headerRow = table.Rows.Add()
-        headerRow.Cells.Add("Cidade de Partida")
-        headerRow.Cells.Add("Ilha de Partida")
+        headerRow.Cells.Add("Departs City")
+        headerRow.Cells.Add("Departs Island")
 
         i=0
         while(i<headerRow.Cells.Count):
@@ -156,12 +225,14 @@ class HelloWorld(object):
 
         page.Paragraphs.Add(table)
 
+        # Save PDF document
         document.Save(self.dataDir + "Complex.pdf")
 ```
+
 ## Como executar a geração de PDFs no Windows
 
-Este trecho mostra como executar os exemplos acima em um PC Windows. Supomos que a `class HelloWorld` esteja localizada no arquivo `example_get_started.py`.
-Se você executar a versão de teste do Aspose.PDF para .NET, você deve passar uma string vazia como `license_path`.
+Este trecho mostra como executar os exemplos acima em um PC com Windows. Supomos que `class HelloWorld` está localizado no arquivo `example_get_started.py`.
+Se você executar a versão de teste de Aspose.PDF for .NET, deve passar uma string vazia como `license_path`.
 
 ```python
 import example_get_started
@@ -176,4 +247,3 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-

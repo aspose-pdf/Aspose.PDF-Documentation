@@ -1,10 +1,11 @@
 ---
-title: C++を通じたCOMインターオペラビリティ
+title: C++を介したCOM相互運用
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ja/net/cpp-via-com-interop/
 ---
-
 {{% alert color="primary" %}}
 
 このセクションには以下のトピックが含まれています

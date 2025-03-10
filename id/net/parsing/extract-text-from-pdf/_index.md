@@ -2,6 +2,8 @@
 title: Ekstrak Teks dari PDF menggunakan C#
 linktitle: Ekstrak Teks dari PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /id/net/extract-text-from-pdf/
 description: Bagian ini berisi artikel tentang ekstraksi teks dari dokumen PDF menggunakan Aspose.PDF dalam C#.
@@ -10,9 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-## Artikel dalam bagian ini
+## Artikel di bagian ini
 
 - [Ekstrak Teks dari PDF](/pdf/id/net/extract-text-from-all-pdf/)
 - [Ekstrak Paragraf dari PDF](/pdf/id/net/extract-paragraph-from-pdf/)
-- [Ekstrak Teks SuperSkrip dan SubSkrip dari PDF](/pdf/id/net/extract-superscripts-subscripts-from-pdf/)
+- [Ekstrak Teks SuperScripts dan SubScripts dari PDF](/pdf/id/net/extract-superscripts-subscripts-from-pdf/)

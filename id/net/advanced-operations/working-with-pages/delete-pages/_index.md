@@ -1,10 +1,12 @@
 ---
-title: Hapus Halaman PDF secara pemrograman C#
+title: Hapus Halaman PDF secara programatik C#
 linktitle: Hapus Halaman PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/delete-pages/
-description: Anda dapat menghapus halaman dari file PDF Anda menggunakan perpustakaan Aspose.PDF untuk .NET.
+description: Anda dapat menghapus halaman dari file PDF Anda menggunakan pustaka Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Hapus Halaman PDF secara pemrograman C#",
-    "alternativeHeadline": "Cara menghapus Halaman PDF",
+    "headline": "Delete PDF Pages programmatically C#",
+    "alternativeHeadline": "Delete Specific Pages from PDF with C#",
+    "abstract": "Dengan pustaka Aspose.PDF for .NET, pengguna sekarang dapat dengan efisien menghapus halaman tertentu dari dokumen PDF secara programatik menggunakan C#. Fitur ini menyederhanakan manajemen PDF, memungkinkan pengeditan dan pembaruan cepat yang disesuaikan dengan kebutuhan pengguna, yang pada akhirnya meningkatkan kustomisasi dan kontrol dokumen.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, hapus halaman pdf, menghapus halaman pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "wordcount": "214",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,41 +73,44 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/delete-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Anda dapat menghapus halaman dari file PDF Anda menggunakan perpustakaan Aspose.PDF untuk .NET."
+    "dateModified": "2024-11-26",
+    "description": "Anda dapat menghapus halaman dari file PDF Anda menggunakan pustaka Aspose.PDF for .NET."
 }
 </script>
-Potongan kode berikut juga dapat bekerja dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF untuk .NET. Untuk menghapus halaman tertentu dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+
+Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF for .NET. Untuk menghapus halaman tertentu dari koleksi [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 
 ## Hapus Halaman dari File PDF
 
-1. Panggil metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) dan tentukan indeks halaman
-1. Panggil metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) untuk menyimpan file PDF yang telah diperbarui
+1. Panggil metode [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection/methods/delete) dan tentukan indeks halaman.
+1. Panggil metode [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) untuk menyimpan file PDF yang diperbarui.
 Potongan kode berikut menunjukkan cara menghapus halaman tertentu dari file PDF menggunakan C#.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "DeleteParticularPage.pdf");
-
-// Hapus halaman tertentu
-pdfDocument.Pages.Delete(2);
-
-dataDir = dataDir + "DeleteParticularPage_out.pdf";
-// Simpan PDF yang telah diperbarui
-pdfDocument.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeletePageFromPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Pages();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularPage.pdf"))
+    {
+        // Delete a particular page
+        document.Pages.Delete(2);
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularPage_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -127,21 +132,21 @@ pdfDocument.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -152,7 +157,7 @@ pdfDocument.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -164,5 +169,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-```
-

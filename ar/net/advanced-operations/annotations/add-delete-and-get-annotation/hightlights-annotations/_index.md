@@ -1,10 +1,12 @@
 ---
-title: تعليقات التمييز بالألوان باستخدام C#
+title: إضافة تعليق تمييز PDF باستخدام C#
 linktitle: تعليق التمييز
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ar/net/highlights-annotation/
-description: تُقدم تعليقات التوضيح في النص على شكل تمييزات، تحت خطوط، خطوط مشطوبة، أو خطوط متعرجة في نص الوثيقة.
+description: تعلم كيفية إضافة تعليق تمييز إلى مستندات PDF في .NET باستخدام Aspose.PDF لتأكيد النص ومراجعته.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "تعليقات التمييز بالألوان باستخدام C#",
-    "alternativeHeadline": "كيفية إضافة تعليق التمييز في PDF",
+    "headline": "PDF Highlight Annotation using C#",
+    "alternativeHeadline": "PDF Annotations with Customizable Highlighting Options",
+    "abstract": "تتيح ميزة تعليق التمييز الجديدة باستخدام C# للمستخدمين إضافة وتخصيص تعليقات تمييز النص في مستندات PDF الخاصة بهم بسلاسة. تتضمن هذه الوظيفة خيارات للتظليل، والتسطير، والتخطيطات، والتسطير المتعرج، وكلها يمكن تعديلها من حيث اللون، والشفافية، والبيانات الوصفية، مما يعزز تفاعل الوثيقة ووضوحها.",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثيقة PDF",
-    "keywords": "pdf, c#, تعليقات التمييز, تعليقات توضيح النص",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF Highlight Annotation, C#, text markup annotation, highlight settings, strikethrough settings, underline settings, add annotation, delete annotation, Aspose.PDF.Drawing, markup annotations",
+    "wordcount": "958",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,222 +74,226 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/highlights-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تُقدم تعليقات التوضيح في النص على شكل تمييزات، تحت خطوط، خطوط مشطوبة، أو خطوط متعرجة في نص الوثيقة."
+    "dateModified": "2024-11-25",
+    "description": "تظهر تعليقات التمييز في النص كتمييزات، وتسطيرات، وتخطيطات، أو تسطيرات متعرجة في نص المستند."
 }
 </script>
 
-تظهر تعليقات توضيح تنسيق النص كتمييزات، خطوط تحتية، خطوط مشطوبة، أو خطوط تحتية متعرجة في نص المستند. عند فتحها، يجب أن تعرض نافذة منبثقة تحتوي على نص الملاحظة المرتبطة.
+ستظهر تعليقات تمييز النص كتمييزات، وتسطيرات، وتخطيطات، أو تسطيرات متعرجة في نص المستند. عند فتحها، ستعرض نافذة منبثقة تحتوي على نص الملاحظة المرتبطة.
 
-يمكن تعديل خصائص تعليقات توضيح تنسيق النص في مستند PDF باستخدام نافذة الخصائص المتوفرة في عنصر تحكم عارض PDF. يمكن تعديل لون، شفافية، مؤلف، وموضوع تعليق توضيح النص.
+يمكن تعديل خصائص تعليقات تمييز النص في مستند PDF باستخدام نافذة الخصائص المتاحة في وحدة عرض PDF. يمكن تعديل اللون، والشفافية، والمؤلف، والموضوع لتعليق تمييز النص.
 
-من الممكن الحصول على أو تعيين إعدادات تعليقات التمييز باستخدام خاصية highlightSettings. تستخدم خاصية highlightSettings لتعيين اللون، الشفافية، المؤلف، الموضوع، تاريخ التعديل وخصائص isLocked لتعليقات التمييز.
+من الممكن الحصول على إعدادات تعليقات التمييز أو تعيينها باستخدام خاصية highlightSettings. تُستخدم خاصية highlightSettings لتعيين اللون، والشفافية، والمؤلف، والموضوع، وتاريخ التعديل، وخصائص isLocked لتعليقات التمييز.
 
-من الممكن أيضًا الحصول على أو تعيين إعدادات تعليقات الخط المشطوب باستخدام خاصية strikethroughSettings. تستخدم خاصية strikethroughSettings لتعيين اللون، الشفافية، المؤلف، الموضوع، تاريخ التعديل، وخصائص isLocked لتعليقات الخط المشطوب.
+كما يمكن الحصول على إعدادات تعليقات التخطيطات أو تعيينها باستخدام خاصية strikethroughSettings. تُستخدم خاصية strikethroughSettings لتعيين اللون، والشفافية، والمؤلف، والموضوع، وتاريخ التعديل، وخصائص isLocked لتعليقات التخطيطات.
 
-الميزة التالية هي القدرة على الحصول على أو تعيين إعدادات تعليقات الخط السفلي باستخدام خاصية underlineSettings.
-الميزة التالية هي القدرة على الحصول على إعدادات أو تعيين إعدادات التسطير باستخدام خاصية underlineSettings.
+الميزة التالية هي القدرة على الحصول على إعدادات تعليقات التسطير أو تعيينها باستخدام خاصية underlineSettings. تُستخدم خاصية underlineSettings لتعيين اللون، والشفافية، والمؤلف، والموضوع، وتاريخ التعديل، وخصائص isLocked لتعليقات التسطير.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-## إضافة توضيح نصي للعلامات
+## إضافة تعليق تمييز نص
 
-لإضافة توضيح نصي للعلامات إلى مستند PDF، نحتاج إلى أداء الإجراءات التالية:
+لإضافة تعليق تمييز نص إلى مستند PDF، نحتاج إلى تنفيذ الإجراءات التالية:
 
 1. تحميل ملف PDF - كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) جديد.
-1. إنشاء التعليقات التوضيحية:
-    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) وتعيين المعايير (العنوان، اللون).
-    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) وتعيين المعايير (العنوان، اللون).
-    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) وتعيين المعايير (العنوان، اللون).
-    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) وتعيين المعايير (العنوان، اللون).
-- [تحت خط](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) وقم بتعيين الخصائص (العنوان، اللون).
-1. بعد ذلك يجب إضافة جميع التعليقات التوضيحية إلى الصفحة.
+1. إنشاء التعليقات:
+    - [HighlightAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/highlightannotation) وتعيين المعلمات (العنوان، اللون).
+    - [StrikeOutAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/strikeoutannotation) وتعيين المعلمات (العنوان، اللون).
+    - [SquigglyAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/squigglyannotation) وتعيين المعلمات (العنوان، اللون).
+    - [UnderlineAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/underlineannotation) وتعيين المعلمات (العنوان، اللون).
+1. بعد ذلك يجب إضافة جميع التعليقات إلى الصفحة.
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using Aspose.Pdf.Text;
-using System;
-using System.Linq;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextMarkupAnnotations()
 {
-    class ExampleTextMarkupAnnotation
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
     {
-        // المسار إلى مجلد الوثائق.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
+        // Create a TextFragmentAbsorber to find the text "PDF"
+        var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
+        tfa.Visit(document.Pages[1]);
 
-        public static void AddTextMarkupAnnotation()
+        // Create annotations for the found text fragments
+        var highlightAnnotation = new Aspose.Pdf.Annotations.HighlightAnnotation(document.Pages[1], tfa.TextFragments[1].Rectangle)
         {
-            try
-            {
-                // تحميل ملف PDF
-                Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
-                var tfa = new Aspose.Pdf.Text.TextFragmentAbsorber("PDF");
-                tfa.Visit(document.Pages[1]);
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.LightGreen
+        };
 
-                // إنشاء التعليقات التوضيحية
-                HighlightAnnotation highlightAnnotation = new HighlightAnnotation(document.Pages[1],
-                   tfa.TextFragments[1].Rectangle )
-                {
-                    Title = "مستخدم Aspose",
-                    Color = Color.LightGreen
-                };
-
-                StrikeOutAnnotation strikeOutAnnotation = new StrikeOutAnnotation(
-                   document.Pages[1],
-                   tfa.TextFragments[2].Rectangle)
-                {
-                    Title = "مستخدم Aspose",
-                    Color = Color.Blue
-                };
-                SquigglyAnnotation squigglyAnnotation = new SquigglyAnnotation(document.Pages[1],
-                    tfa.TextFragments[3].Rectangle)
-                {
-                    Title = "مستخدم Aspose",
-                    Color = Color.Red
-                };
-                UnderlineAnnotation underlineAnnotation = new UnderlineAnnotation(document.Pages[1],
-                    tfa.TextFragments[4].Rectangle)
-                {
-                    Title = "مستخدم Aspose",
-                    Color = Color.Violet
-                };
-                // إضافة التعليق التوضيحي إلى الصفحة
-                document.Pages[1].Annotations.Add(highlightAnnotation);
-                document.Pages[1].Annotations.Add(squigglyAnnotation);
-                document.Pages[1].Annotations.Add(strikeOutAnnotation);
-                document.Pages[1].Annotations.Add(underlineAnnotation);
-                document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-```
-إذا كنت ترغب في تسليط الضوء على جزء متعدد الأسطر يجب عليك استخدام المثال المتقدم:
-
-```csharp
-        /// <summary>
-        /// مثال متقدم إذا كنت ترغب في تسليط الضوء على جزء متعدد الأسطر
-        /// </summary>
-        public static void AddHighlightAnnotationAdvanced()
+        var strikeOutAnnotation = new Aspose.Pdf.Annotations.StrikeOutAnnotation(document.Pages[1], tfa.TextFragments[2].Rectangle)
         {
-            var document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var page = document.Pages[1];
-            var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
-            tfa.Visit(page);
-            foreach (var textFragment in tfa.TextFragments)
-            {
-                var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
-                page.Annotations.Add(highlightAnnotation);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        }
-        private static HighlightAnnotation HighLightTextFragment(Aspose.Pdf.Page page,
-            TextFragment textFragment, Color color)
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Blue
+        };
+
+        var squigglyAnnotation = new Aspose.Pdf.Annotations.SquigglyAnnotation(document.Pages[1], tfa.TextFragments[3].Rectangle)
         {
-            if (textFragment.Segments.Count == 1)
-                return new HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
-                {
-                    Title = "مستخدم Aspose",
-                    Color = color,
-                    Modified = DateTime.Now,
-                    QuadPoints = new Point[]
-                    {
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
-                        new Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
-                        new Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
-                    }
-                };
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Red
+        };
 
-            var offset = 0;
-            var quadPoints = new Point[textFragment.Segments.Count * 4];
-            foreach (var segment in textFragment.Segments)
-            {
-                quadPoints[offset + 0] = new Point(segment.Rectangle.LLX, segment.Rectangle.URY);
-                quadPoints[offset + 1] = new Point(segment.Rectangle.URX, segment.Rectangle.URY);
-                quadPoints[offset + 2] = new Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
-                quadPoints[offset + 3] = new Point(segment.Rectangle.URX, segment.Rectangle.LLY);
-                offset += 4;
-            }
-
-            var llx = quadPoints.Min(pt => pt.X);
-            var lly = quadPoints.Min(pt => pt.Y);
-            var urx = quadPoints.Max(pt => pt.X);
-            var ury = quadPoints.Max(pt => pt.Y);
-            return new HighlightAnnotation(page, new Rectangle(llx, lly, urx, ury))
-            {
-                Title = "مستخدم Aspose",
-                Color = color,
-                Modified = DateTime.Now,
-                QuadPoints = quadPoints
-            };
-        }
-
-        /// <summary>
-        /// كيفية الحصول على نص مميز
-        /// </summary>
-        public static void GetHighlightedText()
+        var underlineAnnotation = new Aspose.Pdf.Annotations.UnderlineAnnotation(document.Pages[1], tfa.TextFragments[4].Rectangle)
         {
-            // تحميل ملف PDF
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-            var highlightAnnotations = document.Pages[1].Annotations
-                .Where(a => a.AnnotationType == AnnotationType.Highlight)
-                .Cast<HighlightAnnotation>();
-            foreach (var ta in highlightAnnotations)
-            {
-                Console.WriteLine($"[{ta.GetMarkedText()}]");
-            }
-        }
-```
-## الحصول على تعليق توضيحي لترميز النص
+            Title = "Aspose User",
+            Color = Aspose.Pdf.Color.Violet
+        };
 
-يرجى محاولة استخدام قطعة الكود التالية للحصول على تعليق توضيحي لترميز النص من مستند PDF.
+        // Add annotations to the page
+        document.Pages[1].Annotations.Add(highlightAnnotation);
+        document.Pages[1].Annotations.Add(squigglyAnnotation);
+        document.Pages[1].Annotations.Add(strikeOutAnnotation);
+        document.Pages[1].Annotations.Add(underlineAnnotation);
 
-```csharp
-    public static void GetTextMarkupAnnotation()
-    {
-        // تحميل ملف PDF
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        var textMarkupAnnotations = document.Pages[1].Annotations
-            .Where(a => a.AnnotationType == AnnotationType.Highlight
-            || a.AnnotationType == AnnotationType.Squiggly)
-            .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
-            {
-                Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
-            }
+        // Save PDF document
+        document.Save(dataDir + "AddTextMarkupAnnotations_out.pdf");
     }
+}
 ```
 
-## حذف تعليق توضيحي لترميز النص
-
-يوضح قطعة الكود التالية كيفية حذف تعليق توضيحي لترميز النص من ملف PDF.
+إذا كنت ترغب في تمييز جزء متعدد الأسطر، يجب عليك استخدام المثال المتقدم:
 
 ```csharp
-    public static void DeleteTextMarkupAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHighlightAnnotationAdvanced()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
     {
-        // تحميل ملف PDF
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "sample_mod.pdf"));
-        var textMarkupAnnotations = document.Pages[1].Annotations
-            .Where(a => a.AnnotationType == AnnotationType.Highlight
-            ||a.AnnotationType == AnnotationType.Squiggly)
-            .Cast<TextMarkupAnnotation>();
-            foreach (var ta in textMarkupAnnotations)
+        var page = document.Pages[1];
+        var tfa = new TextFragmentAbsorber(@"Adobe\W+Acrobat\W+Reader", new TextSearchOptions(true));
+        tfa.Visit(page);
+        foreach (var textFragment in tfa.TextFragments)
+        {
+            var highlightAnnotation = HighLightTextFragment(page, textFragment, Color.Yellow);
+            page.Annotations.Add(highlightAnnotation);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddHighlightAnnotationAdvanced_out.pdf");
+    }
+}
+
+private static HighlightAnnotation HighLightTextFragment(Page page,
+    Aspose.Pdf.Text.TextFragment textFragment, Aspose.Pdf.Color color)
+{
+    if (textFragment.Segments.Count == 1)
+    {
+        return new Aspose.Pdf.Annotations.HighlightAnnotation(page, textFragment.Segments[1].Rectangle)
+        {
+            Title = "Aspose User",
+            Color = color,
+            Modified = DateTime.Now,
+            QuadPoints = new Aspose.Pdf.Point[]
             {
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.URY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.URY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.LLX, textFragment.Segments[1].Rectangle.LLY),
+                new Aspose.Pdf.Point(textFragment.Segments[1].Rectangle.URX, textFragment.Segments[1].Rectangle.LLY)
+            }
+        };
+    }
+
+    var offset = 0;
+    var quadPoints = new Aspose.Pdf.Point[textFragment.Segments.Count * 4];
+    foreach (Aspose.Pdf.Text.TextSegment segment in textFragment.Segments)
+    {
+        quadPoints[offset + 0] = new Aspose.Pdf.Point(segment.Rectangle.LLX, segment.Rectangle.URY);
+        quadPoints[offset + 1] = new Aspose.Pdf.Point(segment.Rectangle.URX, segment.Rectangle.URY);
+        quadPoints[offset + 2] = new Aspose.Pdf.Point(segment.Rectangle.LLX, segment.Rectangle.LLY);
+        quadPoints[offset + 3] = new Aspose.Pdf.Point(segment.Rectangle.URX, segment.Rectangle.LLY);
+        offset += 4;
+    }
+
+    var llx = quadPoints.Min(pt => pt.X);
+    var lly = quadPoints.Min(pt => pt.Y);
+    var urx = quadPoints.Max(pt => pt.X);
+    var ury = quadPoints.Max(pt => pt.Y);
+    return new Aspose.Pdf.Annotations.HighlightAnnotation(page, new Aspose.Pdf.Rectangle(llx, lly, urx, ury))
+    {
+        Title = "Aspose User",
+        Color = color,
+        Modified = DateTime.Now,
+        QuadPoints = quadPoints
+    };
+}
+
+private static void GetHighlightedText()
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    {
+        var highlightAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight)
+            .Cast<Aspose.Pdf.Annotations.HighlightAnnotation>();
+        foreach (var ta in highlightAnnotations)
+        {
+            Console.WriteLine($"[{ta.GetMarkedText()}]");
+        }
+    }
+}
+```
+
+## الحصول على تعليق تمييز نص
+
+يرجى محاولة استخدام مقتطف الشيفرة التالي للحصول على تعليق تمييز نص من مستند PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetTextMarkupAnnotation()
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    {
+        var textMarkupAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+            || a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
+            .Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
+        foreach (var ta in textMarkupAnnotations)
+        {
+            Console.WriteLine($"[{ta.AnnotationType} {ta.Rect}]");
+        }
+    }
+}
+```
+
+## حذف تعليق تمييز نص
+
+يظهر مقتطف الشيفرة التالي كيفية حذف تعليق تمييز نص من ملف PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteTextMarkupAnnotation()
+{
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample_mod.pdf"))
+    {
+        var textMarkupAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Highlight
+            ||a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Squiggly)
+            .Cast<Aspose.Pdf.Annotations.TextMarkupAnnotation>();
+        foreach (var ta in textMarkupAnnotations)
+        {
             document.Pages[1].Annotations.Delete(ta);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_del.pdf"));
+        }
+        
+        // Save PDF document
+        document.Save(dataDir + "DeleteTextMarkupAnnotation_out.pdf");
     }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -308,21 +315,21 @@ namespace Aspose.Pdf.Examples.Advanced
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -333,7 +340,7 @@ namespace Aspose.Pdf.Examples.Advanced
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة تعديل ملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -345,5 +352,3 @@ namespace Aspose.Pdf.Examples.Advanced
     }
 }
 </script>
-```
-

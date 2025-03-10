@@ -1,10 +1,12 @@
 ---
-title: Cómo Crear PDF usando C#
-linktitle: Crear Documento PDF
+title: Cómo crear PDF usando C#
+linktitle: Crear documento PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /es/net/create-pdf-document/
-description: Crear y formatear el Documento PDF con Aspose.PDF para .NET.
+description: Crear y formatear el documento PDF con Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Cómo Crear PDF usando C#",
-    "alternativeHeadline": "Crear documento PDF desde cero",
+    "headline": "How to Create PDF using C#",
+    "alternativeHeadline": "Create and Format PDFs Effortlessly with C#",
+    "abstract": "La nueva funcionalidad en Aspose.PDF for .NET permite a los desarrolladores crear y formatear documentos PDF sin esfuerzo utilizando C#. Con esta API intuitiva, los usuarios pueden generar PDFs buscables, manipular contenido etiquetado para accesibilidad e integrar sin problemas la generación de PDF en varias aplicaciones .NET, mejorando la productividad y optimizando los flujos de trabajo.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, dotnet, crear documento pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "PDF creation, C# PDF generation, Aspose.PDF for .NET, searchable PDF, accessible PDF, Document class, TextFragment, PDF document manipulation, .NET applications, BDC operations",
+    "wordcount": "871",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,126 +74,190 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Crear y formatear el Documento PDF con Aspose.PDF para .NET."
+    "dateModified": "2024-11-25",
+    "description": "Crear y formatear el documento PDF con Aspose.PDF for .NET."
 }
 </script>
-Siempre estamos buscando una manera de generar documentos PDF y trabajar con ellos en proyectos C# de manera más precisa, exacta y efectiva. Tener funciones fáciles de usar de una biblioteca nos permite enfocarnos más en el trabajo y menos en los detalles que consumen tiempo al intentar generar PDFs, ya sea en .NET.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+Siempre estamos buscando una manera de generar documentos PDF y trabajar con ellos en proyectos de C# de manera más exacta, precisa y efectiva. Tener funciones fáciles de usar de una biblioteca nos permite concentrarnos más en el trabajo y menos en los detalles que consumen tiempo al intentar generar PDFs, ya sea en .NET.
 
-## Crear (o Generar) documento PDF usando el lenguaje C#
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
-Aspose.PDF para .NET API te permite crear y leer archivos PDF usando C# y VB.NET. La API puede ser utilizada en una variedad de aplicaciones .NET incluyendo WinForms, ASP.NET y varias otras. En este artículo, vamos a mostrar cómo usar Aspose.PDF para API .NET para generar y leer archivos PDF fácilmente en aplicaciones .NET.
+## Crear (o generar) documento PDF usando el lenguaje C#
 
-### Cómo Crear un Archivo PDF Simple
+La API de Aspose.PDF for .NET te permite crear y leer archivos PDF usando C# y VB.NET. La API se puede utilizar en una variedad de aplicaciones .NET, incluyendo WinForms, ASP.NET y varias otras. En este artículo, vamos a mostrar cómo usar la API de Aspose.PDF for .NET para generar y leer archivos PDF fácilmente en aplicaciones .NET.
 
-Para crear un archivo PDF usando C#, se pueden usar los siguientes pasos.
+### Cómo crear un archivo PDF simple
 
-1. Crear un objeto de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-1. Agregar [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) a la colección de [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la página
-1. Guardar el documento PDF resultante
+Para crear un archivo PDF usando C#, se pueden seguir los siguientes pasos.
+
+1. Crear un objeto de la clase [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Agregar un objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) a la colección [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/properties/pages) del objeto Document.
+1. Agregar [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) a la colección [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la página.
+1. Guardar el documento PDF resultante.
 
 ```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateHelloWorldDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
 
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
-
-// Inicializar el objeto documento
-Document document = new Document();
-// Agregar página
-Page page = document.Pages.Add();
-// Agregar texto a la nueva página
-page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("¡Hola Mundo!"));
-// Guardar el PDF actualizado
-document.Save(dataDir + "HelloWorld_out.pdf");
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Add text to new page
+        page.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Hello World!"));
+        // Save PDF document
+        document.Save(dataDir + "HelloWorld_out.pdf");
+    }
+}
 ```
 
 ### Cómo crear un documento PDF buscable
 
-Aspose.PDF para .NET ofrece la característica de crear así como manipular documentos PDF existentes.
-Aspose.PDF para .NET proporciona la funcionalidad para crear así como manipular documentos PDF existentes.
+Aspose.PDF for .NET proporciona la función para crear y manipular documentos PDF existentes. Al agregar elementos de texto dentro del archivo PDF, el PDF resultante es buscable. Sin embargo, si estamos convirtiendo una imagen que contiene texto a un archivo PDF, el contenido dentro del PDF no es buscable. Sin embargo, como solución alternativa, podemos usar OCR sobre el archivo resultante, para que se vuelva buscable.
 
-La lógica especificada a continuación reconoce texto en imágenes PDF. Para el reconocimiento puedes usar soportes de OCR externos que sigan el estándar HOCR. Para propósitos de prueba, hemos utilizado el OCR de Google tesseract gratuito. Por lo tanto, primero necesitas instalar Tesseract-OCR en tu sistema, y tendrás la aplicación de consola tesseract.
+Esta lógica especificada a continuación reconoce texto para imágenes PDF. Para el reconocimiento, puedes usar soportes externos de OCR que cumplan con el estándar HOCR. Para fines de prueba, hemos utilizado un OCR gratuito de Google Tesseract. Por lo tanto, primero necesitas instalar Tesseract-OCR en tu sistema, y tendrás la aplicación de consola de Tesseract.
 
-A continuación se presenta el código completo para lograr este requisito:
+El siguiente es el código completo para cumplir con este requisito:
 
 ```csharp
-using System;
-
-namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateSearchableDocument()
 {
-    class ExampleCreateDocument
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchableDocument.pdf"))
     {
-        private const string _dataDir = "C:\\Samples";
-        public static void CreateSearchableDocuments(string file)
+        document.Convert(CallBackGetHocr);
+
+        // Save PDF document
+        document.Save(dataDir + "SearchableDocument_out.pdf");
+    }
+}
+
+private static string CallBackGetHocr(System.Drawing.Image img)
+{
+    var tmpFile = Path.GetTempFileName();
+    try
+    {
+        using (var bmp = new System.Drawing.Bitmap(img))
         {
-            Aspose.Pdf.Document doc = new Aspose.Pdf.Document(file);
-            bool convertResult = false;
-            try
-            {
-                convertResult = doc.Convert(CallBackGetHocr);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            doc.Save(file);
-            doc.Dispose();
+            bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
         }
 
-        static string CallBackGetHocr(System.Drawing.Image img)
+        var inputFile = string.Concat('"', tmpFile, '"');
+        var outputFile = string.Concat('"', tmpFile, '"');
+        var arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
+        var tesseractProcessName = RunExamples.GetTesseractExePath();
+
+        var psi = new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
         {
-            string tmpFile = System.IO.Path.GetTempFileName();
-            try
-            {
-                System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(img);
+            UseShellExecute = true,
+            CreateNoWindow = true,
+            WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
+            WorkingDirectory = Path.GetDirectoryName(tesseractProcessName)
+        };
 
-                bmp.Save(tmpFile, System.Drawing.Imaging.ImageFormat.Bmp);
-                string inputFile = string.Concat('"', tmpFile, '"');
-                string outputFile = string.Concat('"', tmpFile, '"');
-                string arguments = string.Concat(inputFile, " ", outputFile, " -l eng hocr");
-                string tesseractProcessName = @"C:\Program Files\Tesseract-OCR\Tesseract.exe";
+        var p = new System.Diagnostics.Process
+        {
+            StartInfo = psi
+        };
+        p.Start();
+        p.WaitForExit();
 
-                System.Diagnostics.ProcessStartInfo psi =
-                    new System.Diagnostics.ProcessStartInfo(tesseractProcessName, arguments)
-                    {
-                        UseShellExecute = true,
-                        CreateNoWindow = true,
-                        WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
-                        WorkingDirectory = System.IO.Path.GetDirectoryName(tesseractProcessName)
-                    };
-
-                System.Diagnostics.Process p = new System.Diagnostics.Process
-                {
-                    StartInfo = psi
-                };
-                p.Start();
-                p.WaitForExit();
-
-                System.IO.StreamReader streamReader = new System.IO.StreamReader(tmpFile + ".hocr");
-                string text = streamReader.ReadToEnd();
-                streamReader.Close();
-
-                return text;
-            }
-            finally
-            {
-                if (System.IO.File.Exists(tmpFile))
-                    System.IO.File.Delete(tmpFile);
-                if (System.IO.File.Exists(tmpFile + ".hocr"))
-                    System.IO.File.Delete(tmpFile + ".hocr");
-            }
+        using (var streamReader = new StreamReader(tmpFile + ".hocr"))
+        {
+            string text = streamReader.ReadToEnd();
+            return text;
+        }
+    }
+    finally
+    {
+        if (File.Exists(tmpFile))
+        {
+            File.Delete(tmpFile);
+        }
+        if (File.Exists(tmpFile + ".hocr"))
+        {
+            File.Delete(tmpFile + ".hocr");
         }
     }
 }
 ```
 
+### Cómo crear un PDF accesible usando funciones de bajo nivel
+
+Este fragmento de código trabaja con un documento PDF y su contenido etiquetado, utilizando una biblioteca Aspose.PDF para procesarlo.
+
+El ejemplo crea un nuevo elemento span en el contenido etiquetado de la primera página de un PDF, encuentra todos los elementos BDC y los asocia con el span. El documento modificado se guarda luego.
+
+Puedes crear una declaración bdc especificando mcid, lang y texto de expansión usando el objeto BDCProperties:
+
+```cs
+var bdc = new Aspose.Pdf.Operators.BDC("P", new Aspose.Pdf.Facades.BDCProperties(1, "de", "Hallo, welt!"));
+```
+
+Después de crear el árbol de estructura, es posible vincular el operador BDC al elemento especificado de la estructura con el método Tag en el objeto del elemento:
+
+```cs
+Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
+span.Tag(bdc);
+```
+
+Pasos para crear un PDF accesible:
+
+1. Cargar el documento PDF.
+1. Acceder al contenido etiquetado.
+1. Crear un elemento Span.
+1. Agregar Span al elemento raíz.
+1. Iterar sobre el contenido de la página.
+1. Verificar elementos BDC y etiquetarlos.
+1. Guardar el documento modificado.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAnAccessibleDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_QuickStart();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "tourguidev2_gb_tags.pdf"))
+    {
+        // Access tagged content
+        Aspose.Pdf.Tagged.ITaggedContent content = document.TaggedContent;
+        // Create a span element
+        Aspose.Pdf.LogicalStructure.SpanElement span = content.CreateSpanElement();
+        // Append span to root element
+        content.RootElement.AppendChild(span);
+        // Iterate over page contents
+        foreach (var op in document.Pages[1].Contents)
+        {
+            var bdc = op as Aspose.Pdf.Operators.BDC;
+            if (bdc != null)
+            {
+                span.Tag(bdc);
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "AccessibleDocument_out.pdf");
+    }
+}
+```
+
+Este código modifica un PDF creando un elemento span dentro del contenido etiquetado del documento y etiquetando contenido específico (operaciones BDC) de la primera página con este span. El PDF modificado se guarda luego en un nuevo archivo.
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -212,21 +279,21 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -237,7 +304,7 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -249,5 +316,3 @@ namespace Aspose.Pdf.Examples.Advanced.WorkingWithDocuments
     }
 }
 </script>
-```
-

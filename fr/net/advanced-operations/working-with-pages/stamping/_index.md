@@ -1,10 +1,12 @@
 ---
-title: Stamping with Aspose.PDF using C#
-linktitle: Stamping
+title: Tamponnage avec Aspose.PDF en C#
+linktitle: Tamponnage
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 120
 url: /fr/net/stamping/
-description: Cette section décrit comment ajouter des timbres d'image et des timbres de texte à une page PDF.
+description: Cette section décrit comment ajouter des tampons d'image et des tampons de texte à une page PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Stamping with Aspose.PDF using C#",
-    "alternativeHeadline": "How to add Image Stamp to PDF",
+    "headline": "Working with PDF Pages in C#",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "Découvrez les capacités avancées de **Aspose.PDF for .NET** pour gérer les pages PDF, y compris l'ajout, le déplacement et la suppression de pages avec précision. Cette fonctionnalité permet aux utilisateurs d'améliorer leurs documents PDF en incorporant des en-têtes, des pieds de page, des filigranes et des tailles de page personnalisées, le tout via un code C# intuitif. Optimisez vos flux de travail documentaires avec des fonctionnalités de manipulation et de personnalisation PDF sans faille.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, pdf stamp, image stamp",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "pdf, add pages, rotate pages, delete pages, add watermarks, page numbering, crop pages, Aspose.PDF for .NET",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -66,22 +69,23 @@ sitemap:
             }
         ]
     },
-    "url": "/net/stamping/",
+    "url": "/net/working-with-pages/",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/net/stamping/"
+        "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cette section décrit comment ajouter des timbres d'image et des timbres de texte à une page PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs et développeurs avancés."
 }
 </script>
-Un tampon dans un document PDF est analogue à l'application d'un tampon en caoutchouc sur un document papier.
-Le tampon dans le fichier PDF fournit des informations supplémentaires pour le fichier PDF, telles que pour protéger le fichier PDF afin qu'il ne soit pas utilisé par d'autres et pour confirmer la sécurité du contenu du fichier PDF. **Aspose.PDF pour .NET** permet d'ajouter un tampon d'image ou de texte dans votre document PDF.
+
+Un tampon dans un document PDF est analogue à l'application d'un tampon en caoutchouc sur un document papier. Le tampon dans le fichier PDF fournit des informations supplémentaires pour le fichier PDF, telles que la protection du fichier PDF contre une utilisation par d'autres et la confirmation de la sécurité du contenu du fichier PDF. **Aspose.PDF for .NET** permet d'ajouter un tampon d'image ou de texte dans votre document PDF.
 
 Consultez les sections suivantes pour apprendre à ajouter un tampon avec C# :
 
-- [Ajouter des tampons d'image dans la page PDF](/pdf/fr/net/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image comme fond de votre fichier PDF.
-- [Ajouter des tampons de texte dans le fichier PDF](/pdf/fr/net/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte de trait comme tampon dans le fichier PDF.
+- [Ajouter des tampons d'image dans la page PDF](/pdf/fr/net/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image en arrière-plan de votre fichier PDF.
+- [Ajouter des tampons de texte dans le fichier PDF](/pdf/fr/net/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte de contour comme tampon dans le fichier PDF.
+- [Tampons de page dans le fichier PDF](/pdf/fr/net/page-stamps-in-the-pdf-file/) - ajouter un tampon de page au document PDF en utilisant la classe PdfPageStamp.
 
 <script type="application/ld+json">
 {
@@ -146,4 +150,3 @@ Consultez les sections suivantes pour apprendre à ajouter un tampon avec C# :
     }
 }
 </script>
-

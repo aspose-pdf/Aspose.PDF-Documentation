@@ -2,39 +2,107 @@
 title: Как запустить Aspose.PDF для .NET 6 в Docker
 linktitle: Использование Aspose.PDF для .NET 6 в Docker
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/docker/dotnet6/
-description: Интегрируйте функциональность Aspose.PDF в ваше приложение с использованием контейнеров Docker Linux или Windows
-lastmod: "2024-01-21"
+description: Интегрируйте функциональность Aspose.PDF в приложение .NET 6 с помощью контейнеров Docker Linux или Windows
+lastmod: "2024-08-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How to run Aspose.PDF for .NET 6 in Docker",
+    "alternativeHeadline": "Run Aspose.PDF in .NET 6 with Docker Support",
+    "abstract": "Функция позволяет разработчикам легко интегрировать функциональность Aspose.PDF в приложения .NET 6, используя контейнеры Docker Linux или Windows. Эта функция упрощает процесс создания PDF-документов непосредственно из приложений ASP.NET Core, повышая эффективность управления документами в облачных средах",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1067",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/docker/dotnet6/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/docker/dotnet6/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+}
+</script>
 
-## Предварительные требования
+## Необходимые условия
 
-Следующие примеры были протестированы с:
+Следующие примеры протестированы с использованием:
 
-* Docker v.20.10.11 и Docker Desktop 4.3.2
-* Visual Studio 2022 Community Edition v.17.0.5
-* В представленном ниже примере используется .NET 6 SDK.
-* Aspose.PDF для .NET v.22.01
+* Docker версии 20.10.11 и Docker Desktop версии 4.3.2.
+* Visual Studio 2022 Community Edition версии 17.0.5.
+* В приведённом ниже примере используется .NET 6 SDK.
+* Версия Aspose.PDF for .NET — 22.01.
 
-## Создание примера приложения для Docker Linux Container
+## Создание примера приложения для контейнера Docker Linux
 
-1. Запустите Visual Studio 2022 и выберите шаблон **ASP.NET Core Web App (Model-View-Controller)**, затем нажмите **Далее**
-1. В окне **Настройка вашего нового проекта** установите желаемое имя проекта и местоположение, затем нажмите **Далее**
-1. В окне **Дополнительная информация** выберите **.NET 6.0 (Долгосрочная поддержка)** и включите поддержку Docker. Также можно установить **ОС Docker** на Linux, если это необходимо.
-1. Выберите **Инструменты->Nuget Package Manager->Консоль управления пакетами** и установите **Aspose.PDF для .NET** (используйте команду `Install-Package Aspose.PDF`)
+1. Запустите Visual Studio 2022 и выберите шаблон **ASP.NET Core Web App (Model-View-Controller)**, нажмите **Далее**.
+1. В окне **Настройка нового проекта** задайте желаемое имя проекта и расположение, затем нажмите **Далее**.
+1. В окне **Дополнительная информация** выберите **.NET 6.0 (долгосрочная поддержка)** и включите поддержку Docker. При необходимости вы также можете установить **Docker OS** на Linux.
+1. Нажмите **Создать**.
+1. Выберите **Инструменты -> Диспетчер пакетов Nuget -> Консоль диспетчера пакетов** и установите **Aspose.PDF for .NET** (используйте команду `Install-Package Aspose.PDF`).
 
-### Генерация PDF документа с использованием ASP.NET Core Web App в Linux контейнере
+### Создание PDF-документа с помощью веб-приложения ASP.NET Core в контейнере Linux
 
-Мы будем использовать код из **Сложного примера** в этом приложении. Пожалуйста, перейдите по [этой ссылке](/pdf/ru/net/complex-pdf-example/) для получения более подробной информации.
+В этом приложении мы будем использовать код из **Сложного примера**. Подробную информацию смотрите по [этой ссылке](/pdf/ru/net/complex-pdf-example/).
 
-1. Создайте папку `images` в папке `wwwroot` и поместите туда изображение `logo.png`. Вы можете скачать это изображение [здесь](/pdf/ru/net/docker/logo.png)
-1. Замените код в `HomeController.cs` на следующий фрагмент (обратите внимание, что у вас может быть другое пространство имен):
+1. Создайте папку `images` в папке `wwwroot` и поместите изображение `logo.png`. Вы можете скачать это изображение [здесь](/pdf/ru/net/docker/logo.png).
+1. Замените код в `HomeController.cs` следующим фрагментом (обратите внимание, что у вас может быть другое пространство имён):
 
-Этот фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```cs
 using Aspose.Pdf;
@@ -60,80 +128,82 @@ namespace Docker.Linux.Demo01.Controllers
         {
             return View();
         }
+        
         public IActionResult Generate()
         {
             const string file_type = "application/pdf";
             const string file_name = "sample.pdf";
-            var memoryStream = new System.IO.MemoryStream();
+            var memoryStream = new MemoryStream();
 
             _logger.LogInformation("Start");
-            // Инициализация объекта документа
-            var document = new Document();
-            // Добавление страницы
-            var page = document.Pages.Add();
-
-            // Добавление изображения
-            var imageFileName = System.IO.Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
-            page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
-
-            // -------------------------------------------------------------
-            // Добавление заголовка
-            var header = new TextFragment("Новые маршруты паромов осенью 2020");
-            header.TextState.Font = FontRepository.FindFont("Arial");
-            header.TextState.FontSize = 24;
-            header.HorizontalAlignment = HorizontalAlignment.Center;
-            header.Position = new Position(130, 720);
-            page.Paragraphs.Add(header);
-
-            // Добавление описания
-            var descriptionText = "Посетители должны покупать билеты онлайн, и количество билетов ограничено 5,000 в день. Сервис паромов работает с половинной загрузкой и по сокращенному расписанию. Ожидайте очередей.";
-            var description = new TextFragment(descriptionText);
-            description.TextState.Font = FontRepository.FindFont("Times New Roman");
-            description.TextState.FontSize = 14;
-            description.HorizontalAlignment = HorizontalAlignment.Left;
-            page.Paragraphs.Add(description);
-
-
-            // Добавление таблицы
-            var table = new Table
+            // Initialize document object
+            using (var document = new Aspose.Pdf.Document())
             {
-                ColumnWidths = "200",
-                Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
-                DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
-                DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
-                Margin =
+                // Add page
+                var page = document.Pages.Add();
+
+                // Add image
+                var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
+                page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
+
+                // -------------------------------------------------------------
+                // Add Header
+                var header = new TextFragment("New ferry routes in Fall 2020");
+                header.TextState.Font = FontRepository.FindFont("Arial");
+                header.TextState.FontSize = 24;
+                header.HorizontalAlignment = HorizontalAlignment.Center;
+                header.Position = new Position(130, 720);
+                page.Paragraphs.Add(header);
+
+                // Add description
+                var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
+                var description = new TextFragment(descriptionText);
+                description.TextState.Font = FontRepository.FindFont("Times New Roman");
+                description.TextState.FontSize = 14;
+                description.HorizontalAlignment = HorizontalAlignment.Left;
+                page.Paragraphs.Add(description);
+
+                // Add table
+                var table = new Table
                 {
-                    Top = 10,
-                    Bottom = 10
-                },
-                DefaultCellTextState =
+                    ColumnWidths = "200",
+                    Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
+                    DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
+                    DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
+                    Margin =
+                    {
+                        Top = 10,
+                        Bottom = 10
+                    },
+                    DefaultCellTextState =
+                    {
+                        Font =  FontRepository.FindFont("Helvetica")
+                    }
+                };
+
+                var headerRow = table.Rows.Add();
+                headerRow.Cells.Add("Departs City");
+                headerRow.Cells.Add("Departs Island");
+                foreach (Cell headerRowCell in headerRow.Cells)
                 {
-                    Font =  FontRepository.FindFont("Helvetica")
+                    headerRowCell.BackgroundColor = Color.LightGray;
+                    headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
                 }
-            };
 
-            var headerRow = table.Rows.Add();
-            headerRow.Cells.Add("Город отправления");
-            headerRow.Cells.Add("Остров отправления");
-            foreach (Cell headerRowCell in headerRow.Cells)
-            {
-                headerRowCell.BackgroundColor = Color.LightGray;
-                headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
+                var time = new TimeSpan(6, 0, 0);
+                var incTime = new TimeSpan(0, 30, 0);
+                for (int i = 0; i < 10; i++)
+                {
+                    var dataRow = table.Rows.Add();
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                    time = time.Add(incTime);
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                }
+
+                page.Paragraphs.Add(table);
+
+                document.Save(memoryStream);
             }
-
-            var time = new TimeSpan(6, 0, 0);
-            var incTime = new TimeSpan(0, 30, 0);
-            for (int i = 0; i < 10; i++)
-            {
-                var dataRow = table.Rows.Add();
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-                time = time.Add(incTime);
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-            }
-
-            page.Paragraphs.Add(table);
-
-            document.Save(memoryStream);
             _logger.LogInformation("Finish");
             return File(memoryStream, file_type, file_name);
         }
@@ -151,7 +221,8 @@ namespace Docker.Linux.Demo01.Controllers
     }
 }
 ```
-1. Замените содержимое в `Dockerfile` следующим содержимым:
+
+1. Замените содержимое файла `Dockerfile` следующим содержимым:
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
@@ -180,20 +251,20 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 ```
 
-## Создайте пример приложения для Docker Windows контейнера
+## Создание образца приложения для контейнера Windows Docker
 
-1.
-1. В окне **Настройка вашего нового проекта** установите желаемое имя проекта и местоположение, затем нажмите **Далее**
-1. В окне **Дополнительная информация** выберите **.NET 6.0 (Долгосрочная поддержка)** и включите поддержку Docker. При необходимости вы также можете установить **Docker OS** на `Windows`.
-1. Нажмите **Создать**
-1. Выберите **Инструменты->Менеджер пакетов Nuget->Консоль менеджера пакетов** и установите **Aspose.PDF для .NET** (используйте команду `Install-Package Aspose.PDF`)
+1. Запустите Visual Studio 2022 и выберите шаблон **ASP.NET Core Web App (Model-View-Controller)**, нажмите **Далее**.
+1. В окне **Настроить новый проект** задайте нужное имя проекта и местоположение, затем нажмите **Далее**.
+1. В окне **Дополнительные сведения** выберите **.NET 6.0 (Долгосрочная поддержка)** и включите поддержку Docker. При необходимости можно также установить для **Docker OS** значение Windows.
+1. Нажмите **Создать**.
+1. Выберите **Инструменты -> Менеджер пакетов Nuget -> Консоль менеджера пакетов** и установите **Aspose.PDF for .NET** (используйте команду `Install-Package Aspose.PDF`).
 
-### Создание PDF-документа с использованием ASP.NET Core Web App в контейнере Windows
+### Генерация PDF-документа с помощью веб-приложения ASP.NET Core в Windows-контейнере
 
 Мы будем использовать тот же код, что и в предыдущем примере.
 
-1. Создайте папку `images` в папке `wwwroot` и поместите туда изображение `logo.png`. Вы можете скачать это изображение [здесь](/pdf/ru/net/docker/logo.png)
-1. Замените код в `HomeController.cs` на приведенный выше фрагмент.
+1. Создайте папку `images` в папке `wwwroot` и поместите в неё изображение `logo.png`. Скачать это изображение можно [здесь](/pdf/ru/net/docker/logo.png).
+1. Замените код в файле `HomeController.cs` приведённым выше фрагментом.
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
@@ -217,4 +288,3 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Docker.Windows.Demo01.dll"]
 ```
-

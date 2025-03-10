@@ -1,10 +1,12 @@
 ---
-title: Добавление вложения в документ PDF
-linktitle: Добавление вложения в документ PDF
+title: Добавление вложения в PDF-документ
+linktitle: Добавление вложения в PDF-документ
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/add-attachment-to-pdf-document/
-description: Эта страница описывает, как добавить вложение в файл PDF с помощью библиотеки Aspose.PDF для .NET
+description: На этой странице описывается, как добавить вложение в PDF-файл с помощью библиотеки Aspose.PDF для .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Добавление вложения в документ PDF",
-    "alternativeHeadline": "Как добавить вложения в PDF",
+    "headline": "Adding Attachment to a PDF document",
+    "alternativeHeadline": "Easily Attach Files to Your PDF Documents",
+    "abstract": "Aspose.PDF для .NET теперь предлагает эффективный способ улучшить ваши PDF-документы, позволяя пользователям легко добавлять различные вложения, включая текстовые файлы и изображения. Эта функция упрощает процесс встраивания дополнительной информации в PDF, обеспечивая быстрый доступ к важным данным в ваших документах. Оптимизируйте управление документами с помощью этой мощной функции и улучшите взаимодействие с пользователем, храня все необходимые ресурсы вместе.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, вложения в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Adding attachments to PDF, PDF file types, Aspose.PDF for .NET, FileSpecification object, Document object, EmbeddedFiles collection, PDF document manipulation, C# PDF library, PDF attachment functionality, Aspose.Drawing integration",
+    "wordcount": "309",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,39 +74,43 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-attachment-to-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Эта страница описывает, как добавить вложение в файл PDF с помощью библиотеки Aspose.PDF для .NET"
+    "dateModified": "2024-11-25",
+    "description": "Эта страница описывает, как добавить вложение к PDF-файлу с помощью библиотеки Aspose.PDF для .NET."
 }
 </script>
-Вложения могут содержать разнообразную информацию и быть различных типов файлов. Эта статья объясняет, как добавить вложение к файлу PDF.
 
-Следующий фрагмент кода также работает с новым графическим интерфейсом [Aspose.Drawing](/pdf/ru/net/drawing/).
+Вложения могут содержать широкий спектр информации и быть различных типов файлов. В этой статье объясняется, как добавить вложение в PDF-файл.
+
+Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 1. Создайте новый проект на C#.
-1. Добавьте ссылку на Aspose.PDF DLL.
+1. Добавьте ссылку на DLL Aspose.PDF.
 1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Создайте объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) с файлом, который вы добавляете, и описанием файла.
-1. Добавьте объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) в коллекцию [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document), используя метод Add коллекции.
+1. Создайте объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) с добавляемым файлом и описанием файла.
+1. Добавьте объект [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification) в коллекцию [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) с помощью метода Add коллекции.
 
-Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) содержит все вложения в PDF-файле.
-Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) содержит все вложения в файле PDF.
+Коллекция [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection) содержит все вложения в файле PDF. Следующий фрагмент кода показывает, как добавить вложение в документ PDF.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddEmbeddedFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "AddAttachment.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddAttachment.pdf"))
+    {
+        // Setup new file to be added as attachment
+        Aspose.Pdf.FileSpecification fileSpecification = new Aspose.Pdf.FileSpecification(dataDir + "test.txt", "Sample text file");
 
-// Настройка нового файла для добавления в качестве вложения
-FileSpecification fileSpecification = new FileSpecification(dataDir + "test.txt", "Пример текстового файла");
+        // Add attachment to document's attachment collection
+        document.EmbeddedFiles.Add(fileSpecification);
 
-// Добавить вложение в коллекцию вложений документа
-pdfDocument.EmbeddedFiles.Add(fileSpecification);
-
-// Сохранить обновленный документ
-pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AddAnnotations_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -157,7 +164,7 @@ pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -169,5 +176,3 @@ pdfDocument.Save(dataDir + "AddllAnnotations_out.pdf");
     }
 }
 </script>
-
-

@@ -1,10 +1,12 @@
 ---
-title: Update Links in PDF
-linktitle: Update Links
+title: Memperbarui Tautan di PDF
+linktitle: Memperbarui Tautan
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /id/net/update-links/
-description: Memperbarui tautan dalam PDF secara pemrograman. Panduan ini adalah tentang cara memperbarui tautan dalam PDF dalam bahasa C#.
+description: Memperbarui tautan di PDF secara programatik. Panduan ini menjelaskan cara memperbarui tautan di PDF dalam bahasa C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Update Links in PDF",
-    "alternativeHeadline": "How to update Links in PDF",
+    "alternativeHeadline": "Programmatically Modify PDF Links Using C#",
+    "abstract": "Fitur baru Memperbarui Tautan di PDF memungkinkan pengguna untuk memodifikasi hyperlink dalam dokumen PDF secara programatik menggunakan C#. Fungsionalitas ini memungkinkan pengguna untuk mengarahkan tautan ke halaman tertentu, alamat web eksternal, atau bahkan file PDF lainnya, meningkatkan interaktivitas dan kegunaan dokumen digital. Dengan menyederhanakan proses manajemen tautan, fitur ini sangat ideal bagi pengembang yang ingin mengoptimalkan aplikasi PDF mereka.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, update link in pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Update links in PDF, C#, LinkAnnotation, GoToAction, XYZExplicitDestination, GoToURIAction, update hyperlink, PDF manipulation",
+    "wordcount": "797",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,130 +74,287 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/update-links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Memperbarui tautan dalam PDF secara pemrograman. Panduan ini adalah tentang cara memperbarui tautan dalam PDF dalam bahasa C#."
+    "dateModified": "2024-11-25",
+    "description": "Memperbarui tautan di PDF secara programatik. Panduan ini menjelaskan cara memperbarui tautan di PDF dalam bahasa C#."
 }
 </script>
-Potongan kode berikut ini juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
-## Perbarui Tautan dalam File PDF
+Potongan kode berikut juga bekerja dengan [Aspose.PDF.Drawing](/pdf/id/net/drawing/) pustaka.
 
-Seperti yang dibahas dalam Menambahkan Hyperlink dalam File PDF, kelas [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) memungkinkan penambahan tautan dalam file PDF. Ada juga kelas serupa yang digunakan untuk mendapatkan tautan yang ada dari dalam file PDF. Gunakan ini jika Anda perlu memperbarui tautan yang sudah ada. Untuk memperbarui tautan yang ada:
+## Memperbarui Tautan di File PDF
+
+Seperti yang dibahas dalam Menambahkan Hyperlink di File PDF, kelas [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) memungkinkan untuk menambahkan tautan di file PDF. Ada juga kelas serupa yang digunakan untuk mendapatkan tautan yang ada dari dalam file PDF. Gunakan ini jika Anda perlu memperbarui tautan yang ada. Untuk memperbarui tautan yang ada:
 
 1. Muat file PDF.
-1. Pergi ke halaman tertentu dalam file PDF.
+1. Pergi ke halaman tertentu di file PDF.
 1. Tentukan tujuan tautan menggunakan properti Destination dari objek [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction).
 1. Halaman tujuan ditentukan menggunakan konstruktor [XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination).
 
 ### Atur Target Tautan ke Halaman di Dokumen yang Sama
 
-Potongan kode berikut menunjukkan cara memperbarui tautan dalam file PDF dan menetapkan targetnya ke halaman kedua dari dokumen.
-Potongan kode berikut ini menunjukkan cara memperbarui tautan dalam file PDF dan mengatur targetnya ke halaman kedua dokumen.
+Potongan kode berikut menunjukkan cara memperbarui tautan di file PDF dan mengatur targetnya ke halaman kedua dokumen.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Memuat file PDF
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-// Dapatkan anotasi tautan pertama dari halaman pertama dokumen
-LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
-// Modifikasi tautan: mengubah tujuan tautan
-GoToAction goToAction = (GoToAction)linkAnnot.Action;
-// Tentukan tujuan untuk objek tautan
-// Parameter pertama adalah objek dokumen, kedua adalah nomor halaman tujuan.
-// Argumen kelima adalah faktor zoom saat menampilkan halaman yang bersangkutan. Saat menggunakan 2, halaman akan ditampilkan dalam zoom 200%
-goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
-dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
-// Simpan dokumen dengan tautan yang diperbarui
-doc.Save(dataDir);
-```
-### Tetapkan Tujuan Tautan ke Alamat Web
-
-Untuk memperbarui hyperlink agar mengarah ke alamat web, instansiasi objek [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) dan berikan ke properti Action dari LinkAnnotation. Cuplikan kode berikut menunjukkan cara memperbarui tautan dalam file PDF dan mengatur targetnya ke alamat web.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Muat file PDF
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-
-// Dapatkan anotasi tautan pertama dari halaman pertama dokumen
-LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
-// Modifikasi tautan: ubah aksi tautan dan tetapkan target sebagai alamat web
-linkAnnot.Action = new GoToURIAction("www.aspose.com");
-
-dataDir = dataDir + "SetDestinationLink_out.pdf";
-// Simpan dokumen dengan tautan yang diperbarui
-doc.Save(dataDir);
-```
-### Mengatur Target Tautan ke File PDF Lain
-
-Berikut ini adalah potongan kode yang menunjukkan bagaimana memperbarui tautan dalam file PDF dan mengatur targetnya ke file PDF lain.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Muat file PDF
-Document document = new Document(dataDir + "UpdateLinks.pdf");
-
-LinkAnnotation linkAnnot = (LinkAnnotation)document.Pages[1].Annotations[1];
-
-GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.Action;
-// Baris berikut memperbarui destinasi, tidak memperbarui file
-goToR.Destination = new XYZExplicitDestination(2, 0, 0, 1.5);
-// Baris berikut memperbarui file
-goToR.File = new FileSpecification(dataDir +  "input.pdf");
-
-dataDir = dataDir + "SetTargetLink_out.pdf";
-// Simpan dokumen dengan tautan yang diperbarui
-document.Save(dataDir);
-```
-
-### Memperbarui Warna Teks LinkAnnotation
-
-Anotasi tautan tidak mengandung teks.
-Anotasi tautan tidak mengandung teks.
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Muat file PDF
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-foreach (Annotation annotation in doc.Pages[1].Annotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
 {
-    if (annotation is LinkAnnotation)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
-        // Mencari teks di bawah anotasi
-        TextFragmentAbsorber ta = new TextFragmentAbsorber();
-        Rectangle rect = annotation.Rect;
-        rect.LLX -= 10;
-        rect.LLY -= 10;
-        rect.URX += 10;
-        rect.URY += 10;
-        ta.TextSearchOptions = new TextSearchOptions(rect);
-        ta.Visit(doc.Pages[1]);
-        // Mengubah warna teks.
-        foreach (TextFragment tf in ta.TextFragments)
+        // Get the first link annotation from first page of document
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+        // Modification link: change link destination
+        var goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
+
+        // Specify the destination for link object
+        // The first parameter is document object, second is destination page number.
+        // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
+        goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateLinks_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    // Get the first link annotation from first page of document
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+    // Modification link: change link destination
+    var goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
+
+    // Specify the destination for link object
+    // The first parameter is document object, second is destination page number.
+    // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
+    goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateLinks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Atur Tujuan Tautan ke Alamat Web
+
+Untuk memperbarui hyperlink sehingga mengarah ke alamat web, buat objek [GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) dan berikan ke properti Action dari LinkAnnotation. Potongan kode berikut menunjukkan cara memperbarui tautan di file PDF dan mengatur targetnya ke alamat web.
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    {
+        // Get the first link annotation from first page of document
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+        // Modification link: change link action and set target as web address
+        linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
+
+        // Save PDF document
+        document.Save(dataDir + "SetDestinationLink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    // Get the first link annotation from first page of document
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+    // Modification link: change link action and set target as web address
+    linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
+
+    // Save PDF document
+    document.Save(dataDir + "SetDestinationLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Atur Target Tautan ke File PDF Lain
+
+Potongan kode berikut menunjukkan cara memperbarui tautan di file PDF dan mengatur targetnya ke file PDF lain.
+
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    {
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+        var goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
+
+        // Next line update destination, do not update file
+        goToR.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(2, 0, 0, 1.5);
+
+        // Next line update file
+        goToR.File = new Aspose.Pdf.FileSpecification(dataDir + "input.pdf");
+
+        // Save PDF document
+        document.Save(dataDir + "SetTargetLink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+    var goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
+
+    // Next line update destination, do not update file
+    goToR.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(2, 0, 0, 1.5);
+
+    // Next line update file
+    goToR.File = new Aspose.Pdf.FileSpecification(dataDir + "input.pdf");
+
+    // Save PDF document
+    document.Save(dataDir + "SetTargetLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Perbarui Warna Teks LinkAnnotation
+
+Anotasi tautan tidak mengandung teks. Sebaliknya, teks ditempatkan di konten halaman di bawah anotasi. Oleh karena itu, untuk mengubah warna teks, ganti warna teks halaman alih-alih mencoba mengubah warna anotasi. Potongan kode berikut menunjukkan cara memperbarui warna anotasi tautan di file PDF.
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    {
+        foreach (var annotation in document.Pages[1].Annotations)
         {
-            tf.TextState.ForegroundColor = Color.Red;
+            if (annotation is Aspose.Pdf.Annotations.LinkAnnotation)
+            {
+                // Search the text under the annotation
+                var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
+                var rect = annotation.Rect;
+                rect.LLX -= 10;
+                rect.LLY -= 10;
+                rect.URX += 10;
+                rect.URY += 10;
+                ta.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(rect);
+                ta.Visit(document.Pages[1]);
+
+                // Change color of the text.
+                foreach (var textFragment in ta.TextFragments)
+                {
+                    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+                }
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateLinkTextColor_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    foreach (var annotation in document.Pages[1].Annotations)
+    {
+        if (annotation is Aspose.Pdf.Annotations.LinkAnnotation)
+        {
+            // Search the text under the annotation
+            var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
+            var rect = annotation.Rect;
+            rect.LLX -= 10;
+            rect.LLY -= 10;
+            rect.URX += 10;
+            rect.URY += 10;
+            ta.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(rect);
+            ta.Visit(document.Pages[1]);
+
+            // Change color of the text.
+            foreach (var textFragment in ta.TextFragments)
+            {
+                textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+            }
         }
     }
 
+    // Save PDF document
+    document.Save(dataDir + "UpdateLinkTextColor_out.pdf");
 }
-dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
-// Simpan dokumen dengan tautan yang diperbarui
-doc.Save(dataDir);
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF untuk Pustaka .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -216,21 +376,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -241,7 +401,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Pustaka Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -253,5 +413,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

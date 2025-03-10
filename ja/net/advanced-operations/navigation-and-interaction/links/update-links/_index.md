@@ -1,10 +1,12 @@
 ---
-title: PDF内のリンクを更新する
+title: PDF内のリンクを更新
 linktitle: リンクを更新
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/update-links/
-description: PDF内のリンクをプログラムで更新する方法についてのガイドです。このガイドは、C#言語でPDF内のリンクを更新する方法について説明しています。
+description: プログラムでPDF内のリンクを更新します。このガイドはC#言語でPDF内のリンクを更新する方法についてです。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDF内のリンクを更新する",
-    "alternativeHeadline": "PDF内のリンクを更新する方法",
+    "headline": "Update Links in PDF",
+    "alternativeHeadline": "Programmatically Modify PDF Links Using C#",
+    "abstract": "新しいPDF内のリンクを更新する機能により、ユーザーはC#を使用してPDFドキュメント内のハイパーリンクをプログラムで変更できます。この機能により、ユーザーは特定のページ、外部ウェブアドレス、または他のPDFファイルへのリンクを指示でき、デジタルドキュメントのインタラクティブ性と使いやすさが向上します。リンク管理プロセスを簡素化することで、この機能はPDFアプリケーションを最適化しようとする開発者に最適です。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, pdf内のリンクを更新",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "Update links in PDF, C#, LinkAnnotation, GoToAction, XYZExplicitDestination, GoToURIAction, update hyperlink, PDF manipulation",
+    "wordcount": "797",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,130 +74,287 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/update-links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "PDF内のリンクをプログラムで更新する方法についてのガイドです。このガイドは、C#言語でPDF内のリンクを更新する方法について説明しています。"
+    "dateModified": "2024-11-25",
+    "description": "プログラムでPDF内のリンクを更新します。このガイドはC#言語でPDF内のリンクを更新する方法についてです。"
 }
 </script>
-次のコードスニペットも [Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリで動作します。
 
-## PDFファイル内のリンクを更新する
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-PDFファイルにハイパーリンクを追加する場合の議論として、「[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)」クラスを使用してPDFファイルにリンクを追加することができます。PDFファイル内の既存のリンクを取得するために使用される類似のクラスもあります。既存のリンクを更新する必要がある場合はこれを使用します。既存のリンクを更新するには：
+## PDFファイル内のリンクを更新
 
-1. PDFファイルを読み込みます。
-1. PDFファイルの特定のページに移動します。
-1. [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction) オブジェクトのDestinationプロパティを使用してリンク先を指定します。
-1. 目的地のページは、[XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination) コンストラクタを使用して指定されます。
+PDFファイルにリンクを追加するために、[LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)クラスを使用します。また、PDFファイル内の既存のリンクを取得するために使用される類似のクラスもあります。既存のリンクを更新する必要がある場合は、これを使用します。既存のリンクを更新するには：
 
-### リンクターゲットを同じドキュメントのページに設定する
+1. PDFファイルをロードします。
+1. PDFファイル内の特定のページに移動します。
+1. [GoToAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoaction)オブジェクトのDestinationプロパティを使用してリンクの宛先を指定します。
+1. 宛先ページは、[XYZExplicitDestination](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/xyzexplicitdestination)コンストラクタを使用して指定します。
+
+### 同じドキュメント内のページにリンクターゲットを設定
 
 次のコードスニペットは、PDFファイル内のリンクを更新し、そのターゲットをドキュメントの2ページ目に設定する方法を示しています。
-以下のコードスニペットは、PDFファイルのリンクを更新し、そのターゲットをドキュメントの2ページ目に設定する方法を示しています。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// PDFファイルを読み込む
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-// ドキュメントの最初のページから最初のリンク注釈を取得する
-LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
-// リンクの変更：リンク先を変更する
-GoToAction goToAction = (GoToAction)linkAnnot.Action;
-// リンクオブジェクトの目的地を指定する
-// 第一パラメータはドキュメントオブジェクト、第二は目的地のページ番号です。
-// 5番目の引数は、該当ページを表示する際のズームファクターです。2を使用すると、ページが200％のズームで表示されます
-goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
-dataDir = dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf";
-// 更新されたリンクを含むドキュメントを保存する
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    {
+        // Get the first link annotation from first page of document
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+        // Modification link: change link destination
+        var goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
+
+        // Specify the destination for link object
+        // The first parameter is document object, second is destination page number.
+        // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
+        goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateLinks_out.pdf");
+    }
+}
 ```
-### ウェブアドレスへのリンク先を設定する
+{{< /tab >}}
 
-ウェブアドレスを指すようにハイパーリンクを更新するには、[GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction) オブジェクトをインスタンス化して、LinkAnnotationのActionプロパティに渡します。以下のコードスニペットは、PDFファイル内のリンクを更新し、そのターゲットをウェブアドレスに設定する方法を示しています。
-
+{{< tab tabNum="2" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET にアクセスしてください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// PDFファイルをロードする
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-// ドキュメントの最初のページから最初のリンク注釈を取得する
-LinkAnnotation linkAnnot = (LinkAnnotation)doc.Pages[1].Annotations[1];
-// リンクの変更: リンクアクションを変更し、ターゲットをウェブアドレスに設定する
-linkAnnot.Action = new GoToURIAction("www.aspose.com");
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
 
-dataDir = dataDir + "SetDestinationLink_out.pdf";
-// リンクを更新したドキュメントを保存する
-doc.Save(dataDir);
+    // Get the first link annotation from first page of document
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+    // Modification link: change link destination
+    var goToAction = (Aspose.Pdf.Annotations.GoToAction)linkAnnot.Action;
+
+    // Specify the destination for link object
+    // The first parameter is document object, second is destination page number.
+    // The 5ht argument is zoom factor when displaying the respective page. When using 2, the page will be displayed in 200% zoom
+    goToAction.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(1, 1, 2, 2);
+
+    // Save PDF document
+    document.Save(dataDir + "UpdateLinks_out.pdf");
+}
 ```
-### PDFファイルへのリンクターゲットを設定
+{{< /tab >}}
+{{< /tabs >}}
+
+### リンクの宛先をウェブアドレスに設定
+
+ハイパーリンクをウェブアドレスを指すように更新するには、[GoToURIAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotouriaction)オブジェクトをインスタンス化し、それをLinkAnnotationのActionプロパティに渡します。次のコードスニペットは、PDFファイル内のリンクを更新し、そのターゲットをウェブアドレスに設定する方法を示しています。
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    {
+        // Get the first link annotation from first page of document
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+        // Modification link: change link action and set target as web address
+        linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
+
+        // Save PDF document
+        document.Save(dataDir + "SetDestinationLink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    // Get the first link annotation from first page of document
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+
+    // Modification link: change link action and set target as web address
+    linkAnnot.Action = new Aspose.Pdf.Annotations.GoToURIAction("www.aspose.com");
+
+    // Save PDF document
+    document.Save(dataDir + "SetDestinationLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### リンクターゲットを別のPDFファイルに設定
 
 次のコードスニペットは、PDFファイル内のリンクを更新し、そのターゲットを別のPDFファイルに設定する方法を示しています。
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパス。
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// PDFファイルをロードする
-Document document = new Document(dataDir + "UpdateLinks.pdf");
-
-LinkAnnotation linkAnnot = (LinkAnnotation)document.Pages[1].Annotations[1];
-
-GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.Action;
-// 次の行は目的地を更新しますが、ファイルは更新しません
-goToR.Destination = new XYZExplicitDestination(2, 0, 0, 1.5);
-// 次の行はファイルを更新します
-goToR.File = new FileSpecification(dataDir +  "input.pdf");
-
-dataDir = dataDir + "SetTargetLink_out.pdf";
-// 更新されたリンクでドキュメントを保存
-document.Save(dataDir);
-```
-
-### LinkAnnotationのテキスト色を更新
-
-リンク注釈にはテキストが含まれていません。
-リンク注釈にテキストが含まれていません。
-
-```csharp
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-.NET をご覧ください。
-// ドキュメントディレクトリへのパスです。
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// PDFファイルを読み込む
-Document doc = new Document(dataDir + "UpdateLinks.pdf");
-foreach (Annotation annotation in doc.Pages[1].Annotations)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
 {
-    if (annotation is LinkAnnotation)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
     {
-        // 注釈の下のテキストを検索する
-        TextFragmentAbsorber ta = new TextFragmentAbsorber();
-        Rectangle rect = annotation.Rect;
-        rect.LLX -= 10;
-        rect.LLY -= 10;
-        rect.URX += 10;
-        rect.URY += 10;
-        ta.TextSearchOptions = new TextSearchOptions(rect);
-        ta.Visit(doc.Pages[1]);
-        // テキストの色を変更する。
-        foreach (TextFragment tf in ta.TextFragments)
+        var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+        var goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
+
+        // Next line update destination, do not update file
+        goToR.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(2, 0, 0, 1.5);
+
+        // Next line update file
+        goToR.File = new Aspose.Pdf.FileSpecification(dataDir + "input.pdf");
+
+        // Save PDF document
+        document.Save(dataDir + "SetTargetLink_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    var linkAnnot = (Aspose.Pdf.Annotations.LinkAnnotation)document.Pages[1].Annotations[1];
+    var goToR = (Aspose.Pdf.Annotations.GoToRemoteAction)linkAnnot.Action;
+
+    // Next line update destination, do not update file
+    goToR.Destination = new Aspose.Pdf.Annotations.XYZExplicitDestination(2, 0, 0, 1.5);
+
+    // Next line update file
+    goToR.File = new Aspose.Pdf.FileSpecification(dataDir + "input.pdf");
+
+    // Save PDF document
+    document.Save(dataDir + "SetTargetLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### LinkAnnotationのテキストカラーを更新
+
+リンク注釈にはテキストが含まれていません。代わりに、テキストは注釈の下のページの内容に配置されます。したがって、テキストの色を変更するには、注釈の色を変更しようとするのではなく、ページテキストの色を置き換えます。次のコードスニペットは、PDFファイル内のリンク注釈の色を更新する方法を示しています。
+
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf"))
+    {
+        foreach (var annotation in document.Pages[1].Annotations)
         {
-            tf.TextState.ForegroundColor = Color.Red;
+            if (annotation is Aspose.Pdf.Annotations.LinkAnnotation)
+            {
+                // Search the text under the annotation
+                var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
+                var rect = annotation.Rect;
+                rect.LLX -= 10;
+                rect.LLY -= 10;
+                rect.URX += 10;
+                rect.URY += 10;
+                ta.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(rect);
+                ta.Visit(document.Pages[1]);
+
+                // Change color of the text.
+                foreach (var textFragment in ta.TextFragments)
+                {
+                    textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+                }
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "UpdateLinkTextColor_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void UpdateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "UpdateLinks.pdf");
+
+    foreach (var annotation in document.Pages[1].Annotations)
+    {
+        if (annotation is Aspose.Pdf.Annotations.LinkAnnotation)
+        {
+            // Search the text under the annotation
+            var ta = new Aspose.Pdf.Text.TextFragmentAbsorber();
+            var rect = annotation.Rect;
+            rect.LLX -= 10;
+            rect.LLY -= 10;
+            rect.URX += 10;
+            rect.URY += 10;
+            ta.TextSearchOptions = new Aspose.Pdf.Text.TextSearchOptions(rect);
+            ta.Visit(document.Pages[1]);
+
+            // Change color of the text.
+            foreach (var textFragment in ta.TextFragments)
+            {
+                textFragment.TextState.ForegroundColor = Aspose.Pdf.Color.Red;
+            }
         }
     }
 
+    // Save PDF document
+    document.Save(dataDir + "UpdateLinkTextColor_out.pdf");
 }
-dataDir = dataDir + "UpdateLinkTextColor_out.pdf";
-// リンクを更新したドキュメントを保存する
-doc.Save(dataDir);
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF for .NETライブラリ",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -216,21 +376,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "販売",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -241,7 +401,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -253,5 +413,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

@@ -1,10 +1,12 @@
 ---
-title: العمل مع المحفظة في ملف PDF
+title: العمل مع المحفظة في PDF
 linktitle: المحفظة
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ar/net/portfolio/
-description: كيفية إنشاء محفظة PDF باستخدام C#. يجب استخدام ملف Microsoft Excel ومستند Word وملف صورة لإنشاء محفظة PDF.
+description: كيفية إنشاء محفظة PDF باستخدام C#. يجب عليك استخدام ملف Microsoft Excel، مستند Word، وملف صورة لإنشاء محفظة PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "العمل مع المحفظة في ملف PDF",
-    "alternativeHeadline": "إنشاء محفظة في مستند PDF",
+    "headline": "Working with Portfolio in PDF",
+    "alternativeHeadline": "Create Dynamic PDF Portfolios from Multiple File Types",
+    "abstract": "اكتشف ميزة محفظة PDF المبتكرة في Aspose.PDF، مما يمكّن المستخدمين من دمج أنواع ملفات متعددة بما في ذلك Microsoft Excel، مستندات Word، والصور في PDF متماسك بسهولة. هذه الوظيفة لا تحافظ فقط على هوية كل ملف فردي ولكنها تبسط أيضًا عملية إدارة واستخراج وتعديل المكونات داخل المحفظة، مما يضمن تجربة مستخدم سلسة لتوليد وإدارة الوثائق.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستند PDF في PDF",
-    "keywords": "pdf, c#, المحفظة",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "PDF Portfolio, C# PDF creation, Aspose.PDF library, Document class, FileSpecification class, file extraction PDF, remove files PDF Portfolio, unified container PDF, embedded files collection, PDF manipulation .NET",
+    "wordcount": "575",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,99 +74,117 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/portfolio/"
     },
-    "dateModified": "2022-02-04",
-    "description": "كيفية إنشاء محفظة PDF باستخدام C#. يجب استخدام ملف Microsoft Excel ومستند Word وملف صورة لإنشاء محفظة PDF."
+    "dateModified": "2024-11-25",
+    "description": "كيفية إنشاء محفظة PDF باستخدام C#. يجب عليك استخدام ملف Microsoft Excel، مستند Word، وملف صورة لإنشاء محفظة PDF."
 }
 </script>
 
 ## كيفية إنشاء محفظة PDF
 
-يتيح Aspose.PDF إنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). أضف ملفًا إلى كائن Document.Collection بعد الحصول عليه باستخدام فئة [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). عندما يتم إضافة الملفات، استخدم طريقة Save الخاصة بفئة Document لحفظ مستند المحفظة.
+تسمح Aspose.PDF بإنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). أضف ملفًا إلى كائن Document.Collection بعد الحصول عليه باستخدام فئة [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). عندما يتم إضافة الملفات، استخدم طريقة Save لفئة Document لحفظ مستند المحفظة.
 
-المثال التالي يستخدم ملف Microsoft Excel، ومستند Word وملف صورة لإنشاء محفظة PDF.
+المثال التالي يستخدم ملف Microsoft Excel، مستند Word وملف صورة لإنشاء محفظة PDF.
 
-الكود أدناه يؤدي إلى المحفظة التالية.
+الكود أدناه ينتج عنه المحفظة التالية.
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-### محفظة PDF التي تم إنشاؤها بواسطة Aspose.PDF
+### محفظة PDF تم إنشاؤها باستخدام Aspose.PDF
 
-![محفظة PDF التي تم إنشاؤها بواسطة Aspose.PDF لـ .NET](working-with-pdf-portfolio_1.jpg)
-
-```csharp
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
-
-// إنشاء كائن Document
-Document doc = new Document();
-
-// إنشاء كائن مجموعة المستندات
-doc.Collection = new Collection();
-
-// الحصول على الملفات لإضافتها إلى المحفظة
-FileSpecification excel = new FileSpecification( dataDir + "HelloWorld.xlsx");
-FileSpecification word = new FileSpecification( dataDir + "HelloWorld.docx");
-FileSpecification image = new FileSpecification(dataDir + "aspose-logo.jpg");
-
-// توفير وصف الملفات
-excel.Description = "ملف Excel";
-word.Description = "ملف Word";
-image.Description = "ملف صورة";
-
-// إضافة الملفات إلى مجموعة المستندات
-doc.Collection.Add(excel);
-doc.Collection.Add(word);
-doc.Collection.Add(image);
-
-// حفظ مستند المحفظة
-doc.Save(dataDir + "CreatePDFPortfolio_out.pdf");
-```
-## استخراج الملفات من محفظة PDF
-
-تتيح لك محافظ PDF دمج المحتوى من مصادر متنوعة (على سبيل المثال، ملفات PDF، Word، Excel، JPEG) في حاوية موحدة. تحتفظ الملفات الأصلية بهوياتها الفردية لكن يتم تجميعها في ملف محفظة PDF. يمكن للمستخدمين فتح، قراءة، تعديل، وتنسيق كل ملف مكون بشكل مستقل عن الملفات الأخرى.
-
-يتيح Aspose.PDF إنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). كما يوفر القدرة على استخراج الملفات من محفظة PDF.
-
-يعرض شريط الكود التالي الخطوات لاستخراج الملفات من محفظة PDF.
+![محفظة PDF تم إنشاؤها مع Aspose.PDF for .NET](working-with-pdf-portfolio_1.jpg)
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
-
-// تحميل محفظة PDF المصدر
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-// الحصول على مجموعة الملفات المضمنة
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-// التكرار خلال كل ملف من محفظة
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreatePortfolio()
 {
-    // الحصول على المرفق والكتابة إلى ملف أو تيار
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-    string filename = Path.GetFileName(fileSpecification.Name);
-    // حفظ الملف المستخرج في موقع ما
-    FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    // إغلاق كائن التيار
-    fileStream.Close();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Instantiate document Collection object
+        document.Collection = new Aspose.Pdf.Collection();
+
+        // Get Files to add to Portfolio
+        var excel = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.xlsx");
+        var word = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.docx");
+        var image = new Aspose.Pdf.FileSpecification(dataDir + "aspose-logo.jpg");
+
+        // Provide description of the files
+        excel.Description = "Excel File";
+        word.Description = "Word File";
+        image.Description = "Image File";
+
+        // Add files to document collection
+        document.Collection.Add(excel);
+        document.Collection.Add(word);
+        document.Collection.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "CreatePortfolio_out.pdf");
+    }
 }
 ```
+
+## استخراج الملفات من محفظة PDF
+
+تسمح محافظ PDF بجمع المحتوى من مجموعة متنوعة من المصادر (على سبيل المثال، PDF، Word، Excel، ملفات JPEG) في حاوية موحدة واحدة. تحتفظ الملفات الأصلية بهوياتها الفردية ولكن يتم تجميعها في ملف محفظة PDF. يمكن للمستخدمين فتح وقراءة وتحرير وتنسيق كل ملف مكون بشكل مستقل عن الملفات المكونة الأخرى.
+
+تسمح Aspose.PDF بإنشاء مستندات محفظة PDF باستخدام فئة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). كما أنها تقدم القدرة على استخراج الملفات من محفظة PDF.
+
+تظهر مقتطفات الكود التالية الخطوات لاستخراج الملفات من محفظة PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractPortfolioFiles()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        // Get collection of embedded files
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+        // Iterate through individual file of Portfolio
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            string filename = Path.GetFileName(fileSpecification.Name);
+            // Save the extracted file to some location
+            using (FileStream fileStream = new FileStream(dataDir + filename + "_out", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+        }
+    }
+}
+```
+
 ![استخراج الملفات من محفظة PDF](working-with-pdf-portfolio_2.jpg)
 
 ## إزالة الملفات من محفظة PDF
 
-لحذف / إزالة الملفات من محفظة PDF، جرب استخدام الأسطر البرمجية التالية.
+من أجل حذف/إزالة الملفات من محفظة PDF، حاول استخدام أسطر الكود التالية.
 
 ```csharp
-// لأمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemovePortfolioFiles()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
-// تحميل محفظة PDF الأصلية
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-pdfDocument.Collection.Delete();
-pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        document.Collection.Delete();
+        // Save PDF document
+        document.Save(dataDir + "NoPortFolio_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -229,5 +250,3 @@ pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
     }
 }
 </script>
-
-

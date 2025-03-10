@@ -1,134 +1,220 @@
 ---
-title: 将Excel数据导出以填写PDF表单
+title: 导出 Excel 数据以填写 PDF 表单
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /zh/net/export-excel-worksheet-data-to-fill-pdf-form/
-description: 本节解释了如何使用AutoFiller类将Excel工作表数据导出以填写PDF表单。
+description: 本节解释了如何使用 AutoFiller 类导出 Excel 工作表数据以填写 PDF 表单。
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Export Excel data to fill PDF form",
+    "alternativeHeadline": "Export Excel Data to Auto-Fill PDF Forms",
+    "abstract": "Aspose.PDF for .NET 中的功能允许用户无缝地将 Excel 工作表中的数据导出到 PDF 表单中，使用 AutoFiller 类。通过利用 ExportDataTable 方法，用户可以将 Excel 数据转换为 DataTable，并高效地填写 PDF 表单，从而简化数据输入过程并提高生产力。此功能确保 PDF 表单根据 Excel 中的数据结构准确且自动地填充。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "908",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/export-excel-worksheet-data-to-fill-pdf-form/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/export-excel-worksheet-data-to-fill-pdf-form/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+}
+</script>
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中提供了多种填写Pdf表单的方法。您可以从XML文件、DFD、XFDF导入数据，可以使用API，甚至可以使用Excel工作表中的数据。
-我们将使用 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 方法，该方法属于 [Aspose.Cells](https://docs.aspose.com//cells/net) 的 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 类，将Excel表中的数据导出到DataTable对象中。 然后，我们需要使用 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法将这些数据导入到 PDF 表单中。确保 DataTable 的列名称与 PDF 表单上的字段名称相同。
+[Aspose.Pdf.Facades 命名空间](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 在 [Aspose.PDF for .NET](/pdf/zh/net/) 中提供了多种填写 PDF 表单的方法。您可以从 XML 文件、DFD、XFDF 导入数据，使用 API，甚至可以使用 Excel 工作表中的数据。
+我们将使用 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 方法从 [Aspose.Cells](https://docs.aspose.com//cells/net) 的 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 类中将数据导出到 DataTable 对象中。然后，我们需要使用 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法将这些数据导入 PDF 表单。确保 DataTable 的列名与 PDF 表单上的字段名相同。
+
 {{% /alert %}}
 
-## 实施细节
+## 实现细节
 
-在以下场景中，我们将使用一个 PDF 表单，其中包含三个名为 ID、Name 和 Gender 的表单字段。
+在以下场景中，我们将使用一个 PDF 表单，其中包含三个表单字段，分别命名为 ID、Name 和 Gender。
 
-在上面指定的表单中有一页，包含 "ID"、"Name" 和 "Gender" 三个字段。我们将从以下 Excel 表中提取数据到 DataTable 对象。
+![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_1.png)
 
-我们需要创建一个 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的对象，并绑定上图中的 PDF 表单，并使用 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法使用 DataTable 对象中的数据填充表单字段。一旦调用该方法，就会生成一个新的 Pdf 表单文件，其中包含根据 Excel 表中的数据填写的五页表单。输入的 Pdf 表单是单页的，而结果是五页的，因为 Excel 表中的数据行数为 5。DataTable 类提供了使用工作表第一行作为 ColumnName 的功能。
+上述表单有一页，包含三个字段，分别命名为“ID”、“Name”和“Gender”。我们将从以下 Excel 工作表中提取数据到 DataTable 对象中。
+
+![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_2.png)
+
+我们需要创建一个 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 类的对象，并绑定上述图片中的 PDF 表单，并使用 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 方法使用 DataTable 对象中的数据填写表单字段。
+一旦调用该方法，将生成一个新的 PDF 表单文件，其中包含五页，表单根据 Excel 工作表中的数据填写。输入的 PDF 表单是单页的，而结果是五页，因为 Excel 工作表中的数据行数为 5。DataTable 类提供了使用工作表的第一行作为列名的能力。
 
 |**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_3.png)**|**![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_4.png)**|
 | :- | :- |
 |![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_5.png)|![todo:image_alt_text](export-excel-worksheet-data-to-fill-pdf-form_6.png)|
 
 ```csharp
-Workbook workbook = new Workbook();
-// 创建一个包含要打开的 Excel 文件的文件流
-FileStream fstream = new FileStream("d:\\pdftest\\newBook1.xls", FileMode.Open);
-// 通过文件流打开 Excel 文件
-workbook.Open(fstream);
-// 访问 Excel 文件中的第一个工作表
-Worksheet worksheet = workbook.Worksheets[0];
-// 从第一个单元格开始导出 7 行 2 列的内容到 DataTable
-DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
-// 关闭文件流以释放所有资源
-fstream.Close();
-// 创建 AutoFiller 类的对象
-AutoFiller autoFiller = new AutoFiller();
-// 包含表单字段的输入 pdf 文件
-autoFiller.InputFileName = "d:\\pdftest\\DataTableExample.pdf";
-// 结果 pdf 文件，将包含用 DataTable 信息填充的表单字段
-autoFiller.OutputFileName = "D:\\pdftest\\DataTableExample_Filled.pdf";
-// 调用方法将 DataTable 对象中的数据导入 Pdf 表单字段。
-autoFiller.ImportDataTable(dataTable);
-// 调用保存方法生成 pdf 文件
-autoFiller.Save();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExportExcelToPdfForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
+
+    var workbook = new Workbook();
+    // Creating a file stream containing the Excel file to be opened
+    using (FileStream fstream = new FileStream(dataDir + "newBook1.xls", FileMode.Open))
+    {
+        // Opening the Excel file through the file stream
+        workbook.Open(fstream);
+        // Accessing the first worksheet in the Excel file
+        var worksheet = workbook.Worksheets[0];
+        // Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
+        System.Data.DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, worksheet.Cells.MaxRow + 1, worksheet.Cells.MaxColumn + 1, true);
+        // Create an object of AutoFiller class
+        using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
+        {
+            // The input pdf file that contains form fields
+            autoFiller.InputFileName = dataDir + "DataTableExample.pdf";
+            // The resultant pdf, that will contain the form fields filled with information from DataTable
+            autoFiller.OutputFileName = dataDir + "DataTableExample_out.pdf";
+            // Call the method to import the data from DataTable object into Pdf form fields
+            autoFiller.ImportDataTable(dataTable);
+            // Save PDF document
+            autoFiller.Save();
+        }
+    }
+}
 ```
 
-要从 XLSX 填充，请使用以下代码段：
+要从 XLSX 填充，请使用以下代码片段：
 
 ```csharp
-internal static void FillFromXLSX()
-        {
-            // 创建 AutoFiller 类的对象
-            AutoFiller autoFiller = new AutoFiller();
-            // 包含表单字段的输入 pdf 文件
-            autoFiller.BindPdf(@"C:\Samples\Facades\Autofiller\Sample-Form-01.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillFromXLSX()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Excel();
 
-            DataTable dataTable = GenerateDataTable();
+    // Create an object of AutoFiller class
+    using (var autoFiller = new Aspose.Pdf.Facades.AutoFiller())
+    {
+        // Bind PDF document
+        autoFiller.BindPdf(dataDir + "Sample-Form-01.pdf");
 
-            // 调用方法将数据从 DataTable 对象导入到 Pdf 表单字段中。
-            autoFiller.ImportDataTable(dataTable);
+        System.Data.DataTable dataTable = GenerateDataTable();
 
-            // 生成的 pdf，将包含用 DataTable 信息填充的表单字段
-            autoFiller.Save(@"C:\Samples\Facades\Autofiller\Sample-Form-01_mod.pdf");
+        // Call the method to import the data from DataTable object into Pdf form fields
+        autoFiller.ImportDataTable(dataTable);
 
-        }
+        // Save PDF document
+        autoFiller.Save(dataDir + "Sample-Form-01_out.pdf");
+    }
+}
 ```
 
 Aspose.PDF for .NET 允许您在 PDF 文档中生成数据表：
 
 ```csharp
-private static DataTable GenerateDataTable()
-        {
-            string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
-            // 创建一个新的 DataTable。
-            System.Data.DataTable table = new DataTable("Students");
-            // 声明 DataColumn 和 DataRow 对象的变量。
-            DataColumn column;
-            DataRow row;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static System.Data.DataTable GenerateDataTable()
+{
+    string[] names = new[] { "Olivia", "Oliver", "Amelia", "George", "Isla", "Harry", "Ava", "Noah" };
+    // Create a new DataTable
+    var table = new System.Data.DataTable("Students");
 
-            // 创建新的 DataColumn，设置 DataType，
-            // ColumnName 并添加到 DataTable。
-            column = new DataColumn
-            {
-                DataType = System.Type.GetType("System.Int32"),
-                ColumnName = "id",
-                ReadOnly = true,
-                Unique = true
-            };
-            // 将列添加到 DataColumnCollection。
-            table.Columns.Add(column);
+    // Create new DataColumn, set DataType,
+    // ColumnName and add to DataTable
+    var column = new System.Data.DataColumn
+    {
+        DataType = System.Type.GetType("System.Int32"),
+        ColumnName = "id",
+        ReadOnly = true,
+        Unique = true
+    };
+    // Add the Column to the DataColumnCollection
+    table.Columns.Add(column);
 
-            // 创建第二列。
-            column = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "First Name",
-                AutoIncrement = false,
-                Caption = "First Name",
-                ReadOnly = false,
-                Unique = false
-            };
-            // 将列添加到表中。
-            table.Columns.Add(column);
+    // Create second column
+    column = new System.Data.DataColumn
+    {
+        DataType = System.Type.GetType("System.String"),
+        ColumnName = "First Name",
+        AutoIncrement = false,
+        Caption = "First Name",
+        ReadOnly = false,
+        Unique = false
+    };
+    // Add the column to the table
+    table.Columns.Add(column);
 
-            // 使 ID 列成为主键列。
-            DataColumn[] PrimaryKeyColumns = new DataColumn[1];
-            PrimaryKeyColumns[0] = table.Columns["id"];
-            table.PrimaryKey = PrimaryKeyColumns;
+    // Make the ID column the primary key column
+    var primaryKeyColumns = new System.Data.DataColumn[1];
+    primaryKeyColumns[0] = table.Columns["id"];
+    table.PrimaryKey = primaryKeyColumns;
 
-            // 创建三个新的 DataRow 对象并添加
-            // 它们到 DataTable 中
-            var rand = new Random();
-            for (int i = 1; i <= 4; i++)
-            {
-                row = table.NewRow();
-                row["id"] = i;
-                row["First Name"] = names[rand.Next(names.Length)];
-                table.Rows.Add(row);
-            }
-            return table;
-        }
+    // Create three new DataRow objects and add
+    // them to the DataTable
+    var rand = new Random();
+    System.Data.DataRow row;
+    for (int i = 1; i <= 4; i++)
+    {
+        row = table.NewRow();
+        row["id"] = i;
+        row["First Name"] = names[rand.Next(names.Length)];
+        table.Rows.Add(row);
+    }
+    return table;
+}
 ```
 
 ## 结论
 
 {{% alert color="primary" %}}
-[Aspose.PDF.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 还提供了使用数据库中的数据填写 PDF 表单的功能，但此功能目前仅在 .Net 版本中支持。
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 还提供了使用数据库中的数据填写 PDF 表单的能力，但此功能目前仅在 .NET 版本中支持。
 {{% /alert %}}

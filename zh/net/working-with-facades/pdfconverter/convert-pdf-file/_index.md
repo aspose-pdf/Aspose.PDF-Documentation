@@ -1,64 +1,148 @@
 ---
-title: Convert PDF File
+title: 转换 PDF 文件
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /zh/net/convert-pdf-file/
-description: 本节介绍如何使用 Aspose.PDF Facades 和 PdfConverter 类转换 PDF 文件。
+description: 学习如何使用 Aspose.PDF 在 .NET 中将 PDF 文件转换为各种格式，以实现灵活的文档处理。
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF File",
+    "alternativeHeadline": "Convert PDF Pages to Image Formats Efficiently",
+    "abstract": "利用 Aspose.PDF for .NET Facades 轻松将 PDF 页面转换为多种图像格式，如 JPEG、GIF 和 PNG，使用 PdfConverter 类。此功能提供对转换过程的详细控制，允许您指定参数，如分辨率、坐标类型和页面范围，以实现自定义输出。通过将无缝的 PDF 到图像转换集成到您的应用程序中，增强您的文档处理能力。",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "561",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-file/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-file/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF 不仅可以执行简单和容易的任务，还可以应对更复杂的目标。请查看下一部分以获取高级用户和开发人员的信息。"
+}
+</script>
 
-## 将 PDF 页面转换为不同的图像格式（Facades）
+## 将 PDF 页面转换为不同的图像格式 (Facades)
 
-为了将 PDF 页面转换为不同的图像格式，您需要创建 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法打开 PDF 文件。 在此之后，你需要调用 [DoConvert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) 方法来进行初始化任务。然后，你可以使用 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) 和 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法遍历所有页面。[GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法允许你创建特定页面的图像。你还需要传递 ImageFormat 给此方法，以便创建特定类型的图像，即 JPEG、GIF 或 PNG 等。最后，调用 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) 类的 [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) 方法。以下代码片段展示了如何将 PDF 页面转换为图像。
+为了将 PDF 页面转换为不同的图像格式，您需要创建 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) 对象，并使用 [BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.facade/bindpdf/methods/3) 方法打开 PDF 文件。之后，您需要调用 [DoConvert](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/doconvert) 方法进行初始化任务。然后，您可以使用 [HasNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/hasnextimage) 和 [GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法循环遍历所有页面。[GetNextImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfconverter/getnextimage/methods/6) 方法允许您创建特定页面的图像。您还需要将 ImageFormat 传递给此方法，以便创建特定类型的图像，即 JPEG、GIF 或 PNG 等。最后，调用 [PdfConverter](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter) 类的 [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/methods/close) 方法。以下代码片段向您展示如何将 PDF 页面转换为图像。
 
 ```csharp
- public static void ConvertPdfPagesToImages01()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPdfPagesToImages01()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PdfConverter object
+    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    {
+        // Bind PDF document
+        converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
+
+        // Initialize the converting process
+        converter.DoConvert();
+
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
         {
-            // 创建 PdfConverter 对象
-            PdfConverter converter = new PdfConverter();
-
-            // 绑定输入的 pdf 文件
-            converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
-
-            // 初始化转换过程
-            converter.DoConvert();
-
-            // 检查页面是否存在然后逐一转换为图像
-            while (converter.HasNextImage())
-                converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-
-            // 关闭 PdfConverter 对象
-            converter.Close();
+            // Generate output file name with '_out' suffix
+            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+            // Convert the page to image and save it
+            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
+    }
+}
 ```
-在下一个代码片段中，我们将展示如何更改一些参数。使用 [CoordinateType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/coordinatetype) 我们设置框架 'CropBox'。此外，我们可以通过指定每英寸点数来更改 [Resolution](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/resolution)。下一个是 [FormPresentationMode](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/formpresentationmode) - 表单呈现模式。然后我们指示 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/startpage)，它设置转换开始的页码。我们还可以通过设置范围来指定最后一页。
+
+在下一个代码片段中，我们将展示如何更改一些参数。通过 [CoordinateType](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/coordinatetype) 我们设置框架为 'CropBox'。此外，我们可以通过指定每英寸的点数来更改 [Resolution](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/resolution)。下一个 [FormPresentationMode](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/formpresentationmode) - 表单呈现模式。然后我们指明 [StartPage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter/properties/startpage)，设置转换开始的页面编号。我们还可以通过设置范围来指定最后一页。
 
 ```csharp
-  public static void ConvertPdfPagesToImages02()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPdfPagesToImages02()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PdfConverter object
+    using (var converter = new Aspose.Pdf.Facades.PdfConverter())
+    {
+        // Bind PDF document
+        converter.BindPdf(dataDir + "ConvertPdfPagesToImages.pdf");
+
+        // Initialize the converting process
+        converter.DoConvert();
+
+        // Set additional conversion settings
+        converter.CoordinateType = Aspose.Pdf.PageCoordinateType.CropBox;
+        converter.Resolution = new Aspose.Pdf.Devices.Resolution(600);
+        converter.FormPresentationMode = Aspose.Pdf.Devices.FormPresentationMode.Production;
+        converter.StartPage = 2;
+
+        // Check if pages exist and then convert to image one by one
+        while (converter.HasNextImage())
         {
-            // 创建 PdfConverter 对象
-            PdfConverter converter = new PdfConverter();
-
-            // 绑定输入 pdf 文件
-            converter.BindPdf(_dataDir + "Sample-Document-01.pdf");
-
-            // 初始化转换过程
-            converter.DoConvert();
-            converter.CoordinateType = PageCoordinateType.CropBox;
-            converter.Resolution = new Devices.Resolution(600);
-            converter.FormPresentationMode = Devices.FormPresentationMode.Production;
-            converter.StartPage = 2;
-            // converter.EndPage = 3;
-            // 检查页面是否存在，然后逐个转换为图像
-            while (converter.HasNextImage())
-                converter.GetNextImage(_dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-
-            // 关闭 PdfConverter 对象
-            converter.Close();
+            // Generate output file name
+            var outputFileName = dataDir + System.DateTime.Now.Ticks.ToString() + "_out.jpg";
+            // Convert the page to image and save it
+            converter.GetNextImage(outputFileName, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
+    }
+}
 ```
 
-## 另请参阅
+## 另请参见
 
-Aspose.PDF for .NET 允许将 PDF 文档转换为多种格式，也可以从其他格式转换为 PDF。此外，您可以使用 Aspose.PDF 转换应用程序在线检查 Aspose.PDF 转换的质量并查看结果。了解[转换](/pdf/zh/net/converting/)部分以解决您的任务。
+Aspose.PDF for .NET 允许将 PDF 文档转换为各种格式，也可以从其他格式转换为 PDF。此外，您可以检查 Aspose.PDF 转换的质量，并使用 Aspose.PDF 转换器应用程序在线查看结果。了解 [转换](/pdf/zh/net/converting/) 部分以解决您的任务。

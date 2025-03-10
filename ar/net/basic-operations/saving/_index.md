@@ -1,82 +1,157 @@
 ---
-title: حفظ مستند PDF برمجيًا
+title: حفظ مستند PDF برمجياً
 linktitle: حفظ PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/save-pdf-document/
-description: تعلم كيفية حفظ ملف PDF في مكتبة Aspose.PDF لـ .NET. حفظ مستند PDF إلى نظام الملفات، إلى تيار، وفي تطبيقات الويب.
+description: تعلم كيفية حفظ ملف PDF في مكتبة C# Aspose.PDF for .NET. حفظ مستند PDF في نظام الملفات، إلى دفق، وفي تطبيقات الويب.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Save PDF document programmatically",
+    "alternativeHeadline": "Programmatic PDF Saving with C#",
+    "abstract": "اكتشف كيف يقوم المطورون بحفظ مستندات PDF برمجياً بسهولة باستخدام Aspose.PDF for .NET. تدعم هذه الميزة حفظ ملفات PDF في نظام الملفات، والدفقات، وداخل تطبيقات الويب مباشرة، مما يلبي حالات الاستخدام المتنوعة مع ضمان الامتثال لمعايير PDF/A و PDF/X للأرشفة طويلة الأجل وتبادل الرسوم. قم بتحسين قدرات التعامل مع PDF الخاصة بك مع هذه الآلية القوية للحفظ",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "471",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/save-pdf-document/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/save-pdf-document/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسلسة ولكن أيضًا التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
 
-الشفرة البرمجية التالية تعمل أيضًا مع واجهة [Aspose.Drawing](/pdf/ar/net/drawing/) الرسومية الجديدة.
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.Drawing](/pdf/ar/net/drawing/) .
 
-## حفظ مستند PDF إلى نظام الملفات
+## حفظ مستند PDF في نظام الملفات
 
-يمكنك حفظ المستند PDF المُنشأ أو المُعدل إلى نظام الملفات باستخدام طريقة `Save` من فئة `Document`.
-عندما لا تقدم نوع الصيغة (الخيارات)، يتم حفظ المستند بصيغة Aspose.PDF الإصدار 1.7 (*.pdf).
+يمكنك حفظ مستند PDF الذي تم إنشاؤه أو تعديله في نظام الملفات باستخدام طريقة `Save` من فئة `Document`.
+عندما لا تقدم نوع التنسيق (الخيارات)، يتم حفظ المستند بتنسيق Aspose.PDF v.1.7 (*.pdf).
 
 ```csharp
-public static void SaveDocument()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocument()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-    // قم ببعض التلاعب، على سبيل المثال إضافة صفحة فارغة جديدة
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(modifiedFileName);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_out.pdf");
+    }
 }
 ```
-## حفظ مستند PDF إلى تيار
 
-يمكنك أيضاً حفظ المستند PDF الذي تم إنشاؤه أو تعديله إلى تيار باستخدام الأساليب المتعددة لطريقة `Save`.
+## حفظ مستند PDF في دفق
+
+يمكنك أيضًا حفظ مستند PDF الذي تم إنشاؤه أو تعديله في دفق باستخدام التحميلات الزائدة لطرق `Save`.
 
 ```csharp
-public static void SaveDocumentStream()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentStream()
 {
-    var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-    var modifiedFileName = Path.Combine(_dataDir, "SimpleResumeModified.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-    var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-    // إجراء بعض التعديلات، مثل إضافة صفحة فارغة جديدة
-    pdfDocument.Pages.Add();
-    pdfDocument.Save(System.IO.File.OpenWrite(modifiedFileName));
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Make some manipation, i.g add new empty page
+        document.Pages.Add();
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_out.pdf");
+    }
 }
 ```
 
-## حفظ مستند PDF في تطبيقات الويب
+للحصول على شرح أكثر تفصيلاً، يرجى الانتقال إلى قسم [Showcase](/pdf/ar/net/showcases/) .
 
-لحفظ المستندات في تطبيقات الويب، يمكنك استخدام الطرق المقترحة أعلاه. بالإضافة إلى ذلك، فإن فئة `Document` لديها طريقة محملة `Save` للاستخدام مع فئة [HttpResponse](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpresponse?view=netframework-4.8).
+## حفظ تنسيق PDF/A أو PDF/X
 
-```csharp
-var originalFileName = Path.Combine(_dataDir, "SimpleResume.pdf");
-var pdfDocument = new Aspose.Pdf.Document(originalFileName);
-// إجراء بعض التعديلات، مثل إضافة صفحة فارغة جديدة
-pdfDocument.Pages.Add();
-pdfDocument.Save(Response, originalFileName, ContentDisposition.Attachment, new PdfSaveOptions());
-```
-لمزيد من التفاصيل يرجى متابعة قسم [العرض](/pdf/ar/net/showcases/).
+PDF/A هو إصدار موحد وفقًا لمعيار ISO من تنسيق المستندات المحمولة (PDF) للاستخدام في الأرشفة والحفاظ على المستندات الإلكترونية على المدى الطويل.
+يختلف PDF/A عن PDF في أنه يمنع الميزات غير المناسبة للأرشفة طويلة الأجل، مثل ربط الخطوط (بدلاً من تضمين الخطوط) والتشفير. تشمل متطلبات ISO لمشغلات PDF/A إرشادات إدارة الألوان، ودعم الخطوط المضمنة، وواجهة مستخدم لقراءة التعليقات المضمنة.
 
-## حفظ بصيغة PDF/A أو PDF/X
+PDF/X هو مجموعة فرعية من معيار PDF ISO. الغرض من PDF/X هو تسهيل تبادل الرسوم، وبالتالي لديه سلسلة من المتطلبات المتعلقة بالطباعة التي لا تنطبق على ملفات PDF القياسية.
 
-PDF/A هي نسخة معيارية من ISO لصيغة مستندات PDF المحمولة المستخدمة في أرشفة وحفظ المستندات الإلكترونية لفترات طويلة.
-تختلف PDF/A عن PDF في أنها تحظر ميزات غير مناسبة للأرشفة طويلة الأمد، مثل ربط الخطوط (بدلاً من تضمين الخطوط) والتشفير. تشتمل متطلبات ISO لمشاهدي PDF/A على إرشادات إدارة الألوان، ودعم الخطوط المضمنة، وواجهة مستخدم لقراءة التعليقات المضمنة.
-
-PDF/X هو مجموعة فرعية من معيار PDF ISO. الغرض من PDF/X هو تسهيل تبادل الرسومات، ولذلك يحتوي على سلسلة من المتطلبات المتعلقة بالطباعة والتي لا تنطبق على ملفات PDF القياسية.
-
-في كلا الحالتين، يتم استخدام طريقة `Save` لتخزين المستندات، بينما يجب تحضير المستندات باستخدام طريقة `Convert`.
+في كلتا الحالتين، يتم استخدام طريقة `Save` لتخزين المستندات، بينما يجب إعداد المستندات باستخدام طريقة `Convert`.
 
 ```csharp
-public static void SaveDocumentAsPDFx()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SaveDocumentAsPDFx()
 {
-    var pdfDocument = new Aspose.Pdf.Document("..\\..\\..\\Samples\\SimpleResume.pdf");
-    pdfDocument.Pages.Add();
-    pdfDocument.Convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-    pdfDocument.Save("..\\..\\..\\Samples\\SimpleResume_X3.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume.pdf"))
+    {
+        // Add page
+        document.Pages.Add();
+        // Convert a document to a PDF/X-3 format
+        document.Convert(new Aspose.Pdf.PdfFormatConversionOptions(Aspose.Pdf.PdfFormat.PDF_X_3));
+        // Save PDF document
+        document.Save(dataDir + "SimpleResume_X3.pdf");
+    }
 }
 ```
-
-

@@ -1,148 +1,231 @@
 ---
 title: Agregar Sello de Texto e Imagen
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /es/net/add-text-and-image-stamp/
-description: Esta sección explica cómo agregar un sello de texto e imagen con Aspose.PDF Facades usando la clase PdfFileStamp.
+description: Esta sección explica cómo agregar un Sello de Texto e Imagen con Aspose.PDF Facades utilizando la clase PdfFileStamp.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Add Text and Image Stamp",
+    "alternativeHeadline": "Add Custom Text and Image Stamps in PDFs",
+    "abstract": "Las funciones de Agregar Sello de Texto e Imagen en Aspose.PDF for .NET permiten a los usuarios aplicar sin problemas sellos de texto e imagen personalizados en todas o en páginas específicas de documentos PDF. Esta funcionalidad mejora la personalización del documento, permitiendo un control detallado sobre los atributos del sello, como posición, rotación y calidad, mejorando en última instancia la presentación y la marca de sus archivos PDF.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1435",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/add-text-and-image-stamp/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/add-text-and-image-stamp/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulte la siguiente sección para usuarios y desarrolladores avanzados."
+}
+</script>
 
 ## Agregar Sello de Texto en Todas las Páginas de un Archivo PDF
 
-La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) te permite agregar un sello de texto en todas las páginas de un archivo PDF. En orden de añadir un sello de texto, primero necesitas crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Necesita crear el sello de texto usando el método [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puede establecer otros atributos como origen, rotación, fondo, etc., usando el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) también. Luego puede agregar el sello en el archivo PDF usando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarde el archivo PDF de salida usando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código le muestra cómo agregar un sello de texto en todas las páginas de un archivo PDF.
+La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) permite agregar un sello de texto en todas las páginas de un archivo PDF. Para agregar un sello de texto, primero necesita crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). También necesita crear el sello de texto utilizando el método [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puede establecer otros atributos como origen, rotación, fondo, etc. utilizando el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) también. Luego puede agregar el sello en el archivo PDF utilizando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarde el archivo PDF de salida utilizando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código le muestra cómo agregar un sello de texto en todas las páginas de un archivo PDF.
 
 ```csharp
- public static void AddTextStampOnAllPagesInPdfFile()
-        {
-            // Create PdfFileStamp object
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStampOnAllPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Open Document
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-            // Create stamp
-            Stamp stamp = new Stamp();
-            stamp.BindLogo(new FormattedText("Hello World!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Helvetica, EncodingType.Winansi, true, 14));
-            stamp.SetOrigin(10, 400);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Hello World!",
+            System.Drawing.Color.Blue,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.Helvetica,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            true,
+            14));
 
-            // Add stamp to PDF file
-            fileStamp.AddStamp(stamp);
+        stamp.SetOrigin(10, 400);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // Save updated PDF file
-            fileStamp.Save(_dataDir + "AddTextStamp-All_out.pdf");
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Close fileStamp
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddTextStampOnAllPages_out.pdf");
+    }
+}
 ```
-## Agregar una Marca de Texto en Páginas Específicas de un Archivo PDF
 
-La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) te permite agregar una marca de texto en páginas específicas de un archivo PDF. In order to add text stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
+## Agregar Sello de Texto en Páginas Particulares de un Archivo PDF
 
-Para agregar un sello de texto, primero necesitas crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). You also need to create the text stamp using [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class.  
-También necesita crear el sello de texto utilizando el método [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puedes establecer otros atributos como origen, rotación, fondo, etc. using [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) objeto también. Como deseas agregar una marca de texto en páginas específicas del archivo PDF, también necesitas establecer la propiedad [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Esta propiedad requiere un arreglo de enteros que contiene los números de las páginas en las que deseas agregar la marca. Luego puedes agregar la marca en el archivo PDF utilizando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarda el archivo PDF de salida usando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código te muestra cómo agregar una marca de texto en páginas específicas de un archivo PDF.
+La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) permite agregar un sello de texto en páginas particulares de un archivo PDF. Para agregar un sello de texto, primero necesita crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). También necesita crear el sello de texto utilizando el método [BindLogo](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindlogo) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puede establecer otros atributos como origen, rotación, fondo, etc. utilizando el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) también. Como desea agregar un sello de texto en páginas particulares del archivo PDF, también necesita establecer la propiedad [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Esta propiedad requiere un arreglo de enteros que contenga los números de las páginas en las que desea agregar el sello. Luego puede agregar el sello en el archivo PDF utilizando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarde el archivo PDF de salida utilizando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código le muestra cómo agregar un sello de texto en páginas particulares de un archivo PDF.
 
 ```csharp
- public static void AddTextStampOnParticularPagesInPdfFile()
-        {
-            // Crear objeto PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTextStampOnParticularPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Abrir documento
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-            // Crear marca
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindLogo(new FormattedText("Hello World!", System.Drawing.Color.Blue, System.Drawing.Color.Gray, Aspose.Pdf.Facades.FontStyle.Helvetica, EncodingType.Winansi, true, 14));
-            stamp.SetOrigin(10, 400);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindLogo(new Aspose.Pdf.Facades.FormattedText("Hello World!",
+            System.Drawing.Color.Blue,
+            System.Drawing.Color.Gray,
+            Aspose.Pdf.Facades.FontStyle.Helvetica,
+            Aspose.Pdf.Facades.EncodingType.Winansi,
+            true,
+            14));
+        stamp.SetOrigin(10, 400);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // Establecer páginas específicas
-            stamp.Pages = new int[] { 2 };
+        // Set particular pages (page 2)
+        stamp.Pages = new[] { 2 };
 
-            // Agregar marca al archivo PDF
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Guardar archivo PDF actualizado
-            fileStamp.Save(_dataDir + "AddTextStamp-Page_out.pdf");
-
-            // Cerrar fileStamp
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddTextStampOnParticularPages_out.pdf");
+    }
+}
 ```
-## Añadir Sello de Imagen en Todas las Páginas de un Archivo PDF
 
-La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) te permite añadir un sello de imagen en todas las páginas de un archivo PDF. En orden de agregar una estampilla de imagen, primero necesitas crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Necesitas crear el sello de imagen usando el método [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puedes establecer otros atributos como origen, rotación, fondo, etc. usando también el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Luego, puedes agregar el sello en el archivo PDF usando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarda el archivo PDF de salida usando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código te muestra cómo agregar un sello de imagen en todas las páginas de un archivo PDF.
+## Agregar Sello de Imagen en Todas las Páginas de un Archivo PDF
+
+La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) permite agregar un sello de imagen en todas las páginas de un archivo PDF. Para agregar un sello de imagen, primero necesita crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). También necesita crear el sello de imagen utilizando el método [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puede establecer otros atributos como origen, rotación, fondo, etc. utilizando el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) también. Luego puede agregar el sello en el archivo PDF utilizando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarde el archivo PDF de salida utilizando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código le muestra cómo agregar un sello de imagen en todas las páginas de un archivo PDF.
 
 ```csharp
-public static void AddImageStampOnAllPagesInPdfFile()
-        {
-            // Crear objeto PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampOnAllPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Abrir documento
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-            // Crear sello
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindImage(_dataDir + "aspose-logo.png");
-            stamp.SetOrigin(10, 200);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindImage(dataDir + "StampImage.png");
+        stamp.SetOrigin(10, 200);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // Establecer páginas particulares
-            stamp.Pages = new int[] { 2 };
+        // Set particular pages (page 2)
+        stamp.Pages = new[] { 2 };
 
-            // Agregar sello al archivo PDF
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Guardar archivo PDF actualizado
-            fileStamp.Save(_dataDir + "AddImageStamp-Page_out.pdf");
-
-            // Cerrar fileStamp
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddImageStampOnAllPages_out.pdf");
+    }
+}
 ```
-### Controlar la calidad de imagen al añadir como sello
 
-Al añadir una imagen como objeto de sello, también puedes controlar la calidad de la imagen. Para cumplir con este requisito, se ha añadido la propiedad Quality para la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Indica la calidad de la imagen en porcentajes (los valores válidos son 0..100).
+### Controlar la calidad de la imagen al agregarla como sello
 
-## Añadir un Sello de Imagen en Páginas Particulares de un Archivo PDF
+Al agregar una imagen como objeto de sello, también puede controlar la calidad de la imagen. Para cumplir con este requisito, se ha agregado la propiedad Quality para la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Indica la calidad de la imagen en porcentajes (los valores válidos son 0..100).
 
-La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) te permite añadir un sello de imagen en páginas particulares de un archivo PDF. En order to add image stamp, you first need to create objects of [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) and [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) classes.
+## Agregar Sello de Imagen en Páginas Particulares de un Archivo PDF
 
-Con el fin de agregar un sello de imagen, primero necesita crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). You also need to create the image stamp using [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) method of [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) class.
-
-También necesitas crear el sello de imagen usando el método [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). You can set other attributes like origin, rotation, background etc.  
-Puedes establecer otros atributos como origen, rotación, fondo, etc. usando el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) también. Como desea agregar un sello de imagen en páginas particulares del archivo PDF, también necesita establecer la propiedad [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Esta propiedad requiere un arreglo de enteros que contenga los números de las páginas en las que desea agregar el sello. Luego puede agregar el sello en el archivo PDF utilizando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarde el archivo PDF de salida usando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código le muestra cómo agregar un sello de imagen en páginas particulares en un archivo PDF.
+La clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) permite agregar un sello de imagen en páginas particulares de un archivo PDF. Para agregar un sello de imagen, primero necesita crear objetos de las clases [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp) y [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). También necesita crear el sello de imagen utilizando el método [BindImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/methods/bindimage/index) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Puede establecer otros atributos como origen, rotación, fondo, etc. utilizando el objeto [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp) también. Como desea agregar un sello de imagen en páginas particulares del archivo PDF, también necesita establecer la propiedad [Pages](https://reference.aspose.com/pdf/net/aspose.pdf.facades/stamp/properties/pages) de la clase [Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/stamp). Esta propiedad requiere un arreglo de enteros que contenga los números de las páginas en las que desea agregar el sello. Luego puede agregar el sello en el archivo PDF utilizando el método [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). Finalmente, guarde el archivo PDF de salida utilizando el método [Close](https://reference.aspose.com/pdf/net/aspose.pdf.facades/facade/methods/close) de la clase [PdfFileStamp](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilestamp). El siguiente fragmento de código le muestra cómo agregar un sello de imagen en páginas particulares de un archivo PDF.
 
 ```csharp
- public static void AddImageStampOnParticularPagesInPdfFile()
-        {
-            // Crear objeto PdfFileStamp
-            PdfFileStamp fileStamp = new PdfFileStamp();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampOnParticularPagesInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-            // Abrir documento
-            fileStamp.BindPdf(_dataDir + "sample.pdf");
+    // Create PdfFileStamp object
+    using (var fileStamp = new Aspose.Pdf.Facades.PdfFileStamp())
+    {
+        // Bind PDF document
+        fileStamp.BindPdf(dataDir + "sample.pdf");
 
-            // Crear sello
-            Aspose.Pdf.Facades.Stamp stamp = new Aspose.Pdf.Facades.Stamp();
-            stamp.BindImage(_dataDir + "aspose-logo.png");
-            stamp.SetOrigin(10, 200);
-            stamp.Rotation = 90.0F;
-            stamp.IsBackground = true;
+        // Create stamp
+        var stamp = new Aspose.Pdf.Facades.Stamp();
+        stamp.BindImage(dataDir + "StampImage.png");
+        stamp.SetOrigin(10, 200);
+        stamp.Rotation = 90.0F;
+        stamp.IsBackground = true;
 
-            // Agregar sello al archivo PDF
-            fileStamp.AddStamp(stamp);
+        // Add stamp to PDF file
+        fileStamp.AddStamp(stamp);
 
-            // Guardar archivo PDF actualizado
-            fileStamp.Save(_dataDir + "AddImageStamp-All_out.pdf");
-
-            // Cerrar fileStamp
-            fileStamp.Close();
-        }
+        // Save PDF document
+        fileStamp.Save(dataDir + "AddImageStampOnParticularPages_out.pdf");
+    }
+}
 ```

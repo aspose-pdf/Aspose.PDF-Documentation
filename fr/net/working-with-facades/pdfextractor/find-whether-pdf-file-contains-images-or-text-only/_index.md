@@ -1,57 +1,139 @@
 ---
-title: Trouver si le PDF contient des images ou du texte
+title: Trouver si un PDF contient des images ou du texte
 linktitle: Vérifier la présence de texte et d'images
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /fr/net/find-whether-pdf-file-contains-images-or-text-only/
-description: Ce sujet explique comment trouver si un fichier PDF contient uniquement des images ou du texte avec la classe PdfExtractor.
+description: Ce sujet explique comment déterminer si un fichier PDF contient uniquement du texte ou des images avec la classe PdfExtractor.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Find whether PDF contains images or text",
+    "alternativeHeadline": "Determine PDF Content: Text, Images, or Both",
+    "abstract": "Découvrez la fonctionnalité qui permet aux utilisateurs de déterminer efficacement si un fichier PDF contient du texte, des images ou les deux, en utilisant la classe PdfExtractor. Cette fonctionnalité simplifie le processus d'analyse du contenu PDF, fournissant une sortie claire sur la présence de texte et d'images dans le fichier. Avec seulement quelques lignes de code, les utilisateurs peuvent classer efficacement leurs documents PDF en fonction du type de contenu.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "265",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/find-whether-pdf-file-contains-images-or-text-only/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/find-whether-pdf-file-contains-images-or-text-only/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF peut effectuer non seulement des tâches simples et faciles, mais aussi faire face à des objectifs plus complexes. Consultez la section suivante pour les utilisateurs avancés et les développeurs."
+}
+</script>
 
 ## Contexte
 
-Un fichier PDF peut contenir à la fois du texte et des images. Parfois, un utilisateur peut avoir besoin de savoir si un fichier PDF contient uniquement du texte, ou s'il contient uniquement des images. Nous pouvons également déterminer s'il contient les deux ou aucun.
+Un fichier PDF peut contenir à la fois du texte et des images. Parfois, un utilisateur peut avoir besoin de savoir si un fichier PDF contient uniquement du texte ou uniquement des images. Nous pouvons également déterminer s'il contient les deux ou aucun.
 
 {{% alert color="primary" %}}
 
-Le code ci-dessous vous montre comment répondre à cette exigence.
+Le code suivant vous montre comment répondre à cette exigence.
 
 {{% /alert %}}
 
 ```csharp
- public static void CheckIfPdfContainsTextOrImages()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CheckIfPdfContainsTextOrImages()
 {
-    // Instancier un objet memoryStream pour contenir le texte extrait du document
-    MemoryStream ms = new MemoryStream();
-    // Instancier un objet PdfExtractor
-    PdfExtractor extractor = new PdfExtractor();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Text();
 
-    // Lier le document PDF d'entrée à l'extracteur
-    extractor.BindPdf(_dataDir + "FilledForm.pdf");
-    // Extraire le texte du document PDF d'entrée
-    extractor.ExtractText();
-    // Enregistrer le texte extrait dans un fichier texte
-    extractor.GetText(ms);
-    // Vérifier si la longueur de MemoryStream est supérieure ou égale à 1
+    // Instantiate a memoryStream object to hold the extracted text from Document
+    using (var ms = new MemoryStream())
+    {
+        // Create the PdfExtractor
+        using (var extractor = new Aspose.Pdf.Facades.PdfExtractor())
+        {
+            // Bind PDF document
+            extractor.BindPdf(dataDir + "FilledForm.pdf");
+            // Extract text from the input PDF document
+            extractor.ExtractText();
+            // Save the extracted text to a text file
+            extractor.GetText(ms);
+            // Check if the MemoryStream length is greater than or equal to 1
 
-    bool containsText = ms.Length >= 1;
+            bool containsText = ms.Length >= 1;
 
-    // Extraire les images du document PDF d'entrée
-    extractor.ExtractImage();
+            // Extract images from the input PDF document
+            extractor.ExtractImage();
 
-    // Appeler la méthode HasNextImage dans une boucle while. Lorsque les images seront terminées, la boucle se terminera
-    bool containsImage = extractor.HasNextImage();
+            // Calling HasNextImage method in while loop. When images will finish, loop will exit
+            bool containsImage = extractor.HasNextImage();
 
-    // Maintenant, déterminer si ce PDF est uniquement du texte ou uniquement des images
+            // Now find out whether this PDF is text only or image only
 
-    if (containsText && !containsImage)
-        Console.WriteLine("Le PDF contient uniquement du texte");
-    else if (!containsText && containsImage)
-        Console.WriteLine("Le PDF contient uniquement des images");
-    else if (containsText && containsImage)
-        Console.WriteLine("Le PDF contient à la fois du texte et des images");
-    else if (!containsText && !containsImage)
-        Console.WriteLine("Le PDF ne contient ni texte ni images");
+            if (containsText && !containsImage)
+            {
+                Console.WriteLine("PDF contains text only");
+            }
+            else if (!containsText && containsImage)
+            {
+                Console.WriteLine("PDF contains image only");
+            }
+            else if (containsText && containsImage)
+            {
+                Console.WriteLine("PDF contains both text and image");
+            }
+            else if (!containsText && !containsImage)
+            {
+                Console.WriteLine("PDF contains neither text or nor image");
+            }
+        }
+    }
 }
 ```

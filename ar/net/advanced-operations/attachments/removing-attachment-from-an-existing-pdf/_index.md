@@ -1,10 +1,12 @@
 ---
-title: إزالة المرفقات من ملف PDF
-linktitle: إزالة المرفقات من ملف PDF موجود
+title: إزالة المرفقات من PDF
+linktitle: إزالة المرفقات من PDF موجود
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ar/net/removing-attachment-from-an-existing-pdf/
-description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم واجهة برمجة تطبيقات C# PDF لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF.
+description: يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم واجهة برمجة تطبيقات PDF بلغة C# لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إزالة المرفقات من ملف PDF",
-    "alternativeHeadline": "كيفية حذف المرفقات من ملف PDF",
+    "headline": "Removing attachment from PDF",
+    "alternativeHeadline": "Remove Attachments Efficiently from PDF Files",
+    "abstract": "تتضمن Aspose.PDF الآن ميزة قوية تتيح للمستخدمين إزالة المرفقات بسهولة من مستندات PDF الخاصة بهم باستخدام واجهة برمجة تطبيقات PDF بلغة C#. تبسط هذه الوظيفة إدارة PDF من خلال تمكين المستخدمين من حذف أي ملفات مضمنة من مستنداتهم، مما يضمن تجربة PDF أنظف وأكثر سلاسة.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "إنشاء مستند PDF",
-    "keywords": "pdf, c#, حذف المرفقات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "Removing attachment from PDF, Aspose.PDF, delete attachments, PDF API, C# PDF library, EmbeddedFiles collection, document.Save method, PDF manipulation, attachments management, Aspose.PDF for .NET",
+    "wordcount": "229",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق مستندات Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,42 +74,46 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/removing-attachment-from-an-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم واجهة برمجة تطبيقات C# PDF لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF."
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF إزالة المرفقات من مستندات PDF الخاصة بك. استخدم واجهة برمجة تطبيقات PDF بلغة C# لإزالة المرفقات في ملفات PDF باستخدام مكتبة Aspose.PDF."
 }
 </script>
 
-يمكن لـ Aspose.PDF إزالة المرفقات من ملفات PDF. يتم الاحتفاظ بمرفقات مستند PDF في مجموعة EmbeddedFiles الخاصة بكائن الوثيقة.
+يمكن لـ Aspose.PDF إزالة المرفقات من ملفات PDF. يتم الاحتفاظ بمرفقات مستند PDF في مجموعة EmbeddedFiles لكائن Document.
 
-يعمل الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لحذف جميع المرفقات المرتبطة بملف PDF:
 
-1. استدعاء طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) لمجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
-1. حفظ الملف المُحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. استدعِ طريقة [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection/methods/delete) لمجموعة [EmbeddedFiles](https://reference.aspose.com/pdf/net/aspose.pdf/embeddedfilecollection).
+1. احفظ الملف المحدث باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) لكائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
-يوضح الكود التالي كيفية إزالة المرفقات من مستند PDF.
+تظهر مقتطفات الشيفرة التالية كيفية إزالة المرفقات من مستند PDF.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteAllAttachments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Attachments();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "DeleteAllAttachments.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllAttachments.pdf"))
+    {
+        // Delete all attachments
+        document.EmbeddedFiles.Delete();
 
-// حذف جميع المرفقات
-pdfDocument.EmbeddedFiles.Delete();
-
-// حفظ المستند المُحدث
-pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllAttachments_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -128,21 +135,21 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -153,7 +160,7 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -165,5 +172,3 @@ pdfDocument.Save(dataDir + "DeleteAllAnnotationsFromPage_out.pdf");
     }
 }
 </script>
-```
-

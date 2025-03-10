@@ -1,10 +1,12 @@
 ---
-title: Ajouter des timbres de page PDF dans un PDF à l'aide de C#
-linktitle: Timbres de page dans le fichier PDF
+title: Ajouter des tampons de page PDF dans un PDF en utilisant C#
+linktitle: Tampons de page dans un fichier PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /fr/net/page-stamps-in-the-pdf-file/
-description: Ajouter un timbre de page à un document PDF en utilisant la classe PdfPageStamp avec la bibliothèque Aspose.PDF pour .NET.
+description: Ajoutez un tampon de page à un document PDF en utilisant la classe PdfPageStamp avec la bibliothèque Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Ajouter des timbres de page PDF dans un PDF à l'aide de C#",
-    "alternativeHeadline": "Ajouter des timbres de page PDF dans un PDF à l'aide de C#",
+    "headline": "Add PDF Page Stamps in PDF using C#",
+    "alternativeHeadline": "Enhance PDFs with Custom Page Stamps in C#",
+    "abstract": "Débloquez des capacités d'édition PDF puissantes avec la nouvelle fonctionnalité de tampon de page dans Aspose.PDF for .NET. Ajoutez facilement des tampons composites personnalisables incorporant des graphiques, du texte et des tableaux directement sur vos documents PDF, améliorant ainsi leur attrait visuel et leur fonctionnalité. Idéal pour créer des designs de type papeterie professionnelle, cette fonctionnalité simplifie la génération et la manipulation de documents en C#",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "génération de documents PDF",
-    "keywords": "pdf, c#, génération de documents",
-    "wordcount": "302",
-    "proficiencyLevel":"Débutant",
+    "genre": "pdf document generation",
+    "wordcount": "212",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Équipe de documentation Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,45 +73,38 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/page-stamps-in-the-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Ajouter un timbre de page à un document PDF en utilisant la classe PdfPageStamp avec la bibliothèque Aspose.PDF pour .NET."
+    "dateModified": "2024-11-26",
+    "description": "Ajoutez un tampon de page à un document PDF en utilisant la classe PdfPageStamp avec la bibliothèque Aspose.PDF for .NET."
 }
 </script>
-## Ajouter un cachet de page avec C\#
 
-Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) peut être utilisé lorsque vous avez besoin d'appliquer un cachet composite contenant des graphiques, du texte, des tableaux. L'exemple suivant montre comment utiliser un cachet pour créer une papeterie comme avec Adobe InDesign, Illustrator, Microsoft Word. Supposons que nous ayons un document d'entrée et que nous voulions appliquer 2 types de bordures de couleur bleue et prune.
+## Ajouter un tampon de page avec C\#
 
-Le fragment de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
+Un [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) peut être utilisé lorsque vous devez appliquer un tampon composite contenant des graphiques, du texte, des tableaux. L'exemple suivant montre comment utiliser un tampon pour créer une papeterie comme dans Adobe InDesign, Illustrator, Microsoft Word. Supposons que nous ayons un document d'entrée et que nous souhaitions appliquer 2 types de bordures avec des couleurs bleu et prune.
+
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
-public static void AddPageStamp()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPageStamp()
 {
-    var inputFileName = "sample-4pages.pdf";
-    var outputFileName = "AddPageStamp_out.pdf";
-    var pageStampFileName = "PageStamp.pdf";
-    var document = new Document(_dataDir + inputFileName);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-    var bluePageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 1)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddPageStampInput.pdf"))
     {
-        Height = 800,
-        Background = true
-    };
-
-    var plumPageStamp = new PdfPageStamp(_dataDir + pageStampFileName, 2)
-    {
-        Height = 800,
-        Background = true
-    };
-
-    for (int i = 1; i < 5; i++)
-    {
-        if (i % 2 == 0)
-            document.Pages[i].AddStamp(bluePageStamp);
-        else
-            document.Pages[i].AddStamp(plumPageStamp);
+        //Create PdfPageStamps
+        var bluePageStamp = new Aspose.Pdf.PdfPageStamp(dataDir + "AddPageStamp.pdf", 1)
+        {
+            Height = 800,
+            Background = true
+        };
+        // Add stamps
+        document.Pages[1].AddStamp(bluePageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddPageStamp_out.pdf");
     }
-
-    document.Save(_dataDir + outputFileName);
 }
 ```
 
@@ -139,21 +134,21 @@ public static void AddPageStamp()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventes",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -164,7 +159,7 @@ public static void AddPageStamp()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Bibliothèque de manipulation de PDF pour .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -176,5 +171,3 @@ public static void AddPageStamp()
     }
 }
 </script>
-```
-

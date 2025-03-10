@@ -2,9 +2,11 @@
 title: Criar ou Adicionar Tabela em PDF usando C#
 linktitle: Criar ou Adicionar Tabela
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /pt/net/add-table-in-existing-pdf-document/
-description: Aspose.PDF para .NET é uma biblioteca usada para criar, ler e editar Tabelas PDF. Verifique outras funções avançadas neste tópico.
+description: Aspose.PDF for .NET é uma biblioteca usada para criar, ler e editar Tabelas PDF. Confira outras funções avançadas neste tópico.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Criar ou Adicionar Tabela em PDF usando C#",
-    "alternativeHeadline": "Como adicionar Tabela em PDF com .NET",
+    "headline": "Create or Add Table In PDF using C#",
+    "alternativeHeadline": "Add Tables to PDFs Effortlessly with C#",
+    "abstract": "O novo recurso em Aspose.PDF for .NET permite que os desenvolvedores criem e adicionem tabelas a documentos PDF existentes usando C#. Essa funcionalidade inclui recursos avançados, como bordas personalizáveis, preenchimento de células e suporte para mesclar células com ColSpan e RowSpan, melhorando a apresentação de dados em arquivos PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documentos PDF",
-    "keywords": "pdf, c#, criar tabela em pdf, adicionar tabela",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "wordcount": "3283",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipe de Documentação Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,146 +73,159 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-table-in-existing-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF para .NET é uma biblioteca usada para criar, ler e editar Tabelas PDF. Verifique outras funções avançadas neste tópico."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF for .NET é uma biblioteca usada para criar, ler e editar Tabelas PDF. Confira outras funções avançadas neste tópico."
 }
 </script>
+
 ## Criando Tabela usando C\#
 
-Tabelas são importantes ao trabalhar com documentos PDF. Elas oferecem ótimas funcionalidades para exibição de informações de maneira sistemática. O namespace Aspose.PDF contém classes chamadas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) e [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) que fornecem funcionalidades para a criação de tabelas ao gerar documentos PDF do zero.
+Tabelas são importantes ao trabalhar com documentos PDF. Elas fornecem ótimos recursos para exibir informações de maneira sistemática. O namespace Aspose.PDF contém classes chamadas [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) e [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) que oferecem funcionalidade para criar tabelas ao gerar documentos PDF do zero.
 
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-Uma tabela pode ser criada ao criar um objeto da Classe Table.
+A tabela pode ser criada criando um objeto da classe Table.
 
 ```csharp
 Aspose.Pdf.Table table = new Aspose.Pdf.Table();
 ```
 
-### Adicionando Tabela em um Documento PDF Existente
+### Adicionando Tabela em Documento PDF Existente
 
-Para adicionar uma tabela a um arquivo PDF existente com Aspose.PDF para .NET, siga os passos abaixo:
+Para adicionar uma tabela a um arquivo PDF existente com Aspose.PDF for .NET, siga os seguintes passos:
 
-1. Carregue o arquivo fonte.
+1. Carregue o arquivo de origem.
 1. Inicialize uma tabela e defina suas colunas e linhas.
-1. Configure as definições da tabela (definimos as bordas).
+1. Defina as configurações da tabela (definimos as bordas).
 1. Preencha a tabela.
 1. Adicione a tabela a uma página.
-1.
-1.
+1. Salve o arquivo.
 
 Os seguintes trechos de código mostram como adicionar texto em um arquivo PDF existente.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor acesse https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-// Carregar o documento PDF de origem
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "AddTable.pdf");
-// Inicializa uma nova instância da Tabela
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-// Define a cor da borda da tabela como Cinza Claro
-table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Define a borda para as células da tabela
-table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Cria um loop para adicionar 10 linhas
-for (int row_count = 1; row_count < 10; row_count++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTable()
 {
-    // Adiciona linha à tabela
-    Aspose.Pdf.Row row = table.Rows.Add();
-    // Adiciona células à tabela
-    row.Cells.Add("Coluna (" + row_count + ", 1)");
-    row.Cells.Add("Coluna (" + row_count + ", 2)");
-    row.Cells.Add("Coluna (" + row_count + ", 3)");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddTable.pdf"))
+    {
+        // Initializes a new instance of the Table
+        Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+        // Set the table border color as LightGray
+        table.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
+        // Set the border for table cells
+        table.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
+        // Create a loop to add 10 rows
+        for (int row_count = 1; row_count < 10; row_count++)
+        {
+            // Add row to table
+            Aspose.Pdf.Row row = table.Rows.Add();
+            // Add table cells
+            row.Cells.Add("Column (" + row_count + ", 1)");
+            row.Cells.Add("Column (" + row_count + ", 2)");
+            row.Cells.Add("Column (" + row_count + ", 3)");
+        }
+        // Add table object to first page of input document
+        document.Pages[1].Paragraphs.Add(table);
+
+        // Save PDF document
+        document.Save(dataDir + "AddTable_out.pdf");
+    }
 }
-// Adiciona o objeto tabela à primeira página do documento de entrada
-doc.Pages[1].Paragraphs.Add(table);
-dataDir = dataDir + "documento_com_tabela_out.pdf";
-// Salva o documento atualizado contendo o objeto tabela
-doc.Save(dataDir);
 ```
+
 ### ColSpan e RowSpan em Tabelas
 
-Aspose.PDF para .NET fornece a propriedade [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) para mesclar colunas em uma tabela e a propriedade [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) para mesclar linhas.
+Aspose.PDF for .NET fornece a propriedade [ColSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/colspan) para mesclar as colunas em uma tabela e a propriedade [RowSpan](https://reference.aspose.com/pdf/net/aspose.pdf/cell/properties/rowspan) para mesclar as linhas.
 
 Usamos a propriedade `ColSpan` ou `RowSpan` no objeto `Cell` que cria a célula da tabela. Após aplicar as propriedades necessárias, a célula criada pode ser adicionada à tabela.
 
 ```csharp
-public static void AddTable_RowColSpan()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTableRowColSpan()
 {
-    // Carrega o documento PDF de origem
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document();
-    pdfDocument.Pages.Add();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-    // Inicializa uma nova instância da Tabela
-    Aspose.Pdf.Table table = new Aspose.Pdf.Table
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        // Define a cor da borda da tabela como CinzaClaro
-        Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Color.Black),
-        // Define a borda para as células da tabela
-        DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Color.Black)
-    };
+        // Add page
+        var page = document.Pages.Add();
 
-    // Adiciona a 1ª linha à tabela
-    Aspose.Pdf.Row row1 = table.Rows.Add();
-    for (int cellCount = 1; cellCount <5; cellCount++)
-    {
-        // Adiciona células à tabela
-        row1.Cells.Add($"Teste 1 {cellCount}");
+        // Initializes a new instance of the Table
+        Aspose.Pdf.Table table = new Aspose.Pdf.Table
+        {
+            // Set the table border color as LightGray
+            Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Color.Black),
+            // Set the border for table cells
+            DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, .5f, Color.Black)
+        };
+
+        // Add 1st row to table
+        Aspose.Pdf.Row row1 = table.Rows.Add();
+        for (int cellCount = 1; cellCount <5; cellCount++)
+        {
+            // Add table cells
+            row1.Cells.Add($"Test 1 {cellCount}");
+        }
+
+        // Add 2nd row to table
+        Aspose.Pdf.Row row2 = table.Rows.Add();
+        row2.Cells.Add($"Test 2 1");
+        var cell = row2.Cells.Add($"Test 2 2");
+        cell.ColSpan = 2;
+        row2.Cells.Add($"Test 2 4");
+
+        // Add 3rd row to table
+        Aspose.Pdf.Row row3 = table.Rows.Add();
+        row4.Cells.Add("Test 3 1");
+        row4.Cells.Add("Test 3 2");
+        row4.Cells.Add("Test 3 3");
+        row4.Cells.Add("Test 3 4");
+
+        // Add 4th row to table
+        Aspose.Pdf.Row row4 = table.Rows.Add();
+        row3.Cells.Add("Test 4 1");
+        cell = row3.Cells.Add("Test 4 2");
+        cell.RowSpan = 2;
+        row3.Cells.Add("Test 4 3");
+        row3.Cells.Add("Test 4 4");
+
+        // Add 5th row to table
+        row4 = table.Rows.Add();
+        row4.Cells.Add("Test 5 1");
+        row4.Cells.Add("Test 5 3");
+        row4.Cells.Add("Test 5 4");
+
+        // Add table object to first page of input document
+        page.Paragraphs.Add(table);
+
+        // Save PDF document
+        document.Save(dataDir + "AddTableRowColSpan_out.pdf");
     }
-
-    // Adiciona a 2ª linha à tabela
-    Aspose.Pdf.Row row2 = table.Rows.Add();
-    row2.Cells.Add($"Teste 2 1");
-    var cell = row2.Cells.Add($"Teste 2 2");
-    cell.ColSpan = 2;
-    row2.Cells.Add($"Teste 2 4");
-
-    // Adiciona a 3ª linha à tabela
-    Aspose.Pdf.Row row3 = table.Rows.Add();
-    row3.Cells.Add("Teste 3 1");
-    row3.Cells.Add("Teste 3 2");
-    row3.Cells.Add("Teste 3 3");
-    row3.Cells.Add("Teste 3 4");
-
-    // Adiciona a 4ª linha à tabela
-    Aspose.Pdf.Row row4 = table.Rows.Add();
-    row4.Cells.Add("Teste 4 1");
-    cell = row4.Cells.Add("Teste 4 2");
-    cell.RowSpan = 2;
-    row4.Cells.Add("Teste 4 3");
-    row4.Cells.Add("Teste 4 4");
-
-    // Adiciona a 5ª linha à tabela
-    row4 = table.Rows.Add();
-    row4.Cells.Add("Teste 5 1");
-    row4.Cells.Add("Teste 5 3");
-    row4.Cells.Add("Teste 5 4");
-
-    // Adiciona o objeto tabela à primeira página do documento de entrada
-    pdfDocument.Pages[1].Paragraphs.Add(table);
-
-    // Salva o documento atualizado contendo o objeto tabela
-    doc.Save(Path.Combine(_dataDir, "document_with_table_out.pdf"));
 }
 ```
-O resultado do código de execução abaixo é a tabela mostrada na seguinte imagem:
 
-![ColSpan and RowSpan demo](colspan_rowspan.png)
+O resultado da execução do código abaixo é a tabela representada na imagem a seguir:
+
+![Demonstração de ColSpan e RowSpan](colspan_rowspan.png)
 
 ## Trabalhando com Bordas, Margens e Preenchimento
 
-Observe que também suporta o recurso para definir estilo de borda, margens e preenchimento de célula para tabelas. Antes de entrar em detalhes técnicos, é importante entender os conceitos de borda, margens e preenchimento que são apresentados abaixo em um diagrama:
+Observe que também suporta o recurso de definir estilo de borda, margens e preenchimento de células para tabelas. Antes de entrar em mais detalhes técnicos, é importante entender os conceitos de borda, margens e preenchimento, que são apresentados abaixo em um diagrama:
 
 ![Bordas, margens e preenchimento](set-border-style-margins-and-padding-of-table_1.png)
 
-Na figura acima, você pode ver que as bordas da tabela, linha e célula se sobrepõem. Usando Aspose.PDF, uma tabela pode ter margens e as células podem ter preenchimentos. Para definir as margens das células, temos que definir o preenchimento da célula.
+Na figura acima, você pode ver que as bordas da tabela, linha e célula se sobrepõem. Usando Aspose.PDF, uma tabela pode ter margens e as células podem ter preenchimentos. Para definir as margens da célula, precisamos definir o preenchimento da célula.
 
 ### Bordas
 
-Para definir as bordas dos objetos Tabela, [Linha](https://reference.aspose.com/pdf/net/aspose.pdf/row) e [Célula](https://reference.aspose.com/pdf/net/aspose.pdf/cell), use as propriedades Table.Border, Row.Border e Cell.Border.
-Para definir as bordas de objetos Table, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) e [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), utilize as propriedades Table.Border, Row.Border e Cell.Border.
+Para definir as bordas da Tabela, [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) e objetos [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), use as propriedades Table.Border, Row.Border e Cell.Border. As bordas das células também podem ser definidas usando a propriedade DefaultCellBorder da classe [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table) ou Row. Todas as propriedades relacionadas a bordas discutidas acima são atribuídas a uma instância da classe Row, que é criada chamando seu construtor. A classe Row tem muitas sobrecargas que aceitam quase todos os parâmetros necessários para personalizar a borda.
 
 ### Margens ou Preenchimento
 
@@ -218,346 +233,389 @@ O preenchimento da célula pode ser gerenciado usando a propriedade [DefaultCell
 
 No exemplo a seguir, a largura da borda da célula é definida como 0,1 ponto, a largura da borda da tabela é definida como 1 ponto e o preenchimento da célula é definido como 5 pontos.
 
-![Margem e Bordas em Tabela PDF](margin-border.png)
+![Margem e Borda na Tabela PDF](margin-border.png)
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddMarginsOrPadding()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Instancie o objeto Document chamando seu construtor vazio
-Document doc = new Document();
-Page page = doc.Pages.Add();
-// Instancie um objeto tabela
-Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
-// Adicione a tabela na coleção de parágrafos da seção desejada
-page.Paragraphs.Add(tab1);
-// Defina as larguras das colunas da tabela
-tab1.ColumnWidths = "50 50 50";
-// Defina a borda da célula padrão usando o objeto BorderInfo
-tab1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
-// Defina a borda da tabela usando outro objeto BorderInfo personalizado
-tab1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
-// Crie um objeto MarginInfo e defina suas margens esquerda, inferior, direita e superior
-Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
-margin.Top = 5f;
-margin.Left = 5f;
-margin.Right = 5f;
-margin.Bottom = 5f;
-// Defina o preenchimento padrão da célula para o objeto MarginInfo
-tab1.DefaultCellPadding = margin;
-// Crie linhas na tabela e então células nas linhas
-Aspose.Pdf.Row row1 = tab1.Rows.Add();
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add();
-TextFragment mytext = new TextFragment("col3 com um texto longo");
-// Row1.Cells.Add("col3 com um texto longo para ser colocado dentro da célula");
-row1.Cells[2].Paragraphs.Add(mytext);
-row1.Cells[2].IsWordWrapped = false;
-// Row1.Cells[2].Paragraphs[0].FixedWidth= 80;
-Aspose.Pdf.Row row2 = tab1.Rows.Add();
-row2.Cells.Add("item1");
-row2.Cells.Add("item2");
-row2.Cells.Add("item3");
-dataDir = dataDir + "MarginsOrPadding_out.pdf";
-// Salve o PDF
-doc.Save(dataDir);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        Aspose.Pdf.Page page = document.Pages.Add();
+        // Instantiate a table object
+        Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
+        // Add the table in paragraphs collection of the desired section
+        page.Paragraphs.Add(tab1);
+        // Set with column widths of the table
+        tab1.ColumnWidths = "50 50 50";
+        // Set default cell border using BorderInfo object
+        tab1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
+        // Set table border using another customized BorderInfo object
+        tab1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
+        // Create MarginInfo object and set its left, bottom, right and top margins
+        Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
+        margin.Top = 5f;
+        margin.Left = 5f;
+        margin.Right = 5f;
+        margin.Bottom = 5f;
+        // Set the default cell padding to the MarginInfo object
+        tab1.DefaultCellPadding = margin;
+        // Create rows in the table and then cells in the rows
+        Aspose.Pdf.Row row1 = tab1.Rows.Add();
+        row1.Cells.Add("col1");
+        row1.Cells.Add("col2");
+        row1.Cells.Add();
+        Aspose.Pdf.Text.TextFragment mytext = new Aspose.Pdf.Text.TextFragment("col3 with large text string");
+        // Row1.Cells.Add("col3 with large text string to be placed inside cell");
+        row1.Cells[2].Paragraphs.Add(mytext);
+        row1.Cells[2].IsWordWrapped = false;
+        // Row1.Cells[2].Paragraphs[0].FixedWidth= 80;
+        Aspose.Pdf.Row row2 = tab1.Rows.Add();
+        row2.Cells.Add("item1");
+        row2.Cells.Add("item2");
+        row2.Cells.Add("item3");
+        // Save PDF document
+        document.Save(dataDir + "MarginsOrPadding_out.pdf");
+    }
+}
 ```
-Para criar uma tabela com cantos arredondados, utilize o valor `RoundedBorderRadius` da classe BorderInfo e defina o estilo dos cantos da tabela para arredondado.
+
+Para criar uma tabela com cantos arredondados, use o valor `RoundedBorderRadius` da classe BorderInfo e defina o estilo do canto da tabela como arredondado.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateTableWithRoundCorner()
+{
+    Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
 
-GraphInfo graph = new GraphInfo();
-graph.Color = Aspose.Pdf.Color.Red;
-// Criar um objeto BorderInfo em branco
-BorderInfo bInfo = new BorderInfo(BorderSide.All, graph);
-// Definir a borda com um raio arredondado de 15
-bInfo.RoundedBorderRadius = 15;
-// Definir o estilo dos cantos da tabela como Arredondado.
-tab1.CornerStyle = Aspose.Pdf.BorderCornerStyle.Round;
-// Definir as informações de borda da tabela
-tab1.Border = bInfo;
+    Aspose.Pdf.GraphInfo graph = new Aspose.Pdf.GraphInfo();
+    graph.Color = Aspose.Pdf.Color.Red;
+    // Create a blank BorderInfo object
+    Aspose.Pdf.BorderInfo bInfo = new Aspose.Pdf.BorderInfo(BorderSide.All, graph);
+    // Set the border a rounder border where radius of round is 15
+    bInfo.RoundedBorderRadius = 15;
+    // Set the table Corner style as Round.
+    tab1.CornerStyle = Aspose.Pdf.BorderCornerStyle.Round;
+    // Set the table border information
+    tab1.Border = bInfo;
+}
 ```
 
-## Aplicando Diferentes Configurações de AutoAjuste a uma Tabela
+## Aplicando Diferentes Configurações de AutoFit a uma Tabela
 
-Ao criar uma tabela usando um agente visual como o Microsoft Word, você frequentemente se encontrará utilizando uma das opções de AutoAjuste para dimensionar automaticamente a tabela para a largura desejada.
-Ao criar uma tabela usando um agente visual como o Microsoft Word, você frequentemente se encontrará usando uma das opções de AutoAjuste para dimensionar automaticamente a tabela para a largura desejada.
+Ao criar uma tabela usando um agente visual como o Microsoft Word, você frequentemente se verá usando uma das opções de AutoFit para ajustar automaticamente a tabela à largura desejada. Por exemplo, você pode usar a opção AutoFit to Window para ajustar a tabela à largura da página e a opção AutoFit to Contents para permitir que cada célula cresça ou encolha para acomodar seu conteúdo.
 
-Por padrão, o Aspose.Pdf insere uma nova tabela usando `ColumnAdjustment` com valor `Customized`. A tabela ajustará seu tamanho para a largura disponível na página. Para alterar o comportamento de dimensionamento de tal tabela ou de uma tabela existente, você pode chamar o método Table.autoFit(int). Este método aceita uma enumeração AutoFitBehavior que define que tipo de ajuste automático é aplicado à tabela.
+Por padrão, Aspose.PDF insere uma nova tabela usando `ColumnAdjustment` com o valor `Customized`. A tabela será ajustada à largura disponível na página. Para alterar o comportamento de dimensionamento em tal tabela ou em uma tabela existente, você pode chamar o método Table.autoFit(int). Este método aceita uma enumeração AutoFitBehavior que define que tipo de ajuste automático é aplicado à tabela.
 
-Assim como no Microsoft Word, um método de autofit é na verdade um atalho que aplica diferentes propriedades à tabela de uma só vez. Essas propriedades são na verdade o que dá à tabela o comportamento observado. Discutiremos essas propriedades para cada opção de autofit. Usaremos a seguinte tabela e aplicaremos as diferentes configurações de ajuste automático como demonstração:
+Assim como no Microsoft Word, um método de autofit é na verdade um atalho que aplica diferentes propriedades à tabela de uma só vez. Essas propriedades são, na verdade, o que dá à tabela o comportamento observado. Discutiremos essas propriedades para cada opção de autofit. Usaremos a seguinte tabela e aplicaremos as diferentes configurações de ajuste automático como demonstração:
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddAutoFitToWindow()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Instancie o objeto Pdf chamando seu construtor vazio
-Document doc = new Document();
-// Crie a seção no objeto Pdf
-Page sec1 = doc.Pages.Add();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        Aspose.Pdf.Page sec1 = document.Pages.Add();
 
-// Instancie um objeto tabela
-Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
-// Adicione a tabela na coleção de parágrafos da seção desejada
-sec1.Paragraphs.Add(tab1);
+        // Instantiate a table object
+        Aspose.Pdf.Table tab1 = new Aspose.Pdf.Table();
+        // Add the table in paragraphs collection of the desired section
+        sec1.Paragraphs.Add(tab1);
 
-// Defina as larguras das colunas da tabela
-tab1.ColumnWidths = "50 50 50";
-tab1.ColumnAdjustment = ColumnAdjustment.AutoFitToWindow;
+        // Set with column widths of the table
+        tab1.ColumnWidths = "50 50 50";
+        tab1.ColumnAdjustment = ColumnAdjustment.AutoFitToWindow;
 
-// Defina a borda padrão da célula usando o objeto BorderInfo
-tab1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
+        // Set default cell border using BorderInfo object
+        tab1.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.1F);
 
-// Defina a borda da tabela usando outro objeto BorderInfo personalizado
-tab1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
-// Crie um objeto MarginInfo e defina suas margens esquerda, inferior, direita e superior
-Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
-margin.Top = 5f;
-margin.Left = 5f;
-margin.Right = 5f;
-margin.Bottom = 5f;
+        // Set table border using another customized BorderInfo object
+        tab1.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 1F);
+        // Create MarginInfo object and set its left, bottom, right and top margins
+        Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
+        margin.Top = 5f;
+        margin.Left = 5f;
+        margin.Right = 5f;
+        margin.Bottom = 5f;
 
-// Defina o preenchimento padrão da célula para o objeto MarginInfo
-tab1.DefaultCellPadding = margin;
+        // Set the default cell padding to the MarginInfo object
+        tab1.DefaultCellPadding = margin;
 
-// Crie linhas na tabela e então células nas linhas
-Aspose.Pdf.Row row1 = tab1.Rows.Add();
-row1.Cells.Add("col1");
-row1.Cells.Add("col2");
-row1.Cells.Add("col3");
-Aspose.Pdf.Row row2 = tab1.Rows.Add();
-row2.Cells.Add("item1");
-row2.Cells.Add("item2");
-row2.Cells.Add("item3");
+        // Create rows in the table and then cells in the rows
+        Aspose.Pdf.Row row1 = tab1.Rows.Add();
+        row1.Cells.Add("col1");
+        row1.Cells.Add("col2");
+        row1.Cells.Add("col3");
+        Aspose.Pdf.Row row2 = tab1.Rows.Add();
+        row2.Cells.Add("item1");
+        row2.Cells.Add("item2");
+        row2.Cells.Add("item3");
 
-dataDir = dataDir + "AutoFitToWindow_out.pdf";
-// Salve o documento atualizado contendo o objeto tabela
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AutoFitToWindow_out.pdf");
+    }
+}
 ```
+
 ### Obter Largura da Tabela
 
-Às vezes, é necessário obter a largura da tabela dinamicamente. A classe Aspose.PDF.Table possui um método [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) para esse propósito. Por exemplo, você não definiu explicitamente a largura das colunas da tabela e configurou [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) para AutoFitToContent. Neste caso, você pode obter a largura da tabela da seguinte forma.
+Às vezes, é necessário obter a largura da tabela dinamicamente. A classe Aspose.PDF.Table tem um método [GetWidth](https://reference.aspose.com/pdf/net/aspose.pdf/table/methods/getwidth) para esse propósito. Por exemplo, você não definiu a largura das colunas da tabela explicitamente e definiu [ColumnAdjustment](https://reference.aspose.com/pdf/net/aspose.pdf/table/properties/columnadjustment) para AutoFitToContent. Nesse caso, você pode obter a largura da tabela da seguinte forma.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Criar um novo documento
-Document doc = new Document();
-// Adicionar página no documento
-Page page = doc.Pages.Add();
-// Inicializar nova tabela
-Table table = new Table
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetTableWidth()
 {
-    ColumnAdjustment = ColumnAdjustment.AutoFitToContent
-};
-// Adicionar linha na tabela
-Row row = table.Rows.Add();
-// Adicionar célula na tabela
-Cell cell = row.Cells.Add("Texto da Célula 1");
-cell = row.Cells.Add("Texto da Célula 2");
-// Obter largura da tabela
-Console.WriteLine(table.GetWidth());
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        Aspose.Pdf.Page page = document.Pages.Add();
+        // Initialize new table
+        Aspose.Pdf.Table table = new Aspose.Pdf.Table
+        {
+            ColumnAdjustment = ColumnAdjustment.AutoFitToContent
+        };
+        // Add row in table
+        Aspose.Pdf.Row row = table.Rows.Add();
+        // Add cell in table
+        Aspose.Pdf.Cell cell = row.Cells.Add("Cell 1 text");
+        cell = row.Cells.Add("Cell 2 text");
+        // Get table width
+        Console.WriteLine(table.GetWidth());
+    }
+}
 ```
 
-## Adicionar Imagem SVG em Célula de Tabela
-## Adicionar Imagem SVG à Célula de Tabela
+## Adicionar Imagem SVG à Célula da Tabela
 
-Aspose.PDF para .NET suporta a funcionalidade de adicionar uma célula de tabela a um arquivo PDF. Ao criar uma tabela, é possível adicionar texto ou imagens às células. Além disso, a API também oferece a funcionalidade de converter arquivos SVG para o formato PDF. Usando uma combinação dessas funcionalidades, é possível carregar uma imagem SVG e adicioná-la a uma célula de tabela.
+Aspose.PDF for .NET suporta o recurso de adicionar uma célula de tabela em um arquivo PDF. Ao criar uma tabela, é possível adicionar texto ou imagens nas células. Além disso, a API também oferece o recurso de converter arquivos SVG para o formato PDF. Usando uma combinação desses recursos, é possível carregar uma imagem SVG e adicioná-la a uma célula da tabela.
 
-O seguinte trecho de código mostra os passos para criar uma instância de tabela e adicionar uma imagem SVG dentro de uma célula de tabela.
+O seguinte trecho de código mostra os passos para criar uma instância de tabela e adicionar uma imagem SVG dentro de uma célula da tabela.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddSvgObjectToTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Instanciar objeto Document
-Document doc = new Document();
-// Criar uma instância de imagem
-Aspose.Pdf.Image img = new Aspose.Pdf.Image();
-// Definir o tipo de imagem como SVG
-img.FileType = Aspose.Pdf.ImageFileType.Svg;
-// Caminho para o arquivo fonte
-img.File = dataDir + "SVGToPDF.svg";
-// Definir largura para a instância de imagem
-img.FixWidth = 50;
-// Definir altura para a instância de imagem
-img.FixHeight = 50;
-// Criar instância de tabela
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-// Definir largura para as células da tabela
-table.ColumnWidths = "100 100";
-// Criar objeto de linha e adicioná-lo à instância de tabela
-Aspose.Pdf.Row row = table.Rows.Add();
-// Criar objeto de célula e adicioná-lo à instância de linha
-Aspose.Pdf.Cell cell = row.Cells.Add();
-// Adicionar textfragment à coleção de parágrafos do objeto de célula
-cell.Paragraphs.Add(new TextFragment("Primeira célula"));
-// Adicionar outra célula ao objeto de linha
-cell = row.Cells.Add();
-// Adicionar imagem SVG à coleção de parágrafos da célula recentemente adicionada
-cell.Paragraphs.Add(img);
-// Criar objeto de página e adicioná-lo à coleção de páginas do documento
-Page page = doc.Pages.Add();
-// Adicionar tabela à coleção de parágrafos do objeto de página
-page.Paragraphs.Add(table);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Create an image instance
+        Aspose.Pdf.Image img = new Aspose.Pdf.Image();
+        // Set image type as SVG
+        img.FileType = Aspose.Pdf.ImageFileType.Svg;
+        // Path for source file
+        img.File = dataDir + "SVGToPDF.svg";
+        // Set width for image instance
+        img.FixWidth = 50;
+        // Set height for image instance
+        img.FixHeight = 50;
+        // Create table instance
+        Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+        // Set width for table cells
+        table.ColumnWidths = "100 100";
+        // Create row object and add it to table instance
+        Aspose.Pdf.Row row = table.Rows.Add();
+        // Create cell object and add it to row instance
+        Aspose.Pdf.Cell cell = row.Cells.Add();
+        // Add textfragment to paragraphs collection of cell object
+        cell.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("First cell"));
+        // Add another cell to row object
+        cell = row.Cells.Add();
+        // Add SVG image to paragraphs collection of recently added cell instance
+        cell.Paragraphs.Add(img);
+        // Create page object and add it to pages collection of document instance
+        Aspose.Pdf.Page page = document.Pages.Add();
+        // Add table to paragraphs collection of page object
+        page.Paragraphs.Add(table);
 
-dataDir = dataDir + "AddSVGObject_out.pdf";
-// Salvar arquivo PDF
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddSVGObjectToTable_out.pdf");
+    }
+}
 ```
-## Usando Tags HTML Dentro de Tabelas
 
-Às vezes, você pode se deparar com a necessidade de importar conteúdos de banco de dados que possuem algumas tags HTML e, em seguida, importar o conteúdo para o objeto Tabela. Ao importar o conteúdo, as tags HTML devem ser renderizadas adequadamente dentro do documento PDF. Aprimoramos o método ImprotDataTable(), para alcançar tal requisito da seguinte forma:
+## Usando Tags HTML dentro da Tabela
+
+Às vezes, você pode ter a necessidade de importar conteúdos de banco de dados que possuem algumas tags HTML e, em seguida, importar o conteúdo para o objeto Tabela. Ao importar o conteúdo, ele deve renderizar as tags HTML de acordo dentro do documento PDF. Melhoramos o método ImprotDataTable() para atender a essa necessidade da seguinte forma:
 
 {{% alert color="primary" %}}
 
-Por favor, leve em conta que o uso de Tags HTML dentro do elemento tabela aumenta o tempo de geração do documento, pois a API precisa processar as Tags HTML adequadamente e renderizá-las no documento PDF de saída.
+Por favor, leve em conta que o uso de Tags HTML dentro do elemento da tabela aumenta o tempo de geração do documento, pois a API precisa processar as Tags HTML de acordo e renderizá-las no documento PDF de saída.
 
 {{% /alert %}}
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddHtmlInsideTableCell()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-DataTable dt = new DataTable("Employee");
-dt.Columns.Add("data", System.Type.GetType("System.String"));
+    DataTable dt = new DataTable("Employee");
+    dt.Columns.Add("data", System.Type.GetType("System.String"));
 
-DataRow dr = dt.NewRow();
-dr[0] = "<li>Departamento de Medicina de Emergência: 3400 Spruce Street Ground Silverstein Bldg Philadelphia PA 19104-4206</li>";
-dt.Rows.Add(dr);
-dr = dt.NewRow();
-dr[0] = "<li>Serviço de Medicina de Observação da Penn: 3400 Spruce Street Ground Floor Donner Philadelphia PA 19104-4206</li>";
-dt.Rows.Add(dr);
-dr = dt.NewRow();
-dr[0] = "<li>UPHS/Presbyterian - Dept. de Medicina de Emergência: 51 N. 39th Street. Philadelphia PA 19104-2640</li>";
-dt.Rows.Add(dr);
+    DataRow dr = dt.NewRow();
+    dr[0] = "<li>Department of Emergency Medicine: 3400 Spruce Street Ground Silverstein Bldg Philadelphia PA 19104-4206</li>";
+    dt.Rows.Add(dr);
+    dr = dt.NewRow();
+    dr[0] = "<li>Penn Observation Medicine Service: 3400 Spruce Street Ground Floor Donner Philadelphia PA 19104-4206</li>";
+    dt.Rows.Add(dr);
+    dr = dt.NewRow();
+    dr[0] = "<li>UPHS/Presbyterian - Dept. of Emergency Medicine: 51 N. 39th Street . Philadelphia PA 19104-2640</li>";
+    dt.Rows.Add(dr);
 
-Document doc = new Document();
-doc.Pages.Add();
-// Inicializa uma nova instância da Tabela
-Aspose.Pdf.Table tableProvider = new Aspose.Pdf.Table();
-// Define as larguras das colunas da tabela
-tableProvider.ColumnWidths = "400 50 ";
-// Define a cor da borda da tabela como Cinza Claro
-tableProvider.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.5F, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-// Define a borda para as células da tabela
-tableProvider.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.5F, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
-Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
-margin.Top = 2.5F;
-margin.Left = 2.5F;
-margin.Bottom = 1.0F;
-tableProvider.DefaultCellPadding = margin;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Initializes a new instance of the Table
+        Aspose.Pdf.Table tableProvider = new Aspose.Pdf.Table();
+        //Set column widths of the table
+        tableProvider.ColumnWidths = "400 50 ";
+        // Set the table border color as LightGray
+        tableProvider.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.5F, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
+        // Set the border for table cells
+        tableProvider.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, 0.5F, Aspose.Pdf.Color.FromRgb(System.Drawing.Color.LightGray));
+        Aspose.Pdf.MarginInfo margin = new Aspose.Pdf.MarginInfo();
+        margin.Top = 2.5F;
+        margin.Left = 2.5F;
+        margin.Bottom = 1.0F;
+        tableProvider.DefaultCellPadding = margin;
 
-tableProvider.ImportDataTable(dt, false, 0, 0, 3, 1, true);
+        tableProvider.ImportDataTable(dt, false, 0, 0, 3, 1, true);
 
-doc.Pages[1].Paragraphs.Add(tableProvider);
-doc.Save(dataDir + "HTMLInsideTableCell_out.pdf");
+        page.Paragraphs.Add(tableProvider);
+
+        // Save PDF document
+        document.Save(dataDir + "HTMLInsideTableCell_out.pdf");
+    }
+}
 ```
-## Inserir uma Quebra de Página entre as linhas de uma tabela
 
-Como um comportamento padrão, ao criar uma tabela dentro de um arquivo PDF, a tabela flui para as páginas subsequentes quando atinge a margem inferior da tabela. No entanto, podemos ter a necessidade de inserir forçosamente uma quebra de página quando um certo número de linhas for adicionado à tabela. O seguinte trecho de código mostra os passos para inserir uma quebra de página quando 10 linhas são adicionadas à tabela.
+## Inserir uma Quebra de Página entre as linhas da tabela
+
+Como comportamento padrão, ao criar uma tabela dentro de um arquivo PDF, a tabela flui para as páginas subsequentes quando atinge a margem inferior da tabela. No entanto, podemos ter a necessidade de forçar a inserção de uma quebra de página quando um certo número de linhas é adicionado à tabela. O seguinte trecho de código mostra os passos para inserir uma quebra de página quando 10 linhas são adicionadas à tabela.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório dos documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-// Instanciar a instância Document
-Document doc = new Document();
-// Adicionar página à coleção de páginas do arquivo PDF
-doc.Pages.Add();
-// Criar instância de tabela
-Aspose.Pdf.Table tab = new Aspose.Pdf.Table();
-// Definir estilo de borda para a tabela
-tab.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Red);
-// Definir estilo de borda padrão para a tabela com cor de borda Vermelha
-tab.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Red);
-// Especificar larguras das colunas da tabela
-tab.ColumnWidths = "100 100";
-// Criar um loop para adicionar 200 linhas à tabela
-for (int counter = 0; counter <= 200; counter++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void InsertPageBreak()
 {
-    Aspose.Pdf.Row row = new Aspose.Pdf.Row();
-    tab.Rows.Add(row);
-    Aspose.Pdf.Cell cell1 = new Aspose.Pdf.Cell();
-    cell1.Paragraphs.Add(new TextFragment("Célula " + counter + ", 0"));
-    row.Cells.Add(cell1); Aspose.Pdf.Cell cell2 = new Aspose.Pdf.Cell();
-    cell2.Paragraphs.Add(new TextFragment("Célula " + counter + ", 1"));
-    row.Cells.Add(cell2);
-    // Quando 10 linhas forem adicionadas, renderizar nova linha em nova página
-    if (counter % 10 == 0 && counter != 0) row.IsInNewPage = true;
-}
-// Adicionar tabela à coleção de parágrafos do arquivo PDF
-doc.Pages[1].Paragraphs.Add(tab);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-dataDir = dataDir + "InsertPageBreak_out.pdf";
-// Salvar o documento PDF
-doc.Save(dataDir);
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Create table instance
+        Aspose.Pdf.Table tab = new Aspose.Pdf.Table();
+        // Set border style for table
+        tab.Border = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Red);
+        // Set default border style for table with border color as Red
+        tab.DefaultCellBorder = new Aspose.Pdf.BorderInfo(Aspose.Pdf.BorderSide.All, Aspose.Pdf.Color.Red);
+        // Specify table columsn widht
+        tab.ColumnWidths = "100 100";
+        // Create a loop to add 200 rows for table
+        for (int counter = 0; counter <= 200; counter++)
+        {
+            Aspose.Pdf.Row row = new Aspose.Pdf.Row();
+            tab.Rows.Add(row);
+            Aspose.Pdf.Cell cell1 = new Aspose.Pdf.Cell();
+            cell1.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Cell " + counter + ", 0"));
+            row.Cells.Add(cell1); Aspose.Pdf.Cell cell2 = new Aspose.Pdf.Cell();
+            cell2.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Cell " + counter + ", 1"));
+            row.Cells.Add(cell2);
+            // When 10 rows are added, render new row in new page
+            if (counter % 10 == 0 && counter != 0)
+            {
+                row.IsInNewPage = true;
+            }
+        }
+        // Add table to paragraphs collection of PDF file
+        page.Paragraphs.Add(tab);
+
+        // Save PDF document
+        document.Save(dataDir + "InsertPageBreak_out.pdf");
+    }
+}
 ```
 
-## Renderizar uma Tabela em uma Nova Página
+## Renderizar uma Tabela em Nova Página
 
-Por padrão, parágrafos são adicionados à coleção de Parágrafos de um objeto Página. No entanto, é possível renderizar uma tabela em uma nova página em vez de diretamente após o objeto de nível de parágrafo adicionado anteriormente na página.
+Por padrão, parágrafos são adicionados à coleção de Parágrafos de um objeto Page. No entanto, é possível renderizar uma tabela em uma nova página em vez de diretamente após o objeto de nível de parágrafo previamente adicionado na página.
 
 ### Exemplo: Como Renderizar uma Tabela em Nova Página usando C\#
 
-Para renderizar uma tabela em uma nova página, use a propriedade [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) na classe BaseParagraph. O seguinte trecho de código mostra como fazer isso.
+Para renderizar a tabela em uma nova página, use a propriedade [IsInNewPage](https://reference.aspose.com/pdf/net/aspose.pdf/baseparagraph/properties/isinnewpage) na classe BaseParagraph. O seguinte trecho de código mostra como.
 
 ```csharp
-// Para exemplos completos e arquivos de dados, por favor, vá para https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// O caminho para o diretório de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-Document doc = new Document();
-PageInfo pageInfo = doc.PageInfo;
-Aspose.Pdf.MarginInfo marginInfo = pageInfo.Margin;
-
-marginInfo.Left = 37;
-marginInfo.Right = 37;
-marginInfo.Top = 37;
-marginInfo.Bottom = 37;
-
-pageInfo.IsLandscape = true;
-
-Aspose.Pdf.Table table = new Aspose.Pdf.Table();
-table.ColumnWidths = "50 100";
-// Página adicionada.
-Page curPage = doc.Pages.Add();
-for (int i = 1; i <= 120; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddTableOnNewPage()
 {
-    Aspose.Pdf.Row row = table.Rows.Add();
-    row.FixedRowHeight = 15;
-    Aspose.Pdf.Cell cell1 = row.Cells.Add();
-    cell1.Paragraphs.Add(new TextFragment("Conteúdo 1"));
-    Aspose.Pdf.Cell cell2 = row.Cells.Add();
-    cell2.Paragraphs.Add(new TextFragment("HHHHH"));
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        Aspose.Pdf.PageInfo pageInfo = document.PageInfo;
+        Aspose.Pdf.MarginInfo marginInfo = pageInfo.Margin;
+
+        marginInfo.Left = 37;
+        marginInfo.Right = 37;
+        marginInfo.Top = 37;
+        marginInfo.Bottom = 37;
+
+        pageInfo.IsLandscape = true;
+
+        Aspose.Pdf.Table table = new Aspose.Pdf.Table();
+        table.ColumnWidths = "50 100";
+        // Add page
+        Page curPage = document.Pages.Add();
+        for (int i = 1; i <= 120; i++)
+        {
+            Aspose.Pdf.Row row = table.Rows.Add();
+            row.FixedRowHeight = 15;
+            Aspose.Pdf.Cell cell1 = row.Cells.Add();
+            cell1.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("Content 1"));
+            Aspose.Pdf.Cell cell2 = row.Cells.Add();
+            cell2.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("HHHHH"));
+        }
+        Aspose.Pdf.Paragraphs paragraphs = curPage.Paragraphs;
+        paragraphs.Add(table);
+
+        Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
+        table.ColumnWidths = "100 100";
+        for (int i = 1; i <= 10; i++)
+        {
+            Aspose.Pdf.Row row = table1.Rows.Add();
+            Aspose.Pdf.Cell cell1 = row.Cells.Add();
+            cell1.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("LAAAAAAA"));
+            Aspose.Pdf.Cell cell2 = row.Cells.Add();
+            cell2.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("LAAGGGGGG"));
+        }
+        table1.IsInNewPage = true;
+        // Keep table 1 to next page
+        paragraphs.Add(table1);
+        // Save PDF document
+        document.Save(dataDir + "AddTableOnNewPage_out.pdf");
+    }
 }
-Aspose.Pdf.Paragraphs paragraphs = curPage.Paragraphs;
-paragraphs.Add(table);
-/********************************************/
-Aspose.Pdf.Table table1 = new Aspose.Pdf.Table();
-table.ColumnWidths = "100 100";
-for (int i = 1; i até 10; i++)
-{
-    Aspose.Pdf.Row row = table1.Rows.Add();
-    Aspose.Pdf.Cell cell1 = row.Cells.Add();
-    cell1.Paragraphs.Add(new TextFragment("LAAAAAAA"));
-    Aspose.Pdf.Cell cell2 = row.Cells.Add();
-    cell2.Paragraphs.Add(new TextFragment("LAAGGGGGG"));
-}
-table1.IsInNewPage = true;
-// Eu quero manter a tabela 1 para a próxima página, por favor...
-paragraphs.Add(table1);
-dataDir = dataDir + "IsNewPageProperty_Test_out.pdf";
-doc.Save(dataDir);
 ```
 
 <script type="application/ld+json">
@@ -576,7 +634,7 @@ doc.Save(dataDir);
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
             "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/destaque",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
             "https://www.linkedin.com/company/aspose",
             "https://stackoverflow.com/questions/tagged/aspose",
             "https://aspose.quora.com/",
@@ -586,21 +644,21 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "vendas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -611,7 +669,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -623,5 +681,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

@@ -1,10 +1,12 @@
 ---
-title: تحسين أو ضغط أو تقليل حجم ملف PDF في C#
+title: تحسين، ضغط أو تقليل حجم PDF في C#
 linktitle: تحسين PDF
 type: docs
-weight: 30
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 40
 url: /ar/net/optimize-pdf/
-description: تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة التضمين للخطوط، إزالة العناصر غير المستخدمة باستخدام C#.
+description: تحسين ملف PDF، تقليل حجم جميع الصور، تقليل حجم PDF، إزالة الخطوط المدمجة، إزالة الكائنات غير المستخدمة باستخدام C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "تحسين PDF باستخدام C#",
-    "alternativeHeadline": "كيفية تحسين PDF باستخدام .NET",
+    "headline": "Optimize, Compress or Reduce PDF Size in C#",
+    "alternativeHeadline": "Optimize PDF Files Efficiently with C#",
+    "abstract": "تتيح ميزة تحسين PDF الجديدة في C# للمطورين تقليل أحجام ملفات PDF بشكل كبير من خلال استخدام استراتيجيات متعددة، مثل ضغط الصور، وإزالة الخطوط المدمجة، وإزالة الكائنات غير المستخدمة. تعمل هذه التحسينات على تحسين الكفاءة للنشر على الويب، ومشاركة البريد الإلكتروني، والتخزين، مما يوفر حلاً فعالاً لإدارة مستندات PDF الكبيرة.",
     "author": {
         "@type": "Person",
-        "name":"أناستاسيا هولوب",
-        "givenName": "أناستاسيا",
-        "familyName": "هولوب",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد وثائق PDF",
-    "keywords": "pdf, c#, تحسين pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "keywords": "optimize pdf, compress pdf size, reduce pdf size, optimize pdf c#, unembed fonts, remove unused objects, shrink images, optimization methods, pdf document generation, Aspose.PDF",
+    "wordcount": "2282",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق توثيق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,351 +74,454 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/optimize-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "تحسين ملف PDF، تقليص جميع الصور، تقليل حجم PDF، إزالة التضمين للخطوط، إزالة العناصر غير المستخدمة باستخدام C#."
+    "dateModified": "2024-11-25",
+    "description": "تحسين ملف PDF، تقليل حجم جميع الصور، تقليل حجم PDF، إزالة الخطوط المدمجة، إزالة الكائنات غير المستخدمة باستخدام C#."
 }
 </script>
-قد يحتوي مستند PDF أحيانًا على بيانات إضافية. تقليل حجم ملف PDF سيساعدك على تحسين نقل الشبكة والتخزين. هذا مفيد بشكل خاص للنشر على صفحات الويب، المشاركة على شبكات التواصل الاجتماعي، الإرسال عبر البريد الإلكتروني، أو الأرشفة في التخزين. يمكننا استخدام عدة تقنيات لتحسين PDF:
 
-- تحسين محتوى الصفحة للتصفح عبر الإنترنت
-- تقليص أو ضغط جميع الصور
-- تمكين إعادة استخدام محتوى الصفحة
-- دمج التدفقات المكررة
-- إلغاء تضمين الخطوط
-- إزالة الكائنات غير المستخدمة
-- إزالة تسطيح حقول النماذج
-- إزالة أو تسطيح التعليقات التوضيحية
+قد يحتوي مستند PDF أحيانًا على بيانات إضافية. سيساعد تقليل حجم ملف PDF في تحسين نقل الشبكة والتخزين. هذا مفيد بشكل خاص للنشر على صفحات الويب، والمشاركة على الشبكات الاجتماعية، والإرسال عبر البريد الإلكتروني، أو الأرشفة في التخزين. يمكننا استخدام عدة تقنيات لتحسين PDF:
+
+- تحسين محتوى الصفحة لتصفح الإنترنت.
+- تقليل أو ضغط جميع الصور.
+- تمكين إعادة استخدام محتوى الصفحة.
+- دمج التدفقات المكررة.
+- إزالة الخطوط المدمجة.
+- إزالة الكائنات غير المستخدمة.
+- إزالة أو تسطيح حقول النماذج.
+- إزالة أو تسطيح التعليقات.
 
 {{% alert color="primary" %}}
 
- يمكن العثور على شرح مفصل لطرق التحسين في صفحة نظرة عامة على طرق التحسين.
+يمكن العثور على شرح مفصل لطرق التحسين في صفحة نظرة عامة على طرق التحسين.
 
 {{% /alert %}}
 
 ## تحسين مستند PDF للويب
 
-التحسين، أو التخطيط المباشر للويب، يشير إلى عملية جعل ملف PDF مناسبًا للتصفح عبر الإنترنت باستخدام متصفح ويب. لتحسين ملف لعرض الويب:
+تشير عملية التحسين، أو الترتيب للويب، إلى جعل ملف PDF مناسبًا للتصفح عبر الإنترنت باستخدام متصفح الويب. لتحسين ملف للعرض على الويب:
 
-1. افتح المستند الأصلي في كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1.
-1. احفظ المستند المُحسّن باستخدام طريقة [الحفظ](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
+1. افتح المستند المدخل في كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. استخدم طريقة [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
+1. احفظ المستند المحسن باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-الشفرة التالية تعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-الشفرة التالية توضح كيفية تحسين مستند PDF للويب.
+تظهر مقتطفات الكود التالية كيفية تحسين مستند PDF للويب.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى مجلد المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Optimize for web
+        document.Optimize();
 
-// تحسين للويب
-pdfDocument.Optimize();
-
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-
-// حفظ المستند الناتج
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
 ## تقليل حجم PDF
 
-طريقة [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) تتيح لك تقليل حجم المستند بإزالة المعلومات غير الضرورية.
-[OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) تسمح لك بتقليل حجم المستند عن طريق إزالة المعلومات غير الضرورية.
+تسمح لك طريقة [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimizeresources) بتقليل حجم المستند عن طريق التخلص من المعلومات غير الضرورية. بشكل افتراضي، تعمل هذه الطريقة كما يلي:
 
-- يتم إزالة الموارد التي لا تُستخدم في صفحات المستند
-- يتم دمج الموارد المتماثلة في كائن واحد
-- يتم حذف الكائنات غير المستخدمة
+- يتم إزالة الموارد التي لا تستخدم في صفحات المستند.
+- يتم دمج الموارد المتساوية في كائن واحد.
+- يتم حذف الكائنات غير المستخدمة.
 
-الشفرة أدناه هي مثال. لاحظ، على الرغم من ذلك، أن هذه الطريقة لا يمكن أن تضمن تقليص حجم المستند.
+المقتطف أدناه هو مثال. لاحظ، مع ذلك، أن هذه الطريقة لا يمكن أن تضمن تقليل حجم المستند.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح مستند
-Document pdfDocument = new Document(dataDir + "ShrinkDocument.pdf");
-// تحسين مستند PDF. لاحظ، على الرغم من ذلك، أن هذه الطريقة لا يمكن أن تضمن تقليص حجم المستند
-pdfDocument.OptimizeResources();
-dataDir = dataDir + "ShrinkDocument_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ShrinkDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ShrinkDocument.pdf"))
+    {
+        // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking
+        document.OptimizeResources();
+
+        // Save PDF document
+        document.Save(dataDir + "ShrinkDocument_out.pdf");
+    }
+}
 ```
 
 ## إدارة استراتيجية التحسين
 
-يمكننا أيضًا تخصيص استراتيجية التحسين.
-يمكننا أيضًا تخصيص استراتيجية التحسين.
+يمكننا أيضًا تخصيص استراتيجية التحسين. حاليًا، تستخدم طريقة [OptimizeResources()](https://reference.aspose.com/pdf/net/aspose.pdf.document/optimizeresources/methods/1) 5 تقنيات. يمكن تطبيق هذه التقنيات باستخدام طريقة OptimizeResources() مع معلمة [OptimizationOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions).
 
-### تقليص أو ضغط جميع الصور
+### تقليل أو ضغط جميع الصور
 
-لدينا طريقتان للتعامل مع الصور: تقليل جودة الصورة و/أو تغيير دقتها. في كلتا الحالتين، يجب تطبيق [خيارات ضغط الصور](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions). في المثال التالي، نقوم بتصغير الصور عن طريق خفض [جودة الصورة](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) إلى 50.
+لدينا طريقتان للعمل مع الصور: تقليل جودة الصورة و/أو تغيير دقتها. في أي حال، يجب تطبيق [ImageCompressionOptions](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions). في المثال التالي، نقوم بتقليل الصور عن طريق تقليل [ImageQuality](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/imagequality) إلى 50.
 
-`جودة الصورة` تعمل بطريقة مشابهة لجودة JPEG، حيث أن القيمة 0 هي الأدنى والقيمة 100 هي الأعلى.
-
-```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "Shrinkimage.pdf");
-// تهيئة خيارات التحسين
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
-// تعيين خيار ضغط الصور
-optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// تعيين خيار جودة الصورة
-optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
-// تحسين مستند PDF باستخدام خيارات التحسين
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "Shrinkimage_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
-```
-
-طريقة أخرى هي تغيير حجم الصور بدقة أقل. في هذه الحالة، يجب تعيين ResizeImages إلى true وMaxResolution إلى القيمة المناسبة.
+`ImageQuality` يعمل بشكل مشابه لجودة JPEG، حيث القيمة 0 هي الأدنى والقيمة 100 هي الأعلى.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// تهيئة الوقت
-var time = DateTime.Now.Ticks;
-// مسار إلى مجلد الوثائق
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "ResizeImage.pdf");
-// تهيئة خيارات التحسين
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
-// تعيين خيار CompressImages
-optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// تعيين خيار ImageQuality
-optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
-// تعيين خيار ResizeImage
-optimizeOptions.ImageCompressionOptions.ResizeImages = true;
-// تعيين خيار MaxResolution
-optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
-// تحسين مستند PDF باستخدام OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "ResizeImages_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ShrinkImage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
+
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 50;
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "Shrinkimage_out.pdf");
+    }
+}
 ```
-مسألة مهمة أخرى هي وقت التنفيذ. لكن مرة أخرى، يمكننا إدارة هذا الإعداد أيضًا. حاليًا، يمكننا استخدام خوارزميتين - القياسية والسريعة. للتحكم في وقت التنفيذ يجب علينا تعيين خاصية [الإصدار](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). يوضح الجزء التالي خوارزمية السريع:
+
+طريقة أخرى هي تغيير حجم الصور بدقة أقل. في هذه الحالة، يجب علينا تعيين ResizeImages إلى true و MaxResolution إلى القيمة المناسبة.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// تهيئة الوقت
-var time = DateTime.Now.Ticks;
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "Shrinkimage.pdf");
-// تهيئة خيارات التحسين
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions();
-// تعيين خيار ضغط الصور
-optimizeOptions.ImageCompressionOptions.CompressImages = true;
-// تعيين خيار جودة الصورة
-optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
-// تعيين إصدار ضغط الصورة إلى سريع
-optimizeOptions.ImageCompressionOptions.Version = Pdf.Optimization.ImageCompressionVersion.Fast;
-// تحسين مستند PDF باستخدام خيارات التحسين
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "FastShrinkImages_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
-Console.WriteLine("العلامات: {0}", DateTime.Now.Ticks - time);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ResizeImages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ResizeImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
+
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+
+        // Set ResizeImage option
+        optimizeOptions.ImageCompressionOptions.ResizeImages = true;
+
+        // Set MaxResolution option
+        optimizeOptions.ImageCompressionOptions.MaxResolution = 300;
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "ResizeImages_out.pdf");
+    }
+}
 ```
+
+مسألة أخرى مهمة هي وقت التنفيذ. ولكن مرة أخرى، يمكننا إدارة هذا الإعداد أيضًا. حاليًا، يمكننا استخدام خوارزميتين - القياسية والسريعة. للتحكم في وقت التنفيذ، يجب علينا تعيين خاصية [Version](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/imagecompressionoptions/properties/version). توضح المقتطفات التالية خوارزمية السريعة:
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FastShrinkImages()
+{
+    // Initialize Time
+    var time = DateTime.Now.Ticks;
+
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Shrinkimage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
+
+        // Set CompressImages option
+        optimizeOptions.ImageCompressionOptions.CompressImages = true;
+
+        // Set ImageQuality option
+        optimizeOptions.ImageCompressionOptions.ImageQuality = 75;
+
+        // Set Image Compression Version to fast
+        optimizeOptions.ImageCompressionOptions.Version = Aspose.Pdf.Optimization.ImageCompressionVersion.Fast;
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "FastShrinkImages_out.pdf");
+    }
+
+    // Output the time taken for the operation
+    Console.WriteLine("Ticks: {0}", DateTime.Now.Ticks - time);
+}
+```
+
 ### إزالة الكائنات غير المستخدمة
 
-قد يحتوي مستند PDF أحيانًا على كائنات PDF التي لا يشير إليها أي كائن آخر في المستند. قد يحدث هذا، على سبيل المثال، عندما يتم إزالة صفحة من شجرة صفحات المستند ولكن لا يتم إزالة كائن الصفحة نفسه. إزالة هذه الكائنات لا تجعل المستند غير صالح ولكنها تقلل من حجمه.
+قد يحتوي مستند PDF أحيانًا على كائنات PDF التي لا يتم الإشارة إليها من أي كائن آخر في المستند. قد يحدث هذا، على سبيل المثال، عندما تتم إزالة صفحة من شجرة صفحات المستند ولكن كائن الصفحة نفسه لم يتم إزالته. إزالة هذه الكائنات لا تجعل المستند غير صالح بل تقلل حجمه.
 
 ```csharp
-// لأمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// تعيين خيار RemoveUsedObject
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocument()
 {
-    RemoveUnusedObjects = true
-};
-// تحسين مستند PDF باستخدام OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set RemoveUsedObject option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedObjects = true
+        };
+        
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
 ### إزالة التدفقات غير المستخدمة
 
-أحيانًا يحتوي المستند على تدفقات موارد غير مستخدمة.
-أحيانًا يحتوي المستند على تدفقات موارد غير مستخدمة.
+أحيانًا يحتوي المستند على تدفقات موارد غير مستخدمة. هذه التدفقات ليست "كائنات غير مستخدمة" لأنها تشير من قاموس موارد الصفحة. وبالتالي، لا تتم إزالتها باستخدام طريقة "إزالة الكائنات غير المستخدمة". ولكن هذه التدفقات لا تستخدم أبدًا مع محتويات الصفحة. قد يحدث هذا في الحالات التي تمت فيها إزالة صورة من الصفحة ولكن ليس من موارد الصفحة. أيضًا، تحدث هذه الحالة غالبًا عندما يتم استخراج الصفحات من المستند وتكون صفحات المستند تحتوي على موارد "شائعة"، أي نفس كائن Resources. يتم تحليل محتويات الصفحة لتحديد ما إذا كانت تدفق مورد مستخدم أم لا. يتم إزالة التدفقات غير المستخدمة. أحيانًا يقلل ذلك من حجم المستند. استخدام هذه التقنية مشابه للخطوة السابقة:
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// تعيين خيار إزالة التدفقات غير المستخدمة
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocument()
 {
-    RemoveUnusedStreams = true
-};
-// تحسين مستند PDF باستخدام OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set RemoveUsedStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            RemoveUnusedStreams = true
+        };
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
-### ربط تدفقات الموارد المكررة
+### ربط التدفقات المكررة
 
-قد يحتوي بعض المستندات على عدة تدفقات موارد متطابقة (مثل الصور، على سبيل المثال).
-بعض الوثائق قد تحتوي على عدة تدفقات موارد متطابقة (مثل الصور، على سبيل المثال).
+يمكن أن تحتوي بعض المستندات على عدة تدفقات موارد متطابقة (مثل الصور، على سبيل المثال). قد يحدث هذا، على سبيل المثال، عندما يتم دمج مستند مع نفسه. يحتوي المستند الناتج على نسختين مستقلتين من نفس تدفق المورد. نقوم بتحليل جميع تدفقات الموارد ومقارنتها. إذا كانت التدفقات مكررة، يتم دمجها، أي تبقى نسخة واحدة فقط. يتم تغيير المراجع بشكل مناسب، ويتم إزالة نسخ الكائن. في بعض الحالات، يساعد ذلك في تقليل حجم المستند.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح الوثيقة
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// تعيين خيار LinkDuplcateStreams
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocumentWithLinkDuplicateStreams()
 {
-    LinkDuplcateStreams = true
-};
-// تحسين وثيقة PDF باستخدام OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-dataDir = dataDir + "OptimizeDocument_out.pdf";
-// حفظ الوثيقة المحدثة
-pdfDocument.Save(dataDir);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set LinkDuplicateStreams option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            LinkDuplicateStreams = true
+        };
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+}
 ```
 
-بالإضافة إلى ذلك، يمكننا استخدام إعدادات [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent).
-بالإضافة إلى ذلك، يمكننا استخدام إعدادات [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent).
+بالإضافة إلى ذلك، يمكننا استخدام إعدادات [AllowReusePageContent](https://reference.aspose.com/pdf/net/aspose.pdf.optimization/optimizationoptions/properties/allowreusepagecontent). إذا تم تعيين هذه الخاصية إلى true، سيتم إعادة استخدام محتوى الصفحة عند تحسين المستند للصفحات المتطابقة.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// تعيين خيار AllowReusePageContent
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocumentWithReusePageContent()
 {
-    AllowReusePageContent = true
-};
-Console.WriteLine("البدء");
-// تحسين مستند PDF باستخدام OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("الانتهاء");
-var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("حجم الملف الأصلي: {0}. حجم الملف المخفض: {1}", fi1.Length, fi2.Length);
-```
-### إزالة تضمين الخطوط
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-إذا كان المستند يستخدم خطوطًا مضمنة، فهذا يعني أن جميع بيانات الخط مخزنة في المستند. الفائدة هي أن المستند يمكن مشاهدته بغض النظر عن ما إذا كان الخط مثبتًا على جهاز المستخدم أم لا. لكن تضمين الخطوط يجعل المستند أكبر حجمًا. تقوم طريقة إزالة تضمين الخطوط بإزالة جميع الخطوط المضمنة. وبذلك، يقل حجم المستند لكن المستند ذاته قد يصبح غير قابل للقراءة إذا لم يكن الخط الصحيح مثبتًا.
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set AllowReusePageContent option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            AllowReusePageContent = true
+        };
+
+        Console.WriteLine("Start");
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
+    }
+
+    Console.WriteLine("Finished");
+
+    // Calculate and display file sizes
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
+}
+```
+
+### إزالة الخطوط المدمجة
+
+إذا كان المستند يستخدم خطوطًا مدمجة، فهذا يعني أن جميع بيانات الخطوط مخزنة في المستند. الميزة هي أن المستند يمكن مشاهدته بغض النظر عما إذا كان الخط مثبتًا على جهاز المستخدم أم لا. ولكن يجعل تضمين الخطوط المستند أكبر. تقوم طريقة إزالة الخطوط المدمجة بإزالة جميع الخطوط المدمجة. وبالتالي، ينخفض حجم المستند ولكن قد يصبح المستند نفسه غير قابل للقراءة إذا لم يتم تثبيت الخط الصحيح.
 
 ```csharp
-// للحصول على الأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// تعيين خيار UnembedFonts
-var optimizeOptions = new Pdf.Optimization.OptimizationOptions
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizePdfDocumentWithUnembedFonts()
 {
-    UnembedFonts = true
-};
-Console.WriteLine("Start");
-// تحسين مستند PDF باستخدام OptimizationOptions
-pdfDocument.OptimizeResources(optimizeOptions);
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("Finished");
-var fi1 = new System.IO.FileInfo(dataDir + "OptimizeDocument.pdf");
-var fi2 = new System.IO.FileInfo(dataDir + "OptimizeDocument_out.pdf");
-Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
+    {
+        // Set UnembedFonts option
+        var optimizeOptions = new Aspose.Pdf.Optimization.OptimizationOptions
+        {
+            UnembedFonts = true
+        };
+
+        Console.WriteLine("Start");
+
+        // Optimize PDF document using OptimizationOptions
+        document.OptimizeResources(optimizeOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");	
+    }
+	
+    Console.WriteLine("Finished");
+
+    // Calculate and display file sizes
+    var fi1 = new FileInfo(dataDir + "OptimizeDocument.pdf");
+    var fi2 = new FileInfo(dataDir + "OptimizeDocument_out.pdf");
+    Console.WriteLine("Original file size: {0}. Reduced file size: {1}", fi1.Length, fi2.Length);
+}
 ```
+
+تطبق موارد التحسين هذه الطرق على المستند. إذا تم تطبيق أي من هذه الطرق، فمن المحتمل أن ينخفض حجم المستند. إذا لم يتم تطبيق أي من هذه الطرق، فلن يتغير حجم المستند وهو أمر واضح.
+
 ## طرق إضافية لتقليل حجم مستند PDF
 
-### إزالة أو تسطيح التعليقات التوضيحية
+### إزالة أو تسطيح التعليقات
 
-يمكن حذف التعليقات التوضيحية عندما لا تكون ضرورية. عندما تكون ضرورية ولا تتطلب تحريرًا إضافيًا، يمكن تسطيحها. كلا هذه الأساليب سيقلل من حجم الملف.
-
-```csharp
-// لأمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-// فتح المستند
-Document pdfDocument = new Document(dataDir + "OptimizeDocument.pdf");
-// تسطيح التعليقات التوضيحية
-foreach (var page in pdfDocument.Pages)
-{
-    foreach (var annotation in page.Annotations)
-    {
-        annotation.Flatten();
-    }
-
-}
-// حفظ المستند المحدث
-pdfDocument.Save(dataDir + "OptimizeDocument_out.pdf");
-```
-### إزالة حقول النموذج
-
-إذا احتوى مستند PDF على AcroForms، يمكننا محاولة تقليل حجم الملف عن طريق تسطيح حقول النموذج.
+يمكن حذف التعليقات عندما تكون غير ضرورية. عندما تكون مطلوبة ولكن لا تتطلب تحريرًا إضافيًا، يمكن تسطيحها. ستقلل كل من هاتين التقنيتين من حجم الملف.
 
 ```csharp
-// للحصول على الأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// تحميل نموذج PDF المصدر
-Document doc = new Document(dataDir + "input.pdf");
-
-// تسطيح النماذج
-if (doc.Form.Fields.Count() > 0)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FlattenAnnotationsInPdfDocument()
 {
-    foreach (var item in doc.Form.Fields)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "OptimizeDocument.pdf"))
     {
-        item.Flatten();
+        // Flatten annotations
+        foreach (var page in document.Pages)
+        {
+            foreach (var annotation in page.Annotations)
+            {
+                annotation.Flatten();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocument_out.pdf");
     }
 }
-
-dataDir = dataDir + "FlattenForms_out.pdf";
-// حفظ المستند المحدث
-doc.Save(dataDir);
 ```
 
-### تحويل PDF من فضاء الألوان RGB إلى الرمادي
+### إزالة حقول النماذج
 
-يتكون ملف PDF من نص، صورة، مرفق، تعليقات، رسوم بيانية، وغيرها من الكائنات.
-ملف PDF يتضمن نصوص، صور، مرفقات، تعليقات، رسومات، وغيرها من العناصر.
+إذا كان مستند PDF يحتوي على AcroForms، يمكننا محاولة تقليل حجم الملف عن طريق تسطيح حقول النماذج.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
-
-// تحميل ملف PDF المصدر
-using (Document document = new Document(dataDir + "input.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FlattenPdfForms()
 {
-    Aspose.Pdf.RgbToDeviceGrayConversionStrategy strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
-    for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Load source PDF form
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        // الحصول على نسخة من صفحة معينة داخل PDF
-        Page page = document.Pages[idxPage];
-        // تحويل صور مساحة الألوان RGB إلى مساحة ألوان الرمادي
-        strategy.Convert(page);
+        // Flatten Forms
+        if (document.Form.Fields.Lenght > 0)
+        {
+            foreach (var item in document.Form.Fields)
+            {
+                item.Flatten();
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "FlattenForms_out.pdf");
     }
-    // حفظ الملف الناتج
-    document.Save(dataDir + "Test-gray_out.pdf");
+}
+```
+
+### تحويل PDF من مساحة ألوان RGB إلى تدرج الرمادي
+
+يتكون ملف PDF من نصوص وصور ومرفقات وتعليقات ورسوم بيانية وكائنات أخرى. قد تواجه متطلبات لتحويل PDF من مساحة ألوان RGB إلى تدرج الرمادي بحيث يكون أسرع عند طباعة تلك الملفات PDF. أيضًا، عندما يتم تحويل الملف إلى تدرج الرمادي، يتم تقليل حجم المستند أيضًا، ولكن يمكن أن يتسبب ذلك أيضًا في انخفاض جودة المستند. هذه الميزة مدعومة حاليًا من قبل ميزة Pre-Flight في Adobe Acrobat، ولكن عند الحديث عن أتمتة المكتب، تعتبر Aspose.PDF الحل النهائي لتوفير مثل هذه الميزات لتلاعب المستندات. لتحقيق هذا المتطلب، يمكن استخدام مقتطف الكود التالي.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertRgbToGrayScale()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create RGB to DeviceGray conversion strategy
+        var strategy = new Aspose.Pdf.RgbToDeviceGrayConversionStrategy();
+
+        // Iterate through each page
+        for (int idxPage = 1; idxPage <= document.Pages.Count; idxPage++)
+        {
+            // Get instance of particular page inside PDF
+            var page = document.Pages[idxPage];
+
+            // Convert the RGB colorspace image to GrayScale colorspace
+            strategy.Convert(page);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "TestGray_out.pdf");
+    }
 }
 ```
 
@@ -423,20 +529,91 @@ using (Document document = new Document(dataDir + "input.pdf"))
 
 {{% alert color="primary" %}}
 
-هذه الميزة مدعومة بواسطة الإصدار 18.12 أو أعلى.
+تدعم هذه الميزة الإصدار 18.12 أو أعلى.
 
 {{% /alert %}}
 
-يوفر Aspose.PDF لـ .NET دعم ضغط FlateDecode لوظائف تحسين PDF.
-Aspose.PDF لـ .NET يدعم ضغط FlateDecode لوظيفة تحسين PDF.
+Aspose.PDF for .NET يوفر دعم ضغط FlateDecode لوظيفة تحسين PDF. توضح مقتطفات الكود التالية كيفية استخدام الخيار في التحسين لتخزين الصور مع ضغط **FlateDecode**:
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-FlateDecodeCompression-1.cs" >}}
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void OptimizeDocumentImagesWithFlateCompression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-### **تخزين الصورة في XImageCollection**
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        // Initialize OptimizationOptions
+        var optimizationOptions = new Aspose.Pdf.Optimization.OptimizationOptions();
 
-Aspose.PDF لـ .NET يوفر القدرة على تخزين صور جديدة في **XImageCollection** مع ضغط FlateDecode. لتفعيل هذا الخيار يمكنك استخدام علم **ImageFilterType.Flate**. يوضح الجزء التالي من الكود كيفية استخدام هذه الوظيفة:
+        // To optimize images using FlateDecode compression, set optimization options to Flate
+        optimizationOptions.ImageCompressionOptions.Encoding = Aspose.Pdf.Optimization.ImageEncoding.Flate;
 
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Images-StoreImageInXImageCollection-1.cs" >}}
+        // Set optimization options
+        document.OptimizeResources(optimizationOptions);
+
+        // Save PDF document
+        document.Save(dataDir + "OptimizeDocumentImagesWithFlateCompression_out.pdf");
+    }
+}
+```
+
+### تخزين الصورة في XImageCollection
+
+Aspose.PDF for .NET يوفر القدرة على تخزين صور جديدة في **XImageCollection** مع ضغط FlateDecode. لتمكين هذا الخيار يمكنك استخدام علامة **ImageFilterType.Flate**. توضح مقتطفات الكود التالية كيفية استخدام هذه الوظيفة:
+
+```csharp
+// For complete examples and data files, please go to https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageToPdfWithFlateCompression()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Open the image file stream
+        using (var imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open))
+        {
+            // Add the image to the page resources with Flate compression
+            page.Resources.Images.Add(imageStream, Aspose.Pdf.ImageFilterType.Flate);
+        }
+
+        // Get the added image
+        var ximage = page.Resources.Images[page.Resources.Images.Count];
+
+        // Save the current graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+        // Set coordinates for the image placement
+        int lowerLeftX = 0;
+        int lowerLeftY = 0;
+        int upperRightX = 600;
+        int upperRightY = 600;
+
+        var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+        var matrix = new Aspose.Pdf.Matrix(new double[]
+        {
+            rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY
+        });
+
+        // Use ConcatenateMatrix operator to define how the image must be placed
+        page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+        page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+
+        // Restore the graphics state
+        page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+
+        // Save the document
+        document.Save(dataDir + "AddImageToPdfWithFlateCompression_out.pdf");
+    }
+}
+```
 
 <script type="application/ld+json">
 {
@@ -501,4 +678,3 @@ Aspose.PDF لـ .NET يوفر القدرة على تخزين صور جديدة �
     }
 }
 </script>
-

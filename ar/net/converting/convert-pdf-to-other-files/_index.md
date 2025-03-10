@@ -1,166 +1,330 @@
 ---
-title: تحويل PDF إلى EPUB، LaTeX، نص، XPS في C#
-linktitle: تحويل PDF إلى صيغ أخرى
+title: تحويل PDF إلى EPUB و LaTeX و نص و XPS في C#
+linktitle: تحويل PDF إلى تنسيقات أخرى
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /ar/net/convert-pdf-to-other-files/
 lastmod: "2021-11-01"
-description: يوضح لك هذا الموضوع كيفية تحويل ملف PDF إلى صيغ ملفات أخرى مثل EPUB، LaTeX، النص، XPS إلخ باستخدام C# أو .NET.
+description: يوضح هذا الموضوع كيفية تحويل ملف PDF إلى تنسيقات ملفات أخرى مثل EPUB و LaTeX و نص و XPS وما إلى ذلك باستخدام C# أو .NET.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF to EPUB, LaTeX, Text, XPS in C#",
+    "alternativeHeadline": "Add PDF format conversion to EPUB, LaTeX, Text, XPS in C#",
+    "abstract": "Aspose.PDF for .NET يقدم ميزة قوية تسمح بالتحويل السلس لملفات PDF إلى تنسيقات متنوعة، بما في ذلك EPUB و LaTeX و نص و XPS و Markdown. تعزز هذه الوظيفة إمكانية الوصول إلى الوثائق وقابلية استخدامها من خلال تمكين المطورين من دمج تحويلات تنسيقات الملفات المتنوعة بسهولة في تطبيقات C# الخاصة بهم، مما يلبي احتياجات جمهور أوسع ويعمل على تحسين المحتوى لمختلف المنصات.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1419",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-to-other-files/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-to-other-files/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "يمكن لـ Aspose.PDF أداء المهام البسيطة والسريعة وكذلك التعامل مع الأهداف الأكثر تعقيدًا. تحقق من القسم التالي للمستخدمين المتقدمين والمطورين."
+}
+</script>
 
 ## تحويل PDF إلى EPUB
 
 {{% alert color="success" %}}
-**جرب تحويل PDF إلى EPUB عبر الإنترنت**
+**حاول تحويل PDF إلى EPUB عبر الإنترنت**
 
-يقدم لك Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
+Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![تحويل Aspose.PDF PDF إلى EPUB بواسطة تطبيق مجاني](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
+[![تحويل Aspose.PDF PDF إلى EPUB مع تطبيق مجاني](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
 
-**<abbr title="النشر الإلكتروني">EPUB</abbr>** هو معيار كتاب إلكتروني مجاني ومفتوح من منتدى النشر الرقمي الدولي (IDPF).
-**<abbr title="النشر الإلكتروني">EPUB</abbr>** هو معيار مجاني ومفتوح للكتب الإلكترونية من منتدى النشر الرقمي الدولي (IDPF).
-تم تصميم EPUB للمحتوى القابل لإعادة التدفق، مما يعني أن قارئ EPUB يمكنه تحسين النص لجهاز عرض معين. كما يدعم EPUB المحتوى ذو التخطيط الثابت. يُعتبر الشكل كشكل واحد يمكن للناشرين وبيوت التحويل استخدامه داخليًا، بالإضافة إلى الاستخدام في التوزيع والبيع. يحل محل معيار الكتاب الإلكتروني المفتوح.
+**<abbr title="المنشور الإلكتروني">EPUB</abbr>** هو معيار مجاني ومفتوح للكتب الإلكترونية من منتدى النشر الرقمي الدولي (IDPF). الملفات لها الامتداد .epub.
+تم تصميم EPUB للمحتوى القابل لإعادة التدفق، مما يعني أن قارئ EPUB يمكنه تحسين النص لجهاز عرض معين. يدعم EPUB أيضًا المحتوى الثابت التخطيط. التنسيق مخصص كتنسيق واحد يمكن للناشرين وبيوت التحويل استخدامه داخليًا، بالإضافة إلى التوزيع والبيع. إنه يحل محل معيار Open eBook.
 
-الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-يدعم Aspose.PDF لـ .NET أيضًا ميزة تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF لـ .NET على فئة تُسمى EpubSaveOptions والتي يمكن استخدامها كالوسيط الثاني في طريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index)، لتوليد ملف EPUB.
-يرجى محاولة استخدام الكود التالي لتحقيق هذا المطلب باستخدام C#.
+Aspose.PDF for .NET يدعم أيضًا ميزة تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF for .NET على فئة تسمى EpubSaveOptions يمكن استخدامها كوسيط ثانٍ لطريقة [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لإنشاء ملف EPUB.
+يرجى محاولة استخدام مقتطف الشيفرة التالية لتحقيق هذا المتطلب باستخدام C#.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// مسار دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// تحميل مستند PDF
-Document pdfDocument = new Document(dataDir + "PDFToEPUB.pdf");
-// إنشاء خيارات حفظ Epub
-EpubSaveOptions options = new EpubSaveOptions();
-// تحديد التخطيط للمحتويات
-options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
-// حفظ مستند ePUB
-pdfDocument.Save(dataDir + "PDFToEPUB_out.epub", options);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoEPUB()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToEPUB.pdf"))
+    {
+        // Instantiate Epub Save options
+        EpubSaveOptions options = new EpubSaveOptions();
+        // Specify the layout for contents
+        options.ContentRecognitionMode = EpubSaveOptions.RecognitionMode.Flow;
+
+        // Save ePUB document
+        document.Save(dataDir + "PDFToEPUB_out.epub", options);
+    }
+}
 ```
+
 ## تحويل PDF إلى LaTeX/TeX
 
-**Aspose.PDF لـ .NET** يدعم تحويل PDF إلى LaTeX/TeX.
-صيغة ملف LaTeX هي صيغة ملف نصي مع وسم خاص وتُستخدم في نظام إعداد الوثائق المعتمد على TeX للتنضيد عالي الجودة.
+**Aspose.PDF for .NET** يدعم تحويل PDF إلى LaTeX/TeX.
+تنسيق ملف LaTeX هو تنسيق ملف نصي مع ترميز خاص ويستخدم في نظام إعداد المستندات القائم على TeX للطباعة عالية الجودة.
 
 {{% alert color="success" %}}
-**جرب تحويل PDF إلى LaTeX/TeX عبر الإنترنت**
+**حاول تحويل PDF إلى LaTeX/TeX عبر الإنترنت**
 
-يقدم Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)، حيث يمكنك التحقق من الوظائف وجودة عمله.
+Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![تحويل Aspose.PDF لملف PDF إلى LaTeX/TeX بتطبيق مجاني](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
+[![تحويل Aspose.PDF PDF إلى LaTeX/TeX مع تطبيق مجاني](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
-لتحويل ملفات PDF إلى TeX، يحتوي Aspose.PDF على الفئة [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) التي توفر خاصية OutDirectoryPath لحفظ الصور المؤقتة أثناء عملية التحويل.
+لتحويل ملفات PDF إلى TeX، يحتوي Aspose.PDF على فئة [LaTeXSaveOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexsaveoptions) التي توفر خاصية OutDirectoryPath لحفظ الصور المؤقتة أثناء عملية التحويل.
 
-يوضح الكود التالي عملية تحويل ملفات PDF إلى صيغة TEX باستخدام C#.
+توضح مقتطفات الشيفرة التالية عملية تحويل ملفات PDF إلى تنسيق TEX باستخدام C#.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoTeX()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// إنشاء كائن Document
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToTeX.pdf"))
+    {
+        // Instantiate LaTex save option          
+        LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
 
-// توثيق خيار حفظ LaTex          
-LaTeXSaveOptions saveOptions = new LaTeXSaveOptions();
+        // Specify the output directory
+        string pathToOutputDirectory = dataDir;
 
-// تحديد دليل الإخراج
-string pathToOutputDirectory = dataDir;
+        // Set the output directory path for save option object
+        saveOptions.OutDirectoryPath = pathToOutputDirectory;
 
-// تعيين مسار دليل الإخراج لكائن خيار الحفظ
-saveOptions.OutDirectoryPath = pathToOutputDirectory;
-
-// حفظ ملف PDF في صيغة LaTex           
-doc.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+        // Save PDF document into LaTex format           
+        document.Save(dataDir + "PDFToTeX_out.tex", saveOptions);
+    }
+}
 ```
+
 ## تحويل PDF إلى نص
 
-**Aspose.PDF لـ .NET** يدعم تحويل كامل مستند PDF وصفحة واحدة إلى ملف نصي.
+**Aspose.PDF for .NET** يدعم تحويل مستند PDF كامل وصفحة واحدة إلى ملف نص.
 
-### تحويل كامل مستند PDF إلى ملف نصي
+### تحويل مستند PDF كامل إلى ملف نص
 
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام طريقة [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) لفئة [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber).
+يمكنك تحويل مستند PDF إلى ملف TXT باستخدام طريقة [Visit](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber/methods/visit/index) من فئة [TextAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/textabsorber).
 
-الشفرة التالية تشرح كيفية استخراج النصوص من جميع الصفحات.
+توضح مقتطفات الشيفرة التالية كيفية استخراج النصوص من جميع الصفحات.
 
 ```csharp
-public static void ConvertPDFDocToTXT()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoTXT()
 {
-    // فتح المستند
-    Document pdfDocument = new Document(_dataDir + "demo.pdf");
-    TextAbsorber ta = new TextAbsorber();
-    ta.Visit(pdfDocument);
-    // حفظ النص المستخرج في ملف نصي
-    File.WriteAllText(_dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
+    {
+        var ta = new Aspose.Pdf.Text.TextAbsorber();
+        ta.Visit(document);
+
+        // Save the extracted text in text file
+        File.WriteAllText(dataDir + "input_Text_Extracted_out.txt",ta.Text);
+    }
 }
 ```
 
 {{% alert color="success" %}}
-**جرب تحويل PDF إلى نص عبر الإنترنت**
+**حاول تحويل PDF إلى نص عبر الإنترنت**
 
-Aspose.PDF لـ .NET يقدم لك تطبيق مجاني عبر الإنترنت ["PDF to Text"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
-Aspose.PDF لـ .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى نص"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
+Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى نص"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![Aspose.PDF تحويل PDF إلى نص بواسطة التطبيق المجاني](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
+[![تحويل Aspose.PDF PDF إلى نص مع تطبيق مجاني](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
 
-### تحويل صفحة PDF إلى ملف نصي
+### تحويل صفحة PDF إلى ملف نص
 
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام Aspose.PDF لـ .NET. يجب عليك استخدام طريقة `Visit` لفئة `TextAbsorber` لحل هذه المهمة.
+يمكنك تحويل مستند PDF إلى ملف TXT باستخدام Aspose.PDF for .NET. يجب عليك استخدام طريقة `Visit` من فئة `TextAbsorber` لحل هذه المهمة.
 
-يشرح الكود التالي كيفية استخراج النصوص من الصفحات المحددة.
+توضح مقتطفات الشيفرة التالية كيفية استخراج النصوص من صفحات معينة.
 
 ```csharp
-public static void ConvertPDFPagestoTXT()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoTXT()
 {
-    Document pdfDocument = new Document(System.IO.Path.Combine(_dataDir, "demo.pdf"));
-    TextAbsorber ta = new TextAbsorber();
-    var pages = new [] {1, 3, 4};
-    foreach (var page in pages)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
     {
-        ta.Visit(pdfDocument.Pages[page]);
+        var ta = new Aspose.Pdf.Text.TextAbsorber();
+        var pages = new [] {1, 3, 4};
+        foreach (var page in pages)
+        {
+            ta.Visit(document.Pages[page]);
+        }
+    
+        // Save the extracted text in text file
+        File.WriteAllText(dataDir + "input_Text_Extracted_out.txt", ta.Text);
     }
-   
-    // حفظ النص المستخرج في ملف نصي
-    File.WriteAllText(System.IO.Path.Combine(_dataDir, "input_Text_Extracted_out.txt"), ta.Text);
 }
 ```
+
 ## تحويل PDF إلى XPS
 
-**Aspose.PDF لـ .NET** يُتيح إمكانية تحويل ملفات PDF إلى تنسيق <abbr title="مواصفات الورق XML">XPS</abbr>. دعونا نجرب استخدام قطعة الكود المعروضة لتحويل ملفات PDF إلى تنسيق XPS باستخدام C#.
+**Aspose.PDF for .NET** يوفر إمكانية تحويل ملفات PDF إلى تنسيق <abbr title="مواصفة ورق XML">XPS</abbr>. دعنا نحاول استخدام مقتطف الشيفرة المقدمة لتحويل ملفات PDF إلى تنسيق XPS باستخدام C#.
 
 {{% alert color="success" %}}
-**جرب تحويل PDF إلى XPS عبر الإنترنت**
+**حاول تحويل PDF إلى XPS عبر الإنترنت**
 
-يقدم Aspose.PDF لـ .NET تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
+Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
 
-[![Aspose.PDF تحويل PDF إلى XPS بتطبيق مجاني](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
+[![تحويل Aspose.PDF PDF إلى XPS مع تطبيق مجاني](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
 {{% /alert %}}
 
-نوع ملف XPS مرتبط أساسًا بمواصفات الورق XML التي تقدمها Microsoft Corporation. مواصفات الورق XML (XPS)، التي كانت تُعرف سابقًا بالاسم الرمزي Metro وتضم مفهوم التسويق لمسار الطباعة الجيل القادم (NGPP)، هي مبادرة من Microsoft لدمج إنشاء وعرض المستندات في نظام التشغيل Windows.
+نوع ملف XPS مرتبط بشكل أساسي بمواصفة ورق XML من شركة مايكروسوفت. مواصفة ورق XML (XPS)، التي كانت تُعرف سابقًا باسم Metro وتحتوي على مفهوم تسويق Next Generation Print Path (NGPP)، هي مبادرة مايكروسوفت لدمج إنشاء المستندات وعرضها في نظام تشغيل ويندوز.
 
-لتحويل ملفات PDF إلى XPS، يحتوي Aspose.PDF على الفئة [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) التي تُستخدم كالوسيط الثاني للدالة [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لتوليد ملف XPS.
-لتحويل ملفات PDF إلى XPS، تستخدم Aspose.PDF الفئة [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) التي تستخدم كالوسيطة الثانية للطريقة [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لتوليد ملف XPS.
+لتحويل ملفات PDF إلى XPS، يحتوي Aspose.PDF على فئة [XpsSaveOptions](https://reference.aspose.com/net/pdf/aspose.pdf/xpssaveoptions) التي تستخدم كوسيط ثانٍ لطريقة [Document.Save(..)](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) لإنشاء ملف XPS.
 
-يوضح الجزء التالي من الشيفرة عملية تحويل ملف PDF إلى صيغة XPS.
+منذ إصدار 24.2، قامت Aspose.PDF بتنفيذ تحويل PDF القابل للبحث إلى XPS مع الحفاظ على النص قابل للتحديد في XPS الناتج. للحفاظ على النص، من الضروري تعيين خاصية XpsSaveOptions.SaveTransparentTexts إلى true.
+
+توضح مقتطفات الشيفرة التالية عملية تحويل ملف PDF إلى تنسيق XPS.
 
 ```csharp
-// للحصول على أمثلة كاملة وملفات بيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى مجلد الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoXPS()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-// تحميل مستند PDF
-Document pdfDocument = new Document(dataDir + "input.pdf");
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
+    {
+        var xpsOptions = new XpsSaveOptions
+        {
+            SaveTransparentTexts = true
+        };
 
-// إنشاء خيارات حفظ XPS
-Aspose.Pdf.XpsSaveOptions saveOptions = new Aspose.Pdf.XpsSaveOptions();
-// حفظ المستند XPS
-pdfDocument.Save("PDFToXPS_out.xps", saveOptions)
+        // Save XPS document
+        document.Save(dataDir + "PDFtoXPS_out.xps", xpsOptions);
+    }
+}
+```
+
+## تحويل PDF إلى Markdown
+
+**Aspose.PDF for .NET** يوفر إمكانية تحويل ملفات PDF إلى تنسيق <abbr title="Markdown">MD</abbr>. دعنا نحاول استخدام مقتطف الشيفرة المقدمة لتحويل ملفات PDF إلى تنسيق MD باستخدام C#.
+
+Markdown هي لغة ترميز خفيفة مصممة لتمثيل تنسيق النص العادي مع أقصى قدر من قابلية القراءة البشرية والقراءة الآلية للغات النشر المتقدمة.
+
+### تحسين استخدام الصور بواسطة محول PDF إلى Markdown
+
+يمكنك ملاحظة أنه في الدلائل التي تحتوي على صور، يكون عدد الصور أقل من عدد الصور في ملفات PDF.
+
+نظرًا لأن ملف markdown لا يمكنه تعيين حجم الصورة، بدون خيار MarkdownSaveOptions.UseImageHtmlTag، يتم حفظ نفس النوع من الصور بأحجام مختلفة كصور مختلفة.
+
+لخيار MarkdownSaveOptions.UseImageHtmlTag الممكّن، سيتم حفظ الصور الفريدة، التي يتم تغيير حجمها في المستند بواسطة علامة img.
+
+يفتح الكود مستند PDF، ويقوم بتكوين المعلمات لتحويله إلى ملف Markdown (حفظ أي صور في المجلد المسمى "images")، ويحفظ ملف Markdown الناتج في مسار الإخراج المحدد.
+
+توضح مقتطفات الشيفرة التالية عملية تحويل ملف PDF إلى تنسيق MD.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoMarkup()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "demo.pdf"))
+    {
+        // Create an instance of MarkdownSaveOptions to configure the Markdown export settings
+        var saveOptions = new MarkdownSaveOptions()
+        {
+            // Set to false to prevent the use of HTML <img> tags for images in the Markdown output
+            UseImageHtmlTag = false
+        }
+        
+        // Specify the directory name where resources (like images) will be stored
+        saveOptions.ResourcesDirectoryName = "images";
+
+        // Save PDF document in Markdown format to the specified output file path using the defined save options   
+        document.Save(dataDir + "PDFtoMarkup_out.md", saveOptions);
+    }
+}
+```
+
+### تحويل PDF إلى MobiXml
+
+MobiXML هو تنسيق كتب إلكترونية شائع، مصمم للاستخدام على المنصات المحمولة.
+توضح مقتطفات الشيفرة التالية كيفية تحويل مستند PDF إلى ملف MobiXML.
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET      
+private static void ConvertPdfToMobiXml()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToXML.pdf"))
+    {
+        // Save PDF document in XML format
+        document.Save(dataDir + "PDFToXML_out.xml", Aspose.Pdf.SaveFormat.MobiXml);
+    }
+}
 ```

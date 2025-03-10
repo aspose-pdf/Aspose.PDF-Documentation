@@ -1,84 +1,149 @@
 ---
-title: ASP - VBScript via COM Interop
+title: ASP - VBScript melalui COM Interop
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/asp-vbscript-via-com-interop/
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "ASP - VBScript via COM Interop",
+    "alternativeHeadline": "Create PDFs in ASP with VBScript via COM Interop",
+    "abstract": "Fitur baru ASP - VBScript melalui COM Interop memungkinkan pengembang untuk dengan mudah membuat dan memanipulasi dokumen PDF langsung dari aplikasi ASP klasik menggunakan VBScript. Dengan memanfaatkan Aspose.PDF for .NET, pengguna dapat dengan mudah menghasilkan file PDF dengan teks kustom dan mengekstrak konten dari PDF yang ada, meningkatkan fungsionalitas dan fleksibilitas aplikasi web mereka.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "286",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/asp-vbscript-via-com-interop/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/asp-vbscript-via-com-interop/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas yang sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
 ## Prasyarat
 
 {{% alert color="primary" %}}
 
-    Mohon periksa artikel yang berjudul Gunakan Aspose.pdf untuk .NET via COM Interop.
+    Silakan periksa artikel yang bernama Gunakan Aspose.pdf untuk .NET melalui COM Interop.
 
 {{% /alert %}}
 
-## Contoh Hello World! pada VB Script
+## Contoh Hello World! di VB Script
 
 {{% alert color="primary" %}}
 
-Ini adalah aplikasi ASP sederhana yang menunjukkan cara membuat file PDF dengan teks contoh menggunakan [Aspose.PDF for .NET](/pdf/id/net/) dan VBScript via COM Interop.
+Ini adalah aplikasi ASP sederhana yang menunjukkan kepada Anda cara membuat file PDF dengan teks contoh menggunakan [Aspose.PDF for .NET](/pdf/id/net/) dan VBScript melalui COM Interop.
 
 {{% /alert %}}
 
 ```vb
-
 <%@ LANGUAGE = VBScript %>
 <% Option Explicit %>
 <html>
     <head>
-        <title> menggunakan Aspose.PDF untuk .NET dalam contoh ASP klasik</title>
+        <title> using Aspose.PDF for .NET in classical ASP sample</title>
     </head>
 <body>
 
-<h3>pembuatan dokumen PDF contoh dengan menggunakan Aspose.PDF untuk .NET bersama ASP klasik dan VBScript</h3>
+<h3>creation of sample PDF document while using Aspose.PDF for .NET with classical ASP and VBScript</h3>
 
 <%
-
-'set lisensi
+'Set license
 Dim lic
-Set lic = CreateObject("Aspose.PDF.License")
-lic.SetLicense("D:\ASPOSE\Licences\Aspose.Total licenses\Aspose.Total.lic")
+Set lic = CreateObject("Aspose.Pdf.License")
+lic.SetLicense("Aspose.Total.lic")
 
-'Buat instans Pdf dengan memanggil konstruktornya yang kosong
-Dim pdf
-Set pdf = CreateObject("Aspose.PDF.Generator.Pdf")
+'Instantiate Pdf instance by calling its empty constructor
+Dim document
+Set document = CreateObject("Aspose.Pdf.Document")
 
-'Buat bagian baru dalam objek Pdf
+'Create a new section in the Pdf object
 Dim pdfsection
-Set pdfsection = CreateObject("Aspose.PDF.Generator.Section")
+Set pdfsection = CreateObject("Aspose.Pdf.Generator.Section")
 
-'Tambahkan bagian ke objek Pdf
-pdf.Sections.Add(pdfsection)
+'Add section to Pdf object
+document.Sections.Add(pdfsection)
 
-' Buat objek Teks
+'Create Text object
 Dim SampleText
-Set SampleText = CreateObject("Aspose.PDF.Generator.Text")
+Set SampleText = CreateObject("Aspose.Pdf.Generator.Text")
 
-'Tambahkan Segmen Teks ke objek teks
+'Add Text Segment to text object
 Dim seg1
-Set seg1 = CreateObject("Aspose.PDF.Generator.Segment")
+Set seg1 = CreateObject("Aspose.Pdf.Generator.Segment")
 
-'Berikan beberapa konten ke segmen
-seg1.Content = "HelloWorld menggunakan ASP dan VBScript"
+'Assign some content to the segment
+seg1.Content = "HelloWorld using ASP and VBScript"
 
-'Tambahkan segmen (dengan warna teks merah) ke paragraf
+'Add segment (with red text color) to the paragraph
 SampleText.Segments.Add(seg1)
 
-' Tambahkan paragraf Teks ke koleksi paragraf dari sebuah bagian
+'Add Text paragraph to paragraphs collection of a section
 pdfsection.Paragraphs.Add(SampleText)
 
-' Simpan dokumen PDF
-pdf.Save("d:\pdftest\HelloWorldinASP.pdf")
-
+'Save PDF document
+document.Save("HelloWorldinASP_out.pdf")
 %>
 
     </body>
 </html>
 ```
+
 ## Mengekstrak Teks menggunakan VBScript
 
 {{% alert color="primary" %}}
-    Contoh VBScript ini mengekstrak teks dari dokumen PDF yang sudah ada melalui COM Interop.
+    Contoh VBScript ini mengekstrak teks dari dokumen PDF yang ada melalui COM Interop.
     Error rendering macro 'code' : Invalid value specified for parameter lang
 {{% /alert %}}

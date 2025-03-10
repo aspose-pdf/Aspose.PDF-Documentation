@@ -1,11 +1,13 @@
 ---
-title: إضافة ختم صورة في PDF باستخدام C#
-linktitle: ختم الصور في ملف PDF
+title: إضافة طوابع الصور في PDF باستخدام C#
+linktitle: طوابع الصور في ملف PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ar/net/image-stamps-in-pdf-page/
-description: أضف ختم الصورة في مستند PDF باستخدام فئة ImageStamp مع مكتبة Aspose.PDF.
-lastmod: "2022-02-17"
+description: أضف طابع الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF.
+lastmod: "2024-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "إضافة ختم صورة في PDF باستخدام C#",
-    "alternativeHeadline": "إضافة ختم صورة في PDF باستخدام C#",
+    "headline": "Add Image stamps in PDF using C#",
+    "alternativeHeadline": "Add Custom Image Stamps to PDF Documents",
+    "abstract": "تتيح الميزة الجديدة في مكتبة Aspose.PDF للمستخدمين إضافة طوابع الصور بسلاسة إلى مستندات PDF باستخدام C#. مع فئة ImageStamp، يمكن للمطورين تخصيص الخصائص مثل الحجم، والشفافية، والجودة، مما يعزز بشكل كبير عرض المستندات وإمكانية الوصول. تتضمن هذه الوظيفة أيضًا القدرة على إضافة نص بديل، مما يعزز قابلية الاستخدام لقراءة الشاشة.",
     "author": {
         "@type": "Person",
-        "name":"أندري أندروخوفسكي",
-        "givenName": "أندري",
-        "familyName": "أندروخوفسكي",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "توليد مستندات PDF",
-    "keywords": "pdf, c#, توليد المستندات",
-    "wordcount": "302",
-    "proficiencyLevel":"مبتدئ",
+    "genre": "pdf document generation",
+    "wordcount": "646",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "فريق وثائق Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,111 +73,155 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/image-stamps-in-pdf-page/"
     },
-    "dateModified": "2022-02-04",
-    "description": "أضف ختم الصورة في مستند PDF باستخدام فئة ImageStamp مع مكتبة Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "أضف طابع الصورة في مستند PDF الخاص بك باستخدام فئة ImageStamp مع مكتبة Aspose.PDF."
 }
 </script>
-## إضافة ختم صورة في ملف PDF
 
-يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF. توفر فئة ImageStamp الخصائص اللازمة لإنشاء ختم يعتمد على الصورة، مثل الارتفاع، العرض، الشفافية وما إلى ذلك.
+## إضافة طابع الصورة في ملف PDF
 
-الشفرة التالية تعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
+يمكنك استخدام فئة ImageStamp لإضافة طابع صورة إلى ملف PDF. توفر فئة ImageStamp الخصائص اللازمة لإنشاء طابع يعتمد على الصورة، مثل الارتفاع، والعرض، والشفافية، وما إلى ذلك.
 
-لإضافة ختم صورة:
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
-1. قم بإنشاء كائن Document وكائن ImageStamp باستخدام الخصائص المطلوبة.
-1. استدعِ طريقة AddStamp للفئة Page لإضافة الختم إلى ملف PDF.
+لإضافة طابع صورة:
 
-توضح الشفرة التالية كيفية إضافة ختم صورة في ملف PDF.
+1. أنشئ كائن Document وكائن ImageStamp باستخدام الخصائص المطلوبة.
+1. استدعِ طريقة AddStamp من فئة Page لإضافة الطابع إلى PDF.
 
-```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
-
-// إنشاء ختم الصورة
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-imageStamp.Background = true;
-imageStamp.XIndent = 100;
-imageStamp.YIndent = 100;
-imageStamp.Height = 300;
-imageStamp.Width = 300;
-imageStamp.Rotate = Rotation.on270;
-imageStamp.Opacity = 0.5;
-// إضافة ختم إلى صفحة معينة
-pdfDocument.Pages[1].AddStamp(imageStamp);
-
-dataDir = dataDir + "AddImageStamp_out.pdf";
-// حفظ المستند الناتج
-pdfDocument.Save(dataDir);
-```
-## التحكم في جودة الصورة عند إضافة ختم
-
-عند إضافة صورة ككائن ختم، يمكنك التحكم في جودة الصورة. يستخدم خاصية الجودة في فئة ImageStamp لهذا الغرض. تشير إلى جودة الصورة بالنسبة المئوية (القيم الصالحة هي 0..100).
+تظهر مقتطفات الشيفرة التالية كيفية إضافة طابع صورة في ملف PDF.
 
 ```csharp
-// للأمثلة الكاملة وملفات البيانات، يرجى زيارة https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل الوثائق.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// فتح المستند
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
-
-// إنشاء ختم الصورة
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-
-imageStamp.Quality = 10;
-pdfDocument.Pages[1].AddStamp(imageStamp);
-pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
-```
-
-## ختم الصورة كخلفية في صندوق عائم
-
-تتيح لك واجهة برمجة تطبيقات Aspose.PDF إضافة ختم الصورة كخلفية في صندوق عائم.
-API Aspose.PDF يتيح لك إضافة ختم صورة كخلفية في صندوق عائم.
-
-```csharp
-// لأمثلة كاملة وملفات البيانات، يرجى الذهاب إلى https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// المسار إلى دليل المستندات.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// توثيق كائن الوثيقة
-Document doc = new Document();
-// إضافة صفحة إلى مستند PDF
-Page page = doc.Pages.Add();
-// إنشاء كائن FloatingBox
-FloatingBox aBox = new FloatingBox(200, 100);
-// تحديد الموضع الأيسر لـ FloatingBox
-aBox.Left = 40;
-// تحديد الموضع العلوي لـ FloatingBox
-aBox.Top = 80;
-// تحديد محاذاة أفقية لـ FloatingBox
-aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// إضافة جزء نص إلى مجموعة فقرات FloatingBox
-aBox.Paragraphs.Add(new TextFragment("main text"));
-// تعيين حدود لـ FloatingBox
-aBox.Border = new BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
-// إضافة صورة خلفية
-aBox.BackgroundImage = new Image
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampInPdfFile()
 {
-    File = dataDir + "aspose-logo.jpg"
-};
-// تعيين لون خلفية لـ FloatingBox
-aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
-// إضافة FloatingBox إلى مجموعة فقرات الصفحة
-page.Paragraphs.Add(aBox);
-// حفظ مستند PDF
-doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Background = true;
+        imageStamp.XIndent = 100;
+        imageStamp.YIndent = 100;
+        imageStamp.Height = 300;
+        imageStamp.Width = 300;
+        imageStamp.Rotate = Rotation.on270;
+        imageStamp.Opacity = 0.5;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddImageStamp_out.pdf");
+    }
+}
+```
+
+## التحكم في جودة الصورة عند إضافة الطابع
+
+عند إضافة صورة ككائن طابع، يمكنك التحكم في جودة الصورة. تُستخدم خاصية Quality من فئة ImageStamp لهذا الغرض. تشير إلى جودة الصورة بالنسبة المئوية (القيم الصالحة هي 0..100).
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ControlImageQualityWhenAddingStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Quality = 10;
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "ControlImageQuality_out.pdf");
+    }
+}
+```
+
+## طابع الصورة كخلفية في صندوق عائم
+
+تتيح لك واجهة برمجة تطبيقات Aspose.PDF إضافة طابع صورة كخلفية في صندوق عائم. يمكن استخدام خاصية BackgroundImage من فئة FloatingBox لتعيين طابع الصورة كخلفية لصندوق عائم كما هو موضح في مقتطف الشيفرة التالي.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImageStampAsBackgroundInFloatingBox()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to PDF document
+        Page page = document.Pages.Add();
+        // Create FloatingBox object
+        var aBox = new Aspose.Pdf.FloatingBox(200, 100);
+        // Set left position for FloatingBox
+        aBox.Left = 40;
+        // Set Top position for FloatingBox
+        aBox.Top = 80;
+        // Set the Horizontal alignment for FloatingBox
+        aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        // Add text fragment to paragraphs collection of FloatingBox
+        aBox.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("main text"));
+        // Set border for FloatingBox
+        aBox.Border = new Aspose.Pdf.BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
+        // Add background image
+        aBox.BackgroundImage = new Aspose.Pdf.Image
+        {
+            File = dataDir + "aspose-logo.jpg"
+        };
+        // Set background color for FloatingBox
+        aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
+        // Add FloatingBox to paragraphs collection of page object
+        page.Paragraphs.Add(aBox);
+        // Save PDF document
+        document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    }
+}
+```
+
+## إضافة نص بديل إلى طابع الصورة
+
+منذ الإصدار 24.6، من الممكن إضافة نص بديل إلى طابع الصورة.
+
+يفتح هذا الكود ملف PDF، ويضيف صورة كطابع في موضع محدد، ويشمل نصًا بديلاً من أجل إمكانية الوصول. ثم يتم حفظ ملف PDF المحدث باسم جديد.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddAlternativeTextToTheImageStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
+        {
+            XIndent = 100,
+            YIndent = 700,
+            Quality = 100,
+            AlternativeText = "Your alt text"  // This property added.
+        };
+        // Add stamp
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "DocWithImageStamp_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "مكتبة Aspose.PDF لـ .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -197,21 +243,21 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "مبيعات",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -222,7 +268,7 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "مكتبة التلاعب بملفات PDF لـ .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -234,5 +280,3 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
     }
 }
 </script>
-```
-

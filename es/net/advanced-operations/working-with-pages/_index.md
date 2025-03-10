@@ -2,9 +2,11 @@
 title: Trabajando con Páginas PDF en C#
 linktitle: Trabajando con Páginas
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /es/net/working-with-pages/
-description: Cómo agregar páginas, encabezados y pies de página, agregar marcas de agua puedes saber en esta sección. Aspose.PDF para .NET te explica todos los detalles sobre este tema.
+description: Cómo agregar páginas, agregar encabezados y pies de página, agregar marcas de agua que puedes conocer en esta sección. Aspose.PDF for .NET te explica todos los detalles sobre este tema.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabajando con Páginas PDF en C#",
-    "alternativeHeadline": "Cómo trabajar con Páginas PDF",
+    "headline": "Working with PDF Pages in C#",
+    "alternativeHeadline": "Enhance PDF Management with C# Page Features",
+    "abstract": "Descubre las capacidades avanzadas de Aspose.PDF for .NET para gestionar páginas PDF, incluyendo agregar, mover y eliminar páginas con precisión. Esta función permite a los usuarios mejorar sus documentos PDF incorporando encabezados, pies de página, marcas de agua y tamaños de página personalizados, todo a través de un código C# intuitivo. Optimiza tus flujos de trabajo de documentos con manipulaciones y funcionalidades de personalización de PDF sin problemas.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, página pdf, agregar página pdf, agregar número de página, rotar página, eliminar página",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "wordcount": "450",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,34 +73,32 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-pages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Cómo agregar páginas, encabezados y pies de página, agregar marcas de agua puedes saber en esta sección. Aspose.PDF para .NET te explica todos los detalles sobre este tema."
+    "dateModified": "2024-11-26",
+    "description": "Cómo agregar páginas, agregar encabezados y pies de página, agregar marcas de agua que puedes conocer en esta sección. Aspose.PDF for .NET te explica todos los detalles sobre este tema."
 }
 </script>
 
-**Aspose.PDF para .NET** te permite insertar una página en un documento PDF en cualquier ubicación del archivo, así como añadir páginas al final de un archivo PDF. Esta sección muestra cómo añadir páginas a un PDF sin Acrobat Reader.
-Puedes añadir texto o imágenes en los encabezados y pies de página de tu archivo PDF, y elegir diferentes encabezados en tu documento con la biblioteca C# de Aspose.
-También, intenta recortar páginas en un documento PDF programáticamente usando C#.
+**Aspose.PDF for .NET** te permite insertar una página en un documento PDF en cualquier ubicación del archivo, así como agregar páginas al final de un archivo PDF. Esta sección muestra cómo agregar páginas a un PDF sin Acrobat Reader. 
+Puedes agregar texto o imágenes en los encabezados y pies de página de tu archivo PDF, y elegir diferentes encabezados en tu documento con la biblioteca C# de Aspose. 
+Además, intenta recortar páginas en el documento PDF programáticamente usando C#.
 
-Esta sección te enseña cómo añadir marcas de agua en tu archivo PDF usando la clase Artifact. Revisarás el ejemplo de programación para esta tarea.
-Añade número de página usando la clase PageNumberStamp. Para añadir un Sello en tu documento usa las clases ImageStamp y TextStamp. Usa la adición de una marca de agua para crear imágenes de fondo en tu archivo PDF con **Aspose.PDF para .NET**.
+Esta sección te enseña cómo agregar marcas de agua en tu archivo PDF utilizando la clase Artifact. Revisarás el ejemplo de programación para esta tarea. 
+Agrega el número de página utilizando la clase PageNumberStamp. Para agregar un sello en tu documento, utiliza las clases ImageStamp y TextStamp. Usa la adición de una marca de agua para crear imágenes de fondo en tu archivo PDF con **Aspose.PDF for .NET**.
 
-Eres capaz de hacer lo siguiente:
+Puedes hacer lo siguiente:
 
-- [Añadir Páginas](/pdf/es/net/add-pages/) - añadir páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de tu documento.
+- [Agregar Páginas](/pdf/es/net/add-pages/) - agregar páginas en la ubicación deseada o al final de un archivo PDF y eliminar una página de tu documento.
 - [Mover Páginas](/pdf/es/net/move-pages/) - mover páginas de un documento a otro.
-- [Mover Páginas](/pdf/es/net/move-pages/) - mueve páginas de un documento a otro.
-- [Eliminar Páginas](/pdf/es/net/delete-pages/) - elimina páginas de tu archivo PDF usando la colección PageCollection.
-- [Cambiar Tamaño de Página](/pdf/es/net/change-page-size/) - puedes cambiar el tamaño de la página PDF con un fragmento de código usando la biblioteca Aspose.PDF.
+- [Eliminar Páginas](/pdf/es/net/delete-pages/) - eliminar una página de tu archivo PDF utilizando la colección PageCollection.
+- [Cambiar Tamaño de Página](/pdf/es/net/change-page-size/) - puedes cambiar el tamaño de la página PDF con un fragmento de código utilizando la biblioteca Aspose.PDF.
 - [Rotar Páginas](/pdf/es/net/rotate-pages/) - puedes cambiar la orientación de las páginas en un archivo PDF existente.
 - [Dividir Páginas](/pdf/es/net/split-document/) - puedes dividir archivos PDF en uno o múltiples PDF.
-- [Agregar Encabezados y/o Pies de Página](/pdf/es/net/add-headers-and-footers-of-pdf-file/) - agrega texto o imágenes en los encabezados y pies de página de tu archivo PDF.
-- [Recortar Páginas](/pdf/es/net/crop-pages/) - puedes recortar páginas en un documento PDF programáticamente con diferentes Propiedades de Página.
-- [Agregar Marcas de Agua](/pdf/es/net/add-watermarks/) - agrega marcas de agua en tu archivo PDF con la Clase Artifact.
-- [Agregar Numeración de Páginas en Archivo PDF](/pdf/es/net/add-page-number/) - la clase PageNumberStamp te ayudará a agregar un Número de Página en tu archivo PDF.
-- [Agregar Numeración de Páginas en Archivo PDF](/pdf/es/net/add-page-number/) - La clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
-- [Agregar Fondos](/pdf/es/net/add-backgrounds/) - las imágenes de fondo se pueden utilizar para agregar una marca de agua.
-- [Estampado](/pdf/es/net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar texto.
+- [Agregar Encabezados y/o Pies de Página](/pdf/es/net/add-headers-and-footers-of-pdf-file/) - agregar texto o imágenes en los encabezados y pies de página de tu archivo PDF.
+- [Recortar Páginas](/pdf/es/net/crop-pages/) - puedes recortar páginas en el documento PDF programáticamente con diferentes Propiedades de Página.
+- [Agregar Marcas de Agua](/pdf/es/net/add-watermarks/) - agregar marcas de agua en tu archivo PDF con la clase Artifact.
+- [Agregar Numeración de Página en el Archivo PDF](/pdf/es/net/add-page-number/) - la clase PageNumberStamp te ayudará a agregar un número de página en tu archivo PDF.
+- [Agregar Fondos](/pdf/es/net/add-backgrounds/) - las imágenes de fondo se pueden usar para agregar una marca de agua.
+- [Sello](/pdf/es/net/stamping/) - puedes usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF y la clase TextStamp para agregar texto.
 
 <script type="application/ld+json">
 {
@@ -163,4 +163,3 @@ Eres capaz de hacer lo siguiente:
     }
 }
 </script>
-

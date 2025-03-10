@@ -1,16 +1,17 @@
 ---
-title: Aspose.PDF .NET لـ VisualStudio
+title: أسبوز.بي دي إف .نت لفيجوال ستوديو
 type: docs
-weight: 340
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 60
 url: /ar/net/aspose-pdf-net-for-visualstudio/
-description: تعلم كيفية استخدام إضافات Aspose.PDF لـ Visual Studio
+description: تعلم كيفية استخدام مكونات Aspose.PDF الإضافية لـ Visual Studio
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+تحتوي هذه القسم على المواضيع التالية:
 
-هذا القسم يحتوي على المواضيع التالية:
-
-- [تحكم تصدير GridView إلى PDF في Visual Studio](/pdf/ar/net/visual-studio-export-gridview-to-pdf-control/)
-- [إضافة Aspose.PDF لـ Visual Studio](/pdf/ar/net/aspose-pdf-visual-studio-plugin/)
+- [تصدير GridView إلى PDF في Visual Studio](/pdf/ar/net/visual-studio-export-gridview-to-pdf-control/)
+- [مكون Aspose.PDF الإضافي لـ Visual Studio](/pdf/ar/net/aspose-pdf-visual-studio-plugin/)

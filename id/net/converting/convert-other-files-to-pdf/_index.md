@@ -1,68 +1,133 @@
 ---
-title: Mengonversi Format File Lain ke PDF di .NET
-linktitle: Mengonversi Format File Lain ke PDF
+title: Mengonversi format file lain ke PDF di .NET
+linktitle: Mengonversi format file lain ke PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /id/net/convert-other-files-to-pdf/
 lastmod: "2021-11-01"
-description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengkonversi format file lain seperti EPUB, MD, PCL, XPS, PS, XML, dan LaTeX menjadi dokumen PDF.
+description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi format file lain seperti EPUB, MD, PCL, XPS, PS, XML, dan LaTeX ke dokumen PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert other file formats to PDF in .NET",
+    "alternativeHeadline": "Convert Multiple File Formats to PDF in C#",
+    "abstract": "Aspose.PDF for .NET memperkenalkan fitur serbaguna yang memungkinkan pengguna untuk dengan mudah mengonversi berbagai format file, termasuk EPUB, Markdown, PCL, XPS, PS, XML, dan LaTeX, menjadi dokumen PDF berkualitas tinggi. Fungsionalitas ini meningkatkan manajemen dokumen dengan memastikan kompatibilitas dan aksesibilitas di berbagai platform sambil mempertahankan integritas konten asli.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "4627",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-other-files-to-pdf/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-other-files-to-pdf/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga dapat menangani tujuan yang lebih kompleks. Periksa bagian berikut untuk pengguna dan pengembang tingkat lanjut."
+}
+</script>
 
-## Overview
+## Ikhtisar
 
-Artikel ini menjelaskan cara **mengkonversi berbagai jenis format file lain ke PDF menggunakan C#**. Ini mencakup topik berikut.
+Artikel ini menjelaskan bagaimana **mengonversi berbagai jenis format file lain ke PDF menggunakan C#**. Ini mencakup topik-topik berikut.
 
 Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 _Format_: **EPUB**
 - [C# EPUB ke PDF](#csharp-convert-epub-to-pdf)
 - [C# Mengonversi EPUB ke PDF](#csharp-convert-epub-to-pdf)
-- [C# Cara mengkonversi file EPUB ke PDF](#csharp-convert-epub-to-pdf)
+- [C# Cara mengonversi file EPUB ke PDF](#csharp-convert-epub-to-pdf)
 
 _Format_: **Markdown**
 - [C# Markdown ke PDF](#csharp-convert-markdown-to-pdf)
 - [C# Mengonversi Markdown ke PDF](#csharp-convert-markdown-to-pdf)
-- [C# Cara mengkonversi file Markdown ke PDF](#csharp-convert-markdown-to-pdf)
-- [C# Bagaimana cara mengonversi file Markdown ke PDF](#csharp-convert-markdown-to-pdf)
+- [C# Cara mengonversi file Markdown ke PDF](#csharp-convert-markdown-to-pdf)
 
 _Format_: **MD**
 - [C# MD ke PDF](#csharp-convert-md-to-pdf)
-- [C# Konversi MD ke PDF](#csharp-convert-md-to-pdf)
-- [C# Bagaimana cara mengonversi file MD ke PDF](#csharp-convert-md-to-pdf)
+- [C# Mengonversi MD ke PDF](#csharp-convert-md-to-pdf)
+- [C# Cara mengonversi file MD ke PDF](#csharp-convert-md-to-pdf)
 
 _Format_: **PCL**
 - [C# PCL ke PDF](#csharp-convert-pcl-to-pdf)
-- [C# Konversi PCL ke PDF](#csharp-convert-pcl-to-pdf)
-- [C# Bagaimana cara mengonversi file PCL ke PDF](#csharp-convert-pcl-to-pdf)
+- [C# Mengonversi PCL ke PDF](#csharp-convert-pcl-to-pdf)
+- [C# Cara mengonversi file PCL ke PDF](#csharp-convert-pcl-to-pdf)
 
-_Format_: **Text**
+_Format_: **Teks**
 - [C# Teks ke PDF](#csharp-convert-text-to-pdf)
-- [C# Konversi Teks ke PDF](#csharp-convert-text-to-pdf)
-- [C# Bagaimana cara mengonversi file Teks ke PDF](#csharp-convert-text-to-pdf)
+- [C# Mengonversi Teks ke PDF](#csharp-convert-text-to-pdf)
+- [C# Cara mengonversi file Teks ke PDF](#csharp-convert-text-to-pdf)
 
 _Format_: **TXT**
 - [C# TXT ke PDF](#csharp-convert-txt-to-pdf)
-- [C# Konversi TXT ke PDF](#csharp-convert-txt-to-pdf)
-- [C# Bagaimana cara mengonversi file TXT ke PDF](#csharp-convert-txt-to-pdf)
+- [C# Mengonversi TXT ke PDF](#csharp-convert-txt-to-pdf)
+- [C# Cara mengonversi file TXT ke PDF](#csharp-convert-txt-to-pdf)
 
-_Format_: **Plain Text**
+_Format_: **Teks Biasa**
 - [C# Teks Biasa ke PDF](#csharp-convert-plain-text-to-pdf)
-- [C# Konversi Teks Biasa ke PDF](#csharp-convert-plain-text-to-pdf)
-- [C# Bagaimana cara mengonversi file Teks Biasa ke PDF](#csharp-convert-plain-text-to-pdf)
+- [C# Mengonversi Teks Biasa ke PDF](#csharp-convert-plain-text-to-pdf)
 - [C# Cara mengonversi file Teks Biasa ke PDF](#csharp-convert-plain-text-to-pdf)
 
-_Format_: **Teks Terformat**
+_Format_: **TXT Terformat**
 - [C# Teks Terformat ke PDF](#csharp-convert-pre-formatted-txt-to-pdf)
 - [C# Mengonversi Teks Terformat ke PDF](#csharp-convert-pre-formatted-txt-to-pdf)
 - [C# Cara mengonversi file Teks Terformat ke PDF](#csharp-convert-pre-formatted-txt-to-pdf)
 
-_Format_: **Teks Praformat**
-- [C# Teks Praformat ke PDF](#csharp-convert-pre-text-to-pdf)
-- [C# Mengonversi Teks Praformat ke PDF](#csharp-convert-pre-text-to-pdf)
-- [C# Cara mengonversi file Teks Praformat ke PDF](#csharp-convert-pre-text-to-pdf)
+_Format_: **Teks Pra**
+- [C# Teks Pra ke PDF](#csharp-convert-pre-text-to-pdf)
+- [C# Mengonversi Teks Pra ke PDF](#csharp-convert-pre-text-to-pdf)
+- [C# Cara mengonversi file Teks Pra ke PDF](#csharp-convert-pre-text-to-pdf)
 
 _Format_: **XPS**
 - [C# XPS ke PDF](#csharp-convert-xps-to-pdf)
@@ -71,119 +136,139 @@ _Format_: **XPS**
 
 ## Mengonversi EPUB ke PDF
 
-**Aspose.PDF for .NET** memungkinkan Anda untuk dengan mudah mengonversi file EPUB ke format PDF.
+**Aspose.PDF for .NET** memungkinkan Anda untuk mengonversi file EPUB ke format PDF dengan mudah.
 
-<abbr title="publikasi elektronik">EPUB</abbr> (singkatan dari publikasi elektronik) adalah standar e-book gratis dan terbuka dari International Digital Publishing Forum (IDPF).
-<abbr title="publikasi elektronik">EPUB</abbr> (singkatan dari publikasi elektronik) adalah standar buku elektronik gratis dan terbuka dari International Digital Publishing Forum (IDPF).
+<abbr title="electronic publication">EPUB</abbr> (singkatan dari electronic publication) adalah standar e-book gratis dan terbuka dari International Digital Publishing Forum (IDPF). File memiliki ekstensi .epub. EPUB dirancang untuk konten yang dapat mengalir, yang berarti bahwa pembaca EPUB dapat mengoptimalkan teks untuk perangkat tampilan tertentu.
 
-EPUB juga mendukung konten dengan tata letak tetap. Format ini dimaksudkan sebagai satu format yang dapat digunakan oleh penerbit dan rumah konversi baik secara internal maupun untuk distribusi dan penjualan. Ini menggantikan standar Open eBook. Versi EPUB 3 juga didukung oleh Book Industry Study Group (BISG), sebuah asosiasi perdagangan buku terkemuka untuk praktik terbaik yang distandarisasi, penelitian, informasi, dan acara, untuk pengemasan konten.
+EPUB juga mendukung konten dengan tata letak tetap. Format ini dimaksudkan sebagai satu format yang dapat digunakan oleh penerbit dan rumah konversi secara internal, serta untuk distribusi dan penjualan. Ini menggantikan standar Open eBook. Versi EPUB 3 juga didukung oleh Book Industry Study Group (BISG), sebuah asosiasi perdagangan buku terkemuka untuk praktik terbaik yang distandarisasi, penelitian, informasi, dan acara, untuk pengemasan konten.
 
 {{% alert color="success" %}}
-**Coba konversi EPUB ke PDF secara online**
+**Cobalah untuk mengonversi EPUB ke PDF secara online**
 
-Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["EPUB ke PDF"](https://products.aspose.app/pdf/conversion/epub-to-pdf), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["EPUB ke PDF"](https://products.aspose.app/pdf/conversion/epub-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Konversi Aspose.PDF EPUB ke PDF dengan Aplikasi Gratis](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
+[![Aspose.PDF Konversi EPUB ke PDF dengan Aplikasi Gratis](epub.png)](https://products.aspose.app/pdf/conversion/epub-to-pdf)
 {{% /alert %}}
 
-<a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>Langkah-langkah:</em> Konversi EPUB ke PDF dalam C#</strong></a>
 <a name="csharp-convert-epub-to-pdf" id="csharp-convert-epub-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi EPUB ke PDF di C#</strong></a>
 
-1. Buat sebuah instansi dari kelas [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions).
-2. Buat sebuah instansi dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari kelas [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions).
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
-Kode berikut menunjukkan cara mengonversi file EPUB ke format PDF dengan C#.
+Potongan kode berikut menunjukkan cara mengonversi file EPUB ke format PDF dengan C#.
 
 ```csharp
-public static void ConvertEPUBtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertEPUBtoPDF()
 {
-    EpubLoadOptions option = new EpubLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "WebAssembly.epub", option);
-    pdfDocument.Save(_dataDir + "epub_test.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.EpubLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertEPUBtoPDF_out.pdf");
+    }
 }
 ```
 
-Anda juga dapat mengatur ukuran halaman untuk konversi. Untuk menentukan ukuran halaman baru, gunakan objek `SizeF` dan lewatkan ke konstruktor [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main).
+Anda juga dapat mengatur ukuran halaman untuk konversi. Untuk mendefinisikan ukuran halaman baru, Anda menggunakan objek `SizeF` dan meneruskannya ke konstruktor [EpubLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/epubloadoptions/constructors/main).
 
 ```csharp
-public static void ConvertEPUBtoPDFAdv()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertEPUBtoPDFAdv()
 {
-    EpubLoadOptions option = new EpubLoadOptions(new SizeF(1190, 1684));
-    Document pdfDocument= new Document(_dataDir + "WebAssembly.epub", option);
-    pdfDocument.Save(_dataDir + "epub_test.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.EpubLoadOptions(new SizeF(1190, 1684));
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "EPUBToPDF.epub", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertEPUBtoPDFAdv_out.pdf");
+    }
 }
 ```
+
 ## Mengonversi Markdown ke PDF
 
-**Fitur ini didukung oleh versi 19.6 atau lebih tinggi.**
+**Fitur ini didukung oleh versi 19.6 atau lebih besar.**
 
 {{% alert color="success" %}}
-**Coba konversi Markdown ke PDF secara online**
+**Cobalah untuk mengonversi Markdown ke PDF secara online**
 
-Aspose.PDF untuk .NET mempersembahkan aplikasi gratis online ["Markdown ke PDF"](https://products.aspose.app/pdf/conversion/md-to-pdf), di mana Anda dapat mencoba untuk meneliti fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["Markdown ke PDF"](https://products.aspose.app/pdf/conversion/md-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Konversi Aspose.PDF Markdown ke PDF dengan Aplikasi Gratis](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
+[![Aspose.PDF Konversi Markdown ke PDF dengan Aplikasi Gratis](markdown.png)](https://products.aspose.app/pdf/conversion/md-to-pdf)
 {{% /alert %}}
 
-Aspose.PDF untuk .NET menyediakan fungsionalitas untuk membuat dokumen PDF berdasarkan file data [Markdown](https://daringfireball.net/projects/markdown/syntax) masukan. Untuk mengonversi Markdown ke PDF, Anda perlu menginisialisasi [Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document) menggunakan [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions).
+Aspose.PDF for .NET menyediakan fungsionalitas untuk membuat dokumen PDF berdasarkan file data [Markdown](https://daringfireball.net/projects/markdown/syntax) input. Untuk mengonversi Markdown ke PDF, Anda perlu menginisialisasi [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) menggunakan [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions).
 
 Potongan kode berikut menunjukkan cara menggunakan fungsionalitas ini dengan pustaka Aspose.PDF:
 
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Langkah:</em> Mengonversi Markdown ke PDF dalam C#</strong></a> |
-<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Markdown ke PDF dalam C#</strong></a> |
-<a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi MD ke PDF dalam C#</strong></a>
+<a name="csharp-convert-markdown-to-pdf" id="csharp-convert-markdown-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Markdown ke PDF di C#</strong></a> |
+<a name="csharp-convert-md-to-pdf" id="csharp-convert-md-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi MD ke PDF di C#</strong></a>
 
-1. Buat instance dari kelas [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/).
+1. Buat instance dari kelas [MdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/mdloadoptions/) .
 2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Buka dokumen Markdown
-Document pdfDocument= new Document(dataDir + "sample.md", new MdLoadOptions());
-// Simpan dokumen dalam format PDF
-pdfDocument.Save(dataDir + "MarkdownToPDF.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertMarkdownToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.MdLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.md", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertMarkdownToPDF_out.pdf");
+    }
+}
 ```
 
-## Konversi PCL ke PDF
+## Mengonversi PCL ke PDF
 
-<abbr title="Printer Command Language">PCL</abbr> (Printer Command Language) adalah bahasa printer yang dikembangkan oleh Hewlett-Packard untuk mengakses fitur printer standar.
-<abbr title="Printer Command Language">PCL</abbr> (Printer Command Language) adalah bahasa printer yang dikembangkan oleh Hewlett-Packard untuk mengakses fitur printer standar.
+<abbr title="Printer Command Language">PCL</abbr> (Printer Command Language) adalah bahasa printer Hewlett-Packard yang dikembangkan untuk mengakses fitur printer standar. PCL level 1 hingga 5e/5c adalah bahasa berbasis perintah yang menggunakan urutan kontrol yang diproses dan diinterpretasikan dalam urutan yang diterima. Pada tingkat konsumen, aliran data PCL dihasilkan oleh driver cetak. Output PCL juga dapat dengan mudah dihasilkan oleh aplikasi kustom.
 
 {{% alert color="success" %}}
-**Coba konversi PCL ke PDF secara online**
+**Cobalah untuk mengonversi PCL ke PDF secara online**
 
-Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["PCL to PDF"](https://products.aspose.app/pdf/conversion/pcl-to-pdf), di mana Anda dapat mencoba mengeksplorasi fungsionalitas dan kualitas kerjanya.
+Aspose.PDF untuk .NET mempersembahkan aplikasi gratis online ["PCL ke PDF"](https://products.aspose.app/pdf/conversion/pcl-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PCL ke PDF dengan Aplikasi Gratis](pcl_to_pdf.png)](https://products.aspose.app/pdf/conversion/pcl-to-pdf)
 {{% /alert %}}
 
-**Saat ini hanya mendukung PCL5 dan versi yang lebih lama**
+**Saat ini hanya PCL5 dan versi yang lebih lama yang didukung**
 
 <table>
     <thead>
         <tr>
             <th>
-                Sets of Commands
+                Set Perintah
             </th>
             <th>
-                Support
+                Dukungan
             </th>
             <th>
-                Exceptions
+                Pengecualian
             </th>
             <th>
-                Description
+                Deskripsi
             </th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-                Perintah kontrol pekerjaan
-
         <tr>
             <td>
                 Perintah kontrol pekerjaan
@@ -192,10 +277,11 @@ Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["PCL to PDF"](https://p
                 +
             </td>
             <td>
-                Mode pencetakan dua sisi
+                Mode pencetakan duplex
             </td>
             <td>
-                Kontrol proses pencetakan: jumlah salinan, tempat keluaran, pencetakan satu/dua sisi, offset kiri dan atas dll.
+                Mengontrol proses cetak: jumlah salinan, bin output, pencetakan simplex/duplex, offset kiri dan atas
+                dll.
             </td>
         </tr>
         <tr>
@@ -206,15 +292,15 @@ Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["PCL to PDF"](https://p
                 +
             </td>
             <td>
-                Perintah Melompati Perforasi
+                Perintah Lewati Perforasi
             </td>
             <td>
-                Tentukan ukuran halaman, margin, orientasi halaman, jarak antar-baris, antar-karakter dll.
+                Menentukan ukuran halaman, margin, orientasi halaman, jarak antar garis, jarak antar karakter dll.
             </td>
         </tr>
         <tr>
             <td>
-                Perintah Posisi Kursor
+                Perintah Penempatan Kursor
             </td>
             <td>
                 +
@@ -223,413 +309,541 @@ Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["PCL to PDF"](https://p
                 &nbsp;
             </td>
             <td>
-                Tentukan posisi kursor dan, oleh karena itu, asal-usul teks, gambar raster atau vektor, dan detailnya.
+                Menentukan posisi kursor dan, dengan demikian, asal teks, gambar raster atau vektor dan detail.
             </td>
         </tr>
-```
-
-Tentukan posisi kursor dan, oleh karena itu, asal-usul teks, gambar raster atau vektor, dan detailnya.
-</td>
-</tr>
-<tr>
-<td>
-Perintah pemilihan font
-</td>
-<td>
-+
-</td>
-<td>
-<ol>
-<li>Perintah Data Cetak Transparan.</li>
-<li>Font lunak tertanam. Dalam versi saat ini, alih-alih membuat font lunak, perpustakaan kami memilih
-font "keras" TrueType yang cocok dari font TrueType yang ada yang terinstal di mesin target. <br/>
-Kesesuaian didefinisikan oleh rasio lebar/tinggi.<br/>
-Fitur ini hanya berfungsi untuk font Bitmap dan TrueType dan tidak
-menjamin bahwa teks yang dicetak dengan font lunak akan relevan dengan yang ada di file sumber.<br/>
-Karena kode karakter dalam font lunak bisa tidak sesuai dengan yang default.
-</li>
-<li>Set Simbol yang Ditetapkan Pengguna.</li>
-```
-
-<li>Set Simbol yang Ditentukan Pengguna.</li>
-</ol>
-</td>
-<td>
-Izinkan memuat font lunak (tertanam) dari file PCL dan mengelolanya di memori.
-</td>
-</tr>
-<tr>
-<td>
-Perintah grafik raster
-</td>
-<td>
-+
-</td>
-<td>
-Hanya hitam & putih
-</td>
-<td>
-Izinkan memuat gambar raster dari file PCL ke memori, tentukan parameter raster. <br
-> seperti lebar, tinggi, tipe kompresi, resolusi, dll.
-</td>
-</tr>
-<tr>
-<td>
-Perintah warna
-</td>
-<td>
-+
-</td>
-<td>
-&nbsp;
-</td>
-<td>
-Izinkan pewarnaan untuk semua objek yang dapat dicetak.
-</td>
-</tr>
-<tr>
-<td>
-Perintah Model Cetak
-```
-
-Perintah Model Cetak
+        <tr>
+            <td>
+                Perintah pemilihan font
+            </td>
+            <td>
                 +
-                
-                Mengizinkan pengisian teks, gambar raster, dan area persegi panjang dengan pola raster yang telah ditentukan dan pola yang ditentukan pengguna menentukan mode transparansi untuk pola dan gambar raster sumber. Pola yang telah ditentukan adalah garis berpetak, garis silang, dan pola bayangan.
-
-Perintah Pengisian Area Persegi Panjang
+            </td>
+            <td>
+                <ol>
+                    <li>Perintah Data Cetak Transparan.</li>
+                    <li>Font lunak yang disematkan. Dalam versi saat ini, alih-alih membuat font lunak, pustaka kami memilih
+                        font yang sesuai dari "font" TrueType yang ada yang diinstal di mesin target. <br/>
+                        Kelayakan ditentukan oleh rasio lebar/tinggi.<br/>
+                        Fitur ini hanya berfungsi untuk font Bitmap dan TrueType dan tidak
+                        menjamin bahwa teks yang dicetak dengan font lunak akan relevan dengan yang ada di file sumber.<br/>
+                        Karena kode karakter dalam font lunak dapat tidak cocok dengan yang default.
+                    </li>
+                    <li>Set Simbol yang Didefinisikan Pengguna.</li>
+                </ol>
+            </td>
+            <td>
+                Memungkinkan memuat font lunak (tersemat) dari file PCL dan mengelolanya dalam memori.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Perintah grafik raster
+            </td>
+            <td>
                 +
-                
-                Mengizinkan pembuatan dan pengisian area persegi panjang dengan pola.
-
-Perintah Grafis Vektor HP-GL/2
+            </td>
+            <td>
+                Hanya hitam &amp; putih
+            </td>
+            <td>
+                Memungkinkan memuat gambar raster dari file PCL ke memori, menentukan parameter raster. <br
+                    > seperti lebar, tinggi, jenis kompresi, resolusi dll.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Perintah warna
+            </td>
+            <td>
                 +
-                Perintah Vektor Berlayar (SV), Perintah Mode Transparansi (TR), Perintah Data Transparan (TD), RO
-Perintah Screened Vector (SV), Mode Transparansi (TR), Data Transparan (TD), RO (Rotasi Sistem Koordinat), Font Skalabel atau Bitmap (SB), Miring Karakter (SL) dan Ruang Ekstra (ES) tidak diimplementasikan dan perintah DV (Definisi Jalur Teks Variabel) direalisasikan dalam versi beta.
-
-Izinkan memuat gambar vektor HP-GL/2 dari file PCL ke dalam memori. Gambar vektor memiliki titik asal di sudut kiri bawah area yang dapat dicetak, dapat diskalakan, diterjemahkan, diputar, dan dipotong. <br>
-Gambar vektor dapat berisi teks, sebagai label, dan figur geometris seperti persegi panjang, lingkaran, elips, garis, busur, kurva bezier dan figur kompleks yang terdiri dari yang sederhana. <br> Figur tertutup termasuk huruf dari label dapat diisi dengan pengisian padat atau pola vektor. <br> Pola dapat berupa garis silang, garis silang PCL, naungan, raster yang ditentukan pengguna, garis silang PCL atau garis silang PCL.
-
-hatching, cross-hatch, shading, raster user-defined, PCL hatching atau cross-hatch dan PCL
-user-defined. Pola PCL adalah raster. Label dapat diputar, diskalakan, dan diarahkan secara individu dalam
-empat arah: atas, bawah, kiri, dan kanan. Arah Kiri dan Kanan melibatkan penyusunan huruf satu demi satu.
-Arah Atas dan Bawah melibatkan penyusunan huruf satu di bawah yang lain.
-```
-
-
-Macroses
-―
-&nbsp;
-Memungkinkan memuat urutan perintah PCL ke dalam memori dan menggunakan urutan ini berkali-kali, misalnya,
-untuk mencetak header halaman atau mengatur satu format untuk sekumpulan halaman.
-```
-
-
-Unicode text
-―
-```
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Memungkinkan pewarnaan untuk semua objek yang dapat dicetak.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Perintah Model Cetak
+            </td>
+            <td>
+                +
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Memungkinkan pengisian teks, gambar raster dan area persegi panjang dengan pola raster yang telah ditentukan dan <br>
+                pola yang ditentukan pengguna, menentukan mode transparansi untuk pola dan
+                gambar raster sumber. <br> Pola yang telah ditentukan adalah pola garis, garis silang
+                dan pola bayangan.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Perintah pengisian area persegi panjang
+            </td>
+            <td>
+                +
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Memungkinkan pembuatan dan pengisian area persegi panjang dengan pola.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Perintah Grafik Vektor HP-GL/2
+            </td>
+            <td>
+                +
+            </td>
+            <td>
+                Perintah Vektor Tercetak (SV), Perintah Mode Transparansi (TR), Perintah Data Transparan (TD), RO
+                (Putar Sistem Koordinat), Perintah Font yang Dapat Diskalakan atau Bitmap (SB), Perintah Kemiringan Karakter (SL) dan
+                Ruang Ekstra (ES) tidak diimplementasikan dan perintah DV (Tentukan Jalur Teks Variabel) diimplementasikan dalam
+                versi beta.
+            </td>
+            <td>
+                Memungkinkan memuat gambar vektor HP-GL/2 dari file PCL ke dalam memori. Gambar vektor memiliki asal di sudut kiri bawah area yang dapat dicetak, dapat diskalakan, diterjemahkan, diputar, dan dipotong. <br>
+                Gambar vektor dapat berisi teks, sebagai label, dan bentuk geometris seperti
+                persegi panjang, lingkaran, elips, garis, busur, kurva bezier, dan bentuk kompleks yang terdiri dari yang sederhana. <br> Bentuk tertutup termasuk huruf label dapat diisi dengan
+                pengisian padat atau pola vektor. <br> Pola dapat berupa
+                garis, pola silang, bayangan, raster yang ditentukan pengguna, pola garis PCL atau pola silang dan pola yang ditentukan pengguna PCL. Pola PCL adalah raster. Label dapat diputar, diskalakan, dan diarahkan secara individu dalam
+                empat arah: atas, bawah, kiri, dan kanan. Arah Kiri dan Kanan melibatkan pengaturan huruf satu demi satu. Arah Atas dan Bawah melibatkan pengaturan huruf satu di bawah yang lain.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Makro
+            </td>
+            <td>
+                ―
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Memungkinkan memuat urutan perintah PCL ke dalam memori dan menggunakan urutan ini berkali-kali, misalnya,
+                untuk mencetak header halaman atau menetapkan satu format untuk satu set halaman.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Teks Unicode
+            </td>
+            <td>
+                ―
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Memungkinkan pencetakan karakter non-ASCII. Tidak diimplementasikan karena kurangnya file contoh dengan <br
+                    > teks Unicode
+            </td>
+        </tr>
+        <tr>
+            <td>
+                PCL6 (PCL-XL)
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Diimplementasikan hanya dalam versi Beta karena kurangnya file uji. Font yang disematkan juga tidak
+                didukung.<br> Ekstensi JetReady tidak didukung karena tidak mungkin memiliki spesifikasi JetReady.
+            </td>
+            <td>
+                Format file biner.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Mengonversi file PCL ke format PDF
 
-Untuk mengizinkan konversi dari PCL ke PDF, Aspose.PDF memiliki kelas [`PclLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions.
-```
-Untuk mengizinkan konversi dari PCL ke PDF, Aspose.PDF memiliki kelas [`PclLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions.
+Untuk memungkinkan konversi dari PCL ke PDF, Aspose.PDF memiliki kelas [`PclLoadOptions`](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Kemudian objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dokumen sumber.
 
-Potongan kode berikut menunjukkan proses mengonversi file PCL menjadi format PDF.
+Potongan kode berikut menunjukkan proses mengonversi file PCL ke format PDF.
 
-<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>Langkah:</em> Mengonversi PCL ke PDF dalam C#</strong></a>
+<a name="csharp-convert-pcl-to-pdf" id="csharp-convert-pcl-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi PCL ke PDF di C#</strong></a>
 
-1. Buat sebuah instansi dari kelas [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/).
-2. Buat sebuah instansi dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
+1. Buat instance dari kelas [PclLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/pclloadoptions/) .
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
 3. Simpan dokumen dengan nama file yang diinginkan.
 
 ```csharp
-public static void ConvertPCLtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPCLtoPDF()
 {
-    PclLoadOptions options = new PclLoadOptions();
-    Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
-    pdfDocument.Save(_dataDir + "pcl_test.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.PclLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDF.pcl", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertPCLtoPDF_out.pdf");
+    }
 }
 ```
 
-Anda juga dapat memantau deteksi kesalahan selama proses konversi.
-Anda juga dapat memantau deteksi kesalahan selama proses konversi.
+Anda juga dapat memantau deteksi kesalahan selama proses konversi. Untuk melakukan ini, Anda perlu mengonfigurasi objek PclLoadOptions: setel atau hapus SupressErrors.
 
 ```csharp
-public static void ConvertPCLtoPDFAvdanced()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPCLtoPDFAdvanced()
 {
-    PclLoadOptions options = new PclLoadOptions { SupressErrors = true };
-    Document pdfDocument= new Document(_dataDir + "demo.pcl", options);
-    if (options.Exceptions!=null)
-        foreach (var ex in options.Exceptions)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.PclLoadOptions { SupressErrors = true };
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPCLtoPDFAdvanced.pcl", options))
+    {
+        if (options.Exceptions != null)
         {
-            Console.WriteLine(ex.Message);
+            foreach (var ex in options.Exceptions)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
-    pdfDocument.Save(_dataDir + "pcl_test.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ConvertPCLtoPDFAdvanced_out.pdf");
+    }
 }
 ```
 
-### Masalah yang Diketahui
+### Masalah yang Dikenal
 
-1. Asal teks dan gambar dapat sedikit berbeda dari yang ada di file PCL sumber jika arah cetak bukan 0°. Hal yang sama berlaku untuk gambar vektor jika sistem koordinat plot vektor diputar (perintah RO mendahului).
-1. Asal label pada gambar vektor dapat berbeda dari yang ada di file PCL sumber jika label dipengaruhi oleh urutan perintah: Asal Label (LO), Tentukan Jalur Teks Variabel (DV), Arah Mutlak (DI) atau Arah Relatif (DR).
-1. Jika file PCL yang diparsing mengandung Intellifont atau Universal soft fonts, akan muncul pengecualian, karena Intellifont dan Universal font sama sekali tidak didukung.
-1. Jika file PCL yang diparsing mengandung perintah makro, hasil parsing akan sangat berbeda dari file sumber, karena perintah makro tidak didukung.
+1. Asal dari string teks dan gambar dapat sedikit berbeda dari yang ada di file PCL sumber jika arah cetak tidak 0°. Hal yang sama berlaku untuk gambar vektor jika sistem koordinat dari plot vektor diputar (perintah RO diawali).
+2. Asal label dalam gambar vektor dapat berbeda dari yang ada di file PCL sumber jika label dipengaruhi oleh urutan perintah: Asal Label (LO), Tentukan Jalur Teks Variabel (DV), Arah Absolut (DI) atau Arah Relatif (DR).
+3. Teks dapat dibaca dengan tidak benar jika harus dirender dengan font lunak (tersemat) Bitmap atau TrueType, karena saat ini font ini hanya didukung sebagian (Lihat pengecualian dalam "tabel fitur yang didukung"). Dalam situasi ini, teks hanya dapat dibaca dengan benar jika kode karakter dalam font lunak sesuai dengan yang default. Gaya teks yang dibaca juga dapat berbeda dari yang ada di file PCL sumber karena tidak perlu mengatur gaya di header font lunak.
+4. Jika file PCL yang diparsing mengandung font lunak Intellifont atau Universal, pengecualian akan dilemparkan, karena font Intellifont dan Universal sama sekali tidak didukung.
+5. Jika file PCL yang diparsing mengandung perintah makro, hasil parsing akan sangat berbeda dari file sumber, karena perintah makro tidak didukung.
 
 ## Mengonversi Teks ke PDF
 
-**Aspose.PDF for .NET** mendukung fitur mengonversi file teks biasa dan teks yang telah diformat ke format PDF.
+**Aspose.PDF for .NET** mendukung fitur mengonversi teks biasa dan file teks terformat ke format PDF.
 
-Mengonversi teks ke PDF berarti menambahkan fragmen teks ke halaman PDF. Untuk file teks, kita berurusan dengan 2 jenis teks: pra-pemformatan (misalnya, 25 baris dengan 80 karakter per baris) dan teks tidak terformat (teks biasa). Tergantung pada kebutuhan kita, kita dapat mengontrol penambahan ini sendiri atau mempercayakannya pada algoritma perpustakaan.
+Mengonversi teks ke PDF berarti menambahkan fragmen teks ke halaman PDF. Mengenai file teks, kita berurusan dengan 2 jenis teks: pra-formatting (misalnya, 25 baris dengan 80 karakter per baris) dan teks tidak terformat (teks biasa). Bergantung pada kebutuhan kita, kita dapat mengontrol penambahan ini sendiri atau mempercayakannya kepada algoritma pustaka.
 
 {{% alert color="success" %}}
-**Coba konversi TEKS ke PDF secara online**
+**Cobalah untuk mengonversi TEKS ke PDF secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["Text to PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
-Aspose.PDF untuk .NET memperkenalkan aplikasi gratis online ["Text to PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf) yang memungkinkan Anda untuk mengeksplorasi fungsi dan kualitas kerjanya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["Teks ke PDF"](https://products.aspose.app/pdf/conversion/txt-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Konversi Aspose.PDF TEKS ke PDF dengan Aplikasi Gratis](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
+[![Aspose.PDF Konversi TEKS ke PDF dengan Aplikasi Gratis](text_to_pdf.png)](https://products.aspose.app/pdf/conversion/txt-to-pdf)
+{{% /alert %}}
 
 ### Mengonversi file teks biasa ke PDF
 
 Dalam kasus file teks biasa, kita dapat menggunakan teknik berikut:
 
-<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong><em>Langkah:</em> Mengonversi Teks ke PDF dalam C#</strong></a> |
-<a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong><em>Langkah:</em> Mengonversi TXT ke PDF dalam C#</strong></a> |
-<a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Langkah:</em> Mengonversi Teks Biasa ke PDF dalam C#</strong></a>
+<a name="csharp-convert-text-to-pdf" id="csharp-convert-text-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Teks ke PDF di C#</strong></a> |
+<a name="csharp-convert-txt-to-pdf" id="csharp-convert-txt-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi TXT ke PDF di C#</strong></a> |
+<a name="csharp-convert-plain-text-to-pdf" id="csharp-convert-plain-text-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Teks Biasa ke PDF di C#</strong></a>
 
-1. Gunakan _TextReader_ untuk membaca seluruh teks;
-2.
-2.
-3. Buat objek baru dari [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/) dan berikan objek _TextReader_ kepada konstruktornya;
-4. Tambahkan objek _TextFragment_ sebagai paragraf dalam koleksi _Paragraphs_. Jika jumlah teks lebih besar dari halaman, algoritma perpustakaan secara otomatis menambahkan halaman tambahan;
-5. Gunakan metode **Save** dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/);
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Baca file teks sumber
-TextReader tr = new StreamReader(dataDir + "log.txt");
-
-// Instansiasi objek Dokumen dengan memanggil konstruktor kosongnya
-Document pdfDocument= new Document();
-
-// Tambahkan halaman baru dalam koleksi Halaman dari Dokumen
-Page page = pdfDocument.Pages.Add();
-
-// Buat instansi TextFragmet dan berikan teks dari objek pembaca ke konstruktornya sebagai argumen
-TextFragment text = new TextFragment(tr.ReadToEnd());
-
-// Tambahkan paragraf teks baru dalam koleksi paragraf dan berikan objek TextFragment
-page.Paragraphs.Add(text);
-
-// Simpan file PDF hasil
-pdfDocument.Save(dataDir + "TexttoPDF_out.pdf");
-```
-### Mengonversi file teks yang sudah diformat menjadi PDF
-
-Mengonversi teks yang sudah diformat mirip dengan teks biasa tetapi Anda perlu melakukan beberapa tindakan tambahan seperti mengatur margin, jenis font, dan ukuran font. Jelas bahwa font harus monospace (misalnya Courier New).
-
-Ikuti langkah-langkah ini untuk mengonversi teks yang sudah diformat menjadi PDF dengan C#:
-
-<a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong><em>Langkah:</em> Mengonversi Teks Pra ke PDF di C#</strong></a> |
-<a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Langkah:</em> Mengonversi TXT yang Sudah Diformat menjadi PDF di C#</strong></a>
-
-1. Baca seluruh teks sebagai array string;
-2. Instansiasi objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dan tambahkan halaman baru dalam koleksi [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/);
-Dalam hal ini, algoritma perpustakaan juga menambahkan halaman ekstra, tetapi kita dapat mengontrol proses ini sendiri. Contoh berikut menunjukkan cara mengonversi file teks yang telah diformat sebelumnya (80x25) menjadi dokumen PDF dengan ukuran halaman A4.
+1. Gunakan _TextReader_ untuk membaca seluruh teks.
+2. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dan tambahkan halaman baru di koleksi Pages.
+3. Buat objek baru dari [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment/) dan teruskan objek _TextReader_ ke konstruktor.
+4. Tambahkan objek _TextFragment_ sebagai paragraf dalam koleksi _Paragraphs_. Jika jumlah teks lebih besar dari halaman, algoritma pustaka secara otomatis menambahkan halaman tambahan.
+5. Gunakan metode **Save** dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/).
 
 ```csharp
-public static void ConvertPreFormattedTextToPdf()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPlainTextFileToPDF()
 {
-    // Membaca file teks sebagai array string
-    var lines = System.IO.File.ReadAllLines(_dataDir + "rfc822.txt");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
 
-    // Menginstansiasi objek Document dengan memanggil konstruktornya yang kosong
-    Document pdfDocument= new Document();
-
-    // Menambahkan halaman baru dalam koleksi Halaman dari Dokumen
-    Page page = pdfDocument.Pages.Add();
-
-    // Mengatur margin kiri dan kanan untuk presentasi yang lebih baik
-    page.PageInfo.Margin.Left = 20;
-    page.PageInfo.Margin.Right = 10;
-    page.PageInfo.DefaultTextState.Font = FontRepository.FindFont("Courier New");
-    page.PageInfo.DefaultTextState.FontSize = 12;
-
-    foreach (var line in lines)
+    // Read the source text file
+    using (var streamReader = new StreamReader(dataDir + "TextToPDFInput.txt"))
     {
-        // memeriksa apakah baris mengandung karakter "form feed"
-        // lihat https://en.wikipedia.org/wiki/Page_break
-        if (line.StartsWith("\x0c"))
+        // // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
         {
-            page = pdfDocument.Pages.Add();
-            page.PageInfo.Margin.Left = 20;
-            page.PageInfo.Margin.Right = 10;
-            page.PageInfo.DefaultTextState.Font = FontRepository.FindFont("Courier New");
-            page.PageInfo.DefaultTextState.FontSize = 12;
-        }
-        else
-        {
-            // Membuat instansi dari TextFragment dan
-            // memberikan baris ke
-            // konstruktornya sebagai argumen
-            TextFragment text = new TextFragment(line);
-
-            // Menambahkan paragraf teks baru dalam koleksi paragraf dan memberikan objek TextFragment
+            // Add page
+            var page = document.Pages.Add();
+            // Create an instance of TextFragment and pass the text from reader object to its constructor as argument
+            var text = new Aspose.Pdf.Text.TextFragment(streamReader.ReadToEnd());
+            // Add a new text paragraph in paragraphs collection and pass the TextFragment object
             page.Paragraphs.Add(text);
+            // Save PDF document
+            document.Save(dataDir + "TextToPDF_out.pdf");
         }
     }
-
-    // Menyimpan file PDF hasil
-    pdfDocument.Save(_dataDir + "TexttoPDF_out.pdf");
 }
 ```
-## Mengonversi XPS ke PDF
 
-**Aspose.PDF for .NET** mendukung fitur mengonversi file <abbr title="XML Paper Specification">XPS</abbr> ke format PDF. Periksa artikel ini untuk menyelesaikan tugas Anda.
+### Mengonversi file teks terformat ke PDF
 
-Tipe file XPS terutama dikaitkan dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya dikenal dengan nama kode Metro dan mencakup konsep pemasaran Jalur Cetak Generasi Berikutnya (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan penayangan dokumen ke dalam sistem operasi Windows.
+Mengonversi teks terformat mirip dengan teks biasa tetapi Anda perlu melakukan beberapa tindakan tambahan seperti mengatur margin, jenis font, dan ukuran. Jelas bahwa font harus monospace (misalnya Courier New).
 
-{{% alert color="primary" %}}
+Ikuti langkah-langkah ini untuk mengonversi teks terformat ke PDF dengan C#:
 
-Format file pada dasarnya adalah file XML yang dikompres yang terutama digunakan untuk distribusi dan penyimpanan. Sangat sulit untuk diedit dan sebagian besar diimplementasikan oleh Microsoft.
+<a name="csharp-convert-pre-text-to-pdf" id="csharp-convert-pre-text-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi Teks Pra ke PDF di C#</strong></a> |
+<a name="csharp-convert-pre-formatted-txt-to-pdf" id="csharp-convert-pre-formatted-txt-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi TXT Terformat ke PDF di C#</strong></a>
 
-{{% /alert %}}
+1. Baca seluruh teks sebagai array string.
+2. Buat objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dan tambahkan halaman baru di koleksi [Pages](https://reference.aspose.com/pdf/net/aspose.pdf/document/pages/) .
+3. Jalankan loop melalui array string dan tambahkan setiap string sebagai paragraf dalam koleksi [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/paragraphs/) .
 
-Untuk mengonversi XPS ke PDF dengan Aspose.PDF for .NET, kami telah memperkenalkan sebuah kelas bernama [XpsLoadOption](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions) yang digunakan untuk menginisialisasi objek [LoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions).
-Untuk mengonversi XPS ke PDF dengan Aspose.PDF untuk .NET, kami telah memperkenalkan sebuah kelas bernama [XpsLoadOption](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions) yang digunakan untuk menginisialisasi objek [LoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions).
-
-{{% alert color="primary" %}}
-
-Baik di XP maupun Windows 7, Anda seharusnya menemukan Printer XPS yang telah terpasang jika Anda melihat di Control Panel lalu Printers. Untuk membuat file-file ini Anda dapat menggunakan printer tersebut sebagai perangkat output. Di Windows 7, Anda seharusnya dapat hanya mengklik dua kali file tersebut untuk membukanya di penampil XPS. Anda juga dapat mengunduh penampil XPS dari situs web Microsoft.
-
-{{% /alert %}}
-
-Potongan kode berikut menunjukkan proses mengonversi file XPS menjadi format PDF dengan C#.
-
-<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>Langkah:</em> Konversi XPS ke PDF dalam C#</strong></a>
-
-1. Buat sebuah instansi dari kelas [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/).
-2.
-2.
-3. Simpan dokumen dalam format PDF dengan nama file yang diinginkan.
+Dalam hal ini, algoritma pustaka juga menambahkan halaman tambahan, tetapi kita dapat mengontrol proses ini sendiri. Contoh berikut menunjukkan cara mengonversi file teks terformat ke dokumen PDF dengan ukuran halaman A4.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPreFormattedTextToPdf()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Read the text file as array of string
+    var lines = File.ReadAllLines(dataDir + "ConvertPreFormattedTextToPdf.txt");
 
-// Instansiasi objek LoadOption menggunakan opsi muat XPS
-Aspose.Pdf.LoadOptions options = new XpsLoadOptions();
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+        // Set left and right margins for better presentation
+        page.PageInfo.Margin.Left = 20;
+        page.PageInfo.Margin.Right = 10;
+        page.PageInfo.DefaultTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier New");
+        page.PageInfo.DefaultTextState.FontSize = 12;
 
-// Buat objek dokumen
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options);
+        foreach (var line in lines)
+        {
+            // check if line contains "form feed" character
+            // see https://en.wikipedia.org/wiki/Page_break
+            if (line.StartsWith("\x0c"))
+            {
+                page = document.Pages.Add();
+                page.PageInfo.Margin.Left = 20;
+                page.PageInfo.Margin.Right = 10;
+                page.PageInfo.DefaultTextState.Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier New");
+                page.PageInfo.DefaultTextState.FontSize = 12;
+            }
+            else
+            {
+                // Create an instance of TextFragment and pass the line to its constructor as argument
+                var text = new Aspose.Pdf.Text.TextFragment(line);
+                // Add a new text paragraph in paragraphs collection and pass the TextFragment object
+                page.Paragraphs.Add(text);
+            }
+        }
+        // Save PDF document
+        document.Save(dataDir + "PreFormattedTextToPDF_out.pdf");
+    }
+}
+```
 
-// Simpan dokumen PDF hasil
-document.Save(dataDir + "XPSToPDF_out.pdf");
+## Mengonversi XPS ke PDF
+
+**Aspose.PDF for .NET** mendukung fitur mengonversi <abbr title="XML Paper Specification">XPS</abbr> file ke format PDF. Periksa artikel ini untuk menyelesaikan tugas Anda.
+
+Tipe file XPS terutama terkait dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya bernama Metro dan mencakup konsep pemasaran Jalur Cetak Generasi Berikutnya (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan tampilan dokumen ke dalam sistem operasi Windows-nya.
+
+{{% alert color="primary" %}}
+
+Format file pada dasarnya adalah file XML terkompresi yang terutama digunakan untuk distribusi dan penyimpanan. Sangat sulit untuk diedit dan sebagian besar diimplementasikan oleh Microsoft.
+
+{{% /alert %}}
+
+Untuk mengonversi XPS ke PDF dengan Aspose.PDF for .NET, kami telah memperkenalkan kelas bernama [XpsLoadOption](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions) yang digunakan untuk menginisialisasi objek [LoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/loadoptions) . Kemudian, objek ini diteruskan sebagai argumen selama inisialisasi objek Document dan membantu mesin rendering PDF untuk menentukan format input dokumen sumber.
+
+{{% alert color="primary" %}}
+
+Di XP dan Windows 7, Anda harus menemukan Printer XPS yang sudah terpasang jika Anda melihat di Panel Kontrol dan kemudian Printer. Untuk membuat file-file ini, Anda dapat menggunakan printer tersebut sebagai perangkat output. Di Windows 7, Anda seharusnya dapat cukup mengklik dua kali file untuk membukanya di penampil XPS. Anda juga dapat mengunduh penampil XPS dari situs web Microsoft.
+
+{{% /alert %}}
+
+Potongan kode berikut menunjukkan proses mengonversi file XPS ke format PDF dengan C#.
+
+<a name="csharp-convert-xps-to-pdf" id="csharp-convert-xps-to-pdf"><strong><em>Langkah-langkah:</em> Mengonversi XPS ke PDF di C#</strong></a>
+
+1. Buat instance dari kelas [XpsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xpsloadoptions/) .
+2. Buat instance dari kelas [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) dengan menyebutkan nama file sumber dan opsi.
+3. Simpan dokumen ke format PDF dengan nama file yang diinginkan.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertXPSToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Instantiate Options object
+    var options = new Aspose.Pdf.XpsLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "XPSToPDF.xps", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertXPSToPDF_out.pdf");
+    }
+}
 ```
 
 {{% alert color="success" %}}
-**Coba konversi format XPS ke PDF secara online**
+**Cobalah untuk mengonversi format XPS ke PDF secara online**
 
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["XPS to PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["XPS ke PDF"](https://products.aspose.app/pdf/conversion/xps-to-pdf/), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
-[![Aspose.PDF Convertion XPS to PDF with Free App](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
-{{% /alert %}}
+[![Aspose.PDF Konversi XPS ke PDF dengan Aplikasi Gratis](xps_to_pdf.png)](https://products.aspose.app/pdf/conversion/xps-to-pdf/)
 {{% /alert %}}
 
 ## Mengonversi PostScript ke PDF
 
-**Aspose.PDF for .NET** mendukung fitur mengonversi file PostScript ke format PDF. Salah satu fitur dari Aspose.PDF adalah Anda dapat mengatur serangkaian folder font yang akan digunakan selama konversi.
+**Aspose.PDF for .NET** mendukung fitur mengonversi file PostScript ke format PDF. Salah satu fitur dari Aspose.PDF adalah Anda dapat mengatur satu set folder font yang akan digunakan selama konversi.
 
-Untuk mengonversi file PostScript ke format PDF, Aspose.PDF for .NET menawarkan kelas [PsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/psloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Nantinya objek ini dapat dioper sebagai argumen ke konstruktor objek Document, yang akan membantu PDF Rendering Engine untuk menentukan format dokumen sumber.
+Untuk mengonversi file PostScript ke format PDF, Aspose.PDF for .NET menawarkan kelas [PsLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/psloadoptions) yang digunakan untuk menginisialisasi objek LoadOptions. Kemudian objek ini dapat diteruskan sebagai argumen ke konstruktor objek Document, yang akan membantu Mesin Rendering PDF untuk menentukan format dokumen sumber.
 
-Potongan kode berikut dapat digunakan untuk mengonversi file PostScript menjadi format PDF dengan Aspose.PDF for .NET:
-
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string _dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
-// Buat instance baru dari PsLoadOptions
-PsLoadOptions options = new PsLoadOptions();
-// Buka dokumen .ps dengan opsi muat yang dibuat
-Document pdfDocument = new Document(_dataDir + "input.ps", options);
-// Simpan dokumen
-pdfDocument.Save(dataDir + "PSToPDF.pdf");
-```
-Selain itu, Anda dapat mengatur serangkaian folder font yang akan digunakan selama konversi:
+Potongan kode berikut dapat digunakan untuk mengonversi file PostScript ke format PDF dengan Aspose.PDF for .NET:
 
 ```csharp
-public static void ConvertPostscriptToPDFAvdanced()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPostScriptToPDF()
 {
-    PsLoadOptions options = new PsLoadOptions
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new PsLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
     {
-        FontsFolders = new [] { @"c:\tmp\fonts1", @"c:\tmp\fonts2"}
-    };
-    Document pdfDocument = new Document(_dataDir + "input.ps", options);
-    pdfDocument.Save(_dataDir + "ps_test.pdf");
+        // Save PDF document
+        document.Save(dataDir + "PSToPDF_out.pdf");
+    }
 }
 ```
 
-## Konversi XML ke PDF
+Selain itu, Anda dapat mengatur satu set folder font yang akan digunakan selama konversi:
 
-Format XML digunakan untuk menyimpan data terstruktur. Ada beberapa cara untuk mengonversi XML ke PDF di Aspose.PDF:
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPostscriptToPDFAdvanced()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options with custom font folders
+    var options = new Aspose.Pdf.PsLoadOptions
+    {
+        FontsFolders = new[] { dataDir + @"\fonts1", dataDir + @"\fonts2" }
+    };
 
-1. Transformasikan data XML ke HTML menggunakan XSLT dan konversikan HTML ke PDF seperti dijelaskan di bawah ini
-1. Hasilkan dokumen XML menggunakan Skema XSD Aspose.PDF
-1. Gunakan dokumen XML berdasarkan standar XSL-FO
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertPostscriptInput.ps", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertPostscriptToPDFAdvanced_out.pdf");
+    }
+}
+```
+
+## Mengonversi XML ke PDF
+
+Format XML digunakan untuk menyimpan data terstruktur. Ada beberapa cara untuk mengonversi <abbr title="Extensible Markup Language">XML</abbr> ke PDF di Aspose.PDF:
+
+1. Mengubah data XML apa pun menjadi HTML menggunakan XSLT dan mengonversi HTML ke PDF seperti yang dijelaskan di bawah ini.
+2. Menghasilkan dokumen XML menggunakan Skema XSD Aspose.PDF.
+3. Menggunakan dokumen XML berdasarkan standar XSL-FO.
 
 {{% alert color="success" %}}
-**Coba konversi XML ke PDF secara online**
+**Cobalah untuk mengonversi XML ke PDF secara online**
 
-Aspose.PDF untuk .NET menyajikan aplikasi gratis secara online ["XML to PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), di mana Anda dapat mencoba untuk meneliti fungsionalitas dan kualitas kerjanya.
-
-Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["XML to PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), di mana Anda dapat mencoba menginvestigasi fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["XML ke PDF"](https://products.aspose.app/pdf/conversion/xml-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi XML ke PDF dengan Aplikasi Gratis](xml_to_pdf.png)](https://products.aspose.app/pdf/conversion/xml-to-pdf)
 {{% /alert %}}
 
 
-## Konversi XSL-FO ke PDF
+## Mengonversi XSL-FO ke PDF
 
-Konversi file XSL-FO ke PDF dapat diimplementasikan menggunakan teknik Aspose.PDF tradisional - menginstansiasi objek [Document](https://reference.aspose.com/page/net/aspose.page/document) dengan [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Namun terkadang Anda mungkin menemukan struktur file yang tidak benar. Untuk kasus ini, konverter XSL-FO memungkinkan pengaturan strategi penanganan kesalahan. Anda dapat memilih `ThrowExceptionImmediately`, `TryIgnore` atau `InvokeCustomHandler`.
+Konversi file XSL-FO ke PDF dapat diimplementasikan menggunakan teknik tradisional Aspose.PDF - menginstansiasi objek [Document](https://reference.aspose.com/page/net/aspose.page/document) dengan [XslFoLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/xslfoloadoptions). Tetapi terkadang Anda dapat menemui struktur file yang tidak benar. Untuk kasus ini, konverter XSL-FO memungkinkan pengaturan strategi penanganan kesalahan. Anda dapat memilih `ThrowExceptionImmediately`, `TryIgnore` atau `InvokeCustomHandler`.
 
 ```csharp
-public static void Convert_XSLFO_to_PDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Convert_XSLFO_to_PDF()
 {
-    // Instansiasi objek XslFoLoadOption
-    var options = new XslFoLoadOptions(".\\samples\\employees.xslt");
-    // Atur strategi penanganan kesalahan
-    options.ParsingErrorsHandlingType = XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
-    // Buat objek Document
-    var pdfDocument = new Aspose.Pdf.Document(".\\samples\\employees.xml", options);
-    pdfDocument.Save(_dataDir + "data_xml.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.XslFoLoadOptions(dataDir + "XSLFOToPdfInput.xslt");
+    // Set error handling strategy
+    options.ParsingErrorsHandlingType = Aspose.Pdf.XslFoLoadOptions.ParsingErrorsHandlingTypes.ThrowExceptionImmediately;
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "XSLFOToPdfInput.xml", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "XSLFOToPdf_out.pdf");
+    }
 }
 ```
+
 ## Mengonversi LaTeX/TeX ke PDF
 
-Format file LaTeX adalah format file teks dengan markup dalam turunan LaTeX dari keluarga bahasa TeX dan LaTeX merupakan format turunan dari sistem TeX. LaTeX (ˈleɪtɛk/lay-tek atau lah-tek) adalah sistem persiapan dokumen dan bahasa markup dokumen. Ini banyak digunakan untuk komunikasi dan publikasi dokumen ilmiah di banyak bidang, termasuk matematika, fisika, dan ilmu komputer. Ini juga memiliki peran penting dalam persiapan dan publikasi buku dan artikel yang mengandung materi multibahasa yang kompleks, seperti Sanskerta dan Arab, termasuk edisi kritis. LaTeX menggunakan program penataan teks TeX untuk memformat outputnya, dan ditulis dalam bahasa makro TeX.
+Format file LaTeX adalah format file teks dengan markup dalam turunan LaTeX dari keluarga bahasa TeX dan LaTeX adalah format turunan dari sistem TeX. LaTeX (ˈleɪtɛk/lay-tek atau lah-tek) adalah sistem persiapan dokumen dan bahasa markup dokumen. Ini banyak digunakan untuk komunikasi dan publikasi dokumen ilmiah di banyak bidang, termasuk matematika, fisika, dan ilmu komputer. Ini juga memiliki peran penting dalam persiapan dan publikasi buku dan artikel yang mengandung materi multibahasa yang kompleks, seperti Sanskerta dan Arab, termasuk edisi kritis. LaTeX menggunakan program penyusunan TeX untuk memformat outputnya, dan ditulis sendiri dalam bahasa makro TeX.
 
 {{% alert color="success" %}}
-**Coba konversi LaTeX/TeX ke PDF secara online**
+**Cobalah untuk mengonversi LaTeX/TeX ke PDF secara online**
 
-Aspose.PDF untuk .NET menyajikan aplikasi gratis online ["LaTex ke PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas kerjanya.
-{{% /alert %}}
+Aspose.PDF for .NET mempersembahkan aplikasi gratis online ["LaTex ke PDF"](https://products.aspose.app/pdf/conversion/tex-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi LaTeX/TeX ke PDF dengan Aplikasi Gratis](latex.png)](https://products.aspose.app/pdf/conversion/tex-to-pdf)
-Aspose.PDF untuk .NET mendukung fitur untuk mengonversi file TeX ke format PDF dan untuk mencapai kebutuhan ini, ruang nama Aspose.Pdf memiliki kelas bernama [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) yang menyediakan kemampuan untuk memuat file LaTex dan merender output dalam format PDF menggunakan [Kelas Dokumen](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+{{% /alert %}}
+
+Aspose.PDF for .NET mendukung fitur untuk mengonversi file TeX ke format PDF dan untuk memenuhi kebutuhan ini, namespace Aspose.Pdf memiliki kelas bernama [LatexLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/latexloadoptions) yang menyediakan kemampuan untuk memuat file LaTex dan merender output dalam format PDF menggunakan [kelas Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 Potongan kode berikut menunjukkan proses mengonversi file LaTex ke format PDF dengan C#.
 
 ```csharp
-public static void ConvertTeXtoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertTeXtoPDF()
 {
-    // Instansiasi objek opsi muat Latex
-    TeXLoadOptions options = new TeXLoadOptions();
-    // Buat objek Dokumen
-    Aspose.Pdf.Document pdfDocument= new Aspose.Pdf.Document(_dataDir + "samplefile.tex", options);
-    // Simpan output dalam file PDF
-    pdfDocument.Save(_dataDir + "TeXToPDF_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.TeXLoadOptions();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "samplefile.tex", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "TeXToPDF_out.pdf");
+    }
+}
+```
+
+## Mengonversi OFD ke PDF
+
+Format OFD mengacu pada "Dokumen Tata Letak Tetap Terbuka," yang ditetapkan sebagai standar nasional Tiongkok untuk penyimpanan file elektronik, digunakan sebagai alternatif untuk format PDF yang populer. Ini mendukung dokumen dengan tata letak tetap, memastikan tampilan yang konsisten di berbagai platform. File OFD digunakan untuk berbagai tujuan, termasuk dokumen digital dan aplikasi bisnis.
+
+Aspose.PDF for .NET mendukung fitur untuk mengonversi file OFD ke format PDF dan untuk memenuhi kebutuhan ini, namespace Aspose.Pdf memiliki kelas bernama [OfdLoadOptions](https://reference.aspose.com/pdf/net/aspose.pdf/ofdloadoptions/) yang menyediakan kemampuan untuk memuat file OFD dan merender output dalam format PDF menggunakan [kelas Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+
+Potongan kode berikut menunjukkan proses mengonversi file OFD ke format PDF dengan C#. 
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertOFDToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+    // Convert options
+    var options = new Aspose.Pdf.OfdLoadOptions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ConvertOFDToPDF.ofd", options))
+    {
+        // Save PDF document
+        document.Save(dataDir + "ConvertOFDToPDF_out.pdf");
+    }
 }
 ```

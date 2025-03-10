@@ -1,10 +1,12 @@
 ---
-title: Публикация данных AcroForm
-linktitle: Публикация AcroForm
+title: Размещение данных AcroForm
+linktitle: Размещение AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ru/net/posting-acroform-data/
-description: Вы можете импортировать и экспортировать данные формы в XML-файл с помощью пространства имен Aspose.Pdf.Facades в Aspose.PDF для .NET.
+description: Вы можете импортировать и экспортировать данные формы в XML-файл с помощью пространства имён Aspose.Pdf.Facades в Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Публикация данных AcroForm",
-    "alternativeHeadline": "Импорт и экспорт данных формы в XML-файл",
+    "headline": "Posting AcroForm Data",
+    "alternativeHeadline": "Post AcroForm Data",
+    "abstract": "Представляем новую мощную функцию в Aspose.PDF для .NET — возможность размещать данные AcroForm. Эта функция позволяет разработчикам не только создавать и редактировать AcroForms, но и беспрепятственно импортировать и экспортировать данные форм в XML-файлы, улучшая возможности обработки и хранения данных в приложениях",
     "author": {
         "@type": "Person",
-        "name": "Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
         "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, c#, публикация данных acroform",
-    "wordcount": "302",
-    "proficiencyLevel": "Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Posting AcroForm Data, Import and Export Form Data, Aspose.PDF for .NET, AcroForm Fields, Submit Button, External Web Page Integration, Form Data Posting, XML File Handling, FieldType.Text, Database Saving",
+    "wordcount": "400",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,55 +74,62 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/posting-acroform-data/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Вы можете импортировать и экспортировать данные формы в XML-файл с помощью пространства имен Aspose.Pdf.Facades в Aspose.PDF для .NET."
+    "dateModified": "2024-11-25",
+    "description": "Вы можете импортировать и экспортировать данные формы в XML-файл с помощью пространства имён Aspose.Pdf.Facades в Aspose.PDF для .NET."
 }
 </script>
 
 {{% alert color="primary" %}}
 
-AcroForm — важный тип документа PDF. Вы можете не только создавать и редактировать AcroForm с использованием [пространства имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace), но также импортировать и экспортировать данные формы в XML-файл и из него. Пространство имен Aspose.Pdf.Facades в Aspose.PDF для .NET позволяет реализовать ещё одну функцию AcroForm, которая помогает отправлять данные AcroForm на внешнюю веб-страницу. Эта веб-страница затем читает переменные POST и использует эти данные для дальнейшей обработки. Эта функция полезна в случаях, когда вы не просто хотите сохранить данные в файле PDF, а хотите отправить их на свой сервер, а затем сохранить в базе данных и т.д.
+AcroForm — это важный тип PDF-документа. Вы можете не только создать и отредактировать AcroForm с помощью пространства имен Aspose.Pdf.Facades, но также импортировать и экспортировать данные формы в XML-файл. Пространство имен Aspose.Pdf.Facades в Aspose.PDF for .NET позволяет вам реализовать ещё одну функцию AcroForm, которая помогает размещать данные AcroForm на внешней веб-странице. Затем эта веб-страница считывает переменные сообщения и использует эти данные для дальнейшей обработки. Эта функция полезна в тех случаях, когда вы не просто хотите сохранить данные в PDF-файле, а отправить их на свой сервер, а затем сохранить в базе данных и т. д.
 
 {{% /alert %}}
 
 ## Детали реализации
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой Aspose.PDF.Drawing.
 
-В данной статье мы попытались создать AcroForm, используя [пространство имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
-В этой статье мы попытались создать AcroForm с использованием [пространства имен Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
+В этой статье мы попытались создать AcroForm с использованием пространства имён Aspose.Pdf.Facades. Мы также добавили кнопку отправки и установили её целевой URL. Следующие фрагменты кода показывают, как создать форму и затем получить опубликованные данные на веб-странице.
 
 ```csharp
-// Создаем экземпляр класса FormEditor и связываем входные и выходные PDF-файлы
-Aspose.Pdf.Facades.FormEditor editor = new Aspose.Pdf.Facades.FormEditor("input.pdf","output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAcroFormWithFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Создаем поля AcroForm - для простоты я создал только два поля
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
+    // Create an instance of FormEditor class and bind input and output pdf files
+    using (var editor = new Aspose.Pdf.Facades.FormEditor(dataDir + "input.pdf", dataDir + "output.pdf"))
+    {
+        // Create AcroForm fields - I have created only two fields for simplicity
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
 
-// Добавляем кнопку отправки и устанавливаем целевой URL
-editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+        // Add a submit button and set target URL
+        editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
 
-// Сохраняем выходной PDF-файл
-editor.Save();
+        // Save PDF document
+        editor.Save();
+    }
+}
 ```
 
 {{% alert color="primary" %}}
 
-Следующий фрагмент кода показывает, как получить отправленные значения на целевой веб-странице.
-Следующий фрагмент кода показывает, как получить значения, отправленные на целевую веб-страницу.
+Следующий фрагмент кода показывает, как получить опубликованные значения на целевой веб-странице. В этом примере я использовал страницу с именем Show. a spx и добавил простой однострочный код в метод загрузки страницы.
+
 {{% /alert %}}
 
 ```csharp
-// Показать отправленные значения на целевой веб-странице
-Response.Write("Привет " + Request.Form.Get("firstname") + " " + Request.Form.Get("lastname"));
+// Show the posted values on the target web page
+Response.Write("Hello " + Request.Form.Get("firstname") + " " + Request.Form.Get("lastname"));
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET Library",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -141,21 +151,21 @@ Response.Write("Привет " + Request.Form.Get("firstname") + " " + Request.F
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -166,7 +176,7 @@ Response.Write("Привет " + Request.Form.Get("firstname") + " " + Request.F
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -178,5 +188,3 @@ Response.Write("Привет " + Request.Form.Get("firstname") + " " + Request.F
     }
 }
 </script>
-
-

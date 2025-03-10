@@ -1,10 +1,12 @@
 ---
-title: XFA 양식 작업
+title: XFA 양식 작업하기
 linktitle: XFA 양식
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ko/net/xfa-forms/
-description: Aspose.PDF for .NET API는 PDF 문서에서 XFA 및 XFA Acroform 필드를 처리할 수 있습니다.
+description: Aspose.PDF for .NET API를 사용하면 PDF 문서에서 XFA 및 XFA Acroform 필드와 작업할 수 있습니다. Aspose.Pdf.Facades.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "XFA 양식 작업",
-    "alternativeHeadline": "PDF에서 XFA 양식 채우기, 변환하기 및 가져오기",
+    "headline": "Working with XFA Forms",
+    "alternativeHeadline": "Enhance PDF handling with XFA form support",
+    "abstract": "Aspose.PDF for .NET는 이제 XFA 양식 작업을 위한 고급 기능을 제공하여 개발자가 PDF 문서 내에서 XFA Acroform 필드를 채우고, 변환하고, 관리할 수 있도록 합니다. 이 기능은 동적 양식의 조작을 단순화하여 필드 값 및 속성에 원활하게 접근할 수 있도록 하며, XFA에서 표준 AcroForms로의 효율적인 변환을 제공합니다. 복잡한 양식 구조를 처리하기 위한 이 강력한 솔루션으로 PDF 처리 워크플로를 향상시키십시오.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "pdf, c#, xfa 양식 채우기, xfa 양식 가져오기, xfa 양식 변환하기",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "keywords": "XFA Forms, Aspose.PDF for .NET, fill XFA form, convert XFA to Acroform, get XFA field properties, dynamic forms, XML Forms Architecture, manipulate XFA fields, AcroForm fields, PDF document generation",
+    "wordcount": "684",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,104 +74,191 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/xfa-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF for .NET API는 PDF 문서에서 XFA 및 XFA Acroform 필드를 처리할 수 있습니다."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF for .NET API를 사용하면 PDF 문서에서 XFA 및 XFA Acroform 필드와 작업할 수 있습니다. Aspose.Pdf.Facades."
 }
 </script>
+
 {{% alert color="primary" %}}
 
-동적 폼은 "XML Forms Architecture"로 알려진 XML 사양을 기반으로 합니다. 또한 동적 XFA 폼을 표준 Acroform으로 변환할 수 있습니다. 폼에 대한 정보( PDF 관점에서)는 매우 모호합니다 - 필드가 존재한다는 것과 속성 및 JavaScript 이벤트를 명시하지만, 렌더링을 명시하지 않습니다. XFA 폼의 객체는 문서를 로딩할 때 그려집니다.
+동적 양식은 XFA로 알려진 XML 사양을 기반으로 하며, "XML 양식 아키텍처"입니다. 또한 동적 XFA 양식을 표준 Acroform으로 변환할 수 있습니다. 양식에 대한 정보(PDF와 관련하여)는 매우 모호합니다. 필드가 존재하며 속성과 JavaScript 이벤트가 있지만 렌더링에 대한 명시는 없습니다. XFA 양식의 객체는 문서를 로드할 때 그려집니다.
 
 {{% /alert %}}
 
-Form 클래스는 정적 AcroForm을 다룰 수 있는 기능을 제공하며, Form 클래스의 GetFieldFacade(..) 메서드를 사용하여 특정 필드 인스턴스를 가져올 수 있습니다. 그러나, XFA 필드는 Form.GetFieldFacade(..) 메서드를 통해 접근할 수 없습니다. 대신, [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa)를 사용하여 필드 값을 가져오거나 설정하고 XFA 필드 템플릿을 조작하세요(필드 속성 설정).
+Form 클래스는 정적 AcroForm을 처리할 수 있는 기능을 제공하며, Form 클래스의 GetFieldFacade(..) 메서드를 사용하여 특정 필드 인스턴스를 가져올 수 있습니다. 그러나 XFA 필드는 Form.GetFieldFacade(..) 메서드를 통해 접근할 수 없습니다. 대신 [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa)를 사용하여 필드 값을 가져오거나 설정하고 XFA 필드 템플릿을 조작하십시오(필드 속성 설정).
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## XFA 필드 채우기
 
-다음 코드 스니펫은 XFA 폼에서 필드를 채우는 방법을 보여줍니다.
-다음 코드 스니펫은 XFA 양식의 필드를 채우는 방법을 보여줍니다.
+다음 코드 스니펫은 XFA 양식에서 필드를 채우는 방법을 보여줍니다.
 
 ```csharp
-// 완전한 예제와 데이터 파일은 다음을 참조하세요 https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// 문서 디렉토리 경로.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillXFAFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// XFA 양식 로드
-Document doc = new Document(dataDir + "FillXFAFields.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-// XFA 양식 필드의 이름 가져오기
-string[] names = doc.Form.XFA.FieldNames;
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-// 필드 값 설정
-doc.Form.XFA[names[0]] = "Field 0";
-doc.Form.XFA[names[1]] = "Field 1";
-dataDir = dataDir + "Filled_XFA_out.pdf";
-// 업데이트된 문서 저장
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
+}
 ```
 
 ## XFA를 Acroform으로 변환
 
 {{% alert color="primary" %}}
 
-온라인 시도
-Aspose.PDF 변환의 품질을 확인하고 결과를 온라인에서 확인할 수 있는 링크입니다: [products.aspose.app/pdf/xfa/](https://products.aspose.app/pdf/xfa/)
+온라인으로 시도하기
+Aspose.PDF 변환 품질을 확인하고 이 링크에서 결과를 온라인으로 볼 수 있습니다: [products.aspose.app/pdf/xfa/acroform](https://products.aspose.app/pdf/xfa/acroform)
 
 {{% /alert %}}
 
-동적 양식은 "XML Forms Architecture"로 알려진 XML 사양을 기반으로 합니다.
-동적 폼은 "XML Forms Architecture"로 알려진 XFA XML 사양을 기반으로 합니다.
+동적 양식은 XFA로 알려진 XML 사양을 기반으로 하며, "XML 양식 아키텍처"입니다. 양식에 대한 정보(PDF와 관련하여)는 매우 모호합니다. 필드가 존재하며 속성과 JavaScript 이벤트가 있지만 렌더링에 대한 명시는 없습니다.
 
-현재 PDF는 데이터와 PDF 폼을 통합하기 위한 두 가지 다른 방법을 지원합니다:
+현재 PDF는 데이터와 PDF 양식을 통합하기 위한 두 가지 방법을 지원합니다:
 
-- AcroForms(일명 Acrobat 폼), PDF 1.2 형식 사양에 도입되어 포함되었습니다.
-- Adobe XML Forms Architecture(XFA) 폼, PDF 1.5 형식 사양에서 선택 기능으로 도입되었습니다( XFA 사양은 PDF 사양에 포함되어 있지 않으며, 참조만 됩니다.)
+- AcroForms(아크로뱃 양식이라고도 함), PDF 1.2 형식 사양에 도입되어 포함되었습니다.
+- Adobe XML 양식 아키텍처(XFA) 양식, PDF 1.5 형식 사양에 선택적 기능으로 도입되었습니다( XFA 사양은 PDF 사양에 포함되어 있지 않으며, 단지 참조만 됩니다.)
 
-XFA 폼의 페이지를 추출하거나 조작할 수 없습니다. 왜냐하면 폼 내용은 XFA 폼을 보거나 렌더링하려는 애플리케이션 내에서 런타임( XFA 폼 보기 중)에 생성되기 때문입니다. Aspose.PDF에는 개발자가 XFA 폼을 표준 AcroForms로 변환할 수 있는 기능이 있습니다.
+XFA 양식의 페이지를 추출하거나 조작할 수 없습니다. 왜냐하면 양식 내용이 XFA 양식을 표시하거나 렌더링하려고 하는 애플리케이션 내에서 런타임에 생성되기 때문입니다. Aspose.PDF는 개발자가 XFA 양식을 표준 AcroForms로 변환할 수 있는 기능을 제공합니다.
 
 ```csharp
-// 전체 예제와 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertDynamicXFAToAcroForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// 동적 XFA 폼을 로드합니다
-Document document = new Document(dataDir + "DynamicXFAToAcroForm.pdf");
+    // Load dynamic XFA form
+    using (var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
+    {
+        // Set the form fields type as standard AcroForm
+        document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
 
-// 폼 필드 유형을 표준 AcroForm으로 설정합니다
-document.Form.Type = FormType.Standard;
-
-dataDir = dataDir + "Standard_AcroForm_out.pdf";
-// 결과 PDF를 저장합니다
-document.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "StandardAcroForm_out.pdf");
+    }
+}
 ```
+
 ## XFA 필드 속성 가져오기
 
-필드 속성에 접근하려면 먼저 Document.Form.XFA.Teamplate를 사용하여 필드 템플릿에 접근하세요. 다음 코드 조각은 XFA 폼 필드의 X 및 Y 좌표를 가져오는 단계를 보여줍니다.
+필드 속성에 접근하려면 먼저 Document.Form.XFA.Template를 사용하여 필드 템플릿에 접근하십시오. 다음 코드 스니펫은 XFA 양식 필드의 X 및 Y 좌표를 가져오는 단계를 보여줍니다.
 
 ```csharp
-// 전체 예제 및 데이터 파일은 https://github.com/aspose-pdf/Aspose.PDF-for-.NET 에서 확인하세요.
-// 문서 디렉토리 경로입니다.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXFAProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// XFA 폼 로드
-Document doc = new Document(dataDir + "GetXFAProperties.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-string[] names = doc.Form.XFA.FieldNames;
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-// 필드 값 설정
-doc.Form.XFA[names[0]] = "필드 0";
-doc.Form.XFA[names[1]] = "필드 1";
+        // Get field position
+        if (names.Length > 0)
+        {
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+        }
 
-// 필드 위치 가져오기
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
-
-// 필드 위치 가져오기
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
-
-dataDir = dataDir + "Filled_XFA_out.pdf";
-// 업데이트된 문서 저장
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
+}
 ```
 
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

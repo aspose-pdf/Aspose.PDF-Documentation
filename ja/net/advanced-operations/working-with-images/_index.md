@@ -1,10 +1,12 @@
 ---
-title: PDFでの画像操作についてのC#使用方法
-linktitle: 画像操作
+title: C#を使用したPDF内の画像の操作
+linktitle: 画像の操作
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ja/net/working-with-images/
-description: このセクションでは、C# ライブラリを使用して PDF ファイルで画像を操作する機能について説明します。
+description: このセクションでは、C#ライブラリを使用してPDFファイル内の画像を操作する機能について説明します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFでの画像操作についてのC#使用方法",
-    "alternativeHeadline": "PDFでの画像操作方法.NETを使って",
+    "headline": "Working with Images in PDF using C#",
+    "alternativeHeadline": "Comprehensive Image Handling in PDF with C#",
+    "abstract": "Aspose.PDF for .NETの新機能により、PDFドキュメント内の画像を管理する能力が向上し、画像のリサイズ、置換、抽出、詳細な画像プロパティの取得などの高度な機能が提供されます。この堅牢なライブラリは、PDFファイルにグラフィックスを追加および操作するプロセスを簡素化し、効率的に動的なデジタルドキュメントを作成しようとする開発者にとって不可欠なツールとなります。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF文書生成",
-    "keywords": "pdf, c#, pdf内の画像",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF manipulation, Aspose.PDF library, image extraction, add image to PDF, replace image in PDF, set image size, search images in PDF, DICOM image support",
+    "wordcount": "578",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,33 +74,32 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-images/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このセクションでは、C# ライブラリを使用して PDF ファイルで画像を操作する機能について説明します。"
+    "dateModified": "2024-11-26",
+    "description": "このセクションでは、C#ライブラリを使用してPDFファイル内の画像を操作する機能について説明します。"
 }
 </script>
-PDF形式の画像は非常に複雑なトピックです。PDFドキュメントの作業に直面したユーザーを待っている画像のさまざまな操作があります。私たちは、画像をファイルに追加または削除することしかできないと思っていますが、Aspose.PDFライブラリを使用すると、画像サイズの設定、画像の置換、画像の抽出、検索、PDFドキュメントからの画像の取得なども可能です。
 
-**PDFに画像を追加する方法は？** Aspose.PDFを使用したPDFの画像に関する最も人気のある質問に答えます。
+PDF形式における画像は非常に複雑なトピックです。PDFドキュメントの作業に直面したとき、ユーザーは画像に対してさまざまな操作を行うことができます。私たちは、画像はファイルに追加または削除することしかできないと考えがちですが、Aspose.PDFライブラリを使用すると、画像のサイズを設定したり、画像を置換したり、画像を抽出したり、検索したり、PDFドキュメントから画像を取得したりすることも可能です。
 
-**Aspose.PDF for .NET** はデジタルドキュメントを扱うための賢く効率的なツールで、任意のグラフィックオブジェクトを既存のPDFにすばやくインポートして配置できます。
-C#ライブラリを使用することも、レポートにチャートを挿入したり、プロジェクトにフロアプランのオーバーレイを追加したり、履歴書に写真を含めたりする場合に役立ちます。PDFドキュメントで画像を挿入および編集する高度な方法を探している場合は、次の記事を学ぶことを強くお勧めします。
+**PDFに画像を追加するにはどうすればよいですか？** Aspose.PDFを使用してPDF内の画像に関する最も人気のある質問に対する答えを得ることができます。
+
+**Aspose.PDF for .NET**は、デジタルドキュメントを操作するためのスマートで効率的なツールであり、既存のPDFに任意のグラフィックオブジェクトを迅速にインポートして配置できます。
+C#ライブラリを使用することは、レポートにチャートを挿入したり、プロジェクトにフロアプランのオーバーレイを追加したり、単に履歴書に写真を含めたりする必要がある場合にも便利です。PDFドキュメントに画像を挿入および編集するための高度な方法を探している場合は、次の記事を学ぶことを強くお勧めします。
 
 以下の操作が可能です：
-以下の操作が可能です：
 
-- [既存のPDFファイルに画像を追加する](/pdf/ja/net/add-image-to-existing-pdf-file/) - PDFドキュメントに単一の画像とその参照を追加し、その後品質を管理します。
-- [PDFファイルから画像を削除する](/pdf/ja/net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認します。
-- [PDFファイルから画像を抽出する](/pdf/ja/net/extract-images-from-pdf-file/) - Imagesコレクションを使用してPDFファイルから画像を抽出します。
-- [埋め込まれた画像の解像度と寸法を取得する](/pdf/ja/net/get-resolution-and-dimensions-of-embedded-images/) - Aspose.PDF名前空間内のオペレータークラスを使用して、解像度と寸法情報を取得する機能を提供します。
-- [画像配置の操作](/pdf/ja/net/working-with-image-placement/) - PDFドキュメントで画像の解像度と位置を取得することが可能です。
-- [PDFドキュメントから画像を検索して取得する](/pdf/ja/net/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、C#を使用して全ページの画像の中から検索することができます。
-- [PDFドキュメントから画像を検索して取得する](/pdf/ja/net/search-and-get-images-from-pdf-document/) - 個々のページから画像を取得し、すべてのページの画像を検索することができます。
-- [既存のPDFファイル内の画像を置換する](/pdf/ja/net/replace-image-in-existing-pdf-file/) - このコードスニペットを確認してください。PDFファイル内の画像を置換する方法を示しています。
-- [画像サイズの設定](/pdf/ja/net/set-image-size/) - C# ライブラリを使用して画像のサイズを設定できます。
-- [デフォルトフォント名の設定](/pdf/ja/net/set-default-font-name/) - 変換プロセスのデフォルトフォント名を設定します。
-- [PDFドキュメントからサムネイル画像を生成する](/pdf/ja/net/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、次にAspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示しています。
-- DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療用グラフィック標準の画像をサポートしています。
-- DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療用グラフィック標準の画像をサポートしています。
+- [既存のPDFファイルに画像を追加](/pdf/ja/net/add-image-to-existing-pdf-file/) - PDFドキュメントに画像と単一の画像の参照を追加し、その後品質を制御します。
+- [PDFファイルから画像を削除](/pdf/ja/net/delete-images-from-pdf-file/) - PDFファイルから画像を削除するためのコードスニペットを確認してください。
+- [PDFファイルから画像を抽出](/pdf/ja/net/extract-images-from-pdf-file/) - 画像コレクションを使用してPDFファイルから画像を抽出します。
+- [埋め込まれた画像の解像度と寸法を取得](/pdf/ja/net/get-resolution-and-dimensions-of-embedded-images/) - 解像度と寸法情報を取得する機能を提供するAspose.PDF名前空間のオペレータークラスを使用します。
+- [画像の配置を操作](/pdf/ja/net/working-with-image-placement/) - PDFドキュメント内の画像の解像度と位置を取得できます。
+- [PDFドキュメントから画像を検索して取得](/pdf/ja/net/search-and-get-images-from-pdf-document/) - C#を使用して、個々のページから画像を取得し、すべてのページの画像を検索できます。
+- [既存のPDFファイル内の画像を置換](/pdf/ja/net/replace-image-in-existing-pdf-file/) - PDFファイル内の画像を置換する方法を示すコードスニペットを確認してください。
+- [画像サイズを設定](/pdf/ja/net/set-image-size/) - C#ライブラリを使用して画像のサイズを設定できます。
+- [デフォルトフォント名を設定](/pdf/ja/net/set-default-font-name/) - 変換プロセスのためのデフォルトフォント名を設定します。
+- [PDFドキュメントからサムネイル画像を生成](/pdf/ja/net/generate-thumbnail-images-from-pdf-documents/) - 次の記事では、最初にAcrobat SDKを使用し、その後Aspose.PDFを使用してPDFドキュメントからサムネイル画像を生成する方法を示します。
+- DICOM画像のサポート - Aspose.PDF for .NETは、特別な医療グラフィック標準の画像をサポートしています。Aspose.PDF for .NETは、DICOMおよびSVG画像を変換することができます。詳細は[Convert DICOM to PDF](/pdf/ja/net/convert-images-format-to-pdf/#convert-dicom-to-pdf)セクションを確認してください。
+- [ベクターグラフィックスの操作](/pdf/ja/net/working-with-vector-graphics) - このセクションでは、C#を使用したGraphicsAbsorberツールの操作機能について説明します。
 
 <script type="application/ld+json">
 {
@@ -162,5 +164,3 @@ C#ライブラリを使用することも、レポートにチャートを挿入
     }
 }
 </script>
-
-

@@ -2,9 +2,11 @@
 title: Criando PDF a partir de XML usando XSLT
 linktitle: Criar PDF a partir de XML usando XSLT
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /pt/net/create-a-hello-world-pdf-document-through-xml-and-xslt/
-description: Biblioteca C# fornece a capacidade de converter um arquivo XML em documento PDF, exigindo que o arquivo XML de entrada siga o Esquema Aspose.PDF.
+description: A biblioteca C# fornece a capacidade de converter um arquivo XML em um documento PDF, exigindo que o arquivo XML de entrada siga o esquema Aspose.PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Criando PDF a partir de XML usando XSLT",
-    "alternativeHeadline": "Como criar PDF a partir de XML usando XSLT",
+    "headline": "Creating PDF from XML using XSLT",
+    "alternativeHeadline": "Generate PDF from XML using XSLT and C#",
+    "abstract": "Gere PDFs diretamente de arquivos XML usando XSLT e uma biblioteca C#. Essa nova funcionalidade simplifica a geração de relatórios ao transformar dados XML existentes em um formato compatível com PDF. O processo utiliza XSLT para transformação e requer conformidade com o esquema Aspose.PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "geração de documento pdf",
-    "keywords": "pdf, c#, criar pdf xml, pdf com xslt",
-    "wordcount": "302",
-    "proficiencyLevel":"Iniciante",
+    "genre": "pdf document generation",
+    "wordcount": "323",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,19 +73,20 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-a-hello-world-pdf-document-through-xml-and-xslt/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Biblioteca C# fornece a capacidade de converter um arquivo XML em documento PDF, exigindo que o arquivo XML de entrada siga o Esquema Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "A biblioteca C# fornece a capacidade de converter um arquivo XML em um documento PDF, exigindo que o arquivo XML de entrada siga o esquema Aspose.PDF."
 }
 </script>
+
 O seguinte trecho de código também funciona com a biblioteca [Aspose.PDF.Drawing](/pdf/pt/net/drawing/).
 
-Às vezes, você pode ter arquivos XML existentes que contêm dados de aplicativos e deseja gerar um relatório PDF usando esses arquivos. Você pode usar XSLT para transformar seu documento XML existente em um documento XML compatível com Aspose.Pdf e, em seguida, gerar um arquivo PDF. Existem 3 etapas para gerar PDF usando XML e XSLT.
+Às vezes, você pode ter arquivos XML existentes que contêm dados de aplicação e deseja gerar um relatório PDF usando esses arquivos. Você pode usar XSLT para transformar seu documento XML existente em um documento XML compatível com Aspose.Pdf e, em seguida, gerar o arquivo PDF. Existem 3 etapas para gerar PDF usando XML e XSLT.
 
 Por favor, siga estas etapas para converter um arquivo XML em um documento PDF usando XSLT:
 
 * Crie uma instância da classe PDF que representa um documento PDF
-* Se você comprou uma licença, deve também incorporar o código para usar essa licença com a ajuda da classe License no namespace Aspose.Pdf
-* Vincule os arquivos XML e XSLT de entrada à instância da classe PDF chamando seu método BindXML
+* Se você adquiriu uma licença, deve também incorporar o código para usar essa licença com a ajuda da classe License no namespace Aspose.Pdf
+* Vincule os arquivos XML de entrada e XSLT à instância da classe PDF chamando seu método BindXML
 * Salve o XML vinculado com a instância PDF como um documento PDF
 
 ## Arquivo XML de Entrada
@@ -121,7 +124,49 @@ Por favor, siga estas etapas para converter um arquivo XML em um documento PDF u
 </xsl:template>
 </xsl:stylesheet>
 ```
-{{< gist "aspose-com-gists" "63473b1ba28e09e229cfbf4430eabd8a" "Examples-CSharp-AsposePDF-Working-Document-HelloWorldPDFUsingXmlAndXslt-HelloWorldPDFUsingXmlAndXslt.cs" >}}
+
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        //Bind XML and XSLT files to the document
+        document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+        // Save PDF document
+        document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateDocument()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocument();
+
+    //Create pdf document
+    using var document = new Aspose.Pdf.Document();
+
+    //Bind XML and XSLT files to the document
+    document.BindXml(dataDir + "HelloWorld.xml", dataDir + "HelloWorld.xslt");
+
+    // Save PDF document
+    document.Save(dataDir + "HelloWorldUsingXmlAndXslt.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -174,7 +219,7 @@ Por favor, siga estas etapas para converter um arquivo XML em um documento PDF u
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulação de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -186,71 +231,3 @@ Por favor, siga estas etapas para converter um arquivo XML em um documento PDF u
     }
 }
 </script>
-
----
-id: start
-title: Introdução
-sidebar_label: Introdução
-slug: /
----
-
-## Bem-vindo
-
-Bem-vindo à documentação do nosso projeto. Este documento fornecerá uma visão geral do projeto e como você pode começar a usá-lo.
-
-## Visão Geral
-
-Nosso projeto é uma poderosa ferramenta que permite aos desenvolvedores criar aplicações de forma rápida e eficiente. Ele vem com uma variedade de recursos que facilitam o desenvolvimento e a manutenção do código.
-
-## Primeiros Passos
-
-Para começar, siga estas etapas:
-
-1. Clone o repositório para sua máquina local.
-2. Instale as dependências necessárias usando `npm install`.
-3. Inicie o servidor de desenvolvimento com `npm start`.
-
-## Estrutura do Projeto
-
-Nosso projeto possui a seguinte estrutura de diretórios:
-
-- `src/`: Contém o código-fonte da aplicação.
-- `public/`: Contém arquivos públicos, como HTML e imagens.
-- `config/`: Contém arquivos de configuração.
-
-## Recursos
-
-Aqui estão alguns dos principais recursos do nosso projeto:
-
-- **Desenvolvimento Rápido**: Ferramentas e bibliotecas que aceleram o processo de desenvolvimento.
-- **Manutenção Fácil**: Código modular e bem documentado que facilita a manutenção.
-- **Alta Performance**: Otimizações para garantir que a aplicação seja rápida e responsiva.
-
-```json
-{
-  "changefreq": "monthly"
-}
-```
-
-## Contribuindo
-
-Se você quiser contribuir para o projeto, siga estas diretrizes:
-
-1. Faça um fork do repositório.
-2. Crie um branch para sua feature (`git checkout -b feature/nova-feature`).
-3. Commit suas mudanças (`git commit -am 'Adicione nova feature'`).
-4. Push para o branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
-
-```json
-{
-  "type": "docs"
-}
-```
-
-## Suporte
-
-Se você encontrar algum problema ou tiver alguma dúvida, por favor, abra uma issue no GitHub. Nossa equipe estará feliz em ajudar.
-
-Obrigado por usar nosso projeto! Esperamos que ele facilite seu trabalho e ajude você a criar ótimas aplicações.
-```

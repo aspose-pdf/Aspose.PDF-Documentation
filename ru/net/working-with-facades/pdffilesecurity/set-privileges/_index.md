@@ -1,80 +1,168 @@
 ---
-title: Установка Привилегий на PDF
+title: Установка прав доступа к PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /ru/net/set-privileges/
-description: Эта тема объясняет, как установить привилегии на существующий PDF файл с использованием класса PdfFileSecurity.
+description: Узнайте, как изменять права пользователей в файлах PDF, ограничивая определённые действия с помощью Aspose.PDF в .NET.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Set Privileges on PDF",
+    "alternativeHeadline": "Set Custom Permissions for PDF Document Security",
+    "abstract": "Представляем новую возможность устанавливать права доступа к существующим файлам PDF с помощью класса PdfFileSecurity, что позволяет пользователям указывать разрешения на такие действия, как печать и копирование. Кроме того, теперь пользователи могут легко удалять расширенные права из документов PDF, обеспечивая больший контроль над изменениями документов и безопасностью. Эта функция упрощает управление PDF-файлами и повышает уровень соответствия требованиям безопасности",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "436",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/set-privileges/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/set-privileges/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+}
+</script>
 
-## Установка Привилегий на Существующий PDF Файл
+## Установка прав доступа к существующему файлу PDF
 
-Чтобы установить привилегии для PDF файла, создайте объект [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) и вызовите метод SetPrivilege. Вы можете указать привилегии, используя объект DocumentPrivilege, а затем передать этот объект в метод SetPrivilege. В следующем коде показано, как установить привилегии PDF файла.
+Чтобы установить права доступа к файлу PDF, создайте объект [PdfFileSecurity](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesecurity) и вызовите метод SetPrivilege. Вы можете указать права доступа с помощью объекта DocumentPrivilege, а затем передать этот объект методу SetPrivilege. В следующем фрагменте кода показано, как установить права доступа к файлу PDF.
 
 ```csharp
-public static void SetPrivilege1()
- {
-    // Создайте объект DocumentPrivileges
-    DocumentPrivilege privilege = DocumentPrivilege.ForbidAll;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrivilege1()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    // Create DocumentPrivileges object and set needed privileges
+    var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    // Создайте объект PdfFileSecurity
-    PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample.pdf");
-    fileSecurity.SetPrivilege(privilege);
-    fileSecurity.Save(_dataDir + "sample_privileges.pdf");
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        // Bind PDF document
+        fileSecurity.BindPdf(dataDir + "sample.pdf");
+        // Set privilege
+        fileSecurity.SetPrivilege(privilege);
+        // Save PDF document
+        fileSecurity.Save(dataDir + "SamplePrivileges_out.pdf");
+    }
 }
 ```
 
-See the following method with specifying a password:
+См. следующий метод с указанием пароля:
 
 ```csharp
- public static void SetPrivilege2()
- {
-    // Создайте объект DocumentPrivileges
-    DocumentPrivilege privilege = DocumentPrivilege.ForbidAll;
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetPrivilegeWithPassword()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_SecuritySignatures();
+    
+    // Create DocumentPrivileges object and set needed privileges
+    var privilege = Aspose.Pdf.Facades.DocumentPrivilege.ForbidAll;
     privilege.ChangeAllowLevel = 1;
     privilege.AllowPrint = true;
     privilege.AllowCopy = true;
 
-    // Создайте объект PdfFileSecurity
-    PdfFileSecurity fileSecurity = new PdfFileSecurity();
-    fileSecurity.BindPdf(_dataDir + "sample.pdf");
-    fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
-    fileSecurity.Save(_dataDir + "sample_privileges.pdf");
+    using (var fileSecurity = new Aspose.Pdf.Facades.PdfFileSecurity())
+    {
+        // Bind PDF document
+        fileSecurity.BindPdf(dataDir + "sample.pdf");
+        // Set privilege and passwords
+        fileSecurity.SetPrivilege(string.Empty, "P@ssw0rd", privilege);
+        // Save PDF document
+        fileSecurity.Save(dataDir + "SamplePrivilegesPassword_out.pdf");
+    }
 }
 ```
 
 ## Удаление функции расширенных прав из PDF
 
-PDF документы поддерживают функцию расширенных прав, чтобы позволить конечному пользователю заполнять данные в поля формы с помощью Adobe Acrobat Reader и затем сохранять копию заполненной формы. Однако это гарантирует, что PDF файл не был изменен, и если в структуру PDF внесены какие-либо изменения, функция расширенных прав теряется. При просмотре такого документа отображается сообщение об ошибке, указывающее, что расширенные права удалены, так как документ был изменен. Недавно мы получили запрос на удаление расширенных прав из PDF документа.
+PDF-документы поддерживают функцию расширенных прав, позволяющую конечному пользователю вводить данные в поля форм с помощью Adobe Acrobat Reader, а затем сохранять копию заполненной формы. Однако это гарантирует, что PDF-файл не будет изменён, и если в структуру PDF будут внесены какие-либо изменения, функция расширенных прав будет потеряна. При просмотре такого документа отображается сообщение об ошибке, указывающее на то, что расширенные права были удалены, поскольку документ был изменён. Недавно мы получили требование удалить расширенные права из PDF-документа.
 
-Для удаления расширенных прав из PDF файла в класс PdfFileSignature добавлен новый метод под названием RemoveUsageRights(). Другой метод под названием ContainsUsageRights() добавлен для определения, содержит ли исходный PDF расширенные права.
+Для удаления расширенных прав из файла PDF в класс PdfFileSignature был добавлен новый метод под названием RemoveUsageRights(). Другой метод под названием ContainsUsageRights() добавлен для определения, содержит ли исходный PDF расширенные права.
 
 {{% alert color="primary" %}}
-Начиная с Aspose.PDF for .NET 9.5.0, названия следующих методов были обновлены. Обратите внимание, что предыдущие методы все еще находятся в API, но они были помечены как устаревшие и будут удалены. Поэтому рекомендуется использовать обновленные методы.
+Начиная с версии Aspose.PDF for .NET 9.5.0, названия следующих методов обновлены. Обратите внимание, что предыдущие методы всё ещё находятся в API, но они помечены как устаревшие и будут удалены. Поэтому рекомендуется попробовать использовать обновлённые методы.
 
 - Метод IsContainSignature(.) был переименован в ContainsSignature(..).
-
-- Метод IsCoversWholeDocument(..) был переименован в CoversWholeDocument(..).{{% /alert %}}
+- Метод IsCoversWholeDocument(..) был переименован в CoversWholeDocument(..).
+{{% /alert %}}
 
 Следующий код показывает, как удалить права использования из документа:
 
 ```csharp
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
-string input = dataDir + "DigitallySign.pdf";
-using (PdfFileSignature pdfSign = new PdfFileSignature())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemoveExtendedRights()
 {
-    pdfSign.BindPdf(input);
-    if (pdfSign.ContainsUsageRights())
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_SecuritySignatures();
+    
+    using (var pdfSign = new Aspose.Pdf.Facades.PdfFileSignature())
     {
-        pdfSign.RemoveUsageRights();
+        // Bind PDF document
+        pdfSign.BindPdf(dataDir + "DigitallySign.pdf");
+        if (pdfSign.ContainsUsageRights())
+        {
+            pdfSign.RemoveUsageRights();
+        }
+        // Save PDF document
+        pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
     }
-
-    pdfSign.Document.Save(dataDir + "RemoveRights_out.pdf");
 }
 ```

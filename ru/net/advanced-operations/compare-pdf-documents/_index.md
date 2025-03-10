@@ -1,91 +1,288 @@
 ---
-title: Сравнение документов PDF
+title: Сравнение PDF документов
 linktitle: Сравнить PDF
 type: docs
-weight: 180
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 130
 url: /ru/net/compare-pdf-documents/
-description: С версии 24.7 стало возможным сравнивать содержимое документов PDF с пометками аннотаций и выводом бок о бок
+description: С версии 24.7 теперь возможно сравнивать содержимое PDF документов с аннотациями и выводом рядом
 lastmod: "2024-08-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Compare PDF documents",
+    "alternativeHeadline": "Enhanced PDF Document Comparison with Visual Highlights",
+    "abstract": "Новая функция сравнения PDF в Aspose.PDF for .NET позволяет пользователям эффективно выявлять различия между двумя PDF документами, как по конкретным страницам, так и по всему содержимому. С выводом рядом и настраиваемыми опциями, такими как дополнительные маркеры изменений и различные режимы сравнения, этот мощный инструмент улучшает сотрудничество, упрощая отслеживание и обзор правок.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "keywords": "Compare PDF documents, PDF comparison, Aspose.PDF for .NET, comparing specific pages, comparing entire documents, graphical PDF comparer, side-by-side comparison, change markers, document accuracy, ImagesDifference",
+    "wordcount": "1180",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/compare-pdf-documents/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/compare-pdf-documents/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
+}
+</script>
 
-## Сравнение документов PDF с использованием Aspose.PDF для .NET
+Обратите внимание, что все инструменты сравнения доступны в библиотеке [Aspose.PDF.Drawing](https://docs.aspose.com/pdf/net/drawing/).
 
-При работе с документами PDF иногда возникает необходимость сравнить содержимое двух документов для выявления различий. Библиотека Aspose.PDF для .NET предоставляет мощный набор инструментов для этой цели. В этой статье мы рассмотрим, как сравнивать документы PDF с помощью нескольких простых примеров кода.
+## Способы сравнения PDF документов
 
-Функциональность сравнения в Aspose.PDF позволяет сравнивать два документа PDF страница за страницей. Вы можете выбрать для сравнения конкретные страницы или целые документы. Результирующий документ сравнения выделяет различия, что упрощает определение изменений между двумя файлами.
+При работе с PDF документами иногда необходимо сравнить содержимое двух документов, чтобы выявить различия. Библиотека Aspose.PDF for .NET предоставляет мощный набор инструментов для этой цели. В этой статье мы рассмотрим, как сравнивать PDF документы, используя несколько простых фрагментов кода.
 
-### Сравнение конкретных страниц
+Функциональность сравнения в Aspose.PDF позволяет сравнивать два PDF документа постранично. Вы можете выбрать сравнение либо конкретных страниц, либо целых документов. Результирующий документ сравнения выделяет различия, что упрощает выявление изменений между двумя файлами.
 
-Первый пример кода демонстрирует, как сравнить первые страницы двух документов PDF.
+Вот список возможных способов сравнения PDF документов с использованием библиотеки Aspose.PDF для .NET:
 
-Первый фрагмент кода демонстрирует, как сравнить первые страницы двух PDF-документов.
+1. **Сравнение конкретных страниц** - Сравните первые страницы двух PDF документов.
+
+1. **Сравнение целых документов** - Сравните все содержимое двух PDF документов.
+
+1. **Сравнить PDF документы графически**:
+
+- Сравнить PDF с методом GetDifference - отдельные изображения, где изменения отмечены.
+
+- Сравнить PDF с методом CompareDocumentsToPdf - PDF документ с изображениями, где изменения отмечены.
+
+## Сравнение конкретных страниц
+
+Первый фрагмент кода демонстрирует, как сравнить первые страницы двух PDF документов.
 
 Шаги:
 
 1. Инициализация документа.
-Код начинается с инициализации двух PDF-документов с использованием их соответствующих путей к файлам (documentPath1 и documentPath2). Пути указаны как пустые строки, но на практике вы должны заменить их на фактические пути к файлам.
+Код начинается с инициализации двух PDF документов с использованием их соответствующих путей к файлам (documentPath1 и documentPath2). Пути в данный момент указаны как пустые строки, но на практике вы замените их на фактические пути к файлам.
+
 2. Процесс сравнения.
-- Выбор страницы - сравнение ограничивается первой страницей каждого документа ('Pages[1]').
+
+- Выбор страниц - сравнение ограничивается первой страницей каждого документа ('Pages[1]').
 - Опции сравнения:
 
-'AdditionalChangeMarks = true' - эта опция обеспечивает отображение дополнительных маркеров изменений. Эти маркеры выделяют различия, которые могут присутствовать на других страницах, даже если их нет на текущей странице сравнения.
+'AdditionalChangeMarks = true' - эта опция гарантирует, что дополнительные маркеры изменений отображаются. Эти маркеры выделяют различия, которые могут присутствовать на других страницах, даже если они не находятся на текущей странице, которая сравнивается.
 
-'ComparisonMode = ComparisonMode.IgnoreSpaces' - этот режим указывает сравнивающей программе игнорировать пробелы в тексте, сосредотачиваясь только на изменениях внутри слов.
-```
+'ComparisonMode = ComparisonMode.IgnoreSpaces' - этот режим говорит сравнивателю игнорировать пробелы в тексте, сосредоточившись только на изменениях внутри слов.
+
+3. Результирующий документ сравнения, который выделяет различия между двумя страницами, сохраняется по пути файла, указанному в 'resultPdfPath'.
+
 ```cs
-    string documentPath1 = "";
-    string documentPath2= "";
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ComparingSpecificPages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    string resultPdfPath ="";
-
-    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages1.pdf"))
     {
-        SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], resultPdfPath, new SideBySideComparisonOptions()
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparingSpecificPages2.pdf"))
         {
-            AdditionalChangeMarks = true,
-            ComparisonMode = ComparisonMode.IgnoreSpaces
-        });
+            // Compare
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(document1.Pages[1], document2.Pages[1], dataDir + "ComparingSpecificPages_out.pdf", new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+            {
+                AdditionalChangeMarks = true,
+                ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+            });
+        }
     }
+}
 ```
 
-### Сравнение целых документов
+## Сравнение целых документов
 
-Второй фрагмент кода расширяет возможности для сравнения всего содержимого двух PDF-документов.
+Второй фрагмент кода расширяет область сравнения на все содержимое двух PDF документов.
 
 Шаги:
 
 1. Инициализация документа.
-Точно так же, как в первом примере, два PDF-документа инициализируются с их путями к файлам.
+Так же, как и в первом примере, два PDF документа инициализируются с их путями к файлам.
+
 2. Процесс сравнения.
+
 - Сравнение всего документа - в отличие от первого фрагмента, этот код сравнивает все содержимое двух документов.
-- Опции сравнения - опции те же, что и в первом фрагменте, что обеспечивает игнорирование пробелов и отображение дополнительных маркеров изменений.
 
-3.
+- Опции сравнения - опции такие же, как в первом фрагменте, гарантируя, что пробелы игнорируются, и дополнительные маркеры изменений отображаются.
+
+3. Результат сравнения, который выделяет различия на всех страницах двух документов, сохраняется в файле, указанном в 'resultPdfPath'.
+
 ```cs
-    string documentPath1 = "";
-    string documentPath2 = "";
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ComparingEntireDocuments()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
 
-    string resultPdfPath ="";
-
-    using (Document document1 = new Document(documentPath1), document2 = new Document(documentPath2))
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments1.pdf"))
     {
-        SideBySidePdfComparer.Compare(document1, document2, resultPdfPath, new SideBySideComparisonOptions()
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparingEntireDocuments2.pdf"))
         {
-            AdditionalChangeMarks = true,
-            ComparisonMode = ComparisonMode.IgnoreSpaces
-        });
+            // Compare
+            Aspose.Pdf.Comparison.SideBySidePdfComparer.Compare(
+                document1,
+                document2,
+                dataDir + "ComparingEntireDocuments_out.pdf",
+                new Aspose.Pdf.Comparison.SideBySideComparisonOptions
+                {
+                    AdditionalChangeMarks = true,
+                    ComparisonMode = Aspose.Pdf.Comparison.ComparisonMode.IgnoreSpaces
+                });
+        }
     }
+}
 ```
 
-Результаты сравнения, сгенерированные этими фрагментами, представляют собой PDF-документы, которые вы можете открыть в программе просмотра, например, в Adobe Acrobat. Если использовать двухстраничный просмотр в Adobe Acrobat, вы увидите изменения рядом:
+Результаты сравнения, сгенерированные этими фрагментами, являются PDF документами, которые вы можете открыть в просмотрщике, таком как Adobe Acrobat. Если вы используете двухстраничный вид в Adobe Acrobat, вы увидите изменения рядом:
 
 - Удаления - они отмечены на левой странице.
 - Вставки - они отмечены на правой странице.
 
-Установив 'AdditionalChangeMarks' в 'true', вы также можете видеть маркеры для изменений, которые могут произойти на других страницах, даже если эти изменения не на текущей странице просмотра.
+Установив 'AdditionalChangeMarks' в 'true', вы также можете увидеть маркеры для изменений, которые могут происходить на других страницах, даже если эти изменения не находятся на текущей странице, которую вы просматриваете.
 
-**Aspose.PDF for .NET** предоставляет мощные инструменты для сравнения PDF-документов, будь то сравнение конкретных страниц или целых документов.
-**Aspose.PDF для .NET** предоставляет мощные инструменты для сравнения PDF документов, будь то сравнение конкретных страниц или целых документов.
+**Aspose.PDF for .NET** предоставляет надежные инструменты для сравнения PDF документов, независимо от того, нужно ли вам сравнивать конкретные страницы или целые документы. Используя такие опции, как 'AdditionalChangeMarks' и различные настройки 'ComparisonMode', вы можете адаптировать процесс сравнения под ваши конкретные нужды. Результирующий документ предоставляет четкий, бок о бок вид изменений, что упрощает отслеживание правок и обеспечивает точность документа.
+
+## Сравнение PDF документов с использованием GraphicalPdfComparer
+
+При сотрудничестве над документами, особенно в профессиональной среде, вы часто получаете несколько версий одного и того же файла.
+
+Вы можете использовать класс [GraphicalPdfComparer](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/) для сравнения PDF документов и страниц. Класс подходит для сравнения изменений в графическом содержимом страницы.
+
+С Aspose.PDF for .NET возможно сравнивать документы и страницы и выводить результат сравнения в PDF документ или файл изображения.
+
+Вы можете установить следующие свойства класса:
+
+- Разрешение - разрешение в единицах DPI для выходных изображений, а также для изображений, создаваемых во время сравнения.
+- Цвет - цвет маркеров изменений.
+- Порог - порог изменения в процентах. Значение по умолчанию - ноль. Установка значения, отличного от нуля, позволяет игнорировать графические изменения, которые для вас незначительны.
+
+Класс имеет метод, который позволяет получить различия изображений страниц в форме, подходящей для дальнейшей обработки: **ImagesDifference GetDifference(Page page1, Page page2)**.
+
+Этот метод возвращает объект класса [ImagesDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/), который содержит изображение первой страницы, которая сравнивается, и массив различий. Массив различий и оригинальное изображение имеют формат пикселей **RGB24bpp**.
+
+ImagesDifference позволяет вам сгенерировать другое изображение и получить изображение второй страницы, которая сравнивается, добавив массив различий к оригинальному изображению. Для этого используйте методы **ImagesDifference.GetDestinationImage и ImagesDifference.DifferenceToImage**.
+
+### Сравнение PDF с методом GetDifference
+
+Предоставленный код определяет метод [GetDifference](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/imagesdifference/#methods), который сравнивает два PDF документа и генерирует визуальные представления различий между ними.
+
+Этот метод сравнивает первые страницы двух PDF файлов и генерирует два PNG изображения:
+
+- Одно изображение (diffPngFilePath) выделяет различия между страницами красным цветом.
+- Другое изображение (destPngFilePath) является визуальным представлением целевой (второй) страницы PDF.
+
+Этот процесс может быть полезен для визуального сравнения изменений или различий между двумя версиями документа.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ComparePDFWithGetDifferenceMethod()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithGetDifferenceMethod1.pdf"))
+    {
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithGetDifferenceMethod2.pdf"))
+        {
+            // Create comparer 
+            var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer();
+            // Compare
+            using (var imagesDifference = comparer.GetDifference(document1.Pages[1], document2.Pages[1]))
+            {
+                using (var diffImg = imagesDifference.DifferenceToImage(Aspose.Pdf.Color.Red, Aspose.Pdf.Color.White))
+                {
+                    diffImg.Save(dataDir + "ComparePDFWithGetDifferenceMethodDiffPngFilePath_out.png");
+                }
+                using (var destImg = imagesDifference.GetDestinationImage())
+                {
+                    destImg.Save(dataDir + "ComparePDFWithGetDifferenceMethodDestPngFilePath_out.png");
+                }
+            }
+        }
+    }
+}
+```
+
+### Сравнение PDF с методом CompareDocumentsToPdf
+
+Предоставленный фрагмент кода использует метод [CompareDocumentsToPdf](https://reference.aspose.com/pdf/net/aspose.pdf.comparison.graphicalcomparison/graphicalpdfcomparer/comparedocumentstopdf/), который сравнивает два документа и генерирует PDF отчет о результатах сравнения.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ComparePDFWithCompareDocumentsToPdfMethod()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentCompare();
+
+    // Open PDF documents
+    using (var document1 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod1.pdf"))
+    {
+        using (var document2 = new Aspose.Pdf.Document(dataDir + "ComparePDFWithCompareDocumentsToPdfMethod2.pdf"))
+        {
+            // Create comparer
+            var comparer = new Aspose.Pdf.Comparison.GraphicalPdfComparer()
+            {
+                Threshold = 3.0,
+                Color = Aspose.Pdf.Color.Blue,
+                Resolution = new Aspose.Pdf.Devices.Resolution(300)
+            };
+            // Compare
+            comparer.CompareDocumentsToPdf(document1, document2, dataDir + "compareDocumentsToPdf_out.pdf");
+        }
+    }
+}
+```

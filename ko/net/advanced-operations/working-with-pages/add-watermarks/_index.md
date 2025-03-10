@@ -1,10 +1,12 @@
 ---
-title: C#을 사용하여 PDF에 워터마크 추가
+title: C#를 사용하여 PDF에 워터마크 추가
 linktitle: 워터마크 추가
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 90
 url: /ko/net/add-watermarks/
-description: 이 문서는 C#을 프로그래밍 방식으로 PDF에서 아티팩트를 작업하고 워터마크를 얻는 기능에 대해 설명합니다.
+description: 이 문서에서는 C#을 사용하여 프로그래밍 방식으로 PDF에서 아티팩트 작업 및 워터마크 가져오기 기능을 설명합니다.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "C#을 사용하여 PDF에 워터마크 추가",
-    "alternativeHeadline": "PDF에 워터마크 추가 방법",
+    "headline": "Add watermark to PDF using C#",
+    "alternativeHeadline": "Add Custom Watermarks to PDF with C#",
+    "abstract": "Aspose.PDF for .NET의 새로운 기능은 개발자가 아티팩트 기능을 사용하여 PDF 문서에 프로그래밍 방식으로 사용자 정의 가능한 워터마크를 추가할 수 있도록 합니다. 이 기능은 유형, 불투명도, 회전 및 텍스트 사용자 정의를 포함한 다양한 아티팩트 속성을 지원하여 사용자가 전문적이고 식별 가능한 PDF 파일을 쉽게 생성할 수 있도록 문서 관리를 향상시킵니다.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDF 문서 생성",
-    "keywords": "PDF, C#, 워터마크 추가",
-    "wordcount": "302",
-    "proficiencyLevel":"초보자",
+    "genre": "pdf document generation",
+    "wordcount": "462",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF 문서 팀",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,66 +73,75 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-watermarks/"
     },
-    "dateModified": "2022-02-04",
-    "description": "이 문서는 C#을 프로그래밍 방식으로 PDF에서 아티팩트를 작업하고 워터마크를 얻는 기능에 대해 설명합니다."
+    "dateModified": "2024-11-26",
+    "description": "이 문서에서는 C#을 사용하여 프로그래밍 방식으로 PDF에서 아티팩트 작업 및 워터마크 가져오기 기능을 설명합니다."
 }
 </script>
 
-**Aspose.PDF for .NET** 은 Artifacts를 사용하여 PDF 문서에 워터마크를 추가할 수 있습니다. 이 문서를 확인하여 작업을 해결하십시오.
+**Aspose.PDF for .NET**은 아티팩트를 사용하여 PDF 문서에 워터마크를 추가할 수 있습니다. 이 문서를 확인하여 작업을 해결하십시오.
 
 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
-Adobe Acrobat으로 생성된 워터마크는 아티팩트(14.8.2.2 PDF 사양의 실제 콘텐츠 및 아티팩트에서 설명)라고 합니다. 아티팩트를 다루기 위해 Aspose.PDF는 [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 클래스와 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection) 클래스를 가지고 있습니다.
+Adobe Acrobat으로 생성된 워터마크는 아티팩트라고 하며( PDF 사양의 14.8.2.2 실제 콘텐츠 및 아티팩트에 설명됨), 아티팩트와 함께 작업하기 위해 Aspose.PDF에는 두 개의 클래스가 있습니다: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 및 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 
-특정 페이지의 모든 아티팩트를 가져오기 위해 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스에는 Artifacts 속성이 있습니다. 이 주제는 PDF 파일에서 아티팩트를 다루는 방법을 설명합니다.
+특정 페이지의 모든 아티팩트를 가져오기 위해 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스에는 Artifacts 속성이 있습니다. 이 주제에서는 PDF 파일에서 아티팩트와 함께 작업하는 방법을 설명합니다.
 
-## 아티팩트 다루기
+## 아티팩트 작업하기
 
-[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 클래스는 다음과 같은 속성을 포함합니다:
+[Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 클래스에는 다음과 같은 속성이 포함되어 있습니다:
 
-**Artifact.Type** – 아티팩트 유형을 가져옵니다(아티팩트.ArtifactType 열거형의 값을 지원하며 배경, 레이아웃, 페이지, 페이지 번호 및 정의되지 않음을 포함합니다).
-**Artifact.Type** – 아티팩트 타입을 가져옵니다 (Artifact.ArtifactType 열거형의 값 지원, 값에는 Background, Layout, Page, Pagination 및 Undefined가 포함됩니다).
-**Artifact.Subtype** – 아티팩트 하위 타입을 가져옵니다 (Artifact.ArtifactSubtype 열거형의 값 지원, 값에는 Background, Footer, Header, Undefined, Watermark가 포함됩니다).
+- **Artifact.Type**: 아티팩트 유형을 가져옵니다(Artifact.ArtifactType 열거형의 값으로 배경, 레이아웃, 페이지, 페이지 매김 및 정의되지 않음 지원).
+- **Artifact.Subtype**: 아티팩트 하위 유형을 가져옵니다(Artifact.ArtifactSubtype 열거형의 값으로 배경, 바닥글, 머리글, 정의되지 않음, 워터마크 지원).
 
 {{% alert color="primary" %}}
 
-Adobe Acrobat으로 생성된 워터마크는 타입이 Pagination이고 하위 타입이 Watermark입니다.
+Adobe Acrobat으로 생성된 워터마크는 유형이 페이지 매김이고 하위 유형이 워터마크임을 유의하십시오.
 
 {{% /alert %}}
 
-**Artifact.Contents** – 아티팩트 내부 연산자의 컬렉션을 가져옵니다. 지원되는 타입은 System.Collections.ICollection입니다.
-**Artifact.Form** – 아티팩트의 XForm을 가져옵니다 (XForm이 사용된 경우). 워터마크, 헤더 및 푸터 아티팩트는 모든 아티팩트 내용을 보여주는 XForm을 포함합니다.
-**Artifact.Image** – 아티팩트의 이미지를 가져옵니다 (이미지가 있으면, 그렇지 않으면 null).
-**Artifact.Text** – 아티팩트의 텍스트를 가져옵니다.
-**Artifact.Rectangle** – 페이지에서 아티팩트의 위치를 가져옵니다.
-**Artifact.Rotation** – 아티팩트의 회전을 가져옵니다 (도 단위, 양수 값은 반시계 방향 회전을 나타냅니다).
-**Artifact.Rotation** – 아티팩트의 회전(도 단위, 양수 값은 반시계 방향 회전을 나타냄)을 가져옵니다.
-**Artifact.Opacity** – 아티팩트의 불투명도를 가져옵니다. 가능한 값은 0…1 범위이며, 1은 완전 불투명을 의미합니다.
+- **Artifact.Contents**: 아티팩트 내부 연산자의 컬렉션을 가져옵니다. 지원되는 유형은 System.Collections.ICollection입니다.
+- **Artifact.Form**: 아티팩트의 XForm을 가져옵니다( XForm이 사용되는 경우). 워터마크, 머리글 및 바닥글 아티팩트는 모든 아티팩트 내용을 보여주는 XForm을 포함합니다.
+- **Artifact.Image**: 아티팩트의 이미지를 가져옵니다(이미지가 있는 경우, 그렇지 않으면 null).
+- **Artifact.Text**: 아티팩트의 텍스트를 가져옵니다.
+- **Artifact.Rectangle**: 페이지에서 아티팩트의 위치를 가져옵니다.
+- **Artifact.Rotation**: 아티팩트의 회전을 가져옵니다(도 단위, 양수 값은 반시계 방향 회전을 나타냅니다).
+- **Artifact.Opacity**: 아티팩트의 불투명도를 가져옵니다. 가능한 값은 0…1 범위에 있으며, 1은 완전히 불투명합니다.
 
-## 프로그래밍 예제: PDF 파일에 워터마크 추가 방법
+## PDF 파일에 워터마크 추가하는 방법
 
-다음 코드 스니펫은 C#을 사용하여 PDF 파일의 첫 페이지에 각 워터마크를 얻는 방법을 보여줍니다.
+다음 코드 스니펫은 C#을 사용하여 PDF 파일의 첫 페이지에서 각 워터마크를 가져오는 방법을 보여줍니다.
 
 ```csharp
-public static void AddWatermarks()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddWatermarks()
 {
-    Document document = new Document(_dataDir + "text.pdf");
-    WatermarkArtifact artifact = new WatermarkArtifact();
-    artifact.SetTextAndState(
-        "WATERMARK",
-        new TextState()
-        {
-            FontSize = 72,
-            ForegroundColor = Color.Blue,
-            Font = FontRepository.FindFont("Courier")
-        });
-    artifact.ArtifactHorizontalAlignment = HorizontalAlignment.Center;
-    artifact.ArtifactVerticalAlignment = VerticalAlignment.Center;
-    artifact.Rotation = 45;
-    artifact.Opacity = 0.5;
-    artifact.IsBackground = true;
-    document.Pages[1].Artifacts.Add(artifact);
-    document.Save(_dataDir + "watermark.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddWatermarksInput.pdf"))
+    {
+        // Create a new watermark artifact
+        var artifact = new Aspose.Pdf.WatermarkArtifact();
+        artifact.SetTextAndState(
+            "WATERMARK",
+            new Aspose.Pdf.Text.TextState()
+            {
+                FontSize = 72,
+                ForegroundColor = Aspose.Pdf.Color.Blue,
+                Font = Aspose.Pdf.Text.FontRepository.FindFont("Courier")
+            });
+        // Set watermark properties
+        artifact.ArtifactHorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        artifact.ArtifactVerticalAlignment = Aspose.Pdf.VerticalAlignment.Center;
+        artifact.Rotation = 45;
+        artifact.Opacity = 0.5;
+        artifact.IsBackground = true;
+        // Add watermark artifact to the first page
+        document.Pages[1].Artifacts.Add(artifact);
+        // Save PDF document
+        document.Save(dataDir + "AddWatermarks_out.pdf");
+    }
 }
 ```
 
@@ -160,21 +171,21 @@ public static void AddWatermarks()
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "영업",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -185,7 +196,7 @@ public static void AddWatermarks()
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET용 PDF 조작 라이브러리",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -197,5 +208,3 @@ public static void AddWatermarks()
     }
 }
 </script>
-```
-

@@ -1,14 +1,15 @@
 ---
-title: PdfViewer Class
+title: Clase PdfViewer
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 135
 url: /es/net/pdfviewer-class/
-description: Esta sección explica cómo trabajar con Aspose.PDF Facades utilizando la clase PdfViewer.
+description: Explora cómo integrar capacidades de visualización de PDF en aplicaciones .NET utilizando la clase PDFViewer de Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Trabajar con la impresión de PDF - Facades](/pdf/es/net/working-with-pdf-printing-facades/)
+- [Trabajando con la impresión de PDF - Fachadas](/pdf/es/net/working-with-pdf-printing-facades/)

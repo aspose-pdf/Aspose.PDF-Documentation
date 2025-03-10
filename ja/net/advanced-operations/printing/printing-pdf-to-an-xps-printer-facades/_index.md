@@ -2,9 +2,11 @@
 title: PDFをXPSプリンターに印刷する
 linktitle: PDFをXPSプリンターに印刷する（ファサード）
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ja/net/printing-pdf-to-an-xps-printer-facades/
-description: このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示しています。
+description: このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示します。
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "PDFをXPSプリンターに印刷する",
-    "alternativeHeadline": "PDFをXPSプリンターに印刷する方法",
+    "headline": "Printing PDF to an XPS Printer",
+    "alternativeHeadline": "Print PDFs Directly to XPS Printers with Ease",
+    "abstract": "新機能により、C#のPdfViewerクラスを使用してPDF文書をXPSプリンターに直接印刷することが可能になりました。この機能は、さまざまな印刷設定を構成できるため、印刷プロセスに対する制御が強化され、自動サイズ変更や回転調整を含むことができます。開発者に最適なこの機能は、.NETアプリケーションへのPDF印刷機能の統合を簡素化します。",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "PDFドキュメント生成",
-    "keywords": "pdf, c#, XPSプリンターへのpdf",
-    "wordcount": "302",
-    "proficiencyLevel":"初心者",
+    "genre": "pdf document generation",
+    "keywords": "print pdf to xps, PdfViewer class, print document settings, C# PDF printing, XPS printer, printer settings, page settings, choose paper tray, soft printer, Aspose.PDF library",
+    "wordcount": "458",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDFドキュメントチーム",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,72 +74,161 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-pdf-to-an-xps-printer-facades/"
     },
-    "dateModified": "2022-02-04",
-    "description": "このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示しています。"
+    "dateModified": "2024-11-25",
+    "description": "このページでは、PdfViewerクラスを使用してPDFをXPSプリンターに印刷する方法を示します。"
 }
 </script>
 
-以下のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/) ライブラリでも動作します。
+次のコードスニペットは、[Aspose.PDF.Drawing](/pdf/ja/net/drawing/)ライブラリでも動作します。
 
-## **C#でPDFをXPSプリンタに印刷する**
+## **C#でPDFをXPSプリンターに印刷する**
 
-PDFファイルをXPSプリンタ、またはその他のソフトプリンタに印刷するには、[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer) クラスを使用します。これを行うには、PdfViewer クラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2) メソッドを使用してPDFファイルを開きます。PrinterSettings と PageSettings クラスを使用して異なる印刷設定を設定することができます。また、インストールされているXPSまたはその他のソフトプリンタの PrinterName プロパティを設定する必要があります。
+[PdfViewer](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer)クラスを使用して、PDFファイルをXPSプリンターまたは他のソフトプリンターに印刷できます。そのためには、PdfViewerクラスのオブジェクトを作成し、[BindPdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdfviewer/bindpdf/methods/2)メソッドを使用してPDFファイルを開きます。さまざまな印刷設定は、[PrinterSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/)および[PageSettings](https://reference.aspose.com/pdf/net/aspose.pdf.printing/pagesettings/)クラスを使用して設定できます。また、[PrinterName](https://reference.aspose.com/pdf/net/aspose.pdf.printing/printersettings/printername/)プロパティを、インストールされているXPSまたは他のソフトプリンターに設定する必要があります。
 
-最後に、[PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings) メソッドを使用して、PDFをXPSまたはその他のソフトプリンタに印刷します。以下のコードスニペットは、PDFファイルをXPSプリンタに印刷する方法を示しています。
+最後に、[PrintDocumentWithSettings](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfviewer/methods/printdocumentwithsettings)メソッドを使用して、PDFをXPSまたは他のソフトプリンターに印刷します。次のコードスニペットは、PDFファイルをXPSプリンターに印刷する方法を示しています。
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-public static void PrintToXpsPrinter()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintToXpsPrinter()
 {
-    // PdfViewer オブジェクトを作成する
-    PdfViewer viewer = new PdfViewer();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
 
-    // 入力PDFファイルを開く
-    viewer.BindPdf(_dataDir + "input.pdf");
+    // Create PdfViewer object
+    using (var viewer = new Aspose.Pdf.Facades.PdfViewer())
+    {
+        // Bind PDF document
+        viewer.BindPdf(dataDir + "PrintDocument.pdf");
 
-    // 印刷のための属性を設定する
-    viewer.AutoResize = true;         // サイズを調整してファイルを印刷する
-    viewer.AutoRotate = true;         // 回転を調整してファイルを印刷する
-    viewer.PrintPageDialog = false;   // 印刷時にページ番号ダイアログを表示しない
+        // Set attributes for printing
+        // Print the file with adjusted size
+        viewer.AutoResize = true;
+        // Print the file with adjusted rotation
+        viewer.AutoRotate = true;
+        // Do not produce the page number dialog when printing
+        viewer.PrintPageDialog = false;
 
-    // プリンタとページ設定、PrintDocumentのためのオブジェクトを作成する
-    System.Drawing.Printing.PrinterSettings ps = new System.Drawing.Printing.PrinterSettings();
-    System.Drawing.Printing.PageSettings pgs = new System.Drawing.Printing.PageSettings();
+        // Create objects for printer and page settings and PrintDocument
+        var ps = new Aspose.Pdf.Printing.PrinterSettings();
+        var pgs = new Aspose.Pdf.Printing.PageSettings();
 
-    // XPS/PDFプリンタ名を設定する
-    ps.PrinterName = "Microsoft XPS Document Writer";
-    // またはPDFプリンタを設定する
-    // Ps.PrinterName = "Adobe PDF";
+        // Set XPS/PDF printer name
+        ps.PrinterName = "Microsoft XPS Document Writer";
+        // Or set the PDF printer
+        // ps.PrinterName = "Adobe PDF";
 
-    // 必要に応じてPageSizeを設定する
-    pgs.PaperSize = new System.Drawing.Printing.PaperSize("A4", 827, 1169);
+        // Set PageSize (if required)
+        pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
 
-    // 必要に応じてPageMarginsを設定する
-    pgs.Margins = new System.Drawing.Printing.Margins(0, 0, 0, 0);
+        // Set PageMargins (if required)
+        pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
 
-    // プリンタとページ設定を使用してドキュメントを印刷する
-    viewer.PrintDocumentWithSettings(pgs, ps);
-
-    // 印刷後にPDFファイルを閉じる
-    viewer.Close();
+        // Print document using printer and page settings
+        viewer.PrintDocumentWithSettings(pgs, ps);
+    }
 }
 ```
+{{< /tab >}}
 
-## Choosing paper source by PDF page size
- 
-Since the 24.4 release, choosing paper source by PDF page size in the print dialog is possible. The next code snippet enables picking a printer tray based on the PDF's page size.
-
-This preference can be switched on and off using the 'PdfContentEditor' facade.
-
-```cs
-using (PdfContentEditor contentEditor = new PdfContentEditor())
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PrintToXpsPrinter()
 {
-    contentEditor.BindPdf("input.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create PdfViewer object
+    using var viewer = new Aspose.Pdf.Facades.PdfViewer();
+
+    // Bind PDF document
+    viewer.BindPdf(dataDir + "PrintDocument.pdf");
+
+    // Set attributes for printing
+    // Print the file with adjusted size
+    viewer.AutoResize = true;
+    // Print the file with adjusted rotation
+    viewer.AutoRotate = true;
+    // Do not produce the page number dialog when printing
+    viewer.PrintPageDialog = false;
+
+    // Create objects for printer and page settings and PrintDocument
+    var ps = new Aspose.Pdf.Printing.PrinterSettings();
+    var pgs = new Aspose.Pdf.Printing.PageSettings();
+
+    // Set XPS/PDF printer name
+    ps.PrinterName = "Microsoft XPS Document Writer";
+    // Or set the PDF printer
+    // ps.PrinterName = "Adobe PDF";
+
+    // Set PageSize (if required)
+    pgs.PaperSize = Aspose.Pdf.Printing.PaperSizes.A4;
+
+    // Set PageMargins (if required)
+    pgs.Margins = new Aspose.Pdf.Devices.Margins(0, 0, 0, 0);
+
+    // Print document using printer and page settings
+    viewer.PrintDocumentWithSettings(pgs, ps);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## PDFページサイズによる用紙ソースの選択
+ 
+24.4リリース以降、印刷ダイアログでPDFページサイズによる用紙ソースの選択が可能になりました。次のコードスニペットは、PDFのページサイズに基づいてプリンタートレイを選択することを可能にします。
+
+この設定は、[PdfContentEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfcontenteditor/)ファサードを使用してオンオフできます。
+
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSizeFacade()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the PdfContentEditor facade
+    using (var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor())
+    {
+        // Bind PDF document
+        contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
+
+        // Set the flag to choose a paper tray using the PDF page size
+        contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
+
+        // Save PDF document
+        contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
+    }
+}
+```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PickTrayByPdfSizeFacade()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Printing();
+
+    // Create the PdfContentEditor facade
+    using var contentEditor = new Aspose.Pdf.Facades.PdfContentEditor();
+
+    // Bind PDF document
+    contentEditor.BindPdf(dataDir + "PrintDocument.pdf");
 
     // Set the flag to choose a paper tray using the PDF page size
     contentEditor.ChangeViewerPreference(ViewerPreference.PickTrayByPDFSize);
-    contentEditor.Save("result.pdf");
+    // Save PDF document
+    contentEditor.Save(dataDir + "PickTrayByPdfSizeFacade_out.pdf");
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
@@ -164,23 +256,23 @@ using (PdfContentEditor contentEditor = new PdfContentEditor())
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "US",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "GB",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "営業",
+                "contactType": "sales",
                 "areaServed": "AU",
-                "availableLanguage": "英語"
+                "availableLanguage": "en"
             }
         ]
     },
@@ -189,7 +281,7 @@ using (PdfContentEditor contentEditor = new PdfContentEditor())
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": ".NET用PDF操作ライブラリ",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -201,5 +293,3 @@ using (PdfContentEditor contentEditor = new PdfContentEditor())
     }
 }
 </script>
-```
-

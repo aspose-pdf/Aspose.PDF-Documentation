@@ -2,9 +2,11 @@
 title: Ekstrak AcroForm - Ekstrak Data Formulir dari PDF di C#
 linktitle: Ekstrak AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /id/net/extract-form/
-description: Ekstrak formulir dari dokumen PDF Anda dengan perpustakaan Aspose.PDF untuk .NET. Dapatkan nilai dari bidang individu file PDF.
+description: Ekstrak formulir dari dokumen PDF Anda dengan pustaka Aspose.PDF for .NET. Dapatkan nilai dari bidang individu file PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Extract AcroForm",
-    "alternativeHeadline": "Cara mengekstrak AcroForm dari PDF",
+    "headline": "Extract AcroForm - Extract Form Data from PDF in C#",
+    "alternativeHeadline": "Effortlessly Extract PDF Form Data Using C#",
+    "abstract": "Fitur Ekstrak AcroForm baru di Aspose.PDF for .NET memungkinkan pengembang untuk dengan mudah mengekstrak data formulir dari dokumen PDF. Fungsionalitas ini memungkinkan pengguna untuk mengambil nilai dari bidang individu atau semua bidang dalam PDF, meningkatkan kemampuan manajemen dan manipulasi data dalam aplikasi C#",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "pembuatan dokumen pdf",
-    "keywords": "pdf, c#, ekstrak acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Pemula",
+    "genre": "pdf document generation",
+    "keywords": "extract form data, PDF in C#, Aspose.PDF for .NET, AcroForm extraction, get field values PDF, PDF form fields, individual field value, get fields in region, manipulate PDF forms, C# PDF library",
+    "wordcount": "673",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Tim Dok Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,101 +74,125 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-form/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Ekstrak formulir dari dokumen PDF Anda dengan perpustakaan Aspose.PDF untuk .NET. Dapatkan nilai dari bidang individu file PDF."
+    "dateModified": "2024-11-25",
+    "description": "Ekstrak formulir dari dokumen PDF Anda dengan pustaka Aspose.PDF for .NET. Dapatkan nilai dari bidang individu file PDF."
 }
 </script>
-Kode snippet berikut juga berfungsi dengan perpustakaan [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
+
+Potongan kode berikut juga bekerja dengan pustaka [Aspose.PDF.Drawing](/pdf/id/net/drawing/).
 
 ## Ekstrak data dari formulir
 
 ### Dapatkan Nilai dari Semua Bidang Dokumen PDF
 
-Untuk mendapatkan nilai dari semua bidang dalam dokumen PDF, Anda perlu menavigasi melalui semua bidang formulir dan kemudian mendapatkan nilai menggunakan properti Value. Dapatkan setiap bidang dari koleksi Form, dalam tipe bidang dasar yang disebut Field dan akses properti Valuenya.
+Untuk mendapatkan nilai dari semua bidang dalam dokumen PDF, Anda perlu menavigasi melalui semua bidang formulir dan kemudian mendapatkan nilai menggunakan properti Value. Dapatkan setiap bidang dari koleksi Form, dalam tipe bidang dasar yang disebut Field dan akses properti Value-nya.
 
-Snippet kode C# berikut menunjukkan cara mendapatkan nilai dari semua bidang dalam dokumen PDF.
+Potongan kode C# berikut menunjukkan cara mendapatkan nilai dari semua bidang dari dokumen PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetValuesFromAllFields.pdf");
-
-// Dapatkan nilai dari semua bidang
-foreach (Field formField in pdfDocument.Form)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetValuesFromFields()
 {
-    Console.WriteLine("Nama Bidang : {0} ", formField.PartialName);
-    Console.WriteLine("Nilai : {0} ", formField.Value);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
+    {
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
+    }
 }
 ```
-### Mendapatkan Nilai dari Satu Bidang Dokumen PDF
 
-Properti Value dari bidang formulir memungkinkan Anda untuk mendapatkan nilai dari bidang tertentu. Untuk mendapatkan nilai, dapatkan bidang formulir dari koleksi Form objek Document. Contoh C# ini memilih [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) dan mengambil nilainya menggunakan properti Value.
+### Dapatkan Nilai dari Bidang Individu Dokumen PDF
 
-```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-
-// Dapatkan bidang
-TextBoxField textBoxField = pdfDocument.Form["textbox1"] sebagai TextBoxField;
-
-// Dapatkan nilai bidang
-Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
-Console.WriteLine("Value : {0} ", textBoxField.Value);
-```
-
-Untuk mendapatkan URL tombol submit, gunakan baris kode berikut.
+Properti Value dari bidang formulir memungkinkan Anda untuk mendapatkan nilai dari bidang tertentu. Untuk mendapatkan nilai, ambil bidang formulir dari koleksi Form objek Document. Contoh C# ini memilih [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) dan mengambil nilainya menggunakan properti Value.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetValueFromField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Buka dokumen
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-SubmitFormAction act = pdfDocument.Form[1].OnActivated sebagai SubmitFormAction;
-if(act != null)
-Console.WriteLine(act.Url.Name);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    {
+        // Get a field
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            // Get field value
+            Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
+            Console.WriteLine("Value : {0} ", textBoxField.Value);
+        }
+    }
+}
 ```
-### Dapatkan Bidang Formulir dari Wilayah Tertentu di File PDF
 
-Terkadang, Anda mungkin tahu di mana dalam dokumen terdapat bidang formulir, tetapi tidak tahu namanya. Misalnya, jika yang Anda miliki hanyalah skema formulir cetak. Dengan Aspose.PDF untuk .NET, ini bukan masalah. Anda dapat mengetahui bidang apa saja yang ada di wilayah tertentu dari file PDF. Untuk mendapatkan bidang formulir dari wilayah tertentu di file PDF:
+Untuk mendapatkan URL tombol kirim, gunakan baris kode berikut.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetSubmitFormActionUrl()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    {
+        // Get the SubmitFormAction from the form field
+        if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
+        {
+            // Output the URL of the SubmitFormAction
+            Console.WriteLine(act.Url.Name);
+        }
+    }
+}
+```
+
+### Dapatkan Bidang Formulir dari Wilayah Tertentu File PDF
+
+Terkadang, Anda mungkin tahu di mana dalam dokumen sebuah bidang formulir berada, tetapi tidak tahu namanya. Misalnya, jika yang Anda miliki hanyalah skema dari formulir yang dicetak. Dengan Aspose.PDF for .NET, ini bukan masalah. Anda dapat mengetahui bidang mana yang ada di wilayah tertentu dari file PDF. Untuk mendapatkan bidang formulir dari wilayah tertentu file PDF:
 
 1. Buka file PDF menggunakan objek [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Dapatkan formulir dari koleksi Forms dokumen.
-1. Tentukan wilayah persegi panjang dan lewatkan ke metode GetFieldsInRect objek Form. Koleksi Fields dikembalikan.
+1. Ambil formulir dari koleksi Forms dokumen.
+1. Tentukan wilayah persegi panjang dan serahkan ke metode GetFieldsInRect objek Form. Koleksi Fields dikembalikan.
 1. Gunakan ini untuk memanipulasi bidang.
 
 Potongan kode C# berikut menunjukkan cara mendapatkan bidang formulir di wilayah persegi panjang tertentu dari file PDF.
 
 ```csharp
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Jalur ke direktori dokumen.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Buka file pdf
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf");
-
-// Buat objek persegi panjang untuk mendapatkan bidang di area tersebut
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
-
-// Dapatkan formulir PDF
-Aspose.Pdf.Forms.Form form = doc.Form;
-
-// Dapatkan bidang di area persegi panjang
-Aspose.Pdf.Forms.Field[] fields = form.GetFieldsInRect(rectangle);
-
-// Tampilkan nama dan nilai Field
-foreach (Field field in fields)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetFieldsFromRegion()
 {
-    // Tampilkan properti penempatan gambar untuk semua penempatan
-    Console.Out.WriteLine("Nama Bidang: " + field.FullName + "-" + "Nilai Bidang: " + field.Value);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
+    {
+        // Create rectangle object to get fields in that area
+        var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
+
+        // Get the PDF form
+        var form = document.Form;
+
+        // Get fields in the rectangular area
+        var fields = form.GetFieldsInRect(rectangle);
+
+        // Display Field names and values
+        foreach (var field in fields)
+        {
+            // Display image placement properties for all placements
+            Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
+        }
+    }
 }
 ```
 
@@ -173,7 +200,7 @@ foreach (Field field in fields)
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Perpustakaan Aspose.PDF untuk .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -195,21 +222,21 @@ foreach (Field field in fields)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "penjualan",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -220,7 +247,7 @@ foreach (Field field in fields)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Perpustakaan Manipulasi PDF untuk .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -232,5 +259,3 @@ foreach (Field field in fields)
     }
 }
 </script>
-```
-
