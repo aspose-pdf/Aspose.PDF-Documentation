@@ -82,7 +82,7 @@ sitemap:
 
 Ce sujet explique comment déplacer une page d'un document PDF à la fin d'un autre document en utilisant C#.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour déplacer une page, nous devrions :
 

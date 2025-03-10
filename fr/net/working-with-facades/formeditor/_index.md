@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Ajouter des champs de formulaire](/pdf/net/add-form-fields/)
-- [Explorer les fonctionnalités de la classe FormEditor](/pdf/net/exploring-features-of-formeditor-class/)
-- [Décorer un champ de formulaire dans un PDF](/pdf/net/decorate-form-field/)
-- [Apparence et attributs du champ](/pdf/net/changing-field-appearance-and-attributes/)
-- [Travailler avec un élément de liste](/pdf/net/working-with-list-item/)
-- [Copier le champ intérieur et extérieur](/pdf/net/copy-inner-and-outer-field/)
-- [Déplacer et supprimer un champ de formulaire](/pdf/net/move-remove-form-field/)
-- [Importer et exporter un champ de formulaire](/pdf/net/import-export-form-field/)
+- [Ajouter des champs de formulaire](/pdf/fr/net/add-form-fields/)
+- [Explorer les fonctionnalités de la classe FormEditor](/pdf/fr/net/exploring-features-of-formeditor-class/)
+- [Décorer un champ de formulaire dans un PDF](/pdf/fr/net/decorate-form-field/)
+- [Apparence et attributs du champ](/pdf/fr/net/changing-field-appearance-and-attributes/)
+- [Travailler avec un élément de liste](/pdf/fr/net/working-with-list-item/)
+- [Copier le champ intérieur et extérieur](/pdf/fr/net/copy-inner-and-outer-field/)
+- [Déplacer et supprimer un champ de formulaire](/pdf/fr/net/move-remove-form-field/)
+- [Importer et exporter un champ de formulaire](/pdf/fr/net/import-export-form-field/)

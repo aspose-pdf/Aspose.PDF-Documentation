@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[L'espace de noms Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/net/) vous permet d'ajouter un tampon dans un fichier PDF existant. Parfois, les utilisateurs ont besoin de faire pivoter le tampon. Dans cet article, nous allons voir comment faire pivoter un tampon autour de son point central.
+[L'espace de noms Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) vous permet d'ajouter un tampon dans un fichier PDF existant. Parfois, les utilisateurs ont besoin de faire pivoter le tampon. Dans cet article, nous allons voir comment faire pivoter un tampon autour de son point central.
 
 {{% /alert %}}
 

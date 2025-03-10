@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Le namespace Aspose.Pdf.Facades dans [Aspose.PDF for .NET](/pdf/net/) vous permet de manipuler des pages individuelles dans un fichier PDF. Cette fonctionnalité vous aide à travailler avec l'affichage des pages, l'alignement et la transition, etc. La classe PdfPageEditor aide à atteindre cette fonctionnalité. Dans cet article, nous examinerons les propriétés et les méthodes fournies par cette classe ainsi que le fonctionnement de ces méthodes.
+Le namespace Aspose.Pdf.Facades dans [Aspose.PDF for .NET](/pdf/fr/net/) vous permet de manipuler des pages individuelles dans un fichier PDF. Cette fonctionnalité vous aide à travailler avec l'affichage des pages, l'alignement et la transition, etc. La classe PdfPageEditor aide à atteindre cette fonctionnalité. Dans cet article, nous examinerons les propriétés et les méthodes fournies par cette classe ainsi que le fonctionnement de ces méthodes.
 
 {{% /alert %}}
 

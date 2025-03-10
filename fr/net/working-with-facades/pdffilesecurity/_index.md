@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Chiffrer un fichier PDF](/pdf/net/encrypt-pdf-file/)
-- [Déchiffrer un fichier PDF](/pdf/net/decrypt-pdf-file/)
-- [Contrôler un fichier PDF d'exception](/pdf/net/control-exception/)
-- [Changer le mot de passe d'un fichier PDF](/pdf/net/change-password/)
-- [Définir des privilèges sur un fichier PDF existant](/pdf/net/set-privileges/)
+- [Chiffrer un fichier PDF](/pdf/fr/net/encrypt-pdf-file/)
+- [Déchiffrer un fichier PDF](/pdf/fr/net/decrypt-pdf-file/)
+- [Contrôler un fichier PDF d'exception](/pdf/fr/net/control-exception/)
+- [Changer le mot de passe d'un fichier PDF](/pdf/fr/net/change-password/)
+- [Définir des privilèges sur un fichier PDF existant](/pdf/fr/net/set-privileges/)

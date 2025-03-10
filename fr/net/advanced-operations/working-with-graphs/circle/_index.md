@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Le code ci-dessous fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code ci-dessous fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter un objet cercle
 

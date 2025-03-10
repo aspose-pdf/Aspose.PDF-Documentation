@@ -83,14 +83,14 @@ Nous avons tous parfois besoin d'ajouter du texte au fichier PDF. Par exemple, l
 
 Vous pouvez faire ce qui suit :
 
-- [Ajouter du texte au fichier PDF](/pdf/net/add-text-to-pdf-file/) - ajouter du texte à votre PDF, utiliser des polices à partir de flux et de fichiers, ajouter une chaîne HTML, ajouter un lien hypertexte, etc.
-- [Info-bulle PDF](/pdf/net/pdf-tooltip/) - vous pouvez ajouter une info-bulle au texte recherché en ajoutant un bouton invisible en utilisant C#.
-- [Formatage du texte à l'intérieur du PDF](/pdf/net/text-formatting-inside-pdf/) - De nombreuses fonctionnalités que vous pouvez ajouter à votre document lors du formatage du texte à l'intérieur. Ajouter un retrait de ligne, ajouter une bordure de texte, ajouter du texte souligné, ajouter un saut de ligne avec la bibliothèque Aspose.PDF.
-- [Utiliser FloatingBox](/pdf/net/floating-box/) - l'outil Floating Box est un outil spécial pour placer du texte et d'autres contenus sur une page PDF.
-- [Remplacer le texte dans le PDF](/pdf/net/replace-text-in-pdf/) - pour remplacer le texte dans toutes les pages d'un document PDF. Vous devez d'abord utiliser TextFragmentAbsorber.
-- [Faire pivoter le texte à l'intérieur du PDF](/pdf/net/rotate-text-inside-pdf/) - faire pivoter le texte à l'intérieur du PDF en utilisant la propriété de rotation de la classe TextFragment.
-- [Rechercher et obtenir du texte à partir des pages du document PDF](/pdf/net/search-and-get-text-from-pdf/) - vous pouvez utiliser la classe TextFragmentAbsorber pour rechercher et obtenir du texte à partir des pages.
-- [Déterminer le saut de ligne](/pdf/net/determine-line-break/) - ce sujet explique comment suivre le saut de ligne des fragments de texte multi-lignes.
+- [Ajouter du texte au fichier PDF](/pdf/fr/net/add-text-to-pdf-file/) - ajouter du texte à votre PDF, utiliser des polices à partir de flux et de fichiers, ajouter une chaîne HTML, ajouter un lien hypertexte, etc.
+- [Info-bulle PDF](/pdf/fr/net/pdf-tooltip/) - vous pouvez ajouter une info-bulle au texte recherché en ajoutant un bouton invisible en utilisant C#.
+- [Formatage du texte à l'intérieur du PDF](/pdf/fr/net/text-formatting-inside-pdf/) - De nombreuses fonctionnalités que vous pouvez ajouter à votre document lors du formatage du texte à l'intérieur. Ajouter un retrait de ligne, ajouter une bordure de texte, ajouter du texte souligné, ajouter un saut de ligne avec la bibliothèque Aspose.PDF.
+- [Utiliser FloatingBox](/pdf/fr/net/floating-box/) - l'outil Floating Box est un outil spécial pour placer du texte et d'autres contenus sur une page PDF.
+- [Remplacer le texte dans le PDF](/pdf/fr/net/replace-text-in-pdf/) - pour remplacer le texte dans toutes les pages d'un document PDF. Vous devez d'abord utiliser TextFragmentAbsorber.
+- [Faire pivoter le texte à l'intérieur du PDF](/pdf/fr/net/rotate-text-inside-pdf/) - faire pivoter le texte à l'intérieur du PDF en utilisant la propriété de rotation de la classe TextFragment.
+- [Rechercher et obtenir du texte à partir des pages du document PDF](/pdf/fr/net/search-and-get-text-from-pdf/) - vous pouvez utiliser la classe TextFragmentAbsorber pour rechercher et obtenir du texte à partir des pages.
+- [Déterminer le saut de ligne](/pdf/fr/net/determine-line-break/) - ce sujet explique comment suivre le saut de ligne des fragments de texte multi-lignes.
 
 <script type="application/ld+json">
 {

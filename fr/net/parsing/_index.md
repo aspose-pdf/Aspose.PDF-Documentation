@@ -80,10 +80,10 @@ sitemap:
 
 **Analyser des documents PDF** est un terme lié à l'extraction de divers types d'informations à partir de fichiers PDF. Cette section couvre comment :
 
-- [Extraire du texte d'un PDF](/pdf/net/extract-text-from-pdf/). L'analyse ou l'extraction de texte est l'opération la plus populaire avec des PDF prêts à l'emploi. Vous apprendrez à analyser le texte d'un document entier, d'une page particulière ou d'une région particulière d'une page.
-- [Extraire des images d'un PDF](/pdf/net/extract-images-from-the-pdf-file/). L'extraction d'images fait la même chose pour les images que l'opération ci-dessus pour le texte.
-- [Extraire des polices d'un PDF](/pdf/net/extract-fonts-from-pdf/). L'extraction de polices est une opération spécifique avec les polices dans les PDF.
-- [Extraire des données du formulaire](/pdf/net/extract-data-from-acroform/). Si vous avez un ensemble de documents PDF avec des formulaires, vous devez probablement obtenir les données de ces formulaires. Cet article vous aidera à comprendre comment extraire les données des AcroForms avec Aspose.PDF for .NET.
-- [Extraire du texte des tampons](/pdf/net/extract-text-from-stamps/) - obtenir des informations textuelles de votre document PDF.
-- [Extraire des données d'un tableau](/pdf/net/extract-data-from-table-in-pdf/) - obtenir des données d'un tableau dans un document PDF.
-- [Extraire des données vectorielles d'un PDF](/pdf/net/extract-vector-data-from-pdf/) - vous pouvez obtenir les données vectorielles (chemin, polygone, polyligne), telles que la position, la couleur, l'épaisseur de ligne, etc.
+- [Extraire du texte d'un PDF](/pdf/fr/net/extract-text-from-pdf/). L'analyse ou l'extraction de texte est l'opération la plus populaire avec des PDF prêts à l'emploi. Vous apprendrez à analyser le texte d'un document entier, d'une page particulière ou d'une région particulière d'une page.
+- [Extraire des images d'un PDF](/pdf/fr/net/extract-images-from-the-pdf-file/). L'extraction d'images fait la même chose pour les images que l'opération ci-dessus pour le texte.
+- [Extraire des polices d'un PDF](/pdf/fr/net/extract-fonts-from-pdf/). L'extraction de polices est une opération spécifique avec les polices dans les PDF.
+- [Extraire des données du formulaire](/pdf/fr/net/extract-data-from-acroform/). Si vous avez un ensemble de documents PDF avec des formulaires, vous devez probablement obtenir les données de ces formulaires. Cet article vous aidera à comprendre comment extraire les données des AcroForms avec Aspose.PDF for .NET.
+- [Extraire du texte des tampons](/pdf/fr/net/extract-text-from-stamps/) - obtenir des informations textuelles de votre document PDF.
+- [Extraire des données d'un tableau](/pdf/fr/net/extract-data-from-table-in-pdf/) - obtenir des données d'un tableau dans un document PDF.
+- [Extraire des données vectorielles d'un PDF](/pdf/fr/net/extract-vector-data-from-pdf/) - vous pouvez obtenir les données vectorielles (chemin, polygone, polyligne), telles que la position, la couleur, l'épaisseur de ligne, etc.

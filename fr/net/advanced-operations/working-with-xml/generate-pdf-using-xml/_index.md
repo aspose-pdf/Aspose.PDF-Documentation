@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Générer un document PDF à partir d'un document XML n'est pas une tâche triviale car le document XML peut décrire différents contenus. Aspose.PDF for .NET a plusieurs façons de générer un PDF basé sur un document XML :
 

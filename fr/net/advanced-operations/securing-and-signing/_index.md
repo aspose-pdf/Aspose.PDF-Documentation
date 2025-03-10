@@ -94,10 +94,10 @@ Algorithmes de hachage pour PKCS7 détaché :
 
 Il est recommandé d'éviter les signatures numériques avec l'algorithme de hachage SHA-1 en raison de son insécurité.
 
-- [Signer numériquement un fichier PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Définir des privilèges, chiffrer et déchiffrer un fichier PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extraire des informations sur les images et les signatures](/pdf/net/extract-image-and-signature-information/)
-- [Signer un document PDF depuis une carte intelligente](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Signer numériquement un fichier PDF](/pdf/fr/net/digitally-sign-pdf-file/)
+- [Définir des privilèges, chiffrer et déchiffrer un fichier PDF](/pdf/fr/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extraire des informations sur les images et les signatures](/pdf/fr/net/extract-image-and-signature-information/)
+- [Signer un document PDF depuis une carte intelligente](/pdf/fr/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

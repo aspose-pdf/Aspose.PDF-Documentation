@@ -81,7 +81,7 @@ sitemap:
 
 Les pièces jointes peuvent contenir une grande variété d'informations et peuvent être de différents types de fichiers. Cet article explique comment ajouter une pièce jointe à un fichier PDF.
 
-Le prochain extrait de code fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/net/drawing/).
+Le prochain extrait de code fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 1. Créez un nouveau projet C#.
 1. Ajoutez une référence à la DLL Aspose.PDF.

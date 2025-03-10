@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Créer des signets](/pdf/net/create-bookmarks/)
-- [Importer et exporter des signets](/pdf/net/import-and-export-bookmarks/)
-- [Mettre à jour, supprimer et obtenir des signets](/pdf/net/update-delete-and-get-bookmarks/)
+- [Créer des signets](/pdf/fr/net/create-bookmarks/)
+- [Importer et exporter des signets](/pdf/fr/net/import-and-export-bookmarks/)
+- [Mettre à jour, supprimer et obtenir des signets](/pdf/fr/net/update-delete-and-get-bookmarks/)

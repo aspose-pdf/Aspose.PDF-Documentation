@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Les images sont contenues dans la collection [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) de chaque page, dans la collection [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Pour extraire une page particulière, récupérez ensuite l'image de la collection Images en utilisant l'index particulier de l'image.
 

@@ -112,7 +112,7 @@ Pour obtenir tous les filigranes sur une page particulière, la classe [Page](ht
 
 Le code suivant montre comment obtenir tous les filigranes sur la première page d'un fichier PDF.
 
-_Remarque :_ Ce code fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_Remarque :_ Ce code fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

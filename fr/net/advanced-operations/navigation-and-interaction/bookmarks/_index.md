@@ -82,8 +82,8 @@ sitemap:
 Les signets PDF sont un outil pratique et essentiel lorsqu'il s'agit de lire des fichiers PDF. Ils permettent aux utilisateurs de sauter rapidement à d'autres endroits dans un document PDF, de naviguer à travers les pages et de visualiser rapidement le contenu d'un PDF, tout comme une table des matières.
 Dans cette section, vous apprendrez comment :
 
-- [Ajouter et supprimer un signet](/pdf/net/add-and-delete-bookmark/)
-- [Obtenir, mettre à jour et développer un signet](/pdf/net/get-update-and-expand-bookmark/)
+- [Ajouter et supprimer un signet](/pdf/fr/net/add-and-delete-bookmark/)
+- [Obtenir, mettre à jour et développer un signet](/pdf/fr/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

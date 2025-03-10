@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/net/) prend très bien en charge les AcroForms. Il prend également en charge l'importation et l'exportation de données de formulaire vers différents formats de fichiers comme FDF, XFDF et XML. Cependant, parfois un développeur doit convertir un format en un autre. Dans cet article, nous examinerons la fonctionnalité qui nous permet de convertir un format FDF en XML.
+Le [namespace Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) dans [Aspose.PDF for .NET](/pdf/fr/net/) prend très bien en charge les AcroForms. Il prend également en charge l'importation et l'exportation de données de formulaire vers différents formats de fichiers comme FDF, XFDF et XML. Cependant, parfois un développeur doit convertir un format en un autre. Dans cet article, nous examinerons la fonctionnalité qui nous permet de convertir un format FDF en XML.
 
 {{% /alert %}}
 

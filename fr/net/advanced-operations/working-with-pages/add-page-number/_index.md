@@ -82,7 +82,7 @@ sitemap:
 Tous les documents doivent avoir des numéros de page. Le numéro de page facilite la localisation des différentes parties du document.
 **Aspose.PDF for .NET** vous permet d'ajouter des numéros de page avec PageNumberStamp.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Vous pouvez utiliser la classe [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) pour ajouter un tampon de numéro de page dans un fichier PDF. La classe [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) fournit les propriétés nécessaires pour créer un tampon basé sur le numéro de page comme le format, les marges, les alignements, le numéro de départ, etc. Pour ajouter un tampon de numéro de page, vous devez créer un objet [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) et un objet [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) de la classe [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) pour ajouter le tampon dans le PDF. Vous pouvez également définir les attributs de police du tampon de numéro de page. Le code suivant vous montre comment ajouter des numéros de page dans un fichier PDF.
 

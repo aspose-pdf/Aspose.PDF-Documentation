@@ -86,7 +86,7 @@ Aspose.PDF pour NET vous permet d'extraire du texte des annotations de tampon. A
 1. Définissez un nouvel objet de la classe `TextAbsorber`.
 1. Utilisez la méthode visit de TextAbsorber pour obtenir le texte.
 
-Le snippet de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le snippet de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

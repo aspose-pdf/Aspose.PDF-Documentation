@@ -82,7 +82,7 @@ sitemap:
 
 Les titres sont des parties importantes de tout document. Les rédacteurs essaient toujours de rendre les titres plus proéminents et significatifs pour leurs lecteurs. S'il y a plus d'un titre dans un document, un rédacteur a plusieurs options pour organiser ces titres. L'une des approches les plus courantes pour organiser les titres est d'écrire les titres dans un style de numérotation.
 
-[Aspose.PDF for .NET](/pdf/net/) propose de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, NumberingStyle. Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
+[Aspose.PDF for .NET](/pdf/fr/net/) propose de nombreux styles de numérotation prédéfinis. Ces styles de numérotation prédéfinis sont stockés dans une énumération, NumberingStyle. Les valeurs prédéfinies de l'énumération NumberingStyle et leurs descriptions sont données ci-dessous :
 
 |**Types de titres**|**Description**|
 | :- | :- |
@@ -97,7 +97,7 @@ La propriété **Style** de la classe **Aspose.Pdf.Heading** est utilisée pour 
 | :- |
 Le code source, pour obtenir la sortie montrée dans la figure ci-dessus, est donné ci-dessous dans l'exemple.
 
-Le prochain extrait de code fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/net/drawing/).
+Le prochain extrait de code fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

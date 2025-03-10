@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Exporter les données de la feuille de calcul Excel pour remplir le formulaire PDF](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [Exporter les données de la feuille de calcul Excel pour remplir le formulaire PDF](/pdf/fr/net/export-excel-worksheet-data-to-fill-pdf-form/)

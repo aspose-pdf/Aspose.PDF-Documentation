@@ -83,12 +83,12 @@ Un document PDF tagué peut être accessible aux personnes handicapées. Ajouter
 
 Cette section couvre les sujets suivants :
 
-- [Créer un PDF tagué](/pdf/net/create-tagged-pdf/)
-- [Éditer un PDF tagué](/pdf/net/edit-pdf-file-tags/)
-- [Extraire le contenu tagué des PDF tagués](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Définir les propriétés des éléments de structure](/pdf/net/setting-structure-elements-properties/)
-- [Travailler avec des tableaux dans des PDF tagués](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Test de conformité PDF-UA - Liste des erreurs](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Créer un PDF tagué](/pdf/fr/net/create-tagged-pdf/)
+- [Éditer un PDF tagué](/pdf/fr/net/edit-pdf-file-tags/)
+- [Extraire le contenu tagué des PDF tagués](/pdf/fr/net/extract-tagged-content-from-tagged-pdfs/)
+- [Définir les propriétés des éléments de structure](/pdf/fr/net/setting-structure-elements-properties/)
+- [Travailler avec des tableaux dans des PDF tagués](/pdf/fr/net/working-with-table-in-tagged-pdfs/)
+- [Test de conformité PDF-UA - Liste des erreurs](/pdf/fr/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

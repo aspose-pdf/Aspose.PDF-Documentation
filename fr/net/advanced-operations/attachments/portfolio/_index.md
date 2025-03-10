@@ -87,7 +87,7 @@ L'exemple suivant utilise un fichier Microsoft Excel, un document Word et un fic
 
 Le code ci-dessous donne le portfolio suivant.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ### Portfolio PDF créé avec Aspose.PDF
 

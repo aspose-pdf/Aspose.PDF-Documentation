@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Ce sujet explique comment utiliser les classes d'opérateurs dans l'espace de noms Aspose.PDF qui fournissent la capacité d'obtenir des informations sur la résolution et les dimensions des images sans avoir à les extraire.
 

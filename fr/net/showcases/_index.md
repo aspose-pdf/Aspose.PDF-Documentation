@@ -14,7 +14,7 @@ sitemap:
 ---
 ## Articles dans cette section
 
-- [Aspose.PDF Editor](/pdf/net/aspose-pdf-editor/)
-- [Rendre WebForms DataGridView en PDF](/pdf/net/render-webforms-datagridview-to-pdf/)
-- [Rendre un tableau à partir de la source de données](/pdf/net/render-table-from-the-data-source/)
-- [Rendre un tableau en utilisant le modèle Entity Framework comme source de données](/pdf/net/render-table-using-entity-framework-model-as-data-source/)
+- [Aspose.PDF Editor](/pdf/fr/net/aspose-pdf-editor/)
+- [Rendre WebForms DataGridView en PDF](/pdf/fr/net/render-webforms-datagridview-to-pdf/)
+- [Rendre un tableau à partir de la source de données](/pdf/fr/net/render-table-from-the-data-source/)
+- [Rendre un tableau en utilisant le modèle Entity Framework comme source de données](/pdf/fr/net/render-table-using-entity-framework-model-as-data-source/)

@@ -89,10 +89,10 @@ L'annotation est une partie importante du fichier PDF. En utilisant Aspose.PDF f
 
 Vous êtes en mesure de faire ce qui suit :
 
-- [Aperçu des annotations](/pdf/net/overview-of-annotations/) - apprenez quels types d'annotations sont définis par la spécification PDF et ce que prend en charge Aspose.PDF.
-- [Ajouter, supprimer et obtenir une annotation](/pdf/net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
-- [Importer et exporter des annotations avec le format XFDF](/pdf/net/import-export-xfdf/) - la bibliothèque Aspose.PDF fournit des méthodes pour importer et exporter des données d'annotations vers des fichiers XFDF.
-- [Importer des annotations au format FDF dans PDF](/pdf/net/import-fdf/) - la bibliothèque Aspose.PDF fournit une méthode pour importer des annotations au format FDF dans des fichiers PDF.
+- [Aperçu des annotations](/pdf/fr/net/overview-of-annotations/) - apprenez quels types d'annotations sont définis par la spécification PDF et ce que prend en charge Aspose.PDF.
+- [Ajouter, supprimer et obtenir une annotation](/pdf/fr/net/add-delete-and-get-annotation/) - cette section explique comment travailler avec tous les types d'annotations autorisées.
+- [Importer et exporter des annotations avec le format XFDF](/pdf/fr/net/import-export-xfdf/) - la bibliothèque Aspose.PDF fournit des méthodes pour importer et exporter des données d'annotations vers des fichiers XFDF.
+- [Importer des annotations au format FDF dans PDF](/pdf/fr/net/import-fdf/) - la bibliothèque Aspose.PDF fournit une méthode pour importer des annotations au format FDF dans des fichiers PDF.
 
 <script type="application/ld+json">
 {

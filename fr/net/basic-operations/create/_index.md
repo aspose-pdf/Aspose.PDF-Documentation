@@ -85,7 +85,7 @@ Pour créer un fichier PDF en utilisant C#, les étapes suivantes peuvent être 
 1. Ajoutez un [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) à la collection [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) de la page.
 1. Enregistrez le document PDF résultant.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

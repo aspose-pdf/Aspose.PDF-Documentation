@@ -90,26 +90,26 @@ Les fonctionnalités que nous pouvons inclure dans cette section sont Insérer, 
 
 Cette section explore les capacités de cette classe et explique le but de ses méthodes.
 
-- [Concaténer des documents PDF](/pdf/net/concatenate-pdf-documents/)
-- [Extraire des pages PDF](/pdf/net/extract-pdf-pages/)
-- [Insérer des pages PDF](/pdf/net/insert-pdf-pages/)
-- [Supprimer des pages PDF](/pdf/net/delete-pdf-pages/)
+- [Concaténer des documents PDF](/pdf/fr/net/concatenate-pdf-documents/)
+- [Extraire des pages PDF](/pdf/fr/net/extract-pdf-pages/)
+- [Insérer des pages PDF](/pdf/fr/net/insert-pdf-pages/)
+- [Supprimer des pages PDF](/pdf/fr/net/delete-pdf-pages/)
 
 ## Utilisation des Sauts de Page
 
 Le Saut de Page est une fonctionnalité spéciale qui permet le reflow du document.
 
-- [Saut de Page dans un PDF existant](/pdf/net/page-break-in-existing-pdf/)
+- [Saut de Page dans un PDF existant](/pdf/fr/net/page-break-in-existing-pdf/)
 
 ## Imposition PDF
 
 L'imposition est le processus d'arrangement correct des pages avant l'impression. `PdfFileEditor` fournit deux méthodes à cet effet, à savoir `MakeBooklet` et `MakeNUp`. La méthode MakeBooklet aide à arranger les pages de manière à ce qu'il soit facile de les plier ou de les relier après impression, cependant, la méthode MakeNUp permet d'imprimer plusieurs pages sur une page du fichier PDF.
 
-- [Créer un livret PDF](/pdf/net/make-booklet-of-pdf/)
-- [Créer NUp de fichiers PDF](/pdf/net/make-nup-of-pdf-files/)
+- [Créer un livret PDF](/pdf/fr/net/make-booklet-of-pdf/)
+- [Créer NUp de fichiers PDF](/pdf/fr/net/make-nup-of-pdf-files/)
 
 ## Division
 
 La fonctionnalité de division vous permet de diviser un fichier PDF existant en différentes parties. Vous pouvez soit diviser la partie avant du fichier PDF, soit la partie arrière. Comme PdfFileEditor fournit une variété de méthodes pour des fins de division, vous pouvez également diviser un fichier en pages individuelles ou en plusieurs ensembles de plusieurs pages.
 
-- [Diviser des pages PDF](/pdf/net/split-pdf-pages/)
+- [Diviser des pages PDF](/pdf/fr/net/split-pdf-pages/)

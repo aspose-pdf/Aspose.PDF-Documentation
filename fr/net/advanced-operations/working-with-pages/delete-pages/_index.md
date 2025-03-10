@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Vous pouvez supprimer des pages d'un fichier PDF en utilisant Aspose.PDF for .NET. Pour supprimer une page particulière de la collection [PageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/pagecollection).
 

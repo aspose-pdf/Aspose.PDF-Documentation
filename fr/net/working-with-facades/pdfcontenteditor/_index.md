@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Ajouter des actions Javascript à un fichier PDF existant](/pdf/net/adding-javascript-actions/)
-- [Ajouter des actions de signets à un fichier PDF existant](/pdf/net/how-to-create-nested-bookmarks/)
-- [Travailler avec des images](/pdf/net/working-with-images-in-pdf/)
-- [Remplacer du texte - Façades](/pdf/net/replace-text-facades/)
-- [Travailler avec des pièces jointes - Façades](/pdf/net/working-with-attachments-facades/)
-- [Définir la préférence du visualiseur d'un fichier PDF existant](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)
-- [Obtenir la préférence du visualiseur d'un fichier PDF existant](/pdf/net/get-viewer-preference-of-an-existing-pdf-file/)
-- [Ajouter des annotations à un fichier PDF existant](/pdf/net/adding-annotations-to-existing-pdf-file/)
+- [Ajouter des actions Javascript à un fichier PDF existant](/pdf/fr/net/adding-javascript-actions/)
+- [Ajouter des actions de signets à un fichier PDF existant](/pdf/fr/net/how-to-create-nested-bookmarks/)
+- [Travailler avec des images](/pdf/fr/net/working-with-images-in-pdf/)
+- [Remplacer du texte - Façades](/pdf/fr/net/replace-text-facades/)
+- [Travailler avec des pièces jointes - Façades](/pdf/fr/net/working-with-attachments-facades/)
+- [Définir la préférence du visualiseur d'un fichier PDF existant](/pdf/fr/net/set-viewer-preference-of-an-existing-pdf-file/)
+- [Obtenir la préférence du visualiseur d'un fichier PDF existant](/pdf/fr/net/get-viewer-preference-of-an-existing-pdf-file/)
+- [Ajouter des annotations à un fichier PDF existant](/pdf/fr/net/adding-annotations-to-existing-pdf-file/)

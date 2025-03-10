@@ -82,7 +82,7 @@ sitemap:
 
 Les tableaux sont importants lors de la manipulation de documents PDF. Ils offrent d'excellentes fonctionnalités pour afficher des informations de manière systématique. L'espace de noms Aspose.PDF contient des classes nommées [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), et [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) qui fournissent des fonctionnalités pour créer des tableaux lors de la génération de documents PDF à partir de zéro.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Un tableau peut être créé en créant un objet de la classe Table.
 

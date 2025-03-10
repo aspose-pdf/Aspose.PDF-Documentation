@@ -103,25 +103,25 @@ et bien plus encore.
 
 ## Chapitres
 
-- [Quoi de neuf](/pdf/net/whatsnew/)
-- [Aperçu](/pdf/net/overview/)
-- [Commencer](/pdf/net/get-started/)
-- [Opérations de base](/pdf/net/basic-operations/)
-- [Conversion de documents](/pdf/net/converting/)
-- [Analyse de documents PDF](/pdf/net/parsing/)
-- [Opérations avancées](/pdf/net/advanced-operations/)
-- [Travailler avec des façades](/pdf/net/working-with-facades)
-- [Utilisation dans d'autres langages](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [Vitrines](/pdf/net/showcases/)
-- [Plugins](/pdf/net/plugins/)
-- [FAQ](/pdf/net/faq/)
+- [Quoi de neuf](/pdf/fr/net/whatsnew/)
+- [Aperçu](/pdf/fr/net/overview/)
+- [Commencer](/pdf/fr/net/get-started/)
+- [Opérations de base](/pdf/fr/net/basic-operations/)
+- [Conversion de documents](/pdf/fr/net/converting/)
+- [Analyse de documents PDF](/pdf/fr/net/parsing/)
+- [Opérations avancées](/pdf/fr/net/advanced-operations/)
+- [Travailler avec des façades](/pdf/fr/net/working-with-facades)
+- [Utilisation dans d'autres langages](/pdf/fr/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [Vitrines](/pdf/fr/net/showcases/)
+- [Plugins](/pdf/fr/net/plugins/)
+- [FAQ](/pdf/fr/net/faq/)
 - [Notes de version](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Ressources Aspose.PDF for .NET
 
 Voici les liens vers quelques ressources utiles dont vous pourriez avoir besoin pour accomplir vos tâches.
 
-- [Fonctionnalités de Aspose.PDF for .NET](/pdf/net/key-features/)
+- [Fonctionnalités de Aspose.PDF for .NET](/pdf/fr/net/key-features/)
 - [Notes de version de Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/release-notes/)
 - [Page produit de Aspose.PDF for .NET](https://products.aspose.com/pdf/net/)
 - [Télécharger Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/)

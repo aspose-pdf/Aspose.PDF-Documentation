@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Ajout d'images et de texte à l'aide de la classe PdfFileMend](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
+- [Ajout d'images et de texte à l'aide de la classe PdfFileMend](/pdf/fr/net/adding-images-and-text-using-pdffilemend-class/)

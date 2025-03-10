@@ -83,24 +83,24 @@ Explorez les fonctionnalités et les exigences les plus basiques de la biblioth�
 
 Pour en savoir plus sur Aspose.PDF, sélectionnez la section appropriée :
 
-- [Pourquoi Aspose.PDF](/pdf/net/why-aspose-pdf/) – décrit les raisons pour lesquelles il pourrait être préférable d'utiliser les produits Aspose plutôt que d'autres produits, par exemple, Microsoft Office Automation ou Open XML SDK.
-- [Installation](/pdf/net/installation/) – fournit des informations sur la façon d'installer Aspose.PDF.
-- [Exigences système](/pdf/net/system-requirements/) – fournit des informations sur les exigences du système et de l'environnement de développement.
-- [Hello World](/pdf/net/hello-world-example/) – fournit des informations sur la façon de créer un document PDF simple en utilisant C# et Aspose.PDF.
-- [Comment exécuter les exemples](/pdf/net/how-to-run-other-examples/) – décrit comment télécharger et exécuter les exemples et quelles doivent être les exigences logicielles.
-- [PDF complexe](/pdf/net/complex-pdf-example/) – décrit comment créer un document plus complexe avec la bibliothèque C#.
-- [Formats de document pris en charge](/pdf/net/supported-file-formats/) – fournit des informations sur les formats pris en charge.
-- [Fonctionnalités prises en charge](/pdf/net/key-features/) – fournit des informations sur les fonctionnalités prises en charge lors du chargement ou de l'enregistrement d'un document dans divers formats.
-- [Licences et abonnements](/pdf/net/licensing/) – fournit des informations sur l'application d'une licence et l'utilisation de plusieurs produits Aspose.
-- [Support technique](/pdf/net/technical-support/) – Cette page donne des recommandations pour résoudre rapidement et efficacement vos tâches.
-- [Comment exécuter Aspose.PDF dans Docker](/pdf/net/docker/) – fournit des informations sur la façon d'utiliser Aspose.PDF dans un conteneur Docker.
-- [Aperçu d'Aspose.PDF.Drawing pour .NET](/pdf/net/drawing/) – fournit des informations sur la façon d'utiliser la bibliothèque Aspose.Drawing au lieu de System.Drawing.
-- [Bases de l'API DOM d'Aspose.PDF](/pdf/net/basics-of-dom-api/) – cette section montrera les fonctionnalités de travail avec le DOM, la forme de présentation des documents structurés comme un modèle orienté objet.
-- [Fonctionnalités avancées](/pdf/net/advanced-features/) – cette section montrera les fonctionnalités avancées de travail avec PDF.
+- [Pourquoi Aspose.PDF](/pdf/fr/net/why-aspose-pdf/) – décrit les raisons pour lesquelles il pourrait être préférable d'utiliser les produits Aspose plutôt que d'autres produits, par exemple, Microsoft Office Automation ou Open XML SDK.
+- [Installation](/pdf/fr/net/installation/) – fournit des informations sur la façon d'installer Aspose.PDF.
+- [Exigences système](/pdf/fr/net/system-requirements/) – fournit des informations sur les exigences du système et de l'environnement de développement.
+- [Hello World](/pdf/fr/net/hello-world-example/) – fournit des informations sur la façon de créer un document PDF simple en utilisant C# et Aspose.PDF.
+- [Comment exécuter les exemples](/pdf/fr/net/how-to-run-other-examples/) – décrit comment télécharger et exécuter les exemples et quelles doivent être les exigences logicielles.
+- [PDF complexe](/pdf/fr/net/complex-pdf-example/) – décrit comment créer un document plus complexe avec la bibliothèque C#.
+- [Formats de document pris en charge](/pdf/fr/net/supported-file-formats/) – fournit des informations sur les formats pris en charge.
+- [Fonctionnalités prises en charge](/pdf/fr/net/key-features/) – fournit des informations sur les fonctionnalités prises en charge lors du chargement ou de l'enregistrement d'un document dans divers formats.
+- [Licences et abonnements](/pdf/fr/net/licensing/) – fournit des informations sur l'application d'une licence et l'utilisation de plusieurs produits Aspose.
+- [Support technique](/pdf/fr/net/technical-support/) – Cette page donne des recommandations pour résoudre rapidement et efficacement vos tâches.
+- [Comment exécuter Aspose.PDF dans Docker](/pdf/fr/net/docker/) – fournit des informations sur la façon d'utiliser Aspose.PDF dans un conteneur Docker.
+- [Aperçu d'Aspose.PDF.Drawing pour .NET](/pdf/fr/net/drawing/) – fournit des informations sur la façon d'utiliser la bibliothèque Aspose.Drawing au lieu de System.Drawing.
+- [Bases de l'API DOM d'Aspose.PDF](/pdf/fr/net/basics-of-dom-api/) – cette section montrera les fonctionnalités de travail avec le DOM, la forme de présentation des documents structurés comme un modèle orienté objet.
+- [Fonctionnalités avancées](/pdf/fr/net/advanced-features/) – cette section montrera les fonctionnalités avancées de travail avec PDF.
 
 ## En savoir plus sur
 
-- [Bases de l'API DOM](/pdf/net/basics-of-dom-api/)
-- [Exemple C# "Hello, World"](/pdf/net/hello-world-example/)
-- [PDF complexe](/pdf/net/complex-pdf-example/)
-- [Comment exécuter d'autres exemples](/pdf/net/how-to-run-other-examples/)
+- [Bases de l'API DOM](/pdf/fr/net/basics-of-dom-api/)
+- [Exemple C# "Hello, World"](/pdf/fr/net/hello-world-example/)
+- [PDF complexe](/pdf/fr/net/complex-pdf-example/)
+- [Comment exécuter d'autres exemples](/pdf/fr/net/how-to-run-other-examples/)

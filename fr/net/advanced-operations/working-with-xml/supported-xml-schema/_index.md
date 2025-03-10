@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Aspose.PDF for .NET utilise le schéma XML suivant pour travailler avec des documents XML :
 

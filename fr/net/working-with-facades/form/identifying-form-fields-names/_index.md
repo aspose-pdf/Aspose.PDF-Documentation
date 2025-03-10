@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/net/) fournit la capacité de créer, modifier et remplir des formulaires PDF déjà créés. Le namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) contient la classe [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), qui contient la fonction nommée [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) et qui prend deux arguments, à savoir le nom du champ et la valeur du champ. Donc, pour remplir les champs du formulaire, vous devez connaître le nom exact du champ de formulaire.
+[Aspose.PDF for .NET](/pdf/fr/net/) fournit la capacité de créer, modifier et remplir des formulaires PDF déjà créés. Le namespace [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) contient la classe [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), qui contient la fonction nommée [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) et qui prend deux arguments, à savoir le nom du champ et la valeur du champ. Donc, pour remplir les champs du formulaire, vous devez connaître le nom exact du champ de formulaire.
 
 ## Détails de mise en œuvre
 

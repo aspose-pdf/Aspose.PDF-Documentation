@@ -82,7 +82,7 @@ sitemap:
 
 Vous pouvez utiliser la classe ImageStamp pour ajouter un tampon d'image à un fichier PDF. La classe ImageStamp fournit les propriétés nécessaires pour créer un tampon basé sur une image, telles que la hauteur, la largeur, l'opacité, etc.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour ajouter un tampon d'image :
 

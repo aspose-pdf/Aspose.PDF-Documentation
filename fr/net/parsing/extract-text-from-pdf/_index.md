@@ -14,6 +14,6 @@ sitemap:
 ---
 ## Articles dans cette section
 
-- [Extraire du texte d'un PDF](/pdf/net/extract-text-from-all-pdf/)
-- [Extraire un paragraphe d'un PDF](/pdf/net/extract-paragraph-from-pdf/)
-- [Extraire le texte des super-scripts et des sous-scripts d'un PDF](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [Extraire du texte d'un PDF](/pdf/fr/net/extract-text-from-all-pdf/)
+- [Extraire un paragraphe d'un PDF](/pdf/fr/net/extract-paragraph-from-pdf/)
+- [Extraire le texte des super-scripts et des sous-scripts d'un PDF](/pdf/fr/net/extract-superscripts-subscripts-from-pdf/)

@@ -81,7 +81,7 @@ sitemap:
 
 ## Ajout d'une annotation de lien dans un fichier PDF existant
 
-> Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+> Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Une [annotation de lien](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) représente un hyperlien, une destination ailleurs et un document. Selon la norme PDF, l'annotation de lien peut être utilisée dans trois cas : ouvrir la vue de page, ouvrir un fichier et ouvrir une page web.
 

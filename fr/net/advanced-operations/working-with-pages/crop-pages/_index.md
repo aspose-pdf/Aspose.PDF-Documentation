@@ -90,7 +90,7 @@ Chaque page d'un fichier PDF possède un certain nombre de propriétés, telles 
 - **Page.Rect** : l'intersection (rectangle communément visible) de la MediaBox et de la DropBox. L'image ci-dessous illustre ces propriétés.
 Pour plus de détails, veuillez visiter [cette page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+L'extrait de code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 L'extrait ci-dessous montre comment rogner la page :
 

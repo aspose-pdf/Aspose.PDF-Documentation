@@ -81,7 +81,7 @@ sitemap:
 
 Nous cherchons toujours un moyen de générer des documents PDF et de travailler avec eux dans des projets C# de manière plus précise, exacte et efficace. Avoir des fonctions faciles à utiliser d'une bibliothèque nous permet de nous concentrer davantage sur le travail, et moins sur les détails chronophages de la génération de PDF, que ce soit dans .NET.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Créer (ou générer) un document PDF en utilisant le langage C#
 

@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET permet de créer un tableau dans des documents PDF tagués. Pour travailler avec des tableaux, l'API fournit la classe [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Afin de créer un tableau, vous pouvez utiliser la méthode [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) de l'interface [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). De plus, vous pouvez utiliser les méthodes [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) et [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) de la classe TableElement pour créer respectivement l'en-tête, le corps et le pied de tableau. Pour créer une ligne de tableau, vous pouvez utiliser la méthode [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) de la classe [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Vous pouvez également vérifier si le document PDF créé est conforme à la norme PDF/UA en utilisant la méthode Validate() de la classe Document.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Le code suivant montre comment créer un tableau dans le document PDF tagué :
 

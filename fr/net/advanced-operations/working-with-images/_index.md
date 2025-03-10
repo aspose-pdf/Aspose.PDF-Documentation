@@ -87,18 +87,18 @@ Les images peuvent être un sujet assez complexe dans le format PDF. Une grande 
 
 Vous pouvez faire ce qui suit :
 
-- [Ajouter une image à un fichier PDF existant](/pdf/net/add-image-to-existing-pdf-file/) - ajouter des images et des références d'une seule image dans un document PDF, puis contrôler la qualité.
-- [Supprimer des images d'un fichier PDF](/pdf/net/delete-images-from-pdf-file/) - vérifiez le code d'exemple pour supprimer des images d'un fichier PDF.
-- [Extraire des images d'un fichier PDF](/pdf/net/extract-images-from-pdf-file/) - utilisez la collection d'images pour extraire des images d'un fichier PDF.
-- [Obtenir la résolution et les dimensions des images intégrées](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - utilisez les classes d'opérateurs dans l'espace de noms Aspose.PDF qui fournissent la capacité d'obtenir des informations sur la résolution et les dimensions.
-- [Travailler avec le placement d'images](/pdf/net/working-with-image-placement/) - il est possible d'obtenir la résolution et la position d'une image dans un document PDF.
-- [Rechercher et obtenir des images d'un document PDF](/pdf/net/search-and-get-images-from-pdf-document/) - vous pouvez obtenir une image d'une page individuelle et rechercher parmi les images sur toutes les pages avec C#.
-- [Remplacer une image dans un fichier PDF existant](/pdf/net/replace-image-in-existing-pdf-file/) - vérifiez notre code d'exemple, il vous montre comment remplacer une image dans un fichier PDF.
-- [Définir la taille d'une image](/pdf/net/set-image-size/) - la bibliothèque C# vous permet de définir la taille d'une image.
-- [Définir le nom de police par défaut](/pdf/net/set-default-font-name/) - Définir le nom de police par défaut pour le processus de conversion.
-- [Générer des images miniatures à partir de documents PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - le prochain article montre comment générer des images miniatures à partir de documents PDF en utilisant d'abord le SDK Acrobat puis Aspose.PDF.
-- Support pour les images DICOM - Aspose.PDF for .NET prend en charge la norme graphique médicale spéciale des images. Aspose.PDF for .NET vous permet de convertir des images DICOM et SVG. Veuillez consulter la section [Convertir DICOM en PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
-- [Travailler avec des graphiques vectoriels](/pdf/net/working-with-vector-graphics) - cette section décrit les fonctionnalités de travail avec l'outil GraphicsAbsorber en utilisant C#.
+- [Ajouter une image à un fichier PDF existant](/pdf/fr/net/add-image-to-existing-pdf-file/) - ajouter des images et des références d'une seule image dans un document PDF, puis contrôler la qualité.
+- [Supprimer des images d'un fichier PDF](/pdf/fr/net/delete-images-from-pdf-file/) - vérifiez le code d'exemple pour supprimer des images d'un fichier PDF.
+- [Extraire des images d'un fichier PDF](/pdf/fr/net/extract-images-from-pdf-file/) - utilisez la collection d'images pour extraire des images d'un fichier PDF.
+- [Obtenir la résolution et les dimensions des images intégrées](/pdf/fr/net/get-resolution-and-dimensions-of-embedded-images/) - utilisez les classes d'opérateurs dans l'espace de noms Aspose.PDF qui fournissent la capacité d'obtenir des informations sur la résolution et les dimensions.
+- [Travailler avec le placement d'images](/pdf/fr/net/working-with-image-placement/) - il est possible d'obtenir la résolution et la position d'une image dans un document PDF.
+- [Rechercher et obtenir des images d'un document PDF](/pdf/fr/net/search-and-get-images-from-pdf-document/) - vous pouvez obtenir une image d'une page individuelle et rechercher parmi les images sur toutes les pages avec C#.
+- [Remplacer une image dans un fichier PDF existant](/pdf/fr/net/replace-image-in-existing-pdf-file/) - vérifiez notre code d'exemple, il vous montre comment remplacer une image dans un fichier PDF.
+- [Définir la taille d'une image](/pdf/fr/net/set-image-size/) - la bibliothèque C# vous permet de définir la taille d'une image.
+- [Définir le nom de police par défaut](/pdf/fr/net/set-default-font-name/) - Définir le nom de police par défaut pour le processus de conversion.
+- [Générer des images miniatures à partir de documents PDF](/pdf/fr/net/generate-thumbnail-images-from-pdf-documents/) - le prochain article montre comment générer des images miniatures à partir de documents PDF en utilisant d'abord le SDK Acrobat puis Aspose.PDF.
+- Support pour les images DICOM - Aspose.PDF for .NET prend en charge la norme graphique médicale spéciale des images. Aspose.PDF for .NET vous permet de convertir des images DICOM et SVG. Veuillez consulter la section [Convertir DICOM en PDF](/pdf/fr/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
+- [Travailler avec des graphiques vectoriels](/pdf/fr/net/working-with-vector-graphics) - cette section décrit les fonctionnalités de travail avec l'outil GraphicsAbsorber en utilisant C#.
 
 <script type="application/ld+json">
 {

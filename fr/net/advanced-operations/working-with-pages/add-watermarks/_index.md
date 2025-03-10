@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** permet d'ajouter des filigranes à votre document PDF en utilisant des artefacts. Veuillez consulter cet article pour résoudre votre tâche.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Un filigrane créé avec Adobe Acrobat est appelé un artefact (comme décrit dans 14.8.2.2 Contenu réel et artefacts de la spécification PDF). Afin de travailler avec des artefacts, Aspose.PDF a deux classes : [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) et [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

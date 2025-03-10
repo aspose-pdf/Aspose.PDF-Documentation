@@ -10,8 +10,8 @@ url: /fr/net/cpp-via-com-interop/
 
 Cette section contient les sujets suivants
 
-- [Utiliser le liaison précoce en C++](/pdf/net/using-early-binding-in-cpp/)
-- [Utiliser le liaison tardive en C++](/pdf/net/using-late-binding-in-cpp/)
-- [Utiliser un wrapper en C++](/pdf/net/using-wrapper-in-cpp/)
+- [Utiliser le liaison précoce en C++](/pdf/fr/net/using-early-binding-in-cpp/)
+- [Utiliser le liaison tardive en C++](/pdf/fr/net/using-late-binding-in-cpp/)
+- [Utiliser un wrapper en C++](/pdf/fr/net/using-wrapper-in-cpp/)
 
 {{% /alert %}}

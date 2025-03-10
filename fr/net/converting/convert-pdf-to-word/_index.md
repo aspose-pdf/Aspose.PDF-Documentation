@@ -100,7 +100,7 @@ _Format_: **Word**
 - [C# Convertir PDF en Word](#csharp-pdf-to-doc)
 - [C# Comment convertir un fichier PDF en Word](#csharp-pdf-to-docx)
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Conversion PDF en DOC et DOCX
 
@@ -179,7 +179,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NET vous présente une application en ligne gratuite ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-[![Convertir PDF en DOC](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![Convertir PDF en DOC](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## Convertir un fichier PDF en DOCX (Microsoft Word 2007-2024)
@@ -243,7 +243,7 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NET vous présente une application en ligne gratuite ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-[![Application gratuite de conversion PDF en Word Aspose.PDF](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Application gratuite de conversion PDF en Word Aspose.PDF](/pdf/fr/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

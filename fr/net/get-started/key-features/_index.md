@@ -81,11 +81,11 @@ sitemap:
 
 ## Logiciel multiplateforme
 
-Prend en charge diverses plateformes et versions .NET. Voir [Exigences système](/pdf/net/system-requirements/) pour plus de détails.
+Prend en charge diverses plateformes et versions .NET. Voir [Exigences système](/pdf/fr/net/system-requirements/) pour plus de détails.
 
 ## Caractéristiques générales
 
-Aspose.PDF fournit un puissant modèle d'objet de document (DOM) pour explorer et modifier tous les types de contenu PDF. Prend en charge le chargement et l'enregistrement dans une large liste de [formats de fichiers](/pdf/net/supported-file-formats/).
+Aspose.PDF fournit un puissant modèle d'objet de document (DOM) pour explorer et modifier tous les types de contenu PDF. Prend en charge le chargement et l'enregistrement dans une large liste de [formats de fichiers](/pdf/fr/net/supported-file-formats/).
 
 ## Normes PDF prises en charge
 

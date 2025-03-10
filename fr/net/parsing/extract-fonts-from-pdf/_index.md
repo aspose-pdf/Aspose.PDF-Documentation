@@ -80,7 +80,7 @@ sitemap:
 
 Dans le cas où vous souhaitez obtenir toutes les polices d'un document PDF, vous pouvez utiliser la méthode FontUtilities.GetAllFonts() fournie dans la classe Document. Veuillez consulter le code suivant afin d'obtenir toutes les polices d'un document PDF existant :
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
   
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

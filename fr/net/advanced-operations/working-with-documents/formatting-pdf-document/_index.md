@@ -97,7 +97,7 @@ Ouvrez le fichier PDF en utilisant la classe [Document](https://reference.aspose
 - PageLayout – La mise en page de la page.
 - PageMode – Comment le document est affiché lors de sa première ouverture. Les options sont afficher les vignettes, plein écran, afficher le panneau des pièces jointes.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Le code suivant vous montre comment obtenir les propriétés en utilisant la classe [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 

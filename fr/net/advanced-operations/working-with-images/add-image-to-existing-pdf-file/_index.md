@@ -80,7 +80,7 @@ lastmod: "2022-02-17"
 
 Chaque page PDF contient des propriétés de ressources et de contenu. Les ressources peuvent être des images et des formulaires par exemple, tandis que le contenu est représenté par un ensemble d'opérateurs PDF. Chaque opérateur a son nom et son argument. Cet exemple utilise des opérateurs pour ajouter une image à un fichier PDF.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour ajouter une image à un fichier PDF existant :
 

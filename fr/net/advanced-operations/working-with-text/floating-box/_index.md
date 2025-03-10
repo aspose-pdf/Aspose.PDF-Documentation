@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-Cette fonctionnalité fonctionne également dans la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Cette fonctionnalité fonctionne également dans la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Principes de base de l'utilisation de l'outil FloatingBox
 

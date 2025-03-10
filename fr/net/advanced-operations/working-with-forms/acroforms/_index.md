@@ -100,14 +100,14 @@ Les AcroForms ont des capacités qui ne se trouvent pas dans XFA et inversement,
 
 Pour un apprentissage plus détaillé des capacités de la bibliothèque Java, consultez les articles suivants :
 
-- [Créer AcroForm](/pdf/net/create-form) - créer un formulaire à partir de zéro avec C#.
-- [Remplir AcroForm](/pdf/net/fill-form) - remplir le champ de formulaire dans votre document PDF.
-- [Extraire AcroForm](/pdf/net/extract-form) - obtenir la valeur de tous ou d'un champ individuel du document PDF.
-- [Modifier AcroForm](/pdf/net/modifing-form) - obtenir ou définir FieldLimit, définir la police du champ de formulaire, etc.
-- [Publier des données AcroForm](/pdf/net/posting-acroform-data/) - importer et exporter des données de formulaire vers un fichier XML.
-- [Importer et exporter des données](/pdf/net/import-and-export-data/) - importer et exporter des données en utilisant la classe Form.
-- [Supprimer des formulaires du PDF](/pdf/net/remove-form/) - supprimer du texte basé sur le sous-type/formulaire, supprimer tous les formulaires.
-- [Importer et exporter des données en JSON](/pdf/net/import-export-json/) - importer et exporter des données avec JSON
+- [Créer AcroForm](/pdf/fr/net/create-form) - créer un formulaire à partir de zéro avec C#.
+- [Remplir AcroForm](/pdf/fr/net/fill-form) - remplir le champ de formulaire dans votre document PDF.
+- [Extraire AcroForm](/pdf/fr/net/extract-form) - obtenir la valeur de tous ou d'un champ individuel du document PDF.
+- [Modifier AcroForm](/pdf/fr/net/modifing-form) - obtenir ou définir FieldLimit, définir la police du champ de formulaire, etc.
+- [Publier des données AcroForm](/pdf/fr/net/posting-acroform-data/) - importer et exporter des données de formulaire vers un fichier XML.
+- [Importer et exporter des données](/pdf/fr/net/import-and-export-data/) - importer et exporter des données en utilisant la classe Form.
+- [Supprimer des formulaires du PDF](/pdf/fr/net/remove-form/) - supprimer du texte basé sur le sous-type/formulaire, supprimer tous les formulaires.
+- [Importer et exporter des données en JSON](/pdf/fr/net/import-export-json/) - importer et exporter des données avec JSON
 
 <script type="application/ld+json">
 {

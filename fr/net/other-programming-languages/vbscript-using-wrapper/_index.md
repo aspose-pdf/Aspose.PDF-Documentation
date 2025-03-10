@@ -77,7 +77,7 @@ description: Explorez comment utiliser Aspose.PDF for .NET dans des applications
 
 ## Prérequis Veuillez enregistrer Aspose.PDF for .NET avec COM Interop, veuillez consulter l'article intitulé
 
-[Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+[Utiliser Aspose.pdf pour .NET via COM Interop](/pdf/fr/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

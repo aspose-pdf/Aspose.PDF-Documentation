@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [Créer des liens](/pdf/net/create-links/) - apprenez simplement à créer des liens dans votre fichier PDF en utilisant C#.
-- [Mettre à jour des liens](/pdf/net/update-links/) - essayez de définir la cible vers le PDF, essayez de définir la destination du lien vers une adresse web, essayez de définir la cible du lien vers un autre fichier PDF, mettez à jour la couleur du texte du lien.
-- [Extraire des liens](/pdf/net/extract-links) - extraire des liens du fichier PDF en utilisant la classe AnnotationSelector.
+- [Créer des liens](/pdf/fr/net/create-links/) - apprenez simplement à créer des liens dans votre fichier PDF en utilisant C#.
+- [Mettre à jour des liens](/pdf/fr/net/update-links/) - essayez de définir la cible vers le PDF, essayez de définir la destination du lien vers une adresse web, essayez de définir la cible du lien vers un autre fichier PDF, mettez à jour la couleur du texte du lien.
+- [Extraire des liens](/pdf/fr/net/extract-links) - extraire des liens du fichier PDF en utilisant la classe AnnotationSelector.
 
 <script type="application/ld+json">
 {

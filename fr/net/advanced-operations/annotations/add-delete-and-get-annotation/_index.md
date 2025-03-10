@@ -85,13 +85,13 @@ Ce sont des objets supplémentaires que vous ajoutez à votre fichier pour enric
 
 Nous avons regroupé les différents types d'annotations disponibles pour la bibliothèque Aspose.PDF for .NET en groupes :
 
-- [Annotation de Texte PDF](/pdf/net/text-annotation/)
-- [Annotation de Surlignage PDF](/pdf/net/highlights-annotation/)
-- [Annotation de Figures PDF](/pdf/net/figures-annotation/)
-- [Annotation Multimédia](/pdf/net/multimedia-annotation/)
-- [Annotations Collantes PDF](/pdf/net/sticky-annotations/)
-- [Annotations de Lien](/pdf/net/link-annotations/)
-- [Annotations Supplémentaires](/pdf/net/extra-annotations/)
+- [Annotation de Texte PDF](/pdf/fr/net/text-annotation/)
+- [Annotation de Surlignage PDF](/pdf/fr/net/highlights-annotation/)
+- [Annotation de Figures PDF](/pdf/fr/net/figures-annotation/)
+- [Annotation Multimédia](/pdf/fr/net/multimedia-annotation/)
+- [Annotations Collantes PDF](/pdf/fr/net/sticky-annotations/)
+- [Annotations de Lien](/pdf/fr/net/link-annotations/)
+- [Annotations Supplémentaires](/pdf/fr/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

@@ -97,9 +97,9 @@ Les exemples suivants ont été testés avec :
 
 ### Générer un document PDF en utilisant ASP.NET Core Web App dans un conteneur Linux
 
-Nous utiliserons le code de l'**Exemple complexe** dans cette application. Veuillez suivre [ce lien](/pdf/net/complex-pdf-example/) pour une explication plus détaillée.
+Nous utiliserons le code de l'**Exemple complexe** dans cette application. Veuillez suivre [ce lien](/pdf/fr/net/complex-pdf-example/) pour une explication plus détaillée.
 
-1. Créez un dossier `images` dans le dossier `wwwroot` et mettez l'image `logo.png`. Vous pouvez télécharger cette image [ici](/pdf/net/docker/logo.png).
+1. Créez un dossier `images` dans le dossier `wwwroot` et mettez l'image `logo.png`. Vous pouvez télécharger cette image [ici](/pdf/fr/net/docker/logo.png).
 1. Créez un dossier `fonts` dans le dossier `wwwroot` et mettez les polices [Roboto](https://fonts.google.com/specimen/Roboto) là-dedans.
 1. Créez un dossier `samples` dans le dossier `wwwroot` et mettez les données d'exemple là-dedans.
 1. Remplacez le code dans `HomeController.cs` par le snippet suivant (veuillez noter que vous pouvez avoir un autre espace de noms) :

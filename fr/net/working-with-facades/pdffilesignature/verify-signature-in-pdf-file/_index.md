@@ -77,7 +77,7 @@ draft: false
 
 ## Vérifier si le fichier PDF est signé à l'aide d'une signature
 
-Pour vérifier si un fichier PDF est signé à l'aide d'une [signature particulière](/pdf/net/working-with-signature-in-a-pdf-file/), utilisez la méthode VerifySigned de la classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Cette méthode nécessite le nom de la signature et renvoie true si le PDF est signé avec ce nom de signature. Il est également possible de vérifier qu'un [PDF est signé](/pdf/net/working-with-signature-in-a-pdf-file/), sans vérifier avec quelle signature il est signé.
+Pour vérifier si un fichier PDF est signé à l'aide d'une [signature particulière](/pdf/fr/net/working-with-signature-in-a-pdf-file/), utilisez la méthode VerifySigned de la classe [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). Cette méthode nécessite le nom de la signature et renvoie true si le PDF est signé avec ce nom de signature. Il est également possible de vérifier qu'un [PDF est signé](/pdf/fr/net/working-with-signature-in-a-pdf-file/), sans vérifier avec quelle signature il est signé.
 
 ### Vérifier qu'un PDF est signé avec une signature donnée
 

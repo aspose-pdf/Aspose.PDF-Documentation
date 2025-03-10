@@ -83,9 +83,9 @@ Un tampon dans un document PDF est analogue à l'application d'un tampon en caou
 
 Consultez les sections suivantes pour apprendre à ajouter un tampon avec C# :
 
-- [Ajouter des tampons d'image dans la page PDF](/pdf/net/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image en arrière-plan de votre fichier PDF.
-- [Ajouter des tampons de texte dans le fichier PDF](/pdf/net/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte de contour comme tampon dans le fichier PDF.
-- [Tampons de page dans le fichier PDF](/pdf/net/page-stamps-in-the-pdf-file/) - ajouter un tampon de page au document PDF en utilisant la classe PdfPageStamp.
+- [Ajouter des tampons d'image dans la page PDF](/pdf/fr/net/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image en arrière-plan de votre fichier PDF.
+- [Ajouter des tampons de texte dans le fichier PDF](/pdf/fr/net/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte de contour comme tampon dans le fichier PDF.
+- [Tampons de page dans le fichier PDF](/pdf/fr/net/page-stamps-in-the-pdf-file/) - ajouter un tampon de page au document PDF en utilisant la classe PdfPageStamp.
 
 <script type="application/ld+json">
 {

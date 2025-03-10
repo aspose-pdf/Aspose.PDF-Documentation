@@ -82,8 +82,8 @@ sitemap:
 Cette section décrit une approche rapide et simple pour compléter programmatique un document PDF grâce à l'utilisation de l'Aspose.PDF. La section discute également de la manière dont on pourrait utiliser le Aspose.PDF for .NET pour découvrir et mapper les champs disponibles dans un PDF existant avec des AcroForms. 
 De plus, vous apprendrez à travailler avec XFA - une autre technologie pour les formulaires de présentation basés sur XML.
 
-- [AcroForms](/pdf/net/acroforms/) - créer un formulaire, remplir un champ de formulaire, extraire des données du formulaire, ajouter et supprimer des champs dans votre PDF avec la bibliothèque .NET.
-- [XFA Forms](/pdf/net/xfa-forms/) - remplir des champs XFA, convertir XFA, obtenir les propriétés des champs XFA.
+- [AcroForms](/pdf/fr/net/acroforms/) - créer un formulaire, remplir un champ de formulaire, extraire des données du formulaire, ajouter et supprimer des champs dans votre PDF avec la bibliothèque .NET.
+- [XFA Forms](/pdf/fr/net/xfa-forms/) - remplir des champs XFA, convertir XFA, obtenir les propriétés des champs XFA.
 
 <script type="application/ld+json">
 {

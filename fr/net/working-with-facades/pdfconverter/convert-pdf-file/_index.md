@@ -145,4 +145,4 @@ private static void ConvertPdfPagesToImages02()
 
 ## Voir aussi
 
-Aspose.PDF for .NET permet de convertir des documents PDF en divers formats et également de convertir d'autres formats en PDF. De plus, vous pouvez vérifier la qualité de la conversion Aspose.PDF et visualiser les résultats en ligne avec l'application de conversion Aspose.PDF. Apprenez la section [Conversion](/pdf/net/converting/) pour résoudre vos tâches.
+Aspose.PDF for .NET permet de convertir des documents PDF en divers formats et également de convertir d'autres formats en PDF. De plus, vous pouvez vérifier la qualité de la conversion Aspose.PDF et visualiser les résultats en ligne avec l'application de conversion Aspose.PDF. Apprenez la section [Conversion](/pdf/fr/net/converting/) pour résoudre vos tâches.

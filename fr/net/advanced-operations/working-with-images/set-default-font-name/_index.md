@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API vous permet de définir un nom de police par défaut lorsqu'une police n'est pas disponible dans le document. Vous pouvez utiliser la propriété DefaultFontName de la classe RenderingOptions pour définir le nom de police par défaut. Si DefaultFontName est défini sur null, la police **Times New Roman** sera utilisée. Le code suivant montre comment définir un nom de police par défaut lors de l'enregistrement d'un PDF en tant qu'image :
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

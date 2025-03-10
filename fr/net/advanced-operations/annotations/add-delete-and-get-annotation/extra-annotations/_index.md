@@ -83,7 +83,7 @@ sitemap:
 
 L'annotation de caret est un symbole qui indique l'édition de texte. L'annotation de caret est également une annotation de balisage, donc la classe Caret dérive de la classe Markup et fournit également des fonctions pour obtenir ou définir les propriétés de l'annotation de caret et réinitialiser l'apparence de l'annotation de caret.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Étapes pour créer une annotation de caret :
 

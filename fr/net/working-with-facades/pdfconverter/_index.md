@@ -12,5 +12,5 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-- [Fusionner des images](/pdf/net/merge-images/)
-- [Convertir un fichier PDF](/pdf/net/convert-pdf-file/)
+- [Fusionner des images](/pdf/fr/net/merge-images/)
+- [Convertir un fichier PDF](/pdf/fr/net/convert-pdf-file/)

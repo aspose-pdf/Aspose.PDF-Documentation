@@ -80,7 +80,7 @@ sitemap:
 
 ## Attacher ZUGFeRD au PDF
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Nous recommandons de suivre les étapes suivantes pour attacher ZUGFeRD au PDF :
 

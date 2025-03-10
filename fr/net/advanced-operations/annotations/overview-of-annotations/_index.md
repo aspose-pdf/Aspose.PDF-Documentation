@@ -83,28 +83,28 @@ Le tableau suivant indique les types d'annotations que Aspose.PDF for .NET prend
 
 |**Type d'annotation**|**Description**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|Annotation de texte|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|Annotations de lien|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) Annotation de texte libre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) Annotation de ligne|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) Annotation carrée|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) Annotation circulaire|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) Annotation polygonale|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) Annotation de polyligne|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/net/highlights-annotation/)|(PDF 1.3) Annotation de surlignage|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/net/highlights-annotation/)|(PDF 1.3) Annotation de soulignement|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Squiggly](/pdf/net/highlights-annotation/)|(PDF 1.4) Annotation de soulignement ondulé|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/net/highlights-annotation/)|(PDF 1.3) Annotation de barré|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Stamp](/pdf/net/stamping/)|(PDF 1.3) Annotation de tampon|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) Annotation de caret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ink](/pdf/net/figures-annotation/)|(PDF 1.3) Annotation d'encre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Popup](/pdf/net/text-annotation/)|(PDF 1.3) Annotation contextuelle|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/net/multimedia-annotation/)|(PDF 1.2) Annotation sonore|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) Annotation de film|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) Annotation de widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) Annotation d'écran|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) Annotation de filigrane|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) Annotation de censure|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Text](/pdf/fr/net/text-annotation/)|Annotation de texte|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/fr/net/extra-annotations/)|Annotations de lien|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/fr/net/text-annotation/)|(PDF 1.3) Annotation de texte libre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/fr/net/figures-annotation/)|(PDF 1.3) Annotation de ligne|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/fr/net/figures-annotation/)|(PDF 1.3) Annotation carrée|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/fr/net/figures-annotation/)|(PDF 1.3) Annotation circulaire|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/fr/net/figures-annotation/)|(PDF 1.5) Annotation polygonale|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/fr/net/figures-annotation/)|(PDF 1.5) Annotation de polyligne|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/fr/net/highlights-annotation/)|(PDF 1.3) Annotation de surlignage|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/fr/net/highlights-annotation/)|(PDF 1.3) Annotation de soulignement|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/fr/net/highlights-annotation/)|(PDF 1.4) Annotation de soulignement ondulé|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/fr/net/highlights-annotation/)|(PDF 1.3) Annotation de barré|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Stamp](/pdf/fr/net/stamping/)|(PDF 1.3) Annotation de tampon|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/fr/net/extra-annotations/)|(PDF 1.5) Annotation de caret|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ink](/pdf/fr/net/figures-annotation/)|(PDF 1.3) Annotation d'encre|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Popup](/pdf/fr/net/text-annotation/)|(PDF 1.3) Annotation contextuelle|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/fr/net/multimedia-annotation/)|(PDF 1.2) Annotation sonore|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/fr/net/multimedia-annotation/)|(PDF 1.2) Annotation de film|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/fr/net/multimedia-annotation/)|(PDF 1.2) Annotation de widget|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/fr/net/multimedia-annotation/)|(PDF 1.5) Annotation d'écran|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/fr/net/sticky-annotations/)|(PDF 1.6) Annotation de filigrane|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/fr/net/extra-annotations/)|(PDF 1.7) Annotation de censure|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

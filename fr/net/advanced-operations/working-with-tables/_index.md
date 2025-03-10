@@ -84,11 +84,11 @@ Les tableaux font partie de nombreux formulaires PDF. Vous trouvez des tableaux 
 
 Vous êtes capable de faire ce qui suit :
 
-- [Créer ou ajouter un tableau dans un document PDF existant](/pdf/net/add-table-in-existing-pdf-document/) - créez votre tableau dans le fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, des marges et du rembourrage.
-- [Extraire un tableau d'un document PDF existant](/pdf/net/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF ou extraire la bordure du tableau en tant qu'image.
-- [Intégrer un tableau avec des sources de données](/pdf/net/integrate-table/) - intégrer un tableau avec une base de données, intégrer un tableau avec la source Entity Framework en utilisant la bibliothèque .NET.
-- [Manipuler des tableaux dans un PDF existant](/pdf/net/manipulate-tables-in-existing-pdf/) - manipuler des tableaux dans votre PDF en utilisant TableAbsorber.
-- [Supprimer des tableaux d'un PDF existant](/pdf/net/remove-tables-from-existing-pdf/) - supprimer un tableau ou plusieurs tableaux d'un document PDF.
+- [Créer ou ajouter un tableau dans un document PDF existant](/pdf/fr/net/add-table-in-existing-pdf-document/) - créez votre tableau dans le fichier PDF en fusionnant les colonnes ou les lignes en tenant compte des bordures, des marges et du rembourrage.
+- [Extraire un tableau d'un document PDF existant](/pdf/fr/net/extract-table-from-existing-pdf-document/) - vous pouvez extraire un tableau d'un fichier PDF ou extraire la bordure du tableau en tant qu'image.
+- [Intégrer un tableau avec des sources de données](/pdf/fr/net/integrate-table/) - intégrer un tableau avec une base de données, intégrer un tableau avec la source Entity Framework en utilisant la bibliothèque .NET.
+- [Manipuler des tableaux dans un PDF existant](/pdf/fr/net/manipulate-tables-in-existing-pdf/) - manipuler des tableaux dans votre PDF en utilisant TableAbsorber.
+- [Supprimer des tableaux d'un PDF existant](/pdf/fr/net/remove-tables-from-existing-pdf/) - supprimer un tableau ou plusieurs tableaux d'un document PDF.
 
 <script type="application/ld+json">
 {

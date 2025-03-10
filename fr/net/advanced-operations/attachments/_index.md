@@ -83,10 +83,10 @@ Dans cette section, nous expliquerons comment travailler avec des pièces jointe
 Une pièce jointe est un fichier supplémentaire qui est attaché à un document parent, il peut s'agir de divers types de fichiers, tels que pdf, word, image ou d'autres fichiers.
 Vous apprendrez comment ajouter des pièces jointes à un pdf, obtenir les informations d'une pièce jointe et l'enregistrer dans un fichier, supprimer la pièce jointe d'un PDF par programmation avec C#.
 
-- [Ajouter une pièce jointe à un document PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Extraire et enregistrer une pièce jointe](/pdf/net/extract-and-save-an-attachment/)
-- [Supprimer une pièce jointe d'un PDF existant](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portfolio](/pdf/net/portfolio/)
+- [Ajouter une pièce jointe à un document PDF](/pdf/fr/net/add-attachment-to-pdf-document/)
+- [Extraire et enregistrer une pièce jointe](/pdf/fr/net/extract-and-save-an-attachment/)
+- [Supprimer une pièce jointe d'un PDF existant](/pdf/fr/net/removing-attachment-from-an-existing-pdf/)
+- [Portfolio](/pdf/fr/net/portfolio/)
 
 <script type="application/ld+json">
 {

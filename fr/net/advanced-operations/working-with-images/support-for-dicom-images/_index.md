@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 La norme DICOM a été développée par la National Electrical Manufacturers Association. Ce format couvre les fonctions de création, de stockage, de transfert et d'impression de cadres d'images individuels, de séries de cadres, d'informations sur les patients, de recherches, d'équipements, d'institutions, de personnel médical effectuant l'examen, et ainsi de suite.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 **Aspose.PDF for .NET** prend en charge la fonctionnalité d'ajout d'images DICOM aux documents PDF. Le code suivant montre comment utiliser cette fonctionnalité.
 

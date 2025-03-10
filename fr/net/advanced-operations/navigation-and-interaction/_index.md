@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [Liens](/pdf/net/links/) - vous pouvez facilement créer, mettre à jour et extraire des liens avec C#.
-- [Actions](/pdf/net/actions/) - il est possible d'ajouter et d'obtenir, de créer des hyperliens vers des fichiers PDF. De plus, dans cet article, vous apprendrez comment supprimer l'action d'ouverture de document d'un fichier PDF et comment spécifier la page PDF lors de la visualisation du document.
-- [Signets](/pdf/net/bookmarks/) - les grandes publications incluent généralement un cadre de signets qui peuvent être facilement visualisés et sélectionnés dans le panneau des signets, vous permettant de cliquer sur un signet pour sauter à la page ou au chapitre qu'il représente. Le panneau des signets est un élément conscient du contenu et est visible dans la barre latérale uniquement si le document PDF ouvert contient une structure de signets.
+- [Liens](/pdf/fr/net/links/) - vous pouvez facilement créer, mettre à jour et extraire des liens avec C#.
+- [Actions](/pdf/fr/net/actions/) - il est possible d'ajouter et d'obtenir, de créer des hyperliens vers des fichiers PDF. De plus, dans cet article, vous apprendrez comment supprimer l'action d'ouverture de document d'un fichier PDF et comment spécifier la page PDF lors de la visualisation du document.
+- [Signets](/pdf/fr/net/bookmarks/) - les grandes publications incluent généralement un cadre de signets qui peuvent être facilement visualisés et sélectionnés dans le panneau des signets, vous permettant de cliquer sur un signet pour sauter à la page ou au chapitre qu'il représente. Le panneau des signets est un élément conscient du contenu et est visible dans la barre latérale uniquement si le document PDF ouvert contient une structure de signets.
 
 <script type="application/ld+json">
 {

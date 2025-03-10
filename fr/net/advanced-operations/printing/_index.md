@@ -81,11 +81,11 @@ sitemap:
 
 ## Comment imprimer des fichiers PDF en C#
 
-- [Impression PDF dans .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [Impression PDF sur une imprimante XPS (Facades)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [Conversion PDF en PostScript, Vérification de l'état de la tâche d'impression](/pdf/net/pdf-to-postscript-conversion/)
-- [Impression PDF dans .NET Core](/pdf/net/print-dotnetcore/)
-- [Imprimer un document PDF dans une application WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [Impression PDF dans .NET Framework](/pdf/fr/net/printing-pdf-in-net-framework/)
+- [Impression PDF sur une imprimante XPS (Facades)](/pdf/fr/net/printing-pdf-to-an-xps-printer-facades/)
+- [Conversion PDF en PostScript, Vérification de l'état de la tâche d'impression](/pdf/fr/net/pdf-to-postscript-conversion/)
+- [Impression PDF dans .NET Core](/pdf/fr/net/print-dotnetcore/)
+- [Imprimer un document PDF dans une application WPF](/pdf/fr/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

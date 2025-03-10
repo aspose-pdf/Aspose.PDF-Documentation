@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF peut supprimer des pièces jointes des fichiers PDF. Les pièces jointes d'un document PDF sont conservées dans la collection EmbeddedFiles de l'objet Document.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Pour supprimer toutes les pièces jointes associées à un fichier PDF :
 

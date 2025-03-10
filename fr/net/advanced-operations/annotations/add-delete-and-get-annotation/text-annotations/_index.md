@@ -81,7 +81,7 @@ sitemap:
 
 ## Comment ajouter une annotation de texte dans un fichier PDF existant
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 Une annotation de texte est une annotation attachée à un emplacement spécifique dans un document PDF. Lorsqu'elle est fermée, l'annotation est affichée sous forme d'icône ; lorsqu'elle est ouverte, elle doit afficher une fenêtre contextuelle contenant le texte de la note dans la police et la taille choisies par le lecteur.
 
@@ -136,7 +136,7 @@ Une annotation contextuelle affiche du texte dans une fenêtre contextuelle pour
 
 Elle ne doit avoir aucun flux d'apparence ou actions associées et doit être identifiée par l'entrée Popup dans le dictionnaire d'annotations du parent.
 
-Le code suivant vous montre comment ajouter une [annotation contextuelle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) dans une page PDF en utilisant un exemple d'ajout d'une [annotation de ligne](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) parente.
+Le code suivant vous montre comment ajouter une [annotation contextuelle](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) dans une page PDF en utilisant un exemple d'ajout d'une [annotation de ligne](/pdf/fr/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) parente.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

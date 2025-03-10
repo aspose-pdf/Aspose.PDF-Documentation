@@ -81,7 +81,7 @@ sitemap:
 
 Créer un PDF tagué signifie ajouter (ou créer) certains éléments au document qui permettront de valider le document conformément aux exigences PDF/UA. Ces éléments sont souvent appelés Éléments de structure.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Création d'un PDF tagué (Scénario simple)
 

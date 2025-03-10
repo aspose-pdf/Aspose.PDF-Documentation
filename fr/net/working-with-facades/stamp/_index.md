@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Ajout d'un filigrane multi-lignes à un PDF existant](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [Rotation du tampon autour du point central](/pdf/net/rotating-stamp-about-the-center-point/)
+- [Ajout d'un filigrane multi-lignes à un PDF existant](/pdf/fr/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Rotation du tampon autour du point central](/pdf/fr/net/rotating-stamp-about-the-center-point/)

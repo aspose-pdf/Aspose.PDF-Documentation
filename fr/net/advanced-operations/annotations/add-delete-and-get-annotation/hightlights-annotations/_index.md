@@ -89,7 +89,7 @@ Il est également possible d'obtenir ou de définir les paramètres des annotati
 
 La fonctionnalité suivante est la possibilité d'obtenir ou de définir les paramètres des annotations de soulignement à l'aide de la propriété underlineSettings. La propriété underlineSettings est utilisée pour définir les propriétés de couleur, d'opacité, d'auteur, de sujet, de date de modification et de verrouillage des annotations de soulignement.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ## Ajouter une annotation de balisage de texte
 

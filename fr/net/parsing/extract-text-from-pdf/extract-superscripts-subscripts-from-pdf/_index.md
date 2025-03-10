@@ -86,7 +86,7 @@ Les **SubScripts et SuperScripts** sont le plus souvent utilisés dans les formu
 
 Utilisez la classe **TextFragmentAbsorber** et vous pouvez déjà faire tout ce que vous voulez avec le texte trouvé, c'est-à-dire que vous pouvez simplement utiliser tout le texte. Essayez le code suivant :
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -112,7 +112,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 Ou utilisez les **TextFragments** séparément et faites toutes sortes de manipulations avec eux, par exemple, trier par coordonnées ou par taille.
 
-Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Le code suivant fonctionne également avec la bibliothèque [Aspose.PDF.Drawing](/pdf/fr/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

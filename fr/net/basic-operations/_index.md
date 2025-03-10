@@ -14,9 +14,9 @@ sitemap:
 ---
 La section **Opérations de base** décrit la première, la plus simple et la plus populaire opération avec des documents PDF dans Aspose.PDF for .NET :
 
-- [Créer un document PDF](/pdf/net/create-document/) - cet article décrit comment créer un fichier PDF en utilisant C#.
-- [Ouvrir un document PDF](/pdf/net/open-pdf-document/) - cet article décrit diverses manières d'ouvrir un document PDF dans une application .NET.
-- [Enregistrer un document PDF](/pdf/net/save-pdf-document/) - cet article décrit diverses manières d'enregistrer un document PDF dans un fichier, un flux, de l'envoyer sur le Web ou de l'enregistrer en tant que document PDF/A (ou PDF/X).
-- [Fusionner des PDF](/pdf/net/merge-pdf-documents/) - fusionner plusieurs fichiers PDF en un seul document PDF en utilisant C#.
-- [Diviser un PDF](/pdf/net/split-document/) - diviser les pages PDF en fichiers PDF individuels dans vos applications .NET.
-- [Crypter et décrypter un fichier PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/) - crypter et décrypter des fichiers PDF.
+- [Créer un document PDF](/pdf/fr/net/create-document/) - cet article décrit comment créer un fichier PDF en utilisant C#.
+- [Ouvrir un document PDF](/pdf/fr/net/open-pdf-document/) - cet article décrit diverses manières d'ouvrir un document PDF dans une application .NET.
+- [Enregistrer un document PDF](/pdf/fr/net/save-pdf-document/) - cet article décrit diverses manières d'enregistrer un document PDF dans un fichier, un flux, de l'envoyer sur le Web ou de l'enregistrer en tant que document PDF/A (ou PDF/X).
+- [Fusionner des PDF](/pdf/fr/net/merge-pdf-documents/) - fusionner plusieurs fichiers PDF en un seul document PDF en utilisant C#.
+- [Diviser un PDF](/pdf/fr/net/split-document/) - diviser les pages PDF en fichiers PDF individuels dans vos applications .NET.
+- [Crypter et décrypter un fichier PDF](/pdf/fr/net/set-privileges-encrypt-and-decrypt-pdf-file/) - crypter et décrypter des fichiers PDF.

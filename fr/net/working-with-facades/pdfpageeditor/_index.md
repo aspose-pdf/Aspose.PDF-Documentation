@@ -14,7 +14,7 @@ sitemap:
 ---
 Le **PdfPage Editor** est destiné à effectuer diverses manipulations avec les pages :
 
-- [Faire pivoter une page dans un document PDF](/pdf/net/working-with-page-rotation/)
-- [Appliquer des transitions et d'autres effets visuels](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
-- [Changer les tailles de page dans un fichier PDF](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-- [Manipuler les propriétés de la page](/pdf/net/manipulate-page-properties/)
+- [Faire pivoter une page dans un document PDF](/pdf/fr/net/working-with-page-rotation/)
+- [Appliquer des transitions et d'autres effets visuels](/pdf/fr/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
+- [Changer les tailles de page dans un fichier PDF](/pdf/fr/net/changing-page-sizes-in-a-pdf-file/)
+- [Manipuler les propriétés de la page](/pdf/fr/net/manipulate-page-properties/)
