@@ -72,5 +72,5 @@ url: /ru/net/integration-with-aspose-total-components/
 }
 </script>
 
-- [Преобразование страниц PDF в изображения и распознавание штрих-кодов](/pdf/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
-- [Извлечение изображений из PDF и распознавание штрих-кодов](/pdf/net/extract-images-from-pdf-and-recognize-barcodes/)
+- [Преобразование страниц PDF в изображения и распознавание штрих-кодов](/pdf/ru/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
+- [Извлечение изображений из PDF и распознавание штрих-кодов](/pdf/ru/net/extract-images-from-pdf-and-recognize-barcodes/)

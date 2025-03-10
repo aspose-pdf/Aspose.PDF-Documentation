@@ -13,4 +13,4 @@ sitemap:
 ---
 В этом разделе есть следующие темы:
 
-- [Модуль импорта PDF-файлов в Umbraco](/pdf/net/umbraco-pdf-import-module/)
+- [Модуль импорта PDF-файлов в Umbraco](/pdf/ru/net/umbraco-pdf-import-module/)

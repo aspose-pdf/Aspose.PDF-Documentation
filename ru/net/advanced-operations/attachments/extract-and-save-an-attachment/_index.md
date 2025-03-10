@@ -90,7 +90,7 @@ sitemap:
 
 Следующие фрагменты кода показывают, как получить все вложения из PDF-документа.
 
-Эти фрагменты кода также работают с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Эти фрагменты кода также работают с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

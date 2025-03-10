@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Добавление многострочного водяного знака в существующий PDF](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [Поворот штампа вокруг центральной точки](/pdf/net/rotating-stamp-about-the-center-point/)
+- [Добавление многострочного водяного знака в существующий PDF](/pdf/ru/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Поворот штампа вокруг центральной точки](/pdf/ru/net/rotating-stamp-about-the-center-point/)

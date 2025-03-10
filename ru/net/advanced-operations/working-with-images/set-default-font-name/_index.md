@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API позволяет установить имя шрифта по умолчанию, если шрифт недоступен в документе. Для установки имени шрифта по умолчанию можно использовать свойство DefaultFontName класса RenderingOptions. Если для DefaultFontName установлено значение null, будет использоваться шрифт **Times New Roman**. Следующий фрагмент кода показывает, как установить имя шрифта по умолчанию при сохранении PDF-файла в виде изображения:
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

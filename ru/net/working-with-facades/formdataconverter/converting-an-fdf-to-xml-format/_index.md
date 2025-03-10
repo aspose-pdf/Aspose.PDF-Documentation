@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Пространство имён Aspose.Pdf.Facades (https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/net/) очень хорошо поддерживает AcroForms. Оно также поддерживает импорт и экспорт данных форм в различные форматы файлов, такие как FDF, XFDF и XML. Однако иногда разработчикам может потребоваться преобразовать один формат в другой. В этой статье рассматривается функция преобразования FDF в XML.
+Пространство имён Aspose.Pdf.Facades (https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) очень хорошо поддерживает AcroForms. Оно также поддерживает импорт и экспорт данных форм в различные форматы файлов, такие как FDF, XFDF и XML. Однако иногда разработчикам может потребоваться преобразовать один формат в другой. В этой статье рассматривается функция преобразования FDF в XML.
 
 {{% /alert %}}
 

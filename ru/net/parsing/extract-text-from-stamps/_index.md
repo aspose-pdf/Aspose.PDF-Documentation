@@ -86,7 +86,7 @@ Aspose.PDF для NET позволяет извлекать текст из ан
 1. Определите новый объект класса `TextAbsorber`.
 1. Используйте метод TextAbsorber `visit`, чтобы получить текст.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -81,7 +81,7 @@ lastmod: "2022-02-17"
 - ImagePlacementAbsorber выполняет поиск использования изображения как коллекции объектов ImagePlacement.
 - ImagePlacement предоставляет члены Resolution и Rectangle, которые возвращают фактические значения размещения изображения.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

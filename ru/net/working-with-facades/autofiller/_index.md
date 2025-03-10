@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Экспорт данных листа Excel для заполнения формы PDF](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [Экспорт данных листа Excel для заполнения формы PDF](/pdf/ru/net/export-excel-worksheet-data-to-fill-pdf-form/)

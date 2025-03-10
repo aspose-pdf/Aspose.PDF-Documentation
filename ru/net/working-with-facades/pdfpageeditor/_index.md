@@ -14,7 +14,7 @@ sitemap:
 ---
 **Редактор страниц PDF** предназначен для выполнения различных действий со страницами:
 
-- [Поворот страницы в PDF-документе](/pdf/net/working-with-page-rotation/)
-- [Применение переходов и других визуальных эффектов](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
-- [Изменение размера страниц в файле PDF](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-- [Управление свойствами страницы](/pdf/net/manipulate-page-properties/)
+- [Поворот страницы в PDF-документе](/pdf/ru/net/working-with-page-rotation/)
+- [Применение переходов и других визуальных эффектов](/pdf/ru/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
+- [Изменение размера страниц в файле PDF](/pdf/ru/net/changing-page-sizes-in-a-pdf-file/)
+- [Управление свойствами страницы](/pdf/ru/net/manipulate-page-properties/)

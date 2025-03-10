@@ -86,7 +86,7 @@ sitemap:
 
 Используйте класс **TextFragmentAbsorber**, и вы уже можете делать все, что угодно с найденным текстом, т.е. вы можете просто использовать весь текст. Попробуйте следующий фрагмент кода:
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -112,7 +112,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 Или используйте **TextFragments** отдельно и выполняйте с ними всевозможные манипуляции, например, сортируйте по координатам или по размеру.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -104,25 +104,25 @@ Aspose.PDF for .NET предоставляет следующие ключевы
 
 ## Разделы
 
-- [Что нового](/pdf/net/whatsnew/)
-- [Обзор](/pdf/net/overview/)
-- [Начало работы](/pdf/net/get-started/)
-- [Основные операции](/pdf/net/basic-operations/)
-- [Преобразование документов](/pdf/net/converting/)
-- [Анализ PDF-документов](/pdf/net/parsing/)
-- [Расширенные операции](/pdf/net/advanced-operations/)
-- [Работа с фасадами](/pdf/net/working-with-facades)
-- [Использование на других языках](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [Примеры использования](/pdf/net/showcases/)
-- [Плагины](/pdf/net/plugins/)
-- [FAQ](/pdf/net/faq/)
+- [Что нового](/pdf/ru/net/whatsnew/)
+- [Обзор](/pdf/ru/net/overview/)
+- [Начало работы](/pdf/ru/net/get-started/)
+- [Основные операции](/pdf/ru/net/basic-operations/)
+- [Преобразование документов](/pdf/ru/net/converting/)
+- [Анализ PDF-документов](/pdf/ru/net/parsing/)
+- [Расширенные операции](/pdf/ru/net/advanced-operations/)
+- [Работа с фасадами](/pdf/ru/net/working-with-facades)
+- [Использование на других языках](/pdf/ru/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [Примеры использования](/pdf/ru/net/showcases/)
+- [Плагины](/pdf/ru/net/plugins/)
+- [FAQ](/pdf/ru/net/faq/)
 - [Примечания к выпуску](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Ресурсы Aspose.PDF for .NET
 
 Ниже приведены ссылки на некоторые полезные ресурсы, которые могут вам понадобиться для выполнения ваших задач.
 
-- [Функции Aspose.PDF for .NET](/pdf/net/key-features/)
+- [Функции Aspose.PDF for .NET](/pdf/ru/net/key-features/)
 - [Примечания к выпуску Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/release-notes/)
 - [Страница продукта Aspose.PDF for .NET](https://products.aspose.com/pdf/net/)
 - [Скачать Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/)

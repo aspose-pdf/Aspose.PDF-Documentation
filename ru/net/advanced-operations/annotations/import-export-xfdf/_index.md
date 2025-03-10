@@ -89,7 +89,7 @@ XFDF означает формат данных XML-форм. Это файл ф
 
 Класс [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) содержит два метода для работы с импортом и экспортом аннотаций в файл XFDF. Метод [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) обеспечивает возможность экспорта аннотаций из PDF-документа в файл XFDF, а метод [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) позволяет импортировать аннотации из существующего файла XFDF. Чтобы импортировать или экспортировать аннотации, нам нужно указать типы аннотаций. Мы можем указать эти типы в виде перечисления, а затем передать это перечисление в качестве аргумента любому из этих методов. Таким образом, будут импортированы или экспортированы в файл XFDF только аннотации указанных типов.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как экспортировать аннотации в файл XFDF:
 

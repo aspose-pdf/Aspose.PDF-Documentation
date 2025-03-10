@@ -104,7 +104,7 @@ PDF документ иногда может содержать дополнит
 1. Используйте метод [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
 1. Сохраните оптимизированный документ с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как оптимизировать PDF документ для веба.
 

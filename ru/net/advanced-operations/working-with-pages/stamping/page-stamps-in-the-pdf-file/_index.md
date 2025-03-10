@@ -82,7 +82,7 @@ sitemap:
 
 [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) можно использовать, когда вам нужно применить составной штамп, содержащий графику, текст, таблицы. В следующем примере показано, как использовать штамп для создания фирменных бланков, как в Adobe InDesign, Illustrator, Microsoft Word. Предположим, у нас есть входной документ, и мы хотим применить два вида рамок синего и сливового цвета.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

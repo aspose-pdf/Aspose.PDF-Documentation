@@ -85,13 +85,13 @@ sitemap:
 
 Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF for .NET, в группы:
 
-- [PDF Текстовая аннотация](/pdf/net/text-annotation/)
-- [PDF Аннотация выделения](/pdf/net/highlights-annotation/)
-- [PDF Аннотация фигур](/pdf/net/figures-annotation/)
-- [Мультимедийная аннотация](/pdf/net/multimedia-annotation/)
-- [PDF Липкие аннотации](/pdf/net/sticky-annotations/)
-- [Аннотации ссылок](/pdf/net/link-annotations/)
-- [Дополнительные аннотации](/pdf/net/extra-annotations/)
+- [PDF Текстовая аннотация](/pdf/ru/net/text-annotation/)
+- [PDF Аннотация выделения](/pdf/ru/net/highlights-annotation/)
+- [PDF Аннотация фигур](/pdf/ru/net/figures-annotation/)
+- [Мультимедийная аннотация](/pdf/ru/net/multimedia-annotation/)
+- [PDF Липкие аннотации](/pdf/ru/net/sticky-annotations/)
+- [Аннотации ссылок](/pdf/ru/net/link-annotations/)
+- [Дополнительные аннотации](/pdf/ru/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

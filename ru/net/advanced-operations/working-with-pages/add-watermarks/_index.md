@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** позволяет добавлять водяные знаки к вашему PDF-документу с помощью артефактов. Пожалуйста, ознакомьтесь с этой статьёй для решения вашей задачи.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Водяной знак, созданный в Adobe Acrobat, называется артефактом (как описано в разделе 14.8.2.2 Реальное содержимое и артефакты спецификации PDF). Для работы с артефактами в Aspose.PDF есть два класса: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) и [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

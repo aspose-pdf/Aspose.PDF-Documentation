@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/net/) предоставляет возможность создавать, редактировать и заполнять уже созданные PDF-формы. Пространство имён [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) содержит класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), который содержит функцию с именем [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index), и она принимает два аргумента, то есть имя поля и значение поля. Итак, чтобы заполнить поля формы, вы должны знать точное имя поля формы.
+[Aspose.PDF for .NET](/pdf/ru/net/) предоставляет возможность создавать, редактировать и заполнять уже созданные PDF-формы. Пространство имён [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) содержит класс [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form), который содержит функцию с именем [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index), и она принимает два аргумента, то есть имя поля и значение поля. Итак, чтобы заполнить поля формы, вы должны знать точное имя поля формы.
 
 ## Детали реализации
 

@@ -80,9 +80,9 @@ sitemap:
 
 XML (Расширяемый язык разметки) — это способ изменить назначение данных в файле или автоматизировать процесс замены данных в одном файле данными из другого файла. Создать схему XML сложно, а создать несколько взаимосвязанных схем, которые можно расширить, ещё сложнее. Давайте узнаем, как Aspose.PDF справляется с задачами работы с XML.
 
-- [Поддерживаемая схема XML](/pdf/net/supported-xml-schema/) — используйте следующую схему XML для работы с XML-документами.
-- [Простой пример «Hello World» на основе XML и XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) — используйте XSLT для преобразования существующего XML-документа в PDF.
-- [Создание PDF из XML](/pdf/net/generate-pdf-from-xml/) — у Aspose.PDF есть несколько способов создания PDF на основе XML-документа.
+- [Поддерживаемая схема XML](/pdf/ru/net/supported-xml-schema/) — используйте следующую схему XML для работы с XML-документами.
+- [Простой пример «Hello World» на основе XML и XSLT](/pdf/ru/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) — используйте XSLT для преобразования существующего XML-документа в PDF.
+- [Создание PDF из XML](/pdf/ru/net/generate-pdf-from-xml/) — у Aspose.PDF есть несколько способов создания PDF на основе XML-документа.
 
 <script type="application/ld+json">
 {

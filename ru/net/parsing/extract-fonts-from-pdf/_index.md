@@ -80,7 +80,7 @@ sitemap:
 
 Если вы хотите получить все шрифты из PDF-документа, вы можете использовать метод FontUtilities.GetAllFonts(), предоставленный в классе Document. Пожалуйста, проверьте следующий фрагмент кода, чтобы получить все шрифты из существующего PDF-документа:
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="основной" %}}
 
-[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/net/) позволяет добавлять штамп в существующий PDF-файл. Иногда пользователям необходимо повернуть штамп. В этой статье мы увидим, как повернуть штамп относительно его центральной точки.
+[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) позволяет добавлять штамп в существующий PDF-файл. Иногда пользователям необходимо повернуть штамп. В этой статье мы увидим, как повернуть штамп относительно его центральной точки.
 
 {{% /alert %}}
 

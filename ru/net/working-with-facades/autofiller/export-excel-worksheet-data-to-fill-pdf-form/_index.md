@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="основной" %}}
 
-[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/net/) предлагает различные способы заполнения форм Pdf. Вы можете импортировать данные из XML-файла, DFD, XFDF, использовать API и даже можете использовать данные из листа Excel.
+[Пространство имён Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) в [Aspose.PDF for .NET](/pdf/ru/net/) предлагает различные способы заполнения форм Pdf. Вы можете импортировать данные из XML-файла, DFD, XFDF, использовать API и даже можете использовать данные из листа Excel.
 Мы будем использовать метод [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) класса [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) из [Aspose.Cells](https://docs.aspose.com//cells/net), чтобы экспортировать данные из таблицы Excel в объект DataTable. Затем нам нужно будет импортировать эти данные в форму Pdf с помощью метода [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) класса [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Убедитесь, что имя столбца DataTable совпадает с именем поля в форме PDF.
 
 {{% /alert %}}

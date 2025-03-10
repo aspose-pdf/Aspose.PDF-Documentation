@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Добавление объекта прямоугольника
 
@@ -89,16 +89,16 @@ Aspose.PDF for .NET поддерживает функцию добавления
 
 Выполните следующие шаги:
 
-1. Создайте новый PDF [документ](/pdf/net/document).
-1. Добавьте [страницу](/pdf/net/page) в коллекцию страниц PDF-файла.
-1. Добавьте фрагмент [текста](/pdf/net/texfragment) в коллекцию абзацев экземпляра страницы.
-1. Создайте экземпляр [Graph](/pdf/net/aspose.pdf.drawing/graph).
-1. Установите границу для [рисунка](/pdf/net/aspose.pdf.drawing).
+1. Создайте новый PDF [документ](/pdf/ru/net/document).
+1. Добавьте [страницу](/pdf/ru/net/page) в коллекцию страниц PDF-файла.
+1. Добавьте фрагмент [текста](/pdf/ru/net/texfragment) в коллекцию абзацев экземпляра страницы.
+1. Создайте экземпляр [Graph](/pdf/ru/net/aspose.pdf.drawing/graph).
+1. Установите границу для [рисунка](/pdf/ru/net/aspose.pdf.drawing).
 1. Создайте объект Rectangle.
 
-1. Добавьте объект [Rectangle](/pdf/net/aspose.pdf.drawing/rectangle) в коллекцию фигур объекта Graph.
+1. Добавьте объект [Rectangle](/pdf/ru/net/aspose.pdf.drawing/rectangle) в коллекцию фигур объекта Graph.
 1. Добавьте графический объект в коллекцию абзацев экземпляра страницы.
-1. Добавьте фрагмент [текста](/pdf/net/texfragment) в коллекцию абзацев экземпляра страницы.
+1. Добавьте фрагмент [текста](/pdf/ru/net/texfragment) в коллекцию абзацев экземпляра страницы.
 
 1. Сохраните ваш PDF-файл.
 
@@ -146,7 +146,7 @@ private static void AddRectangle(Aspose.Pdf.Page page, float x, float y, float w
 
 Aspose.PDF for .NET также предлагает возможность заполнения объекта прямоугольника определённым цветом.
 
-В следующем фрагменте кода показано, как добавить объект [Rectangle](/pdf/net/aspose.pdf.drawing/rectangle), который заполнен цветом.
+В следующем фрагменте кода показано, как добавить объект [Rectangle](/pdf/ru/net/aspose.pdf.drawing/rectangle), который заполнен цветом.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -194,7 +194,7 @@ private static void RectangleFilled()
 
 Aspose.PDF for .NET поддерживает возможность добавления графических объектов в PDF-документы, и иногда требуется заполнить графические объекты градиентом цвета. Чтобы заполнить графические объекты градиентом цвета, нам нужно установить setPatterColorSpace с объектом gradientAxialShading следующим образом.
 
-В следующем фрагменте кода показано, как добавить объект [Rectangle](/pdf/net/aspose.pdf.drawing/rectangle), который заполнен градиентом цвета.
+В следующем фрагменте кода показано, как добавить объект [Rectangle](/pdf/ru/net/aspose.pdf.drawing/rectangle), который заполнен градиентом цвета.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -243,7 +243,7 @@ private static void CreateFilledRectangleGradientFill()
 
 ## Создание прямоугольника с альфа-каналом цвета
 
-Aspose.PDF for .NET поддерживает заполнение объекта прямоугольника определённым цветом. Объект прямоугольника также может иметь альфа-канал цвета для придания прозрачного вида. В следующем фрагменте кода показано, как добавить объект [Rectangle](/pdf/net/aspose.pdf.drawing/rectangle) с альфа-каналом цвета.
+Aspose.PDF for .NET поддерживает заполнение объекта прямоугольника определённым цветом. Объект прямоугольника также может иметь альфа-канал цвета для придания прозрачного вида. В следующем фрагменте кода показано, как добавить объект [Rectangle](/pdf/ru/net/aspose.pdf.drawing/rectangle) с альфа-каналом цвета.
 
 Пиксели изображения могут хранить информацию об их непрозрачности вместе со значением цвета. Это позволяет создавать изображения с прозрачными или полупрозрачными областями.
 
@@ -304,7 +304,7 @@ private static void RectangleFilled_AlphaChannel()
 
 Aspose.PDF for .NET поддерживает функцию добавления графических объектов (например, график, линия, прямоугольник и т.д.) в PDF-документы. При добавлении более одного экземпляра одного и того же объекта внутрь PDF-файла мы можем управлять их рендерингом, указывая порядок Z. Порядок Z также используется, когда нам нужно отобразить объекты друг над другом.
 
-В следующем фрагменте кода показаны шаги для отображения объектов [Rectangle](/pdf/net/aspose.pdf.drawing/rectangle) друг над другом.
+В следующем фрагменте кода показаны шаги для отображения объектов [Rectangle](/pdf/ru/net/aspose.pdf.drawing/rectangle) друг над другом.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

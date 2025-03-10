@@ -13,4 +13,4 @@ sitemap:
 ---
 В этом разделе есть следующие темы:
 
-- [Модуль импорта PDF для DNN](/pdf/net/dnn-pdf-import-module)
+- [Модуль импорта PDF для DNN](/pdf/ru/net/dnn-pdf-import-module)

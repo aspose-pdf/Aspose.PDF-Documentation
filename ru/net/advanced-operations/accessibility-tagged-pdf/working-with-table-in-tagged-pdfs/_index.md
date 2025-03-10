@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET позволяет создавать таблицу в помеченных PDF-документах. Для работы с таблицами API предоставляет класс [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement). Чтобы создать таблицу, вы можете использовать метод [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) интерфейса [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent). Кроме того, вы можете использовать методы [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) и [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) класса TableElement для создания заголовка таблицы, тела таблицы и подвала таблицы соответственно. Чтобы создать строку таблицы, вы можете использовать метод [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) класса [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement). Вы также можете проверить, соответствует ли созданный PDF-документ требованиям PDF/UA, используя метод Validate() класса Document.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Следующий фрагмент кода показывает, как создать таблицу в помеченном PDF-документе:
 

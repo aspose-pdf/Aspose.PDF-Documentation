@@ -85,7 +85,7 @@ API Aspose.PDF for .NET позволяет создавать и читать PD
 1. Добавьте [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) в коллекцию [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) страницы.
 1. Сохраните полученный PDF-документ.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

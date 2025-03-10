@@ -82,7 +82,7 @@ sitemap:
 
 Эта статья объясняет, как **конвертировать HTML в PDF с помощью C#**. Она охватывает следующие темы.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 _Формат_: **HTML**
 - [C# HTML в PDF](#csharp-html-to-pdf)

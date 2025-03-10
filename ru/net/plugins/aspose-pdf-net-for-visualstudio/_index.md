@@ -13,5 +13,5 @@ sitemap:
 ---
 В этом разделе есть следующие темы:
 
-- [Экспорт GridView в элемент управления PDF в Visual Studio](/pdf/net/eksport-gridview-v-element-upravleniya-pdf-v-visual-studio/)
-- [Плагин Aspose.PDF для Visual Studio](/pdf/net/plagin-aspose-pdf-dlya-visual-studio/)
+- [Экспорт GridView в элемент управления PDF в Visual Studio](/pdf/ru/net/eksport-gridview-v-element-upravleniya-pdf-v-visual-studio/)
+- [Плагин Aspose.PDF для Visual Studio](/pdf/ru/net/plagin-aspose-pdf-dlya-visual-studio/)

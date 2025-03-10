@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Работа с печатью PDF — фасады](/pdf/net/working-with-pdf-printing-facades/)
+- [Работа с печатью PDF — фасады](/pdf/ru/net/working-with-pdf-printing-facades/)

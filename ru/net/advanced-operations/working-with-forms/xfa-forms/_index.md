@@ -87,7 +87,7 @@ sitemap:
 
 Класс Form предоставляет возможность работать со статическими AcroForm, и вы можете получить конкретный экземпляр поля, используя метод Form class’ GetFieldFacade(..). Однако доступ к полям XFA невозможен через метод Form.GetFieldFacade(..). Вместо этого используйте [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) для получения/установки значений полей и управления шаблоном полей XFA (установка свойств полей).
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Заполнение полей XFA
 

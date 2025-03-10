@@ -82,7 +82,7 @@ sitemap:
 
 Таблицы важны при работе с PDF документами. Они предоставляют отличные возможности для систематизированного отображения информации. Пространство имен Aspose.PDF содержит классы [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell) и [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row), которые обеспечивают функциональность для создания таблиц при генерации PDF документов с нуля.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Таблицу можно создать путем создания объекта класса Table.
 

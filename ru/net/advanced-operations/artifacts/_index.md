@@ -111,7 +111,7 @@ sitemap:
 
 Следующий фрагмент кода показывает, как получить все водяные знаки на первой странице PDF-файла.
 
-Примечание: Этот код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Примечание: Этот код также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

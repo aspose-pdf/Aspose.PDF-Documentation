@@ -81,11 +81,11 @@ sitemap:
 
 ## Как печатать PDF файлы на C#
 
-- [Печать PDF в .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [Печать PDF на принтер XPS (Фасады)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [Конвертация PDF в PostScript, Проверка статуса задания на печать](/pdf/net/pdf-to-postscript-conversion/)
-- [Печать PDF в .NET Core](/pdf/net/print-dotnetcore/)
-- [Печать PDF документа в приложении WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [Печать PDF в .NET Framework](/pdf/ru/net/printing-pdf-in-net-framework/)
+- [Печать PDF на принтер XPS (Фасады)](/pdf/ru/net/printing-pdf-to-an-xps-printer-facades/)
+- [Конвертация PDF в PostScript, Проверка статуса задания на печать](/pdf/ru/net/pdf-to-postscript-conversion/)
+- [Печать PDF в .NET Core](/pdf/ru/net/print-dotnetcore/)
+- [Печать PDF документа в приложении WPF](/pdf/ru/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

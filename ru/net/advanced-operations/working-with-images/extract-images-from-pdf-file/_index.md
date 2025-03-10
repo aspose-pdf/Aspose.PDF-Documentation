@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 Изображения хранятся в коллекции [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) каждой страницы в коллекции [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images). Чтобы извлечь конкретную страницу, получите изображение из коллекции Images, используя конкретный индекс изображения.
 

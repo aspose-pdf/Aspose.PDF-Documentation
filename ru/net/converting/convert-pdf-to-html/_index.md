@@ -87,7 +87,7 @@ _Формат_: **HTML**
 - [C# Конвертация PDF в HTML](#csharp-pdf-to-html)
 - [C# Как конвертировать PDF файл в HTML](#csharp-pdf-to-html)
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
 ## Конвертация PDF в HTML
 

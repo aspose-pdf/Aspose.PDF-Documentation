@@ -75,7 +75,7 @@ description: Узнайте, как использовать Aspose.PDF for .NET
 
 {{% alert цвет="основной" %}}
 
-Это простое приложение ASP, которое показывает вам, как добавить простую текстовую строку в PDF-файл с помощью [Aspose.PDF for .NET](/pdf/net/) и JScript через COM Interop.
+Это простое приложение ASP, которое показывает вам, как добавить простую текстовую строку в PDF-файл с помощью [Aspose.PDF for .NET](/pdf/ru/net/) и JScript через COM Interop.
 
 {{% /alert %}}
 
