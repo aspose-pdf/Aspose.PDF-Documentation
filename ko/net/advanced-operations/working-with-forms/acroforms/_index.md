@@ -100,14 +100,14 @@ AcroForms는 XFA에서 찾을 수 없는 기능을 가지고 있으며, 반대�
 
 Java 라이브러리의 기능에 대한 더 자세한 학습은 다음 기사를 참조하십시오:
 
-- [AcroForm 만들기](/pdf/net/create-form) - C#로 처음부터 양식 만들기.
-- [AcroForm 채우기](/pdf/net/fill-form) - PDF 문서의 양식 필드 채우기.
-- [AcroForm 추출하기](/pdf/net/extract-form) - PDF 문서의 모든 필드 또는 개별 필드에서 값 가져오기.
-- [AcroForm 수정하기](/pdf/net/modifing-form) - FieldLimit 가져오기 또는 설정, 양식 필드 글꼴 설정 등.
-- [AcroForm 데이터 게시하기](/pdf/net/posting-acroform-data/) - 양식 데이터를 XML 파일로 가져오고 내보내기.
-- [데이터 가져오기 및 내보내기](/pdf/net/import-and-export-data/) - Form Class를 사용하여 데이터 가져오기 및 내보내기.
-- [PDF에서 양식 제거하기](/pdf/net/remove-form/) - 하위 유형/형식에 따라 텍스트 제거, 모든 양식 삭제.
-- [JSON으로 데이터 가져오기 및 내보내기](/pdf/net/import-export-json/) - JSON으로 데이터 가져오기 및 내보내기.
+- [AcroForm 만들기](/pdf/ko/net/create-form) - C#로 처음부터 양식 만들기.
+- [AcroForm 채우기](/pdf/ko/net/fill-form) - PDF 문서의 양식 필드 채우기.
+- [AcroForm 추출하기](/pdf/ko/net/extract-form) - PDF 문서의 모든 필드 또는 개별 필드에서 값 가져오기.
+- [AcroForm 수정하기](/pdf/ko/net/modifing-form) - FieldLimit 가져오기 또는 설정, 양식 필드 글꼴 설정 등.
+- [AcroForm 데이터 게시하기](/pdf/ko/net/posting-acroform-data/) - 양식 데이터를 XML 파일로 가져오고 내보내기.
+- [데이터 가져오기 및 내보내기](/pdf/ko/net/import-and-export-data/) - Form Class를 사용하여 데이터 가져오기 및 내보내기.
+- [PDF에서 양식 제거하기](/pdf/ko/net/remove-form/) - 하위 유형/형식에 따라 텍스트 제거, 모든 양식 삭제.
+- [JSON으로 데이터 가져오기 및 내보내기](/pdf/ko/net/import-export-json/) - JSON으로 데이터 가져오기 및 내보내기.
 
 <script type="application/ld+json">
 {

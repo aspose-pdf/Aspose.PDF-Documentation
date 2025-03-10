@@ -93,7 +93,7 @@ ZUGFeRD는 독일의 전자 인보이싱을 위한 표준입니다. "Zentraler U
 또한 장기 보관 및 세금 준수에 대한 법적 요구 사항을 준수합니다. ZUGFeRD는 다양한 요구와 시나리오에 맞는 여러 버전과 프로필을 가지고 있습니다. 최신 버전은 전자 인보이싱을 위한 유럽 표준 EN 16931과 호환되는 ZUGFeRD 2.0입니다.
 ZUGFeRD는 사용자에게 더 빠른 처리, 오류 감소, 개선된 현금 흐름 및 낮은 환경 영향을 포함한 많은 이점과 비용 절감을 제공합니다.
 
-* [C#에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부하기](/pdf/net/attach-zugferd/)
+* [C#에서 PDF/3-A 준수 PDF 생성 및 ZUGFeRD 인보이스 첨부하기](/pdf/ko/net/attach-zugferd/)
 
 ## 참조
 

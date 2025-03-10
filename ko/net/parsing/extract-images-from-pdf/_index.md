@@ -82,7 +82,7 @@ sitemap:
 
 이미지의 인덱스는 [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage) 객체를 반환합니다. 이 객체는 추출된 이미지를 저장하는 데 사용할 수 있는 Save 메서드를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

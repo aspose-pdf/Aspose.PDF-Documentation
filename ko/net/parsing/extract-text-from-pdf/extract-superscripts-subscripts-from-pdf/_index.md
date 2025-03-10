@@ -87,7 +87,7 @@ PDF 문서에서 텍스트를 추출하는 것은 일반적인 일입니다. 그
 
 **TextFragmentAbsorber** 클래스를 사용하면 찾은 텍스트로 모든 작업을 수행할 수 있습니다. 즉, 전체 텍스트를 간단히 사용할 수 있습니다. 다음 코드 스니펫을 시도해 보십시오:
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 또는 **TextFragments**를 개별적으로 사용하여 좌표나 크기로 정렬하는 등 다양한 조작을 수행할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

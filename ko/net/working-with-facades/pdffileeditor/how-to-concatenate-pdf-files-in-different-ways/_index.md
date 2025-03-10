@@ -78,7 +78,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-이 문서에서는 [Aspose.PDF for .NET](/pdf/net/) 구성 요소의 도움으로 여러 PDF 문서를 단일 PDF 문서로 [연결하는 방법](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)을 설명합니다. [Aspose.PDF for .NET](/pdf/net/)는 이 작업을 매우 쉽게 만들어 줍니다.
+이 문서에서는 [Aspose.PDF for .NET](/pdf/ko/net/) 구성 요소의 도움으로 여러 PDF 문서를 단일 PDF 문서로 [연결하는 방법](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index)을 설명합니다. [Aspose.PDF for .NET](/pdf/ko/net/)는 이 작업을 매우 쉽게 만들어 줍니다.
 
 {{% /alert %}}
 

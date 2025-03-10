@@ -83,12 +83,12 @@ sitemap:
 
 이 섹션에서는 다음 주제를 다룹니다:
 
-- [태그가 있는 PDF 만들기](/pdf/net/create-tagged-pdf/)
-- [태그가 있는 PDF 편집](/pdf/net/edit-pdf-file-tags/)
-- [태그가 있는 PDF에서 태그가 있는 콘텐츠 추출](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [구조 요소 속성 설정](/pdf/net/setting-structure-elements-properties/)
-- [태그가 있는 PDF에서 테이블 작업하기](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [PDF-UA 준수 테스트 - 오류 목록](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [태그가 있는 PDF 만들기](/pdf/ko/net/create-tagged-pdf/)
+- [태그가 있는 PDF 편집](/pdf/ko/net/edit-pdf-file-tags/)
+- [태그가 있는 PDF에서 태그가 있는 콘텐츠 추출](/pdf/ko/net/extract-tagged-content-from-tagged-pdfs/)
+- [구조 요소 속성 설정](/pdf/ko/net/setting-structure-elements-properties/)
+- [태그가 있는 PDF에서 테이블 작업하기](/pdf/ko/net/working-with-table-in-tagged-pdfs/)
+- [PDF-UA 준수 테스트 - 오류 목록](/pdf/ko/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

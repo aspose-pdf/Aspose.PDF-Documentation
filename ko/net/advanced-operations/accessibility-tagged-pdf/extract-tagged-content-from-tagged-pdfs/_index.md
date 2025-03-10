@@ -81,7 +81,7 @@ sitemap:
 
 이 문서에서는 C#을 사용하여 태그가 있는 콘텐츠 PDF 문서를 추출하는 방법을 배웁니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 태그가 있는 PDF 콘텐츠 가져오기
 

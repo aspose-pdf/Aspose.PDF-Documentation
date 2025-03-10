@@ -81,7 +81,7 @@ sitemap:
 
 ## 기존 PDF 파일에 링크 주석 추가하기
 
-> 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+> 다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 [링크 주석](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation)은 하이퍼링크, 다른 곳의 목적지 및 문서를 나타냅니다. PDF 표준에 따르면, 링크 주석은 페이지 보기 열기, 파일 열기 및 웹 페이지 열기라는 세 가지 경우에 사용할 수 있습니다.
 

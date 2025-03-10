@@ -81,7 +81,7 @@ Aspose.PDF for .NET 7.0.0의 출시와 함께, 우리는 PDF 문서에서 이미
 - ImagePlacementAbsorber는 ImagePlacement 객체 컬렉션과 같은 이미지 사용 검색을 수행합니다.
 - ImagePlacement는 실제 이미지 배치 값을 반환하는 Resolution 및 Rectangle 멤버를 제공합니다.
 
-다음 코드 스니펫은 [Aspose.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 때때로 애플리케이션 데이터가 포함된 기존 XML 파일이 있을 수 있으며 이러한 파일을 사용하여 PDF 보고서를 생성하고 싶을 수 있습니다. XSLT를 사용하여 기존 XML 문서를 Aspose.Pdf의 호환 XML 문서로 변환한 다음 PDF 파일을 생성할 수 있습니다. XML과 XSLT를 사용하여 PDF를 생성하는 단계는 3가지입니다.
 

@@ -112,7 +112,7 @@ Adobe Acrobat으로 생성된 워터마크는 아티팩트라고 합니다 (PDF 
 
 다음 코드 스니펫은 PDF 파일의 첫 페이지에서 모든 워터마크를 가져오는 방법을 보여줍니다.
 
-_참고:_ 이 코드는 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+_참고:_ 이 코드는 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

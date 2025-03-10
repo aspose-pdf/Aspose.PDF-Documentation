@@ -77,7 +77,7 @@ description: VBScript 애플리케이션에서 원활한 통합을 위해 래퍼
 
 ## 필수 조건 COM Interop으로 Aspose.PDF for .NET을 등록하십시오. 다음 기사를 확인하십시오.
 
-[COM Interop을 통한 .NET용 Aspose.pdf 사용](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+[COM Interop을 통한 .NET용 Aspose.pdf 사용](/pdf/ko/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

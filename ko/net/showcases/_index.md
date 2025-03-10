@@ -14,7 +14,7 @@ sitemap:
 ---
 ## 이 섹션의 기사
 
-- [Aspose.PDF 편집기](/pdf/net/aspose-pdf-editor/)
-- [WebForms DataGridView를 PDF로 렌더링](/pdf/net/render-webforms-datagridview-to-pdf/)
-- [데이터 소스에서 테이블 렌더링](/pdf/net/render-table-from-the-data-source/)
-- [Entity Framework 모델을 데이터 소스로 사용하여 테이블 렌더링](/pdf/net/render-table-using-entity-framework-model-as-data-source/)
+- [Aspose.PDF 편집기](/pdf/ko/net/aspose-pdf-editor/)
+- [WebForms DataGridView를 PDF로 렌더링](/pdf/ko/net/render-webforms-datagridview-to-pdf/)
+- [데이터 소스에서 테이블 렌더링](/pdf/ko/net/render-table-from-the-data-source/)
+- [Entity Framework 모델을 데이터 소스로 사용하여 테이블 렌더링](/pdf/ko/net/render-table-using-entity-framework-model-as-data-source/)

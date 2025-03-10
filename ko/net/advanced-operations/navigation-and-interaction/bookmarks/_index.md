@@ -82,8 +82,8 @@ sitemap:
 PDF 북마크는 PDF 파일을 읽을 때 유용하고 필수적인 도구입니다. 사용자가 PDF 문서의 다른 위치로 빠르게 이동하고, 페이지를 탐색하며, 목차처럼 PDF의 내용을 빠르게 볼 수 있게 해줍니다.
 이 섹션에서는 다음을 배우게 됩니다:
 
-- [북마크 추가 및 삭제](/pdf/net/add-and-delete-bookmark/)
-- [북마크 가져오기, 업데이트 및 확장](/pdf/net/get-update-and-expand-bookmark/)
+- [북마크 추가 및 삭제](/pdf/ko/net/add-and-delete-bookmark/)
+- [북마크 가져오기, 업데이트 및 확장](/pdf/ko/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

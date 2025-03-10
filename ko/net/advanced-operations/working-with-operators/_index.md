@@ -105,7 +105,7 @@ PDF 파일에 이미지를 추가하려면:
    - Do 연산자를 사용하여 페이지에 이미지를 그립니다.
 1. 마지막으로 GRestore 연산자를 사용하여 업데이트된 그래픽 상태를 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 PDF 연산자를 사용하는 방법을 보여줍니다.
 

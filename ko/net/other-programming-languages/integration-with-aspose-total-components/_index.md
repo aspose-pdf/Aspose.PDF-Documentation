@@ -72,5 +72,5 @@ url: /ko/net/integration-with-aspose-total-components/
 }
 </script>
 
-- [PDF 페이지를 이미지로 변환하고 바코드 인식하기](/pdf/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
-- [PDF에서 이미지 추출 및 바코드 인식하기](/pdf/net/extract-images-from-pdf-and-recognize-barcodes/)
+- [PDF 페이지를 이미지로 변환하고 바코드 인식하기](/pdf/ko/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
+- [PDF에서 이미지 추출 및 바코드 인식하기](/pdf/ko/net/extract-images-from-pdf-and-recognize-barcodes/)

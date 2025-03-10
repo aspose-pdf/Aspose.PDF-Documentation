@@ -97,9 +97,9 @@ sitemap:
 
 ### Linux 컨테이너에서 ASP.NET Core Web App을 사용하여 PDF 문서 생성
 
-이 앱에서는 **Complex Example**의 코드를 사용할 것입니다. 더 자세한 설명은 [이 링크](/pdf/net/complex-pdf-example/)를 참조하세요.
+이 앱에서는 **Complex Example**의 코드를 사용할 것입니다. 더 자세한 설명은 [이 링크](/pdf/ko/net/complex-pdf-example/)를 참조하세요.
 
-1. `wwwroot` 폴더에 `images` 폴더를 만들고 이미지 `logo.png`를 넣습니다. 이 이미지는 [여기](/pdf/net/docker/logo.png)에서 다운로드할 수 있습니다.
+1. `wwwroot` 폴더에 `images` 폴더를 만들고 이미지 `logo.png`를 넣습니다. 이 이미지는 [여기](/pdf/ko/net/docker/logo.png)에서 다운로드할 수 있습니다.
 1. `wwwroot` 폴더에 `fonts` 폴더를 만들고 그곳에 [Roboto](https://fonts.google.com/specimen/Roboto) 글꼴을 넣습니다.
 1. `wwwroot` 폴더에 `samples` 폴더를 만들고 그곳에 샘플 데이터를 넣습니다.
 1. `HomeController.cs`의 코드를 다음 스니펫으로 교체합니다 (다른 네임스페이스를 가질 수 있습니다):

@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 이 주제는 Aspose.PDF 네임스페이스의 연산자 클래스를 사용하는 방법을 설명하며, 이를 통해 이미지를 추출하지 않고도 해상도 및 크기 정보를 얻을 수 있는 기능을 제공합니다.
 

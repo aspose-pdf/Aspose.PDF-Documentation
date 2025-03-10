@@ -83,7 +83,7 @@ sitemap:
 C#에서 PDF를 병합하는 것은 3rd 파티 라이브러리를 사용하지 않고는 간단한 작업이 아닙니다.
 이 문서에서는 Aspose.PDF for .NET를 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합하는 방법을 보여줍니다. 예제는 C#로 작성되었지만 API는 VB.NET과 같은 다른 .NET 프로그래밍 언어에서도 사용할 수 있습니다. PDF 파일은 첫 번째 파일이 다른 문서의 끝에 추가되도록 병합됩니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 파일 병합
 

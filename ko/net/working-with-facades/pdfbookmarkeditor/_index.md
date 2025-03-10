@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [북마크 만들기](/pdf/net/create-bookmarks/)
-- [북마크 가져오기 및 내보내기](/pdf/net/import-and-export-bookmarks/)
-- [북마크 업데이트, 삭제 및 가져오기](/pdf/net/update-delete-and-get-bookmarks/)
+- [북마크 만들기](/pdf/ko/net/create-bookmarks/)
+- [북마크 가져오기 및 내보내기](/pdf/ko/net/import-and-export-bookmarks/)
+- [북마크 업데이트, 삭제 및 가져오기](/pdf/ko/net/update-delete-and-get-bookmarks/)

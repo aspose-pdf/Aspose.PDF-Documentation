@@ -89,7 +89,7 @@ PDF 문서의 텍스트 마크업 주석 속성은 PDF 뷰어 컨트롤에서 �
 
 다음 기능은 underlineSettings 속성을 사용하여 밑줄 주석의 설정을 가져오거나 설정할 수 있는 기능입니다. underlineSettings 속성은 밑줄 주석의 색상, 불투명도, 작성자, 주제, 수정 날짜 및 잠금 여부 속성을 설정하는 데 사용됩니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 텍스트 마크업 주석 추가
 

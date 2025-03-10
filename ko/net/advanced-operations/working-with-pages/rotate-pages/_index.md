@@ -80,7 +80,7 @@ sitemap:
 
 이 주제에서는 C#을 사용하여 기존 PDF 파일의 페이지 방향을 프로그래밍 방식으로 업데이트하거나 변경하는 방법을 설명합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 페이지 방향 변경
 

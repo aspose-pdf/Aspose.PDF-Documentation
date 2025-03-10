@@ -84,7 +84,7 @@ sitemap:
 
 아래 샘플 코드에서는 PDF의 각 페이지를 반복하여 PDF의 모든 AcroForm에 대한 정보와 양식 필드 값을 추출하는 방법을 보여줍니다. 이 샘플 코드는 양식 필드의 이름을 미리 알지 못한다고 가정합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractFormFields()
 
 ## PDF 문서에서 JSON으로 양식 필드 추출
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -138,7 +138,7 @@ private static void ExtractFormFieldsToJson()
 
 Form 클래스는 ExportXml 메서드를 사용하여 PDF 파일에서 XML 파일로 데이터를 내보낼 수 있게 해줍니다. XML로 데이터를 내보내려면 Form 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 ExportXml 메서드를 호출해야 합니다. 마지막으로 FileStream 객체를 닫고 Form 객체를 폐기할 수 있습니다. 다음 코드 스니펫은 XML 파일로 데이터를 내보내는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void ExportFormDataToXml()
 
 Form 클래스는 ExportFdf 메서드를 사용하여 PDF 파일에서 FDF 파일로 데이터를 내보낼 수 있게 해줍니다. FDF로 데이터를 내보내려면 Form 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 ExportFdf 메서드를 호출해야 합니다. 마지막으로 Form 클래스의 Save 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 FDF 파일로 데이터를 내보내는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void ExportDataToPdf()
 
 Form 클래스는 ExportXfdf 메서드를 사용하여 PDF 파일에서 XFDF 파일로 데이터를 내보낼 수 있게 해줍니다. XFDF로 데이터를 내보내려면 Form 클래스의 객체를 생성한 다음 FileStream 객체를 사용하여 ExportXfdf 메서드를 호출해야 합니다. 마지막으로 Form 클래스의 Save 메서드를 사용하여 PDF 파일을 저장할 수 있습니다. 다음 코드 스니펫은 XFDF 파일로 데이터를 내보내는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -83,24 +83,24 @@ Aspose.PDF for .NET 라이브러리의 가장 기본적인 기능과 요구 사�
 
 Aspose.PDF에 대해 더 알아보려면 적절한 섹션을 선택하세요:
 
-- [왜 Aspose.PDF인가](/pdf/net/why-aspose-pdf/) – Microsoft Office Automation 또는 Open XML SDK와 같은 다른 제품보다 Aspose 제품을 사용하는 것이 더 나은 이유를 설명합니다.
-- [설치](/pdf/net/installation/) – Aspose.PDF 설치 방법에 대한 정보를 제공합니다.
-- [시스템 요구 사항](/pdf/net/system-requirements/) – 시스템 및 개발 환경 요구 사항에 대한 정보를 제공합니다.
-- [Hello World](/pdf/net/hello-world-example/) – C# 및 Aspose.PDF를 사용하여 간단한 PDF 문서를 생성하는 방법에 대한 정보를 제공합니다.
-- [예제 실행 방법](/pdf/net/how-to-run-other-examples/) – 예제를 다운로드하고 실행하는 방법과 필요한 소프트웨어 요구 사항을 설명합니다.
-- [복잡한 PDF](/pdf/net/complex-pdf-example/) – C# 라이브러리를 사용하여 더 복잡한 문서를 생성하는 방법을 설명합니다.
-- [지원되는 문서 형식](/pdf/net/supported-file-formats/) – 지원되는 형식에 대한 정보를 제공합니다.
-- [지원되는 기능](/pdf/net/key-features/) – 다양한 형식으로 문서를 로드하거나 저장할 때 지원되는 기능에 대한 정보를 제공합니다.
-- [라이센스 및 구독](/pdf/net/licensing/) – 라이센스를 적용하고 여러 Aspose 제품을 사용하는 방법에 대한 정보를 제공합니다.
-- [기술 지원](/pdf/net/technical-support/) – 이 페이지는 작업을 신속하고 품질 있게 해결하기 위한 권장 사항을 제공합니다.
-- [Docker에서 Aspose.PDF 실행 방법](/pdf/net/docker/) – Docker 컨테이너에서 Aspose.PDF를 활용하는 방법에 대한 정보를 제공합니다.
-- [Aspose.PDF.Drawing for .NET 개요](/pdf/net/drawing/) – System.Drawing 대신 Aspose.Drawing 라이브러리를 사용하는 방법에 대한 정보를 제공합니다.
-- [Aspose.PDF DOM API의 기초](/pdf/net/basics-of-dom-api/) – 이 섹션에서는 DOM 작업의 기능을 보여주며, 구조화된 문서를 객체 지향 모델로 표현하는 형태를 설명합니다.
-- [고급 기능](/pdf/net/advanced-features/) – 이 섹션에서는 PDF 작업의 고급 기능을 보여줍니다.
+- [왜 Aspose.PDF인가](/pdf/ko/net/why-aspose-pdf/) – Microsoft Office Automation 또는 Open XML SDK와 같은 다른 제품보다 Aspose 제품을 사용하는 것이 더 나은 이유를 설명합니다.
+- [설치](/pdf/ko/net/installation/) – Aspose.PDF 설치 방법에 대한 정보를 제공합니다.
+- [시스템 요구 사항](/pdf/ko/net/system-requirements/) – 시스템 및 개발 환경 요구 사항에 대한 정보를 제공합니다.
+- [Hello World](/pdf/ko/net/hello-world-example/) – C# 및 Aspose.PDF를 사용하여 간단한 PDF 문서를 생성하는 방법에 대한 정보를 제공합니다.
+- [예제 실행 방법](/pdf/ko/net/how-to-run-other-examples/) – 예제를 다운로드하고 실행하는 방법과 필요한 소프트웨어 요구 사항을 설명합니다.
+- [복잡한 PDF](/pdf/ko/net/complex-pdf-example/) – C# 라이브러리를 사용하여 더 복잡한 문서를 생성하는 방법을 설명합니다.
+- [지원되는 문서 형식](/pdf/ko/net/supported-file-formats/) – 지원되는 형식에 대한 정보를 제공합니다.
+- [지원되는 기능](/pdf/ko/net/key-features/) – 다양한 형식으로 문서를 로드하거나 저장할 때 지원되는 기능에 대한 정보를 제공합니다.
+- [라이센스 및 구독](/pdf/ko/net/licensing/) – 라이센스를 적용하고 여러 Aspose 제품을 사용하는 방법에 대한 정보를 제공합니다.
+- [기술 지원](/pdf/ko/net/technical-support/) – 이 페이지는 작업을 신속하고 품질 있게 해결하기 위한 권장 사항을 제공합니다.
+- [Docker에서 Aspose.PDF 실행 방법](/pdf/ko/net/docker/) – Docker 컨테이너에서 Aspose.PDF를 활용하는 방법에 대한 정보를 제공합니다.
+- [Aspose.PDF.Drawing for .NET 개요](/pdf/ko/net/drawing/) – System.Drawing 대신 Aspose.Drawing 라이브러리를 사용하는 방법에 대한 정보를 제공합니다.
+- [Aspose.PDF DOM API의 기초](/pdf/ko/net/basics-of-dom-api/) – 이 섹션에서는 DOM 작업의 기능을 보여주며, 구조화된 문서를 객체 지향 모델로 표현하는 형태를 설명합니다.
+- [고급 기능](/pdf/ko/net/advanced-features/) – 이 섹션에서는 PDF 작업의 고급 기능을 보여줍니다.
 
 ## 더 알아보기
 
-- [DOM API의 기초](/pdf/net/basics-of-dom-api/)
-- ["Hello, World" C# 예제](/pdf/net/hello-world-example/)
-- [복잡한 PDF](/pdf/net/complex-pdf-example/)
-- [다른 예제 실행 방법](/pdf/net/how-to-run-other-examples/)
+- [DOM API의 기초](/pdf/ko/net/basics-of-dom-api/)
+- ["Hello, World" C# 예제](/pdf/ko/net/hello-world-example/)
+- [복잡한 PDF](/pdf/ko/net/complex-pdf-example/)
+- [다른 예제 실행 방법](/pdf/ko/net/how-to-run-other-examples/)

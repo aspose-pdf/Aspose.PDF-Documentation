@@ -90,26 +90,26 @@ PdfFileEditor 클래스는 개별 페이지를 조작하는 데 도움이 되는
 
 이 섹션에서는 이 클래스의 기능을 탐색하고 메서드의 목적을 설명합니다.
 
-- [PDF 문서 연결하기](/pdf/net/concatenate-pdf-documents/)
-- [PDF 페이지 추출하기](/pdf/net/extract-pdf-pages/)
-- [PDF 페이지 삽입하기](/pdf/net/insert-pdf-pages/)
-- [PDF 페이지 삭제하기](/pdf/net/delete-pdf-pages/)
+- [PDF 문서 연결하기](/pdf/ko/net/concatenate-pdf-documents/)
+- [PDF 페이지 추출하기](/pdf/ko/net/extract-pdf-pages/)
+- [PDF 페이지 삽입하기](/pdf/ko/net/insert-pdf-pages/)
+- [PDF 페이지 삭제하기](/pdf/ko/net/delete-pdf-pages/)
 
 ## 페이지 나누기 사용하기
 
 페이지 나누기는 문서의 흐름을 재조정할 수 있는 특별한 기능입니다.
 
-- [기존 PDF에서 페이지 나누기](/pdf/net/page-break-in-existing-pdf/)
+- [기존 PDF에서 페이지 나누기](/pdf/ko/net/page-break-in-existing-pdf/)
 
 ## PDF 배치
 
 배치는 인쇄 전에 페이지를 올바르게 배열하는 과정입니다. `PdfFileEditor`는 이 목적을 위해 두 가지 메서드인 `MakeBooklet`과 `MakeNUp`을 제공합니다. MakeBooklet 메서드는 인쇄 후 쉽게 접거나 제본할 수 있도록 페이지를 배열하는 데 도움이 되며, MakeNUp 메서드는 PDF 파일의 한 페이지에 여러 페이지를 인쇄할 수 있도록 합니다.
 
-- [PDF의 책자 만들기](/pdf/net/make-booklet-of-pdf/)
-- [PDF 파일의 NUp 만들기](/pdf/net/make-nup-of-pdf-files/)
+- [PDF의 책자 만들기](/pdf/ko/net/make-booklet-of-pdf/)
+- [PDF 파일의 NUp 만들기](/pdf/ko/net/make-nup-of-pdf-files/)
 
 ## 분할
 
 분할 기능은 기존 PDF 파일을 여러 부분으로 나눌 수 있게 해줍니다. PDF 파일의 앞부분이나 뒷부분을 분할할 수 있습니다. PdfFileEditor는 분할 목적을 위한 다양한 메서드를 제공하므로 파일을 개별 페이지 또는 여러 페이지 세트로 분할할 수 있습니다.
 
-- [PDF 페이지 분할하기](/pdf/net/split-pdf-pages/)
+- [PDF 페이지 분할하기](/pdf/ko/net/split-pdf-pages/)

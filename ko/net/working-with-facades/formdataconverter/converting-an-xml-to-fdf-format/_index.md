@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 네임스페이스는 [Aspose.PDF for .NET](/pdf/net/)에서 AcroForms를 매우 잘 지원합니다. 또한 FDF, XFDF 및 XML과 같은 다양한 파일 형식으로 양식 데이터를 가져오고 내보내는 것을 지원합니다. 그러나 때때로 개발자는 한 형식을 다른 형식으로 변환해야 할 필요가 있습니다. 이 기사에서는 FDF 형식을 XML로 변환할 수 있는 기능을 살펴보겠습니다.
+[Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) 네임스페이스는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 AcroForms를 매우 잘 지원합니다. 또한 FDF, XFDF 및 XML과 같은 다양한 파일 형식으로 양식 데이터를 가져오고 내보내는 것을 지원합니다. 그러나 때때로 개발자는 한 형식을 다른 형식으로 변환해야 할 필요가 있습니다. 이 기사에서는 FDF 형식을 XML로 변환할 수 있는 기능을 살펴보겠습니다.
 
 {{% /alert %}}
 

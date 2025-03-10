@@ -78,8 +78,8 @@ sitemap:
 }
 </script>
 
-[안녕하세요, 세계](/pdf/net/hello-world-example/) 예제는 C#과 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 기사에서는 C#과 Aspose.PDF for .NET을 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 승객 페리 서비스를 운영하는 가상의 회사에서 문서를 가져오겠습니다.
-우리 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 테이블이 포함될 것입니다. 이러한 문서를 만들기 위해 우리는 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기초](/pdf/net/basics-of-dom-api/) 섹션에서 더 읽을 수 있습니다.
+[안녕하세요, 세계](/pdf/ko/net/hello-world-example/) 예제는 C#과 Aspose.PDF를 사용하여 PDF 문서를 생성하는 간단한 단계를 보여주었습니다. 이 기사에서는 C#과 Aspose.PDF for .NET을 사용하여 더 복잡한 문서를 만드는 방법을 살펴보겠습니다. 예를 들어, 승객 페리 서비스를 운영하는 가상의 회사에서 문서를 가져오겠습니다.
+우리 문서에는 이미지, 두 개의 텍스트 조각(헤더 및 단락), 그리고 테이블이 포함될 것입니다. 이러한 문서를 만들기 위해 우리는 DOM 기반 접근 방식을 사용할 것입니다. [DOM API의 기초](/pdf/ko/net/basics-of-dom-api/) 섹션에서 더 읽을 수 있습니다.
 
 문서를 처음부터 만들 경우 특정 단계를 따라야 합니다:
 
@@ -94,7 +94,7 @@ sitemap:
 1. (테이블)을 페이지의 [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs)에 추가합니다.
 1. 문서를 "Complex.pdf"로 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

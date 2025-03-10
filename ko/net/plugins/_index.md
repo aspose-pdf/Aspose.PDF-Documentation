@@ -16,9 +16,9 @@ sitemap:
 
 이 섹션에는 가장 인기 있는 웹 애플리케이션에 대한 플러그인 목록이 포함되어 있습니다: DotNetNuke, Sitefinity, Umbraco 등.
 
-* [Aspose.PDF for .NET with Coldfusion](/pdf/net/using-aspose-pdf-for-net-with-coldfusion/)
-* [Aspose.PDF for .NET with CRM](/pdf/net/aspose-pdf-net-for-crm/)
-* [Aspose.PDF for .NET with DNN](/pdf/net/aspose-pdf-net-for-dnn/)
-* [Aspose.PDF for .NET with Sitefinity](/pdf/net/aspose-pdf-net-for-sitefinity/)
-* [Aspose.PDF for .NET with Umbraco](/pdf/net/aspose-pdf-net-for-umbraco/)
-* [Aspose.PDF for .NET with VisualStudio](/pdf/net/aspose-pdf-net-for-visualstudio/)
+* [Aspose.PDF for .NET with Coldfusion](/pdf/ko/net/using-aspose-pdf-for-net-with-coldfusion/)
+* [Aspose.PDF for .NET with CRM](/pdf/ko/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF for .NET with DNN](/pdf/ko/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF for .NET with Sitefinity](/pdf/ko/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF for .NET with Umbraco](/pdf/ko/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF for .NET with VisualStudio](/pdf/ko/net/aspose-pdf-net-for-visualstudio/)

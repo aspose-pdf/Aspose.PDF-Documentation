@@ -85,7 +85,7 @@ sitemap:
 1. Visual Studio 2010 이상.
 1. Visual Studio에 NuGet 패키지 관리자가 설치되어 있어야 합니다. Visual Studio에 최신 NuGet API 버전이 설치되어 있는지 확인하세요. NuGet 패키지 관리자를 설치하는 방법에 대한 자세한 내용은 <https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools>를 확인하세요.
 1. `Tools->Options->NuGet Package Manager->Package Sources`로 이동하여 **nuget.org** 옵션이 체크되어 있는지 확인하세요.
-1. 예제 프로젝트는 NuGet 자동 패키지 복원 기능을 사용하므로 활성 인터넷 연결이 필요합니다. 예제를 실행할 머신에 활성 인터넷 연결이 없는 경우 [설치](/pdf/net/installation/)를 확인하고 예제 프로젝트에서 Aspose.PDF.dll에 대한 참조를 수동으로 추가하세요.
+1. 예제 프로젝트는 NuGet 자동 패키지 복원 기능을 사용하므로 활성 인터넷 연결이 필요합니다. 예제를 실행할 머신에 활성 인터넷 연결이 없는 경우 [설치](/pdf/ko/net/installation/)를 확인하고 예제 프로젝트에서 Aspose.PDF.dll에 대한 참조를 수동으로 추가하세요.
 
 ## GitHub에서 다운로드
 

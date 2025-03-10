@@ -75,7 +75,7 @@ description: COM Interop을 통해 ASP 및 JScript 애플리케이션에서 Aspo
 
 {{% alert color="primary" %}}
 
-이것은 [Aspose.PDF for .NET](/pdf/net/) 및 COM Interop을 통해 PDF 파일에 간단한 텍스트 문자열을 추가하는 방법을 보여주는 간단한 ASP 애플리케이션입니다.
+이것은 [Aspose.PDF for .NET](/pdf/ko/net/) 및 COM Interop을 통해 PDF 파일에 간단한 텍스트 문자열을 추가하는 방법을 보여주는 간단한 ASP 애플리케이션입니다.
 
 {{% /alert %}}
 

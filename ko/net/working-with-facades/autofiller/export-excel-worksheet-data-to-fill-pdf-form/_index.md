@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/net/)에서 PDF 양식을 채우는 다양한 방법을 제공합니다. XML 파일, DFD, XFDF에서 데이터를 가져오거나 API를 사용하고 Excel 워크시트의 데이터를 사용할 수 있습니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 PDF 양식을 채우는 다양한 방법을 제공합니다. XML 파일, DFD, XFDF에서 데이터를 가져오거나 API를 사용하고 Excel 워크시트의 데이터를 사용할 수 있습니다.
 우리는 [Aspose.Cells](https://docs.aspose.com//cells/net)의 [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) 클래스의 [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) 메서드를 사용하여 Excel 시트의 데이터를 DataTable 객체로 내보낼 것입니다. 그런 다음 [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller) 클래스의 [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) 메서드를 사용하여 이 데이터를 PDF 양식으로 가져와야 합니다. DataTable의 열 이름이 PDF 양식의 필드 이름과 동일한지 확인하십시오.
 
 {{% /alert %}}

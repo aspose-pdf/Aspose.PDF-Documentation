@@ -84,11 +84,11 @@ sitemap:
 
 다음 작업을 수행할 수 있습니다:
 
-- [기존 PDF 문서에 테이블 생성 또는 추가하기](/pdf/net/add-table-in-existing-pdf-document/) - 테이블을 생성할 때 열 또는 행을 병합하고 테두리, 여백 및 패딩을 고려하여 PDF 파일에 테이블을 생성합니다.
-- [기존 PDF 문서에서 테이블 추출하기](/pdf/net/extract-table-from-existing-pdf-document/) - PDF 파일에서 테이블을 추출하거나 테이블 테두리를 이미지로 추출할 수 있습니다.
-- [데이터 소스와 테이블 통합하기](/pdf/net/integrate-table/) - 데이터베이스와 테이블을 통합하고, .NET 라이브러리를 사용하여 Entity Framework 소스와 테이블을 통합합니다.
-- [기존 PDF에서 테이블 조작하기](/pdf/net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 테이블을 조작합니다.
-- [기존 PDF에서 테이블 제거하기](/pdf/net/remove-tables-from-existing-pdf/) - PDF 문서에서 테이블 또는 여러 테이블을 제거합니다.
+- [기존 PDF 문서에 테이블 생성 또는 추가하기](/pdf/ko/net/add-table-in-existing-pdf-document/) - 테이블을 생성할 때 열 또는 행을 병합하고 테두리, 여백 및 패딩을 고려하여 PDF 파일에 테이블을 생성합니다.
+- [기존 PDF 문서에서 테이블 추출하기](/pdf/ko/net/extract-table-from-existing-pdf-document/) - PDF 파일에서 테이블을 추출하거나 테이블 테두리를 이미지로 추출할 수 있습니다.
+- [데이터 소스와 테이블 통합하기](/pdf/ko/net/integrate-table/) - 데이터베이스와 테이블을 통합하고, .NET 라이브러리를 사용하여 Entity Framework 소스와 테이블을 통합합니다.
+- [기존 PDF에서 테이블 조작하기](/pdf/ko/net/manipulate-tables-in-existing-pdf/) - TableAbsorber를 사용하여 PDF에서 테이블을 조작합니다.
+- [기존 PDF에서 테이블 제거하기](/pdf/ko/net/remove-tables-from-existing-pdf/) - PDF 문서에서 테이블 또는 여러 테이블을 제거합니다.
 
 <script type="application/ld+json">
 {

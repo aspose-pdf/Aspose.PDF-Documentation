@@ -13,4 +13,4 @@ sitemap:
 ---
 이 섹션에는 다음 주제가 포함되어 있습니다:
 
-- [DNN PDF 가져오기 모듈](/pdf/net/dnn-pdf-import-module)
+- [DNN PDF 가져오기 모듈](/pdf/ko/net/dnn-pdf-import-module)

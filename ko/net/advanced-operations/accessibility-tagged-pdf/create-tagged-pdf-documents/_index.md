@@ -81,7 +81,7 @@ sitemap:
 
 태그가 있는 PDF를 생성하는 것은 PDF/UA 요구 사항에 따라 문서를 검증할 수 있도록 문서에 특정 요소를 추가(또는 생성)하는 것을 의미합니다. 이러한 요소를 일반적으로 구조 요소라고 합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 태그가 있는 PDF 만들기 (간단한 시나리오)
 

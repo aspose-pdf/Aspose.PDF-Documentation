@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [기존 PDF 파일에 Javascript 작업 추가하기](/pdf/net/adding-javascript-actions/)
-- [기존 PDF 파일에 북마크 작업 추가하기](/pdf/net/how-to-create-nested-bookmarks/)
-- [이미지 작업하기](/pdf/net/working-with-images-in-pdf/)
-- [텍스트 교체 - 파사드](/pdf/net/replace-text-facades/)
-- [첨부 파일 작업하기 - 파사드](/pdf/net/working-with-attachments-facades/)
-- [기존 PDF 파일의 뷰어 기본 설정 설정하기](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)
-- [기존 PDF 파일의 뷰어 기본 설정 가져오기](/pdf/net/get-viewer-preference-of-an-existing-pdf-file/)
-- [기존 PDF 파일에 주석 추가하기](/pdf/net/adding-annotations-to-existing-pdf-file/)
+- [기존 PDF 파일에 Javascript 작업 추가하기](/pdf/ko/net/adding-javascript-actions/)
+- [기존 PDF 파일에 북마크 작업 추가하기](/pdf/ko/net/how-to-create-nested-bookmarks/)
+- [이미지 작업하기](/pdf/ko/net/working-with-images-in-pdf/)
+- [텍스트 교체 - 파사드](/pdf/ko/net/replace-text-facades/)
+- [첨부 파일 작업하기 - 파사드](/pdf/ko/net/working-with-attachments-facades/)
+- [기존 PDF 파일의 뷰어 기본 설정 설정하기](/pdf/ko/net/set-viewer-preference-of-an-existing-pdf-file/)
+- [기존 PDF 파일의 뷰어 기본 설정 가져오기](/pdf/ko/net/get-viewer-preference-of-an-existing-pdf-file/)
+- [기존 PDF 파일에 주석 추가하기](/pdf/ko/net/adding-annotations-to-existing-pdf-file/)

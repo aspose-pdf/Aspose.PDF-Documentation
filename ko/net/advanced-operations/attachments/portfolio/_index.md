@@ -87,7 +87,7 @@ Aspose.PDF는 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/docume
 
 아래 코드는 다음과 같은 포트폴리오를 생성합니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ### Aspose.PDF로 생성된 PDF 포트폴리오
 

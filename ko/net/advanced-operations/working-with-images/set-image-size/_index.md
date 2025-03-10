@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 PDF 파일에 추가되는 이미지의 크기를 설정할 수 있습니다. 크기를 설정하려면 Aspose.Pdf.Image 클래스의 FixWidth 및 FixHeight 속성을 사용할 수 있습니다. 다음 코드 스니펫은 이미지의 크기를 설정하는 방법을 보여줍니다:
 

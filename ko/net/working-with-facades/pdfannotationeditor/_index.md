@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [지정된 유형으로 모든 주석 삭제 (facades)](/pdf/net/delete-annotations/)
-- [com.aspose.pdf.facades를 사용하여 XFDF 형식으로 주석 가져오기 및 내보내기](/pdf/net/import-export-annotations/)
-- [주석 추출](/pdf/net/extract-annotation/)
-- [주석 평탄화](/pdf/net/flatten-annotation/)
-- [주석 수정](/pdf/net/modify-annotations/)
+- [지정된 유형으로 모든 주석 삭제 (facades)](/pdf/ko/net/delete-annotations/)
+- [com.aspose.pdf.facades를 사용하여 XFDF 형식으로 주석 가져오기 및 내보내기](/pdf/ko/net/import-export-annotations/)
+- [주석 추출](/pdf/ko/net/extract-annotation/)
+- [주석 평탄화](/pdf/ko/net/flatten-annotation/)
+- [주석 수정](/pdf/ko/net/modify-annotations/)

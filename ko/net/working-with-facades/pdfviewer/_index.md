@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF 인쇄 작업 - 파사드](/pdf/net/working-with-pdf-printing-facades/)
+- [PDF 인쇄 작업 - 파사드](/pdf/ko/net/working-with-pdf-printing-facades/)

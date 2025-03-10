@@ -86,7 +86,7 @@ Aspose.PDF for NET를 사용하면 스탬프 주석에서 텍스트를 추출할
 1. `TextAbsorber` 클래스의 새 객체를 정의합니다.
 1. TextAbsorber의 방문 메서드를 사용하여 텍스트를 가져옵니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -119,7 +119,7 @@ _이미지 형식_: **SVG**
 
 ## C# PDF를 이미지로 변환
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 **Aspose.PDF for .NET**는 PDF를 이미지로 변환하는 여러 접근 방식을 사용합니다. 일반적으로 우리는 두 가지 접근 방식을 사용합니다: 장치 접근 방식을 사용한 변환과 SaveOption을 사용한 변환. 이 섹션에서는 BMP, JPEG, GIF, PNG, EMF, TIFF 및 SVG 형식과 같은 이미지 형식으로 PDF 문서를 변환하는 방법을 보여줍니다.
 

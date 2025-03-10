@@ -87,18 +87,18 @@ PageNumberStamp 클래스를 사용하여 페이지 번호를 추가합니다. �
 
 다음 작업을 수행할 수 있습니다:
 
-- [페이지 추가하기](/pdf/net/add-pages/) - 원하는 위치에 페이지를 추가하거나 PDF 파일의 끝에 페이지를 추가하고 문서에서 페이지를 삭제합니다.
-- [페이지 이동하기](/pdf/net/move-pages/) - 한 문서에서 다른 문서로 페이지를 이동합니다.
-- [페이지 삭제하기](/pdf/net/delete-pages/) - PageCollection 컬렉션을 사용하여 PDF 파일에서 페이지를 삭제합니다.
-- [페이지 크기 변경하기](/pdf/net/change-page-size/) - Aspose.PDF 라이브러리를 사용하여 코드 스니펫으로 PDF 페이지 크기를 변경할 수 있습니다.
-- [페이지 회전하기](/pdf/net/rotate-pages/) - 기존 PDF 파일의 페이지 방향을 변경할 수 있습니다.
-- [페이지 분할하기](/pdf/net/split-document/) - PDF 파일을 하나 또는 여러 개의 PDF로 분할할 수 있습니다.
-- [머리글 및/또는 바닥글 추가하기](/pdf/net/add-headers-and-footers-of-pdf-file/) - PDF 파일의 머리글과 바닥글에 텍스트나 이미지를 추가합니다.
-- [페이지 자르기](/pdf/net/crop-pages/) - 다양한 페이지 속성을 사용하여 PDF 문서의 페이지를 프로그래밍 방식으로 자를 수 있습니다.
-- [워터마크 추가하기](/pdf/net/add-watermarks/) - Artifact 클래스를 사용하여 PDF 파일에 워터마크를 추가합니다.
-- [PDF 파일에 페이지 번호 추가하기](/pdf/net/add-page-number/) - PageNumberStamp 클래스가 PDF 파일에 페이지 번호를 추가하는 데 도움이 됩니다.
-- [배경 추가하기](/pdf/net/add-backgrounds/) - 배경 이미지를 사용하여 워터마크를 추가할 수 있습니다.
-- [스탬핑](/pdf/net/stamping/) - ImageStamp 클래스를 사용하여 PDF 파일에 이미지 스탬프를 추가하고 TextStamp 클래스를 사용하여 텍스트를 추가할 수 있습니다.
+- [페이지 추가하기](/pdf/ko/net/add-pages/) - 원하는 위치에 페이지를 추가하거나 PDF 파일의 끝에 페이지를 추가하고 문서에서 페이지를 삭제합니다.
+- [페이지 이동하기](/pdf/ko/net/move-pages/) - 한 문서에서 다른 문서로 페이지를 이동합니다.
+- [페이지 삭제하기](/pdf/ko/net/delete-pages/) - PageCollection 컬렉션을 사용하여 PDF 파일에서 페이지를 삭제합니다.
+- [페이지 크기 변경하기](/pdf/ko/net/change-page-size/) - Aspose.PDF 라이브러리를 사용하여 코드 스니펫으로 PDF 페이지 크기를 변경할 수 있습니다.
+- [페이지 회전하기](/pdf/ko/net/rotate-pages/) - 기존 PDF 파일의 페이지 방향을 변경할 수 있습니다.
+- [페이지 분할하기](/pdf/ko/net/split-document/) - PDF 파일을 하나 또는 여러 개의 PDF로 분할할 수 있습니다.
+- [머리글 및/또는 바닥글 추가하기](/pdf/ko/net/add-headers-and-footers-of-pdf-file/) - PDF 파일의 머리글과 바닥글에 텍스트나 이미지를 추가합니다.
+- [페이지 자르기](/pdf/ko/net/crop-pages/) - 다양한 페이지 속성을 사용하여 PDF 문서의 페이지를 프로그래밍 방식으로 자를 수 있습니다.
+- [워터마크 추가하기](/pdf/ko/net/add-watermarks/) - Artifact 클래스를 사용하여 PDF 파일에 워터마크를 추가합니다.
+- [PDF 파일에 페이지 번호 추가하기](/pdf/ko/net/add-page-number/) - PageNumberStamp 클래스가 PDF 파일에 페이지 번호를 추가하는 데 도움이 됩니다.
+- [배경 추가하기](/pdf/ko/net/add-backgrounds/) - 배경 이미지를 사용하여 워터마크를 추가할 수 있습니다.
+- [스탬핑](/pdf/ko/net/stamping/) - ImageStamp 클래스를 사용하여 PDF 파일에 이미지 스탬프를 추가하고 TextStamp 클래스를 사용하여 텍스트를 추가할 수 있습니다.
 
 <script type="application/ld+json">
 {

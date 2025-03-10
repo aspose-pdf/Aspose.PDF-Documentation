@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-Aspose.PDF for .NET는 PDF 문서 내에서 양식 필드를 생성/조작할 수 있는 훌륭한 기능을 제공합니다. 이 API를 사용하면 프로그래밍 방식으로 PDF 파일 내의 양식 필드를 채우고, [FDF에서 PDF 파일로 데이터 가져오기](/pdf/net/import-and-export-data/), [XFDF에서 PDF 파일로 데이터 가져오기](/pdf/net/import-and-export-data/), [XML에서 PDF 파일로 데이터 가져오기](/pdf/net/import-and-export-data/) 또는 [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 객체에서 데이터를 가져올 수 있습니다.
+Aspose.PDF for .NET는 PDF 문서 내에서 양식 필드를 생성/조작할 수 있는 훌륭한 기능을 제공합니다. 이 API를 사용하면 프로그래밍 방식으로 PDF 파일 내의 양식 필드를 채우고, [FDF에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/), [XFDF에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/), [XML에서 PDF 파일로 데이터 가져오기](/pdf/ko/net/import-and-export-data/) 또는 [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1) 객체에서 데이터를 가져올 수 있습니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET

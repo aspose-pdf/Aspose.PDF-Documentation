@@ -92,7 +92,7 @@ PDF 문서 관리 앱은 문서에 주석을 달기 위한 다양한 도구를 �
 
 주석을 추가하는 접근 방식은 모든 경우에 일반적입니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 1. PDF 파일을 로드하거나 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document)를 사용하여 새로 만듭니다.
 1. 새 주석을 만들고 매개변수(새 Rectangle, 새 Point, 제목, 색상, 너비 등)를 설정합니다.

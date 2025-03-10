@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [FDF를 XML 형식으로 변환하기](/pdf/net/converting-an-fdf-to-xml-format/)
-- [XML을 FDF 형식으로 변환하기](/pdf/net/converting-an-xml-to-fdf-format/)
+- [FDF를 XML 형식으로 변환하기](/pdf/ko/net/converting-an-fdf-to-xml-format/)
+- [XML을 FDF 형식으로 변환하기](/pdf/ko/net/converting-an-xml-to-fdf-format/)

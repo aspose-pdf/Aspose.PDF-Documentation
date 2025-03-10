@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [기존 PDF에 다중 줄 워터마크 추가하기](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [중심점을 기준으로 스탬프 회전하기](/pdf/net/rotating-stamp-about-the-center-point/)
+- [기존 PDF에 다중 줄 워터마크 추가하기](/pdf/ko/net/adding-multi-line-watermark-to-existing-pdf/)
+- [중심점을 기준으로 스탬프 회전하기](/pdf/ko/net/rotating-stamp-about-the-center-point/)

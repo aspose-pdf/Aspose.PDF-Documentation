@@ -82,7 +82,7 @@ sitemap:
 
 Aspose.PDF for .NET을 사용하면 .NET 애플리케이션에서 간단한 코드로 PDF 페이지 크기를 변경할 수 있습니다. 이 주제에서는 기존 PDF 파일의 페이지 치수(크기)를 업데이트/변경하는 방법을 설명합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) 클래스에는 페이지 크기를 설정할 수 있는 SetPageSize(...) 메서드가 포함되어 있습니다. 아래의 코드 스니펫은 몇 가지 간단한 단계로 페이지 치수를 업데이트합니다:
 

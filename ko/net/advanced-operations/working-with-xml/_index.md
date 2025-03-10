@@ -80,9 +80,9 @@ sitemap:
 
 XML (확장 가능한 마크업 언어)은 파일의 데이터를 재사용하거나 한 파일의 데이터를 다른 파일의 데이터로 교체하는 프로세스를 자동화하는 방법입니다. XML 스키마를 만드는 것은 올바르게 만드는 것이 어렵고, 여러 개의 상호 연결된 스키마를 만드는 것은 더욱 어렵습니다. Aspose.PDF가 XML 작업을 수행하는 방법을 배워봅시다.
 
-- [지원되는 XML 스키마](/pdf/net/supported-xml-schema/) - XML 문서 작업을 위해 다음 XML 스키마를 사용하세요.
-- [XML 및 XSLT를 기반으로 한 간단한 'Hello World' 예제](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - XSLT를 사용하여 기존 XML 문서를 PDF로 변환하세요.
-- [XML에서 PDF 생성하기](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF는 XML 문서를 기반으로 PDF를 생성하는 여러 가지 방법을 제공합니다.
+- [지원되는 XML 스키마](/pdf/ko/net/supported-xml-schema/) - XML 문서 작업을 위해 다음 XML 스키마를 사용하세요.
+- [XML 및 XSLT를 기반으로 한 간단한 'Hello World' 예제](/pdf/ko/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - XSLT를 사용하여 기존 XML 문서를 PDF로 변환하세요.
+- [XML에서 PDF 생성하기](/pdf/ko/net/generate-pdf-from-xml/) - Aspose.PDF는 XML 문서를 기반으로 PDF를 생성하는 여러 가지 방법을 제공합니다.
 
 <script type="application/ld+json">
 {

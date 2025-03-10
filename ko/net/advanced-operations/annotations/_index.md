@@ -89,10 +89,10 @@ PDF 뷰어는 일반적으로 텍스트 강조, 메모, 선 또는 도형과 같
 
 다음 작업을 수행할 수 있습니다:
 
-- [주석 개요](/pdf/net/overview-of-annotations/) - PDF 사양에 정의된 주석 유형과 Aspose.PDF가 지원하는 내용을 배웁니다.
-- [주석 추가, 삭제 및 가져오기](/pdf/net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석 작업 방법을 설명합니다.
-- [XFDF 형식으로 주석 가져오기 및 내보내기](/pdf/net/import-export-xfdf/) - Aspose.PDF 라이브러리는 XFDF 파일로 주석 데이터를 가져오고 내보내는 방법을 제공합니다.
-- [FDF 형식 주석을 PDF로 가져오기](/pdf/net/import-fdf/) - Aspose.PDF 라이브러리는 FDF 형식 주석을 PDF 파일로 가져오는 방법을 제공합니다.
+- [주석 개요](/pdf/ko/net/overview-of-annotations/) - PDF 사양에 정의된 주석 유형과 Aspose.PDF가 지원하는 내용을 배웁니다.
+- [주석 추가, 삭제 및 가져오기](/pdf/ko/net/add-delete-and-get-annotation/) - 이 섹션에서는 허용된 모든 유형의 주석 작업 방법을 설명합니다.
+- [XFDF 형식으로 주석 가져오기 및 내보내기](/pdf/ko/net/import-export-xfdf/) - Aspose.PDF 라이브러리는 XFDF 파일로 주석 데이터를 가져오고 내보내는 방법을 제공합니다.
+- [FDF 형식 주석을 PDF로 가져오기](/pdf/ko/net/import-fdf/) - Aspose.PDF 라이브러리는 FDF 형식 주석을 PDF 파일로 가져오는 방법을 제공합니다.
 
 <script type="application/ld+json">
 {

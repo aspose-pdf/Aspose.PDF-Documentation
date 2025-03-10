@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET**은 아티팩트를 사용하여 PDF 문서에 워터마크를 추가할 수 있습니다. 이 문서를 확인하여 작업을 해결하십시오.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 Adobe Acrobat으로 생성된 워터마크는 아티팩트라고 하며( PDF 사양의 14.8.2.2 실제 콘텐츠 및 아티팩트에 설명됨), 아티팩트와 함께 작업하기 위해 Aspose.PDF에는 두 개의 클래스가 있습니다: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) 및 [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

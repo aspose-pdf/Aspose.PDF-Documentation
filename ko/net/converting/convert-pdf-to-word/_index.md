@@ -100,7 +100,7 @@ _형식_: **Word**
 - [C# PDF를 Word로 변환하기](#csharp-pdf-to-doc)
 - [C# PDF 파일을 Word로 변환하는 방법](#csharp-pdf-to-docx)
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF를 DOC 및 DOCX로 변환하기
 
@@ -179,7 +179,7 @@ private static void ConvertPDFtoWordDocAdvanced()
 
 Aspose.PDF for .NET는 온라인 무료 애플리케이션 ["PDF to DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc)를 제공하여 기능과 품질을 확인해 볼 수 있습니다.
 
-[![PDF를 DOC로 변환하기](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+[![PDF를 DOC로 변환하기](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
 
 ## PDF를 DOCX (Microsoft Word 2007-2024) 파일로 변환하기
@@ -243,7 +243,7 @@ private static void ConvertPDFtoWord_Advanced_DOCX_Format()
 
 Aspose.PDF for .NET는 온라인 무료 애플리케이션 ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx)를 제공하여 기능과 품질을 확인해 볼 수 있습니다.
 
-[![Aspose.PDF PDF를 Word로 변환하기 무료 앱](/pdf/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+[![Aspose.PDF PDF를 Word로 변환하기 무료 앱](/pdf/ko/net/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
 {{% /alert %}}
 

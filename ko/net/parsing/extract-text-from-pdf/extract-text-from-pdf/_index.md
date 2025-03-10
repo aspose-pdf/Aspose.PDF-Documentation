@@ -82,7 +82,7 @@ sitemap:
 
 PDF 문서에서 텍스트를 추출하는 것은 일반적인 요구 사항입니다. 이 예제에서는 Aspose.PDF for .NET이 PDF 문서의 모든 페이지에서 텍스트를 추출하는 방법을 보여줍니다. **TextAbsorber** 클래스의 객체를 생성해야 합니다. 그 후, **Document** 클래스를 사용하여 PDF를 열고 **Pages** 컬렉션의 **Accept** 메서드를 호출합니다. **TextAbsorber** 클래스는 문서에서 텍스트를 흡수하고 **Text** 속성에서 반환합니다. 다음 코드 스니펫은 PDF 문서의 모든 페이지에서 텍스트를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -115,7 +115,7 @@ private static void ExtractTextFromDocument()
 
 Document 객체의 특정 페이지에서 **Accept** 메서드를 호출합니다. 인덱스는 텍스트를 추출해야 하는 특정 페이지 번호입니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -161,7 +161,7 @@ private static void ExtractTextFromPage()
 1. TextDevice 클래스의 Process 메서드를 사용하여 내용을 텍스트로 변환합니다.
 1. 텍스트를 출력 파일에 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -211,7 +211,7 @@ private static void ExtractTextFromPagesWithTextDevice()
 
 텍스트를 추출하기 위해 페이지의 **Accept** 메서드를 호출합니다. **Document** 및 **TextAbsorber** 클래스의 객체를 생성합니다. **Document** 객체의 개별 페이지에서 **Accept** 메서드를 호출합니다. **Index**는 텍스트를 추출해야 하는 특정 페이지 번호입니다. **TextAbsorber** 클래스의 **Text** 속성에서 텍스트를 가져올 수 있습니다. 다음 코드 스니펫은 개별 페이지에서 텍스트를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void ExtractTextFromParticularPageRegion()
 
 PDF 파일은 텍스트, 이미지, 주석, 첨부 파일, 그래프 등 요소로 구성될 수 있으며 Aspose.PDF for .NET은 이러한 모든 요소를 추가하고 조작하는 기능을 제공합니다. 이 API는 PDF 문서에서 텍스트 추가 및 추출에 있어 뛰어나며, PDF 문서가 여러 열(다중 열)로 구성된 경우 페이지 내용을 동일한 레이아웃을 유지하면서 추출해야 하는 시나리오에 직면할 수 있습니다. 이 요구 사항을 충족하기 위해 Aspose.PDF for .NET이 적합한 선택입니다. 한 가지 접근 방식은 PDF 문서 내의 내용의 글꼴 크기를 줄인 다음 텍스트 추출을 수행하는 것입니다. 다음 코드 스니펫은 텍스트 크기를 줄이고 PDF 문서에서 텍스트를 추출하는 단계를 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -296,7 +296,7 @@ private static void ExtractTextBasedOnColumns()
 
 우리는 텍스트 콘텐츠 추출을 위해 많은 PDF 파일을 처리할 때 자동 스케일링(ScaleFactor = 0)의 사용을 제안합니다. 또는 그리드 너비의 불필요한 축소를 수동으로 설정합니다(약 ScaleFactor = 0.5). 그러나 특정 문서에 대해 스케일링이 필요한지 여부를 결정해서는 안 됩니다. 문서에 대해 불필요한 그리드 너비 축소를 설정하면(그것이 필요하지 않은 경우) 추출된 텍스트 콘텐츠는 완전히 적절하게 유지됩니다. 다음 코드 스니펫을 참조하십시오.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -333,7 +333,7 @@ private static void ExctractTextWithScaleFactor()
 
 PDF 문서에서 텍스트를 추출하는 다양한 시나리오에서 PDF 문서에서 강조된 텍스트만 추출해야 하는 요구 사항이 있을 수 있습니다. 이 기능을 구현하기 위해 API에 TextMarkupAnnotation.GetMarkedText() 및 TextMarkupAnnotation.GetMarkedTextFragments() 메서드를 추가했습니다. TextMarkupAnnotation을 필터링하고 언급된 메서드를 사용하여 PDF 문서에서 강조된 텍스트를 추출할 수 있습니다. 다음 코드 스니펫은 PDF 문서에서 강조된 텍스트를 추출하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -369,7 +369,7 @@ private static void ExtractHighlightedTextFromDocument()
 
 때때로 XML에서 생성된 PDF 문서를 처리할 때 TextFragment 또는 TextSegment 항목에 접근해야 할 필요가 있습니다. Aspose.PDF for .NET은 이름으로 이러한 항목에 접근할 수 있는 기능을 제공합니다. 아래 코드 스니펫은 이 기능을 사용하는 방법을 보여줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF는 PDF 파일에서 첨부파일을 제거할 수 있습니다. PDF 문서의 첨부파일은 Document 객체의 EmbeddedFiles 컬렉션에 저장됩니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 PDF 파일과 관련된 모든 첨부파일을 삭제하려면:
 

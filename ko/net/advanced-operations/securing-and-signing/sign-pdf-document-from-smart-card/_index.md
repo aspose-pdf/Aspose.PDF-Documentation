@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET은 키 저장소 위치에서 디지털 서명을 추가하는 기능을 제공합니다. 시스템에 연결된 인증서 저장소, 스마트 카드 또는 [PIV 카드](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card)에서 제공된 인증서를 수락하여 서명을 적용할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 스마트 카드에서 PDF 문서에 서명하기 위한 코드 스니펫은 다음과 같습니다:
 

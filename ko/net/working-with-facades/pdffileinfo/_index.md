@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF 파일 정보 설정](/pdf/net/set-pdf-file-information/)
-- [PDF 파일 정보 가져오기](/pdf/net/get-pdf-file-information/)
+- [PDF 파일 정보 설정](/pdf/ko/net/set-pdf-file-information/)
+- [PDF 파일 정보 가져오기](/pdf/ko/net/get-pdf-file-information/)

@@ -14,6 +14,6 @@ sitemap:
 ---
 ## 이 섹션의 기사
 
-- [PDF에서 텍스트 추출](/pdf/net/extract-text-from-all-pdf/)
-- [PDF에서 단락 추출](/pdf/net/extract-paragraph-from-pdf/)
-- [PDF에서 슈퍼스크립트 및 서브스크립트 텍스트 추출](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [PDF에서 텍스트 추출](/pdf/ko/net/extract-text-from-all-pdf/)
+- [PDF에서 단락 추출](/pdf/ko/net/extract-paragraph-from-pdf/)
+- [PDF에서 슈퍼스크립트 및 서브스크립트 텍스트 추출](/pdf/ko/net/extract-superscripts-subscripts-from-pdf/)

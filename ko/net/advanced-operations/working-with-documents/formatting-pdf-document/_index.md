@@ -97,7 +97,7 @@ sitemap:
 - PageLayout – 페이지 레이아웃.
 - PageMode – 문서를 처음 열 때 표시되는 방식. 옵션은 썸네일 표시, 전체 화면, 첨부 패널 표시입니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 클래스를 사용하여 속성을 가져오는 방법을 보여줍니다.
 

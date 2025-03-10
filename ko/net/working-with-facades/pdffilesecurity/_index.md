@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF 파일 암호화](/pdf/net/encrypt-pdf-file/)
-- [PDF 파일 복호화](/pdf/net/decrypt-pdf-file/)
-- [예외 PDF 파일 제어](/pdf/net/control-exception/)
-- [PDF 파일 비밀번호 변경](/pdf/net/change-password/)
-- [기존 PDF 파일에 권한 설정](/pdf/net/set-privileges/)
+- [PDF 파일 암호화](/pdf/ko/net/encrypt-pdf-file/)
+- [PDF 파일 복호화](/pdf/ko/net/decrypt-pdf-file/)
+- [예외 PDF 파일 제어](/pdf/ko/net/control-exception/)
+- [PDF 파일 비밀번호 변경](/pdf/ko/net/change-password/)
+- [기존 PDF 파일에 권한 설정](/pdf/ko/net/set-privileges/)

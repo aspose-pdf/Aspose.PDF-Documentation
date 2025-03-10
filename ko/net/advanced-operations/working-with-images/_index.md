@@ -87,18 +87,18 @@ PDF 형식에서 이미지는 꽤 복잡한 주제가 될 수 있습니다. PDF 
 
 다음 작업을 수행할 수 있습니다:
 
-- [기존 PDF 파일에 이미지 추가하기](/pdf/net/add-image-to-existing-pdf-file/) - PDF 문서에 단일 이미지의 이미지와 참조를 추가한 후 품질을 제어합니다.
-- [PDF 파일에서 이미지 삭제하기](/pdf/net/delete-images-from-pdf-file/) - PDF 파일에서 이미지를 삭제하는 코드 스니펫을 확인하세요.
-- [PDF 파일에서 이미지 추출하기](/pdf/net/extract-images-from-pdf-file/) - PDF 파일에서 이미지를 추출하기 위해 이미지 컬렉션을 사용합니다.
-- [내장 이미지의 해상도 및 크기 가져오기](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - 해상도 및 크기 정보를 가져오는 기능을 제공하는 Aspose.PDF 네임스페이스의 연산자 클래스를 사용합니다.
-- [이미지 배치 작업하기](/pdf/net/working-with-image-placement/) - PDF 문서에서 이미지의 해상도와 위치를 가져올 수 있습니다.
-- [PDF 문서에서 이미지 검색 및 가져오기](/pdf/net/search-and-get-images-from-pdf-document/) - C#을 사용하여 개별 페이지에서 이미지를 가져오고 모든 페이지에서 이미지를 검색할 수 있습니다.
-- [기존 PDF 파일에서 이미지 교체하기](/pdf/net/replace-image-in-existing-pdf-file/) - PDF 파일에서 이미지를 교체하는 방법을 보여주는 코드 스니펫을 확인하세요.
-- [이미지 크기 설정하기](/pdf/net/set-image-size/) - C# 라이브러리를 사용하여 이미지의 크기를 설정할 수 있습니다.
-- [기본 글꼴 이름 설정하기](/pdf/net/set-default-font-name/) - 변환 프로세스를 위한 기본 글꼴 이름 설정.
-- [PDF 문서에서 썸네일 이미지 생성하기](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - 다음 기사는 먼저 Acrobat SDK를 사용한 후 Aspose.PDF를 사용하여 PDF 문서에서 썸네일 이미지를 생성하는 방법을 보여줍니다.
-- DICOM 이미지 지원 - Aspose.PDF for .NET은 이미지의 특별한 의료 그래픽 표준을 지원합니다. Aspose.PDF for .NET은 DICOM 및 SVG 이미지를 변환할 수 있습니다. [DICOM을 PDF로 변환하기](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) 섹션을 확인하세요.
-- [벡터 그래픽 작업하기](/pdf/net/working-with-vector-graphics) - 이 섹션에서는 C#을 사용하여 GraphicsAbsorber 도구로 작업하는 기능을 설명합니다.
+- [기존 PDF 파일에 이미지 추가하기](/pdf/ko/net/add-image-to-existing-pdf-file/) - PDF 문서에 단일 이미지의 이미지와 참조를 추가한 후 품질을 제어합니다.
+- [PDF 파일에서 이미지 삭제하기](/pdf/ko/net/delete-images-from-pdf-file/) - PDF 파일에서 이미지를 삭제하는 코드 스니펫을 확인하세요.
+- [PDF 파일에서 이미지 추출하기](/pdf/ko/net/extract-images-from-pdf-file/) - PDF 파일에서 이미지를 추출하기 위해 이미지 컬렉션을 사용합니다.
+- [내장 이미지의 해상도 및 크기 가져오기](/pdf/ko/net/get-resolution-and-dimensions-of-embedded-images/) - 해상도 및 크기 정보를 가져오는 기능을 제공하는 Aspose.PDF 네임스페이스의 연산자 클래스를 사용합니다.
+- [이미지 배치 작업하기](/pdf/ko/net/working-with-image-placement/) - PDF 문서에서 이미지의 해상도와 위치를 가져올 수 있습니다.
+- [PDF 문서에서 이미지 검색 및 가져오기](/pdf/ko/net/search-and-get-images-from-pdf-document/) - C#을 사용하여 개별 페이지에서 이미지를 가져오고 모든 페이지에서 이미지를 검색할 수 있습니다.
+- [기존 PDF 파일에서 이미지 교체하기](/pdf/ko/net/replace-image-in-existing-pdf-file/) - PDF 파일에서 이미지를 교체하는 방법을 보여주는 코드 스니펫을 확인하세요.
+- [이미지 크기 설정하기](/pdf/ko/net/set-image-size/) - C# 라이브러리를 사용하여 이미지의 크기를 설정할 수 있습니다.
+- [기본 글꼴 이름 설정하기](/pdf/ko/net/set-default-font-name/) - 변환 프로세스를 위한 기본 글꼴 이름 설정.
+- [PDF 문서에서 썸네일 이미지 생성하기](/pdf/ko/net/generate-thumbnail-images-from-pdf-documents/) - 다음 기사는 먼저 Acrobat SDK를 사용한 후 Aspose.PDF를 사용하여 PDF 문서에서 썸네일 이미지를 생성하는 방법을 보여줍니다.
+- DICOM 이미지 지원 - Aspose.PDF for .NET은 이미지의 특별한 의료 그래픽 표준을 지원합니다. Aspose.PDF for .NET은 DICOM 및 SVG 이미지를 변환할 수 있습니다. [DICOM을 PDF로 변환하기](/pdf/ko/net/convert-images-format-to-pdf/#convert-dicom-to-pdf) 섹션을 확인하세요.
+- [벡터 그래픽 작업하기](/pdf/ko/net/working-with-vector-graphics) - 이 섹션에서는 C#을 사용하여 GraphicsAbsorber 도구로 작업하는 기능을 설명합니다.
 
 <script type="application/ld+json">
 {

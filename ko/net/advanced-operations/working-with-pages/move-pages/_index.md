@@ -82,7 +82,7 @@ sitemap:
 
 이 주제에서는 C#을 사용하여 한 PDF 문서의 페이지를 다른 문서의 끝으로 이동하는 방법을 설명합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 페이지를 이동하려면 다음을 수행해야 합니다:
 

@@ -13,5 +13,5 @@ sitemap:
 ---
 이 섹션에는 다음 주제가 포함되어 있습니다:
 
-- [Visual Studio GridView를 PDF 컨트롤로 내보내기](/pdf/net/visual-studio-export-gridview-to-pdf-control/)
-- [Aspose.PDF Visual Studio 플러그인](/pdf/net/aspose-pdf-visual-studio-plugin/)
+- [Visual Studio GridView를 PDF 컨트롤로 내보내기](/pdf/ko/net/visual-studio-export-gridview-to-pdf-control/)
+- [Aspose.PDF Visual Studio 플러그인](/pdf/ko/net/aspose-pdf-visual-studio-plugin/)

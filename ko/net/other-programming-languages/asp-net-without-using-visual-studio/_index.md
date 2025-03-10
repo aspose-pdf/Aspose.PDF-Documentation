@@ -75,7 +75,7 @@ description: Visual Studio에 의존하지 않고 ASP.NET 프로젝트에서 Asp
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/)은 Visual Studio를 사용하지 않고 ASP.NET 페이지 또는 애플리케이션을 개발하는 데 사용할 수 있습니다. 이 예제에서는 HTML과 C# 또는 VB.NET 코드를 단일 .aspx 파일에 작성할 것입니다. 이를 일반적으로 Instant ASP.NET이라고 합니다.
+[Aspose.PDF for .NET](/pdf/ko/net/)은 Visual Studio를 사용하지 않고 ASP.NET 페이지 또는 애플리케이션을 개발하는 데 사용할 수 있습니다. 이 예제에서는 HTML과 C# 또는 VB.NET 코드를 단일 .aspx 파일에 작성할 것입니다. 이를 일반적으로 Instant ASP.NET이라고 합니다.
 
 {{% /alert %}}
 
@@ -84,7 +84,7 @@ description: Visual Studio에 의존하지 않고 ASP.NET 프로젝트에서 Asp
 {{% alert color="primary" %}}
 
 샘플 웹 애플리케이션을 만들고 Aspose.PDF.dll을 웹사이트 디렉토리의 "Bin"이라는 디렉토리에 복사합니다 ( *bin 폴더가 존재하지 않으면 생성하십시오* ). 그런 다음 .aspx 페이지를 만들고 다음 코드를 복사합니다.
-이 예제는 ASP.NET 페이지에서 인라인 코드와 함께 [Aspose.PDF for .NET](/pdf/net/)를 사용하는 방법을 보여주며, 내부에 샘플 텍스트가 포함된 간단한 PDF 문서를 생성합니다.
+이 예제는 ASP.NET 페이지에서 인라인 코드와 함께 [Aspose.PDF for .NET](/pdf/ko/net/)를 사용하는 방법을 보여주며, 내부에 샘플 텍스트가 포함된 간단한 PDF 문서를 생성합니다.
 {{% /alert %}}
 
 ```cs

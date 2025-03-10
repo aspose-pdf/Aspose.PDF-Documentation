@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [확장 가능한 메타데이터 플랫폼 - XMP 작업하기](/pdf/net/working-with-extensible-metadata-platform-xmp/)
-- [기존 PDF의 XMP 메타데이터 설정하기](/pdf/net/set-xmp-metadata-of-an-existing-pdf/)
-- [기존 PDF 파일의 XMP 메타데이터 가져오기](/pdf/net/get-xmp-metadata-of-an-existing-pdf-file/)
+- [확장 가능한 메타데이터 플랫폼 - XMP 작업하기](/pdf/ko/net/working-with-extensible-metadata-platform-xmp/)
+- [기존 PDF의 XMP 메타데이터 설정하기](/pdf/ko/net/set-xmp-metadata-of-an-existing-pdf/)
+- [기존 PDF 파일의 XMP 메타데이터 가져오기](/pdf/ko/net/get-xmp-metadata-of-an-existing-pdf-file/)

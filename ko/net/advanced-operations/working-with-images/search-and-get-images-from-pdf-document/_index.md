@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 ImagePlacementAbsorber를 사용하면 PDF 문서의 모든 페이지에서 이미지를 검색할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 전체 문서에서 이미지를 검색하려면:
 

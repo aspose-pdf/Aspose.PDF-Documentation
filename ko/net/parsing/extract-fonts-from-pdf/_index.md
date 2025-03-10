@@ -80,7 +80,7 @@ sitemap:
 
 PDF 문서에서 모든 글꼴을 가져오려면 Document 클래스에서 제공하는 FontUtilities.GetAllFonts() 메서드를 사용할 수 있습니다. 기존 PDF 문서에서 모든 글꼴을 가져오기 위한 다음 코드 스니펫을 확인하세요:
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -103,25 +103,25 @@ Aspose.PDF for .NET은 다음과 같은 주요 기능을 제공합니다:
 
 ## 장
 
-- [새로운 기능](/pdf/net/whatsnew/)
-- [개요](/pdf/net/overview/)
-- [시작하기](/pdf/net/get-started/)
-- [기본 작업](/pdf/net/basic-operations/)
-- [문서 변환](/pdf/net/converting/)
-- [PDF 문서 구문 분석](/pdf/net/parsing/)
-- [고급 작업](/pdf/net/advanced-operations/)
-- [파사드 작업](/pdf/net/working-with-facades)
-- [다른 언어에서 사용하기](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [쇼케이스](/pdf/net/showcases/)
-- [플러그인](/pdf/net/plugins/)
-- [자주 묻는 질문](/pdf/net/faq/)
+- [새로운 기능](/pdf/ko/net/whatsnew/)
+- [개요](/pdf/ko/net/overview/)
+- [시작하기](/pdf/ko/net/get-started/)
+- [기본 작업](/pdf/ko/net/basic-operations/)
+- [문서 변환](/pdf/ko/net/converting/)
+- [PDF 문서 구문 분석](/pdf/ko/net/parsing/)
+- [고급 작업](/pdf/ko/net/advanced-operations/)
+- [파사드 작업](/pdf/ko/net/working-with-facades)
+- [다른 언어에서 사용하기](/pdf/ko/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [쇼케이스](/pdf/ko/net/showcases/)
+- [플러그인](/pdf/ko/net/plugins/)
+- [자주 묻는 질문](/pdf/ko/net/faq/)
 - [릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## Aspose.PDF for .NET 리소스
 
 다음은 작업을 수행하는 데 필요할 수 있는 유용한 리소스에 대한 링크입니다.
 
-- [Aspose.PDF for .NET 기능](/pdf/net/key-features/)
+- [Aspose.PDF for .NET 기능](/pdf/ko/net/key-features/)
 - [Aspose.PDF for .NET 릴리스 노트](https://releases.aspose.com/pdf/net/release-notes/)
 - [Aspose.PDF for .NET 제품 페이지](https://products.aspose.com/pdf/net/)
 - [Aspose.PDF for .NET 다운로드](https://releases.aspose.com/pdf/net/)

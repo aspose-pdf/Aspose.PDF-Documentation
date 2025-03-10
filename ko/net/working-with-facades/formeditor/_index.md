@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [양식 필드 추가](/pdf/net/add-form-fields/)
-- [FormEditor 클래스의 기능 탐색](/pdf/net/exploring-features-of-formeditor-class/)
-- [PDF에서 양식 필드 장식하기](/pdf/net/decorate-form-field/)
-- [필드 외관 및 속성](/pdf/net/changing-field-appearance-and-attributes/)
-- [목록 항목 작업하기](/pdf/net/working-with-list-item/)
-- [내부 및 외부 필드 복사](/pdf/net/copy-inner-and-outer-field/)
-- [양식 필드 이동 및 제거](/pdf/net/move-remove-form-field/)
-- [양식 필드 가져오기 및 내보내기](/pdf/net/import-export-form-field/)
+- [양식 필드 추가](/pdf/ko/net/add-form-fields/)
+- [FormEditor 클래스의 기능 탐색](/pdf/ko/net/exploring-features-of-formeditor-class/)
+- [PDF에서 양식 필드 장식하기](/pdf/ko/net/decorate-form-field/)
+- [필드 외관 및 속성](/pdf/ko/net/changing-field-appearance-and-attributes/)
+- [목록 항목 작업하기](/pdf/ko/net/working-with-list-item/)
+- [내부 및 외부 필드 복사](/pdf/ko/net/copy-inner-and-outer-field/)
+- [양식 필드 이동 및 제거](/pdf/ko/net/move-remove-form-field/)
+- [양식 필드 가져오기 및 내보내기](/pdf/ko/net/import-export-form-field/)

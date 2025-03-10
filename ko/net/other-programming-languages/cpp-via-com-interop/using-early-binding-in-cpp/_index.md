@@ -76,7 +76,7 @@ url: /ko/net/using-early-binding-in-cpp/
 
 {{% alert color="primary" %}}
 
-COM Interop으로 Aspose.PDF for .NET을 등록하십시오. [COM Interop을 통해 Aspose.pdf for .NET 사용하기](/pdf/net/use-aspose-pdf-for-net-via-com-interop/)라는 기사를 확인하십시오.
+COM Interop으로 Aspose.PDF for .NET을 등록하십시오. [COM Interop을 통해 Aspose.pdf for .NET 사용하기](/pdf/ko/net/use-aspose-pdf-for-net-via-com-interop/)라는 기사를 확인하십시오.
 
 {{% /alert %}}
 

@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PdfFileMend 클래스를 사용하여 이미지 및 텍스트 추가하기](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
+- [PdfFileMend 클래스를 사용하여 이미지 및 텍스트 추가하기](/pdf/ko/net/adding-images-and-text-using-pdffilemend-class/)

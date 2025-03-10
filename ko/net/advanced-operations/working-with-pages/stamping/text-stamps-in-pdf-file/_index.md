@@ -82,7 +82,7 @@ sitemap:
 
 [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) 클래스를 사용하여 PDF 파일에 텍스트 스탬프를 추가할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일 및 글꼴 색상 등 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 텍스트 스탬프를 추가하려면 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그 후, PDF에 스탬프를 추가하기 위해 Page의 AddStamp 메서드를 호출할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 PDF 파일에 텍스트 스탬프를 추가하는 방법을 보여줍니다.
 

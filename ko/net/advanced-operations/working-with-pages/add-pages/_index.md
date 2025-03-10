@@ -87,7 +87,7 @@ Aspose.PDF for .NET은 PDF 문서의 파일 내의 원하는 위치에 페이지
 
 Aspose.PDF for .NET은 PDF 문서의 파일 내의 원하는 위치에 페이지를 삽입할 수 있을 뿐만 아니라 PDF 파일의 끝에 페이지를 추가할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ### 원하는 위치에 PDF 파일에 빈 페이지 삽입
 

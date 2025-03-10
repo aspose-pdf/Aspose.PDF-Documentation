@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 보이지 않는 버튼을 추가하여 검색된 텍스트에 툴팁 추가
 

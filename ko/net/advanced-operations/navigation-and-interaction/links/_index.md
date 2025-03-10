@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [링크 만들기](/pdf/net/create-links/) - C#을 사용하여 PDF 파일에 링크를 만드는 간단한 방법을 배워보세요.
-- [링크 업데이트](/pdf/net/update-links/) - PDF에 대상을 설정하고, 링크 목적지를 웹 주소로 설정하고, 링크 대상을 다른 PDF 파일로 설정하고, 링크 텍스트 색상을 업데이트해 보세요.
-- [링크 추출하기](/pdf/net/extract-links) - AnnotationSelector 클래스를 사용하여 PDF 파일에서 링크를 추출하세요.
+- [링크 만들기](/pdf/ko/net/create-links/) - C#을 사용하여 PDF 파일에 링크를 만드는 간단한 방법을 배워보세요.
+- [링크 업데이트](/pdf/ko/net/update-links/) - PDF에 대상을 설정하고, 링크 목적지를 웹 주소로 설정하고, 링크 대상을 다른 PDF 파일로 설정하고, 링크 텍스트 색상을 업데이트해 보세요.
+- [링크 추출하기](/pdf/ko/net/extract-links) - AnnotationSelector 클래스를 사용하여 PDF 파일에서 링크를 추출하세요.
 
 <script type="application/ld+json">
 {

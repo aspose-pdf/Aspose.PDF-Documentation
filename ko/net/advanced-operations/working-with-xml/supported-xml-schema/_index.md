@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 Aspose.PDF for .NET은 XML 문서 작업을 위해 다음 XML 스키마를 사용합니다:
 

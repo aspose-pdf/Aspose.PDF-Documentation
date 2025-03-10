@@ -12,5 +12,5 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-- [이미지 병합](/pdf/net/merge-images/)
-- [PDF 파일 변환](/pdf/net/convert-pdf-file/)
+- [이미지 병합](/pdf/ko/net/merge-images/)
+- [PDF 파일 변환](/pdf/ko/net/convert-pdf-file/)

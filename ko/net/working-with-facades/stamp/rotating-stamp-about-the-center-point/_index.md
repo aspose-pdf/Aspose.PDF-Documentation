@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/net/)에서 기존 PDF 파일에 스탬프를 추가할 수 있게 해줍니다. 때때로 사용자는 스탬프를 회전해야 할 필요가 있습니다. 이 기사에서는 스탬프를 중심점을 기준으로 회전하는 방법을 살펴보겠습니다.
+[Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 기존 PDF 파일에 스탬프를 추가할 수 있게 해줍니다. 때때로 사용자는 스탬프를 회전해야 할 필요가 있습니다. 이 기사에서는 스탬프를 중심점을 기준으로 회전하는 방법을 살펴보겠습니다.
 
 {{% /alert %}}
 

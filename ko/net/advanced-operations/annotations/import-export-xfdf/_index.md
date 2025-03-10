@@ -89,7 +89,7 @@ XFDF는 XML 양식 데이터 형식을 의미합니다. 이는 XML 기반 파일
 
 [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) 클래스는 XFDF 파일로 주석을 가져오고 내보내는 두 가지 메서드를 포함하고 있습니다. [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) 메서드는 PDF 문서에서 XFDF 파일로 주석을 내보내는 기능을 제공하며, [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) 메서드는 기존 XFDF 파일에서 주석을 가져올 수 있게 해줍니다. 주석을 가져오거나 내보내기 위해서는 주석 유형을 지정해야 합니다. 이러한 유형은 열거형의 형태로 지정할 수 있으며, 이 열거형을 이러한 메서드 중 하나의 인수로 전달하면 됩니다. 이렇게 하면 지정된 유형의 주석만 XFDF 파일로 가져오거나 내보낼 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 주석을 XFDF 파일로 내보내는 방법을 보여줍니다:
 

@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 이미지는 각 페이지의 [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) 컬렉션의 [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) 컬렉션에 저장됩니다. 특정 페이지를 추출하려면 해당 이미지의 특정 인덱스를 사용하여 Images 컬렉션에서 이미지를 가져옵니다.
 

@@ -100,7 +100,7 @@ RichMediaAnnotation 클래스의 다음 메서드/속성을 사용할 수 있습
 - void Update(): 주석의 데이터 구조를 생성합니다. 이 메서드는 마지막에 호출해야 합니다.
 - void SetPoster(Stream): 플레이어가 활성화되지 않았을 때 표시되는 비디오의 포스터(즉, 그림)를 설정합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## 화면 주석 추가
 
@@ -439,7 +439,7 @@ private static void AddNavigationButtons()
 }
 ```
 
-이 기능에 대한 더 자세한 정보와 가능성은 [양식 작업하기](/pdf/net/acroforms/)를 참조하십시오.
+이 기능에 대한 더 자세한 정보와 가능성은 [양식 작업하기](/pdf/ko/net/acroforms/)를 참조하십시오.
 
 PDF 문서에서는 3D CAD 또는 3D 모델링 소프트웨어로 생성된 고품질 3D 콘텐츠를 보고 관리할 수 있으며, PDF 문서에 임베드되어 있습니다. 3D 요소를 손에 쥐고 있는 것처럼 모든 방향으로 회전할 수 있습니다.
 

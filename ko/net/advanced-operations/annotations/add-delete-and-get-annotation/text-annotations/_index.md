@@ -81,7 +81,7 @@ sitemap:
 
 ## 기존 PDF 파일에 텍스트 주석 추가하는 방법
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 텍스트 주석은 PDF 문서의 특정 위치에 첨부된 주석입니다. 닫힐 때 주석은 아이콘으로 표시되며, 열릴 때는 독자가 선택한 글꼴과 크기로 된 노트 텍스트가 포함된 팝업 창이 표시되어야 합니다.
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 자신의 외관 스트림이나 관련 작업이 없으며, 부모의 주석 사전에서 Popup 항목으로 식별됩니다.
 
-다음 코드 스니펫은 부모의 [Line annotation](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)을 추가하는 예제를 사용하여 PDF 페이지에 [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)을 추가하는 방법을 보여줍니다.
+다음 코드 스니펫은 부모의 [Line annotation](/pdf/ko/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file)을 추가하는 예제를 사용하여 PDF 페이지에 [Popup Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation)을 추가하는 방법을 보여줍니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

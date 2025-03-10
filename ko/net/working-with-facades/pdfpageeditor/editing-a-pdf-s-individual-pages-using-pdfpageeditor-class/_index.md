@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-Aspose.Pdf.Facades 네임스페이스는 [Aspose.PDF for .NET](/pdf/net/)에서 PDF 파일의 개별 페이지를 조작할 수 있게 해줍니다. 이 기능은 페이지 표시, 정렬 및 전환 등을 작업하는 데 도움이 됩니다. PdfPageEditor 클래스는 이 기능을 달성하는 데 도움을 줍니다. 이 기사에서는 이 클래스에서 제공하는 속성과 메서드 및 이러한 메서드의 작동 방식에 대해 살펴보겠습니다.
+Aspose.Pdf.Facades 네임스페이스는 [Aspose.PDF for .NET](/pdf/ko/net/)에서 PDF 파일의 개별 페이지를 조작할 수 있게 해줍니다. 이 기능은 페이지 표시, 정렬 및 전환 등을 작업하는 데 도움이 됩니다. PdfPageEditor 클래스는 이 기능을 달성하는 데 도움을 줍니다. 이 기사에서는 이 클래스에서 제공하는 속성과 메서드 및 이러한 메서드의 작동 방식에 대해 살펴보겠습니다.
 
 {{% /alert %}}
 

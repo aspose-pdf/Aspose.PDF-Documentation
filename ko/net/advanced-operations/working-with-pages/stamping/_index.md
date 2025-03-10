@@ -84,9 +84,9 @@ PDF 파일의 스탬프는 PDF 파일에 대한 추가 정보를 제공하며, �
 
 C#을 사용하여 스탬프를 추가하는 방법을 배우려면 다음 섹션을 확인하십시오:
 
-- [PDF 페이지에 이미지 스탬프 추가하기](/pdf/net/image-stamps-in-pdf-page/) - 이미지 스탬프 추가, 이미지 품질 제어, PDF 파일의 배경으로 이미지 스탬프 사용.
-- [PDF 파일에 텍스트 스탬프 추가하기](/pdf/net/text-stamps-in-the-pdf-file/) - 텍스트 스탬프 추가, TextStamp 객체의 정렬 정의, PDF 파일에 스탬프로 텍스트 채우기.
-- [PDF 파일에 페이지 스탬프 추가하기](/pdf/net/page-stamps-in-the-pdf-file/) - PdfPageStamp 클래스를 사용하여 PDF 문서에 페이지 스탬프 추가.
+- [PDF 페이지에 이미지 스탬프 추가하기](/pdf/ko/net/image-stamps-in-pdf-page/) - 이미지 스탬프 추가, 이미지 품질 제어, PDF 파일의 배경으로 이미지 스탬프 사용.
+- [PDF 파일에 텍스트 스탬프 추가하기](/pdf/ko/net/text-stamps-in-the-pdf-file/) - 텍스트 스탬프 추가, TextStamp 객체의 정렬 정의, PDF 파일에 스탬프로 텍스트 채우기.
+- [PDF 파일에 페이지 스탬프 추가하기](/pdf/ko/net/page-stamps-in-the-pdf-file/) - PdfPageStamp 클래스를 사용하여 PDF 문서에 페이지 스탬프 추가.
 
 
 <script type="application/ld+json">

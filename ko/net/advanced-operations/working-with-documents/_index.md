@@ -89,15 +89,15 @@ PDF는 오늘날 국제 표준화 기구(ISO)에서 유지 관리하는 개방�
 
 다음과 같은 작업을 수행할 수 있습니다:
 
-- [PDF 문서 포맷팅](/pdf/net/formatting-pdf-document/) - 문서를 생성하고, 문서 속성을 가져오고 설정하며, 글꼴을 포함하고, PDF 파일과 관련된 기타 작업을 수행합니다.
-- [PDF 문서 조작](/pdf/net/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 유효성 검사, TOC 작업, PDF 만료 날짜 설정 등을 수행합니다.
-- [PDF 최적화](/pdf/net/optimize-pdf/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용하지 않는 객체 제거, 성공적인 문서 최적화를 위한 모든 이미지 압축을 수행합니다.
-- [PDF 병합](/pdf/net/merge-pdf-documents/) - C#을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합합니다.
-- [PDF 분할](/pdf/net/split-document/) - .NET 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할합니다.
-- [특정 폴더의 PDF 파일 연결](/pdf/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - PdfFileEditor 클래스를 사용하여 특정 폴더의 모든 PDF 파일을 연결합니다.
-- [MemoryStreams를 사용하여 여러 PDF 파일 연결](/pdf/net/concatenate-pdf-documents/) - C#을 사용하여 MemoryStreams로 여러 PDF 파일을 연결하는 방법을 배웁니다.
-- [충돌 보고서 생성](/pdf/net/generate-crash-reports/) - C#을 사용하여 충돌 보고서를 생성합니다.
-- [제목 작업](/pdf/net/working-with-headings/) - C#을 사용하여 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.
+- [PDF 문서 포맷팅](/pdf/ko/net/formatting-pdf-document/) - 문서를 생성하고, 문서 속성을 가져오고 설정하며, 글꼴을 포함하고, PDF 파일과 관련된 기타 작업을 수행합니다.
+- [PDF 문서 조작](/pdf/ko/net/manipulate-pdf-document/) - PDF A 표준에 대한 PDF 문서 유효성 검사, TOC 작업, PDF 만료 날짜 설정 등을 수행합니다.
+- [PDF 최적화](/pdf/ko/net/optimize-pdf/) - 페이지 콘텐츠 최적화, 파일 크기 최적화, 사용하지 않는 객체 제거, 성공적인 문서 최적화를 위한 모든 이미지 압축을 수행합니다.
+- [PDF 병합](/pdf/ko/net/merge-pdf-documents/) - C#을 사용하여 여러 PDF 파일을 단일 PDF 문서로 병합합니다.
+- [PDF 분할](/pdf/ko/net/split-document/) - .NET 애플리케이션에서 PDF 페이지를 개별 PDF 파일로 분할합니다.
+- [특정 폴더의 PDF 파일 연결](/pdf/ko/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - PdfFileEditor 클래스를 사용하여 특정 폴더의 모든 PDF 파일을 연결합니다.
+- [MemoryStreams를 사용하여 여러 PDF 파일 연결](/pdf/ko/net/concatenate-pdf-documents/) - C#을 사용하여 MemoryStreams로 여러 PDF 파일을 연결하는 방법을 배웁니다.
+- [충돌 보고서 생성](/pdf/ko/net/generate-crash-reports/) - C#을 사용하여 충돌 보고서를 생성합니다.
+- [제목 작업](/pdf/ko/net/working-with-headings/) - C#을 사용하여 PDF 문서의 제목에 번호 매기기를 생성할 수 있습니다.
 
 <script type="application/ld+json">
 {

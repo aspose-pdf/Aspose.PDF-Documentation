@@ -85,13 +85,13 @@ sitemap:
 
 우리는 Aspose.PDF for .NET 라이브러리에서 사용할 수 있는 다양한 종류의 주석을 그룹으로 통합했습니다:
 
-- [PDF 텍스트 주석](/pdf/net/text-annotation/)
-- [PDF 하이라이트 주석](/pdf/net/highlights-annotation/)
-- [PDF 도형 주석](/pdf/net/figures-annotation/)
-- [멀티미디어 주석](/pdf/net/multimedia-annotation/)
-- [PDF 스티키 주석](/pdf/net/sticky-annotations/)
-- [링크 주석](/pdf/net/link-annotations/)
-- [추가 주석](/pdf/net/extra-annotations/)
+- [PDF 텍스트 주석](/pdf/ko/net/text-annotation/)
+- [PDF 하이라이트 주석](/pdf/ko/net/highlights-annotation/)
+- [PDF 도형 주석](/pdf/ko/net/figures-annotation/)
+- [멀티미디어 주석](/pdf/ko/net/multimedia-annotation/)
+- [PDF 스티키 주석](/pdf/ko/net/sticky-annotations/)
+- [링크 주석](/pdf/ko/net/link-annotations/)
+- [추가 주석](/pdf/ko/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

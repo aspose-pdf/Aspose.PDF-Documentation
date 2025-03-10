@@ -122,7 +122,7 @@ private static void AddImage01()
 }
 ```
 
-![이미지 추가](/pdf/net/images/add_image1.png)
+![이미지 추가](/pdf/ko/net/images/add_image1.png)
 
 [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)의 도움으로 한 이미지를 다른 이미지 위에 겹쳐 놓을 수 있습니다:
 
@@ -163,7 +163,7 @@ private static void AddImage02()
 }
 ```
 
-![이미지 추가](/pdf/net/images/add_image2.png)
+![이미지 추가](/pdf/ko/net/images/add_image2.png)
 
 PDF 파일에 이미지를 저장하는 방법은 여러 가지가 있습니다. 다음 예제에서 그 중 하나를 보여드리겠습니다:
 
@@ -277,7 +277,7 @@ private static void AddText01()
 
 어떻게 보이는지 확인해 보세요:
 
-![텍스트 추가](/pdf/net/images/add_text.png)
+![텍스트 추가](/pdf/ko/net/images/add_text.png)
 
 두 번째 방법은 [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext)를 추가하는 것입니다. 추가로, 텍스트가 들어가야 할 사각형을 지정합니다.
 

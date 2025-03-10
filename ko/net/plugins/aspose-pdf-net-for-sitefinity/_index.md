@@ -13,4 +13,4 @@ sitemap:
 ---
 이 섹션에는 다음 주제가 포함되어 있습니다:
 
-- [Sitefinity PDF Import](/pdf/net/sitefinity-pdf-import/)
+- [Sitefinity PDF Import](/pdf/ko/net/sitefinity-pdf-import/)

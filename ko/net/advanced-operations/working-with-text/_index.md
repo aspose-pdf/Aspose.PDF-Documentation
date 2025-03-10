@@ -83,14 +83,14 @@ sitemap:
 
 다음 작업을 수행할 수 있습니다:
 
-- [PDF 파일에 텍스트 추가](/pdf/net/add-text-to-pdf-file/) - PDF에 텍스트를 추가하고, 스트림 및 파일에서 글꼴을 사용하고, HTML 문자열을 추가하고, 하이퍼링크를 추가하는 등의 작업을 수행합니다.
-- [PDF 툴팁](/pdf/net/pdf-tooltip/) - C#을 사용하여 검색된 텍스트에 보이지 않는 버튼을 추가하여 툴팁을 추가할 수 있습니다.
-- [PDF 내 텍스트 형식화](/pdf/net/text-formatting-inside-pdf/) - 텍스트를 형식화할 때 문서에 추가할 수 있는 많은 기능이 있습니다. Aspose.PDF 라이브러리를 사용하여 줄 들여쓰기 추가, 텍스트 테두리 추가, 밑줄 텍스트 추가, 줄 바꿈 추가 등을 할 수 있습니다.
-- [FloatingBox 사용하기](/pdf/net/floating-box/) - Floating Box 도구는 PDF 페이지에 텍스트 및 기타 콘텐츠를 배치하기 위한 특별한 도구입니다.
-- [PDF에서 텍스트 교체](/pdf/net/replace-text-in-pdf/) - PDF 문서의 모든 페이지에서 텍스트를 교체합니다. 먼저 TextFragmentAbsorber를 사용해야 합니다.
-- [PDF 내 텍스트 회전](/pdf/net/rotate-text-inside-pdf/) - TextFragment 클래스의 회전 속성을 사용하여 PDF 내 텍스트를 회전합니다.
-- [PDF 문서의 페이지에서 텍스트 검색 및 가져오기](/pdf/net/search-and-get-text-from-pdf/) - 페이지에서 텍스트를 검색하고 가져오기 위해 TextFragmentAbsorber 클래스를 사용할 수 있습니다.
-- [줄 바꿈 결정하기](/pdf/net/determine-line-break/) - 이 주제에서는 다중 줄 텍스트 조각의 줄 바꿈을 추적하는 방법을 설명합니다.
+- [PDF 파일에 텍스트 추가](/pdf/ko/net/add-text-to-pdf-file/) - PDF에 텍스트를 추가하고, 스트림 및 파일에서 글꼴을 사용하고, HTML 문자열을 추가하고, 하이퍼링크를 추가하는 등의 작업을 수행합니다.
+- [PDF 툴팁](/pdf/ko/net/pdf-tooltip/) - C#을 사용하여 검색된 텍스트에 보이지 않는 버튼을 추가하여 툴팁을 추가할 수 있습니다.
+- [PDF 내 텍스트 형식화](/pdf/ko/net/text-formatting-inside-pdf/) - 텍스트를 형식화할 때 문서에 추가할 수 있는 많은 기능이 있습니다. Aspose.PDF 라이브러리를 사용하여 줄 들여쓰기 추가, 텍스트 테두리 추가, 밑줄 텍스트 추가, 줄 바꿈 추가 등을 할 수 있습니다.
+- [FloatingBox 사용하기](/pdf/ko/net/floating-box/) - Floating Box 도구는 PDF 페이지에 텍스트 및 기타 콘텐츠를 배치하기 위한 특별한 도구입니다.
+- [PDF에서 텍스트 교체](/pdf/ko/net/replace-text-in-pdf/) - PDF 문서의 모든 페이지에서 텍스트를 교체합니다. 먼저 TextFragmentAbsorber를 사용해야 합니다.
+- [PDF 내 텍스트 회전](/pdf/ko/net/rotate-text-inside-pdf/) - TextFragment 클래스의 회전 속성을 사용하여 PDF 내 텍스트를 회전합니다.
+- [PDF 문서의 페이지에서 텍스트 검색 및 가져오기](/pdf/ko/net/search-and-get-text-from-pdf/) - 페이지에서 텍스트를 검색하고 가져오기 위해 TextFragmentAbsorber 클래스를 사용할 수 있습니다.
+- [줄 바꿈 결정하기](/pdf/ko/net/determine-line-break/) - 이 주제에서는 다중 줄 텍스트 조각의 줄 바꿈을 추적하는 방법을 설명합니다.
 
 <script type="application/ld+json">
 {

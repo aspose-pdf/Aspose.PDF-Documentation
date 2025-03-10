@@ -91,7 +91,7 @@ PDF/A-1a 또는 PDF/A-1b 호환성을 위해 PDF 문서를 검증하려면 [Docu
 
 {{% /alert %}}
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 조각은 PDF/A-1A에 대한 PDF 문서를 검증하는 방법을 보여줍니다.
 

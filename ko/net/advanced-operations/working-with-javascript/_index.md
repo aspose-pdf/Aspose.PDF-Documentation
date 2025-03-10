@@ -88,7 +88,7 @@ PDF 문서는 Acrobat 소프트웨어와 웹 브라우저 모두에서 표시될
 - Acrobat JavaScript는 HTML 페이지 내의 객체에 접근할 수 없습니다. 마찬가지로 HTML JavaScript는 PDF 파일 내의 객체에 접근할 수 없습니다.
 - HTML JavaScript는 Window와 같은 객체를 조작할 수 있습니다. Acrobat JavaScript는 이 특정 객체에 접근할 수 없지만 PDF 전용 객체를 조작할 수 있습니다.
 
-문서 및 페이지 수준 모두에서 JavaScript를 추가할 수 있습니다 [Aspose.PDF for .NET](/pdf/net/). JavaScript를 추가하려면:
+문서 및 페이지 수준 모두에서 JavaScript를 추가할 수 있습니다 [Aspose.PDF for .NET](/pdf/ko/net/). JavaScript를 추가하려면:
 
 ### 문서 또는 페이지 작업에 JavaScript 추가하기
 

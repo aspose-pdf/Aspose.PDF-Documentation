@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 문서를 파일 시스템에 저장하기
 
@@ -125,7 +125,7 @@ private static void SaveDocumentStream()
 }
 ```
 
-자세한 설명은 [Showcase](/pdf/net/showcases/) 섹션을 참조하세요.
+자세한 설명은 [Showcase](/pdf/ko/net/showcases/) 섹션을 참조하세요.
 
 ## PDF/A 또는 PDF/X 형식 저장하기
 

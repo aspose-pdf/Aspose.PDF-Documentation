@@ -82,7 +82,7 @@ sitemap:
 모든 문서에는 페이지 번호가 있어야 합니다. 페이지 번호는 독자가 문서의 다양한 부분을 찾는 데 더 쉽게 해줍니다.
 **Aspose.PDF for .NET**는 PageNumberStamp를 사용하여 페이지 번호를 추가할 수 있게 해줍니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) 클래스를 사용하여 PDF 파일에 페이지 번호 스탬프를 추가할 수 있습니다. [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) 클래스는 형식, 여백, 정렬, 시작 번호 등과 같은 페이지 번호 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 페이지 번호 스탬프를 추가하려면 필요한 속성을 사용하여 [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) 객체와 [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) 객체를 생성해야 합니다. 그 후, [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page)의 [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) 메서드를 호출하여 PDF에 스탬프를 추가할 수 있습니다. 페이지 번호 스탬프의 글꼴 속성도 설정할 수 있습니다. 다음 코드 스니펫은 PDF 파일에 페이지 번호를 추가하는 방법을 보여줍니다.
 

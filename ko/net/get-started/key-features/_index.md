@@ -81,11 +81,11 @@ sitemap:
 
 ## 크로스 플랫폼 소프트웨어
 
-다양한 플랫폼과 .NET 버전을 지원합니다. 자세한 내용은 [시스템 요구 사항](/pdf/net/system-requirements/)을 참조하세요.
+다양한 플랫폼과 .NET 버전을 지원합니다. 자세한 내용은 [시스템 요구 사항](/pdf/ko/net/system-requirements/)을 참조하세요.
 
 ## 일반 기능
 
-Aspose.PDF는 모든 유형의 PDF 콘텐츠를 탐색하고 수정할 수 있는 강력한 문서 객체 모델(DOM)을 제공합니다. [파일 형식](/pdf/net/supported-file-formats/) 목록에서 로드 및 저장을 지원합니다.
+Aspose.PDF는 모든 유형의 PDF 콘텐츠를 탐색하고 수정할 수 있는 강력한 문서 객체 모델(DOM)을 제공합니다. [파일 형식](/pdf/ko/net/supported-file-formats/) 목록에서 로드 및 저장을 지원합니다.
 
 ## 지원되는 PDF 표준
 

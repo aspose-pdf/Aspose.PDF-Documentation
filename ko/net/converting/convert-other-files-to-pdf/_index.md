@@ -82,7 +82,7 @@ sitemap:
 
 이 문서에서는 **C#을 사용하여 다양한 다른 유형의 파일 형식을 PDF로 변환하는 방법**을 설명합니다. 다음 주제를 다룹니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 _형식_: **EPUB**
 - [C# EPUB을 PDF로 변환](#csharp-convert-epub-to-pdf)

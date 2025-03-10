@@ -83,7 +83,7 @@ PDF 문서에는 때때로 AcroForm으로 알려진 상호작용 양식이 포�
 
 ## 구현 세부정보
 
-개발자는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)를 사용하여 PDF 문서에 새로운 양식 및 양식 필드를 추가할 뿐만 아니라 기존 필드를 편집할 수 있습니다. 이 기사의 범위는 양식 편집과 관련된 [Aspose.PDF for .NET](/pdf/net/)의 기능으로 제한됩니다.
+개발자는 [Aspose.Pdf.Facades 네임스페이스](https://reference.aspose.com/pdf/net/aspose.pdf.facades)를 사용하여 PDF 문서에 새로운 양식 및 양식 필드를 추가할 뿐만 아니라 기존 필드를 편집할 수 있습니다. 이 기사의 범위는 양식 편집과 관련된 [Aspose.PDF for .NET](/pdf/ko/net/)의 기능으로 제한됩니다.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) 클래스는 개발자가 양식 필드를 편집할 수 있도록 하는 대부분의 메서드와 속성을 포함하고 있습니다. 새로운 필드를 추가할 뿐만 아니라 기존 필드를 제거하고, 한 필드를 다른 위치로 이동하고, 필드 이름이나 속성을 변경하는 등의 작업을 수행할 수 있습니다. 이 클래스에서 제공하는 기능 목록은 매우 포괄적이며, 이 클래스를 사용하여 양식 필드로 작업하는 것은 매우 쉽습니다.
 

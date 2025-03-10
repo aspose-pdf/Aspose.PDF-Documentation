@@ -82,7 +82,7 @@ sitemap:
 
 PDF 문서 작업 시 테이블은 중요합니다. 테이블은 정보를 체계적으로 표시하는 데 훌륭한 기능을 제공합니다. Aspose.PDF 네임스페이스에는 PDF 문서를 처음부터 생성할 때 테이블을 생성하는 기능을 제공하는 [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table), [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell), [Row](https://reference.aspose.com/pdf/net/aspose.pdf/row)라는 클래스가 포함되어 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 Table 클래스의 객체를 생성하여 테이블을 만들 수 있습니다.
 

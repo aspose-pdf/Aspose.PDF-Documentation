@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET은 태그가 있는 PDF 문서에서 테이블을 생성할 수 있게 합니다. 테이블 작업을 위해 API는 [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) 클래스를 제공합니다. 테이블을 생성하려면 [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) 인터페이스의 [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) 메서드를 사용할 수 있습니다. 또한, [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) 클래스의 [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead), [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) 및 [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) 메서드를 사용하여 각각 테이블 헤드, 테이블 본문 및 테이블 바닥글을 생성할 수 있습니다. 테이블 행을 생성하려면 [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement) 클래스의 [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) 메서드를 사용할 수 있습니다. 생성된 PDF 문서가 PDF/UA 준수인지 확인하려면 Document 클래스의 Validate() 메서드를 사용할 수 있습니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작업합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작업합니다.
 
 다음 코드 스니펫은 태그가 있는 PDF 문서에서 테이블을 생성하는 방법을 보여줍니다:
 

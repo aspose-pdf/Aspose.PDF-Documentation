@@ -94,10 +94,10 @@ PKCS7 분리형에 대한 다이제스트 알고리즘:
 
 SHA-1 다이제스트 알고리즘을 사용하는 디지털 서명은 보안상의 이유로 피하는 것이 좋습니다.
 
-- [PDF 파일 디지털 서명하기](/pdf/net/digitally-sign-pdf-file/)
-- [권한 설정, PDF 파일 암호화 및 복호화](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [이미지 및 서명 정보 추출하기](/pdf/net/extract-image-and-signature-information/)
-- [스마트 카드에서 PDF 문서 서명하기](/pdf/net/sign-pdf-document-from-smart-card/)
+- [PDF 파일 디지털 서명하기](/pdf/ko/net/digitally-sign-pdf-file/)
+- [권한 설정, PDF 파일 암호화 및 복호화](/pdf/ko/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [이미지 및 서명 정보 추출하기](/pdf/ko/net/extract-image-and-signature-information/)
+- [스마트 카드에서 PDF 문서 서명하기](/pdf/ko/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

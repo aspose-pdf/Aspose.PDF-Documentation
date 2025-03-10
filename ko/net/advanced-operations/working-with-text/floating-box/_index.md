@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-이 기능은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리에서도 작동합니다.
+이 기능은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리에서도 작동합니다.
 
 ## FloatingBox 도구 사용의 기초
 

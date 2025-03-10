@@ -81,11 +81,11 @@ sitemap:
 
 ## C#에서 PDF 파일 인쇄하는 방법
 
-- [.NET Framework에서 PDF 인쇄하기](/pdf/net/printing-pdf-in-net-framework/)
-- [XPS 프린터로 PDF 인쇄하기 (파사드)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [PDF를 PostScript로 변환, 인쇄 작업 상태 확인](/pdf/net/pdf-to-postscript-conversion/)
-- [.NET Core에서 PDF 인쇄하기](/pdf/net/print-dotnetcore/)
-- [WPF 애플리케이션에서 PDF 문서 인쇄하기](/pdf/net/print-pdf-document-in-wpf-application/)
+- [.NET Framework에서 PDF 인쇄하기](/pdf/ko/net/printing-pdf-in-net-framework/)
+- [XPS 프린터로 PDF 인쇄하기 (파사드)](/pdf/ko/net/printing-pdf-to-an-xps-printer-facades/)
+- [PDF를 PostScript로 변환, 인쇄 작업 상태 확인](/pdf/ko/net/pdf-to-postscript-conversion/)
+- [.NET Core에서 PDF 인쇄하기](/pdf/ko/net/print-dotnetcore/)
+- [WPF 애플리케이션에서 PDF 문서 인쇄하기](/pdf/ko/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

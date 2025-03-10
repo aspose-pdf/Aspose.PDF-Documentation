@@ -87,7 +87,7 @@ _형식_: **HTML**
 - [C# PDF를 HTML로 변환하기](#csharp-pdf-to-html)
 - [C# PDF 파일을 HTML로 변환하는 방법](#csharp-pdf-to-html)
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF를 HTML로 변환하기
 

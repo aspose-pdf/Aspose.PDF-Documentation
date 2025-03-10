@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 XML 문서에서 PDF 문서를 생성하는 것은 XML 문서가 다양한 내용을 설명할 수 있기 때문에 간단한 작업이 아닙니다. Aspose.PDF for .NET는 XML 문서를 기반으로 PDF를 생성하는 여러 가지 방법을 제공합니다:
 

@@ -83,10 +83,10 @@ sitemap:
 첨부파일은 부모 문서에 첨부된 추가 파일로, pdf, word, 이미지 또는 기타 파일 유형이 될 수 있습니다.
 PDF에 첨부파일을 추가하고, 첨부파일 정보를 가져오고, 파일로 저장하고, C#을 사용하여 프로그래밍 방식으로 PDF에서 첨부파일을 삭제하는 방법을 배우게 됩니다.
 
-- [PDF 문서에 첨부파일 추가하기](/pdf/net/add-attachment-to-pdf-document/)
-- [첨부파일 추출 및 저장하기](/pdf/net/extract-and-save-an-attachment/)
-- [기존 PDF에서 첨부파일 제거하기](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [포트폴리오](/pdf/net/portfolio/)
+- [PDF 문서에 첨부파일 추가하기](/pdf/ko/net/add-attachment-to-pdf-document/)
+- [첨부파일 추출 및 저장하기](/pdf/ko/net/extract-and-save-an-attachment/)
+- [기존 PDF에서 첨부파일 제거하기](/pdf/ko/net/removing-attachment-from-an-existing-pdf/)
+- [포트폴리오](/pdf/ko/net/portfolio/)
 
 <script type="application/ld+json">
 {

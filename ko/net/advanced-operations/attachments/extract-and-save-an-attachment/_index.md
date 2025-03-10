@@ -90,7 +90,7 @@ PDF 파일에서 모든 첨부 파일을 가져오려면:
 
 다음 코드 조각은 PDF 문서에서 모든 첨부 파일을 가져오는 방법을 보여줍니다.
 
-다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 함께 작동합니다.
+다음 코드 조각은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 함께 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

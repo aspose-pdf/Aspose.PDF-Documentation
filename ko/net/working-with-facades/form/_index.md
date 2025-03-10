@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [폼 필드 이름 식별하기](/pdf/net/identifying-form-fields-names/)
-- [텍스트 상자 필드에서 텍스트 정렬하기](/pdf/net/justify-text-in-a-textbox-field/)
-- [XML, FDF 및 XFDF의 차이점은 무엇인가](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [버튼 옵션 값 가져오기](/pdf/net/get-button-option-value/)
-- [데이터 가져오기 및 내보내기](/pdf/net/import-and-export-data/)
+- [폼 필드 이름 식별하기](/pdf/ko/net/identifying-form-fields-names/)
+- [텍스트 상자 필드에서 텍스트 정렬하기](/pdf/ko/net/justify-text-in-a-textbox-field/)
+- [XML, FDF 및 XFDF의 차이점은 무엇인가](/pdf/ko/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [버튼 옵션 값 가져오기](/pdf/ko/net/get-button-option-value/)
+- [데이터 가져오기 및 내보내기](/pdf/ko/net/import-and-export-data/)

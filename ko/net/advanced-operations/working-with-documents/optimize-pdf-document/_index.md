@@ -104,7 +104,7 @@ PDF 문서에는 때때로 추가 데이터가 포함될 수 있습니다. PDF �
 1. [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize) 메서드를 사용합니다.
 1. [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) 메서드를 사용하여 최적화된 문서를 저장합니다.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 다음 코드 스니펫은 웹을 위해 PDF 문서를 최적화하는 방법을 보여줍니다.
 

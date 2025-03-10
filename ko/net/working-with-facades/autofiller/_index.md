@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF 양식을 채우기 위해 Excel 워크시트 데이터를 내보내기](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [PDF 양식을 채우기 위해 Excel 워크시트 데이터를 내보내기](/pdf/ko/net/export-excel-worksheet-data-to-fill-pdf-form/)

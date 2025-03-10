@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API는 문서에서 글꼴을 사용할 수 없을 때 기본 글꼴 이름을 설정할 수 있도록 합니다. RenderingOptions 클래스의 DefaultFontName 속성을 사용하여 기본 글꼴 이름을 설정할 수 있습니다. DefaultFontName이 null로 설정된 경우 **Times New Roman** 글꼴이 사용됩니다. 다음 코드 조각은 PDF를 이미지로 저장할 때 기본 글꼴 이름을 설정하는 방법을 보여줍니다:
 
-다음 코드 조각은 [Aspose.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 조각은 [Aspose.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

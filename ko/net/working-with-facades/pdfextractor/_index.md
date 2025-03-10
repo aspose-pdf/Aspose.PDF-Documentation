@@ -12,7 +12,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-- [텍스트 추출](/pdf/net/extract-text/)
-- [이미지 추출](/pdf/net/extract-images/)
-- [첨부 파일 추출](/pdf/net/extract-attachments/)
-- [PDF 파일에 이미지 또는 텍스트만 포함되어 있는지 확인](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [텍스트 추출](/pdf/ko/net/extract-text/)
+- [이미지 추출](/pdf/ko/net/extract-images/)
+- [첨부 파일 추출](/pdf/ko/net/extract-attachments/)
+- [PDF 파일에 이미지 또는 텍스트만 포함되어 있는지 확인](/pdf/ko/net/find-whether-pdf-file-contains-images-or-text-only/)

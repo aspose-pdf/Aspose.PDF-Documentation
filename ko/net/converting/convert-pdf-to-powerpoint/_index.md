@@ -93,7 +93,7 @@ _형식_: **PowerPoint**
 - [C# PDF를 PowerPoint로 변환하기](#csharp-pdf-to-powerpoint)
 - [C# PDF 파일을 PowerPoint로 변환하는 방법](#csharp-pdf-to-powerpoint)
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## C# PDF를 PowerPoint 및 PPTX로 변환하기
 

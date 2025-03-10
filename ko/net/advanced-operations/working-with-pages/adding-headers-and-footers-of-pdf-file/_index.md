@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET**은 기존 PDF 파일에 헤더와 푸터를 추가할 수 있게 해줍니다. PDF 문서에 이미지나 텍스트를 추가할 수 있습니다. 또한 C#을 사용하여 하나의 PDF 파일에 서로 다른 헤더를 추가해 보십시오.
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와 함께 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와 함께 작동합니다.
 
 ## PDF 파일의 헤더에 텍스트 추가
 

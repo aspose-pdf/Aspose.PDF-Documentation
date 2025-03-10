@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [PDF 파일에 서명 추가](/pdf/net/add-signature-in-pdf/)
-- [PDF 파일에서 서명 제거](/pdf/net/remove-signature-from-pdf/)
-- [PDF 파일에서 서명 확인](/pdf/net/verify-signature-in-pdf/)
-- [PDF 파일에서 서명 작업하기](/pdf/net/add-signature-in-pdf/)
+- [PDF 파일에 서명 추가](/pdf/ko/net/add-signature-in-pdf/)
+- [PDF 파일에서 서명 제거](/pdf/ko/net/remove-signature-from-pdf/)
+- [PDF 파일에서 서명 확인](/pdf/ko/net/verify-signature-in-pdf/)
+- [PDF 파일에서 서명 작업하기](/pdf/ko/net/add-signature-in-pdf/)

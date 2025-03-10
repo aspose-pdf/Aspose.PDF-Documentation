@@ -87,7 +87,7 @@ AcroForm은 PDF 문서의 중요한 유형입니다. [Aspose.Pdf.Facades 네임�
 
 ## 구현 세부사항
 
-다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/net/drawing/) 라이브러리와도 작동합니다.
+다음 코드 스니펫은 [Aspose.PDF.Drawing](/pdf/ko/net/drawing/) 라이브러리와도 작동합니다.
 
 이 기사에서는 [Aspose.Pdf.Facades 네임스페이스](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace)를 사용하여 AcroForm을 생성하려고 했습니다. 또한 제출 버튼을 추가하고 그 대상 URL을 설정했습니다. 다음 코드 스니펫은 양식을 생성한 후 웹 페이지에서 게시된 데이터를 수신하는 방법을 보여줍니다.
 

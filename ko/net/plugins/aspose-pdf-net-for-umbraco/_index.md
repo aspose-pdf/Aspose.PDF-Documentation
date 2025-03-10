@@ -13,4 +13,4 @@ sitemap:
 ---
 이 섹션에는 다음 주제가 포함되어 있습니다:
 
-- [Umbraco PDF 가져오기 모듈](/pdf/net/umbraco-pdf-import-module/)
+- [Umbraco PDF 가져오기 모듈](/pdf/ko/net/umbraco-pdf-import-module/)

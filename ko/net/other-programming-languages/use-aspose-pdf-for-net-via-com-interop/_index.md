@@ -75,7 +75,7 @@ description: 비-.NET 애플리케이션과의 원활한 통합을 위해 COM In
 
 {{% alert color="primary" %}}
 
-이 주제의 정보는 다음 프로그래밍 언어 중 하나에서 COM Interop을 통해 [Aspose.PDF for .NET](/pdf/net/)을 사용하려는 시나리오에 적용됩니다:
+이 주제의 정보는 다음 프로그래밍 언어 중 하나에서 COM Interop을 통해 [Aspose.PDF for .NET](/pdf/ko/net/)을 사용하려는 시나리오에 적용됩니다:
 
 - ASP
 - Delphi
@@ -94,7 +94,7 @@ description: 비-.NET 애플리케이션과의 원활한 통합을 위해 COM In
 
 Aspose.PDF for .NET은 .NET Framework의 제어 하에 실행되며 이를 관리 코드라고 합니다. 위의 모든 언어로 작성된 코드는 .NET Framework 외부에서 실행되며 이를 비관리 코드라고 합니다. 비관리 코드와 Aspose.PDF 간의 상호작용은 COM Interop이라는 .NET 기능을 통해 발생합니다.
 
-Aspose.PDF 객체는 .NET 객체이지만 COM Interop을 통해 사용될 때는 프로그래밍 언어에서 COM 객체로 나타납니다. 따라서 [Aspose.PDF for .NET](/pdf/net/)을 사용하기 전에 프로그래밍 언어에서 COM 객체를 생성하고 사용하는 방법을 아는 것이 가장 좋습니다.
+Aspose.PDF 객체는 .NET 객체이지만 COM Interop을 통해 사용될 때는 프로그래밍 언어에서 COM 객체로 나타납니다. 따라서 [Aspose.PDF for .NET](/pdf/ko/net/)을 사용하기 전에 프로그래밍 언어에서 COM 객체를 생성하고 사용하는 방법을 아는 것이 가장 좋습니다.
 
 {{% alert color="primary" %}}
 
