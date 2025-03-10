@@ -1,10 +1,12 @@
 ---
-title: Set Image Size
-linktitle: Set Image Size
+title: Установить размер изображения
+linktitle: Установить размер изображения
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 80
 url: /ru/net/set-image-size/
-description: Этот раздел описывает, как установить размер изображения в PDF файле с использованием библиотеки C#.
+description: Этот раздел описывает, как установить размер изображения в PDF-файле с использованием библиотеки C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
@@ -12,21 +14,22 @@ lastmod: "2022-02-17"
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Set Image Size",
-    "alternativeHeadline": "Как установить размер изображения в PDF файле с использованием C#",
+    "alternativeHeadline": "Set Custom Image Dimensions in PDFs with C#",
+    "abstract": "Откройте для себя новую функцию Установить размер изображения в библиотеке Aspose.PDF для .NET, которая позволяет легко определять размеры изображений, добавленных в PDF-документы. С такими свойствами, как FixWidth и FixHeight, вы можете настроить размеры изображений для аккуратного и профессионального внешнего вида в ваших PDF-файлах. Оптимизируйте свой рабочий процесс генерации PDF, освоив эту важную функциональность.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация PDF документов",
-    "keywords": "pdf, c#, set image size",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Set Image Size, PDF generation, C# library, FixWidth, FixHeight, Aspose.Pdf.Image, image dimensions, PDF file manipulation, Aspose.PDF for .NET",
+    "wordcount": "216",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,46 +71,59 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/set-image-size/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел описывает, как установить размер изображения в PDF файле с использованием библиотеки C#."
+    "dateModified": "2024-11-26",
+    "description": "Этот раздел описывает, как установить размер изображения в PDF-файле с использованием библиотеки C#."
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Возможно установить размер изображения, которое добавляется в файл PDF. Для установки размера можно использовать свойства FixWidth и FixHeight класса Aspose.Pdf.Image. Следующий фрагмент кода демонстрирует, как установить размер изображения:
+Возможно установить размер изображения, которое добавляется в PDF-файл. Для установки размера вы можете использовать свойства FixWidth и FixHeight класса Aspose.Pdf.Image. Следующий фрагмент кода демонстрирует, как установить размер изображения:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-// Создаем объект документа
-Document doc = new Document();
-// добавляем страницу в коллекцию страниц PDF файла
-Aspose.Pdf.Page page = doc.Pages.Add();
-// Создаем экземпляр изображения
-Aspose.Pdf.Image img = new Aspose.Pdf.Image();
-// Устанавливаем ширину и высоту изображения в точках
-img.FixWidth = 100;
-img.FixHeight = 100;
-// Устанавливаем тип изображения как SVG
-img.FileType = Aspose.Pdf.ImageFileType.Unknown;
-// Путь к исходному файлу
-img.File = dataDir + "aspose-logo.jpg";
-page.Paragraphs.Add(img);
-// Устанавливаем свойства страницы
-page.PageInfo.Width = 800;
-page.PageInfo.Height = 800;
-dataDir = dataDir + "SetImageSize_out.pdf";
-// сохраняем результат в PDF файл
-doc.Save(dataDir);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetImageSizeInPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create an image instance
+        var img = new Aspose.Pdf.Image();
+
+        // Set Image Width and Height in Points
+        img.FixWidth = 100;
+        img.FixHeight = 100;
+
+        // Set image type as SVG
+        img.FileType = Aspose.Pdf.ImageFileType.Unknown;
+
+        // Path for source file
+        img.File = dataDir + "InputImage.jpg";
+
+        // Add image to the page
+        page.Paragraphs.Add(img);
+
+        // Set page properties
+        page.PageInfo.Width = 800;
+        page.PageInfo.Height = 800;
+
+        // Save PDF document
+        document.Save(dataDir + "SetImageSize_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Библиотека Aspose.PDF для .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -129,23 +145,23 @@ doc.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -154,7 +170,7 @@ doc.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипулирования PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -166,5 +182,3 @@ doc.Save(dataDir);
     }
 }
 </script>
-```
-

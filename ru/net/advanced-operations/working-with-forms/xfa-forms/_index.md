@@ -1,10 +1,12 @@
 ---
-title: Работа с XFA формами
-linktitle: XFA формы
+title: Работа с формами XFA
+linktitle: Формы XFA
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/xfa-forms/
-description: Aspose.PDF для .NET API позволяет работать с полями XFA и XFA Acroform в документе PDF. Aspose.PDF.Facades.
+description: API Aspose.PDF for .NET позволяет работать с полями XFA и XFA Acroform в PDF-документе. Aspose.Pdf.Facades.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с XFA формами",
-    "alternativeHeadline": "Заполнение, конвертация и получение XFA форм в PDF",
+    "headline": "Working with XFA Forms",
+    "alternativeHeadline": "Enhance PDF handling with XFA form support",
+    "abstract": "Aspose.PDF для .NET теперь предлагает расширенные возможности для работы с формами XFA, позволяя разработчикам заполнять, преобразовывать и управлять полями Acroform XFA в PDF-документах. Эта функция упрощает управление динамическими формами, обеспечивая беспрепятственный доступ к значениям и свойствам полей, а также эффективное преобразование из XFA в стандартные AcroForms. Усовершенствуйте рабочий процесс обработки PDF-файлов с помощью этого надёжного решения для работы со сложными структурами форм.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, заполнить xfa форму, получить xfa форму, конвертировать xfa форму",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "XFA Forms, Aspose.PDF for .NET, fill XFA form, convert XFA to Acroform, get XFA field properties, dynamic forms, XML Forms Architecture, manipulate XFA fields, AcroForm fields, PDF document generation",
+    "wordcount": "684",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,104 +74,274 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/xfa-forms/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF для .NET API позволяет работать с полями XFA и XFA Acroform в документе PDF. Aspose.PDF.Facades."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF для .NET API позволяет работать с полями XFA и XFA Acroform в PDF-документе. Aspose.Pdf.Facades"
 }
 </script>
+
 {{% alert color="primary" %}}
 
-Динамические формы основаны на спецификации XML, известной как XFA, "Архитектура XML-форм". Также возможно преобразование динамической формы XFA в стандартную Acroform. Информация о форме (насколько это касается PDF) очень скудная – она указывает, что поля существуют, с свойствами и событиями JavaScript, но не определяет их визуализацию. Объекты формы XFA отрисовываются в момент загрузки документа.
+Динамические формы основаны на XML-спецификации, известной как XFA (Архитектура XML-форм). Она также может преобразовывать динамическую форму XFA в стандартный Acroform. Информация о форме (что касается PDF) очень расплывчата — она указывает на то, что поля существуют со свойствами и событиями JavaScript, но не определяет никакого рендеринга. Объекты формы XFA рисуются при загрузке документа.
 
 {{% /alert %}}
 
-Класс Form предоставляет возможность работать со статической AcroForm, и вы можете получить экземпляр конкретного поля, используя метод GetFieldFacade(..) класса Form. Однако поля XFA недоступны через метод Form.GetFieldFacade(..). Вместо этого используйте [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) для получения/установки значений полей и управления шаблоном поля XFA (установка свойств поля).
+Класс Form предоставляет возможность работать со статическими AcroForm, и вы можете получить конкретный экземпляр поля, используя метод Form class’ GetFieldFacade(..). Однако доступ к полям XFA невозможен через метод Form.GetFieldFacade(..). Вместо этого используйте [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) для получения/установки значений полей и управления шаблоном полей XFA (установка свойств полей).
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Заполнение полей XFA
 
-Следующий фрагмент кода показывает, как заполнить поля в форме XFA.
-Следующий фрагмент кода показывает, как заполнять поля в форме XFA.
+В следующем фрагменте кода показано, как заполнять поля в форме XFA.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void FillXFAFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Загрузить XFA форму
-Document doc = new Document(dataDir + "FillXFAFields.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FillXFAFields.pdf"))
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
 
-// Получить имена полей XFA формы
-string[] names = doc.Form.XFA.FieldNames;
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
 
-// Установить значения полей
-doc.Form.XFA[names[0]] = "Поле 0";
-doc.Form.XFA[names[1]] = "Поле 1";
-dataDir = dataDir + "Filled_XFA_out.pdf";
-// Сохранить обновленный документ
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
+}
 ```
 
-## Конвертация XFA в Acroform
+## Преобразование из XFA в Acroform
 
 {{% alert color="primary" %}}
 
 Попробуйте онлайн
-Вы можете проверить качество конвертации Aspose.PDF и просмотреть результаты онлайн по этой ссылке: [products.aspose.app/pdf/xfa/](https://products.aspose.app/pdf/xfa/)
+Вы можете проверить качество преобразования Aspose.PDF и просмотреть результаты онлайн по этой ссылке: [products.aspose.app/pdf/xfa/acroform](https://products.aspose.app/pdf/xfa/acroform)
 
 {{% /alert %}}
 
-Динамические формы основаны на XML спецификации, известной как XFA, "XML Forms Architecture".
-Динамические формы основаны на спецификации XML, известной как XFA, "Архитектура форм XML".
+Динамические формы основаны на XML-спецификации, известной как XFA (Архитектура XML-форм). Информация о форме (что касается PDF) очень расплывчата — она указывает на то, что поля существуют со свойствами и событиями JavaScript, но не определяет никакого рендеринга.
 
-В настоящее время PDF поддерживает два различных метода интеграции данных и форм PDF:
+В настоящее время PDF поддерживает два различных метода интеграции данных и PDF-форм:
 
-- AcroForms (также известные как формы Acrobat), введенные и включенные в спецификацию формата PDF 1.2.
-- Формы Adobe XML Forms Architecture (XFA), введенные в спецификацию формата PDF 1.5 как необязательная функция (спецификация XFA не включена в спецификацию PDF, она только упоминается.)
+- AcroForms (также известные как формы Acrobat), представленные и включённые в спецификацию формата PDF 1.2.
+- Формы Adobe XML Forms Architecture (XFA), представленные в спецификации формата PDF 1.5 в качестве дополнительной функции (спецификация XFA не включена в спецификацию PDF, на неё только ссылаются).
 
-Мы не можем извлекать или манипулировать страницами форм XFA, потому что содержимое формы генерируется во время выполнения (при просмотре формы XFA) в приложении, пытающемся отобразить или визуализировать форму XFA. Aspose.PDF имеет функцию, которая позволяет разработчикам конвертировать формы XFA в стандартные AcroForms.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Загрузка динамической XFA формы
-Document document = new Document(dataDir + "DynamicXFAToAcroForm.pdf");
-
-// Установка типа полей формы как стандартный AcroForm
-document.Form.Type = FormType.Standard;
-
-dataDir = dataDir + "Standard_AcroForm_out.pdf";
-// Сохранение результирующего PDF
-document.Save(dataDir);
-```
-## Получение свойств полей XFA
-
-Для доступа к свойствам полей сначала используйте Document.Form.XFA.Teamplate для доступа к шаблону поля. Следующий фрагмент кода показывает шаги получения координат X и Y поля формы XFA.
+Мы не можем извлекать или управлять страницами форм XFA, поскольку содержимое формы генерируется во время выполнения (во время просмотра формы XFA) в приложении, пытающемся отобразить или отрисовать форму XFA. В Aspose.PDF есть функция, которая позволяет разработчикам преобразовывать формы XFA в стандартные формы AcroForms.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertDynamicXFAToAcroForm()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Загрузить форму XFA
-Document doc = new Document(dataDir + "GetXFAProperties.pdf");
+    // Load dynamic XFA form
+    using (var document = new Aspose.Pdf.Document(dataDir + "DynamicXFAToAcroForm.pdf"))
+    {
+        // Set the form fields type as standard AcroForm
+        document.Form.Type = Aspose.Pdf.Forms.FormType.Standard;
 
-string[] names = doc.Form.XFA.FieldNames;
-
-// Установить значения полей
-doc.Form.XFA[names[0]] = "Поле 0";
-doc.Form.XFA[names[1]] = "Поле 1";
-
-// Получить позицию поля
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
-
-// Получить позицию поля
-Console.WriteLine(doc.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
-
-dataDir = dataDir + "Filled_XFA_out.pdf";
-// Сохранить обновленный документ
-doc.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "StandardAcroForm_out.pdf");
+    }
+}
 ```
 
+## Получение свойств поля XFA
+
+Чтобы получить доступ к свойствам поля, сначала используйте Document.Form.XFA.Template для доступа к шаблону поля. Следующий фрагмент кода показывает шаги получения координат X и Y поля формы XFA.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetXFAProperties()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetXFAProperties.pdf"))
+    {
+        // Get names of XFA form fields
+        var names = document.Form.XFA.FieldNames;
+
+        // Set field values
+        if (names.Length > 0)
+        {
+            document.Form.XFA[names[0]] = "Field 0";
+        }
+        if (names.Length > 1)
+        {
+            document.Form.XFA[names[1]] = "Field 1";
+        }
+
+        // Get field position
+        if (names.Length > 0)
+        {
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["x"].Value);
+            Console.WriteLine(document.Form.XFA.GetFieldTemplate(names[0]).Attributes["y"].Value);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "FilledXfa_out.pdf");
+    }
+}
+```
+
+<!-- 4555265043 -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Программное приложение",
+    "название": "Библиотека Aspose.PDF for .NET",
+    "изображение": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "Издатель": {
+        "@type": "Организация",
+        "Название": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "логотип": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

@@ -1,10 +1,12 @@
 ---
 title: Создание ссылок в PDF-файле с помощью C#
-linktitle: Создание ссылок
+linktitle: Создать ссылки
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/create-links/
-description: В этом разделе объясняется, как создать ссылки в вашем PDF-документе с помощью C#.
+description: В этом разделе объясняется, как создавать ссылки в вашем PDF-документе с помощью C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Создание ссылок в PDF-файле с помощью C#",
-    "alternativeHeadline": "Как создать ссылки в PDF",
+    "headline": "Create Links in PDF file with C#",
+    "alternativeHeadline": "Create Interactive Links in PDFs Using C#",
+    "abstract": "Новая функция позволяет разработчикам легко создавать интерактивные ссылки в PDF-документах с помощью C#. Эта функциональность повышает вовлечённость пользователей, позволяя переходить к внешним приложениям или другим PDF-файлам, и обеспечивает более динамичную и функциональную работу с документами. Интеграция идеально подходит для обучающих материалов и помощи пользователям, она даёт возможность эффективно связывать контент",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, создание ссылки в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Create Links, PDF document, C#, LinkAnnotation, LaunchAction, GoToRemoteAction, Aspose.PDF, Document object, PDF manipulation, External link",
+    "wordcount": "690",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,85 +74,157 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/create-links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "В этом разделе объясняется, как создать ссылки в вашем PDF-документе с помощью C#."
+    "dateModified": "2024-11-25",
+    "description": "Этот раздел объясняет, как создавать ссылки в PDF-документе с помощью C#."
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-## Создание ссылок
+## Создать ссылки
 
-Добавив ссылку на приложение в документ, можно создать ссылки на приложения из документа. Это полезно, когда вы хотите, чтобы читатели предприняли определенные действия в конкретной точке учебного материала, например, или для создания документа с богатым функционалом. Чтобы создать ссылку на приложение:
+Добавляя ссылку на приложение в документ, можно связать документ с приложениями. Это полезно, когда вы хотите, чтобы читатели выполнили определённое действие в определённой точке учебного пособия или создать многофункциональный документ. Чтобы создать ссылку на приложение:
 
-1. [Создайте объект Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Получите [страницу](https://reference.aspose.com/pdf/net/aspose.pdf/page), к которой вы хотите добавить ссылку.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Получите нужную [страницу](https://reference.aspose.com/pdf/net/aspose.pdf/page).
 1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation), используя объекты Page и [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
 1. Установите атрибуты ссылки с помощью объекта [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
+1. Также установите свойство Action объекта [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction).
 1. При создании объекта [LaunchAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/launchaction) укажите приложение, которое хотите запустить.
-1. Добавьте ссылку в свойство [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) объекта Page.
-1. Наконец, сохраните обновленный PDF с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
+1. Добавьте ссылку в коллекцию [Annotations](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/annotations) объекта Page.
+1. Наконец, сохраните обновлённый PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
 
-Приведенный ниже фрагмент кода показывает, как создать ссылку на приложение в файле PDF.
+Следующий фрагмент кода показывает, как создать ссылку на приложение в PDF-файле.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
 
-// Открыть документ
-Document document = new Document(dataDir + "CreateApplicationLink.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
+        page.Annotations.Add(link);
 
-// Создать ссылку
-Page page = document.Pages[1];
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-link.Action = new LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
-page.Annotations.Add(link);
-
-dataDir = dataDir + "CreateApplicationLink_out.pdf";
-// Сохранить обновленный документ
-document.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "CreateApplicationLink_out.pdf");
+    }
+}
 ```
-### Создание ссылки на документ PDF в файле PDF
+{{< /tab >}}
 
-Aspose.PDF для .NET позволяет добавлять ссылку на внешний файл PDF, так что вы можете связывать несколько документов вместе. Чтобы создать ссылку на документ PDF:
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateApplicationLink.pdf");
+
+    // Create link
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    link.Action = new Aspose.Pdf.Annotations.LaunchAction(document, dataDir + "CreateApplicationLink.pdf");
+    page.Annotations.Add(link);
+
+    // Save PDF document
+    document.Save(dataDir + "CreateApplicationLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+### Создание ссылки на PDF-документ в PDF-файле
+
+Aspose.PDF for .NET позволяет добавить ссылку на внешний PDF-файл, чтобы связать несколько документов вместе. Чтобы создать ссылку на PDF-документ:
 
 1. Сначала создайте объект [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
-1. Затем получите конкретную [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page), на которую вы хотите добавить ссылку.
-1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) с использованием объектов Page и [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
+1. Затем получите конкретную [страницу](https://reference.aspose.com/pdf/net/aspose.pdf/page), на которую хотите добавить ссылку.
+1. Создайте объект [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation), используя объекты Page и [Rectangle](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle).
 1. Установите атрибуты ссылки с помощью объекта [LinkAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation).
-1. Установите свойство Action на объект [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction).
-1.
-1. Добавьте ссылку в коллекцию аннотаций объекта Page.
-1. Сохраните обновленный PDF с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
+1. Установите свойство Action для объекта [GoToRemoteAction](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/gotoremoteaction).
+1. Создавая объект GoToRemoteAction, укажите PDF-файл, который должен быть запущен, а также страницу, которую он должен открыть.
+1. Добавьте ссылку в коллекцию Annotations объекта Page.
+1. Сохраните обновлённый PDF-файл, используя метод [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save) объекта Document.
 
-Следующий фрагмент кода показывает, как создать ссылку в документе PDF.
+Следующий фрагмент кода показывает, как создать ссылку на PDF-документ в PDF-файле.
 
- ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
-// Открыть документ
-Document document = new Document(dataDir + "CreateDocumentLink.pdf");
-// Создать ссылку
-Page page = document.Pages[1];
-LinkAnnotation link = new LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
-link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
-link.Action = new GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
-page.Annotations.Add(link);
-dataDir = dataDir + "CreateDocumentLink_out.pdf";
-// Сохранить обновленный документ
-document.Save(dataDir);
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf"))
+    {
+        // Create link
+        var page = document.Pages[1];
+        var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+        link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+        link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
+        page.Annotations.Add(link);
+
+        // Save PDF document
+        document.Save(dataDir + "CreateDocumentLink_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
 
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateLinkAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_LinksActions();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "CreateDocumentLink.pdf");
+
+    // Create link
+    var page = document.Pages[1];
+    var link = new Aspose.Pdf.Annotations.LinkAnnotation(page, new Aspose.Pdf.Rectangle(100, 100, 300, 300));
+    link.Color = Aspose.Pdf.Color.FromRgb(System.Drawing.Color.Green);
+    link.Action = new Aspose.Pdf.Annotations.GoToRemoteAction(dataDir + "RemoveOpenAction.pdf", 1);
+    page.Annotations.Add(link);
+
+    // Save PDF document
+    document.Save(dataDir + "CreateDocumentLink_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+<!-- 1201521256 -->
 <script type="application/ld+json">
-
+{
+    "@context": "http://schema.org",
+    "@type": "Программное приложение",
+    "название": "Библиотека Aspose.PDF for .NET",
+    "изображение": 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для библиотеки .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -171,23 +246,23 @@ document.Save(dataDir);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -196,7 +271,7 @@ document.Save(dataDir);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -208,5 +283,66 @@ document.Save(dataDir);
     }
 }
 </script>
-```
-
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

@@ -1,10 +1,12 @@
 ---
-title: Работа с портфолио в PDF
+title: Работа с портфолио в формате PDF
 linktitle: Портфолио
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ru/net/portfolio/
-description: Как создать PDF портфолио с помощью C#. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF портфолио.
+description: Как создать портфолио в формате PDF с помощью C#. Для создания портфолио в формате PDF следует использовать файл Microsoft Excel, документ Word и файл изображения.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с портфолио в PDF",
-    "alternativeHeadline": "Создание портфолио в документе PDF",
+    "headline": "Working with Portfolio in PDF",
+    "alternativeHeadline": "Create Dynamic PDF Portfolios from Multiple File Types",
+    "abstract": "Откройте для себя инновационную функцию PDF Portfolio в Aspose.PDF, которая позволяет пользователям легко объединять несколько типов файлов, включая Microsoft Excel, документы Word и изображения, в единый PDF-документ. Эта функция не только сохраняет идентичность каждого отдельного файла, но и упрощает процесс управления, извлечения и изменения компонентов в портфеле, обеспечивая удобство работы с документами",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, портфолио",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "PDF Portfolio, C# PDF creation, Aspose.PDF library, Document class, FileSpecification class, file extraction PDF, remove files PDF Portfolio, unified container PDF, embedded files collection, PDF manipulation .NET",
+    "wordcount": "575",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,100 +74,171 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/portfolio/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Как создать PDF портфолио с помощью C#. Вы должны использовать файл Microsoft Excel, документ Word и файл изображения для создания PDF портфолио."
+    "dateModified": "2024-11-25",
+    "description": "Как создать портфолио в формате PDF на C#. Для создания портфолио в формате PDF следует использовать файл Microsoft Excel, документ Word и файл с изображением"
 }
 </script>
+
 ## Как создать портфолио PDF
 
-Aspose.PDF позволяет создавать документы портфолио PDF с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Добавьте файл в объект Document.Collection после его получения с помощью класса [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Когда файлы будут добавлены, используйте метод Save класса Document для сохранения документа портфолио.
+Aspose.PDF позволяет создавать документы портфолио PDF с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Добавьте файл в объект Document.Collection после его получения с помощью класса [FileSpecification](https://reference.aspose.com/pdf/net/aspose.pdf/filespecification). Когда файлы будут добавлены, используйте метод Save класса Document для сохранения документа портфолио.
 
-Следующий пример использует файл Microsoft Excel, документ Word и файл изображения для создания портфолио PDF.
+В следующем примере используется файл Microsoft Excel, документ Word и файл изображения для создания портфолио PDF.
 
-Код ниже приводит к следующему портфолио.
-
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ### Портфолио PDF, созданное с помощью Aspose.PDF
 
-![Портфолио PDF, созданное с помощью Aspose.PDF для .NET](working-with-pdf-portfolio_1.jpg)
+![Портфолио PDF, созданное с Aspose.PDF](working-with-pdf-portfolio_1.jpg)
 
 ```csharp
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
-
-// Создать объект Document
-Document doc = new Document();
-
-// Создать объект коллекции документов
-doc.Collection = new Collection();
-
-// Получить файлы для добавления в портфолио
-FileSpecification excel = new FileSpecification( dataDir + "HelloWorld.xlsx");
-FileSpecification word = new FileSpecification( dataDir + "HelloWorld.docx");
-FileSpecification image = new FileSpecification(dataDir + "aspose-logo.jpg");
-
-// Описать файлы
-excel.Description = "Файл Excel";
-word.Description = "Файл Word";
-image.Description = "Файл изображения";
-
-// Добавить файлы в коллекцию документов
-doc.Collection.Add(excel);
-doc.Collection.Add(word);
-doc.Collection.Add(image);
-
-// Сохранить документ портфолио
-doc.Save(dataDir + "CreatePDFPortfolio_out.pdf");
-```
-## Извлечение файлов из портфолио PDF
-
-Портфолио PDF позволяет объединять содержимое из различных источников (например, PDF, Word, Excel, JPEG файлы) в один единый контейнер. Оригинальные файлы сохраняют свою индивидуальность, но собираются в файл портфолио PDF. Пользователи могут открывать, читать, редактировать и форматировать каждый компонентный файл независимо от других файлов компонентов.
-
-Aspose.PDF позволяет создавать документы портфолио PDF с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document). Также предлагается возможность извлечения файлов из портфолио PDF.
-
-Следующий фрагмент кода показывает вам шаги по извлечению файлов из портфолио PDF.
-
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
-
-// Загрузка исходного PDF портфолио
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-// Получение коллекции встроенных файлов
-EmbeddedFileCollection embeddedFiles = pdfDocument.EmbeddedFiles;
-// Итерация по отдельным файлам портфолио
-foreach (FileSpecification fileSpecification in embeddedFiles)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreatePortfolio()
 {
-    // Получение вложения и запись в файл или поток
-    byte[] fileContent = new byte[fileSpecification.Contents.Length];
-    fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
-    string filename = Path.GetFileName(fileSpecification.Name);
-    // Сохранение извлеченного файла в какое-либо место
-    FileStream fileStream = new FileStream(dataDir + "_out" + filename, FileMode.Create);
-    fileStream.Write(fileContent, 0, fileContent.Length);
-    // Закрытие объекта потока
-    fileStream.Close();
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Instantiate document Collection object
+        document.Collection = new Aspose.Pdf.Collection();
+
+        // Get Files to add to Portfolio
+        var excel = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.xlsx");
+        var word = new Aspose.Pdf.FileSpecification(dataDir + "HelloWorld.docx");
+        var image = new Aspose.Pdf.FileSpecification(dataDir + "aspose-logo.jpg");
+
+        // Provide description of the files
+        excel.Description = "Excel File";
+        word.Description = "Word File";
+        image.Description = "Image File";
+
+        // Add files to document collection
+        document.Collection.Add(excel);
+        document.Collection.Add(word);
+        document.Collection.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "CreatePortfolio_out.pdf");
+    }
 }
 ```
-![Извлечь файлы из портфолио PDF](working-with-pdf-portfolio_2.jpg)
+
+## Извлечение файлов из портфолио PDF
+
+Портфолио PDF позволяет объединить содержимое из различных источников (например, PDF, Word, Excel, файлы JPEG) в один унифицированный контейнер. Исходные файлы сохраняют свою индивидуальность, но собираются в файл портфолио PDF. Пользователи могут открывать, читать, редактировать и форматировать каждый компонентный файл независимо от других компонентных файлов.
+
+Aspose.PDF позволяет создавать документы PDF Portfolio с использованием класса [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) и предлагает возможность извлекать файлы из PDF-портфолио.
+
+Следующий фрагмент кода показывает, как извлечь файлы из PDF-портфолио.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractPortfolioFiles()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        // Get collection of embedded files
+        Aspose.Pdf.EmbeddedFileCollection embeddedFiles = document.EmbeddedFiles;
+        // Iterate through individual file of Portfolio
+        foreach (Aspose.Pdf.FileSpecification fileSpecification in embeddedFiles)
+        {
+            // Get the attachment and write to file or stream
+            byte[] fileContent = new byte[fileSpecification.Contents.Length];
+            fileSpecification.Contents.Read(fileContent, 0, fileContent.Length);
+            string filename = Path.GetFileName(fileSpecification.Name);
+            // Save the extracted file to some location
+            using (FileStream fileStream = new FileStream(dataDir + filename + "_out", FileMode.Create))
+            {
+                fileStream.Write(fileContent, 0, fileContent.Length);
+            }
+        }
+    }
+}
+```
+
+![Извлечение файлов из PDF Portfolio](working-with-pdf-portfolio_2.jpg)
 
 ## Удаление файлов из портфолио PDF
 
-Чтобы удалить файлы из портфолио PDF, используйте следующие строки кода.
+Чтобы удалить файлы из портфолио PDF, попробуйте использовать следующие строки кода.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void RemovePortfolioFiles()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_TechnicalArticles();
 
-// Загрузка исходного портфолио PDF
-Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf");
-pdfDocument.Collection.Delete();
-pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFPortfolio.pdf"))
+    {
+        document.Collection.Delete();
+        // Save PDF document
+        document.Save(dataDir + "NoPortFolio_out.pdf");
+    }
+}
 ```
-
+<!-- 8322880485 -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Программное приложение",
+    "название": "Библиотека Aspose.PDF for .NET",
+    "изображение": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "издательство": {
+        "@type": "Организация",
+        "название": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "логотип": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternativeName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "предложения": {
+        "@type": "Предложение",
+        "цена": "1199",
+        "валюта цены": "USD"
+    },
+    "категория приложения": "Библиотека для работы с PDF для .NET",
+    "URL загрузки": "https://www.nuget.org/packages/Aspose.PDF/",
+    "операционная система": "Windows,
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -228,5 +302,66 @@ pdfDocument.Save(dataDir + "No_PortFolio_out.pdf");
     }
 }
 </script>
-
-
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

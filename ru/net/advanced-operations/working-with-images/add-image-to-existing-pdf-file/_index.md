@@ -1,32 +1,35 @@
 ---
-title: Добавление изображения в PDF с использованием C#
+title: Добавить изображение в PDF с использованием C#
 linktitle: Добавить изображение
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/add-image-to-existing-pdf-file/
-description: В этом разделе описывается, как добавить изображение в существующий PDF-файл с использованием библиотеки C#.
+description: Этот раздел описывает, как добавить изображение в существующий PDF-файл с использованием библиотеки C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Добавление изображения в PDF с использованием C#",
-    "alternativeHeadline": "Как добавить изображение в PDF",
+    "headline": "Add Image to PDF using C#",
+    "alternativeHeadline": "Add Images PDFs in C#",
+    "abstract": "Новая функциональность в библиотеке Aspose.PDF позволяет пользователям без труда добавлять изображения в существующие PDF-файлы с использованием C#. Эта функция упрощает манипуляции с PDF, позволяя точно позиционировать и масштабировать изображения непосредственно в документе, обеспечивая высококачественную интеграцию и контроль над визуальными элементами. С поддержкой различных форматов изображений и конфигураций этот инструмент повышает гибкость управления содержимым PDF.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, добавление изображения в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Add Image to PDF, C#, Aspose.PDF, PDF document generation, image compression, image aspect ratio, PDF file manipulation, add image method, XImage class, clipping mask",
+    "wordcount": "1433",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,193 +71,340 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/add-image-to-existing-pdf-file/"
     },
-    "dateModified": "2022-02-04",
-    "description": "В этом разделе описывается, как добавить изображение в существующий PDF-файл с использованием библиотеки C#."
+    "dateModified": "2024-11-25",
+    "description": "Этот раздел описывает, как добавить изображение в существующий PDF-файл с использованием библиотеки C#."
 }
 </script>
-## Добавление изображения в существующий PDF-файл
 
-Каждая страница PDF содержит свойства Ресурсы и Содержимое. Ресурсы могут быть изображениями и формами, например, в то время как содержимое представлено набором операторов PDF. Каждый оператор имеет свое имя и аргумент. В этом примере используются операторы для добавления изображения в файл PDF.
+## Добавить изображение в существующий PDF-файл
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Каждая страница PDF содержит свойства ресурсов и содержимого. Ресурсы могут быть изображениями и формами, например, в то время как содержимое представлено набором операторов PDF. Каждый оператор имеет свое имя и аргумент. Этот пример использует операторы для добавления изображения в PDF-файл.
 
-Чтобы добавить изображение в существующий файл PDF:
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+Чтобы добавить изображение в существующий PDF-файл:
 
 - Создайте объект Document и откройте входной PDF-документ.
-- Получите страницу, на которую вы хотите добавить изображение.
-- Добавьте изображение в коллекцию Ресурсов страницы.
+- Получите страницу, в которую вы хотите добавить изображение.
+- Добавьте изображение в коллекцию ресурсов страницы.
 - Используйте операторы для размещения изображения на странице:
-- Используйте оператор GSave для сохранения текущего графического состояния.
-- Используйте оператор ConcatenateMatrix для указания местоположения изображения.
-- Используйте оператор Do для отрисовки изображения на странице.
-- Наконец, используйте оператор GRestore для сохранения обновленного графического состояния.
+- Используйте оператор GSave, чтобы сохранить текущее графическое состояние.
+- Используйте оператор ConcatenateMatrix, чтобы указать, где должно быть размещено изображение.
+- Используйте оператор Do, чтобы нарисовать изображение на странице.
+- Наконец, используйте оператор GRestore, чтобы сохранить обновленное графическое состояние.
 - Сохраните файл.
-Следующий фрагмент кода показывает, как добавить изображение в документ PDF.
+Следующий фрагмент кода показывает, как добавить изображение в PDF-документ.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageToPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir+ "AddImage.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddImage.pdf"))
+    {
+        // Set coordinates for the image placement
+        int lowerLeftX = 100;
+        int lowerLeftY = 100;
+        int upperRightX = 200;
+        int upperRightY = 200;
 
-// Установить координаты
-int lowerLeftX = 100;
-int lowerLeftY = 100;
-int upperRightX = 200;
-int upperRightY = 200;
+        // Get the page where image needs to be added
+        var page = document.Pages[1];
 
-// Получить страницу, куда нужно добавить изображение
-Page page = pdfDocument.Pages[1];
-// Загрузить изображение в поток
-FileStream imageStream = new FileStream(dataDir + "aspose-logo.jpg", FileMode.Open);
-// Добавить изображение в коллекцию изображений ресурсов страницы
-page.Resources.Images.Add(imageStream);
-// Использование оператора GSave: этот оператор сохраняет текущее графическое состояние
-page.Contents.Add(new Aspose.Pdf.Operators.GSave());
-// Создать объекты Rectangle и Matrix
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-Matrix matrix = new Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
-// Использование оператора ConcatenateMatrix (конкатенация матрицы): определяет, как должно быть размещено изображение
-page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
-XImage ximage = page.Resources.Images[page.Resources.Images.Count];
-// Использование оператора Do: этот оператор рисует изображение
-page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
-// Использование оператора GRestore: этот оператор восстанавливает графическое состояние
-page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
-dataDir = dataDir + "AddImage_out.pdf";
-// Сохранить обновленный документ
-pdfDocument.Save(dataDir);
+        // Load image into stream
+        using (var imageStream = new FileStream(dataDir + "AddImage.jpg", FileMode.Open))
+        {
+            // Add image to Images collection of Page Resources
+            page.Resources.Images.Add(imageStream);
+
+            // Using GSave operator: this operator saves the current graphics state
+            page.Contents.Add(new Aspose.Pdf.Operators.GSave());
+
+            // Create Rectangle and Matrix objects to define image positioning
+            var rectangle = new Aspose.Pdf.Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
+            var matrix = new Aspose.Pdf.Matrix(new double[] { rectangle.URX - rectangle.LLX, 0, 0, rectangle.URY - rectangle.LLY, rectangle.LLX, rectangle.LLY });
+
+            // Using ConcatenateMatrix operator: defines how the image must be placed
+            page.Contents.Add(new Aspose.Pdf.Operators.ConcatenateMatrix(matrix));
+
+            // Retrieve the added image and use Do operator to draw it
+            var ximage = page.Resources.Images[page.Resources.Images.Count];
+            page.Contents.Add(new Aspose.Pdf.Operators.Do(ximage.Name));
+
+            // Using GRestore operator: this operator restores the graphics state
+            page.Contents.Add(new Aspose.Pdf.Operators.GRestore());
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddImage_out.pdf");
+    }
+}
 ```
+
 {{% alert color="primary" %}}
-По умолчанию качество JPEG установлено на 100%. Для лучшего сжатия и качества используйте следующие перегрузки:
+
+По умолчанию качество JPEG установлено на 100%. Чтобы применить лучшее сжатие и качество, используйте следующие перегрузки:
+
 {{% /alert %}}
 
-- добавлена перегрузка метода Replace в класс XImageCollection: public void Replace(int index, Stream stream, int quality)
-- добавлена перегрузка метода Add в класс XImageCollection: public void Add(Stream stream, int quality)
+- перегрузка метода Replace добавлена в класс XImageCollection: public void Replace(int index, Stream stream, int quality)
+- перегрузка метода Add добавлена в класс XImageCollection: public void Add(Stam stream, int quality)
 
-## Добавление изображения в существующий PDF файл (Facades)
+## Добавить изображение в существующий PDF-файл (Facade)
 
-Существует также альтернативный, более простой способ добавить изображение в PDF файл.
-Существует также альтернативный, более простой способ добавить изображение в файл PDF.
-
-```csharp
-string imageFileName = Path.Combine(_dataDir, "Images", "Sample-01.jpg");
-string outputPdfFileName = Path.Combine(_dataDir, "Example-add-image-mender.pdf");
-Document document = new Document();
-Page page = document.Pages.Add();
-page.SetPageSize(PageSize.A3.Height, PageSize.A3.Width);
-page = document.Pages.Add();
-Aspose.Pdf.Facades.PdfFileMend mender = new Aspose.Pdf.Facades.PdfFileMend(document);
-mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
-document.Save(outputPdfFileName);
-```
-
-## Размещение изображения на странице с сохранением (контролем) пропорций
-
-Если мы не знаем размеры изображения, существует большая вероятность получения искаженного изображения на странице. Следующий пример показывает один из способов избежать этого.
+Существует также альтернативный, более простой способ добавить изображение в PDF-файл. Вы можете использовать метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) класса [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend). Метод [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) требует изображение, которое нужно добавить, номер страницы, на которую нужно добавить изображение, и информацию о координатах. После этого сохраните обновленный PDF-файл, используя метод Close. Следующий фрагмент кода показывает, как добавить изображение в существующий PDF-файл.
 
 ```csharp
-public static void AddingImageAndPreserveAspectRatioIntoPDF()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageToPDFUsingPdfFileMender()
 {
-    var bitmap = System.Drawing.Image.FromFile(_dataDir + "3410492.jpg");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_WorkingDocuments();
 
-    int width;
-    int height;
+    // Define image file and output PDF file paths
+    var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
 
-    width = bitmap.Width;
-    height = bitmap.Height;
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add first page with specified size
+        var page = document.Pages.Add();
+        page.SetPageSize(Aspose.Pdf.PageSize.A3.Height, Aspose.Pdf.PageSize.A3.Width);
 
-    var document = new Aspose.Pdf.Document();
+        // Add second page
+        page = document.Pages.Add();
 
-    var page = document.Pages.Add();
+        // Create PdfFileMend object
+        var mender = new Aspose.Pdf.Facades.PdfFileMend(document);
 
-    int scaledWidth = 400;
-    int scaledHeight = scaledWidth * height / width;
+        // Add image to the first page using the mender
+        mender.AddImage(imageFileName, 1, 0, 0, (float)page.CropBox.Width, (float)page.CropBox.Height);
 
-    page.AddImage(_dataDir + "3410492.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
-    document.Save(_dataDir + "sample_image.pdf");
+        // Save PDF document
+        document.Save(dataDir + "AddImageMender_out.pdf");
+    }
 }
 ```
-## Определите, является ли изображение в PDF цветным или черно-белым
 
-Различные типы сжатия могут быть применены к изображениям для уменьшения их размера. Тип применяемого сжатия зависит от цветового пространства исходного изображения, то есть если изображение цветное (RGB), то следует применить сжатие JPEG2000, а если оно черно-белое, то следует использовать сжатие JBIG2/JBIG2000. Поэтому определение типа каждого изображения и использование соответствующего типа сжатия позволит создать оптимальный результат.
-
-Файл PDF может содержать элементы Текста, Изображения, Графики, Вложения, Аннотации и т.д., и если исходный файл PDF содержит изображения, мы можем определить цветовое пространство изображения и применить соответствующее сжатие для уменьшения размера файла PDF. Следующий фрагмент кода показывает шаги для определения, является ли изображение в PDF цветным или черно-белым.
+Иногда необходимо обрезать изображение перед вставкой его в PDF. Вы можете использовать метод `AddImage()`, чтобы поддерживать добавление обрезанных изображений:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Счетчик для изображений в оттенках серого
-int grayscaled = 0;
-// Счетчик для RGB изображений
-int rgd = 0;
-
-using (Document document = new Document(dataDir + "ExtractImages.pdf"))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddCroppedImageToPDF()
 {
-    foreach (Page page in document.Pages)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Define image file and output PDF file paths
+    var imageFileName = Path.Combine(dataDir, "Images", "Sample-01.jpg");
+    var outputPdfFileName = dataDir + "Example-add-image-mender.pdf";
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-        Console.WriteLine("--------------------------------");
-        ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-        page.Accept(abs);
-        // Получаем количество изображений на конкретной странице
-        Console.WriteLine("Всего изображений = {0} на странице номер {1}", abs.ImagePlacements.Count, page.Number);
-        // Document.Pages[29].Accept(abs);
-        int image_counter = 1;
-        foreach (ImagePlacement ia in abs.ImagePlacements)
+        // Open image stream
+        using (var imgStream = File.OpenRead(imageFileName))
         {
-            ColorType colorType = ia.Image.GetColorType();
-            switch (colorType)
-            {
-                case ColorType.Grayscale:
-                    ++grayscaled;
-                    Console.WriteLine("Изображение {0} в оттенках серого...", image_counter);
-                    break;
-                case ColorType.Rgb:
-                    ++rgd;
-                    Console.WriteLine("Изображение {0} в RGB...", image_counter);
-                    break;
-            }
-            image_counter += 1;
+            // Define the rectangle where the image will be placed on the PDF page
+            var imageRect = new Aspose.Pdf.Rectangle(17.62, 65.25, 602.62, 767.25);
+
+            // Crop the image to half its original width and height
+            var w = imageRect.Width / 2;
+            var h = imageRect.Height / 2;
+            var bbox = new Aspose.Pdf.Rectangle(imageRect.LLX, imageRect.LLY, imageRect.LLX + w, imageRect.LLY + h);
+
+            // Add page
+            var page = document.Pages.Add();
+
+            // Insert the cropped image onto the page, specifying the original position (imageRect)
+            // and the cropping area (bbox)
+            page.AddImage(imgStream, imageRect, bbox);
+        }
+
+        // Save PDF document to the specified file path
+        document.Save(dataDir + "AddCroppedImageMender_out.pdf");
+    }
+}
+```
+
+## Разместить изображение на странице и сохранить (контролировать) соотношение сторон
+
+Если мы не знаем размеры изображения, существует вероятность получения искаженного изображения на странице. Следующий пример показывает один из способов избежать этого.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddingImageAndPreserveAspectRatioIntoPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Load the image
+    using (var bitmap = System.Drawing.Image.FromFile(dataDir + "InputImage.jpg"))
+    {
+        // Get the original width and height of the image
+        int width = bitmap.Width;
+        int height = bitmap.Height;
+
+        // Create PDF document
+        using (var document = new Aspose.Pdf.Document())
+        {
+            // Add page
+            var page = document.Pages.Add();
+
+            // Define the scaled width and height while preserving the aspect ratio
+            int scaledWidth = 400;
+            int scaledHeight = scaledWidth * height / width;
+
+            // Add the image to the page
+            page.AddImage(dataDir + "InputImage.jpg", new Aspose.Pdf.Rectangle(10, 10, scaledWidth, scaledHeight));
+
+            // Save PDF document
+            document.Save(dataDir + "PreserveAspectRatio.pdf");
         }
     }
 }
 ```
+
+## Определить, является ли изображение внутри PDF цветным или черно-белым
+
+Разные типы сжатия могут применяться к изображениям для уменьшения их размера. Тип сжатия, применяемого к изображению, зависит от ColorSpace исходного изображения, т.е. если изображение цветное (RGB), то применяйте сжатие JPEG2000, а если оно черно-белое, то должно применяться сжатие JBIG2/JBIG2000. Поэтому определение каждого типа изображения и использование соответствующего типа сжатия создаст лучший/оптимизированный результат.
+
+PDF-файл может содержать текст, изображения, графики, вложения, аннотации и т.д., и если исходный PDF-файл содержит изображения, мы можем определить цветовое пространство изображения и применить соответствующее сжатие для уменьшения размера PDF-файла. Следующий фрагмент кода показывает шаги для определения, является ли изображение внутри PDF цветным или черно-белым.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageTypesFromPDF()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Counters for grayscale and RGB images
+    int grayscaled = 0;
+    int rgb = 0;
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ExtractImages.pdf"))
+    {
+        // Iterate through all pages in the document
+        foreach (Aspose.Pdf.Page page in document.Pages)
+        {
+            Console.WriteLine("--------------------------------");
+            var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+            page.Accept(abs);
+
+            // Get the count of images on the current page
+            Console.WriteLine("Total Images = {0} on page number {1}", abs.ImagePlacements.Count, page.Number);
+
+            // Iterate through all the image placements on the page
+            int image_counter = 1;
+            foreach (Aspose.Pdf.ImagePlacement ia in abs.ImagePlacements)
+            {
+                // Determine the color type of the image
+                var colorType = ia.Image.GetColorType();
+                switch (colorType)
+                {
+                    case Aspose.Pdf.ColorType.Grayscale:
+                        ++grayscaled;
+                        Console.WriteLine("Image {0} is Grayscale...", image_counter);
+                        break;
+                    case Aspose.Pdf.ColorType.Rgb:
+                        ++rgb;
+                        Console.WriteLine("Image {0} is RGB...", image_counter);
+                        break;
+                }
+                image_counter += 1;
+            }
+        }
+    }
+}
+```
+
 ## Контроль качества изображения
 
-Возможно контролировать качество изображения, которое добавляется в файл PDF. Используйте перегруженный метод [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) в классе [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection).
+Можно контролировать качество изображения, которое добавляется в PDF-файл. Используйте перегруженный метод [Replace](https://reference.aspose.com/pdf/net/aspose.pdf.ximagecollection/replace/methods/1) в классе [XImageCollection](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection).
 
-Следующий фрагмент кода демонстрирует, как конвертировать все изображения документа в JPEG, используя 80% качества для сжатия.
+Следующий фрагмент кода демонстрирует, как преобразовать все изображения документа в JPEG с использованием 80% качества для сжатия.
 
 ```csharp
-Aspose.PDF.Document pdfDocument = new Aspose.PDF.Document(inFile);
-foreach (Aspose.PDF.Page page in pdfDocument.Pages)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceImagesInPDF()
 {
-    int idx = 1;
-    foreach (Aspose.PDF.XImage image in page.Resources.Images)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ReplaceImages.pdf"))
     {
-        using (MemoryStream imageStream = new MemoryStream())
+        // Iterate through all pages in the document
+        foreach (Aspose.Pdf.Page page in document.Pages)
         {
-            image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
-            page.Resources.Images.Replace(idx, imageStream, 80);
-            idx = idx + 1;
+            int idx = 1;
+            // Iterate through all images in the page's resources
+            foreach (Aspose.Pdf.XImage image in page.Resources.Images)
+            {
+                using (var imageStream = new MemoryStream())
+                {
+                    // Save the image as JPEG with 80% quality
+                    image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    // Replace the image in the page's resources
+                    page.Resources.Images.Replace(idx, imageStream, 80);
+                    idx = idx + 1;
+                }
+            }
         }
+
+        // Save PDF document
+        document.Save(dataDir + "ReplaceImages_out.pdf");
     }
 }
+```
 
-// pdfDocument.OptimizeResources();
+## Поддержка применения маски обрезки к изображениям
 
-pdfDocument.Save(outFile);
+Размещение векторной формы поверх базового растрового изображения функционирует как маска, открывая только ту часть базового дизайна, которая совпадает с векторной формой. Все области вне формы будут скрыты.
+
+Фрагмент кода загружает PDF, открывает два файла изображений и применяет эти изображения в качестве трафаретных масок к первым двум изображениям на первой странице PDF.
+
+Маска трафарета может быть добавлена с помощью метода 'XImage.AddStencilMask(Stream maskStream)':
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddStencilMasksToImages()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddStencilMasksToImages.pdf"))
+    {
+        // Open the first mask image file
+        using (var fs1 = new FileStream(dataDir + "mask1.jpg", FileMode.Open))
+        {
+            // Open the second mask image file
+            using (var fs2 = new FileStream(dataDir + "mask2.png", FileMode.Open))
+            {
+                // Apply stencil mask to the first image on the first page
+                document.Pages[1].Resources.Images[1].AddStencilMask(fs1);
+
+                // Apply stencil mask to the second image on the first page
+                document.Pages[1].Resources.Images[2].AddStencilMask(fs2);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "AddStencilMasksToImages_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для библиотеки .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -276,23 +426,23 @@ pdfDocument.Save(outFile);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -301,7 +451,7 @@ pdfDocument.Save(outFile);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипулирования PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -313,5 +463,3 @@ pdfDocument.Save(outFile);
     }
 }
 </script>
-```
-

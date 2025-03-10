@@ -1,21 +1,22 @@
 ---
-title: PdfContentEditor Класс
+title: Класс PdfContentEditor
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ru/net/pdfcontenteditor-class/
-description: Этот раздел объясняет, как работать с Aspose.PDF Facades, используя класс PdfContentEditor.
+description: Узнайте, как редактировать содержимое PDF-файлов программно с помощью класса PDFContentEditor в .NET с Aspose.PDF.
 lastmod: "2021-06-05"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
-- [Добавление действий Javascript в существующий PDF файл](/pdf/ru/net/adding-javascript-actions/)
-- [Добавление действий закладки в существующий PDF файл](/pdf/ru/net/how-to-create-nested-bookmarks/)
-- [Работа с изображениями](/pdf/ru/net/working-with-images-facades/)
-- [Замена текста - Facades](/pdf/ru/net/replace-text-facades/)
-- [Работа с вложениями - Facades](/pdf/ru/net/working-with-attachments-facades/)
-- [Установка предпочтений просмотра существующего PDF файла](/pdf/ru/net/set-viewer-preference-of-an-existing-pdf-file/)
-- [Получение предпочтений просмотра существующего PDF файла](/pdf/ru/net/get-viewer-preference-of-an-existing-pdf-file/)
-- [Добавление аннотаций в существующий PDF файл](/pdf/ru/net/adding-annotations-to-existing-pdf-file/)
+- [Добавление действий JavaScript в существующий PDF-файл](/pdf/net/добавление-действий-javascript-в-существующий-pdf-файл/)
+- [Добавление закладок в существующий PDF-файл](/pdf/net/как-создать-вложенные-закладки/)
+- [Работа с изображениями](/pdf/net/работа-с-изображениями-в-pdf/)
+- [Замена текста — фасады](/pdf/net/замена-текста-фасады/)
+- [Работа с вложениями — фасады](/pdf/net/работа-со-вложениями-фасады/)
+- [Установка настроек просмотра для существующего PDF-файла](/pdf/net/установка-настроек-просмотра-для-существующего-pdf-файла/)
+- [Получение настроек просмотра существующего PDF-файла](/pdf/net/получение-настроек-просмотра-существующего-pdf-файла/)
+- [Добавление аннотаций к существующему PDF-файлу](/pdf/net/добавление-аннотаций-к-существующему-pdf-файлу/)

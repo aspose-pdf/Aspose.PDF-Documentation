@@ -1,10 +1,12 @@
 ---
-title: Извлечь AcroForm - Извлечение данных формы из PDF в C#
-linktitle: Извлечь AcroForm
+title: Извлечение AcroForm — извлечение данных формы из PDF в C#
+linktitle: Извлечение AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ru/net/extract-form/
-description: Извлеките форму из вашего PDF-документа с помощью библиотеки Aspose.PDF для .NET. Получите значение из отдельного поля файла PDF.
+description: Извлеките форму из вашего PDF-документа с помощью библиотеки Aspose.PDF for .NET. Получите значение из отдельного поля PDF-файла.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Извлечь AcroForm",
-    "alternativeHeadline": "Как извлечь AcroForm из PDF",
+    "headline": "Extract AcroForm - Extract Form Data from PDF in C#",
+    "alternativeHeadline": "Effortlessly Extract PDF Form Data Using C#",
+    "abstract": "Новая функция Extract AcroForm в Aspose.PDF для .NET позволяет разработчикам легко извлекать данные форм из PDF-документов. Эта функциональность позволяет пользователям получать значения из отдельных полей или всех полей в PDF, улучшая возможности управления данными и их обработки в приложениях на C#",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, извлечь acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "extract form data, PDF in C#, Aspose.PDF for .NET, AcroForm extraction, get field values PDF, PDF form fields, individual field value, get fields in region, manipulate PDF forms, C# PDF library",
+    "wordcount": "673",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,109 +74,184 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-form/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Извлеките форму из вашего PDF-документа с помощью библиотеки Aspose.PDF для .NET. Получите значение из отдельного поля файла PDF."
+    "dateModified": "2024-11-25",
+    "description": "Извлеките форму из вашего PDF-документа с помощью библиотеки Aspose.PDF для .NET. Получите значение из отдельного поля PDF-файла"
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+
+Следующий фрагмент кода также работает с библиотекой Aspose.PDF.Drawing.
 
 ## Извлечение данных из формы
 
-### Получение значений из всех полей PDF документа
+### Получение значений из всех полей PDF-документа
 
-Чтобы получить значения из всех полей в PDF документе, вам нужно пройти через все поля формы, а затем получить значение с помощью свойства Value. Получите каждое поле из коллекции Form, в базовом типе поля, называемом Field, и получите доступ к его свойству Value.
+Чтобы получить значения из всех полей в PDF-документе, вам нужно пройти по всем полям формы, а затем получить значение с помощью свойства Value. Получите каждое поле из коллекции Form в базовом типе поля Field и получите доступ к его свойству Value.
 
-Следующие фрагменты кода на C# показывают, как получить значения всех полей из PDF документа.
+В следующих фрагментах кода на C# показано, как получить значения всех полей из PDF-документа.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetValuesFromAllFields.pdf");
-
-// Получить значения из всех полей
-foreach (Field formField in pdfDocument.Form)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetValuesFromFields()
 {
-    Console.WriteLine("Имя поля : {0} ", formField.PartialName);
-    Console.WriteLine("Значение : {0} ", formField.Value);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValuesFromAllFields.pdf"))
+    {
+        // Get values from all fields
+        foreach (Aspose.Pdf.Forms.Field formField in document.Form)
+        {
+            Console.WriteLine("Field Name : {0} ", formField.PartialName);
+            Console.WriteLine("Value : {0} ", formField.Value);
+        }
+    }
 }
 ```
-### Получение значения из отдельного поля PDF-документа
 
-Свойство Value поля формы позволяет получить значение определенного поля. Чтобы получить значение, получите поле формы из коллекции Form объекта Document. В этом примере на C# выбирается [TextBoxField](https://reference.aspose.com/pdf/net/aspose.pdf.forms/textboxfield) и извлекается его значение с использованием свойства Value.
+### Получить значение из отдельного поля PDF-документа
 
-```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-
-// Получить поле
-TextBoxField textBoxField = pdfDocument.Form["textbox1"] as TextBoxField;
-
-// Получить значение поля
-Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
-Console.WriteLine("Value : {0} ", textBoxField.Value);
-```
-
-Для получения URL кнопки отправки используйте следующие строки кода.
+Свойство Value поля формы позволяет получить значение определённого поля. Чтобы получить значение, извлеките поле формы из коллекции Form объекта Document. В этом примере на C# выбирается TextBoxField и извлекается его значение с помощью свойства Value.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetValueFromField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "GetValueFromField.pdf");
-SubmitFormAction act = pdfDocument.Form[1].OnActivated as SubmitFormAction;
-if(act != null)
-Console.WriteLine(act.Url.Name);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    {
+        // Get a field
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            // Get field value
+            Console.WriteLine("PartialName : {0} ", textBoxField.PartialName);
+            Console.WriteLine("Value : {0} ", textBoxField.Value);
+        }
+    }
+}
 ```
-### Получение полей формы из определенного региона PDF-файла
 
-Иногда вы можете знать, где в документе находится поле формы, но не знать его имени. Например, если у вас есть только схема печатной формы. С Aspose.PDF для .NET это не проблема. Вы можете узнать, какие поля находятся в заданной области PDF-файла. Чтобы получить поля формы из определенного региона PDF-файла:
+Чтобы получить URL-адрес кнопки отправки, используйте следующие строки кода.
 
-1. Откройте PDF-файл с помощью объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetSubmitFormActionUrl()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetValueFromField.pdf"))
+    {
+        // Get the SubmitFormAction from the form field
+        if (document.Form[1].OnActivated is Aspose.Pdf.Annotations.SubmitFormAction act)
+        {
+            // Output the URL of the SubmitFormAction
+            Console.WriteLine(act.Url.Name);
+        }
+    }
+}
+```
+
+### Получение полей формы из определённой области PDF-файла
+
+Иногда вы можете знать, где в документе находится поле формы, но не знаете его имени. Например, если всё, что у вас есть, это схема печатной формы. С Aspose.PDF for .NET это не проблема. Вы можете узнать, какие поля находятся в заданном регионе PDF-файла. Чтобы получить поля формы из определённой области PDF-файла:
+
+1. Откройте PDF-файл с помощью объекта Document.
 1. Получите форму из коллекции Forms документа.
-1. Укажите прямоугольный регион и передайте его в метод GetFieldsInRect объекта Form. Возвращается коллекция Fields.
-1. Используйте это для манипуляции с полями.
+1. Укажите прямоугольную область и передайте её методу GetFieldsInRect объекта Form. Возвращается коллекция Fields.
+1. Используйте её для управления полями.
 
-Следующий фрагмент кода на C# показывает, как получить поля формы в определенной прямоугольной области PDF-файла.
+В следующем фрагменте кода на C# показано, как получить поля формы в определённой прямоугольной области PDF-файла.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Открыть pdf файл
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf");
-
-// Создать объект прямоугольника, чтобы получить поля в этой области
-Aspose.Pdf.Rectangle rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
-
-// Получить PDF форму
-Aspose.Pdf.Forms.Form form = doc.Form;
-
-// Получить поля в прямоугольной области
-Aspose.Pdf.Forms.Field[] fields = form.GetFieldsInRect(rectangle);
-
-// Отобразить имена полей и значения
-foreach (Field field in fields)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetFieldsFromRegion()
 {
-    // Отобразить свойства размещения изображения для всех размещений
-    Console.Out.WriteLine("Имя поля: " + field.FullName + "-" + "Значение поля: " + field.Value);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "GetFieldsFromRegion.pdf"))
+    {
+        // Create rectangle object to get fields in that area
+        var rectangle = new Aspose.Pdf.Rectangle(35, 30, 500, 500);
+
+        // Get the PDF form
+        var form = document.Form;
+
+        // Get fields in the rectangular area
+        var fields = form.GetFieldsInRect(rectangle);
+
+        // Display Field names and values
+        foreach (var field in fields)
+        {
+            // Display image placement properties for all placements
+            Console.Out.WriteLine("Field Name: " + field.FullName + "-" + "Field Value: " + field.Value);
+        }
+    }
 }
 ```
 
+<!-- 3724112782 -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Программное приложение",
+    "название": "Библиотека Aspose.PDF for .NET",
+    "изображение": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "издательство": {
+        "@type": "Организация",
+        "название": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "логотип": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "контактная точка": [
+            {
+                "@type": "Контактная точка",
+                "телефон": "+1 903 306 1676",
+                "тип контакта": "продажи",
+                "обслуживаемая территория": "США",
+                "доступный язык": "en"
+            },
+            {
+                "@type": "Контактная точка",
+                "телефон": "+44 141 628 8900",
+                "тип контакта": "продажи",
+                "обслуживаемая территория": "Великобритания",
+                "доступный язык": "en"
+            },
+            {
+                "@type": "Контактная точка",
+                "телефон": "+61 2 8006 6987",
+                "тип контакта": "продажи",
+                "обслуживаемая территория": "Австралия",
+                "доступный язык": "en"
+            }
+        ]
+    },
+    "предложения": {
+        "@type": "Предложение",
+        "цена": "1199",
+        "валюта цены": "USD
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для библиотеки .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -195,23 +273,23 @@ foreach (Field field in fields)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -220,7 +298,7 @@ foreach (Field field in fields)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипулирования PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -232,5 +310,66 @@ foreach (Field field in fields)
     }
 }
 </script>
-```
-
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

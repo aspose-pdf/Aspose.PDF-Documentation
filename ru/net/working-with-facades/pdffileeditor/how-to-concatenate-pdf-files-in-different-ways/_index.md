@@ -1,21 +1,88 @@
 ---
-title: Объединение PDF файлов с использованием .NET 5 
+title: Объединение PDF файлов с использованием .NET 5
 linktitle: Как объединить PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 75
 url: /ru/net/how-to-concatenate-pdf-files-in-different-ways/
 description: Эта статья объясняет возможные способы объединения любого количества существующих PDF файлов в один PDF файл.
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Merge PDF files",
+    "alternativeHeadline": "Effortlessly Combine Multiple PDFs",
+    "abstract": "Объедините несколько PDF файлов в один документ без усилий с новой функциональностью в Aspose.PDF for .NET. Эта функция позволяет разработчикам объединять любое количество PDF через простые вызовы методов, повышая производительность в управлении и манипуляции PDF. Легко интегрируйте эту возможность в различные приложения .NET, включая ASP.NET и Windows приложения, с универсальными подходами, которые соответствуют различным потребностям.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "840",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/how-to-concatenate-pdf-files-in-different-ways/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/how-to-concatenate-pdf-files-in-different-ways/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
+}
+</script>
 
 {{% alert color="primary" %}}
 
-Эта статья описывает, как вы можете [Объединить](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) несколько PDF документов в один PDF документ с помощью компонента [Aspose.PDF for .NET](/pdf/ru/net/). [Aspose.PDF for .NET](/pdf/ru/net/) делает эту задачу простой как пирог.
+Эта статья описывает, как вы можете [Объединить](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) несколько PDF документов в один PDF документ с помощью компонента [Aspose.PDF for .NET](/pdf/net/). [Aspose.PDF for .NET](/pdf/net/) делает эту работу легкой.
 
 {{% /alert %}}
 
-Вам просто нужно вызвать метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor), и все ваши входные PDF файлы будут объединены, и будет сгенерирован один PDF файл. Давайте создадим приложение для практики объединения PDF файлов. Мы создадим приложение, используя Visual Studio.NET 2019.
+Все, что вам нужно сделать, это вызвать метод [Concatenate](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor), и все ваши входные PDF файлы будут объединены, и будет сгенерирован один PDF файл. Давайте создадим приложение, чтобы попрактиковаться в объединении PDF файлов. Мы создадим приложение с использованием Visual Studio.NET 2019.
 
 {{% alert color="primary" %}}
 
@@ -23,96 +90,108 @@ Aspose.PDF for .NET может использоваться в любом при
 
 {{% /alert %}}
 
-## Как объединять PDF файлы разными способами
+## Как объединить PDF файлы различными способами
 
-В форме расположены три текстовых поля (textBox1, textBox2, textBox3), имеющие соответствующие ссылки (linkLabel1, linkLabel2, linkLabel3) для поиска PDF файлов. При нажатии на ссылку "Обзор" появится диалоговое окно выбора файла (inputFileDialog1), которое позволит выбрать PDF файлы (для объединения).
+В форме есть три текстовых поля (textBox1, textBox2, textBox3) с соответствующими метками ссылок (linkLabel1, linkLabel2, linkLabel3) для выбора PDF файлов. Нажав на метку "Обзор", появится диалоговое окно выбора файла (inputFileDialog1), которое позволит нам выбрать PDF файлы (для объединения).
 
 ```csharp
-
 private void linkLabel1_LinkClicked(object sender, System.Windows.Forms.LinkLabelLinkClickedEventArgs e)
 {
-  if(openFileDialog1.ShowDialog()==DialogResult.OK)
-  {
-     textBox1.Text=openFileDialog1.FileName;
-  }
+    if (openFileDialog1.ShowDialog()==DialogResult.OK)
+    {
+        textBox1.Text=openFileDialog1.FileName;
+    }
 }
 ```
 
-Показан вид приложения Windows Forms для демонстрации класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) для объединения PDF файлов.
-![Concatenate PDF Files](how-to-concatenate-pdf-files-in-different-ways_1.png)
+Представлен вид приложения Windows Forms для демонстрации класса [PdfFileEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor) для объединения PDF файлов.
 
-После того как мы выбираем PDF файл и нажимаем кнопку OK. Полное имя файла с путем назначается соответствующему текстовому полю.
+![Объединить PDF файлы](how-to-concatenate-pdf-files-in-different-ways_1.png)
 
-![Choose the PDF file](how-to-concatenate-pdf-files-in-different-ways_2.png)
+После того как мы выберем PDF файл и нажмем кнопку OK, полное имя файла с путем будет присвоено соответствующему текстовому полю.
 
-Аналогично, мы можем выбрать два или три входных PDF файла для конкатенации, как показано ниже:
+![Выбор PDF файла](how-to-concatenate-pdf-files-in-different-ways_2.png)
 
-![Choose two or three Input PDF Files](how-to-concatenate-pdf-files-in-different-ways_3.png)
+Аналогично, мы можем выбрать два или три входных PDF файла для объединения, как показано ниже:
 
-Последнее текстовое поле (textBox4) примет путь назначения выходного PDF файла с его именем, где этот выходной файл будет создан.
+![Выбор двух или трех входных PDF файлов](how-to-concatenate-pdf-files-in-different-ways_3.png)
 
-![Destination Path of the Output PDF file](how-to-concatenate-pdf-files-in-different-ways_4.png)
+Последнее текстовое поле (textBox4) будет принимать путь назначения выходного PDF файла с его именем, где будет создан этот выходной файл.
 
-![Concatenate method](how-to-concatenate-pdf-files-in-different-ways_5.png)
+![Путь назначения выходного PDF файла](how-to-concatenate-pdf-files-in-different-ways_4.png)
+
+![Метод Concatenate](how-to-concatenate-pdf-files-in-different-ways_5.png)
 
 ## Метод Concatenate()
 
-Метод Concatenate() может быть использован тремя способами. давайте подробнее рассмотрим каждый из них:
+Метод Concatenate() может использоваться тремя способами. Давайте подробнее рассмотрим каждый из них:
 
 ### Подход 1
 
 - Concatenate(string firstInputFile, string secInputFile, string outputFile)
 
-Этот подход хорош только если необходимо соединить только два PDF файла. Два первых аргумента (firstInputFile и secInputFile) предоставляют полные имена файлов с их путями хранения для двух входных PDF файлов, которые необходимо объединить. Третий аргумент (outputFile) предоставляет желаемое имя файла с путем для выходного PDF файла.
+Этот подход хорош только в том случае, если вам нужно объединить только два PDF файла. Первые два аргумента (firstInputFile и secInputFile) предоставляют полные имена файлов с их путями хранения для двух входных PDF файлов, которые нужно объединить. Третий аргумент (outputFile) предоставляет желаемое имя файла с путем для выходного PDF файла.
 
-![Объединить два PDF с использованием имен файлов](how-to-concatenate-pdf-files-in-different-ways_6.png)
+![Объединить два PDF файла по именам файлов](how-to-concatenate-pdf-files-in-different-ways_6.png)
 
 ```csharp
 private void button1_Click(object sender, System.EventArgs e)
 {
-  PdfFileEditor pdfEditor = new PdfFileEditor();
-  pdfEditor.Concatenate(textBox1.Text,textBox2.Text,textBox4.Text);
+    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+    pdfEditor.Concatenate(textBox1.Text,textBox2.Text,textBox4.Text);
 }
 ```
 
 ### Подход 2
 
-- Concatenate(System.IO.Stream firstInputStream, System.IO.Stream secInputStream, System.IO.Stream outputStream)
+- Concatenate(Stream firstInputStream, Stream secInputStream, Stream outputStream)
 
-Похожий на вышеописанный подход, этот метод также позволяет объединить два PDF файла. Первые два аргумента (firstInputStream и secInputStream) предоставляют два входных PDF файла в виде потоков (поток — это массив битов/байтов), которые должны быть объединены. Третий аргумент (outputStream) предоставляет потоковое представление желаемого выходного PDF файла.
+Аналогично предыдущему подходу, этот подход также позволяет объединять два PDF файла. Первые два аргумента (firstInputStream и secInputStream) предоставляют два входных PDF файла в виде потоков (поток - это массив битов/байтов), которые нужно объединить. Третий аргумент (outputStream) предоставляет потоковое представление желаемого выходного PDF файла.
 
-![Объединение двух PDF файлов с использованием потоков файлов](how-to-concatenate-pdf-files-in-different-ways_7.png)
+![Объединить два PDF файла по потокам файлов](how-to-concatenate-pdf-files-in-different-ways_7.png)
 
 ```csharp
 private void button2_Click(object sender, System.EventArgs e)
 {
-  FileStream pdf1 = new FileStream(textBox1.Text,FileMode.Open);
-  FileStream pdf2 = new FileStream(textBox2.Text,FileMode.Open);
-  FileStream outputPDF = new FileStream(textBox4.Text,FileMode.Create);
-  PdfFileEditor pdfEditor = new PdfFileEditor();
-  pdfEditor.Concatenate(pdf1,pdf2,outputPDF);
-  outputPDF.Close();
+    using (var pdf1 = new FileStream(textBox1.Text, FileMode.Open))
+    {
+        using (var pdf2 = new FileStream(textBox2.Text, FileMode.Open))
+        {
+            using (var outputStream = new FileStream(textBox4.Text, FileMode.Create))
+            {
+                var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+                pdfEditor.Concatenate(pdf1, pdf2, outputStream);
+            }
+        }
+    }
 }
 ```
 
 ### Подход 3
 
-- Concatenate(System.IO.Stream inputStreams[], System.IO.Stream outputStream)
+- Concatenate(Stream inputStreams[], Stream outputStream)
 
-Если вы хотите объединить более двух PDF файлов, то этот подход будет вашим окончательным выбором. Аргумент первый (inputStreams[]) предоставляет входные PDF-файлы в виде массива потоков, которые следует объединить. Второй аргумент (outputStream) предоставляет потоковое представление желаемого выходного PDF-файла.
+Если вы хотите объединить более двух PDF файлов, то этот подход будет вашим окончательным выбором. Первый аргумент (inputStreams[]) предоставляет входные PDF файлы в виде массива потоков, которые нужно объединить. Второй аргумент (outputStream) предоставляет потоковое представление желаемого выходного PDF файла.
 
-![Объединение нескольких PDF с использованием массива потоков](how-to-concatenate-pdf-files-in-different-ways_8.png)
+![Объединить несколько PDF файлов с использованием массива потоков](how-to-concatenate-pdf-files-in-different-ways_8.png)
 
 ```csharp
 private void button3_Click(object sender, System.EventArgs e)
 {
-  FileStream pdf1 = new FileStream(textBox1.Text,FileMode.Open);
-  FileStream pdf2 = new FileStream(textBox2.Text,FileMode.Open);
-  FileStream pdf3 = new FileStream(textBox3.Text,FileMode.Open);
-  Stream[] pdfStreams = new Stream[]{pdf1,pdf2,pdf3};
-  FileStream outputPDF = new FileStream(textBox4.Text,FileMode.Create);
-  PdfFileEditor pdfEditor = new PdfFileEditor();
-  pdfEditor.Concatenate(pdfStreams,outputPDF);
-  outputPDF.Close();
+    using (var pdf1 = new FileStream(textBox1.Text, FileMode.Open))
+    {
+        using (var pdf2 = new FileStream(textBox2.Text, FileMode.Open))
+        {
+            using (var pdf3 = new FileStream(textBox3.Text, FileMode.Open))
+            {
+                var pdfStreams = new Stream[] { pdf1, pdf2, pdf3 };
+                using (var outputStream = new FileStream(textBox4.Text, FileMode.Create))
+                {
+                    var pdfEditor = new Aspose.Pdf.Facades.PdfFileEditor();
+                    pdfEditor.Concatenate(pdfStreams, outputStream);
+                }
+            }
+        }
+    }
 }
 ```

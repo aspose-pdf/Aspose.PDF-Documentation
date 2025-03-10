@@ -2,9 +2,11 @@
 title: Добавление, удаление и получение аннотаций
 linktitle: Добавление, удаление и получение аннотаций
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/add-delete-and-get-annotation/
-description: С помощью Aspose.PDF для .NET вы можете добавлять, удалять и получать аннотации из вашего PDF файла. Проверьте все списки аннотаций для решения вашей задачи.
+description: С помощью Aspose.PDF for .NET вы можете добавлять, удалять и получать аннотации из вашего PDF-файла. Проверьте все списки аннотаций, чтобы решить вашу задачу.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Добавление, удаление и получение аннотаций",
-    "alternativeHeadline": "Работа с аннотациями в PDF файле",
+    "headline": "Add, Delete and Get Annotation",
+    "alternativeHeadline": "Manage PDF Annotations with Aspose.PDF for .NET",
+    "abstract": "Улучшите свои возможности манипуляции PDF с новой функцией добавления, удаления и получения аннотаций в Aspose.PDF for .NET. Эта мощная функциональность позволяет пользователям без труда управлять аннотациями в своих PDF-файлах, предлагая упрощенное редактирование и улучшенное взаимодействие с контентом. Узнайте, как работать с различными типами аннотаций, чтобы удовлетворить ваши конкретные потребности в документах.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, добавление аннотации, получение аннотации, удаление аннотации",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "add annotation, delete annotation, get annotation, Aspose.PDF for .NET, PDF document generation, PDF annotations, multimedia annotation, PDF text annotation, highlights annotation, PDF manipulation library",
+    "wordcount": "174",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,24 +74,24 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-delete-and-get-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "С помощью Aspose.PDF для .NET вы можете добавлять, удалять и получать аннотации из вашего PDF файла. Проверьте все списки аннотаций для решения вашей задачи."
+    "dateModified": "2024-11-25",
+    "description": "С помощью Aspose.PDF for .NET вы можете добавлять, удалять и получать аннотации из вашего PDF-файла. Проверьте все списки аннотаций, чтобы решить вашу задачу."
 }
 </script>
 
 **Что такое аннотации в PDF-документах?**
 
-Это дополнительные объекты, которые вы добавляете в свой файл для расширения содержания текста, внесения правок, комментариев для других пользователей. Также возможно сделать текст в документе более читаемым, выделить его, подчеркнуть или добавить совершенно новый текст.
+Это дополнительные объекты, которые вы добавляете в свой файл, чтобы расширить содержание текста, внести правки, комментарии для других пользователей. Также возможно сделать текст в документе более читаемым, выделить его, подчеркнуть или добавить совершенно новый текст.
 
-Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF для .NET, в группы:
+Мы объединили различные виды аннотаций, доступные для библиотеки Aspose.PDF for .NET, в группы:
 
-- [Аннотация текста PDF](/pdf/ru/net/text-annotation/)
-- [Аннотация выделения в PDF](/pdf/ru/net/highlights-annotation/)
-- [Аннотация фигур в PDF](/pdf/ru/net/figures-annotation/)
-- [Мультимедийная аннотация](/pdf/ru/net/multimedia-annotation/)
-- [Липкие аннотации PDF](/pdf/ru/net/sticky-annotations/)
-- [Аннотации ссылок](/pdf/ru/net/link-annotations/)
-- [Дополнительные аннотации](/pdf/ru/net/extra-annotations/)
+- [PDF Текстовая аннотация](/pdf/net/text-annotation/)
+- [PDF Аннотация выделения](/pdf/net/highlights-annotation/)
+- [PDF Аннотация фигур](/pdf/net/figures-annotation/)
+- [Мультимедийная аннотация](/pdf/net/multimedia-annotation/)
+- [PDF Липкие аннотации](/pdf/net/sticky-annotations/)
+- [Аннотации ссылок](/pdf/net/link-annotations/)
+- [Дополнительные аннотации](/pdf/net/extra-annotations/)
 
 <script type="application/ld+json">
 {
@@ -153,4 +156,3 @@ sitemap:
     }
 }
 </script>
-

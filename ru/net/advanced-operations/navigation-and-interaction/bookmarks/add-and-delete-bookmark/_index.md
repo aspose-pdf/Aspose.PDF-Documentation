@@ -1,35 +1,40 @@
 ---
-title: Добавление и удаление закладки
-linktitle: Добавление и удаление закладки
+title: Добавить и удалить закладку
+linktitle: Добавить и удалить закладку
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /ru/net/add-and-delete-bookmark/
-description: Вы можете добавить закладку в документ PDF с помощью C#. Возможно удалить все или определенные закладки из документа PDF.
+description: Вы можете добавить закладку в PDF-документ с помощью C#. Возможно удалить все или определенные закладки из PDF-документа.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/add-and-delete-a-bookmark/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Добавление и удаление закладки",
-    "alternativeHeadline": "Как добавить и удалить закладку из PDF",
+    "headline": "Add and Delete a Bookmark",
+    "alternativeHeadline": "Manage PDF Bookmarks: Add and Delete with Ease",
+    "abstract": "Новая функция позволяет пользователям эффективно управлять закладками в PDF-документах с помощью C#. Вы можете легко добавлять новые закладки или удалять существующие, независимо от того, хотите ли вы удалить все закладки или нацелиться на конкретные записи. Эта функциональность улучшает навигацию и организацию документов для повышения удобства использования.",
     "author": {
         "@type": "Person",
-        "name":"Андрий Андруховский",
-        "givenName": "Андрий",
-        "familyName": "Андруховский",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, удаление закладки, добавление закладки",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "add bookmark, delete bookmark, PDF document, C# programming, OutlineItemCollection, OutlineCollection, child bookmark, parent bookmark",
+    "wordcount": "851",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,147 +76,286 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/add-and-delete-bookmark/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Вы можете добавить закладку в документ PDF с помощью C#. Возможно удалить все или определенные закладки из документа PDF."
+    "dateModified": "2024-11-25",
+    "description": "Вы можете добавить закладку в PDF-документ с помощью C#. Возможно удалить все или определенные закладки из PDF-документа."
 }
 </script>
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-## Добавление закладки в документ PDF
+## Добавить закладку в PDF-документ
 
-Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) объекта Document, которая находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+Закладки хранятся в коллекции [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) объекта Document, которая сама находится в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
 
 Чтобы добавить закладку в PDF:
 
-1. Откройте документ PDF с помощью объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Откройте PDF-документ с помощью объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Создайте закладку и определите ее свойства.
 1. Добавьте коллекцию [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection) в коллекцию Outlines.
 
-Следующий фрагмент кода показывает, как добавить закладку в документ PDF.
+Следующий фрагмент кода показывает, как добавить закладку в PDF-документ.
 
+{{< tabs tabID="1" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "AddBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf"))
+    {
+        // Create a bookmark object
+        var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfOutline.Title = "Test Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// Создать объект закладки
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Тестовая закладка";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
-// Установить номер страницы назначения
-pdfOutline.Action = new GoToAction(pdfDocument.Pages[1]);
-// Добавить закладку в коллекцию контуров документа.
-pdfDocument.Outlines.Add(pdfOutline);
+        // Set the destination page number
+        pdfOutline.Action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[1]);
 
-dataDir = dataDir + "AddBookmark_out.pdf";
-// Сохранить результат
-pdfDocument.Save(dataDir);
+        // Add bookmark in the document's outline collection.
+        document.Outlines.Add(pdfOutline);
+
+        // Save PDF document
+        document.Save(dataDir + "AddBookmark_out.pdf");
+    }
+}
 ```
-## Добавление дочерней закладки в PDF-документ
+{{< /tab >}}
 
-Закладки могут быть вложенными, указывая на иерархическую связь с родительскими и дочерними закладками. В этой статье объясняется, как добавить дочернюю закладку, то есть закладку второго уровня, в PDF.
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-Чтобы добавить дочернюю закладку в файл PDF, сначала добавьте родительскую закладку:
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddBookmark.pdf");
+
+    // Create a bookmark object
+    var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfOutline.Title = "Test Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Set the destination page number
+    pdfOutline.Action = new Aspose.Pdf.Annotations.GoToAction(document.Pages[1]);
+
+    // Add bookmark in the document's outline collection.
+    document.Outlines.Add(pdfOutline);
+
+    // Save PDF document
+    document.Save(dataDir + "AddBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Добавить дочернюю закладку в PDF-документ
+
+Закладки могут быть вложенными, указывая на иерархические отношения между родительскими и дочерними закладками. Эта статья объясняет, как добавить дочернюю закладку, то есть закладку второго уровня, в PDF.
+
+Чтобы добавить дочернюю закладку в PDF-файл, сначала добавьте родительскую закладку:
 
 1. Откройте документ.
-1. Добавьте закладку в [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), определив её свойства.
+1. Добавьте закладку в [OutlineItemCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlineitemcollection), определив ее свойства.
 1. Добавьте OutlineItemCollection в коллекцию [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection) объекта Document.
 
-Дочерняя закладка создается так же, как родительская, описанная выше, но добавляется в коллекцию Outlines родительской закладки
+Дочерняя закладка создается так же, как и родительская закладка, описанная выше, но добавляется в коллекцию Outlines родительской закладки.
 
-Следующие примеры кода показывают, как добавить дочернюю закладку в документ PDF.
+Следующие фрагменты кода показывают, как добавить дочернюю закладку в PDF-документ.
 
+{{< tabs tabID="2" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddChildBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "AddChildBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf"))
+    {
+        // Create a parent bookmark object
+        var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfOutline.Title = "Parent Outline";
+        pdfOutline.Italic = true;
+        pdfOutline.Bold = true;
 
-// Создать объект родительской закладки
-OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfOutline.Title = "Родительская закладка";
-pdfOutline.Italic = true;
-pdfOutline.Bold = true;
+        // Create a child bookmark object
+        var pdfChildOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+        pdfChildOutline.Title = "Child Outline";
+        pdfChildOutline.Italic = true;
+        pdfChildOutline.Bold = true;
 
-// Создать объект дочерней закладки
-OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.Outlines);
-pdfChildOutline.Title = "Дочерняя закладка";
-pdfChildOutline.Italic = true;
-pdfChildOutline.Bold = true;
+        // Add child bookmark in parent bookmark's collection
+        pdfOutline.Add(pdfChildOutline);
 
-// Добавить дочернюю закладку в коллекцию родительской закладки
-pdfOutline.Add(pdfChildOutline);
-// Добавить родительскую закладку в коллекцию закладок документа.
-pdfDocument.Outlines.Add(pdfOutline);
+        // Add parent bookmark in the document's outline collection.
+        document.Outlines.Add(pdfOutline);
 
-dataDir = dataDir + "AddChildBookmark_out.pdf";
-// Сохранить результат
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "AddChildBookmark_out.pdf");
+    }
+}
 ```
-## Удаление всех закладок из PDF-документа
+{{< /tab >}}
 
-Все закладки в PDF содержатся в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). В этой статье объясняется, как удалить все закладки из файла PDF.
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddChildBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-Для удаления всех закладок из файла PDF:
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "AddChildBookmark.pdf");
+
+    // Create a parent bookmark object
+    var pdfOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfOutline.Title = "Parent Outline";
+    pdfOutline.Italic = true;
+    pdfOutline.Bold = true;
+
+    // Create a child bookmark object
+    var pdfChildOutline = new Aspose.Pdf.OutlineItemCollection(document.Outlines);
+    pdfChildOutline.Title = "Child Outline";
+    pdfChildOutline.Italic = true;
+    pdfChildOutline.Bold = true;
+
+    // Add child bookmark in parent bookmark's collection
+    pdfOutline.Add(pdfChildOutline);
+
+    // Add parent bookmark in the document's outline collection.
+    document.Outlines.Add(pdfOutline);
+
+    // Save PDF document
+    document.Save(dataDir + "AddChildBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Удалить все закладки из PDF-документа
+
+Все закладки в PDF хранятся в коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Эта статья объясняет, как удалить все закладки из PDF-файла.
+
+Чтобы удалить все закладки из PDF-файла:
 
 1. Вызовите метод Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
 1. Сохраните измененный файл с помощью метода [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4) объекта [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 
-Ниже приведены примеры кода, показывающие, как удалить все закладки из PDF-документа.
+Следующие фрагменты кода показывают, как удалить все закладки из PDF-документа.
 
+{{< tabs tabID="3" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "DeleteAllBookmarks.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf"))
+    {
+        // Delete all bookmarks
+        document.Outlines.Delete();
 
-// Удалить все закладки
-pdfDocument.Outlines.Delete();
-
-dataDir = dataDir + "DeleteAllBookmarks_out.pdf";
-// Сохранить обновленный файл
-pdfDocument.Save(dataDir);
+        // Save PDF document
+        document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+    }
+}
 ```
-## Удаление конкретной закладки из документа PDF
+{{< /tab >}}
 
-Для удаления конкретной закладки из файла PDF:
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmarks()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-1. Передайте название закладки в качестве параметра в метод Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DeleteAllBookmarks.pdf");
+
+    // Delete all bookmarks
+    document.Outlines.Delete();
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteAllBookmarks_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+## Удалить конкретную закладку из PDF-документа
+
+Чтобы удалить конкретную закладку из PDF-файла:
+
+1. Передайте заголовок закладки в качестве параметра методу Delete коллекции [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection).
 1. Затем сохраните обновленный файл с помощью метода Save объекта Document.
 
-Класс [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) предоставляет коллекцию [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Метод [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) удаляет любую закладку с переданным в метод названием.
+Класс [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) предоставляет коллекцию [OutlineCollection](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection). Метод [Delete](https://reference.aspose.com/pdf/net/aspose.pdf/outlinecollection/methods/delete) удаляет любую закладку с заголовком, переданным в метод.
 
-Следующие фрагменты кода показывают, как удалить конкретную закладку из документа PDF.
+Следующие фрагменты кода показывают, как удалить конкретную закладку из PDF-документа.
 
+{{< tabs tabID="4" tabTotal="2" tabName1=".NET Core 3.1" tabName2=".NET 8" >}}
+{{< tab tabNum="1" >}}
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
 
-// Открыть документ
-Document pdfDocument = new Document(dataDir + "DeleteParticularBookmark.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf"))
+    {
+        // Delete particular outline by Title
+        document.Outlines.Delete("Child Outline");
 
-// Удалить конкретную закладку по названию
-pdfDocument.Outlines.Delete("Child Outline");
-
-// Сохранить обновленный файл
-pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+    }
+}
 ```
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteBookmark()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Bookmarks();
+
+    // Open PDF document
+    using var document = new Aspose.Pdf.Document(dataDir + "DeleteParticularBookmark.pdf");
+
+    // Delete particular outline by Title
+    document.Outlines.Delete("Child Outline");
+
+    // Save PDF document
+    document.Save(dataDir + "DeleteParticularBookmark_out.pdf");
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для библиотеки .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -233,23 +377,23 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -258,7 +402,7 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -270,5 +414,3 @@ pdfDocument.Save(dataDir + "DeleteParticularBookmark_out.pdf");
     }
 }
 </script>
-```
-

@@ -1,40 +1,108 @@
 ---
-title: Как запустить Aspose.PDF в Docker
-linktitle: Использование Docker
+title: Как запустить Aspose.PDF for .NET 8 в Docker
+linktitle: Использование Aspose.PDF for .NET 8 в Docker
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/docker/dotnet8/
-description: Интеграция функционала Aspose.PDF в ваше приложение с использованием контейнеров Linux Docker
+description: Интеграция функциональности Aspose.PDF в приложение .NET 8 с использованием контейнеров Docker Linux или Windows
 lastmod: "2024-01-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How to run Aspose.PDF for .NET 8 in Docker",
+    "alternativeHeadline": "Integrate Aspose.PDF with .NET 8 in Docker",
+    "abstract": "Узнайте, как легко интегрировать Aspose.PDF для .NET 8 в свои приложения с помощью Docker, будь то контейнеры Linux или Windows. Эта функция позволяет эффективно создавать и редактировать PDF-документы в приложениях ASP.NET Core, позволяя разработчикам использовать мощные возможности работы с PDF в контейнерной среде. Оптимизируйте свои .NET-проекты, используя это простое руководство по настройке, и улучшите рабочий процесс разработки с помощью надёжных функций Aspose.PDF для .NET",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1045",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/docker/dotnet8/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/docker/dotnet8/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+}
+</script>
 
-## Предварительные требования
+## Необходимые условия
 
-Следующие примеры были протестированы с:
+Следующие примеры протестированы с:
 
-* Docker v.25.0.2 и Docker Desktop 4.27.1
-* Visual Studio 2022 Community Edition v.17.0.5
-* В приведенном ниже примере используется .NET 8 SDK.
-* Aspose.PDF.Drawing v.24.01
+* Docker версии 25.0.2 и Docker Desktop версии 4.27.1.
+* Visual Studio 2022 Community Edition версии 17.0.5.
+* В приведённом ниже примере используется .NET SDK версии 8.
+* Aspose.PDF.Drawing версии 24.01.
 
-## Создание примера приложения для Docker Linux Container
+## Создание примера приложения для контейнера Docker Linux
 
-1. Запустите Visual Studio 2022 и выберите шаблон **ASP.NET Core Web App (Model-View-Controller)** и нажмите **Далее**
-1. В окне **Настройка вашего нового проекта** установите желаемое имя проекта и местоположение, затем нажмите **Далее**
-1. В окне **Дополнительная информация** выберите **.NET 6.0 (Долгосрочная поддержка)** и включите поддержку Docker. Также можно установить **Docker OS** на Linux, если это необходимо.
-1. Нажмите **Создать**
-1.
-### Генерация PDF документа с использованием ASP.NET Core Web App в контейнере Linux
+1. Запустите Visual Studio 2022 и выберите шаблон **ASP.NET Core Web App (Model-View-Controller)** и нажмите **Далее**.
+1. В окне **Настройка нового проекта** задайте желаемое имя и расположение проекта и нажмите **Далее**.
+1. В окне **Дополнительная информация** выберите **.NET 6.0 (Долгосрочная поддержка)** и включите поддержку Docker. Вы также можете установить **Docker OS** на Linux, если это необходимо.
+1. Нажмите **Создать**.
+1. Выберите **Инструменты->Диспетчер пакетов Nuget->Консоль диспетчера пакетов** и установите **Aspose.PDF for .NET** (используйте команду `Install-Package Aspose.PDF`).
 
-Мы будем использовать код из **Сложного примера** в этом приложении. Пожалуйста, перейдите по [этой ссылке](/pdf/ru/net/complex-pdf-example/) для более подробного объяснения.
+### Создание PDF-документа с помощью веб-приложения ASP.NET Core в Linux-контейнере
 
-1. Создайте папку `images` в папке `wwwroot` и поместите туда изображение `logo.png`. Вы можете скачать это изображение [здесь](/pdf/ru/net/docker/logo.png)
+В этом приложении мы будем использовать код из **Сложного примера**. Для более подробного объяснения перейдите по [этой ссылке](/pdf/net/complex-pdf-example/).
+
+1. Создайте папку `images` в папке `wwwroot` и поместите изображение `logo.png`. Вы можете скачать это изображение [здесь](/pdf/net/docker/logo.png).
 1. Создайте папку `fonts` в папке `wwwroot` и поместите туда шрифты [Roboto](https://fonts.google.com/specimen/Roboto).
-1. Создайте папку `samples` в папке `wwwroot` и поместите туда образцы данных.
-1. Замените код в `HomeController.cs` следующим фрагментом (пожалуйста, обратите внимание, что у вас может быть другое пространство имен):
+1. Создайте папку `samples` в папке `wwwroot` и поместите в неё образцы данных.
+1. Замените код в `HomeController.cs` следующим фрагментом (обратите внимание, что у вас может быть другое пространство имён):
 
 ```cs
 using Aspose.Pdf;
@@ -47,7 +115,7 @@ using System.Diagnostics;
 namespace Docker.LinuxDemo.Controllers
 {
     // <summary>
-    // Представляет контроллер для главной страницы и генерации PDF в демонстрационном приложении Linux.
+    // Represents a controller for the home page and PDF generation in a Linux demo application.
     // </summary>
     public class HomeController(ILogger<HomeController> logger, IWebHostEnvironment appEnvironment) : Controller
     {
@@ -55,7 +123,7 @@ namespace Docker.LinuxDemo.Controllers
         private readonly IWebHostEnvironment _appEnvironment = appEnvironment;
 
         // <summary>
-        // Отображает индексное представление.
+        // Displays the index view.
         // </summary>
         public IActionResult Index()
         {
@@ -63,7 +131,7 @@ namespace Docker.LinuxDemo.Controllers
         }
 
         // <summary>
-        // Генерирует документ PDF и возвращает его как файл.
+        // Generates a PDF document and returns it as a file.
         // </summary>
         public IActionResult Generate()
         {
@@ -72,79 +140,80 @@ namespace Docker.LinuxDemo.Controllers
             FontRepository.Sources.Add(new FolderFontSource(Path.Combine(_appEnvironment.WebRootPath, "fonts")));
             var memoryStream = new MemoryStream();
 
-            _logger.LogInformation("Генерация PDF: Начало ");
-            // Инициализация объекта документа
-            var document = new Document();
-            // Добавление страницы
-            var page = document.Pages.Add();
-
-            // Добавление изображения
-            var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
-            page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
-
-            // Добавление заголовка
-            var header = new TextFragment("Новые маршруты паромов осенью 2020");
-            header.TextState.Font = FontRepository.FindFont("Roboto");
-            header.TextState.FontSize = 24;
-            header.HorizontalAlignment = HorizontalAlignment.Center;
-            header.Position = new Position(130, 720);
-            page.Paragraphs.Add(header);
-
-            // Добавление описания
-            var descriptionText = "Посетители должны покупать билеты онлайн, и билетов ограниченное количество — 5000 в день. Паром работает с половинной загрузкой и по сокращенному расписанию. Ожидайте очереди.";
-            var description = new TextFragment(descriptionText);
-            description.TextState.Font = FontRepository.FindFont("Helvetica");
-            description.TextState.FontSize = 14;
-            description.HorizontalAlignment = HorizontalAlignment.Left;
-            page.Paragraphs.Add(description);
-
-
-            // Добавление таблицы
-            var table = new Table
+            _logger.LogInformation("PDF Generation: Start ");
+            // Create PDF document
+            using (var document = new Aspose.Pdf.Document())
             {
-                ColumnWidths = "200",
-                Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
-                DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
-                DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
-                Margin =
+                // Add page
+                var page = document.Pages.Add();
+
+                // Add image
+                var imageFileName = Path.Combine(_appEnvironment.WebRootPath, "images", "logo.png");
+                page.AddImage(imageFileName, new Rectangle(20, 730, 120, 830));
+
+                // Add Header
+                var header = new TextFragment("New ferry routes in Fall 2020");
+                header.TextState.Font = FontRepository.FindFont("Roboto");
+                header.TextState.FontSize = 24;
+                header.HorizontalAlignment = HorizontalAlignment.Center;
+                header.Position = new Position(130, 720);
+                page.Paragraphs.Add(header);
+
+                // Add description
+                var descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. Ferry service is operating at half capacity and on a reduced schedule. Expect lineups.";
+                var description = new TextFragment(descriptionText);
+                description.TextState.Font = FontRepository.FindFont("Helvetica");
+                description.TextState.FontSize = 14;
+                description.HorizontalAlignment = HorizontalAlignment.Left;
+                page.Paragraphs.Add(description);
+
+                // Add table
+                var table = new Table
                 {
-                    Top = 10,
-                    Bottom = 10
-                },
-                DefaultCellTextState =
+                    ColumnWidths = "200",
+                    Border = new BorderInfo(BorderSide.Box, 1f, Color.Black),
+                    DefaultCellBorder = new BorderInfo(BorderSide.Box, 0.5f, Color.Gray),
+                    DefaultCellPadding = new MarginInfo(4.5, 4.5, 4.5, 4.5),
+                    Margin =
+                    {
+                        Top = 10,
+                        Bottom = 10
+                    },
+                    DefaultCellTextState =
+                    {
+                        Font =  FontRepository.FindFont("Helvetica")
+                    }
+                };
+
+                var headerRow = table.Rows.Add();
+                headerRow.Cells.Add("Departs City");
+                headerRow.Cells.Add("Departs Island");
+                foreach (Cell headerRowCell in headerRow.Cells)
                 {
-                    Font =  FontRepository.FindFont("Helvetica")
+                    headerRowCell.BackgroundColor = Color.LightGray;
+                    headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
                 }
-            };
 
-            var headerRow = table.Rows.Add();
-            headerRow.Cells.Add("Город отправления");
-            headerRow.Cells.Add("Остров отправления");
-            foreach (Cell headerRowCell in headerRow.Cells)
-            {
-                headerRowCell.BackgroundColor = Color.LightGray;
-                headerRowCell.DefaultCellTextState.ForegroundColor = Color.FromRgb(0.1, 0.1, 0.1);
+                var time = new TimeSpan(6, 0, 0);
+                var incTime = new TimeSpan(0, 30, 0);
+                for (int i = 0; i < 10; i++)
+                {
+                    var dataRow = table.Rows.Add();
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                    time = time.Add(incTime);
+                    dataRow.Cells.Add(time.ToString(@"hh\:mm"));
+                }
+
+                page.Paragraphs.Add(table);
+
+                document.Save(memoryStream);
             }
-
-            var time = new TimeSpan(6, 0, 0);
-            var incTime = new TimeSpan(0, 30, 0);
-            for (int i = 0; i < 10; i++)
-            {
-                var dataRow = table.Rows.Add();
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-                time = time.Add(incTime);
-                dataRow.Cells.Add(time.ToString(@"hh\:mm"));
-            }
-
-            page.Paragraphs.Add(table);
-
-            document.Save(memoryStream);
-            _logger.LogInformation("Генерация PDF: Завершение");
+            _logger.LogInformation("PDF Generation: Finish");
             return File(memoryStream, fileType, fileName);
         }
 
         // <summary>
-        // Конвертирует файл в другой формат на основе предоставленного id.
+        // Converts a file to a different format based on the provided id.
         // </summary>
         public FileStreamResult Convert(string id)
         {
@@ -157,7 +226,7 @@ namespace Docker.LinuxDemo.Controllers
         }
 
         // <summary>
-        // Конвертирует файл PDF в формат JPEG и возвращает его как файл.
+        // Converts a PDF file to JPEG format and returns it as a file.
         // </summary>
         private FileStreamResult ConvertPdfToJpeg()
         {
@@ -167,16 +236,19 @@ namespace Docker.LinuxDemo.Controllers
             var memoryStream = new MemoryStream();
             var pdfFileName = Path.Combine(_appEnvironment.WebRootPath, "samples", "samples-new.pdf");
 
-            var document = new Document(pdfFileName);
-            var resolution = new Resolution(300);
-            var renderer = new JpegDevice(resolution, 90);
-            renderer.Process(document.Pages[1], memoryStream);
-            memoryStream.Seek(0, SeekOrigin.Begin);
-            return File(memoryStream, fileType, fileName);
+            // Open PDF document
+            using (var document = new Aspose.Pdf.Document(pdfFileName))
+            {
+                var resolution = new Resolution(300);
+                var renderer = new JpegDevice(resolution, 90);
+                renderer.Process(document.Pages[1], memoryStream);
+                memoryStream.Seek(0, SeekOrigin.Begin);
+                return File(memoryStream, fileType, fileName);
+            }
         }
 
         // <summary>
-        // Конвертирует файл XPS в формат PDF и возвращает его как файл.
+        // Converts an XPS file to PDF format and returns it as a file.
         // </summary>
         private FileStreamResult ConvertXpsToPdf()
         {
@@ -186,14 +258,17 @@ namespace Docker.LinuxDemo.Controllers
             var memoryStream = new MemoryStream();
             var xpsFileName = Path.Combine(_appEnvironment.WebRootPath, "samples", "samples-new.oxps");
 
-            var document = new Document(xpsFileName, new XpsLoadOptions());
-            document.Save(memoryStream);
+            // Open XPS document
+            using (var document = new Aspose.Pdf.Document(xpsFileName, new Aspose.Pdf.XpsLoadOptions()))
+            {
+                document.Save(memoryStream);
+            }
 
             return File(memoryStream, fileType, fileName);
         }
 
         // <summary>
-        // Отображает представление конфиденциальности.
+        // Displays the privacy view.
         // </summary>
         public IActionResult Privacy()
         {
@@ -201,7 +276,7 @@ namespace Docker.LinuxDemo.Controllers
         }
 
         // <summary>
-        // Отображает представление ошибки.
+        // Displays the error view.
         // </summary>
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -211,7 +286,8 @@ namespace Docker.LinuxDemo.Controllers
     }
 }
 ```
-1. Замените содержимое в `Dockerfile` на следующее содержимое:
+
+1. Замените содержимое в `Dockerfile` следующим содержимым:
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
@@ -246,4 +322,3 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Docker.LinuxDemo.dll"]
 ```
-

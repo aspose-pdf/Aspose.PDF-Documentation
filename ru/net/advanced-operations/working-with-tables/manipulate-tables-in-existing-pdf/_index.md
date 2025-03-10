@@ -1,9 +1,12 @@
 ---
-title: Манипулирование таблицами в существующих PDF
-linktitle: Манипулирование таблицами
+title: Манипуляция таблицами в существующем PDF
+linktitle: Манипуляция таблицами
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ru/net/manipulate-tables-in-existing-pdf/
+description: Узнайте, как работать с таблицами в существующих PDF-документах, используя Aspose.PDF for .NET, обеспечивая гибкость в модификации документов.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -13,22 +16,21 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Манипулирование таблицами в существующих PDF",
-    "alternativeHeadline": "Как обновить содержимое таблиц в существующем PDF",
+    "headline": "Manipulate Tables in existing PDF",
+    "alternativeHeadline": "Enhance Table Editing in Existing PDF Documents",
+    "abstract": "Aspose.PDF for .NET представляет мощную функцию для манипуляции существующими таблицами PDF, позволяя пользователям легко искать, анализировать и изменять содержимое таблиц. Новый класс TableAbsorber позволяет динамически обновлять и заменять таблицы непосредственно в PDF-документах, упрощая процесс управления табличными данными в PDF для повышения функциональности. Изучите эту инновационную возможность, чтобы оптимизировать редактирование PDF и задачи интеграции данных.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, манипулирование таблицами",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -45,21 +47,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -70,81 +72,92 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/manipulate-tables-in-existing-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": ""
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и легкие задачи, но и справляться с более сложными целями. Проверьте следующий раздел для продвинутых пользователей и разработчиков."
 }
 </script>
 
-## Манипулирование таблицами в существующих PDF
+## Манипуляция таблицами в существующем PDF
 
-Одной из самых ранних функций, поддерживаемых Aspose.PDF для .NET, является возможность работы с таблицами, и она обеспечивает отличную поддержку добавления таблиц в создаваемые с нуля или любые существующие PDF-файлы. Вы также получаете возможность интеграции таблицы с базой данных (DOM) для создания динамических таблиц на основе содержимого базы данных. В этом новом выпуске мы реализовали новую функцию поиска и анализа простых таблиц, которые уже существуют на странице документа PDF. Новый класс под названием **Aspose.PDF.Text.TableAbsorber** предоставляет эти возможности. Использование TableAbsorber очень похоже на существующий класс TextFragmentAbsorber. Следующий фрагмент кода показывает шаги по обновлению содержимого в конкретной ячейке таблицы.
+Одной из первых функций, поддерживаемых Aspose.PDF for .NET, являются его возможности работы с таблицами, и он предоставляет отличную поддержку для добавления таблиц в PDF-файлы, создаваемые с нуля или в любых существующих PDF-файлах. Вы также получаете возможность интегрировать таблицу с базой данных (DOM), чтобы создавать динамические таблицы на основе содержимого базы данных. В этом новом релизе мы реализовали новую функцию поиска и анализа простых таблиц, которые уже существуют на странице PDF-документа. Новый класс **Aspose.PDF.Text.TableAbsorber** предоставляет эти возможности. Использование TableAbsorber очень похоже на существующий класс TextFragmentAbsorber. Следующий фрагмент кода показывает шаги для обновления содержимого в конкретной ячейке таблицы.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите по ссылке https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ManipulateTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Загрузить существующий PDF-файл
-Document pdfDocument = new Document(dataDir + "input.pdf");
-// Создать объект TableAbsorber для поиска таблиц
-TableAbsorber absorber = new TableAbsorber();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Посетить первую страницу с absorber
-absorber.Visit(pdfDocument.Pages[1]);
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Получить доступ к первой таблице на странице, их первой ячейке и текстовым фрагментам в ней
-TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
+        // Get access to first table on page, their first cell and text fragments in it
+        Aspose.Pdf.Text.TextFragment fragment = absorber.TableList[0].RowList[0].CellList[0].TextFragments[1];
 
-// Изменить текст первого текстового фрагмента в ячейке
-fragment.Text = "привет мир";
-dataDir = dataDir + "ManipulateTable_out.pdf";
-pdfDocument.Save(dataDir);
+        // Change text of the first text fragment in the cell
+        fragment.Text = "hi world";
+
+        // Save PDF document
+        document.Save(dataDir + "ManipulateTable_out.pdf");
+    }
+}
 ```
-## Замените старую таблицу на новую в документе PDF
 
-Если вам нужно найти определенную таблицу и заменить ее желаемой, вы можете использовать метод Replace() класса [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) для этого. Следующий пример демонстрирует функциональность замены таблицы внутри документа PDF:
+## Заменить старую таблицу на новую в PDF-документе
+
+В случае, если вам нужно найти конкретную таблицу и заменить ее на желаемую, вы можете использовать метод Replace() класса [TableAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf.text/tableabsorber) для этого. Следующий пример демонстрирует функциональность замены таблицы внутри PDF-документа:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ReplaceTable()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-// Загрузить существующий документ PDF
-Document pdfDocument = new Document(dataDir + @"Table_input2.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Table_input2.pdf"))
+    {
+        // Create TableAbsorber object to find tables
+        var absorber = new Aspose.Pdf.Text.TableAbsorber();
 
-// Создать объект TableAbsorber для поиска таблиц
-TableAbsorber absorber = new TableAbsorber();
+        // Visit first page with absorber
+        absorber.Visit(document.Pages[1]);
 
-// Посетить первую страницу с absorber
-absorber.Visit(pdfDocument.Pages[1]);
+        // Get first table on the page
+        Aspose.Pdf.Text.AbsorbedTable table = absorber.TableList[0];
 
-// Получить первую таблицу на странице
-AbsorbedTable table = absorber.TableList[0];
+        // Create new table
+        var newTable = new Aspose.Pdf.Table();
+        newTable.ColumnWidths = "100 100 100";
+        newTable.DefaultCellBorder = new Aspose.Pdf.BorderInfo(BorderSide.All, 1F);
 
-// Создать новую таблицу
-Table newTable = new Table();
-newTable.ColumnWidths = "100 100 100";
-newTable.DefaultCellBorder = new BorderInfo(BorderSide.All, 1F);
+        Row row = newTable.Rows.Add();
+        row.Cells.Add("Col 1");
+        row.Cells.Add("Col 2");
+        row.Cells.Add("Col 3");
 
-Row row = newTable.Rows.Add();
-row.Cells.Add("Col 1");
-row.Cells.Add("Col 2");
-row.Cells.Add("Col 3");
+        // Replace the table with new one
+        absorber.Replace(document.Pages[1], table, newTable);
 
-// Заменить таблицу на новую
-absorber.Replace(pdfDocument.Pages[1], table, newTable);
-
-// Сохранить документ
-pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
+        // Save PDF document
+        document.Save(dataDir + "ReplaceTable_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Библиотека Aspose.PDF для .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -166,23 +179,23 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -191,7 +204,7 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -203,5 +216,3 @@ pdfDocument.Save(dataDir + "TableReplaced_out.pdf");
     }
 }
 </script>
-```
-

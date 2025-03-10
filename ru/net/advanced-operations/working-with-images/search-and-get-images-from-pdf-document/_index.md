@@ -2,31 +2,34 @@
 title: Получение и поиск изображений в PDF
 linktitle: Поиск и получение изображений
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 60
 url: /ru/net/search-and-get-images-from-pdf-document/
-description: Этот раздел объясняет, как искать и получать изображения из документа PDF с помощью библиотеки Aspose.PDF.
+description: Узнайте, как искать и извлекать изображения из PDF-документа на Java с использованием Aspose.PDF для извлечения медиа.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Получение и поиск изображений в PDF",
-    "alternativeHeadline": "Как получить и найти изображения в файле PDF",
+    "headline": "Get and Search Images in PDF",
+    "alternativeHeadline": "Effortlessly Extract Images from PDF Documents",
+    "abstract": "Откройте для себя новую возможность поиска и извлечения изображений из PDF-документов с использованием библиотеки Aspose.PDF. Эта функция упрощает процесс поиска изображений на нескольких страницах, позволяя пользователям легко извлекать свойства изображений, такие как размеры и разрешение, с помощью простых фрагментов кода. Улучшите свои навыки работы с PDF-документами, используя эту эффективную функциональность обработки изображений.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голуб",
-        "givenName": "Анастасия",
-        "familyName": "Голуб",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, .net, получить изображение, поиск изображения",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "get images, search images, PDF document, Aspose.PDF library, ImagePlacementAbsorber, ImagePlacements, .NET PDF manipulation, document image extraction, image placement properties, code examples",
+    "wordcount": "316",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -68,56 +71,76 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/search-and-get-images-from-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел объясняет, как искать и получать изображения из документа PDF с помощью библиотеки Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "В этом разделе объясняется, как искать и получать изображения из PDF-документа с помощью библиотеки Aspose.PDF."
 }
 </script>
-```
-ImagePlacementAbsorber позволяет искать изображения на всех страницах PDF документа.
 
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+ImagePlacementAbsorber позволяет вам искать изображения на всех страницах PDF-документа.
 
-Для поиска изображений во всем документе:
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+Чтобы искать изображения по всему документу:
 
 1. Вызовите метод Accept коллекции Pages. Метод Accept принимает объект ImagePlacementAbsorber в качестве параметра. Это возвращает коллекцию объектов ImagePlacement.
-1. Пройдитесь по объектам ImagePlacements и получите их свойства (изображение, размеры, разрешение и так далее).
+1. Пройдите по объектам ImagePlacements и получите их свойства (изображение, размеры, разрешение и так далее).
 
-Следующий фрагмент кода показывает, как искать все изображения в документе.
+Следующий фрагмент кода показывает, как искать изображения в документе.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Открыть документ
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "SearchAndGetImages.pdf");
-
-// Создать объект ImagePlacementAbsorber для поиска размещения изображений
-ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-
-// Применить absorber ко всем страницам
-doc.Pages.Accept(abs);
-
-// Пройтись по всем ImagePlacements, получить изображение и свойства ImagePlacement
-foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImagesFromPDF()
 {
-    // Получить изображение с помощью объекта ImagePlacement
-    XImage image = imagePlacement.Image;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Отобразить свойства размещения изображений для всех размещений
-    Console.Out.WriteLine("ширина изображения:" + imagePlacement.Rectangle.Width);
-    Console.Out.WriteLine("высота изображения:" + imagePlacement.Rectangle.Height);
-    Console.Out.WriteLine("LLX изображения:" + imagePlacement.Rectangle.LLX);
-    Console.Out.WriteLine("LLY изображения:" + imagePlacement.Rectangle.LLY);
-    Console.Out.WriteLine("горизонтальное разрешение изображения:" + imagePlacement.Resolution.X);
-    Console.Out.WriteLine("вертикальное разрешение изображения:" + imagePlacement.Resolution.Y);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetImages.pdf"))
+    {
+        // Create ImagePlacementAbsorber object to perform image placement search
+        var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+
+        // Accept the absorber for all the pages
+        document.Pages.Accept(abs);
+
+        // Loop through all ImagePlacements, get image and ImagePlacement properties
+        foreach (var imagePlacement in abs.ImagePlacements)
+        {
+            // Get the image using ImagePlacement object
+            var image = imagePlacement.Image;
+
+            // Display image placement properties for all placements
+            Console.Out.WriteLine("image width: " + imagePlacement.Rectangle.Width);
+            Console.Out.WriteLine("image height: " + imagePlacement.Rectangle.Height);
+            Console.Out.WriteLine("image LLX: " + imagePlacement.Rectangle.LLX);
+            Console.Out.WriteLine("image LLY: " + imagePlacement.Rectangle.LLY);
+            Console.Out.WriteLine("image horizontal resolution: " + imagePlacement.Resolution.X);
+            Console.Out.WriteLine("image vertical resolution: " + imagePlacement.Resolution.Y);
+        }
+    }
 }
+
 ```
-Для получения изображения со страницы используйте следующий код:
+
+Чтобы получить изображение с отдельной страницы, используйте следующий код:
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-doc.Pages[1].Accept(abs);
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageFromAnIndividualPage()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SearchAndGetImages.pdf"))
+    {
+        // Create ImagePlacementAbsorber object to perform image placement search
+        var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+
+        // Accept the absorber for all the pages
+        document.Pages[1].Accept(abs);
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -146,21 +169,21 @@ doc.Pages[1].Accept(abs);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -171,7 +194,7 @@ doc.Pages[1].Accept(abs);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -183,4 +206,3 @@ doc.Pages[1].Accept(abs);
     }
 }
 </script>
-

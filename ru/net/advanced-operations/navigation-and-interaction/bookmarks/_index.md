@@ -2,34 +2,40 @@
 title: Работа с закладками в PDF с использованием C#
 linktitle: Закладки
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /ru/net/bookmarks/
-description: Этот раздел объясняет, как добавлять, удалять и получать закладки с помощью Aspose.PDF для .NET.
+description: Узнайте, как работать с закладками PDF в .NET с использованием Aspose.PDF для легкой навигации и организации документов.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-bookmarks/
+    - /net/working-with-bookmarks-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Работа с закладками в PDF с использованием C#",
-    "alternativeHeadline": "Как добавить закладки в PDF",
+    "headline": "Working with Bookmarks in PDF using C#",
+    "alternativeHeadline": "Effortlessly Manage PDF Bookmarks with C#",
+    "abstract": "Узнайте о новых возможностях Aspose.PDF for .NET, позволяющих пользователям эффективно управлять закладками в PDF-документах. Эта функция позволяет без проблем добавлять, удалять и извлекать закладки, улучшая навигацию и доступность внутри PDF-файлов",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, закладки в pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Bookmarks, PDF, C#, Aspose.PDF, add bookmark, delete bookmark, get bookmark, update bookmark, expand bookmark, PDF manipulation",
+    "wordcount": "130",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +52,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,15 +77,16 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/bookmarks/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел объясняет, как добавлять, удалять и получать закладки с помощью Aspose.PDF для .NET."
+    "dateModified": "2024-11-25",
+    "description": "В этом разделе объясняется, как добавить, удалить и получить закладку с помощью Aspose.PDF for .NET."
 }
 </script>
-Закладки PDF — это удобный и необходимый инструмент при чтении файлов PDF. Они позволяют пользователям быстро переходить в другие места документа PDF, навигировать по страницам и быстро просматривать содержимое PDF, как оглавление.
+
+Закладки PDF — это удобный и необходимый инструмент при чтении PDF-файлов. Они позволяют пользователям быстро переходить к другим местам в PDF-документе, навигировать по страницам и быстро просматривать содержимое PDF, как в оглавлении.
 В этом разделе вы узнаете, как:
 
-- [Добавить и удалить закладку](/pdf/ru/net/add-and-delete-bookmark/)
-- [Получить, обновить и расширить закладку](/pdf/ru/net/get-update-and-expand-bookmark/)
+- [Добавить и удалить закладку](/pdf/net/add-and-delete-bookmark/)
+- [Получить, обновить и развернуть закладку](/pdf/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {
@@ -144,4 +151,3 @@ sitemap:
     }
 }
 </script>
-

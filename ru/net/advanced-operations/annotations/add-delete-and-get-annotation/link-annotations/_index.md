@@ -2,9 +2,11 @@
 title: Использование аннотаций ссылок в PDF
 linktitle: Аннотации ссылок
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 70
 url: /ru/net/link-annotations/
-description: Aspose.PDF для .NET позволяет добавлять, получать и удалять аннотации ссылок в вашем PDF документе.
+description: Aspose.PDF for .NET позволяет добавлять, получать и удалять аннотации ссылок из вашего PDF-документа.
 lastmod: "2024-07-28"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Использование аннотации ссылок для PDF",
-    "alternativeHeadline": "Как добавить аннотацию ссылки в PDF",
+    "headline": "Using Link Annotation for PDF",
+    "alternativeHeadline": "How to add Link Annotation in PDF",
+    "abstract": "Aspose.PDF для .NET предоставляет надёжные возможности для управления аннотированными ссылками в PDF-документах, позволяя пользователям легко добавлять, извлекать и удалять гиперссылки. Эта функция повышает интерактивность документа, позволяя ссылкам открывать определённые страницы, внешние файлы или веб-URL-адреса, причём всё это настраивается с различными стилями и действиями. Откройте для себя новые возможности навигации по PDF-файлам и взаимодействия с пользователями благодаря этой мощной функции аннотаций.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация документов PDF",
-    "keywords": "pdf, c#, аннотация текста",
+    "genre": "pdf document generation",
+    "keywords": "pdf, c#, text annotation",
     "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF Doc Team",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -72,59 +75,78 @@ sitemap:
         "@id": "/net/link-annotation/"
     },
     "dateModified": "2022-02-04",
-    "description": "Aspose.PDF для .NET позволяет добавлять, получать и удалять аннотации текста из вашего PDF документа."
+    "description": "Aspose.PDF для .NET позволяет добавлять, получать и удалять текстовые аннотации из вашего PDF-документа."
 }
 </script>
-## Добавление аннотации ссылки в существующий PDF файл
 
-> Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+## Добавление аннотации ссылки в существующий PDF-файл
 
-Аннотация [Link Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) представляет собой гиперссылку, место назначения в другом месте и документ. Согласно стандарту PDF, аннотация ссылки может использоваться в трех случаях: открытие представления страницы, открытие файла и открытие веб-страницы.
+> Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-### Использование аннотации ссылки для открытия представления страницы
+[Аннотация ссылки](/reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) представляет собой гиперссылку, пункт назначения в другом месте и документ. Согласно стандарту PDF, аннотацию ссылок можно использовать в трёх случаях: просмотр страницы, открытие файла и просмотр веб-страницы.
 
-Для создания аннотации было выполнено несколько дополнительных шагов. Мы использовали 2 TextFragmentAbsorber для поиска фрагментов для демонстрации. Первый предназначен для текста аннотации ссылки, а второй указывает на некоторые места в документе.
+### Использование аннотации ссылок для просмотра страницы
+
+Для создания аннотации были выполнены несколько дополнительных шагов. Мы использовали 2 TextFragmentAbsorbers для поиска фрагментов для демонстрации. Первый предназначен для текста аннотации ссылки, а второй указывает на некоторые места в документе.
 
 ```cs
-Document document = new Document(System.IO.Path.Combine(_dataDir, "Link Annotation Demo.pdf"));
-
-var page = document.Pages[1];
-
-var regEx = new Regex(@"Link Annotation Demo \d");
-TextFragmentAbsorber textFragmentAbsorber1 = new TextFragmentAbsorber(regEx);
-textFragmentAbsorber1.Visit(document);
-
-regEx = new Regex(@"Sample text \d");
-TextFragmentAbsorber textFragmentAbsorber2 = new TextFragmentAbsorber(regEx);
-textFragmentAbsorber2.Visit(document);
-
-var linkFragments = textFragmentAbsorber1.TextFragments;
-var sampleTextFragments = textFragmentAbsorber2.TextFragments;
-
-var linkAnnotation1 = new LinkAnnotation(page, linkFragments[1].Rectangle)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddLinkAnnotation()
 {
-    Action = new GoToAction(
-        new XYZExplicitDestination(
-            sampleTextFragments[1].Page,
-            sampleTextFragments[1].Rectangle.LLX,
-            sampleTextFragments[1].Rectangle.URX, 1.5))
-};
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-page.Annotations.Add(linkAnnotation1);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "Link Annotation Demo.pdf"))
+    {
+        // Get first page
+        var page = document.Pages[1];
 
-document.Save("test.pdf");
+        // Define regular expressions for text fragments
+        var regEx1 = new Regex(@"Link Annotation Demo \d");
+        var regEx2 = new Regex(@"Sample text \d");
+
+        // Create TextFragmentAbsorber for the first regular expression
+        var textFragmentAbsorber1 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx1);
+        textFragmentAbsorber1.Visit(document);
+
+        // Create TextFragmentAbsorber for the second regular expression
+        var textFragmentAbsorber2 = new Aspose.Pdf.Text.TextFragmentAbsorber(regEx2);
+        textFragmentAbsorber2.Visit(document);
+
+        // Get the text fragments for both absorbers
+        var linkFragments = textFragmentAbsorber1.TextFragments;
+        var sampleTextFragments = textFragmentAbsorber2.TextFragments;
+
+        // Create a LinkAnnotation
+        var linkAnnotation1 = new Aspose.Pdf.Annotations.LinkAnnotation(page, linkFragments[1].Rectangle)
+        {
+            Action = new Aspose.Pdf.Annotations.GoToAction(
+                new Aspose.Pdf.Annotations.XYZExplicitDestination(
+                    sampleTextFragments[1].Page,
+                    sampleTextFragments[1].Rectangle.LLX,
+                    sampleTextFragments[1].Rectangle.URX, 1.5))
+        };
+
+        // Add the link annotation to the page
+        page.Annotations.Add(linkAnnotation1);
+
+        // Save PDF document
+        document.Save(dataDir + "AddLinkAnnotation_out.pdf");
+    }
+}
 ```
-Для создания аннотации мы следовали определённым шагам:
 
-1. Создать `LinkAnnotation` и передать объект страницы и прямоугольник текстового фрагмента, который соответствует аннотации.
-1. Установить `Action` как `GoToAction` и передать `XYZExplicitDestination` в качестве желаемого назначения. Мы создали `XYZExplicitDestination` на основе страницы, левых и верхних координат и масштаба.
-1. Добавить аннотацию в коллекцию аннотаций страницы.
-1. Сохранить документ
+Чтобы создать аннотацию, мы выполнили следующие шаги:
 
-### Использование ссылочной аннотации с именованным назначением
+1. Создайте `LinkAnnotation` и передайте объект страницы и прямоугольник текстового фрагмента, который соответствует аннотации.
+1. Установите `Action` как `GoToAction` и передайте `XYZExplicitDestination` в качестве желаемого пункта назначения. Мы создали `XYZExplicitDestination`, основываясь на странице, левых и верхних координатах и масштабе.
+1. Добавьте аннотацию в коллекцию аннотаций страницы.
+1. Сохраните документ.
 
-При обработке различных документов возникает ситуация, когда вы печатаете и не знаете, куда будет указывать аннотация.
-В этом случае вы можете использовать специальное (именованное) назначение, и код будет выглядеть так:
+### Использование аннотации ссылок с именованным пунктом назначения
+
+При обработке различных документов возникает ситуация, когда вы печатаете и не знаете, куда будет указывать аннотация. В этом случае вы можете использовать специальный (именованный) пункт назначения, и код будет выглядеть следующим образом:
 
 ```cs
 var destinationName = "Link2";
@@ -134,7 +156,7 @@ var linkAnnotation2 = new LinkAnnotation(page, linkFragments[2].Rectangle)
 };
 ```
 
-В другом месте вы можете создать Именованное Назначение.
+В другом месте вы можете создать именованный пункт назначения.
 
 ```cs
 document.NamedDestinations.Add(destinationName,
@@ -143,9 +165,10 @@ document.NamedDestinations.Add(destinationName,
         sampleTextFragments[2].Rectangle.LLX,
         sampleTextFragments[2].Rectangle.URX, 1));
 ```
-### Использование аннотации ссылки для открытия файла
 
-Тот же подход используется при создании аннотации для открытия файла, как и в приведенных выше примерах.
+### Использование аннотации ссылок для открытия файла
+
+Тот же подход используется при создании аннотации для открытия файла, как в примерах выше.
 
 ```cs
 var linkAnnotation3 = new LinkAnnotation(page, linkFragments[3].Rectangle)
@@ -154,26 +177,25 @@ var linkAnnotation3 = new LinkAnnotation(page, linkFragments[3].Rectangle)
 };
 ```
 
-Разница заключается в том, что мы будем использовать `GoToRemoteAction` вместо `GoToAction`. Конструктор GoToRemoteAction принимает два параметра: имя файла и номер страницы.
-Вы также можете использовать другую форму и передать имя файла и некоторое назначение. Очевидно, что такое назначение нужно создать до его использования.
+Разница заключается в том, что мы будем использовать `GoToRemoteAction` вместо `GoToAction`. Конструктор GoToRemoteAction получает два параметра: имя файла и номер страницы. Вы также можете использовать другую форму и передать имя файла и некоторый пункт назначения. Очевидно, вам нужно создать такой пункт назначения, прежде чем его использовать.
 
-### Использование аннотации ссылки для открытия веб-страницы
+### Использование аннотации ссылок для открытия веб-страницы
 
-Чтобы открыть веб-страницу, просто установите `Action` с объектом `GoToURIAction`.
-Вы можете передать гиперссылку в качестве параметра конструктора или любой другой тип URI. Например, вы можете использовать `callto` для реализации действия с вызовом номера телефона.
+Чтобы открыть веб-страницу, просто установите `Action` с объектом `GoToURIAction`. Вы можете передать гиперссылку в качестве параметра конструктора или любой другой тип URI. Например, вы можете использовать `callto` для выполнения действия с вызовом номера телефона.
 
 ```cs
 var linkAnnotation4 = new LinkAnnotation(page, linkFragments[4].Rectangle)
 {
     Action = new GoToURIAction("https://products.aspose.com/pdf/net"),
-    // Создать аннотацию ссылки и установить действие для вызова номера телефона
+    // Create Link Annotation and set the action to call a phone number
     //Action = new GoToURIAction("callto:678-555-0103")
     Color = Color.Blue
 };
 ```
-## Добавление декорированной ссылочной аннотации
 
-Вы можете настроить ссылочную аннотацию с помощью границ. В примере ниже мы создадим синюю пунктирную границу шириной 3pt.
+## Добавление оформленной аннотации ссылки
+
+Вы можете настроить аннотацию ссылки с помощью границ. В приведённом ниже примере мы создадим синюю пунктирную границу шириной 3pt.
 
 ```cs
 var linkAnnotation4 = new LinkAnnotation(page, linkFragments[4].Rectangle)
@@ -190,7 +212,7 @@ linkAnnotation4.Border = new Border(linkAnnotation4)
 };
 ```
 
-Еще один пример показывает, как симулировать стиль браузера и использовать подчеркивание для ссылок.
+Ещё один пример показывает, как имитировать стиль браузера и использовать подчёркивание для ссылок.
 
 ```cs
 var linkAnnotation5 = new LinkAnnotation(page, linkFragments[5].Rectangle)
@@ -204,55 +226,69 @@ linkAnnotation5.Border = new Border(linkAnnotation5)
 };
 ```
 
-### Получение ссылочных аннотаций
+### Получение аннотаций ссылок
 
-Пожалуйста, попробуйте использовать следующий фрагмент кода для получения LinkAnnotation из PDF документа.
+Попробуйте использовать следующий фрагмент кода для получения LinkAnnotation из PDF-документа.
 
 ```csharp
-class ExampleLinkAnnotations
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetLinkAnnotations()
 {
-    // Путь к директории документов.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    public static void GetLinkAnnotations()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
     {
-        // Загрузите PDF файл
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
-        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
+        // Get all Link annotations from the first page
+        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
+
+        // Iterate through each Link annotation
         foreach (Aspose.Pdf.Annotations.Annotation annot in linkAnnotations)
         {
-            // Вывод URL каждой ссылочной аннотации
-            Console.WriteLine("URI: " + ((annot as LinkAnnotation).Action as GoToURIAction).URI);
-            TextAbsorber absorber = new TextAbsorber();
+            // Print the URL of each Link Annotation
+            Console.WriteLine("URI: " + ((annot as Aspose.Pdf.Annotations.LinkAnnotation).Action as Aspose.Pdf.Annotations.GoToURIAction).URI);
+
+            // Create a TextAbsorber to extract text within the annotation's rectangle
+            var absorber = new Aspose.Pdf.Text.TextAbsorber();
             absorber.TextSearchOptions.LimitToPageBounds = true;
             absorber.TextSearchOptions.Rectangle = annot.Rect;
+
+            // Accept the absorber for the first page
             document.Pages[1].Accept(absorber);
+
+            // Extract and print the text associated with the hyperlink
             string extractedText = absorber.Text;
-            // Вывод текста, связанного с гиперссылкой
             Console.WriteLine(extractedText);
         }
     }
 }
 ```
+
 ### Удаление аннотаций ссылок
 
-Следующий фрагмент кода показывает, как удалить аннотацию ссылки из файла PDF. Для этого нам нужно найти и удалить все аннотации ссылок на 1-й странице. После этого мы сохраняем документ с удаленной аннотацией.
+Следующий фрагмент кода показывает, как удалить аннотацию ссылки из PDF-файла. Для этого нам нужно найти и удалить все аннотации ссылок на первой странице. После этого мы сохраним документ с удалённой аннотацией.
 
 ```csharp
-class ExampleLinkAnnotations
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteLinkAnnotations()
 {
-    // Путь к директории с документами.
-    private const string _dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
-    public static void DeleteLinkAnnotations()
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "SimpleResume_mod.pdf"))
     {
-        // Загрузить PDF файл
-        Document document = new Document(System.IO.Path.Combine(_dataDir, "SimpleResume_mod.pdf"));
-        // Найти и удалить все аннотации ссылок на 1-й странице
-        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == AnnotationType.Link);
+        // Find and delete all link annotations on the 1st page
+        var linkAnnotations = document.Pages[1].Annotations.Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Link);
 
         foreach (var la in linkAnnotations)
+        {
             document.Pages[1].Annotations.Delete(la);
-        // Сохранить документ с удаленной аннотацией
-        document.Save(System.IO.Path.Combine(_dataDir, "SimpleResume_del.pdf"));
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteLinkAnnotations_out.pdf");
     }
 }
 ```

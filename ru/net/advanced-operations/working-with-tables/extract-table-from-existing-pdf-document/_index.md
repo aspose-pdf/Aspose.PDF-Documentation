@@ -1,10 +1,12 @@
 ---
-title: Извлечение таблицы из PDF документа
-linktitle: Извлечение таблицы
+title: Извлечение таблицы из PDF-документа
+linktitle: Извлечь таблицу
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /ru/net/extract-table-from-existing-pdf-document/
-description: Aspose.PDF для .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем pdf документе.
+description: Aspose.PDF for .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем PDF-документе.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Извлечение таблицы из PDF документа",
-    "alternativeHeadline": "Как извлечь таблицу из PDF файла",
+    "headline": "Extract Table from PDF Document",
+    "alternativeHeadline": "Extract Tables Easily from PDF Files with .NET",
+    "abstract": "Aspose.PDF для .NET предоставляет возможность извлекать таблицы из PDF-документов, упрощая работу с данными и повышая производительность разработчиков. Эта функция позволяет пользователям эффективно получать доступ к табличным данным в PDF-файлах и управлять ими, что делает её важным инструментом для приложений, требующих извлечения и обработки данных.",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "генерация pdf документов",
-    "keywords": "pdf, dotnet, извлечь таблицу",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "wordcount": "837",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,39 +73,46 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/extract-table-from-existing-pdf-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF для .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем pdf документе."
+    "dateModified": "2024-11-26",
+    "description": "Aspose.PDF для .NET позволяет выполнять различные манипуляции с таблицами, содержащимися в вашем PDF-документе."
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
+
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Извлечение таблицы из PDF
 
 ```csharp
-public static void Extract_Table()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Extract_Table()
 {
-    // Загрузить исходный PDF документ
-    Aspose.Pdf.Document pdfDocument = new Aspose.Pdf.Document(@"c:\tmp\the_worlds_cities_in_2018_data_booklet 7.pdf");           
-    foreach (var page in pdfDocument.Pages)
-    {
-        Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
-        absorber.Visit(page);
-        foreach (AbsorbedTable table in absorber.TableList)
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "the_worlds_cities_in_2018_data_booklet 7.pdf"))
+    {          
+        foreach (var page in document.Pages)
         {
-            foreach (AbsorbedRow row in table.RowList)
+            Aspose.Pdf.Text.TableAbsorber absorber = new Aspose.Pdf.Text.TableAbsorber();
+            absorber.Visit(page);
+            foreach (var table in absorber.TableList)
             {
-                foreach (AbsorbedCell cell in row.CellList)
+                foreach (var row in table.RowList)
                 {
-                    TextFragment textfragment = new TextFragment();
-                    TextFragmentCollection textFragmentCollection = cell.TextFragments;
-                    foreach (TextFragment fragment in textFragmentCollection)
+                    foreach (var cell in row.CellList)
                     {
-                        string txt = "";
-                        foreach (TextSegment seg in fragment.Segments)
+                        var textfragment = new Aspose.Pdf.Text.TextFragment();
+                        TextFragmentCollection textFragmentCollection = cell.TextFragments;
+                        foreach (var fragment in textFragmentCollection)
                         {
-                            txt += seg.Text;
+                            string txt = "";
+                            foreach (var seg in fragment.Segments)
+                            {
+                                txt += seg.Text;
+                            }
+                            Console.WriteLine(txt);
                         }
-                        Console.WriteLine(txt);
                     }
                 }
             }
@@ -111,137 +120,145 @@ public static void Extract_Table()
     }
 }
 ```
-## Извлечь границу таблицы в виде изображения
 
-Границы страницы представляют собой операции рисования путей. Следовательно, логика обработки Pdf->Html просто выполняет инструкции рисования и размещает фон за текстом. Таким образом, чтобы повторить логику, вам нужно вручную обработать операторы содержимого и самостоятельно нарисовать графику. Также обратите внимание, что следующий фрагмент кода может работать не точно для различных файлов PDF, но если вы столкнете с какой-либо проблемой, пожалуйста, свяжитесь с нами. Этот код был разработан для конкретных файлов PDF. Следующий фрагмент кода показывает шаги по извлечению границы таблицы в виде изображения из документа PDF.
+## Извлечение границы таблицы как изображения
+
+Границы страниц представляют собой операции рисования контуров. Поэтому логика обработки Pdf->Html просто выполняет инструкции по рисованию и помещает фон за текстом. Таким образом, чтобы повторить логику, вы должны вручную обработать операторы содержимого и нарисовать графику самостоятельно. Также обратите внимание, что следующий фрагмент кода может неточно работать с различными PDF-файлами, но если у вас возникнут какие-либо проблемы, пожалуйста, свяжитесь с нами. Этот код был разработан для определённых PDF-файлов. Следующий фрагмент кода показывает шаги по извлечению границы таблицы в виде изображения из PDF-документа.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к каталогу документов.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
-
-Document doc = new Document(dataDir + "input.pdf");
-
-Stack graphicsState = new Stack();
-System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap((int)doc.Pages[1].PageInfo.Width, (int)doc.Pages[1].PageInfo.Height);
-System.Drawing.Drawing2D.GraphicsPath graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
-// Значение матрицы ctm по умолчанию равно 1,0,0,1,0,0
-System.Drawing.Drawing2D.Matrix lastCTM = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, 0);
-// Система координат System.Drawing основана на верхнем левом углу, в то время как система координат pdf основана на нижнем левом углу, поэтому нам нужно применить инверсионную матрицу
-System.Drawing.Drawing2D.Matrix inversionMatrix = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, (float)doc.Pages[1].PageInfo.Height);
-System.Drawing.PointF lastPoint = new System.Drawing.PointF(0, 0);
-System.Drawing.Color fillColor = System.Drawing.Color.FromArgb(0, 0, 0);
-System.Drawing.Color strokeColor = System.Drawing.Color.FromArgb(0, 0, 0);
-
-using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractTableBorder()
 {
-    gr.SmoothingMode = SmoothingMode.HighQuality;
-    graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Tables();
 
-    // Обработка всех команд содержимого
-    foreach (Operator op in doc.Pages[1].Contents)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
     {
-        Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-        Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-        Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-        Aspose.Pdf.Operators.MoveTo opMoveTo = op as Aspose.Pdf.Operators.MoveTo;
-        Aspose.Pdf.Operators.LineTo opLineTo = op as Aspose.Pdf.Operators.LineTo;
-        Aspose.Pdf.Operators.Re opRe = op as Aspose.Pdf.Operators.Re;
-        Aspose.Pdf.Operators.EndPath opEndPath = op as Aspose.Pdf.Operators.EndPath;
-        Aspose.Pdf.Operators.Stroke opStroke = op as Aspose.Pdf.Operators.Stroke;
-        Aspose.Pdf.Operators.Fill opFill = op as Aspose.Pdf.Operators.Fill;
-        Aspose.Pdf.Operators.EOFill opEOFill = op as Aspose.Pdf.Operators.EOFill;
-        Aspose.Pdf.Operators.SetRGBColor opRGBFillColor = op as Aspose.Pdf.Operators.SetRGBColor;
-        Aspose.Pdf.Operators.SetRGBColorStroke opRGBStrokeColor = op as Aspose.Pdf.Operators.SetRGBColorStroke;
+        Stack graphicsState = new Stack();
+        using (var bitmap = new System.Drawing.Bitmap((int)document.Pages[1].PageInfo.Width, (int)document.Pages[1].PageInfo.Height))
+        {
+            System.Drawing.Drawing2D.GraphicsPath graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+            // Default ctm matrix value is 1,0,0,1,0,0
+            System.Drawing.Drawing2D.Matrix lastCTM = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, 0);
+            // System.Drawing coordinate system is top left based, while pdf coordinate system is low left based, so we have to apply the inversion matrix
+            System.Drawing.Drawing2D.Matrix inversionMatrix = new System.Drawing.Drawing2D.Matrix(1, 0, 0, -1, 0, (float)document.Pages[1].PageInfo.Height);
+            System.Drawing.PointF lastPoint = new System.Drawing.PointF(0, 0);
+            System.Drawing.Color fillColor = System.Drawing.Color.FromArgb(0, 0, 0);
+            System.Drawing.Color strokeColor = System.Drawing.Color.FromArgb(0, 0, 0);
 
-        if (opSaveState != null)
-        {
-            // Сохранить предыдущее состояние и поместить текущее состояние на вершину стека
-            graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
-            lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-        }
-        else if (opRestoreState != null)
-        {
-            // Отбросить текущее состояние и восстановить предыдущее
-            graphicsState.Pop();
-            lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-        }
-        else if (opCtm != null)
-        {
-            System.Drawing.Drawing2D.Matrix cm = new System.Drawing.Drawing2D.Matrix(
-                (float)opCtm.Matrix.A,
-                (float)opCtm.Matrix.B,
-                (float)opCtm.Matrix.C,
-                (float)opCtm.Matrix.D,
-                (float)opCtm.Matrix.E,
-                (float)opCtm.Matrix.F);
+            using (System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(bitmap))
+            {
+                gr.SmoothingMode = SmoothingMode.HighQuality;
+                graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
 
-            // Умножить текущую матрицу на матрицу состояния
-            ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
-            lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-        }
-        else if (opMoveTo != null)
-        {
-            lastPoint = new System.Drawing.PointF((float)opMoveTo.X, (float)opMoveTo.Y);
-        }
-        else if (opLineTo != null)
-        {
-            System.Drawing.PointF linePoint = new System.Drawing.PointF((float)opLineTo.X, (float)opLineTo.Y);
-            graphicsPath.AddLine(lastPoint, linePoint);
+                // Process all the contents commands
+                foreach (var op in document.Pages[1].Contents)
+                {
+                    var opSaveState = op as Aspose.Pdf.Operators.GSave;
+                    var opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+                    var opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+                    var opMoveTo = op as Aspose.Pdf.Operators.MoveTo;
+                    var opLineTo = op as Aspose.Pdf.Operators.LineTo;
+                    var opRe = op as Aspose.Pdf.Operators.Re;
+                    var opEndPath = op as Aspose.Pdf.Operators.EndPath;
+                    var opStroke = op as Aspose.Pdf.Operators.Stroke;
+                    var opFill = op as Aspose.Pdf.Operators.Fill;
+                    var opEOFill = op as Aspose.Pdf.Operators.EOFill;
+                    var opRGBFillColor = op as Aspose.Pdf.Operators.SetRGBColor;
+                    var opRGBStrokeColor = op as Aspose.Pdf.Operators.SetRGBColorStroke;
 
-            lastPoint = linePoint;
-        }
-        else if (opRe != null)
-        {
-            System.Drawing.RectangleF re = new System.Drawing.RectangleF((float)opRe.X, (float)opRe.Y, (float)opRe.Width, (float)opRe.Height);
-            graphicsPath.AddRectangle(re);
-        }
-        else if (opEndPath != null)
-        {
-            graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
-        }
-        else if (opRGBFillColor != null)
-        {
-            fillColor = opRGBFillColor.getColor();
-        }
-        else if (opRGBStrokeColor != null)
-        {
-            strokeColor = opRGBStrokeColor.getColor();
-        }
-        else if (opStroke != null)
-        {
-            graphicsPath.Transform(lastCTM);
-            graphicsPath.Transform(inversionMatrix);
-            gr.DrawPath(new System.Drawing.Pen(strokeColor), graphicsPath);
-            graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
-        }
-        else if (opFill != null)
-        {
-            graphicsPath.FillMode = FillMode.Winding;
-            graphicsPath.Transform(lastCTM);
-            graphicsPath.Transform(inversionMatrix);
-            gr.FillPath(new System.Drawing.SolidBrush(fillColor), graphicsPath);
-            graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
-        }
-        else if (opEOFill != null)
-        {
-            graphicsPath.FillMode = FillMode.Alternate;
-            graphicsPath.Transform(lastCTM);
-            graphicsPath.Transform(inversionMatrix);
-            gr.FillPath(new System.Drawing.SolidBrush(fillColor), graphicsPath);
-            graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+                    if (opSaveState != null)
+                    {
+                        // Save previous state and push current state to the top of the stack
+                        graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
+                        lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    }
+                    else if (opRestoreState != null)
+                    {
+                        // Throw away current state and restore previous one
+                        graphicsState.Pop();
+                        lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    }
+                    else if (opCtm != null)
+                    {
+                        System.Drawing.Drawing2D.Matrix cm = new System.Drawing.Drawing2D.Matrix(
+                            (float)opCtm.Matrix.A,
+                            (float)opCtm.Matrix.B,
+                            (float)opCtm.Matrix.C,
+                            (float)opCtm.Matrix.D,
+                            (float)opCtm.Matrix.E,
+                            (float)opCtm.Matrix.F);
+
+                        // Multiply current matrix with the state matrix
+                        ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
+                        lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    }
+                    else if (opMoveTo != null)
+                    {
+                        lastPoint = new System.Drawing.PointF((float)opMoveTo.X, (float)opMoveTo.Y);
+                    }
+                    else if (opLineTo != null)
+                    {
+                        System.Drawing.PointF linePoint = new System.Drawing.PointF((float)opLineTo.X, (float)opLineTo.Y);
+                        graphicsPath.AddLine(lastPoint, linePoint);
+
+                        lastPoint = linePoint;
+                    }
+                    else if (opRe != null)
+                    {
+                        System.Drawing.RectangleF re = new System.Drawing.RectangleF((float)opRe.X, (float)opRe.Y, (float)opRe.Width, (float)opRe.Height);
+                        graphicsPath.AddRectangle(re);
+                    }
+                    else if (opEndPath != null)
+                    {
+                        graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+                    }
+                    else if (opRGBFillColor != null)
+                    {
+                        fillColor = opRGBFillColor.getColor();
+                    }
+                    else if (opRGBStrokeColor != null)
+                    {
+                        strokeColor = opRGBStrokeColor.getColor();
+                    }
+                    else if (opStroke != null)
+                    {
+                        graphicsPath.Transform(lastCTM);
+                        graphicsPath.Transform(inversionMatrix);
+                        gr.DrawPath(new System.Drawing.Pen(strokeColor), graphicsPath);
+                        graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+                    }
+                    else if (opFill != null)
+                    {
+                        graphicsPath.FillMode = FillMode.Winding;
+                        graphicsPath.Transform(lastCTM);
+                        graphicsPath.Transform(inversionMatrix);
+                        gr.FillPath(new System.Drawing.SolidBrush(fillColor), graphicsPath);
+                        graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+                    }
+                    else if (opEOFill != null)
+                    {
+                        graphicsPath.FillMode = FillMode.Alternate;
+                        graphicsPath.Transform(lastCTM);
+                        graphicsPath.Transform(inversionMatrix);
+                        gr.FillPath(new System.Drawing.SolidBrush(fillColor), graphicsPath);
+                        graphicsPath = new System.Drawing.Drawing2D.GraphicsPath();
+                    }
+                }
+            }
+
+            bitmap.Save(dataDir + "ExtractTableBorder_out.png", ImageFormat.Png);
         }
     }
 }
-dataDir = dataDir + "ExtractBorder_out.png";
-bitmap.Save(dataDir, ImageFormat.Png);
 ```
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF для .NET библиотеки",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -263,21 +280,21 @@ bitmap.Save(dataDir, ImageFormat.Png);
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -288,7 +305,7 @@ bitmap.Save(dataDir, ImageFormat.Png);
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для манипуляции PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -300,5 +317,3 @@ bitmap.Save(dataDir, ImageFormat.Png);
     }
 }
 </script>
-```
-

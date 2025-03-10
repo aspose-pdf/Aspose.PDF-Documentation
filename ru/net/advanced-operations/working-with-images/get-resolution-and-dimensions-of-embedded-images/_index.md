@@ -1,32 +1,35 @@
 ---
 title: Получение разрешения и размеров изображений
-linktitle: Получение разрешения и размеров
+linktitle: Получить разрешение и размеры
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ru/net/get-resolution-and-dimensions-of-embedded-images/
-description: Этот раздел показывает детали получения разрешения и размеров встроенных изображений
+description: Узнайте, как получить разрешение и размеры встроенных изображений из PDF-файла в .NET с помощью Aspose.PDF.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Получение разрешения и размеров изображений",
-    "alternativeHeadline": "Как получить разрешение и размеры встроенных изображений",
+    "headline": "Get Resolution and Dimensions of Images",
+    "alternativeHeadline": "Extract Image Resolution and Dimensions Efficiently",
+    "abstract": "Узнайте, как эффективно получить разрешение и размеры встроенных изображений в PDF-документах с помощью библиотеки Aspose.PDF. Эта функция позволяет разработчикам напрямую обращаться к свойствам изображений без извлечения, оптимизируя процесс работы с изображениями в PDF-файлах и улучшая функциональность и контроль над данными изображений",
     "author": {
         "@type": "Person",
-        "name":"Анастасия Голубь",
-        "givenName": "Анастасия",
-        "familyName": "Голубь",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "создание документов PDF",
-    "keywords": "pdf, c#, получение разрешения, получение размеров",
-    "wordcount": "302",
-    "proficiencyLevel":"Начинающий",
+    "genre": "pdf document generation",
+    "keywords": "Get Resolution, Dimensions of Images, Embedded Images, Aspose.PDF.Drawing, ArrayList, Image Placement Classes, ConcatenateMatrix, XImage, PDF Manipulation Library, Image Resolution Computation",
+    "wordcount": "827",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Команда документации Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,137 +71,195 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/get-resolution-and-dimensions-of-embedded-images/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Этот раздел показывает детали получения разрешения и размеров встроенных изображений"
+    "dateModified": "2024-11-26",
+    "description": "Этот раздел показывает подробности получения разрешения и размеров встроенных изображений"
 }
 </script>
-Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/ru/net/drawing/).
 
-Эта тема объясняет, как использовать классы операторов в пространстве имен Aspose.PDF, которые предоставляют возможность получать информацию о разрешении и размерах изображений, не извлекая их.
+Следующий фрагмент кода также работает с библиотекой [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-Существуют различные способы достижения этого. В этой статье объясняется, как использовать `arraylist` и [классы размещения изображений](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
+В этой теме объясняется, как использовать классы операторов в пространстве имён Aspose.PDF, которые предоставляют возможность получать информацию о разрешении и размерах изображений без необходимости их извлечения.
+
+Существуют разные способы достижения этой цели. В этой статье объясняется, как использовать `ArrayList` и [классы размещения изображений](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement).
 
 1. Сначала загрузите исходный PDF-файл (с изображениями).
-1. Затем создайте объект ArrayList для хранения имен всех изображений в документе.
-1. Получите изображения, используя свойство Page.Resources.Images.
-1. Создайте объект стека для хранения графического состояния изображения и используйте его для отслеживания различных состояний изображений.
-1.
-1. Поскольку мы можем модифицировать матрицу с помощью ConcatenateMatrix, нам также может потребоваться вернуться к исходному состоянию изображения. Используйте операторы GSave и GRestore. Эти операторы используются парами и должны вызываться вместе. Например, если вы выполняете работу с графикой с использованием сложных трансформаций и в конечном итоге возвращаете трансформации в исходное состояние, подход будет следующим:
+1. Затем создайте объект `ArrayList`, чтобы сохранить имена всех изображений в документе.
+1. Получите изображения с помощью свойства Page.Resources.Images.
+1. Создайте объект стека для хранения графического состояния изображения и используйте его для отслеживания различных состояний изображения.
+1. Создайте объект ConcatenateMatrix, который определяет текущее преобразование. Он также поддерживает масштабирование, поворот и перекос любого содержимого. Он объединяет новую матрицу с предыдущей. Обратите внимание, что мы не можем определить преобразование с нуля, а только изменить существующее преобразование.
+1. Поскольку мы можем изменять матрицу с помощью ConcatenateMatrix, нам также может потребоваться вернуться к исходному состоянию изображения. Используйте операторы GSave и GRestore. Эти операторы используются попарно, поэтому их следует вызывать вместе. Например, если вы выполняете графическую работу со сложными преобразованиями и, наконец, возвращаете преобразования в исходное состояние, подход будет примерно таким:
 
 ```csharp
-// Рисуем некоторый текст
+// Draw some text
 GSave
 
-ConcatenateMatrix  // поворачиваем содержимое после оператора
+ConcatenateMatrix  // rotate contents after the operator
 
-// Некоторая графическая работа
+// Some graphics work
 
-ConcatenateMatrix // масштабируем (с предыдущим поворотом) содержимое после оператора
+ConcatenateMatrix // scale (with previous rotation) contents after the operator
 
-// Другая графическая работа
+// Some other graphics work
 
 GRestore
 
-// Рисуем некоторый текст
+// Draw some text
 ```
 
-В результате текст рисуется в обычной форме, но между операторами текста выполняются некоторые трансформации. Для отображения изображения или для рисования форм объектов и изображений нам нужно использовать оператор Do.
+В результате текст рисуется в обычном виде, но между текстовыми операторами выполняются некоторые преобразования. Чтобы отобразить изображение или нарисовать объекты формы и изображения, нам нужно использовать оператор Do.
 
 У нас также есть класс с именем XImage, который предоставляет два свойства, Width и Height, которые можно использовать для получения размеров изображения.
 
-1.
-1.
-1. Отображение информации в командной строке вместе с именем изображения.
+1. Выполните некоторые вычисления для определения разрешения изображения.
+1. Отобразите информацию в командной строке вместе с именем изображения.
 
-Следующий фрагмент кода показывает, как получить размеры и разрешение изображения, не извлекая его из документа PDF.
+Приведённый ниже фрагмент кода показывает, как получить размеры и разрешение изображения без извлечения изображения из PDF-документа.
 
 ```csharp
-// Для полных примеров и файлов данных, пожалуйста, перейдите на https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Путь к директории с документами.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-// Загрузка исходного PDF файла
-Document doc = new Document(dataDir+ "ImageInformation.pdf");
-
-// Определение стандартного разрешения для изображения
-int defaultResolution = 72;
-System.Collections.Stack graphicsState = new System.Collections.Stack();
-// Определение объекта списка, который будет содержать имена изображений
-System.Collections.ArrayList imageNames = new System.Collections.ArrayList(doc.Pages[1].Resources.Images.Names);
-// Вставка объекта в стек
-graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
-
-// Получение всех операторов на первой странице документа
-foreach (Operator op in doc.Pages[1].Contents)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractImageInformationFromPDF()
 {
-    // Использование операторов GSave/GRestore для возврата преобразований к ранее установленным
-    Aspose.Pdf.Operators.GSave opSaveState = op as Aspose.Pdf.Operators.GSave;
-    Aspose.Pdf.Operators.GRestore opRestoreState = op as Aspose.Pdf.Operators.GRestore;
-    // Создание объекта ConcatenateMatrix, поскольку он определяет текущую матрицу преобразования.
-    Aspose.Pdf.Operators.ConcatenateMatrix opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
-    // Создание оператора Do, который рисует объекты из ресурсов. Он рисует объекты Form и объекты Image
-    Aspose.Pdf.Operators.Do opDo = op as Aspose.Pdf.Operators.Do;
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    if (opSaveState != null)
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageInformation.pdf"))
     {
-        // Сохранение предыдущего состояния и помещение текущего состояния в верхнюю часть стека
-        graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
-    }
-    else if (opRestoreState != null)
-    {
-        // Отбрасывание текущего состояния и восстановление предыдущего
-        graphicsState.Pop();
-    }
-    else if (opCtm != null)
-    {
-        System.Drawing.Drawing2D.Matrix cm = new System.Drawing.Drawing2D.Matrix(
-           (float)opCtm.Matrix.A,
-           (float)opCtm.Matrix.B,
-           (float)opCtm.Matrix.C,
-           (float)opCtm.Matrix.D,
-           (float)opCtm.Matrix.E,
-           (float)opCtm.Matrix.F);
+        // Define the default resolution for image
+        int defaultResolution = 72;
+        var graphicsState = new Stack();
 
-        // Умножение текущей матрицы на матрицу состояния
-        ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
+        // Define list which will hold image names
+        var imageNames = new List<string>(document.Pages[1].Resources.Images.Names);
 
-        continue;
-    }
-    else if (opDo != null)
-    {
-        // В случае, если это оператор рисования изображения
-        if (imageNames.Contains(opDo.Name))
+        // Insert an object to stack
+        graphicsState.Push(new System.Drawing.Drawing2D.Matrix(1, 0, 0, 1, 0, 0));
+
+        // Get all the operators on first page of document
+        foreach (var op in document.Pages[1].Contents)
         {
-            System.Drawing.Drawing2D.Matrix lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
-            // Создание объекта XImage для хранения изображений первой страницы PDF
-            XImage image = doc.Pages[1].Resources.Images[opDo.Name];
+            // Use GSave/GRestore operators to revert the transformations back to previously set
+            var opSaveState = op as Aspose.Pdf.Operators.GSave;
+            var opRestoreState = op as Aspose.Pdf.Operators.GRestore;
+            var opCtm = op as Aspose.Pdf.Operators.ConcatenateMatrix;
+            var opDo = op as Aspose.Pdf.Operators.Do;
 
-            // Получение размеров изображения
-            double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
-            double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
-            // Получение информации о высоте и ширине изображения
-            double originalWidth = image.Width;
-            double originalHeight = image.Height;
+            if (opSaveState != null)
+            {
+                // Save previous state and push current state to the top of the stack
+                graphicsState.Push(((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Clone());
+            }
+            else if (opRestoreState != null)
+            {
+                // Throw away current state and restore previous one
+                graphicsState.Pop();
+            }
+            else if (opCtm != null)
+            {
+                var cm = new System.Drawing.Drawing2D.Matrix(
+                   (float)opCtm.Matrix.A,
+                   (float)opCtm.Matrix.B,
+                   (float)opCtm.Matrix.C,
+                   (float)opCtm.Matrix.D,
+                   (float)opCtm.Matrix.E,
+                   (float)opCtm.Matrix.F);
 
-            // Расчёт разрешения на основе полученной информации
-            double resHorizontal = originalWidth * defaultResolution / scaledWidth;
-            double resVertical = originalHeight * defaultResolution / scaledHeight;
+                // Multiply current matrix with the state matrix
+                ((System.Drawing.Drawing2D.Matrix)graphicsState.Peek()).Multiply(cm);
 
-            // Отображение информации о размерах и разрешении каждого изображения
-            Console.Out.WriteLine(
-                    string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
-                                 opDo.Name, scaledWidth, scaledHeight, resHorizontal,
-                                 resVertical));
+                continue;
+            }
+            else if (opDo != null)
+            {
+                // In case this is an image drawing operator
+                if (imageNames.Contains(opDo.Name))
+                {
+                    var lastCTM = (System.Drawing.Drawing2D.Matrix)graphicsState.Peek();
+                    // Create XImage object to hold images of first pdf page
+                    var image = document.Pages[1].Resources.Images[opDo.Name];
+
+                    // Get image dimensions
+                    double scaledWidth = Math.Sqrt(Math.Pow(lastCTM.Elements[0], 2) + Math.Pow(lastCTM.Elements[1], 2));
+                    double scaledHeight = Math.Sqrt(Math.Pow(lastCTM.Elements[2], 2) + Math.Pow(lastCTM.Elements[3], 2));
+                    // Get Height and Width information of image
+                    double originalWidth = image.Width;
+                    double originalHeight = image.Height;
+
+                    // Compute resolution based on above information
+                    double resHorizontal = originalWidth * defaultResolution / scaledWidth;
+                    double resVertical = originalHeight * defaultResolution / scaledHeight;
+
+                    // Display Dimension and Resolution information of each image
+                    Console.Out.WriteLine(
+                            string.Format(dataDir + "image {0} ({1:.##}:{2:.##}): res {3:.##} x {4:.##}",
+                                         opDo.Name, scaledWidth, scaledHeight, resHorizontal,
+                                         resVertical));
+                }
+            }
         }
     }
 }
 ```
 
+<!-- 7188229067 -->
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Программное приложение",
+    "название": "Библиотека Aspose.PDF for .NET",
+    "изображение": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "Издатель": {
+        "@type": "Организация",
+        "Название": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "логотип": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternativeName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "предложения": {
+        "@type": "Предложение",
+        "цена": "1199",
+        "валюта цены": "USD"
+    },
+    "категория приложения": "Библиотека управления PDF для .NET",
+    "URL загрузки": "https://www
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Библиотека Aspose.PDF для .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -220,23 +281,23 @@ foreach (Operator op in doc.Pages[1].Contents)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "продажи",
-                "areaServed": "США",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "продажи",
-                "areaServed": "Великобритания",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "продажи",
-                "areaServed": "Австралия",
-                "availableLanguage": "английский"
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
             }
         ]
     },
@@ -245,7 +306,7 @@ foreach (Operator op in doc.Pages[1].Contents)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Библиотека для работы с PDF для .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -257,5 +318,66 @@ foreach (Operator op in doc.Pages[1].Contents)
     }
 }
 </script>
-```
-
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aspose.PDF for .NET Library",
+    "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+    "url": "https://www.aspose.com/",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "offers": {
+        "@type": "Offer",
+        "price": "1199",
+        "priceCurrency": "USD"
+    },
+    "applicationCategory": "PDF Manipulation Library for .NET",
+    "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
+    "operatingSystem": "Windows, MacOS, Linux",
+    "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
+    "softwareVersion": "2022.1",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "16"
+    }
+}
+</script>

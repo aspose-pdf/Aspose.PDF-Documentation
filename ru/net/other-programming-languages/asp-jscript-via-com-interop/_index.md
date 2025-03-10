@@ -1,54 +1,118 @@
 ---
 title: ASP - JScript через COM Interop
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /ru/net/asp-jscript-via-com-interop/
+description: Узнайте, как использовать Aspose.PDF for .NET в приложениях ASP и JScript с помощью COM Interop. Включите расширенные возможности PDF.
 ---
-{{% alert color="primary" %}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "ASP - JScript via COM Interop",
+    "alternativeHeadline": "Integrate JScript with ASP for PDF Creation",
+    "abstract": "Представляем мощную функцию, которая позволяет разработчикам ASP использовать JScript через COM Interop для удобного создания PDF-документов. Эта функция обеспечивает лёгкую интеграцию Aspose.PDF для .NET, позволяя пользователям динамически добавлять текстовые строки в PDF-файлы непосредственно в своих приложениях ASP, оптимизируя рабочие процессы генерации документов",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "182",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/asp-jscript-via-com-interop/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/asp-jscript-via-com-interop/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF может выполнять не только простые и лёгкие задачи, но и справляться с более сложными целями. Ознакомьтесь со следующим разделом для опытных пользователей и разработчиков."
+}
+</script>
 
-Это простое приложение ASP, которое показывает, как добавить простую текстовую строку в файл PDF с использованием [Aspose.PDF для .NET](/pdf/ru/net/) и JScript через COM Interop.
+{{% alert цвет="основной" %}}
+
+Это простое приложение ASP, которое показывает вам, как добавить простую текстовую строку в PDF-файл с помощью [Aspose.PDF for .NET](/pdf/net/) и JScript через COM Interop.
 
 {{% /alert %}}
 
 Пример:
 
-{{% alert color="primary" %}}
-
 ```javascript
 <%@ LANGUAGE = JScript %>
 <html>
     <head>
-        <title>Использование Aspose.PDF для .NET в классическом примере ASP</title>
+        <title> using Aspose.PDF for .NET in classical ASP sample</title>
     </head>
     <body>
-        <h3>Создание образца PDF-документа с использованием Aspose.PDF для .NET в классическом ASP и JScript</h3>
+        <h3>creation of sample PDF document while using Aspose.PDF for .NET with classical ASP and JScript</h3>
 <%
-// установка лицензии
-var lic = Server.CreateObject("Aspose.PDF.License");
+// set license
+var lic = Server.CreateObject("Aspose.Pdf.License");
 lic.SetLicense("D:\\ASPOSE\\Aspose.Total.lic");
 
-// Создание экземпляра Pdf, вызвав его пустой конструктор
-var pdf = Server.CreateObject("Aspose.PDF.Document");
+// Instantiate Pdf instance by calling its empty constructor
+var pdf = Server.CreateObject("Aspose.Pdf.Document");
 
-// Создание новой страницы в объекте PDF
+// Create a new Page in the PDF object
 var pdfpage = pdf.Pages.Add();
 
-// Создание объекта текстового фрагмента
+// Create Text Fragment object
 var sampleText = Server.CreateObject("Aspose.Pdf.Text.TextFragment");
 
-// Назначение содержимого фрагменту
-sampleText.Text = "HelloWorld с использованием ASP и JScript";
+// Assign some content to the Fragment
+sampleText.Text =  = "HelloWorld using ASP and JScript";
 
-// Добавление текстового параграфа в коллекцию параграфов раздела
-pdfpage.Paragraphs.Add(sampleText);
+// Add Text paragraph to paragraphs collection of a section
+pdfpage.Paragraphs.Add(SampleText);
 
-// Сохранение документа PDF
+// Save PDF document
 pdf.Save("d:\\pdftest\\HelloWorldinASP.pdf");
 
 %>
     </body>
 </html>
 ```
-
-{{% /alert %}}
-
