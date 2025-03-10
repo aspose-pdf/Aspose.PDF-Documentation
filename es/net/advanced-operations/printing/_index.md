@@ -1,35 +1,40 @@
 ---
-title: Impresión de documentos PDF
-linktitle: Impresión de documentos
+title: Imprimir documentos PDF
+linktitle: Imprimir documento
 type: docs
-weight: 160
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 220
 url: /es/net/printing-document/
-description: Técnicas de impresión de PDF en C# y guía para configuraciones de impresora PDF en C# y consejos para proyectos .NET
+description: Técnicas de impresión de PDF en C# y guía para la configuración de impresoras PDF en C# y consejos para proyectos .NET
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-pdf-printing-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Impresión de documentos PDF",
-    "alternativeHeadline": "Cómo imprimir documentos PDF",
+    "headline": "Printing PDF documents",
+    "alternativeHeadline": "Streamlined C# PDF Printing Techniques and Settings",
+    "abstract": "Descubre la nueva funcionalidad de impresión de documentos PDF utilizando C# con nuestra guía completa. Esta función proporciona técnicas y consejos esenciales para configurar la configuración de la impresora PDF dentro de proyectos .NET, mejorando tus capacidades de manejo de documentos. Perfecto para desarrolladores que buscan simplificar sus procesos de impresión en aplicaciones .NET",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, imprimir pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Printing PDF, C# PDF printer settings, .NET project tips, PDF document generation, print PDF document in WPF application, printing PDF in .NET Framework, Aspose.PDF for .NET Library, PDF to PostScript conversion, check print job status, printing PDF in .NET Core",
+    "wordcount": "120",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +51,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,17 +76,18 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/printing-document/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Técnicas de impresión de PDF en C# y guía para configuraciones de impresora PDF en C# y consejos para proyectos .NET"
+    "dateModified": "2024-11-25",
+    "description": "Técnicas de impresión de PDF en C# y guía para la configuración de impresoras PDF en C# y consejos para proyectos .NET"
 }
 </script>
+
 ## Cómo imprimir archivos PDF en C#
 
-- [Imprimir PDF en .NET Framework](/pdf/es/net/printing-pdf-in-net-framework/)
-- [Imprimir PDF en una impresora XPS (Facades)](/pdf/es/net/printing-pdf-to-an-xps-printer-facades/)
-- [Conversión de PDF a PostScript, Verificación del estado del trabajo de impresión](/pdf/es/net/pdf-to-postscript-conversion/)
-- [Imprimir PDF en .NET Core](/pdf/es/net/print-dotnetcore/)
-- [Imprimir documento PDF en una aplicación WPF](/pdf/es/net/print-pdf-document-in-wpf-application/)
+- [Imprimir PDF en .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
+- [Imprimir PDF en una impresora XPS (Fachadas)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
+- [Conversión de PDF a PostScript, Verificación del estado del trabajo de impresión](/pdf/net/pdf-to-postscript-conversion/)
+- [Imprimir PDF en .NET Core](/pdf/net/print-dotnetcore/)
+- [Imprimir documento PDF en aplicación WPF](/pdf/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {
@@ -134,7 +140,7 @@ sitemap:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -146,49 +152,3 @@ sitemap:
     }
 }
 </script>
-# Guía de Inicio Rápido
-
-Bienvenido a nuestro software. Esta guía te ayudará a configurar y comenzar a usar la aplicación en poco tiempo.
-
-## Requisitos del sistema
-
-Antes de instalar, verifica que tu sistema cumpla con estos requisitos:
-
-- **Sistema Operativo:** Windows 10 o superior, MacOS Mojave o superior
-- **Memoria:** 4GB RAM mínimo
-- **Espacio en Disco:** 500MB de espacio libre
-
-## Instalación
-
-Sigue estos pasos para instalar el software:
-
-1. Descarga el instalador desde nuestro sitio web.
-2. Ejecuta el archivo descargado.
-3. Sigue las instrucciones en pantalla para completar la instalación.
-
-## Configuración Inicial
-
-Después de instalar, realiza estos pasos para configurar la aplicación:
-
-```bash
-# Configura tu entorno
-$ setup --init
-```
-
-## Cómo usar
-
-Para empezar a usar la aplicación, sigue estos simples pasos:
-
-- Abre la aplicación desde el menú de inicio.
-- Inicia sesión con tus credenciales.
-- Configura tus preferencias iniciales.
-
-## Soporte
-
-Si encuentras algún problema, por favor visita nuestro centro de soporte en:
-
-[Centro de Soporte](https://support.nuestrositio.com)
-
-type: docs
-changefreq: "monthly"
-

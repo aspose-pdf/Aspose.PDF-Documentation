@@ -1,10 +1,12 @@
 ---
-title: Envío de Datos de AcroForm
-linktitle: Envío de AcroForm
+title: Publicación de datos de AcroForm
+linktitle: Publicación de AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /es/net/posting-acroform-data/
-description: Puede importar y exportar datos de formulario a un archivo XML con el espacio de nombres Aspose.Pdf.Facades en Aspose.PDF para .NET.
+description: Puedes importar y exportar datos de formularios a un archivo XML con el espacio de nombres Aspose.Pdf.Facades en Aspose.PDF for .NET.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Envío de Datos de AcroForm",
-    "alternativeHeadline": "Importar y Exportar datos de formulario a archivo XML",
+    "headline": "Posting AcroForm Data",
+    "alternativeHeadline": "Post AcroForm Data",
+    "abstract": "Presentando una nueva característica poderosa en Aspose.PDF for .NET, la capacidad de publicar datos de AcroForm. Esta funcionalidad permite a los desarrolladores no solo crear y editar AcroForms, sino también importar y exportar datos de formularios a archivos XML, mejorando las capacidades de procesamiento y almacenamiento de datos dentro de las aplicaciones.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, envío de datos de acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Posting AcroForm Data, Import and Export Form Data, Aspose.PDF for .NET, AcroForm Fields, Submit Button, External Web Page Integration, Form Data Posting, XML File Handling, FieldType.Text, Database Saving",
+    "wordcount": "400",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,49 +74,55 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/posting-acroform-data/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Puede importar y exportar datos de formulario a un archivo XML con el espacio de nombres Aspose.Pdf.Facades en Aspose.PDF para .NET."
+    "dateModified": "2024-11-25",
+    "description": "Puedes importar y exportar datos de formularios a un archivo XML con el espacio de nombres Aspose.Pdf.Facades en Aspose.PDF for .NET."
 }
 </script>
 
 {{% alert color="primary" %}}
 
-AcroForm es un tipo importante de documento PDF. No solo puede crear y editar un AcroForm usando el [espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace), sino también importar y exportar datos del formulario a un archivo XML. El espacio de nombres Aspose.Pdf.Facades en Aspose.PDF para .NET le permite implementar otra característica del AcroForm, que le ayuda a publicar datos de un AcroForm en una página web externa. Esta página web luego lee las variables de publicación y utiliza estos datos para un procesamiento adicional. Esta característica es útil en los casos en que no solo desea mantener los datos en el archivo PDF, sino que también quiere enviarlos a su servidor y luego guardarlos en una base de datos, etc.
+AcroForm es un tipo importante de documento PDF. No solo puedes crear y editar un AcroForm utilizando [el espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace), sino también importar y exportar datos de formularios a un archivo XML. El espacio de nombres Aspose.Pdf.Facades en Aspose.PDF for .NET te permite implementar otra característica de AcroForm, que te ayuda a publicar datos de AcroForm en una página web externa. Esta página web luego lee las variables de publicación y utiliza estos datos para un procesamiento posterior. Esta característica es útil en los casos en que no solo deseas mantener los datos en el archivo PDF, sino que deseas enviarlos a tu servidor y luego guardarlos en una base de datos, etc.
 
 {{% /alert %}}
 
 ## Detalles de implementación
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-En este artículo, hemos intentado crear un AcroForm usando el [espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
-En este artículo, hemos intentado crear un AcroForm usando [Aspose.Pdf.Facades namespace](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace).
+En este artículo, hemos intentado crear un AcroForm utilizando [el espacio de nombres Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace). También hemos agregado un botón de envío y establecido su URL de destino. Los siguientes fragmentos de código te muestran cómo crear el formulario y luego recibir los datos publicados en la página web.
 
 ```csharp
-// Crear una instancia de la clase FormEditor y vincular archivos pdf de entrada y salida
-Aspose.Pdf.Facades.FormEditor editor = new Aspose.Pdf.Facades.FormEditor("input.pdf","output.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void CreateAcroFormWithFields()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Crear campos AcroForm - He creado solo dos campos para simplificar
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
-editor.AddField(Aspose.PDF.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
+    // Create an instance of FormEditor class and bind input and output pdf files
+    using (var editor = new Aspose.Pdf.Facades.FormEditor(dataDir + "input.pdf", dataDir + "output.pdf"))
+    {
+        // Create AcroForm fields - I have created only two fields for simplicity
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "firstname", 1, 100, 600, 200, 625);
+        editor.AddField(Aspose.Pdf.Facades.FieldType.Text, "lastname", 1, 100, 550, 200, 575);
 
-// Añadir un botón de envío y establecer URL objetivo
-editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
+        // Add a submit button and set target URL
+        editor.AddSubmitBtn("submitbutton", 1, "Submit", "http://localhost/csharptesting/show.aspx", 100, 450, 150, 475);
 
-// Guardar el archivo pdf de salida
-editor.Save();
+        // Save PDF document
+        editor.Save();
+    }
+}
 ```
 
 {{% alert color="primary" %}}
 
-El siguiente fragmento de código muestra cómo recibir los valores publicados en la página web objetivo.
-El siguiente fragmento de código muestra cómo recibir los valores publicados en la página web de destino.
+El siguiente fragmento de código te muestra cómo recibir los valores publicados en la página web de destino. En este ejemplo, he utilizado una página llamada Show.aspx, y he agregado una simple línea de código en el método de carga de la página.
 
 {{% /alert %}}
 
 ```csharp
-// Muestra los valores publicados en la página web de destino
-Response.Write("Hola " + Request.Form.Get("firstname") + " " + Request.Form.Get("lastname"));
+// Show the posted values on the target web page
+Response.Write("Hello " + Request.Form.Get("firstname") + " " + Request.Form.Get("lastname"));
 ```
 
 <script type="application/ld+json">
@@ -142,21 +151,21 @@ Response.Write("Hola " + Request.Form.Get("firstname") + " " + Request.Form.Get(
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -167,7 +176,7 @@ Response.Write("Hola " + Request.Form.Get("firstname") + " " + Request.Form.Get(
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -179,4 +188,3 @@ Response.Write("Hola " + Request.Form.Get("firstname") + " " + Request.Form.Get(
     }
 }
 </script>
-

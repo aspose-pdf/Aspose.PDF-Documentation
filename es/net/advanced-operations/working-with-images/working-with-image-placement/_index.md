@@ -1,32 +1,35 @@
 ---
-title: Trabajando con la Colocación de Imágenes
-linktitle: Trabajando con la Colocación de Imágenes
+title: Trabajando con la colocación de imágenes
+linktitle: Trabajando con la colocación de imágenes
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /es/net/working-with-image-placement/
-description: Esta sección describe las características de trabajar con la colocación de imágenes en archivos PDF utilizando la biblioteca C#.
+description: Esta sección describe las características de trabajar con archivos PDF de colocación de imágenes utilizando la biblioteca C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabajando con la Colocación de Imágenes",
-    "alternativeHeadline": "Cómo obtener la posición de una Imagen en Archivo PDF",
+    "headline": "Working with Image Placement",
+    "alternativeHeadline": "Enhanced Image Placement in PDF",
+    "abstract": "La nueva función de colocación de imágenes en Aspose.PDF for .NET permite a los desarrolladores posicionar y manipular imágenes de manera eficiente dentro de documentos PDF. Esta funcionalidad incluye clases como ImagePlacement e ImagePlacementAbsorber, que permiten la recuperación precisa de las dimensiones y la resolución de las imágenes, mejorando las capacidades de generación de documentos PDF con un mayor control sobre los elementos visuales.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, c#, colocación de imágenes en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Image Placement, C# library, Aspose.PDF, ImagePlacement, ImagePlacementAbsorber, PDF document generation, image resolution, image properties, bitmap scaling, PDF manipulation",
+    "wordcount": "306",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,51 +71,48 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/working-with-image-placement/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta sección describe las características de trabajar con la colocación de imágenes en archivos PDF utilizando la biblioteca C#."
+    "dateModified": "2024-11-26",
+    "description": "Esta sección describe las características de trabajar con archivos PDF de colocación de imágenes utilizando la biblioteca C#."
 }
 </script>
-Con el lanzamiento de Aspose.PDF para .NET 7.0.0, introdujimos clases llamadas [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) y [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) que ofrecen capacidades similares a las clases descritas anteriormente para obtener la resolución y posición de una imagen en un documento PDF.
 
-- ImagePlacementAbsorber realiza la búsqueda de uso de imagen como la colección de objetos ImagePlacement.
-- ImagePlacement proporciona los miembros Resolution y Rectangle que devuelven los valores reales de colocación de imágenes.
+Con el lanzamiento de Aspose.PDF for .NET 7.0.0, introdujimos clases llamadas [ImagePlacement](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacement), [ImagePlacementAbsorber](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber) y [ImagePlacementCollection](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementcollection) que proporcionan capacidades similares a las clases descritas anteriormente para obtener la resolución y la posición de una imagen en un documento PDF.
 
-El siguiente fragmento de código también funciona con la nueva interfaz gráfica [Aspose.Drawing](/pdf/es/net/drawing/).
+- ImagePlacementAbsorber realiza una búsqueda de uso de imágenes como la colección de objetos ImagePlacement.
+- ImagePlacement proporciona los miembros Resolution y Rectangle que devuelven los valores de colocación de imágenes reales.
+
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.Drawing](/pdf/net/drawing/).
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-
-// Cargar el documento PDF fuente
-Aspose.Pdf.Document doc = new Aspose.Pdf.Document(dataDir+ "ImagePlacement.pdf");
-ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-
-// Cargar el contenido de la primera página
-doc.Pages[1].Accept(abs);
-foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ExtractAndScaleImagesFromPDF()
 {
-    // Obtener propiedades de la imagen
-    Console.Out.WriteLine("ancho de imagen:" + imagePlacement.Rectangle.Width);
-    Console.Out.WriteLine("altura de imagen:" + imagePlacement.Rectangle.Height);
-    Console.Out.WriteLine("LLX de imagen:" + imagePlacement.Rectangle.LLX);
-    Console.Out.WriteLine("LLY de imagen:" + imagePlacement.Rectangle.LLY);
-    Console.Out.WriteLine("resolución horizontal de imagen:" + imagePlacement.Resolution.X);
-    Console.Out.WriteLine("resolución vertical de imagen:" + imagePlacement.Resolution.Y);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
 
-    // Recuperar imagen con dimensiones visibles
-    Bitmap scaledImage;
-    using (MemoryStream imageStream = new MemoryStream())
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImagePlacement.pdf"))
     {
-        // Recuperar imagen de recursos
-        imagePlacement.Image.Save(imageStream, System.Drawing.Imaging.ImageFormat.Png);
-        Bitmap resourceImage = (Bitmap)Bitmap.FromStream(imageStream);
-        // Crear bitmap con dimensiones reales
-        scaledImage = new Bitmap(resourceImage, (int)imagePlacement.Rectangle.Width, (int)imagePlacement.Rectangle.Height);
+        var abs = new Aspose.Pdf.ImagePlacementAbsorber();
+
+        // Load the contents of the first page
+        document.Pages[1].Accept(abs);
+
+        // Iterate through each image placement on the first page
+        foreach (var imagePlacement in abs.ImagePlacements)
+        {
+            // Get image properties
+            Console.Out.WriteLine("image width: " + imagePlacement.Rectangle.Width);
+            Console.Out.WriteLine("image height: " + imagePlacement.Rectangle.Height);
+            Console.Out.WriteLine("image LLX: " + imagePlacement.Rectangle.LLX);
+            Console.Out.WriteLine("image LLY: " + imagePlacement.Rectangle.LLY);
+            Console.Out.WriteLine("image horizontal resolution: " + imagePlacement.Resolution.X);
+            Console.Out.WriteLine("image vertical resolution: " + imagePlacement.Resolution.Y);
+        }
     }
 }
 ```
+
 
 <script type="application/ld+json">
 {
@@ -130,7 +130,7 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
         "sameAs": [
             "https://facebook.com/aspose.pdf/",
             "https://twitter.com/asposepdf",
-            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/destacado",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
             "https://www.linkedin.com/company/aspose",
             "https://stackoverflow.com/questions/tagged/aspose",
             "https://aspose.quora.com/",
@@ -140,21 +140,21 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -165,7 +165,7 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -177,5 +177,3 @@ foreach (ImagePlacement imagePlacement in abs.ImagePlacements)
     }
 }
 </script>
-```
-

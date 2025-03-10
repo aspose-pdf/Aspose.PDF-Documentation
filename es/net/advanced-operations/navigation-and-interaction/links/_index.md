@@ -2,9 +2,11 @@
 title: Trabajando con Enlaces en PDF programáticamente
 linktitle: Enlaces
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /es/net/links/
-description: Esta guía trata sobre cómo agregar un enlace a una página interna en PDF o insertar un hipervínculo a un sitio web externo en PDF en lenguaje C#.
+description: Esta guía trata sobre cómo agregar un enlace interno a una página en PDF o insertar un hipervínculo a un sitio web externo en PDF en el lenguaje C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabajando con Enlaces en PDF programáticamente",
-    "alternativeHeadline": "Manipulación con Enlaces en archivo PDF",
+    "headline": "Working with Links in PDF programmatically",
+    "alternativeHeadline": "Programmatically Add Links to PDF Files in C#",
+    "abstract": "Descubre la nueva capacidad para gestionar enlaces dentro de documentos PDF de manera programática utilizando C#. Esta función te permite agregar fácilmente enlaces internos a páginas y hipervínculos a sitios web externos, mejorando la navegación y la interactividad en tus PDFs. ¡Perfecto para desarrolladores que buscan optimizar sus procesos de gestión de PDF!",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, enlace en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Working with Links, PDF programmatically, internal page link, external website hyperlink, C# language, PDF document generation, create links in PDF, extract links from PDF, update link destinations, Aspose.PDF for .NET",
+    "wordcount": "118",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,13 +74,14 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/links/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta guía trata sobre cómo agregar un enlace a una página interna en PDF o insertar un hipervínculo a un sitio web externo en PDF en lenguaje C#."
+    "dateModified": "2024-11-25",
+    "description": "Esta guía trata sobre cómo agregar un enlace interno a una página en PDF o insertar un hipervínculo a un sitio web externo en PDF en el lenguaje C#."
 }
 </script>
-- [Crear Enlaces](/pdf/es/net/create-links/) - aprende de manera simple cómo crear enlaces en tu archivo PDF usando C#.
-- [Actualizar Enlaces](/pdf/es/net/update-links/) - intenta establecer el objetivo a PDF, intenta establecer el destino del enlace a una dirección web, intenta establecer el objetivo del enlace a otro archivo PDF, actualiza el color del texto del enlace.
-- [Extraer Enlaces](/pdf/es/net/extract-links) - extrae enlaces del archivo PDF usando la clase AnnotationSelector.
+
+- [Crear Enlaces](/pdf/net/create-links/) - aprende de manera sencilla a crear enlaces en tu archivo PDF utilizando C#.
+- [Actualizar Enlaces](/pdf/net/update-links/) - intenta establecer el destino a PDF, intenta establecer el destino del enlace a una dirección web, intenta establecer el destino del enlace a otro archivo PDF, actualizar el color del texto del enlace.
+- [Extraer Enlaces](/pdf/net/extract-links) - extraer enlaces del archivo PDF utilizando la clase AnnotationSelector.
 
 <script type="application/ld+json">
 {
@@ -142,4 +146,3 @@ sitemap:
     }
 }
 </script>
-

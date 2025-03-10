@@ -1,10 +1,12 @@
 ---
-title: Modifing AcroForm
-linktitle: Modifing AcroForm
+title: Modificando AcroForm
+linktitle: Modificando AcroForm
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /es/net/modifing-form/
-description: Modificando el formulario en su archivo PDF con la biblioteca Aspose.PDF para .NET. Puede agregar o eliminar campos en el formulario existente, obtener y establecer el límite del campo, etc.
+description: Modificando formularios en su archivo PDF con la biblioteca Aspose.PDF for .NET. Puede agregar o eliminar campos en formularios existentes, obtener y establecer límites de campo, etc.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -15,21 +17,22 @@ sitemap:
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Modifing AcroForm",
-    "alternativeHeadline": "How to Modifing AcroForm",
+    "alternativeHeadline": "Modify and Manage AcroForm Fields in PDF",
+    "abstract": "La nueva función de Modificación de AcroForm en la biblioteca Aspose.PDF for .NET permite a los usuarios agregar o eliminar campos de formularios PDF existentes sin problemas. Esta funcionalidad también incluye establecer límites de campo y personalizar las apariencias de fuente para una experiencia de usuario refinada, mejorando la gestión e interacción de formularios PDF.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
     "genre": "pdf document generation",
-    "keywords": "pdf, c#, modifing acroform",
-    "wordcount": "302",
-    "proficiencyLevel":"Beginner",
+    "keywords": "Modifing AcroForm, Aspose.PDF for .NET, PDF form fields, SetFieldLimit, custom font, Add/remove fields, Document Form collection, DefaultAppearance, manage form fields, PDF manipulation",
+    "wordcount": "601",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Aspose.PDF Doc Team",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -71,100 +74,134 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/modifing-form/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Modificando el formulario en su archivo PDF con la biblioteca Aspose.PDF para .NET. Puede agregar o eliminar campos en el formulario existente, obtener y establecer el límite del campo, etc."
+    "dateModified": "2024-11-25",
+    "description": "Modificando formularios en su archivo PDF con la biblioteca Aspose.PDF for .NET. Puede agregar o eliminar campos en formularios existentes, obtener y establecer límites de campo, etc."
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-## Obtener o Establecer el Límite de Campo
+## Obtener o establecer límite de campo
 
-El método SetFieldLimit(campo, límite) de la clase FormEditor te permite establecer un límite de campo, el número máximo de caracteres que se pueden ingresar en un campo.
+El método SetFieldLimit(field, limit) de la clase FormEditor le permite establecer un límite de campo, el número máximo de caracteres que se pueden ingresar en un campo.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFieldLimit()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Agregando campo con límite
-FormEditor form = new FormEditor();
+    // Create FormEditor instance
+    using (var form = new Aspose.Pdf.Facades.FormEditor())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-form.BindPdf(dataDir + "input.pdf");
-form.SetFieldLimit("textbox1", 15);
-dataDir = dataDir + "SetFieldLimit_out.pdf";
-form.Save(dataDir);
+        // Set field limit for "textbox1"
+        form.SetFieldLimit("textbox1", 15);
+
+        // Save PDF document
+        form.Save(dataDir + "SetFieldLimit_out.pdf");
+    }
+}
 ```
 
-De manera similar, Aspose.PDF tiene un método que obtiene el límite de campo usando el enfoque DOM. El siguiente fragmento de código muestra los pasos.
+De manera similar, Aspose.PDF tiene un método que obtiene el límite de campo utilizando el enfoque DOM. El siguiente fragmento de código muestra los pasos.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-// Obteniendo el límite máximo de campo usando DOM
-Document doc = new Document(dataDir + "FieldLimit.pdf");
-Console.WriteLine("Límite: " + (doc.Form["textbox1"] as TextBoxField).MaxLen);
-```
-También puedes obtener el mismo valor usando el espacio de nombres *Aspose.PDF.Facades* usando el siguiente fragmento de código.
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetFieldLimitUsingDOM()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-// Obteniendo el límite máximo del campo usando Facades
-Aspose.Pdf.Facades.Form form = new Aspose.Pdf.Facades.Form();
-form.BindPdf(dataDir + "FieldLimit.pdf");
-Console.WriteLine("Límite: " + form.GetFieldLimit("textbox1"));
-```
-
-## Establecer Fuente Personalizada para el Campo del Formulario
-
-Los campos de formulario en archivos PDF de Adobe pueden configurarse para usar fuentes predeterminadas específicas.
-Los campos de formulario en archivos PDF de Adobe pueden configurarse para usar fuentes predeterminadas específicas.
-
-El siguiente fragmento de código muestra cómo configurar la fuente predeterminada para los campos de formulario PDF.
-
-```csharp
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
-
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "FormFieldFont14.pdf");
-
-// Obtener un campo de formulario específico del documento
-Aspose.Pdf.Forms.Field field = pdfDocument.Form["textbox1"] as Aspose.Pdf.Forms.Field;
-
-// Crear objeto de fuente
-Aspose.Pdf.Text.Font font = FontRepository.FindFont("ComicSansMS");
-
-// Establecer la información de la fuente para el campo de formulario
-// Field.DefaultAppearance = new Aspose.Pdf.Forms.in.DefaultAppearance(font, 10, System.Drawing.Color.Black);
-
-dataDir = dataDir + "FormFieldFont14_out.pdf";
-// Guardar documento actualizado
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FieldLimit.pdf"))
+    {
+        // Get the field and its maximum limit
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.TextBoxField textBoxField)
+        {
+            Console.WriteLine("Limit: " + textBoxField.MaxLen);
+        }
+    }
+}
 ```
 
-## Añadir/eliminar campos en un formulario existente
-
-Todos los campos de formulario están contenidos en la colección Form del objeto Document.
-Todos los campos del formulario están contenidos en la colección Form del objeto Document.
+También puede obtener el mismo valor utilizando el espacio de nombres *Aspose.Pdf.Facades* con el siguiente fragmento de código.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetFieldLimitUsingFacades()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir + "DeleteFormField.pdf");
+    // Create Form instance
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "FieldLimit.pdf");
 
-// Eliminar un campo específico por nombre
-pdfDocument.Form.Delete("textbox1");
-dataDir = dataDir + "DeleteFormField_out.pdf";
-// Guardar documento modificado
-pdfDocument.Save(dataDir);
+        // Get the field limit for "textbox1"
+        Console.WriteLine("Limit: " + form.GetFieldLimit("textbox1"));
+    }
+}
+```
+
+## Establecer fuente personalizada para el campo del formulario
+
+Los campos de formulario en archivos PDF de Adobe pueden configurarse para usar fuentes predeterminadas específicas. En las primeras versiones de Aspose.PDF, solo se admitían las 14 fuentes predeterminadas. Las versiones posteriores permitieron a los desarrolladores aplicar cualquier fuente. Para establecer y actualizar la fuente predeterminada utilizada para los campos de formulario, utilice la clase DefaultAppearance(Font font, double size, Color color). Esta clase se puede encontrar en el espacio de nombres Aspose.Pdf.InteractiveFeatures. Para usar este objeto, utilice la propiedad DefaultAppearance de la clase Field.
+
+El siguiente fragmento de código muestra cómo establecer la fuente predeterminada para los campos de formulario PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SetFormFieldFont()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "FormFieldFont14.pdf"))
+    {
+        // Get particular form field from document
+        if (document.Form["textbox1"] is Aspose.Pdf.Forms.Field field)
+        {
+            // Create font object
+            var font = Aspose.Pdf.Text.FontRepository.FindFont("ComicSansMS");
+
+            // Set the font information for form field
+            field.DefaultAppearance = new Aspose.Pdf.Annotations.DefaultAppearance(font, 10, System.Drawing.Color.Black);
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "FormFieldFont14_out.pdf");
+    }
+}
+```
+
+## Agregar/eliminar campos en un formulario existente
+
+Todos los campos de formulario están contenidos en la colección Form del objeto Document. Esta colección proporciona diferentes métodos que gestionan los campos de formulario, incluido el método Delete. Si desea eliminar un campo en particular, pase el nombre del campo como parámetro al método Delete y luego guarde el documento PDF actualizado. El siguiente fragmento de código muestra cómo eliminar un campo en particular de un documento PDF.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeleteFormField()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "DeleteFormField.pdf"))
+    {
+        // Delete a particular field by name
+        document.Form.Delete("textbox1");
+
+        // Save PDF document
+        document.Save(dataDir + "DeleteFormField_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -230,5 +267,3 @@ pdfDocument.Save(dataDir);
     }
 }
 </script>
-
-

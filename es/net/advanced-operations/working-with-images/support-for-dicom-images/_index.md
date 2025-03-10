@@ -2,31 +2,34 @@
 title: Soporte para Imágenes DICOM
 linktitle: Soporte para Imágenes DICOM
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /es/net/support-for-dicom-mages/
-description: Esta sección describe cómo dar soporte a imágenes DICOM en un archivo PDF utilizando la biblioteca C#.
+description: Esta sección describe cómo soportar imágenes DICOM en archivos PDF utilizando la biblioteca C#.
 lastmod: "2022-02-17"
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Soporte para Imágenes DICOM",
-    "alternativeHeadline": "Formato de Imágenes DICOM en Archivo PDF",
+    "headline": "Support for DICOM Images",
+    "alternativeHeadline": "Add DICOM images to PDFs using C# library",
+    "abstract": "Aspose.PDF for .NET ahora integra soporte para imágenes DICOM, permitiendo la incorporación fluida de imágenes médicas en documentos PDF. Esta nueva funcionalidad aprovecha una biblioteca C# para un manejo eficiente de imágenes DICOM dentro del proceso de creación de PDF. La característica simplifica el flujo de trabajo para incorporar imágenes DICOM en archivos PDF",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, imagen dicom",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "DICOM images, PDF, C#, Aspose.PDF, DICOM to PDF, add DICOM to PDF, .NET library, ImageFileType.Dicom",
+    "wordcount": "194",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -43,21 +46,21 @@ lastmod: "2022-02-17"
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -68,32 +71,46 @@ lastmod: "2022-02-17"
         "@type": "WebPage",
         "@id": "/net/support-for-dicom-mages/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta sección describe cómo dar soporte a imágenes DICOM en un archivo PDF utilizando la biblioteca C#."
+    "dateModified": "2024-11-26",
+    "description": "Esta sección describe cómo soportar imágenes DICOM en archivos PDF utilizando la biblioteca C#."
 }
 </script>
-El estándar DICOM fue desarrollado por la Asociación Nacional de Fabricantes Eléctricos. Este formato abarca las funciones de creación, almacenamiento, transferencia e impresión de cuadros individuales, series de cuadros, información del paciente, investigación, equipos, instituciones, personal médico que realiza el examen, y similares.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El estándar DICOM fue desarrollado por la Asociación Nacional de Fabricantes Eléctricos. Este formato cubre las funciones de crear, almacenar, transferir e imprimir cuadros de imagen individuales, series de cuadros, información del paciente, investigación, equipos, instituciones, personal médico que realiza el examen, y similares.
 
-**Aspose.PDF para .NET** soporta funcionalidades para añadir imágenes DICOM a documentos PDF. El siguiente fragmento de código muestra cómo utilizar esta funcionalidad.
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+
+**Aspose.PDF for .NET** soporta la funcionalidad para agregar imágenes DICOM a documentos PDF. El siguiente fragmento de código muestra cómo utilizar esta funcionalidad.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_Images();
-
-using (Document pdfDocument = new Document())
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddDicomImageToPDF()
 {
-    pdfDocument.Pages.Add();
-    Aspose.Pdf.Image image = new Aspose.Pdf.Image();
-    image.FileType = ImageFileType.Dicom;
-    image.ImageStream = new FileStream(dataDir + "0002.dcm", FileMode.Open, FileAccess.Read);
-    pdfDocument.Pages[1].Paragraphs.Add(image);
-    // Guardar la salida en formato PDF
-    pdfDocument.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Images();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create an image instance and set its properties
+        var image = new Aspose.Pdf.Image
+        {
+            FileType = Aspose.Pdf.ImageFileType.Dicom,
+            ImageStream = new FileStream(dataDir + "DicomImage.dcm", FileMode.Open, FileAccess.Read)
+        };
+
+        // Add image to the first page
+        page.Paragraphs.Add(image);
+
+        // Save PDF document
+        document.Save(dataDir + "PdfWithDicomImage_out.pdf");
+    }
 }
 ```
+
 
 <script type="application/ld+json">
 {
@@ -121,21 +138,21 @@ using (Document pdfDocument = new Document())
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -146,7 +163,7 @@ using (Document pdfDocument = new Document())
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -158,5 +175,3 @@ using (Document pdfDocument = new Document())
     }
 }
 </script>
-```
-

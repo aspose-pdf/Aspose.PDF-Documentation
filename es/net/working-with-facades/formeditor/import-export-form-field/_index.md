@@ -1,40 +1,149 @@
 ---
 title: Importar y Exportar Campo de Formulario
 type: docs
-weight: 60
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 80
 url: /es/net/import-export-form-field/
-description: Rellenar campos de formulario usando DataTable con la Clase FormEditor de Aspose.PDF para .NET
+description: Rellenar campos de formulario usando DataTable con la clase FormEditor por Aspose.PDF for .NET
 lastmod: "2021-06-05"
 draft: false
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Import and Export Form Field",
+    "alternativeHeadline": "Streamline PDF Form Management with Import/Export Features",
+    "abstract": "La función de Importar y Exportar Campo de Formulario en Aspose.PDF for .NET permite a los usuarios rellenar y manipular sin problemas los campos de formulario PDF utilizando diversas fuentes de datos como FDF, XFDF, XML e incluso objetos System.Data.DataTable. Esta poderosa API permite el manejo automatizado de datos, mejorando la eficiencia de la gestión de formularios PDF y optimizando el proceso de entrada de datos.",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "252",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/import-export-form-field/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/import-export-form-field/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
+}
+</script>
 
-Aspose.PDF para .NET proporciona grandes capacidades para crear/manipular campos de formulario dentro de documentos PDF. Usando esta API, puedes programar el llenado de campos de formulario dentro de un archivo PDF, llenar campos de formulario por [Importar datos de FDF en un archivo PDF](/pdf/es/net/import-and-export-data/), [Importar datos de XFDF en un archivo PDF](/pdf/es/net/import-and-export-data/), [Importar datos de XML en un archivo PDF](/pdf/es/net/import-and-export-data/) o incluso puedes importar datos desde el objeto [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
+Aspose.PDF for .NET proporciona grandes capacidades para crear/manipular campos de formulario dentro del documento PDF. Usando esta API, puedes programáticamente rellenar campos de formulario dentro del archivo PDF, rellenar campos de formulario mediante [Importar Datos de FDF a un Archivo PDF](/pdf/net/import-and-export-data/), [Importar Datos de XFDF a un Archivo PDF](/pdf/net/import-and-export-data/), [Importar Datos de XML a un Archivo PDF](/pdf/net/import-and-export-data/) o incluso puedes importar datos de un objeto [System.Data.DataTable](https://reference.aspose.com/pdf/net/aspose.pdf.table/importdatatable/methods/1).
 
 ```csharp
- public static void ImportData()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void ImportData()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
+
+    using (var form = new Aspose.Pdf.Facades.Form())
     {
-    var editor = new Form();
-    editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-    editor.ImportFdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.fdf"));
-    editor.ImportXml(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xml"));
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
 
-    //TODO: ¡Error! Crear problema
-    editor.ImportXfdf(System.IO.File.OpenRead(_dataDir + "Sample-Form-01-upd.xfdf"));
-    editor.Save(_dataDir + "Sample-Form-01-updated.pdf");
+        // Import data fdf
+        using (var xfdfInputStream  = new FileStream(dataDir + "student.fdf", FileMode.Open))
+        {
+            form.ImportFdf(xfdfInputStream);
+        }
+                
+        // Import data XML
+        using (var xfdfInputStream  = new FileStream(dataDir + "input.xml", FileMode.Open))
+        {
+            form.ImportXml(xfdfInputStream);
+        }
+                
+        // Import data XFDF
+        using (var xfdfInputStream  = new FileStream(dataDir + "input.xfdf", FileMode.Open))
+        {
+            form.ImportXfdf(xfdfInputStream);
+        }
+                
+        // Save PDF document
+        form.Save(dataDir + "ImportDataUpdated_out.pdf");
     }
-
+}
 ```
 
 ## Exportar Datos de FDF a un Archivo PDF
 
 ```csharp
-    public static void ExportData()
-        {
-            var editor = new Form();
-            editor.BindPdf(_dataDir + "Sample-Form-01.pdf");
-            editor.ExportFdf(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.fdf"));
-            editor.ExportXml(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.xml"));
-            editor.ExportXfdf(System.IO.File.OpenWrite(_dataDir + "Sample-Form-01-mod.xfdf"));
-        }
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.Pdf-for-.NET
+private static void ExportData()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdfFacades_Forms();
 
+    using (var form = new Aspose.Pdf.Facades.Form())
+    {
+        // Bind PDF document
+        form.BindPdf(dataDir + "input.pdf");
+                
+        // Create FDF file
+        using (var fdfOutputStream = new FileStream(dataDir + "data_out.fdf", FileMode.Create))
+        {
+            form.ExportXfdf(fdfOutputStream);
+        }
+                
+        // Create XML file
+        using (var xmlOutputStream = new FileStream(dataDir + "data_out.xml", FileMode.Create))
+        {
+            form.ExportXfdf(xmlOutputStream);
+        }
+            
+        // Create XFDF file
+        using (var xfdfOutputStream = new FileStream(dataDir + "data_out.xfdf", FileMode.Create))
+        {
+            form.ExportXfdf(xfdfOutputStream);
+        }              
+    }
+} 
 ```

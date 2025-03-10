@@ -2,9 +2,11 @@
 title: Trabajando con Tablas en PDF usando C#
 linktitle: Trabajando con Tablas
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /es/net/working-with-tables/
-description: Esta sección describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla usando la biblioteca C#.
+description: Esta sección describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla utilizando la biblioteca C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabajando con Tablas en PDF usando C#",
-    "alternativeHeadline": "Cómo manipular Tablas en PDF",
+    "headline": "Working with Tables in PDF using C#",
+    "alternativeHeadline": "Enhanced Table Management in PDF with C#",
+    "abstract": "Aspose.PDF for .NET permite a los usuarios crear, extraer, manipular y eliminar tablas dentro de documentos PDF de manera eficiente. Esta función mejora las capacidades de integración de datos al permitir una integración fluida con fuentes de datos, convirtiéndola en una herramienta esencial para los desarrolladores que trabajan con datos tabulares en PDFs",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos pdf",
-    "keywords": "pdf, c#, tablas en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "wordcount": "257",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,23 +73,22 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/working-with-tables/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Esta sección describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla usando la biblioteca C#."
+    "dateModified": "2024-11-26",
+    "description": "Esta sección describe cómo agregar y extraer una tabla, cómo manipular e integrar una tabla utilizando la biblioteca C#."
 }
 </script>
 
-Las tablas son parte de muchos formularios PDF. Puedes encontrar tablas en una variedad de formularios.
+Las tablas son parte de muchos formularios PDF. Encuentras tablas en una variedad de formularios.
 
-**Aspose.PDF para .NET** te permite trabajar con tablas en archivos PDF de manera avanzada. Esta herramienta perfecta ayuda a superar la simplicidad de los PDFs extrayendo tablas de datos reales. Con el recurso de la biblioteca .NET, puedes crear fácilmente o añadir una tabla en un documento PDF existente, extraer una tabla, integrar una tabla con fuentes de datos y eliminar tablas de PDFs existentes.
+**Aspose.PDF for .NET** te permite trabajar con tablas en archivos PDF de manera avanzada. Esta herramienta perfecta ayuda a superar la simplicidad de los PDFs al extraer tablas de datos reales. Con el recurso de la biblioteca .NET, puedes crear o agregar fácilmente una tabla en un documento PDF existente, extraer tablas, integrar tablas con fuentes de datos y eliminar tablas de PDFs existentes.
 
-Eres capaz de hacer lo siguiente:
+Puedes hacer lo siguiente:
 
-- [Crear o Añadir Tabla en Documento PDF existente](/pdf/es/net/add-table-in-existing-pdf-document/) - crea tu tabla en el archivo pdf combinando las columnas o filas considerando bordes, márgenes y relleno.
-- [Extraer una Tabla de un Documento PDF existente](/pdf/es/net/extract-table-from-existing-pdf-document/) - puedes extraer una tabla del archivo PDF o extraer el borde de la tabla como Imagen.
-- [Integrar Tabla con Fuentes de Datos](/pdf/es/net/integrate-table/) - integra la tabla con la Base de Datos, integra la tabla con la fuente del Marco de Entidades usando la biblioteca .NET.
-- [Manipular Tablas en PDF existente](/pdf/es/net/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
-- [Manipular Tablas en PDF existente](/pdf/es/net/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF usando TableAbsorber.
-- [Eliminar Tablas de un PDF existente](/pdf/es/net/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas del documento PDF.
+- [Crear o Agregar Tabla en Documento PDF existente](/pdf/net/add-table-in-existing-pdf-document/) - crea tu tabla en el archivo pdf fusionando las columnas o filas considerando bordes, márgenes y relleno.
+- [Extraer una Tabla de Documento PDF existente](/pdf/net/extract-table-from-existing-pdf-document/) - puedes extraer una tabla de un archivo PDF o extraer el borde de la tabla como imagen.
+- [Integrar Tabla con Fuentes de Datos](/pdf/net/integrate-table/) - integra la tabla con la base de datos, integra la tabla con la fuente de Entity Framework utilizando la biblioteca .NET.
+- [Manipular Tablas en PDF existente](/pdf/net/manipulate-tables-in-existing-pdf/) - manipula tablas en tu PDF utilizando TableAbsorber.
+- [Eliminar Tablas de PDF existente](/pdf/net/remove-tables-from-existing-pdf/) - elimina una tabla o múltiples tablas de un documento PDF.
 
 <script type="application/ld+json">
 {
@@ -140,7 +141,7 @@ Eres capaz de hacer lo siguiente:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de Manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -152,5 +153,3 @@ Eres capaz de hacer lo siguiente:
     }
 }
 </script>
-
-

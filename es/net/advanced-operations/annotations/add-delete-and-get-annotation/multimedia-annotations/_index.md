@@ -1,10 +1,12 @@
 ---
-title: Anotación Multimedia PDF usando C#
+title: Anotación Multimedia en PDF usando C#
 linktitle: Anotación Multimedia
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 40
 url: /es/net/multimedia-annotation/
-description: Aspose.PDF para .NET te permite agregar, obtener y eliminar la anotación multimedia de tu documento PDF.
+description: Aspose.PDF for .NET te permite agregar, obtener y eliminar la anotación multimedia de tu documento PDF.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "monthly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Anotación Multimedia PDF usando C#",
-    "alternativeHeadline": "Cómo agregar Anotación Multimedia en PDF",
+    "headline": "PDF Multimedia Annotation using C#",
+    "alternativeHeadline": "Enable Multimedia Annotations in PDF with C#",
+    "abstract": "Aspose.PDF for .NET introduce capacidades avanzadas de anotación multimedia, permitiendo a los usuarios agregar, recuperar y eliminar sin problemas varios tipos de multimedia en documentos PDF. Esta función admite anotaciones de pantalla, sonido y medios enriquecidos, mejorando la interactividad del documento y permitiendo la integración de contenido de video externo, notas de audio y medios incrustados, haciendo que los documentos PDF sean más dinámicos y atractivos.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, anotación multimedia, anotación en pantalla, anotación de sonido, anotación de widget, anotación 3D",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "PDF multimedia annotation, Aspose.PDF, C# PDF features, screen annotation, sound annotation, rich media annotation, widget annotations, 3D annotation, document navigation, multimedia file embedding",
+    "wordcount": "2247",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,383 +74,463 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/multimedia-annotation/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF para .NET te permite agregar, obtener y eliminar la anotación multimedia de tu documento PDF."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también enfrentar objetivos más complejos. Consulta la siguiente sección para usuarios avanzados y desarrolladores."
 }
 </script>
 
-Las anotaciones en un documento PDF están contenidas en la colección de Anotaciones de un objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Esta colección contiene todas las anotaciones para esa página individual solamente: cada página tiene su propia colección de Anotaciones. Para agregar una anotación a una página en particular, agréguela a la colección de Anotaciones de esa página utilizando el método Add.
+Las anotaciones en un documento PDF se encuentran en la colección Annotations de un objeto [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page). Esta colección contiene todas las anotaciones para esa página individual solamente: cada página tiene su propia colección de Annotations. Para agregar una anotación a una página en particular, agrégala a la colección Annotations de esa página utilizando el método Add.
 
-Utilice la clase [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) en el espacio de nombres Aspose.PDF.InteractiveFeatures.Annotations para incluir archivos SWF como anotaciones en un documento PDF en su lugar. Una anotación de pantalla especifica una región de una página sobre la cual se pueden reproducir clips de medios.
+Utiliza la clase [ScreenAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/screenannotation) en el espacio de nombres Aspose.PDF.InteractiveFeatures.Annotations para incluir archivos SWF como anotaciones en un documento PDF. Una anotación de pantalla especifica una región de una página sobre la cual se pueden reproducir clips multimedia.
 
-Cuando necesite agregar un enlace de video externo en el documento PDF, puede usar [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
-Una Anotación de Película contiene gráficos animados y sonido para ser presentados en la pantalla del computador y a través de los altavoces.
+Cuando necesites agregar un enlace de video externo en el documento PDF, puedes usar [MovieAnnotaiton](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/movieannotation).
+Una Anotación de Película contiene gráficos animados y sonido que se presentarán en la pantalla de la computadora y a través de los altavoces.
 
-Una [Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) será análoga a una anotación de texto excepto que en lugar de una nota de texto, contiene sonido grabado desde el micrófono del computador o importado de un archivo.
-Una [Anotación de Sonido](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) debe ser análoga a una anotación de texto, excepto que en lugar de una nota de texto, contiene sonido grabado desde el micrófono de la computadora o importado desde un archivo.
+Una [Sound Annotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/soundannotation) es análoga a una anotación de texto, excepto que en lugar de una nota de texto, contiene sonido grabado desde el micrófono de la computadora o importado desde un archivo. Cuando se activa la anotación, se reproducirá el sonido. La anotación se comportará como una anotación de texto en la mayoría de los aspectos, con un ícono diferente (por defecto, un altavoz) para indicar que representa un sonido.
 
-Sin embargo, cuando existe un requisito para incrustar medios dentro de un documento PDF, necesitas usar [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
+Sin embargo, cuando hay un requisito para incrustar medios dentro del documento PDF, necesitas usar [RichMediaAnnotation](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/richmediaannotation).
 
-Los siguientes métodos/propiedades de la clase RichMediaAnnotation pueden ser utilizados.
+Los siguientes métodos/properties de la clase RichMediaAnnotation pueden ser utilizados.
 
 - Stream CustomPlayer { set; }: Permite establecer el reproductor utilizado para reproducir video.
-- string CustomFlashVariables { set; }: Permite establecer variables que se pasan a la aplicación flash. Esta línea es un conjunto de pares "clave=valor" que están separados con '&'.
-- void AddCustomData(strig name, Stream data): Agrega datos adicionales para el reproductor. Por ejemplo, source=video.mp4&autoPlay=true&scale=100
-- ActivationEvent ActivateOn { get; set}: El evento activa el reproductor; los valores posibles son Click, PageOpen, PageVisible
-- void SetContent(Stream stream, string name): Establece datos de video/audio para ser reproducidos.
-- void SetContent(Stream stream, string name): Establecer datos de vídeo/audio para ser reproducidos.
+- string CustomFlashVariables { set; }: Permite establecer variables que se pasan a la aplicación flash. Esta línea es un conjunto de pares “clave=valor” que están separados por ‘&'.
+- void AddCustomData(strig name, Stream data): Agregar datos adicionales para el reproductor. Por ejemplo source=video.mp4&autoPlay=true&scale=100.
+- ActivationEvent ActivateOn { get; set}: El evento activa el reproductor; los valores posibles son Click, PageOpen, PageVisible.
+- void SetContent(Stream stream, string name): Establecer datos de video/audio a reproducir.
 - void Update(): Crear una estructura de datos de la anotación. Este método debe ser llamado al final.
 - void SetPoster(Stream): Establecer el póster del video, es decir, la imagen mostrada cuando el reproductor no está activo.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-## Añadir Anotación de Pantalla
+## Agregar Anotación de Pantalla
 
-El siguiente fragmento de código muestra cómo añadir una Anotación de Pantalla a un archivo PDF:
+El siguiente fragmento de código muestra cómo agregar una Anotación de Pantalla a un archivo PDF:
 
 ```csharp
-using Aspose.Pdf.Annotations;
-using System;
-using System.IO;
-using System.Linq;
-
-namespace Aspose.Pdf.Examples.Advanced
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddScreenAnnotationWithMedia()
 {
-    class ExampleMultimediaAnnotation
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (cument = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
     {
-        // La ruta al directorio de documentos.
-        private const string _dataDir = "..\\..\\..\\..\\Samples";
-        public static void AddScreenAnnotation()
-        {
-            // Cargar el archivo PDF
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+        // Path to the media file (SWF)
+        var mediaFile = dataDir + "input.swf";
 
-            var mediaFile = System.IO.Path.Combine(_dataDir, "input.swf");
-            // Crear Anotación de Pantalla
-            var screenAnnotation = new ScreenAnnotation(
-                document.Pages[1],
-                new Rectangle(170, 190, 470, 380),
-                mediaFile);
-            document.Pages[1].Annotations.Add(screenAnnotation);
+        // Create Screen Annotation
+        var screenAnnotation = new Aspose.Pdf.Annotations.ScreenAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(170, 190, 470, 380),
+            mediaFile);
 
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_swf.pdf"));
-        }
+        // Add the annotation to the page
+        document.Pages[1].Annotations.Add(screenAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "AddScreenAnnotationWithMedia_out.pdf");
     }
 }
 ```
-## Añadir Anotación de Sonido
 
-El siguiente fragmento de código muestra cómo añadir una Anotación de Sonido a un archivo PDF:
+## Agregar Anotación de Sonido
+
+El siguiente fragmento de código muestra cómo agregar una Anotación de Sonido a un archivo PDF:
 
 ```csharp
-        public static void AddSoundAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddSoundAnnotation()
+{
+    // Open PDF document
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+    using (var document = new Aspose.Pdf.Document(dataDir + "sample.pdf"))
+    {
+        var mediaFile = dataDir + "file_example_WAV_1MG.wav";
+
+        // Create Sound Annotation
+        var soundAnnotation = new Aspose.Pdf.Annotations.SoundAnnotation(
+            document.Pages[1],
+            new Aspose.Pdf.Rectangle(20, 700, 60, 740),
+            mediaFile)
         {
-            // Cargar el archivo PDF
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "sample.pdf"));
+            Color = Aspose.Pdf.Color.Blue,
+            Title = "John Smith",
+            Subject = "Sound Annotation demo",
+            Popup = new Aspose.Pdf.Annotations.PopupAnnotation(document.Pages[1], new Aspose.Pdf.Rectangle(20, 700, 60, 740))
+        };
 
-            var mediaFile = System.IO.Path.Combine(_dataDir, "file_example_WAV_1MG.wav");
-            // Crear Anotación de Sonido
-            var soundAnnotation = new SoundAnnotation(
-                document.Pages[1],
-                new Rectangle(20, 700, 60, 740),
-                mediaFile)
-            {
-                Color = Color.Blue,
-                Title = "John Smith",
-                Subject = "Demostración de Anotación de Sonido",
-                Popup = new PopupAnnotation(document)
-            };
+        document.Pages[1].Annotations.Add(soundAnnotation);
 
-            document.Pages[1].Annotations.Add(soundAnnotation);
-
-            document.Save(System.IO.Path.Combine(_dataDir, "sample_wav.pdf"));
-        }
+        // Save PDF document
+        document.Save(dataDir + "AddSoundAnnotation_out.pdf");
+    }
+}
 ```
 
-## Añadir RichMediaAnnotation
+## Agregar RichMediaAnnotation
 
-El siguiente fragmento de código muestra cómo añadir RichMediaAnnotation a un archivo PDF:
 El siguiente fragmento de código muestra cómo agregar RichMediaAnnotation a un archivo PDF:
 
 ```csharp
-        public static void AddRichMediaAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddRichMediaAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
+        Page page = document.Pages.Add();
+
+        // Define video and poster names
+        const string videoName = "file_example_MP4_480_1_5MG.mp4";
+        const string posterName = "file_example_MP4_480_1_5MG_poster.jpg";
+        string skinName = "SkinOverAllNoFullNoCaption.swf";
+
+        // Create RichMediaAnnotation
+        var rma = new RichMediaAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 600));
+
+        // Specify the stream containing the video player code
+        rma.CustomPlayer = new FileStream(Path.Combine(pathToAdobeApp, "Players", "Videoplayer.swf"), FileMode.Open, FileAccess.Read);
+
+        // Compose flash variables line for the player
+        rma.CustomFlashVariables = $"source={videoName}&skin={skinName}";
+
+        // Add skin code
+        rma.AddCustomData(skinName, new FileStream(Path.Combine(pathToAdobeApp, skinName), FileMode.Open, FileAccess.Read));
+
+        // Set poster for the video
+        rma.SetPoster(new FileStream(Path.Combine(dataDir, posterName), FileMode.Open, FileAccess.Read));
+
+        // Set video content
+        using (Stream fs = new FileStream(Path.Combine(dataDir, videoName), FileMode.Open, FileAccess.Read))
         {
-            Aspose.Pdf.Document doc = new Aspose.Pdf.Document();
-            var pathToAdobeApp = @"C:\Program Files (x86)\Adobe\Acrobat 2017\Acrobat\Multimedia Skins";
-            Page page = doc.Pages.Add();
-            //dar nombre a los datos del video. Estos datos se incrustarán en el documento con este nombre y se harán referencia desde las variables flash por este nombre.
-            //videoName no debe contener la ruta al archivo; esto es más bien una "clave" para acceder a los datos dentro del documento PDF
-            const string videoName = "file_example_MP4_480_1_5MG.mp4";
-            const string posterName = "file_example_MP4_480_1_5MG_poster.jpg";
-            //también usamos un skin para el reproductor de video
-            string skinName = "SkinOverAllNoFullNoCaption.swf";
-            RichMediaAnnotation rma = new RichMediaAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 600))
-            {
-                //aquí debemos especificar el stream que contiene el código del reproductor de video
-                CustomPlayer = new FileStream(Path.Combine(pathToAdobeApp,"Players","Videoplayer.swf"), FileMode.Open, FileAccess.Read),
-                //componer la línea de variables flash para el reproductor. tenga en cuenta que diferentes reproductores pueden tener diferentes formatos de la línea de variables flash. Consulte la documentación de su reproductor.
-                CustomFlashVariables = $"source={videoName}&skin={skinName}"
-            };
-            //agregar código de skin.
-            rma.AddCustomData(skinName,
-                new FileStream(Path.Combine(pathToAdobeApp,"SkinOverAllNoFullNoCaption.swf"), FileMode.Open, FileAccess.Read));
-            //establecer póster para el video
-            rma.SetPoster(new FileStream(Path.Combine(_dataDir, posterName), FileMode.Open, FileAccess.Read));
-
-            Stream fs = new FileStream(Path.Combine(_dataDir,videoName), FileMode.Open, FileAccess.Read);
-
-            //establecer contenido de video
             rma.SetContent(videoName, fs);
-
-            //establecer tipo del contenido (video)
-            rma.Type = RichMediaAnnotation.ContentType.Video;
-
-            //activar reproductor al hacer clic
-            rma.ActivateOn = RichMediaAnnotation.ActivationEvent.Click;
-
-            //actualizar datos de la anotación. Este método debe ser llamado después de todas las asignaciones/configuraciones. Este método inicializa la estructura de datos de la anotación e incrusta los datos requeridos.
-            rma.Update();
-
-            //agregar anotación en la página.
-            page.Annotations.Add(rma);
-
-            doc.Save(Path.Combine(_dataDir,"RichMediaAnnotation.pdf"));
         }
+
+        // Set type of the content (video)
+        rma.Type = RichMediaAnnotation.ContentType.Video;
+
+        // Activate player by click
+        rma.ActivateOn = RichMediaAnnotation.ActivationEvent.Click;
+
+        // Update annotation data
+        rma.Update();
+
+        // Add annotation to the page
+        page.Annotations.Add(rma);
+
+        // Save PDF document
+        document.Save(dataDir + "RichMediaAnnotation_out.pdf");
+    }
+}
 ```
+
 ### Obtener MultimediaAnnotation
 
-Por favor, intenta utilizar el siguiente fragmento de código para obtener MultimediaAnnotation de un documento PDF.
+Por favor, intenta usar el siguiente fragmento de código para Obtener MultimediaAnnotation del documento PDF.
 
 ```csharp
-        public static void GetMultimediaAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void GetMultimediaAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
+    {
+        // Get multimedia annotations (Screen, Sound, RichMedia)
+        var mediaAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Screen
+                        || a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.Sound
+                        || a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.RichMedia)
+            .Cast<Aspose.Pdf.Annotations.Annotation>();
+
+        // Iterate through the annotations and print their details
+        foreach (var ma in mediaAnnotations)
         {
-            // Cargar el archivo PDF
-            Document document = new Document(
-                Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
-            var mediaAnnotations = document.Pages[1].Annotations
-                .Where(a => (a.AnnotationType == AnnotationType.Screen)
-                || (a.AnnotationType == AnnotationType.Sound)
-                || (a.AnnotationType == AnnotationType.RichMedia))
-                .Cast<Annotation>();
-            foreach (var ma in mediaAnnotations)
-            {
-                Console.WriteLine($"{ma.AnnotationType} [{ma.Rect}]");
-            }
+            Console.WriteLine($"{ma.AnnotationType} [{ma.Rect}]");
         }
+    }
+}
 ```
 
 ### Eliminar MultimediaAnnotation
 
-El siguiente fragmento de código muestra cómo eliminar MultimediaAnnotation de un archivo PDF.
+El siguiente fragmento de código muestra cómo Eliminar MultimediaAnnotation de un archivo PDF.
 
 ```csharp
-        public static void DeletePolyAnnotation()
-        {
-            // Cargar el archivo PDF
-            Document document = new Document(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation.pdf"));
-            var richMediaAnnotations = document.Pages[1].Annotations
-                            .Where(a => a.AnnotationType == AnnotationType.RichMedia)
-                            .Cast<RichMediaAnnotation>();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void DeletePolyAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
 
-            foreach (var rma in richMediaAnnotations)
-            {
-                document.Pages[1].Annotations.Delete(rma);
-            }
-            document.Save(System.IO.Path.Combine(_dataDir, "RichMediaAnnotation_del.pdf"));
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "RichMediaAnnotation.pdf"))
+    {
+        // Get RichMedia annotations
+        var richMediaAnnotations = document.Pages[1].Annotations
+            .Where(a => a.AnnotationType == Aspose.Pdf.Annotations.AnnotationType.RichMedia)
+            .Cast<Aspose.Pdf.Annotations.RichMediaAnnotation>();
+
+        // Delete each RichMedia annotation
+        foreach (var rma in richMediaAnnotations)
+        {
+            document.Pages[1].Annotations.Delete(rma);
         }
+
+        // Save PDF document
+        document.Save(dataDir + "DeletePolyAnnotation_out.pdf");
+    }
+}
 ```
+
 ## Agregar Anotaciones de Widget
 
-Los formularios interactivos utilizan [Anotaciones de Widget](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) para representar la apariencia de los campos y para gestionar las interacciones del usuario.
-Utilizamos estos elementos de formulario que se agregan a un PDF para facilitar la entrada, el envío de información o realizar alguna otra interacción del usuario.
+Los formularios interactivos utilizan [Widget Annotations](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/widgetannotation) para representar la apariencia de los campos y gestionar las interacciones del usuario.
+Utilizamos estos elementos de formulario que se agregan a un PDF para facilitar la entrada, envío de información o realizar alguna otra interacción del usuario.
 
-Las Anotaciones de Widget son una representación gráfica de un campo de formulario en páginas específicas, por lo que no podemos crearlas directamente como una anotación.
+Las Anotaciones de Widget son una representación gráfica de un campo de formulario en páginas específicas, por lo que no podemos crearlo directamente como una anotación.
 
-Cada Anotación de Widget tendrá gráficos apropiados (apariencia) dependiendo de su tipo. Después de la creación, ciertos aspectos visuales pueden cambiarse, como el estilo del borde y el color de fondo.
-Otras propiedades como el color del texto y la fuente pueden cambiarse a través del campo, una vez adjunto a uno.
+Cada Anotación de Widget tendrá gráficos apropiados (apariencia) dependiendo de su tipo. Después de la creación, ciertos aspectos visuales pueden ser cambiados, como el estilo del borde y el color de fondo.
+Otras propiedades como el color del texto y la fuente pueden ser cambiadas a través del campo, una vez que esté adjunto a uno.
 
-En algunos casos, es posible que desees que un campo aparezca en más de una página, repitiendo el mismo valor.
-En algunos casos, es posible que desee que un campo aparezca en más de una página, repitiendo el mismo valor.
-Alguien que llene el formulario puede usar cualquiera de esos widgets para actualizar el valor del campo, y esto se refleja en todos los demás widgets también.
+En algunos casos, es posible que desees que un campo aparezca en más de una página, repitiendo el mismo valor. En ese caso, los campos que normalmente tienen solo un widget pueden tener múltiples widgets adjuntos: un TextField, ListBox, ComboBox y CheckBox generalmente tienen exactamente uno, mientras que el RadioGroup tiene múltiples widgets, uno para cada botón de radio.
+Alguien que complete el formulario puede usar cualquiera de esos widgets para actualizar el valor del campo, y esto se refleja en todos los otros widgets también.
 
-Cada campo del formulario para cada lugar en el documento representa una Anotación de Widget. Los datos específicos de la ubicación de la Anotación de Widget se agregan a la página particular. Cada campo del formulario tiene varias variaciones. Un botón puede ser un botón de radio, una casilla de verificación o un botón de pulsación. Un widget de elección puede ser un cuadro de lista o un cuadro combinado.
+Cada campo de formulario para cada lugar en el documento representa una Anotación de Widget. Los datos específicos de ubicación de la Anotación de Widget se agregan a la página particular. Cada campo de formulario tiene varias variaciones. Un botón puede ser un botón de radio, una casilla de verificación o un botón pulsador. Un widget de elección puede ser un cuadro de lista o un cuadro combinado.
 
-En este ejemplo, aprenderemos cómo agregar los botones de navegación en el documento.
+En este ejemplo, aprenderemos cómo agregar los botones de pulsar para la navegación en el documento.
 
-### Añadir botón al documento
+### Agregar Botón al Documento
 
 ```csharp
-document = new Document();
-var page = document.Pages.Add();
-var rect = new Rectangle(72, 748, 164, 768);
-var printButton = new ButtonField(page, rect)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddPrintButton()
 {
-    AlternateName = "Imprimir documento actual",
-    Color = Color.Black,
-    PartialName = "printBtn1",
-    NormalCaption = "Imprimir documento"
-};
-var border = new Border(printButton)
-{
-    Style = BorderStyle.Solid,
-    Width = 2
-};
-printButton.Border = border;
-printButton.Characteristics.Border =
-    System.Drawing.Color.FromArgb(255, 0, 0, 255);
-printButton.Characteristics.Background =
-    System.Drawing.Color.FromArgb(255, 0, 191, 255);
-document.Form.Add(printButton);
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page
+        var page = document.Pages.Add();
+
+        // Define the rectangle for the button
+        var rect = new Aspose.Pdf.Rectangle(72, 748, 164, 768);
+
+        // Create a button field
+        var printButton = new Aspose.Pdf.Forms.ButtonField(page, rect)
+        {
+            AlternateName = "Print current document",
+            Color = Aspose.Pdf.Color.Black,
+            PartialName = "printBtn1",
+            NormalCaption = "Print Document"
+        };
+
+        // Set the border style for the button
+        var border = new Aspose.Pdf.Annotations.Border(printButton)
+        {
+            Style = Aspose.Pdf.Annotations.BorderStyle.Solid,
+            Width = 2
+        };
+        printButton.Border = border;
+
+        // Set the border and background color characteristics
+        printButton.Characteristics.Border = System.Drawing.Color.FromArgb(255, 0, 0, 255);
+        printButton.Characteristics.Background = System.Drawing.Color.FromArgb(255, 0, 191, 255);
+
+        // Add the button to the form
+        document.Form.Add(printButton);
+
+        // Save PDF document
+        document.Save(dataDir + "PrintButton_out.pdf");
+    }
+}
 ```
-Este botón tiene borde y establece un fondo. También configuramos un nombre de botón (Nombre), un tooltip (NombreAlternativo), una etiqueta (LeyendaNormal) y un color del texto de la etiqueta (Color).
 
-### Usando acciones de navegación de documentos
+Este botón tiene borde y establece un fondo. También establecemos un nombre de botón (Name), un tooltip (AlternateName), una etiqueta (NormalCaption) y un color del texto de la etiqueta (Color).
 
-Existe un ejemplo más complejo del uso de Anotaciones de Widget - navegación de documentos en un documento PDF. Esto puede ser necesario para preparar una presentación de documentos PDF.
+### Usando acciones de navegación del documento
+
+Existe un ejemplo más complejo del uso de las Anotaciones de Widget: navegación de documentos en el documento PDF. Esto puede ser necesario para preparar una presentación de documento PDF.
 
 Este ejemplo muestra cómo crear 4 botones:
 
 ```csharp
-var document = new Document(@"C:\\tmp\\JSON Fundamenals.pdf");
-var buttons = new ButtonField[4];
-var alternateNames = new[] { "Ir a la primera página", "Ir a la página anterior", "Ir a la siguiente página", "Ir a la última página" };
-var normalCaptions = new[] { "Primera", "Anterior", "Siguiente", "Última" };
-PredefinedAction[] actions = {
-PredefinedAction.FirstPage,
-PredefinedAction.PrevPage,
-PredefinedAction.NextPage,
-PredefinedAction.LastPage };
-var clrBorder = System.Drawing.Color.FromArgb(255, 0, 255, 0);
-var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
-```
-
-Deberíamos crear los botones sin adjuntarlos a la página.
-Deberíamos crear los botones sin adjuntarlos a la página.
-
-```csharp
-for (var i = 0; i < 4; i++)
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddNavigationButtons()
 {
-    buttons[i] = new ButtonField(document,
-           new Rectangle(32 + i * 80, 28, 104 + i * 80, 68))
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Forms();
+
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "JSON Fundamenals.pdf"))
     {
-       AlternateName = alternateNames[i],
-       Color = Color.White,
-       NormalCaption = normalCaptions[i],
-       OnActivated = new NamedAction(actions[i])
-    };
-    buttons[i].Border = new Border(buttons[i])
-    {
-       Style = BorderStyle.Solid,
-       Width = 2
-    };
-    buttons[i].Characteristics.Border = clrBorder;
-    buttons[i].Characteristics.Background = clrBackGround;
+        // Create an array of button fields
+        var buttons = new Aspose.Pdf.Forms.ButtonField[4];
+
+        // Define alternate names and normal captions for the buttons
+        var alternateNames = new[] { "Go to first page", "Go to prev page", "Go to next page", "Go to last page" };
+        var normalCaptions = new[] { "First", "Prev", "Next", "Last" };
+
+        // Define predefined actions for the buttons
+        PredefinedAction[] actions = {
+            PredefinedAction.FirstPage,
+            PredefinedAction.PrevPage,
+            PredefinedAction.NextPage,
+            PredefinedAction.LastPage
+        };
+
+        // Define border and background colors
+        var clrBorder = System.Drawing.Color.FromArgb(255, 0, 255, 0);
+        var clrBackGround = System.Drawing.Color.FromArgb(255, 0, 96, 70);
+
+        // We should create the buttons without attaching them to the page.
+        for (var i = 0; i < 4; i++)
+        {
+            buttons[i] = new Aspose.Pdf.Forms.ButtonField(document, new Aspose.Pdf.Rectangle(32 + i * 80, 28, 104 + i * 80, 68))
+            {
+                AlternateName = alternateNames[i],
+                Color = Aspose.Pdf.Color.White,
+                NormalCaption = normalCaptions[i],
+                OnActivated = new Aspose.Pdf.Annotations.NamedAction(actions[i])
+            };
+
+            // Set the border style for the button
+            buttons[i].Border = new Aspose.Pdf.Annotations.Border(buttons[i])
+            {
+                Style = Aspose.Pdf.Annotations.BorderStyle.Solid,
+                Width = 2
+            };
+
+            // Set the border and background color characteristics
+            buttons[i].Characteristics.Border = clrBorder;
+            buttons[i].Characteristics.Background = clrBackGround;
+        }
+
+        // Duplicate the array of buttons on each page in the document
+        for (var pageIndex = 1; pageIndex <= document.Pages.Count; pageIndex++)
+        {
+            for (var i = 0; i < 4; i++)
+            {
+                document.Form.Add(buttons[i], $"btn{pageIndex}_{i + 1}", pageIndex);
+            }
+        }
+
+        // Save PDF document
+        document.Save(dataDir + "NavigationButtons_out.pdf");
+
+        // We call Form.Add method with the following parameters: field, name, and the index of the pages that this field will be added to.
+        // And to get the full result, we need disable the “First” and “Prev” buttons on the first page and the “Next” and “Last” buttons on the last page.
+
+        document.Form["btn1_1"].ReadOnly = true;
+        document.Form["btn1_2"].ReadOnly = true;
+
+        document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
+        document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
+    }
 }
 ```
 
-Deberíamos duplicar este arreglo de botones en cada página del documento.
+Para obtener información más detallada y posibilidades de estas características, consulta también [Trabajando con Formularios](/pdf/net/acroforms/).
 
-```csharp
-for (var pageIndex = 1; pageIndex <= document.Pages.Count;
-                                                        pageIndex++)
-    for (var i = 0; i < 4; i++)
-        document.Form.Add(buttons[i],
-          $"btn{pageIndex}_{i + 1}", pageIndex);
+En los documentos PDF, puedes ver y gestionar contenido 3D de alta calidad creado con software CAD 3D o de modelado 3D e incrustado en el documento PDF. Puedes rotar elementos 3D en todas las direcciones como si los estuvieras sosteniendo en tus manos.
 
-```
+¿Por qué necesitas una visualización 3D de imágenes?
 
-Llamamos al [método Form.Add](https://reference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) con los siguientes parámetros: campo, nombre y el índice de las páginas a las que se añadirá este campo.
-Llamamos al [método Form.Add](https://reference.aspose.com/pdf/net/aspose.pdf.forms.form/add/methods/2) con los siguientes parámetros: campo, nombre e índice de las páginas donde se añadirá este campo.
+En los últimos años, la tecnología ha logrado grandes avances en todas las áreas gracias a la impresión 3D. Las tecnologías de impresión 3D pueden aplicarse para enseñar habilidades tecnológicas en construcción, ingeniería mecánica, diseño como herramienta principal. Estas tecnologías, gracias a la aparición de dispositivos de impresión personal, pueden contribuir a la introducción de nuevas formas de organización del proceso educativo, aumentar la motivación y la formación de las competencias necesarias de los graduados y profesores.
 
-Y para obtener el resultado completo, necesitamos desactivar los botones "First" y "Prev" en la primera página y los botones "Next" y "Last" en la última página.
+La tarea principal del modelado 3D es la idea de un objeto futuro porque, para liberar un objeto, necesitas una comprensión de sus características de diseño en todos los detalles para la regeneración sucesiva en diseño industrial o arquitectura.
 
-```csharp
-document.Form["btn1_1"].ReadOnly = true;
-document.Form["btn1_2"].ReadOnly = true;
+## Agregar Anotación 3D
 
-document.Form[$"btn{document.Pages.Count}_3"].ReadOnly = true;
-document.Form[$"btn{document.Pages.Count}_4"].ReadOnly = true;
-```
+La anotación 3D se agrega utilizando un modelo creado en el formato U3D.
 
-Para obtener más información detallada y posibilidades de estas características, consulte también [Trabajando con Formularios](/pdf/es/net/acroforms/).
-
-En documentos PDF, puedes ver y gestionar contenido 3D de alta calidad creado con software CAD 3D o de modelado 3D e incrustado en el documento PDF. Puedes rotar elementos 3D en todas las direcciones como si los tuvieras en tus manos.
-
-¿Por qué necesitas en absoluto una visualización 3D de imágenes?
-
-En los últimos años, la tecnología ha logrado enormes avances en todas las áreas gracias a la impresión 3D.
-En los últimos años, la tecnología ha logrado enormes avances en todas las áreas gracias a la impresión 3D.
-y profesores.
-
-La tarea principal de la modelación 3D es la idea de un objeto futuro o un objeto porque, para liberar un objeto, se necesita una comprensión de sus características de diseño en todo detalle para la regeneración sucesiva en diseño industrial o arquitectura.
-
-## Añadir Anotación 3D
-
-La anotación 3D se añade utilizando un modelo creado en formato U3D.
-
-1. Crear un nuevo [Documento](https://reference.aspose.com/pdf/net/aspose.pdf/document)
-1. Cargar los datos del modelo 3D deseado (en nuestro caso "Ring.u3d") para crear [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent)
-1. Crear objeto [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) y vincularlo al documento y 3DContent
-1. Ajustar objeto pdf3dArtWork:
+1. Crea un nuevo [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
+1. Carga los datos del modelo 3D deseado (en nuestro caso "Ring.u3d") para crear [PDF3DContent](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dcontent).
+1. Crea un objeto [3dArtWork](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dartwork) y vincúlalo al documento y al 3DContent.
+1. Ajusta el objeto pdf3dArtWork:
 
     - 3DLightingScheme - (estableceremos `CAD` en el ejemplo)
     - 3DRenderMode - (estableceremos `Solid` en el ejemplo)
-    - Llenar `ViewArray`, crear al menos una [Vista 3D](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) y añadirla al array.
-- Rellenar `ViewArray`, crear al menos una [Vista 3D](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) y añadirla al array.
+    - Rellena `ViewArray`, crea al menos una [3D View](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/pdf3dview) y agrégala al array.
 
-1. Establecer 3 parámetros básicos en la anotación:
-    - la `página` en la que se colocará la anotación,
-    - el `rectángulo`, dentro del cual la anotación,
+1. Establece 3 parámetros básicos en la anotación:
+    - la `página` en la que se colocará la anotación.
+    - el `rectángulo`, dentro del cual estará la anotación.
     - y el objeto `3dArtWork`.
-1. Para una mejor presentación del objeto 3D, establecer el marco del borde
-1. Establecer la vista predeterminada (por ejemplo - TOP)
-1. Añadir algunos parámetros adicionales: nombre, póster de vista previa, etc.
-1. Añadir Anotación a la [Página](https://reference.aspose.com/pdf/net/aspose.pdf/page)
-1. Guardar el resultado
+1. Para una mejor presentación del objeto 3D, establece el marco del borde.
+1. Establece la vista predeterminada (por ejemplo - TOP).
+1. Agrega algunos parámetros adicionales: nombre, póster de vista previa, etc.
+1. Agrega la Anotación a la [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page).
+1. Guarda el resultado.
 
 ### Ejemplo
 
-Por favor, revise el siguiente fragmento de código para añadir una Anotación 3D.
+Por favor, revisa el siguiente fragmento de código para agregar una Anotación 3D.
 
 ```csharp
-    public static void Add3dAnnotation()
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void Add3dAnnotation()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_Annotations();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
     {
-    // Cargar el archivo PDF
-    Document document = new Document();
-    PDF3DContent pdf3DContent = new PDF3DContent(System.IO.Path.Combine(_dataDir,"Ring.u3d"));
-    PDF3DArtwork pdf3dArtWork = new PDF3DArtwork(document, pdf3DContent)
-    {
-        LightingScheme = new PDF3DLightingScheme(LightingSchemeType.CAD),
-        RenderMode = new PDF3DRenderMode(RenderModeType.Solid),
-    };
-    var topMatrix = new Matrix3D(1,0,0,0,-1,0,0,0,-1,0.10271,0.08184,0.273836);
-    var frontMatrix = new Matrix3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.332652, 0.08184, 0.085273);
-    pdf3dArtWork.ViewArray.Add(new PDF3DView(document, topMatrix, 0.188563, "Top")); //1
-    pdf3dArtWork.ViewArray.Add(new PDF3DView(document, frontMatrix, 0.188563, "Left")); //2
+        // Load 3D content
+        var pdf3DContent = new Aspose.Pdf.Annotations.PDF3DContent(dataDir + "Ring.u3d");
 
-    var page = document.Pages.Add();
+        // Create 3D artwork
+        var pdf3dArtWork = new Aspose.Pdf.Annotations.PDF3DArtwork(document, pdf3DContent)
+        {
+            LightingScheme = new Aspose.Pdf.Annotations.PDF3DLightingScheme(Aspose.Pdf.Annotations.LightingSchemeType.CAD),
+            RenderMode = new Aspose.Pdf.Annotations.PDF3DRenderMode(Aspose.Pdf.Annotations.RenderModeType.Solid),
+        };
 
-    var pdf3dAnnotation = new PDF3DAnnotation(page, new Rectangle(100, 500, 300, 700), pdf3dArtWork);
-    pdf3dAnnotation.Border = new Border(pdf3dAnnotation);
-    pdf3dAnnotation.SetDefaultViewIndex(1);
-    pdf3dAnnotation.Flags = AnnotationFlags.NoZoom;
-    pdf3dAnnotation.Name = "Ring.u3d";
-    //establecer imagen de vista previa si es necesario
-    //pdf3dAnnotation.SetImagePreview(System.IO.Path.Combine(_dataDir, "sample_3d.png"));
-    document.Pages[1].Annotations.Add(pdf3dAnnotation);
+        // Define matrices for different views
+        var topMatrix = new Aspose.Pdf.Matrix3D(1, 0, 0, 0, -1, 0, 0, 0, -1, 0.10271, 0.08184, 0.273836);
+        var frontMatrix = new Aspose.Pdf.Matrix3D(0, -1, 0, 0, 0, 1, -1, 0, 0, 0.332652, 0.08184, 0.085273);
 
-    document.Save(System.IO.Path.Combine(_dataDir, "sample_3d.pdf"));
+        // Add views to the 3D artwork
+        pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, topMatrix, 0.188563, "Top")); //1
+        pdf3dArtWork.ViewArray.Add(new Aspose.Pdf.Annotations.PDF3DView(document, frontMatrix, 0.188563, "Left")); //2
+
+        // Add page
+        var page = document.Pages.Add();
+
+        // Create a 3D annotation
+        var pdf3dAnnotation = new Aspose.Pdf.Annotations.PDF3DAnnotation(page, new Aspose.Pdf.Rectangle(100, 500, 300, 700), pdf3dArtWork);
+        pdf3dAnnotation.Border = new Aspose.Pdf.Annotations.Border(pdf3dAnnotation);
+        pdf3dAnnotation.SetDefaultViewIndex(1);
+        pdf3dAnnotation.Flags = Aspose.Pdf.Annotations.AnnotationFlags.NoZoom;
+        pdf3dAnnotation.Name = "Ring.u3d";
+
+        // Set preview image if needed
+        // pdf3dAnnotation.SetImagePreview(dataDir + "sample_3d.png");
+
+        // Add the 3D annotation to the page
+        document.Pages[1].Annotations.Add(pdf3dAnnotation);
+
+        // Save PDF document
+        document.Save(dataDir + "Add3dAnnotation_out.pdf");
     }
+}
 ```
-Este ejemplo de código nos mostró un modelo así:
-
-![Demostración de anotación 3D](3d_demo.png)
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Biblioteca Aspose.PDF para .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -469,21 +552,21 @@ Este ejemplo de código nos mostró un modelo así:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -494,7 +577,7 @@ Este ejemplo de código nos mostró un modelo así:
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -506,4 +589,3 @@ Este ejemplo de código nos mostró un modelo así:
     }
 }
 </script>
-

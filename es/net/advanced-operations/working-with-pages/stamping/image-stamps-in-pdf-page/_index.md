@@ -2,10 +2,12 @@
 title: Agregar sellos de imagen en PDF usando C#
 linktitle: Sellos de imagen en archivo PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /es/net/image-stamps-in-pdf-page/
-description: Agrega el sello de imagen en tu documento PDF utilizando la clase ImageStamp con la biblioteca Aspose.PDF.
-lastmod: "2022-02-17"
+description: Agregue el sello de imagen en su documento PDF utilizando la clase ImageStamp con la biblioteca Aspose.PDF.
+lastmod: "2024-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,22 +16,22 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Agregar sellos de imagen en PDF usando C#",
-    "alternativeHeadline": "Agregar sellos de imagen en PDF usando C#",
+    "headline": "Add Image stamps in PDF using C#",
+    "alternativeHeadline": "Add Custom Image Stamps to PDF Documents",
+    "abstract": "La nueva función en la biblioteca Aspose.PDF permite a los usuarios agregar sellos de imagen a documentos PDF de manera fluida utilizando C#. Con la clase ImageStamp, los desarrolladores pueden personalizar atributos como tamaño, opacidad y calidad, mejorando significativamente la presentación y accesibilidad del documento. Esta funcionalidad también incluye la capacidad de agregar texto alternativo, promoviendo una mejor usabilidad para los lectores de pantalla.",
     "author": {
         "@type": "Person",
-        "name":"Andriy Andrukhovskiy",
-        "givenName": "Andriy",
-        "familyName": "Andrukhovskiy",
-        "url":"https://www.linkedin.com/in/andruhovski/"
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, generación de documentos",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "wordcount": "646",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +48,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,104 +73,148 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/image-stamps-in-pdf-page/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Agrega el sello de imagen en tu documento PDF utilizando la clase ImageStamp con la biblioteca Aspose.PDF."
+    "dateModified": "2024-11-26",
+    "description": "Agregue el sello de imagen en su documento PDF utilizando la clase ImageStamp con la biblioteca Aspose.PDF."
 }
 </script>
-## Añadir Sello de Imagen en Archivo PDF
 
-Puedes usar la clase ImageStamp para añadir un sello de imagen a un archivo PDF. La clase ImageStamp proporciona las propiedades necesarias para crear un sello basado en imagen, como altura, anchura, opacidad, etc.
+## Agregar sello de imagen en archivo PDF
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+Puede usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF. La clase ImageStamp proporciona las propiedades necesarias para crear un sello basado en imagen, como altura, ancho, opacidad, etc.
 
-Para añadir un sello de imagen:
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
-1. Crea un objeto Document y un objeto ImageStamp usando las propiedades requeridas.
-1. Llama al método AddStamp de la clase Page para añadir el sello al PDF.
+Para agregar un sello de imagen:
 
-El siguiente fragmento de código muestra cómo añadir un sello de imagen en el archivo PDF.
+1. Cree un objeto Document y un objeto ImageStamp utilizando las propiedades requeridas.
+1. Llame al método AddStamp de la clase Page para agregar el sello al PDF.
+
+El siguiente fragmento de código muestra cómo agregar un sello de imagen en el archivo PDF.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddImageStampInPdfFile()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
-
-// Crear sello de imagen
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-imageStamp.Background = true;
-imageStamp.XIndent = 100;
-imageStamp.YIndent = 100;
-imageStamp.Height = 300;
-imageStamp.Width = 300;
-imageStamp.Rotate = Rotation.on270;
-imageStamp.Opacity = 0.5;
-// Añadir sello a página específica
-pdfDocument.Pages[1].AddStamp(imageStamp);
-
-dataDir = dataDir + "AddImageStamp_out.pdf";
-// Guardar documento de salida
-pdfDocument.Save(dataDir);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Background = true;
+        imageStamp.XIndent = 100;
+        imageStamp.YIndent = 100;
+        imageStamp.Height = 300;
+        imageStamp.Width = 300;
+        imageStamp.Rotate = Rotation.on270;
+        imageStamp.Opacity = 0.5;
+        // Add stamp to particular page
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "AddImageStamp_out.pdf");
+    }
+}
 ```
-## Controlar la calidad de la imagen al agregar un sello
 
-Al agregar una imagen como objeto de sello, puedes controlar la calidad de la imagen. La propiedad Quality de la clase ImageStamp se utiliza para este propósito. Indica la calidad de la imagen en porcentajes (los valores válidos son 0..100).
+## Controlar la calidad de la imagen al agregar el sello
+
+Al agregar una imagen como objeto de sello, puede controlar la calidad de la imagen. La propiedad Quality de la clase ImageStamp se utiliza para este propósito. Indica la calidad de la imagen en porcentajes (los valores válidos son 0..100).
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ControlImageQualityWhenAddingStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
 
-// Abrir documento
-Document pdfDocument = new Document(dataDir+ "AddImageStamp.pdf");
-
-// Crear sello de imagen
-ImageStamp imageStamp = new ImageStamp(dataDir + "aspose-logo.jpg");
-
-imageStamp.Quality = 10;
-pdfDocument.Pages[1].AddStamp(imageStamp);
-pdfDocument.Save(dataDir + "ControlImageQuality_out.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg");
+        imageStamp.Quality = 10;
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "ControlImageQuality_out.pdf");
+    }
+}
 ```
 
 ## Sello de imagen como fondo en caja flotante
 
-La API de Aspose.PDF te permite agregar un sello de imagen como fondo en una caja flotante.
-La API Aspose.PDF te permite agregar un sello de imagen como fondo en un cuadro flotante.
+La API de Aspose.PDF le permite agregar un sello de imagen como fondo en una caja flotante. La propiedad BackgroundImage de la clase FloatingBox se puede usar para establecer el sello de imagen de fondo para una caja flotante, como se muestra en el siguiente ejemplo de código.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
-
-// Instanciar el objeto Document
-Document doc = new Document();
-// Agregar página al documento PDF
-Page page = doc.Pages.Add();
-// Crear objeto FloatingBox
-FloatingBox aBox = new FloatingBox(200, 100);
-// Establecer la posición izquierda para FloatingBox
-aBox.Left = 40;
-// Establecer la posición superior para FloatingBox
-aBox.Top = 80;
-// Establecer la alineación horizontal para FloatingBox
-aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
-// Agregar fragmento de texto a la colección de párrafos de FloatingBox
-aBox.Paragraphs.Add(new TextFragment("texto principal"));
-// Establecer borde para FloatingBox
-aBox.Border = new BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
-// Agregar imagen de fondo
-aBox.BackgroundImage = new Image
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ImageStampAsBackgroundInFloatingBox()
 {
-    File = dataDir + "aspose-logo.jpg"
-};
-// Establecer color de fondo para FloatingBox
-aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
-// Agregar FloatingBox a la colección de párrafos del objeto de página
-page.Paragraphs.Add(aBox);
-// Guardar el documento PDF
-doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+
+    // Create PDF document
+    using (var document = new Aspose.Pdf.Document())
+    {
+        // Add page to PDF document
+        Page page = document.Pages.Add();
+        // Create FloatingBox object
+        var aBox = new Aspose.Pdf.FloatingBox(200, 100);
+        // Set left position for FloatingBox
+        aBox.Left = 40;
+        // Set Top position for FloatingBox
+        aBox.Top = 80;
+        // Set the Horizontal alignment for FloatingBox
+        aBox.HorizontalAlignment = Aspose.Pdf.HorizontalAlignment.Center;
+        // Add text fragment to paragraphs collection of FloatingBox
+        aBox.Paragraphs.Add(new Aspose.Pdf.Text.TextFragment("main text"));
+        // Set border for FloatingBox
+        aBox.Border = new Aspose.Pdf.BorderInfo(BorderSide.All, Aspose.Pdf.Color.Red);
+        // Add background image
+        aBox.BackgroundImage = new Aspose.Pdf.Image
+        {
+            File = dataDir + "aspose-logo.jpg"
+        };
+        // Set background color for FloatingBox
+        aBox.BackgroundColor = Aspose.Pdf.Color.Yellow;
+        // Add FloatingBox to paragraphs collection of page object
+        page.Paragraphs.Add(aBox);
+        // Save PDF document
+        document.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+    }
+}
+```
+
+## Agregar texto alternativo al sello de imagen
+
+Desde la versión 24.6, es posible agregar texto alternativo al sello de imagen.
+
+Este código abre un archivo PDF, agrega una imagen como sello en una posición específica e incluye texto alternativo para accesibilidad. El PDF actualizado se guarda con un nuevo nombre de archivo.
+
+```cs
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void AddAlternativeTextToTheImageStamp()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_StampsWatermarks();
+    
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "ImageStampInput.pdf"))
+    {
+        // Create image stamp
+        var imageStamp = new Aspose.Pdf.ImageStamp(dataDir + "aspose-logo.jpg")
+        {
+            XIndent = 100,
+            YIndent = 700,
+            Quality = 100,
+            AlternativeText = "Your alt text"  // This property added.
+        };
+        // Add stamp
+        document.Pages[1].AddStamp(imageStamp);
+        // Save PDF document
+        document.Save(dataDir + "DocWithImageStamp_out.pdf");
+    }
+}
 ```
 
 <script type="application/ld+json">
@@ -197,21 +243,21 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -222,7 +268,7 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -234,5 +280,3 @@ doc.Save(dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
     }
 }
 </script>
-```
-

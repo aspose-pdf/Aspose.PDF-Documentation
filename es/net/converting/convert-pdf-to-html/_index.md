@@ -1,7 +1,9 @@
 ---
-title: Convertir PDF a HTML en .NET 
+title: Convertir PDF a HTML en .NET
 linktitle: Convertir PDF a formato HTML
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /es/net/convert-pdf-to-html/
 lastmod: "2021-11-01"
@@ -10,8 +12,73 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 ---
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Convert PDF to HTML in .NET",
+    "alternativeHeadline": "Convert PDF Files to HTML with Simplified Options in C#",
+    "abstract": "Presentando una nueva característica poderosa en Aspose.PDF for .NET que permite la conversión sin problemas de documentos PDF a formato HTML. Esta funcionalidad admite salida de varias páginas, gestión de imágenes SVG y opciones para renderizado de texto transparente, permitiendo a los desarrolladores transformar fácilmente PDFs en contenido listo para la web con solo unas pocas líneas de código C#",
+    "author": {
+        "@type": "Person",
+        "name": "Anastasiia Holub",
+        "givenName": "Anastasiia",
+        "familyName": "Holub",
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
+    },
+    "genre": "pdf document generation",
+    "wordcount": "1368",
+    "proficiencyLevel": "Beginner",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Aspose.PDF for .NET",
+        "url": "https://products.aspose.com/pdf",
+        "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
+        "alternateName": "Aspose",
+        "sameAs": [
+            "https://facebook.com/aspose.pdf/",
+            "https://twitter.com/asposepdf",
+            "https://www.youtube.com/channel/UCmV9sEg_QWYPi6BJJs7ELOg/featured",
+            "https://www.linkedin.com/company/aspose",
+            "https://stackoverflow.com/questions/tagged/aspose",
+            "https://aspose.quora.com/",
+            "https://aspose.github.io/"
+        ],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+1 903 306 1676",
+                "contactType": "sales",
+                "areaServed": "US",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+44 141 628 8900",
+                "contactType": "sales",
+                "areaServed": "GB",
+                "availableLanguage": "en"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+61 2 8006 6987",
+                "contactType": "sales",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+            }
+        ]
+    },
+    "url": "/net/convert-pdf-to-html/",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/net/convert-pdf-to-html/"
+    },
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también hacer frente a objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
+}
+</script>
 
-## Visión general
+## Resumen
 
 Este artículo explica cómo **convertir PDF a HTML usando C#**. Cubre estos temas.
 
@@ -20,190 +87,287 @@ _Formato_: **HTML**
 - [C# Convertir PDF a HTML](#csharp-pdf-to-html)
 - [C# Cómo convertir un archivo PDF a HTML](#csharp-pdf-to-html)
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
 
 ## Convertir PDF a HTML
 
-**Aspose.PDF para .NET** proporciona muchas características para convertir varios formatos de archivo en documentos PDF y convertir archivos PDF en varios formatos de salida.
-**Aspose.PDF para .NET** proporciona muchas características para convertir varios formatos de archivo en documentos PDF y convertir archivos PDF en varios formatos de salida.
+**Aspose.PDF for .NET** proporciona muchas características para convertir varios formatos de archivo en documentos PDF y convertir archivos PDF en varios formatos de salida. Este artículo discute cómo convertir un archivo PDF en <abbr title="HyperText Markup Language">HTML</abbr>. Aspose.PDF for .NET proporciona la capacidad de convertir archivos HTML en formato PDF utilizando el enfoque InLineHtml. Hemos recibido muchas solicitudes para una funcionalidad que convierta un archivo PDF en formato HTML y hemos proporcionado esta característica. Ten en cuenta que esta característica también admite XHTML 1.0.
 
-**Aspose.PDF para .NET** admite las características para convertir un archivo PDF en HTML. Las principales tareas que puede realizar con la biblioteca Aspose.PDF se enumeran:
+**Aspose.PDF for .NET** admite las características para convertir un archivo PDF en HTML. Las principales tareas que puedes realizar con la biblioteca Aspose.PDF están listadas:
 
-- convertir PDF a HTML;
-- dividir la salida en HTML de varias páginas;
-- especificar carpeta para almacenar archivos SVG;
-- comprimir imágenes SVG durante la conversión;
-- especificar la carpeta de imágenes;
-- crear archivos posteriores solo con contenido del cuerpo;
-- renderizado de texto transparente;
-- renderizado de capas de documentos PDF.
+- Convertir PDF a HTML.
+- Dividir la salida en HTML de varias páginas.
+- Especificar la carpeta para almacenar archivos SVG.
+- Comprimir imágenes SVG durante la conversión.
+- Guardar imágenes como fondo PNG.
+- Especificar la carpeta de imágenes.
+- Crear archivos subsiguientes solo con el contenido del cuerpo.
+- Renderizado de texto transparente.
+- Renderizado de capas de documentos PDF.
 
 {{% alert color="success" %}}
-**Prueba a convertir PDF a HTML en línea**
+**Intenta convertir PDF a HTML en línea**
 
-Aspose.PDF para .NET te presenta la aplicación gratuita en línea ["PDF to HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), donde puedes probar a investigar la funcionalidad y la calidad con la que funciona.
+Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), donde puedes intentar investigar la funcionalidad y la calidad con la que funciona.
 
-[![Aspose.PDF Conversión de PDF a HTML con Aplicación Gratuita](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
+[![Aspose.PDF Conversión PDF a HTML con aplicación gratuita](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
 {{% /alert %}}
 
-Aspose.PDF para .NET proporciona un código de dos líneas para transformar un archivo PDF fuente a HTML.
-Aspose.PDF para .NET proporciona un código de dos líneas para transformar un archivo PDF fuente a HTML.
+Aspose.PDF for .NET proporciona un código de dos líneas para transformar un archivo PDF fuente a HTML. La [`enumeración SaveFormat`](https://reference.aspose.com/pdf/net/aspose.pdf/saveformat) contiene el valor Html que te permite guardar el archivo fuente en HTML. El siguiente fragmento de código muestra el proceso de conversión de un archivo PDF en HTML.
 
 <a name="csharp-pdf-to-html"><strong>Pasos: Convertir PDF a HTML en C#</strong></a>
 
-1. Crear una instancia del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) con el documento PDF fuente.
-2. Guardarlo en formato **SaveFormat.Html** llamando al método **Document.Save()**.
+1. Crea una instancia del objeto [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document/) con el documento PDF fuente.
+2. Guárdalo en formato **SaveFormat.Html** llamando al método **Document.Save()**.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoHTML()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Abrir el documento PDF fuente
-Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
-
-// Guardar el archivo en formato de documento MS
-pdfDocument.Save(dataDir + "output_out.html", SaveFormat.Html);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Save the output HTML
+        document.Save(dataDir + "output_out.html", Aspose.Pdf.SaveFormat.Html);
+    }
+}
 ```
 
-### Dividir salida en HTML de varias páginas
+### Dividir la salida en HTML de varias páginas
 
-Al convertir un archivo PDF grande con varias páginas a formato HTML, la salida aparece como una sola página HTML.
-Al convertir un archivo PDF grande con varias páginas al formato HTML, la salida aparece como una única página HTML.
+Al convertir un archivo PDF grande con varias páginas a formato HTML, la salida aparece como una sola página HTML. Puede terminar siendo muy larga. Para controlar el tamaño de la página, es posible dividir la salida en varias páginas durante la conversión de PDF a HTML. Por favor, intenta usar el siguiente fragmento de código.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visita https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFtoMultiPageHTML()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Abrir el documento PDF fuente
-Document pdfDocument = new Document(dataDir + "PDFToHTML.pdf");
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var htmlOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Specify to split the output into multiple pages
+            SplitIntoPages = true
+        };
 
-// Instanciar el objeto de opciones de guardado HTML
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-
-// Especificar dividir la salida en múltiples páginas
-htmlOptions.SplitIntoPages = true;
-
-// Guardar el documento
-pdfDocument.Save(@"MultiPageHTML_out.html", htmlOptions);
+        // Save the output HTML
+        document.Save(dataDir + "MultiPageHTML_out.html", htmlOptions);
+    }
+}
 ```
 
-### Especificar Carpeta para Almacenar Archivos SVG
+### Especificar la carpeta para almacenar archivos SVG
 
-Durante la conversión de PDF a HTML, es posible especificar la carpeta en la que se deben guardar las imágenes SVG.
-Durante la conversión de PDF a HTML, es posible especificar la carpeta en la que se deben guardar las imágenes SVG.
+Durante la conversión de PDF a HTML, es posible especificar la carpeta en la que se deben guardar las imágenes SVG. Utiliza la [`clase HtmlSaveOption`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions) [`propiedad SpecialFolderForSvgImages`](https://reference.aspose.com/pdf/net/aspose.pdf/htmlsaveoptions/fields/specialfolderforsvgimages) para especificar un directorio especial para imágenes SVG. Esta propiedad obtiene o establece la ruta al directorio en el que se deben guardar las imágenes SVG cuando se encuentran durante la conversión. Si el parámetro está vacío o es nulo, entonces cualquier archivo SVG se guarda junto con otros archivos de imagen.
 
 ```csharp
-// Cargar el archivo PDF
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SavePDFtoHTMLWithSVG()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Instanciar las opciones de guardado de HTML
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML save options object
+        var newOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Specify the folder where SVG images are saved during PDF to HTML conversion
+            SpecialFolderForSvgImages = dataDir
+        };
 
-// Especificar la carpeta donde se guardan las imágenes SVG durante la conversión de PDF a HTML
-newOptions.SpecialFolderForSvgImages = dataDir;
-
-// Guardar el archivo de salida
-doc.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
+        // Save the output HTML
+        document.Save(dataDir + "SaveSVGFiles_out.html", newOptions);
+    }
+}
 ```
 
 ### Comprimir imágenes SVG durante la conversión
 
-Para comprimir imágenes SVG durante la conversión de PDF a HTML, por favor intente usar el siguiente código:
+Para comprimir imágenes SVG durante la conversión de PDF a HTML, por favor intenta usar el siguiente código:
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor vaya a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Crear HtmlSaveOption con la característica probada
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SavePDFtoCompressedHTMLWithSVG()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Comprimir las imágenes SVG si las hay
-newOptions.CompressSvgGraphicsIfAny = true;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Create HtmlSaveOptions with tested feature
+        var newOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Compress the SVG images if there are any
+            CompressSvgGraphicsIfAny = true
+        };
+
+        // Save the output HTML
+        document.Save(dataDir + "CompressedSVGHTML_out.html", newOptions);
+    }
+}
+```
+
+### Guardar imágenes como fondo PNG
+
+El formato de salida predeterminado para guardar imágenes es SVG. Durante la conversión, algunas imágenes del PDF se transforman en imágenes vectoriales SVG. Esto podría ser lento. En su lugar, las imágenes podrían transformarse en un archivo de fondo PNG para cada página.
+
+```csharp
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void PdfToHtmlSaveImagesAsPngBackground()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion_PDFToHTMLFormat();
+           
+    // Create HtmlSaveOption with tested feature
+    var htmlSaveOptions = new HtmlSaveOptions();
+           
+    // Option to save images in PNG format as background for each page.
+    htmlSaveOptions.RasterImagesSavingMode = HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground;
+
+    using (var document = new Aspose.Pdf.Document(dataDir + "input.pdf"))
+    {
+       document.Save(dataDir + "imagesAsPngBackground_out.html", htmlSaveOptions);         
+    }
+}
 ```
 
 ### Especificar la carpeta de imágenes
 
-También podemos especificar la carpeta en la que se guardarán las imágenes durante la conversión de PDF a HTML:
-También podemos especificar la carpeta donde se guardarán las imágenes durante la conversión de PDF a HTML:
+También podemos especificar la carpeta a la que se guardarán las imágenes durante la conversión de PDF a HTML:
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// Crear HtmlSaveOption con la característica probada
-HtmlSaveOptions newOptions = new HtmlSaveOptions();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void SavePDFtoHTMLWithSeparateImageFolder()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-// Especificar la carpeta separada para guardar imágenes
-newOptions.SpecialFolderForAllImages = dataDir;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Create HtmlSaveOptions with tested feature
+        var newOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Specify the separate folder to save images
+            SpecialFolderForAllImages = dataDir
+        };
+
+        // Save the output HTML
+        document.Save(dataDir + "HTMLWithSeparateImageFolder_out.html", newOptions);
+    }
+}
 ```
 
-### Crear Archivos Subsecuentes Solo con Contenidos del Cuerpo
+### Crear archivos subsiguientes solo con el contenido del cuerpo
 
-Recientemente, nos pidieron introducir una característica donde los archivos PDF se convierten a HTML y el usuario puede obtener solo los contenidos de la etiqueta `<body>` para cada página. Esto produciría un archivo con CSS, detalles de `<html>`, `<head>` y todas las páginas en otros archivos solo con contenidos de `<body>`.
+Recientemente, se nos pidió que introdujéramos una característica donde los archivos PDF se convierten en HTML y el usuario puede obtener solo el contenido de la etiqueta `<body>` para cada página. Esto produciría un archivo con detalles de CSS, `<html>`, `<head>` y todas las páginas en otros archivos solo con el contenido de `<body>`.
 
 Para cumplir con este requisito, se introdujo una nueva propiedad, HtmlMarkupGenerationMode, en la clase HtmlSaveOptions.
 
-Con el siguiente fragmento de código simple, puedes dividir el HTML de salida en páginas.
-Con el siguiente fragmento de código simple, puedes dividir la salida HTML en páginas.
+Con el siguiente fragmento de código simple, puedes dividir la salida HTML en páginas. En las páginas de salida, todos los objetos HTML deben ir exactamente donde van ahora (procesamiento de fuentes y salida, creación de CSS y salida, creación de imágenes y salida), excepto que el HTML de salida contendrá contenidos actualmente colocados dentro de las etiquetas (ahora se omitirán las etiquetas “body”). Sin embargo, al usar este enfoque, el enlace al CSS es responsabilidad de tu código, porque cosas como se eliminarán. Para este propósito, puedes leer el CSS a través de File.ReadAllText() y enviarlo a través de AJAX a una página web donde se aplicará mediante jQuery.
 
 ```csharp
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToHTMLWithBodyContent()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
-           
-HtmlSaveOptions options = new HtmlSaveOptions();
-// Esta es la configuración probada
-options.HtmlMarkupGenerationMode = HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent;
-options.SplitIntoPages = true;
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Initialize HtmlSaveOptions
+        var options = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Set HtmlMarkupGenerationMode to generate only body content
+            HtmlMarkupGenerationMode =
+                Aspose.Pdf.HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent,
 
-doc.Save(dataDir + "CreateSubsequentFiles_out.html", options);
+            // Specify to split the output into multiple pages
+            SplitIntoPages = true
+        };
+
+        // Save the output HTML
+        document.Save(dataDir + "CreateSubsequentFiles_out.html", options);
+    }
+}
 ```
 
 ### Renderizado de texto transparente
 
-En caso de que el archivo PDF de entrada contenga textos transparentes sombreados por imágenes en primer plano, entonces podría haber problemas de renderizado de texto. Por lo tanto, para abordar tales escenarios, se pueden utilizar las propiedades SaveShadowedTextsAsTransparentTexts y SaveTransparentTexts.
+En caso de que el archivo PDF fuente/entrada contenga textos transparentes sombreados por imágenes en primer plano, entonces podría haber problemas de renderizado de texto. Así que para atender tales escenarios, se pueden usar las propiedades SaveShadowedTextsAsTransparentTexts y SaveTransparentTexts.
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor ve a https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToHTMLWithTransparentTextRendering()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-htmlOptions.SaveShadowedTextsAsTransparentTexts = true;
-htmlOptions.SaveTransparentTexts = true;
-doc.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Initialize HtmlSaveOptions
+        var htmlOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Enable transparent text rendering
+            SaveShadowedTextsAsTransparentTexts = true,
+            SaveTransparentTexts = true
+        };
+
+        // Save the output HTML
+        document.Save(dataDir + "TransparentTextRendering_out.html", htmlOptions);
+    }
+}
 ```
-### Renderización de capas de documentos PDF
 
-Podemos renderizar las capas de documentos PDF en un elemento de tipo de capa separado durante la conversión de PDF a HTML:
+### Renderizado de capas de documentos PDF
+
+Podemos renderizar capas de documentos PDF en un elemento de tipo capa separado durante la conversión de PDF a HTML:
 
 ```csharp
-// Para ejemplos completos y archivos de datos, por favor visite https://github.com/aspose-pdf/Aspose.PDF-for-.NET
-// La ruta al directorio de documentos.
-string dataDir = RunExamples.GetDataDir_AsposePdf_DocumentConversion();
+// For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
+private static void ConvertPDFToHTMLWithLayersRendering()
+{
+    // The path to the documents directory
+    var dataDir = RunExamples.GetDataDir_AsposePdf();
 
-Document doc = new Document(dataDir + "PDFToHTML.pdf");
-// Instanciar objeto de opciones de guardado HTML
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
+    // Open PDF document
+    using (var document = new Aspose.Pdf.Document(dataDir + "PDFToHTML.pdf"))
+    {
+        // Instantiate HTML SaveOptions object
+        var htmlOptions = new Aspose.Pdf.HtmlSaveOptions
+        {
+            // Enable rendering of PDF document layers separately in the output HTML
+            ConvertMarkedContentToLayers = true
+        };
 
-// Especificar para renderizar las capas del documento PDF por separado en HTML de salida
-htmlOptions.ConvertMarkedContentToLayers = true;
-
-// Guardar el documento
-doc.Save(dataDir + "LayersRendering_out.html", htmlOptions);
+        // Save the output HTML
+        document.Save(dataDir + "LayersRendering_out.html", htmlOptions);
+    }
+}
 ```
 
-## Vea también
+## Ver También 
 
-Este artículo también cubre estos temas. Los códigos son los mismos que arriba.
+Este artículo también cubre estos temas. Los códigos son los mismos que los anteriores.
 
 _Formato_: **HTML**
-- [Código C# PDF a HTML](#csharp-pdf-to-html)
-- [API C# PDF a HTML](#csharp-pdf-to-html)
+- [C# PDF a HTML Código](#csharp-pdf-to-html)
+- [C# PDF a HTML API](#csharp-pdf-to-html)
 - [C# PDF a HTML Programáticamente](#csharp-pdf-to-html)
-- [Biblioteca C# PDF a HTML](#csharp-pdf-to-html)
-- [C# Guardar PDF como HTML](#csharp-pdf-to-html)
+- [C# PDF a HTML Biblioteca](#csharp-pdf-to-html)
 - [C# Guardar PDF como HTML](#csharp-pdf-to-html)
 - [C# Generar HTML desde PDF](#csharp-pdf-to-html)
 - [C# Crear HTML desde PDF](#csharp-pdf-to-html)
-- [C# Convertidor de PDF a HTML](#csharp-pdf-to-html)
+- [C# Convertidor PDF a HTML](#csharp-pdf-to-html)

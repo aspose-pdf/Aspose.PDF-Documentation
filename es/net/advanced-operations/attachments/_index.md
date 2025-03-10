@@ -2,34 +2,40 @@
 title: Trabajando con Adjuntos en PDF
 linktitle: Trabajando con Adjuntos
 type: docs
-weight: 130
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 190
 url: /es/net/attachments/
-description: Utilice la API de PDF C# para acceder, agregar y eliminar adjuntos en archivos PDF utilizando C# desde dentro de sus aplicaciones. Guía completa con ejemplos de código C#.
+description: Utiliza la API PDF de C# para acceder, agregar y eliminar adjuntos en archivos PDF utilizando C# desde tus aplicaciones. Guía completa con ejemplos de código en C#.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - /net/working-with-attachments/
+    - /net/working-with-attachments-facades/
 ---
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Trabajando con Adjuntos en PDF",
-    "alternativeHeadline": "Adjuntos en archivo PDF",
+    "headline": "Working with Attachments in PDF",
+    "alternativeHeadline": "Effortlessly Manage PDF Attachments with C#",
+    "abstract": "Descubre cómo gestionar eficientemente los adjuntos en archivos PDF utilizando la poderosa API PDF de C#. Esta función permite a los desarrolladores acceder, agregar y eliminar varios tipos de archivos adjuntos a PDFs, completa con ejemplos de código en C# para una integración sin problemas en las aplicaciones. Mejora tus capacidades de manipulación de PDF aprovechando esta guía completa",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "pdf, c#, adjuntos en pdf",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "C#, PDF API, attachments in PDF, add attachments, remove attachments, extract attachments, Aspose.PDF for .NET, manipulate PDF documents, save attachment to file, delete attachment from PDF",
+    "wordcount": "181",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +52,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,25 +77,25 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/attachments/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Utilice la API de PDF C# para acceder, agregar y eliminar adjuntos en archivos PDF utilizando C# desde dentro de sus aplicaciones. Guía completa con ejemplos de código C#."
+    "dateModified": "2024-11-25",
+    "description": "Utiliza la API PDF de C# para acceder, agregar y eliminar adjuntos en archivos PDF utilizando C# desde tus aplicaciones. Guía completa con ejemplos de código en C#."
 }
 </script>
 
-En esta sección, explicaremos cómo trabajar con archivos adjuntos en PDF usando Aspose.PDF para .NET.
-Un archivo adjunto es un archivo adicional que está conectado a un documento principal, puede ser una variedad de tipos de archivos, como pdf, word, imagen u otros archivos.
-Aprenderá cómo agregar archivos adjuntos a pdf, obtener la información de un archivo adjunto y guardarlo en archivo, eliminar el archivo adjunto del PDF programáticamente con C#.
+En esta sección, explicaremos cómo trabajar con adjuntos en PDF utilizando Aspose.PDF for .NET.
+Un adjunto es un archivo adicional que se adjunta a un documento principal, puede ser una variedad de tipos de archivos, como pdf, word, imagen u otros archivos.
+Aprenderás cómo agregar adjuntos a pdf, obtener la información de un adjunto y guardarlo en un archivo, eliminar el adjunto de PDF programáticamente con C#.
 
-- [Agregar archivo adjunto a un documento PDF](/pdf/es/net/add-attachment-to-pdf-document/)
-- [Extraer y guardar un archivo adjunto](/pdf/es/net/extract-and-save-an-attachment/)
-- [Eliminar archivo adjunto de un PDF existente](/pdf/es/net/removing-attachment-from-an-existing-pdf/)
-- [Portafolio](/pdf/es/net/portfolio/)
+- [Agregar adjunto a un documento PDF](/pdf/net/add-attachment-to-pdf-document/)
+- [Extraer y guardar un adjunto](/pdf/net/extract-and-save-an-attachment/)
+- [Eliminar adjunto de un PDF existente](/pdf/net/removing-attachment-from-an-existing-pdf/)
+- [Portafolio](/pdf/net/portfolio/)
 
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Aspose.PDF para la biblioteca .NET",
+    "name": "Aspose.PDF for .NET Library",
     "image": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
     "url": "https://www.aspose.com/",
     "publisher": {
@@ -136,7 +142,7 @@ Aprenderá cómo agregar archivos adjuntos a pdf, obtener la información de un 
         "price": "1199",
         "priceCurrency": "USD"
     },
-    "applicationCategory": "Biblioteca de manipulación de PDF para .NET",
+    "applicationCategory": "PDF Manipulation Library for .NET",
     "downloadUrl": "https://www.nuget.org/packages/Aspose.PDF/",
     "operatingSystem": "Windows, MacOS, Linux",
     "screenshot": "https://docs.aspose.com/pdf/net/create-pdf-document/screenshot.png",
@@ -148,4 +154,3 @@ Aprenderá cómo agregar archivos adjuntos a pdf, obtener la información de un 
     }
 }
 </script>
-

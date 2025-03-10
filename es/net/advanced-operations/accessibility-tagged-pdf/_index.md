@@ -1,10 +1,12 @@
 ---
-title: Accesibilidad y PDF etiquetados
-linktitle: Accesibilidad. PDF etiquetado
+title: Accesibilidad y PDFs Etiquetados
+linktitle: Accesibilidad. PDF Etiquetado
 type: docs
-weight: 120
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
+weight: 180
 url: /es/net/accessibility-tagged-pdf/
-description: Aspose.PDF ofrece la capacidad de crear documentos PDF etiquetados, permitiéndote etiquetar los elementos estructurales. Aprende más sobre cómo obtener PDF accesibles.
+description: Descubre cómo generar PDFs Etiquetados accesibles con Aspose.PDF for .NET. Cumple con los estándares de accesibilidad para un diseño de documentos inclusivo.
 lastmod: "2022-02-17"
 sitemap:
     changefreq: "weekly"
@@ -14,22 +16,23 @@ sitemap:
 {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Accesibilidad y PDF etiquetados",
-    "alternativeHeadline": "Trabajando con PDF etiquetados",
+    "headline": "Accessibility and Tagged PDFs",
+    "alternativeHeadline": "Create accessible PDFs with new tagging features",
+    "abstract": "Crea PDFs accesibles con capacidades de etiquetado mejoradas. Esta nueva función permite una navegación y legibilidad más fáciles por tecnologías de asistencia, mejorando la accesibilidad para usuarios con discapacidades. Desarrolla documentos PDF inclusivos y conformes.",
     "author": {
         "@type": "Person",
-        "name":"Anastasiia Holub",
+        "name": "Anastasiia Holub",
         "givenName": "Anastasiia",
         "familyName": "Holub",
-        "url":"https://www.linkedin.com/in/anastasiia-holub-750430225/"
+        "url": "https://www.linkedin.com/in/anastasiia-holub-750430225/"
     },
-    "genre": "generación de documentos PDF",
-    "keywords": "etiquetado, pdf, generación de documentos",
-    "wordcount": "302",
-    "proficiencyLevel":"Principiante",
+    "genre": "pdf document generation",
+    "keywords": "Tagged PDF, Accessible PDF, PDF Accessibility, Create Tagged PDF, Edit Tagged PDF, Extract Tagged Content, PDF Tags, Structure Elements",
+    "wordcount": "172",
+    "proficiencyLevel": "Beginner",
     "publisher": {
         "@type": "Organization",
-        "name": "Equipo de Documentación de Aspose.PDF",
+        "name": "Aspose.PDF for .NET",
         "url": "https://products.aspose.com/pdf",
         "logo": "https://www.aspose.cloud/templates/aspose/img/products/pdf/aspose_pdf-for-net.svg",
         "alternateName": "Aspose",
@@ -46,21 +49,21 @@ sitemap:
             {
                 "@type": "ContactPoint",
                 "telephone": "+1 903 306 1676",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "US",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+44 141 628 8900",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "GB",
                 "availableLanguage": "en"
             },
             {
                 "@type": "ContactPoint",
                 "telephone": "+61 2 8006 6987",
-                "contactType": "ventas",
+                "contactType": "sales",
                 "areaServed": "AU",
                 "availableLanguage": "en"
             }
@@ -71,20 +74,21 @@ sitemap:
         "@type": "WebPage",
         "@id": "/net/accessibility-tagged-pdf/"
     },
-    "dateModified": "2022-02-04",
-    "description": "Aspose.PDF ofrece la capacidad de crear documentos PDF etiquetados, permitiéndote etiquetar los elementos estructurales. Aprende más sobre cómo obtener PDF accesibles."
+    "dateModified": "2024-11-25",
+    "description": "Aspose.PDF puede realizar no solo tareas simples y fáciles, sino también afrontar objetivos más complejos. Consulta la siguiente sección para usuarios y desarrolladores avanzados."
 }
 </script>
 
-Un documento PDF etiquetado puede ser accesado por personas con discapacidades. Agregar etiquetas de accesibilidad a los archivos PDF facilita que los lectores de pantalla y otras tecnologías asistivas lean y naveguen un documento, con Tablas de Contenidos, hipervínculos, marcadores, texto alternativo, y más.
+Un documento PDF Etiquetado puede ser accedido por personas con discapacidades. Agregar etiquetas de accesibilidad a los archivos PDF facilita que los lectores de pantalla y otras tecnologías de asistencia lean y naveguen por un documento, con Tablas de Contenidos, hipervínculos, marcadores, texto alternativo, etc.
 
-Esta sección cubre el siguiente tema:
+Esta sección cubre los siguientes temas:
 
-- [Crear PDF Etiquetado](/pdf/es/net/create-tagged-pdf/)
-- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/es/net/extract-tagged-content-from-tagged-pdfs/)
-- [Configuración de Propiedades de Elementos de Estructura](/pdf/es/net/setting-structure-elements-properties/)
-- [Trabajar con Tabla en PDFs Etiquetados](/pdf/es/net/working-with-table-in-tagged-pdfs/)
-- [Prueba de Cumplimiento PDF-UA - Lista de Errores](/pdf/es/net/pdf-ua-compliance-test-errors-list/)
+- [Crear PDF Etiquetado](/pdf/net/create-tagged-pdf/)
+- [Editar PDF Etiquetado](/pdf/net/edit-pdf-file-tags/)
+- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
+- [Configuración de Propiedades de Elementos de Estructura](/pdf/net/setting-structure-elements-properties/)
+- [Trabajando con Tablas en PDFs Etiquetados](/pdf/net/working-with-table-in-tagged-pdfs/)
+- [Prueba de Cumplimiento PDF-UA - Lista de Errores](/pdf/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {
@@ -149,5 +153,3 @@ Esta sección cubre el siguiente tema:
     }
 }
 </script>
-
-

@@ -1,17 +1,18 @@
 ---
-title: PdfExtractor Class
+title: Clase PdfExtractor
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /es/net/pdfextractor-class/
-description: Esta sección explica cómo trabajar con Aspose.PDF Facades usando la clase PdfExtractor.
+description: Aprenda cómo extraer contenido como texto e imágenes de un PDF utilizando la clase PDFExtractor en .NET con Aspose.PDF.
 lastmod: "2021-07-15"
 draft: false
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
-- [Extraer Texto](/pdf/es/net/extract-text/)
-- [Extraer Imágenes](/pdf/es/net/extract-images/)
-- [Extraer Adjuntos](/pdf/es/net/extract-attachments/)
-- [Determinar si el archivo PDF contiene solo imágenes o texto](/pdf/es/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [Extraer Texto](/pdf/net/extract-text/)
+- [Extraer Imágenes](/pdf/net/extract-images/)
+- [Extraer Adjuntos](/pdf/net/extract-attachments/)
+- [Encontrar si el archivo PDF contiene imágenes o solo texto](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
