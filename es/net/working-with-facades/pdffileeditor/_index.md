@@ -90,26 +90,26 @@ Las características que podemos incluir en esta sección son Insertar, Añadir,
 
 Esta sección explora las capacidades de esta clase y explica el propósito de sus métodos.
 
-- [Concatenar documentos PDF](/pdf/net/concatenate-pdf-documents/)
-- [Extraer páginas PDF](/pdf/net/extract-pdf-pages/)
-- [Insertar páginas PDF](/pdf/net/insert-pdf-pages/)
-- [Eliminar páginas PDF](/pdf/net/delete-pdf-pages/)
+- [Concatenar documentos PDF](/pdf/es/net/concatenate-pdf-documents/)
+- [Extraer páginas PDF](/pdf/es/net/extract-pdf-pages/)
+- [Insertar páginas PDF](/pdf/es/net/insert-pdf-pages/)
+- [Eliminar páginas PDF](/pdf/es/net/delete-pdf-pages/)
 
 ## Uso de Saltos de Página
 
 El Salto de Página es una característica especial que permite el reflujo del documento.
 
-- [Salto de Página en PDF existente](/pdf/net/page-break-in-existing-pdf/)
+- [Salto de Página en PDF existente](/pdf/es/net/page-break-in-existing-pdf/)
 
 ## Imposición de PDF
 
 La imposición es el proceso de organizar las páginas correctamente antes de imprimir. `PdfFileEditor` proporciona dos métodos para este propósito, es decir, `MakeBooklet` y `MakeNUp`. El método MakeBooklet ayuda a organizar las páginas de manera que sea fácil doblarlas o encuadernarlas después de imprimir, sin embargo, el método MakeNUp permite imprimir múltiples páginas en una página del archivo PDF.
 
-- [Hacer un folleto de PDF](/pdf/net/make-booklet-of-pdf/)
-- [Hacer NUp de archivos PDF](/pdf/net/make-nup-of-pdf-files/)
+- [Hacer un folleto de PDF](/pdf/es/net/make-booklet-of-pdf/)
+- [Hacer NUp de archivos PDF](/pdf/es/net/make-nup-of-pdf-files/)
 
 ## División
 
 La función de división te permite dividir un archivo PDF existente en diferentes partes. Puedes dividir la parte frontal del archivo PDF o la parte trasera. Como PdfFileEditor proporciona una variedad de métodos para fines de división, también puedes dividir un archivo en páginas individuales o en muchos conjuntos de múltiples páginas.
 
-- [Dividir páginas PDF](/pdf/net/split-pdf-pages/)
+- [Dividir páginas PDF](/pdf/es/net/split-pdf-pages/)

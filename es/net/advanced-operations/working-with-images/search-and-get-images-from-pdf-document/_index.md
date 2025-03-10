@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 El ImagePlacementAbsorber le permite buscar entre imágenes en todas las páginas de un documento PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Para buscar imágenes en todo un documento:
 

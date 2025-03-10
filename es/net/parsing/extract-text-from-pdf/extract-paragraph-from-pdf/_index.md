@@ -84,7 +84,7 @@ Podemos obtener texto de un documento PDF buscando un texto particular (usando "
 
 **Dibujando el borde de secciones y párrafos de texto en la página PDF:**
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -151,7 +151,7 @@ private static void DrawPolygonOnPage(Aspose.Pdf.Point[] polygon, Aspose.Pdf.Pag
 
 **Iterando a través de la colección de párrafos y obteniendo el texto de ellos:**
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

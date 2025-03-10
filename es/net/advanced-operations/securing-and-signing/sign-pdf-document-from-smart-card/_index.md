@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET ofrece la funcionalidad de agregar firmas digitales desde una ubicación de almacén de claves. Puedes aplicar la firma aceptando el certificado proporcionado por el almacén de certificados, tarjeta inteligente o [tarjeta PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) conectada al sistema en tiempo de ejecución.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 A continuación se presentan los fragmentos de código para firmar un documento PDF desde una tarjeta inteligente:
 

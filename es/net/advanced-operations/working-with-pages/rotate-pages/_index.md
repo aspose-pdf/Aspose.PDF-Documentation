@@ -80,7 +80,7 @@ sitemap:
 
 Este tema describe cómo actualizar o cambiar la orientación de las páginas en un archivo PDF existente programáticamente con C#.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Cambiar la Orientación de la Página
 

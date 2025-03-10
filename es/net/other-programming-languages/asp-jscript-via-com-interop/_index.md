@@ -75,7 +75,7 @@ description: Aprende a usar Aspose.PDF for .NET en aplicaciones ASP y JScript a 
 
 {{% alert color="primary" %}}
 
-Esta es una aplicación ASP simple que te muestra cómo agregar una cadena de texto simple a un archivo PDF usando [Aspose.PDF for .NET](/pdf/net/) y JScript a través de COM Interop.
+Esta es una aplicación ASP simple que te muestra cómo agregar una cadena de texto simple a un archivo PDF usando [Aspose.PDF for .NET](/pdf/es/net/) y JScript a través de COM Interop.
 
 {{% /alert %}}
 

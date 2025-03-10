@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [Crear Enlaces](/pdf/net/create-links/) - aprende de manera sencilla a crear enlaces en tu archivo PDF utilizando C#.
-- [Actualizar Enlaces](/pdf/net/update-links/) - intenta establecer el destino a PDF, intenta establecer el destino del enlace a una dirección web, intenta establecer el destino del enlace a otro archivo PDF, actualizar el color del texto del enlace.
-- [Extraer Enlaces](/pdf/net/extract-links) - extraer enlaces del archivo PDF utilizando la clase AnnotationSelector.
+- [Crear Enlaces](/pdf/es/net/create-links/) - aprende de manera sencilla a crear enlaces en tu archivo PDF utilizando C#.
+- [Actualizar Enlaces](/pdf/es/net/update-links/) - intenta establecer el destino a PDF, intenta establecer el destino del enlace a una dirección web, intenta establecer el destino del enlace a otro archivo PDF, actualizar el color del texto del enlace.
+- [Extraer Enlaces](/pdf/es/net/extract-links) - extraer enlaces del archivo PDF utilizando la clase AnnotationSelector.
 
 <script type="application/ld+json">
 {

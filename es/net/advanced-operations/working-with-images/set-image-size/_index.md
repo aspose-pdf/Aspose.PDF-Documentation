@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Es posible establecer el tamaño de una imagen que se está añadiendo a un archivo PDF. Para establecer el tamaño, puedes usar las propiedades FixWidth y FixHeight de la clase Aspose.Pdf.Image. El siguiente fragmento de código demuestra cómo establecer el tamaño de una imagen:
 

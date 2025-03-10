@@ -92,7 +92,7 @@ La aplicación de gestión de documentos PDF proporciona varias herramientas par
 
 El enfoque para agregar la anotación es típico para cualquiera de ellas.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 1. Cargar el archivo PDF o crear uno nuevo mediante [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. Crear la nueva anotación y establecer parámetros (nuevo Rectángulo, nuevo Punto, título, color, ancho, etc.).

@@ -87,7 +87,7 @@ Los formularios dinámicos se basan en una especificación XML conocida como XFA
 
 La clase Form proporciona la capacidad de tratar con AcroForm estático y puedes obtener una instancia de campo particular utilizando el método GetFieldFacade(..) de la clase Form. Sin embargo, los campos XFA no pueden ser accedidos a través del método Form.GetFieldFacade(..). En su lugar, utiliza [Document.Form.XFA](https://reference.aspose.com/pdf/net/aspose.pdf.forms/form/properties/xfa) para obtener/establecer valores de campo y manipular la plantilla de campo XFA (establecer propiedades de campo).
 
-El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Llenar campos XFA
 

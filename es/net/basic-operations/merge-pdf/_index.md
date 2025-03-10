@@ -82,7 +82,7 @@ sitemap:
 
 Combinar PDF en C# no es una tarea sencilla sin usar una biblioteca de terceros. Este artículo muestra cómo combinar múltiples archivos PDF en un solo documento PDF usando Aspose.PDF for .NET. El ejemplo está escrito en C#, pero la API también se puede usar en otros lenguajes de programación .NET como VB.NET. Los archivos PDF se combinan de tal manera que el primero se une al final del otro documento.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Combinar archivos PDF
 

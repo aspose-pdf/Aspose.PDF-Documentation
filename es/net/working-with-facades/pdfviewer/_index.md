@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Trabajando con la impresión de PDF - Fachadas](/pdf/net/working-with-pdf-printing-facades/)
+- [Trabajando con la impresión de PDF - Fachadas](/pdf/es/net/working-with-pdf-printing-facades/)

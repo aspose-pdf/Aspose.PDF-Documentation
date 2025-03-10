@@ -14,9 +14,9 @@ sitemap:
 ---
 La sección de **operaciones básicas** describe la primera, más simple y popular operación con documentos PDF en Aspose.PDF for .NET:
 
-- [Crear documento PDF](/pdf/net/create-document/) - este artículo describe cómo crear un archivo PDF utilizando C#.
-- [Abrir documento PDF](/pdf/net/open-pdf-document/) - este artículo describe varias formas de abrir un documento PDF en una aplicación .NET.
-- [Guardar documento PDF](/pdf/net/save-pdf-document/) - este artículo describe varias formas de guardar un documento PDF en un archivo, flujo, enviarlo a la web o guardarlo como documento PDF/A (o PDF/X).
-- [Combinar PDF](/pdf/net/merge-pdf-documents/) - combinar múltiples archivos PDF en un solo documento PDF utilizando C#.
-- [Dividir PDF](/pdf/net/split-document/) - dividir páginas PDF en archivos PDF individuales en sus aplicaciones .NET.
-- [Cifrar y descifrar archivo PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/) - cifrar y descifrar archivos PDF.
+- [Crear documento PDF](/pdf/es/net/create-document/) - este artículo describe cómo crear un archivo PDF utilizando C#.
+- [Abrir documento PDF](/pdf/es/net/open-pdf-document/) - este artículo describe varias formas de abrir un documento PDF en una aplicación .NET.
+- [Guardar documento PDF](/pdf/es/net/save-pdf-document/) - este artículo describe varias formas de guardar un documento PDF en un archivo, flujo, enviarlo a la web o guardarlo como documento PDF/A (o PDF/X).
+- [Combinar PDF](/pdf/es/net/merge-pdf-documents/) - combinar múltiples archivos PDF en un solo documento PDF utilizando C#.
+- [Dividir PDF](/pdf/es/net/split-document/) - dividir páginas PDF en archivos PDF individuales en sus aplicaciones .NET.
+- [Cifrar y descifrar archivo PDF](/pdf/es/net/set-privileges-encrypt-and-decrypt-pdf-file/) - cifrar y descifrar archivos PDF.

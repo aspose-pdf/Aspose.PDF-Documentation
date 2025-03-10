@@ -83,9 +83,9 @@ Un sello en un documento PDF es análogo a aplicar un sello de goma en un docume
 
 Consulta las siguientes secciones para aprender cómo agregar un sello con C#:
 
-- [Agregar sellos de imagen en la página PDF](/pdf/net/image-stamps-in-pdf-page/) - agregar un sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de tu archivo PDF.
-- [Agregar sellos de texto en el archivo PDF](/pdf/net/text-stamps-in-the-pdf-file/) - agregar un sello de texto, definir la alineación para el objeto TextStamp, rellenar texto de trazo como sello en el archivo PDF.
-- [Sellos de página en el archivo PDF](/pdf/net/page-stamps-in-the-pdf-file/) - agregar un sello de página al documento PDF utilizando la clase PdfPageStamp.
+- [Agregar sellos de imagen en la página PDF](/pdf/es/net/image-stamps-in-pdf-page/) - agregar un sello de imagen, controlar la calidad de la imagen, sello de imagen como fondo de tu archivo PDF.
+- [Agregar sellos de texto en el archivo PDF](/pdf/es/net/text-stamps-in-the-pdf-file/) - agregar un sello de texto, definir la alineación para el objeto TextStamp, rellenar texto de trazo como sello en el archivo PDF.
+- [Sellos de página en el archivo PDF](/pdf/es/net/page-stamps-in-the-pdf-file/) - agregar un sello de página al documento PDF utilizando la clase PdfPageStamp.
 
 
 <script type="application/ld+json">

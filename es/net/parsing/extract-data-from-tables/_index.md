@@ -90,7 +90,7 @@ Aspose.PDF for .NET tiene una herramienta para facilitar la recuperación de tab
 1. `TableList` es una lista de [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). Para obtener los datos, itera a través de `TableList` y maneja [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) y [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
 1. Cada [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) contiene una colección de [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). Puedes procesarlo para tus propios propósitos.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente ejemplo muestra la extracción de tablas de todas las páginas:
 
@@ -139,7 +139,7 @@ Cada tabla absorbida tiene una propiedad [Rectangle](https://reference.aspose.co
 
 Si necesitas extraer tablas ubicadas en una región específica, debes trabajar con coordenadas específicas.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente ejemplo muestra cómo extraer una tabla marcada con una anotación cuadrada:
 
@@ -197,9 +197,9 @@ private static void ExtractMarkedTable()
 ## Extraer datos de la tabla de PDF y almacenarlos en un archivo CSV
 
 El siguiente ejemplo muestra cómo extraer una tabla y almacenarla como un archivo CSV.
-Para ver cómo convertir PDF a una hoja de cálculo de Excel, consulta el artículo [Convertir PDF a Excel](/pdf/net/convert-pdf-to-excel/).
+Para ver cómo convertir PDF a una hoja de cálculo de Excel, consulta el artículo [Convertir PDF a Excel](/pdf/es/net/convert-pdf-to-excel/).
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

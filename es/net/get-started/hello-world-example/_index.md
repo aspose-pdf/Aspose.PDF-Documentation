@@ -82,7 +82,7 @@ Un ejemplo de "Hola Mundo" se utiliza tradicionalmente para introducir caracter�
 
 Aspose.PDF for .NET es una API PDF rica en características que permite a los desarrolladores integrar capacidades de creación, manipulación y conversión de documentos PDF en sus aplicaciones .NET. Soporta trabajar con muchos formatos de archivo populares, incluyendo PDF, XFA, TXT, HTML, PCL, XML, XPS, EPUB, TEX y formatos de archivo de imagen. En este artículo, estamos creando un documento PDF que contiene el texto "¡Hola Mundo!". Después de instalar Aspose.PDF for .NET en su entorno, puede ejecutar el siguiente ejemplo de código para ver cómo funciona la API de Aspose.PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código sigue estos pasos:
 

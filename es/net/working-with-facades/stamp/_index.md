@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Agregar marca de agua de varias líneas a un PDF existente](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [Rotar el sello alrededor del punto central](/pdf/net/rotating-stamp-about-the-center-point/)
+- [Agregar marca de agua de varias líneas a un PDF existente](/pdf/es/net/adding-multi-line-watermark-to-existing-pdf/)
+- [Rotar el sello alrededor del punto central](/pdf/es/net/rotating-stamp-about-the-center-point/)

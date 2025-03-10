@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Eliminar todas las anotaciones por tipo especificado (fachadas)](/pdf/net/delete-annotations/)
-- [Importar y exportar anotaciones al formato XFDF utilizando com.aspose.pdf.facades](/pdf/net/import-export-annotations/)
-- [Extraer anotación](/pdf/net/extract-annotation/)
-- [Aplanar anotación](/pdf/net/flatten-annotation/)
-- [Modificar anotaciones](/pdf/net/modify-annotations/)
+- [Eliminar todas las anotaciones por tipo especificado (fachadas)](/pdf/es/net/delete-annotations/)
+- [Importar y exportar anotaciones al formato XFDF utilizando com.aspose.pdf.facades](/pdf/es/net/import-export-annotations/)
+- [Extraer anotación](/pdf/es/net/extract-annotation/)
+- [Aplanar anotación](/pdf/es/net/flatten-annotation/)
+- [Modificar anotaciones](/pdf/es/net/modify-annotations/)

@@ -9,6 +9,6 @@ description: Esta sección explica cómo puedes usar la Clase PdfFileStamp de As
 lastmod: "2021-06-05"
 draft: false
 ---
-- [Agregar Sello de Página PDF](/pdf/net/add-pdf-page-stamp/)
-- [Agregar Sello de Texto e Imagen](/pdf/net/add-text-and-image-stamp/)
-- [Gestionar Encabezado y Pie de Página](/pdf/net/manage-header-and-footer/)
+- [Agregar Sello de Página PDF](/pdf/es/net/add-pdf-page-stamp/)
+- [Agregar Sello de Texto e Imagen](/pdf/es/net/add-text-and-image-stamp/)
+- [Gestionar Encabezado y Pie de Página](/pdf/es/net/manage-header-and-footer/)

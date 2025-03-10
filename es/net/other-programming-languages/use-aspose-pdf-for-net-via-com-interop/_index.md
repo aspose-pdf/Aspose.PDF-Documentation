@@ -75,7 +75,7 @@ description: Descubre cómo usar Aspose.PDF for .NET a través de COM Interop pa
 
 {{% alert color="primary" %}}
 
-La información en este tema se aplica a escenarios donde deseas usar [Aspose.PDF for .NET](/pdf/net/) a través de COM Interop en cualquiera de los siguientes lenguajes de programación:
+La información en este tema se aplica a escenarios donde deseas usar [Aspose.PDF for .NET](/pdf/es/net/) a través de COM Interop en cualquiera de los siguientes lenguajes de programación:
 
 - ASP
 - Delphi
@@ -94,7 +94,7 @@ La información en este tema se aplica a escenarios donde deseas usar [Aspose.PD
 
 Aspose.PDF for .NET se ejecuta bajo el control del .NET Framework y esto se llama código administrado. El código escrito en todos los lenguajes mencionados anteriormente se ejecuta fuera del .NET Framework y se llama código no administrado. La interacción entre el código no administrado y Aspose.PDF ocurre a través de la instalación de .NET llamada COM Interop.
 
-Los objetos Aspose.PDF son objetos .NET, pero cuando se utilizan a través de COM Interop, aparecen como objetos COM en tu lenguaje de programación. Por lo tanto, es mejor asegurarte de saber cómo crear y usar objetos COM en tu lenguaje de programación, antes de comenzar a usar [Aspose.PDF for .NET](/pdf/net/).
+Los objetos Aspose.PDF son objetos .NET, pero cuando se utilizan a través de COM Interop, aparecen como objetos COM en tu lenguaje de programación. Por lo tanto, es mejor asegurarte de saber cómo crear y usar objetos COM en tu lenguaje de programación, antes de comenzar a usar [Aspose.PDF for .NET](/pdf/es/net/).
 
 {{% alert color="primary" %}}
 

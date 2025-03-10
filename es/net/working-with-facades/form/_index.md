@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Identificando nombres de campos de formulario](/pdf/net/identifying-form-fields-names/)
-- [Justificar texto en un campo de texto](/pdf/net/justify-text-in-a-textbox-field/)
-- [¿Cuál es la diferencia entre XML, FDF y XFDF?](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [Obtener valor de opción de botón](/pdf/net/get-button-option-value/)
-- [Importar y exportar datos](/pdf/net/import-and-export-data/)
+- [Identificando nombres de campos de formulario](/pdf/es/net/identifying-form-fields-names/)
+- [Justificar texto en un campo de texto](/pdf/es/net/justify-text-in-a-textbox-field/)
+- [¿Cuál es la diferencia entre XML, FDF y XFDF?](/pdf/es/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [Obtener valor de opción de botón](/pdf/es/net/get-button-option-value/)
+- [Importar y exportar datos](/pdf/es/net/import-and-export-data/)

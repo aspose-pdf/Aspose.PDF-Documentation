@@ -82,7 +82,7 @@ sitemap:
 
 Los encabezados son partes importantes de cualquier documento. Los escritores siempre intentan hacer que los encabezados sean más prominentes y significativos para sus lectores. Si hay más de un encabezado en un documento, un escritor tiene varias opciones para organizar estos encabezados. Uno de los enfoques más comunes para organizar encabezados es escribirlos en Estilo de Numeración.
 
-[Aspose.PDF for .NET](/pdf/net/) ofrece muchos estilos de numeración predefinidos. Estos estilos de numeración predefinidos se almacenan en una enumeración, NumberingStyle. Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
+[Aspose.PDF for .NET](/pdf/es/net/) ofrece muchos estilos de numeración predefinidos. Estos estilos de numeración predefinidos se almacenan en una enumeración, NumberingStyle. Los valores predefinidos de la enumeración NumberingStyle y sus descripciones se dan a continuación:
 
 |**Tipos de Encabezados**|**Descripción**|
 | :- | :- |
@@ -97,7 +97,7 @@ La propiedad **Style** de la clase **Aspose.Pdf.Heading** se utiliza para establ
 | :- |
 El código fuente, para obtener la salida mostrada en la figura anterior, se da a continuación en el ejemplo.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

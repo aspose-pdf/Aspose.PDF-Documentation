@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 A veces puede tener archivos XML existentes que contienen datos de la aplicación y desea generar un informe PDF utilizando estos archivos. Puede usar XSLT para transformar su documento XML existente en un documento XML compatible con Aspose.Pdf y luego generar el archivo PDF. Hay 3 pasos para generar un PDF usando XML y XSLT.
 

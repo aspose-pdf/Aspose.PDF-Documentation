@@ -119,7 +119,7 @@ _Formato de Imagen_: **SVG**
 
 ## C# Convertir PDF a Imagen
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 **Aspose.PDF for .NET** utiliza varios enfoques para convertir PDF a imagen. En términos generales, utilizamos dos enfoques: conversión utilizando el enfoque de Dispositivo y conversión utilizando SaveOption. Esta sección te mostrará cómo convertir documentos PDF a formatos de imagen como BMP, JPEG, GIF, PNG, EMF, TIFF y SVG utilizando uno de esos enfoques.
 

@@ -91,7 +91,7 @@ Aspose.PDF for .NET te presenta una aplicación gratuita en línea ["PDF a EPUB"
 **<abbr title="Publicación Electrónica">EPUB</abbr>** es un estándar de libro electrónico gratuito y abierto del Foro Internacional de Publicación Digital (IDPF). Los archivos tienen la extensión .epub.
 EPUB está diseñado para contenido refluido, lo que significa que un lector de EPUB puede optimizar el texto para un dispositivo de visualización particular. EPUB también admite contenido de diseño fijo. El formato está destinado a ser un formato único que los editores y las casas de conversión pueden usar internamente, así como para distribución y venta. Sustituye el estándar Open eBook.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Aspose.PDF for .NET también admite la función de convertir documentos PDF a formato EPUB. Aspose.PDF for .NET tiene una clase llamada EpubSaveOptions que se puede usar como el segundo argumento del método [`Document.Save(..)`](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save/index) para generar un archivo EPUB.
 Por favor, intenta usar el siguiente fragmento de código para cumplir con este requisito con C#.

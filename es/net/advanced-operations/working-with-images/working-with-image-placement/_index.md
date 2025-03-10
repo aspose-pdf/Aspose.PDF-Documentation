@@ -81,7 +81,7 @@ Con el lanzamiento de Aspose.PDF for .NET 7.0.0, introdujimos clases llamadas [I
 - ImagePlacementAbsorber realiza una búsqueda de uso de imágenes como la colección de objetos ImagePlacement.
 - ImagePlacement proporciona los miembros Resolution y Rectangle que devuelven los valores de colocación de imágenes reales.
 
-El siguiente fragmento de código también trabaja con la biblioteca [Aspose.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

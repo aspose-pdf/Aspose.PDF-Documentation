@@ -80,9 +80,9 @@ sitemap:
 
 XML (Lenguaje de Marcado Extensible) es una forma de reutilizar datos en un archivo o automatizar el proceso de reemplazar los datos en un archivo con datos de otro archivo. Crear un esquema XML es difícil de hacer correctamente; crear varios esquemas interconectados que se puedan extender es aún más difícil. Aprendamos cómo Aspose.PDF maneja las tareas de trabajar con XML.
 
-- [Esquema XML soportado](/pdf/net/supported-xml-schema/) - utiliza el siguiente esquema XML para trabajar con documentos XML.
-- [Ejemplo simple de 'Hola Mundo' basado en XML y XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - utiliza XSLT para transformar tu documento XML existente a PDF.
-- [Generar PDF a partir de XML](/pdf/net/generate-pdf-from-xml/) - Aspose.PDF tiene varias formas de generar PDF basados en documentos XML.
+- [Esquema XML soportado](/pdf/es/net/supported-xml-schema/) - utiliza el siguiente esquema XML para trabajar con documentos XML.
+- [Ejemplo simple de 'Hola Mundo' basado en XML y XSLT](/pdf/es/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - utiliza XSLT para transformar tu documento XML existente a PDF.
+- [Generar PDF a partir de XML](/pdf/es/net/generate-pdf-from-xml/) - Aspose.PDF tiene varias formas de generar PDF basados en documentos XML.
 
 <script type="application/ld+json">
 {

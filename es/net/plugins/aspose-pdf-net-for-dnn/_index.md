@@ -13,4 +13,4 @@ sitemap:
 ---
 Esta sección tiene los siguientes temas:
 
-- [Módulo de Importación de PDF de DNN](/pdf/net/dnn-pdf-import-module)
+- [Módulo de Importación de PDF de DNN](/pdf/es/net/dnn-pdf-import-module)

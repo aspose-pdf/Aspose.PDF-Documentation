@@ -82,16 +82,16 @@ sitemap:
 ## ¿Qué es un Gráfico?
 
 Agregar gráficos a documentos PDF es una tarea muy común para los desarrolladores al trabajar con Adobe Acrobat Writer u otras aplicaciones de procesamiento de PDF. Hay muchos tipos de gráficos que se pueden utilizar en aplicaciones PDF.
-[Aspose.PDF for .NET](/pdf/net/) también admite la adición de gráficos a documentos PDF. Para este propósito, se proporciona la clase Graph. Graph es un elemento a nivel de párrafo y se puede agregar a la colección de Párrafos en una instancia de Página. Una instancia de Graph contiene una colección de Formas.
+[Aspose.PDF for .NET](/pdf/es/net/) también admite la adición de gráficos a documentos PDF. Para este propósito, se proporciona la clase Graph. Graph es un elemento a nivel de párrafo y se puede agregar a la colección de Párrafos en una instancia de Página. Una instancia de Graph contiene una colección de Formas.
 
 Los siguientes tipos de formas son compatibles con la clase [Graph](https://reference.aspose.com/pdf/net/aspose.pdf.drawing/graph):
 
-- [Arco](/pdf/net/add-arc/) - a veces también llamado una bandera, es un par ordenado de vértices adyacentes, pero a veces también se llama una línea dirigida.
-- [Círculo](/pdf/net/add-circle/) - muestra datos utilizando un círculo dividido en sectores. Usamos un gráfico circular (también llamado gráfico de pastel) para mostrar cómo los datos representan porciones de un todo o un grupo.
-- [Curva](/pdf/net/add-curve/) - es una unión conectada de líneas proyectivas, cada línea se encuentra con tres otras en puntos dobles ordinarios.
-- [Línea](/pdf/net/add-line) - los gráficos de líneas se utilizan para mostrar datos continuos y pueden ser útiles para predecir eventos futuros cuando muestran tendencias a lo largo del tiempo.
-- [Rectángulo](/pdf/net/add-rectangle/) - es una de las muchas formas fundamentales que verás en gráficos, puede ser muy útil para ayudarte a resolver un problema.
-- [Elipse](/pdf/net/add-ellipse/) - es un conjunto de puntos en un plano, creando una forma ovalada y curva.
+- [Arco](/pdf/es/net/add-arc/) - a veces también llamado una bandera, es un par ordenado de vértices adyacentes, pero a veces también se llama una línea dirigida.
+- [Círculo](/pdf/es/net/add-circle/) - muestra datos utilizando un círculo dividido en sectores. Usamos un gráfico circular (también llamado gráfico de pastel) para mostrar cómo los datos representan porciones de un todo o un grupo.
+- [Curva](/pdf/es/net/add-curve/) - es una unión conectada de líneas proyectivas, cada línea se encuentra con tres otras en puntos dobles ordinarios.
+- [Línea](/pdf/es/net/add-line) - los gráficos de líneas se utilizan para mostrar datos continuos y pueden ser útiles para predecir eventos futuros cuando muestran tendencias a lo largo del tiempo.
+- [Rectángulo](/pdf/es/net/add-rectangle/) - es una de las muchas formas fundamentales que verás en gráficos, puede ser muy útil para ayudarte a resolver un problema.
+- [Elipse](/pdf/es/net/add-ellipse/) - es un conjunto de puntos en un plano, creando una forma ovalada y curva.
 
 Los detalles anteriores también se representan en las figuras a continuación:
 

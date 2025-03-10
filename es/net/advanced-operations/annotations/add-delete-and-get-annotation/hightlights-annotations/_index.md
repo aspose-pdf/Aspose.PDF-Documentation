@@ -89,7 +89,7 @@ También es posible obtener o establecer la configuración de las anotaciones de
 
 La siguiente característica es la capacidad de obtener o establecer la configuración de las anotaciones de subrayado utilizando la propiedad underlineSettings. La propiedad underlineSettings se utiliza para establecer las propiedades de color, opacidad, autor, asunto, modifiedDate e isLocked de las anotaciones de subrayado.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar Anotación de Marcado de Texto
 

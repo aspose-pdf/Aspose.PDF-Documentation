@@ -81,7 +81,7 @@ sitemap:
 
 Los archivos adjuntos pueden contener una amplia variedad de información y pueden ser de varios tipos de archivos. Este artículo explica cómo agregar un archivo adjunto a un archivo PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.Drawing](/pdf/es/net/drawing/).
 
 1. Crea un nuevo proyecto en C#.
 1. Agrega una referencia a la DLL de Aspose.PDF.

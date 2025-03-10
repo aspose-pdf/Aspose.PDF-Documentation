@@ -79,9 +79,9 @@ sitemap:
 }
 </script>
 
-- [Enlaces](/pdf/net/links/) - puedes crear, actualizar y extraer enlaces fácilmente con C#.
-- [Acciones](/pdf/net/actions/) - es posible agregar y obtener, crear hiperenlaces a archivos PDF. Además, en este artículo, aprenderás cómo eliminar la Acción de Apertura de Documento de un Archivo PDF y cómo Especificar la Página PDF al Ver el Documento.
-- [Marcadores](/pdf/net/bookmarks/) - las publicaciones grandes suelen incluir un marco de marcadores que se pueden ver y seleccionar fácilmente en el Panel de Marcadores, permitiéndote hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
+- [Enlaces](/pdf/es/net/links/) - puedes crear, actualizar y extraer enlaces fácilmente con C#.
+- [Acciones](/pdf/es/net/actions/) - es posible agregar y obtener, crear hiperenlaces a archivos PDF. Además, en este artículo, aprenderás cómo eliminar la Acción de Apertura de Documento de un Archivo PDF y cómo Especificar la Página PDF al Ver el Documento.
+- [Marcadores](/pdf/es/net/bookmarks/) - las publicaciones grandes suelen incluir un marco de marcadores que se pueden ver y seleccionar fácilmente en el Panel de Marcadores, permitiéndote hacer clic en un marcador para saltar a la página o capítulo que representa. El Panel de Marcadores es un elemento consciente del contenido y es visible en la barra lateral solo si el documento PDF abierto contiene una estructura de marcadores.
 
 <script type="application/ld+json">
 {

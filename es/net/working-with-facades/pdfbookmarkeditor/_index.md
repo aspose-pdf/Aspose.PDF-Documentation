@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Crear Marcadores](/pdf/net/create-bookmarks/)
-- [Importar y Exportar Marcadores](/pdf/net/import-and-export-bookmarks/)
-- [Actualizar, Eliminar y Obtener Marcadores](/pdf/net/update-delete-and-get-bookmarks/)
+- [Crear Marcadores](/pdf/es/net/create-bookmarks/)
+- [Importar y Exportar Marcadores](/pdf/es/net/import-and-export-bookmarks/)
+- [Actualizar, Eliminar y Obtener Marcadores](/pdf/es/net/update-delete-and-get-bookmarks/)

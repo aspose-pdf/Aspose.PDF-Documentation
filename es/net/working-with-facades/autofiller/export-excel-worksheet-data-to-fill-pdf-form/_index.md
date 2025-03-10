@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[El espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/net/) ofrece varias formas de llenar los formularios PDF. Puedes importar datos de un archivo XML, DFD, XFDF, usar la API e incluso usar los datos de una hoja de cálculo de Excel.
+[El espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/es/net/) ofrece varias formas de llenar los formularios PDF. Puedes importar datos de un archivo XML, DFD, XFDF, usar la API e incluso usar los datos de una hoja de cálculo de Excel.
 Usaremos el método [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) de la clase [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) de [Aspose.Cells](https://docs.aspose.com//cells/net) para exportar los datos de la hoja de Excel a un objeto DataTable. Luego, necesitaremos importar estos datos en el formulario PDF utilizando el método [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) de la clase [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). Asegúrate de que el nombre de la columna del DataTable sea el mismo que el nombre del campo en el formulario PDF.
 
 {{% /alert %}}

@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Cifrar archivo PDF](/pdf/net/encrypt-pdf-file/)
-- [Descifrar archivo PDF](/pdf/net/decrypt-pdf-file/)
-- [Controlar excepción archivo PDF](/pdf/net/control-exception/)
-- [Cambiar contraseña de archivo PDF](/pdf/net/change-password/)
-- [Establecer privilegios en un archivo PDF existente](/pdf/net/set-privileges/)
+- [Cifrar archivo PDF](/pdf/es/net/encrypt-pdf-file/)
+- [Descifrar archivo PDF](/pdf/es/net/decrypt-pdf-file/)
+- [Controlar excepción archivo PDF](/pdf/es/net/control-exception/)
+- [Cambiar contraseña de archivo PDF](/pdf/es/net/change-password/)
+- [Establecer privilegios en un archivo PDF existente](/pdf/es/net/set-privileges/)

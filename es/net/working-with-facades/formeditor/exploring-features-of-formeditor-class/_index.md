@@ -83,7 +83,7 @@ Los documentos PDF a veces contienen formularios interactivos, que se conocen co
 
 ## Detalles de implementación
 
-Los desarrolladores pueden usar el [espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) no solo para agregar nuevos formularios y campos de formulario en un documento PDF, sino también para permitirte editar campos existentes. El alcance de este artículo se limita a las características de [Aspose.PDF for .NET](/pdf/net/) que tratan con la edición de formularios.
+Los desarrolladores pueden usar el [espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) no solo para agregar nuevos formularios y campos de formulario en un documento PDF, sino también para permitirte editar campos existentes. El alcance de este artículo se limita a las características de [Aspose.PDF for .NET](/pdf/es/net/) que tratan con la edición de formularios.
 
 [FormEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formeditor) es la clase que contiene la mayoría de los métodos y propiedades que permiten a los desarrolladores editar campos de formulario. No solo puedes agregar nuevos campos, sino también eliminar campos existentes, mover un campo a otra posición, cambiar el nombre del campo o atributos, etc. La lista de características proporcionadas por esta clase es bastante completa, y es muy fácil trabajar con los campos de formulario utilizando esta clase.
 

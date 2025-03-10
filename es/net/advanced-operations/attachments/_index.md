@@ -83,10 +83,10 @@ En esta sección, explicaremos cómo trabajar con adjuntos en PDF utilizando Asp
 Un adjunto es un archivo adicional que se adjunta a un documento principal, puede ser una variedad de tipos de archivos, como pdf, word, imagen u otros archivos.
 Aprenderás cómo agregar adjuntos a pdf, obtener la información de un adjunto y guardarlo en un archivo, eliminar el adjunto de PDF programáticamente con C#.
 
-- [Agregar adjunto a un documento PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [Extraer y guardar un adjunto](/pdf/net/extract-and-save-an-attachment/)
-- [Eliminar adjunto de un PDF existente](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [Portafolio](/pdf/net/portfolio/)
+- [Agregar adjunto a un documento PDF](/pdf/es/net/add-attachment-to-pdf-document/)
+- [Extraer y guardar un adjunto](/pdf/es/net/extract-and-save-an-attachment/)
+- [Eliminar adjunto de un PDF existente](/pdf/es/net/removing-attachment-from-an-existing-pdf/)
+- [Portafolio](/pdf/es/net/portfolio/)
 
 <script type="application/ld+json">
 {

@@ -87,18 +87,18 @@ Las imágenes pueden ser un tema bastante complejo en formato PDF. Una amplia va
 
 Puede hacer lo siguiente:
 
-- [Agregar Imagen a Archivo PDF Existente](/pdf/net/add-image-to-existing-pdf-file/) - agregar imágenes y referencias de una sola imagen en el documento PDF, después controlar la calidad.
-- [Eliminar Imágenes de Archivo PDF](/pdf/net/delete-images-from-pdf-file/) - consulte el fragmento de código para eliminar imágenes de un archivo PDF.
-- [Extraer Imágenes de Archivo PDF](/pdf/net/extract-images-from-pdf-file/) - use la colección de Imágenes para extraer imágenes de un archivo PDF.
-- [Obtener la Resolución y Dimensiones de Imágenes Incorporadas](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - use las clases de operador en el espacio de nombres Aspose.PDF que proporcionan la capacidad de obtener información de resolución y dimensión.
-- [Trabajar con la Colocación de Imágenes](/pdf/net/working-with-image-placement/) - es posible obtener la resolución y posición de una imagen en un documento PDF.
-- [Buscar y Obtener Imágenes de Documento PDF](/pdf/net/search-and-get-images-from-pdf-document/) - puede obtener una imagen de una página individual y buscar entre imágenes en todas las páginas con C#.
-- [Reemplazar Imagen en Archivo PDF Existente](/pdf/net/replace-image-in-existing-pdf-file/) - consulte nuestro fragmento de código, le muestra cómo reemplazar una imagen en un archivo PDF.
-- [Establecer Tamaño de Imagen](/pdf/net/set-image-size/) - la biblioteca C# le permite establecer el tamaño de una imagen.
-- [Establecer Nombre de Fuente Predeterminado](/pdf/net/set-default-font-name/) - Establecer Nombre de Fuente Predeterminado para el proceso de conversión.
-- [Generar Imágenes en Miniatura de Documentos PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - el siguiente artículo muestra cómo generar imágenes en miniatura de documentos PDF utilizando primero el SDK de Acrobat y luego Aspose.PDF.
-- Soporte para Imágenes DICOM - Aspose.PDF for .NET admite el estándar gráfico médico especial de imágenes. Aspose.PDF for .NET le permite convertir imágenes DICOM y SVG. Consulte la sección [Convertir DICOM a PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
-- [Trabajar con Gráficos Vectoriales](/pdf/net/working-with-vector-graphics) - esta sección describe las características de trabajar con la herramienta GraphicsAbsorber usando C#.
+- [Agregar Imagen a Archivo PDF Existente](/pdf/es/net/add-image-to-existing-pdf-file/) - agregar imágenes y referencias de una sola imagen en el documento PDF, después controlar la calidad.
+- [Eliminar Imágenes de Archivo PDF](/pdf/es/net/delete-images-from-pdf-file/) - consulte el fragmento de código para eliminar imágenes de un archivo PDF.
+- [Extraer Imágenes de Archivo PDF](/pdf/es/net/extract-images-from-pdf-file/) - use la colección de Imágenes para extraer imágenes de un archivo PDF.
+- [Obtener la Resolución y Dimensiones de Imágenes Incorporadas](/pdf/es/net/get-resolution-and-dimensions-of-embedded-images/) - use las clases de operador en el espacio de nombres Aspose.PDF que proporcionan la capacidad de obtener información de resolución y dimensión.
+- [Trabajar con la Colocación de Imágenes](/pdf/es/net/working-with-image-placement/) - es posible obtener la resolución y posición de una imagen en un documento PDF.
+- [Buscar y Obtener Imágenes de Documento PDF](/pdf/es/net/search-and-get-images-from-pdf-document/) - puede obtener una imagen de una página individual y buscar entre imágenes en todas las páginas con C#.
+- [Reemplazar Imagen en Archivo PDF Existente](/pdf/es/net/replace-image-in-existing-pdf-file/) - consulte nuestro fragmento de código, le muestra cómo reemplazar una imagen en un archivo PDF.
+- [Establecer Tamaño de Imagen](/pdf/es/net/set-image-size/) - la biblioteca C# le permite establecer el tamaño de una imagen.
+- [Establecer Nombre de Fuente Predeterminado](/pdf/es/net/set-default-font-name/) - Establecer Nombre de Fuente Predeterminado para el proceso de conversión.
+- [Generar Imágenes en Miniatura de Documentos PDF](/pdf/es/net/generate-thumbnail-images-from-pdf-documents/) - el siguiente artículo muestra cómo generar imágenes en miniatura de documentos PDF utilizando primero el SDK de Acrobat y luego Aspose.PDF.
+- Soporte para Imágenes DICOM - Aspose.PDF for .NET admite el estándar gráfico médico especial de imágenes. Aspose.PDF for .NET le permite convertir imágenes DICOM y SVG. Consulte la sección [Convertir DICOM a PDF](/pdf/es/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
+- [Trabajar con Gráficos Vectoriales](/pdf/es/net/working-with-vector-graphics) - esta sección describe las características de trabajar con la herramienta GraphicsAbsorber usando C#.
 
 <script type="application/ld+json">
 {

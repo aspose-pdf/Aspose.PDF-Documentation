@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[El espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/net/) le permite agregar un sello en un archivo PDF existente. A veces, los usuarios necesitan rotar el sello. En este artículo, veremos cómo rotar un sello alrededor de su punto central.
+[El espacio de nombres Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) en [Aspose.PDF for .NET](/pdf/es/net/) le permite agregar un sello en un archivo PDF existente. A veces, los usuarios necesitan rotar el sello. En este artículo, veremos cómo rotar un sello alrededor de su punto central.
 
 {{% /alert %}}
 

@@ -94,10 +94,10 @@ Algoritmos de resumen para PKCS7 separado:
 
 Se recomienda evitar firmas digitales con el algoritmo de resumen SHA-1 debido a su inseguridad.
 
-- [Firmar digitalmente archivo PDF](/pdf/net/digitally-sign-pdf-file/)
-- [Establecer privilegios, cifrar y descifrar archivo PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [Extraer información de imagen y firma](/pdf/net/extract-image-and-signature-information/)
-- [Firmar documento PDF desde tarjeta inteligente](/pdf/net/sign-pdf-document-from-smart-card/)
+- [Firmar digitalmente archivo PDF](/pdf/es/net/digitally-sign-pdf-file/)
+- [Establecer privilegios, cifrar y descifrar archivo PDF](/pdf/es/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Extraer información de imagen y firma](/pdf/es/net/extract-image-and-signature-information/)
+- [Firmar documento PDF desde tarjeta inteligente](/pdf/es/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

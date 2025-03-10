@@ -82,7 +82,7 @@ Las imágenes se encuentran en la colección [Resources](https://reference.aspos
 
 El índice de la imagen devuelve un objeto [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). Este objeto proporciona un método Save que se puede utilizar para guardar la imagen extraída. El siguiente fragmento de código muestra cómo extraer imágenes de un archivo PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

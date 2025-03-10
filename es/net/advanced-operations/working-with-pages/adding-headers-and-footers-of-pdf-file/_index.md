@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** te permite agregar encabezados y pies de página en tu archivo PDF existente. Puedes agregar imágenes o texto a un documento PDF. Además, intenta agregar diferentes encabezados en un archivo PDF con C#.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar Texto en el Encabezado del Archivo PDF
 

@@ -92,7 +92,7 @@ El formato combina un documento PDF que los humanos pueden leer y un archivo de 
 
 También cumple con los requisitos legales para el archivo a largo plazo y el cumplimiento fiscal. ZUGFeRD tiene diferentes versiones y perfiles que se adaptan a diferentes necesidades y escenarios. La última versión es ZUGFeRD 2.0, compatible con el estándar europeo EN 16931 para la facturación electrónica. ZUGFeRD ofrece a los usuarios muchos beneficios y ahorros de costos, como un procesamiento más rápido, reducción de errores, mejora del flujo de caja y menor impacto ambiental.
 
-* [Creando PDF/3-A compatible y adjuntando factura ZUGFeRD en C#](/pdf/net/attach-zugferd/)
+* [Creando PDF/3-A compatible y adjuntando factura ZUGFeRD en C#](/pdf/es/net/attach-zugferd/)
 
 ## Véase también
 

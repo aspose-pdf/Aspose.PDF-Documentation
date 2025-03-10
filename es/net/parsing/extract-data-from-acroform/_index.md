@@ -84,7 +84,7 @@ Además de permitirle generar campos de formulario y completar campos de formula
 
 En el código de muestra a continuación, demostramos cómo iterar a través de cada página en un PDF para extraer información sobre todo el AcroForm en el PDF, así como los valores de los campos de formulario. Este código de muestra presume que no conoce el nombre de los campos de formulario de antemano.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ La propiedad Value del campo de formulario le permite obtener el valor de un cam
 
 ## Extraer campos de formulario de un documento PDF a JSON
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -138,7 +138,7 @@ private static void ExtractFormFieldsToJson()
 
 La clase Form le permite exportar datos a un archivo XML desde el archivo PDF utilizando el método ExportXml. Para exportar datos a XML, necesita crear un objeto de la clase Form y luego llamar al método ExportXml utilizando el objeto FileStream. Finalmente, puede cerrar el objeto FileStream y liberar el objeto Form. El siguiente fragmento de código le muestra cómo exportar datos a un archivo XML.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void ExportFormDataToXml()
 
 La clase Form le permite exportar datos a un archivo FDF desde el archivo PDF utilizando el método ExportFdf. Para exportar datos a FDF, necesita crear un objeto de la clase Form y luego llamar al método ExportFdf utilizando el objeto FileStream. Finalmente, puede guardar el archivo PDF utilizando el método Save de la clase Form. El siguiente fragmento de código le muestra cómo exportar datos a un archivo FDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void ExportDataToPdf()
 
 La clase Form le permite exportar datos a un archivo XFDF desde el archivo PDF utilizando el método ExportXfdf. Para exportar datos a XFDF, necesita crear un objeto de la clase Form y luego llamar al método ExportXfdf utilizando el objeto FileStream. Finalmente, puede guardar el archivo PDF utilizando el método Save de la clase Form. El siguiente fragmento de código le muestra cómo exportar datos a un archivo XFDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

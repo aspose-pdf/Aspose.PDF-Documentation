@@ -90,7 +90,7 @@ Para obtener todos los archivos adjuntos de un archivo PDF:
 
 Los siguientes fragmentos de código muestran cómo obtener todos los archivos adjuntos de un documento PDF.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

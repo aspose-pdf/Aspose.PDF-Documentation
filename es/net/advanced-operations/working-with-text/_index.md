@@ -83,14 +83,14 @@ Todos a veces necesitamos agregar texto al archivo PDF. Por ejemplo, cuando dese
 
  Puedes hacer lo siguiente:
 
-- [Agregar Texto a archivo PDF](/pdf/net/add-text-to-pdf-file/) - agrega texto a tu PDF, usa fuentes de strem y archivos, agrega una cadena HTML, agrega un hipervínculo, etc.
-- [Tooltip de PDF](/pdf/net/pdf-tooltip/) - puedes agregar un tooltip al texto buscado añadiendo un botón invisible usando C#.
-- [Formateo de Texto dentro de PDF](/pdf/net/text-formatting-inside-pdf/) - Muchas características puedes agregar a tu documento al formatear el texto dentro de él. Agrega sangría, agrega borde de texto, agrega texto subrayado, agrega salto de línea con la biblioteca Aspose.PDF.
-- [Usando FloatingBox](/pdf/net/floating-box/) - la herramienta Floating Box es una herramienta especial para colocar texto y otro contenido en una página PDF.
-- [Reemplazar Texto en PDF](/pdf/net/replace-text-in-pdf/) - para reemplazar texto en todas las páginas de un documento PDF. Primero necesitas usar TextFragmentAbsorber.
-- [Rotar Texto Dentro de PDF](/pdf/net/rotate-text-inside-pdf/) - rota texto dentro de PDF usando la propiedad de rotación de la clase TextFragment.
-- [Buscar y Obtener Texto de Páginas de Documento PDF](/pdf/net/search-and-get-text-from-pdf/) - puedes usar la clase TextFragmentAbsorber para buscar y obtener texto de las páginas.
-- [Determinar Salto de Línea](/pdf/net/determine-line-break/) - este tema explica cómo rastrear el salto de línea de fragmentos de texto de múltiples líneas.
+- [Agregar Texto a archivo PDF](/pdf/es/net/add-text-to-pdf-file/) - agrega texto a tu PDF, usa fuentes de strem y archivos, agrega una cadena HTML, agrega un hipervínculo, etc.
+- [Tooltip de PDF](/pdf/es/net/pdf-tooltip/) - puedes agregar un tooltip al texto buscado añadiendo un botón invisible usando C#.
+- [Formateo de Texto dentro de PDF](/pdf/es/net/text-formatting-inside-pdf/) - Muchas características puedes agregar a tu documento al formatear el texto dentro de él. Agrega sangría, agrega borde de texto, agrega texto subrayado, agrega salto de línea con la biblioteca Aspose.PDF.
+- [Usando FloatingBox](/pdf/es/net/floating-box/) - la herramienta Floating Box es una herramienta especial para colocar texto y otro contenido en una página PDF.
+- [Reemplazar Texto en PDF](/pdf/es/net/replace-text-in-pdf/) - para reemplazar texto en todas las páginas de un documento PDF. Primero necesitas usar TextFragmentAbsorber.
+- [Rotar Texto Dentro de PDF](/pdf/es/net/rotate-text-inside-pdf/) - rota texto dentro de PDF usando la propiedad de rotación de la clase TextFragment.
+- [Buscar y Obtener Texto de Páginas de Documento PDF](/pdf/es/net/search-and-get-text-from-pdf/) - puedes usar la clase TextFragmentAbsorber para buscar y obtener texto de las páginas.
+- [Determinar Salto de Línea](/pdf/es/net/determine-line-break/) - este tema explica cómo rastrear el salto de línea de fragmentos de texto de múltiples líneas.
 
 <script type="application/ld+json">
 {

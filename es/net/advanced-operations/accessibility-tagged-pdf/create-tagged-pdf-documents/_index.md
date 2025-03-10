@@ -81,7 +81,7 @@ sitemap:
 
 Crear un PDF etiquetado significa agregar (o crear) ciertos elementos al documento que permitirán que el documento sea validado de acuerdo con los requisitos de PDF/UA. Estos elementos se llaman a menudo Elementos de Estructura.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Creando PDF Etiquetado (Escenario Simple)
 

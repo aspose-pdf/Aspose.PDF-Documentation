@@ -86,7 +86,7 @@ Aspose.PDF para NET te permite extraer texto de anotaciones de sello. Para extra
 1. Define un nuevo objeto de la clase `TextAbsorber`.
 1. Utiliza el método visit de TextAbsorber para obtener el texto.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -100,7 +100,7 @@ Los siguientes métodos/properties de la clase RichMediaAnnotation pueden ser ut
 - void Update(): Crear una estructura de datos de la anotación. Este método debe ser llamado al final.
 - void SetPoster(Stream): Establecer el póster del video, es decir, la imagen mostrada cuando el reproductor no está activo.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar Anotación de Pantalla
 
@@ -439,7 +439,7 @@ private static void AddNavigationButtons()
 }
 ```
 
-Para obtener información más detallada y posibilidades de estas características, consulta también [Trabajando con Formularios](/pdf/net/acroforms/).
+Para obtener información más detallada y posibilidades de estas características, consulta también [Trabajando con Formularios](/pdf/es/net/acroforms/).
 
 En los documentos PDF, puedes ver y gestionar contenido 3D de alta calidad creado con software CAD 3D o de modelado 3D e incrustado en el documento PDF. Puedes rotar elementos 3D en todas las direcciones como si los estuvieras sosteniendo en tus manos.
 

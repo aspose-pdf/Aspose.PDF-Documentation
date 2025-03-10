@@ -83,12 +83,12 @@ Un documento PDF Etiquetado puede ser accedido por personas con discapacidades. 
 
 Esta sección cubre los siguientes temas:
 
-- [Crear PDF Etiquetado](/pdf/net/create-tagged-pdf/)
-- [Editar PDF Etiquetado](/pdf/net/edit-pdf-file-tags/)
-- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [Configuración de Propiedades de Elementos de Estructura](/pdf/net/setting-structure-elements-properties/)
-- [Trabajando con Tablas en PDFs Etiquetados](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [Prueba de Cumplimiento PDF-UA - Lista de Errores](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [Crear PDF Etiquetado](/pdf/es/net/create-tagged-pdf/)
+- [Editar PDF Etiquetado](/pdf/es/net/edit-pdf-file-tags/)
+- [Extraer Contenido Etiquetado de PDFs Etiquetados](/pdf/es/net/extract-tagged-content-from-tagged-pdfs/)
+- [Configuración de Propiedades de Elementos de Estructura](/pdf/es/net/setting-structure-elements-properties/)
+- [Trabajando con Tablas en PDFs Etiquetados](/pdf/es/net/working-with-table-in-tagged-pdfs/)
+- [Prueba de Cumplimiento PDF-UA - Lista de Errores](/pdf/es/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

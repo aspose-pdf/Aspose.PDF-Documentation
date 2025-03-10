@@ -138,7 +138,7 @@ Para imprimir documentos PDF, se utiliza System.Drawing.Common, por lo que solo 
 
 ## Licenciamiento
 
-No hay licencia adicional para Aspose.PDF.Drawing, use la misma que para Aspose.PDF. Consulte la sección [Licencia de Aspose PDF](/pdf/net/licensing/).
+No hay licencia adicional para Aspose.PDF.Drawing, use la misma que para Aspose.PDF. Consulte la sección [Licencia de Aspose PDF](/pdf/es/net/licensing/).
 
 ## Instalación
 
@@ -150,7 +150,7 @@ Conozca las clases disponibles en Aspose.PDF.Drawing en el sitio de [Referencia 
 
 Conozca más sobre:
 
-- [Formatos de archivo compatibles](/pdf/net/supported-file-formats/)
-- [Requisitos del sistema](/pdf/net/system-requirements/)
-- [Licenciamiento](/pdf/net/licensing/)
-- [Soporte técnico](/pdf/net/technical-support/)
+- [Formatos de archivo compatibles](/pdf/es/net/supported-file-formats/)
+- [Requisitos del sistema](/pdf/es/net/system-requirements/)
+- [Licenciamiento](/pdf/es/net/licensing/)
+- [Soporte técnico](/pdf/es/net/technical-support/)

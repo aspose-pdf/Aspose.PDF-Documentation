@@ -82,7 +82,7 @@ sitemap:
 
 Puede usar la clase ImageStamp para agregar un sello de imagen a un archivo PDF. La clase ImageStamp proporciona las propiedades necesarias para crear un sello basado en imagen, como altura, ancho, opacidad, etc.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Para agregar un sello de imagen:
 

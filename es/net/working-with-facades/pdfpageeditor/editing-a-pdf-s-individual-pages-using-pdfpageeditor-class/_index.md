@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-El espacio de nombres Aspose.Pdf.Facades en [Aspose.PDF for .NET](/pdf/net/) te permite manipular páginas individuales en un archivo PDF. Esta función te ayuda a trabajar con la visualización de la página, alineación y transición, etc. La clase PdfPageEditor ayuda a lograr esta funcionalidad. En este artículo, examinaremos las propiedades y métodos proporcionados por esta clase y el funcionamiento de estos métodos también.
+El espacio de nombres Aspose.Pdf.Facades en [Aspose.PDF for .NET](/pdf/es/net/) te permite manipular páginas individuales en un archivo PDF. Esta función te ayuda a trabajar con la visualización de la página, alineación y transición, etc. La clase PdfPageEditor ayuda a lograr esta funcionalidad. En este artículo, examinaremos las propiedades y métodos proporcionados por esta clase y el funcionamiento de estos métodos también.
 
 {{% /alert %}}
 

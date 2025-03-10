@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Agregar Hipervínculo en un Archivo PDF
 

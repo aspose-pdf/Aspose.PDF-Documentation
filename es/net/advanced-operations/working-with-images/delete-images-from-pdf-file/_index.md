@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Para eliminar una imagen de un archivo PDF:
 

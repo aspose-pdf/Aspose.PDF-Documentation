@@ -85,7 +85,7 @@ Al firmar un documento PDF utilizando una firma, básicamente confirmas su conte
 
 En otras palabras, el documento seguiría considerándose que mantiene su integridad y el destinatario aún podría confiar en el documento. Para más detalles, visita Certificando y firmando un PDF. En general, certificar un documento puede compararse con firmar un ejecutable .NET.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Características de firma de Aspose.PDF for .NET
 

@@ -81,7 +81,7 @@ sitemap:
 
 En este artículo aprenderás cómo extraer contenido etiquetado de un documento PDF usando C#.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ## Obtener Contenido PDF Etiquetado
 

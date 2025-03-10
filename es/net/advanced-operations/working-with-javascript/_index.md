@@ -88,7 +88,7 @@ Los documentos PDF tienen una gran versatilidad ya que pueden ser mostrados tant
 - Acrobat JavaScript no tiene acceso a objetos dentro de una página HTML. De manera similar, HTML JavaScript no puede acceder a objetos dentro de un archivo PDF.
 - HTML JavaScript puede manipular objetos como Window. Acrobat JavaScript no puede acceder a este objeto en particular, pero puede manipular objetos específicos de PDF.
 
-Puedes agregar JavaScript tanto a nivel de documento como de página usando [Aspose.PDF for .NET](/pdf/net/). Para agregar JavaScript:
+Puedes agregar JavaScript tanto a nivel de documento como de página usando [Aspose.PDF for .NET](/pdf/es/net/). Para agregar JavaScript:
 
 ### Agregando JavaScript a la Acción de Documento o Página
 

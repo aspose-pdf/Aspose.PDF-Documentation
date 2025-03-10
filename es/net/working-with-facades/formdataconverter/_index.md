@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Convertir un FDF a formato XML](/pdf/net/converting-an-fdf-to-xml-format/)
-- [Convertir un XML a formato FDF](/pdf/net/converting-an-xml-to-fdf-format/)
+- [Convertir un FDF a formato XML](/pdf/es/net/converting-an-fdf-to-xml-format/)
+- [Convertir un XML a formato FDF](/pdf/es/net/converting-an-xml-to-fdf-format/)

@@ -100,14 +100,14 @@ Los AcroForms tienen capacidades que no se encuentran en XFA y, a la inversa, XF
 
 Para un aprendizaje más detallado de las capacidades de la biblioteca Java, consulta los siguientes artículos:
 
-- [Crear AcroForm](/pdf/net/create-form) - crear un formulario desde cero con C#.
-- [Llenar AcroForm](/pdf/net/fill-form) - llenar el campo del formulario en tu documento PDF.
-- [Extraer AcroForm](/pdf/net/extract-form) - obtener el valor de todos o de un campo individual del documento PDF.
-- [Modificando AcroForm](/pdf/net/modifing-form) - obtener o establecer FieldLimit, establecer la fuente del campo del formulario, etc.
-- [Publicar Datos de AcroForm](/pdf/net/posting-acroform-data/) - importar y exportar datos del formulario a un archivo XML.
-- [Importar y Exportar Datos](/pdf/net/import-and-export-data/) - importar y exportar datos utilizando la Clase Form.
-- [Eliminar Formularios de PDF](/pdf/net/remove-form/) - eliminar texto basado en subtipo/formulario, eliminar todos los formularios.
-- [Importar y Exportar Datos en JSON](/pdf/net/import-export-json/) - importar y exportar datos con JSON
+- [Crear AcroForm](/pdf/es/net/create-form) - crear un formulario desde cero con C#.
+- [Llenar AcroForm](/pdf/es/net/fill-form) - llenar el campo del formulario en tu documento PDF.
+- [Extraer AcroForm](/pdf/es/net/extract-form) - obtener el valor de todos o de un campo individual del documento PDF.
+- [Modificando AcroForm](/pdf/es/net/modifing-form) - obtener o establecer FieldLimit, establecer la fuente del campo del formulario, etc.
+- [Publicar Datos de AcroForm](/pdf/es/net/posting-acroform-data/) - importar y exportar datos del formulario a un archivo XML.
+- [Importar y Exportar Datos](/pdf/es/net/import-and-export-data/) - importar y exportar datos utilizando la Clase Form.
+- [Eliminar Formularios de PDF](/pdf/es/net/remove-form/) - eliminar texto basado en subtipo/formulario, eliminar todos los formularios.
+- [Importar y Exportar Datos en JSON](/pdf/es/net/import-export-json/) - importar y exportar datos con JSON
 
 <script type="application/ld+json">
 {

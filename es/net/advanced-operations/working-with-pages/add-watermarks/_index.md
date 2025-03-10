@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** permite agregar marcas de agua a su documento PDF utilizando Artefactos. Por favor, consulte este artículo para resolver su tarea.
 
-El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también trabaja con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Una marca de agua creada con Adobe Acrobat se llama un artefacto (como se describe en 14.8.2.2 Contenido Real y Artefactos de la especificación PDF). Para trabajar con artefactos, Aspose.PDF tiene dos clases: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) y [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

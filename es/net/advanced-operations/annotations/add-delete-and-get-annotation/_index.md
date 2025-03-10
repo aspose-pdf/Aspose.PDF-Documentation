@@ -85,13 +85,13 @@ Estas son objetos adicionales que agregas a tu archivo para expandir el contenid
 
 Hemos combinado los diferentes tipos de anotaciones disponibles para la biblioteca Aspose.PDF for .NET en grupos:
 
-- [Anotación de Texto PDF](/pdf/net/text-annotation/)
-- [Anotación de Resaltados PDF](/pdf/net/highlights-annotation/)
-- [Anotación de Figuras PDF](/pdf/net/figures-annotation/)
-- [Anotación Multimedia](/pdf/net/multimedia-annotation/)
-- [Anotaciones Adhesivas PDF](/pdf/net/sticky-annotations/)
-- [Anotaciones de Enlace](/pdf/net/link-annotations/)
-- [Anotaciones Extra](/pdf/net/extra-annotations/)
+- [Anotación de Texto PDF](/pdf/es/net/text-annotation/)
+- [Anotación de Resaltados PDF](/pdf/es/net/highlights-annotation/)
+- [Anotación de Figuras PDF](/pdf/es/net/figures-annotation/)
+- [Anotación Multimedia](/pdf/es/net/multimedia-annotation/)
+- [Anotaciones Adhesivas PDF](/pdf/es/net/sticky-annotations/)
+- [Anotaciones de Enlace](/pdf/es/net/link-annotations/)
+- [Anotaciones Extra](/pdf/es/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

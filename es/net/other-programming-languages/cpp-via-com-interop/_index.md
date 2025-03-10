@@ -10,8 +10,8 @@ url: /es/net/cpp-via-com-interop/
 
 Esta sección contiene los siguientes temas
 
-- [Usando enlace temprano en C++](/pdf/net/using-early-binding-in-cpp/)
-- [Usando enlace tardío en C++](/pdf/net/using-late-binding-in-cpp/)
-- [Usando envoltorio en C++](/pdf/net/using-wrapper-in-cpp/)
+- [Usando enlace temprano en C++](/pdf/es/net/using-early-binding-in-cpp/)
+- [Usando enlace tardío en C++](/pdf/es/net/using-late-binding-in-cpp/)
+- [Usando envoltorio en C++](/pdf/es/net/using-wrapper-in-cpp/)
 
 {{% /alert %}}

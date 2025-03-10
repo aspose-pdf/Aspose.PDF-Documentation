@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Exportar datos de la hoja de cálculo de Excel para llenar el formulario PDF](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [Exportar datos de la hoja de cálculo de Excel para llenar el formulario PDF](/pdf/es/net/export-excel-worksheet-data-to-fill-pdf-form/)

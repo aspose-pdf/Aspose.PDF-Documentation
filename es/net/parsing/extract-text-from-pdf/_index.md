@@ -14,6 +14,6 @@ sitemap:
 ---
 ## Artículos en esta sección
 
-- [Extraer texto de PDF](/pdf/net/extract-text-from-all-pdf/)
-- [Extraer párrafo de PDF](/pdf/net/extract-paragraph-from-pdf/)
-- [Extraer texto de superíndices e subíndices de PDF](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [Extraer texto de PDF](/pdf/es/net/extract-text-from-all-pdf/)
+- [Extraer párrafo de PDF](/pdf/es/net/extract-paragraph-from-pdf/)
+- [Extraer texto de superíndices e subíndices de PDF](/pdf/es/net/extract-superscripts-subscripts-from-pdf/)

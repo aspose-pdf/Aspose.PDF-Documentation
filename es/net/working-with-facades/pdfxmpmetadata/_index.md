@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Trabajando con la Plataforma de Metadatos Extensible - XMP](/pdf/net/working-with-extensible-metadata-platform-xmp/)
-- [Establecer Metadatos XMP de un PDF existente](/pdf/net/set-xmp-metadata-of-an-existing-pdf/)
-- [Obtener Metadatos XMP de un Archivo PDF Existente](/pdf/net/get-xmp-metadata-of-an-existing-pdf-file/)
+- [Trabajando con la Plataforma de Metadatos Extensible - XMP](/pdf/es/net/working-with-extensible-metadata-platform-xmp/)
+- [Establecer Metadatos XMP de un PDF existente](/pdf/es/net/set-xmp-metadata-of-an-existing-pdf/)
+- [Obtener Metadatos XMP de un Archivo PDF Existente](/pdf/es/net/get-xmp-metadata-of-an-existing-pdf-file/)

@@ -86,7 +86,7 @@ Extraer texto de un documento PDF es algo común. Sin embargo, en dicho texto, c
 
 Utiliza la clase **TextFragmentAbsorber** y ya puedes hacer cualquier cosa con el texto encontrado, es decir, puedes simplemente usar todo el texto. Prueba el siguiente fragmento de código:
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -112,7 +112,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 O utiliza **TextFragments** por separado y realiza todo tipo de manipulaciones con ellos, por ejemplo, ordenar por coordenadas o por tamaño.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

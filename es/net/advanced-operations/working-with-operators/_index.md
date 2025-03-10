@@ -105,7 +105,7 @@ Para agregar una imagen a un archivo PDF:
    - Use el operador Do para dibujar la imagen en la página.
 1. Finalmente, use el operador GRestore para guardar el estado gráfico actualizado.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 El siguiente fragmento de código muestra cómo usar operadores PDF.
 

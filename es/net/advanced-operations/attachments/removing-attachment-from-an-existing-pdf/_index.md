@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF puede eliminar archivos adjuntos de archivos PDF. Los archivos adjuntos de un documento PDF se mantienen en la colección EmbeddedFiles del objeto Document.
 
-El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/net/drawing/).
+El siguiente fragmento de código también funciona con la biblioteca [Aspose.PDF.Drawing](/pdf/es/net/drawing/).
 
 Para eliminar todos los archivos adjuntos asociados con un archivo PDF:
 

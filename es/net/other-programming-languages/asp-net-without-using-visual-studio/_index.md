@@ -75,7 +75,7 @@ description: Aprende cómo usar Aspose.PDF for .NET en proyectos de ASP.NET sin 
 
 {{% alert color="primary" %}}
 
-[Aspose.PDF for .NET](/pdf/net/) se puede utilizar para desarrollar páginas o aplicaciones ASP.NET sin usar Visual Studio. En este ejemplo, escribiremos HTML y el código C# o VB.NET en un solo archivo .aspx; esto se conoce comúnmente como Instant ASP.NET.
+[Aspose.PDF for .NET](/pdf/es/net/) se puede utilizar para desarrollar páginas o aplicaciones ASP.NET sin usar Visual Studio. En este ejemplo, escribiremos HTML y el código C# o VB.NET en un solo archivo .aspx; esto se conoce comúnmente como Instant ASP.NET.
 
 {{% /alert %}}
 
@@ -84,7 +84,7 @@ description: Aprende cómo usar Aspose.PDF for .NET en proyectos de ASP.NET sin 
 {{% alert color="primary" %}}
 
 Crea una aplicación web de muestra y copia Aspose.PDF.dll en un directorio llamado "Bin" en el directorio de tu sitio web ( *si la carpeta bin no existe, crea una* ). Luego crea tu página .aspx y copia el siguiente código en ella.
-Este ejemplo muestra cómo usar [Aspose.PDF for .NET](/pdf/net/) con código en línea en una página ASP.NET para crear un documento PDF simple con algo de texto de muestra dentro.
+Este ejemplo muestra cómo usar [Aspose.PDF for .NET](/pdf/es/net/) con código en línea en una página ASP.NET para crear un documento PDF simple con algo de texto de muestra dentro.
 {{% /alert %}}
 
 ```cs
