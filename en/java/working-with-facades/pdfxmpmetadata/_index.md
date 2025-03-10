@@ -4,7 +4,7 @@ type: docs
 weight: 100
 url: /java/pdfxmpmetadata-class/
 description: Learn how to manage and extract XMP metadata embedded in PDF documents using the PDFXMPMetadata class in Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

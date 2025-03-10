@@ -4,7 +4,7 @@ type: docs
 weight: 90
 url: /java/pdffileinfo-class/
 description: Learn how to extract and manage file information, such as metadata and properties, from a PDF using PDFFileInfo in Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

@@ -1,6 +1,8 @@
 ---
 title: Working with Facades
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/working-with-facades/
 description: Learn how to work with PDF facades in .NET using Aspose.PDF for easier manipulation and viewing of PDF content.

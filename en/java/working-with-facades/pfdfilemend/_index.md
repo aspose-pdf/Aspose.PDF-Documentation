@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/pdffilemend-class/
 description: Learn how to use the PDFFileMend class in Java to mend and repair PDF files using Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

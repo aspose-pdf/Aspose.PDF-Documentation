@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/create-forms/
 description: This section explains how to create AcroForms from scratch in your PDF documents with Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on how to add various form fields to a PDF document using the Aspose.PDF Java
+Abstract: The article provides a comprehensive guide on how to add various form fields to a PDF document using the Aspose.PDF Java library. It begins by explaining the use of the `Document` class's `Form` collection to manage form fields. The article details the steps to add different types of form fields, including `TextBoxField`, `RadioButtonField`, `ComboBoxField`, and how to add captions and tooltips to these fields. The process of adding a `TextBoxField` involves creating a field object, setting its properties, and adding it to the document's `Form` collection. The article includes a Java code snippet demonstrating this process, highlighting key steps such as setting the field's position, size, border, color, and finally saving the modified PDF document. For `RadioButtonField`, the article provides examples of adding simple radio buttons, creating advanced radio buttons with options placed within table cells, and associating captions with radio button fields.
+SoftwareApplication: java
 ---
 
 ## Add Form Field in a PDF Document

@@ -5,10 +5,14 @@ type: docs
 weight: 50
 url: /java/extract-data-from-acroform/
 description: AcroForms exists in many PDF documents. This article aims to help you understand how to extract data from AcroForms using Java and the Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Extract data from AcroForms using the Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on how to handle form fields within PDF documents using Aspose.PDF for Java. It describes methods to extract form field data, both when field names are known and unknown. For unknown field names, developers can iterate over each page to extract data, while known fields can be directly accessed using the indexer in the Document's Form collection. The article includes code snippets demonstrating how to retrieve form field values by title and export data to various formats, such as JSON, XML, FDF, and XFDF. It highlights the use of third-party libraries, like Gson, for JSON conversion, and explains how to use the `exportXml`, `exportFdf`, and `exportXfdf` methods for other formats, emphasizing the utility of the `com.aspose.pdf.facades.Form` class for these operations.
+SoftwareApplication: java
 ---
 
 ## Extract form fields from PDF document

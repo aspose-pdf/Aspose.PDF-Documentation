@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/pdf-tooltip/
 description: Learn how to add tooltip to the text fragment in PDF using Java and Aspose.PDF.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add tooltip to the text fragment in PDF using Aspose.PDF for Java
+Abstract: The article provides a detailed guide on how to add tooltips to specific text within a PDF document using Aspose.PDF for Java. The process involves creating an invisible button over the text that will display the tooltip when hovered over by the mouse. This is achieved by using the `TextFragmentAbsorber` to locate the text and `ButtonField` to create an invisible button with an `AlternateName` as the tooltip. Additionally, the article discusses implementing a feature to show or hide a text block on mouse hover using `Aspose.Pdf.Annotations.HideAction` class. The article includes Java code snippets demonstrating both functionalities and highlights compatibility considerations for different PDF readers, noting specific behaviors in browsers like Internet Explorer, Opera, and Google Chrome. It emphasizes checking PDF reader documentation for handling tooltip lengths and provides insights into ensuring the correct display of hidden text blocks across platforms.
+SoftwareApplication: java 
 ---
 
 ## Add Tooltip to Searched Text by adding Invisible Button

@@ -2,6 +2,8 @@
 title: Plugins
 linktitle: Plugins
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /net/plugins/
 description: Learn how to use various plug-ins based on Aspose.PDF

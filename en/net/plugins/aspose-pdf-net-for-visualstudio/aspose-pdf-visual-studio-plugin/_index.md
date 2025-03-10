@@ -1,6 +1,8 @@
 ---
 title: Aspose.PDF Visual Studio Plugin
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/aspose-pdf-visual-studio-plugin/
 description: Learn how to use Umbraco PDF Import Module

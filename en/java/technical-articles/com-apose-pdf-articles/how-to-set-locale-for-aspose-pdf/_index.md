@@ -3,7 +3,7 @@ title: How to Set Locale for Aspose.PDF
 type: docs
 weight: 30
 url: /java/how-to-set-locale-for-aspose-pdf/
-lastmod: "2022-01-27"
+lastmod: "2025-02-17"
 ---
 
 {{% alert color="primary" %}}

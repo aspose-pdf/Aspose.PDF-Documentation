@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/extract-tagged-content-from-tagged-pdfs/
 description: This article explains how to extract tagged content PDF document using Aspose.PDF for Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Guide on handling Tagged PDF content using the Aspose.PDF library in Java
+Abstract: This article provides a comprehensive guide on handling Tagged PDF content using the Aspose.PDF library in Java. It explains how to retrieve content from a PDF document with tagged text by utilizing the `getTaggedContent()` method of the `Document` class. The article includes a practical code snippet demonstrating the process of setting a document's title and language and saving the tagged PDF content. Additionally, it describes how to access the root structure of a Tagged PDF Document through the `getStructTreeRootElement()` and `getStructureElement()` methods of the `ITaggedContent` interface. Furthermore, the article illustrates how to access and manipulate children elements within a Tagged PDF using the `ElementList` class, providing examples of getting and setting properties such as title, language, and various text attributes. Each section is accompanied by example code snippets to aid in understanding and implementation.
+SoftwareApplication: java
 ---
 
 ## Getting Tagged PDF Content

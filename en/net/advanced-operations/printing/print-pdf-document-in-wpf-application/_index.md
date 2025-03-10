@@ -2,6 +2,8 @@
 title: Print PDF in WPF application
 linktitle: Print PDF document in WPF application
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/print-pdf-document-in-wpf-application/
 description: C# Print PDF documents from a WPF application. This code sample shows how to print PDF documents from a WPF application using C#.

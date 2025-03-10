@@ -1,6 +1,8 @@
 ---
 title: PdfXmpMetadata Class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 130
 url: /net/pdfxmpmetadata-class/
 description: Discover how to work with XMP metadata in PDF files using the PDFXMPMetadata class in .NET with Aspose.PDF.

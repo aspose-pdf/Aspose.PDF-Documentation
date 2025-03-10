@@ -4,7 +4,7 @@ type: docs
 weight: 20
 url: /java/aspose-pdf-java-for-ruby/
 description: Explore how to use Aspose.PDF for Java in Ruby. Combine the power of Ruby scripting with advanced PDF manipulation features.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 ---
 
 ## Introduction

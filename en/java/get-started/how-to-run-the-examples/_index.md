@@ -5,7 +5,11 @@ type: docs
 weight: 50
 url: /java/how-to-run-other-examples/    
 description: Get guidance on running other Aspose.PDF examples in Java for better understanding and practical use of the library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true 
+AlternativeHeadline: Guide on accessing and utilizing examples of Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on accessing and utilizing examples of Aspose.PDF for Java from GitHub. Users can either clone the repository or download a ZIP file containing all examples, which are organized in the "Examples" folder. The project is structured using the Maven build system, making it compatible with modern Integrated Development Environments (IDEs) such as IntelliJ IDEA, Eclipse, and NetBeans. The article details step-by-step instructions for setting up the project and running examples in each IDE, emphasizing the ease of dependency management and execution within the IDEs' built-in console output windows. Additionally, the article encourages contributions to the open-source project by outlining the process for forking the repository, editing the source code, and submitting pull requests for review and inclusion.
+SoftwareApplication: java
 ---
 
 ## Download from GitHub

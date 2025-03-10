@@ -4,11 +4,15 @@ linktitle: Convert PDF to other formats
 type: docs
 weight: 90
 url: /java/convert-pdf-to-other-files/
-lastmod: "2021-11-19"
+lastmod: "2025-02-17"
 description: Explore how to convert PDF files into other formats like Word, Excel, or images using Aspose.PDF for Java.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true 
+AlternativeHeadline: How to convert PDF files into other formats with Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on utilizing Aspose.PDF for Java to convert PDF documents into various formats, including EPUB, LaTeX/TeX, Text, and XPS. It highlights the features and capabilities of Aspose.PDF, a robust library for handling PDF conversions. For converting PDFs to EPUBs, the article introduces the `EpubSaveOptions` class, enabling reflowable and fixed-layout content transformations. The conversion to LaTeX/TeX utilizes the `TeXSaveOptions` class, suitable for high-quality typesetting in text-based formats. For extracting text from PDFs, the `TextAbsorber` class is employed, supporting both whole document and specific page conversions to text files. Lastly, the article describes converting PDFs to Microsoft's XML Paper Specification (XPS) format using the `XpsSaveOptions` class. The article also mentions online applications available for each conversion type, allowing users to explore these features and their quality firsthand.
+SoftwareApplication: java
 ---
 
 ## Convert PDF to EPUB

@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/actions/
 description: This section explains how to add actions to the document and form fields programmatically with Java. Learn how to Add, Create, and Get Hyperlink in a PDF File.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to use actions in the PDF document using Aspose.PDF for Java
+Abstract: The article provides a comprehensive guide on handling hyperlinks within PDF documents using Aspose.PDF for Java. It describes methods to embed hyperlinks to both external URLs and internal pages within a PDF document. The process involves using the `Document`, `Page`, `LinkAnnotation`, and `GoToURIAction` classes to create and manage links. The article includes detailed code snippets for adding hyperlinks, extracting hyperlink destinations (URLs), retrieving hyperlink text, and removing document open actions. Additionally, it explains how to set a specific page to open when viewing a PDF document, utilizing the `XYZExplicitDestination` class. Each section is supported by practical Java code examples, illustrating the implementation of these features. Overall, the article serves as a technical resource for developers looking to manipulate PDF hyperlink functionalities programmatically.
+SoftwareApplication: java
 ---
 
 A PDF file can contain embedded file attachments and it is often necessary to Hyperlink to these documents. You may direct readers from the main PDF document to a PDF attachment by creating a link in the parent document that points to the attachment.

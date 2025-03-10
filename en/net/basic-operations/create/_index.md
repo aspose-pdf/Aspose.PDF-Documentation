@@ -2,6 +2,8 @@
 title: Create PDF document programmatically
 linktitle: Create PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/create-document/
 description: This page describes how to create PDF document from scratch with Aspose.PDF library.

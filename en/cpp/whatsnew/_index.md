@@ -11,6 +11,26 @@ sitemap:
 lastmod: "2021-12-22"
 ---
 
+## What's new in Aspose.PDF 24.11
+
+The loading of DJVU images is implemented:
+
+```cpp
+
+    auto doc = System::MakeObject<Document>(u"example.djvu"), System::MakeObject<DjvuLoadOptions>());
+    doc->Save(u"example.pdf");
+```
+
+## What's new in Aspose.PDF 24.10
+
+The loading of CDR images is implemented:
+
+```cpp
+
+    auto doc = System::MakeObject<Document>(u"example.cdr"), System::MakeObject<CdrLoadOptions>());
+    doc->Save(u"example.pdf");
+```
+
 ## What's new in Aspose.PDF 24.8
 
 Ability to add SVG images to a page:

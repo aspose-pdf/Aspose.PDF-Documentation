@@ -2,6 +2,8 @@
 title: PDF sticky Annotations using C#
 linktitle: Sticky Annotation
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/sticky-annotations/
 description: Learn how to create sticky annotations, such as notes and highlights, in PDFs using Aspose.PDF in .NET.

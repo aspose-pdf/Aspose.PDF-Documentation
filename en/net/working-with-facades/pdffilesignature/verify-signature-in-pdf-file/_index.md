@@ -1,6 +1,8 @@
 ---
 title: Verify Signature in PDF File
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/verify-signature-in-pdf/
 description: This section explains how to verify signature in PDF File using PdfFileSignature class.

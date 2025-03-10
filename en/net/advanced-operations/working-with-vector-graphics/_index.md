@@ -2,6 +2,8 @@
 title: Working with Vector Graphics
 linktitle: Working with Vector Graphics
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 100
 url: /net/working-with-vector-graphics/
 description: This article describes the features of working with GraphicsAbsorber tool using C#.

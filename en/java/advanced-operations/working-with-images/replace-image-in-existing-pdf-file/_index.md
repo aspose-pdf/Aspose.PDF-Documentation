@@ -5,7 +5,11 @@ type: docs
 weight: 70
 url: /java/replace-image-in-existing-pdf-file/
 description: This section describes about replace image in existing PDF file using Java library.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true 
+AlternativeHeadline: How to replace an image in an existing PDF file using Aspose.PDF
+Abstract: The article provides an overview of how to replace an image in an existing PDF file using the `XImages` collection's `Replace` method from the Aspose PDF Java library. The process involves accessing the Images collection within a page's Resources section. A step-by-step guide is provided - first, open the PDF using the `Document` object, then replace a specific image, and finally save the updated file using the `Save` method. A Java code snippet demonstrates this procedure, showing how to open a PDF file, replace an image using a new image file, and save the modifications.
+SoftwareApplication: java
 ---
 
 The [XImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) collection's [Replace](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) method allows you to replace an image in an existing PDF file.

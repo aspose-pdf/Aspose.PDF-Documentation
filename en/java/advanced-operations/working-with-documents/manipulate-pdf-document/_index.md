@@ -5,7 +5,11 @@ type: docs
 weight: 30
 url: /java/manipulate-pdf-document/
 description: Learn how to manipulate PDF documents in Java using Aspose.PDF, including editing and content updates.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true 
+AlternativeHeadline: Guide on using Aspose.PDF for Java to perform various operations on PDF documents
+Abstract: This article provides a comprehensive guide on using Aspose.PDF for Java to perform various operations on PDF documents. It outlines the method to validate PDF documents against PDF/A-1a and PDF/A-1b standards using the `Document` class's `validate(..)` method, which generates an XML report detailing compliance issues. The article also covers how to add and customize a Table of Contents (TOC) in PDF files, including setting different `TabLeaderType` for TOC levels and hiding page numbers. Additionally, it explains how to customize page numbers in the TOC by adding prefixes like "P1, P2, P3," etc. The guide further delves into adding layers to PDF documents, allowing for content segregation, such as multilingual texts or animations. Finally, it demonstrates setting a PDF expiration date using JavaScript to trigger alerts when a PDF is accessed beyond its validity period. Each section is supplemented with code snippets to illustrate the application of these features.
+SoftwareApplication: java
 ---
 
 ## Validate PDF Document for PDF A Standard (A 1A and A 1B)

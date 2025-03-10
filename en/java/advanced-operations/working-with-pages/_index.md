@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/working-with-pages/
 description: With Aspose.PDF for Java you can add pages, add headers and footers, add watermarks  into your PDF file. This section explain to you all details on this topic. 
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Manipulate PDF Pages using Aspose.PDF for Java
+Abstract: The article provides an overview of the functionalities offered by the Aspose.PDF for Java library for manipulating PDF documents. Key features include inserting, deleting, and moving pages within a PDF, as well as adjusting page orientation and size. The library also supports adding and customizing headers, footers, and page numbers. Users can programmatically crop pages and incorporate watermarks using the Artifact class. Additional capabilities include splitting documents, and adding stamps via the ImageStamp and TextStamp classes to incorporate background images. The article links to detailed guides on performing each of these tasks, demonstrating the versatility of the Aspose.PDF for Java library in managing PDF content without needing Adobe Acrobat Reader.
+SoftwareApplication: java
 ---
 
 **Aspose.PDF for Java** lets you insert a page to a PDF document at any location in the file, add pages to the end of a PDF file, and delete pages from your document. This section shows how to add pages to a PDF without Acrobat Reader.

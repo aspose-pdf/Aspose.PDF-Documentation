@@ -5,10 +5,14 @@ type: docs
 weight: 60
 url: /java/add-ellipse/
 description: This article explains how to create a Ellipse object to your PDF using Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to Add Ellipse Object to PDF file using Aspose.PDF for Java
+Abstract: The article provides a detailed guide on utilizing the Aspose.PDF library for Java to add and manipulate Ellipse objects within PDF documents. It demonstrates the creation of Ellipse shapes, including setting their dimensions, positioning, and colors. The article covers the process of adding both outlined and filled Ellipses, showcasing how to set border colors and fill colors for visual differentiation. Additionally, it highlights the capability to embed text within Ellipse objects by using the TextFragment class, allowing customization of font and text size. The article includes code snippets that illustrate each step, ensuring ease of implementation for developers. Visuals accompany the examples to depict the resulting Ellipse objects in the PDF, enhancing comprehension of the described techniques.
+SoftwareApplication: java
 ---
 
 ## Add Ellipse object

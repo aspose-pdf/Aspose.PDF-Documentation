@@ -5,10 +5,14 @@ type: docs
 weight: 40
 url: /java/hello-world-example/
 description: This page show how use simple programming for create a PDF document containing text - Hello World using Aspose.PDF for Java.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Basic "Hello World" example using Aspose.PDF for Java
+Abstract: The article presents a basic "Hello World" example to demonstrate the functionalities of the Aspose.PDF for Java API, which allows Java developers to create, read, edit, and manipulate PDF files. It outlines a simple process for creating a PDF file using the API. After installing the necessary software, users can execute a provided Java code snippet that showcases the API's functionality. The code involves initializing a `Document` object, adding a `Page`, creating a `TextFragment` with the text "Hello World!", and saving the PDF. This example provides a straightforward introduction to using Aspose.PDF for Java in application development.
+SoftwareApplication: java
 ---
 
 ## Hello World Example

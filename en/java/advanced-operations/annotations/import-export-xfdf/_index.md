@@ -5,10 +5,14 @@ type: docs
 weight: 40
 url: /java/import-export-xfdf/
 description: You may import and export annotation with XFDF format using Aspose.PDF for Java library. 
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Export Annotations to XFDF using Aspose.PDF for Java
+Abstract: The article introduces XFDF (XML Forms Data Format), an XML-based file format used to represent form data or annotations in PDF forms. It highlights the capabilities of Aspose.PDF for Java, specifically the Aspose.Pdf.Facades namespace, which provides methods to import and export annotation data to and from XFDF files. The article discusses the use of the `PdfAnnotationEditor` class, which includes methods such as `ExportAnnotationsXfdf` and `ImportAnnotationFromXfdf` to handle annotations. It provides code examples demonstrating how to export annotations to an XFDF file and how to import them back into a PDF document. Additionally, the article describes an alternative method to import annotations directly from another PDF document using the `ImportAnnotations` method. This functionality is particularly useful for sharing and archiving forms data across different systems.
+SoftwareApplication: java
 ---
 
 {{% alert color="primary" %}}

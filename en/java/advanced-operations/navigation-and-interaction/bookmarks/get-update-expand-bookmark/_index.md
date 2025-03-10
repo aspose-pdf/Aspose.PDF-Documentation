@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/get-update-and-expand-bookmark/
 description: This article describes how to use bookmarks in a PDF file. With our Java library, you can get bookmarks from the PDF file, get a bookmarks page number, update bookmarks in a PDF Document, and expand bookmarks when viewing a document.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Managing bookmarks within a PDF document using the Aspose.PDF library
+Abstract: This article provides a comprehensive guide on managing bookmarks within a PDF document using the Aspose.PDF library in Java. It details the process of retrieving bookmarks from a PDF file via the `OutlineCollection` and accessing their attributes using `OutlineItemCollection`. The article explains how to determine the page number associated with a bookmark by extracting the destination page number. Additionally, it covers updating bookmarks by accessing them through their index, modifying their properties, and saving the updated document. The guide also includes instructions for updating child bookmarks by navigating through parent-child relationships within the `OutlineCollection`. Furthermore, it discusses how to ensure all bookmarks are expanded when viewing a document by setting the open status for each bookmark. Code snippets are provided throughout to illustrate each process, making it a practical resource for developers working with PDF bookmarks.
+SoftwareApplication: java
 ---
 
 ## Get Bookmarks

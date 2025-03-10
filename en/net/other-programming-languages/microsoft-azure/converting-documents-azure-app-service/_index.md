@@ -2,6 +2,8 @@
 title: Converting Documents with Microsoft Azure App service
 linktitle: Converting Documents with Microsoft Azure App service
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 10
 url: /net/converting-documents-with-microsoft-azure-app-service/
 description: Find out how to convert PDF documents with Microsoft Azure App Service and Aspose.PDF for .NET, optimizing document workflows in the cloud.

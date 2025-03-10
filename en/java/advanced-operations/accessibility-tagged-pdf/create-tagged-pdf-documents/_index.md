@@ -3,12 +3,16 @@ title: Create Tagged PDF
 linktitle: Create Tagged PDF 
 type: docs
 weight: 10
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 url: /java/create-tagged-pdf-documents/
 description: This article explains how to create structure's elements for Tagged PDF document programmatically using Aspose.PDF for Java.
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Creating and manipulating structure elements in a Tagged PDF
+Abstract: The article provides a comprehensive guide on creating and manipulating structure elements in a Tagged PDF document using the Aspose.PDF library in Java. It covers several key functionalities, including creating individual structure elements, building a hierarchical structure element tree, styling text structures, illustrating structure elements, and incorporating tagged images and text into PDFs. The document emphasizes the use of the `ITaggedContent` interface to achieve these tasks, showcasing various code snippets for practical implementation. Users can create and style text block-level and inline-level structure elements, add illustrations with specific attributes, and manage tagged images for enhanced document accessibility and organization. The article also highlights methods under development for future enhancements, such as list and table elements, thereby outlining the current capabilities and potential expansions of the Aspose.PDF library for creating robust Tagged PDF documents.
+SoftwareApplication: java
 ---
 
 ## Creating Structure Elements

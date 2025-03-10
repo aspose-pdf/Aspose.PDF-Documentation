@@ -1,11 +1,15 @@
 ---
-title: Formatting PDF Document 
+title: Formatting PDF Document
 linktitle: Formatting PDF Document
 type: docs
 weight: 20
 url: /java/formatting-pdf-document/
 description: Format the PDF Document with Aspose.PDF for Java. Use the next code snippet to resolve your tasks.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
+TechArticle: true
+AlternativeHeadline: Guide on managing document window and page display properties using the Aspose.PDF library in Java
+Abstract: The article provides a comprehensive guide on managing document window and page display properties using the Aspose.PDF library in Java. It details how to retrieve and set various PDF document properties, such as window centering, reading direction, title display, and interface visibility, using methods from the `Document` class. The article includes code snippets demonstrating how to implement these changes programmatically. Additionally, it covers embedding fonts in existing and new PDF files to ensure consistent document appearance across different platforms. This involves using the `Font` class to embed fonts fully or partially, which is useful for reducing file size without compromising on font integrity for specific uses like logos. The article further explains how to set a default font name when saving a PDF, ensuring that missing fonts in a document are replaced with a specified default font. It also includes instructions for extracting all fonts from a PDF and managing the zoom factor using the `GoToAction` object for precise control over document presentation.
+SoftwareApplication: java
 ---
 
 ## Get Document Window and Page Display Properties
@@ -109,46 +113,46 @@ The following code snippet shows you how to set the properties using the [Docume
 
     // Open document
     Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    
+
     // Set different document properties
     // specify to position document's window - Default: false
     pdfDocument.setCenterWindow(true);
-    
+
     // Predominant reading order; determine the position of page
     // when displayed side by side - Default: L2R
     pdfDocument.setDirection(com.aspose.pdf.Direction.R2L);
-    
+
     // Specify whether window's title bar should display document title
     // if false, title bar displays PDF file name - Default: false
     pdfDocument.setDisplayDocTitle(true);
-    
+
     // Specify whether to resize the document's window to fit the size of
     // first displayed page - Default: false
     pdfDocument.setFitWindow(true);
-    
+
     // Specify whether to hide menu bar of the viewer application - Default:
     // false
     pdfDocument.setHideMenubar(true);
-    
+
     // Specify whether to hide tool bar of the viewer application - Default:
     // false
     pdfDocument.setHideToolBar(true);
-    
+
     // Specify whether to hide UI elements like scroll bars
     // and leaving only the page contents displayed - Default: false
     pdfDocument.setHideWindowUI(true);
-    
+
     // Document's page mode. specify how to display document on exiting
     // full-screen mode.
     pdfDocument.setNonFullScreenPageMode(com.aspose.pdf.PageMode.UseOC);
-    
+
     // Specify the page layout i.e. single page, one column
     pdfDocument.setPageLayout(com.aspose.pdf.PageLayout.TwoColumnLeft);
-    
+
     // Specify how the document should display when opened
     // i.e. show thumbnails, full-screen, show attachment panel
     pdfDocument.setPageMode(com.aspose.pdf.PageMode.UseThumbs);
-    
+
     // Save updated PDF file
     pdfDocument.save(_dataDir + "UpdatedFile_output.pdf");
 

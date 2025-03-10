@@ -2,6 +2,8 @@
 title: Import FDF format annotations to PDF via C#
 linktitle: Import FDF format annotations to PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/import-fdf/
 description: Use existing Form.ImportFdf() or add PdfAnnotationEditor.ImportAnnotationsFromFdf() methods for import FDF format annotations to PDF with Aspose.PDF for .NET.

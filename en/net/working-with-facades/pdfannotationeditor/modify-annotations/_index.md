@@ -1,6 +1,8 @@
 ---
 title: Modify Annotations in your PDF 
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 50
 url: /net/modify-annotations/
 description: This section explains how to modify annotations from PDF file to XFDF with Aspose.PDF Facades.

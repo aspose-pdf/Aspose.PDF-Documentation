@@ -2,6 +2,8 @@
 title: Save PDF document programmatically
 linktitle: Save PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/save-pdf-document/
 description: Learn how to save PDF file in C# Aspose.PDF for .NET PDF library. Save PDF document to file system, to stream, and in Web applications.

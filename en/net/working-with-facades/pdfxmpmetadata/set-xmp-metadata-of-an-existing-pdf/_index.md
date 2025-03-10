@@ -1,6 +1,8 @@
 ---
 title: Set XMP Metadata of an existing PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 20
 url: /net/set-xmp-metadata-of-an-existing-pdf/
 description: This section explains how to set XMP Metadata of an existing PDF with Aspose.PDF Facades.

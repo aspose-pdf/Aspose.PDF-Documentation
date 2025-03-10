@@ -1,6 +1,8 @@
 ---
 title: Decorate Form Field in PDF
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 30
 url: /net/decorate-form-field/
 description: Explore how to decorate form fields in a PDF document, adding visual enhancements like borders, in .NET with Aspose.PDF.

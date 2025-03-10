@@ -5,10 +5,14 @@ type: docs
 weight: 70
 url: /java/determine-line-break/
 description: Learn more about how to determinate a line break of multi-line TextFragment using Java
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to determinate a line break of multi-line TextFragment using Aspose.PDF for Java
+Abstract: The article introduces a feature in Aspose.PDF for Java that enables users to track the line-breaking process of multi-line text fragments when adding text to PDF documents. It highlights the use of the `GetNotifications()` method from the `Page` class to log this background processing. The provided Java code example demonstrates how to create a PDF document, add multiple text fragments to a page, and save the document. It also illustrates how to retrieve and print line-breaking notifications, which are then written to a text file. This feature assists developers in understanding how text content is formatted across lines within a PDF, enhancing control over document layout.
+SoftwareApplication: java 
 ---
 
 ## Track Line Breaking of Multi-Line TextFragment

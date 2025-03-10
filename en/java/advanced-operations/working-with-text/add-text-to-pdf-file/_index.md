@@ -5,10 +5,14 @@ type: docs
 weight: 10
 url: /java/add-text-to-pdf-file/
 description: Discover how to insert text into an existing PDF document in Java with Aspose.PDF for text insertion and modification.
-lastmod: "2021-06-05"
+lastmod: "2025-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: How to add Text into PDF using Aspose.PDF for Java
+Abstract: This article provides a comprehensive guide on manipulating PDF files using Aspose.PDF for Java. It covers various methods to add text, load fonts, and enhance text formatting in PDFs. The article begins with instructions on adding text to an existing PDF, demonstrating the process through Java code snippets. It proceeds to explain how to load fonts from stream objects and use Open Type Fonts (OTF). Additionally, it describes how to add text using `TextParagraph` and set hyperlinks for `TextSegment` objects. The document also details incorporating HTML content into PDFs via `HtmlFragment` and demonstrates handling footnotes and endnotes with the Document Object Model (DOM). Techniques for adding images and tables to footnotes, creating multi-column layouts, and working with custom tab stops are explored. The article further explains adding transparent text, specifying line spacing for fonts, and measuring text width dynamically. It serves as a practical reference for developers seeking to enhance their PDF processing capabilities using Aspose.PDF for Java.
+SoftwareApplication: java 
 ---
 
 To add text to existing PDF file:

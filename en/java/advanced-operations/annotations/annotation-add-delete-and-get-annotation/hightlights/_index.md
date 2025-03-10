@@ -5,10 +5,14 @@ type: docs
 weight: 20
 url: /java/highlights-annotation/
 description: Discover how to add highlights annotations in a PDF document in Java using Aspose.PDF to highlight important text.
-lastmod: "2021-11-24"
+lastmod: "2025-02-17"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true 
+AlternativeHeadline: Managing text markup annotations in PDF documents using Java
+Abstract: The article provides a detailed overview of managing text markup annotations in PDF documents using Java. It explains how annotations, such as highlights, underlines, strikeouts, and squiggly underlines, can be visually represented and managed within a PDF. The properties of these annotations—color, opacity, author, subject, modified date, and lock status—can be modified through specific settings properties (highlightSettings, strikethroughSettings, underlineSettings). The article outlines the steps and Java code required to add text markup annotations to a PDF document, including the creation of different annotation types (HighlightAnnotation, StrikeOutAnnotation, SquigglyAnnotation, UnderlineAnnotation) and their integration into a PDF page. It also discusses advanced techniques for handling multi-line text fragments. Furthermore, the article includes Java code snippets for retrieving, displaying, and deleting text markup annotations from a PDF. These operations involve loading the PDF, selecting the desired annotations using AnnotationSelector, and performing actions such as printing or deleting the
+SoftwareApplication: java
 ---
 
 Text Markup Annotations shall appear as highlights, underlines, strikeouts, or jagged (“squiggly”) underlines in the text of a document. When opened, they shall display a pop-up window containing the text of the associated note.

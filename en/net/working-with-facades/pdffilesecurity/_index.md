@@ -1,6 +1,8 @@
 ---
 title: PdfFileSecurity Class
 type: docs
+ai_search_scope: pdf_net
+ai_search_endpoint: https://docsearch.api.aspose.cloud/ask
 weight: 125
 url: /net/pdffilesecurity-class/
 description: Learn how to secure PDF documents by applying encryption, digital signatures, and access controls using the PDFFileSecurity class in .NET.
