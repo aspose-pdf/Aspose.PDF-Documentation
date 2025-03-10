@@ -83,28 +83,28 @@ sitemap:
 
 |Тип аннотации|Описание| .NET Framework | .NET Core |
 |:--|:--|:--|:--|
-|[Текст](/pdf/ru/net/текстовая-аннотация/)|Текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ссылка](/pdf/ru/net/дополнительные-аннотации/)|Аннотации ссылок|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Свободный текст](/pdf/ru/net/текстовая-аннотация/)|(PDF 1.3) Бесплатная текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Линия](/pdf/ru/net/фигуры-аннотация/)|(PDF 1.3) Линейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Квадрат](/pdf/ru/net/фигуры-аннотация/)|(PDF 1.3) Квадратная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Круг](/pdf/ru/net/фигуры-аннотация/)|(PDF 1.3) Круговая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Многоугольник](/pdf/ru/net/фигуры-аннотация/)|(PDF 1.5) Многоугольная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Полилиния](/pdf/ru/net/фигуры-аннотация/)|(PDF 1.5) Полилинейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Выделение](/pdf/ru/net/выделения-аннотация/)|(PDF 1.3) Аннотация выделения|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Подчёркивание](/pdf/ru/net/выделения-аннотация/)|(PDF 1.3) Подчёркивающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Волнистая линия](/pdf/ru/net/выделения-аннотация/)|(PDF 1.4) Волнисто-подчёркивающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Зачёркивание](/pdf/ru/net/выделения-аннотация/)|(PDF 1.3) Зачёркивающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Штамп](/pdf/ru/net/штампы/)|(PDF 1.3) Резиновый штамп|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Указатель](/pdf/ru/net/дополнительные-аннотации/)|(PDF 1.5) Указательная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Чернила](/pdf/ru/net/фигуры-аннотация/)|(PDF 1.3) Чернильная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Всплывающее окно](/pdf/ru/net/текстовая-аннотация/)|(PDF 1.3) Всплывающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Звук](/pdf/ru/net/мультимедийная-аннотация/)|(PDF 1.2) Звуковая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Видео](/pdf/ru/net/мультимедийная-аннотация/)|(PDF 1.2) Видео-аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Виджет](/pdf/ru/net/мультимедийная-аннотация/)|(PDF 1.2) Виджет-аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Экран](/pdf/ru/net/мультимедийная-аннотация/)|(PDF 1.5) Экранная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Водяной знак](/pdf/ru/net/стикерные-аннотации/)|(PDF 1.6) Водяной знак|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Удаление](/pdf/ru/net/дополнительные-аннотации/)|(PDF 1.7) Удаление аннотации|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Текст](/pdf/ru/net/text-annotation/)|Текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ссылка](/pdf/ru/net/extra-annotations/)|Аннотации ссылок|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Свободный текст](/pdf/ru/net/text-annotation/)|(PDF 1.3) Бесплатная текстовая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Линия](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Линейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Квадрат](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Квадратная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Круг](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Круговая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Многоугольник](/pdf/ru/net/figures-annotation/)|(PDF 1.5) Многоугольная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Полилиния](/pdf/ru/net/figures-annotation/)|(PDF 1.5) Полилинейная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Выделение](/pdf/ru/net/highlights-annotation/)|(PDF 1.3) Аннотация выделения|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Подчёркивание](/pdf/ru/net/highlights-annotation/)|(PDF 1.3) Подчёркивающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Волнистая линия](/pdf/ru/net/highlights-annotation/)|(PDF 1.4) Волнисто-подчёркивающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Зачёркивание](/pdf/ru/net/highlights-annotation/)|(PDF 1.3) Зачёркивающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Штамп](/pdf/ru/net/stamping/)|(PDF 1.3) Резиновый штамп|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Указатель](/pdf/ru/net/extra-annotations/)|(PDF 1.5) Указательная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Чернила](/pdf/ru/net/figures-annotation/)|(PDF 1.3) Чернильная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Всплывающее окно](/pdf/ru/net/text-annotation/)|(PDF 1.3) Всплывающая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Звук](/pdf/ru/net/multimedia-annotation/)|(PDF 1.2) Звуковая аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Видео](/pdf/ru/net/multimedia-annotation/)|(PDF 1.2) Видео-аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Виджет](/pdf/ru/net/multimedia-annotation/)|(PDF 1.2) Виджет-аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Экран](/pdf/ru/net/multimedia-annotation/)|(PDF 1.5) Экранная аннотация|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Водяной знак](/pdf/ru/net/sticky-annotations/)|(PDF 1.6) Водяной знак|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Удаление](/pdf/ru/net/extra-annotations/)|(PDF 1.7) Удаление аннотации|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

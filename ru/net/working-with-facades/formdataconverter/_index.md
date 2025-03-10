@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Преобразование FDF в формат XML](/pdf/ru/net/преобразование-fdf-в-формат-xml/)
-- [Преобразование XML в формат FDF](/pdf/ru/net/преобразование-xml-в-формат-fdf/)
+- [Преобразование FDF в формат XML](/pdf/ru/net/converting-an-fdf-to-xml-format/)
+- [Преобразование XML в формат FDF](/pdf/ru/net/converting-an-xml-to-fdf-format/)

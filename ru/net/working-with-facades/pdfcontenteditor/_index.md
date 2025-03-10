@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Добавление действий JavaScript в существующий PDF-файл](/pdf/ru/net/добавление-действий-javascript-в-существующий-pdf-файл/)
-- [Добавление закладок в существующий PDF-файл](/pdf/ru/net/как-создать-вложенные-закладки/)
-- [Работа с изображениями](/pdf/ru/net/работа-с-изображениями-в-pdf/)
-- [Замена текста — фасады](/pdf/ru/net/замена-текста-фасады/)
-- [Работа с вложениями — фасады](/pdf/ru/net/работа-со-вложениями-фасады/)
-- [Установка настроек просмотра для существующего PDF-файла](/pdf/ru/net/установка-настроек-просмотра-для-существующего-pdf-файла/)
-- [Получение настроек просмотра существующего PDF-файла](/pdf/ru/net/получение-настроек-просмотра-существующего-pdf-файла/)
-- [Добавление аннотаций к существующему PDF-файлу](/pdf/ru/net/добавление-аннотаций-к-существующему-pdf-файлу/)
+- [Добавление действий JavaScript в существующий PDF-файл](/pdf/ru/net/adding-javascript-actions/)
+- [Добавление закладок в существующий PDF-файл](/pdf/ru/net/how-to-create-nested-bookmarks/)
+- [Работа с изображениями](/pdf/ru/net/working-with-images-in-pdf/)
+- [Замена текста — фасады](/pdf/ru/net/replace-text-facades/)
+- [Работа с вложениями — фасады](/pdf/ru/net/working-with-attachments-facades/)
+- [Установка настроек просмотра для существующего PDF-файла](/pdf/ru/net/set-viewer-preference-of-an-existing-pdf-file/)
+- [Получение настроек просмотра существующего PDF-файла](/pdf/ru/net/get-viewer-preference-of-an-existing-pdf-file/)
+- [Добавление аннотаций к существующему PDF-файлу](/pdf/ru/net/adding-annotations-to-existing-pdf-file/)

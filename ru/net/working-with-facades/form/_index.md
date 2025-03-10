@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Определение имён полей формы](/pdf/ru/net/определение-имён-полей-формы/)
-- [Выравнивание текста в поле текстового поля](/pdf/ru/net/выравнивание-текста-в-поле-текстового-поля/)
-- [В чём разница между XML, FDF и XFDF](/pdf/ru/net/в-чём-разница-между-xml-fdf-и-xfdf/)
-- [Получение значения параметра кнопки](/pdf/ru/net/получение-значения-параметра-кнопки/)
-- [Импорт и экспорт данных](/pdf/ru/net/импорт-и-экспорт-данных/)
+- [Определение имён полей формы](/pdf/ru/net/identifying-form-fields-names/)
+- [Выравнивание текста в поле текстового поля](/pdf/ru/net/justify-text-in-a-textbox-field/)
+- [В чём разница между XML, FDF и XFDF](/pdf/ru/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [Получение значения параметра кнопки](/pdf/ru/net/get-button-option-value/)
+- [Импорт и экспорт данных](/pdf/ru/net/import-and-export-data/)

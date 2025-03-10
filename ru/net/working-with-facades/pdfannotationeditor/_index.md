@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Удалить все аннотации указанного типа (фасады)](/pdf/ru/net/удалить-аннотации/)
-- [Импорт и экспорт аннотаций в формат XFDF с использованием com.aspose.pdf.facades](/pdf/ru/net/импорт-экспорт-аннотаций/)
-- [Извлечение аннотации](/pdf/ru/net/извлечь-аннотацию/)
-- [Сглаживание аннотации](/pdf/ru/net/сгладить-аннотацию/)
-- [Изменение аннотаций](/pdf/ru/net/изменить-аннотации/)
+- [Удалить все аннотации указанного типа (фасады)](/pdf/ru/net/delete-annotations/)
+- [Импорт и экспорт аннотаций в формат XFDF с использованием com.aspose.pdf.facades](/pdf/ru/net/import-export-annotations/)
+- [Извлечение аннотации](/pdf/ru/net/extract-annotation/)
+- [Сглаживание аннотации](/pdf/ru/net/flatten-annotation/)
+- [Изменение аннотаций](/pdf/ru/net/modify-annotations/)

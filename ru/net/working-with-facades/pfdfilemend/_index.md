@@ -12,4 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Добавление изображений и текста с использованием класса PdfFileMend](/pdf/ru/net/добавление-изображений-и-текста-с-использованием-класса-pdffilemend/)
+
+- [Добавление изображений и текста с использованием класса PdfFileMend](/pdf/ru/net/adding-images-and-text-using-pdffilemend-class/)

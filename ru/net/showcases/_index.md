@@ -15,6 +15,6 @@ sitemap:
 ## Статьи в этом разделе
 
 - [Aspose.PDF Editor](/pdf/ru/net/aspose-pdf-editor/)
-- [Отображение WebForms DataGridView в PDF](/pdf/ru/net/отображение-webforms-datagridview-в-pdf/)
-- [Вывод таблицы из источника данных](/pdf/ru/net/вывод-таблицы-из-источника-данных/)
-- [Вывод таблицы с использованием модели Entity Framework в качестве источника данных](/pdf/ru/net/вывод-таблицы-с-использованием-модели-entity-framework-в-качестве-источника-данных/)
+- [Отображение WebForms DataGridView в PDF](/pdf/ru/net/render-webforms-datagridview-to-pdf/)
+- [Вывод таблицы из источника данных](/pdf/ru/net/render-table-from-the-data-source/)
+- [Вывод таблицы с использованием модели Entity Framework в качестве источника данных](/pdf/ru/net/render-table-using-entity-framework-model-as-data-source/)

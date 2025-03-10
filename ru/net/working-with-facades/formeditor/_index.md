@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Добавление полей формы](/pdf/ru/net/добавление-полей-формы/)
-- [Изучение возможностей класса FormEditor](/pdf/ru/net/изучение-возможностей-класса-formeditor/)
-- [Оформление поля формы в PDF](/pdf/ru/net/оформление-поля-формы-в-pdf/)
-- [Внешний вид поля и атрибуты](/pdf/ru/net/изменение-внешнего-вида-поля-и-атрибутов/)
-- [Работа со списком элементов](/pdf/ru/net/работа-со-списком-элементов/)
-- [Копирование внутреннего и внешнего поля](/pdf/ru/net/копирование-внутреннего-и-внешнего-поля/)
-- [Перемещение и удаление поля формы](/pdf/ru/net/перемещение-и-удаление-поля-формы/)
-- [Импорт и экспорт поля формы](/pdf/ru/net/импорт-и-экспорт-поля-формы/)
+- [Добавление полей формы](/pdf/ru/net/add-form-fields/)
+- [Изучение возможностей класса FormEditor](/pdf/ru/net/exploring-features-of-formeditor-class/)
+- [Оформление поля формы в PDF](/pdf/ru/net/decorate-form-field/)
+- [Внешний вид поля и атрибуты](/pdf/ru/net/changing-field-appearance-and-attributes/)
+- [Работа со списком элементов](/pdf/ru/net/working-with-list-item/)
+- [Копирование внутреннего и внешнего поля](/pdf/ru/net/copy-inner-and-outer-field/)
+- [Перемещение и удаление поля формы](/pdf/ru/net/move-remove-form-field/)
+- [Импорт и экспорт поля формы](/pdf/ru/net/import-export-form-field/)

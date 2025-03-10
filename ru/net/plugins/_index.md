@@ -16,9 +16,9 @@ sitemap:
 
 Этот раздел содержит список плагинов для самых популярных веб-приложений: DotNetNuke, Sitefinity, Umbraco и т. д.
 
-* [Aspose.PDF for .NET с Coldfusion](/pdf/ru/net/использование-Aspose-PDF-для-Net-с-Coldfusion/)
-* [Aspose.PDF for .NET с CRM](/pdf/ru/net/Aspose-PDF-Net-для-CRM/)
-* [Aspose.PDF for .NET с DNN](/pdf/ru/net/Aspose-PDF-Net-для-DNN/)
-* [Aspose.PDF for .NET с Sitefinity](/pdf/ru/net/Aspose-PDF-Net-для-Sitefinity/)
-* [Aspose.PDF for .NET с Umbraco](/pdf/ru/net/Aspose-PDF-Net-для-Umbraco/)
-* [Aspose.PDF for .NET с VisualStudio](/pdf/ru/net/Aspose-PDF-Net-для-VisualStudio/)
+* [Aspose.PDF for .NET с Coldfusion](/pdf/ru/net/using-aspose-pdf-for-net-with-coldfusion/)
+* [Aspose.PDF for .NET с CRM](/pdf/ru/net/aspose-pdf-net-for-crm/)
+* [Aspose.PDF for .NET с DNN](/pdf/ru/net/aspose-pdf-net-for-dnn/)
+* [Aspose.PDF for .NET с Sitefinity](/pdf/ru/net/aspose-pdf-net-for-sitefinity/)
+* [Aspose.PDF for .NET с Umbraco](/pdf/ru/net/aspose-pdf-net-for-umbraco/)
+* [Aspose.PDF for .NET с VisualStudio](/pdf/ru/net/aspose-pdf-net-for-visualstudio/)

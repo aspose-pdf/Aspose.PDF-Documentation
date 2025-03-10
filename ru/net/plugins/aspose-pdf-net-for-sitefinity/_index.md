@@ -13,4 +13,4 @@ sitemap:
 ---
 В этом разделе есть следующие темы:
 
-- [Импорт PDF в Sitefinity](/pdf/ru/net/import-pdf-v-sitefinity/)
+- [Импорт PDF в Sitefinity](/pdf/ru/net/sitefinity-pdf-import/)

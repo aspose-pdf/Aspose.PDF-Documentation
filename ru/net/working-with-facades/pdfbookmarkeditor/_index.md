@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Создание закладок](/pdf/ru/net/создание-закладок/)
-- [Импорт и экспорт закладок](/pdf/ru/net/импорт-и-экспорт-закладок/)
-- [Обновление, удаление и получение закладок](/pdf/ru/net/обновление-удаление-и-получение-закладок/)
+- [Создание закладок](/pdf/ru/net/create-bookmarks/)
+- [Импорт и экспорт закладок](/pdf/ru/net/import-and-export-bookmarks/)
+- [Обновление, удаление и получение закладок](/pdf/ru/net/update-delete-and-get-bookmarks/)

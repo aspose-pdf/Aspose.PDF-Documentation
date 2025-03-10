@@ -12,5 +12,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
+
 - [Объединение изображений](/pdf/ru/net/merge-images/)
 - [Преобразование PDF-файла](/pdf/ru/net/convert-pdf-file/)

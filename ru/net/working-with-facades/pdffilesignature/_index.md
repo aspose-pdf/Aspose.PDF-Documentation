@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Добавление подписи в PDF-файл](/pdf/ru/net/добавление-подписи-в-pdf/)
-- [Удаление подписи из PDF-файла](/pdf/ru/net/удаление-подписи-из-pdf/)
-- [Проверка подписи в PDF-файле](/pdf/ru/net/проверка-подписи-в-pdf/)
-- [Работа с подписью в PDF-файле](/pdf/ru/net/добавление-подписи-в-pdf/)
+- [Добавление подписи в PDF-файл](/pdf/ru/net/add-signature-in-pdf/)
+- [Удаление подписи из PDF-файла](/pdf/ru/net/remove-signature-from-pdf/)
+- [Проверка подписи в PDF-файле](/pdf/ru/net/verify-signature-in-pdf/)
+- [Работа с подписью в PDF-файле](/pdf/ru/net/add-signature-in-pdf/)

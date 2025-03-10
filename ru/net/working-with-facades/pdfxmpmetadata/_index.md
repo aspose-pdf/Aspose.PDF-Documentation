@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Работа с расширяемой платформой метаданных — XMP](/pdf/ru/net/работа-с-расширяемой-платформой-метаданных-xmp/)
-- [Установка метаданных XMP для существующего PDF-файла](/pdf/ru/net/установка-метаданных-xmp-для-существующего-pdf-файла/)
-- [Получение метаданных XMP из существующего файла PDF](/pdf/ru/net/получение-метаданных-xmp-из-существующего-файла-pdf/)
+- [Работа с расширяемой платформой метаданных — XMP](/pdf/ru/net/working-with-extensible-metadata-platform-xmp/)
+- [Установка метаданных XMP для существующего PDF-файла](/pdf/ru/net/set-xmp-metadata-of-an-existing-pdf/)
+- [Получение метаданных XMP из существующего файла PDF](/pdf/ru/net/get-xmp-metadata-of-an-existing-pdf-file/)

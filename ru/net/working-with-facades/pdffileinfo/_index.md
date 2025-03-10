@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Установка информации о PDF-файле](/pdf/ru/net/установка-информации-о-pdf-файле/)
-- [Получение информации о PDF-файле](/pdf/ru/net/получение-информации-о-pdf-файле/)
+- [Установка информации о PDF-файле](/pdf/ru/net/set-pdf-file-information/)
+- [Получение информации о PDF-файле](/pdf/ru/net/get-pdf-file-information/)

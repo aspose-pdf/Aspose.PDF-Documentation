@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Шифрование PDF-файла](/pdf/ru/net/шифрование-pdf-файла/)
-- [Расшифровка PDF-файла](/pdf/ru/net/расшифровка-pdf-файла/)
-- [Управление исключением PDF-файла](/pdf/ru/net/управление-исключением/)
-- [Смена пароля PDF-файла](/pdf/ru/net/смена-пароля/)
-- [Установка привилегий для существующего PDF-файла](/pdf/ru/net/установка-привилегий/)
+- [Шифрование PDF-файла](/pdf/ru/net/encrypt-pdf-file/)
+- [Расшифровка PDF-файла](/pdf/ru/net/decrypt-pdf-file/)
+- [Управление исключением PDF-файла](/pdf/ru/net/control-exception/)
+- [Смена пароля PDF-файла](/pdf/ru/net/change-password/)
+- [Установка привилегий для существующего PDF-файла](/pdf/ru/net/set-privileges/)

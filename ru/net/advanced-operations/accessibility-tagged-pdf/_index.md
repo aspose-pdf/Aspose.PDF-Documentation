@@ -83,12 +83,12 @@ sitemap:
 
 В этом разделе рассматриваются следующие темы:
 
-- [Создание Tagged PDF](/pdf/ru/net/создание-tagged-pdf/)
-- [Редактирование Tagged PDF](/pdf/ru/net/редактирование-тегов-pdf-файла/)
-- [Извлечение Tagged-содержимого из Tagged PDF-файлов](/pdf/ru/net/извлечение-tagged-содержимого-из-tagged-pdf-файлов/)
-- [Настройка свойств структурных элементов](/pdf/ru/net/настройка-свойств-структурных-элементов/)
-- [Работа с таблицами в Tagged PDF-файлах](/pdf/ru/net/работа-с-таблицами-в-tagged-pdf-файлах/)
-- [Тест соответствия PDF-UA — список ошибок](/pdf/ru/net/тест-соответствия-pdf-ua-список-ошибок/)
+- [Создание Tagged PDF](/pdf/ru/net/create-tagged-pdf/)
+- [Редактирование Tagged PDF](/pdf/ru/net/edit-pdf-file-tags/)
+- [Извлечение Tagged-содержимого из Tagged PDF-файлов](/pdf/ru/net/extract-tagged-content-from-tagged-pdfs/)
+- [Настройка свойств структурных элементов](/pdf/ru/net/setting-structure-elements-properties/)
+- [Работа с таблицами в Tagged PDF-файлах](/pdf/ru/net/working-with-table-in-tagged-pdfs/)
+- [Тест соответствия PDF-UA — список ошибок](/pdf/ru/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {
