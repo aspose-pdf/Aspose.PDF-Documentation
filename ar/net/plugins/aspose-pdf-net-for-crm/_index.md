@@ -94,5 +94,5 @@ Aspose.PDF for .NET هو مكون لإنشاء وتعديل مستندات PDF �
 
 لقد أنشأنا المكونات الإضافية التالية لـ CRM باستخدام Aspose.PDF
 
-- [مولد مستند PDF بنقرة واحدة](/pdf/net/oneclick-pdf-document-generator/)
-- [استخدام مولد مستند PDF بنقرة واحدة](/pdf/net/using-oneclick-pdf-document-generator/)
+- [مولد مستند PDF بنقرة واحدة](/pdf/ar/net/oneclick-pdf-document-generator/)
+- [استخدام مولد مستند PDF بنقرة واحدة](/pdf/ar/net/using-oneclick-pdf-document-generator/)

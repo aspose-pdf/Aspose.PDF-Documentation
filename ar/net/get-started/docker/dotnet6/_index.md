@@ -97,12 +97,12 @@ sitemap:
 
 ### توليد مستند PDF باستخدام تطبيق ASP.NET Core Web في حاوية Linux
 
-سنستخدم الكود من **المثال المعقد** في هذا التطبيق. يرجى اتباع [هذا الرابط](/pdf/net/complex-pdf-example/) لمزيد من الشرح التفصيلي.
+سنستخدم الكود من **المثال المعقد** في هذا التطبيق. يرجى اتباع [هذا الرابط](/pdf/ar/net/complex-pdf-example/) لمزيد من الشرح التفصيلي.
 
-1. أنشئ مجلد `images` في مجلد `wwwroot` وضع الصورة `logo.png`. يمكنك تنزيل هذه الصورة من [هنا](/pdf/net/docker/logo.png).
+1. أنشئ مجلد `images` في مجلد `wwwroot` وضع الصورة `logo.png`. يمكنك تنزيل هذه الصورة من [هنا](/pdf/ar/net/docker/logo.png).
 1. استبدل الكود في `HomeController.cs` بالمقتطف التالي (يرجى ملاحظة أنه يمكنك أن يكون لديك مساحة اسم أخرى):
 
-يعمل المقتطف البرمجي التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل المقتطف البرمجي التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```cs
 using Aspose.Pdf;
@@ -263,7 +263,7 @@ ENTRYPOINT ["dotnet", "Docker.Linux.Demo01.dll"]
 
 سنستخدم نفس الكود كما في المثال السابق.
 
-1. أنشئ مجلد `images` في مجلد `wwwroot` وضع الصورة `logo.png`. يمكنك تنزيل هذه الصورة من [هنا](/pdf/net/docker/logo.png).
+1. أنشئ مجلد `images` في مجلد `wwwroot` وضع الصورة `logo.png`. يمكنك تنزيل هذه الصورة من [هنا](/pdf/ar/net/docker/logo.png).
 1. استبدل الكود في `HomeController.cs` بالمقتطف أعلاه.
 
 ```dockerfile

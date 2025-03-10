@@ -83,7 +83,7 @@ sitemap:
 
 Aspose.PDF for .NET يتيح إنشاء جدول في مستندات PDF المعلّمة. للعمل مع الجداول، توفر واجهة برمجة التطبيقات [TableElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement) class. لإنشاء جدول، يمكنك استخدام [CreateTableElement()](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent/methods/createtableelement) method of [ITaggedContent](https://reference.aspose.com/pdf/net/aspose.pdf.tagged/itaggedcontent) interface. علاوة على ذلك، يمكنك استخدام [CreateTHead()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createthead)، [CreateTBody()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtbody) و [CreateTFoot()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tableelement/methods/createtfoot) methods of TableElement class لإنشاء رأس الجدول، جسم الجدول، وتذييل الجدول على التوالي. لإنشاء صف جدول، يمكنك استخدام [CreateTR()](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement/methods/createtr) method of [TableRowCollectionElement](https://reference.aspose.com/pdf/net/aspose.pdf.logicalstructure/tablerowcollectionelement) class. يمكنك أيضًا التحقق مما إذا كان مستند PDF الذي تم إنشاؤه يتوافق مع PDF/UA باستخدام Validate() method of Document class.
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 توضح مقتطفات الشيفرة التالية كيفية إنشاء جدول في مستند PDF المعلّم:
 

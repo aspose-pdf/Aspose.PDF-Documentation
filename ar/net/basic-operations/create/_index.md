@@ -85,7 +85,7 @@ Aspose.PDF for .NET API يتيح لك إنشاء وقراءة ملفات PDF ب�
 1. إضافة [TextFragment](https://reference.aspose.com/pdf/net/aspose.pdf.text/textfragment) إلى مجموعة [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) الخاصة بالصفحة.
 1. حفظ مستند PDF الناتج.
 
-تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.Drawing](/pdf/net/drawing/).
+تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

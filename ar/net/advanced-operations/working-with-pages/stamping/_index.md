@@ -84,9 +84,9 @@ sitemap:
 
 تحقق من الأقسام التالية لتتعلم كيفية إضافة طابع باستخدام C#:
 
-- [إضافة طوابع الصور في صفحة PDF](/pdf/net/image-stamps-in-pdf-page/) - إضافة طابع صورة، التحكم في جودة الصورة، طابع الصورة كخلفية لملف PDF الخاص بك.
-- [إضافة طوابع النص في ملف PDF](/pdf/net/text-stamps-in-the-pdf-file/) - إضافة طابع نص، تحديد المحاذاة لكائن TextStamp، ملء نص السكتة الدماغية كطابع في ملف PDF.
-- [طوابع الصفحة في ملف PDF](/pdf/net/page-stamps-in-the-pdf-file/) - إضافة طابع صفحة إلى مستند PDF باستخدام فئة PdfPageStamp.
+- [إضافة طوابع الصور في صفحة PDF](/pdf/ar/net/image-stamps-in-pdf-page/) - إضافة طابع صورة، التحكم في جودة الصورة، طابع الصورة كخلفية لملف PDF الخاص بك.
+- [إضافة طوابع النص في ملف PDF](/pdf/ar/net/text-stamps-in-the-pdf-file/) - إضافة طابع نص، تحديد المحاذاة لكائن TextStamp، ملء نص السكتة الدماغية كطابع في ملف PDF.
+- [طوابع الصفحة في ملف PDF](/pdf/ar/net/page-stamps-in-the-pdf-file/) - إضافة طابع صفحة إلى مستند PDF باستخدام فئة PdfPageStamp.
 
 
 <script type="application/ld+json">

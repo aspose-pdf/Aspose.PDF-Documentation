@@ -82,7 +82,7 @@ sitemap:
 
 يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/net/aspose.pdf/ximage). يوفر هذا الكائن طريقة Save التي يمكن استخدامها لحفظ الصورة المستخرجة. يوضح مقتطف الكود التالي كيفية استخراج الصور من ملف PDF.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

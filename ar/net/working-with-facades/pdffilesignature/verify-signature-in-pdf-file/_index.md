@@ -77,7 +77,7 @@ draft: false
 
 ## تحقق مما إذا كان ملف PDF موقعًا باستخدام توقيع
 
-للتحقق مما إذا كان ملف PDF موقعًا باستخدام [توقيع معين](/pdf/net/working-with-signature-in-a-pdf-file/)، استخدم طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام اسم التوقيع هذا. من الممكن أيضًا التحقق من أن [ملف PDF موقع](/pdf/net/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
+للتحقق مما إذا كان ملف PDF موقعًا باستخدام [توقيع معين](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، استخدم طريقة VerifySigned من فئة [PdfFileSignature](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilesignature). تتطلب هذه الطريقة اسم التوقيع وتعيد true إذا كان ملف PDF موقعًا باستخدام اسم التوقيع هذا. من الممكن أيضًا التحقق من أن [ملف PDF موقع](/pdf/ar/net/working-with-signature-in-a-pdf-file/)، دون التحقق من التوقيع الذي تم التوقيع به.
 
 ### التحقق من أن ملف PDF موقع بتوقيع معين
 

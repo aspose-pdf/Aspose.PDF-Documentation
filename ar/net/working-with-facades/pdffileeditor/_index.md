@@ -90,26 +90,26 @@ sitemap:
 
 يستكشف هذا القسم قدرات هذه الفئة ويشرح الغرض من طرقها.
 
-- [دمج مستندات PDF](/pdf/net/concatenate-pdf-documents/)
-- [استخراج صفحات PDF](/pdf/net/extract-pdf-pages/)
-- [إدراج صفحات PDF](/pdf/net/insert-pdf-pages/)
-- [حذف صفحات PDF](/pdf/net/delete-pdf-pages/)
+- [دمج مستندات PDF](/pdf/ar/net/concatenate-pdf-documents/)
+- [استخراج صفحات PDF](/pdf/ar/net/extract-pdf-pages/)
+- [إدراج صفحات PDF](/pdf/ar/net/insert-pdf-pages/)
+- [حذف صفحات PDF](/pdf/ar/net/delete-pdf-pages/)
 
 ## استخدام فواصل الصفحات
 
 فاصل الصفحة هو ميزة خاصة تسمح بإعادة تدفق المستند.
 
-- [فاصل الصفحة في PDF موجود](/pdf/net/page-break-in-existing-pdf/)
+- [فاصل الصفحة في PDF موجود](/pdf/ar/net/page-break-in-existing-pdf/)
 
 ## فرض PDF
 
 الفرض هو عملية ترتيب الصفحات بشكل صحيح قبل الطباعة. توفر `PdfFileEditor` طريقتين لهذا الغرض وهما `MakeBooklet` و `MakeNUp`. تساعد طريقة MakeBooklet في ترتيب الصفحات بحيث سيكون من السهل طيها أو ربطها بعد الطباعة، ومع ذلك، تسمح طريقة MakeNUp بطباعة صفحات متعددة على صفحة واحدة من ملف PDF.
 
-- [إنشاء كتيب من PDF](/pdf/net/make-booklet-of-pdf/)
-- [إنشاء NUp من ملفات PDF](/pdf/net/make-nup-of-pdf-files/)
+- [إنشاء كتيب من PDF](/pdf/ar/net/make-booklet-of-pdf/)
+- [إنشاء NUp من ملفات PDF](/pdf/ar/net/make-nup-of-pdf-files/)
 
 ## التقسيم
 
 تتيح ميزة التقسيم لك تقسيم ملف PDF موجود إلى أجزاء مختلفة. يمكنك إما تقسيم الجزء الأمامي من ملف PDF أو الجزء الخلفي. حيث توفر PdfFileEditor مجموعة متنوعة من الطرق لأغراض التقسيم، يمكنك أيضًا تقسيم ملف إلى صفحات فردية أو مجموعات متعددة من الصفحات.
 
-- [تقسيم صفحات PDF](/pdf/net/split-pdf-pages/)
+- [تقسيم صفحات PDF](/pdf/ar/net/split-pdf-pages/)

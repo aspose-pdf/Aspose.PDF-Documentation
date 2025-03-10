@@ -81,7 +81,7 @@ lastmod: "2022-02-17"
 - يقوم ImagePlacementAbsorber بأداء بحث عن استخدام الصورة مثل مجموعة كائنات ImagePlacement.
 - يوفر ImagePlacement الأعضاء Resolution و Rectangle التي تعيد قيم وضع الصورة الفعلية.
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -92,7 +92,7 @@ sitemap:
 
 النهج لإضافة التعليق هو نمطي لأي منها.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 1. تحميل ملف PDF أو إنشاء جديد بواسطة [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document).
 1. إنشاء التعليق الجديد وتعيين المعلمات (مستطيل جديد، نقطة جديدة، عنوان، لون، عرض، إلخ).

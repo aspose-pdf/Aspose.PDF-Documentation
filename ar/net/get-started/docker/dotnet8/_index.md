@@ -97,9 +97,9 @@ sitemap:
 
 ### إنشاء مستند PDF باستخدام تطبيق ASP.NET Core Web في حاوية Linux
 
-سنستخدم الكود من **المثال المعقد** في هذا التطبيق. يرجى اتباع [هذا الرابط](/pdf/net/complex-pdf-example/) لمزيد من الشرح التفصيلي.
+سنستخدم الكود من **المثال المعقد** في هذا التطبيق. يرجى اتباع [هذا الرابط](/pdf/ar/net/complex-pdf-example/) لمزيد من الشرح التفصيلي.
 
-1. أنشئ مجلد `images` في مجلد `wwwroot` وضع الصورة `logo.png`. يمكنك تنزيل هذه الصورة من [هنا](/pdf/net/docker/logo.png).
+1. أنشئ مجلد `images` في مجلد `wwwroot` وضع الصورة `logo.png`. يمكنك تنزيل هذه الصورة من [هنا](/pdf/ar/net/docker/logo.png).
 1. أنشئ مجلد `fonts` في مجلد `wwwroot` وضع خطوط [Roboto](https://fonts.google.com/specimen/Roboto) هناك.
 1. أنشئ مجلد `samples` في مجلد `wwwroot` وضع بيانات العينة هناك.
 1. استبدل الكود في `HomeController.cs` بالمقتطف التالي (يرجى ملاحظة أنه يمكنك أن يكون لديك مساحة أسماء أخرى):

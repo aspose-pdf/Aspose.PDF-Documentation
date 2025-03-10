@@ -77,7 +77,7 @@ description: استكشف كيفية استخدام Aspose.PDF for .NET في ت�
 
 ## المتطلبات الأساسية يرجى تسجيل Aspose.PDF for .NET مع COM Interop، يرجى مراجعة المقالة المسماة
 
-[استخدام Aspose.pdf لـ .NET عبر COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/).
+[استخدام Aspose.pdf لـ .NET عبر COM Interop](/pdf/ar/net/use-aspose-pdf-for-net-via-com-interop/).
 
 {{% /alert %}}
 

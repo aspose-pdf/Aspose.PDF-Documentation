@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** يسمح بإضافة علامات مائية إلى مستند PDF الخاص بك باستخدام العناصر. يرجى مراجعة هذه المقالة لحل مهمتك.
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تسمى العلامة المائية التي تم إنشاؤها باستخدام Adobe Acrobat عنصرًا (كما هو موضح في 14.8.2.2 المحتوى الحقيقي والعناصر في مواصفات PDF). للعمل مع العناصر، تحتوي Aspose.PDF على فئتين: [Artifact](https://reference.aspose.com/pdf/net/aspose.pdf/artifact) و [ArtifactCollection](https://reference.aspose.com/pdf/net/aspose.pdf/artifactcollection).
 

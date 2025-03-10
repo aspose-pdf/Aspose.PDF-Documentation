@@ -87,7 +87,7 @@ sitemap:
 
 الكود أدناه ينتج عنه المحفظة التالية.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ### محفظة PDF تم إنشاؤها باستخدام Aspose.PDF
 

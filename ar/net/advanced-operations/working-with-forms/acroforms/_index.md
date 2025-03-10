@@ -100,14 +100,14 @@ sitemap:
 
 للتعلم بشكل أكثر تفصيلًا عن قدرات مكتبة Java، راجع المقالات التالية:
 
-- [إنشاء AcroForm](/pdf/net/create-form) - إنشاء نموذج من الصفر باستخدام C#.
-- [ملء AcroForm](/pdf/net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
-- [استخراج AcroForm](/pdf/net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
-- [تعديل AcroForm](/pdf/net/modifing-form) - الحصول على أو تعيين FieldLimit، تعيين خط حقل النموذج وما إلى ذلك.
-- [نشر بيانات AcroForm](/pdf/net/posting-acroform-data/) - استيراد وتصدير بيانات النموذج إلى ملف XML.
-- [استيراد وتصدير البيانات](/pdf/net/import-and-export-data/) - استيراد وتصدير البيانات باستخدام فئة النموذج.
-- [إزالة النماذج من PDF](/pdf/net/remove-form/) - إزالة النص بناءً على النوع الفرعي/النموذج، حذف جميع النماذج.
-- [استيراد وتصدير البيانات بتنسيق JSON](/pdf/net/import-export-json/) - استيراد وتصدير البيانات باستخدام JSON
+- [إنشاء AcroForm](/pdf/ar/net/create-form) - إنشاء نموذج من الصفر باستخدام C#.
+- [ملء AcroForm](/pdf/ar/net/fill-form) - ملء حقل النموذج في مستند PDF الخاص بك.
+- [استخراج AcroForm](/pdf/ar/net/extract-form) - الحصول على قيمة من جميع الحقول أو حقل فردي من مستند PDF.
+- [تعديل AcroForm](/pdf/ar/net/modifing-form) - الحصول على أو تعيين FieldLimit، تعيين خط حقل النموذج وما إلى ذلك.
+- [نشر بيانات AcroForm](/pdf/ar/net/posting-acroform-data/) - استيراد وتصدير بيانات النموذج إلى ملف XML.
+- [استيراد وتصدير البيانات](/pdf/ar/net/import-and-export-data/) - استيراد وتصدير البيانات باستخدام فئة النموذج.
+- [إزالة النماذج من PDF](/pdf/ar/net/remove-form/) - إزالة النص بناءً على النوع الفرعي/النموذج، حذف جميع النماذج.
+- [استيراد وتصدير البيانات بتنسيق JSON](/pdf/ar/net/import-export-json/) - استيراد وتصدير البيانات باستخدام JSON
 
 <script type="application/ld+json">
 {

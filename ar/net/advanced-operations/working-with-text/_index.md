@@ -83,14 +83,14 @@ sitemap:
 
  يمكنك القيام بما يلي:
 
-- [إضافة نص إلى ملف PDF](/pdf/net/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام خطوط من التدفق والملفات، إضافة سلسلة HTML، إضافة رابط، إلخ.
-- [تلميح PDF](/pdf/net/pdf-tooltip/) - يمكنك إضافة تلميح إلى النص الذي تم البحث عنه عن طريق إضافة زر غير مرئي باستخدام C#.
-- [تنسيق النص داخل PDF](/pdf/net/text-formatting-inside-pdf/) - العديد من الميزات يمكنك إضافتها إلى مستندك عند تنسيق النص داخله. إضافة مسافة بادئة، إضافة حدود للنص، إضافة نص تحت الخط، إضافة تغذية سطر جديد باستخدام مكتبة Aspose.PDF.
-- [استخدام FloatingBox](/pdf/net/floating-box/) - أداة Floating Box هي أداة خاصة لوضع النص ومحتويات أخرى على صفحة PDF.
-- [استبدال النص في PDF](/pdf/net/replace-text-in-pdf/) - لاستبدال النص في جميع صفحات مستند PDF. تحتاج أولاً إلى استخدام TextFragmentAbsorber.
-- [تدوير النص داخل PDF](/pdf/net/rotate-text-inside-pdf/) - تدوير النص داخل PDF باستخدام خاصية الدوران من فئة TextFragment.
-- [البحث والحصول على نص من صفحات مستند PDF](/pdf/net/search-and-get-text-from-pdf/) - يمكنك استخدام فئة TextFragmentAbsorber للبحث والحصول على نص من الصفحات.
-- [تحديد فواصل الأسطر](/pdf/net/determine-line-break/) - يشرح هذا الموضوع كيفية تتبع فواصل الأسطر لقطع النص متعددة الأسطر.
+- [إضافة نص إلى ملف PDF](/pdf/ar/net/add-text-to-pdf-file/) - إضافة نص إلى PDF الخاص بك، استخدام خطوط من التدفق والملفات، إضافة سلسلة HTML، إضافة رابط، إلخ.
+- [تلميح PDF](/pdf/ar/net/pdf-tooltip/) - يمكنك إضافة تلميح إلى النص الذي تم البحث عنه عن طريق إضافة زر غير مرئي باستخدام C#.
+- [تنسيق النص داخل PDF](/pdf/ar/net/text-formatting-inside-pdf/) - العديد من الميزات يمكنك إضافتها إلى مستندك عند تنسيق النص داخله. إضافة مسافة بادئة، إضافة حدود للنص، إضافة نص تحت الخط، إضافة تغذية سطر جديد باستخدام مكتبة Aspose.PDF.
+- [استخدام FloatingBox](/pdf/ar/net/floating-box/) - أداة Floating Box هي أداة خاصة لوضع النص ومحتويات أخرى على صفحة PDF.
+- [استبدال النص في PDF](/pdf/ar/net/replace-text-in-pdf/) - لاستبدال النص في جميع صفحات مستند PDF. تحتاج أولاً إلى استخدام TextFragmentAbsorber.
+- [تدوير النص داخل PDF](/pdf/ar/net/rotate-text-inside-pdf/) - تدوير النص داخل PDF باستخدام خاصية الدوران من فئة TextFragment.
+- [البحث والحصول على نص من صفحات مستند PDF](/pdf/ar/net/search-and-get-text-from-pdf/) - يمكنك استخدام فئة TextFragmentAbsorber للبحث والحصول على نص من الصفحات.
+- [تحديد فواصل الأسطر](/pdf/ar/net/determine-line-break/) - يشرح هذا الموضوع كيفية تتبع فواصل الأسطر لقطع النص متعددة الأسطر.
 
 <script type="application/ld+json">
 {

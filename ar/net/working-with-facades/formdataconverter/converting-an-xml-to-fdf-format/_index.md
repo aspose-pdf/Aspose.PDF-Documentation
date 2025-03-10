@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-تدعم مساحة [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) النماذج بشكل جيد. كما أنها تدعم استيراد وتصدير بيانات النماذج إلى تنسيقات ملفات مختلفة مثل FDF و XFDF و XML. ومع ذلك، يحتاج المطور أحيانًا إلى تحويل تنسيق إلى آخر. في هذه المقالة، سننظر في الميزة التي تتيح لنا تحويل تنسيق FDF إلى XML.
+تدعم مساحة [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) النماذج بشكل جيد. كما أنها تدعم استيراد وتصدير بيانات النماذج إلى تنسيقات ملفات مختلفة مثل FDF و XFDF و XML. ومع ذلك، يحتاج المطور أحيانًا إلى تحويل تنسيق إلى آخر. في هذه المقالة، سننظر في الميزة التي تتيح لنا تحويل تنسيق FDF إلى XML.
 
 {{% /alert %}}
 

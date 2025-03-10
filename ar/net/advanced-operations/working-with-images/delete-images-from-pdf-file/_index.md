@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 لحذف صورة من ملف PDF:
 

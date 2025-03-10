@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [إضافة الصور والنصوص باستخدام فئة PdfFileMend](/pdf/net/adding-images-and-text-using-pdffilemend-class/)
+- [إضافة الصور والنصوص باستخدام فئة PdfFileMend](/pdf/ar/net/adding-images-and-text-using-pdffilemend-class/)

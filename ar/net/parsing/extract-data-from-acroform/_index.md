@@ -84,7 +84,7 @@ sitemap:
 
 في كود المثال أدناه، نوضح كيفية التكرار عبر كل صفحة في ملف PDF لاستخراج معلومات حول جميع AcroForm في PDF بالإضافة إلى قيم حقول النموذج. يفترض هذا الكود أن لديك معرفة مسبقة بأسماء حقول النموذج.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractFormFields()
 
 ## استخراج حقول النموذج من مستند PDF إلى JSON
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -138,7 +138,7 @@ private static void ExtractFormFieldsToJson()
 
 تسمح لك فئة Form بتصدير البيانات إلى ملف XML من ملف PDF باستخدام طريقة ExportXml. لتصدير البيانات إلى XML، تحتاج إلى إنشاء كائن من فئة Form ثم استدعاء طريقة ExportXml باستخدام كائن FileStream. أخيرًا، يمكنك إغلاق كائن FileStream والتخلص من كائن Form. توضح مقتطفات الكود التالية كيفية تصدير البيانات إلى ملف XML.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -167,7 +167,7 @@ private static void ExportFormDataToXml()
 
 تسمح لك فئة Form بتصدير البيانات إلى ملف FDF من ملف PDF باستخدام طريقة ExportFdf. لتصدير البيانات إلى FDF، تحتاج إلى إنشاء كائن من فئة Form ثم استدعاء طريقة ExportFdf باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام طريقة Save من فئة Form. توضح مقتطفات الكود التالية كيفية تصدير البيانات إلى ملف FDF.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -199,7 +199,7 @@ private static void ExportDataToPdf()
 
 تسمح لك فئة Form بتصدير البيانات إلى ملف XFDF من ملف PDF باستخدام طريقة ExportXfdf. لتصدير البيانات إلى XFDF، تحتاج إلى إنشاء كائن من فئة Form ثم استدعاء طريقة ExportXfdf باستخدام كائن FileStream. أخيرًا، يمكنك حفظ ملف PDF باستخدام طريقة Save من فئة Form. توضح مقتطفات الكود التالية كيفية تصدير البيانات إلى ملف XFDF.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

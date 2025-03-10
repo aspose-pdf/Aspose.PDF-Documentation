@@ -81,11 +81,11 @@ sitemap:
 
 ## كيفية طباعة ملفات PDF بلغة C#
 
-- [طباعة PDF في .NET Framework](/pdf/net/printing-pdf-in-net-framework/)
-- [طباعة PDF إلى طابعة XPS (واجهات)](/pdf/net/printing-pdf-to-an-xps-printer-facades/)
-- [تحويل PDF إلى PostScript، التحقق من حالة مهمة الطباعة](/pdf/net/pdf-to-postscript-conversion/)
-- [طباعة PDF في .NET Core](/pdf/net/print-dotnetcore/)
-- [طباعة مستند PDF في تطبيق WPF](/pdf/net/print-pdf-document-in-wpf-application/)
+- [طباعة PDF في .NET Framework](/pdf/ar/net/printing-pdf-in-net-framework/)
+- [طباعة PDF إلى طابعة XPS (واجهات)](/pdf/ar/net/printing-pdf-to-an-xps-printer-facades/)
+- [تحويل PDF إلى PostScript، التحقق من حالة مهمة الطباعة](/pdf/ar/net/pdf-to-postscript-conversion/)
+- [طباعة PDF في .NET Core](/pdf/ar/net/print-dotnetcore/)
+- [طباعة مستند PDF في تطبيق WPF](/pdf/ar/net/print-pdf-document-in-wpf-application/)
 
 <script type="application/ld+json">
 {

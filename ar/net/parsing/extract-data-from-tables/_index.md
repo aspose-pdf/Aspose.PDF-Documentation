@@ -90,7 +90,7 @@ Aspose.PDF for .NET لديها أداة لتسهيل استرجاع الجداو
 1. `TableList` هو قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable). للحصول على البيانات، قم بالتكرار عبر `TableList` وتعامل مع [RowList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedtable/properties/rowlist) و [CellList](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedrow/properties/celllist).
 1. كل [AbsorbedCell](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell) يحتوي على مجموعة من [TextFragments](https://reference.aspose.com/pdf/net/aspose.pdf.text/absorbedcell/properties/textfragments). يمكنك معالجتها لأغراضك الخاصة.
 
-تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تظهر المثال التالي استخراج الجدول من جميع الصفحات:
 
@@ -139,7 +139,7 @@ private static void ExtractTable()
 
 إذا كنت بحاجة إلى استخراج الجداول الموجودة في منطقة محددة، يجب عليك العمل مع إحداثيات محددة.
 
-تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تظهر المثال التالي كيفية استخراج الجدول المميز بتعليق مربع:
 
@@ -197,9 +197,9 @@ private static void ExtractMarkedTable()
 ## استخراج بيانات الجدول من PDF وتخزينها في ملف CSV
 
 تظهر المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV.
-لرؤية كيفية تحويل PDF إلى جدول بيانات Excel، يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/net/convert-pdf-to-excel/).
+لرؤية كيفية تحويل PDF إلى جدول بيانات Excel، يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/ar/net/convert-pdf-to-excel/).
 
-تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل الشيفرة البرمجية التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

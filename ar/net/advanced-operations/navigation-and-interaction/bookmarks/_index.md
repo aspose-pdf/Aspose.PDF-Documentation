@@ -82,8 +82,8 @@ sitemap:
 تعتبر العلامات المرجعية في PDF أداة مفيدة وأساسية عند قراءة ملفات PDF. تتيح للمستخدمين القفز بسرعة إلى أماكن أخرى في مستند PDF، والتنقل عبر الصفحات، وعرض محتويات PDF بسرعة، تمامًا مثل جدول المحتويات.
 في هذا القسم، ستتعلم كيفية:
 
-- [إضافة وحذف علامة مرجعية](/pdf/net/add-and-delete-bookmark/)
-- [الحصول على، تحديث وتوسيع علامة مرجعية](/pdf/net/get-update-and-expand-bookmark/)
+- [إضافة وحذف علامة مرجعية](/pdf/ar/net/add-and-delete-bookmark/)
+- [الحصول على، تحديث وتوسيع علامة مرجعية](/pdf/ar/net/get-update-and-expand-bookmark/)
 
 <script type="application/ld+json">
 {

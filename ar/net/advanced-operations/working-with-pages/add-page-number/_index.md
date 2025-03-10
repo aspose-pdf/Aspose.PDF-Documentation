@@ -82,7 +82,7 @@ sitemap:
 يجب أن تحتوي جميع المستندات على أرقام صفحات. رقم الصفحة يسهل على القارئ تحديد أجزاء مختلفة من المستند.
 **Aspose.PDF for .NET** يتيح لك إضافة أرقام الصفحات باستخدام PageNumberStamp.
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمكنك استخدام فئة [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) لإضافة ختم رقم الصفحة في ملف PDF. توفر فئة [PageNumber Stamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) الخصائص اللازمة لإنشاء ختم يعتمد على رقم الصفحة مثل التنسيق، الهوامش، المحاذاة، الرقم الابتدائي، إلخ. لإضافة ختم رقم الصفحة، تحتاج إلى إنشاء كائن [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) وكائن [PageNumberStamp](https://reference.aspose.com/pdf/net/aspose.pdf/pagenumberstamp) باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة [AddStamp](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/addstamp) من [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) لإضافة الختم في PDF. يمكنك أيضًا تعيين سمات الخط لختم رقم الصفحة. يوضح لك مقتطف الشيفرة التالي كيفية إضافة أرقام الصفحات في ملف PDF.
 

@@ -78,8 +78,8 @@ sitemap:
 }
 </script>
 
-مثال [Hello, World](/pdf/net/hello-world-example/) أظهر خطوات بسيطة لإنشاء مستند PDF باستخدام C# وAspose.PDF. في هذه المقالة، سنلقي نظرة على إنشاء مستند أكثر تعقيدًا باستخدام C# وAspose.PDF for .NET. كمثال، سنأخذ مستندًا من شركة وهمية تعمل في خدمات عبّارات الركاب.
-سيحتوي مستندنا على صورة، وقطعتين نصيتين (عنوان وفقرة)، وجدول. لبناء مثل هذا المستند، سنستخدم نهج قائم على DOM. يمكنك قراءة المزيد في قسم [أساسيات واجهة برمجة تطبيقات DOM](/pdf/net/basics-of-dom-api/).
+مثال [Hello, World](/pdf/ar/net/hello-world-example/) أظهر خطوات بسيطة لإنشاء مستند PDF باستخدام C# وAspose.PDF. في هذه المقالة، سنلقي نظرة على إنشاء مستند أكثر تعقيدًا باستخدام C# وAspose.PDF for .NET. كمثال، سنأخذ مستندًا من شركة وهمية تعمل في خدمات عبّارات الركاب.
+سيحتوي مستندنا على صورة، وقطعتين نصيتين (عنوان وفقرة)، وجدول. لبناء مثل هذا المستند، سنستخدم نهج قائم على DOM. يمكنك قراءة المزيد في قسم [أساسيات واجهة برمجة تطبيقات DOM](/pdf/ar/net/basics-of-dom-api/).
 
 إذا قمنا بإنشاء مستند من الصفر، نحتاج إلى اتباع خطوات معينة:
 
@@ -94,7 +94,7 @@ sitemap:
 1. إضافة (الجدول) إلى [Paragraphs](https://reference.aspose.com/pdf/net/aspose.pdf/page/properties/paragraphs) الصفحة.
 1. حفظ المستند "Complex.pdf".
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [العمل مع طباعة PDF - الواجهات](/pdf/net/working-with-pdf-printing-facades/)
+- [العمل مع طباعة PDF - الواجهات](/pdf/ar/net/working-with-pdf-printing-facades/)

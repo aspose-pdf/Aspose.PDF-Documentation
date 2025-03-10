@@ -80,9 +80,9 @@ sitemap:
 
 XML (لغة الترميز القابلة للتوسيع) هي وسيلة لإعادة استخدام البيانات في ملف أو أتمتة عملية استبدال البيانات في ملف ببيانات من ملف آخر. إنشاء مخطط XML من الصعب الحصول عليه بشكل صحيح؛ إنشاء عدة مخططات متداخلة يمكن توسيعها أصعب بكثير. دعونا نتعلم كيف تتعامل Aspose.PDF مع مهام العمل مع XML.
 
-- [مخطط XML المدعوم](/pdf/net/supported-xml-schema/) - استخدم مخطط XML التالي للعمل مع مستندات XML.
-- [مثال بسيط "مرحبا بالعالم" يعتمد على XML و XSLT](/pdf/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - استخدم XSLT لتحويل مستند XML الحالي إلى PDF.
-- [إنشاء PDF من XML](/pdf/net/generate-pdf-from-xml/) - تحتوي Aspose.PDF على عدة طرق لإنشاء PDF بناءً على مستند XML.
+- [مخطط XML المدعوم](/pdf/ar/net/supported-xml-schema/) - استخدم مخطط XML التالي للعمل مع مستندات XML.
+- [مثال بسيط "مرحبا بالعالم" يعتمد على XML و XSLT](/pdf/ar/net/create-a-hello-world-pdf-document-through-xml-and-xslt/) - استخدم XSLT لتحويل مستند XML الحالي إلى PDF.
+- [إنشاء PDF من XML](/pdf/ar/net/generate-pdf-from-xml/) - تحتوي Aspose.PDF على عدة طرق لإنشاء PDF بناءً على مستند XML.
 
 <script type="application/ld+json">
 {

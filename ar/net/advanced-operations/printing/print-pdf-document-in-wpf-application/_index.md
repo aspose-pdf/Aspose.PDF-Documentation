@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-تعمل عينة الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
+تعمل عينة الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## الطباعة المباشرة
 

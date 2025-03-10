@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 يسمح لك ImagePlacementAbsorber بالبحث بين الصور في جميع الصفحات في مستند PDF.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 للبحث في مستند كامل عن الصور:
 

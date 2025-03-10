@@ -80,7 +80,7 @@ sitemap:
 
 في حال كنت ترغب في الحصول على جميع الخطوط من مستند PDF، يمكنك استخدام طريقة FontUtilities.GetAllFonts() المقدمة في فئة Document. يرجى مراجعة مقتطف الكود التالي للحصول على جميع الخطوط من مستند PDF موجود:
 
-مقتطف الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+مقتطف الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

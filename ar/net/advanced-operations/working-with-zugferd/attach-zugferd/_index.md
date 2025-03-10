@@ -80,7 +80,7 @@ sitemap:
 
 ## إرفاق ZUGFeRD إلى PDF
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 نوصي باتباع الخطوات التالية لإرفاق ZUGFeRD إلى PDF:
 

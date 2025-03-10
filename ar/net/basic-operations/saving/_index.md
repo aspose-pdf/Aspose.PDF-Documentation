@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.Drawing](/pdf/net/drawing/) .
+الشفرة البرمجية التالية تعمل أيضًا مع مكتبة [Aspose.Drawing](/pdf/ar/net/drawing/) .
 
 ## حفظ مستند PDF في نظام الملفات
 
@@ -125,7 +125,7 @@ private static void SaveDocumentStream()
 }
 ```
 
-للحصول على شرح أكثر تفصيلاً، يرجى الانتقال إلى قسم [Showcase](/pdf/net/showcases/) .
+للحصول على شرح أكثر تفصيلاً، يرجى الانتقال إلى قسم [Showcase](/pdf/ar/net/showcases/) .
 
 ## حفظ تنسيق PDF/A أو PDF/X
 

@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 من الممكن تعيين حجم صورة تتم إضافتها إلى ملف PDF. لتعيين الحجم، يمكنك استخدام خصائص FixWidth و FixHeight من فئة Aspose.Pdf.Image. يوضح مقتطف الشيفرة التالي كيفية تعيين حجم صورة:
 

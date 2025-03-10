@@ -85,13 +85,13 @@ sitemap:
 
 لقد جمعنا الأنواع المختلفة من التعليقات التوضيحية المتاحة لمكتبة Aspose.PDF for .NET في مجموعات:
 
-- [تعليق نص PDF](/pdf/net/text-annotation/)
-- [تعليق تمييز PDF](/pdf/net/highlights-annotation/)
-- [تعليق أشكال PDF](/pdf/net/figures-annotation/)
-- [تعليق وسائط متعددة](/pdf/net/multimedia-annotation/)
-- [تعليقات PDF اللاصقة](/pdf/net/sticky-annotations/)
-- [تعليقات الروابط](/pdf/net/link-annotations/)
-- [تعليقات إضافية](/pdf/net/extra-annotations/)
+- [تعليق نص PDF](/pdf/ar/net/text-annotation/)
+- [تعليق تمييز PDF](/pdf/ar/net/highlights-annotation/)
+- [تعليق أشكال PDF](/pdf/ar/net/figures-annotation/)
+- [تعليق وسائط متعددة](/pdf/ar/net/multimedia-annotation/)
+- [تعليقات PDF اللاصقة](/pdf/ar/net/sticky-annotations/)
+- [تعليقات الروابط](/pdf/ar/net/link-annotations/)
+- [تعليقات إضافية](/pdf/ar/net/extra-annotations/)
 
 <script type="application/ld+json">
 {

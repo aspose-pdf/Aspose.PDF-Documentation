@@ -83,28 +83,28 @@ sitemap:
 
 |**نوع التعليق**|**الوصف**|**.NET Framework**|**.NET Core**|
 | :- | :- | :- | :- |
-|[Text](/pdf/net/text-annotation/)|تعليق نصي|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[Link](/pdf/net/extra-annotations/)|تعليقات روابط|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
-|[FreeText](/pdf/net/text-annotation/)|(PDF 1.3) تعليق نص حر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Line](/pdf/net/figures-annotation/)|(PDF 1.3) تعليق خط|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Square](/pdf/net/figures-annotation/)|(PDF 1.3) تعليق مربع|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Circle](/pdf/net/figures-annotation/)|(PDF 1.3) تعليق دائرة|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Polygon](/pdf/net/figures-annotation/)|(PDF 1.5) تعليق مضلع|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[PolyLine](/pdf/net/figures-annotation/)|(PDF 1.5) تعليق خط متعرج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Highlight](/pdf/net/highlights-annotation/)|(PDF 1.3) تعليق تظليل|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Underline](/pdf/net/highlights-annotation/)|(PDF 1.3) تعليق خط تحت|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Squiggly](/pdf/net/highlights-annotation/)|(PDF 1.4) تعليق خط متعرج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[StrikeOut](/pdf/net/highlights-annotation/)|(PDF 1.3) تعليق شطب|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Stamp](/pdf/net/stamping/)|(PDF 1.3) تعليق ختم مطاطي|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Caret](/pdf/net/extra-annotations/)|(PDF 1.5) تعليق مؤشر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Ink](/pdf/net/figures-annotation/)|(PDF 1.3) تعليق حبر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Popup](/pdf/net/text-annotation/)|(PDF 1.3) تعليق منبثق|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Sound](/pdf/net/multimedia-annotation/)|(PDF 1.2) تعليق صوتي|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Movie](/pdf/net/multimedia-annotation/)|(PDF 1.2) تعليق فيلم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Widget](/pdf/net/multimedia-annotation/)|(PDF 1.2) تعليق عنصر واجهة المستخدم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Screen](/pdf/net/multimedia-annotation/)|(PDF 1.5) تعليق شاشة|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Watermark](/pdf/net/sticky-annotations/)|(PDF 1.6) تعليق علامة مائية|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Redact](/pdf/net/extra-annotations/)|(PDF 1.7) تعليق حذف|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Text](/pdf/ar/net/text-annotation/)|تعليق نصي|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[Link](/pdf/ar/net/extra-annotations/)|تعليقات روابط|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
+|[FreeText](/pdf/ar/net/text-annotation/)|(PDF 1.3) تعليق نص حر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Line](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق خط|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Square](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق مربع|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Circle](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق دائرة|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Polygon](/pdf/ar/net/figures-annotation/)|(PDF 1.5) تعليق مضلع|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[PolyLine](/pdf/ar/net/figures-annotation/)|(PDF 1.5) تعليق خط متعرج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Highlight](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق تظليل|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Underline](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق خط تحت|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Squiggly](/pdf/ar/net/highlights-annotation/)|(PDF 1.4) تعليق خط متعرج|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[StrikeOut](/pdf/ar/net/highlights-annotation/)|(PDF 1.3) تعليق شطب|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Stamp](/pdf/ar/net/stamping/)|(PDF 1.3) تعليق ختم مطاطي|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Caret](/pdf/ar/net/extra-annotations/)|(PDF 1.5) تعليق مؤشر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Ink](/pdf/ar/net/figures-annotation/)|(PDF 1.3) تعليق حبر|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Popup](/pdf/ar/net/text-annotation/)|(PDF 1.3) تعليق منبثق|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Sound](/pdf/ar/net/multimedia-annotation/)|(PDF 1.2) تعليق صوتي|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Movie](/pdf/ar/net/multimedia-annotation/)|(PDF 1.2) تعليق فيلم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Widget](/pdf/ar/net/multimedia-annotation/)|(PDF 1.2) تعليق عنصر واجهة المستخدم|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Screen](/pdf/ar/net/multimedia-annotation/)|(PDF 1.5) تعليق شاشة|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Watermark](/pdf/ar/net/sticky-annotations/)|(PDF 1.6) تعليق علامة مائية|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Redact](/pdf/ar/net/extra-annotations/)|(PDF 1.7) تعليق حذف|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 
 <script type="application/ld+json">
 {

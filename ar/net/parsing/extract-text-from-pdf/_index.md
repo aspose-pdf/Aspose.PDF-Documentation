@@ -14,6 +14,6 @@ sitemap:
 ---
 ## المقالات في هذا القسم
 
-- [استخراج النص من PDF](/pdf/net/extract-text-from-all-pdf/)
-- [استخراج الفقرة من PDF](/pdf/net/extract-paragraph-from-pdf/)
-- [استخراج النصوص العلوية والسفلية من PDF](/pdf/net/extract-superscripts-subscripts-from-pdf/)
+- [استخراج النص من PDF](/pdf/ar/net/extract-text-from-all-pdf/)
+- [استخراج الفقرة من PDF](/pdf/ar/net/extract-paragraph-from-pdf/)
+- [استخراج النصوص العلوية والسفلية من PDF](/pdf/ar/net/extract-superscripts-subscripts-from-pdf/)

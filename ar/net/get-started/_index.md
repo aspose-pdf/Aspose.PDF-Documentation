@@ -83,24 +83,24 @@ sitemap:
 
 للعثور على مزيد من المعلومات حول Aspose.PDF، اختر القسم المناسب:
 
-- [لماذا Aspose.PDF](/pdf/net/why-aspose-pdf/) – يصف الأسباب التي قد تجعل من الأفضل استخدام منتجات Aspose بدلاً من المنتجات الأخرى، مثل أتمتة Microsoft Office أو Open XML SDK.
-- [التثبيت](/pdf/net/installation/) – يوفر معلومات حول كيفية تثبيت Aspose.PDF.
-- [متطلبات النظام](/pdf/net/system-requirements/) – يوفر معلومات حول متطلبات النظام وبيئة التطوير.
-- [مرحبا بالعالم](/pdf/net/hello-world-example/) – يوفر معلومات حول كيفية إنشاء مستند PDF بسيط باستخدام C# و Aspose.PDF.
-- [كيفية تشغيل الأمثلة](/pdf/net/how-to-run-other-examples/) – يصف كيفية تنزيل وتشغيل الأمثلة وما هي متطلبات البرمجيات.
-- [PDF المعقد](/pdf/net/complex-pdf-example/) – يصف كيفية إنشاء مستند أكثر تعقيدًا باستخدام مكتبة C#.
-- [تنسيقات المستندات المدعومة](/pdf/net/supported-file-formats/) – يوفر معلومات حول التنسيقات المدعومة.
-- [الميزات المدعومة](/pdf/net/key-features/) – يوفر معلومات حول الميزات المدعومة عند تحميل أو حفظ مستند بتنسيقات مختلفة.
-- [التراخيص والاشتراكات](/pdf/net/licensing/) – يوفر معلومات حول تطبيق ترخيص واستخدام عدة منتجات من Aspose.
-- [الدعم الفني](/pdf/net/technical-support/) – تقدم هذه الصفحة توصيات سريعة وعالية الجودة لحل مهامك.
-- [كيفية تشغيل Aspose.PDF في Docker](/pdf/net/docker/) – يوفر معلومات حول كيفية استخدام Aspose.PDF في حاوية Docker.
-- [نظرة عامة على Aspose.PDF.Drawing لـ .NET](/pdf/net/drawing/) – يوفر معلومات حول كيفية استخدام مكتبة Aspose.Drawing بدلاً من System.Drawing.
-- [أساسيات واجهة برمجة التطبيقات DOM لـ Aspose.PDF](/pdf/net/basics-of-dom-api/) – سيظهر هذا القسم ميزات العمل مع DOM، شكل تقديم المستندات المهيكلة كنموذج كائن موجه.
-- [الميزات المتقدمة](/pdf/net/advanced-features/) – سيظهر هذا القسم الميزات المتقدمة للعمل مع PDF.
+- [لماذا Aspose.PDF](/pdf/ar/net/why-aspose-pdf/) – يصف الأسباب التي قد تجعل من الأفضل استخدام منتجات Aspose بدلاً من المنتجات الأخرى، مثل أتمتة Microsoft Office أو Open XML SDK.
+- [التثبيت](/pdf/ar/net/installation/) – يوفر معلومات حول كيفية تثبيت Aspose.PDF.
+- [متطلبات النظام](/pdf/ar/net/system-requirements/) – يوفر معلومات حول متطلبات النظام وبيئة التطوير.
+- [مرحبا بالعالم](/pdf/ar/net/hello-world-example/) – يوفر معلومات حول كيفية إنشاء مستند PDF بسيط باستخدام C# و Aspose.PDF.
+- [كيفية تشغيل الأمثلة](/pdf/ar/net/how-to-run-other-examples/) – يصف كيفية تنزيل وتشغيل الأمثلة وما هي متطلبات البرمجيات.
+- [PDF المعقد](/pdf/ar/net/complex-pdf-example/) – يصف كيفية إنشاء مستند أكثر تعقيدًا باستخدام مكتبة C#.
+- [تنسيقات المستندات المدعومة](/pdf/ar/net/supported-file-formats/) – يوفر معلومات حول التنسيقات المدعومة.
+- [الميزات المدعومة](/pdf/ar/net/key-features/) – يوفر معلومات حول الميزات المدعومة عند تحميل أو حفظ مستند بتنسيقات مختلفة.
+- [التراخيص والاشتراكات](/pdf/ar/net/licensing/) – يوفر معلومات حول تطبيق ترخيص واستخدام عدة منتجات من Aspose.
+- [الدعم الفني](/pdf/ar/net/technical-support/) – تقدم هذه الصفحة توصيات سريعة وعالية الجودة لحل مهامك.
+- [كيفية تشغيل Aspose.PDF في Docker](/pdf/ar/net/docker/) – يوفر معلومات حول كيفية استخدام Aspose.PDF في حاوية Docker.
+- [نظرة عامة على Aspose.PDF.Drawing لـ .NET](/pdf/ar/net/drawing/) – يوفر معلومات حول كيفية استخدام مكتبة Aspose.Drawing بدلاً من System.Drawing.
+- [أساسيات واجهة برمجة التطبيقات DOM لـ Aspose.PDF](/pdf/ar/net/basics-of-dom-api/) – سيظهر هذا القسم ميزات العمل مع DOM، شكل تقديم المستندات المهيكلة كنموذج كائن موجه.
+- [الميزات المتقدمة](/pdf/ar/net/advanced-features/) – سيظهر هذا القسم الميزات المتقدمة للعمل مع PDF.
 
 ## تعرف على المزيد حول
 
-- [أساسيات واجهة برمجة التطبيقات DOM](/pdf/net/basics-of-dom-api/)
-- ["مرحبا بالعالم" مثال C#](/pdf/net/hello-world-example/)
-- [PDF المعقد](/pdf/net/complex-pdf-example/)
-- [كيفية تشغيل أمثلة أخرى](/pdf/net/how-to-run-other-examples/)
+- [أساسيات واجهة برمجة التطبيقات DOM](/pdf/ar/net/basics-of-dom-api/)
+- ["مرحبا بالعالم" مثال C#](/pdf/ar/net/hello-world-example/)
+- [PDF المعقد](/pdf/ar/net/complex-pdf-example/)
+- [كيفية تشغيل أمثلة أخرى](/pdf/ar/net/how-to-run-other-examples/)

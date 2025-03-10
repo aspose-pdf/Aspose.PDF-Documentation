@@ -78,32 +78,32 @@ sitemap:
 }
 </script>
 
-**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجيًا، سواء كانت مستندات تم إنشاؤها باستخدام Aspose.PDF كما تم مناقشته في [العمليات الأساسية](/pdf/net/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
+**العمليات المتقدمة** هو قسم حول كيفية التعامل مع ملفات PDF الموجودة برمجيًا، سواء كانت مستندات تم إنشاؤها باستخدام Aspose.PDF كما تم مناقشته في [العمليات الأساسية](/pdf/ar/net/basic-operations/)، أو ملفات PDF تم إنشاؤها باستخدام Adobe Acrobat أو Google Docs أو Microsoft Office أو Open Office أو أي منتج PDF آخر.
 
 ستتعلم طرقًا مختلفة لـ:
 
-- [العمل مع المستندات](/pdf/net/working-with-documents/) - ضغط، تقسيم، ودمج المستندات وإجراء عمليات أخرى على المستند بالكامل.
-- [العمل مع الصفحات](/pdf/net/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة علامات مائية، طوابع.
-- [العمل مع النص](/pdf/net/working-with-text/) - إضافة، تنسيق، البحث واستبدال النص في PDF.
-- [العمل مع الصور](/pdf/net/working-with-images/) - إدراج، إزالة، استخراج الصور في المستند.
-- [العمل مع الجداول](/pdf/net/working-with-tables/) - إدراج، تزيين الجدول في PDF، استخراج البيانات الجدولية.
-- [العمل مع النماذج](/pdf/net/working-with-forms/) - التعامل مع مستندات PDF التفاعلية، إضافة حقول النموذج، استخراج البيانات.
-- [العمل مع الرسوم البيانية](/pdf/net/working-with-graphs/) - التلاعب بالأشكال على الصفحة.
-- [العمل مع XML](/pdf/net/working-with-xml) - بناء مستندات PDF بناءً على هيكل XML.
-- [العمل مع المشغلين](/pdf/net/working-with-operators/) - إجراء عمليات منخفضة المستوى في PDF.
-- [العمل مع الرسوميات المتجهة](/pdf/net/working-with-vector-graphics) - يصف ميزات العمل مع GraphicsAbsorber.
-- [العمل مع ZUGFeRD](/pdf/net/working-with-zugferd) - إنشاء فواتير PDF متوافقة مع ZUGFeRD.
-- [العمل مع Javascript](/pdf/net/working-with-javascript) - إضافة، إزالة كود Javascript في PDF.
-- [مقارنة مستندات PDF](/pdf/net/compare-pdf-documents/) - من الممكن مقارنة محتوى مستندات PDF.
-- [التنقل والتفاعل](/pdf/net/navigation-and-interaction/) - التعامل مع الإجراءات، العلامات، التنقل بين الصفحات.
-- [PDF AI Copilot](/pdf/net/ai-copilot/) - يسمح بمعالجة مستندات PDF باستخدام LLMs من مزودين مختلفين.
-- [التعليقات التوضيحية](/pdf/net/annotations/) - تسمح التعليقات التوضيحية للمستخدمين بإضافة محتوى مخصص على صفحات PDF. يمكنك إضافة، حذف وتعديل التعليق التوضيحي من مستندات PDF.
-- [الآثار](/pdf/net/artifacts/) - التعامل مع العلامات المائية وغيرها من الكائنات الخاصة في PDF.
-- [الوصول. PDF المعنون](/pdf/net/accessibility-tagged-pdf/) - التصنيف ضروري لوصول PDF. يسمح Aspose.PDF بإضافة علامات إلى PDF وتحديد ترتيب القراءة المنطقي وتوفير وسيلة للإشارة إلى الهيكل والنوع.
-- [المرفقات](/pdf/net/attachments/) - قد تحتوي مستندات PDF على مرفقات ملفات. يمكن أن تكون هذه المرفقات مستندات PDF أخرى، أو أي نوع من الملفات، مثل ملفات الصوت، مستندات Microsoft Office، إلخ. ستتعلم كيفية إضافة مرفقات إلى PDF، والحصول على معلومات عن مرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام C#.
-- [البيانات الوصفية في PDFs](/pdf/net/pdf-file-metadata/) - الحصول على أو تعيين البيانات الوصفية في المستندات، والتعامل مع بيانات XMP.
-- [تأمين وتوقيع](/pdf/net/securing-and-signing/) - حماية وتوقيع مستند PDF الخاص بك برمجيًا.
-- [طباعة المستند](/pdf/net/printing-document/) - طباعة PDFs في أنواع مختلفة من التطبيقات (WinForms، WPF، إلخ).
+- [العمل مع المستندات](/pdf/ar/net/working-with-documents/) - ضغط، تقسيم، ودمج المستندات وإجراء عمليات أخرى على المستند بالكامل.
+- [العمل مع الصفحات](/pdf/ar/net/working-with-pages/) - إضافة، نقل أو إزالة، قص الصفحات، إضافة علامات مائية، طوابع.
+- [العمل مع النص](/pdf/ar/net/working-with-text/) - إضافة، تنسيق، البحث واستبدال النص في PDF.
+- [العمل مع الصور](/pdf/ar/net/working-with-images/) - إدراج، إزالة، استخراج الصور في المستند.
+- [العمل مع الجداول](/pdf/ar/net/working-with-tables/) - إدراج، تزيين الجدول في PDF، استخراج البيانات الجدولية.
+- [العمل مع النماذج](/pdf/ar/net/working-with-forms/) - التعامل مع مستندات PDF التفاعلية، إضافة حقول النموذج، استخراج البيانات.
+- [العمل مع الرسوم البيانية](/pdf/ar/net/working-with-graphs/) - التلاعب بالأشكال على الصفحة.
+- [العمل مع XML](/pdf/ar/net/working-with-xml) - بناء مستندات PDF بناءً على هيكل XML.
+- [العمل مع المشغلين](/pdf/ar/net/working-with-operators/) - إجراء عمليات منخفضة المستوى في PDF.
+- [العمل مع الرسوميات المتجهة](/pdf/ar/net/working-with-vector-graphics) - يصف ميزات العمل مع GraphicsAbsorber.
+- [العمل مع ZUGFeRD](/pdf/ar/net/working-with-zugferd) - إنشاء فواتير PDF متوافقة مع ZUGFeRD.
+- [العمل مع Javascript](/pdf/ar/net/working-with-javascript) - إضافة، إزالة كود Javascript في PDF.
+- [مقارنة مستندات PDF](/pdf/ar/net/compare-pdf-documents/) - من الممكن مقارنة محتوى مستندات PDF.
+- [التنقل والتفاعل](/pdf/ar/net/navigation-and-interaction/) - التعامل مع الإجراءات، العلامات، التنقل بين الصفحات.
+- [PDF AI Copilot](/pdf/ar/net/ai-copilot/) - يسمح بمعالجة مستندات PDF باستخدام LLMs من مزودين مختلفين.
+- [التعليقات التوضيحية](/pdf/ar/net/annotations/) - تسمح التعليقات التوضيحية للمستخدمين بإضافة محتوى مخصص على صفحات PDF. يمكنك إضافة، حذف وتعديل التعليق التوضيحي من مستندات PDF.
+- [الآثار](/pdf/ar/net/artifacts/) - التعامل مع العلامات المائية وغيرها من الكائنات الخاصة في PDF.
+- [الوصول. PDF المعنون](/pdf/ar/net/accessibility-tagged-pdf/) - التصنيف ضروري لوصول PDF. يسمح Aspose.PDF بإضافة علامات إلى PDF وتحديد ترتيب القراءة المنطقي وتوفير وسيلة للإشارة إلى الهيكل والنوع.
+- [المرفقات](/pdf/ar/net/attachments/) - قد تحتوي مستندات PDF على مرفقات ملفات. يمكن أن تكون هذه المرفقات مستندات PDF أخرى، أو أي نوع من الملفات، مثل ملفات الصوت، مستندات Microsoft Office، إلخ. ستتعلم كيفية إضافة مرفقات إلى PDF، والحصول على معلومات عن مرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام C#.
+- [البيانات الوصفية في PDFs](/pdf/ar/net/pdf-file-metadata/) - الحصول على أو تعيين البيانات الوصفية في المستندات، والتعامل مع بيانات XMP.
+- [تأمين وتوقيع](/pdf/ar/net/securing-and-signing/) - حماية وتوقيع مستند PDF الخاص بك برمجيًا.
+- [طباعة المستند](/pdf/ar/net/printing-document/) - طباعة PDFs في أنواع مختلفة من التطبيقات (WinForms، WPF، إلخ).
 
 <script type="application/ld+json">
 {

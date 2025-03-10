@@ -87,7 +87,7 @@ sitemap:
 
 استخدم فئة **TextFragmentAbsorber** ويمكنك بالفعل القيام بأي شيء بالنص الموجود، أي يمكنك ببساطة استخدام النص بالكامل. جرب مقتطف الكود التالي:
 
-مقتطف الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+مقتطف الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -113,7 +113,7 @@ private static void ExtractSuperScriptsAndSubScripts()
 
 أو استخدم **TextFragments** بشكل منفصل وقم بجميع أنواع التلاعب بها، على سبيل المثال، فرزها حسب الإحداثيات أو حسب الحجم.
 
-مقتطف الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+مقتطف الكود التالي يعمل أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

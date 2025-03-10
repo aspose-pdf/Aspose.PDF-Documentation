@@ -90,7 +90,7 @@ sitemap:
 - **Page.Rect**: التقاطع (المستطيل المرئي عادةً) بين MediaBox وDropBox. توضح الصورة أدناه هذه الخصائص.
 للحصول على مزيد من التفاصيل، يرجى زيارة [هذه الصفحة](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-مقتطف الشيفرة التالي يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+مقتطف الشيفرة التالي يعمل أيضاً مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يوضح المقتطف أدناه كيفية قص الصفحة:
 

@@ -79,7 +79,7 @@ sitemap:
 }
 </script>
 
-يعمل جزء الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
+يعمل جزء الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## الحصول على الإشارات المرجعية
 

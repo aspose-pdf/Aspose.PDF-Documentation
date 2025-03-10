@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 إنشاء مستند PDF من مستند XML ليس مهمة بسيطة لأن مستند XML يمكن أن يصف محتوى مختلف. Aspose.PDF for .NET لديه عدة طرق لإنشاء PDF بناءً على مستند XML:
 

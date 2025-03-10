@@ -78,7 +78,7 @@ lastmod: "2022-02-17"
 
 **Aspose.PDF for .NET** API يسمح لك بتعيين اسم خط افتراضي عندما لا يكون الخط متاحًا في المستند. يمكنك استخدام خاصية DefaultFontName من فئة RenderingOptions لتعيين اسم الخط الافتراضي. في حالة تعيين DefaultFontName إلى null، سيتم استخدام خط **Times New Roman**. يوضح مقتطف الكود التالي كيفية تعيين اسم خط افتراضي عند حفظ PDF كصورة:
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

@@ -112,7 +112,7 @@ sitemap:
 
 تظهر مقتطفات الكود التالية كيفية الحصول على جميع العلامات المائية في الصفحة الأولى من ملف PDF.
 
-_ملاحظة:_ يعمل هذا الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+_ملاحظة:_ يعمل هذا الكود أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

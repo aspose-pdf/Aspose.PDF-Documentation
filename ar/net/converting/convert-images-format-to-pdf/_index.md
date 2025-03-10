@@ -82,7 +82,7 @@ sitemap:
 
 تشرح هذه المقالة كيفية تحويل تنسيقات الصور المختلفة إلى PDF باستخدام C#. تغطي هذه المواضيع.
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 _التنسيق_: **BMP**
 - [C# BMP إلى PDF](#csharp-bmp-to-pdf)

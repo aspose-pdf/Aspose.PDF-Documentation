@@ -87,7 +87,7 @@ AcroForm هو نوع مهم من مستند PDF. يمكنك ليس فقط إنش
 
 ## تفاصيل التنفيذ
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 في هذه المقالة، حاولنا إنشاء AcroForm باستخدام [مساحة أسماء Aspose.Pdf.Facades](https://docs-qa.aspose.com/display/pdftemp/Aspose.Pdf.Facades+namespace). لقد أضفنا أيضًا زر إرسال وحددنا عنوان URL المستهدف. توضح مقتطفات الشيفرة التالية كيفية إنشاء النموذج ثم تلقي البيانات المرسلة على صفحة الويب.
 

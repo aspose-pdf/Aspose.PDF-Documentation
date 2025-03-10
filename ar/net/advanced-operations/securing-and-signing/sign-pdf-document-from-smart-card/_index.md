@@ -81,7 +81,7 @@ sitemap:
 
 Aspose.PDF for .NET يقدم الوظيفة لإضافة توقيعات رقمية من موقع تخزين المفاتيح. يمكنك تطبيق التوقيع من خلال قبول الشهادة المقدمة من مخزن الشهادات، بطاقة ذكية أو [بطاقة PIV](https://whatis.techtarget.com/definition/personal-identity-verification-PIV-card) متصلة بالنظام أثناء وقت التشغيل.
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 فيما يلي مقتطفات الشيفرة لتوقيع مستند PDF من بطاقة ذكية:
 

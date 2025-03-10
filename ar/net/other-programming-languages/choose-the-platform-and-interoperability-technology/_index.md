@@ -76,7 +76,7 @@ url: /ar/net/choose-the-platform-and-interoperability-technology/
 
 **هناك ثلاث نسخ من مكتبة فئات Aspose.PDF:**
 
-[Aspose.PDF](/pdf/) هي عائلة منتجات توفر وظائف لتوليد مستندات PDF من الصفر، بالإضافة إلى القدرة على تحرير/تعديل المستندات الموجودة. تتوفر Aspose.PDF في ثلاثة منتجات متميزة: [Aspose.PDF for .NET](/pdf/net/)، [Aspose.PDF لـ Java](/pdf/java/)، و [Aspose.PDF لـ C++](/pdf/cpp/). يمكننا القول إن Aspose.PDF تدعم "محليًا":
+[Aspose.PDF](/pdf/) هي عائلة منتجات توفر وظائف لتوليد مستندات PDF من الصفر، بالإضافة إلى القدرة على تحرير/تعديل المستندات الموجودة. تتوفر Aspose.PDF في ثلاثة منتجات متميزة: [Aspose.PDF for .NET](/pdf/ar/net/)، [Aspose.PDF لـ Java](/pdf/java/)، و [Aspose.PDF لـ C++](/pdf/cpp/). يمكننا القول إن Aspose.PDF تدعم "محليًا":
 
 - إطار عمل .NET وجميع لغات البرمجة المستهدفة لمنصة .NET، مثل C# أو VB.NET.
 - منصة Java ولغة البرمجة Java.
@@ -84,7 +84,7 @@ url: /ar/net/choose-the-platform-and-interoperability-technology/
 
 {{% /alert %}}
 
-يرجى ملاحظة أنه من الممكن أيضًا استخدام [Aspose.PDF for .NET](/pdf/net/) من العديد من لغات البرمجة، بما في ذلك: ASP و C++ و ColdFusion و Delphi و JavaScript و Perl و PHP و PowerBuilder و Python و VBScript وغيرها.
+يرجى ملاحظة أنه من الممكن أيضًا استخدام [Aspose.PDF for .NET](/pdf/ar/net/) من العديد من لغات البرمجة، بما في ذلك: ASP و C++ و ColdFusion و Delphi و JavaScript و Perl و PHP و PowerBuilder و Python و VBScript وغيرها.
 
 ## دعم لغات أخرى
 
@@ -92,7 +92,7 @@ url: /ar/net/choose-the-platform-and-interoperability-technology/
 
 يتضمن هذا القسم اقتراحات وروابط توثيق حول كيفية استخدام Aspose.PDF في لغات البرمجة المختلفة ويغطي المواضيع التالية:
 
-- الأغطية الجاهزة المتاحة لـ [Aspose.PDF for .NET](/pdf/net/).
+- الأغطية الجاهزة المتاحة لـ [Aspose.PDF for .NET](/pdf/ar/net/).
 - كيفية إنشاء كائنات، واستدعاء طرق، والوصول إلى خصائص كائنات Aspose.PDF for .NET.
 
 إذا اتبعت المبادئ الموضحة في هذا القسم، ستتمكن من استخدام العديد من ميزات Aspose.PDF في مشاريعك.
@@ -111,7 +111,7 @@ url: /ar/net/choose-the-platform-and-interoperability-technology/
 
 **الوصول إلى كائنات Aspose.PDF من لغات أخرى**
 
-يتطلب استخدام Aspose.PDF من لغات البرمجة الأخرى *تقنية التشغيل البيني*. يجب أن تمكن هذه التقنية لغتك من استدعاء مكتبة فئات مكتوبة لـ .NET أو Java أو C++. نقترح استخدام تقنية [COM Interop](/pdf/net/use-aspose-pdf-for-net-via-com-interop/) مع مكتبة فئات [Aspose.PDF for .NET](/pdf/net/) للاستخدام مع مجموعة متنوعة من لغات البرمجة:
+يتطلب استخدام Aspose.PDF من لغات البرمجة الأخرى *تقنية التشغيل البيني*. يجب أن تمكن هذه التقنية لغتك من استدعاء مكتبة فئات مكتوبة لـ .NET أو Java أو C++. نقترح استخدام تقنية [COM Interop](/pdf/ar/net/use-aspose-pdf-for-net-via-com-interop/) مع مكتبة فئات [Aspose.PDF for .NET](/pdf/ar/net/) للاستخدام مع مجموعة متنوعة من لغات البرمجة:
 - ASP.
 - Delphi.
 - Perl.
@@ -125,6 +125,6 @@ url: /ar/net/choose-the-platform-and-interoperability-technology/
 ## الخاتمة
 
 {{% alert color="primary" %}}
-تظهر المقالة أعلاه أن استخدام [Aspose.PDF for .NET](/pdf/net/) يتجاوز لغات البرمجة .NET.
+تظهر المقالة أعلاه أن استخدام [Aspose.PDF for .NET](/pdf/ar/net/) يتجاوز لغات البرمجة .NET.
 
 {{% /alert %}}

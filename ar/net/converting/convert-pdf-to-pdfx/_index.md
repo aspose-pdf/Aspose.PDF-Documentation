@@ -80,7 +80,7 @@ sitemap:
 
 **Aspose.PDF for .NET** يتيح لك تحويل ملف PDF إلى ملف PDF متوافق مع <abbr title="Portable Document Format eXchange">PDF/X</abbr>. يشرح هذا المقال كيفية القيام بذلك.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## المعايير المدعومة
 **Aspose.PDF for .NET** يدعم المعايير التالية: PDF/X-1a:2001، PDF/X-1a:2003، PDF/X-3:2003، PDF/X-4.

@@ -96,40 +96,40 @@ sitemap:
 
 تعتبر مستندات Word الأكثر تنوعًا وقابلية للتعديل. إن تحويل PDF إلى Word يدويًا هو مهمة تستغرق وقتًا طويلاً. في هذه المقالة، ستتعلم كيفية تحويل PDF إلى Word برمجيًا باستخدام C#.
 
-- [تحويل PDF إلى Microsoft Word](/pdf/net/convert-pdf-to-word/) - يمكنك تحويل مستند PDF الخاص بك إلى تنسيق Word باستخدام C#.
+- [تحويل PDF إلى Microsoft Word](/pdf/ar/net/convert-pdf-to-word/) - يمكنك تحويل مستند PDF الخاص بك إلى تنسيق Word باستخدام C#.
 
 تحتاج تنسيقات الأرقام ليس فقط لجعل البيانات في الجدول أسهل في القراءة، ولكن أيضًا لجعل الجدول أسهل في الاستخدام. بالطبع، إذا كنت بحاجة إلى تحويل مثل هذه البيانات من مستند PDF إلى تنسيق Excel، استخدم مكتبتنا Aspose.PDF.
 
-- [تحويل PDF إلى Microsoft Excel](/pdf/net/convert-pdf-to-excel/) - يصف هذا القسم كيفية تحويل مستند PDF إلى XLSX وODS وCSV وSpreadSheetML.
+- [تحويل PDF إلى Microsoft Excel](/pdf/ar/net/convert-pdf-to-excel/) - يصف هذا القسم كيفية تحويل مستند PDF إلى XLSX وODS وCSV وSpreadSheetML.
 
 يستخدم تنسيق PowerPoint لإنشاء عروض تقديمية مختلفة. تحتوي ملفات PPT على عدد كبير من الشرائح أو الصفحات التي تحتوي على معلومات متنوعة.
 
-- [تحويل PDF إلى Microsoft PowerPoint](/pdf/net/convert-pdf-to-powerpoint/) - هنا نتحدث عن تحويل PDF إلى PowerPoint من خلال تتبع عملية التحويل.
+- [تحويل PDF إلى Microsoft PowerPoint](/pdf/ar/net/convert-pdf-to-powerpoint/) - هنا نتحدث عن تحويل PDF إلى PowerPoint من خلال تتبع عملية التحويل.
 
 لغة ترميز النص الفائق هي لغة وصف مستندات النص الفائق، وهي لغة قياسية لإنشاء صفحات الويب. مع Aspose.PDF for .NET يمكنك بسهولة تحويل مستندات HTML والعكس.
 
-- [تحويل تنسيق HTML إلى ملف PDF](/pdf/net/convert-html-to-pdf/) - مقالة حول جوانب مختلفة من تحويل HTML إلى PDF.
-- [تحويل ملف PDF إلى تنسيق HTML](/pdf/net/convert-pdf-to-html/) - تحويل مستندات PDF الخاصة بك إلى ملفات HTML كصفحات منفصلة أو كصفحة واحدة.
+- [تحويل تنسيق HTML إلى ملف PDF](/pdf/ar/net/convert-html-to-pdf/) - مقالة حول جوانب مختلفة من تحويل HTML إلى PDF.
+- [تحويل ملف PDF إلى تنسيق HTML](/pdf/ar/net/convert-pdf-to-html/) - تحويل مستندات PDF الخاصة بك إلى ملفات HTML كصفحات منفصلة أو كصفحة واحدة.
 
 هناك العديد من تنسيقات الصور التي تحتاج إلى تحويلها إلى PDF لأغراض مختلفة. يسمح Aspose.PDF بأكثر تنسيقات الصور شيوعًا والعكس.
 
-- [تحويل تنسيقات الصور إلى ملف PDF](/pdf/net/convert-images-format-to-pdf/) - يتيح لك Aspose.PDF تحويل تنسيقات مختلفة من الصور إلى ملف PDF.
-- [تحويل PDF إلى تنسيقات صور مختلفة](/pdf/net/convert-pdf-to-images-format/) - تحويل صفحات PDF كصور بتنسيقات JPEG وPNG وغيرها.
+- [تحويل تنسيقات الصور إلى ملف PDF](/pdf/ar/net/convert-images-format-to-pdf/) - يتيح لك Aspose.PDF تحويل تنسيقات مختلفة من الصور إلى ملف PDF.
+- [تحويل PDF إلى تنسيقات صور مختلفة](/pdf/ar/net/convert-pdf-to-images-format/) - تحويل صفحات PDF كصور بتنسيقات JPEG وPNG وغيرها.
 
 يتضمن هذا القسم مثل هذه التنسيقات مثل: EPUB وMarkdown وPCL وXPS وLATex/TeX والنص وPostScript.
 
-- [تحويل تنسيقات ملفات أخرى إلى PDF](/pdf/net/convert-other-files-to-pdf/) - تصف هذه الموضوعات التحويل مع تنسيقات مختلفة مثل EPUB وXPS وPostscript والنص وغيرها.
-- [تحويل ملف PDF إلى تنسيقات أخرى](/pdf/net/convert-pdf-to-other-files/) - تصف هذه الموضوعات طريقة تحويل مستند PDF إلى تنسيقات مختلفة.
+- [تحويل تنسيقات ملفات أخرى إلى PDF](/pdf/ar/net/convert-other-files-to-pdf/) - تصف هذه الموضوعات التحويل مع تنسيقات مختلفة مثل EPUB وXPS وPostscript والنص وغيرها.
+- [تحويل ملف PDF إلى تنسيقات أخرى](/pdf/ar/net/convert-pdf-to-other-files/) - تصف هذه الموضوعات طريقة تحويل مستند PDF إلى تنسيقات مختلفة.
 
 PDF/A هو إصدار من PDF مصمم للأرشفة طويلة الأجل للمستندات الإلكترونية.
 إذا كنت صادقًا، فمن الصعب جدًا تحديد ما إذا كان PDF أو PDF/A. للتحقق من هذا الملف، يتم استخدام أدوات التحقق. تحقق من المقالات التالية لتحويل PDF إلى PDF/A والعكس بجودة.
 
-- [تحويل PDF إلى تنسيقات PDF/A](/pdf/net/convert-pdf-to-pdfa/) - توفر مكتبة .NET من Aspose.PDF طريقة سهلة لتحويل PDF إلى PDF/A.
-- [تحويل PDF/A إلى تنسيق PDF](/pdf/net/convert-pdfa-to-pdf/) - تحويل PDF/A إلى تنسيق PDF باستخدام C# بسهولة وسرعة وجودة عالية.
+- [تحويل PDF إلى تنسيقات PDF/A](/pdf/ar/net/convert-pdf-to-pdfa/) - توفر مكتبة .NET من Aspose.PDF طريقة سهلة لتحويل PDF إلى PDF/A.
+- [تحويل PDF/A إلى تنسيق PDF](/pdf/ar/net/convert-pdfa-to-pdf/) - تحويل PDF/A إلى تنسيق PDF باستخدام C# بسهولة وسرعة وجودة عالية.
 
 PDF/X هو مجموعة فرعية من معيار PDF تسهل تبادل الرسوميات ولها سلسلة من المتطلبات المتعلقة بالطباعة التي لا تنطبق على ملفات PDF القياسية.
 
-- [تحويل PDF إلى تنسيق تبادل PDF/X](/pdf/net/convert-pdf-to-pdfx/) - تتيح Aspose.PDF for .NET التحويل إلى إصدارات معيار PDF/X المختلفة.
+- [تحويل PDF إلى تنسيق تبادل PDF/X](/pdf/ar/net/convert-pdf-to-pdfx/) - تتيح Aspose.PDF for .NET التحويل إلى إصدارات معيار PDF/X المختلفة.
 
 ## جرب تحويل ملفات PDF عبر الإنترنت
 

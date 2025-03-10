@@ -82,7 +82,7 @@ sitemap:
 
 يمكنك استخدام فئة [TextStamp](https://reference.aspose.com/pdf/net/aspose.pdf/TextStamp) لإضافة طابع نصي في ملف PDF. توفر فئة TextStamp الخصائص اللازمة لإنشاء طابع نصي مثل حجم الخط، نمط الخط، ولون الخط، إلخ. لإضافة طابع نصي، تحتاج إلى إنشاء كائن Document وكائن TextStamp باستخدام الخصائص المطلوبة. بعد ذلك، يمكنك استدعاء طريقة AddStamp من Page لإضافة الطابع في PDF.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تظهر مقتطفات الكود التالية كيفية إضافة طابع نصي في ملف PDF.
 

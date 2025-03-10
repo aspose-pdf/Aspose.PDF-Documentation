@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) تتيح لك إضافة ختم في ملف PDF موجود. أحيانًا، يحتاج المستخدمون إلى تدوير الختم. في هذه المقالة، سنرى كيفية تدوير الختم حول نقطة مركزه.
+[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) تتيح لك إضافة ختم في ملف PDF موجود. أحيانًا، يحتاج المستخدمون إلى تدوير الختم. في هذه المقالة، سنرى كيفية تدوير الختم حول نقطة مركزه.
 
 {{% /alert %}}
 

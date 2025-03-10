@@ -88,18 +88,18 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صورة إلى ملف PDF موجود](/pdf/net/add-image-to-existing-pdf-file/) - إضافة الصور والمراجع لصورة واحدة في مستند PDF، بعد ذلك التحكم في الجودة.
-- [حذف الصور من ملف PDF](/pdf/net/delete-images-from-pdf-file/) - تحقق من مقتطف الشيفرة لحذف الصور من ملف PDF.
-- [استخراج الصور من ملف PDF](/pdf/net/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.
-- [الحصول على دقة وأبعاد الصور المضمنة](/pdf/net/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغلين في مساحة أسماء Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.
-- [العمل مع وضع الصور](/pdf/net/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموقعها في مستند PDF.
-- [البحث والحصول على الصور من مستند PDF](/pdf/net/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور في جميع الصفحات باستخدام C#.
-- [استبدال صورة في ملف PDF موجود](/pdf/net/replace-image-in-existing-pdf-file/) - تحقق من مقتطف الشيفرة لدينا، حيث يوضح لك كيفية استبدال صورة في ملف PDF.
-- [تعيين حجم الصورة](/pdf/net/set-image-size/) - تتيح لك مكتبة C# تعيين حجم الصورة.
-- [تعيين اسم الخط الافتراضي](/pdf/net/set-default-font-name/) - تعيين اسم الخط الافتراضي لعملية التحويل.
-- [توليد صور مصغرة من مستندات PDF](/pdf/net/generate-thumbnail-images-from-pdf-documents/) - يوضح المقال التالي كيفية توليد صور مصغرة من مستندات PDF باستخدام أولاً Acrobat SDK ثم Aspose.PDF.
-- دعم صور DICOM - Aspose.PDF for .NET يدعم معيار الرسوميات الطبية الخاص بالصور. Aspose.PDF for .NET يتيح لك تحويل صور DICOM وSVG. يرجى التحقق من قسم [تحويل DICOM إلى PDF](/pdf/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
-- [العمل مع الرسوميات المتجهة](/pdf/net/working-with-vector-graphics) - يصف هذا القسم ميزات العمل مع أداة GraphicsAbsorber باستخدام C#.
+- [إضافة صورة إلى ملف PDF موجود](/pdf/ar/net/add-image-to-existing-pdf-file/) - إضافة الصور والمراجع لصورة واحدة في مستند PDF، بعد ذلك التحكم في الجودة.
+- [حذف الصور من ملف PDF](/pdf/ar/net/delete-images-from-pdf-file/) - تحقق من مقتطف الشيفرة لحذف الصور من ملف PDF.
+- [استخراج الصور من ملف PDF](/pdf/ar/net/extract-images-from-pdf-file/) - استخدم مجموعة الصور لاستخراج الصور من ملف PDF.
+- [الحصول على دقة وأبعاد الصور المضمنة](/pdf/ar/net/get-resolution-and-dimensions-of-embedded-images/) - استخدم فئات المشغلين في مساحة أسماء Aspose.PDF التي توفر القدرة على الحصول على معلومات الدقة والأبعاد.
+- [العمل مع وضع الصور](/pdf/ar/net/working-with-image-placement/) - من الممكن الحصول على دقة الصورة وموقعها في مستند PDF.
+- [البحث والحصول على الصور من مستند PDF](/pdf/ar/net/search-and-get-images-from-pdf-document/) - يمكنك الحصول على صورة من صفحة فردية والبحث بين الصور في جميع الصفحات باستخدام C#.
+- [استبدال صورة في ملف PDF موجود](/pdf/ar/net/replace-image-in-existing-pdf-file/) - تحقق من مقتطف الشيفرة لدينا، حيث يوضح لك كيفية استبدال صورة في ملف PDF.
+- [تعيين حجم الصورة](/pdf/ar/net/set-image-size/) - تتيح لك مكتبة C# تعيين حجم الصورة.
+- [تعيين اسم الخط الافتراضي](/pdf/ar/net/set-default-font-name/) - تعيين اسم الخط الافتراضي لعملية التحويل.
+- [توليد صور مصغرة من مستندات PDF](/pdf/ar/net/generate-thumbnail-images-from-pdf-documents/) - يوضح المقال التالي كيفية توليد صور مصغرة من مستندات PDF باستخدام أولاً Acrobat SDK ثم Aspose.PDF.
+- دعم صور DICOM - Aspose.PDF for .NET يدعم معيار الرسوميات الطبية الخاص بالصور. Aspose.PDF for .NET يتيح لك تحويل صور DICOM وSVG. يرجى التحقق من قسم [تحويل DICOM إلى PDF](/pdf/ar/net/convert-images-format-to-pdf/#convert-dicom-to-pdf).
+- [العمل مع الرسوميات المتجهة](/pdf/ar/net/working-with-vector-graphics) - يصف هذا القسم ميزات العمل مع أداة GraphicsAbsorber باستخدام C#.
 
 <script type="application/ld+json">
 {

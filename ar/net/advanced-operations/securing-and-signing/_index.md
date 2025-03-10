@@ -94,10 +94,10 @@ sitemap:
 
 يوصى بتجنب التوقيعات الرقمية مع خوارزمية التجزئة SHA-1 بسبب عدم أمانها.
 
-- [توقيع ملف PDF رقميًا](/pdf/net/digitally-sign-pdf-file/)
-- [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/net/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [استخراج معلومات الصورة والتوقيع](/pdf/net/extract-image-and-signature-information/)
-- [توقيع مستند PDF من بطاقة ذكية](/pdf/net/sign-pdf-document-from-smart-card/)
+- [توقيع ملف PDF رقميًا](/pdf/ar/net/digitally-sign-pdf-file/)
+- [تعيين الامتيازات، تشفير وفك تشفير ملف PDF](/pdf/ar/net/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [استخراج معلومات الصورة والتوقيع](/pdf/ar/net/extract-image-and-signature-information/)
+- [توقيع مستند PDF من بطاقة ذكية](/pdf/ar/net/sign-pdf-document-from-smart-card/)
 
 <script type="application/ld+json">
 {

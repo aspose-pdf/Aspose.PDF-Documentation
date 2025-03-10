@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [إضافة إجراءات Javascript إلى ملف PDF موجود](/pdf/net/adding-javascript-actions/)
-- [إضافة إجراءات الإشارات المرجعية إلى ملف PDF موجود](/pdf/net/how-to-create-nested-bookmarks/)
-- [العمل مع الصور](/pdf/net/working-with-images-in-pdf/)
-- [استبدال النص - الواجهات](/pdf/net/replace-text-facades/)
-- [العمل مع المرفقات - الواجهات](/pdf/net/working-with-attachments-facades/)
-- [تعيين تفضيلات العرض لملف PDF موجود](/pdf/net/set-viewer-preference-of-an-existing-pdf-file/)
-- [الحصول على تفضيلات العرض لملف PDF موجود](/pdf/net/get-viewer-preference-of-an-existing-pdf-file/)
-- [إضافة تعليقات توضيحية إلى ملف PDF موجود](/pdf/net/adding-annotations-to-existing-pdf-file/)
+- [إضافة إجراءات Javascript إلى ملف PDF موجود](/pdf/ar/net/adding-javascript-actions/)
+- [إضافة إجراءات الإشارات المرجعية إلى ملف PDF موجود](/pdf/ar/net/how-to-create-nested-bookmarks/)
+- [العمل مع الصور](/pdf/ar/net/working-with-images-in-pdf/)
+- [استبدال النص - الواجهات](/pdf/ar/net/replace-text-facades/)
+- [العمل مع المرفقات - الواجهات](/pdf/ar/net/working-with-attachments-facades/)
+- [تعيين تفضيلات العرض لملف PDF موجود](/pdf/ar/net/set-viewer-preference-of-an-existing-pdf-file/)
+- [الحصول على تفضيلات العرض لملف PDF موجود](/pdf/ar/net/get-viewer-preference-of-an-existing-pdf-file/)
+- [إضافة تعليقات توضيحية إلى ملف PDF موجود](/pdf/ar/net/adding-annotations-to-existing-pdf-file/)

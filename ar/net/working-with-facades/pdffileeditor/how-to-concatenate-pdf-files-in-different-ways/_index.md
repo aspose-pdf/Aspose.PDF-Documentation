@@ -78,7 +78,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-يصف هذا المقال كيفية [دمج](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) عدة مستندات PDF في مستند PDF واحد بمساعدة [Aspose.PDF for .NET](/pdf/net/) المكون. يجعل [Aspose.PDF for .NET](/pdf/net/) هذه المهمة سهلة للغاية.
+يصف هذا المقال كيفية [دمج](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffileeditor/methods/concatenate/index) عدة مستندات PDF في مستند PDF واحد بمساعدة [Aspose.PDF for .NET](/pdf/ar/net/) المكون. يجعل [Aspose.PDF for .NET](/pdf/ar/net/) هذه المهمة سهلة للغاية.
 
 {{% /alert %}}
 

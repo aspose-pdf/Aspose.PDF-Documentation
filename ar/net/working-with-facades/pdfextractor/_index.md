@@ -12,7 +12,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-- [استخراج النص](/pdf/net/extract-text/)
-- [استخراج الصور](/pdf/net/extract-images/)
-- [استخراج المرفقات](/pdf/net/extract-attachments/)
-- [البحث عما إذا كان ملف PDF يحتوي على صور أو نص فقط](/pdf/net/find-whether-pdf-file-contains-images-or-text-only/)
+- [استخراج النص](/pdf/ar/net/extract-text/)
+- [استخراج الصور](/pdf/ar/net/extract-images/)
+- [استخراج المرفقات](/pdf/ar/net/extract-attachments/)
+- [البحث عما إذا كان ملف PDF يحتوي على صور أو نص فقط](/pdf/ar/net/find-whether-pdf-file-contains-images-or-text-only/)

@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [Set PDF File Information](/pdf/net/set-pdf-file-information/)
-- [Get PDF file information](/pdf/net/get-pdf-file-information/)
+- [Set PDF File Information](/pdf/ar/net/set-pdf-file-information/)
+- [Get PDF file information](/pdf/ar/net/get-pdf-file-information/)

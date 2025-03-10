@@ -84,7 +84,7 @@ url: /ar/net/asp-vbscript-via-com-interop/
 
 {{% alert color="primary" %}}
 
-هذا تطبيق ASP بسيط يوضح لك كيفية إنشاء ملف PDF بنص عينة باستخدام [Aspose.PDF for .NET](/pdf/net/) و VBScript عبر COM Interop.
+هذا تطبيق ASP بسيط يوضح لك كيفية إنشاء ملف PDF بنص عينة باستخدام [Aspose.PDF for .NET](/pdf/ar/net/) و VBScript عبر COM Interop.
 
 {{% /alert %}}
 

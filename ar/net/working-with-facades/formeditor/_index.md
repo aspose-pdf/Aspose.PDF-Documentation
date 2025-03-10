@@ -12,11 +12,11 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [إضافة حقول النموذج](/pdf/net/add-form-fields/)
-- [استكشاف ميزات فئة FormEditor](/pdf/net/exploring-features-of-formeditor-class/)
-- [تزيين حقل النموذج في PDF](/pdf/net/decorate-form-field/)
-- [مظهر الحقل والسمات](/pdf/net/changing-field-appearance-and-attributes/)
-- [العمل مع عنصر القائمة](/pdf/net/working-with-list-item/)
-- [نسخ الحقل الداخلي والخارجي](/pdf/net/copy-inner-and-outer-field/)
-- [نقل وإزالة حقل النموذج](/pdf/net/move-remove-form-field/)
-- [استيراد وتصدير حقل النموذج](/pdf/net/import-export-form-field/)
+- [إضافة حقول النموذج](/pdf/ar/net/add-form-fields/)
+- [استكشاف ميزات فئة FormEditor](/pdf/ar/net/exploring-features-of-formeditor-class/)
+- [تزيين حقل النموذج في PDF](/pdf/ar/net/decorate-form-field/)
+- [مظهر الحقل والسمات](/pdf/ar/net/changing-field-appearance-and-attributes/)
+- [العمل مع عنصر القائمة](/pdf/ar/net/working-with-list-item/)
+- [نسخ الحقل الداخلي والخارجي](/pdf/ar/net/copy-inner-and-outer-field/)
+- [نقل وإزالة حقل النموذج](/pdf/ar/net/move-remove-form-field/)
+- [استيراد وتصدير حقل النموذج](/pdf/ar/net/import-export-form-field/)

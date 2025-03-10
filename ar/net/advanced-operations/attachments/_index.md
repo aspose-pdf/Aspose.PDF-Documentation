@@ -83,10 +83,10 @@ sitemap:
 المرفق هو ملف إضافي يتم إرفاقه بمستند رئيسي، ويمكن أن يكون مجموعة متنوعة من أنواع الملفات، مثل pdf، word، صورة، أو ملفات أخرى.
 ستتعلم كيفية إضافة مرفقات إلى pdf، والحصول على معلومات عن مرفق، وحفظه في ملف، وحذف المرفق من PDF برمجيًا باستخدام C#.
 
-- [إضافة مرفق إلى مستند PDF](/pdf/net/add-attachment-to-pdf-document/)
-- [استخراج وحفظ مرفق](/pdf/net/extract-and-save-an-attachment/)
-- [إزالة مرفق من PDF موجود](/pdf/net/removing-attachment-from-an-existing-pdf/)
-- [محفظة](/pdf/net/portfolio/)
+- [إضافة مرفق إلى مستند PDF](/pdf/ar/net/add-attachment-to-pdf-document/)
+- [استخراج وحفظ مرفق](/pdf/ar/net/extract-and-save-an-attachment/)
+- [إزالة مرفق من PDF موجود](/pdf/ar/net/removing-attachment-from-an-existing-pdf/)
+- [محفظة](/pdf/ar/net/portfolio/)
 
 <script type="application/ld+json">
 {

@@ -90,7 +90,7 @@ sitemap:
 1. في كل تكرار، قم بإنشاء كائن Document جديد وأضف كائن [Page](https://reference.aspose.com/pdf/net/aspose.pdf/page) الفردي إلى المستند الفارغ.
 1. احفظ PDF الجديد باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf.document/save/methods/4).
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ## تقسيم PDF إلى ملفات متعددة أو PDFs منفصلة
 

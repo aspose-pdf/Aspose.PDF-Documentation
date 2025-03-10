@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [العمل مع منصة البيانات الوصفية القابلة للتوسيع - XMP](/pdf/net/working-with-extensible-metadata-platform-xmp/)
-- [تعيين بيانات التعريف XMP لملف PDF موجود](/pdf/net/set-xmp-metadata-of-an-existing-pdf/)
-- [الحصول على بيانات التعريف XMP لملف PDF موجود](/pdf/net/get-xmp-metadata-of-an-existing-pdf-file/)
+- [العمل مع منصة البيانات الوصفية القابلة للتوسيع - XMP](/pdf/ar/net/working-with-extensible-metadata-platform-xmp/)
+- [تعيين بيانات التعريف XMP لملف PDF موجود](/pdf/ar/net/set-xmp-metadata-of-an-existing-pdf/)
+- [الحصول على بيانات التعريف XMP لملف PDF موجود](/pdf/ar/net/get-xmp-metadata-of-an-existing-pdf-file/)

@@ -91,7 +91,7 @@ sitemap:
 
 {{% /alert %}}
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تظهر مقتطفات الكود التالية كيفية التحقق من مستند PDF لمعيار PDF/A-1A.
 

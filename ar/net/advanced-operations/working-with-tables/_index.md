@@ -84,11 +84,11 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/net/add-table-in-existing-pdf-document/) - إنشاء جدولك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
-- [استخراج جدول من مستند PDF موجود](/pdf/net/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
-- [دمج جدول مع مصادر البيانات](/pdf/net/integrate-table/) - دمج جدول مع قاعدة بيانات، دمج جدول مع مصدر Entity Framework باستخدام مكتبة .NET.
-- [التلاعب بالجداول في PDF الموجود](/pdf/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في PDF الخاص بك باستخدام TableAbsorber.
-- [إزالة الجداول من PDF الموجود](/pdf/net/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
+- [إنشاء أو إضافة جدول في مستند PDF موجود](/pdf/ar/net/add-table-in-existing-pdf-document/) - إنشاء جدولك في ملف PDF مع دمج الأعمدة أو الصفوف مع مراعاة الحدود، الهوامش، والحشو.
+- [استخراج جدول من مستند PDF موجود](/pdf/ar/net/extract-table-from-existing-pdf-document/) - يمكنك استخراج جدول من ملف PDF أو استخراج حدود الجدول كصورة.
+- [دمج جدول مع مصادر البيانات](/pdf/ar/net/integrate-table/) - دمج جدول مع قاعدة بيانات، دمج جدول مع مصدر Entity Framework باستخدام مكتبة .NET.
+- [التلاعب بالجداول في PDF الموجود](/pdf/ar/net/manipulate-tables-in-existing-pdf/) - التلاعب بالجداول في PDF الخاص بك باستخدام TableAbsorber.
+- [إزالة الجداول من PDF الموجود](/pdf/ar/net/remove-tables-from-existing-pdf/) - إزالة جدول أو جداول متعددة من مستند PDF.
 
 <script type="application/ld+json">
 {

@@ -96,7 +96,7 @@ Aspose.PDF for .NET يقدم لك تطبيقًا مجانيًا عبر الإن�
 [![تحويل Aspose.PDF PDF إلى PDF/A مع تطبيق مجاني](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## المعايير المدعومة
 ندعم المعايير التالية: PDF/A-1b، PDF/A-1a، PDF/A-2b، PDF/A-2u، PDF/A-2a، PDF/A-3b، PDF/A-3u، PDF/A-3a، PDF/A-4، PDF/A-4e، PDF/A-4f.

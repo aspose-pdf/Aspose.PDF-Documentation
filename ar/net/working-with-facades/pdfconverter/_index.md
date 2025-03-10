@@ -12,5 +12,5 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 ---
-- [دمج الصور](/pdf/net/merge-images/)
-- [تحويل ملف PDF](/pdf/net/convert-pdf-file/)
+- [دمج الصور](/pdf/ar/net/merge-images/)
+- [تحويل ملف PDF](/pdf/ar/net/convert-pdf-file/)

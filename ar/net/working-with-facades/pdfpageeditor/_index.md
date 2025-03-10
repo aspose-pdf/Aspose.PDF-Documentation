@@ -14,7 +14,7 @@ sitemap:
 ---
 تُستخدم **PdfPage Editor** لإجراء عمليات مختلفة على الصفحات:
 
-- [تدوير الصفحة في مستند PDF](/pdf/net/working-with-page-rotation/)
-- [تطبيق الانتقالات وتأثيرات بصرية أخرى](/pdf/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
-- [تغيير أحجام الصفحات في ملف PDF](/pdf/net/changing-page-sizes-in-a-pdf-file/)
-- [التلاعب بخصائص الصفحة](/pdf/net/manipulate-page-properties/)
+- [تدوير الصفحة في مستند PDF](/pdf/ar/net/working-with-page-rotation/)
+- [تطبيق الانتقالات وتأثيرات بصرية أخرى](/pdf/ar/net/editing-a-pdf-s-individual-pages-using-pdfpageeditor-class/)
+- [تغيير أحجام الصفحات في ملف PDF](/pdf/ar/net/changing-page-sizes-in-a-pdf-file/)
+- [التلاعب بخصائص الصفحة](/pdf/ar/net/manipulate-page-properties/)

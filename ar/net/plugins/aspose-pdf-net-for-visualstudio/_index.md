@@ -13,5 +13,5 @@ sitemap:
 ---
 تحتوي هذه القسم على المواضيع التالية:
 
-- [تصدير GridView إلى PDF في Visual Studio](/pdf/net/visual-studio-export-gridview-to-pdf-control/)
-- [مكون Aspose.PDF الإضافي لـ Visual Studio](/pdf/net/aspose-pdf-visual-studio-plugin/)
+- [تصدير GridView إلى PDF في Visual Studio](/pdf/ar/net/visual-studio-export-gridview-to-pdf-control/)
+- [مكون Aspose.PDF الإضافي لـ Visual Studio](/pdf/ar/net/aspose-pdf-visual-studio-plugin/)

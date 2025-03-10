@@ -82,7 +82,7 @@ sitemap:
 
 استخراج النص من مستند PDF هو متطلب شائع. في هذا المثال، سترى كيف يسمح Aspose.PDF for .NET باستخراج النص من جميع صفحات مستند PDF. تحتاج إلى إنشاء كائن من فئة **TextAbsorber**. بعد ذلك، افتح PDF باستخدام فئة **Document** واستدعِ طريقة **Accept** لمجموعة **Pages**. تقوم فئة **TextAbsorber** بامتصاص النص من المستند وتعيده في خاصية **Text**. يوضح مقتطف التعليمات البرمجية التالي كيفية استخراج النص من جميع صفحات مستند PDF.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -115,7 +115,7 @@ private static void ExtractTextFromDocument()
 
 استدعِ طريقة **Accept** على صفحة معينة من كائن Document. الفهرس هو رقم الصفحة المحددة التي يحتاج النص إلى استخراجها.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -161,7 +161,7 @@ private static void ExtractTextFromPage()
 1. استخدام طريقة Process من فئة TextDevice لتحويل المحتويات إلى نص.
 1. حفظ النص في ملف الإخراج.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -211,7 +211,7 @@ private static void ExtractTextFromPagesWithTextDevice()
 
 يتم استدعاء طريقة **Accept** لصفحة لاستخراج النص. قم بإنشاء كائنات من فئات **Document** و**TextAbsorber**. استدعِ طريقة **Accept** على الصفحة الفردية، كفهرس **Page**، من كائن **Document**. الفهرس هو رقم الصفحة المحددة التي يحتاج النص إلى استخراجها. يمكنك الحصول على النص من خاصية **Text** من فئة **TextAbsorber**. يوضح مقتطف التعليمات البرمجية التالي كيفية استخراج النص من صفحة فردية.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -248,7 +248,7 @@ private static void ExtractTextFromParticularPageRegion()
 
 قد يتكون ملف PDF من نصوص وصور وتعليقات ومرفقات ورسوم بيانية، وما إلى ذلك، وتقدم Aspose.PDF for .NET ميزة الإضافة والتلاعب بجميع هذه العناصر. هذه واجهة برمجة التطبيقات رائعة عندما يتعلق الأمر بإضافة النص واستخراجه من مستند PDF وقد نواجه سيناريو حيث يتكون مستند PDF من أكثر من عمود واحد (مستند متعدد الأعمدة) ونحتاج لاستخراج محتويات الصفحة مع احترام نفس التخطيط، فإن Aspose.PDF for .NET هو الخيار الصحيح لتحقيق هذا المتطلب. إحدى الطرق هي تقليل حجم الخط للمحتويات داخل مستند PDF ثم إجراء استخراج النص. يوضح مقتطف التعليمات البرمجية التالي الخطوات لتقليل حجم النص ثم محاولة استخراج النص من مستند PDF.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -296,7 +296,7 @@ private static void ExtractTextBasedOnColumns()
 
 نقترح استخدام التغيير التلقائي (ScaleFactor = 0) عند معالجة عدد كبير من ملفات PDF لاستخراج محتوى النص. أو تعيين تقليل عرض الشبكة بشكل يدوي (حوالي ScaleFactor = 0.5). ومع ذلك، يجب عليك عدم تحديد ما إذا كان التغيير ضروريًا للمستندات المحددة أم لا. إذا قمت بتعيين تقليل عرض الشبكة بشكل زائد للمستند (الذي لا يحتاج إليه)، سيبقى محتوى النص المستخرج كافيًا تمامًا. يرجى إلقاء نظرة على مقتطف التعليمات البرمجية التالي.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -333,7 +333,7 @@ private static void ExctractTextWithScaleFactor()
 
 في سيناريوهات مختلفة لاستخراج النص من مستند PDF، قد تواجه متطلبًا لاستخراج النص المميز فقط من مستند PDF. لتنفيذ هذه الوظيفة، أضفنا طرق TextMarkupAnnotation.GetMarkedText() وTextMarkupAnnotation.GetMarkedTextFragments() في واجهة برمجة التطبيقات. يمكنك استخراج النص المميز من مستند PDF عن طريق تصفية TextMarkupAnnotation واستخدام الطرق المذكورة. يوضح مقتطف التعليمات البرمجية التالي كيفية استخراج النص المميز من مستند PDF.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET
@@ -369,7 +369,7 @@ private static void ExtractHighlightedTextFromDocument()
 
 أحيانًا نحتاج إلى الوصول إلى عناصر TextFragment أو TextSegment عند معالجة مستندات PDF التي تم إنشاؤها من XML. توفر Aspose.PDF for .NET الوصول إلى مثل هذه العناصر بالاسم. يوضح مقتطف التعليمات البرمجية أدناه كيفية استخدام هذه الوظيفة.
 
-يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف التعليمات البرمجية التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

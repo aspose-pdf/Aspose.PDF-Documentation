@@ -77,7 +77,7 @@ draft: false
 
 {{% alert color="primary" %}}
 
-[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) تقدم طرقًا متنوعة لملء نماذج PDF. يمكنك استيراد البيانات من ملف XML، DFD، XFDF، استخدام API وحتى استخدام البيانات من ورقة عمل Excel.
+[مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) تقدم طرقًا متنوعة لملء نماذج PDF. يمكنك استيراد البيانات من ملف XML، DFD، XFDF، استخدام API وحتى استخدام البيانات من ورقة عمل Excel.
 سنستخدم طريقة [ExportDataTable](https://reference.aspose.com/cells/net/aspose.cells/range/methods/exportdatatable/index) من فئة [Cells](https://reference.aspose.com/pdf/net/aspose.pdf/cells) من [Aspose.Cells](https://docs.aspose.com//cells/net) لتصدير البيانات من ورقة Excel إلى كائن DataTable. ثم سنقوم باستيراد هذه البيانات إلى نموذج PDF باستخدام طريقة [ImportDataTable](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller/methods/importdatatable) من فئة [AutoFiller](https://reference.aspose.com/pdf/net/aspose.pdf.facades/autofiller). تأكد من أن اسم العمود في DataTable هو نفسه اسم الحقل في نموذج PDF.
 
 {{% /alert %}}

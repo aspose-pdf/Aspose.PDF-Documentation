@@ -81,7 +81,7 @@ sitemap:
 
 ## إضافة تعليق ارتباط إلى ملف PDF موجود
 
-> تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+> تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمثل [تعليق الارتباط](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/linkannotation) ارتباطًا تشعبيًا، وجهة في مكان آخر، ومستندًا. وفقًا لمعيار PDF، يمكن استخدام تعليق الارتباط في ثلاث حالات: فتح عرض الصفحة، فتح ملف، وفتح صفحة ويب.
 

@@ -77,7 +77,7 @@ draft: false
 
 يمكن أن تساعدك فئة [PdfFileMend](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) في إضافة الصور والنصوص في مستند PDF موجود، في موقع محدد. توفر طريقتين تحملان أسماء [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) و [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index). تتيح لك طريقة [AddImage](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addimage/index) إضافة صور من نوع JPG و GIF و PNG و BMP. تأخذ طريقة [AddText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend/methods/addtext/index) وسيطًا من نوع [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext) وتضيفه في ملف PDF الموجود. يمكن إضافة الصور والنصوص في منطقة مستطيلة محددة بواسطة إحداثيات النقاط السفلية اليسرى والعلوية اليمنى. أثناء إضافة الصور، يمكنك تحديد إما مسار ملف الصورة أو دفق ملف الصورة. لتحديد رقم الصفحة التي تحتاج إلى إضافة الصورة أو النص فيها، توفر كلتا الطريقتين وسيطًا لرقم الصفحة. لذا، يمكنك إضافة الصور والنصوص ليس فقط في الموقع المحدد ولكن أيضًا في صفحة محددة.
 
-تعتبر الصور جزءًا مهمًا من محتويات مستند PDF. إن معالجة الصور في ملف PDF موجود هي متطلب شائع للأشخاص الذين يعملون مع ملفات PDF. في هذه المقالة، سنستكشف كيفية معالجة الصور في ملف PDF موجود، بمساعدة [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) من [Aspose.PDF for .NET](/pdf/net/). تم تجميع جميع العمليات المتعلقة بالصور من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في هذه المقالة.
+تعتبر الصور جزءًا مهمًا من محتويات مستند PDF. إن معالجة الصور في ملف PDF موجود هي متطلب شائع للأشخاص الذين يعملون مع ملفات PDF. في هذه المقالة، سنستكشف كيفية معالجة الصور في ملف PDF موجود، بمساعدة [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) من [Aspose.PDF for .NET](/pdf/ar/net/). تم تجميع جميع العمليات المتعلقة بالصور من [مساحة أسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في هذه المقالة.
 
 ## تفاصيل التنفيذ
 
@@ -122,7 +122,7 @@ private static void AddImage01()
 }
 ```
 
-![إضافة صورة](/pdf/net/images/add_image1.png)
+![إضافة صورة](/pdf/ar/net/images/add_image1.png)
 
 بمساعدة [CompositingParameters](https://reference.aspose.com/pdf/net/aspose.pdf.facades.pdffilemend/addimage/methods/1)، يمكننا وضع صورة فوق أخرى:
 
@@ -163,7 +163,7 @@ private static void AddImage02()
 }
 ```
 
-![إضافة صورة](/pdf/net/images/add_image2.png)
+![إضافة صورة](/pdf/ar/net/images/add_image2.png)
 
 هناك عدة طرق لتخزين صورة في ملف PDF. سنوضح واحدة منها في المثال التالي:
 
@@ -277,7 +277,7 @@ private static void AddText01()
 
 تحقق كيف يبدو:
 
-![إضافة نص](/pdf/net/images/add_text.png)
+![إضافة نص](/pdf/ar/net/images/add_text.png)
 
 الطريقة الثانية لإضافة [FormattedText](https://reference.aspose.com/pdf/net/aspose.pdf.facades/formattedtext). بالإضافة إلى ذلك، نشير إلى مستطيل يجب أن يتناسب فيه نصنا.
 

@@ -78,7 +78,7 @@ sitemap:
 }
 </script>
 
-تعمل هذه الميزة أيضًا في مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
+تعمل هذه الميزة أيضًا في مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 ## أساسيات استخدام أداة FloatingBox
 

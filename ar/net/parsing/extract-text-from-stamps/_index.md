@@ -86,7 +86,7 @@ sitemap:
 1. تعريف كائن جديد من فئة `TextAbsorber`.
 1. استخدام طريقة زيارة TextAbsorber للحصول على النص.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

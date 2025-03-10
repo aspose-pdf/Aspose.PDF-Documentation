@@ -97,7 +97,7 @@ sitemap:
 - PageLayout – تخطيط الصفحة.
 - PageMode – كيفية عرض المستند عند فتحه لأول مرة. الخيارات هي عرض المصغرات، ملء الشاشة، عرض لوحة المرفقات.
 
-يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الشيفرة التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يظهر مقتطف الشيفرة التالي كيفية الحصول على الخصائص باستخدام [Document](https://reference.aspose.com/pdf/net/aspose.pdf/document) class.
 

@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [تحويل FDF إلى تنسيق XML](/pdf/net/converting-an-fdf-to-xml-format/)
-- [تحويل XML إلى تنسيق FDF](/pdf/net/converting-an-xml-to-fdf-format/)
+- [تحويل FDF إلى تنسيق XML](/pdf/ar/net/converting-an-fdf-to-xml-format/)
+- [تحويل XML إلى تنسيق FDF](/pdf/ar/net/converting-an-xml-to-fdf-format/)

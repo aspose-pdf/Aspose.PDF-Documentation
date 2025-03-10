@@ -89,15 +89,15 @@ PDF هو معيار مفتوح، يتم الحفاظ عليه من قبل الم
 
 يمكنك القيام بما يلي:
 
-- [تنسيق مستند PDF](/pdf/net/formatting-pdf-document/) - إنشاء مستند، الحصول على خصائص المستند وتعيينها، تضمين الخطوط، وعمليات أخرى مع ملفات PDF.
-- [التلاعب بمستند PDF](/pdf/net/manipulate-pdf-document/) - التحقق من مستند PDF لمعيار PDF A، العمل مع جدول المحتويات، تعيين تاريخ انتهاء صلاحية PDF، وما إلى ذلك.
-- [تحسين PDF](/pdf/net/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للمستند.
-- [دمج PDF](/pdf/net/merge-pdf-documents/) - دمج عدة ملفات PDF في مستند PDF واحد باستخدام C#.
-- [تقسيم PDF](/pdf/net/split-document/) - تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات .NET الخاصة بك.
-- [دمج ملفات PDF في مجلد](/pdf/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - دمج جميع ملفات PDF في مجلد معين باستخدام فئة PdfFileEditor.
-- [دمج عدة ملفات PDF باستخدام MemoryStreams](/pdf/net/concatenate-pdf-documents/) - ستتعلم كيفية دمج عدة ملفات PDF باستخدام MemoryStreams مع C#.
-- [إنشاء تقارير الأعطال](/pdf/net/generate-crash-reports/) - إنشاء تقارير الأعطال باستخدام C#.
-- [العمل مع العناوين](/pdf/net/working-with-headings/) - يمكنك إنشاء ترقيم في العناوين في مستند PDF الخاص بك باستخدام C#.
+- [تنسيق مستند PDF](/pdf/ar/net/formatting-pdf-document/) - إنشاء مستند، الحصول على خصائص المستند وتعيينها، تضمين الخطوط، وعمليات أخرى مع ملفات PDF.
+- [التلاعب بمستند PDF](/pdf/ar/net/manipulate-pdf-document/) - التحقق من مستند PDF لمعيار PDF A، العمل مع جدول المحتويات، تعيين تاريخ انتهاء صلاحية PDF، وما إلى ذلك.
+- [تحسين PDF](/pdf/ar/net/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للمستند.
+- [دمج PDF](/pdf/ar/net/merge-pdf-documents/) - دمج عدة ملفات PDF في مستند PDF واحد باستخدام C#.
+- [تقسيم PDF](/pdf/ar/net/split-document/) - تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات .NET الخاصة بك.
+- [دمج ملفات PDF في مجلد](/pdf/ar/net/concatenate-pdf-documents/#concatenating-all-pdf-files-in-particular-folder) - دمج جميع ملفات PDF في مجلد معين باستخدام فئة PdfFileEditor.
+- [دمج عدة ملفات PDF باستخدام MemoryStreams](/pdf/ar/net/concatenate-pdf-documents/) - ستتعلم كيفية دمج عدة ملفات PDF باستخدام MemoryStreams مع C#.
+- [إنشاء تقارير الأعطال](/pdf/ar/net/generate-crash-reports/) - إنشاء تقارير الأعطال باستخدام C#.
+- [العمل مع العناوين](/pdf/ar/net/working-with-headings/) - يمكنك إنشاء ترقيم في العناوين في مستند PDF الخاص بك باستخدام C#.
 
 <script type="application/ld+json">
 {

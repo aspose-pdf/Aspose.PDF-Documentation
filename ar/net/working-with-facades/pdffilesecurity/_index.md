@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [تشفير ملف PDF](/pdf/net/encrypt-pdf-file/)
-- [فك تشفير ملف PDF](/pdf/net/decrypt-pdf-file/)
-- [تحكم في استثناء ملف PDF](/pdf/net/control-exception/)
-- [تغيير كلمة مرور ملف PDF](/pdf/net/change-password/)
-- [تعيين الامتيازات على ملف PDF موجود](/pdf/net/set-privileges/)
+- [تشفير ملف PDF](/pdf/ar/net/encrypt-pdf-file/)
+- [فك تشفير ملف PDF](/pdf/ar/net/decrypt-pdf-file/)
+- [تحكم في استثناء ملف PDF](/pdf/ar/net/control-exception/)
+- [تغيير كلمة مرور ملف PDF](/pdf/ar/net/change-password/)
+- [تعيين الامتيازات على ملف PDF موجود](/pdf/ar/net/set-privileges/)

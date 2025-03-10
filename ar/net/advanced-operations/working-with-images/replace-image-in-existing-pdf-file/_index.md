@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تسمح طريقة [استبدال](https://reference.aspose.com/pdf/net/aspose.pdf/ximagecollection/methods/replace/index) لمجموعة الصور باستبدال صورة في ملف PDF موجود.
 

@@ -83,12 +83,12 @@ sitemap:
 
 يغطي هذا القسم الموضوعات التالية:
 
-- [إنشاء ملف PDF مميز](/pdf/net/create-tagged-pdf/)
-- [تحرير ملف PDF مميز](/pdf/net/edit-pdf-file-tags/)
-- [استخراج المحتوى المميز من ملفات PDF المميزة](/pdf/net/extract-tagged-content-from-tagged-pdfs/)
-- [إعداد خصائص عناصر الهيكل](/pdf/net/setting-structure-elements-properties/)
-- [العمل مع الجدول في ملفات PDF المميزة](/pdf/net/working-with-table-in-tagged-pdfs/)
-- [اختبار الامتثال PDF-UA - قائمة الأخطاء](/pdf/net/pdf-ua-compliance-test-errors-list/)
+- [إنشاء ملف PDF مميز](/pdf/ar/net/create-tagged-pdf/)
+- [تحرير ملف PDF مميز](/pdf/ar/net/edit-pdf-file-tags/)
+- [استخراج المحتوى المميز من ملفات PDF المميزة](/pdf/ar/net/extract-tagged-content-from-tagged-pdfs/)
+- [إعداد خصائص عناصر الهيكل](/pdf/ar/net/setting-structure-elements-properties/)
+- [العمل مع الجدول في ملفات PDF المميزة](/pdf/ar/net/working-with-table-in-tagged-pdfs/)
+- [اختبار الامتثال PDF-UA - قائمة الأخطاء](/pdf/ar/net/pdf-ua-compliance-test-errors-list/)
 
 <script type="application/ld+json">
 {

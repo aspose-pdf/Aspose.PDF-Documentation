@@ -85,7 +85,7 @@ sitemap:
 1. Visual Studio 2010 أو أعلى.
 1. مثبت NuGet Package Manager في Visual Studio. تأكد من تثبيت أحدث إصدار من واجهة برمجة تطبيقات NuGet في Visual Studio. لمزيد من التفاصيل حول كيفية تثبيت مدير حزم NuGet، يرجى مراجعة <https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools>.
 1. انتقل إلى `Tools->Options->NuGet Package Manager->Package Sources` وتأكد من تحديد الخيار **nuget.org**.
-1. يستخدم مشروع المثال ميزة استعادة الحزم التلقائية من NuGet، لذلك يجب أن يكون لديك اتصال إنترنت نشط. إذا لم يكن لديك اتصال إنترنت نشط على الجهاز الذي سيتم تنفيذ الأمثلة عليه، يرجى مراجعة [التثبيت](/pdf/net/installation/) وإضافة مرجع يدوي إلى Aspose.PDF.dll في مشروع المثال.
+1. يستخدم مشروع المثال ميزة استعادة الحزم التلقائية من NuGet، لذلك يجب أن يكون لديك اتصال إنترنت نشط. إذا لم يكن لديك اتصال إنترنت نشط على الجهاز الذي سيتم تنفيذ الأمثلة عليه، يرجى مراجعة [التثبيت](/pdf/ar/net/installation/) وإضافة مرجع يدوي إلى Aspose.PDF.dll في مشروع المثال.
 
 ## التنزيل من GitHub
 

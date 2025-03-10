@@ -13,4 +13,4 @@ sitemap:
 ---
 تحتوي هذه القسم على المواضيع التالية:
 
-- [وحدة استيراد PDF في Umbraco](/pdf/net/umbraco-pdf-import-module/)
+- [وحدة استيراد PDF في Umbraco](/pdf/ar/net/umbraco-pdf-import-module/)

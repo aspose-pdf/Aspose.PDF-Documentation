@@ -75,7 +75,7 @@ draft: false
 }
 </script>
 
-[Aspose.PDF for .NET](/pdf/net/) يوفر القدرة على إنشاء وتحرير وملء نماذج PDF التي تم إنشاؤها مسبقًا. تحتوي مساحة أسماء [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) على فئة [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) ، والتي تحتوي على دالة تسمى [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) وتأخذ وسيطين وهما اسم الحقل وقيمة الحقل. لذلك، لملء حقول النموذج، يجب أن تكون على دراية باسم حقل النموذج الدقيق.
+[Aspose.PDF for .NET](/pdf/ar/net/) يوفر القدرة على إنشاء وتحرير وملء نماذج PDF التي تم إنشاؤها مسبقًا. تحتوي مساحة أسماء [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) على فئة [Form](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form) ، والتي تحتوي على دالة تسمى [FillField](https://reference.aspose.com/pdf/net/aspose.pdf.facades/form/methods/fillfield/index) وتأخذ وسيطين وهما اسم الحقل وقيمة الحقل. لذلك، لملء حقول النموذج، يجب أن تكون على دراية باسم حقل النموذج الدقيق.
 
 ## تفاصيل التنفيذ
 

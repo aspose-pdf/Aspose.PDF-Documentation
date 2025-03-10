@@ -104,25 +104,25 @@ Aspose.PDF هي مكتبة فئة .NET تتيح للمطورين إنشاء مس
 
 ## الفصول
 
-- [ما الجديد](/pdf/net/whatsnew/)
-- [نظرة عامة](/pdf/net/overview/)
-- [البدء](/pdf/net/get-started/)
-- [العمليات الأساسية](/pdf/net/basic-operations/)
-- [تحويل المستندات](/pdf/net/converting/)
-- [تحليل مستندات PDF](/pdf/net/parsing/)
-- [العمليات المتقدمة](/pdf/net/advanced-operations/)
-- [العمل مع الواجهات](/pdf/net/working-with-facades)
-- [الاستخدام في لغات أخرى](/pdf/net/use-aspose-pdf-for-net-in-other-programming-languages/)
-- [العروض](/pdf/net/showcases/)
-- [الإضافات](/pdf/net/plugins/)
-- [الأسئلة الشائعة](/pdf/net/faq/)
+- [ما الجديد](/pdf/ar/net/whatsnew/)
+- [نظرة عامة](/pdf/ar/net/overview/)
+- [البدء](/pdf/ar/net/get-started/)
+- [العمليات الأساسية](/pdf/ar/net/basic-operations/)
+- [تحويل المستندات](/pdf/ar/net/converting/)
+- [تحليل مستندات PDF](/pdf/ar/net/parsing/)
+- [العمليات المتقدمة](/pdf/ar/net/advanced-operations/)
+- [العمل مع الواجهات](/pdf/ar/net/working-with-facades)
+- [الاستخدام في لغات أخرى](/pdf/ar/net/use-aspose-pdf-for-net-in-other-programming-languages/)
+- [العروض](/pdf/ar/net/showcases/)
+- [الإضافات](/pdf/ar/net/plugins/)
+- [الأسئلة الشائعة](/pdf/ar/net/faq/)
 - [ملاحظات الإصدار](https://releases.aspose.com/pdf/net/release-notes/)
 
 ## موارد Aspose.PDF for .NET
 
 فيما يلي روابط لبعض الموارد المفيدة التي قد تحتاجها لإنجاز مهامك.
 
-- [ميزات Aspose.PDF for .NET](/pdf/net/key-features/)
+- [ميزات Aspose.PDF for .NET](/pdf/ar/net/key-features/)
 - [ملاحظات إصدار Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/release-notes/)
 - [صفحة منتج Aspose.PDF for .NET](https://products.aspose.com/pdf/net/)
 - [تنزيل Aspose.PDF for .NET](https://releases.aspose.com/pdf/net/)

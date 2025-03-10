@@ -87,18 +87,18 @@ sitemap:
 
 يمكنك القيام بما يلي:
 
-- [إضافة صفحات](/pdf/net/add-pages/) - إضافة صفحات في الموقع المطلوب أو إلى نهاية ملف PDF وحذف صفحة من مستندك.
-- [نقل صفحات](/pdf/net/move-pages/) - نقل الصفحات من مستند إلى آخر.
-- [حذف صفحات](/pdf/net/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
-- [تغيير حجم الصفحة](/pdf/net/change-page-size/) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف كود باستخدام مكتبة Aspose.PDF.
-- [تدوير الصفحات](/pdf/net/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
-- [تقسيم الصفحات](/pdf/net/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف واحد أو عدة ملفات PDF.
-- [إضافة ترويسات و/أو تذييلات](/pdf/net/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور في ترويسات وتذييلات ملف PDF الخاص بك.
-- [قص الصفحات](/pdf/net/crop-pages/) - يمكنك قص الصفحات في مستند PDF برمجيًا مع خصائص صفحة مختلفة.
-- [إضافة علامات مائية](/pdf/net/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك مع فئة Artifact.
-- [إضافة ترقيم الصفحات في ملف PDF](/pdf/net/add-page-number/) - ستساعدك فئة PageNumberStamp على إضافة رقم صفحة في ملف PDF الخاص بك.
-- [إضافة خلفيات](/pdf/net/add-backgrounds/) - يمكن استخدام صور الخلفية لإضافة علامة مائية.
-- [الختم](/pdf/net/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
+- [إضافة صفحات](/pdf/ar/net/add-pages/) - إضافة صفحات في الموقع المطلوب أو إلى نهاية ملف PDF وحذف صفحة من مستندك.
+- [نقل صفحات](/pdf/ar/net/move-pages/) - نقل الصفحات من مستند إلى آخر.
+- [حذف صفحات](/pdf/ar/net/delete-pages/) - حذف صفحة من ملف PDF الخاص بك باستخدام مجموعة PageCollection.
+- [تغيير حجم الصفحة](/pdf/ar/net/change-page-size/) - يمكنك تغيير حجم صفحة PDF باستخدام مقتطف كود باستخدام مكتبة Aspose.PDF.
+- [تدوير الصفحات](/pdf/ar/net/rotate-pages/) - يمكنك تغيير اتجاه الصفحات في ملف PDF موجود.
+- [تقسيم الصفحات](/pdf/ar/net/split-document/) - يمكنك تقسيم ملفات PDF إلى ملف واحد أو عدة ملفات PDF.
+- [إضافة ترويسات و/أو تذييلات](/pdf/ar/net/add-headers-and-footers-of-pdf-file/) - إضافة نص أو صور في ترويسات وتذييلات ملف PDF الخاص بك.
+- [قص الصفحات](/pdf/ar/net/crop-pages/) - يمكنك قص الصفحات في مستند PDF برمجيًا مع خصائص صفحة مختلفة.
+- [إضافة علامات مائية](/pdf/ar/net/add-watermarks/) - إضافة علامات مائية في ملف PDF الخاص بك مع فئة Artifact.
+- [إضافة ترقيم الصفحات في ملف PDF](/pdf/ar/net/add-page-number/) - ستساعدك فئة PageNumberStamp على إضافة رقم صفحة في ملف PDF الخاص بك.
+- [إضافة خلفيات](/pdf/ar/net/add-backgrounds/) - يمكن استخدام صور الخلفية لإضافة علامة مائية.
+- [الختم](/pdf/ar/net/stamping/) - يمكنك استخدام فئة ImageStamp لإضافة ختم صورة إلى ملف PDF وفئة TextStamp لإضافة نص.
 
 <script type="application/ld+json">
 {

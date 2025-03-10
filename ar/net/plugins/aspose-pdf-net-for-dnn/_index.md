@@ -13,4 +13,4 @@ sitemap:
 ---
 تحتوي هذه القسم على المواضيع التالية:
 
-- [وحدة استيراد PDF لـ DNN](/pdf/net/dnn-pdf-import-module)
+- [وحدة استيراد PDF لـ DNN](/pdf/ar/net/dnn-pdf-import-module)

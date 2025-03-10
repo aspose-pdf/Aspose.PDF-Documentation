@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [تحديد أسماء حقول النموذج](/pdf/net/identifying-form-fields-names/)
-- [تبرير النص في حقل نصي](/pdf/net/justify-text-in-a-textbox-field/)
-- [ما الفرق بين XML و FDF و XFDF](/pdf/net/whats-the-difference-between-xml-fdf-and-xfdf/)
-- [الحصول على قيمة خيار الزر](/pdf/net/get-button-option-value/)
-- [استيراد وتصدير البيانات](/pdf/net/import-and-export-data/)
+- [تحديد أسماء حقول النموذج](/pdf/ar/net/identifying-form-fields-names/)
+- [تبرير النص في حقل نصي](/pdf/ar/net/justify-text-in-a-textbox-field/)
+- [ما الفرق بين XML و FDF و XFDF](/pdf/ar/net/whats-the-difference-between-xml-fdf-and-xfdf/)
+- [الحصول على قيمة خيار الزر](/pdf/ar/net/get-button-option-value/)
+- [استيراد وتصدير البيانات](/pdf/ar/net/import-and-export-data/)

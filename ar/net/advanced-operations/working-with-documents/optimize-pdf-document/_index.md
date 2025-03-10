@@ -104,7 +104,7 @@ sitemap:
 1. استخدم طريقة [Optimize](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/optimize).
 1. احفظ المستند المحسن باستخدام طريقة [Save](https://reference.aspose.com/pdf/net/aspose.pdf/document/methods/save).
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 تظهر مقتطفات الكود التالية كيفية تحسين مستند PDF للويب.
 

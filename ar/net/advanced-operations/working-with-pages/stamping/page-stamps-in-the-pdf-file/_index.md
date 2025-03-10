@@ -82,7 +82,7 @@ sitemap:
 
 يمكن استخدام [PdfPageStamp](https://reference.aspose.com/pdf/net/aspose.pdf/PdfPageStamp) عندما تحتاج إلى تطبيق طابع مركب يحتوي على الرسومات والنصوص والجداول. يوضح المثال التالي كيفية استخدام طابع لإنشاء قرطاسية كما في استخدام Adobe InDesign وIllustrator وMicrosoft Word. افترض أن لدينا مستند إدخال ونريد تطبيق نوعين من الحدود باللونين الأزرق والأرجواني.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

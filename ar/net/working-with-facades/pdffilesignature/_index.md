@@ -12,7 +12,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [إضافة توقيع في ملف PDF](/pdf/net/add-signature-in-pdf/)
-- [إزالة توقيع من ملف PDF](/pdf/net/remove-signature-from-pdf/)
-- [التحقق من توقيع في ملف PDF](/pdf/net/verify-signature-in-pdf/)
-- [العمل مع التوقيع في ملف PDF](/pdf/net/add-signature-in-pdf/)
+- [إضافة توقيع في ملف PDF](/pdf/ar/net/add-signature-in-pdf/)
+- [إزالة توقيع من ملف PDF](/pdf/ar/net/remove-signature-from-pdf/)
+- [التحقق من توقيع في ملف PDF](/pdf/ar/net/verify-signature-in-pdf/)
+- [العمل مع التوقيع في ملف PDF](/pdf/ar/net/add-signature-in-pdf/)

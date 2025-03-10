@@ -12,8 +12,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [حذف جميع التعليقات التوضيحية حسب النوع المحدد (واجهات)](/pdf/net/delete-annotations/)
-- [استيراد وتصدير التعليقات التوضيحية إلى تنسيق XFDF باستخدام com.aspose.pdf.facades](/pdf/net/import-export-annotations/)
-- [استخراج التعليق التوضيحي](/pdf/net/extract-annotation/)
-- [تسوية التعليق التوضيحي](/pdf/net/flatten-annotation/)
-- [تعديل التعليقات التوضيحية](/pdf/net/modify-annotations/)
+- [حذف جميع التعليقات التوضيحية حسب النوع المحدد (واجهات)](/pdf/ar/net/delete-annotations/)
+- [استيراد وتصدير التعليقات التوضيحية إلى تنسيق XFDF باستخدام com.aspose.pdf.facades](/pdf/ar/net/import-export-annotations/)
+- [استخراج التعليق التوضيحي](/pdf/ar/net/extract-annotation/)
+- [تسوية التعليق التوضيحي](/pdf/ar/net/flatten-annotation/)
+- [تعديل التعليقات التوضيحية](/pdf/ar/net/modify-annotations/)

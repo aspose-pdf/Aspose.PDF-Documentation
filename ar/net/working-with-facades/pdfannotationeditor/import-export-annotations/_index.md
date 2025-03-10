@@ -81,7 +81,7 @@ XFDF تعني تنسيق بيانات النماذج XML. إنه تنسيق مل
 
 ## استيراد وتصدير التعليقات التوضيحية إلى XFDF
 
-[Aspose.PDF for .NET](/pdf/net/) هو مكون غني بالميزات عندما يتعلق الأمر بتحرير مستندات PDF. كما نعلم، فإن XFDF هو جانب مهم من جوانب معالجة نماذج PDF، وقد أخذت [مساحة الأسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/net/) هذا بعين الاعتبار بشكل جيد، وقدمت طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
+[Aspose.PDF for .NET](/pdf/ar/net/) هو مكون غني بالميزات عندما يتعلق الأمر بتحرير مستندات PDF. كما نعلم، فإن XFDF هو جانب مهم من جوانب معالجة نماذج PDF، وقد أخذت [مساحة الأسماء Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades) في [Aspose.PDF for .NET](/pdf/ar/net/) هذا بعين الاعتبار بشكل جيد، وقدمت طرقًا لاستيراد وتصدير بيانات التعليقات التوضيحية إلى ملفات XFDF.
 
 تحتوي فئة [PDFAnnotationEditor](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor) على طريقتين للعمل مع استيراد وتصدير التعليقات التوضيحية إلى ملف XFDF. توفر طريقة [ExportAnnotationsXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/exportannotationsxfdf/index) الوظيفة لتصدير التعليقات التوضيحية من مستند PDF إلى ملف XFDF، بينما تتيح لك طريقة [ImportAnnotationFromXfdf](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfannotationeditor/methods/importannotationfromxfdf/index) استيراد التعليقات التوضيحية من ملف XFDF موجود. لاستيراد أو تصدير التعليقات التوضيحية، نحتاج إلى تحديد أنواع التعليقات التوضيحية. يمكننا تحديد هذه الأنواع في شكل تعداد ثم تمرير هذا التعداد كوسيط إلى أي من هذه الطرق. بهذه الطريقة، سيتم استيراد أو تصدير التعليقات التوضيحية من الأنواع المحددة فقط إلى ملف XFDF.
 

@@ -81,7 +81,7 @@ sitemap:
 
 ## كيفية إضافة تعليق نصي إلى ملف PDF موجود
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 التعليق النصي هو تعليق مرتبط بموقع معين في مستند PDF. عند إغلاقه، يتم عرض التعليق كأيقونة؛ عند فتحه، يجب أن يظهر نافذة منبثقة تحتوي على نص الملاحظة بالخط والحجم الذي اختاره القارئ.
 
@@ -136,7 +136,7 @@ private static void AddTextAnnotationToPdf()
 
 يجب ألا يحتوي على تدفق مظهر أو إجراءات مرتبطة به ويجب التعرف عليه من خلال إدخال Popup في قاموس تعليق الأب.
 
-تظهر مقتطفات الشيفرة التالية كيفية إضافة [تعليق منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال لإضافة [تعليق خط](/pdf/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأب.
+تظهر مقتطفات الشيفرة التالية كيفية إضافة [تعليق منبثق](https://reference.aspose.com/pdf/net/aspose.pdf.annotations/popupannotation) في صفحة PDF باستخدام مثال لإضافة [تعليق خط](/pdf/ar/net/figures-annotation/#how-to-add-line-annotation-into-existing-pdf-file) للأب.
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

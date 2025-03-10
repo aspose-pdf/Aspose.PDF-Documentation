@@ -12,6 +12,6 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [إنشاء إشارات مرجعية](/pdf/net/create-bookmarks/)
-- [استيراد وتصدير الإشارات المرجعية](/pdf/net/import-and-export-bookmarks/)
-- [تحديث وحذف والحصول على الإشارات المرجعية](/pdf/net/update-delete-and-get-bookmarks/)
+- [إنشاء إشارات مرجعية](/pdf/ar/net/create-bookmarks/)
+- [استيراد وتصدير الإشارات المرجعية](/pdf/ar/net/import-and-export-bookmarks/)
+- [تحديث وحذف والحصول على الإشارات المرجعية](/pdf/ar/net/update-delete-and-get-bookmarks/)

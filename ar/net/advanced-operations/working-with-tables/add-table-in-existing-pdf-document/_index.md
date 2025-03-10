@@ -82,7 +82,7 @@ sitemap:
 
 الجداول مهمة عند العمل مع مستندات PDF. إنها توفر ميزات رائعة لعرض المعلومات بطريقة منظمة. يحتوي مساحة أسماء Aspose.PDF على فئات تُسمى [Table](https://reference.aspose.com/pdf/net/aspose.pdf/table)، [Cell](https://reference.aspose.com/pdf/net/aspose.pdf/cell)، و[Row](https://reference.aspose.com/pdf/net/aspose.pdf/row) التي توفر وظائف لإنشاء الجداول عند توليد مستندات PDF من الصفر.
 
-تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+تعمل مقتطفات الكود التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 يمكن إنشاء جدول عن طريق إنشاء كائن من فئة Table.
 

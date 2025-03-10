@@ -76,7 +76,7 @@ lastmod: "2022-02-17"
 }
 </script>
 
-تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/) .
+تعمل مقتطفات الشيفرة التالية أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/) .
 
 تحتوي الصور على مجموعة [Resources](https://reference.aspose.com/pdf/net/aspose.pdf/resources) الخاصة بكل صفحة في مجموعة [Images](https://reference.aspose.com/pdf/net/aspose.pdf/resources/properties/images) . لاستخراج صفحة معينة، ثم الحصول على الصورة من مجموعة الصور باستخدام الفهرس المحدد للصورة.
 

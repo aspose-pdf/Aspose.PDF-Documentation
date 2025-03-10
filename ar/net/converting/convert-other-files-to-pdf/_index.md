@@ -82,7 +82,7 @@ sitemap:
 
 تشرح هذه المقالة كيفية **تحويل أنواع مختلفة من تنسيقات الملفات إلى PDF باستخدام C#**. تغطي المواضيع التالية.
 
-يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/net/drawing/).
+يعمل مقتطف الكود التالي أيضًا مع مكتبة [Aspose.PDF.Drawing](/pdf/ar/net/drawing/).
 
 _التنسيق_: **EPUB**
 - [C# تحويل EPUB إلى PDF](#csharp-convert-epub-to-pdf)

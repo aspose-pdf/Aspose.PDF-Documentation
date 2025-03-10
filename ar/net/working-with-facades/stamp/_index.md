@@ -12,5 +12,5 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [إضافة علامة مائية متعددة الأسطر إلى PDF موجود](/pdf/net/adding-multi-line-watermark-to-existing-pdf/)
-- [تدوير الختم حول نقطة المركز](/pdf/net/rotating-stamp-about-the-center-point/)
+- [إضافة علامة مائية متعددة الأسطر إلى PDF موجود](/pdf/ar/net/adding-multi-line-watermark-to-existing-pdf/)
+- [تدوير الختم حول نقطة المركز](/pdf/ar/net/rotating-stamp-about-the-center-point/)

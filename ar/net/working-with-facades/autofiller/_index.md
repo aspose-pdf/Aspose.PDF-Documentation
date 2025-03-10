@@ -12,4 +12,4 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-- [تصدير بيانات ورقة عمل Excel لملء نموذج PDF](/pdf/net/export-excel-worksheet-data-to-fill-pdf-form/)
+- [تصدير بيانات ورقة عمل Excel لملء نموذج PDF](/pdf/ar/net/export-excel-worksheet-data-to-fill-pdf-form/)

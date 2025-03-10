@@ -138,7 +138,7 @@ sitemap:
 
 ## الترخيص
 
-لا يوجد ترخيص إضافي لـ Aspose.PDF.Drawing، استخدم نفس الترخيص الخاص بـ Aspose.PDF. تحقق من قسم [ترخيص Aspose PDF](/pdf/net/licensing/).
+لا يوجد ترخيص إضافي لـ Aspose.PDF.Drawing، استخدم نفس الترخيص الخاص بـ Aspose.PDF. تحقق من قسم [ترخيص Aspose PDF](/pdf/ar/net/licensing/).
 
 ## التثبيت
 
@@ -150,7 +150,7 @@ sitemap:
 
 تعرف على المزيد حول:
 
-- [تنسيقات الملفات المدعومة](/pdf/net/supported-file-formats/)
-- [متطلبات النظام](/pdf/net/system-requirements/)
-- [الترخيص](/pdf/net/licensing/)
-- [الدعم الفني](/pdf/net/technical-support/)
+- [تنسيقات الملفات المدعومة](/pdf/ar/net/supported-file-formats/)
+- [متطلبات النظام](/pdf/ar/net/system-requirements/)
+- [الترخيص](/pdf/ar/net/licensing/)
+- [الدعم الفني](/pdf/ar/net/technical-support/)

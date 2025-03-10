@@ -72,5 +72,5 @@ url: /ar/net/integration-with-aspose-total-components/
 }
 </script>
 
-- [تحويل صفحات PDF إلى صور والتعرف على الرموز الشريطية](/pdf/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
-- [استخراج الصور من PDF والتعرف على الرموز الشريطية](/pdf/net/extract-images-from-pdf-and-recognize-barcodes/)
+- [تحويل صفحات PDF إلى صور والتعرف على الرموز الشريطية](/pdf/ar/net/convert-pdf-pages-to-images-and-recognize-barcodes/)
+- [استخراج الصور من PDF والتعرف على الرموز الشريطية](/pdf/ar/net/extract-images-from-pdf-and-recognize-barcodes/)
